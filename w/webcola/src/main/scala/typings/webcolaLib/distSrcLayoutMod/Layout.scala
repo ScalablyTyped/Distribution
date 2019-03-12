@@ -76,28 +76,16 @@ class Layout () extends js.Object {
   def resume(): this.type = js.native
   def routeEdge(edge: js.Any, ah: scala.Double, draw: js.Any): js.Array[_] = js.native
   /* private */ def separateOverlappingComponents(width: js.Any, height: js.Any): js.Any = js.native
+  /* private */ def separateOverlappingComponents(width: js.Any, height: js.Any, centerGraph: js.Any): js.Any = js.native
   def size(): js.Array[scala.Double] = js.native
   def size(x: js.Array[scala.Double]): this.type = js.native
-  def start(): this.type = js.native
-  def start(initialUnconstrainedIterations: scala.Double): this.type = js.native
-  def start(initialUnconstrainedIterations: scala.Double, initialUserConstraintIterations: scala.Double): this.type = js.native
   def start(
-    initialUnconstrainedIterations: scala.Double,
-    initialUserConstraintIterations: scala.Double,
-    initialAllConstraintsIterations: scala.Double
-  ): this.type = js.native
-  def start(
-    initialUnconstrainedIterations: scala.Double,
-    initialUserConstraintIterations: scala.Double,
-    initialAllConstraintsIterations: scala.Double,
-    gridSnapIterations: scala.Double
-  ): this.type = js.native
-  def start(
-    initialUnconstrainedIterations: scala.Double,
-    initialUserConstraintIterations: scala.Double,
-    initialAllConstraintsIterations: scala.Double,
-    gridSnapIterations: scala.Double,
-    keepRunning: scala.Boolean
+    initialUnconstrainedIterations: js.UndefOr[scala.Double],
+    initialUserConstraintIterations: js.UndefOr[scala.Double],
+    initialAllConstraintsIterations: js.UndefOr[scala.Double],
+    gridSnapIterations: js.UndefOr[scala.Double],
+    keepRunning: js.UndefOr[scala.Boolean],
+    centerGraph: js.UndefOr[scala.Boolean]
   ): this.type = js.native
   def stop(): this.type = js.native
   def symmetricDiffLinkLengths(idealLength: scala.Double): this.type = js.native

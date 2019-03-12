@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sc-broker-cluster"
-version := "6.1-dt-20181218Z-9471f4"
+version := "6.1-dt-20181218Z-d3fd51"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,9 +10,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "component-emitter" % "v1.2.1-dt-20190205Z-46bb17",
   "org.scalablytyped" %%% "expirymanager" % "0.9-dt-20181130Z-0011e0",
   "org.scalablytyped" %%% "fleximap" % "0.9-dt-20181205Z-b083e2",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190304Z-89b494",
   "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
-  "org.scalablytyped" %%% "sc-broker" % "5.1-dt-20181218Z-55516e",
+  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-a2a62b",
   "org.scalablytyped" %%% "sc-channel" % "1.2-dt-20181130Z-afe92d",
+  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-1c204f",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

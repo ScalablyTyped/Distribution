@@ -16,6 +16,14 @@ object ^ extends js.Object {
   def adaptor(options: js.Any): webcolaLib.distSrcAdaptorMod.LayoutAdaptor = js.native
   def applyPacking(graphs: js.Array[_], w: js.Any, h: js.Any, node_size: js.Any): scala.Unit = js.native
   def applyPacking(graphs: js.Array[_], w: js.Any, h: js.Any, node_size: js.Any, desired_ratio: scala.Double): scala.Unit = js.native
+  def applyPacking(
+    graphs: js.Array[_],
+    w: js.Any,
+    h: js.Any,
+    node_size: js.Any,
+    desired_ratio: scala.Double,
+    centerGraph: scala.Boolean
+  ): scala.Unit = js.native
   def clockwiseRadialSweep(
     p: webcolaLib.distSrcGeomMod.Point,
     P: js.Array[webcolaLib.distSrcGeomMod.Point],

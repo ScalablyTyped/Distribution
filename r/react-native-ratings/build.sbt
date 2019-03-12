@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-ratings"
-version := "6.3.0-f58c00"
+version := "6.3.1-945c5c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -77,8 +77,8 @@ trait RatingProps extends js.Object {
   /**
     * Exposes style prop to add additonal styling to the container view
     */
-  var style: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewPropTypes.style */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewPropTypes.style */ js.Any
+  var style: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ViewPropTypes.style */ js.UndefOr[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ViewPropTypes.style */ js.Any
   ] = js.undefined
   /**
     * Graphic used for represent a rating
@@ -106,7 +106,7 @@ object RatingProps {
     readonly: js.UndefOr[scala.Boolean] = js.undefined,
     showRating: js.UndefOr[scala.Boolean] = js.undefined,
     startingValue: scala.Int | scala.Double = null,
-    style: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewPropTypes.style */ js.Any = null,
+    style: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ViewPropTypes.style */ js.Any = null,
     `type`: reactDashNativeDashRatingsLib.reactDashNativeDashRatingsLibStrings.star | reactDashNativeDashRatingsLib.reactDashNativeDashRatingsLibStrings.rocket | reactDashNativeDashRatingsLib.reactDashNativeDashRatingsLibStrings.bell | reactDashNativeDashRatingsLib.reactDashNativeDashRatingsLibStrings.heart | reactDashNativeDashRatingsLib.reactDashNativeDashRatingsLibStrings.custom = null
   ): RatingProps = {
     val __obj = js.Dynamic.literal()
