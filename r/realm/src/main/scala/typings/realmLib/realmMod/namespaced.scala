@@ -29,6 +29,11 @@ object namespaced extends js.Object {
   def automaticSyncConfiguration(): java.lang.String = js.native
   def automaticSyncConfiguration(user: realmLib.RealmNs.SyncNs.User): java.lang.String = js.native
   /**
+    * Clears the state by closing and deleting any Realm in the default directory and logout all users.
+    * @private Not a part of the public API: It's primarily used from the library's tests.
+    */
+  def clearTestState(): scala.Unit = js.native
+  /**
     * Copy all bundled Realm files to app's default file folder.
     */
   def copyBundledRealmFiles(): scala.Unit = js.native

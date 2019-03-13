@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ps-list"
-version := "6.0-dt-20181212Z-43870c"
+version := "6.2.0-e8a3f2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

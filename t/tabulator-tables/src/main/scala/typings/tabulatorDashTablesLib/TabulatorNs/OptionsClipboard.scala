@@ -14,6 +14,8 @@ trait OptionsClipboard extends js.Object {
   var clipboard: js.UndefOr[
     scala.Boolean | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.copy | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.paste
   ] = js.undefined
+  /** The clipboardCopied event is triggered whenever data is copied to the clipboard. */
+  var clipboardCopied: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** By default Tabulator includes column headers, row groups and column calculations in the clipboard output.
     You can choose to remove column headers groups, row groups or column calculations from the output data by setting the values in the clipboardCopyConfig option in the table definition: */
   var clipboardCopyConfig: js.UndefOr[tabulatorDashTablesLib.Anon_ColumnCalcs | scala.Boolean] = js.undefined
@@ -44,43 +46,44 @@ trait OptionsClipboard extends js.Object {
   var clipboardPasteAction: js.UndefOr[
     tabulatorDashTablesLib.tabulatorDashTablesLibStrings.insert | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.update | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.replace
   ] = js.undefined
+  /** The clipboardPasteError event is triggered whenever an atempt to paste data into the table has failed because it was rejected by the paste parser. */
+  var clipboardPasteError: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**  Tabulator has one built in paste parser, that is designed to take a table formatted text string from the clipboard and turn it into row data. it breaks the tada into rows on a newline character \n and breaks the rows down to columns on a tab character \t.
     It will then attempt to work out which columns in the data correspond to columns in the table. It tries three different ways to achieve this. First it checks the values of all columns in the first row of data to see if they match the titles of columns in the table. If any of the columns don't match it then tries the same approach but with the column fields. If either of those options match, Tabulator will map those columns to the incoming data and import it into rows. If there is no match then Tabulator will assume the columns in the data are in the same order as the visible columns in the table and import them that way.
     The inbuilt parser will reject any clipboard data that does not contain at least one row and two columns, in that case the clipboardPasteError will be triggered.
     If you extend the clipboard module to add your own parser, you can set it to be used as default with the clipboardPasteParser property.*/
   var clipboardPasteParser: js.UndefOr[java.lang.String | (js.Function1[/* clipboard */ js.Any, js.Array[_]])] = js.undefined
-  /** The clipboardCopied event is triggered whenever data is copied to the clipboard. */
-  def clipboardCopied(): scala.Unit
-  /** The clipboardPasteError event is triggered whenever an atempt to paste data into the table has failed because it was rejected by the paste parser. */
-  def clipboardPasteError(): scala.Unit
   /** The clipboardPasted event is triggered whenever data is successfuly pasted into the table. */
-  def clipboardPasted(): scala.Unit
+  var clipboardPasted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
 object OptionsClipboard {
   @scala.inline
   def apply(
-    clipboardCopied: () => scala.Unit,
-    clipboardPasteError: () => scala.Unit,
-    clipboardPasted: () => scala.Unit,
     clipboard: scala.Boolean | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.copy | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.paste = null,
+    clipboardCopied: () => scala.Unit = null,
     clipboardCopyConfig: tabulatorDashTablesLib.Anon_ColumnCalcs | scala.Boolean = null,
     clipboardCopyFormatter: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.table | (js.Function1[/* rowData */ js.Array[_], java.lang.String]) = null,
     clipboardCopyHeader: js.UndefOr[scala.Boolean] = js.undefined,
     clipboardCopySelector: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.active | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.table | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.selected = null,
     clipboardCopyStyled: js.UndefOr[scala.Boolean] = js.undefined,
     clipboardPasteAction: tabulatorDashTablesLib.tabulatorDashTablesLibStrings.insert | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.update | tabulatorDashTablesLib.tabulatorDashTablesLibStrings.replace = null,
-    clipboardPasteParser: java.lang.String | (js.Function1[/* clipboard */ js.Any, js.Array[_]]) = null
+    clipboardPasteError: () => scala.Unit = null,
+    clipboardPasteParser: java.lang.String | (js.Function1[/* clipboard */ js.Any, js.Array[_]]) = null,
+    clipboardPasted: () => scala.Unit = null
   ): OptionsClipboard = {
-    val __obj = js.Dynamic.literal(clipboardCopied = js.Any.fromFunction0(clipboardCopied), clipboardPasteError = js.Any.fromFunction0(clipboardPasteError), clipboardPasted = js.Any.fromFunction0(clipboardPasted))
+    val __obj = js.Dynamic.literal()
     if (clipboard != null) __obj.updateDynamic("clipboard")(clipboard.asInstanceOf[js.Any])
+    if (clipboardCopied != null) __obj.updateDynamic("clipboardCopied")(js.Any.fromFunction0(clipboardCopied))
     if (clipboardCopyConfig != null) __obj.updateDynamic("clipboardCopyConfig")(clipboardCopyConfig.asInstanceOf[js.Any])
     if (clipboardCopyFormatter != null) __obj.updateDynamic("clipboardCopyFormatter")(clipboardCopyFormatter.asInstanceOf[js.Any])
     if (!js.isUndefined(clipboardCopyHeader)) __obj.updateDynamic("clipboardCopyHeader")(clipboardCopyHeader)
     if (clipboardCopySelector != null) __obj.updateDynamic("clipboardCopySelector")(clipboardCopySelector.asInstanceOf[js.Any])
     if (!js.isUndefined(clipboardCopyStyled)) __obj.updateDynamic("clipboardCopyStyled")(clipboardCopyStyled)
     if (clipboardPasteAction != null) __obj.updateDynamic("clipboardPasteAction")(clipboardPasteAction.asInstanceOf[js.Any])
+    if (clipboardPasteError != null) __obj.updateDynamic("clipboardPasteError")(js.Any.fromFunction0(clipboardPasteError))
     if (clipboardPasteParser != null) __obj.updateDynamic("clipboardPasteParser")(clipboardPasteParser.asInstanceOf[js.Any])
+    if (clipboardPasted != null) __obj.updateDynamic("clipboardPasted")(js.Any.fromFunction0(clipboardPasted))
     __obj.asInstanceOf[OptionsClipboard]
   }
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait WorkbookData extends js.Object {
   /**
     *
-    * True if the workbook is in auto save mode.
+    * Specifies whether or not the workbook is in autosave mode. Read-Only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -56,8 +56,8 @@ trait WorkbookData extends js.Object {
   var customXmlParts: js.UndefOr[js.Array[CustomXmlPartData]] = js.undefined
   /**
     *
-    * True if no changes have been made to the specified workbook since it was last saved.
-    You can set this property to True if you want to close a modified workbook without either saving it or being prompted to save it.
+    * Specifies whether or not changes have been made since the workbook was last saved.
+    You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -79,6 +79,14 @@ trait WorkbookData extends js.Object {
   var names: js.UndefOr[js.Array[NamedItemData]] = js.undefined
   /**
     *
+    * Represents a collection of PivotTableStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var pivotTableStyles: js.UndefOr[js.Array[PivotTableStyleData]] = js.undefined
+  /**
+    *
     * Represents a collection of PivotTables associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.3]
@@ -86,7 +94,7 @@ trait WorkbookData extends js.Object {
   var pivotTables: js.UndefOr[js.Array[PivotTableData]] = js.undefined
   /**
     *
-    * True if the workbook has ever been saved locally or online.
+    * Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -122,6 +130,14 @@ trait WorkbookData extends js.Object {
   var settings: js.UndefOr[js.Array[SettingData]] = js.undefined
   /**
     *
+    * Represents a collection of SlicerStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var slicerStyles: js.UndefOr[js.Array[SlicerStyleData]] = js.undefined
+  /**
+    *
     * Represents a collection of Slicers associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -137,11 +153,27 @@ trait WorkbookData extends js.Object {
   var styles: js.UndefOr[js.Array[StyleData]] = js.undefined
   /**
     *
+    * Represents a collection of TableStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var tableStyles: js.UndefOr[js.Array[TableStyleData]] = js.undefined
+  /**
+    *
     * Represents a collection of tables associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */
   var tables: js.UndefOr[js.Array[TableData]] = js.undefined
+  /**
+    *
+    * Represents a collection of TimelineStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var timelineStyles: js.UndefOr[js.Array[TimelineStyleData]] = js.undefined
   /**
     *
     * True if the workbook uses the 1904 date system.
@@ -180,15 +212,19 @@ object WorkbookData {
     isDirty: js.UndefOr[scala.Boolean] = js.undefined,
     name: java.lang.String = null,
     names: js.Array[NamedItemData] = null,
+    pivotTableStyles: js.Array[PivotTableStyleData] = null,
     pivotTables: js.Array[PivotTableData] = null,
     previouslySaved: js.UndefOr[scala.Boolean] = js.undefined,
     properties: DocumentPropertiesData = null,
     protection: WorkbookProtectionData = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     settings: js.Array[SettingData] = null,
+    slicerStyles: js.Array[SlicerStyleData] = null,
     slicers: js.Array[SlicerData] = null,
     styles: js.Array[StyleData] = null,
+    tableStyles: js.Array[TableStyleData] = null,
     tables: js.Array[TableData] = null,
+    timelineStyles: js.Array[TimelineStyleData] = null,
     use1904DateSystem: js.UndefOr[scala.Boolean] = js.undefined,
     usePrecisionAsDisplayed: js.UndefOr[scala.Boolean] = js.undefined,
     worksheets: js.Array[WorksheetData] = null
@@ -203,15 +239,19 @@ object WorkbookData {
     if (!js.isUndefined(isDirty)) __obj.updateDynamic("isDirty")(isDirty)
     if (name != null) __obj.updateDynamic("name")(name)
     if (names != null) __obj.updateDynamic("names")(names)
+    if (pivotTableStyles != null) __obj.updateDynamic("pivotTableStyles")(pivotTableStyles)
     if (pivotTables != null) __obj.updateDynamic("pivotTables")(pivotTables)
     if (!js.isUndefined(previouslySaved)) __obj.updateDynamic("previouslySaved")(previouslySaved)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (protection != null) __obj.updateDynamic("protection")(protection)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (slicerStyles != null) __obj.updateDynamic("slicerStyles")(slicerStyles)
     if (slicers != null) __obj.updateDynamic("slicers")(slicers)
     if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (tableStyles != null) __obj.updateDynamic("tableStyles")(tableStyles)
     if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (timelineStyles != null) __obj.updateDynamic("timelineStyles")(timelineStyles)
     if (!js.isUndefined(use1904DateSystem)) __obj.updateDynamic("use1904DateSystem")(use1904DateSystem)
     if (!js.isUndefined(usePrecisionAsDisplayed)) __obj.updateDynamic("usePrecisionAsDisplayed")(usePrecisionAsDisplayed)
     if (worksheets != null) __obj.updateDynamic("worksheets")(worksheets)

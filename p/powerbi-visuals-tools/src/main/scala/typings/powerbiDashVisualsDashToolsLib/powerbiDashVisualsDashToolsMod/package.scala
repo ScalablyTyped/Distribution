@@ -1,0 +1,24 @@
+package typings
+package powerbiDashVisualsDashToolsLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object powerbiDashVisualsDashToolsMod {
+  type AdvancedEditModeSupport = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.AdvancedEditModeSupport
+  type CartesianRoleKind = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.CartesianRoleKind
+  type DataRepetitionKind = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.DataRepetitionKind
+  type EditMode = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.EditMode
+  type FilterAction = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.FilterAction
+  type JoinPredicateBehavior = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.JoinPredicateBehavior
+  type PromiseResultType = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.PromiseResultType
+  type ResizeMode = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.ResizeMode
+  type SortDirection = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.SortDirection
+  type ViewMode = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.ViewMode
+  type VisualDataChangeOperationKind = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.VisualDataChangeOperationKind
+  type VisualDataRoleKind = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.VisualDataRoleKind
+  type VisualEventType = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.VisualEventType
+  type VisualInteractivityAction = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.VisualInteractivityAction
+  type VisualUpdateType = powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.VisualUpdateType
+}

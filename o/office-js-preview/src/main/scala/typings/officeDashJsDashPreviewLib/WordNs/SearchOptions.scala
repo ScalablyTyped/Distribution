@@ -106,6 +106,10 @@ class SearchOptions ()
   ): scala.Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: SearchOptions): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Word.SearchOptions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SearchOptionsData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsDashPreviewLib.WordNs.InterfacesNs.SearchOptionsData = js.native
 }
 

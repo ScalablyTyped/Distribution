@@ -9,11 +9,13 @@ trait DeclarationMiddleware extends js.Object {
   var provideDeclaration: js.UndefOr[
     js.ThisFunction4[
       /* this */ scala.Unit, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextDocument */ /* document */ js.Any, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VPosition */ /* position */ js.Any, 
+      /* document */ vscodeLib.vscodeMod.TextDocument, 
+      /* position */ vscodeLib.vscodeMod.Position, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideDeclarationSignature, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<VDeclaration> */ _
+      vscodeLib.vscodeMod.ProviderResult[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDeclaration */ _
+      ]
     ]
   ] = js.undefined
 }
@@ -23,11 +25,13 @@ object DeclarationMiddleware {
   def apply(
     provideDeclaration: js.ThisFunction4[
       /* this */ scala.Unit, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextDocument */ /* document */ js.Any, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VPosition */ /* position */ js.Any, 
+      /* document */ vscodeLib.vscodeMod.TextDocument, 
+      /* position */ vscodeLib.vscodeMod.Position, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideDeclarationSignature, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<VDeclaration> */ _
+      vscodeLib.vscodeMod.ProviderResult[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDeclaration */ _
+      ]
     ] = null
   ): DeclarationMiddleware = {
     val __obj = js.Dynamic.literal()

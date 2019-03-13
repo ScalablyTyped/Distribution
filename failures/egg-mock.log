@@ -1,8 +1,0 @@
-[info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(egg-mock) [id => egg-mock, phase => typescript, file => ../types/egg-mock/index.d.ts] 
-[warn ] PhaseRunner.scala:68 Failed because of, [egg-logger => java.lang.RuntimeException: Type parameter not provided] [id => egg-mock, phase => typescript] 
-[error] PhaseRunner.scala:86 Failure, [egg-logger => java.lang.RuntimeException: Type parameter not provided] [id => egg-mock, phase => typescript] 
-[warn ] PhaseRunner.scala:68 Failed because of, [egg-logger => java.lang.RuntimeException: Type parameter not provided] [id => egg-mock, phase => typescript] 
-[error] PhaseRunner.scala:86 Failure, [egg-logger => java.lang.RuntimeException: Type parameter not provided] [id => egg-mock, phase => typescript] 
-[error] PhaseRunner.scala:86 Failure, [egg-logger => java.lang.RuntimeException: Type parameter not provided] [id => egg-mock, phase => scala.js] 
-[error] PhaseRunner.scala:86 Failure, [egg-logger => java.lang.RuntimeException: Type parameter not provided] [id => egg-mock, phase => build] 
-[error] PhaseRunner.scala:86 Failure, [egg-logger => java.lang.RuntimeException: Type parameter not provided] [id => egg-mock, phase => publish] 

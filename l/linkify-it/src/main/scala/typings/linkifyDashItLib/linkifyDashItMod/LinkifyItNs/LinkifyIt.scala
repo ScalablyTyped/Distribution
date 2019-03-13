@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LinkifyIt extends js.Object {
+  var re: org.scalablytyped.runtime.StringDictionary[stdLib.RegExp] = js.native
   def add(schema: java.lang.String, rule: Rule): LinkifyIt = js.native
   def `match`(text: java.lang.String): js.Array[Match] | scala.Null = js.native
   def normalize(raw: java.lang.String): java.lang.String = js.native

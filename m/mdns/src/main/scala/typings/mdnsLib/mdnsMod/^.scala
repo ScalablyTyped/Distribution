@@ -15,6 +15,7 @@ object ^ extends js.Object {
   // -------------------- -------------------- -------------------- -------------------- -------------------- -------------------- -------------------- -------------------- --------------------
   //Constants from dns_sd.h (C-Code of Bonjour -> see https://developer.apple.com/library/mac/documentation/Networking/Reference/DNSServiceDiscovery_CRef/Reference/reference.html)
   var _DNS_SD_H: scala.Double = js.native
+  var dns_sd: js.Any = js.native
   // constants
   var isAvahi: scala.Boolean = js.native
   var kDNSServiceClass_IN: scala.Double = js.native

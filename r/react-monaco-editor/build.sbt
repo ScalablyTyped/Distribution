@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-monaco-editor"
-version := "0.25.1-ae7733"
+version := "0.25.1-43e745"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-9f8404",
   "org.scalablytyped" %%% "monaco-editor" % "0.16.0-f4af18",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190306Z-24375e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190312Z-24375e",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

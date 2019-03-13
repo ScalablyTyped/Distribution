@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ShapeUpdateData extends js.Object {
   /**
     *
-    * Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page.
+    * Returns or sets the alternative description text for a Shape object.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -17,7 +17,7 @@ trait ShapeUpdateData extends js.Object {
   var altTextDescription: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page.
+    * Returns or sets the alternative title text for a Shape object.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -25,7 +25,7 @@ trait ShapeUpdateData extends js.Object {
   var altTextTitle: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Returns the fill formatting of the shape object.
+    * Returns the fill formatting of this shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -33,7 +33,7 @@ trait ShapeUpdateData extends js.Object {
   var fill: js.UndefOr[ShapeFillUpdateData] = js.undefined
   /**
     *
-    * Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null.
+    * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -44,7 +44,7 @@ trait ShapeUpdateData extends js.Object {
   /**
     *
     * Represents the height, in points, of the shape.
-    Throws an invalid argument exception when set with negative value or zero as input.
+    Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -52,8 +52,8 @@ trait ShapeUpdateData extends js.Object {
   var height: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * The distance, in points, from the left side of the shape to the left of the worksheet.
-    Throws an invalid argument exception when set with negative value as input.
+    * The distance, in points, from the left side of the shape to the left side of the worksheet.
+    Throws an invalid argument exception when set with a negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -61,7 +61,7 @@ trait ShapeUpdateData extends js.Object {
   var left: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Returns the line formatting of the shape object.
+    * Returns the line formatting of this shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -69,7 +69,7 @@ trait ShapeUpdateData extends js.Object {
   var lineFormat: js.UndefOr[ShapeLineFormatUpdateData] = js.undefined
   /**
     *
-    * Represents if the aspect ratio locked, in boolean, of the shape.
+    * Specifies whether or not the aspect ratio of this shape is locked.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -85,7 +85,7 @@ trait ShapeUpdateData extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Represents the placment, value that represents the way the object is attached to the cells below it.
+    * Represents how the object is attached to the cells below it.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -103,8 +103,8 @@ trait ShapeUpdateData extends js.Object {
   var rotation: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * The distance, in points, from the top edge of the shape to the top of the worksheet.
-    Throws an invalid argument exception when set with negative value as input.
+    * The distance, in points, from the top edge of the shape to the top edge of the worksheet.
+    Throws an invalid argument exception when set with a negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -112,7 +112,7 @@ trait ShapeUpdateData extends js.Object {
   var top: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Represents the visibility, in boolean, of the specified shape.
+    * Represents the visibility of this shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -121,7 +121,7 @@ trait ShapeUpdateData extends js.Object {
   /**
     *
     * Represents the width, in points, of the shape.
-    Throws an invalid argument exception when set with negative value or zero as input.
+    Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

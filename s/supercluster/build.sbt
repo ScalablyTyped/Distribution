@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "supercluster"
-version := "5.0-dt-20190128Z-41647a"
+version := "5.0-dt-20190312Z-d3b9de"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

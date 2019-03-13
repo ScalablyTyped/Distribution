@@ -11,6 +11,6 @@ package object LinkifyItNs {
     /* text */ java.lang.String, 
     /* pos */ scala.Double, 
     /* self */ LinkifyIt, 
-    scala.Double
+    scala.Double | scala.Boolean
   ]
 }

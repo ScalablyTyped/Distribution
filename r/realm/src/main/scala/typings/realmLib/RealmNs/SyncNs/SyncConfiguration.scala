@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SyncConfiguration extends js.Object {
   var _disableQueryBasedSyncUrlChecks: js.UndefOr[scala.Boolean] = js.undefined
+  var _sessionStopPolicy: js.UndefOr[SessionStopPolicy] = js.undefined
   var customQueryBasedSyncIdentifier: js.UndefOr[java.lang.String] = js.undefined
   var custom_http_headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var error: js.UndefOr[ErrorCallback] = js.undefined
@@ -29,6 +30,7 @@ object SyncConfiguration {
     url: java.lang.String,
     user: User,
     _disableQueryBasedSyncUrlChecks: js.UndefOr[scala.Boolean] = js.undefined,
+    _sessionStopPolicy: SessionStopPolicy = null,
     customQueryBasedSyncIdentifier: java.lang.String = null,
     custom_http_headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     error: ErrorCallback = null,
@@ -41,6 +43,7 @@ object SyncConfiguration {
   ): SyncConfiguration = {
     val __obj = js.Dynamic.literal(url = url, user = user)
     if (!js.isUndefined(_disableQueryBasedSyncUrlChecks)) __obj.updateDynamic("_disableQueryBasedSyncUrlChecks")(_disableQueryBasedSyncUrlChecks)
+    if (_sessionStopPolicy != null) __obj.updateDynamic("_sessionStopPolicy")(_sessionStopPolicy)
     if (customQueryBasedSyncIdentifier != null) __obj.updateDynamic("customQueryBasedSyncIdentifier")(customQueryBasedSyncIdentifier)
     if (custom_http_headers != null) __obj.updateDynamic("custom_http_headers")(custom_http_headers)
     if (error != null) __obj.updateDynamic("error")(error)

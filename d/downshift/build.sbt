@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "downshift"
-version := "3.2.7-d9fea8"
+version := "3.2.7-1656bf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "compute-scroll-into-view" % "1.0.11-456e28",
   "org.scalablytyped" %%% "csstype" % "2.6.3-9f8404",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190306Z-24375e",
-  "org.scalablytyped" %%% "react-is" % "16.7-dt-20190212Z-3eff66",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190312Z-24375e",
+  "org.scalablytyped" %%% "react-is" % "16.7-dt-20190212Z-6e4a98",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

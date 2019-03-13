@@ -71,6 +71,7 @@ object SyncNs extends js.Object {
   class User ()
     extends realmLib.RealmNs.SyncNs.User
   
+  def _hasExistingSessions(): scala.Boolean = js.native
   def addListener(
     config: realmLib.RealmNs.SyncNs.RealmListenerConfiguration,
     eventName: realmLib.RealmNs.SyncNs.RealmListenerEventName,
@@ -104,24 +105,14 @@ object SyncNs extends js.Object {
     * @deprecated, to be removed in future versions
     */
   def setFeatureToken(token: java.lang.String): scala.Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_all(logLevel: realmLib.realmLibStrings.all): scala.Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_debug(logLevel: realmLib.realmLibStrings.debug): scala.Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_detail(logLevel: realmLib.realmLibStrings.detail): scala.Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_error(logLevel: realmLib.realmLibStrings.error): scala.Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_fatal(logLevel: realmLib.realmLibStrings.fatal): scala.Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_info(logLevel: realmLib.realmLibStrings.info): scala.Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_off(logLevel: realmLib.realmLibStrings.off): scala.Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_trace(logLevel: realmLib.realmLibStrings.trace): scala.Unit = js.native
-  @JSName("setLogLevel")
-  def setLogLevel_warn(logLevel: realmLib.realmLibStrings.warn): scala.Unit = js.native
+  def setLogLevel(logLevel: realmLib.RealmNs.SyncNs.LogLevel): scala.Unit = js.native
+  def setLogger(
+    callback: js.Function2[
+      /* level */ realmLib.RealmNs.SyncNs.LogLevel, 
+      /* message */ java.lang.String, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   def setUserAgent(userAgent: java.lang.String): scala.Unit = js.native
   @js.native
   object ConnectionState extends js.Object {
@@ -152,6 +143,15 @@ object SyncNs extends js.Object {
     def nickname(value: java.lang.String, isAdmin: scala.Boolean): realmLib.RealmNs.SyncNs.Credentials = js.native
     def usernamePassword(username: java.lang.String, password: java.lang.String): realmLib.RealmNs.SyncNs.Credentials = js.native
     def usernamePassword(username: java.lang.String, password: java.lang.String, createUser: scala.Boolean): realmLib.RealmNs.SyncNs.Credentials = js.native
+  }
+  
+  @js.native
+  object SessionStopPolicy extends js.Object {
+    /* "after-upload" */ val AfterUpload: realmLib.RealmNs.SyncNs.SessionStopPolicy.AfterUpload with java.lang.String = js.native
+    /* "immediately" */ val Immediately: realmLib.RealmNs.SyncNs.SessionStopPolicy.Immediately with java.lang.String = js.native
+    /* "never" */ val Never: realmLib.RealmNs.SyncNs.SessionStopPolicy.Never with java.lang.String = js.native
+    @JSBracketAccess
+    def apply(value: java.lang.String): js.UndefOr[realmLib.RealmNs.SyncNs.SessionStopPolicy with java.lang.String] = js.native
   }
   
   @js.native
@@ -193,6 +193,7 @@ object SyncNs extends js.Object {
   }
   
   type ConnectionState = realmLib.RealmNs.SyncNs.ConnectionState
+  type SessionStopPolicy = realmLib.RealmNs.SyncNs.SessionStopPolicy
   type SubscriptionState = realmLib.RealmNs.SyncNs.SubscriptionState
 }
 

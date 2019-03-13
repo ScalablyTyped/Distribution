@@ -6,20 +6,98 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Route extends js.Object {
+  /**
+    * An array of dependency-injection tokens used to look up `CanActivate()`
+    * handlers, in order to determine if the current user is allowed to
+    * activate the component. By default, any user can activate.
+    */
   var canActivate: js.UndefOr[js.Array[_]] = js.undefined
+  /**
+    * An array of DI tokens used to look up `CanActivateChild()` handlers,
+    * in order to determine if the current user is allowed to activate
+    * a child of the component. By default, any user can activate a child.
+    */
   var canActivateChild: js.UndefOr[js.Array[_]] = js.undefined
+  /**
+    * An array of DI tokens used to look up `CanDeactivate()`
+    * handlers, in order to determine if the current user is allowed to
+    * deactivate the component. By default, any user can deactivate.
+    *
+    */
   var canDeactivate: js.UndefOr[js.Array[_]] = js.undefined
+  /**
+    * An array of DI tokens used to look up `CanLoad()`
+    * handlers, in order to determine if the current user is allowed to
+    * load the component. By default, any user can load.
+    */
   var canLoad: js.UndefOr[js.Array[_]] = js.undefined
+  /**
+    * An array of child `Route` objects that specifies a nested route
+    * configuration.
+    */
   var children: js.UndefOr[Routes] = js.undefined
+  /**
+    * The component to instantiate when the path matches.
+    * Can be empty if child routes specify components.
+    */
   var component: js.UndefOr[atAngularCoreLib.srcTypeMod.Type[_]] = js.undefined
+  /**
+    * Additional developer-defined data provided to the component via
+    * `ActivatedRoute`. By default, no additional data is passed.
+    */
   var data: js.UndefOr[Data] = js.undefined
+  /**
+    * A `LoadChildren` object specifying lazy-loaded child routes.
+    */
   var loadChildren: js.UndefOr[LoadChildren] = js.undefined
+  /**
+    * A URL-matching function to use as a custom strategy for path matching.
+    * If present, supersedes `path` and `pathMatch`.
+    */
   var matcher: js.UndefOr[UrlMatcher] = js.undefined
+  /**
+    * Name of a `RouterOutlet` object where the component can be placed
+    * when the path matches.
+    */
   var outlet: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The path to match against, a URL string that uses router matching notation.
+    * Can include wild-card characters (*).   [where is that defined?]
+    * Default is "/" (the root path).
+    */
   var path: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The path-matching strategy, one of 'prefix' or 'full'.
+    * Default is 'prefix'.
+    *
+    * By default, the router checks URL elements from the left to see if the URL
+    * matches a given  path, and stops when there is a match. For example,
+    * '/team/11/user' matches 'team/:id'.
+    * The path-match strategy 'full' matches against the entire URL.
+    * It is important to do this when redirecting empty-path routes.
+    * Otherwise, because an empty path is a prefix of any URL,
+    * the router would apply the redirect even when navigating
+    * to the redirect destination, creating an endless loop.
+    *
+    */
   var pathMatch: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * A URL to which to redirect when a the path matches.
+    * Absolute if the URL begins with a slash (/), otherwise relative to the path URL.
+    * When not present, router does not redirect.
+    */
   var redirectTo: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * A map of DI tokens used to look up data resolvers. See `Resolve`.
+    */
   var resolve: js.UndefOr[ResolveData] = js.undefined
+  /**
+    * Defines when guards and resolvers will be run. One of
+    * - `paramsOrQueryParamsChange` : Run when query parameters change.
+    * - `always` : Run on every execution.
+    * By default, guards and resolvers run only when the matrix
+    * parameters of the route change.
+    */
   var runGuardsAndResolvers: js.UndefOr[RunGuardsAndResolvers] = js.undefined
 }
 

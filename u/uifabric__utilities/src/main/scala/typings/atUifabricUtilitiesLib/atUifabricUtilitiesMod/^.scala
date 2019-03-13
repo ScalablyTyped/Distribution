@@ -106,6 +106,12 @@ object ^ extends js.Object {
     currentElement: stdLib.HTMLElement,
     includeElementsInFocusZones: scala.Boolean
   ): stdLib.HTMLElement | scala.Null = js.native
+  def getFirstTabbable(
+    rootElement: stdLib.HTMLElement,
+    currentElement: stdLib.HTMLElement,
+    includeElementsInFocusZones: scala.Boolean,
+    checkNode: scala.Boolean
+  ): stdLib.HTMLElement | scala.Null = js.native
   def getFocusableByIndexPath(parent: stdLib.HTMLElement, path: js.Array[scala.Double]): js.UndefOr[stdLib.HTMLElement] = js.native
   def getId(): java.lang.String = js.native
   def getId(prefix: java.lang.String): java.lang.String = js.native
@@ -127,6 +133,12 @@ object ^ extends js.Object {
     rootElement: stdLib.HTMLElement,
     currentElement: stdLib.HTMLElement,
     includeElementsInFocusZones: scala.Boolean
+  ): stdLib.HTMLElement | scala.Null = js.native
+  def getLastTabbable(
+    rootElement: stdLib.HTMLElement,
+    currentElement: stdLib.HTMLElement,
+    includeElementsInFocusZones: scala.Boolean,
+    checkNode: scala.Boolean
   ): stdLib.HTMLElement | scala.Null = js.native
   def getNativeProps[T](props: js.Object, allowedPropNames: js.Array[java.lang.String]): T = js.native
   def getNativeProps[T](

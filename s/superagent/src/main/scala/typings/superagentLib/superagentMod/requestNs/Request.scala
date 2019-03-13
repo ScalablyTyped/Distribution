@@ -33,6 +33,7 @@ trait Request
   def get(field: java.lang.String): java.lang.String = js.native
   def key(cert: java.lang.String): this.type = js.native
   def key(cert: nodeLib.Buffer): this.type = js.native
+  def maxResponseSize(size: scala.Double): this.type = js.native
   def ok(callback: js.Function1[/* res */ Response, scala.Boolean]): this.type = js.native
   def on(name: java.lang.String, handler: js.Function1[/* event */ js.Any, scala.Unit]): this.type = js.native
   @JSName("on")

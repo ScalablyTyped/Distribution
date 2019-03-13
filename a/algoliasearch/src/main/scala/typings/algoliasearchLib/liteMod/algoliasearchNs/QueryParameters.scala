@@ -87,6 +87,12 @@ trait QueryParameters extends js.Object {
     */
   var attributesToSnippet: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
+    * If set to true, enables the Click Analytics feature
+    * default false
+    * https://www.algolia.com/doc/api-reference/api-parameters/clickAnalytics/
+    */
+  var clickAnalytics: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * List of attributes on which you want to disable the computation of exact criteria
     * default: []
     * https://www.algolia.com/doc/api-reference/api-parameters/disableExactOnAttributes/
@@ -370,6 +376,7 @@ object QueryParameters {
     attributesToHighlight: js.Array[java.lang.String] = null,
     attributesToRetrieve: js.Array[java.lang.String] = null,
     attributesToSnippet: js.Array[java.lang.String] = null,
+    clickAnalytics: js.UndefOr[scala.Boolean] = js.undefined,
     disableExactOnAttributes: js.Array[java.lang.String] = null,
     disableTypoToleranceOnAttributes: js.Array[java.lang.String] = null,
     distinct: scala.Double | scala.Boolean = null,
@@ -427,6 +434,7 @@ object QueryParameters {
     if (attributesToHighlight != null) __obj.updateDynamic("attributesToHighlight")(attributesToHighlight)
     if (attributesToRetrieve != null) __obj.updateDynamic("attributesToRetrieve")(attributesToRetrieve)
     if (attributesToSnippet != null) __obj.updateDynamic("attributesToSnippet")(attributesToSnippet)
+    if (!js.isUndefined(clickAnalytics)) __obj.updateDynamic("clickAnalytics")(clickAnalytics)
     if (disableExactOnAttributes != null) __obj.updateDynamic("disableExactOnAttributes")(disableExactOnAttributes)
     if (disableTypoToleranceOnAttributes != null) __obj.updateDynamic("disableTypoToleranceOnAttributes")(disableTypoToleranceOnAttributes)
     if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])

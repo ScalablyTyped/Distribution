@@ -9,28 +9,56 @@ import scala.scalajs.js.annotation._
 sealed trait PictureFormat extends js.Object
 
 /**
+  *
+  * The format of the image.
+  *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
 @JSGlobal("Excel.PictureFormat")
 @js.native
 object PictureFormat extends js.Object {
+  /**
+    *
+    * Bitmap image.
+    *
+    */
   @js.native
   sealed trait bmp
     extends officeDashJsDashPreviewLib.ExcelNs.PictureFormat
   
+  /**
+    *
+    * Graphics Interchange Format.
+    *
+    */
   @js.native
   sealed trait gif
     extends officeDashJsDashPreviewLib.ExcelNs.PictureFormat
   
+  /**
+    *
+    * Joint Photographic Experts Group.
+    *
+    */
   @js.native
   sealed trait jpeg
     extends officeDashJsDashPreviewLib.ExcelNs.PictureFormat
   
+  /**
+    *
+    * Portable Network Graphics.
+    *
+    */
   @js.native
   sealed trait png
     extends officeDashJsDashPreviewLib.ExcelNs.PictureFormat
   
+  /**
+    *
+    * Scalable Vector Graphic.
+    *
+    */
   @js.native
   sealed trait svg
     extends officeDashJsDashPreviewLib.ExcelNs.PictureFormat

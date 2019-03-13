@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("time-span", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): timeDashSpanLib.timeDashSpanMod.timeSpanNs.TimeSpanObject = js.native
+  def default(): TimeEndFunction = js.native
 }
 

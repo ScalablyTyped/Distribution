@@ -47,7 +47,7 @@ class PageBreak ()
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  def getStartCell(): Range = js.native
+  def getCellAfterBreak(): Range = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *

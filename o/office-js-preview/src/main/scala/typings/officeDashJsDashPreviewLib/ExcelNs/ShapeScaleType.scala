@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeScaleType extends js.Object
 
 /**
+  *
+  * Specifies whether the shape is scaled relative to its original or current size.
+  *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */

@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeLineDashStyle extends js.Object
 
 /**
+  *
+  * The dash style for a line.
+  *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents an image object in the worksheet.
+  * Represents an image in the worksheet. To get the corresponding Shape object, use Image.shape.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -17,7 +17,7 @@ trait ImageLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns the format for the image. Read-only.
+    * Returns the format of the image. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -33,7 +33,7 @@ trait ImageLoadOptions extends js.Object {
   var id: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns the shape object for the image.
+    * Returns the Shape object associated with the image.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

@@ -9,32 +9,65 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeFillType extends js.Object
 
 /**
+  *
+  * Specifies a shape's fill type.
+  *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
 @JSGlobal("Excel.ShapeFillType")
 @js.native
 object ShapeFillType extends js.Object {
+  /**
+    *
+    * Gradient fill.
+    *
+    */
   @js.native
   sealed trait gradient
     extends officeDashJsDashPreviewLib.ExcelNs.ShapeFillType
   
+  /**
+    *
+    * Mixed fill.
+    *
+    */
   @js.native
   sealed trait mixed
     extends officeDashJsDashPreviewLib.ExcelNs.ShapeFillType
   
+  /**
+    *
+    * No fill.
+    *
+    */
   @js.native
   sealed trait noFill
     extends officeDashJsDashPreviewLib.ExcelNs.ShapeFillType
   
+  /**
+    *
+    * Pattern fill.
+    *
+    */
   @js.native
   sealed trait pattern
     extends officeDashJsDashPreviewLib.ExcelNs.ShapeFillType
   
+  /**
+    *
+    * Picture and texture fill.
+    *
+    */
   @js.native
   sealed trait pictureAndTexture
     extends officeDashJsDashPreviewLib.ExcelNs.ShapeFillType
   
+  /**
+    *
+    * Solid fill.
+    *
+    */
   @js.native
   sealed trait solid
     extends officeDashJsDashPreviewLib.ExcelNs.ShapeFillType

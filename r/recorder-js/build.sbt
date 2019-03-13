@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "recorder-js"
-version := "1.0-dt-20181010Z-52815e"
+version := "1.0-dt-20190312Z-4ed762"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

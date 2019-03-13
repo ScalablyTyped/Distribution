@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * This object represents the font attributes (font name, font size, color, etc.) for a TextRange in the Shape.
+  * Represents the font attributes, such as font name, font size, and color, for a shape's TextRange object.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -26,7 +26,7 @@ class ShapeFont ()
   var bold: scala.Boolean = js.native
   /**
     *
-    * HTML color code representation of the text color. E.g. #FF0000 represents Red. Returns null if the TextRange includes text fragments with different colors.
+    * The HTML color code representation of the text color (e.g. "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -37,7 +37,7 @@ class ShapeFont ()
   var context_ShapeFont: RequestContext = js.native
   /**
     *
-    * Represents the italic status of font. Return null if the TextRange includes both italic and non-italic text fragments.
+    * Represents the italic status of font. Returns null if the TextRange includes both italic and non-italic text fragments.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -45,7 +45,7 @@ class ShapeFont ()
   var italic: scala.Boolean = js.native
   /**
     *
-    * Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, represents corresponding font name; otherwise represents Latin font name.
+    * Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -53,7 +53,7 @@ class ShapeFont ()
   var name: java.lang.String = js.native
   /**
     *
-    * Represents font size in points (e.g. 11). Return null if the TextRange includes text fragments with different font sizes.
+    * Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different font sizes.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -61,7 +61,7 @@ class ShapeFont ()
   var size: scala.Double = js.native
   /**
     *
-    * Type of underline applied to the font. Return null if the TextRange includes text fragments with different underline styles. See Excel.ShapeFontUnderlineStyle for details.
+    * Type of underline applied to the font. Returns null if the TextRange includes text fragments with different underline styles. See Excel.ShapeFontUnderlineStyle for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

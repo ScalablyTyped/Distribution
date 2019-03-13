@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zen-push"
-version := "0.1-dt-20180214Z-1a4424"
+version := "0.1-dt-20190312Z-d43215"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ml-levenberg-marquardt"
-version := "1.0-dt-20180907Z-8527e8"
+version := "1.0-dt-20190312Z-73f68f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

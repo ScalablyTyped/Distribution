@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "google-p12-pem"
-version := "1.0.3-3d7809"
+version := "1.0.4-42bcd5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
-  "org.scalablytyped" %%% "node-forge" % "0.7.6-dt-20190130Z-d94c28",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190312Z-f6d9fe",
+  "org.scalablytyped" %%% "node-forge" % "0.7.6-dt-20190130Z-80a626",
   "org.scalablytyped" %%% "pify" % "3.0.0-dt-20180501Z-937816",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false

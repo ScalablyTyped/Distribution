@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeZOrder extends js.Object
 
 /**
+  *
+  * Specifies where in the z-order a shape should be moved relative to other shapes.
+  *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */

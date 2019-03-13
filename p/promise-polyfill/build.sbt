@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "promise-polyfill"
-version := "6.0-dt-20190212Z-bf9104"
+version := "6.0-dt-20190312Z-835320"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

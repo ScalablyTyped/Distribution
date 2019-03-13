@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation._
 object taskDashWorkletLibStrings {
   @js.native
   sealed trait cancelled
-    extends taskDashWorkletLib.taskDashWorkletMod.State
+    extends taskDashWorkletLib.taskDashWorkletMod.TaskQueueNs.State
   
   @js.native
   sealed trait completed
-    extends taskDashWorkletLib.taskDashWorkletMod.State
+    extends taskDashWorkletLib.taskDashWorkletMod.TaskQueueNs.State
   
   @js.native
   sealed trait fulfilled
-    extends taskDashWorkletLib.taskDashWorkletMod.State
+    extends taskDashWorkletLib.taskDashWorkletMod.TaskQueueNs.State
   
   @js.native
   sealed trait pending
-    extends taskDashWorkletLib.taskDashWorkletMod.State
+    extends taskDashWorkletLib.taskDashWorkletMod.TaskQueueNs.State
   
   @js.native
   sealed trait scheduled
-    extends taskDashWorkletLib.taskDashWorkletMod.State
+    extends taskDashWorkletLib.taskDashWorkletMod.TaskQueueNs.State
   
   @scala.inline
   def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]

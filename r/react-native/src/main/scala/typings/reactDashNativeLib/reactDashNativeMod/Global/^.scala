@@ -27,6 +27,6 @@ object ^ extends js.Object {
     * @see https://github.com/facebook/react-native/issues/934
     */
   val originalXMLHttpRequest: js.Any = js.native
-  var require: ReactNativeRequireFunction = js.native
+  var require: NodeRequire = js.native
 }
 

@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object awsDashLambdaMod {
+  type ALBCallback = Callback[ALBResult]
+  type ALBHandler = Handler[ALBEvent, ALBResult]
   type APIGatewayEvent = APIGatewayProxyEvent
   type APIGatewayProxyCallback = Callback[APIGatewayProxyResult]
   type APIGatewayProxyHandler = Handler[APIGatewayProxyEvent, APIGatewayProxyResult]

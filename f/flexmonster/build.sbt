@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flexmonster"
-version := "2.6-dt-20190302Z-b27d2a"
+version := "2.7-dt-20190312Z-c64dff"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -20,9 +20,7 @@ trait SynchronizeOptions extends js.Object {
     *
     */
   var fileEvents: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VFileSystemWatcher */ js.Any) | (js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VFileSystemWatcher */ _
-    ])
+    vscodeLib.vscodeMod.FileSystemWatcher | js.Array[vscodeLib.vscodeMod.FileSystemWatcher]
   ] = js.undefined
 }
 
@@ -30,9 +28,7 @@ object SynchronizeOptions {
   @scala.inline
   def apply(
     configurationSection: java.lang.String | js.Array[java.lang.String] = null,
-    fileEvents: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VFileSystemWatcher */ js.Any) | (js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VFileSystemWatcher */ _
-    ]) = null
+    fileEvents: vscodeLib.vscodeMod.FileSystemWatcher | js.Array[vscodeLib.vscodeMod.FileSystemWatcher] = null
   ): SynchronizeOptions = {
     val __obj = js.Dynamic.literal()
     if (configurationSection != null) __obj.updateDynamic("configurationSection")(configurationSection.asInstanceOf[js.Any])

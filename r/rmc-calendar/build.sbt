@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rmc-calendar"
-version := "1.1.4-1101d6"
+version := "1.1.4-6df211"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,11 +9,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-25d274",
   "org.scalablytyped" %%% "csstype" % "2.6.3-9f8404",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190306Z-24375e",
-  "org.scalablytyped" %%% "rmc-date-picker" % "6.0.8-d1879c",
-  "org.scalablytyped" %%% "rmc-dialog" % "1.1.1-b54b17",
-  "org.scalablytyped" %%% "rmc-feedback" % "2.0.0-accd24",
-  "org.scalablytyped" %%% "rmc-picker" % "5.0.5-5929d6",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190312Z-24375e",
+  "org.scalablytyped" %%% "rmc-date-picker" % "6.0.8-ce8c6f",
+  "org.scalablytyped" %%% "rmc-dialog" % "1.1.1-9920cc",
+  "org.scalablytyped" %%% "rmc-feedback" % "2.0.0-4049c8",
+  "org.scalablytyped" %%% "rmc-picker" % "5.0.5-810c1f",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

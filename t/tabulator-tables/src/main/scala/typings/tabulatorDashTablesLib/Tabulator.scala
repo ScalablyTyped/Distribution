@@ -26,12 +26,6 @@ class Tabulator protected () extends js.Object {
   @JSName("removeFilter")
   var removeFilter_Original: tabulatorDashTablesLib.TabulatorNs.FilterFunction = js.native
   var rowManager: js.Any = js.native
-  /** The searchData function allows you to retreive an array of table row data that match any filters you pass in. it accepts the same arguments as the setFilter function. */
-  @JSName("searchData")
-  var searchData_Original: tabulatorDashTablesLib.TabulatorNs.FilterFunction = js.native
-  /** The searchRows function allows you to retreive an array of row components that match any filters you pass in. it accepts the same arguments as the setFilter function. */
-  @JSName("searchRows")
-  var searchRows_Original: tabulatorDashTablesLib.TabulatorNs.FilterFunction = js.native
   /** If you wish to add a single column to the table, you can do this using the addColumn function.
     * This function takes three arguments:
     Columns Definition - The column definition object for the column you want to add.
@@ -324,9 +318,9 @@ class Tabulator protected () extends js.Object {
     ifVisible: scala.Boolean
   ): js.Promise[scala.Unit] = js.native
   /** The searchData function allows you to retreive an array of table row data that match any filters you pass in. it accepts the same arguments as the setFilter function. */
-  def searchData(field: java.lang.String, `type`: tabulatorDashTablesLib.TabulatorNs.FilterType, value: js.Any): scala.Unit = js.native
+  def searchData(field: java.lang.String, `type`: tabulatorDashTablesLib.TabulatorNs.FilterType, value: js.Any): js.Array[_] = js.native
   /** The searchRows function allows you to retreive an array of row components that match any filters you pass in. it accepts the same arguments as the setFilter function. */
-  def searchRows(field: java.lang.String, `type`: tabulatorDashTablesLib.TabulatorNs.FilterType, value: js.Any): scala.Unit = js.native
+  def searchRows(field: java.lang.String, `type`: tabulatorDashTablesLib.TabulatorNs.FilterType, value: js.Any): js.Array[tabulatorDashTablesLib.TabulatorNs.RowComponent] = js.native
   /** To programmatically select a row you can use the selectRow function.
     To select a specific row you can pass the any of the standard row component look up options into the first argument of the function. If you leave the argument blank you will select all rows (if you have set the selectable option to a numeric value, it will be ignored when selecting all rows). */
   def selectRow(): scala.Unit = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "crpc"
-version := "0.2-dt-20181031Z-d01421"
+version := "0.2-dt-20190312Z-2fb8e5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

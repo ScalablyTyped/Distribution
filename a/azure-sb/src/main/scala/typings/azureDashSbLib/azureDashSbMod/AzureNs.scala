@@ -132,11 +132,8 @@ object AzureNs extends js.Object {
     }
     
     trait ReceiveQueueMessageOptions extends js.Object {
-      var timeoutIntervalInS: js.UndefOr[scala.Double] = js.undefined
-    }
-    
-    trait ReceiveSubscriptionMessageOptions extends ReceiveQueueMessageOptions {
       var isPeekLock: js.UndefOr[scala.Boolean] = js.undefined
+      var timeoutIntervalInS: js.UndefOr[scala.Double] = js.undefined
     }
     
     trait Response extends js.Object {
@@ -345,6 +342,7 @@ object AzureNs extends js.Object {
     type ListSubscriptionsOptions = stdLib.Partial[PaginationOptions]
     type ListTopicsOptions = stdLib.Partial[PaginationOptions]
     type MessageOrName = Message | java.lang.String
+    type ReceiveSubscriptionMessageOptions = ReceiveQueueMessageOptions
     type ResponseCallback = js.Function2[/* error */ stdLib.Error | scala.Null, /* response */ Response, scala.Unit]
     type ResultAndResponseCallback = js.Function3[
         /* error */ stdLib.Error | scala.Null, 

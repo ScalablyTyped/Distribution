@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents a generic shape object in the worksheet.
+  * Represents a generic shape object in the worksheet. A shape could be a geometric shape, a line, a group of shapes, etc.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -17,7 +17,7 @@ trait ShapeLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page.
+    * Returns or sets the alternative description text for a Shape object.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -25,7 +25,7 @@ trait ShapeLoadOptions extends js.Object {
   var altTextDescription: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page.
+    * Returns or sets the alternative title text for a Shape object.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -33,7 +33,7 @@ trait ShapeLoadOptions extends js.Object {
   var altTextTitle: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns the number of connection sites on the specified shape. Read-only.
+    * Returns the number of connection sites on this shape. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -41,7 +41,7 @@ trait ShapeLoadOptions extends js.Object {
   var connectionSiteCount: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns the fill formatting of the shape object.
+    * Returns the fill formatting of this shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -49,7 +49,7 @@ trait ShapeLoadOptions extends js.Object {
   var fill: js.UndefOr[ShapeFillLoadOptions] = js.undefined
   /**
     *
-    * Returns the geometric shape for the shape object. Error will be thrown, if the shape object is other shape type (Like, Image, SmartArt, etc.) rather than GeometricShape.
+    * Returns the geometric shape associated with the shape. An error will be thrown if the shape type is not "GeometricShape".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -57,7 +57,7 @@ trait ShapeLoadOptions extends js.Object {
   var geometricShape: js.UndefOr[GeometricShapeLoadOptions] = js.undefined
   /**
     *
-    * Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null.
+    * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -65,7 +65,7 @@ trait ShapeLoadOptions extends js.Object {
   var geometricShapeType: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns the shape group for the shape object. Error will be thrown, if the shape object is other shape type (Like, Image, SmartArt, etc.) rather than GroupShape.
+    * Returns the shape group associated with the shape. An error will be thrown if the shape type is not "GroupShape".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -74,7 +74,7 @@ trait ShapeLoadOptions extends js.Object {
   /**
     *
     * Represents the height, in points, of the shape.
-    Throws an invalid argument exception when set with negative value or zero as input.
+    Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -90,7 +90,7 @@ trait ShapeLoadOptions extends js.Object {
   var id: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns the image for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image.
+    * Returns the image associated with the shape. An error will be thrown if the shape type is not "Image".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -98,8 +98,8 @@ trait ShapeLoadOptions extends js.Object {
   var image: js.UndefOr[ImageLoadOptions] = js.undefined
   /**
     *
-    * The distance, in points, from the left side of the shape to the left of the worksheet.
-    Throws an invalid argument exception when set with negative value as input.
+    * The distance, in points, from the left side of the shape to the left side of the worksheet.
+    Throws an invalid argument exception when set with a negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -107,7 +107,7 @@ trait ShapeLoadOptions extends js.Object {
   var left: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the shape is part of a top-level group, etc.
+    * Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -115,7 +115,7 @@ trait ShapeLoadOptions extends js.Object {
   var level: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns the line object for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image.
+    * Returns the line associated with the shape. An error will be thrown if the shape type is not "Line".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -123,7 +123,7 @@ trait ShapeLoadOptions extends js.Object {
   var line: js.UndefOr[LineLoadOptions] = js.undefined
   /**
     *
-    * Returns the line formatting of the shape object.
+    * Returns the line formatting of this shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -131,7 +131,7 @@ trait ShapeLoadOptions extends js.Object {
   var lineFormat: js.UndefOr[ShapeLineFormatLoadOptions] = js.undefined
   /**
     *
-    * Represents if the aspect ratio locked, in boolean, of the shape.
+    * Specifies whether or not the aspect ratio of this shape is locked.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -147,7 +147,7 @@ trait ShapeLoadOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the parent group of the specified shape.
+    * Represents the parent group of this shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -155,7 +155,7 @@ trait ShapeLoadOptions extends js.Object {
   var parentGroup: js.UndefOr[ShapeLoadOptions] = js.undefined
   /**
     *
-    * Represents the placment, value that represents the way the object is attached to the cells below it.
+    * Represents how the object is attached to the cells below it.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -171,7 +171,7 @@ trait ShapeLoadOptions extends js.Object {
   var rotation: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns the textFrame object of a shape. Read only.
+    * Returns the text frame object of this shape. Read only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -179,8 +179,8 @@ trait ShapeLoadOptions extends js.Object {
   var textFrame: js.UndefOr[TextFrameLoadOptions] = js.undefined
   /**
     *
-    * The distance, in points, from the top edge of the shape to the top of the worksheet.
-    Throws an invalid argument exception when set with negative value as input.
+    * The distance, in points, from the top edge of the shape to the top edge of the worksheet.
+    Throws an invalid argument exception when set with a negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -188,7 +188,7 @@ trait ShapeLoadOptions extends js.Object {
   var top: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail.
+    * Returns the type of this shape. See Excel.ShapeType for details. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -196,7 +196,7 @@ trait ShapeLoadOptions extends js.Object {
   var `type`: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the visibility, in boolean, of the specified shape.
+    * Represents the visibility of this shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -205,7 +205,7 @@ trait ShapeLoadOptions extends js.Object {
   /**
     *
     * Represents the width, in points, of the shape.
-    Throws an invalid argument exception when set with negative value or zero as input.
+    Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -213,7 +213,7 @@ trait ShapeLoadOptions extends js.Object {
   var width: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns the position of the specified shape in the z-order, the very bottom shape's z-order value is 0. Read-only.
+    * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

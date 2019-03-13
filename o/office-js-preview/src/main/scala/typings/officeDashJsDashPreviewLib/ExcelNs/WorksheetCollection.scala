@@ -122,11 +122,11 @@ class WorksheetCollection ()
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param base64File Required. Base64 string representing the source workbook.
-    * @param sheetNamesToInsert Optional. The speified worksheet names to insert. By default it will insert all worksheets from the source workbook.
-    * @param positionType Optional. Insert position type, see Excel.WorksheetPositionType for details. Default is "Start".
-    * @param relativeTo Optional. The referencing worksheet object or worksheet name/id in the current workbook. Default is null and based on the postionType parameter it will insert worksheets at the start or end of the current workbook.
-    * @returns An array where each item represents the Id of the new inserted worksheet.
+    * @param base64File Required. The base64-encoded string representing the source workbook file.
+    * @param sheetNamesToInsert Optional. The names of individual worksheets to insert. By default, all the worksheets from the source workbook are inserted.
+    * @param positionType Optional. Where in the current workbook the new worksheets will be inserted. See Excel.WorksheetPositionType for details. Default is "Start".
+    * @param relativeTo Optional. The worksheet in the current workbook that is referenced for the positionType parameter. Default is null and, based on positionType, it will insert worksheets at the start or end of the current workbook.
+    * @returns An array of ids corresponding to each newly inserted worksheet.
     */
   def addFromBase64(base64File: java.lang.String): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[java.lang.String]] = js.native
   def addFromBase64(base64File: java.lang.String, sheetNamesToInsert: js.Array[java.lang.String]): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[java.lang.String]] = js.native

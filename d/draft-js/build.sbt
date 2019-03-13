@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "draft-js"
-version := "v0.10.5-dt-20190226Z-931956"
+version := "v0.10.5-dt-20190226Z-4f3088"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-9f8404",
   "org.scalablytyped" %%% "immutable" % "4.0.0-rc.12-39169f",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190306Z-24375e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190312Z-24375e",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

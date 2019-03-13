@@ -40,6 +40,7 @@ object Parameters {
     attributesToHighlight: js.Array[java.lang.String] = null,
     attributesToRetrieve: js.Array[java.lang.String] = null,
     attributesToSnippet: js.Array[java.lang.String] = null,
+    clickAnalytics: js.UndefOr[scala.Boolean] = js.undefined,
     disableExactOnAttributes: js.Array[java.lang.String] = null,
     disableTypoToleranceOnAttributes: js.Array[java.lang.String] = null,
     distinct: scala.Double | scala.Boolean = null,
@@ -96,6 +97,7 @@ object Parameters {
     if (attributesToHighlight != null) __obj.updateDynamic("attributesToHighlight")(attributesToHighlight)
     if (attributesToRetrieve != null) __obj.updateDynamic("attributesToRetrieve")(attributesToRetrieve)
     if (attributesToSnippet != null) __obj.updateDynamic("attributesToSnippet")(attributesToSnippet)
+    if (!js.isUndefined(clickAnalytics)) __obj.updateDynamic("clickAnalytics")(clickAnalytics)
     if (disableExactOnAttributes != null) __obj.updateDynamic("disableExactOnAttributes")(disableExactOnAttributes)
     if (disableTypoToleranceOnAttributes != null) __obj.updateDynamic("disableTypoToleranceOnAttributes")(disableTypoToleranceOnAttributes)
     if (distinct != null) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])

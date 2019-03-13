@@ -10,7 +10,7 @@ sealed trait SaveBehavior extends js.Object
 
 /**
   *
-  * Specifies the save behavior for workbook.save API.
+  * Specifies the save behavior for Workbook.save API.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta

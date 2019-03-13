@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "algoliasearch"
-version := "3.30.0-dt-20190225Z-56177e"
+version := "3.30.1-dt-20190312Z-7c32fa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

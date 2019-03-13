@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents the fill formatting for a shape object.
+  * Represents the fill formatting of a shape object.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -21,15 +21,15 @@ class ShapeFill ()
   var context_ShapeFill: RequestContext = js.native
   /**
     *
-    * Represents the shape fill fore color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
+    * Represents the shape fill foreground color in HTML color format, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var foreColor: java.lang.String = js.native
+  var foregroundColor: java.lang.String = js.native
   /**
     *
-    * Returns or sets the degree of transparency of the specified fill as a value from 0.0 (opaque) through 1.0 (clear). For API not supported shape types  or special fill type with inconsistent transparencies, return null. For example, gradient fill type could have inconsistent transparencies.
+    * Returns or sets the transparency percentage of the fill as a value from 0.0 (opaque) through 1.0 (clear). Returns null if the shape type does not support transparency or the shape fill has inconsistent transparency, such as with a gradient fill type.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -37,7 +37,7 @@ class ShapeFill ()
   var transparency: scala.Double = js.native
   /**
     *
-    * Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for detail.
+    * Returns the fill type of the shape. Read-only. See Excel.ShapeFillType for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -45,7 +45,7 @@ class ShapeFill ()
   val `type`: ShapeFillType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NoFill | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Solid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Gradient | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Pattern | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PictureAndTexture | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Mixed = js.native
   /**
     *
-    * Clears the fill formatting of a shape object.
+    * Clears the fill formatting of this shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -91,7 +91,7 @@ class ShapeFill ()
   def set(properties: ShapeFill): scala.Unit = js.native
   /**
     *
-    * Sets the fill formatting of a shape object to a uniform color, fill type changeing to Solid Fill.
+    * Sets the fill formatting of the shape to a uniform color. This changes the fill type to "Solid".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__icons-react"
-version := "1.1.2-2d6ce2"
+version := "1.1.2-b6c02f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ant-design__icons" % "1.2.1-9219ec",
   "org.scalablytyped" %%% "csstype" % "2.6.3-9f8404",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190306Z-24375e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190312Z-24375e",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

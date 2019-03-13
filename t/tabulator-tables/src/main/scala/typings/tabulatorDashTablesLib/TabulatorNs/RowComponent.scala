@@ -23,7 +23,7 @@ trait RowComponent extends js.Object {
   /** The getCells function returns an array of CellComponent objects, one for each cell in the row.*/
   def getCells(): js.Array[CellComponent] = js.native
   /** The getData function returns the data object for the row.*/
-  def getData(): js.Object = js.native
+  def getData(): js.Any = js.native
   /** The getElement function returns the DOM node for the row.*/
   def getElement(): stdLib.HTMLElement = js.native
   /** When using grouped rows, you can retrieve the group component for the current row using the getGroup function. */

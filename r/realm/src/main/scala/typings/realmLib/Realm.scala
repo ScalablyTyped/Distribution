@@ -22,6 +22,13 @@ class Realm () extends js.Object {
   val schemaVersion: scala.Double = js.native
   val syncSession: realmLib.RealmNs.SyncNs.Session | scala.Null = js.native
   /**
+    * Update the schema of the Realm.
+    * 
+    * @param schema The schema which the Realm should be updated to use.
+    * @private Not a part of the public API: Consider passing a `schema` when constructing the `Realm` instead.
+    */
+  def _updateSchema(schema: js.Array[realmLib.RealmNs.ObjectSchema]): scala.Unit = js.native
+  /**
     * @param  {string} name
     * @param  {()=>void} callback
     * @returns void
@@ -184,6 +191,11 @@ object Realm extends js.Object {
     */
   def automaticSyncConfiguration(): java.lang.String = js.native
   def automaticSyncConfiguration(user: realmLib.RealmNs.SyncNs.User): java.lang.String = js.native
+  /**
+    * Clears the state by closing and deleting any Realm in the default directory and logout all users.
+    * @private Not a part of the public API: It's primarily used from the library's tests.
+    */
+  def clearTestState(): scala.Unit = js.native
   /**
     * Copy all bundled Realm files to app's default file folder.
     */

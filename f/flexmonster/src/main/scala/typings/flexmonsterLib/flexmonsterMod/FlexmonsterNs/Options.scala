@@ -16,6 +16,7 @@ trait Options extends js.Object {
   var defaultHierarchySortName: js.UndefOr[java.lang.String] = js.undefined
   var drillThrough: js.UndefOr[scala.Boolean] = js.undefined
   var editing: js.UndefOr[scala.Boolean] = js.undefined
+  var filter: js.UndefOr[flexmonsterLib.Anon_DateFormat] = js.undefined
   var grid: js.UndefOr[flexmonsterLib.Anon_Dragging] = js.undefined
   var grouping: js.UndefOr[scala.Boolean] = js.undefined
   var saveAllFormats: js.UndefOr[scala.Boolean] = js.undefined
@@ -48,6 +49,7 @@ object Options {
     defaultHierarchySortName: java.lang.String = null,
     drillThrough: js.UndefOr[scala.Boolean] = js.undefined,
     editing: js.UndefOr[scala.Boolean] = js.undefined,
+    filter: flexmonsterLib.Anon_DateFormat = null,
     grid: flexmonsterLib.Anon_Dragging = null,
     grouping: js.UndefOr[scala.Boolean] = js.undefined,
     saveAllFormats: js.UndefOr[scala.Boolean] = js.undefined,
@@ -77,6 +79,7 @@ object Options {
     if (defaultHierarchySortName != null) __obj.updateDynamic("defaultHierarchySortName")(defaultHierarchySortName)
     if (!js.isUndefined(drillThrough)) __obj.updateDynamic("drillThrough")(drillThrough)
     if (!js.isUndefined(editing)) __obj.updateDynamic("editing")(editing)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
     if (grid != null) __obj.updateDynamic("grid")(grid)
     if (!js.isUndefined(grouping)) __obj.updateDynamic("grouping")(grouping)
     if (!js.isUndefined(saveAllFormats)) __obj.updateDynamic("saveAllFormats")(saveAllFormats)

@@ -20,12 +20,13 @@ class Router protected () extends js.Object {
   var currentNavigation: js.Any = js.native
   var currentUrlTree: js.Any = js.native
   /**
-    * Error handler that is invoked when a navigation errors.
-    *
-    * See `ErrorHandler` for more information.
+    * A handler for navigation errors in this NgModule.
     */
   @JSName("errorHandler")
   var errorHandler_Original: ErrorHandler = js.native
+  /**
+    * An event stream for routing events in this NgModule.
+    */
   val events: rxjsLib.rxjsMod.Observable[atAngularRouterLib.srcEventsMod.Event] = js.native
   var getTransition: js.Any = js.native
   var isNgZoneEnabled: js.Any = js.native
@@ -34,26 +35,27 @@ class Router protected () extends js.Object {
   var location: js.Any = js.native
   var locationSubscription: js.Any = js.native
   /**
-    * Indicates if at least one navigation happened.
+    * True if at least one navigation event has occurred,
+    * false otherwise.
     */
   var navigated: scala.Boolean = js.native
   var navigationId: js.Any = js.native
   var navigations: js.Any = js.native
   var ngModule: js.Any = js.native
   /**
-    * Define what the router should do if it receives a navigation request to the current URL.
-    * By default, the router will ignore this navigation. However, this prevents features such
-    * as a "refresh" button. Use this option to configure the behavior when navigating to the
-    * current URL. Default is 'ignore'.
+    * How to handle a navigation request to the current URL. One of:
+    * - `'ignore'` :  The router ignores the request.
+    * - `'reload'` : The router reloads the URL. Use to implement a "refresh" feature.
     */
   var onSameUrlNavigation: atAngularRouterLib.atAngularRouterLibStrings.reload | atAngularRouterLib.atAngularRouterLibStrings.ignore = js.native
   /**
-    * Defines how the router merges params, data and resolved data from parent to child
-    * routes. Available options are:
+    * How to merge parameters, data, and resolved data from parent to child
+    * routes. One of:
     *
-    * - `'emptyOnly'`, the default, only inherits parent params for path-less or component-less
-    *   routes.
-    * - `'always'`, enables unconditional inheritance of parent params.
+    * - `'emptyOnly'` : Inherit parent parameters, data, and resolved data
+    * for path-less or component-less routes.
+    * - `'always'` : Inherit parent parameters, data, and resolved data
+    * for all child routes.
     */
   var paramsInheritanceStrategy: atAngularRouterLib.atAngularRouterLibStrings.emptyOnly | atAngularRouterLib.atAngularRouterLibStrings.always = js.native
   var processNavigations: js.Any = js.native
@@ -67,14 +69,20 @@ class Router protected () extends js.Object {
   var resetUrlToCurrentUrlTree: js.Any = js.native
   var rootComponentType: js.Any = js.native
   var rootContexts: js.Any = js.native
+  /**
+    * The strategy for re-using routes.
+    */
   var routeReuseStrategy: atAngularRouterLib.srcRouteUnderscoreReuseUnderscoreStrategyMod.RouteReuseStrategy = js.native
+  /**
+    * The current state of routing in this NgModule.
+    */
   val routerState: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterState = js.native
   var scheduleNavigation: js.Any = js.native
   var setBrowserUrl: js.Any = js.native
   var setTransition: js.Any = js.native
   var setupNavigations: js.Any = js.native
   val transitions: js.Any = js.native
-  /** The current url */
+  /** The current URL. */
   val url: java.lang.String = js.native
   /**
     * Extracts and merges URLs. Used for AngularJS to Angular migrations.
@@ -93,14 +101,16 @@ class Router protected () extends js.Object {
     */
   var urlUpdateStrategy: atAngularRouterLib.atAngularRouterLibStrings.deferred | atAngularRouterLib.atAngularRouterLibStrings.eager = js.native
   /**
-    * Applies an array of commands to the current url tree and creates a new url tree.
+    * Applies an array of commands to the current URL tree and creates a new URL tree.
     *
     * When given an activate route, applies the given commands starting from the route.
     * When not given a route, applies the given command starting from the root.
     *
-    * @usageNotes
+    * @param commands An array of commands to apply.
+    * @param navigationExtras
+    * @returns The new URL tree.
     *
-    * ### Example
+    * @usageNotes
     *
     * ```
     * // create /team/33/user/11
@@ -137,12 +147,10 @@ class Router protected () extends js.Object {
     */
   def createUrlTree(commands: js.Array[_]): atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree = js.native
   def createUrlTree(commands: js.Array[_], navigationExtras: NavigationExtras): atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree = js.native
-  /** Disposes of the router */
+  /** Disposes of the router. */
   def dispose(): scala.Unit = js.native
   /**
-    * Error handler that is invoked when a navigation errors.
-    *
-    * See `ErrorHandler` for more information.
+    * A handler for navigation errors in this NgModule.
     */
   def errorHandler(error: js.Any): js.Any = js.native
   /** The current Navigation object if one exists */
@@ -198,12 +206,15 @@ class Router protected () extends js.Object {
   def navigateByUrl(url: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree): js.Promise[scala.Boolean] = js.native
   def navigateByUrl(url: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree, extras: NavigationExtras): js.Promise[scala.Boolean] = js.native
   /**
-    * Navigate based on the provided url. This navigation is always absolute.
+    * Navigate based on the provided URL, which must be absolute.
     *
-    * Returns a promise that:
-    * - resolves to 'true' when navigation succeeds,
-    * - resolves to 'false' when navigation fails,
-    * - is rejected when an error happens.
+    * @param url An absolute URL. The function does not apply any delta to the current URL.
+    * @param extras An object containing properties that modify the navigation strategy.
+    * The function ignores any properties in the `NavigationExtras` that would change the
+    * provided URL.
+    *
+    * @returns A Promise that resolves to 'true' when navigation succeeds,
+    * to 'false' when navigation fails, or is rejected on error.
     *
     * @usageNotes
     *
@@ -216,10 +227,6 @@ class Router protected () extends js.Object {
     * router.navigateByUrl("/team/33/user/11", { skipLocationChange: true });
     * ```
     *
-    * Since `navigateByUrl()` takes an absolute URL as the first parameter,
-    * it will not apply any delta to the current URL and ignores any properties
-    * in the second parameter (the `NavigationExtras`) that would change the
-    * provided URL.
     */
   def navigateByUrl(url: java.lang.String): js.Promise[scala.Boolean] = js.native
   def navigateByUrl(url: java.lang.String, extras: NavigationExtras): js.Promise[scala.Boolean] = js.native
@@ -230,9 +237,9 @@ class Router protected () extends js.Object {
   /**
     * Resets the configuration used for navigation and generating links.
     *
-    * @usageNotes
+    * @param config The route array for the new configuration.
     *
-    * ### Example
+    * @usageNotes
     *
     * ```
     * router.resetConfig([

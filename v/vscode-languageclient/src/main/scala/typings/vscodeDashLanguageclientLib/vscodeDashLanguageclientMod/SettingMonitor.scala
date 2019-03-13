@@ -13,6 +13,6 @@ class SettingMonitor protected () extends js.Object {
   var _listeners: js.Any = js.native
   var _setting: js.Any = js.native
   var onDidChangeConfiguration: js.Any = js.native
-  def start(): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
+  def start(): vscodeLib.vscodeMod.Disposable = js.native
 }
 

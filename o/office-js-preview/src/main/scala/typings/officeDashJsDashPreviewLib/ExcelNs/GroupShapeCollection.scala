@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents a shape collection inside a shape group.
+  * Represents the shape collection inside a shape group.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -23,7 +23,7 @@ class GroupShapeCollection ()
   val items: js.Array[Shape] = js.native
   /**
     *
-    * Returns the number of shapes in the group shape. Read-only.
+    * Returns the number of shapes in the shape group. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -36,7 +36,7 @@ class GroupShapeCollection ()
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param name Name of the shape to be retrieved.
+    * @param name The name of the shape to be retrieved.
     */
   def getItem(name: java.lang.String): Shape = js.native
   /**
@@ -46,7 +46,7 @@ class GroupShapeCollection ()
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param index Index value of the object to be retrieved. Zero-indexed.
+    * @param index The zero-based index value of the object to be retrieved.
     */
   def getItemAt(index: scala.Double): Shape = js.native
   /**

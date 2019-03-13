@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "external-editor"
-version := "3.0.3-dd7727"
+version := "3.0.3-35e3bc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "chardet" % "0.5-dt-20180426Z-f5a671",
-  "org.scalablytyped" %%% "iconv-lite" % "0.4.24-d9658c",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
+  "org.scalablytyped" %%% "chardet" % "0.5-dt-20180426Z-09bea8",
+  "org.scalablytyped" %%% "iconv-lite" % "0.4.24-37fb47",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190312Z-f6d9fe",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
   "org.scalablytyped" %%% "tmp" % "0.0-dt-20190212Z-18a81e")
 publishArtifact in packageDoc := false

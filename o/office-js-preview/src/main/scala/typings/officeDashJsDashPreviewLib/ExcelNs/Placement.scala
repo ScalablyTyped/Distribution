@@ -9,20 +9,38 @@ import scala.scalajs.js.annotation._
 sealed trait Placement extends js.Object
 
 /**
+  *
+  * Specifies the way that an object is attached to its underlying cells.
+  *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
 @JSGlobal("Excel.Placement")
 @js.native
 object Placement extends js.Object {
+  /**
+    *
+    * The object is free floating.
+    *
+    */
   @js.native
   sealed trait absolute
     extends officeDashJsDashPreviewLib.ExcelNs.Placement
   
+  /**
+    *
+    * The object is moved and sized with the cells.
+    *
+    */
   @js.native
   sealed trait oneCell
     extends officeDashJsDashPreviewLib.ExcelNs.Placement
   
+  /**
+    *
+    * The object is moved with the cells.
+    *
+    */
   @js.native
   sealed trait twoCell
     extends officeDashJsDashPreviewLib.ExcelNs.Placement

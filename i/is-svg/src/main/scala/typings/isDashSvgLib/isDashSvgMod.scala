@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("is-svg", JSImport.Namespace)
 @js.native
 object isDashSvgMod extends js.Object {
-  def apply(): scala.Boolean = js.native
-  def apply(input: java.lang.String | nodeLib.Buffer | isDashSvgLib.isDashSvgLibNumbers.`false`): scala.Boolean = js.native
+  def default(input: java.lang.String): scala.Boolean = js.native
+  def default(input: nodeLib.Buffer): scala.Boolean = js.native
 }
 

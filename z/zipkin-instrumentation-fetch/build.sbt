@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zipkin-instrumentation-fetch"
-version := "0.11-dt-20181119Z-0dc85b"
+version := "0.11-dt-20181119Z-c7cdd8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-645745",
   "org.scalablytyped" %%% "is-promise" % "2.1-dt-20180214Z-df41db",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-e0cf78",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190312Z-f6d9fe",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-186caf",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
   "org.scalablytyped" %%% "zipkin" % "0.16.2-983d12")
 publishArtifact in packageDoc := false

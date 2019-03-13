@@ -17,7 +17,7 @@ trait ShapeFontUpdateData extends js.Object {
   var bold: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * HTML color code representation of the text color. E.g. #FF0000 represents Red. Returns null if the TextRange includes text fragments with different colors.
+    * The HTML color code representation of the text color (e.g. "#FF0000" represents red). Returns null if the TextRange includes text fragments with different colors.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -25,7 +25,7 @@ trait ShapeFontUpdateData extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Represents the italic status of font. Return null if the TextRange includes both italic and non-italic text fragments.
+    * Represents the italic status of font. Returns null if the TextRange includes both italic and non-italic text fragments.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -33,7 +33,7 @@ trait ShapeFontUpdateData extends js.Object {
   var italic: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, represents corresponding font name; otherwise represents Latin font name.
+    * Represents font name (e.g. "Calibri"). If the text is Complex Script or East Asian language, this is the corresponding font name; otherwise it is the Latin font name.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -41,7 +41,7 @@ trait ShapeFontUpdateData extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Represents font size in points (e.g. 11). Return null if the TextRange includes text fragments with different font sizes.
+    * Represents font size in points (e.g. 11). Returns null if the TextRange includes text fragments with different font sizes.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -49,7 +49,7 @@ trait ShapeFontUpdateData extends js.Object {
   var size: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Type of underline applied to the font. Return null if the TextRange includes text fragments with different underline styles. See Excel.ShapeFontUnderlineStyle for details.
+    * Type of underline applied to the font. Returns null if the TextRange includes text fragments with different underline styles. See Excel.ShapeFontUnderlineStyle for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

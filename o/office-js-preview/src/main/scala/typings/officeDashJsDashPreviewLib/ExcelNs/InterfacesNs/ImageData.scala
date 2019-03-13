@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ImageData extends js.Object {
   /**
     *
-    * Returns the format for the image. Read-only.
+    * Returns the format of the image. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

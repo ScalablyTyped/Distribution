@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "palx"
-version := "1.0-dt-20181222Z-5b2adb"
+version := "1.0-dt-20190312Z-f82b4f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

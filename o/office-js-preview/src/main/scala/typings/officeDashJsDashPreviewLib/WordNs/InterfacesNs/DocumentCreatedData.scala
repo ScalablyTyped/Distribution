@@ -12,6 +12,7 @@ trait DocumentCreatedData extends js.Object {
     * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   var body: js.UndefOr[BodyData] = js.undefined
   /**
@@ -19,6 +20,7 @@ trait DocumentCreatedData extends js.Object {
     * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   var contentControls: js.UndefOr[js.Array[ContentControlData]] = js.undefined
   /**
@@ -26,6 +28,7 @@ trait DocumentCreatedData extends js.Object {
     * Gets the custom XML parts in the document. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.4]
+    * @beta
     */
   var customXmlParts: js.UndefOr[js.Array[CustomXmlPartData]] = js.undefined
   /**
@@ -33,6 +36,7 @@ trait DocumentCreatedData extends js.Object {
     * Gets the properties of the document. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   var properties: js.UndefOr[DocumentPropertiesData] = js.undefined
   /**
@@ -40,6 +44,7 @@ trait DocumentCreatedData extends js.Object {
     * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   var saved: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -47,6 +52,7 @@ trait DocumentCreatedData extends js.Object {
     * Gets the collection of section objects in the document. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   var sections: js.UndefOr[js.Array[SectionData]] = js.undefined
   /**
@@ -54,6 +60,7 @@ trait DocumentCreatedData extends js.Object {
     * Gets the add-in's settings in the document. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.4]
+    * @beta
     */
   var settings: js.UndefOr[js.Array[SettingData]] = js.undefined
 }

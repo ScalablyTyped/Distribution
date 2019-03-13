@@ -10,7 +10,6 @@ trait ColumnProperties extends SettableColumnProperties {
   var address: js.UndefOr[java.lang.String] = js.undefined
   var addressLocal: js.UndefOr[java.lang.String] = js.undefined
   var columnIndex: js.UndefOr[scala.Double] = js.undefined
-  var hasSpill: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object ColumnProperties {
@@ -21,7 +20,6 @@ object ColumnProperties {
     columnHidden: js.UndefOr[scala.Boolean] = js.undefined,
     columnIndex: scala.Int | scala.Double = null,
     format: CellPropertiesFormat with officeDashJsDashPreviewLib.Anon_ColumnWidthNumber = null,
-    hasSpill: js.UndefOr[scala.Boolean] = js.undefined,
     hyperlink: RangeHyperlink = null,
     style: java.lang.String = null
   ): ColumnProperties = {
@@ -31,7 +29,6 @@ object ColumnProperties {
     if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden)
     if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format)
-    if (!js.isUndefined(hasSpill)) __obj.updateDynamic("hasSpill")(hasSpill)
     if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[ColumnProperties]

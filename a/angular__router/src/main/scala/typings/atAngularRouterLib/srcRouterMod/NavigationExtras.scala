@@ -25,9 +25,8 @@ trait NavigationExtras extends js.Object {
     */
   var preserveFragment: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Preserves the query parameters for the next navigation.
-    *
-    * deprecated, use `queryParamsHandling` instead
+    * DEPRECATED: Use `queryParamsHandling` instead to preserve
+    * query parameters for the next navigation.
     *
     * ```
     * // Preserve query params from /results?page=1 to /view?page=1
@@ -47,7 +46,7 @@ trait NavigationExtras extends js.Object {
     */
   var queryParams: js.UndefOr[atAngularRouterLib.srcSharedMod.Params | scala.Null] = js.undefined
   /**
-    *  config strategy to handle the query parameters for the next navigation.
+    * Configuration strategy for how to handle query parameters for the next navigation.
     *
     * ```
     * // from /results?page=1 to /view?page=1&page=2

@@ -55,55 +55,6 @@ trait TableData extends js.Object {
   var nestingLevel: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Gets the parent body of the table. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentBody: js.UndefOr[BodyData] = js.undefined
-  /**
-    *
-    * Gets the content control that contains the table. Throws if there isn't a parent content control. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentContentControl: js.UndefOr[ContentControlData] = js.undefined
-  /**
-    *
-    * Gets the content control that contains the table. Returns a null object if there isn't a parent content control. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentContentControlOrNullObject: js.UndefOr[ContentControlData] = js.undefined
-  /**
-    *
-    * Gets the table that contains this table. Throws if it is not contained in a table. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTable: js.UndefOr[TableData] = js.undefined
-  /**
-    *
-    * Gets the table cell that contains this table. Throws if it is not contained in a table cell. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTableCell: js.UndefOr[TableCellData] = js.undefined
-  /**
-    *
-    * Gets the table cell that contains this table. Returns a null object if it is not contained in a table cell. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTableCellOrNullObject: js.UndefOr[TableCellData] = js.undefined
-  /**
-    *
-    * Gets the table that contains this table. Returns a null object if it is not contained in a table. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTableOrNullObject: js.UndefOr[TableData] = js.undefined
-  /**
-    *
     * Gets the number of rows in the table. Read-only.
     *
     * [Api set: WordApi 1.3]
@@ -215,13 +166,6 @@ object TableData {
     horizontalAlignment: officeDashJsDashPreviewLib.WordNs.Alignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Mixed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Centered | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justified = null,
     isUniform: js.UndefOr[scala.Boolean] = js.undefined,
     nestingLevel: scala.Int | scala.Double = null,
-    parentBody: BodyData = null,
-    parentContentControl: ContentControlData = null,
-    parentContentControlOrNullObject: ContentControlData = null,
-    parentTable: TableData = null,
-    parentTableCell: TableCellData = null,
-    parentTableCellOrNullObject: TableCellData = null,
-    parentTableOrNullObject: TableData = null,
     rowCount: scala.Int | scala.Double = null,
     rows: js.Array[TableRowData] = null,
     shadingColor: java.lang.String = null,
@@ -244,13 +188,6 @@ object TableData {
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
     if (!js.isUndefined(isUniform)) __obj.updateDynamic("isUniform")(isUniform)
     if (nestingLevel != null) __obj.updateDynamic("nestingLevel")(nestingLevel.asInstanceOf[js.Any])
-    if (parentBody != null) __obj.updateDynamic("parentBody")(parentBody)
-    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
-    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
-    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
-    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
-    if (parentTableCellOrNullObject != null) __obj.updateDynamic("parentTableCellOrNullObject")(parentTableCellOrNullObject)
-    if (parentTableOrNullObject != null) __obj.updateDynamic("parentTableOrNullObject")(parentTableOrNullObject)
     if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
     if (rows != null) __obj.updateDynamic("rows")(rows)
     if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)

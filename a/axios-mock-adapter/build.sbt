@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "axios-mock-adapter"
-version := "1.16.0-53164f"
+version := "1.16.0-9579f3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "axios" % "0.18.0-c7cb5f",
+  "org.scalablytyped" %%% "axios" % "0.18.0-6ed3df",
   "org.scalablytyped" %%% "deep-equal" % "1.0-dt-20180214Z-a7edc1",
-  "org.scalablytyped" %%% "is-buffer" % "2.0-dt-20181210Z-b5e931",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
+  "org.scalablytyped" %%% "is-buffer" % "2.0-dt-20181210Z-96cd28",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190312Z-f6d9fe",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

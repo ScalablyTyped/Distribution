@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeTextReadingOrder extends js.Object
 
 /**
+  *
+  * Specifies the reading order for the text frame in a shape.
+  *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
@@ -16,15 +19,15 @@ sealed trait ShapeTextReadingOrder extends js.Object
 @js.native
 object ShapeTextReadingOrder extends js.Object {
   @js.native
-  sealed trait ltr
+  sealed trait leftToRight
     extends officeDashJsDashPreviewLib.ExcelNs.ShapeTextReadingOrder
   
   @js.native
-  sealed trait rtl
+  sealed trait rightToLeft
     extends officeDashJsDashPreviewLib.ExcelNs.ShapeTextReadingOrder
   
-  /* "LTR" */ val ltr: ltr with java.lang.String = js.native
-  /* "RTL" */ val rtl: rtl with java.lang.String = js.native
+  /* "LeftToRight" */ val leftToRight: leftToRight with java.lang.String = js.native
+  /* "RightToLeft" */ val rightToLeft: rightToLeft with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[officeDashJsDashPreviewLib.ExcelNs.ShapeTextReadingOrder with java.lang.String] = js.native
 }

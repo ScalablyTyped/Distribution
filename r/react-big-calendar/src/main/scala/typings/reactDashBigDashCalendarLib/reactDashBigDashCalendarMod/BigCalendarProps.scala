@@ -9,7 +9,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   extends reactLib.reactMod.ReactNs.Props[BigCalendar[TEvent, TResource]] {
   var allDayAccessor: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var components: js.UndefOr[Components] = js.undefined
+  var components: js.UndefOr[Components[TEvent]] = js.undefined
   var culture: js.UndefOr[java.lang.String] = js.undefined
   var date: js.UndefOr[stringOrDate] = js.undefined
   var dayPropGetter: js.UndefOr[DayPropGetter] = js.undefined
@@ -93,7 +93,7 @@ object BigCalendarProps {
     allDayAccessor: java.lang.String = null,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
-    components: Components = null,
+    components: Components[TEvent] = null,
     culture: java.lang.String = null,
     date: stringOrDate = null,
     dayPropGetter: DayPropGetter = null,

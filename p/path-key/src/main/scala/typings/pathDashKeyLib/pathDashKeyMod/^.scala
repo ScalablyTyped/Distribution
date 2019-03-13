@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("path-key", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply(): java.lang.String = js.native
-  def apply(options: pathDashKeyLib.pathDashKeyMod.pathKeyNs.Options): java.lang.String = js.native
+  def default(): java.lang.String = js.native
+  def default(options: Options): java.lang.String = js.native
 }
 

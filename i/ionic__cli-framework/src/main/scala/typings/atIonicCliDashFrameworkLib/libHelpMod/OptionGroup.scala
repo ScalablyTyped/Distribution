@@ -31,11 +31,16 @@ object OptionGroup extends js.Object {
   sealed trait Hidden
     extends atIonicCliDashFrameworkLib.libHelpMod.OptionGroup
   
+  @js.native
+  sealed trait Paid
+    extends atIonicCliDashFrameworkLib.libHelpMod.OptionGroup
+  
   /* "advanced" */ val Advanced: Advanced with java.lang.String = js.native
   /* "beta" */ val Beta: Beta with java.lang.String = js.native
   /* "deprecated" */ val Deprecated: Deprecated with java.lang.String = js.native
   /* "experimental" */ val Experimental: Experimental with java.lang.String = js.native
   /* "hidden" */ val Hidden: Hidden with java.lang.String = js.native
+  /* "paid" */ val Paid: Paid with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[atIonicCliDashFrameworkLib.libHelpMod.OptionGroup with java.lang.String] = js.native
 }

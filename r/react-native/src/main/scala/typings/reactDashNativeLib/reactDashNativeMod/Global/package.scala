@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object Global {
-  type ReactNativeRequireFunction = js.Function1[/* name */ java.lang.String, js.Any]
+  type NodeRequire = js.Function1[/* id */ java.lang.String, js.Any]
 }

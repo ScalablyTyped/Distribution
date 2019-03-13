@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents a generic shape object in the worksheet.
+  * Represents a generic shape object in the worksheet. A shape could be a geometric shape, a line, a group of shapes, etc.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -18,7 +18,7 @@ class Shape ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
   /**
     *
-    * Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page.
+    * Returns or sets the alternative description text for a Shape object.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -26,7 +26,7 @@ class Shape ()
   var altTextDescription: java.lang.String = js.native
   /**
     *
-    * Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page.
+    * Returns or sets the alternative title text for a Shape object.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -34,7 +34,7 @@ class Shape ()
   var altTextTitle: java.lang.String = js.native
   /**
     *
-    * Returns the number of connection sites on the specified shape. Read-only.
+    * Returns the number of connection sites on this shape. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -45,7 +45,7 @@ class Shape ()
   var context_Shape: RequestContext = js.native
   /**
     *
-    * Returns the fill formatting of the shape object. Read-only.
+    * Returns the fill formatting of this shape. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -53,7 +53,7 @@ class Shape ()
   val fill: ShapeFill = js.native
   /**
     *
-    * Returns the geometric shape for the shape object. Error will be thrown, if the shape object is other shape type (Like, Image, SmartArt, etc.) rather than GeometricShape.
+    * Returns the geometric shape associated with the shape. An error will be thrown if the shape type is not "GeometricShape".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -61,7 +61,7 @@ class Shape ()
   val geometricShape: GeometricShape = js.native
   /**
     *
-    * Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null.
+    * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -69,7 +69,7 @@ class Shape ()
   var geometricShapeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 178 */ js.Any = js.native
   /**
     *
-    * Returns the shape group for the shape object. Error will be thrown, if the shape object is other shape type (Like, Image, SmartArt, etc.) rather than GroupShape.
+    * Returns the shape group associated with the shape. An error will be thrown if the shape type is not "GroupShape".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -78,7 +78,7 @@ class Shape ()
   /**
     *
     * Represents the height, in points, of the shape.
-    Throws an invalid argument exception when set with negative value or zero as input.
+    Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -94,7 +94,7 @@ class Shape ()
   val id: java.lang.String = js.native
   /**
     *
-    * Returns the image for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image.
+    * Returns the image associated with the shape. An error will be thrown if the shape type is not "Image".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -102,8 +102,8 @@ class Shape ()
   val image: Image = js.native
   /**
     *
-    * The distance, in points, from the left side of the shape to the left of the worksheet.
-    Throws an invalid argument exception when set with negative value as input.
+    * The distance, in points, from the left side of the shape to the left side of the worksheet.
+    Throws an invalid argument exception when set with a negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -111,7 +111,7 @@ class Shape ()
   var left: scala.Double = js.native
   /**
     *
-    * Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the shape is part of a top-level group, etc.
+    * Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -119,7 +119,7 @@ class Shape ()
   val level: scala.Double = js.native
   /**
     *
-    * Returns the line object for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image.
+    * Returns the line associated with the shape. An error will be thrown if the shape type is not "Line".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -127,7 +127,7 @@ class Shape ()
   val line: Line = js.native
   /**
     *
-    * Returns the line formatting of the shape object. Read-only.
+    * Returns the line formatting of this shape. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -135,7 +135,7 @@ class Shape ()
   val lineFormat: ShapeLineFormat = js.native
   /**
     *
-    * Represents if the aspect ratio locked, in boolean, of the shape.
+    * Specifies whether or not the aspect ratio of this shape is locked.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -161,7 +161,7 @@ class Shape ()
   val onActivated: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[ShapeActivatedEventArgs] = js.native
   /**
     *
-    * Occurs when the shape is activated.
+    * Occurs when the shape is deactivated.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
@@ -171,7 +171,7 @@ class Shape ()
   val onDeactivated: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[ShapeDeactivatedEventArgs] = js.native
   /**
     *
-    * Represents the parent group of the specified shape.
+    * Represents the parent group of this shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -179,7 +179,7 @@ class Shape ()
   val parentGroup: Shape = js.native
   /**
     *
-    * Represents the placment, value that represents the way the object is attached to the cells below it.
+    * Represents how the object is attached to the cells below it.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -195,7 +195,7 @@ class Shape ()
   var rotation: scala.Double = js.native
   /**
     *
-    * Returns the textFrame object of a shape. Read only.
+    * Returns the text frame object of this shape. Read only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -203,8 +203,8 @@ class Shape ()
   val textFrame: TextFrame = js.native
   /**
     *
-    * The distance, in points, from the top edge of the shape to the top of the worksheet.
-    Throws an invalid argument exception when set with negative value as input.
+    * The distance, in points, from the top edge of the shape to the top edge of the worksheet.
+    Throws an invalid argument exception when set with a negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -212,15 +212,15 @@ class Shape ()
   var top: scala.Double = js.native
   /**
     *
-    * Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail.
+    * Returns the type of this shape. See Excel.ShapeType for details. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  val `type`: ShapeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Image | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GeometricShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Group | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Line = js.native
+  val `type`: ShapeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unsupported | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Image | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GeometricShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Group | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Line = js.native
   /**
     *
-    * Represents the visibility, in boolean, of the specified shape.
+    * Represents the visibility of this shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -229,7 +229,7 @@ class Shape ()
   /**
     *
     * Represents the width, in points, of the shape.
-    Throws an invalid argument exception when set with negative value or zero as input.
+    Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -237,7 +237,7 @@ class Shape ()
   var width: scala.Double = js.native
   /**
     *
-    * Returns the position of the specified shape in the z-order, the very bottom shape's z-order value is 0. Read-only.
+    * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -245,7 +245,7 @@ class Shape ()
   val zorderPosition: scala.Double = js.native
   /**
     *
-    * Deletes the Shape
+    * Removes the shape from the worksheet.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -253,23 +253,54 @@ class Shape ()
   def delete(): scala.Unit = js.native
   /**
     *
+    * Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param format Specifies the format of the image.
+    */
+  def getAsImage(format: PictureFormat): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
+  @JSName("getAsImage")
+  def getAsImage_BMP(format: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BMP): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
+  @JSName("getAsImage")
+  def getAsImage_GIF(format: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GIF): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
+  @JSName("getAsImage")
+  def getAsImage_JPEG(format: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.JPEG): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
+  @JSName("getAsImage")
+  def getAsImage_PNG(format: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PNG): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
+  @JSName("getAsImage")
+  def getAsImage_SVG(format: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SVG): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
+  /**
+    *
+    * Converts the shape to an image and returns the image as a base64-encoded string. The DPI is 96. The only supported formats are `Excel.PictureFormat.BMP`, `Excel.PictureFormat.PNG`, `Excel.PictureFormat.JPEG`, and `Excel.PictureFormat.GIF`.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param format Specifies the format of the image.
+    */
+  @JSName("getAsImage")
+  def getAsImage_UNKNOWN(format: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.UNKNOWN): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
+  /**
+    *
     * Moves the shape horizontally by the specified number of points.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param increment Specifies how far the shape is to be moved horizontally, in points. A positive value moves the shape to the right; a negative value moves it to the left. If the sheet is RTL, IncrementLeft with a positive value should move the shape to the left instead of right.
+    * @param increment The increment, in points, the shape will be horizontally moved. A positive value moves the shape to the right and a negative value moves it to the left. If the sheet is right-to-left oriented, this is reversed: positive values will move the shape to the left and negative values will move it to the right.
     */
   def incrementLeft(increment: scala.Double): scala.Unit = js.native
   /**
     *
-    * Changes the rotation of the shape around the z-axis by the specified number of degrees.
-    Use the Rotation property to set the absolute rotation of the shape.
+    * Rotates the shape clockwise around the z-axis by the specified number of degrees.
+    Use the `rotation` property to set the absolute rotation of the shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param increment Specifies how far the shape is to be rotated horizontally, in degrees. A positive value rotates the shape clockwise; a negative value rotates it counterclockwise.
+    * @param increment How many degrees the shape will be rotated. A positive value rotates the shape clockwise; a negative value rotates it counterclockwise.
     */
   def incrementRotation(increment: scala.Double): scala.Unit = js.native
   /**
@@ -279,7 +310,7 @@ class Shape ()
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param increment Specifies how far the shape is to be moved vertically, in points. A positive value moves the shape down; a negative value moves it up.
+    * @param increment The increment, in points, the shape will be vertically moved. in points. A positive value moves the shape down and a negative value moves it up.
     */
   def incrementTop(increment: scala.Double): scala.Unit = js.native
   /**
@@ -304,41 +335,14 @@ class Shape ()
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ShapeLoadOptions): Shape = js.native
   /**
     *
-    * Saves the shape as a picture and returns the picture in the form of base64 encoded string, using the DPI sets to 96. Only support saves as to Excel.PictureFormat.BMP, Excel.PictureFormat.PNG, Excel.PictureFormat.JPEG and Excel.PictureFormat.GIF.
-    *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
-  def saveAsPicture(format: PictureFormat): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
-  @JSName("saveAsPicture")
-  def saveAsPicture_BMP(format: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BMP): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
-  @JSName("saveAsPicture")
-  def saveAsPicture_GIF(format: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GIF): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
-  @JSName("saveAsPicture")
-  def saveAsPicture_JPEG(format: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.JPEG): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
-  @JSName("saveAsPicture")
-  def saveAsPicture_PNG(format: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PNG): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
-  @JSName("saveAsPicture")
-  def saveAsPicture_SVG(format: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SVG): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
-  /**
-    *
-    * Saves the shape as a picture and returns the picture in the form of base64 encoded string, using the DPI sets to 96. Only support saves as to Excel.PictureFormat.BMP, Excel.PictureFormat.PNG, Excel.PictureFormat.JPEG and Excel.PictureFormat.GIF.
-    *
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
-  @JSName("saveAsPicture")
-  def saveAsPicture_UNKNOWN(format: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.UNKNOWN): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[java.lang.String] = js.native
-  /**
-    *
-    * Scales the height of the shape by a specified factor. For pictures, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current height.
+    * Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current height.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
     * @param scaleFactor Specifies the ratio between the height of the shape after you resize it and the current or original height.
-    * @param scaleType OriginalSize to scale the shape relative to its original size. CurrentSize to scale it relative to its current size. You can specify OriginalSize for this argument only if the specified shape is a picture.
-    * @param scaleFrom Optional. One of the constants of ShapeScaleFrom which specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its position.
+    * @param scaleType Specifies whether the shape is scaled relative to its original or current size. The original size scaling option only works for images.
+    * @param scaleFrom Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its position.
     */
   def scaleHeight(scaleFactor: scala.Double, scaleType: ShapeScaleType): scala.Unit = js.native
   def scaleHeight(scaleFactor: scala.Double, scaleType: ShapeScaleType, scaleFrom: ShapeScaleFrom): scala.Unit = js.native
@@ -374,14 +378,14 @@ class Shape ()
   ): scala.Unit = js.native
   /**
     *
-    * Scales the height of the shape by a specified factor. For pictures, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current height.
+    * Scales the height of the shape by a specified factor. For images, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current height.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
     * @param scaleFactor Specifies the ratio between the height of the shape after you resize it and the current or original height.
-    * @param scaleType OriginalSize to scale the shape relative to its original size. CurrentSize to scale it relative to its current size. You can specify OriginalSize for this argument only if the specified shape is a picture.
-    * @param scaleFrom Optional. One of the constants of ShapeScaleFrom which specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its position.
+    * @param scaleType Specifies whether the shape is scaled relative to its original or current size. The original size scaling option only works for images.
+    * @param scaleFrom Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its position.
     */
   @JSName("scaleHeight")
   def scaleHeight_CurrentSize(
@@ -395,14 +399,14 @@ class Shape ()
   ): scala.Unit = js.native
   /**
     *
-    * Scales the width of the shape by a specified factor. For pictures, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current width.
+    * Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current width.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
     * @param scaleFactor Specifies the ratio between the width of the shape after you resize it and the current or original width.
-    * @param scaleType OriginalSize to scale the shape relative to its original size. CurrentSize to scale it relative to its current size. You can specify OriginalSize for this argument only if the specified shape is a picture.
-    * @param scaleFrom Optional. One of the constants of ShapeScaleFrom which specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its position.
+    * @param scaleType Specifies whether the shape is scaled relative to its original or current size. The original size scaling option only works for images.
+    * @param scaleFrom Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its position.
     */
   def scaleWidth(scaleFactor: scala.Double, scaleType: ShapeScaleType): scala.Unit = js.native
   def scaleWidth(scaleFactor: scala.Double, scaleType: ShapeScaleType, scaleFrom: ShapeScaleFrom): scala.Unit = js.native
@@ -438,14 +442,14 @@ class Shape ()
   ): scala.Unit = js.native
   /**
     *
-    * Scales the width of the shape by a specified factor. For pictures, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current width.
+    * Scales the width of the shape by a specified factor. For images, you can indicate whether you want to scale the shape relative to the original or the current size. Shapes other than pictures are always scaled relative to their current width.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
     * @param scaleFactor Specifies the ratio between the width of the shape after you resize it and the current or original width.
-    * @param scaleType OriginalSize to scale the shape relative to its original size. CurrentSize to scale it relative to its current size. You can specify OriginalSize for this argument only if the specified shape is a picture.
-    * @param scaleFrom Optional. One of the constants of ShapeScaleFrom which specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its position.
+    * @param scaleType Specifies whether the shape is scaled relative to its original or current size. The original size scaling option only works for images.
+    * @param scaleFrom Optional. Specifies which part of the shape retains its position when the shape is scaled. If omitted, it represents the shape's upper left corner retains its position.
     */
   @JSName("scaleWidth")
   def scaleWidth_CurrentSize(
@@ -477,31 +481,31 @@ class Shape ()
   def set(properties: Shape): scala.Unit = js.native
   /**
     *
-    * Moves the specified shape in front of or behind other shapes in the collection (that is, changes the shape's position in the z-order).
+    * Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param value where to move the specified shape relative to the other shapes. See Excel.ShapeZOrder for detail.
+    * @param position Where to move the shape in the z-order stack relative to the other shapes. See Excel.ShapeZOrder for details.
     */
-  def setZOrder(value: ShapeZOrder): scala.Unit = js.native
+  def setZOrder(position: ShapeZOrder): scala.Unit = js.native
   @JSName("setZOrder")
-  def setZOrder_BringForward(value: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BringForward): scala.Unit = js.native
+  def setZOrder_BringForward(position: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BringForward): scala.Unit = js.native
   /**
     *
-    * Moves the specified shape in front of or behind other shapes in the collection (that is, changes the shape's position in the z-order).
+    * Moves the specified shape up or down the collection's z-order, which shifts it in front of or behind other shapes.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param value where to move the specified shape relative to the other shapes. See Excel.ShapeZOrder for detail.
+    * @param position Where to move the shape in the z-order stack relative to the other shapes. See Excel.ShapeZOrder for details.
     */
   @JSName("setZOrder")
-  def setZOrder_BringToFront(value: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BringToFront): scala.Unit = js.native
+  def setZOrder_BringToFront(position: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BringToFront): scala.Unit = js.native
   @JSName("setZOrder")
-  def setZOrder_SendBackward(value: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SendBackward): scala.Unit = js.native
+  def setZOrder_SendBackward(position: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SendBackward): scala.Unit = js.native
   @JSName("setZOrder")
-  def setZOrder_SendToBack(value: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SendToBack): scala.Unit = js.native
+  def setZOrder_SendToBack(position: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SendToBack): scala.Unit = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Shape object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ShapeData`) that contains shallow copies of any loaded child properties from the original object.

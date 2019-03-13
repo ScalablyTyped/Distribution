@@ -8,13 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("p-some", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val AggregateError: org.scalablytyped.runtime.Instantiable1[
-    /* errors */ stdLib.Iterable[stdLib.Error | java.lang.String], 
-    aggregateDashErrorLib.aggregateDashErrorMod.namespaced
-  ] = js.native
-  def apply[T](
-    values: js.Array[pDashSomeLib.Value[T]] | stdLib.Iterable[pDashSomeLib.Value[T]],
-    options: pDashSomeLib.pDashSomeMod.pSomeNs.Options[T]
-  ): js.Promise[js.Array[T]] = js.native
+  def default[T](values: stdLib.Iterable[Value[T]], options: Options[T]): CancelablePromise[js.Array[T]] = js.native
 }
 

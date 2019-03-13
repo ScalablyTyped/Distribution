@@ -1,6 +1,8 @@
 ```
-// Type definitions for decamelize 1.2
-// Project: https://github.com/sindresorhus/decamelize
-// Definitions by: Sam Verschueren <https://github.com/samverschueren>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+ * Convert a camelized string into a lowercased one with a custom separator: `unicornRainbow` → `unicorn_rainbow`.
+ *
+ * @param input - The camelcase string to decamelize.
+ * @param separator - The separator to use to put in between the words from `input`. Default: `'_'`.
+ */
 ```

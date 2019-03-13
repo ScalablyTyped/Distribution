@@ -9,10 +9,8 @@ package object libClientMod {
   type DidChangeConfigurationSignature = js.Function1[/* sections */ js.UndefOr[js.Array[java.lang.String]], scala.Unit]
   type FoldingRangeKind = vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind
   type HandleDiagnosticsSignature = js.Function2[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Uri */ /* uri */ js.Any, 
-    /* diagnostics */ js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDiagnostic */ js.Any
-    ], 
+    /* uri */ vscodeLib.vscodeMod.Uri, 
+    /* diagnostics */ js.Array[vscodeLib.vscodeMod.Diagnostic], 
     scala.Unit
   ]
   type InitializationFailedHandler = js.Function1[
@@ -22,118 +20,122 @@ package object libClientMod {
   type Middleware = _Middleware with vscodeDashLanguageclientLib.libTypeDefinitionMod.TypeDefinitionMiddleware with vscodeDashLanguageclientLib.libImplementationMod.ImplementationMiddleware with vscodeDashLanguageclientLib.libColorProviderMod.ColorProviderMiddleware with vscodeDashLanguageclientLib.libFoldingRangeMod.FoldingRangeProviderMiddleware with vscodeDashLanguageclientLib.libDeclarationMod.DeclarationMiddleware
   type NextSignature[P, R] = js.ThisFunction2[/* this */ scala.Unit, /* data */ P, /* next */ js.Function1[/* data */ P, R], R]
   type PrepareRenameSignature = js.Function3[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VPosition */ /* position */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<VRange | {  range  :VRange,   placeholder  :string}> */ js.Any
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* position */ vscodeLib.vscodeMod.Position, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Range | vscodeDashLanguageclientLib.Anon_Placeholder]
   ]
   type ProvideCodeActionsSignature = js.Function4[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VRange */ /* range */ js.Any, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCodeActionContext */ /* context */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VCommand | VCodeAction>> */ js.Any
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* range */ vscodeLib.vscodeMod.Range, 
+    /* context */ vscodeLib.vscodeMod.CodeActionContext, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.Command | vscodeLib.vscodeMod.CodeAction]]
   ]
   type ProvideCodeLensesSignature = js.Function2[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VCodeLens>> */ js.Any
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.CodeLens]]
   ]
   type ProvideCompletionItemsSignature = js.Function4[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VPosition */ /* position */ js.Any, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCompletionContext */ /* context */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VCompletionItem> | VCompletionList> */ js.Any
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* position */ vscodeLib.vscodeMod.Position, 
+    /* context */ vscodeLib.vscodeMod.CompletionContext, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[
+      js.Array[vscodeLib.vscodeMod.CompletionItem] | vscodeLib.vscodeMod.CompletionList
+    ]
   ]
   type ProvideDefinitionSignature = js.Function3[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VPosition */ /* position */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<VDefinition | Array<VDefinitionLink>> */ js.Any
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* position */ vscodeLib.vscodeMod.Position, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]]
   ]
   type ProvideDocumentFormattingEditsSignature = js.Function3[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VFormattingOptions */ /* options */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VTextEdit>> */ js.Any
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* options */ vscodeLib.vscodeMod.FormattingOptions, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.TextEdit]]
   ]
   type ProvideDocumentHighlightsSignature = js.Function3[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VPosition */ /* position */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VDocumentHighlight>> */ js.Any
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* position */ vscodeLib.vscodeMod.Position, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.DocumentHighlight]]
   ]
   type ProvideDocumentLinksSignature = js.Function2[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VDocumentLink>> */ js.Any
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.DocumentLink]]
   ]
   type ProvideDocumentRangeFormattingEditsSignature = js.Function4[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VRange */ /* range */ js.Any, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VFormattingOptions */ /* options */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VTextEdit>> */ js.Any
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* range */ vscodeLib.vscodeMod.Range, 
+    /* options */ vscodeLib.vscodeMod.FormattingOptions, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.TextEdit]]
   ]
   type ProvideDocumentSymbolsSignature = js.Function2[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VSymbolInformation> | Array<VDocumentSymbol>> */ js.Any
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[
+      js.Array[vscodeLib.vscodeMod.SymbolInformation] | js.Array[vscodeLib.vscodeMod.DocumentSymbol]
+    ]
   ]
   type ProvideHoverSignature = js.Function3[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VPosition */ /* position */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<VHover> */ js.Any
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* position */ vscodeLib.vscodeMod.Position, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Hover]
   ]
   type ProvideOnTypeFormattingEditsSignature = js.Function5[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VPosition */ /* position */ js.Any, 
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* position */ vscodeLib.vscodeMod.Position, 
     /* ch */ java.lang.String, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VFormattingOptions */ /* options */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VTextEdit>> */ js.Any
+    /* options */ vscodeLib.vscodeMod.FormattingOptions, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.TextEdit]]
   ]
   type ProvideReferencesSignature = js.Function4[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VPosition */ /* position */ js.Any, 
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* position */ vscodeLib.vscodeMod.Position, 
     /* options */ vscodeDashLanguageclientLib.Anon_IncludeDeclaration, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VLocation>> */ js.Any
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.Location]]
   ]
   type ProvideRenameEditsSignature = js.Function4[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VPosition */ /* position */ js.Any, 
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* position */ vscodeLib.vscodeMod.Position, 
     /* newName */ java.lang.String, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<VWorkspaceEdit> */ js.Any
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.WorkspaceEdit]
   ]
   type ProvideSignatureHelpSignature = js.Function3[
-    /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VPosition */ /* position */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<VSignatureHelp> */ js.Any
+    /* document */ vscodeLib.vscodeMod.TextDocument, 
+    /* position */ vscodeLib.vscodeMod.Position, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.SignatureHelp]
   ]
   type ProvideWorkspaceSymbolsSignature = js.Function2[
     /* query */ java.lang.String, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VSymbolInformation>> */ js.Any
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.SymbolInformation]]
   ]
   type ResolveCodeLensSignature = js.Function2[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCodeLens */ /* codeLens */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<VCodeLens> */ js.Any
+    /* codeLens */ vscodeLib.vscodeMod.CodeLens, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.CodeLens]
   ]
   type ResolveCompletionItemSignature = js.Function2[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCompletionItem */ /* item */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<VCompletionItem> */ js.Any
+    /* item */ vscodeLib.vscodeMod.CompletionItem, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.CompletionItem]
   ]
   type ResolveDocumentLinkSignature = js.Function2[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDocumentLink */ /* link */ js.Any, 
-    /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<VDocumentLink> */ js.Any
+    /* link */ vscodeLib.vscodeMod.DocumentLink, 
+    /* token */ vscodeLib.vscodeMod.CancellationToken, 
+    vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.DocumentLink]
   ]
   type Trace = vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.Trace
   type TraceFormat = vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.TraceFormat

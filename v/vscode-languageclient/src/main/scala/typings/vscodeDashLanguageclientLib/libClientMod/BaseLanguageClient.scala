@@ -45,9 +45,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   var computeClientCapabilities: js.Any = js.native
   var createConnection: js.Any = js.native
   var data2String: js.Any = js.native
-  val diagnostics: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DiagnosticCollection */ _
-  ] = js.native
+  val diagnostics: js.UndefOr[vscodeLib.vscodeMod.DiagnosticCollection] = js.native
   var fillInitializeParams: js.Any = js.native
   var forceDocumentSync: js.Any = js.native
   var getPublicState: js.Any = js.native
@@ -65,7 +63,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   var logObjectTrace: js.Any = js.native
   var logTrace: js.Any = js.native
   var notifyFileEvent: js.Any = js.native
-  val outputChannel: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OutputChannel */ js.Any = js.native
+  val outputChannel: vscodeLib.vscodeMod.OutputChannel = js.native
   val protocol2CodeConverter: vscodeDashLanguageclientLib.libProtocolConverterMod.Converter = js.native
   var refreshTrace: js.Any = js.native
   var resolveConnection: js.Any = js.native
@@ -139,18 +137,14 @@ abstract class BaseLanguageClient protected () extends js.Object {
   ): scala.Unit = js.native
   def sendRequest[R](method: java.lang.String): vscodeDashJsonrpcLib.Thenable[R] = js.native
   def sendRequest[R](method: java.lang.String, param: js.Any): vscodeDashJsonrpcLib.Thenable[R] = js.native
-  def sendRequest[R](
-    method: java.lang.String,
-    param: js.Any,
-    token: vscodeDashJsonrpcLib.libCancellationMod.CancellationToken
-  ): vscodeDashJsonrpcLib.Thenable[R] = js.native
-  def sendRequest[R](method: java.lang.String, token: vscodeDashJsonrpcLib.libCancellationMod.CancellationToken): vscodeDashJsonrpcLib.Thenable[R] = js.native
+  def sendRequest[R](method: java.lang.String, param: js.Any, token: vscodeLib.vscodeMod.CancellationToken): vscodeDashJsonrpcLib.Thenable[R] = js.native
+  def sendRequest[R](method: java.lang.String, token: vscodeLib.vscodeMod.CancellationToken): vscodeDashJsonrpcLib.Thenable[R] = js.native
   def sendRequest[R, E, RO](
     `type`: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.RequestType0[R, E, RO]
   ): vscodeDashJsonrpcLib.Thenable[R] = js.native
   def sendRequest[R, E, RO](
     `type`: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.RequestType0[R, E, RO],
-    token: vscodeDashJsonrpcLib.libCancellationMod.CancellationToken
+    token: vscodeLib.vscodeMod.CancellationToken
   ): vscodeDashJsonrpcLib.Thenable[R] = js.native
   def sendRequest[P, R, E, RO](
     `type`: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.RequestType[P, R, E, RO],
@@ -159,9 +153,9 @@ abstract class BaseLanguageClient protected () extends js.Object {
   def sendRequest[P, R, E, RO](
     `type`: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.RequestType[P, R, E, RO],
     params: P,
-    token: vscodeDashJsonrpcLib.libCancellationMod.CancellationToken
+    token: vscodeLib.vscodeMod.CancellationToken
   ): vscodeDashJsonrpcLib.Thenable[R] = js.native
-  def start(): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
+  def start(): vscodeLib.vscodeMod.Disposable = js.native
   def stop(): vscodeDashJsonrpcLib.Thenable[scala.Unit] = js.native
   def warn(message: java.lang.String): scala.Unit = js.native
   def warn(message: java.lang.String, data: js.Any): scala.Unit = js.native

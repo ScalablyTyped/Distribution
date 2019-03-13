@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "native-toast"
-version := "2.0-dt-20180914Z-a0a0af"
+version := "2.0-dt-20190312Z-394859"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

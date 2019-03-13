@@ -19,6 +19,7 @@ trait DocumentCreatedLoadOptions extends js.Object {
     * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc..
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   var body: js.UndefOr[BodyLoadOptions] = js.undefined
   /**
@@ -26,6 +27,7 @@ trait DocumentCreatedLoadOptions extends js.Object {
     * Gets the properties of the document.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   var properties: js.UndefOr[DocumentPropertiesLoadOptions] = js.undefined
   /**
@@ -33,6 +35,7 @@ trait DocumentCreatedLoadOptions extends js.Object {
     * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   var saved: js.UndefOr[scala.Boolean] = js.undefined
 }

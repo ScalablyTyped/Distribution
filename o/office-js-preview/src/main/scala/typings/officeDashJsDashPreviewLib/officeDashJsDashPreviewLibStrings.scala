@@ -1750,9 +1750,6 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait LCRus extends js.Object
   
   @js.native
-  sealed trait LTR extends js.Object
-  
-  @js.native
   sealed trait Landscape extends js.Object
   
   @js.native
@@ -2536,9 +2533,6 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Quote extends js.Object
   
   @js.native
-  sealed trait RTL extends js.Object
-  
-  @js.native
   sealed trait Radar extends js.Object
   
   @js.native
@@ -2729,21 +2723,6 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait ShapeDeactivated extends js.Object
-  
-  @js.native
-  sealed trait ShapeTextHorizontalAlignType_MaxEnumIDs extends js.Object
-  
-  @js.native
-  sealed trait ShapeTextHorzOverflowType_MaxEnumIDs extends js.Object
-  
-  @js.native
-  sealed trait ShapeTextOrientationType_MaxEnumIDs extends js.Object
-  
-  @js.native
-  sealed trait ShapeTextVertOverflowType_MaxEnumIDs extends js.Object
-  
-  @js.native
-  sealed trait ShapeTextVerticalAlignType_MaxEnumIDs extends js.Object
   
   @js.native
   sealed trait Short extends js.Object
@@ -4619,8 +4598,6 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def LCRus: LCRus = "LCRus".asInstanceOf[LCRus]
   @scala.inline
-  def LTR: LTR = "LTR".asInstanceOf[LTR]
-  @scala.inline
   def Landscape: Landscape = "Landscape".asInstanceOf[Landscape]
   @scala.inline
   def LastMonth: LastMonth = "LastMonth".asInstanceOf[LastMonth]
@@ -5143,8 +5120,6 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def Quote: Quote = "Quote".asInstanceOf[Quote]
   @scala.inline
-  def RTL: RTL = "RTL".asInstanceOf[RTL]
-  @scala.inline
   def Radar: Radar = "Radar".asInstanceOf[Radar]
   @scala.inline
   def RadarFilled: RadarFilled = "RadarFilled".asInstanceOf[RadarFilled]
@@ -5272,16 +5247,6 @@ object officeDashJsDashPreviewLibStrings {
   def ShapeActivated: ShapeActivated = "ShapeActivated".asInstanceOf[ShapeActivated]
   @scala.inline
   def ShapeDeactivated: ShapeDeactivated = "ShapeDeactivated".asInstanceOf[ShapeDeactivated]
-  @scala.inline
-  def ShapeTextHorizontalAlignType_MaxEnumIDs: ShapeTextHorizontalAlignType_MaxEnumIDs = "ShapeTextHorizontalAlignType_MaxEnumIDs".asInstanceOf[ShapeTextHorizontalAlignType_MaxEnumIDs]
-  @scala.inline
-  def ShapeTextHorzOverflowType_MaxEnumIDs: ShapeTextHorzOverflowType_MaxEnumIDs = "ShapeTextHorzOverflowType_MaxEnumIDs".asInstanceOf[ShapeTextHorzOverflowType_MaxEnumIDs]
-  @scala.inline
-  def ShapeTextOrientationType_MaxEnumIDs: ShapeTextOrientationType_MaxEnumIDs = "ShapeTextOrientationType_MaxEnumIDs".asInstanceOf[ShapeTextOrientationType_MaxEnumIDs]
-  @scala.inline
-  def ShapeTextVertOverflowType_MaxEnumIDs: ShapeTextVertOverflowType_MaxEnumIDs = "ShapeTextVertOverflowType_MaxEnumIDs".asInstanceOf[ShapeTextVertOverflowType_MaxEnumIDs]
-  @scala.inline
-  def ShapeTextVerticalAlignType_MaxEnumIDs: ShapeTextVerticalAlignType_MaxEnumIDs = "ShapeTextVerticalAlignType_MaxEnumIDs".asInstanceOf[ShapeTextVerticalAlignType_MaxEnumIDs]
   @scala.inline
   def Short: Short = "Short".asInstanceOf[Short]
   @scala.inline

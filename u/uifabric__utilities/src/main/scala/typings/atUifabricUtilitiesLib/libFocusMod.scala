@@ -26,6 +26,12 @@ object libFocusMod extends js.Object {
     currentElement: stdLib.HTMLElement,
     includeElementsInFocusZones: scala.Boolean
   ): stdLib.HTMLElement | scala.Null = js.native
+  def getFirstTabbable(
+    rootElement: stdLib.HTMLElement,
+    currentElement: stdLib.HTMLElement,
+    includeElementsInFocusZones: scala.Boolean,
+    checkNode: scala.Boolean
+  ): stdLib.HTMLElement | scala.Null = js.native
   def getFocusableByIndexPath(parent: stdLib.HTMLElement, path: js.Array[scala.Double]): js.UndefOr[stdLib.HTMLElement] = js.native
   def getLastFocusable(rootElement: stdLib.HTMLElement, currentElement: stdLib.HTMLElement): stdLib.HTMLElement | scala.Null = js.native
   def getLastFocusable(
@@ -38,6 +44,12 @@ object libFocusMod extends js.Object {
     rootElement: stdLib.HTMLElement,
     currentElement: stdLib.HTMLElement,
     includeElementsInFocusZones: scala.Boolean
+  ): stdLib.HTMLElement | scala.Null = js.native
+  def getLastTabbable(
+    rootElement: stdLib.HTMLElement,
+    currentElement: stdLib.HTMLElement,
+    includeElementsInFocusZones: scala.Boolean,
+    checkNode: scala.Boolean
   ): stdLib.HTMLElement | scala.Null = js.native
   def getNextElement(
     rootElement: stdLib.HTMLElement,

@@ -18,7 +18,23 @@ class Comment ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
   /**
     *
-    * Get/Set the content.
+    * Get author email of the comment.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val authorEmail: java.lang.String = js.native
+  /**
+    *
+    * Get author name of the comment.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val authorName: java.lang.String = js.native
+  /**
+    *
+    * Get or set the content.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -27,6 +43,14 @@ class Comment ()
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Comment: RequestContext = js.native
+  /**
+    *
+    * Get creation time of the comment. Will return null if the comment is converted from note, as in this case, the comment will not has created date.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val creationDate: stdLib.Date = js.native
   /**
     *
     * Represents the comment identifier. Read-only.
@@ -59,6 +83,14 @@ class Comment ()
     * @beta
     */
   def delete(): scala.Unit = js.native
+  /**
+    *
+    * Get location of the comment.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getLocation(): Range = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *

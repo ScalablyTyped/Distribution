@@ -594,7 +594,7 @@ class Range ()
   def findOrNullObject(text: java.lang.String, criteria: SearchCriteria): Range = js.native
   /**
     *
-    * Does FlashFill to current range. Flash Fill will automatically fills data when it senses a pattern, so the range must be single column range and have data around in order to find pattern.
+    * Does FlashFill to current range.Flash Fill will automatically fills data when it senses a pattern, so the range must be single column range and have data around in order to find pattern.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -938,7 +938,7 @@ class Range ()
   def getSpecialCells_Visible(cellType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Visible): RangeAreas = js.native
   /**
     *
-    * Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with more than one cell. Read only.
+    * Gets the range object containing the anchor cell for a cell getting spilled into. Fails if applied to a range with more than one cell. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -946,12 +946,30 @@ class Range ()
   def getSpillParent(): Range = js.native
   /**
     *
-    * Gets the range object containing the spill range when called on an anchor cell. Fails if applied to a range with more than one cell. Read only.
+    * Gets the range object containing the anchor cell for a cell getting spilled into. Read-only.
+    If it is not a spill cell or more than once cells are give, a null object will be returned.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getSpillParentOrNullObject(): Range = js.native
+  /**
+    *
+    * Gets the range object containing the spill range when called on an anchor cell. Fails if applied to a range with more than one cell. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   def getSpillingToRange(): Range = js.native
+  /**
+    *
+    * Gets the range object containing the spill range when called on an anchor cell. Read-only.
+    If the range is not an anchor cell or spill range can't be found, a null object will be returned.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getSpillingToRangeOrNullObject(): Range = js.native
   /**
     *
     * Returns a Range object that represents the surrounding region for the top-left cell in this range. A surrounding region is a range bounded by any combination of blank rows and blank columns relative to this range.
@@ -1106,6 +1124,9 @@ class Range ()
     * @beta
     */
   def setCellProperties(cellPropertiesData: js.Array[js.Array[SettableCellProperties]]): scala.Unit = js.native
+  def setCellProperties(
+    cellPropertiesData: officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[js.Array[SettableCellProperties]]]
+  ): scala.Unit = js.native
   /**
     *
     * Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill, borders, alignment, and so forth.
@@ -1114,6 +1135,9 @@ class Range ()
     * @beta
     */
   def setColumnProperties(columnPropertiesData: js.Array[SettableColumnProperties]): scala.Unit = js.native
+  def setColumnProperties(
+    columnPropertiesData: officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[SettableColumnProperties]]
+  ): scala.Unit = js.native
   /**
     *
     * Set a range to be recalculated when the next recalculation occurs.
@@ -1130,6 +1154,9 @@ class Range ()
     * @beta
     */
   def setRowProperties(rowPropertiesData: js.Array[SettableRowProperties]): scala.Unit = js.native
+  def setRowProperties(
+    rowPropertiesData: officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[SettableRowProperties]]
+  ): scala.Unit = js.native
   /**
     *
     * Displays the card for an active cell if it has rich value content.

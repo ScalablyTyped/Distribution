@@ -9,84 +9,90 @@ import scala.scalajs.js.annotation._
 @js.native
 object idyllDashAstMod extends js.Object {
   def appendNode(
-    ast: idyllDashCompilerLib.idyllDashCompilerMod.AST,
-    node: idyllDashCompilerLib.idyllDashCompilerMod.Node
-  ): idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
+    ast: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST,
+    node: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node
+  ): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST = js.native
   def appendNodes(
-    ast: idyllDashCompilerLib.idyllDashCompilerMod.AST,
-    nodes: idyllDashCompilerLib.idyllDashCompilerMod.AST
-  ): idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
+    ast: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST,
+    nodes: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST
+  ): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST = js.native
   def createNode(
     name: java.lang.String,
     props: stdLib.Record[
       java.lang.String, 
-      idyllDashCompilerLib.idyllDashCompilerMod.PropValue | (/* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any)
+      idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.PropValue | (/* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.compiler.PropValue[1] */ js.Any)
     ],
-    children: js.Array[idyllDashCompilerLib.idyllDashCompilerMod.Node]
-  ): idyllDashCompilerLib.idyllDashCompilerMod.TreeNode = js.native
+    children: js.Array[idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node]
+  ): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.TreeNode = js.native
   def filterChildren(
-    node: idyllDashCompilerLib.idyllDashCompilerMod.Node,
-    filter: js.Function1[/* child */ idyllDashCompilerLib.idyllDashCompilerMod.Node, scala.Boolean]
-  ): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
+    node: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node,
+    filter: js.Function1[
+      /* child */ idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node, 
+      scala.Boolean
+    ]
+  ): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node = js.native
   def filterNodes(
-    ast: idyllDashCompilerLib.idyllDashCompilerMod.AST,
-    filter: js.Function1[/* node */ idyllDashCompilerLib.idyllDashCompilerMod.Node, scala.Boolean]
-  ): idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
+    ast: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST,
+    filter: js.Function1[
+      /* node */ idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node, 
+      scala.Boolean
+    ]
+  ): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST = js.native
   def findNodes(
-    ast: idyllDashCompilerLib.idyllDashCompilerMod.AST,
-    filter: js.Function1[/* n */ idyllDashCompilerLib.idyllDashCompilerMod.Node, scala.Boolean]
-  ): js.Array[idyllDashCompilerLib.idyllDashCompilerMod.Node] = js.native
-  def getChildren(node: idyllDashCompilerLib.idyllDashCompilerMod.Node): js.Array[idyllDashCompilerLib.idyllDashCompilerMod.Node] = js.native
-  def getNodesByName(ast: idyllDashCompilerLib.idyllDashCompilerMod.AST, name: java.lang.String): js.Array[idyllDashCompilerLib.idyllDashCompilerMod.Node] = js.native
-  def getProperties(node: idyllDashCompilerLib.idyllDashCompilerMod.Node): js.Array[idyllDashCompilerLib.idyllDashCompilerMod.Property] = js.native
+    ast: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST,
+    filter: js.Function1[/* n */ idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node, scala.Boolean]
+  ): js.Array[idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node] = js.native
+  def getChildren(node: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node): js.Array[idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node] = js.native
+  def getNodesByName(ast: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST, name: java.lang.String): js.Array[idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node] = js.native
+  def getProperties(node: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node): js.Array[idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Property] = js.native
   def getPropertiesByType(
-    node: idyllDashCompilerLib.idyllDashCompilerMod.Node,
-    `type`: idyllDashCompilerLib.idyllDashCompilerMod.PropType
-  ): js.Array[idyllDashCompilerLib.idyllDashCompilerMod.Property] = js.native
-  def getProperty(node: idyllDashCompilerLib.idyllDashCompilerMod.Node, key: java.lang.String): idyllDashCompilerLib.idyllDashCompilerMod.PropValue | scala.Null = js.native
+    node: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node,
+    `type`: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.PropType
+  ): js.Array[idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Property] = js.native
+  def getProperty(node: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node, key: java.lang.String): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.PropValue | scala.Null = js.native
   def modifyChildren(
-    node: idyllDashCompilerLib.idyllDashCompilerMod.Node,
-    modifier: js.Function1[/* n */ idyllDashCompilerLib.idyllDashCompilerMod.Node, scala.Unit]
-  ): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
+    node: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node,
+    modifier: js.Function1[/* n */ idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node, scala.Unit]
+  ): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node = js.native
   def modifyNodesByName(
-    ast: idyllDashCompilerLib.idyllDashCompilerMod.AST,
+    ast: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST,
     name: java.lang.String,
-    modifier: js.Function1[/* node */ idyllDashCompilerLib.idyllDashCompilerMod.Node, scala.Unit]
-  ): idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
+    modifier: js.Function1[/* node */ idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node, scala.Unit]
+  ): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST = js.native
   def prependNode(
-    ast: idyllDashCompilerLib.idyllDashCompilerMod.AST,
-    node: idyllDashCompilerLib.idyllDashCompilerMod.Node
-  ): idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
+    ast: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST,
+    node: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node
+  ): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST = js.native
   def prependNodes(
-    ast: idyllDashCompilerLib.idyllDashCompilerMod.AST,
-    nodes: js.Array[idyllDashCompilerLib.idyllDashCompilerMod.Node]
-  ): idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
-  def removeNodesByName(ast: idyllDashCompilerLib.idyllDashCompilerMod.AST, name: java.lang.String): idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
-  def removeProperty(node: idyllDashCompilerLib.idyllDashCompilerMod.Node, key: java.lang.String): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
+    ast: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST,
+    nodes: js.Array[idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node]
+  ): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST = js.native
+  def removeNodesByName(ast: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST, name: java.lang.String): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST = js.native
+  def removeProperty(node: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node, key: java.lang.String): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node = js.native
   def setProperties(
-    node: idyllDashCompilerLib.idyllDashCompilerMod.Node,
+    node: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node,
     properties: stdLib.Record[
       java.lang.String, 
-      idyllDashCompilerLib.idyllDashCompilerMod.PropValue | (/* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any)
+      idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.PropValue | (/* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.compiler.PropValue[1] */ js.Any)
     ]
-  ): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
+  ): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node = js.native
   def setProperty(
-    node: idyllDashCompilerLib.idyllDashCompilerMod.Node,
+    node: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node,
     key: java.lang.String,
-    value: idyllDashCompilerLib.idyllDashCompilerMod.PropValue
-  ): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
+    value: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.PropValue
+  ): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node = js.native
   def setProperty(
-    node: idyllDashCompilerLib.idyllDashCompilerMod.Node,
+    node: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node,
     key: java.lang.String,
-    value: /* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any
-  ): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
+    value: /* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.compiler.PropValue[1] */ js.Any
+  ): idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node = js.native
   def walkNodes(
-    ast: idyllDashCompilerLib.idyllDashCompilerMod.AST,
-    func: js.Function1[/* n */ idyllDashCompilerLib.idyllDashCompilerMod.Node, scala.Unit]
+    ast: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.AST,
+    func: js.Function1[/* n */ idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node, scala.Unit]
   ): scala.Unit = js.native
   def walkNodes(
     ast: scala.Null,
-    func: js.Function1[/* n */ idyllDashCompilerLib.idyllDashCompilerMod.Node, scala.Unit]
+    func: js.Function1[/* n */ idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Node, scala.Unit]
   ): scala.Unit = js.native
 }
 

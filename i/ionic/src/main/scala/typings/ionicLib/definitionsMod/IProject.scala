@@ -13,7 +13,7 @@ trait IProject extends js.Object {
   val filePath: java.lang.String = js.native
   val rootDirectory: java.lang.String = js.native
   val `type`: ProjectType = js.native
-  def createIntegration(name: IntegrationName): js.Promise[IIntegration] = js.native
+  def createIntegration(name: IntegrationName): js.Promise[IIntegration[ProjectIntegration]] = js.native
   def detected(): js.Promise[scala.Boolean] = js.native
   def getBuildRunner(): js.Promise[js.UndefOr[ionicLib.libBuildMod.BuildRunner[_]]] = js.native
   def getDistDir(): js.Promise[java.lang.String] = js.native

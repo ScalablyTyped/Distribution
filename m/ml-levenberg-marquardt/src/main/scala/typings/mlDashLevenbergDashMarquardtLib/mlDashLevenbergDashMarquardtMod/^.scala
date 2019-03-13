@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /** Implementation of the Levenberg-Marquardt curve fitting method. */
-  def default(
+  def apply(
     d: mlDashLevenbergDashMarquardtLib.mlDashLevenbergDashMarquardtMod.LMNs.Data,
     fn: mlDashLevenbergDashMarquardtLib.mlDashLevenbergDashMarquardtMod.LMNs.FittedFunction
   ): mlDashLevenbergDashMarquardtLib.mlDashLevenbergDashMarquardtMod.LMNs.Result = js.native
-  def default(
+  def apply(
     d: mlDashLevenbergDashMarquardtLib.mlDashLevenbergDashMarquardtMod.LMNs.Data,
     fn: mlDashLevenbergDashMarquardtLib.mlDashLevenbergDashMarquardtMod.LMNs.FittedFunction,
     o: stdLib.Partial[mlDashLevenbergDashMarquardtLib.mlDashLevenbergDashMarquardtMod.LMNs.Options]

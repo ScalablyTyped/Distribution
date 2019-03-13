@@ -19,7 +19,7 @@ trait IWatcher extends js.Object {
   var expression: js.UndefOr[java.lang.String | angularDashFormlyLib.Anon_Field] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   def listener(
-    field: java.lang.String,
+    field: IFieldRuntimeObject,
     newValue: js.Any,
     oldValue: js.Any,
     scope: ITemplateScope,
@@ -30,7 +30,7 @@ trait IWatcher extends js.Object {
 object IWatcher {
   @scala.inline
   def apply(
-    listener: (java.lang.String, js.Any, js.Any, ITemplateScope, js.Function) => scala.Unit,
+    listener: (IFieldRuntimeObject, js.Any, js.Any, ITemplateScope, js.Function) => scala.Unit,
     deep: js.UndefOr[scala.Boolean] = js.undefined,
     expression: java.lang.String | angularDashFormlyLib.Anon_Field = null,
     `type`: java.lang.String = null

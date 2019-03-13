@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents an image object in the worksheet.
+  * Represents an image in the worksheet. To get the corresponding Shape object, use Image.shape.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -21,7 +21,7 @@ class Image ()
   var context_Image: RequestContext = js.native
   /**
     *
-    * Returns the format for the image. Read-only.
+    * Returns the format of the image. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -37,7 +37,7 @@ class Image ()
   val id: java.lang.String = js.native
   /**
     *
-    * Returns the shape object for the image. Read-only.
+    * Returns the Shape object associated with the image. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

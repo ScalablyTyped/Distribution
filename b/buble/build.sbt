@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "buble"
-version := "0.19-dt-20190127Z-d35a96"
+version := "0.19-dt-20190312Z-d35a96"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

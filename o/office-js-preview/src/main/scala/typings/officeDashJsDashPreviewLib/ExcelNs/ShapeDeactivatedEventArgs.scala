@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait ShapeDeactivatedEventArgs extends js.Object {
   /**
     *
-    * Gets the id of the shape that is deactivated.
+    * Gets the id of the shape deactivated shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

@@ -53,7 +53,8 @@ object realmLibStrings {
   sealed trait adminToken extends js.Object
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends realmLib.RealmNs.SyncNs.LogLevel
   
   @js.native
   sealed trait any extends js.Object
@@ -82,14 +83,16 @@ object realmLibStrings {
     extends realmLib.RealmNs._PropertyType
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends realmLib.RealmNs.SyncNs.LogLevel
   
   @js.native
   sealed trait delete
     extends realmLib.RealmNs.SyncNs.RealmListenerEventName
   
   @js.native
-  sealed trait detail extends js.Object
+  sealed trait detail
+    extends realmLib.RealmNs.SyncNs.LogLevel
   
   @js.native
   sealed trait double
@@ -100,10 +103,12 @@ object realmLibStrings {
     extends realmLib.RealmNs.SyncNs.ProgressDirection
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends realmLib.RealmNs.SyncNs.LogLevel
   
   @js.native
-  sealed trait fatal extends js.Object
+  sealed trait fatal
+    extends realmLib.RealmNs.SyncNs.LogLevel
   
   @js.native
   sealed trait float
@@ -117,7 +122,8 @@ object realmLibStrings {
   sealed trait inactive extends js.Object
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends realmLib.RealmNs.SyncNs.LogLevel
   
   @js.native
   sealed trait int
@@ -139,7 +145,8 @@ object realmLibStrings {
     extends realmLib.RealmNs.SyncNs.AccessLevel
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait off
+    extends realmLib.RealmNs.SyncNs.LogLevel
   
   @js.native
   sealed trait otherUser extends js.Object
@@ -160,14 +167,16 @@ object realmLibStrings {
     extends realmLib.RealmNs._PropertyType
   
   @js.native
-  sealed trait trace extends js.Object
+  sealed trait trace
+    extends realmLib.RealmNs.SyncNs.LogLevel
   
   @js.native
   sealed trait upload
     extends realmLib.RealmNs.SyncNs.ProgressDirection
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends realmLib.RealmNs.SyncNs.LogLevel
   
   @js.native
   sealed trait write

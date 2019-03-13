@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait GeometricShapeData extends js.Object {
   /**
     *
-    * Represents the shape identifier. Read-only.
+    * Returns the shape identifier. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents a shape group object inside a worksheet.
+  * Represents a shape group inside a worksheet. To get the corresponding Shape object, use `ShapeGroup.shape`.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -29,7 +29,7 @@ class ShapeGroup ()
   val id: java.lang.String = js.native
   /**
     *
-    * Returns the shape object for the group. Read-only.
+    * Returns the Shape object associated with the group. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -37,7 +37,7 @@ class ShapeGroup ()
   val shape: Shape = js.native
   /**
     *
-    * Returns the shape collection in the group. Read-only.
+    * Returns the collection of Shape objects. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

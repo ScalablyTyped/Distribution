@@ -12,6 +12,7 @@ object NamespaceGroup extends js.Object {
   /* "deprecated" */ val Deprecated: atIonicCliDashFrameworkLib.libHelpMod.NamespaceGroup.Deprecated with java.lang.String = js.native
   /* "experimental" */ val Experimental: atIonicCliDashFrameworkLib.libHelpMod.NamespaceGroup.Experimental with java.lang.String = js.native
   /* "hidden" */ val Hidden: atIonicCliDashFrameworkLib.libHelpMod.NamespaceGroup.Hidden with java.lang.String = js.native
+  /* "paid" */ val Paid: atIonicCliDashFrameworkLib.libHelpMod.NamespaceGroup.Paid with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[atIonicCliDashFrameworkLib.libHelpMod.NamespaceGroup with java.lang.String] = js.native
 }

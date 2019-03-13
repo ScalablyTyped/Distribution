@@ -90,6 +90,10 @@ class SettingCollection ()
   def load(option: java.lang.String): SettingCollection = js.native
   def load(option: js.Array[java.lang.String]): SettingCollection = js.native
   def load(option: officeDashJsDashPreviewLib.OfficeExtensionNs.LoadOption): SettingCollection = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original `Word.SettingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.SettingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    */
   def toJSON(): officeDashJsDashPreviewLib.WordNs.InterfacesNs.SettingCollectionData = js.native
   /**
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress"
-version := "3.1.5-75d7e3"
+version := "3.1.5-e37609"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,30 +15,30 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "chalk" % "2.4.2-6d01d0",
   "org.scalablytyped" %%% "check-more-types" % "2.24.0-a31c8c",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-f1b784",
-  "org.scalablytyped" %%% "commander" % "2.19.0-776db8",
+  "org.scalablytyped" %%% "commander" % "2.19.0-c3645d",
   "org.scalablytyped" %%% "common-tags" % "1.8-dt-20181205Z-d6de79",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-4b79e1",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-1f537b",
-  "org.scalablytyped" %%% "execa" % "0.9-dt-20190228Z-00d1e8",
+  "org.scalablytyped" %%% "execa" % "0.9-dt-20190228Z-4b1031",
   "org.scalablytyped" %%% "extract-zip" % "1.6-dt-20180214Z-895f03",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-696f06",
-  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-2b30b5",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-2e240d",
+  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-8ee0cf",
   "org.scalablytyped" %%% "getos" % "3.0-dt-20180214Z-973250",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-334b9b",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-288ee1",
   "org.scalablytyped" %%% "is-ci" % "1.1-dt-20180416Z-d085df",
   "org.scalablytyped" %%% "is-installed-globally" % "0.1-dt-20181212Z-938878",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-8061ce",
   "org.scalablytyped" %%% "lazy-ass" % "1.6.0-53180e",
-  "org.scalablytyped" %%% "listr" % "0.13-dt-20180306Z-de6303",
+  "org.scalablytyped" %%% "listr" % "0.13-dt-20180306Z-e2d073",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
   "org.scalablytyped" %%% "log-symbols" % "2.0-dt-20180214Z-02ac2c",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-0a2b2c",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180214Z-b5ce4c",
-  "org.scalablytyped" %%% "mocha" % "5.2-dt-20190212Z-d318f9",
+  "org.scalablytyped" %%% "mocha" % "5.2-dt-20190212Z-3e70a1",
   "org.scalablytyped" %%% "moment" % "2.24.0-1d5d22",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190312Z-f6d9fe",
   "org.scalablytyped" %%% "ramda" % "0.26-dt-20190311Z-da096c",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-1a0420",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-3de9e4",
   "org.scalablytyped" %%% "sinon" % "7.0-dt-20190303Z-2449d4",
   "org.scalablytyped" %%% "sinon-chai" % "3.2.0-dt-20181212Z-125528",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-a5e2be",
@@ -46,7 +46,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-155129",
   "org.scalablytyped" %%% "tmp" % "0.0-dt-20190212Z-18a81e",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-0cc572",
-  "org.scalablytyped" %%% "yauzl" % "2.9-dt-20181229Z-2f5e7b")
+  "org.scalablytyped" %%% "yauzl" % "2.9-dt-20181229Z-7fa3b6")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ForkOptions extends ProcessEnvOptions {
+  var detached: js.UndefOr[scala.Boolean] = js.undefined
   var execArgv: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var execPath: js.UndefOr[java.lang.String] = js.undefined
   var silent: js.UndefOr[scala.Boolean] = js.undefined
@@ -17,6 +18,7 @@ object ForkOptions {
   @scala.inline
   def apply(
     cwd: java.lang.String = null,
+    detached: js.UndefOr[scala.Boolean] = js.undefined,
     env: nodeLib.NodeJSNs.ProcessEnv = null,
     execArgv: js.Array[java.lang.String] = null,
     execPath: java.lang.String = null,
@@ -28,6 +30,7 @@ object ForkOptions {
   ): ForkOptions = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (!js.isUndefined(detached)) __obj.updateDynamic("detached")(detached)
     if (env != null) __obj.updateDynamic("env")(env)
     if (execArgv != null) __obj.updateDynamic("execArgv")(execArgv)
     if (execPath != null) __obj.updateDynamic("execPath")(execPath)

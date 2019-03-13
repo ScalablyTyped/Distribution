@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("express-correlation-id", JSImport.Namespace)
 @js.native
-object expressDashCorrelationDashIdMod extends js.Object {
-  val default: expressDashCorrelationDashIdLib.Anon_GetId = js.native
-}
+object expressDashCorrelationDashIdMod
+  extends org.scalablytyped.runtime.TopLevel[Anon_GetId]
 

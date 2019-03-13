@@ -122,8 +122,7 @@ trait Pivot extends js.Object {
     callbackHandler: js.Function1[/* rawData */ js.Any, scala.Unit],
     updateHandler: js.Function1[/* rawData */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  def getFilter(hierarchyName: java.lang.String): js.Array[FilterItem] = js.native
-  def getFilterProperties(hierarchyName: java.lang.String): FilterProperties = js.native
+  def getFilter(hierarchyName: java.lang.String): Filter = js.native
   def getFormat(measureName: java.lang.String): Format = js.native
   def getMeasures(): js.Array[Measure] = js.native
   def getMembers(hierarchyName: java.lang.String, memberName: java.lang.String, callbackHandler: java.lang.String): js.Array[Member] = js.native
@@ -305,9 +304,7 @@ trait Pivot extends js.Object {
     url: java.lang.String,
     embedData: scala.Boolean
   ): java.lang.String = js.native
-  def setBottomX(hierarchyName: java.lang.String, num: scala.Double, measure: MeasureObject): scala.Unit = js.native
-  def setFilter(hierarchyName: java.lang.String, items: js.Array[java.lang.String]): scala.Unit = js.native
-  def setFilter(hierarchyName: java.lang.String, items: js.Array[java.lang.String], negation: scala.Boolean): scala.Unit = js.native
+  def setFilter(hierarchyName: java.lang.String, filter: Filter): scala.Unit = js.native
   def setFormat(format: Format, measureName: java.lang.String): scala.Unit = js.native
   def setOptions(options: Options): scala.Unit = js.native
   def setReport(report: Report): scala.Unit = js.native
@@ -317,7 +314,6 @@ trait Pivot extends js.Object {
     sortName: java.lang.String,
     customSorting: js.Array[java.lang.String]
   ): scala.Unit = js.native
-  def setTopX(hierarchyName: java.lang.String, num: scala.Double, measure: MeasureObject): scala.Unit = js.native
   def showCharts(): scala.Unit = js.native
   def showCharts(`type`: java.lang.String): scala.Unit = js.native
   def showCharts(`type`: java.lang.String, multiple: scala.Boolean): scala.Unit = js.native

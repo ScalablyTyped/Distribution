@@ -14,9 +14,7 @@ trait LanguageClientOptions extends js.Object {
   var initializationFailedHandler: js.UndefOr[InitializationFailedHandler] = js.undefined
   var initializationOptions: js.UndefOr[js.Any | js.Function0[_]] = js.undefined
   var middleware: js.UndefOr[Middleware] = js.undefined
-  var outputChannel: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OutputChannel */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OutputChannel */ js.Any
-  ] = js.undefined
+  var outputChannel: js.UndefOr[vscodeLib.vscodeMod.OutputChannel] = js.undefined
   var outputChannelName: js.UndefOr[java.lang.String] = js.undefined
   var revealOutputChannelOn: js.UndefOr[RevealOutputChannelOn] = js.undefined
   /**
@@ -26,9 +24,7 @@ trait LanguageClientOptions extends js.Object {
   var stdioEncoding: js.UndefOr[java.lang.String] = js.undefined
   var synchronize: js.UndefOr[SynchronizeOptions] = js.undefined
   var uriConverters: js.UndefOr[vscodeDashLanguageclientLib.Anon_Code2Protocol] = js.undefined
-  var workspaceFolder: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VWorkspaceFolder */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VWorkspaceFolder */ js.Any
-  ] = js.undefined
+  var workspaceFolder: js.UndefOr[vscodeLib.vscodeMod.WorkspaceFolder] = js.undefined
 }
 
 object LanguageClientOptions {
@@ -40,13 +36,13 @@ object LanguageClientOptions {
     initializationFailedHandler: InitializationFailedHandler = null,
     initializationOptions: js.Any | js.Function0[_] = null,
     middleware: Middleware = null,
-    outputChannel: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OutputChannel */ js.Any = null,
+    outputChannel: vscodeLib.vscodeMod.OutputChannel = null,
     outputChannelName: java.lang.String = null,
     revealOutputChannelOn: RevealOutputChannelOn = null,
     stdioEncoding: java.lang.String = null,
     synchronize: SynchronizeOptions = null,
     uriConverters: vscodeDashLanguageclientLib.Anon_Code2Protocol = null,
-    workspaceFolder: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VWorkspaceFolder */ js.Any = null
+    workspaceFolder: vscodeLib.vscodeMod.WorkspaceFolder = null
   ): LanguageClientOptions = {
     val __obj = js.Dynamic.literal()
     if (diagnosticCollectionName != null) __obj.updateDynamic("diagnosticCollectionName")(diagnosticCollectionName)

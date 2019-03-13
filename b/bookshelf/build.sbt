@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bookshelf"
-version := "v0.13.0-dt-20190311Z-8e6580"
+version := "v0.13.0-dt-20190311Z-3e4a31"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-cc7043",
   "org.scalablytyped" %%% "create-error" % "0.3.1-dt-20180315Z-d817bd",
-  "org.scalablytyped" %%% "knex" % "0.15-dt-20190228Z-e58d03",
+  "org.scalablytyped" %%% "knex" % "0.15-dt-20190228Z-d1c82a",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190312Z-f6d9fe",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -27,7 +27,9 @@ trait VideoProperties
   var onFullscreenPlayerWillPresent: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onLoad: js.UndefOr[js.Function1[/* data */ OnLoadData, scala.Unit]] = js.undefined
   var onLoadStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onPlaybackRateChange: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onPlaybackRateChange: js.UndefOr[
+    js.Function1[/* data */ reactDashNativeDashVideoLib.Anon_PlaybackRate, scala.Unit]
+  ] = js.undefined
   var onPlaybackResume: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onPlaybackStalled: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onProgress: js.UndefOr[
@@ -50,11 +52,18 @@ trait VideoProperties
   var paused: js.UndefOr[scala.Boolean] = js.undefined
   var playInBackground: js.UndefOr[scala.Boolean] = js.undefined
   var playWhenInactive: js.UndefOr[scala.Boolean] = js.undefined
+   // via Image#resizeMode
   var poster: js.UndefOr[java.lang.String] = js.undefined
+   // via Image#resizeMode
+  var posterResizeMode: js.UndefOr[
+    reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.stretch | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.contain | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.cover | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.none
+  ] = js.undefined
   var progressUpdateInterval: js.UndefOr[scala.Double] = js.undefined
   var rate: js.UndefOr[scala.Double] = js.undefined
   var repeat: js.UndefOr[scala.Boolean] = js.undefined
-  var resizeMode: js.UndefOr[java.lang.String] = js.undefined
+  var resizeMode: js.UndefOr[
+    reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.stretch | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.contain | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.cover | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.none
+  ] = js.undefined
   var rotation: js.UndefOr[scala.Double] = js.undefined
   /* Required by react-native */
   var scaleX: js.UndefOr[scala.Double] = js.undefined
@@ -118,7 +127,7 @@ object VideoProperties {
     onMagicTap: () => scala.Unit = null,
     onMoveShouldSetResponder: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
     onMoveShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
-    onPlaybackRateChange: () => scala.Unit = null,
+    onPlaybackRateChange: /* data */ reactDashNativeDashVideoLib.Anon_PlaybackRate => scala.Unit = null,
     onPlaybackResume: () => scala.Unit = null,
     onPlaybackStalled: () => scala.Unit = null,
     onProgress: /* data */ reactDashNativeDashVideoLib.Anon_CurrentTime => scala.Unit = null,
@@ -156,12 +165,13 @@ object VideoProperties {
     playWhenInactive: js.UndefOr[scala.Boolean] = js.undefined,
     pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
     poster: java.lang.String = null,
+    posterResizeMode: reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.stretch | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.contain | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.cover | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.none = null,
     progressUpdateInterval: scala.Int | scala.Double = null,
     rate: scala.Int | scala.Double = null,
     removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
     renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
     repeat: js.UndefOr[scala.Boolean] = js.undefined,
-    resizeMode: java.lang.String = null,
+    resizeMode: reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.stretch | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.contain | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.cover | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.none = null,
     rotation: scala.Int | scala.Double = null,
     scaleX: scala.Int | scala.Double = null,
     scaleY: scala.Int | scala.Double = null,
@@ -219,7 +229,7 @@ object VideoProperties {
     if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(js.Any.fromFunction0(onMagicTap))
     if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1(onMoveShouldSetResponder))
     if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1(onMoveShouldSetResponderCapture))
-    if (onPlaybackRateChange != null) __obj.updateDynamic("onPlaybackRateChange")(js.Any.fromFunction0(onPlaybackRateChange))
+    if (onPlaybackRateChange != null) __obj.updateDynamic("onPlaybackRateChange")(js.Any.fromFunction1(onPlaybackRateChange))
     if (onPlaybackResume != null) __obj.updateDynamic("onPlaybackResume")(js.Any.fromFunction0(onPlaybackResume))
     if (onPlaybackStalled != null) __obj.updateDynamic("onPlaybackStalled")(js.Any.fromFunction0(onPlaybackStalled))
     if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1(onProgress))
@@ -257,12 +267,13 @@ object VideoProperties {
     if (!js.isUndefined(playWhenInactive)) __obj.updateDynamic("playWhenInactive")(playWhenInactive)
     if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
     if (poster != null) __obj.updateDynamic("poster")(poster)
+    if (posterResizeMode != null) __obj.updateDynamic("posterResizeMode")(posterResizeMode.asInstanceOf[js.Any])
     if (progressUpdateInterval != null) __obj.updateDynamic("progressUpdateInterval")(progressUpdateInterval.asInstanceOf[js.Any])
     if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
     if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
     if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid)
     if (!js.isUndefined(repeat)) __obj.updateDynamic("repeat")(repeat)
-    if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode)
+    if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
     if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
     if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
     if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])

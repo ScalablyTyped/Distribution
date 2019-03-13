@@ -10,7 +10,7 @@ sealed trait CloseBehavior extends js.Object
 
 /**
   *
-  * Specifies the close behavior for workbook.close API.
+  * Specifies the close behavior for Workbook.close API.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta

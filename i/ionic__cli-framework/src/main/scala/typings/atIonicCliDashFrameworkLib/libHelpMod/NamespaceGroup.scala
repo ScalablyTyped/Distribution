@@ -27,10 +27,15 @@ object NamespaceGroup extends js.Object {
   sealed trait Hidden
     extends atIonicCliDashFrameworkLib.libHelpMod.NamespaceGroup
   
+  @js.native
+  sealed trait Paid
+    extends atIonicCliDashFrameworkLib.libHelpMod.NamespaceGroup
+  
   /* "beta" */ val Beta: Beta with java.lang.String = js.native
   /* "deprecated" */ val Deprecated: Deprecated with java.lang.String = js.native
   /* "experimental" */ val Experimental: Experimental with java.lang.String = js.native
   /* "hidden" */ val Hidden: Hidden with java.lang.String = js.native
+  /* "paid" */ val Paid: Paid with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[atIonicCliDashFrameworkLib.libHelpMod.NamespaceGroup with java.lang.String] = js.native
 }

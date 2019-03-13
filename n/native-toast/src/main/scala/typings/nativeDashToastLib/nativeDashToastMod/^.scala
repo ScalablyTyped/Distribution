@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("native-toast", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  val default: nativeDashToastLib.Anon_Error = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[nativeDashToastLib.Anon_Error]
 

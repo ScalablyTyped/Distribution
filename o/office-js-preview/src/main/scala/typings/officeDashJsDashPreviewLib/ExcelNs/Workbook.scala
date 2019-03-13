@@ -24,7 +24,7 @@ class Workbook ()
   val application: Application = js.native
   /**
     *
-    * True if the workbook is in auto save mode.
+    * Specifies whether or not the workbook is in autosave mode. Read-Only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -88,8 +88,8 @@ class Workbook ()
   val functions: Functions = js.native
   /**
     *
-    * True if no changes have been made to the specified workbook since it was last saved.
-    You can set this property to True if you want to close a modified workbook without either saving it or being prompted to save it.
+    * Specifies whether or not changes have been made since the workbook was last saved.
+    You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -111,7 +111,7 @@ class Workbook ()
   val names: NamedItemCollection = js.native
   /**
     *
-    * Occurs when AutoSave setting is changed on the workbook.
+    * Occurs when the autoSave setting is changed on the workbook.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
@@ -130,6 +130,14 @@ class Workbook ()
   val onSelectionChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[SelectionChangedEventArgs] = js.native
   /**
     *
+    * Represents a collection of PivotTableStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val pivotTableStyles: PivotTableStyleCollection = js.native
+  /**
+    *
     * Represents a collection of PivotTables associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.3]
@@ -137,7 +145,7 @@ class Workbook ()
   val pivotTables: PivotTableCollection = js.native
   /**
     *
-    * True if the workbook has ever been saved locally or online.
+    * Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -173,6 +181,14 @@ class Workbook ()
   val settings: SettingCollection = js.native
   /**
     *
+    * Represents a collection of SlicerStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val slicerStyles: SlicerStyleCollection = js.native
+  /**
+    *
     * Represents a collection of Slicers associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -188,11 +204,27 @@ class Workbook ()
   val styles: StyleCollection = js.native
   /**
     *
+    * Represents a collection of TableStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val tableStyles: TableStyleCollection = js.native
+  /**
+    *
     * Represents a collection of tables associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */
   val tables: TableCollection = js.native
+  /**
+    *
+    * Represents a collection of TimelineStyles associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val timelineStyles: TimelineStyleCollection = js.native
   /**
     *
     * True if the workbook uses the 1904 date system.

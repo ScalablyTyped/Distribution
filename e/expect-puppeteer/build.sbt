@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expect-puppeteer"
-version := "3.3-dt-20181205Z-feef25"
+version := "3.3-dt-20181205Z-fca67f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "jest" % "24.0-dt-20190307Z-b4b766",
   "org.scalablytyped" %%% "jest-diff" % "20.0-dt-20190212Z-52cd79",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
-  "org.scalablytyped" %%% "puppeteer" % "1.12-dt-20190302Z-e0618c",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190312Z-f6d9fe",
+  "org.scalablytyped" %%% "puppeteer" % "1.12-dt-20190302Z-e9091b",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

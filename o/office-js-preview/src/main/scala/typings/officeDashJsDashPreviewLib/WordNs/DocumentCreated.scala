@@ -20,6 +20,7 @@ class DocumentCreated ()
     * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   val body: Body = js.native
   /**
@@ -27,6 +28,7 @@ class DocumentCreated ()
     * Gets the collection of content control objects in the document. This includes content controls in the body of the document, headers, footers, textboxes, etc.. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   val contentControls: ContentControlCollection = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
@@ -37,6 +39,7 @@ class DocumentCreated ()
     * Gets the custom XML parts in the document. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.4]
+    * @beta
     */
   val customXmlParts: CustomXmlPartCollection = js.native
   /**
@@ -44,6 +47,7 @@ class DocumentCreated ()
     * Gets the properties of the document. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   val properties: DocumentProperties = js.native
   /**
@@ -51,6 +55,7 @@ class DocumentCreated ()
     * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   val saved: scala.Boolean = js.native
   /**
@@ -58,6 +63,7 @@ class DocumentCreated ()
     * Gets the collection of section objects in the document. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   val sections: SectionCollection = js.native
   /**
@@ -65,6 +71,7 @@ class DocumentCreated ()
     * Gets the add-in's settings in the document. Read-only.
     *
     * [Api set: WordApiHiddenDocument 1.4]
+    * @beta
     */
   val settings: SettingCollection = js.native
   /**
@@ -72,6 +79,7 @@ class DocumentCreated ()
     * Deletes a bookmark, if exists, from the document.
     *
     * [Api set: WordApiHiddenDocument 1.4]
+    * @beta
     *
     * @param name Required. The bookmark name, which is case-insensitive.
     */
@@ -81,6 +89,7 @@ class DocumentCreated ()
     * Gets a bookmark's range. Throws if the bookmark does not exist.
     *
     * [Api set: WordApiHiddenDocument 1.4]
+    * @beta
     *
     * @param name Required. The bookmark name, which is case-insensitive.
     */
@@ -90,6 +99,7 @@ class DocumentCreated ()
     * Gets a bookmark's range. Returns a null object if the bookmark does not exist.
     *
     * [Api set: WordApiHiddenDocument 1.4]
+    * @beta
     *
     * @param name Required. The bookmark name, which is case-insensitive.
     */
@@ -126,6 +136,7 @@ class DocumentCreated ()
     * Saves the document. This will use the Word default file naming convention if the document has not been saved before.
     *
     * [Api set: WordApiHiddenDocument 1.3]
+    * @beta
     */
   def save(): scala.Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
@@ -146,6 +157,10 @@ class DocumentCreated ()
     properties: officeDashJsDashPreviewLib.WordNs.InterfacesNs.DocumentCreatedUpdateData,
     options: officeDashJsDashPreviewLib.OfficeExtensionNs.UpdateOptions
   ): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Word.DocumentCreated object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.DocumentCreatedData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsDashPreviewLib.WordNs.InterfacesNs.DocumentCreatedData = js.native
   /**
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents a Line object inside a worksheet.
+  * Represents a line inside a worksheet. To get the corresponding Shape object, use `Line.shape`.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -22,7 +22,7 @@ trait LineLoadOptions extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var beginArrowHeadLength: js.UndefOr[scala.Boolean] = js.undefined
+  var beginArrowheadLength: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the style of the arrowhead at the beginning of the specified line.
@@ -30,7 +30,7 @@ trait LineLoadOptions extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var beginArrowHeadStyle: js.UndefOr[scala.Boolean] = js.undefined
+  var beginArrowheadStyle: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the width of the arrowhead at the beginning of the specified line.
@@ -38,10 +38,10 @@ trait LineLoadOptions extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var beginArrowHeadWidth: js.UndefOr[scala.Boolean] = js.undefined
+  var beginArrowheadWidth: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the shape object that the beginning of the specified line is attached to.
+    * Represents the shape to which the beginning of the specified line is attached.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -49,7 +49,7 @@ trait LineLoadOptions extends js.Object {
   var beginConnectedShape: js.UndefOr[ShapeLoadOptions] = js.undefined
   /**
     *
-    * Represents an integer that specifies the connection site that the beginning of a connector is connected to. Read-only. Returns null when the beginning of the line is not attached to any shape.
+    * Represents the connection site to which the beginning of a connector is connected. Read-only. Returns null when the beginning of the line is not attached to any shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -70,7 +70,7 @@ trait LineLoadOptions extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var endArrowHeadLength: js.UndefOr[scala.Boolean] = js.undefined
+  var endArrowheadLength: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the style of the arrowhead at the end of the specified line.
@@ -78,7 +78,7 @@ trait LineLoadOptions extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var endArrowHeadStyle: js.UndefOr[scala.Boolean] = js.undefined
+  var endArrowheadStyle: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the width of the arrowhead at the end of the specified line.
@@ -86,10 +86,10 @@ trait LineLoadOptions extends js.Object {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var endArrowHeadWidth: js.UndefOr[scala.Boolean] = js.undefined
+  var endArrowheadWidth: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the shape object that the end of the specified line is attached to.
+    * Represents the shape to which the end of the specified line is attached.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -97,7 +97,7 @@ trait LineLoadOptions extends js.Object {
   var endConnectedShape: js.UndefOr[ShapeLoadOptions] = js.undefined
   /**
     *
-    * Represents an integer that specifies the connection site that the end of a connector is connected to. Read-only. Returns null when the end of the line is not attached to any shape.
+    * Represents the connection site to which the end of a connector is connected. Read-only. Returns null when the end of the line is not attached to any shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -113,7 +113,7 @@ trait LineLoadOptions extends js.Object {
   var id: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents whether the beginning of the specified line is connected to a shape. Read-only.
+    * Specifies whether or not the beginning of the specified line is connected to a shape. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -121,7 +121,7 @@ trait LineLoadOptions extends js.Object {
   var isBeginConnected: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents whether the end of the specified line is connected to a shape. Read-only.
+    * Specifies whether or not the end of the specified line is connected to a shape. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -129,7 +129,7 @@ trait LineLoadOptions extends js.Object {
   var isEndConnected: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Returns the shape object for the line.
+    * Returns the Shape object associated with the line.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -141,15 +141,15 @@ object LineLoadOptions {
   @scala.inline
   def apply(
     $all: js.UndefOr[scala.Boolean] = js.undefined,
-    beginArrowHeadLength: js.UndefOr[scala.Boolean] = js.undefined,
-    beginArrowHeadStyle: js.UndefOr[scala.Boolean] = js.undefined,
-    beginArrowHeadWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    beginArrowheadLength: js.UndefOr[scala.Boolean] = js.undefined,
+    beginArrowheadStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    beginArrowheadWidth: js.UndefOr[scala.Boolean] = js.undefined,
     beginConnectedShape: ShapeLoadOptions = null,
     beginConnectedSite: js.UndefOr[scala.Boolean] = js.undefined,
     connectorType: js.UndefOr[scala.Boolean] = js.undefined,
-    endArrowHeadLength: js.UndefOr[scala.Boolean] = js.undefined,
-    endArrowHeadStyle: js.UndefOr[scala.Boolean] = js.undefined,
-    endArrowHeadWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    endArrowheadLength: js.UndefOr[scala.Boolean] = js.undefined,
+    endArrowheadStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    endArrowheadWidth: js.UndefOr[scala.Boolean] = js.undefined,
     endConnectedShape: ShapeLoadOptions = null,
     endConnectedSite: js.UndefOr[scala.Boolean] = js.undefined,
     id: js.UndefOr[scala.Boolean] = js.undefined,
@@ -159,15 +159,15 @@ object LineLoadOptions {
   ): LineLoadOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(beginArrowHeadLength)) __obj.updateDynamic("beginArrowHeadLength")(beginArrowHeadLength)
-    if (!js.isUndefined(beginArrowHeadStyle)) __obj.updateDynamic("beginArrowHeadStyle")(beginArrowHeadStyle)
-    if (!js.isUndefined(beginArrowHeadWidth)) __obj.updateDynamic("beginArrowHeadWidth")(beginArrowHeadWidth)
+    if (!js.isUndefined(beginArrowheadLength)) __obj.updateDynamic("beginArrowheadLength")(beginArrowheadLength)
+    if (!js.isUndefined(beginArrowheadStyle)) __obj.updateDynamic("beginArrowheadStyle")(beginArrowheadStyle)
+    if (!js.isUndefined(beginArrowheadWidth)) __obj.updateDynamic("beginArrowheadWidth")(beginArrowheadWidth)
     if (beginConnectedShape != null) __obj.updateDynamic("beginConnectedShape")(beginConnectedShape)
     if (!js.isUndefined(beginConnectedSite)) __obj.updateDynamic("beginConnectedSite")(beginConnectedSite)
     if (!js.isUndefined(connectorType)) __obj.updateDynamic("connectorType")(connectorType)
-    if (!js.isUndefined(endArrowHeadLength)) __obj.updateDynamic("endArrowHeadLength")(endArrowHeadLength)
-    if (!js.isUndefined(endArrowHeadStyle)) __obj.updateDynamic("endArrowHeadStyle")(endArrowHeadStyle)
-    if (!js.isUndefined(endArrowHeadWidth)) __obj.updateDynamic("endArrowHeadWidth")(endArrowHeadWidth)
+    if (!js.isUndefined(endArrowheadLength)) __obj.updateDynamic("endArrowheadLength")(endArrowheadLength)
+    if (!js.isUndefined(endArrowheadStyle)) __obj.updateDynamic("endArrowheadStyle")(endArrowheadStyle)
+    if (!js.isUndefined(endArrowheadWidth)) __obj.updateDynamic("endArrowheadWidth")(endArrowheadWidth)
     if (endConnectedShape != null) __obj.updateDynamic("endConnectedShape")(endConnectedShape)
     if (!js.isUndefined(endConnectedSite)) __obj.updateDynamic("endConnectedSite")(endConnectedSite)
     if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)

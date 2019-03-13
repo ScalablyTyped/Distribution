@@ -8,9 +8,25 @@ import scala.scalajs.js.annotation._
 @JSImport("express-sitemap-xml", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def default(
-    getUrls: js.Function0[js.Array[SitemapLeaf] | js.Promise[js.Array[SitemapLeaf]]],
+  def apply(
+    getUrls: js.Function0[
+      (js.Array[
+        expressDashSitemapDashXmlLib.expressDashSitemapDashXmlMod.expressSitemapXmlNs.SitemapLeaf
+      ]) | (js.Promise[
+        js.Array[
+          expressDashSitemapDashXmlLib.expressDashSitemapDashXmlMod.expressSitemapXmlNs.SitemapLeaf
+        ]
+      ])
+    ],
     base: java.lang.String
   ): expressLib.expressMod.eNs.RequestHandler = js.native
+  def buildSitemaps(
+    urls: js.Array[
+      expressDashSitemapDashXmlLib.expressDashSitemapDashXmlMod.expressSitemapXmlNs.SitemapLeaf
+    ],
+    base: java.lang.String
+  ): js.Promise[
+    expressDashSitemapDashXmlLib.expressDashSitemapDashXmlMod.expressSitemapXmlNs.Sitemap
+  ] = js.native
 }
 

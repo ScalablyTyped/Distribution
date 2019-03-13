@@ -18,8 +18,8 @@ trait WorkbookUpdateData extends js.Object {
   var chartDataPointTrack: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * True if no changes have been made to the specified workbook since it was last saved.
-    You can set this property to True if you want to close a modified workbook without either saving it or being prompted to save it.
+    * Specifies whether or not changes have been made since the workbook was last saved.
+    You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

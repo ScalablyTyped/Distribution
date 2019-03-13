@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents all the shapes in the worksheet.
+  * Represents a collection of all the shapes in the worksheet.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -23,29 +23,29 @@ class ShapeCollection ()
   val items: js.Array[Shape] = js.native
   /**
     *
-    * Adds a geometric shape to worksheet. Returns a Shape object that represents the new shape.
+    * Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param geometricShapeType Represents the geometric type of the shape. See Excel.GeometricShapeType for details.
+    * @param geometricShapeType Represents the type of the geometric shape. See Excel.GeometricShapeType for details.
     */
   def addGeometricShape(
     geometricShapeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 177 */ js.Any
   ): Shape = js.native
   /**
     *
-    * Adds a geometric shape to worksheet. Returns a Shape object that represents the new shape.
+    * Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param geometricShapeType Represents the geometric type of the shape. See Excel.GeometricShapeType for details.
+    * @param geometricShapeType Represents the type of the geometric shape. See Excel.GeometricShapeType for details.
     */
   def addGeometricShape(geometricShapeType: GeometricShapeType): Shape = js.native
   /**
     *
-    * Group a subset of shapes in a worksheet. Returns a Shape object that represents the new group of shapes.
+    * Groups a subset of shapes in this collection's worksheet. Returns a Shape object that represents the new group of shapes.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -55,12 +55,12 @@ class ShapeCollection ()
   def addGroup(values: js.Array[java.lang.String | Shape]): Shape = js.native
   /**
     *
-    * Creates an image from a base64 string and adds it to worksheet. Returns the Shape object that represents the new Image.
+    * Creates an image from a base64-encoded string and adds it to the worksheet. Returns the Shape object that represents the new image.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param base64ImageString A base64 encoded image in JPEG or PNG formats.
+    * @param base64ImageString A base64-encoded string representing an image in either JPEG or PNG format.
     */
   def addImage(base64ImageString: java.lang.String): Shape = js.native
   /**
@@ -70,10 +70,10 @@ class ShapeCollection ()
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param startLeft The distance, in points, from the start left of the line to the left side of the worksheet.
-    * @param startTop The distance, in points, from the start top of the line to the top of the worksheet.
-    * @param endLeft The distance, in points, from the end left of the line to the left of the worksheet.
-    * @param endTop The distance, in points, from the end top of the line to the top of the worksheet.
+    * @param startLeft The distance, in points, from the start of the line to the left side of the worksheet.
+    * @param startTop The distance, in points, from the start of the line to the top of the worksheet.
+    * @param endLeft The distance, in points, from the end of the line to the left of the worksheet.
+    * @param endTop The distance, in points, from the end of the line to the top of the worksheet.
     * @param connectorType Represents the connector type. See Excel.ConnectorType for details.
     */
   def addLine(startLeft: scala.Double, startTop: scala.Double, endLeft: scala.Double, endTop: scala.Double): Shape = js.native
@@ -110,17 +110,17 @@ class ShapeCollection ()
   ): Shape = js.native
   /**
     *
-    * Creates an SVG from a XML string and adds it to worksheet. Returns a Shape object that represents the new Image.
+    * Creates a scalable vector graphic (SVG) from an XML string and adds it to the worksheet. Returns a Shape object that represents the new image.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param xmlImageString An XML string that represents an SVG.
+    * @param xml An XML string that represents the SVG.
     */
-  def addSVG(xmlImageString: java.lang.String): Shape = js.native
+  def addSvg(xml: java.lang.String): Shape = js.native
   /**
     *
-    * Adds a textbox to worksheet by telling it's text content. Returns a Shape object that represents the new text box.
+    * Adds a text box to the worksheet with the provided text as the content. Returns a Shape object that represents the new text box.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -149,12 +149,12 @@ class ShapeCollection ()
   def getItem(name: java.lang.String): Shape = js.native
   /**
     *
-    * Gets a shape based on its position in the collection.
+    * Gets a shape using its position in the collection.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param index Index value of the object to be retrieved. Zero-indexed.
+    * @param index The zero-based index of the shape to be retrieved.
     */
   def getItemAt(index: scala.Double): Shape = js.native
   /**

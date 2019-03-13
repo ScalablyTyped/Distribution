@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "powerbi-visuals-tools"
-version := "1.11-dt-20180507Z-bccd70"
+version := "1.11-dt-20190312Z-b40e6a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

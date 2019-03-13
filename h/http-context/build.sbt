@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "http-context"
-version := "1.1-dt-20180214Z-1c4a06"
+version := "1.1-dt-20180214Z-93a6a9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-6e53aa",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-e0a1e8",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190312Z-f6d9fe",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

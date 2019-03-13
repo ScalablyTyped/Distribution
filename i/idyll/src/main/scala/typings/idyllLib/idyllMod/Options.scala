@@ -9,7 +9,7 @@ trait Options extends js.Object {
   /**
     * Compiler options
     */
-  var compiler: js.UndefOr[idyllDashCompilerLib.idyllDashCompilerMod.Options] = js.undefined
+  var compiler: js.UndefOr[idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Options] = js.undefined
   /**
     * The components directory
     */
@@ -82,7 +82,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    compiler: idyllDashCompilerLib.idyllDashCompilerMod.Options = null,
+    compiler: idyllDashCompilerLib.idyllDashCompilerMod.compilerNs.Options = null,
     components: js.UndefOr[scala.Boolean] = js.undefined,
     css: java.lang.String = null,
     datasets: java.lang.String = null,

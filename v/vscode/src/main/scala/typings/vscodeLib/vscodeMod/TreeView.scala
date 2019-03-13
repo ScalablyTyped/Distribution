@@ -1,0 +1,80 @@
+package typings
+package vscodeLib.vscodeMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait TreeView[T] extends Disposable {
+  /**
+  		 * Currently selected elements.
+  		 */
+  val selection: js.Array[T] = js.native
+  /**
+  		 * `true` if the [tree view](#TreeView) is visible otherwise `false`.
+  		 */
+  val visible: scala.Boolean = js.native
+  /**
+  		 * Event that is fired when the [selection](#TreeView.selection) has changed
+  		 */
+  def onDidChangeSelection(listener: js.Function1[/* e */ TreeViewSelectionChangeEvent[TreeViewSelectionChangeEvent[T]], _]): Disposable = js.native
+  def onDidChangeSelection(
+    listener: js.Function1[/* e */ TreeViewSelectionChangeEvent[TreeViewSelectionChangeEvent[T]], _],
+    thisArgs: js.Any
+  ): Disposable = js.native
+  def onDidChangeSelection(
+    listener: js.Function1[/* e */ TreeViewSelectionChangeEvent[TreeViewSelectionChangeEvent[T]], _],
+    thisArgs: js.Any,
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
+  /**
+  		 * Event that is fired when [visibility](TreeView.visible) has changed
+  		 */
+  def onDidChangeVisibility(listener: js.Function1[/* e */ TreeViewVisibilityChangeEvent, _]): Disposable = js.native
+  def onDidChangeVisibility(listener: js.Function1[/* e */ TreeViewVisibilityChangeEvent, _], thisArgs: js.Any): Disposable = js.native
+  def onDidChangeVisibility(
+    listener: js.Function1[/* e */ TreeViewVisibilityChangeEvent, _],
+    thisArgs: js.Any,
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
+  /**
+  		 * Event that is fired when an element is collapsed
+  		 */
+  def onDidCollapseElement(listener: js.Function1[/* e */ TreeViewExpansionEvent[TreeViewExpansionEvent[T]], _]): Disposable = js.native
+  def onDidCollapseElement(
+    listener: js.Function1[/* e */ TreeViewExpansionEvent[TreeViewExpansionEvent[T]], _],
+    thisArgs: js.Any
+  ): Disposable = js.native
+  def onDidCollapseElement(
+    listener: js.Function1[/* e */ TreeViewExpansionEvent[TreeViewExpansionEvent[T]], _],
+    thisArgs: js.Any,
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
+  /**
+  		 * Event that is fired when an element is expanded
+  		 */
+  def onDidExpandElement(listener: js.Function1[/* e */ TreeViewExpansionEvent[TreeViewExpansionEvent[T]], _]): Disposable = js.native
+  def onDidExpandElement(
+    listener: js.Function1[/* e */ TreeViewExpansionEvent[TreeViewExpansionEvent[T]], _],
+    thisArgs: js.Any
+  ): Disposable = js.native
+  def onDidExpandElement(
+    listener: js.Function1[/* e */ TreeViewExpansionEvent[TreeViewExpansionEvent[T]], _],
+    thisArgs: js.Any,
+    disposables: js.Array[Disposable]
+  ): Disposable = js.native
+  /**
+  		 * Reveals the given element in the tree view.
+  		 * If the tree view is not visible then the tree view is shown and element is revealed.
+  		 *
+  		 * By default revealed element is selected and not focused.
+  		 * In order to not to select, set the option `select` to `false`.
+  		 * In order to focus, set the option `focus` to `true`.
+  		 *
+  		 * **NOTE:** [TreeDataProvider](#TreeDataProvider) is required to implement [getParent](#TreeDataProvider.getParent) method to access this API.
+  		 */
+  def reveal(element: T): vscodeLib.Thenable[scala.Unit] = js.native
+  def reveal(element: T, options: vscodeLib.Anon_Focus): vscodeLib.Thenable[scala.Unit] = js.native
+}
+

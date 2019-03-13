@@ -62,6 +62,13 @@ trait LDUser extends js.Object {
     * with [[LDOptions.privateAttributeNames]] or [[LDOptions.allAttributesPrivate]].
     */
   var privateAttributeNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
+    * An optional secondary key for a user. This affects
+    * [feature flag targeting](https://docs.launchdarkly.com/docs/targeting-users#section-targeting-rules-based-on-user-attributes)
+    * as follows: if you have chosen to bucket users by a specific attribute, the secondary key (if set)
+    * is used to further distinguish between users who are otherwise identical according to that attribute.
+    */
+  var secondary: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object LDUser {
@@ -79,7 +86,8 @@ object LDUser {
     ip: java.lang.String = null,
     lastName: java.lang.String = null,
     name: java.lang.String = null,
-    privateAttributeNames: js.Array[java.lang.String] = null
+    privateAttributeNames: js.Array[java.lang.String] = null,
+    secondary: java.lang.String = null
   ): LDUser = {
     val __obj = js.Dynamic.literal(key = key)
     if (!js.isUndefined(anonymous)) __obj.updateDynamic("anonymous")(anonymous)
@@ -92,6 +100,7 @@ object LDUser {
     if (lastName != null) __obj.updateDynamic("lastName")(lastName)
     if (name != null) __obj.updateDynamic("name")(name)
     if (privateAttributeNames != null) __obj.updateDynamic("privateAttributeNames")(privateAttributeNames)
+    if (secondary != null) __obj.updateDynamic("secondary")(secondary)
     __obj.asInstanceOf[LDUser]
   }
 }

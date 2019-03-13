@@ -39,20 +39,6 @@ trait TableCellData extends js.Object {
   ] = js.undefined
   /**
     *
-    * Gets the parent row of the cell. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentRow: js.UndefOr[TableRowData] = js.undefined
-  /**
-    *
-    * Gets the parent table of the cell. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var parentTable: js.UndefOr[TableData] = js.undefined
-  /**
-    *
     * Gets the index of the cell's row in the table. Read-only.
     *
     * [Api set: WordApi 1.3]
@@ -97,8 +83,6 @@ object TableCellData {
     cellIndex: scala.Int | scala.Double = null,
     columnWidth: scala.Int | scala.Double = null,
     horizontalAlignment: officeDashJsDashPreviewLib.WordNs.Alignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Mixed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Centered | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justified = null,
-    parentRow: TableRowData = null,
-    parentTable: TableData = null,
     rowIndex: scala.Int | scala.Double = null,
     shadingColor: java.lang.String = null,
     value: java.lang.String = null,
@@ -110,8 +94,6 @@ object TableCellData {
     if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
     if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
     if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (parentRow != null) __obj.updateDynamic("parentRow")(parentRow)
-    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
     if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)
     if (value != null) __obj.updateDynamic("value")(value)

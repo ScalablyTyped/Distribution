@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Hierarchy extends js.Object {
   var caption: js.UndefOr[java.lang.String] = js.undefined
   var dimensionName: js.UndefOr[java.lang.String] = js.undefined
-  var filter: js.UndefOr[flexmonsterLib.Anon_MeasureMembers] = js.undefined
+  var filter: js.UndefOr[Filter] = js.undefined
   var sortName: js.UndefOr[java.lang.String] = js.undefined
   var sortOrder: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var uniqueName: js.UndefOr[java.lang.String] = js.undefined
@@ -19,7 +19,7 @@ object Hierarchy {
   def apply(
     caption: java.lang.String = null,
     dimensionName: java.lang.String = null,
-    filter: flexmonsterLib.Anon_MeasureMembers = null,
+    filter: Filter = null,
     sortName: java.lang.String = null,
     sortOrder: js.Array[java.lang.String] = null,
     uniqueName: java.lang.String = null

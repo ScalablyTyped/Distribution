@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ShapeData extends js.Object {
   /**
     *
-    * Returns or sets the alternative descriptive text string for a Shape object when the object is saved to a Web page.
+    * Returns or sets the alternative description text for a Shape object.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -17,7 +17,7 @@ trait ShapeData extends js.Object {
   var altTextDescription: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Returns or sets the alternative title text string for a Shape object when the object is saved to a Web page.
+    * Returns or sets the alternative title text for a Shape object.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -25,7 +25,7 @@ trait ShapeData extends js.Object {
   var altTextTitle: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Returns the number of connection sites on the specified shape. Read-only.
+    * Returns the number of connection sites on this shape. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -33,7 +33,7 @@ trait ShapeData extends js.Object {
   var connectionSiteCount: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Returns the fill formatting of the shape object. Read-only.
+    * Returns the fill formatting of this shape. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -41,7 +41,7 @@ trait ShapeData extends js.Object {
   var fill: js.UndefOr[ShapeFillData] = js.undefined
   /**
     *
-    * Represents the geometric shape type of the specified shape. See Excel.GeometricShapeType for detail. Returns null if the shape is not geometric, for example, get GeometricShapeType of a line or a chart will return null.
+    * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -52,7 +52,7 @@ trait ShapeData extends js.Object {
   /**
     *
     * Represents the height, in points, of the shape.
-    Throws an invalid argument exception when set with negative value or zero as input.
+    Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -68,8 +68,8 @@ trait ShapeData extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * The distance, in points, from the left side of the shape to the left of the worksheet.
-    Throws an invalid argument exception when set with negative value as input.
+    * The distance, in points, from the left side of the shape to the left side of the worksheet.
+    Throws an invalid argument exception when set with a negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -77,7 +77,7 @@ trait ShapeData extends js.Object {
   var left: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the shape is part of a top-level group, etc.
+    * Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -85,7 +85,7 @@ trait ShapeData extends js.Object {
   var level: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Returns the line formatting of the shape object. Read-only.
+    * Returns the line formatting of this shape. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -93,7 +93,7 @@ trait ShapeData extends js.Object {
   var lineFormat: js.UndefOr[ShapeLineFormatData] = js.undefined
   /**
     *
-    * Represents if the aspect ratio locked, in boolean, of the shape.
+    * Specifies whether or not the aspect ratio of this shape is locked.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -109,7 +109,7 @@ trait ShapeData extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Represents the placment, value that represents the way the object is attached to the cells below it.
+    * Represents how the object is attached to the cells below it.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -127,8 +127,8 @@ trait ShapeData extends js.Object {
   var rotation: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * The distance, in points, from the top edge of the shape to the top of the worksheet.
-    Throws an invalid argument exception when set with negative value as input.
+    * The distance, in points, from the top edge of the shape to the top edge of the worksheet.
+    Throws an invalid argument exception when set with a negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -136,17 +136,17 @@ trait ShapeData extends js.Object {
   var top: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Returns the type of the specified shape. Read-only. See Excel.ShapeType for detail.
+    * Returns the type of this shape. See Excel.ShapeType for details. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var `type`: js.UndefOr[
-    officeDashJsDashPreviewLib.ExcelNs.ShapeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Image | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GeometricShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Group | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Line
+    officeDashJsDashPreviewLib.ExcelNs.ShapeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unsupported | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Image | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GeometricShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Group | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Line
   ] = js.undefined
   /**
     *
-    * Represents the visibility, in boolean, of the specified shape.
+    * Represents the visibility of this shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -155,7 +155,7 @@ trait ShapeData extends js.Object {
   /**
     *
     * Represents the width, in points, of the shape.
-    Throws an invalid argument exception when set with negative value or zero as input.
+    Throws an invalid argument exception when set with a negative value or zero as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -163,7 +163,7 @@ trait ShapeData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Returns the position of the specified shape in the z-order, the very bottom shape's z-order value is 0. Read-only.
+    * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -189,7 +189,7 @@ object ShapeData {
     placement: officeDashJsDashPreviewLib.ExcelNs.Placement | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TwoCell | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.OneCell | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Absolute = null,
     rotation: scala.Int | scala.Double = null,
     top: scala.Int | scala.Double = null,
-    `type`: officeDashJsDashPreviewLib.ExcelNs.ShapeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Image | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GeometricShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Group | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Line = null,
+    `type`: officeDashJsDashPreviewLib.ExcelNs.ShapeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unsupported | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Image | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GeometricShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Group | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Line = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: scala.Int | scala.Double = null,
     zorderPosition: scala.Int | scala.Double = null

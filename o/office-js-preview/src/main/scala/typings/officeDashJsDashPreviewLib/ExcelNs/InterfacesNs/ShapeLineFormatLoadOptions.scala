@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents the line formatting for the shape object. For picture and geometric shape, line formatting represents the border of shape object.
+  * Represents the line formatting for the shape object. For images and geometric shapes, line formatting represents the border of the shape.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -25,7 +25,7 @@ trait ShapeLineFormatLoadOptions extends js.Object {
   var color: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the line style of the shape. Returns null when line is not visible or has mixed line dash style property (e.g. group type of shape). See Excel.ShapeLineStyle for details.
+    * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent dash styles. See Excel.ShapeLineStyle for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -33,7 +33,7 @@ trait ShapeLineFormatLoadOptions extends js.Object {
   var dashStyle: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the line style of the shape object. Returns null when line is not visible or has mixed line visible property (e.g. group type of shape). See Excel.ShapeLineStyle for details.
+    * Represents the line style of the shape. Returns null when the line is not visible or there are inconsistent styles. See Excel.ShapeLineStyle for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -41,7 +41,7 @@ trait ShapeLineFormatLoadOptions extends js.Object {
   var style: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has mixed line transparency property (e.g. group type of shape).
+    * Represents the degree of transparency of the specified line as a value from 0.0 (opaque) through 1.0 (clear). Returns null when the shape has inconsistent transparencies.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -49,7 +49,7 @@ trait ShapeLineFormatLoadOptions extends js.Object {
   var transparency: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents whether the line formatting of a shape element is visible. Returns null when the shape has mixed line visible property (e.g. group type of shape).
+    * Represents whether or not the line formatting of a shape element is visible. Returns null when the shape has inconsistent visibilities.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -57,7 +57,7 @@ trait ShapeLineFormatLoadOptions extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents weight of the line, in points. Returns null when the line is not visible or has mixed line weight property (e.g. group type of shape).
+    * Represents the weight of the line, in points. Returns null when the line is not visible or there are inconsistent line weights.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

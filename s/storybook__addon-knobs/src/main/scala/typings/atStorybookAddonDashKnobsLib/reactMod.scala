@@ -58,15 +58,14 @@ object reactMod extends js.Object {
     value: T,
     groupId: java.lang.String
   ): java.lang.String = js.native
-  def select(name: java.lang.String, options: js.Array[java.lang.String], value: java.lang.String): java.lang.String = js.native
-  def select(
-    name: java.lang.String,
-    options: js.Array[java.lang.String],
-    value: java.lang.String,
-    groupId: java.lang.String
-  ): java.lang.String = js.native
-  def select[T /* <: java.lang.String */](name: java.lang.String, options: js.Array[T], value: T): T = js.native
-  def select[T /* <: java.lang.String */](name: java.lang.String, options: js.Array[T], value: T, groupId: java.lang.String): T = js.native
+  def select[T /* <: stdLib.Exclude[
+    js.UndefOr[java.lang.String | js.Array[java.lang.String] | scala.Double], 
+    js.UndefOr[scala.Nothing]
+  ] */](name: java.lang.String, options: js.Array[T], value: T): T = js.native
+  def select[T /* <: stdLib.Exclude[
+    js.UndefOr[java.lang.String | js.Array[java.lang.String] | scala.Double], 
+    js.UndefOr[scala.Nothing]
+  ] */](name: java.lang.String, options: js.Array[T], value: T, groupId: java.lang.String): T = js.native
   def select[T](name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[T], value: T): T = js.native
   def select[T](
     name: java.lang.String,

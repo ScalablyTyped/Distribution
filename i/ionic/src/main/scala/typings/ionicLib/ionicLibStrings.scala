@@ -121,6 +121,10 @@ object ionicLibStrings {
   sealed trait development extends js.Object
   
   @js.native
+  sealed trait enterprise
+    extends ionicLib.definitionsMod.IntegrationName
+  
+  @js.native
   sealed trait environment
     extends ionicLib.definitionsMod.InfoItemGroup
   
@@ -288,6 +292,8 @@ object ionicLibStrings {
   def custom: custom = "custom".asInstanceOf[custom]
   @scala.inline
   def development: development = "development".asInstanceOf[development]
+  @scala.inline
+  def enterprise: enterprise = "enterprise".asInstanceOf[enterprise]
   @scala.inline
   def environment: environment = "environment".asInstanceOf[environment]
   @scala.inline

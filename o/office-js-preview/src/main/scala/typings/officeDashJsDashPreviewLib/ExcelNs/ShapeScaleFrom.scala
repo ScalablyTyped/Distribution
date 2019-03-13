@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeScaleFrom extends js.Object
 
 /**
+  *
+  * Specifies which part of the shape retains its position when the shape is scaled.
+  *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */

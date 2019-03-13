@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prosemirror-test-builder"
-version := "1.0-dt-20190203Z-41410f"
+version := "1.0-dt-20190312Z-8ab54d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

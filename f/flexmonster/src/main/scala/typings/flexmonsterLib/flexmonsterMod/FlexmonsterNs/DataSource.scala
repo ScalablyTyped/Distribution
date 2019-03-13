@@ -18,14 +18,18 @@ trait DataSource extends js.Object {
   var fieldSeparator: js.UndefOr[java.lang.String] = js.undefined
   var filename: js.UndefOr[java.lang.String] = js.undefined
   var hash: js.UndefOr[java.lang.String] = js.undefined
+  // elasticsearch
+  var host: js.UndefOr[java.lang.String | js.Array[java.lang.String] | js.Object] = js.undefined
   var ignoreQuotedLineBreaks: js.UndefOr[scala.Boolean] = js.undefined
+  var index: js.UndefOr[java.lang.String] = js.undefined
   var localeIdentifier: js.UndefOr[java.lang.String] = js.undefined
+  var mapping: js.UndefOr[js.Object] = js.undefined
   var password: js.UndefOr[java.lang.String] = js.undefined
   var proxyUrl: js.UndefOr[java.lang.String] = js.undefined
   var recordsetDelimiter: js.UndefOr[java.lang.String] = js.undefined
   var requestHeader: js.UndefOr[js.Object] = js.undefined
   var roles: js.UndefOr[java.lang.String] = js.undefined
-  var subquery: js.UndefOr[java.lang.String] = js.undefined
+  var subquery: js.UndefOr[java.lang.String | js.Object] = js.undefined
   var thousandSeparator: js.UndefOr[java.lang.String] = js.undefined
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -45,14 +49,17 @@ object DataSource {
     fieldSeparator: java.lang.String = null,
     filename: java.lang.String = null,
     hash: java.lang.String = null,
+    host: java.lang.String | js.Array[java.lang.String] | js.Object = null,
     ignoreQuotedLineBreaks: js.UndefOr[scala.Boolean] = js.undefined,
+    index: java.lang.String = null,
     localeIdentifier: java.lang.String = null,
+    mapping: js.Object = null,
     password: java.lang.String = null,
     proxyUrl: java.lang.String = null,
     recordsetDelimiter: java.lang.String = null,
     requestHeader: js.Object = null,
     roles: java.lang.String = null,
-    subquery: java.lang.String = null,
+    subquery: java.lang.String | js.Object = null,
     thousandSeparator: java.lang.String = null,
     username: java.lang.String = null
   ): DataSource = {
@@ -69,14 +76,17 @@ object DataSource {
     if (fieldSeparator != null) __obj.updateDynamic("fieldSeparator")(fieldSeparator)
     if (filename != null) __obj.updateDynamic("filename")(filename)
     if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreQuotedLineBreaks)) __obj.updateDynamic("ignoreQuotedLineBreaks")(ignoreQuotedLineBreaks)
+    if (index != null) __obj.updateDynamic("index")(index)
     if (localeIdentifier != null) __obj.updateDynamic("localeIdentifier")(localeIdentifier)
+    if (mapping != null) __obj.updateDynamic("mapping")(mapping)
     if (password != null) __obj.updateDynamic("password")(password)
     if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl)
     if (recordsetDelimiter != null) __obj.updateDynamic("recordsetDelimiter")(recordsetDelimiter)
     if (requestHeader != null) __obj.updateDynamic("requestHeader")(requestHeader)
     if (roles != null) __obj.updateDynamic("roles")(roles)
-    if (subquery != null) __obj.updateDynamic("subquery")(subquery)
+    if (subquery != null) __obj.updateDynamic("subquery")(subquery.asInstanceOf[js.Any])
     if (thousandSeparator != null) __obj.updateDynamic("thousandSeparator")(thousandSeparator)
     if (username != null) __obj.updateDynamic("username")(username)
     __obj.asInstanceOf[DataSource]

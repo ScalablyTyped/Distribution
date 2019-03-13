@@ -19,6 +19,12 @@ trait ReCAPTCHAProps extends js.Object {
   	 */
   var onChange: js.UndefOr[js.Function1[/* token */ java.lang.String | scala.Null, scala.Unit]] = js.undefined
   /**
+  	 *  Optional callback, called when reCAPTCHA encounters an error (usually network connectivity)
+  	 *  and cannot continue until connectivity is restored. If you specify a function here, you are
+  	 *  responsible for informing the user that they should retry.
+  	 */
+  var onErrored: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /**
   	 *  Optional callback, called when a challenge expires and has to be redone by the user.
   	 */
   var onExpired: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -58,6 +64,7 @@ object ReCAPTCHAProps {
     sitekey: java.lang.String,
     badge: reactDashGoogleDashRecaptchaLib.Badge = null,
     onChange: /* token */ java.lang.String | scala.Null => scala.Unit = null,
+    onErrored: () => scala.Unit = null,
     onExpired: () => scala.Unit = null,
     size: reactDashGoogleDashRecaptchaLib.Size = null,
     stoken: java.lang.String = null,
@@ -68,6 +75,7 @@ object ReCAPTCHAProps {
     val __obj = js.Dynamic.literal(sitekey = sitekey)
     if (badge != null) __obj.updateDynamic("badge")(badge)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onErrored != null) __obj.updateDynamic("onErrored")(js.Any.fromFunction0(onErrored))
     if (onExpired != null) __obj.updateDynamic("onExpired")(js.Any.fromFunction0(onExpired))
     if (size != null) __obj.updateDynamic("size")(size)
     if (stoken != null) __obj.updateDynamic("stoken")(stoken)

@@ -86,9 +86,9 @@ class ContentControl ()
     * Occurs when data within the content control are changed. To get the new text, load this content control in the handler. To get the old text, do not load it.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
     *
     * @eventproperty
+    * @beta
     */
   val onDataChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[ContentControlEventArgs] = js.native
   /**
@@ -96,9 +96,9 @@ class ContentControl ()
     * Occurs when the content control is deleted. Do not load this content control in the handler, otherwise you won't be able to get its original properties.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
     *
     * @eventproperty
+    * @beta
     */
   val onDeleted: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[ContentControlEventArgs] = js.native
   /**
@@ -106,9 +106,9 @@ class ContentControl ()
     * Occurs when selection within the content control is changed.
     *
     * [Api set: WordApi BETA (PREVIEW ONLY)]
-    * @beta
     *
     * @eventproperty
+    * @beta
     */
   val onSelectionChanged: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[ContentControlEventArgs] = js.native
   /**
@@ -169,7 +169,7 @@ class ContentControl ()
   val parentTableOrNullObject: Table = js.native
   /**
     *
-    * Gets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+    * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
     *
     * [Api set: WordApi 1.1]
     */
@@ -501,7 +501,7 @@ class ContentControl ()
   ): Range = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
+    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
     *
     * [Api set: WordApi 1.1]
     *
@@ -516,7 +516,7 @@ class ContentControl ()
   ): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
+    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
     *
     * [Api set: WordApi 1.1]
     *
@@ -771,6 +771,10 @@ class ContentControl ()
     trimDelimiters: scala.Boolean,
     trimSpacing: scala.Boolean
   ): RangeCollection = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Word.ContentControl object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ContentControlData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsDashPreviewLib.WordNs.InterfacesNs.ContentControlData = js.native
   /**
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.

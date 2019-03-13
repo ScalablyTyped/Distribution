@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__projectify"
-version := "0.3.2-2241a3"
+version := "0.3.3-2241a3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

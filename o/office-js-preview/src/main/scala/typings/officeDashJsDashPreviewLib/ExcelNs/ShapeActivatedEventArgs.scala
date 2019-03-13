@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
 trait ShapeActivatedEventArgs extends js.Object {
   /**
     *
-    * Gets the id of the shape that is activated.
+    * Gets the id of the activated shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

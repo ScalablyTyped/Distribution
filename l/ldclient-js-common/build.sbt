@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ldclient-js-common"
-version := "2.9.4-4a43db"
+version := "2.9.5-2f46da"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

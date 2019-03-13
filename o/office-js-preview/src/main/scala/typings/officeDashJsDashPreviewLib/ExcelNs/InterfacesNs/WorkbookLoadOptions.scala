@@ -23,7 +23,7 @@ trait WorkbookLoadOptions extends js.Object {
   var application: js.UndefOr[ApplicationLoadOptions] = js.undefined
   /**
     *
-    * True if the workbook is in auto save mode.
+    * Specifies whether or not the workbook is in autosave mode. Read-Only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -55,8 +55,8 @@ trait WorkbookLoadOptions extends js.Object {
   var chartDataPointTrack: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * True if no changes have been made to the specified workbook since it was last saved.
-    You can set this property to True if you want to close a modified workbook without either saving it or being prompted to save it.
+    * Specifies whether or not changes have been made since the workbook was last saved.
+    You can set this property to true if you want to close a modified workbook without either saving it or being prompted to save it.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -71,7 +71,7 @@ trait WorkbookLoadOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * True if the workbook has ever been saved locally or online.
+    * Specifies whether or not the workbook has ever been saved locally or online. Read-Only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

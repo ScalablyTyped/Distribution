@@ -22,7 +22,7 @@ trait ITemplateScope extends js.Object {
   //The index of the field the form is on (in ng-repeat)
   var index: scala.Double
   //the model of the form (or the model specified by the field if it was specified).
-  var model: js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var model: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var options: ITemplateScopeOptions
   //Shortcut to options.validation.errorExistsAndShouldBeVisible
   var showError: scala.Boolean
@@ -42,10 +42,10 @@ object ITemplateScope {
     options: ITemplateScopeOptions,
     showError: scala.Boolean,
     to: ITemplateOptions,
-    model: java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any] = null
+    model: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ITemplateScope = {
     val __obj = js.Dynamic.literal(fc = fc.asInstanceOf[js.Any], fields = fields, form = form, formState = formState, id = id, index = index, options = options, showError = showError, to = to)
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
     __obj.asInstanceOf[ITemplateScope]
   }
 }

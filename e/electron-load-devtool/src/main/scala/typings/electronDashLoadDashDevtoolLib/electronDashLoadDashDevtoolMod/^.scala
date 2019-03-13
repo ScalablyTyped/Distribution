@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("electron-load-devtool", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  val default: ElectronLoadDevtool = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[ElectronLoadDevtool]
 

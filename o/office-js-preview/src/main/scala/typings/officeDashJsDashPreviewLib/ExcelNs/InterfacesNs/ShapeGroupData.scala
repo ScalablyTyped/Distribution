@@ -17,7 +17,7 @@ trait ShapeGroupData extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Returns the shape collection in the group. Read-only.
+    * Returns the collection of Shape objects. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

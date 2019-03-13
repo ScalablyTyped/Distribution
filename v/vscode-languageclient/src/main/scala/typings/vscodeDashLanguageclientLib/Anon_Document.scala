@@ -6,16 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Document extends js.Object {
-  var document: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextDocument */ js.Any
-  var range: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VRange */ js.Any
+  var document: vscodeLib.vscodeMod.TextDocument
+  var range: vscodeLib.vscodeMod.Range
 }
 
 object Anon_Document {
   @scala.inline
-  def apply(
-    document: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextDocument */ js.Any,
-    range: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VRange */ js.Any
-  ): Anon_Document = {
+  def apply(document: vscodeLib.vscodeMod.TextDocument, range: vscodeLib.vscodeMod.Range): Anon_Document = {
     val __obj = js.Dynamic.literal(document = document, range = range)
   
     __obj.asInstanceOf[Anon_Document]

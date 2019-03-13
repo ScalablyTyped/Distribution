@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "qiniu"
-version := "7.2.1-9c8b4f"
+version := "7.2.1-04fec6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "encodeurl" % "1.0-dt-20181224Z-543683",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-fcf6a3",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190312Z-f6d9fe",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "urllib" % "2.28-dt-20190212Z-1fef7d")
+  "org.scalablytyped" %%% "urllib" % "2.28-dt-20190212Z-a0ac2f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

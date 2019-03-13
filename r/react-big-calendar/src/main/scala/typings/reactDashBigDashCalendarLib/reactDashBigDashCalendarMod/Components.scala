@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Components extends js.Object {
+trait Components[TEvent /* <: Event */] extends js.Object {
   var agenda: js.UndefOr[reactDashBigDashCalendarLib.Anon_Date] = js.undefined
   var dateCellWrapper: js.UndefOr[
     reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element
@@ -14,11 +14,11 @@ trait Components extends js.Object {
   var dayWrapper: js.UndefOr[
     reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element
   ] = js.undefined
-  var event: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[EventProps[Event]]] = js.undefined
+  var event: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[EventProps[TEvent]]] = js.undefined
   var eventContainerWrapper: js.UndefOr[
     reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element
   ] = js.undefined
-  var eventWrapper: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[EventWrapperProps[Event]]] = js.undefined
+  var eventWrapper: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[EventWrapperProps[TEvent]]] = js.undefined
   /**
     * component used as a header for each column in the TimeGridHeader
     */
@@ -39,14 +39,14 @@ trait Components extends js.Object {
 
 object Components {
   @scala.inline
-  def apply(
+  def apply[TEvent /* <: Event */](
     agenda: reactDashBigDashCalendarLib.Anon_Date = null,
     dateCellWrapper: reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element = null,
     day: reactDashBigDashCalendarLib.Anon_Event = null,
     dayWrapper: reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element = null,
-    event: reactLib.reactMod.ReactNs.ComponentType[EventProps[Event]] = null,
+    event: reactLib.reactMod.ReactNs.ComponentType[EventProps[TEvent]] = null,
     eventContainerWrapper: reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element = null,
-    eventWrapper: reactLib.reactMod.ReactNs.ComponentType[EventWrapperProps[Event]] = null,
+    eventWrapper: reactLib.reactMod.ReactNs.ComponentType[EventWrapperProps[TEvent]] = null,
     header: reactLib.reactMod.ReactNs.ComponentType[HeaderProps] = null,
     month: reactDashBigDashCalendarLib.Anon_DateHeader = null,
     timeGutterHeader: reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element = null,
@@ -54,7 +54,7 @@ object Components {
     timeSlotWrapper: reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element = null,
     toolbar: reactLib.reactMod.ReactNs.ComponentType[ToolbarProps] = null,
     week: reactDashBigDashCalendarLib.Anon_Event = null
-  ): Components = {
+  ): Components[TEvent] = {
     val __obj = js.Dynamic.literal()
     if (agenda != null) __obj.updateDynamic("agenda")(agenda)
     if (dateCellWrapper != null) __obj.updateDynamic("dateCellWrapper")(dateCellWrapper.asInstanceOf[js.Any])
@@ -70,7 +70,7 @@ object Components {
     if (timeSlotWrapper != null) __obj.updateDynamic("timeSlotWrapper")(timeSlotWrapper.asInstanceOf[js.Any])
     if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     if (week != null) __obj.updateDynamic("week")(week)
-    __obj.asInstanceOf[Components]
+    __obj.asInstanceOf[Components[TEvent]]
   }
 }
 

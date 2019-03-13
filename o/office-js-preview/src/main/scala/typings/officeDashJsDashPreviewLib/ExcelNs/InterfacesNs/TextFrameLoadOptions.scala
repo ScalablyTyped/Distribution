@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Represents the text frame for a shape object.
+  * Represents the text frame of a shape object.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
@@ -17,12 +17,12 @@ trait TextFrameLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Gets or sets the auto sizing settings for the text frame. A text frame can be set to auto size the text to fit the text frame, or auto size the text frame to fit the text, or without auto sizing.
+    * Gets or sets the automatic sizing settings for the text frame. A text frame can be set to automatically fit the text to the text frame, to automatically fit the text frame to the text, or not perform any automatic sizing.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var autoSize: js.UndefOr[scala.Boolean] = js.undefined
+  var autoSizeSetting: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the bottom margin, in points, of the text frame.
@@ -33,7 +33,7 @@ trait TextFrameLoadOptions extends js.Object {
   var bottomMargin: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Specifies whether the TextFrame contains text.
+    * Specifies whether the text frame contains text.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -41,7 +41,7 @@ trait TextFrameLoadOptions extends js.Object {
   var hasText: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the horizontal alignment of the text frame.
+    * Represents the horizontal alignment of the text frame. See Excel.ShapeTextHorizontalAlignment for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -49,7 +49,7 @@ trait TextFrameLoadOptions extends js.Object {
   var horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the horizontal overflow type of the text frame.
+    * Represents the horizontal overflow behavior of the text frame. See Excel.ShapeTextHorizontalOverflow for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -65,7 +65,7 @@ trait TextFrameLoadOptions extends js.Object {
   var leftMargin: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the text orientation of the text frame.
+    * Represents the text orientation of the text frame. See Excel.ShapeTextOrientation for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -73,7 +73,7 @@ trait TextFrameLoadOptions extends js.Object {
   var orientation: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the reading order of the text frame, RTL or LTR.
+    * Represents the reading order of the text frame, either left-to-right or right-to-left. See Excel.ShapeTextReadingOrder for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -89,7 +89,7 @@ trait TextFrameLoadOptions extends js.Object {
   var rightMargin: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the text range in the text frame.
+    * Represents the text that is attached to a shape in the text frame, and properties and methods for manipulating the text. See Excel.TextRange for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -105,7 +105,7 @@ trait TextFrameLoadOptions extends js.Object {
   var topMargin: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the vertical alignment of the text frame.
+    * Represents the vertical alignment of the text frame. See Excel.ShapeTextVerticalAlignment for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -113,7 +113,7 @@ trait TextFrameLoadOptions extends js.Object {
   var verticalAlignment: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the vertical overflow type of the text frame.
+    * Represents the vertical overflow behavior of the text frame. See Excel.ShapeTextVerticalOverflow for details.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -125,7 +125,7 @@ object TextFrameLoadOptions {
   @scala.inline
   def apply(
     $all: js.UndefOr[scala.Boolean] = js.undefined,
-    autoSize: js.UndefOr[scala.Boolean] = js.undefined,
+    autoSizeSetting: js.UndefOr[scala.Boolean] = js.undefined,
     bottomMargin: js.UndefOr[scala.Boolean] = js.undefined,
     hasText: js.UndefOr[scala.Boolean] = js.undefined,
     horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
@@ -141,7 +141,7 @@ object TextFrameLoadOptions {
   ): TextFrameLoadOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
-    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize)
+    if (!js.isUndefined(autoSizeSetting)) __obj.updateDynamic("autoSizeSetting")(autoSizeSetting)
     if (!js.isUndefined(bottomMargin)) __obj.updateDynamic("bottomMargin")(bottomMargin)
     if (!js.isUndefined(hasText)) __obj.updateDynamic("hasText")(hasText)
     if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)

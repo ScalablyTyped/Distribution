@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
+  *
+  * Contains the text that is attached to a shape, in addition to properties and methods for manipulating the text.
+  *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
   */
@@ -34,16 +37,16 @@ class TextRange ()
   var text: java.lang.String = js.native
   /**
     *
-    * Returns a TextRange object for characters in the given range.
+    * Returns a TextRange object for the substring in the given range.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param start Position of the first character in the returned range.
-    * @param length Optional. The number of characters to be returned. If omitted, it represents the number of characters from "start" to the end of the last paragraph in TextRange.
+    * @param start The zero-based index of the first character to get from the text range.
+    * @param length Optional. The number of characters to be returned in the new text range. If length is omitted, all the characters from start to the end of the text range's last paragraph will be returned.
     */
-  def getCharacters(start: scala.Double): TextRange = js.native
-  def getCharacters(start: scala.Double, length: scala.Double): TextRange = js.native
+  def getSubstring(start: scala.Double): TextRange = js.native
+  def getSubstring(start: scala.Double, length: scala.Double): TextRange = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *

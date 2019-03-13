@@ -26,7 +26,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var Actions: __listOf__string
     /**
-      * An AWS account ID, or * to make the application public.
+      * An array of AWS account IDs, or * to make the application public.
       */
     var Principals: __listOf__string
     /**
@@ -53,8 +53,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var Description: __string
     /**
-      * A URL with more information about the application, for example
-      the location of your GitHub repository for the application.
+      * A URL with more information about the application, for example the location of your GitHub repository for the application.
       */
     var HomePageUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -88,8 +87,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var Description: __string
     /**
-      * A URL with more information about the application, for example
-      the location of your GitHub repository for the application.
+      * A URL with more information about the application, for example the location of your GitHub repository for the application.
       */
     var HomePageUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -125,7 +123,11 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var SemanticVersion: js.UndefOr[__string] = js.undefined
     /**
-      * A link to a public repository for the source code of your application.
+      * A link to the S3 object that contains the ZIP archive of the source code for this version of your application.Maximum size 50 MB
+      */
+    var SourceCodeArchiveUrl: js.UndefOr[__string] = js.undefined
+    /**
+      * A link to a public repository for the source code of your application, for example the URL of a specific GitHub commit.
       */
     var SourceCodeUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -161,8 +163,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var Description: js.UndefOr[__string] = js.undefined
     /**
-      * A URL with more information about the application, for example
-      the location of your GitHub repository for the application.
+      * A URL with more information about the application, for example the location of your GitHub repository for the application.
       */
     var HomePageUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -201,7 +202,11 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var SemanticVersion: __string
     /**
-      * A link to a public repository for the source code of your application.
+      * A link to the S3 object that contains the ZIP archive of the source code for this version of your application.Maximum size 50 MB
+      */
+    var SourceCodeArchiveUrl: js.UndefOr[__string] = js.undefined
+    /**
+      * A link to a public repository for the source code of your application, for example the URL of a specific GitHub commit.
       */
     var SourceCodeUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -233,7 +238,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       account, for example, by creating new AWS Identity and Access Management (IAM) users.
       For those applications, you must explicitly acknowledge their capabilities by
       specifying this parameter.The only valid values are CAPABILITY_IAM, CAPABILITY_NAMED_IAM,
-      and CAPABILITY_RESOURCE_POLICY.The following resources require you to specify CAPABILITY_IAM or
+      CAPABILITY_RESOURCE_POLICY, and CAPABILITY_AUTO_EXPAND.The following resources require you to specify CAPABILITY_IAM or
       CAPABILITY_NAMED_IAM:
       AWS::IAM::Group,
       AWS::IAM::InstanceProfile,
@@ -247,10 +252,10 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       AWS::ApplicationAutoScaling::ScalingPolicy,
       AWS::S3::BucketPolicy,
       AWS::SQS::QueuePolicy, and
-      AWS::SNS::TopicPolicy.If your application template contains any of the above resources, we recommend that you review
+      AWS::SNS::TopicPolicy.Applications that contain one or more nested applications require you to specify
+      CAPABILITY_AUTO_EXPAND.If your application template contains any of the above resources, we recommend that you review
       all permissions associated with the application before deploying. If you don't specify
-      this parameter for an application that requires capabilities, the call will fail.Valid values: CAPABILITY_IAM | CAPABILITY_NAMED_IAM | CAPABILITY_RESOURCE_POLICY
-      
+      this parameter for an application that requires capabilities, the call will fail.
       */
     var RequiredCapabilities: js.UndefOr[__listOfCapability] = js.undefined
     /**
@@ -265,7 +270,11 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var SemanticVersion: js.UndefOr[__string] = js.undefined
     /**
-      * A link to a public repository for the source code of your application.
+      * A link to the S3 object that contains the ZIP archive of the source code for this version of your application.Maximum size 50 MB
+      */
+    var SourceCodeArchiveUrl: js.UndefOr[__string] = js.undefined
+    /**
+      * A link to a public repository for the source code of your application, for example the URL of a specific GitHub commit.
       */
     var SourceCodeUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -285,7 +294,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       account, for example, by creating new AWS Identity and Access Management (IAM) users.
       For those applications, you must explicitly acknowledge their capabilities by
       specifying this parameter.The only valid values are CAPABILITY_IAM, CAPABILITY_NAMED_IAM,
-      and CAPABILITY_RESOURCE_POLICY.The following resources require you to specify CAPABILITY_IAM or
+      CAPABILITY_RESOURCE_POLICY, and CAPABILITY_AUTO_EXPAND.The following resources require you to specify CAPABILITY_IAM or
       CAPABILITY_NAMED_IAM:
       AWS::IAM::Group,
       AWS::IAM::InstanceProfile,
@@ -299,26 +308,30 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       AWS::ApplicationAutoScaling::ScalingPolicy,
       AWS::S3::BucketPolicy,
       AWS::SQS::QueuePolicy, and
-      AWS::SNS:TopicPolicy.If your application template contains any of the above resources, we recommend that you review
+      AWS::SNS:TopicPolicy.Applications that contain one or more nested applications require you to specify
+      CAPABILITY_AUTO_EXPAND.If your application template contains any of the above resources, we recommend that you review
       all permissions associated with the application before deploying. If you don't specify
-      this parameter for an application that requires capabilities, the call will fail.Valid values: CAPABILITY_IAM | CAPABILITY_NAMED_IAM | CAPABILITY_RESOURCE_POLICY
-      
+      this parameter for an application that requires capabilities, the call will fail.
       */
     var Capabilities: js.UndefOr[__listOf__string] = js.undefined
     /**
-      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
+      API.
       */
     var ChangeSetName: js.UndefOr[__string] = js.undefined
     /**
-      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
+      API.
       */
     var ClientToken: js.UndefOr[__string] = js.undefined
     /**
-      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
+      API.
       */
     var Description: js.UndefOr[__string] = js.undefined
     /**
-      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
+      API.
       */
     var NotificationArns: js.UndefOr[__listOf__string] = js.undefined
     /**
@@ -326,11 +339,13 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var ParameterOverrides: js.UndefOr[__listOfParameterValue] = js.undefined
     /**
-      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
+      API.
       */
     var ResourceTypes: js.UndefOr[__listOf__string] = js.undefined
     /**
-      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
+      API.
       */
     var RollbackConfiguration: js.UndefOr[RollbackConfiguration] = js.undefined
     /**
@@ -340,11 +355,13 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var SemanticVersion: js.UndefOr[__string] = js.undefined
     /**
-      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
+      API.
       */
     var StackName: __string
     /**
-      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet API.
+      * This property corresponds to the parameter of the same name for the AWS CloudFormation CreateChangeSet
+      API.
       */
     var Tags: js.UndefOr[__listOfTag] = js.undefined
     /**
@@ -409,6 +426,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
     var SemanticVersion: js.UndefOr[__string] = js.undefined
     /**
       * Status of the template creation workflow.Possible values: PREPARING | ACTIVE | EXPIRED
+      
       */
     var Status: js.UndefOr[Status] = js.undefined
     /**
@@ -472,8 +490,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var Description: js.UndefOr[__string] = js.undefined
     /**
-      * A URL with more information about the application, for example
-      the location of your GitHub repository for the application.
+      * A URL with more information about the application, for example the location of your GitHub repository for the application.
       */
     var HomePageUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -535,6 +552,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
     var SemanticVersion: js.UndefOr[__string] = js.undefined
     /**
       * Status of the template creation workflow.Possible values: PREPARING | ACTIVE | EXPIRED
+      
       */
     var Status: js.UndefOr[Status] = js.undefined
     /**
@@ -730,29 +748,34 @@ object ServerlessApplicationRepositoryNs extends js.Object {
   
   trait RollbackConfiguration extends js.Object {
     /**
-      * This property corresponds to the content of the same name for the AWS CloudFormation RollbackConfiguration Data Type.
+      * This property corresponds to the content of the same name for the AWS CloudFormation RollbackConfiguration
+      Data Type.
       */
     var MonitoringTimeInMinutes: js.UndefOr[__integer] = js.undefined
     /**
-      * This property corresponds to the content of the same name for the AWS CloudFormation RollbackConfiguration Data Type.
+      * This property corresponds to the content of the same name for the AWS CloudFormation RollbackConfiguration
+      Data Type.
       */
     var RollbackTriggers: js.UndefOr[__listOfRollbackTrigger] = js.undefined
   }
   
   trait RollbackTrigger extends js.Object {
     /**
-      * This property corresponds to the content of the same name for the AWS CloudFormation RollbackTrigger Data Type.
+      * This property corresponds to the content of the same name for the AWS CloudFormation RollbackTrigger
+      Data Type.
       */
     var Arn: __string
     /**
-      * This property corresponds to the content of the same name for the AWS CloudFormation RollbackTrigger Data Type.
+      * This property corresponds to the content of the same name for the AWS CloudFormation RollbackTrigger
+      Data Type.
       */
     var Type: __string
   }
   
   trait Tag extends js.Object {
     /**
-      * This property corresponds to the content of the same name for the AWS CloudFormation Tag Data Type.
+      * This property corresponds to the content of the same name for the AWS CloudFormation Tag
+      Data Type.
       */
     var Key: __string
     /**
@@ -1082,8 +1105,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var Description: js.UndefOr[__string] = js.undefined
     /**
-      * A URL with more information about the application, for example
-      the location of your GitHub repository for the application.
+      * A URL with more information about the application, for example the location of your GitHub repository for the application.
       */
     var HomePageUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -1118,8 +1140,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var Description: js.UndefOr[__string] = js.undefined
     /**
-      * A URL with more information about the application, for example
-      the location of your GitHub repository for the application.
+      * A URL with more information about the application, for example the location of your GitHub repository for the application.
       */
     var HomePageUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -1167,7 +1188,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       account, for example, by creating new AWS Identity and Access Management (IAM) users.
       For those applications, you must explicitly acknowledge their capabilities by
       specifying this parameter.The only valid values are CAPABILITY_IAM, CAPABILITY_NAMED_IAM,
-      and CAPABILITY_RESOURCE_POLICY.The following resources require you to specify CAPABILITY_IAM or
+      CAPABILITY_RESOURCE_POLICY, and CAPABILITY_AUTO_EXPAND.The following resources require you to specify CAPABILITY_IAM or
       CAPABILITY_NAMED_IAM:
       AWS::IAM::Group,
       AWS::IAM::InstanceProfile,
@@ -1181,10 +1202,10 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       AWS::ApplicationAutoScaling::ScalingPolicy,
       AWS::S3::BucketPolicy,
       AWS::SQS::QueuePolicy, and
-      AWS::SNS::TopicPolicy.If your application template contains any of the above resources, we recommend that you review
+      AWS::SNS::TopicPolicy.Applications that contain one or more nested applications require you to specify
+      CAPABILITY_AUTO_EXPAND.If your application template contains any of the above resources, we recommend that you review
       all permissions associated with the application before deploying. If you don't specify
-      this parameter for an application that requires capabilities, the call will fail.Valid values: CAPABILITY_IAM | CAPABILITY_NAMED_IAM | CAPABILITY_RESOURCE_POLICY
-      
+      this parameter for an application that requires capabilities, the call will fail.
       */
     var RequiredCapabilities: __listOfCapability
     /**
@@ -1199,7 +1220,11 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var SemanticVersion: __string
     /**
-      * A link to a public repository for the source code of your application.
+      * A link to the S3 object that contains the ZIP archive of the source code for this version of your application.Maximum size 50 MB
+      */
+    var SourceCodeArchiveUrl: js.UndefOr[__string] = js.undefined
+    /**
+      * A link to a public repository for the source code of your application, for example the URL of a specific GitHub commit.
       */
     var SourceCodeUrl: js.UndefOr[__string] = js.undefined
     /**
@@ -1224,7 +1249,7 @@ object ServerlessApplicationRepositoryNs extends js.Object {
       */
     var SemanticVersion: __string
     /**
-      * A link to a public repository for the source code of your application.
+      * A link to a public repository for the source code of your application, for example the URL of a specific GitHub commit.
       */
     var SourceCodeUrl: js.UndefOr[__string] = js.undefined
   }

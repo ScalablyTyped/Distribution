@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "samchon-framework"
-version := "2.1.4-2e0e6e"
+version := "2.1.4-ab0e84"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ecol" % "1.0.4-0ddbab",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190311Z-8b4969",
-  "org.scalablytyped" %%% "samchon" % "2.1.4-cbf4fc",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190312Z-f6d9fe",
+  "org.scalablytyped" %%% "samchon" % "2.1.4-e8594e",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
   "org.scalablytyped" %%% "sxml" % "1.0.3-456a28",
   "org.scalablytyped" %%% "tstl" % "2.1.2-b38a31",
   "org.scalablytyped" %%% "url-variables" % "1.0.2-0bab5d",
-  "org.scalablytyped" %%% "websocket" % "0.0-unknown-dt-20180823Z-55f284")
+  "org.scalablytyped" %%% "websocket" % "0.0-unknown-dt-20180823Z-17df65")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

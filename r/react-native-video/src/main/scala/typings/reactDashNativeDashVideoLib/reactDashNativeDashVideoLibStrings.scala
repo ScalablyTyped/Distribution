@@ -13,6 +13,12 @@ object reactDashNativeDashVideoLibStrings {
   sealed trait `application/x-subrip` extends js.Object
   
   @js.native
+  sealed trait contain extends js.Object
+  
+  @js.native
+  sealed trait cover extends js.Object
+  
+  @js.native
   sealed trait disabled extends js.Object
   
   @js.native
@@ -31,7 +37,13 @@ object reactDashNativeDashVideoLibStrings {
   sealed trait language extends js.Object
   
   @js.native
+  sealed trait none extends js.Object
+  
+  @js.native
   sealed trait obey extends js.Object
+  
+  @js.native
+  sealed trait stretch extends js.Object
   
   @js.native
   sealed trait system extends js.Object
@@ -47,6 +59,10 @@ object reactDashNativeDashVideoLibStrings {
   @scala.inline
   def `application/x-subrip`: `application/x-subrip` = "application/x-subrip".asInstanceOf[`application/x-subrip`]
   @scala.inline
+  def contain: contain = "contain".asInstanceOf[contain]
+  @scala.inline
+  def cover: cover = "cover".asInstanceOf[cover]
+  @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
@@ -59,7 +75,11 @@ object reactDashNativeDashVideoLibStrings {
   @scala.inline
   def language: language = "language".asInstanceOf[language]
   @scala.inline
+  def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def obey: obey = "obey".asInstanceOf[obey]
+  @scala.inline
+  def stretch: stretch = "stretch".asInstanceOf[stretch]
   @scala.inline
   def system: system = "system".asInstanceOf[system]
   @scala.inline

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   *
-  * Provides information about the workbook AutoSave setting changed event.
+  * Provides information about the workbook's onAutoSaveSettingChanged event.
   *
   * [Api set: ExcelApi BETA (PREVIEW ONLY)]
   * @beta
