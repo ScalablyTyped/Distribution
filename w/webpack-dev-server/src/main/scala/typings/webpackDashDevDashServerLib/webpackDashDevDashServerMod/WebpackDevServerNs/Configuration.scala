@@ -214,7 +214,7 @@ object Configuration {
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction2(setup))
     if (socket != null) __obj.updateDynamic("socket")(socket)
     if (staticOptions != null) __obj.updateDynamic("staticOptions")(staticOptions)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     if (!js.isUndefined(useLocalIp)) __obj.updateDynamic("useLocalIp")(useLocalIp)
     if (!js.isUndefined(watchContentBase)) __obj.updateDynamic("watchContentBase")(watchContentBase)
     if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions)

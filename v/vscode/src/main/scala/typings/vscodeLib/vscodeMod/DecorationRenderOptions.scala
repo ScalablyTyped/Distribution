@@ -45,14 +45,11 @@ object DecorationRenderOptions {
     color: java.lang.String | ThemeColor = null,
     cursor: java.lang.String = null,
     dark: ThemableDecorationRenderOptions = null,
-    fontStyle: java.lang.String = null,
-    fontWeight: java.lang.String = null,
     gutterIconPath: java.lang.String | Uri = null,
     gutterIconSize: java.lang.String = null,
     isWholeLine: js.UndefOr[scala.Boolean] = js.undefined,
     letterSpacing: java.lang.String = null,
     light: ThemableDecorationRenderOptions = null,
-    opacity: java.lang.String = null,
     outline: java.lang.String = null,
     outlineColor: java.lang.String | ThemeColor = null,
     outlineStyle: java.lang.String = null,
@@ -75,14 +72,11 @@ object DecorationRenderOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (dark != null) __obj.updateDynamic("dark")(dark)
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
     if (gutterIconPath != null) __obj.updateDynamic("gutterIconPath")(gutterIconPath.asInstanceOf[js.Any])
     if (gutterIconSize != null) __obj.updateDynamic("gutterIconSize")(gutterIconSize)
     if (!js.isUndefined(isWholeLine)) __obj.updateDynamic("isWholeLine")(isWholeLine)
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing)
     if (light != null) __obj.updateDynamic("light")(light)
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity)
     if (outline != null) __obj.updateDynamic("outline")(outline)
     if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
     if (outlineStyle != null) __obj.updateDynamic("outlineStyle")(outlineStyle)

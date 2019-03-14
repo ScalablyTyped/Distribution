@@ -11,7 +11,7 @@ class WebMercatorViewport () extends Viewport {
   def this(opts: WebMercatorViewportOptions) = this()
   var altitude: scala.Double = js.native
   var bearing: scala.Double = js.native
-  var center: Vector3 = js.native
+  var center: CoordinatesZ = js.native
   var latitude: scala.Double = js.native
   var longitude: scala.Double = js.native
   var pitch: scala.Double = js.native

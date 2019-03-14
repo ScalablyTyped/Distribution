@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "immutability-helper"
-version := "3.0.0-c83981"
+version := "3.0.0-fb73d2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

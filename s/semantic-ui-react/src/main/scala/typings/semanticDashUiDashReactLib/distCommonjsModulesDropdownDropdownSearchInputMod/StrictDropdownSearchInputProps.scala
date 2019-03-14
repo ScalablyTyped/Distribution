@@ -12,8 +12,6 @@ trait StrictDropdownSearchInputProps extends js.Object {
   var autoComplete: js.UndefOr[java.lang.String] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
-  /** A ref handler for input. */
-  var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[stdLib.HTMLInputElement]] = js.undefined
   /** An input can receive focus. */
   var tabIndex: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /** The HTML input type. */
@@ -28,7 +26,6 @@ object StrictDropdownSearchInputProps {
     as: js.Any = null,
     autoComplete: java.lang.String = null,
     className: java.lang.String = null,
-    inputRef: reactLib.reactMod.ReactNs.Ref[stdLib.HTMLInputElement] = null,
     tabIndex: scala.Double | java.lang.String = null,
     `type`: java.lang.String = null,
     value: scala.Double | java.lang.String = null
@@ -37,7 +34,6 @@ object StrictDropdownSearchInputProps {
     if (as != null) __obj.updateDynamic("as")(as)
     if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete)
     if (className != null) __obj.updateDynamic("className")(className)
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])

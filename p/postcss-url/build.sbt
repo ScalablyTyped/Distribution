@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postcss-url"
-version := "8.0-dt-20190222Z-a45057"
+version := "8.0-dt-20190222Z-c23387"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-f1b784",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-1f537b",
   "org.scalablytyped" %%% "js-base64" % "2.3-dt-20180214Z-4aa07b",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190312Z-f6d9fe",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190313Z-f6d9fe",
   "org.scalablytyped" %%% "postcss" % "5.2.18-231492",
   "org.scalablytyped" %%% "source-map" % "0.7.3-169991",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",

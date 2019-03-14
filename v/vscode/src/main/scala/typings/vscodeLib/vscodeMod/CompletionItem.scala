@@ -45,7 +45,7 @@ class CompletionItem protected () extends js.Object {
   /**
   		 * A human-readable string that represents a doc-comment.
   		 */
-  var documentation: js.UndefOr[java.lang.String | MarkdownString] = js.native
+  var documentation: js.UndefOr[java.lang.String] = js.native
   /**
   		 * A string that should be used when filtering a set of
   		 * completion items. When `falsy` the [label](#CompletionItem.label)
@@ -69,12 +69,6 @@ class CompletionItem protected () extends js.Object {
   		 * this completion.
   		 */
   var label: java.lang.String = js.native
-  /**
-  		 * Select this item when showing. *Note* that only one completion item can be selected and
-  		 * that the editor decides which item that is. The rule is that the *first* item of those
-  		 * that match best is selected.
-  		 */
-  var preselect: js.UndefOr[scala.Boolean] = js.native
   /**
   		 * A range of text that should be replaced by this completion item.
   		 *

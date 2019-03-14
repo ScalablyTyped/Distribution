@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-growl-ifightcrime"
-version := "1.1-dt-20180214Z-bbf596"
+version := "1.1-dt-20190313Z-0c0dc5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

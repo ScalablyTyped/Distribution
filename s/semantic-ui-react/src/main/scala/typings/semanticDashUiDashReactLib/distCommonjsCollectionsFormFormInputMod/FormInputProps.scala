@@ -34,7 +34,7 @@ object FormInputProps {
     loading: js.UndefOr[scala.Boolean] = js.undefined,
     onChange: (/* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLInputElement], /* data */ semanticDashUiDashReactLib.distCommonjsElementsInputInputMod.InputOnChangeData) => scala.Unit = null,
     required: js.Any = null,
-    size: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES = null,
+    size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.big | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.huge | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.massive = null,
     tabIndex: scala.Double | java.lang.String = null,
     transparent: js.UndefOr[scala.Boolean] = js.undefined,
     `type`: java.lang.String = null,
@@ -63,7 +63,7 @@ object FormInputProps {
     if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (required != null) __obj.updateDynamic("required")(required)
-    if (size != null) __obj.updateDynamic("size")(size)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
     if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

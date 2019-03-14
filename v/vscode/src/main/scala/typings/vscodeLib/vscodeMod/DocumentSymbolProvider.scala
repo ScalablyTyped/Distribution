@@ -14,13 +14,13 @@ trait DocumentSymbolProvider extends js.Object {
   		 * @return An array of document highlights or a thenable that resolves to such. The lack of a result can be
   		 * signaled by returning `undefined`, `null`, or an empty array.
   		 */
-  def provideDocumentSymbols(document: TextDocument, token: CancellationToken): ProviderResult[js.Array[SymbolInformation] | js.Array[DocumentSymbol]]
+  def provideDocumentSymbols(document: TextDocument, token: CancellationToken): ProviderResult[js.Array[SymbolInformation]]
 }
 
 object DocumentSymbolProvider {
   @scala.inline
   def apply(
-    provideDocumentSymbols: (TextDocument, CancellationToken) => ProviderResult[js.Array[SymbolInformation] | js.Array[DocumentSymbol]]
+    provideDocumentSymbols: (TextDocument, CancellationToken) => ProviderResult[js.Array[SymbolInformation]]
   ): DocumentSymbolProvider = {
     val __obj = js.Dynamic.literal(provideDocumentSymbols = js.Any.fromFunction2(provideDocumentSymbols))
   

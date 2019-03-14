@@ -37,7 +37,11 @@ trait _Middleware extends js.Object {
       /* context */ vscodeLib.vscodeMod.CodeActionContext, 
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideCodeActionsSignature, 
-      vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.Command | vscodeLib.vscodeMod.CodeAction]]
+      vscodeLib.vscodeMod.ProviderResult[
+        js.Array[
+          vscodeLib.vscodeMod.Command | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCodeAction */ _)
+        ]
+      ]
     ]
   ] = js.undefined
   var provideCodeLenses: js.UndefOr[
@@ -54,7 +58,7 @@ trait _Middleware extends js.Object {
       /* this */ scala.Unit, 
       /* document */ vscodeLib.vscodeMod.TextDocument, 
       /* position */ vscodeLib.vscodeMod.Position, 
-      /* context */ vscodeLib.vscodeMod.CompletionContext, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCompletionContext */ /* context */ js.Any, 
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideCompletionItemsSignature, 
       vscodeLib.vscodeMod.ProviderResult[
@@ -69,7 +73,11 @@ trait _Middleware extends js.Object {
       /* position */ vscodeLib.vscodeMod.Position, 
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideDefinitionSignature, 
-      vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]]
+      vscodeLib.vscodeMod.ProviderResult[
+        vscodeLib.vscodeMod.Definition | (js.Array[
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDefinitionLink */ _
+        ])
+      ]
     ]
   ] = js.undefined
   var provideDocumentFormattingEdits: js.UndefOr[
@@ -119,7 +127,9 @@ trait _Middleware extends js.Object {
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideDocumentSymbolsSignature, 
       vscodeLib.vscodeMod.ProviderResult[
-        js.Array[vscodeLib.vscodeMod.SymbolInformation] | js.Array[vscodeLib.vscodeMod.DocumentSymbol]
+        js.Array[vscodeLib.vscodeMod.SymbolInformation] | (js.Array[
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDocumentSymbol */ _
+        ])
       ]
     ]
   ] = js.undefined
@@ -252,7 +262,11 @@ object _Middleware {
       /* context */ vscodeLib.vscodeMod.CodeActionContext, 
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideCodeActionsSignature, 
-      vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.Command | vscodeLib.vscodeMod.CodeAction]]
+      vscodeLib.vscodeMod.ProviderResult[
+        js.Array[
+          vscodeLib.vscodeMod.Command | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCodeAction */ _)
+        ]
+      ]
     ] = null,
     provideCodeLenses: js.ThisFunction3[
       /* this */ scala.Unit, 
@@ -265,7 +279,7 @@ object _Middleware {
       /* this */ scala.Unit, 
       /* document */ vscodeLib.vscodeMod.TextDocument, 
       /* position */ vscodeLib.vscodeMod.Position, 
-      /* context */ vscodeLib.vscodeMod.CompletionContext, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCompletionContext */ /* context */ js.Any, 
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideCompletionItemsSignature, 
       vscodeLib.vscodeMod.ProviderResult[
@@ -278,7 +292,11 @@ object _Middleware {
       /* position */ vscodeLib.vscodeMod.Position, 
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideDefinitionSignature, 
-      vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]]
+      vscodeLib.vscodeMod.ProviderResult[
+        vscodeLib.vscodeMod.Definition | (js.Array[
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDefinitionLink */ _
+        ])
+      ]
     ] = null,
     provideDocumentFormattingEdits: js.ThisFunction4[
       /* this */ scala.Unit, 
@@ -318,7 +336,9 @@ object _Middleware {
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideDocumentSymbolsSignature, 
       vscodeLib.vscodeMod.ProviderResult[
-        js.Array[vscodeLib.vscodeMod.SymbolInformation] | js.Array[vscodeLib.vscodeMod.DocumentSymbol]
+        js.Array[vscodeLib.vscodeMod.SymbolInformation] | (js.Array[
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDocumentSymbol */ _
+        ])
       ]
     ] = null,
     provideHover: js.ThisFunction4[

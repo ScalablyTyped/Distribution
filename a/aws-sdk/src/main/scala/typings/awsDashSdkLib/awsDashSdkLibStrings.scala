@@ -8058,6 +8058,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAthenaMod.AthenaNs._QueryExecutionState
        with awsDashSdkLib.clientsMachinelearningMod.MachineLearningNs._RealtimeEndpointStatus
        with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._RecordStatus
+       with awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs._RemediationExecutionState
+       with awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs._RemediationExecutionStepState
        with awsDashSdkLib.clientsAcmMod.ACMNs._RenewalStatus
        with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RenewalStatus
        with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RenewalStatus
@@ -10628,6 +10630,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs._NodeAssociationStatus
        with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._OperationStatus
        with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._RecordStatus
+       with awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs._RemediationExecutionState
        with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._ShareStatus
        with awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs._Status
        with awsDashSdkLib.clientsCodebuildMod.CodeBuildNs._StatusType
@@ -14822,6 +14825,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDatasyncMod.DataSyncNs._PhaseStatus
        with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._ReachabilityStatus
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._RelationalDatabasePasswordVersion
+       with awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs._RemediationExecutionStepState
        with awsDashSdkLib.clientsSmsMod.SMSNs._ReplicationJobState
        with awsDashSdkLib.clientsSmsMod.SMSNs._ReplicationRunState
        with awsDashSdkLib.clientsS3Mod.S3Ns._ReplicationStatus
@@ -15829,6 +15833,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs._JobExecutionStatus
        with awsDashSdkLib.clientsGameliftMod.GameLiftNs._MatchmakingConfigurationStatus
        with awsDashSdkLib.clientsAthenaMod.AthenaNs._QueryExecutionState
+       with awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs._RemediationExecutionState
   
   @js.native
   sealed trait QUEUED_TIME
@@ -16381,6 +16386,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RESOURCES extends js.Object
+  
+  @js.native
+  sealed trait RESOURCE_ID extends js.Object
   
   @js.native
   sealed trait RESOURCE_INCORRECT_WEB_ACL
@@ -18096,6 +18104,9 @@ object awsDashSdkLibStrings {
   sealed trait SSM_AUTOMATION extends js.Object
   
   @js.native
+  sealed trait SSM_DOCUMENT extends js.Object
+  
+  @js.native
   sealed trait SSW
     extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._LanguageCode
   
@@ -18422,6 +18433,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsGlueMod.GlueNs._LastCrawlStatus
        with awsDashSdkLib.clientsAthenaMod.AthenaNs._QueryExecutionState
        with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._RecordStatus
+       with awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs._RemediationExecutionState
+       with awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs._RemediationExecutionStepState
        with awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs._ReprocessingStatus
        with awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._StackSetOperationResultStatus
        with awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._StackSetOperationStatus
@@ -34228,6 +34241,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def RESOURCES: RESOURCES = "RESOURCES".asInstanceOf[RESOURCES]
   @scala.inline
+  def RESOURCE_ID: RESOURCE_ID = "RESOURCE_ID".asInstanceOf[RESOURCE_ID]
+  @scala.inline
   def RESOURCE_INCORRECT_WEB_ACL: RESOURCE_INCORRECT_WEB_ACL = "RESOURCE_INCORRECT_WEB_ACL".asInstanceOf[RESOURCE_INCORRECT_WEB_ACL]
   @scala.inline
   def RESOURCE_MISSING_WEB_ACL: RESOURCE_MISSING_WEB_ACL = "RESOURCE_MISSING_WEB_ACL".asInstanceOf[RESOURCE_MISSING_WEB_ACL]
@@ -34973,6 +34988,8 @@ object awsDashSdkLibStrings {
   def SSML: SSML = "SSML".asInstanceOf[SSML]
   @scala.inline
   def SSM_AUTOMATION: SSM_AUTOMATION = "SSM_AUTOMATION".asInstanceOf[SSM_AUTOMATION]
+  @scala.inline
+  def SSM_DOCUMENT: SSM_DOCUMENT = "SSM_DOCUMENT".asInstanceOf[SSM_DOCUMENT]
   @scala.inline
   def SSW: SSW = "SSW".asInstanceOf[SSW]
   @scala.inline

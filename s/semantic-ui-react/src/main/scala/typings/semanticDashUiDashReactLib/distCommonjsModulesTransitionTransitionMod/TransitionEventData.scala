@@ -13,8 +13,9 @@ object TransitionEventData {
   @scala.inline
   def apply(
     status: TRANSITION_STATUSES,
-    animation: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTRANSITIONS = null,
+    animation: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTRANSITIONS | java.lang.String = null,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
+    directional: js.UndefOr[scala.Boolean] = js.undefined,
     duration: scala.Double | java.lang.String | TransitionPropDuration = null,
     mountOnShow: js.UndefOr[scala.Boolean] = js.undefined,
     onComplete: (/* nothing */ scala.Null, /* data */ TransitionEventData) => scala.Unit = null,
@@ -27,8 +28,9 @@ object TransitionEventData {
     visible: js.UndefOr[scala.Boolean] = js.undefined
   ): TransitionEventData = {
     val __obj = js.Dynamic.literal(status = status)
-    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(directional)) __obj.updateDynamic("directional")(directional)
     if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     if (!js.isUndefined(mountOnShow)) __obj.updateDynamic("mountOnShow")(mountOnShow)
     if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction2(onComplete))

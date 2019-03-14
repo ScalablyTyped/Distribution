@@ -35,7 +35,7 @@ object MjmlHeroProps {
     width: java.lang.String | scala.Double = null
   ): MjmlHeroProps = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (backgroundHeight != null) __obj.updateDynamic("backgroundHeight")(backgroundHeight)
     if (backgroundPosition != null) __obj.updateDynamic("backgroundPosition")(backgroundPosition.asInstanceOf[js.Any])
     if (backgroundUrl != null) __obj.updateDynamic("backgroundUrl")(backgroundUrl)

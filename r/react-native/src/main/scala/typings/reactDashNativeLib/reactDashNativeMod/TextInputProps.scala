@@ -75,6 +75,13 @@ trait TextInputProps
     */
   var keyboardType: js.UndefOr[KeyboardTypeOptions] = js.undefined
   /**
+    * Specifies largest possible scale a font can reach when allowFontScaling is enabled. Possible values:
+    * - null/undefined (default): inherit from the parent node or the global default (0)
+    * - 0: no max, ignore parent/global default
+    * - >= 1: sets the maxFontSizeMultiplier of this node to this value
+    */
+  var maxFontSizeMultiplier: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  /**
     * Limits the maximum number of characters that can be entered.
     * Use this instead of implementing the logic in JS to avoid flicker.
     */
@@ -230,6 +237,7 @@ object TextInputProps {
     inputAccessoryViewID: java.lang.String = null,
     keyboardAppearance: reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.light | reactDashNativeLib.reactDashNativeLibStrings.dark = null,
     keyboardType: KeyboardTypeOptions = null,
+    maxFontSizeMultiplier: scala.Int | scala.Double = null,
     maxLength: scala.Int | scala.Double = null,
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
     nativeID: java.lang.String = null,
@@ -323,6 +331,7 @@ object TextInputProps {
     if (inputAccessoryViewID != null) __obj.updateDynamic("inputAccessoryViewID")(inputAccessoryViewID)
     if (keyboardAppearance != null) __obj.updateDynamic("keyboardAppearance")(keyboardAppearance.asInstanceOf[js.Any])
     if (keyboardType != null) __obj.updateDynamic("keyboardType")(keyboardType.asInstanceOf[js.Any])
+    if (maxFontSizeMultiplier != null) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)

@@ -47,6 +47,7 @@ object IconProps {
     ellipsizeMode: reactDashNativeLib.reactDashNativeLibStrings.head | reactDashNativeLib.reactDashNativeLibStrings.middle | reactDashNativeLib.reactDashNativeLibStrings.tail | reactDashNativeLib.reactDashNativeLibStrings.clip = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
     lineBreakMode: reactDashNativeLib.reactDashNativeLibStrings.head | reactDashNativeLib.reactDashNativeLibStrings.middle | reactDashNativeLib.reactDashNativeLibStrings.tail | reactDashNativeLib.reactDashNativeLibStrings.clip = null,
+    maxFontSizeMultiplier: scala.Int | scala.Double = null,
     minimumFontScale: scala.Int | scala.Double = null,
     nativeID: java.lang.String = null,
     numberOfLines: scala.Int | scala.Double = null,
@@ -80,6 +81,7 @@ object IconProps {
     if (ellipsizeMode != null) __obj.updateDynamic("ellipsizeMode")(ellipsizeMode.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (lineBreakMode != null) __obj.updateDynamic("lineBreakMode")(lineBreakMode.asInstanceOf[js.Any])
+    if (maxFontSizeMultiplier != null) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.asInstanceOf[js.Any])
     if (minimumFontScale != null) __obj.updateDynamic("minimumFontScale")(minimumFontScale.asInstanceOf[js.Any])
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])

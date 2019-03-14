@@ -139,7 +139,7 @@ object Configuration {
     if (recordsPath != null) __obj.updateDynamic("recordsPath")(recordsPath)
     if (resolve != null) __obj.updateDynamic("resolve")(resolve)
     if (resolveLoader != null) __obj.updateDynamic("resolveLoader")(resolveLoader)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
     if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions)

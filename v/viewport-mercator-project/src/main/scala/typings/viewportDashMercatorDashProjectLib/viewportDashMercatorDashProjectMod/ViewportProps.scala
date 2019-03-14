@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ViewportProps extends BaseViewportProps {
+trait ViewportProps extends FlyToViewportProps {
   var bearing: js.UndefOr[scala.Double] = js.undefined
   var pitch: js.UndefOr[scala.Double] = js.undefined
 }

@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 @JSImport("egg", "BaseContextClass")
 @js.native
 class BaseContextClass protected () extends js.Object {
-  def this(ctx: eggDashViewLib.eggMod.Context) = this()
+  def this(ctx: Context) = this()
   /**
     * Application
     */
-  var app: eggDashViewLib.eggMod.Application = js.native
+  var app: Application = js.native
   /**
     * Application config object
     */
-  var config: eggDashViewLib.eggMod.EggAppConfig = js.native
+  var config: EggAppConfig = js.native
   // tslint:disable-line
   /**
     * request context
     */
-  var ctx: eggDashViewLib.eggMod.Context = js.native
+  var ctx: Context = js.native
   /**
     * logger
     */

@@ -40,7 +40,7 @@ object MjmlCarouselProps {
   ): MjmlCarouselProps = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (iconWidth != null) __obj.updateDynamic("iconWidth")(iconWidth)
     if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon)

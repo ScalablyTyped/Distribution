@@ -16,6 +16,10 @@ trait StrictAccordionTitleProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   /** Shorthand for primary content. */
   var content: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent] = js.undefined
+  /** Shorthand for Icon. */
+  var icon: js.UndefOr[
+    semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps]
+  ] = js.undefined
   /** AccordionTitle index inside Accordion. */
   var index: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
@@ -41,6 +45,7 @@ object StrictAccordionTitleProps {
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
+    icon: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps] = null,
     index: scala.Double | java.lang.String = null,
     onClick: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ AccordionTitleProps) => scala.Unit = null
   ): StrictAccordionTitleProps = {
@@ -50,6 +55,7 @@ object StrictAccordionTitleProps {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2(onClick))
     __obj.asInstanceOf[StrictAccordionTitleProps]

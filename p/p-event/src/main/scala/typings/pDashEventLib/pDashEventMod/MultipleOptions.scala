@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MultipleOptions[EmittedType] extends Options[EmittedType] {
+trait MultipleOptions[EmittedType /* <: pDashEventLib.Array[_] */] extends Options[EmittedType] {
   /**
   	 * The number of times the event needs to be emitted before the promise resolves.
   	 */
@@ -48,7 +48,7 @@ trait MultipleOptions[EmittedType] extends Options[EmittedType] {
 
 object MultipleOptions {
   @scala.inline
-  def apply[EmittedType](
+  def apply[EmittedType /* <: pDashEventLib.Array[_] */](
     count: scala.Double,
     filter: FilterFunction[EmittedType] = null,
     multiArgs: js.UndefOr[scala.Boolean] = js.undefined,

@@ -7,60 +7,60 @@ import scala.scalajs.js.annotation._
 
 trait _Color
   extends _Paint
-     with csstypeLib.csstypeMod.BackgroundColorProperty
-     with csstypeLib.csstypeMod.BorderBlockEndColorProperty
-     with csstypeLib.csstypeMod.BorderBlockStartColorProperty
-     with csstypeLib.csstypeMod.BorderBottomColorProperty
-     with csstypeLib.csstypeMod.BorderInlineEndColorProperty
-     with csstypeLib.csstypeMod.BorderInlineStartColorProperty
-     with csstypeLib.csstypeMod.BorderLeftColorProperty
-     with csstypeLib.csstypeMod.BorderRightColorProperty
-     with csstypeLib.csstypeMod.BorderTopColorProperty
-     with csstypeLib.csstypeMod.CaretColorProperty
-     with csstypeLib.csstypeMod.ColorProperty
-     with csstypeLib.csstypeMod.ColumnRuleColorProperty
-     with csstypeLib.csstypeMod.FloodColorProperty
-     with csstypeLib.csstypeMod.LightingColorProperty
-     with csstypeLib.csstypeMod.MsScrollbar3dlightColorProperty
-     with csstypeLib.csstypeMod.MsScrollbarArrowColorProperty
-     with csstypeLib.csstypeMod.MsScrollbarBaseColorProperty
-     with csstypeLib.csstypeMod.MsScrollbarDarkshadowColorProperty
-     with csstypeLib.csstypeMod.MsScrollbarFaceColorProperty
-     with csstypeLib.csstypeMod.MsScrollbarHighlightColorProperty
-     with csstypeLib.csstypeMod.MsScrollbarShadowColorProperty
-     with csstypeLib.csstypeMod.MsScrollbarTrackColorProperty
-     with csstypeLib.csstypeMod.OutlineColorProperty
-     with csstypeLib.csstypeMod.ScrollbarColorProperty
-     with csstypeLib.csstypeMod.StopColorProperty
-     with csstypeLib.csstypeMod.TextDecorationColorProperty
-     with csstypeLib.csstypeMod.TextEmphasisColorProperty
-     with csstypeLib.csstypeMod.WebkitBorderBeforeColorProperty
-     with csstypeLib.csstypeMod.WebkitTapHighlightColorProperty
-     with csstypeLib.csstypeMod.WebkitTextFillColorProperty
-     with csstypeLib.csstypeMod.WebkitTextStrokeColorProperty
+     with csstypeLib.csstypeMod._BackgroundColorProperty
      with csstypeLib.csstypeMod._BorderBlockColorProperty
+     with csstypeLib.csstypeMod._BorderBlockEndColorProperty
      with csstypeLib.csstypeMod._BorderBlockEndProperty[js.Any]
      with csstypeLib.csstypeMod._BorderBlockProperty[js.Any]
+     with csstypeLib.csstypeMod._BorderBlockStartColorProperty
      with csstypeLib.csstypeMod._BorderBlockStartProperty[js.Any]
+     with csstypeLib.csstypeMod._BorderBottomColorProperty
      with csstypeLib.csstypeMod._BorderBottomProperty[js.Any]
      with csstypeLib.csstypeMod._BorderColorProperty
      with csstypeLib.csstypeMod._BorderInlineColorProperty
+     with csstypeLib.csstypeMod._BorderInlineEndColorProperty
      with csstypeLib.csstypeMod._BorderInlineEndProperty[js.Any]
      with csstypeLib.csstypeMod._BorderInlineProperty[js.Any]
+     with csstypeLib.csstypeMod._BorderInlineStartColorProperty
      with csstypeLib.csstypeMod._BorderInlineStartProperty[js.Any]
+     with csstypeLib.csstypeMod._BorderLeftColorProperty
      with csstypeLib.csstypeMod._BorderLeftProperty[js.Any]
      with csstypeLib.csstypeMod._BorderProperty[js.Any]
+     with csstypeLib.csstypeMod._BorderRightColorProperty
      with csstypeLib.csstypeMod._BorderRightProperty[js.Any]
+     with csstypeLib.csstypeMod._BorderTopColorProperty
      with csstypeLib.csstypeMod._BorderTopProperty[js.Any]
+     with csstypeLib.csstypeMod._CaretColorProperty
+     with csstypeLib.csstypeMod._ColorProperty
+     with csstypeLib.csstypeMod._ColumnRuleColorProperty
      with csstypeLib.csstypeMod._ColumnRuleProperty[js.Any]
      with _FinalBgLayer[js.Any]
+     with csstypeLib.csstypeMod._FloodColorProperty
+     with csstypeLib.csstypeMod._LightingColorProperty
      with csstypeLib.csstypeMod._MozBorderBottomColorsProperty
      with csstypeLib.csstypeMod._MozBorderLeftColorsProperty
      with csstypeLib.csstypeMod._MozBorderRightColorsProperty
      with csstypeLib.csstypeMod._MozBorderTopColorsProperty
+     with csstypeLib.csstypeMod._MsScrollbar3dlightColorProperty
+     with csstypeLib.csstypeMod._MsScrollbarArrowColorProperty
+     with csstypeLib.csstypeMod._MsScrollbarBaseColorProperty
+     with csstypeLib.csstypeMod._MsScrollbarDarkshadowColorProperty
+     with csstypeLib.csstypeMod._MsScrollbarFaceColorProperty
+     with csstypeLib.csstypeMod._MsScrollbarHighlightColorProperty
+     with csstypeLib.csstypeMod._MsScrollbarShadowColorProperty
+     with csstypeLib.csstypeMod._MsScrollbarTrackColorProperty
+     with csstypeLib.csstypeMod._OutlineColorProperty
      with csstypeLib.csstypeMod._OutlineProperty[js.Any]
+     with csstypeLib.csstypeMod._ScrollbarColorProperty
+     with csstypeLib.csstypeMod._StopColorProperty
+     with csstypeLib.csstypeMod._TextDecorationColorProperty
      with csstypeLib.csstypeMod._TextDecorationProperty
+     with csstypeLib.csstypeMod._TextEmphasisColorProperty
      with csstypeLib.csstypeMod._TextEmphasisProperty
+     with csstypeLib.csstypeMod._WebkitBorderBeforeColorProperty
      with csstypeLib.csstypeMod._WebkitBorderBeforeProperty[js.Any]
+     with csstypeLib.csstypeMod._WebkitTapHighlightColorProperty
+     with csstypeLib.csstypeMod._WebkitTextFillColorProperty
+     with csstypeLib.csstypeMod._WebkitTextStrokeColorProperty
      with csstypeLib.csstypeMod._WebkitTextStrokeProperty[js.Any]
 

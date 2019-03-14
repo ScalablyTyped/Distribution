@@ -23,7 +23,7 @@ object SidebarProps {
     onHide: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
     onShow: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
     onVisible: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLElement, reactLib.NativeMouseEvent], /* data */ SidebarProps) => scala.Unit = null,
-    target: js.Object = null,
+    target: js.Object | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLElement] = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined,
     width: (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`very thin`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.thin | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.wide | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`very wide`) = null
   ): SidebarProps = {
@@ -39,7 +39,7 @@ object SidebarProps {
     if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction2(onHide))
     if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction2(onShow))
     if (onVisible != null) __obj.updateDynamic("onVisible")(js.Any.fromFunction2(onVisible))
-    if (target != null) __obj.updateDynamic("target")(target)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SidebarProps]

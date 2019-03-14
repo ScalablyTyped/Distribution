@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MultiArgumentsOptions[EmittedType] extends Options[EmittedType] {
+trait MultiArgumentsOptions[EmittedType /* <: pDashEventLib.Array[_] */] extends Options[EmittedType] {
   @JSName("multiArgs")
   val multiArgs_MultiArgumentsOptions: pDashEventLib.pDashEventLibNumbers.`true`
 }
 
 object MultiArgumentsOptions {
   @scala.inline
-  def apply[EmittedType](
+  def apply[EmittedType /* <: pDashEventLib.Array[_] */](
     multiArgs: pDashEventLib.pDashEventLibNumbers.`true`,
     filter: FilterFunction[EmittedType] = null,
     rejectionEvents: pDashEventLib.Array[java.lang.String | js.Symbol] = null,

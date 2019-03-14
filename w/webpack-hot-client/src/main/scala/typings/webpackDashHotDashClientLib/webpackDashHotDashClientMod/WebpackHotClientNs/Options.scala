@@ -61,7 +61,7 @@ object Options {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (!js.isUndefined(reload)) __obj.updateDynamic("reload")(reload)
     if (server != null) __obj.updateDynamic("server")(server)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     if (validTargets != null) __obj.updateDynamic("validTargets")(validTargets)
     __obj.asInstanceOf[Options]
   }

@@ -14,7 +14,6 @@ object FormTextAreaProps {
   def apply(
     StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     as: js.Any = null,
-    autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
@@ -27,7 +26,6 @@ object FormTextAreaProps {
     onInput: (/* event */ reactLib.reactMod.ReactNs.FormEvent[stdLib.HTMLTextAreaElement], /* data */ semanticDashUiDashReactLib.distCommonjsAddonsTextAreaTextAreaMod.TextAreaProps) => scala.Unit = null,
     required: js.Any = null,
     rows: scala.Double | java.lang.String = null,
-    style: js.Object = null,
     `type`: java.lang.String = null,
     value: scala.Double | java.lang.String = null,
     width: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS = null
@@ -35,7 +33,6 @@ object FormTextAreaProps {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (as != null) __obj.updateDynamic("as")(as)
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
@@ -48,7 +45,6 @@ object FormTextAreaProps {
     if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction2(onInput))
     if (required != null) __obj.updateDynamic("required")(required)
     if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (width != null) __obj.updateDynamic("width")(width)

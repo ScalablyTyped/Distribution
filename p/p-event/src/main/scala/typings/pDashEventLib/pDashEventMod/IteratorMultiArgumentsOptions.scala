@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IteratorMultiArgumentsOptions[EmittedType] extends IteratorOptions[EmittedType] {
+trait IteratorMultiArgumentsOptions[EmittedType /* <: pDashEventLib.Array[_] */] extends IteratorOptions[EmittedType] {
   @JSName("multiArgs")
   var multiArgs_IteratorMultiArgumentsOptions: pDashEventLib.pDashEventLibNumbers.`true`
 }
 
 object IteratorMultiArgumentsOptions {
   @scala.inline
-  def apply[EmittedType](
+  def apply[EmittedType /* <: pDashEventLib.Array[_] */](
     multiArgs: pDashEventLib.pDashEventLibNumbers.`true`,
     filter: FilterFunction[EmittedType] = null,
     limit: scala.Int | scala.Double = null,

@@ -5,5 +5,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait _Serializable extends SerializableOrJSHandle
+trait _Serializable extends _SerializableOrJSHandle
 

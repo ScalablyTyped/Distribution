@@ -30,7 +30,11 @@ package object libClientMod {
     /* range */ vscodeLib.vscodeMod.Range, 
     /* context */ vscodeLib.vscodeMod.CodeActionContext, 
     /* token */ vscodeLib.vscodeMod.CancellationToken, 
-    vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.Command | vscodeLib.vscodeMod.CodeAction]]
+    vscodeLib.vscodeMod.ProviderResult[
+      js.Array[
+        vscodeLib.vscodeMod.Command | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCodeAction */ js.Any)
+      ]
+    ]
   ]
   type ProvideCodeLensesSignature = js.Function2[
     /* document */ vscodeLib.vscodeMod.TextDocument, 
@@ -40,7 +44,7 @@ package object libClientMod {
   type ProvideCompletionItemsSignature = js.Function4[
     /* document */ vscodeLib.vscodeMod.TextDocument, 
     /* position */ vscodeLib.vscodeMod.Position, 
-    /* context */ vscodeLib.vscodeMod.CompletionContext, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCompletionContext */ /* context */ js.Any, 
     /* token */ vscodeLib.vscodeMod.CancellationToken, 
     vscodeLib.vscodeMod.ProviderResult[
       js.Array[vscodeLib.vscodeMod.CompletionItem] | vscodeLib.vscodeMod.CompletionList
@@ -50,7 +54,11 @@ package object libClientMod {
     /* document */ vscodeLib.vscodeMod.TextDocument, 
     /* position */ vscodeLib.vscodeMod.Position, 
     /* token */ vscodeLib.vscodeMod.CancellationToken, 
-    vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]]
+    vscodeLib.vscodeMod.ProviderResult[
+      vscodeLib.vscodeMod.Definition | (js.Array[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDefinitionLink */ js.Any
+      ])
+    ]
   ]
   type ProvideDocumentFormattingEditsSignature = js.Function3[
     /* document */ vscodeLib.vscodeMod.TextDocument, 
@@ -80,7 +88,9 @@ package object libClientMod {
     /* document */ vscodeLib.vscodeMod.TextDocument, 
     /* token */ vscodeLib.vscodeMod.CancellationToken, 
     vscodeLib.vscodeMod.ProviderResult[
-      js.Array[vscodeLib.vscodeMod.SymbolInformation] | js.Array[vscodeLib.vscodeMod.DocumentSymbol]
+      js.Array[vscodeLib.vscodeMod.SymbolInformation] | (js.Array[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDocumentSymbol */ js.Any
+      ])
     ]
   ]
   type ProvideHoverSignature = js.Function3[

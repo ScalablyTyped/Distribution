@@ -68,6 +68,7 @@ object MKTextFieldProperties {
     inputAccessoryViewID: java.lang.String = null,
     keyboardAppearance: reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.light | reactDashNativeLib.reactDashNativeLibStrings.dark = null,
     keyboardType: reactDashNativeLib.reactDashNativeMod.KeyboardTypeOptions = null,
+    maxFontSizeMultiplier: scala.Int | scala.Double = null,
     maxLength: scala.Int | scala.Double = null,
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
     nativeID: java.lang.String = null,
@@ -175,6 +176,7 @@ object MKTextFieldProperties {
     if (inputAccessoryViewID != null) __obj.updateDynamic("inputAccessoryViewID")(inputAccessoryViewID)
     if (keyboardAppearance != null) __obj.updateDynamic("keyboardAppearance")(keyboardAppearance.asInstanceOf[js.Any])
     if (keyboardType != null) __obj.updateDynamic("keyboardType")(keyboardType.asInstanceOf[js.Any])
+    if (maxFontSizeMultiplier != null) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)

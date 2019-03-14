@@ -41,7 +41,7 @@ trait WorkspaceConfiguration
   		 * The *effective* value (returned by [`get`](#WorkspaceConfiguration.get))
   		 * is computed like this: `defaultValue` overwritten by `globalValue`,
   		 * `globalValue` overwritten by `workspaceValue`. `workspaceValue` overwritten by `workspaceFolderValue`.
-  		 * Refer to [Settings Inheritance](https://code.visualstudio.com/docs/getstarted/settings)
+  		 * Refer to [Settings Inheritence](https://code.visualstudio.com/docs/getstarted/settings)
   		 * for more information.
   		 *
   		 * *Note:* The configuration name must denote a leaf in the configuration tree
@@ -65,7 +65,7 @@ trait WorkspaceConfiguration
   		 * has no observable effect in that workspace, but in others. Setting a workspace value
   		 * in the presence of a more specific folder value has no observable effect for the resources
   		 * under respective [folder](#workspace.workspaceFolders), but in others. Refer to
-  		 * [Settings Inheritance](https://code.visualstudio.com/docs/getstarted/settings) for more information.
+  		 * [Settings Inheritence](https://code.visualstudio.com/docs/getstarted/settings) for more information.
   		 *
   		 * *Note 2:* To remove a configuration value use `undefined`, like so: `config.update('somekey', undefined)`
   		 *
@@ -79,11 +79,8 @@ trait WorkspaceConfiguration
   		 * @param section Configuration name, supports _dotted_ names.
   		 * @param value The new value.
   		 * @param configurationTarget The [configuration target](#ConfigurationTarget) or a boolean value.
-  		 *	- If `true` configuration target is `ConfigurationTarget.Global`.
-  		 *	- If `false` configuration target is `ConfigurationTarget.Workspace`.
-  		 *	- If `undefined` or `null` configuration target is
-  		 *	`ConfigurationTarget.WorkspaceFolder` when configuration is resource specific
-  		 *	`ConfigurationTarget.Workspace` otherwise.
+  		 *	If `undefined` or `null` or `false` configuration target is `ConfigurationTarget.Workspace`.
+  		 *	If `true` configuration target is `ConfigurationTarget.Global`.
   		 */
   def update(section: java.lang.String, value: js.Any): vscodeLib.Thenable[scala.Unit] = js.native
   def update(section: java.lang.String, value: js.Any, configurationTarget: scala.Boolean): vscodeLib.Thenable[scala.Unit] = js.native

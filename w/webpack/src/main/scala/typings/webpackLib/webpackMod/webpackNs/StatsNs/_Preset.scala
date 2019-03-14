@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait _Preset
-  extends ToJsonOptions
-     with ToStringOptions
+  extends _ToJsonOptions
+     with _ToStringOptions
 

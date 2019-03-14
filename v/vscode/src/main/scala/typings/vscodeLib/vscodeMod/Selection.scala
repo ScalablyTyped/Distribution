@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Selection protected () extends Range {
   /**
-  		 * Create a selection from two positions.
+  		 * Create a selection from two postions.
   		 *
   		 * @param anchor A position.
   		 * @param active A position.

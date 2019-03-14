@@ -42,6 +42,13 @@ trait TextProps
     reactDashNativeLib.reactDashNativeLibStrings.head | reactDashNativeLib.reactDashNativeLibStrings.middle | reactDashNativeLib.reactDashNativeLibStrings.tail | reactDashNativeLib.reactDashNativeLibStrings.clip
   ] = js.undefined
   /**
+    * Specifies largest possible scale a font can reach when allowFontScaling is enabled. Possible values:
+    * - null/undefined (default): inherit from the parent node or the global default (0)
+    * - 0: no max, ignore parent/global default
+    * - >= 1: sets the maxFontSizeMultiplier of this node to this value
+    */
+  var maxFontSizeMultiplier: js.UndefOr[scala.Double | scala.Null] = js.undefined
+  /**
     * Used to reference react managed views from native code.
     */
   var nativeID: js.UndefOr[java.lang.String] = js.undefined
@@ -97,6 +104,7 @@ object TextProps {
     ellipsizeMode: reactDashNativeLib.reactDashNativeLibStrings.head | reactDashNativeLib.reactDashNativeLibStrings.middle | reactDashNativeLib.reactDashNativeLibStrings.tail | reactDashNativeLib.reactDashNativeLibStrings.clip = null,
     importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
     lineBreakMode: reactDashNativeLib.reactDashNativeLibStrings.head | reactDashNativeLib.reactDashNativeLibStrings.middle | reactDashNativeLib.reactDashNativeLibStrings.tail | reactDashNativeLib.reactDashNativeLibStrings.clip = null,
+    maxFontSizeMultiplier: scala.Int | scala.Double = null,
     minimumFontScale: scala.Int | scala.Double = null,
     nativeID: java.lang.String = null,
     numberOfLines: scala.Int | scala.Double = null,
@@ -128,6 +136,7 @@ object TextProps {
     if (ellipsizeMode != null) __obj.updateDynamic("ellipsizeMode")(ellipsizeMode.asInstanceOf[js.Any])
     if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
     if (lineBreakMode != null) __obj.updateDynamic("lineBreakMode")(lineBreakMode.asInstanceOf[js.Any])
+    if (maxFontSizeMultiplier != null) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.asInstanceOf[js.Any])
     if (minimumFontScale != null) __obj.updateDynamic("minimumFontScale")(minimumFontScale.asInstanceOf[js.Any])
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])

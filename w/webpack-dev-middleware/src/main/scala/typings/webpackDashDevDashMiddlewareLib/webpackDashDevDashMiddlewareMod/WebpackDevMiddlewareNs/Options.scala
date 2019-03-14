@@ -45,7 +45,7 @@ object Options {
     if (logger != null) __obj.updateDynamic("logger")(logger)
     if (reporter != null) __obj.updateDynamic("reporter")(reporter)
     if (!js.isUndefined(serverSideRender)) __obj.updateDynamic("serverSideRender")(serverSideRender)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions)
     if (writeToDisk != null) __obj.updateDynamic("writeToDisk")(writeToDisk.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]

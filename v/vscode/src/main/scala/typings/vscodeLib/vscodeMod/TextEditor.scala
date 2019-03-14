@@ -10,7 +10,7 @@ trait TextEditor extends js.Object {
   /**
   		 * The document associated with this text editor. The document will be the same for the entire lifetime of this text editor.
   		 */
-  val document: TextDocument = js.native
+  var document: TextDocument = js.native
   /**
   		 * Text editor options.
   		 */
@@ -25,15 +25,9 @@ trait TextEditor extends js.Object {
   var selections: js.Array[Selection] = js.native
   /**
   		 * The column in which this editor shows. Will be `undefined` in case this
-  		 * isn't one of the main editors, e.g an embedded editor, or when the editor
-  		 * column is larger than three.
+  		 * isn't one of the three main editors, e.g an embedded editor.
   		 */
   var viewColumn: js.UndefOr[ViewColumn] = js.native
-  /**
-  		 * The current visible ranges in the editor (vertically).
-  		 * This accounts only for vertical scrolling, and not for horizontal scrolling.
-  		 */
-  val visibleRanges: js.Array[Range] = js.native
   /**
   		 * Perform an edit on the document associated with this text editor.
   		 *
@@ -59,7 +53,7 @@ trait TextEditor extends js.Object {
   def hide(): scala.Unit = js.native
   /**
   		 * Insert a [snippet](#SnippetString) and put the editor into snippet mode. "Snippet mode"
-  		 * means the editor adds placeholders and additional cursors so that the user can complete
+  		 * means the editor adds placeholders and additionals cursors so that the user can complete
   		 * or accept the snippet.
   		 *
   		 * @param snippet The snippet to insert in this edit.
@@ -100,10 +94,10 @@ trait TextEditor extends js.Object {
   /**
   		 * ~~Show the text editor.~~
   		 *
-  		 * @deprecated Use [window.showTextDocument](#window.showTextDocument) instead.
+  		 * @deprecated Use [window.showTextDocument](#window.showTextDocument)
   		 *
   		 * @param column The [column](#ViewColumn) in which to show this editor.
-  		 * This method shows unexpected behavior and will be removed in the next major update.
+  		 * instead. This method shows unexpected behavior and will be removed in the next major update.
   		 */
   def show(): scala.Unit = js.native
   def show(column: ViewColumn): scala.Unit = js.native

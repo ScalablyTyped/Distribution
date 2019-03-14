@@ -16,15 +16,14 @@ class ParameterInformation protected () extends js.Object {
   		 */
   def this(label: java.lang.String) = this()
   def this(label: java.lang.String, documentation: java.lang.String) = this()
-  def this(label: java.lang.String, documentation: MarkdownString) = this()
   /**
   		 * The human-readable doc-comment of this signature. Will be shown
   		 * in the UI but can be omitted.
   		 */
-  var documentation: js.UndefOr[java.lang.String | MarkdownString] = js.native
+  var documentation: js.UndefOr[java.lang.String] = js.native
   /**
-  		 * The label of this signature. *Note*: Must be a substring of its
-  		 * containing signature information's [label](#SignatureInformation.label).
+  		 * The label of this signature. Will be shown in
+  		 * the UI.
   		 */
   var label: java.lang.String = js.native
 }

@@ -1041,7 +1041,7 @@ object CloudWatchLogsNs extends js.Object {
   
   trait StartQueryRequest extends js.Object {
     /**
-      * The end of the time range to query. Specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
+      * The end of the time range to query. The range is inclusive, so the specified end time is included in the query. Specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
       */
     var endTime: Timestamp
     /**
@@ -1057,7 +1057,7 @@ object CloudWatchLogsNs extends js.Object {
       */
     var queryString: QueryString
     /**
-      * The beginning of the time range to query. Specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
+      * The beginning of the time range to query. The range is inclusive, so the specified start time is included in the query. Specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
       */
     var startTime: Timestamp
   }

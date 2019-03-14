@@ -14,8 +14,10 @@ trait Options extends js.Object {
   var expandOnClick: js.UndefOr[scala.Boolean] = js.undefined
   var expandOnFocus: js.UndefOr[scala.Boolean] = js.undefined
   var expandOnHover: js.UndefOr[scala.Boolean] = js.undefined
+  var expandedClass: js.UndefOr[java.lang.String] = js.undefined
   var focusManagement: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var hostSelector: js.UndefOr[java.lang.String] = js.undefined
+  var simulateSpacebarClick: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Options {
@@ -29,8 +31,10 @@ object Options {
     expandOnClick: js.UndefOr[scala.Boolean] = js.undefined,
     expandOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
     expandOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    expandedClass: java.lang.String = null,
     focusManagement: java.lang.String = null,
-    hostSelector: java.lang.String = null
+    hostSelector: java.lang.String = null,
+    simulateSpacebarClick: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse)
@@ -41,8 +45,10 @@ object Options {
     if (!js.isUndefined(expandOnClick)) __obj.updateDynamic("expandOnClick")(expandOnClick)
     if (!js.isUndefined(expandOnFocus)) __obj.updateDynamic("expandOnFocus")(expandOnFocus)
     if (!js.isUndefined(expandOnHover)) __obj.updateDynamic("expandOnHover")(expandOnHover)
+    if (expandedClass != null) __obj.updateDynamic("expandedClass")(expandedClass)
     if (focusManagement != null) __obj.updateDynamic("focusManagement")(focusManagement)
     if (hostSelector != null) __obj.updateDynamic("hostSelector")(hostSelector)
+    if (!js.isUndefined(simulateSpacebarClick)) __obj.updateDynamic("simulateSpacebarClick")(simulateSpacebarClick)
     __obj.asInstanceOf[Options]
   }
 }

@@ -57,7 +57,7 @@ object KarmaWebpackMiddlewareOptions {
     if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
     if (reporter != null) __obj.updateDynamic("reporter")(reporter)
     if (!js.isUndefined(serverSideRender)) __obj.updateDynamic("serverSideRender")(serverSideRender)
-    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
     if (warn != null) __obj.updateDynamic("warn")(warn)
     if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions)
     __obj.asInstanceOf[KarmaWebpackMiddlewareOptions]

@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait _Stream
-  extends vegaDashTypingsLib.typesSpecOnDashEventsMod.EventListener
+  extends vegaDashTypingsLib.typesSpecOnDashEventsMod._EventListener
 

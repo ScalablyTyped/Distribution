@@ -35,7 +35,7 @@ object MjmlAccordionElementProps {
     iconWrappedUrl: java.lang.String = null
   ): MjmlAccordionElementProps = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (iconAlign != null) __obj.updateDynamic("iconAlign")(iconAlign)
     if (iconHeight != null) __obj.updateDynamic("iconHeight")(iconHeight)

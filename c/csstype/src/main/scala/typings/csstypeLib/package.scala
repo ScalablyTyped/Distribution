@@ -15,7 +15,7 @@ package object csstypeLib {
   type CounterStyleSystemProperty = _CounterStyleSystemProperty | java.lang.String
   type CubicBezierTimingFunction = _CubicBezierTimingFunction | java.lang.String
   type Dasharray[TLength] = TLength | java.lang.String | scala.Double
-  type FinalBgLayer[TLength] = _FinalBgLayer[TLength] | java.lang.String
+  type FinalBgLayer[TLength] = _FinalBgLayer[TLength] | java.lang.String | TLength
   type FontFaceFontFeatureSettingsProperty = csstypeLib.csstypeLibStrings.normal | java.lang.String
   type FontFaceFontStretchProperty = FontStretchAbsolute | java.lang.String
   type FontFaceFontStyleProperty = _FontFaceFontStyleProperty | java.lang.String
@@ -28,7 +28,7 @@ package object csstypeLib {
   type GlobalsString = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Globals */ js.Any) | java.lang.String
   type GridLine = csstypeLib.csstypeLibStrings.auto | java.lang.String | scala.Double
   type LineWidth[TLength] = _LineWidth[TLength] | TLength
-  type MaskLayer[TLength] = _MaskLayer[TLength] | java.lang.String
+  type MaskLayer[TLength] = _MaskLayer[TLength] | java.lang.String | TLength
   type PageBleedProperty[TLength] = TLength | csstypeLib.csstypeLibStrings.auto
   type PageMarksProperty = _PageMarksProperty | java.lang.String
   type Paint = _Paint | java.lang.String

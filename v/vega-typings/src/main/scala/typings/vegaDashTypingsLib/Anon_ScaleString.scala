@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ScaleString
-  extends vegaDashTypingsLib.typesSpecOnDashEventsMod.EventListener {
+  extends vegaDashTypingsLib.typesSpecOnDashEventsMod._EventListener {
   var scale: java.lang.String
 }
 

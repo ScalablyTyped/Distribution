@@ -20,11 +20,11 @@ trait SamlConfig extends js.Object {
   var cert: js.UndefOr[java.lang.String | js.Array[java.lang.String] | CertCallback] = js.undefined
   var decryptionPvk: js.UndefOr[java.lang.String] = js.undefined
   var disableRequestedAuthnContext: js.UndefOr[scala.Boolean] = js.undefined
-  var entryPoint: java.lang.String
+  var entryPoint: js.UndefOr[java.lang.String] = js.undefined
   var forceAuthn: js.UndefOr[scala.Boolean] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined
   var identifierFormat: js.UndefOr[java.lang.String] = js.undefined
-  var issuer: java.lang.String
+  var issuer: js.UndefOr[java.lang.String] = js.undefined
   var logoutCallbackUrl: js.UndefOr[java.lang.String] = js.undefined
   // Logout
   var logoutUrl: js.UndefOr[java.lang.String] = js.undefined
@@ -46,8 +46,6 @@ trait SamlConfig extends js.Object {
 object SamlConfig {
   @scala.inline
   def apply(
-    entryPoint: java.lang.String,
-    issuer: java.lang.String,
     acceptedClockSkewMs: scala.Int | scala.Double = null,
     additionalAuthorizeParams: js.Any = null,
     additionalLogoutParams: js.Any = null,
@@ -60,9 +58,11 @@ object SamlConfig {
     cert: java.lang.String | js.Array[java.lang.String] | CertCallback = null,
     decryptionPvk: java.lang.String = null,
     disableRequestedAuthnContext: js.UndefOr[scala.Boolean] = js.undefined,
+    entryPoint: java.lang.String = null,
     forceAuthn: js.UndefOr[scala.Boolean] = js.undefined,
     host: java.lang.String = null,
     identifierFormat: java.lang.String = null,
+    issuer: java.lang.String = null,
     logoutCallbackUrl: java.lang.String = null,
     logoutUrl: java.lang.String = null,
     name: java.lang.String = null,
@@ -75,7 +75,7 @@ object SamlConfig {
     skipRequestCompression: js.UndefOr[scala.Boolean] = js.undefined,
     validateInResponseTo: js.UndefOr[scala.Boolean] = js.undefined
   ): SamlConfig = {
-    val __obj = js.Dynamic.literal(entryPoint = entryPoint, issuer = issuer)
+    val __obj = js.Dynamic.literal()
     if (acceptedClockSkewMs != null) __obj.updateDynamic("acceptedClockSkewMs")(acceptedClockSkewMs.asInstanceOf[js.Any])
     if (additionalAuthorizeParams != null) __obj.updateDynamic("additionalAuthorizeParams")(additionalAuthorizeParams)
     if (additionalLogoutParams != null) __obj.updateDynamic("additionalLogoutParams")(additionalLogoutParams)
@@ -88,9 +88,11 @@ object SamlConfig {
     if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
     if (decryptionPvk != null) __obj.updateDynamic("decryptionPvk")(decryptionPvk)
     if (!js.isUndefined(disableRequestedAuthnContext)) __obj.updateDynamic("disableRequestedAuthnContext")(disableRequestedAuthnContext)
+    if (entryPoint != null) __obj.updateDynamic("entryPoint")(entryPoint)
     if (!js.isUndefined(forceAuthn)) __obj.updateDynamic("forceAuthn")(forceAuthn)
     if (host != null) __obj.updateDynamic("host")(host)
     if (identifierFormat != null) __obj.updateDynamic("identifierFormat")(identifierFormat)
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
     if (logoutCallbackUrl != null) __obj.updateDynamic("logoutCallbackUrl")(logoutCallbackUrl)
     if (logoutUrl != null) __obj.updateDynamic("logoutUrl")(logoutUrl)
     if (name != null) __obj.updateDynamic("name")(name)

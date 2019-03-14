@@ -34,7 +34,7 @@ object PortalProps {
     openOnTriggerFocus: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerMouseEnter: js.UndefOr[scala.Boolean] = js.undefined,
     trigger: reactLib.reactMod.ReactNs.ReactNode = null,
-    triggerRef: /* node */ stdLib.HTMLElement => scala.Unit = null
+    triggerRef: reactLib.reactMod.ReactNs.Ref[_] = null
   ): PortalProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
@@ -59,7 +59,7 @@ object PortalProps {
     if (!js.isUndefined(openOnTriggerFocus)) __obj.updateDynamic("openOnTriggerFocus")(openOnTriggerFocus)
     if (!js.isUndefined(openOnTriggerMouseEnter)) __obj.updateDynamic("openOnTriggerMouseEnter")(openOnTriggerMouseEnter)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (triggerRef != null) __obj.updateDynamic("triggerRef")(js.Any.fromFunction1(triggerRef))
+    if (triggerRef != null) __obj.updateDynamic("triggerRef")(triggerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalProps]
   }
 }

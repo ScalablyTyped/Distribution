@@ -10,6 +10,10 @@ package object libTypeDefinitionMod {
     /* document */ vscodeLib.vscodeMod.TextDocument, 
     /* position */ vscodeLib.vscodeMod.Position, 
     /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]]
+    vscodeLib.vscodeMod.ProviderResult[
+      vscodeLib.vscodeMod.Definition | (js.Array[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDefinitionLink */ js.Any
+      ])
+    ]
   ]
 }

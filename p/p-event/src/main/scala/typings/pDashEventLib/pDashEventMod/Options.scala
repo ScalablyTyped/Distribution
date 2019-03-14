@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Options[EmittedType] extends js.Object {
+trait Options[EmittedType /* <: pDashEventLib.Array[_] */] extends js.Object {
   /**
   	 * Filter function for accepting an event.
   	 *
@@ -51,7 +51,7 @@ trait Options[EmittedType] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[EmittedType](
+  def apply[EmittedType /* <: pDashEventLib.Array[_] */](
     filter: FilterFunction[EmittedType] = null,
     multiArgs: js.UndefOr[scala.Boolean] = js.undefined,
     rejectionEvents: pDashEventLib.Array[java.lang.String | js.Symbol] = null,

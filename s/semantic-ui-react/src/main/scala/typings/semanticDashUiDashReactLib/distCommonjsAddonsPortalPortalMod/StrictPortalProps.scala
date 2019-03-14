@@ -84,12 +84,8 @@ trait StrictPortalProps extends js.Object {
   var openOnTriggerMouseEnter: js.UndefOr[scala.Boolean] = js.undefined
   /** Element to be rendered in-place where the portal is defined. */
   var trigger: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  /**
-    * Called when componentDidMount.
-    *
-    * @param {HTMLElement} node - Referred node.
-    */
-  var triggerRef: js.UndefOr[js.Function1[/* node */ stdLib.HTMLElement, scala.Unit]] = js.undefined
+  /** Called with a ref to the trigger node. */
+  var triggerRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
 }
 
 object StrictPortalProps {
@@ -116,7 +112,7 @@ object StrictPortalProps {
     openOnTriggerFocus: js.UndefOr[scala.Boolean] = js.undefined,
     openOnTriggerMouseEnter: js.UndefOr[scala.Boolean] = js.undefined,
     trigger: reactLib.reactMod.ReactNs.ReactNode = null,
-    triggerRef: /* node */ stdLib.HTMLElement => scala.Unit = null
+    triggerRef: reactLib.reactMod.ReactNs.Ref[_] = null
   ): StrictPortalProps = {
     val __obj = js.Dynamic.literal()
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
@@ -140,7 +136,7 @@ object StrictPortalProps {
     if (!js.isUndefined(openOnTriggerFocus)) __obj.updateDynamic("openOnTriggerFocus")(openOnTriggerFocus)
     if (!js.isUndefined(openOnTriggerMouseEnter)) __obj.updateDynamic("openOnTriggerMouseEnter")(openOnTriggerMouseEnter)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (triggerRef != null) __obj.updateDynamic("triggerRef")(js.Any.fromFunction1(triggerRef))
+    if (triggerRef != null) __obj.updateDynamic("triggerRef")(triggerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictPortalProps]
   }
 }

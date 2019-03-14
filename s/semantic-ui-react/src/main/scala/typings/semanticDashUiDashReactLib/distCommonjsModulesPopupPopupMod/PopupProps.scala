@@ -26,7 +26,7 @@ object PopupProps {
     content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[
       semanticDashUiDashReactLib.distCommonjsModulesPopupPopupContentMod.PopupContentProps
     ] = null,
-    context: js.Object = null,
+    context: js.Object | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLElement] = null,
     defaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     eventPool: java.lang.String = null,
@@ -57,7 +57,7 @@ object PopupProps {
     size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.huge = null,
     style: js.Object = null,
     trigger: reactLib.reactMod.ReactNs.ReactNode = null,
-    triggerRef: /* node */ stdLib.HTMLElement => scala.Unit = null,
+    triggerRef: reactLib.reactMod.ReactNs.Ref[_] = null,
     verticalOffset: scala.Int | scala.Double = null,
     wide: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.very = null
   ): PopupProps = {
@@ -74,7 +74,7 @@ object PopupProps {
     if (!js.isUndefined(closeOnTriggerClick)) __obj.updateDynamic("closeOnTriggerClick")(closeOnTriggerClick)
     if (!js.isUndefined(closeOnTriggerMouseLeave)) __obj.updateDynamic("closeOnTriggerMouseLeave")(closeOnTriggerMouseLeave)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context)
+    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
     if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (eventPool != null) __obj.updateDynamic("eventPool")(eventPool)
@@ -101,7 +101,7 @@ object PopupProps {
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (triggerRef != null) __obj.updateDynamic("triggerRef")(js.Any.fromFunction1(triggerRef))
+    if (triggerRef != null) __obj.updateDynamic("triggerRef")(triggerRef.asInstanceOf[js.Any])
     if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])
     if (wide != null) __obj.updateDynamic("wide")(wide.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupProps]

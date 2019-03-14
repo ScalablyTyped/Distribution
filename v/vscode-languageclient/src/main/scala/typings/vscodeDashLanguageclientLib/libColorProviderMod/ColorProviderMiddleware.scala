@@ -9,11 +9,15 @@ trait ColorProviderMiddleware extends js.Object {
   var provideColorPresentations: js.UndefOr[
     js.ThisFunction4[
       /* this */ scala.Unit, 
-      /* color */ vscodeLib.vscodeMod.Color, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VColor */ /* color */ js.Any, 
       /* context */ vscodeDashLanguageclientLib.Anon_Document, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideColorPresentationSignature, 
-      vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.ColorPresentation]]
+      vscodeLib.vscodeMod.ProviderResult[
+        js.Array[
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VColorPresentation */ _
+        ]
+      ]
     ]
   ] = js.undefined
   var provideDocumentColors: js.UndefOr[
@@ -22,7 +26,11 @@ trait ColorProviderMiddleware extends js.Object {
       /* document */ vscodeLib.vscodeMod.TextDocument, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideDocumentColorsSignature, 
-      vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.ColorInformation]]
+      vscodeLib.vscodeMod.ProviderResult[
+        js.Array[
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VColorInformation */ _
+        ]
+      ]
     ]
   ] = js.undefined
 }
@@ -32,18 +40,26 @@ object ColorProviderMiddleware {
   def apply(
     provideColorPresentations: js.ThisFunction4[
       /* this */ scala.Unit, 
-      /* color */ vscodeLib.vscodeMod.Color, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VColor */ /* color */ js.Any, 
       /* context */ vscodeDashLanguageclientLib.Anon_Document, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideColorPresentationSignature, 
-      vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.ColorPresentation]]
+      vscodeLib.vscodeMod.ProviderResult[
+        js.Array[
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VColorPresentation */ _
+        ]
+      ]
     ] = null,
     provideDocumentColors: js.ThisFunction3[
       /* this */ scala.Unit, 
       /* document */ vscodeLib.vscodeMod.TextDocument, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideDocumentColorsSignature, 
-      vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.ColorInformation]]
+      vscodeLib.vscodeMod.ProviderResult[
+        js.Array[
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VColorInformation */ _
+        ]
+      ]
     ] = null
   ): ColorProviderMiddleware = {
     val __obj = js.Dynamic.literal()

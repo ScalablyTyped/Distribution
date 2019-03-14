@@ -26,10 +26,6 @@ trait TaskPresentationOptions extends js.Object {
   		 * Defaults to `RevealKind.Always`.
   		 */
   var reveal: js.UndefOr[TaskRevealKind] = js.undefined
-  /**
-  		 * Controls whether to show the "Terminal will be reused by tasks, press any key to close it" message.
-  		 */
-  var showReuseMessage: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object TaskPresentationOptions {
@@ -38,15 +34,13 @@ object TaskPresentationOptions {
     echo: js.UndefOr[scala.Boolean] = js.undefined,
     focus: js.UndefOr[scala.Boolean] = js.undefined,
     panel: TaskPanelKind = null,
-    reveal: TaskRevealKind = null,
-    showReuseMessage: js.UndefOr[scala.Boolean] = js.undefined
+    reveal: TaskRevealKind = null
   ): TaskPresentationOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(echo)) __obj.updateDynamic("echo")(echo)
     if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
     if (panel != null) __obj.updateDynamic("panel")(panel)
     if (reveal != null) __obj.updateDynamic("reveal")(reveal)
-    if (!js.isUndefined(showReuseMessage)) __obj.updateDynamic("showReuseMessage")(showReuseMessage)
     __obj.asInstanceOf[TaskPresentationOptions]
   }
 }

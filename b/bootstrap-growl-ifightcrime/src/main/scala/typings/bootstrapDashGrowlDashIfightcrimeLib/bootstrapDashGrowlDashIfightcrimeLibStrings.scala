@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object bootstrapDashGrowlDashIfightcrimeLibStrings {
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
   sealed trait bottom
     extends bootstrapDashGrowlDashIfightcrimeLib.BootstrapGrowlIfightcrimeNs.OffsetPositionType
   
@@ -42,6 +45,8 @@ object bootstrapDashGrowlDashIfightcrimeLibStrings {
   sealed trait warning
     extends bootstrapDashGrowlDashIfightcrimeLib.BootstrapGrowlIfightcrimeNs._AlertType
   
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline

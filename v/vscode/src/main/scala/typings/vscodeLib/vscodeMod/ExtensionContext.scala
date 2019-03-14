@@ -16,12 +16,6 @@ trait ExtensionContext extends js.Object {
   		 */
   var globalState: Memento
   /**
-  		 * An absolute file path of a directory in which the extension can create log files.
-  		 * The directory might not exist on disk and creation is up to the extension. However,
-  		 * the parent directory is guaranteed to be existent.
-  		 */
-  var logPath: java.lang.String
-  /**
   		 * An absolute file path of a workspace specific directory in which the extension
   		 * can store private state. The directory might not exist on disk and creation is
   		 * up to the extension. However, the parent directory is guaranteed to be existent.
@@ -55,12 +49,11 @@ object ExtensionContext {
     asAbsolutePath: java.lang.String => java.lang.String,
     extensionPath: java.lang.String,
     globalState: Memento,
-    logPath: java.lang.String,
     subscriptions: js.Array[vscodeLib.Anon_Dispose],
     workspaceState: Memento,
     storagePath: java.lang.String = null
   ): ExtensionContext = {
-    val __obj = js.Dynamic.literal(asAbsolutePath = js.Any.fromFunction1(asAbsolutePath), extensionPath = extensionPath, globalState = globalState, logPath = logPath, subscriptions = subscriptions, workspaceState = workspaceState)
+    val __obj = js.Dynamic.literal(asAbsolutePath = js.Any.fromFunction1(asAbsolutePath), extensionPath = extensionPath, globalState = globalState, subscriptions = subscriptions, workspaceState = workspaceState)
     if (storagePath != null) __obj.updateDynamic("storagePath")(storagePath)
     __obj.asInstanceOf[ExtensionContext]
   }

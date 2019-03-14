@@ -17,6 +17,7 @@
 //                 Simon Schick <https://github.com/SimonSchick>
 //                 Slava Yultyyev <https://github.com/yultyyev>
 //                 Corey Psoinos <https://github.com/cpsoinos>
+//                 Adam Duren <https://github.com/adamduren>
 //                 Saransh Kataria <https://github.com/saranshkataria>
 //                 Jonas Keisel <https://github.com/0xJoKe>
 //                 Andrew Delianides <https://github.com/delianides>

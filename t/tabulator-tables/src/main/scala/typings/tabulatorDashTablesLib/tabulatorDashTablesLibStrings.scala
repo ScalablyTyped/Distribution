@@ -405,12 +405,9 @@ object tabulatorDashTablesLibStrings {
        with tabulatorDashTablesLib.TabulatorNs._Formatter
   
   @js.native
-  sealed trait tick
-    extends tabulatorDashTablesLib.TabulatorNs._Editor
-  
-  @js.native
   sealed trait tickCross
-    extends tabulatorDashTablesLib.TabulatorNs._Formatter
+    extends tabulatorDashTablesLib.TabulatorNs._Editor
+       with tabulatorDashTablesLib.TabulatorNs._Formatter
   
   @js.native
   sealed trait time extends js.Object
@@ -665,8 +662,6 @@ object tabulatorDashTablesLibStrings {
   def table: table = "table".asInstanceOf[table]
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
-  @scala.inline
-  def tick: tick = "tick".asInstanceOf[tick]
   @scala.inline
   def tickCross: tickCross = "tickCross".asInstanceOf[tickCross]
   @scala.inline

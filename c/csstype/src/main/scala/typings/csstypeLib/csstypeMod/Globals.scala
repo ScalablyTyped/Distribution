@@ -9,36 +9,17 @@ trait Globals
   extends AlignmentBaselineProperty
      with AppearanceProperty
      with BackfaceVisibilityProperty
-     with BackgroundColorProperty
-     with BorderBlockEndColorProperty
      with BorderBlockEndStyleProperty
-     with BorderBlockEndWidthProperty[js.Any]
-     with BorderBlockStartColorProperty
      with BorderBlockStartStyleProperty
-     with BorderBlockStartWidthProperty[js.Any]
      with BorderBlockStyleProperty
-     with BorderBlockWidthProperty[js.Any]
-     with BorderBottomColorProperty
      with BorderBottomStyleProperty
-     with BorderBottomWidthProperty[js.Any]
      with BorderCollapseProperty
-     with BorderInlineEndColorProperty
      with BorderInlineEndStyleProperty
-     with BorderInlineEndWidthProperty[js.Any]
-     with BorderInlineStartColorProperty
      with BorderInlineStartStyleProperty
-     with BorderInlineStartWidthProperty[js.Any]
      with BorderInlineStyleProperty
-     with BorderInlineWidthProperty[js.Any]
-     with BorderLeftColorProperty
      with BorderLeftStyleProperty
-     with BorderLeftWidthProperty[js.Any]
-     with BorderRightColorProperty
      with BorderRightStyleProperty
-     with BorderRightWidthProperty[js.Any]
-     with BorderTopColorProperty
      with BorderTopStyleProperty
-     with BorderTopWidthProperty[js.Any]
      with BoxAlignProperty
      with BoxDecorationBreakProperty
      with BoxDirectionProperty
@@ -50,36 +31,28 @@ trait Globals
      with BreakBeforeProperty
      with BreakInsideProperty
      with CaptionSideProperty
-     with CaretColorProperty
      with ClearProperty
      with ClipRuleProperty
      with ColorAdjustProperty
      with ColorInterpolationProperty
-     with ColorProperty
      with ColorRenderingProperty
      with ColumnFillProperty
-     with ColumnRuleColorProperty
      with ColumnSpanProperty
      with DirectionProperty
      with DominantBaselineProperty
      with EmptyCellsProperty
-     with FillProperty
      with FillRuleProperty
      with FlexDirectionProperty
      with FlexWrapProperty
      with FloatProperty
-     with FloodColorProperty
      with FontKerningProperty
      with FontOpticalSizingProperty
-     with FontStretchProperty
      with FontVariantCapsProperty
      with FontVariantPositionProperty
-     with FontWeightProperty
      with HyphensProperty
      with ImageRenderingProperty
      with ImeModeProperty
      with IsolationProperty
-     with LightingColorProperty
      with LineBreakProperty
      with ListStylePositionProperty
      with MaskBorderModeProperty
@@ -107,25 +80,12 @@ trait Globals
      with MsScrollRailsProperty
      with MsScrollSnapTypeProperty
      with MsScrollTranslationProperty
-     with MsScrollbar3dlightColorProperty
-     with MsScrollbarArrowColorProperty
-     with MsScrollbarBaseColorProperty
-     with MsScrollbarDarkshadowColorProperty
-     with MsScrollbarFaceColorProperty
-     with MsScrollbarHighlightColorProperty
-     with MsScrollbarShadowColorProperty
-     with MsScrollbarTrackColorProperty
      with MsTextAutospaceProperty
      with MsTouchSelectProperty
      with MsUserSelectProperty
      with MsWrapFlowProperty
      with MsWrapThroughProperty
      with ObjectFitProperty
-     with ObjectPositionProperty[js.Any]
-     with OffsetAnchorProperty[js.Any]
-     with OffsetPositionProperty[js.Any]
-     with OutlineColorProperty
-     with OutlineWidthProperty[js.Any]
      with OverflowAnchorProperty
      with OverflowClipBoxProperty
      with OverflowWrapProperty
@@ -136,7 +96,6 @@ trait Globals
      with PageBreakAfterProperty
      with PageBreakBeforeProperty
      with PageBreakInsideProperty
-     with PerspectiveOriginProperty[js.Any]
      with PointerEventsProperty
      with PositionProperty
      with ResizeProperty
@@ -144,24 +103,18 @@ trait Globals
      with RubyMergeProperty
      with RubyPositionProperty
      with ScrollBehaviorProperty
-     with ScrollSnapDestinationProperty[js.Any]
      with ScrollSnapTypeXProperty
      with ScrollSnapTypeYProperty
-     with ScrollbarColorProperty
      with ScrollbarWidthProperty
      with ShapeRenderingProperty
-     with StopColorProperty
      with StrokeLinecapProperty
      with StrokeLinejoinProperty
-     with StrokeProperty
      with TableLayoutProperty
      with TextAlignLastProperty
      with TextAlignProperty
      with TextAnchorProperty
-     with TextDecorationColorProperty
      with TextDecorationSkipInkProperty
      with TextDecorationStyleProperty
-     with TextEmphasisColorProperty
      with TextJustifyProperty
      with TextOrientationProperty
      with TextRenderingProperty
@@ -173,13 +126,9 @@ trait Globals
      with VectorEffectProperty
      with VisibilityProperty
      with WebkitAppearanceProperty
-     with WebkitBorderBeforeColorProperty
      with WebkitMaskRepeatXProperty
      with WebkitMaskRepeatYProperty
      with WebkitOverflowScrollingProperty
-     with WebkitTapHighlightColorProperty
-     with WebkitTextFillColorProperty
-     with WebkitTextStrokeColorProperty
      with WebkitTouchCalloutProperty
      with WebkitUserModifyProperty
      with WhiteSpaceProperty
@@ -200,6 +149,7 @@ trait Globals
      with _BackgroundAttachmentProperty
      with _BackgroundBlendModeProperty
      with _BackgroundClipProperty
+     with _BackgroundColorProperty
      with _BackgroundImageProperty
      with _BackgroundOriginProperty
      with _BackgroundPositionProperty[js.Any]
@@ -212,31 +162,52 @@ trait Globals
      with _BlockOverflowProperty
      with _BlockSizeProperty[js.Any]
      with _BorderBlockColorProperty
+     with _BorderBlockEndColorProperty
      with _BorderBlockEndProperty[js.Any]
+     with _BorderBlockEndWidthProperty[js.Any]
      with _BorderBlockProperty[js.Any]
+     with _BorderBlockStartColorProperty
      with _BorderBlockStartProperty[js.Any]
+     with _BorderBlockStartWidthProperty[js.Any]
+     with _BorderBlockWidthProperty[js.Any]
+     with _BorderBottomColorProperty
      with _BorderBottomProperty[js.Any]
+     with _BorderBottomWidthProperty[js.Any]
      with _BorderColorProperty
      with _BorderImageProperty
      with _BorderImageRepeatProperty
      with _BorderImageSourceProperty
      with _BorderImageWidthProperty[js.Any]
      with _BorderInlineColorProperty
+     with _BorderInlineEndColorProperty
      with _BorderInlineEndProperty[js.Any]
+     with _BorderInlineEndWidthProperty[js.Any]
      with _BorderInlineProperty[js.Any]
+     with _BorderInlineStartColorProperty
      with _BorderInlineStartProperty[js.Any]
+     with _BorderInlineStartWidthProperty[js.Any]
+     with _BorderInlineWidthProperty[js.Any]
+     with _BorderLeftColorProperty
      with _BorderLeftProperty[js.Any]
+     with _BorderLeftWidthProperty[js.Any]
      with _BorderProperty[js.Any]
+     with _BorderRightColorProperty
      with _BorderRightProperty[js.Any]
+     with _BorderRightWidthProperty[js.Any]
      with _BorderStyleProperty
+     with _BorderTopColorProperty
      with _BorderTopProperty[js.Any]
+     with _BorderTopWidthProperty[js.Any]
      with _BorderWidthProperty[js.Any]
      with _BottomProperty[js.Any]
      with _BoxShadowProperty
+     with _CaretColorProperty
      with _ClipPathProperty
      with _ClipProperty
+     with _ColorProperty
      with _ColumnCountProperty
      with _ColumnGapProperty[js.Any]
+     with _ColumnRuleColorProperty
      with _ColumnRuleProperty[js.Any]
      with _ColumnRuleStyleProperty
      with _ColumnRuleWidthProperty[js.Any]
@@ -248,16 +219,19 @@ trait Globals
      with _CounterResetProperty
      with _CursorProperty
      with _DisplayProperty
+     with _FillProperty
      with _FilterProperty
      with _FlexBasisProperty[js.Any]
      with _FlexFlowProperty
      with _FlexProperty[js.Any]
+     with _FloodColorProperty
      with _FontFamilyProperty
      with _FontFeatureSettingsProperty
      with _FontLanguageOverrideProperty
      with _FontProperty
      with _FontSizeAdjustProperty
      with _FontSizeProperty[js.Any]
+     with _FontStretchProperty
      with _FontStyleProperty
      with _FontSynthesisProperty
      with _FontVariantAlternatesProperty
@@ -266,6 +240,7 @@ trait Globals
      with _FontVariantNumericProperty
      with _FontVariantProperty
      with _FontVariationSettingsProperty
+     with _FontWeightProperty
      with _GapProperty[js.Any]
      with _GlyphOrientationVerticalProperty
      with _GridAutoColumnsProperty[js.Any]
@@ -291,6 +266,7 @@ trait Globals
      with _JustifySelfProperty
      with _LeftProperty[js.Any]
      with _LetterSpacingProperty[js.Any]
+     with _LightingColorProperty
      with _LineClampProperty
      with _LineHeightProperty[js.Any]
      with _ListStyleImageProperty
@@ -347,16 +323,30 @@ trait Globals
      with _MsHyphenateLimitLinesProperty
      with _MsScrollLimitXMaxProperty[js.Any]
      with _MsScrollLimitYMaxProperty[js.Any]
+     with _MsScrollbar3dlightColorProperty
+     with _MsScrollbarArrowColorProperty
+     with _MsScrollbarBaseColorProperty
+     with _MsScrollbarDarkshadowColorProperty
+     with _MsScrollbarFaceColorProperty
+     with _MsScrollbarHighlightColorProperty
+     with _MsScrollbarShadowColorProperty
+     with _MsScrollbarTrackColorProperty
+     with _ObjectPositionProperty[js.Any]
+     with _OffsetAnchorProperty[js.Any]
      with _OffsetPathProperty
+     with _OffsetPositionProperty[js.Any]
      with _OffsetProperty[js.Any]
      with _OffsetRotateProperty
+     with _OutlineColorProperty
      with _OutlineProperty[js.Any]
      with _OutlineStyleProperty
+     with _OutlineWidthProperty[js.Any]
      with _OverflowBlockProperty
      with _OverflowInlineProperty
      with _OverflowProperty
      with _OverscrollBehaviorProperty
      with _PaintOrderProperty
+     with _PerspectiveOriginProperty[js.Any]
      with _PerspectiveProperty[js.Any]
      with _PlaceContentProperty
      with _PlaceItemsProperty
@@ -387,15 +377,21 @@ trait Globals
      with _ScrollPaddingTopProperty[js.Any]
      with _ScrollSnapAlignProperty
      with _ScrollSnapCoordinateProperty[js.Any]
+     with _ScrollSnapDestinationProperty[js.Any]
      with _ScrollSnapPointsXProperty
      with _ScrollSnapPointsYProperty
      with _ScrollSnapTypeProperty
+     with _ScrollbarColorProperty
      with _ShapeOutsideProperty
+     with _StopColorProperty
      with _StrokeDasharrayProperty[js.Any]
+     with _StrokeProperty
      with _TextCombineUprightProperty
+     with _TextDecorationColorProperty
      with _TextDecorationLineProperty
      with _TextDecorationProperty
      with _TextDecorationSkipProperty
+     with _TextEmphasisColorProperty
      with _TextEmphasisProperty
      with _TextEmphasisStyleProperty
      with _TextOverflowProperty
@@ -411,6 +407,7 @@ trait Globals
      with _TransitionTimingFunctionProperty
      with _TranslateProperty[js.Any]
      with _VerticalAlignProperty[js.Any]
+     with _WebkitBorderBeforeColorProperty
      with _WebkitBorderBeforeProperty[js.Any]
      with _WebkitBorderBeforeStyleProperty
      with _WebkitBorderBeforeWidthProperty[js.Any]
@@ -427,6 +424,9 @@ trait Globals
      with _WebkitMaskProperty[js.Any]
      with _WebkitMaskRepeatProperty
      with _WebkitMaskSizeProperty[js.Any]
+     with _WebkitTapHighlightColorProperty
+     with _WebkitTextFillColorProperty
+     with _WebkitTextStrokeColorProperty
      with _WebkitTextStrokeProperty[js.Any]
      with _WidthProperty[js.Any]
      with _WillChangeProperty

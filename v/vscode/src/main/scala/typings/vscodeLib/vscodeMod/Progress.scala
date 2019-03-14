@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 trait Progress[T] extends js.Object {
   /**
   		 * Report a progress update.
-  		 * @param value A progress item, like a message and/or an
-  		 * report on how much work finished
+  		 * @param value A progress item, like a message or an updated percentage value
   		 */
   def report(value: T): scala.Unit
 }

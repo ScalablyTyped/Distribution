@@ -35,9 +35,11 @@ trait Options extends js.Object {
     */
   var `type`: js.UndefOr[AlertType] = js.undefined
   /**
-    * Integer
+    * Integer or 'auto'
     */
-  var width: js.UndefOr[scala.Double] = js.undefined
+  var width: js.UndefOr[
+    scala.Double | bootstrapDashGrowlDashIfightcrimeLib.bootstrapDashGrowlDashIfightcrimeLibStrings.auto
+  ] = js.undefined
 }
 
 object Options {
@@ -50,7 +52,7 @@ object Options {
     offset: OffsetOption = null,
     stackup_spacing: scala.Int | scala.Double = null,
     `type`: AlertType = null,
-    width: scala.Int | scala.Double = null
+    width: scala.Double | bootstrapDashGrowlDashIfightcrimeLib.bootstrapDashGrowlDashIfightcrimeLibStrings.auto = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (align != null) __obj.updateDynamic("align")(align)

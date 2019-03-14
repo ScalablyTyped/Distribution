@@ -26,7 +26,7 @@ class SymbolInformation protected () extends js.Object {
   		 * @param name The name of the symbol.
   		 * @param kind The kind of the symbol.
   		 * @param containerName The name of the symbol containing the symbol.
-  		 * @param location The location of the symbol.
+  		 * @param location The the location of the symbol.
   		 */
   def this(name: java.lang.String, kind: SymbolKind, containerName: java.lang.String, location: Location) = this()
   def this(name: java.lang.String, kind: SymbolKind, range: Range, uri: Uri) = this()

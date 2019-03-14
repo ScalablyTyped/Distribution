@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object pDashEventMod {
-  type AddRemoveListener[FirstArgumentType, RestArgumentsType] = js.Function2[
+  type AddRemoveListener[Arguments /* <: pDashEventLib.Array[_] */] = js.Function2[
     /* event */ java.lang.String | js.Symbol, 
-    /* listener */ js.Function2[/* firstArgument */ FirstArgumentType, /* repeated */ RestArgumentsType, scala.Unit], 
+    /* listener */ js.Function1[/* args */ Arguments, scala.Unit], 
     scala.Unit
   ]
-  type FilterFunction[ElementType] = js.Function1[/* element */ ElementType, scala.Boolean]
+  type FilterFunction[ElementType /* <: pDashEventLib.Array[_] */] = js.Function1[/* args */ ElementType, scala.Boolean]
 }

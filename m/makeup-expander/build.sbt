@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "makeup-expander"
-version := "0.4-dt-20181022Z-c5cdb7"
+version := "0.6-dt-20190313Z-de8b3a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

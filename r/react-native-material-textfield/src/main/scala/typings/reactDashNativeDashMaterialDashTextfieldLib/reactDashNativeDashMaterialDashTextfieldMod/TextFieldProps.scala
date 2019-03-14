@@ -107,6 +107,7 @@ object TextFieldProps {
     labelPadding: scala.Int | scala.Double = null,
     labelTextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     lineWidth: scala.Int | scala.Double = null,
+    maxFontSizeMultiplier: scala.Int | scala.Double = null,
     maxLength: scala.Int | scala.Double = null,
     multiline: js.UndefOr[scala.Boolean] = js.undefined,
     nativeID: java.lang.String = null,
@@ -229,6 +230,7 @@ object TextFieldProps {
     if (labelPadding != null) __obj.updateDynamic("labelPadding")(labelPadding.asInstanceOf[js.Any])
     if (labelTextStyle != null) __obj.updateDynamic("labelTextStyle")(labelTextStyle.asInstanceOf[js.Any])
     if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (maxFontSizeMultiplier != null) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
     if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)

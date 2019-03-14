@@ -9,11 +9,12 @@ package object libCjsInterfacesClassApiMod {
   type ConnectDragPreview = DragElementWrapper[reactDashDndLib.libCjsInterfacesOptionsMod.DragPreviewOptions]
   type ConnectDragSource = DragElementWrapper[reactDashDndLib.libCjsInterfacesOptionsMod.DragSourceOptions]
   type ConnectDropTarget = js.Function1[
-    /* elementOrNode */ reactLib.reactMod.ReactNs.ReactElement[js.Any], 
+    /* elementOrNode */ ConnectedElement, 
     reactLib.reactMod.ReactNs.ReactElement[js.Any]
   ]
+  type ConnectedElement = reactLib.reactMod.ReactNs.ReactElement[js.Any] | stdLib.Element | scala.Null
   type DragElementWrapper[Options] = js.Function2[
-    /* elementOrNode */ reactLib.reactMod.ReactNs.ReactElement[js.Any] | stdLib.Element, 
+    /* elementOrNode */ ConnectedElement, 
     /* options */ js.UndefOr[Options], 
     reactLib.reactMod.ReactNs.ReactElement[js.Any]
   ]

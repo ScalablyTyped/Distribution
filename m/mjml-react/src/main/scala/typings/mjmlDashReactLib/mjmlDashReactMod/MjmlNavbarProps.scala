@@ -50,7 +50,7 @@ object MjmlNavbarProps {
     if (hamburger != null) __obj.updateDynamic("hamburger")(hamburger)
     if (icoAlign != null) __obj.updateDynamic("icoAlign")(icoAlign)
     if (icoClose != null) __obj.updateDynamic("icoClose")(icoClose)
-    if (icoColor != null) __obj.updateDynamic("icoColor")(icoColor)
+    if (icoColor != null) __obj.updateDynamic("icoColor")(icoColor.asInstanceOf[js.Any])
     if (icoFontSize != null) __obj.updateDynamic("icoFontSize")(icoFontSize)
     if (icoLineHeight != null) __obj.updateDynamic("icoLineHeight")(icoLineHeight)
     if (icoOpen != null) __obj.updateDynamic("icoOpen")(icoOpen)

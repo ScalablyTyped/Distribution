@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "promised-ldap"
-version := "0.3-dt-20181124Z-3000b0"
+version := "0.3-dt-20181124Z-7e7d23"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ldapjs" % "1.0-dt-20180214Z-5e4fff",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190312Z-f6d9fe",
+  "org.scalablytyped" %%% "ldapjs" % "1.0-dt-20180214Z-11d37e",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190313Z-f6d9fe",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

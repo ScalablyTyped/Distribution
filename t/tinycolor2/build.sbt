@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tinycolor2"
-version := "1.4-dt-20180731Z-08f6e1"
+version := "1.4-dt-20180731Z-3d142a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

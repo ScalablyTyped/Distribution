@@ -113,6 +113,7 @@
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_AllowSearch) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(data) / TsDeclInterface(PivotGridDataSourceField) / TsMemberProperty(headerFilter) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Children) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(data) / TsDeclInterface(PivotGridDataSourceField) / TsMemberFunction(sortingMethod) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Children) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(data) / TsDeclInterface(PivotGridDataSourceField) / TsMemberFunction(sortingMethod) / TsFunSig() / TsFunParam() / TsTypeObject())] 
+[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Name) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(exporter) / TsDeclInterface(ExcelDataGridCell) / TsMemberProperty(groupSummaryItems) / TsTypeRef() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Element) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(framework) / TsDeclTypeAlias(dxAction) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_ComponentElementModelAny) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(framework) / TsDeclInterface(dxCommandOptions) / TsMemberProperty(onExecute) / TsTypeUnion() / TsTypeFunction() / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Direction) [id => devextreme, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(devextreme/bundles/dx.all) / TsDeclNamespace(DevExpress) / TsDeclNamespace(framework) / TsDeclNamespace(html) / TsDeclInterface(HtmlApplication) / TsMemberFunction(navigate) / TsFunSig() / TsFunParam() / TsTypeObject())] 
@@ -596,6 +597,21 @@
 	at scala.collection.parallel.Task.tryLeaf$(Tasks.scala:50)
 	at scala.collection.parallel.ParIterableLike$Map.tryLeaf(ParIterableLike.scala:1053)
 	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal(Tasks.scala:170)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal$(Tasks.scala:157)
+	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.internal(Tasks.scala:440)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.compute(Tasks.scala:150)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.compute$(Tasks.scala:149)
+	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.compute(Tasks.scala:440)
+	at java.util.concurrent.RecursiveAction.exec(RecursiveAction.java:189)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool.helpStealer(ForkJoinPool.java:1958)
+	at java.util.concurrent.ForkJoinPool.awaitJoin(ForkJoinPool.java:2047)
+	at java.util.concurrent.ForkJoinTask.doJoin(ForkJoinTask.java:390)
+	at java.util.concurrent.ForkJoinTask.join(ForkJoinTask.java:719)
+	at scala.collection.parallel.ForkJoinTasks$WrappedTask.sync(Tasks.scala:379)
+	at scala.collection.parallel.ForkJoinTasks$WrappedTask.sync$(Tasks.scala:379)
+	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.sync(Tasks.scala:440)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal(Tasks.scala:174)
 	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal$(Tasks.scala:157)
 	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.internal(Tasks.scala:440)
 	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.compute(Tasks.scala:150)

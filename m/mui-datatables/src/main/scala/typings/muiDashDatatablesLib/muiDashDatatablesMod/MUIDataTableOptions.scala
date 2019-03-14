@@ -19,7 +19,14 @@ trait MUIDataTableOptions extends js.Object {
     ]
   ] = js.undefined
   var customToolbar: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
-  var customToolbarSelect: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var customToolbarSelect: js.UndefOr[
+    js.Function3[
+      /* selectedRows */ muiDashDatatablesLib.Anon_Data, 
+      /* displayData */ js.Array[muiDashDatatablesLib.Anon_DataDataIndex], 
+      /* setSelectedRows */ js.Function1[/* rows */ js.Array[scala.Double], scala.Unit], 
+      reactLib.reactMod.ReactNs.ReactNode
+    ]
+  ] = js.undefined
   var download: js.UndefOr[scala.Boolean] = js.undefined
   var downloadOptions: js.UndefOr[muiDashDatatablesLib.Anon_Filename] = js.undefined
   var elevation: js.UndefOr[scala.Double] = js.undefined
@@ -95,7 +102,7 @@ object MUIDataTableOptions {
     customFooter: () => reactLib.reactMod.ReactNs.ReactNode = null,
     customSort: (/* data */ js.Array[_], /* colIndex */ scala.Double, /* order */ java.lang.String) => js.Array[_] = null,
     customToolbar: () => reactLib.reactMod.ReactNs.ReactNode = null,
-    customToolbarSelect: () => reactLib.reactMod.ReactNs.ReactNode = null,
+    customToolbarSelect: (/* selectedRows */ muiDashDatatablesLib.Anon_Data, /* displayData */ js.Array[muiDashDatatablesLib.Anon_DataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[scala.Double], scala.Unit]) => reactLib.reactMod.ReactNs.ReactNode = null,
     download: js.UndefOr[scala.Boolean] = js.undefined,
     downloadOptions: muiDashDatatablesLib.Anon_Filename = null,
     elevation: scala.Int | scala.Double = null,
@@ -140,7 +147,7 @@ object MUIDataTableOptions {
     if (customFooter != null) __obj.updateDynamic("customFooter")(js.Any.fromFunction0(customFooter))
     if (customSort != null) __obj.updateDynamic("customSort")(js.Any.fromFunction3(customSort))
     if (customToolbar != null) __obj.updateDynamic("customToolbar")(js.Any.fromFunction0(customToolbar))
-    if (customToolbarSelect != null) __obj.updateDynamic("customToolbarSelect")(js.Any.fromFunction0(customToolbarSelect))
+    if (customToolbarSelect != null) __obj.updateDynamic("customToolbarSelect")(js.Any.fromFunction3(customToolbarSelect))
     if (!js.isUndefined(download)) __obj.updateDynamic("download")(download)
     if (downloadOptions != null) __obj.updateDynamic("downloadOptions")(downloadOptions)
     if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])

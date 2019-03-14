@@ -12,6 +12,5 @@ package object viewportDashMercatorDashProjectMod {
   type DistanceScalesInput = BaseDistanceScalesInput with (viewportDashMercatorDashProjectLib.Anon_Zoom | BaseDistanceScalesInput) with viewportDashMercatorDashProjectLib.Anon_Scale
   type HighPrecisionDistanceScalesInput = BaseHighPrecisionDistanceScalesInput with (viewportDashMercatorDashProjectLib.Anon_Zoom | BaseHighPrecisionDistanceScalesInput) with viewportDashMercatorDashProjectLib.Anon_Scale
   type Padding = scala.Double | viewportDashMercatorDashProjectLib.Anon_Bottom
-  type ProjectionMatrix = js.Array[scala.Double]
   type ViewMatrix = js.Array[scala.Double]
 }

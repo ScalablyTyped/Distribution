@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait ChromePickerProps
   extends reactDashColorLib.reactDashColorMod.ColorPickerProps[ChromePicker] {
   var disableAlpha: js.UndefOr[scala.Boolean] = js.undefined
+  var styles: js.UndefOr[ChromePickerStyles] = js.undefined
 }
 
 object ChromePickerProps {
@@ -18,7 +19,8 @@ object ChromePickerProps {
     key: reactLib.reactMod.ReactNs.Key = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
-    ref: reactLib.reactMod.ReactNs.LegacyRef[ChromePicker] = null
+    ref: reactLib.reactMod.ReactNs.LegacyRef[ChromePicker] = null,
+    styles: ChromePickerStyles = null
   ): ChromePickerProps = {
     val __obj = js.Dynamic.literal()
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
@@ -27,6 +29,7 @@ object ChromePickerProps {
     if (onChange != null) __obj.updateDynamic("onChange")(onChange)
     if (onChangeComplete != null) __obj.updateDynamic("onChangeComplete")(onChangeComplete)
     if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
     __obj.asInstanceOf[ChromePickerProps]
   }
 }

@@ -24,9 +24,9 @@ object Anon_FontFamily {
   ): Anon_FontFamily = {
     val __obj = js.Dynamic.literal(fontSize = fontSize)
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontWeightLight != null) __obj.updateDynamic("fontWeightLight")(fontWeightLight)
-    if (fontWeightMedium != null) __obj.updateDynamic("fontWeightMedium")(fontWeightMedium)
-    if (fontWeightRegular != null) __obj.updateDynamic("fontWeightRegular")(fontWeightRegular)
+    if (fontWeightLight != null) __obj.updateDynamic("fontWeightLight")(fontWeightLight.asInstanceOf[js.Any])
+    if (fontWeightMedium != null) __obj.updateDynamic("fontWeightMedium")(fontWeightMedium.asInstanceOf[js.Any])
+    if (fontWeightRegular != null) __obj.updateDynamic("fontWeightRegular")(fontWeightRegular.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_FontFamily]
   }
 }

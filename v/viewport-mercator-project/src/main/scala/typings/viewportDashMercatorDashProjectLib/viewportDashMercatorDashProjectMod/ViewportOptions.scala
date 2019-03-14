@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ViewportOptions extends js.Object {
   var height: js.UndefOr[scala.Double] = js.undefined
-  var projectionMatrix: js.UndefOr[ProjectionMatrix] = js.undefined
+  var projectionMatrix: js.UndefOr[ViewMatrix] = js.undefined
   var viewMatrix: js.UndefOr[ViewMatrix] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
 }
@@ -16,7 +16,7 @@ object ViewportOptions {
   @scala.inline
   def apply(
     height: scala.Int | scala.Double = null,
-    projectionMatrix: ProjectionMatrix = null,
+    projectionMatrix: ViewMatrix = null,
     viewMatrix: ViewMatrix = null,
     width: scala.Int | scala.Double = null
   ): ViewportOptions = {

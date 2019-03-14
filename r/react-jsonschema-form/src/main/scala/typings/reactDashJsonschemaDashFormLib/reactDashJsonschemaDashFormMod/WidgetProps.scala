@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
   var disabled: scala.Boolean
   var formContext: js.Any
   var id: java.lang.String
+  var label: java.lang.String
   var options: js.Object
   var readonly: scala.Boolean
   var required: scala.Boolean
@@ -28,6 +29,7 @@ object WidgetProps {
     disabled: scala.Boolean,
     formContext: js.Any,
     id: java.lang.String,
+    label: java.lang.String,
     onBlur: (java.lang.String, java.lang.String) => scala.Unit,
     onChange: js.Any => scala.Unit,
     onFocus: (java.lang.String, java.lang.String) => scala.Unit,
@@ -37,7 +39,7 @@ object WidgetProps {
     schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
     value: js.Any
   ): WidgetProps = {
-    val __obj = js.Dynamic.literal(autofocus = autofocus, disabled = disabled, formContext = formContext, id = id, onBlur = js.Any.fromFunction2(onBlur), onChange = js.Any.fromFunction1(onChange), onFocus = js.Any.fromFunction2(onFocus), options = options, readonly = readonly, required = required, schema = schema, value = value)
+    val __obj = js.Dynamic.literal(autofocus = autofocus, disabled = disabled, formContext = formContext, id = id, label = label, onBlur = js.Any.fromFunction2(onBlur), onChange = js.Any.fromFunction1(onChange), onFocus = js.Any.fromFunction2(onFocus), options = options, readonly = readonly, required = required, schema = schema, value = value)
   
     __obj.asInstanceOf[WidgetProps]
   }

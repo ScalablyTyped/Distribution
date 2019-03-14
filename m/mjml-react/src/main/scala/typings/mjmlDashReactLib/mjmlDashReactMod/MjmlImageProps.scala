@@ -39,7 +39,7 @@ object MjmlImageProps {
     if (alt != null) __obj.updateDynamic("alt")(alt)
     if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (containerBackgroundColor != null) __obj.updateDynamic("containerBackgroundColor")(containerBackgroundColor)
+    if (containerBackgroundColor != null) __obj.updateDynamic("containerBackgroundColor")(containerBackgroundColor.asInstanceOf[js.Any])
     if (fluidOnMobile != null) __obj.updateDynamic("fluidOnMobile")(fluidOnMobile)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (src != null) __obj.updateDynamic("src")(src)

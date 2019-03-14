@@ -13,14 +13,14 @@ class EggApplication ()
     * export context base classes, let framework can impl sub class and over context extend easily.
     */
   var ContextCookies: org.scalablytyped.runtime.Instantiable0[eggDashCookiesLib.eggDashCookiesMod.namespaced] with eggLib.Anon_EggCookies = js.native
-  var ContextHttpClient: org.scalablytyped.runtime.Instantiable1[/* ctx */ eggDashViewLib.eggMod.Context, EggContextHttpClient] = js.native
+  var ContextHttpClient: org.scalablytyped.runtime.Instantiable1[/* ctx */ Context, EggContextHttpClient] = js.native
   var ContextLogger: org.scalablytyped.runtime.Instantiable2[
     /* ctx */ js.Any, 
     /* logger */ eggDashLoggerLib.eggDashLoggerMod.Logger[eggDashLoggerLib.eggDashLoggerMod.LoggerOptions], 
     eggDashLoggerLib.eggDashLoggerMod.EggContextLogger
   ] = js.native
   var Controller: org.scalablytyped.runtime.Instantiable0[Controller] = js.native
-  var HttpClient: org.scalablytyped.runtime.Instantiable1[/* app */ eggDashViewLib.eggMod.Application, EggHttpClient] = js.native
+  var HttpClient: org.scalablytyped.runtime.Instantiable1[/* app */ Application, EggHttpClient] = js.native
   var Service: org.scalablytyped.runtime.Instantiable0[Service] = js.native
   var Subscription: org.scalablytyped.runtime.Instantiable0[Subscription] = js.native
   // tslint:disable-line
@@ -31,7 +31,7 @@ class EggApplication ()
   /**
     * The configuration of application
     */
-  var config: eggDashViewLib.eggMod.EggAppConfig = js.native
+  var config: EggAppConfig = js.native
   /**
     * core logger for framework and plugins, log file is $HOME/logs/{appname}/egg-web
     */
@@ -113,8 +113,8 @@ class EggApplication ()
     * @param {Request} req - if you want to mock request like querystring, you can pass an object to this function.
     * @return {Context} context
     */
-  def createAnonymousContext(): eggDashViewLib.eggMod.Context = js.native
-  def createAnonymousContext(req: stdLib.Request): eggDashViewLib.eggMod.Context = js.native
+  def createAnonymousContext(): Context = js.native
+  def createAnonymousContext(req: Request): Context = js.native
   /**
     * http request helper base on httpclient, it will auto save httpclient log.
     * Keep the same api with httpclient.request(url, args).

@@ -191,6 +191,7 @@ trait ColumnDefinition
 object ColumnDefinition {
   @scala.inline
   def apply(
+    field: java.lang.String,
     title: java.lang.String,
     accessor: CustomAccessor = null,
     accessorClipboard: CustomAccessor = null,
@@ -224,7 +225,6 @@ object ColumnDefinition {
     editableTitle: js.UndefOr[scala.Boolean] = js.undefined,
     editor: Editor = null,
     editorParams: EditorParams = null,
-    field: java.lang.String = null,
     formatter: Formatter = null,
     formatterParams: FormatterParams = null,
     frozen: js.UndefOr[scala.Boolean] = js.undefined,
@@ -290,7 +290,7 @@ object ColumnDefinition {
     widthGrow: scala.Int | scala.Double = null,
     widthShrink: scala.Int | scala.Double = null
   ): ColumnDefinition = {
-    val __obj = js.Dynamic.literal(title = title)
+    val __obj = js.Dynamic.literal(field = field, title = title)
     if (accessor != null) __obj.updateDynamic("accessor")(accessor)
     if (accessorClipboard != null) __obj.updateDynamic("accessorClipboard")(accessorClipboard)
     if (accessorClipboardParams != null) __obj.updateDynamic("accessorClipboardParams")(accessorClipboardParams.asInstanceOf[js.Any])
@@ -323,7 +323,6 @@ object ColumnDefinition {
     if (!js.isUndefined(editableTitle)) __obj.updateDynamic("editableTitle")(editableTitle)
     if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
     if (editorParams != null) __obj.updateDynamic("editorParams")(editorParams.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field)
     if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
     if (formatterParams != null) __obj.updateDynamic("formatterParams")(formatterParams.asInstanceOf[js.Any])
     if (!js.isUndefined(frozen)) __obj.updateDynamic("frozen")(frozen)

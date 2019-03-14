@@ -15,14 +15,12 @@ trait TypeDefinitionProvider extends js.Object {
   		 * @return A definition or a thenable that resolves to such. The lack of a result can be
   		 * signaled by returning `undefined` or `null`.
   		 */
-  def provideTypeDefinition(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[Definition | js.Array[DefinitionLink]]
+  def provideTypeDefinition(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[Definition]
 }
 
 object TypeDefinitionProvider {
   @scala.inline
-  def apply(
-    provideTypeDefinition: (TextDocument, Position, CancellationToken) => ProviderResult[Definition | js.Array[DefinitionLink]]
-  ): TypeDefinitionProvider = {
+  def apply(provideTypeDefinition: (TextDocument, Position, CancellationToken) => ProviderResult[Definition]): TypeDefinitionProvider = {
     val __obj = js.Dynamic.literal(provideTypeDefinition = js.Any.fromFunction3(provideTypeDefinition))
   
     __obj.asInstanceOf[TypeDefinitionProvider]

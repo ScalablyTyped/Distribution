@@ -18,6 +18,7 @@ trait Array[T] extends js.Object {
   /**
     * Adds objects to the array
     * @param objects The array of objects to add
+    * @param generateId Auto-generate a property to identify object in later processes
     */
   def AddRange(objects: Array[T]): Array[T] = js.native
   def AddRange(objects: Array[T], generateId: scala.Boolean): Array[T] = js.native
@@ -228,18 +229,18 @@ trait Array[T] extends js.Object {
     * Reverses the array
     */
   def Reverse(): Array[T] = js.native
-  def Select(selector: java.lang.String): Array[_] = js.native
+  def Select[Y](selector: java.lang.String): Array[Y] = js.native
   /**
     * Select the properties for a new array
     * @param selector A function (or a function-string) that returns a new object
     */
-  def Select(selector: js.Function1[/* item */ T, _]): Array[_] = js.native
-  def SelectMany(selector: java.lang.String): Array[_] = js.native
+  def Select[Y](selector: js.Function1[/* item */ T, Y]): Array[Y] = js.native
+  def SelectMany[Y](selector: java.lang.String): Array[Y] = js.native
   /**
     * Select the properties with an array as value and concats them
     * @param selector A function (or a function-string) that returns the array with elements to select
     */
-  def SelectMany(selector: js.Function1[/* item */ T, _]): Array[_] = js.native
+  def SelectMany[Y](selector: js.Function1[/* item */ T, Array[Y]]): Array[Y] = js.native
   /**
     * Compares to sequences of objects
     * @param array The array to compare
@@ -347,17 +348,23 @@ trait Array[T] extends js.Object {
     * @param valueSelector The selector-function (or function-string) that selects the property for sorting
     */
   def ThenByDescending(valueSelector: js.Function1[/* item */ T, _]): Array[T] = js.native
-  def ToDictionary(keySelector: java.lang.String): js.Any = js.native
-  def ToDictionary(keySelector: java.lang.String, valueSelector: java.lang.String): js.Any = js.native
-  def ToDictionary(keySelector: java.lang.String, valueSelector: js.Function1[/* item */ T, _]): js.Any = js.native
+  def ToDictionary[Y](keySelector: java.lang.String): /* import warning: ImportType.apply Failed type conversion: {[prop: string] : Y, [prop: number] : Y} */ js.Any = js.native
+  def ToDictionary[Y](keySelector: java.lang.String, valueSelector: java.lang.String): /* import warning: ImportType.apply Failed type conversion: {[prop: string] : Y, [prop: number] : Y} */ js.Any = js.native
+  def ToDictionary[Y](keySelector: java.lang.String, valueSelector: js.Function1[/* item */ T, Y]): /* import warning: ImportType.apply Failed type conversion: {[prop: string] : Y, [prop: number] : Y} */ js.Any = js.native
   /**
     * Converts the array to a dictionary
     * @param keySelector The selector-function (or function-string) to select property for key
     * @param valueSelector A selector-function (or function-string) to select property for value
     */
-  def ToDictionary(keySelector: js.Function1[/* item */ T, _]): js.Any = js.native
-  def ToDictionary(keySelector: js.Function1[/* item */ T, _], valueSelector: java.lang.String): js.Any = js.native
-  def ToDictionary(keySelector: js.Function1[/* item */ T, _], valueSelector: js.Function1[/* item */ T, _]): js.Any = js.native
+  def ToDictionary[Y](keySelector: js.Function1[/* item */ T, java.lang.String | scala.Double]): /* import warning: ImportType.apply Failed type conversion: {[prop: string] : Y, [prop: number] : Y} */ js.Any = js.native
+  def ToDictionary[Y](
+    keySelector: js.Function1[/* item */ T, java.lang.String | scala.Double],
+    valueSelector: java.lang.String
+  ): /* import warning: ImportType.apply Failed type conversion: {[prop: string] : Y, [prop: number] : Y} */ js.Any = js.native
+  def ToDictionary[Y](
+    keySelector: js.Function1[/* item */ T, java.lang.String | scala.Double],
+    valueSelector: js.Function1[/* item */ T, Y]
+  ): /* import warning: ImportType.apply Failed type conversion: {[prop: string] : Y, [prop: number] : Y} */ js.Any = js.native
   /**
     * Combines two arrays without duplicates
     * @param array The array to combine
@@ -385,12 +392,12 @@ trait Array[T] extends js.Object {
     * @param filter A function (or function-string) that returns a boolean when matching element was found
     */
   def Where(filter: js.Function2[/* item */ T, /* index */ js.UndefOr[scala.Double], scala.Boolean]): Array[T] = js.native
-  def Zip[T, X](array: Array[X], result: java.lang.String): Array[_] = js.native
+  def Zip[T, X, Y](array: Array[X], result: java.lang.String): Array[Y] = js.native
   /**
     * Combines the entries of two arrays using a custom function
     * @param array The array to combine
     * @param result The function (or function-string) to combine elements
     */
-  def Zip[T, X](array: Array[X], result: js.Function2[/* first */ T, /* second */ X, _]): Array[_] = js.native
+  def Zip[T, X, Y](array: Array[X], result: js.Function2[/* first */ T, /* second */ X, Y]): Array[Y] = js.native
 }
 

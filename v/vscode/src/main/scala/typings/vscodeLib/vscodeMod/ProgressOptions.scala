@@ -7,13 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait ProgressOptions extends js.Object {
   /**
-  		 * Controls if a cancel button should show to allow the user to
-  		 * cancel the long running operation.  Note that currently only
-  		 * `ProgressLocation.Notification` is supporting to show a cancel
-  		 * button.
-  		 */
-  var cancellable: js.UndefOr[scala.Boolean] = js.undefined
-  /**
   		 * The location at which progress should show.
   		 */
   var location: ProgressLocation
@@ -26,13 +19,8 @@ trait ProgressOptions extends js.Object {
 
 object ProgressOptions {
   @scala.inline
-  def apply(
-    location: ProgressLocation,
-    cancellable: js.UndefOr[scala.Boolean] = js.undefined,
-    title: java.lang.String = null
-  ): ProgressOptions = {
+  def apply(location: ProgressLocation, title: java.lang.String = null): ProgressOptions = {
     val __obj = js.Dynamic.literal(location = location)
-    if (!js.isUndefined(cancellable)) __obj.updateDynamic("cancellable")(cancellable)
     if (title != null) __obj.updateDynamic("title")(title)
     __obj.asInstanceOf[ProgressOptions]
   }

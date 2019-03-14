@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait _FontStretchAbsolute
-  extends csstypeLib.csstypeMod.FontStretchProperty
+  extends csstypeLib.csstypeMod._FontStretchProperty
 

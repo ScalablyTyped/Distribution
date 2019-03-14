@@ -16,6 +16,10 @@ trait IPayout
     */
   var arrival_date: scala.Double
   /**
+    * Returns true if the payout was created by an automated payout schedule, and false if it was requested manually.
+    */
+  var automatic: scala.Boolean
+  /**
     * Balance transaction that describes the impact of this transfer on your account balance. [Expandable]
     */
   var balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction
@@ -97,6 +101,7 @@ object IPayout {
   def apply(
     amount: scala.Double,
     arrival_date: scala.Double,
+    automatic: scala.Boolean,
     balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
     created: scala.Double,
     currency: java.lang.String,
@@ -115,7 +120,7 @@ object IPayout {
     status: stripeLib.stripeLibStrings.canceled | stripeLib.stripeLibStrings.failed | stripeLib.stripeLibStrings.in_transit | stripeLib.stripeLibStrings.paid | stripeLib.stripeLibStrings.pending,
     `type`: PayoutTypes
   ): IPayout = {
-    val __obj = js.Dynamic.literal(amount = amount, arrival_date = arrival_date, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, description = description, destination = destination.asInstanceOf[js.Any], failure_balance_transaction = failure_balance_transaction.asInstanceOf[js.Any], failure_code = failure_code, failure_message = failure_message, id = id, livemode = livemode, metadata = metadata, method = method, source_type = source_type.asInstanceOf[js.Any], statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount, arrival_date = arrival_date, automatic = automatic, balance_transaction = balance_transaction.asInstanceOf[js.Any], created = created, currency = currency, description = description, destination = destination.asInstanceOf[js.Any], failure_balance_transaction = failure_balance_transaction.asInstanceOf[js.Any], failure_code = failure_code, failure_message = failure_message, id = id, livemode = livemode, metadata = metadata, method = method, source_type = source_type.asInstanceOf[js.Any], statement_descriptor = statement_descriptor, status = status.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[IPayout]

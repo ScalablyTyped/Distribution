@@ -17,7 +17,7 @@ class Location protected () extends js.Object {
   		 */
   def this(uri: Uri, rangeOrPosition: Range) = this()
   /**
-  		 * The document range of this location.
+  		 * The document range of this locations.
   		 */
   var range: Range = js.native
   /**

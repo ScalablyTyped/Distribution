@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait DragSourceHookSpec[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps] extends js.Object {
   /**
-    * When the dragging starts, beginDrag is called.
+    * When the dragging starts, beginDrag is called. If an object is returned from this function it will overide the default dragItem
     */
   var begin: js.UndefOr[
     js.Function1[
       /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor, 
-      scala.Unit
+      js.UndefOr[DragObject]
     ]
   ] = js.undefined
   /**
@@ -102,7 +102,7 @@ object DragSourceHookSpec {
   @scala.inline
   def apply[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](
     item: DragObject,
-    begin: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => scala.Unit = null,
+    begin: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => js.UndefOr[DragObject] = null,
     canDrag: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => scala.Boolean = null,
     collect: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => CollectedProps = null,
     end: (/* dropResult */ js.UndefOr[DropResult], /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor) => scala.Unit = null,

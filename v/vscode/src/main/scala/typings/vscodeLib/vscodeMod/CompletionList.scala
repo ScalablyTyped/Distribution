@@ -17,7 +17,7 @@ class CompletionList () extends js.Object {
   def this(items: js.Array[CompletionItem]) = this()
   def this(items: js.Array[CompletionItem], isIncomplete: scala.Boolean) = this()
   /**
-  		 * This list is not complete. Further typing should result in recomputing
+  		 * This list it not complete. Further typing should result in recomputing
   		 * this list.
   		 */
   var isIncomplete: js.UndefOr[scala.Boolean] = js.native

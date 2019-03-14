@@ -31,7 +31,7 @@ class Position protected () extends js.Object {
   		 */
   def compareTo(other: Position): scala.Double = js.native
   /**
-  		 * Check if this position is after `other`.
+  		 * Check if `other` is after this position.
   		 *
   		 * @param other A position.
   		 * @return `true` if position is on a greater line
@@ -39,7 +39,7 @@ class Position protected () extends js.Object {
   		 */
   def isAfter(other: Position): scala.Boolean = js.native
   /**
-  		 * Check if this position is after or equal to `other`.
+  		 * Check if `other` is after or equal to this position.
   		 *
   		 * @param other A position.
   		 * @return `true` if position is on a greater line
@@ -47,7 +47,7 @@ class Position protected () extends js.Object {
   		 */
   def isAfterOrEqual(other: Position): scala.Boolean = js.native
   /**
-  		 * Check if this position is before `other`.
+  		 * Check if `other` is before this position.
   		 *
   		 * @param other A position.
   		 * @return `true` if position is on a smaller line
@@ -55,7 +55,7 @@ class Position protected () extends js.Object {
   		 */
   def isBefore(other: Position): scala.Boolean = js.native
   /**
-  		 * Check if this position is before or equal to `other`.
+  		 * Check if `other` is before or equal to this position.
   		 *
   		 * @param other A position.
   		 * @return `true` if position is on a smaller line
@@ -63,7 +63,7 @@ class Position protected () extends js.Object {
   		 */
   def isBeforeOrEqual(other: Position): scala.Boolean = js.native
   /**
-  		 * Check if this position is equal to `other`.
+  		 * Check if `other` equals this position.
   		 *
   		 * @param other A position.
   		 * @return `true` if the line and character of the given position are equal to

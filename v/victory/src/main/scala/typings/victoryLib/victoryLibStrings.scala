@@ -74,6 +74,10 @@ object victoryLibStrings {
     extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
+  sealed trait brush
+    extends victoryLib.victoryMod.ContainerType
+  
+  @js.native
   sealed trait bundle
     extends victoryLib.victoryMod.InterpolationPropType
   
@@ -137,6 +141,10 @@ object victoryLibStrings {
   @js.native
   sealed trait cubicOut
     extends victoryLib.victoryMod.AnimationEasing
+  
+  @js.native
+  sealed trait cursor
+    extends victoryLib.victoryMod.ContainerType
   
   @js.native
   sealed trait data extends js.Object
@@ -322,6 +330,10 @@ object victoryLibStrings {
     extends victoryLib.victoryMod.OrientationTypes
   
   @js.native
+  sealed trait selection
+    extends victoryLib.victoryMod.ContainerType
+  
+  @js.native
   sealed trait sin
     extends victoryLib.victoryMod.AnimationEasing
   
@@ -392,6 +404,10 @@ object victoryLibStrings {
   sealed trait vertical extends js.Object
   
   @js.native
+  sealed trait voronoi
+    extends victoryLib.victoryMod.ContainerType
+  
+  @js.native
   sealed trait warm
     extends victoryLib.victoryMod._ColorScalePropType
   
@@ -400,6 +416,10 @@ object victoryLibStrings {
   
   @js.native
   sealed trait y extends js.Object
+  
+  @js.native
+  sealed trait zoom
+    extends victoryLib.victoryMod.ContainerType
   
   @scala.inline
   def Anon_AxisAxisLabel: Anon_AxisAxisLabel = "Anon_AxisAxisLabel".asInstanceOf[Anon_AxisAxisLabel]
@@ -438,6 +458,8 @@ object victoryLibStrings {
   @scala.inline
   def bounceOut: bounceOut = "bounceOut".asInstanceOf[bounceOut]
   @scala.inline
+  def brush: brush = "brush".asInstanceOf[brush]
+  @scala.inline
   def bundle: bundle = "bundle".asInstanceOf[bundle]
   @scala.inline
   def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
@@ -469,6 +491,8 @@ object victoryLibStrings {
   def cubicInOut: cubicInOut = "cubicInOut".asInstanceOf[cubicInOut]
   @scala.inline
   def cubicOut: cubicOut = "cubicOut".asInstanceOf[cubicOut]
+  @scala.inline
+  def cursor: cursor = "cursor".asInstanceOf[cursor]
   @scala.inline
   def data: data = "data".asInstanceOf[data]
   @scala.inline
@@ -564,6 +588,8 @@ object victoryLibStrings {
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
+  def selection: selection = "selection".asInstanceOf[selection]
+  @scala.inline
   def sin: sin = "sin".asInstanceOf[sin]
   @scala.inline
   def sinIn: sinIn = "sinIn".asInstanceOf[sinIn]
@@ -600,10 +626,14 @@ object victoryLibStrings {
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   @scala.inline
+  def voronoi: voronoi = "voronoi".asInstanceOf[voronoi]
+  @scala.inline
   def warm: warm = "warm".asInstanceOf[warm]
   @scala.inline
   def x: x = "x".asInstanceOf[x]
   @scala.inline
   def y: y = "y".asInstanceOf[y]
+  @scala.inline
+  def zoom: zoom = "zoom".asInstanceOf[zoom]
 }
 

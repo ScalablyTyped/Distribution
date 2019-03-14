@@ -24,11 +24,6 @@ trait SourceControlResourceDecorations extends SourceControlResourceThemableDeco
   		 * be striked-through in the UI.
   		 */
   val strikeThrough: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-  		 * The title for a specific
-  		 * [source control resource state](#SourceControlResourceState).
-  		 */
-  val tooltip: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object SourceControlResourceDecorations {
@@ -38,8 +33,7 @@ object SourceControlResourceDecorations {
     faded: js.UndefOr[scala.Boolean] = js.undefined,
     iconPath: java.lang.String | Uri = null,
     light: SourceControlResourceThemableDecorations = null,
-    strikeThrough: js.UndefOr[scala.Boolean] = js.undefined,
-    tooltip: java.lang.String = null
+    strikeThrough: js.UndefOr[scala.Boolean] = js.undefined
   ): SourceControlResourceDecorations = {
     val __obj = js.Dynamic.literal()
     if (dark != null) __obj.updateDynamic("dark")(dark)
@@ -47,7 +41,6 @@ object SourceControlResourceDecorations {
     if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath.asInstanceOf[js.Any])
     if (light != null) __obj.updateDynamic("light")(light)
     if (!js.isUndefined(strikeThrough)) __obj.updateDynamic("strikeThrough")(strikeThrough)
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
     __obj.asInstanceOf[SourceControlResourceDecorations]
   }
 }

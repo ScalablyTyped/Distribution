@@ -47,7 +47,7 @@ trait StrictTabProps extends js.Object {
     *   pane: 'Welcome',
     * }
     */
-  var panes: js.UndefOr[js.Array[semanticDashUiDashReactLib.Anon_Content]] = js.undefined
+  var panes: js.UndefOr[js.Array[semanticDashUiDashReactLib.Anon_MenuItem]] = js.undefined
   /** A Tab can render only active pane. */
   var renderActiveOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -62,7 +62,7 @@ object StrictTabProps {
     menu: js.Any = null,
     menuPosition: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right = null,
     onTabChange: (/* event */ reactLib.reactMod.ReactNs.MouseEvent[stdLib.HTMLDivElement, reactLib.NativeMouseEvent], /* data */ TabProps) => scala.Unit = null,
-    panes: js.Array[semanticDashUiDashReactLib.Anon_Content] = null,
+    panes: js.Array[semanticDashUiDashReactLib.Anon_MenuItem] = null,
     renderActiveOnly: js.UndefOr[scala.Boolean] = js.undefined
   ): StrictTabProps = {
     val __obj = js.Dynamic.literal()

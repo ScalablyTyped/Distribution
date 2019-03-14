@@ -2656,7 +2656,6 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.BreakAfterProperty
        with csstypeLib.csstypeMod.BreakBeforeProperty
        with csstypeLib.csstypeMod.BreakInsideProperty
-       with csstypeLib.csstypeMod.CaretColorProperty
        with csstypeLib.csstypeMod.ColorInterpolationProperty
        with csstypeLib.csstypeMod.ColorRenderingProperty
        with csstypeLib.csstypeMod.ColumnFillProperty
@@ -2674,8 +2673,6 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.MsImeAlignProperty
        with csstypeLib.csstypeMod.MsOverflowStyleProperty
        with csstypeLib.csstypeMod.MsWrapFlowProperty
-       with csstypeLib.csstypeMod.OffsetAnchorProperty[js.Any]
-       with csstypeLib.csstypeMod.OffsetPositionProperty[js.Any]
        with csstypeLib.csstypeMod.OverflowAnchorProperty
        with csstypeLib.csstypeMod.OverflowXProperty
        with csstypeLib.csstypeMod.OverflowYProperty
@@ -2687,7 +2684,6 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod.PointerEventsProperty
        with csstypeLib.csstypeMod.RubyMergeProperty
        with csstypeLib.csstypeMod.ScrollBehaviorProperty
-       with csstypeLib.csstypeMod.ScrollbarColorProperty
        with csstypeLib.csstypeMod.ScrollbarWidthProperty
        with csstypeLib.csstypeMod.ShapeRenderingProperty
        with csstypeLib.csstypeMod.TableLayoutProperty
@@ -2703,6 +2699,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._BlockSizeProperty[js.Any]
        with csstypeLib.csstypeMod._BorderImageWidthProperty[js.Any]
        with csstypeLib.csstypeMod._BottomProperty[js.Any]
+       with csstypeLib.csstypeMod._CaretColorProperty
        with csstypeLib.csstypeMod._ClipProperty
        with csstypeLib.csstypeMod._ColumnCountProperty
        with csstypeLib.csstypeMod._ColumnWidthProperty[js.Any]
@@ -2741,6 +2738,8 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._MsHyphenateLimitCharsProperty
        with csstypeLib.csstypeMod._MsScrollLimitXMaxProperty[js.Any]
        with csstypeLib.csstypeMod._MsScrollLimitYMaxProperty[js.Any]
+       with csstypeLib.csstypeMod._OffsetAnchorProperty[js.Any]
+       with csstypeLib.csstypeMod._OffsetPositionProperty[js.Any]
        with csstypeLib.csstypeMod._OffsetProperty[js.Any]
        with csstypeLib.csstypeMod._OffsetRotateProperty
        with csstypeLib.csstypeMod._OutlineProperty[js.Any]
@@ -2770,6 +2769,7 @@ object csstypeLibStrings {
        with csstypeLib.csstypeMod._ScrollPaddingProperty[js.Any]
        with csstypeLib.csstypeMod._ScrollPaddingRightProperty[js.Any]
        with csstypeLib.csstypeMod._ScrollPaddingTopProperty[js.Any]
+       with csstypeLib.csstypeMod._ScrollbarColorProperty
        with csstypeLib.csstypeMod._TextSizeAdjustProperty
        with csstypeLib.csstypeMod._TextUnderlinePositionProperty
        with csstypeLib.csstypeMod._TopProperty[js.Any]
@@ -2907,7 +2907,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait bolder
-    extends csstypeLib.csstypeMod.FontWeightProperty
+    extends csstypeLib.csstypeMod._FontWeightProperty
   
   @js.native
   sealed trait border
@@ -3231,9 +3231,9 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait currentColor
-    extends csstypeLib.csstypeMod.FloodColorProperty
-       with csstypeLib.csstypeMod.LightingColorProperty
-       with csstypeLib.csstypeMod.StopColorProperty
+    extends csstypeLib.csstypeMod._FloodColorProperty
+       with csstypeLib.csstypeMod._LightingColorProperty
+       with csstypeLib.csstypeMod._StopColorProperty
   
   @js.native
   sealed trait currentcolor extends _Color
@@ -3249,7 +3249,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait dark
-    extends csstypeLib.csstypeMod.ScrollbarColorProperty
+    extends csstypeLib.csstypeMod._ScrollbarColorProperty
   
   @js.native
   sealed trait darkblue extends NamedColor
@@ -3854,7 +3854,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait invert
-    extends csstypeLib.csstypeMod.OutlineColorProperty
+    extends csstypeLib.csstypeMod._OutlineColorProperty
        with csstypeLib.csstypeMod._OutlineProperty[js.Any]
   
   @js.native
@@ -3960,7 +3960,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait light
-    extends csstypeLib.csstypeMod.ScrollbarColorProperty
+    extends csstypeLib.csstypeMod._ScrollbarColorProperty
   
   @js.native
   sealed trait lightblue extends NamedColor
@@ -3976,7 +3976,7 @@ object csstypeLibStrings {
   
   @js.native
   sealed trait lighter
-    extends csstypeLib.csstypeMod.FontWeightProperty
+    extends csstypeLib.csstypeMod._FontWeightProperty
   
   @js.native
   sealed trait lightgoldenrodyellow extends NamedColor

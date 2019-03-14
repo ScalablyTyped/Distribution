@@ -13,7 +13,11 @@ trait ImplementationMiddleware extends js.Object {
       /* position */ vscodeLib.vscodeMod.Position, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideImplementationSignature, 
-      vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]]
+      vscodeLib.vscodeMod.ProviderResult[
+        vscodeLib.vscodeMod.Definition | (js.Array[
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDefinitionLink */ _
+        ])
+      ]
     ]
   ] = js.undefined
 }
@@ -27,7 +31,11 @@ object ImplementationMiddleware {
       /* position */ vscodeLib.vscodeMod.Position, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideImplementationSignature, 
-      vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]]
+      vscodeLib.vscodeMod.ProviderResult[
+        vscodeLib.vscodeMod.Definition | (js.Array[
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDefinitionLink */ _
+        ])
+      ]
     ] = null
   ): ImplementationMiddleware = {
     val __obj = js.Dynamic.literal()

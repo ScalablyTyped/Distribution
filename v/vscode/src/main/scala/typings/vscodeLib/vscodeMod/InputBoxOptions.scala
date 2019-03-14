@@ -31,12 +31,7 @@ trait InputBoxOptions extends js.Object {
   		 * Return `undefined`, `null`, or the empty string when 'value' is valid.
   		 */
   var validateInput: js.UndefOr[
-    js.Function1[
-      /* value */ java.lang.String, 
-      js.UndefOr[
-        java.lang.String | scala.Null | (vscodeLib.Thenable[js.UndefOr[java.lang.String | scala.Null]])
-      ]
-    ]
+    js.Function1[/* value */ java.lang.String, js.UndefOr[java.lang.String | scala.Null]]
   ] = js.undefined
   /**
   		 * The value to prefill in the input box.
@@ -58,9 +53,7 @@ object InputBoxOptions {
     password: js.UndefOr[scala.Boolean] = js.undefined,
     placeHolder: java.lang.String = null,
     prompt: java.lang.String = null,
-    validateInput: /* value */ java.lang.String => js.UndefOr[
-      java.lang.String | scala.Null | (vscodeLib.Thenable[js.UndefOr[java.lang.String | scala.Null]])
-    ] = null,
+    validateInput: /* value */ java.lang.String => js.UndefOr[java.lang.String | scala.Null] = null,
     value: java.lang.String = null,
     valueSelection: js.Tuple2[scala.Double, scala.Double] = null
   ): InputBoxOptions = {

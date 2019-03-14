@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IteratorOptions[EmittedType] extends Options[EmittedType] {
+trait IteratorOptions[EmittedType /* <: pDashEventLib.Array[_] */] extends Options[EmittedType] {
   /**
   	 * Maximum number of events for the iterator before it ends. When the limit is reached, the iterator will be marked as `done`. This option is useful to paginate events, for example, fetching 10 events per page.
   	 *
@@ -22,7 +22,7 @@ trait IteratorOptions[EmittedType] extends Options[EmittedType] {
 
 object IteratorOptions {
   @scala.inline
-  def apply[EmittedType](
+  def apply[EmittedType /* <: pDashEventLib.Array[_] */](
     filter: FilterFunction[EmittedType] = null,
     limit: scala.Int | scala.Double = null,
     multiArgs: js.UndefOr[scala.Boolean] = js.undefined,

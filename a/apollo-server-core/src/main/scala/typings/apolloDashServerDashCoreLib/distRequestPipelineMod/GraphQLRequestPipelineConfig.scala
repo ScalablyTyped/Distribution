@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphQLRequestPipelineConfig[TContext] extends js.Object {
-  var cacheControl: js.UndefOr[
-    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions
+  var cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any
   ] = js.undefined
   var dataSources: js.UndefOr[js.Function0[DataSources[TContext]]] = js.undefined
   var documentStore: js.UndefOr[
@@ -49,7 +49,7 @@ object GraphQLRequestPipelineConfig {
   @scala.inline
   def apply[TContext](
     schema: graphqlLib.graphqlMod.GraphQLSchema,
-    cacheControl: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions = null,
+    cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any = null,
     dataSources: () => DataSources[TContext] = null,
     documentStore: apolloDashServerDashCachingLib.apolloDashServerDashCachingMod.InMemoryLRUCache[graphqlLib.languageAstMod.DocumentNode] = null,
     extensions: js.Array[

@@ -15,7 +15,7 @@ package object eggMod {
   type IController = PlainObject[js.Any]
   type IMiddleware = PlainObject[js.Any]
   type IService = PlainObject[js.Any]
-  type IgnoreItem = java.lang.String | stdLib.RegExp | (js.Function1[/* ctx */ eggDashViewLib.eggMod.Context, scala.Boolean])
+  type IgnoreItem = java.lang.String | stdLib.RegExp | (js.Function1[/* ctx */ Context, scala.Boolean])
   type IgnoreOrMatch = IgnoreItem | js.Array[IgnoreItem]
   type LoggerLevel = eggDashLoggerLib.eggDashLoggerMod.LoggerLevel
   type PowerPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 

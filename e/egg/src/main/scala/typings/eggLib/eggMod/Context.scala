@@ -16,7 +16,7 @@ trait Context
     * @see Request#acceptJSON
     */
   var acceptJSON: scala.Boolean = js.native
-  var app: eggDashViewLib.eggMod.Application = js.native
+  var app: Application = js.native
   // The new 'cookies' instead of Koa's.
   var cookies: eggDashCookiesLib.eggDashCookiesMod.namespaced = js.native
   /**
@@ -148,10 +148,10 @@ trait Context
   var realStatus: scala.Double = js.native
   // properties of koa.Context
   var req: nodeLib.httpMod.IncomingMessage = js.native
-  var request: stdLib.Request = js.native
+  var request: Request = js.native
   var res: nodeLib.httpMod.ServerResponse = js.native
   var respond: js.UndefOr[scala.Boolean] = js.native
-  var response: stdLib.Response = js.native
+  var response: Response = js.native
   var service: IService = js.native
   /**
     * Request start time

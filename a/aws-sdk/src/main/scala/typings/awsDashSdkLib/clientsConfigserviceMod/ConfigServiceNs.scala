@@ -721,6 +721,19 @@ object ConfigServiceNs extends js.Object {
     var RequesterAwsRegion: AwsRegion
   }
   
+  trait DeleteRemediationConfigurationRequest extends js.Object {
+    /**
+      * The name of the AWS Config rule for which you want to delete remediation configuration for.
+      */
+    var ConfigRuleName: StringWithCharLimit64
+    /**
+      * The type of a resource.
+      */
+    var ResourceType: js.UndefOr[String] = js.undefined
+  }
+  
+  trait DeleteRemediationConfigurationResponse extends js.Object
+  
   trait DeleteRetentionConfigurationRequest extends js.Object {
     /**
       * The name of the retention configuration to delete.
@@ -838,7 +851,7 @@ object ConfigServiceNs extends js.Object {
   
   trait DescribeComplianceByConfigRuleRequest extends js.Object {
     /**
-      * Filters the results by compliance. The allowed values are COMPLIANT, NON_COMPLIANT, and INSUFFICIENT_DATA.
+      * Filters the results by compliance. The allowed values are COMPLIANT and NON_COMPLIANT.
       */
     var ComplianceTypes: js.UndefOr[ComplianceTypes] = js.undefined
     /**
@@ -864,7 +877,7 @@ object ConfigServiceNs extends js.Object {
   
   trait DescribeComplianceByResourceRequest extends js.Object {
     /**
-      * Filters the results by compliance. The allowed values are COMPLIANT and NON_COMPLIANT.
+      * Filters the results by compliance. The allowed values are COMPLIANT, NON_COMPLIANT, and INSUFFICIENT_DATA.
       */
     var ComplianceTypes: js.UndefOr[ComplianceTypes] = js.undefined
     /**
@@ -1078,6 +1091,50 @@ object ConfigServiceNs extends js.Object {
     var PendingAggregationRequests: js.UndefOr[PendingAggregationRequestList] = js.undefined
   }
   
+  trait DescribeRemediationConfigurationsRequest extends js.Object {
+    /**
+      * A list of AWS Config rule names of remediation configurations for which you want details. 
+      */
+    var ConfigRuleNames: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ConfigRuleNames
+  }
+  
+  trait DescribeRemediationConfigurationsResponse extends js.Object {
+    /**
+      * Returns a remediation configuration object.
+      */
+    var RemediationConfigurations: js.UndefOr[RemediationConfigurations] = js.undefined
+  }
+  
+  trait DescribeRemediationExecutionStatusRequest extends js.Object {
+    /**
+      * A list of config rule names.
+      */
+    var ConfigRuleName: StringWithCharLimit64
+    /**
+      * The maximum number of RemediationExecutionStatuses returned on each page. The default is maximum. If you specify 0, AWS Config uses the default. 
+      */
+    var Limit: js.UndefOr[Limit] = js.undefined
+    /**
+      * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
+      */
+    var NextToken: js.UndefOr[StringWithCharLimit256] = js.undefined
+    /**
+      * A list of resource keys object. 
+      */
+    var ResourceKeys: js.UndefOr[ResourceKeys] = js.undefined
+  }
+  
+  trait DescribeRemediationExecutionStatusResponse extends js.Object {
+    /**
+      * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response.
+      */
+    var NextToken: js.UndefOr[StringWithCharLimit256] = js.undefined
+    /**
+      * Returns a list of remediation execution statuses object.
+      */
+    var RemediationExecutionStatuses: js.UndefOr[RemediationExecutionStatuses] = js.undefined
+  }
+  
   trait DescribeRetentionConfigurationsRequest extends js.Object {
     /**
       * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response. 
@@ -1174,6 +1231,17 @@ object ConfigServiceNs extends js.Object {
       * The type of AWS resource that was evaluated.
       */
     var ResourceType: js.UndefOr[StringWithCharLimit256] = js.undefined
+  }
+  
+  trait FailedRemediationBatch extends js.Object {
+    /**
+      * Returns remediation configurations of the failed items.
+      */
+    var FailedItems: js.UndefOr[RemediationConfigurations] = js.undefined
+    /**
+      * Returns a failure message. For example, the resource is compliant.
+      */
+    var FailureMessage: js.UndefOr[String] = js.undefined
   }
   
   trait GetAggregateComplianceDetailsByConfigRuleRequest extends js.Object {
@@ -1661,6 +1729,20 @@ object ConfigServiceNs extends js.Object {
     var FailedEvaluations: js.UndefOr[Evaluations] = js.undefined
   }
   
+  trait PutRemediationConfigurationsRequest extends js.Object {
+    /**
+      * A list of remediation configuration objects.
+      */
+    var RemediationConfigurations: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.RemediationConfigurations
+  }
+  
+  trait PutRemediationConfigurationsResponse extends js.Object {
+    /**
+      * Returns a list of failed remediation batch objects.
+      */
+    var FailedBatches: js.UndefOr[FailedRemediationBatches] = js.undefined
+  }
+  
   trait PutRetentionConfigurationRequest extends js.Object {
     /**
       * Number of days AWS Config stores your historical information.  Currently, only applicable to the configuration item history. 
@@ -1708,6 +1790,90 @@ object ConfigServiceNs extends js.Object {
       */
     var resourceType: js.UndefOr[ResourceType] = js.undefined
   }
+  
+  trait RemediationConfiguration extends js.Object {
+    /**
+      * The name of the AWS Config rule.
+      */
+    var ConfigRuleName: StringWithCharLimit64
+    /**
+      * An object of the RemediationParameterValue.
+      */
+    var Parameters: js.UndefOr[RemediationParameters] = js.undefined
+    /**
+      * The type of a resource. 
+      */
+    var ResourceType: js.UndefOr[String] = js.undefined
+    /**
+      * Public ID is document.
+      */
+    var TargetId: StringWithCharLimit256
+    /**
+      * The type of the target. Target executes remediation. For example, SSM document.
+      */
+    var TargetType: RemediationTargetType
+    /**
+      * Version of the target. For example, version of the SSM document.
+      */
+    var TargetVersion: js.UndefOr[String] = js.undefined
+  }
+  
+  trait RemediationExecutionStatus extends js.Object {
+    /**
+      * Start time when the remediation was executed.
+      */
+    var InvocationTime: js.UndefOr[_Date] = js.undefined
+    /**
+      * The time when the remediation execution was last updated.
+      */
+    var LastUpdatedTime: js.UndefOr[_Date] = js.undefined
+    var ResourceKey: js.UndefOr[ResourceKey] = js.undefined
+    /**
+      * ENUM of the values.
+      */
+    var State: js.UndefOr[RemediationExecutionState] = js.undefined
+    /**
+      * Details of every step.
+      */
+    var StepDetails: js.UndefOr[RemediationExecutionSteps] = js.undefined
+  }
+  
+  trait RemediationExecutionStep extends js.Object {
+    /**
+      * An error message if the step was interupted during execution.
+      */
+    var ErrorMessage: js.UndefOr[String] = js.undefined
+    /**
+      * The details of the step.
+      */
+    var Name: js.UndefOr[String] = js.undefined
+    /**
+      * The time when the step started.
+      */
+    var StartTime: js.UndefOr[_Date] = js.undefined
+    /**
+      * The valid status of the step.
+      */
+    var State: js.UndefOr[RemediationExecutionStepState] = js.undefined
+    /**
+      * The time when the step stopped.
+      */
+    var StopTime: js.UndefOr[_Date] = js.undefined
+  }
+  
+  trait RemediationParameterValue extends js.Object {
+    /**
+      * The value is dynamic and changes at run-time.
+      */
+    var ResourceValue: js.UndefOr[ResourceValue] = js.undefined
+    /**
+      * The value is static and does not change at run-time.
+      */
+    var StaticValue: js.UndefOr[StaticValue] = js.undefined
+  }
+  
+  trait RemediationParameters
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[RemediationParameterValue]
   
   trait ResourceCount extends js.Object {
     /**
@@ -1784,6 +1950,13 @@ object ConfigServiceNs extends js.Object {
     var resourceType: ResourceType
   }
   
+  trait ResourceValue extends js.Object {
+    /**
+      * The value is a resource ID.
+      */
+    var Value: js.UndefOr[ResourceValueType] = js.undefined
+  }
+  
   trait RetentionConfiguration extends js.Object {
     /**
       * The name of the retention configuration object.
@@ -1858,6 +2031,35 @@ object ConfigServiceNs extends js.Object {
       * The name of the recorder object that records each configuration change made to the resources.
       */
     var ConfigurationRecorderName: RecorderName
+  }
+  
+  trait StartRemediationExecutionRequest extends js.Object {
+    /**
+      * The list of names of AWS Config rules that you want to run remediation execution for.
+      */
+    var ConfigRuleName: StringWithCharLimit64
+    /**
+      * A list of resource key object.
+      */
+    var ResourceKeys: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ResourceKeys
+  }
+  
+  trait StartRemediationExecutionResponse extends js.Object {
+    /**
+      * For resources that have failed to start execuition the API returns a resource key object.
+      */
+    var FailedItems: js.UndefOr[ResourceKeys] = js.undefined
+    /**
+      * Returns a failure message. For example, the resource is compliant.
+      */
+    var FailureMessage: js.UndefOr[String] = js.undefined
+  }
+  
+  trait StaticValue extends js.Object {
+    /**
+      * A list of values. For example, the ARN of the assumed role. 
+      */
+    var Values: js.UndefOr[StaticParameterValues] = js.undefined
   }
   
   trait StopConfigurationRecorderRequest extends js.Object {
@@ -2037,6 +2239,29 @@ object ConfigServiceNs extends js.Object {
       params: DeletePendingAggregationRequestRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the remediation configuration.
+      */
+    def deleteRemediationConfiguration(): awsDashSdkLib.libRequestMod.Request[DeleteRemediationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteRemediationConfiguration(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteRemediationConfigurationResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteRemediationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the remediation configuration.
+      */
+    def deleteRemediationConfiguration(params: DeleteRemediationConfigurationRequest): awsDashSdkLib.libRequestMod.Request[DeleteRemediationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteRemediationConfiguration(
+      params: DeleteRemediationConfigurationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteRemediationConfigurationResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteRemediationConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Deletes the retention configuration.
       */
@@ -2226,7 +2451,7 @@ object ConfigServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeConfigRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns status information for sources within an aggregator. The status includes information about the last time AWS Config aggregated data from source accounts or AWS Config failed to aggregate data from source accounts with the related error code or message. 
+      *  Returns status information for sources within an aggregator. The status includes information about the last time AWS Config verified authorization between the source account and an aggregator account. In case of a failure, the status contains the related error code or message. 
       */
     def describeConfigurationAggregatorSourcesStatus(): awsDashSdkLib.libRequestMod.Request[
         DescribeConfigurationAggregatorSourcesStatusResponse, 
@@ -2243,7 +2468,7 @@ object ConfigServiceNs extends js.Object {
         awsDashSdkLib.libErrorMod.AWSError
       ] = js.native
     /**
-      * Returns status information for sources within an aggregator. The status includes information about the last time AWS Config aggregated data from source accounts or AWS Config failed to aggregate data from source accounts with the related error code or message. 
+      *  Returns status information for sources within an aggregator. The status includes information about the last time AWS Config verified authorization between the source account and an aggregator account. In case of a failure, the status contains the related error code or message. 
       */
     def describeConfigurationAggregatorSourcesStatus(params: DescribeConfigurationAggregatorSourcesStatusRequest): awsDashSdkLib.libRequestMod.Request[
         DescribeConfigurationAggregatorSourcesStatusResponse, 
@@ -2398,6 +2623,52 @@ object ConfigServiceNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribePendingAggregationRequestsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns the details of one or more remediation configuration.
+      */
+    def describeRemediationConfigurations(): awsDashSdkLib.libRequestMod.Request[DescribeRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def describeRemediationConfigurations(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeRemediationConfigurationsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns the details of one or more remediation configuration.
+      */
+    def describeRemediationConfigurations(params: DescribeRemediationConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[DescribeRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def describeRemediationConfigurations(
+      params: DescribeRemediationConfigurationsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeRemediationConfigurationsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Provides a detailed view of a Remediation Execution for a set of resources including state, timestamps for when steps for the remediation execution happen, and any error messages for steps that have failed. When you specify the limit and the next token, you receive a paginated response.
+      */
+    def describeRemediationExecutionStatus(): awsDashSdkLib.libRequestMod.Request[DescribeRemediationExecutionStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def describeRemediationExecutionStatus(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeRemediationExecutionStatusResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeRemediationExecutionStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Provides a detailed view of a Remediation Execution for a set of resources including state, timestamps for when steps for the remediation execution happen, and any error messages for steps that have failed. When you specify the limit and the next token, you receive a paginated response.
+      */
+    def describeRemediationExecutionStatus(params: DescribeRemediationExecutionStatusRequest): awsDashSdkLib.libRequestMod.Request[DescribeRemediationExecutionStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def describeRemediationExecutionStatus(
+      params: DescribeRemediationExecutionStatusRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeRemediationExecutionStatusResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeRemediationExecutionStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Returns the details of one or more retention configurations. If the retention configuration name is not specified, this action returns the details for all the retention configurations for that account.  Currently, AWS Config supports only one retention configuration per region in your account. 
       */
@@ -2733,14 +3004,14 @@ object ConfigServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutAggregationAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds or updates an AWS Config rule for evaluating whether your AWS resources comply with your desired configurations. You can use this action for custom AWS Config rules and AWS managed Config rules. A custom AWS Config rule is a rule that you develop and maintain. An AWS managed Config rule is a customizable, predefined rule that AWS Config provides. If you are adding a new custom AWS Config rule, you must first create the AWS Lambda function that the rule invokes to evaluate your resources. When you use the PutConfigRule action to add the rule to AWS Config, you must specify the Amazon Resource Name (ARN) that AWS Lambda assigns to the function. Specify the ARN for the SourceIdentifier key. This key is part of the Source object, which is part of the ConfigRule object.  If you are adding an AWS managed Config rule, specify the rule's identifier for the SourceIdentifier key. To reference AWS managed Config rule identifiers, see About AWS Managed Config Rules. For any new rule that you add, specify the ConfigRuleName in the ConfigRule object. Do not specify the ConfigRuleArn or the ConfigRuleId. These values are generated by AWS Config for new rules. If you are updating a rule that you added previously, you can specify the rule by ConfigRuleName, ConfigRuleId, or ConfigRuleArn in the ConfigRule data type that you use in this request. The maximum number of rules that AWS Config supports is 50. For information about requesting a rule limit increase, see AWS Config Limits in the AWS General Reference Guide. For more information about developing and using AWS Config rules, see Evaluating AWS Resource Configurations with AWS Config in the AWS Config Developer Guide.
+      * Adds or updates an AWS Config rule for evaluating whether your AWS resources comply with your desired configurations. You can use this action for custom AWS Config rules and AWS managed Config rules. A custom AWS Config rule is a rule that you develop and maintain. An AWS managed Config rule is a customizable, predefined rule that AWS Config provides. If you are adding a new custom AWS Config rule, you must first create the AWS Lambda function that the rule invokes to evaluate your resources. When you use the PutConfigRule action to add the rule to AWS Config, you must specify the Amazon Resource Name (ARN) that AWS Lambda assigns to the function. Specify the ARN for the SourceIdentifier key. This key is part of the Source object, which is part of the ConfigRule object.  If you are adding an AWS managed Config rule, specify the rule's identifier for the SourceIdentifier key. To reference AWS managed Config rule identifiers, see About AWS Managed Config Rules. For any new rule that you add, specify the ConfigRuleName in the ConfigRule object. Do not specify the ConfigRuleArn or the ConfigRuleId. These values are generated by AWS Config for new rules. If you are updating a rule that you added previously, you can specify the rule by ConfigRuleName, ConfigRuleId, or ConfigRuleArn in the ConfigRule data type that you use in this request. The maximum number of rules that AWS Config supports is 150. For information about requesting a rule limit increase, see AWS Config Limits in the AWS General Reference Guide. For more information about developing and using AWS Config rules, see Evaluating AWS Resource Configurations with AWS Config in the AWS Config Developer Guide.
       */
     def putConfigRule(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putConfigRule(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds or updates an AWS Config rule for evaluating whether your AWS resources comply with your desired configurations. You can use this action for custom AWS Config rules and AWS managed Config rules. A custom AWS Config rule is a rule that you develop and maintain. An AWS managed Config rule is a customizable, predefined rule that AWS Config provides. If you are adding a new custom AWS Config rule, you must first create the AWS Lambda function that the rule invokes to evaluate your resources. When you use the PutConfigRule action to add the rule to AWS Config, you must specify the Amazon Resource Name (ARN) that AWS Lambda assigns to the function. Specify the ARN for the SourceIdentifier key. This key is part of the Source object, which is part of the ConfigRule object.  If you are adding an AWS managed Config rule, specify the rule's identifier for the SourceIdentifier key. To reference AWS managed Config rule identifiers, see About AWS Managed Config Rules. For any new rule that you add, specify the ConfigRuleName in the ConfigRule object. Do not specify the ConfigRuleArn or the ConfigRuleId. These values are generated by AWS Config for new rules. If you are updating a rule that you added previously, you can specify the rule by ConfigRuleName, ConfigRuleId, or ConfigRuleArn in the ConfigRule data type that you use in this request. The maximum number of rules that AWS Config supports is 50. For information about requesting a rule limit increase, see AWS Config Limits in the AWS General Reference Guide. For more information about developing and using AWS Config rules, see Evaluating AWS Resource Configurations with AWS Config in the AWS Config Developer Guide.
+      * Adds or updates an AWS Config rule for evaluating whether your AWS resources comply with your desired configurations. You can use this action for custom AWS Config rules and AWS managed Config rules. A custom AWS Config rule is a rule that you develop and maintain. An AWS managed Config rule is a customizable, predefined rule that AWS Config provides. If you are adding a new custom AWS Config rule, you must first create the AWS Lambda function that the rule invokes to evaluate your resources. When you use the PutConfigRule action to add the rule to AWS Config, you must specify the Amazon Resource Name (ARN) that AWS Lambda assigns to the function. Specify the ARN for the SourceIdentifier key. This key is part of the Source object, which is part of the ConfigRule object.  If you are adding an AWS managed Config rule, specify the rule's identifier for the SourceIdentifier key. To reference AWS managed Config rule identifiers, see About AWS Managed Config Rules. For any new rule that you add, specify the ConfigRuleName in the ConfigRule object. Do not specify the ConfigRuleArn or the ConfigRuleId. These values are generated by AWS Config for new rules. If you are updating a rule that you added previously, you can specify the rule by ConfigRuleName, ConfigRuleId, or ConfigRuleArn in the ConfigRule data type that you use in this request. The maximum number of rules that AWS Config supports is 150. For information about requesting a rule limit increase, see AWS Config Limits in the AWS General Reference Guide. For more information about developing and using AWS Config rules, see Evaluating AWS Resource Configurations with AWS Config in the AWS Config Developer Guide.
       */
     def putConfigRule(params: PutConfigRuleRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putConfigRule(
@@ -2824,6 +3095,29 @@ object ConfigServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutEvaluationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. AWS Config rule must already exist for you to add a remeduation configuration. The target (SSM document) must exist and have permissions to use the target. 
+      */
+    def putRemediationConfigurations(): awsDashSdkLib.libRequestMod.Request[PutRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def putRemediationConfigurations(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutRemediationConfigurationsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. AWS Config rule must already exist for you to add a remeduation configuration. The target (SSM document) must exist and have permissions to use the target. 
+      */
+    def putRemediationConfigurations(params: PutRemediationConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[PutRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def putRemediationConfigurations(
+      params: PutRemediationConfigurationsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutRemediationConfigurationsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Creates and updates the retention configuration with details about retention period (number of days) that AWS Config stores your historical information. The API creates the RetentionConfiguration object and names the object as default. When you have a RetentionConfiguration object named default, calling the API modifies the default object.   Currently, AWS Config supports only one retention configuration per region in your account. 
       */
     def putRetentionConfiguration(): awsDashSdkLib.libRequestMod.Request[PutRetentionConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2885,6 +3179,29 @@ object ConfigServiceNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Runs an on-demand remediation for the specified AWS Config rules against the last known remediation configuration. It runs an execution against the current state of your resources. Remediation execution is asynchronous. You can specify up to 100 resource keys per request. An existing StartRemediationExecution call for the specified resource keys must complete before you can call the API again.
+      */
+    def startRemediationExecution(): awsDashSdkLib.libRequestMod.Request[StartRemediationExecutionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def startRemediationExecution(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StartRemediationExecutionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StartRemediationExecutionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Runs an on-demand remediation for the specified AWS Config rules against the last known remediation configuration. It runs an execution against the current state of your resources. Remediation execution is asynchronous. You can specify up to 100 resource keys per request. An existing StartRemediationExecution call for the specified resource keys must complete before you can call the API again.
+      */
+    def startRemediationExecution(params: StartRemediationExecutionRequest): awsDashSdkLib.libRequestMod.Request[StartRemediationExecutionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def startRemediationExecution(
+      params: StartRemediationExecutionRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StartRemediationExecutionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StartRemediationExecutionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Stops recording configurations of the AWS resources you have selected to record in your AWS account.
       */
     def stopConfigurationRecorder(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2924,6 +3241,10 @@ object ConfigServiceNs extends js.Object {
   trait _Owner extends js.Object
   
   trait _RecorderStatus extends js.Object
+  
+  trait _RemediationExecutionState extends js.Object
+  
+  trait _RemediationExecutionStepState extends js.Object
   
   trait _ResourceCountGroupKey extends js.Object
   
@@ -2990,6 +3311,7 @@ object ConfigServiceNs extends js.Object {
   type EvaluationResults = js.Array[EvaluationResult]
   type Evaluations = js.Array[Evaluation]
   type EventSource = awsDashSdkLib.awsDashSdkLibStrings.awsDOTconfig | java.lang.String
+  type FailedRemediationBatches = js.Array[FailedRemediationBatch]
   type GroupByAPILimit = scala.Double
   type GroupedResourceCountList = js.Array[GroupedResourceCount]
   type IncludeGlobalResourceTypes = scala.Boolean
@@ -3011,6 +3333,12 @@ object ConfigServiceNs extends js.Object {
   type RelatedEventList = js.Array[RelatedEvent]
   type RelationshipList = js.Array[Relationship]
   type RelationshipName = java.lang.String
+  type RemediationConfigurations = js.Array[RemediationConfiguration]
+  type RemediationExecutionState = _RemediationExecutionState | java.lang.String
+  type RemediationExecutionStatuses = js.Array[RemediationExecutionStatus]
+  type RemediationExecutionStepState = _RemediationExecutionStepState | java.lang.String
+  type RemediationExecutionSteps = js.Array[RemediationExecutionStep]
+  type RemediationTargetType = awsDashSdkLib.awsDashSdkLibStrings.SSM_DOCUMENT | java.lang.String
   type ResourceCountGroupKey = _ResourceCountGroupKey | java.lang.String
   type ResourceCounts = js.Array[ResourceCount]
   type ResourceCreationTime = stdLib.Date
@@ -3024,12 +3352,14 @@ object ConfigServiceNs extends js.Object {
   type ResourceType = _ResourceType | java.lang.String
   type ResourceTypeList = js.Array[ResourceType]
   type ResourceTypes = js.Array[StringWithCharLimit256]
+  type ResourceValueType = awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_ID | java.lang.String
   type RetentionConfigurationList = js.Array[RetentionConfiguration]
   type RetentionConfigurationName = java.lang.String
   type RetentionConfigurationNameList = js.Array[RetentionConfigurationName]
   type RetentionPeriodInDays = scala.Double
   type RuleLimit = scala.Double
   type SourceDetails = js.Array[SourceDetail]
+  type StaticParameterValues = js.Array[StringWithCharLimit256]
   type String = java.lang.String
   type StringWithCharLimit1024 = java.lang.String
   type StringWithCharLimit128 = java.lang.String

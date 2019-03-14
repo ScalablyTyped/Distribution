@@ -136,6 +136,9 @@ trait MongooseDocument extends MongooseDocumentOptionals {
   ): this.type = js.native
   /** Gets _id(s) used during population of the given path. If the path was not populated, undefined is returned. */
   def populated(path: java.lang.String): js.Any = js.native
+  /** Sends an replaceOne command with this document _id as the query selector.  */
+  def replaceOne(replacement: js.Any): Query[_] = js.native
+  def replaceOne(replacement: js.Any, callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, scala.Unit]): Query[_] = js.native
   /**
     * Sets the value of a path, or many paths.
     * @param path path or object of key/vals to set
@@ -171,6 +174,15 @@ trait MongooseDocument extends MongooseDocumentOptionals {
   def update(doc: js.Any, callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, scala.Unit]): Query[_] = js.native
   def update(doc: js.Any, options: ModelUpdateOptions): Query[_] = js.native
   def update(
+    doc: js.Any,
+    options: ModelUpdateOptions,
+    callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, scala.Unit]
+  ): Query[_] = js.native
+  /** Sends an updateOne command with this document _id as the query selector.  */
+  def updateOne(doc: js.Any): Query[_] = js.native
+  def updateOne(doc: js.Any, callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, scala.Unit]): Query[_] = js.native
+  def updateOne(doc: js.Any, options: ModelUpdateOptions): Query[_] = js.native
+  def updateOne(
     doc: js.Any,
     options: ModelUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, scala.Unit]

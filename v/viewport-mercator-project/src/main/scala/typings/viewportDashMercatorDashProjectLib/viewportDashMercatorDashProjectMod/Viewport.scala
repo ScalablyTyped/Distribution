@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Viewport () extends js.Object {
   def this(opts: ViewportOptions) = this()
   var height: scala.Double = js.native
-  var projectionMatrix: ProjectionMatrix = js.native
+  var projectionMatrix: ViewMatrix = js.native
   var scale: scala.Double = js.native
   var viewMatrix: ViewMatrix = js.native
   var width: scala.Double = js.native

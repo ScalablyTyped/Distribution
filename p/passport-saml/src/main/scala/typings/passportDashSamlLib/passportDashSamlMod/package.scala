@@ -16,13 +16,13 @@ package object passportDashSamlMod {
   ]
   type VerifiedCallback = js.Function3[
     /* err */ stdLib.Error | scala.Null, 
-    /* user */ js.Object, 
-    /* info */ js.Object, 
+    /* user */ js.UndefOr[js.Object], 
+    /* info */ js.UndefOr[js.Object], 
     scala.Unit
   ]
   type VerifyWithRequest = js.Function3[
     /* req */ expressLib.expressMod.eNs.Request, 
-    /* profile */ js.Object, 
+    /* profile */ Profile, 
     /* done */ VerifiedCallback, 
     scala.Unit
   ]

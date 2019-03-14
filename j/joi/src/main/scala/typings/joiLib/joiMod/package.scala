@@ -14,7 +14,7 @@ package object joiMod {
   type LanguageRootOptions = joiLib.Anon_Key with (stdLib.Partial[stdLib.Record[Types, LanguageOptions]])
   type LazySchema = AnySchema
   type Schema = _Schema | LazySchema
-  type SchemaLike = _SchemaLike | java.lang.String | scala.Double | scala.Boolean | js.Object | scala.Null
+  type SchemaLike = _SchemaLike | java.lang.String | scala.Double | scala.Boolean | js.Object | scala.Null | LazySchema
   type ValidationErrorFunction = js.Function1[
     /* errors */ js.Array[ValidationErrorItem], 
     java.lang.String | ValidationErrorItem | js.Array[ValidationErrorItem] | stdLib.Error

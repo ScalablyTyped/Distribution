@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NormalizedViewportProps extends BaseViewportProps {
+trait NormalizedViewportProps extends FlyToViewportProps {
   var bearing: scala.Double
   var pitch: scala.Double
 }

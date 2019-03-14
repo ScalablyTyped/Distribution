@@ -149,7 +149,7 @@ object StrictModalProps {
     size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fullscreen = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     trigger: reactLib.reactMod.ReactNs.ReactNode = null,
-    triggerRef: /* node */ stdLib.HTMLElement => scala.Unit = null
+    triggerRef: reactLib.reactMod.ReactNs.Ref[_] = null
   ): StrictModalProps = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
@@ -186,7 +186,7 @@ object StrictModalProps {
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (triggerRef != null) __obj.updateDynamic("triggerRef")(js.Any.fromFunction1(triggerRef))
+    if (triggerRef != null) __obj.updateDynamic("triggerRef")(triggerRef.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrictModalProps]
   }
 }

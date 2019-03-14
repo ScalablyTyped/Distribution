@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object mdastMod {
   type AlignType = _AlignType | scala.Null
-  type Content = _Content | ListContent | TableContent | RowContent
+  type Content = _Content | ListContent | TableContent | RowContent | FrontmatterContent
   type FrontmatterContent = YAML
   type ListContent = ListItem
   type RowContent = TableCell
