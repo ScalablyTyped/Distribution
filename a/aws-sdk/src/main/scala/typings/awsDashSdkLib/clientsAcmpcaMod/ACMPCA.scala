@@ -46,7 +46,7 @@ trait ACMPCA
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates an audit report that lists every time that the your CA private key is used. The report is saved in the Amazon S3 bucket that you specify on input. The IssueCertificate and RevokeCertificate operations use the private key. You can generate a new report every 30 minutes.
+    * Creates an audit report that lists every time that your CA private key is used. The report is saved in the Amazon S3 bucket that you specify on input. The IssueCertificate and RevokeCertificate operations use the private key. You can generate a new report every 30 minutes.
     */
   def createCertificateAuthorityAuditReport(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.CreateCertificateAuthorityAuditReportResponse, 
@@ -63,7 +63,7 @@ trait ACMPCA
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates an audit report that lists every time that the your CA private key is used. The report is saved in the Amazon S3 bucket that you specify on input. The IssueCertificate and RevokeCertificate operations use the private key. You can generate a new report every 30 minutes.
+    * Creates an audit report that lists every time that your CA private key is used. The report is saved in the Amazon S3 bucket that you specify on input. The IssueCertificate and RevokeCertificate operations use the private key. You can generate a new report every 30 minutes.
     */
   def createCertificateAuthorityAuditReport(params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.CreateCertificateAuthorityAuditReportRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.CreateCertificateAuthorityAuditReportResponse, 
@@ -81,18 +81,48 @@ trait ACMPCA
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes a private certificate authority (CA). You must provide the ARN (Amazon Resource Name) of the private CA that you want to delete. You can find the ARN by calling the ListCertificateAuthorities operation. Before you can delete a CA, you must disable it. Call the UpdateCertificateAuthority operation and set the CertificateAuthorityStatus parameter to DISABLED.  Additionally, you can delete a CA if you are waiting for it to be created (the Status field of the CertificateAuthority is CREATING). You can also delete it if the CA has been created but you haven't yet imported the signed certificate (the Status is PENDING_CERTIFICATE) into ACM PCA.  If the CA is in one of the aforementioned states and you call DeleteCertificateAuthority, the CA's status changes to DELETED. However, the CA won't be permentantly deleted until the restoration period has passed. By default, if you do not set the PermanentDeletionTimeInDays parameter, the CA remains restorable for 30 days. You can set the parameter from 7 to 30 days. The DescribeCertificateAuthority operation returns the time remaining in the restoration window of a Private CA in the DELETED state. To restore an eligable CA, call the RestoreCertificateAuthority operation.
+    * Assigns permissions from a private CA to a designated AWS service. Services are specified by their service principals and can be given permission to create and retrieve certificates on a private CA. Services can also be given permission to list the active permissions that the private CA has granted. For ACM to automatically renew your private CA's certificates, you must assign all possible permissions from the CA to the ACM service principal. At this time, you can only assign permissions to ACM (acm.amazonaws.com). Permissions can be revoked with the DeletePermission operation and listed with the ListPermissions operation.
+    */
+  def createPermission(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createPermission(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Assigns permissions from a private CA to a designated AWS service. Services are specified by their service principals and can be given permission to create and retrieve certificates on a private CA. Services can also be given permission to list the active permissions that the private CA has granted. For ACM to automatically renew your private CA's certificates, you must assign all possible permissions from the CA to the ACM service principal. At this time, you can only assign permissions to ACM (acm.amazonaws.com). Permissions can be revoked with the DeletePermission operation and listed with the ListPermissions operation.
+    */
+  def createPermission(params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.CreatePermissionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createPermission(
+    params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.CreatePermissionRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes a private certificate authority (CA). You must provide the ARN (Amazon Resource Name) of the private CA that you want to delete. You can find the ARN by calling the ListCertificateAuthorities operation. Before you can delete a CA, you must disable it. Call the UpdateCertificateAuthority operation and set the CertificateAuthorityStatus parameter to DISABLED.  Additionally, you can delete a CA if you are waiting for it to be created (the Status field of the CertificateAuthority is CREATING). You can also delete it if the CA has been created but you haven't yet imported the signed certificate (the Status is PENDING_CERTIFICATE) into ACM PCA.  If the CA is in one of the previously mentioned states and you call DeleteCertificateAuthority, the CA's status changes to DELETED. However, the CA won't be permanently deleted until the restoration period has passed. By default, if you do not set the PermanentDeletionTimeInDays parameter, the CA remains restorable for 30 days. You can set the parameter from 7 to 30 days. The DescribeCertificateAuthority operation returns the time remaining in the restoration window of a Private CA in the DELETED state. To restore an eligible CA, call the RestoreCertificateAuthority operation.
     */
   def deleteCertificateAuthority(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCertificateAuthority(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a private certificate authority (CA). You must provide the ARN (Amazon Resource Name) of the private CA that you want to delete. You can find the ARN by calling the ListCertificateAuthorities operation. Before you can delete a CA, you must disable it. Call the UpdateCertificateAuthority operation and set the CertificateAuthorityStatus parameter to DISABLED.  Additionally, you can delete a CA if you are waiting for it to be created (the Status field of the CertificateAuthority is CREATING). You can also delete it if the CA has been created but you haven't yet imported the signed certificate (the Status is PENDING_CERTIFICATE) into ACM PCA.  If the CA is in one of the aforementioned states and you call DeleteCertificateAuthority, the CA's status changes to DELETED. However, the CA won't be permentantly deleted until the restoration period has passed. By default, if you do not set the PermanentDeletionTimeInDays parameter, the CA remains restorable for 30 days. You can set the parameter from 7 to 30 days. The DescribeCertificateAuthority operation returns the time remaining in the restoration window of a Private CA in the DELETED state. To restore an eligable CA, call the RestoreCertificateAuthority operation.
+    * Deletes a private certificate authority (CA). You must provide the ARN (Amazon Resource Name) of the private CA that you want to delete. You can find the ARN by calling the ListCertificateAuthorities operation. Before you can delete a CA, you must disable it. Call the UpdateCertificateAuthority operation and set the CertificateAuthorityStatus parameter to DISABLED.  Additionally, you can delete a CA if you are waiting for it to be created (the Status field of the CertificateAuthority is CREATING). You can also delete it if the CA has been created but you haven't yet imported the signed certificate (the Status is PENDING_CERTIFICATE) into ACM PCA.  If the CA is in one of the previously mentioned states and you call DeleteCertificateAuthority, the CA's status changes to DELETED. However, the CA won't be permanently deleted until the restoration period has passed. By default, if you do not set the PermanentDeletionTimeInDays parameter, the CA remains restorable for 30 days. You can set the parameter from 7 to 30 days. The DescribeCertificateAuthority operation returns the time remaining in the restoration window of a Private CA in the DELETED state. To restore an eligible CA, call the RestoreCertificateAuthority operation.
     */
   def deleteCertificateAuthority(params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DeleteCertificateAuthorityRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCertificateAuthority(
     params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DeleteCertificateAuthorityRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Revokes permissions that a private CA assigned to a designated AWS service. Permissions can be created with the CreatePermission operation and listed with the ListPermissions operation. 
+    */
+  def deletePermission(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deletePermission(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Revokes permissions that a private CA assigned to a designated AWS service. Permissions can be created with the CreatePermission operation and listed with the ListPermissions operation. 
+    */
+  def deletePermission(params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DeletePermissionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deletePermission(
+    params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.DeletePermissionRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
@@ -353,6 +383,41 @@ trait ACMPCA
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ListCertificateAuthoritiesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Lists all the permissions, if any, that have been assigned by a private CA. Permissions can be granted with the CreatePermission operation and revoked with the DeletePermission operation.
+    */
+  def listPermissions(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ListPermissionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listPermissions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ListPermissionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ListPermissionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Lists all the permissions, if any, that have been assigned by a private CA. Permissions can be granted with the CreatePermission operation and revoked with the DeletePermission operation.
+    */
+  def listPermissions(params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ListPermissionsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ListPermissionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listPermissions(
+    params: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ListPermissionsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ListPermissionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ListPermissionsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

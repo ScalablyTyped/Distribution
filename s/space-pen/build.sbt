@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "space-pen"
-version := "0.0-unknown-dt-20181124Z-e272ef"
+version := "0.0-unknown-dt-20190314Z-e272ef"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

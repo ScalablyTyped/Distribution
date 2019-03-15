@@ -23,10 +23,10 @@ class Upload protected ()
   var generation: js.UndefOr[scala.Double] = js.native
   var get: js.Any = js.native
   var getAndSetOffset: js.Any = js.native
-  var getRequestStream: js.Any = js.native
   var key: js.UndefOr[java.lang.String | nodeLib.Buffer] = js.native
   var kmsKeyName: js.UndefOr[java.lang.String] = js.native
   var makeRequest: js.Any = js.native
+  var makeRequestStream: js.Any = js.native
   var metadata: ConfigMetadata = js.native
   var numBytesWritten: scala.Double = js.native
   var numRetries: scala.Double = js.native

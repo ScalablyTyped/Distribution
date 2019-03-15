@@ -8580,14 +8580,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modifies the specified network interface attribute. You can specify only one attribute at a time.
+    * Modifies the specified network interface attribute. You can specify only one attribute at a time. You can use this action to attach and detach security groups from an existing EC2 instance.
     */
   def modifyNetworkInterfaceAttribute(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def modifyNetworkInterfaceAttribute(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Modifies the specified network interface attribute. You can specify only one attribute at a time.
+    * Modifies the specified network interface attribute. You can specify only one attribute at a time. You can use this action to attach and detach security groups from an existing EC2 instance.
     */
   def modifyNetworkInterfaceAttribute(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.ModifyNetworkInterfaceAttributeRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def modifyNetworkInterfaceAttribute(

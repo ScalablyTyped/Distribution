@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AsyncOptions[T] extends js.Object {
+trait AsyncOptions[T]
+  extends /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var deferFn: js.UndefOr[
     js.Function3[
       /* args */ js.Array[_], 
@@ -28,6 +29,7 @@ trait AsyncOptions[T] extends js.Object {
 object AsyncOptions {
   @scala.inline
   def apply[T](
+    StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     deferFn: (/* args */ js.Array[_], /* props */ js.Object, /* controller */ stdLib.AbortController) => js.Promise[T] = null,
     initialValue: T = null,
     onReject: /* error */ stdLib.Error => scala.Unit = null,
@@ -38,6 +40,7 @@ object AsyncOptions {
     watchFn: (/* props */ js.Object, /* prevProps */ js.Object) => _ = null
   ): AsyncOptions[T] = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (deferFn != null) __obj.updateDynamic("deferFn")(js.Any.fromFunction3(deferFn))
     if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
     if (onReject != null) __obj.updateDynamic("onReject")(js.Any.fromFunction1(onReject))

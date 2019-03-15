@@ -130,6 +130,21 @@ trait Static extends js.Object {
     defaultFunction: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   /**
+  				 * Highcharts ganttChart which doesn't require the new keyword. Required Highcharts Gantt module.
+  				 */
+  def ganttChart(renderTo: java.lang.String, options: Options): ChartObject = js.native
+  def ganttChart(
+    renderTo: java.lang.String,
+    options: Options,
+    callback: js.Function1[/* chart */ ChartObject, scala.Unit]
+  ): ChartObject = js.native
+  def ganttChart(renderTo: stdLib.HTMLElement, options: Options): ChartObject = js.native
+  def ganttChart(
+    renderTo: stdLib.HTMLElement,
+    options: Options,
+    callback: js.Function1[/* chart */ ChartObject, scala.Unit]
+  ): ChartObject = js.native
+  /**
     * Get the updated default options. Until 3.0.7, merely exposing defaultOptions for outside modules
     * wasn't enough because the setOptions method created a new object.
     */

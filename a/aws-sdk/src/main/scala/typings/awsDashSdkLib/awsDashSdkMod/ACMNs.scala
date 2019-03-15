@@ -98,7 +98,7 @@ object ACMNs extends js.Object {
         */
       var Options: js.UndefOr[awsDashSdkLib.clientsAcmMod.ACMNs.CertificateOptions] = js.undefined
       /**
-        * Specifies whether the certificate is eligible for renewal.
+        * Specifies whether the certificate is eligible for renewal. At this time, only exported private certificates can be renewed with the RenewCertificate command.
         */
       var RenewalEligibility: js.UndefOr[awsDashSdkLib.clientsAcmMod.ACMNs.RenewalEligibility] = js.undefined
       /**
@@ -244,7 +244,7 @@ object ACMNs extends js.Object {
         */
       var CertificateChain: js.UndefOr[awsDashSdkLib.clientsAcmMod.ACMNs.CertificateChain] = js.undefined
       /**
-        * The PEM-encoded private key associated with the public key in the certificate.
+        * The encrypted private key associated with the public key in the certificate. The key is output in PKCS #8 format and is base64 PEM-encoded. 
         */
       var PrivateKey: js.UndefOr[awsDashSdkLib.clientsAcmMod.ACMNs.PrivateKey] = js.undefined
     }
@@ -381,6 +381,13 @@ object ACMNs extends js.Object {
       var Tags: awsDashSdkLib.clientsAcmMod.ACMNs.TagList
     }
     
+    trait RenewCertificateRequest extends js.Object {
+      /**
+        * String that contains the ARN of the ACM certificate to be renewed. This must be of the form:  arn:aws:acm:region:123456789012:certificate/12345678-1234-1234-1234-123456789012  For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+        */
+      var CertificateArn: awsDashSdkLib.clientsAcmMod.ACMNs.Arn
+    }
+    
     trait RenewalSummary extends js.Object {
       /**
         * Contains information about the validation of each domain name in the certificate, as it pertains to ACM's managed renewal. This is different from the initial validation that occurs as a result of the RequestCertificate request. This field exists only when the certificate type is AMAZON_ISSUED.
@@ -390,6 +397,14 @@ object ACMNs extends js.Object {
         * The status of ACM's managed renewal of the certificate.
         */
       var RenewalStatus: awsDashSdkLib.clientsAcmMod.ACMNs.RenewalStatus
+      /**
+        * The reason that a renewal request was unsuccessful.
+        */
+      var RenewalStatusReason: js.UndefOr[awsDashSdkLib.clientsAcmMod.ACMNs.FailureReason] = js.undefined
+      /**
+        * The time at which the renewal summary was last updated.
+        */
+      var UpdatedAt: awsDashSdkLib.clientsAcmMod.ACMNs.TStamp
     }
     
     trait RequestCertificateRequest extends js.Object {

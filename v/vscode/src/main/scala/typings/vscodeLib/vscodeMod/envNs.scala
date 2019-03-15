@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object envNs extends js.Object {
   var appName: java.lang.String = js.native
+  var appRoot: java.lang.String = js.native
   var language: java.lang.String = js.native
   var machineId: java.lang.String = js.native
   var sessionId: java.lang.String = js.native

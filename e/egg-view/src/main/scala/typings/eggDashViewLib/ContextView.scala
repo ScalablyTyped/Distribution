@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ContextView extends ViewBase {
-  var app: eggLib.eggMod.Application = js.native
+  var app: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Application */ js.Any = js.native
   var viewManager: ViewManager = js.native
 }
 

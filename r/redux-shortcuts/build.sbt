@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-shortcuts"
-version := "0.0-dt-20180507Z-3b95ce"
+version := "0.0-dt-20190314Z-3b95ce"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

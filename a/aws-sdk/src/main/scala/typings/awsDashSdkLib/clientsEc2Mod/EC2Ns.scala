@@ -4833,7 +4833,7 @@ object EC2Ns extends js.Object {
     /**
       * The maximum number of results to return for the request in a single page. The remaining results can be seen by sending another request with the returned nextToken value. This value can be between 5 and 500. If maxResults is given a larger value than 500, you receive an error.
       */
-    var MaxResults: js.UndefOr[Integer] = js.undefined
+    var MaxResults: js.UndefOr[DescribeHostReservationsMaxResults] = js.undefined
     /**
       * This is the minimum duration of the reservation you'd like to purchase, specified in seconds. Reservations are available in one-year and three-year terms. The number of seconds specified must be the number of seconds in a year (365x24x60x60) times one of the supported durations (1 or 3). For example, specify 31536000 for one year.
       */
@@ -4861,7 +4861,7 @@ object EC2Ns extends js.Object {
   
   trait DescribeHostReservationsRequest extends js.Object {
     /**
-      * One or more filters.    instance-family - The instance family (for example, m4).    payment-option - The payment option (NoUpfront | PartialUpfront | AllUpfront).    state - The state of the reservation (payment-pending | payment-failed | active | retired).  
+      * One or more filters.    instance-family - The instance family (for example, m4).    payment-option - The payment option (NoUpfront | PartialUpfront | AllUpfront).    state - The state of the reservation (payment-pending | payment-failed | active | retired).    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.  
       */
     var Filter: js.UndefOr[FilterList] = js.undefined
     /**
@@ -6361,7 +6361,7 @@ object EC2Ns extends js.Object {
       */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-      * One or more filters.    key - The tag key.    resource-id - The ID of the resource.    resource-type - The resource type (customer-gateway | dedicated-host | dhcp-options | elastic-ip | fleet | fpga-image | image | instance | internet-gateway | launch-template | natgateway | network-acl | network-interface | reserved-instances | route-table | security-group | snapshot | spot-instances-request | subnet | volume | vpc | vpc-peering-connection | vpn-connection | vpn-gateway).    tag:&lt;key&gt; - The key/value combination of the tag. For example, specify "tag:Owner" for the filter name and "TeamA" for the filter value to find resources with the tag "Owner=TeamA".    value - The tag value.  
+      * One or more filters.    key - The tag key.    resource-id - The ID of the resource.    resource-type - The resource type (customer-gateway | dedicated-host | dhcp-options | elastic-ip | fleet | fpga-image | image | instance | host-reservation | internet-gateway | launch-template | natgateway | network-acl | network-interface | reserved-instances | route-table | security-group | snapshot | spot-instances-request | subnet | volume | vpc | vpc-peering-connection | vpn-connection | vpn-gateway).    tag:&lt;key&gt; - The key/value combination of the tag. For example, specify "tag:Owner" for the filter name and "TeamA" for the filter value to find resources with the tag "Owner=TeamA".    value - The tag value.  
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -8693,6 +8693,10 @@ object EC2Ns extends js.Object {
       * The state of the reservation.
       */
     var State: js.UndefOr[ReservationState] = js.undefined
+    /**
+      * Any tags assigned to the Dedicated Host Reservation.
+      */
+    var Tags: js.UndefOr[TagList] = js.undefined
     /**
       * The upfront price of the reservation.
       */
@@ -22147,14 +22151,14 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyLaunchTemplateResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Modifies the specified network interface attribute. You can specify only one attribute at a time.
+      * Modifies the specified network interface attribute. You can specify only one attribute at a time. You can use this action to attach and detach security groups from an existing EC2 instance.
       */
     def modifyNetworkInterfaceAttribute(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def modifyNetworkInterfaceAttribute(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Modifies the specified network interface attribute. You can specify only one attribute at a time.
+      * Modifies the specified network interface attribute. You can specify only one attribute at a time. You can use this action to attach and detach security groups from an existing EC2 instance.
       */
     def modifyNetworkInterfaceAttribute(params: ModifyNetworkInterfaceAttributeRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def modifyNetworkInterfaceAttribute(
@@ -25620,6 +25624,7 @@ object EC2Ns extends js.Object {
   type DescribeConversionTaskList = js.Array[ConversionTask]
   type DescribeFleetsErrorSet = js.Array[DescribeFleetError]
   type DescribeFleetsInstancesSet = js.Array[DescribeFleetsInstances]
+  type DescribeHostReservationsMaxResults = scala.Double
   type DescribeInstanceCreditSpecificationsMaxResults = scala.Double
   type DescribeInternetGatewaysMaxResults = scala.Double
   type DescribeNetworkAclsMaxResults = scala.Double

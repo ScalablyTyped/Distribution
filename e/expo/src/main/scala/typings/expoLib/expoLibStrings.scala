@@ -468,6 +468,9 @@ object expoLibStrings {
   sealed trait department extends js.Object
   
   @js.native
+  sealed trait dismiss extends js.Object
+  
+  @js.native
   sealed trait dismissed extends js.Object
   
   @js.native
@@ -1178,6 +1181,8 @@ object expoLibStrings {
   def denied: denied = "denied".asInstanceOf[denied]
   @scala.inline
   def department: department = "department".asInstanceOf[department]
+  @scala.inline
+  def dismiss: dismiss = "dismiss".asInstanceOf[dismiss]
   @scala.inline
   def dismissed: dismissed = "dismissed".asInstanceOf[dismissed]
   @scala.inline

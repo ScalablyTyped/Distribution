@@ -29,6 +29,7 @@ trait MUIDataTableColumnOptions extends js.Object {
   var filterList: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var filterOptions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var hint: js.UndefOr[java.lang.String] = js.undefined
+  var searchable: js.UndefOr[scala.Boolean] = js.undefined
   var setCellProps: js.UndefOr[
     js.Function3[
       /* cellValue */ java.lang.String, 
@@ -54,6 +55,7 @@ object MUIDataTableColumnOptions {
     filterList: js.Array[java.lang.String] = null,
     filterOptions: js.Array[java.lang.String] = null,
     hint: java.lang.String = null,
+    searchable: js.UndefOr[scala.Boolean] = js.undefined,
     setCellProps: (/* cellValue */ java.lang.String, /* rowIndex */ scala.Double, /* columnIndex */ scala.Double) => js.Object = null,
     sort: js.UndefOr[scala.Boolean] = js.undefined,
     sortDirection: muiDashDatatablesLib.muiDashDatatablesLibStrings.asc | muiDashDatatablesLib.muiDashDatatablesLibStrings.desc = null
@@ -67,6 +69,7 @@ object MUIDataTableColumnOptions {
     if (filterList != null) __obj.updateDynamic("filterList")(filterList)
     if (filterOptions != null) __obj.updateDynamic("filterOptions")(filterOptions)
     if (hint != null) __obj.updateDynamic("hint")(hint)
+    if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable)
     if (setCellProps != null) __obj.updateDynamic("setCellProps")(js.Any.fromFunction3(setCellProps))
     if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
     if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection.asInstanceOf[js.Any])

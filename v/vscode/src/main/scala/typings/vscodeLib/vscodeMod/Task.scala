@@ -11,7 +11,7 @@ class Task protected () extends js.Object {
   /**
   		 * Creates a new task.
   		 *
-  		 * @param definition The task definition as defined in the taskDefintions extension point.
+  		 * @param definition The task definition as defined in the taskDefinitions extension point.
   		 * @param name The task's name. Is presented in the user interface.
   		 * @param source The task's source (e.g. 'gulp', 'npm', ...). Is presented in the user interface.
   		 * @param execution The process or shell execution.

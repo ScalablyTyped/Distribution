@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server-core"
-version := "2.4.8-1900f8"
+version := "2.4.8-f9e5b2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.1-a49eec",
   "org.scalablytyped" %%% "apollo-env" % "0.4.0-6a66af",
   "org.scalablytyped" %%% "apollo-graphql" % "0.1.3-32a7a1",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.10-cd4b4e",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.11-e13a57",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.3.1-f091ae",
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-6c401e",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.2.1-efd118",
@@ -28,7 +28,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20190212Z-aa9287",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.0.0-874025",
   "org.scalablytyped" %%% "graphql-tag" % "2.10.1-8ad040",
-  "org.scalablytyped" %%% "graphql-tools" % "4.0.4-885a3f",
+  "org.scalablytyped" %%% "graphql-tools" % "4.0.4-dddd71",
   "org.scalablytyped" %%% "iterall" % "1.2.2-e4101d",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
   "org.scalablytyped" %%% "lodash_dot_sortby" % "4.7-dt-20190214Z-615acc",
@@ -57,7 +57,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-40951d",
   "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-b9f40e",
   "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-4a9f67",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.17-3d5d0d")
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.18-3d5d0d")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

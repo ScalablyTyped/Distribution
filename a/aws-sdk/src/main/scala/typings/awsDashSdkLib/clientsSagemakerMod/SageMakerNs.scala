@@ -319,6 +319,10 @@ object SageMakerNs extends js.Object {
       * The name of the continuous hyperparameter to tune.
       */
     var Name: ParameterKey
+    /**
+      * The scale that hyperparameter tuning uses to search the hyperparameter range. For information about choosing a hyperparameter scale, see Hyperparameter Range Scaling. One of the following values:  Auto  Amazon SageMaker hyperparameter tuning chooses the best scale for the hyperparameter.  Linear  Hyperparameter tuning searches the values in the hyperparameter range by using a linear scale.  Logarithmic  Hyperparemeter tuning searches the values in the hyperparameter range by using a logarithmic scale. Logarithmic scaling works only for ranges that have only values greater than 0.  ReverseLogarithmic  Hyperparemeter tuning searches the values in the hyperparameter range by using a reverse logarithmic scale. Reverse logarithmic scaling works only for ranges that are entirely within the range 0&lt;=x&lt;1.0.  
+      */
+    var ScalingType: js.UndefOr[HyperParameterScalingType] = js.undefined
   }
   
   trait ContinuousParameterRangeSpecification extends js.Object {
@@ -2080,7 +2084,7 @@ object SageMakerNs extends js.Object {
       */
     var ResourceLimits: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ResourceLimits
     /**
-      * Specifies the search strategy for hyperparameters. Currently, the only valid value is Bayesian.
+      * Specifies how hyperparameter tuning chooses the combinations of hyperparameter values to use for the training job it launches. To use the Bayesian search stategy, set this to Bayesian. To randomly search, set it to Random. For information about search strategies, see How Hyperparameter Tuning Works.
       */
     var Strategy: HyperParameterTuningJobStrategyType
     /**
@@ -2208,6 +2212,10 @@ object SageMakerNs extends js.Object {
       * The name of the hyperparameter to search.
       */
     var Name: ParameterKey
+    /**
+      * The scale that hyperparameter tuning uses to search the hyperparameter range. For information about choosing a hyperparameter scale, see Hyperparameter Range Scaling. One of the following values:  Auto  Amazon SageMaker hyperparameter tuning chooses the best scale for the hyperparameter.  Linear  Hyperparameter tuning searches the values in the hyperparameter range by using a linear scale.  Logarithmic  Hyperparemeter tuning searches the values in the hyperparameter range by using a logarithmic scale. Logarithmic scaling works only for ranges that have only values greater than 0.  
+      */
+    var ScalingType: js.UndefOr[HyperParameterScalingType] = js.undefined
   }
   
   trait IntegerParameterRangeSpecification extends js.Object {
@@ -6358,11 +6366,15 @@ object SageMakerNs extends js.Object {
   
   trait _Framework extends js.Object
   
+  trait _HyperParameterScalingType extends js.Object
+  
   trait _HyperParameterTuningJobObjectiveType extends js.Object
   
   trait _HyperParameterTuningJobSortByOptions extends js.Object
   
   trait _HyperParameterTuningJobStatus extends js.Object
+  
+  trait _HyperParameterTuningJobStrategyType extends js.Object
   
   trait _HyperParameterTuningJobWarmStartType extends js.Object
   
@@ -6521,6 +6533,7 @@ object SageMakerNs extends js.Object {
   type Float = scala.Double
   type Framework = _Framework | java.lang.String
   type GitConfigUrl = java.lang.String
+  type HyperParameterScalingType = _HyperParameterScalingType | java.lang.String
   type HyperParameterSpecifications = js.Array[HyperParameterSpecification]
   type HyperParameterTrainingJobSummaries = js.Array[HyperParameterTrainingJobSummary]
   type HyperParameterTuningJobArn = java.lang.String
@@ -6529,7 +6542,7 @@ object SageMakerNs extends js.Object {
   type HyperParameterTuningJobObjectives = js.Array[HyperParameterTuningJobObjective]
   type HyperParameterTuningJobSortByOptions = _HyperParameterTuningJobSortByOptions | java.lang.String
   type HyperParameterTuningJobStatus = _HyperParameterTuningJobStatus | java.lang.String
-  type HyperParameterTuningJobStrategyType = awsDashSdkLib.awsDashSdkLibStrings.Bayesian | java.lang.String
+  type HyperParameterTuningJobStrategyType = _HyperParameterTuningJobStrategyType | java.lang.String
   type HyperParameterTuningJobSummaries = js.Array[HyperParameterTuningJobSummary]
   type HyperParameterTuningJobWarmStartType = _HyperParameterTuningJobWarmStartType | java.lang.String
   type Image = java.lang.String

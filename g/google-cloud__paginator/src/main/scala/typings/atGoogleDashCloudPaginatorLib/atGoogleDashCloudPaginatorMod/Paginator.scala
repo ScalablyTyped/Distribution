@@ -58,7 +58,7 @@ class Paginator () extends js.Object {
     * @param {function} originalMethod - The cached method that accepts a callback
     *     and returns `nextQuery` to receive more results.
     */
-  def run_(parsedArguments: ParsedArguments, originalMethod: js.Function): scala.Unit = js.native
+  def run_(parsedArguments: ParsedArguments, originalMethod: js.Function): js.Any = js.native
   /**
     * Wraps paginated API calls in a readable object stream.
     *
@@ -71,10 +71,10 @@ class Paginator () extends js.Object {
     * @param {string} methodName - Name of the method to streamify.
     * @return {function} - Wrapped function.
     */
-  def streamify(methodName: java.lang.String): js.ThisFunction1[
+  def streamify[T](methodName: java.lang.String): js.ThisFunction1[
     /* this */ org.scalablytyped.runtime.StringDictionary[js.Function], 
     /* repeated */ js.Any, 
-    _
+    ResourceStream[T]
   ] = js.native
 }
 

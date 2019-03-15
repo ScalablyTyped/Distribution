@@ -14,7 +14,7 @@ object packetNs extends js.Object {
     var fingerprint: java.lang.String
     def getBitSize(): scala.Double
     def getFingerprint(): java.lang.String
-    def getKeyId(): java.lang.String
+    def getKeyId(): openpgpLib.openpgpMod.Keyid
     def read(input: java.lang.String): js.Any
     def write(): js.Any
   }

@@ -9,7 +9,24 @@ trait MUIDataTableOptions extends js.Object {
   var IsRowSelectable: js.UndefOr[js.Function1[/* dataIndex */ scala.Double, scala.Boolean]] = js.undefined
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined
-  var customFooter: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var customFooter: js.UndefOr[
+    js.Function5[
+      /* rowCount */ scala.Double, 
+      /* page */ scala.Double, 
+      /* rowsPerPage */ scala.Double, 
+      /* changeRowsPerPage */ js.Function0[_], 
+      /* changePage */ scala.Double, 
+      reactLib.reactMod.ReactNs.ReactNode
+    ]
+  ] = js.undefined
+  var customSearch: js.UndefOr[
+    js.Function3[
+      /* searchQuery */ java.lang.String, 
+      /* currentRow */ js.Array[_], 
+      /* columns */ js.Array[_], 
+      scala.Boolean
+    ]
+  ] = js.undefined
   var customSort: js.UndefOr[
     js.Function3[
       /* data */ js.Array[_], 
@@ -99,7 +116,8 @@ object MUIDataTableOptions {
     IsRowSelectable: /* dataIndex */ scala.Double => scala.Boolean = null,
     caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
     count: scala.Int | scala.Double = null,
-    customFooter: () => reactLib.reactMod.ReactNs.ReactNode = null,
+    customFooter: (/* rowCount */ scala.Double, /* page */ scala.Double, /* rowsPerPage */ scala.Double, /* changeRowsPerPage */ js.Function0[_], /* changePage */ scala.Double) => reactLib.reactMod.ReactNs.ReactNode = null,
+    customSearch: (/* searchQuery */ java.lang.String, /* currentRow */ js.Array[_], /* columns */ js.Array[_]) => scala.Boolean = null,
     customSort: (/* data */ js.Array[_], /* colIndex */ scala.Double, /* order */ java.lang.String) => js.Array[_] = null,
     customToolbar: () => reactLib.reactMod.ReactNs.ReactNode = null,
     customToolbarSelect: (/* selectedRows */ muiDashDatatablesLib.Anon_Data, /* displayData */ js.Array[muiDashDatatablesLib.Anon_DataDataIndex], /* setSelectedRows */ js.Function1[/* rows */ js.Array[scala.Double], scala.Unit]) => reactLib.reactMod.ReactNs.ReactNode = null,
@@ -144,7 +162,8 @@ object MUIDataTableOptions {
     if (IsRowSelectable != null) __obj.updateDynamic("IsRowSelectable")(js.Any.fromFunction1(IsRowSelectable))
     if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (customFooter != null) __obj.updateDynamic("customFooter")(js.Any.fromFunction0(customFooter))
+    if (customFooter != null) __obj.updateDynamic("customFooter")(js.Any.fromFunction5(customFooter))
+    if (customSearch != null) __obj.updateDynamic("customSearch")(js.Any.fromFunction3(customSearch))
     if (customSort != null) __obj.updateDynamic("customSort")(js.Any.fromFunction3(customSort))
     if (customToolbar != null) __obj.updateDynamic("customToolbar")(js.Any.fromFunction0(customToolbar))
     if (customToolbarSelect != null) __obj.updateDynamic("customToolbarSelect")(js.Any.fromFunction3(customToolbarSelect))

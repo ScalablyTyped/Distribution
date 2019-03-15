@@ -14,7 +14,9 @@ object windowNs extends js.Object {
   val onDidChangeTextEditorSelection: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextEditorSelectionChangeEvent] = js.native
   val onDidChangeTextEditorViewColumn: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextEditorViewColumnChangeEvent] = js.native
   val onDidChangeVisibleTextEditors: vscodeLib.vscodeMod.Event[js.Array[vscodeLib.vscodeMod.TextEditor]] = js.native
+  val onDidChangeWindowState: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.WindowState] = js.native
   val onDidCloseTerminal: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.Terminal] = js.native
+  var state: vscodeLib.vscodeMod.WindowState = js.native
   var visibleTextEditors: js.Array[vscodeLib.vscodeMod.TextEditor] = js.native
   def createOutputChannel(name: java.lang.String): vscodeLib.vscodeMod.OutputChannel = js.native
   def createStatusBarItem(): vscodeLib.vscodeMod.StatusBarItem = js.native

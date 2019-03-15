@@ -772,7 +772,7 @@ trait ConfigService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns the details of one or more remediation configuration.
+    * Returns the details of one or more remediation configurations.
     */
   def describeRemediationConfigurations(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.DescribeRemediationConfigurationsResponse, 
@@ -789,7 +789,7 @@ trait ConfigService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns the details of one or more remediation configuration.
+    * Returns the details of one or more remediation configurations.
     */
   def describeRemediationConfigurations(
     params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.DescribeRemediationConfigurationsRequest
@@ -809,7 +809,7 @@ trait ConfigService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Provides a detailed view of a Remediation Execution for a set of resources including state, timestamps for when steps for the remediation execution happen, and any error messages for steps that have failed. When you specify the limit and the next token, you receive a paginated response.
+    * Provides a detailed view of a Remediation Execution for a set of resources including state, timestamps for when steps for the remediation execution occur, and any error messages for steps that have failed. When you specify the limit and the next token, you receive a paginated response.
     */
   def describeRemediationExecutionStatus(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.DescribeRemediationExecutionStatusResponse, 
@@ -826,7 +826,7 @@ trait ConfigService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Provides a detailed view of a Remediation Execution for a set of resources including state, timestamps for when steps for the remediation execution happen, and any error messages for steps that have failed. When you specify the limit and the next token, you receive a paginated response.
+    * Provides a detailed view of a Remediation Execution for a set of resources including state, timestamps for when steps for the remediation execution occur, and any error messages for steps that have failed. When you specify the limit and the next token, you receive a paginated response.
     */
   def describeRemediationExecutionStatus(
     params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.DescribeRemediationExecutionStatusRequest
@@ -1299,6 +1299,41 @@ trait ConfigService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * List the tags for AWS Config resource.
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * List the tags for AWS Config resource.
+    */
+  def listTagsForResource(params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListTagsForResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Authorizes the aggregator account and region to collect data from the source account and region. 
     */
   def putAggregationAuthorization(): awsDashSdkLib.libRequestMod.Request[
@@ -1449,7 +1484,7 @@ trait ConfigService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. AWS Config rule must already exist for you to add a remeduation configuration. The target (SSM document) must exist and have permissions to use the target. 
+    * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. The AWS Config rule must already exist for you to add a remediation configuration. The target (SSM document) must exist and have permissions to use the target. 
     */
   def putRemediationConfigurations(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.PutRemediationConfigurationsResponse, 
@@ -1466,7 +1501,7 @@ trait ConfigService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. AWS Config rule must already exist for you to add a remeduation configuration. The target (SSM document) must exist and have permissions to use the target. 
+    * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. The AWS Config rule must already exist for you to add a remediation configuration. The target (SSM document) must exist and have permissions to use the target. 
     */
   def putRemediationConfigurations(params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.PutRemediationConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.PutRemediationConfigurationsResponse, 
@@ -1616,6 +1651,36 @@ trait ConfigService
   def stopConfigurationRecorder(params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.StopConfigurationRecorderRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def stopConfigurationRecorder(
     params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.StopConfigurationRecorderRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well.
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well.
+    */
+  def tagResource(params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.TagResourceRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes specified tags from a resource.
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Deletes specified tags from a resource.
+    */
+  def untagResource(params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.UntagResourceRequest,
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }

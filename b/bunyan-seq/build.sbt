@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bunyan-seq"
-version := "0.2-dt-20190212Z-3033a1"
+version := "0.2-dt-20190314Z-3033a1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

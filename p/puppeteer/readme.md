@@ -9,6 +9,7 @@
 //                 Christopher Deutsch <https://github.com/cdeutsch>
 //                 Konstantin Simon Maria Möllers <https://github.com/ksm2>
 //                 Simon Schick <https://github.com/SimonSchick>
+//                 Serban Ghita <https://github.com/SerbanGhita>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

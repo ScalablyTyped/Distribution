@@ -18,7 +18,6 @@ object ^ extends js.Object {
   val any: AnyC = js.native
   val boolean: BooleanC = js.native
   val dictionary: ioDashTsLib.Anon_Codomain = js.native
-  val emptyIndexRecord: IndexRecord = js.native
   val never: NeverC = js.native
   val `null`: NullC = js.native
   val nullType: NullC = js.native
@@ -56,7 +55,6 @@ object ^ extends js.Object {
   def getContextEntry(key: java.lang.String, decoder: Decoder[_, _]): ContextEntry = js.native
   def getDefaultContext(decoder: Decoder[_, _]): Context = js.native
   def getFunctionName(f: js.Function): java.lang.String = js.native
-  def getIndexRecord(codecs: js.Array[Mixed]): IndexRecord = js.native
   def getValidationError(value: js.Any, context: Context): ValidationError = js.native
   def identity[A](a: A): A = js.native
   def interface[P /* <: Props */](props: P): TypeC[P] = js.native

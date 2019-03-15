@@ -10,6 +10,9 @@ object queryDashStringLibStrings {
   sealed trait bracket extends js.Object
   
   @js.native
+  sealed trait comma extends js.Object
+  
+  @js.native
   sealed trait index extends js.Object
   
   @js.native
@@ -17,6 +20,8 @@ object queryDashStringLibStrings {
   
   @scala.inline
   def bracket: bracket = "bracket".asInstanceOf[bracket]
+  @scala.inline
+  def comma: comma = "comma".asInstanceOf[comma]
   @scala.inline
   def index: index = "index".asInstanceOf[index]
   @scala.inline

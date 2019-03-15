@@ -2979,6 +2979,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Auto
     extends awsDashSdkLib.clientsSsmMod.SSMNs._ExecutionMode
+       with awsDashSdkLib.clientsSagemakerMod.SageMakerNs._HyperParameterScalingType
        with awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs._SnapshotType
        with awsDashSdkLib.clientsSagemakerMod.SageMakerNs._TrainingJobEarlyStoppingType
   
@@ -3619,7 +3620,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMachinelearningMod.MachineLearningNs._TaggableResourceType
   
   @js.native
-  sealed trait Bayesian extends js.Object
+  sealed trait Bayesian
+    extends awsDashSdkLib.clientsSagemakerMod.SageMakerNs._HyperParameterTuningJobStrategyType
   
   @js.native
   sealed trait BeginWith
@@ -6498,6 +6500,12 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerTlsCertificateFailureReason
   
   @js.native
+  sealed trait DOMAIN_VALIDATION_DENIED
+    extends awsDashSdkLib.clientsAcmMod.ACMNs._FailureReason
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._FailureReason
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._FailureReason
+  
+  @js.native
   sealed trait DONE
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._ReachabilityStatus
        with awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs._WarmupStatus
@@ -9246,6 +9254,12 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsPollyMod.PollyNs._VoiceId
   
   @js.native
+  sealed trait GetCertificate
+    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ActionType
+       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ActionType
+       with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._ActionType
+  
+  @js.native
   sealed trait Gigabits
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._MetricUnit
        with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._StandardUnit
@@ -11165,6 +11179,12 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsS3Mod.S3Ns._InventoryOptionalField
   
   @js.native
+  sealed trait IssueCertificate
+    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ActionType
+       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ActionType
+       with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._ActionType
+  
+  @js.native
   sealed trait IteratorAgeMilliseconds
     extends awsDashSdkLib.clientsKinesisMod.KinesisNs._MetricsName
   
@@ -12213,6 +12233,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSagemakerMod.SageMakerNs._SplitType
   
   @js.native
+  sealed trait Linear
+    extends awsDashSdkLib.clientsSagemakerMod.SageMakerNs._HyperParameterScalingType
+  
+  @js.native
   sealed trait Linux
     extends awsDashSdkLib.clientsSsmMod.SSMNs._PlatformType
   
@@ -12240,6 +12264,12 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait List
     extends awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs._ConfigurationOptionValueType
+  
+  @js.native
+  sealed trait ListPermissions
+    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ActionType
+       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ActionType
+       with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._ActionType
   
   @js.native
   sealed trait Listing
@@ -12273,6 +12303,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait LogStreamName
     extends awsDashSdkLib.clientsCloudwatchlogsMod.CloudWatchLogsNs._OrderBy
+  
+  @js.native
+  sealed trait Logarithmic
+    extends awsDashSdkLib.clientsSagemakerMod.SageMakerNs._HyperParameterScalingType
   
   @js.native
   sealed trait LoginWithAmazon
@@ -14728,6 +14762,12 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BillingMode
   
   @js.native
+  sealed trait PCA_ACCESS_DENIED
+    extends awsDashSdkLib.clientsAcmMod.ACMNs._FailureReason
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._FailureReason
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._FailureReason
+  
+  @js.native
   sealed trait PCA_INVALID_ARGS
     extends awsDashSdkLib.clientsAcmMod.ACMNs._FailureReason
        with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._FailureReason
@@ -14735,6 +14775,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait PCA_INVALID_ARN
+    extends awsDashSdkLib.clientsAcmMod.ACMNs._FailureReason
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._FailureReason
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._FailureReason
+  
+  @js.native
+  sealed trait PCA_INVALID_DURATION
     extends awsDashSdkLib.clientsAcmMod.ACMNs._FailureReason
        with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._FailureReason
        with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._FailureReason
@@ -16771,6 +16817,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Random
     extends awsDashSdkLib.clientsCloudwatchlogsMod.CloudWatchLogsNs._Distribution
+       with awsDashSdkLib.clientsSagemakerMod.SageMakerNs._HyperParameterTuningJobStrategyType
   
   @js.native
   sealed trait Raveena
@@ -17085,6 +17132,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Reverse
     extends awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs._ChronologicalOrder
+  
+  @js.native
+  sealed trait ReverseLogarithmic
+    extends awsDashSdkLib.clientsSagemakerMod.SageMakerNs._HyperParameterScalingType
   
   @js.native
   sealed trait Reviewable
@@ -23982,6 +24033,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEc2Mod.EC2Ns._Tenancy
   
   @js.native
+  sealed trait `host-reservation`
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._ResourceType
+  
+  @js.native
   sealed trait hostedzone
     extends awsDashSdkLib.clientsRoute53Mod.Route53Ns._TagResourceType
   
@@ -30279,6 +30334,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def DOMAIN_NOT_ALLOWED: DOMAIN_NOT_ALLOWED = "DOMAIN_NOT_ALLOWED".asInstanceOf[DOMAIN_NOT_ALLOWED]
   @scala.inline
+  def DOMAIN_VALIDATION_DENIED: DOMAIN_VALIDATION_DENIED = "DOMAIN_VALIDATION_DENIED".asInstanceOf[DOMAIN_VALIDATION_DENIED]
+  @scala.inline
   def DONE: DONE = "DONE".asInstanceOf[DONE]
   @scala.inline
   def DONT_KNOW: DONT_KNOW = "DONT_KNOW".asInstanceOf[DONT_KNOW]
@@ -31321,6 +31378,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Geraint: Geraint = "Geraint".asInstanceOf[Geraint]
   @scala.inline
+  def GetCertificate: GetCertificate = "GetCertificate".asInstanceOf[GetCertificate]
+  @scala.inline
   def Gigabits: Gigabits = "Gigabits".asInstanceOf[Gigabits]
   @scala.inline
   def `Gigabits/Second`: `Gigabits/Second` = "Gigabits/Second".asInstanceOf[`Gigabits/Second`]
@@ -32103,6 +32162,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def IsMultipartUploaded: IsMultipartUploaded = "IsMultipartUploaded".asInstanceOf[IsMultipartUploaded]
   @scala.inline
+  def IssueCertificate: IssueCertificate = "IssueCertificate".asInstanceOf[IssueCertificate]
+  @scala.inline
   def IteratorAgeMilliseconds: IteratorAgeMilliseconds = "IteratorAgeMilliseconds".asInstanceOf[IteratorAgeMilliseconds]
   @scala.inline
   def Ivy: Ivy = "Ivy".asInstanceOf[Ivy]
@@ -32545,6 +32606,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Line: Line = "Line".asInstanceOf[Line]
   @scala.inline
+  def Linear: Linear = "Linear".asInstanceOf[Linear]
+  @scala.inline
   def Linux: Linux = "Linux".asInstanceOf[Linux]
   @scala.inline
   def `Linux with SQL Server Enterprise`: `Linux with SQL Server Enterprise` = "Linux with SQL Server Enterprise".asInstanceOf[`Linux with SQL Server Enterprise`]
@@ -32558,6 +32621,8 @@ object awsDashSdkLibStrings {
   def `Linux/UNIX (Amazon VPC)`: `Linux/UNIX (Amazon VPC)` = "Linux/UNIX (Amazon VPC)".asInstanceOf[`Linux/UNIX (Amazon VPC)`]
   @scala.inline
   def List: List = "List".asInstanceOf[List]
+  @scala.inline
+  def ListPermissions: ListPermissions = "ListPermissions".asInstanceOf[ListPermissions]
   @scala.inline
   def Listing: Listing = "Listing".asInstanceOf[Listing]
   @scala.inline
@@ -32574,6 +32639,8 @@ object awsDashSdkLibStrings {
   def LocalManagedPolicy: LocalManagedPolicy = "LocalManagedPolicy".asInstanceOf[LocalManagedPolicy]
   @scala.inline
   def LogStreamName: LogStreamName = "LogStreamName".asInstanceOf[LogStreamName]
+  @scala.inline
+  def Logarithmic: Logarithmic = "Logarithmic".asInstanceOf[Logarithmic]
   @scala.inline
   def LoginWithAmazon: LoginWithAmazon = "LoginWithAmazon".asInstanceOf[LoginWithAmazon]
   @scala.inline
@@ -33565,9 +33632,13 @@ object awsDashSdkLibStrings {
   @scala.inline
   def PAY_PER_REQUEST: PAY_PER_REQUEST = "PAY_PER_REQUEST".asInstanceOf[PAY_PER_REQUEST]
   @scala.inline
+  def PCA_ACCESS_DENIED: PCA_ACCESS_DENIED = "PCA_ACCESS_DENIED".asInstanceOf[PCA_ACCESS_DENIED]
+  @scala.inline
   def PCA_INVALID_ARGS: PCA_INVALID_ARGS = "PCA_INVALID_ARGS".asInstanceOf[PCA_INVALID_ARGS]
   @scala.inline
   def PCA_INVALID_ARN: PCA_INVALID_ARN = "PCA_INVALID_ARN".asInstanceOf[PCA_INVALID_ARN]
+  @scala.inline
+  def PCA_INVALID_DURATION: PCA_INVALID_DURATION = "PCA_INVALID_DURATION".asInstanceOf[PCA_INVALID_DURATION]
   @scala.inline
   def PCA_INVALID_STATE: PCA_INVALID_STATE = "PCA_INVALID_STATE".asInstanceOf[PCA_INVALID_STATE]
   @scala.inline
@@ -34546,6 +34617,8 @@ object awsDashSdkLibStrings {
   def ReturnIntent: ReturnIntent = "ReturnIntent".asInstanceOf[ReturnIntent]
   @scala.inline
   def Reverse: Reverse = "Reverse".asInstanceOf[Reverse]
+  @scala.inline
+  def ReverseLogarithmic: ReverseLogarithmic = "ReverseLogarithmic".asInstanceOf[ReverseLogarithmic]
   @scala.inline
   def Reviewable: Reviewable = "Reviewable".asInstanceOf[Reviewable]
   @scala.inline
@@ -37464,6 +37537,8 @@ object awsDashSdkLibStrings {
   def high: high = "high".asInstanceOf[high]
   @scala.inline
   def host: host = "host".asInstanceOf[host]
+  @scala.inline
+  def `host-reservation`: `host-reservation` = "host-reservation".asInstanceOf[`host-reservation`]
   @scala.inline
   def hostedzone: hostedzone = "hostedzone".asInstanceOf[hostedzone]
   @scala.inline

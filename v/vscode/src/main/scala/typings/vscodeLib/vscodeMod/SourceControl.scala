@@ -33,6 +33,10 @@ trait SourceControl extends js.Object {
   		 */
   val id: java.lang.String
   /**
+  		 * The [input box](#SourceControlInputBox) for this source control.
+  		 */
+  val inputBox: SourceControlInputBox
+  /**
   		 * The human-readable label of this source control.
   		 */
   val label: java.lang.String
@@ -62,6 +66,7 @@ object SourceControl {
     createResourceGroup: (java.lang.String, java.lang.String) => SourceControlResourceGroup,
     dispose: () => scala.Unit,
     id: java.lang.String,
+    inputBox: SourceControlInputBox,
     label: java.lang.String,
     acceptInputCommand: Command = null,
     commitTemplate: java.lang.String = null,
@@ -69,7 +74,7 @@ object SourceControl {
     quickDiffProvider: QuickDiffProvider = null,
     statusBarCommands: js.Array[Command] = null
   ): SourceControl = {
-    val __obj = js.Dynamic.literal(createResourceGroup = js.Any.fromFunction2(createResourceGroup), dispose = js.Any.fromFunction0(dispose), id = id, label = label)
+    val __obj = js.Dynamic.literal(createResourceGroup = js.Any.fromFunction2(createResourceGroup), dispose = js.Any.fromFunction0(dispose), id = id, inputBox = inputBox, label = label)
     if (acceptInputCommand != null) __obj.updateDynamic("acceptInputCommand")(acceptInputCommand)
     if (commitTemplate != null) __obj.updateDynamic("commitTemplate")(commitTemplate)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])

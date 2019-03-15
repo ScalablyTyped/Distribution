@@ -190,7 +190,7 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, FS, A, TB, LA, LO, DA, AN] extends js.Ob
     */
   var tickDashOffset: js.UndefOr[N] = js.undefined
   /**
-    * Boolean flag indicating if an extra axis tick should be added for the initial position of the axis. This flag is useful for styling axes for `band` scales such that ticks are placed on band boundaries rather in the middle of a band. Use in conjunction with `"bandPostion": 1` and an axis `"padding"` value of `0`.
+    * Boolean flag indicating if an extra axis tick should be added for the initial position of the axis. This flag is useful for styling axes for `band` scales such that ticks are placed on band boundaries rather in the middle of a band. Use in conjunction with `"bandPosition": 1` and an axis `"padding"` value of `0`.
     */
   var tickExtra: js.UndefOr[B] = js.undefined
   /**

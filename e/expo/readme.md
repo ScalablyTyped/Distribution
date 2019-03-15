@@ -19,6 +19,7 @@
 //                 Satyajit Sahoo <https://github.com/satya164>
 //                 Vinit Sood <https://github.com/vinitsood>
 //                 Mattias Sämskar <https://github.com/mattiassamskar>
+//                 Julian Hundeloh <https://github.com/jaulz>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

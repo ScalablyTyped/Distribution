@@ -2,7 +2,17 @@
 
 # ScalablyTyped - The Javascript ecosystem for Scala.js!
 
-This is the home of Scala.js typings for **6453** Javascript libraries,
+[![Join the chat at https://gitter.im/ScalablyTyped/community](https://badges.gitter.im/ScalablyTyped/community.svg)](https://gitter.im/ScalablyTyped/community)
+
+## Warning :collision: :bomb: :sunglasses:
+
+Beware: While these typings generally work, some details of the encoding are still subject to change.
+All currently published artifacts should be considered snapshots and will be deleted without notice.
+Expect the first stable release before May.
+
+## About
+
+This is the home of Scala.js typings for **6459** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -11,21 +21,22 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               177306      9057842       800286      2272461      5985095
- Markdown              6051        62616         1163            0        61453
+ Scala               177397      9062082       800690      2273434      5987958
+ Markdown              6055        62648         1163            0        61485
  JSON                     5           29            0            0           29
  Makefile                 2           35            7            0           28
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               183365      9120528       801456      2272461      6046611
+ Total               183460      9124800       801860      2273434      6049506
 --------------------------------------------------------------------------------
 
 ```
 
 
 ## Typing?
+
 Javascript is infamously unityped. Given a library function like this:
-```ecmascript 6
+```javascript
   const add = (a, b) => a + b
 ```
 
@@ -83,7 +94,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201903140536")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201903150536")
 ```
 
 ### `build.sbt`

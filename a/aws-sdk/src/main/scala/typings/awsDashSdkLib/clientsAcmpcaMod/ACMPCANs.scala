@@ -142,15 +142,15 @@ object ACMPCANs extends js.Object {
   
   trait CreateCertificateAuthorityAuditReportRequest extends js.Object {
     /**
-      * Format in which to create the report. This can be either JSON or CSV.
+      * The format in which to create the report. This can be either JSON or CSV.
       */
     var AuditReportResponseFormat: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.AuditReportResponseFormat
     /**
-      * Amazon Resource Name (ARN) of the CA to be audited. This is of the form:  arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 .
+      * The Amazon Resource Name (ARN) of the CA to be audited. This is of the form:  arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 .
       */
     var CertificateAuthorityArn: Arn
     /**
-      * Name of the S3 bucket that will contain the audit report.
+      * The name of the S3 bucket that will contain the audit report.
       */
     var S3BucketName: String
   }
@@ -196,6 +196,25 @@ object ACMPCANs extends js.Object {
     var CertificateAuthorityArn: js.UndefOr[Arn] = js.undefined
   }
   
+  trait CreatePermissionRequest extends js.Object {
+    /**
+      * The actions that the specified AWS service principal can use. These include IssueCertificate, GetCertificate, and ListPermissions.
+      */
+    var Actions: ActionList
+    /**
+      * The Amazon Resource Name (ARN) of the CA that grants the permissions. You can find the ARN by calling the ListCertificateAuthorities operation. This must have the following form:   arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 . 
+      */
+    var CertificateAuthorityArn: Arn
+    /**
+      * The AWS service or identity that receives the permission. At this time, the only valid principal is acm.amazonaws.com.
+      */
+    var Principal: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.Principal
+    /**
+      * The ID of the calling account.
+      */
+    var SourceAccount: js.UndefOr[AccountId] = js.undefined
+  }
+  
   trait CrlConfiguration extends js.Object {
     /**
       * Name inserted into the certificate CRL Distribution Points extension that enables the use of an alias for the CRL distribution point. Use this value if you don't want the name of your S3 bucket to be public.
@@ -224,6 +243,21 @@ object ACMPCANs extends js.Object {
       * The number of days to make a CA restorable after it has been deleted. This can be anywhere from 7 to 30 days, with 30 being the default.
       */
     var PermanentDeletionTimeInDays: js.UndefOr[PermanentDeletionTimeInDays] = js.undefined
+  }
+  
+  trait DeletePermissionRequest extends js.Object {
+    /**
+      * The Amazon Resource Number (ARN) of the private CA that issued the permissions. You can find the CA's ARN by calling the ListCertificateAuthorities operation. This must have the following form:   arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 . 
+      */
+    var CertificateAuthorityArn: Arn
+    /**
+      * The AWS service or identity that will have its CA permissions revoked. At this time, the only valid service principal is acm.amazonaws.com 
+      */
+    var Principal: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.Principal
+    /**
+      * The AWS account that calls this operation.
+      */
+    var SourceAccount: js.UndefOr[AccountId] = js.undefined
   }
   
   trait DescribeCertificateAuthorityAuditReportRequest extends js.Object {
@@ -391,6 +425,32 @@ object ACMPCANs extends js.Object {
     var NextToken: js.UndefOr[NextToken] = js.undefined
   }
   
+  trait ListPermissionsRequest extends js.Object {
+    /**
+      * The Amazon Resource Number (ARN) of the private CA to inspect. You can find the ARN by calling the ListCertificateAuthorities operation. This must be of the form: arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 You can get a private CA's ARN by running the ListCertificateAuthorities operation.
+      */
+    var CertificateAuthorityArn: Arn
+    /**
+      * When paginating results, use this parameter to specify the maximum number of items to return in the response. If additional items exist beyond the number you specify, the NextToken element is sent in the response. Use this NextToken value in a subsequent request to retrieve additional items.
+      */
+    var MaxResults: js.UndefOr[MaxResults] = js.undefined
+    /**
+      * When paginating results, use this parameter in a subsequent request after you receive a response with truncated results. Set it to the value of NextToken from the response you just received.
+      */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  trait ListPermissionsResponse extends js.Object {
+    /**
+      * When the list is truncated, this value is present and should be used for the NextToken parameter in a subsequent pagination request. 
+      */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+      * Summary information about each permission assigned by the specified private CA, including the action enabled, the policy provided, and the time of creation.
+      */
+    var Permissions: js.UndefOr[PermissionList] = js.undefined
+  }
+  
   trait ListTagsRequest extends js.Object {
     /**
       * The Amazon Resource Name (ARN) that was returned when you called the CreateCertificateAuthority operation. This must be of the form:   arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012  
@@ -415,6 +475,33 @@ object ACMPCANs extends js.Object {
       * The tags associated with your private CA.
       */
     var Tags: js.UndefOr[TagList] = js.undefined
+  }
+  
+  trait Permission extends js.Object {
+    /**
+      * The private CA operations that can be performed by the designated AWS service.
+      */
+    var Actions: js.UndefOr[ActionList] = js.undefined
+    /**
+      * The Amazon Resource Number (ARN) of the private CA from which the permission was issued.
+      */
+    var CertificateAuthorityArn: js.UndefOr[Arn] = js.undefined
+    /**
+      * The time at which the permission was created.
+      */
+    var CreatedAt: js.UndefOr[TStamp] = js.undefined
+    /**
+      * The name of the policy that is associated with the permission.
+      */
+    var Policy: js.UndefOr[String] = js.undefined
+    /**
+      * The AWS service or entity that holds the permission. At this time, the only valid principal is acm.amazonaws.com.
+      */
+    var Principal: js.UndefOr[String] = js.undefined
+    /**
+      * The ID of the account that assigned the permission.
+      */
+    var SourceAccount: js.UndefOr[String] = js.undefined
   }
   
   trait RestoreCertificateAuthorityRequest extends js.Object {
@@ -497,7 +584,7 @@ object ACMPCANs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCertificateAuthorityResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates an audit report that lists every time that the your CA private key is used. The report is saved in the Amazon S3 bucket that you specify on input. The IssueCertificate and RevokeCertificate operations use the private key. You can generate a new report every 30 minutes.
+      * Creates an audit report that lists every time that your CA private key is used. The report is saved in the Amazon S3 bucket that you specify on input. The IssueCertificate and RevokeCertificate operations use the private key. You can generate a new report every 30 minutes.
       */
     def createCertificateAuthorityAuditReport(): awsDashSdkLib.libRequestMod.Request[CreateCertificateAuthorityAuditReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createCertificateAuthorityAuditReport(
@@ -508,7 +595,7 @@ object ACMPCANs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCertificateAuthorityAuditReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates an audit report that lists every time that the your CA private key is used. The report is saved in the Amazon S3 bucket that you specify on input. The IssueCertificate and RevokeCertificate operations use the private key. You can generate a new report every 30 minutes.
+      * Creates an audit report that lists every time that your CA private key is used. The report is saved in the Amazon S3 bucket that you specify on input. The IssueCertificate and RevokeCertificate operations use the private key. You can generate a new report every 30 minutes.
       */
     def createCertificateAuthorityAuditReport(params: CreateCertificateAuthorityAuditReportRequest): awsDashSdkLib.libRequestMod.Request[CreateCertificateAuthorityAuditReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createCertificateAuthorityAuditReport(
@@ -520,18 +607,48 @@ object ACMPCANs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCertificateAuthorityAuditReportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deletes a private certificate authority (CA). You must provide the ARN (Amazon Resource Name) of the private CA that you want to delete. You can find the ARN by calling the ListCertificateAuthorities operation. Before you can delete a CA, you must disable it. Call the UpdateCertificateAuthority operation and set the CertificateAuthorityStatus parameter to DISABLED.  Additionally, you can delete a CA if you are waiting for it to be created (the Status field of the CertificateAuthority is CREATING). You can also delete it if the CA has been created but you haven't yet imported the signed certificate (the Status is PENDING_CERTIFICATE) into ACM PCA.  If the CA is in one of the aforementioned states and you call DeleteCertificateAuthority, the CA's status changes to DELETED. However, the CA won't be permentantly deleted until the restoration period has passed. By default, if you do not set the PermanentDeletionTimeInDays parameter, the CA remains restorable for 30 days. You can set the parameter from 7 to 30 days. The DescribeCertificateAuthority operation returns the time remaining in the restoration window of a Private CA in the DELETED state. To restore an eligable CA, call the RestoreCertificateAuthority operation.
+      * Assigns permissions from a private CA to a designated AWS service. Services are specified by their service principals and can be given permission to create and retrieve certificates on a private CA. Services can also be given permission to list the active permissions that the private CA has granted. For ACM to automatically renew your private CA's certificates, you must assign all possible permissions from the CA to the ACM service principal. At this time, you can only assign permissions to ACM (acm.amazonaws.com). Permissions can be revoked with the DeletePermission operation and listed with the ListPermissions operation.
+      */
+    def createPermission(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def createPermission(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Assigns permissions from a private CA to a designated AWS service. Services are specified by their service principals and can be given permission to create and retrieve certificates on a private CA. Services can also be given permission to list the active permissions that the private CA has granted. For ACM to automatically renew your private CA's certificates, you must assign all possible permissions from the CA to the ACM service principal. At this time, you can only assign permissions to ACM (acm.amazonaws.com). Permissions can be revoked with the DeletePermission operation and listed with the ListPermissions operation.
+      */
+    def createPermission(params: CreatePermissionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def createPermission(
+      params: CreatePermissionRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes a private certificate authority (CA). You must provide the ARN (Amazon Resource Name) of the private CA that you want to delete. You can find the ARN by calling the ListCertificateAuthorities operation. Before you can delete a CA, you must disable it. Call the UpdateCertificateAuthority operation and set the CertificateAuthorityStatus parameter to DISABLED.  Additionally, you can delete a CA if you are waiting for it to be created (the Status field of the CertificateAuthority is CREATING). You can also delete it if the CA has been created but you haven't yet imported the signed certificate (the Status is PENDING_CERTIFICATE) into ACM PCA.  If the CA is in one of the previously mentioned states and you call DeleteCertificateAuthority, the CA's status changes to DELETED. However, the CA won't be permanently deleted until the restoration period has passed. By default, if you do not set the PermanentDeletionTimeInDays parameter, the CA remains restorable for 30 days. You can set the parameter from 7 to 30 days. The DescribeCertificateAuthority operation returns the time remaining in the restoration window of a Private CA in the DELETED state. To restore an eligible CA, call the RestoreCertificateAuthority operation.
       */
     def deleteCertificateAuthority(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def deleteCertificateAuthority(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deletes a private certificate authority (CA). You must provide the ARN (Amazon Resource Name) of the private CA that you want to delete. You can find the ARN by calling the ListCertificateAuthorities operation. Before you can delete a CA, you must disable it. Call the UpdateCertificateAuthority operation and set the CertificateAuthorityStatus parameter to DISABLED.  Additionally, you can delete a CA if you are waiting for it to be created (the Status field of the CertificateAuthority is CREATING). You can also delete it if the CA has been created but you haven't yet imported the signed certificate (the Status is PENDING_CERTIFICATE) into ACM PCA.  If the CA is in one of the aforementioned states and you call DeleteCertificateAuthority, the CA's status changes to DELETED. However, the CA won't be permentantly deleted until the restoration period has passed. By default, if you do not set the PermanentDeletionTimeInDays parameter, the CA remains restorable for 30 days. You can set the parameter from 7 to 30 days. The DescribeCertificateAuthority operation returns the time remaining in the restoration window of a Private CA in the DELETED state. To restore an eligable CA, call the RestoreCertificateAuthority operation.
+      * Deletes a private certificate authority (CA). You must provide the ARN (Amazon Resource Name) of the private CA that you want to delete. You can find the ARN by calling the ListCertificateAuthorities operation. Before you can delete a CA, you must disable it. Call the UpdateCertificateAuthority operation and set the CertificateAuthorityStatus parameter to DISABLED.  Additionally, you can delete a CA if you are waiting for it to be created (the Status field of the CertificateAuthority is CREATING). You can also delete it if the CA has been created but you haven't yet imported the signed certificate (the Status is PENDING_CERTIFICATE) into ACM PCA.  If the CA is in one of the previously mentioned states and you call DeleteCertificateAuthority, the CA's status changes to DELETED. However, the CA won't be permanently deleted until the restoration period has passed. By default, if you do not set the PermanentDeletionTimeInDays parameter, the CA remains restorable for 30 days. You can set the parameter from 7 to 30 days. The DescribeCertificateAuthority operation returns the time remaining in the restoration window of a Private CA in the DELETED state. To restore an eligible CA, call the RestoreCertificateAuthority operation.
       */
     def deleteCertificateAuthority(params: DeleteCertificateAuthorityRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def deleteCertificateAuthority(
       params: DeleteCertificateAuthorityRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Revokes permissions that a private CA assigned to a designated AWS service. Permissions can be created with the CreatePermission operation and listed with the ListPermissions operation. 
+      */
+    def deletePermission(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deletePermission(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Revokes permissions that a private CA assigned to a designated AWS service. Permissions can be created with the CreatePermission operation and listed with the ListPermissions operation. 
+      */
+    def deletePermission(params: DeletePermissionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deletePermission(
+      params: DeletePermissionRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
@@ -722,6 +839,29 @@ object ACMPCANs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListCertificateAuthoritiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists all the permissions, if any, that have been assigned by a private CA. Permissions can be granted with the CreatePermission operation and revoked with the DeletePermission operation.
+      */
+    def listPermissions(): awsDashSdkLib.libRequestMod.Request[ListPermissionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listPermissions(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListPermissionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListPermissionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists all the permissions, if any, that have been assigned by a private CA. Permissions can be granted with the CreatePermission operation and revoked with the DeletePermission operation.
+      */
+    def listPermissions(params: ListPermissionsRequest): awsDashSdkLib.libRequestMod.Request[ListPermissionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listPermissions(
+      params: ListPermissionsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListPermissionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListPermissionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Lists the tags, if any, that are associated with your private CA. Tags are labels that you can use to identify and organize your CAs. Each tag consists of a key and an optional value. Call the TagCertificateAuthority operation to add one or more tags to your CA. Call the UntagCertificateAuthority operation to remove tags. 
       */
@@ -967,6 +1107,8 @@ object ACMPCANs extends js.Object {
     var Value: PositiveLong
   }
   
+  trait _ActionType extends js.Object
+  
   trait _AuditReportResponseFormat extends js.Object
   
   trait _AuditReportStatus extends js.Object
@@ -986,6 +1128,9 @@ object ACMPCANs extends js.Object {
   trait _apiVersion extends js.Object
   
   val TypesNs: this.type = js.native
+  type AccountId = java.lang.String
+  type ActionList = js.Array[ActionType]
+  type ActionType = _ActionType | java.lang.String
   type Arn = java.lang.String
   type AuditReportId = java.lang.String
   type AuditReportResponseFormat = _AuditReportResponseFormat | java.lang.String
@@ -1010,7 +1155,9 @@ object ACMPCANs extends js.Object {
   type MaxResults = scala.Double
   type NextToken = java.lang.String
   type PermanentDeletionTimeInDays = scala.Double
+  type PermissionList = js.Array[Permission]
   type PositiveLong = scala.Double
+  type Principal = java.lang.String
   type RevocationReason = _RevocationReason | java.lang.String
   type SigningAlgorithm = _SigningAlgorithm | java.lang.String
   type String = java.lang.String

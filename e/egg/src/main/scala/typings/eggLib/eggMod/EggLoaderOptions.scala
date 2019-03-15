@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EggLoaderOptions extends js.Object {
-  var app: Application
+  var app: eggDashViewLib.eggMod.Application
   var baseDir: java.lang.String
   var logger: eggDashLoggerLib.eggDashLoggerMod.EggLogger
   var plugins: js.UndefOr[js.Any] = js.undefined
@@ -16,7 +16,7 @@ trait EggLoaderOptions extends js.Object {
 object EggLoaderOptions {
   @scala.inline
   def apply(
-    app: Application,
+    app: eggDashViewLib.eggMod.Application,
     baseDir: java.lang.String,
     logger: eggDashLoggerLib.eggDashLoggerMod.EggLogger,
     plugins: js.Any = null,

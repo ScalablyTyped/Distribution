@@ -99,6 +99,21 @@ class IText protected () extends Text {
   var selectionStart: js.UndefOr[scala.Double] = js.native
   var useNative: js.UndefOr[scala.Boolean] = js.native
   /**
+  	 * @private
+  	 */
+  def _getNewSelectionStartFromOffset(
+    mouseOffset: fabricLib.Anon_X,
+    prevWidth: scala.Double,
+    width: scala.Double,
+    index: scala.Double,
+    jlen: scala.Double
+  ): scala.Double = js.native
+  /**
+  	 * @private
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 */
+  def _render(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
+  /**
   	 * Aborts cursor animation and clears all timeouts
   	 */
   def abortCursorAnimation(): scala.Unit = js.native

@@ -15,25 +15,25 @@ trait SCWorker
   val EVENT_WARNING: socketclusterLib.socketclusterLibStrings.warning = js.native
   val MIDDLEWARE_START: socketclusterLib.socketclusterLibStrings.start = js.native
   var auth: scDashAuthLib.scDashAuthMod.SCAuthEngine = js.native
-  var exchange: scDashBrokerDashClusterLib.scDashBrokerDashClusterMod.SCExchange = js.native
+  var exchange: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCExchange */ js.Any = js.native
   var httpServer: nodeLib.httpMod.Server | nodeLib.httpsMod.Server = js.native
   var id: scala.Double = js.native
   var isLeader: scala.Boolean = js.native
-  var options: socketclusterDashServerLib.scserverMod.SCServerNs.SCServerOptions = js.native
-  var scServer: socketclusterDashServerLib.socketclusterDashServerMod.SCServer = js.native
+  var options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any = js.native
+  var scServer: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServer */ js.Any = js.native
   @JSName("addMiddleware")
   def addMiddleware_start(`type`: socketclusterLib.socketclusterLibStrings.start, middlewareFn: middlewareFunction): scala.Unit = js.native
   def close(): scala.Unit = js.native
   def close(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def getHTTPServer(): nodeLib.httpMod.Server | nodeLib.httpsMod.Server = js.native
-  def getSCServer(): socketclusterDashServerLib.socketclusterDashServerMod.SCServer = js.native
+  def getSCServer(): js.Any = js.native
   def getSocketPath(): java.lang.String = js.native
   def getStatus(): socketclusterLib.Anon_ClientCount = js.native
   @JSName("on")
   def on_connection(
     event: socketclusterLib.socketclusterLibStrings.connection,
     listener: js.Function1[
-      /* scSocket */ socketclusterDashServerLib.socketclusterDashServerMod.SCServerSocket, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServerSocket */ /* scSocket */ js.Any, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -69,7 +69,9 @@ trait SCWorker
     callback: js.Function2[/* err */ stdLib.Error | scala.Null, /* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def setAuthEngine(authEngine: scDashAuthLib.scDashAuthMod.SCAuthEngine): scala.Unit = js.native
-  def setCodecEngine(codecEngine: socketclusterDashServerLib.scserverMod.SCServerNs.SCCodecEngine): scala.Unit = js.native
+  def setCodecEngine(
+    codecEngine: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServer.SCCodecEngine */ js.Any
+  ): scala.Unit = js.native
   def start(): js.Promise[scala.Unit] = js.native
   def startHTTPServer(): scala.Unit = js.native
 }

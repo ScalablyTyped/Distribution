@@ -7,30 +7,34 @@ import scala.scalajs.js.annotation._
 
 trait StringifyOptions extends js.Object {
   /**
-  	 * Supports both `index` for an indexed array representation or `bracket` for a *bracketed* array representation.
-  	 *
   	 * @default 'none'
   	 *
-  	 * - `bracket`: stands for parsing correctly arrays with bracket representation on the query string, such as:
+  	 * - `bracket`: Serialize arrays using bracket representation:
   	 *
   	 *
-  	 *    queryString.stringify({foo: [1,2,3]}, {arrayFormat: 'bracket'});
-  	 *    // => foo[]=1&foo[]=2&foo[]=3
+  	 *    queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'bracket'});
+  	 *    //=> 'foo[]=1&foo[]=2&foo[]=3'
   	 *
-  	 * - `index`: stands for parsing taking the index into account, such as:
-  	 *
-  	 *
-  	 *    queryString.stringify({foo: [1,2,3]}, {arrayFormat: 'index'});
-  	 *    // => foo[0]=1&foo[1]=2&foo[3]=3
-  	 *
-  	 * - `none`: is the **default** option and removes any bracket representation, such as:
+  	 * - `index`: Serialize arrays using index representation:
   	 *
   	 *
-  	 *    queryString.stringify({foo: [1,2,3]});
-  	 *    // => foo=1&foo=2&foo=3
+  	 *    queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'index'});
+  	 *    //=> 'foo[0]=1&foo[1]=2&foo[3]=3'
+  	 *
+  	 * - `comma`: Serialize arrays by separating elements with comma:
+  	 *
+  	 *
+  	 *    queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'comma'});
+  	 *    //=> 'foo=1,2,3'
+  	 *
+  	 * - `none`: Serialize arrays by using duplicate keys:
+  	 *
+  	 *
+  	 *    queryString.stringify({foo: [1, 2, 3]});
+  	 *    //=> 'foo=1&foo=2&foo=3'
   	 */
   val arrayFormat: js.UndefOr[
-    queryDashStringLib.queryDashStringLibStrings.bracket | queryDashStringLib.queryDashStringLibStrings.index | queryDashStringLib.queryDashStringLibStrings.none
+    queryDashStringLib.queryDashStringLibStrings.bracket | queryDashStringLib.queryDashStringLibStrings.index | queryDashStringLib.queryDashStringLibStrings.comma | queryDashStringLib.queryDashStringLibStrings.none
   ] = js.undefined
   /**
   	 * [URL encode](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) the keys and values.
@@ -46,12 +50,12 @@ trait StringifyOptions extends js.Object {
   	 * @example
   	 *
   	 * const order = ['c', 'a', 'b'];
-  	 * queryString.stringify({ a: 1, b: 2, c: 3}, {
-  	 *     sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
+  	 * queryString.stringify({a: 1, b: 2, c: 3}, {
+  	 * 	sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
   	 * });
   	 * // => 'c=3&a=1&b=2'
   	 *
-  	 * queryString.stringify({ b: 1, c: 2, a: 3}, {sort: false});
+  	 * queryString.stringify({b: 1, c: 2, a: 3}, {sort: false});
   	 * // => 'b=1&c=2&a=3'
   	 */
   val sort: js.UndefOr[
@@ -68,7 +72,7 @@ trait StringifyOptions extends js.Object {
 object StringifyOptions {
   @scala.inline
   def apply(
-    arrayFormat: queryDashStringLib.queryDashStringLibStrings.bracket | queryDashStringLib.queryDashStringLibStrings.index | queryDashStringLib.queryDashStringLibStrings.none = null,
+    arrayFormat: queryDashStringLib.queryDashStringLibStrings.bracket | queryDashStringLib.queryDashStringLibStrings.index | queryDashStringLib.queryDashStringLibStrings.comma | queryDashStringLib.queryDashStringLibStrings.none = null,
     encode: js.UndefOr[scala.Boolean] = js.undefined,
     sort: (js.Function2[/* itemLeft */ java.lang.String, /* itemRight */ java.lang.String, scala.Double]) | queryDashStringLib.queryDashStringLibNumbers.`false` = null,
     strict: js.UndefOr[scala.Boolean] = js.undefined

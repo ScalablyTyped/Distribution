@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "firebase__firestore"
-version := "1.0.6-5cf2ab"
+version := "1.1.0-08d708"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "firebase__app" % "0.3.11-674642",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.3.5-553dd3",
-  "org.scalablytyped" %%% "firebase__firestore-types" % "1.0.3-98eb44",
-  "org.scalablytyped" %%% "firebase__logger" % "0.1.8-3db2dc",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.9-546759",
+  "org.scalablytyped" %%% "firebase__app" % "0.3.12-e234e3",
+  "org.scalablytyped" %%% "firebase__app-types" % "0.3.6-5d1ce4",
+  "org.scalablytyped" %%% "firebase__firestore-types" % "1.1.0-e51bba",
+  "org.scalablytyped" %%% "firebase__logger" % "0.1.9-3db2dc",
+  "org.scalablytyped" %%% "firebase__util" % "0.2.10-546759",
   "org.scalablytyped" %%% "grpc" % "1.19.0-398e25",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
   "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20190214Z-e15c6b",

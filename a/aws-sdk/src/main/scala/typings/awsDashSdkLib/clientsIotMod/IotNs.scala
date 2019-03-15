@@ -1142,6 +1142,10 @@ object IotNs extends js.Object {
       */
     var roleArn: RoleArn
     /**
+      * Metadata which can be used to manage updates.
+      */
+    var tags: js.UndefOr[TagList] = js.undefined
+    /**
       * Specifies whether the update will continue to run (CONTINUOUS), or will be complete after all the things specified as targets have completed the update (SNAPSHOT). If continuous, the update may also be run on a thing when a change is detected in a target. For example, an update will run on a thing when the thing is added to a target group, even after the update was completed by all things originally in the group. Valid values: CONTINUOUS | SNAPSHOT.
       */
     var targetSelection: js.UndefOr[TargetSelection] = js.undefined
@@ -1353,6 +1357,10 @@ object IotNs extends js.Object {
       * The stream ID.
       */
     var streamId: StreamId
+    /**
+      * Metadata which can be used to manage streams.
+      */
+    var tags: js.UndefOr[TagList] = js.undefined
   }
   
   trait CreateStreamResponse extends js.Object {
@@ -4466,7 +4474,7 @@ object IotNs extends js.Object {
       */
     var certificatePem: CertificatePem
     /**
-      * A boolean value that specifies if the certificate is set to active.
+      * A boolean value that specifies if the CA certificate is set to active.
       */
     var setAsActive: js.UndefOr[SetAsActiveFlag] = js.undefined
     /**
@@ -6093,7 +6101,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a thing record in the registry. If this call is made multiple times using the same thing name and configuration, the call will succeed. If this call is made with the same thing name but different configuration a ResourceAlreadyExistsException is thrown.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
+      * Creates a thing record in the registry.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
       */
     def createThing(): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createThing(
@@ -6104,7 +6112,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a thing record in the registry. If this call is made multiple times using the same thing name and configuration, the call will succeed. If this call is made with the same thing name but different configuration a ResourceAlreadyExistsException is thrown.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
+      * Creates a thing record in the registry.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
       */
     def createThing(params: CreateThingRequest): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createThing(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__common"
-version := "0.31.0-6e5263"
+version := "0.31.1-e1bc3a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-fa036a",
   "org.scalablytyped" %%% "google-auth-library" % "3.1.0-4fd3dd",
   "org.scalablytyped" %%% "google-cloud__projectify" % "0.3.3-2241a3",
-  "org.scalablytyped" %%% "google-cloud__promisify" % "0.3.1-15a810",
+  "org.scalablytyped" %%% "google-cloud__promisify" % "0.4.0-68d6c2",
   "org.scalablytyped" %%% "google-p12-pem" % "1.0.4-c9ae4e",
   "org.scalablytyped" %%% "gtoken" % "2.3.3-3a12a8",
   "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-47de09",

@@ -33,6 +33,10 @@ trait DataPoint extends js.Object {
     */
   var drilldown: js.UndefOr[java.lang.String] = js.undefined
   /**
+  				 * The end value of the point. For gantt datetime axes, the end value is the timestamp in milliseconds since 1970.
+  				 */
+  var end: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Individual point events
     */
   var events: js.UndefOr[PointEvents] = js.undefined
@@ -112,6 +116,10 @@ trait DataPoint extends js.Object {
     */
   var sliced: js.UndefOr[scala.Boolean] = js.undefined
   /**
+  				 * The start value of the point. For gantt datetime axes, the start value is the timestamp in milliseconds since 1970.
+  				 */
+  var start: js.UndefOr[scala.Double] = js.undefined
+  /**
     * The value of the point, resulting in a relative area of the point in the treemap.
     */
   var value: js.UndefOr[scala.Double] = js.undefined
@@ -138,6 +146,7 @@ object DataPoint {
     dataLabels: DataLabels = null,
     description: java.lang.String = null,
     drilldown: java.lang.String = null,
+    end: scala.Int | scala.Double = null,
     events: PointEvents = null,
     high: scala.Int | scala.Double = null,
     id: java.lang.String = null,
@@ -155,6 +164,7 @@ object DataPoint {
     radius: scala.Double | java.lang.String = null,
     selected: js.UndefOr[scala.Boolean] = js.undefined,
     sliced: js.UndefOr[scala.Boolean] = js.undefined,
+    start: scala.Int | scala.Double = null,
     value: scala.Int | scala.Double = null,
     x: scala.Int | scala.Double = null,
     y: scala.Int | scala.Double = null,
@@ -166,6 +176,7 @@ object DataPoint {
     if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
     if (description != null) __obj.updateDynamic("description")(description)
     if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
     if (events != null) __obj.updateDynamic("events")(events)
     if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
@@ -183,6 +194,7 @@ object DataPoint {
     if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
     if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
     if (!js.isUndefined(sliced)) __obj.updateDynamic("sliced")(sliced)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])

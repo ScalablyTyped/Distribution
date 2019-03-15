@@ -9,7 +9,7 @@ trait IShadowOptions extends js.Object {
   /**
   	 * Whether the shadow should affect stroke operations
   	 */
-  var affectStrike: js.UndefOr[scala.Boolean] = js.undefined
+  var affectStroke: js.UndefOr[scala.Boolean] = js.undefined
   /**
   	 * Shadow blur
   	 */
@@ -35,7 +35,7 @@ trait IShadowOptions extends js.Object {
 object IShadowOptions {
   @scala.inline
   def apply(
-    affectStrike: js.UndefOr[scala.Boolean] = js.undefined,
+    affectStroke: js.UndefOr[scala.Boolean] = js.undefined,
     blur: scala.Int | scala.Double = null,
     color: java.lang.String = null,
     includeDefaultValues: js.UndefOr[scala.Boolean] = js.undefined,
@@ -43,7 +43,7 @@ object IShadowOptions {
     offsetY: scala.Int | scala.Double = null
   ): IShadowOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(affectStrike)) __obj.updateDynamic("affectStrike")(affectStrike)
+    if (!js.isUndefined(affectStroke)) __obj.updateDynamic("affectStroke")(affectStroke)
     if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color)
     if (!js.isUndefined(includeDefaultValues)) __obj.updateDynamic("includeDefaultValues")(includeDefaultValues)

@@ -155,15 +155,15 @@ object ACMPCANs extends js.Object {
     
     trait CreateCertificateAuthorityAuditReportRequest extends js.Object {
       /**
-        * Format in which to create the report. This can be either JSON or CSV.
+        * The format in which to create the report. This can be either JSON or CSV.
         */
       var AuditReportResponseFormat: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.AuditReportResponseFormat
       /**
-        * Amazon Resource Name (ARN) of the CA to be audited. This is of the form:  arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 .
+        * The Amazon Resource Name (ARN) of the CA to be audited. This is of the form:  arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 .
         */
       var CertificateAuthorityArn: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.Arn
       /**
-        * Name of the S3 bucket that will contain the audit report.
+        * The name of the S3 bucket that will contain the audit report.
         */
       var S3BucketName: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.String
     }
@@ -209,6 +209,25 @@ object ACMPCANs extends js.Object {
       var CertificateAuthorityArn: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.Arn] = js.undefined
     }
     
+    trait CreatePermissionRequest extends js.Object {
+      /**
+        * The actions that the specified AWS service principal can use. These include IssueCertificate, GetCertificate, and ListPermissions.
+        */
+      var Actions: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ActionList
+      /**
+        * The Amazon Resource Name (ARN) of the CA that grants the permissions. You can find the ARN by calling the ListCertificateAuthorities operation. This must have the following form:   arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 . 
+        */
+      var CertificateAuthorityArn: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.Arn
+      /**
+        * The AWS service or identity that receives the permission. At this time, the only valid principal is acm.amazonaws.com.
+        */
+      var Principal: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.Principal
+      /**
+        * The ID of the calling account.
+        */
+      var SourceAccount: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.AccountId] = js.undefined
+    }
+    
     trait CrlConfiguration extends js.Object {
       /**
         * Name inserted into the certificate CRL Distribution Points extension that enables the use of an alias for the CRL distribution point. Use this value if you don't want the name of your S3 bucket to be public.
@@ -237,6 +256,21 @@ object ACMPCANs extends js.Object {
         * The number of days to make a CA restorable after it has been deleted. This can be anywhere from 7 to 30 days, with 30 being the default.
         */
       var PermanentDeletionTimeInDays: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.PermanentDeletionTimeInDays] = js.undefined
+    }
+    
+    trait DeletePermissionRequest extends js.Object {
+      /**
+        * The Amazon Resource Number (ARN) of the private CA that issued the permissions. You can find the CA's ARN by calling the ListCertificateAuthorities operation. This must have the following form:   arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 . 
+        */
+      var CertificateAuthorityArn: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.Arn
+      /**
+        * The AWS service or identity that will have its CA permissions revoked. At this time, the only valid service principal is acm.amazonaws.com 
+        */
+      var Principal: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.Principal
+      /**
+        * The AWS account that calls this operation.
+        */
+      var SourceAccount: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.AccountId] = js.undefined
     }
     
     trait DescribeCertificateAuthorityAuditReportRequest extends js.Object {
@@ -404,6 +438,32 @@ object ACMPCANs extends js.Object {
       var NextToken: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.NextToken] = js.undefined
     }
     
+    trait ListPermissionsRequest extends js.Object {
+      /**
+        * The Amazon Resource Number (ARN) of the private CA to inspect. You can find the ARN by calling the ListCertificateAuthorities operation. This must be of the form: arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012 You can get a private CA's ARN by running the ListCertificateAuthorities operation.
+        */
+      var CertificateAuthorityArn: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.Arn
+      /**
+        * When paginating results, use this parameter to specify the maximum number of items to return in the response. If additional items exist beyond the number you specify, the NextToken element is sent in the response. Use this NextToken value in a subsequent request to retrieve additional items.
+        */
+      var MaxResults: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.MaxResults] = js.undefined
+      /**
+        * When paginating results, use this parameter in a subsequent request after you receive a response with truncated results. Set it to the value of NextToken from the response you just received.
+        */
+      var NextToken: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.NextToken] = js.undefined
+    }
+    
+    trait ListPermissionsResponse extends js.Object {
+      /**
+        * When the list is truncated, this value is present and should be used for the NextToken parameter in a subsequent pagination request. 
+        */
+      var NextToken: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.NextToken] = js.undefined
+      /**
+        * Summary information about each permission assigned by the specified private CA, including the action enabled, the policy provided, and the time of creation.
+        */
+      var Permissions: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.PermissionList] = js.undefined
+    }
+    
     trait ListTagsRequest extends js.Object {
       /**
         * The Amazon Resource Name (ARN) that was returned when you called the CreateCertificateAuthority operation. This must be of the form:   arn:aws:acm-pca:region:account:certificate-authority/12345678-1234-1234-1234-123456789012  
@@ -428,6 +488,33 @@ object ACMPCANs extends js.Object {
         * The tags associated with your private CA.
         */
       var Tags: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.TagList] = js.undefined
+    }
+    
+    trait Permission extends js.Object {
+      /**
+        * The private CA operations that can be performed by the designated AWS service.
+        */
+      var Actions: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ActionList] = js.undefined
+      /**
+        * The Amazon Resource Number (ARN) of the private CA from which the permission was issued.
+        */
+      var CertificateAuthorityArn: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.Arn] = js.undefined
+      /**
+        * The time at which the permission was created.
+        */
+      var CreatedAt: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.TStamp] = js.undefined
+      /**
+        * The name of the policy that is associated with the permission.
+        */
+      var Policy: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.String] = js.undefined
+      /**
+        * The AWS service or entity that holds the permission. At this time, the only valid principal is acm.amazonaws.com.
+        */
+      var Principal: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.String] = js.undefined
+      /**
+        * The ID of the account that assigned the permission.
+        */
+      var SourceAccount: js.UndefOr[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.String] = js.undefined
     }
     
     trait RestoreCertificateAuthorityRequest extends js.Object {
@@ -518,6 +605,8 @@ object ACMPCANs extends js.Object {
       var Value: awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.PositiveLong
     }
     
+    trait _ActionType extends js.Object
+    
     trait _AuditReportResponseFormat extends js.Object
     
     trait _AuditReportStatus extends js.Object
@@ -537,6 +626,9 @@ object ACMPCANs extends js.Object {
     trait _apiVersion extends js.Object
     
     val TypesNs: this.type = js.native
+    type AccountId = java.lang.String
+    type ActionList = js.Array[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.ActionType]
+    type ActionType = _ActionType | java.lang.String
     type Arn = java.lang.String
     type AuditReportId = java.lang.String
     type AuditReportResponseFormat = _AuditReportResponseFormat | java.lang.String
@@ -561,7 +653,9 @@ object ACMPCANs extends js.Object {
     type MaxResults = scala.Double
     type NextToken = java.lang.String
     type PermanentDeletionTimeInDays = scala.Double
+    type PermissionList = js.Array[awsDashSdkLib.clientsAcmpcaMod.ACMPCANs.Permission]
     type PositiveLong = scala.Double
+    type Principal = java.lang.String
     type RevocationReason = _RevocationReason | java.lang.String
     type SigningAlgorithm = _SigningAlgorithm | java.lang.String
     type String = java.lang.String

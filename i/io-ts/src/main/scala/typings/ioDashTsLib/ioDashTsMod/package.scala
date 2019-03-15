@@ -23,8 +23,6 @@ package object ioDashTsMod {
   type ExactC[C /* <: HasProps */] = ExactType[C, TypeOf[C], OutputOf[C], InputOf[C]]
   type FunctionC = FunctionType
   type HasProps = _HasProps | (InterfaceType[js.Any, js.Any, js.Any, js.Any]) | (StrictType[js.Any, js.Any, js.Any, js.Any]) | (PartialType[js.Any, js.Any, js.Any, js.Any])
-  type Index = js.Array[ioDashTsLib.IndexItem]
-  type IndexRecord = stdLib.Record[java.lang.String, Index]
   type InputOf[C /* <: Any */] = /* import warning: ImportType.apply Failed type conversion: C['_I'] */ js.Any
   type Int = Branded[scala.Double, IntBrand]
   type IntersectionC[CS /* <: js.Array[Mixed] */] = IntersectionType[

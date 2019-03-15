@@ -24,7 +24,6 @@ trait SketchMSSymbolMaster extends SketchMSLayer {
   var includeBackgroundColorInExport: scala.Double
   var includeBackgroundColorInInstance: scala.Double
   var includeInCloudUpload: scala.Double
-  var isClosed: js.UndefOr[scala.Boolean] = js.undefined
   var isFlippedHorizontal: scala.Double
   var isFlippedVertical: scala.Double
   var isLocked: scala.Boolean
@@ -35,7 +34,6 @@ trait SketchMSSymbolMaster extends SketchMSLayer {
   var name: java.lang.String
   var nameIsFixed: scala.Boolean
   var objectID: java.lang.String
-  var points: SketchMSPath
   var resizesContent: scala.Double
   var resizingConstraint: sketchappLib.sketchappLibNumbers.`63` | scala.Double
   var resizingType: scala.Double
@@ -72,7 +70,6 @@ object SketchMSSymbolMaster {
     name: java.lang.String,
     nameIsFixed: scala.Boolean,
     objectID: java.lang.String,
-    points: SketchMSPath,
     resizesContent: scala.Double,
     resizingConstraint: sketchappLib.sketchappLibNumbers.`63` | scala.Double,
     resizingType: scala.Double,
@@ -83,14 +80,12 @@ object SketchMSSymbolMaster {
     verticalRulerData: SketchMSRulerData,
     css: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     do_objectID: java.lang.String = null,
-    flow: SketchMSImmutableFlowConnection = null,
-    isClosed: js.UndefOr[scala.Boolean] = js.undefined
+    flow: SketchMSImmutableFlowConnection = null
   ): SketchMSSymbolMaster = {
-    val __obj = js.Dynamic.literal(_class = _class, attributedString = attributedString, backgroundColor = backgroundColor, constrainProportions = constrainProportions, exportOptions = exportOptions, frame = frame, grid = grid, hasBackgroundColor = hasBackgroundColor, hasClickThrough = hasClickThrough, horizontalRulerData = horizontalRulerData, includeBackgroundColorInExport = includeBackgroundColorInExport, includeBackgroundColorInInstance = includeBackgroundColorInInstance, includeInCloudUpload = includeInCloudUpload, isFlippedHorizontal = isFlippedHorizontal, isFlippedVertical = isFlippedVertical, isLocked = isLocked, isVisible = isVisible, layerListExpandedType = layerListExpandedType, layers = layers, layout = layout, name = name, nameIsFixed = nameIsFixed, objectID = objectID, points = points, resizesContent = resizesContent, resizingConstraint = resizingConstraint.asInstanceOf[js.Any], resizingType = resizingType, rotation = rotation, shouldBreakMaskChain = shouldBreakMaskChain, style = style, userInfo = userInfo, verticalRulerData = verticalRulerData)
+    val __obj = js.Dynamic.literal(_class = _class, attributedString = attributedString, backgroundColor = backgroundColor, constrainProportions = constrainProportions, exportOptions = exportOptions, frame = frame, grid = grid, hasBackgroundColor = hasBackgroundColor, hasClickThrough = hasClickThrough, horizontalRulerData = horizontalRulerData, includeBackgroundColorInExport = includeBackgroundColorInExport, includeBackgroundColorInInstance = includeBackgroundColorInInstance, includeInCloudUpload = includeInCloudUpload, isFlippedHorizontal = isFlippedHorizontal, isFlippedVertical = isFlippedVertical, isLocked = isLocked, isVisible = isVisible, layerListExpandedType = layerListExpandedType, layers = layers, layout = layout, name = name, nameIsFixed = nameIsFixed, objectID = objectID, resizesContent = resizesContent, resizingConstraint = resizingConstraint.asInstanceOf[js.Any], resizingType = resizingType, rotation = rotation, shouldBreakMaskChain = shouldBreakMaskChain, style = style, userInfo = userInfo, verticalRulerData = verticalRulerData)
     if (css != null) __obj.updateDynamic("css")(css)
     if (do_objectID != null) __obj.updateDynamic("do_objectID")(do_objectID)
     if (flow != null) __obj.updateDynamic("flow")(flow)
-    if (!js.isUndefined(isClosed)) __obj.updateDynamic("isClosed")(isClosed)
     __obj.asInstanceOf[SketchMSSymbolMaster]
   }
 }

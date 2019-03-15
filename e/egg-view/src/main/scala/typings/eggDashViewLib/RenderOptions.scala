@@ -5,9 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RenderOptions
-  extends eggLib.eggMod.PlainObject[js.Any] {
-  var locals: js.UndefOr[eggLib.eggMod.PlainObject[_]] = js.undefined
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ trait RenderOptions extends js.Object {
+  var locals: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlainObject */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlainObject */ js.Any
+  ] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var root: js.UndefOr[java.lang.String] = js.undefined
   var viewEngine: js.UndefOr[java.lang.String] = js.undefined
@@ -16,7 +18,7 @@ trait RenderOptions
 object RenderOptions {
   @scala.inline
   def apply(
-    locals: eggLib.eggMod.PlainObject[_] = null,
+    locals: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlainObject */ js.Any = null,
     name: java.lang.String = null,
     root: java.lang.String = null,
     viewEngine: java.lang.String = null

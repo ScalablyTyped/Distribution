@@ -98,6 +98,12 @@ class Text protected () extends Object {
   	 */
   var underline: js.UndefOr[scala.Boolean] = js.native
   /**
+  	 * @private
+  	 * @param {Number} lineIndex index text line
+  	 * @return {Number} Line left offset
+  	 */
+  def _getLineLeftOffset(lineIndex: scala.Double): scala.Double = js.native
+  /**
   	 * Calculate text box height
   	 */
   def calcTextHeight(): scala.Double = js.native
@@ -143,6 +149,14 @@ class Text protected () extends Object {
   	 * @return {Number}
   	 */
   def getHeightOfLine(lineIndex: scala.Double): scala.Double = js.native
+  /**
+  	 * Measure a single line given its index. Used to calculate the initial
+  	 * text bounding box. The values are calculated and stored in __lineWidths cache.
+  	 * @private
+  	 * @param {Number} lineIndex line number
+  	 * @return {Number} Line width
+  	 */
+  def getLineWidth(lineIndex: scala.Double): scala.Double = js.native
   /**
   	 * Return a context for measurement of text string.
   	 * if created it gets stored for reuse

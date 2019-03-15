@@ -85,7 +85,7 @@ object ACMNs extends js.Object {
       */
     var Options: js.UndefOr[CertificateOptions] = js.undefined
     /**
-      * Specifies whether the certificate is eligible for renewal.
+      * Specifies whether the certificate is eligible for renewal. At this time, only exported private certificates can be renewed with the RenewCertificate command.
       */
     var RenewalEligibility: js.UndefOr[RenewalEligibility] = js.undefined
     /**
@@ -231,7 +231,7 @@ object ACMNs extends js.Object {
       */
     var CertificateChain: js.UndefOr[CertificateChain] = js.undefined
     /**
-      * The PEM-encoded private key associated with the public key in the certificate.
+      * The encrypted private key associated with the public key in the certificate. The key is output in PKCS #8 format and is base64 PEM-encoded. 
       */
     var PrivateKey: js.UndefOr[PrivateKey] = js.undefined
   }
@@ -368,6 +368,13 @@ object ACMNs extends js.Object {
     var Tags: TagList
   }
   
+  trait RenewCertificateRequest extends js.Object {
+    /**
+      * String that contains the ARN of the ACM certificate to be renewed. This must be of the form:  arn:aws:acm:region:123456789012:certificate/12345678-1234-1234-1234-123456789012  For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+      */
+    var CertificateArn: Arn
+  }
+  
   trait RenewalSummary extends js.Object {
     /**
       * Contains information about the validation of each domain name in the certificate, as it pertains to ACM's managed renewal. This is different from the initial validation that occurs as a result of the RequestCertificate request. This field exists only when the certificate type is AMAZON_ISSUED.
@@ -377,6 +384,14 @@ object ACMNs extends js.Object {
       * The status of ACM's managed renewal of the certificate.
       */
     var RenewalStatus: awsDashSdkLib.clientsAcmMod.ACMNs.RenewalStatus
+    /**
+      * The reason that a renewal request was unsuccessful.
+      */
+    var RenewalStatusReason: js.UndefOr[FailureReason] = js.undefined
+    /**
+      * The time at which the renewal summary was last updated.
+      */
+    var UpdatedAt: TStamp
   }
   
   trait RequestCertificateRequest extends js.Object {
@@ -644,6 +659,21 @@ object ACMNs extends js.Object {
     def removeTagsFromCertificate(params: RemoveTagsFromCertificateRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def removeTagsFromCertificate(
       params: RemoveTagsFromCertificateRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Renews an eligable ACM certificate. At this time, only exported private certificates can be renewed with this operation. In order to renew your ACM PCA certificates with ACM, you must first grant the ACM service principal permission to do so. For more information, see Testing Managed Renewal in the ACM User Guide.
+      */
+    def renewCertificate(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def renewCertificate(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Renews an eligable ACM certificate. At this time, only exported private certificates can be renewed with this operation. In order to renew your ACM PCA certificates with ACM, you must first grant the ACM service principal permission to do so. For more information, see Testing Managed Renewal in the ACM User Guide.
+      */
+    def renewCertificate(params: RenewCertificateRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def renewCertificate(
+      params: RenewCertificateRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**

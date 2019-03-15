@@ -6,6 +6,7 @@
 //                 Daniel Montesinos <https://github.com/damonpam>
 //                 Carlos Villavicencio <https://github.com/po5i>
 //                 Eric Camellini <https://github.com/ecamellini>
+//                 SardineFIsh <https://github.com/SardineFish>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 ```

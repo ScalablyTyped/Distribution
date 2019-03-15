@@ -191,6 +191,9 @@ trait ECharts extends js.Object {
     lazyUpdate: scala.Boolean
   ): scala.Unit = js.native
   def setOption(option: EChartOption[echartsLib.echartsNs.EChartOptionNs.Series], opts: EChartsOptionConfig): scala.Unit = js.native
+  def setOption(option: EChartsResponsiveOption): scala.Unit = js.native
+  def setOption(option: EChartsResponsiveOption, notMerge: scala.Boolean): scala.Unit = js.native
+  def setOption(option: EChartsResponsiveOption, notMerge: scala.Boolean, lazyUpdate: scala.Boolean): scala.Unit = js.native
   /**
     * Shows loading animation. You can call this interface manually before
     *     data is loaded, and call `hideLoading` to hide loading animation

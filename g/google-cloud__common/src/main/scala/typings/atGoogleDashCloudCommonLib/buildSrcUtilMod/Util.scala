@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@google-cloud/common/build/src/util", "Util")
 @js.native
 class Util () extends js.Object {
-  var ApiError: org.scalablytyped.runtime.Instantiable1[/* errorMessage */ java.lang.String, ApiError] = js.native
+  var ApiError: atGoogleDashCloudCommonLib.Anon_CreateMultiErrorMessage = js.native
   var PartialFailureError: org.scalablytyped.runtime.Instantiable1[/* b */ GoogleErrorBody, PartialFailureError] = js.native
   /**
     * Decorate the options about to be made in a request.

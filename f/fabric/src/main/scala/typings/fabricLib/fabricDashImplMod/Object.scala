@@ -12,6 +12,42 @@ class Object ()
      with IObjectOptions
      with IObjectAnimation[Object] {
   def this(options: IObjectOptions) = this()
+  def _applyPatternGradientTransform(ctx: stdLib.CanvasRenderingContext2D, filler: Gradient): scala.Unit = js.native
+  def _applyPatternGradientTransform(ctx: stdLib.CanvasRenderingContext2D, filler: Pattern): scala.Unit = js.native
+  /**
+  	 * @private
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 * @param {Object} filler fabric.Pattern or fabric.Gradient
+  	 * @return {Object} offset.offsetX offset for text rendering
+  	 * @return {Object} offset.offsetY offset for text rendering
+  	 */
+  def _applyPatternGradientTransform(ctx: stdLib.CanvasRenderingContext2D, filler: java.lang.String): scala.Unit = js.native
+  /*
+    * Calculate object dimensions from its properties
+    * @private
+    * @return {Object} .x width dimension
+    * @return {Object} .y height dimension
+    */
+  def _getNonTransformedDimensions(): fabricLib.Anon_X = js.native
+  /**
+  	 * @private
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 */
+  def _removeShadow(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
+  /**
+  	 *
+  	 * @param ctx
+  	 * @private
+  	 */
+  def _renderStroke(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
+  /**
+  	 * @private
+  	 * Sets line dash
+  	 * @param {CanvasRenderingContext2D} ctx Context to set the dash line on
+  	 * @param {Array} dashArray array representing dashes
+  	 * @param {Function} alternative function to call if browser does not support lineDash
+  	 */
+  def _setLineDash(ctx: stdLib.CanvasRenderingContext2D, dashArray: js.Array[scala.Double], alternative: js.Function): scala.Unit = js.native
   /**
   	 * @param to One of 'left', 'center', 'right'
   	 */

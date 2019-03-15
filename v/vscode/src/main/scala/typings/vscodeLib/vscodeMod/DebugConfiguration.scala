@@ -11,15 +11,15 @@ trait DebugConfiguration
 		 */
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
-  		 * An optional name for the debug session.
+  		 * The name of the debug session.
   		 */
-  var name: js.UndefOr[java.lang.String] = js.undefined
+  var name: java.lang.String
   /**
   		 * The request type of the debug session.
   		 */
   var request: java.lang.String
   /**
-  		 * The type for the debug session.
+  		 * The type of the debug session.
   		 */
   var `type`: java.lang.String
 }
@@ -27,18 +27,17 @@ trait DebugConfiguration
 object DebugConfiguration {
   @scala.inline
   def apply(
+    name: java.lang.String,
     request: java.lang.String,
     `type`: java.lang.String,
     StringDictionary: /**
   		 * Additional debug type specific properties.
   		 */
-  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    name: java.lang.String = null
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): DebugConfiguration = {
-    val __obj = js.Dynamic.literal(request = request)
+    val __obj = js.Dynamic.literal(name = name, request = request)
     __obj.updateDynamic("type")(`type`)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (name != null) __obj.updateDynamic("name")(name)
     __obj.asInstanceOf[DebugConfiguration]
   }
 }

@@ -26,6 +26,10 @@ trait Options extends js.Object {
     */
   var langPrefix: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Set target to open link in
+    */
+  var linkTarget: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Autoconvert URL-like text to links.
     */
   var linkify: js.UndefOr[scala.Boolean] = js.undefined
@@ -51,6 +55,7 @@ object Options {
     highlight: (/* str */ java.lang.String, /* lang */ java.lang.String) => java.lang.String = null,
     html: js.UndefOr[scala.Boolean] = js.undefined,
     langPrefix: java.lang.String = null,
+    linkTarget: java.lang.String = null,
     linkify: js.UndefOr[scala.Boolean] = js.undefined,
     quotes: java.lang.String = null,
     typographer: js.UndefOr[scala.Boolean] = js.undefined,
@@ -61,6 +66,7 @@ object Options {
     if (highlight != null) __obj.updateDynamic("highlight")(js.Any.fromFunction2(highlight))
     if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
     if (langPrefix != null) __obj.updateDynamic("langPrefix")(langPrefix)
+    if (linkTarget != null) __obj.updateDynamic("linkTarget")(linkTarget)
     if (!js.isUndefined(linkify)) __obj.updateDynamic("linkify")(linkify)
     if (quotes != null) __obj.updateDynamic("quotes")(quotes)
     if (!js.isUndefined(typographer)) __obj.updateDynamic("typographer")(typographer)

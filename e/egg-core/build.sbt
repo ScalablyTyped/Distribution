@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg-core"
-version := "4.15.0-cd0f91"
+version := "4.15.0-d56b70"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-4b79e1",
   "org.scalablytyped" %%% "depd" % "1.1-dt-20181116Z-80afa8",
   "org.scalablytyped" %%% "dir-glob" % "2.0-dt-20181212Z-6b9642",
-  "org.scalablytyped" %%% "egg-logger" % "2.3.2-d3f395",
+  "org.scalablytyped" %%% "egg-logger" % "2.4.0-200fc6",
   "org.scalablytyped" %%% "escape-html" % "0.0-unknown-dt-20180214Z-249d0e",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-1f537b",
   "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-68b458",

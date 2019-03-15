@@ -543,7 +543,7 @@ object ConfigServiceNs extends js.Object {
       */
     var accountId: js.UndefOr[AccountId] = js.undefined
     /**
-      * The Amazon Resource Name (ARN) of the resource.
+      * accoun
       */
     var arn: js.UndefOr[ARN] = js.undefined
     /**
@@ -723,7 +723,7 @@ object ConfigServiceNs extends js.Object {
   
   trait DeleteRemediationConfigurationRequest extends js.Object {
     /**
-      * The name of the AWS Config rule for which you want to delete remediation configuration for.
+      * The name of the AWS Config rule for which you want to delete remediation configuration.
       */
     var ConfigRuleName: StringWithCharLimit64
     /**
@@ -1107,7 +1107,7 @@ object ConfigServiceNs extends js.Object {
   
   trait DescribeRemediationExecutionStatusRequest extends js.Object {
     /**
-      * A list of config rule names.
+      * A list of AWS Config rule names.
       */
     var ConfigRuleName: StringWithCharLimit64
     /**
@@ -1119,7 +1119,7 @@ object ConfigServiceNs extends js.Object {
       */
     var NextToken: js.UndefOr[StringWithCharLimit256] = js.undefined
     /**
-      * A list of resource keys object. 
+      * A list of resource keys to be processed with the current request. Each element in the list consists of the resource type and resource ID. 
       */
     var ResourceKeys: js.UndefOr[ResourceKeys] = js.undefined
   }
@@ -1130,7 +1130,7 @@ object ConfigServiceNs extends js.Object {
       */
     var NextToken: js.UndefOr[StringWithCharLimit256] = js.undefined
     /**
-      * Returns a list of remediation execution statuses object.
+      * Returns a list of remediation execution statuses objects.
       */
     var RemediationExecutionStatuses: js.UndefOr[RemediationExecutionStatuses] = js.undefined
   }
@@ -1239,7 +1239,7 @@ object ConfigServiceNs extends js.Object {
       */
     var FailedItems: js.UndefOr[RemediationConfigurations] = js.undefined
     /**
-      * Returns a failure message. For example, the resource is compliant.
+      * Returns a failure message. For example, the resource is already compliant.
       */
     var FailureMessage: js.UndefOr[String] = js.undefined
   }
@@ -1620,6 +1620,32 @@ object ConfigServiceNs extends js.Object {
     var resourceIdentifiers: js.UndefOr[ResourceIdentifierList] = js.undefined
   }
   
+  trait ListTagsForResourceRequest extends js.Object {
+    /**
+      * The maximum number of tags returned on each page. The limit maximum is 50. You cannot specify a number greater than 50. If you specify 0, AWS Config uses the default. 
+      */
+    var Limit: js.UndefOr[Limit] = js.undefined
+    /**
+      * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response. 
+      */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+      * The Amazon Resource Name (ARN) that identifies the resource for which to list the tags. Currently, the supported resources are ConfigRule, ConfigurationAggregator and AggregatorAuthorization.
+      */
+    var ResourceArn: AmazonResourceName
+  }
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    /**
+      * The nextToken string returned on a previous page that you use to get the next page of results in a paginated response. 
+      */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+      * The tags for the resource.
+      */
+    var Tags: js.UndefOr[TagList] = js.undefined
+  }
+  
   trait OrganizationAggregationSource extends js.Object {
     /**
       * If true, aggregate existing AWS Config regions and future regions.
@@ -1805,7 +1831,7 @@ object ConfigServiceNs extends js.Object {
       */
     var ResourceType: js.UndefOr[String] = js.undefined
     /**
-      * Public ID is document.
+      * Target ID is the name of the public document.
       */
     var TargetId: StringWithCharLimit256
     /**
@@ -1840,7 +1866,7 @@ object ConfigServiceNs extends js.Object {
   
   trait RemediationExecutionStep extends js.Object {
     /**
-      * An error message if the step was interupted during execution.
+      * An error message if the step was interrupted during execution.
       */
     var ErrorMessage: js.UndefOr[String] = js.undefined
     /**
@@ -2039,18 +2065,18 @@ object ConfigServiceNs extends js.Object {
       */
     var ConfigRuleName: StringWithCharLimit64
     /**
-      * A list of resource key object.
+      * A list of resource keys to be processed with the current request. Each element in the list consists of the resource type and resource ID. 
       */
     var ResourceKeys: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.ResourceKeys
   }
   
   trait StartRemediationExecutionResponse extends js.Object {
     /**
-      * For resources that have failed to start execuition the API returns a resource key object.
+      * For resources that have failed to start execution, the API returns a resource key object.
       */
     var FailedItems: js.UndefOr[ResourceKeys] = js.undefined
     /**
-      * Returns a failure message. For example, the resource is compliant.
+      * Returns a failure message. For example, the resource is already compliant.
       */
     var FailureMessage: js.UndefOr[String] = js.undefined
   }
@@ -2071,6 +2097,28 @@ object ConfigServiceNs extends js.Object {
   
   trait SupplementaryConfiguration
     extends /* key */ org.scalablytyped.runtime.StringDictionary[SupplementaryConfigurationValue]
+  
+  trait Tag extends js.Object {
+    /**
+      * One part of a key-value pair that make up a tag. A key is a general label that acts like a category for more specific tag values.
+      */
+    var Key: js.UndefOr[TagKey] = js.undefined
+    /**
+      * The optional part of a key-value pair that make up a tag. A value acts as a descriptor within a tag category (key).
+      */
+    var Value: js.UndefOr[TagValue] = js.undefined
+  }
+  
+  trait TagResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) that identifies the resource for which to list the tags. Currently, the supported resources are ConfigRule, ConfigurationAggregator and AggregatorAuthorization.
+      */
+    var ResourceArn: AmazonResourceName
+    /**
+      * An array of tag object.
+      */
+    var Tags: TagList
+  }
   
   trait Tags
     extends /* key */ org.scalablytyped.runtime.StringDictionary[Value]
@@ -2624,7 +2672,7 @@ object ConfigServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribePendingAggregationRequestsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns the details of one or more remediation configuration.
+      * Returns the details of one or more remediation configurations.
       */
     def describeRemediationConfigurations(): awsDashSdkLib.libRequestMod.Request[DescribeRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeRemediationConfigurations(
@@ -2635,7 +2683,7 @@ object ConfigServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns the details of one or more remediation configuration.
+      * Returns the details of one or more remediation configurations.
       */
     def describeRemediationConfigurations(params: DescribeRemediationConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[DescribeRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeRemediationConfigurations(
@@ -2647,7 +2695,7 @@ object ConfigServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Provides a detailed view of a Remediation Execution for a set of resources including state, timestamps for when steps for the remediation execution happen, and any error messages for steps that have failed. When you specify the limit and the next token, you receive a paginated response.
+      * Provides a detailed view of a Remediation Execution for a set of resources including state, timestamps for when steps for the remediation execution occur, and any error messages for steps that have failed. When you specify the limit and the next token, you receive a paginated response.
       */
     def describeRemediationExecutionStatus(): awsDashSdkLib.libRequestMod.Request[DescribeRemediationExecutionStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeRemediationExecutionStatus(
@@ -2658,7 +2706,7 @@ object ConfigServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeRemediationExecutionStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Provides a detailed view of a Remediation Execution for a set of resources including state, timestamps for when steps for the remediation execution happen, and any error messages for steps that have failed. When you specify the limit and the next token, you receive a paginated response.
+      * Provides a detailed view of a Remediation Execution for a set of resources including state, timestamps for when steps for the remediation execution occur, and any error messages for steps that have failed. When you specify the limit and the next token, you receive a paginated response.
       */
     def describeRemediationExecutionStatus(params: DescribeRemediationExecutionStatusRequest): awsDashSdkLib.libRequestMod.Request[DescribeRemediationExecutionStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeRemediationExecutionStatus(
@@ -2981,6 +3029,29 @@ object ConfigServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDiscoveredResourcesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * List the tags for AWS Config resource.
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * List the tags for AWS Config resource.
+      */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Authorizes the aggregator account and region to collect data from the source account and region. 
       */
     def putAggregationAuthorization(): awsDashSdkLib.libRequestMod.Request[PutAggregationAuthorizationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3095,7 +3166,7 @@ object ConfigServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutEvaluationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. AWS Config rule must already exist for you to add a remeduation configuration. The target (SSM document) must exist and have permissions to use the target. 
+      * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. The AWS Config rule must already exist for you to add a remediation configuration. The target (SSM document) must exist and have permissions to use the target. 
       */
     def putRemediationConfigurations(): awsDashSdkLib.libRequestMod.Request[PutRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putRemediationConfigurations(
@@ -3106,7 +3177,7 @@ object ConfigServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. AWS Config rule must already exist for you to add a remeduation configuration. The target (SSM document) must exist and have permissions to use the target. 
+      * Adds or updates the remediation configuration with a specific AWS Config rule with the selected target or action. The API creates the RemediationConfiguration object for the AWS Config rule. The AWS Config rule must already exist for you to add a remediation configuration. The target (SSM document) must exist and have permissions to use the target. 
       */
     def putRemediationConfigurations(params: PutRemediationConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[PutRemediationConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putRemediationConfigurations(
@@ -3216,6 +3287,47 @@ object ConfigServiceNs extends js.Object {
       params: StopConfigurationRecorderRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well.
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well.
+      */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes specified tags from a resource.
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes specified tags from a resource.
+      */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  }
+  
+  trait UntagResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) that identifies the resource for which to list the tags. Currently, the supported resources are ConfigRule, ConfigurationAggregator and AggregatorAuthorization.
+      */
+    var ResourceArn: AmazonResourceName
+    /**
+      * The keys of the tags to be removed.
+      */
+    var TagKeys: TagKeyList
   }
   
   trait _AggregatedSourceStatusType extends js.Object
@@ -3267,6 +3379,7 @@ object ConfigServiceNs extends js.Object {
   type AggregationAuthorizationList = js.Array[AggregationAuthorization]
   type AggregatorRegionList = js.Array[String]
   type AllSupported = scala.Boolean
+  type AmazonResourceName = java.lang.String
   type AvailabilityZone = java.lang.String
   type AwsRegion = java.lang.String
   type BaseConfigurationItems = js.Array[BaseConfigurationItem]
@@ -3367,6 +3480,10 @@ object ConfigServiceNs extends js.Object {
   type StringWithCharLimit64 = java.lang.String
   type SupplementaryConfigurationName = java.lang.String
   type SupplementaryConfigurationValue = java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = java.lang.String
   type UnprocessedResourceIdentifierList = js.Array[AggregateResourceIdentifier]
   type Value = java.lang.String
   type Version = java.lang.String

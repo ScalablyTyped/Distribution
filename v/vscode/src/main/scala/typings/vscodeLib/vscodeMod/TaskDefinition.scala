@@ -11,7 +11,7 @@ trait TaskDefinition
 		 */
 /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
-  		 * The task definition descibing the task provided by an extension.
+  		 * The task definition describing the task provided by an extension.
   		 * Usually a task provider defines more properties to identify
   		 * a task. They need to be defined in the package.json of the
   		 * extension under the 'taskDefinitions' extension point. The npm

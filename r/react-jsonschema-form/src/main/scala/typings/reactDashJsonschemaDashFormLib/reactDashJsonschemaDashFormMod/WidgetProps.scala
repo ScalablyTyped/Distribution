@@ -6,42 +6,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'onBlur' | 'onFocus'> ]: react.react.HTMLAttributes<std.HTMLElement>[P]} */ trait WidgetProps extends js.Object {
-  var autofocus: scala.Boolean
-  var disabled: scala.Boolean
-  var formContext: js.Any
-  var id: java.lang.String
-  var label: java.lang.String
-  var options: js.Object
-  var readonly: scala.Boolean
-  var required: scala.Boolean
-  var schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6
-  var value: js.Any
-  def onBlur(id: java.lang.String, value: java.lang.String): scala.Unit
-  def onChange(value: js.Any): scala.Unit
-  def onFocus(id: java.lang.String, value: java.lang.String): scala.Unit
-}
-
-object WidgetProps {
-  @scala.inline
-  def apply(
-    autofocus: scala.Boolean,
-    disabled: scala.Boolean,
-    formContext: js.Any,
-    id: java.lang.String,
-    label: java.lang.String,
-    onBlur: (java.lang.String, java.lang.String) => scala.Unit,
-    onChange: js.Any => scala.Unit,
-    onFocus: (java.lang.String, java.lang.String) => scala.Unit,
-    options: js.Object,
-    readonly: scala.Boolean,
-    required: scala.Boolean,
-    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
-    value: js.Any
-  ): WidgetProps = {
-    val __obj = js.Dynamic.literal(autofocus = autofocus, disabled = disabled, formContext = formContext, id = id, label = label, onBlur = js.Any.fromFunction2(onBlur), onChange = js.Any.fromFunction1(onChange), onFocus = js.Any.fromFunction2(onFocus), options = options, readonly = readonly, required = required, schema = schema, value = value)
-  
-    __obj.asInstanceOf[WidgetProps]
-  }
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'onBlur' | 'onFocus'> ]: react.react.HTMLAttributes<std.HTMLElement>[P]} */ @js.native
+trait WidgetProps extends js.Object {
+  var autofocus: scala.Boolean = js.native
+  var disabled: scala.Boolean = js.native
+  var formContext: js.Any = js.native
+  var id: java.lang.String = js.native
+  var label: java.lang.String = js.native
+  var options: js.Object = js.native
+  var readonly: scala.Boolean = js.native
+  var required: scala.Boolean = js.native
+  var schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6 = js.native
+  var value: js.Any = js.native
+  def onBlur(id: java.lang.String): scala.Unit = js.native
+  def onBlur(id: java.lang.String, value: java.lang.String): scala.Unit = js.native
+  def onBlur(id: java.lang.String, value: scala.Boolean): scala.Unit = js.native
+  def onBlur(id: java.lang.String, value: scala.Double): scala.Unit = js.native
+  def onChange(value: js.Any): scala.Unit = js.native
+  def onFocus(id: java.lang.String): scala.Unit = js.native
+  def onFocus(id: java.lang.String, value: java.lang.String): scala.Unit = js.native
+  def onFocus(id: java.lang.String, value: scala.Boolean): scala.Unit = js.native
+  def onFocus(id: java.lang.String, value: scala.Double): scala.Unit = js.native
 }
 

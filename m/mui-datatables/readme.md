@@ -4,5 +4,5 @@
 // Definitions by: Jeroen "Favna" Claassens <https://github.com/favna>
 //                 Ankith Konda <https://github.com/ankithkonda>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.1
 ```

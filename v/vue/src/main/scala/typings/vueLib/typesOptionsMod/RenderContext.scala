@@ -12,7 +12,7 @@ trait RenderContext[Props] extends js.Object {
   var listeners: org.scalablytyped.runtime.StringDictionary[js.Function | js.Array[js.Function]]
   var parent: vueLib.typesVueMod.Vue
   var props: Props
-  var scopedSlots: org.scalablytyped.runtime.StringDictionary[vueLib.typesVnodeMod.ScopedSlot]
+  var scopedSlots: org.scalablytyped.runtime.StringDictionary[vueLib.typesVnodeMod.NormalizedScopedSlot]
   def slots(): js.Any
 }
 
@@ -25,7 +25,7 @@ object RenderContext {
     listeners: org.scalablytyped.runtime.StringDictionary[js.Function | js.Array[js.Function]],
     parent: vueLib.typesVueMod.Vue,
     props: Props,
-    scopedSlots: org.scalablytyped.runtime.StringDictionary[vueLib.typesVnodeMod.ScopedSlot],
+    scopedSlots: org.scalablytyped.runtime.StringDictionary[vueLib.typesVnodeMod.NormalizedScopedSlot],
     slots: () => js.Any
   ): RenderContext[Props] = {
     val __obj = js.Dynamic.literal(children = children, data = data, injections = injections, listeners = listeners, parent = parent, props = props.asInstanceOf[js.Any], scopedSlots = scopedSlots, slots = js.Any.fromFunction0(slots))

@@ -14,7 +14,7 @@ trait Scope extends js.Object {
     * @param {Function} fn Function that will have the span activated on its scope.
     * @returns The return value of the provided function.
     */
-  def activate[T](span: Span, fn: js.Function1[/* repeated */ js.Any, T | scala.Unit]): Scope = js.native
+  def activate[T](span: Span, fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
   /**
     * Get the current active span or null if there is none.
     *
@@ -30,9 +30,13 @@ trait Scope extends js.Object {
     * @param {Span} [span=scope.active()] The span to activate.
     * @returns The bound target.
     */
-  def bind[T](fn: js.Function1[/* repeated */ js.Any, T | scala.Unit]): js.Function1[/* repeated */ js.Any, T | scala.Unit] = js.native
-  def bind[T](fn: js.Function1[/* repeated */ js.Any, T | scala.Unit], span: Span): js.Function1[/* repeated */ js.Any, T | scala.Unit] = js.native
+  def bind[T /* <: js.Function1[/* repeated */ js.Any, scala.Unit] */](fn: T): T = js.native
+  def bind[T /* <: js.Function1[/* repeated */ js.Any, scala.Unit] */](fn: T, span: Span): T = js.native
   def bind[T](fn: js.Promise[T]): js.Promise[T] = js.native
   def bind[T](fn: js.Promise[T], span: Span): js.Promise[T] = js.native
+  @JSName("bind")
+  def bind_VTFunction1[V, T /* <: js.Function1[/* repeated */ js.Any, V] */](fn: T): T = js.native
+  @JSName("bind")
+  def bind_VTFunction1[V, T /* <: js.Function1[/* repeated */ js.Any, V] */](fn: T, span: Span): T = js.native
 }
 

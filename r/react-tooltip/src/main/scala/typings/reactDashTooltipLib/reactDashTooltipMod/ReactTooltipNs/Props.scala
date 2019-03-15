@@ -12,6 +12,7 @@ trait Props extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var `class`: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var clickable: js.UndefOr[scala.Boolean] = js.undefined
   var delayHide: js.UndefOr[scala.Double] = js.undefined
   var delayShow: js.UndefOr[scala.Double] = js.undefined
   var disable: js.UndefOr[scala.Boolean] = js.undefined
@@ -47,6 +48,7 @@ object Props {
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     `class`: java.lang.String = null,
     className: java.lang.String = null,
+    clickable: js.UndefOr[scala.Boolean] = js.undefined,
     delayHide: scala.Int | scala.Double = null,
     delayShow: scala.Int | scala.Double = null,
     disable: js.UndefOr[scala.Boolean] = js.undefined,
@@ -77,6 +79,7 @@ object Props {
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (`class` != null) __obj.updateDynamic("class")(`class`)
     if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
     if (delayHide != null) __obj.updateDynamic("delayHide")(delayHide.asInstanceOf[js.Any])
     if (delayShow != null) __obj.updateDynamic("delayShow")(delayShow.asInstanceOf[js.Any])
     if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)

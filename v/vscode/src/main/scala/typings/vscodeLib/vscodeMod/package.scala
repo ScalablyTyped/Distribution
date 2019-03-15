@@ -15,6 +15,6 @@ package object vscodeMod {
     /* disposables */ js.UndefOr[js.Array[Disposable]], 
     Disposable
   ]
-  type MarkedString = java.lang.String | vscodeLib.Anon_Language
+  type MarkedString = _MarkedString | java.lang.String
   type ProviderResult[T] = js.UndefOr[T | scala.Null | (vscodeLib.Thenable[js.UndefOr[T | scala.Null]])]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Router
-  extends koaDashRouterLib.koaDashRouterMod.namespaced[js.Any, Context] {
+  extends koaDashRouterLib.koaDashRouterMod.namespaced[js.Any, eggDashViewLib.eggMod.Context] {
   /**
     * restful router api
     */
