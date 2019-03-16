@@ -44,7 +44,7 @@ package object libClientMod {
   type ProvideCompletionItemsSignature = js.Function4[
     /* document */ vscodeLib.vscodeMod.TextDocument, 
     /* position */ vscodeLib.vscodeMod.Position, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCompletionContext */ /* context */ js.Any, 
+    /* context */ vscodeLib.vscodeMod.CompletionContext, 
     /* token */ vscodeLib.vscodeMod.CancellationToken, 
     vscodeLib.vscodeMod.ProviderResult[
       js.Array[vscodeLib.vscodeMod.CompletionItem] | vscodeLib.vscodeMod.CompletionList

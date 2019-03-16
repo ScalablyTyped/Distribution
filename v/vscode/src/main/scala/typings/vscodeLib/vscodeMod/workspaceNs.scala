@@ -23,25 +23,29 @@ object workspaceNs extends js.Object {
   def asRelativePath(pathOrUri: java.lang.String, includeWorkspaceFolder: scala.Boolean): java.lang.String = js.native
   def asRelativePath(pathOrUri: vscodeLib.vscodeMod.Uri): java.lang.String = js.native
   def asRelativePath(pathOrUri: vscodeLib.vscodeMod.Uri, includeWorkspaceFolder: scala.Boolean): java.lang.String = js.native
-  def createFileSystemWatcher(globPattern: java.lang.String): vscodeLib.vscodeMod.FileSystemWatcher = js.native
-  def createFileSystemWatcher(globPattern: java.lang.String, ignoreCreateEvents: scala.Boolean): vscodeLib.vscodeMod.FileSystemWatcher = js.native
+  def createFileSystemWatcher(globPattern: vscodeLib.vscodeMod.GlobPattern): vscodeLib.vscodeMod.FileSystemWatcher = js.native
+  def createFileSystemWatcher(globPattern: vscodeLib.vscodeMod.GlobPattern, ignoreCreateEvents: scala.Boolean): vscodeLib.vscodeMod.FileSystemWatcher = js.native
   def createFileSystemWatcher(
-    globPattern: java.lang.String,
+    globPattern: vscodeLib.vscodeMod.GlobPattern,
     ignoreCreateEvents: scala.Boolean,
     ignoreChangeEvents: scala.Boolean
   ): vscodeLib.vscodeMod.FileSystemWatcher = js.native
   def createFileSystemWatcher(
-    globPattern: java.lang.String,
+    globPattern: vscodeLib.vscodeMod.GlobPattern,
     ignoreCreateEvents: scala.Boolean,
     ignoreChangeEvents: scala.Boolean,
     ignoreDeleteEvents: scala.Boolean
   ): vscodeLib.vscodeMod.FileSystemWatcher = js.native
-  def findFiles(include: java.lang.String): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Uri]] = js.native
-  def findFiles(include: java.lang.String, exclude: java.lang.String): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Uri]] = js.native
-  def findFiles(include: java.lang.String, exclude: java.lang.String, maxResults: scala.Double): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Uri]] = js.native
+  def findFiles(include: vscodeLib.vscodeMod.GlobPattern): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Uri]] = js.native
+  def findFiles(include: vscodeLib.vscodeMod.GlobPattern, exclude: vscodeLib.vscodeMod.GlobPattern): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Uri]] = js.native
   def findFiles(
-    include: java.lang.String,
-    exclude: java.lang.String,
+    include: vscodeLib.vscodeMod.GlobPattern,
+    exclude: vscodeLib.vscodeMod.GlobPattern,
+    maxResults: scala.Double
+  ): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Uri]] = js.native
+  def findFiles(
+    include: vscodeLib.vscodeMod.GlobPattern,
+    exclude: vscodeLib.vscodeMod.GlobPattern,
     maxResults: scala.Double,
     token: vscodeLib.vscodeMod.CancellationToken
   ): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Uri]] = js.native

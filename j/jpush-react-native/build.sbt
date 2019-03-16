@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jpush-react-native"
-version := "2.5.2-1e6b19"
+version := "2.5.3-1e6b19"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -45,6 +45,10 @@ trait SourceControl extends js.Object {
   		 */
   var quickDiffProvider: js.UndefOr[QuickDiffProvider] = js.undefined
   /**
+  		 * The (optional) Uri of the root of this source control.
+  		 */
+  val rootUri: js.UndefOr[Uri]
+  /**
   		 * Optional status bar commands.
   		 *
   		 * These commands will be displayed in the editor's status bar.
@@ -72,6 +76,7 @@ object SourceControl {
     commitTemplate: java.lang.String = null,
     count: scala.Int | scala.Double = null,
     quickDiffProvider: QuickDiffProvider = null,
+    rootUri: Uri = null,
     statusBarCommands: js.Array[Command] = null
   ): SourceControl = {
     val __obj = js.Dynamic.literal(createResourceGroup = js.Any.fromFunction2(createResourceGroup), dispose = js.Any.fromFunction0(dispose), id = id, inputBox = inputBox, label = label)
@@ -79,6 +84,7 @@ object SourceControl {
     if (commitTemplate != null) __obj.updateDynamic("commitTemplate")(commitTemplate)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (quickDiffProvider != null) __obj.updateDynamic("quickDiffProvider")(quickDiffProvider)
+    if (rootUri != null) __obj.updateDynamic("rootUri")(rootUri)
     if (statusBarCommands != null) __obj.updateDynamic("statusBarCommands")(statusBarCommands)
     __obj.asInstanceOf[SourceControl]
   }

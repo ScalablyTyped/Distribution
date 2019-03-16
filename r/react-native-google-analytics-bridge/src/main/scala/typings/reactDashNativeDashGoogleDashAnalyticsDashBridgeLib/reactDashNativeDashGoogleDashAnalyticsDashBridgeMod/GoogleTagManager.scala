@@ -60,6 +60,15 @@ object GoogleTagManager extends js.Object {
     event: reactDashNativeDashGoogleDashAnalyticsDashBridgeLib.distModelsDataLayerEventMod.DataLayerEvent
   ): js.Promise[scala.Boolean] = js.native
   /**
+    * Refreshes the GTM container.
+    * According to Tag Manager documentations for Android can be called once every 15 minutes.
+    * No such limitations has been mentioned for iOS containers, though.
+    * @example
+    * GoogleTagManager.refreshContainer().then((..) => ..)
+    * @returns {Promise<boolean>}
+    */
+  def refreshContainer(): js.Promise[scala.Boolean] = js.native
+  /**
     * Register Function Call tag handler
     * @param {String} functionName
     * @param {Function} handler

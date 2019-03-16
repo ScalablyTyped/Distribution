@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fastify"
-version := "2.0.1-17ec0a"
+version := "2.1.0-8274f1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

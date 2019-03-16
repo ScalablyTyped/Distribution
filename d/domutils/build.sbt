@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "domutils"
-version := "1.7-dt-20190314Z-7cddd0"
+version := "1.7-dt-20190315Z-bac9c3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -14,6 +14,7 @@ trait FastifyRequest[HttpRequest, Query, Params, Headers, Body] extends js.Objec
   var hostname: java.lang.String
   var id: js.Any
   var ip: java.lang.String
+  var ips: js.Array[java.lang.String]
   var log: Logger
   var params: Params
   var query: Query
@@ -29,13 +30,14 @@ object FastifyRequest {
     hostname: java.lang.String,
     id: js.Any,
     ip: java.lang.String,
+    ips: js.Array[java.lang.String],
     log: Logger,
     params: Params,
     query: Query,
     raw: HttpRequest,
     req: HttpRequest
   ): FastifyRequest[HttpRequest, Query, Params, Headers, Body] = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], hostname = hostname, id = id, ip = ip, log = log, params = params.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], hostname = hostname, id = id, ip = ip, ips = ips, log = log, params = params.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[FastifyRequest[HttpRequest, Query, Params, Headers, Body]]
   }

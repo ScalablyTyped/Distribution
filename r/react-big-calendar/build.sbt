@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-big-calendar"
-version := "0.20-dt-20190312Z-6510a4"
+version := "0.20-dt-20190315Z-69a2be"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

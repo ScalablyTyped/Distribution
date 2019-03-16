@@ -1,5 +1,5 @@
 package typings
-package httpDashStatusDashCodesLib.httpDashStatusDashCodesMod
+package httpDashStatusDashCodesLib
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("http-status-codes", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
+object httpDashStatusDashCodesMod extends js.Object {
   val ACCEPTED: /* 202 */ scala.Double = js.native
   val BAD_GATEWAY: /* 502 */ scala.Double = js.native
   val BAD_REQUEST: /* 400 */ scala.Double = js.native

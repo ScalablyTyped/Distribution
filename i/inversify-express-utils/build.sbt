@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "inversify-express-utils"
-version := "6.3.2-7d2c55"
+version := "6.3.2-f03f91"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-fd1784",
   "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-68b458",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-02a1c5",
-  "org.scalablytyped" %%% "http-status-codes" % "1.3.1-7b61fe",
+  "org.scalablytyped" %%% "http-status-codes" % "1.3.2-d8dbd7",
   "org.scalablytyped" %%% "inversify" % "5.0.1-74249b",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-fcf6a3",
   "org.scalablytyped" %%% "node" % "11.11-dt-20190313Z-f6d9fe",

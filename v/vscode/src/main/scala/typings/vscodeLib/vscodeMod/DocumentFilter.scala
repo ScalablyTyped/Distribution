@@ -11,9 +11,10 @@ trait DocumentFilter extends js.Object {
   		 */
   var language: js.UndefOr[java.lang.String] = js.undefined
   /**
-  		 * A glob pattern, like `*.{ts,js}`.
+  		 * A [glob pattern](#GlobPattern) that is matched on the absolute path of the document. Use a [relative pattern](#RelativePattern)
+  		 * to filter documents to a [workspace folder](#WorkspaceFolder).
   		 */
-  var pattern: js.UndefOr[java.lang.String] = js.undefined
+  var pattern: js.UndefOr[GlobPattern] = js.undefined
   /**
   		 * A Uri [scheme](#Uri.scheme), like `file` or `untitled`.
   		 */
@@ -22,14 +23,10 @@ trait DocumentFilter extends js.Object {
 
 object DocumentFilter {
   @scala.inline
-  def apply(
-    language: java.lang.String = null,
-    pattern: java.lang.String = null,
-    scheme: java.lang.String = null
-  ): DocumentFilter = {
+  def apply(language: java.lang.String = null, pattern: GlobPattern = null, scheme: java.lang.String = null): DocumentFilter = {
     val __obj = js.Dynamic.literal()
     if (language != null) __obj.updateDynamic("language")(language)
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
     if (scheme != null) __obj.updateDynamic("scheme")(scheme)
     __obj.asInstanceOf[DocumentFilter]
   }

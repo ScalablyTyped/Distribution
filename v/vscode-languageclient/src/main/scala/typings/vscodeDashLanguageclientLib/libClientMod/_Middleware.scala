@@ -58,7 +58,7 @@ trait _Middleware extends js.Object {
       /* this */ scala.Unit, 
       /* document */ vscodeLib.vscodeMod.TextDocument, 
       /* position */ vscodeLib.vscodeMod.Position, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCompletionContext */ /* context */ js.Any, 
+      /* context */ vscodeLib.vscodeMod.CompletionContext, 
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideCompletionItemsSignature, 
       vscodeLib.vscodeMod.ProviderResult[
@@ -279,7 +279,7 @@ object _Middleware {
       /* this */ scala.Unit, 
       /* document */ vscodeLib.vscodeMod.TextDocument, 
       /* position */ vscodeLib.vscodeMod.Position, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCompletionContext */ /* context */ js.Any, 
+      /* context */ vscodeLib.vscodeMod.CompletionContext, 
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideCompletionItemsSignature, 
       vscodeLib.vscodeMod.ProviderResult[

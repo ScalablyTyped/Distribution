@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class AnimationAction () extends js.Object {
   var clampWhenFinished: scala.Boolean = js.native
   var enabled: scala.Boolean = js.native
-  var loop: scala.Boolean = js.native
+  var loop: AnimationActionLoopStyles = js.native
   var paused: scala.Boolean = js.native
   var repetitions: scala.Double = js.native
   var time: scala.Double = js.native

@@ -18,7 +18,7 @@ trait Converter extends js.Object {
   def asCompletionParams(
     textDocument: vscodeLib.vscodeMod.TextDocument,
     position: vscodeLib.vscodeMod.Position,
-    context: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify code.CompletionContext */ js.Any
+    context: vscodeLib.vscodeMod.CompletionContext
   ): vscodeDashLanguageserverDashProtocolLib.libProtocolMod.CompletionParams = js.native
   def asDiagnostic(item: vscodeLib.vscodeMod.Diagnostic): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Diagnostic = js.native
   def asDiagnosticSeverity(value: vscodeLib.vscodeMod.DiagnosticSeverity): scala.Double = js.native

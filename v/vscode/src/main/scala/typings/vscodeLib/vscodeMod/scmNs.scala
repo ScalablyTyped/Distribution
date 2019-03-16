@@ -10,5 +10,6 @@ import scala.scalajs.js.annotation._
 object scmNs extends js.Object {
   val inputBox: vscodeLib.vscodeMod.SourceControlInputBox = js.native
   def createSourceControl(id: java.lang.String, label: java.lang.String): vscodeLib.vscodeMod.SourceControl = js.native
+  def createSourceControl(id: java.lang.String, label: java.lang.String, rootUri: vscodeLib.vscodeMod.Uri): vscodeLib.vscodeMod.SourceControl = js.native
 }
 

@@ -47,6 +47,7 @@ object windowNs extends js.Object {
   def showInputBox(): vscodeLib.Thenable[js.UndefOr[java.lang.String]] = js.native
   def showInputBox(options: vscodeLib.vscodeMod.InputBoxOptions): vscodeLib.Thenable[js.UndefOr[java.lang.String]] = js.native
   def showInputBox(options: vscodeLib.vscodeMod.InputBoxOptions, token: vscodeLib.vscodeMod.CancellationToken): vscodeLib.Thenable[js.UndefOr[java.lang.String]] = js.native
+  def showOpenDialog(options: vscodeLib.vscodeMod.OpenDialogOptions): vscodeLib.Thenable[js.UndefOr[js.Array[vscodeLib.vscodeMod.Uri]]] = js.native
   def showQuickPick(items: js.Array[java.lang.String]): vscodeLib.Thenable[js.UndefOr[java.lang.String]] = js.native
   def showQuickPick(items: js.Array[java.lang.String], options: vscodeLib.vscodeMod.QuickPickOptions): vscodeLib.Thenable[js.UndefOr[java.lang.String]] = js.native
   def showQuickPick(
@@ -84,6 +85,7 @@ object windowNs extends js.Object {
     options: vscodeLib.vscodeMod.QuickPickOptions,
     token: vscodeLib.vscodeMod.CancellationToken
   ): vscodeLib.Thenable[js.UndefOr[T]] = js.native
+  def showSaveDialog(options: vscodeLib.vscodeMod.SaveDialogOptions): vscodeLib.Thenable[js.UndefOr[vscodeLib.vscodeMod.Uri]] = js.native
   def showTextDocument(document: vscodeLib.vscodeMod.TextDocument): vscodeLib.Thenable[vscodeLib.vscodeMod.TextEditor] = js.native
   def showTextDocument(document: vscodeLib.vscodeMod.TextDocument, column: vscodeLib.vscodeMod.ViewColumn): vscodeLib.Thenable[vscodeLib.vscodeMod.TextEditor] = js.native
   def showTextDocument(

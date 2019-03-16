@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "protractor-browser-logs"
-version := "1.0-dt-20190312Z-72854b"
+version := "1.0-dt-20190312Z-61049f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -27,8 +27,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "is-glob" % "4.0-dt-20180214Z-399c7b",
   "org.scalablytyped" %%% "is-path-cwd" % "1.0-dt-20180214Z-e451aa",
   "org.scalablytyped" %%% "is-path-in-cwd" % "1.0-dt-20180214Z-b65fce",
-  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190212Z-884fde",
-  "org.scalablytyped" %%% "jasminewd2" % "2.0-dt-20181026Z-d9e865",
+  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190315Z-ed652b",
+  "org.scalablytyped" %%% "jasminewd2" % "2.0-dt-20181026Z-18b555",
   "org.scalablytyped" %%% "merge2" % "1.1-dt-20180214Z-1da458",
   "org.scalablytyped" %%% "micromatch" % "3.1-dt-20180214Z-3ed78d",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-0a2b2c",
@@ -39,7 +39,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "optimist" % "0.0-unknown-dt-20180214Z-ebcd79",
   "org.scalablytyped" %%% "p-map" % "2.0.0-8063aa",
   "org.scalablytyped" %%% "pify" % "3.0.0-dt-20180501Z-937816",
-  "org.scalablytyped" %%% "protractor" % "5.4.2-afcf3f",
+  "org.scalablytyped" %%% "protractor" % "5.4.2-25e226",
   "org.scalablytyped" %%% "q" % "1.5-dt-20190313Z-56253f",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-ee9a54",
   "org.scalablytyped" %%% "rimraf" % "2.0-dt-20180214Z-b1b5ec",

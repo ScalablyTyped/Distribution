@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fastify-accepts"
-version := "0.5-dt-20181119Z-baa91f"
+version := "0.5-dt-20181119Z-5a6382"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-4b79e1",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-2fa947",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-ccd0c9",
-  "org.scalablytyped" %%% "fastify" % "2.0.1-17ec0a",
+  "org.scalablytyped" %%% "fastify" % "2.1.0-8274f1",
   "org.scalablytyped" %%% "fastq" % "1.6.0-8c591b",
   "org.scalablytyped" %%% "find-my-way" % "2.0.1-a2879d",
   "org.scalablytyped" %%% "node" % "11.11-dt-20190313Z-f6d9fe",

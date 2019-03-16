@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jasmine-es6-promise-matchers"
-version := "0.0-unknown-dt-20181026Z-c14060"
+version := "0.0-unknown-dt-20181026Z-c293f3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190212Z-884fde",
+  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190315Z-ed652b",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

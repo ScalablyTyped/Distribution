@@ -45,6 +45,7 @@ trait ReactDatePickerProps extends js.Object {
   var includeTimes: js.UndefOr[js.Array[stdLib.Date]] = js.native
   var injectTimes: js.UndefOr[js.Array[stdLib.Date]] = js.native
   var `inline`: js.UndefOr[scala.Boolean] = js.native
+  var inlineFocusSelectedMonth: js.UndefOr[scala.Boolean] = js.native
   var isClearable: js.UndefOr[scala.Boolean] = js.native
   var locale: js.UndefOr[java.lang.String] = js.native
   var maxDate: js.UndefOr[stdLib.Date | scala.Null] = js.native
@@ -72,6 +73,7 @@ trait ReactDatePickerProps extends js.Object {
       scala.Unit
     ]
   ] = js.native
+  var onDayMouseEnter: js.UndefOr[js.Function1[/* date */ stdLib.Date, scala.Unit]] = js.native
   var onFocus: js.UndefOr[
     js.Function1[
       /* event */ reactLib.reactMod.ReactNs.FocusEvent[stdLib.HTMLInputElement], 
@@ -87,6 +89,7 @@ trait ReactDatePickerProps extends js.Object {
     ]
   ] = js.native
   var onMonthChange: js.UndefOr[js.Function1[/* date */ stdLib.Date, scala.Unit]] = js.native
+  var onMonthMouseLeave: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var onSelect: js.UndefOr[
     js.Function2[
       /* date */ stdLib.Date, 
@@ -146,6 +149,7 @@ trait ReactDatePickerProps extends js.Object {
   var tabIndex: js.UndefOr[scala.Double] = js.native
   var timeCaption: js.UndefOr[java.lang.String] = js.native
   var timeFormat: js.UndefOr[java.lang.String] = js.native
+  var timeInputLabel: js.UndefOr[java.lang.String] = js.native
   var timeIntervals: js.UndefOr[scala.Double] = js.native
   var title: js.UndefOr[java.lang.String] = js.native
   var todayButton: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.native

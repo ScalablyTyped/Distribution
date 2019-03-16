@@ -30,19 +30,21 @@ trait CompletionItemProvider extends js.Object {
   		 * @param document The document in which the command was invoked.
   		 * @param position The position at which the command was invoked.
   		 * @param token A cancellation token.
+  		 * @param context How the completion was triggered.
+  		 *
   		 * @return An array of completions, a [completion list](#CompletionList), or a thenable that resolves to either.
   		 * The lack of a result can be signaled by returning `undefined`, `null`, or an empty array.
   		 */
-  def provideCompletionItems(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[js.Array[CompletionItem] | CompletionList]
+  def provideCompletionItems(document: TextDocument, position: Position, token: CancellationToken, context: CompletionContext): ProviderResult[js.Array[CompletionItem] | CompletionList]
 }
 
 object CompletionItemProvider {
   @scala.inline
   def apply(
-    provideCompletionItems: (TextDocument, Position, CancellationToken) => ProviderResult[js.Array[CompletionItem] | CompletionList],
+    provideCompletionItems: (TextDocument, Position, CancellationToken, CompletionContext) => ProviderResult[js.Array[CompletionItem] | CompletionList],
     resolveCompletionItem: (/* item */ CompletionItem, /* token */ CancellationToken) => ProviderResult[CompletionItem] = null
   ): CompletionItemProvider = {
-    val __obj = js.Dynamic.literal(provideCompletionItems = js.Any.fromFunction3(provideCompletionItems))
+    val __obj = js.Dynamic.literal(provideCompletionItems = js.Any.fromFunction4(provideCompletionItems))
     if (resolveCompletionItem != null) __obj.updateDynamic("resolveCompletionItem")(js.Any.fromFunction2(resolveCompletionItem))
     __obj.asInstanceOf[CompletionItemProvider]
   }

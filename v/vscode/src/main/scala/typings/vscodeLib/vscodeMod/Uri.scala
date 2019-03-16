@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("vscode", "Uri")
 @js.native
-class Uri () extends js.Object {
+class Uri protected () extends js.Object {
+  /**
+  		 * Use the `file` and `parse` factory functions to create new `Uri` objects.
+  		 */
+  protected def this(scheme: java.lang.String, authority: java.lang.String, path: java.lang.String, query: java.lang.String, fragment: java.lang.String) = this()
   /**
   		 * Authority is the `www.msft.com` part of `http://www.msft.com/some/path?query#fragment`.
   		 * The part between the first double slashes and the next slash.

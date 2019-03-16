@@ -10,7 +10,7 @@ trait Options extends js.Object {
     * Format of coordinate arguments.
     */
   var format: js.UndefOr[
-    haversineLib.haversineLibStrings.`[lat,lon]` | haversineLib.haversineLibStrings.`[lon,lat]` | haversineLib.haversineLibStrings.`{lon,lat}` | haversineLib.haversineLibStrings.geojson
+    haversineLib.haversineLibStrings.`[lat,lon]` | haversineLib.haversineLibStrings.`[lon,lat]` | haversineLib.haversineLibStrings.`{lon,lat}` | haversineLib.haversineLibStrings.`{lat,lng}` | haversineLib.haversineLibStrings.geojson
   ] = js.undefined
   /**
     * If passed, will result in library returning boolean value of whether or not the start and end points are within that supplied threshold. Default: null.
@@ -27,7 +27,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    format: haversineLib.haversineLibStrings.`[lat,lon]` | haversineLib.haversineLibStrings.`[lon,lat]` | haversineLib.haversineLibStrings.`{lon,lat}` | haversineLib.haversineLibStrings.geojson = null,
+    format: haversineLib.haversineLibStrings.`[lat,lon]` | haversineLib.haversineLibStrings.`[lon,lat]` | haversineLib.haversineLibStrings.`{lon,lat}` | haversineLib.haversineLibStrings.`{lat,lng}` | haversineLib.haversineLibStrings.geojson = null,
     threshold: scala.Int | scala.Double = null,
     unit: haversineLib.haversineLibStrings.km | haversineLib.haversineLibStrings.mile | haversineLib.haversineLibStrings.meter | haversineLib.haversineLibStrings.nmi = null
   ): Options = {

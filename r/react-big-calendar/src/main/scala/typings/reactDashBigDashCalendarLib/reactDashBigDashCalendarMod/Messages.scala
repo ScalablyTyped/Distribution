@@ -13,6 +13,7 @@ trait Messages extends js.Object {
   var event: js.UndefOr[java.lang.String] = js.undefined
   var month: js.UndefOr[java.lang.String] = js.undefined
   var next: js.UndefOr[java.lang.String] = js.undefined
+  var noEventsInRange: js.UndefOr[java.lang.String] = js.undefined
   var previous: js.UndefOr[java.lang.String] = js.undefined
   var showMore: js.UndefOr[js.Function1[/* count */ scala.Double, java.lang.String]] = js.undefined
   var time: js.UndefOr[java.lang.String] = js.undefined
@@ -33,6 +34,7 @@ object Messages {
     event: java.lang.String = null,
     month: java.lang.String = null,
     next: java.lang.String = null,
+    noEventsInRange: java.lang.String = null,
     previous: java.lang.String = null,
     showMore: /* count */ scala.Double => java.lang.String = null,
     time: java.lang.String = null,
@@ -50,6 +52,7 @@ object Messages {
     if (event != null) __obj.updateDynamic("event")(event)
     if (month != null) __obj.updateDynamic("month")(month)
     if (next != null) __obj.updateDynamic("next")(next)
+    if (noEventsInRange != null) __obj.updateDynamic("noEventsInRange")(noEventsInRange)
     if (previous != null) __obj.updateDynamic("previous")(previous)
     if (showMore != null) __obj.updateDynamic("showMore")(js.Any.fromFunction1(showMore))
     if (time != null) __obj.updateDynamic("time")(time)

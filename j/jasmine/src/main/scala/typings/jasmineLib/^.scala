@@ -74,7 +74,7 @@ object ^ extends js.Object {
     * @checkReturnValue see https://tsetse.info/check-return-value
     * @param actual - Actual computed value to test expectations against.
     */
-  def expectAsync[T, U](actual: js.Promise[T]): jasmineLib.jasmineNs.AsyncMatchers[T, U] = js.native
+  def expectAsync[T, U](actual: js.Thenable[T]): jasmineLib.jasmineNs.AsyncMatchers[T, U] = js.native
   /**
     * Explicitly mark a spec as failed.
     * @param e Reason for the failure

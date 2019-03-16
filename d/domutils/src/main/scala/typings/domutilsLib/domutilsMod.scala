@@ -42,6 +42,7 @@ object domutilsMod extends js.Object {
   def getElementsByTagType(`type`: js.Any, element: js.Any, recurse: js.Any, limit: js.Any): js.Any = js.native
   def getInnerHTML(elem: domhandlerLib.domhandlerMod.DomElement, opts: js.Any): java.lang.String = js.native
   def getName(elem: domhandlerLib.domhandlerMod.DomElement): java.lang.String = js.native
+  def getOuterHTML(dom: js.Array[domhandlerLib.domhandlerMod.DomElement]): java.lang.String = js.native
   def getOuterHTML(dom: js.Array[domhandlerLib.domhandlerMod.DomElement], opts: domutilsLib.Anon_DecodeEntities): java.lang.String = js.native
   def getParent(elem: domhandlerLib.domhandlerMod.DomElement): domhandlerLib.domhandlerMod.DomElement = js.native
   def getSiblings(elem: domhandlerLib.domhandlerMod.DomElement): js.Array[domhandlerLib.domhandlerMod.DomElement] = js.native

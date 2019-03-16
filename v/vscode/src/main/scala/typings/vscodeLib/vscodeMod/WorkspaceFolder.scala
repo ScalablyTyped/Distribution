@@ -12,11 +12,14 @@ trait WorkspaceFolder extends js.Object {
   val index: scala.Double
   /**
   		 * The name of this workspace folder. Defaults to
-  		 * the basename its [uri-path](#Uri.path)
+  		 * the basename of its [uri-path](#Uri.path)
   		 */
   val name: java.lang.String
   /**
-  		 * The associated URI for this workspace folder.
+  		 * The associated uri for this workspace folder.
+  		 *
+  		 * *Note:* The [Uri](#Uri)-type was intentionally chosen such that future releases of the editor can support
+  		 * workspace folders that are not stored on the local disk, e.g. `ftp://server/workspaces/foo`.
   		 */
   val uri: Uri
 }

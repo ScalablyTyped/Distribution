@@ -36,6 +36,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait AccountBrowser
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait AccountManagement
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -84,6 +88,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait AddHome
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait AddIn
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -97,6 +105,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait AddPhone
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait AddReaction
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -272,6 +284,22 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait AppleTVMenu
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait AppleTVMicrophone
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait AppleTVMonitor
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait AppleTVPlay
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait Archive
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -381,6 +409,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait AustralianRules
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait AuthenticatorApp
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -853,6 +885,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait CalculatorNotEqualTo
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait CalculatorPercentage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -1336,6 +1372,14 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait ClipboardList
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait ClipboardListMirrored
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait ClipboardSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -1456,6 +1500,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait ColumnVerticalSectionEdit
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait Combine
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -1469,6 +1517,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait Comment
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait CommentActive
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -1501,6 +1553,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait CompanyDirectoryMirrored
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait Compare
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -1648,6 +1704,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait DataManagementSettings
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait Database
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -1713,6 +1773,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait DefectSolid
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait DefenderTVM
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -2316,6 +2380,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait FabricFolderConfirm
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait FabricFolderFill
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -2760,6 +2828,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait GIF
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait GUID
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -3004,6 +3076,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait Hide3
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait Highlight
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -3033,6 +3109,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait HomeSolid
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait HomeVerify
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -3120,6 +3200,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait IncomingCall
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait IncreaseIndentArrow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -3152,6 +3236,14 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait InformationBarriers
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait InkingTool
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait InsertColumnsLeft
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -3177,6 +3269,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait InstallToDrive
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait InternalInvestigation
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -3512,6 +3608,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait MarkAsProtected
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait MarkDownLanguage
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -3533,6 +3633,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait Medal
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait MedalSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -3589,6 +3693,18 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait MicrosoftStaffhubLogo
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait MicrosoftTranslatorLogo
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait MicrosoftTranslatorLogoBlue
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait MicrosoftTranslatorLogoGreen
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -3952,6 +4068,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait OpenInNewTab
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait OpenInNewWindow
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -4165,6 +4285,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait PassiveAuthentication
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait PasswordField
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -4864,6 +4988,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait RepeatOne
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait Reply
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -4916,7 +5044,15 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait ReservationOrders
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait ResponsesMenu
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait ReturnKey
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -4976,6 +5112,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait RingerSolid
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait Robot
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -4989,6 +5129,14 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait Rotate
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait Rotate90Clockwise
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait Rotate90CounterClockwise
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -5168,6 +5316,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait ShakeDevice
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait Shapes
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -5245,6 +5397,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait SignOut
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait Signin
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -5361,6 +5517,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait Slideshow
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait SmartGlassRemote
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -6212,6 +6372,10 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait USB
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait Umbrella
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
@@ -6373,6 +6537,10 @@ object IconNames extends js.Object {
   
   @js.native
   sealed trait VerifiedBrand
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait VerifiedBrandSolid
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -6564,11 +6732,19 @@ object IconNames extends js.Object {
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
+  sealed trait WavingHand
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
   sealed trait WebComponents
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
   sealed trait WebPublish
+    extends atUifabricIconsLib.libIconNamesMod.IconNames
+  
+  @js.native
+  sealed trait WebTemplate
     extends atUifabricIconsLib.libIconNamesMod.IconNames
   
   @js.native
@@ -6713,6 +6889,7 @@ object IconNames extends js.Object {
   /* "AccessLogo" */ val AccessLogo: AccessLogo with java.lang.String = js.native
   /* "AccessLogoFill" */ val AccessLogoFill: AccessLogoFill with java.lang.String = js.native
   /* "AccessibiltyChecker" */ val AccessibiltyChecker: AccessibiltyChecker with java.lang.String = js.native
+  /* "AccountBrowser" */ val AccountBrowser: AccountBrowser with java.lang.String = js.native
   /* "AccountManagement" */ val AccountManagement: AccountManagement with java.lang.String = js.native
   /* "Accounts" */ val Accounts: Accounts with java.lang.String = js.native
   /* "ActionCenter" */ val ActionCenter: ActionCenter with java.lang.String = js.native
@@ -6725,10 +6902,12 @@ object IconNames extends js.Object {
   /* "AddFavoriteFill" */ val AddFavoriteFill: AddFavoriteFill with java.lang.String = js.native
   /* "AddFriend" */ val AddFriend: AddFriend with java.lang.String = js.native
   /* "AddGroup" */ val AddGroup: AddGroup with java.lang.String = js.native
+  /* "AddHome" */ val AddHome: AddHome with java.lang.String = js.native
   /* "AddIn" */ val AddIn: AddIn with java.lang.String = js.native
   /* "AddNotes" */ val AddNotes: AddNotes with java.lang.String = js.native
   /* "AddOnlineMeeting" */ val AddOnlineMeeting: AddOnlineMeeting with java.lang.String = js.native
   /* "AddPhone" */ val AddPhone: AddPhone with java.lang.String = js.native
+  /* "AddReaction" */ val AddReaction: AddReaction with java.lang.String = js.native
   /* "AddTo" */ val AddTo: AddTo with java.lang.String = js.native
   /* "Admin" */ val Admin: Admin with java.lang.String = js.native
   /* "AdminALogo32" */ val AdminALogo32: AdminALogo32 with java.lang.String = js.native
@@ -6772,6 +6951,10 @@ object IconNames extends js.Object {
   /* "AppIconDefault" */ val AppIconDefault: AppIconDefault with java.lang.String = js.native
   /* "AppIconDefaultAdd" */ val AppIconDefaultAdd: AppIconDefaultAdd with java.lang.String = js.native
   /* "AppIconDefaultList" */ val AppIconDefaultList: AppIconDefaultList with java.lang.String = js.native
+  /* "AppleTVMenu" */ val AppleTVMenu: AppleTVMenu with java.lang.String = js.native
+  /* "AppleTVMicrophone" */ val AppleTVMicrophone: AppleTVMicrophone with java.lang.String = js.native
+  /* "AppleTVMonitor" */ val AppleTVMonitor: AppleTVMonitor with java.lang.String = js.native
+  /* "AppleTVPlay" */ val AppleTVPlay: AppleTVPlay with java.lang.String = js.native
   /* "Archive" */ val Archive: Archive with java.lang.String = js.native
   /* "AreaChart" */ val AreaChart: AreaChart with java.lang.String = js.native
   /* "ArrangeBringForward" */ val ArrangeBringForward: ArrangeBringForward with java.lang.String = js.native
@@ -6800,6 +6983,7 @@ object IconNames extends js.Object {
   /* "AsteriskSolid" */ val AsteriskSolid: AsteriskSolid with java.lang.String = js.native
   /* "Attach" */ val Attach: Attach with java.lang.String = js.native
   /* "AustralianRules" */ val AustralianRules: AustralianRules with java.lang.String = js.native
+  /* "AuthenticatorApp" */ val AuthenticatorApp: AuthenticatorApp with java.lang.String = js.native
   /* "AutoEnhanceOff" */ val AutoEnhanceOff: AutoEnhanceOff with java.lang.String = js.native
   /* "AutoEnhanceOn" */ val AutoEnhanceOn: AutoEnhanceOn with java.lang.String = js.native
   /* "AutoFillTemplate" */ val AutoFillTemplate: AutoFillTemplate with java.lang.String = js.native
@@ -6918,6 +7102,7 @@ object IconNames extends js.Object {
   /* "CalculatorEqualTo" */ val CalculatorEqualTo: CalculatorEqualTo with java.lang.String = js.native
   /* "CalculatorMultiply" */ val CalculatorMultiply: CalculatorMultiply with java.lang.String = js.native
   /* "CalculatorNotEqualTo" */ val CalculatorNotEqualTo: CalculatorNotEqualTo with java.lang.String = js.native
+  /* "CalculatorPercentage" */ val CalculatorPercentage: CalculatorPercentage with java.lang.String = js.native
   /* "CalculatorSubtract" */ val CalculatorSubtract: CalculatorSubtract with java.lang.String = js.native
   /* "Calendar" */ val Calendar: Calendar with java.lang.String = js.native
   /* "CalendarAgenda" */ val CalendarAgenda: CalendarAgenda with java.lang.String = js.native
@@ -7038,6 +7223,8 @@ object IconNames extends js.Object {
   /* "ClearFormattingA" */ val ClearFormattingA: ClearFormattingA with java.lang.String = js.native
   /* "ClearFormattingEraser" */ val ClearFormattingEraser: ClearFormattingEraser with java.lang.String = js.native
   /* "ClearNight" */ val ClearNight: ClearNight with java.lang.String = js.native
+  /* "ClipboardList" */ val ClipboardList: ClipboardList with java.lang.String = js.native
+  /* "ClipboardListMirrored" */ val ClipboardListMirrored: ClipboardListMirrored with java.lang.String = js.native
   /* "ClipboardSolid" */ val ClipboardSolid: ClipboardSolid with java.lang.String = js.native
   /* "Clock" */ val Clock: Clock with java.lang.String = js.native
   /* "CloneToDesktop" */ val CloneToDesktop: CloneToDesktop with java.lang.String = js.native
@@ -7068,10 +7255,12 @@ object IconNames extends js.Object {
   /* "ColumnRightTwoThirds" */ val ColumnRightTwoThirds: ColumnRightTwoThirds with java.lang.String = js.native
   /* "ColumnRightTwoThirdsEdit" */ val ColumnRightTwoThirdsEdit: ColumnRightTwoThirdsEdit with java.lang.String = js.native
   /* "ColumnVerticalSection" */ val ColumnVerticalSection: ColumnVerticalSection with java.lang.String = js.native
+  /* "ColumnVerticalSectionEdit" */ val ColumnVerticalSectionEdit: ColumnVerticalSectionEdit with java.lang.String = js.native
   /* "Combine" */ val Combine: Combine with java.lang.String = js.native
   /* "Combobox" */ val Combobox: Combobox with java.lang.String = js.native
   /* "CommandPrompt" */ val CommandPrompt: CommandPrompt with java.lang.String = js.native
   /* "Comment" */ val Comment: Comment with java.lang.String = js.native
+  /* "CommentActive" */ val CommentActive: CommentActive with java.lang.String = js.native
   /* "CommentAdd" */ val CommentAdd: CommentAdd with java.lang.String = js.native
   /* "CommentNext" */ val CommentNext: CommentNext with java.lang.String = js.native
   /* "CommentPrevious" */ val CommentPrevious: CommentPrevious with java.lang.String = js.native
@@ -7080,6 +7269,7 @@ object IconNames extends js.Object {
   /* "Communications" */ val Communications: Communications with java.lang.String = js.native
   /* "CompanyDirectory" */ val CompanyDirectory: CompanyDirectory with java.lang.String = js.native
   /* "CompanyDirectoryMirrored" */ val CompanyDirectoryMirrored: CompanyDirectoryMirrored with java.lang.String = js.native
+  /* "Compare" */ val Compare: Compare with java.lang.String = js.native
   /* "CompassNW" */ val CompassNW: CompassNW with java.lang.String = js.native
   /* "Completed" */ val Completed: Completed with java.lang.String = js.native
   /* "CompletedSolid" */ val CompletedSolid: CompletedSolid with java.lang.String = js.native
@@ -7116,6 +7306,7 @@ object IconNames extends js.Object {
   /* "DRM" */ val DRM: DRM with java.lang.String = js.native
   /* "DashboardAdd" */ val DashboardAdd: DashboardAdd with java.lang.String = js.native
   /* "DataConnectionLibrary" */ val DataConnectionLibrary: DataConnectionLibrary with java.lang.String = js.native
+  /* "DataManagementSettings" */ val DataManagementSettings: DataManagementSettings with java.lang.String = js.native
   /* "Database" */ val Database: Database with java.lang.String = js.native
   /* "DatabaseSync" */ val DatabaseSync: DatabaseSync with java.lang.String = js.native
   /* "Dataflows" */ val Dataflows: Dataflows with java.lang.String = js.native
@@ -7133,6 +7324,7 @@ object IconNames extends js.Object {
   /* "DecreaseIndentTextMirrored" */ val DecreaseIndentTextMirrored: DecreaseIndentTextMirrored with java.lang.String = js.native
   /* "DefaultRatio" */ val DefaultRatio: DefaultRatio with java.lang.String = js.native
   /* "DefectSolid" */ val DefectSolid: DefectSolid with java.lang.String = js.native
+  /* "DefenderTVM" */ val DefenderTVM: DefenderTVM with java.lang.String = js.native
   /* "Delete" */ val Delete: Delete with java.lang.String = js.native
   /* "DeleteColumns" */ val DeleteColumns: DeleteColumns with java.lang.String = js.native
   /* "DeleteRows" */ val DeleteRows: DeleteRows with java.lang.String = js.native
@@ -7283,6 +7475,7 @@ object IconNames extends js.Object {
   /* "FabricDataConnectionLibrary" */ val FabricDataConnectionLibrary: FabricDataConnectionLibrary with java.lang.String = js.native
   /* "FabricDocLibrary" */ val FabricDocLibrary: FabricDocLibrary with java.lang.String = js.native
   /* "FabricFolder" */ val FabricFolder: FabricFolder with java.lang.String = js.native
+  /* "FabricFolderConfirm" */ val FabricFolderConfirm: FabricFolderConfirm with java.lang.String = js.native
   /* "FabricFolderFill" */ val FabricFolderFill: FabricFolderFill with java.lang.String = js.native
   /* "FabricFolderSearch" */ val FabricFolderSearch: FabricFolderSearch with java.lang.String = js.native
   /* "FabricFormLibrary" */ val FabricFormLibrary: FabricFormLibrary with java.lang.String = js.native
@@ -7394,6 +7587,7 @@ object IconNames extends js.Object {
   /* "FullWidthEdit" */ val FullWidthEdit: FullWidthEdit with java.lang.String = js.native
   /* "FunctionalManagerDashboard" */ val FunctionalManagerDashboard: FunctionalManagerDashboard with java.lang.String = js.native
   /* "FunnelChart" */ val FunnelChart: FunnelChart with java.lang.String = js.native
+  /* "GIF" */ val GIF: GIF with java.lang.String = js.native
   /* "GUID" */ val GUID: GUID with java.lang.String = js.native
   /* "GallatinLogo" */ val GallatinLogo: GallatinLogo with java.lang.String = js.native
   /* "Game" */ val Game: Game with java.lang.String = js.native
@@ -7455,6 +7649,7 @@ object IconNames extends js.Object {
   /* "Hexagon" */ val Hexagon: Hexagon with java.lang.String = js.native
   /* "Hide" */ val Hide: Hide with java.lang.String = js.native
   /* "Hide2" */ val Hide2: Hide2 with java.lang.String = js.native
+  /* "Hide3" */ val Hide3: Hide3 with java.lang.String = js.native
   /* "Highlight" */ val Highlight: Highlight with java.lang.String = js.native
   /* "HighlightMappedShapes" */ val HighlightMappedShapes: HighlightMappedShapes with java.lang.String = js.native
   /* "HintText" */ val HintText: HintText with java.lang.String = js.native
@@ -7463,6 +7658,7 @@ object IconNames extends js.Object {
   /* "Home" */ val Home: Home with java.lang.String = js.native
   /* "HomeGroup" */ val HomeGroup: HomeGroup with java.lang.String = js.native
   /* "HomeSolid" */ val HomeSolid: HomeSolid with java.lang.String = js.native
+  /* "HomeVerify" */ val HomeVerify: HomeVerify with java.lang.String = js.native
   /* "HorizontalDistributeCenter" */ val HorizontalDistributeCenter: HorizontalDistributeCenter with java.lang.String = js.native
   /* "Hospital" */ val Hospital: Hospital with java.lang.String = js.native
   /* "Hotel" */ val Hotel: Hotel with java.lang.String = js.native
@@ -7484,6 +7680,7 @@ object IconNames extends js.Object {
   /* "Inbox" */ val Inbox: Inbox with java.lang.String = js.native
   /* "InboxCheck" */ val InboxCheck: InboxCheck with java.lang.String = js.native
   /* "IncidentTriangle" */ val IncidentTriangle: IncidentTriangle with java.lang.String = js.native
+  /* "IncomingCall" */ val IncomingCall: IncomingCall with java.lang.String = js.native
   /* "IncreaseIndentArrow" */ val IncreaseIndentArrow: IncreaseIndentArrow with java.lang.String = js.native
   /* "IncreaseIndentArrowMirrored" */ val IncreaseIndentArrowMirrored: IncreaseIndentArrowMirrored with java.lang.String = js.native
   /* "IncreaseIndentLegacy" */ val IncreaseIndentLegacy: IncreaseIndentLegacy with java.lang.String = js.native
@@ -7492,6 +7689,8 @@ object IconNames extends js.Object {
   /* "Info" */ val Info: Info with java.lang.String = js.native
   /* "Info2" */ val Info2: Info2 with java.lang.String = js.native
   /* "InfoSolid" */ val InfoSolid: InfoSolid with java.lang.String = js.native
+  /* "InformationBarriers" */ val InformationBarriers: InformationBarriers with java.lang.String = js.native
+  /* "InkingTool" */ val InkingTool: InkingTool with java.lang.String = js.native
   /* "InsertColumnsLeft" */ val InsertColumnsLeft: InsertColumnsLeft with java.lang.String = js.native
   /* "InsertColumnsRight" */ val InsertColumnsRight: InsertColumnsRight with java.lang.String = js.native
   /* "InsertRowsAbove" */ val InsertRowsAbove: InsertRowsAbove with java.lang.String = js.native
@@ -7499,6 +7698,7 @@ object IconNames extends js.Object {
   /* "InsertSignatureLine" */ val InsertSignatureLine: InsertSignatureLine with java.lang.String = js.native
   /* "InsertTextBox" */ val InsertTextBox: InsertTextBox with java.lang.String = js.native
   /* "InstallToDrive" */ val InstallToDrive: InstallToDrive with java.lang.String = js.native
+  /* "InternalInvestigation" */ val InternalInvestigation: InternalInvestigation with java.lang.String = js.native
   /* "InternetSharing" */ val InternetSharing: InternetSharing with java.lang.String = js.native
   /* "IssueSolid" */ val IssueSolid: IssueSolid with java.lang.String = js.native
   /* "IssueTracking" */ val IssueTracking: IssueTracking with java.lang.String = js.native
@@ -7582,12 +7782,14 @@ object IconNames extends js.Object {
   /* "MapLayers" */ val MapLayers: MapLayers with java.lang.String = js.native
   /* "MapPin" */ val MapPin: MapPin with java.lang.String = js.native
   /* "MapPinSolid" */ val MapPinSolid: MapPinSolid with java.lang.String = js.native
+  /* "MarkAsProtected" */ val MarkAsProtected: MarkAsProtected with java.lang.String = js.native
   /* "MarkDownLanguage" */ val MarkDownLanguage: MarkDownLanguage with java.lang.String = js.native
   /* "Market" */ val Market: Market with java.lang.String = js.native
   /* "MarketDown" */ val MarketDown: MarketDown with java.lang.String = js.native
   /* "MasterDatabase" */ val MasterDatabase: MasterDatabase with java.lang.String = js.native
   /* "MaximumValue" */ val MaximumValue: MaximumValue with java.lang.String = js.native
   /* "Medal" */ val Medal: Medal with java.lang.String = js.native
+  /* "MedalSolid" */ val MedalSolid: MedalSolid with java.lang.String = js.native
   /* "Media" */ val Media: Media with java.lang.String = js.native
   /* "MediaAdd" */ val MediaAdd: MediaAdd with java.lang.String = js.native
   /* "Medical" */ val Medical: Medical with java.lang.String = js.native
@@ -7602,6 +7804,9 @@ object IconNames extends js.Object {
   /* "Microphone" */ val Microphone: Microphone with java.lang.String = js.native
   /* "MicrosoftFlowLogo" */ val MicrosoftFlowLogo: MicrosoftFlowLogo with java.lang.String = js.native
   /* "MicrosoftStaffhubLogo" */ val MicrosoftStaffhubLogo: MicrosoftStaffhubLogo with java.lang.String = js.native
+  /* "MicrosoftTranslatorLogo" */ val MicrosoftTranslatorLogo: MicrosoftTranslatorLogo with java.lang.String = js.native
+  /* "MicrosoftTranslatorLogoBlue" */ val MicrosoftTranslatorLogoBlue: MicrosoftTranslatorLogoBlue with java.lang.String = js.native
+  /* "MicrosoftTranslatorLogoGreen" */ val MicrosoftTranslatorLogoGreen: MicrosoftTranslatorLogoGreen with java.lang.String = js.native
   /* "MiniContract" */ val MiniContract: MiniContract with java.lang.String = js.native
   /* "MiniContractMirrored" */ val MiniContractMirrored: MiniContractMirrored with java.lang.String = js.native
   /* "MiniExpand" */ val MiniExpand: MiniExpand with java.lang.String = js.native
@@ -7692,6 +7897,7 @@ object IconNames extends js.Object {
   /* "OpenEnrollment" */ val OpenEnrollment: OpenEnrollment with java.lang.String = js.native
   /* "OpenFile" */ val OpenFile: OpenFile with java.lang.String = js.native
   /* "OpenFolderHorizontal" */ val OpenFolderHorizontal: OpenFolderHorizontal with java.lang.String = js.native
+  /* "OpenInNewTab" */ val OpenInNewTab: OpenInNewTab with java.lang.String = js.native
   /* "OpenInNewWindow" */ val OpenInNewWindow: OpenInNewWindow with java.lang.String = js.native
   /* "OpenPane" */ val OpenPane: OpenPane with java.lang.String = js.native
   /* "OpenPaneMirrored" */ val OpenPaneMirrored: OpenPaneMirrored with java.lang.String = js.native
@@ -7746,6 +7952,7 @@ object IconNames extends js.Object {
   /* "PartlyCloudyNight" */ val PartlyCloudyNight: PartlyCloudyNight with java.lang.String = js.native
   /* "PartyLeader" */ val PartyLeader: PartyLeader with java.lang.String = js.native
   /* "PassiveAuthentication" */ val PassiveAuthentication: PassiveAuthentication with java.lang.String = js.native
+  /* "PasswordField" */ val PasswordField: PasswordField with java.lang.String = js.native
   /* "Paste" */ val Paste: Paste with java.lang.String = js.native
   /* "PasteAsCode" */ val PasteAsCode: PasteAsCode with java.lang.String = js.native
   /* "PasteAsText" */ val PasteAsText: PasteAsText with java.lang.String = js.native
@@ -7920,6 +8127,7 @@ object IconNames extends js.Object {
   /* "ReopenPages" */ val ReopenPages: ReopenPages with java.lang.String = js.native
   /* "Repair" */ val Repair: Repair with java.lang.String = js.native
   /* "RepeatAll" */ val RepeatAll: RepeatAll with java.lang.String = js.native
+  /* "RepeatOne" */ val RepeatOne: RepeatOne with java.lang.String = js.native
   /* "Reply" */ val Reply: Reply with java.lang.String = js.native
   /* "ReplyAll" */ val ReplyAll: ReplyAll with java.lang.String = js.native
   /* "ReplyAllAlt" */ val ReplyAllAlt: ReplyAllAlt with java.lang.String = js.native
@@ -7933,7 +8141,9 @@ object IconNames extends js.Object {
   /* "ReportHacked" */ val ReportHacked: ReportHacked with java.lang.String = js.native
   /* "ReportLibrary" */ val ReportLibrary: ReportLibrary with java.lang.String = js.native
   /* "ReportLibraryMirrored" */ val ReportLibraryMirrored: ReportLibraryMirrored with java.lang.String = js.native
+  /* "ReservationOrders" */ val ReservationOrders: ReservationOrders with java.lang.String = js.native
   /* "ResponsesMenu" */ val ResponsesMenu: ResponsesMenu with java.lang.String = js.native
+  /* "ReturnKey" */ val ReturnKey: ReturnKey with java.lang.String = js.native
   /* "ReturnToSession" */ val ReturnToSession: ReturnToSession with java.lang.String = js.native
   /* "RevToggleKey" */ val RevToggleKey: RevToggleKey with java.lang.String = js.native
   /* "ReviewRequestMirroredSolid" */ val ReviewRequestMirroredSolid: ReviewRequestMirroredSolid with java.lang.String = js.native
@@ -7948,10 +8158,13 @@ object IconNames extends js.Object {
   /* "Ringer" */ val Ringer: Ringer with java.lang.String = js.native
   /* "RingerOff" */ val RingerOff: RingerOff with java.lang.String = js.native
   /* "RingerRemove" */ val RingerRemove: RingerRemove with java.lang.String = js.native
+  /* "RingerSolid" */ val RingerSolid: RingerSolid with java.lang.String = js.native
   /* "Robot" */ val Robot: Robot with java.lang.String = js.native
   /* "Rocket" */ val Rocket: Rocket with java.lang.String = js.native
   /* "Room" */ val Room: Room with java.lang.String = js.native
   /* "Rotate" */ val Rotate: Rotate with java.lang.String = js.native
+  /* "Rotate90Clockwise" */ val Rotate90Clockwise: Rotate90Clockwise with java.lang.String = js.native
+  /* "Rotate90CounterClockwise" */ val Rotate90CounterClockwise: Rotate90CounterClockwise with java.lang.String = js.native
   /* "RowsChild" */ val RowsChild: RowsChild with java.lang.String = js.native
   /* "RowsGroup" */ val RowsGroup: RowsGroup with java.lang.String = js.native
   /* "Rugby" */ val Rugby: Rugby with java.lang.String = js.native
@@ -7996,6 +8209,7 @@ object IconNames extends js.Object {
   /* "ServerProcesses" */ val ServerProcesses: ServerProcesses with java.lang.String = js.native
   /* "SetAction" */ val SetAction: SetAction with java.lang.String = js.native
   /* "Settings" */ val Settings: Settings with java.lang.String = js.native
+  /* "ShakeDevice" */ val ShakeDevice: ShakeDevice with java.lang.String = js.native
   /* "Shapes" */ val Shapes: Shapes with java.lang.String = js.native
   /* "Share" */ val Share: Share with java.lang.String = js.native
   /* "ShareiOS" */ val ShareiOS: ShareiOS with java.lang.String = js.native
@@ -8016,6 +8230,7 @@ object IconNames extends js.Object {
   /* "SidePanel" */ val SidePanel: SidePanel with java.lang.String = js.native
   /* "SidePanelMirrored" */ val SidePanelMirrored: SidePanelMirrored with java.lang.String = js.native
   /* "SignOut" */ val SignOut: SignOut with java.lang.String = js.native
+  /* "Signin" */ val Signin: Signin with java.lang.String = js.native
   /* "SingleBookmark" */ val SingleBookmark: SingleBookmark with java.lang.String = js.native
   /* "SingleBookmarkSolid" */ val SingleBookmarkSolid: SingleBookmarkSolid with java.lang.String = js.native
   /* "SingleColumn" */ val SingleColumn: SingleColumn with java.lang.String = js.native
@@ -8045,6 +8260,7 @@ object IconNames extends js.Object {
   /* "SliderHandleSize" */ val SliderHandleSize: SliderHandleSize with java.lang.String = js.native
   /* "SliderThumb" */ val SliderThumb: SliderThumb with java.lang.String = js.native
   /* "Slideshow" */ val Slideshow: Slideshow with java.lang.String = js.native
+  /* "SmartGlassRemote" */ val SmartGlassRemote: SmartGlassRemote with java.lang.String = js.native
   /* "SnapToGrid" */ val SnapToGrid: SnapToGrid with java.lang.String = js.native
   /* "Snooze" */ val Snooze: Snooze with java.lang.String = js.native
   /* "Snow" */ val Snow: Snow with java.lang.String = js.native
@@ -8257,6 +8473,7 @@ object IconNames extends js.Object {
   /* "TurnRight" */ val TurnRight: TurnRight with java.lang.String = js.native
   /* "TwelvePointStar" */ val TwelvePointStar: TwelvePointStar with java.lang.String = js.native
   /* "TypeScriptLanguage" */ val TypeScriptLanguage: TypeScriptLanguage with java.lang.String = js.native
+  /* "USB" */ val USB: USB with java.lang.String = js.native
   /* "Umbrella" */ val Umbrella: Umbrella with java.lang.String = js.native
   /* "UnSetColor" */ val UnSetColor: UnSetColor with java.lang.String = js.native
   /* "Underline" */ val Underline: Underline with java.lang.String = js.native
@@ -8298,6 +8515,7 @@ object IconNames extends js.Object {
   /* "VariableGroup" */ val VariableGroup: VariableGroup with java.lang.String = js.native
   /* "VennDiagram" */ val VennDiagram: VennDiagram with java.lang.String = js.native
   /* "VerifiedBrand" */ val VerifiedBrand: VerifiedBrand with java.lang.String = js.native
+  /* "VerifiedBrandSolid" */ val VerifiedBrandSolid: VerifiedBrandSolid with java.lang.String = js.native
   /* "VersionControlPush" */ val VersionControlPush: VersionControlPush with java.lang.String = js.native
   /* "VerticalDistributeCenter" */ val VerticalDistributeCenter: VerticalDistributeCenter with java.lang.String = js.native
   /* "Video" */ val Video: Video with java.lang.String = js.native
@@ -8345,8 +8563,10 @@ object IconNames extends js.Object {
   /* "Warning" */ val Warning: Warning with java.lang.String = js.native
   /* "Warning12" */ val Warning12: Warning12 with java.lang.String = js.native
   /* "WarningSolid" */ val WarningSolid: WarningSolid with java.lang.String = js.native
+  /* "WavingHand" */ val WavingHand: WavingHand with java.lang.String = js.native
   /* "WebComponents" */ val WebComponents: WebComponents with java.lang.String = js.native
   /* "WebPublish" */ val WebPublish: WebPublish with java.lang.String = js.native
+  /* "WebTemplate" */ val WebTemplate: WebTemplate with java.lang.String = js.native
   /* "Website" */ val Website: Website with java.lang.String = js.native
   /* "Weights" */ val Weights: Weights with java.lang.String = js.native
   /* "WhiteBoardApp16" */ val WhiteBoardApp16: WhiteBoardApp16 with java.lang.String = js.native

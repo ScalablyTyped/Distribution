@@ -50,6 +50,9 @@ object fastifyLibStrings {
   sealed trait onError extends js.Object
   
   @js.native
+  sealed trait onRegister extends js.Object
+  
+  @js.native
   sealed trait onRequest extends js.Object
   
   @js.native
@@ -103,6 +106,8 @@ object fastifyLibStrings {
   def onClose: onClose = "onClose".asInstanceOf[onClose]
   @scala.inline
   def onError: onError = "onError".asInstanceOf[onError]
+  @scala.inline
+  def onRegister: onRegister = "onRegister".asInstanceOf[onRegister]
   @scala.inline
   def onRequest: onRequest = "onRequest".asInstanceOf[onRequest]
   @scala.inline

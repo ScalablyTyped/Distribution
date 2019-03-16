@@ -48,6 +48,12 @@ trait ISubscription
     */
   var customer: java.lang.String | stripeLib.stripeMod.StripeNs.customersNs.ICustomer
   /**
+    * ID of the default payment source for the subscription.
+    * It must belong to the customer associated with the subscription and be in a chargeable state.
+    * If not set, defaults to the customer’s default source. [Expandable]
+    */
+  var default_source: java.lang.String
+  /**
     * Describes the current discount applied to this subscription, if there is one. When billing, a discount applied to a
     * subscription overrides a discount applied on a customer-wide basis.
     */
@@ -111,6 +117,7 @@ object ISubscription {
     current_period_end: scala.Double,
     current_period_start: scala.Double,
     customer: java.lang.String | stripeLib.stripeMod.StripeNs.customersNs.ICustomer,
+    default_source: java.lang.String,
     id: java.lang.String,
     items: stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.subscriptionItemsNs.ISubscriptionItem],
     metadata: stripeLib.stripeMod.StripeNs.IMetadata,
@@ -126,7 +133,7 @@ object ISubscription {
     trial_end: scala.Int | scala.Double = null,
     trial_start: scala.Int | scala.Double = null
   ): ISubscription = {
-    val __obj = js.Dynamic.literal(application_fee_percent = application_fee_percent, billing = billing, cancel_at_period_end = cancel_at_period_end, created = created, current_period_end = current_period_end, current_period_start = current_period_start, customer = customer.asInstanceOf[js.Any], id = id, items = items, metadata = metadata, quantity = quantity, start = start, status = status, tax_percent = tax_percent)
+    val __obj = js.Dynamic.literal(application_fee_percent = application_fee_percent, billing = billing, cancel_at_period_end = cancel_at_period_end, created = created, current_period_end = current_period_end, current_period_start = current_period_start, customer = customer.asInstanceOf[js.Any], default_source = default_source, id = id, items = items, metadata = metadata, quantity = quantity, start = start, status = status, tax_percent = tax_percent)
     __obj.updateDynamic("object")(`object`)
     if (canceled_at != null) __obj.updateDynamic("canceled_at")(canceled_at.asInstanceOf[js.Any])
     if (discount != null) __obj.updateDynamic("discount")(discount)

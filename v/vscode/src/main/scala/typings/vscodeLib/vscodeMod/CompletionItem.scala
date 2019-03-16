@@ -45,7 +45,7 @@ class CompletionItem protected () extends js.Object {
   /**
   		 * A human-readable string that represents a doc-comment.
   		 */
-  var documentation: js.UndefOr[java.lang.String] = js.native
+  var documentation: js.UndefOr[java.lang.String | MarkdownString] = js.native
   /**
   		 * A string that should be used when filtering a set of
   		 * completion items. When `falsy` the [label](#CompletionItem.label)

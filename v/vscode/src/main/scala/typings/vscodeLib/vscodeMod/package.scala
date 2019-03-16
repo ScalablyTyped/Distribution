@@ -15,6 +15,7 @@ package object vscodeMod {
     /* disposables */ js.UndefOr[js.Array[Disposable]], 
     Disposable
   ]
+  type GlobPattern = java.lang.String | RelativePattern
   type MarkedString = _MarkedString | java.lang.String
   type ProviderResult[T] = js.UndefOr[T | scala.Null | (vscodeLib.Thenable[js.UndefOr[T | scala.Null]])]
 }

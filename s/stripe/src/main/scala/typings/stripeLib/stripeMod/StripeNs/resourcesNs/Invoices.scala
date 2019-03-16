@@ -161,11 +161,15 @@ trait Invoices
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice]
   ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
-  def retrieveLines(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  def retrieveLines(id: java.lang.String): js.Promise[
+    stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
+  ] = js.native
   def retrieveLines(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItemRetrievalOptions
-  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  ): js.Promise[
+    stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
+  ] = js.native
   /**
     * When retrieving an invoice, you'll get a lines property containing the total count of line items and the first
     * handful of those items. There is also a URL where you can retrieve the full (paginated) list of line items.
@@ -179,7 +183,9 @@ trait Invoices
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItemRetrievalOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
-  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  ): js.Promise[
+    stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
+  ] = js.native
   def retrieveLines(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItemRetrievalOptions,
@@ -187,28 +193,38 @@ trait Invoices
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
     ]
-  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  ): js.Promise[
+    stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
+  ] = js.native
   def retrieveLines(
     id: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItemRetrievalOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
     ]
-  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
-  def retrieveLines(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  ): js.Promise[
+    stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
+  ] = js.native
+  def retrieveLines(id: java.lang.String, options: stripeLib.stripeMod.StripeNs.HeaderOptions): js.Promise[
+    stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
+  ] = js.native
   def retrieveLines(
     id: java.lang.String,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
     ]
-  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  ): js.Promise[
+    stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
+  ] = js.native
   def retrieveLines(
     id: java.lang.String,
     response: stripeLib.stripeMod.StripeNs.IResponseFn[
       stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
     ]
-  ): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem] = js.native
+  ): js.Promise[
+    stripeLib.stripeMod.StripeNs.IList[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceLineItem]
+  ] = js.native
   def retrieveUpcoming(id: java.lang.String): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   def retrieveUpcoming(id: java.lang.String, data: stripeLib.stripeMod.StripeNs.invoicesNs.IInvoiceUpcomingOptions): js.Promise[stripeLib.stripeMod.StripeNs.invoicesNs.IInvoice] = js.native
   /**

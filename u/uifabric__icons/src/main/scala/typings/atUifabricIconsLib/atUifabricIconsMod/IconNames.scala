@@ -14,6 +14,7 @@ object IconNames extends js.Object {
   /* "AccessLogo" */ val AccessLogo: atUifabricIconsLib.libIconNamesMod.IconNames.AccessLogo with java.lang.String = js.native
   /* "AccessLogoFill" */ val AccessLogoFill: atUifabricIconsLib.libIconNamesMod.IconNames.AccessLogoFill with java.lang.String = js.native
   /* "AccessibiltyChecker" */ val AccessibiltyChecker: atUifabricIconsLib.libIconNamesMod.IconNames.AccessibiltyChecker with java.lang.String = js.native
+  /* "AccountBrowser" */ val AccountBrowser: atUifabricIconsLib.libIconNamesMod.IconNames.AccountBrowser with java.lang.String = js.native
   /* "AccountManagement" */ val AccountManagement: atUifabricIconsLib.libIconNamesMod.IconNames.AccountManagement with java.lang.String = js.native
   /* "Accounts" */ val Accounts: atUifabricIconsLib.libIconNamesMod.IconNames.Accounts with java.lang.String = js.native
   /* "ActionCenter" */ val ActionCenter: atUifabricIconsLib.libIconNamesMod.IconNames.ActionCenter with java.lang.String = js.native
@@ -26,10 +27,12 @@ object IconNames extends js.Object {
   /* "AddFavoriteFill" */ val AddFavoriteFill: atUifabricIconsLib.libIconNamesMod.IconNames.AddFavoriteFill with java.lang.String = js.native
   /* "AddFriend" */ val AddFriend: atUifabricIconsLib.libIconNamesMod.IconNames.AddFriend with java.lang.String = js.native
   /* "AddGroup" */ val AddGroup: atUifabricIconsLib.libIconNamesMod.IconNames.AddGroup with java.lang.String = js.native
+  /* "AddHome" */ val AddHome: atUifabricIconsLib.libIconNamesMod.IconNames.AddHome with java.lang.String = js.native
   /* "AddIn" */ val AddIn: atUifabricIconsLib.libIconNamesMod.IconNames.AddIn with java.lang.String = js.native
   /* "AddNotes" */ val AddNotes: atUifabricIconsLib.libIconNamesMod.IconNames.AddNotes with java.lang.String = js.native
   /* "AddOnlineMeeting" */ val AddOnlineMeeting: atUifabricIconsLib.libIconNamesMod.IconNames.AddOnlineMeeting with java.lang.String = js.native
   /* "AddPhone" */ val AddPhone: atUifabricIconsLib.libIconNamesMod.IconNames.AddPhone with java.lang.String = js.native
+  /* "AddReaction" */ val AddReaction: atUifabricIconsLib.libIconNamesMod.IconNames.AddReaction with java.lang.String = js.native
   /* "AddTo" */ val AddTo: atUifabricIconsLib.libIconNamesMod.IconNames.AddTo with java.lang.String = js.native
   /* "Admin" */ val Admin: atUifabricIconsLib.libIconNamesMod.IconNames.Admin with java.lang.String = js.native
   /* "AdminALogo32" */ val AdminALogo32: atUifabricIconsLib.libIconNamesMod.IconNames.AdminALogo32 with java.lang.String = js.native
@@ -73,6 +76,10 @@ object IconNames extends js.Object {
   /* "AppIconDefault" */ val AppIconDefault: atUifabricIconsLib.libIconNamesMod.IconNames.AppIconDefault with java.lang.String = js.native
   /* "AppIconDefaultAdd" */ val AppIconDefaultAdd: atUifabricIconsLib.libIconNamesMod.IconNames.AppIconDefaultAdd with java.lang.String = js.native
   /* "AppIconDefaultList" */ val AppIconDefaultList: atUifabricIconsLib.libIconNamesMod.IconNames.AppIconDefaultList with java.lang.String = js.native
+  /* "AppleTVMenu" */ val AppleTVMenu: atUifabricIconsLib.libIconNamesMod.IconNames.AppleTVMenu with java.lang.String = js.native
+  /* "AppleTVMicrophone" */ val AppleTVMicrophone: atUifabricIconsLib.libIconNamesMod.IconNames.AppleTVMicrophone with java.lang.String = js.native
+  /* "AppleTVMonitor" */ val AppleTVMonitor: atUifabricIconsLib.libIconNamesMod.IconNames.AppleTVMonitor with java.lang.String = js.native
+  /* "AppleTVPlay" */ val AppleTVPlay: atUifabricIconsLib.libIconNamesMod.IconNames.AppleTVPlay with java.lang.String = js.native
   /* "Archive" */ val Archive: atUifabricIconsLib.libIconNamesMod.IconNames.Archive with java.lang.String = js.native
   /* "AreaChart" */ val AreaChart: atUifabricIconsLib.libIconNamesMod.IconNames.AreaChart with java.lang.String = js.native
   /* "ArrangeBringForward" */ val ArrangeBringForward: atUifabricIconsLib.libIconNamesMod.IconNames.ArrangeBringForward with java.lang.String = js.native
@@ -101,6 +108,7 @@ object IconNames extends js.Object {
   /* "AsteriskSolid" */ val AsteriskSolid: atUifabricIconsLib.libIconNamesMod.IconNames.AsteriskSolid with java.lang.String = js.native
   /* "Attach" */ val Attach: atUifabricIconsLib.libIconNamesMod.IconNames.Attach with java.lang.String = js.native
   /* "AustralianRules" */ val AustralianRules: atUifabricIconsLib.libIconNamesMod.IconNames.AustralianRules with java.lang.String = js.native
+  /* "AuthenticatorApp" */ val AuthenticatorApp: atUifabricIconsLib.libIconNamesMod.IconNames.AuthenticatorApp with java.lang.String = js.native
   /* "AutoEnhanceOff" */ val AutoEnhanceOff: atUifabricIconsLib.libIconNamesMod.IconNames.AutoEnhanceOff with java.lang.String = js.native
   /* "AutoEnhanceOn" */ val AutoEnhanceOn: atUifabricIconsLib.libIconNamesMod.IconNames.AutoEnhanceOn with java.lang.String = js.native
   /* "AutoFillTemplate" */ val AutoFillTemplate: atUifabricIconsLib.libIconNamesMod.IconNames.AutoFillTemplate with java.lang.String = js.native
@@ -219,6 +227,7 @@ object IconNames extends js.Object {
   /* "CalculatorEqualTo" */ val CalculatorEqualTo: atUifabricIconsLib.libIconNamesMod.IconNames.CalculatorEqualTo with java.lang.String = js.native
   /* "CalculatorMultiply" */ val CalculatorMultiply: atUifabricIconsLib.libIconNamesMod.IconNames.CalculatorMultiply with java.lang.String = js.native
   /* "CalculatorNotEqualTo" */ val CalculatorNotEqualTo: atUifabricIconsLib.libIconNamesMod.IconNames.CalculatorNotEqualTo with java.lang.String = js.native
+  /* "CalculatorPercentage" */ val CalculatorPercentage: atUifabricIconsLib.libIconNamesMod.IconNames.CalculatorPercentage with java.lang.String = js.native
   /* "CalculatorSubtract" */ val CalculatorSubtract: atUifabricIconsLib.libIconNamesMod.IconNames.CalculatorSubtract with java.lang.String = js.native
   /* "Calendar" */ val Calendar: atUifabricIconsLib.libIconNamesMod.IconNames.Calendar with java.lang.String = js.native
   /* "CalendarAgenda" */ val CalendarAgenda: atUifabricIconsLib.libIconNamesMod.IconNames.CalendarAgenda with java.lang.String = js.native
@@ -339,6 +348,8 @@ object IconNames extends js.Object {
   /* "ClearFormattingA" */ val ClearFormattingA: atUifabricIconsLib.libIconNamesMod.IconNames.ClearFormattingA with java.lang.String = js.native
   /* "ClearFormattingEraser" */ val ClearFormattingEraser: atUifabricIconsLib.libIconNamesMod.IconNames.ClearFormattingEraser with java.lang.String = js.native
   /* "ClearNight" */ val ClearNight: atUifabricIconsLib.libIconNamesMod.IconNames.ClearNight with java.lang.String = js.native
+  /* "ClipboardList" */ val ClipboardList: atUifabricIconsLib.libIconNamesMod.IconNames.ClipboardList with java.lang.String = js.native
+  /* "ClipboardListMirrored" */ val ClipboardListMirrored: atUifabricIconsLib.libIconNamesMod.IconNames.ClipboardListMirrored with java.lang.String = js.native
   /* "ClipboardSolid" */ val ClipboardSolid: atUifabricIconsLib.libIconNamesMod.IconNames.ClipboardSolid with java.lang.String = js.native
   /* "Clock" */ val Clock: atUifabricIconsLib.libIconNamesMod.IconNames.Clock with java.lang.String = js.native
   /* "CloneToDesktop" */ val CloneToDesktop: atUifabricIconsLib.libIconNamesMod.IconNames.CloneToDesktop with java.lang.String = js.native
@@ -369,10 +380,12 @@ object IconNames extends js.Object {
   /* "ColumnRightTwoThirds" */ val ColumnRightTwoThirds: atUifabricIconsLib.libIconNamesMod.IconNames.ColumnRightTwoThirds with java.lang.String = js.native
   /* "ColumnRightTwoThirdsEdit" */ val ColumnRightTwoThirdsEdit: atUifabricIconsLib.libIconNamesMod.IconNames.ColumnRightTwoThirdsEdit with java.lang.String = js.native
   /* "ColumnVerticalSection" */ val ColumnVerticalSection: atUifabricIconsLib.libIconNamesMod.IconNames.ColumnVerticalSection with java.lang.String = js.native
+  /* "ColumnVerticalSectionEdit" */ val ColumnVerticalSectionEdit: atUifabricIconsLib.libIconNamesMod.IconNames.ColumnVerticalSectionEdit with java.lang.String = js.native
   /* "Combine" */ val Combine: atUifabricIconsLib.libIconNamesMod.IconNames.Combine with java.lang.String = js.native
   /* "Combobox" */ val Combobox: atUifabricIconsLib.libIconNamesMod.IconNames.Combobox with java.lang.String = js.native
   /* "CommandPrompt" */ val CommandPrompt: atUifabricIconsLib.libIconNamesMod.IconNames.CommandPrompt with java.lang.String = js.native
   /* "Comment" */ val Comment: atUifabricIconsLib.libIconNamesMod.IconNames.Comment with java.lang.String = js.native
+  /* "CommentActive" */ val CommentActive: atUifabricIconsLib.libIconNamesMod.IconNames.CommentActive with java.lang.String = js.native
   /* "CommentAdd" */ val CommentAdd: atUifabricIconsLib.libIconNamesMod.IconNames.CommentAdd with java.lang.String = js.native
   /* "CommentNext" */ val CommentNext: atUifabricIconsLib.libIconNamesMod.IconNames.CommentNext with java.lang.String = js.native
   /* "CommentPrevious" */ val CommentPrevious: atUifabricIconsLib.libIconNamesMod.IconNames.CommentPrevious with java.lang.String = js.native
@@ -381,6 +394,7 @@ object IconNames extends js.Object {
   /* "Communications" */ val Communications: atUifabricIconsLib.libIconNamesMod.IconNames.Communications with java.lang.String = js.native
   /* "CompanyDirectory" */ val CompanyDirectory: atUifabricIconsLib.libIconNamesMod.IconNames.CompanyDirectory with java.lang.String = js.native
   /* "CompanyDirectoryMirrored" */ val CompanyDirectoryMirrored: atUifabricIconsLib.libIconNamesMod.IconNames.CompanyDirectoryMirrored with java.lang.String = js.native
+  /* "Compare" */ val Compare: atUifabricIconsLib.libIconNamesMod.IconNames.Compare with java.lang.String = js.native
   /* "CompassNW" */ val CompassNW: atUifabricIconsLib.libIconNamesMod.IconNames.CompassNW with java.lang.String = js.native
   /* "Completed" */ val Completed: atUifabricIconsLib.libIconNamesMod.IconNames.Completed with java.lang.String = js.native
   /* "CompletedSolid" */ val CompletedSolid: atUifabricIconsLib.libIconNamesMod.IconNames.CompletedSolid with java.lang.String = js.native
@@ -417,6 +431,7 @@ object IconNames extends js.Object {
   /* "DRM" */ val DRM: atUifabricIconsLib.libIconNamesMod.IconNames.DRM with java.lang.String = js.native
   /* "DashboardAdd" */ val DashboardAdd: atUifabricIconsLib.libIconNamesMod.IconNames.DashboardAdd with java.lang.String = js.native
   /* "DataConnectionLibrary" */ val DataConnectionLibrary: atUifabricIconsLib.libIconNamesMod.IconNames.DataConnectionLibrary with java.lang.String = js.native
+  /* "DataManagementSettings" */ val DataManagementSettings: atUifabricIconsLib.libIconNamesMod.IconNames.DataManagementSettings with java.lang.String = js.native
   /* "Database" */ val Database: atUifabricIconsLib.libIconNamesMod.IconNames.Database with java.lang.String = js.native
   /* "DatabaseSync" */ val DatabaseSync: atUifabricIconsLib.libIconNamesMod.IconNames.DatabaseSync with java.lang.String = js.native
   /* "Dataflows" */ val Dataflows: atUifabricIconsLib.libIconNamesMod.IconNames.Dataflows with java.lang.String = js.native
@@ -434,6 +449,7 @@ object IconNames extends js.Object {
   /* "DecreaseIndentTextMirrored" */ val DecreaseIndentTextMirrored: atUifabricIconsLib.libIconNamesMod.IconNames.DecreaseIndentTextMirrored with java.lang.String = js.native
   /* "DefaultRatio" */ val DefaultRatio: atUifabricIconsLib.libIconNamesMod.IconNames.DefaultRatio with java.lang.String = js.native
   /* "DefectSolid" */ val DefectSolid: atUifabricIconsLib.libIconNamesMod.IconNames.DefectSolid with java.lang.String = js.native
+  /* "DefenderTVM" */ val DefenderTVM: atUifabricIconsLib.libIconNamesMod.IconNames.DefenderTVM with java.lang.String = js.native
   /* "Delete" */ val Delete: atUifabricIconsLib.libIconNamesMod.IconNames.Delete with java.lang.String = js.native
   /* "DeleteColumns" */ val DeleteColumns: atUifabricIconsLib.libIconNamesMod.IconNames.DeleteColumns with java.lang.String = js.native
   /* "DeleteRows" */ val DeleteRows: atUifabricIconsLib.libIconNamesMod.IconNames.DeleteRows with java.lang.String = js.native
@@ -584,6 +600,7 @@ object IconNames extends js.Object {
   /* "FabricDataConnectionLibrary" */ val FabricDataConnectionLibrary: atUifabricIconsLib.libIconNamesMod.IconNames.FabricDataConnectionLibrary with java.lang.String = js.native
   /* "FabricDocLibrary" */ val FabricDocLibrary: atUifabricIconsLib.libIconNamesMod.IconNames.FabricDocLibrary with java.lang.String = js.native
   /* "FabricFolder" */ val FabricFolder: atUifabricIconsLib.libIconNamesMod.IconNames.FabricFolder with java.lang.String = js.native
+  /* "FabricFolderConfirm" */ val FabricFolderConfirm: atUifabricIconsLib.libIconNamesMod.IconNames.FabricFolderConfirm with java.lang.String = js.native
   /* "FabricFolderFill" */ val FabricFolderFill: atUifabricIconsLib.libIconNamesMod.IconNames.FabricFolderFill with java.lang.String = js.native
   /* "FabricFolderSearch" */ val FabricFolderSearch: atUifabricIconsLib.libIconNamesMod.IconNames.FabricFolderSearch with java.lang.String = js.native
   /* "FabricFormLibrary" */ val FabricFormLibrary: atUifabricIconsLib.libIconNamesMod.IconNames.FabricFormLibrary with java.lang.String = js.native
@@ -695,6 +712,7 @@ object IconNames extends js.Object {
   /* "FullWidthEdit" */ val FullWidthEdit: atUifabricIconsLib.libIconNamesMod.IconNames.FullWidthEdit with java.lang.String = js.native
   /* "FunctionalManagerDashboard" */ val FunctionalManagerDashboard: atUifabricIconsLib.libIconNamesMod.IconNames.FunctionalManagerDashboard with java.lang.String = js.native
   /* "FunnelChart" */ val FunnelChart: atUifabricIconsLib.libIconNamesMod.IconNames.FunnelChart with java.lang.String = js.native
+  /* "GIF" */ val GIF: atUifabricIconsLib.libIconNamesMod.IconNames.GIF with java.lang.String = js.native
   /* "GUID" */ val GUID: atUifabricIconsLib.libIconNamesMod.IconNames.GUID with java.lang.String = js.native
   /* "GallatinLogo" */ val GallatinLogo: atUifabricIconsLib.libIconNamesMod.IconNames.GallatinLogo with java.lang.String = js.native
   /* "Game" */ val Game: atUifabricIconsLib.libIconNamesMod.IconNames.Game with java.lang.String = js.native
@@ -756,6 +774,7 @@ object IconNames extends js.Object {
   /* "Hexagon" */ val Hexagon: atUifabricIconsLib.libIconNamesMod.IconNames.Hexagon with java.lang.String = js.native
   /* "Hide" */ val Hide: atUifabricIconsLib.libIconNamesMod.IconNames.Hide with java.lang.String = js.native
   /* "Hide2" */ val Hide2: atUifabricIconsLib.libIconNamesMod.IconNames.Hide2 with java.lang.String = js.native
+  /* "Hide3" */ val Hide3: atUifabricIconsLib.libIconNamesMod.IconNames.Hide3 with java.lang.String = js.native
   /* "Highlight" */ val Highlight: atUifabricIconsLib.libIconNamesMod.IconNames.Highlight with java.lang.String = js.native
   /* "HighlightMappedShapes" */ val HighlightMappedShapes: atUifabricIconsLib.libIconNamesMod.IconNames.HighlightMappedShapes with java.lang.String = js.native
   /* "HintText" */ val HintText: atUifabricIconsLib.libIconNamesMod.IconNames.HintText with java.lang.String = js.native
@@ -764,6 +783,7 @@ object IconNames extends js.Object {
   /* "Home" */ val Home: atUifabricIconsLib.libIconNamesMod.IconNames.Home with java.lang.String = js.native
   /* "HomeGroup" */ val HomeGroup: atUifabricIconsLib.libIconNamesMod.IconNames.HomeGroup with java.lang.String = js.native
   /* "HomeSolid" */ val HomeSolid: atUifabricIconsLib.libIconNamesMod.IconNames.HomeSolid with java.lang.String = js.native
+  /* "HomeVerify" */ val HomeVerify: atUifabricIconsLib.libIconNamesMod.IconNames.HomeVerify with java.lang.String = js.native
   /* "HorizontalDistributeCenter" */ val HorizontalDistributeCenter: atUifabricIconsLib.libIconNamesMod.IconNames.HorizontalDistributeCenter with java.lang.String = js.native
   /* "Hospital" */ val Hospital: atUifabricIconsLib.libIconNamesMod.IconNames.Hospital with java.lang.String = js.native
   /* "Hotel" */ val Hotel: atUifabricIconsLib.libIconNamesMod.IconNames.Hotel with java.lang.String = js.native
@@ -785,6 +805,7 @@ object IconNames extends js.Object {
   /* "Inbox" */ val Inbox: atUifabricIconsLib.libIconNamesMod.IconNames.Inbox with java.lang.String = js.native
   /* "InboxCheck" */ val InboxCheck: atUifabricIconsLib.libIconNamesMod.IconNames.InboxCheck with java.lang.String = js.native
   /* "IncidentTriangle" */ val IncidentTriangle: atUifabricIconsLib.libIconNamesMod.IconNames.IncidentTriangle with java.lang.String = js.native
+  /* "IncomingCall" */ val IncomingCall: atUifabricIconsLib.libIconNamesMod.IconNames.IncomingCall with java.lang.String = js.native
   /* "IncreaseIndentArrow" */ val IncreaseIndentArrow: atUifabricIconsLib.libIconNamesMod.IconNames.IncreaseIndentArrow with java.lang.String = js.native
   /* "IncreaseIndentArrowMirrored" */ val IncreaseIndentArrowMirrored: atUifabricIconsLib.libIconNamesMod.IconNames.IncreaseIndentArrowMirrored with java.lang.String = js.native
   /* "IncreaseIndentLegacy" */ val IncreaseIndentLegacy: atUifabricIconsLib.libIconNamesMod.IconNames.IncreaseIndentLegacy with java.lang.String = js.native
@@ -793,6 +814,8 @@ object IconNames extends js.Object {
   /* "Info" */ val Info: atUifabricIconsLib.libIconNamesMod.IconNames.Info with java.lang.String = js.native
   /* "Info2" */ val Info2: atUifabricIconsLib.libIconNamesMod.IconNames.Info2 with java.lang.String = js.native
   /* "InfoSolid" */ val InfoSolid: atUifabricIconsLib.libIconNamesMod.IconNames.InfoSolid with java.lang.String = js.native
+  /* "InformationBarriers" */ val InformationBarriers: atUifabricIconsLib.libIconNamesMod.IconNames.InformationBarriers with java.lang.String = js.native
+  /* "InkingTool" */ val InkingTool: atUifabricIconsLib.libIconNamesMod.IconNames.InkingTool with java.lang.String = js.native
   /* "InsertColumnsLeft" */ val InsertColumnsLeft: atUifabricIconsLib.libIconNamesMod.IconNames.InsertColumnsLeft with java.lang.String = js.native
   /* "InsertColumnsRight" */ val InsertColumnsRight: atUifabricIconsLib.libIconNamesMod.IconNames.InsertColumnsRight with java.lang.String = js.native
   /* "InsertRowsAbove" */ val InsertRowsAbove: atUifabricIconsLib.libIconNamesMod.IconNames.InsertRowsAbove with java.lang.String = js.native
@@ -800,6 +823,7 @@ object IconNames extends js.Object {
   /* "InsertSignatureLine" */ val InsertSignatureLine: atUifabricIconsLib.libIconNamesMod.IconNames.InsertSignatureLine with java.lang.String = js.native
   /* "InsertTextBox" */ val InsertTextBox: atUifabricIconsLib.libIconNamesMod.IconNames.InsertTextBox with java.lang.String = js.native
   /* "InstallToDrive" */ val InstallToDrive: atUifabricIconsLib.libIconNamesMod.IconNames.InstallToDrive with java.lang.String = js.native
+  /* "InternalInvestigation" */ val InternalInvestigation: atUifabricIconsLib.libIconNamesMod.IconNames.InternalInvestigation with java.lang.String = js.native
   /* "InternetSharing" */ val InternetSharing: atUifabricIconsLib.libIconNamesMod.IconNames.InternetSharing with java.lang.String = js.native
   /* "IssueSolid" */ val IssueSolid: atUifabricIconsLib.libIconNamesMod.IconNames.IssueSolid with java.lang.String = js.native
   /* "IssueTracking" */ val IssueTracking: atUifabricIconsLib.libIconNamesMod.IconNames.IssueTracking with java.lang.String = js.native
@@ -883,12 +907,14 @@ object IconNames extends js.Object {
   /* "MapLayers" */ val MapLayers: atUifabricIconsLib.libIconNamesMod.IconNames.MapLayers with java.lang.String = js.native
   /* "MapPin" */ val MapPin: atUifabricIconsLib.libIconNamesMod.IconNames.MapPin with java.lang.String = js.native
   /* "MapPinSolid" */ val MapPinSolid: atUifabricIconsLib.libIconNamesMod.IconNames.MapPinSolid with java.lang.String = js.native
+  /* "MarkAsProtected" */ val MarkAsProtected: atUifabricIconsLib.libIconNamesMod.IconNames.MarkAsProtected with java.lang.String = js.native
   /* "MarkDownLanguage" */ val MarkDownLanguage: atUifabricIconsLib.libIconNamesMod.IconNames.MarkDownLanguage with java.lang.String = js.native
   /* "Market" */ val Market: atUifabricIconsLib.libIconNamesMod.IconNames.Market with java.lang.String = js.native
   /* "MarketDown" */ val MarketDown: atUifabricIconsLib.libIconNamesMod.IconNames.MarketDown with java.lang.String = js.native
   /* "MasterDatabase" */ val MasterDatabase: atUifabricIconsLib.libIconNamesMod.IconNames.MasterDatabase with java.lang.String = js.native
   /* "MaximumValue" */ val MaximumValue: atUifabricIconsLib.libIconNamesMod.IconNames.MaximumValue with java.lang.String = js.native
   /* "Medal" */ val Medal: atUifabricIconsLib.libIconNamesMod.IconNames.Medal with java.lang.String = js.native
+  /* "MedalSolid" */ val MedalSolid: atUifabricIconsLib.libIconNamesMod.IconNames.MedalSolid with java.lang.String = js.native
   /* "Media" */ val Media: atUifabricIconsLib.libIconNamesMod.IconNames.Media with java.lang.String = js.native
   /* "MediaAdd" */ val MediaAdd: atUifabricIconsLib.libIconNamesMod.IconNames.MediaAdd with java.lang.String = js.native
   /* "Medical" */ val Medical: atUifabricIconsLib.libIconNamesMod.IconNames.Medical with java.lang.String = js.native
@@ -903,6 +929,9 @@ object IconNames extends js.Object {
   /* "Microphone" */ val Microphone: atUifabricIconsLib.libIconNamesMod.IconNames.Microphone with java.lang.String = js.native
   /* "MicrosoftFlowLogo" */ val MicrosoftFlowLogo: atUifabricIconsLib.libIconNamesMod.IconNames.MicrosoftFlowLogo with java.lang.String = js.native
   /* "MicrosoftStaffhubLogo" */ val MicrosoftStaffhubLogo: atUifabricIconsLib.libIconNamesMod.IconNames.MicrosoftStaffhubLogo with java.lang.String = js.native
+  /* "MicrosoftTranslatorLogo" */ val MicrosoftTranslatorLogo: atUifabricIconsLib.libIconNamesMod.IconNames.MicrosoftTranslatorLogo with java.lang.String = js.native
+  /* "MicrosoftTranslatorLogoBlue" */ val MicrosoftTranslatorLogoBlue: atUifabricIconsLib.libIconNamesMod.IconNames.MicrosoftTranslatorLogoBlue with java.lang.String = js.native
+  /* "MicrosoftTranslatorLogoGreen" */ val MicrosoftTranslatorLogoGreen: atUifabricIconsLib.libIconNamesMod.IconNames.MicrosoftTranslatorLogoGreen with java.lang.String = js.native
   /* "MiniContract" */ val MiniContract: atUifabricIconsLib.libIconNamesMod.IconNames.MiniContract with java.lang.String = js.native
   /* "MiniContractMirrored" */ val MiniContractMirrored: atUifabricIconsLib.libIconNamesMod.IconNames.MiniContractMirrored with java.lang.String = js.native
   /* "MiniExpand" */ val MiniExpand: atUifabricIconsLib.libIconNamesMod.IconNames.MiniExpand with java.lang.String = js.native
@@ -993,6 +1022,7 @@ object IconNames extends js.Object {
   /* "OpenEnrollment" */ val OpenEnrollment: atUifabricIconsLib.libIconNamesMod.IconNames.OpenEnrollment with java.lang.String = js.native
   /* "OpenFile" */ val OpenFile: atUifabricIconsLib.libIconNamesMod.IconNames.OpenFile with java.lang.String = js.native
   /* "OpenFolderHorizontal" */ val OpenFolderHorizontal: atUifabricIconsLib.libIconNamesMod.IconNames.OpenFolderHorizontal with java.lang.String = js.native
+  /* "OpenInNewTab" */ val OpenInNewTab: atUifabricIconsLib.libIconNamesMod.IconNames.OpenInNewTab with java.lang.String = js.native
   /* "OpenInNewWindow" */ val OpenInNewWindow: atUifabricIconsLib.libIconNamesMod.IconNames.OpenInNewWindow with java.lang.String = js.native
   /* "OpenPane" */ val OpenPane: atUifabricIconsLib.libIconNamesMod.IconNames.OpenPane with java.lang.String = js.native
   /* "OpenPaneMirrored" */ val OpenPaneMirrored: atUifabricIconsLib.libIconNamesMod.IconNames.OpenPaneMirrored with java.lang.String = js.native
@@ -1047,6 +1077,7 @@ object IconNames extends js.Object {
   /* "PartlyCloudyNight" */ val PartlyCloudyNight: atUifabricIconsLib.libIconNamesMod.IconNames.PartlyCloudyNight with java.lang.String = js.native
   /* "PartyLeader" */ val PartyLeader: atUifabricIconsLib.libIconNamesMod.IconNames.PartyLeader with java.lang.String = js.native
   /* "PassiveAuthentication" */ val PassiveAuthentication: atUifabricIconsLib.libIconNamesMod.IconNames.PassiveAuthentication with java.lang.String = js.native
+  /* "PasswordField" */ val PasswordField: atUifabricIconsLib.libIconNamesMod.IconNames.PasswordField with java.lang.String = js.native
   /* "Paste" */ val Paste: atUifabricIconsLib.libIconNamesMod.IconNames.Paste with java.lang.String = js.native
   /* "PasteAsCode" */ val PasteAsCode: atUifabricIconsLib.libIconNamesMod.IconNames.PasteAsCode with java.lang.String = js.native
   /* "PasteAsText" */ val PasteAsText: atUifabricIconsLib.libIconNamesMod.IconNames.PasteAsText with java.lang.String = js.native
@@ -1221,6 +1252,7 @@ object IconNames extends js.Object {
   /* "ReopenPages" */ val ReopenPages: atUifabricIconsLib.libIconNamesMod.IconNames.ReopenPages with java.lang.String = js.native
   /* "Repair" */ val Repair: atUifabricIconsLib.libIconNamesMod.IconNames.Repair with java.lang.String = js.native
   /* "RepeatAll" */ val RepeatAll: atUifabricIconsLib.libIconNamesMod.IconNames.RepeatAll with java.lang.String = js.native
+  /* "RepeatOne" */ val RepeatOne: atUifabricIconsLib.libIconNamesMod.IconNames.RepeatOne with java.lang.String = js.native
   /* "Reply" */ val Reply: atUifabricIconsLib.libIconNamesMod.IconNames.Reply with java.lang.String = js.native
   /* "ReplyAll" */ val ReplyAll: atUifabricIconsLib.libIconNamesMod.IconNames.ReplyAll with java.lang.String = js.native
   /* "ReplyAllAlt" */ val ReplyAllAlt: atUifabricIconsLib.libIconNamesMod.IconNames.ReplyAllAlt with java.lang.String = js.native
@@ -1234,7 +1266,9 @@ object IconNames extends js.Object {
   /* "ReportHacked" */ val ReportHacked: atUifabricIconsLib.libIconNamesMod.IconNames.ReportHacked with java.lang.String = js.native
   /* "ReportLibrary" */ val ReportLibrary: atUifabricIconsLib.libIconNamesMod.IconNames.ReportLibrary with java.lang.String = js.native
   /* "ReportLibraryMirrored" */ val ReportLibraryMirrored: atUifabricIconsLib.libIconNamesMod.IconNames.ReportLibraryMirrored with java.lang.String = js.native
+  /* "ReservationOrders" */ val ReservationOrders: atUifabricIconsLib.libIconNamesMod.IconNames.ReservationOrders with java.lang.String = js.native
   /* "ResponsesMenu" */ val ResponsesMenu: atUifabricIconsLib.libIconNamesMod.IconNames.ResponsesMenu with java.lang.String = js.native
+  /* "ReturnKey" */ val ReturnKey: atUifabricIconsLib.libIconNamesMod.IconNames.ReturnKey with java.lang.String = js.native
   /* "ReturnToSession" */ val ReturnToSession: atUifabricIconsLib.libIconNamesMod.IconNames.ReturnToSession with java.lang.String = js.native
   /* "RevToggleKey" */ val RevToggleKey: atUifabricIconsLib.libIconNamesMod.IconNames.RevToggleKey with java.lang.String = js.native
   /* "ReviewRequestMirroredSolid" */ val ReviewRequestMirroredSolid: atUifabricIconsLib.libIconNamesMod.IconNames.ReviewRequestMirroredSolid with java.lang.String = js.native
@@ -1249,10 +1283,13 @@ object IconNames extends js.Object {
   /* "Ringer" */ val Ringer: atUifabricIconsLib.libIconNamesMod.IconNames.Ringer with java.lang.String = js.native
   /* "RingerOff" */ val RingerOff: atUifabricIconsLib.libIconNamesMod.IconNames.RingerOff with java.lang.String = js.native
   /* "RingerRemove" */ val RingerRemove: atUifabricIconsLib.libIconNamesMod.IconNames.RingerRemove with java.lang.String = js.native
+  /* "RingerSolid" */ val RingerSolid: atUifabricIconsLib.libIconNamesMod.IconNames.RingerSolid with java.lang.String = js.native
   /* "Robot" */ val Robot: atUifabricIconsLib.libIconNamesMod.IconNames.Robot with java.lang.String = js.native
   /* "Rocket" */ val Rocket: atUifabricIconsLib.libIconNamesMod.IconNames.Rocket with java.lang.String = js.native
   /* "Room" */ val Room: atUifabricIconsLib.libIconNamesMod.IconNames.Room with java.lang.String = js.native
   /* "Rotate" */ val Rotate: atUifabricIconsLib.libIconNamesMod.IconNames.Rotate with java.lang.String = js.native
+  /* "Rotate90Clockwise" */ val Rotate90Clockwise: atUifabricIconsLib.libIconNamesMod.IconNames.Rotate90Clockwise with java.lang.String = js.native
+  /* "Rotate90CounterClockwise" */ val Rotate90CounterClockwise: atUifabricIconsLib.libIconNamesMod.IconNames.Rotate90CounterClockwise with java.lang.String = js.native
   /* "RowsChild" */ val RowsChild: atUifabricIconsLib.libIconNamesMod.IconNames.RowsChild with java.lang.String = js.native
   /* "RowsGroup" */ val RowsGroup: atUifabricIconsLib.libIconNamesMod.IconNames.RowsGroup with java.lang.String = js.native
   /* "Rugby" */ val Rugby: atUifabricIconsLib.libIconNamesMod.IconNames.Rugby with java.lang.String = js.native
@@ -1297,6 +1334,7 @@ object IconNames extends js.Object {
   /* "ServerProcesses" */ val ServerProcesses: atUifabricIconsLib.libIconNamesMod.IconNames.ServerProcesses with java.lang.String = js.native
   /* "SetAction" */ val SetAction: atUifabricIconsLib.libIconNamesMod.IconNames.SetAction with java.lang.String = js.native
   /* "Settings" */ val Settings: atUifabricIconsLib.libIconNamesMod.IconNames.Settings with java.lang.String = js.native
+  /* "ShakeDevice" */ val ShakeDevice: atUifabricIconsLib.libIconNamesMod.IconNames.ShakeDevice with java.lang.String = js.native
   /* "Shapes" */ val Shapes: atUifabricIconsLib.libIconNamesMod.IconNames.Shapes with java.lang.String = js.native
   /* "Share" */ val Share: atUifabricIconsLib.libIconNamesMod.IconNames.Share with java.lang.String = js.native
   /* "ShareiOS" */ val ShareiOS: atUifabricIconsLib.libIconNamesMod.IconNames.ShareiOS with java.lang.String = js.native
@@ -1317,6 +1355,7 @@ object IconNames extends js.Object {
   /* "SidePanel" */ val SidePanel: atUifabricIconsLib.libIconNamesMod.IconNames.SidePanel with java.lang.String = js.native
   /* "SidePanelMirrored" */ val SidePanelMirrored: atUifabricIconsLib.libIconNamesMod.IconNames.SidePanelMirrored with java.lang.String = js.native
   /* "SignOut" */ val SignOut: atUifabricIconsLib.libIconNamesMod.IconNames.SignOut with java.lang.String = js.native
+  /* "Signin" */ val Signin: atUifabricIconsLib.libIconNamesMod.IconNames.Signin with java.lang.String = js.native
   /* "SingleBookmark" */ val SingleBookmark: atUifabricIconsLib.libIconNamesMod.IconNames.SingleBookmark with java.lang.String = js.native
   /* "SingleBookmarkSolid" */ val SingleBookmarkSolid: atUifabricIconsLib.libIconNamesMod.IconNames.SingleBookmarkSolid with java.lang.String = js.native
   /* "SingleColumn" */ val SingleColumn: atUifabricIconsLib.libIconNamesMod.IconNames.SingleColumn with java.lang.String = js.native
@@ -1346,6 +1385,7 @@ object IconNames extends js.Object {
   /* "SliderHandleSize" */ val SliderHandleSize: atUifabricIconsLib.libIconNamesMod.IconNames.SliderHandleSize with java.lang.String = js.native
   /* "SliderThumb" */ val SliderThumb: atUifabricIconsLib.libIconNamesMod.IconNames.SliderThumb with java.lang.String = js.native
   /* "Slideshow" */ val Slideshow: atUifabricIconsLib.libIconNamesMod.IconNames.Slideshow with java.lang.String = js.native
+  /* "SmartGlassRemote" */ val SmartGlassRemote: atUifabricIconsLib.libIconNamesMod.IconNames.SmartGlassRemote with java.lang.String = js.native
   /* "SnapToGrid" */ val SnapToGrid: atUifabricIconsLib.libIconNamesMod.IconNames.SnapToGrid with java.lang.String = js.native
   /* "Snooze" */ val Snooze: atUifabricIconsLib.libIconNamesMod.IconNames.Snooze with java.lang.String = js.native
   /* "Snow" */ val Snow: atUifabricIconsLib.libIconNamesMod.IconNames.Snow with java.lang.String = js.native
@@ -1558,6 +1598,7 @@ object IconNames extends js.Object {
   /* "TurnRight" */ val TurnRight: atUifabricIconsLib.libIconNamesMod.IconNames.TurnRight with java.lang.String = js.native
   /* "TwelvePointStar" */ val TwelvePointStar: atUifabricIconsLib.libIconNamesMod.IconNames.TwelvePointStar with java.lang.String = js.native
   /* "TypeScriptLanguage" */ val TypeScriptLanguage: atUifabricIconsLib.libIconNamesMod.IconNames.TypeScriptLanguage with java.lang.String = js.native
+  /* "USB" */ val USB: atUifabricIconsLib.libIconNamesMod.IconNames.USB with java.lang.String = js.native
   /* "Umbrella" */ val Umbrella: atUifabricIconsLib.libIconNamesMod.IconNames.Umbrella with java.lang.String = js.native
   /* "UnSetColor" */ val UnSetColor: atUifabricIconsLib.libIconNamesMod.IconNames.UnSetColor with java.lang.String = js.native
   /* "Underline" */ val Underline: atUifabricIconsLib.libIconNamesMod.IconNames.Underline with java.lang.String = js.native
@@ -1599,6 +1640,7 @@ object IconNames extends js.Object {
   /* "VariableGroup" */ val VariableGroup: atUifabricIconsLib.libIconNamesMod.IconNames.VariableGroup with java.lang.String = js.native
   /* "VennDiagram" */ val VennDiagram: atUifabricIconsLib.libIconNamesMod.IconNames.VennDiagram with java.lang.String = js.native
   /* "VerifiedBrand" */ val VerifiedBrand: atUifabricIconsLib.libIconNamesMod.IconNames.VerifiedBrand with java.lang.String = js.native
+  /* "VerifiedBrandSolid" */ val VerifiedBrandSolid: atUifabricIconsLib.libIconNamesMod.IconNames.VerifiedBrandSolid with java.lang.String = js.native
   /* "VersionControlPush" */ val VersionControlPush: atUifabricIconsLib.libIconNamesMod.IconNames.VersionControlPush with java.lang.String = js.native
   /* "VerticalDistributeCenter" */ val VerticalDistributeCenter: atUifabricIconsLib.libIconNamesMod.IconNames.VerticalDistributeCenter with java.lang.String = js.native
   /* "Video" */ val Video: atUifabricIconsLib.libIconNamesMod.IconNames.Video with java.lang.String = js.native
@@ -1646,8 +1688,10 @@ object IconNames extends js.Object {
   /* "Warning" */ val Warning: atUifabricIconsLib.libIconNamesMod.IconNames.Warning with java.lang.String = js.native
   /* "Warning12" */ val Warning12: atUifabricIconsLib.libIconNamesMod.IconNames.Warning12 with java.lang.String = js.native
   /* "WarningSolid" */ val WarningSolid: atUifabricIconsLib.libIconNamesMod.IconNames.WarningSolid with java.lang.String = js.native
+  /* "WavingHand" */ val WavingHand: atUifabricIconsLib.libIconNamesMod.IconNames.WavingHand with java.lang.String = js.native
   /* "WebComponents" */ val WebComponents: atUifabricIconsLib.libIconNamesMod.IconNames.WebComponents with java.lang.String = js.native
   /* "WebPublish" */ val WebPublish: atUifabricIconsLib.libIconNamesMod.IconNames.WebPublish with java.lang.String = js.native
+  /* "WebTemplate" */ val WebTemplate: atUifabricIconsLib.libIconNamesMod.IconNames.WebTemplate with java.lang.String = js.native
   /* "Website" */ val Website: atUifabricIconsLib.libIconNamesMod.IconNames.Website with java.lang.String = js.native
   /* "Weights" */ val Weights: atUifabricIconsLib.libIconNamesMod.IconNames.Weights with java.lang.String = js.native
   /* "WhiteBoardApp16" */ val WhiteBoardApp16: atUifabricIconsLib.libIconNamesMod.IconNames.WhiteBoardApp16 with java.lang.String = js.native

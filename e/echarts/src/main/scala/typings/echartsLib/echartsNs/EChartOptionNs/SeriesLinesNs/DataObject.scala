@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DataObject extends js.Object {
-  var children: js.Array[DataObject]
   /**
     * An array includes two ore more than two coordinates.
     * Each coordinate could be `[x, y]` in
@@ -50,14 +49,13 @@ trait DataObject extends js.Object {
 object DataObject {
   @scala.inline
   def apply(
-    children: js.Array[DataObject],
     coords: js.Array[_] = null,
     emphasis: echartsLib.Anon_LabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatterAnonColorCurvenessOpacity = null,
     label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
     lineStyle: echartsLib.Anon_ColorCurvenessOpacityShadowBlur = null,
     name: java.lang.String = null
   ): DataObject = {
-    val __obj = js.Dynamic.literal(children = children)
+    val __obj = js.Dynamic.literal()
     if (coords != null) __obj.updateDynamic("coords")(coords)
     if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
     if (label != null) __obj.updateDynamic("label")(label)

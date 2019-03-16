@@ -76,6 +76,16 @@ trait FastifyInstance[HttpServer, HttpRequest, HttpResponse] extends js.Object {
     ]
   ): FastifyInstance[HttpServer, HttpRequest, HttpResponse] = js.native
   /**
+    * Adds a hook that is triggered when Fastify a new plugin is being registered.
+    * This hook can be useful if you are developing a plugin that needs to use the encapsulation functionality of Fastify.
+    * The interface is synchronous, and, as such, the listeners do not get passed a callback.
+    */
+  @JSName("addHook")
+  def addHook_onRegister(
+    name: fastifyLib.fastifyLibStrings.onRegister,
+    hook: js.Function1[/* instance */ this.type, scala.Unit]
+  ): FastifyInstance[HttpServer, HttpRequest, HttpResponse] = js.native
+  /**
     * Add a hook that is triggered when a request is initially received
     */
   @JSName("addHook")
@@ -353,6 +363,11 @@ trait FastifyInstance[HttpServer, HttpRequest, HttpResponse] extends js.Object {
     * Node core.
     */
   def listen(callback: js.Function2[/* err */ stdLib.Error, /* address */ java.lang.String, scala.Unit]): scala.Unit = js.native
+  def listen(options: ListenOptions): js.Promise[java.lang.String] = js.native
+  def listen(
+    options: ListenOptions,
+    callback: js.Function2[/* err */ stdLib.Error, /* address */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
   def listen(port: scala.Double): js.Promise[java.lang.String] = js.native
   def listen(port: scala.Double, address: java.lang.String): js.Promise[java.lang.String] = js.native
   def listen(port: scala.Double, address: java.lang.String, backlog: scala.Double): js.Promise[java.lang.String] = js.native
