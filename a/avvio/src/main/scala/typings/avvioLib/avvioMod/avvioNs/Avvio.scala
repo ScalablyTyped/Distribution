@@ -18,6 +18,8 @@ trait Avvio[I]
   @JSName("on")
   def on_start(event: avvioLib.avvioLibStrings.start, listener: js.Function0[scala.Unit]): this.type = js.native
   def `override`(server: context[I], fn: Plugin[_, I], options: js.Any): context[I] = js.native
+  def prettyPrint(): java.lang.String = js.native
   def start(): this.type = js.native
+  def toJSON(): js.Object = js.native
 }
 

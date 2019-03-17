@@ -1,19 +1,18 @@
 organization := "org.scalablytyped"
 name := "koa-hbs"
-version := "v1.x-dt-20190306Z-83dcfa"
+version := "v1.x-dt-20190306Z-c48a96"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-b7228a",
-  "org.scalablytyped" %%% "async" % "2.4-dt-20190212Z-21c6be",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-c5c4e3",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-fd1784",
   "org.scalablytyped" %%% "cookies" % "0.7-dt-20180214Z-d71e62",
   "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-68b458",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-02a1c5",
-  "org.scalablytyped" %%% "handlebars" % "4.1.0-d994a7",
+  "org.scalablytyped" %%% "handlebars" % "4.1.1-d101f5",
   "org.scalablytyped" %%% "http-assert" % "1.4-dt-20181225Z-07f032",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-96c7ba",
   "org.scalablytyped" %%% "koa" % "2.x-dt-20181231Z-61ce53",

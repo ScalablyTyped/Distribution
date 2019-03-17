@@ -1,17 +1,18 @@
 organization := "org.scalablytyped"
 name := "fastify-plugin"
-version := "1.5.0-df948b"
+version := "1.5.0-401193"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ajv" % "6.10.0-0cf4fd",
-  "org.scalablytyped" %%% "avvio" % "6.1.1-a684b0",
+  "org.scalablytyped" %%% "archy" % "0.0-unknown-dt-20180214Z-8a6f42",
+  "org.scalablytyped" %%% "avvio" % "6.2.0-2bf11c",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-4b79e1",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-2fa947",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-ccd0c9",
-  "org.scalablytyped" %%% "fastify" % "2.1.0-8274f1",
+  "org.scalablytyped" %%% "fastify" % "2.1.0-dabaf9",
   "org.scalablytyped" %%% "fastq" % "1.6.0-8c591b",
   "org.scalablytyped" %%% "find-my-way" % "2.0.1-a2879d",
   "org.scalablytyped" %%% "node" % "11.11-dt-20190313Z-f6d9fe",

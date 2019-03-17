@@ -1,15 +1,14 @@
 organization := "org.scalablytyped"
 name := "vision"
-version := "5.3-dt-20190219Z-ca1ce8"
+version := "5.3-dt-20190219Z-dc417a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "async" % "2.4-dt-20190212Z-21c6be",
   "org.scalablytyped" %%% "boom" % "7.2-dt-20181116Z-0d497d",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-4efb44",
-  "org.scalablytyped" %%% "handlebars" % "4.1.0-d994a7",
+  "org.scalablytyped" %%% "handlebars" % "4.1.1-d101f5",
   "org.scalablytyped" %%% "hapi" % "18.0-dt-20190212Z-bce739",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-b1c771",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190212Z-455d3a",
