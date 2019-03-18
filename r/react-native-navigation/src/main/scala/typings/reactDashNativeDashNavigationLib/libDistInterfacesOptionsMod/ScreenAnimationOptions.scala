@@ -5,19 +5,55 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OptionsAnimationPropertiesId extends OptionsAnimationProperties {
+trait ScreenAnimationOptions extends js.Object {
   /**
-    * ID of the Top Bar we want to animate
+    * Animate the element over opacity
     */
-  var id: js.UndefOr[java.lang.String] = js.undefined
+  var alpha: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
+  /**
+    * Enable or disable the animation
+    * @default true
+    */
+  var enabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Animate the element over rotation
+    */
+  var rotation: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
+  /**
+    * Animate the element over rotationX
+    */
+  var rotationX: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
+  /**
+    * Animate the element over rotationY
+    */
+  var rotationY: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
+  /**
+    * Animate the element over scaleX
+    */
+  var scaleX: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
+  /**
+    * Animate the element over scaleY
+    */
+  var scaleY: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
+  /**
+    * Wait for the root view to render before start animation
+    */
+  var waitForRender: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Animate the element over translateX
+    */
+  var x: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
+  /**
+    * Animate the element over translateY
+    */
+  var y: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
 }
 
-object OptionsAnimationPropertiesId {
+object ScreenAnimationOptions {
   @scala.inline
   def apply(
     alpha: OptionsAnimationPropertyConfig = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
-    id: java.lang.String = null,
     rotation: OptionsAnimationPropertyConfig = null,
     rotationX: OptionsAnimationPropertyConfig = null,
     rotationY: OptionsAnimationPropertyConfig = null,
@@ -26,11 +62,10 @@ object OptionsAnimationPropertiesId {
     waitForRender: js.UndefOr[scala.Boolean] = js.undefined,
     x: OptionsAnimationPropertyConfig = null,
     y: OptionsAnimationPropertyConfig = null
-  ): OptionsAnimationPropertiesId = {
+  ): ScreenAnimationOptions = {
     val __obj = js.Dynamic.literal()
     if (alpha != null) __obj.updateDynamic("alpha")(alpha)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
-    if (id != null) __obj.updateDynamic("id")(id)
     if (rotation != null) __obj.updateDynamic("rotation")(rotation)
     if (rotationX != null) __obj.updateDynamic("rotationX")(rotationX)
     if (rotationY != null) __obj.updateDynamic("rotationY")(rotationY)
@@ -39,7 +74,7 @@ object OptionsAnimationPropertiesId {
     if (!js.isUndefined(waitForRender)) __obj.updateDynamic("waitForRender")(waitForRender)
     if (x != null) __obj.updateDynamic("x")(x)
     if (y != null) __obj.updateDynamic("y")(y)
-    __obj.asInstanceOf[OptionsAnimationPropertiesId]
+    __obj.asInstanceOf[ScreenAnimationOptions]
   }
 }
 

@@ -32,7 +32,7 @@ trait Options extends js.Object {
     }
     ```
     */
-  var animations: js.UndefOr[OptionsAnimations] = js.undefined
+  var animations: js.UndefOr[AnimationOptions] = js.undefined
   /**
     * Background image for the screen
     * #### (iOS specific)
@@ -128,7 +128,7 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
-    animations: OptionsAnimations = null,
+    animations: AnimationOptions = null,
     backgroundImage: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageRequireSource] = js.undefined,
     blurOnUnmount: js.UndefOr[scala.Boolean] = js.undefined,
     bottomTab: OptionsBottomTab = null,

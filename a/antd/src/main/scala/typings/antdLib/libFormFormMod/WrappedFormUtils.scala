@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait WrappedFormUtils extends js.Object {
+trait WrappedFormUtils[V] extends js.Object {
   def getFieldDecorator[T /* <: js.Object */](id: java.lang.String): js.Function1[
     /* node */ reactLib.reactMod.ReactNs.ReactNode, 
     reactLib.reactMod.ReactNs.ReactNode
@@ -37,22 +37,30 @@ trait WrappedFormUtils extends js.Object {
   /** 设置一组输入控件的值 */
   def setFieldsValue(obj: js.Object): scala.Unit = js.native
   def validateFields(): scala.Unit = js.native
-  def validateFields(callback: ValidateCallback): scala.Unit = js.native
+  def validateFields(callback: ValidateCallback[V]): scala.Unit = js.native
   def validateFields(fieldNames: js.Array[java.lang.String]): scala.Unit = js.native
-  def validateFields(fieldNames: js.Array[java.lang.String], callback: ValidateCallback): scala.Unit = js.native
+  def validateFields(fieldNames: js.Array[java.lang.String], callback: ValidateCallback[V]): scala.Unit = js.native
   def validateFields(fieldNames: js.Array[java.lang.String], options: ValidateFieldsOptions): scala.Unit = js.native
   /** 校验并获取一组输入域的值与 Error */
-  def validateFields(fieldNames: js.Array[java.lang.String], options: ValidateFieldsOptions, callback: ValidateCallback): scala.Unit = js.native
+  def validateFields(
+    fieldNames: js.Array[java.lang.String],
+    options: ValidateFieldsOptions,
+    callback: ValidateCallback[V]
+  ): scala.Unit = js.native
   def validateFields(options: ValidateFieldsOptions): scala.Unit = js.native
-  def validateFields(options: ValidateFieldsOptions, callback: ValidateCallback): scala.Unit = js.native
+  def validateFields(options: ValidateFieldsOptions, callback: ValidateCallback[V]): scala.Unit = js.native
   def validateFieldsAndScroll(): scala.Unit = js.native
-  def validateFieldsAndScroll(callback: ValidateCallback): scala.Unit = js.native
+  def validateFieldsAndScroll(callback: ValidateCallback[V]): scala.Unit = js.native
   def validateFieldsAndScroll(fieldNames: js.Array[java.lang.String]): scala.Unit = js.native
-  def validateFieldsAndScroll(fieldNames: js.Array[java.lang.String], callback: ValidateCallback): scala.Unit = js.native
+  def validateFieldsAndScroll(fieldNames: js.Array[java.lang.String], callback: ValidateCallback[V]): scala.Unit = js.native
   def validateFieldsAndScroll(fieldNames: js.Array[java.lang.String], options: ValidateFieldsOptions): scala.Unit = js.native
   /** 与 `validateFields` 相似，但校验完后，如果校验不通过的菜单域不在可见范围内，则自动滚动进可见范围 */
-  def validateFieldsAndScroll(fieldNames: js.Array[java.lang.String], options: ValidateFieldsOptions, callback: ValidateCallback): scala.Unit = js.native
+  def validateFieldsAndScroll(
+    fieldNames: js.Array[java.lang.String],
+    options: ValidateFieldsOptions,
+    callback: ValidateCallback[V]
+  ): scala.Unit = js.native
   def validateFieldsAndScroll(options: ValidateFieldsOptions): scala.Unit = js.native
-  def validateFieldsAndScroll(options: ValidateFieldsOptions, callback: ValidateCallback): scala.Unit = js.native
+  def validateFieldsAndScroll(options: ValidateFieldsOptions, callback: ValidateCallback[V]): scala.Unit = js.native
 }
 

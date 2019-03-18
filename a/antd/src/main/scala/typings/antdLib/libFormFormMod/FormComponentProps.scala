@@ -5,16 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FormComponentProps extends js.Object {
-  var form: WrappedFormUtils
+trait FormComponentProps[V] extends js.Object {
+  var form: WrappedFormUtils[V]
 }
 
 object FormComponentProps {
   @scala.inline
-  def apply(form: WrappedFormUtils): FormComponentProps = {
+  def apply[V](form: WrappedFormUtils[V]): FormComponentProps[V] = {
     val __obj = js.Dynamic.literal(form = form)
   
-    __obj.asInstanceOf[FormComponentProps]
+    __obj.asInstanceOf[FormComponentProps[V]]
   }
 }
 

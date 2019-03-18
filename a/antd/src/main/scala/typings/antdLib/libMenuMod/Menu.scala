@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Menu
   extends reactLib.reactMod.Component[MenuProps, MenuState, js.Any] {
+  var contextSiderCollapsed: scala.Boolean = js.native
   var inlineOpenKeys: js.Array[java.lang.String] = js.native
   var switchingModeFromInline: scala.Boolean = js.native
   @JSName("componentDidUpdate")

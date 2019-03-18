@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Fullscreen extends js.Object {
   var fullscreen: scala.Boolean = js.native
-  var mode: antdLib.libCalendarMod.CalendarMode = js.native
   @JSName("onChange")
   var onChange_Original: js.Function0[scala.Null] = js.native
   @JSName("onPanelChange")

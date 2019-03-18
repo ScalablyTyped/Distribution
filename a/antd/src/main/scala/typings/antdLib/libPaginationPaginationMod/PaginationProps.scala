@@ -15,7 +15,7 @@ trait PaginationProps extends js.Object {
     js.Function3[
       /* page */ scala.Double, 
       /* type */ antdLib.antdLibStrings.page | antdLib.antdLibStrings.prev | antdLib.antdLibStrings.next | antdLib.antdLibStrings.`jump-prev` | antdLib.antdLibStrings.`jump-next`, 
-      /* originalElement */ stdLib.HTMLElement, 
+      /* originalElement */ reactLib.reactMod.ReactNs.ReactElement[stdLib.HTMLElement], 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
@@ -52,7 +52,7 @@ object PaginationProps {
     defaultCurrent: scala.Int | scala.Double = null,
     defaultPageSize: scala.Int | scala.Double = null,
     hideOnSinglePage: js.UndefOr[scala.Boolean] = js.undefined,
-    itemRender: (/* page */ scala.Double, /* type */ antdLib.antdLibStrings.page | antdLib.antdLibStrings.prev | antdLib.antdLibStrings.next | antdLib.antdLibStrings.`jump-prev` | antdLib.antdLibStrings.`jump-next`, /* originalElement */ stdLib.HTMLElement) => reactLib.reactMod.ReactNs.ReactNode = null,
+    itemRender: (/* page */ scala.Double, /* type */ antdLib.antdLibStrings.page | antdLib.antdLibStrings.prev | antdLib.antdLibStrings.next | antdLib.antdLibStrings.`jump-prev` | antdLib.antdLibStrings.`jump-next`, /* originalElement */ reactLib.reactMod.ReactNs.ReactElement[stdLib.HTMLElement]) => reactLib.reactMod.ReactNs.ReactNode = null,
     locale: js.Object = null,
     onChange: (/* page */ scala.Double, /* pageSize */ js.UndefOr[scala.Double]) => scala.Unit = null,
     onShowSizeChange: (/* current */ scala.Double, /* size */ scala.Double) => scala.Unit = null,

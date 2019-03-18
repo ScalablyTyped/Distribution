@@ -112,6 +112,9 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait light extends js.Object
   
   @js.native
+  sealed trait ltr extends js.Object
+  
+  @js.native
   sealed trait onSwitchToTab extends js.Object
   
   @js.native
@@ -151,6 +154,9 @@ object reactDashNativeDashNavigationLibStrings {
   
   @js.native
   sealed trait right extends js.Object
+  
+  @js.native
+  sealed trait rtl extends js.Object
   
   @js.native
   sealed trait save
@@ -256,6 +262,8 @@ object reactDashNativeDashNavigationLibStrings {
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
   def onSwitchToTab: onSwitchToTab = "onSwitchToTab".asInstanceOf[onSwitchToTab]
   @scala.inline
   def organize: organize = "organize".asInstanceOf[organize]
@@ -277,6 +285,8 @@ object reactDashNativeDashNavigationLibStrings {
   def rewind: rewind = "rewind".asInstanceOf[rewind]
   @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
   def save: save = "save".asInstanceOf[save]
   @scala.inline

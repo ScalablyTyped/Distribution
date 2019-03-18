@@ -72,13 +72,19 @@
 [info ] ExpandKeyOfTypeParams.scala:40 Expanding 8 members for TsIdentSimple(addEventListener) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(XMLHttpRequest))] 
 [info ] ExpandKeyOfTypeParams.scala:40 Expanding 7 members for TsIdentSimple(addEventListener) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(XMLHttpRequestUpload))] 
 [error] PhaseRes.scala:79 StackOverflowError [id => tabris, phase => typescript] java.lang.StackOverflowError
-	at scala.collection.immutable.HashMap$HashTrieMap.get0(HashMap.scala:330)
-	at scala.collection.immutable.HashMap$HashTrieMap.get0(HashMap.scala:330)
-	at scala.collection.immutable.HashMap.get(HashMap.scala:56)
-	at com.olvind.tso.ts.TsTreeScope$.search(TsTreeScope.scala:365)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.local$1(TsTreeScope.scala:256)
-	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupImpl(TsTreeScope.scala:327)
-	at com.olvind.tso.ts.TsTreeScope.lookupInternal(TsTreeScope.scala:88)
+	at scala.collection.GenSeqLike.equals(GenSeqLike.scala:481)
+	at scala.collection.GenSeqLike.equals$(GenSeqLike.scala:480)
+	at scala.collection.AbstractSeq.equals(Seq.scala:45)
+	at scala.runtime.BoxesRunTime.equals2(BoxesRunTime.java:137)
+	at scala.runtime.BoxesRunTime.equals(BoxesRunTime.java:123)
+	at scala.Tuple2.equals(Tuple2.scala:24)
+	at scala.runtime.BoxesRunTime.equals2(BoxesRunTime.java:137)
+	at scala.runtime.BoxesRunTime.equals(BoxesRunTime.java:123)
+	at scala.collection.LinearSeqOptimized.contains(LinearSeqOptimized.scala:105)
+	at scala.collection.LinearSeqOptimized.contains$(LinearSeqOptimized.scala:102)
+	at scala.collection.immutable.List.contains(List.scala:89)
+	at com.olvind.tso.ts.TsTreeScope$LoopDetector.including(TsTreeScope.scala:130)
+	at com.olvind.tso.ts.TsTreeScope.lookupInternal(TsTreeScope.scala:82)
 	at com.olvind.tso.ts.TsTreeScope.lookupInternal$(TsTreeScope.scala:79)
 	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupInternal(TsTreeScope.scala:207)
 	at com.olvind.tso.ts.TsTreeScope$Scoped.lookupImpl(TsTreeScope.scala:344)
@@ -1090,12 +1096,6 @@
 	at com.olvind.tso.ts.transforms.ExpandCallables$$anonfun$callableTypes$2.applyOrElse(ExpandCallables.scala:99)
 	at com.olvind.tso.ts.transforms.ExpandCallables$$anonfun$callableTypes$2.applyOrElse(ExpandCallables.scala:90)
 	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
-	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
-	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
-	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:90)
-	at com.olvind.tso.ts.transforms.ExpandCallables$.$anonfun$callableTypes$1(ExpandCallables.scala:81)
-	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:237)
-	at scala.collection.immutable.List.foreach(List.scala:392)
 
 [error] PhaseRunner.scala:86 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => typescript] 
 [error] PhaseRunner.scala:86 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => scala.js] 

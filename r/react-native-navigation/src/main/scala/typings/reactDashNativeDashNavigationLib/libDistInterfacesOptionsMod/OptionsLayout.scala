@@ -16,6 +16,13 @@ trait OptionsLayout extends js.Object {
     */
   var componentBackgroundColor: js.UndefOr[Color] = js.undefined
   /**
+    * Set language direction.
+    * only works with DefaultOptions
+    */
+  var direction: js.UndefOr[
+    reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.rtl | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.ltr
+  ] = js.undefined
+  /**
     * Set the allowed orientations
     */
   var orientation: js.UndefOr[js.Array[LayoutOrientation]] = js.undefined
@@ -31,12 +38,14 @@ object OptionsLayout {
   def apply(
     backgroundColor: Color = null,
     componentBackgroundColor: Color = null,
+    direction: reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.rtl | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.ltr = null,
     orientation: js.Array[LayoutOrientation] = null,
     topMargin: scala.Int | scala.Double = null
   ): OptionsLayout = {
     val __obj = js.Dynamic.literal()
     if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
     if (componentBackgroundColor != null) __obj.updateDynamic("componentBackgroundColor")(componentBackgroundColor)
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)
     if (topMargin != null) __obj.updateDynamic("topMargin")(topMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsLayout]

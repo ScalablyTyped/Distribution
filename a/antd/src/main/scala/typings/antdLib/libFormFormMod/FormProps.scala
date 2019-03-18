@@ -11,7 +11,7 @@ trait FormProps
     * @since 3.15.0
     */
   var colon: js.UndefOr[scala.Boolean] = js.undefined
-  var form: js.UndefOr[WrappedFormUtils] = js.undefined
+  var form: js.UndefOr[WrappedFormUtils[_]] = js.undefined
   var hideRequiredMark: js.UndefOr[scala.Boolean] = js.undefined
   var labelAlign: js.UndefOr[antdLib.antdLibStrings.left | antdLib.antdLibStrings.right] = js.undefined
   var labelCol: js.UndefOr[antdLib.libGridColMod.ColProps] = js.undefined
@@ -31,7 +31,7 @@ object FormProps {
     FormHTMLAttributes: reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement] = null,
     className: java.lang.String = null,
     colon: js.UndefOr[scala.Boolean] = js.undefined,
-    form: WrappedFormUtils = null,
+    form: WrappedFormUtils[_] = null,
     hideRequiredMark: js.UndefOr[scala.Boolean] = js.undefined,
     labelAlign: antdLib.antdLibStrings.left | antdLib.antdLibStrings.right = null,
     labelCol: antdLib.libGridColMod.ColProps = null,

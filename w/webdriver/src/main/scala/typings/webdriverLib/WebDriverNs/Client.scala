@@ -160,7 +160,7 @@ trait Client extends js.Object {
   def launchApp(): scala.Unit = js.native
   def launchApp(id: java.lang.String): scala.Unit = js.native
   def lock(seconds: scala.Double): scala.Unit = js.native
-  def longPressKeyCode(keycode: java.lang.String, metastate: java.lang.String): scala.Unit = js.native
+  def longPressKeyCode(keycode: scala.Double, metastate: scala.Double): scala.Unit = js.native
   def maximizeWindow(): js.Object = js.native
   @JSName("maximizeWindow")
   def maximizeWindow_Unit(): scala.Unit = js.native
@@ -183,7 +183,7 @@ trait Client extends js.Object {
   def positionClick(): scala.Unit = js.native
   def positionClick(button: scala.Double): scala.Unit = js.native
   def positionDoubleClick(): scala.Unit = js.native
-  def pressKeyCode(keycode: java.lang.String, metastate: java.lang.String): scala.Unit = js.native
+  def pressKeyCode(keycode: scala.Double, metastate: scala.Double): scala.Unit = js.native
   def pullFile(path: java.lang.String): scala.Unit = js.native
   def pullFolder(path: java.lang.String): scala.Unit = js.native
   def pushFile(path: java.lang.String, data: java.lang.String): scala.Unit = js.native
