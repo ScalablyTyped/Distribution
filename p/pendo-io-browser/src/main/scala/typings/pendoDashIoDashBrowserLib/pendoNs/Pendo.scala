@@ -50,7 +50,7 @@ trait Pendo extends js.Object {
   def toggleLauncher(): scala.Unit = js.native
   def track(trackType: java.lang.String): scala.Unit = js.native
   def track(trackType: java.lang.String, metadata: Metadata): scala.Unit = js.native
-  def updateOptions(visitorMetadata: Metadata): scala.Unit = js.native
+  def updateOptions(options: Identity): scala.Unit = js.native
   // Other
   def validateInstall(): scala.Unit = js.native
 }

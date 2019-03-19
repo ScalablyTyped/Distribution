@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EntityCollection extends js.Object {
-  val collectionChanged: Event
+  val collectionChanged: Event[js.Array[_]]
   val id: java.lang.String
   val owner: DataSource | CompositeEntityCollection
   var show: scala.Boolean
@@ -27,7 +27,7 @@ object EntityCollection {
   @scala.inline
   def apply(
     add: Entity => Entity,
-    collectionChanged: Event,
+    collectionChanged: Event[js.Array[_]],
     computeAvailability: () => TimeInterval,
     contains: Entity => scala.Boolean,
     getById: java.lang.String => Entity,

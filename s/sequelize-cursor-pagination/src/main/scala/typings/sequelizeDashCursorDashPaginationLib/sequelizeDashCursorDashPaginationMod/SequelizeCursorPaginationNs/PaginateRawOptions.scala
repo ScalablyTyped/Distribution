@@ -18,7 +18,7 @@ object PaginateRawOptions {
     before: java.lang.String = null,
     desc: js.UndefOr[scala.Boolean] = js.undefined,
     include: js.Array[
-      (sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _]) | sequelizeLib.sequelizeMod.sequelizeNs.IncludeOptions
+      (sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _, _]) | sequelizeLib.sequelizeMod.sequelizeNs.IncludeOptions
     ] = null,
     limit: scala.Int | scala.Double = null,
     paginationField: java.lang.String = null,

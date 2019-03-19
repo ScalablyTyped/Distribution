@@ -12,7 +12,7 @@ class EntityCollection protected ()
   def this(owner: cesiumLib.cesiumMod.CesiumNs.CompositeEntityCollection) = this()
   def this(owner: cesiumLib.cesiumMod.CesiumNs.DataSource) = this()
   /* CompleteClass */
-  override val collectionChanged: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override val collectionChanged: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
   override val id: java.lang.String = js.native
   /* CompleteClass */

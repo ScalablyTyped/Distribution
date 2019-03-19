@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CompositePositionProperty extends js.Object {
-  var definitionChanged: Event = js.native
+  var definitionChanged: Event[js.Array[_]] = js.native
   var intervals: TimeIntervalCollection = js.native
   var isConstant: scala.Boolean = js.native
   var referenceFrame: ReferenceFrame = js.native

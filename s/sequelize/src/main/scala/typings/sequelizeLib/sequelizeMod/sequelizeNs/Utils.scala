@@ -112,8 +112,8 @@ trait Utils extends js.Object {
   def formatReferences(obj: js.Object): js.Object = js.native
   def inherit(subClass: js.Object, superClass: js.Object): js.Object = js.native
   def lowercaseFirst(str: java.lang.String): java.lang.String = js.native
-  def mapOptionFieldNames[T /* <: js.Object */](options: T, Model: Model[_, _]): T = js.native
-  def mapValueFieldNames(dataValues: js.Object, fields: js.Array[java.lang.String], Model: Model[_, _]): js.Object = js.native
+  def mapOptionFieldNames[T /* <: js.Object */](options: T, Model: Model[_, _, _]): T = js.native
+  def mapValueFieldNames(dataValues: js.Object, fields: js.Array[java.lang.String], Model: Model[_, _, _]): js.Object = js.native
   /**
     * Same concept as _.merge, but don't overwrite properties that have already been assigned
     */

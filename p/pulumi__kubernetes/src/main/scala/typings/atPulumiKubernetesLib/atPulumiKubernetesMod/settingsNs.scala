@@ -11,12 +11,9 @@ object settingsNs extends js.Object {
   @JSName("v1alpha1")
   @js.native
   object v1alpha1Ns extends js.Object {
-    /**
-      * PodPreset is a policy resource that defines additional runtime requirements for a Pod.
-      */
     @js.native
     class PodPreset protected ()
-      extends atPulumiKubernetesLib.providerMod.settingsNs.v1alpha1Ns.PodPreset {
+      extends atPulumiKubernetesLib.settingsMod.v1alpha1Ns.PodPreset {
       /**
         * Create a settings.v1alpha1.PodPreset resource with the given unique name, arguments, and options.
         *
@@ -29,12 +26,9 @@ object settingsNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.settingsNs.v1alpha1Ns.PodPreset, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PodPresetList is a list of PodPreset objects.
-      */
     @js.native
     class PodPresetList protected ()
-      extends atPulumiKubernetesLib.providerMod.settingsNs.v1alpha1Ns.PodPresetList {
+      extends atPulumiKubernetesLib.settingsMod.v1alpha1Ns.PodPresetList {
       /**
         * Create a settings.v1alpha1.PodPresetList resource with the given unique name, arguments, and options.
         *
@@ -62,12 +56,12 @@ object settingsNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.settingsNs.v1alpha1Ns.PodPreset = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.settingsV1alpha1PodPresetMod.PodPreset = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.settingsNs.v1alpha1Ns.PodPreset = js.native
+      ): atPulumiKubernetesLib.settingsV1alpha1PodPresetMod.PodPreset = js.native
     }
     
     /* static members */
@@ -85,12 +79,12 @@ object settingsNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.settingsNs.v1alpha1Ns.PodPresetList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.settingsV1alpha1PodPresetListMod.PodPresetList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.settingsNs.v1alpha1Ns.PodPresetList = js.native
+      ): atPulumiKubernetesLib.settingsV1alpha1PodPresetListMod.PodPresetList = js.native
     }
     
   }

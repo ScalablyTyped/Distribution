@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ITransport extends js.Object {
+  var info: ITransportInfo = js.native
   def close(errorCode: scala.Double): scala.Unit = js.native
   def close(errorCode: scala.Double, reason: java.lang.String): scala.Unit = js.native
   def onclose(details: ICloseEventDetails): scala.Unit = js.native

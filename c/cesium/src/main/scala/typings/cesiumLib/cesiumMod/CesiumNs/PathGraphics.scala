@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PathGraphics extends js.Object {
-  val definitionChanged: Event = js.native
+  val definitionChanged: Event[js.Array[_]] = js.native
   var distanceDisplayCondition: Property = js.native
   var leadTime: Property | scala.Double = js.native
   var material: MaterialProperty = js.native

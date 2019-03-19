@@ -100,6 +100,18 @@ object pkiNs extends js.Object {
     var `type`: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  trait EncryptionOptions extends js.Object {
+    var algorithm: js.UndefOr[
+        nodeDashForgeLib.nodeDashForgeLibStrings.aes128 | nodeDashForgeLib.nodeDashForgeLibStrings.aes192 | nodeDashForgeLib.nodeDashForgeLibStrings.aes256 | nodeDashForgeLib.nodeDashForgeLibStrings.`3des`
+      ] = js.undefined
+    var count: js.UndefOr[scala.Double] = js.undefined
+    var legacy: js.UndefOr[scala.Boolean] = js.undefined
+    var prfAlgorithm: js.UndefOr[
+        nodeDashForgeLib.nodeDashForgeLibStrings.sha1 | nodeDashForgeLib.nodeDashForgeLibStrings.sha224 | nodeDashForgeLib.nodeDashForgeLibStrings.sha256 | nodeDashForgeLib.nodeDashForgeLibStrings.sha384 | nodeDashForgeLib.nodeDashForgeLibStrings.sha512
+      ] = js.undefined
+    var saltSize: js.UndefOr[scala.Double] = js.undefined
+  }
+  
   trait KeyPair extends js.Object {
     var privateKey: PrivateKey
     var publicKey: PublicKey
@@ -125,19 +137,37 @@ object pkiNs extends js.Object {
   def createCaStore(certs: js.Array[Certificate | PEM]): CAStore = js.native
   def createCertificate(): Certificate = js.native
   def createCertificationRequest(): Certificate = js.native
+  def decryptPrivateKeyInfo(obj: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1, password: java.lang.String): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
   def decryptRsaPrivateKey(pem: PEM): PrivateKey = js.native
   def decryptRsaPrivateKey(pem: PEM, passphrase: java.lang.String): PrivateKey = js.native
+  def encryptPrivateKeyInfo(obj: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1, password: java.lang.String): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
+  def encryptPrivateKeyInfo(
+    obj: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1,
+    password: java.lang.String,
+    options: EncryptionOptions
+  ): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
+  def encryptRsaPrivateKey(privateKey: PrivateKey, password: java.lang.String): PEM = js.native
+  def encryptRsaPrivateKey(privateKey: PrivateKey, password: java.lang.String, options: EncryptionOptions): PEM = js.native
+  def encryptedPrivateKeyFromPem(pem: PEM): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
+  def encryptedPrivateKeyToPem(obj: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1): PEM = js.native
   def pemToDer(pem: PEM): nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteStringBuffer = js.native
+  def privateKeyFromAsn1(privateKey: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1): PrivateKey = js.native
   def privateKeyFromPem(pem: PEM): PrivateKey = js.native
-  def privateKeyInfoToPem(key: nodeDashForgeLib.nodeDashForgeMod.Bytes): PEM = js.native
-  def privateKeyInfoToPem(key: nodeDashForgeLib.nodeDashForgeMod.Bytes, maxline: scala.Double): PEM = js.native
+  def privateKeyInfoToPem(key: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1): PEM = js.native
+  def privateKeyInfoToPem(key: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1, maxline: scala.Double): PEM = js.native
+  def privateKeyToAsn1(privateKey: PrivateKey): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
   def privateKeyToPem(key: PrivateKey): PEM = js.native
   def privateKeyToPem(key: PrivateKey, maxline: scala.Double): PEM = js.native
+  def publicKeyFromAsn1(publicKey: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1): PublicKey = js.native
   def publicKeyFromPem(pem: PEM): PublicKey = js.native
-  def publicKeyToAsn1(publicKey: PublicKey): js.Any = js.native
+  def publicKeyToAsn1(publicKey: PublicKey): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
   def publicKeyToPem(key: PublicKey): PEM = js.native
   def publicKeyToPem(key: PublicKey, maxline: scala.Double): PEM = js.native
   def publicKeyToRSAPublicKey(publicKey: PublicKey): js.Any = js.native
+  def setRsaPublicKey(
+    n: nodeDashForgeLib.nodeDashForgeMod.jsbnNs.BigInteger,
+    e: nodeDashForgeLib.nodeDashForgeMod.jsbnNs.BigInteger
+  ): PublicKey = js.native
   def verifyCertificateChain(caStore: CAStore, chain: js.Array[Certificate]): scala.Boolean = js.native
   def verifyCertificateChain(
     caStore: CAStore,
@@ -149,6 +179,7 @@ object pkiNs extends js.Object {
       scala.Boolean
     ]
   ): scala.Boolean = js.native
+  def wrapRsaPrivateKey(privateKey: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
   @JSName("ed25519")
   @js.native
   object ed25519Ns extends js.Object {

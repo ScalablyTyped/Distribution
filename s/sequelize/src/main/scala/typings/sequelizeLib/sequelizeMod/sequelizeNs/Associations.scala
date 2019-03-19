@@ -118,8 +118,8 @@ trait Associations extends js.Object {
     * @param options Options for the association
     * @return return type of association
     */
-  def belongsTo(target: Model[_, _]): IncludeAssociation = js.native
-  def belongsTo(target: Model[_, _], options: AssociationOptionsBelongsTo): IncludeAssociation = js.native
+  def belongsTo(target: Model[_, _, _]): IncludeAssociation = js.native
+  def belongsTo(target: Model[_, _, _], options: AssociationOptionsBelongsTo): IncludeAssociation = js.native
   /**
     * Create an N:M association with a join table
     *
@@ -169,7 +169,7 @@ trait Associations extends js.Object {
     * @return return type of association
     *
     */
-  def belongsToMany(target: Model[_, _], options: AssociationOptionsBelongsToMany): IncludeAssociation = js.native
+  def belongsToMany(target: Model[_, _, _], options: AssociationOptionsBelongsToMany): IncludeAssociation = js.native
   /**
     * Create an association that is either 1:m or n:m.
     *
@@ -223,8 +223,8 @@ trait Associations extends js.Object {
     * @param options Options for the association
     * @return return type of association
     */
-  def hasMany(target: Model[_, _]): IncludeAssociation = js.native
-  def hasMany(target: Model[_, _], options: AssociationOptionsHasMany): IncludeAssociation = js.native
+  def hasMany(target: Model[_, _, _]): IncludeAssociation = js.native
+  def hasMany(target: Model[_, _, _], options: AssociationOptionsHasMany): IncludeAssociation = js.native
   /**
     * Creates an association between this (the source) and the provided target. The foreign key is added
     * on the target.
@@ -235,7 +235,7 @@ trait Associations extends js.Object {
     * @param options Options for the association
     * @return return type of association
     */
-  def hasOne(target: Model[_, _]): IncludeAssociation = js.native
-  def hasOne(target: Model[_, _], options: AssociationOptionsHasOne): IncludeAssociation = js.native
+  def hasOne(target: Model[_, _, _]): IncludeAssociation = js.native
+  def hasOne(target: Model[_, _, _], options: AssociationOptionsHasOne): IncludeAssociation = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-cancelable"
-version := "1.0-dt-20181215Z-22e2bc"
+version := "1.1.0-b27b20"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

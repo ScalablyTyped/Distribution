@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DataSourceCollection extends js.Object {
-  var dataSourceAdded: Event = js.native
-  var dataSourceRemoved: Event = js.native
+  var dataSourceAdded: Event[js.Array[_]] = js.native
+  var dataSourceRemoved: Event[js.Array[_]] = js.native
   var length: scala.Double = js.native
   def add(dataSource: DataSource): js.Promise[DataSource] = js.native
   def add(dataSource: js.Promise[DataSource]): js.Promise[DataSource] = js.native

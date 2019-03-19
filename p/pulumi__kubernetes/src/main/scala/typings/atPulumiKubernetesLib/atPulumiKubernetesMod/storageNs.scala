@@ -11,16 +11,9 @@ object storageNs extends js.Object {
   @JSName("v1")
   @js.native
   object v1Ns extends js.Object {
-    /**
-      * StorageClass describes the parameters for a class of storage for which PersistentVolumes can
-      * be dynamically provisioned.
-      *
-      * StorageClasses are non-namespaced; the name of the storage class according to etcd is in
-      * ObjectMeta.Name.
-      */
     @js.native
     class StorageClass protected ()
-      extends atPulumiKubernetesLib.providerMod.storageNs.v1Ns.StorageClass {
+      extends atPulumiKubernetesLib.storageMod.v1Ns.StorageClass {
       /**
         * Create a storage.v1.StorageClass resource with the given unique name, arguments, and options.
         *
@@ -33,12 +26,9 @@ object storageNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1Ns.StorageClass, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * StorageClassList is a collection of storage classes.
-      */
     @js.native
     class StorageClassList protected ()
-      extends atPulumiKubernetesLib.providerMod.storageNs.v1Ns.StorageClassList {
+      extends atPulumiKubernetesLib.storageMod.v1Ns.StorageClassList {
       /**
         * Create a storage.v1.StorageClassList resource with the given unique name, arguments, and options.
         *
@@ -51,15 +41,9 @@ object storageNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1Ns.StorageClassList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * VolumeAttachment captures the intent to attach or detach the specified volume to/from the
-      * specified node.
-      *
-      * VolumeAttachment objects are non-namespaced.
-      */
     @js.native
     class VolumeAttachment protected ()
-      extends atPulumiKubernetesLib.providerMod.storageNs.v1Ns.VolumeAttachment {
+      extends atPulumiKubernetesLib.storageMod.v1Ns.VolumeAttachment {
       /**
         * Create a storage.v1.VolumeAttachment resource with the given unique name, arguments, and options.
         *
@@ -72,12 +56,9 @@ object storageNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1Ns.VolumeAttachment, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * VolumeAttachmentList is a collection of VolumeAttachment objects.
-      */
     @js.native
     class VolumeAttachmentList protected ()
-      extends atPulumiKubernetesLib.providerMod.storageNs.v1Ns.VolumeAttachmentList {
+      extends atPulumiKubernetesLib.storageMod.v1Ns.VolumeAttachmentList {
       /**
         * Create a storage.v1.VolumeAttachmentList resource with the given unique name, arguments, and options.
         *
@@ -105,12 +86,12 @@ object storageNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.StorageClass = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1StorageClassMod.StorageClass = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.StorageClass = js.native
+      ): atPulumiKubernetesLib.storageV1StorageClassMod.StorageClass = js.native
     }
     
     /* static members */
@@ -128,12 +109,12 @@ object storageNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.StorageClassList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1StorageClassListMod.StorageClassList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.StorageClassList = js.native
+      ): atPulumiKubernetesLib.storageV1StorageClassListMod.StorageClassList = js.native
     }
     
     /* static members */
@@ -151,12 +132,12 @@ object storageNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.VolumeAttachment = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1VolumeAttachmentMod.VolumeAttachment = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.VolumeAttachment = js.native
+      ): atPulumiKubernetesLib.storageV1VolumeAttachmentMod.VolumeAttachment = js.native
     }
     
     /* static members */
@@ -174,12 +155,12 @@ object storageNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.VolumeAttachmentList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1VolumeAttachmentListMod.VolumeAttachmentList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.VolumeAttachmentList = js.native
+      ): atPulumiKubernetesLib.storageV1VolumeAttachmentListMod.VolumeAttachmentList = js.native
     }
     
   }
@@ -187,15 +168,9 @@ object storageNs extends js.Object {
   @JSName("v1alpha1")
   @js.native
   object v1alpha1Ns extends js.Object {
-    /**
-      * VolumeAttachment captures the intent to attach or detach the specified volume to/from the
-      * specified node.
-      *
-      * VolumeAttachment objects are non-namespaced.
-      */
     @js.native
     class VolumeAttachment protected ()
-      extends atPulumiKubernetesLib.providerMod.storageNs.v1alpha1Ns.VolumeAttachment {
+      extends atPulumiKubernetesLib.storageMod.v1alpha1Ns.VolumeAttachment {
       /**
         * Create a storage.v1alpha1.VolumeAttachment resource with the given unique name, arguments, and options.
         *
@@ -208,12 +183,9 @@ object storageNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1alpha1Ns.VolumeAttachment, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * VolumeAttachmentList is a collection of VolumeAttachment objects.
-      */
     @js.native
     class VolumeAttachmentList protected ()
-      extends atPulumiKubernetesLib.providerMod.storageNs.v1alpha1Ns.VolumeAttachmentList {
+      extends atPulumiKubernetesLib.storageMod.v1alpha1Ns.VolumeAttachmentList {
       /**
         * Create a storage.v1alpha1.VolumeAttachmentList resource with the given unique name, arguments, and options.
         *
@@ -241,12 +213,12 @@ object storageNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1alpha1Ns.VolumeAttachment = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1alpha1VolumeAttachmentMod.VolumeAttachment = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.storageNs.v1alpha1Ns.VolumeAttachment = js.native
+      ): atPulumiKubernetesLib.storageV1alpha1VolumeAttachmentMod.VolumeAttachment = js.native
     }
     
     /* static members */
@@ -264,12 +236,12 @@ object storageNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1alpha1Ns.VolumeAttachmentList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1alpha1VolumeAttachmentListMod.VolumeAttachmentList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.storageNs.v1alpha1Ns.VolumeAttachmentList = js.native
+      ): atPulumiKubernetesLib.storageV1alpha1VolumeAttachmentListMod.VolumeAttachmentList = js.native
     }
     
   }
@@ -277,16 +249,9 @@ object storageNs extends js.Object {
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
-    /**
-      * StorageClass describes the parameters for a class of storage for which PersistentVolumes can
-      * be dynamically provisioned.
-      *
-      * StorageClasses are non-namespaced; the name of the storage class according to etcd is in
-      * ObjectMeta.Name.
-      */
     @js.native
     class StorageClass protected ()
-      extends atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.StorageClass {
+      extends atPulumiKubernetesLib.storageMod.v1beta1Ns.StorageClass {
       /**
         * Create a storage.v1beta1.StorageClass resource with the given unique name, arguments, and options.
         *
@@ -299,12 +264,9 @@ object storageNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.StorageClass, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * StorageClassList is a collection of storage classes.
-      */
     @js.native
     class StorageClassList protected ()
-      extends atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.StorageClassList {
+      extends atPulumiKubernetesLib.storageMod.v1beta1Ns.StorageClassList {
       /**
         * Create a storage.v1beta1.StorageClassList resource with the given unique name, arguments, and options.
         *
@@ -317,15 +279,9 @@ object storageNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.StorageClassList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * VolumeAttachment captures the intent to attach or detach the specified volume to/from the
-      * specified node.
-      *
-      * VolumeAttachment objects are non-namespaced.
-      */
     @js.native
     class VolumeAttachment protected ()
-      extends atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.VolumeAttachment {
+      extends atPulumiKubernetesLib.storageMod.v1beta1Ns.VolumeAttachment {
       /**
         * Create a storage.v1beta1.VolumeAttachment resource with the given unique name, arguments, and options.
         *
@@ -338,12 +294,9 @@ object storageNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.VolumeAttachment, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * VolumeAttachmentList is a collection of VolumeAttachment objects.
-      */
     @js.native
     class VolumeAttachmentList protected ()
-      extends atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.VolumeAttachmentList {
+      extends atPulumiKubernetesLib.storageMod.v1beta1Ns.VolumeAttachmentList {
       /**
         * Create a storage.v1beta1.VolumeAttachmentList resource with the given unique name, arguments, and options.
         *
@@ -371,12 +324,12 @@ object storageNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.StorageClass = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1beta1StorageClassMod.StorageClass = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.StorageClass = js.native
+      ): atPulumiKubernetesLib.storageV1beta1StorageClassMod.StorageClass = js.native
     }
     
     /* static members */
@@ -394,12 +347,12 @@ object storageNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.StorageClassList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1beta1StorageClassListMod.StorageClassList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.StorageClassList = js.native
+      ): atPulumiKubernetesLib.storageV1beta1StorageClassListMod.StorageClassList = js.native
     }
     
     /* static members */
@@ -417,12 +370,12 @@ object storageNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.VolumeAttachment = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1beta1VolumeAttachmentMod.VolumeAttachment = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.VolumeAttachment = js.native
+      ): atPulumiKubernetesLib.storageV1beta1VolumeAttachmentMod.VolumeAttachment = js.native
     }
     
     /* static members */
@@ -440,12 +393,12 @@ object storageNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.VolumeAttachmentList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1beta1VolumeAttachmentListMod.VolumeAttachmentList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.VolumeAttachmentList = js.native
+      ): atPulumiKubernetesLib.storageV1beta1VolumeAttachmentListMod.VolumeAttachmentList = js.native
     }
     
   }

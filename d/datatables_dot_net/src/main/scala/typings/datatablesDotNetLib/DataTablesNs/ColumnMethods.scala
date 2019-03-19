@@ -22,11 +22,11 @@ trait ColumnMethods
     *
     * @param t Specify if you want to get the column data index (default) or the visible index (visible).
     */
-  def index(): Api = js.native
-  def index(t: java.lang.String): Api = js.native
+  def index(): scala.Double = js.native
+  def index(t: java.lang.String): scala.Double = js.native
   /**
     * Obtain the th / td nodes for the selected column
     */
-  def nodes(): js.Array[Api] = js.native
+  def nodes(): Api = js.native
 }
 

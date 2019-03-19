@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait PolylineGraphics extends js.Object {
-  var definitionChanged: Event = js.native
+  var definitionChanged: Event[js.Array[_]] = js.native
   var followSurface: Property = js.native
   var granularity: Property = js.native
   var material: MaterialProperty = js.native

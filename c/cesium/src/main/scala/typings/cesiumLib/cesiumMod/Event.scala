@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("cesium", "Event")
 @js.native
-class Event ()
-  extends cesiumLib.cesiumMod.CesiumNs.Event
+class Event[T /* <: js.Array[_] */] ()
+  extends cesiumLib.cesiumMod.CesiumNs.Event[T]
 

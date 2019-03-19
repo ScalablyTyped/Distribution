@@ -17,62 +17,35 @@ trait IInjectorService extends js.Object {
   def annotate(fn: angularLib.angularMod.Global.Function): js.Array[java.lang.String] = js.native
   def annotate(fn: angularLib.angularMod.Global.Function, strictDi: scala.Boolean): js.Array[java.lang.String] = js.native
   def annotate(inlineAnnotatedFunction: js.Array[_]): js.Array[java.lang.String] = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARanchorScroll): angularLib.angularMod.angularNs.IAnchorScrollService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARcacheFactory): angularLib.angularMod.angularNs.ICacheFactoryService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARcompile): angularLib.angularMod.angularNs.ICompileService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARcontroller): angularLib.angularMod.angularNs.IControllerService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARdocument): angularLib.angularMod.angularNs.IDocumentService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARexceptionHandler): angularLib.angularMod.angularNs.IExceptionHandlerService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARfilter): angularLib.angularMod.angularNs.IFilterService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARhttp): angularLib.angularMod.angularNs.IHttpService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARhttpBackend): angularLib.angularMod.angularNs.IHttpBackendService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARhttpParamSerializer): angularLib.angularMod.angularNs.IHttpParamSerializer = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARhttpParamSerializerJQLike): angularLib.angularMod.angularNs.IHttpParamSerializer = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARinterpolate): angularLib.angularMod.angularNs.IInterpolateService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARinterval): angularLib.angularMod.angularNs.IIntervalService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARlocale): angularLib.angularMod.angularNs.ILocaleService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARlocation): angularLib.angularMod.angularNs.ILocationService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARlog): angularLib.angularMod.angularNs.ILogService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARparse): angularLib.angularMod.angularNs.IParseService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARq): angularLib.angularMod.angularNs.IQService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARrootElement): angularLib.angularMod.angularNs.IRootElementService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARrootScope): angularLib.angularMod.angularNs.IRootScopeService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARsce): angularLib.angularMod.angularNs.ISCEService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARsceDelegate): angularLib.angularMod.angularNs.ISCEDelegateService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARtemplateCache): angularLib.angularMod.angularNs.ITemplateCacheService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARtemplateRequest): angularLib.angularMod.angularNs.ITemplateRequestService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARtimeout): angularLib.angularMod.angularNs.ITimeoutService = js.native
+  def get(name: angularLib.angularLibStrings.DOLLARwindow): angularLib.angularMod.angularNs.IWindowService = js.native
+  def get[T](name: angularLib.angularLibStrings.DOLLARxhrFactory): angularLib.angularMod.angularNs.IXhrFactory[T] = js.native
   def get[T](name: java.lang.String): T = js.native
   def get[T](name: java.lang.String, caller: java.lang.String): T = js.native
-  @JSName("get")
-  def get_$anchorScroll(name: angularLib.angularLibStrings.DOLLARanchorScroll): angularLib.angularMod.angularNs.IAnchorScrollService = js.native
-  @JSName("get")
-  def get_$cacheFactory(name: angularLib.angularLibStrings.DOLLARcacheFactory): angularLib.angularMod.angularNs.ICacheFactoryService = js.native
-  @JSName("get")
-  def get_$compile(name: angularLib.angularLibStrings.DOLLARcompile): angularLib.angularMod.angularNs.ICompileService = js.native
-  @JSName("get")
-  def get_$controller(name: angularLib.angularLibStrings.DOLLARcontroller): angularLib.angularMod.angularNs.IControllerService = js.native
-  @JSName("get")
-  def get_$document(name: angularLib.angularLibStrings.DOLLARdocument): angularLib.angularMod.angularNs.IDocumentService = js.native
-  @JSName("get")
-  def get_$exceptionHandler(name: angularLib.angularLibStrings.DOLLARexceptionHandler): angularLib.angularMod.angularNs.IExceptionHandlerService = js.native
-  @JSName("get")
-  def get_$filter(name: angularLib.angularLibStrings.DOLLARfilter): angularLib.angularMod.angularNs.IFilterService = js.native
-  @JSName("get")
-  def get_$http(name: angularLib.angularLibStrings.DOLLARhttp): angularLib.angularMod.angularNs.IHttpService = js.native
-  @JSName("get")
-  def get_$httpBackend(name: angularLib.angularLibStrings.DOLLARhttpBackend): angularLib.angularMod.angularNs.IHttpBackendService = js.native
-  @JSName("get")
-  def get_$httpParamSerializer(name: angularLib.angularLibStrings.DOLLARhttpParamSerializer): angularLib.angularMod.angularNs.IHttpParamSerializer = js.native
-  @JSName("get")
-  def get_$httpParamSerializerJQLike(name: angularLib.angularLibStrings.DOLLARhttpParamSerializerJQLike): angularLib.angularMod.angularNs.IHttpParamSerializer = js.native
-  @JSName("get")
-  def get_$interpolate(name: angularLib.angularLibStrings.DOLLARinterpolate): angularLib.angularMod.angularNs.IInterpolateService = js.native
-  @JSName("get")
-  def get_$interval(name: angularLib.angularLibStrings.DOLLARinterval): angularLib.angularMod.angularNs.IIntervalService = js.native
-  @JSName("get")
-  def get_$locale(name: angularLib.angularLibStrings.DOLLARlocale): angularLib.angularMod.angularNs.ILocaleService = js.native
-  @JSName("get")
-  def get_$location(name: angularLib.angularLibStrings.DOLLARlocation): angularLib.angularMod.angularNs.ILocationService = js.native
-  @JSName("get")
-  def get_$log(name: angularLib.angularLibStrings.DOLLARlog): angularLib.angularMod.angularNs.ILogService = js.native
-  @JSName("get")
-  def get_$parse(name: angularLib.angularLibStrings.DOLLARparse): angularLib.angularMod.angularNs.IParseService = js.native
-  @JSName("get")
-  def get_$q(name: angularLib.angularLibStrings.DOLLARq): angularLib.angularMod.angularNs.IQService = js.native
-  @JSName("get")
-  def get_$rootElement(name: angularLib.angularLibStrings.DOLLARrootElement): angularLib.angularMod.angularNs.IRootElementService = js.native
-  @JSName("get")
-  def get_$rootScope(name: angularLib.angularLibStrings.DOLLARrootScope): angularLib.angularMod.angularNs.IRootScopeService = js.native
-  @JSName("get")
-  def get_$sce(name: angularLib.angularLibStrings.DOLLARsce): angularLib.angularMod.angularNs.ISCEService = js.native
-  @JSName("get")
-  def get_$sceDelegate(name: angularLib.angularLibStrings.DOLLARsceDelegate): angularLib.angularMod.angularNs.ISCEDelegateService = js.native
-  @JSName("get")
-  def get_$templateCache(name: angularLib.angularLibStrings.DOLLARtemplateCache): angularLib.angularMod.angularNs.ITemplateCacheService = js.native
-  @JSName("get")
-  def get_$templateRequest(name: angularLib.angularLibStrings.DOLLARtemplateRequest): angularLib.angularMod.angularNs.ITemplateRequestService = js.native
-  @JSName("get")
-  def get_$timeout(name: angularLib.angularLibStrings.DOLLARtimeout): angularLib.angularMod.angularNs.ITimeoutService = js.native
-  @JSName("get")
-  def get_$window(name: angularLib.angularLibStrings.DOLLARwindow): angularLib.angularMod.angularNs.IWindowService = js.native
-  @JSName("get")
-  def get_$xhrFactory[T](name: angularLib.angularLibStrings.DOLLARxhrFactory): angularLib.angularMod.angularNs.IXhrFactory[T] = js.native
   def has(name: java.lang.String): scala.Boolean = js.native
   def instantiate[T](typeConstructor: angularLib.Anon_Args[T]): T = js.native
   def instantiate[T](typeConstructor: angularLib.Anon_Args[T], locals: js.Any): T = js.native

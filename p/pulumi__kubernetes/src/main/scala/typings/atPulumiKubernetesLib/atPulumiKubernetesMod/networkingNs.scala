@@ -11,12 +11,9 @@ object networkingNs extends js.Object {
   @JSName("v1")
   @js.native
   object v1Ns extends js.Object {
-    /**
-      * NetworkPolicy describes what network traffic is allowed for a set of Pods
-      */
     @js.native
     class NetworkPolicy protected ()
-      extends atPulumiKubernetesLib.providerMod.networkingNs.v1Ns.NetworkPolicy {
+      extends atPulumiKubernetesLib.networkingMod.v1Ns.NetworkPolicy {
       /**
         * Create a networking.v1.NetworkPolicy resource with the given unique name, arguments, and options.
         *
@@ -29,12 +26,9 @@ object networkingNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.networkingNs.v1Ns.NetworkPolicy, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * NetworkPolicyList is a list of NetworkPolicy objects.
-      */
     @js.native
     class NetworkPolicyList protected ()
-      extends atPulumiKubernetesLib.providerMod.networkingNs.v1Ns.NetworkPolicyList {
+      extends atPulumiKubernetesLib.networkingMod.v1Ns.NetworkPolicyList {
       /**
         * Create a networking.v1.NetworkPolicyList resource with the given unique name, arguments, and options.
         *
@@ -62,12 +56,12 @@ object networkingNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.networkingNs.v1Ns.NetworkPolicy = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.networkingV1NetworkPolicyMod.NetworkPolicy = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.networkingNs.v1Ns.NetworkPolicy = js.native
+      ): atPulumiKubernetesLib.networkingV1NetworkPolicyMod.NetworkPolicy = js.native
     }
     
     /* static members */
@@ -85,12 +79,12 @@ object networkingNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.networkingNs.v1Ns.NetworkPolicyList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.networkingV1NetworkPolicyListMod.NetworkPolicyList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.networkingNs.v1Ns.NetworkPolicyList = js.native
+      ): atPulumiKubernetesLib.networkingV1NetworkPolicyListMod.NetworkPolicyList = js.native
     }
     
   }

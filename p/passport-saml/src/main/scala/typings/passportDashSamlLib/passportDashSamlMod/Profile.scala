@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Profile
-  extends /* attributeName */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
+  extends /* attributeName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var ID: js.UndefOr[java.lang.String] = js.undefined
     // InCommon Attribute urn:oid:0.9.2342.19200300.100.1.3
   var email: js.UndefOr[java.lang.String] = js.undefined
@@ -32,7 +32,7 @@ object Profile {
     getAssertionXml: () => java.lang.String,
     getSamlResponseXml: () => java.lang.String,
     ID: java.lang.String = null,
-    StringDictionary: /* attributeName */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    StringDictionary: /* attributeName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     email: java.lang.String = null,
     issuer: java.lang.String = null,
     mail: java.lang.String = null,

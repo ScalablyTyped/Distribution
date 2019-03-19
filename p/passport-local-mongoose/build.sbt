@@ -1,25 +1,25 @@
 organization := "org.scalablytyped"
 name := "passport-local-mongoose"
-version := "4.0.0-dt-20181119Z-c2db56"
+version := "4.0.0-dt-20181119Z-fa9f1c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-c5c4e3",
-  "org.scalablytyped" %%% "bson" % "4.0-dt-20190211Z-c5ebe0",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-fd1784",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-68b458",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-02a1c5",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-0020ba",
+  "org.scalablytyped" %%% "bson" % "4.0-dt-20190211Z-22c3b3",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-de294e",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-921be9",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-2cedcf",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-fcf6a3",
-  "org.scalablytyped" %%% "mongodb" % "3.1-dt-20190307Z-123dda",
-  "org.scalablytyped" %%% "mongoose" % "5.3.4-dt-20190313Z-09b61d",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190313Z-f6d9fe",
-  "org.scalablytyped" %%% "passport" % "1.0-dt-20181215Z-35d112",
-  "org.scalablytyped" %%% "passport-local" % "1.0.0-dt-20180328Z-8b9c8d",
-  "org.scalablytyped" %%% "passport-strategy" % "v0.2.0-dt-20180815Z-dd5a09",
+  "org.scalablytyped" %%% "mongodb" % "3.1-dt-20190307Z-797021",
+  "org.scalablytyped" %%% "mongoose" % "5.3.4-dt-20190318Z-9448d0",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190318Z-f6d9fe",
+  "org.scalablytyped" %%% "passport" % "1.0-dt-20181215Z-cf6f9c",
+  "org.scalablytyped" %%% "passport-local" % "1.0.0-dt-20180328Z-86e321",
+  "org.scalablytyped" %%% "passport-strategy" % "v0.2.0-dt-20180815Z-7b248a",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-5082d0",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-b44a76",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-ad4a56",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

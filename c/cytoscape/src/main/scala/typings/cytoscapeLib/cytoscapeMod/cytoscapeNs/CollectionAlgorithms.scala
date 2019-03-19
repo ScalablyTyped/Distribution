@@ -28,7 +28,7 @@ trait CollectionAlgorithms extends js.Object {
     * This finds the shortest path from the starting node to all other nodes in the collection.
     * http://js.cytoscape.org/#eles.bellmanFord
     */
-  def bellmanFort(options: SearchBellmanFordOptions): SearchBellmanFordResult = js.native
+  def bellmanFord(options: SearchBellmanFordOptions): SearchBellmanFordResult = js.native
   /**
     * Considering only the elements in the calling collection,
     * calculate the betweenness centrality of the nodes.

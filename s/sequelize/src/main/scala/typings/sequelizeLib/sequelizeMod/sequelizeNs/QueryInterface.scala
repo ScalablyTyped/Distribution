@@ -92,7 +92,7 @@ trait QueryInterface extends js.Object {
     */
   def bulkDelete(tableName: java.lang.String, identifier: js.Object): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
   def bulkDelete(tableName: java.lang.String, identifier: js.Object, options: QueryOptions): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
-  def bulkDelete(tableName: java.lang.String, identifier: js.Object, options: QueryOptions, model: Model[_, _]): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
+  def bulkDelete(tableName: java.lang.String, identifier: js.Object, options: QueryOptions, model: Model[_, _, _]): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
   /**
     * Inserts multiple records at once
     */
@@ -380,14 +380,14 @@ trait QueryInterface extends js.Object {
     tableName: java.lang.String,
     options: QueryOptions,
     attributeSelector: java.lang.String,
-    model: Model[_, _]
+    model: Model[_, _, _]
   ): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
   def rawSelect(tableName: java.lang.String, options: QueryOptions, attributeSelector: js.Array[java.lang.String]): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
   def rawSelect(
     tableName: java.lang.String,
     options: QueryOptions,
     attributeSelector: js.Array[java.lang.String],
-    model: Model[_, _]
+    model: Model[_, _, _]
   ): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
   /**
     * Removes a column from a table
@@ -474,8 +474,8 @@ trait QueryInterface extends js.Object {
   /**
     * Returns selected rows
     */
-  def select(model: Model[_, _], tableName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[js.Array[js.Object]] = js.native
-  def select(model: Model[_, _], tableName: java.lang.String, options: QueryOptions): bluebirdLib.bluebirdMod.namespaced[js.Array[js.Object]] = js.native
+  def select(model: Model[_, _, _], tableName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[js.Array[js.Object]] = js.native
+  def select(model: Model[_, _, _], tableName: java.lang.String, options: QueryOptions): bluebirdLib.bluebirdMod.namespaced[js.Array[js.Object]] = js.native
   /**
     * Set option for autocommit of a transaction
     */
@@ -524,12 +524,12 @@ trait QueryInterface extends js.Object {
   /**
     * Inserts or Updates a record in the database
     */
-  def upsert(tableName: java.lang.String, values: js.Object, updateValues: js.Object, model: Model[_, _]): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
+  def upsert(tableName: java.lang.String, values: js.Object, updateValues: js.Object, model: Model[_, _, _]): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
   def upsert(
     tableName: java.lang.String,
     values: js.Object,
     updateValues: js.Object,
-    model: Model[_, _],
+    model: Model[_, _, _],
     options: QueryOptions
   ): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
 }

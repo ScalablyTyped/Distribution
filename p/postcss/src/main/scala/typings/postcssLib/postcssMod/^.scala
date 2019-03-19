@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("postcss", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  /**
+    * @param plugins Can also be included with the Processor#use method.
+    * @returns A processor that will apply plugins as CSS processors.
+    */
   def apply(): postcssLib.postcssMod.postcssNs.Processor = js.native
   def apply(plugins: postcssLib.postcssMod.postcssNs.AcceptedPlugin*): postcssLib.postcssMod.postcssNs.Processor = js.native
   def apply(plugins: js.Array[postcssLib.postcssMod.postcssNs.AcceptedPlugin]): postcssLib.postcssMod.postcssNs.Processor = js.native

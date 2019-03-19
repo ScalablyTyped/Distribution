@@ -32,8 +32,7 @@ trait Navigation extends js.Object {
   ): xrmLib.XrmNs.AsyncNs.PromiseLike[xrmLib.XrmNs.NavigationNs.ConfirmResult] = js.native
   /**
     * Displays an error dialog.
-    * @param confirmStrings The strings to be used in the confirm dialog.
-    * @param confirmOptions The height and width options for alert dialog
+    * @param errorOptions An object to specify the options for error dialog.
     */
   def openErrorDialog(errorOptions: xrmLib.XrmNs.NavigationNs.ErrorDialogOptions): xrmLib.XrmNs.AsyncNs.PromiseLike[_] = js.native
   /**

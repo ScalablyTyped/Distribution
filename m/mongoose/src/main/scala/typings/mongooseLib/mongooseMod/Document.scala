@@ -40,7 +40,7 @@ trait Document
     * Returns another Model instance.
     * @param name model name
     */
-  def model(name: java.lang.String): Model[this.type, js.Object] = js.native
+  def model[T /* <: Document */](name: java.lang.String): Model[T, js.Object] = js.native
   /**
     * Removes this document from the db.
     * @param fn optional callback

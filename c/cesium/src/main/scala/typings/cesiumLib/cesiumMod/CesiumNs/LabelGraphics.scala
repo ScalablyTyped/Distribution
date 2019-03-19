@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LabelGraphics extends js.Object {
-  var definitionChanged: Event = js.native
+  var definitionChanged: Event[js.Array[_]] = js.native
   var eyeOffset: Property = js.native
   var fillColor: Color = js.native
   var font: java.lang.String = js.native

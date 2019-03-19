@@ -1,0 +1,27 @@
+package typings
+package pDashLogLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Anon_Catch extends js.Object {
+  /**
+  	 * Log the value of a promise. Use this in a `.then()` method.
+  	 *
+  	 * @param logger - The logger to use. Any return value or exception is ignored. Default: `console.log`.
+  	 * @returns A [thunk](https://en.wikipedia.org/wiki/Thunk) that returns a `Promise`.
+  	 */
+  def apply[ValueType](): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = js.native
+  def apply[ValueType](logger: pDashLogLib.pDashLogMod.Logger): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = js.native
+  /**
+  	 * Log the error of a promise. Use this in a `.catch()` method.
+  	 *
+  	 * @param logger - The logger to use. Any return value or exception is ignored. Default: `console.log`.
+  	 * @returns A [thunk](https://en.wikipedia.org/wiki/Thunk) that returns a `Promise`.
+  	 */
+  def `catch`(): js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]] = js.native
+  def `catch`(logger: pDashLogLib.pDashLogMod.Logger): js.Function1[/* error */ js.Any, js.Promise[scala.Nothing]] = js.native
+}
+

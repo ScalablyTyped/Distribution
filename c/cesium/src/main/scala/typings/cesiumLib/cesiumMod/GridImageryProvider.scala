@@ -30,7 +30,7 @@ class GridImageryProvider ()
   /* CompleteClass */
   override var defaultSaturation: scala.Double = js.native
   /* CompleteClass */
-  override val errorEvent: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override val errorEvent: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
   override val hasAlphaChannel: scala.Boolean = js.native
   /* CompleteClass */

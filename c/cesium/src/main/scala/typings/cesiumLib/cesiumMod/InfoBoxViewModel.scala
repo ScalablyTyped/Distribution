@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 class InfoBoxViewModel ()
   extends cesiumLib.cesiumMod.CesiumNs.InfoBoxViewModel {
   /* CompleteClass */
-  override var cameraClicked: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override var cameraClicked: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
   override var cameraIconPath: java.lang.String = js.native
   /* CompleteClass */
-  override var closeClicked: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override var closeClicked: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
   override var description: java.lang.String = js.native
   /* CompleteClass */

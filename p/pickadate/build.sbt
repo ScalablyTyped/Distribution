@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pickadate"
-version := "3.5.5-dt-20180214Z-34239f"
+version := "3.5.5-dt-20180214Z-97973e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

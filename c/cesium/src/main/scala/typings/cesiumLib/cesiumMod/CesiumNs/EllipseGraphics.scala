@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EllipseGraphics extends js.Object {
-  var definitionChanged: Event = js.native
+  var definitionChanged: Event[js.Array[_]] = js.native
   var extrudedHeight: Property = js.native
   var fill: scala.Boolean = js.native
   var granularity: Property = js.native

@@ -15,7 +15,7 @@ object ^ extends js.Object {
   ] = js.native
   val HEADER_NAME: /* Metadata-Flavor */ java.lang.String = js.native
   val HEADER_VALUE: /* Google */ java.lang.String = js.native
-  val HOST_ADDRESS: /* http://metadata.google.internal */ java.lang.String = js.native
+  val HOST_ADDRESS: /* http://metadata.google.internal. */ java.lang.String = js.native
   def instance[T](): js.Promise[T] = js.native
   def instance[T](options: Options): js.Promise[T] = js.native
   def instance[T](options: java.lang.String): js.Promise[T] = js.native

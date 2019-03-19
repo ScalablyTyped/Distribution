@@ -9,23 +9,23 @@ trait JsonContainer extends JsonNode {
   /**
     * @returns The container's first child.
     */
-  var first: js.UndefOr[Node] = js.undefined
+  var first: js.UndefOr[ChildNode] = js.undefined
   /**
     * @returns The container's last child.
     */
-  var last: js.UndefOr[Node] = js.undefined
+  var last: js.UndefOr[ChildNode] = js.undefined
   /**
     * Contains the container's children.
     */
-  var nodes: js.UndefOr[js.Array[Node]] = js.undefined
+  var nodes: js.UndefOr[js.Array[ChildNode]] = js.undefined
 }
 
 object JsonContainer {
   @scala.inline
   def apply(
-    first: Node = null,
-    last: Node = null,
-    nodes: js.Array[Node] = null,
+    first: ChildNode = null,
+    last: ChildNode = null,
+    nodes: js.Array[ChildNode] = null,
     parent: JsonContainer = null,
     raws: NodeRaws = null,
     source: NodeSource = null,

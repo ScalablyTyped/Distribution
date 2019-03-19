@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "autobahn"
-version := "0.9-dt-20190212Z-7dae60"
+version := "18.10-dt-20190311Z-9984dd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -46,7 +46,7 @@ object TileProviderError extends js.Object {
   def handleError(
     previousError: cesiumLib.cesiumMod.CesiumNs.TileProviderError,
     provider: cesiumLib.cesiumMod.CesiumNs.ImageryProvider,
-    event: cesiumLib.cesiumMod.CesiumNs.Event,
+    event: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[cesiumLib.cesiumMod.CesiumNs.TileProviderError]],
     message: java.lang.String,
     x: scala.Double,
     y: scala.Double,
@@ -56,7 +56,7 @@ object TileProviderError extends js.Object {
   def handleError(
     previousError: cesiumLib.cesiumMod.CesiumNs.TileProviderError,
     provider: cesiumLib.cesiumMod.CesiumNs.ImageryProvider,
-    event: cesiumLib.cesiumMod.CesiumNs.Event,
+    event: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[cesiumLib.cesiumMod.CesiumNs.TileProviderError]],
     message: java.lang.String,
     x: scala.Double,
     y: scala.Double,
@@ -67,7 +67,7 @@ object TileProviderError extends js.Object {
   def handleError(
     previousError: cesiumLib.cesiumMod.CesiumNs.TileProviderError,
     provider: cesiumLib.cesiumMod.CesiumNs.TerrainProvider,
-    event: cesiumLib.cesiumMod.CesiumNs.Event,
+    event: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[cesiumLib.cesiumMod.CesiumNs.TileProviderError]],
     message: java.lang.String,
     x: scala.Double,
     y: scala.Double,
@@ -77,7 +77,7 @@ object TileProviderError extends js.Object {
   def handleError(
     previousError: cesiumLib.cesiumMod.CesiumNs.TileProviderError,
     provider: cesiumLib.cesiumMod.CesiumNs.TerrainProvider,
-    event: cesiumLib.cesiumMod.CesiumNs.Event,
+    event: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[cesiumLib.cesiumMod.CesiumNs.TileProviderError]],
     message: java.lang.String,
     x: scala.Double,
     y: scala.Double,

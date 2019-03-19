@@ -413,8 +413,9 @@ class Object ()
   /**
   	 * This callback function is called every time _discardActiveObject or _setActiveObject
   	 * try to to deselect this object. If the function returns true, the process is cancelled
+    * @return {Boolean} true to cancel selection
   	 */
-  def onDeselect(): scala.Unit = js.native
+  def onDeselect(options: fabricLib.Anon_E): scala.Boolean = js.native
   /**
   	 * This callback function is called every time _discardActiveObject or _setActiveObject
   	 * try to to select this object. If the function returns true, the process is cancelled

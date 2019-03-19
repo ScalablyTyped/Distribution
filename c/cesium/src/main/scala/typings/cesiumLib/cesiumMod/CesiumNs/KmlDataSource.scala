@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait KmlDataSource extends DataSource {
-  var refreshEvent: Event = js.native
-  var unsupportedNodeEvent: Event = js.native
+  var refreshEvent: Event[js.Array[_]] = js.native
+  var unsupportedNodeEvent: Event[js.Array[_]] = js.native
   def load(data: Resource): js.Promise[KmlDataSource] = js.native
   def load(data: Resource, options: cesiumLib.Anon_ClampToGroundEllipsoid): js.Promise[KmlDataSource] = js.native
   def load(data: java.lang.String): js.Promise[KmlDataSource] = js.native

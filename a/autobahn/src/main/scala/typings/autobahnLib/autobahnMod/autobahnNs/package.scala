@@ -6,6 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object autobahnNs {
+  // Workaround to get intellisense on type unions of 'literals' | string. 
+  // See https://github.com/Microsoft/TypeScript/issues/29729
+  type CustomTransportType = java.lang.String with autobahnLib.Anon_ZzIGNOREME
   type DeferFactory = js.Function0[whenLib.WhenNs.Promise[js.Any]]
   type OnChallengeHandler = js.Function3[
     /* session */ Session, 
@@ -25,4 +28,5 @@ package object autobahnNs {
     /* details */ js.UndefOr[IEvent], 
     scala.Unit
   ]
+  type TransportType = DefaultTransportType | CustomTransportType
 }

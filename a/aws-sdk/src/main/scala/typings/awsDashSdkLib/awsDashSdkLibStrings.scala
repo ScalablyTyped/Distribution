@@ -2618,6 +2618,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSesMod.SESNs._BulkEmailStatus
   
   @js.native
+  sealed trait AccountId
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberAssociationName
+  
+  @js.native
   sealed trait AccountMFAEnabled
     extends awsDashSdkLib.clientsIamMod.IAMNs._summaryKeyType
   
@@ -2640,6 +2644,18 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AccountThrottled
     extends awsDashSdkLib.clientsSesMod.SESNs._BulkEmailStatus
+  
+  @js.native
+  sealed trait AcquireFailed
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberStatus
+  
+  @js.native
+  sealed trait AcquireInProgress
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberStatus
+  
+  @js.native
+  sealed trait Acquired
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._OrderedPhoneNumberStatus
   
   @js.native
   sealed trait Action
@@ -2886,7 +2902,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Assigned
-    extends awsDashSdkLib.clientsIamMod.IAMNs._assignmentStatusType
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberStatus
+       with awsDashSdkLib.clientsIamMod.IAMNs._assignmentStatusType
   
   @js.native
   sealed trait Assignment
@@ -3694,6 +3711,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait BundlerVersion
     extends awsDashSdkLib.clientsOpsworksMod.OpsWorksNs._LayerAttributesKeys
+  
+  @js.native
+  sealed trait BusinessCalling
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberProductType
   
   @js.native
   sealed trait ByLogStream
@@ -6721,6 +6742,14 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._OperationType
   
   @js.native
+  sealed trait DeleteFailed
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberStatus
+  
+  @js.native
+  sealed trait DeleteInProgress
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberStatus
+  
+  @js.native
   sealed trait DeleteInstance
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._OperationType
   
@@ -8764,6 +8793,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSsmMod.SSMNs._NotificationEvent
        with awsDashSdkLib.clientsSagemakerMod.SageMakerNs._ObjectiveStatus
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._OperationStatus
+       with awsDashSdkLib.clientsChimeMod.ChimeNs._OrderedPhoneNumberStatus
+       with awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberOrderStatus
        with awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs._PipelineExecutionStatus
        with awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs._PlatformStatus
        with awsDashSdkLib.clientsCloudwatchlogsMod.CloudWatchLogsNs._QueryStatus
@@ -15528,6 +15559,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCurMod.CURNs._ReportFormat
   
   @js.native
+  sealed trait Partial
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberOrderStatus
+  
+  @js.native
   sealed trait `Partial Upfront`
     extends awsDashSdkLib.clientsEc2Mod.EC2Ns._OfferingTypeValues
   
@@ -15806,6 +15841,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs._ApplicationVersionStatus
        with awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs._OptionState
        with awsDashSdkLib.clientsEsMod.ESNs._OptionState
+       with awsDashSdkLib.clientsChimeMod.ChimeNs._OrderedPhoneNumberStatus
+       with awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberOrderStatus
   
   @js.native
   sealed trait ProductType
@@ -16964,6 +17001,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait RelationalDatabaseSnapshot
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._ResourceType
+  
+  @js.native
+  sealed trait ReleaseFailed
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberStatus
+  
+  @js.native
+  sealed trait ReleaseInProgress
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberStatus
   
   @js.native
   sealed trait ReleaseStaticIp
@@ -19224,6 +19269,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Successful
     extends awsDashSdkLib.clientsSsmMod.SSMNs._LastResourceDataSyncStatus
+       with awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberOrderStatus
        with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalingActivityStatusCode
        with awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._ScalingActivityStatusCode
        with awsDashSdkLib.clientsEksMod.EKSNs._UpdateStatus
@@ -19344,6 +19390,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsRoute53Mod.Route53Ns._HealthCheckType
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._HealthCheckType
        with awsDashSdkLib.clientsGameliftMod.GameLiftNs._IpProtocol
+       with awsDashSdkLib.clientsChimeMod.ChimeNs._OriginationRouteProtocol
        with awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs._Protocol
        with awsDashSdkLib.clientsElbv2Mod.ELBv2Ns._ProtocolEnum
   
@@ -20230,6 +20277,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait UDP
     extends awsDashSdkLib.clientsGameliftMod.GameLiftNs._IpProtocol
+       with awsDashSdkLib.clientsChimeMod.ChimeNs._OriginationRouteProtocol
        with awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs._Protocol
   
   @js.native
@@ -20816,7 +20864,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Unassigned
-    extends awsDashSdkLib.clientsIamMod.IAMNs._assignmentStatusType
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberStatus
+       with awsDashSdkLib.clientsIamMod.IAMNs._assignmentStatusType
   
   @js.native
   sealed trait Unauthorized
@@ -20937,6 +20986,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._AccessLevelFilterKey
        with awsDashSdkLib.clientsIamMod.IAMNs._EntityType
        with awsDashSdkLib.clientsEc2Mod.EC2Ns._PrincipalType
+  
+  @js.native
+  sealed trait UserId
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberAssociationName
   
   @js.native
   sealed trait UserInitiated
@@ -21285,6 +21338,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Vitoria
     extends awsDashSdkLib.clientsPollyMod.PollyNs._VoiceId
+  
+  @js.native
+  sealed trait VoiceConnector
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberProductType
+  
+  @js.native
+  sealed trait VoiceConnectorId
+    extends awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberAssociationName
   
   @js.native
   sealed trait VpcIdNotFound
@@ -22908,7 +22969,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs._AnalysisSchemeLanguage
   
   @js.native
-  sealed trait csv extends js.Object
+  sealed trait csv
+    extends awsDashSdkLib.clientsDmsMod.DMSNs._DataFormatValue
   
   @js.native
   sealed trait custom
@@ -25879,6 +25941,18 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsOpsworksMod.OpsWorksNs._VirtualizationType
   
   @js.native
+  sealed trait parquet
+    extends awsDashSdkLib.clientsDmsMod.DMSNs._DataFormatValue
+  
+  @js.native
+  sealed trait `parquet-1-0`
+    extends awsDashSdkLib.clientsDmsMod.DMSNs._ParquetVersionValue
+  
+  @js.native
+  sealed trait `parquet-2-0`
+    extends awsDashSdkLib.clientsDmsMod.DMSNs._ParquetVersionValue
+  
+  @js.native
   sealed trait partition
     extends awsDashSdkLib.clientsEc2Mod.EC2Ns._PlacementStrategy
   
@@ -26027,6 +26101,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait `pl-PL`
     extends awsDashSdkLib.clientsPollyMod.PollyNs._LanguageCode
+  
+  @js.native
+  sealed trait plain
+    extends awsDashSdkLib.clientsDmsMod.DMSNs._EncodingTypeValue
+  
+  @js.native
+  sealed trait `plain-dictionary`
+    extends awsDashSdkLib.clientsDmsMod.DMSNs._EncodingTypeValue
   
   @js.native
   sealed trait preferred_username
@@ -26577,6 +26659,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSagemakerMod.SageMakerNs._TargetDevice
   
   @js.native
+  sealed trait `rle-dictionary`
+    extends awsDashSdkLib.clientsDmsMod.DMSNs._EncodingTypeValue
+  
+  @js.native
   sealed trait ro
     extends awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs._AnalysisSchemeLanguage
        with awsDashSdkLib.clientsGreengrassMod.GreengrassNs._Permission
@@ -26885,6 +26971,14 @@ object awsDashSdkLibStrings {
   sealed trait sriovNetSupport
     extends awsDashSdkLib.clientsEc2Mod.EC2Ns._ImageAttributeName
        with awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceAttributeName
+  
+  @js.native
+  sealed trait `sse-kms`
+    extends awsDashSdkLib.clientsDmsMod.DMSNs._EncryptionModeValue
+  
+  @js.native
+  sealed trait `sse-s3`
+    extends awsDashSdkLib.clientsDmsMod.DMSNs._EncryptionModeValue
   
   @js.native
   sealed trait ssh
@@ -28834,6 +28928,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def AccountDailyQuotaExceeded: AccountDailyQuotaExceeded = "AccountDailyQuotaExceeded".asInstanceOf[AccountDailyQuotaExceeded]
   @scala.inline
+  def AccountId: AccountId = "AccountId".asInstanceOf[AccountId]
+  @scala.inline
   def AccountMFAEnabled: AccountMFAEnabled = "AccountMFAEnabled".asInstanceOf[AccountMFAEnabled]
   @scala.inline
   def AccountSendingPaused: AccountSendingPaused = "AccountSendingPaused".asInstanceOf[AccountSendingPaused]
@@ -28845,6 +28941,12 @@ object awsDashSdkLibStrings {
   def AccountTakeover: AccountTakeover = "AccountTakeover".asInstanceOf[AccountTakeover]
   @scala.inline
   def AccountThrottled: AccountThrottled = "AccountThrottled".asInstanceOf[AccountThrottled]
+  @scala.inline
+  def AcquireFailed: AcquireFailed = "AcquireFailed".asInstanceOf[AcquireFailed]
+  @scala.inline
+  def AcquireInProgress: AcquireInProgress = "AcquireInProgress".asInstanceOf[AcquireInProgress]
+  @scala.inline
+  def Acquired: Acquired = "Acquired".asInstanceOf[Acquired]
   @scala.inline
   def Action: Action = "Action".asInstanceOf[Action]
   @scala.inline
@@ -29297,6 +29399,8 @@ object awsDashSdkLibStrings {
   def Bulk: Bulk = "Bulk".asInstanceOf[Bulk]
   @scala.inline
   def BundlerVersion: BundlerVersion = "BundlerVersion".asInstanceOf[BundlerVersion]
+  @scala.inline
+  def BusinessCalling: BusinessCalling = "BusinessCalling".asInstanceOf[BusinessCalling]
   @scala.inline
   def ByLogStream: ByLogStream = "ByLogStream".asInstanceOf[ByLogStream]
   @scala.inline
@@ -30435,6 +30539,10 @@ object awsDashSdkLibStrings {
   def DeleteDomain: DeleteDomain = "DeleteDomain".asInstanceOf[DeleteDomain]
   @scala.inline
   def DeleteDomainEntry: DeleteDomainEntry = "DeleteDomainEntry".asInstanceOf[DeleteDomainEntry]
+  @scala.inline
+  def DeleteFailed: DeleteFailed = "DeleteFailed".asInstanceOf[DeleteFailed]
+  @scala.inline
+  def DeleteInProgress: DeleteInProgress = "DeleteInProgress".asInstanceOf[DeleteInProgress]
   @scala.inline
   def DeleteInstance: DeleteInstance = "DeleteInstance".asInstanceOf[DeleteInstance]
   @scala.inline
@@ -33920,6 +34028,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Parquet: Parquet = "Parquet".asInstanceOf[Parquet]
   @scala.inline
+  def Partial: Partial = "Partial".asInstanceOf[Partial]
+  @scala.inline
   def `Partial Upfront`: `Partial Upfront` = "Partial Upfront".asInstanceOf[`Partial Upfront`]
   @scala.inline
   def PartialData: PartialData = "PartialData".asInstanceOf[PartialData]
@@ -34535,6 +34645,10 @@ object awsDashSdkLibStrings {
   def RelationalDatabase: RelationalDatabase = "RelationalDatabase".asInstanceOf[RelationalDatabase]
   @scala.inline
   def RelationalDatabaseSnapshot: RelationalDatabaseSnapshot = "RelationalDatabaseSnapshot".asInstanceOf[RelationalDatabaseSnapshot]
+  @scala.inline
+  def ReleaseFailed: ReleaseFailed = "ReleaseFailed".asInstanceOf[ReleaseFailed]
+  @scala.inline
+  def ReleaseInProgress: ReleaseInProgress = "ReleaseInProgress".asInstanceOf[ReleaseInProgress]
   @scala.inline
   def ReleaseStaticIp: ReleaseStaticIp = "ReleaseStaticIp".asInstanceOf[ReleaseStaticIp]
   @scala.inline
@@ -36202,6 +36316,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def User: User = "User".asInstanceOf[User]
   @scala.inline
+  def UserId: UserId = "UserId".asInstanceOf[UserId]
+  @scala.inline
   def UserInitiated: UserInitiated = "UserInitiated".asInstanceOf[UserInitiated]
   @scala.inline
   def UserPolicySizeQuota: UserPolicySizeQuota = "UserPolicySizeQuota".asInstanceOf[UserPolicySizeQuota]
@@ -36353,6 +36469,10 @@ object awsDashSdkLibStrings {
   def VisibilityTimeout: VisibilityTimeout = "VisibilityTimeout".asInstanceOf[VisibilityTimeout]
   @scala.inline
   def Vitoria: Vitoria = "Vitoria".asInstanceOf[Vitoria]
+  @scala.inline
+  def VoiceConnector: VoiceConnector = "VoiceConnector".asInstanceOf[VoiceConnector]
+  @scala.inline
+  def VoiceConnectorId: VoiceConnectorId = "VoiceConnectorId".asInstanceOf[VoiceConnectorId]
   @scala.inline
   def VpcIdNotFound: VpcIdNotFound = "VpcIdNotFound".asInstanceOf[VpcIdNotFound]
   @scala.inline
@@ -38314,6 +38434,12 @@ object awsDashSdkLibStrings {
   @scala.inline
   def paravirtual: paravirtual = "paravirtual".asInstanceOf[paravirtual]
   @scala.inline
+  def parquet: parquet = "parquet".asInstanceOf[parquet]
+  @scala.inline
+  def `parquet-1-0`: `parquet-1-0` = "parquet-1-0".asInstanceOf[`parquet-1-0`]
+  @scala.inline
+  def `parquet-2-0`: `parquet-2-0` = "parquet-2-0".asInstanceOf[`parquet-2-0`]
+  @scala.inline
   def partition: partition = "partition".asInstanceOf[partition]
   @scala.inline
   def passed: passed = "passed".asInstanceOf[passed]
@@ -38371,6 +38497,10 @@ object awsDashSdkLibStrings {
   def `php-app`: `php-app` = "php-app".asInstanceOf[`php-app`]
   @scala.inline
   def `pl-PL`: `pl-PL` = "pl-PL".asInstanceOf[`pl-PL`]
+  @scala.inline
+  def plain: plain = "plain".asInstanceOf[plain]
+  @scala.inline
+  def `plain-dictionary`: `plain-dictionary` = "plain-dictionary".asInstanceOf[`plain-dictionary`]
   @scala.inline
   def preferred_username: preferred_username = "preferred_username".asInstanceOf[preferred_username]
   @scala.inline
@@ -38628,6 +38758,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def rk3399: rk3399 = "rk3399".asInstanceOf[rk3399]
   @scala.inline
+  def `rle-dictionary`: `rle-dictionary` = "rle-dictionary".asInstanceOf[`rle-dictionary`]
+  @scala.inline
   def ro: ro = "ro".asInstanceOf[ro]
   @scala.inline
   def `ro-RO`: `ro-RO` = "ro-RO".asInstanceOf[`ro-RO`]
@@ -38779,6 +38911,10 @@ object awsDashSdkLibStrings {
   def spread: spread = "spread".asInstanceOf[spread]
   @scala.inline
   def sriovNetSupport: sriovNetSupport = "sriovNetSupport".asInstanceOf[sriovNetSupport]
+  @scala.inline
+  def `sse-kms`: `sse-kms` = "sse-kms".asInstanceOf[`sse-kms`]
+  @scala.inline
+  def `sse-s3`: `sse-s3` = "sse-s3".asInstanceOf[`sse-s3`]
   @scala.inline
   def ssh: ssh = "ssh".asInstanceOf[ssh]
   @scala.inline

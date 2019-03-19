@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rmc-date-picker"
-version := "6.0.8-57eeb1"
+version := "6.0.8-90bb38"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "16.8-dt-20190312Z-6f0f1a",
   "org.scalablytyped" %%% "rmc-dialog" % "1.1.1-4c9d96",
   "org.scalablytyped" %%% "rmc-feedback" % "2.0.0-72fac0",
-  "org.scalablytyped" %%% "rmc-picker" % "5.0.5-1be103",
+  "org.scalablytyped" %%% "rmc-picker" % "5.0.6-d622c2",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

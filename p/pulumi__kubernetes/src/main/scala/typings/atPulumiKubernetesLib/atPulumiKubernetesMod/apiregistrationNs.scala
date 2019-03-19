@@ -11,12 +11,9 @@ object apiregistrationNs extends js.Object {
   @JSName("v1")
   @js.native
   object v1Ns extends js.Object {
-    /**
-      * APIService represents a server for a particular GroupVersion. Name must be "version.group".
-      */
     @js.native
     class APIService protected ()
-      extends atPulumiKubernetesLib.providerMod.apiregistrationNs.v1Ns.APIService {
+      extends atPulumiKubernetesLib.apiregistrationMod.v1Ns.APIService {
       /**
         * Create a apiregistration.v1.APIService resource with the given unique name, arguments, and options.
         *
@@ -29,12 +26,9 @@ object apiregistrationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.apiregistrationNs.v1Ns.APIService, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * APIServiceList is a list of APIService objects.
-      */
     @js.native
     class APIServiceList protected ()
-      extends atPulumiKubernetesLib.providerMod.apiregistrationNs.v1Ns.APIServiceList {
+      extends atPulumiKubernetesLib.apiregistrationMod.v1Ns.APIServiceList {
       /**
         * Create a apiregistration.v1.APIServiceList resource with the given unique name, arguments, and options.
         *
@@ -62,12 +56,12 @@ object apiregistrationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.apiregistrationNs.v1Ns.APIService = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.apiregistrationV1APIServiceMod.APIService = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.apiregistrationNs.v1Ns.APIService = js.native
+      ): atPulumiKubernetesLib.apiregistrationV1APIServiceMod.APIService = js.native
     }
     
     /* static members */
@@ -85,12 +79,12 @@ object apiregistrationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.apiregistrationNs.v1Ns.APIServiceList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.apiregistrationV1APIServiceListMod.APIServiceList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.apiregistrationNs.v1Ns.APIServiceList = js.native
+      ): atPulumiKubernetesLib.apiregistrationV1APIServiceListMod.APIServiceList = js.native
     }
     
   }
@@ -98,12 +92,9 @@ object apiregistrationNs extends js.Object {
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
-    /**
-      * APIService represents a server for a particular GroupVersion. Name must be "version.group".
-      */
     @js.native
     class APIService protected ()
-      extends atPulumiKubernetesLib.providerMod.apiregistrationNs.v1beta1Ns.APIService {
+      extends atPulumiKubernetesLib.apiregistrationMod.v1beta1Ns.APIService {
       /**
         * Create a apiregistration.v1beta1.APIService resource with the given unique name, arguments, and options.
         *
@@ -116,12 +107,9 @@ object apiregistrationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.apiregistrationNs.v1beta1Ns.APIService, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * APIServiceList is a list of APIService objects.
-      */
     @js.native
     class APIServiceList protected ()
-      extends atPulumiKubernetesLib.providerMod.apiregistrationNs.v1beta1Ns.APIServiceList {
+      extends atPulumiKubernetesLib.apiregistrationMod.v1beta1Ns.APIServiceList {
       /**
         * Create a apiregistration.v1beta1.APIServiceList resource with the given unique name, arguments, and options.
         *
@@ -149,12 +137,12 @@ object apiregistrationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.apiregistrationNs.v1beta1Ns.APIService = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.apiregistrationV1beta1APIServiceMod.APIService = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.apiregistrationNs.v1beta1Ns.APIService = js.native
+      ): atPulumiKubernetesLib.apiregistrationV1beta1APIServiceMod.APIService = js.native
     }
     
     /* static members */
@@ -172,12 +160,12 @@ object apiregistrationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.apiregistrationNs.v1beta1Ns.APIServiceList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.apiregistrationV1beta1APIServiceListMod.APIServiceList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.apiregistrationNs.v1beta1Ns.APIServiceList = js.native
+      ): atPulumiKubernetesLib.apiregistrationV1beta1APIServiceListMod.APIServiceList = js.native
     }
     
   }

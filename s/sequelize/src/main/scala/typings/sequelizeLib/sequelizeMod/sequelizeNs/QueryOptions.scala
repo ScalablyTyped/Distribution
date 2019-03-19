@@ -36,7 +36,7 @@ trait QueryOptions
   /**
     * A sequelize model used to build the returned model instances (used to be called callee)
     */
-  var model: js.UndefOr[Model[_, _]] = js.undefined
+  var model: js.UndefOr[Model[_, _, _]] = js.undefined
   /**
     * If true, transforms objects with `.` separated property names into nested objects using
     * [dottie.js](https://github.com/mickhansen/dottie.js). For example { 'user.username': 'john' } becomes
@@ -89,7 +89,7 @@ object QueryOptions {
     instance: Instance[_] = null,
     logging: scala.Boolean | js.Function = null,
     mapToModel: js.UndefOr[scala.Boolean] = js.undefined,
-    model: Model[_, _] = null,
+    model: Model[_, _, _] = null,
     nest: js.UndefOr[scala.Boolean] = js.undefined,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     raw: js.UndefOr[scala.Boolean] = js.undefined,

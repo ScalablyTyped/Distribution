@@ -32,7 +32,7 @@ trait CountOptions
   /**
     * Include options. See `find` for details
     */
-  var include: js.UndefOr[js.Array[(Model[_, _]) | IncludeOptions]] = js.undefined
+  var include: js.UndefOr[js.Array[(Model[_, _, _]) | IncludeOptions]] = js.undefined
   /**
     * A hash of search attributes.
     */
@@ -47,7 +47,7 @@ object CountOptions {
     col: java.lang.String = null,
     distinct: js.UndefOr[scala.Boolean] = js.undefined,
     group: js.Object = null,
-    include: js.Array[(Model[_, _]) | IncludeOptions] = null,
+    include: js.Array[(Model[_, _, _]) | IncludeOptions] = null,
     logging: scala.Boolean | js.Function = null,
     searchPath: java.lang.String = null,
     transaction: Transaction = null,

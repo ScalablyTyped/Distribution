@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-popup-dialog"
-version := "0.16-dt-20190206Z-f5acfe"
+version := "0.16-dt-20190206Z-9c344f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-29f798",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190312Z-6f0f1a",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190312Z-21656c",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190318Z-7d3d3e",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

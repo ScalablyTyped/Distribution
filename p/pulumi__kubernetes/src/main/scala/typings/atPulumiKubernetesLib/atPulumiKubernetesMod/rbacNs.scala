@@ -11,13 +11,9 @@ object rbacNs extends js.Object {
   @JSName("v1")
   @js.native
   object v1Ns extends js.Object {
-    /**
-      * ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a
-      * unit by a RoleBinding or ClusterRoleBinding.
-      */
     @js.native
     class ClusterRole protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRole {
+      extends atPulumiKubernetesLib.rbacMod.v1Ns.ClusterRole {
       /**
         * Create a rbac.v1.ClusterRole resource with the given unique name, arguments, and options.
         *
@@ -30,13 +26,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1Ns.ClusterRole, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ClusterRoleBinding references a ClusterRole, but not contain it.  It can reference a
-      * ClusterRole in the global namespace, and adds who information via Subject.
-      */
     @js.native
     class ClusterRoleBinding protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRoleBinding {
+      extends atPulumiKubernetesLib.rbacMod.v1Ns.ClusterRoleBinding {
       /**
         * Create a rbac.v1.ClusterRoleBinding resource with the given unique name, arguments, and options.
         *
@@ -49,12 +41,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1Ns.ClusterRoleBinding, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ClusterRoleBindingList is a collection of ClusterRoleBindings
-      */
     @js.native
     class ClusterRoleBindingList protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRoleBindingList {
+      extends atPulumiKubernetesLib.rbacMod.v1Ns.ClusterRoleBindingList {
       /**
         * Create a rbac.v1.ClusterRoleBindingList resource with the given unique name, arguments, and options.
         *
@@ -67,12 +56,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1Ns.ClusterRoleBindingList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ClusterRoleList is a collection of ClusterRoles
-      */
     @js.native
     class ClusterRoleList protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRoleList {
+      extends atPulumiKubernetesLib.rbacMod.v1Ns.ClusterRoleList {
       /**
         * Create a rbac.v1.ClusterRoleList resource with the given unique name, arguments, and options.
         *
@@ -85,13 +71,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1Ns.ClusterRoleList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a
-      * RoleBinding.
-      */
     @js.native
     class Role protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.Role {
+      extends atPulumiKubernetesLib.rbacMod.v1Ns.Role {
       /**
         * Create a rbac.v1.Role resource with the given unique name, arguments, and options.
         *
@@ -104,15 +86,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1Ns.Role, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * RoleBinding references a role, but does not contain it.  It can reference a Role in the same
-      * namespace or a ClusterRole in the global namespace. It adds who information via Subjects and
-      * namespace information by which namespace it exists in.  RoleBindings in a given namespace
-      * only have effect in that namespace.
-      */
     @js.native
     class RoleBinding protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.RoleBinding {
+      extends atPulumiKubernetesLib.rbacMod.v1Ns.RoleBinding {
       /**
         * Create a rbac.v1.RoleBinding resource with the given unique name, arguments, and options.
         *
@@ -125,12 +101,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1Ns.RoleBinding, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * RoleBindingList is a collection of RoleBindings
-      */
     @js.native
     class RoleBindingList protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.RoleBindingList {
+      extends atPulumiKubernetesLib.rbacMod.v1Ns.RoleBindingList {
       /**
         * Create a rbac.v1.RoleBindingList resource with the given unique name, arguments, and options.
         *
@@ -143,12 +116,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1Ns.RoleBindingList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * RoleList is a collection of Roles
-      */
     @js.native
     class RoleList protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.RoleList {
+      extends atPulumiKubernetesLib.rbacMod.v1Ns.RoleList {
       /**
         * Create a rbac.v1.RoleList resource with the given unique name, arguments, and options.
         *
@@ -176,12 +146,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRole = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1ClusterRoleMod.ClusterRole = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRole = js.native
+      ): atPulumiKubernetesLib.rbacV1ClusterRoleMod.ClusterRole = js.native
     }
     
     /* static members */
@@ -199,12 +169,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRoleBinding = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1ClusterRoleBindingMod.ClusterRoleBinding = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRoleBinding = js.native
+      ): atPulumiKubernetesLib.rbacV1ClusterRoleBindingMod.ClusterRoleBinding = js.native
     }
     
     /* static members */
@@ -222,12 +192,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRoleBindingList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1ClusterRoleBindingListMod.ClusterRoleBindingList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRoleBindingList = js.native
+      ): atPulumiKubernetesLib.rbacV1ClusterRoleBindingListMod.ClusterRoleBindingList = js.native
     }
     
     /* static members */
@@ -245,12 +215,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRoleList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1ClusterRoleListMod.ClusterRoleList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRoleList = js.native
+      ): atPulumiKubernetesLib.rbacV1ClusterRoleListMod.ClusterRoleList = js.native
     }
     
     /* static members */
@@ -268,12 +238,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.Role = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1RoleMod.Role = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.Role = js.native
+      ): atPulumiKubernetesLib.rbacV1RoleMod.Role = js.native
     }
     
     /* static members */
@@ -291,12 +261,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.RoleBinding = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1RoleBindingMod.RoleBinding = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.RoleBinding = js.native
+      ): atPulumiKubernetesLib.rbacV1RoleBindingMod.RoleBinding = js.native
     }
     
     /* static members */
@@ -314,12 +284,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.RoleBindingList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1RoleBindingListMod.RoleBindingList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.RoleBindingList = js.native
+      ): atPulumiKubernetesLib.rbacV1RoleBindingListMod.RoleBindingList = js.native
     }
     
     /* static members */
@@ -337,12 +307,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.RoleList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1RoleListMod.RoleList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.RoleList = js.native
+      ): atPulumiKubernetesLib.rbacV1RoleListMod.RoleList = js.native
     }
     
   }
@@ -350,13 +320,9 @@ object rbacNs extends js.Object {
   @JSName("v1alpha1")
   @js.native
   object v1alpha1Ns extends js.Object {
-    /**
-      * ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a
-      * unit by a RoleBinding or ClusterRoleBinding.
-      */
     @js.native
     class ClusterRole protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRole {
+      extends atPulumiKubernetesLib.rbacMod.v1alpha1Ns.ClusterRole {
       /**
         * Create a rbac.v1alpha1.ClusterRole resource with the given unique name, arguments, and options.
         *
@@ -369,13 +335,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1alpha1Ns.ClusterRole, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ClusterRoleBinding references a ClusterRole, but not contain it.  It can reference a
-      * ClusterRole in the global namespace, and adds who information via Subject.
-      */
     @js.native
     class ClusterRoleBinding protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRoleBinding {
+      extends atPulumiKubernetesLib.rbacMod.v1alpha1Ns.ClusterRoleBinding {
       /**
         * Create a rbac.v1alpha1.ClusterRoleBinding resource with the given unique name, arguments, and options.
         *
@@ -388,12 +350,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1alpha1Ns.ClusterRoleBinding, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ClusterRoleBindingList is a collection of ClusterRoleBindings
-      */
     @js.native
     class ClusterRoleBindingList protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRoleBindingList {
+      extends atPulumiKubernetesLib.rbacMod.v1alpha1Ns.ClusterRoleBindingList {
       /**
         * Create a rbac.v1alpha1.ClusterRoleBindingList resource with the given unique name, arguments, and options.
         *
@@ -406,12 +365,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1alpha1Ns.ClusterRoleBindingList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ClusterRoleList is a collection of ClusterRoles
-      */
     @js.native
     class ClusterRoleList protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRoleList {
+      extends atPulumiKubernetesLib.rbacMod.v1alpha1Ns.ClusterRoleList {
       /**
         * Create a rbac.v1alpha1.ClusterRoleList resource with the given unique name, arguments, and options.
         *
@@ -424,13 +380,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1alpha1Ns.ClusterRoleList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a
-      * RoleBinding.
-      */
     @js.native
     class Role protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.Role {
+      extends atPulumiKubernetesLib.rbacMod.v1alpha1Ns.Role {
       /**
         * Create a rbac.v1alpha1.Role resource with the given unique name, arguments, and options.
         *
@@ -443,15 +395,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1alpha1Ns.Role, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * RoleBinding references a role, but does not contain it.  It can reference a Role in the same
-      * namespace or a ClusterRole in the global namespace. It adds who information via Subjects and
-      * namespace information by which namespace it exists in.  RoleBindings in a given namespace
-      * only have effect in that namespace.
-      */
     @js.native
     class RoleBinding protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.RoleBinding {
+      extends atPulumiKubernetesLib.rbacMod.v1alpha1Ns.RoleBinding {
       /**
         * Create a rbac.v1alpha1.RoleBinding resource with the given unique name, arguments, and options.
         *
@@ -464,12 +410,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1alpha1Ns.RoleBinding, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * RoleBindingList is a collection of RoleBindings
-      */
     @js.native
     class RoleBindingList protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.RoleBindingList {
+      extends atPulumiKubernetesLib.rbacMod.v1alpha1Ns.RoleBindingList {
       /**
         * Create a rbac.v1alpha1.RoleBindingList resource with the given unique name, arguments, and options.
         *
@@ -482,12 +425,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1alpha1Ns.RoleBindingList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * RoleList is a collection of Roles
-      */
     @js.native
     class RoleList protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.RoleList {
+      extends atPulumiKubernetesLib.rbacMod.v1alpha1Ns.RoleList {
       /**
         * Create a rbac.v1alpha1.RoleList resource with the given unique name, arguments, and options.
         *
@@ -515,12 +455,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRole = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1alpha1ClusterRoleMod.ClusterRole = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRole = js.native
+      ): atPulumiKubernetesLib.rbacV1alpha1ClusterRoleMod.ClusterRole = js.native
     }
     
     /* static members */
@@ -538,12 +478,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRoleBinding = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1alpha1ClusterRoleBindingMod.ClusterRoleBinding = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRoleBinding = js.native
+      ): atPulumiKubernetesLib.rbacV1alpha1ClusterRoleBindingMod.ClusterRoleBinding = js.native
     }
     
     /* static members */
@@ -561,12 +501,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRoleBindingList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1alpha1ClusterRoleBindingListMod.ClusterRoleBindingList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRoleBindingList = js.native
+      ): atPulumiKubernetesLib.rbacV1alpha1ClusterRoleBindingListMod.ClusterRoleBindingList = js.native
     }
     
     /* static members */
@@ -584,12 +524,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRoleList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1alpha1ClusterRoleListMod.ClusterRoleList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRoleList = js.native
+      ): atPulumiKubernetesLib.rbacV1alpha1ClusterRoleListMod.ClusterRoleList = js.native
     }
     
     /* static members */
@@ -607,12 +547,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.Role = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1alpha1RoleMod.Role = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.Role = js.native
+      ): atPulumiKubernetesLib.rbacV1alpha1RoleMod.Role = js.native
     }
     
     /* static members */
@@ -630,12 +570,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.RoleBinding = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1alpha1RoleBindingMod.RoleBinding = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.RoleBinding = js.native
+      ): atPulumiKubernetesLib.rbacV1alpha1RoleBindingMod.RoleBinding = js.native
     }
     
     /* static members */
@@ -653,12 +593,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.RoleBindingList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1alpha1RoleBindingListMod.RoleBindingList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.RoleBindingList = js.native
+      ): atPulumiKubernetesLib.rbacV1alpha1RoleBindingListMod.RoleBindingList = js.native
     }
     
     /* static members */
@@ -676,12 +616,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.RoleList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1alpha1RoleListMod.RoleList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.RoleList = js.native
+      ): atPulumiKubernetesLib.rbacV1alpha1RoleListMod.RoleList = js.native
     }
     
   }
@@ -689,13 +629,9 @@ object rbacNs extends js.Object {
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
-    /**
-      * ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a
-      * unit by a RoleBinding or ClusterRoleBinding.
-      */
     @js.native
     class ClusterRole protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRole {
+      extends atPulumiKubernetesLib.rbacMod.v1beta1Ns.ClusterRole {
       /**
         * Create a rbac.v1beta1.ClusterRole resource with the given unique name, arguments, and options.
         *
@@ -708,13 +644,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1beta1Ns.ClusterRole, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ClusterRoleBinding references a ClusterRole, but not contain it.  It can reference a
-      * ClusterRole in the global namespace, and adds who information via Subject.
-      */
     @js.native
     class ClusterRoleBinding protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRoleBinding {
+      extends atPulumiKubernetesLib.rbacMod.v1beta1Ns.ClusterRoleBinding {
       /**
         * Create a rbac.v1beta1.ClusterRoleBinding resource with the given unique name, arguments, and options.
         *
@@ -727,12 +659,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1beta1Ns.ClusterRoleBinding, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ClusterRoleBindingList is a collection of ClusterRoleBindings
-      */
     @js.native
     class ClusterRoleBindingList protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRoleBindingList {
+      extends atPulumiKubernetesLib.rbacMod.v1beta1Ns.ClusterRoleBindingList {
       /**
         * Create a rbac.v1beta1.ClusterRoleBindingList resource with the given unique name, arguments, and options.
         *
@@ -745,12 +674,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1beta1Ns.ClusterRoleBindingList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ClusterRoleList is a collection of ClusterRoles
-      */
     @js.native
     class ClusterRoleList protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRoleList {
+      extends atPulumiKubernetesLib.rbacMod.v1beta1Ns.ClusterRoleList {
       /**
         * Create a rbac.v1beta1.ClusterRoleList resource with the given unique name, arguments, and options.
         *
@@ -763,13 +689,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1beta1Ns.ClusterRoleList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a
-      * RoleBinding.
-      */
     @js.native
     class Role protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.Role {
+      extends atPulumiKubernetesLib.rbacMod.v1beta1Ns.Role {
       /**
         * Create a rbac.v1beta1.Role resource with the given unique name, arguments, and options.
         *
@@ -782,15 +704,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1beta1Ns.Role, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * RoleBinding references a role, but does not contain it.  It can reference a Role in the same
-      * namespace or a ClusterRole in the global namespace. It adds who information via Subjects and
-      * namespace information by which namespace it exists in.  RoleBindings in a given namespace
-      * only have effect in that namespace.
-      */
     @js.native
     class RoleBinding protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.RoleBinding {
+      extends atPulumiKubernetesLib.rbacMod.v1beta1Ns.RoleBinding {
       /**
         * Create a rbac.v1beta1.RoleBinding resource with the given unique name, arguments, and options.
         *
@@ -803,12 +719,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1beta1Ns.RoleBinding, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * RoleBindingList is a collection of RoleBindings
-      */
     @js.native
     class RoleBindingList protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.RoleBindingList {
+      extends atPulumiKubernetesLib.rbacMod.v1beta1Ns.RoleBindingList {
       /**
         * Create a rbac.v1beta1.RoleBindingList resource with the given unique name, arguments, and options.
         *
@@ -821,12 +734,9 @@ object rbacNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.rbacNs.v1beta1Ns.RoleBindingList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * RoleList is a collection of Roles
-      */
     @js.native
     class RoleList protected ()
-      extends atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.RoleList {
+      extends atPulumiKubernetesLib.rbacMod.v1beta1Ns.RoleList {
       /**
         * Create a rbac.v1beta1.RoleList resource with the given unique name, arguments, and options.
         *
@@ -854,12 +764,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRole = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1beta1ClusterRoleMod.ClusterRole = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRole = js.native
+      ): atPulumiKubernetesLib.rbacV1beta1ClusterRoleMod.ClusterRole = js.native
     }
     
     /* static members */
@@ -877,12 +787,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRoleBinding = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1beta1ClusterRoleBindingMod.ClusterRoleBinding = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRoleBinding = js.native
+      ): atPulumiKubernetesLib.rbacV1beta1ClusterRoleBindingMod.ClusterRoleBinding = js.native
     }
     
     /* static members */
@@ -900,12 +810,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRoleBindingList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1beta1ClusterRoleBindingListMod.ClusterRoleBindingList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRoleBindingList = js.native
+      ): atPulumiKubernetesLib.rbacV1beta1ClusterRoleBindingListMod.ClusterRoleBindingList = js.native
     }
     
     /* static members */
@@ -923,12 +833,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRoleList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1beta1ClusterRoleListMod.ClusterRoleList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRoleList = js.native
+      ): atPulumiKubernetesLib.rbacV1beta1ClusterRoleListMod.ClusterRoleList = js.native
     }
     
     /* static members */
@@ -946,12 +856,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.Role = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1beta1RoleMod.Role = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.Role = js.native
+      ): atPulumiKubernetesLib.rbacV1beta1RoleMod.Role = js.native
     }
     
     /* static members */
@@ -969,12 +879,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.RoleBinding = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1beta1RoleBindingMod.RoleBinding = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.RoleBinding = js.native
+      ): atPulumiKubernetesLib.rbacV1beta1RoleBindingMod.RoleBinding = js.native
     }
     
     /* static members */
@@ -992,12 +902,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.RoleBindingList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1beta1RoleBindingListMod.RoleBindingList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.RoleBindingList = js.native
+      ): atPulumiKubernetesLib.rbacV1beta1RoleBindingListMod.RoleBindingList = js.native
     }
     
     /* static members */
@@ -1015,12 +925,12 @@ object rbacNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.RoleList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.rbacV1beta1RoleListMod.RoleList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.RoleList = js.native
+      ): atPulumiKubernetesLib.rbacV1beta1RoleListMod.RoleList = js.native
     }
     
   }

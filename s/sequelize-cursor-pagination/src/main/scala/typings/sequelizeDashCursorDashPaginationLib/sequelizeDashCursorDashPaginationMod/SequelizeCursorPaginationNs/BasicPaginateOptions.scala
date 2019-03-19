@@ -17,7 +17,7 @@ trait BasicPaginateOptions[T] extends js.Object {
   var desc: js.UndefOr[scala.Boolean] = js.undefined
   var include: js.UndefOr[
     js.Array[
-      (sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _]) | sequelizeLib.sequelizeMod.sequelizeNs.IncludeOptions
+      (sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _, _]) | sequelizeLib.sequelizeMod.sequelizeNs.IncludeOptions
     ]
   ] = js.undefined
   var limit: js.UndefOr[scala.Double] = js.undefined
@@ -40,7 +40,7 @@ object BasicPaginateOptions {
     before: java.lang.String = null,
     desc: js.UndefOr[scala.Boolean] = js.undefined,
     include: js.Array[
-      (sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _]) | sequelizeLib.sequelizeMod.sequelizeNs.IncludeOptions
+      (sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _, _]) | sequelizeLib.sequelizeMod.sequelizeNs.IncludeOptions
     ] = null,
     limit: scala.Int | scala.Double = null,
     paginationField: java.lang.String = null,

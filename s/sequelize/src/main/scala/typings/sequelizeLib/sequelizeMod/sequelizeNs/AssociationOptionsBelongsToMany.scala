@@ -29,7 +29,7 @@ trait AssociationOptionsBelongsToMany extends AssociationOptionsManyToMany {
     * @see https://github.com/sequelize/sequelize/blob/v3.4.1/lib/associations/has-many.js
     * @see https://github.com/sequelize/sequelize/blob/v3.4.1/lib/associations/belongs-to-many.js
     */
-  var through: (Model[_, _]) | java.lang.String | ThroughOptions
+  var through: (Model[_, _, _]) | java.lang.String | ThroughOptions
   /**
     * Should the join model have timestamps
     */
@@ -43,7 +43,7 @@ trait AssociationOptionsBelongsToMany extends AssociationOptionsManyToMany {
 object AssociationOptionsBelongsToMany {
   @scala.inline
   def apply(
-    through: (Model[_, _]) | java.lang.String | ThroughOptions,
+    through: (Model[_, _, _]) | java.lang.String | ThroughOptions,
     as: java.lang.String | sequelizeLib.Anon_Plural = null,
     constraints: js.UndefOr[scala.Boolean] = js.undefined,
     foreignKey: java.lang.String | AssociationForeignKeyOptions = null,

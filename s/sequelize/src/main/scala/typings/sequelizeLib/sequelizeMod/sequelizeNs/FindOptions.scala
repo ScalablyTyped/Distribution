@@ -39,7 +39,7 @@ trait FindOptions[T]
     * If your association are set up with an `as` (eg. `X.hasMany(Y, { as: 'Z }`, you need to specify Z in
     * the as attribute when eager loading Y).
     */
-  var include: js.UndefOr[js.Array[(Model[_, _]) | IncludeOptions]] = js.undefined
+  var include: js.UndefOr[js.Array[(Model[_, _, _]) | IncludeOptions]] = js.undefined
   /**
     * Limit the results
     */
@@ -100,7 +100,7 @@ object FindOptions {
     distinct: js.UndefOr[scala.Boolean] = js.undefined,
     group: java.lang.String | js.Array[java.lang.String] | js.Object = null,
     having: AnyWhereOptions = null,
-    include: js.Array[(Model[_, _]) | IncludeOptions] = null,
+    include: js.Array[(Model[_, _, _]) | IncludeOptions] = null,
     limit: scala.Int | scala.Double = null,
     lock: TransactionLockLevel | sequelizeLib.Anon_Level = null,
     logging: scala.Boolean | js.Function = null,

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GeocoderViewModel extends js.Object {
-  var complete: Event
+  var complete: Event[js.Array[_]]
   var flightDuration: scala.Double
   var isSearchInProgress: scala.Boolean
   var key: java.lang.String
@@ -19,7 +19,7 @@ trait GeocoderViewModel extends js.Object {
 object GeocoderViewModel {
   @scala.inline
   def apply(
-    complete: Event,
+    complete: Event[js.Array[_]],
     flightDuration: scala.Double,
     isSearchInProgress: scala.Boolean,
     key: java.lang.String,

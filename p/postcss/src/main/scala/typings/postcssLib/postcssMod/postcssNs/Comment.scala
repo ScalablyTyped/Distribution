@@ -11,10 +11,17 @@ import scala.scalajs.js.annotation._
   * be stored in the Node#raws properties.
   */
 @js.native
-trait Comment extends Node {
+trait Comment
+  extends ChildNode
+     with NodeBase {
+  /**
+    * Returns the comment's parent node.
+    */
+  var parent: Container = js.native
   /**
     * The comment's text.
     */
   var text: java.lang.String = js.native
+  var `type`: postcssLib.postcssLibStrings.comment = js.native
 }
 

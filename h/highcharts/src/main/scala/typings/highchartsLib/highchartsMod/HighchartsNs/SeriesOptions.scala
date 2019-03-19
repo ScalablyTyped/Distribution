@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- highchartsLib.highchartsMod.HighchartsNs.SeriesChart because var conflicts: color, cursor, visible. Inlined allowPointSelect, animation, className, connectEnds, connectNulls, cropThreshold, dashStyle, dataLabels, enableMouseTracking, events, findNearestPointBy, getExtremesFromAll, keys, lineWidth, linecap, linkedTo, marker, negativeColor, point, pointInterval, pointIntervalUnit, pointPlacement, pointStart, selected, shadow, showCheckbox, showInLegend, softThreshold, stacking, states, stickyTracking, threshold, tooltip, turboThreshold, zoneAxis, zones */ trait SeriesOptions extends IndividualSeriesOptions {
+- highchartsLib.highchartsMod.HighchartsNs.SeriesChart because var conflicts: color, cursor, linkedTo, visible. Inlined allowPointSelect, animation, className, connectEnds, connectNulls, cropThreshold, dashStyle, dataLabels, enableMouseTracking, events, findNearestPointBy, getExtremesFromAll, keys, lineWidth, linecap, marker, negativeColor, point, pointInterval, pointIntervalUnit, pointPlacement, pointStart, selected, shadow, showCheckbox, showInLegend, softThreshold, stacking, states, stickyTracking, threshold, tooltip, turboThreshold, zoneAxis, zones */ trait SeriesOptions extends IndividualSeriesOptions {
   /**
     * Allow this series' points to be selected by clicking on the markers, bars or pie slices.
     * @default false
@@ -103,13 +103,6 @@ import scala.scalajs.js.annotation._
     * @default 'round'
     */
   var linecap: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * The id of another series to link to. Additionally, the value can be ':previous' to link to the previous series.
-    * When two series are linked, only the first one appears in the legend. Toggling the visibility of this also
-    * toggles the linked series.
-    * @since 3.0
-    */
-  var linkedTo: js.UndefOr[java.lang.String] = js.undefined
   var marker: js.UndefOr[Marker] = js.undefined
   /**
     * The color for the parts of the graph or points that are below the threshold.

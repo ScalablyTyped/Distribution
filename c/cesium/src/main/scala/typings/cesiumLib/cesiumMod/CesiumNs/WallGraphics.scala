@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait WallGraphics extends js.Object {
-  val definitionChanged: Event = js.native
+  val definitionChanged: Event[js.Array[_]] = js.native
   var fill: Property = js.native
   var granularity: Property = js.native
   var material: MaterialProperty = js.native

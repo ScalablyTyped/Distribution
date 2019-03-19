@@ -134,14 +134,14 @@ trait Hooks[TInstance] extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def afterDefine(fn: js.Function1[/* model */ Model[TInstance, _], scala.Unit]): scala.Unit = js.native
+  def afterDefine(fn: js.Function1[/* model */ Model[TInstance, _, _], scala.Unit]): scala.Unit = js.native
   /**
     * A hook that is run after a define call
     *
     * @param name
     * @param fn   A callback function that is called with factory
     */
-  def afterDefine(name: java.lang.String, fn: js.Function1[/* model */ Model[TInstance, _], scala.Unit]): scala.Unit = js.native
+  def afterDefine(name: java.lang.String, fn: js.Function1[/* model */ Model[TInstance, _, _], scala.Unit]): scala.Unit = js.native
   def afterDelete(
     fn: js.Function3[
       /* instance */ TInstance, 

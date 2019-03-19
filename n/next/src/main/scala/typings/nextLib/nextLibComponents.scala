@@ -23,11 +23,16 @@ object nextLibComponents {
   @scala.inline
   def Head: reactLib.reactMod.ReactNs.ComponentType[nextLib.documentMod.HeadProps] = js.constructorOf[nextLib.documentMod.Head].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[nextLib.documentMod.HeadProps]]
   @scala.inline
+  def Html: reactLib.reactMod.ReactNs.ComponentType[reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHtmlElement]] = js.constructorOf[nextLib.documentMod.Html].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLHtmlElement]]]
+  @scala.inline
   def Link: reactLib.reactMod.ReactNs.ComponentType[nextDashServerLib.linkMod.LinkProps] = js.constructorOf[nextLib.linkMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[nextDashServerLib.linkMod.LinkProps]]
   @scala.inline
   def Main: reactLib.reactMod.ReactNs.ComponentType[js.Object] = js.constructorOf[nextLib.documentMod.Main].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Object]]
   @scala.inline
   def NextScript: reactLib.reactMod.ReactNs.ComponentType[nextLib.documentMod.NextScriptProps] = js.constructorOf[nextLib.documentMod.NextScript].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[nextLib.documentMod.NextScriptProps]]
+  @scala.inline
+  def HTMLProps: reactLib.reactMod.ReactNs.HTMLProps.type = reactLib.reactMod.ReactNs.HTMLProps
+  type HTMLProps[T] = reactLib.reactMod.ReactNs.HTMLProps[T]
   @scala.inline
   def HeadProps: nextLib.documentMod.HeadProps.type = nextLib.documentMod.HeadProps
   type HeadProps = nextLib.documentMod.HeadProps

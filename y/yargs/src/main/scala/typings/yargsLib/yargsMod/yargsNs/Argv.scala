@@ -53,8 +53,6 @@ trait Argv[T] extends js.Object {
   def coerce[O /* <: org.scalablytyped.runtime.StringDictionary[js.Function1[/* arg */ js.Any, _]] */](opts: O): Argv[(Omit[T, java.lang.String]) with yargsLib.yargsLibStrings.Argv with O] = js.native
   def coerce[K /* <: java.lang.String */, V](key: K, func: js.Function1[/* arg */ js.Any, V]): Argv[(Omit[T, K]) with yargsLib.yargsLibStrings.Argv with js.Any] = js.native
   def coerce[K /* <: java.lang.String */, V](key: js.Array[K], func: js.Function1[/* arg */ js.Any, V]): Argv[(Omit[T, K]) with yargsLib.yargsLibStrings.Argv with js.Any] = js.native
-  def command(command: java.lang.String, description: java.lang.String, module: CommandModule[T, _]): Argv[T] = js.native
-  def command(command: js.Array[java.lang.String], description: java.lang.String, module: CommandModule[T, _]): Argv[T] = js.native
   def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: java.lang.String, description: java.lang.String): Argv[T] = js.native
   def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: java.lang.String, description: java.lang.String, builder: O): Argv[T] = js.native
   def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](
@@ -74,6 +72,7 @@ trait Argv[T] extends js.Object {
     builder: js.Function1[/* args */ Argv[T], Argv[U]],
     handler: js.Function1[/* args */ Arguments[U], scala.Unit]
   ): Argv[T] = js.native
+  def command[U](command: java.lang.String, description: java.lang.String, module: CommandModule[T, U]): Argv[U] = js.native
   def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: java.lang.String, showInHelp: yargsLib.yargsLibNumbers.`false`): Argv[T] = js.native
   def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: java.lang.String, showInHelp: yargsLib.yargsLibNumbers.`false`, builder: O): Argv[T] = js.native
   def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](
@@ -117,6 +116,7 @@ trait Argv[T] extends js.Object {
     builder: js.Function1[/* args */ Argv[T], Argv[U]],
     handler: js.Function1[/* args */ Arguments[U], scala.Unit]
   ): Argv[T] = js.native
+  def command[U](command: js.Array[java.lang.String], description: java.lang.String, module: CommandModule[T, U]): Argv[U] = js.native
   def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: js.Array[java.lang.String], showInHelp: yargsLib.yargsLibNumbers.`false`): Argv[T] = js.native
   def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](command: js.Array[java.lang.String], showInHelp: yargsLib.yargsLibNumbers.`false`, builder: O): Argv[T] = js.native
   def command[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](

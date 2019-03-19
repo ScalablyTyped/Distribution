@@ -11,12 +11,9 @@ object coordinationNs extends js.Object {
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
-    /**
-      * Lease defines a lease concept.
-      */
     @js.native
     class Lease protected ()
-      extends atPulumiKubernetesLib.providerMod.coordinationNs.v1beta1Ns.Lease {
+      extends atPulumiKubernetesLib.coordinationMod.v1beta1Ns.Lease {
       /**
         * Create a coordination.v1beta1.Lease resource with the given unique name, arguments, and options.
         *
@@ -29,12 +26,9 @@ object coordinationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coordinationNs.v1beta1Ns.Lease, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * LeaseList is a list of Lease objects.
-      */
     @js.native
     class LeaseList protected ()
-      extends atPulumiKubernetesLib.providerMod.coordinationNs.v1beta1Ns.LeaseList {
+      extends atPulumiKubernetesLib.coordinationMod.v1beta1Ns.LeaseList {
       /**
         * Create a coordination.v1beta1.LeaseList resource with the given unique name, arguments, and options.
         *
@@ -62,12 +56,12 @@ object coordinationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coordinationNs.v1beta1Ns.Lease = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coordinationV1beta1LeaseMod.Lease = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coordinationNs.v1beta1Ns.Lease = js.native
+      ): atPulumiKubernetesLib.coordinationV1beta1LeaseMod.Lease = js.native
     }
     
     /* static members */
@@ -85,12 +79,12 @@ object coordinationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coordinationNs.v1beta1Ns.LeaseList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coordinationV1beta1LeaseListMod.LeaseList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coordinationNs.v1beta1Ns.LeaseList = js.native
+      ): atPulumiKubernetesLib.coordinationV1beta1LeaseListMod.LeaseList = js.native
     }
     
   }

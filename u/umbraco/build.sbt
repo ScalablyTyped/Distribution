@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "umbraco"
-version := "v7.2.8-dt-20180214Z-77ad6f"
+version := "v7.2.8-dt-20180214Z-ac9bcd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-5b2617",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-5e6318",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

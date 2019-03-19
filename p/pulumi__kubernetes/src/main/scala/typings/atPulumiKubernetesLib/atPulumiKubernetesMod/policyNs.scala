@@ -11,13 +11,9 @@ object policyNs extends js.Object {
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
-    /**
-      * PodDisruptionBudget is an object to define the max disruption that can be caused to a
-      * collection of pods
-      */
     @js.native
     class PodDisruptionBudget protected ()
-      extends atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodDisruptionBudget {
+      extends atPulumiKubernetesLib.policyMod.v1beta1Ns.PodDisruptionBudget {
       /**
         * Create a policy.v1beta1.PodDisruptionBudget resource with the given unique name, arguments, and options.
         *
@@ -30,12 +26,9 @@ object policyNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.policyNs.v1beta1Ns.PodDisruptionBudget, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PodDisruptionBudgetList is a collection of PodDisruptionBudgets.
-      */
     @js.native
     class PodDisruptionBudgetList protected ()
-      extends atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodDisruptionBudgetList {
+      extends atPulumiKubernetesLib.policyMod.v1beta1Ns.PodDisruptionBudgetList {
       /**
         * Create a policy.v1beta1.PodDisruptionBudgetList resource with the given unique name, arguments, and options.
         *
@@ -48,13 +41,9 @@ object policyNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.policyNs.v1beta1Ns.PodDisruptionBudgetList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PodSecurityPolicy governs the ability to make requests that affect the Security Context that
-      * will be applied to a pod and container.
-      */
     @js.native
     class PodSecurityPolicy protected ()
-      extends atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodSecurityPolicy {
+      extends atPulumiKubernetesLib.policyMod.v1beta1Ns.PodSecurityPolicy {
       /**
         * Create a policy.v1beta1.PodSecurityPolicy resource with the given unique name, arguments, and options.
         *
@@ -67,12 +56,9 @@ object policyNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.policyNs.v1beta1Ns.PodSecurityPolicy, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PodSecurityPolicyList is a list of PodSecurityPolicy objects.
-      */
     @js.native
     class PodSecurityPolicyList protected ()
-      extends atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodSecurityPolicyList {
+      extends atPulumiKubernetesLib.policyMod.v1beta1Ns.PodSecurityPolicyList {
       /**
         * Create a policy.v1beta1.PodSecurityPolicyList resource with the given unique name, arguments, and options.
         *
@@ -100,12 +86,12 @@ object policyNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodDisruptionBudget = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.policyV1beta1PodDisruptionBudgetMod.PodDisruptionBudget = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodDisruptionBudget = js.native
+      ): atPulumiKubernetesLib.policyV1beta1PodDisruptionBudgetMod.PodDisruptionBudget = js.native
     }
     
     /* static members */
@@ -123,12 +109,12 @@ object policyNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodDisruptionBudgetList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.policyV1beta1PodDisruptionBudgetListMod.PodDisruptionBudgetList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodDisruptionBudgetList = js.native
+      ): atPulumiKubernetesLib.policyV1beta1PodDisruptionBudgetListMod.PodDisruptionBudgetList = js.native
     }
     
     /* static members */
@@ -146,12 +132,12 @@ object policyNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodSecurityPolicy = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.policyV1beta1PodSecurityPolicyMod.PodSecurityPolicy = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodSecurityPolicy = js.native
+      ): atPulumiKubernetesLib.policyV1beta1PodSecurityPolicyMod.PodSecurityPolicy = js.native
     }
     
     /* static members */
@@ -169,12 +155,12 @@ object policyNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodSecurityPolicyList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.policyV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodSecurityPolicyList = js.native
+      ): atPulumiKubernetesLib.policyV1beta1PodSecurityPolicyListMod.PodSecurityPolicyList = js.native
     }
     
   }

@@ -1,25 +1,25 @@
 organization := "org.scalablytyped"
 name := "gulp-svg-sprite"
-version := "1.2.9-dt-20181017Z-4693fa"
+version := "1.2.9-dt-20181017Z-b2b25a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "async" % "2.4-dt-20190212Z-21c6be",
-  "org.scalablytyped" %%% "is-stream" % "1.1-dt-20180214Z-3ddf22",
+  "org.scalablytyped" %%% "is-stream" % "1.1-dt-20180214Z-e98c3d",
   "org.scalablytyped" %%% "logform" % "1.2-dt-20180214Z-4841be",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190313Z-f6d9fe",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190318Z-f6d9fe",
   "org.scalablytyped" %%% "one-time" % "0.0-dt-20181231Z-6dcdf6",
-  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20190227Z-ddee67",
-  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-2fa149",
+  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20190227Z-1c8cf8",
+  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-994550",
   "org.scalablytyped" %%% "stack-trace" % "0.0-unknown-dt-20180214Z-8bbfec",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "svg-sprite" % "0.0-unknown-dt-20181017Z-d959db",
+  "org.scalablytyped" %%% "svg-sprite" % "0.0-unknown-dt-20181017Z-372248",
   "org.scalablytyped" %%% "triple-beam" % "1.3-dt-20180828Z-c1833f",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20181121Z-b3a481",
-  "org.scalablytyped" %%% "winston" % "3.2.1-dff84b",
-  "org.scalablytyped" %%% "winston-transport" % "4.3.0-90302d")
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20181121Z-e69787",
+  "org.scalablytyped" %%% "winston" % "3.2.1-e632d2",
+  "org.scalablytyped" %%% "winston-transport" % "4.3.0-9aa6dc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

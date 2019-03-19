@@ -12,7 +12,7 @@ trait ModelGraphics extends js.Object {
   var color: Property = js.native
   var colorBlendAmount: Property | scala.Double = js.native
   var colorBlendMode: Property = js.native
-  val definitionChanged: Event = js.native
+  val definitionChanged: Event[js.Array[_]] = js.native
   var distanceDisplayCondition: Property = js.native
   var heightReference: Property = js.native
   var incrementallyLoadTextures: Property | scala.Boolean = js.native

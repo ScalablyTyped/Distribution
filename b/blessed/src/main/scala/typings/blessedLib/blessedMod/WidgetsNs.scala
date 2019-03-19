@@ -794,7 +794,7 @@ object WidgetsNs extends js.Object {
     /**
       * Dump all output and input to desired file. Can be used together with log option if set as a boolean.
       */
-    var dump: js.UndefOr[java.lang.String] = js.undefined
+    var dump: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
     /**
       * Do CSR on any element within 20 cols of the screen edge on either side. Faster than smartCSR,
       * but may cause flickering depending on what is on each side of the element.
@@ -856,7 +856,7 @@ object WidgetsNs extends js.Object {
     /**
       * Create a log file. See log method.
       */
-    var log: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
+    var log: js.UndefOr[java.lang.String] = js.undefined
     /**
       * Input and output streams. process.stdin/process.stdout by default, however, it could be a
       * net.Socket if you want to make a program that runs over telnet or something of that nature.

@@ -26,13 +26,13 @@ trait DefineAttributeColumnReferencesOptions extends js.Object {
   /**
     * If this column references another table, provide it here as a Model, or a string
     */
-  var model: java.lang.String | (Model[_, _])
+  var model: java.lang.String | (Model[_, _, _])
 }
 
 object DefineAttributeColumnReferencesOptions {
   @scala.inline
   def apply(
-    model: java.lang.String | (Model[_, _]),
+    model: java.lang.String | (Model[_, _, _]),
     deferrable: DeferrableInitiallyDeferred | DeferrableInitiallyImmediate | DeferrableNot | DeferrableSetDeferred | DeferrableSetImmediate = null,
     key: java.lang.String = null
   ): DefineAttributeColumnReferencesOptions = {

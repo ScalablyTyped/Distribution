@@ -6,22 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Key extends js.Object {
-  var key: js.UndefOr[openpgpLib.openpgpMod.keyNs.Key] = js.undefined
-  var reasonForRevocation: js.UndefOr[Anon_Flag] = js.undefined
-  var revocationCertificate: js.UndefOr[java.lang.String] = js.undefined
+  var key: openpgpLib.openpgpMod.openpgpNs.keyNs.Key
+  var privateKeyArmored: java.lang.String
+  var publicKeyArmored: java.lang.String
+  var revocationCertificate: java.lang.String
 }
 
 object Anon_Key {
   @scala.inline
   def apply(
-    key: openpgpLib.openpgpMod.keyNs.Key = null,
-    reasonForRevocation: Anon_Flag = null,
-    revocationCertificate: java.lang.String = null
+    key: openpgpLib.openpgpMod.openpgpNs.keyNs.Key,
+    privateKeyArmored: java.lang.String,
+    publicKeyArmored: java.lang.String,
+    revocationCertificate: java.lang.String
   ): Anon_Key = {
-    val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key)
-    if (reasonForRevocation != null) __obj.updateDynamic("reasonForRevocation")(reasonForRevocation)
-    if (revocationCertificate != null) __obj.updateDynamic("revocationCertificate")(revocationCertificate)
+    val __obj = js.Dynamic.literal(key = key, privateKeyArmored = privateKeyArmored, publicKeyArmored = publicKeyArmored, revocationCertificate = revocationCertificate)
+  
     __obj.asInstanceOf[Anon_Key]
   }
 }

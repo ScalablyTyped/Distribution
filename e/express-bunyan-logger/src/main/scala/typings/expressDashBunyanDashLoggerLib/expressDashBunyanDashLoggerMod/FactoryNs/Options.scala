@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Options extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof bunyan.bunyan.LoggerOptions ]:? bunyan.bunyan.LoggerOptions[P]} */ trait Options extends js.Object {
   var excludes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var format: js.UndefOr[java.lang.String | FormatFunction] = js.undefined
   var genReqId: js.UndefOr[RequestIdGenFunction] = js.undefined
@@ -16,9 +17,6 @@ trait Options extends js.Object {
   var obfuscate: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var obfuscatePlaceholder: js.UndefOr[java.lang.String] = js.undefined
   var parseUA: js.UndefOr[scala.Boolean] = js.undefined
-  var serializers: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[bunyanLib.bunyanMod.LoggerNs.Serializer]
-  ] = js.undefined
 }
 
 object Options {
@@ -33,8 +31,7 @@ object Options {
     logger: bunyanLib.bunyanMod.namespaced = null,
     obfuscate: js.Array[java.lang.String] = null,
     obfuscatePlaceholder: java.lang.String = null,
-    parseUA: js.UndefOr[scala.Boolean] = js.undefined,
-    serializers: org.scalablytyped.runtime.StringDictionary[bunyanLib.bunyanMod.LoggerNs.Serializer] = null
+    parseUA: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (excludes != null) __obj.updateDynamic("excludes")(excludes)
@@ -47,7 +44,6 @@ object Options {
     if (obfuscate != null) __obj.updateDynamic("obfuscate")(obfuscate)
     if (obfuscatePlaceholder != null) __obj.updateDynamic("obfuscatePlaceholder")(obfuscatePlaceholder)
     if (!js.isUndefined(parseUA)) __obj.updateDynamic("parseUA")(parseUA)
-    if (serializers != null) __obj.updateDynamic("serializers")(serializers)
     __obj.asInstanceOf[Options]
   }
 }

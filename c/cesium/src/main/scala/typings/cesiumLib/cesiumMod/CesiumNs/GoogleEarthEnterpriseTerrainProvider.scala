@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait GoogleEarthEnterpriseTerrainProvider extends js.Object {
   var availability: TileAvailability = js.native
   var credit: Credit = js.native
-  var errorEvent: Event = js.native
+  var errorEvent: Event[js.Array[_]] = js.native
   var hasVertexNormals: scala.Boolean = js.native
   var hasWaterMask: scala.Boolean = js.native
   var ready: scala.Boolean = js.native

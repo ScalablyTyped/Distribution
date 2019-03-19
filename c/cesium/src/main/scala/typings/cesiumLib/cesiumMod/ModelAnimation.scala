@@ -22,14 +22,14 @@ class ModelAnimation ()
   /* CompleteClass */
   override var speedup: scala.Double = js.native
   /* CompleteClass */
-  override var start: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override var start: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
   override var startTime: cesiumLib.cesiumMod.CesiumNs.JulianDate = js.native
   /* CompleteClass */
-  override var stop: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override var stop: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
   override var stopTime: cesiumLib.cesiumMod.CesiumNs.JulianDate = js.native
   /* CompleteClass */
-  override var update: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override var update: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
 }
 

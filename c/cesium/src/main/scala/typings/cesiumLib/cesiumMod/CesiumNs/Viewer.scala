@@ -33,7 +33,7 @@ trait Viewer extends js.Object {
   val sceneModePicker: SceneModePicker = js.native
   val screenSpaceEventHandler: ScreenSpaceEventHandler = js.native
   var selectedEntity: Entity = js.native
-  val selectedEntityChanged: Event = js.native
+  val selectedEntityChanged: Event[js.Array[js.UndefOr[Entity]]] = js.native
   val selectionIndicator: SelectionIndicator = js.native
   val shadowMap: ShadowMap = js.native
   var shadows: scala.Boolean = js.native
@@ -42,7 +42,7 @@ trait Viewer extends js.Object {
   var terrainShadows: ShadowMode = js.native
   val timeline: Timeline = js.native
   var trackedEntity: Entity = js.native
-  val trackedEntityChanged: Event = js.native
+  val trackedEntityChanged: Event[js.Array[js.UndefOr[Entity]]] = js.native
   var useDefaultRenderLoop: scala.Boolean = js.native
   val vrButton: VRButton = js.native
   def destroy(): scala.Unit = js.native

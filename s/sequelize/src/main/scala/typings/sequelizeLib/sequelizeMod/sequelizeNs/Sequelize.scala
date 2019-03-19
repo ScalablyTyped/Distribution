@@ -116,12 +116,12 @@ trait Sequelize
     * @param options    These options are merged with the default define options provided to the Sequelize
     *                   constructor
     */
-  def define[TInstance, TAttributes](modelName: java.lang.String, attributes: DefineModelAttributes[TAttributes]): Model[TInstance, TAttributes] = js.native
-  def define[TInstance, TAttributes](
+  def define[TInstance, TAttributes, TCreationAttributes](modelName: java.lang.String, attributes: DefineModelAttributes[TCreationAttributes]): Model[TInstance, TAttributes, TCreationAttributes] = js.native
+  def define[TInstance, TAttributes, TCreationAttributes](
     modelName: java.lang.String,
-    attributes: DefineModelAttributes[TAttributes],
+    attributes: DefineModelAttributes[TCreationAttributes],
     options: DefineOptions[TInstance]
-  ): Model[TInstance, TAttributes] = js.native
+  ): Model[TInstance, TAttributes, TCreationAttributes] = js.native
   /**
     * Drop all tables defined through this sequelize instance. This is done by calling Model.drop on each model
     * @see {Model#drop} for options
@@ -183,11 +183,15 @@ trait Sequelize
     * @param defineFunction An optional function that provides model definitions. Useful if you do not
     *     want to use the module root as the define function
     */
-  def `import`[TInstance, TAttributes](path: java.lang.String): Model[TInstance, TAttributes] = js.native
+  def `import`[TInstance, TAttributes](path: java.lang.String): Model[TInstance, TAttributes, TAttributes] = js.native
   def `import`[TInstance, TAttributes](
     path: java.lang.String,
-    defineFunction: js.Function2[/* sequelize */ this.type, /* dataTypes */ DataTypes, Model[TInstance, TAttributes]]
-  ): Model[TInstance, TAttributes] = js.native
+    defineFunction: js.Function2[
+      /* sequelize */ this.type, 
+      /* dataTypes */ DataTypes, 
+      Model[TInstance, TAttributes, TAttributes]
+    ]
+  ): Model[TInstance, TAttributes, TAttributes] = js.native
   /**
     * Checks whether a model with the given name is defined
     *
@@ -199,7 +203,7 @@ trait Sequelize
     *
     * @param modelName The name of a model defined with Sequelize.define
     */
-  def model[TInstance, TAttributes](modelName: java.lang.String): Model[TInstance, TAttributes] = js.native
+  def model[TInstance, TAttributes](modelName: java.lang.String): Model[TInstance, TAttributes, TAttributes] = js.native
   /**
     * Execute a query on the DB, with the posibility to bypass all the sequelize goodness.
     *

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait PointGraphics extends js.Object {
   var color: Property = js.native
-  val definitionChanged: Event = js.native
+  val definitionChanged: Event[js.Array[_]] = js.native
   var disableDepthTestDistance: Property = js.native
   var distanceDisplayCondition: Property = js.native
   var heightReference: Property = js.native

@@ -22,6 +22,9 @@ object qrcodeLibStrings {
   sealed trait alphanumeric extends js.Object
   
   @js.native
+  sealed trait byte extends js.Object
+  
+  @js.native
   sealed trait high extends js.Object
   
   @js.native
@@ -32,6 +35,9 @@ object qrcodeLibStrings {
   
   @js.native
   sealed trait `image/webp` extends js.Object
+  
+  @js.native
+  sealed trait kanji extends js.Object
   
   @js.native
   sealed trait low extends js.Object
@@ -68,6 +74,8 @@ object qrcodeLibStrings {
   @scala.inline
   def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
   @scala.inline
+  def byte: byte = "byte".asInstanceOf[byte]
+  @scala.inline
   def high: high = "high".asInstanceOf[high]
   @scala.inline
   def `image/jpeg`: `image/jpeg` = "image/jpeg".asInstanceOf[`image/jpeg`]
@@ -75,6 +83,8 @@ object qrcodeLibStrings {
   def `image/png`: `image/png` = "image/png".asInstanceOf[`image/png`]
   @scala.inline
   def `image/webp`: `image/webp` = "image/webp".asInstanceOf[`image/webp`]
+  @scala.inline
+  def kanji: kanji = "kanji".asInstanceOf[kanji]
   @scala.inline
   def low: low = "low".asInstanceOf[low]
   @scala.inline

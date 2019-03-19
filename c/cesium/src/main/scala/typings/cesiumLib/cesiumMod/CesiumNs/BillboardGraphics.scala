@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait BillboardGraphics extends js.Object {
   var alignedAxis: Property = js.native
   var color: Property = js.native
-  var definitionChanged: Event = js.native
+  var definitionChanged: Event[js.Array[_]] = js.native
   var eyeOffset: Property = js.native
   var height: Property = js.native
   var horizontalOrigin: Property = js.native

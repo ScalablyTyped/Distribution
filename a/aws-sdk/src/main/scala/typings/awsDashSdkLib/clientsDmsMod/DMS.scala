@@ -46,6 +46,41 @@ trait DMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Applies a pending maintenance action to a resource (for example, to a replication instance).
+    */
+  def applyPendingMaintenanceAction(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.ApplyPendingMaintenanceActionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def applyPendingMaintenanceAction(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.ApplyPendingMaintenanceActionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.ApplyPendingMaintenanceActionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Applies a pending maintenance action to a resource (for example, to a replication instance).
+    */
+  def applyPendingMaintenanceAction(params: awsDashSdkLib.clientsDmsMod.DMSNs.ApplyPendingMaintenanceActionMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.ApplyPendingMaintenanceActionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def applyPendingMaintenanceAction(
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.ApplyPendingMaintenanceActionMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.ApplyPendingMaintenanceActionResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.ApplyPendingMaintenanceActionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Creates an endpoint using the provided settings.
     */
   def createEndpoint(): awsDashSdkLib.libRequestMod.Request[
@@ -743,6 +778,41 @@ trait DMS
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDmsMod.DMSNs.DescribeOrderableReplicationInstancesResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * For internal use only
+    */
+  def describePendingMaintenanceActions(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribePendingMaintenanceActionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def describePendingMaintenanceActions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribePendingMaintenanceActionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribePendingMaintenanceActionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * For internal use only
+    */
+  def describePendingMaintenanceActions(params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribePendingMaintenanceActionsMessage): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribePendingMaintenanceActionsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def describePendingMaintenanceActions(
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribePendingMaintenanceActionsMessage,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribePendingMaintenanceActionsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribePendingMaintenanceActionsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

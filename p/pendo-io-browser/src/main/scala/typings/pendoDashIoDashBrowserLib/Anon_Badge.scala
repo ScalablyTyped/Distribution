@@ -9,6 +9,7 @@ trait Anon_Badge extends js.Object {
   var badge: js.Any
   var device: Anon_Desktop
   var launcher: Anon_Keywords
+   // TODO
   var priority: scala.Double
   var `type`: java.lang.String
 }

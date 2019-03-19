@@ -21,7 +21,7 @@ class Clock protected ()
   /* CompleteClass */
   override var multiplier: scala.Double = js.native
   /* CompleteClass */
-  override var onTick: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override var onTick: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[cesiumLib.cesiumMod.CesiumNs.Clock]] = js.native
   /* CompleteClass */
   override var shouldAnimate: scala.Boolean = js.native
   /* CompleteClass */

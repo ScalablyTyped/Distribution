@@ -18,7 +18,7 @@ trait Anon_CallBack extends js.Object {
   def render(): reactLib.reactMod.Global.JSXNs.Element = js.native
   def select(value: js.Any, itemHeight: js.Any, scrollTo: js.Any): scala.Unit = js.native
   def selectByIndex(index: js.Any, itemHeight: js.Any, zscrollTo: js.Any): scala.Unit = js.native
-  def setState[K /* <: java.lang.String */](state: js.Any): scala.Unit = js.native
-  def setState[K /* <: java.lang.String */](state: js.Any, callback: js.Function0[_]): scala.Unit = js.native
+  def setState[K /* <: java.lang.String | scala.Double | js.Symbol */](state: js.Any): scala.Unit = js.native
+  def setState[K /* <: java.lang.String | scala.Double | js.Symbol */](state: js.Any, callback: js.Function0[_]): scala.Unit = js.native
 }
 

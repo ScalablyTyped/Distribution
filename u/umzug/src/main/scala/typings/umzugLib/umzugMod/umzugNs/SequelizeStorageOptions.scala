@@ -21,7 +21,7 @@ trait SequelizeStorageOptions extends Storage {
     * Must have column name matching `columnName` option
     * Optional of `sequelize` is passed.
     */
-  var model: js.UndefOr[sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _]] = js.undefined
+  var model: js.UndefOr[sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _, _]] = js.undefined
   /**
     * The name of the to be used model.
     * Defaults to 'SequelizeMeta'
@@ -47,7 +47,7 @@ object SequelizeStorageOptions {
     executed: () => js.Promise[js.Array[java.lang.String]],
     logMigration: java.lang.String => js.Promise[scala.Unit],
     unlogMigration: java.lang.String => js.Promise[scala.Unit],
-    model: sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _] = null,
+    model: sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _, _] = null,
     modelName: java.lang.String = null,
     sequelize: sequelizeLib.sequelizeMod.sequelizeNs.Sequelize = null,
     tableName: java.lang.String = null

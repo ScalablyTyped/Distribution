@@ -14,7 +14,7 @@ trait ThroughOptions extends js.Object {
   /**
     * The model used to join both sides of the N:M association.
     */
-  var model: Model[_, _]
+  var model: Model[_, _, _]
   /**
     * A key/value set that will be used for association create and find defaults on the through model.
     * (Remember to add the attributes to the through model)
@@ -32,7 +32,7 @@ trait ThroughOptions extends js.Object {
 object ThroughOptions {
   @scala.inline
   def apply(
-    model: Model[_, _],
+    model: Model[_, _, _],
     scope: AssociationScope = null,
     unique: js.UndefOr[scala.Boolean] = js.undefined
   ): ThroughOptions = {

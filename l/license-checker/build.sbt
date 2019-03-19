@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "license-checker"
-version := "15.0-dt-20180214Z-a81257"
+version := "25.0-dt-20190318Z-44b897"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

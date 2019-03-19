@@ -1,6 +1,6 @@
 ```
-// Type definitions for openpgp 4.4.8
-// Project: http://openpgpjs.org/
+// Type definitions for openpgp v4.4.10
+// Project: https://openpgpjs.org
 // Definitions by: Guillaume Lacasa <https://blog.lacasa.fr>
 //                 Errietta Kostala <https://github.com/errietta>
 //                 Daniel Montesinos <https://github.com/damonpam>

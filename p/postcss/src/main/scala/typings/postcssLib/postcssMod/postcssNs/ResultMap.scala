@@ -14,11 +14,11 @@ trait ResultMap extends js.Object {
     * @param mapping
     * @returns {}
     */
-  def addMapping(mapping: postcssLib.Anon_Generated): scala.Unit = js.native
+  def addMapping(mapping: sourceDashMapLib.sourceDashMapMod.Mapping): scala.Unit = js.native
   /**
     * Applies a SourceMap for a source file to the SourceMap. Each mapping to
     * the supplied source file is rewritten using the supplied SourceMap.
-    * Note: The resolution for the resulting mappings is the minimium of this
+    * Note: The resolution for the resulting mappings is the minimum of this
     * map and the supplied map.
     * @param sourceMapConsumer The SourceMap to be applied.
     * @param sourceFile The filename of the source file. If omitted, sourceMapConsumer
@@ -31,9 +31,16 @@ trait ResultMap extends js.Object {
     * If omitted, it is assumed that both SourceMaps are in the same directory;
     * thus, not needing any rewriting (Supplying '.' has the same effect).
     */
-  def applySourceMap(sourceMapConsumer: js.Any): scala.Unit = js.native
-  def applySourceMap(sourceMapConsumer: js.Any, sourceFile: java.lang.String): scala.Unit = js.native
-  def applySourceMap(sourceMapConsumer: js.Any, sourceFile: java.lang.String, sourceMapPath: java.lang.String): scala.Unit = js.native
+  def applySourceMap(sourceMapConsumer: sourceDashMapLib.sourceDashMapMod.SourceMapConsumer): scala.Unit = js.native
+  def applySourceMap(
+    sourceMapConsumer: sourceDashMapLib.sourceDashMapMod.SourceMapConsumer,
+    sourceFile: java.lang.String
+  ): scala.Unit = js.native
+  def applySourceMap(
+    sourceMapConsumer: sourceDashMapLib.sourceDashMapMod.SourceMapConsumer,
+    sourceFile: java.lang.String,
+    sourceMapPath: java.lang.String
+  ): scala.Unit = js.native
   /**
     * Set the source content for an original source file.
     * @param sourceFile The URL of the original source file.
@@ -43,6 +50,6 @@ trait ResultMap extends js.Object {
   /**
     * Renders the source map being generated to JSON.
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): sourceDashMapLib.sourceDashMapMod.RawSourceMap = js.native
 }
 

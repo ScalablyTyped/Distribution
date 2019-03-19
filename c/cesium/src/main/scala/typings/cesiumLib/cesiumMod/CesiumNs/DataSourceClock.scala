@@ -10,7 +10,7 @@ trait DataSourceClock extends js.Object {
   var clockRange: ClockRange = js.native
   var clockStep: ClockStep = js.native
   var currentTime: JulianDate = js.native
-  var definitionChanged: Event = js.native
+  var definitionChanged: Event[js.Array[_]] = js.native
   var multiplier: scala.Double = js.native
   var startTime: JulianDate = js.native
   var stopTime: JulianDate = js.native

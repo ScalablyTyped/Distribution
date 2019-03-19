@@ -13,7 +13,7 @@ class EntityCluster ()
   /* CompleteClass */
   override var clusterBillboards: scala.Boolean = js.native
   /* CompleteClass */
-  override var clusterEvent: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override var clusterEvent: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
   override var clusterLabels: scala.Boolean = js.native
   /* CompleteClass */

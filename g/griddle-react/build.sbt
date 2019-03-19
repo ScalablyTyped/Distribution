@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "griddle-react"
-version := "1.13.1-b42507"
+version := "1.13.1-4a3594"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190312Z-6f0f1a",
-  "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190306Z-e200e2",
+  "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190318Z-e200e2",
   "org.scalablytyped" %%% "recompose" % "0.30-dt-20190225Z-990227",
   "org.scalablytyped" %%% "redux" % "4.0.1-18f3a8",
   "org.scalablytyped" %%% "reselect" % "4.0.0-be7d69",

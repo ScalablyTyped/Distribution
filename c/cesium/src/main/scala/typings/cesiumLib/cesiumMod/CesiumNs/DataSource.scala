@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DataSource extends js.Object {
-  var changedEvent: Event
+  var changedEvent: Event[js.Array[_]]
   var clock: DataSourceClock
   var clustering: EntityCluster
   var entities: EntityCollection
-  var errorEvent: Event
+  var errorEvent: Event[js.Array[_]]
   var isLoading: scala.Boolean
-  var loadingEvent: Event
+  var loadingEvent: Event[js.Array[_]]
   var name: java.lang.String
   var show: scala.Boolean
   def update(time: JulianDate): scala.Boolean
@@ -21,13 +21,13 @@ trait DataSource extends js.Object {
 object DataSource {
   @scala.inline
   def apply(
-    changedEvent: Event,
+    changedEvent: Event[js.Array[_]],
     clock: DataSourceClock,
     clustering: EntityCluster,
     entities: EntityCollection,
-    errorEvent: Event,
+    errorEvent: Event[js.Array[_]],
     isLoading: scala.Boolean,
-    loadingEvent: Event,
+    loadingEvent: Event[js.Array[_]],
     name: java.lang.String,
     show: scala.Boolean,
     update: JulianDate => scala.Boolean

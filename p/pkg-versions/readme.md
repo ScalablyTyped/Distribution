@@ -1,6 +1,7 @@
 ```
-// Type definitions for pkg-versions 1.1
-// Project: https://github.com/sindresorhus/pkg-versions#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+ * Get the version numbers of a package from the npm registry.
+ *
+ * @returns The version numbers.
+ */
 ```

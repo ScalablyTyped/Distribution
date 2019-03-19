@@ -15,7 +15,7 @@ trait ImageryProvider extends js.Object {
   var defaultMagnificationFilter: js.Any
   var defaultMinificationFilter: js.Any
   var defaultSaturation: scala.Double
-  val errorEvent: Event
+  val errorEvent: Event[js.Array[_]]
   val hasAlphaChannel: scala.Boolean
   val maximumLevel: scala.Double
   val minimumLevel: scala.Double
@@ -50,7 +50,7 @@ object ImageryProvider {
     defaultMagnificationFilter: js.Any,
     defaultMinificationFilter: js.Any,
     defaultSaturation: scala.Double,
-    errorEvent: Event,
+    errorEvent: Event[js.Array[_]],
     getTileCredits: (scala.Double, scala.Double, scala.Double) => js.Array[Credit],
     hasAlphaChannel: scala.Boolean,
     maximumLevel: scala.Double,

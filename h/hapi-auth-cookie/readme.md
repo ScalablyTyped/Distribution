@@ -1,5 +1,5 @@
 ```
-// Type definitions for hapi-auth-cookie 9.1
+// Type definitions for hapi-auth-cookie 10.0
 // Project: https://github.com/hapijs/hapi-auth-cookie
 // Definitions by: Silas Rech <https://github.com/lenovouser>
 //                 Simon Schick <https://github.com/SimonSchick>

@@ -33,6 +33,12 @@ object mdNs extends js.Object {
     def create(): nodeDashForgeLib.nodeDashForgeMod.mdNs.MessageDigest = js.native
   }
   
+  @JSName("sha384")
+  @js.native
+  object sha384Ns extends js.Object {
+    def create(): nodeDashForgeLib.nodeDashForgeMod.mdNs.MessageDigest = js.native
+  }
+  
   @JSName("sha512")
   @js.native
   object sha512Ns extends js.Object {

@@ -10,7 +10,10 @@ import scala.scalajs.js.annotation._
   * node will have a nodes property representing its children.
   */
 @js.native
-trait AtRule extends Container {
+trait AtRule
+  extends ContainerBase
+     with ChildNode
+     with Container {
   /**
     * The identifier that immediately follows the @.
     */
@@ -20,5 +23,10 @@ trait AtRule extends Container {
     * block. The spec refers to this area as the at-rule's "prelude".
     */
   var params: java.lang.String = js.native
+  /**
+    * Returns the atrule's parent node.
+    */
+  var parent: Container = js.native
+  var `type`: postcssLib.postcssLibStrings.atrule = js.native
 }
 

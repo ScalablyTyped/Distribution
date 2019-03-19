@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ImageryLayerCollection extends js.Object {
-  var layerAdded: Event = js.native
-  var layerMoved: Event = js.native
-  var layerRemoved: Event = js.native
-  var layerShownOrHidden: Event = js.native
+  var layerAdded: Event[js.Array[_]] = js.native
+  var layerMoved: Event[js.Array[_]] = js.native
+  var layerRemoved: Event[js.Array[_]] = js.native
+  var layerShownOrHidden: Event[js.Array[_]] = js.native
   var length: scala.Double = js.native
   def add(layer: ImageryLayer): scala.Unit = js.native
   def add(layer: ImageryLayer, index: scala.Double): scala.Unit = js.native

@@ -11,12 +11,9 @@ object auditregistrationNs extends js.Object {
   @JSName("v1alpha1")
   @js.native
   object v1alpha1Ns extends js.Object {
-    /**
-      * AuditSink represents a cluster level audit sink
-      */
     @js.native
     class AuditSink protected ()
-      extends atPulumiKubernetesLib.providerMod.auditregistrationNs.v1alpha1Ns.AuditSink {
+      extends atPulumiKubernetesLib.auditregistrationMod.v1alpha1Ns.AuditSink {
       /**
         * Create a auditregistration.v1alpha1.AuditSink resource with the given unique name, arguments, and options.
         *
@@ -29,12 +26,9 @@ object auditregistrationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.auditregistrationNs.v1alpha1Ns.AuditSink, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * AuditSinkList is a list of AuditSink items.
-      */
     @js.native
     class AuditSinkList protected ()
-      extends atPulumiKubernetesLib.providerMod.auditregistrationNs.v1alpha1Ns.AuditSinkList {
+      extends atPulumiKubernetesLib.auditregistrationMod.v1alpha1Ns.AuditSinkList {
       /**
         * Create a auditregistration.v1alpha1.AuditSinkList resource with the given unique name, arguments, and options.
         *
@@ -62,12 +56,12 @@ object auditregistrationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.auditregistrationNs.v1alpha1Ns.AuditSink = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.auditregistrationV1alpha1AuditSinkMod.AuditSink = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.auditregistrationNs.v1alpha1Ns.AuditSink = js.native
+      ): atPulumiKubernetesLib.auditregistrationV1alpha1AuditSinkMod.AuditSink = js.native
     }
     
     /* static members */
@@ -85,12 +79,12 @@ object auditregistrationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.auditregistrationNs.v1alpha1Ns.AuditSinkList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.auditregistrationV1alpha1AuditSinkListMod.AuditSinkList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.auditregistrationNs.v1alpha1Ns.AuditSinkList = js.native
+      ): atPulumiKubernetesLib.auditregistrationV1alpha1AuditSinkListMod.AuditSinkList = js.native
     }
     
   }

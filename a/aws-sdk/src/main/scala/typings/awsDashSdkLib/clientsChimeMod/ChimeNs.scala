@@ -50,6 +50,55 @@ object ChimeNs extends js.Object {
     var EnableDialOut: js.UndefOr[Boolean] = js.undefined
   }
   
+  trait AssociatePhoneNumberWithUserRequest extends js.Object {
+    /**
+      * The Amazon Chime account ID.
+      */
+    var AccountId: String
+    /**
+      * The phone number, in E.164 format.
+      */
+    var E164PhoneNumber: awsDashSdkLib.clientsChimeMod.ChimeNs.E164PhoneNumber
+    /**
+      * The user ID.
+      */
+    var UserId: String
+  }
+  
+  trait AssociatePhoneNumberWithUserResponse extends js.Object
+  
+  trait AssociatePhoneNumbersWithVoiceConnectorRequest extends js.Object {
+    /**
+      * List of phone numbers, in E.164 format.
+      */
+    var E164PhoneNumbers: js.UndefOr[E164PhoneNumberList] = js.undefined
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait AssociatePhoneNumbersWithVoiceConnectorResponse extends js.Object {
+    /**
+      * If the action fails for one or more of the phone numbers in the request, a list of the phone numbers is returned, along with error codes and error messages.
+      */
+    var PhoneNumberErrors: js.UndefOr[PhoneNumberErrorList] = js.undefined
+  }
+  
+  trait BatchDeletePhoneNumberRequest extends js.Object {
+    /**
+      * List of phone number IDs.
+      */
+    var PhoneNumberIds: NonEmptyStringList
+  }
+  
+  trait BatchDeletePhoneNumberResponse extends js.Object {
+    /**
+      * If the action fails for one or more of the phone numbers in the request, a list of the phone numbers is returned, along with error codes and error messages.
+      */
+    var PhoneNumberErrors: js.UndefOr[PhoneNumberErrorList] = js.undefined
+  }
+  
   trait BatchSuspendUserRequest extends js.Object {
     /**
       * The Amazon Chime account ID.
@@ -86,6 +135,20 @@ object ChimeNs extends js.Object {
     var UserErrors: js.UndefOr[UserErrorList] = js.undefined
   }
   
+  trait BatchUpdatePhoneNumberRequest extends js.Object {
+    /**
+      * The request containing the phone number IDs and product types to update.
+      */
+    var UpdatePhoneNumberRequestItems: UpdatePhoneNumberRequestItemList
+  }
+  
+  trait BatchUpdatePhoneNumberResponse extends js.Object {
+    /**
+      * If the action fails for one or more of the phone numbers in the request, a list of the phone numbers is returned, along with error codes and error messages.
+      */
+    var PhoneNumberErrors: js.UndefOr[PhoneNumberErrorList] = js.undefined
+  }
+  
   trait BatchUpdateUserRequest extends js.Object {
     /**
       * The Amazon Chime account ID.
@@ -102,6 +165,13 @@ object ChimeNs extends js.Object {
       * If the BatchUpdateUser action fails for one or more of the user IDs in the request, a list of the user IDs is returned, along with error codes and error messages.
       */
     var UserErrors: js.UndefOr[UserErrorList] = js.undefined
+  }
+  
+  trait BusinessCallingSettings extends js.Object {
+    /**
+      * The Amazon S3 bucket designated for call detail record storage.
+      */
+    var CdrBucket: js.UndefOr[String] = js.undefined
   }
   
   trait ClientApiVersions extends js.Object {
@@ -125,6 +195,53 @@ object ChimeNs extends js.Object {
     var Account: js.UndefOr[Account] = js.undefined
   }
   
+  trait CreatePhoneNumberOrderRequest extends js.Object {
+    /**
+      * List of phone numbers, in E.164 format.
+      */
+    var E164PhoneNumbers: E164PhoneNumberList
+    /**
+      * The phone number product type.
+      */
+    var ProductType: PhoneNumberProductType
+  }
+  
+  trait CreatePhoneNumberOrderResponse extends js.Object {
+    /**
+      * The phone number order details.
+      */
+    var PhoneNumberOrder: js.UndefOr[PhoneNumberOrder] = js.undefined
+  }
+  
+  trait CreateVoiceConnectorRequest extends js.Object {
+    /**
+      * The name of the Amazon Chime Voice Connector.
+      */
+    var Name: VoiceConnectorName
+    /**
+      * When enabled, requires encryption for the Amazon Chime Voice Connector.
+      */
+    var RequireEncryption: Boolean
+  }
+  
+  trait CreateVoiceConnectorResponse extends js.Object {
+    /**
+      * The Amazon Chime Voice Connector details.
+      */
+    var VoiceConnector: js.UndefOr[VoiceConnector] = js.undefined
+  }
+  
+  trait Credential extends js.Object {
+    /**
+      * The RFC2617 compliant password associated with the SIP credentials, in US-ASCII format.
+      */
+    var Password: js.UndefOr[SensitiveString] = js.undefined
+    /**
+      * The RFC2617 compliant user name associated with the SIP credentials, in US-ASCII format.
+      */
+    var Username: js.UndefOr[SensitiveString] = js.undefined
+  }
+  
   trait DeleteAccountRequest extends js.Object {
     /**
       * The Amazon Chime account ID.
@@ -133,6 +250,76 @@ object ChimeNs extends js.Object {
   }
   
   trait DeleteAccountResponse extends js.Object
+  
+  trait DeletePhoneNumberRequest extends js.Object {
+    /**
+      * The phone number ID.
+      */
+    var PhoneNumberId: String
+  }
+  
+  trait DeleteVoiceConnectorOriginationRequest extends js.Object {
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait DeleteVoiceConnectorRequest extends js.Object {
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait DeleteVoiceConnectorTerminationCredentialsRequest extends js.Object {
+    /**
+      * The RFC2617 compliant username associated with the SIP credentials, in US-ASCII format.
+      */
+    var Usernames: js.UndefOr[SensitiveStringList] = js.undefined
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait DeleteVoiceConnectorTerminationRequest extends js.Object {
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait DisassociatePhoneNumberFromUserRequest extends js.Object {
+    /**
+      * The Amazon Chime account ID.
+      */
+    var AccountId: String
+    /**
+      * The user ID.
+      */
+    var UserId: String
+  }
+  
+  trait DisassociatePhoneNumberFromUserResponse extends js.Object
+  
+  trait DisassociatePhoneNumbersFromVoiceConnectorRequest extends js.Object {
+    /**
+      * List of phone numbers, in E.164 format.
+      */
+    var E164PhoneNumbers: js.UndefOr[E164PhoneNumberList] = js.undefined
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait DisassociatePhoneNumbersFromVoiceConnectorResponse extends js.Object {
+    /**
+      * If the action fails for one or more of the phone numbers in the request, a list of the phone numbers is returned, along with error codes and error messages.
+      */
+    var PhoneNumberErrors: js.UndefOr[PhoneNumberErrorList] = js.undefined
+  }
   
   trait GetAccountRequest extends js.Object {
     /**
@@ -162,6 +349,45 @@ object ChimeNs extends js.Object {
     var AccountSettings: js.UndefOr[AccountSettings] = js.undefined
   }
   
+  trait GetGlobalSettingsResponse extends js.Object {
+    /**
+      * The Amazon Chime Business Calling settings.
+      */
+    var BusinessCalling: js.UndefOr[BusinessCallingSettings] = js.undefined
+    /**
+      * The Amazon Chime Voice Connector settings.
+      */
+    var VoiceConnector: js.UndefOr[VoiceConnectorSettings] = js.undefined
+  }
+  
+  trait GetPhoneNumberOrderRequest extends js.Object {
+    /**
+      * The ID for the phone number order.
+      */
+    var PhoneNumberOrderId: GuidString
+  }
+  
+  trait GetPhoneNumberOrderResponse extends js.Object {
+    /**
+      * The phone number order details.
+      */
+    var PhoneNumberOrder: js.UndefOr[PhoneNumberOrder] = js.undefined
+  }
+  
+  trait GetPhoneNumberRequest extends js.Object {
+    /**
+      * The phone number ID.
+      */
+    var PhoneNumberId: String
+  }
+  
+  trait GetPhoneNumberResponse extends js.Object {
+    /**
+      * The phone number details.
+      */
+    var PhoneNumber: js.UndefOr[PhoneNumber] = js.undefined
+  }
+  
   trait GetUserRequest extends js.Object {
     /**
       * The Amazon Chime account ID.
@@ -178,6 +404,80 @@ object ChimeNs extends js.Object {
       * The user details.
       */
     var User: js.UndefOr[User] = js.undefined
+  }
+  
+  trait GetUserSettingsRequest extends js.Object {
+    /**
+      * The Amazon Chime account ID.
+      */
+    var AccountId: String
+    /**
+      * The user ID.
+      */
+    var UserId: String
+  }
+  
+  trait GetUserSettingsResponse extends js.Object {
+    /**
+      * The user settings.
+      */
+    var UserSettings: js.UndefOr[UserSettings] = js.undefined
+  }
+  
+  trait GetVoiceConnectorOriginationRequest extends js.Object {
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait GetVoiceConnectorOriginationResponse extends js.Object {
+    /**
+      * The origination setting details.
+      */
+    var Origination: js.UndefOr[Origination] = js.undefined
+  }
+  
+  trait GetVoiceConnectorRequest extends js.Object {
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait GetVoiceConnectorResponse extends js.Object {
+    /**
+      * The Amazon Chime Voice Connector details.
+      */
+    var VoiceConnector: js.UndefOr[VoiceConnector] = js.undefined
+  }
+  
+  trait GetVoiceConnectorTerminationHealthRequest extends js.Object {
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait GetVoiceConnectorTerminationHealthResponse extends js.Object {
+    /**
+      * The termination health details.
+      */
+    var TerminationHealth: js.UndefOr[TerminationHealth] = js.undefined
+  }
+  
+  trait GetVoiceConnectorTerminationRequest extends js.Object {
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait GetVoiceConnectorTerminationResponse extends js.Object {
+    /**
+      * The termination setting details.
+      */
+    var Termination: js.UndefOr[Termination] = js.undefined
   }
   
   trait Invite extends js.Object {
@@ -247,6 +547,66 @@ object ChimeNs extends js.Object {
     var NextToken: js.UndefOr[String] = js.undefined
   }
   
+  trait ListPhoneNumberOrdersRequest extends js.Object {
+    /**
+      * The maximum number of results to return in a single call.
+      */
+    var MaxResults: js.UndefOr[ResultMax] = js.undefined
+    /**
+      * The token to use to retrieve the next page of results.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
+  }
+  
+  trait ListPhoneNumberOrdersResponse extends js.Object {
+    /**
+      * The token to use to retrieve the next page of results.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
+    /**
+      * The phone number order details.
+      */
+    var PhoneNumberOrders: js.UndefOr[PhoneNumberOrderList] = js.undefined
+  }
+  
+  trait ListPhoneNumbersRequest extends js.Object {
+    /**
+      * The filter to use to limit the number of results.
+      */
+    var FilterName: js.UndefOr[PhoneNumberAssociationName] = js.undefined
+    /**
+      * The value to use for the filter.
+      */
+    var FilterValue: js.UndefOr[String] = js.undefined
+    /**
+      * The maximum number of results to return in a single call.
+      */
+    var MaxResults: js.UndefOr[ResultMax] = js.undefined
+    /**
+      * The token to use to retrieve the next page of results.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
+    /**
+      * The phone number product type.
+      */
+    var ProductType: js.UndefOr[PhoneNumberProductType] = js.undefined
+    /**
+      * The phone number status.
+      */
+    var Status: js.UndefOr[PhoneNumberStatus] = js.undefined
+  }
+  
+  trait ListPhoneNumbersResponse extends js.Object {
+    /**
+      * The token to use to retrieve the next page of results.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
+    /**
+      * The phone number details.
+      */
+    var PhoneNumbers: js.UndefOr[PhoneNumberList] = js.undefined
+  }
+  
   trait ListUsersRequest extends js.Object {
     /**
       * The Amazon Chime account ID.
@@ -277,6 +637,42 @@ object ChimeNs extends js.Object {
     var Users: js.UndefOr[UserList] = js.undefined
   }
   
+  trait ListVoiceConnectorTerminationCredentialsRequest extends js.Object {
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait ListVoiceConnectorTerminationCredentialsResponse extends js.Object {
+    /**
+      * A list of user names.
+      */
+    var Usernames: js.UndefOr[SensitiveStringList] = js.undefined
+  }
+  
+  trait ListVoiceConnectorsRequest extends js.Object {
+    /**
+      * The maximum number of results to return in a single call.
+      */
+    var MaxResults: js.UndefOr[ResultMax] = js.undefined
+    /**
+      * The token to use to retrieve the next page of results.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
+  }
+  
+  trait ListVoiceConnectorsResponse extends js.Object {
+    /**
+      * The token to use to retrieve the next page of results.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
+    /**
+      * The details of the Amazon Chime Voice Connectors.
+      */
+    var VoiceConnectors: js.UndefOr[VoiceConnectorList] = js.undefined
+  }
+  
   trait LogoutUserRequest extends js.Object {
     /**
       * The Amazon Chime account ID.
@@ -289,6 +685,221 @@ object ChimeNs extends js.Object {
   }
   
   trait LogoutUserResponse extends js.Object
+  
+  trait OrderedPhoneNumber extends js.Object {
+    /**
+      * The phone number, in E.164 format.
+      */
+    var E164PhoneNumber: js.UndefOr[E164PhoneNumber] = js.undefined
+    /**
+      * The phone number status.
+      */
+    var Status: js.UndefOr[OrderedPhoneNumberStatus] = js.undefined
+  }
+  
+  trait Origination extends js.Object {
+    /**
+      * When origination settings are disabled, inbound calls are not enabled for your Amazon Chime Voice Connector.
+      */
+    var Disabled: js.UndefOr[Boolean] = js.undefined
+    /**
+      * The call distribution properties defined for your SIP hosts. Valid range: Minimum value of 1. Maximum value of 20.
+      */
+    var Routes: js.UndefOr[OriginationRouteList] = js.undefined
+  }
+  
+  trait OriginationRoute extends js.Object {
+    /**
+      * The FODN or IP address to contact for origination traffic.
+      */
+    var Host: js.UndefOr[String] = js.undefined
+    /**
+      * The designated origination route port. Defaults to 5060.
+      */
+    var Port: js.UndefOr[Port] = js.undefined
+    /**
+      * The priority associated with the host, with 1 being the highest priority. Higher priority hosts are attempted first.
+      */
+    var Priority: js.UndefOr[OriginationRoutePriority] = js.undefined
+    /**
+      * The protocol to use for the origination route. Encryption-enabled Amazon Chime Voice Connectors use TCP protocol by default.
+      */
+    var Protocol: js.UndefOr[OriginationRouteProtocol] = js.undefined
+    /**
+      * The weight associated with the host. If hosts are equal in priority, calls are distributed among them based on their relative weight.
+      */
+    var Weight: js.UndefOr[OriginationRouteWeight] = js.undefined
+  }
+  
+  trait PhoneNumber extends js.Object {
+    /**
+      * The phone number associations.
+      */
+    var Associations: js.UndefOr[PhoneNumberAssociationList] = js.undefined
+    /**
+      * The phone number capabilities.
+      */
+    var Capabilities: js.UndefOr[PhoneNumberCapabilities] = js.undefined
+    /**
+      * The phone number creation timestamp, in ISO 8601 format.
+      */
+    var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+    /**
+      * The deleted phone number timestamp, in ISO 8601 format.
+      */
+    var DeletionTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+    /**
+      * The phone number, in E.164 format.
+      */
+    var E164PhoneNumber: js.UndefOr[E164PhoneNumber] = js.undefined
+    /**
+      * The phone number ID.
+      */
+    var PhoneNumberId: js.UndefOr[String] = js.undefined
+    /**
+      * The phone number product type.
+      */
+    var ProductType: js.UndefOr[PhoneNumberProductType] = js.undefined
+    /**
+      * The phone number status.
+      */
+    var Status: js.UndefOr[PhoneNumberStatus] = js.undefined
+    /**
+      * The updated phone number timestamp, in ISO 8601 format.
+      */
+    var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  }
+  
+  trait PhoneNumberAssociation extends js.Object {
+    /**
+      * The timestamp of the phone number association, in ISO 8601 format.
+      */
+    var AssociatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+    /**
+      * Defines the association with an Amazon Chime account ID, user ID, or Amazon Chime Voice Connector ID.
+      */
+    var Name: js.UndefOr[PhoneNumberAssociationName] = js.undefined
+    /**
+      * Contains the ID for the entity specified in Name.
+      */
+    var Value: js.UndefOr[String] = js.undefined
+  }
+  
+  trait PhoneNumberCapabilities extends js.Object {
+    /**
+      * Allows or denies inbound calling for the specified phone number.
+      */
+    var InboundCall: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+      * Allows or denies inbound MMS messaging for the specified phone number.
+      */
+    var InboundMMS: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+      * Allows or denies inbound SMS messaging for the specified phone number.
+      */
+    var InboundSMS: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+      * Allows or denies outbound calling for the specified phone number.
+      */
+    var OutboundCall: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+      * Allows or denies outbound MMS messaging for the specified phone number.
+      */
+    var OutboundMMS: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+      * Allows or denies outbound SMS messaging for the specified phone number.
+      */
+    var OutboundSMS: js.UndefOr[NullableBoolean] = js.undefined
+  }
+  
+  trait PhoneNumberError extends js.Object {
+    /**
+      * The error code.
+      */
+    var ErrorCode: js.UndefOr[ErrorCode] = js.undefined
+    /**
+      * The error message.
+      */
+    var ErrorMessage: js.UndefOr[String] = js.undefined
+    /**
+      * The phone number ID for which the action failed.
+      */
+    var PhoneNumberId: js.UndefOr[NonEmptyString] = js.undefined
+  }
+  
+  trait PhoneNumberOrder extends js.Object {
+    /**
+      * The phone number order creation timestamp, in ISO 8601 format.
+      */
+    var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+    /**
+      * The ordered phone number details, such as the phone number in E.164 format and the phone number status.
+      */
+    var OrderedPhoneNumbers: js.UndefOr[OrderedPhoneNumberList] = js.undefined
+    /**
+      * The phone number order ID.
+      */
+    var PhoneNumberOrderId: js.UndefOr[GuidString] = js.undefined
+    /**
+      * The phone number order product type.
+      */
+    var ProductType: js.UndefOr[PhoneNumberProductType] = js.undefined
+    /**
+      * The status of the phone number order.
+      */
+    var Status: js.UndefOr[PhoneNumberOrderStatus] = js.undefined
+    /**
+      * The updated phone number order timestamp, in ISO 8601 format.
+      */
+    var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  }
+  
+  trait PutVoiceConnectorOriginationRequest extends js.Object {
+    /**
+      * The origination setting details to add.
+      */
+    var Origination: awsDashSdkLib.clientsChimeMod.ChimeNs.Origination
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait PutVoiceConnectorOriginationResponse extends js.Object {
+    /**
+      * The updated origination setting details.
+      */
+    var Origination: js.UndefOr[Origination] = js.undefined
+  }
+  
+  trait PutVoiceConnectorTerminationCredentialsRequest extends js.Object {
+    /**
+      * The termination SIP credentials.
+      */
+    var Credentials: js.UndefOr[CredentialList] = js.undefined
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait PutVoiceConnectorTerminationRequest extends js.Object {
+    /**
+      * The termination setting details to add.
+      */
+    var Termination: awsDashSdkLib.clientsChimeMod.ChimeNs.Termination
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait PutVoiceConnectorTerminationResponse extends js.Object {
+    /**
+      * The updated termination setting details.
+      */
+    var Termination: js.UndefOr[Termination] = js.undefined
+  }
   
   trait ResetPersonalPINRequest extends js.Object {
     /**
@@ -308,13 +919,191 @@ object ChimeNs extends js.Object {
     var User: js.UndefOr[User] = js.undefined
   }
   
+  trait RestorePhoneNumberRequest extends js.Object {
+    /**
+      * The phone number.
+      */
+    var PhoneNumberId: NonEmptyString
+  }
+  
+  trait RestorePhoneNumberResponse extends js.Object {
+    /**
+      * The phone number details.
+      */
+    var PhoneNumber: js.UndefOr[PhoneNumber] = js.undefined
+  }
+  
+  trait SearchAvailablePhoneNumbersRequest extends js.Object {
+    /**
+      * The area code used to filter results.
+      */
+    var AreaCode: js.UndefOr[String] = js.undefined
+    /**
+      * The city used to filter results.
+      */
+    var City: js.UndefOr[String] = js.undefined
+    /**
+      * The country used to filter results.
+      */
+    var Country: js.UndefOr[String] = js.undefined
+    /**
+      * The maximum number of results to return in a single call.
+      */
+    var MaxResults: js.UndefOr[PhoneNumberMaxResults] = js.undefined
+    /**
+      * The token to use to retrieve the next page of results.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
+    /**
+      * The state used to filter results.
+      */
+    var State: js.UndefOr[String] = js.undefined
+  }
+  
+  trait SearchAvailablePhoneNumbersResponse extends js.Object {
+    /**
+      * List of phone numbers, in E.164 format.
+      */
+    var E164PhoneNumbers: js.UndefOr[E164PhoneNumberList] = js.undefined
+  }
+  
+  trait TelephonySettings extends js.Object {
+    /**
+      * Allows or denies inbound calling.
+      */
+    var InboundCalling: Boolean
+    /**
+      * Allows or denies outbound calling.
+      */
+    var OutboundCalling: Boolean
+    /**
+      * Allows or denies SMS messaging.
+      */
+    var SMS: Boolean
+  }
+  
+  trait Termination extends js.Object {
+    /**
+      * The countries to which calls are allowed.
+      */
+    var CallingRegions: js.UndefOr[CallingRegionList] = js.undefined
+    /**
+      * The IP addresses allowed to make calls, in CIDR format.
+      */
+    var CidrAllowedList: js.UndefOr[StringList] = js.undefined
+    /**
+      * The limit on calls per second. Max value based on account service limit. Default value of 1.
+      */
+    var CpsLimit: js.UndefOr[CpsLimit] = js.undefined
+    /**
+      * The default caller ID phone number.
+      */
+    var DefaultPhoneNumber: js.UndefOr[E164PhoneNumber] = js.undefined
+    /**
+      * When termination settings are disabled, outbound calls can not be made.
+      */
+    var Disabled: js.UndefOr[Boolean] = js.undefined
+  }
+  
+  trait TerminationHealth extends js.Object {
+    /**
+      * The source IP address.
+      */
+    var Source: js.UndefOr[String] = js.undefined
+    /**
+      * The timestamp, in ISO 8601 format.
+      */
+    var Timestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+  }
+  
   @js.native
   trait Types
     extends awsDashSdkLib.libServiceMod.Service {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-      * Suspends up to 50 users from a Team or EnterpriseLWA Amazon Chime account. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide. Users suspended from a Team account are dissociated from the account, but they can continue to use Amazon Chime as free users. To remove the suspension from suspended Team account users, invite them to the Team account again. You can use the InviteUsers action to do so. Users suspended from an EnterpriseLWA account are immediately signed out of Amazon Chime and are no longer able to sign in. To remove the suspension from suspended EnterpriseLWA account users, use the BatchUnsuspendUser action.  To sign out users without suspending them, use the LogoutUser action.
+      * Associates a phone number with the specified Amazon Chime user.
+      */
+    def associatePhoneNumberWithUser(): awsDashSdkLib.libRequestMod.Request[AssociatePhoneNumberWithUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def associatePhoneNumberWithUser(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AssociatePhoneNumberWithUserResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AssociatePhoneNumberWithUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Associates a phone number with the specified Amazon Chime user.
+      */
+    def associatePhoneNumberWithUser(params: AssociatePhoneNumberWithUserRequest): awsDashSdkLib.libRequestMod.Request[AssociatePhoneNumberWithUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def associatePhoneNumberWithUser(
+      params: AssociatePhoneNumberWithUserRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AssociatePhoneNumberWithUserResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AssociatePhoneNumberWithUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Associates a phone number with the specified Amazon Chime Voice Connector.
+      */
+    def associatePhoneNumbersWithVoiceConnector(): awsDashSdkLib.libRequestMod.Request[
+        AssociatePhoneNumbersWithVoiceConnectorResponse, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def associatePhoneNumbersWithVoiceConnector(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AssociatePhoneNumbersWithVoiceConnectorResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        AssociatePhoneNumbersWithVoiceConnectorResponse, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+      * Associates a phone number with the specified Amazon Chime Voice Connector.
+      */
+    def associatePhoneNumbersWithVoiceConnector(params: AssociatePhoneNumbersWithVoiceConnectorRequest): awsDashSdkLib.libRequestMod.Request[
+        AssociatePhoneNumbersWithVoiceConnectorResponse, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def associatePhoneNumbersWithVoiceConnector(
+      params: AssociatePhoneNumbersWithVoiceConnectorRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AssociatePhoneNumbersWithVoiceConnectorResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        AssociatePhoneNumbersWithVoiceConnectorResponse, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+      * Moves phone numbers into the Deletion queue. Phone numbers must be disassociated from any users or Amazon Chime Voice Connectors before they can be deleted. Phone numbers remain in the Deletion queue for 7 days before they are deleted permanently.
+      */
+    def batchDeletePhoneNumber(): awsDashSdkLib.libRequestMod.Request[BatchDeletePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchDeletePhoneNumber(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchDeletePhoneNumberResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchDeletePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Moves phone numbers into the Deletion queue. Phone numbers must be disassociated from any users or Amazon Chime Voice Connectors before they can be deleted. Phone numbers remain in the Deletion queue for 7 days before they are deleted permanently.
+      */
+    def batchDeletePhoneNumber(params: BatchDeletePhoneNumberRequest): awsDashSdkLib.libRequestMod.Request[BatchDeletePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchDeletePhoneNumber(
+      params: BatchDeletePhoneNumberRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchDeletePhoneNumberResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchDeletePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Suspends up to 50 users from a Team or EnterpriseLWA Amazon Chime account. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide. Users suspended from a Team account are dissociated from the account, but they can continue to use Amazon Chime as free users. To remove the suspension from suspended Team account users, invite them to the Team account again. You can use the InviteUsers action to do so. Users suspended from an EnterpriseLWA account are immediately signed out of Amazon Chime and can no longer sign in. To remove the suspension from suspended EnterpriseLWA account users, use the BatchUnsuspendUser action.  To sign out users without suspending them, use the LogoutUser action.
       */
     def batchSuspendUser(): awsDashSdkLib.libRequestMod.Request[BatchSuspendUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def batchSuspendUser(
@@ -325,7 +1114,7 @@ object ChimeNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchSuspendUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Suspends up to 50 users from a Team or EnterpriseLWA Amazon Chime account. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide. Users suspended from a Team account are dissociated from the account, but they can continue to use Amazon Chime as free users. To remove the suspension from suspended Team account users, invite them to the Team account again. You can use the InviteUsers action to do so. Users suspended from an EnterpriseLWA account are immediately signed out of Amazon Chime and are no longer able to sign in. To remove the suspension from suspended EnterpriseLWA account users, use the BatchUnsuspendUser action.  To sign out users without suspending them, use the LogoutUser action.
+      * Suspends up to 50 users from a Team or EnterpriseLWA Amazon Chime account. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide. Users suspended from a Team account are dissociated from the account, but they can continue to use Amazon Chime as free users. To remove the suspension from suspended Team account users, invite them to the Team account again. You can use the InviteUsers action to do so. Users suspended from an EnterpriseLWA account are immediately signed out of Amazon Chime and can no longer sign in. To remove the suspension from suspended EnterpriseLWA account users, use the BatchUnsuspendUser action.  To sign out users without suspending them, use the LogoutUser action.
       */
     def batchSuspendUser(params: BatchSuspendUserRequest): awsDashSdkLib.libRequestMod.Request[BatchSuspendUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def batchSuspendUser(
@@ -359,6 +1148,29 @@ object ChimeNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchUnsuspendUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates phone number product types. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types.
+      */
+    def batchUpdatePhoneNumber(): awsDashSdkLib.libRequestMod.Request[BatchUpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchUpdatePhoneNumber(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchUpdatePhoneNumberResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchUpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates phone number product types. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types.
+      */
+    def batchUpdatePhoneNumber(params: BatchUpdatePhoneNumberRequest): awsDashSdkLib.libRequestMod.Request[BatchUpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchUpdatePhoneNumber(
+      params: BatchUpdatePhoneNumberRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchUpdatePhoneNumberResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchUpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Updates user details within the UpdateUserRequestItem object for up to 20 users for the specified Amazon Chime account. Currently, only LicenseType updates are supported for this action.
       */
@@ -406,6 +1218,52 @@ object ChimeNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types.
+      */
+    def createPhoneNumberOrder(): awsDashSdkLib.libRequestMod.Request[CreatePhoneNumberOrderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def createPhoneNumberOrder(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreatePhoneNumberOrderResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreatePhoneNumberOrderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Creates an order for phone numbers to be provisioned. Choose from Amazon Chime Business Calling and Amazon Chime Voice Connector product types.
+      */
+    def createPhoneNumberOrder(params: CreatePhoneNumberOrderRequest): awsDashSdkLib.libRequestMod.Request[CreatePhoneNumberOrderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def createPhoneNumberOrder(
+      params: CreatePhoneNumberOrderRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreatePhoneNumberOrderResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreatePhoneNumberOrderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Creates an Amazon Chime Voice Connector under the administrator's AWS account. Enabling CreateVoiceConnectorRequest$RequireEncryption configures your Amazon Chime Voice Connector to use TLS transport for SIP signaling and Secure RTP (SRTP) for media. Inbound calls use TLS transport, and unencrypted outbound calls are blocked.
+      */
+    def createVoiceConnector(): awsDashSdkLib.libRequestMod.Request[CreateVoiceConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def createVoiceConnector(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateVoiceConnectorResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateVoiceConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Creates an Amazon Chime Voice Connector under the administrator's AWS account. Enabling CreateVoiceConnectorRequest$RequireEncryption configures your Amazon Chime Voice Connector to use TLS transport for SIP signaling and Secure RTP (SRTP) for media. Inbound calls use TLS transport, and unencrypted outbound calls are blocked.
+      */
+    def createVoiceConnector(params: CreateVoiceConnectorRequest): awsDashSdkLib.libRequestMod.Request[CreateVoiceConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def createVoiceConnector(
+      params: CreateVoiceConnectorRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateVoiceConnectorResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateVoiceConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Deletes the specified Amazon Chime account. You must suspend all users before deleting a Team account. You can use the BatchSuspendUser action to do so. For EnterpriseLWA and EnterpriseAD accounts, you must release the claimed domains for your Amazon Chime account before deletion. As soon as you release the domain, all users under that account are suspended. Deleted accounts appear in your Disabled accounts list for 90 days. To restore a deleted account from your Disabled accounts list, you must contact AWS Support. After 90 days, deleted accounts are permanently removed from your Disabled accounts list.
       */
     def deleteAccount(): awsDashSdkLib.libRequestMod.Request[DeleteAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -428,6 +1286,139 @@ object ChimeNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteAccountResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Moves the specified phone number into the Deletion queue. A phone number must be disassociated from any users or Amazon Chime Voice Connectors before it can be deleted. Deleted phone numbers remain in the Deletion queue for 7 days before they are deleted permanently.
+      */
+    def deletePhoneNumber(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deletePhoneNumber(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Moves the specified phone number into the Deletion queue. A phone number must be disassociated from any users or Amazon Chime Voice Connectors before it can be deleted. Deleted phone numbers remain in the Deletion queue for 7 days before they are deleted permanently.
+      */
+    def deletePhoneNumber(params: DeletePhoneNumberRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deletePhoneNumber(
+      params: DeletePhoneNumberRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the specified Amazon Chime Voice Connector. Any phone numbers assigned to the Amazon Chime Voice Connector must be unassigned from it before it can be deleted.
+      */
+    def deleteVoiceConnector(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteVoiceConnector(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the specified Amazon Chime Voice Connector. Any phone numbers assigned to the Amazon Chime Voice Connector must be unassigned from it before it can be deleted.
+      */
+    def deleteVoiceConnector(params: DeleteVoiceConnectorRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteVoiceConnector(
+      params: DeleteVoiceConnectorRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the origination settings for the specified Amazon Chime Voice Connector.
+      */
+    def deleteVoiceConnectorOrigination(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteVoiceConnectorOrigination(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the origination settings for the specified Amazon Chime Voice Connector.
+      */
+    def deleteVoiceConnectorOrigination(params: DeleteVoiceConnectorOriginationRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteVoiceConnectorOrigination(
+      params: DeleteVoiceConnectorOriginationRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the termination settings for the specified Amazon Chime Voice Connector.
+      */
+    def deleteVoiceConnectorTermination(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteVoiceConnectorTermination(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the termination settings for the specified Amazon Chime Voice Connector.
+      */
+    def deleteVoiceConnectorTermination(params: DeleteVoiceConnectorTerminationRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteVoiceConnectorTermination(
+      params: DeleteVoiceConnectorTerminationRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the specified SIP credentials used by your equipment to authenticate during call termination.
+      */
+    def deleteVoiceConnectorTerminationCredentials(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteVoiceConnectorTerminationCredentials(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the specified SIP credentials used by your equipment to authenticate during call termination.
+      */
+    def deleteVoiceConnectorTerminationCredentials(params: DeleteVoiceConnectorTerminationCredentialsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteVoiceConnectorTerminationCredentials(
+      params: DeleteVoiceConnectorTerminationCredentialsRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Disassociates the primary provisioned phone number from the specified Amazon Chime user.
+      */
+    def disassociatePhoneNumberFromUser(): awsDashSdkLib.libRequestMod.Request[DisassociatePhoneNumberFromUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def disassociatePhoneNumberFromUser(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisassociatePhoneNumberFromUserResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DisassociatePhoneNumberFromUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Disassociates the primary provisioned phone number from the specified Amazon Chime user.
+      */
+    def disassociatePhoneNumberFromUser(params: DisassociatePhoneNumberFromUserRequest): awsDashSdkLib.libRequestMod.Request[DisassociatePhoneNumberFromUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def disassociatePhoneNumberFromUser(
+      params: DisassociatePhoneNumberFromUserRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisassociatePhoneNumberFromUserResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DisassociatePhoneNumberFromUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Disassociates the specified phone number from the specified Amazon Chime Voice Connector.
+      */
+    def disassociatePhoneNumbersFromVoiceConnector(): awsDashSdkLib.libRequestMod.Request[
+        DisassociatePhoneNumbersFromVoiceConnectorResponse, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def disassociatePhoneNumbersFromVoiceConnector(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisassociatePhoneNumbersFromVoiceConnectorResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        DisassociatePhoneNumbersFromVoiceConnectorResponse, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+      * Disassociates the specified phone number from the specified Amazon Chime Voice Connector.
+      */
+    def disassociatePhoneNumbersFromVoiceConnector(params: DisassociatePhoneNumbersFromVoiceConnectorRequest): awsDashSdkLib.libRequestMod.Request[
+        DisassociatePhoneNumbersFromVoiceConnectorResponse, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def disassociatePhoneNumbersFromVoiceConnector(
+      params: DisassociatePhoneNumbersFromVoiceConnectorRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DisassociatePhoneNumbersFromVoiceConnectorResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        DisassociatePhoneNumbersFromVoiceConnectorResponse, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
     /**
       * Retrieves details for the specified Amazon Chime account, such as account type and supported licenses.
       */
@@ -475,6 +1466,63 @@ object ChimeNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetAccountSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Retrieves global settings for the administrator's AWS account, such as Amazon Chime Business Calling and Amazon Chime Voice Connector settings.
+      */
+    def getGlobalSettings(): awsDashSdkLib.libRequestMod.Request[GetGlobalSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getGlobalSettings(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetGlobalSettingsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetGlobalSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves details for the specified phone number ID, such as associations, capabilities, and product type.
+      */
+    def getPhoneNumber(): awsDashSdkLib.libRequestMod.Request[GetPhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getPhoneNumber(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetPhoneNumberResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetPhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves details for the specified phone number ID, such as associations, capabilities, and product type.
+      */
+    def getPhoneNumber(params: GetPhoneNumberRequest): awsDashSdkLib.libRequestMod.Request[GetPhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getPhoneNumber(
+      params: GetPhoneNumberRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetPhoneNumberResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetPhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves details for the specified phone number order, such as order creation timestamp, phone numbers in E.164 format, product type, and order status.
+      */
+    def getPhoneNumberOrder(): awsDashSdkLib.libRequestMod.Request[GetPhoneNumberOrderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getPhoneNumberOrder(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetPhoneNumberOrderResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetPhoneNumberOrderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves details for the specified phone number order, such as order creation timestamp, phone numbers in E.164 format, product type, and order status.
+      */
+    def getPhoneNumberOrder(params: GetPhoneNumberOrderRequest): awsDashSdkLib.libRequestMod.Request[GetPhoneNumberOrderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getPhoneNumberOrder(
+      params: GetPhoneNumberOrderRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetPhoneNumberOrderResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetPhoneNumberOrderResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Retrieves details for the specified user ID, such as primary email address, license type, and personal meeting PIN. To retrieve user details with an email address instead of a user ID, use the ListUsers action, and then filter by email address.
       */
     def getUser(): awsDashSdkLib.libRequestMod.Request[GetUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -489,6 +1537,121 @@ object ChimeNs extends js.Object {
       params: GetUserRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetUserResponse, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[GetUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves settings for the specified user ID, such as any associated phone number settings.
+      */
+    def getUserSettings(): awsDashSdkLib.libRequestMod.Request[GetUserSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getUserSettings(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetUserSettingsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetUserSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves settings for the specified user ID, such as any associated phone number settings.
+      */
+    def getUserSettings(params: GetUserSettingsRequest): awsDashSdkLib.libRequestMod.Request[GetUserSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getUserSettings(
+      params: GetUserSettingsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetUserSettingsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetUserSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves details for the specified Amazon Chime Voice Connector, such as timestamps, name, outbound host, and encryption requirements.
+      */
+    def getVoiceConnector(): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getVoiceConnector(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetVoiceConnectorResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves details for the specified Amazon Chime Voice Connector, such as timestamps, name, outbound host, and encryption requirements.
+      */
+    def getVoiceConnector(params: GetVoiceConnectorRequest): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getVoiceConnector(
+      params: GetVoiceConnectorRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetVoiceConnectorResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves origination setting details for the specified Amazon Chime Voice Connector.
+      */
+    def getVoiceConnectorOrigination(): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorOriginationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getVoiceConnectorOrigination(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetVoiceConnectorOriginationResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorOriginationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves origination setting details for the specified Amazon Chime Voice Connector.
+      */
+    def getVoiceConnectorOrigination(params: GetVoiceConnectorOriginationRequest): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorOriginationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getVoiceConnectorOrigination(
+      params: GetVoiceConnectorOriginationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetVoiceConnectorOriginationResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorOriginationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves termination setting details for the specified Amazon Chime Voice Connector.
+      */
+    def getVoiceConnectorTermination(): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorTerminationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getVoiceConnectorTermination(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetVoiceConnectorTerminationResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorTerminationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves termination setting details for the specified Amazon Chime Voice Connector.
+      */
+    def getVoiceConnectorTermination(params: GetVoiceConnectorTerminationRequest): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorTerminationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getVoiceConnectorTermination(
+      params: GetVoiceConnectorTerminationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetVoiceConnectorTerminationResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorTerminationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves information about the last time a SIP OPTIONS ping was received from your SIP infrastructure for the specified Amazon Chime Voice Connector.
+      */
+    def getVoiceConnectorTerminationHealth(): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorTerminationHealthResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getVoiceConnectorTerminationHealth(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetVoiceConnectorTerminationHealthResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorTerminationHealthResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves information about the last time a SIP OPTIONS ping was received from your SIP infrastructure for the specified Amazon Chime Voice Connector.
+      */
+    def getVoiceConnectorTerminationHealth(params: GetVoiceConnectorTerminationHealthRequest): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorTerminationHealthResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getVoiceConnectorTerminationHealth(
+      params: GetVoiceConnectorTerminationHealthRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetVoiceConnectorTerminationHealthResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetVoiceConnectorTerminationHealthResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Sends email invites to as many as 50 users, inviting them to the specified Amazon Chime Team account. Only Team account types are currently supported for this action. 
       */
@@ -536,6 +1699,52 @@ object ChimeNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListAccountsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Lists the phone number orders for the administrator's Amazon Chime account.
+      */
+    def listPhoneNumberOrders(): awsDashSdkLib.libRequestMod.Request[ListPhoneNumberOrdersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listPhoneNumberOrders(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListPhoneNumberOrdersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListPhoneNumberOrdersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists the phone number orders for the administrator's Amazon Chime account.
+      */
+    def listPhoneNumberOrders(params: ListPhoneNumberOrdersRequest): awsDashSdkLib.libRequestMod.Request[ListPhoneNumberOrdersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listPhoneNumberOrders(
+      params: ListPhoneNumberOrdersRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListPhoneNumberOrdersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListPhoneNumberOrdersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists the phone numbers for the specified Amazon Chime account, Amazon Chime user, or Amazon Chime Voice Connector.
+      */
+    def listPhoneNumbers(): awsDashSdkLib.libRequestMod.Request[ListPhoneNumbersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listPhoneNumbers(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListPhoneNumbersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListPhoneNumbersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists the phone numbers for the specified Amazon Chime account, Amazon Chime user, or Amazon Chime Voice Connector.
+      */
+    def listPhoneNumbers(params: ListPhoneNumbersRequest): awsDashSdkLib.libRequestMod.Request[ListPhoneNumbersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listPhoneNumbers(
+      params: ListPhoneNumbersRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListPhoneNumbersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListPhoneNumbersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Lists the users that belong to the specified Amazon Chime account. You can specify an email address to list only the user that the email address belongs to.
       */
     def listUsers(): awsDashSdkLib.libRequestMod.Request[ListUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -558,6 +1767,64 @@ object ChimeNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListUsersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists the SIP credentials for the specified Amazon Chime Voice Connector.
+      */
+    def listVoiceConnectorTerminationCredentials(): awsDashSdkLib.libRequestMod.Request[
+        ListVoiceConnectorTerminationCredentialsResponse, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def listVoiceConnectorTerminationCredentials(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListVoiceConnectorTerminationCredentialsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        ListVoiceConnectorTerminationCredentialsResponse, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+      * Lists the SIP credentials for the specified Amazon Chime Voice Connector.
+      */
+    def listVoiceConnectorTerminationCredentials(params: ListVoiceConnectorTerminationCredentialsRequest): awsDashSdkLib.libRequestMod.Request[
+        ListVoiceConnectorTerminationCredentialsResponse, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def listVoiceConnectorTerminationCredentials(
+      params: ListVoiceConnectorTerminationCredentialsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListVoiceConnectorTerminationCredentialsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        ListVoiceConnectorTerminationCredentialsResponse, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+      * Lists the Amazon Chime Voice Connectors for the administrator's AWS account.
+      */
+    def listVoiceConnectors(): awsDashSdkLib.libRequestMod.Request[ListVoiceConnectorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listVoiceConnectors(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListVoiceConnectorsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListVoiceConnectorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists the Amazon Chime Voice Connectors for the administrator's AWS account.
+      */
+    def listVoiceConnectors(params: ListVoiceConnectorsRequest): awsDashSdkLib.libRequestMod.Request[ListVoiceConnectorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listVoiceConnectors(
+      params: ListVoiceConnectorsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListVoiceConnectorsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListVoiceConnectorsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Logs out the specified user from all of the devices they are currently logged into.
       */
@@ -582,6 +1849,67 @@ object ChimeNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[LogoutUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Adds origination settings for the specified Amazon Chime Voice Connector.
+      */
+    def putVoiceConnectorOrigination(): awsDashSdkLib.libRequestMod.Request[PutVoiceConnectorOriginationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def putVoiceConnectorOrigination(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutVoiceConnectorOriginationResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutVoiceConnectorOriginationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Adds origination settings for the specified Amazon Chime Voice Connector.
+      */
+    def putVoiceConnectorOrigination(params: PutVoiceConnectorOriginationRequest): awsDashSdkLib.libRequestMod.Request[PutVoiceConnectorOriginationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def putVoiceConnectorOrigination(
+      params: PutVoiceConnectorOriginationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutVoiceConnectorOriginationResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutVoiceConnectorOriginationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Adds termination settings for the specified Amazon Chime Voice Connector.
+      */
+    def putVoiceConnectorTermination(): awsDashSdkLib.libRequestMod.Request[PutVoiceConnectorTerminationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def putVoiceConnectorTermination(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutVoiceConnectorTerminationResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutVoiceConnectorTerminationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Adds termination settings for the specified Amazon Chime Voice Connector.
+      */
+    def putVoiceConnectorTermination(params: PutVoiceConnectorTerminationRequest): awsDashSdkLib.libRequestMod.Request[PutVoiceConnectorTerminationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def putVoiceConnectorTermination(
+      params: PutVoiceConnectorTerminationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutVoiceConnectorTerminationResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutVoiceConnectorTerminationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Adds termination SIP credentials for the specified Amazon Chime Voice Connector.
+      */
+    def putVoiceConnectorTerminationCredentials(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def putVoiceConnectorTerminationCredentials(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Adds termination SIP credentials for the specified Amazon Chime Voice Connector.
+      */
+    def putVoiceConnectorTerminationCredentials(params: PutVoiceConnectorTerminationCredentialsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def putVoiceConnectorTerminationCredentials(
+      params: PutVoiceConnectorTerminationCredentialsRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Resets the personal meeting PIN for the specified user on an Amazon Chime account. Returns the User object with the updated personal meeting PIN.
       */
     def resetPersonalPIN(): awsDashSdkLib.libRequestMod.Request[ResetPersonalPINResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -604,6 +1932,52 @@ object ChimeNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ResetPersonalPINResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Moves a phone number from the Deletion queue back into the phone number Inventory.
+      */
+    def restorePhoneNumber(): awsDashSdkLib.libRequestMod.Request[RestorePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def restorePhoneNumber(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ RestorePhoneNumberResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[RestorePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Moves a phone number from the Deletion queue back into the phone number Inventory.
+      */
+    def restorePhoneNumber(params: RestorePhoneNumberRequest): awsDashSdkLib.libRequestMod.Request[RestorePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def restorePhoneNumber(
+      params: RestorePhoneNumberRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ RestorePhoneNumberResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[RestorePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Searches phone numbers that can be ordered.
+      */
+    def searchAvailablePhoneNumbers(): awsDashSdkLib.libRequestMod.Request[SearchAvailablePhoneNumbersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def searchAvailablePhoneNumbers(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ SearchAvailablePhoneNumbersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[SearchAvailablePhoneNumbersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Searches phone numbers that can be ordered.
+      */
+    def searchAvailablePhoneNumbers(params: SearchAvailablePhoneNumbersRequest): awsDashSdkLib.libRequestMod.Request[SearchAvailablePhoneNumbersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def searchAvailablePhoneNumbers(
+      params: SearchAvailablePhoneNumbersRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ SearchAvailablePhoneNumbersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[SearchAvailablePhoneNumbersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Updates account details for the specified Amazon Chime account. Currently, only account name updates are supported for this action.
       */
@@ -651,6 +2025,44 @@ object ChimeNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateAccountSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Updates global settings for the administrator's AWS account, such as Amazon Chime Business Calling and Amazon Chime Voice Connector settings.
+      */
+    def updateGlobalSettings(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateGlobalSettings(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates global settings for the administrator's AWS account, such as Amazon Chime Business Calling and Amazon Chime Voice Connector settings.
+      */
+    def updateGlobalSettings(params: UpdateGlobalSettingsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateGlobalSettings(
+      params: UpdateGlobalSettingsRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates phone number details, such as product type, for the specified phone number ID.
+      */
+    def updatePhoneNumber(): awsDashSdkLib.libRequestMod.Request[UpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updatePhoneNumber(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdatePhoneNumberResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates phone number details, such as product type, for the specified phone number ID.
+      */
+    def updatePhoneNumber(params: UpdatePhoneNumberRequest): awsDashSdkLib.libRequestMod.Request[UpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updatePhoneNumber(
+      params: UpdatePhoneNumberRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdatePhoneNumberResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdatePhoneNumberResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Updates user details for a specified user ID. Currently, only LicenseType updates are supported for this action.
       */
     def updateUser(): awsDashSdkLib.libRequestMod.Request[UpdateUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -673,6 +2085,44 @@ object ChimeNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateUserResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates the settings for the specified user, such as phone number settings.
+      */
+    def updateUserSettings(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateUserSettings(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates the settings for the specified user, such as phone number settings.
+      */
+    def updateUserSettings(params: UpdateUserSettingsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateUserSettings(
+      params: UpdateUserSettingsRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates details for the specified Amazon Chime Voice Connector.
+      */
+    def updateVoiceConnector(): awsDashSdkLib.libRequestMod.Request[UpdateVoiceConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateVoiceConnector(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateVoiceConnectorResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateVoiceConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates details for the specified Amazon Chime Voice Connector.
+      */
+    def updateVoiceConnector(params: UpdateVoiceConnectorRequest): awsDashSdkLib.libRequestMod.Request[UpdateVoiceConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateVoiceConnector(
+      params: UpdateVoiceConnectorRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateVoiceConnectorResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateVoiceConnectorResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
   trait UpdateAccountRequest extends js.Object {
@@ -705,6 +2155,46 @@ object ChimeNs extends js.Object {
   }
   
   trait UpdateAccountSettingsResponse extends js.Object
+  
+  trait UpdateGlobalSettingsRequest extends js.Object {
+    /**
+      * The Amazon Chime Business Calling settings.
+      */
+    var BusinessCalling: BusinessCallingSettings
+    /**
+      * The Amazon Chime Voice Connector settings.
+      */
+    var VoiceConnector: VoiceConnectorSettings
+  }
+  
+  trait UpdatePhoneNumberRequest extends js.Object {
+    /**
+      * The phone number ID.
+      */
+    var PhoneNumberId: String
+    /**
+      * The product type.
+      */
+    var ProductType: js.UndefOr[PhoneNumberProductType] = js.undefined
+  }
+  
+  trait UpdatePhoneNumberRequestItem extends js.Object {
+    /**
+      * The phone number ID to update.
+      */
+    var PhoneNumberId: NonEmptyString
+    /**
+      * The product type to update.
+      */
+    var ProductType: js.UndefOr[PhoneNumberProductType] = js.undefined
+  }
+  
+  trait UpdatePhoneNumberResponse extends js.Object {
+    /**
+      * The updated phone number details.
+      */
+    var PhoneNumber: js.UndefOr[PhoneNumber] = js.undefined
+  }
   
   trait UpdateUserRequest extends js.Object {
     /**
@@ -739,6 +2229,43 @@ object ChimeNs extends js.Object {
     var User: js.UndefOr[User] = js.undefined
   }
   
+  trait UpdateUserSettingsRequest extends js.Object {
+    /**
+      * The Amazon Chime account ID.
+      */
+    var AccountId: String
+    /**
+      * The user ID.
+      */
+    var UserId: String
+    /**
+      * The user settings to update.
+      */
+    var UserSettings: awsDashSdkLib.clientsChimeMod.ChimeNs.UserSettings
+  }
+  
+  trait UpdateVoiceConnectorRequest extends js.Object {
+    /**
+      * The name of the Amazon Chime Voice Connector.
+      */
+    var Name: VoiceConnectorName
+    /**
+      * When enabled, requires encryption for the Amazon Chime Voice Connector.
+      */
+    var RequireEncryption: Boolean
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: NonEmptyString
+  }
+  
+  trait UpdateVoiceConnectorResponse extends js.Object {
+    /**
+      * The Amazon Chime Voice Connector details.
+      */
+    var VoiceConnector: js.UndefOr[VoiceConnector] = js.undefined
+  }
+  
   trait User extends js.Object {
     /**
       * The Amazon Chime account ID.
@@ -764,6 +2291,10 @@ object ChimeNs extends js.Object {
       * The primary email address of the user.
       */
     var PrimaryEmail: js.UndefOr[EmailAddress] = js.undefined
+    /**
+      * The primary phone number associated with the user.
+      */
+    var PrimaryProvisionedNumber: js.UndefOr[SensitiveString] = js.undefined
     /**
       * Date and time when the user is registered, in ISO 8601 format.
       */
@@ -797,6 +2328,47 @@ object ChimeNs extends js.Object {
     var UserId: js.UndefOr[NonEmptyString] = js.undefined
   }
   
+  trait UserSettings extends js.Object {
+    /**
+      * The telephony settings associated with the user.
+      */
+    var Telephony: TelephonySettings
+  }
+  
+  trait VoiceConnector extends js.Object {
+    /**
+      * The Amazon Chime Voice Connector creation timestamp, in ISO 8601 format.
+      */
+    var CreatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+    /**
+      * The name of the Amazon Chime Voice Connector.
+      */
+    var Name: js.UndefOr[VoiceConnectorName] = js.undefined
+    /**
+      * The outbound host name for the Amazon Chime Voice Connector.
+      */
+    var OutboundHostName: js.UndefOr[String] = js.undefined
+    /**
+      * Designates whether encryption is required for the Amazon Chime Voice Connector.
+      */
+    var RequireEncryption: js.UndefOr[Boolean] = js.undefined
+    /**
+      * The updated Amazon Chime Voice Connector timestamp, in ISO 8601 format.
+      */
+    var UpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
+    /**
+      * The Amazon Chime Voice Connector ID.
+      */
+    var VoiceConnectorId: js.UndefOr[NonEmptyString] = js.undefined
+  }
+  
+  trait VoiceConnectorSettings extends js.Object {
+    /**
+      * The Amazon S3 bucket designated for call detail record storage.
+      */
+    var CdrBucket: js.UndefOr[String] = js.undefined
+  }
+  
   trait _AccountType extends js.Object
   
   trait _EmailStatus extends js.Object
@@ -807,6 +2379,18 @@ object ChimeNs extends js.Object {
   
   trait _License extends js.Object
   
+  trait _OrderedPhoneNumberStatus extends js.Object
+  
+  trait _OriginationRouteProtocol extends js.Object
+  
+  trait _PhoneNumberAssociationName extends js.Object
+  
+  trait _PhoneNumberOrderStatus extends js.Object
+  
+  trait _PhoneNumberProductType extends js.Object
+  
+  trait _PhoneNumberStatus extends js.Object
+  
   trait _RegistrationStatus extends js.Object
   
   trait _apiVersion extends js.Object
@@ -816,25 +2400,56 @@ object ChimeNs extends js.Object {
   type AccountName = java.lang.String
   type AccountType = _AccountType | java.lang.String
   type Boolean = scala.Boolean
+  type CallingRegion = java.lang.String
+  type CallingRegionList = js.Array[CallingRegion]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  type CpsLimit = scala.Double
+  type CredentialList = js.Array[Credential]
+  type E164PhoneNumber = java.lang.String
+  type E164PhoneNumberList = js.Array[E164PhoneNumber]
   type EmailAddress = java.lang.String
   type EmailStatus = _EmailStatus | java.lang.String
   type ErrorCode = _ErrorCode | java.lang.String
+  type GuidString = java.lang.String
   type InviteList = js.Array[Invite]
   type InviteStatus = _InviteStatus | java.lang.String
   type Iso8601Timestamp = stdLib.Date
   type License = _License | java.lang.String
   type LicenseList = js.Array[License]
   type NonEmptyString = java.lang.String
+  type NonEmptyStringList = js.Array[String]
+  type NullableBoolean = scala.Boolean
+  type OrderedPhoneNumberList = js.Array[OrderedPhoneNumber]
+  type OrderedPhoneNumberStatus = _OrderedPhoneNumberStatus | java.lang.String
+  type OriginationRouteList = js.Array[OriginationRoute]
+  type OriginationRoutePriority = scala.Double
+  type OriginationRouteProtocol = _OriginationRouteProtocol | java.lang.String
+  type OriginationRouteWeight = scala.Double
+  type PhoneNumberAssociationList = js.Array[PhoneNumberAssociation]
+  type PhoneNumberAssociationName = _PhoneNumberAssociationName | java.lang.String
+  type PhoneNumberErrorList = js.Array[PhoneNumberError]
+  type PhoneNumberList = js.Array[PhoneNumber]
+  type PhoneNumberMaxResults = scala.Double
+  type PhoneNumberOrderList = js.Array[PhoneNumberOrder]
+  type PhoneNumberOrderStatus = _PhoneNumberOrderStatus | java.lang.String
+  type PhoneNumberProductType = _PhoneNumberProductType | java.lang.String
+  type PhoneNumberStatus = _PhoneNumberStatus | java.lang.String
+  type Port = scala.Double
   type ProfileServiceMaxResults = scala.Double
   type RegistrationStatus = _RegistrationStatus | java.lang.String
+  type ResultMax = scala.Double
   type SensitiveString = java.lang.String
+  type SensitiveStringList = js.Array[SensitiveString]
   type String = java.lang.String
+  type StringList = js.Array[String]
+  type UpdatePhoneNumberRequestItemList = js.Array[UpdatePhoneNumberRequestItem]
   type UpdateUserRequestItemList = js.Array[UpdateUserRequestItem]
   type UserEmailList = js.Array[EmailAddress]
   type UserErrorList = js.Array[UserError]
   type UserIdList = js.Array[NonEmptyString]
   type UserList = js.Array[User]
+  type VoiceConnectorList = js.Array[VoiceConnector]
+  type VoiceConnectorName = java.lang.String
   type apiVersion = _apiVersion | java.lang.String
 }
 

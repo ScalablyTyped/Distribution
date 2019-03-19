@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_EmailUrl extends js.Object {
-  var email: java.lang.String
-  var url: js.UndefOr[java.lang.String] = js.undefined
+  val email: java.lang.String
+  val url: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object Anon_EmailUrl {

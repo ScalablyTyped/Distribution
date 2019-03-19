@@ -11,7 +11,7 @@ class GeocoderViewModel protected ()
   extends cesiumLib.cesiumMod.CesiumNs.GeocoderViewModel {
   def this(options: cesiumLib.Anon_FlightDuration) = this()
   /* CompleteClass */
-  override var complete: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override var complete: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
   override var flightDuration: scala.Double = js.native
   /* CompleteClass */

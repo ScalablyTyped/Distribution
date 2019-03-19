@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait EntityCluster extends js.Object {
   var clusterBillboards: scala.Boolean
-  var clusterEvent: Event
+  var clusterEvent: Event[js.Array[_]]
   var clusterLabels: scala.Boolean
   var clusterPoints: scala.Boolean
   var enabled: scala.Boolean
@@ -20,7 +20,7 @@ object EntityCluster {
   @scala.inline
   def apply(
     clusterBillboards: scala.Boolean,
-    clusterEvent: Event,
+    clusterEvent: Event[js.Array[_]],
     clusterLabels: scala.Boolean,
     clusterPoints: scala.Boolean,
     destroy: () => scala.Unit,

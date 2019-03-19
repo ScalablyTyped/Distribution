@@ -11,7 +11,7 @@ trait Clock extends js.Object {
   var clockStep: ClockStep
   var currentTime: JulianDate
   var multiplier: scala.Double
-  var onTick: Event
+  var onTick: Event[js.Array[Clock]]
   var shouldAnimate: scala.Boolean
   var startTime: JulianDate
   var stopTime: JulianDate
@@ -26,7 +26,7 @@ object Clock {
     clockStep: ClockStep,
     currentTime: JulianDate,
     multiplier: scala.Double,
-    onTick: Event,
+    onTick: Event[js.Array[Clock]],
     shouldAnimate: scala.Boolean,
     startTime: JulianDate,
     stopTime: JulianDate,

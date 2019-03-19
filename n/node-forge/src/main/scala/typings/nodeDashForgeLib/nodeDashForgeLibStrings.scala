@@ -89,11 +89,32 @@ object nodeDashForgeLibStrings {
   sealed trait hex extends js.Object
   
   @js.native
+  sealed trait md5
+    extends nodeDashForgeLib.nodeDashForgeMod.hmacNs.Algorithm
+  
+  @js.native
   sealed trait raw
     extends nodeDashForgeLib.nodeDashForgeMod.Encoding
   
   @js.native
   sealed trait server extends js.Object
+  
+  @js.native
+  sealed trait sha1
+    extends nodeDashForgeLib.nodeDashForgeMod.hmacNs.Algorithm
+  
+  @js.native
+  sealed trait sha224 extends js.Object
+  
+  @js.native
+  sealed trait sha256
+    extends nodeDashForgeLib.nodeDashForgeMod.hmacNs.Algorithm
+  
+  @js.native
+  sealed trait sha384 extends js.Object
+  
+  @js.native
+  sealed trait sha512 extends js.Object
   
   @js.native
   sealed trait utf8
@@ -144,9 +165,21 @@ object nodeDashForgeLibStrings {
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   @scala.inline
+  def md5: md5 = "md5".asInstanceOf[md5]
+  @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
   @scala.inline
   def server: server = "server".asInstanceOf[server]
+  @scala.inline
+  def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  @scala.inline
+  def sha224: sha224 = "sha224".asInstanceOf[sha224]
+  @scala.inline
+  def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  @scala.inline
+  def sha384: sha384 = "sha384".asInstanceOf[sha384]
+  @scala.inline
+  def sha512: sha512 = "sha512".asInstanceOf[sha512]
   @scala.inline
   def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }

@@ -11,12 +11,9 @@ object metaNs extends js.Object {
   @JSName("v1")
   @js.native
   object v1Ns extends js.Object {
-    /**
-      * Status is a return value for calls that don't return other objects.
-      */
     @js.native
     class Status protected ()
-      extends atPulumiKubernetesLib.providerMod.metaNs.v1Ns.Status {
+      extends atPulumiKubernetesLib.metaMod.v1Ns.Status {
       /**
         * Create a meta.v1.Status resource with the given unique name, arguments, and options.
         *
@@ -44,12 +41,12 @@ object metaNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.metaNs.v1Ns.Status = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.metaV1StatusMod.Status = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.metaNs.v1Ns.Status = js.native
+      ): atPulumiKubernetesLib.metaV1StatusMod.Status = js.native
     }
     
   }

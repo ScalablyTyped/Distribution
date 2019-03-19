@@ -11,13 +11,9 @@ object eventsNs extends js.Object {
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
-    /**
-      * Event is a report of an event somewhere in the cluster. It generally denotes some state
-      * change in the system.
-      */
     @js.native
     class Event protected ()
-      extends atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.Event {
+      extends atPulumiKubernetesLib.eventsMod.v1beta1Ns.Event {
       /**
         * Create a events.v1beta1.Event resource with the given unique name, arguments, and options.
         *
@@ -30,12 +26,9 @@ object eventsNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.eventsNs.v1beta1Ns.Event, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * EventList is a list of Event objects.
-      */
     @js.native
     class EventList protected ()
-      extends atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.EventList {
+      extends atPulumiKubernetesLib.eventsMod.v1beta1Ns.EventList {
       /**
         * Create a events.v1beta1.EventList resource with the given unique name, arguments, and options.
         *
@@ -63,12 +56,12 @@ object eventsNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.Event = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.eventsV1beta1EventMod.Event = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.Event = js.native
+      ): atPulumiKubernetesLib.eventsV1beta1EventMod.Event = js.native
     }
     
     /* static members */
@@ -86,12 +79,12 @@ object eventsNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.EventList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.eventsV1beta1EventListMod.EventList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.EventList = js.native
+      ): atPulumiKubernetesLib.eventsV1beta1EventListMod.EventList = js.native
     }
     
   }

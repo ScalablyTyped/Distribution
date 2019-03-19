@@ -12,14 +12,14 @@ import scala.scalajs.js.annotation._
   * @template C Context passed to getInitialProps.
   */
 trait NextStaticLifecycle[IP, C] extends js.Object {
-  var getInitialProps: js.UndefOr[js.Function1[/* ctx */ C, js.Promise[IP] | IP]] = js.undefined
+  var getInitialProps: js.UndefOr[GetInitialProps[IP, C]] = js.undefined
 }
 
 object NextStaticLifecycle {
   @scala.inline
-  def apply[IP, C](getInitialProps: /* ctx */ C => js.Promise[IP] | IP = null): NextStaticLifecycle[IP, C] = {
+  def apply[IP, C](getInitialProps: GetInitialProps[IP, C] = null): NextStaticLifecycle[IP, C] = {
     val __obj = js.Dynamic.literal()
-    if (getInitialProps != null) __obj.updateDynamic("getInitialProps")(js.Any.fromFunction1(getInitialProps))
+    if (getInitialProps != null) __obj.updateDynamic("getInitialProps")(getInitialProps)
     __obj.asInstanceOf[NextStaticLifecycle[IP, C]]
   }
 }

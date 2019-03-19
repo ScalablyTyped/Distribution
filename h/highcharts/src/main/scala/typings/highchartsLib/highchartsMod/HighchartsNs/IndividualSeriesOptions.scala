@@ -100,6 +100,10 @@ trait IndividualSeriesOptions extends js.Object {
     */
   var legendIndex: js.UndefOr[scala.Double] = js.undefined
   /**
+    * When using any indicators, Define the indicators name like 'candlesticksss'.
+    */
+  var linkedTo: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * For area-like series, allow the font size to vary so that small areas get a smaller font size. The default applies this effect to area-like series but not line-like series.
     */
   var maxFontSize: js.UndefOr[scala.Double | scala.Null] = js.undefined
@@ -161,6 +165,7 @@ object IndividualSeriesOptions {
     index: scala.Int | scala.Double = null,
     innerSize: scala.Double | java.lang.String = null,
     legendIndex: scala.Int | scala.Double = null,
+    linkedTo: java.lang.String = null,
     maxFontSize: scala.Int | scala.Double = null,
     minFontSize: scala.Int | scala.Double = null,
     name: java.lang.String = null,
@@ -184,6 +189,7 @@ object IndividualSeriesOptions {
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (innerSize != null) __obj.updateDynamic("innerSize")(innerSize.asInstanceOf[js.Any])
     if (legendIndex != null) __obj.updateDynamic("legendIndex")(legendIndex.asInstanceOf[js.Any])
+    if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo)
     if (maxFontSize != null) __obj.updateDynamic("maxFontSize")(maxFontSize.asInstanceOf[js.Any])
     if (minFontSize != null) __obj.updateDynamic("minFontSize")(minFontSize.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)

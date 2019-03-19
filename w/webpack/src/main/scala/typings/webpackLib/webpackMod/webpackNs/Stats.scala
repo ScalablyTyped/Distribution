@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Stats extends js.Object {
   var compilation: webpackLib.webpackMod.webpackNs.compilationNs.Compilation = js.native
-  var endTime: js.UndefOr[stdLib.Date] = js.native
+  var endTime: js.UndefOr[scala.Double] = js.native
   var hash: js.UndefOr[java.lang.String] = js.native
-  var startTime: js.UndefOr[stdLib.Date] = js.native
+  var startTime: js.UndefOr[scala.Double] = js.native
   /** Returns true if there were errors while compiling. */
   def hasErrors(): scala.Boolean = js.native
   /** Returns true if there were warnings while compiling. */

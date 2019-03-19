@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- highchartsLib.highchartsMod.HighchartsNs.IndividualSeriesOptions because var conflicts: color, cursor, maxFontSize, minFontSize, pointWidth, visible. Inlined size, innerSize, `type`, colorIndex, crisp, data, description, id, index, legendIndex, name, stack, xAxis, yAxis, zIndex */ trait WaterFallChartSeriesOptions extends WaterFallChart {
+- highchartsLib.highchartsMod.HighchartsNs.IndividualSeriesOptions because var conflicts: color, cursor, linkedTo, maxFontSize, minFontSize, pointWidth, visible. Inlined size, innerSize, `type`, colorIndex, crisp, data, description, id, index, legendIndex, name, stack, xAxis, yAxis, zIndex */ trait WaterFallChartSeriesOptions extends WaterFallChart {
   /**
     * Styled mode only. A specific color index to use for the point, so its graphic representations are given the class name highcharts-color-{n}.
     * @since 5.0.0

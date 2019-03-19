@@ -13,6 +13,7 @@ trait MGetParams extends GenericParams {
   var preference: js.UndefOr[java.lang.String] = js.undefined
   var realtime: js.UndefOr[scala.Boolean] = js.undefined
   var refresh: js.UndefOr[scala.Boolean] = js.undefined
+  var routing: js.UndefOr[java.lang.String] = js.undefined
   var storedFields: js.UndefOr[NameList] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -33,6 +34,7 @@ object MGetParams {
     realtime: js.UndefOr[scala.Boolean] = js.undefined,
     refresh: js.UndefOr[scala.Boolean] = js.undefined,
     requestTimeout: scala.Int | scala.Double = null,
+    routing: java.lang.String = null,
     storedFields: NameList = null,
     `type`: java.lang.String = null
   ): MGetParams = {
@@ -50,6 +52,7 @@ object MGetParams {
     if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime)
     if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh)
     if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
+    if (routing != null) __obj.updateDynamic("routing")(routing)
     if (storedFields != null) __obj.updateDynamic("storedFields")(storedFields.asInstanceOf[js.Any])
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[MGetParams]

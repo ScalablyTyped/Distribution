@@ -20,8 +20,6 @@ object ^ extends js.Object {
   def createScopeForTest(bindingContext: js.Any): Scope = js.native
   def createScopeForTest(bindingContext: js.Any, parentBindingContext: js.Any): Scope = js.native
   def declarePropertyDependencies(ctor: js.Any, propertyName: java.lang.String, dependencies: js.Array[java.lang.String]): scala.Unit = js.native
-  def disableConnectQueue(): scala.Unit = js.native
-  def enableConnectQueue(): scala.Unit = js.native
   def enqueueBindingConnect(binding: Binding): scala.Unit = js.native
   def getChangeRecords(): js.Any = js.native
   def getContextFor(name: java.lang.String, scope: Scope): js.Any = js.native
@@ -32,7 +30,6 @@ object ^ extends js.Object {
   def observable(targetOrConfig: js.Object): js.Any = js.native
   def observable(targetOrConfig: js.Object, key: js.Any): js.Any = js.native
   def observable(targetOrConfig: js.Object, key: js.Any, descriptor: js.Any): js.Any = js.native
-  def setConnectQueueThreshold(value: scala.Double): scala.Unit = js.native
   def signalBindings(name: java.lang.String): scala.Unit = js.native
   def subscriberCollection(): js.Any = js.native
   def valueConverter(name: java.lang.String): js.Any = js.native

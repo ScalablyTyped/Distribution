@@ -23,7 +23,7 @@ trait SequelizeStaticAndInstance extends Errors {
     * simply as factory. This class should not be instantiated directly, it is created using sequelize.define,
     * and already created models can be loaded using sequelize.import
     */
-  var Model: sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _] = js.native
+  var Model: sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _, _] = js.native
   var Op: Operators = js.native
   /**
     * A modified version of bluebird promises, that allows listening for sql events

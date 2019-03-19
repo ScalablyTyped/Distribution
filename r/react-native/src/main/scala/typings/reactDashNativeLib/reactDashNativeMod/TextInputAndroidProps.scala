@@ -32,6 +32,12 @@ trait TextInputAndroidProps extends js.Object {
     */
   var returnKeyLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Vertically align text when `multiline` is set to true
+    */
+  var textAlignVertical: js.UndefOr[
+    reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.top | reactDashNativeLib.reactDashNativeLibStrings.bottom | reactDashNativeLib.reactDashNativeLibStrings.center
+  ] = js.undefined
+  /**
     * Set text break strategy on Android API Level 23+, possible values are simple, highQuality, balanced
     * The default value is simple.
     */
@@ -52,6 +58,7 @@ object TextInputAndroidProps {
     inlineImagePadding: scala.Int | scala.Double = null,
     numberOfLines: scala.Int | scala.Double = null,
     returnKeyLabel: java.lang.String = null,
+    textAlignVertical: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.top | reactDashNativeLib.reactDashNativeLibStrings.bottom | reactDashNativeLib.reactDashNativeLibStrings.center = null,
     textBreakStrategy: reactDashNativeLib.reactDashNativeLibStrings.simple | reactDashNativeLib.reactDashNativeLibStrings.highQuality | reactDashNativeLib.reactDashNativeLibStrings.balanced = null,
     underlineColorAndroid: java.lang.String = null
   ): TextInputAndroidProps = {
@@ -61,6 +68,7 @@ object TextInputAndroidProps {
     if (inlineImagePadding != null) __obj.updateDynamic("inlineImagePadding")(inlineImagePadding.asInstanceOf[js.Any])
     if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
     if (returnKeyLabel != null) __obj.updateDynamic("returnKeyLabel")(returnKeyLabel)
+    if (textAlignVertical != null) __obj.updateDynamic("textAlignVertical")(textAlignVertical.asInstanceOf[js.Any])
     if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
     if (underlineColorAndroid != null) __obj.updateDynamic("underlineColorAndroid")(underlineColorAndroid)
     __obj.asInstanceOf[TextInputAndroidProps]

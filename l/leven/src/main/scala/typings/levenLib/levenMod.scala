@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("leven", JSImport.Namespace)
 @js.native
 object levenMod extends js.Object {
-  def apply(a: java.lang.String, b: java.lang.String): scala.Double = js.native
+  def default(left: java.lang.String, right: java.lang.String): scala.Double = js.native
 }
 

@@ -1,0 +1,39 @@
+package typings
+package npmDashKeywordLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Anon_Count extends js.Object {
+  /**
+  	 * Get a list of npm packages with a certain keyword.
+  	 *
+  	 * @param keyword - One or more keywords. Only matches packages that have *all* the given keywords. Example: `['string', 'camelcase']`.
+  	 * @returns A list of packages having the specified keyword in their package.json `keyword` property.
+  	 */
+  def apply(keyword: java.lang.String): js.Promise[js.Array[npmDashKeywordLib.npmDashKeywordMod.PackageDescriptor]] = js.native
+  def apply(keyword: java.lang.String, options: npmDashKeywordLib.npmDashKeywordMod.Options): js.Promise[js.Array[npmDashKeywordLib.npmDashKeywordMod.PackageDescriptor]] = js.native
+  def apply(keyword: js.Array[java.lang.String]): js.Promise[js.Array[npmDashKeywordLib.npmDashKeywordMod.PackageDescriptor]] = js.native
+  def apply(keyword: js.Array[java.lang.String], options: npmDashKeywordLib.npmDashKeywordMod.Options): js.Promise[js.Array[npmDashKeywordLib.npmDashKeywordMod.PackageDescriptor]] = js.native
+  /**
+  	 * Get the count of npm packages names with a certain keyword.
+  	 *
+  	 * @param keyword - One or more keywords. Only matches packages that have *all* the given keywords. Example: `['string', 'camelcase']`.
+  	 * @returns The count of packages.
+  	 */
+  def count(keyword: java.lang.String): js.Promise[scala.Double] = js.native
+  def count(keyword: js.Array[java.lang.String]): js.Promise[scala.Double] = js.native
+  /**
+  	 * Get a list of npm package names with a certain keyword.
+  	 *
+  	 * @param keyword - One or more keywords. Only matches packages that have *all* the given keywords. Example: `['string', 'camelcase']`.
+  	 * @returns A list of package names. Use this if you don't need the description as it's faster.
+  	 */
+  def names(keyword: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
+  def names(keyword: java.lang.String, options: npmDashKeywordLib.npmDashKeywordMod.Options): js.Promise[js.Array[java.lang.String]] = js.native
+  def names(keyword: js.Array[java.lang.String]): js.Promise[js.Array[java.lang.String]] = js.native
+  def names(keyword: js.Array[java.lang.String], options: npmDashKeywordLib.npmDashKeywordMod.Options): js.Promise[js.Array[java.lang.String]] = js.native
+}
+

@@ -8104,6 +8104,10 @@ object EC2Ns extends js.Object {
       */
     var CreateTime: js.UndefOr[DateTime] = js.undefined
     /**
+      * Indicates whether data retention support is enabled for the AFI.
+      */
+    var DataRetentionSupport: js.UndefOr[Boolean] = js.undefined
+    /**
       * The description of the AFI.
       */
     var Description: js.UndefOr[String] = js.undefined

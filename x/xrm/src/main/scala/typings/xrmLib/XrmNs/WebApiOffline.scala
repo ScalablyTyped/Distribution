@@ -17,7 +17,7 @@ trait WebApiOffline extends js.Object {
     * @returns On success, returns a promise object containing the attributes specified earlier in the description of the successCallback parameter.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/createrecord External Link: createRecord (Client API reference)}
     */
-  def createRecord(entityLogicalName: java.lang.String, record: js.Any): xrmLib.XrmNs.AsyncNs.PromiseLike[java.lang.String] = js.native
+  def createRecord(entityLogicalName: java.lang.String, record: js.Any): xrmLib.XrmNs.AsyncNs.PromiseLike[CreateResponse] = js.native
   /**
     * Deletes an entity record.
     * @param entityLogicalName The entity logical name of the record you want to delete. For example: "account".

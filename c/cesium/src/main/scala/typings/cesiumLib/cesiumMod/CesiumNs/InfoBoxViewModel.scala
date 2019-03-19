@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InfoBoxViewModel extends js.Object {
-  var cameraClicked: Event
+  var cameraClicked: Event[js.Array[_]]
   var cameraIconPath: java.lang.String
-  var closeClicked: Event
+  var closeClicked: Event[js.Array[_]]
   var description: java.lang.String
   var enableCamera: scala.Boolean
   var isCameraTracking: scala.Boolean
@@ -21,9 +21,9 @@ trait InfoBoxViewModel extends js.Object {
 object InfoBoxViewModel {
   @scala.inline
   def apply(
-    cameraClicked: Event,
+    cameraClicked: Event[js.Array[_]],
     cameraIconPath: java.lang.String,
-    closeClicked: Event,
+    closeClicked: Event[js.Array[_]],
     description: java.lang.String,
     enableCamera: scala.Boolean,
     isCameraTracking: scala.Boolean,

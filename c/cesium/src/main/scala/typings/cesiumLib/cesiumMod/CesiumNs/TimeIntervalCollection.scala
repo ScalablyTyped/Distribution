@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TimeIntervalCollection extends js.Object {
-  val changedEvent: Event = js.native
+  val changedEvent: Event[js.Array[TimeIntervalCollection]] = js.native
   val isEmpty: scala.Boolean = js.native
   val isStartIncluded: scala.Boolean = js.native
   val isStopIncluded: scala.Boolean = js.native

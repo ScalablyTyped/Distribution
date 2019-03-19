@@ -166,7 +166,7 @@ trait Flickity extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-    * one time event handler
+    * one time event handl`er
     * @param eventName name of event  (@see Flickity.FlickityEvents class for filckity supported events)
     * @param callback callback funtion to execute when event fires
     */

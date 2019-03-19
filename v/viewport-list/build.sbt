@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "viewport-list"
-version := "5.1-dt-20190313Z-86c5f5"
+version := "5.1-dt-20190318Z-e8988d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

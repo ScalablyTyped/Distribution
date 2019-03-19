@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-indicators"
-version := "0.13-dt-20180806Z-013078"
+version := "0.13-dt-20180806Z-861a06"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-29f798",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190312Z-6f0f1a",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190312Z-21656c",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190318Z-7d3d3e",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

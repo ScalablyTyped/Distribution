@@ -24,8 +24,10 @@ class Logger[T /* <: LoggerOptions */] protected ()
     * Duplicate specify level log to the other logger
     * @param {String} level - log level
     * @param {Logger} logger - target logger instance
+    * @param {Object} [options] - { excludes: [] }
     */
   def duplicate(level: LoggerLevel, logger: Logger[LoggerOptions]): scala.Unit = js.native
+  def duplicate(level: LoggerLevel, logger: Logger[LoggerOptions], options: eggDashLoggerLib.Anon_Excludes): scala.Unit = js.native
   /**
     * enable a transport
     * @param {String} name - transport name

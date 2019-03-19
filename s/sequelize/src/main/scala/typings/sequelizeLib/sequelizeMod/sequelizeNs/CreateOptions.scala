@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
     *
     * TODO: See set
     */
-  var include: js.UndefOr[js.Array[(Model[_, _]) | IncludeOptions]] = js.undefined
+  var include: js.UndefOr[js.Array[(Model[_, _, _]) | IncludeOptions]] = js.undefined
   /**
     * Is this record new
     */
@@ -36,7 +36,7 @@ object CreateOptions {
     benchmark: js.UndefOr[scala.Boolean] = js.undefined,
     fields: js.Array[java.lang.String] = null,
     hooks: js.UndefOr[scala.Boolean] = js.undefined,
-    include: js.Array[(Model[_, _]) | IncludeOptions] = null,
+    include: js.Array[(Model[_, _, _]) | IncludeOptions] = null,
     isNewRecord: js.UndefOr[scala.Boolean] = js.undefined,
     logging: scala.Boolean | js.Function = null,
     onDuplicate: java.lang.String = null,

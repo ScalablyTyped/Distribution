@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Camera extends js.Object {
-  val changed: Event = js.native
+  val changed: Event[js.Array[_]] = js.native
   var constrainedAxis: Cartesian3 = js.native
   var defaultLookAmount: scala.Double = js.native
   var defaultMoveAmount: scala.Double = js.native
@@ -21,8 +21,8 @@ trait Camera extends js.Object {
   val inverseViewMatrix: Matrix4 = js.native
   var maximumTranslateFactor: scala.Double = js.native
   var maximumZoomFactor: scala.Double = js.native
-  val moveEnd: Event = js.native
-  val moveStart: Event = js.native
+  val moveEnd: Event[js.Array[_]] = js.native
+  val moveStart: Event[js.Array[_]] = js.native
   var percentageChanged: scala.Double = js.native
   val pitch: scala.Double = js.native
   var position: Cartesian3 = js.native

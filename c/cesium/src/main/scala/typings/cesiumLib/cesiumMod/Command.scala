@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class Command ()
   extends cesiumLib.cesiumMod.CesiumNs.Command {
   /* CompleteClass */
-  override var afterExecute: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override var afterExecute: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
-  override var beforeExecute: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override var beforeExecute: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
   override var canExecute: scala.Boolean = js.native
 }

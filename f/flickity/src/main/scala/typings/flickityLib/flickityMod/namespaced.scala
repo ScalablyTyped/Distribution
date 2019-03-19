@@ -12,12 +12,12 @@ class namespaced protected () extends Flickity {
     * Initializes an new instance of Flickity .
     *
     * @param element Element selector string or container Element to initialize Flickity on
-    * @param options (IFlickityOptions) Flickity options
+    * @param options (IOptions) Flickity options
     */
   def this(selector: java.lang.String) = this()
   def this(selector: stdLib.Element) = this()
-  def this(selector: java.lang.String, options: FlickityOptions) = this()
-  def this(selector: stdLib.Element, options: FlickityOptions) = this()
+  def this(selector: java.lang.String, options: flickityLib.flickityMod.FlickityNs.Options) = this()
+  def this(selector: stdLib.Element, options: flickityLib.flickityMod.FlickityNs.Options) = this()
 }
 
 /* static members */

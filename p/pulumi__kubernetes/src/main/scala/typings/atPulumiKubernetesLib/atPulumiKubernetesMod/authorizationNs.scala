@@ -11,14 +11,9 @@ object authorizationNs extends js.Object {
   @JSName("v1")
   @js.native
   object v1Ns extends js.Object {
-    /**
-      * LocalSubjectAccessReview checks whether or not a user or group can perform an action in a
-      * given namespace. Having a namespace scoped resource makes it much easier to grant namespace
-      * scoped policy that includes permissions checking.
-      */
     @js.native
     class LocalSubjectAccessReview protected ()
-      extends atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.LocalSubjectAccessReview {
+      extends atPulumiKubernetesLib.authorizationMod.v1Ns.LocalSubjectAccessReview {
       /**
         * Create a authorization.v1.LocalSubjectAccessReview resource with the given unique name, arguments, and options.
         *
@@ -31,14 +26,9 @@ object authorizationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.authorizationNs.v1Ns.LocalSubjectAccessReview, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * SelfSubjectAccessReview checks whether or the current user can perform an action.  Not
-      * filling in a spec.namespace means "in all namespaces".  Self is a special case, because users
-      * should always be able to check whether they can perform an action
-      */
     @js.native
     class SelfSubjectAccessReview protected ()
-      extends atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SelfSubjectAccessReview {
+      extends atPulumiKubernetesLib.authorizationMod.v1Ns.SelfSubjectAccessReview {
       /**
         * Create a authorization.v1.SelfSubjectAccessReview resource with the given unique name, arguments, and options.
         *
@@ -51,19 +41,9 @@ object authorizationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.authorizationNs.v1Ns.SelfSubjectAccessReview, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * SelfSubjectRulesReview enumerates the set of actions the current user can perform within a
-      * namespace. The returned list of actions may be incomplete depending on the server's
-      * authorization mode, and any errors experienced during the evaluation. SelfSubjectRulesReview
-      * should be used by UIs to show/hide actions, or to quickly let an end user reason about their
-      * permissions. It should NOT Be used by external systems to drive authorization decisions as
-      * this raises confused deputy, cache lifetime/revocation, and correctness concerns.
-      * SubjectAccessReview, and LocalAccessReview are the correct way to defer authorization
-      * decisions to the API server.
-      */
     @js.native
     class SelfSubjectRulesReview protected ()
-      extends atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SelfSubjectRulesReview {
+      extends atPulumiKubernetesLib.authorizationMod.v1Ns.SelfSubjectRulesReview {
       /**
         * Create a authorization.v1.SelfSubjectRulesReview resource with the given unique name, arguments, and options.
         *
@@ -76,12 +56,9 @@ object authorizationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.authorizationNs.v1Ns.SelfSubjectRulesReview, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * SubjectAccessReview checks whether or not a user or group can perform an action.
-      */
     @js.native
     class SubjectAccessReview protected ()
-      extends atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SubjectAccessReview {
+      extends atPulumiKubernetesLib.authorizationMod.v1Ns.SubjectAccessReview {
       /**
         * Create a authorization.v1.SubjectAccessReview resource with the given unique name, arguments, and options.
         *
@@ -109,12 +86,12 @@ object authorizationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.LocalSubjectAccessReview = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.authorizationV1LocalSubjectAccessReviewMod.LocalSubjectAccessReview = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.LocalSubjectAccessReview = js.native
+      ): atPulumiKubernetesLib.authorizationV1LocalSubjectAccessReviewMod.LocalSubjectAccessReview = js.native
     }
     
     /* static members */
@@ -132,12 +109,12 @@ object authorizationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SelfSubjectAccessReview = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.authorizationV1SelfSubjectAccessReviewMod.SelfSubjectAccessReview = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SelfSubjectAccessReview = js.native
+      ): atPulumiKubernetesLib.authorizationV1SelfSubjectAccessReviewMod.SelfSubjectAccessReview = js.native
     }
     
     /* static members */
@@ -155,12 +132,12 @@ object authorizationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SelfSubjectRulesReview = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.authorizationV1SelfSubjectRulesReviewMod.SelfSubjectRulesReview = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SelfSubjectRulesReview = js.native
+      ): atPulumiKubernetesLib.authorizationV1SelfSubjectRulesReviewMod.SelfSubjectRulesReview = js.native
     }
     
     /* static members */
@@ -178,12 +155,12 @@ object authorizationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SubjectAccessReview = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.authorizationV1SubjectAccessReviewMod.SubjectAccessReview = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SubjectAccessReview = js.native
+      ): atPulumiKubernetesLib.authorizationV1SubjectAccessReviewMod.SubjectAccessReview = js.native
     }
     
   }
@@ -191,14 +168,9 @@ object authorizationNs extends js.Object {
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
-    /**
-      * LocalSubjectAccessReview checks whether or not a user or group can perform an action in a
-      * given namespace. Having a namespace scoped resource makes it much easier to grant namespace
-      * scoped policy that includes permissions checking.
-      */
     @js.native
     class LocalSubjectAccessReview protected ()
-      extends atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.LocalSubjectAccessReview {
+      extends atPulumiKubernetesLib.authorizationMod.v1beta1Ns.LocalSubjectAccessReview {
       /**
         * Create a authorization.v1beta1.LocalSubjectAccessReview resource with the given unique name, arguments, and options.
         *
@@ -211,14 +183,9 @@ object authorizationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.authorizationNs.v1beta1Ns.LocalSubjectAccessReview, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * SelfSubjectAccessReview checks whether or the current user can perform an action.  Not
-      * filling in a spec.namespace means "in all namespaces".  Self is a special case, because users
-      * should always be able to check whether they can perform an action
-      */
     @js.native
     class SelfSubjectAccessReview protected ()
-      extends atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReview {
+      extends atPulumiKubernetesLib.authorizationMod.v1beta1Ns.SelfSubjectAccessReview {
       /**
         * Create a authorization.v1beta1.SelfSubjectAccessReview resource with the given unique name, arguments, and options.
         *
@@ -231,19 +198,9 @@ object authorizationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReview, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * SelfSubjectRulesReview enumerates the set of actions the current user can perform within a
-      * namespace. The returned list of actions may be incomplete depending on the server's
-      * authorization mode, and any errors experienced during the evaluation. SelfSubjectRulesReview
-      * should be used by UIs to show/hide actions, or to quickly let an end user reason about their
-      * permissions. It should NOT Be used by external systems to drive authorization decisions as
-      * this raises confused deputy, cache lifetime/revocation, and correctness concerns.
-      * SubjectAccessReview, and LocalAccessReview are the correct way to defer authorization
-      * decisions to the API server.
-      */
     @js.native
     class SelfSubjectRulesReview protected ()
-      extends atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReview {
+      extends atPulumiKubernetesLib.authorizationMod.v1beta1Ns.SelfSubjectRulesReview {
       /**
         * Create a authorization.v1beta1.SelfSubjectRulesReview resource with the given unique name, arguments, and options.
         *
@@ -256,12 +213,9 @@ object authorizationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReview, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * SubjectAccessReview checks whether or not a user or group can perform an action.
-      */
     @js.native
     class SubjectAccessReview protected ()
-      extends atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SubjectAccessReview {
+      extends atPulumiKubernetesLib.authorizationMod.v1beta1Ns.SubjectAccessReview {
       /**
         * Create a authorization.v1beta1.SubjectAccessReview resource with the given unique name, arguments, and options.
         *
@@ -289,12 +243,12 @@ object authorizationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.LocalSubjectAccessReview = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.authorizationV1beta1LocalSubjectAccessReviewMod.LocalSubjectAccessReview = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.LocalSubjectAccessReview = js.native
+      ): atPulumiKubernetesLib.authorizationV1beta1LocalSubjectAccessReviewMod.LocalSubjectAccessReview = js.native
     }
     
     /* static members */
@@ -312,12 +266,12 @@ object authorizationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReview = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.authorizationV1beta1SelfSubjectAccessReviewMod.SelfSubjectAccessReview = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReview = js.native
+      ): atPulumiKubernetesLib.authorizationV1beta1SelfSubjectAccessReviewMod.SelfSubjectAccessReview = js.native
     }
     
     /* static members */
@@ -335,12 +289,12 @@ object authorizationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReview = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.authorizationV1beta1SelfSubjectRulesReviewMod.SelfSubjectRulesReview = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReview = js.native
+      ): atPulumiKubernetesLib.authorizationV1beta1SelfSubjectRulesReviewMod.SelfSubjectRulesReview = js.native
     }
     
     /* static members */
@@ -358,12 +312,12 @@ object authorizationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SubjectAccessReview = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.authorizationV1beta1SubjectAccessReviewMod.SubjectAccessReview = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SubjectAccessReview = js.native
+      ): atPulumiKubernetesLib.authorizationV1beta1SubjectAccessReviewMod.SubjectAccessReview = js.native
     }
     
   }

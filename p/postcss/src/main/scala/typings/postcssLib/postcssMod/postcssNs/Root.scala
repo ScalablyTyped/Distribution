@@ -9,9 +9,15 @@ import scala.scalajs.js.annotation._
   * Represents a CSS file and contains all its parsed nodes.
   */
 @js.native
-trait Root extends Container {
-  def remove(child: Node): this.type = js.native
-  def remove(child: scala.Double): this.type = js.native
+trait Root
+  extends ContainerBase
+     with Container
+     with Node {
+  /**
+    * Inherited from Container. Should always be undefined for a Root node.
+    */
+  var parent: scala.Unit = js.native
+  var `type`: postcssLib.postcssLibStrings.root = js.native
   /**
     * @returns A Result instance representing the root's CSS.
     */

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * already created models can be loaded using `sequelize.import`
   */
 @js.native
-trait Model[TInstance, TAttributes]
+trait Model[TInstance, TAttributes, TCreationAttributes]
   extends Hooks[TInstance]
      with Associations {
   /**
@@ -99,8 +99,8 @@ trait Model[TInstance, TAttributes]
     * Builds a new model instance and calls save on it.
     */
   def create(): bluebirdLib.bluebirdMod.namespaced[TInstance] = js.native
-  def create(values: TAttributes): bluebirdLib.bluebirdMod.namespaced[TInstance] = js.native
-  def create(values: TAttributes, options: CreateOptions): bluebirdLib.bluebirdMod.namespaced[TInstance] = js.native
+  def create(values: TCreationAttributes): bluebirdLib.bluebirdMod.namespaced[TInstance] = js.native
+  def create(values: TCreationAttributes, options: CreateOptions): bluebirdLib.bluebirdMod.namespaced[TInstance] = js.native
   /**
     * Run a describe query on the table. The result will be return to the listener as a hash of attributes and
     * their types.

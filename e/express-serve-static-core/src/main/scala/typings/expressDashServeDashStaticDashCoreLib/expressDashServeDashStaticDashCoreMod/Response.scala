@@ -19,8 +19,8 @@ trait Response
     *
     *     res.json(null);
     *     res.json({ user: 'tj' });
-    *     res.json(500, 'oh noes!');
-    *     res.json(404, 'I dont have that');
+    *     res.status(500).json('oh noes!');
+    *     res.status(404).json('I dont have that');
     */
   @JSName("json")
   var json_Original: Send = js.native
@@ -31,8 +31,8 @@ trait Response
     *
     *     res.jsonp(null);
     *     res.jsonp({ user: 'tj' });
-    *     res.jsonp(500, 'oh noes!');
-    *     res.jsonp(404, 'I dont have that');
+    *     res.status(500).jsonp('oh noes!');
+    *     res.status(404).jsonp('I dont have that');
     */
   @JSName("jsonp")
   var jsonp_Original: Send = js.native
@@ -50,8 +50,7 @@ trait Response
     *     res.send(new Buffer('wahoo'));
     *     res.send({ some: 'json' });
     *     res.send('<p>some html</p>');
-    *     res.send(404, 'Sorry, cant find that');
-    *     res.send(404);
+    *     res.status(404).send('Sorry, cant find that');
     */
   @JSName("send")
   var send_Original: Send = js.native
@@ -195,8 +194,8 @@ trait Response
     *
     *     res.json(null);
     *     res.json({ user: 'tj' });
-    *     res.json(500, 'oh noes!');
-    *     res.json(404, 'I dont have that');
+    *     res.status(500).json('oh noes!');
+    *     res.status(404).json('I dont have that');
     */
   def json(): Response = js.native
   def json(body: js.Any): Response = js.native
@@ -207,8 +206,8 @@ trait Response
     *
     *     res.jsonp(null);
     *     res.jsonp({ user: 'tj' });
-    *     res.jsonp(500, 'oh noes!');
-    *     res.jsonp(404, 'I dont have that');
+    *     res.status(500).jsonp('oh noes!');
+    *     res.status(404).jsonp('I dont have that');
     */
   def jsonp(): Response = js.native
   def jsonp(body: js.Any): Response = js.native
@@ -298,8 +297,7 @@ trait Response
     *     res.send(new Buffer('wahoo'));
     *     res.send({ some: 'json' });
     *     res.send('<p>some html</p>');
-    *     res.send(404, 'Sorry, cant find that');
-    *     res.send(404);
+    *     res.status(404).send('Sorry, cant find that');
     */
   def send(): Response = js.native
   def send(body: js.Any): Response = js.native

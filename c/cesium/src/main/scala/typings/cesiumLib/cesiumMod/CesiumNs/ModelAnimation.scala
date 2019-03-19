@@ -12,11 +12,11 @@ trait ModelAnimation extends js.Object {
   var removeOnStop: scala.Boolean
   var reverse: scala.Boolean
   var speedup: scala.Double
-  var start: Event
+  var start: Event[js.Array[_]]
   var startTime: JulianDate
-  var stop: Event
+  var stop: Event[js.Array[_]]
   var stopTime: JulianDate
-  var update: Event
+  var update: Event[js.Array[_]]
 }
 
 object ModelAnimation {
@@ -28,11 +28,11 @@ object ModelAnimation {
     removeOnStop: scala.Boolean,
     reverse: scala.Boolean,
     speedup: scala.Double,
-    start: Event,
+    start: Event[js.Array[_]],
     startTime: JulianDate,
-    stop: Event,
+    stop: Event[js.Array[_]],
     stopTime: JulianDate,
-    update: Event
+    update: Event[js.Array[_]]
   ): ModelAnimation = {
     val __obj = js.Dynamic.literal(delay = delay, loop = loop, name = name, removeOnStop = removeOnStop, reverse = reverse, speedup = speedup, start = start, startTime = startTime, stop = stop, stopTime = stopTime, update = update)
   

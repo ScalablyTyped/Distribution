@@ -11,13 +11,9 @@ object authenticationNs extends js.Object {
   @JSName("v1")
   @js.native
   object v1Ns extends js.Object {
-    /**
-      * TokenReview attempts to authenticate a token to a known user. Note: TokenReview requests may
-      * be cached by the webhook token authenticator plugin in the kube-apiserver.
-      */
     @js.native
     class TokenReview protected ()
-      extends atPulumiKubernetesLib.providerMod.authenticationNs.v1Ns.TokenReview {
+      extends atPulumiKubernetesLib.authenticationMod.v1Ns.TokenReview {
       /**
         * Create a authentication.v1.TokenReview resource with the given unique name, arguments, and options.
         *
@@ -45,12 +41,12 @@ object authenticationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authenticationNs.v1Ns.TokenReview = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.authenticationV1TokenReviewMod.TokenReview = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.authenticationNs.v1Ns.TokenReview = js.native
+      ): atPulumiKubernetesLib.authenticationV1TokenReviewMod.TokenReview = js.native
     }
     
   }
@@ -58,13 +54,9 @@ object authenticationNs extends js.Object {
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
-    /**
-      * TokenReview attempts to authenticate a token to a known user. Note: TokenReview requests may
-      * be cached by the webhook token authenticator plugin in the kube-apiserver.
-      */
     @js.native
     class TokenReview protected ()
-      extends atPulumiKubernetesLib.providerMod.authenticationNs.v1beta1Ns.TokenReview {
+      extends atPulumiKubernetesLib.authenticationMod.v1beta1Ns.TokenReview {
       /**
         * Create a authentication.v1beta1.TokenReview resource with the given unique name, arguments, and options.
         *
@@ -92,12 +84,12 @@ object authenticationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authenticationNs.v1beta1Ns.TokenReview = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.authenticationV1beta1TokenReviewMod.TokenReview = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.authenticationNs.v1beta1Ns.TokenReview = js.native
+      ): atPulumiKubernetesLib.authenticationV1beta1TokenReviewMod.TokenReview = js.native
     }
     
   }

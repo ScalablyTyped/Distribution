@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "rx-angular"
-version := "0.0-unknown-dt-20190227Z-3702b5"
+version := "0.0-unknown-dt-20190227Z-8e0e6c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-5b2617",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-5e6318",
   "org.scalablytyped" %%% "rx" % "4.1-dt-20180214Z-afef54",
   "org.scalablytyped" %%% "rx-core" % "4.0-dt-20180214Z-d2f95e",
   "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180214Z-2a1bd5",

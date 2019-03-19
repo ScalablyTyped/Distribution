@@ -26,7 +26,7 @@ object GoogleEarthEnterpriseMapsProvider {
     defaultMagnificationFilter: js.Any,
     defaultMinificationFilter: js.Any,
     defaultSaturation: scala.Double,
-    errorEvent: Event,
+    errorEvent: Event[js.Array[_]],
     getTileCredits: (scala.Double, scala.Double, scala.Double) => js.Array[Credit],
     hasAlphaChannel: scala.Boolean,
     maximumLevel: scala.Double,

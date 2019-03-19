@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object eggDashCoreLibStrings {
   @js.native
-  sealed trait agent extends js.Object
+  sealed trait agent extends EggType
   
   @js.native
-  sealed trait application extends js.Object
+  sealed trait application extends EggType
   
   @scala.inline
   def agent: agent = "agent".asInstanceOf[agent]

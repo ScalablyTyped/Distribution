@@ -36,6 +36,28 @@ object DMSNs extends js.Object {
   
   trait AddTagsToResourceResponse extends js.Object
   
+  trait ApplyPendingMaintenanceActionMessage extends js.Object {
+    /**
+      * The pending maintenance action to apply to this resource.
+      */
+    var ApplyAction: String
+    /**
+      * A value that specifies the type of opt-in request, or undoes an opt-in request. An opt-in request of type immediate cannot be undone. Valid values:    immediate - Apply the maintenance action immediately.    next-maintenance - Apply the maintenance action during the next maintenance window for the resource.    undo-opt-in - Cancel any existing next-maintenance opt-in requests.  
+      */
+    var OptInType: String
+    /**
+      * The Amazon Resource Name (ARN) of the AWS DMS resource that the pending maintenance action applies to.
+      */
+    var ReplicationInstanceArn: String
+  }
+  
+  trait ApplyPendingMaintenanceActionResponse extends js.Object {
+    /**
+      * The AWS DMS resource that the pending maintenance action will be applied to.
+      */
+    var ResourcePendingMaintenanceActions: js.UndefOr[ResourcePendingMaintenanceActions] = js.undefined
+  }
+  
   trait AvailabilityZone extends js.Object {
     /**
       * The name of the availability zone.
@@ -181,6 +203,7 @@ object DMSNs extends js.Object {
       * The port used by the endpoint database.
       */
     var Port: js.UndefOr[IntegerOptional] = js.undefined
+    var RedshiftSettings: js.UndefOr[RedshiftSettings] = js.undefined
     /**
       * Settings in JSON format for the target Amazon S3 endpoint. For more information about the available settings, see Extra Connection Attributes When Using Amazon S3 as a Target for AWS DMS in the AWS Database Migration Service User Guide. 
       */
@@ -710,6 +733,36 @@ object DMSNs extends js.Object {
     var OrderableReplicationInstances: js.UndefOr[OrderableReplicationInstanceList] = js.undefined
   }
   
+  trait DescribePendingMaintenanceActionsMessage extends js.Object {
+    /**
+      * 
+      */
+    var Filters: js.UndefOr[FilterList] = js.undefined
+    /**
+      *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
+      */
+    var Marker: js.UndefOr[String] = js.undefined
+    /**
+      *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
+      */
+    var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+      * The ARN of the replication instance.
+      */
+    var ReplicationInstanceArn: js.UndefOr[String] = js.undefined
+  }
+  
+  trait DescribePendingMaintenanceActionsResponse extends js.Object {
+    /**
+      *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords. 
+      */
+    var Marker: js.UndefOr[String] = js.undefined
+    /**
+      * The pending maintenance action.
+      */
+    var PendingMaintenanceActions: js.UndefOr[PendingMaintenanceActions] = js.undefined
+  }
+  
   trait DescribeRefreshSchemasStatusMessage extends js.Object {
     /**
       * The Amazon Resource Name (ARN) string that uniquely identifies the endpoint.
@@ -849,6 +902,10 @@ object DMSNs extends js.Object {
       *  The maximum number of records to include in the response. If more records exist than the specified MaxRecords value, a pagination token called a marker is included in the response so that the remaining results can be retrieved.  Default: 100 Constraints: Minimum 20, maximum 100.
       */
     var MaxRecords: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+      * Set this flag to avoid returning setting information. Use this to reduce overhead when settings are too large. Choose TRUE to use this flag, otherwise choose FALSE (default).
+      */
+    var WithoutSettings: js.UndefOr[BooleanOptional] = js.undefined
   }
   
   trait DescribeReplicationTasksResponse extends js.Object {
@@ -969,7 +1026,7 @@ object DMSNs extends js.Object {
       */
     var DatabaseName: js.UndefOr[String] = js.undefined
     /**
-      * The settings in JSON format for the DMS transfer type of source endpoint.  Possible attributes include the following:    serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.    bucketName - The name of the S3 bucket to use.    compressionType - An optional parameter to use GZIP to compress the target files. To use GZIP, set this value to NONE (the default). To keep the files uncompressed, don't use this value.    Shorthand syntax for these attributes is as follows: ServiceAccessRoleArn=string,BucketName=string,CompressionType=string  JSON syntax for these attributes is as follows: { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" }  
+      * The settings in JSON format for the DMS transfer type of source endpoint.  Possible attributes include the following:    serviceAccessRoleArn - The IAM role that has permission to access the Amazon S3 bucket.    bucketName - The name of the S3 bucket to use.    compressionType - An optional parameter to use GZIP to compress the target files. To use GZIP, set this value to NONE (the default). To keep the files uncompressed, don't use this value.   Shorthand syntax for these attributes is as follows: ServiceAccessRoleArn=string,BucketName=string,CompressionType=string  JSON syntax for these attributes is as follows: { "ServiceAccessRoleArn": "string", "BucketName": "string", "CompressionType": "none"|"gzip" }  
       */
     var DmsTransferSettings: js.UndefOr[DmsTransferSettings] = js.undefined
     /**
@@ -1028,6 +1085,10 @@ object DMSNs extends js.Object {
       * The port value used to access the endpoint.
       */
     var Port: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+      * Settings for the Amazon Redshift endpoint
+      */
+    var RedshiftSettings: js.UndefOr[RedshiftSettings] = js.undefined
     /**
       * The settings for the S3 target endpoint. For more information, see the S3Settings structure.
       */
@@ -1254,6 +1315,7 @@ object DMSNs extends js.Object {
       * The port used by the endpoint database.
       */
     var Port: js.UndefOr[IntegerOptional] = js.undefined
+    var RedshiftSettings: js.UndefOr[RedshiftSettings] = js.undefined
     /**
       * Settings in JSON format for the target Amazon S3 endpoint. For more information about the available settings, see Extra Connection Attributes When Using Amazon S3 as a Target for AWS DMS in the AWS Database Migration Service User Guide. 
       */
@@ -1484,6 +1546,10 @@ object DMSNs extends js.Object {
   
   trait OrderableReplicationInstance extends js.Object {
     /**
+      * List of availability zones for this replication instance.
+      */
+    var AvailabilityZones: js.UndefOr[AvailabilityZonesList] = js.undefined
+    /**
       * The default amount of storage (in gigabytes) that is allocated for the replication instance.
       */
     var DefaultAllocatedStorage: js.UndefOr[Integer] = js.undefined
@@ -1513,6 +1579,33 @@ object DMSNs extends js.Object {
     var StorageType: js.UndefOr[String] = js.undefined
   }
   
+  trait PendingMaintenanceAction extends js.Object {
+    /**
+      * The type of pending maintenance action that is available for the resource.
+      */
+    var Action: js.UndefOr[String] = js.undefined
+    /**
+      * The date of the maintenance window when the action will be applied. The maintenance action will be applied to the resource during its first maintenance window after this date. If this date is specified, any next-maintenance opt-in requests are ignored.
+      */
+    var AutoAppliedAfterDate: js.UndefOr[TStamp] = js.undefined
+    /**
+      * The effective date when the pending maintenance action will be applied to the resource. This date takes into account opt-in requests received from the ApplyPendingMaintenanceAction API, the AutoAppliedAfterDate, and the ForcedApplyDate. This value is blank if an opt-in request has not been received and nothing has been specified as AutoAppliedAfterDate or ForcedApplyDate.
+      */
+    var CurrentApplyDate: js.UndefOr[TStamp] = js.undefined
+    /**
+      * A description providing more detail about the maintenance action.
+      */
+    var Description: js.UndefOr[String] = js.undefined
+    /**
+      * The date when the maintenance action will be automatically applied. The maintenance action will be applied to the resource on this date regardless of the maintenance window for the resource. If this date is specified, any immediate opt-in requests are ignored.
+      */
+    var ForcedApplyDate: js.UndefOr[TStamp] = js.undefined
+    /**
+      * Indicates the type of opt-in request that has been received for the resource.
+      */
+    var OptInStatus: js.UndefOr[String] = js.undefined
+  }
+  
   trait RebootReplicationInstanceMessage extends js.Object {
     /**
       * If this parameter is true, the reboot is conducted through a Multi-AZ failover. (If the instance isn't configured for Multi-AZ, then you can't specify true.)
@@ -1529,6 +1622,109 @@ object DMSNs extends js.Object {
       * The replication instance that is being rebooted. 
       */
     var ReplicationInstance: js.UndefOr[ReplicationInstance] = js.undefined
+  }
+  
+  trait RedshiftSettings extends js.Object {
+    /**
+      * Allows any date format, including invalid formats such as 00/00/00 00:00:00, to be loaded without generating an error. You can choose TRUE or FALSE (default). This parameter applies only to TIMESTAMP and DATE columns. Always use ACCEPTANYDATE with the DATEFORMAT parameter. If the date format for the data does not match the DATEFORMAT specification, Amazon Redshift inserts a NULL value into that field. 
+      */
+    var AcceptAnyDate: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+      * Code to run after connecting. This should be the code, not a filename.
+      */
+    var AfterConnectScript: js.UndefOr[String] = js.undefined
+    /**
+      * The location where the CSV files are stored before being uploaded to the S3 bucket. 
+      */
+    var BucketFolder: js.UndefOr[String] = js.undefined
+    /**
+      * The name of the S3 bucket you want to use
+      */
+    var BucketName: js.UndefOr[String] = js.undefined
+    /**
+      * Sets the amount of time to wait (in milliseconds) before timing out, beginning from when you initially establish a connection.
+      */
+    var ConnectionTimeout: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+      * The name of the Amazon Redshift data warehouse (service) you are working with.
+      */
+    var DatabaseName: js.UndefOr[String] = js.undefined
+    /**
+      * The date format you are using. Valid values are auto (case-sensitive), your date format string enclosed in quotes, or NULL. If this is left unset (NULL), it defaults to a format of 'YYYY-MM-DD'. Using auto recognizes most strings, even some that are not supported when you use a date format string.  If your date and time values use formats different from each other, set this to auto. 
+      */
+    var DateFormat: js.UndefOr[String] = js.undefined
+    /**
+      * Specifies whether AWS DMS should migrate empty CHAR and VARCHAR fields as NULL. A value of TRUE sets empty CHAR and VARCHAR fields to null. The default is FALSE.
+      */
+    var EmptyAsNull: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+      * The type of server side encryption you want to use for your data. This is part of the endpoint settings or the extra connections attributes for Amazon S3. You can choose either SSE_S3 (default) or SSE_KMS. To use SSE_S3, create an IAM role with a policy that allows "arn:aws:s3:::*" to use the following actions: "s3:PutObject", "s3:ListBucket".
+      */
+    var EncryptionMode: js.UndefOr[EncryptionModeValue] = js.undefined
+    /**
+      * Specifies the number of threads used to upload a single file. This accepts a value between 1 and 64. It defaults to 10.
+      */
+    var FileTransferUploadStreams: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+      * Sets the amount of time to wait (in milliseconds) before timing out, beginning from when you begin loading.
+      */
+    var LoadTimeout: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+      * Specifies the maximum size (in KB) of any CSV file used to transfer data to Amazon Redshift. This accepts a value between 1 and 1048576. It defaults to 32768 KB (32 MB).
+      */
+    var MaxFileSize: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+      * The password for the user named in the username property.
+      */
+    var Password: js.UndefOr[SecretString] = js.undefined
+    /**
+      * The port number for Amazon Redshift. The default value is 5439.
+      */
+    var Port: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+      * Removes surrounding quotation marks from strings in the incoming data. All characters within the quotation marks, including delimiters, are retained. Choose TRUE to remove quotation marks. The default is FALSE.
+      */
+    var RemoveQuotes: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+      * Replaces invalid characters specified in ReplaceInvalidChars, substituting the specified value instead. The default is "?".
+      */
+    var ReplaceChars: js.UndefOr[String] = js.undefined
+    /**
+      * A list of chars you want to replace. Use with ReplaceChars.
+      */
+    var ReplaceInvalidChars: js.UndefOr[String] = js.undefined
+    /**
+      * The name of the Amazon Redshift cluster you are using.
+      */
+    var ServerName: js.UndefOr[String] = js.undefined
+    /**
+      * If you are using SSE_KMS for the EncryptionMode, provide the KMS Key ID. The key you use needs an attached policy that enables IAM user permissions and allows use of the key.
+      */
+    var ServerSideEncryptionKmsKeyId: js.UndefOr[String] = js.undefined
+    /**
+      * The ARN of the role that has access to the Redshift service.
+      */
+    var ServiceAccessRoleArn: js.UndefOr[String] = js.undefined
+    /**
+      * The time format you want to use. Valid values are auto (case-sensitive), 'timeformat_string', 'epochsecs', or 'epochmillisecs'. It defaults to 10. Using auto recognizes most strings, even some that are not supported when you use a time format string.  If your date and time values use formats different from each other, set this to auto. 
+      */
+    var TimeFormat: js.UndefOr[String] = js.undefined
+    /**
+      * Removes the trailing white space characters from a VARCHAR string. This parameter applies only to columns with a VARCHAR data type. Choose TRUE to remove unneeded white space. The default is FALSE.
+      */
+    var TrimBlanks: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+      * Truncates data in columns to the appropriate number of characters, so that it fits in the column. Applies only to columns with a VARCHAR or CHAR data type, and rows with a size of 4 MB or less. Choose TRUE to truncate data. The default is FALSE.
+      */
+    var TruncateColumns: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+      * An Amazon Redshift user name for a registered user.
+      */
+    var Username: js.UndefOr[String] = js.undefined
+    /**
+      * The size of the write buffer to use in rows. Valid values range from 1 to 2048. Defaults to 1024. Use this setting to tune performance. 
+      */
+    var WriteBufferSize: js.UndefOr[IntegerOptional] = js.undefined
   }
   
   trait RefreshSchemasMessage extends js.Object {
@@ -1888,6 +2084,17 @@ object DMSNs extends js.Object {
     var TablesQueued: js.UndefOr[Integer] = js.undefined
   }
   
+  trait ResourcePendingMaintenanceActions extends js.Object {
+    /**
+      * Detailed information about the pending maintenance action.
+      */
+    var PendingMaintenanceActionDetails: js.UndefOr[PendingMaintenanceActionDetails] = js.undefined
+    /**
+      * The Amazon Resource Name (ARN) of the DMS resource that the pending maintenance action applies to. For information about creating an ARN, see  Constructing an Amazon Resource Name (ARN) in the DMS documentation.
+      */
+    var ResourceIdentifier: js.UndefOr[String] = js.undefined
+  }
+  
   trait S3Settings extends js.Object {
     /**
       *  An optional parameter to set a folder name in the S3 bucket. If provided, tables are created in the path &lt;bucketFolder&gt;/&lt;schema_name&gt;/&lt;table_name&gt;/. If this parameter is not specified, then the path used is &lt;schema_name&gt;/&lt;table_name&gt;/. 
@@ -1898,7 +2105,11 @@ object DMSNs extends js.Object {
       */
     var BucketName: js.UndefOr[String] = js.undefined
     /**
-      *  An optional parameter to use GZIP to compress the target files. Set to GZIP to compress the target files. Set to NONE (the default) or do not use to leave the files uncompressed. 
+      * Option to write only INSERT operations to the comma-separated value (CSV) output files. By default, the first field in a CSV record contains the letter I (insert), U (update) or D (delete) to indicate whether the row was inserted, updated, or deleted at the source database. If cdcInsertsOnly is set to true, then only INSERTs are recorded in the CSV file, without the I annotation on each line. Valid values are TRUE and FALSE.
+      */
+    var CdcInsertsOnly: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+      *  An optional parameter to use GZIP to compress the target files. Set to GZIP to compress the target files. Set to NONE (the default) or do not use to leave the files uncompressed. Applies to both CSV and PARQUET data formats. 
       */
     var CompressionType: js.UndefOr[CompressionTypeValue] = js.undefined
     /**
@@ -1910,9 +2121,45 @@ object DMSNs extends js.Object {
       */
     var CsvRowDelimiter: js.UndefOr[String] = js.undefined
     /**
+      * The format of the data which you want to use for output. You can choose one of the following:     CSV : This is a row-based format with comma-separated values.     PARQUET : Apache Parquet is a columnar storage format that features efficient compression and provides faster query response.   
+      */
+    var DataFormat: js.UndefOr[DataFormatValue] = js.undefined
+    /**
+      * The size of one data page in bytes. Defaults to 1024 * 1024 bytes (1MiB). For PARQUET format only. 
+      */
+    var DataPageSize: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+      * The maximum size of an encoded dictionary page of a column. If the dictionary page exceeds this, this column is stored using an encoding type of PLAIN. Defaults to 1024 * 1024 bytes (1MiB), the maximum size of a dictionary page before it reverts to PLAIN encoding. For PARQUET format only. 
+      */
+    var DictPageSizeLimit: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+      * Enables statistics for Parquet pages and rowGroups. Choose TRUE to enable statistics, choose FALSE to disable. Statistics include NULL, DISTINCT, MAX, and MIN values. Defaults to TRUE. For PARQUET format only.
+      */
+    var EnableStatistics: js.UndefOr[BooleanOptional] = js.undefined
+    /**
+      * The type of encoding you are using: RLE_DICTIONARY (default), PLAIN, or PLAIN_DICTIONARY.    RLE_DICTIONARY uses a combination of bit-packing and run-length encoding to store repeated values more efficiently.    PLAIN does not use encoding at all. Values are stored as they are.    PLAIN_DICTIONARY builds a dictionary of the values encountered in a given column. The dictionary is stored in a dictionary page for each column chunk.  
+      */
+    var EncodingType: js.UndefOr[EncodingTypeValue] = js.undefined
+    /**
+      * The type of server side encryption you want to use for your data. This is part of the endpoint settings or the extra connections attributes for Amazon S3. You can choose either SSE_S3 (default) or SSE_KMS. To use SSE_S3, you need an IAM role with permission to allow "arn:aws:s3:::dms-*" to use the following actions:   s3:CreateBucket   s3:ListBucket   s3:DeleteBucket   s3:GetBucketLocation   s3:GetObject   s3:PutObject   s3:DeleteObject   s3:GetObjectVersion   s3:GetBucketPolicy   s3:PutBucketPolicy   s3:DeleteBucketPolicy  
+      */
+    var EncryptionMode: js.UndefOr[EncryptionModeValue] = js.undefined
+    /**
       *  The external table definition. 
       */
     var ExternalTableDefinition: js.UndefOr[String] = js.undefined
+    /**
+      * The version of Apache Parquet format you want to use: PARQUET_1_0 (default) or PARQUET_2_0.
+      */
+    var ParquetVersion: js.UndefOr[ParquetVersionValue] = js.undefined
+    /**
+      * The number of rows in a row group. A smaller row group size provides faster reads. But as the number of row groups grows, the slower writes become. Defaults to 10,000 (ten thousand) rows. For PARQUET format only.  If you choose a value larger than the maximum, RowGroupLength is set to the max row group length in bytes (64 * 1024 * 1024). 
+      */
+    var RowGroupLength: js.UndefOr[IntegerOptional] = js.undefined
+    /**
+      * If you are using SSE_KMS for the EncryptionMode, provide the KMS Key ID. The key you use needs an attached policy that enables IAM user permissions and allows use of the key. Here is a CLI example: aws dms create-endpoint --endpoint-identifier &lt;value&gt; --endpoint-type target --engine-name s3 --s3-settings ServiceAccessRoleArn=&lt;value&gt;,BucketFolder=&lt;value&gt;,BucketName=&lt;value&gt;,EncryptionMode=SSE_KMS,ServerSideEncryptionKmsKeyId=&lt;value&gt;  
+      */
+    var ServerSideEncryptionKmsKeyId: js.UndefOr[String] = js.undefined
     /**
       *  The Amazon Resource Name (ARN) used by the service access IAM role. 
       */
@@ -2146,6 +2393,29 @@ object DMSNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[AddTagsToResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Applies a pending maintenance action to a resource (for example, to a replication instance).
+      */
+    def applyPendingMaintenanceAction(): awsDashSdkLib.libRequestMod.Request[ApplyPendingMaintenanceActionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def applyPendingMaintenanceAction(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ApplyPendingMaintenanceActionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ApplyPendingMaintenanceActionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Applies a pending maintenance action to a resource (for example, to a replication instance).
+      */
+    def applyPendingMaintenanceAction(params: ApplyPendingMaintenanceActionMessage): awsDashSdkLib.libRequestMod.Request[ApplyPendingMaintenanceActionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def applyPendingMaintenanceAction(
+      params: ApplyPendingMaintenanceActionMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ApplyPendingMaintenanceActionResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ApplyPendingMaintenanceActionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Creates an endpoint using the provided settings.
       */
@@ -2606,6 +2876,29 @@ object DMSNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeOrderableReplicationInstancesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * For internal use only
+      */
+    def describePendingMaintenanceActions(): awsDashSdkLib.libRequestMod.Request[DescribePendingMaintenanceActionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def describePendingMaintenanceActions(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribePendingMaintenanceActionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribePendingMaintenanceActionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * For internal use only
+      */
+    def describePendingMaintenanceActions(params: DescribePendingMaintenanceActionsMessage): awsDashSdkLib.libRequestMod.Request[DescribePendingMaintenanceActionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def describePendingMaintenanceActions(
+      params: DescribePendingMaintenanceActionsMessage,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribePendingMaintenanceActionsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribePendingMaintenanceActionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Returns the status of the RefreshSchemas operation.
       */
@@ -3422,11 +3715,19 @@ object DMSNs extends js.Object {
   
   trait _CompressionTypeValue extends js.Object
   
+  trait _DataFormatValue extends js.Object
+  
   trait _DmsSslModeValue extends js.Object
+  
+  trait _EncodingTypeValue extends js.Object
+  
+  trait _EncryptionModeValue extends js.Object
   
   trait _MigrationTypeValue extends js.Object
   
   trait _NestingLevelValue extends js.Object
+  
+  trait _ParquetVersionValue extends js.Object
   
   trait _RefreshSchemasStatusTypeValue extends js.Object
   
@@ -3442,6 +3743,7 @@ object DMSNs extends js.Object {
   type AccountQuotaList = js.Array[AccountQuota]
   type AuthMechanismValue = _AuthMechanismValue | java.lang.String
   type AuthTypeValue = _AuthTypeValue | java.lang.String
+  type AvailabilityZonesList = js.Array[String]
   type Boolean = scala.Boolean
   type BooleanOptional = scala.Boolean
   type CertificateList = js.Array[Certificate]
@@ -3449,7 +3751,10 @@ object DMSNs extends js.Object {
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CompressionTypeValue = _CompressionTypeValue | java.lang.String
   type ConnectionList = js.Array[Connection]
+  type DataFormatValue = _DataFormatValue | java.lang.String
   type DmsSslModeValue = _DmsSslModeValue | java.lang.String
+  type EncodingTypeValue = _EncodingTypeValue | java.lang.String
+  type EncryptionModeValue = _EncryptionModeValue | java.lang.String
   type EndpointList = js.Array[Endpoint]
   type EventCategoriesList = js.Array[String]
   type EventCategoryGroupList = js.Array[EventCategoryGroup]
@@ -3465,6 +3770,9 @@ object DMSNs extends js.Object {
   type MigrationTypeValue = _MigrationTypeValue | java.lang.String
   type NestingLevelValue = _NestingLevelValue | java.lang.String
   type OrderableReplicationInstanceList = js.Array[OrderableReplicationInstance]
+  type ParquetVersionValue = _ParquetVersionValue | java.lang.String
+  type PendingMaintenanceActionDetails = js.Array[PendingMaintenanceAction]
+  type PendingMaintenanceActions = js.Array[ResourcePendingMaintenanceActions]
   type RefreshSchemasStatusTypeValue = _RefreshSchemasStatusTypeValue | java.lang.String
   type ReloadOptionValue = _ReloadOptionValue | java.lang.String
   type ReplicationEndpointTypeValue = _ReplicationEndpointTypeValue | java.lang.String

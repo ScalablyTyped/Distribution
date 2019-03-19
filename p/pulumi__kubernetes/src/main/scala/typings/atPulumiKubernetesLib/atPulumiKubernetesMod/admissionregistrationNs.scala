@@ -11,12 +11,9 @@ object admissionregistrationNs extends js.Object {
   @JSName("v1alpha1")
   @js.native
   object v1alpha1Ns extends js.Object {
-    /**
-      * InitializerConfiguration describes the configuration of initializers.
-      */
     @js.native
     class InitializerConfiguration protected ()
-      extends atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1alpha1Ns.InitializerConfiguration {
+      extends atPulumiKubernetesLib.admissionregistrationMod.v1alpha1Ns.InitializerConfiguration {
       /**
         * Create a admissionregistration.v1alpha1.InitializerConfiguration resource with the given unique name, arguments, and options.
         *
@@ -29,12 +26,9 @@ object admissionregistrationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.admissionregistrationNs.v1alpha1Ns.InitializerConfiguration, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * InitializerConfigurationList is a list of InitializerConfiguration.
-      */
     @js.native
     class InitializerConfigurationList protected ()
-      extends atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1alpha1Ns.InitializerConfigurationList {
+      extends atPulumiKubernetesLib.admissionregistrationMod.v1alpha1Ns.InitializerConfigurationList {
       /**
         * Create a admissionregistration.v1alpha1.InitializerConfigurationList resource with the given unique name, arguments, and options.
         *
@@ -62,12 +56,12 @@ object admissionregistrationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1alpha1Ns.InitializerConfiguration = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.admissionregistrationV1alpha1InitializerConfigurationMod.InitializerConfiguration = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1alpha1Ns.InitializerConfiguration = js.native
+      ): atPulumiKubernetesLib.admissionregistrationV1alpha1InitializerConfigurationMod.InitializerConfiguration = js.native
     }
     
     /* static members */
@@ -85,12 +79,12 @@ object admissionregistrationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1alpha1Ns.InitializerConfigurationList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.admissionregistrationV1alpha1InitializerConfigurationListMod.InitializerConfigurationList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1alpha1Ns.InitializerConfigurationList = js.native
+      ): atPulumiKubernetesLib.admissionregistrationV1alpha1InitializerConfigurationListMod.InitializerConfigurationList = js.native
     }
     
   }
@@ -98,13 +92,9 @@ object admissionregistrationNs extends js.Object {
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
-    /**
-      * MutatingWebhookConfiguration describes the configuration of and admission webhook that accept
-      * or reject and may change the object.
-      */
     @js.native
     class MutatingWebhookConfiguration protected ()
-      extends atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration {
+      extends atPulumiKubernetesLib.admissionregistrationMod.v1beta1Ns.MutatingWebhookConfiguration {
       /**
         * Create a admissionregistration.v1beta1.MutatingWebhookConfiguration resource with the given unique name, arguments, and options.
         *
@@ -117,12 +107,9 @@ object admissionregistrationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * MutatingWebhookConfigurationList is a list of MutatingWebhookConfiguration.
-      */
     @js.native
     class MutatingWebhookConfigurationList protected ()
-      extends atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfigurationList {
+      extends atPulumiKubernetesLib.admissionregistrationMod.v1beta1Ns.MutatingWebhookConfigurationList {
       /**
         * Create a admissionregistration.v1beta1.MutatingWebhookConfigurationList resource with the given unique name, arguments, and options.
         *
@@ -135,13 +122,9 @@ object admissionregistrationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfigurationList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ValidatingWebhookConfiguration describes the configuration of and admission webhook that
-      * accept or reject and object without changing it.
-      */
     @js.native
     class ValidatingWebhookConfiguration protected ()
-      extends atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration {
+      extends atPulumiKubernetesLib.admissionregistrationMod.v1beta1Ns.ValidatingWebhookConfiguration {
       /**
         * Create a admissionregistration.v1beta1.ValidatingWebhookConfiguration resource with the given unique name, arguments, and options.
         *
@@ -154,12 +137,9 @@ object admissionregistrationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ValidatingWebhookConfigurationList is a list of ValidatingWebhookConfiguration.
-      */
     @js.native
     class ValidatingWebhookConfigurationList protected ()
-      extends atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfigurationList {
+      extends atPulumiKubernetesLib.admissionregistrationMod.v1beta1Ns.ValidatingWebhookConfigurationList {
       /**
         * Create a admissionregistration.v1beta1.ValidatingWebhookConfigurationList resource with the given unique name, arguments, and options.
         *
@@ -187,12 +167,12 @@ object admissionregistrationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.admissionregistrationV1beta1MutatingWebhookConfigurationMod.MutatingWebhookConfiguration = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration = js.native
+      ): atPulumiKubernetesLib.admissionregistrationV1beta1MutatingWebhookConfigurationMod.MutatingWebhookConfiguration = js.native
     }
     
     /* static members */
@@ -210,12 +190,12 @@ object admissionregistrationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfigurationList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.admissionregistrationV1beta1MutatingWebhookConfigurationListMod.MutatingWebhookConfigurationList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfigurationList = js.native
+      ): atPulumiKubernetesLib.admissionregistrationV1beta1MutatingWebhookConfigurationListMod.MutatingWebhookConfigurationList = js.native
     }
     
     /* static members */
@@ -233,12 +213,12 @@ object admissionregistrationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.admissionregistrationV1beta1ValidatingWebhookConfigurationMod.ValidatingWebhookConfiguration = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration = js.native
+      ): atPulumiKubernetesLib.admissionregistrationV1beta1ValidatingWebhookConfigurationMod.ValidatingWebhookConfiguration = js.native
     }
     
     /* static members */
@@ -256,12 +236,12 @@ object admissionregistrationNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfigurationList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.admissionregistrationV1beta1ValidatingWebhookConfigurationListMod.ValidatingWebhookConfigurationList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfigurationList = js.native
+      ): atPulumiKubernetesLib.admissionregistrationV1beta1ValidatingWebhookConfigurationListMod.ValidatingWebhookConfigurationList = js.native
     }
     
   }

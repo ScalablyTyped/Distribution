@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 
 package object nextNs {
   /**
+    * Next.js getInitialProps type.
+    *
+    * @template IP Initial props returned from getInitialProps and passed to the component.
+    * @template C Context passed to getInitialProps.
+    */
+  type GetInitialProps[IP, C] = js.Function1[/* ctx */ C, js.Promise[IP] | IP]
+  /**
     * Next.js counterpart of React.ComponentClass.
     *
     * @template P Component props.

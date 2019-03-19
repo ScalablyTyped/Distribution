@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- highchartsLib.highchartsMod.HighchartsNs.IndividualSeriesOptions because var conflicts: color, cursor, pointWidth, visible. Inlined size, innerSize, `type`, colorIndex, crisp, data, description, id, index, legendIndex, maxFontSize, minFontSize, name, stack, xAxis, yAxis, zIndex */ trait ErrorBarChartSeriesOptions extends ErrorBarChart {
+- highchartsLib.highchartsMod.HighchartsNs.IndividualSeriesOptions because var conflicts: color, cursor, linkedTo, pointWidth, visible. Inlined size, innerSize, `type`, colorIndex, crisp, data, description, id, index, legendIndex, maxFontSize, minFontSize, name, stack, xAxis, yAxis, zIndex */ trait ErrorBarChartSeriesOptions extends ErrorBarChart {
   /**
     * Styled mode only. A specific color index to use for the point, so its graphic representations are given the class name highcharts-color-{n}.
     * @since 5.0.0

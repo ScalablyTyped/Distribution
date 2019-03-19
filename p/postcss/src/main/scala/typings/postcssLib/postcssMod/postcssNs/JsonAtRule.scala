@@ -20,10 +20,10 @@ trait JsonAtRule extends JsonContainer {
 object JsonAtRule {
   @scala.inline
   def apply(
-    first: Node = null,
-    last: Node = null,
+    first: ChildNode = null,
+    last: ChildNode = null,
     name: java.lang.String = null,
-    nodes: js.Array[Node] = null,
+    nodes: js.Array[ChildNode] = null,
     params: java.lang.String = null,
     parent: JsonContainer = null,
     raws: NodeRaws = null,

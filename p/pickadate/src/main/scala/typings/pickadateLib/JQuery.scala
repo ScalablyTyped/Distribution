@@ -19,11 +19,9 @@ trait JQuery extends js.Object {
     * Invoke API methods after date picker initialization.
     */
   def pickadate(methodName: java.lang.String, arguments: js.Any*): js.Any = js.native
+  def pickadate(objectName: pickadateLib.pickadateLibStrings.DOLLARnode): JQuery = js.native
+  def pickadate(objectName: pickadateLib.pickadateLibStrings.DOLLARroot): JQuery = js.native
   def pickadate(options: pickadateLib.PickadateNs.DateOptions): JQuery = js.native
-  @JSName("pickadate")
-  def pickadate_$node(objectName: pickadateLib.pickadateLibStrings.DOLLARnode): JQuery = js.native
-  @JSName("pickadate")
-  def pickadate_$root(objectName: pickadateLib.pickadateLibStrings.DOLLARroot): JQuery = js.native
   @JSName("pickadate")
   def pickadate__hidden(objectName: pickadateLib.pickadateLibStrings._hidden): stdLib.HTMLInputElement = js.native
   /**
@@ -39,11 +37,9 @@ trait JQuery extends js.Object {
     * Invoke API methods after time picker initialization.
     */
   def pickatime(methodName: java.lang.String, arguments: js.Any*): js.Any = js.native
+  def pickatime(objectName: pickadateLib.pickadateLibStrings.DOLLARnode): JQuery = js.native
+  def pickatime(objectName: pickadateLib.pickadateLibStrings.DOLLARroot): JQuery = js.native
   def pickatime(options: pickadateLib.PickadateNs.TimeOptions): JQuery = js.native
-  @JSName("pickatime")
-  def pickatime_$node(objectName: pickadateLib.pickadateLibStrings.DOLLARnode): JQuery = js.native
-  @JSName("pickatime")
-  def pickatime_$root(objectName: pickadateLib.pickadateLibStrings.DOLLARroot): JQuery = js.native
   @JSName("pickatime")
   def pickatime__hidden(objectName: pickadateLib.pickadateLibStrings._hidden): stdLib.HTMLInputElement = js.native
   /**

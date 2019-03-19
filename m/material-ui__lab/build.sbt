@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-ui__lab"
-version := "3.0.0-alpha.30-48b407"
+version := "3.0.0-alpha.30-ec765f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,13 +17,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "isobject" % "3.0.1-76e358",
   "org.scalablytyped" %%% "jss" % "9.5-dt-20190227Z-ab69f1",
   "org.scalablytyped" %%% "keycode" % "2.2.0-1f63ba",
-  "org.scalablytyped" %%% "material-ui__core" % "3.9.2-4220cb",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190313Z-f6d9fe",
+  "org.scalablytyped" %%% "material-ui__core" % "3.9.2-7b15b9",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190318Z-f6d9fe",
   "org.scalablytyped" %%% "normalize-scroll-left" % "0.1.2-1c9f17",
   "org.scalablytyped" %%% "popper_dot_js" % "1.14.7-c9b4de",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190312Z-6f0f1a",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-7ba1d5",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-15e686",
   "org.scalablytyped" %%% "react-event-listener" % "0.4-dt-20190206Z-f736a7",
   "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-43f0e6",
   "org.scalablytyped" %%% "recompose" % "0.30-dt-20190225Z-990227",

@@ -21,9 +21,9 @@ trait JsonRule extends JsonContainer {
 object JsonRule {
   @scala.inline
   def apply(
-    first: Node = null,
-    last: Node = null,
-    nodes: js.Array[Node] = null,
+    first: ChildNode = null,
+    last: ChildNode = null,
+    nodes: js.Array[ChildNode] = null,
     parent: JsonContainer = null,
     raws: NodeRaws = null,
     selector: java.lang.String = null,

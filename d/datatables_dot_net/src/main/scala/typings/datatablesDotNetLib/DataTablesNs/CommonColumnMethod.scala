@@ -12,11 +12,11 @@ trait CommonColumnMethod extends CommonSubMethods {
   /**
     * Get the footer th / td cell for the selected column.
     */
-  def footer(): js.Any = js.native
+  def footer(): stdLib.HTMLElement = js.native
   /**
     * Get the header th / td cell for a column.
     */
-  def header(): stdLib.Node = js.native
+  def header(): stdLib.HTMLElement = js.native
   /**
     * Order the table, in the direction specified, by the column selected by the column()DT selector.
     *

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CompositeEntityCollection extends js.Object {
-  var collectionChanged: Event = js.native
+  var collectionChanged: Event[js.Array[_]] = js.native
   var id: java.lang.String = js.native
   var values: js.Array[Entity] = js.native
   def addCollection(collection: EntityCollection): scala.Unit = js.native

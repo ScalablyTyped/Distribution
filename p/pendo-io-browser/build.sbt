@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pendo-io-browser"
-version := "2.16-dt-20190305Z-206f9c"
+version := "2.16-dt-20190315Z-af5fbd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

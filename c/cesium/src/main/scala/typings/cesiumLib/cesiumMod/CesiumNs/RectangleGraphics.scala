@@ -10,7 +10,7 @@ trait RectangleGraphics extends js.Object {
   var closeBottom: Property = js.native
   var closeTop: Property = js.native
   var coordinates: Property = js.native
-  var definitionChanged: Event = js.native
+  var definitionChanged: Event[js.Array[_]] = js.native
   var extrudedHeight: Property = js.native
   var fill: Property = js.native
   var granularity: Property = js.native

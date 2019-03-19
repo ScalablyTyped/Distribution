@@ -1,5 +1,5 @@
 ```
-// Type definitions for node-forge 0.7.6
+// Type definitions for node-forge 0.8.1
 // Project: https://github.com/digitalbazaar/forge
 // Definitions by: Seth Westphal    <https://github.com/westy92>
 //                 Kay Schecker     <https://github.com/flynetworks>
@@ -11,6 +11,7 @@
 //                 timhwang21       <https://github.com/timhwang21>
 //                 supaiku0         <https://github.com/supaiku0>
 //                 Anders Kaseorg   <https://github.com/andersk>
+//                 Sascha Zarhuber  <https://github.com/saschazar21>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.6
 ```

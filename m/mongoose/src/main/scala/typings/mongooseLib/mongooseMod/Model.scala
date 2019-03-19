@@ -727,7 +727,7 @@ org.scalablytyped.runtime.Instantiable0[T]
     o: ModelMapReduceOption[T, Key, Value],
     callback: js.Function2[/* err */ js.Any, /* res */ js.Any, scala.Unit]
   ): js.Promise[_] = js.native
-  def model(name: java.lang.String): Model[T, js.Object] = js.native
+  def model[U /* <: Document */](name: java.lang.String): Model[U, js.Object] = js.native
   def populate(docs: js.Array[_], options: js.Array[ModelPopulateOptions]): js.Promise[js.Array[T]] = js.native
   def populate(
     docs: js.Array[_],

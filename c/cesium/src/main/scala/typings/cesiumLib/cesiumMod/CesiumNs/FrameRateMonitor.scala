@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait FrameRateMonitor extends js.Object {
   var lastFramesPerSecond: scala.Double
-  var lowFrameRate: Event
+  var lowFrameRate: Event[js.Array[_]]
   var minimumFrameRateAfterWarmup: scala.Double
   var minimumFrameRateDuringWarmup: scala.Double
-  var nominalFrameRate: Event
+  var nominalFrameRate: Event[js.Array[_]]
   var quietPeriod: scala.Double
   var samplingWindow: scala.Double
   var scene: Scene
@@ -27,10 +27,10 @@ object FrameRateMonitor {
     destroy: () => scala.Unit,
     isDestroyed: () => scala.Boolean,
     lastFramesPerSecond: scala.Double,
-    lowFrameRate: Event,
+    lowFrameRate: Event[js.Array[_]],
     minimumFrameRateAfterWarmup: scala.Double,
     minimumFrameRateDuringWarmup: scala.Double,
-    nominalFrameRate: Event,
+    nominalFrameRate: Event[js.Array[_]],
     pause: () => scala.Unit,
     quietPeriod: scala.Double,
     samplingWindow: scala.Double,

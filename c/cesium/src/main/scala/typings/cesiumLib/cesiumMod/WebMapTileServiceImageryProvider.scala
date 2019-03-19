@@ -33,7 +33,7 @@ class WebMapTileServiceImageryProvider protected ()
   /* CompleteClass */
   override var dimensions: js.Any = js.native
   /* CompleteClass */
-  override val errorEvent: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override val errorEvent: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
   override val format: java.lang.String = js.native
   /* CompleteClass */

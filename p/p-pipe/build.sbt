@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-pipe"
-version := "2.0.0-b14247"
+version := "2.0.1-b14247"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

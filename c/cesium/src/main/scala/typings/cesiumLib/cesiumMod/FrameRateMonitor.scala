@@ -13,13 +13,13 @@ class FrameRateMonitor ()
   /* CompleteClass */
   override var lastFramesPerSecond: scala.Double = js.native
   /* CompleteClass */
-  override var lowFrameRate: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override var lowFrameRate: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
   override var minimumFrameRateAfterWarmup: scala.Double = js.native
   /* CompleteClass */
   override var minimumFrameRateDuringWarmup: scala.Double = js.native
   /* CompleteClass */
-  override var nominalFrameRate: cesiumLib.cesiumMod.CesiumNs.Event = js.native
+  override var nominalFrameRate: cesiumLib.cesiumMod.CesiumNs.Event[js.Array[_]] = js.native
   /* CompleteClass */
   override var quietPeriod: scala.Double = js.native
   /* CompleteClass */

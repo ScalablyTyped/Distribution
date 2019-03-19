@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait DefineIndexOptions extends js.Object {
   /**
+    * Pass CONCURRENT so other operations run while the index is created - PostgresSQL only. Default is false
+    */
+  var concurrently: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The name of the index. Default is __
     */
   var indexName: js.UndefOr[java.lang.String] = js.undefined
@@ -37,6 +41,7 @@ trait DefineIndexOptions extends js.Object {
 object DefineIndexOptions {
   @scala.inline
   def apply(
+    concurrently: js.UndefOr[scala.Boolean] = js.undefined,
     indexName: java.lang.String = null,
     indexType: java.lang.String = null,
     indicesType: sequelizeLib.sequelizeLibStrings.UNIQUE | sequelizeLib.sequelizeLibStrings.FULLTEXT | sequelizeLib.sequelizeLibStrings.SPATIAL = null,
@@ -45,6 +50,7 @@ object DefineIndexOptions {
     where: AnyWhereOptions = null
   ): DefineIndexOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(concurrently)) __obj.updateDynamic("concurrently")(concurrently)
     if (indexName != null) __obj.updateDynamic("indexName")(indexName)
     if (indexType != null) __obj.updateDynamic("indexType")(indexType)
     if (indicesType != null) __obj.updateDynamic("indicesType")(indicesType.asInstanceOf[js.Any])

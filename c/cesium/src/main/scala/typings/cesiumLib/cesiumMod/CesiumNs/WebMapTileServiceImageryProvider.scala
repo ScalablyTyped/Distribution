@@ -27,7 +27,7 @@ object WebMapTileServiceImageryProvider {
     defaultMinificationFilter: js.Any,
     defaultSaturation: scala.Double,
     dimensions: js.Any,
-    errorEvent: Event,
+    errorEvent: Event[js.Array[_]],
     format: java.lang.String,
     getTileCredits: (scala.Double, scala.Double, scala.Double) => js.Array[Credit],
     hasAlphaChannel: scala.Boolean,

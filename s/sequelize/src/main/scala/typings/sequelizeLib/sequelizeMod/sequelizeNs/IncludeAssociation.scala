@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
   */
 trait IncludeAssociation extends js.Object {
   var identifier: java.lang.String
-  var source: Model[_, _]
-  var target: Model[_, _]
+  var source: Model[_, _, _]
+  var target: Model[_, _, _]
 }
 
 object IncludeAssociation {
   @scala.inline
-  def apply(identifier: java.lang.String, source: Model[_, _], target: Model[_, _]): IncludeAssociation = {
+  def apply(identifier: java.lang.String, source: Model[_, _, _], target: Model[_, _, _]): IncludeAssociation = {
     val __obj = js.Dynamic.literal(identifier = identifier, source = source, target = target)
   
     __obj.asInstanceOf[IncludeAssociation]

@@ -412,7 +412,7 @@ package object sequelizeNs {
     * Shortcut for order type in FindOptions.attributes
     */
   type FindOptionsOrderArray = js.Array[
-    java.lang.String | scala.Double | (Model[js.Any, js.Any]) | sequelizeLib.Anon_As | fn
+    java.lang.String | scala.Double | (Model[js.Any, js.Any, js.Any]) | sequelizeLib.Anon_As | fn
   ]
   /**
     * GetTableName Options
@@ -815,6 +815,6 @@ package object sequelizeNs {
     */
   type WhereLogic = stdLib.Partial[sequelizeLib.Anon_]
   type WhereOptions[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? sequelize.sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.sequelize.Primitives> | sequelize.sequelize.sequelize.WhereLogic | null | sequelize.sequelize.sequelize.col | sequelize.sequelize.sequelize.and | sequelize.sequelize.sequelize.or | sequelize.sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.sequelize.WhereNested | null}
+  {[ P in keyof T ]:? sequelize.sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.sequelize.Primitives> | sequelize.sequelize.sequelize.WhereLogic | null | sequelize.sequelize.sequelize.col | sequelize.sequelize.sequelize.and | sequelize.sequelize.sequelize.or | sequelize.sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.sequelize.WhereNested | sequelize.sequelize.sequelize.where | null}
     */ sequelizeLib.sequelizeLibStrings.WhereOptions with js.Any
 }

@@ -11,12 +11,9 @@ object autoscalingNs extends js.Object {
   @JSName("v1")
   @js.native
   object v1Ns extends js.Object {
-    /**
-      * configuration of a horizontal pod autoscaler.
-      */
     @js.native
     class HorizontalPodAutoscaler protected ()
-      extends atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.HorizontalPodAutoscaler {
+      extends atPulumiKubernetesLib.autoscalingMod.v1Ns.HorizontalPodAutoscaler {
       /**
         * Create a autoscaling.v1.HorizontalPodAutoscaler resource with the given unique name, arguments, and options.
         *
@@ -29,12 +26,9 @@ object autoscalingNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.autoscalingNs.v1Ns.HorizontalPodAutoscaler, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * list of horizontal pod autoscaler objects.
-      */
     @js.native
     class HorizontalPodAutoscalerList protected ()
-      extends atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerList {
+      extends atPulumiKubernetesLib.autoscalingMod.v1Ns.HorizontalPodAutoscalerList {
       /**
         * Create a autoscaling.v1.HorizontalPodAutoscalerList resource with the given unique name, arguments, and options.
         *
@@ -62,12 +56,12 @@ object autoscalingNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.HorizontalPodAutoscaler = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.autoscalingV1HorizontalPodAutoscalerMod.HorizontalPodAutoscaler = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.HorizontalPodAutoscaler = js.native
+      ): atPulumiKubernetesLib.autoscalingV1HorizontalPodAutoscalerMod.HorizontalPodAutoscaler = js.native
     }
     
     /* static members */
@@ -85,12 +79,12 @@ object autoscalingNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.autoscalingV1HorizontalPodAutoscalerListMod.HorizontalPodAutoscalerList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerList = js.native
+      ): atPulumiKubernetesLib.autoscalingV1HorizontalPodAutoscalerListMod.HorizontalPodAutoscalerList = js.native
     }
     
   }
@@ -98,14 +92,9 @@ object autoscalingNs extends js.Object {
   @JSName("v2beta1")
   @js.native
   object v2beta1Ns extends js.Object {
-    /**
-      * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which
-      * automatically manages the replica count of any resource implementing the scale subresource
-      * based on the metrics specified.
-      */
     @js.native
     class HorizontalPodAutoscaler protected ()
-      extends atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscaler {
+      extends atPulumiKubernetesLib.autoscalingMod.v2beta1Ns.HorizontalPodAutoscaler {
       /**
         * Create a autoscaling.v2beta1.HorizontalPodAutoscaler resource with the given unique name, arguments, and options.
         *
@@ -118,12 +107,9 @@ object autoscalingNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscaler, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * HorizontalPodAutoscaler is a list of horizontal pod autoscaler objects.
-      */
     @js.native
     class HorizontalPodAutoscalerList protected ()
-      extends atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerList {
+      extends atPulumiKubernetesLib.autoscalingMod.v2beta1Ns.HorizontalPodAutoscalerList {
       /**
         * Create a autoscaling.v2beta1.HorizontalPodAutoscalerList resource with the given unique name, arguments, and options.
         *
@@ -151,12 +137,12 @@ object autoscalingNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscaler = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.autoscalingV2beta1HorizontalPodAutoscalerMod.HorizontalPodAutoscaler = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscaler = js.native
+      ): atPulumiKubernetesLib.autoscalingV2beta1HorizontalPodAutoscalerMod.HorizontalPodAutoscaler = js.native
     }
     
     /* static members */
@@ -174,12 +160,12 @@ object autoscalingNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.autoscalingV2beta1HorizontalPodAutoscalerListMod.HorizontalPodAutoscalerList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerList = js.native
+      ): atPulumiKubernetesLib.autoscalingV2beta1HorizontalPodAutoscalerListMod.HorizontalPodAutoscalerList = js.native
     }
     
   }
@@ -187,14 +173,9 @@ object autoscalingNs extends js.Object {
   @JSName("v2beta2")
   @js.native
   object v2beta2Ns extends js.Object {
-    /**
-      * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which
-      * automatically manages the replica count of any resource implementing the scale subresource
-      * based on the metrics specified.
-      */
     @js.native
     class HorizontalPodAutoscaler protected ()
-      extends atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler {
+      extends atPulumiKubernetesLib.autoscalingMod.v2beta2Ns.HorizontalPodAutoscaler {
       /**
         * Create a autoscaling.v2beta2.HorizontalPodAutoscaler resource with the given unique name, arguments, and options.
         *
@@ -207,12 +188,9 @@ object autoscalingNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * HorizontalPodAutoscalerList is a list of horizontal pod autoscaler objects.
-      */
     @js.native
     class HorizontalPodAutoscalerList protected ()
-      extends atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerList {
+      extends atPulumiKubernetesLib.autoscalingMod.v2beta2Ns.HorizontalPodAutoscalerList {
       /**
         * Create a autoscaling.v2beta2.HorizontalPodAutoscalerList resource with the given unique name, arguments, and options.
         *
@@ -240,12 +218,12 @@ object autoscalingNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.autoscalingV2beta2HorizontalPodAutoscalerMod.HorizontalPodAutoscaler = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler = js.native
+      ): atPulumiKubernetesLib.autoscalingV2beta2HorizontalPodAutoscalerMod.HorizontalPodAutoscaler = js.native
     }
     
     /* static members */
@@ -263,12 +241,12 @@ object autoscalingNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.autoscalingV2beta2HorizontalPodAutoscalerListMod.HorizontalPodAutoscalerList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerList = js.native
+      ): atPulumiKubernetesLib.autoscalingV2beta2HorizontalPodAutoscalerListMod.HorizontalPodAutoscalerList = js.native
     }
     
   }

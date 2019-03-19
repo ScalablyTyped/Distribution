@@ -6,18 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Passphrase extends js.Object {
-  var passphrase: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var privateKey: openpgpLib.openpgpMod.keyNs.Key
+  var passphrase: openpgpLib.openpgpLibStrings.string
+  var sign: openpgpLib.openpgpLibNumbers.`true`
 }
 
 object Anon_Passphrase {
   @scala.inline
-  def apply(
-    privateKey: openpgpLib.openpgpMod.keyNs.Key,
-    passphrase: java.lang.String | js.Array[java.lang.String] = null
-  ): Anon_Passphrase = {
-    val __obj = js.Dynamic.literal(privateKey = privateKey)
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
+  def apply(passphrase: openpgpLib.openpgpLibStrings.string, sign: openpgpLib.openpgpLibNumbers.`true`): Anon_Passphrase = {
+    val __obj = js.Dynamic.literal(passphrase = passphrase, sign = sign)
+  
     __obj.asInstanceOf[Anon_Passphrase]
   }
 }

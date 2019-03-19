@@ -11,12 +11,9 @@ object certificatesNs extends js.Object {
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
-    /**
-      * Describes a certificate signing request
-      */
     @js.native
     class CertificateSigningRequest protected ()
-      extends atPulumiKubernetesLib.providerMod.certificatesNs.v1beta1Ns.CertificateSigningRequest {
+      extends atPulumiKubernetesLib.certificatesMod.v1beta1Ns.CertificateSigningRequest {
       /**
         * Create a certificates.v1beta1.CertificateSigningRequest resource with the given unique name, arguments, and options.
         *
@@ -31,7 +28,7 @@ object certificatesNs extends js.Object {
     
     @js.native
     class CertificateSigningRequestList protected ()
-      extends atPulumiKubernetesLib.providerMod.certificatesNs.v1beta1Ns.CertificateSigningRequestList {
+      extends atPulumiKubernetesLib.certificatesMod.v1beta1Ns.CertificateSigningRequestList {
       /**
         * Create a certificates.v1beta1.CertificateSigningRequestList resource with the given unique name, arguments, and options.
         *
@@ -59,12 +56,12 @@ object certificatesNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.certificatesNs.v1beta1Ns.CertificateSigningRequest = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.certificatesV1beta1CertificateSigningRequestMod.CertificateSigningRequest = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.certificatesNs.v1beta1Ns.CertificateSigningRequest = js.native
+      ): atPulumiKubernetesLib.certificatesV1beta1CertificateSigningRequestMod.CertificateSigningRequest = js.native
     }
     
     /* static members */
@@ -82,12 +79,12 @@ object certificatesNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.certificatesNs.v1beta1Ns.CertificateSigningRequestList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.certificatesV1beta1CertificateSigningRequestListMod.CertificateSigningRequestList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.certificatesNs.v1beta1Ns.CertificateSigningRequestList = js.native
+      ): atPulumiKubernetesLib.certificatesV1beta1CertificateSigningRequestListMod.CertificateSigningRequestList = js.native
     }
     
   }

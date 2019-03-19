@@ -23,16 +23,18 @@ trait RuleNewProps extends ContainerNewProps {
 object RuleNewProps {
   @scala.inline
   def apply(
-    nodes: js.Array[Node] = null,
+    nodes: js.Array[ChildNode] = null,
     raws: RuleRaws = null,
     selector: java.lang.String = null,
-    selectors: js.Array[java.lang.String] = null
+    selectors: js.Array[java.lang.String] = null,
+    source: NodeSource = null
   ): RuleNewProps = {
     val __obj = js.Dynamic.literal()
     if (nodes != null) __obj.updateDynamic("nodes")(nodes)
     if (raws != null) __obj.updateDynamic("raws")(raws)
     if (selector != null) __obj.updateDynamic("selector")(selector)
     if (selectors != null) __obj.updateDynamic("selectors")(selectors)
+    if (source != null) __obj.updateDynamic("source")(source)
     __obj.asInstanceOf[RuleNewProps]
   }
 }

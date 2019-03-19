@@ -9,17 +9,17 @@ trait NodeSource extends js.Object {
   /**
     * The ending position of the node's source.
     */
-  var end: js.UndefOr[postcssLib.Anon_ColumnLine] = js.undefined
+  var end: js.UndefOr[postcssLib.Anon_Column] = js.undefined
   var input: Input
   /**
     * The starting position of the node's source.
     */
-  var start: js.UndefOr[postcssLib.Anon_ColumnLine] = js.undefined
+  var start: js.UndefOr[postcssLib.Anon_Column] = js.undefined
 }
 
 object NodeSource {
   @scala.inline
-  def apply(input: Input, end: postcssLib.Anon_ColumnLine = null, start: postcssLib.Anon_ColumnLine = null): NodeSource = {
+  def apply(input: Input, end: postcssLib.Anon_Column = null, start: postcssLib.Anon_Column = null): NodeSource = {
     val __obj = js.Dynamic.literal(input = input)
     if (end != null) __obj.updateDynamic("end")(end)
     if (start != null) __obj.updateDynamic("start")(start)

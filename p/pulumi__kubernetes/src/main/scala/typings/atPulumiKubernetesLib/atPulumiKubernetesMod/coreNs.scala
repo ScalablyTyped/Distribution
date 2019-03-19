@@ -11,13 +11,9 @@ object coreNs extends js.Object {
   @JSName("v1")
   @js.native
   object v1Ns extends js.Object {
-    /**
-      * Binding ties one object to another; for example, a pod is bound to a node by a scheduler.
-      * Deprecated in 1.7, please use the bindings subresource of pods instead.
-      */
     @js.native
     class Binding protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Binding {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.Binding {
       /**
         * Create a core.v1.Binding resource with the given unique name, arguments, and options.
         *
@@ -30,12 +26,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Binding, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ComponentStatus (and ComponentStatusList) holds the cluster validation info.
-      */
     @js.native
     class ComponentStatus protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ComponentStatus {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.ComponentStatus {
       /**
         * Create a core.v1.ComponentStatus resource with the given unique name, arguments, and options.
         *
@@ -48,12 +41,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ComponentStatus, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Status of all the conditions for the component as a list of ComponentStatus objects.
-      */
     @js.native
     class ComponentStatusList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ComponentStatusList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.ComponentStatusList {
       /**
         * Create a core.v1.ComponentStatusList resource with the given unique name, arguments, and options.
         *
@@ -66,12 +56,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ComponentStatusList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ConfigMap holds configuration data for pods to consume.
-      */
     @js.native
     class ConfigMap protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMap {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.ConfigMap {
       /**
         * Create a core.v1.ConfigMap resource with the given unique name, arguments, and options.
         *
@@ -84,12 +71,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ConfigMap, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ConfigMapList is a resource containing a list of ConfigMap objects.
-      */
     @js.native
     class ConfigMapList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMapList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.ConfigMapList {
       /**
         * Create a core.v1.ConfigMapList resource with the given unique name, arguments, and options.
         *
@@ -102,23 +86,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ConfigMapList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Endpoints is a collection of endpoints that implement the actual service. Example:
-      *   Name: "mysvc",
-      *   Subsets: [
-      *     {
-      *       Addresses: [{"ip": "10.10.1.1"}, {"ip": "10.10.2.2"}],
-      *       Ports: [{"name": "a", "port": 8675}, {"name": "b", "port": 309}]
-      *     },
-      *     {
-      *       Addresses: [{"ip": "10.10.3.3"}],
-      *       Ports: [{"name": "a", "port": 93}, {"name": "b", "port": 76}]
-      *     },
-      *  ]
-      */
     @js.native
     class Endpoints protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Endpoints {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.Endpoints {
       /**
         * Create a core.v1.Endpoints resource with the given unique name, arguments, and options.
         *
@@ -131,12 +101,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Endpoints, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * EndpointsList is a list of endpoints.
-      */
     @js.native
     class EndpointsList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.EndpointsList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.EndpointsList {
       /**
         * Create a core.v1.EndpointsList resource with the given unique name, arguments, and options.
         *
@@ -149,12 +116,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.EndpointsList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Event is a report of an event somewhere in the cluster.
-      */
     @js.native
     class Event protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Event {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.Event {
       /**
         * Create a core.v1.Event resource with the given unique name, arguments, and options.
         *
@@ -167,12 +131,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Event, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * EventList is a list of events.
-      */
     @js.native
     class EventList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.EventList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.EventList {
       /**
         * Create a core.v1.EventList resource with the given unique name, arguments, and options.
         *
@@ -185,12 +146,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.EventList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * LimitRange sets resource usage limits for each kind of resource in a Namespace.
-      */
     @js.native
     class LimitRange protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.LimitRange {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.LimitRange {
       /**
         * Create a core.v1.LimitRange resource with the given unique name, arguments, and options.
         *
@@ -203,12 +161,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.LimitRange, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * LimitRangeList is a list of LimitRange items.
-      */
     @js.native
     class LimitRangeList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.LimitRangeList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.LimitRangeList {
       /**
         * Create a core.v1.LimitRangeList resource with the given unique name, arguments, and options.
         *
@@ -221,12 +176,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.LimitRangeList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Namespace provides a scope for Names. Use of multiple namespaces is optional.
-      */
     @js.native
     class Namespace protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Namespace {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.Namespace {
       /**
         * Create a core.v1.Namespace resource with the given unique name, arguments, and options.
         *
@@ -239,12 +191,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Namespace, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * NamespaceList is a list of Namespaces.
-      */
     @js.native
     class NamespaceList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NamespaceList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.NamespaceList {
       /**
         * Create a core.v1.NamespaceList resource with the given unique name, arguments, and options.
         *
@@ -257,13 +206,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.NamespaceList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Node is a worker node in Kubernetes. Each node will have a unique identifier in the cache
-      * (i.e. in etcd).
-      */
     @js.native
     class Node protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Node {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.Node {
       /**
         * Create a core.v1.Node resource with the given unique name, arguments, and options.
         *
@@ -276,12 +221,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Node, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * NodeList is the whole list of all Nodes which have been registered with master.
-      */
     @js.native
     class NodeList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NodeList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.NodeList {
       /**
         * Create a core.v1.NodeList resource with the given unique name, arguments, and options.
         *
@@ -294,13 +236,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.NodeList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PersistentVolume (PV) is a storage resource provisioned by an administrator. It is analogous
-      * to a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes
-      */
     @js.native
     class PersistentVolume protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolume {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.PersistentVolume {
       /**
         * Create a core.v1.PersistentVolume resource with the given unique name, arguments, and options.
         *
@@ -313,12 +251,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolume, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PersistentVolumeClaim is a user's request for and claim to a persistent volume
-      */
     @js.native
     class PersistentVolumeClaim protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeClaim {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.PersistentVolumeClaim {
       /**
         * Create a core.v1.PersistentVolumeClaim resource with the given unique name, arguments, and options.
         *
@@ -331,12 +266,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PersistentVolumeClaimList is a list of PersistentVolumeClaim items.
-      */
     @js.native
     class PersistentVolumeClaimList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeClaimList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.PersistentVolumeClaimList {
       /**
         * Create a core.v1.PersistentVolumeClaimList resource with the given unique name, arguments, and options.
         *
@@ -349,12 +281,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaimList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PersistentVolumeList is a list of PersistentVolume items.
-      */
     @js.native
     class PersistentVolumeList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.PersistentVolumeList {
       /**
         * Create a core.v1.PersistentVolumeList resource with the given unique name, arguments, and options.
         *
@@ -367,13 +296,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Pod is a collection of containers that can run on a host. This resource is created by clients
-      * and scheduled onto hosts.
-      */
     @js.native
     class Pod protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Pod {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.Pod {
       /**
         * Create a core.v1.Pod resource with the given unique name, arguments, and options.
         *
@@ -386,12 +311,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Pod, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PodList is a list of Pods.
-      */
     @js.native
     class PodList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.PodList {
       /**
         * Create a core.v1.PodList resource with the given unique name, arguments, and options.
         *
@@ -404,12 +326,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PodTemplate describes a template for creating copies of a predefined pod.
-      */
     @js.native
     class PodTemplate protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodTemplate {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.PodTemplate {
       /**
         * Create a core.v1.PodTemplate resource with the given unique name, arguments, and options.
         *
@@ -422,12 +341,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplate, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PodTemplateList is a list of PodTemplates.
-      */
     @js.native
     class PodTemplateList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodTemplateList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.PodTemplateList {
       /**
         * Create a core.v1.PodTemplateList resource with the given unique name, arguments, and options.
         *
@@ -440,12 +356,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ReplicationController represents the configuration of a replication controller.
-      */
     @js.native
     class ReplicationController protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ReplicationController {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.ReplicationController {
       /**
         * Create a core.v1.ReplicationController resource with the given unique name, arguments, and options.
         *
@@ -458,12 +371,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ReplicationController, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ReplicationControllerList is a collection of replication controllers.
-      */
     @js.native
     class ReplicationControllerList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ReplicationControllerList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.ReplicationControllerList {
       /**
         * Create a core.v1.ReplicationControllerList resource with the given unique name, arguments, and options.
         *
@@ -476,12 +386,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ReplicationControllerList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ResourceQuota sets aggregate quota restrictions enforced per namespace
-      */
     @js.native
     class ResourceQuota protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ResourceQuota {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.ResourceQuota {
       /**
         * Create a core.v1.ResourceQuota resource with the given unique name, arguments, and options.
         *
@@ -494,12 +401,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ResourceQuota, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ResourceQuotaList is a list of ResourceQuota items.
-      */
     @js.native
     class ResourceQuotaList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ResourceQuotaList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.ResourceQuotaList {
       /**
         * Create a core.v1.ResourceQuotaList resource with the given unique name, arguments, and options.
         *
@@ -512,13 +416,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ResourceQuotaList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Secret holds secret data of a certain type. The total bytes of the values in the Data field
-      * must be less than MaxSecretSize bytes.
-      */
     @js.native
     class Secret protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Secret {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.Secret {
       /**
         * Create a core.v1.Secret resource with the given unique name, arguments, and options.
         *
@@ -531,12 +431,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Secret, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * SecretList is a list of Secret.
-      */
     @js.native
     class SecretList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.SecretList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.SecretList {
       /**
         * Create a core.v1.SecretList resource with the given unique name, arguments, and options.
         *
@@ -549,14 +446,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.SecretList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Service is a named abstraction of software service (for example, mysql) consisting of local
-      * port (for example 3306) that the proxy listens on, and the selector that determines which
-      * pods will answer requests sent through the proxy.
-      */
     @js.native
     class Service protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Service {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.Service {
       /**
         * Create a core.v1.Service resource with the given unique name, arguments, and options.
         *
@@ -569,14 +461,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Service, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ServiceAccount binds together: * a name, understood by users, and perhaps by peripheral
-      * systems, for an identity * a principal that can be authenticated and authorized * a set of
-      * secrets
-      */
     @js.native
     class ServiceAccount protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceAccount {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.ServiceAccount {
       /**
         * Create a core.v1.ServiceAccount resource with the given unique name, arguments, and options.
         *
@@ -589,12 +476,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ServiceAccount, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ServiceAccountList is a list of ServiceAccount objects
-      */
     @js.native
     class ServiceAccountList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceAccountList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.ServiceAccountList {
       /**
         * Create a core.v1.ServiceAccountList resource with the given unique name, arguments, and options.
         *
@@ -607,12 +491,9 @@ object coreNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ServiceAccountList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ServiceList holds a list of services.
-      */
     @js.native
     class ServiceList protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceList {
+      extends atPulumiKubernetesLib.coreMod.v1Ns.ServiceList {
       /**
         * Create a core.v1.ServiceList resource with the given unique name, arguments, and options.
         *
@@ -640,12 +521,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Binding = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1BindingMod.Binding = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Binding = js.native
+      ): atPulumiKubernetesLib.coreV1BindingMod.Binding = js.native
     }
     
     /* static members */
@@ -663,12 +544,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ComponentStatus = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1ComponentStatusMod.ComponentStatus = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ComponentStatus = js.native
+      ): atPulumiKubernetesLib.coreV1ComponentStatusMod.ComponentStatus = js.native
     }
     
     /* static members */
@@ -686,12 +567,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ComponentStatusList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1ComponentStatusListMod.ComponentStatusList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ComponentStatusList = js.native
+      ): atPulumiKubernetesLib.coreV1ComponentStatusListMod.ComponentStatusList = js.native
     }
     
     /* static members */
@@ -709,12 +590,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMap = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1ConfigMapMod.ConfigMap = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMap = js.native
+      ): atPulumiKubernetesLib.coreV1ConfigMapMod.ConfigMap = js.native
     }
     
     /* static members */
@@ -732,12 +613,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMapList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1ConfigMapListMod.ConfigMapList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMapList = js.native
+      ): atPulumiKubernetesLib.coreV1ConfigMapListMod.ConfigMapList = js.native
     }
     
     /* static members */
@@ -755,12 +636,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Endpoints = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1EndpointsMod.Endpoints = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Endpoints = js.native
+      ): atPulumiKubernetesLib.coreV1EndpointsMod.Endpoints = js.native
     }
     
     /* static members */
@@ -778,12 +659,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.EndpointsList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1EndpointsListMod.EndpointsList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.EndpointsList = js.native
+      ): atPulumiKubernetesLib.coreV1EndpointsListMod.EndpointsList = js.native
     }
     
     /* static members */
@@ -801,12 +682,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Event = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1EventMod.Event = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Event = js.native
+      ): atPulumiKubernetesLib.coreV1EventMod.Event = js.native
     }
     
     /* static members */
@@ -824,12 +705,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.EventList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1EventListMod.EventList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.EventList = js.native
+      ): atPulumiKubernetesLib.coreV1EventListMod.EventList = js.native
     }
     
     /* static members */
@@ -847,12 +728,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.LimitRange = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1LimitRangeMod.LimitRange = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.LimitRange = js.native
+      ): atPulumiKubernetesLib.coreV1LimitRangeMod.LimitRange = js.native
     }
     
     /* static members */
@@ -870,12 +751,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.LimitRangeList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1LimitRangeListMod.LimitRangeList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.LimitRangeList = js.native
+      ): atPulumiKubernetesLib.coreV1LimitRangeListMod.LimitRangeList = js.native
     }
     
     /* static members */
@@ -893,12 +774,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Namespace = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1NamespaceMod.Namespace = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Namespace = js.native
+      ): atPulumiKubernetesLib.coreV1NamespaceMod.Namespace = js.native
     }
     
     /* static members */
@@ -916,12 +797,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NamespaceList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1NamespaceListMod.NamespaceList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NamespaceList = js.native
+      ): atPulumiKubernetesLib.coreV1NamespaceListMod.NamespaceList = js.native
     }
     
     /* static members */
@@ -939,12 +820,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Node = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1NodeMod.Node = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Node = js.native
+      ): atPulumiKubernetesLib.coreV1NodeMod.Node = js.native
     }
     
     /* static members */
@@ -962,12 +843,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NodeList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1NodeListMod.NodeList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NodeList = js.native
+      ): atPulumiKubernetesLib.coreV1NodeListMod.NodeList = js.native
     }
     
     /* static members */
@@ -985,12 +866,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolume = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1PersistentVolumeMod.PersistentVolume = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolume = js.native
+      ): atPulumiKubernetesLib.coreV1PersistentVolumeMod.PersistentVolume = js.native
     }
     
     /* static members */
@@ -1008,12 +889,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeClaim = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1PersistentVolumeClaimMod.PersistentVolumeClaim = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeClaim = js.native
+      ): atPulumiKubernetesLib.coreV1PersistentVolumeClaimMod.PersistentVolumeClaim = js.native
     }
     
     /* static members */
@@ -1031,12 +912,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeClaimList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1PersistentVolumeClaimListMod.PersistentVolumeClaimList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeClaimList = js.native
+      ): atPulumiKubernetesLib.coreV1PersistentVolumeClaimListMod.PersistentVolumeClaimList = js.native
     }
     
     /* static members */
@@ -1054,12 +935,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1PersistentVolumeListMod.PersistentVolumeList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeList = js.native
+      ): atPulumiKubernetesLib.coreV1PersistentVolumeListMod.PersistentVolumeList = js.native
     }
     
     /* static members */
@@ -1077,12 +958,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Pod = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1PodMod.Pod = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Pod = js.native
+      ): atPulumiKubernetesLib.coreV1PodMod.Pod = js.native
     }
     
     /* static members */
@@ -1100,12 +981,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1PodListMod.PodList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodList = js.native
+      ): atPulumiKubernetesLib.coreV1PodListMod.PodList = js.native
     }
     
     /* static members */
@@ -1123,12 +1004,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodTemplate = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1PodTemplateMod.PodTemplate = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodTemplate = js.native
+      ): atPulumiKubernetesLib.coreV1PodTemplateMod.PodTemplate = js.native
     }
     
     /* static members */
@@ -1146,12 +1027,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodTemplateList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1PodTemplateListMod.PodTemplateList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodTemplateList = js.native
+      ): atPulumiKubernetesLib.coreV1PodTemplateListMod.PodTemplateList = js.native
     }
     
     /* static members */
@@ -1169,12 +1050,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ReplicationController = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1ReplicationControllerMod.ReplicationController = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ReplicationController = js.native
+      ): atPulumiKubernetesLib.coreV1ReplicationControllerMod.ReplicationController = js.native
     }
     
     /* static members */
@@ -1192,12 +1073,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ReplicationControllerList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1ReplicationControllerListMod.ReplicationControllerList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ReplicationControllerList = js.native
+      ): atPulumiKubernetesLib.coreV1ReplicationControllerListMod.ReplicationControllerList = js.native
     }
     
     /* static members */
@@ -1215,12 +1096,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ResourceQuota = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1ResourceQuotaMod.ResourceQuota = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ResourceQuota = js.native
+      ): atPulumiKubernetesLib.coreV1ResourceQuotaMod.ResourceQuota = js.native
     }
     
     /* static members */
@@ -1238,12 +1119,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ResourceQuotaList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1ResourceQuotaListMod.ResourceQuotaList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ResourceQuotaList = js.native
+      ): atPulumiKubernetesLib.coreV1ResourceQuotaListMod.ResourceQuotaList = js.native
     }
     
     /* static members */
@@ -1261,12 +1142,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Secret = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1SecretMod.Secret = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Secret = js.native
+      ): atPulumiKubernetesLib.coreV1SecretMod.Secret = js.native
     }
     
     /* static members */
@@ -1284,12 +1165,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.SecretList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1SecretListMod.SecretList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.SecretList = js.native
+      ): atPulumiKubernetesLib.coreV1SecretListMod.SecretList = js.native
     }
     
     /* static members */
@@ -1307,12 +1188,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Service = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1ServiceMod.Service = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Service = js.native
+      ): atPulumiKubernetesLib.coreV1ServiceMod.Service = js.native
     }
     
     /* static members */
@@ -1330,12 +1211,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceAccount = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1ServiceAccountMod.ServiceAccount = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceAccount = js.native
+      ): atPulumiKubernetesLib.coreV1ServiceAccountMod.ServiceAccount = js.native
     }
     
     /* static members */
@@ -1353,12 +1234,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceAccountList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1ServiceAccountListMod.ServiceAccountList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceAccountList = js.native
+      ): atPulumiKubernetesLib.coreV1ServiceAccountListMod.ServiceAccountList = js.native
     }
     
     /* static members */
@@ -1376,12 +1257,12 @@ object coreNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.coreV1ServiceListMod.ServiceList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceList = js.native
+      ): atPulumiKubernetesLib.coreV1ServiceListMod.ServiceList = js.native
     }
     
   }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wallpaper"
-version := "2.5-dt-20180214Z-216cd2"
+version := "4.3.0-9e48ab"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

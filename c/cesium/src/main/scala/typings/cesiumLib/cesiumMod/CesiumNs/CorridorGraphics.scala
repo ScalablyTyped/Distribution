@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CorridorGraphics extends js.Object {
   var cornerType: Property = js.native
-  var definitionChanged: Event = js.native
+  var definitionChanged: Event[js.Array[_]] = js.native
   var extrudedHeight: Property = js.native
   var fill: Property = js.native
   var granularity: Property = js.native

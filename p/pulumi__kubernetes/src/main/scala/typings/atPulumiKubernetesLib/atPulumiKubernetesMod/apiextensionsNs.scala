@@ -8,15 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/kubernetes", "apiextensions")
 @js.native
 object apiextensionsNs extends js.Object {
-  /**
-    * CustomResource represents an instance of a CustomResourceDefinition (CRD). For example, the
-    * CoreOS Prometheus operator exposes a CRD `monitoring.coreos.com/ServiceMonitor`; to
-    * instantiate this as a Pulumi resource, one could call `new CustomResource`, passing the
-    * `ServiceMonitor` resource definition as an argument.
-    */
   @js.native
   class CustomResource protected ()
-    extends atPulumiKubernetesLib.providerMod.apiextensionsNs.CustomResource {
+    extends atPulumiKubernetesLib.apiextensionsMod.CustomResource {
     /**
       * Create a CustomResource resource with the given unique name, arguments, and options.
       *
@@ -24,8 +18,8 @@ object apiextensionsNs extends js.Object {
       * @param args The arguments to use to populate this resource's properties.
       * @param opts A bag of options that control this resource's behavior.
       */
-    def this(name: java.lang.String, args: atPulumiKubernetesLib.providerMod.apiextensionsNs.CustomResourceArgs) = this()
-    def this(name: java.lang.String, args: atPulumiKubernetesLib.providerMod.apiextensionsNs.CustomResourceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+    def this(name: java.lang.String, args: atPulumiKubernetesLib.apiextensionsCustomResourceMod.CustomResourceArgs) = this()
+    def this(name: java.lang.String, args: atPulumiKubernetesLib.apiextensionsCustomResourceMod.CustomResourceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
   /* static members */
@@ -43,20 +37,16 @@ object apiextensionsNs extends js.Object {
       */
     def get(
       name: java.lang.String,
-      opts: atPulumiKubernetesLib.providerMod.apiextensionsNs.CustomResourceGetOptions
-    ): atPulumiKubernetesLib.providerMod.apiextensionsNs.CustomResource = js.native
+      opts: atPulumiKubernetesLib.apiextensionsCustomResourceMod.CustomResourceGetOptions
+    ): atPulumiKubernetesLib.apiextensionsCustomResourceMod.CustomResource = js.native
   }
   
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
-    /**
-      * CustomResourceDefinition represents a resource that should be exposed on the API server.  Its
-      * name MUST be in the format <.spec.name>.<.spec.group>.
-      */
     @js.native
     class CustomResourceDefinition protected ()
-      extends atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition {
+      extends atPulumiKubernetesLib.apiextensionsMod.v1beta1Ns.CustomResourceDefinition {
       /**
         * Create a apiextensions.v1beta1.CustomResourceDefinition resource with the given unique name, arguments, and options.
         *
@@ -69,12 +59,9 @@ object apiextensionsNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * CustomResourceDefinitionList is a list of CustomResourceDefinition objects.
-      */
     @js.native
     class CustomResourceDefinitionList protected ()
-      extends atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionList {
+      extends atPulumiKubernetesLib.apiextensionsMod.v1beta1Ns.CustomResourceDefinitionList {
       /**
         * Create a apiextensions.v1beta1.CustomResourceDefinitionList resource with the given unique name, arguments, and options.
         *
@@ -102,12 +89,12 @@ object apiextensionsNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.apiextensionsV1beta1CustomResourceDefinitionMod.CustomResourceDefinition = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition = js.native
+      ): atPulumiKubernetesLib.apiextensionsV1beta1CustomResourceDefinitionMod.CustomResourceDefinition = js.native
     }
     
     /* static members */
@@ -125,12 +112,12 @@ object apiextensionsNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.apiextensionsV1beta1CustomResourceDefinitionListMod.CustomResourceDefinitionList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionList = js.native
+      ): atPulumiKubernetesLib.apiextensionsV1beta1CustomResourceDefinitionListMod.CustomResourceDefinitionList = js.native
     }
     
   }

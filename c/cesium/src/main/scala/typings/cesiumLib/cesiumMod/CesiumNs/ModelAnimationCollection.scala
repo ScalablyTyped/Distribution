@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ModelAnimationCollection extends js.Object {
-  var animationAdded: Event = js.native
-  var animationRemoved: Event = js.native
+  var animationAdded: Event[js.Array[_]] = js.native
+  var animationRemoved: Event[js.Array[_]] = js.native
   var length: scala.Double = js.native
   def add(options: cesiumLib.Anon_Delay): ModelAnimation = js.native
   def addAll(): js.Array[ModelAnimation] = js.native

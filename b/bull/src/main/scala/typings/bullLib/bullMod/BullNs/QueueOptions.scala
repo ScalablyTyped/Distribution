@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 trait QueueOptions extends js.Object {
   /**
     * When specified, the `Queue` will use this function to create new `ioredis` client connections.
-    * This is useful if you want to re-use connections.
+    * This is useful if you want to re-use connections or connect to a Redis cluster.
     */
   var createClient: js.UndefOr[
     js.Function2[
       /* type */ bullLib.bullLibStrings.client | bullLib.bullLibStrings.subscriber | bullLib.bullLibStrings.bclient, 
       /* redisOpts */ js.UndefOr[ioredisLib.ioredisMod.IORedisNs.RedisOptions], 
-      ioredisLib.ioredisMod.IORedisNs.Redis
+      ioredisLib.ioredisMod.IORedisNs.Redis | ioredisLib.ioredisMod.IORedisNs.Cluster
     ]
   ] = js.undefined
   var defaultJobOptions: js.UndefOr[JobOptions] = js.undefined
@@ -33,7 +33,7 @@ trait QueueOptions extends js.Object {
 object QueueOptions {
   @scala.inline
   def apply(
-    createClient: (/* type */ bullLib.bullLibStrings.client | bullLib.bullLibStrings.subscriber | bullLib.bullLibStrings.bclient, /* redisOpts */ js.UndefOr[ioredisLib.ioredisMod.IORedisNs.RedisOptions]) => ioredisLib.ioredisMod.IORedisNs.Redis = null,
+    createClient: (/* type */ bullLib.bullLibStrings.client | bullLib.bullLibStrings.subscriber | bullLib.bullLibStrings.bclient, /* redisOpts */ js.UndefOr[ioredisLib.ioredisMod.IORedisNs.RedisOptions]) => ioredisLib.ioredisMod.IORedisNs.Redis | ioredisLib.ioredisMod.IORedisNs.Cluster = null,
     defaultJobOptions: JobOptions = null,
     limiter: RateLimiter = null,
     prefix: java.lang.String = null,

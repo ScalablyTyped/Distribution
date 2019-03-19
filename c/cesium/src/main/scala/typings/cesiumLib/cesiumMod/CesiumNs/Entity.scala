@@ -12,7 +12,7 @@ trait Entity extends js.Object {
   var box: BoxGraphics = js.native
   var corridor: CorridorGraphics = js.native
   var cylinder: CylinderGraphics = js.native
-  val definitionChanged: Event = js.native
+  val definitionChanged: Event[js.Array[_]] = js.native
   var description: Property = js.native
   var ellipse: EllipseGraphics = js.native
   var ellipsoid: EllipsoidGraphics = js.native

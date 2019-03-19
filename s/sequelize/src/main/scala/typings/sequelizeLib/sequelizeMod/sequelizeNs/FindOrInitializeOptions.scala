@@ -25,7 +25,7 @@ object FindOrInitializeOptions {
     distinct: js.UndefOr[scala.Boolean] = js.undefined,
     group: java.lang.String | js.Array[java.lang.String] | js.Object = null,
     having: AnyWhereOptions = null,
-    include: js.Array[(Model[_, _]) | IncludeOptions] = null,
+    include: js.Array[(Model[_, _, _]) | IncludeOptions] = null,
     limit: scala.Int | scala.Double = null,
     lock: TransactionLockLevel | sequelizeLib.Anon_Level = null,
     logging: scala.Boolean | js.Function = null,

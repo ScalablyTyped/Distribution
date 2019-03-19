@@ -27,11 +27,11 @@ trait IncludeOptions extends js.Object {
   /**
     * Load further nested related models
     */
-  var include: js.UndefOr[js.Array[(Model[_, _]) | IncludeOptions]] = js.undefined
+  var include: js.UndefOr[js.Array[(Model[_, _, _]) | IncludeOptions]] = js.undefined
   /**
     * The model you want to eagerly load
     */
-  var model: js.UndefOr[Model[_, _]] = js.undefined
+  var model: js.UndefOr[Model[_, _, _]] = js.undefined
   /**
     * if true, it will also eager load the relations of the child models, recursively.
     */
@@ -68,8 +68,8 @@ object IncludeOptions {
     as: java.lang.String = null,
     association: IncludeAssociation | java.lang.String = null,
     attributes: FindOptionsAttributesArray | sequelizeLib.Anon_Exclude = null,
-    include: js.Array[(Model[_, _]) | IncludeOptions] = null,
-    model: Model[_, _] = null,
+    include: js.Array[(Model[_, _, _]) | IncludeOptions] = null,
+    model: Model[_, _, _] = null,
     nested: js.UndefOr[scala.Boolean] = js.undefined,
     paranoid: js.UndefOr[scala.Boolean] = js.undefined,
     required: js.UndefOr[scala.Boolean] = js.undefined,

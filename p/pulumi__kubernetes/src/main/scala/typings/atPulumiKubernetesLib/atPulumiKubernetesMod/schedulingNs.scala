@@ -11,13 +11,9 @@ object schedulingNs extends js.Object {
   @JSName("v1alpha1")
   @js.native
   object v1alpha1Ns extends js.Object {
-    /**
-      * PriorityClass defines mapping from a priority class name to the priority integer value. The
-      * value can be any valid integer.
-      */
     @js.native
     class PriorityClass protected ()
-      extends atPulumiKubernetesLib.providerMod.schedulingNs.v1alpha1Ns.PriorityClass {
+      extends atPulumiKubernetesLib.schedulingMod.v1alpha1Ns.PriorityClass {
       /**
         * Create a scheduling.v1alpha1.PriorityClass resource with the given unique name, arguments, and options.
         *
@@ -30,12 +26,9 @@ object schedulingNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.schedulingNs.v1alpha1Ns.PriorityClass, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PriorityClassList is a collection of priority classes.
-      */
     @js.native
     class PriorityClassList protected ()
-      extends atPulumiKubernetesLib.providerMod.schedulingNs.v1alpha1Ns.PriorityClassList {
+      extends atPulumiKubernetesLib.schedulingMod.v1alpha1Ns.PriorityClassList {
       /**
         * Create a scheduling.v1alpha1.PriorityClassList resource with the given unique name, arguments, and options.
         *
@@ -63,12 +56,12 @@ object schedulingNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.schedulingNs.v1alpha1Ns.PriorityClass = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.schedulingV1alpha1PriorityClassMod.PriorityClass = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.schedulingNs.v1alpha1Ns.PriorityClass = js.native
+      ): atPulumiKubernetesLib.schedulingV1alpha1PriorityClassMod.PriorityClass = js.native
     }
     
     /* static members */
@@ -86,12 +79,12 @@ object schedulingNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.schedulingNs.v1alpha1Ns.PriorityClassList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.schedulingV1alpha1PriorityClassListMod.PriorityClassList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.schedulingNs.v1alpha1Ns.PriorityClassList = js.native
+      ): atPulumiKubernetesLib.schedulingV1alpha1PriorityClassListMod.PriorityClassList = js.native
     }
     
   }
@@ -99,13 +92,9 @@ object schedulingNs extends js.Object {
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
-    /**
-      * PriorityClass defines mapping from a priority class name to the priority integer value. The
-      * value can be any valid integer.
-      */
     @js.native
     class PriorityClass protected ()
-      extends atPulumiKubernetesLib.providerMod.schedulingNs.v1beta1Ns.PriorityClass {
+      extends atPulumiKubernetesLib.schedulingMod.v1beta1Ns.PriorityClass {
       /**
         * Create a scheduling.v1beta1.PriorityClass resource with the given unique name, arguments, and options.
         *
@@ -118,12 +107,9 @@ object schedulingNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.schedulingNs.v1beta1Ns.PriorityClass, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PriorityClassList is a collection of priority classes.
-      */
     @js.native
     class PriorityClassList protected ()
-      extends atPulumiKubernetesLib.providerMod.schedulingNs.v1beta1Ns.PriorityClassList {
+      extends atPulumiKubernetesLib.schedulingMod.v1beta1Ns.PriorityClassList {
       /**
         * Create a scheduling.v1beta1.PriorityClassList resource with the given unique name, arguments, and options.
         *
@@ -151,12 +137,12 @@ object schedulingNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.schedulingNs.v1beta1Ns.PriorityClass = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.schedulingV1beta1PriorityClassMod.PriorityClass = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.schedulingNs.v1beta1Ns.PriorityClass = js.native
+      ): atPulumiKubernetesLib.schedulingV1beta1PriorityClassMod.PriorityClass = js.native
     }
     
     /* static members */
@@ -174,12 +160,12 @@ object schedulingNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.schedulingNs.v1beta1Ns.PriorityClassList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.schedulingV1beta1PriorityClassListMod.PriorityClassList = js.native
       def get(
         name: java.lang.String,
         id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
-      ): atPulumiKubernetesLib.providerMod.schedulingNs.v1beta1Ns.PriorityClassList = js.native
+      ): atPulumiKubernetesLib.schedulingV1beta1PriorityClassListMod.PriorityClassList = js.native
     }
     
   }
