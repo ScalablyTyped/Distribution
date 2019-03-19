@@ -10,6 +10,10 @@ Beware: While these typings generally work, some details of the encoding are sti
 All currently published artifacts should be considered snapshots and will be deleted without notice.
 Expect the first stable release before May.
 
+## While you're here
+There will be a talk about this project at [flatMap(Oslo)](https://2019.flatmap.no/talks/berg) in May,
+which will be available online shortly after.
+
 ## About
 
 This is the home of Scala.js typings for **6497** Javascript libraries,
