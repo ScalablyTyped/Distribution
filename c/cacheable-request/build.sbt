@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "cacheable-request"
-version := "6.0-dt-20190312Z-966d73"
+version := "6.0-dt-20190312Z-de338a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "http-cache-semantics" % "4.0-dt-20190127Z-67f5d6",
-  "org.scalablytyped" %%% "keyv" % "3.1-dt-20190312Z-8ff1e9",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190318Z-f6d9fe",
-  "org.scalablytyped" %%% "responselike" % "1.0-dt-20190127Z-8ec55f",
+  "org.scalablytyped" %%% "keyv" % "3.1-dt-20190312Z-0d0b16",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
+  "org.scalablytyped" %%% "responselike" % "1.0-dt-20190127Z-c318e0",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

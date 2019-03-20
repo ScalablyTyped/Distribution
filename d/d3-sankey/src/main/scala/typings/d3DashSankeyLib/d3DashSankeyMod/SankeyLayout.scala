@@ -92,6 +92,16 @@ trait SankeyLayout[Data, N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPr
     */
   def nodePadding(padding: scala.Double): this.type = js.native
   /**
+    * Returns the node comparison function which defaults to undefined.
+    */
+  def nodeSort(): js.UndefOr[js.Function2[/* a */ SankeyNode[N, L], /* b */ SankeyNode[N, L], scala.Double]] = js.native
+  /**
+    * Set the node comparison function and return this Sankey layout generator.
+    *
+    * @param compare Node comparison function.
+    */
+  def nodeSort(compare: js.Function2[/* a */ SankeyNode[N, L], /* b */ SankeyNode[N, L], scala.Double]): this.type = js.native
+  /**
     * Return the current node width, which defaults to 24.
     */
   def nodeWidth(): scala.Double = js.native

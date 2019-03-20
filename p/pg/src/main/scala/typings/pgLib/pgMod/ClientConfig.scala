@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClientConfig extends ConnectionConfig {
-  var ssl: js.UndefOr[scala.Boolean | nodeLib.tlsMod.TlsOptions] = js.undefined
+  var ssl: js.UndefOr[scala.Boolean | nodeLib.tlsMod.ConnectionOptions] = js.undefined
 }
 
 object ClientConfig {
@@ -18,7 +18,7 @@ object ClientConfig {
     keepAlive: js.UndefOr[scala.Boolean] = js.undefined,
     password: java.lang.String = null,
     port: scala.Int | scala.Double = null,
-    ssl: scala.Boolean | nodeLib.tlsMod.TlsOptions = null,
+    ssl: scala.Boolean | nodeLib.tlsMod.ConnectionOptions = null,
     statement_timeout: pgLib.pgLibNumbers.`false` | scala.Double = null,
     stream: nodeLib.streamMod.Duplex = null,
     user: java.lang.String = null

@@ -46,7 +46,7 @@ trait LolexClock[TTimerId /* <: TimerId */] extends GlobalTimers[TTimerId] {
   def requestAnimationFrame(callback: js.Function1[/* time */ scala.Double, scala.Unit]): TTimerId = js.native
   /**
     * Queues the callback to be fired during idle periods to perform background and low priority work on the main event loop.
-    * 
+    *
     * @param callback   Callback to be fired.
     * @param timeout   The maximum number of ticks before the callback must be fired.
     * @remarks Callbacks which have a timeout option will be fired no later than time in milliseconds.

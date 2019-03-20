@@ -10,13 +10,9 @@ Beware: While these typings generally work, some details of the encoding are sti
 All currently published artifacts should be considered snapshots and will be deleted without notice.
 Expect the first stable release before May.
 
-## While you're here
-There will be a talk about this project at [flatMap(Oslo)](https://2019.flatmap.no/talks/berg) in May,
-which will be available online shortly after.
-
 ## About
 
-This is the home of Scala.js typings for **6497** Javascript libraries,
+This is the home of Scala.js typings for **6503** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -25,13 +21,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               178522      9116787       805848      2288502      6022437
- Markdown              6045        62646         1174            0        61472
+ Scala               178692      9123913       806515      2289132      6028266
+ Markdown              6050        62694         1176            0        61518
  JSON                     5           29            0            0           29
  Makefile                 2           35            7            0           28
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               184575      9179503       807029      2288502      6083972
+ Total               184750      9186677       807698      2289132      6089847
 --------------------------------------------------------------------------------
 
 ```
@@ -98,7 +94,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201903190924")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201903200537")
 ```
 
 ### `build.sbt`

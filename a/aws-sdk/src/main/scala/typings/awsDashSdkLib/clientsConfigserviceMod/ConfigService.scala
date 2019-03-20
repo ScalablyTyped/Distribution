@@ -517,7 +517,7 @@ trait ConfigService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Returns status information for sources within an aggregator. The status includes information about the last time AWS Config verified authorization between the source account and an aggregator account. In case of a failure, the status contains the related error code or message. 
+    * Returns status information for sources within an aggregator. The status includes information about the last time AWS Config verified authorization between the source account and an aggregator account. In case of a failure, the status contains the related error code or message. 
     */
   def describeConfigurationAggregatorSourcesStatus(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.DescribeConfigurationAggregatorSourcesStatusResponse, 
@@ -534,7 +534,7 @@ trait ConfigService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Returns status information for sources within an aggregator. The status includes information about the last time AWS Config verified authorization between the source account and an aggregator account. In case of a failure, the status contains the related error code or message. 
+    * Returns status information for sources within an aggregator. The status includes information about the last time AWS Config verified authorization between the source account and an aggregator account. In case of a failure, the status contains the related error code or message. 
     */
   def describeConfigurationAggregatorSourcesStatus(
     params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.DescribeConfigurationAggregatorSourcesStatusRequest
@@ -1551,6 +1551,41 @@ trait ConfigService
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.PutRetentionConfigurationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Accepts a structured query language (SQL) SELECT command, performs the corresponding search, and returns resource configurations matching the properties. For more information about query components, see the  Query Components  section in the AWS Config Developer Guide.
+    */
+  def selectResourceConfig(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.SelectResourceConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def selectResourceConfig(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.SelectResourceConfigResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.SelectResourceConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Accepts a structured query language (SQL) SELECT command, performs the corresponding search, and returns resource configurations matching the properties. For more information about query components, see the  Query Components  section in the AWS Config Developer Guide.
+    */
+  def selectResourceConfig(params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.SelectResourceConfigRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.SelectResourceConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def selectResourceConfig(
+    params: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.SelectResourceConfigRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.SelectResourceConfigResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.SelectResourceConfigResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

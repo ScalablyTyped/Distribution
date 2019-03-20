@@ -11,6 +11,7 @@ trait URI2HKT[A] extends js.Object {
   var IO: fpDashTsLib.libIOMod.IO[A]
   var Identity: fpDashTsLib.libIdentityMod.Identity[A]
   var NonEmptyArray: fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A]
+  var NonEmptyArray2v: fpDashTsLib.libNonEmptyArray2vMod.NonEmptyArray[A]
   var Option: fpDashTsLib.libOptionMod.Option[A]
   var Pair: fpDashTsLib.libPairMod.Pair[A]
   var StrMap: fpDashTsLib.libStrMapMod.StrMap[A]
@@ -27,6 +28,7 @@ object URI2HKT {
     IO: fpDashTsLib.libIOMod.IO[A],
     Identity: fpDashTsLib.libIdentityMod.Identity[A],
     NonEmptyArray: fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A],
+    NonEmptyArray2v: fpDashTsLib.libNonEmptyArray2vMod.NonEmptyArray[A],
     Option: fpDashTsLib.libOptionMod.Option[A],
     Pair: fpDashTsLib.libPairMod.Pair[A],
     StrMap: fpDashTsLib.libStrMapMod.StrMap[A],
@@ -34,7 +36,7 @@ object URI2HKT {
     Tree: fpDashTsLib.libTreeMod.Tree[A],
     Zipper: fpDashTsLib.libZipperMod.Zipper[A]
   ): URI2HKT[A] = {
-    val __obj = js.Dynamic.literal(Array = Array, FreeGroup = FreeGroup, IO = IO, Identity = Identity, NonEmptyArray = NonEmptyArray, Option = Option, Pair = Pair, StrMap = StrMap, Task = Task, Tree = Tree, Zipper = Zipper)
+    val __obj = js.Dynamic.literal(Array = Array, FreeGroup = FreeGroup, IO = IO, Identity = Identity, NonEmptyArray = NonEmptyArray, NonEmptyArray2v = NonEmptyArray2v, Option = Option, Pair = Pair, StrMap = StrMap, Task = Task, Tree = Tree, Zipper = Zipper)
   
     __obj.asInstanceOf[URI2HKT[A]]
   }

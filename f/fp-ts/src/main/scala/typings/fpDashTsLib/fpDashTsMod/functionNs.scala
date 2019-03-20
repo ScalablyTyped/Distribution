@@ -149,7 +149,9 @@ object functionNs extends js.Object {
     ij: js.Function1[/* i */ I, J]
   ): js.Function1[/* a */ A, J] = js.native
   def toString(x: js.Any): java.lang.String = js.native
-  def tuple[A, B](a: A, b: B): js.Tuple2[A, B] = js.native
+  def tuple[T /* <: fpDashTsLib.libArrayMod.Global.Array[_] */](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param t because its type T is not an array type */ t: T
+  ): T = js.native
   def tupleCurried[A](a: A): js.Function1[/* b */ js.Any, js.Tuple2[A, _]] = js.native
   def unsafeCoerce[A, B](a: A): B = js.native
 }

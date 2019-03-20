@@ -262,6 +262,16 @@ class QuestionPanelDynamicModel protected ()
     */
   /* InferMemberOverrides */
   override def getType(): java.lang.String = js.native
+  /**
+    * Goes to the next panel in the PanelDynamic
+    *
+    */
+  def goToNextPanel(): scala.Unit = js.native
+  /**
+    * Goes to the previous panel in the PanelDynamic
+    *
+    */
+  def goToPrevPanel(): scala.Unit = js.native
   /* InferMemberOverrides */
   override def locStrsChanged(): scala.Unit with js.Any = js.native
   def panelCountChangedCallback(): scala.Unit = js.native

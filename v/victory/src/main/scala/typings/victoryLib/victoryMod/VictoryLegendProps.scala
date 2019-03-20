@@ -79,7 +79,7 @@ trait VictoryLegendProps
     * gutters are between columns. When orientation is vertical, gutters
     * are the space between rows.
     */
-  var gutter: js.UndefOr[scala.Double] = js.undefined
+  var gutter: js.UndefOr[scala.Double | victoryLib.Anon_Left] = js.undefined
   /**
     * The itemsPerRow prop determines how many items to render in each row
     * of a horizontal legend, or in each column of a vertical legend. This
@@ -173,7 +173,7 @@ object VictoryLegendProps {
     ] = null,
     externalEventMutations: js.Array[_] = null,
     groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
-    gutter: scala.Int | scala.Double = null,
+    gutter: scala.Double | victoryLib.Anon_Left = null,
     height: scala.Int | scala.Double = null,
     itemsPerRow: scala.Int | scala.Double = null,
     label: java.lang.String | victoryLib.Anon_DataAnyString = null,

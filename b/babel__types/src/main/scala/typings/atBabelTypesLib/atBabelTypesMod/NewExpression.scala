@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - atBabelTypesLib.atBabelTypesMod._Node because Already inherited */ trait NewExpression
   extends Expression
      with BaseNode {
-  var arguments: js.Array[Expression | SpreadElement | JSXNamespacedName]
+  var arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder]
   var callee: Expression
   var optional: atBabelTypesLib.atBabelTypesLibNumbers.`true` | atBabelTypesLib.atBabelTypesLibNumbers.`false` | scala.Null
   var typeArguments: TypeParameterInstantiation | scala.Null
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
 object NewExpression {
   @scala.inline
   def apply(
-    arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     callee: Expression,
     `type`: atBabelTypesLib.atBabelTypesLibStrings.NewExpression,
     end: scala.Int | scala.Double = null,

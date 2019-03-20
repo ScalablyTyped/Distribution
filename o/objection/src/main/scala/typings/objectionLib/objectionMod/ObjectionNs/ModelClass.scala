@@ -71,7 +71,7 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   def query(trxOrKnex: Transaction): QueryBuilder[M, js.Array[M], js.Array[M]] = js.native
   def raw(sql: java.lang.String, bindings: (knexLib.Value | knexLib.knexMod.KnexNs.QueryBuilder)*): knexLib.knexMod.KnexNs.Raw = js.native
   def raw(sql: java.lang.String, bindings: js.Array[knexLib.Value | knexLib.knexMod.KnexNs.QueryBuilder]): knexLib.knexMod.KnexNs.Raw = js.native
-  def raw(sql: java.lang.String, bindings: knexLib.knexMod.ValueMap): knexLib.knexMod.KnexNs.Raw = js.native
+  def raw(sql: java.lang.String, bindings: knexLib.ValueMap): knexLib.knexMod.KnexNs.Raw = js.native
   def raw(value: knexLib.Value): knexLib.knexMod.KnexNs.Raw = js.native
   // This can only be used as a subquery so the result model type is irrelevant.
   def relatedQuery(relationName: java.lang.String): QueryBuilder[_, js.Array[_], js.Array[_]] = js.native

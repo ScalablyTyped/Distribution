@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babel-webpack-plugin"
-version := "0.1-dt-20180611Z-4306ac"
+version := "0.1-dt-20180611Z-542ae8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,12 +13,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel-traverse" % "6.25-dt-20190212Z-0d0f7f",
   "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190218Z-39373a",
   "org.scalablytyped" %%% "babylon" % "6.16-dt-20190212Z-54d1e2",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190318Z-f6d9fe",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
   "org.scalablytyped" %%% "source-map" % "0.7.3-169991",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-c57887",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-ffccaa",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190316Z-ea312d")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190316Z-c56cd1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

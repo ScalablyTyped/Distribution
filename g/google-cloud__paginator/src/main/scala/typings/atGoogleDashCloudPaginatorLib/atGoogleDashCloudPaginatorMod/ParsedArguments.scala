@@ -36,9 +36,11 @@ object ParsedArguments {
   @scala.inline
   def apply(
     allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    autoDestroy: js.UndefOr[scala.Boolean] = js.undefined,
     autoPaginate: js.UndefOr[scala.Boolean] = js.undefined,
     callback: js.Function = null,
     decodeStrings: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultEncoding: java.lang.String = null,
     destroy: js.ThisFunction2[
       /* this */ nodeLib.streamMod.internalNs.Readable, 
       /* error */ nodeLib.Error | scala.Null, 
@@ -57,6 +59,7 @@ object ParsedArguments {
       /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ] = null,
+    emitClose: js.UndefOr[scala.Boolean] = js.undefined,
     encoding: java.lang.String = null,
     `final`: js.ThisFunction1[
       (/* this */ nodeLib.streamMod.internalNs.Duplex) | (/* this */ nodeLib.streamMod.internalNs.Writable), 
@@ -129,12 +132,15 @@ object ParsedArguments {
   ): ParsedArguments = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
     if (!js.isUndefined(autoPaginate)) __obj.updateDynamic("autoPaginate")(autoPaginate)
     if (callback != null) __obj.updateDynamic("callback")(callback)
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)
+    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding)
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)
     if (destroy_DuplexOptions != null) __obj.updateDynamic("destroy")(destroy_DuplexOptions)
     if (destroy_TransformOptions != null) __obj.updateDynamic("destroy")(destroy_TransformOptions)
+    if (!js.isUndefined(emitClose)) __obj.updateDynamic("emitClose")(emitClose)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (`final` != null) __obj.updateDynamic("final")(`final`)
     if (final_TransformOptions != null) __obj.updateDynamic("final")(final_TransformOptions)

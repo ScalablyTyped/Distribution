@@ -16,6 +16,7 @@ trait ReadableStreamBufferOptions
 object ReadableStreamBufferOptions {
   @scala.inline
   def apply(
+    autoDestroy: js.UndefOr[scala.Boolean] = js.undefined,
     chunkSize: scala.Int | scala.Double = null,
     destroy: js.ThisFunction2[
       /* this */ nodeLib.streamMod.internalNs.Readable, 
@@ -36,6 +37,7 @@ object ReadableStreamBufferOptions {
     ] = null
   ): ReadableStreamBufferOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
     if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)

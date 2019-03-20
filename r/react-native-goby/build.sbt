@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "react-native-goby"
-version := "0.0.5-0399d7"
+version := "0.0.5-6f0a04"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.6.3-29f798",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-cd72cc",
-  "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20190221Z-2a7bae",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-16ba97",
+  "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20190221Z-d872fc",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-0a2b2c",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190318Z-f6d9fe",
-  "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-00c7c4",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
+  "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-615148",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190312Z-6f0f1a",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190318Z-7d3d3e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190318Z-7533ec",
   "org.scalablytyped" %%% "rx" % "4.1-dt-20180214Z-afef54",
   "org.scalablytyped" %%% "rx-core" % "4.0-dt-20180214Z-d2f95e",
   "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180214Z-2a1bd5",
@@ -29,7 +29,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20180214Z-bd0f41",
   "org.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180214Z-0ec9a6",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-37aaaf",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-f6b3a6",
   "org.scalablytyped" %%% "xmlbuilder" % "0.0-unknown-dt-20180925Z-7896d1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

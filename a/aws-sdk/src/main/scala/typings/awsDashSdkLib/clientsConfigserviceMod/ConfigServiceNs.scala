@@ -1244,6 +1244,13 @@ object ConfigServiceNs extends js.Object {
     var FailureMessage: js.UndefOr[String] = js.undefined
   }
   
+  trait FieldInfo extends js.Object {
+    /**
+      * Name of the field.
+      */
+    var Name: js.UndefOr[FieldName] = js.undefined
+  }
+  
   trait GetAggregateComplianceDetailsByConfigRuleRequest extends js.Object {
     /**
       * The 12-digit account ID of the source account.
@@ -1783,6 +1790,13 @@ object ConfigServiceNs extends js.Object {
     var RetentionConfiguration: js.UndefOr[RetentionConfiguration] = js.undefined
   }
   
+  trait QueryInfo extends js.Object {
+    /**
+      * Returns a FieldInfo object.
+      */
+    var SelectFields: js.UndefOr[FieldInfoList] = js.undefined
+  }
+  
   trait RecordingGroup extends js.Object {
     /**
       * Specifies whether AWS Config records configuration changes for every supported type of regional resource. If you set this option to true, when AWS Config adds support for a new type of regional resource, it starts recording resources of that type automatically. If you set this option to true, you cannot enumerate a list of resourceTypes.
@@ -2011,6 +2025,36 @@ object ConfigServiceNs extends js.Object {
       * The tag value applied to only those AWS resources that you want to trigger an evaluation for the rule. If you specify a value for TagValue, you must also specify a value for TagKey.
       */
     var TagValue: js.UndefOr[StringWithCharLimit256] = js.undefined
+  }
+  
+  trait SelectResourceConfigRequest extends js.Object {
+    /**
+      * The SQL query SELECT command.
+      */
+    var Expression: awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs.Expression
+    /**
+      * The maximum number of query results returned on each page. 
+      */
+    var Limit: js.UndefOr[Limit] = js.undefined
+    /**
+      * The nextToken string returned in a previous request that you use to request the next page of results in a paginated response. 
+      */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  trait SelectResourceConfigResponse extends js.Object {
+    /**
+      * The nextToken string returned in a previous request that you use to request the next page of results in a paginated response. 
+      */
+    var NextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+      * Returns the QueryInfo object.
+      */
+    var QueryInfo: js.UndefOr[QueryInfo] = js.undefined
+    /**
+      * Returns the results for the SQL query.
+      */
+    var Results: js.UndefOr[Results] = js.undefined
   }
   
   trait Source extends js.Object {
@@ -2499,7 +2543,7 @@ object ConfigServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeConfigRulesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *  Returns status information for sources within an aggregator. The status includes information about the last time AWS Config verified authorization between the source account and an aggregator account. In case of a failure, the status contains the related error code or message. 
+      * Returns status information for sources within an aggregator. The status includes information about the last time AWS Config verified authorization between the source account and an aggregator account. In case of a failure, the status contains the related error code or message. 
       */
     def describeConfigurationAggregatorSourcesStatus(): awsDashSdkLib.libRequestMod.Request[
         DescribeConfigurationAggregatorSourcesStatusResponse, 
@@ -2516,7 +2560,7 @@ object ConfigServiceNs extends js.Object {
         awsDashSdkLib.libErrorMod.AWSError
       ] = js.native
     /**
-      *  Returns status information for sources within an aggregator. The status includes information about the last time AWS Config verified authorization between the source account and an aggregator account. In case of a failure, the status contains the related error code or message. 
+      * Returns status information for sources within an aggregator. The status includes information about the last time AWS Config verified authorization between the source account and an aggregator account. In case of a failure, the status contains the related error code or message. 
       */
     def describeConfigurationAggregatorSourcesStatus(params: DescribeConfigurationAggregatorSourcesStatusRequest): awsDashSdkLib.libRequestMod.Request[
         DescribeConfigurationAggregatorSourcesStatusResponse, 
@@ -3212,6 +3256,29 @@ object ConfigServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutRetentionConfigurationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Accepts a structured query language (SQL) SELECT command, performs the corresponding search, and returns resource configurations matching the properties. For more information about query components, see the  Query Components  section in the AWS Config Developer Guide.
+      */
+    def selectResourceConfig(): awsDashSdkLib.libRequestMod.Request[SelectResourceConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def selectResourceConfig(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ SelectResourceConfigResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[SelectResourceConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Accepts a structured query language (SQL) SELECT command, performs the corresponding search, and returns resource configurations matching the properties. For more information about query components, see the  Query Components  section in the AWS Config Developer Guide.
+      */
+    def selectResourceConfig(params: SelectResourceConfigRequest): awsDashSdkLib.libRequestMod.Request[SelectResourceConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def selectResourceConfig(
+      params: SelectResourceConfigRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ SelectResourceConfigResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[SelectResourceConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Runs an on-demand evaluation for the specified AWS Config rules against the last known configuration state of the resources. Use StartConfigRulesEvaluation when you want to test that a rule you updated is working as expected. StartConfigRulesEvaluation does not re-record the latest configuration state for your resources. It re-runs an evaluation against the last known state of your resources.  You can specify up to 25 AWS Config rules per request.  An existing StartConfigRulesEvaluation call for the specified rules must complete before you can call the API again. If you chose to have AWS Config stream to an Amazon SNS topic, you will receive a ConfigRuleEvaluationStarted notification when the evaluation starts.  You don't need to call the StartConfigRulesEvaluation API to run an evaluation for a new rule. When you create a rule, AWS Config evaluates your resources against the rule automatically.   The StartConfigRulesEvaluation API is useful if you want to run on-demand evaluations, such as the following example:   You have a custom rule that evaluates your IAM resources every 24 hours.   You update your Lambda function to add additional conditions to your rule.   Instead of waiting for the next periodic evaluation, you call the StartConfigRulesEvaluation API.   AWS Config invokes your Lambda function and evaluates your IAM resources.   Your custom rule will still run periodic evaluations every 24 hours.  
       */
     def startConfigRulesEvaluation(): awsDashSdkLib.libRequestMod.Request[StartConfigRulesEvaluationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3424,7 +3491,10 @@ object ConfigServiceNs extends js.Object {
   type EvaluationResults = js.Array[EvaluationResult]
   type Evaluations = js.Array[Evaluation]
   type EventSource = awsDashSdkLib.awsDashSdkLibStrings.awsDOTconfig | java.lang.String
+  type Expression = java.lang.String
   type FailedRemediationBatches = js.Array[FailedRemediationBatch]
+  type FieldInfoList = js.Array[FieldInfo]
+  type FieldName = java.lang.String
   type GroupByAPILimit = scala.Double
   type GroupedResourceCountList = js.Array[GroupedResourceCount]
   type IncludeGlobalResourceTypes = scala.Boolean
@@ -3466,6 +3536,7 @@ object ConfigServiceNs extends js.Object {
   type ResourceTypeList = js.Array[ResourceType]
   type ResourceTypes = js.Array[StringWithCharLimit256]
   type ResourceValueType = awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_ID | java.lang.String
+  type Results = js.Array[String]
   type RetentionConfigurationList = js.Array[RetentionConfiguration]
   type RetentionConfigurationName = java.lang.String
   type RetentionConfigurationNameList = js.Array[RetentionConfigurationName]

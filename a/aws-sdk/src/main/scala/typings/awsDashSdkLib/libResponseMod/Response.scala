@@ -41,6 +41,7 @@ class Response[D, E] () extends js.Object {
   /**
   		 * Creates a new request for the next page of response data, calling the callback with the page data if a callback is provided.
   		 */
+  def nextPage(): (awsDashSdkLib.libRequestMod.Request[D, E]) | scala.Unit = js.native
   def nextPage(callback: js.Function2[/* err */ E, /* data */ D, scala.Unit]): (awsDashSdkLib.libRequestMod.Request[D, E]) | scala.Unit = js.native
 }
 

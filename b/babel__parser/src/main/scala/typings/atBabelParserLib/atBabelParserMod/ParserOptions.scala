@@ -23,6 +23,13 @@ trait ParserOptions extends js.Object {
   var allowReturnOutsideFunction: js.UndefOr[scala.Boolean] = js.undefined
   var allowSuperOutsideMethod: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * By default, the parser adds information about parentheses by setting
+    * `extra.parenthesized` to `true` as needed.
+    * When this option is `true` the parser creates `ParenthesizedExpression`
+    * AST nodes instead of using the `extra` property.
+    */
+  var createParenthesizedExpressions: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Array containing the plugins that you want to enable.
     */
   var plugins: js.UndefOr[js.Array[ParserPlugin]] = js.undefined
@@ -69,6 +76,7 @@ object ParserOptions {
     allowImportExportEverywhere: js.UndefOr[scala.Boolean] = js.undefined,
     allowReturnOutsideFunction: js.UndefOr[scala.Boolean] = js.undefined,
     allowSuperOutsideMethod: js.UndefOr[scala.Boolean] = js.undefined,
+    createParenthesizedExpressions: js.UndefOr[scala.Boolean] = js.undefined,
     plugins: js.Array[ParserPlugin] = null,
     ranges: js.UndefOr[scala.Boolean] = js.undefined,
     sourceFilename: java.lang.String = null,
@@ -82,6 +90,7 @@ object ParserOptions {
     if (!js.isUndefined(allowImportExportEverywhere)) __obj.updateDynamic("allowImportExportEverywhere")(allowImportExportEverywhere)
     if (!js.isUndefined(allowReturnOutsideFunction)) __obj.updateDynamic("allowReturnOutsideFunction")(allowReturnOutsideFunction)
     if (!js.isUndefined(allowSuperOutsideMethod)) __obj.updateDynamic("allowSuperOutsideMethod")(allowSuperOutsideMethod)
+    if (!js.isUndefined(createParenthesizedExpressions)) __obj.updateDynamic("createParenthesizedExpressions")(createParenthesizedExpressions)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
     if (!js.isUndefined(ranges)) __obj.updateDynamic("ranges")(ranges)
     if (sourceFilename != null) __obj.updateDynamic("sourceFilename")(sourceFilename)

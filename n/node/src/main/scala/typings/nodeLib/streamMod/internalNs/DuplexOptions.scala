@@ -6,9 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- nodeLib.streamMod.internalNs.WritableOptions because var conflicts: destroy, highWaterMark, objectMode. Inlined decodeStrings, write, writev, `final` */ trait DuplexOptions extends ReadableOptions {
+- nodeLib.streamMod.internalNs.WritableOptions because var conflicts: autoDestroy, destroy, highWaterMark, objectMode. Inlined decodeStrings, defaultEncoding, emitClose, write, writev, `final` */ trait DuplexOptions extends ReadableOptions {
   var allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined
   var decodeStrings: js.UndefOr[scala.Boolean] = js.undefined
+  var defaultEncoding: js.UndefOr[java.lang.String] = js.undefined
   @JSName("destroy")
   var destroy_DuplexOptions: js.UndefOr[
     js.ThisFunction2[
@@ -18,6 +19,7 @@ import scala.scalajs.js.annotation._
       scala.Unit
     ]
   ] = js.undefined
+  var emitClose: js.UndefOr[scala.Boolean] = js.undefined
   var `final`: js.UndefOr[
     js.ThisFunction1[
       (/* this */ Duplex) | (/* this */ Writable), 
@@ -52,13 +54,16 @@ object DuplexOptions {
   @scala.inline
   def apply(
     allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    autoDestroy: js.UndefOr[scala.Boolean] = js.undefined,
     decodeStrings: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultEncoding: java.lang.String = null,
     destroy: js.ThisFunction2[
       /* this */ Duplex, 
       /* error */ nodeLib.Error | scala.Null, 
       /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ] = null,
+    emitClose: js.UndefOr[scala.Boolean] = js.undefined,
     encoding: java.lang.String = null,
     `final`: js.ThisFunction1[
       /* this */ Duplex, 
@@ -86,8 +91,11 @@ object DuplexOptions {
   ): DuplexOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)
+    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding)
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(emitClose)) __obj.updateDynamic("emitClose")(emitClose)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (`final` != null) __obj.updateDynamic("final")(`final`)
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])

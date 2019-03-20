@@ -7847,6 +7847,18 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsS3Mod.S3Ns._InventoryOptionalField
   
   @js.native
+  sealed trait EndpointAccessUpdate
+    extends awsDashSdkLib.clientsEksMod.EKSNs._UpdateType
+  
+  @js.native
+  sealed trait EndpointPrivateAccess
+    extends awsDashSdkLib.clientsEksMod.EKSNs._UpdateParamType
+  
+  @js.native
+  sealed trait EndpointPublicAccess
+    extends awsDashSdkLib.clientsEksMod.EKSNs._UpdateParamType
+  
+  @js.native
   sealed trait EniLimitReached
     extends awsDashSdkLib.clientsEksMod.EKSNs._ErrorCode
   
@@ -21321,7 +21333,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._ProductViewSortBy
   
   @js.native
-  sealed trait VersionUpdate extends js.Object
+  sealed trait VersionUpdate
+    extends awsDashSdkLib.clientsEksMod.EKSNs._UpdateType
   
   @js.native
   sealed trait VersionsPerPolicyQuota
@@ -30937,6 +30950,12 @@ object awsDashSdkLibStrings {
   def Encrypt: Encrypt = "Encrypt".asInstanceOf[Encrypt]
   @scala.inline
   def EncryptionStatus: EncryptionStatus = "EncryptionStatus".asInstanceOf[EncryptionStatus]
+  @scala.inline
+  def EndpointAccessUpdate: EndpointAccessUpdate = "EndpointAccessUpdate".asInstanceOf[EndpointAccessUpdate]
+  @scala.inline
+  def EndpointPrivateAccess: EndpointPrivateAccess = "EndpointPrivateAccess".asInstanceOf[EndpointPrivateAccess]
+  @scala.inline
+  def EndpointPublicAccess: EndpointPublicAccess = "EndpointPublicAccess".asInstanceOf[EndpointPublicAccess]
   @scala.inline
   def EniLimitReached: EniLimitReached = "EniLimitReached".asInstanceOf[EniLimitReached]
   @scala.inline

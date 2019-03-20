@@ -11,7 +11,7 @@ object ^ extends js.Object {
   var job: (js.Function9[
     /* cronTime */ java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment, 
     /* onTick */ js.Function0[scala.Unit], 
-    /* onComplete */ js.UndefOr[js.Function0[scala.Unit]], 
+    /* onComplete */ js.UndefOr[CronCommand], 
     /* start */ js.UndefOr[scala.Boolean], 
     /* timeZone */ js.UndefOr[java.lang.String], 
     /* context */ js.UndefOr[js.Any], 

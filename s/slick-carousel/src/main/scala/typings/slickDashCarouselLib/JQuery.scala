@@ -23,7 +23,7 @@ trait JQuery extends js.Object {
     * @param methodName The name of the method
     */
   @JSName("slick")
-  def slick_getSlick(methodName: slickDashCarouselLib.slickDashCarouselLibStrings.getSlick): js.Object = js.native
+  def slick_getSlick(methodName: slickDashCarouselLib.slickDashCarouselLibStrings.getSlick): JQuerySlick = js.native
   /**
     * Add a slide. If an index is provided, will add at that index, or before if addBefore is set. If no index is provided,
     * add to the end or to the beginning if addBefore is set. Accepts HTML String || Object

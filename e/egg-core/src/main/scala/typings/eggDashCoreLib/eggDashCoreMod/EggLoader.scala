@@ -18,8 +18,8 @@ class EggLoader[T, Config] protected () extends js.Object {
     * @since 1.0.0
     */
   def this(options: EggLoaderOptions) = this()
-  var ContextLoader: org.scalablytyped.runtime.Instantiable1[/* options */ ContextLoaderOption, ContextLoader] = js.native
-  var FileLoader: org.scalablytyped.runtime.Instantiable1[/* options */ FileLoaderOption, FileLoader] = js.native
+  var ContextLoader: eggDashCoreLib.eggDashCoreMod.ContextLoader = js.native
+  var FileLoader: eggDashCoreLib.eggDashCoreMod.FileLoader = js.native
   var app: T = js.native
   var appInfo: EggAppInfo = js.native
   var config: Config = js.native

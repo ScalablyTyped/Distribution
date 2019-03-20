@@ -1,6 +1,6 @@
 ```
 // Type definitions for restify 7.2
-// Project: https://github.com/restify/node-restify, http://restifyjs.com
+// Project: https://github.com/restify/node-restify, http://restify.com
 // Definitions by: Bret Little <https://github.com/blittle>
 //                 Steve Hipwell <https://github.com/stevehipwell>
 //                 Leandro Almeida <https://github.com/leanazulyoro>

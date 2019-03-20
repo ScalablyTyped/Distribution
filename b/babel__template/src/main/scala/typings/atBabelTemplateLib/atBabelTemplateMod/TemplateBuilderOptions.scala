@@ -29,6 +29,7 @@ object TemplateBuilderOptions {
     allowImportExportEverywhere: js.UndefOr[scala.Boolean] = js.undefined,
     allowReturnOutsideFunction: js.UndefOr[scala.Boolean] = js.undefined,
     allowSuperOutsideMethod: js.UndefOr[scala.Boolean] = js.undefined,
+    createParenthesizedExpressions: js.UndefOr[scala.Boolean] = js.undefined,
     placeholderPattern: stdLib.RegExp | atBabelTemplateLib.atBabelTemplateLibNumbers.`false` = null,
     placeholderWhitelist: stdLib.Set[java.lang.String] = null,
     plugins: js.Array[atBabelParserLib.atBabelParserMod.ParserPlugin] = null,
@@ -45,6 +46,7 @@ object TemplateBuilderOptions {
     if (!js.isUndefined(allowImportExportEverywhere)) __obj.updateDynamic("allowImportExportEverywhere")(allowImportExportEverywhere)
     if (!js.isUndefined(allowReturnOutsideFunction)) __obj.updateDynamic("allowReturnOutsideFunction")(allowReturnOutsideFunction)
     if (!js.isUndefined(allowSuperOutsideMethod)) __obj.updateDynamic("allowSuperOutsideMethod")(allowSuperOutsideMethod)
+    if (!js.isUndefined(createParenthesizedExpressions)) __obj.updateDynamic("createParenthesizedExpressions")(createParenthesizedExpressions)
     if (placeholderPattern != null) __obj.updateDynamic("placeholderPattern")(placeholderPattern.asInstanceOf[js.Any])
     if (placeholderWhitelist != null) __obj.updateDynamic("placeholderWhitelist")(placeholderWhitelist)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)

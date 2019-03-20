@@ -21,6 +21,7 @@ trait Options
 object Options {
   @scala.inline
   def apply(
+    autoDestroy: js.UndefOr[scala.Boolean] = js.undefined,
     depthLimit: scala.Int | scala.Double = null,
     destroy: js.ThisFunction2[
       /* this */ nodeLib.streamMod.internalNs.Readable, 
@@ -43,6 +44,7 @@ object Options {
     ] = null
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
     if (depthLimit != null) __obj.updateDynamic("depthLimit")(depthLimit.asInstanceOf[js.Any])
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)

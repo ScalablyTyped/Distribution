@@ -12,6 +12,10 @@ trait WrappedObject[T] extends js.Object {
   def assign(path: Path, source: T): WrappedObject[T] = js.native
   def del(): WrappedObject[T] = js.native
   def del(path: Path): WrappedObject[T] = js.native
+  def insert(): WrappedObject[T] = js.native
+  def insert(path: Path): WrappedObject[T] = js.native
+  def insert(path: Path, value: js.Any): WrappedObject[T] = js.native
+  def insert(path: Path, value: js.Any, index: scala.Double): WrappedObject[T] = js.native
   def push(): WrappedObject[T] = js.native
   def push(path: Path): WrappedObject[T] = js.native
   def push(path: Path, value: js.Any): WrappedObject[T] = js.native

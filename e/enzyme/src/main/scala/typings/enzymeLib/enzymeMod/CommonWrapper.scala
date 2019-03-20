@@ -111,6 +111,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
     * Returns whether or not the current node has a className prop including the passed in class name.
     */
   def hasClass(className: java.lang.String): scala.Boolean = js.native
+  def hasClass(className: stdLib.RegExp): scala.Boolean = js.native
   /**
     * Returns a string of the rendered HTML markup of the current render tree.
     *

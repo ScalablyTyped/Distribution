@@ -106,7 +106,7 @@ trait NgModule extends js.Object {
     *
     * ### Example
     *
-    * The following example allows MainModule to use anthing exported by
+    * The following example allows MainModule to use anything exported by
     * `CommonModule`:
     *
     * ```javascript

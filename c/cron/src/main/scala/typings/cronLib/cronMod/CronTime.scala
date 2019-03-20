@@ -30,13 +30,17 @@ class CronTime protected () extends js.Object {
     * Get the number of milliseconds in the future at which to fire our callbacks.
     */
   def getTimeout(): scala.Double = js.native
-  def sendAt(): js.Array[momentLib.momentMod.momentNs.Moment] = js.native
-  def sendAt(i: scala.Double): js.Array[momentLib.momentMod.momentNs.Moment] = js.native
+  /**
+    * Tells you when ```CronTime``` will be run.
+    */
+  def sendAt(): momentLib.momentMod.momentNs.Moment = js.native
+  def sendAt(i: scala.Double): momentLib.momentMod.momentNs.Moment | js.Array[momentLib.momentMod.momentNs.Moment] = js.native
   /**
     * Tells you when ```CronTime``` will be run.
     * @param i Indicate which turn of run after now. If not given return next run time.
+    * @returns A `Moment` when the source passed in the constructor is a `Date` or a `Moment` and an array of `Moment` when the source is a string
     */
   @JSName("sendAt")
-  def sendAt_Moment(): momentLib.momentMod.momentNs.Moment = js.native
+  def `sendAt_<union>`(): momentLib.momentMod.momentNs.Moment | js.Array[momentLib.momentMod.momentNs.Moment] = js.native
 }
 

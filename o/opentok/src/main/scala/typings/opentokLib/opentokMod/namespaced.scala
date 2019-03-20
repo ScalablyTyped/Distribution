@@ -13,21 +13,24 @@ class namespaced protected () extends OpenTok {
   override def createSession(
     options: opentokLib.opentokMod.OpenTokNs.SessionOptions,
     callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* session */ opentokLib.opentokMod.OpenTokNs.Session, 
+      /* error */ stdLib.Error | scala.Null, 
+      /* session */ js.UndefOr[opentokLib.opentokMod.OpenTokNs.Session], 
       scala.Unit
     ]
   ): scala.Unit = js.native
   /* CompleteClass */
-  override def deleteArchive(archiveId: java.lang.String, callback: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  override def deleteArchive(
+    archiveId: java.lang.String,
+    callback: js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
   /* CompleteClass */
   override def generateToken(sessionId: java.lang.String, options: opentokLib.opentokMod.OpenTokNs.TokenOptions): opentokLib.opentokMod.OpenTokNs.Token = js.native
   /* CompleteClass */
   override def getArchive(
     archiveId: java.lang.String,
     callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* archive */ opentokLib.opentokMod.OpenTokNs.Archive, 
+      /* error */ stdLib.Error | scala.Null, 
+      /* archive */ js.UndefOr[opentokLib.opentokMod.OpenTokNs.Archive], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -35,9 +38,9 @@ class namespaced protected () extends OpenTok {
   override def listArchives(
     options: opentokLib.opentokMod.OpenTokNs.ListArchivesOptions,
     callback: js.Function3[
-      /* err */ stdLib.Error, 
-      /* archives */ js.Array[opentokLib.opentokMod.OpenTokNs.Archive], 
-      /* totalCount */ scala.Double, 
+      /* error */ stdLib.Error | scala.Null, 
+      /* archives */ js.UndefOr[js.Array[opentokLib.opentokMod.OpenTokNs.Archive]], 
+      /* totalCount */ js.UndefOr[scala.Double], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -46,8 +49,8 @@ class namespaced protected () extends OpenTok {
     sessionId: java.lang.String,
     options: opentokLib.opentokMod.OpenTokNs.ArchiveOptions,
     callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* archive */ opentokLib.opentokMod.OpenTokNs.Archive, 
+      /* error */ stdLib.Error | scala.Null, 
+      /* archive */ js.UndefOr[opentokLib.opentokMod.OpenTokNs.Archive], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -55,8 +58,8 @@ class namespaced protected () extends OpenTok {
   override def stopArchive(
     archiveId: java.lang.String,
     callback: js.Function2[
-      /* err */ stdLib.Error, 
-      /* archive */ opentokLib.opentokMod.OpenTokNs.Archive, 
+      /* error */ stdLib.Error | scala.Null, 
+      /* archive */ js.UndefOr[opentokLib.opentokMod.OpenTokNs.Archive], 
       scala.Unit
     ]
   ): scala.Unit = js.native

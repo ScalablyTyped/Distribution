@@ -26,7 +26,13 @@ object setoidNs extends js.Object {
   {[ K in keyof O ]: fp-ts.fp-ts/lib/Setoid.Setoid<O[K]>}
     */ fpDashTsLib.fpDashTsLibStrings.getStructSetoid with O
   ): fpDashTsLib.libSetoidMod.Setoid[O] = js.native
-  def getTupleSetoid[A, B](SA: fpDashTsLib.libSetoidMod.Setoid[A], SB: fpDashTsLib.libSetoidMod.Setoid[B]): fpDashTsLib.libSetoidMod.Setoid[js.Tuple2[A, B]] = js.native
+  def getTupleSetoid[T /* <: fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libSetoidMod.Setoid[_]] */](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param setoids because its type T is not an array type */ setoids: T
+  ): fpDashTsLib.libSetoidMod.Setoid[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: any}
+    */ fpDashTsLib.fpDashTsLibStrings.getTupleSetoid with js.Any
+  ] = js.native
   def strictEqual[A](a: A, b: A): scala.Boolean = js.native
 }
 

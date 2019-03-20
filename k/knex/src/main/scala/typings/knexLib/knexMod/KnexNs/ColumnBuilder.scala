@@ -18,6 +18,7 @@ trait ColumnBuilder extends js.Object {
   def onUpdate(command: java.lang.String): ColumnBuilder = js.native
   def primary(): ColumnBuilder = js.native
   def primary(constraintName: java.lang.String): ColumnBuilder = js.native
+  def queryContext(context: js.Any): ColumnBuilder = js.native
   def references(columnName: java.lang.String): ReferencingColumnBuilder = js.native
   def unique(): ColumnBuilder = js.native
   def unique(indexName: java.lang.String): ColumnBuilder = js.native

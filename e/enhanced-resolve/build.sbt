@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "enhanced-resolve"
-version := "v3.0.0-dt-20180712Z-89864e"
+version := "v3.0.0-dt-20180712Z-7beea3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190318Z-f6d9fe",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-c57887")
 publishArtifact in packageDoc := false

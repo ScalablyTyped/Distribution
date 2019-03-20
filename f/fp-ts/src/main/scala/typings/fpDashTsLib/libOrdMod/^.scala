@@ -19,7 +19,13 @@ object ^ extends js.Object {
   def getDualOrd[A](O: Ord[A]): Ord[A] = js.native
   def getProductOrd[A, B](OA: Ord[A], OB: Ord[B]): Ord[js.Tuple2[A, B]] = js.native
   def getSemigroup[A](): fpDashTsLib.libSemigroupMod.Semigroup[Ord[A]] = js.native
-  def getTupleOrd[A, B](OA: Ord[A], OB: Ord[B]): Ord[js.Tuple2[A, B]] = js.native
+  def getTupleOrd[T /* <: fpDashTsLib.libArrayMod.Global.Array[Ord[_]] */](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param ords because its type T is not an array type */ ords: T
+  ): Ord[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: any}
+    */ fpDashTsLib.fpDashTsLibStrings.getTupleOrd with js.Any
+  ] = js.native
   def greaterThan[A](O: Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
   def greaterThanOrEq[A](O: Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
   def lessThan[A](O: Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native

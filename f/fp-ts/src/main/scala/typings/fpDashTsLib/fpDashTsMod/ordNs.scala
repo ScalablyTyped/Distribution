@@ -19,7 +19,13 @@ object ordNs extends js.Object {
   def getDualOrd[A](O: fpDashTsLib.libOrdMod.Ord[A]): fpDashTsLib.libOrdMod.Ord[A] = js.native
   def getProductOrd[A, B](OA: fpDashTsLib.libOrdMod.Ord[A], OB: fpDashTsLib.libOrdMod.Ord[B]): fpDashTsLib.libOrdMod.Ord[js.Tuple2[A, B]] = js.native
   def getSemigroup[A](): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libOrdMod.Ord[A]] = js.native
-  def getTupleOrd[A, B](OA: fpDashTsLib.libOrdMod.Ord[A], OB: fpDashTsLib.libOrdMod.Ord[B]): fpDashTsLib.libOrdMod.Ord[js.Tuple2[A, B]] = js.native
+  def getTupleOrd[T /* <: fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libOrdMod.Ord[_]] */](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param ords because its type T is not an array type */ ords: T
+  ): fpDashTsLib.libOrdMod.Ord[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: any}
+    */ fpDashTsLib.fpDashTsLibStrings.getTupleOrd with js.Any
+  ] = js.native
   def greaterThan[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
   def greaterThanOrEq[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native
   def lessThan[A](O: fpDashTsLib.libOrdMod.Ord[A]): js.Function2[/* x */ A, /* y */ A, scala.Boolean] = js.native

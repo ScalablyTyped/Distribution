@@ -76,10 +76,34 @@ object atBabelCoreLibStrings {
   sealed trait `??` extends js.Object
   
   @js.native
+  sealed trait BlockStatement extends js.Object
+  
+  @js.native
+  sealed trait ClassBody extends js.Object
+  
+  @js.native
   sealed trait CommonJS extends js.Object
   
   @js.native
+  sealed trait Declaration extends js.Object
+  
+  @js.native
   sealed trait ES extends js.Object
+  
+  @js.native
+  sealed trait Expression extends js.Object
+  
+  @js.native
+  sealed trait Identifier extends js.Object
+  
+  @js.native
+  sealed trait Pattern extends js.Object
+  
+  @js.native
+  sealed trait Statement extends js.Object
+  
+  @js.native
+  sealed trait StringLiteral extends js.Object
   
   @js.native
   sealed trait `_backtick^_backtick` extends js.Object
@@ -242,9 +266,25 @@ object atBabelCoreLibStrings {
   @scala.inline
   def `??`: `??` = "??".asInstanceOf[`??`]
   @scala.inline
+  def BlockStatement: BlockStatement = "BlockStatement".asInstanceOf[BlockStatement]
+  @scala.inline
+  def ClassBody: ClassBody = "ClassBody".asInstanceOf[ClassBody]
+  @scala.inline
   def CommonJS: CommonJS = "CommonJS".asInstanceOf[CommonJS]
   @scala.inline
+  def Declaration: Declaration = "Declaration".asInstanceOf[Declaration]
+  @scala.inline
   def ES: ES = "ES".asInstanceOf[ES]
+  @scala.inline
+  def Expression: Expression = "Expression".asInstanceOf[Expression]
+  @scala.inline
+  def Identifier: Identifier = "Identifier".asInstanceOf[Identifier]
+  @scala.inline
+  def Pattern: Pattern = "Pattern".asInstanceOf[Pattern]
+  @scala.inline
+  def Statement: Statement = "Statement".asInstanceOf[Statement]
+  @scala.inline
+  def StringLiteral: StringLiteral = "StringLiteral".asInstanceOf[StringLiteral]
   @scala.inline
   def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline

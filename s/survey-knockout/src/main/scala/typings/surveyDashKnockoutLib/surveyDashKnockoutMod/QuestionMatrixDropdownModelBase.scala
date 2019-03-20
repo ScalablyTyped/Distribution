@@ -49,10 +49,6 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
     * The default options caption for dropdown cell type.
     */
   var optionsCaption: java.lang.String = js.native
-  /**
-    * Set this property to false, to hide table header. The default value is true.
-    */
-  var showHeader: scala.Boolean = js.native
   def addColumn(name: java.lang.String): MatrixDropdownColumn = js.native
   def addColumn(name: java.lang.String, title: java.lang.String): MatrixDropdownColumn = js.native
   def columnLayoutChangedCallback(): scala.Unit = js.native

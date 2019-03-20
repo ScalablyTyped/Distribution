@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def anyTypeAnnotation(): AnyTypeAnnotation = js.native
+  def argumentPlaceholder(): ArgumentPlaceholder = js.native
   def arrayExpression(): ArrayExpression = js.native
   def arrayExpression(elements: js.Array[scala.Null | Expression | SpreadElement]): ArrayExpression = js.native
   def arrayPattern(elements: js.Array[PatternLike]): ArrayPattern = js.native
@@ -87,73 +88,76 @@ object ^ extends js.Object {
   def booleanTypeAnnotation(): BooleanTypeAnnotation = js.native
   def breakStatement(): BreakStatement = js.native
   def breakStatement(label: Identifier): BreakStatement = js.native
-  def callExpression(callee: Expression, _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement]): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement]
+  ): CallExpression = js.native
+  def callExpression(
+    callee: Expression,
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
     typeArguments: TypeParameterInstantiation
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
     typeArguments: TypeParameterInstantiation,
     typeParameters: TSTypeParameterInstantiation
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
     typeArguments: scala.Null,
     typeParameters: TSTypeParameterInstantiation
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
     typeArguments: TypeParameterInstantiation
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
     typeArguments: TypeParameterInstantiation,
     typeParameters: TSTypeParameterInstantiation
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
     typeArguments: scala.Null,
     typeParameters: TSTypeParameterInstantiation
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: scala.Null,
     typeArguments: TypeParameterInstantiation
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: scala.Null,
     typeArguments: TypeParameterInstantiation,
     typeParameters: TSTypeParameterInstantiation
   ): CallExpression = js.native
   def callExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: scala.Null,
     typeArguments: scala.Null,
     typeParameters: TSTypeParameterInstantiation
@@ -744,6 +748,11 @@ object ^ extends js.Object {
   def isAnyTypeAnnotation(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.AnyTypeAnnotation */ scala.Boolean = js.native
   def isAnyTypeAnnotation(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.AnyTypeAnnotation */ scala.Boolean = js.native
   def isAnyTypeAnnotation(node: scala.Null, opts: js.Object): /* is @babel/types.@babel/types.AnyTypeAnnotation */ scala.Boolean = js.native
+  def isArgumentPlaceholder(): /* is @babel/types.@babel/types.ArgumentPlaceholder */ scala.Boolean = js.native
+  def isArgumentPlaceholder(node: js.Object): /* is @babel/types.@babel/types.ArgumentPlaceholder */ scala.Boolean = js.native
+  def isArgumentPlaceholder(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.ArgumentPlaceholder */ scala.Boolean = js.native
+  def isArgumentPlaceholder(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.ArgumentPlaceholder */ scala.Boolean = js.native
+  def isArgumentPlaceholder(node: scala.Null, opts: js.Object): /* is @babel/types.@babel/types.ArgumentPlaceholder */ scala.Boolean = js.native
   def isArrayExpression(): /* is @babel/types.@babel/types.ArrayExpression */ scala.Boolean = js.native
   def isArrayExpression(node: js.Object): /* is @babel/types.@babel/types.ArrayExpression */ scala.Boolean = js.native
   def isArrayExpression(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.ArrayExpression */ scala.Boolean = js.native
@@ -1504,6 +1513,11 @@ object ^ extends js.Object {
   def isPipelineTopicExpression(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.PipelineTopicExpression */ scala.Boolean = js.native
   def isPipelineTopicExpression(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.PipelineTopicExpression */ scala.Boolean = js.native
   def isPipelineTopicExpression(node: scala.Null, opts: js.Object): /* is @babel/types.@babel/types.PipelineTopicExpression */ scala.Boolean = js.native
+  def isPlaceholder(): /* is @babel/types.@babel/types.Placeholder */ scala.Boolean = js.native
+  def isPlaceholder(node: js.Object): /* is @babel/types.@babel/types.Placeholder */ scala.Boolean = js.native
+  def isPlaceholder(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Placeholder */ scala.Boolean = js.native
+  def isPlaceholder(node: js.UndefOr[scala.Nothing], opts: js.Object): /* is @babel/types.@babel/types.Placeholder */ scala.Boolean = js.native
+  def isPlaceholder(node: scala.Null, opts: js.Object): /* is @babel/types.@babel/types.Placeholder */ scala.Boolean = js.native
   def isPrivate(): /* is @babel/types.@babel/types.Private */ scala.Boolean = js.native
   def isPrivate(node: js.Object): /* is @babel/types.@babel/types.Private */ scala.Boolean = js.native
   def isPrivate(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.Private */ scala.Boolean = js.native
@@ -2180,73 +2194,76 @@ object ^ extends js.Object {
   ): MemberExpression = js.native
   def metaProperty(meta: Identifier, property: Identifier): MetaProperty = js.native
   def mixedTypeAnnotation(): MixedTypeAnnotation = js.native
-  def newExpression(callee: Expression, _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement]): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement]
+  ): NewExpression = js.native
+  def newExpression(
+    callee: Expression,
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
     typeArguments: TypeParameterInstantiation
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
     typeArguments: TypeParameterInstantiation,
     typeParameters: TSTypeParameterInstantiation
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`false`,
     typeArguments: scala.Null,
     typeParameters: TSTypeParameterInstantiation
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
     typeArguments: TypeParameterInstantiation
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
     typeArguments: TypeParameterInstantiation,
     typeParameters: TSTypeParameterInstantiation
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: atBabelTypesLib.atBabelTypesLibNumbers.`true`,
     typeArguments: scala.Null,
     typeParameters: TSTypeParameterInstantiation
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | JSXNamespacedName | SpreadElement],
+    _arguments: js.Array[ArgumentPlaceholder | Expression | JSXNamespacedName | SpreadElement],
     optional: scala.Null,
     typeArguments: TypeParameterInstantiation
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: scala.Null,
     typeArguments: TypeParameterInstantiation,
     typeParameters: TSTypeParameterInstantiation
   ): NewExpression = js.native
   def newExpression(
     callee: Expression,
-    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName],
+    _arguments: js.Array[Expression | SpreadElement | JSXNamespacedName | ArgumentPlaceholder],
     optional: scala.Null,
     typeArguments: scala.Null,
     typeParameters: TSTypeParameterInstantiation
@@ -2616,6 +2633,22 @@ object ^ extends js.Object {
   def pipelineBareFunction(callee: Expression): PipelineBareFunction = js.native
   def pipelinePrimaryTopicReference(): PipelinePrimaryTopicReference = js.native
   def pipelineTopicExpression(expression: Expression): PipelineTopicExpression = js.native
+  @JSName("placeholder")
+  def placeholder_BlockStatement(expectedNode: atBabelTypesLib.atBabelTypesLibStrings.BlockStatement, name: Identifier): Placeholder = js.native
+  @JSName("placeholder")
+  def placeholder_ClassBody(expectedNode: atBabelTypesLib.atBabelTypesLibStrings.ClassBody, name: Identifier): Placeholder = js.native
+  @JSName("placeholder")
+  def placeholder_Declaration(expectedNode: atBabelTypesLib.atBabelTypesLibStrings.Declaration, name: Identifier): Placeholder = js.native
+  @JSName("placeholder")
+  def placeholder_Expression(expectedNode: atBabelTypesLib.atBabelTypesLibStrings.Expression, name: Identifier): Placeholder = js.native
+  @JSName("placeholder")
+  def placeholder_Identifier(expectedNode: atBabelTypesLib.atBabelTypesLibStrings.Identifier, name: Identifier): Placeholder = js.native
+  @JSName("placeholder")
+  def placeholder_Pattern(expectedNode: atBabelTypesLib.atBabelTypesLibStrings.Pattern, name: Identifier): Placeholder = js.native
+  @JSName("placeholder")
+  def placeholder_Statement(expectedNode: atBabelTypesLib.atBabelTypesLibStrings.Statement, name: Identifier): Placeholder = js.native
+  @JSName("placeholder")
+  def placeholder_StringLiteral(expectedNode: atBabelTypesLib.atBabelTypesLibStrings.StringLiteral, name: Identifier): Placeholder = js.native
   def privateName(id: Identifier): PrivateName = js.native
   def program(body: js.Array[Statement]): Program = js.native
   def program(body: js.Array[Statement], directives: js.Array[Directive]): Program = js.native
@@ -2725,17 +2758,16 @@ object ^ extends js.Object {
   def tsArrayType(elementType: TSType): TSArrayType = js.native
   def tsAsExpression(expression: Expression, typeAnnotation: TSType): TSAsExpression = js.native
   def tsBooleanKeyword(): TSBooleanKeyword = js.native
-  def tsCallSignatureDeclaration(): TSCallSignatureDeclaration = js.native
-  def tsCallSignatureDeclaration(typeParameters: TSTypeParameterDeclaration): TSCallSignatureDeclaration = js.native
   def tsCallSignatureDeclaration(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier | RestElement]): TSCallSignatureDeclaration = js.native
   def tsCallSignatureDeclaration(
     typeParameters: TSTypeParameterDeclaration,
     parameters: js.Array[Identifier | RestElement],
     typeAnnotation: TSTypeAnnotation
   ): TSCallSignatureDeclaration = js.native
+  def tsCallSignatureDeclaration(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[Identifier | RestElement]): TSCallSignatureDeclaration = js.native
   def tsCallSignatureDeclaration(
-    typeParameters: TSTypeParameterDeclaration,
-    parameters: scala.Null,
+    typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[Identifier | RestElement],
     typeAnnotation: TSTypeAnnotation
   ): TSCallSignatureDeclaration = js.native
   def tsCallSignatureDeclaration(typeParameters: scala.Null, parameters: js.Array[Identifier | RestElement]): TSCallSignatureDeclaration = js.native
@@ -2744,19 +2776,17 @@ object ^ extends js.Object {
     parameters: js.Array[Identifier | RestElement],
     typeAnnotation: TSTypeAnnotation
   ): TSCallSignatureDeclaration = js.native
-  def tsCallSignatureDeclaration(typeParameters: scala.Null, parameters: scala.Null, typeAnnotation: TSTypeAnnotation): TSCallSignatureDeclaration = js.native
   def tsConditionalType(checkType: TSType, extendsType: TSType, trueType: TSType, falseType: TSType): TSConditionalType = js.native
-  def tsConstructSignatureDeclaration(): TSConstructSignatureDeclaration = js.native
-  def tsConstructSignatureDeclaration(typeParameters: TSTypeParameterDeclaration): TSConstructSignatureDeclaration = js.native
   def tsConstructSignatureDeclaration(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier | RestElement]): TSConstructSignatureDeclaration = js.native
   def tsConstructSignatureDeclaration(
     typeParameters: TSTypeParameterDeclaration,
     parameters: js.Array[Identifier | RestElement],
     typeAnnotation: TSTypeAnnotation
   ): TSConstructSignatureDeclaration = js.native
+  def tsConstructSignatureDeclaration(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[Identifier | RestElement]): TSConstructSignatureDeclaration = js.native
   def tsConstructSignatureDeclaration(
-    typeParameters: TSTypeParameterDeclaration,
-    parameters: scala.Null,
+    typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[Identifier | RestElement],
     typeAnnotation: TSTypeAnnotation
   ): TSConstructSignatureDeclaration = js.native
   def tsConstructSignatureDeclaration(typeParameters: scala.Null, parameters: js.Array[Identifier | RestElement]): TSConstructSignatureDeclaration = js.native
@@ -2765,30 +2795,23 @@ object ^ extends js.Object {
     parameters: js.Array[Identifier | RestElement],
     typeAnnotation: TSTypeAnnotation
   ): TSConstructSignatureDeclaration = js.native
-  def tsConstructSignatureDeclaration(typeParameters: scala.Null, parameters: scala.Null, typeAnnotation: TSTypeAnnotation): TSConstructSignatureDeclaration = js.native
-  def tsConstructorType(): TSConstructorType = js.native
-  def tsConstructorType(typeParameters: TSTypeParameterDeclaration): TSConstructorType = js.native
-  def tsConstructorType(typeParameters: TSTypeParameterDeclaration, typeAnnotation: TSTypeAnnotation): TSConstructorType = js.native
+  def tsConstructorType(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier | RestElement]): TSConstructorType = js.native
   def tsConstructorType(
     typeParameters: TSTypeParameterDeclaration,
-    typeAnnotation: TSTypeAnnotation,
-    parameters: js.Array[Identifier | RestElement]
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
   ): TSConstructorType = js.native
+  def tsConstructorType(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[Identifier | RestElement]): TSConstructorType = js.native
   def tsConstructorType(
-    typeParameters: TSTypeParameterDeclaration,
-    typeAnnotation: scala.Null,
-    parameters: js.Array[Identifier | RestElement]
+    typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
   ): TSConstructorType = js.native
-  def tsConstructorType(typeParameters: scala.Null, typeAnnotation: TSTypeAnnotation): TSConstructorType = js.native
-  def tsConstructorType(
-    typeParameters: scala.Null,
-    typeAnnotation: TSTypeAnnotation,
-    parameters: js.Array[Identifier | RestElement]
-  ): TSConstructorType = js.native
+  def tsConstructorType(typeParameters: scala.Null, parameters: js.Array[Identifier | RestElement]): TSConstructorType = js.native
   def tsConstructorType(
     typeParameters: scala.Null,
-    typeAnnotation: scala.Null,
-    parameters: js.Array[Identifier | RestElement]
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
   ): TSConstructorType = js.native
   def tsDeclareFunction(
     id: js.UndefOr[Identifier | scala.Null],
@@ -2887,29 +2910,23 @@ object ^ extends js.Object {
   def tsExpressionWithTypeArguments(expression: TSEntityName): TSExpressionWithTypeArguments = js.native
   def tsExpressionWithTypeArguments(expression: TSEntityName, typeParameters: TSTypeParameterInstantiation): TSExpressionWithTypeArguments = js.native
   def tsExternalModuleReference(expression: StringLiteral): TSExternalModuleReference = js.native
-  def tsFunctionType(): TSFunctionType = js.native
-  def tsFunctionType(typeParameters: TSTypeParameterDeclaration): TSFunctionType = js.native
-  def tsFunctionType(typeParameters: TSTypeParameterDeclaration, typeAnnotation: TSTypeAnnotation): TSFunctionType = js.native
+  def tsFunctionType(typeParameters: TSTypeParameterDeclaration, parameters: js.Array[Identifier | RestElement]): TSFunctionType = js.native
   def tsFunctionType(
     typeParameters: TSTypeParameterDeclaration,
-    typeAnnotation: TSTypeAnnotation,
-    parameters: js.Array[Identifier | RestElement]
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
   ): TSFunctionType = js.native
+  def tsFunctionType(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[Identifier | RestElement]): TSFunctionType = js.native
   def tsFunctionType(
-    typeParameters: TSTypeParameterDeclaration,
-    typeAnnotation: scala.Null,
-    parameters: js.Array[Identifier | RestElement]
+    typeParameters: js.UndefOr[scala.Nothing],
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
   ): TSFunctionType = js.native
-  def tsFunctionType(typeParameters: scala.Null, typeAnnotation: TSTypeAnnotation): TSFunctionType = js.native
-  def tsFunctionType(
-    typeParameters: scala.Null,
-    typeAnnotation: TSTypeAnnotation,
-    parameters: js.Array[Identifier | RestElement]
-  ): TSFunctionType = js.native
+  def tsFunctionType(typeParameters: scala.Null, parameters: js.Array[Identifier | RestElement]): TSFunctionType = js.native
   def tsFunctionType(
     typeParameters: scala.Null,
-    typeAnnotation: scala.Null,
-    parameters: js.Array[Identifier | RestElement]
+    parameters: js.Array[Identifier | RestElement],
+    typeAnnotation: TSTypeAnnotation
   ): TSFunctionType = js.native
   def tsImportEqualsDeclaration(id: Identifier, moduleReference: TSEntityName): TSImportEqualsDeclaration = js.native
   def tsImportEqualsDeclaration(id: Identifier, moduleReference: TSEntityName, isExport: scala.Boolean): TSImportEqualsDeclaration = js.native
@@ -3070,29 +3087,27 @@ object ^ extends js.Object {
     optional: scala.Null,
     readonly: scala.Boolean
   ): TSMappedType = js.native
-  def tsMethodSignature(key: Expression): TSMethodSignature = js.native
-  def tsMethodSignature(key: Expression, typeParameters: TSTypeParameterDeclaration): TSMethodSignature = js.native
   def tsMethodSignature(
     key: Expression,
-    typeParameters: TSTypeParameterDeclaration,
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | scala.Null],
     parameters: js.Array[Identifier | RestElement]
   ): TSMethodSignature = js.native
   def tsMethodSignature(
     key: Expression,
-    typeParameters: TSTypeParameterDeclaration,
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | scala.Null],
     parameters: js.Array[Identifier | RestElement],
     typeAnnotation: TSTypeAnnotation
   ): TSMethodSignature = js.native
   def tsMethodSignature(
     key: Expression,
-    typeParameters: TSTypeParameterDeclaration,
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | scala.Null],
     parameters: js.Array[Identifier | RestElement],
     typeAnnotation: TSTypeAnnotation,
     computed: scala.Boolean
   ): TSMethodSignature = js.native
   def tsMethodSignature(
     key: Expression,
-    typeParameters: TSTypeParameterDeclaration,
+    typeParameters: js.UndefOr[TSTypeParameterDeclaration | scala.Null],
     parameters: js.Array[Identifier | RestElement],
     typeAnnotation: TSTypeAnnotation,
     computed: scala.Boolean,

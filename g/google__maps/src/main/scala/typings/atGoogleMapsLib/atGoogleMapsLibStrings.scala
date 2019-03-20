@@ -237,7 +237,8 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.PlaceAutocompleteType
   
   @js.native
-  sealed trait address_components extends js.Object
+  sealed trait address_component
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait administrative_area_level_1
@@ -265,12 +266,17 @@ object atGoogleMapsLibStrings {
        with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait adr_address extends js.Object
+  sealed trait adr_address
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait airport
     extends atGoogleMapsLib.atGoogleMapsMod.AddressType
        with atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait alt_id
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait alt_ids extends js.Object
@@ -575,10 +581,12 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
   
   @js.native
-  sealed trait formatted_address extends js.Object
+  sealed trait formatted_address
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
-  sealed trait formatted_phone_number extends js.Object
+  sealed trait formatted_phone_number
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait fr
@@ -606,7 +614,8 @@ object atGoogleMapsLibStrings {
        with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait geometry extends js.Object
+  sealed trait geometry
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait gl
@@ -665,11 +674,13 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait icon extends js.Object
+  sealed trait icon
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait id
     extends atGoogleMapsLib.atGoogleMapsMod.Language
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait imperial
@@ -684,7 +695,8 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait international_phone_number extends js.Object
+  sealed trait international_phone_number
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait intersection
@@ -829,7 +841,8 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait name
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait natural_feature
@@ -858,7 +871,8 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.GeolocationErrorReason
   
   @js.native
-  sealed trait opening_hours extends js.Object
+  sealed trait opening_hours
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait optimistic
@@ -891,7 +905,8 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.GeolocationErrorReason
   
   @js.native
-  sealed trait permanently_closed extends js.Object
+  sealed trait permanently_closed
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait pessimistic
@@ -909,6 +924,10 @@ object atGoogleMapsLibStrings {
   sealed trait phonenumber extends js.Object
   
   @js.native
+  sealed trait photo
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
+  
+  @js.native
   sealed trait photos extends js.Object
   
   @js.native
@@ -920,7 +939,8 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait place_id extends js.Object
+  sealed trait place_id
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait place_of_worship
@@ -931,7 +951,8 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait plus_code extends js.Object
+  sealed trait plus_code
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait point_of_interest
@@ -981,7 +1002,8 @@ object atGoogleMapsLibStrings {
        with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait price_level extends js.Object
+  sealed trait price_level
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait prominence
@@ -1016,7 +1038,8 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
   
   @js.native
-  sealed trait rating extends js.Object
+  sealed trait rating
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait real_estate_agency
@@ -1027,7 +1050,8 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait reviews extends js.Object
+  sealed trait review
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait ro
@@ -1068,7 +1092,8 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait scope extends js.Object
+  sealed trait scope
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait service
@@ -1263,6 +1288,10 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
   
   @js.native
+  sealed trait `type`
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
+  
+  @js.native
   sealed trait types extends js.Object
   
   @js.native
@@ -1270,14 +1299,20 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait userRateLimitExceeded
     extends atGoogleMapsLib.atGoogleMapsMod.GeolocationErrorReason
   
   @js.native
-  sealed trait utc_offset extends js.Object
+  sealed trait user_ratings_total
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
+  
+  @js.native
+  sealed trait utc_offset
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait `uturn-left`
@@ -1300,7 +1335,8 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait vicinity extends js.Object
+  sealed trait vicinity
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait walking
@@ -1315,7 +1351,8 @@ object atGoogleMapsLibStrings {
     extends atGoogleMapsLib.atGoogleMapsMod.RadioType
   
   @js.native
-  sealed trait website extends js.Object
+  sealed trait website
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsRequestField
   
   @js.native
   sealed trait `zh-CN`
@@ -1412,7 +1449,7 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def address: address = "address".asInstanceOf[address]
   @scala.inline
-  def address_components: address_components = "address_components".asInstanceOf[address_components]
+  def address_component: address_component = "address_component".asInstanceOf[address_component]
   @scala.inline
   def administrative_area_level_1: administrative_area_level_1 = "administrative_area_level_1".asInstanceOf[administrative_area_level_1]
   @scala.inline
@@ -1427,6 +1464,8 @@ object atGoogleMapsLibStrings {
   def adr_address: adr_address = "adr_address".asInstanceOf[adr_address]
   @scala.inline
   def airport: airport = "airport".asInstanceOf[airport]
+  @scala.inline
+  def alt_id: alt_id = "alt_id".asInstanceOf[alt_id]
   @scala.inline
   def alt_ids: alt_ids = "alt_ids".asInstanceOf[alt_ids]
   @scala.inline
@@ -1744,6 +1783,8 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def phonenumber: phonenumber = "phonenumber".asInstanceOf[phonenumber]
   @scala.inline
+  def photo: photo = "photo".asInstanceOf[photo]
+  @scala.inline
   def photos: photos = "photos".asInstanceOf[photos]
   @scala.inline
   def physiotherapist: physiotherapist = "physiotherapist".asInstanceOf[physiotherapist]
@@ -1802,7 +1843,7 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def restaurant: restaurant = "restaurant".asInstanceOf[restaurant]
   @scala.inline
-  def reviews: reviews = "reviews".asInstanceOf[reviews]
+  def review: review = "review".asInstanceOf[review]
   @scala.inline
   def ro: ro = "ro".asInstanceOf[ro]
   @scala.inline
@@ -1918,6 +1959,8 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def `turn-slight-right`: `turn-slight-right` = "turn-slight-right".asInstanceOf[`turn-slight-right`]
   @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
+  @scala.inline
   def types: types = "types".asInstanceOf[types]
   @scala.inline
   def uk: uk = "uk".asInstanceOf[uk]
@@ -1925,6 +1968,8 @@ object atGoogleMapsLibStrings {
   def url: url = "url".asInstanceOf[url]
   @scala.inline
   def userRateLimitExceeded: userRateLimitExceeded = "userRateLimitExceeded".asInstanceOf[userRateLimitExceeded]
+  @scala.inline
+  def user_ratings_total: user_ratings_total = "user_ratings_total".asInstanceOf[user_ratings_total]
   @scala.inline
   def utc_offset: utc_offset = "utc_offset".asInstanceOf[utc_offset]
   @scala.inline

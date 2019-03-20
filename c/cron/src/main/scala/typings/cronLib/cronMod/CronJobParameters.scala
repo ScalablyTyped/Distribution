@@ -17,7 +17,11 @@ trait CronJobParameters extends js.Object {
   /**
     * A function that will fire when the job is stopped with ```job.stop()```, and may also be called by ```onTick``` at the end of each run.
     */
-  var onComplete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onComplete: js.UndefOr[CronCommand] = js.undefined
+  /**
+    * The function to fire at the specified time. If an ```onComplete``` callback was provided, ```onTick``` will receive it as an argument. ```onTick``` may call ```onComplete``` when it has finished its work.
+    */
+  var onTick: CronCommand
   /**
     * This will immediately fire your ```onTick``` function as soon as the requisit initialization has happened. This option is set to ```false``` by default for backwards compatibility.
     */
@@ -38,28 +42,24 @@ trait CronJobParameters extends js.Object {
     * This allows you to specify the offset of your timezone rather than using the ```timeZone``` param. Probably don't use both ```timeZone``` and ```utcOffset``` together or weird things may happen.
     */
   var utcOffset: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  /**
-    * The function to fire at the specified time. If an ```onComplete``` callback was provided, ```onTick``` will receive it as an argument. ```onTick``` may call ```onComplete``` when it has finished its work.
-    */
-  def onTick(): scala.Unit
 }
 
 object CronJobParameters {
   @scala.inline
   def apply(
     cronTime: java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment,
-    onTick: () => scala.Unit,
+    onTick: CronCommand,
     context: js.Any = null,
-    onComplete: () => scala.Unit = null,
+    onComplete: CronCommand = null,
     runOnInit: js.UndefOr[scala.Boolean] = js.undefined,
     start: js.UndefOr[scala.Boolean] = js.undefined,
     timeZone: java.lang.String = null,
     unrefTimeout: js.UndefOr[scala.Boolean] = js.undefined,
     utcOffset: java.lang.String | scala.Double = null
   ): CronJobParameters = {
-    val __obj = js.Dynamic.literal(cronTime = cronTime.asInstanceOf[js.Any], onTick = js.Any.fromFunction0(onTick))
+    val __obj = js.Dynamic.literal(cronTime = cronTime.asInstanceOf[js.Any], onTick = onTick.asInstanceOf[js.Any])
     if (context != null) __obj.updateDynamic("context")(context)
-    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction0(onComplete))
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete.asInstanceOf[js.Any])
     if (!js.isUndefined(runOnInit)) __obj.updateDynamic("runOnInit")(runOnInit)
     if (!js.isUndefined(start)) __obj.updateDynamic("start")(start)
     if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)

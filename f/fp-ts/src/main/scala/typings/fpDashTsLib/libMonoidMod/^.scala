@@ -36,6 +36,12 @@ object ^ extends js.Object {
   {[ K in keyof O ]: fp-ts.fp-ts/lib/Monoid.Monoid<O[K]>}
     */ fpDashTsLib.fpDashTsLibStrings.getStructMonoid with O
   ): Monoid[O] = js.native
-  def getTupleMonoid[A, B](MA: Monoid[A], MB: Monoid[B]): Monoid[js.Tuple2[A, B]] = js.native
+  def getTupleMonoid[T /* <: fpDashTsLib.libArrayMod.Global.Array[Monoid[_]] */](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param monoids because its type T is not an array type */ monoids: T
+  ): Monoid[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: any}
+    */ fpDashTsLib.fpDashTsLibStrings.getTupleMonoid with js.Any
+  ] = js.native
 }
 

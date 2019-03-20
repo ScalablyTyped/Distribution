@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gtoken"
-version := "2.3.3-d4710d"
+version := "2.3.3-3babd4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,13 +9,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "abort-controller" % "2.0.3-5961d3",
   "org.scalablytyped" %%% "event-target-shim" % "5.0.1-439abd",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-b3669a",
-  "org.scalablytyped" %%% "gaxios" % "1.8.2-4848d4",
-  "org.scalablytyped" %%% "google-p12-pem" % "1.0.4-8ac9eb",
-  "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-804ec5",
+  "org.scalablytyped" %%% "gaxios" % "1.8.2-97dd39",
+  "org.scalablytyped" %%% "google-p12-pem" % "1.0.4-04dcaf",
+  "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-9ee2e0",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-fcf6a3",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190318Z-f6d9fe",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-512b32",
-  "org.scalablytyped" %%% "node-forge" % "0.8.1-dt-20190318Z-cf8294",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-6cb1f3",
+  "org.scalablytyped" %%% "node-forge" % "0.8.1-dt-20190318Z-c0cf13",
   "org.scalablytyped" %%% "pify" % "3.0.0-dt-20180501Z-937816",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false

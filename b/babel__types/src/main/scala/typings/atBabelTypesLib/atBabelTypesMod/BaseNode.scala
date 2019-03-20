@@ -13,7 +13,7 @@ trait BaseNode extends js.Object {
   var start: scala.Double | scala.Null
   var trailingComments: js.Array[Comment] | scala.Null
   var `type`: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 221 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 223 */ js.Any
   ]
 }
 
@@ -26,7 +26,7 @@ object BaseNode {
     loc: SourceLocation = null,
     start: scala.Int | scala.Double = null,
     trailingComments: js.Array[Comment] = null,
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 221 */ js.Any = null
+    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 223 */ js.Any = null
   ): BaseNode = {
     val __obj = js.Dynamic.literal()
     if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])

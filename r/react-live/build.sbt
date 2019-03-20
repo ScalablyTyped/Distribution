@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "react-live"
-version := "1.12.0-612771"
+version := "1.12.0-e12a29"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "buble" % "0.19-dt-20190312Z-d35a96",
-  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-298712",
-  "org.scalablytyped" %%% "create-react-context" % "0.2.2-ea6077",
+  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-ef2eb7",
+  "org.scalablytyped" %%% "create-react-context" % "0.2.2-e09e9c",
   "org.scalablytyped" %%% "csstype" % "2.6.3-29f798",
   "org.scalablytyped" %%% "magic-string" % "0.25.2-f3a8e8",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190318Z-f6d9fe",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
   "org.scalablytyped" %%% "prismjs" % "1.9-dt-20190212Z-cae4f9",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190312Z-6f0f1a",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
   "org.scalablytyped" %%% "sourcemap-codec" % "1.4.4-0be230",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false

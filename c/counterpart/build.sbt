@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "counterpart"
-version := "0.18-dt-20180214Z-0464e4"
+version := "0.18-dt-20190319Z-93d895"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

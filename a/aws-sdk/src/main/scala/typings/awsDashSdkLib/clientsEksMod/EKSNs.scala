@@ -52,7 +52,7 @@ object EKSNs extends js.Object {
       */
     var platformVersion: js.UndefOr[String] = js.undefined
     /**
-      * The VPC subnets and security groups used by the cluster control plane. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see Cluster VPC Considerations and Cluster Security Group Considerations in the Amazon EKS User Guide.
+      * The VPC configuration used by the cluster control plane. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see Cluster VPC Considerations and Cluster Security Group Considerations in the Amazon EKS User Guide.
       */
     var resourcesVpcConfig: js.UndefOr[VpcConfigResponse] = js.undefined
     /**
@@ -79,7 +79,7 @@ object EKSNs extends js.Object {
       */
     var name: ClusterName
     /**
-      * The VPC subnets and security groups used by the cluster control plane. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see Cluster VPC Considerations and Cluster Security Group Considerations in the Amazon EKS User Guide. You must specify at least two subnets. You may specify up to five security groups, but we recommend that you use a dedicated security group for your cluster control plane.
+      * The VPC configuration used by the cluster control plane. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see Cluster VPC Considerations and Cluster Security Group Considerations in the Amazon EKS User Guide. You must specify at least two subnets. You may specify up to five security groups, but we recommend that you use a dedicated security group for your cluster control plane.
       */
     var resourcesVpcConfig: VpcConfigRequest
     /**
@@ -352,6 +352,29 @@ object EKSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListUpdatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Updates an Amazon EKS cluster configuration. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Currently, the only cluster configuration changes supported are to enable or disable Amazon EKS public and private API server endpoints. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide . Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+      */
+    def updateClusterConfig(): awsDashSdkLib.libRequestMod.Request[UpdateClusterConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateClusterConfig(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateClusterConfigResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateClusterConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates an Amazon EKS cluster configuration. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Currently, the only cluster configuration changes supported are to enable or disable Amazon EKS public and private API server endpoints. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide . Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+      */
+    def updateClusterConfig(params: UpdateClusterConfigRequest): awsDashSdkLib.libRequestMod.Request[UpdateClusterConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateClusterConfig(
+      params: UpdateClusterConfigRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateClusterConfigResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateClusterConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
       */
     def updateClusterVersion(): awsDashSdkLib.libRequestMod.Request[UpdateClusterVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -467,6 +490,22 @@ object EKSNs extends js.Object {
     var `type`: js.UndefOr[UpdateType] = js.undefined
   }
   
+  trait UpdateClusterConfigRequest extends js.Object {
+    /**
+      * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+      */
+    var clientRequestToken: js.UndefOr[String] = js.undefined
+    /**
+      * The name of the Amazon EKS cluster to update.
+      */
+    var name: String
+    var resourcesVpcConfig: js.UndefOr[VpcConfigRequest] = js.undefined
+  }
+  
+  trait UpdateClusterConfigResponse extends js.Object {
+    var update: js.UndefOr[Update] = js.undefined
+  }
+  
   trait UpdateClusterVersionRequest extends js.Object {
     /**
       * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
@@ -502,16 +541,32 @@ object EKSNs extends js.Object {
   
   trait VpcConfigRequest extends js.Object {
     /**
+      * Set this value to true to enable private access for your cluster's Kubernetes API server endpoint. If you enable private access, Kubernetes API requests from within your cluster's VPC will use the private VPC endpoint. The default value for this parameter is false, which disables private access for your Kubernetes API server. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide .
+      */
+    var endpointPrivateAccess: js.UndefOr[BoxedBoolean] = js.undefined
+    /**
+      * Set this value to false to disable public access for your cluster's Kubernetes API server endpoint. If you disable public access, your cluster's Kubernetes API server can only receive requests from within the cluster VPC. The default value for this parameter is true, which enables public access for your Kubernetes API server. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide .
+      */
+    var endpointPublicAccess: js.UndefOr[BoxedBoolean] = js.undefined
+    /**
       * Specify one or more security groups for the cross-account elastic network interfaces that Amazon EKS creates to use to allow communication between your worker nodes and the Kubernetes control plane. If you do not specify a security group, the default security group for your VPC is used.
       */
     var securityGroupIds: js.UndefOr[StringList] = js.undefined
     /**
       * Specify subnets for your Amazon EKS worker nodes. Amazon EKS creates cross-account elastic network interfaces in these subnets to allow communication between your worker nodes and the Kubernetes control plane.
       */
-    var subnetIds: StringList
+    var subnetIds: js.UndefOr[StringList] = js.undefined
   }
   
   trait VpcConfigResponse extends js.Object {
+    /**
+      * This parameter indicates whether the Amazon EKS private API server endpoint is enabled. If the Amazon EKS private API server endpoint is enabled, Kubernetes API requests that originate from within your cluster's VPC will use the private VPC endpoint instead of traversing the internet.
+      */
+    var endpointPrivateAccess: js.UndefOr[Boolean] = js.undefined
+    /**
+      * This parameter indicates whether the Amazon EKS public API server endpoint is enabled. If the Amazon EKS public API server endpoint is disabled, your cluster's Kubernetes API server can only receive requests that originate from within the cluster VPC. 
+      */
+    var endpointPublicAccess: js.UndefOr[Boolean] = js.undefined
     /**
       * The security groups associated with the cross-account elastic network interfaces that are used to allow communication between your worker nodes and the Kubernetes control plane.
       */
@@ -534,9 +589,13 @@ object EKSNs extends js.Object {
   
   trait _UpdateStatus extends js.Object
   
+  trait _UpdateType extends js.Object
+  
   trait _apiVersion extends js.Object
   
   val TypesNs: this.type = js.native
+  type Boolean = scala.Boolean
+  type BoxedBoolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClusterName = java.lang.String
   type ClusterStatus = _ClusterStatus | java.lang.String
@@ -550,7 +609,7 @@ object EKSNs extends js.Object {
   type UpdateParamType = _UpdateParamType | java.lang.String
   type UpdateParams = js.Array[UpdateParam]
   type UpdateStatus = _UpdateStatus | java.lang.String
-  type UpdateType = awsDashSdkLib.awsDashSdkLibStrings.VersionUpdate | java.lang.String
+  type UpdateType = _UpdateType | java.lang.String
   type apiVersion = _apiVersion | java.lang.String
 }
 

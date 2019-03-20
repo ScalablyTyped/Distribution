@@ -305,6 +305,9 @@
  * - https://bartoszmilewski.com/2017/02/06/applicative-functors/
  */
 /**
+ * @file Data structure which represents non-empty arrays
+ */
+/**
  * @file If you have worked with JavaScript at all in the past, it is very likely that you have come across a `TypeError` at
  * some time (other languages will throw similarly named errors in such a case). Usually this happens because some
  * method returns `null` or `undefined` when you were not expecting it and thus not dealing with that possibility in
@@ -395,6 +398,8 @@
  * 1. Reflexivity: `S.compare(a, a) <= 0`
  * 2. Antisymmetry: if `S.compare(a, b) <= 0` and `S.compare(b, a) <= 0` then `a <-> b`
  * 3. Transitivity: if `S.compare(a, b) <= 0` and `S.compare(b, c) <= 0` then `S.compare(a, c) <= 0`
+ *
+ * See [Getting started with fp-ts: Ord](https://dev.to/gcanti/getting-started-with-fp-ts-ord-5f1e)
  */
 /**
  * @file Adapted from https://github.com/parsonsmatt/purescript-pair
@@ -422,6 +427,9 @@
  * - Additive inverse: `a - a = (zero - a) + a = zero`
  *
  * Adapted from https://github.com/purescript/purescript-prelude/blob/master/src/Data/Ring.purs
+ */
+/**
+ * @file See [Getting started with fp-ts: Semigroup](https://dev.to/gcanti/getting-started-with-fp-ts-semigroup-2mf7)
  */
 /**
  * @file The `Semiring` class is for types that support an addition and multiplication operation.
@@ -455,6 +463,8 @@
  * 1. Reflexivity: `S.equals(a, a) === true`
  * 2. Symmetry: `S.equals(a, b) === S.equals(b, a)`
  * 3. Transitivity: if `S.equals(a, b) === true` and `S.equals(b, c) === true`, then `S.equals(a, c) === true`
+ *
+ * See [Getting started with fp-ts: Setoid](https://dev.to/gcanti/getting-started-with-fp-ts-setoid-39f3)
  */
 /**
  * @since 1.0.0

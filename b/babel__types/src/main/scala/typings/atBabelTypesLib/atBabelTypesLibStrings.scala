@@ -79,6 +79,9 @@ object atBabelTypesLibStrings {
   sealed trait AnyTypeAnnotation extends js.Object
   
   @js.native
+  sealed trait ArgumentPlaceholder extends js.Object
+  
+  @js.native
   sealed trait ArrayExpression extends js.Object
   
   @js.native
@@ -172,6 +175,9 @@ object atBabelTypesLibStrings {
   sealed trait DebuggerStatement extends js.Object
   
   @js.native
+  sealed trait Declaration extends js.Object
+  
+  @js.native
   sealed trait DeclareClass extends js.Object
   
   @js.native
@@ -248,6 +254,9 @@ object atBabelTypesLibStrings {
   
   @js.native
   sealed trait ExportSpecifier extends js.Object
+  
+  @js.native
+  sealed trait Expression extends js.Object
   
   @js.native
   sealed trait ExpressionStatement extends js.Object
@@ -445,6 +454,9 @@ object atBabelTypesLibStrings {
   sealed trait ParenthesizedExpression extends js.Object
   
   @js.native
+  sealed trait Pattern extends js.Object
+  
+  @js.native
   sealed trait PipelineBareFunction extends js.Object
   
   @js.native
@@ -452,6 +464,9 @@ object atBabelTypesLibStrings {
   
   @js.native
   sealed trait PipelineTopicExpression extends js.Object
+  
+  @js.native
+  sealed trait Placeholder extends js.Object
   
   @js.native
   sealed trait PrivateName extends js.Object
@@ -476,6 +491,9 @@ object atBabelTypesLibStrings {
   
   @js.native
   sealed trait SpreadElement extends js.Object
+  
+  @js.native
+  sealed trait Statement extends js.Object
   
   @js.native
   sealed trait StringLiteral extends js.Object
@@ -880,6 +898,8 @@ object atBabelTypesLibStrings {
   @scala.inline
   def AnyTypeAnnotation: AnyTypeAnnotation = "AnyTypeAnnotation".asInstanceOf[AnyTypeAnnotation]
   @scala.inline
+  def ArgumentPlaceholder: ArgumentPlaceholder = "ArgumentPlaceholder".asInstanceOf[ArgumentPlaceholder]
+  @scala.inline
   def ArrayExpression: ArrayExpression = "ArrayExpression".asInstanceOf[ArrayExpression]
   @scala.inline
   def ArrayPattern: ArrayPattern = "ArrayPattern".asInstanceOf[ArrayPattern]
@@ -942,6 +962,8 @@ object atBabelTypesLibStrings {
   @scala.inline
   def DebuggerStatement: DebuggerStatement = "DebuggerStatement".asInstanceOf[DebuggerStatement]
   @scala.inline
+  def Declaration: Declaration = "Declaration".asInstanceOf[Declaration]
+  @scala.inline
   def DeclareClass: DeclareClass = "DeclareClass".asInstanceOf[DeclareClass]
   @scala.inline
   def DeclareExportAllDeclaration: DeclareExportAllDeclaration = "DeclareExportAllDeclaration".asInstanceOf[DeclareExportAllDeclaration]
@@ -993,6 +1015,8 @@ object atBabelTypesLibStrings {
   def ExportNamespaceSpecifier: ExportNamespaceSpecifier = "ExportNamespaceSpecifier".asInstanceOf[ExportNamespaceSpecifier]
   @scala.inline
   def ExportSpecifier: ExportSpecifier = "ExportSpecifier".asInstanceOf[ExportSpecifier]
+  @scala.inline
+  def Expression: Expression = "Expression".asInstanceOf[Expression]
   @scala.inline
   def ExpressionStatement: ExpressionStatement = "ExpressionStatement".asInstanceOf[ExpressionStatement]
   @scala.inline
@@ -1124,11 +1148,15 @@ object atBabelTypesLibStrings {
   @scala.inline
   def ParenthesizedExpression: ParenthesizedExpression = "ParenthesizedExpression".asInstanceOf[ParenthesizedExpression]
   @scala.inline
+  def Pattern: Pattern = "Pattern".asInstanceOf[Pattern]
+  @scala.inline
   def PipelineBareFunction: PipelineBareFunction = "PipelineBareFunction".asInstanceOf[PipelineBareFunction]
   @scala.inline
   def PipelinePrimaryTopicReference: PipelinePrimaryTopicReference = "PipelinePrimaryTopicReference".asInstanceOf[PipelinePrimaryTopicReference]
   @scala.inline
   def PipelineTopicExpression: PipelineTopicExpression = "PipelineTopicExpression".asInstanceOf[PipelineTopicExpression]
+  @scala.inline
+  def Placeholder: Placeholder = "Placeholder".asInstanceOf[Placeholder]
   @scala.inline
   def PrivateName: PrivateName = "PrivateName".asInstanceOf[PrivateName]
   @scala.inline
@@ -1145,6 +1173,8 @@ object atBabelTypesLibStrings {
   def SequenceExpression: SequenceExpression = "SequenceExpression".asInstanceOf[SequenceExpression]
   @scala.inline
   def SpreadElement: SpreadElement = "SpreadElement".asInstanceOf[SpreadElement]
+  @scala.inline
+  def Statement: Statement = "Statement".asInstanceOf[Statement]
   @scala.inline
   def StringLiteral: StringLiteral = "StringLiteral".asInstanceOf[StringLiteral]
   @scala.inline

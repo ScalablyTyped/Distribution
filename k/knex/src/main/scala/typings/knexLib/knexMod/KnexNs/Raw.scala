@@ -13,7 +13,6 @@ trait Raw
   def connection(connection: js.Any): this.type = js.native
   def debug(enabled: scala.Boolean): this.type = js.native
   def options(options: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
-  // tslint:disable-next-line no-unnecessary-generics
   def pipe[T /* <: nodeLib.NodeJSNs.WritableStream */](writable: T): nodeLib.streamMod.PassThrough = js.native
   def pipe[T /* <: nodeLib.NodeJSNs.WritableStream */](writable: T, options: org.scalablytyped.runtime.StringDictionary[js.Any]): nodeLib.streamMod.PassThrough = js.native
   def stream(): nodeLib.streamMod.PassThrough = js.native

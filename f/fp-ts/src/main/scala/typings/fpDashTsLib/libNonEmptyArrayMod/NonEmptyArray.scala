@@ -105,7 +105,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     * @since 1.11.0
     */
   @JSName("findFirst")
-  def findFirst_BA[B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B]): fpDashTsLib.libOptionMod.Option[B] = js.native
+  def findFirst_BA[B /* <: A */](refinement: fpDashTsLib.libFunctionMod.Refinement[A, B]): fpDashTsLib.libOptionMod.Option[B] = js.native
   /**
     * Find the first index for which a predicate holds
     *
@@ -160,6 +160,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     */
   def foldrWithIndex[B](b: B, f: js.Function3[/* i */ scala.Double, /* a */ A, /* b */ B, B]): B = js.native
   /**
+    * Use `lookup` instead
     * @since 1.11.0
     * @deprecated
     */

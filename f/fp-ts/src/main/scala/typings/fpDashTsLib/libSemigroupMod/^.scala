@@ -37,6 +37,12 @@ object ^ extends js.Object {
   {[ K in keyof O ]: fp-ts.fp-ts/lib/Semigroup.Semigroup<O[K]>}
     */ fpDashTsLib.fpDashTsLibStrings.getStructSemigroup with O
   ): Semigroup[O] = js.native
-  def getTupleSemigroup[A, B](SA: Semigroup[A], SB: Semigroup[B]): Semigroup[js.Tuple2[A, B]] = js.native
+  def getTupleSemigroup[T /* <: fpDashTsLib.libArrayMod.Global.Array[Semigroup[_]] */](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param semigroups because its type T is not an array type */ semigroups: T
+  ): Semigroup[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: any}
+    */ fpDashTsLib.fpDashTsLibStrings.getTupleSemigroup with js.Any
+  ] = js.native
 }
 

@@ -52,6 +52,9 @@ object fpDashTsLibStrings {
   sealed trait NonEmptyArray extends js.Object
   
   @js.native
+  sealed trait NonEmptyArray2v extends js.Object
+  
+  @js.native
   sealed trait None extends js.Object
   
   @js.native
@@ -135,6 +138,27 @@ object fpDashTsLibStrings {
   @js.native
   sealed trait getStructSetoid extends js.Object
   
+  @js.native
+  sealed trait getTupleMonoid extends js.Object
+  
+  @js.native
+  sealed trait getTupleOrd extends js.Object
+  
+  @js.native
+  sealed trait getTupleRing extends js.Object
+  
+  @js.native
+  sealed trait getTupleSemigroup extends js.Object
+  
+  @js.native
+  sealed trait getTupleSetoid extends js.Object
+  
+  @js.native
+  sealed trait sequenceS extends js.Object
+  
+  @js.native
+  sealed trait sequenceT extends js.Object
+  
   @scala.inline
   def Array: Array = "Array".asInstanceOf[Array]
   @scala.inline
@@ -165,6 +189,8 @@ object fpDashTsLibStrings {
   def Map: Map = "Map".asInstanceOf[Map]
   @scala.inline
   def NonEmptyArray: NonEmptyArray = "NonEmptyArray".asInstanceOf[NonEmptyArray]
+  @scala.inline
+  def NonEmptyArray2v: NonEmptyArray2v = "NonEmptyArray2v".asInstanceOf[NonEmptyArray2v]
   @scala.inline
   def None: None = "None".asInstanceOf[None]
   @scala.inline
@@ -221,5 +247,19 @@ object fpDashTsLibStrings {
   def getStructSemigroup: getStructSemigroup = "getStructSemigroup".asInstanceOf[getStructSemigroup]
   @scala.inline
   def getStructSetoid: getStructSetoid = "getStructSetoid".asInstanceOf[getStructSetoid]
+  @scala.inline
+  def getTupleMonoid: getTupleMonoid = "getTupleMonoid".asInstanceOf[getTupleMonoid]
+  @scala.inline
+  def getTupleOrd: getTupleOrd = "getTupleOrd".asInstanceOf[getTupleOrd]
+  @scala.inline
+  def getTupleRing: getTupleRing = "getTupleRing".asInstanceOf[getTupleRing]
+  @scala.inline
+  def getTupleSemigroup: getTupleSemigroup = "getTupleSemigroup".asInstanceOf[getTupleSemigroup]
+  @scala.inline
+  def getTupleSetoid: getTupleSetoid = "getTupleSetoid".asInstanceOf[getTupleSetoid]
+  @scala.inline
+  def sequenceS: sequenceS = "sequenceS".asInstanceOf[sequenceS]
+  @scala.inline
+  def sequenceT: sequenceT = "sequenceT".asInstanceOf[sequenceT]
 }
 

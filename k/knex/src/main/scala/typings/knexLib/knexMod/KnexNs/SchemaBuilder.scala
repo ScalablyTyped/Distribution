@@ -17,6 +17,7 @@ trait SchemaBuilder extends ChainableInterface {
   def dropTableIfExists(tableName: java.lang.String): SchemaBuilder = js.native
   def hasColumn(tableName: java.lang.String, columnName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
   def hasTable(tableName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
+  def queryContext(context: js.Any): SchemaBuilder = js.native
   def raw(statement: java.lang.String): SchemaBuilder = js.native
   def renameTable(oldTableName: java.lang.String, newTableName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def table(tableName: java.lang.String, callback: js.Function1[/* tableBuilder */ AlterTableBuilder, _]): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native

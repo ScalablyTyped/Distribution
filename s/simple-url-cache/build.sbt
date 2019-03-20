@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "simple-url-cache"
-version := "0.0-unknown-dt-20180214Z-9a00a4"
+version := "0.0-unknown-dt-20180214Z-1a61d5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190318Z-f6d9fe",
-  "org.scalablytyped" %%% "redis" % "2.8-dt-20190313Z-5062b7",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
+  "org.scalablytyped" %%% "redis" % "2.8-dt-20190313Z-d16c64",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

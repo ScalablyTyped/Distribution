@@ -15,13 +15,16 @@ object CipherGCMOptions {
   def apply(
     allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined,
     authTagLength: scala.Int | scala.Double = null,
+    autoDestroy: js.UndefOr[scala.Boolean] = js.undefined,
     decodeStrings: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultEncoding: java.lang.String = null,
     destroy: js.ThisFunction2[
       /* this */ nodeLib.streamMod.internalNs.Transform, 
       /* error */ nodeLib.Error | scala.Null, 
       /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ] = null,
+    emitClose: js.UndefOr[scala.Boolean] = js.undefined,
     encoding: java.lang.String = null,
     `final`: js.ThisFunction1[
       /* this */ nodeLib.streamMod.internalNs.Transform, 
@@ -66,8 +69,11 @@ object CipherGCMOptions {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
     if (authTagLength != null) __obj.updateDynamic("authTagLength")(authTagLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)
+    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding)
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(emitClose)) __obj.updateDynamic("emitClose")(emitClose)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (`final` != null) __obj.updateDynamic("final")(`final`)
     if (flush != null) __obj.updateDynamic("flush")(flush)

@@ -37,5 +37,9 @@ trait Counterpart extends js.Object {
   def setLocale(value: java.lang.String): java.lang.String = js.native
   def setMissingEntryGenerator(callback: js.Function1[/* value */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def setSeparator(value: java.lang.String): java.lang.String = js.native
+  def translate(key: java.lang.String): java.lang.String = js.native
+  def translate(key: java.lang.String, options: js.Object): java.lang.String = js.native
+  def translate(key: js.Array[java.lang.String]): java.lang.String = js.native
+  def translate(key: js.Array[java.lang.String], options: js.Object): java.lang.String = js.native
 }
 

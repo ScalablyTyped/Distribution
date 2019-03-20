@@ -221,6 +221,41 @@ trait EKS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Updates an Amazon EKS cluster configuration. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Currently, the only cluster configuration changes supported are to enable or disable Amazon EKS public and private API server endpoints. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide . Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+    */
+  def updateClusterConfig(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def updateClusterConfig(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterConfigResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Updates an Amazon EKS cluster configuration. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Currently, the only cluster configuration changes supported are to enable or disable Amazon EKS public and private API server endpoints. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide . Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+    */
+  def updateClusterConfig(params: awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterConfigRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def updateClusterConfig(
+    params: awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterConfigRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterConfigResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEksMod.EKSNs.UpdateClusterConfigResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Updates an Amazon EKS cluster to the specified Kubernetes version. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
     */
   def updateClusterVersion(): awsDashSdkLib.libRequestMod.Request[

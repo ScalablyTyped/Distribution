@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "temp-file"
-version := "3.3.2-d1a1af"
+version := "3.3.2-89ab45"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-cc7043",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.7-2ef8e1",
-  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-50456b",
-  "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-907afd",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190318Z-f6d9fe",
+  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-27d691",
+  "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-e4068e",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -11,11 +11,13 @@ trait QueryBuilder
      with QueryInterface {
   var and: QueryBuilder = js.native
   var or: QueryBuilder = js.native
-  // TODO: Promise?
+  //TODO: Promise?
   def columnInfo(): bluebirdLib.bluebirdMod.namespaced[ColumnInfo] = js.native
   def columnInfo(column: java.lang.String): bluebirdLib.bluebirdMod.namespaced[ColumnInfo] = js.native
-  def forShare(): QueryBuilder = js.native
-  def forUpdate(): QueryBuilder = js.native
+  def forShare(tableNames: java.lang.String*): QueryBuilder = js.native
+  def forShare(tableNames: js.Array[java.lang.String]): QueryBuilder = js.native
+  def forUpdate(tableNames: java.lang.String*): QueryBuilder = js.native
+  def forUpdate(tableNames: js.Array[java.lang.String]): QueryBuilder = js.native
   /**
     * See if the underlying promise was cancelled at the creation time of this inspection object.
     */
@@ -40,7 +42,8 @@ trait QueryBuilder
   /* CompleteClass */
   /* InferMemberOverrides */
   override def isRejected(): scala.Boolean = js.native
-  def on(event: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): QueryBuilder = js.native
+  def on(event: java.lang.String, callback: js.Function): QueryBuilder = js.native
+  def queryContext(context: js.Any): QueryBuilder = js.native
   /**
     * Get the rejection reason for the underlying promise. Throws if the promise wasn't rejected at the creation time of this inspection object.
     *

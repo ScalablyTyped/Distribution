@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fork-ts-checker-webpack-plugin"
-version := "1.0.0-5edcd0"
+version := "1.0.0-21e533"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,16 +11,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel-code-frame" % "6.20-dt-20190212Z-856656",
   "org.scalablytyped" %%% "braces" % "2.3-dt-20180214Z-edb918",
   "org.scalablytyped" %%% "chalk" % "2.4.2-6d01d0",
-  "org.scalablytyped" %%% "chokidar" % "2.1.2-5268a0",
+  "org.scalablytyped" %%% "chokidar" % "2.1.2-480de3",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-f1b784",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-1f537b",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20180214Z-ec6929",
-  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20180214Z-64b0c3",
+  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20180214Z-b0c19a",
   "org.scalablytyped" %%% "is-binary-path" % "2.0-dt-20180214Z-3fe20d",
   "org.scalablytyped" %%% "is-glob" % "4.0-dt-20180214Z-399c7b",
   "org.scalablytyped" %%% "micromatch" % "3.1-dt-20180214Z-3ed78d",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-0a2b2c",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190318Z-f6d9fe",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
   "org.scalablytyped" %%% "normalize-path" % "3.0-dt-20181225Z-d47c85",
   "org.scalablytyped" %%% "path-is-absolute" % "1.0-dt-20180214Z-5c48c7",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-cc5b51",
@@ -30,7 +30,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-c57887",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-ffccaa",
   "org.scalablytyped" %%% "upath" % "1.1.2-339e4c",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190316Z-ea312d")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190316Z-c56cd1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

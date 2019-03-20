@@ -31,6 +31,10 @@ class QuestionMatrixBaseModel[TRow, TColumn] protected () extends Question {
     * @see visibleIf
     */
   var rowsVisibleIf: java.lang.String = js.native
+  /**
+    * Set this property to false, to hide table header. The default value is true.
+    */
+  var showHeader: scala.Boolean = js.native
   val visibleColumns: js.Array[_] = js.native
   /**
     * Returns the list of visible rows as model objects.

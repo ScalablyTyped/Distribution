@@ -14,7 +14,9 @@ object Through2MapOptions {
   @scala.inline
   def apply(
     allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    autoDestroy: js.UndefOr[scala.Boolean] = js.undefined,
     decodeStrings: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultEncoding: java.lang.String = null,
     destroy: js.ThisFunction2[
       /* this */ nodeLib.streamMod.internalNs.Readable, 
       /* error */ nodeLib.Error | scala.Null, 
@@ -27,6 +29,7 @@ object Through2MapOptions {
       /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
       scala.Unit
     ] = null,
+    emitClose: js.UndefOr[scala.Boolean] = js.undefined,
     encoding: java.lang.String = null,
     `final`: js.ThisFunction1[
       (/* this */ nodeLib.streamMod.internalNs.Duplex) | (/* this */ nodeLib.streamMod.internalNs.Writable), 
@@ -60,9 +63,12 @@ object Through2MapOptions {
   ): Through2MapOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
     if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)
+    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding)
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)
     if (destroy_DuplexOptions != null) __obj.updateDynamic("destroy")(destroy_DuplexOptions)
+    if (!js.isUndefined(emitClose)) __obj.updateDynamic("emitClose")(emitClose)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (`final` != null) __obj.updateDynamic("final")(`final`)
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])

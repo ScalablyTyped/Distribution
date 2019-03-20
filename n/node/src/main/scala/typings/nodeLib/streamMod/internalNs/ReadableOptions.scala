@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ReadableOptions extends js.Object {
+  var autoDestroy: js.UndefOr[scala.Boolean] = js.undefined
   var destroy: js.UndefOr[
     js.ThisFunction2[
       /* this */ Readable, 
@@ -23,6 +24,7 @@ trait ReadableOptions extends js.Object {
 object ReadableOptions {
   @scala.inline
   def apply(
+    autoDestroy: js.UndefOr[scala.Boolean] = js.undefined,
     destroy: js.ThisFunction2[
       /* this */ Readable, 
       /* error */ nodeLib.Error | scala.Null, 
@@ -35,6 +37,7 @@ object ReadableOptions {
     read: js.ThisFunction1[/* this */ Readable, /* size */ scala.Double, scala.Unit] = null
   ): ReadableOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoDestroy)) __obj.updateDynamic("autoDestroy")(autoDestroy)
     if (destroy != null) __obj.updateDynamic("destroy")(destroy)
     if (encoding != null) __obj.updateDynamic("encoding")(encoding)
     if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])

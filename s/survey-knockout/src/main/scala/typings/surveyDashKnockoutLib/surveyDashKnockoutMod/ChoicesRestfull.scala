@@ -20,6 +20,7 @@ class ChoicesRestfull () extends Base {
   var titleName: java.lang.String = js.native
   var url: java.lang.String = js.native
   var valueName: java.lang.String = js.native
+  def beforeSendRequestCallback(sender: ChoicesRestfull, options: surveyDashKnockoutLib.Anon_Request): scala.Unit = js.native
   def clear(): scala.Unit = js.native
   def getCustomPropertiesNames(): js.Array[java.lang.String] = js.native
   def getData(): js.Any = js.native

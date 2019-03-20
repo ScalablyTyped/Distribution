@@ -13,11 +13,7 @@ trait PlaceDetailsRequest extends js.Object {
     * parameter from a request, ALL possible fields will be returned, and you will be billed accordingly.
     * This applies only to Place Details requests.
     */
-  var fields: js.UndefOr[
-    js.Array[
-      atGoogleMapsLib.atGoogleMapsLibStrings.address_components | atGoogleMapsLib.atGoogleMapsLibStrings.formatted_address | atGoogleMapsLib.atGoogleMapsLibStrings.formatted_phone_number | atGoogleMapsLib.atGoogleMapsLibStrings.adr_address | atGoogleMapsLib.atGoogleMapsLibStrings.geometry | atGoogleMapsLib.atGoogleMapsLibStrings.plus_code | atGoogleMapsLib.atGoogleMapsLibStrings.icon | atGoogleMapsLib.atGoogleMapsLibStrings.international_phone_number | atGoogleMapsLib.atGoogleMapsLibStrings.name | atGoogleMapsLib.atGoogleMapsLibStrings.opening_hours | atGoogleMapsLib.atGoogleMapsLibStrings.permanently_closed | atGoogleMapsLib.atGoogleMapsLibStrings.photos | atGoogleMapsLib.atGoogleMapsLibStrings.place_id | atGoogleMapsLib.atGoogleMapsLibStrings.scope | atGoogleMapsLib.atGoogleMapsLibStrings.alt_ids | atGoogleMapsLib.atGoogleMapsLibStrings.price_level | atGoogleMapsLib.atGoogleMapsLibStrings.rating | atGoogleMapsLib.atGoogleMapsLibStrings.reviews | atGoogleMapsLib.atGoogleMapsLibStrings.types | atGoogleMapsLib.atGoogleMapsLibStrings.url | atGoogleMapsLib.atGoogleMapsLibStrings.utc_offset | atGoogleMapsLib.atGoogleMapsLibStrings.vicinity | atGoogleMapsLib.atGoogleMapsLibStrings.website
-    ]
-  ] = js.undefined
+  var fields: js.UndefOr[js.Array[PlaceDetailsRequestField]] = js.undefined
   /**
     * The language code, indicating in which language the results should be returned, if possible.
     * Note that some fields may not be available in the requested language.
@@ -46,9 +42,7 @@ object PlaceDetailsRequest {
   @scala.inline
   def apply(
     placeid: java.lang.String,
-    fields: js.Array[
-      atGoogleMapsLib.atGoogleMapsLibStrings.address_components | atGoogleMapsLib.atGoogleMapsLibStrings.formatted_address | atGoogleMapsLib.atGoogleMapsLibStrings.formatted_phone_number | atGoogleMapsLib.atGoogleMapsLibStrings.adr_address | atGoogleMapsLib.atGoogleMapsLibStrings.geometry | atGoogleMapsLib.atGoogleMapsLibStrings.plus_code | atGoogleMapsLib.atGoogleMapsLibStrings.icon | atGoogleMapsLib.atGoogleMapsLibStrings.international_phone_number | atGoogleMapsLib.atGoogleMapsLibStrings.name | atGoogleMapsLib.atGoogleMapsLibStrings.opening_hours | atGoogleMapsLib.atGoogleMapsLibStrings.permanently_closed | atGoogleMapsLib.atGoogleMapsLibStrings.photos | atGoogleMapsLib.atGoogleMapsLibStrings.place_id | atGoogleMapsLib.atGoogleMapsLibStrings.scope | atGoogleMapsLib.atGoogleMapsLibStrings.alt_ids | atGoogleMapsLib.atGoogleMapsLibStrings.price_level | atGoogleMapsLib.atGoogleMapsLibStrings.rating | atGoogleMapsLib.atGoogleMapsLibStrings.reviews | atGoogleMapsLib.atGoogleMapsLibStrings.types | atGoogleMapsLib.atGoogleMapsLibStrings.url | atGoogleMapsLib.atGoogleMapsLibStrings.utc_offset | atGoogleMapsLib.atGoogleMapsLibStrings.vicinity | atGoogleMapsLib.atGoogleMapsLibStrings.website
-    ] = null,
+    fields: js.Array[PlaceDetailsRequestField] = null,
     language: Language = null,
     region: java.lang.String = null,
     sessiontoken: java.lang.String = null
