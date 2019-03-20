@@ -9,8 +9,8 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   var cache: js.UndefOr[
     apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String]
   ] = js.undefined
-  var cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any
+  var cacheControl: js.UndefOr[
+    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions
   ] = js.undefined
   var context: js.UndefOr[TContext | js.Function0[scala.Nothing]] = js.undefined
   var dataSources: js.UndefOr[js.Function0[DataSources[TContext]]] = js.undefined
@@ -55,7 +55,7 @@ object GraphQLServerOptions {
   def apply[TContext, TRootValue](
     schema: graphqlLib.graphqlMod.GraphQLSchema,
     cache: apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String] = null,
-    cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any = null,
+    cacheControl: apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions = null,
     context: TContext | js.Function0[scala.Nothing] = null,
     dataSources: () => DataSources[TContext] = null,
     debug: js.UndefOr[scala.Boolean] = js.undefined,
