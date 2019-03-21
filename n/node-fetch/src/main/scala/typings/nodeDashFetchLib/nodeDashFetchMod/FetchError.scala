@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FetchError protected ()
   extends stdLib.Error {
+  def this(message: java.lang.String, `type`: java.lang.String) = this()
   def this(message: java.lang.String, `type`: java.lang.String, systemError: java.lang.String) = this()
   var code: js.UndefOr[java.lang.String] = js.native
   var errno: js.UndefOr[java.lang.String] = js.native

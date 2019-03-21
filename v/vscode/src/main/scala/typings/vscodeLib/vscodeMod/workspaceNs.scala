@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode", "workspace")
 @js.native
 object workspaceNs extends js.Object {
-  val onDidChangeConfiguration: vscodeLib.vscodeMod.Event[scala.Unit] = js.native
+  var name: js.UndefOr[java.lang.String] = js.native
+  val onDidChangeConfiguration: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.ConfigurationChangeEvent] = js.native
   val onDidChangeTextDocument: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextDocumentChangeEvent] = js.native
   val onDidChangeWorkspaceFolders: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.WorkspaceFoldersChangeEvent] = js.native
   val onDidCloseTextDocument: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextDocument] = js.native

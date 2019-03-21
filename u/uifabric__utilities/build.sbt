@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uifabric__utilities"
-version := "6.35.1-f29788"
+version := "6.35.1-4c021c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-430451",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-188abf",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
   "org.scalablytyped" %%% "tslib" % "1.9.3-28a6ab",
   "org.scalablytyped" %%% "uifabric__merge-styles" % "6.16.1-69da69",

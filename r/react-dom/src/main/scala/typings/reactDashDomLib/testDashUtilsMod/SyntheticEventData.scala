@@ -10,7 +10,7 @@ trait SyntheticEventData extends OptionalEventProperties {
   var button: js.UndefOr[scala.Double] = js.undefined
   var buttons: js.UndefOr[scala.Double] = js.undefined
   var changedTouches: js.UndefOr[stdLib.TouchList] = js.undefined
-  var charCode: js.UndefOr[scala.Boolean] = js.undefined
+  var charCode: js.UndefOr[scala.Double] = js.undefined
   var clientX: js.UndefOr[scala.Double] = js.undefined
   var clientY: js.UndefOr[scala.Double] = js.undefined
   var clipboardData: js.UndefOr[stdLib.DataTransfer] = js.undefined
@@ -48,7 +48,7 @@ object SyntheticEventData {
     buttons: scala.Int | scala.Double = null,
     cancelable: js.UndefOr[scala.Boolean] = js.undefined,
     changedTouches: stdLib.TouchList = null,
-    charCode: js.UndefOr[scala.Boolean] = js.undefined,
+    charCode: scala.Int | scala.Double = null,
     clientX: scala.Int | scala.Double = null,
     clientY: scala.Int | scala.Double = null,
     clipboardData: stdLib.DataTransfer = null,
@@ -93,7 +93,7 @@ object SyntheticEventData {
     if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
     if (changedTouches != null) __obj.updateDynamic("changedTouches")(changedTouches)
-    if (!js.isUndefined(charCode)) __obj.updateDynamic("charCode")(charCode)
+    if (charCode != null) __obj.updateDynamic("charCode")(charCode.asInstanceOf[js.Any])
     if (clientX != null) __obj.updateDynamic("clientX")(clientX.asInstanceOf[js.Any])
     if (clientY != null) __obj.updateDynamic("clientY")(clientY.asInstanceOf[js.Any])
     if (clipboardData != null) __obj.updateDynamic("clipboardData")(clipboardData)

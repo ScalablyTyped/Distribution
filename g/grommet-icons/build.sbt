@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grommet-icons"
-version := "4.2.0-70a336"
+version := "4.2.0-a6351e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-430451",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-188abf",
   "org.scalablytyped" %%% "react-native" % "0.57-dt-20190318Z-7533ec",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
   "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190223Z-279aa7")

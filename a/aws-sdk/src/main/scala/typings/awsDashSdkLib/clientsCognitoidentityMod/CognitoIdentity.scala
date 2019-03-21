@@ -81,14 +81,14 @@ trait CognitoIdentity
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes a user pool. Once a pool is deleted, users will not be able to authenticate with the pool. You must use AWS Developer credentials to call this API.
+    * Deletes an identity pool. Once a pool is deleted, users will not be able to authenticate with the pool. You must use AWS Developer credentials to call this API.
     */
   def deleteIdentityPool(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteIdentityPool(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes a user pool. Once a pool is deleted, users will not be able to authenticate with the pool. You must use AWS Developer credentials to call this API.
+    * Deletes an identity pool. Once a pool is deleted, users will not be able to authenticate with the pool. You must use AWS Developer credentials to call this API.
     */
   def deleteIdentityPool(params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.DeleteIdentityPoolInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteIdentityPool(
@@ -271,7 +271,7 @@ trait CognitoIdentity
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Gets an OpenID token, using a known Cognito ID. This known Cognito ID is returned by GetId. You can optionally add additional logins for the identity. Supplying multiple logins creates an implicit link. The OpenId token is valid for 15 minutes. This is a public API. You do not need any credentials to call this API.
+    * Gets an OpenID token, using a known Cognito ID. This known Cognito ID is returned by GetId. You can optionally add additional logins for the identity. Supplying multiple logins creates an implicit link. The OpenId token is valid for 10 minutes. This is a public API. You do not need any credentials to call this API.
     */
   def getOpenIdToken(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.GetOpenIdTokenResponse, 
@@ -288,7 +288,7 @@ trait CognitoIdentity
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Gets an OpenID token, using a known Cognito ID. This known Cognito ID is returned by GetId. You can optionally add additional logins for the identity. Supplying multiple logins creates an implicit link. The OpenId token is valid for 15 minutes. This is a public API. You do not need any credentials to call this API.
+    * Gets an OpenID token, using a known Cognito ID. This known Cognito ID is returned by GetId. You can optionally add additional logins for the identity. Supplying multiple logins creates an implicit link. The OpenId token is valid for 10 minutes. This is a public API. You do not need any credentials to call this API.
     */
   def getOpenIdToken(params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.GetOpenIdTokenInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.GetOpenIdTokenResponse, 
@@ -343,7 +343,7 @@ trait CognitoIdentity
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the identities in a pool. You must use AWS Developer credentials to call this API.
+    * Lists the identities in an identity pool. You must use AWS Developer credentials to call this API.
     */
   def listIdentities(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.ListIdentitiesResponse, 
@@ -360,7 +360,7 @@ trait CognitoIdentity
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the identities in a pool. You must use AWS Developer credentials to call this API.
+    * Lists the identities in an identity pool. You must use AWS Developer credentials to call this API.
     */
   def listIdentities(params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.ListIdentitiesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.ListIdentitiesResponse, 
@@ -413,7 +413,42 @@ trait CognitoIdentity
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves the IdentityID associated with a DeveloperUserIdentifier or the list of DeveloperUserIdentifiers associated with an IdentityId for an existing identity. Either IdentityID or DeveloperUserIdentifier must not be null. If you supply only one of these values, the other value will be searched in the database and returned as a part of the response. If you supply both, DeveloperUserIdentifier will be matched against IdentityID. If the values are verified against the database, the response returns both values and is the same as the request. Otherwise a ResourceConflictException is thrown. You must use AWS Developer credentials to call this API.
+    * Lists the tags that are assigned to an Amazon Cognito identity pool. A tag is a label that you can apply to identity pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria. You can use this action up to 10 times per second, per account.
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Lists the tags that are assigned to an Amazon Cognito identity pool. A tag is a label that you can apply to identity pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria. You can use this action up to 10 times per second, per account.
+    */
+  def listTagsForResource(params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.ListTagsForResourceInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.ListTagsForResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Retrieves the IdentityID associated with a DeveloperUserIdentifier or the list of DeveloperUserIdentifier values associated with an IdentityId for an existing identity. Either IdentityID or DeveloperUserIdentifier must not be null. If you supply only one of these values, the other value will be searched in the database and returned as a part of the response. If you supply both, DeveloperUserIdentifier will be matched against IdentityID. If the values are verified against the database, the response returns both values and is the same as the request. Otherwise a ResourceConflictException is thrown.  LookupDeveloperIdentity is intended for low-throughput control plane operations: for example, to enable customer service to locate an identity ID by username. If you are using it for higher-volume operations such as user authentication, your requests are likely to be throttled. GetOpenIdTokenForDeveloperIdentity is a better option for higher-volume operations for user authentication. You must use AWS Developer credentials to call this API.
     */
   def lookupDeveloperIdentity(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.LookupDeveloperIdentityResponse, 
@@ -430,7 +465,7 @@ trait CognitoIdentity
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves the IdentityID associated with a DeveloperUserIdentifier or the list of DeveloperUserIdentifiers associated with an IdentityId for an existing identity. Either IdentityID or DeveloperUserIdentifier must not be null. If you supply only one of these values, the other value will be searched in the database and returned as a part of the response. If you supply both, DeveloperUserIdentifier will be matched against IdentityID. If the values are verified against the database, the response returns both values and is the same as the request. Otherwise a ResourceConflictException is thrown. You must use AWS Developer credentials to call this API.
+    * Retrieves the IdentityID associated with a DeveloperUserIdentifier or the list of DeveloperUserIdentifier values associated with an IdentityId for an existing identity. Either IdentityID or DeveloperUserIdentifier must not be null. If you supply only one of these values, the other value will be searched in the database and returned as a part of the response. If you supply both, DeveloperUserIdentifier will be matched against IdentityID. If the values are verified against the database, the response returns both values and is the same as the request. Otherwise a ResourceConflictException is thrown.  LookupDeveloperIdentity is intended for low-throughput control plane operations: for example, to enable customer service to locate an identity ID by username. If you are using it for higher-volume operations such as user authentication, your requests are likely to be throttled. GetOpenIdTokenForDeveloperIdentity is a better option for higher-volume operations for user authentication. You must use AWS Developer credentials to call this API.
     */
   def lookupDeveloperIdentity(params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.LookupDeveloperIdentityInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.LookupDeveloperIdentityResponse, 
@@ -448,7 +483,7 @@ trait CognitoIdentity
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Merges two users having different IdentityIds, existing in the same identity pool, and identified by the same developer provider. You can use this action to request that discrete users be merged and identified as a single user in the Cognito environment. Cognito associates the given source user (SourceUserIdentifier) with the IdentityId of the DestinationUserIdentifier. Only developer-authenticated users can be merged. If the users to be merged are associated with the same public provider, but as two different users, an exception will be thrown. You must use AWS Developer credentials to call this API.
+    * Merges two users having different IdentityIds, existing in the same identity pool, and identified by the same developer provider. You can use this action to request that discrete users be merged and identified as a single user in the Cognito environment. Cognito associates the given source user (SourceUserIdentifier) with the IdentityId of the DestinationUserIdentifier. Only developer-authenticated users can be merged. If the users to be merged are associated with the same public provider, but as two different users, an exception will be thrown. The number of linked logins is limited to 20. So, the number of linked logins for the source user, SourceUserIdentifier, and the destination user, DestinationUserIdentifier, together should not be larger than 20. Otherwise, an exception will be thrown. You must use AWS Developer credentials to call this API.
     */
   def mergeDeveloperIdentities(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.MergeDeveloperIdentitiesResponse, 
@@ -465,7 +500,7 @@ trait CognitoIdentity
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Merges two users having different IdentityIds, existing in the same identity pool, and identified by the same developer provider. You can use this action to request that discrete users be merged and identified as a single user in the Cognito environment. Cognito associates the given source user (SourceUserIdentifier) with the IdentityId of the DestinationUserIdentifier. Only developer-authenticated users can be merged. If the users to be merged are associated with the same public provider, but as two different users, an exception will be thrown. You must use AWS Developer credentials to call this API.
+    * Merges two users having different IdentityIds, existing in the same identity pool, and identified by the same developer provider. You can use this action to request that discrete users be merged and identified as a single user in the Cognito environment. Cognito associates the given source user (SourceUserIdentifier) with the IdentityId of the DestinationUserIdentifier. Only developer-authenticated users can be merged. If the users to be merged are associated with the same public provider, but as two different users, an exception will be thrown. The number of linked logins is limited to 20. So, the number of linked logins for the source user, SourceUserIdentifier, and the destination user, DestinationUserIdentifier, together should not be larger than 20. Otherwise, an exception will be thrown. You must use AWS Developer credentials to call this API.
     */
   def mergeDeveloperIdentities(params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.MergeDeveloperIdentitiesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.MergeDeveloperIdentitiesResponse, 
@@ -498,6 +533,41 @@ trait CognitoIdentity
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Assigns a set of tags to an Amazon Cognito identity pool. A tag is a label that you can use to categorize and manage identity pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of an identity pool, one for testing and another for production, you might assign an Environment tag key to both identity pools. The value of this key might be Test for one identity pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your identity pools. In an IAM policy, you can constrain permissions for identity pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. An identity pool can have as many as 50 tags.
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Assigns a set of tags to an Amazon Cognito identity pool. A tag is a label that you can use to categorize and manage identity pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of an identity pool, one for testing and another for production, you might assign an Environment tag key to both identity pools. The value of this key might be Test for one identity pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your identity pools. In an IAM policy, you can constrain permissions for identity pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. An identity pool can have as many as 50 tags.
+    */
+  def tagResource(params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.TagResourceInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.TagResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Unlinks a DeveloperUserIdentifier from an existing identity. Unlinked developer users will be considered new identities next time they are seen. If, for a given Cognito identity, you remove all federated identities as well as the developer user identifier, the Cognito identity becomes inaccessible. You must use AWS Developer credentials to call this API.
     */
   def unlinkDeveloperIdentity(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -528,7 +598,42 @@ trait CognitoIdentity
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates a user pool. You must use AWS Developer credentials to call this API.
+    * Removes the specified tags from an Amazon Cognito identity pool. You can use this action up to 5 times per second, per account
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes the specified tags from an Amazon Cognito identity pool. You can use this action up to 5 times per second, per account
+    */
+  def untagResource(params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.UntagResourceInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.UntagResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Updates an identity pool. You must use AWS Developer credentials to call this API.
     */
   def updateIdentityPool(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPool, 
@@ -545,7 +650,7 @@ trait CognitoIdentity
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Updates a user pool. You must use AWS Developer credentials to call this API.
+    * Updates an identity pool. You must use AWS Developer credentials to call this API.
     */
   def updateIdentityPool(params: awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPool): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs.IdentityPool, 

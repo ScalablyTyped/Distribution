@@ -185,6 +185,102 @@ object CodePipelineNs extends js.Object {
     var token: js.UndefOr[ActionExecutionToken] = js.undefined
   }
   
+  trait ActionExecutionDetail extends js.Object {
+    /**
+      * The action execution ID.
+      */
+    var actionExecutionId: js.UndefOr[ActionExecutionId] = js.undefined
+    /**
+      * The name of the action.
+      */
+    var actionName: js.UndefOr[ActionName] = js.undefined
+    /**
+      * Input details for the action execution, such as role ARN, Region, and input artifacts.
+      */
+    var input: js.UndefOr[ActionExecutionInput] = js.undefined
+    /**
+      * The last update time of the action execution.
+      */
+    var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+      * Output details for the action execution, such as the action execution result.
+      */
+    var output: js.UndefOr[ActionExecutionOutput] = js.undefined
+    /**
+      * The pipeline execution ID for the action execution.
+      */
+    var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.undefined
+    /**
+      * The version of the pipeline where the action was run.
+      */
+    var pipelineVersion: js.UndefOr[PipelineVersion] = js.undefined
+    /**
+      * The name of the stage that contains the action.
+      */
+    var stageName: js.UndefOr[StageName] = js.undefined
+    /**
+      * The start time of the action execution.
+      */
+    var startTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+      *  The status of the action execution. Status categories are InProgress, Succeeded, and Failed.
+      */
+    var status: js.UndefOr[ActionExecutionStatus] = js.undefined
+  }
+  
+  trait ActionExecutionFilter extends js.Object {
+    /**
+      * The pipeline execution ID used to filter action execution history.
+      */
+    var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.undefined
+  }
+  
+  trait ActionExecutionInput extends js.Object {
+    var actionTypeId: js.UndefOr[ActionTypeId] = js.undefined
+    /**
+      * Configuration data for an action execution.
+      */
+    var configuration: js.UndefOr[ActionConfigurationMap] = js.undefined
+    /**
+      * Details of input artifacts of the action that correspond to the action execution.
+      */
+    var inputArtifacts: js.UndefOr[ArtifactDetailList] = js.undefined
+    /**
+      * The AWS Region for the action, such as us-east-1.
+      */
+    var region: js.UndefOr[AWSRegionName] = js.undefined
+    /**
+      * The ARN of the IAM service role that performs the declared action. This is assumed through the roleArn for the pipeline. 
+      */
+    var roleArn: js.UndefOr[RoleArn] = js.undefined
+  }
+  
+  trait ActionExecutionOutput extends js.Object {
+    /**
+      * Execution result information listed in the output details for an action execution.
+      */
+    var executionResult: js.UndefOr[ActionExecutionResult] = js.undefined
+    /**
+      * Details of output artifacts of the action that correspond to the action execution.
+      */
+    var outputArtifacts: js.UndefOr[ArtifactDetailList] = js.undefined
+  }
+  
+  trait ActionExecutionResult extends js.Object {
+    /**
+      * The action provider's external ID for the action execution.
+      */
+    var externalExecutionId: js.UndefOr[ExternalExecutionId] = js.undefined
+    /**
+      * The action provider's summary for the action execution.
+      */
+    var externalExecutionSummary: js.UndefOr[ExternalExecutionSummary] = js.undefined
+    /**
+      * The deepest external link to the external resource (for example, a repository URL or deployment endpoint) that is used when running the action.
+      */
+    var externalExecutionUrl: js.UndefOr[Url] = js.undefined
+  }
+  
   trait ActionRevision extends js.Object {
     /**
       * The date and time when the most recent version of the action was created, in timestamp format.
@@ -256,7 +352,7 @@ object CodePipelineNs extends js.Object {
       */
     var owner: ActionOwner
     /**
-      * The provider of the service being called by the action. Valid providers are determined by the action category. For example, an action in the Deploy category type might have a provider of AWS CodeDeploy, which would be specified as CodeDeploy.
+      * The provider of the service being called by the action. Valid providers are determined by the action category. For example, an action in the Deploy category type might have a provider of AWS CodeDeploy, which would be specified as CodeDeploy. To reference a list of action providers by action type, see Valid Action Types and Providers in CodePipeline.
       */
     var provider: ActionProvider
     /**
@@ -308,6 +404,17 @@ object CodePipelineNs extends js.Object {
       * The artifact's revision ID. Depending on the type of object, this could be a commit ID (GitHub) or a revision ID (Amazon S3).
       */
     var revision: js.UndefOr[Revision] = js.undefined
+  }
+  
+  trait ArtifactDetail extends js.Object {
+    /**
+      * The artifact object name for the action execution.
+      */
+    var name: js.UndefOr[ArtifactName] = js.undefined
+    /**
+      * The Amazon S3 artifact location for the action execution.
+      */
+    var s3location: js.UndefOr[S3Location] = js.undefined
   }
   
   trait ArtifactDetails extends js.Object {
@@ -768,6 +875,36 @@ object CodePipelineNs extends js.Object {
       * The unique system-generated ID of the job.
       */
     var id: js.UndefOr[JobId] = js.undefined
+  }
+  
+  trait ListActionExecutionsInput extends js.Object {
+    /**
+      * Input information used to filter action execution history.
+      */
+    var filter: js.UndefOr[ActionExecutionFilter] = js.undefined
+    /**
+      * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned nextToken value. The action execution history is limited to the most recent 12 months, based on action execution start times. Default value is 100. 
+      */
+    var maxResults: js.UndefOr[MaxResults] = js.undefined
+    /**
+      * The token that was returned from the previous ListActionExecutions call, which can be used to return the next set of action executions in the list.
+      */
+    var nextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+      *  The name of the pipeline for which you want to list action execution history.
+      */
+    var pipelineName: PipelineName
+  }
+  
+  trait ListActionExecutionsOutput extends js.Object {
+    /**
+      * The details for a list of recent executions, such as action execution ID.
+      */
+    var actionExecutionDetails: js.UndefOr[ActionExecutionDetailList] = js.undefined
+    /**
+      * If the amount of returned information is significantly large, an identifier is also returned and can be used in a subsequent ListActionExecutions call to return the next set of action executions in the list.
+      */
+    var nextToken: js.UndefOr[NextToken] = js.undefined
   }
   
   trait ListActionTypesInput extends js.Object {
@@ -1245,6 +1382,17 @@ object CodePipelineNs extends js.Object {
     var objectKey: S3ObjectKey
   }
   
+  trait S3Location extends js.Object {
+    /**
+      * The Amazon S3 artifact bucket for an action's artifacts.
+      */
+    var bucket: js.UndefOr[S3Bucket] = js.undefined
+    /**
+      * The artifact name.
+      */
+    var key: js.UndefOr[S3Key] = js.undefined
+  }
+  
   trait SourceRevision extends js.Object {
     /**
       * The name of the action that processed the revision to the source artifact.
@@ -1687,7 +1835,7 @@ object CodePipelineNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetPipelineExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns information about the state of a pipeline, including the stages and actions.
+      * Returns information about the state of a pipeline, including the stages and actions.  Values returned in the revisionId and revisionUrl fields indicate the source revision information, such as the commit ID, for the current state. 
       */
     def getPipelineState(): awsDashSdkLib.libRequestMod.Request[GetPipelineStateOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getPipelineState(
@@ -1698,7 +1846,7 @@ object CodePipelineNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetPipelineStateOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns information about the state of a pipeline, including the stages and actions.
+      * Returns information about the state of a pipeline, including the stages and actions.  Values returned in the revisionId and revisionUrl fields indicate the source revision information, such as the commit ID, for the current state. 
       */
     def getPipelineState(params: GetPipelineStateInput): awsDashSdkLib.libRequestMod.Request[GetPipelineStateOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getPipelineState(
@@ -1732,6 +1880,29 @@ object CodePipelineNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetThirdPartyJobDetailsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists the action executions that have occurred in a pipeline.
+      */
+    def listActionExecutions(): awsDashSdkLib.libRequestMod.Request[ListActionExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listActionExecutions(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListActionExecutionsOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListActionExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists the action executions that have occurred in a pipeline.
+      */
+    def listActionExecutions(params: ListActionExecutionsInput): awsDashSdkLib.libRequestMod.Request[ListActionExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listActionExecutions(
+      params: ListActionExecutionsInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListActionExecutionsOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListActionExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Gets a summary of all AWS CodePipeline action types associated with your account.
       */
@@ -2190,6 +2361,8 @@ object CodePipelineNs extends js.Object {
   type ActionConfigurationPropertyType = _ActionConfigurationPropertyType | java.lang.String
   type ActionConfigurationQueryableValue = java.lang.String
   type ActionConfigurationValue = java.lang.String
+  type ActionExecutionDetailList = js.Array[ActionExecutionDetail]
+  type ActionExecutionId = java.lang.String
   type ActionExecutionStatus = _ActionExecutionStatus | java.lang.String
   type ActionExecutionToken = java.lang.String
   type ActionName = java.lang.String
@@ -2201,6 +2374,7 @@ object CodePipelineNs extends js.Object {
   type ApprovalStatus = _ApprovalStatus | java.lang.String
   type ApprovalSummary = java.lang.String
   type ApprovalToken = java.lang.String
+  type ArtifactDetailList = js.Array[ArtifactDetail]
   type ArtifactList = js.Array[Artifact]
   type ArtifactLocationType = awsDashSdkLib.awsDashSdkLibStrings.S3 | java.lang.String
   type ArtifactName = java.lang.String
@@ -2223,6 +2397,8 @@ object CodePipelineNs extends js.Object {
   type EncryptionKeyType = awsDashSdkLib.awsDashSdkLibStrings.KMS | java.lang.String
   type ExecutionId = java.lang.String
   type ExecutionSummary = java.lang.String
+  type ExternalExecutionId = java.lang.String
+  type ExternalExecutionSummary = java.lang.String
   type FailureType = _FailureType | java.lang.String
   type InputArtifactList = js.Array[InputArtifact]
   type JobId = java.lang.String
@@ -2254,7 +2430,9 @@ object CodePipelineNs extends js.Object {
   type RevisionChangeIdentifier = java.lang.String
   type RevisionSummary = java.lang.String
   type RoleArn = java.lang.String
+  type S3Bucket = java.lang.String
   type S3BucketName = java.lang.String
+  type S3Key = java.lang.String
   type S3ObjectKey = java.lang.String
   type SecretAccessKey = java.lang.String
   type SessionToken = java.lang.String

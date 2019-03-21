@@ -59,7 +59,7 @@ object GaugeChart {
     cropThreshold: scala.Int | scala.Double = null,
     cursor: java.lang.String = null,
     dashStyle: java.lang.String = null,
-    dataLabels: DataLabels = null,
+    dataLabels: DataLabels | js.Array[DataLabels] = null,
     datalabels: DataLabels = null,
     dial: Dial = null,
     enableMouseTracking: js.UndefOr[scala.Boolean] = js.undefined,
@@ -107,7 +107,7 @@ object GaugeChart {
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (datalabels != null) __obj.updateDynamic("datalabels")(datalabels)
     if (dial != null) __obj.updateDynamic("dial")(dial)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)

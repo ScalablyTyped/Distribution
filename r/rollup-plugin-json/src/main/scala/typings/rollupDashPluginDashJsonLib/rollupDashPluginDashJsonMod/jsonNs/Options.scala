@@ -1,5 +1,5 @@
 package typings
-package rollupDashPluginDashJsonLib.rollupDashPluginDashJsonMod
+package rollupDashPluginDashJsonLib.rollupDashPluginDashJsonMod.jsonNs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`

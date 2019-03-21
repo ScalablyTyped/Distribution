@@ -12,6 +12,7 @@ class I18n () extends js.Object {
   var language: java.lang.String = js.native
   var languageData: LanguageData = js.native
   var messages: Messages = js.native
+  def `_`(id: MessageDescriptor): java.lang.String = js.native
   def `_`(id: java.lang.String): java.lang.String = js.native
   def `_`(id: java.lang.String, values: js.Object): java.lang.String = js.native
   def `_`(id: java.lang.String, values: js.Object, messageOptions: MessageOptions): java.lang.String = js.native

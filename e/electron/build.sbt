@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "electron"
-version := "4.1.0-becc65"
+version := "4.1.1-becc65"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

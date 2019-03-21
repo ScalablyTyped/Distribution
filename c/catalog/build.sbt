@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "catalog"
-version := "3.6.0-64049d"
+version := "3.6.0-1b9c1e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -47,17 +47,17 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "marked" % "0.6-dt-20190307Z-48199e",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-fcf6a3",
   "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-6cb1f3",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-d54d74",
   "org.scalablytyped" %%% "postcss" % "7.0.14-2ea67b",
   "org.scalablytyped" %%% "prismjs" % "1.9-dt-20190212Z-cae4f9",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "raf" % "3.4-dt-20190103Z-956f39",
-  "org.scalablytyped" %%% "ramda" % "0.26-dt-20190311Z-da096c",
+  "org.scalablytyped" %%% "ramda" % "0.26-dt-20190320Z-da096c",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-5082d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
   "org.scalablytyped" %%% "react-dev-utils" % "7.0-dt-20190128Z-1846c1",
   "org.scalablytyped" %%% "react-document-title" % "2.0-dt-20180803Z-2714e3",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-430451",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-188abf",
   "org.scalablytyped" %%% "react-router" % "4.4-dt-20190228Z-0ab6c6",
   "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20180214Z-eefacf",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-2a152d",
@@ -68,7 +68,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-155129",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-c57887",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-ffccaa",
-  "org.scalablytyped" %%% "unfetch" % "3.1.2-8da7ba",
+  "org.scalablytyped" %%% "unfetch" % "3.1.2-d3a174",
   "org.scalablytyped" %%% "webpack" % "4.4-dt-20190316Z-c56cd1",
   "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20190304Z-c62681",
   "org.scalablytyped" %%% "webpack-manifest-plugin" % "2.0-dt-20181216Z-989fee")

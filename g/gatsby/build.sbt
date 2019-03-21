@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gatsby"
-version := "2.2.2-290b00"
+version := "2.2.4-2150f7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -66,7 +66,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "flat" % "0.0-unknown-dt-20180214Z-f27ae9",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-7c4227",
   "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-27d691",
-  "org.scalablytyped" %%% "gatsby-link" % "2.0.16-31712f",
+  "org.scalablytyped" %%% "gatsby-link" % "2.0.16-e306f6",
   "org.scalablytyped" %%% "get-port" % "4.0-dt-20181215Z-62f021",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-16ba97",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20180214Z-ec6929",
@@ -128,7 +128,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "reach__router" % "1.2-dt-20190114Z-67e431",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
   "org.scalablytyped" %%% "react-dev-utils" % "7.0-dt-20190128Z-1846c1",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-430451",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-188abf",
   "org.scalablytyped" %%% "react-hot-loader" % "4.1-dt-20180426Z-2db013",
   "org.scalablytyped" %%% "redux" % "4.0.1-18f3a8",
   "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20180214Z-eefacf",

@@ -143,7 +143,7 @@ object BoxPlotChartSeriesOptions {
     data: js.Array[
       scala.Double | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, scala.Double]) | (js.Tuple3[java.lang.String, scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Double]) | DataPoint
     ] = null,
-    dataLabels: DataLabels = null,
+    dataLabels: DataLabels | js.Array[DataLabels] = null,
     depth: scala.Int | scala.Double = null,
     description: java.lang.String = null,
     edgeColor: java.lang.String = null,
@@ -222,7 +222,7 @@ object BoxPlotChartSeriesOptions {
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
     if (data != null) __obj.updateDynamic("data")(data)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (edgeColor != null) __obj.updateDynamic("edgeColor")(edgeColor)

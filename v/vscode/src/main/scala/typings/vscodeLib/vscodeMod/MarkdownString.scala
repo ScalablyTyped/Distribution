@@ -24,6 +24,13 @@ class MarkdownString () extends _MarkedString {
   		 */
   var value: java.lang.String = js.native
   /**
+  		 * Appends the given string as codeblock using the provided language.
+  		 * @param value A code snippet.
+  		 * @param language An optional [language identifier](#languages.getLanguages).
+  		 */
+  def appendCodeblock(value: java.lang.String): MarkdownString = js.native
+  def appendCodeblock(value: java.lang.String, language: java.lang.String): MarkdownString = js.native
+  /**
   		 * Appends the given string 'as is' to this markdown string.
   		 * @param value Markdown string.
   		 */

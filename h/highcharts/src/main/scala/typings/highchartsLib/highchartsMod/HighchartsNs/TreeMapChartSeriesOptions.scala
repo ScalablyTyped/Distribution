@@ -144,7 +144,7 @@ object TreeMapChartSeriesOptions {
     data: js.Array[
       scala.Double | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, scala.Double]) | (js.Tuple3[java.lang.String, scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Double]) | DataPoint
     ] = null,
-    dataLabels: DataLabels = null,
+    dataLabels: DataLabels | js.Array[DataLabels] = null,
     description: java.lang.String = null,
     enableMouseTracking: js.UndefOr[scala.Boolean] = js.undefined,
     events: PlotEvents = null,
@@ -216,7 +216,7 @@ object TreeMapChartSeriesOptions {
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
     if (data != null) __obj.updateDynamic("data")(data)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)

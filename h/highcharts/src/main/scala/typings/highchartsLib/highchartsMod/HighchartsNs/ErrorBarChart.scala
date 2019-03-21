@@ -131,7 +131,7 @@ object ErrorBarChart {
     cropThreshold: scala.Int | scala.Double = null,
     cursor: java.lang.String = null,
     dashStyle: java.lang.String = null,
-    dataLabels: DataLabels = null,
+    dataLabels: DataLabels | js.Array[DataLabels] = null,
     depth: scala.Int | scala.Double = null,
     edgeColor: java.lang.String = null,
     edgeWidth: scala.Int | scala.Double = null,
@@ -188,7 +188,7 @@ object ErrorBarChart {
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (edgeColor != null) __obj.updateDynamic("edgeColor")(edgeColor)
     if (edgeWidth != null) __obj.updateDynamic("edgeWidth")(edgeWidth.asInstanceOf[js.Any])

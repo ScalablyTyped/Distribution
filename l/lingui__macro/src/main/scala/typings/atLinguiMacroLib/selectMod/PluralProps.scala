@@ -13,22 +13,22 @@ trait PluralProps extends PluralForms {
 object PluralProps {
   @scala.inline
   def apply(
-    other: java.lang.String,
+    other: java.lang.String | atLinguiCoreLib.i18nMod.MessageDescriptor,
     value: scala.Double,
-    few: java.lang.String = null,
-    many: java.lang.String = null,
+    few: java.lang.String | atLinguiCoreLib.i18nMod.MessageDescriptor = null,
+    many: java.lang.String | atLinguiCoreLib.i18nMod.MessageDescriptor = null,
     offset: scala.Int | scala.Double = null,
-    one: java.lang.String = null,
-    two: java.lang.String = null,
-    zero: java.lang.String = null
+    one: java.lang.String | atLinguiCoreLib.i18nMod.MessageDescriptor = null,
+    two: java.lang.String | atLinguiCoreLib.i18nMod.MessageDescriptor = null,
+    zero: java.lang.String | atLinguiCoreLib.i18nMod.MessageDescriptor = null
   ): PluralProps = {
-    val __obj = js.Dynamic.literal(other = other, value = value)
-    if (few != null) __obj.updateDynamic("few")(few)
-    if (many != null) __obj.updateDynamic("many")(many)
+    val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], value = value)
+    if (few != null) __obj.updateDynamic("few")(few.asInstanceOf[js.Any])
+    if (many != null) __obj.updateDynamic("many")(many.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (one != null) __obj.updateDynamic("one")(one)
-    if (two != null) __obj.updateDynamic("two")(two)
-    if (zero != null) __obj.updateDynamic("zero")(zero)
+    if (one != null) __obj.updateDynamic("one")(one.asInstanceOf[js.Any])
+    if (two != null) __obj.updateDynamic("two")(two.asInstanceOf[js.Any])
+    if (zero != null) __obj.updateDynamic("zero")(zero.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluralProps]
   }
 }

@@ -12,8 +12,8 @@ trait AlertCustomOptionsWithType extends AlertCustomOptions {
 object AlertCustomOptionsWithType {
   @scala.inline
   def apply(
-    onClose: () => js.UndefOr[scala.Nothing] = null,
-    onOpen: () => js.UndefOr[scala.Nothing] = null,
+    onClose: () => scala.Unit = null,
+    onOpen: () => scala.Unit = null,
     timeout: scala.Int | scala.Double = null,
     `type`: AlertType = null
   ): AlertCustomOptionsWithType = {

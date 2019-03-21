@@ -9,8 +9,8 @@ trait Anon_Index extends js.Object {
   var index: js.UndefOr[scala.Double] = js.undefined
   var line: js.UndefOr[scala.Double] = js.undefined
   var message: java.lang.String
-  var node: js.Any
-  var result: stylelintLib.stylelintMod.LintResult
+  var node: postcssLib.postcssMod.postcssNs.Node
+  var result: postcssLib.postcssMod.postcssNs.Result
   var ruleName: java.lang.String
   var word: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -19,8 +19,8 @@ object Anon_Index {
   @scala.inline
   def apply(
     message: java.lang.String,
-    node: js.Any,
-    result: stylelintLib.stylelintMod.LintResult,
+    node: postcssLib.postcssMod.postcssNs.Node,
+    result: postcssLib.postcssMod.postcssNs.Result,
     ruleName: java.lang.String,
     index: scala.Int | scala.Double = null,
     line: scala.Int | scala.Double = null,

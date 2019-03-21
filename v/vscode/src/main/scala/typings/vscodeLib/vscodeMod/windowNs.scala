@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object windowNs extends js.Object {
   var activeTextEditor: js.UndefOr[vscodeLib.vscodeMod.TextEditor] = js.native
-  val onDidChangeActiveTextEditor: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextEditor] = js.native
+  val onDidChangeActiveTextEditor: vscodeLib.vscodeMod.Event[js.UndefOr[vscodeLib.vscodeMod.TextEditor]] = js.native
   val onDidChangeTextEditorOptions: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextEditorOptionsChangeEvent] = js.native
   val onDidChangeTextEditorSelection: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextEditorSelectionChangeEvent] = js.native
   val onDidChangeTextEditorViewColumn: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextEditorViewColumnChangeEvent] = js.native
@@ -102,6 +102,8 @@ object windowNs extends js.Object {
   def showWarningMessage_TMessageItem[T /* <: vscodeLib.vscodeMod.MessageItem */](message: java.lang.String, items: T*): vscodeLib.Thenable[js.UndefOr[T]] = js.native
   @JSName("showWarningMessage")
   def showWarningMessage_TMessageItem[T /* <: vscodeLib.vscodeMod.MessageItem */](message: java.lang.String, options: vscodeLib.vscodeMod.MessageOptions, items: T*): vscodeLib.Thenable[js.UndefOr[T]] = js.native
+  def showWorkspaceFolderPick(): vscodeLib.Thenable[js.UndefOr[vscodeLib.vscodeMod.WorkspaceFolder]] = js.native
+  def showWorkspaceFolderPick(options: vscodeLib.vscodeMod.WorkspaceFolderPickOptions): vscodeLib.Thenable[js.UndefOr[vscodeLib.vscodeMod.WorkspaceFolder]] = js.native
   def withProgress[R](
     options: vscodeLib.vscodeMod.ProgressOptions,
     task: js.Function1[

@@ -61,6 +61,7 @@ class Request ()
   def output(name: java.lang.String, `type`: js.Function0[ISqlType], value: js.Any): Request = js.native
   def output(name: java.lang.String, `type`: ISqlType): Request = js.native
   def output(name: java.lang.String, `type`: ISqlType, value: js.Any): Request = js.native
+  def pause(): scala.Boolean = js.native
   def pipe(stream: nodeLib.NodeJSNs.WritableStream): nodeLib.NodeJSNs.WritableStream = js.native
   def query(command: java.lang.String): js.Promise[IResult[_]] = js.native
   def query[Entity](
@@ -73,5 +74,6 @@ class Request ()
   ): scala.Unit = js.native
   @JSName("query")
   def query_Entity[Entity](command: java.lang.String): js.Promise[IResult[Entity]] = js.native
+  def resume(): scala.Boolean = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hapi-pino"
-version := "5.2-dt-20181212Z-fdc7ee"
+version := "5.2-dt-20181212Z-f48eba"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20180214Z-f97a6c",
   "org.scalablytyped" %%% "mimos" % "3.0-dt-20180214Z-57d54e",
   "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20190212Z-798628",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20190319Z-732471",
   "org.scalablytyped" %%% "podium" % "1.0-dt-20180214Z-af8e6b",
   "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-eb4d21",
   "org.scalablytyped" %%% "sonic-boom" % "0.6-dt-20190212Z-82b57f",

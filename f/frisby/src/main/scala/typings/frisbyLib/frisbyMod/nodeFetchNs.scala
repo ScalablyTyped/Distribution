@@ -22,6 +22,7 @@ object nodeFetchNs extends js.Object {
   @js.native
   class FetchError protected ()
     extends nodeDashFetchLib.nodeDashFetchMod.FetchError {
+    def this(message: java.lang.String, `type`: java.lang.String) = this()
     def this(message: java.lang.String, `type`: java.lang.String, systemError: java.lang.String) = this()
   }
   

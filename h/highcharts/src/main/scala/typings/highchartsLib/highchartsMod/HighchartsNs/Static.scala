@@ -130,18 +130,18 @@ trait Static extends js.Object {
     defaultFunction: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   /**
-  				 * Highcharts ganttChart which doesn't require the new keyword. Required Highcharts Gantt module.
-  				 */
-  def ganttChart(renderTo: java.lang.String, options: Options): ChartObject = js.native
+  		 * Highcharts ganttChart which doesn't require the new keyword. Required Highcharts Gantt module.
+  		 */
+  def ganttChart(renderTo: java.lang.String, options: GanttOptions): ChartObject = js.native
   def ganttChart(
     renderTo: java.lang.String,
-    options: Options,
+    options: GanttOptions,
     callback: js.Function1[/* chart */ ChartObject, scala.Unit]
   ): ChartObject = js.native
-  def ganttChart(renderTo: stdLib.HTMLElement, options: Options): ChartObject = js.native
+  def ganttChart(renderTo: stdLib.HTMLElement, options: GanttOptions): ChartObject = js.native
   def ganttChart(
     renderTo: stdLib.HTMLElement,
-    options: Options,
+    options: GanttOptions,
     callback: js.Function1[/* chart */ ChartObject, scala.Unit]
   ): ChartObject = js.native
   /**

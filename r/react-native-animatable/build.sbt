@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-animatable"
-version := "1.3.1-5f9665"
+version := "1.3.2-5f9665"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

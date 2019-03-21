@@ -39,9 +39,9 @@ object MarketplaceMeteringNs extends js.Object {
   
   trait MeterUsageRequest extends js.Object {
     /**
-      * Checks whether you have the permissions required for the action, but does not make the request. If you have the permissions, the request returns DryRunOperation; otherwise, it returns UnauthorizedException.
+      * Checks whether you have the permissions required for the action, but does not make the request. If you have the permissions, the request returns DryRunOperation; otherwise, it returns UnauthorizedException. Defaults to false if not specified.
       */
-    var DryRun: Boolean
+    var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
       * Product code is used to uniquely identify a product in AWS Marketplace. The product code should be the same as the one used during the publishing of a new product.
       */
@@ -55,9 +55,9 @@ object MarketplaceMeteringNs extends js.Object {
       */
     var UsageDimension: awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.UsageDimension
     /**
-      * Consumption value for the hour.
+      * Consumption value for the hour. Defaults to 0 if not specified.
       */
-    var UsageQuantity: awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs.UsageQuantity
+    var UsageQuantity: js.UndefOr[UsageQuantity] = js.undefined
   }
   
   trait MeterUsageResult extends js.Object {
@@ -220,9 +220,9 @@ object MarketplaceMeteringNs extends js.Object {
       */
     var Dimension: UsageDimension
     /**
-      * The quantity of usage consumed by the customer for the given dimension and time.
+      * The quantity of usage consumed by the customer for the given dimension and time. Defaults to 0 if not specified.
       */
-    var Quantity: UsageQuantity
+    var Quantity: js.UndefOr[UsageQuantity] = js.undefined
     /**
       * Timestamp of the hour, recorded in UTC. The seconds and milliseconds portions of the timestamp will be ignored. Your application can meter usage for up to one hour in the past.
       */

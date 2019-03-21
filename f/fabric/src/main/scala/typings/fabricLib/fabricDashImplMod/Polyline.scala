@@ -17,6 +17,7 @@ class Polyline protected () extends Object {
   	 */
   def this(points: js.Array[fabricLib.Anon_X]) = this()
   def this(points: js.Array[fabricLib.Anon_X], options: IPolylineOptions) = this()
+  var pathOffset: Point = js.native
   /**
   	 * Points array
   	 */

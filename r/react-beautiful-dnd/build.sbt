@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-beautiful-dnd"
-version := "10.1-dt-20190312Z-c1278d"
+version := "10.1-dt-20190319Z-42b1cd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

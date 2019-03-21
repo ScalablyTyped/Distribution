@@ -14,6 +14,10 @@ object languagesNs extends js.Object {
   def `match`(selector: vscodeLib.vscodeMod.DocumentSelector, document: vscodeLib.vscodeMod.TextDocument): scala.Double = js.native
   def registerCodeActionsProvider(selector: vscodeLib.vscodeMod.DocumentSelector, provider: vscodeLib.vscodeMod.CodeActionProvider): vscodeLib.vscodeMod.Disposable = js.native
   def registerCodeLensProvider(selector: vscodeLib.vscodeMod.DocumentSelector, provider: vscodeLib.vscodeMod.CodeLensProvider): vscodeLib.vscodeMod.Disposable = js.native
+  def registerColorProvider(
+    selector: vscodeLib.vscodeMod.DocumentSelector,
+    provider: vscodeLib.vscodeMod.DocumentColorProvider
+  ): vscodeLib.vscodeMod.Disposable = js.native
   def registerCompletionItemProvider(
     selector: vscodeLib.vscodeMod.DocumentSelector,
     provider: vscodeLib.vscodeMod.CompletionItemProvider,

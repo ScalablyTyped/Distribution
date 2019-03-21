@@ -33,8 +33,8 @@ trait DataPoint extends js.Object {
     */
   var drilldown: js.UndefOr[java.lang.String] = js.undefined
   /**
-  				 * The end value of the point. For gantt datetime axes, the end value is the timestamp in milliseconds since 1970.
-  				 */
+    * The end value of the point. For gantt datetime axes, the end value is the timestamp in milliseconds since 1970.
+    */
   var end: js.UndefOr[scala.Double] = js.undefined
   /**
     * Individual point events
@@ -116,8 +116,8 @@ trait DataPoint extends js.Object {
     */
   var sliced: js.UndefOr[scala.Boolean] = js.undefined
   /**
-  				 * The start value of the point. For gantt datetime axes, the start value is the timestamp in milliseconds since 1970.
-  				 */
+    * The start value of the point. For gantt datetime axes, the start value is the timestamp in milliseconds since 1970.
+    */
   var start: js.UndefOr[scala.Double] = js.undefined
   /**
     * The value of the point, resulting in a relative area of the point in the treemap.

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-pino-logger"
-version := "2.1-dt-20190212Z-7a63b7"
+version := "2.1-dt-20190212Z-b4c054"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,8 +18,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190131Z-2880d6",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-fcf6a3",
   "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20190212Z-798628",
-  "org.scalablytyped" %%% "pino-http" % "4.0-dt-20190301Z-71a360",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20190319Z-732471",
+  "org.scalablytyped" %%% "pino-http" % "4.0-dt-20190301Z-8f7909",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-5082d0",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-2a152d",
   "org.scalablytyped" %%% "sonic-boom" % "0.6-dt-20190212Z-82b57f",

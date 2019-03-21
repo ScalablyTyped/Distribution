@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-alert"
-version := "4.0-dt-20181103Z-55e91c"
+version := "5.2-dt-20190319Z-eebea8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

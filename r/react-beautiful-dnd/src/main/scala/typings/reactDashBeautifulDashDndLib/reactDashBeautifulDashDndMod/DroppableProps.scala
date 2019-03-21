@@ -14,13 +14,13 @@ trait DroppableProps extends js.Object {
   var isCombineEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var isDropDisabled: js.UndefOr[scala.Boolean] = js.undefined
   var `type`: js.UndefOr[TypeId] = js.undefined
-  def children(provided: DroppableProvided, snapshot: DroppableStateSnapshot): reactLib.reactMod.ReactNs.ReactElement[_]
+  def children(provided: DroppableProvided, snapshot: DroppableStateSnapshot): reactLib.reactMod.ReactNs.ReactElement[stdLib.HTMLElement]
 }
 
 object DroppableProps {
   @scala.inline
   def apply(
-    children: (DroppableProvided, DroppableStateSnapshot) => reactLib.reactMod.ReactNs.ReactElement[_],
+    children: (DroppableProvided, DroppableStateSnapshot) => reactLib.reactMod.ReactNs.ReactElement[stdLib.HTMLElement],
     droppableId: DroppableId,
     direction: reactDashBeautifulDashDndLib.reactDashBeautifulDashDndLibStrings.vertical | reactDashBeautifulDashDndLib.reactDashBeautifulDashDndLibStrings.horizontal = null,
     ignoreContainerClipping: js.UndefOr[scala.Boolean] = js.undefined,

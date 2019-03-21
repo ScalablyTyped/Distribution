@@ -211,6 +211,11 @@ trait BaseLogger
     */
   def info(obj: js.Object): scala.Unit = js.native
   def info(obj: js.Object, msg: java.lang.String, args: js.Any*): scala.Unit = js.native
+  def isLevelEnabled(level: java.lang.String): scala.Boolean = js.native
+  /**
+    * A utility method for determining if a given log level will write to the destination.
+    */
+  def isLevelEnabled(level: LevelWithSilent): scala.Boolean = js.native
   /**
     * Registers a listener function that is triggered when the level is changed.
     * Note: When browserified, this functionality will only be available if the `events` module has been required elsewhere

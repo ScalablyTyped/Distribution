@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashAlertLibComponents {
   @scala.inline
-  def Provider: reactLib.reactMod.ReactNs.ComponentType[reactDashAlertLib.reactDashAlertMod.ProviderOptions with Anon_Template] = js.constructorOf[reactDashAlertLib.reactDashAlertMod.Provider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactDashAlertLib.reactDashAlertMod.ProviderOptions with reactDashAlertLib.Anon_Template]]
+  def Provider: reactLib.reactMod.ReactNs.ComponentType[reactDashAlertLib.reactDashAlertMod.AlertProviderProps] = js.constructorOf[reactDashAlertLib.reactDashAlertMod.Provider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashAlertLib.reactDashAlertMod.AlertProviderProps]]
+  @scala.inline
+  def AlertProviderProps: reactDashAlertLib.reactDashAlertMod.AlertProviderProps.type = reactDashAlertLib.reactDashAlertMod.AlertProviderProps
+  type AlertProviderProps = reactDashAlertLib.reactDashAlertMod.AlertProviderProps
 }
 

@@ -53,29 +53,23 @@ trait Converter extends js.Object {
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeLens
     ]
   ): js.UndefOr[js.Array[vscodeLib.vscodeMod.CodeLens]] = js.native
-  def asColor(color: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Color): js.Any = js.native
-  def asColorInformation(ci: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.ColorInformation): js.Any = js.native
-  def asColorInformations(): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify code.ColorInformation */ _
-  ] = js.native
+  def asColor(color: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Color): vscodeLib.vscodeMod.Color = js.native
+  def asColorInformation(ci: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.ColorInformation): vscodeLib.vscodeMod.ColorInformation = js.native
+  def asColorInformations(): js.Array[vscodeLib.vscodeMod.ColorInformation] = js.native
   def asColorInformations(
     colorPresentations: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.ColorInformation
     ]
-  ): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify code.ColorInformation */ _
-  ] = js.native
+  ): js.Array[vscodeLib.vscodeMod.ColorInformation] = js.native
   @JSName("asColorInformations")
   def asColorInformations_UndefOr(): js.UndefOr[scala.Nothing] = js.native
-  def asColorPresentation(cp: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.ColorPresentation): js.Any = js.native
+  def asColorPresentation(cp: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.ColorPresentation): vscodeLib.vscodeMod.ColorPresentation = js.native
   def asColorPresentations(): js.UndefOr[scala.Nothing] = js.native
   def asColorPresentations(
     colorPresentations: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.ColorPresentation
     ]
-  ): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify code.ColorPresentation */ _
-  ] = js.native
+  ): js.Array[vscodeLib.vscodeMod.ColorPresentation] = js.native
   @JSName("asColorPresentations")
   def asColorPresentations_UndefOr(
     colorPresentations: js.Array[

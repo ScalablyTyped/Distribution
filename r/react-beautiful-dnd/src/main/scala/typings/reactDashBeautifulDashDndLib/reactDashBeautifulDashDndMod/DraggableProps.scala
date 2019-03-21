@@ -12,13 +12,13 @@ trait DraggableProps extends js.Object {
   var isDragDisabled: js.UndefOr[scala.Boolean] = js.undefined
   var shouldRespectForceTouch: js.UndefOr[scala.Boolean] = js.undefined
   var `type`: js.UndefOr[TypeId] = js.undefined
-  def children(provided: DraggableProvided, snapshot: DraggableStateSnapshot): reactLib.reactMod.ReactNs.ReactElement[_]
+  def children(provided: DraggableProvided, snapshot: DraggableStateSnapshot): reactLib.reactMod.ReactNs.ReactElement[stdLib.HTMLElement]
 }
 
 object DraggableProps {
   @scala.inline
   def apply(
-    children: (DraggableProvided, DraggableStateSnapshot) => reactLib.reactMod.ReactNs.ReactElement[_],
+    children: (DraggableProvided, DraggableStateSnapshot) => reactLib.reactMod.ReactNs.ReactElement[stdLib.HTMLElement],
     draggableId: DroppableId,
     index: scala.Double,
     disableInteractiveElementBlocking: js.UndefOr[scala.Boolean] = js.undefined,

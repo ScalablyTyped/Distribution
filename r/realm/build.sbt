@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "realm"
-version := "2.25.0-273181"
+version := "2.25.0-c75ec4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "deepmerge" % "3.2.0-4b2fad",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-7c4227",
   "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-6cb1f3",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-d54d74",
   "org.scalablytyped" %%% "node-machine-id" % "1.1.10-214687",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-ed2106",

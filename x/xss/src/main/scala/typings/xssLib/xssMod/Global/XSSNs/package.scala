@@ -1,5 +1,5 @@
 package typings
-package xssLib
+package xssLib.xssMod.Global
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`

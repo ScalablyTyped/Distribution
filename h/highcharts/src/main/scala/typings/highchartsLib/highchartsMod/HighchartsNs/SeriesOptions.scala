@@ -63,7 +63,10 @@ import scala.scalajs.js.annotation._
     * @default 'Solid'
     */
   var dashStyle: js.UndefOr[java.lang.String] = js.undefined
-  var dataLabels: js.UndefOr[DataLabels] = js.undefined
+  /**
+    * Gantt charts use one or more data labels for each series, for showing multiple date periods.
+    */
+  var dataLabels: js.UndefOr[DataLabels | js.Array[DataLabels]] = js.undefined
   /**
     * Enable or disable the mouse tracking for a specific series. This includes point tooltips and click events on
     * graphs and points. For large datasets it improves performance.
@@ -256,7 +259,7 @@ object SeriesOptions {
     data: js.Array[
       scala.Double | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, scala.Double]) | (js.Tuple3[java.lang.String, scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Double]) | DataPoint
     ] = null,
-    dataLabels: DataLabels = null,
+    dataLabels: DataLabels | js.Array[DataLabels] = null,
     description: java.lang.String = null,
     enableMouseTracking: js.UndefOr[scala.Boolean] = js.undefined,
     events: PlotEvents = null,
@@ -315,7 +318,7 @@ object SeriesOptions {
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
     if (data != null) __obj.updateDynamic("data")(data)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)

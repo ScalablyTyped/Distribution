@@ -9,11 +9,11 @@ trait AlertCustomOptions extends js.Object {
   /**
     * Callback that will be executed after this alert is removed
     */
-  var onClose: js.UndefOr[js.Function0[js.UndefOr[scala.Nothing]]] = js.undefined
+  var onClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
     * Callback that will be executed after this alert open
     */
-  var onOpen: js.UndefOr[js.Function0[js.UndefOr[scala.Nothing]]] = js.undefined
+  var onOpen: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
     * Custom timeout just for this one alert
     */
@@ -23,8 +23,8 @@ trait AlertCustomOptions extends js.Object {
 object AlertCustomOptions {
   @scala.inline
   def apply(
-    onClose: () => js.UndefOr[scala.Nothing] = null,
-    onOpen: () => js.UndefOr[scala.Nothing] = null,
+    onClose: () => scala.Unit = null,
+    onOpen: () => scala.Unit = null,
     timeout: scala.Int | scala.Double = null
   ): AlertCustomOptions = {
     val __obj = js.Dynamic.literal()

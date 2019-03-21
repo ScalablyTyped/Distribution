@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-sortable-tree-theme-file-explorer"
-version := "0.0-dt-20181210Z-04db7c"
+version := "0.0-dt-20181210Z-89128b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,10 +15,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
-  "org.scalablytyped" %%% "react-dnd" % "7.3.2-99956d",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-430451",
-  "org.scalablytyped" %%% "react-sortable-tree" % "0.3-dt-20190318Z-808d89",
-  "org.scalablytyped" %%% "react-virtualized" % "9.18-dt-20190110Z-aa58de",
+  "org.scalablytyped" %%% "react-dnd" % "7.3.2-ba6e53",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-188abf",
+  "org.scalablytyped" %%% "react-sortable-tree" % "0.3-dt-20190318Z-678949",
+  "org.scalablytyped" %%% "react-virtualized" % "9.21-dt-20190315Z-569b09",
   "org.scalablytyped" %%% "recompose" % "0.30-dt-20190225Z-8e4599",
   "org.scalablytyped" %%% "redux" % "4.0.1-18f3a8",
   "org.scalablytyped" %%% "shallowequal" % "1.1-dt-20190202Z-aebda3",

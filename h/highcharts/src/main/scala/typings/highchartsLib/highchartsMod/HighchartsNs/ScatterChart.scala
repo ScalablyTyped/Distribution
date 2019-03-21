@@ -28,7 +28,7 @@ object ScatterChart {
     cropThreshold: scala.Int | scala.Double = null,
     cursor: java.lang.String = null,
     dashStyle: java.lang.String = null,
-    dataLabels: DataLabels = null,
+    dataLabels: DataLabels | js.Array[DataLabels] = null,
     enableMouseTracking: js.UndefOr[scala.Boolean] = js.undefined,
     events: PlotEvents = null,
     findNearestPointBy: java.lang.String = null,
@@ -71,7 +71,7 @@ object ScatterChart {
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)
     if (findNearestPointBy != null) __obj.updateDynamic("findNearestPointBy")(findNearestPointBy)

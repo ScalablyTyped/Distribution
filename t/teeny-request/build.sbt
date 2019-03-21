@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "teeny-request"
-version := "3.11.3-f9224d"
+version := "3.11.3-4f0fe9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-768261",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-7c4227",
   "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-6cb1f3",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-d54d74",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-ed2106",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-0cc572",

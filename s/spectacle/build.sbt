@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "spectacle"
-version := "5.4.0-d4c1a5"
+version := "5.4.0-83cd89"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -25,7 +25,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prismjs" % "1.9-dt-20190212Z-cae4f9",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-430451",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-188abf",
   "org.scalablytyped" %%% "react-live" % "1.12.0-e12a29",
   "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190318Z-be2f73",
   "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-bf9b8d",

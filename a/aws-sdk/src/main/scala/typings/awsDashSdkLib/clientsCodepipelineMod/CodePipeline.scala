@@ -386,7 +386,7 @@ trait CodePipeline
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about the state of a pipeline, including the stages and actions.
+    * Returns information about the state of a pipeline, including the stages and actions.  Values returned in the revisionId and revisionUrl fields indicate the source revision information, such as the commit ID, for the current state. 
     */
   def getPipelineState(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineStateOutput, 
@@ -403,7 +403,7 @@ trait CodePipeline
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about the state of a pipeline, including the stages and actions.
+    * Returns information about the state of a pipeline, including the stages and actions.  Values returned in the revisionId and revisionUrl fields indicate the source revision information, such as the commit ID, for the current state. 
     */
   def getPipelineState(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineStateInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetPipelineStateOutput, 
@@ -453,6 +453,41 @@ trait CodePipeline
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.GetThirdPartyJobDetailsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Lists the action executions that have occurred in a pipeline.
+    */
+  def listActionExecutions(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listActionExecutions(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Lists the action executions that have occurred in a pipeline.
+    */
+  def listActionExecutions(params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listActionExecutions(
+    params: awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs.ListActionExecutionsOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

@@ -74,10 +74,7 @@ object ^ extends js.Object {
     stateless: reactLib.reactMod.ReactNs.StatelessComponent[
       reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.HitsProvided[THit]
     ]
-  ): reactLib.reactMod.ReactNs.ComponentClass[
-    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.HighlightPassedThru[_], 
-    reactLib.reactMod.ReactNs.ComponentState
-  ] = js.native
+  ): reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectHits[TProps /* <: reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.HitsProvided[THit] */, THit](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[
     TProps, 
     reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.HitsProvided[THit], 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lingui__core"
-version := "2.2-dt-20190213Z-6be1ed"
+version := "2.7-dt-20190320Z-1cb65b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

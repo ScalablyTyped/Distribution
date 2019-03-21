@@ -5,21 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("apollo-cache-control", "CacheControlExtension")
+@JSImport("apollo-cache-control", "CacheControlExtension")
 @js.native
-class CacheControlExtension[TContext] () extends js.Object {
+class CacheControlExtension[TContext] ()
+  extends graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[TContext] {
   def this(options: CacheControlExtensionOptions) = this()
   var defaultMaxAge: js.Any = js.native
   var hints: js.Any = js.native
   var options: CacheControlExtensionOptions = js.native
-  var willSendResponse: js.UndefOr[
+  @JSName("willSendResponse")
+  var willSendResponse_CacheControlExtension: js.UndefOr[
     js.Function1[/* o */ apolloDashCacheDashControlLib.Anon_GraphqlResponse, scala.Unit]
   ] = js.native
   def addHint(path: graphqlLib.typeDefinitionMod.ResponsePath, hint: CacheHint): scala.Unit = js.native
   def computeOverallCachePolicy(): js.UndefOr[stdLib.Required[CacheHint]] = js.native
-  def format(): js.UndefOr[js.Tuple2[java.lang.String, CacheControlFormat]] = js.native
-  def willResolveField(
+  @JSName("format")
+  def format_MCacheControlExtension(): js.UndefOr[js.Tuple2[java.lang.String, CacheControlFormat]] = js.native
+  @JSName("willResolveField")
+  def willResolveField_MCacheControlExtension(
     _source: js.Any,
     _args: org.scalablytyped.runtime.StringDictionary[js.Any],
     _context: TContext,

@@ -47,5 +47,6 @@ object ^ extends js.Object {
   var UserProperties: googleDashAppsDashScriptLib.GoogleAppsScriptNs.PropertiesNs.UserProperties = js.native
   var Utilities: googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.Utilities = js.native
   var XmlService: googleDashAppsDashScriptLib.GoogleAppsScriptNs.XMLUnderscoreServiceNs.XmlService = js.native
+  var console: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.console = js.native
 }
 

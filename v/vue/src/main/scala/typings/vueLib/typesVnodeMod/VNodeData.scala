@@ -24,7 +24,7 @@ trait VNodeData extends js.Object {
   var slot: js.UndefOr[java.lang.String] = js.undefined
   var staticClass: js.UndefOr[java.lang.String] = js.undefined
   var staticStyle: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
-  var style: js.UndefOr[js.Array[js.Object] | js.Object] = js.undefined
+  var style: js.UndefOr[java.lang.String | js.Array[js.Object] | js.Object] = js.undefined
   var tag: js.UndefOr[java.lang.String] = js.undefined
   var transition: js.UndefOr[js.Object] = js.undefined
 }
@@ -50,7 +50,7 @@ object VNodeData {
     slot: java.lang.String = null,
     staticClass: java.lang.String = null,
     staticStyle: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    style: js.Array[js.Object] | js.Object = null,
+    style: java.lang.String | js.Array[js.Object] | js.Object = null,
     tag: java.lang.String = null,
     transition: js.Object = null
   ): VNodeData = {

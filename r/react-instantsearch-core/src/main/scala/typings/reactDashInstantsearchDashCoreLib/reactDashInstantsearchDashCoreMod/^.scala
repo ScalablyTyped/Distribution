@@ -21,7 +21,7 @@ object ^ extends js.Object {
   def connectHierarchicalMenu(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectHighlight[TDoc](stateless: reactLib.reactMod.ReactNs.StatelessComponent[HighlightProps[TDoc]]): reactLib.reactMod.ReactNs.ComponentClass[HighlightPassedThru[TDoc], reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectHighlight[TProps /* <: stdLib.Partial[HighlightProps[TDoc]] */, TDoc](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): ConnectedComponentClass[TProps, HighlightProvided[TDoc], js.Object] = js.native
-  def connectHits[THit](stateless: reactLib.reactMod.ReactNs.StatelessComponent[HitsProvided[THit]]): reactLib.reactMod.ReactNs.ComponentClass[HighlightPassedThru[_], reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def connectHits[THit](stateless: reactLib.reactMod.ReactNs.StatelessComponent[HitsProvided[THit]]): reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectHits[TProps /* <: HitsProvided[THit] */, THit](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): ConnectedComponentClass[TProps, HitsProvided[THit], js.Object] = js.native
   def connectHitsPerPage(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native
   def connectInfiniteHits(Composed: reactLib.reactMod.ReactNs.ComponentType[InfiniteHitsProvided[_]]): reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = js.native

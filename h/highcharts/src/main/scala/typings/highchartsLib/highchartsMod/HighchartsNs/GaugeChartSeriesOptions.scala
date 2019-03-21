@@ -138,7 +138,7 @@ object GaugeChartSeriesOptions {
     data: js.Array[
       scala.Double | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, scala.Double]) | (js.Tuple3[java.lang.String, scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Double]) | DataPoint
     ] = null,
-    dataLabels: DataLabels = null,
+    dataLabels: DataLabels | js.Array[DataLabels] = null,
     datalabels: DataLabels = null,
     description: java.lang.String = null,
     dial: Dial = null,
@@ -202,7 +202,7 @@ object GaugeChartSeriesOptions {
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
     if (data != null) __obj.updateDynamic("data")(data)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (datalabels != null) __obj.updateDynamic("datalabels")(datalabels)
     if (description != null) __obj.updateDynamic("description")(description)
     if (dial != null) __obj.updateDynamic("dial")(dial)

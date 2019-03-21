@@ -26,6 +26,8 @@ trait ISchema[T] extends js.Object {
   var exclusiveMinimum: js.UndefOr[scala.Double] = js.undefined
   /**Value must be a valid format */
   var format: js.UndefOr[Formats] = js.undefined
+  /**Property to describe items for type: 'array' */
+  var items: js.UndefOr[ISchema[T] | JSONSchema[T]] = js.undefined
   /**Value must contain fewer than expected number of items */
   var maxItems: js.UndefOr[scala.Double] = js.undefined
   /**The length of value must be greater than or equal to expected value */
@@ -66,6 +68,7 @@ object ISchema {
     exclusiveMaximum: scala.Int | scala.Double = null,
     exclusiveMinimum: scala.Int | scala.Double = null,
     format: Formats = null,
+    items: ISchema[T] | JSONSchema[T] = null,
     maxItems: scala.Int | scala.Double = null,
     maxLength: scala.Int | scala.Double = null,
     maximum: scala.Int | scala.Double = null,
@@ -90,6 +93,7 @@ object ISchema {
     if (exclusiveMaximum != null) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum.asInstanceOf[js.Any])
     if (exclusiveMinimum != null) __obj.updateDynamic("exclusiveMinimum")(exclusiveMinimum.asInstanceOf[js.Any])
     if (format != null) __obj.updateDynamic("format")(format)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     if (maxItems != null) __obj.updateDynamic("maxItems")(maxItems.asInstanceOf[js.Any])
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])

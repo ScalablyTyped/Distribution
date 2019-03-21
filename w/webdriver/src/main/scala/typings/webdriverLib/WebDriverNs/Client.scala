@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
 // saucelabs types
 @js.native
 trait Client extends js.Object {
+  def _setWindowSize(width: scala.Double, height: scala.Double): scala.Unit = js.native
   def acceptAlert(): scala.Unit = js.native
   def activateIME(engine: java.lang.String): scala.Unit = js.native
   def addCookie(cookie: js.Object): scala.Unit = js.native
@@ -244,7 +245,6 @@ trait Client extends js.Object {
   def setWindowRect(x: scala.Null, y: scala.Null, width: scala.Double): js.Object = js.native
   def setWindowRect(x: scala.Null, y: scala.Null, width: scala.Double, height: scala.Double): js.Object = js.native
   def setWindowRect(x: scala.Null, y: scala.Null, width: scala.Null, height: scala.Double): js.Object = js.native
-  def setWindowSize(width: scala.Double, height: scala.Double): scala.Unit = js.native
   def shake(): scala.Unit = js.native
   def shutdown(): scala.Unit = js.native
   def startActivity(

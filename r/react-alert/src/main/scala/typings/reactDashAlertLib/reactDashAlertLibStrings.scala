@@ -34,6 +34,18 @@ object reactDashAlertLibStrings {
     extends reactDashAlertLib.reactDashAlertMod.AlertType
   
   @js.native
+  sealed trait middle
+    extends reactDashAlertLib.reactDashAlertMod.AlertPosition
+  
+  @js.native
+  sealed trait `middle left`
+    extends reactDashAlertLib.reactDashAlertMod.AlertPosition
+  
+  @js.native
+  sealed trait `middle right`
+    extends reactDashAlertLib.reactDashAlertMod.AlertPosition
+  
+  @js.native
   sealed trait scale
     extends reactDashAlertLib.reactDashAlertMod.AlertTransition
   
@@ -67,6 +79,12 @@ object reactDashAlertLibStrings {
   def fade: fade = "fade".asInstanceOf[fade]
   @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
+  def `middle left`: `middle left` = "middle left".asInstanceOf[`middle left`]
+  @scala.inline
+  def `middle right`: `middle right` = "middle right".asInstanceOf[`middle right`]
   @scala.inline
   def scale: scale = "scale".asInstanceOf[scale]
   @scala.inline

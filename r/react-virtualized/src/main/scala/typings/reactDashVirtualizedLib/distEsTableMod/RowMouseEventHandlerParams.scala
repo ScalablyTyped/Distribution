@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait RowMouseEventHandlerParams extends js.Object {
   var event: reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent]
   var index: scala.Double
-  var rowData: reactDashVirtualizedLib.Anon_ColumnData
+  var rowData: js.Any
 }
 
 object RowMouseEventHandlerParams {
@@ -16,7 +16,7 @@ object RowMouseEventHandlerParams {
   def apply(
     event: reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent],
     index: scala.Double,
-    rowData: reactDashVirtualizedLib.Anon_ColumnData
+    rowData: js.Any
   ): RowMouseEventHandlerParams = {
     val __obj = js.Dynamic.literal(event = event, index = index, rowData = rowData)
   

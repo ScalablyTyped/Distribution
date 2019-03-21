@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pouchdb-adapter-node-websql"
-version := "6.1-dt-20190212Z-8f8ce2"
+version := "6.1-dt-20190212Z-caae43"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-4b79e1",
   "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-6cb1f3",
-  "org.scalablytyped" %%% "pouchdb-adapter-websql" % "6.1-dt-20190212Z-b34469",
-  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20190212Z-cdbebd",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-d54d74",
+  "org.scalablytyped" %%% "pouchdb-adapter-websql" % "6.1-dt-20190212Z-2cd7af",
+  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20190212Z-5dc9ce",
   "org.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20190212Z-b02a9c",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false

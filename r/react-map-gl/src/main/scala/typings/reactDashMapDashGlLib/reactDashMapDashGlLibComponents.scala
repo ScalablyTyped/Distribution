@@ -13,6 +13,8 @@ object reactDashMapDashGlLibComponents {
   @scala.inline
   def DraggableControl: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.DraggableControlProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.DraggableControl].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.DraggableControlProps]]
   @scala.inline
+  def FullscreenControl: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControl].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps]]
+  @scala.inline
   def HTMLOverlay: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlay].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps]]
   @scala.inline
   def InteractiveMap: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMapProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMap].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMapProps]]
@@ -34,6 +36,9 @@ object reactDashMapDashGlLibComponents {
   @scala.inline
   def DraggableControlProps: reactDashMapDashGlLib.reactDashMapDashGlMod.DraggableControlProps.type = reactDashMapDashGlLib.reactDashMapDashGlMod.DraggableControlProps
   type DraggableControlProps = reactDashMapDashGlLib.reactDashMapDashGlMod.DraggableControlProps
+  @scala.inline
+  def FullscreenControlProps: reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps.type = reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps
+  type FullscreenControlProps = reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps
   @scala.inline
   def HTMLOverlayProps: reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps.type = reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps
   type HTMLOverlayProps = reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps

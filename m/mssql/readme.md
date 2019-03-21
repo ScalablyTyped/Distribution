@@ -8,6 +8,7 @@
 //                 Jørgen Elgaard Larsen <https://github.com/elhaard>
 //                 Peter Keuter <https://github.com/pkeuter>
 //                 David Gasperoni <https://github.com/mcdado>
+//                 Jeff Wooden <https://github.com/woodenconsulting>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.1
 // Export the same API as index.d.ts (which implicitly uses the "msnodesqlv8" driver):

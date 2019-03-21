@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode", "debug")
 @js.native
 object debugNs extends js.Object {
+  var activeDebugConsole: vscodeLib.vscodeMod.DebugConsole = js.native
   var activeDebugSession: js.UndefOr[vscodeLib.vscodeMod.DebugSession] = js.native
   val onDidChangeActiveDebugSession: vscodeLib.vscodeMod.Event[js.UndefOr[vscodeLib.vscodeMod.DebugSession]] = js.native
   val onDidReceiveDebugSessionCustomEvent: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.DebugSessionCustomEvent] = js.native

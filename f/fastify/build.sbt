@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fastify"
-version := "2.1.0-4890c0"
+version := "2.1.0-32a30b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fastq" % "1.6.0-8c591b",
   "org.scalablytyped" %%% "find-my-way" % "2.0.1-0a34d8",
   "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20190212Z-798628",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20190319Z-732471",
   "org.scalablytyped" %%% "proxy-addr" % "2.0-dt-20180214Z-04341f",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-cebc3d",
   "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20190227Z-0e4cac",

@@ -5,5 +5,6 @@
 //                 Niklas Lindgren <https://github.com/nikcorg>
 //                 Vinay Bedre <https://github.com/vinaybedre>
 //                 Antonio Román <https://github.com/kyranet>
+//                 Andrew Leedham <https://github.com/AndrewLeedham>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

@@ -90,7 +90,7 @@ object BubbleChart {
     cropThreshold: scala.Int | scala.Double = null,
     cursor: java.lang.String = null,
     dashStyle: java.lang.String = null,
-    dataLabels: DataLabels = null,
+    dataLabels: DataLabels | js.Array[DataLabels] = null,
     displayNegative: js.UndefOr[scala.Boolean] = js.undefined,
     enableMouseTracking: js.UndefOr[scala.Boolean] = js.undefined,
     events: PlotEvents = null,
@@ -141,7 +141,7 @@ object BubbleChart {
     if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
     if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
     if (!js.isUndefined(displayNegative)) __obj.updateDynamic("displayNegative")(displayNegative)
     if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking)
     if (events != null) __obj.updateDynamic("events")(events)

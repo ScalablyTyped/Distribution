@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-instantsearch-core"
-version := "5.2-dt-20190222Z-9f0a8d"
+version := "5.2-dt-20190320Z-81d0fe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

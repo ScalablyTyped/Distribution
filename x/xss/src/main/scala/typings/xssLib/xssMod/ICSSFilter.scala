@@ -1,13 +1,12 @@
 package typings
-package xssLib.XSSNs
+package xssLib.xssMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ICSSFilter extends js.Object {
-  def process(value: java.lang.String): java.lang.String
-}
+trait ICSSFilter
+  extends xssLib.xssMod.Global.XSSNs.ICSSFilter
 
 object ICSSFilter {
   @scala.inline
