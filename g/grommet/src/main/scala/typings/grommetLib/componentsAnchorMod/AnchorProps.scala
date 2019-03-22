@@ -10,7 +10,7 @@ trait AnchorProps extends js.Object {
   var alignSelf: js.UndefOr[
     grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch
   ] = js.undefined
-  var as: js.UndefOr[java.lang.String] = js.undefined
+  var as: js.UndefOr[grommetLib.utilsMod.PolymorphicType] = js.undefined
   var color: js.UndefOr[java.lang.String | grommetLib.Anon_Dark] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined
@@ -31,7 +31,7 @@ object AnchorProps {
   def apply(
     a11yTitle: java.lang.String = null,
     alignSelf: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch = null,
-    as: java.lang.String = null,
+    as: grommetLib.utilsMod.PolymorphicType = null,
     color: java.lang.String | grommetLib.Anon_Dark = null,
     gridArea: java.lang.String = null,
     href: java.lang.String = null,

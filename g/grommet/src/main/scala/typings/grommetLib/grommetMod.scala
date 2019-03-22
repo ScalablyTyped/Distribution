@@ -23,9 +23,12 @@ object grommetMod extends js.Object {
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
   val Anchor: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsAnchorMod.AnchorProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
-      reactLib.HTMLAnchorElement
+    grommetLib.componentsAnchorMod.AnchorProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
+        reactLib.HTMLAnchorElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ]), 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
@@ -38,9 +41,12 @@ object grommetMod extends js.Object {
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
   val Button: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsButtonMod.ButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
-      reactLib.HTMLButtonElement
+    grommetLib.componentsButtonMod.ButtonProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
+        reactLib.HTMLButtonElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ]), 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
@@ -118,8 +124,8 @@ object grommetMod extends js.Object {
   ] = js.native
   val FormField: reactLib.reactMod.ReactNs.ComponentClass[
     grommetLib.componentsFormFieldMod.FormFieldProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
+      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+      reactLib.HTMLInputElement
     ]), 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
@@ -137,9 +143,12 @@ object grommetMod extends js.Object {
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
   val Heading: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsHeadingMod.HeadingProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLHeadingElement], 
-      reactLib.HTMLHeadingElement
+    grommetLib.componentsHeadingMod.HeadingProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLHeadingElement], 
+        reactLib.HTMLHeadingElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ])
   ] = js.native
   val Image: reactLib.reactMod.ReactNs.FC[
@@ -186,9 +195,12 @@ object grommetMod extends js.Object {
   ] = js.native
   val Meter: reactLib.reactMod.ReactNs.ComponentClass[grommetLib.componentsMeterMod.MeterProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
   val Paragraph: reactLib.reactMod.ReactNs.FC[
-    grommetLib.componentsParagraphMod.ParagraphProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLParagraphElement], 
-      reactLib.HTMLParagraphElement
+    grommetLib.componentsParagraphMod.ParagraphProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLParagraphElement], 
+        reactLib.HTMLParagraphElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ])
   ] = js.native
   val RadioButton: reactLib.reactMod.ReactNs.ComponentClass[
@@ -213,25 +225,22 @@ object grommetMod extends js.Object {
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
   val RangeSelector: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsRangeSelectorMod.RangeSelectorProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
+    grommetLib.componentsRangeSelectorMod.RangeSelectorProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
+        reactLib.HTMLDivElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ]), 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
   val ResponsiveContext: reactLib.reactMod.ReactNs.Context[grommetLib.contextsResponsiveContextMod.ResponsiveValue] = js.native
   val RoutedAnchor: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsRoutedAnchorMod.RoutedAnchorProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
-      reactLib.HTMLAnchorElement
-    ]), 
+    grommetLib.componentsRoutedAnchorMod.RoutedAnchorProps with (grommetLib.utilsMod.Omit[grommetLib.componentsAnchorMod.AnchorProps, grommetLib.grommetLibStrings.href]), 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
   val RoutedButton: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsRoutedButtonMod.RoutedButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
-      reactLib.HTMLButtonElement
-    ]), 
+    grommetLib.componentsRoutedButtonMod.RoutedButtonProps with grommetLib.componentsButtonMod.ButtonProps, 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
   val Select: reactLib.reactMod.ReactNs.ComponentClass[
@@ -315,7 +324,7 @@ object grommetMod extends js.Object {
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
   val TextInput: reactLib.reactMod.ReactNs.ComponentClass[
-    grommetLib.componentsTextInputMod.TextInputProps with (grommetLib.componentsTextInputMod.Omit[
+    grommetLib.componentsTextInputMod.TextInputProps with (grommetLib.utilsMod.Omit[
       reactLib.reactMod.ReactNs.DetailedHTMLProps[
         reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
         reactLib.HTMLInputElement

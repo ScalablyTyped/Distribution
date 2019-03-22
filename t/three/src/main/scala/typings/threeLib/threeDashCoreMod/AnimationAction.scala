@@ -29,6 +29,7 @@ class AnimationAction () extends js.Object {
   def getRoot(): js.Any = js.native
   def halt(duration: scala.Double): AnimationAction = js.native
   def isRunning(): scala.Boolean = js.native
+  def isScheduled(): scala.Boolean = js.native
   def play(): AnimationAction = js.native
   def reset(): AnimationAction = js.native
   def setDuration(duration: scala.Double): AnimationAction = js.native

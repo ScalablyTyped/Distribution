@@ -10,6 +10,8 @@ trait Anon_IsAnyArrayBuffer extends js.Object {
   def isArgumentsObject(`object`: js.Any): /* is std.IArguments */ scala.Boolean
   def isArrayBuffer(`object`: js.Any): /* is std.ArrayBuffer */ scala.Boolean
   def isAsyncFunction(`object`: js.Any): scala.Boolean
+  def isBigInt64Array(value: js.Any): scala.Boolean
+  def isBigUint64Array(value: js.Any): scala.Boolean
   def isBooleanObject(`object`: js.Any): /* is std.Boolean */ scala.Boolean
   def isBoxedPrimitive(`object`: js.Any): scala.Boolean
   def isDataView(`object`: js.Any): /* is std.DataView */ scala.Boolean
@@ -24,6 +26,7 @@ trait Anon_IsAnyArrayBuffer extends js.Object {
   def isInt8Array(`object`: js.Any): /* is std.Int8Array */ scala.Boolean
   def isMap(`object`: js.Any): scala.Boolean
   def isMapIterator(`object`: js.Any): scala.Boolean
+  def isModuleNamespaceObject(value: js.Any): scala.Boolean
   def isNativeError(`object`: js.Any): /* is node.Error */ scala.Boolean
   def isNumberObject(`object`: js.Any): /* is std.Number */ scala.Boolean
   def isPromise(`object`: js.Any): scala.Boolean
@@ -51,6 +54,8 @@ object Anon_IsAnyArrayBuffer {
     isArgumentsObject: js.Any => /* is std.IArguments */ scala.Boolean,
     isArrayBuffer: js.Any => /* is std.ArrayBuffer */ scala.Boolean,
     isAsyncFunction: js.Any => scala.Boolean,
+    isBigInt64Array: js.Any => scala.Boolean,
+    isBigUint64Array: js.Any => scala.Boolean,
     isBooleanObject: js.Any => /* is std.Boolean */ scala.Boolean,
     isBoxedPrimitive: js.Any => scala.Boolean,
     isDataView: js.Any => /* is std.DataView */ scala.Boolean,
@@ -65,6 +70,7 @@ object Anon_IsAnyArrayBuffer {
     isInt8Array: js.Any => /* is std.Int8Array */ scala.Boolean,
     isMap: js.Any => scala.Boolean,
     isMapIterator: js.Any => scala.Boolean,
+    isModuleNamespaceObject: js.Any => scala.Boolean,
     isNativeError: js.Any => /* is node.Error */ scala.Boolean,
     isNumberObject: js.Any => /* is std.Number */ scala.Boolean,
     isPromise: js.Any => scala.Boolean,
@@ -84,7 +90,7 @@ object Anon_IsAnyArrayBuffer {
     isWeakSet: js.Any => scala.Boolean,
     isWebAssemblyCompiledModule: js.Any => scala.Boolean
   ): Anon_IsAnyArrayBuffer = {
-    val __obj = js.Dynamic.literal(isAnyArrayBuffer = js.Any.fromFunction1(isAnyArrayBuffer), isArgumentsObject = js.Any.fromFunction1(isArgumentsObject), isArrayBuffer = js.Any.fromFunction1(isArrayBuffer), isAsyncFunction = js.Any.fromFunction1(isAsyncFunction), isBooleanObject = js.Any.fromFunction1(isBooleanObject), isBoxedPrimitive = js.Any.fromFunction1(isBoxedPrimitive), isDataView = js.Any.fromFunction1(isDataView), isDate = js.Any.fromFunction1(isDate), isExternal = js.Any.fromFunction1(isExternal), isFloat32Array = js.Any.fromFunction1(isFloat32Array), isFloat64Array = js.Any.fromFunction1(isFloat64Array), isGeneratorFunction = js.Any.fromFunction1(isGeneratorFunction), isGeneratorObject = js.Any.fromFunction1(isGeneratorObject), isInt16Array = js.Any.fromFunction1(isInt16Array), isInt32Array = js.Any.fromFunction1(isInt32Array), isInt8Array = js.Any.fromFunction1(isInt8Array), isMap = js.Any.fromFunction1(isMap), isMapIterator = js.Any.fromFunction1(isMapIterator), isNativeError = js.Any.fromFunction1(isNativeError), isNumberObject = js.Any.fromFunction1(isNumberObject), isPromise = js.Any.fromFunction1(isPromise), isProxy = js.Any.fromFunction1(isProxy), isRegExp = js.Any.fromFunction1(isRegExp), isSet = js.Any.fromFunction1(isSet), isSetIterator = js.Any.fromFunction1(isSetIterator), isSharedArrayBuffer = js.Any.fromFunction1(isSharedArrayBuffer), isStringObject = js.Any.fromFunction1(isStringObject), isSymbolObject = js.Any.fromFunction1(isSymbolObject), isTypedArray = js.Any.fromFunction1(isTypedArray), isUint16Array = js.Any.fromFunction1(isUint16Array), isUint32Array = js.Any.fromFunction1(isUint32Array), isUint8Array = js.Any.fromFunction1(isUint8Array), isUint8ClampedArray = js.Any.fromFunction1(isUint8ClampedArray), isWeakMap = js.Any.fromFunction1(isWeakMap), isWeakSet = js.Any.fromFunction1(isWeakSet), isWebAssemblyCompiledModule = js.Any.fromFunction1(isWebAssemblyCompiledModule))
+    val __obj = js.Dynamic.literal(isAnyArrayBuffer = js.Any.fromFunction1(isAnyArrayBuffer), isArgumentsObject = js.Any.fromFunction1(isArgumentsObject), isArrayBuffer = js.Any.fromFunction1(isArrayBuffer), isAsyncFunction = js.Any.fromFunction1(isAsyncFunction), isBigInt64Array = js.Any.fromFunction1(isBigInt64Array), isBigUint64Array = js.Any.fromFunction1(isBigUint64Array), isBooleanObject = js.Any.fromFunction1(isBooleanObject), isBoxedPrimitive = js.Any.fromFunction1(isBoxedPrimitive), isDataView = js.Any.fromFunction1(isDataView), isDate = js.Any.fromFunction1(isDate), isExternal = js.Any.fromFunction1(isExternal), isFloat32Array = js.Any.fromFunction1(isFloat32Array), isFloat64Array = js.Any.fromFunction1(isFloat64Array), isGeneratorFunction = js.Any.fromFunction1(isGeneratorFunction), isGeneratorObject = js.Any.fromFunction1(isGeneratorObject), isInt16Array = js.Any.fromFunction1(isInt16Array), isInt32Array = js.Any.fromFunction1(isInt32Array), isInt8Array = js.Any.fromFunction1(isInt8Array), isMap = js.Any.fromFunction1(isMap), isMapIterator = js.Any.fromFunction1(isMapIterator), isModuleNamespaceObject = js.Any.fromFunction1(isModuleNamespaceObject), isNativeError = js.Any.fromFunction1(isNativeError), isNumberObject = js.Any.fromFunction1(isNumberObject), isPromise = js.Any.fromFunction1(isPromise), isProxy = js.Any.fromFunction1(isProxy), isRegExp = js.Any.fromFunction1(isRegExp), isSet = js.Any.fromFunction1(isSet), isSetIterator = js.Any.fromFunction1(isSetIterator), isSharedArrayBuffer = js.Any.fromFunction1(isSharedArrayBuffer), isStringObject = js.Any.fromFunction1(isStringObject), isSymbolObject = js.Any.fromFunction1(isSymbolObject), isTypedArray = js.Any.fromFunction1(isTypedArray), isUint16Array = js.Any.fromFunction1(isUint16Array), isUint32Array = js.Any.fromFunction1(isUint32Array), isUint8Array = js.Any.fromFunction1(isUint8Array), isUint8ClampedArray = js.Any.fromFunction1(isUint8ClampedArray), isWeakMap = js.Any.fromFunction1(isWeakMap), isWeakSet = js.Any.fromFunction1(isWeakSet), isWebAssemblyCompiledModule = js.Any.fromFunction1(isWebAssemblyCompiledModule))
   
     __obj.asInstanceOf[Anon_IsAnyArrayBuffer]
   }

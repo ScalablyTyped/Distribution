@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-sortable-tree-theme-file-explorer"
-version := "0.0-dt-20181210Z-89128b"
+version := "0.0-dt-20181210Z-67925e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,12 +12,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-b5b495",
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-662401",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
-  "org.scalablytyped" %%% "react-dnd" % "7.3.2-ba6e53",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-188abf",
-  "org.scalablytyped" %%% "react-sortable-tree" % "0.3-dt-20190318Z-678949",
+  "org.scalablytyped" %%% "react-dnd" % "7.3.2-fb4a13",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-5412f7",
+  "org.scalablytyped" %%% "react-sortable-tree" % "0.3-dt-20190318Z-581a5a",
   "org.scalablytyped" %%% "react-virtualized" % "9.21-dt-20190315Z-569b09",
   "org.scalablytyped" %%% "recompose" % "0.30-dt-20190225Z-8e4599",
   "org.scalablytyped" %%% "redux" % "4.0.1-18f3a8",

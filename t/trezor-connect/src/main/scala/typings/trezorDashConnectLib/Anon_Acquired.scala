@@ -9,6 +9,7 @@ trait Anon_Acquired
   extends trezorDashConnectLib.trezorDashConnectMod.Device {
   var features: trezorDashConnectLib.trezorDashConnectMod.Features
   var firmware: trezorDashConnectLib.trezorDashConnectMod.DeviceFirmwareStatus
+  var firmwareRelease: trezorDashConnectLib.trezorDashConnectMod.FirmwareRelease
   var label: java.lang.String
   var mode: trezorDashConnectLib.trezorDashConnectMod.DeviceMode
   var path: java.lang.String
@@ -22,6 +23,7 @@ object Anon_Acquired {
   def apply(
     features: trezorDashConnectLib.trezorDashConnectMod.Features,
     firmware: trezorDashConnectLib.trezorDashConnectMod.DeviceFirmwareStatus,
+    firmwareRelease: trezorDashConnectLib.trezorDashConnectMod.FirmwareRelease,
     label: java.lang.String,
     mode: trezorDashConnectLib.trezorDashConnectMod.DeviceMode,
     path: java.lang.String,
@@ -29,7 +31,7 @@ object Anon_Acquired {
     `type`: trezorDashConnectLib.trezorDashConnectLibStrings.acquired,
     state: java.lang.String = null
   ): Anon_Acquired = {
-    val __obj = js.Dynamic.literal(features = features, firmware = firmware, label = label, mode = mode, path = path, status = status)
+    val __obj = js.Dynamic.literal(features = features, firmware = firmware, firmwareRelease = firmwareRelease, label = label, mode = mode, path = path, status = status)
     __obj.updateDynamic("type")(`type`)
     if (state != null) __obj.updateDynamic("state")(state)
     __obj.asInstanceOf[Anon_Acquired]

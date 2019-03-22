@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "resize-observer-browser"
-version := "0.1-dt-20190304Z-50aec9"
+version := "0.1-dt-20190320Z-574ffd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

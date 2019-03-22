@@ -15,6 +15,7 @@ trait Props extends js.Object {
     js.Function2[/* src */ stdLib.URL | java.lang.String, /* isCached */ scala.Boolean, scala.Unit]
   ] = js.undefined
   var preloader: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var processSVG: js.UndefOr[js.Function1[/* svgText */ java.lang.String, java.lang.String]] = js.undefined
   var src: stdLib.URL | java.lang.String
   var style: js.UndefOr[js.Object] = js.undefined
   var supportTest: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -34,6 +35,7 @@ object Props {
     onError: /* error */ RequestError | InlineSVGError => scala.Unit = null,
     onLoad: (/* src */ stdLib.URL | java.lang.String, /* isCached */ scala.Boolean) => scala.Unit = null,
     preloader: reactLib.reactMod.ReactNs.ReactNode = null,
+    processSVG: /* svgText */ java.lang.String => java.lang.String = null,
     style: js.Object = null,
     supportTest: () => scala.Unit = null,
     uniqueHash: java.lang.String = null,
@@ -48,6 +50,7 @@ object Props {
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction2(onLoad))
     if (preloader != null) __obj.updateDynamic("preloader")(preloader.asInstanceOf[js.Any])
+    if (processSVG != null) __obj.updateDynamic("processSVG")(js.Any.fromFunction1(processSVG))
     if (style != null) __obj.updateDynamic("style")(style)
     if (supportTest != null) __obj.updateDynamic("supportTest")(js.Any.fromFunction0(supportTest))
     if (uniqueHash != null) __obj.updateDynamic("uniqueHash")(uniqueHash)

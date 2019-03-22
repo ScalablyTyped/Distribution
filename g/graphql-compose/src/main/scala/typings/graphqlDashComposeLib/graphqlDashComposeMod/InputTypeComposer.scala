@@ -7,17 +7,23 @@ import scala.scalajs.js.annotation._
 
 @JSImport("graphql-compose", "InputTypeComposer")
 @js.native
-class InputTypeComposer protected ()
-  extends graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer {
-  def this(gqType: graphqlDashComposeLib.libGraphqlMod.GraphQLInputObjectType) = this()
+class InputTypeComposer[TContext] protected ()
+  extends graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] {
+  def this(gqType: graphqlDashComposeLib.libGraphqlMod.GraphQLInputObjectType, schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext]) = this()
 }
 
 /* static members */
 @JSImport("graphql-compose", "InputTypeComposer")
 @js.native
 object InputTypeComposer extends js.Object {
-  var schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[_] = js.native
-  def create(typeDef: graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposerDefinition): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer = js.native
-  def createTemp(typeDef: graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposerDefinition): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer = js.native
+  def create[TCtx](
+    typeDef: graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposeDefinition,
+    schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TCtx]
+  ): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TCtx] = js.native
+  def createTemp[TCtx](typeDef: graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposeDefinition): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TCtx] = js.native
+  def createTemp[TCtx](
+    typeDef: graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposeDefinition,
+    schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TCtx]
+  ): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TCtx] = js.native
 }
 

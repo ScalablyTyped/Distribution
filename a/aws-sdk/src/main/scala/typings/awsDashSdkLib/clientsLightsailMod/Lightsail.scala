@@ -431,7 +431,7 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record. The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
+    * Creates one of the following entry records associated with the domain: Address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
     */
   def createDomainEntry(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDomainEntryResult, 
@@ -448,7 +448,7 @@ trait Lightsail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record. The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
+    * Creates one of the following entry records associated with the domain: Address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
     */
   def createDomainEntry(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDomainEntryRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.CreateDomainEntryResult, 
@@ -1023,6 +1023,41 @@ trait Lightsail
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKeyPairResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Deletes the known host key or certificate used by the Amazon Lightsail browser-based SSH or RDP clients to authenticate an instance. This operation enables the Lightsail browser-based SSH or RDP clients to connect to the instance after a host key mismatch.  Perform this operation only if you were expecting the host key or certificate mismatch or if you are familiar with the new host key or certificate on the instance. For more information, see Troubleshooting connection issues when using the Amazon Lightsail browser-based SSH or RDP client. 
+    */
+  def deleteKnownHostKeys(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKnownHostKeysResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def deleteKnownHostKeys(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKnownHostKeysResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKnownHostKeysResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Deletes the known host key or certificate used by the Amazon Lightsail browser-based SSH or RDP clients to authenticate an instance. This operation enables the Lightsail browser-based SSH or RDP clients to connect to the instance after a host key mismatch.  Perform this operation only if you were expecting the host key or certificate mismatch or if you are familiar with the new host key or certificate on the instance. For more information, see Troubleshooting connection issues when using the Amazon Lightsail browser-based SSH or RDP client. 
+    */
+  def deleteKnownHostKeys(params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKnownHostKeysRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKnownHostKeysResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def deleteKnownHostKeys(
+    params: awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKnownHostKeysRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKnownHostKeysResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsLightsailMod.LightsailNs.DeleteKnownHostKeysResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

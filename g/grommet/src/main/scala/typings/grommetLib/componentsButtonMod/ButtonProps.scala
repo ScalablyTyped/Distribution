@@ -11,7 +11,7 @@ trait ButtonProps extends js.Object {
   var alignSelf: js.UndefOr[
     grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch
   ] = js.undefined
-  var as: js.UndefOr[java.lang.String] = js.undefined
+  var as: js.UndefOr[grommetLib.utilsMod.PolymorphicType] = js.undefined
   var color: js.UndefOr[java.lang.String | grommetLib.Anon_Dark] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var fill: js.UndefOr[scala.Boolean] = js.undefined
@@ -41,7 +41,7 @@ object ButtonProps {
     a11yTitle: java.lang.String = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
     alignSelf: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch = null,
-    as: java.lang.String = null,
+    as: grommetLib.utilsMod.PolymorphicType = null,
     color: java.lang.String | grommetLib.Anon_Dark = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     fill: js.UndefOr[scala.Boolean] = js.undefined,

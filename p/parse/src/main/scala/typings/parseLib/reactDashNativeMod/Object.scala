@@ -45,19 +45,34 @@ class Object ()
 @js.native
 object Object extends js.Object {
   def createWithoutData[T /* <: parseLib.ParseNs.Object */](id: java.lang.String): T = js.native
-  def destroyAll[T](list: js.Array[T]): js.Promise[js.Array[T]] = js.native
-  def destroyAll[T](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.DestroyAllOptions): js.Promise[js.Array[T]] = js.native
+  def destroyAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T]): js.Promise[js.Array[T]] = js.native
+  def destroyAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.DestroyAllOptions): js.Promise[js.Array[T]] = js.native
   def extend(className: java.lang.String): js.Any = js.native
   def extend(className: java.lang.String, protoProps: js.Any): js.Any = js.native
   def extend(className: java.lang.String, protoProps: js.Any, classProps: js.Any): js.Any = js.native
+  def extend(className: parseLib.Anon_ClassName): js.Any = js.native
+  def extend(className: parseLib.Anon_ClassName, protoProps: js.Any): js.Any = js.native
+  def extend(className: parseLib.Anon_ClassName, protoProps: js.Any, classProps: js.Any): js.Any = js.native
   def fetchAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.FetchAllOptions): js.Promise[js.Array[T]] = js.native
   def fetchAllIfNeeded[T /* <: parseLib.ParseNs.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.FetchAllOptions): js.Promise[js.Array[T]] = js.native
+  def fetchAllWithInclude[T /* <: parseLib.ParseNs.Object */](list: js.Array[T], keys: java.lang.String, options: parseLib.ParseNs.RequestOptions): js.Promise[js.Array[T]] = js.native
+  def fetchAllWithInclude[T /* <: parseLib.ParseNs.Object */](
+    list: js.Array[T],
+    keys: js.Array[java.lang.String | js.Array[java.lang.String]],
+    options: parseLib.ParseNs.RequestOptions
+  ): js.Promise[js.Array[T]] = js.native
   def fromJSON(json: js.Any, `override`: scala.Boolean): js.Any = js.native
+  def pinAll(objects: js.Array[parseLib.ParseNs.Object]): js.Promise[scala.Unit] = js.native
+  def pinAllWithName(name: java.lang.String, objects: js.Array[parseLib.ParseNs.Object]): js.Promise[scala.Unit] = js.native
   def registerSubclass[T /* <: parseLib.ParseNs.Object */](
     className: java.lang.String,
     clazz: org.scalablytyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ js.Any], T]
   ): scala.Unit = js.native
   def saveAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T]): js.Promise[js.Array[T]] = js.native
   def saveAll[T /* <: parseLib.ParseNs.Object */](list: js.Array[T], options: parseLib.ParseNs.ObjectNs.SaveAllOptions): js.Promise[js.Array[T]] = js.native
+  def unPinAll(objects: js.Array[parseLib.ParseNs.Object]): js.Promise[scala.Unit] = js.native
+  def unPinAllObjects(): js.Promise[scala.Unit] = js.native
+  def unPinAllObjectsWithName(name: java.lang.String): js.Promise[scala.Unit] = js.native
+  def unPinAllWithName(name: java.lang.String, objects: js.Array[parseLib.ParseNs.Object]): js.Promise[scala.Unit] = js.native
 }
 

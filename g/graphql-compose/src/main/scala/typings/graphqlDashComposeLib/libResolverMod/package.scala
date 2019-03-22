@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libResolverMod {
-  type ResolverFilterArgFn[TSource, TContext] = js.Function3[
+  type ResolverFilterArgFn[TSource, TContext, TArgs] = js.Function3[
     /* query */ js.Any, 
     /* value */ js.Any, 
-    /* resolveParams */ ResolveParams[TSource, TContext, js.Any], 
+    /* resolveParams */ ResolveParams[TSource, TContext, TArgs], 
     js.Any
   ]
   type ResolverMiddleware[TSource, TContext, TArgs] = js.Function5[
@@ -31,21 +31,21 @@ package object libResolverMod {
     ResolverRpCb[TSource, TContext, TArgs]
   ]
   type ResolverRpCb[TSource, TContext, TArgs] = js.Function1[
-    /* resolveParams */ stdLib.Partial[ResolveParams[TSource, TContext, TArgs]], 
+    /* resolveParams */ ResolveParams[TSource, TContext, TArgs], 
     js.Promise[js.Any] | js.Any
   ]
-  type ResolverSortArgFn = js.Function1[/* resolveParams */ ResolveParams[js.Any, js.Any, js.Any], js.Any]
-  type ResolverWrapArgsCb = js.Function1[
+  type ResolverSortArgFn[TSource, TContext, TArgs] = js.Function1[/* resolveParams */ ResolveParams[TSource, TContext, TArgs], js.Any]
+  type ResolverWrapArgsCb[TArgs] = js.Function1[
     /* prevArgs */ graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap, 
-    graphqlDashComposeLib.libTypeComposerMod.ComposeFieldConfigArgumentMap[js.Any]
+    graphqlDashComposeLib.libObjectTypeComposerMod.ComposeFieldConfigArgumentMap[TArgs]
   ]
   type ResolverWrapCb[TNewSource, TPrevSource, TContext, TNewArgs, TPrevArgs] = js.Function2[
-    /* newResolver */ Resolver[TNewSource, TContext, TNewArgs], 
-    /* prevResolver */ Resolver[TPrevSource, TContext, TPrevArgs], 
-    Resolver[TNewSource, TContext, TNewArgs]
+    /* newResolver */ Resolver[TNewSource, TContext, TNewArgs, js.Any], 
+    /* prevResolver */ Resolver[TPrevSource, TContext, TPrevArgs, js.Any], 
+    Resolver[TNewSource, TContext, TNewArgs, js.Any]
   ]
-  type ResolverWrapTypeCb = js.Function1[
+  type ResolverWrapTypeCb[TContext, TReturn] = js.Function1[
     /* prevType */ graphqlLib.typeDefinitionMod.GraphQLOutputType, 
-    graphqlDashComposeLib.libTypeComposerMod.ComposeOutputType[js.Any, js.Any, js.Any]
+    graphqlDashComposeLib.libObjectTypeComposerMod.ComposeOutputType[TReturn, TContext]
   ]
 }

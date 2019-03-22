@@ -7,25 +7,34 @@ import scala.scalajs.js.annotation._
 
 @JSImport("graphql-compose/lib/UnionTypeComposer", "UnionTypeComposer")
 @js.native
-class UnionTypeComposer[TSource, TContext] protected () extends js.Object {
-  def this(gqType: graphqlLib.graphqlMod.GraphQLUnionType) = this()
+class UnionTypeComposer[TSource, TContext] protected ()
+  extends graphqlDashComposeLib.libObjectTypeComposerMod._ComposeOutputType[TSource, TContext] {
+  def this(gqType: graphqlLib.graphqlMod.GraphQLUnionType, schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext]) = this()
   var gqType: GraphQLUnionTypeExtended[TSource, TContext] = js.native
-  var schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TSource] = js.native
+  var schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext] = js.native
   def addType(`type`: graphqlDashComposeLib.libTypeMapperMod.ComposeObjectType): this.type = js.native
   def addTypeResolver(
-    `type`: graphqlDashComposeLib.libTypeComposerMod.TypeComposer[_, TContext],
-    checkFn: UnionTypeResolverCheckFn[_, TContext]
+    `type`: graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext],
+    checkFn: UnionTypeResolverCheckFn[TSource, TContext]
   ): this.type = js.native
   def addTypeResolver(
     `type`: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]],
-    checkFn: UnionTypeResolverCheckFn[_, TContext]
+    checkFn: UnionTypeResolverCheckFn[TSource, TContext]
   ): this.type = js.native
-  def clone(newTypeName: java.lang.String): this.type = js.native
+  def clearExtensions(): this.type = js.native
+  def clearTypes(): UnionTypeComposer[TSource, TContext] = js.native
+  def clone(newTypeName: java.lang.String): UnionTypeComposer[TSource, TContext] = js.native
+  def extendExtensions(extensions: graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions): this.type = js.native
   def getDescription(): java.lang.String = js.native
+  def getExtension(extensionName: java.lang.String): js.Any = js.native
+  // -----------------------------------------------
+  // Extensions methods
+  // -----------------------------------------------
+  def getExtensions(): graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions = js.native
   // -----------------------------------------------
   // ResolveType methods
   // -----------------------------------------------
-  def getResolveType(): (graphqlLib.typeDefinitionMod.GraphQLTypeResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]]) | scala.Null | scala.Unit = js.native
+  def getResolveType(): (graphqlLib.typeDefinitionMod.GraphQLTypeResolver[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]]) | scala.Null | scala.Unit = js.native
   // -----------------------------------------------
   // Type methods
   // -----------------------------------------------
@@ -34,7 +43,7 @@ class UnionTypeComposer[TSource, TContext] protected () extends js.Object {
   def getTypeNames(): js.Array[java.lang.String] = js.native
   def getTypeNonNull(): graphqlLib.typeDefinitionMod.GraphQLNonNull[graphqlLib.graphqlMod.GraphQLUnionType] = js.native
   def getTypePlural(): graphqlLib.typeDefinitionMod.GraphQLList[graphqlLib.graphqlMod.GraphQLUnionType] = js.native
-  def getTypeResolverCheckFn(`type`: graphqlDashComposeLib.libTypeComposerMod.TypeComposer[_, TContext]): UnionTypeResolverCheckFn[_, TContext] = js.native
+  def getTypeResolverCheckFn(`type`: graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext]): UnionTypeResolverCheckFn[_, TContext] = js.native
   def getTypeResolverCheckFn(
     `type`: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): UnionTypeResolverCheckFn[_, TContext] = js.native
@@ -43,42 +52,52 @@ class UnionTypeComposer[TSource, TContext] protected () extends js.Object {
     graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.native
   def getTypeResolvers(): UnionTypeResolversMap[TSource, TContext] = js.native
-  def getTypes(): ComposeTypesArray = js.native
-  def hasType(name: graphqlDashComposeLib.libTypeComposerMod.TypeComposer[TContext, _]): scala.Boolean = js.native
+  def getTypes(): js.Array[graphqlDashComposeLib.libTypeMapperMod.ComposeObjectType] = js.native
+  def hasExtension(extensionName: java.lang.String): scala.Boolean = js.native
+  def hasType(name: graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext]): scala.Boolean = js.native
   def hasType(name: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]): scala.Boolean = js.native
   // -----------------------------------------------
   // Union Types methods
   // -----------------------------------------------
   def hasType(name: java.lang.String): scala.Boolean = js.native
-  def hasTypeResolver(`type`: graphqlDashComposeLib.libTypeComposerMod.TypeComposer[_, TContext]): scala.Boolean = js.native
+  def hasTypeResolver(`type`: graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext]): scala.Boolean = js.native
   def hasTypeResolver(
     `type`: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): scala.Boolean = js.native
+  def removeExtension(extensionName: java.lang.String): this.type = js.native
   def removeOtherTypes(nameOrArray: java.lang.String): this.type = js.native
   def removeOtherTypes(nameOrArray: js.Array[java.lang.String]): this.type = js.native
   def removeType(nameOrArray: java.lang.String): this.type = js.native
   def removeType(nameOrArray: js.Array[java.lang.String]): this.type = js.native
-  def removeTypeResolver(`type`: graphqlDashComposeLib.libTypeComposerMod.TypeComposer[_, TContext]): this.type = js.native
+  def removeTypeResolver(`type`: graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext]): this.type = js.native
   def removeTypeResolver(
     `type`: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): this.type = js.native
   def setDescription(description: java.lang.String): this.type = js.native
+  def setExtension(extensionName: java.lang.String, value: js.Any): this.type = js.native
+  def setExtensions(extensions: graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions): this.type = js.native
   def setResolveType(): this.type = js.native
   def setResolveType(
-    fn: graphqlLib.typeDefinitionMod.GraphQLTypeResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]]
+    fn: graphqlLib.typeDefinitionMod.GraphQLTypeResolver[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]]
   ): this.type = js.native
   def setResolveType(fn: scala.Unit): this.type = js.native
   def setTypeName(name: java.lang.String): this.type = js.native
-  def setTypeResolvers(typeResolversMap: UnionTypeResolversMap[_, TContext]): this.type = js.native
-  def setTypes(types: ComposeTypesArray): this.type = js.native
+  def setTypeResolvers(typeResolversMap: UnionTypeResolversMap[TSource, TContext]): this.type = js.native
+  def setTypes(types: js.Array[graphqlDashComposeLib.libTypeMapperMod.ComposeObjectType]): this.type = js.native
 }
 
 /* static members */
 @JSImport("graphql-compose/lib/UnionTypeComposer", "UnionTypeComposer")
 @js.native
 object UnionTypeComposer extends js.Object {
-  var schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[_] = js.native
-  def create[TSrc, TCtx](typeDef: graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposerDefinition[TCtx]): graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[TSrc, TCtx] = js.native
-  def createTemp[TSrc, TCtx](typeDef: graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposerDefinition[TCtx]): graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[TSrc, TCtx] = js.native
+  def create[TSrc, TCtx](
+    typeDef: graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposeDefinition[TSrc, TCtx],
+    schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TCtx]
+  ): graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[TSrc, TCtx] = js.native
+  def createTemp[TSrc, TCtx](typeDef: graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposeDefinition[TSrc, TCtx]): graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[TSrc, TCtx] = js.native
+  def createTemp[TSrc, TCtx](
+    typeDef: graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposeDefinition[TSrc, TCtx],
+    schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TCtx]
+  ): graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[TSrc, TCtx] = js.native
 }
 

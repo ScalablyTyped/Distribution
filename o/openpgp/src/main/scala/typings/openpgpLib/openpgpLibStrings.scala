@@ -11,42 +11,42 @@ object openpgpLibStrings {
   
   @js.native
   sealed trait brainpoolP256r1
-    extends openpgpLib.openpgpMod.openpgpNs.enumsNs.curve
+    extends openpgpLib.openpgpMod.enumsNs.curve
   
   @js.native
   sealed trait brainpoolP384r1
-    extends openpgpLib.openpgpMod.openpgpNs.enumsNs.curve
+    extends openpgpLib.openpgpMod.enumsNs.curve
   
   @js.native
   sealed trait brainpoolP512r1
-    extends openpgpLib.openpgpMod.openpgpNs.enumsNs.curve
+    extends openpgpLib.openpgpMod.enumsNs.curve
   
   @js.native
   sealed trait curve25519
-    extends openpgpLib.openpgpMod.openpgpNs.enumsNs.curve
+    extends openpgpLib.openpgpMod.enumsNs.curve
   
   @js.native
   sealed trait ed25519
-    extends openpgpLib.openpgpMod.openpgpNs.enumsNs.curve
+    extends openpgpLib.openpgpMod.enumsNs.curve
   
   @js.native
   sealed trait node extends js.Object
   
   @js.native
   sealed trait p251
-    extends openpgpLib.openpgpMod.openpgpNs.enumsNs.curve
+    extends openpgpLib.openpgpMod.enumsNs.curve
   
   @js.native
   sealed trait p256
-    extends openpgpLib.openpgpMod.openpgpNs.enumsNs.curve
+    extends openpgpLib.openpgpMod.enumsNs.curve
   
   @js.native
   sealed trait p384
-    extends openpgpLib.openpgpMod.openpgpNs.enumsNs.curve
+    extends openpgpLib.openpgpMod.enumsNs.curve
   
   @js.native
   sealed trait secp256k1
-    extends openpgpLib.openpgpMod.openpgpNs.enumsNs.curve
+    extends openpgpLib.openpgpMod.enumsNs.curve
   
   @js.native
   sealed trait string extends js.Object

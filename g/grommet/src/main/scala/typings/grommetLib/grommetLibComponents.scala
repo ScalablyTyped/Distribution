@@ -30,14 +30,20 @@ object grommetLibComponents {
   ])]]
   @scala.inline
   def Anchor: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsAnchorMod.AnchorProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
-      reactLib.HTMLAnchorElement
+    grommetLib.componentsAnchorMod.AnchorProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
+        reactLib.HTMLAnchorElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ])
   ] = grommetLib.grommetMod.Anchor.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  grommetLib.componentsAnchorMod.AnchorProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-    reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
-    reactLib.HTMLAnchorElement
+  grommetLib.componentsAnchorMod.AnchorProps with (grommetLib.utilsMod.Omit[
+    reactLib.reactMod.ReactNs.DetailedHTMLProps[
+      reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
+      reactLib.HTMLAnchorElement
+    ], 
+    grommetLib.grommetLibStrings.color
   ])]]
   @scala.inline
   def Box: reactLib.reactMod.ReactNs.ComponentType[
@@ -52,14 +58,20 @@ object grommetLibComponents {
   ])]]
   @scala.inline
   def Button: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsButtonMod.ButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
-      reactLib.HTMLButtonElement
+    grommetLib.componentsButtonMod.ButtonProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
+        reactLib.HTMLButtonElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ])
   ] = grommetLib.grommetMod.Button.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  grommetLib.componentsButtonMod.ButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-    reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
-    reactLib.HTMLButtonElement
+  grommetLib.componentsButtonMod.ButtonProps with (grommetLib.utilsMod.Omit[
+    reactLib.reactMod.ReactNs.DetailedHTMLProps[
+      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
+      reactLib.HTMLButtonElement
+    ], 
+    grommetLib.grommetLibStrings.color
   ])]]
   @scala.inline
   def Calendar: reactLib.reactMod.ReactNs.ComponentType[
@@ -175,13 +187,13 @@ object grommetLibComponents {
   @scala.inline
   def FormField: reactLib.reactMod.ReactNs.ComponentType[
     grommetLib.componentsFormFieldMod.FormFieldProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
+      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+      reactLib.HTMLInputElement
     ])
   ] = grommetLib.grommetMod.FormField.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   grommetLib.componentsFormFieldMod.FormFieldProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-    reactLib.HTMLDivElement
+    reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+    reactLib.HTMLInputElement
   ])]]
   @scala.inline
   def Grid: reactLib.reactMod.ReactNs.ComponentType[
@@ -207,14 +219,20 @@ object grommetLibComponents {
   ])]]
   @scala.inline
   def Heading: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsHeadingMod.HeadingProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLHeadingElement], 
-      reactLib.HTMLHeadingElement
+    grommetLib.componentsHeadingMod.HeadingProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLHeadingElement], 
+        reactLib.HTMLHeadingElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ])
   ] = grommetLib.grommetMod.Heading.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  grommetLib.componentsHeadingMod.HeadingProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLHeadingElement], 
-    reactLib.HTMLHeadingElement
+  grommetLib.componentsHeadingMod.HeadingProps with (grommetLib.utilsMod.Omit[
+    reactLib.reactMod.ReactNs.DetailedHTMLProps[
+      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLHeadingElement], 
+      reactLib.HTMLHeadingElement
+    ], 
+    grommetLib.grommetLibStrings.color
   ])]]
   @scala.inline
   def Image: reactLib.reactMod.ReactNs.ComponentType[
@@ -279,14 +297,20 @@ object grommetLibComponents {
   def Meter: reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsMeterMod.MeterProps] = grommetLib.grommetMod.Meter.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsMeterMod.MeterProps]]
   @scala.inline
   def Paragraph: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsParagraphMod.ParagraphProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLParagraphElement], 
-      reactLib.HTMLParagraphElement
+    grommetLib.componentsParagraphMod.ParagraphProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLParagraphElement], 
+        reactLib.HTMLParagraphElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ])
   ] = grommetLib.grommetMod.Paragraph.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  grommetLib.componentsParagraphMod.ParagraphProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLParagraphElement], 
-    reactLib.HTMLParagraphElement
+  grommetLib.componentsParagraphMod.ParagraphProps with (grommetLib.utilsMod.Omit[
+    reactLib.reactMod.ReactNs.DetailedHTMLProps[
+      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLParagraphElement], 
+      reactLib.HTMLParagraphElement
+    ], 
+    grommetLib.grommetLibStrings.color
   ])]]
   @scala.inline
   def RadioButton: reactLib.reactMod.ReactNs.ComponentType[
@@ -323,37 +347,31 @@ object grommetLibComponents {
   ])]]
   @scala.inline
   def RangeSelector: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsRangeSelectorMod.RangeSelectorProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
+    grommetLib.componentsRangeSelectorMod.RangeSelectorProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
+        reactLib.HTMLDivElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ])
   ] = grommetLib.grommetMod.RangeSelector.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  grommetLib.componentsRangeSelectorMod.RangeSelectorProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-    reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-    reactLib.HTMLDivElement
+  grommetLib.componentsRangeSelectorMod.RangeSelectorProps with (grommetLib.utilsMod.Omit[
+    reactLib.reactMod.ReactNs.DetailedHTMLProps[
+      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
+      reactLib.HTMLDivElement
+    ], 
+    grommetLib.grommetLibStrings.color
   ])]]
   @scala.inline
   def RoutedAnchor: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsRoutedAnchorMod.RoutedAnchorProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
-      reactLib.HTMLAnchorElement
-    ])
+    grommetLib.componentsRoutedAnchorMod.RoutedAnchorProps with (grommetLib.utilsMod.Omit[grommetLib.componentsAnchorMod.AnchorProps, grommetLib.grommetLibStrings.href])
   ] = grommetLib.grommetMod.RoutedAnchor.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  grommetLib.componentsRoutedAnchorMod.RoutedAnchorProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-    reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement], 
-    reactLib.HTMLAnchorElement
-  ])]]
+  grommetLib.componentsRoutedAnchorMod.RoutedAnchorProps with (grommetLib.utilsMod.Omit[grommetLib.componentsAnchorMod.AnchorProps, grommetLib.grommetLibStrings.href])]]
   @scala.inline
   def RoutedButton: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsRoutedButtonMod.RoutedButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
-      reactLib.HTMLButtonElement
-    ])
+    grommetLib.componentsRoutedButtonMod.RoutedButtonProps with grommetLib.componentsButtonMod.ButtonProps
   ] = grommetLib.grommetMod.RoutedButton.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  grommetLib.componentsRoutedButtonMod.RoutedButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-    reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
-    reactLib.HTMLButtonElement
-  ])]]
+  grommetLib.componentsRoutedButtonMod.RoutedButtonProps with grommetLib.componentsButtonMod.ButtonProps]]
   @scala.inline
   def Select: reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsSelectMod.SelectProps] = grommetLib.grommetMod.Select.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsSelectMod.SelectProps]]
   @scala.inline
@@ -485,7 +503,7 @@ object grommetLibComponents {
   ])]]
   @scala.inline
   def TextInput: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsTextInputMod.TextInputProps with (grommetLib.componentsTextInputMod.Omit[
+    grommetLib.componentsTextInputMod.TextInputProps with (grommetLib.utilsMod.Omit[
       reactLib.reactMod.ReactNs.DetailedHTMLProps[
         reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
         reactLib.HTMLInputElement
@@ -493,7 +511,7 @@ object grommetLibComponents {
       grommetLib.grommetLibStrings.onSelect | grommetLib.grommetLibStrings.size
     ])
   ] = grommetLib.grommetMod.TextInput.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  grommetLib.componentsTextInputMod.TextInputProps with (grommetLib.componentsTextInputMod.Omit[
+  grommetLib.componentsTextInputMod.TextInputProps with (grommetLib.utilsMod.Omit[
     reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement

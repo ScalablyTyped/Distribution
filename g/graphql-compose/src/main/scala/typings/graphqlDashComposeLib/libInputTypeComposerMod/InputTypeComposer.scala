@@ -7,14 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("graphql-compose/lib/InputTypeComposer", "InputTypeComposer")
 @js.native
-class InputTypeComposer protected ()
-  extends graphqlDashComposeLib.libTypeComposerMod._ComposeArgumentType
-     with _ComposeInputType
-     with graphqlDashComposeLib.libSchemaComposerMod._MustHaveTypes[js.Any]
-     with graphqlDashComposeLib.libTypeStorageMod._V[js.Any] {
-  def this(gqType: graphqlDashComposeLib.libGraphqlMod.GraphQLInputObjectType) = this()
-  var gqType: graphqlDashComposeLib.libGraphqlMod.GraphQLInputObjectType = js.native
-  var schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[_] = js.native
+class InputTypeComposer[TContext] protected ()
+  extends graphqlDashComposeLib.libSchemaComposerMod._MustHaveTypes[TContext] {
+  def this(gqType: graphqlDashComposeLib.libGraphqlMod.GraphQLInputObjectType, schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext]) = this()
+  var gqType: GraphQLInputObjectTypeExtended = js.native
+  var schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext] = js.native
   /**
     * Add new fields or replace existed in a GraphQL type
     */
@@ -22,22 +19,30 @@ class InputTypeComposer protected ()
   /**
     * Add new fields or replace existed (where field name may have dots)
     */
-  def addNestedFields(newFields: ComposeInputFieldConfigMap): InputTypeComposer = js.native
-  def clone(newTypeName: java.lang.String): InputTypeComposer = js.native
-  def extendField(fieldName: java.lang.String, parialFieldConfig: ComposeInputFieldConfig): this.type = js.native
+  def addNestedFields(newFields: ComposeInputFieldConfigMap): this.type = js.native
+  def clearExtensions(): this.type = js.native
+  def clearFieldExtensions(fieldName: java.lang.String): this.type = js.native
+  def clone(newTypeName: java.lang.String): InputTypeComposer[TContext] = js.native
+  def extendExtensions(extensions: graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions): this.type = js.native
+  def extendField(fieldName: java.lang.String, parialFieldConfig: stdLib.Partial[ComposeInputFieldConfig]): this.type = js.native
+  def extendFieldExtensions(fieldName: java.lang.String, extensions: graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions): this.type = js.native
   // -----------------------------------------------
   // Misc methods
   // -----------------------------------------------
   def get(path: java.lang.String): js.Any = js.native
   def get(path: js.Array[java.lang.String]): js.Any = js.native
   def getDescription(): java.lang.String = js.native
-  /**
-    * Get fieldConfig by name
-    */
+  def getExtension(extensionName: java.lang.String): js.Any = js.native
+  // -----------------------------------------------
+  // Extensions methods
+  // -----------------------------------------------
+  def getExtensions(): graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions = js.native
   def getField(fieldName: java.lang.String): ComposeInputFieldConfig = js.native
   def getFieldConfig(fieldName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLInputFieldConfig = js.native
+  def getFieldExtension(fieldName: java.lang.String, extensionName: java.lang.String): js.Any = js.native
+  def getFieldExtensions(fieldName: java.lang.String): graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions = js.native
   def getFieldNames(): js.Array[java.lang.String] = js.native
-  def getFieldTC(fieldName: java.lang.String): InputTypeComposer = js.native
+  def getFieldTC(fieldName: java.lang.String): InputTypeComposer[TContext] = js.native
   def getFieldType(fieldName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLInputType = js.native
   // -----------------------------------------------
   // Field methods
@@ -50,7 +55,9 @@ class InputTypeComposer protected ()
   def getTypeName(): java.lang.String = js.native
   def getTypeNonNull(): graphqlLib.typeDefinitionMod.GraphQLNonNull[graphqlDashComposeLib.libGraphqlMod.GraphQLInputObjectType] = js.native
   def getTypePlural(): graphqlLib.typeDefinitionMod.GraphQLList[graphqlDashComposeLib.libGraphqlMod.GraphQLInputObjectType] = js.native
+  def hasExtension(extensionName: java.lang.String): scala.Boolean = js.native
   def hasField(fieldName: java.lang.String): scala.Boolean = js.native
+  def hasFieldExtension(fieldName: java.lang.String, extensionName: java.lang.String): scala.Boolean = js.native
   def isFieldNonNull(fieldName: java.lang.String): scala.Boolean = js.native
   // alias for isFieldNonNull
   def isRequired(fieldName: java.lang.String): scala.Boolean = js.native
@@ -64,13 +71,19 @@ class InputTypeComposer protected ()
   // alias for makeFieldNonNull
   def makeRequired(fieldNameOrArray: java.lang.String): this.type = js.native
   def makeRequired(fieldNameOrArray: js.Array[java.lang.String]): this.type = js.native
+  def removeExtension(extensionName: java.lang.String): this.type = js.native
   def removeField(fieldNameOrArray: java.lang.String): this.type = js.native
   def removeField(fieldNameOrArray: js.Array[java.lang.String]): this.type = js.native
+  def removeFieldExtension(fieldName: java.lang.String, extensionName: java.lang.String): this.type = js.native
   def removeOtherFields(fieldNameOrArray: java.lang.String): this.type = js.native
   def removeOtherFields(fieldNameOrArray: js.Array[java.lang.String]): this.type = js.native
   def reorderFields(names: js.Array[java.lang.String]): this.type = js.native
   def setDescription(description: java.lang.String): this.type = js.native
+  def setExtension(extensionName: java.lang.String, value: js.Any): this.type = js.native
+  def setExtensions(extensions: graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions): this.type = js.native
   def setField(fieldName: java.lang.String, fieldConfig: ComposeInputFieldConfig): this.type = js.native
+  def setFieldExtension(fieldName: java.lang.String, extensionName: java.lang.String, value: js.Any): this.type = js.native
+  def setFieldExtensions(fieldName: java.lang.String, extensions: graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions): this.type = js.native
   def setFields(fields: ComposeInputFieldConfigMap): this.type = js.native
   def setTypeName(name: java.lang.String): this.type = js.native
 }
@@ -79,8 +92,14 @@ class InputTypeComposer protected ()
 @JSImport("graphql-compose/lib/InputTypeComposer", "InputTypeComposer")
 @js.native
 object InputTypeComposer extends js.Object {
-  var schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[_] = js.native
-  def create(typeDef: graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposerDefinition): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer = js.native
-  def createTemp(typeDef: graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposerDefinition): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer = js.native
+  def create[TCtx](
+    typeDef: graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposeDefinition,
+    schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TCtx]
+  ): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TCtx] = js.native
+  def createTemp[TCtx](typeDef: graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposeDefinition): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TCtx] = js.native
+  def createTemp[TCtx](
+    typeDef: graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposeDefinition,
+    schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TCtx]
+  ): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TCtx] = js.native
 }
 

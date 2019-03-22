@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-dnd"
-version := "7.3.2-ba6e53"
+version := "7.3.2-fb4a13"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,10 +12,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-b5b495",
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-662401",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-188abf",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-5412f7",
   "org.scalablytyped" %%% "recompose" % "0.30-dt-20190225Z-8e4599",
   "org.scalablytyped" %%% "redux" % "4.0.1-18f3a8",
   "org.scalablytyped" %%% "shallowequal" % "1.1-dt-20190202Z-aebda3",

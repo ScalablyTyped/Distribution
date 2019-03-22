@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-canvas"
-version := "0.1-dt-20190316Z-f07782"
+version := "0.1-dt-20190321Z-51c2c0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

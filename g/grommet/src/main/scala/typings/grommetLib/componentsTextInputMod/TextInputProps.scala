@@ -10,6 +10,7 @@ trait TextInputProps extends js.Object {
   var dropHeight: js.UndefOr[
     grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
   ] = js.undefined
+  var dropProps: js.UndefOr[grommetLib.componentsDropMod.DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
   var focusIndicator: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -32,6 +33,7 @@ object TextInputProps {
   def apply(
     dropAlign: grommetLib.Anon_BottomLeft = null,
     dropHeight: grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
+    dropProps: grommetLib.componentsDropMod.DropProps = null,
     dropTarget: js.Object = null,
     focusIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
@@ -49,6 +51,7 @@ object TextInputProps {
     val __obj = js.Dynamic.literal()
     if (dropAlign != null) __obj.updateDynamic("dropAlign")(dropAlign)
     if (dropHeight != null) __obj.updateDynamic("dropHeight")(dropHeight.asInstanceOf[js.Any])
+    if (dropProps != null) __obj.updateDynamic("dropProps")(dropProps)
     if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
     if (!js.isUndefined(focusIndicator)) __obj.updateDynamic("focusIndicator")(focusIndicator)
     if (id != null) __obj.updateDynamic("id")(id)

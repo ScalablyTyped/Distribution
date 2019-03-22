@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_KeyidValid extends js.Object {
-  var keyid: openpgpLib.openpgpMod.openpgpNs.typeNs.keyidNs.Keyid
+  var keyid: openpgpLib.openpgpMod.typeNs.keyidNs.Keyid
   var valid: scala.Boolean
   var verified: js.Promise[scala.Boolean]
 }
@@ -14,7 +14,7 @@ trait Anon_KeyidValid extends js.Object {
 object Anon_KeyidValid {
   @scala.inline
   def apply(
-    keyid: openpgpLib.openpgpMod.openpgpNs.typeNs.keyidNs.Keyid,
+    keyid: openpgpLib.openpgpMod.typeNs.keyidNs.Keyid,
     valid: scala.Boolean,
     verified: js.Promise[scala.Boolean]
   ): Anon_KeyidValid = {

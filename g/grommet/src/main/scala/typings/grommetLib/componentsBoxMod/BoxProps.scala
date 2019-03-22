@@ -21,7 +21,7 @@ trait BoxProps extends js.Object {
       grommetLib.grommetLibStrings.fadeIn | grommetLib.grommetLibStrings.fadeOut | grommetLib.grommetLibStrings.jiggle | grommetLib.grommetLibStrings.pulse | grommetLib.grommetLibStrings.slideUp | grommetLib.grommetLibStrings.slideDown | grommetLib.grommetLibStrings.slideLeft | grommetLib.grommetLibStrings.slideRight | grommetLib.grommetLibStrings.zoomIn | grommetLib.grommetLibStrings.zoomOut | grommetLib.Anon_Delay
     ])
   ] = js.undefined
-  var as: js.UndefOr[java.lang.String] = js.undefined
+  var as: js.UndefOr[grommetLib.utilsMod.PolymorphicType] = js.undefined
   var background: js.UndefOr[java.lang.String | grommetLib.Anon_Color] = js.undefined
   var basis: js.UndefOr[
     grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.xxlarge | grommetLib.grommetLibStrings.full | grommetLib.grommetLibStrings.`1/2` | grommetLib.grommetLibStrings.`1/3` | grommetLib.grommetLibStrings.`2/3` | grommetLib.grommetLibStrings.`1/4` | grommetLib.grommetLibStrings.`2/4` | grommetLib.grommetLibStrings.`3/4` | grommetLib.grommetLibStrings.auto | java.lang.String
@@ -30,7 +30,7 @@ trait BoxProps extends js.Object {
     scala.Boolean | grommetLib.grommetLibStrings.top | grommetLib.grommetLibStrings.left | grommetLib.grommetLibStrings.bottom | grommetLib.grommetLibStrings.right | grommetLib.grommetLibStrings.horizontal | grommetLib.grommetLibStrings.vertical | grommetLib.grommetLibStrings.all | grommetLib.Anon_All
   ] = js.undefined
   var direction: js.UndefOr[
-    grommetLib.grommetLibStrings.row | grommetLib.grommetLibStrings.column | grommetLib.grommetLibStrings.`row-responsive`
+    grommetLib.grommetLibStrings.row | grommetLib.grommetLibStrings.column | grommetLib.grommetLibStrings.`row-responsive` | grommetLib.grommetLibStrings.`row-reverse` | grommetLib.grommetLibStrings.`column-reverse`
   ] = js.undefined
   var elevation: js.UndefOr[
     grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
@@ -64,7 +64,7 @@ trait BoxProps extends js.Object {
   var round: js.UndefOr[
     scala.Boolean | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.full | java.lang.String | grommetLib.Anon_BottomBottomleft
   ] = js.undefined
-  var tag: js.UndefOr[java.lang.String] = js.undefined
+  var tag: js.UndefOr[grommetLib.utilsMod.PolymorphicType] = js.undefined
   var width: js.UndefOr[
     grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.xxlarge | java.lang.String
   ] = js.undefined
@@ -81,11 +81,11 @@ object BoxProps {
     animation: grommetLib.grommetLibStrings.fadeIn | grommetLib.grommetLibStrings.fadeOut | grommetLib.grommetLibStrings.jiggle | grommetLib.grommetLibStrings.pulse | grommetLib.grommetLibStrings.slideUp | grommetLib.grommetLibStrings.slideDown | grommetLib.grommetLibStrings.slideLeft | grommetLib.grommetLibStrings.slideRight | grommetLib.grommetLibStrings.zoomIn | grommetLib.grommetLibStrings.zoomOut | grommetLib.Anon_Delay | (js.Array[
       grommetLib.grommetLibStrings.fadeIn | grommetLib.grommetLibStrings.fadeOut | grommetLib.grommetLibStrings.jiggle | grommetLib.grommetLibStrings.pulse | grommetLib.grommetLibStrings.slideUp | grommetLib.grommetLibStrings.slideDown | grommetLib.grommetLibStrings.slideLeft | grommetLib.grommetLibStrings.slideRight | grommetLib.grommetLibStrings.zoomIn | grommetLib.grommetLibStrings.zoomOut | grommetLib.Anon_Delay
     ]) = null,
-    as: java.lang.String = null,
+    as: grommetLib.utilsMod.PolymorphicType = null,
     background: java.lang.String | grommetLib.Anon_Color = null,
     basis: grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.xxlarge | grommetLib.grommetLibStrings.full | grommetLib.grommetLibStrings.`1/2` | grommetLib.grommetLibStrings.`1/3` | grommetLib.grommetLibStrings.`2/3` | grommetLib.grommetLibStrings.`1/4` | grommetLib.grommetLibStrings.`2/4` | grommetLib.grommetLibStrings.`3/4` | grommetLib.grommetLibStrings.auto | java.lang.String = null,
     border: scala.Boolean | grommetLib.grommetLibStrings.top | grommetLib.grommetLibStrings.left | grommetLib.grommetLibStrings.bottom | grommetLib.grommetLibStrings.right | grommetLib.grommetLibStrings.horizontal | grommetLib.grommetLibStrings.vertical | grommetLib.grommetLibStrings.all | grommetLib.Anon_All = null,
-    direction: grommetLib.grommetLibStrings.row | grommetLib.grommetLibStrings.column | grommetLib.grommetLibStrings.`row-responsive` = null,
+    direction: grommetLib.grommetLibStrings.row | grommetLib.grommetLibStrings.column | grommetLib.grommetLibStrings.`row-responsive` | grommetLib.grommetLibStrings.`row-reverse` | grommetLib.grommetLibStrings.`column-reverse` = null,
     elevation: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
     fill: grommetLib.grommetLibStrings.horizontal | grommetLib.grommetLibStrings.vertical | scala.Boolean = null,
     flex: grommetLib.grommetLibStrings.grow | grommetLib.grommetLibStrings.shrink | scala.Boolean | grommetLib.Anon_Grow = null,
@@ -98,7 +98,7 @@ object BoxProps {
     pad: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
     responsive: js.UndefOr[scala.Boolean] = js.undefined,
     round: scala.Boolean | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.full | java.lang.String | grommetLib.Anon_BottomBottomleft = null,
-    tag: java.lang.String = null,
+    tag: grommetLib.utilsMod.PolymorphicType = null,
     width: grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.xxlarge | java.lang.String = null,
     wrap: js.UndefOr[scala.Boolean] = js.undefined
   ): BoxProps = {

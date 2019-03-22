@@ -18,10 +18,12 @@ trait SelectProps extends js.Object {
   var dropHeight: js.UndefOr[
     grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
   ] = js.undefined
+  var dropProps: js.UndefOr[grommetLib.componentsDropMod.DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
   var emptySearchMessage: js.UndefOr[java.lang.String] = js.undefined
   var focusIndicator: js.UndefOr[scala.Boolean] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
+  var icon: js.UndefOr[scala.Boolean | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var labelKey: js.UndefOr[java.lang.String | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
   var margin: js.UndefOr[
@@ -33,6 +35,7 @@ trait SelectProps extends js.Object {
   var onClose: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onOpen: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var onSearch: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  var open: js.UndefOr[scala.Boolean] = js.undefined
   var options: js.Array[java.lang.String | reactLib.reactMod.Global.JSXNs.Element | js.Object]
   var placeholder: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var plain: js.UndefOr[scala.Boolean] = js.undefined
@@ -60,10 +63,12 @@ object SelectProps {
     disabledKey: java.lang.String | (js.Function1[/* repeated */ js.Any, _]) = null,
     dropAlign: grommetLib.Anon_BottomLeft = null,
     dropHeight: grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
+    dropProps: grommetLib.componentsDropMod.DropProps = null,
     dropTarget: js.Object = null,
     emptySearchMessage: java.lang.String = null,
     focusIndicator: js.UndefOr[scala.Boolean] = js.undefined,
     gridArea: java.lang.String = null,
+    icon: scala.Boolean | (js.Function1[/* repeated */ js.Any, _]) = null,
     id: java.lang.String = null,
     labelKey: java.lang.String | (js.Function1[/* repeated */ js.Any, _]) = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
@@ -73,6 +78,7 @@ object SelectProps {
     onClose: /* repeated */ js.Any => _ = null,
     onOpen: /* repeated */ js.Any => _ = null,
     onSearch: /* repeated */ js.Any => _ = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
     placeholder: java.lang.String | reactLib.reactMod.ReactNs.ReactNode = null,
     plain: js.UndefOr[scala.Boolean] = js.undefined,
     searchPlaceholder: java.lang.String = null,
@@ -91,10 +97,12 @@ object SelectProps {
     if (disabledKey != null) __obj.updateDynamic("disabledKey")(disabledKey.asInstanceOf[js.Any])
     if (dropAlign != null) __obj.updateDynamic("dropAlign")(dropAlign)
     if (dropHeight != null) __obj.updateDynamic("dropHeight")(dropHeight.asInstanceOf[js.Any])
+    if (dropProps != null) __obj.updateDynamic("dropProps")(dropProps)
     if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
     if (emptySearchMessage != null) __obj.updateDynamic("emptySearchMessage")(emptySearchMessage)
     if (!js.isUndefined(focusIndicator)) __obj.updateDynamic("focusIndicator")(focusIndicator)
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (labelKey != null) __obj.updateDynamic("labelKey")(labelKey.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
@@ -104,6 +112,7 @@ object SelectProps {
     if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1(onClose))
     if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1(onOpen))
     if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1(onSearch))
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
     if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
     if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)

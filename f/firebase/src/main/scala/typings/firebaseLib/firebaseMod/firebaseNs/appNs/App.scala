@@ -75,9 +75,6 @@ trait App extends js.Object {
     */
   def database(): firebaseLib.firebaseMod.firebaseNs.databaseNs.Database = js.native
   def database(url: java.lang.String): firebaseLib.firebaseMod.firebaseNs.databaseNs.Database = js.native
-  def firestore(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Firestore = js.native
-  def functions(): firebaseLib.firebaseMod.firebaseNs.functionsNs.Functions = js.native
-  def functions(region: java.lang.String): firebaseLib.firebaseMod.firebaseNs.functionsNs.Functions = js.native
   /**
     * Renders this app unusable and frees the resources of all associated
     * services.
@@ -96,6 +93,10 @@ trait App extends js.Object {
     * @return {!firebase.Promise<void>} An empty promise fulfilled when the app has
     *   been deleted.
     */
+  def delete(): js.Promise[_] = js.native
+  def firestore(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Firestore = js.native
+  def functions(): firebaseLib.firebaseMod.firebaseNs.functionsNs.Functions = js.native
+  def functions(region: java.lang.String): firebaseLib.firebaseMod.firebaseNs.functionsNs.Functions = js.native
   /**
     * Gets the {@link firebase.messaging.Messaging `Messaging`} service for the
     * current app.

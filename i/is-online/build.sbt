@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-online"
-version := "8.1.0-c36cc8"
+version := "8.1.0-e50cf0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "aggregate-error" % "2.2.0-6457eb",
   "org.scalablytyped" %%% "clean-stack" % "1.3-dt-20180214Z-b857a2",
-  "org.scalablytyped" %%% "got" % "9.4-dt-20190312Z-7355f5",
+  "org.scalablytyped" %%% "got" % "9.4-dt-20190312Z-c99bf9",
   "org.scalablytyped" %%% "indent-string" % "3.2-dt-20181210Z-52f01b",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
   "org.scalablytyped" %%% "p-any" % "2.0.0-bcbb68",
   "org.scalablytyped" %%% "p-cancelable" % "1.1.0-b27b20",
   "org.scalablytyped" %%% "p-some" % "4.0.0-81ba44",

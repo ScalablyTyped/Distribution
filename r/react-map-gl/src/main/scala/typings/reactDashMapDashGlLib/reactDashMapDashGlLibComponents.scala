@@ -15,6 +15,8 @@ object reactDashMapDashGlLibComponents {
   @scala.inline
   def FullscreenControl: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControl].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps]]
   @scala.inline
+  def GeolocateControl: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.GeolocateControlProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.GeolocateControl].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.GeolocateControlProps]]
+  @scala.inline
   def HTMLOverlay: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlay].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps]]
   @scala.inline
   def InteractiveMap: reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMapProps] = js.constructorOf[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMap].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMapDashGlLib.reactDashMapDashGlMod.InteractiveMapProps]]
@@ -39,6 +41,9 @@ object reactDashMapDashGlLibComponents {
   @scala.inline
   def FullscreenControlProps: reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps.type = reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps
   type FullscreenControlProps = reactDashMapDashGlLib.reactDashMapDashGlMod.FullscreenControlProps
+  @scala.inline
+  def GeolocateControlProps: reactDashMapDashGlLib.reactDashMapDashGlMod.GeolocateControlProps.type = reactDashMapDashGlLib.reactDashMapDashGlMod.GeolocateControlProps
+  type GeolocateControlProps = reactDashMapDashGlLib.reactDashMapDashGlMod.GeolocateControlProps
   @scala.inline
   def HTMLOverlayProps: reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps.type = reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps
   type HTMLOverlayProps = reactDashMapDashGlLib.reactDashMapDashGlMod.HTMLOverlayProps

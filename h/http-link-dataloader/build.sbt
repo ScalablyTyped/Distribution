@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "http-link-dataloader"
-version := "0.1.6-a3f2ab"
+version := "0.1.6-f8eeba"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,12 +8,12 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "apollo-link" % "1.2.11-e13a57",
   "org.scalablytyped" %%% "apollo-utilities" % "1.2.1-da0a30",
-  "org.scalablytyped" %%% "cross-fetch" % "2.2.2-354032",
+  "org.scalablytyped" %%% "cross-fetch" % "2.2.2-1c9114",
   "org.scalablytyped" %%% "dataloader" % "1.4.0-38089e",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-ccd0c9",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20190212Z-aa9287",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-d54d74",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-c5e18b",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
   "org.scalablytyped" %%% "ts-invariant" % "0.3.2-6c21c8",
   "org.scalablytyped" %%% "tslib" % "1.9.3-28a6ab",

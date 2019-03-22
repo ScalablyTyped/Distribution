@@ -9,9 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Button: reactLib.reactMod.ReactNs.ComponentClass[
-    ButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
-      reactLib.HTMLButtonElement
+    ButtonProps with (grommetLib.utilsMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
+        reactLib.HTMLButtonElement
+      ], 
+      grommetLib.grommetLibStrings.color
     ]), 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native

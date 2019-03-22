@@ -46,7 +46,7 @@ trait ChartDataSets extends js.Object {
   var spanGaps: js.UndefOr[scala.Boolean] = js.undefined
   var stack: js.UndefOr[java.lang.String] = js.undefined
   var steppedLine: js.UndefOr[
-    chartDotJsLib.chartDotJsLibStrings.before | chartDotJsLib.chartDotJsLibStrings.after | scala.Boolean
+    chartDotJsLib.chartDotJsLibStrings.before | chartDotJsLib.chartDotJsLibStrings.after | chartDotJsLib.chartDotJsLibStrings.middle | scala.Boolean
   ] = js.undefined
   var `type`: js.UndefOr[ChartType | java.lang.String] = js.undefined
   var xAxisID: js.UndefOr[java.lang.String] = js.undefined
@@ -87,7 +87,7 @@ object ChartDataSets {
     showLine: js.UndefOr[scala.Boolean] = js.undefined,
     spanGaps: js.UndefOr[scala.Boolean] = js.undefined,
     stack: java.lang.String = null,
-    steppedLine: chartDotJsLib.chartDotJsLibStrings.before | chartDotJsLib.chartDotJsLibStrings.after | scala.Boolean = null,
+    steppedLine: chartDotJsLib.chartDotJsLibStrings.before | chartDotJsLib.chartDotJsLibStrings.after | chartDotJsLib.chartDotJsLibStrings.middle | scala.Boolean = null,
     `type`: ChartType | java.lang.String = null,
     xAxisID: java.lang.String = null,
     yAxisID: java.lang.String = null

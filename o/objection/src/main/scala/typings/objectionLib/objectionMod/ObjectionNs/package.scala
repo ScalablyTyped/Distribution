@@ -21,7 +21,11 @@ package object ObjectionNs {
     * @see http://vincit.github.io/objection.js/#fieldexpression
     */
   type FieldExpression = java.lang.String
-  type FilterFunction[QM /* <: Model */] = js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+  type FilterFunction[QM /* <: Model */] = js.ThisFunction1[
+    /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+    /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+    scala.Unit
+  ]
   type GraphModel[T] = (objectionLib.Anon_DbRef with T) | (objectionLib.Anon_DbRefId with objectionLib.objectionLibStrings.GraphModel with js.Any) | (objectionLib.Anon_DbRefIdRef with objectionLib.objectionLibStrings.GraphModel with js.Any)
   type Id = java.lang.String | scala.Double
   type IdOrIds = Id | Ids

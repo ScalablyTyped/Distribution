@@ -14,7 +14,7 @@ trait RangeSelectorProps extends js.Object {
   var min: js.UndefOr[scala.Double] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var opacity: js.UndefOr[
-    grommetLib.grommetLibStrings.weak | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.strong
+    grommetLib.grommetLibStrings.weak | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.strong | java.lang.String | scala.Boolean
   ] = js.undefined
   var round: js.UndefOr[
     grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.full | java.lang.String
@@ -37,7 +37,7 @@ object RangeSelectorProps {
     messages: grommetLib.Anon_Lower = null,
     min: scala.Int | scala.Double = null,
     onChange: /* repeated */ js.Any => _ = null,
-    opacity: grommetLib.grommetLibStrings.weak | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.strong = null,
+    opacity: grommetLib.grommetLibStrings.weak | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.strong | java.lang.String | scala.Boolean = null,
     round: grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.full | java.lang.String = null,
     size: grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.full | java.lang.String = null,
     step: scala.Int | scala.Double = null

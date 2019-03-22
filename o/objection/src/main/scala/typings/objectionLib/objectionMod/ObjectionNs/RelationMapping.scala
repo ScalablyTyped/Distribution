@@ -16,7 +16,7 @@ trait RelationMapping extends js.Object {
     ]) | java.lang.String | js.Object
   ] = js.undefined
   var join: RelationJoin
-  var modelClass: ModelClass[_] | java.lang.String
+  var modelClass: js.Function0[ModelClass[_]] | ModelClass[_] | java.lang.String
   var modify: js.UndefOr[
     (js.Function1[
       /* queryBuilder */ QueryBuilder[_, js.Array[_], js.Array[_]], 
@@ -30,7 +30,7 @@ object RelationMapping {
   @scala.inline
   def apply(
     join: RelationJoin,
-    modelClass: ModelClass[_] | java.lang.String,
+    modelClass: js.Function0[ModelClass[_]] | ModelClass[_] | java.lang.String,
     relation: Relation,
     beforeInsert: (/* model */ Model, /* context */ QueryContext) => js.Promise[scala.Unit] | scala.Unit = null,
     filter: (js.Function1[

@@ -111,6 +111,9 @@ object chartDotJsLibStrings {
     extends chartDotJsLib.chartDotJsMod.ChartNs.ScaleType
   
   @js.native
+  sealed trait middle extends js.Object
+  
+  @js.native
   sealed trait millisecond
     extends chartDotJsLib.chartDotJsMod.ChartNs.TimeUnit
   
@@ -288,6 +291,8 @@ object chartDotJsLibStrings {
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
   def logarithmic: logarithmic = "logarithmic".asInstanceOf[logarithmic]
+  @scala.inline
+  def middle: middle = "middle".asInstanceOf[middle]
   @scala.inline
   def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
   @scala.inline

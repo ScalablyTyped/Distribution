@@ -26,6 +26,66 @@ class FSWatcher ()
     * each directory.
     */
   def getWatched(): WatchedPaths = js.native
+  def on(
+    event: chokidarLib.chokidarLibStrings.all,
+    listener: js.Function3[
+      /* eventName */ chokidarLib.chokidarLibStrings.add | chokidarLib.chokidarLibStrings.addDir | chokidarLib.chokidarLibStrings.change | chokidarLib.chokidarLibStrings.unlink | chokidarLib.chokidarLibStrings.unlinkDir, 
+      /* path */ java.lang.String, 
+      /* stats */ js.UndefOr[nodeLib.fsMod.Stats], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_add(
+    event: chokidarLib.chokidarLibStrings.add,
+    listener: js.Function2[/* path */ java.lang.String, /* stats */ js.UndefOr[nodeLib.fsMod.Stats], scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_addDir(
+    event: chokidarLib.chokidarLibStrings.addDir,
+    listener: js.Function2[/* path */ java.lang.String, /* stats */ js.UndefOr[nodeLib.fsMod.Stats], scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_change(
+    event: chokidarLib.chokidarLibStrings.change,
+    listener: js.Function2[/* path */ java.lang.String, /* stats */ js.UndefOr[nodeLib.fsMod.Stats], scala.Unit]
+  ): this.type = js.native
+  /**
+    * Error occured
+    */
+  @JSName("on")
+  def on_error(
+    event: chokidarLib.chokidarLibStrings.error,
+    listener: js.Function1[/* error */ stdLib.Error, scala.Unit]
+  ): this.type = js.native
+  /**
+    * Exposes the native Node `fs.FSWatcher events`
+    */
+  @JSName("on")
+  def on_raw(
+    event: chokidarLib.chokidarLibStrings.raw,
+    listener: js.Function3[
+      /* eventName */ java.lang.String, 
+      /* path */ java.lang.String, 
+      /* details */ js.Any, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Fires when the initial scan is complete
+    */
+  @JSName("on")
+  def on_ready(event: chokidarLib.chokidarLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("on")
+  def on_unlink(
+    event: chokidarLib.chokidarLibStrings.unlink,
+    listener: js.Function1[/* path */ java.lang.String, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_unlinkDir(
+    event: chokidarLib.chokidarLibStrings.unlinkDir,
+    listener: js.Function1[/* path */ java.lang.String, scala.Unit]
+  ): this.type = js.native
   /**
     * Stop watching files, directories, or glob patterns. Takes an array of strings or just one
     * string.

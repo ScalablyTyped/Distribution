@@ -13,6 +13,7 @@ trait MenuProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var dropAlign: js.UndefOr[grommetLib.Anon_BottomLeftRight] = js.undefined
   var dropBackground: js.UndefOr[java.lang.String | grommetLib.Anon_ColorMedium] = js.undefined
+  var dropProps: js.UndefOr[grommetLib.componentsDropMod.DropProps] = js.undefined
   var dropTarget: js.UndefOr[js.Object] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
   var icon: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
@@ -39,6 +40,7 @@ object MenuProps {
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     dropAlign: grommetLib.Anon_BottomLeftRight = null,
     dropBackground: java.lang.String | grommetLib.Anon_ColorMedium = null,
+    dropProps: grommetLib.componentsDropMod.DropProps = null,
     dropTarget: js.Object = null,
     gridArea: java.lang.String = null,
     icon: scala.Boolean | reactLib.reactMod.ReactNs.ReactNode = null,
@@ -54,6 +56,7 @@ object MenuProps {
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (dropAlign != null) __obj.updateDynamic("dropAlign")(dropAlign)
     if (dropBackground != null) __obj.updateDynamic("dropBackground")(dropBackground.asInstanceOf[js.Any])
+    if (dropProps != null) __obj.updateDynamic("dropProps")(dropProps)
     if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])

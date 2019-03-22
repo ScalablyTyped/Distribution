@@ -1231,7 +1231,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
       */
     var UserPoolAddOns: js.UndefOr[UserPoolAddOnsType] = js.undefined
     /**
-      * The cost allocation tags for the user pool. For more information, see Adding Cost Allocation Tags to Your User Pool 
+      * The tag keys and values to assign to the user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria.
       */
     var UserPoolTags: js.UndefOr[UserPoolTagsType] = js.undefined
     /**
@@ -1514,6 +1514,9 @@ object CognitoIdentityServiceProviderNs extends js.Object {
       * The ARN of the CloudFront distribution.
       */
     var CloudFrontDistribution: js.UndefOr[StringType] = js.undefined
+    /**
+      * The configuration for a custom domain that hosts the sign-up and sign-in webpages for your application.
+      */
     var CustomDomainConfig: js.UndefOr[CustomDomainConfigType] = js.undefined
     /**
       * The domain string.
@@ -2089,6 +2092,20 @@ object CognitoIdentityServiceProviderNs extends js.Object {
       * The resource servers.
       */
     var ResourceServers: ResourceServersListType
+  }
+  
+  trait ListTagsForResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the user pool that the tags are assigned to.
+      */
+    var ResourceArn: ArnType
+  }
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    /**
+      * The tags that are assigned to the user pool.
+      */
+    var Tags: js.UndefOr[UserPoolTagsType] = js.undefined
   }
   
   trait ListUserImportJobsRequest extends js.Object {
@@ -2821,6 +2838,19 @@ object CognitoIdentityServiceProviderNs extends js.Object {
       */
     var MinLength: js.UndefOr[StringType] = js.undefined
   }
+  
+  trait TagResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the user pool to assign the tags to.
+      */
+    var ResourceArn: ArnType
+    /**
+      * The tags to assign to the user pool.
+      */
+    var Tags: js.UndefOr[UserPoolTagsType] = js.undefined
+  }
+  
+  trait TagResourceResponse extends js.Object
   
   @js.native
   trait Types
@@ -4342,6 +4372,29 @@ object CognitoIdentityServiceProviderNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListResourceServersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Lists the tags that are assigned to an Amazon Cognito user pool. A tag is a label that you can apply to user pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria. You can use this action up to 10 times per second, per account.
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists the tags that are assigned to an Amazon Cognito user pool. A tag is a label that you can apply to user pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria. You can use this action up to 10 times per second, per account.
+      */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Lists the user import jobs.
       */
     def listUserImportJobs(): awsDashSdkLib.libRequestMod.Request[ListUserImportJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4679,6 +4732,52 @@ object CognitoIdentityServiceProviderNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopUserImportJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Assigns a set of tags to an Amazon Cognito user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of a user pool, one for testing and another for production, you might assign an Environment tag key to both user pools. The value of this key might be Test for one user pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your user pools. In an IAM policy, you can constrain permissions for user pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. A user pool can have as many as 50 tags.
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Assigns a set of tags to an Amazon Cognito user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of a user pool, one for testing and another for production, you might assign an Environment tag key to both user pools. The value of this key might be Test for one user pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your user pools. In an IAM policy, you can constrain permissions for user pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. A user pool can have as many as 50 tags.
+      */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes the specified tags from an Amazon Cognito user pool. You can use this action up to 5 times per second, per account
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes the specified tags from an Amazon Cognito user pool. You can use this action up to 5 times per second, per account
+      */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Provides the feedback for an authentication event whether it was from a valid user or not. This feedback is used for improving the risk evaluation decision for the user pool as part of Amazon Cognito advanced security.
       */
     def updateAuthEventFeedback(): awsDashSdkLib.libRequestMod.Request[UpdateAuthEventFeedbackResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4963,6 +5062,19 @@ object CognitoIdentityServiceProviderNs extends js.Object {
       */
     var UserPoolId: js.UndefOr[UserPoolIdType] = js.undefined
   }
+  
+  trait UntagResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the user pool that the tags are assigned to.
+      */
+    var ResourceArn: ArnType
+    /**
+      * The keys of the tags to remove from the user pool.
+      */
+    var TagKeys: js.UndefOr[UserPoolTagsListType] = js.undefined
+  }
+  
+  trait UntagResourceResponse extends js.Object
   
   trait UpdateAuthEventFeedbackRequest extends js.Object {
     /**
@@ -5260,7 +5372,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
       */
     var UserPoolId: UserPoolIdType
     /**
-      * The cost allocation tags for the user pool. For more information, see Adding Cost Allocation Tags to Your User Pool 
+      * The tag keys and values to assign to the user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria.
       */
     var UserPoolTags: js.UndefOr[UserPoolTagsType] = js.undefined
     /**
@@ -5465,7 +5577,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   }
   
   trait UserPoolTagsType
-    extends /* key */ org.scalablytyped.runtime.StringDictionary[StringType]
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValueType]
   
   trait UserPoolType extends js.Object {
     /**
@@ -5488,6 +5600,9 @@ object CognitoIdentityServiceProviderNs extends js.Object {
       * The date the user pool was created.
       */
     var CreationDate: js.UndefOr[DateType] = js.undefined
+    /**
+      * A custom domain name that you provide to Amazon Cognito. This parameter applies only if you use a custom domain to host the sign-up and sign-in pages for your application. For example: auth.example.com. For more information about adding a custom domain to your user pool, see Using Your Own Domain for the Hosted UI.
+      */
     var CustomDomain: js.UndefOr[DomainType] = js.undefined
     /**
       * The device configuration.
@@ -5570,7 +5685,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
       */
     var UserPoolAddOns: js.UndefOr[UserPoolAddOnsType] = js.undefined
     /**
-      * The cost allocation tags for the user pool. For more information, see Adding Cost Allocation Tags to Your User Pool 
+      * The tags that are assigned to the user pool. A tag is a label that you can apply to user pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria.
       */
     var UserPoolTags: js.UndefOr[UserPoolTagsType] = js.undefined
     /**
@@ -5873,6 +5988,8 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   type StatusType = _StatusType | java.lang.String
   type StringType = java.lang.String
   type SupportedIdentityProvidersListType = js.Array[ProviderNameType]
+  type TagKeysType = java.lang.String
+  type TagValueType = java.lang.String
   type TokenModelType = java.lang.String
   type UserFilterType = java.lang.String
   type UserImportJobIdType = java.lang.String
@@ -5885,6 +6002,7 @@ object CognitoIdentityServiceProviderNs extends js.Object {
   type UserPoolListType = js.Array[UserPoolDescriptionType]
   type UserPoolMfaType = _UserPoolMfaType | java.lang.String
   type UserPoolNameType = java.lang.String
+  type UserPoolTagsListType = js.Array[TagKeysType]
   type UserStatusType = _UserStatusType | java.lang.String
   type UsernameAttributeType = _UsernameAttributeType | java.lang.String
   type UsernameAttributesListType = js.Array[UsernameAttributeType]

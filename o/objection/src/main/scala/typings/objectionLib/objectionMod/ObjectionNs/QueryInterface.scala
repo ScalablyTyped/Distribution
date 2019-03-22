@@ -11,8 +11,12 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   var andHaving_Original: Where[QM, RM, RV] = js.native
   @JSName("andWhereBetween")
   var andWhereBetween_Original: WhereBetween[QM, RM, RV] = js.native
+  @JSName("andWhereColumn")
+  var andWhereColumn_Original: Where[QM, RM, RV] = js.native
   @JSName("andWhereNotBetween")
   var andWhereNotBetween_Original: WhereBetween[QM, RM, RV] = js.native
+  @JSName("andWhereNotColumn")
+  var andWhereNotColumn_Original: Where[QM, RM, RV] = js.native
   @JSName("andWhereNot")
   var andWhereNot_Original: Where[QM, RM, RV] = js.native
   @JSName("andWhereRaw")
@@ -96,12 +100,16 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   var orHaving_Original: Where[QM, RM, RV] = js.native
   @JSName("orWhereBetween")
   var orWhereBetween_Original: WhereBetween[QM, RM, RV] = js.native
+  @JSName("orWhereColumn")
+  var orWhereColumn_Original: Where[QM, RM, RV] = js.native
   @JSName("orWhereExists")
   var orWhereExists_Original: WhereExists[QM, RM, RV] = js.native
   @JSName("orWhereIn")
   var orWhereIn_Original: WhereIn[QM, RM, RV] = js.native
   @JSName("orWhereNotBetween")
   var orWhereNotBetween_Original: WhereBetween[QM, RM, RV] = js.native
+  @JSName("orWhereNotColumn")
+  var orWhereNotColumn_Original: Where[QM, RM, RV] = js.native
   @JSName("orWhereNotExists")
   var orWhereNotExists_Original: WhereExists[QM, RM, RV] = js.native
   @JSName("orWhereNotIn")
@@ -136,12 +144,16 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   var union_Original: Union[QM] = js.native
   @JSName("whereBetween")
   var whereBetween_Original: WhereBetween[QM, RM, RV] = js.native
+  @JSName("whereColumn")
+  var whereColumn_Original: Where[QM, RM, RV] = js.native
   @JSName("whereExists")
   var whereExists_Original: WhereExists[QM, RM, RV] = js.native
   @JSName("whereIn")
   var whereIn_Original: WhereIn[QM, RM, RV] = js.native
   @JSName("whereNotBetween")
   var whereNotBetween_Original: WhereBetween[QM, RM, RV] = js.native
+  @JSName("whereNotColumn")
+  var whereNotColumn_Original: Where[QM, RM, RV] = js.native
   @JSName("whereNotExists")
   var whereNotExists_Original: WhereExists[QM, RM, RV] = js.native
   @JSName("whereNotIn")
@@ -167,7 +179,11 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   @JSName("with")
   var with_Original: With[QM, RM, RV] = js.native
   def andHaving(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andHaving(
     column: java.lang.String,
@@ -193,7 +209,11 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def andHaving(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
   def andHaving(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def andWhere(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhere(
     column: java.lang.String,
@@ -219,8 +239,42 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def andWhere(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
   def andWhere(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def andWhereBetween(column: ColumnRef, range: js.Tuple2[Value, Value]): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(
+    column: java.lang.String,
+    operator: java.lang.String,
+    value: QueryBuilder[_, js.Array[_], js.Array[_]]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(column: java.lang.String, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(column: java.lang.String, value: QueryBuilder[_, js.Array[_], js.Array[_]]): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(column: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(
+    column: ColumnRef,
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereColumn(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNot(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNot(
     column: java.lang.String,
@@ -246,6 +300,36 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def andWhereNot(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNot(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def andWhereNotBetween(column: ColumnRef, range: js.Tuple2[Value, Value]): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(
+    column: java.lang.String,
+    operator: java.lang.String,
+    value: QueryBuilder[_, js.Array[_], js.Array[_]]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(column: java.lang.String, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(column: java.lang.String, value: QueryBuilder[_, js.Array[_], js.Array[_]]): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(column: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(
+    column: ColumnRef,
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
+  def andWhereNotColumn(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def andWhereRaw(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
   def andWhereRaw(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def andWhereRaw(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
@@ -292,7 +376,11 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def distinct(columnNames: ColumnRef*): QueryBuilder[QM, RM, RV] = js.native
   def distinct(columnNames: js.Array[ColumnRef]): QueryBuilder[QM, RM, RV] = js.native
   def from(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def from(tableName: TableName): QueryBuilder[QM, RM, RV] = js.native
   def fullOuterJoin(queryBuilder: QueryBuilder[Model, js.Array[Model], js.Array[Model]]): QueryBuilder[QM, RM, RV] = js.native
@@ -327,7 +415,11 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def groupByRaw(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   // Having
   def having(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def having(
     column: java.lang.String,
@@ -428,8 +520,13 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
     columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw | Reference]
   ): QueryBuilder[QM, RM, RV] = js.native
   def innerJoin(tableName: TableName, raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def intersect(callback: js.Function0[scala.Unit]): this.type = js.native
   def into(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def into(tableName: TableName): QueryBuilder[QM, RM, RV] = js.native
   // Joins
@@ -498,7 +595,11 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   // Paging
   def offset(offset: scala.Double): this.type = js.native
   def orHaving(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orHaving(
     column: java.lang.String,
@@ -570,7 +671,11 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def orHavingRaw(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
   def orHavingRaw(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def orWhere(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhere(
     column: java.lang.String,
@@ -596,6 +701,36 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def orWhere(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
   def orWhere(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def orWhereBetween(column: ColumnRef, range: js.Tuple2[Value, Value]): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(
+    column: java.lang.String,
+    operator: java.lang.String,
+    value: QueryBuilder[_, js.Array[_], js.Array[_]]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(column: java.lang.String, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(column: java.lang.String, value: QueryBuilder[_, js.Array[_], js.Array[_]]): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(column: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(
+    column: ColumnRef,
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereColumn(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def orWhereExists(
     callback: js.ThisFunction1[
       /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
@@ -616,7 +751,11 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def orWhereIn(column: ColumnRef, query: QueryBuilder[_, js.Array[_], js.Array[_]]): QueryBuilder[QM, RM, RV] = js.native
   def orWhereIn(column: ColumnRef, values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNot(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNot(
     column: java.lang.String,
@@ -642,6 +781,36 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def orWhereNot(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNot(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotBetween(column: ColumnRef, range: js.Tuple2[Value, Value]): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(
+    column: java.lang.String,
+    operator: java.lang.String,
+    value: QueryBuilder[_, js.Array[_], js.Array[_]]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(column: java.lang.String, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(column: java.lang.String, value: QueryBuilder[_, js.Array[_], js.Array[_]]): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(column: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(
+    column: ColumnRef,
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
+  def orWhereNotColumn(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def orWhereNotExists(
     callback: js.ThisFunction1[
       /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
@@ -730,23 +899,67 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def sum(columnName: java.lang.String): this.type = js.native
   def sumDistinct(columnName: java.lang.String): this.type = js.native
   def table(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def table(tableName: TableName): QueryBuilder[QM, RM, RV] = js.native
   def transacting(trx: Transaction): this.type = js.native
   def truncate(): this.type = js.native
   // Union
-  def union(callback: js.Function0[scala.Unit]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def union(callback: js.Function0[scala.Unit], wrap: scala.Boolean): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def union(
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def union(
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ],
+    wrap: scala.Boolean
+  ): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   // Union
-  def union(callbacks: js.Function0[scala.Unit]*): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def union(
+    callbacks: (js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ])*
+  ): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   // Union
-  def union(callbacks: js.Array[js.Function0[scala.Unit]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def union(callbacks: js.Array[js.Function0[scala.Unit]], wrap: scala.Boolean): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def union(
+    callbacks: js.Array[
+      js.ThisFunction1[
+        /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+        /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+        scala.Unit
+      ]
+    ]
+  ): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def union(
+    callbacks: js.Array[
+      js.ThisFunction1[
+        /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+        /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+        scala.Unit
+      ]
+    ],
+    wrap: scala.Boolean
+  ): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   def unionAll(callback: js.Function0[scala.Unit]): this.type = js.native
   // Wheres
   def where(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def where(
     column: java.lang.String,
@@ -780,6 +993,36 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   // Wheres
   def where(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def whereBetween(column: ColumnRef, range: js.Tuple2[Value, Value]): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(
+    column: java.lang.String,
+    operator: java.lang.String,
+    value: QueryBuilder[_, js.Array[_], js.Array[_]]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(column: java.lang.String, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(column: java.lang.String, value: QueryBuilder[_, js.Array[_], js.Array[_]]): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(column: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(
+    column: ColumnRef,
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
+  def whereColumn(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def whereExists(
     callback: js.ThisFunction1[
       /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
@@ -800,7 +1043,11 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def whereIn(column: ColumnRef, query: QueryBuilder[_, js.Array[_], js.Array[_]]): QueryBuilder[QM, RM, RV] = js.native
   def whereIn(column: ColumnRef, values: js.Array[Value]): QueryBuilder[QM, RM, RV] = js.native
   def whereNot(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def whereNot(
     column: java.lang.String,
@@ -826,6 +1073,36 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def whereNot(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
   def whereNot(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def whereNotBetween(column: ColumnRef, range: js.Tuple2[Value, Value]): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(
+    column: java.lang.String,
+    operator: java.lang.String,
+    value: QueryBuilder[_, js.Array[_], js.Array[_]]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(column: java.lang.String, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(column: java.lang.String, value: QueryBuilder[_, js.Array[_], js.Array[_]]): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(column: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(
+    column: ColumnRef,
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
+  ): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(condition: scala.Boolean): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(`object`: js.Object): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
+  def whereNotColumn(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   def whereNotExists(
     callback: js.ThisFunction1[
       /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 

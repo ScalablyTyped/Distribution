@@ -10,7 +10,7 @@ trait TextProps extends js.Object {
   var alignSelf: js.UndefOr[
     grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch
   ] = js.undefined
-  var as: js.UndefOr[java.lang.String] = js.undefined
+  var as: js.UndefOr[grommetLib.utilsMod.PolymorphicType] = js.undefined
   var color: js.UndefOr[java.lang.String | grommetLib.Anon_Dark] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
   var margin: js.UndefOr[
@@ -19,7 +19,7 @@ trait TextProps extends js.Object {
   var size: js.UndefOr[
     grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.xxlarge | java.lang.String
   ] = js.undefined
-  var tag: js.UndefOr[java.lang.String] = js.undefined
+  var tag: js.UndefOr[grommetLib.utilsMod.PolymorphicType] = js.undefined
   var textAlign: js.UndefOr[
     grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end
   ] = js.undefined
@@ -34,12 +34,12 @@ object TextProps {
   def apply(
     a11yTitle: java.lang.String = null,
     alignSelf: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch = null,
-    as: java.lang.String = null,
+    as: grommetLib.utilsMod.PolymorphicType = null,
     color: java.lang.String | grommetLib.Anon_Dark = null,
     gridArea: java.lang.String = null,
     margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null,
     size: grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.xxlarge | java.lang.String = null,
-    tag: java.lang.String = null,
+    tag: grommetLib.utilsMod.PolymorphicType = null,
     textAlign: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end = null,
     truncate: js.UndefOr[scala.Boolean] = js.undefined,
     weight: grommetLib.grommetLibStrings.normal | grommetLib.grommetLibStrings.bold | scala.Double = null

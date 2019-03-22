@@ -73,6 +73,9 @@ class Query[T /* <: parseLib.ParseNs.Object */] protected ()
 @JSImport("parse", "Query")
 @js.native
 object Query extends js.Object {
+  def and[U /* <: parseLib.ParseNs.Object */](args: parseLib.ParseNs.Query[U]*): parseLib.ParseNs.Query[U] = js.native
+  def fromJSON[U /* <: parseLib.ParseNs.Object */](className: java.lang.String, json: js.Any): parseLib.ParseNs.Query[U] = js.native
+  def nor[U /* <: parseLib.ParseNs.Object */](args: parseLib.ParseNs.Query[U]*): parseLib.ParseNs.Query[U] = js.native
   def or[U /* <: parseLib.ParseNs.Object */](var_args: parseLib.ParseNs.Query[U]*): parseLib.ParseNs.Query[U] = js.native
 }
 

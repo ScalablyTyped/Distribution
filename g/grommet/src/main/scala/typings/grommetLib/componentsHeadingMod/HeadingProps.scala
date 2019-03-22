@@ -10,6 +10,7 @@ trait HeadingProps extends js.Object {
   var alignSelf: js.UndefOr[
     grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch
   ] = js.undefined
+  var as: js.UndefOr[grommetLib.utilsMod.PolymorphicType] = js.undefined
   var color: js.UndefOr[java.lang.String | grommetLib.Anon_Dark] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
   var level: js.UndefOr[
@@ -33,6 +34,7 @@ object HeadingProps {
   def apply(
     a11yTitle: java.lang.String = null,
     alignSelf: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch = null,
+    as: grommetLib.utilsMod.PolymorphicType = null,
     color: java.lang.String | grommetLib.Anon_Dark = null,
     gridArea: java.lang.String = null,
     level: grommetLib.grommetLibStrings.`1` | grommetLib.grommetLibStrings.`2` | grommetLib.grommetLibStrings.`3` | grommetLib.grommetLibStrings.`4` | grommetLib.grommetLibStrings.`5` | grommetLib.grommetLibStrings.`6` = null,
@@ -45,6 +47,7 @@ object HeadingProps {
     val __obj = js.Dynamic.literal()
     if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
     if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    if (as != null) __obj.updateDynamic("as")(as)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])

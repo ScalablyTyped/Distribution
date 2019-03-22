@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OverlayOptions extends js.Object {
+  /** how to blend this image with the image below. (optional, default `'over'`) */
+  var blend: js.UndefOr[Blend] = js.undefined
   /** describes a blank overlay to be created. */
   var create: js.UndefOr[Create] = js.undefined
   /** set to true to apply only the alpha channel of the overlay image to the input image, giving the appearance of one image being cut out of another. (optional, default false) */
@@ -27,6 +29,7 @@ trait OverlayOptions extends js.Object {
 object OverlayOptions {
   @scala.inline
   def apply(
+    blend: Blend = null,
     create: Create = null,
     cutout: js.UndefOr[scala.Boolean] = js.undefined,
     density: scala.Int | scala.Double = null,
@@ -37,6 +40,7 @@ object OverlayOptions {
     top: scala.Int | scala.Double = null
   ): OverlayOptions = {
     val __obj = js.Dynamic.literal()
+    if (blend != null) __obj.updateDynamic("blend")(blend)
     if (create != null) __obj.updateDynamic("create")(create)
     if (!js.isUndefined(cutout)) __obj.updateDynamic("cutout")(cutout)
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])

@@ -7,28 +7,24 @@ import scala.scalajs.js.annotation._
 
 trait ResolveParams[TSource, TContext, TArgs]
   extends /* opt */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var args: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ argName in keyof TArgs ]: TArgs[argName]}
-    */ graphqlDashComposeLib.graphqlDashComposeLibStrings.ResolveParams with TArgs
+  var args: TArgs
   var context: TContext
   var info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo
-  var projection: stdLib.Partial[graphqlDashComposeLib.libUtilsProjectionMod.ProjectionType[TSource]]
+  var projection: stdLib.Partial[graphqlDashComposeLib.libUtilsProjectionMod.ProjectionType]
   var source: TSource
 }
 
 object ResolveParams {
   @scala.inline
   def apply[TSource, TContext, TArgs](
-    args: /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ argName in keyof TArgs ]: TArgs[argName]}
-    */ graphqlDashComposeLib.graphqlDashComposeLibStrings.ResolveParams with TArgs,
+    args: TArgs,
     context: TContext,
     info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo,
-    projection: stdLib.Partial[graphqlDashComposeLib.libUtilsProjectionMod.ProjectionType[TSource]],
+    projection: stdLib.Partial[graphqlDashComposeLib.libUtilsProjectionMod.ProjectionType],
     source: TSource,
     StringDictionary: /* opt */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): ResolveParams[TSource, TContext, TArgs] = {
-    val __obj = js.Dynamic.literal(args = args, context = context.asInstanceOf[js.Any], info = info, projection = projection, source = source.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], info = info, projection = projection, source = source.asInstanceOf[js.Any])
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ResolveParams[TSource, TContext, TArgs]]
   }

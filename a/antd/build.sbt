@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "3.15.1-7c3249"
+version := "3.15.1-b42d71"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "enquire_dot_js" % "2.1-dt-20190212Z-75dfb4",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
   "org.scalablytyped" %%% "moment" % "2.24.0-1d5d22",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "raf" % "3.4-dt-20190103Z-956f39",
   "org.scalablytyped" %%% "rc-calendar" % "9.10.10-604e59",
@@ -30,7 +30,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rc-tooltip" % "3.7-dt-20190212Z-25c8ee",
   "org.scalablytyped" %%% "rc-tree" % "1.11-dt-20190212Z-76ea3a",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-188abf",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-5412f7",
   "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-10a570",
   "org.scalablytyped" %%% "react-slick" % "0.23-dt-20190126Z-e906fc",
   "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-a28f79",

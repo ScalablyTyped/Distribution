@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetAddressParams extends CommonParams {
+  var address: js.UndefOr[java.lang.String] = js.undefined
   var coin: js.UndefOr[java.lang.String] = js.undefined
   var crossChain: js.UndefOr[scala.Boolean] = js.undefined
   var path: java.lang.String | js.Array[scala.Double]
@@ -16,6 +17,7 @@ object GetAddressParams {
   @scala.inline
   def apply(
     path: java.lang.String | js.Array[scala.Double],
+    address: java.lang.String = null,
     allowSeedlessDevice: js.UndefOr[scala.Boolean] = js.undefined,
     coin: java.lang.String = null,
     crossChain: js.UndefOr[scala.Boolean] = js.undefined,
@@ -25,6 +27,7 @@ object GetAddressParams {
     useEmptyPassphrase: js.UndefOr[scala.Boolean] = js.undefined
   ): GetAddressParams = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    if (address != null) __obj.updateDynamic("address")(address)
     if (!js.isUndefined(allowSeedlessDevice)) __obj.updateDynamic("allowSeedlessDevice")(allowSeedlessDevice)
     if (coin != null) __obj.updateDynamic("coin")(coin)
     if (!js.isUndefined(crossChain)) __obj.updateDynamic("crossChain")(crossChain)

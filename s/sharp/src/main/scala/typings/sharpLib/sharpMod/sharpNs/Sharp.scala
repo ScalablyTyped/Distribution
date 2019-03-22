@@ -39,6 +39,16 @@ trait Sharp
   def boolean(operand: nodeLib.Buffer, operator: java.lang.String): Sharp = js.native
   def boolean(operand: nodeLib.Buffer, operator: java.lang.String, options: sharpLib.Anon_Raw): Sharp = js.native
   /**
+    * Composite image(s) over the processed (resized, extracted etc.) image.
+    *
+    * The images to composite must be the same size or smaller than the processed image.
+    * If both `top` and `left` options are provided, they take precedence over `gravity`.
+    * @param images - Ordered list of images to composite
+    * @throws {Error} Invalid parameters
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def composite(images: js.Array[sharpLib.Anon_Input with OverlayOptions]): Sharp = js.native
+  /**
     * Convolve the image with the specified kernel.
     * @param kernel the specified kernel
     * @throws {Error} Invalid parameters
@@ -230,6 +240,7 @@ trait Sharp
     * @param options overlay options
     * @throws {Error} Invalid parameters
     * @returns A sharp instance that can be used to chain operations
+    * @deprecated
     */
   def overlayWith(): Sharp = js.native
   def overlayWith(image: java.lang.String): Sharp = js.native

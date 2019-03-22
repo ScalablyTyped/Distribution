@@ -55,52 +55,52 @@ object ^ extends js.Object {
   def createActions_Payload[Payload](actionMapOrIdentityAction: java.lang.String, identityActions: (java.lang.String | Options)*): org.scalablytyped.runtime.StringDictionary[ActionFunctionAny[Action[Payload]]] = js.native
   @JSName("createActions")
   def createActions_Payload[Payload](actionMapOrIdentityAction: ActionMap[Payload, _], identityActions: (java.lang.String | Options)*): org.scalablytyped.runtime.StringDictionary[ActionFunctionAny[Action[Payload]]] = js.native
-  def handleAction[State, Payload](actionType: java.lang.String, reducer: ReducerNextThrow[State, Payload], initialState: State): Reducer[State, Payload] = js.native
-  def handleAction[State, Payload](actionType: java.lang.String, reducer: Reducer[State, Payload], initialState: State): Reducer[State, Payload] = js.native
+  def handleAction[State, Payload](actionType: java.lang.String, reducer: ReducerNextThrow[State, Payload], initialState: State): ReduxCompatibleReducer[State, Payload] = js.native
+  def handleAction[State, Payload](actionType: java.lang.String, reducer: Reducer[State, Payload], initialState: State): ReduxCompatibleReducer[State, Payload] = js.native
   def handleAction[State, Payload](
     actionType: ActionFunctions[Payload],
     reducer: ReducerNextThrow[State, Payload],
     initialState: State
-  ): Reducer[State, Payload] = js.native
-  def handleAction[State, Payload](actionType: ActionFunctions[Payload], reducer: Reducer[State, Payload], initialState: State): Reducer[State, Payload] = js.native
-  def handleAction[State, Payload](actionType: CombinedActionType, reducer: ReducerNextThrow[State, Payload], initialState: State): Reducer[State, Payload] = js.native
-  def handleAction[State, Payload](actionType: CombinedActionType, reducer: Reducer[State, Payload], initialState: State): Reducer[State, Payload] = js.native
+  ): ReduxCompatibleReducer[State, Payload] = js.native
+  def handleAction[State, Payload](actionType: ActionFunctions[Payload], reducer: Reducer[State, Payload], initialState: State): ReduxCompatibleReducer[State, Payload] = js.native
+  def handleAction[State, Payload](actionType: CombinedActionType, reducer: ReducerNextThrow[State, Payload], initialState: State): ReduxCompatibleReducer[State, Payload] = js.native
+  def handleAction[State, Payload](actionType: CombinedActionType, reducer: Reducer[State, Payload], initialState: State): ReduxCompatibleReducer[State, Payload] = js.native
   def handleAction[State, Payload, Meta](
     actionType: java.lang.String,
     reducer: ReducerNextThrowMeta[State, Payload, Meta],
     initialState: State
-  ): Reducer[State, Payload] = js.native
+  ): ReduxCompatibleReducerMeta[State, Payload, Meta] = js.native
   def handleAction[State, Payload, Meta](
     actionType: ActionWithMetaFunctions[Payload, Meta],
     reducer: ReducerNextThrowMeta[State, Payload, Meta],
     initialState: State
-  ): Reducer[State, Payload] = js.native
+  ): ReduxCompatibleReducerMeta[State, Payload, Meta] = js.native
   def handleAction[State, Payload, Meta](
     actionType: CombinedActionType,
     reducer: ReducerNextThrowMeta[State, Payload, Meta],
     initialState: State
-  ): Reducer[State, Payload] = js.native
+  ): ReduxCompatibleReducerMeta[State, Payload, Meta] = js.native
   @JSName("handleAction")
-  def handleAction_StatePayloadMeta[State, Payload, Meta](actionType: java.lang.String, reducer: ReducerMeta[State, Payload, Meta], initialState: State): Reducer[State, Payload] = js.native
+  def handleAction_StatePayloadMetaReduxCompatibleReducerMeta[State, Payload, Meta](actionType: java.lang.String, reducer: ReducerMeta[State, Payload, Meta], initialState: State): ReduxCompatibleReducerMeta[State, Payload, Meta] = js.native
   @JSName("handleAction")
-  def handleAction_StatePayloadMeta[State, Payload, Meta](
+  def handleAction_StatePayloadMetaReduxCompatibleReducerMeta[State, Payload, Meta](
     actionType: ActionWithMetaFunctions[Payload, Meta],
     reducer: ReducerMeta[State, Payload, Meta],
     initialState: State
-  ): Reducer[State, Payload] = js.native
+  ): ReduxCompatibleReducerMeta[State, Payload, Meta] = js.native
   @JSName("handleAction")
-  def handleAction_StatePayloadMeta[State, Payload, Meta](actionType: CombinedActionType, reducer: ReducerMeta[State, Payload, Meta], initialState: State): Reducer[State, Payload] = js.native
-  def handleActions[StateAndPayload](reducerMap: ReducerMap[StateAndPayload, StateAndPayload], initialState: StateAndPayload): Reducer[StateAndPayload, StateAndPayload] = js.native
+  def handleAction_StatePayloadMetaReduxCompatibleReducerMeta[State, Payload, Meta](actionType: CombinedActionType, reducer: ReducerMeta[State, Payload, Meta], initialState: State): ReduxCompatibleReducerMeta[State, Payload, Meta] = js.native
+  def handleActions[StateAndPayload](reducerMap: ReducerMap[StateAndPayload, StateAndPayload], initialState: StateAndPayload): ReduxCompatibleReducer[StateAndPayload, StateAndPayload] = js.native
   def handleActions[StateAndPayload](
     reducerMap: ReducerMap[StateAndPayload, StateAndPayload],
     initialState: StateAndPayload,
     options: Options
-  ): Reducer[StateAndPayload, StateAndPayload] = js.native
-  def handleActions[State, Payload, Meta](reducerMap: ReducerMapMeta[State, Payload, Meta], initialState: State): ReducerMeta[State, Payload, Meta] = js.native
-  def handleActions[State, Payload, Meta](reducerMap: ReducerMapMeta[State, Payload, Meta], initialState: State, options: Options): ReducerMeta[State, Payload, Meta] = js.native
+  ): ReduxCompatibleReducer[StateAndPayload, StateAndPayload] = js.native
+  def handleActions[State, Payload, Meta](reducerMap: ReducerMapMeta[State, Payload, Meta], initialState: State): ReduxCompatibleReducerMeta[State, Payload, Meta] = js.native
+  def handleActions[State, Payload, Meta](reducerMap: ReducerMapMeta[State, Payload, Meta], initialState: State, options: Options): ReduxCompatibleReducerMeta[State, Payload, Meta] = js.native
   @JSName("handleActions")
-  def handleActions_StatePayload[State, Payload](reducerMap: ReducerMap[State, Payload], initialState: State): Reducer[State, Payload] = js.native
+  def handleActions_StatePayload[State, Payload](reducerMap: ReducerMap[State, Payload], initialState: State): ReduxCompatibleReducer[State, Payload] = js.native
   @JSName("handleActions")
-  def handleActions_StatePayload[State, Payload](reducerMap: ReducerMap[State, Payload], initialState: State, options: Options): Reducer[State, Payload] = js.native
+  def handleActions_StatePayload[State, Payload](reducerMap: ReducerMap[State, Payload], initialState: State, options: Options): ReduxCompatibleReducer[State, Payload] = js.native
 }
 

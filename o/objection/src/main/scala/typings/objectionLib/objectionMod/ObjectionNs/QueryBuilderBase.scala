@@ -127,7 +127,11 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def findByIds(ids: js.Array[js.Array[Id] | Id]): this.type = js.native
   /** findOne is shorthand for .where(...whereArgs).first() */
   def findOne(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilderYieldingOneOrNone[QM] = js.native
   /** findOne is shorthand for .where(...whereArgs).first() */
   def findOne(
@@ -270,6 +274,7 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def patchAndFetchById(idOrIds: IdOrIds, modelOrObject: PartialUpdate[QM]): QueryBuilder[QM, QM, QM] = js.native
   def pick(modelClass: objectionLib.Anon_Args, properties: js.Array[java.lang.String]): this.type = js.native
   def pick(properties: js.Array[java.lang.String]): this.type = js.native
+  def range(): QueryBuilder[QM, Page[QM], Page[QM]] = js.native
   def range(start: scala.Double, end: scala.Double): QueryBuilder[QM, Page[QM], Page[QM]] = js.native
   def reflect(): js.Promise[QM] = js.native
   def reject(reason: js.Any): this.type = js.native

@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FindOne[QM /* <: Model */] extends js.Object {
   def apply(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilderYieldingOneOrNone[QM] = js.native
   def apply(
     column: ColumnRef,

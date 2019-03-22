@@ -1952,7 +1952,7 @@ object IotNs extends js.Object {
       */
     var indexStatus: js.UndefOr[IndexStatus] = js.undefined
     /**
-      * Contains a value that specifies the type of indexing performed. Valid values are:   REGISTRY – Your thing index will contain only registry data.   REGISTRY_AND_SHADOW - Your thing index will contain registry data and shadow data.   REGISTRY_AND_CONNECTIVITY_STATUS - Your thing index will contain registry data and thing connectivity status data.   REGISTRY_AND_SHADOW_AND_CONNECTIVITY_STATUS - Your thing index will contain registry data, shadow data, and thing connectivity status data.  
+      * Contains a value that specifies the type of indexing performed. Valid values are:   REGISTRY – Your thing index contains only registry data.   REGISTRY_AND_SHADOW - Your thing index contains registry data and shadow data.   REGISTRY_AND_CONNECTIVITY_STATUS - Your thing index contains registry data and thing connectivity status data.   REGISTRY_AND_SHADOW_AND_CONNECTIVITY_STATUS - Your thing index contains registry data, shadow data, and thing connectivity status data.  
       */
     var schema: js.UndefOr[IndexSchema] = js.undefined
   }
@@ -2678,6 +2678,32 @@ object IotNs extends js.Object {
       * The CA certificate registration code.
       */
     var registrationCode: js.UndefOr[RegistrationCode] = js.undefined
+  }
+  
+  trait GetStatisticsRequest extends js.Object {
+    /**
+      * The aggregation field name. Currently not supported.
+      */
+    var aggregationField: js.UndefOr[AggregationField] = js.undefined
+    /**
+      * The name of the index to search. The default value is AWS_Things.
+      */
+    var indexName: js.UndefOr[IndexName] = js.undefined
+    /**
+      * The query used to search. You can specify "*" for the query string to get the count of all indexed things in your AWS account.
+      */
+    var queryString: QueryString
+    /**
+      * The version of the query used to search.
+      */
+    var queryVersion: js.UndefOr[QueryVersion] = js.undefined
+  }
+  
+  trait GetStatisticsResponse extends js.Object {
+    /**
+      * The statistics returned by the Fleet Indexing service based on the query and aggregation field.
+      */
+    var statistics: js.UndefOr[Statistics] = js.undefined
   }
   
   trait GetTopicRuleRequest extends js.Object {
@@ -4474,7 +4500,7 @@ object IotNs extends js.Object {
       */
     var certificatePem: CertificatePem
     /**
-      * A boolean value that specifies if the CA certificate is set to active.
+      * A boolean value that specifies if the certificate is set to active.
       */
     var setAsActive: js.UndefOr[SetAsActiveFlag] = js.undefined
     /**
@@ -4993,6 +5019,13 @@ object IotNs extends js.Object {
     var statistic: js.UndefOr[EvaluationStatistic] = js.undefined
   }
   
+  trait Statistics extends js.Object {
+    /**
+      * The count of things that match the query.
+      */
+    var count: js.UndefOr[Count] = js.undefined
+  }
+  
   trait StepFunctionsAction extends js.Object {
     /**
       * (Optional) A name will be given to the state machine execution consisting of this prefix followed by a UUID. Step Functions automatically creates a unique name for each state machine execution if one is not provided.
@@ -5248,11 +5281,11 @@ object IotNs extends js.Object {
   
   trait ThingConnectivity extends js.Object {
     /**
-      * True if the thing is connected to the AWS IoT service, false if it is not connected.
+      * True if the thing is connected to the AWS IoT service; false if it is not connected.
       */
     var connected: js.UndefOr[Boolean] = js.undefined
     /**
-      * The epoch time (in milliseconds) when the thing last connected or disconnected. Note that if the thing has been disconnected for more than a few weeks, the time value can be missing.
+      * The epoch time (in milliseconds) when the thing last connected or disconnected. If the thing has been disconnected for more than a few weeks, the time value might be missing.
       */
     var timestamp: js.UndefOr[ConnectivityTimestamp] = js.undefined
   }
@@ -5263,7 +5296,7 @@ object IotNs extends js.Object {
       */
     var attributes: js.UndefOr[Attributes] = js.undefined
     /**
-      * Indicates whether or not the thing is connected to the AWS IoT service.
+      * Indicates whether the thing is connected to the AWS IoT service.
       */
     var connectivity: js.UndefOr[ThingConnectivity] = js.undefined
     /**
@@ -5346,11 +5379,11 @@ object IotNs extends js.Object {
   
   trait ThingIndexingConfiguration extends js.Object {
     /**
-      * Thing connectivity indexing mode. Valid values are:    STATUS – Your thing index will contain connectivity status. In order to enable thing connectivity indexing, thingIndexMode must not be set to OFF.   OFF - Thing connectivity status indexing is disabled.  
+      * Thing connectivity indexing mode. Valid values are:    STATUS – Your thing index contains connectivity status. To enable thing connectivity indexing, thingIndexMode must not be set to OFF.   OFF - Thing connectivity status indexing is disabled.  
       */
     var thingConnectivityIndexingMode: js.UndefOr[ThingConnectivityIndexingMode] = js.undefined
     /**
-      * Thing indexing mode. Valid values are:   REGISTRY – Your thing index will contain only registry data.   REGISTRY_AND_SHADOW - Your thing index will contain registry and shadow data.   OFF - Thing indexing is disabled.  
+      * Thing indexing mode. Valid values are:   REGISTRY – Your thing index contains registry data only.   REGISTRY_AND_SHADOW - Your thing index contains registry and shadow data.   OFF - Thing indexing is disabled.  
       */
     var thingIndexingMode: ThingIndexingMode
   }
@@ -6101,7 +6134,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateStreamResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a thing record in the registry.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
+      * Creates a thing record in the registry. If this call is made multiple times using the same thing name and configuration, the call will succeed. If this call is made with the same thing name but different configuration a ResourceAlreadyExistsException is thrown.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
       */
     def createThing(): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createThing(
@@ -6112,7 +6145,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a thing record in the registry.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
+      * Creates a thing record in the registry. If this call is made multiple times using the same thing name and configuration, the call will succeed. If this call is made with the same thing name but different configuration a ResourceAlreadyExistsException is thrown.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
       */
     def createThing(params: CreateThingRequest): awsDashSdkLib.libRequestMod.Request[CreateThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createThing(
@@ -7384,6 +7417,29 @@ object IotNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetRegistrationCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Gets statistics about things that match the specified query.
+      */
+    def getStatistics(): awsDashSdkLib.libRequestMod.Request[GetStatisticsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getStatistics(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetStatisticsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetStatisticsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Gets statistics about things that match the specified query.
+      */
+    def getStatistics(params: GetStatisticsRequest): awsDashSdkLib.libRequestMod.Request[GetStatisticsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getStatistics(
+      params: GetStatisticsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetStatisticsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetStatisticsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Gets information about the rule.
       */
@@ -9729,6 +9785,7 @@ object IotNs extends js.Object {
   type ActionType = _ActionType | java.lang.String
   type ActiveViolations = js.Array[ActiveViolation]
   type AdditionalMetricsToRetainList = js.Array[BehaviorMetric]
+  type AggregationField = java.lang.String
   type AlarmName = java.lang.String
   type AlertTargetArn = java.lang.String
   type AlertTargetType = awsDashSdkLib.awsDashSdkLibStrings.SNS | java.lang.String

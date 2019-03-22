@@ -140,7 +140,7 @@ trait Model extends js.Object {
   @JSName("$toJson")
   def $toJson(): js.Object = js.native
   @JSName("$toJson")
-  def $toJson(opt: CloneOptions): js.Object = js.native
+  def $toJson(opt: ToJsonOptions): js.Object = js.native
   @JSName("$transaction")
   def $transaction(): knexLib.knexMod.Knex = js.native
   @JSName("$traverse")
@@ -150,6 +150,6 @@ trait Model extends js.Object {
   @JSName("$validate")
   def $validate(json: Pojo, opt: ModelOptions): Pojo = js.native
   def toJSON(): js.Object = js.native
-  def toJSON(opt: CloneOptions): js.Object = js.native
+  def toJSON(opt: ToJsonOptions): js.Object = js.native
 }
 

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "newman"
-version := "3.11-dt-20181121Z-42ef6d"
+version := "3.11-dt-20181121Z-225984"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
-  "org.scalablytyped" %%% "postman-collection" % "3.0-dt-20190215Z-049fa2",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
+  "org.scalablytyped" %%% "postman-collection" % "3.0-dt-20190215Z-2ed1c8",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

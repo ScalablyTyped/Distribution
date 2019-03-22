@@ -1,5 +1,5 @@
 ```
-// Type definitions for sharp 0.21
+// Type definitions for sharp 0.22
 // Project: https://github.com/lovell/sharp
 // Definitions by: François Nguyen <https://github.com/lith-light-g>
 //                 Wooseop Kim <https://github.com/wooseopkim>

@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val FormField: reactLib.reactMod.ReactNs.ComponentClass[
     FormFieldProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
-      reactLib.HTMLDivElement
+      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+      reactLib.HTMLInputElement
     ]), 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native

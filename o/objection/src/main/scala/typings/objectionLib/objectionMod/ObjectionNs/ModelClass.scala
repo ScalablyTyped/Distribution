@@ -37,6 +37,7 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   var tableName: java.lang.String = js.native
   var uidProp: java.lang.String = js.native
   var uidRefProp: java.lang.String = js.native
+  var useLimitInFirst: js.UndefOr[scala.Boolean] = js.native
   var virtualAttributes: js.Array[java.lang.String] = js.native
   def bindKnex(knex: knexLib.knexMod.Knex): this.type = js.native
   def bindTransaction(transaction: Transaction): this.type = js.native

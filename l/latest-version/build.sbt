@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "latest-version"
-version := "5.0.0-481780"
+version := "5.0.0-7a7b87"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "got" % "9.4-dt-20190312Z-7355f5",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
-  "org.scalablytyped" %%% "package-json" % "6.1.0-a6f472",
+  "org.scalablytyped" %%% "got" % "9.4-dt-20190312Z-c99bf9",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
+  "org.scalablytyped" %%% "package-json" % "6.1.0-ff7d89",
   "org.scalablytyped" %%% "registry-auth-token" % "3.3-dt-20180723Z-94af19",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-cc5b51",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",

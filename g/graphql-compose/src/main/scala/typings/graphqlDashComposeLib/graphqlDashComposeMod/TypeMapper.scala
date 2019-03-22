@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("graphql-compose", "TypeMapper")
 @js.native
-class TypeMapper ()
-  extends graphqlDashComposeLib.libTypeMapperMod.TypeMapper
+class TypeMapper[TContext] protected ()
+  extends graphqlDashComposeLib.libTypeMapperMod.TypeMapper[TContext] {
+  def this(schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext]) = this()
+}
 

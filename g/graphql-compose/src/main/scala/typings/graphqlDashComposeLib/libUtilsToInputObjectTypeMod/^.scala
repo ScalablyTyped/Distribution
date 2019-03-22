@@ -12,11 +12,16 @@ object ^ extends js.Object {
     field: graphqlLib.typeDefinitionMod.GraphQLType,
     opts: ConvertInputObjectFieldOpts,
     schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[_]
-  ): graphqlLib.typeDefinitionMod.GraphQLInputType = js.native
-  def toInputObjectType(typeComposer: graphqlDashComposeLib.libTypeComposerMod.TypeComposer[_, _]): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer = js.native
-  def toInputObjectType(
-    typeComposer: graphqlDashComposeLib.libTypeComposerMod.TypeComposer[_, _],
+  ): graphqlLib.typeDefinitionMod.GraphQLInputType | scala.Null = js.native
+  def toInputObjectType[TContext](tc: graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext]): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] = js.native
+  def toInputObjectType[TContext](
+    tc: graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext],
     opts: ToInputObjectTypeOpts
-  ): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer = js.native
+  ): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] = js.native
+  def toInputObjectType[TContext](tc: graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext]): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] = js.native
+  def toInputObjectType[TContext](
+    tc: graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext],
+    opts: ToInputObjectTypeOpts
+  ): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] = js.native
 }
 

@@ -6758,6 +6758,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._OperationType
   
   @js.native
+  sealed trait DeleteKnownHostKeys
+    extends awsDashSdkLib.clientsLightsailMod.LightsailNs._OperationType
+  
+  @js.native
   sealed trait DeleteLoadBalancer
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._OperationType
   
@@ -30560,6 +30564,8 @@ object awsDashSdkLibStrings {
   def DeleteInstance: DeleteInstance = "DeleteInstance".asInstanceOf[DeleteInstance]
   @scala.inline
   def DeleteInstanceSnapshot: DeleteInstanceSnapshot = "DeleteInstanceSnapshot".asInstanceOf[DeleteInstanceSnapshot]
+  @scala.inline
+  def DeleteKnownHostKeys: DeleteKnownHostKeys = "DeleteKnownHostKeys".asInstanceOf[DeleteKnownHostKeys]
   @scala.inline
   def DeleteLoadBalancer: DeleteLoadBalancer = "DeleteLoadBalancer".asInstanceOf[DeleteLoadBalancer]
   @scala.inline

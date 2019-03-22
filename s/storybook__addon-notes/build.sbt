@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-notes"
-version := "4.0-dt-20190213Z-f7ca9a"
+version := "4.0-dt-20190213Z-5dc798"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,12 +8,12 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.6.3-29f798",
   "org.scalablytyped" %%% "marked" % "0.6-dt-20190307Z-48199e",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190213Z-d727c2",
-  "org.scalablytyped" %%% "webpack-env" % "1.13-dt-20190303Z-c994f3")
+  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20190213Z-ee4e1c",
+  "org.scalablytyped" %%% "webpack-env" % "1.13-dt-20190303Z-e02c6d")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

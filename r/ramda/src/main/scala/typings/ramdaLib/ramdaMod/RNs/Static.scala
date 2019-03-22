@@ -2205,14 +2205,22 @@ trait Static extends js.Object {
     * Transposes the rows and columns of a 2D list. When passed a list of n lists of length x, returns a list of x lists of length n.
     */
   def transpose[T](list: js.Array[js.Array[T]]): js.Array[js.Array[T]] = js.native
-  def traverse[T, U, A](of: js.Function1[/* a */ js.Array[U], A]): js.Function2[/* fn */ js.Function1[/* t */ T, U], /* list */ js.Array[T], A] = js.native
-  def traverse[T, U, A](of: js.Function1[/* a */ js.Array[U], A], fn: js.Function1[/* t */ T, U]): js.Function1[/* list */ js.Array[T], A] = js.native
+  def traverse[A, B](of: js.Function1[/* a */ B, js.Array[B]]): js.Function2[
+    /* fn */ js.Function1[/* t */ A, js.Array[B]], 
+    /* list */ js.Array[A], 
+    js.Array[js.Array[B]]
+  ] = js.native
+  def traverse[A, B](of: js.Function1[/* a */ B, js.Array[B]], fn: js.Function1[/* t */ A, js.Array[B]]): js.Function1[/* list */ js.Array[A], js.Array[js.Array[B]]] = js.native
   /**
     * Maps an Applicative-returning function over a Traversable, then uses
     * sequence to transform the resulting Traversable of Applicative into
     * an Applicative of Traversable.
     */
-  def traverse[T, U, A](of: js.Function1[/* a */ js.Array[U], A], fn: js.Function1[/* t */ T, U], list: js.Array[T]): A = js.native
+  def traverse[A, B](
+    of: js.Function1[/* a */ B, js.Array[B]],
+    fn: js.Function1[/* t */ A, js.Array[B]],
+    list: js.Array[A]
+  ): js.Array[js.Array[B]] = js.native
   /**
     * Removes (strips) whitespace from both ends of the string.
     */

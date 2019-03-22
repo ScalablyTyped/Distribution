@@ -821,7 +821,7 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a thing record in the registry.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
+    * Creates a thing record in the registry. If this call is made multiple times using the same thing name and configuration, the call will succeed. If this call is made with the same thing name but different configuration a ResourceAlreadyExistsException is thrown.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
     */
   def createThing(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.CreateThingResponse, 
@@ -838,7 +838,7 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a thing record in the registry.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
+    * Creates a thing record in the registry. If this call is made multiple times using the same thing name and configuration, the call will succeed. If this call is made with the same thing name but different configuration a ResourceAlreadyExistsException is thrown.  This is a control plane operation. See Authorization for information about authorizing control plane actions. 
     */
   def createThing(params: awsDashSdkLib.clientsIotMod.IotNs.CreateThingRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.CreateThingResponse, 
@@ -2678,6 +2678,41 @@ trait Iot
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.GetRegistrationCodeResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Gets statistics about things that match the specified query.
+    */
+  def getStatistics(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def getStatistics(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Gets statistics about things that match the specified query.
+    */
+  def getStatistics(params: awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def getStatistics(
+    params: awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIotMod.IotNs.GetStatisticsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

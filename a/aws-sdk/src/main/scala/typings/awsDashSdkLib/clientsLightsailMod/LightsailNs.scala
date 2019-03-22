@@ -867,6 +867,20 @@ object LightsailNs extends js.Object {
     var operation: js.UndefOr[Operation] = js.undefined
   }
   
+  trait DeleteKnownHostKeysRequest extends js.Object {
+    /**
+      * The name of the instance for which you want to reset the host key or certificate.
+      */
+    var instanceName: ResourceName
+  }
+  
+  trait DeleteKnownHostKeysResult extends js.Object {
+    /**
+      * A list of objects describing the API operation.
+      */
+    var operations: js.UndefOr[OperationList] = js.undefined
+  }
+  
   trait DeleteLoadBalancerRequest extends js.Object {
     /**
       * The name of the load balancer you want to delete.
@@ -1216,7 +1230,7 @@ object LightsailNs extends js.Object {
       */
     var target: js.UndefOr[java.lang.String] = js.undefined
     /**
-      * The type of domain entry (e.g., SOA or NS).
+      * The type of domain entry, such as address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The following domain entry types can be used:    A     CNAME     MX     NS     SOA     SRV     TXT   
       */
     var `type`: js.UndefOr[DomainEntryType] = js.undefined
   }
@@ -2163,6 +2177,37 @@ object LightsailNs extends js.Object {
     var staticIps: js.UndefOr[StaticIpList] = js.undefined
   }
   
+  trait HostKeyAttributes extends js.Object {
+    /**
+      * The SSH host key algorithm or the RDP certificate format. For SSH host keys, the algorithm may be ssh-rsa, ecdsa-sha2-nistp256, ssh-ed25519, etc. For RDP certificates, the algorithm is always x509-cert.
+      */
+    var algorithm: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The SHA-1 fingerprint of the returned SSH host key or RDP certificate.   Example of an SHA-1 SSH fingerprint:  SHA1:1CHH6FaAaXjtFOsR/t83vf91SR0    Example of an SHA-1 RDP fingerprint:  af:34:51:fe:09:f0:e0:da:b8:4e:56:ca:60:c2:10:ff:38:06:db:45   
+      */
+    var fingerprintSHA1: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The SHA-256 fingerprint of the returned SSH host key or RDP certificate.   Example of an SHA-256 SSH fingerprint:  SHA256:KTsMnRBh1IhD17HpdfsbzeGA4jOijm5tyXsMjKVbB8o    Example of an SHA-256 RDP fingerprint:  03:9b:36:9f:4b:de:4e:61:70:fc:7c:c9:78:e7:d2:1a:1c:25:a8:0c:91:f6:7c:e4:d6:a0:85:c8:b4:53:99:68   
+      */
+    var fingerprintSHA256: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The returned RDP certificate is not valid after this point in time. This value is listed only for RDP certificates.
+      */
+    var notValidAfter: js.UndefOr[IsoDate] = js.undefined
+    /**
+      * The returned RDP certificate is valid after this point in time. This value is listed only for RDP certificates.
+      */
+    var notValidBefore: js.UndefOr[IsoDate] = js.undefined
+    /**
+      * The public SSH host key or the RDP certificate.
+      */
+    var publicKey: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The time that the SSH host key or RDP certificate was recorded by Lightsail.
+      */
+    var witnessedAt: js.UndefOr[IsoDate] = js.undefined
+  }
+  
   trait ImportKeyPairRequest extends js.Object {
     /**
       * The name of the key pair for which you want to import the public key.
@@ -2269,6 +2314,10 @@ object LightsailNs extends js.Object {
       * For SSH access, the date on which the temporary keys expire.
       */
     var expiresAt: js.UndefOr[IsoDate] = js.undefined
+    /**
+      * Describes the public SSH host keys or the RDP certificate.
+      */
+    var hostKeys: js.UndefOr[HostKeysList] = js.undefined
     /**
       * The name of this Amazon Lightsail instance.
       */
@@ -3782,7 +3831,7 @@ object LightsailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDomainResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record. The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
+      * Creates one of the following entry records associated with the domain: Address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
       */
     def createDomainEntry(): awsDashSdkLib.libRequestMod.Request[CreateDomainEntryResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createDomainEntry(
@@ -3793,7 +3842,7 @@ object LightsailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDomainEntryResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record. The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
+      * Creates one of the following entry records associated with the domain: Address (A), canonical name (CNAME), mail exchanger (MX), name server (NS), start of authority (SOA), service locator (SRV), or text (TXT). The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.
       */
     def createDomainEntry(params: CreateDomainEntryRequest): awsDashSdkLib.libRequestMod.Request[CreateDomainEntryResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createDomainEntry(
@@ -4172,6 +4221,29 @@ object LightsailNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteKeyPairResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the known host key or certificate used by the Amazon Lightsail browser-based SSH or RDP clients to authenticate an instance. This operation enables the Lightsail browser-based SSH or RDP clients to connect to the instance after a host key mismatch.  Perform this operation only if you were expecting the host key or certificate mismatch or if you are familiar with the new host key or certificate on the instance. For more information, see Troubleshooting connection issues when using the Amazon Lightsail browser-based SSH or RDP client. 
+      */
+    def deleteKnownHostKeys(): awsDashSdkLib.libRequestMod.Request[DeleteKnownHostKeysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteKnownHostKeys(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteKnownHostKeysResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteKnownHostKeysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the known host key or certificate used by the Amazon Lightsail browser-based SSH or RDP clients to authenticate an instance. This operation enables the Lightsail browser-based SSH or RDP clients to connect to the instance after a host key mismatch.  Perform this operation only if you were expecting the host key or certificate mismatch or if you are familiar with the new host key or certificate on the instance. For more information, see Troubleshooting connection issues when using the Amazon Lightsail browser-based SSH or RDP client. 
+      */
+    def deleteKnownHostKeys(params: DeleteKnownHostKeysRequest): awsDashSdkLib.libRequestMod.Request[DeleteKnownHostKeysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteKnownHostKeys(
+      params: DeleteKnownHostKeysRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteKnownHostKeysResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteKnownHostKeysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Deletes a Lightsail load balancer and all its associated SSL/TLS certificates. Once the load balancer is deleted, you will need to create a new load balancer, create a new certificate, and verify domain ownership again. The delete load balancer operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.
       */
@@ -5991,6 +6063,7 @@ object LightsailNs extends js.Object {
   type DomainNameList = js.Array[DomainName]
   type ExportSnapshotRecordList = js.Array[ExportSnapshotRecord]
   type ExportSnapshotRecordSourceType = _ExportSnapshotRecordSourceType | java.lang.String
+  type HostKeysList = js.Array[HostKeyAttributes]
   type InstanceAccessProtocol = _InstanceAccessProtocol | java.lang.String
   type InstanceEntryList = js.Array[InstanceEntry]
   type InstanceHealthReason = _InstanceHealthReason | java.lang.String

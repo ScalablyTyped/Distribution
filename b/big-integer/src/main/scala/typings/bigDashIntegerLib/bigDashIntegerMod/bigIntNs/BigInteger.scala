@@ -230,6 +230,7 @@ trait BigInteger extends js.Object {
     */
   def toJSON(): java.lang.String = js.native
   def toString(radix: scala.Double): java.lang.String = js.native
+  def toString(radix: scala.Double, alphabet: java.lang.String): java.lang.String = js.native
   /**
     * Performs the bitwise XOR operation.
     */

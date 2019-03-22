@@ -12,6 +12,8 @@ object typesNs extends js.Object {
   def isArgumentsObject(`object`: js.Any): /* is std.IArguments */ scala.Boolean = js.native
   def isArrayBuffer(`object`: js.Any): /* is std.ArrayBuffer */ scala.Boolean = js.native
   def isAsyncFunction(`object`: js.Any): scala.Boolean = js.native
+  def isBigInt64Array(value: js.Any): scala.Boolean = js.native
+  def isBigUint64Array(value: js.Any): scala.Boolean = js.native
   def isBooleanObject(`object`: js.Any): /* is std.Boolean */ scala.Boolean = js.native
   def isBoxedPrimitive(`object`: js.Any): scala.Boolean = js.native
   def isDataView(`object`: js.Any): /* is std.DataView */ scala.Boolean = js.native
@@ -26,6 +28,7 @@ object typesNs extends js.Object {
   def isInt8Array(`object`: js.Any): /* is std.Int8Array */ scala.Boolean = js.native
   def isMap(`object`: js.Any): scala.Boolean = js.native
   def isMapIterator(`object`: js.Any): scala.Boolean = js.native
+  def isModuleNamespaceObject(value: js.Any): scala.Boolean = js.native
   def isNativeError(`object`: js.Any): /* is node.Error */ scala.Boolean = js.native
   def isNumberObject(`object`: js.Any): /* is std.Number */ scala.Boolean = js.native
   def isPromise(`object`: js.Any): scala.Boolean = js.native

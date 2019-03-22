@@ -61,7 +61,13 @@ object grommetLibStrings {
   sealed trait Australia extends js.Object
   
   @js.native
+  sealed trait DeepReadonly extends js.Object
+  
+  @js.native
   sealed trait Europe extends js.Object
+  
+  @js.native
+  sealed trait NonUndefinedProps extends js.Object
   
   @js.native
   sealed trait `North America` extends js.Object
@@ -134,7 +140,13 @@ object grommetLibStrings {
   sealed trait col extends js.Object
   
   @js.native
+  sealed trait color extends js.Object
+  
+  @js.native
   sealed trait column extends js.Object
+  
+  @js.native
+  sealed trait `column-reverse` extends js.Object
   
   @js.native
   sealed trait component extends js.Object
@@ -216,6 +228,9 @@ object grommetLibStrings {
   
   @js.native
   sealed trait hours extends js.Object
+  
+  @js.native
+  sealed trait href extends js.Object
   
   @js.native
   sealed trait inset extends js.Object
@@ -305,6 +320,9 @@ object grommetLibStrings {
   
   @js.native
   sealed trait `row-responsive` extends js.Object
+  
+  @js.native
+  sealed trait `row-reverse` extends js.Object
   
   @js.native
   sealed trait scroll extends js.Object
@@ -427,7 +445,11 @@ object grommetLibStrings {
   @scala.inline
   def Australia: Australia = "Australia".asInstanceOf[Australia]
   @scala.inline
+  def DeepReadonly: DeepReadonly = "DeepReadonly".asInstanceOf[DeepReadonly]
+  @scala.inline
   def Europe: Europe = "Europe".asInstanceOf[Europe]
+  @scala.inline
+  def NonUndefinedProps: NonUndefinedProps = "NonUndefinedProps".asInstanceOf[NonUndefinedProps]
   @scala.inline
   def `North America`: `North America` = "North America".asInstanceOf[`North America`]
   @scala.inline
@@ -475,7 +497,11 @@ object grommetLibStrings {
   @scala.inline
   def col: col = "col".asInstanceOf[col]
   @scala.inline
+  def color: color = "color".asInstanceOf[color]
+  @scala.inline
   def column: column = "column".asInstanceOf[column]
+  @scala.inline
+  def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   @scala.inline
   def component: component = "component".asInstanceOf[component]
   @scala.inline
@@ -530,6 +556,8 @@ object grommetLibStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
   def hours: hours = "hours".asInstanceOf[hours]
+  @scala.inline
+  def href: href = "href".asInstanceOf[href]
   @scala.inline
   def inset: inset = "inset".asInstanceOf[inset]
   @scala.inline
@@ -588,6 +616,8 @@ object grommetLibStrings {
   def row: row = "row".asInstanceOf[row]
   @scala.inline
   def `row-responsive`: `row-responsive` = "row-responsive".asInstanceOf[`row-responsive`]
+  @scala.inline
+  def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   @scala.inline

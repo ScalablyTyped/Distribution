@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Key extends js.Object {
-  var key: openpgpLib.openpgpMod.openpgpNs.keyNs.Key
+  var key: openpgpLib.openpgpMod.keyNs.Key
   var privateKeyArmored: java.lang.String
   var publicKeyArmored: java.lang.String
   var revocationCertificate: java.lang.String
@@ -15,7 +15,7 @@ trait Anon_Key extends js.Object {
 object Anon_Key {
   @scala.inline
   def apply(
-    key: openpgpLib.openpgpMod.openpgpNs.keyNs.Key,
+    key: openpgpLib.openpgpMod.keyNs.Key,
     privateKeyArmored: java.lang.String,
     publicKeyArmored: java.lang.String,
     revocationCertificate: java.lang.String

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-inlinesvg"
-version := "0.8-dt-20190117Z-057448"
+version := "0.8-dt-20190321Z-1850a5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

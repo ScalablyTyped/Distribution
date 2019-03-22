@@ -158,7 +158,7 @@ object AutoScalingNs extends js.Object {
       */
     var HealthCheckGracePeriod: js.UndefOr[HealthCheckGracePeriod] = js.undefined
     /**
-      * The service to use for the health checks. The valid values are EC2 and ELB.
+      * The service to use for the health checks. The valid values are EC2 and ELB. If you configure an Auto Scaling group to use ELB health checks, it considers the instance unhealthy if it fails either the EC2 status checks or the load balancer health checks.
       */
     var HealthCheckType: XmlStringMaxLen32
     /**
@@ -408,7 +408,7 @@ object AutoScalingNs extends js.Object {
       */
     var HealthCheckGracePeriod: js.UndefOr[HealthCheckGracePeriod] = js.undefined
     /**
-      * The service to use for the health checks. The valid values are EC2 and ELB. The default value is EC2. For more information, see Health Checks for Auto Scaling Instances in the Amazon EC2 Auto Scaling User Guide.
+      * The service to use for the health checks. The valid values are EC2 and ELB. The default value is EC2. If you configure an Auto Scaling group to use ELB health checks, it considers the instance unhealthy if it fails either the EC2 status checks or the load balancer health checks. For more information, see Health Checks for Auto Scaling Instances in the Amazon EC2 Auto Scaling User Guide.
       */
     var HealthCheckType: js.UndefOr[XmlStringMaxLen32] = js.undefined
     /**
@@ -440,7 +440,7 @@ object AutoScalingNs extends js.Object {
       */
     var MinSize: AutoScalingGroupMinSize
     /**
-      * The mixed instances policy to use to launch instances. This parameter, a launch template, a launch configuration, or an EC2 instance must be specified. For more information, see Using Multiple Instance Types and Purchase Options in the Amazon EC2 Auto Scaling User Guide.
+      * The mixed instances policy to use to launch instances. This parameter, a launch template, a launch configuration, or an EC2 instance must be specified. For more information, see Auto Scaling Groups with Multiple Instance Types and Purchase Options in the Amazon EC2 Auto Scaling User Guide.
       */
     var MixedInstancesPolicy: js.UndefOr[MixedInstancesPolicy] = js.undefined
     /**
@@ -890,7 +890,7 @@ object AutoScalingNs extends js.Object {
   
   trait DescribeTerminationPolicyTypesAnswer extends js.Object {
     /**
-      * The termination policies supported by Amazon EC2 Auto Scaling: OldestInstance, OldestLaunchConfiguration, NewestInstance, ClosestToNextInstanceHour, Default, OldestLaunchTemplate, and AllocationStrategy. Currently, the OldestLaunchTemplate and AllocationStrategy policies are only supported for Auto Scaling groups with MixedInstancesPolicy.
+      * The termination policies supported by Amazon EC2 Auto Scaling: OldestInstance, OldestLaunchConfiguration, NewestInstance, ClosestToNextInstanceHour, Default, OldestLaunchTemplate, and AllocationStrategy.
       */
     var TerminationPolicyTypes: js.UndefOr[TerminationPolicies] = js.undefined
   }
@@ -2957,7 +2957,7 @@ object AutoScalingNs extends js.Object {
       */
     var HealthCheckGracePeriod: js.UndefOr[HealthCheckGracePeriod] = js.undefined
     /**
-      * The service to use for the health checks. The valid values are EC2 and ELB.
+      * The service to use for the health checks. The valid values are EC2 and ELB. If you configure an Auto Scaling group to use ELB health checks, it considers the instance unhealthy if it fails either the EC2 status checks or the load balancer health checks.
       */
     var HealthCheckType: js.UndefOr[XmlStringMaxLen32] = js.undefined
     /**
@@ -2977,7 +2977,7 @@ object AutoScalingNs extends js.Object {
       */
     var MinSize: js.UndefOr[AutoScalingGroupMinSize] = js.undefined
     /**
-      * The mixed instances policy to use to specify the updates. If you specify this parameter, you can't specify a launch configuration or a launch template.  For more information, see Using Multiple Instance Types and Purchase Options in the Amazon EC2 Auto Scaling User Guide.
+      * The mixed instances policy to use to specify the updates. If you specify this parameter, you can't specify a launch configuration or a launch template.  For more information, see Auto Scaling Groups with Multiple Instance Types and Purchase Options in the Amazon EC2 Auto Scaling User Guide.
       */
     var MixedInstancesPolicy: js.UndefOr[MixedInstancesPolicy] = js.undefined
     /**

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GraphQLInputObjectType protected ()
   extends graphqlLib.graphqlMod.GraphQLInputObjectType
-     with graphqlDashComposeLib.libInputTypeComposerMod._InputTypeComposerDefinition {
+     with graphqlDashComposeLib.libInputTypeComposerMod._InputTypeComposeDefinition {
   def this(config: graphqlLib.typeDefinitionMod.GraphQLInputObjectTypeConfig) = this()
 }
 

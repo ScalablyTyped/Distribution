@@ -74,6 +74,12 @@ object defaultNs extends js.Object {
     trezorDashConnectLib.trezorDashConnectMod.ResponseMessage[trezorDashConnectLib.trezorDashConnectMod.PublicKey]
   ] = js.native
   /**
+    * Retrieves the settings that TrezorConnect was initialized with.
+    */
+  def getSettings(): js.Promise[
+    trezorDashConnectLib.trezorDashConnectMod.ResponseMessage[trezorDashConnectLib.trezorDashConnectMod.Settings]
+  ] = js.native
+  /**
     * Initializes TrezorConnect.
     */
   def init(settings: trezorDashConnectLib.trezorDashConnectMod.Settings): scala.Unit = js.native
@@ -120,6 +126,9 @@ object defaultNs extends js.Object {
     * Resets device to factory defaults and removes all private data.
     */
   def wipeDevice(): js.Promise[
+    trezorDashConnectLib.trezorDashConnectMod.ResponseMessage[trezorDashConnectLib.trezorDashConnectMod.Message]
+  ] = js.native
+  def wipeDevice(params: trezorDashConnectLib.trezorDashConnectMod.CommonParams): js.Promise[
     trezorDashConnectLib.trezorDashConnectMod.ResponseMessage[trezorDashConnectLib.trezorDashConnectMod.Message]
   ] = js.native
 }

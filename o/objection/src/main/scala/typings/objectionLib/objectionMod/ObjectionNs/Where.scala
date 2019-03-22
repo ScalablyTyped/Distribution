@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Where[QM /* <: Model */, RM, RV] extends WhereRaw[QM, RM, RV] {
   def apply(
-    callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+    callback: js.ThisFunction1[
+      /* this */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      /* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], 
+      scala.Unit
+    ]
   ): QueryBuilder[QM, RM, RV] = js.native
   def apply(
     column: java.lang.String,

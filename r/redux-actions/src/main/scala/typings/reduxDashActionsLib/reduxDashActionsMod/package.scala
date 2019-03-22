@@ -18,4 +18,6 @@ package object reduxDashActionsMod {
   type Reducer[State, Payload] = js.Function2[/* state */ State, /* action */ Action[Payload], State]
   type ReducerMapValue[State, Payload] = (_ReducerMapValue[State, Payload]) | (Reducer[State, Payload])
   type ReducerMeta[State, Payload, Meta] = js.Function2[/* state */ State, /* action */ ActionMeta[Payload, Meta], State]
+  type ReduxCompatibleReducer[State, Payload] = js.Function2[/* state */ js.UndefOr[State], /* action */ Action[Payload], State]
+  type ReduxCompatibleReducerMeta[State, Payload, Meta] = js.Function2[/* state */ js.UndefOr[State], /* action */ ActionMeta[Payload, Meta], State]
 }

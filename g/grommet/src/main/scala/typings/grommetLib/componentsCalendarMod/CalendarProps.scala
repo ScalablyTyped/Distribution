@@ -14,6 +14,7 @@ trait CalendarProps extends js.Object {
   var bounds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var date: js.UndefOr[java.lang.String] = js.undefined
   var dates: js.UndefOr[js.Array[java.lang.String | js.Array[java.lang.String]]] = js.undefined
+  var daysOfWeek: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[js.Array[java.lang.String | js.Array[java.lang.String]]] = js.undefined
   var firstDayOfWeek: js.UndefOr[grommetLib.grommetLibStrings.`0` | grommetLib.grommetLibStrings.`1`] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
@@ -41,6 +42,7 @@ object CalendarProps {
     bounds: js.Array[java.lang.String] = null,
     date: java.lang.String = null,
     dates: js.Array[java.lang.String | js.Array[java.lang.String]] = null,
+    daysOfWeek: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.Array[java.lang.String | js.Array[java.lang.String]] = null,
     firstDayOfWeek: grommetLib.grommetLibStrings.`0` | grommetLib.grommetLibStrings.`1` = null,
     gridArea: java.lang.String = null,
@@ -61,6 +63,7 @@ object CalendarProps {
     if (bounds != null) __obj.updateDynamic("bounds")(bounds)
     if (date != null) __obj.updateDynamic("date")(date)
     if (dates != null) __obj.updateDynamic("dates")(dates)
+    if (!js.isUndefined(daysOfWeek)) __obj.updateDynamic("daysOfWeek")(daysOfWeek)
     if (disabled != null) __obj.updateDynamic("disabled")(disabled)
     if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
     if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)

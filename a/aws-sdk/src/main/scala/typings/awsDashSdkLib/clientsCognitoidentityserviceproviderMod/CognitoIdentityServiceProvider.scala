@@ -2381,6 +2381,43 @@ trait CognitoIdentityServiceProvider
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Lists the tags that are assigned to an Amazon Cognito user pool. A tag is a label that you can apply to user pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria. You can use this action up to 10 times per second, per account.
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Lists the tags that are assigned to an Amazon Cognito user pool. A tag is a label that you can apply to user pools to categorize and manage them in different ways, such as by purpose, owner, environment, or other criteria. You can use this action up to 10 times per second, per account.
+    */
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.ListTagsForResourceRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.ListTagsForResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Lists the user import jobs.
     */
   def listUserImportJobs(): awsDashSdkLib.libRequestMod.Request[
@@ -2933,6 +2970,80 @@ trait CognitoIdentityServiceProvider
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.StopUserImportJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Assigns a set of tags to an Amazon Cognito user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of a user pool, one for testing and another for production, you might assign an Environment tag key to both user pools. The value of this key might be Test for one user pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your user pools. In an IAM policy, you can constrain permissions for user pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. A user pool can have as many as 50 tags.
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Assigns a set of tags to an Amazon Cognito user pool. A tag is a label that you can use to categorize and manage user pools in different ways, such as by purpose, owner, environment, or other criteria. Each tag consists of a key and value, both of which you define. A key is a general category for more specific values. For example, if you have two versions of a user pool, one for testing and another for production, you might assign an Environment tag key to both user pools. The value of this key might be Test for one user pool and Production for the other. Tags are useful for cost tracking and access control. You can activate your tags so that they appear on the Billing and Cost Management console, where you can track the costs associated with your user pools. In an IAM policy, you can constrain permissions for user pools based on specific tags or tag values. You can use this action up to 5 times per second, per account. A user pool can have as many as 50 tags.
+    */
+  def tagResource(
+    params: awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.TagResourceRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    params: awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.TagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes the specified tags from an Amazon Cognito user pool. You can use this action up to 5 times per second, per account
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes the specified tags from an Amazon Cognito user pool. You can use this action up to 5 times per second, per account
+    */
+  def untagResource(
+    params: awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.UntagResourceRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    params: awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.UntagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.UntagResourceResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

@@ -17,8 +17,10 @@ trait SharpOptions extends js.Object {
     * (optional, default true)
     */
   var failOnError: js.UndefOr[scala.Boolean] = js.undefined
-  /** Page number to extract for multi-page input (GIF, TIFF). (optional, default 0) */
+  /** Page number to start extracting from for multi-page input (GIF, TIFF, PDF), zero based. (optional, default 0) */
   var page: js.UndefOr[scala.Double] = js.undefined
+  /** Number of pages to extract for multi-page input (GIF, TIFF, PDF), use -1 for all pages */
+  var pages: js.UndefOr[scala.Double] = js.undefined
   /** Describes raw pixel input image data. See raw() for pixel ordering. */
   var raw: js.UndefOr[Raw] = js.undefined
 }
@@ -30,6 +32,7 @@ object SharpOptions {
     density: scala.Int | scala.Double = null,
     failOnError: js.UndefOr[scala.Boolean] = js.undefined,
     page: scala.Int | scala.Double = null,
+    pages: scala.Int | scala.Double = null,
     raw: Raw = null
   ): SharpOptions = {
     val __obj = js.Dynamic.literal()
@@ -37,6 +40,7 @@ object SharpOptions {
     if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
     if (!js.isUndefined(failOnError)) __obj.updateDynamic("failOnError")(failOnError)
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
     if (raw != null) __obj.updateDynamic("raw")(raw)
     __obj.asInstanceOf[SharpOptions]
   }

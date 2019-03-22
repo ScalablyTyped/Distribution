@@ -25,12 +25,13 @@ class User ()
 object User extends js.Object {
   def allowCustomUserClass(isAllowed: scala.Boolean): scala.Unit = js.native
   def become(sessionToken: java.lang.String): js.Promise[parseLib.ParseNs.User] = js.native
-  def become(sessionToken: java.lang.String, options: parseLib.ParseNs.SuccessFailureOptions): js.Promise[parseLib.ParseNs.User] = js.native
+  def become(sessionToken: java.lang.String, options: parseLib.ParseNs.UseMasterKeyOption): js.Promise[parseLib.ParseNs.User] = js.native
   def current(): js.UndefOr[parseLib.ParseNs.User] = js.native
   def currentAsync(): js.Promise[parseLib.ParseNs.User | scala.Null] = js.native
   def extend(): js.Any = js.native
   def extend(protoProps: js.Any): js.Any = js.native
   def extend(protoProps: js.Any, classProps: js.Any): js.Any = js.native
+  def hydrate(userJSON: js.Any): js.Promise[parseLib.ParseNs.User] = js.native
   def logIn(username: java.lang.String, password: java.lang.String): js.Promise[parseLib.ParseNs.User] = js.native
   def logIn(
     username: java.lang.String,

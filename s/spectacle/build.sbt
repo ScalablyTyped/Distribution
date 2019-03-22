@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "spectacle"
-version := "5.4.0-83cd89"
+version := "5.4.0-d58237"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "buble" % "0.19-dt-20190312Z-d35a96",
-  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-ef2eb7",
+  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-e3cd2d",
   "org.scalablytyped" %%% "create-emotion" % "10.0.9-060c89",
   "org.scalablytyped" %%% "create-react-context" % "0.2.2-e09e9c",
   "org.scalablytyped" %%% "csstype" % "2.6.3-29f798",
@@ -21,16 +21,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-b5b495",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
   "org.scalablytyped" %%% "magic-string" % "0.25.2-f3a8e8",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190319Z-4635bc",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
   "org.scalablytyped" %%% "prismjs" % "1.9-dt-20190212Z-cae4f9",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-188abf",
-  "org.scalablytyped" %%% "react-live" % "1.12.0-e12a29",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-5412f7",
+  "org.scalablytyped" %%% "react-live" % "1.12.0-129d6e",
   "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190318Z-be2f73",
   "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-bf9b8d",
   "org.scalablytyped" %%% "redux" % "4.0.1-18f3a8",
-  "org.scalablytyped" %%% "redux-actions" % "2.3-dt-20190212Z-c29c06",
+  "org.scalablytyped" %%% "redux-actions" % "2.6-dt-20190321Z-509996",
   "org.scalablytyped" %%% "sourcemap-codec" % "1.4.4-0be230",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-5b665c")

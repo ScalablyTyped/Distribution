@@ -18,6 +18,10 @@ trait AccountInfo extends js.Object {
   var id: scala.Double
   var path: js.Array[scala.Double]
   var serializedPath: java.lang.String
+  var transactions: scala.Double
+  var unusedAddresses: js.Array[java.lang.String]
+  var usedAddresses: js.Array[trezorDashConnectLib.Anon_Address]
+  var utxo: js.Array[Utxo]
   var xpub: java.lang.String
 }
 
@@ -33,9 +37,13 @@ object AccountInfo {
     id: scala.Double,
     path: js.Array[scala.Double],
     serializedPath: java.lang.String,
+    transactions: scala.Double,
+    unusedAddresses: js.Array[java.lang.String],
+    usedAddresses: js.Array[trezorDashConnectLib.Anon_Address],
+    utxo: js.Array[Utxo],
     xpub: java.lang.String
   ): AccountInfo = {
-    val __obj = js.Dynamic.literal(address = address, addressIndex = addressIndex, addressPath = addressPath, addressSerializedPath = addressSerializedPath, balance = balance, confirmed = confirmed, id = id, path = path, serializedPath = serializedPath, xpub = xpub)
+    val __obj = js.Dynamic.literal(address = address, addressIndex = addressIndex, addressPath = addressPath, addressSerializedPath = addressSerializedPath, balance = balance, confirmed = confirmed, id = id, path = path, serializedPath = serializedPath, transactions = transactions, unusedAddresses = unusedAddresses, usedAddresses = usedAddresses, utxo = utxo, xpub = xpub)
   
     __obj.asInstanceOf[AccountInfo]
   }
