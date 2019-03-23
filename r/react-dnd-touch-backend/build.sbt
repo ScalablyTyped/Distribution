@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "react-dnd-touch-backend"
-version := "0.4-dt-20180803Z-5a234c"
+version := "0.4-dt-20180803Z-924950"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "asap" % "2.0-dt-20180629Z-ad04b4",
-  "org.scalablytyped" %%% "dnd-core" % "7.2.0-9d04e3",
-  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-662401",
+  "org.scalablytyped" %%% "dnd-core" % "7.2.0-0dc54d",
+  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20190322Z-662401",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
   "org.scalablytyped" %%% "redux" % "4.0.1-18f3a8",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",

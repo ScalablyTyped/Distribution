@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_colorbox"
-version := "1.4.15-dt-20180214Z-931e65"
+version := "1.4.15-dt-20190322Z-931e65"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

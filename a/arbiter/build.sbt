@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "arbiter"
-version := "1.0-dt-20180214Z-31ab2f"
+version := "1.0-dt-20190322Z-31ab2f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

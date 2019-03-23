@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "html2canvas"
-version := "1.0-alpha-dt-20181009Z-e38787"
+version := "1.0-alpha-dt-20190322Z-e38787"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

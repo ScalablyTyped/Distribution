@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait QuickPickOptions extends js.Object {
   /**
+  		 * An optional flag to make the picker accept multiple selections, if true the result is an array of picks.
+  		 */
+  var canPickMany: js.UndefOr[scala.Boolean] = js.undefined
+  /**
   		 * Set to `true` to keep the picker open when focus moves to another part of the editor or to another window.
   		 */
   var ignoreFocusOut: js.UndefOr[scala.Boolean] = js.undefined
@@ -31,6 +35,7 @@ trait QuickPickOptions extends js.Object {
 object QuickPickOptions {
   @scala.inline
   def apply(
+    canPickMany: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreFocusOut: js.UndefOr[scala.Boolean] = js.undefined,
     matchOnDescription: js.UndefOr[scala.Boolean] = js.undefined,
     matchOnDetail: js.UndefOr[scala.Boolean] = js.undefined,
@@ -38,6 +43,7 @@ object QuickPickOptions {
     placeHolder: java.lang.String = null
   ): QuickPickOptions = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(canPickMany)) __obj.updateDynamic("canPickMany")(canPickMany)
     if (!js.isUndefined(ignoreFocusOut)) __obj.updateDynamic("ignoreFocusOut")(ignoreFocusOut)
     if (!js.isUndefined(matchOnDescription)) __obj.updateDynamic("matchOnDescription")(matchOnDescription)
     if (!js.isUndefined(matchOnDetail)) __obj.updateDynamic("matchOnDetail")(matchOnDetail)

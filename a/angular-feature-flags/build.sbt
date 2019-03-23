@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-feature-flags"
-version := "1.4.0-dt-20180214Z-d99c8f"
+version := "1.4.0-dt-20190322Z-d99c8f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

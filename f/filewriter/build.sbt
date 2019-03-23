@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "filewriter"
-version := "0.0-unknown-dt-20180214Z-a98cac"
+version := "0.0-unknown-dt-20190322Z-a98cac"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

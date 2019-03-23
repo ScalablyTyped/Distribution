@@ -7,6 +7,24 @@ import scala.scalajs.js.annotation._
 
 trait RenameProvider extends js.Object {
   /**
+  		 * Optional function for resolving and validating a position *before* running rename. The result can
+  		 * be a range or a range and a placeholder text. The placeholder text should be the identifier of the symbol
+  		 * which is being renamed - when omitted the text in the returned range is used.
+  		 *
+  		 * @param document The document in which rename will be invoked.
+  		 * @param position The position at which rename will be invoked.
+  		 * @param token A cancellation token.
+  		 * @return The range or range and placeholder text of the identifier that is to be renamed. The lack of a result can signaled by returning `undefined` or `null`.
+  		 */
+  var prepareRename: js.UndefOr[
+    js.Function3[
+      /* document */ TextDocument, 
+      /* position */ Position, 
+      /* token */ CancellationToken, 
+      ProviderResult[Range | vscodeLib.Anon_Placeholder]
+    ]
+  ] = js.undefined
+  /**
   		 * Provide an edit that describes changes that have to be made to one
   		 * or many resources to rename a symbol to a different name.
   		 *
@@ -23,10 +41,11 @@ trait RenameProvider extends js.Object {
 object RenameProvider {
   @scala.inline
   def apply(
-    provideRenameEdits: (TextDocument, Position, java.lang.String, CancellationToken) => ProviderResult[WorkspaceEdit]
+    provideRenameEdits: (TextDocument, Position, java.lang.String, CancellationToken) => ProviderResult[WorkspaceEdit],
+    prepareRename: (/* document */ TextDocument, /* position */ Position, /* token */ CancellationToken) => ProviderResult[Range | vscodeLib.Anon_Placeholder] = null
   ): RenameProvider = {
     val __obj = js.Dynamic.literal(provideRenameEdits = js.Any.fromFunction4(provideRenameEdits))
-  
+    if (prepareRename != null) __obj.updateDynamic("prepareRename")(js.Any.fromFunction3(prepareRename))
     __obj.asInstanceOf[RenameProvider]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "quixote"
-version := "v0.7.0-dt-20180315Z-c762da"
+version := "v0.7.0-dt-20190322Z-c762da"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

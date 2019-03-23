@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-chartjs-2"
-version := "2.7.4-ad5659"
+version := "2.7.4-21279a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,10 +9,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "chart_dot_js" % "2.7-dt-20190321Z-19b888",
   "org.scalablytyped" %%% "csstype" % "2.6.3-29f798",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-5412f7",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190322Z-6f0f1a",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-7f8af2",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

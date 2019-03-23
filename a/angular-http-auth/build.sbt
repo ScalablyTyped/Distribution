@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-http-auth"
-version := "1.2.1-dt-20180214Z-2a63f7"
+version := "1.2.1-dt-20190322Z-2a63f7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

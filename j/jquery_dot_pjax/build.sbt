@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_pjax"
-version := "0.0-unknown-dt-20181124Z-c2792e"
+version := "0.0-unknown-dt-20190322Z-c2792e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

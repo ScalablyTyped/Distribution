@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bind-ponyfill"
-version := "0.1.0-dt-20180214Z-f63e82"
+version := "0.1.0-dt-20190322Z-f63e82"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

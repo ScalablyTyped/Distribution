@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "geometry-dom"
-version := "0.0-unknown-dt-20180214Z-cc4d10"
+version := "0.0-unknown-dt-20190322Z-cc4d10"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_pnotify"
-version := "3.x-dt-20180214Z-9876e6"
+version := "3.x-dt-20190322Z-9876e6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,6 +6,7 @@
 //                 Ika <https://github.com/ikatyang>
 //                 Joshua Cherry <https://github.com/tasadar2>
 //                 Arthur Corenzan <https://github.com/haggen>
+//                 Richard Lea <https://github.com/chigix>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 ```

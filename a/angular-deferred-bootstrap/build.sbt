@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-deferred-bootstrap"
-version := "v0.1.9-dt-20180214Z-bc5bdf"
+version := "v0.1.9-dt-20190322Z-bc5bdf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

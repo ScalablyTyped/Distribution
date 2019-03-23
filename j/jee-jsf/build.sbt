@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jee-jsf"
-version := "0.0-unknown-dt-20180214Z-ded2d0"
+version := "0.0-unknown-dt-20190322Z-ded2d0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

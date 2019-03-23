@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-array-ext"
-version := "v1.0.00-dt-20180214Z-a84d58"
+version := "v1.0.00-dt-20190322Z-a84d58"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

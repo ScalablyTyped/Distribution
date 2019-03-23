@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vex-js"
-version := "v2.3.2-dt-20180214Z-38490d"
+version := "v2.3.2-dt-20190322Z-38490d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fontfaceobserver"
-version := "0.0-unknown-dt-20180214Z-177a7a"
+version := "0.0-unknown-dt-20190322Z-177a7a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

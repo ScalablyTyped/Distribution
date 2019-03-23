@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "box2d"
-version := "0.0-unknown-dt-20180214Z-ca41e5"
+version := "0.0-unknown-dt-20190322Z-ca41e5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

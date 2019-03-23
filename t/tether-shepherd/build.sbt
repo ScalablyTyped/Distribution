@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tether-shepherd"
-version := "v1.2.0-dt-20180214Z-ca4466"
+version := "v1.2.0-dt-20190322Z-ca4466"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

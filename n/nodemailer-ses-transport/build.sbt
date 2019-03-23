@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "nodemailer-ses-transport"
-version := "3.1-dt-20190212Z-ffbe15"
+version := "3.1-dt-20190212Z-aad13b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "aws-sdk" % "2.426.0-e3c47d",
+  "org.scalablytyped" %%% "aws-sdk" % "2.427.0-31fc1f",
   "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-645745",
-  "org.scalablytyped" %%% "buffer" % "5.2.1-672aba",
+  "org.scalablytyped" %%% "buffer" % "5.2.1-7e3a15",
   "org.scalablytyped" %%% "events" % "3.0-dt-20190114Z-a6b9cb",
   "org.scalablytyped" %%% "jmespath" % "0.15-dt-20180214Z-f324c8",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
-  "org.scalablytyped" %%% "nodemailer" % "4.6-dt-20190212Z-e4051d",
-  "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-23aff6",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
+  "org.scalablytyped" %%% "nodemailer" % "4.6-dt-20190212Z-01e117",
+  "org.scalablytyped" %%% "sax" % "1.x-dt-20190322Z-1653e3",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-ccdaec",
-  "org.scalablytyped" %%% "xml2js" % "0.4-dt-20180606Z-c35435")
+  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-d1745b",
+  "org.scalablytyped" %%% "xml2js" % "0.4-dt-20180606Z-e9549f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

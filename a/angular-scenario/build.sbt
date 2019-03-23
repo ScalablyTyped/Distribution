@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-scenario"
-version := "1.3-dt-20180214Z-91df1d"
+version := "1.3-dt-20190322Z-91df1d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

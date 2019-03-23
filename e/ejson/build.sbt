@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ejson"
-version := "v2.1.2-dt-20180214Z-50957c"
+version := "v2.1.2-dt-20190322Z-50957c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

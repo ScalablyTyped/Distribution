@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-promise-middleware"
-version := "0.0-unknown-dt-20180913Z-012a84"
+version := "0.0-unknown-dt-20190322Z-012a84"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

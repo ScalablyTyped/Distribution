@@ -10,14 +10,10 @@ trait FoldingRangeProviderMiddleware extends js.Object {
     js.ThisFunction4[
       /* this */ scala.Unit, 
       /* document */ vscodeLib.vscodeMod.TextDocument, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FoldingContext */ /* context */ js.Any, 
+      /* context */ vscodeLib.vscodeMod.FoldingContext, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideFoldingRangeSignature, 
-      vscodeLib.vscodeMod.ProviderResult[
-        js.Array[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VFoldingRange */ _
-        ]
-      ]
+      vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.FoldingRange]]
     ]
   ] = js.undefined
 }
@@ -28,14 +24,10 @@ object FoldingRangeProviderMiddleware {
     provideFoldingRanges: js.ThisFunction4[
       /* this */ scala.Unit, 
       /* document */ vscodeLib.vscodeMod.TextDocument, 
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FoldingContext */ /* context */ js.Any, 
+      /* context */ vscodeLib.vscodeMod.FoldingContext, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideFoldingRangeSignature, 
-      vscodeLib.vscodeMod.ProviderResult[
-        js.Array[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VFoldingRange */ _
-        ]
-      ]
+      vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.FoldingRange]]
     ] = null
   ): FoldingRangeProviderMiddleware = {
     val __obj = js.Dynamic.literal()

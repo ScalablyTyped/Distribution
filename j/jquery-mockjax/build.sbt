@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-mockjax"
-version := "2.3.0-dt-20180606Z-b2801a"
+version := "2.3.0-dt-20190322Z-b2801a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

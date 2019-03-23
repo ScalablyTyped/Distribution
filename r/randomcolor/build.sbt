@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "randomcolor"
-version := "0.5.2-dt-20190101Z-a6ce91"
+version := "0.5.2-dt-20190322Z-a6ce91"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

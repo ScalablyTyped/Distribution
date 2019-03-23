@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "escodegen"
-version := "0.0-unknown-dt-20180214Z-2b053f"
+version := "0.0-unknown-dt-20190322Z-2b053f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

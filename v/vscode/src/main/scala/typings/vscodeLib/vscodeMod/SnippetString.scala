@@ -19,7 +19,7 @@ class SnippetString () extends js.Object {
   		 *
   		 * @param value The value of this placeholder - either a string or a function
   		 * with which a nested snippet can be created.
-  		 * @param number The number of this tabstop, defaults to an auto-incremet
+  		 * @param number The number of this tabstop, defaults to an auto-increment
   		 * value starting at 1.
   		 * @return This snippet string.
   		 */
@@ -31,7 +31,7 @@ class SnippetString () extends js.Object {
   		 * Builder-function that appends a tabstop (`$1`, `$2` etc) to
   		 * the [`value`](#SnippetString.value) of this snippet string.
   		 *
-  		 * @param number The number of this tabstop, defaults to an auto-incremet
+  		 * @param number The number of this tabstop, defaults to an auto-increment
   		 * value starting at 1.
   		 * @return This snippet string.
   		 */

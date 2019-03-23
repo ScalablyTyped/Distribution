@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-promise-tracker"
-version := "2.2.2-dt-20181106Z-45737b"
+version := "2.2.2-dt-20190322Z-45737b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_form"
-version := "3.26-dt-20180214Z-86e958"
+version := "3.26-dt-20190322Z-86e958"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-toastr"
-version := "v1.6.0-dt-20181107Z-258e95"
+version := "v1.6.0-dt-20190322Z-258e95"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

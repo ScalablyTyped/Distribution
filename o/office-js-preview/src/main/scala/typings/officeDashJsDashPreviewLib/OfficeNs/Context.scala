@@ -14,6 +14,12 @@ import scala.scalajs.js.annotation._
   */     
 trait Context extends js.Object {
   /**
+    * Provides information and access to the signed-in user.
+    * 
+    * @beta
+    */
+  var auth: Auth
+  /**
     * True, if the current platform allows the add-in to display a UI for selling or upgrading; otherwise returns False.
     * 
     * @remarks
@@ -217,6 +223,7 @@ trait Context extends js.Object {
 object Context {
   @scala.inline
   def apply(
+    auth: Auth,
     commerceAllowed: scala.Boolean,
     contentLanguage: java.lang.String,
     diagnostics: ContextInformation,
@@ -232,7 +239,7 @@ object Context {
     touchEnabled: scala.Boolean,
     ui: UI
   ): Context = {
-    val __obj = js.Dynamic.literal(commerceAllowed = commerceAllowed, contentLanguage = contentLanguage, diagnostics = diagnostics, displayLanguage = displayLanguage, document = document, host = host, license = license, mailbox = mailbox, officeTheme = officeTheme, platform = platform, requirements = requirements, roamingSettings = roamingSettings, touchEnabled = touchEnabled, ui = ui)
+    val __obj = js.Dynamic.literal(auth = auth, commerceAllowed = commerceAllowed, contentLanguage = contentLanguage, diagnostics = diagnostics, displayLanguage = displayLanguage, document = document, host = host, license = license, mailbox = mailbox, officeTheme = officeTheme, platform = platform, requirements = requirements, roamingSettings = roamingSettings, touchEnabled = touchEnabled, ui = ui)
   
     __obj.asInstanceOf[Context]
   }

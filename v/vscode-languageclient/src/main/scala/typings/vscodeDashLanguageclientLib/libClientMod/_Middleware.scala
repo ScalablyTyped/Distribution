@@ -37,11 +37,7 @@ trait _Middleware extends js.Object {
       /* context */ vscodeLib.vscodeMod.CodeActionContext, 
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideCodeActionsSignature, 
-      vscodeLib.vscodeMod.ProviderResult[
-        js.Array[
-          vscodeLib.vscodeMod.Command | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCodeAction */ _)
-        ]
-      ]
+      vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.Command | vscodeLib.vscodeMod.CodeAction]]
     ]
   ] = js.undefined
   var provideCodeLenses: js.UndefOr[
@@ -262,11 +258,7 @@ object _Middleware {
       /* context */ vscodeLib.vscodeMod.CodeActionContext, 
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideCodeActionsSignature, 
-      vscodeLib.vscodeMod.ProviderResult[
-        js.Array[
-          vscodeLib.vscodeMod.Command | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCodeAction */ _)
-        ]
-      ]
+      vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.Command | vscodeLib.vscodeMod.CodeAction]]
     ] = null,
     provideCodeLenses: js.ThisFunction3[
       /* this */ scala.Unit, 

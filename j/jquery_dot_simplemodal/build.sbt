@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_simplemodal"
-version := "1.4.4-dt-20180214Z-8de719"
+version := "1.4.4-dt-20190322Z-8de719"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

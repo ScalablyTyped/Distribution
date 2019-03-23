@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wallabyjs"
-version := "0.0-unknown-dt-20180214Z-e28e51"
+version := "0.0-unknown-dt-20190322Z-e28e51"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google_dot_geolocation"
-version := "0.4.8-dt-20180214Z-cb0278"
+version := "0.4.8-dt-20190322Z-cb0278"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

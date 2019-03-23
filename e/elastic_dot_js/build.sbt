@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "elastic_dot_js"
-version := "v1.2.0-dt-20180214Z-7cf58c"
+version := "v1.2.0-dt-20190322Z-7cf58c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

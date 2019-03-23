@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "spectrum"
-version := "1.5.1-dt-20180731Z-e6cd8d"
+version := "1.5.1-dt-20190322Z-e6cd8d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

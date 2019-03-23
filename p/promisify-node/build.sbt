@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "promisify-node"
-version := "0.4.0-dt-20180214Z-0dae83"
+version := "0.4.0-dt-20190322Z-0dae83"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

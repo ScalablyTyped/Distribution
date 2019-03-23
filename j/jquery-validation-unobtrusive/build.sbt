@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-validation-unobtrusive"
-version := "v3.2.3-dt-20180214Z-d46388"
+version := "v3.2.3-dt-20190322Z-d46388"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

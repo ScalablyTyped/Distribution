@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "precond"
-version := "0.2.3-dt-20180214Z-93cd9b"
+version := "0.2.3-dt-20190322Z-93cd9b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

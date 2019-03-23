@@ -1,5 +1,5 @@
 ```
-// Type definitions for Inquirer.js
+// Type definitions for Inquirer.js 6.x
 // Project: https://github.com/SBoudrias/Inquirer.js
 // Definitions by: Qubo <https://github.com/tkQubo>
 //                 Parvez <https://github.com/ppathan>
@@ -10,6 +10,7 @@
 //                 Justin Rockwood <https://github.com/jrockwood>
 //                 Keith Kelly <https://github.com/kwkelly>
 //                 Junyoung Clare Jang <https://github.com/Ailrun>
+//                 Richard Lea <https://github.com/chigix>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 2.8
 ```

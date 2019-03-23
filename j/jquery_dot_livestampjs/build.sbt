@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_livestampjs"
-version := "0.0-unknown-dt-20180214Z-e78475"
+version := "0.0-unknown-dt-20190322Z-e78475"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_bbq"
-version := "1.2-dt-20181219Z-f8ef57"
+version := "1.2-dt-20190322Z-f8ef57"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

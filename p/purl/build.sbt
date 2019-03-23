@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "purl"
-version := "2.3.1-dt-20180214Z-be9636"
+version := "2.3.1-dt-20190322Z-be9636"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

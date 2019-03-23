@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prompt-sync"
-version := "4.1.4-dt-20180214Z-af198c"
+version := "4.1.4-dt-20190322Z-af198c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

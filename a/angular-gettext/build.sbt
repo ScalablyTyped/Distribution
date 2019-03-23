@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-gettext"
-version := "v2.1.1-dt-20180807Z-6d589e"
+version := "v2.1.1-dt-20190322Z-6d589e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

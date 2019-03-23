@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "kii-cloud-sdk"
-version := "v2.4.9-dt-20180214Z-817f5f"
+version := "v2.4.9-dt-20190322Z-817f5f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "camo"
-version := "v0.12.2-dt-20180214Z-2312f5"
+version := "v0.12.2-dt-20190322Z-2312f5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

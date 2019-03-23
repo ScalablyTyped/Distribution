@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jdenticon"
-version := "1.3.2-dt-20180214Z-96d93e"
+version := "1.3.2-dt-20190322Z-96d93e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

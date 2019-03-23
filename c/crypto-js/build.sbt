@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "crypto-js"
-version := "v3.1.8-dt-20180725Z-99dfc9"
+version := "v3.1.8-dt-20190322Z-99dfc9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

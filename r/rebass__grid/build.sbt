@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "rebass__grid"
-version := "6.0-dt-20181130Z-c5dc4d"
+version := "6.0-dt-20181130Z-d001b8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.6.3-29f798",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190318Z-7533ec",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190322Z-6f0f1a",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190318Z-ad9ab7",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190223Z-597e37")
+  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190223Z-87262a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-timeentry"
-version := "2.0.1-dt-20180214Z-cb0328"
+version := "2.0.1-dt-20190322Z-cb0328"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

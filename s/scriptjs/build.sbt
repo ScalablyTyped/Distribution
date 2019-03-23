@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "scriptjs"
-version := "0.0-unknown-dt-20180214Z-56b6bb"
+version := "0.0-unknown-dt-20190322Z-56b6bb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

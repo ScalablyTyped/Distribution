@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "quoted-printable"
-version := "v0.2.1-dt-20180214Z-09f4b4"
+version := "v0.2.1-dt-20190322Z-09f4b4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

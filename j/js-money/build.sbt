@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "js-money"
-version := "0.6-dt-20181017Z-9a9526"
+version := "0.6-dt-20190322Z-9a9526"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

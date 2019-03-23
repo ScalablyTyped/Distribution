@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deoxxa-content-type"
-version := "v0.0.1-dt-20180214Z-f3b506"
+version := "v0.0.1-dt-20190322Z-f3b506"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

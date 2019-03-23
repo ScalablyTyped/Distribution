@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uglifycss"
-version := "v0.0.20-dt-20180214Z-ad6c77"
+version := "v0.0.20-dt-20190322Z-ad6c77"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

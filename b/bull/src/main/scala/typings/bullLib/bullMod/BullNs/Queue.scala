@@ -12,6 +12,7 @@ trait Queue[T]
     * The name of the queue
     */
   var name: java.lang.String = js.native
+  /* tslint:enable:unified-signatures */
   /**
     * Creates a new job and adds it to the queue.
     * If the queue is empty the job will be executed directly,
@@ -110,10 +111,10 @@ trait Queue[T]
     * Returns a promise that will return an array of job instances of the given types.
     * Optional parameters for range and ordering are provided.
     */
-  def getJobs(types: js.Array[java.lang.String]): js.Promise[js.Array[Job[_]]] = js.native
-  def getJobs(types: js.Array[java.lang.String], start: scala.Double): js.Promise[js.Array[Job[_]]] = js.native
-  def getJobs(types: js.Array[java.lang.String], start: scala.Double, end: scala.Double): js.Promise[js.Array[Job[_]]] = js.native
-  def getJobs(types: js.Array[java.lang.String], start: scala.Double, end: scala.Double, asc: scala.Boolean): js.Promise[js.Array[Job[_]]] = js.native
+  def getJobs(types: js.Array[java.lang.String]): js.Promise[js.Array[Job[T]]] = js.native
+  def getJobs(types: js.Array[java.lang.String], start: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
+  def getJobs(types: js.Array[java.lang.String], start: scala.Double, end: scala.Double): js.Promise[js.Array[Job[T]]] = js.native
+  def getJobs(types: js.Array[java.lang.String], start: scala.Double, end: scala.Double, asc: scala.Boolean): js.Promise[js.Array[Job[T]]] = js.native
   /**
     * Returns a promise that resolves with the quantity of paused jobs.
     */
@@ -227,8 +228,27 @@ trait Queue[T]
     */
   def pause(): js.Promise[scala.Unit] = js.native
   def pause(isLocal: scala.Boolean): js.Promise[scala.Unit] = js.native
+  /* tslint:disable:unified-signatures */
+  /**
+    * Defines a processing function for the jobs placed into a given Queue.
+    *
+    * The callback is called everytime a job is placed in the queue.
+    * It is passed an instance of the job as first argument.
+    *
+    * If the callback signature contains the second optional done argument,
+    * the callback will be passed a done callback to be called after the job has been completed.
+    * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
+    * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
+    * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
+    *
+    * If, however, the callback signature does not contain the done argument,
+    * a promise must be returned to signal job completion.
+    * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
+    * If it is resolved, its value will be the "completed" event's second argument.
+    */
+  def process(callback: ProcessCallbackFunction[T]): scala.Unit = js.native
+  def process(callback: ProcessPromiseFunction[T]): scala.Unit = js.native
   def process(callback: java.lang.String): scala.Unit = js.native
-  def process(callback: js.Function1[/* job */ Job[T], js.Promise[_]]): scala.Unit = js.native
   /**
     * Defines a processing function for the jobs placed into a given Queue.
     *
@@ -245,10 +265,12 @@ trait Queue[T]
     * a promise must be returned to signal job completion.
     * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
     * If it is resolved, its value will be the "completed" event's second argument.
+    *
+    * @param concurrency Bull will then call your handler in parallel respecting this maximum value.
     */
-  def process(callback: js.Function2[/* job */ Job[T], /* done */ DoneCallback, scala.Unit]): scala.Unit = js.native
+  def process(concurrency: scala.Double, callback: ProcessCallbackFunction[T]): scala.Unit = js.native
+  def process(concurrency: scala.Double, callback: ProcessPromiseFunction[T]): scala.Unit = js.native
   def process(concurrency: scala.Double, callback: java.lang.String): scala.Unit = js.native
-  def process(concurrency: scala.Double, callback: js.Function1[/* job */ Job[T], js.Promise[_]]): scala.Unit = js.native
   /**
     * Defines a processing function for the jobs placed into a given Queue.
     *
@@ -266,44 +288,11 @@ trait Queue[T]
     * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
     * If it is resolved, its value will be the "completed" event's second argument.
     *
-    * @param concurrency Bull will then call your handler in parallel respecting this maximum value.
+    * @param name Bull will only call the handler if the job name matches
     */
-  def process(
-    concurrency: scala.Double,
-    callback: js.Function2[/* job */ Job[T], /* done */ DoneCallback, scala.Unit]
-  ): scala.Unit = js.native
+  def process(name: java.lang.String, callback: ProcessCallbackFunction[T]): scala.Unit = js.native
+  def process(name: java.lang.String, callback: ProcessPromiseFunction[T]): scala.Unit = js.native
   def process(name: java.lang.String, callback: java.lang.String): scala.Unit = js.native
-  def process(name: java.lang.String, callback: js.Function1[/* job */ Job[T], js.Promise[_]]): scala.Unit = js.native
-  /**
-    * Defines a processing function for the jobs placed into a given Queue.
-    *
-    * The callback is called everytime a job is placed in the queue.
-    * It is passed an instance of the job as first argument.
-    *
-    * If the callback signature contains the second optional done argument,
-    * the callback will be passed a done callback to be called after the job has been completed.
-    * The done callback can be called with an Error instance, to signal that the job did not complete successfully,
-    * or with a result as second argument (e.g.: done(null, result);) when the job is successful.
-    * Errors will be passed as a second argument to the "failed" event; results, as a second argument to the "completed" event.
-    *
-    * If, however, the callback signature does not contain the done argument,
-    * a promise must be returned to signal job completion.
-    * If the promise is rejected, the error will be passed as a second argument to the "failed" event.
-    * If it is resolved, its value will be the "completed" event's second argument.
-    *
-    * @param name Bull will only call the handler if the job name matches
-    */
-  // tslint:disable-next-line:unified-signatures
-  def process(
-    name: java.lang.String,
-    callback: js.Function2[/* job */ Job[T], /* done */ DoneCallback, scala.Unit]
-  ): scala.Unit = js.native
-  def process(name: java.lang.String, concurrency: scala.Double, callback: java.lang.String): scala.Unit = js.native
-  def process(
-    name: java.lang.String,
-    concurrency: scala.Double,
-    callback: js.Function1[/* job */ Job[T], js.Promise[_]]
-  ): scala.Unit = js.native
   /**
     * Defines a processing function for the jobs placed into a given Queue.
     *
@@ -324,11 +313,9 @@ trait Queue[T]
     * @param name Bull will only call the handler if the job name matches
     * @param concurrency Bull will then call your handler in parallel respecting this maximum value.
     */
-  def process(
-    name: java.lang.String,
-    concurrency: scala.Double,
-    callback: js.Function2[/* job */ Job[T], /* done */ DoneCallback, scala.Unit]
-  ): scala.Unit = js.native
+  def process(name: java.lang.String, concurrency: scala.Double, callback: ProcessCallbackFunction[T]): scala.Unit = js.native
+  def process(name: java.lang.String, concurrency: scala.Double, callback: ProcessPromiseFunction[T]): scala.Unit = js.native
+  def process(name: java.lang.String, concurrency: scala.Double, callback: java.lang.String): scala.Unit = js.native
   /**
     * Removes a given repeatable job. The RepeatOptions and JobId needs to be the same as the ones
     * used for the job when it was added.

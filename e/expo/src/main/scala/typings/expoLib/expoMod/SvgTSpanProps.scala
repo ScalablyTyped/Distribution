@@ -39,8 +39,8 @@ object SvgTSpanProps {
     stroke: java.lang.String = null,
     strokeDasharray: js.Array[_] = null,
     strokeDashoffset: js.Any = null,
-    strokeLineJoin: java.lang.String = null,
     strokeLinecap: java.lang.String = null,
+    strokeLinejoin: java.lang.String = null,
     strokeOpacity: scala.Double | java.lang.String = null,
     strokeWidth: scala.Double | java.lang.String = null,
     textAnchor: java.lang.String = null,
@@ -75,8 +75,8 @@ object SvgTSpanProps {
     if (stroke != null) __obj.updateDynamic("stroke")(stroke)
     if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray)
     if (strokeDashoffset != null) __obj.updateDynamic("strokeDashoffset")(strokeDashoffset)
-    if (strokeLineJoin != null) __obj.updateDynamic("strokeLineJoin")(strokeLineJoin)
     if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap)
+    if (strokeLinejoin != null) __obj.updateDynamic("strokeLinejoin")(strokeLinejoin)
     if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor)

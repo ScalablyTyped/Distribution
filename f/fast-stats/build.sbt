@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-stats"
-version := "0.0.2-dt-20181003Z-4ba85c"
+version := "0.0.2-dt-20190322Z-4ba85c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

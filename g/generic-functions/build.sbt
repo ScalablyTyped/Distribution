@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "generic-functions"
-version := "0.0-unknown-dt-20180214Z-fbae8c"
+version := "0.0-unknown-dt-20190322Z-fbae8c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

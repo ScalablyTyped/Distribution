@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "immutability-helper"
-version := "3.0.0-fb73d2"
+version := "3.0.0-2d8505"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-662401",
+  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20190322Z-662401",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

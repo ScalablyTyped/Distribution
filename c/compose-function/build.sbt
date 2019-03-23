@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "compose-function"
-version := "0.0-unknown-dt-20180214Z-b8d068"
+version := "0.0-unknown-dt-20190322Z-b8d068"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

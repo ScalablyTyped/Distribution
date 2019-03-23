@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "moviedb"
-version := "0.0-unknown-dt-20180214Z-d72954"
+version := "0.0-unknown-dt-20190322Z-d72954"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -34,6 +34,14 @@ trait ThemableDecorationAttachmentRenderOptions extends js.Object {
   /**
   		 * CSS styling property that will be applied to the decoration attachment.
   		 */
+  var fontStyle: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  		 * CSS styling property that will be applied to the decoration attachment.
+  		 */
+  var fontWeight: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  		 * CSS styling property that will be applied to the decoration attachment.
+  		 */
   var height: js.UndefOr[java.lang.String] = js.undefined
   /**
   		 * CSS styling property that will be applied to the decoration attachment.
@@ -58,6 +66,8 @@ object ThemableDecorationAttachmentRenderOptions {
     color: java.lang.String | ThemeColor = null,
     contentIconPath: java.lang.String | Uri = null,
     contentText: java.lang.String = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: java.lang.String = null,
     height: java.lang.String = null,
     margin: java.lang.String = null,
     textDecoration: java.lang.String = null,
@@ -70,6 +80,8 @@ object ThemableDecorationAttachmentRenderOptions {
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (contentIconPath != null) __obj.updateDynamic("contentIconPath")(contentIconPath.asInstanceOf[js.Any])
     if (contentText != null) __obj.updateDynamic("contentText")(contentText)
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
     if (height != null) __obj.updateDynamic("height")(height)
     if (margin != null) __obj.updateDynamic("margin")(margin)
     if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration)

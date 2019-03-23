@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "leapmotionts"
-version := "0.7.9-dt-20180214Z-dfc69e"
+version := "0.7.9-dt-20190322Z-dfc69e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

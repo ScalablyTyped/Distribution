@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "loggly"
-version := "1.1-dt-20180214Z-ed5742"
+version := "1.1-dt-20190322Z-ed5742"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "medium-editor"
-version := "5.0-dt-20180510Z-f640a1"
+version := "5.0-dt-20190322Z-f640a1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

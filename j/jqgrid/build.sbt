@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jqgrid"
-version := "1.3-dt-20180214Z-addc1d"
+version := "1.3-dt-20190322Z-addc1d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

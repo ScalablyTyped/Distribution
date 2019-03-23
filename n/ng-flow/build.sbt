@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ng-flow"
-version := "0.0-unknown-dt-20181124Z-f1aac1"
+version := "0.0-unknown-dt-20190322Z-63a01b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-5e6318",
-  "org.scalablytyped" %%% "flowjs" % "0.0-unknown-dt-20180430Z-a71562",
+  "org.scalablytyped" %%% "flowjs" % "0.0-unknown-dt-20190322Z-a71562",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

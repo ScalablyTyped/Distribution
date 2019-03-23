@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "progressjs"
-version := "v0.1.0-dt-20180214Z-3d2aee"
+version := "v0.1.0-dt-20190322Z-3d2aee"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

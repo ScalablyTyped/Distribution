@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_gridster"
-version := "0.5.6-dt-20180731Z-93a1a6"
+version := "0.5.6-dt-20190322Z-93a1a6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

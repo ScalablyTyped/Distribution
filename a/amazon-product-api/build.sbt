@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "amazon-product-api"
-version := "0.0-unknown-dt-20180516Z-b4f029"
+version := "0.0-unknown-dt-20190322Z-b4f029"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "component-emitter"
-version := "v1.2.1-dt-20190205Z-46bb17"
+version := "v1.2.1-dt-20190322Z-46bb17"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

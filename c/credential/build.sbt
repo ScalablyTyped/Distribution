@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "credential"
-version := "2.0-dt-20190313Z-db497b"
+version := "2.0-dt-20190322Z-db497b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

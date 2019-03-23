@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "observe-js"
-version := "v0.5.5-dt-20180214Z-e31f34"
+version := "v0.5.5-dt-20190322Z-e31f34"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-maxlength"
-version := "v1.7.0-dt-20181003Z-83a78b"
+version := "v1.7.0-dt-20190322Z-83a78b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

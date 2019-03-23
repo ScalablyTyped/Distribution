@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-snackbar-component"
-version := "1.1-dt-20190222Z-912043"
+version := "1.1-dt-20190222Z-45b04f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.6.3-29f798",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190318Z-7533ec",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190322Z-6f0f1a",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190318Z-ad9ab7",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

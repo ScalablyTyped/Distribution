@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "source-list-map"
-version := "v0.1.6-dt-20180214Z-a573e1"
+version := "v0.1.6-dt-20190322Z-a573e1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

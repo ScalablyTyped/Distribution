@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yui"
-version := "3.14.0-dt-20180214Z-0d8b92"
+version := "3.14.0-dt-20190322Z-0d8b92"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

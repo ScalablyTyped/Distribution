@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "simplemde"
-version := "v1.11.2-dt-20180214Z-b67f6a"
+version := "v1.11.2-dt-20190322Z-b67f6a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

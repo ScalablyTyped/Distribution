@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootpag"
-version := "1.0.7-dt-20181003Z-280cd3"
+version := "1.0.7-dt-20190322Z-280cd3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "scroll-into-view"
-version := "1.6.0-dt-20181015Z-8f79ca"
+version := "1.6.0-dt-20190322Z-8f79ca"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

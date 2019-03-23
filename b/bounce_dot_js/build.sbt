@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bounce_dot_js"
-version := "v0.8.2-dt-20180214Z-45f0bb"
+version := "v0.8.2-dt-20190322Z-45f0bb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

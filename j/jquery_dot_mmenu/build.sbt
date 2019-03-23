@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_mmenu"
-version := "v5.5.3-dt-20180214Z-ab6aef"
+version := "v5.5.3-dt-20190322Z-ab6aef"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

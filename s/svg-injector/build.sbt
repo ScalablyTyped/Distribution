@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "svg-injector"
-version := "0.0-unknown-dt-20180214Z-5de917"
+version := "0.0-unknown-dt-20190322Z-5de917"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "di-lite"
-version := "0.3.3-dt-20180214Z-8a4a8e"
+version := "0.3.3-dt-20190322Z-8a4a8e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

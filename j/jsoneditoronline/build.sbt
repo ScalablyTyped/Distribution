@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsoneditoronline"
-version := "0.0-unknown-dt-20180214Z-614e2a"
+version := "0.0-unknown-dt-20190322Z-614e2a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

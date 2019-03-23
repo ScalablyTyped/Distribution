@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-my-json-valid"
-version := "0.0-unknown-dt-20180214Z-9b478f"
+version := "0.0-unknown-dt-20190322Z-9b478f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

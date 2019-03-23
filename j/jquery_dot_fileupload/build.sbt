@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_fileupload"
-version := "9.22.0-dt-20181116Z-f5c9db"
+version := "9.22.0-dt-20190322Z-f5c9db"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

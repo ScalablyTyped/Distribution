@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tapable"
-version := "v1.0.0-dt-20180713Z-c57887"
+version := "v1.0.0-dt-20190322Z-c57887"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -29,6 +29,7 @@ object Style {
     fontSmoothing: java.lang.String = null,
     fontStyle: java.lang.String = null,
     fontVariant: java.lang.String = null,
+    fontWeight: java.lang.String | scala.Double = null,
     iconColor: java.lang.String = null,
     letterSpacing: java.lang.String = null,
     lineHeight: java.lang.String = null,
@@ -50,6 +51,7 @@ object Style {
     if (fontSmoothing != null) __obj.updateDynamic("fontSmoothing")(fontSmoothing)
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing)
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight)

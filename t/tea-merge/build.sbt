@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tea-merge"
-version := "0.0-unknown-dt-20180425Z-b254dd"
+version := "0.0-unknown-dt-20190322Z-b254dd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

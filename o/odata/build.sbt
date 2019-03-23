@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "odata"
-version := "v0.3-dt-20180215Z-ce514c"
+version := "v0.3-dt-20190322Z-ce514c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "slickgrid"
-version := "2.1.0-dt-20180914Z-fe2920"
+version := "2.1.0-dt-20190322Z-fe2920"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

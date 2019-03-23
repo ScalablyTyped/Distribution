@@ -8,12 +8,8 @@ import scala.scalajs.js.annotation._
 package object libFoldingRangeMod {
   type ProvideFoldingRangeSignature = js.Function3[
     /* document */ vscodeLib.vscodeMod.TextDocument, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FoldingContext */ /* context */ js.Any, 
+    /* context */ vscodeLib.vscodeMod.FoldingContext, 
     /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    vscodeLib.vscodeMod.ProviderResult[
-      js.Array[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VFoldingRange */ js.Any
-      ]
-    ]
+    vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.FoldingRange]]
   ]
 }

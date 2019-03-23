@@ -8,11 +8,19 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode", "languages")
 @js.native
 object languagesNs extends js.Object {
+  val onDidChangeDiagnostics: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.DiagnosticChangeEvent] = js.native
   def createDiagnosticCollection(): vscodeLib.vscodeMod.DiagnosticCollection = js.native
   def createDiagnosticCollection(name: java.lang.String): vscodeLib.vscodeMod.DiagnosticCollection = js.native
+  def getDiagnostics(): js.Array[js.Tuple2[vscodeLib.vscodeMod.Uri, js.Array[vscodeLib.vscodeMod.Diagnostic]]] = js.native
+  def getDiagnostics(resource: vscodeLib.vscodeMod.Uri): js.Array[vscodeLib.vscodeMod.Diagnostic] = js.native
   def getLanguages(): vscodeLib.Thenable[js.Array[java.lang.String]] = js.native
   def `match`(selector: vscodeLib.vscodeMod.DocumentSelector, document: vscodeLib.vscodeMod.TextDocument): scala.Double = js.native
   def registerCodeActionsProvider(selector: vscodeLib.vscodeMod.DocumentSelector, provider: vscodeLib.vscodeMod.CodeActionProvider): vscodeLib.vscodeMod.Disposable = js.native
+  def registerCodeActionsProvider(
+    selector: vscodeLib.vscodeMod.DocumentSelector,
+    provider: vscodeLib.vscodeMod.CodeActionProvider,
+    metadata: vscodeLib.vscodeMod.CodeActionProviderMetadata
+  ): vscodeLib.vscodeMod.Disposable = js.native
   def registerCodeLensProvider(selector: vscodeLib.vscodeMod.DocumentSelector, provider: vscodeLib.vscodeMod.CodeLensProvider): vscodeLib.vscodeMod.Disposable = js.native
   def registerColorProvider(
     selector: vscodeLib.vscodeMod.DocumentSelector,
@@ -41,6 +49,7 @@ object languagesNs extends js.Object {
     selector: vscodeLib.vscodeMod.DocumentSelector,
     provider: vscodeLib.vscodeMod.DocumentSymbolProvider
   ): vscodeLib.vscodeMod.Disposable = js.native
+  def registerFoldingRangeProvider(selector: vscodeLib.vscodeMod.DocumentSelector, provider: vscodeLib.vscodeMod.FoldingRangeProvider): vscodeLib.vscodeMod.Disposable = js.native
   def registerHoverProvider(selector: vscodeLib.vscodeMod.DocumentSelector, provider: vscodeLib.vscodeMod.HoverProvider): vscodeLib.vscodeMod.Disposable = js.native
   def registerImplementationProvider(
     selector: vscodeLib.vscodeMod.DocumentSelector,

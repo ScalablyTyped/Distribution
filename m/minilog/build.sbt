@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "minilog"
-version := "2.0-dt-20180214Z-37c5ba"
+version := "2.0-dt-20190322Z-37c5ba"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sinon-stub-promise"
-version := "v2.1.0-dt-20181212Z-959dbe"
+version := "v2.1.0-dt-20190322Z-959dbe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

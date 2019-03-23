@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "element-resize-event"
-version := "2.0.9-dt-20180214Z-cb40e4"
+version := "2.0.9-dt-20190322Z-cb40e4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

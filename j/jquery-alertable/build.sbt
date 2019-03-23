@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-alertable"
-version := "1.0.2-dt-20180214Z-604609"
+version := "1.0.2-dt-20190322Z-604609"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

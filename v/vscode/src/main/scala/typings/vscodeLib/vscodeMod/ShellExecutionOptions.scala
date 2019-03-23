@@ -25,6 +25,10 @@ trait ShellExecutionOptions extends js.Object {
   		 * The arguments to be passed to the shell executable used to run the task.
   		 */
   var shellArgs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
+  		 * The shell quotes supported by this shell.
+  		 */
+  var shellQuoting: js.UndefOr[ShellQuotingOptions] = js.undefined
 }
 
 object ShellExecutionOptions {
@@ -33,13 +37,15 @@ object ShellExecutionOptions {
     cwd: java.lang.String = null,
     env: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     executable: java.lang.String = null,
-    shellArgs: js.Array[java.lang.String] = null
+    shellArgs: js.Array[java.lang.String] = null,
+    shellQuoting: ShellQuotingOptions = null
   ): ShellExecutionOptions = {
     val __obj = js.Dynamic.literal()
     if (cwd != null) __obj.updateDynamic("cwd")(cwd)
     if (env != null) __obj.updateDynamic("env")(env)
     if (executable != null) __obj.updateDynamic("executable")(executable)
     if (shellArgs != null) __obj.updateDynamic("shellArgs")(shellArgs)
+    if (shellQuoting != null) __obj.updateDynamic("shellQuoting")(shellQuoting)
     __obj.asInstanceOf[ShellExecutionOptions]
   }
 }

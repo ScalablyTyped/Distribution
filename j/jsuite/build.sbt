@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsuite"
-version := "0.0-unknown-dt-20180214Z-764955"
+version := "0.0-unknown-dt-20190322Z-678250"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-8061ce",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-a5e2be",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "suitescript" % "0.0-unknown-dt-20180214Z-28dfcc")
+  "org.scalablytyped" %%% "suitescript" % "0.0-unknown-dt-20190322Z-28dfcc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bit-array"
-version := "v0.2.2-dt-20180214Z-c2a950"
+version := "v0.2.2-dt-20190322Z-c2a950"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

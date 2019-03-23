@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "msgpack"
-version := "0.0-unknown-dt-20180214Z-aecfc2"
+version := "0.0-unknown-dt-20190322Z-aecfc2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

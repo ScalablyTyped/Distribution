@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ng-command"
-version := "0.2.0-dt-20180214Z-e28fa5"
+version := "0.2.0-dt-20190322Z-e28fa5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

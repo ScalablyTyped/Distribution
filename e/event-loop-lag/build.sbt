@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "event-loop-lag"
-version := "1.0.3-dt-20180214Z-088cf0"
+version := "1.0.3-dt-20190322Z-088cf0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

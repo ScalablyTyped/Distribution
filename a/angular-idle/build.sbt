@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-idle"
-version := "v1.1.1-dt-20180214Z-5c84b7"
+version := "v1.1.1-dt-20190322Z-5c84b7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "keyboardjs"
-version := "v2.4.2-dt-20190109Z-cdfa14"
+version := "v2.4.2-dt-20190322Z-cdfa14"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

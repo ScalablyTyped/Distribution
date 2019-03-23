@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tilebelt"
-version := "1.0.1-dt-20180214Z-10f0d0"
+version := "1.0.1-dt-20190322Z-10f0d0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

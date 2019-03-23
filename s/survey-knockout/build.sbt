@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "survey-knockout"
-version := "1.0.75-4c03af"
+version := "1.0.75-f0d7e6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190218Z-402c33",
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190322Z-402c33",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

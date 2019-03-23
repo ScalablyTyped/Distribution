@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-react"
-version := "0.86.0-049184"
+version := "0.86.0-64a20a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,12 +10,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-29f798",
   "org.scalablytyped" %%% "exenv" % "1.2-dt-20180321Z-c21b52",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190314Z-6f0f1a",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190320Z-5412f7",
-  "org.scalablytyped" %%% "react-is" % "16.7-dt-20190212Z-d53e5b",
-  "org.scalablytyped" %%% "semantic-ui-react__event-stack" % "3.1.0-643e2c",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190322Z-6f0f1a",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-7f8af2",
+  "org.scalablytyped" %%% "react-is" % "16.7-dt-20190212Z-99ce94",
+  "org.scalablytyped" %%% "semantic-ui-react__event-stack" % "3.1.0-c5b974",
   "org.scalablytyped" %%% "shallowequal" % "1.1-dt-20190202Z-aebda3",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false

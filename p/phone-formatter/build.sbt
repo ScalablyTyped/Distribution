@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phone-formatter"
-version := "v0.0.2-dt-20180214Z-ac76fd"
+version := "v0.0.2-dt-20190322Z-ac76fd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

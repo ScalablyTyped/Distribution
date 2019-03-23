@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "royalslider"
-version := "9.4-dt-20180924Z-dd5b6c"
+version := "9.4-dt-20190322Z-dd5b6c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

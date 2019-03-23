@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "google-p12-pem"
-version := "1.0.4-d4e234"
+version := "1.0.4-ac5ccf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
-  "org.scalablytyped" %%% "node-forge" % "0.8.1-dt-20190318Z-10f09b",
-  "org.scalablytyped" %%% "pify" % "3.0.0-dt-20180501Z-937816",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
+  "org.scalablytyped" %%% "node-forge" % "0.8.1-dt-20190322Z-93661d",
+  "org.scalablytyped" %%% "pify" % "3.0.0-dt-20190322Z-937816",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

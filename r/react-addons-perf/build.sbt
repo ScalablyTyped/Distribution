@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-addons-perf"
-version := "0.14-dt-20180214Z-bc7d90"
+version := "0.14-dt-20190322Z-bc7d90"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

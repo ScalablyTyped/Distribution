@@ -17,7 +17,7 @@ class CancellationTokenSource () extends js.Object {
   		 */
   def cancel(): scala.Unit = js.native
   /**
-  		 * Dispose object and free resources. Will call [cancel](#CancellationTokenSource.cancel).
+  		 * Dispose object and free resources.
   		 */
   def dispose(): scala.Unit = js.native
 }

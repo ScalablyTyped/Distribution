@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tether"
-version := "v1.4-dt-20180703Z-8170c4"
+version := "v1.4-dt-20190322Z-8170c4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

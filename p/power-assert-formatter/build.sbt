@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "power-assert-formatter"
-version := "1.4.1-dt-20180214Z-a43b42"
+version := "1.4.1-dt-20190322Z-a43b42"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

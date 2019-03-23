@@ -13,7 +13,13 @@ class TreeItem protected () extends js.Object {
   		 * @param collapsibleState [TreeItemCollapsibleState](#TreeItemCollapsibleState) of the tree item. Default is [TreeItemCollapsibleState.None](#TreeItemCollapsibleState.None)
   		 */
   def this(label: java.lang.String) = this()
+  /**
+  		 * @param resourceUri The [uri](#Uri) of the resource representing this item.
+  		 * @param collapsibleState [TreeItemCollapsibleState](#TreeItemCollapsibleState) of the tree item. Default is [TreeItemCollapsibleState.None](#TreeItemCollapsibleState.None)
+  		 */
+  def this(resourceUri: Uri) = this()
   def this(label: java.lang.String, collapsibleState: TreeItemCollapsibleState) = this()
+  def this(resourceUri: Uri, collapsibleState: TreeItemCollapsibleState) = this()
   /**
   		 * [TreeItemCollapsibleState](#TreeItemCollapsibleState) of the tree item.
   		 */
@@ -42,12 +48,31 @@ class TreeItem protected () extends js.Object {
   		 */
   var contextValue: js.UndefOr[java.lang.String] = js.native
   /**
-  		 * The icon path for the tree item
+  		 * The icon path or [ThemeIcon](#ThemeIcon) for the tree item.
+  		 * When `falsy`, [Folder Theme Icon](#ThemeIcon.Folder) is assigned, if item is collapsible otherwise [File Theme Icon](#ThemeIcon.File).
+  		 * When a [ThemeIcon](#ThemeIcon) is specified, icon is derived from the current file icon theme for the specified theme icon using [resourceUri](#TreeItem.resourceUri) (if provided).
   		 */
-  var iconPath: js.UndefOr[java.lang.String | Uri | vscodeLib.Anon_Dark] = js.native
+  var iconPath: js.UndefOr[java.lang.String | Uri | vscodeLib.Anon_Dark | ThemeIcon] = js.native
   /**
-  		 * A human-readable string describing this item
+  		 * Optional id for the tree item that has to be unique across tree. The id is used to preserve the selection and expansion state of the tree item.
+  		 *
+  		 * If not provided, an id is generated using the tree item's label. **Note** that when labels change, ids will change and that selection and expansion state cannot be kept stable anymore.
   		 */
-  var label: java.lang.String = js.native
+  var id: js.UndefOr[java.lang.String] = js.native
+  /**
+  		 * A human-readable string describing this item. When `falsy`, it is derived from [resourceUri](#TreeItem.resourceUri).
+  		 */
+  var label: js.UndefOr[java.lang.String] = js.native
+  /**
+  		 * The [uri](#Uri) of the resource representing this item.
+  		 *
+  		 * Will be used to derive the [label](#TreeItem.label), when it is not provided.
+  		 * Will be used to derive the icon from current icon theme, when [iconPath](#TreeItem.iconPath) has [ThemeIcon](#ThemeIcon) value.
+  		 */
+  var resourceUri: js.UndefOr[Uri] = js.native
+  /**
+  		 * The tooltip text when you hover over this item.
+  		 */
+  var tooltip: js.UndefOr[java.lang.String] = js.native
 }
 

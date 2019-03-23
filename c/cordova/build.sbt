@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova"
-version := "0.0-unknown-dt-20181116Z-3f392b"
+version := "0.0-unknown-dt-20190322Z-3f392b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

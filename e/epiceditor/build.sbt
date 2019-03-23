@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "epiceditor"
-version := "0.2-dt-20180214Z-e41aa4"
+version := "0.2-dt-20190322Z-e41aa4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

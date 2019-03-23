@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "signature_pad"
-version := "2.3-dt-20180624Z-814a86"
+version := "2.3-dt-20190322Z-814a86"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

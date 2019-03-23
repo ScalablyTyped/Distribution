@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json-pointer"
-version := "1.0-dt-20180214Z-70ac77"
+version := "1.0-dt-20190322Z-70ac77"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

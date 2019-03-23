@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_timeago"
-version := "1.0.2-dt-20180214Z-02ec5d"
+version := "1.0.2-dt-20190322Z-02ec5d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

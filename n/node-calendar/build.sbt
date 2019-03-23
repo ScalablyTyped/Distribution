@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-calendar"
-version := "v0.1.4-dt-20180214Z-daacc4"
+version := "v0.1.4-dt-20190322Z-daacc4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

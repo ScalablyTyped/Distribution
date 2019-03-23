@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google_dot_feeds"
-version := "0.0-unknown-dt-20180214Z-acac38"
+version := "0.0-unknown-dt-20190322Z-acac38"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

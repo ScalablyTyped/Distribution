@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-jsdoc"
-version := "0.0-unknown-dt-20180214Z-303b9c"
+version := "0.0-unknown-dt-20190322Z-303b9c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

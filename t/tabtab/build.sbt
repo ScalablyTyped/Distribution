@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tabtab"
-version := "3.0.2-dt-20181125Z-8435dc"
+version := "3.0.2-dt-20190322Z-8435dc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

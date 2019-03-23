@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "imagemapster"
-version := "1.2.10-dt-20180214Z-c5dd37"
+version := "1.2.10-dt-20190322Z-c5dd37"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

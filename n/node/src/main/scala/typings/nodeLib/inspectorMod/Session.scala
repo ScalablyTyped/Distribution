@@ -190,6 +190,18 @@ class Session ()
     ]
   ): this.type = js.native
   /**
+    * Notification is issued every time when binding is called.
+    * @experimental
+    */
+  @JSName("addListener")
+  def addListener_RuntimebindingCalled(
+    event: nodeLib.nodeLibStrings.RuntimeDOTbindingCalled,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.RuntimeNs.BindingCalledEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
     * Issued when console API was called.
     */
   @JSName("addListener")
@@ -364,6 +376,11 @@ class Session ()
   def emit_ProfilerconsoleProfileStarted(
     event: nodeLib.nodeLibStrings.ProfilerDOTconsoleProfileStarted,
     message: InspectorNotification[nodeLib.inspectorMod.ProfilerNs.ConsoleProfileStartedEventDataType]
+  ): scala.Boolean = js.native
+  @JSName("emit")
+  def emit_RuntimebindingCalled(
+    event: nodeLib.nodeLibStrings.RuntimeDOTbindingCalled,
+    message: InspectorNotification[nodeLib.inspectorMod.RuntimeNs.BindingCalledEventDataType]
   ): scala.Boolean = js.native
   @JSName("emit")
   def emit_RuntimeconsoleAPICalled(
@@ -569,6 +586,18 @@ class Session ()
     event: nodeLib.nodeLibStrings.ProfilerDOTconsoleProfileStarted,
     listener: js.Function1[
       /* message */ InspectorNotification[nodeLib.inspectorMod.ProfilerNs.ConsoleProfileStartedEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Notification is issued every time when binding is called.
+    * @experimental
+    */
+  @JSName("on")
+  def on_RuntimebindingCalled(
+    event: nodeLib.nodeLibStrings.RuntimeDOTbindingCalled,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.RuntimeNs.BindingCalledEventDataType], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -825,6 +854,18 @@ class Session ()
     event: nodeLib.nodeLibStrings.ProfilerDOTconsoleProfileStarted,
     listener: js.Function1[
       /* message */ InspectorNotification[nodeLib.inspectorMod.ProfilerNs.ConsoleProfileStartedEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Notification is issued every time when binding is called.
+    * @experimental
+    */
+  @JSName("once")
+  def once_RuntimebindingCalled(
+    event: nodeLib.nodeLibStrings.RuntimeDOTbindingCalled,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.RuntimeNs.BindingCalledEventDataType], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -2039,6 +2080,35 @@ class Session ()
     ]
   ): scala.Unit = js.native
   /**
+    * If executionContextId is empty, adds binding with the given name on the
+    * global objects of all inspected contexts, including those created later,
+    * bindings survive reloads.
+    * If executionContextId is specified, adds binding only on global object of
+    * given execution context.
+    * Binding function takes exactly one argument, this argument should be string,
+    * in case of any other input, function throws an exception.
+    * Each binding function call produces Runtime.bindingCalled notification.
+    * @experimental
+    */
+  @JSName("post")
+  def post_RuntimeaddBinding(method: nodeLib.nodeLibStrings.RuntimeDOTaddBinding): scala.Unit = js.native
+  @JSName("post")
+  def post_RuntimeaddBinding(
+    method: nodeLib.nodeLibStrings.RuntimeDOTaddBinding,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("post")
+  def post_RuntimeaddBinding(
+    method: nodeLib.nodeLibStrings.RuntimeDOTaddBinding,
+    params: nodeLib.inspectorMod.RuntimeNs.AddBindingParameterType
+  ): scala.Unit = js.native
+  @JSName("post")
+  def post_RuntimeaddBinding(
+    method: nodeLib.nodeLibStrings.RuntimeDOTaddBinding,
+    params: nodeLib.inspectorMod.RuntimeNs.AddBindingParameterType,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  /**
     * Add handler to promise with given promise object id.
     */
   @JSName("post")
@@ -2346,6 +2416,29 @@ class Session ()
     callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
+    * This method does not remove binding function from global object but
+    * unsubscribes current runtime agent from Runtime.bindingCalled notifications.
+    * @experimental
+    */
+  @JSName("post")
+  def post_RuntimeremoveBinding(method: nodeLib.nodeLibStrings.RuntimeDOTremoveBinding): scala.Unit = js.native
+  @JSName("post")
+  def post_RuntimeremoveBinding(
+    method: nodeLib.nodeLibStrings.RuntimeDOTremoveBinding,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("post")
+  def post_RuntimeremoveBinding(
+    method: nodeLib.nodeLibStrings.RuntimeDOTremoveBinding,
+    params: nodeLib.inspectorMod.RuntimeNs.RemoveBindingParameterType
+  ): scala.Unit = js.native
+  @JSName("post")
+  def post_RuntimeremoveBinding(
+    method: nodeLib.nodeLibStrings.RuntimeDOTremoveBinding,
+    params: nodeLib.inspectorMod.RuntimeNs.RemoveBindingParameterType,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  /**
     * Tells inspected instance to run if it was waiting for debugger to attach.
     */
   @JSName("post")
@@ -2385,6 +2478,27 @@ class Session ()
     ]
   ): scala.Unit = js.native
   /**
+    * Enables or disables async call stacks tracking.
+    */
+  @JSName("post")
+  def post_RuntimesetAsyncCallStackDepth(method: nodeLib.nodeLibStrings.RuntimeDOTsetAsyncCallStackDepth): scala.Unit = js.native
+  @JSName("post")
+  def post_RuntimesetAsyncCallStackDepth(
+    method: nodeLib.nodeLibStrings.RuntimeDOTsetAsyncCallStackDepth,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("post")
+  def post_RuntimesetAsyncCallStackDepth(
+    method: nodeLib.nodeLibStrings.RuntimeDOTsetAsyncCallStackDepth,
+    params: nodeLib.inspectorMod.RuntimeNs.SetAsyncCallStackDepthParameterType
+  ): scala.Unit = js.native
+  @JSName("post")
+  def post_RuntimesetAsyncCallStackDepth(
+    method: nodeLib.nodeLibStrings.RuntimeDOTsetAsyncCallStackDepth,
+    params: nodeLib.inspectorMod.RuntimeNs.SetAsyncCallStackDepthParameterType,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  /**
     * @experimental
     */
   @JSName("post")
@@ -2403,6 +2517,27 @@ class Session ()
   def post_RuntimesetCustomObjectFormatterEnabled(
     method: nodeLib.nodeLibStrings.RuntimeDOTsetCustomObjectFormatterEnabled,
     params: nodeLib.inspectorMod.RuntimeNs.SetCustomObjectFormatterEnabledParameterType,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * @experimental
+    */
+  @JSName("post")
+  def post_RuntimesetMaxCallStackSizeToCapture(method: nodeLib.nodeLibStrings.RuntimeDOTsetMaxCallStackSizeToCapture): scala.Unit = js.native
+  @JSName("post")
+  def post_RuntimesetMaxCallStackSizeToCapture(
+    method: nodeLib.nodeLibStrings.RuntimeDOTsetMaxCallStackSizeToCapture,
+    callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Unit = js.native
+  @JSName("post")
+  def post_RuntimesetMaxCallStackSizeToCapture(
+    method: nodeLib.nodeLibStrings.RuntimeDOTsetMaxCallStackSizeToCapture,
+    params: nodeLib.inspectorMod.RuntimeNs.SetMaxCallStackSizeToCaptureParameterType
+  ): scala.Unit = js.native
+  @JSName("post")
+  def post_RuntimesetMaxCallStackSizeToCapture(
+    method: nodeLib.nodeLibStrings.RuntimeDOTsetMaxCallStackSizeToCapture,
+    params: nodeLib.inspectorMod.RuntimeNs.SetMaxCallStackSizeToCaptureParameterType,
     callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -2601,6 +2736,18 @@ class Session ()
     event: nodeLib.nodeLibStrings.ProfilerDOTconsoleProfileStarted,
     listener: js.Function1[
       /* message */ InspectorNotification[nodeLib.inspectorMod.ProfilerNs.ConsoleProfileStartedEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Notification is issued every time when binding is called.
+    * @experimental
+    */
+  @JSName("prependListener")
+  def prependListener_RuntimebindingCalled(
+    event: nodeLib.nodeLibStrings.RuntimeDOTbindingCalled,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.RuntimeNs.BindingCalledEventDataType], 
       scala.Unit
     ]
   ): this.type = js.native
@@ -2857,6 +3004,18 @@ class Session ()
     event: nodeLib.nodeLibStrings.ProfilerDOTconsoleProfileStarted,
     listener: js.Function1[
       /* message */ InspectorNotification[nodeLib.inspectorMod.ProfilerNs.ConsoleProfileStartedEventDataType], 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Notification is issued every time when binding is called.
+    * @experimental
+    */
+  @JSName("prependOnceListener")
+  def prependOnceListener_RuntimebindingCalled(
+    event: nodeLib.nodeLibStrings.RuntimeDOTbindingCalled,
+    listener: js.Function1[
+      /* message */ InspectorNotification[nodeLib.inspectorMod.RuntimeNs.BindingCalledEventDataType], 
       scala.Unit
     ]
   ): this.type = js.native

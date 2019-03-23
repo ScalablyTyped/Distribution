@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-local-storage"
-version := "v0.6.0-dt-20180610Z-031415"
+version := "v0.6.0-dt-20190322Z-031415"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

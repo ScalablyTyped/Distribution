@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "slideout"
-version := "0.1.12-dt-20180214Z-c792b5"
+version := "0.1.12-dt-20190322Z-c792b5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

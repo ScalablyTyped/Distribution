@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "temp-fs"
-version := "v0.9.8-dt-20180214Z-37b208"
+version := "v0.9.8-dt-20190322Z-37b208"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

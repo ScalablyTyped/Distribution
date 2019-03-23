@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsonpath"
-version := "0.2.11-dt-20180214Z-4d9bf6"
+version := "0.2.11-dt-20190322Z-4d9bf6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

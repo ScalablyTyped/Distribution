@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "smtpapi"
-version := "v1.2.0-dt-20180214Z-93591b"
+version := "v1.2.0-dt-20190322Z-93591b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

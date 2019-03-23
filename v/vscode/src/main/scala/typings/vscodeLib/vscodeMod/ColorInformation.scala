@@ -21,7 +21,7 @@ class ColorInformation protected () extends js.Object {
   		 */
   var color: Color = js.native
   /**
-  		 * The range in the document where this color appers.
+  		 * The range in the document where this color appears.
   		 */
   var range: Range = js.native
 }

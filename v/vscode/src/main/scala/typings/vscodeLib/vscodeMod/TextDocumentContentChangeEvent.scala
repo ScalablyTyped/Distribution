@@ -15,6 +15,10 @@ trait TextDocumentContentChangeEvent extends js.Object {
   		 */
   var rangeLength: scala.Double
   /**
+  		 * The offset of the range that got replaced.
+  		 */
+  var rangeOffset: scala.Double
+  /**
   		 * The new text for the range.
   		 */
   var text: java.lang.String
@@ -22,8 +26,8 @@ trait TextDocumentContentChangeEvent extends js.Object {
 
 object TextDocumentContentChangeEvent {
   @scala.inline
-  def apply(range: Range, rangeLength: scala.Double, text: java.lang.String): TextDocumentContentChangeEvent = {
-    val __obj = js.Dynamic.literal(range = range, rangeLength = rangeLength, text = text)
+  def apply(range: Range, rangeLength: scala.Double, rangeOffset: scala.Double, text: java.lang.String): TextDocumentContentChangeEvent = {
+    val __obj = js.Dynamic.literal(range = range, rangeLength = rangeLength, rangeOffset = rangeOffset, text = text)
   
     __obj.asInstanceOf[TextDocumentContentChangeEvent]
   }

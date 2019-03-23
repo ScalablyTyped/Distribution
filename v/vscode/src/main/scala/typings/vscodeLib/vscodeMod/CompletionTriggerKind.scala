@@ -25,8 +25,16 @@ object CompletionTriggerKind extends js.Object {
   sealed trait TriggerCharacter
     extends vscodeLib.vscodeMod.CompletionTriggerKind
   
+  /**
+  		 * Completion was re-triggered as current completion list is incomplete
+  		 */
+  @js.native
+  sealed trait TriggerForIncompleteCompletions
+    extends vscodeLib.vscodeMod.CompletionTriggerKind
+  
   /* 0 */ val Invoke: Invoke with scala.Double = js.native
   /* 1 */ val TriggerCharacter: TriggerCharacter with scala.Double = js.native
+  /* 2 */ val TriggerForIncompleteCompletions: TriggerForIncompleteCompletions with scala.Double = js.native
   @JSBracketAccess
   def apply(value: scala.Double): js.UndefOr[vscodeLib.vscodeMod.CompletionTriggerKind with scala.Double] = js.native
 }

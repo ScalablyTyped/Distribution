@@ -38,6 +38,13 @@ object workspaceNs extends js.Object {
     ignoreDeleteEvents: scala.Boolean
   ): vscodeLib.vscodeMod.FileSystemWatcher = js.native
   def findFiles(include: vscodeLib.vscodeMod.GlobPattern): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Uri]] = js.native
+  def findFiles(include: vscodeLib.vscodeMod.GlobPattern, exclude: scala.Null, maxResults: scala.Double): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Uri]] = js.native
+  def findFiles(
+    include: vscodeLib.vscodeMod.GlobPattern,
+    exclude: scala.Null,
+    maxResults: scala.Double,
+    token: vscodeLib.vscodeMod.CancellationToken
+  ): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Uri]] = js.native
   def findFiles(include: vscodeLib.vscodeMod.GlobPattern, exclude: vscodeLib.vscodeMod.GlobPattern): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Uri]] = js.native
   def findFiles(
     include: vscodeLib.vscodeMod.GlobPattern,
@@ -58,9 +65,16 @@ object workspaceNs extends js.Object {
   def openTextDocument(fileName: java.lang.String): vscodeLib.Thenable[vscodeLib.vscodeMod.TextDocument] = js.native
   def openTextDocument(options: vscodeLib.Anon_Content): vscodeLib.Thenable[vscodeLib.vscodeMod.TextDocument] = js.native
   def openTextDocument(uri: vscodeLib.vscodeMod.Uri): vscodeLib.Thenable[vscodeLib.vscodeMod.TextDocument] = js.native
+  def registerFileSystemProvider(
+    scheme: java.lang.String,
+    provider: vscodeLib.vscodeMod.FileSystemProvider,
+    options: vscodeLib.Anon_IsCaseSensitive
+  ): vscodeLib.vscodeMod.Disposable = js.native
   def registerTaskProvider(`type`: java.lang.String, provider: vscodeLib.vscodeMod.TaskProvider): vscodeLib.vscodeMod.Disposable = js.native
   def registerTextDocumentContentProvider(scheme: java.lang.String, provider: vscodeLib.vscodeMod.TextDocumentContentProvider): vscodeLib.vscodeMod.Disposable = js.native
   def saveAll(): vscodeLib.Thenable[scala.Boolean] = js.native
   def saveAll(includeUntitled: scala.Boolean): vscodeLib.Thenable[scala.Boolean] = js.native
+  def updateWorkspaceFolders(start: scala.Double, deleteCount: scala.Double, workspaceFoldersToAdd: vscodeLib.Anon_Name*): scala.Boolean = js.native
+  def updateWorkspaceFolders(start: scala.Double, workspaceFoldersToAdd: vscodeLib.Anon_Name*): scala.Boolean = js.native
 }
 

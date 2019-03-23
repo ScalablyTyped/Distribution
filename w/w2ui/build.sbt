@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "w2ui"
-version := "1.4.3-dt-20180214Z-4256da"
+version := "1.4.3-dt-20190322Z-4256da"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

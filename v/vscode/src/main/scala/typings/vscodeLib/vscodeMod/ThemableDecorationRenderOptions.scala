@@ -57,6 +57,14 @@ trait ThemableDecorationRenderOptions extends js.Object {
   		 */
   var cursor: js.UndefOr[java.lang.String] = js.undefined
   /**
+  		 * CSS styling property that will be applied to text enclosed by a decoration.
+  		 */
+  var fontStyle: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  		 * CSS styling property that will be applied to text enclosed by a decoration.
+  		 */
+  var fontWeight: js.UndefOr[java.lang.String] = js.undefined
+  /**
   		 * An **absolute path** or an URI to an image to be rendered in the gutter.
   		 */
   var gutterIconPath: js.UndefOr[java.lang.String | Uri] = js.undefined
@@ -70,6 +78,10 @@ trait ThemableDecorationRenderOptions extends js.Object {
   		 * CSS styling property that will be applied to text enclosed by a decoration.
   		 */
   var letterSpacing: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  		 * CSS styling property that will be applied to text enclosed by a decoration.
+  		 */
+  var opacity: js.UndefOr[java.lang.String] = js.undefined
   /**
   		 * CSS styling property that will be applied to text enclosed by a decoration.
   		 */
@@ -113,9 +125,12 @@ object ThemableDecorationRenderOptions {
     borderWidth: java.lang.String = null,
     color: java.lang.String | ThemeColor = null,
     cursor: java.lang.String = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: java.lang.String = null,
     gutterIconPath: java.lang.String | Uri = null,
     gutterIconSize: java.lang.String = null,
     letterSpacing: java.lang.String = null,
+    opacity: java.lang.String = null,
     outline: java.lang.String = null,
     outlineColor: java.lang.String | ThemeColor = null,
     outlineStyle: java.lang.String = null,
@@ -135,9 +150,12 @@ object ThemableDecorationRenderOptions {
     if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth)
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
     if (gutterIconPath != null) __obj.updateDynamic("gutterIconPath")(gutterIconPath.asInstanceOf[js.Any])
     if (gutterIconSize != null) __obj.updateDynamic("gutterIconSize")(gutterIconSize)
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity)
     if (outline != null) __obj.updateDynamic("outline")(outline)
     if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
     if (outlineStyle != null) __obj.updateDynamic("outlineStyle")(outlineStyle)

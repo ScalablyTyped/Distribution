@@ -9,8 +9,9 @@ import scala.scalajs.js.annotation._
   * Base interface class other can inherits from
   */
 @js.native
-trait BaseUI[TOpt]
-  extends org.scalablytyped.runtime.Instantiable1[/* opt */ TOpt, scala.Unit] {
+trait BaseUI
+  extends org.scalablytyped.runtime.Instantiable1[/* opt */ inquirerLib.inquirerMod.inquirerNs.StreamOptions, BaseUI] {
+  var rl: nodeLib.readlineMod.Interface = js.native
   /**
     * Close the interface and cleanup listeners
     */
@@ -20,9 +21,5 @@ trait BaseUI[TOpt]
     * @return {null}
     */
   def onForceClose(): scala.Unit = js.native
-  /**
-    * Handle and propagate keypress events
-    */
-  def onKeypress(s: java.lang.String, key: Key): scala.Unit = js.native
 }
 

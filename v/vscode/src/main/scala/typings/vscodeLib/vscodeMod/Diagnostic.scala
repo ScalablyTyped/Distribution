@@ -22,7 +22,7 @@ class Diagnostic protected () extends js.Object {
   		 * to the user, but should be used for later processing, e.g. when
   		 * providing [code actions](#CodeActionContext).
   		 */
-  var code: java.lang.String | scala.Double = js.native
+  var code: js.UndefOr[java.lang.String | scala.Double] = js.native
   /**
   		 * The human-readable message.
   		 */
@@ -32,6 +32,11 @@ class Diagnostic protected () extends js.Object {
   		 */
   var range: Range = js.native
   /**
+  		 * An array of related diagnostic information, e.g. when symbol-names within
+  		 * a scope collide all definitions can be marked via this property.
+  		 */
+  var relatedInformation: js.UndefOr[js.Array[DiagnosticRelatedInformation]] = js.native
+  /**
   		 * The severity, default is [error](#DiagnosticSeverity.Error).
   		 */
   var severity: DiagnosticSeverity = js.native
@@ -39,6 +44,6 @@ class Diagnostic protected () extends js.Object {
   		 * A human-readable string describing the source of this
   		 * diagnostic, e.g. 'typescript' or 'super lint'.
   		 */
-  var source: java.lang.String = js.native
+  var source: js.UndefOr[java.lang.String] = js.native
 }
 

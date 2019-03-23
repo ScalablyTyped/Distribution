@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "js-combinatorics"
-version := "v0.5.4-dt-20181229Z-24e125"
+version := "v0.5.4-dt-20190322Z-24e125"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

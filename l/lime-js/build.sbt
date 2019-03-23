@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lime-js"
-version := "0.0.4-dt-20180214Z-8f03b3"
+version := "0.0.4-dt-20190322Z-8f03b3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

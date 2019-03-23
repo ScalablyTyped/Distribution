@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular_dot_throttle"
-version := "0.0-unknown-dt-20180214Z-8f83ac"
+version := "0.0-unknown-dt-20190322Z-8f83ac"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

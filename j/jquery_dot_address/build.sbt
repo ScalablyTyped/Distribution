@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_address"
-version := "1.5-dt-20180214Z-ee9463"
+version := "1.5-dt-20190322Z-ee9463"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

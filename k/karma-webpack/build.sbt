@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-webpack"
-version := "2.0-dt-20190212Z-31a0b7"
+version := "2.0-dt-20190212Z-f6d58f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,20 +8,20 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-f2620c",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-cc7043",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-364e03",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-729df7",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-4b79e1",
   "org.scalablytyped" %%% "flatted" % "2.0.0-6028c6",
-  "org.scalablytyped" %%% "karma" % "3.0-dt-20190212Z-f1581f",
+  "org.scalablytyped" %%% "karma" % "3.0-dt-20190212Z-cbf066",
   "org.scalablytyped" %%% "log4js" % "4.0.2-01f672",
   "org.scalablytyped" %%% "loglevel" % "1.5-dt-20190205Z-ba8ba9",
-  "org.scalablytyped" %%% "memory-fs" % "0.3.0-dt-20180919Z-8f0354",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
+  "org.scalablytyped" %%% "memory-fs" % "0.3.0-dt-20190322Z-c7c8a9",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
   "org.scalablytyped" %%% "source-map" % "0.7.3-169991",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-c57887",
+  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-c57887",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-ffccaa",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190316Z-b1c4fb",
-  "org.scalablytyped" %%% "webpack-dev-middleware" % "2.0-dt-20180709Z-eccd9a")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190316Z-0ac8b7",
+  "org.scalablytyped" %%% "webpack-dev-middleware" % "2.0-dt-20180709Z-e3f7f5")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

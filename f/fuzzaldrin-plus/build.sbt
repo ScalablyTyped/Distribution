@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fuzzaldrin-plus"
-version := "0.6.0-dt-20180921Z-ed8bdf"
+version := "0.6.0-dt-20190322Z-ed8bdf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

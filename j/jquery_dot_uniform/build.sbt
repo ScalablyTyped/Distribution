@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_uniform"
-version := "0.0-unknown-dt-20181003Z-b7a4d6"
+version := "0.0-unknown-dt-20190322Z-b7a4d6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

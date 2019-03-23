@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hubspot-pace"
-version := "v0.7.5-dt-20180214Z-59e8b7"
+version := "v0.7.5-dt-20190322Z-59e8b7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

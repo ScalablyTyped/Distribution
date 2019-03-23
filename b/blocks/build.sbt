@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blocks"
-version := "v0.3.0-dt-20180214Z-5669c7"
+version := "v0.3.0-dt-20190322Z-5669c7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

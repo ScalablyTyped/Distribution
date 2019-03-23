@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "easy-table"
-version := "0.0-unknown-dt-20181003Z-d60927"
+version := "0.0-unknown-dt-20190322Z-d60927"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

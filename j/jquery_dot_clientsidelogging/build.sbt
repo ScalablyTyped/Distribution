@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_clientsidelogging"
-version := "0.0-unknown-dt-20180214Z-d7f28f"
+version := "0.0-unknown-dt-20190322Z-d7f28f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

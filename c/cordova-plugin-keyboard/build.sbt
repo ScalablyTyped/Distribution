@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-keyboard"
-version := "v1.2.0-dt-20180214Z-0e9ede"
+version := "v1.2.0-dt-20190322Z-0e9ede"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

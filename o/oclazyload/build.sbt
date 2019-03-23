@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "oclazyload"
-version := "0.0-unknown-dt-20180214Z-a80066"
+version := "0.0-unknown-dt-20190322Z-a80066"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

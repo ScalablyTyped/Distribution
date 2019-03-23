@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "konami_dot_js"
-version := "1.4.3-dt-20180214Z-bc3db0"
+version := "1.4.3-dt-20190322Z-bc3db0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

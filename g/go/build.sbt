@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "go"
-version := "v1.6.0-dt-20180214Z-6df543"
+version := "v1.6.0-dt-20190322Z-6df543"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

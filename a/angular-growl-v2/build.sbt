@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-growl-v2"
-version := "0.7-dt-20180214Z-8b769a"
+version := "0.7-dt-20190322Z-8b769a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

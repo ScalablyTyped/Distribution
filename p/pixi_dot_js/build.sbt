@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pixi_dot_js"
-version := "4.8-dt-20181219Z-a1a947"
+version := "4.8-dt-20190322Z-a1a947"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

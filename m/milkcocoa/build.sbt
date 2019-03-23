@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "milkcocoa"
-version := "0.2.8-dt-20180214Z-656971"
+version := "0.2.8-dt-20190322Z-656971"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-ms-adal"
-version := "0.0-unknown-dt-20180214Z-571f77"
+version := "0.0-unknown-dt-20190322Z-571f77"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

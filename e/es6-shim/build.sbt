@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "es6-shim"
-version := "v0.31.2-dt-20181108Z-ecb307"
+version := "v0.31.2-dt-20190322Z-ecb307"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

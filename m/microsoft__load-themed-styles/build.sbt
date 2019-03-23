@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "microsoft__load-themed-styles"
-version := "1.8.72-645f8b"
+version := "1.8.73-645f8b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

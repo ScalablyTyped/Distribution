@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "commangular"
-version := "0.9.0-dt-20181015Z-987fc9"
+version := "0.9.0-dt-20190322Z-987fc9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

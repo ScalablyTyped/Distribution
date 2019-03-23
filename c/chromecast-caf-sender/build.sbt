@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "chromecast-caf-sender"
-version := "1.0-dt-20190213Z-a50eaa"
+version := "1.0-dt-20190213Z-a24839"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20190218Z-9963d2",
-  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20180827Z-f5bcdf",
-  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20180214Z-a98cac",
+  "org.scalablytyped" %%% "chrome" % "0.0-unknown-dt-20190322Z-0c1b96",
+  "org.scalablytyped" %%% "filesystem" % "0.0-unknown-dt-20190322Z-e059a1",
+  "org.scalablytyped" %%% "filewriter" % "0.0-unknown-dt-20190322Z-a98cac",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

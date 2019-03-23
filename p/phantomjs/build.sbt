@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phantomjs"
-version := "1.9-dt-20180214Z-dbb04a"
+version := "1.9-dt-20190322Z-dbb04a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

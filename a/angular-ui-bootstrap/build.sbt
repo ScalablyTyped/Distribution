@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-ui-bootstrap"
-version := "0.13.3-dt-20180721Z-a9840e"
+version := "0.13.3-dt-20190322Z-a9840e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

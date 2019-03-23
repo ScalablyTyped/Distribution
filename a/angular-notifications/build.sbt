@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-notifications"
-version := "0.0-unknown-dt-20180214Z-84aebb"
+version := "0.0-unknown-dt-20190322Z-84aebb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

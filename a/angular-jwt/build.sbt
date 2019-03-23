@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-jwt"
-version := "0.0.8-dt-20180214Z-482fe1"
+version := "0.0.8-dt-20190322Z-482fe1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

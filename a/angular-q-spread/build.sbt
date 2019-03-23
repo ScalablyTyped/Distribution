@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-q-spread"
-version := "0.0-unknown-dt-20180214Z-577e2f"
+version := "0.0-unknown-dt-20190322Z-577e2f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

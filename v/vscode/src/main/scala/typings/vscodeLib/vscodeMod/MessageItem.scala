@@ -7,8 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait MessageItem extends js.Object {
   /**
-  		 * Indicates that this item replaces the default
-  		 * 'Close' action.
+  		 * A hint for modal dialogs that the item should be triggered
+  		 * when the user cancels the dialog (e.g. by pressing the ESC
+  		 * key).
+  		 *
+  		 * Note: this option is ignored for non-modal messages.
   		 */
   var isCloseAffordance: js.UndefOr[scala.Boolean] = js.undefined
   /**

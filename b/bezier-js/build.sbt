@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bezier-js"
-version := "0.0-unknown-dt-20181008Z-53042c"
+version := "0.0-unknown-dt-20190322Z-53042c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "meteor-accounts-phone"
-version := "0.0.21-dt-20180214Z-8a9694"
+version := "0.0.21-dt-20190322Z-8a9694"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

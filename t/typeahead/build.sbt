@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typeahead"
-version := "0.11.1-dt-20180214Z-decde0"
+version := "0.11.1-dt-20190322Z-decde0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

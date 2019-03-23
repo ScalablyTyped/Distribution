@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "combokeys"
-version := "v2.4.6-dt-20180214Z-fbd08a"
+version := "v2.4.6-dt-20190322Z-fbd08a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

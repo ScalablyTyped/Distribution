@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-httpi"
-version := "0.0-unknown-dt-20180214Z-4730c4"
+version := "0.0-unknown-dt-20190322Z-4730c4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

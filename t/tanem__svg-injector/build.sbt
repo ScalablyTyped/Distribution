@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tanem__svg-injector"
-version := "7.0.7-24fdad"
+version := "7.0.8-24fdad"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

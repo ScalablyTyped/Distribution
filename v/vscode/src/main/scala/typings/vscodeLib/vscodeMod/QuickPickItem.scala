@@ -9,7 +9,7 @@ trait QuickPickItem extends js.Object {
   /**
   		 * A human readable string which is rendered less prominent.
   		 */
-  var description: java.lang.String
+  var description: js.UndefOr[java.lang.String] = js.undefined
   /**
   		 * A human readable string which is rendered less prominent.
   		 */
@@ -18,13 +18,27 @@ trait QuickPickItem extends js.Object {
   		 * A human readable string which is rendered prominent.
   		 */
   var label: java.lang.String
+  /**
+  		 * Optional flag indicating if this item is picked initially.
+  		 * (Only honored when the picker allows multiple selections.)
+  		 *
+  		 * @see [QuickPickOptions.canPickMany](#QuickPickOptions.canPickMany)
+  		 */
+  var picked: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object QuickPickItem {
   @scala.inline
-  def apply(description: java.lang.String, label: java.lang.String, detail: java.lang.String = null): QuickPickItem = {
-    val __obj = js.Dynamic.literal(description = description, label = label)
+  def apply(
+    label: java.lang.String,
+    description: java.lang.String = null,
+    detail: java.lang.String = null,
+    picked: js.UndefOr[scala.Boolean] = js.undefined
+  ): QuickPickItem = {
+    val __obj = js.Dynamic.literal(label = label)
+    if (description != null) __obj.updateDynamic("description")(description)
     if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (!js.isUndefined(picked)) __obj.updateDynamic("picked")(picked)
     __obj.asInstanceOf[QuickPickItem]
   }
 }

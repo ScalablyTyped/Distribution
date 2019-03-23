@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "javascript-bignum"
-version := "0.0-unknown-dt-20180214Z-0bbde1"
+version := "0.0-unknown-dt-20190322Z-0bbde1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

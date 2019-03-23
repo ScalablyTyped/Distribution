@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-notify"
-version := "v3.1.3-dt-20190221Z-ead571"
+version := "v3.1.3-dt-20190322Z-ead571"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

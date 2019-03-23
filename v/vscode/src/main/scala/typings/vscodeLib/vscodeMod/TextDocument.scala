@@ -27,7 +27,9 @@ trait TextDocument extends js.Object {
   		 */
   val isDirty: scala.Boolean = js.native
   /**
-  		 * Is this document representing an untitled file.
+  		 * Is this document representing an untitled file which has never been saved yet. *Note* that
+  		 * this does not mean the document will be saved to disk, use [`uri.scheme`](#Uri.scheme)
+  		 * to figure out where a document will be [saved](#FileSystemProvider), e.g. `file`, `ftp` etc.
   		 */
   val isUntitled: scala.Boolean = js.native
   /**
@@ -39,9 +41,13 @@ trait TextDocument extends js.Object {
   		 */
   val lineCount: scala.Double = js.native
   /**
-  		 * The associated URI for this document. Most documents have the __file__-scheme, indicating that they
-  		 * represent files on disk. However, some documents may have other schemes indicating that they are not
-  		 * available on disk.
+  		 * The associated uri for this document.
+  		 *
+  		 * *Note* that most documents use the `file`-scheme, which means they are files on disk. However, **not** all documents are
+  		 * saved on disk and therefore the `scheme` must be checked before trying to access the underlying file or siblings on disk.
+  		 *
+  		 * @see [FileSystemProvider](#FileSystemProvider)
+  		 * @see [TextDocumentContentProvider](#TextDocumentContentProvider)
   		 */
   val uri: Uri = js.native
   /**
@@ -60,7 +66,7 @@ trait TextDocument extends js.Object {
   def getText(range: Range): java.lang.String = js.native
   /**
   		 * Get a word-range at the given position. By default words are defined by
-  		 * common separators, like space, -, _, etc. In addition, per languge custom
+  		 * common separators, like space, -, _, etc. In addition, per language custom
   		 * [word definitions](#LanguageConfiguration.wordPattern) can be defined. It
   		 * is also possible to provide a custom regular expression.
   		 *

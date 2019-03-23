@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "raty"
-version := "2.7.0-dt-20180214Z-830070"
+version := "2.7.0-dt-20190322Z-830070"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

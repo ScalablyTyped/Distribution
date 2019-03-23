@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-dynamic-locale"
-version := "v0.1.27-dt-20180214Z-4d6b55"
+version := "v0.1.27-dt-20190322Z-4d6b55"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

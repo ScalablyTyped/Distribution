@@ -400,6 +400,111 @@ trait IoT1ClickProjects
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Lists the tags (metadata key/value pairs) which you have assigned to the resource.
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Lists the tags (metadata key/value pairs) which you have assigned to the resource.
+    */
+  def listTagsForResource(params: awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.ListTagsForResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Creates or modifies tags for a resource. Tags are key/value pairs (metadata) that can be used to manage a resource. For more information, see AWS Tagging Strategies.
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Creates or modifies tags for a resource. Tags are key/value pairs (metadata) that can be used to manage a resource. For more information, see AWS Tagging Strategies.
+    */
+  def tagResource(params: awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    params: awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.TagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes one or more tags (metadata key/value pairs) from a resource.
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes one or more tags (metadata key/value pairs) from a resource.
+    */
+  def untagResource(params: awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    params: awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.UntagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Updates a placement with the given attributes. To clear an attribute, pass an empty value (i.e., "").
     */
   def updatePlacement(): awsDashSdkLib.libRequestMod.Request[

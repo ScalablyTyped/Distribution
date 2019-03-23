@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-modal"
-version := "0.5.0-dt-20180214Z-5f59e1"
+version := "0.5.0-dt-20190322Z-5f59e1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

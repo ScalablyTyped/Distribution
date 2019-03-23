@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mariasql"
-version := "v0.1.22-dt-20180214Z-6c8132"
+version := "v0.1.22-dt-20190322Z-6c8132"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

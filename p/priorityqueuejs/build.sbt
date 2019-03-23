@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "priorityqueuejs"
-version := "v1.0-dt-20180214Z-ac59ab"
+version := "v1.0-dt-20190322Z-ac59ab"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

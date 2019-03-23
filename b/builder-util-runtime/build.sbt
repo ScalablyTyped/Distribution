@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "builder-util-runtime"
-version := "8.2.0-fa028f"
+version := "8.2.0-3abdfc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,10 +9,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-cc7043",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.7-2ef8e1",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-4b79e1",
-  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-5a56d5",
-  "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-bb687c",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
-  "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-23aff6",
+  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-8c7bf5",
+  "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-b6ed2f",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
+  "org.scalablytyped" %%% "sax" % "1.x-dt-20190322Z-1653e3",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

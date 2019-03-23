@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-jsonrpcclient"
-version := "0.7.0-dt-20180214Z-3660e6"
+version := "0.7.0-dt-20190322Z-3660e6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

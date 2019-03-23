@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-xeditable"
-version := "0.2-dt-20180214Z-30ba1b"
+version := "0.2-dt-20190322Z-30ba1b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

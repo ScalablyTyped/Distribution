@@ -72,8 +72,6 @@
 [info ] ExpandKeyOfTypeParams.scala:40 Expanding 8 members for TsIdentSimple(addEventListener) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(XMLHttpRequest))] 
 [info ] ExpandKeyOfTypeParams.scala:40 Expanding 7 members for TsIdentSimple(addEventListener) [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(XMLHttpRequestUpload))] 
 [error] PhaseRes.scala:79 StackOverflowError [id => tabris, phase => typescript] java.lang.StackOverflowError
-	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:360)
-	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:356)
 	at scala.collection.AbstractTraversable.addString(Traversable.scala:108)
 	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:326)
 	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:325)
@@ -1096,6 +1094,8 @@
 	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
 	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
 	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
+	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:90)
+	at com.olvind.tso.ts.transforms.ExpandCallables$.$anonfun$callableTypes$1(ExpandCallables.scala:81)
 
 [error] PhaseRunner.scala:86 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => typescript] 
 [error] PhaseRunner.scala:86 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => scala.js] 

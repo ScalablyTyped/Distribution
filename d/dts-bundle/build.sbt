@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dts-bundle"
-version := "0.0-unknown-dt-20181114Z-a8cf23"
+version := "0.0-unknown-dt-20190322Z-a8cf23"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

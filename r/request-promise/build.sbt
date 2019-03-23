@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "request-promise"
-version := "4.1-dt-20180712Z-3a84d0"
+version := "4.1-dt-20180712Z-9bd88a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,9 +8,9 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-cc7043",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20190311Z-768261",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-73fac2",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-43680b",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-34b699",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-c78680",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-0cc572")
 publishArtifact in packageDoc := false

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "docopt"
-version := "v0.6.2-dt-20180214Z-10d3fe"
+version := "v0.6.2-dt-20190322Z-10d3fe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-galleria"
-version := "v1.4.2-dt-20180214Z-9408c8"
+version := "v1.4.2-dt-20190322Z-9408c8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

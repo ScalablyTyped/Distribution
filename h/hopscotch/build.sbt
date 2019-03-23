@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hopscotch"
-version := "v0.2.5-dt-20180214Z-3b1dda"
+version := "v0.2.5-dt-20190322Z-3b1dda"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

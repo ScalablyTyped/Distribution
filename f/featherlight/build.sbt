@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "featherlight"
-version := "v1.3.4-dt-20180214Z-a191b4"
+version := "v1.3.4-dt-20190322Z-a191b4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

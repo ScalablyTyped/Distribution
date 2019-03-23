@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "adone"
-version := "0.6-dt-20190311Z-98f702"
+version := "0.6-dt-20190311Z-9fff8c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,10 +9,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "assert" % "1.4-dt-20190212Z-b4c43e",
   "org.scalablytyped" %%% "async" % "2.4-dt-20190212Z-21c6be",
   "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-645745",
-  "org.scalablytyped" %%% "benchmark" % "v1.0.0-dt-20180214Z-ee7e7b",
-  "org.scalablytyped" %%% "buffer" % "5.2.1-672aba",
+  "org.scalablytyped" %%% "benchmark" % "v1.0.0-dt-20190322Z-ee7e7b",
+  "org.scalablytyped" %%% "buffer" % "5.2.1-7e3a15",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-cebc3d",
   "org.scalablytyped" %%% "std" % "3.3-ec2942")
 publishArtifact in packageDoc := false

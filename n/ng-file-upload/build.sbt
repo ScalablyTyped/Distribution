@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ng-file-upload"
-version := "12.2-dt-20180214Z-de961f"
+version := "12.2-dt-20190322Z-de961f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

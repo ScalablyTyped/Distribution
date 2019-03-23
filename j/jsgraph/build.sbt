@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsgraph"
-version := "0.7-dt-20180821Z-ff50dc"
+version := "0.7-dt-20190322Z-ff50dc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

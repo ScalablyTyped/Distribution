@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "inline-css"
-version := "0.0-unknown-dt-20180712Z-8ca601"
+version := "0.0-unknown-dt-20190322Z-8ca601"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lobibox"
-version := "1.0.1-dt-20180214Z-175c6b"
+version := "1.0.1-dt-20190322Z-175c6b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

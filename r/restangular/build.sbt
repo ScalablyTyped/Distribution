@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "restangular"
-version := "v1.5.0-dt-20180430Z-836fdf"
+version := "v1.5.0-dt-20190322Z-836fdf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

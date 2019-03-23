@@ -8,5 +8,6 @@
 //                 Justin Leider <https://github.com/jleider>
 //                 Kamil Gałuszka <https://github.com/galuszkak>
 //                 Stefan Langeder <https://github.com/slangeder>
+//                 Marlos Borges <https://github.com/marlosin>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

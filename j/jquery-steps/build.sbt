@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-steps"
-version := "v1.1.1-dt-20180214Z-52e86e"
+version := "v1.1.1-dt-20190322Z-52e86e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

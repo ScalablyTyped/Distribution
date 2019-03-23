@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap_dot_timepicker"
-version := "0.0-unknown-dt-20180214Z-53646f"
+version := "0.0-unknown-dt-20190322Z-53646f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

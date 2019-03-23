@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object GeneratorNs {
   type Answers = inquirerLib.inquirerMod.inquirerNs.Answers
-  type Questions = Question | js.Array[Question] | rxDashLiteDashAggregatesLib.RxNs.Observable[Question]
+  type Questions = Question | js.Array[Question] | rxjsLib.rxjsMod.Observable[Question]
 }

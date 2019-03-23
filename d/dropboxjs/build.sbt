@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dropboxjs"
-version := "0.0-unknown-dt-20180214Z-035d4c"
+version := "0.0-unknown-dt-20190322Z-035d4c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "resemblejs"
-version := "v1.3.0-dt-20180214Z-28dfef"
+version := "v1.3.0-dt-20190322Z-28dfef"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

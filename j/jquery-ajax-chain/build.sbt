@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-ajax-chain"
-version := "1.0.4-dt-20180214Z-f483b5"
+version := "1.0.4-dt-20190322Z-f483b5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

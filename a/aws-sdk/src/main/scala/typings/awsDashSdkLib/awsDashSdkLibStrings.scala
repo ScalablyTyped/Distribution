@@ -24677,6 +24677,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait `ko-KR`
     extends awsDashSdkLib.clientsPollyMod.PollyNs._LanguageCode
+       with awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs._LanguageCode
   
   @js.native
   sealed trait koi8_r

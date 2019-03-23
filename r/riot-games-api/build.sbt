@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "riot-games-api"
-version := "0.0-unknown-dt-20180214Z-41c0e5"
+version := "0.0-unknown-dt-20190322Z-41c0e5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-media-queries"
-version := "0.6-dt-20180214Z-c0e200"
+version := "0.6-dt-20190322Z-c0e200"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

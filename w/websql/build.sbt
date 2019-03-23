@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "websql"
-version := "0.0-unknown-dt-20180214Z-08641a"
+version := "0.0-unknown-dt-20190322Z-08641a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

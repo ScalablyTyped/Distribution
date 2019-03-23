@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "doublearray"
-version := "0.0-unknown-dt-20180214Z-f7889f"
+version := "0.0-unknown-dt-20190322Z-f7889f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

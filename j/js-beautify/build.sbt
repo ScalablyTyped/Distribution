@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "js-beautify"
-version := "1.8.2-dt-20181116Z-ef317b"
+version := "1.8.2-dt-20190322Z-ef317b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

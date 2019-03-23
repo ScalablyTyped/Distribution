@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_flagstrap"
-version := "v1.0-dt-20180214Z-a17ef2"
+version := "v1.0-dt-20190322Z-a17ef2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

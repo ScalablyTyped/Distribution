@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "json5"
-version := "0.0-unknown-dt-20180813Z-71761f"
+version := "0.0-unknown-dt-20190322Z-71761f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

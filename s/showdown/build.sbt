@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "showdown"
-version := "1.9.0-dt-20190106Z-d747d1"
+version := "1.9.0-dt-20190322Z-d747d1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

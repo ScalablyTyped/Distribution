@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "whatwg-streams"
-version := "0.0-unknown-dt-20181121Z-52eb87"
+version := "0.0-unknown-dt-20190322Z-52eb87"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

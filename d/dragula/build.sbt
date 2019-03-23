@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dragula"
-version := "v2.1.2-dt-20181019Z-e31375"
+version := "v2.1.2-dt-20190322Z-e31375"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

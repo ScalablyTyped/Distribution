@@ -66,6 +66,10 @@ object IoT1ClickProjectsNs extends js.Object {
       * The name of the project to create.
       */
     var projectName: ProjectName
+    /**
+      * Optional tags (metadata key/value pairs) to be associated with the project. For example, { {"key1": "value1", "key2": "value2"} }. For more information, see AWS Tagging Strategies.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait CreateProjectResponse extends js.Object
@@ -230,6 +234,20 @@ object IoT1ClickProjectsNs extends js.Object {
     var projects: ProjectSummaryList
   }
   
+  trait ListTagsForResourceRequest extends js.Object {
+    /**
+      * The ARN of the resource whose tags you want to list.
+      */
+    var resourceArn: ProjectArn
+  }
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    /**
+      * The tags (metadata key/value pairs) which you have assigned to the resource.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
+  }
+  
   trait PlacementAttributeMap
     extends /* key */ org.scalablytyped.runtime.StringDictionary[AttributeValue]
   
@@ -288,6 +306,10 @@ object IoT1ClickProjectsNs extends js.Object {
   
   trait ProjectDescription extends js.Object {
     /**
+      * The ARN of the project.
+      */
+    var arn: js.UndefOr[ProjectArn] = js.undefined
+    /**
       * The date when the project was originally created, in UNIX epoch time format.
       */
     var createdDate: Time
@@ -304,12 +326,20 @@ object IoT1ClickProjectsNs extends js.Object {
       */
     var projectName: ProjectName
     /**
+      * The tags (metadata key/value pairs) associated with the project.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
+    /**
       * The date when the project was last updated, in UNIX epoch time format. If the project was not updated, then createdDate and updatedDate are the same.
       */
     var updatedDate: Time
   }
   
   trait ProjectSummary extends js.Object {
+    /**
+      * The ARN of the project.
+      */
+    var arn: js.UndefOr[ProjectArn] = js.undefined
     /**
       * The date when the project was originally created, in UNIX epoch time format.
       */
@@ -319,10 +349,30 @@ object IoT1ClickProjectsNs extends js.Object {
       */
     var projectName: ProjectName
     /**
+      * The tags (metadata key/value pairs) associated with the project.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
+    /**
       * The date when the project was last updated, in UNIX epoch time format. If the project was not updated, then createdDate and updatedDate are the same.
       */
     var updatedDate: Time
   }
+  
+  trait TagMap
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
+  
+  trait TagResourceRequest extends js.Object {
+    /**
+      * The ARN of the resouce for which tag(s) should be added or modified.
+      */
+    var resourceArn: ProjectArn
+    /**
+      * The new or modifying tag(s) for the resource. See AWS IoT 1-Click Service Limits for the maximum number of tags allowed per resource.
+      */
+    var tags: TagMap
+  }
+  
+  trait TagResourceResponse extends js.Object
   
   @js.native
   trait Types
@@ -583,6 +633,75 @@ object IoT1ClickProjectsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListProjectsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Lists the tags (metadata key/value pairs) which you have assigned to the resource.
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists the tags (metadata key/value pairs) which you have assigned to the resource.
+      */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Creates or modifies tags for a resource. Tags are key/value pairs (metadata) that can be used to manage a resource. For more information, see AWS Tagging Strategies.
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Creates or modifies tags for a resource. Tags are key/value pairs (metadata) that can be used to manage a resource. For more information, see AWS Tagging Strategies.
+      */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes one or more tags (metadata key/value pairs) from a resource.
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes one or more tags (metadata key/value pairs) from a resource.
+      */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Updates a placement with the given attributes. To clear an attribute, pass an empty value (i.e., "").
       */
     def updatePlacement(): awsDashSdkLib.libRequestMod.Request[UpdatePlacementResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -629,6 +748,19 @@ object IoT1ClickProjectsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateProjectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
+  
+  trait UntagResourceRequest extends js.Object {
+    /**
+      * The ARN of the resource whose tag you want to remove.
+      */
+    var resourceArn: ProjectArn
+    /**
+      * The keys of those tags which you want to remove.
+      */
+    var tagKeys: TagKeyList
+  }
+  
+  trait UntagResourceResponse extends js.Object
   
   trait UpdatePlacementRequest extends js.Object {
     /**
@@ -681,8 +813,12 @@ object IoT1ClickProjectsNs extends js.Object {
   type NextToken = java.lang.String
   type PlacementName = java.lang.String
   type PlacementSummaryList = js.Array[PlacementSummary]
+  type ProjectArn = java.lang.String
   type ProjectName = java.lang.String
   type ProjectSummaryList = js.Array[ProjectSummary]
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagValue = java.lang.String
   type Time = stdLib.Date
   type apiVersion = _apiVersion | java.lang.String
 }

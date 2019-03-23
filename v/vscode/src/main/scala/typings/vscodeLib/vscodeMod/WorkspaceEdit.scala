@@ -22,7 +22,7 @@ class WorkspaceEdit () extends js.Object {
   /**
   		 * Get all text edits grouped by resource.
   		 *
-  		 * @return An array of `[Uri, TextEdit[]]`-tuples.
+  		 * @return A shallow copy of `[Uri, TextEdit[]]`-tuples.
   		 */
   def entries(): js.Array[js.Tuple2[Uri, js.Array[TextEdit]]] = js.native
   /**

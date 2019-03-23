@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bgiframe"
-version := "1.0-dt-20180214Z-ca2bbe"
+version := "1.0-dt-20190322Z-ca2bbe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

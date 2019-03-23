@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "confit"
-version := "2.x-dt-20180214Z-c95ea1"
+version := "2.x-dt-20190322Z-c95ea1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

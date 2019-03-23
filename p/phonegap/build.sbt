@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "phonegap"
-version := "2.3-dt-20181116Z-6fe53b"
+version := "2.3-dt-20190322Z-6fe53b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

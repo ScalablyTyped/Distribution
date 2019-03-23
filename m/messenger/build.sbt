@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "messenger"
-version := "1.4.0-dt-20180214Z-ebc2ed"
+version := "1.4.0-dt-20190322Z-ebc2ed"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rx-core"
-version := "4.0-dt-20180214Z-d2f95e"
+version := "4.0-dt-20190322Z-d2f95e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

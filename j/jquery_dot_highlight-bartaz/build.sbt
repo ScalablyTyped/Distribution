@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_highlight-bartaz"
-version := "0.0-unknown-dt-20180214Z-223679"
+version := "0.0-unknown-dt-20190322Z-223679"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

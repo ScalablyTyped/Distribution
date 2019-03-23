@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "oblo-util"
-version := "v0.6.4-dt-20180214Z-5155f5"
+version := "v0.6.4-dt-20190322Z-5155f5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

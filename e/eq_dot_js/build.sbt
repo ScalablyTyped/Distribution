@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "eq_dot_js"
-version := "0.0-unknown-dt-20180214Z-9a8692"
+version := "0.0-unknown-dt-20190322Z-9a8692"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

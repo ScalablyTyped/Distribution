@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jdataview"
-version := "0.0-unknown-dt-20180214Z-5065fe"
+version := "0.0-unknown-dt-20190322Z-5065fe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

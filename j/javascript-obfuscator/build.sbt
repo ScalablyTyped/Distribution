@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "javascript-obfuscator"
-version := "0.0-unknown-dt-20180214Z-ac03da"
+version := "0.0-unknown-dt-20190322Z-ac03da"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

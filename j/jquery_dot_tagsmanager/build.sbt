@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_tagsmanager"
-version := "0.0-unknown-dt-20180214Z-28a179"
+version := "0.0-unknown-dt-20190322Z-28a179"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

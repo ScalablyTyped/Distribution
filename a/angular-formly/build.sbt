@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-formly"
-version := "7.2.4-dt-20190312Z-54c71f"
+version := "7.2.4-dt-20190322Z-54c71f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

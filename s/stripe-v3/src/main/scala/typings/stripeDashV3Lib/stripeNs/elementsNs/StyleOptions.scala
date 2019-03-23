@@ -12,6 +12,7 @@ trait StyleOptions extends js.Object {
   var fontSmoothing: js.UndefOr[java.lang.String] = js.undefined
   var fontStyle: js.UndefOr[java.lang.String] = js.undefined
   var fontVariant: js.UndefOr[java.lang.String] = js.undefined
+  var fontWeight: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var iconColor: js.UndefOr[java.lang.String] = js.undefined
   var letterSpacing: js.UndefOr[java.lang.String] = js.undefined
   var lineHeight: js.UndefOr[java.lang.String] = js.undefined
@@ -30,6 +31,7 @@ object StyleOptions {
     fontSmoothing: java.lang.String = null,
     fontStyle: java.lang.String = null,
     fontVariant: java.lang.String = null,
+    fontWeight: java.lang.String | scala.Double = null,
     iconColor: java.lang.String = null,
     letterSpacing: java.lang.String = null,
     lineHeight: java.lang.String = null,
@@ -45,6 +47,7 @@ object StyleOptions {
     if (fontSmoothing != null) __obj.updateDynamic("fontSmoothing")(fontSmoothing)
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
     if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
     if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing)
     if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zepto"
-version := "1.0-dt-20180831Z-e3c71d"
+version := "1.0-dt-20190322Z-e3c71d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

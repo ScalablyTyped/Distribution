@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "auth0_dot_widget"
-version := "0.0-unknown-dt-20180214Z-33f6d7"
+version := "0.0-unknown-dt-20190322Z-33f6d7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

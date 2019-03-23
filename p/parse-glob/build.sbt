@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parse-glob"
-version := "3.0.4-dt-20180214Z-9b4df3"
+version := "3.0.4-dt-20190322Z-9b4df3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

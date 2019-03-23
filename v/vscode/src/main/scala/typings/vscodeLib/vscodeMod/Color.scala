@@ -13,7 +13,7 @@ class Color protected () extends js.Object {
   		 *
   		 * @param red The red component.
   		 * @param green The green component.
-  		 * @param blue The bluew component.
+  		 * @param blue The blue component.
   		 * @param alpha The alpha component.
   		 */
   def this(red: scala.Double, green: scala.Double, blue: scala.Double, alpha: scala.Double) = this()

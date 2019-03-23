@@ -26,7 +26,9 @@ object cipherNs extends js.Object {
   
   trait StartOptions extends js.Object {
     var additionalData: js.UndefOr[java.lang.String] = js.undefined
-    var iv: js.UndefOr[nodeDashForgeLib.nodeDashForgeMod.Bytes] = js.undefined
+    var iv: js.UndefOr[
+        nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer | js.Array[nodeDashForgeLib.nodeDashForgeMod.Byte] | nodeDashForgeLib.nodeDashForgeMod.Bytes
+      ] = js.undefined
     var tag: js.UndefOr[nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteStringBuffer] = js.undefined
     var tagLength: js.UndefOr[scala.Double] = js.undefined
   }

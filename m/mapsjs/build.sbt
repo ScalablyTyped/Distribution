@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mapsjs"
-version := "9.6.0-dt-20180214Z-5c58ed"
+version := "9.6.0-dt-20190322Z-5c58ed"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

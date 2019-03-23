@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-odata-resources"
-version := "0.0-unknown-dt-20181124Z-8a92ba"
+version := "0.0-unknown-dt-20190322Z-8a92ba"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

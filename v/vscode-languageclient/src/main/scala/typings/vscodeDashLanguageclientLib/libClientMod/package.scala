@@ -30,11 +30,7 @@ package object libClientMod {
     /* range */ vscodeLib.vscodeMod.Range, 
     /* context */ vscodeLib.vscodeMod.CodeActionContext, 
     /* token */ vscodeLib.vscodeMod.CancellationToken, 
-    vscodeLib.vscodeMod.ProviderResult[
-      js.Array[
-        vscodeLib.vscodeMod.Command | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VCodeAction */ js.Any)
-      ]
-    ]
+    vscodeLib.vscodeMod.ProviderResult[js.Array[vscodeLib.vscodeMod.Command | vscodeLib.vscodeMod.CodeAction]]
   ]
   type ProvideCodeLensesSignature = js.Function2[
     /* document */ vscodeLib.vscodeMod.TextDocument, 

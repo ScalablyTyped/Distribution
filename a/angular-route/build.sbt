@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-route"
-version := "1.7-dt-20180727Z-a05bc9"
+version := "1.7-dt-20190322Z-a05bc9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

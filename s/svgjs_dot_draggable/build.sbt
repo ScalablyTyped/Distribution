@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "svgjs_dot_draggable"
-version := "0.0-unknown-dt-20180214Z-05499e"
+version := "0.0-unknown-dt-20190322Z-05499e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

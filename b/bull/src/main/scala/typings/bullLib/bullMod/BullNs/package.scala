@@ -18,6 +18,8 @@ package object BullNs {
   type EventCallback = js.Function0[scala.Unit]
   type FailedEventCallback[T] = js.Function2[/* job */ Job[T], /* error */ stdLib.Error, scala.Unit]
   type JobId = scala.Double | java.lang.String
+  type ProcessCallbackFunction[T] = js.Function2[/* job */ Job[T], /* done */ DoneCallback, scala.Unit]
+  type ProcessPromiseFunction[T] = js.Function1[/* job */ Job[T], js.Promise[scala.Unit]]
   type ProgressEventCallback[T] = js.Function2[/* job */ Job[T], /* progress */ js.Any, scala.Unit]
   type RemovedEventCallback[T] = js.Function1[/* job */ Job[T], scala.Unit]
   type StalledEventCallback[T] = js.Function1[/* job */ Job[T], scala.Unit]

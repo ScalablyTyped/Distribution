@@ -1,26 +1,26 @@
 organization := "org.scalablytyped"
 name := "pulumi__pulumi"
-version := "0.17.2-e08950"
+version := "0.17.2-409760"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "arrify" % "1.0-dt-20180509Z-56c0cd",
-  "org.scalablytyped" %%% "buffer-from" % "1.1-dt-20180616Z-258214",
-  "org.scalablytyped" %%% "diff" % "4.0-dt-20190129Z-6c91bf",
+  "org.scalablytyped" %%% "buffer-from" % "1.1-dt-20180616Z-277cac",
+  "org.scalablytyped" %%% "diff" % "4.0-dt-20190322Z-61146a",
   "org.scalablytyped" %%% "google-protobuf" % "3.2-dt-20180214Z-7cbf62",
-  "org.scalablytyped" %%% "grpc" % "1.19.0-822d98",
+  "org.scalablytyped" %%% "grpc" % "1.19.0-6bbd1d",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
   "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20190214Z-e15c6b",
   "org.scalablytyped" %%% "lodash_dot_clone" % "4.5-dt-20190214Z-4fd6b5",
-  "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-b30bce",
+  "org.scalablytyped" %%% "long" % "4.0.0-dt-20190322Z-b30bce",
   "org.scalablytyped" %%% "make-error" % "1.3.5-438a4b",
-  "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180214Z-b5ce4c",
-  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-b73b7a",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190320Z-26b6b7",
+  "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-b5ce4c",
+  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-359637",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
   "org.scalablytyped" %%% "normalize-package-data" % "2.4-dt-20180214Z-d709de",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-88ab7e",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-6de75f",
   "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-6d28c3",
   "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-46201f",
   "org.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-63857b",
@@ -33,9 +33,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-1df087",
   "org.scalablytyped" %%% "read-package-tree" % "5.2-dt-20180512Z-f03b75",
   "org.scalablytyped" %%% "require-from-string" % "1.2-dt-20180214Z-6fbfdf",
-  "org.scalablytyped" %%% "source-map-support" % "0.5-dt-20190224Z-2d4447",
+  "org.scalablytyped" %%% "source-map-support" % "0.5-dt-20190224Z-c3e797",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "ts-node" % "7.0.1-493973",
+  "org.scalablytyped" %%% "ts-node" % "7.0.1-b995f0",
   "org.scalablytyped" %%% "typescript" % "3.3.4000-09c87f",
   "org.scalablytyped" %%% "upath" % "1.1.2-339e4c",
   "org.scalablytyped" %%% "yn" % "3.0-dt-20190117Z-1e9b47")

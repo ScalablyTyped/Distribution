@@ -28,8 +28,8 @@ trait SvgCommonProps extends js.Object {
   var stroke: js.UndefOr[java.lang.String] = js.undefined
   var strokeDasharray: js.UndefOr[js.Array[_]] = js.undefined
   var strokeDashoffset: js.UndefOr[js.Any] = js.undefined
-  var strokeLineJoin: js.UndefOr[java.lang.String] = js.undefined
   var strokeLinecap: js.UndefOr[java.lang.String] = js.undefined
+  var strokeLinejoin: js.UndefOr[java.lang.String] = js.undefined
   var strokeOpacity: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var strokeWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var transform: js.UndefOr[java.lang.String | js.Object] = js.undefined
@@ -62,8 +62,8 @@ object SvgCommonProps {
     stroke: java.lang.String = null,
     strokeDasharray: js.Array[_] = null,
     strokeDashoffset: js.Any = null,
-    strokeLineJoin: java.lang.String = null,
     strokeLinecap: java.lang.String = null,
+    strokeLinejoin: java.lang.String = null,
     strokeOpacity: scala.Double | java.lang.String = null,
     strokeWidth: scala.Double | java.lang.String = null,
     transform: java.lang.String | js.Object = null,
@@ -93,8 +93,8 @@ object SvgCommonProps {
     if (stroke != null) __obj.updateDynamic("stroke")(stroke)
     if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray)
     if (strokeDashoffset != null) __obj.updateDynamic("strokeDashoffset")(strokeDashoffset)
-    if (strokeLineJoin != null) __obj.updateDynamic("strokeLineJoin")(strokeLineJoin)
     if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap)
+    if (strokeLinejoin != null) __obj.updateDynamic("strokeLinejoin")(strokeLinejoin)
     if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])

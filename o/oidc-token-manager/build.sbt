@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "oidc-token-manager"
-version := "0.0-unknown-dt-20180214Z-62519e"
+version := "0.0-unknown-dt-20190322Z-62519e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,7 +10,7 @@ trait TextEditor extends js.Object {
   /**
   		 * The document associated with this text editor. The document will be the same for the entire lifetime of this text editor.
   		 */
-  var document: TextDocument = js.native
+  val document: TextDocument = js.native
   /**
   		 * Text editor options.
   		 */
@@ -28,6 +28,11 @@ trait TextEditor extends js.Object {
   		 * isn't one of the three main editors, e.g an embedded editor.
   		 */
   var viewColumn: js.UndefOr[ViewColumn] = js.native
+  /**
+  		 * The current visible ranges in the editor (vertically).
+  		 * This accounts only for vertical scrolling, and not for horizontal scrolling.
+  		 */
+  val visibleRanges: js.Array[Range] = js.native
   /**
   		 * Perform an edit on the document associated with this text editor.
   		 *
@@ -53,7 +58,7 @@ trait TextEditor extends js.Object {
   def hide(): scala.Unit = js.native
   /**
   		 * Insert a [snippet](#SnippetString) and put the editor into snippet mode. "Snippet mode"
-  		 * means the editor adds placeholders and additionals cursors so that the user can complete
+  		 * means the editor adds placeholders and additional cursors so that the user can complete
   		 * or accept the snippet.
   		 *
   		 * @param snippet The snippet to insert in this edit.

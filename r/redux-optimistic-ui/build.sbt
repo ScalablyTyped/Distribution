@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-optimistic-ui"
-version := "0.4.0-dt-20180214Z-8b7daa"
+version := "0.4.0-dt-20190322Z-8b7daa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "umbraco"
-version := "v7.2.8-dt-20180214Z-ac9bcd"
+version := "v7.2.8-dt-20190322Z-ac9bcd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

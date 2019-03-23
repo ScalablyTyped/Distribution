@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "atpl"
-version := "0.0-unknown-dt-20180214Z-7e0d3e"
+version := "0.0-unknown-dt-20190322Z-7e0d3e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

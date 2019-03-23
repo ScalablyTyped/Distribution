@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gregorian-calendar"
-version := "v4.1.4-dt-20180214Z-6c5019"
+version := "v4.1.4-dt-20190322Z-6c5019"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

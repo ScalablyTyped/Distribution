@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_autosize"
-version := "3.0.7-dt-20180214Z-4aaf17"
+version := "3.0.7-dt-20190322Z-4aaf17"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

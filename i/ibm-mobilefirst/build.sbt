@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ibm-mobilefirst"
-version := "0.0-unknown-dt-20180214Z-ea4a96"
+version := "0.0-unknown-dt-20190322Z-ea4a96"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

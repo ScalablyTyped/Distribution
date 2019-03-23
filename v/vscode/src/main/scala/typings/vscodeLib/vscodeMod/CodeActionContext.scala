@@ -10,13 +10,19 @@ trait CodeActionContext extends js.Object {
   		 * An array of diagnostics.
   		 */
   val diagnostics: js.Array[Diagnostic]
+  /**
+  		 * Requested kind of actions to return.
+  		 *
+  		 * Actions not of this kind are filtered out before being shown by the lightbulb.
+  		 */
+  val only: js.UndefOr[CodeActionKind] = js.undefined
 }
 
 object CodeActionContext {
   @scala.inline
-  def apply(diagnostics: js.Array[Diagnostic]): CodeActionContext = {
+  def apply(diagnostics: js.Array[Diagnostic], only: CodeActionKind = null): CodeActionContext = {
     val __obj = js.Dynamic.literal(diagnostics = diagnostics)
-  
+    if (only != null) __obj.updateDynamic("only")(only)
     __obj.asInstanceOf[CodeActionContext]
   }
 }

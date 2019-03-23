@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "photonui"
-version := "v1.0.0-dt-20180214Z-cde62d"
+version := "v1.0.0-dt-20190322Z-cde62d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

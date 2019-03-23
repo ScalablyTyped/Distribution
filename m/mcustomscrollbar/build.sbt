@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mcustomscrollbar"
-version := "2.8.2-dt-20180214Z-dc9192"
+version := "2.8.2-dt-20190322Z-dc9192"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "crossfilter"
-version := "0.0-unknown-dt-20180829Z-85725b"
+version := "0.0-unknown-dt-20190322Z-85725b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -310,7 +310,13 @@ object nodeLibStrings {
   sealed trait ProfilerDOTtakeTypeProfile extends js.Object
   
   @js.native
+  sealed trait RuntimeDOTaddBinding extends js.Object
+  
+  @js.native
   sealed trait RuntimeDOTawaitPromise extends js.Object
+  
+  @js.native
+  sealed trait RuntimeDOTbindingCalled extends js.Object
   
   @js.native
   sealed trait RuntimeDOTcallFunctionOn extends js.Object
@@ -373,13 +379,22 @@ object nodeLibStrings {
   sealed trait RuntimeDOTreleaseObjectGroup extends js.Object
   
   @js.native
+  sealed trait RuntimeDOTremoveBinding extends js.Object
+  
+  @js.native
   sealed trait RuntimeDOTrunIfWaitingForDebugger extends js.Object
   
   @js.native
   sealed trait RuntimeDOTrunScript extends js.Object
   
   @js.native
+  sealed trait RuntimeDOTsetAsyncCallStackDepth extends js.Object
+  
+  @js.native
   sealed trait RuntimeDOTsetCustomObjectFormatterEnabled extends js.Object
+  
+  @js.native
+  sealed trait RuntimeDOTsetMaxCallStackSizeToCapture extends js.Object
   
   @js.native
   sealed trait RuntimeDOTterminateExecution extends js.Object
@@ -1157,7 +1172,11 @@ object nodeLibStrings {
   @scala.inline
   def ProfilerDOTtakeTypeProfile: ProfilerDOTtakeTypeProfile = "Profiler.takeTypeProfile".asInstanceOf[ProfilerDOTtakeTypeProfile]
   @scala.inline
+  def RuntimeDOTaddBinding: RuntimeDOTaddBinding = "Runtime.addBinding".asInstanceOf[RuntimeDOTaddBinding]
+  @scala.inline
   def RuntimeDOTawaitPromise: RuntimeDOTawaitPromise = "Runtime.awaitPromise".asInstanceOf[RuntimeDOTawaitPromise]
+  @scala.inline
+  def RuntimeDOTbindingCalled: RuntimeDOTbindingCalled = "Runtime.bindingCalled".asInstanceOf[RuntimeDOTbindingCalled]
   @scala.inline
   def RuntimeDOTcallFunctionOn: RuntimeDOTcallFunctionOn = "Runtime.callFunctionOn".asInstanceOf[RuntimeDOTcallFunctionOn]
   @scala.inline
@@ -1199,11 +1218,17 @@ object nodeLibStrings {
   @scala.inline
   def RuntimeDOTreleaseObjectGroup: RuntimeDOTreleaseObjectGroup = "Runtime.releaseObjectGroup".asInstanceOf[RuntimeDOTreleaseObjectGroup]
   @scala.inline
+  def RuntimeDOTremoveBinding: RuntimeDOTremoveBinding = "Runtime.removeBinding".asInstanceOf[RuntimeDOTremoveBinding]
+  @scala.inline
   def RuntimeDOTrunIfWaitingForDebugger: RuntimeDOTrunIfWaitingForDebugger = "Runtime.runIfWaitingForDebugger".asInstanceOf[RuntimeDOTrunIfWaitingForDebugger]
   @scala.inline
   def RuntimeDOTrunScript: RuntimeDOTrunScript = "Runtime.runScript".asInstanceOf[RuntimeDOTrunScript]
   @scala.inline
+  def RuntimeDOTsetAsyncCallStackDepth: RuntimeDOTsetAsyncCallStackDepth = "Runtime.setAsyncCallStackDepth".asInstanceOf[RuntimeDOTsetAsyncCallStackDepth]
+  @scala.inline
   def RuntimeDOTsetCustomObjectFormatterEnabled: RuntimeDOTsetCustomObjectFormatterEnabled = "Runtime.setCustomObjectFormatterEnabled".asInstanceOf[RuntimeDOTsetCustomObjectFormatterEnabled]
+  @scala.inline
+  def RuntimeDOTsetMaxCallStackSizeToCapture: RuntimeDOTsetMaxCallStackSizeToCapture = "Runtime.setMaxCallStackSizeToCapture".asInstanceOf[RuntimeDOTsetMaxCallStackSizeToCapture]
   @scala.inline
   def RuntimeDOTterminateExecution: RuntimeDOTterminateExecution = "Runtime.terminateExecution".asInstanceOf[RuntimeDOTterminateExecution]
   @scala.inline

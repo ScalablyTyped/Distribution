@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_contextmenu"
-version := "1.7.0-dt-20181119Z-9e3169"
+version := "1.7.0-dt-20190322Z-9e3169"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

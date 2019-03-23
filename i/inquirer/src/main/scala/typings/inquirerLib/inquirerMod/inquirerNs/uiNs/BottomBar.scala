@@ -10,9 +10,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait BottomBar
-  extends BaseUI[BottomBarOption]
+  extends BaseUI
      with org.scalablytyped.runtime.Instantiable0[BottomBar] {
   var log: throughLib.throughMod.throughNs.ThroughStream = js.native
+  def clean(): BottomBar = js.native
   /**
     * Make sure line end on a line feed
     * @param str Input string
@@ -36,9 +37,10 @@ trait BottomBar
     */
   def write(message: java.lang.String): scala.Unit = js.native
   /**
-    * Rerender the prompt
+    * Write out log data
+    * @param {String} data - The log data to be output
     * @return self
     */
-  def writeLog(data: js.Any): BottomBar = js.native
+  def writeLog(data: java.lang.String): BottomBar = js.native
 }
 

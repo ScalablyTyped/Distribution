@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "notify"
-version := "0.0-unknown-dt-20180214Z-6b587f"
+version := "0.0-unknown-dt-20190322Z-6b587f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

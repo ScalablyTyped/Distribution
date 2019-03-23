@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "custom-error-generator"
-version := "7.0.0-dt-20180214Z-ab115d"
+version := "7.0.0-dt-20190322Z-ab115d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "velocity-animate"
-version := "1.2.2-dt-20180807Z-c79784"
+version := "1.2.2-dt-20190322Z-c79784"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-localforage"
-version := "1.2.2-dt-20180214Z-e4396c"
+version := "1.2.2-dt-20190322Z-e4396c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

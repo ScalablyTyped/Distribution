@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-brute-memcached"
-version := "0.0-unknown-dt-20180214Z-6f3be8"
+version := "0.0-unknown-dt-20190322Z-6f3be8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

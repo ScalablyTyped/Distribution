@@ -14,6 +14,7 @@
 //                 Dan Manastireanu <https://github.com/danmana>
 //                 Kjell-Morten Bratsberg Thorsen <https://github.com/kjellmorten>
 //                 Christian D. <https://github.com/pc-jedi>
+//                 Silas Rech <https://github.com/lenovouser>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

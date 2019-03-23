@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-ui-router"
-version := "1.1.38-dt-20190227Z-d7c115"
+version := "1.1.38-dt-20190322Z-d7c115"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

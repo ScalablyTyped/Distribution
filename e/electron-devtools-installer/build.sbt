@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "electron-devtools-installer"
-version := "v2.2.4-dt-20180723Z-fa747f"
+version := "v2.2.4-dt-20190322Z-fa747f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
