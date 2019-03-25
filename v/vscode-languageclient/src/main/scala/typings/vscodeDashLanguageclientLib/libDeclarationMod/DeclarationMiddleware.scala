@@ -13,9 +13,7 @@ trait DeclarationMiddleware extends js.Object {
       /* position */ vscodeLib.vscodeMod.Position, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideDeclarationSignature, 
-      vscodeLib.vscodeMod.ProviderResult[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDeclaration */ _
-      ]
+      vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Declaration]
     ]
   ] = js.undefined
 }
@@ -29,9 +27,7 @@ object DeclarationMiddleware {
       /* position */ vscodeLib.vscodeMod.Position, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideDeclarationSignature, 
-      vscodeLib.vscodeMod.ProviderResult[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDeclaration */ _
-      ]
+      vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Declaration]
     ] = null
   ): DeclarationMiddleware = {
     val __obj = js.Dynamic.literal()

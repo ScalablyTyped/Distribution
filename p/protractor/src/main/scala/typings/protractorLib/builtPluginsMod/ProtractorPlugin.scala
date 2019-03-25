@@ -96,20 +96,20 @@ trait ProtractorPlugin extends js.Object {
     * @throws {*} If this function throws an error, a failed assertion is added to
     *     the test results.
     *
-    * @return {webdriver.promise.Promise=} Can return a promise, in which case
+    * @return {Promise=} Can return a promise, in which case
     *     protractor will wait for the promise to resolve before continuing.  If
     *     the promise is rejected, a failed assertion is added to the test results.
     */
   var onPageLoad: js.UndefOr[
     js.Function1[
       /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser, 
-      scala.Unit | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]
+      scala.Unit | js.Promise[scala.Unit]
     ]
   ] = js.undefined
   /**
     * This is called inside browser.get() directly after angular is done
-    * bootstrapping/synchronizing.  If `browser.ignoreSynchronization` is `true`,
-    * this will not be called.
+    * bootstrapping/synchronizing.  If `await browser.waitForAngularEnabled()`
+    * is `false`, this will not be called.
     *
     * @param {ProtractorBrowser} browser The browser instance which is loading a page.
     *
@@ -118,14 +118,14 @@ trait ProtractorPlugin extends js.Object {
     * @throws {*} If this function throws an error, a failed assertion is added to
     *     the test results.
     *
-    * @return {webdriver.promise.Promise=} Can return a promise, in which case
+    * @return {Promise=} Can return a promise, in which case
     *     protractor will wait for the promise to resolve before continuing.  If
     *     the promise is rejected, a failed assertion is added to the test results.
     */
   var onPageStable: js.UndefOr[
     js.Function1[
       /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser, 
-      scala.Unit | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]
+      scala.Unit | js.Promise[scala.Unit]
     ]
   ] = js.undefined
   /**
@@ -241,7 +241,7 @@ trait ProtractorPlugin extends js.Object {
     * @throws {*} If this function throws an error, a failed assertion is added to
     *     the test results.
     *
-    * @return {webdriver.promise.Promise<boolean>|boolean} If truthy, Protractor
+    * @return {Promise<boolean>|boolean} If truthy, Protractor
     *     will continue onto the next command. If falsy, webdriver will
     *     continuously re-run this function until it is truthy.  If a rejected promise
     *     is returned, a failed assertion is added to the test results, and Protractor
@@ -250,7 +250,7 @@ trait ProtractorPlugin extends js.Object {
   var waitForCondition: js.UndefOr[
     js.Function1[
       /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser, 
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] | scala.Boolean
+      js.Promise[scala.Boolean] | scala.Boolean
     ]
   ] = js.undefined
   /**
@@ -266,7 +266,7 @@ trait ProtractorPlugin extends js.Object {
     * @throws {*} If this function throws an error, a failed assertion is added to
     *     the test results.
     *
-    * @return {webdriver.promise.Promise=} Can return a promise, in which case
+    * @return {Promise=} Can return a promise, in which case
     *     protractor will wait for the promise to resolve before continuing. If the
     *     promise is rejected, a failed assertion is added to the test results, and
     *     protractor will continue onto the next command. If nothing is returned or
@@ -276,7 +276,7 @@ trait ProtractorPlugin extends js.Object {
   var waitForPromise: js.UndefOr[
     js.Function1[
       /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser, 
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]
+      js.Promise[scala.Unit]
     ]
   ] = js.undefined
 }
@@ -289,16 +289,16 @@ object ProtractorPlugin {
     addWarning: (/* message */ js.UndefOr[java.lang.String], /* info */ js.UndefOr[protractorLib.Anon_SpecNameString]) => scala.Unit = null,
     config: PluginConfig = null,
     name: java.lang.String = null,
-    onPageLoad: /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser => scala.Unit | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = null,
-    onPageStable: /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser => scala.Unit | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = null,
+    onPageLoad: /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser => scala.Unit | js.Promise[scala.Unit] = null,
+    onPageStable: /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser => scala.Unit | js.Promise[scala.Unit] = null,
     onPrepare: () => scala.Unit | js.Promise[scala.Unit] = null,
     postResults: () => scala.Unit | js.Promise[scala.Unit] = null,
     postTest: (/* passed */ scala.Boolean, /* testInfo */ js.Any) => scala.Unit | js.Promise[scala.Unit] = null,
     setup: () => scala.Unit | js.Promise[scala.Unit] = null,
     skipAngularStability: js.UndefOr[scala.Boolean] = js.undefined,
     teardown: () => scala.Unit | js.Promise[scala.Unit] = null,
-    waitForCondition: /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] | scala.Boolean = null,
-    waitForPromise: /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = null
+    waitForCondition: /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser => js.Promise[scala.Boolean] | scala.Boolean = null,
+    waitForPromise: /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser => js.Promise[scala.Unit] = null
   ): ProtractorPlugin = {
     val __obj = js.Dynamic.literal()
     if (addFailure != null) __obj.updateDynamic("addFailure")(js.Any.fromFunction2(addFailure))

@@ -47,6 +47,8 @@ trait ProductVariant
     * Custom properties that a shop owner can use to define product variants. Multiple options can exist. Options are represented as: option1, option2, option3 etc.
     */
   var option1: java.lang.String
+  var option2: java.lang.String | scala.Null
+  var option3: java.lang.String | scala.Null
   /**
     * The order of the product variant in the list of product variants. 1 is the first position. To reorder variants, update the product with the variants in the desired order. The position attribute on the variant will be ignored.
     */
@@ -113,12 +115,16 @@ object ProductVariant {
     weight_unit: java.lang.String,
     admin_graphql_api_id: java.lang.String = null,
     compare_at_price: js.Any = null,
-    id: scala.Int | scala.Double = null
+    id: scala.Int | scala.Double = null,
+    option2: java.lang.String = null,
+    option3: java.lang.String = null
   ): ProductVariant = {
     val __obj = js.Dynamic.literal(barcode = barcode, created_at = created_at, fulfillment_service = fulfillment_service, grams = grams, inventory_item_id = inventory_item_id, inventory_management = inventory_management, inventory_policy = inventory_policy, inventory_quantity = inventory_quantity, option1 = option1, position = position, price = price, product_id = product_id, requires_shipping = requires_shipping, sku = sku, taxable = taxable, title = title, updated_at = updated_at, weight = weight, weight_unit = weight_unit)
     if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
     if (compare_at_price != null) __obj.updateDynamic("compare_at_price")(compare_at_price)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (option2 != null) __obj.updateDynamic("option2")(option2)
+    if (option3 != null) __obj.updateDynamic("option3")(option3)
     __obj.asInstanceOf[ProductVariant]
   }
 }

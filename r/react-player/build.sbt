@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-player"
-version := "1.9.3-ea0745"
+version := "1.10.0-f761c5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

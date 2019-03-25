@@ -15,7 +15,7 @@ trait Anon_Brackets extends js.Object {
   /**
   			 * This property is deprecated and not fully supported anymore by
   			 * the editor (scope and lineStart are ignored).
-  			 * Use the the autoClosingPairs property in the language configuration file instead.
+  			 * Use the autoClosingPairs property in the language configuration file instead.
   			 * @deprecated
   			 */
   var docComment: js.UndefOr[Anon_Close] = js.undefined

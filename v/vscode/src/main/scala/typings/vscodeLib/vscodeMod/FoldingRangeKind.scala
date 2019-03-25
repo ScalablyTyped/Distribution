@@ -26,7 +26,7 @@ object FoldingRangeKind extends js.Object {
     extends vscodeLib.vscodeMod.FoldingRangeKind
   
   /**
-  		 * Kind for folding range representing regions (for example a folding range marked by `#region` and `#endregion`).
+  		 * Kind for folding range representing regions originating from folding markers like `#region` and `#endregion`.
   		 */
   @js.native
   sealed trait Region

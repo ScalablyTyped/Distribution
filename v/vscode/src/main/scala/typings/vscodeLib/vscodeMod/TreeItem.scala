@@ -25,7 +25,7 @@ class TreeItem protected () extends js.Object {
   		 */
   var collapsibleState: js.UndefOr[TreeItemCollapsibleState] = js.native
   /**
-  		 * The [command](#Command) which should be run when the tree item is selected.
+  		 * The [command](#Command) that should be executed when the tree item is selected.
   		 */
   var command: js.UndefOr[Command] = js.native
   /**
@@ -47,6 +47,11 @@ class TreeItem protected () extends js.Object {
   		 * This will show action `extension.deleteFolder` only for items with `contextValue` is `folder`.
   		 */
   var contextValue: js.UndefOr[java.lang.String] = js.native
+  /**
+  		 * A human readable string which is rendered less prominent.
+  		 * When `true`, it is derived from [resourceUri](#TreeItem.resourceUri) and when `falsy`, it is not shown.
+  		 */
+  var description: js.UndefOr[java.lang.String | scala.Boolean] = js.native
   /**
   		 * The icon path or [ThemeIcon](#ThemeIcon) for the tree item.
   		 * When `falsy`, [Folder Theme Icon](#ThemeIcon.Folder) is assigned, if item is collapsible otherwise [File Theme Icon](#ThemeIcon.File).

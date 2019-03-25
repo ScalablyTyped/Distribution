@@ -19,6 +19,12 @@ object eggLibStrings {
   sealed trait SAMEORIGIN extends js.Object
   
   @js.native
+  sealed trait app extends js.Object
+  
+  @js.native
+  sealed trait ctx extends js.Object
+  
+  @js.native
   sealed trait local
     extends eggLib.eggMod._EggEnvType
   
@@ -38,6 +44,10 @@ object eggLibStrings {
   def PowerPartial: PowerPartial = "PowerPartial".asInstanceOf[PowerPartial]
   @scala.inline
   def SAMEORIGIN: SAMEORIGIN = "SAMEORIGIN".asInstanceOf[SAMEORIGIN]
+  @scala.inline
+  def app: app = "app".asInstanceOf[app]
+  @scala.inline
+  def ctx: ctx = "ctx".asInstanceOf[ctx]
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   @scala.inline

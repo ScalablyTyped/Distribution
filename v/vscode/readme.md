@@ -1,5 +1,5 @@
 ```
-// Type definitions for Visual Studio Code 1.24
+// Type definitions for Visual Studio Code 1.32
 // Project: https://github.com/microsoft/vscode
 // Definitions by: Visual Studio Code Team, Microsoft <https://github.com/Microsoft>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -10,7 +10,7 @@
  *--------------------------------------------------------------------------------------------*/
 
 /**
- * Type Definition for Visual Studio Code 1.24 Extension API
+ * Type Definition for Visual Studio Code 1.32 Extension API
  * See https://code.visualstudio.com/api for more information
  */
 

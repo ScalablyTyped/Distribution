@@ -12,7 +12,7 @@ object tasksNs extends js.Object {
   val onDidEndTaskProcess: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TaskProcessEndEvent] = js.native
   val onDidStartTask: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TaskStartEvent] = js.native
   val onDidStartTaskProcess: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TaskProcessStartEvent] = js.native
-  var taskExecutions: js.Array[vscodeLib.vscodeMod.TaskExecution] = js.native
+  val taskExecutions: js.Array[vscodeLib.vscodeMod.TaskExecution] = js.native
   def executeTask(task: vscodeLib.vscodeMod.Task): vscodeLib.Thenable[vscodeLib.vscodeMod.TaskExecution] = js.native
   def fetchTasks(): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Task]] = js.native
   def fetchTasks(filter: vscodeLib.vscodeMod.TaskFilter): vscodeLib.Thenable[js.Array[vscodeLib.vscodeMod.Task]] = js.native

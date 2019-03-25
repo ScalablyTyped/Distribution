@@ -13,11 +13,7 @@ trait TypeDefinitionMiddleware extends js.Object {
       /* position */ vscodeLib.vscodeMod.Position, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideTypeDefinitionSignature, 
-      vscodeLib.vscodeMod.ProviderResult[
-        vscodeLib.vscodeMod.Definition | (js.Array[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDefinitionLink */ _
-        ])
-      ]
+      vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]]
     ]
   ] = js.undefined
 }
@@ -31,11 +27,7 @@ object TypeDefinitionMiddleware {
       /* position */ vscodeLib.vscodeMod.Position, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideTypeDefinitionSignature, 
-      vscodeLib.vscodeMod.ProviderResult[
-        vscodeLib.vscodeMod.Definition | (js.Array[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDefinitionLink */ _
-        ])
-      ]
+      vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]]
     ] = null
   ): TypeDefinitionMiddleware = {
     val __obj = js.Dynamic.literal()

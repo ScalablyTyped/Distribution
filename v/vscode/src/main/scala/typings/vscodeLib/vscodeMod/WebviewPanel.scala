@@ -11,6 +11,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WebviewPanel extends js.Object {
   /**
+  		 * Whether the panel is active (focused by the user).
+  		 */
+  val active: scala.Boolean = js.native
+  /**
+  		 * Icon for the panel shown in UI.
+  		 */
+  var iconPath: js.UndefOr[Uri | vscodeLib.Anon_DarkLight] = js.native
+  /**
   		 * Content settings for the webview panel.
   		 */
   val options: WebviewPanelOptions = js.native
@@ -20,9 +28,7 @@ trait WebviewPanel extends js.Object {
   var title: java.lang.String = js.native
   /**
   		 * Editor position of the panel. This property is only set if the webview is in
-  		 * one of the three editor view columns.
-  		 *
-  		 * @deprecated
+  		 * one of the editor view columns.
   		 */
   val viewColumn: js.UndefOr[ViewColumn] = js.native
   /**
@@ -30,7 +36,7 @@ trait WebviewPanel extends js.Object {
   		 */
   val viewType: java.lang.String = js.native
   /**
-  		 * Is the panel currently visible?
+  		 * Whether the panel is visible.
   		 */
   val visible: scala.Boolean = js.native
   /**

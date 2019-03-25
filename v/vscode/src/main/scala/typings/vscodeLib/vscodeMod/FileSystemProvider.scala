@@ -13,7 +13,7 @@ trait FileSystemProvider extends js.Object {
   		 *
   		 * @param source The existing file.
   		 * @param destination The destination location.
-  		 * @param options Defines if existing files should be overwriten.
+  		 * @param options Defines if existing files should be overwritten.
   		 * @throws [`FileNotFound`](#FileSystemError.FileNotFound) when `source` doesn't exist.
   		 * @throws [`FileNotFound`](#FileSystemError.FileNotFound) when parent of `destination` doesn't exist, e.g. no mkdirp-logic required.
   		 * @throws [`FileExists`](#FileSystemError.FileExists) when `destination` exists and when the `overwrite` option is not `true`.

@@ -355,6 +355,8 @@ trait Static extends js.Object {
     * The typings only support arrays for now.
     * All functions must be unary.
     * R.composeK(h, g, f) is equivalent to R.compose(R.chain(h), R.chain(g), f).
+    *
+    * @deprecated since 0.26 in favor of composeWith(chain)
     */
   def composeK[V0, T1](fn0: js.Function1[/* x0 */ V0, js.Array[T1]]): js.Function1[/* x0 */ V0, js.Array[T1]] = js.native
   def composeK[V0, T1, T2](fn1: js.Function1[/* x */ T1, js.Array[T2]], fn0: js.Function1[/* x0 */ V0, js.Array[T1]]): js.Function1[/* x0 */ V0, js.Array[T2]] = js.native
@@ -387,6 +389,8 @@ trait Static extends js.Object {
   /**
     * Performs right-to-left composition of one or more Promise-returning functions.
     * All functions must be unary.
+    *
+    * @deprecated since 0.26 in favor of composeWith(then)
     */
   def composeP[V0, T1](fn0: js.Function1[/* x0 */ V0, js.Promise[T1]]): js.Function1[/* x0 */ V0, js.Promise[T1]] = js.native
   def composeP[V0, T1, T2](fn1: js.Function1[/* x */ T1, js.Promise[T2]], fn0: js.Function1[/* x0 */ V0, js.Promise[T1]]): js.Function1[/* x0 */ V0, js.Promise[T2]] = js.native
@@ -416,6 +420,12 @@ trait Static extends js.Object {
     fn1: js.Function1[/* x */ T1, js.Promise[T2]],
     fn0: js.Function1[/* x */ V0, js.Promise[T1]]
   ): js.Function1[/* x */ V0, js.Promise[T6]] = js.native
+  def composeWith(composer: js.Function1[/* a */ js.Any, _]): js.Function1[/* fns */ ComposeWithFns[_, _], js.Function1[/* x */ _, _]] = js.native
+  /**
+    * Performs right-to-left function composition using transforming function.
+    * With the current typings, all functions must be unary.
+    */
+  def composeWith[V0, T](composer: js.Function1[/* a */ js.Any, _], fns: ComposeWithFns[V0, T]): js.Function1[/* x0 */ V0, T] = js.native
   def concat(list1: java.lang.String): js.Function1[/* list2 */ java.lang.String, java.lang.String] = js.native
   def concat(list1: java.lang.String, list2: java.lang.String): java.lang.String = js.native
   def concat[T](list1: js.Array[T]): js.Function1[/* list2 */ js.Array[T], js.Array[T]] = js.native
@@ -448,6 +458,8 @@ trait Static extends js.Object {
   /**
     * Returns `true` if the specified item is somewhere in the list, `false` otherwise.
     * Equivalent to `indexOf(a)(list) > -1`. Uses strict (`===`) equality checking.
+    *
+    * @deprecated since 0.26 in favor of includes
     */
   def contains(__ : Placeholder, list: java.lang.String): js.Function1[/* a */ java.lang.String, scala.Boolean] = js.native
   def contains(a: java.lang.String): js.Function1[/* list */ java.lang.String, scala.Boolean] = js.native
@@ -553,6 +565,17 @@ trait Static extends js.Object {
     * right to the supplied predicate function, skipping elements while the predicate function returns true.
     */
   def dropLastWhile[T](fn: js.Function1[/* a */ T, scala.Boolean], list: js.Array[T]): js.Array[T] = js.native
+  /**
+    * Returns a new list without any consecutively repeating elements. R.equals is used to determine equality.
+    */
+  def dropRepeats[T](list: js.Array[T]): js.Array[T] = js.native
+  def dropRepeatsWith[T](predicate: js.Function2[/* left */ T, /* right */ T, scala.Boolean]): js.Function1[/* list */ js.Array[T], js.Array[T]] = js.native
+  /**
+    * Returns a new list without any consecutively repeating elements.
+    * Equality is determined by applying the supplied predicate to each pair of consecutive elements.
+    * The first element in a series of equal elements will be preserved.
+    */
+  def dropRepeatsWith[T](predicate: js.Function2[/* left */ T, /* right */ T, scala.Boolean], list: js.Array[T]): js.Array[T] = js.native
   def dropWhile[T](fn: js.Function1[/* a */ T, scala.Boolean]): js.Function1[/* list */ js.Array[T], js.Array[T]] = js.native
   /**
     * Returns a new list containing the last n elements of a given list, passing each value to the supplied
@@ -731,6 +754,11 @@ trait Static extends js.Object {
     * Returns whether or not an object or its prototype chain has a property with the specified name
     */
   def hasIn[T](s: java.lang.String, obj: T): scala.Boolean = js.native
+  def hasPath(list: js.Array[java.lang.String]): js.Function1[/* obj */ js.Any, scala.Boolean] = js.native
+  /**
+    * Returns whether or not a path exists in an object. Only the object's own properties are checked.
+    */
+  def hasPath[T](list: js.Array[java.lang.String], obj: T): scala.Boolean = js.native
   def head(list: java.lang.String): java.lang.String = js.native
   /**
     * Returns the first element in a list.
@@ -1046,59 +1074,54 @@ trait Static extends js.Object {
     */
   def median(list: js.Array[scala.Double]): scala.Double = js.native
   /**
-    * @deprecated since v0.25.0
-    *
-    * Creates a new function that, when invoked, caches the result of calling fn for a given argument set and
-    * returns the result. Subsequent calls to the memoized fn with the same argument set will not result in an
-    * additional call to fn; instead, the cached result for that set of arguments will be returned.
+    * Creates a new function that, when invoked, caches the result of calling fn for a given argument set and returns the result.
+    * Subsequent calls to the memoized fn with the same argument set will not result in an additional call to fn; instead, the cached result for that set of arguments will be returned.
     */
-  def memoize[T /* <: js.Function1[/* repeated */ js.Any, _] */](fn: T): T = js.native
-  /**
-    * A customisable version of R.memoize. memoizeWith takes an additional function that will be applied to a given
-    * argument set and used to create the cache key under which the results of the function to be memoized will be stored.
-    * Care must be taken when implementing key generation to avoid clashes that may overwrite previous entries erroneously.
-    */
-  def memoizeWith[T /* <: js.Function1[/* repeated */ js.Any, _] */](keyFn: js.Function1[/* repeated */ js.Any, java.lang.String], fn: T): T = js.native
-  def merge(__ : Placeholder): js.Function2[/* b */ js.Any, /* a */ js.Any, js.Any] = js.native
+  def memoizeWith[T /* <: js.Function1[/* repeated */ js.Any, _] */](keyFn: js.Function1[/* v */ stdLib.Parameters[T], java.lang.String], fn: T): T = js.native
+  def merge(__ : Placeholder): js.Function2[/* b */ js.Any, /* a */ js.Any, Merge[_, _]] = js.native
   /**
     * Create a new object with the own properties of a
     * merged with the own properties of object b.
     * This function will *not* mutate passed-in objects.
+    *
+    * @deprecated since 0.26 in favor of mergeRight
     */
-  def merge[T2](__ : Placeholder, b: T2): js.Function1[/* a */ js.Any, js.Any with T2] = js.native
-  def merge[T1](a: T1): js.Function1[/* b */ js.Any, T1 with js.Any] = js.native
-  def merge[T1, T2](a: T1, b: T2): T1 with T2 = js.native
+  def merge[T2](__ : Placeholder, b: T2): js.Function1[/* a */ js.Any, Merge[T2, _]] = js.native
+  def merge[T1](a: T1): js.Function1[/* b */ js.Any, Merge[_, T1]] = js.native
+  def merge[T1, T2](a: T1, b: T2): Merge[T2, T1] = js.native
+  def mergeAll(list: js.Array[_]): js.Any = js.native
   /**
     * Merges a list of objects together into one object.
     */
-  def mergeAll[T](list: js.Array[_]): T = js.native
-  def mergeDeepLeft[T1](a: T1): js.Function1[/* b */ js.Any, T1 with js.Any] = js.native
+  @JSName("mergeAll")
+  def mergeAll_TT[T](list: js.Array[T]): T = js.native
+  def mergeDeepLeft[T1](a: T1): js.Function1[/* b */ js.Any, MergeDeep[T1, _]] = js.native
   /**
     * Creates a new object with the own properties of the first object merged with the own properties of the second object.
     * If a key exists in both objects:
     * and both values are objects, the two values will be recursively merged
     * otherwise the value from the first object will be used.
     */
-  def mergeDeepLeft[T1, T2](a: T1, b: T2): T1 with T2 = js.native
-  def mergeDeepRight[A](a: A): js.Function1[/* b */ js.Any, A with js.Any] = js.native
+  def mergeDeepLeft[T1, T2](a: T1, b: T2): MergeDeep[T1, T2] = js.native
+  def mergeDeepRight[A](a: A): js.Function1[/* b */ js.Any, MergeDeep[_, A]] = js.native
   /**
     * Creates a new object with the own properties of the first object merged with the own properties of the second object.
     * If a key exists in both objects:
     * and both values are objects, the two values will be recursively merged
     * otherwise the value from the second object will be used.
     */
-  def mergeDeepRight[A, B](a: A, b: B): A with B = js.native
-  def mergeDeepWith[T1, T2](fn: js.Function2[/* x */ js.Any, /* z */ js.Any, _]): js.Function2[/* a */ T1, /* b */ T2, T1 with T2] = js.native
-  def mergeDeepWith[T1, T2](fn: js.Function2[/* x */ js.Any, /* z */ js.Any, _], a: T1): js.Function1[/* b */ T2, T1 with T2] = js.native
+  def mergeDeepRight[A, B](a: A, b: B): MergeDeep[B, A] = js.native
+  def mergeDeepWith[T1, T2](fn: js.Function2[/* x */ js.Any, /* z */ js.Any, _]): js.Function2[/* a */ T1, /* b */ T2, _] = js.native
+  def mergeDeepWith[T1, T2](fn: js.Function2[/* x */ js.Any, /* z */ js.Any, _], a: T1): js.Function1[/* b */ T2, _] = js.native
   /**
     * Creates a new object with the own properties of the two provided objects. If a key exists in both objects:
     * and both associated values are also objects then the values will be recursively merged.
     * otherwise the provided function is applied to associated values using the resulting value as the new value
     * associated with the key. If a key only exists in one object, the value will be associated with the key of the resulting object.
     */
-  def mergeDeepWith[T1, T2](fn: js.Function2[/* x */ js.Any, /* z */ js.Any, _], a: T1, b: T2): T1 with T2 = js.native
-  def mergeDeepWithKey[T1, T2](fn: js.Function3[/* k */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _]): js.Function2[/* a */ T1, /* b */ T2, T1 with T2] = js.native
-  def mergeDeepWithKey[T1, T2](fn: js.Function3[/* k */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _], a: T1): js.Function1[/* b */ T2, T1 with T2] = js.native
+  def mergeDeepWith[T1, T2](fn: js.Function2[/* x */ js.Any, /* z */ js.Any, _], a: T1, b: T2): js.Any = js.native
+  def mergeDeepWithKey[T1, T2](fn: js.Function3[/* k */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _]): js.Function2[/* a */ T1, /* b */ T2, _] = js.native
+  def mergeDeepWithKey[T1, T2](fn: js.Function3[/* k */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _], a: T1): js.Function1[/* b */ T2, _] = js.native
   /**
     * Creates a new object with the own properties of the two provided objects. If a key exists in both objects:
     * and both associated values are also objects then the values will be recursively merged.
@@ -1106,25 +1129,37 @@ trait Static extends js.Object {
     * the new value associated with the key. If a key only exists in one object, the value will be associated with
     * the key of the resulting object.
     */
-  def mergeDeepWithKey[T1, T2](fn: js.Function3[/* k */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _], a: T1, b: T2): T1 with T2 = js.native
-  def mergeWith(fn: js.Function2[/* x */ js.Any, /* z */ js.Any, _]): js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any] = js.native
-  def mergeWith[U](fn: js.Function2[/* x */ js.Any, /* z */ js.Any, _], a: U): js.Function1[/* b */ js.Any, U with js.Any] = js.native
+  def mergeDeepWithKey[T1, T2](fn: js.Function3[/* k */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _], a: T1, b: T2): js.Any = js.native
+  def mergeLeft[T1](a: T1): js.Function1[/* b */ js.Any, Merge[T1, _]] = js.native
+  /**
+    * Create a new object with the own properties of the first object merged with the own properties of the second object.
+    * If a key exists in both objects, the value from the first object will be used.
+    */
+  def mergeLeft[T1, T2](a: T1, b: T2): Merge[T1, T2] = js.native
+  def mergeRight[T1](a: T1): js.Function1[/* b */ js.Any, Merge[_, T1]] = js.native
+  /**
+    * Create a new object with the own properties of the first object merged with the own properties of the second object.
+    * If a key exists in both objects, the value from the second object will be used.
+    */
+  def mergeRight[T1, T2](a: T1, b: T2): Merge[T2, T1] = js.native
+  def mergeWith(fn: js.Function2[/* x */ js.Any, /* z */ js.Any, _]): js.Function2[/* a */ js.Any, /* b */ js.Any, _] = js.native
+  def mergeWith[U](fn: js.Function2[/* x */ js.Any, /* z */ js.Any, _], a: U): js.Function1[/* b */ js.Any, _] = js.native
   /**
     * Creates a new object with the own properties of the two provided objects. If a key exists in both objects,
     * the provided function is applied to the values associated with the key in each object, with the result being used as
     * the value associated with the key in the returned object. The key will be excluded from the returned object if the
     * resulting value is undefined.
     */
-  def mergeWith[U, V](fn: js.Function2[/* x */ js.Any, /* z */ js.Any, _], a: U, b: V): U with V = js.native
-  def mergeWithKey(fn: js.Function3[/* str */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _]): js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any] = js.native
-  def mergeWithKey[U](fn: js.Function3[/* str */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _], a: U): js.Function1[/* b */ js.Any, U with js.Any] = js.native
+  def mergeWith[U, V](fn: js.Function2[/* x */ js.Any, /* z */ js.Any, _], a: U, b: V): js.Any = js.native
+  def mergeWithKey(fn: js.Function3[/* str */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _]): js.Function2[/* a */ js.Any, /* b */ js.Any, _] = js.native
+  def mergeWithKey[U](fn: js.Function3[/* str */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _], a: U): js.Function1[/* b */ js.Any, _] = js.native
   /**
     * Creates a new object with the own properties of the two provided objects. If a key exists in both objects,
     * the provided function is applied to the key and the values associated with the key in each object, with the
     * result being used as the value associated with the key in the returned object. The key will be excluded from
     * the returned object if the resulting value is undefined.
     */
-  def mergeWithKey[U, V](fn: js.Function3[/* str */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _], a: U, b: V): U with V = js.native
+  def mergeWithKey[U, V](fn: js.Function3[/* str */ java.lang.String, /* x */ js.Any, /* z */ js.Any, _], a: U, b: V): js.Any = js.native
   def min[T /* <: Ord */](a: T): js.Function1[/* b */ T, T] = js.native
   /**
     * Returns the smaller of its two arguments.
@@ -1221,6 +1256,12 @@ trait Static extends js.Object {
   def or_T[T](a: T): js.Function1[/* b */ js.Any, T | _] = js.native
   @JSName("or")
   def or_TAnon_AOrU[T /* <: ramdaLib.Anon_AOr */, U](fn1: T, val2: U): T | U = js.native
+  def otherwise[A, B](onError: js.Function1[/* error */ js.Any, B | js.Promise[B]]): js.Function1[/* promise */ js.Promise[A], js.Promise[B]] = js.native
+  /**
+    * Returns the result of applying the onFailure function to the value inside a failed promise.
+    * This is useful for handling rejected promises inside function compositions.
+    */
+  def otherwise[A, B](onError: js.Function1[/* error */ js.Any, B | js.Promise[B]], promise: js.Promise[A]): js.Promise[B] = js.native
   def over(lens: Lens): js.Function2[/* fn */ Arity1Fn, /* value */ js.Any, _] = js.native
   def over(lens: Lens, fn: Arity1Fn): js.Function1[/* value */ js.Any, _] = js.native
   /**
@@ -1601,11 +1642,13 @@ trait Static extends js.Object {
     fn8: js.Function1[/* x */ T8, T9],
     fn9: js.Function1[/* x */ T9, T10]
   ): js.Function3[/* x0 */ V0, /* x1 */ V1, /* x2 */ V2, T10] = js.native
-  /*
+  /**
     * Returns the left-to-right Kleisli composition of the provided functions, each of which must return a value of a type supported by chain.
     * The typings currently support arrays only as return values.
     * All functions need to be unary.
     * R.pipeK(f, g, h) is equivalent to R.pipe(f, R.chain(g), R.chain(h)).
+    *
+    * @deprecated since 0.26 in favor of pipeWith(chain)
     */
   def pipeK[V0, T1](fn0: js.Function1[/* x0 */ V0, js.Array[T1]]): js.Function1[/* x0 */ V0, js.Array[T1]] = js.native
   def pipeK[V0, T1, T2](fn0: js.Function1[/* x0 */ V0, js.Array[T1]], fn1: js.Function1[/* x */ T1, js.Array[T2]]): js.Function1[/* x0 */ V0, js.Array[T2]] = js.native
@@ -1677,9 +1720,11 @@ trait Static extends js.Object {
     fn8: js.Function1[/* x */ T8, js.Array[T9]],
     fn9: js.Function1[/* x */ T9, js.Array[T10]]
   ): js.Function1[/* x0 */ V0, js.Array[T10]] = js.native
-  /*
+  /**
     * Performs left-to-right composition of one or more Promise-returning functions.
     * All functions need to be unary.
+    *
+    * @deprecated since 0.26 in favor of pipeWith(then)
     */
   def pipeP[V0, T1](fn0: js.Function1[/* x0 */ V0, js.Promise[T1]]): js.Function1[/* x0 */ V0, js.Promise[T1]] = js.native
   def pipeP[V0, T1, T2](fn0: js.Function1[/* x0 */ V0, js.Promise[T1]], fn1: js.Function1[/* x */ T1, js.Promise[T2]]): js.Function1[/* x0 */ V0, js.Promise[T2]] = js.native
@@ -1751,6 +1796,12 @@ trait Static extends js.Object {
     fn8: js.Function1[/* x */ T8, js.Promise[T9]],
     fn9: js.Function1[/* x */ T9, js.Promise[T10]]
   ): js.Function1[/* x0 */ V0, js.Promise[T10]] = js.native
+  def pipeWith(composer: js.Function1[/* a */ js.Any, _]): js.Function1[/* fns */ PipeWithFns[_, _], js.Function1[/* x0 */ _, _]] = js.native
+  /*
+    * Performs left-to-right function composition using transforming function.
+    * With the current typings, all functions must be unary.
+    */
+  def pipeWith[V0, T](composer: js.Function1[/* a */ js.Any, _], fns: PipeWithFns[V0, T]): js.Function1[/* x0 */ V0, T] = js.native
   def pluck(p: scala.Double): js.Function1[/* list */ js.Array[org.scalablytyped.runtime.NumberDictionary[_]], js.Array[_]] = js.native
   def pluck[P /* <: java.lang.String */](p: P): js.Function1[/* list */ js.Array[stdLib.Record[P, _]], js.Array[_]] = js.native
   def pluck[T](p: scala.Double, list: js.Array[org.scalablytyped.runtime.NumberDictionary[T]]): js.Array[T] = js.native
@@ -2134,6 +2185,18 @@ trait Static extends js.Object {
     * Determines whether a given string matches a given regular expression.
     */
   def test(regexp: stdLib.RegExp, str: java.lang.String): scala.Boolean = js.native
+  def `then`[A, B](onSuccess: js.Function1[/* a */ A, B | js.Promise[B]]): js.Function1[/* promise */ js.Promise[A], js.Promise[B]] = js.native
+  /**
+    * Returns the result of applying the onSuccess function to the value inside a successfully resolved promise. This is useful for working with promises inside function compositions.
+    */
+  def `then`[A, B](onSuccess: js.Function1[/* a */ A, B | js.Promise[B]], promise: js.Promise[A]): js.Promise[B] = js.native
+  /**
+    * Creates a thunk out of a function.
+    * A thunk delays a calculation until its result is needed, providing lazy evaluation of arguments.
+    */
+  def thunkify[F /* <: js.Function1[/* repeated */ js.Any, _] */](fn: F): ramdaLib.CurryNs.Curry[
+    js.Function1[/* args */ stdLib.Parameters[F], js.Function0[stdLib.ReturnType[F]]]
+  ] = js.native
   def times[T](fn: js.Function1[/* i */ scala.Double, T]): js.Function1[/* n */ scala.Double, js.Array[T]] = js.native
   /**
     * Calls an input function `n` times, returning an array containing the results of those

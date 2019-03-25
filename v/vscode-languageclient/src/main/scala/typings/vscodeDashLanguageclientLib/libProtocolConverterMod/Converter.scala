@@ -104,35 +104,23 @@ trait Converter extends js.Object {
     item: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DeclarationLink
     ]
-  ): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify code.LocationLink */ _
-  ] = js.native
+  ): js.Array[vscodeLib.vscodeMod.LocationLink] = js.native
   def asDeclarationResult(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Declaration): vscodeLib.vscodeMod.Location | js.Array[vscodeLib.vscodeMod.Location] = js.native
   @JSName("asDeclarationResult")
   def asDeclarationResult_UndefOr(
     item: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DeclarationLink
     ]
-  ): js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify code.Declaration */ _
-  ] = js.native
+  ): js.UndefOr[vscodeLib.vscodeMod.Declaration] = js.native
   @JSName("asDeclarationResult")
-  def asDeclarationResult_UndefOr(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Declaration): js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify code.Declaration */ _
-  ] = js.native
+  def asDeclarationResult_UndefOr(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Declaration): js.UndefOr[vscodeLib.vscodeMod.Declaration] = js.native
   def asDefinitionResult(): js.UndefOr[scala.Nothing] = js.native
   def asDefinitionResult(
     item: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DefinitionLink
     ]
-  ): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify code.DefinitionLink */ _
-  ] = js.native
-  def asDefinitionResult(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition): js.UndefOr[
-    vscodeLib.vscodeMod.Definition | (js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify code.DefinitionLink */ _
-    ])
-  ] = js.native
+  ): js.Array[vscodeLib.vscodeMod.DefinitionLink] = js.native
+  def asDefinitionResult(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition): js.UndefOr[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]] = js.native
   @JSName("asDefinitionResult")
   def asDefinitionResult_Definition(item: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Definition): vscodeLib.vscodeMod.Definition = js.native
   @JSName("asDefinitionResult")
@@ -140,11 +128,7 @@ trait Converter extends js.Object {
     item: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DefinitionLink
     ]
-  ): js.UndefOr[
-    vscodeLib.vscodeMod.Definition | (js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify code.DefinitionLink */ _
-    ])
-  ] = js.native
+  ): js.UndefOr[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]] = js.native
   def asDiagnostic(diagnostic: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Diagnostic): vscodeLib.vscodeMod.Diagnostic = js.native
   def asDiagnosticSeverity(): vscodeLib.vscodeMod.DiagnosticSeverity = js.native
   def asDiagnosticSeverity(value: scala.Double): vscodeLib.vscodeMod.DiagnosticSeverity = js.native
@@ -182,25 +166,19 @@ trait Converter extends js.Object {
   ): js.UndefOr[js.Array[vscodeLib.vscodeMod.DocumentLink]] = js.native
   def asDocumentSymbol(
     value: vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.DocumentSymbol
-  ): js.Any = js.native
+  ): vscodeLib.vscodeMod.DocumentSymbol = js.native
   def asDocumentSymbols(): js.UndefOr[scala.Nothing] = js.native
   def asDocumentSymbols(
     value: js.Array[
       vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.DocumentSymbol
     ]
-  ): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify code.DocumentSymbol */ _
-  ] = js.native
+  ): js.Array[vscodeLib.vscodeMod.DocumentSymbol] = js.native
   @JSName("asDocumentSymbols")
   def asDocumentSymbols_UndefOr(
     value: js.Array[
       vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.DocumentSymbol
     ]
-  ): js.UndefOr[
-    js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify code.DocumentSymbol */ _
-    ]
-  ] = js.native
+  ): js.UndefOr[js.Array[vscodeLib.vscodeMod.DocumentSymbol]] = js.native
   def asFoldingRange(r: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.FoldingRange): vscodeLib.vscodeMod.FoldingRange = js.native
   def asFoldingRangeKind(): js.UndefOr[vscodeLib.vscodeMod.FoldingRangeKind] = js.native
   def asFoldingRangeKind(kind: java.lang.String): js.UndefOr[vscodeLib.vscodeMod.FoldingRangeKind] = js.native

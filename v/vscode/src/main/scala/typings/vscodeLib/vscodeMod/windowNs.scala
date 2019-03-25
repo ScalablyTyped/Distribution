@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode", "window")
 @js.native
 object windowNs extends js.Object {
+  val activeTerminal: js.UndefOr[vscodeLib.vscodeMod.Terminal] = js.native
   var activeTextEditor: js.UndefOr[vscodeLib.vscodeMod.TextEditor] = js.native
+  val onDidChangeActiveTerminal: vscodeLib.vscodeMod.Event[js.UndefOr[vscodeLib.vscodeMod.Terminal]] = js.native
   val onDidChangeActiveTextEditor: vscodeLib.vscodeMod.Event[js.UndefOr[vscodeLib.vscodeMod.TextEditor]] = js.native
   val onDidChangeTextEditorOptions: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextEditorOptionsChangeEvent] = js.native
   val onDidChangeTextEditorSelection: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextEditorSelectionChangeEvent] = js.native
@@ -17,9 +19,13 @@ object windowNs extends js.Object {
   val onDidChangeVisibleTextEditors: vscodeLib.vscodeMod.Event[js.Array[vscodeLib.vscodeMod.TextEditor]] = js.native
   val onDidChangeWindowState: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.WindowState] = js.native
   val onDidCloseTerminal: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.Terminal] = js.native
-  var state: vscodeLib.vscodeMod.WindowState = js.native
+  val onDidOpenTerminal: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.Terminal] = js.native
+  val state: vscodeLib.vscodeMod.WindowState = js.native
+  val terminals: js.Array[vscodeLib.vscodeMod.Terminal] = js.native
   var visibleTextEditors: js.Array[vscodeLib.vscodeMod.TextEditor] = js.native
+  def createInputBox(): vscodeLib.vscodeMod.InputBox = js.native
   def createOutputChannel(name: java.lang.String): vscodeLib.vscodeMod.OutputChannel = js.native
+  def createQuickPick[T /* <: vscodeLib.vscodeMod.QuickPickItem */](): vscodeLib.vscodeMod.QuickPick[T] = js.native
   def createStatusBarItem(): vscodeLib.vscodeMod.StatusBarItem = js.native
   def createStatusBarItem(alignment: vscodeLib.vscodeMod.StatusBarAlignment): vscodeLib.vscodeMod.StatusBarItem = js.native
   def createStatusBarItem(alignment: vscodeLib.vscodeMod.StatusBarAlignment, priority: scala.Double): vscodeLib.vscodeMod.StatusBarItem = js.native
@@ -29,7 +35,7 @@ object windowNs extends js.Object {
   def createTerminal(name: java.lang.String, shellPath: java.lang.String, shellArgs: js.Array[java.lang.String]): vscodeLib.vscodeMod.Terminal = js.native
   def createTerminal(options: vscodeLib.vscodeMod.TerminalOptions): vscodeLib.vscodeMod.Terminal = js.native
   def createTextEditorDecorationType(options: vscodeLib.vscodeMod.DecorationRenderOptions): vscodeLib.vscodeMod.TextEditorDecorationType = js.native
-  def createTreeView[T](viewId: java.lang.String, options: vscodeLib.Anon_TreeDataProvider[T]): vscodeLib.vscodeMod.TreeView[T] = js.native
+  def createTreeView[T](viewId: java.lang.String, options: vscodeLib.vscodeMod.TreeViewOptions[T]): vscodeLib.vscodeMod.TreeView[T] = js.native
   def createWebviewPanel(viewType: java.lang.String, title: java.lang.String, showOptions: vscodeLib.Anon_PreserveFocus): vscodeLib.vscodeMod.WebviewPanel = js.native
   def createWebviewPanel(
     viewType: java.lang.String,
@@ -45,6 +51,8 @@ object windowNs extends js.Object {
     options: vscodeLib.vscodeMod.WebviewPanelOptions with vscodeLib.vscodeMod.WebviewOptions
   ): vscodeLib.vscodeMod.WebviewPanel = js.native
   def registerTreeDataProvider[T](viewId: java.lang.String, treeDataProvider: vscodeLib.vscodeMod.TreeDataProvider[T]): vscodeLib.vscodeMod.Disposable = js.native
+  def registerUriHandler(handler: vscodeLib.vscodeMod.UriHandler): vscodeLib.vscodeMod.Disposable = js.native
+  def registerWebviewPanelSerializer(viewType: java.lang.String, serializer: vscodeLib.vscodeMod.WebviewPanelSerializer): vscodeLib.vscodeMod.Disposable = js.native
   def setStatusBarMessage(text: java.lang.String): vscodeLib.vscodeMod.Disposable = js.native
   def setStatusBarMessage(text: java.lang.String, hideAfterTimeout: scala.Double): vscodeLib.vscodeMod.Disposable = js.native
   def setStatusBarMessage(text: java.lang.String, hideWhenDone: vscodeLib.Thenable[_]): vscodeLib.vscodeMod.Disposable = js.native

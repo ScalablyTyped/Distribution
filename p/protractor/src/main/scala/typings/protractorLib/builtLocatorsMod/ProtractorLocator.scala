@@ -14,13 +14,13 @@ trait ProtractorLocator extends js.Object {
     driver: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver,
     using: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement,
     rootSelector: java.lang.String
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]]
+  ): js.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]]
 }
 
 object ProtractorLocator {
   @scala.inline
   def apply(
-    findElementsOverride: (seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement, java.lang.String) => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]],
+    findElementsOverride: (seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement, java.lang.String) => js.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]],
     column: /* index */ java.lang.String => Locator = null,
     row: /* index */ scala.Double => Locator = null,
     toString: () => java.lang.String = null

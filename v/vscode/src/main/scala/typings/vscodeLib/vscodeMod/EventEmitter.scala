@@ -24,7 +24,7 @@ class EventEmitter[T] () extends js.Object {
   def event(listener: js.Function1[/* e */ T, _], thisArgs: js.Any): Disposable = js.native
   def event(listener: js.Function1[/* e */ T, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
   /**
-  		 * Notify all subscribers of the [event](EventEmitter#event). Failure
+  		 * Notify all subscribers of the [event](#EventEmitter.event). Failure
   		 * of one or more listener will not fail this function call.
   		 *
   		 * @param data The event object.

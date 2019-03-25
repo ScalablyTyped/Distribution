@@ -16,22 +16,17 @@ class Runner protected ()
   var o: js.Any = js.native
   var plugins_ : protractorLib.builtPluginsMod.Plugins = js.native
   var preparer_ : js.Any = js.native
-  var ready_ : js.UndefOr[seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]] = js.native
-  var restartPromise: qLib.qMod.QNs.Promise[_] = js.native
+  var ready_ : js.UndefOr[js.Promise[scala.Unit]] = js.native
+  var restartPromise: js.Promise[_] = js.native
   /**
     * Called after each test finishes.
     *
     * Responsible for `restartBrowserBetweenTests`
     *
     * @public
-    * @return {q.Promise} A promise that will resolve when the work here is done
+    * @return {Promise} A promise that will resolve when the work here is done
     */
-  def afterEach(): qLib.qMod.QNs.Promise[scala.Unit] = js.native
-  /**
-    * Get the control flow used by this runner.
-    * @return {Object} WebDriver control flow.
-    */
-  def controlFlow(): js.Any = js.native
+  def afterEach(): js.Promise[scala.Unit] = js.native
   /**
     * Create a new driver from a driverProvider. Then set up a
     * new protractor instance using this driver.
@@ -44,14 +39,14 @@ class Runner protected ()
     * @return {Protractor} a protractor instance.
     * @public
     */
-  def createBrowser(plugins: js.Any): js.Any = js.native
-  def createBrowser(plugins: js.Any, parentBrowser: protractorLib.builtBrowserMod.ProtractorBrowser): js.Any = js.native
+  def createBrowser(plugins: js.Any): js.Promise[_] = js.native
+  def createBrowser(plugins: js.Any, parentBrowser: protractorLib.builtBrowserMod.ProtractorBrowser): js.Promise[_] = js.native
   /**
     * Responsible for cleaning up test run and exiting the process.
     * @private
     * @param {int} Standard unix exit code
     */
-  def exit_(exitCode: scala.Double): js.Any = js.native
+  def exit_(exitCode: scala.Double): js.Promise[scala.Double] = js.native
   /**
     * Getter for the Runner config object
     * @public
@@ -73,19 +68,19 @@ class Runner protected ()
   /**
     * The primary workhorse interface. Kicks off the test running process.
     *
-    * @return {q.Promise} A promise which resolves to the exit code of the tests.
+    * @return {Promise} A promise which resolves to the exit code of the tests.
     * @public
     */
-  def run(): qLib.qMod.QNs.Promise[_] = js.native
+  def run(): js.Promise[scala.Double] = js.native
   /**
     * Executor of testPreparer
     * @public
     * @param {string[]=} An optional list of command line arguments the framework will accept.
-    * @return {q.Promise} A promise that will resolve when the test preparers
+    * @return {Promise} A promise that will resolve when the test preparers
     *     are finished.
     */
-  def runTestPreparer(): qLib.qMod.QNs.Promise[_] = js.native
-  def runTestPreparer(extraFlags: js.Array[java.lang.String]): qLib.qMod.QNs.Promise[_] = js.native
+  def runTestPreparer(): js.Promise[_] = js.native
+  def runTestPreparer(extraFlags: js.Array[java.lang.String]): js.Promise[_] = js.native
   /**
     * Registrar for testPreparers - executed right before tests run.
     * @public
@@ -101,9 +96,9 @@ class Runner protected ()
   /**
     * Final cleanup on exiting the runner.
     *
-    * @return {q.Promise} A promise which resolves on finish.
+    * @return {Promise} A promise which resolves on finish.
     * @private
     */
-  def shutdown_(): qLib.qMod.QNs.Promise[scala.Unit] = js.native
+  def shutdown_(): js.Promise[scala.Unit] = js.native
 }
 

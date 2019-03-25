@@ -15,7 +15,7 @@ trait ListProps extends js.Object {
   var grid: js.UndefOr[ListGridType] = js.undefined
   var header: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var itemLayout: js.UndefOr[java.lang.String] = js.undefined
+  var itemLayout: js.UndefOr[ListItemLayout] = js.undefined
   var loadMore: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var loading: js.UndefOr[scala.Boolean | antdLib.libSpinMod.SpinProps] = js.undefined
   var locale: js.UndefOr[ListLocale] = js.undefined
@@ -42,7 +42,7 @@ object ListProps {
     grid: ListGridType = null,
     header: reactLib.reactMod.ReactNs.ReactNode = null,
     id: java.lang.String = null,
-    itemLayout: java.lang.String = null,
+    itemLayout: ListItemLayout = null,
     loadMore: reactLib.reactMod.ReactNs.ReactNode = null,
     loading: scala.Boolean | antdLib.libSpinMod.SpinProps = null,
     locale: ListLocale = null,

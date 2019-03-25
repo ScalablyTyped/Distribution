@@ -59,6 +59,12 @@ class CompletionItem protected () extends js.Object {
   		 */
   var insertText: js.UndefOr[java.lang.String | SnippetString] = js.native
   /**
+  		 * Keep whitespace of the [insertText](#CompletionItem.insertText) as is. By default, the editor adjusts leading
+  		 * whitespace of new lines so that they match the indentation of the line for which the item is accepted - setting
+  		 * this to `true` will prevent that.
+  		 */
+  var keepWhitespace: js.UndefOr[scala.Boolean] = js.native
+  /**
   		 * The kind of this completion item. Based on the kind
   		 * an icon is chosen by the editor.
   		 */
@@ -69,6 +75,12 @@ class CompletionItem protected () extends js.Object {
   		 * this completion.
   		 */
   var label: java.lang.String = js.native
+  /**
+  		 * Select this item when showing. *Note* that only one completion item can be selected and
+  		 * that the editor decides which item that is. The rule is that the *first* item of those
+  		 * that match best is selected.
+  		 */
+  var preselect: js.UndefOr[scala.Boolean] = js.native
   /**
   		 * A range of text that should be replaced by this completion item.
   		 *

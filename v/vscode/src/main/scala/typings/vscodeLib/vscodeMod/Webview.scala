@@ -16,7 +16,7 @@ trait Webview extends js.Object {
   /**
   		 * Content settings for the webview.
   		 */
-  val options: WebviewOptions = js.native
+  var options: WebviewOptions = js.native
   /**
   		 * Fired when the webview content posts a message.
   		 */

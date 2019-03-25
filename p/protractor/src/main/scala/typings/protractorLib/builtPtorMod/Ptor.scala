@@ -8,24 +8,21 @@ import scala.scalajs.js.annotation._
 @JSImport("protractor/built/ptor", "Ptor")
 @js.native
 class Ptor () extends js.Object {
-  var ActionSequence: org.scalablytyped.runtime.Instantiable1[
-    /* driver */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, 
-    seleniumDashWebdriverLib.seleniumDashWebdriverMod.ActionSequence
-  ] = js.native
+  var Actions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof webdriver.Actions */ js.Any = js.native
   var Browser: seleniumDashWebdriverLib.seleniumDashWebdriverMod.IBrowser = js.native
   var Builder: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.Builder] = js.native
   var Button: seleniumDashWebdriverLib.seleniumDashWebdriverMod.IButton = js.native
   var By: protractorLib.builtLocatorsMod.ProtractorBy = js.native
   var Capabilities: protractorLib.Anon_Android = js.native
   var Capability: seleniumDashWebdriverLib.seleniumDashWebdriverMod.ICapability = js.native
-  var Command: js.Any = js.native
-  var CommandName: js.Any = js.native
+  var Command: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof command.Command */ js.Any = js.native
+  var CommandName: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify command.ICommandName */ js.Any = js.native
   var ElementArrayFinder: js.Any = js.native
   var ElementFinder: js.Any = js.native
   var EventEmitter: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.EventEmitter] = js.native
   var ExpectedConditions: protractorLib.builtExpectedConditionsMod.ProtractorExpectedConditions = js.native
   var FileDetector: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.FileDetector] = js.native
-  var Key: seleniumDashWebdriverLib.seleniumDashWebdriverMod.IKey = js.native
+  var Key: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_./selenium-webdriver/lib/input.IKey */ js.Any = js.native
   var ProtractorBrowser: js.Any = js.native
   var ProtractorBy: js.Any = js.native
   var ProtractorExpectedConditions: js.Any = js.native

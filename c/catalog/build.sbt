@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "catalog"
-version := "3.6.0-3fc0f8"
+version := "3.6.0-1a5989"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -52,7 +52,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prismjs" % "1.9-dt-20190212Z-cae4f9",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
   "org.scalablytyped" %%% "raf" % "3.4-dt-20190103Z-956f39",
-  "org.scalablytyped" %%% "ramda" % "0.26-dt-20190321Z-c6ad84",
+  "org.scalablytyped" %%% "ramda" % "0.26-dt-20190324Z-497aab",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-5082d0",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190322Z-6f0f1a",
   "org.scalablytyped" %%% "react-dev-utils" % "7.0-dt-20190128Z-314277",

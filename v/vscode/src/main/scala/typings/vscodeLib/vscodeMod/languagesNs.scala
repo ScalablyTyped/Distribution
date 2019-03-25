@@ -31,6 +31,7 @@ object languagesNs extends js.Object {
     provider: vscodeLib.vscodeMod.CompletionItemProvider,
     triggerCharacters: java.lang.String*
   ): vscodeLib.vscodeMod.Disposable = js.native
+  def registerDeclarationProvider(selector: vscodeLib.vscodeMod.DocumentSelector, provider: vscodeLib.vscodeMod.DeclarationProvider): vscodeLib.vscodeMod.Disposable = js.native
   def registerDefinitionProvider(selector: vscodeLib.vscodeMod.DocumentSelector, provider: vscodeLib.vscodeMod.DefinitionProvider): vscodeLib.vscodeMod.Disposable = js.native
   def registerDocumentFormattingEditProvider(
     selector: vscodeLib.vscodeMod.DocumentSelector,
@@ -49,6 +50,11 @@ object languagesNs extends js.Object {
     selector: vscodeLib.vscodeMod.DocumentSelector,
     provider: vscodeLib.vscodeMod.DocumentSymbolProvider
   ): vscodeLib.vscodeMod.Disposable = js.native
+  def registerDocumentSymbolProvider(
+    selector: vscodeLib.vscodeMod.DocumentSelector,
+    provider: vscodeLib.vscodeMod.DocumentSymbolProvider,
+    metaData: vscodeLib.vscodeMod.DocumentSymbolProviderMetadata
+  ): vscodeLib.vscodeMod.Disposable = js.native
   def registerFoldingRangeProvider(selector: vscodeLib.vscodeMod.DocumentSelector, provider: vscodeLib.vscodeMod.FoldingRangeProvider): vscodeLib.vscodeMod.Disposable = js.native
   def registerHoverProvider(selector: vscodeLib.vscodeMod.DocumentSelector, provider: vscodeLib.vscodeMod.HoverProvider): vscodeLib.vscodeMod.Disposable = js.native
   def registerImplementationProvider(
@@ -66,6 +72,11 @@ object languagesNs extends js.Object {
   def registerSignatureHelpProvider(
     selector: vscodeLib.vscodeMod.DocumentSelector,
     provider: vscodeLib.vscodeMod.SignatureHelpProvider,
+    metadata: vscodeLib.vscodeMod.SignatureHelpProviderMetadata
+  ): vscodeLib.vscodeMod.Disposable = js.native
+  def registerSignatureHelpProvider(
+    selector: vscodeLib.vscodeMod.DocumentSelector,
+    provider: vscodeLib.vscodeMod.SignatureHelpProvider,
     triggerCharacters: java.lang.String*
   ): vscodeLib.vscodeMod.Disposable = js.native
   def registerTypeDefinitionProvider(
@@ -74,5 +85,6 @@ object languagesNs extends js.Object {
   ): vscodeLib.vscodeMod.Disposable = js.native
   def registerWorkspaceSymbolProvider(provider: vscodeLib.vscodeMod.WorkspaceSymbolProvider): vscodeLib.vscodeMod.Disposable = js.native
   def setLanguageConfiguration(language: java.lang.String, configuration: vscodeLib.vscodeMod.LanguageConfiguration): vscodeLib.vscodeMod.Disposable = js.native
+  def setTextDocumentLanguage(document: vscodeLib.vscodeMod.TextDocument, languageId: java.lang.String): vscodeLib.Thenable[vscodeLib.vscodeMod.TextDocument] = js.native
 }
 

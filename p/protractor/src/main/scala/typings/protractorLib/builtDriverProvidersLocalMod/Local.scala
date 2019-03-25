@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Local protected ()
   extends protractorLib.builtDriverProvidersDriverProviderMod.DriverProvider {
   def this(config: protractorLib.builtConfigMod.Config) = this()
-  var server_ : js.Any = js.native
+  var server_ : seleniumDashWebdriverLib.remoteMod.SeleniumServer = js.native
   /**
     * Helper to locate the default jar path if none is provided by the user.
     * @private

@@ -30,5 +30,5 @@
 //                 Krantisinh Deshmukh <https://github.com/krantisinh>
 //                 Pierre-Antoine Mills <https://github.com/pirix-gh>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.2
+// TypeScript Version: 3.3
 ```

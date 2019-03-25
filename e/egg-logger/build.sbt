@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg-logger"
-version := "2.4.1-edc8a3"
+version := "2.4.1-161c47"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-155129",
-  "org.scalablytyped" %%% "utility" % "1.15.1-637683")
+  "org.scalablytyped" %%% "utility" % "1.16.1-c942af")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -10,8 +10,6 @@ package object libDeclarationMod {
     /* document */ vscodeLib.vscodeMod.TextDocument, 
     /* position */ vscodeLib.vscodeMod.Position, 
     /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
-    vscodeLib.vscodeMod.ProviderResult[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDeclaration */ js.Any
-    ]
+    vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Declaration]
   ]
 }

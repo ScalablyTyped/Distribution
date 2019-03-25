@@ -21,9 +21,10 @@ trait TextDocumentShowOptions extends js.Object {
   var selection: js.UndefOr[Range] = js.undefined
   /**
   		 * An optional view column in which the [editor](#TextEditor) should be shown.
-  		 * The default is the [one](#ViewColumn.One), other values are adjusted to
+  		 * The default is the [active](#ViewColumn.Active), other values are adjusted to
   		 * be `Min(column, columnCount + 1)`, the [active](#ViewColumn.Active)-column is
-  		 * not adjusted.
+  		 * not adjusted. Use [`ViewColumn.Beside`](#ViewColumn.Beside) to open the
+  		 * editor to the side of the currently active one.
   		 */
   var viewColumn: js.UndefOr[ViewColumn] = js.undefined
 }

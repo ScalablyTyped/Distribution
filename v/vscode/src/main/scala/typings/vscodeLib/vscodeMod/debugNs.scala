@@ -17,6 +17,8 @@ object debugNs extends js.Object {
   val onDidStartDebugSession: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.DebugSession] = js.native
   val onDidTerminateDebugSession: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.DebugSession] = js.native
   def addBreakpoints(breakpoints: js.Array[vscodeLib.vscodeMod.Breakpoint]): scala.Unit = js.native
+  def registerDebugAdapterDescriptorFactory(debugType: java.lang.String, factory: vscodeLib.vscodeMod.DebugAdapterDescriptorFactory): vscodeLib.vscodeMod.Disposable = js.native
+  def registerDebugAdapterTrackerFactory(debugType: java.lang.String, factory: vscodeLib.vscodeMod.DebugAdapterTrackerFactory): vscodeLib.vscodeMod.Disposable = js.native
   def registerDebugConfigurationProvider(debugType: java.lang.String, provider: vscodeLib.vscodeMod.DebugConfigurationProvider): vscodeLib.vscodeMod.Disposable = js.native
   def removeBreakpoints(breakpoints: js.Array[vscodeLib.vscodeMod.Breakpoint]): scala.Unit = js.native
   def startDebugging(folder: js.UndefOr[scala.Nothing], nameOrConfiguration: java.lang.String): vscodeLib.Thenable[scala.Boolean] = js.native

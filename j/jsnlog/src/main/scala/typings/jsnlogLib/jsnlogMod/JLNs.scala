@@ -33,7 +33,8 @@ object JLNs extends js.Object {
   }
   
   trait JSNLogAjaxAppender extends JSNLogAppender {
-    def setOptions(options: JSNLogAjaxAppenderOptions): JSNLogAjaxAppender
+    @JSName("setOptions")
+    var setOptions_JSNLogAjaxAppender: js.UndefOr[js.Function1[/* options */ JSNLogAjaxAppenderOptions, JSNLogAjaxAppender]] = js.undefined
   }
   
   trait JSNLogAjaxAppenderOptions extends JSNLogAppenderOptions {
@@ -41,9 +42,11 @@ object JLNs extends js.Object {
     var url: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  // setOptions and sendBatch have to be optional, so you can use a Winston transport as
+  // as a JSNLogAppender
   trait JSNLogAppender extends js.Object {
-    def sendBatch(): scala.Unit
-    def setOptions(options: JSNLogAppenderOptions): JSNLogAppender
+    var sendBatch: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+    var setOptions: js.UndefOr[js.Function1[/* options */ JSNLogAppenderOptions, JSNLogAppender]] = js.undefined
   }
   
   // Base for all appender options types

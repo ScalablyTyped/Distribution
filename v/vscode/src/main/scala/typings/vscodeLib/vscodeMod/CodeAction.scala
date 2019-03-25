@@ -32,6 +32,14 @@ class CodeAction protected () extends js.Object {
   		 */
   var edit: js.UndefOr[WorkspaceEdit] = js.native
   /**
+  		 * Marks this as a preferred action. Preferred actions are used by the `auto fix` command and can be targeted
+  		 * by keybindings.
+  		 *
+  		 * A quick fix should be marked preferred if it properly addresses the underlying error.
+  		 * A refactoring should be marked preferred if it is the most reasonable choice of actions to take.
+  		 */
+  var isPreferred: js.UndefOr[scala.Boolean] = js.native
+  /**
   		 * [Kind](#CodeActionKind) of the code action.
   		 *
   		 * Used to filter code actions.

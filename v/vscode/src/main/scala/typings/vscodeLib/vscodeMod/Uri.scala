@@ -25,8 +25,21 @@ class Uri protected () extends js.Object {
   		 * The string representing the corresponding file system path of this Uri.
   		 *
   		 * Will handle UNC paths and normalize windows drive letters to lower-case. Also
-  		 * uses the platform specific path separator. Will *not* validate the path for
-  		 * invalid characters and semantics. Will *not* look at the scheme of this Uri.
+  		 * uses the platform specific path separator.
+  		 *
+  		 * * Will *not* validate the path for invalid characters and semantics.
+  		 * * Will *not* look at the scheme of this Uri.
+  		 * * The resulting string shall *not* be used for display purposes but
+  		 * for disk operations, like `readFile` et al.
+  		 *
+  		 * The *difference* to the [`path`](#Uri.path)-property is the use of the platform specific
+  		 * path separator and the handling of UNC paths. The sample below outlines the difference:
+  		 * ```ts
+  		const u = URI.parse('file://server/c$/folder/file.txt')
+  		u.authority === 'server'
+  		u.path === '/shares/c$/file.txt'
+  		u.fsPath === '\\server\c$\folder\file.txt'
+  		```
   		 */
   val fsPath: java.lang.String = js.native
   /**
@@ -74,14 +87,30 @@ object Uri extends js.Object {
   		 * Create an URI from a file system path. The [scheme](#Uri.scheme)
   		 * will be `file`.
   		 *
+  		 * The *difference* between `Uri#parse` and `Uri#file` is that the latter treats the argument
+  		 * as path, not as stringified-uri. E.g. `Uri.file(path)` is *not* the same as
+  		 * `Uri.parse('file://' + path)` because the path might contain characters that are
+  		 * interpreted (# and ?). See the following sample:
+  		 * ```ts
+  		const good = URI.file('/coding/c#/project1');
+  		good.scheme === 'file';
+  		good.path === '/coding/c#/project1';
+  		good.fragment === '';
+  		const bad = URI.parse('file://' + '/coding/c#/project1');
+  		bad.scheme === 'file';
+  		bad.path === '/coding/c'; // path is now broken
+  		bad.fragment === '/project1';
+  		```
+  		 *
   		 * @param path A file system or UNC path.
   		 * @return A new Uri instance.
   		 */
   def file(path: java.lang.String): vscodeLib.vscodeMod.Uri = js.native
   /**
-  		 * Create an URI from a string. Will throw if the given value is not
-  		 * valid.
+  		 * Create an URI from a string, e.g. `http://www.msft.com/some/path`,
+  		 * `file:///usr/home`, or `scheme:with/path`.
   		 *
+  		 * @see [Uri.toString](#Uri.toString)
   		 * @param value The string value of an Uri.
   		 * @return A new Uri instance.
   		 */

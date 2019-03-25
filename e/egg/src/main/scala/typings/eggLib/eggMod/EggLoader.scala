@@ -5,12 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("egg", "EggLoader")
 @js.native
-class EggLoader protected () extends js.Object {
-  def this(options: EggLoaderOptions) = this()
-  var options: EggLoaderOptions = js.native
-  def getAppInfo(): EggAppInfo = js.native
-  def getHomedir(): java.lang.String = js.native
-}
+trait EggLoader
+  extends eggDashCoreLib.eggDashCoreMod.EggLoader[
+      eggDashCoreLib.eggDashCoreMod.EggCore[eggDashCoreLib.eggDashCoreMod.PlainObject[js.Any]], 
+      js.Any
+    ]
 

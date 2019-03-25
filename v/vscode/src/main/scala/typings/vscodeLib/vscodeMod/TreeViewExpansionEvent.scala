@@ -9,7 +9,7 @@ trait TreeViewExpansionEvent[T] extends js.Object {
   /**
   		 * Element that is expanded or collapsed.
   		 */
-  var element: T
+  val element: T
 }
 
 object TreeViewExpansionEvent {

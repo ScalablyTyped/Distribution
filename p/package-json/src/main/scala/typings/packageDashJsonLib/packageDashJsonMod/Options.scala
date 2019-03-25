@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
+  	 * Overwrite the `agent` option that is passed down to [`got`](https://github.com/sindresorhus/got#agent). This might be useful to add [proxy support](https://github.com/sindresorhus/got#proxies).
+  	 */
+  val agent: js.UndefOr[
+    nodeLib.httpMod.Agent | nodeLib.httpsMod.Agent | Agents | packageDashJsonLib.packageDashJsonLibNumbers.`false`
+  ] = js.undefined
+  /**
   	 * Return the [main entry](https://registry.npmjs.org/ava) containing all versions.
   	 *
   	 * @default false
@@ -39,12 +45,14 @@ trait Options extends js.Object {
 object Options {
   @scala.inline
   def apply(
+    agent: nodeLib.httpMod.Agent | nodeLib.httpsMod.Agent | Agents | packageDashJsonLib.packageDashJsonLibNumbers.`false` = null,
     allVersions: js.UndefOr[scala.Boolean] = js.undefined,
     fullMetadata: js.UndefOr[scala.Boolean] = js.undefined,
     registryUrl: java.lang.String = null,
     version: java.lang.String = null
   ): Options = {
     val __obj = js.Dynamic.literal()
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (!js.isUndefined(allVersions)) __obj.updateDynamic("allVersions")(allVersions)
     if (!js.isUndefined(fullMetadata)) __obj.updateDynamic("fullMetadata")(fullMetadata)
     if (registryUrl != null) __obj.updateDynamic("registryUrl")(registryUrl)

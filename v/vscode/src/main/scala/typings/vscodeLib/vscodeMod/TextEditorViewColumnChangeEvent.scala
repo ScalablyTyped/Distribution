@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TextEditorViewColumnChangeEvent extends js.Object {
   /**
-  		 * The [text editor](#TextEditor) for which the options have changed.
+  		 * The [text editor](#TextEditor) for which the view column has changed.
   		 */
   var textEditor: TextEditor
   /**

@@ -15,7 +15,7 @@ trait Hls extends js.Object {
   /**
     * array of audio tracks exposed in manifest
     */
-  var audioTracks: js.Array[stdLib.AudioTrack] = js.native
+  val audioTracks: js.Array[stdLib.AudioTrack] = js.native
   /**
     * capping/max level (index of level) that could be used by ABR Controller. Defaults to -1
     * which means no limit
@@ -23,16 +23,9 @@ trait Hls extends js.Object {
     */
   var autoLevelCapping: scala.Double = js.native
   /**
-    * (default: true)
-    * if set to true, start level playlist and first fragments will be loaded automatically, after triggering of Hls.Events.MANIFEST_PARSED event
-    * if set to false, an explicit API call (hls.startLoad(startPosition=-1)) will be needed to start quality level/fragment loading.
+    * tell whether auto level selection is enabled or not
     */
-  var autoStartLoad: scala.Boolean = js.native
-  /**
-    * (default: NaN)
-    * Return current download bandwidth in bits/s if available
-    */
-  var bandwidthEstimate: scala.Double = js.native
+  val autoLevelEnabled: scala.Boolean = js.native
   /**
     *  hls.js config
     */
@@ -54,21 +47,17 @@ trait Hls extends js.Object {
   /**
     * return array of available quality levels
     */
-  var levels: js.Array[hlsDotJsLib.hlsDotJsMod.HlsNs.Level] = js.native
+  val levels: js.Array[hlsDotJsLib.hlsDotJsMod.HlsNs.Level] = js.native
   /**
     * position of live sync point (ie edge of live position minus safety delay defined by hls.config.liveSyncDuration)
     */
-  var liveSyncPosition: scala.Double = js.native
+  val liveSyncPosition: scala.Double = js.native
   /**
     * get: return last loaded fragment quality level
     * set: quality level for next loaded fragment
     * set to -1 for automatic level selection
     */
   var loadLevel: scala.Double = js.native
-  /**
-    * get: Return the bound videoElement from the hls instance
-    */
-  var media: stdLib.HTMLVideoElement = js.native
   /**
     * get: return next playback quality level (playback quality level for next buffered fragment)
     * return -1 if next fragment not buffered yet
@@ -108,7 +97,7 @@ trait Hls extends js.Object {
   /**
     * get : array of subtitle tracks exposed in manifest
     */
-  var subtitleTracks: js.Array[_] = js.native
+  val subtitleTracks: js.Array[_] = js.native
   /**
     * calling this method will:
     *      bind videoElement and hls instances
@@ -116,10 +105,6 @@ trait Hls extends js.Object {
     *      once MediaSource object is successfully created, MEDIA_ATTACHED event will be fired
     */
   def attachMedia(videoElement: stdLib.HTMLVideoElement): scala.Unit = js.native
-  /**
-    * tell whether auto level selection is enabled or not
-    */
-  def autoLevelEnabled(enabled: scala.Boolean): scala.Boolean = js.native
   /**
     * should be called to free used resources and destroy hls context
     */

@@ -19,11 +19,13 @@ object FullMetadataOptions {
   @scala.inline
   def apply(
     fullMetadata: packageDashJsonLib.packageDashJsonLibNumbers.`true`,
+    agent: nodeLib.httpMod.Agent | nodeLib.httpsMod.Agent | Agents | packageDashJsonLib.packageDashJsonLibNumbers.`false` = null,
     allVersions: js.UndefOr[scala.Boolean] = js.undefined,
     registryUrl: java.lang.String = null,
     version: java.lang.String = null
   ): FullMetadataOptions = {
     val __obj = js.Dynamic.literal(fullMetadata = fullMetadata)
+    if (agent != null) __obj.updateDynamic("agent")(agent.asInstanceOf[js.Any])
     if (!js.isUndefined(allVersions)) __obj.updateDynamic("allVersions")(allVersions)
     if (registryUrl != null) __obj.updateDynamic("registryUrl")(registryUrl)
     if (version != null) __obj.updateDynamic("version")(version)

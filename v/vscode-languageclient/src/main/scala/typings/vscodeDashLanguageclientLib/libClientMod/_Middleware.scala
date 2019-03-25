@@ -69,11 +69,7 @@ trait _Middleware extends js.Object {
       /* position */ vscodeLib.vscodeMod.Position, 
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideDefinitionSignature, 
-      vscodeLib.vscodeMod.ProviderResult[
-        vscodeLib.vscodeMod.Definition | (js.Array[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDefinitionLink */ _
-        ])
-      ]
+      vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]]
     ]
   ] = js.undefined
   var provideDocumentFormattingEdits: js.UndefOr[
@@ -123,9 +119,7 @@ trait _Middleware extends js.Object {
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideDocumentSymbolsSignature, 
       vscodeLib.vscodeMod.ProviderResult[
-        js.Array[vscodeLib.vscodeMod.SymbolInformation] | (js.Array[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDocumentSymbol */ _
-        ])
+        js.Array[vscodeLib.vscodeMod.SymbolInformation] | js.Array[vscodeLib.vscodeMod.DocumentSymbol]
       ]
     ]
   ] = js.undefined
@@ -284,11 +278,7 @@ object _Middleware {
       /* position */ vscodeLib.vscodeMod.Position, 
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideDefinitionSignature, 
-      vscodeLib.vscodeMod.ProviderResult[
-        vscodeLib.vscodeMod.Definition | (js.Array[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDefinitionLink */ _
-        ])
-      ]
+      vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]]
     ] = null,
     provideDocumentFormattingEdits: js.ThisFunction4[
       /* this */ scala.Unit, 
@@ -328,9 +318,7 @@ object _Middleware {
       /* token */ vscodeLib.vscodeMod.CancellationToken, 
       /* next */ ProvideDocumentSymbolsSignature, 
       vscodeLib.vscodeMod.ProviderResult[
-        js.Array[vscodeLib.vscodeMod.SymbolInformation] | (js.Array[
-          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDocumentSymbol */ _
-        ])
+        js.Array[vscodeLib.vscodeMod.SymbolInformation] | js.Array[vscodeLib.vscodeMod.DocumentSymbol]
       ]
     ] = null,
     provideHover: js.ThisFunction4[

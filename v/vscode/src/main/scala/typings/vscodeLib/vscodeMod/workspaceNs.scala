@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode", "workspace")
 @js.native
 object workspaceNs extends js.Object {
-  var name: js.UndefOr[java.lang.String] = js.native
+  val name: js.UndefOr[java.lang.String] = js.native
   val onDidChangeConfiguration: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.ConfigurationChangeEvent] = js.native
   val onDidChangeTextDocument: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextDocumentChangeEvent] = js.native
   val onDidChangeWorkspaceFolders: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.WorkspaceFoldersChangeEvent] = js.native
@@ -16,9 +16,9 @@ object workspaceNs extends js.Object {
   val onDidOpenTextDocument: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextDocument] = js.native
   val onDidSaveTextDocument: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextDocument] = js.native
   val onWillSaveTextDocument: vscodeLib.vscodeMod.Event[vscodeLib.vscodeMod.TextDocumentWillSaveEvent] = js.native
-  var rootPath: js.UndefOr[java.lang.String] = js.native
-  var textDocuments: js.Array[vscodeLib.vscodeMod.TextDocument] = js.native
-  var workspaceFolders: js.UndefOr[js.Array[vscodeLib.vscodeMod.WorkspaceFolder]] = js.native
+  val rootPath: js.UndefOr[java.lang.String] = js.native
+  val textDocuments: js.Array[vscodeLib.vscodeMod.TextDocument] = js.native
+  val workspaceFolders: js.UndefOr[js.Array[vscodeLib.vscodeMod.WorkspaceFolder]] = js.native
   def applyEdit(edit: vscodeLib.vscodeMod.WorkspaceEdit): vscodeLib.Thenable[scala.Boolean] = js.native
   def asRelativePath(pathOrUri: java.lang.String): java.lang.String = js.native
   def asRelativePath(pathOrUri: java.lang.String, includeWorkspaceFolder: scala.Boolean): java.lang.String = js.native
@@ -65,6 +65,7 @@ object workspaceNs extends js.Object {
   def openTextDocument(fileName: java.lang.String): vscodeLib.Thenable[vscodeLib.vscodeMod.TextDocument] = js.native
   def openTextDocument(options: vscodeLib.Anon_Content): vscodeLib.Thenable[vscodeLib.vscodeMod.TextDocument] = js.native
   def openTextDocument(uri: vscodeLib.vscodeMod.Uri): vscodeLib.Thenable[vscodeLib.vscodeMod.TextDocument] = js.native
+  def registerFileSystemProvider(scheme: java.lang.String, provider: vscodeLib.vscodeMod.FileSystemProvider): vscodeLib.vscodeMod.Disposable = js.native
   def registerFileSystemProvider(
     scheme: java.lang.String,
     provider: vscodeLib.vscodeMod.FileSystemProvider,

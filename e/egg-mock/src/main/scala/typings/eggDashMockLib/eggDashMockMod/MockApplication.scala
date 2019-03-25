@@ -34,7 +34,5 @@ trait MockApplication
     * mock cookie session
     */
   def mockSession(data: js.Any): MockApplication = js.native
-  // tslint:disble-line
-  def ready(): js.Promise[scala.Unit] = js.native
 }
 

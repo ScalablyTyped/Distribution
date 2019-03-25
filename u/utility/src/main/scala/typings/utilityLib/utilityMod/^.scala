@@ -142,6 +142,8 @@ object ^ extends js.Object {
     * @public
     */
   def escape(test: java.lang.String): java.lang.String = js.native
+  def getOwnEnumerables(obj: utilityLib.utilityMod.utilityNs.ObjStatic): js.Array[java.lang.String] = js.native
+  def getOwnEnumerables(obj: utilityLib.utilityMod.utilityNs.ObjStatic, ignoreNull: scala.Boolean): js.Array[java.lang.String] = js.native
   /**
     * Get a function parameter's names.
     *
@@ -151,9 +153,6 @@ object ^ extends js.Object {
     */
   def getParamNames(func: js.Function1[/* repeated */ js.Any, _]): js.Array[java.lang.String] = js.native
   def getParamNames(func: js.Function1[/* repeated */ js.Any, _], cache: scala.Boolean): js.Array[java.lang.String] = js.native
-  /**
-    * Module dependencies.
-    */
   def has(obj: utilityLib.utilityMod.utilityNs.ObjStatic, prop: java.lang.String): scala.Boolean = js.native
   def hash(
     method: utilityLib.utilityLibStrings.md5,

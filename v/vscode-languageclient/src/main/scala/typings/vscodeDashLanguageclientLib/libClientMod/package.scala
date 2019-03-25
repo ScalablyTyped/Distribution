@@ -50,11 +50,7 @@ package object libClientMod {
     /* document */ vscodeLib.vscodeMod.TextDocument, 
     /* position */ vscodeLib.vscodeMod.Position, 
     /* token */ vscodeLib.vscodeMod.CancellationToken, 
-    vscodeLib.vscodeMod.ProviderResult[
-      vscodeLib.vscodeMod.Definition | (js.Array[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDefinitionLink */ js.Any
-      ])
-    ]
+    vscodeLib.vscodeMod.ProviderResult[vscodeLib.vscodeMod.Definition | js.Array[vscodeLib.vscodeMod.DefinitionLink]]
   ]
   type ProvideDocumentFormattingEditsSignature = js.Function3[
     /* document */ vscodeLib.vscodeMod.TextDocument, 
@@ -84,9 +80,7 @@ package object libClientMod {
     /* document */ vscodeLib.vscodeMod.TextDocument, 
     /* token */ vscodeLib.vscodeMod.CancellationToken, 
     vscodeLib.vscodeMod.ProviderResult[
-      js.Array[vscodeLib.vscodeMod.SymbolInformation] | (js.Array[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VDocumentSymbol */ js.Any
-      ])
+      js.Array[vscodeLib.vscodeMod.SymbolInformation] | js.Array[vscodeLib.vscodeMod.DocumentSymbol]
     ]
   ]
   type ProvideHoverSignature = js.Function3[

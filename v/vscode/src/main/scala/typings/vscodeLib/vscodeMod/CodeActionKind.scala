@@ -12,7 +12,7 @@ class CodeActionKind protected () extends js.Object {
   /**
   		 * String value of the kind, e.g. `"refactor.extract.function"`.
   		 */
-  val value: js.UndefOr[java.lang.String] = js.native
+  val value: java.lang.String = js.native
   /**
   		 * Create a new kind by appending a more specific selector to the current kind.
   		 *
@@ -20,13 +20,23 @@ class CodeActionKind protected () extends js.Object {
   		 */
   def append(parts: java.lang.String): CodeActionKind = js.native
   /**
-  		 * Does this kind contain `other`?
+  		 * Checks if `other` is a sub-kind of this `CodeActionKind`.
   		 *
-  		 * The kind `"refactor"` for example contains `"refactor.extract"` and ``"refactor.extract.function"`, but not `"unicorn.refactor.extract"` or `"refactory.extract"`
+  		 * The kind `"refactor.extract"` for example contains `"refactor.extract"` and ``"refactor.extract.function"`,
+  		 * but not `"unicorn.refactor.extract"`, or `"refactor.extractAll"` or `refactor`.
   		 *
   		 * @param other Kind to check.
   		 */
   def contains(other: CodeActionKind): scala.Boolean = js.native
+  /**
+  		 * Checks if this code action kind intersects `other`.
+  		 *
+  		 * The kind `"refactor.extract"` for example intersects `refactor`, `"refactor.extract"` and ``"refactor.extract.function"`,
+  		 * but not `"unicorn.refactor.extract"`, or `"refactor.extractAll"`.
+  		 *
+  		 * @param other Kind to check.
+  		 */
+  def intersects(other: CodeActionKind): scala.Boolean = js.native
 }
 
 /* static members */
@@ -92,6 +102,13 @@ object CodeActionKind extends js.Object {
   		 * using `editor.codeActionsOnSave`. They also are shown in `source` context menu.
   		 */
   val Source: vscodeLib.vscodeMod.CodeActionKind = js.native
+  /**
+  		 * Base kind for auto-fix source actions: `source.fixAll`.
+  		 *
+  		 * Fix all actions automatically fix errors that have a clear fix that do not require user input.
+  		 * They should not suppress errors or perform unsafe fixes such as generating new types or classes.
+  		 */
+  val SourceFixAll: vscodeLib.vscodeMod.CodeActionKind = js.native
   /**
   		 * Base kind for an organize imports source action: `source.organizeImports`.
   		 */

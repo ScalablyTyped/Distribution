@@ -24,38 +24,38 @@ abstract class DriverProvider protected () extends js.Object {
     * Create a new driver.
     *
     * @public
-    * @return webdriver instance
+    * @return a promise to a webdriver instance
     */
-  def getNewDriver(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver = js.native
+  def getNewDriver(): js.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver] = js.native
   /**
     * Quit a driver.
     *
     * @public
     * @param webdriver instance
     */
-  def quitDriver(driver: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def quitDriver(driver: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver): js.Promise[scala.Unit] = js.native
   /**
     * Set up environment specific to a particular driver provider. Overridden
     * by each driver provider.
     */
-  /* protected */ def setupDriverEnv(): qLib.qMod.QNs.Promise[_] = js.native
+  /* protected */ def setupDriverEnv(): js.Promise[_] = js.native
   /**
     * Default setup environment method, common to all driver providers.
     */
-  def setupEnv(): qLib.qMod.QNs.Promise[_] = js.native
+  def setupEnv(): js.Promise[_] = js.native
   /**
     * Teardown and destroy the environment and do any associated cleanup.
     * Shuts down the drivers.
     *
     * @public
-    * @return {q.Promise<any>} A promise which will resolve when the environment is down.
+    * @return {Promise<any>} A promise which will resolve when the environment is down.
     */
-  def teardownEnv(): qLib.qMod.QNs.Promise[_] = js.native
+  def teardownEnv(): js.Promise[_] = js.native
   /**
     * Default update job method.
     * @return a promise
     */
-  def updateJob(update: js.Any): qLib.qMod.QNs.Promise[_] = js.native
+  def updateJob(update: js.Any): js.Promise[_] = js.native
 }
 
 /* static members */
@@ -70,6 +70,6 @@ object DriverProvider extends js.Object {
   def quitDrivers(
     provider: protractorLib.builtDriverProvidersDriverProviderMod.DriverProvider,
     drivers: js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver]
-  ): qLib.qMod.QNs.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

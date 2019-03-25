@@ -15,6 +15,6 @@ class AttachSession protected ()
     *
     * @public
     */
-  def quitDriver(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def quitDriver(): js.Promise[scala.Unit] = js.native
 }
 

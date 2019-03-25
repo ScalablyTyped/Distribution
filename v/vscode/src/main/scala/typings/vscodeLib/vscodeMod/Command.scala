@@ -21,7 +21,7 @@ trait Command extends js.Object {
   		 */
   var title: java.lang.String
   /**
-  		 * A tooltip for for command, when represented in the UI.
+  		 * A tooltip for the command, when represented in the UI.
   		 */
   var tooltip: js.UndefOr[java.lang.String] = js.undefined
 }

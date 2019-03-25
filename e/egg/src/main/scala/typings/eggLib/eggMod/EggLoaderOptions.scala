@@ -5,26 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EggLoaderOptions extends js.Object {
-  var app: eggDashViewLib.eggMod.Application
-  var baseDir: java.lang.String
-  var logger: eggDashLoggerLib.eggDashLoggerMod.EggLogger
-  var plugins: js.UndefOr[js.Any] = js.undefined
-  var typescript: js.UndefOr[scala.Boolean] = js.undefined
-}
+trait EggLoaderOptions
+  extends eggDashCoreLib.eggDashCoreMod.EggLoaderOptions
 
 object EggLoaderOptions {
   @scala.inline
   def apply(
-    app: eggDashViewLib.eggMod.Application,
+    app: eggDashCoreLib.eggDashCoreMod.EggCore[eggDashCoreLib.eggDashCoreMod.PlainObject[_]],
     baseDir: java.lang.String,
-    logger: eggDashLoggerLib.eggDashLoggerMod.EggLogger,
-    plugins: js.Any = null,
-    typescript: js.UndefOr[scala.Boolean] = js.undefined
+    logger: eggDashLoggerLib.eggDashLoggerMod.Logger[eggDashLoggerLib.eggDashLoggerMod.LoggerOptions],
+    plugins: eggDashCoreLib.eggDashCoreMod.Plugins = null,
+    serverScope: java.lang.String = null
   ): EggLoaderOptions = {
     val __obj = js.Dynamic.literal(app = app, baseDir = baseDir, logger = logger)
     if (plugins != null) __obj.updateDynamic("plugins")(plugins)
-    if (!js.isUndefined(typescript)) __obj.updateDynamic("typescript")(typescript)
+    if (serverScope != null) __obj.updateDynamic("serverScope")(serverScope)
     __obj.asInstanceOf[EggLoaderOptions]
   }
 }

@@ -30,6 +30,10 @@ trait EggAppConfig
     * @property {any} extendTypes - support extend types
     */
   var bodyParser: eggLib.Anon_Enable
+  /**
+    * customLoader config
+    */
+  var customLoader: org.scalablytyped.runtime.StringDictionary[CustomLoaderConfig]
   var development: eggLib.Anon_FastReady
   /**
     * It will ignore special keys when dumpConfig
@@ -111,6 +115,7 @@ object EggAppConfig {
     HOME: java.lang.String,
     baseDir: java.lang.String,
     bodyParser: eggLib.Anon_Enable,
+    customLoader: org.scalablytyped.runtime.StringDictionary[CustomLoaderConfig],
     development: eggLib.Anon_FastReady,
     dump: eggLib.Anon_Ignore,
     env: EggEnvType,
@@ -134,7 +139,7 @@ object EggAppConfig {
     StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     serverTimeout: scala.Int | scala.Double = null
   ): EggAppConfig = {
-    val __obj = js.Dynamic.literal(HOME = HOME, baseDir = baseDir, bodyParser = bodyParser, development = development, dump = dump, env = env.asInstanceOf[js.Any], hostHeaders = hostHeaders, httpclient = httpclient, i18n = i18n, ipHeaders = ipHeaders, jsonp = jsonp, keys = keys, logger = logger, middleware = middleware, name = name, onClientError = js.Any.fromFunction3(onClientError), pkg = pkg, rundir = rundir, security = security, siteFile = siteFile, static = static, watcher = watcher, workerStartTimeout = workerStartTimeout)
+    val __obj = js.Dynamic.literal(HOME = HOME, baseDir = baseDir, bodyParser = bodyParser, customLoader = customLoader, development = development, dump = dump, env = env.asInstanceOf[js.Any], hostHeaders = hostHeaders, httpclient = httpclient, i18n = i18n, ipHeaders = ipHeaders, jsonp = jsonp, keys = keys, logger = logger, middleware = middleware, name = name, onClientError = js.Any.fromFunction3(onClientError), pkg = pkg, rundir = rundir, security = security, siteFile = siteFile, static = static, watcher = watcher, workerStartTimeout = workerStartTimeout)
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
     if (serverTimeout != null) __obj.updateDynamic("serverTimeout")(serverTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[EggAppConfig]

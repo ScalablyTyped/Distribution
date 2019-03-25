@@ -103,7 +103,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT15DOT1` extends js.Object
+  sealed trait `3DOT15DOT2` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -566,7 +566,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait horizontal
-    extends antdLib.libMenuMod.MenuMode
+    extends antdLib.libListMod.ListItemLayout
+       with antdLib.libMenuMod.MenuMode
   
   @js.native
   sealed trait `horizontal-tb` extends js.Object
@@ -1552,7 +1553,8 @@ object antdLibStrings {
   
   @js.native
   sealed trait vertical
-    extends antdLib.libMenuMod.MenuMode
+    extends antdLib.libListMod.ListItemLayout
+       with antdLib.libMenuMod.MenuMode
   
   @js.native
   sealed trait `vertical-left`
@@ -1694,7 +1696,7 @@ object antdLibStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT15DOT1`: `3DOT15DOT1` = "3.15.1".asInstanceOf[`3DOT15DOT1`]
+  def `3DOT15DOT2`: `3DOT15DOT2` = "3.15.2".asInstanceOf[`3DOT15DOT2`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline

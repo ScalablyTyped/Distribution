@@ -9,7 +9,7 @@ trait LanguageConfiguration extends js.Object {
   /**
   		 * **Deprecated** Do not use.
   		 *
-  		 * @deprecated * Use the the autoClosingPairs property in the language configuration file instead.
+  		 * @deprecated * Use the autoClosingPairs property in the language configuration file instead.
   		 */
   var __characterPairSupport: js.UndefOr[vscodeLib.Anon_AutoClosingPairs] = js.undefined
   /**

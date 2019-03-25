@@ -18,9 +18,8 @@ class Diagnostic protected () extends js.Object {
   def this(range: Range, message: java.lang.String) = this()
   def this(range: Range, message: java.lang.String, severity: DiagnosticSeverity) = this()
   /**
-  		 * A code or identifier for this diagnostics. Will not be surfaced
-  		 * to the user, but should be used for later processing, e.g. when
-  		 * providing [code actions](#CodeActionContext).
+  		 * A code or identifier for this diagnostic.
+  		 * Should be used for later processing, e.g. when providing [code actions](#CodeActionContext).
   		 */
   var code: js.UndefOr[java.lang.String | scala.Double] = js.native
   /**
@@ -45,5 +44,9 @@ class Diagnostic protected () extends js.Object {
   		 * diagnostic, e.g. 'typescript' or 'super lint'.
   		 */
   var source: js.UndefOr[java.lang.String] = js.native
+  /**
+  		 * Additional metadata about the diagnostic.
+  		 */
+  var tags: js.UndefOr[js.Array[DiagnosticTag]] = js.native
 }
 

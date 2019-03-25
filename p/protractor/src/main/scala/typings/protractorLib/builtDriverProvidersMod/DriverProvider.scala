@@ -24,6 +24,6 @@ object DriverProvider extends js.Object {
   def quitDrivers(
     provider: protractorLib.builtDriverProvidersDriverProviderMod.DriverProvider,
     drivers: js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver]
-  ): qLib.qMod.QNs.Promise[scala.Unit] = js.native
+  ): js.Promise[scala.Unit] = js.native
 }
 

@@ -115,8 +115,7 @@ trait Table[T]
       reactLib.reactMod.ReactNs.ReactNode
     ],
     dropdownPrefixCls: java.lang.String,
-    contextLocale: antdLib.libTableInterfaceMod.TableLocale,
-    loading: antdLib.libSpinMod.SpinProps
+    contextLocale: antdLib.libTableInterfaceMod.TableLocale
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def setSelectedRowKeys(
     selectedRowKeys: js.Array[java.lang.String],

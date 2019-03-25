@@ -16,14 +16,12 @@ object ^ extends js.Object {
   val Button: seleniumDashWebdriverLib.seleniumDashWebdriverMod.IButton = js.native
   var By: protractorLib.builtLocatorsMod.ProtractorBy = js.native
   val Capability: seleniumDashWebdriverLib.seleniumDashWebdriverMod.ICapability = js.native
-  var Command: js.Any = js.native
-  var CommandName: js.Any = js.native
   var ExpectedConditions: protractorLib.builtExpectedConditionsMod.ProtractorExpectedConditions = js.native
   val Key: seleniumDashWebdriverLib.seleniumDashWebdriverMod.IKey = js.native
   var browser: protractorLib.builtBrowserMod.ProtractorBrowser = js.native
   var by: protractorLib.builtLocatorsMod.ProtractorBy = js.native
   var element: protractorLib.builtBrowserMod.ElementHelper = js.native
   var protractor: protractorLib.builtPtorMod.Ptor = js.native
-  var utils: protractorLib.Anon_Firefox = js.native
+  val utils: protractorLib.Anon_Firefox = js.native
 }
 

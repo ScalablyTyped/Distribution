@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg-cookies"
-version := "2.2.6-78a713"
+version := "2.2.6-9c7c5b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "mz" % "0.0-unknown-dt-20190322Z-35dcde",
   "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
   "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "utility" % "1.15.1-637683")
+  "org.scalablytyped" %%% "utility" % "1.16.1-c942af")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

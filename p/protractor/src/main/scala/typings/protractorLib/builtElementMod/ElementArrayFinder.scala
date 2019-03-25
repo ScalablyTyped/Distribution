@@ -10,17 +10,28 @@ import scala.scalajs.js.annotation._
 class ElementArrayFinder protected () extends WebdriverWebElement {
   def this(browser_ : protractorLib.builtBrowserMod.ProtractorBrowser) = this()
   def this(browser_ : protractorLib.builtBrowserMod.ProtractorBrowser, getWebElements: js.Function0[
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]]
+      js.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]]
     ]) = this()
   def this(browser_ : protractorLib.builtBrowserMod.ProtractorBrowser, getWebElements: js.Function0[
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]]
+      js.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]]
     ], locator_ : js.Any) = this()
   def this(browser_ : protractorLib.builtBrowserMod.ProtractorBrowser, getWebElements: js.Function0[
-      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]]
-    ], locator_ : js.Any, actionResults_ : seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_]) = this()
-  var actionResults_ : seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_] = js.native
+      js.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]]
+    ], locator_ : js.Any, actionResults_ : js.Promise[_]) = this()
+  var actionResults_ : js.Promise[_] = js.native
+  /**
+    * Apply an action function to every element in the ElementArrayFinder,
+    * and return a new ElementArrayFinder that contains the results of the
+    * actions.
+    *
+    * @param {function(ElementFinder)} actionFn
+    *
+    * @returns {ElementArrayFinder}
+    * @private
+    */
+  var applyAction_ : js.Any = js.native
   var browser_ : protractorLib.builtBrowserMod.ProtractorBrowser = js.native
-  var locator_ : js.Any = js.native
+  var locator_ : js.UndefOr[js.Any] = js.native
   /**
     * Shorthand function for finding arrays of elements by css.
     * `element.all(by.css('.abc'))` is equivalent to `$$('.abc')`
@@ -35,16 +46,16 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     * @example
     * // The following two blocks of code are equivalent.
     * let list = element.all(by.css('.count span'));
-    * expect(list.count()).toBe(2);
-    * expect(list.get(0).getText()).toBe('First');
-    * expect(list.get(1).getText()).toBe('Second');
+    * expect(await list.count()).toBe(2);
+    * expect(await list.get(0).getText()).toBe('First');
+    * expect(await list.get(1).getText()).toBe('Second');
     *
     * // Or using the shortcut $$() notation instead of element.all(by.css()):
     *
     * let list = $$('.count span');
-    * expect(list.count()).toBe(2);
-    * expect(list.get(0).getText()).toBe('First');
-    * expect(list.get(1).getText()).toBe('Second');
+    * expect(await list.count()).toBe(2);
+    * expect(await list.get(0).getText()).toBe('First');
+    * expect(await list.get(1).getText()).toBe('Second');
     *
     * @param {string} selector a css selector
     * @returns {ElementArrayFinder} which identifies the
@@ -75,23 +86,23 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     *
     * @example
     * let foo = element.all(by.css('.parent')).all(by.css('.foo'));
-    * expect(foo.getText()).toEqual(['1a', '2a']);
+    * expect(await foo.getText()).toEqual(['1a', '2a']);
     * let baz = element.all(by.css('.parent')).all(by.css('.baz'));
-    * expect(baz.getText()).toEqual(['1b']);
+    * expect(await baz.getText()).toEqual(['1b']);
     * let nonexistent = element.all(by.css('.parent'))
     *   .all(by.css('.NONEXISTENT'));
-    * expect(nonexistent.getText()).toEqual(['']);
+    * expect(await nonexistent.getText()).toEqual(['']);
     *
     * // Or using the shortcut $$() notation instead of element.all(by.css()):
     *
     * let foo = $$('.parent').$$('.foo');
-    * expect(foo.getText()).toEqual(['1a', '2a']);
+    * expect(await foo.getText()).toEqual(['1a', '2a']);
     * let baz = $$('.parent').$$('.baz');
-    * expect(baz.getText()).toEqual(['1b']);
+    * expect(await baz.getText()).toEqual(['1b']);
     * let nonexistent = $$('.parent').$$('.NONEXISTENT');
-    * expect(nonexistent.getText()).toEqual(['']);
+    * expect(await nonexistent.getText()).toEqual(['']);
     *
-    * @param {webdriver.Locator} subLocator
+    * @param {Locator} locator
     * @returns {ElementArrayFinder}
     */
   def all(locator: protractorLib.builtLocatorsMod.Locator): ElementArrayFinder = js.native
@@ -112,23 +123,12 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     */
   def allowAnimations(value: scala.Boolean): ElementArrayFinder = js.native
   /**
-    * Apply an action function to every element in the ElementArrayFinder,
-    * and return a new ElementArrayFinder that contains the results of the
-    * actions.
-    *
-    * @param {function(ElementFinder)} actionFn
-    *
-    * @returns {ElementArrayFinder}
-    * @private
-    */
-  /* private */ def applyAction_(actionFn: js.Any): js.Any = js.native
-  /**
     * Represents the ElementArrayFinder as an array of ElementFinders.
     *
-    * @returns {Array.<ElementFinder>} Return a promise, which resolves to a list
-    *     of ElementFinders specified by the locator.
+    * @returns {Promise<ElementFinder[]>} Return a promise, which resolves to a
+    *   list of ElementFinders specified by the locator.
     */
-  def asElementFinders_(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[ElementFinder]] = js.native
+  def asElementFinders_(): js.Promise[js.Array[ElementFinder]] = js.native
   /**
     * Count the number of elements represented by the ElementArrayFinder.
     *
@@ -142,17 +142,17 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     *
     * @example
     * let list = element.all(by.css('.items li'));
-    * expect(list.count()).toBe(3);
+    * expect(await list.count()).toBe(3);
     *
     * // Or using the shortcut $$() notation instead of element.all(by.css()):
     *
     * let list = $$('.items li');
-    * expect(list.count()).toBe(3);
+    * expect(await list.count()).toBe(3);
     *
-    * @returns {!webdriver.promise.Promise} A promise which resolves to the
+    * @returns {!Promise} A promise which resolves to the
     *     number of elements matching the locator.
     */
-  def count(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Double] = js.native
+  def count(): js.Promise[scala.Double] = js.native
   /**
     * Calls the input function on each ElementFinder represented by the
     * ElementArrayFinder.
@@ -166,25 +166,21 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     * </ul>
     *
     * @example
-    * element.all(by.css('.items li')).each(function(element, index) {
+    * await element.all(by.css('.items li')).each(async (element, index) => {
     *   // Will print 0 First, 1 Second, 2 Third.
-    *   element.getText().then(function (text) {
-    *     console.log(index, text);
-    *   });
+    *   console.log(index, await element.getText());
     * });
     *
     * // Or using the shortcut $$() notation instead of element.all(by.css()):
     *
-    * $$('.items li').each(function(element, index) {
+    * $$('.items li').each(async (element, index) => {
     *   // Will print 0 First, 1 Second, 2 Third.
-    *   element.getText().then(function (text) {
-    *     console.log(index, text);
-    *   });
+    *   console.log(index, await element.getText());
     * });
     *
     * @param {function(ElementFinder)} fn Input function
     *
-    * @returns {!webdriver.promise.Promise} A promise that will resolve when the
+    * @returns {!Promise} A promise that will resolve when the
     *     function has been called on all the ElementFinders. The promise will
     *     resolve to null.
     */
@@ -194,7 +190,7 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
       /* index */ js.UndefOr[scala.Double], 
       _
     ]
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_] = js.native
+  ): js.Promise[_] = js.native
   /**
     * Evaluates the input as if it were on the scope of the current underlying
     * elements.
@@ -235,25 +231,22 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     * </ul>
     *
     * @example
-    * element.all(by.css('.items li')).filter(function(elem, index) {
-    *   return elem.getText().then(function(text) {
-    *     return text === 'Third';
-    *   });
-    * }).first().click();
+    * await element.all(by.css('.items li'))
+    *   .filter(async (elem, index) => await elem.getText() === 'Third')
+    *   .first()
+    *   .click();
     *
     * // Or using the shortcut $$() notation instead of element.all(by.css()):
     *
-    * $$('.items li').filter(function(elem, index) {
-    *   return elem.getText().then(function(text) {
-    *     return text === 'Third';
-    *   });
-    * }).first().click();
+    * await $$('.items li')
+    *   .filter(async (elem, index) => await elem.getText() === 'Third')
+    *   .first()
+    *   .click();
     *
-    * @param {function(ElementFinder, number): webdriver.WebElement.Promise}
-    * filterFn
+    * @param {function(ElementFinder, number): boolean|Promise<boolean>} filterFn
     *     Filter function that will test if an element should be returned.
     *     filterFn can either return a boolean or a promise that resolves to a
-    * boolean
+    *     boolean.
     * @returns {!ElementArrayFinder} A ElementArrayFinder that represents an
     * array
     *     of element that satisfy the filter function.
@@ -262,7 +255,7 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     filterFn: js.Function2[
       /* element */ ElementFinder, 
       /* index */ js.UndefOr[scala.Double], 
-      scala.Boolean | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean]
+      scala.Boolean | js.Promise[scala.Boolean]
     ]
   ): ElementArrayFinder = js.native
   /**
@@ -279,19 +272,20 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     *
     * @example
     * let first = element.all(by.css('.items li')).first();
-    * expect(first.getText()).toBe('First');
+    * expect(await first.getText()).toBe('First');
     *
     * // Or using the shortcut $$() notation instead of element.all(by.css()):
     *
     * let first = $$('.items li').first();
-    * expect(first.getText()).toBe('First');
+    * expect(await first.getText()).toBe('First');
     *
     * @returns {ElementFinder} finder representing the first matching element
     */
   def first(): ElementFinder = js.native
+  def get(indexPromise: js.Promise[scala.Double]): ElementFinder = js.native
   /**
-    * Get an element within the ElementArrayFinder by index. The index starts at 0.
-    * Negative indices are wrapped (i.e. -i means ith element from last)
+    * Get an element within the ElementArrayFinder by index. The index starts at
+    * 0. Negative indices are wrapped (i.e. -i means ith element from last)
     * This does not actually retrieve the underlying element.
     *
     * @alias element.all(locator).get(index)
@@ -304,32 +298,31 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     *
     * @example
     * let list = element.all(by.css('.items li'));
-    * expect(list.get(0).getText()).toBe('First');
-    * expect(list.get(1).getText()).toBe('Second');
+    * expect(await list.get(0).getText()).toBe('First');
+    * expect(await list.get(1).getText()).toBe('Second');
     *
     * // Or using the shortcut $$() notation instead of element.all(by.css()):
     *
     * let list = $$('.items li');
-    * expect(list.get(0).getText()).toBe('First');
-    * expect(list.get(1).getText()).toBe('Second');
+    * expect(await list.get(0).getText()).toBe('First');
+    * expect(await list.get(1).getText()).toBe('Second');
     *
-    * @param {number|webdriver.promise.Promise} index Element index.
+    * @param {number|Promise} indexPromise Element index.
     * @returns {ElementFinder} finder representing element at the given index.
     */
-  def get(index: scala.Double): ElementFinder = js.native
-  def get(index: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Double]): ElementFinder = js.native
-  def getWebElements(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]] = js.native
+  def get(indexPromise: scala.Double): ElementFinder = js.native
+  def getWebElements(): js.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]] = js.native
   /**
     * Returns true if there are any elements present that match the finder.
     *
     * @alias element.all(locator).isPresent()
     *
     * @example
-    * expect($('.item').isPresent()).toBeTruthy();
+    * expect(await $('.item').isPresent()).toBeTruthy();
     *
     * @returns {Promise<boolean>}
     */
-  def isPresent(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] = js.native
+  def isPresent(): js.Promise[scala.Boolean] = js.native
   /**
     * Get the last matching element for the ElementArrayFinder. This does not
     * actually retrieve the underlying element.
@@ -344,12 +337,12 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     *
     * @example
     * let last = element.all(by.css('.items li')).last();
-    * expect(last.getText()).toBe('Third');
+    * expect(await last.getText()).toBe('Third');
     *
     * // Or using the shortcut $$() notation instead of element.all(by.css()):
     *
     * let last = $$('.items li').last();
-    * expect(last.getText()).toBe('Third');
+    * expect(await last.getText()).toBe('Third');
     *
     * @returns {ElementFinder} finder representing the last matching element
     */
@@ -367,7 +360,7 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     * // returns by.css('#ID1')
     * $$('#ID1').filter(filterFn).get(0).click().locator();
     *
-    * @returns {webdriver.Locator}
+    * @returns {Locator}
     */
   def locator(): protractorLib.builtLocatorsMod.Locator = js.native
   /**
@@ -384,13 +377,14 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     * </ul>
     *
     * @example
-    * let items = element.all(by.css('.items li')).map(function(elm, index) {
-    *   return {
-    *     index: index,
-    *     text: elm.getText(),
-    *     class: elm.getAttribute('class')
-    *   };
-    * });
+    * let items = await element.all(by.css('.items li'))
+    *   .map(async (elm, index) => {
+    *     return {
+    *       index: index,
+    *       text: await elm.getText(),
+    *       class: await elm.getAttribute('class')
+    *     };
+    *   });
     * expect(items).toEqual([
     *   {index: 0, text: 'First', class: 'one'},
     *   {index: 1, text: 'Second', class: 'two'},
@@ -399,11 +393,11 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     *
     * // Or using the shortcut $$() notation instead of element.all(by.css()):
     *
-    * let items = $$('.items li').map(function(elm, index) {
+    * let items = await $$('.items li').map(async (elm, index) => {
     *   return {
     *     index: index,
-    *     text: elm.getText(),
-    *     class: elm.getAttribute('class')
+    *     text: await elm.getText(),
+    *     class: await elm.getAttribute('class')
     *   };
     * });
     * expect(items).toEqual([
@@ -414,7 +408,7 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     *
     * @param {function(ElementFinder, number)} mapFn Map function that
     *     will be applied to each element.
-    * @returns {!webdriver.promise.Promise} A promise that resolves to an array
+    * @returns {!Promise} A promise that resolves to an array
     *     of values returned by the map function.
     */
   def map[T](
@@ -423,7 +417,7 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
       /* index */ js.UndefOr[scala.Double], 
       T | _
     ]
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[T]] = js.native
+  ): js.Promise[js.Array[T]] = js.native
   /**
     * Apply a reduce function against an accumulator and every element found
     * using the locator (from left-to-right). The reduce function has to reduce
@@ -441,21 +435,15 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     * </ul>
     *
     * @example
-    * let value = element.all(by.css('.items li')).reduce(function(acc, elem) {
-    *   return elem.getText().then(function(text) {
-    *     return acc + text + ' ';
-    *   });
-    * }, '');
+    * let value = await element.all(by.css('.items li'))
+    *   .reduce(async (acc, elem) => acc + (await elem.getText()) + ' ', '');
     *
     * expect(value).toEqual('First Second Third ');
     *
     * // Or using the shortcut $$() notation instead of element.all(by.css()):
     *
-    * let value = $$('.items li').reduce(function(acc, elem) {
-    *   return elem.getText().then(function(text) {
-    *     return acc + text + ' ';
-    *   });
-    * }, '');
+    * let value = await $$('.items li')
+    *   .reduce(async (acc, elem) => acc + (await elem.getText()) + ' ', '');
     *
     * expect(value).toEqual('First Second Third ');
     *
@@ -463,10 +451,10 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     *     reduceFn Reduce function that reduces every element into a single
     * value.
     * @param {*} initialValue Initial value of the accumulator.
-    * @returns {!webdriver.promise.Promise} A promise that resolves to the final
+    * @returns {!Promise} A promise that resolves to the final
     *     value of the accumulator.
     */
-  def reduce(reduceFn: js.Function, initialValue: js.Any): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_] = js.native
+  def reduce(reduceFn: js.Function, initialValue: js.Any): js.Promise[_] = js.native
   /**
     * Retrieve the elements represented by the ElementArrayFinder. The input
     * function is passed to the resulting promise, which resolves to an
@@ -481,36 +469,26 @@ class ElementArrayFinder protected () extends WebdriverWebElement {
     * </ul>
     *
     * @example
-    * element.all(by.css('.items li')).then(function(arr) {
-    *   expect(arr.length).toEqual(3);
-    * });
+    * const arr = await element.all(by.css('.items li'));
+    * expect(arr.length).toEqual(3);
     *
     * // Or using the shortcut $$() notation instead of element.all(by.css()):
     *
-    * $$('.items li').then(function(arr) {
-    *   expect(arr.length).toEqual(3);
-    * });
+    * const arr = $$('.items li');
+    * expect(arr.length).toEqual(3);
     *
     * @param {function(Array.<ElementFinder>)} fn
     * @param {function(Error)} errorFn
     *
-    * @returns {!webdriver.promise.Promise} A promise which will resolve to
+    * @returns {!Promise} A promise which will resolve to
     *     an array of ElementFinders represented by the ElementArrayFinder.
     */
-  def `then`[T](): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
+  def `then`[T](): js.Promise[T] = js.native
+  def `then`[T](fn: js.Function1[/* value */ js.Array[ElementFinder] | js.Array[_], T | js.Promise[T]]): js.Promise[T] = js.native
   def `then`[T](
-    fn: js.Function1[
-      /* value */ js.Array[ElementFinder] | js.Array[_], 
-      T | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[T]
-    ]
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def `then`[T](
-    fn: js.Function1[
-      /* value */ js.Array[ElementFinder] | js.Array[_], 
-      T | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[T]
-    ],
+    fn: js.Function1[/* value */ js.Array[ElementFinder] | js.Array[_], T | js.Promise[T]],
     errorFn: js.Function1[/* error */ js.Any, _]
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
+  ): js.Promise[T] = js.native
   /**
     * Returns an ElementFinder representation of ElementArrayFinder. It ensures
     * that the ElementArrayFinder resolves to one and only one underlying

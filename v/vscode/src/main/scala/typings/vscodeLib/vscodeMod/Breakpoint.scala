@@ -25,6 +25,10 @@ class Breakpoint protected () extends js.Object {
   		 */
   val hitCondition: js.UndefOr[java.lang.String] = js.native
   /**
+  		 * The unique ID of the breakpoint.
+  		 */
+  val id: java.lang.String = js.native
+  /**
   		 * An optional message that gets logged when this breakpoint is hit. Embedded expressions within {} are interpolated by the debug adapter.
   		 */
   val logMessage: js.UndefOr[java.lang.String] = js.native

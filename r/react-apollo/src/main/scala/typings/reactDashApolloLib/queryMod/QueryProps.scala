@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait QueryProps[TData, TVariables]
   extends reactDashApolloLib.typesMod.QueryOpts[TVariables] {
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  var onCompleted: js.UndefOr[js.Function1[/* data */ TData | js.Object, scala.Unit]] = js.undefined
+  var onCompleted: js.UndefOr[js.Function1[/* data */ TData, scala.Unit]] = js.undefined
   var onError: js.UndefOr[
     js.Function1[/* error */ apolloDashClientLib.apolloDashClientMod.ApolloError, scala.Unit]
   ] = js.undefined
@@ -28,7 +28,7 @@ object QueryProps {
     errorPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.ErrorPolicy = null,
     fetchPolicy: apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy = null,
     notifyOnNetworkStatusChange: js.UndefOr[scala.Boolean] = js.undefined,
-    onCompleted: /* data */ TData | js.Object => scala.Unit = null,
+    onCompleted: /* data */ TData => scala.Unit = null,
     onError: /* error */ apolloDashClientLib.apolloDashClientMod.ApolloError => scala.Unit = null,
     partialRefetch: js.UndefOr[scala.Boolean] = js.undefined,
     pollInterval: scala.Int | scala.Double = null,
