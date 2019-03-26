@@ -1,5 +1,5 @@
 [debug] PhaseRunner.scala:90 Ignored [id => typed-undo, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:201 Processing TsIdentLibrarySimple(typed-undo) [id => typed-undo, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:204 Processing TsIdentLibrarySimple(typed-undo) [id => typed-undo, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => typed-undo, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing typed-undo [id => typed-undo, phase => scala.js] 
 [error] PhaseRes.scala:76 Caught exception: Expected code path [id => typed-undo, phase => scala.js] java.lang.RuntimeException: Expected code path
@@ -8,7 +8,7 @@
 	at scala.Option.getOrElse(Option.scala:138)
 	at com.olvind.tso.ts.CodePath.forceHasPath(CodePath.scala:11)
 	at com.olvind.tso.ts.CodePath.forceHasPath$(CodePath.scala:10)
-	at com.olvind.tso.ts.CodePath$NoPath$.forceHasPath(CodePath.scala:29)
+	at com.olvind.tso.ts.CodePath$NoPath$.forceHasPath(CodePath.scala:30)
 	at com.olvind.tso.importer.ImportTree$.apply(ImportTree.scala:27)
 	at com.olvind.tso.importer.Phase2ToScalaJs.$anonfun$apply$3(Phase2ToScalaJs.scala:61)
 	at com.olvind.tso.phases.PhaseRes.map(PhaseRes.scala:16)
@@ -43,7 +43,7 @@
 	at com.olvind.tso.phases.PhaseCache.getOrElse(PhaseCache.scala:39)
 	at com.olvind.tso.phases.PhaseRunner$.doNext(PhaseRunner.scala:47)
 	at com.olvind.tso.phases.PhaseRunner$.go(PhaseRunner.scala:28)
-	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:198)
+	at com.olvind.tso.importer.Main$.$anonfun$results$1(Main.scala:199)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner(RemainsIterator.scala:116)
 	at scala.collection.parallel.AugmentedIterableIterator.map2combiner$(RemainsIterator.scala:113)
 	at scala.collection.parallel.immutable.ParVector$ParVectorIterator.map2combiner(ParVector.scala:66)

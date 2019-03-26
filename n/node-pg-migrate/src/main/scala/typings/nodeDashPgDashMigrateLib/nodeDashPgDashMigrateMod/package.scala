@@ -18,5 +18,13 @@ package object nodeDashPgDashMigrateMod {
   type SequenceOptionsCreate = SequenceOptionsCreateEn with SequenceOptions
   type TriggerOptions = TriggerOptionsEn with FunctionOptions
   type Type = java.lang.String | nodeDashPgDashMigrateLib.Anon_Type
+  /* Rewritten from type alias, can be one of: 
+    - scala.Null
+    - scala.Boolean
+    - java.lang.String
+    - scala.Double
+    - PgLiteral
+    - ValueArray
+  */
   type Value = _Value | scala.Null | scala.Boolean | java.lang.String | scala.Double
 }

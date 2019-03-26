@@ -84,6 +84,13 @@ trait Worker
 
 @JSGlobal("Worker")
 @js.native
+class WorkerCls protected () extends Worker {
+  def this(stringUrl: java.lang.String) = this()
+  def this(stringUrl: java.lang.String, options: WorkerOptions) = this()
+}
+
+@JSGlobal("Worker")
+@js.native
 object Worker
   extends org.scalablytyped.runtime.Instantiable1[/* stringUrl */ java.lang.String, Worker]
      with org.scalablytyped.runtime.Instantiable2[/* stringUrl */ java.lang.String, /* options */ WorkerOptions, Worker]

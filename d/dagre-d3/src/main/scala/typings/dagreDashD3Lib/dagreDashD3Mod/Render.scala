@@ -46,3 +46,7 @@ trait Render extends js.Object {
   ] = js.native
 }
 
+@JSImport("dagre-d3", "render")
+@js.native
+class render () extends Render
+

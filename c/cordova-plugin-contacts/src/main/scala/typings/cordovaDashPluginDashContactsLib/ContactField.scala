@@ -28,6 +28,24 @@ trait ContactField extends js.Object {
 
 @JSGlobal("ContactField")
 @js.native
+/** Constructor for ContactField object */
+class ContactFieldCls () extends ContactField {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, value: java.lang.String) = this()
+  def this(`type`: java.lang.String, value: java.lang.String, pref: scala.Boolean) = this()
+  /** Set to true if this ContactField contains the user's preferred value. */
+  /* CompleteClass */
+  override var pref: scala.Boolean = js.native
+  /** A string that indicates what type of field this is, home for example. */
+  /* CompleteClass */
+  override var `type`: java.lang.String = js.native
+  /** The value of the field, such as a phone number or email address. */
+  /* CompleteClass */
+  override var value: java.lang.String = js.native
+}
+
+@JSGlobal("ContactField")
+@js.native
 object ContactField
   extends /** Constructor for ContactField object */
 org.scalablytyped.runtime.Instantiable0[ContactField]

@@ -28,21 +28,21 @@ object DefaultLinkModelListener {
     entityRemoved: /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[
       stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModel[
         stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseListener[_]], 
-        stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener
+        DefaultLinkModelListener
       ]
     ] => scala.Unit = null,
     lockChanged: /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[js.Any] with stormDashReactDashDiagramsLib.Anon_Locked => scala.Unit = null,
     selectionChanged: /* event */ (stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[
       stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModel[
         stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseListener[_]], 
-        stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener
+        DefaultLinkModelListener
       ]
     ]) with stormDashReactDashDiagramsLib.Anon_IsSelected => scala.Unit = null,
     sourcePortChanged: /* event */ (stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[
-      stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener]
+      stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[DefaultLinkModelListener]
     ]) with stormDashReactDashDiagramsLib.Anon_Port => scala.Unit = null,
     targetPortChanged: /* event */ (stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[
-      stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener]
+      stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[DefaultLinkModelListener]
     ]) with stormDashReactDashDiagramsLib.Anon_Port => scala.Unit = null,
     widthChanged: /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[DefaultLinkModel] with stormDashReactDashDiagramsLib.Anon_0 => scala.Unit = null
   ): DefaultLinkModelListener = {

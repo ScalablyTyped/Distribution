@@ -17,7 +17,7 @@ class GetSmsDeviceOperation ()
   /* CompleteClass */
   override var id: scala.Double = js.native
   @JSName("operation")
-  var operation_GetSmsDeviceOperation: winrtLib.Anon_AsyncInfoAsyncStatusCompletedGetResultsAsyncOperationCompletedHandler = js.native
+  var operation_GetSmsDeviceOperation: winrtLib.Anon_CompletedGetResultsAsyncOperationCompletedHandlerSmsDevice = js.native
   /* CompleteClass */
   override var status: winrtLib.WindowsNs.FoundationNs.AsyncStatus = js.native
   /* InferMemberOverrides */

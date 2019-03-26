@@ -334,3 +334,9 @@ trait Howl extends js.Object {
   def volume(volume: scala.Double, id: scala.Double): this.type = js.native
 }
 
+@JSGlobal("Howl")
+@js.native
+class HowlCls protected () extends Howl {
+  def this(properties: IHowlProperties) = this()
+}
+

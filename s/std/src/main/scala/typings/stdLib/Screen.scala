@@ -17,6 +17,25 @@ trait Screen extends js.Object {
 
 @JSGlobal("Screen")
 @js.native
+class ScreenCls () extends Screen {
+  /* CompleteClass */
+  override val availHeight: scala.Double = js.native
+  /* CompleteClass */
+  override val availWidth: scala.Double = js.native
+  /* CompleteClass */
+  override val colorDepth: scala.Double = js.native
+  /* CompleteClass */
+  override val height: scala.Double = js.native
+  /* CompleteClass */
+  override val orientation: ScreenOrientation = js.native
+  /* CompleteClass */
+  override val pixelDepth: scala.Double = js.native
+  /* CompleteClass */
+  override val width: scala.Double = js.native
+}
+
+@JSGlobal("Screen")
+@js.native
 object Screen
   extends org.scalablytyped.runtime.Instantiable0[Screen]
 

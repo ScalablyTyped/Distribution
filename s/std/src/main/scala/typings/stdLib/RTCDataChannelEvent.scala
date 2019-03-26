@@ -12,6 +12,12 @@ trait RTCDataChannelEvent extends Event {
 
 @JSGlobal("RTCDataChannelEvent")
 @js.native
+class RTCDataChannelEventCls protected () extends RTCDataChannelEvent {
+  def this(`type`: java.lang.String, eventInitDict: RTCDataChannelEventInit) = this()
+}
+
+@JSGlobal("RTCDataChannelEvent")
+@js.native
 object RTCDataChannelEvent
   extends org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 

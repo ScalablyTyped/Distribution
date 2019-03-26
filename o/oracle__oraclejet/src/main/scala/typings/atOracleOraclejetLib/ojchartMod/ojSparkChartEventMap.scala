@@ -16,7 +16,7 @@ trait ojSparkChartEventMap[K, D]
   ]
   var areaColorChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String]
   var areaSvgClassNameChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String]
-  var areaSvgStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var areaSvgStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var asChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String]
   var barGapRatioChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double]
   var baselineScalingChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
@@ -41,7 +41,7 @@ trait ojSparkChartEventMap[K, D]
   var markerSizeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double]
   var referenceObjectsChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojchartMod.ojSparkChartNs.ReferenceObject]]
   var svgClassNameChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String]
-  var svgStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var svgStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var tooltipChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_ContextRenderer]
   var typeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.area | atOracleOraclejetLib.atOracleOraclejetLibStrings.lineWithArea | atOracleOraclejetLib.atOracleOraclejetLibStrings.bar | atOracleOraclejetLib.atOracleOraclejetLibStrings.line
@@ -68,7 +68,7 @@ object ojSparkChartEventMap {
     animationstart: stdLib.AnimationEvent,
     areaColorChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String],
     areaSvgClassNameChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String],
-    areaSvgStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    areaSvgStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     asChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String],
     auxclick: stdLib.Event,
     barGapRatioChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double],
@@ -164,7 +164,7 @@ object ojSparkChartEventMap {
     submit: stdLib.Event,
     suspend: stdLib.Event,
     svgClassNameChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String],
-    svgStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    svgStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     timeupdate: stdLib.Event,
     toggle: stdLib.Event,
     tooltipChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_ContextRenderer],

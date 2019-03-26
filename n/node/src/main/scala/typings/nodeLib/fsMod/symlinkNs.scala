@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation._
 @JSImport("fs", "symlink")
 @js.native
 object symlinkNs extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - nodeLib.nodeLibStrings.dir
+    - nodeLib.nodeLibStrings.file
+    - nodeLib.nodeLibStrings.junction
+  */
   trait Type extends js.Object
   
   /**

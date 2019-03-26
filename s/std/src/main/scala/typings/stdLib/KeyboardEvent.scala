@@ -46,6 +46,13 @@ trait KeyboardEvent extends UIEvent {
 
 @JSGlobal("KeyboardEvent")
 @js.native
+class KeyboardEventCls protected () extends KeyboardEvent {
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: KeyboardEventInit) = this()
+}
+
+@JSGlobal("KeyboardEvent")
+@js.native
 object KeyboardEvent
   extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, KeyboardEvent]
      with org.scalablytyped.runtime.Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ KeyboardEventInit, KeyboardEvent] {

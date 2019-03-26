@@ -186,6 +186,10 @@ trait IDBDatabase extends EventTarget {
 
 @JSGlobal("IDBDatabase")
 @js.native
+class IDBDatabaseCls () extends IDBDatabase
+
+@JSGlobal("IDBDatabase")
+@js.native
 object IDBDatabase
   extends org.scalablytyped.runtime.Instantiable0[IDBDatabase]
 

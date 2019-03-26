@@ -44,18 +44,14 @@ object ^ extends js.Object {
   def createStackNavigator(routeConfigMap: NavigationRouteConfigMap, stackConfig: StackNavigatorConfig): NavigationContainer = js.native
   def createSwitchNavigator(routeConfigMap: NavigationRouteConfigMap): NavigationContainer = js.native
   def createSwitchNavigator(routeConfigMap: NavigationRouteConfigMap, switchConfig: SwitchNavigatorConfig): NavigationContainer = js.native
-  def withNavigation[P /* <: NavigationInjectedProps[NavigationParams] */](Component: reactLib.reactMod.ReactNs.ComponentType[P]): reactLib.reactMod.ReactNs.ComponentType[Omit[P, reactDashNavigationLib.reactDashNavigationLibStrings.navigation]] = js.native
+  def withNavigation[P /* <: NavigationInjectedProps[NavigationParams] */](Component: reactLib.reactMod.ReactNs.ComponentType[P]): reactLib.reactMod.ReactNs.ComponentType[Omit[P, java.lang.String]] = js.native
   def withNavigation[P /* <: NavigationInjectedProps[NavigationParams] */, T /* <: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState] */](
     Component: T with (reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState])
-  ): reactLib.reactMod.ReactNs.ComponentType[
-    (Omit[P, reactDashNavigationLib.reactDashNavigationLibStrings.navigation]) with reactDashNavigationLib.Anon_OnRef[T]
-  ] = js.native
-  def withNavigationFocus[P /* <: NavigationFocusInjectedProps[NavigationParams] */](Component: reactLib.reactMod.ReactNs.ComponentType[P]): reactLib.reactMod.ReactNs.ComponentType[Omit[P, reactDashNavigationLib.reactDashNavigationLibStrings.isFocused]] = js.native
+  ): reactLib.reactMod.ReactNs.ComponentType[(Omit[P, java.lang.String]) with reactDashNavigationLib.Anon_OnRef[T]] = js.native
+  def withNavigationFocus[P /* <: NavigationFocusInjectedProps[NavigationParams] */](Component: reactLib.reactMod.ReactNs.ComponentType[P]): reactLib.reactMod.ReactNs.ComponentType[Omit[P, java.lang.String]] = js.native
   def withNavigationFocus[P /* <: NavigationFocusInjectedProps[NavigationParams] */, T /* <: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState] */](
     Component: T with (reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState])
-  ): reactLib.reactMod.ReactNs.ComponentType[
-    (Omit[P, reactDashNavigationLib.reactDashNavigationLibStrings.isFocused]) with reactDashNavigationLib.Anon_OnRef[T]
-  ] = js.native
+  ): reactLib.reactMod.ReactNs.ComponentType[(Omit[P, java.lang.String]) with reactDashNavigationLib.Anon_OnRef[T]] = js.native
   @JSName("withNavigationFocus")
   def withNavigationFocus_TP[T, P](Component: reactLib.reactMod.ReactNs.ComponentType[T with NavigationFocusInjectedProps[P]]): reactLib.reactMod.ReactNs.ComponentType[T with (reactDashNavigationLib.Anon_OnRefAnyComponent[T, P])] = js.native
   @JSName("withNavigation")

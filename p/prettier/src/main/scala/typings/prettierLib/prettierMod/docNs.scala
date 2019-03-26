@@ -90,6 +90,19 @@ object docNs extends js.Object {
     def join(separator: Doc, parts: js.Array[Doc]): Concat = js.native
     def lineSuffix(contents: Doc): LineSuffix = js.native
     def markAsRoot(contents: Doc): Align = js.native
+    /* Rewritten from type alias, can be one of: 
+      - java.lang.String
+      - Align
+      - BreakParent
+      - Concat
+      - Fill
+      - Group
+      - IfBreak
+      - Indent
+      - Line
+      - LineSuffix
+      - LineSuffixBoundary
+    */
     type Doc = _Doc | java.lang.String
   }
   

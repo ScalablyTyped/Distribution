@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerIHashMapMod.IHashMap because var conflicts: data_, iterator. Inlined begin, begin, end, end */ @JSImport("tstl/container/HashMultiMap", "HashMultiMap")
+- tstlLib.baseContainerIHashMapMod.IHashMap because var conflicts: data_, iterator. Inlined  */ @JSImport("tstl/container/HashMultiMap", "HashMultiMap")
 @js.native
 /**
   * Default Constructor.
@@ -80,22 +80,9 @@ class HashMultiMap[Key, T] ()
     */
   var buckets_ : js.Any = js.native
   /**
-    * Iterator to the first element in a specific bucket.
-    *
-    * @param index Index number of the specific bucket.
-    * @return Iterator from the specific bucket.
-    */
-  def begin(index: scala.Double): tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, tstlLib.tstlLibNumbers.`false`, HashMultiMap[Key, T]] = js.native
-  /**
     * @inheritDoc
     */
-  @JSName("begin")
-  def begin_Iterator(): tstlLib.containerHashMultiMapMod.HashMultiMapNs.Iterator[Key, T] = js.native
-  /**
-    * @inheritDoc
-    */
-  @JSName("begin")
-  def begin_Iterator(index: scala.Double): tstlLib.containerHashMultiMapMod.HashMultiMapNs.Iterator[Key, T] = js.native
+  def begin(index: scala.Double): tstlLib.containerHashMultiMapMod.HashMultiMapNs.Iterator[Key, T] = js.native
   /**
     * @inheritDoc
     */
@@ -109,22 +96,9 @@ class HashMultiMap[Key, T] ()
     */
   def bucket_size(index: scala.Double): scala.Double = js.native
   /**
-    * Iterator to the end in a specific bucket.
-    *
-    * @param index Index number of the specific bucket.
-    * @return Iterator from the specific bucket.
-    */
-  def end(index: scala.Double): tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, tstlLib.tstlLibNumbers.`false`, HashMultiMap[Key, T]] = js.native
-  /**
     * @inheritDoc
     */
-  @JSName("end")
-  def end_Iterator(): tstlLib.containerHashMultiMapMod.HashMultiMapNs.Iterator[Key, T] = js.native
-  /**
-    * @inheritDoc
-    */
-  @JSName("end")
-  def end_Iterator(index: scala.Double): tstlLib.containerHashMultiMapMod.HashMultiMapNs.Iterator[Key, T] = js.native
+  def end(index: scala.Double): tstlLib.containerHashMultiMapMod.HashMultiMapNs.Iterator[Key, T] = js.native
   /**
     * @inheritDoc
     */

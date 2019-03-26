@@ -32,6 +32,57 @@ trait ExecutionOptions extends js.Object {
   def setHints(hints: js.Array[java.lang.String]): scala.Unit
 }
 
+@JSImport("cassandra-driver", "ExecutionOptions")
+@js.native
+class ExecutionOptionsCls () extends ExecutionOptions {
+  /* CompleteClass */
+  override def getCaptureStackTrace(): scala.Boolean = js.native
+  /* CompleteClass */
+  override def getConsistency(): cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies = js.native
+  /* CompleteClass */
+  override def getCustomPayload(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  /* CompleteClass */
+  override def getFetchSize(): scala.Double = js.native
+  /* CompleteClass */
+  override def getFixedHost(): Host = js.native
+  /* CompleteClass */
+  override def getHints(): js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]] = js.native
+  /* CompleteClass */
+  override def getKeyspace(): java.lang.String = js.native
+  /* CompleteClass */
+  override def getLoadBalancingPolicy(): cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.loadBalancingNs.LoadBalancingPolicy = js.native
+  /* CompleteClass */
+  override def getPageState(): nodeLib.Buffer = js.native
+  /* CompleteClass */
+  override def getRawQueryOptions(): QueryOptions = js.native
+  /* CompleteClass */
+  override def getReadTimeout(): scala.Double = js.native
+  /* CompleteClass */
+  override def getRetryPolicy(): cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.retryNs.RetryPolicy = js.native
+  /* CompleteClass */
+  override def getRoutingKey(): nodeLib.Buffer | js.Array[nodeLib.Buffer] = js.native
+  /* CompleteClass */
+  override def getSerialConsistency(): cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies = js.native
+  /* CompleteClass */
+  override def getTimestamp(): js.UndefOr[
+    scala.Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Long */ js.Any) | scala.Null
+  ] = js.native
+  /* CompleteClass */
+  override def isAutoPage(): scala.Boolean = js.native
+  /* CompleteClass */
+  override def isBatchCounter(): scala.Boolean = js.native
+  /* CompleteClass */
+  override def isBatchLogged(): scala.Boolean = js.native
+  /* CompleteClass */
+  override def isIdempotent(): scala.Boolean = js.native
+  /* CompleteClass */
+  override def isPrepared(): scala.Boolean = js.native
+  /* CompleteClass */
+  override def isQueryTracing(): scala.Boolean = js.native
+  /* CompleteClass */
+  override def setHints(hints: js.Array[java.lang.String]): scala.Unit = js.native
+}
+
 object ExecutionOptions {
   @scala.inline
   def apply(

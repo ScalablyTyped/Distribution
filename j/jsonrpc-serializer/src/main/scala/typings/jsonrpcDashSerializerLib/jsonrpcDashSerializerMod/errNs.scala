@@ -8,8 +8,29 @@ import scala.scalajs.js.annotation._
 @JSImport("jsonrpc-serializer", "err")
 @js.native
 object errNs extends js.Object {
+  // const ErrorName = {
+  //    JsonRpcError: 'JsonRpcError' as ErrorName,
+  //    ParseError: 'ParseError' as ErrorName,
+  //    InvalidRequestError: 'InvalidRequestError' as ErrorName,
+  //    MethodNotFoundError: 'MethodNotFoundError' as ErrorName,
+  //    InvalidParamsError: 'InvalidParamsError' as ErrorName
+  // };
+  /* Rewritten from type alias, can be one of: 
+    - jsonrpcDashSerializerLib.jsonrpcDashSerializerLibNumbers.`-32603`
+    - jsonrpcDashSerializerLib.jsonrpcDashSerializerLibNumbers.`-32700`
+    - jsonrpcDashSerializerLib.jsonrpcDashSerializerLibNumbers.`-32600`
+    - jsonrpcDashSerializerLib.jsonrpcDashSerializerLibNumbers.`-32601`
+    - jsonrpcDashSerializerLib.jsonrpcDashSerializerLibNumbers.`-32602`
+  */
   trait ErrorCode extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - jsonrpcDashSerializerLib.jsonrpcDashSerializerLibStrings.JsonRpcError
+    - jsonrpcDashSerializerLib.jsonrpcDashSerializerLibStrings.ParseError
+    - jsonrpcDashSerializerLib.jsonrpcDashSerializerLibStrings.InvalidRequestError
+    - jsonrpcDashSerializerLib.jsonrpcDashSerializerLibStrings.MethodNotFoundError
+    - jsonrpcDashSerializerLib.jsonrpcDashSerializerLibStrings.InvalidParamsError
+  */
   trait ErrorName extends js.Object
   
   @js.native

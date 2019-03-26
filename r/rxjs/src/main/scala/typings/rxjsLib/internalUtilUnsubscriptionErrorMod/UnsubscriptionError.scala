@@ -10,6 +10,18 @@ trait UnsubscriptionError
   val errors: js.Array[_]
 }
 
+@JSImport("rxjs/internal/util/UnsubscriptionError", "UnsubscriptionError")
+@js.native
+class UnsubscriptionErrorCls protected () extends UnsubscriptionError {
+  def this(errors: js.Array[_]) = this()
+  /* CompleteClass */
+  override val errors: js.Array[_] = js.native
+  /* CompleteClass */
+  override var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
+}
+
 object UnsubscriptionError {
   @scala.inline
   def apply(

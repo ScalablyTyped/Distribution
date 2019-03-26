@@ -130,3 +130,8 @@ trait Parser[O /* <: js.UndefOr[js.Object] */] extends js.Object {
   def uint8[N /* <: java.lang.String */](name: N, options: binaryDashParserLib.binaryDashParserMod.ParserNs.Options): binaryDashParserLib.binaryDashParserMod.ParserNs.Next[O, N, scala.Double] = js.native
 }
 
+@JSImport("binary-parser", "Parser")
+@js.native
+class ParserCls ()
+  extends Parser[js.UndefOr[scala.Nothing]]
+

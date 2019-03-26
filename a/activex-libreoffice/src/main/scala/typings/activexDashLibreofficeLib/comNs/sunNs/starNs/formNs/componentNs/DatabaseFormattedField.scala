@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /** This service specifies a formatted field model which is data-aware, and can be bound to a database field. */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.componentNs.FormattedField because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined getPropertyValues, getPropertyValues, setPropertyValues, setPropertyValues */ @js.native
+- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.componentNs.FormattedField because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
 trait DatabaseFormattedField
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.DataAwareControlModel {
   /**

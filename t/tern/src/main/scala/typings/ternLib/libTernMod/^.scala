@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   val Server: TernConstructor = js.native
   val version: java.lang.String = js.native
-  def defineQueryType[T /* <: js.Any */](name: T, desc: Desc[T]): scala.Unit = js.native
+  def defineQueryType[T /* <: scala.Nothing */](name: T, desc: Desc[T]): scala.Unit = js.native
   def registerPlugin(
     name: java.lang.String,
     init: js.Function2[/* server */ Server, /* options */ js.UndefOr[ConstructorOptions], scala.Unit]

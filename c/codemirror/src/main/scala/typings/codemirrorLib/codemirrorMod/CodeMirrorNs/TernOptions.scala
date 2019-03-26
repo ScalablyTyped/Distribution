@@ -54,7 +54,7 @@ trait TernOptions extends js.Object {
       /* request */ ternLib.libTernMod.Document, 
       /* error */ js.UndefOr[stdLib.Error], 
       /* data */ js.UndefOr[
-        /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[any]['result'] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[never]['result'] */ js.Any
       ], 
       _
     ]
@@ -96,7 +96,7 @@ object TernOptions {
     getFile: (/* name */ java.lang.String, /* callback */ js.Function1[/* doc */ Doc | scala.Null, _]) => _ = null,
     plugins: org.scalablytyped.runtime.StringDictionary[js.Object] = null,
     responseFilter: (/* doc */ Doc, /* query */ ternLib.libTernMod.Query, /* request */ ternLib.libTernMod.Document, /* error */ js.UndefOr[stdLib.Error], /* data */ js.UndefOr[
-      /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[any]['result'] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[never]['result'] */ js.Any
     ]) => _ = null,
     showError: (/* editor */ Editor, /* message */ stdLib.Error) => _ = null,
     switchToDoc: (/* name */ java.lang.String, /* doc */ Doc) => _ = null,

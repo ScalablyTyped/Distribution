@@ -47,3 +47,9 @@ trait BasemapToggleViewModel
   def toggle(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.BasemapToggleViewModel")
+@js.native
+class BasemapToggleViewModelCls () extends BasemapToggleViewModel {
+  def this(properties: BasemapToggleViewModelProperties) = this()
+}
+

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerIHashMapMod.IHashMap because var conflicts: data_, iterator. Inlined begin, begin, end, end */ @JSImport("tstl/container/HashMap", "HashMap")
+- tstlLib.baseContainerIHashMapMod.IHashMap because var conflicts: data_, iterator. Inlined  */ @JSImport("tstl/container/HashMap", "HashMap")
 @js.native
 /**
   * Default Constructor.
@@ -86,19 +86,6 @@ class HashMap[Key, T] ()
   /**
     * @inheritDoc
     */
-  @JSName("begin")
-  def begin_MapIterator(): tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, tstlLib.tstlLibNumbers.`true`, HashMap[Key, T]] = js.native
-  /**
-    * Iterator to the first element in a specific bucket.
-    *
-    * @param index Index number of the specific bucket.
-    * @return Iterator from the specific bucket.
-    */
-  @JSName("begin")
-  def begin_MapIterator(index: scala.Double): tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, tstlLib.tstlLibNumbers.`true`, HashMap[Key, T]] = js.native
-  /**
-    * @inheritDoc
-    */
   def bucket(key: Key): scala.Double = js.native
   /**
     * @inheritDoc
@@ -112,19 +99,6 @@ class HashMap[Key, T] ()
     * @inheritDoc
     */
   def end(index: scala.Double): tstlLib.containerHashMapMod.HashMapNs.Iterator[Key, T] = js.native
-  /**
-    * @inheritDoc
-    */
-  @JSName("end")
-  def end_MapIterator(): tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, tstlLib.tstlLibNumbers.`true`, HashMap[Key, T]] = js.native
-  /**
-    * Iterator to the end in a specific bucket.
-    *
-    * @param index Index number of the specific bucket.
-    * @return Iterator from the specific bucket.
-    */
-  @JSName("end")
-  def end_MapIterator(index: scala.Double): tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, tstlLib.tstlLibNumbers.`true`, HashMap[Key, T]] = js.native
   /**
     * @inheritDoc
     */

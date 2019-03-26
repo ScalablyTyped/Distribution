@@ -19,6 +19,11 @@ object editorNs extends js.Object {
     val zoomLevel: scala.Double = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - monacoDashEditorLib.monacoDashEditorLibStrings.vs
+    - monacoDashEditorLib.monacoDashEditorLibStrings.`vs-dark`
+    - monacoDashEditorLib.monacoDashEditorLibStrings.`hc-black`
+  */
   trait BuiltinTheme extends js.Object
   
   @js.native
@@ -30,8 +35,20 @@ object editorNs extends js.Object {
   @js.native
   sealed trait DefaultEndOfLine extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - monacoDashEditorLib.monacoDashEditorLibStrings.always
+    - monacoDashEditorLib.monacoDashEditorLibStrings.languageDefined
+    - monacoDashEditorLib.monacoDashEditorLibStrings.beforeWhitespace
+    - monacoDashEditorLib.monacoDashEditorLibStrings.never
+  */
   trait EditorAutoClosingStrategy extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - monacoDashEditorLib.monacoDashEditorLibStrings.languageDefined
+    - monacoDashEditorLib.monacoDashEditorLibStrings.quotes
+    - monacoDashEditorLib.monacoDashEditorLibStrings.brackets
+    - monacoDashEditorLib.monacoDashEditorLibStrings.never
+  */
   trait EditorAutoSurroundStrategy extends js.Object
   
   trait EditorContribOptions extends js.Object {
@@ -1192,6 +1209,10 @@ object editorNs extends js.Object {
       ] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - ITextModel
+    - IDiffEditorModel
+  */
   trait IEditorModel extends js.Object
   
   trait IEditorMouseEvent extends js.Object {
@@ -1772,6 +1793,10 @@ object editorNs extends js.Object {
     var verticalSliderSize: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - ICodeEditorViewState
+    - IDiffEditorViewState
+  */
   trait IEditorViewState extends js.Object
   
   trait IIdentifiedSingleEditOperation extends js.Object {

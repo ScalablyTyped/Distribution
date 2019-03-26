@@ -6,17 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Family extends js.Object {
-  var family: js.Any
-  var size: js.Any
-  var stretch: js.Any
-  var style: js.Any
-  var variant: js.Any
-  var weight: js.Any
+  var family: scala.Nothing
+  var size: scala.Nothing
+  var stretch: scala.Nothing
+  var style: scala.Nothing
+  var variant: scala.Nothing
+  var weight: scala.Nothing
 }
 
 object Anon_Family {
   @scala.inline
-  def apply(family: js.Any, size: js.Any, stretch: js.Any, style: js.Any, variant: js.Any, weight: js.Any): Anon_Family = {
+  def apply(
+    family: scala.Nothing,
+    size: scala.Nothing,
+    stretch: scala.Nothing,
+    style: scala.Nothing,
+    variant: scala.Nothing,
+    weight: scala.Nothing
+  ): Anon_Family = {
     val __obj = js.Dynamic.literal(family = family, size = size, stretch = stretch, style = style, variant = variant, weight = weight)
   
     __obj.asInstanceOf[Anon_Family]

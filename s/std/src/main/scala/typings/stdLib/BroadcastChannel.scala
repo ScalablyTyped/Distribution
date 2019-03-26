@@ -93,6 +93,12 @@ trait BroadcastChannel extends EventTarget {
 
 @JSGlobal("BroadcastChannel")
 @js.native
+class BroadcastChannelCls protected () extends BroadcastChannel {
+  def this(name: java.lang.String) = this()
+}
+
+@JSGlobal("BroadcastChannel")
+@js.native
 object BroadcastChannel
   extends org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, BroadcastChannel]
 

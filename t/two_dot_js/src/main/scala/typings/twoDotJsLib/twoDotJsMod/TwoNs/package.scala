@@ -12,6 +12,11 @@ package object TwoNs {
     scala.Double
   ]
   type Circle = Path
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - LinearGradient
+    - RadialGradient
+  */
   type Color = _Color | java.lang.String
   type Ellipse = Path
   type Line = Path

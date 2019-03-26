@@ -6,25 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Delay extends js.Object {
-  var delay: js.Any
-  var direction: js.Any
-  var duration: js.Any
-  var iterationCount: js.Any
-  var name: js.Any
-  var playState: js.Any
-  var timingFunction: js.Any
+  var delay: scala.Nothing
+  var direction: scala.Nothing
+  var duration: scala.Nothing
+  var iterationCount: scala.Nothing
+  var name: scala.Nothing
+  var playState: scala.Nothing
+  var timingFunction: scala.Nothing
 }
 
 object Anon_Delay {
   @scala.inline
   def apply(
-    delay: js.Any,
-    direction: js.Any,
-    duration: js.Any,
-    iterationCount: js.Any,
-    name: js.Any,
-    playState: js.Any,
-    timingFunction: js.Any
+    delay: scala.Nothing,
+    direction: scala.Nothing,
+    duration: scala.Nothing,
+    iterationCount: scala.Nothing,
+    name: scala.Nothing,
+    playState: scala.Nothing,
+    timingFunction: scala.Nothing
   ): Anon_Delay = {
     val __obj = js.Dynamic.literal(delay = delay, direction = direction, duration = duration, iterationCount = iterationCount, name = name, playState = playState, timingFunction = timingFunction)
   

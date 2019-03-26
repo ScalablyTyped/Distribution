@@ -20,7 +20,7 @@ trait Anon_AccessAccessSync extends js.Object {
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val chownNs: Anon_Gid = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val closeNs: Anon_FdPromisifyNumber = js.native
+  val closeNs: Anon_FdPromisify = js.native
   val constantsNs: Anon_COPYFILEEXCL = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val copyFileNs: Anon_Dst = js.native
@@ -29,15 +29,15 @@ trait Anon_AccessAccessSync extends js.Object {
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val fchmodNs: Anon_FdMode = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val fchownNs: Anon_FdGid = js.native
+  val fchownNs: Anon_Fd = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val fdatasyncNs: Anon_FdPromisifyNumber = js.native
+  val fdatasyncNs: Anon_FdPromisify = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val fstatNs: Anon_FdPromisify = js.native
+  val fstatNs: Anon_FdPromisifyNumber = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val fsyncNs: Anon_FdPromisifyNumber = js.native
+  val fsyncNs: Anon_FdPromisify = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val ftruncateNs: Anon_Fd = js.native
+  val ftruncateNs: Anon_FdLen = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val futimesNs: Anon_AtimeFd = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
@@ -47,37 +47,37 @@ trait Anon_AccessAccessSync extends js.Object {
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val linkNs: Anon_ExistingPath = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val lstatNs: Anon_Path = js.native
+  val lstatNs: Anon_PathPromisify = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val mkdirNs: Anon_Options = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val mkdtempNs: Anon_BufferOptions = js.native
+  val mkdtempNs: Anon_BufferOptionsPrefix = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val openNs: Anon_Flags = js.native
   val promisesNs: Anon_Access = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val readFileNs: Anon_OptionsPath = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val readNs: Anon_BufferFd = js.native
+  val readNs: Anon_Buffer = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val readdirNs: Anon_BufferOptionsPath = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val readlinkNs: Anon_Buffer = js.native
+  val readlinkNs: Anon_BufferOptions = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val realpathNs: Anon_BufferCallback = js.native
   val realpathSyncNs: Anon_BufferNative = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val renameNs: Anon_NewPath = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val rmdirNs: Anon_PathPromisifyPathLike = js.native
+  val rmdirNs: Anon_Path = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val statNs: Anon_Path = js.native
+  val statNs: Anon_PathPromisify = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val symlinkNs: Anon_PathPromisify = js.native
+  val symlinkNs: Anon_PathPromisifyTarget = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val truncateNs: Anon_Len = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val unlinkNs: Anon_PathPromisifyPathLike = js.native
+  val unlinkNs: Anon_Path = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val utimesNs: Anon_Atime = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.

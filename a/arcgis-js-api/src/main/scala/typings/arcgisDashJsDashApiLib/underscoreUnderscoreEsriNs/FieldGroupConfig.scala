@@ -27,3 +27,9 @@ trait FieldGroupConfig extends Accessor {
   var label: java.lang.String = js.native
 }
 
+@JSGlobal("__esri.FieldGroupConfig")
+@js.native
+class FieldGroupConfigCls () extends FieldGroupConfig {
+  def this(properties: FieldGroupConfigProperties) = this()
+}
+

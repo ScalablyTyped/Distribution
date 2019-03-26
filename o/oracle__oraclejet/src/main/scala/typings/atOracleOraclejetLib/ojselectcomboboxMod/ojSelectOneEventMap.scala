@@ -34,7 +34,7 @@ trait ojSelectOneEventMap[K, D]
   ]
   var requiredChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean]
   @JSName("valueChanged")
-  var valueChanged_ojSelectOneEventMap: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var valueChanged_ojSelectOneEventMap: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var valueOptionChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_LabelValue]
 }
 
@@ -162,7 +162,7 @@ object ojSelectOneEventMap {
     validChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
       atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown
     ],
-    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     valueOptionChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_LabelValue],
     volumechange: stdLib.Event,
     waiting: stdLib.Event,

@@ -8,39 +8,27 @@ import scala.scalajs.js.annotation._
 @JSImport("react-dnd/lib/cjs/DropTarget", JSImport.Namespace)
 @js.native
 object libCjsDropTargetMod extends js.Object {
-  def default[Props, CollectedProps](
+  def default[RequiredProps, CollectedProps](
     `type`: dndDashCoreLib.libCjsInterfacesMod.TargetType,
-    spec: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetSpec[Props],
-    collect: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetCollector[CollectedProps]
-  ): js.Function1[
-    /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libCjsInterfacesClassApiMod.DndComponentClass[Props]
-  ] = js.native
-  def default[Props, CollectedProps](
+    spec: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetSpec[RequiredProps],
+    collect: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetCollector[CollectedProps, RequiredProps]
+  ): reactDashDndLib.libCjsInterfacesClassApiMod.DndComponentEnhancer[CollectedProps] = js.native
+  def default[RequiredProps, CollectedProps](
     `type`: dndDashCoreLib.libCjsInterfacesMod.TargetType,
-    spec: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetSpec[Props],
-    collect: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetCollector[CollectedProps],
-    options: reactDashDndLib.libCjsInterfacesOptionsMod.DndOptions[Props]
-  ): js.Function1[
-    /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libCjsInterfacesClassApiMod.DndComponentClass[Props]
-  ] = js.native
-  def default[Props, CollectedProps](
-    `type`: js.Function1[/* props */ Props, dndDashCoreLib.libCjsInterfacesMod.TargetType],
-    spec: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetSpec[Props],
-    collect: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetCollector[CollectedProps]
-  ): js.Function1[
-    /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libCjsInterfacesClassApiMod.DndComponentClass[Props]
-  ] = js.native
-  def default[Props, CollectedProps](
-    `type`: js.Function1[/* props */ Props, dndDashCoreLib.libCjsInterfacesMod.TargetType],
-    spec: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetSpec[Props],
-    collect: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetCollector[CollectedProps],
-    options: reactDashDndLib.libCjsInterfacesOptionsMod.DndOptions[Props]
-  ): js.Function1[
-    /* DecoratedComponent */ reactLib.reactMod.ReactNs.ComponentType[_], 
-    reactDashDndLib.libCjsInterfacesClassApiMod.DndComponentClass[Props]
-  ] = js.native
+    spec: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetSpec[RequiredProps],
+    collect: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetCollector[CollectedProps, RequiredProps],
+    options: reactDashDndLib.libCjsInterfacesOptionsMod.DndOptions[RequiredProps]
+  ): reactDashDndLib.libCjsInterfacesClassApiMod.DndComponentEnhancer[CollectedProps] = js.native
+  def default[RequiredProps, CollectedProps](
+    `type`: js.Function1[/* props */ RequiredProps, dndDashCoreLib.libCjsInterfacesMod.TargetType],
+    spec: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetSpec[RequiredProps],
+    collect: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetCollector[CollectedProps, RequiredProps]
+  ): reactDashDndLib.libCjsInterfacesClassApiMod.DndComponentEnhancer[CollectedProps] = js.native
+  def default[RequiredProps, CollectedProps](
+    `type`: js.Function1[/* props */ RequiredProps, dndDashCoreLib.libCjsInterfacesMod.TargetType],
+    spec: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetSpec[RequiredProps],
+    collect: reactDashDndLib.libCjsInterfacesClassApiMod.DropTargetCollector[CollectedProps, RequiredProps],
+    options: reactDashDndLib.libCjsInterfacesOptionsMod.DndOptions[RequiredProps]
+  ): reactDashDndLib.libCjsInterfacesClassApiMod.DndComponentEnhancer[CollectedProps] = js.native
 }
 

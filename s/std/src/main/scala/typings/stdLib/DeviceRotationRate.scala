@@ -13,6 +13,17 @@ trait DeviceRotationRate extends js.Object {
 
 @JSGlobal("DeviceRotationRate")
 @js.native
+class DeviceRotationRateCls () extends DeviceRotationRate {
+  /* CompleteClass */
+  override val alpha: scala.Double | scala.Null = js.native
+  /* CompleteClass */
+  override val beta: scala.Double | scala.Null = js.native
+  /* CompleteClass */
+  override val gamma: scala.Double | scala.Null = js.native
+}
+
+@JSGlobal("DeviceRotationRate")
+@js.native
 object DeviceRotationRate
   extends org.scalablytyped.runtime.Instantiable0[DeviceRotationRate]
 

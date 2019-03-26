@@ -35,3 +35,9 @@ trait GeneralizeParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.GeneralizeParameters")
+@js.native
+class GeneralizeParametersCls () extends GeneralizeParameters {
+  def this(properties: GeneralizeParametersProperties) = this()
+}
+

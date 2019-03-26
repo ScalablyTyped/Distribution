@@ -49,6 +49,10 @@ trait MediaDevices extends EventTarget {
 
 @JSGlobal("MediaDevices")
 @js.native
+class MediaDevicesCls () extends MediaDevices
+
+@JSGlobal("MediaDevices")
+@js.native
 object MediaDevices
   extends org.scalablytyped.runtime.Instantiable0[MediaDevices]
 

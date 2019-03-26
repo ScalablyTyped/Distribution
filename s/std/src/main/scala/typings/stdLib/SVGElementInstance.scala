@@ -13,6 +13,10 @@ trait SVGElementInstance extends EventTarget {
 
 @JSGlobal("SVGElementInstance")
 @js.native
+class SVGElementInstanceCls () extends SVGElementInstance
+
+@JSGlobal("SVGElementInstance")
+@js.native
 object SVGElementInstance
   extends org.scalablytyped.runtime.Instantiable0[SVGElementInstance]
 

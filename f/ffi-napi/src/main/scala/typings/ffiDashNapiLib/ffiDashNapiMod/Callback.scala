@@ -24,3 +24,11 @@ trait Callback
   def apply(retType: js.Any, argTypes: js.Array[_], fn: js.Any): ffiDashNapiLib.Buffer = js.native
 }
 
+@JSImport("ffi-napi", "Callback")
+@js.native
+class CallbackCls protected ()
+  extends ffiDashNapiLib.Buffer {
+  def this(retType: js.Any, argTypes: js.Array[_], fn: js.Any) = this()
+  def this(retType: js.Any, argTypes: js.Array[_], abi: scala.Double, fn: js.Any) = this()
+}
+

@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/InputBase/InputBase.InputBaseClassKey, 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'>) */ trait InputBaseProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[InputBaseClassKey] {
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait InputBaseProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[InputBaseClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var autoComplete: js.UndefOr[java.lang.String] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultValue: js.UndefOr[
     (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object
   ] = js.undefined
@@ -58,7 +57,6 @@ import scala.scalajs.js.annotation._
   var rows: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var rowsMax: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var startAdornment: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[
     (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object

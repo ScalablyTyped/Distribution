@@ -13,7 +13,7 @@ package object fluentDashReactMod {
   {[ P in keyof DecorationTargetProps ]: DecorationTargetProps[P] | InjectedProps[P]}
     */ fluentDashReactLib.fluentDashReactLibStrings.Matching with js.Any
   type Omit[T, K] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
-  type Shared[InjectedProps, DecorationTargetProps /* <: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias fluent-react.fluent-react.Shared<InjectedProps, DecorationTargetProps> */ js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Shared[InjectedProps, DecorationTargetProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? DecorationTargetProps[P]}
     */ fluentDashReactLib.fluentDashReactLibStrings.Shared with DecorationTargetProps
 }

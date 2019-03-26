@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 object libCjsHooksMod extends js.Object {
   def useDrag[DragObject /* <: reactDashDndLib.libCjsInterfacesHooksApiMod.DragObjectWithType */, DropResult, CollectedProps](
     spec: reactDashDndLib.libCjsInterfacesHooksApiMod.DragSourceHookSpec[DragObject, DropResult, CollectedProps]
-  ): js.Tuple2[CollectedProps, reactLib.reactMod.ReactNs.RefObject[_]] = js.native
+  ): js.Tuple3[
+    CollectedProps, 
+    reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragSource, 
+    reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDragPreview
+  ] = js.native
   def useDragLayer[CollectedProps](
     collect: js.Function1[
       /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragLayerMonitor, 
       CollectedProps
     ]
   ): CollectedProps = js.native
-  def useDragPreview[Props](DragPreview: reactLib.reactMod.ReactNs.RefForwardingComponent[stdLib.Element, Props]): js.Tuple2[
-    reactLib.reactMod.ReactNs.FC[Props], 
-    reactLib.reactMod.ReactNs.RefObject[stdLib.Element]
-  ] = js.native
-  def useDrop[DragObject, DropResult, CollectedProps](
+  def useDrop[DragObject /* <: reactDashDndLib.libCjsInterfacesHooksApiMod.DragObjectWithType */, DropResult, CollectedProps](
     spec: reactDashDndLib.libCjsInterfacesHooksApiMod.DropTargetHookSpec[DragObject, DropResult, CollectedProps]
-  ): js.Tuple2[CollectedProps, reactLib.reactMod.ReactNs.RefObject[_]] = js.native
+  ): js.Tuple2[CollectedProps, reactDashDndLib.libCjsInterfacesClassApiMod.ConnectDropTarget] = js.native
 }
 

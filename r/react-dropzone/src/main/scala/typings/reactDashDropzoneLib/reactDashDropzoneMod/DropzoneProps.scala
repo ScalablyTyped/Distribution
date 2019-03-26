@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in react-dropzone.PickedAttributes ]: react.react.InputHTMLAttributes<std.HTMLDivElement>[P]} */ trait DropzoneProps extends js.Object {
+- Dropped {[ P in react-dropzone.PickedAttributes ]: react.react.React.InputHTMLAttributes<std.HTMLDivElement>[P]} */ trait DropzoneProps extends js.Object {
   var accept: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var acceptClassName: js.UndefOr[java.lang.String] = js.undefined
   var acceptStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

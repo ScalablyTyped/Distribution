@@ -366,6 +366,19 @@ object PahoNs extends js.Object {
       var grantedQos: Qos
     }
     
+    /**
+      * The Quality of Service used to deliver a message.
+      * <dl>
+      *    <dt>0 Best effort (default).</dt>
+      *    <dt>1 At least once.</dt>
+      *    <dt>2 Exactly once.</dt>
+      * </dl>
+      */
+    /* Rewritten from type alias, can be one of: 
+      - pahoDashMqttLib.pahoDashMqttLibNumbers.`0`
+      - pahoDashMqttLib.pahoDashMqttLibNumbers.`1`
+      - pahoDashMqttLib.pahoDashMqttLibNumbers.`2`
+    */
     trait Qos extends js.Object
     
     /**

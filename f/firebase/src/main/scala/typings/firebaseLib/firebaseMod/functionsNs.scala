@@ -33,6 +33,25 @@ object functionsNs extends js.Object {
     def useFunctionsEmulator(url: java.lang.String): scala.Unit = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - firebaseLib.firebaseLibStrings.ok
+    - firebaseLib.firebaseLibStrings.cancelled
+    - firebaseLib.firebaseLibStrings.unknown
+    - firebaseLib.firebaseLibStrings.`invalid-argument`
+    - firebaseLib.firebaseLibStrings.`deadline-exceeded`
+    - firebaseLib.firebaseLibStrings.`not-found`
+    - firebaseLib.firebaseLibStrings.`already-exists`
+    - firebaseLib.firebaseLibStrings.`permission-denied`
+    - firebaseLib.firebaseLibStrings.`resource-exhausted`
+    - firebaseLib.firebaseLibStrings.`failed-precondition`
+    - firebaseLib.firebaseLibStrings.aborted
+    - firebaseLib.firebaseLibStrings.`out-of-range`
+    - firebaseLib.firebaseLibStrings.unimplemented
+    - firebaseLib.firebaseLibStrings.internal
+    - firebaseLib.firebaseLibStrings.unavailable
+    - firebaseLib.firebaseLibStrings.`data-loss`
+    - firebaseLib.firebaseLibStrings.unauthenticated
+  */
   trait FunctionsErrorCode extends js.Object
   
   trait HttpsCallableOptions extends js.Object {

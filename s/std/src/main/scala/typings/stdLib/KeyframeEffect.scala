@@ -18,6 +18,29 @@ trait KeyframeEffect extends AnimationEffect {
 
 @JSGlobal("KeyframeEffect")
 @js.native
+class KeyframeEffectCls () extends KeyframeEffect {
+  def this(source: KeyframeEffect) = this()
+  def this(target: Element) = this()
+  def this(target: scala.Null, keyframes: js.Array[Keyframe]) = this()
+  def this(target: scala.Null, keyframes: PropertyIndexedKeyframes) = this()
+  def this(target: Element, keyframes: js.Array[Keyframe]) = this()
+  def this(target: Element, keyframes: PropertyIndexedKeyframes) = this()
+  def this(target: scala.Null, keyframes: js.Array[Keyframe], options: scala.Double) = this()
+  def this(target: scala.Null, keyframes: js.Array[Keyframe], options: KeyframeEffectOptions) = this()
+  def this(target: scala.Null, keyframes: scala.Null, options: scala.Double) = this()
+  def this(target: scala.Null, keyframes: scala.Null, options: KeyframeEffectOptions) = this()
+  def this(target: scala.Null, keyframes: PropertyIndexedKeyframes, options: scala.Double) = this()
+  def this(target: scala.Null, keyframes: PropertyIndexedKeyframes, options: KeyframeEffectOptions) = this()
+  def this(target: Element, keyframes: js.Array[Keyframe], options: scala.Double) = this()
+  def this(target: Element, keyframes: js.Array[Keyframe], options: KeyframeEffectOptions) = this()
+  def this(target: Element, keyframes: scala.Null, options: scala.Double) = this()
+  def this(target: Element, keyframes: scala.Null, options: KeyframeEffectOptions) = this()
+  def this(target: Element, keyframes: PropertyIndexedKeyframes, options: scala.Double) = this()
+  def this(target: Element, keyframes: PropertyIndexedKeyframes, options: KeyframeEffectOptions) = this()
+}
+
+@JSGlobal("KeyframeEffect")
+@js.native
 object KeyframeEffect
   extends org.scalablytyped.runtime.Instantiable0[KeyframeEffect]
      with org.scalablytyped.runtime.Instantiable2[

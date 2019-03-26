@@ -25,7 +25,7 @@ class Terminal ()
   /**
     * The element containing the terminal.
     */
-  val element: xtermLib.HTMLElement = js.native
+  val element: stdLib.HTMLElement = js.native
   /**
     * (EXPERIMENTAL) Get all markers registered against the buffer. If the alt
     * buffer is active this will always return [].
@@ -40,7 +40,7 @@ class Terminal ()
   /**
     * The textarea that accepts input for the terminal.
     */
-  val textarea: xtermLib.HTMLTextAreaElement = js.native
+  val textarea: stdLib.HTMLTextAreaElement = js.native
   /**
     * (EXPERIMENTAL) Adds a handler for CSI escape sequences.
     * @param flag The flag should be one-character string, which specifies the
@@ -81,7 +81,7 @@ class Terminal ()
     * propagation and/or prevent the default action. The function returns
     * whether the event should be processed by xterm.js.
     */
-  def attachCustomKeyEventHandler(customKeyEventHandler: js.Function1[/* event */ xtermLib.KeyboardEvent, scala.Boolean]): scala.Unit = js.native
+  def attachCustomKeyEventHandler(customKeyEventHandler: js.Function1[/* event */ stdLib.KeyboardEvent, scala.Boolean]): scala.Unit = js.native
   /**
     * Unfocus the terminal.
     */
@@ -221,12 +221,12 @@ class Terminal ()
   @JSName("on")
   def on_key(
     `type`: xtermLib.xtermLibStrings.key,
-    listener: js.Function2[/* key */ java.lang.String, /* event */ xtermLib.KeyboardEvent, scala.Unit]
+    listener: js.Function2[/* key */ java.lang.String, /* event */ stdLib.KeyboardEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
   def on_keydown(
     `type`: xtermLib.xtermLibStrings.keydown,
-    listener: js.Function1[/* event */ xtermLib.KeyboardEvent, scala.Unit]
+    listener: js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Registers an event listener.
@@ -236,7 +236,7 @@ class Terminal ()
   @JSName("on")
   def on_keypress(
     `type`: xtermLib.xtermLibStrings.keypress,
-    listener: js.Function1[/* event */ xtermLib.KeyboardEvent, scala.Unit]
+    listener: js.Function1[/* event */ stdLib.KeyboardEvent, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
   def on_linefeed(`type`: xtermLib.xtermLibStrings.linefeed, listener: js.Function0[scala.Unit]): scala.Unit = js.native
@@ -288,7 +288,7 @@ class Terminal ()
     * must be visible (have dimensions) when `open` is called as several DOM-
     * based measurements need to be performed when this function is called.
     */
-  def open(parent: xtermLib.HTMLElement): scala.Unit = js.native
+  def open(parent: stdLib.HTMLElement): scala.Unit = js.native
   /**
     * Tells the renderer to refresh terminal content between two rows
     * (inclusive) at the next opportunity.
@@ -340,11 +340,11 @@ class Terminal ()
     */
   def registerLinkMatcher(
     regex: stdLib.RegExp,
-    handler: js.Function2[/* event */ xtermLib.MouseEvent, /* uri */ java.lang.String, scala.Unit]
+    handler: js.Function2[/* event */ stdLib.MouseEvent, /* uri */ java.lang.String, scala.Unit]
   ): scala.Double = js.native
   def registerLinkMatcher(
     regex: stdLib.RegExp,
-    handler: js.Function2[/* event */ xtermLib.MouseEvent, /* uri */ java.lang.String, scala.Unit],
+    handler: js.Function2[/* event */ stdLib.MouseEvent, /* uri */ java.lang.String, scala.Unit],
     options: ILinkMatcherOptions
   ): scala.Double = js.native
   /**

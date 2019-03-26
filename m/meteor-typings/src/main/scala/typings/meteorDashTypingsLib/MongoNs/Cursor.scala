@@ -24,3 +24,7 @@ trait Cursor[T] extends js.Object {
   def observeChanges(callbacks: ObserveChangesCallbacks): meteorDashTypingsLib.MeteorNs.LiveQueryHandle = js.native
 }
 
+@JSGlobal("Mongo.Cursor")
+@js.native
+class CursorCls[T] () extends Cursor[T]
+

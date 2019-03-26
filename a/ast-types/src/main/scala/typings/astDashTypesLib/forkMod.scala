@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("ast-types/fork", JSImport.Namespace)
 @js.native
 object forkMod extends js.Object {
-  def default(defs: js.Array[astDashTypesLib.typesMod.Def]): astDashTypesLib.Anon_AAstNodesAreEquivalent = js.native
+  def default(defs: js.Array[astDashTypesLib.typesMod.Def]): astDashTypesLib.Anon_AstNodesAreEquivalent = js.native
 }
 

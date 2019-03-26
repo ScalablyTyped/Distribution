@@ -15,6 +15,21 @@ trait AbstractRange extends js.Object {
 
 @JSGlobal("AbstractRange")
 @js.native
+class AbstractRangeCls () extends AbstractRange {
+  /* CompleteClass */
+  override val collapsed: scala.Boolean = js.native
+  /* CompleteClass */
+  override val endContainer: Node = js.native
+  /* CompleteClass */
+  override val endOffset: scala.Double = js.native
+  /* CompleteClass */
+  override val startContainer: Node = js.native
+  /* CompleteClass */
+  override val startOffset: scala.Double = js.native
+}
+
+@JSGlobal("AbstractRange")
+@js.native
 object AbstractRange
   extends org.scalablytyped.runtime.Instantiable0[AbstractRange]
 

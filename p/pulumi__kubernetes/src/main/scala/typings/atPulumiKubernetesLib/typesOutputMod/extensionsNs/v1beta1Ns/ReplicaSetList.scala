@@ -30,7 +30,7 @@ trait ReplicaSetList extends js.Object {
   val kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList
   /**
     * Standard list metadata. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }

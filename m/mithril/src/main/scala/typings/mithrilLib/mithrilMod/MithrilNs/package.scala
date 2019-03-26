@@ -26,6 +26,11 @@ package object MithrilNs {
   	 */
   type Comp[Attrs, State /* <: Lifecycle[Attrs, State] */] = (Component[Attrs, State]) with State
   /** Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse. Components can be consumed via the m() utility. */
+  /* Rewritten from type alias, can be one of: 
+    - Component[A, S]
+    - mithrilLib.Anon_Vnode[A]
+    - FactoryComponent[A]
+  */
   type ComponentTypes[A, S /* <: Lifecycle[A, S] */] = (_ComponentTypes[A, S]) | FactoryComponent[A]
   /**
   	 * Components are a mechanism to encapsulate parts of a view to make code easier to organize and/or reuse.

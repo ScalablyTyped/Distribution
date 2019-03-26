@@ -97,3 +97,9 @@ trait CoordinateConversionViewModel
   def updateConversions(location: Point, conversions: js.Array[Conversion]): arcgisDashJsDashApiLib.IPromise[js.Array[Conversion]] = js.native
 }
 
+@JSGlobal("__esri.CoordinateConversionViewModel")
+@js.native
+class CoordinateConversionViewModelCls () extends CoordinateConversionViewModel {
+  def this(properties: CoordinateConversionViewModelProperties) = this()
+}
+

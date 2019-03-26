@@ -18,7 +18,7 @@ trait EndpointDescriptor extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_IN[keyof chrome-apps.Anon_IN] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.in | chromeDashAppsLib.chromeDashAppsLibStrings.out
     ]
   ]
   /**
@@ -40,7 +40,7 @@ trait EndpointDescriptor extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ADAPTIVE[keyof chrome-apps.Anon_ADAPTIVE] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.asynchronous | chromeDashAppsLib.chromeDashAppsLibStrings.adaptive | chromeDashAppsLib.chromeDashAppsLibStrings.synchronous
       ]
     ]
   ] = js.undefined
@@ -54,7 +54,7 @@ trait EndpointDescriptor extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_BULK[keyof chrome-apps.Anon_BULK] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.control | chromeDashAppsLib.chromeDashAppsLibStrings.interrupt | chromeDashAppsLib.chromeDashAppsLibStrings.isochronous | chromeDashAppsLib.chromeDashAppsLibStrings.bulk
     ]
   ]
   /**
@@ -67,7 +67,7 @@ trait EndpointDescriptor extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_DATA[keyof chrome-apps.Anon_DATA] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.periodic | chromeDashAppsLib.chromeDashAppsLibStrings.notification | chromeDashAppsLib.chromeDashAppsLibStrings.explicitFeedback | chromeDashAppsLib.chromeDashAppsLibStrings.data | chromeDashAppsLib.chromeDashAppsLibStrings.feedback
       ]
     ]
   ] = js.undefined
@@ -82,7 +82,7 @@ object EndpointDescriptor {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_IN[keyof chrome-apps.Anon_IN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.in | chromeDashAppsLib.chromeDashAppsLibStrings.out
       ]
     ],
     extra_data: stdLib.ArrayBuffer,
@@ -92,7 +92,7 @@ object EndpointDescriptor {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_BULK[keyof chrome-apps.Anon_BULK] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.control | chromeDashAppsLib.chromeDashAppsLibStrings.interrupt | chromeDashAppsLib.chromeDashAppsLibStrings.isochronous | chromeDashAppsLib.chromeDashAppsLibStrings.bulk
       ]
     ],
     pollingInterval: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
@@ -101,7 +101,7 @@ object EndpointDescriptor {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ADAPTIVE[keyof chrome-apps.Anon_ADAPTIVE] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.asynchronous | chromeDashAppsLib.chromeDashAppsLibStrings.adaptive | chromeDashAppsLib.chromeDashAppsLibStrings.synchronous
       ]
     ] = null,
     usage: chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -109,7 +109,7 @@ object EndpointDescriptor {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_DATA[keyof chrome-apps.Anon_DATA] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.periodic | chromeDashAppsLib.chromeDashAppsLibStrings.notification | chromeDashAppsLib.chromeDashAppsLibStrings.explicitFeedback | chromeDashAppsLib.chromeDashAppsLibStrings.data | chromeDashAppsLib.chromeDashAppsLibStrings.feedback
       ]
     ] = null
   ): EndpointDescriptor = {

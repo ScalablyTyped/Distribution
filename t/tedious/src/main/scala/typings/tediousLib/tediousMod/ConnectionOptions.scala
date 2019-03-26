@@ -13,7 +13,7 @@ trait ConnectionOptions extends js.Object {
     */
   var abortTransactionOnError: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Application name used for identifying a specific application in profiling, logging or tracing tools of SQL Server. (default: Tedious) 
+    * Application name used for identifying a specific application in profiling, logging or tracing tools of SQL Server. (default: Tedious)
     */
   var appName: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -48,7 +48,7 @@ trait ConnectionOptions extends js.Object {
     */
   var connectionIsolationLevel: js.UndefOr[ISOLATION_LEVEL] = js.undefined
   /**
-    * Number of milliseconds before retrying to establish connection, in case of transient failure. (default: 500) 
+    * Number of milliseconds before retrying to establish connection, in case of transient failure. (default: 500)
     */
   var connectionRetryInterval: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -60,7 +60,7 @@ trait ConnectionOptions extends js.Object {
     */
   var database: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * A string representing position of month, day and year in temporal datatypes. (default: mdy) 
+    * A string representing position of month, day and year in temporal datatypes. (default: mdy)
     */
   var dateFormat: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -72,43 +72,43 @@ trait ConnectionOptions extends js.Object {
     */
   var debug: js.UndefOr[DebugOptions] = js.undefined
   /**
-    * A boolean, controls the way null values should be used during comparison operation. (default: true)  
+    * A boolean, controls the way null values should be used during comparison operation. (default: true)
     */
   var enableAnsiNull: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * If true, SET ANSI_NULL_DFLT_ON ON will be set in the initial sql. This means new columns will be nullable by default. See the T-SQL documentation for more details. (Default: true). 
+    * If true, SET ANSI_NULL_DFLT_ON ON will be set in the initial sql. This means new columns will be nullable by default. See the T-SQL documentation for more details. (Default: true).
     */
   var enableAnsiNullDefault: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * A boolean, controls if padding should be applied for values shorter than the size of defined column. (default: true) 
+    * A boolean, controls if padding should be applied for values shorter than the size of defined column. (default: true)
     */
   var enableAnsiPadding: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * If true, SQL Server will follow ISO standard behavior during various error conditions. For details, see documentation. (default: true) 
+    * If true, SQL Server will follow ISO standard behavior during various error conditions. For details, see documentation. (default: true)
     */
   var enableAnsiWarnings: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * A boolean, determines if query execution should be terminated during overflow or divide-by-zero error. (default: false)  
+    * A boolean, determines if query execution should be terminated during overflow or divide-by-zero error. (default: false)
     */
   var enableArithAbort: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * A boolean, determines if concatenation with NULL should result in NULL or empty string value, more details in documentation. (default: true) 
+    * A boolean, determines if concatenation with NULL should result in NULL or empty string value, more details in documentation. (default: true)
     */
   var enableConcatNullYieldsNull: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * A boolean, controls whether cursor should be closed, if the transaction opening it gets committed or rolled back. (default: false) 
+    * A boolean, controls whether cursor should be closed, if the transaction opening it gets committed or rolled back. (default: false)
     */
   var enableCursorCloseOnCommit: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * A boolean, sets the connection to either implicit or autocommit transaction mode. (default: false) 
+    * A boolean, sets the connection to either implicit or autocommit transaction mode. (default: false)
     */
   var enableImplicitTransactions: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * If false, error is not generated during loss of precession. (default: false) 
+    * If false, error is not generated during loss of precession. (default: false)
     */
   var enableNumericRoundabort: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * If true, characters enclosed in single quotes are treated as literals and those enclosed double quotes are treated as identifiers. (default: true) 
+    * If true, characters enclosed in single quotes are treated as literals and those enclosed double quotes are treated as identifiers. (default: true)
     */
   var enableQuotedIdentifier: js.UndefOr[scala.Boolean] = js.undefined
   /**

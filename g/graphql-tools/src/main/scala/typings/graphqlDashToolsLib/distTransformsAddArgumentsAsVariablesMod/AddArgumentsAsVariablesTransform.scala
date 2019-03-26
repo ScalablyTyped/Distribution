@@ -5,29 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Lifted 3 members from Set(graphql-tools.graphql-tools/dist/Interfaces.Transform) */ @js.native
-trait AddArgumentsAsVariablesTransform extends js.Object {
-  var args: js.Any = js.native
-  var schema: js.Any = js.native
-  var transformRequest: js.UndefOr[
-    js.Function1[
-      /* originalRequest */ graphqlDashToolsLib.distInterfacesMod.Request, 
-      graphqlDashToolsLib.distInterfacesMod.Request
-    ]
-  ] = js.native
-  var transformResult: js.UndefOr[
-    js.Function1[
-      /* result */ graphqlDashToolsLib.distInterfacesMod.Result, 
-      graphqlDashToolsLib.distInterfacesMod.Result
-    ]
-  ] = js.native
-  var transformSchema: js.UndefOr[
-    js.Function1[
-      /* schema */ graphqlLib.graphqlMod.GraphQLSchema, 
-      graphqlLib.graphqlMod.GraphQLSchema
-    ]
-  ] = js.native
-  def transformRequest(originalRequest: graphqlDashToolsLib.distInterfacesMod.Request): graphqlDashToolsLib.distInterfacesMod.Request = js.native
+trait AddArgumentsAsVariablesTransform
+  extends graphqlDashToolsLib.distInterfacesMod.Transform {
+  var args: js.Any
+  var schema: js.Any
+  @JSName("transformRequest")
+  def transformRequest_MAddArgumentsAsVariablesTransform(originalRequest: graphqlDashToolsLib.distInterfacesMod.Request): graphqlDashToolsLib.distInterfacesMod.Request
+}
+
+object AddArgumentsAsVariablesTransform {
+  @scala.inline
+  def apply(
+    args: js.Any,
+    schema: js.Any,
+    transformRequest: graphqlDashToolsLib.distInterfacesMod.Request => graphqlDashToolsLib.distInterfacesMod.Request,
+    transformResult: /* result */ graphqlDashToolsLib.distInterfacesMod.Result => graphqlDashToolsLib.distInterfacesMod.Result = null,
+    transformSchema: /* schema */ graphqlLib.graphqlMod.GraphQLSchema => graphqlLib.graphqlMod.GraphQLSchema = null
+  ): AddArgumentsAsVariablesTransform = {
+    val __obj = js.Dynamic.literal(args = args, schema = schema, transformRequest = js.Any.fromFunction1(transformRequest))
+    if (transformResult != null) __obj.updateDynamic("transformResult")(js.Any.fromFunction1(transformResult))
+    if (transformSchema != null) __obj.updateDynamic("transformSchema")(js.Any.fromFunction1(transformSchema))
+    __obj.asInstanceOf[AddArgumentsAsVariablesTransform]
+  }
 }
 

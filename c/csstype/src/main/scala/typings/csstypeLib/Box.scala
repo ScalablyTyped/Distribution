@@ -5,6 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - csstypeLib.csstypeLibStrings.`border-box`
+  - csstypeLib.csstypeLibStrings.`content-box`
+  - csstypeLib.csstypeLibStrings.`padding-box`
+*/
 trait Box
   extends GeometryBox
      with csstypeLib.csstypeMod._BackgroundClipProperty

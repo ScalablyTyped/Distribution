@@ -23,9 +23,6 @@ trait DragSourceConnector extends js.Object {
     * returning { connectDragSource: connect.dragSource() } from your collecting function, you can mark any React
     * element as the draggable node. To do that, replace any element with this.props.connectDragSource(element) inside
     * the render function.
-    *
-    * @param elementOrNode
-    * @param options
     */
   def dragSource(): ConnectDragSource
 }

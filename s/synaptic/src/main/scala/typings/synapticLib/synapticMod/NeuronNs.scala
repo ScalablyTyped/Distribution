@@ -20,6 +20,12 @@ object NeuronNs extends js.Object {
     var weight: scala.Double = js.native
   }
   
+  @js.native
+  class connection protected () extends Connection {
+    def this(from: scala.Double, to: scala.Double) = this()
+    def this(from: scala.Double, to: scala.Double, weight: scala.Double) = this()
+  }
+  
   var connection: synapticLib.Anon_From = js.native
   /* static members */
   @js.native

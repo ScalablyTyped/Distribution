@@ -8,6 +8,16 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/compiler", "core")
 @js.native
 object coreNs extends js.Object {
+  @js.native
+  class TypeCls protected ()
+    extends js.Function {
+    /**
+      * Creates a new function.
+      * @param args A list of arguments the function accepts.
+      */
+    def this(args: java.lang.String*) = this()
+  }
+  
   val CUSTOM_ELEMENTS_SCHEMA: atAngularCompilerLib.srcCoreMod.SchemaMetadata = js.native
   val NO_ERRORS_SCHEMA: atAngularCompilerLib.srcCoreMod.SchemaMetadata = js.native
   val Type: stdLib.FunctionConstructor = js.native

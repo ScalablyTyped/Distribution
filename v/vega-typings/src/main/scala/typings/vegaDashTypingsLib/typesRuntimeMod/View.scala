@@ -18,8 +18,8 @@ class View protected () extends js.Object {
   def changeset(): js.Any = js.native
   def container(): stdLib.HTMLElement | scala.Null = js.native
   def data(name: java.lang.String): js.Array[_] = js.native
-  def getState(): vegaDashTypingsLib.Anon_Data = js.native
-  def getState(options: vegaDashTypingsLib.Anon_DataName): vegaDashTypingsLib.Anon_Data = js.native
+  def getState(): vegaDashTypingsLib.Anon_DataSignals = js.native
+  def getState(options: vegaDashTypingsLib.Anon_Data): vegaDashTypingsLib.Anon_DataSignals = js.native
   def height(): scala.Double = js.native
   def height(h: scala.Double): this.type = js.native
   def hover(): this.type = js.native
@@ -54,7 +54,7 @@ class View protected () extends js.Object {
     priority: scala.Double
   ): this.type = js.native
   def runAsync(): js.Promise[View] = js.native
-  def setState(state: vegaDashTypingsLib.Anon_Data): this.type = js.native
+  def setState(state: vegaDashTypingsLib.Anon_DataSignals): this.type = js.native
   def signal(name: java.lang.String): vegaDashTypingsLib.typesSpecSignalMod.SignalValue = js.native
   def signal(name: java.lang.String, value: vegaDashTypingsLib.typesSpecSignalMod.SignalValue): this.type = js.native
   def toCanvas(): js.Promise[stdLib.HTMLCanvasElement] = js.native

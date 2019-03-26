@@ -11,3 +11,12 @@ trait ForeignFunction extends js.Object {
   def async(args: js.Any*): scala.Unit = js.native
 }
 
+@JSImport("ffi", "ForeignFunction")
+@js.native
+class ForeignFunctionCls protected () extends ForeignFunction {
+  def this(ptr: ffiLib.Buffer, retType: java.lang.String, argTypes: js.Array[_]) = this()
+  def this(ptr: ffiLib.Buffer, retType: refLib.refMod.Type, argTypes: js.Array[_]) = this()
+  def this(ptr: ffiLib.Buffer, retType: java.lang.String, argTypes: js.Array[_], abi: scala.Double) = this()
+  def this(ptr: ffiLib.Buffer, retType: refLib.refMod.Type, argTypes: js.Array[_], abi: scala.Double) = this()
+}
+

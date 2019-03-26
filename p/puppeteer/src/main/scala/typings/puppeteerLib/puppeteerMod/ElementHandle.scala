@@ -92,7 +92,7 @@ trait ElementHandle[E /* <: stdLib.Element */]
     * @param options The typing options.
     */
   def `type`(text: java.lang.String): js.Promise[scala.Unit] = js.native
-  def `type`(text: java.lang.String, options: puppeteerLib.Anon_DelayNumber_2000594539): js.Promise[scala.Unit] = js.native
+  def `type`(text: java.lang.String, options: puppeteerLib.Anon_DelayNumber_507099768): js.Promise[scala.Unit] = js.native
   /**
     * This method expects elementHandle to point to an input element.
     * @param filePaths Sets the value of the file input these paths. If some of the filePaths are relative paths, then they are resolved relative to current working directory.

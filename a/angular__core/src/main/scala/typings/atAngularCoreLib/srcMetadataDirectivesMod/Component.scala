@@ -97,6 +97,15 @@ trait Component extends Directive {
   var viewProviders: js.UndefOr[js.Array[atAngularCoreLib.srcDiProviderMod.Provider]] = js.undefined
 }
 
+@JSImport("@angular/core/src/metadata/directives", "Component")
+@js.native
+class ComponentCls protected () extends Component {
+  /**
+    * See the `Component` decorator.
+    */
+  def this(obj: Component) = this()
+}
+
 object Component {
   @scala.inline
   def apply(

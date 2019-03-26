@@ -13,6 +13,8 @@ object reactDashFaLibComponents {
   @scala.inline
   def ReactDashFa: reactLib.reactMod.ReactNs.ComponentType[reactDashFaLib.reactDashFaMod.IconProps] = reactDashFaLib.reactDashFaMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFaLib.reactDashFaMod.IconProps]]
   @scala.inline
+  def defaultCls: reactLib.reactMod.ReactNs.ComponentType[reactDashFaLib.reactDashFaMod.IconProps] = js.constructorOf[reactDashFaLib.reactDashFaMod.defaultCls].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashFaLib.reactDashFaMod.IconProps]]
+  @scala.inline
   def IconProps: reactDashFaLib.reactDashFaMod.IconProps.type = reactDashFaLib.reactDashFaMod.IconProps
   type IconProps = reactDashFaLib.reactDashFaMod.IconProps
   @scala.inline

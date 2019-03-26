@@ -1,31 +1,31 @@
 organization := "org.scalablytyped"
 name := "react-mosaic-component"
-version := "2.1.0-f286e1"
+version := "2.1.0-fa03f8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "asap" % "2.0-dt-20180629Z-ad04b4",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-25d274",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-29f798",
-  "org.scalablytyped" %%% "dnd-core" % "7.2.0-0dc54d",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-bffeb5",
-  "org.scalablytyped" %%% "immutability-helper" % "3.0.0-2d8505",
-  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20190322Z-662401",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-601106",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190322Z-6f0f1a",
-  "org.scalablytyped" %%% "react-dnd" % "7.3.2-a9d59c",
-  "org.scalablytyped" %%% "react-dnd-html5-backend" % "7.2.0-5e0425",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-7f8af2",
-  "org.scalablytyped" %%% "recompose" % "0.30-dt-20190322Z-abb8b0",
-  "org.scalablytyped" %%% "redux" % "4.0.1-18f3a8",
-  "org.scalablytyped" %%% "shallowequal" % "1.1-dt-20190202Z-aebda3",
-  "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-5b665c",
-  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-d1745b")
+  "org.scalablytyped" %%% "asap" % "2.0-dt-20180629Z-d36279",
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20190325Z-43290b",
+  "org.scalablytyped" %%% "csstype" % "2.6.3-9dec0a",
+  "org.scalablytyped" %%% "dnd-core" % "7.4.0-282b1a",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-f5f764",
+  "org.scalablytyped" %%% "immutability-helper" % "3.0.0-83a753",
+  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20190322Z-96551b",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-7a74e5",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190325Z-000e7b",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-1549d2",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190322Z-acd0bd",
+  "org.scalablytyped" %%% "react-dnd" % "7.4.1-b4ade3",
+  "org.scalablytyped" %%% "react-dnd-html5-backend" % "7.4.0-59c93f",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-84fa90",
+  "org.scalablytyped" %%% "recompose" % "0.30-dt-20190322Z-0e9e7f",
+  "org.scalablytyped" %%% "redux" % "4.0.1-436f26",
+  "org.scalablytyped" %%% "shallowequal" % "1.1-dt-20190202Z-dc3836",
+  "org.scalablytyped" %%% "std" % "3.3-14e863",
+  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-1f290b",
+  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-43c72f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

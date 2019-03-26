@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 trait SimpleFillSymbol
   extends FillSymbol
      with arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbolsNs.FillSymbol
-     with Symbol2D
      with arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbolsNs.Symbol2D
+     with Symbol2D
      with symbolsFillSymbol {
   /**
     * The fill style. Possible values are listed in the table below:
@@ -41,5 +41,25 @@ trait SimpleFillSymbol
     */
   @JSName("type")
   val type_SimpleFillSymbol: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`simple-fill` = js.native
+}
+
+@JSGlobal("__esri.SimpleFillSymbol")
+@js.native
+/**
+  * SimpleFillSymbol is used for rendering 2D polygons in either a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). It can be filled with a solid [color](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html#color), or a [pattern](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html#style). In addition, the symbol can have an optional [outline](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html#outline), which is defined by a [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html)
+  */
+class SimpleFillSymbolCls () extends SimpleFillSymbol {
+  def this(properties: SimpleFillSymbolProperties) = this()
+  /**
+    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    *
+    *
+    */
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 

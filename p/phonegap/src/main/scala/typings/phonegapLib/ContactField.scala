@@ -13,6 +13,18 @@ trait ContactField extends js.Object {
 
 @JSGlobal("ContactField")
 @js.native
+class ContactFieldCls protected () extends ContactField {
+  def this(`type`: java.lang.String, calue: java.lang.String, perf: scala.Boolean) = this()
+  /* CompleteClass */
+  override var pref: scala.Boolean = js.native
+  /* CompleteClass */
+  override var `type`: java.lang.String = js.native
+  /* CompleteClass */
+  override var value: java.lang.String = js.native
+}
+
+@JSGlobal("ContactField")
+@js.native
 object ContactField
   extends org.scalablytyped.runtime.Instantiable3[
       /* type */ java.lang.String, 

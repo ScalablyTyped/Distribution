@@ -27,6 +27,9 @@ object TrackerNs extends js.Object {
   }
   
   @js.native
+  class DependencyCls () extends Dependency
+  
+  @js.native
   trait DependencyStatic
     extends org.scalablytyped.runtime.Instantiable0[Dependency]
   

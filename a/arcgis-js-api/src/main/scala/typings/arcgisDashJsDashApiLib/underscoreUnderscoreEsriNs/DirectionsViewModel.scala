@@ -174,3 +174,14 @@ trait DirectionsViewModel
   def zoomToRoute(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.DirectionsViewModel")
+@js.native
+/**
+  * Provides the communication and data manipulation logic for the [Directions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html)
+  */
+class DirectionsViewModelCls () extends DirectionsViewModel {
+  def this(properties: DirectionsViewModelProperties) = this()
+}
+

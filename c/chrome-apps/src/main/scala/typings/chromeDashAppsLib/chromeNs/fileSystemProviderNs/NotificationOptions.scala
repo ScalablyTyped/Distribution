@@ -17,7 +17,7 @@ trait NotificationOptions extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHANGEDDELETED[keyof chrome-apps.Anon_CHANGEDDELETED] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.CHANGED | chromeDashAppsLib.chromeDashAppsLibStrings.DELETED
     ]
   ]
   /** List of changes to entries within the observed directory (including the entry itself)  */
@@ -45,7 +45,7 @@ object NotificationOptions {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHANGEDDELETED[keyof chrome-apps.Anon_CHANGEDDELETED] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.CHANGED | chromeDashAppsLib.chromeDashAppsLibStrings.DELETED
       ]
     ],
     fileSystemId: java.lang.String,

@@ -29,6 +29,11 @@ package object hapiMod {
   type ResponseValue = java.lang.String | js.Object
   type RouteCompressionEncoderSettings = js.Object
   type RouteEventHandler = js.Function1[/* route */ RequestRoute, scala.Unit]
+  /* Rewritten from type alias, can be one of: 
+    - RouteOptionsAccessScopeObject
+    - RouteOptionsAccessEntityObject
+    - RouteOptionsAccessScopeObject with RouteOptionsAccessEntityObject
+  */
   type RouteOptionsAccessObject = _RouteOptionsAccessObject | (RouteOptionsAccessScopeObject with RouteOptionsAccessEntityObject)
   type RouteOptionsAccessScope = hapiLib.hapiLibNumbers.`false` | java.lang.String | js.Array[java.lang.String]
   type RouteOptionsCache = hapiLib.Anon_Default with (hapiLib.Anon_ExpiresAt | hapiLib.Anon_ExpiresAtExpiresIn | hapiLib.Anon_ExpiresAtExpiresInUndefined)

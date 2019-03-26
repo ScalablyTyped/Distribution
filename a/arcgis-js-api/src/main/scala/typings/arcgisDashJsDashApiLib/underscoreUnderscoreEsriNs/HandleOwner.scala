@@ -15,3 +15,9 @@ trait HandleOwner extends Accessor {
   var handles: scala.Unit = js.native
 }
 
+@JSGlobal("__esri.HandleOwner")
+@js.native
+class HandleOwnerCls () extends HandleOwner {
+  def this(properties: HandleOwnerProperties) = this()
+}
+

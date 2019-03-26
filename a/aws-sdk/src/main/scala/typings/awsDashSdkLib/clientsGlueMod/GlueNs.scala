@@ -6150,6 +6150,11 @@ object GlueNs extends js.Object {
   type BooleanNullable = scala.Boolean
   type BooleanValue = scala.Boolean
   type BoundedPartitionValueList = js.Array[ValueString]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.`SSE-KMS`
+    - java.lang.String
+  */
   type CatalogEncryptionMode = _CatalogEncryptionMode | java.lang.String
   type CatalogEntries = js.Array[CatalogEntry]
   type CatalogIdString = java.lang.String
@@ -6157,6 +6162,11 @@ object GlueNs extends js.Object {
   type ClassifierList = js.Array[Classifier]
   type ClassifierNameList = js.Array[NameString]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.`SSE-KMS`
+    - java.lang.String
+  */
   type CloudWatchEncryptionMode = _CloudWatchEncryptionMode | java.lang.String
   type CodeGenArgName = java.lang.String
   type CodeGenArgValue = java.lang.String
@@ -6171,13 +6181,40 @@ object GlueNs extends js.Object {
   type ConditionList = js.Array[Condition]
   type ConnectionList = js.Array[Connection]
   type ConnectionName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.HOST
+    - awsDashSdkLib.awsDashSdkLibStrings.PORT
+    - awsDashSdkLib.awsDashSdkLibStrings.USERNAME
+    - awsDashSdkLib.awsDashSdkLibStrings.PASSWORD
+    - awsDashSdkLib.awsDashSdkLibStrings.ENCRYPTED_PASSWORD
+    - awsDashSdkLib.awsDashSdkLibStrings.JDBC_DRIVER_JAR_URI
+    - awsDashSdkLib.awsDashSdkLibStrings.JDBC_DRIVER_CLASS_NAME
+    - awsDashSdkLib.awsDashSdkLibStrings.JDBC_ENGINE
+    - awsDashSdkLib.awsDashSdkLibStrings.JDBC_ENGINE_VERSION
+    - awsDashSdkLib.awsDashSdkLibStrings.CONFIG_FILES
+    - awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_ID
+    - awsDashSdkLib.awsDashSdkLibStrings.JDBC_CONNECTION_URL
+    - awsDashSdkLib.awsDashSdkLibStrings.JDBC_ENFORCE_SSL
+    - java.lang.String
+  */
   type ConnectionPropertyKey = _ConnectionPropertyKey | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.JDBC
+    - awsDashSdkLib.awsDashSdkLibStrings.SFTP
+    - java.lang.String
+  */
   type ConnectionType = _ConnectionType | java.lang.String
   type CrawlerConfiguration = java.lang.String
   type CrawlerList = js.Array[Crawler]
   type CrawlerMetricsList = js.Array[CrawlerMetrics]
   type CrawlerNameList = js.Array[NameString]
   type CrawlerSecurityConfiguration = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.READY
+    - awsDashSdkLib.awsDashSdkLibStrings.RUNNING
+    - awsDashSdkLib.awsDashSdkLibStrings.STOPPING
+    - java.lang.String
+  */
   type CrawlerState = _CrawlerState | java.lang.String
   type CronExpression = java.lang.String
   type CustomPatterns = java.lang.String
@@ -6185,6 +6222,12 @@ object GlueNs extends js.Object {
   type DagNodes = js.Array[CodeGenNode]
   type DatabaseList = js.Array[Database]
   type DatabaseName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.LOG
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETE_FROM_DATABASE
+    - awsDashSdkLib.awsDashSdkLibStrings.DEPRECATE_IN_DATABASE
+    - java.lang.String
+  */
   type DeleteBehavior = _DeleteBehavior | java.lang.String
   type DeleteConnectionNameList = js.Array[NameString]
   type DescriptionString = java.lang.String
@@ -6195,6 +6238,12 @@ object GlueNs extends js.Object {
   type DynamoDBTargetList = js.Array[DynamoDBTarget]
   type ErrorString = java.lang.String
   type ExecutionTime = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.MUST_EXIST
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_EXIST
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type ExistCondition = _ExistCondition | java.lang.String
   type FieldType = java.lang.String
   type FilterString = java.lang.String
@@ -6209,21 +6258,52 @@ object GlueNs extends js.Object {
   type IntegerFlag = scala.Double
   type IntegerValue = scala.Double
   type JdbcTargetList = js.Array[JdbcTarget]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.`CSE-KMS`
+    - java.lang.String
+  */
   type JobBookmarksEncryptionMode = _JobBookmarksEncryptionMode | java.lang.String
   type JobList = js.Array[Job]
   type JobName = java.lang.String
   type JobNameList = js.Array[NameString]
   type JobRunList = js.Array[JobRun]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.STARTING
+    - awsDashSdkLib.awsDashSdkLibStrings.RUNNING
+    - awsDashSdkLib.awsDashSdkLibStrings.STOPPING
+    - awsDashSdkLib.awsDashSdkLibStrings.STOPPED
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.TIMEOUT
+    - java.lang.String
+  */
   type JobRunState = _JobRunState | java.lang.String
   type JsonPath = java.lang.String
   type JsonValue = java.lang.String
   type KeyString = java.lang.String
   type KmsKeyArn = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PYTHON
+    - awsDashSdkLib.awsDashSdkLibStrings.SCALA
+    - java.lang.String
+  */
   type Language = _Language | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED
+    - awsDashSdkLib.awsDashSdkLibStrings.CANCELLED
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - java.lang.String
+  */
   type LastCrawlStatus = _LastCrawlStatus | java.lang.String
   type LocationString = java.lang.String
   type LogGroup = java.lang.String
   type LogStream = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AND
+    - awsDashSdkLib.awsDashSdkLibStrings.ANY
+    - java.lang.String
+  */
   type Logical = _Logical | java.lang.String
   type LogicalOperator = awsDashSdkLib.awsDashSdkLibStrings.EQUALS | java.lang.String
   type MappingList = js.Array[MappingEntry]
@@ -6249,9 +6329,21 @@ object GlueNs extends js.Object {
   type PolicyJsonString = java.lang.String
   type PredecessorList = js.Array[Predecessor]
   type PredicateString = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.USER
+    - awsDashSdkLib.awsDashSdkLibStrings.ROLE
+    - awsDashSdkLib.awsDashSdkLibStrings.GROUP
+    - java.lang.String
+  */
   type PrincipalType = _PrincipalType | java.lang.String
   type PublicKeysList = js.Array[GenericString]
   type PythonScript = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.JAR
+    - awsDashSdkLib.awsDashSdkLibStrings.FILE
+    - awsDashSdkLib.awsDashSdkLibStrings.ARCHIVE
+    - java.lang.String
+  */
   type ResourceType = _ResourceType | java.lang.String
   type ResourceUriList = js.Array[ResourceUri]
   type Role = java.lang.String
@@ -6259,9 +6351,21 @@ object GlueNs extends js.Object {
   type RoleString = java.lang.String
   type RowTag = java.lang.String
   type S3EncryptionList = js.Array[S3Encryption]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.`SSE-KMS`
+    - awsDashSdkLib.awsDashSdkLibStrings.`SSE-S3`
+    - java.lang.String
+  */
   type S3EncryptionMode = _S3EncryptionMode | java.lang.String
   type S3TargetList = js.Array[S3Target]
   type ScalaCode = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SCHEDULED
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_SCHEDULED
+    - awsDashSdkLib.awsDashSdkLibStrings.TRANSITIONING
+    - java.lang.String
+  */
   type ScheduleState = _ScheduleState | java.lang.String
   type SchemaPathString = java.lang.String
   type ScriptLocationString = java.lang.String
@@ -6284,9 +6388,31 @@ object GlueNs extends js.Object {
   type TotalSegmentsInteger = scala.Double
   type TriggerList = js.Array[Trigger]
   type TriggerNameList = js.Array[NameString]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATING
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATED
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVATING
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVATED
+    - awsDashSdkLib.awsDashSdkLibStrings.DEACTIVATING
+    - awsDashSdkLib.awsDashSdkLibStrings.DEACTIVATED
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETING
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATING
+    - java.lang.String
+  */
   type TriggerState = _TriggerState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SCHEDULED
+    - awsDashSdkLib.awsDashSdkLibStrings.CONDITIONAL
+    - awsDashSdkLib.awsDashSdkLibStrings.ON_DEMAND
+    - java.lang.String
+  */
   type TriggerType = _TriggerType | java.lang.String
   type URI = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.LOG
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATE_IN_DATABASE
+    - java.lang.String
+  */
   type UpdateBehavior = _UpdateBehavior | java.lang.String
   type UriString = java.lang.String
   type UserDefinedFunctionList = js.Array[UserDefinedFunction]
@@ -6295,6 +6421,11 @@ object GlueNs extends js.Object {
   type VersionId = scala.Double
   type VersionString = java.lang.String
   type ViewTextString = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-03-31`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

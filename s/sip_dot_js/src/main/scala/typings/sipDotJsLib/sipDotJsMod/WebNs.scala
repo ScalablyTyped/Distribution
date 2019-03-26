@@ -22,8 +22,8 @@ object WebNs extends js.Object {
   }
   
   @js.native
-  class Transport ()
-    extends sipDotJsLib.typesWebMod.Transport
+  class WebTransport ()
+    extends sipDotJsLib.typesWebMod.WebTransport
   
   @JSName("Modifiers")
   @js.native
@@ -52,7 +52,7 @@ object WebNs extends js.Object {
   
   /* static members */
   @js.native
-  object Transport extends js.Object {
+  object WebTransport extends js.Object {
     val C: sipDotJsLib.typesWebTransportMod.TransportStatus = js.native
   }
   

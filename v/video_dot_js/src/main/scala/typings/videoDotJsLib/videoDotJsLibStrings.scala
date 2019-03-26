@@ -99,8 +99,8 @@ object videoDotJsLibStrings {
   
   @js.native
   sealed trait descriptions
-    extends videoDotJsLib.videoDotJsMod.videojsNs.AudioTrackNs.Kind
-       with videoDotJsLib.videoDotJsMod.videojsNs.TextTrackNs.Kind
+    extends videoDotJsLib.videoDotJsMod.videojsNs.TextTrackNs.Kind
+       with videoDotJsLib.videoDotJsMod.videojsNs.AudioTrackNs.Kind
   
   @js.native
   sealed trait disabled

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ojTabBarEventMap[K, D]
   extends atOracleOraclejetLib.atOracleOraclejetMod.baseComponentEventMap[ojTabBarSettableProperties[K, D]] {
   var asChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String]
-  var currentItemChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var currentItemChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var dataChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[(atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D]) | scala.Null]
   var displayChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.all | atOracleOraclejetLib.atOracleOraclejetLibStrings.icons
@@ -32,7 +32,7 @@ trait ojTabBarEventMap[K, D]
   var reorderableChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.enabled | atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled
   ]
-  var selectionChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var selectionChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var truncationChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.progressive
   ]
@@ -58,7 +58,7 @@ object ojTabBarEventMap {
     contextmenu: stdLib.MouseEvent,
     copy: stdLib.ClipboardEvent,
     cuechange: stdLib.Event,
-    currentItemChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    currentItemChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     cut: stdLib.ClipboardEvent,
     dataChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[(atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D]) | scala.Null],
     dblclick: stdLib.MouseEvent,
@@ -139,7 +139,7 @@ object ojTabBarEventMap {
     seeked: stdLib.Event,
     seeking: stdLib.Event,
     select: stdLib.UIEvent,
-    selectionChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    selectionChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     stalled: stdLib.Event,
     submit: stdLib.Event,
     suspend: stdLib.Event,

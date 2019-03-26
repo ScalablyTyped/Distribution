@@ -17,7 +17,7 @@ trait FileStatusChangedDetail extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ADDED[keyof chrome-apps.Anon_ADDED] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.added | chromeDashAppsLib.chromeDashAppsLibStrings.updated | chromeDashAppsLib.chromeDashAppsLibStrings.deleted
       ]
     ]
   ] = js.undefined
@@ -32,7 +32,7 @@ trait FileStatusChangedDetail extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_LOCALTOREMOTE[keyof chrome-apps.Anon_LOCALTOREMOTE] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.local_to_remote | chromeDashAppsLib.chromeDashAppsLibStrings.remote_to_local
       ]
     ]
   ] = js.undefined
@@ -52,7 +52,7 @@ trait FileStatusChangedDetail extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONFLICTING[keyof chrome-apps.Anon_CONFLICTING] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.synced | chromeDashAppsLib.chromeDashAppsLibStrings.pending | chromeDashAppsLib.chromeDashAppsLibStrings.conflicting
     ]
   ]
 }
@@ -66,7 +66,7 @@ object FileStatusChangedDetail {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONFLICTING[keyof chrome-apps.Anon_CONFLICTING] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.synced | chromeDashAppsLib.chromeDashAppsLibStrings.pending | chromeDashAppsLib.chromeDashAppsLibStrings.conflicting
       ]
     ],
     action: chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -74,7 +74,7 @@ object FileStatusChangedDetail {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ADDED[keyof chrome-apps.Anon_ADDED] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.added | chromeDashAppsLib.chromeDashAppsLibStrings.updated | chromeDashAppsLib.chromeDashAppsLibStrings.deleted
       ]
     ] = null,
     direction: chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -82,7 +82,7 @@ object FileStatusChangedDetail {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_LOCALTOREMOTE[keyof chrome-apps.Anon_LOCALTOREMOTE] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.local_to_remote | chromeDashAppsLib.chromeDashAppsLibStrings.remote_to_local
       ]
     ] = null
   ): FileStatusChangedDetail = {

@@ -13,6 +13,13 @@ trait ConvolverNode extends AudioNode {
 
 @JSGlobal("ConvolverNode")
 @js.native
+class ConvolverNodeCls protected () extends ConvolverNode {
+  def this(context: BaseAudioContext) = this()
+  def this(context: BaseAudioContext, options: ConvolverOptions) = this()
+}
+
+@JSGlobal("ConvolverNode")
+@js.native
 object ConvolverNode
   extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, ConvolverNode]
      with org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ ConvolverOptions, ConvolverNode]

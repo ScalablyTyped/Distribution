@@ -39,3 +39,9 @@ trait Environment extends Accessor {
   var starsEnabled: scala.Boolean = js.native
 }
 
+@JSGlobal("__esri.Environment")
+@js.native
+class EnvironmentCls () extends Environment {
+  def this(properties: EnvironmentProperties) = this()
+}
+

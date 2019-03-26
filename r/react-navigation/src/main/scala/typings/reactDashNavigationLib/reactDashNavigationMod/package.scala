@@ -38,6 +38,11 @@ package object reactDashNavigationMod {
     /* screenProps */ js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]], 
     Options
   ]
+  /* Rewritten from type alias, can be one of: 
+    - NavigationComponent
+    - reactDashNavigationLib.Anon_Screen
+    - reactDashNavigationLib.Anon_GetScreen
+  */
   type NavigationScreenRouteConfig = _NavigationScreenRouteConfig | NavigationComponent
   type NavigationStateRoute[NavigationLeafRouteParams] = NavigationLeafRoute[NavigationLeafRouteParams] with NavigationState
   type NavigationStyleInterpolator = js.Function1[

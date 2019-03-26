@@ -65,7 +65,7 @@ object antdLibComponents {
   @scala.inline
   def ConfigConsumer: reactLib.reactMod.ReactNs.ComponentType[
     createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps[antdLib.libConfigDashProviderMod.ConfigConsumerProps | scala.Null]
-  ] = antdLib.libConfigDashProviderMod.^.ConfigConsumer.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[antdLib.libConfigDashProviderMod.ConfigConsumer].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   createDashReactDashContextLib.createDashReactDashContextMod.ConsumerProps[antdLib.libConfigDashProviderMod.ConfigConsumerProps | scala.Null]]]
   @scala.inline
   def ConfigDashProvider: reactLib.reactMod.ReactNs.ComponentType[antdLib.libConfigDashProviderMod.ConfigProviderProps] = js.constructorOf[antdLib.libConfigDashProviderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libConfigDashProviderMod.ConfigProviderProps]]
@@ -74,9 +74,9 @@ object antdLibComponents {
   @scala.inline
   def Countdown: reactLib.reactMod.ReactNs.ComponentType[antdLib.libStatisticCountdownMod.CountdownProps] = js.constructorOf[antdLib.libStatisticCountdownMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libStatisticCountdownMod.CountdownProps]]
   @scala.inline
-  def DateDashPicker: reactLib.reactMod.ReactNs.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps] = antdLib.libDateDashPickerMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps]]
+  def DateDashPicker: reactLib.reactMod.ReactNs.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps] = js.constructorOf[antdLib.libDateDashPickerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps]]
   @scala.inline
-  def DatePicker: reactLib.reactMod.ReactNs.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps] = antdLib.antdMod.^.DatePicker.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps]]
+  def DatePicker: reactLib.reactMod.ReactNs.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps] = js.constructorOf[antdLib.antdMod.DatePicker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libDateDashPickerInterfaceMod.DatePickerProps]]
   @scala.inline
   def DirectoryTree: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeDirectoryTreeMod.DirectoryTreeProps] = js.constructorOf[antdLib.libTreeDirectoryTreeMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeDirectoryTreeMod.DirectoryTreeProps]]
   @scala.inline
@@ -112,6 +112,8 @@ object antdLibComponents {
   @scala.inline
   def Item: reactLib.reactMod.ReactNs.ComponentType[antdLib.libListItemMod.ListItemProps] = js.constructorOf[antdLib.libListItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libListItemMod.ListItemProps]]
   @scala.inline
+  def Layout: reactLib.reactMod.ReactNs.ComponentType[antdLib.libLayoutLayoutMod.BasicProps] = js.constructorOf[antdLib.libLayoutMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libLayoutLayoutMod.BasicProps]]
+  @scala.inline
   def List: reactLib.reactMod.ReactNs.ComponentType[antdLib.libListMod.ListProps] = js.constructorOf[antdLib.libListMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libListMod.ListProps]]
   @scala.inline
   def LocaleDashProvider: reactLib.reactMod.ReactNs.ComponentType[antdLib.libLocaleDashProviderMod.LocaleProviderProps] = js.constructorOf[antdLib.libLocaleDashProviderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libLocaleDashProviderMod.LocaleProviderProps]]
@@ -130,9 +132,9 @@ object antdLibComponents {
   @scala.inline
   def Operation: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTransferOperationMod.TransferOperationProps] = js.constructorOf[antdLib.libTransferOperationMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTransferOperationMod.TransferOperationProps]]
   @scala.inline
-  def OptGroup: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.OptGroupProps] = antdLib.antdMod.Select.OptGroup.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.OptGroupProps]]
+  def OptGroup: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.OptGroupProps] = antdLib.libSelectMod.default.OptGroup.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.OptGroupProps]]
   @scala.inline
-  def Option: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.OptionProps] = antdLib.antdMod.Select.Option.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.OptionProps]]
+  def Option: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.OptionProps] = antdLib.libSelectMod.default.Option.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.OptionProps]]
   @scala.inline
   def PageDashHeader: reactLib.reactMod.ReactNs.ComponentType[antdLib.libPageDashHeaderMod.PageHeaderProps] = antdLib.libPageDashHeaderMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libPageDashHeaderMod.PageHeaderProps]]
   @scala.inline
@@ -172,7 +174,7 @@ object antdLibComponents {
   @scala.inline
   def Spin: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSpinMod.SpinProps] = js.constructorOf[antdLib.libSpinMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSpinMod.SpinProps]]
   @scala.inline
-  def Step: reactLib.reactMod.ReactNs.ComponentType[antdLib.libStepsMod.StepProps] = antdLib.antdMod.Steps.Step.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libStepsMod.StepProps]]
+  def Step: reactLib.reactMod.ReactNs.ComponentType[antdLib.libStepsMod.StepProps] = antdLib.libStepsMod.default.Step.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libStepsMod.StepProps]]
   @scala.inline
   def Steps: reactLib.reactMod.ReactNs.ComponentType[antdLib.libStepsMod.StepsProps] = js.constructorOf[antdLib.libStepsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libStepsMod.StepsProps]]
   @scala.inline
@@ -180,7 +182,7 @@ object antdLibComponents {
   @scala.inline
   def Switch: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSwitchMod.SwitchProps] = js.constructorOf[antdLib.libSwitchMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSwitchMod.SwitchProps]]
   @scala.inline
-  def TabPane: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTabsMod.TabPaneProps] = antdLib.antdMod.Tabs.TabPane.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTabsMod.TabPaneProps]]
+  def TabPane: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTabsMod.TabPaneProps] = antdLib.libTabsMod.default.TabPane.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTabsMod.TabPaneProps]]
   @scala.inline
   def Table[T]: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTableInterfaceMod.TableProps[T]] = js.constructorOf[antdLib.libTableMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTableInterfaceMod.TableProps[T]]]
   @scala.inline
@@ -210,7 +212,7 @@ object antdLibComponents {
   @scala.inline
   def TreeDashSelect: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps] = js.constructorOf[antdLib.libTreeDashSelectMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps]]
   @scala.inline
-  def TreeNode: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeTreeMod.AntTreeNodeProps] = antdLib.antdMod.Tree.TreeNode.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeTreeMod.AntTreeNodeProps]]
+  def TreeNode: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeTreeMod.AntTreeNodeProps] = antdLib.libTreeMod.default.TreeNode.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeTreeMod.AntTreeNodeProps]]
   @scala.inline
   def TreeSelect: reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps] = js.constructorOf[antdLib.antdMod.TreeSelect].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps]]
   @scala.inline
@@ -247,6 +249,9 @@ object antdLibComponents {
   @scala.inline
   def BadgeProps: antdLib.libBadgeMod.BadgeProps.type = antdLib.libBadgeMod.BadgeProps
   type BadgeProps = antdLib.libBadgeMod.BadgeProps
+  @scala.inline
+  def BasicProps: antdLib.libLayoutLayoutMod.BasicProps.type = antdLib.libLayoutLayoutMod.BasicProps
+  type BasicProps = antdLib.libLayoutLayoutMod.BasicProps
   @scala.inline
   def BreadcrumbItemProps: antdLib.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps.type = antdLib.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps
   type BreadcrumbItemProps = antdLib.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps

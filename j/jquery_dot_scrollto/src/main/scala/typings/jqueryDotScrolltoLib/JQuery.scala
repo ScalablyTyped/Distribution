@@ -13,7 +13,7 @@ trait JQuery extends js.Object {
   @JSName("scrollTo")
   var scrollTo_Original: Anon_Duration = js.native
   /**
-    * Scroll the matched elements
+    * Scroll window
     *
     * @param target Where to scroll the matched elements.
     * @param duration The OVERALL length of the animation
@@ -27,7 +27,7 @@ trait JQuery extends js.Object {
   def scrollTo(target: js.Any, duration: scala.Double, onAfter: js.Function): JQuery = js.native
   def scrollTo(target: js.Any, duration: scala.Double, settings: ScrollToOptions): JQuery = js.native
   /**
-    * Scroll the matched elements
+    * Scroll window
     *
     * @param target Where to scroll the matched elements.
     * @param settings Set of settings.

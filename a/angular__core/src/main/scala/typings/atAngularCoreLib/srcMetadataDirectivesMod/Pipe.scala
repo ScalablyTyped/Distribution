@@ -24,6 +24,21 @@ trait Pipe extends js.Object {
   var pure: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+@JSImport("@angular/core/src/metadata/directives", "Pipe")
+@js.native
+class PipeCls protected () extends Pipe {
+  /**
+    * See the `Pipe` decorator.
+    */
+  def this(obj: Pipe) = this()
+  /**
+    * The pipe name to use in template bindings.
+    *
+    */
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
+}
+
 object Pipe {
   @scala.inline
   def apply(name: java.lang.String, pure: js.UndefOr[scala.Boolean] = js.undefined): Pipe = {

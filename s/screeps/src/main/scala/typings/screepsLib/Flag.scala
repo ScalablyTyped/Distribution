@@ -59,3 +59,21 @@ trait Flag extends RoomObject {
   def setPosition(x: scala.Double, y: scala.Double): OK | ERR_INVALID_ARGS = js.native
 }
 
+@JSGlobal("Flag")
+@js.native
+class FlagCls protected () extends Flag {
+  def this(name: java.lang.String, color: ColorConstant, secondaryColor: ColorConstant, roomName: java.lang.String, x: scala.Double, y: scala.Double) = this()
+  /**
+    * An object representing the position of this object in the room.
+    */
+  /* CompleteClass */
+  override var pos: RoomPosition = js.native
+  /**
+    * The link to the Room object. May be undefined in case if an object is a
+    * flag or a construction site and is placed in a room that is not visible
+    * to you.
+    */
+  /* CompleteClass */
+  override var room: js.UndefOr[Room] = js.native
+}
+

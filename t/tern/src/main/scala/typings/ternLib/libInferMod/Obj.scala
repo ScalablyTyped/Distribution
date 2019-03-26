@@ -18,3 +18,13 @@ trait Obj extends Type {
   def hasProp(prop: java.lang.String): AVal | scala.Null = js.native
 }
 
+@JSImport("tern/lib/infer", "Obj")
+@js.native
+class ObjCls () extends Obj {
+  def this(proto: js.Object) = this()
+  def this(proto: ternLib.ternLibNumbers.`true`) = this()
+  def this(proto: js.Object, name: java.lang.String) = this()
+  def this(proto: scala.Null, name: java.lang.String) = this()
+  def this(proto: ternLib.ternLibNumbers.`true`, name: java.lang.String) = this()
+}
+

@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 
 package object typeDashFestMod {
   type Class[T] = org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - scala.Double
+    - scala.Boolean
+    - scala.Null
+    - JSONObject
+    - JSONArray
+  */
   type JSONValue = _JSONValue | java.lang.String | scala.Double | scala.Boolean | scala.Null
   type Merge[FirstType, SecondType] = (Omit[FirstType, stdLib.Extract[java.lang.String, java.lang.String]]) with SecondType
   type Omit[ObjectType, KeysType /* <: java.lang.String */] = stdLib.Pick[ObjectType, stdLib.Exclude[java.lang.String, KeysType]]

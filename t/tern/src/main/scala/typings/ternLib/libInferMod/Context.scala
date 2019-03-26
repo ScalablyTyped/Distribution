@@ -16,6 +16,23 @@ trait Context extends js.Object {
   var topScope: Scope
 }
 
+@JSImport("tern/lib/infer", "Context")
+@js.native
+class ContextCls protected () extends Context {
+  def this(defs: js.Array[_], parent: ternLib.libTernMod.Server) = this()
+  /** The primitive boolean type. */
+  /* CompleteClass */
+  override var bool: Type = js.native
+  /** The primitive number type. */
+  /* CompleteClass */
+  override var num: Type = js.native
+  /** The primitive string type. */
+  /* CompleteClass */
+  override var str: Type = js.native
+  /* CompleteClass */
+  override var topScope: Scope = js.native
+}
+
 object Context {
   @scala.inline
   def apply(bool: Type, num: Type, str: Type, topScope: Scope, parent: ternLib.libTernMod.Server = null): Context = {

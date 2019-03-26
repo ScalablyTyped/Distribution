@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait AnchorLink
   extends reactLib.reactMod.Component[AnchorLinkProps, js.Any, js.Any] {
   @JSName("context")
-  var context_AnchorLink: antdLib.Anon_AntAnchor_1011846465 = js.native
+  var context_AnchorLink: antdLib.Anon_AntAnchor_141676980 = js.native
   @JSName("componentDidMount")
   def componentDidMount_MAnchorLink(): scala.Unit = js.native
   @JSName("componentDidUpdate")

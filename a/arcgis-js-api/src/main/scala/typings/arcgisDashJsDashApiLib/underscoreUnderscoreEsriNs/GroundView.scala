@@ -29,3 +29,9 @@ trait GroundView extends Accessor {
   val updating: scala.Boolean = js.native
 }
 
+@JSGlobal("__esri.GroundView")
+@js.native
+class GroundViewCls () extends GroundView {
+  def this(properties: GroundViewProperties) = this()
+}
+

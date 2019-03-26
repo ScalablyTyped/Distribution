@@ -12,6 +12,12 @@ trait MediaStreamEvent extends Event {
 
 @JSGlobal("MediaStreamEvent")
 @js.native
+class MediaStreamEventCls protected () extends MediaStreamEvent {
+  def this(`type`: java.lang.String, eventInitDict: MediaStreamEventInit) = this()
+}
+
+@JSGlobal("MediaStreamEvent")
+@js.native
 object MediaStreamEvent
   extends org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 

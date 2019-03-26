@@ -10,6 +10,18 @@ trait Enumerator[T] extends Disposable {
   def moveNext(): scala.Boolean
 }
 
+@JSGlobal("Ix.Enumerator")
+@js.native
+class EnumeratorCls[T] protected () extends Enumerator[T] {
+  def this(moveNext: js.Function0[scala.Boolean], getCurrent: js.Function0[T], dispose: js.Function0[scala.Unit]) = this()
+  /* CompleteClass */
+  override def dispose(): scala.Unit = js.native
+  /* CompleteClass */
+  override def getCurrent(): T = js.native
+  /* CompleteClass */
+  override def moveNext(): scala.Boolean = js.native
+}
+
 object Enumerator {
   @scala.inline
   def apply[T](dispose: () => scala.Unit, getCurrent: () => T, moveNext: () => scala.Boolean): Enumerator[T] = {

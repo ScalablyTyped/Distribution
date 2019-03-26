@@ -21,6 +21,10 @@ trait RTCRtpSender extends js.Object {
 
 @JSGlobal("RTCRtpSender")
 @js.native
+class RTCRtpSenderCls () extends RTCRtpSender
+
+@JSGlobal("RTCRtpSender")
+@js.native
 object RTCRtpSender
   extends org.scalablytyped.runtime.Instantiable0[RTCRtpSender] {
   def getCapabilities(kind: java.lang.String): stdLib.RTCRtpCapabilities | scala.Null = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait LogConfig extends js.Object {
   /** The JQuery element for the command. This will highlight the command in the main window when debugging */
   @JSName("$el")
-  var $el: jqueryLib.JQuery[stdLib.HTMLElement]
+  var $el: cypressLib.JQuery[stdLib.HTMLElement]
   /** Override *name* for display purposes only */
   var displayName: java.lang.String
   var message: js.Array[_]
@@ -21,7 +21,7 @@ trait LogConfig extends js.Object {
 object LogConfig {
   @scala.inline
   def apply(
-    $el: jqueryLib.JQuery[stdLib.HTMLElement],
+    $el: cypressLib.JQuery[stdLib.HTMLElement],
     consoleProps: () => ObjectLike,
     displayName: java.lang.String,
     message: js.Array[_],

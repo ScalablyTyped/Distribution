@@ -10,6 +10,11 @@ package object VueI18nNs {
   type DateTimeFormatOptions = stdLib.IntlNs.DateTimeFormatOptions | SpecificDateTimeFormatOptions
   type DateTimeFormatResult = java.lang.String
   type Locale = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - LocaleMessageObject
+    - LocaleMessageArray
+  */
   type LocaleMessage = _LocaleMessage | java.lang.String
   type MissingHandler = js.Function3[
     /* locale */ Locale, 
@@ -17,6 +22,11 @@ package object VueI18nNs {
     /* vm */ js.UndefOr[vueLib.typesVueMod.Vue], 
     java.lang.String | scala.Unit
   ]
+  /* Rewritten from type alias, can be one of: 
+    - stdLib.IntlNs.NumberFormatOptions
+    - SpecificNumberFormatOptions
+    - CurrencyNumberFormatOptions
+  */
   type NumberFormatOptions = _NumberFormatOptions | stdLib.IntlNs.NumberFormatOptions
   type NumberFormatResult = java.lang.String
   type Path = java.lang.String

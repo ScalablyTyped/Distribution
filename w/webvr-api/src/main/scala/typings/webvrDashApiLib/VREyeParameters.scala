@@ -15,6 +15,20 @@ trait VREyeParameters extends js.Object {
 
 @JSGlobal("VREyeParameters")
 @js.native
+class VREyeParametersCls () extends VREyeParameters {
+  /** @deprecated */
+  /* CompleteClass */
+  override val fieldOfView: VRFieldOfView = js.native
+  /* CompleteClass */
+  override val offset: stdLib.Float32Array = js.native
+  /* CompleteClass */
+  override val renderHeight: scala.Double = js.native
+  /* CompleteClass */
+  override val renderWidth: scala.Double = js.native
+}
+
+@JSGlobal("VREyeParameters")
+@js.native
 object VREyeParameters
   extends org.scalablytyped.runtime.Instantiable0[VREyeParameters]
 

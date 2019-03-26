@@ -56,7 +56,7 @@ trait DomainArgs extends js.Object {
     * Node-to-node encryption options. See below.
     */
   val nodeToNodeEncryption: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_654448986]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_2072549229]
   ] = js.undefined
   /**
     * Snapshot related options, see below.
@@ -92,7 +92,7 @@ object DomainArgs {
         atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CloudwatchLogGroupArnEnabled]
       ]
     ] = null,
-    nodeToNodeEncryption: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_654448986] = null,
+    nodeToNodeEncryption: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_2072549229] = null,
     snapshotOptions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AutomatedSnapshotStartHourInput] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     vpcOptions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AvailabilityZonesSecurityGroupIds] = null

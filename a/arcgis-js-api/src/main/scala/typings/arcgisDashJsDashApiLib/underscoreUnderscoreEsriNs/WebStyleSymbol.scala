@@ -51,3 +51,23 @@ trait WebStyleSymbol
   def fetchSymbol(): arcgisDashJsDashApiLib.IPromise[PointSymbol3D] = js.native
 }
 
+@JSGlobal("__esri.WebStyleSymbol")
+@js.native
+/**
+  * WebStyleSymbol is a class used to conveniently create realistic and thematic 3D symbols. It is a wrapper for creating [PointSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html) objects that point to a web style resource available in the API. This symbol type is not supported in 2D MapViews.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-WebStyleSymbol.html)
+  */
+class WebStyleSymbolCls () extends WebStyleSymbol {
+  def this(properties: WebStyleSymbolProperties) = this()
+  /**
+    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    *
+    *
+    */
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
+}
+

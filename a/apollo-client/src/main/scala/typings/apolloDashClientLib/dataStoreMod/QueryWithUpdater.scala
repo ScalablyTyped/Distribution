@@ -12,7 +12,7 @@ trait QueryWithUpdater extends js.Object {
   var updater_Original: apolloDashClientLib.coreTypesMod.MutationQueryReducer[js.Object] = js.native
   def updater(
     previousResult: stdLib.Record[java.lang.String, _],
-    options: apolloDashClientLib.Anon_MutationResultQueryName
+    options: apolloDashClientLib.Anon_MutationResult[js.Object]
   ): stdLib.Record[java.lang.String, _] = js.native
 }
 

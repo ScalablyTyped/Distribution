@@ -13321,7 +13321,11 @@ trait JQuery[TElement]
   def wrap(wrappingElement_function: jqueryLib.JQueryNs.Selector | jqueryLib.JQueryNs.htmlString): this.type = js.native
   def wrap(wrappingElement_function: JQuery[stdLib.HTMLElement]): this.type = js.native
   def wrap(
-    wrappingElement_function: js.ThisFunction1[/* this */ TElement, /* index */ scala.Double, java.lang.String | this.type]
+    wrappingElement_function: js.ThisFunction1[
+      /* this */ TElement, 
+      /* index */ scala.Double, 
+      java.lang.String | JQuery[stdLib.HTMLElement]
+    ]
   ): this.type = js.native
   def wrap(wrappingElement_function: stdLib.Element): this.type = js.native
   /**
@@ -13476,7 +13480,9 @@ trait JQuery[TElement]
     */
   def wrapAll(wrappingElement_function: jqueryLib.JQueryNs.Selector | jqueryLib.JQueryNs.htmlString): this.type = js.native
   def wrapAll(wrappingElement_function: JQuery[stdLib.HTMLElement]): this.type = js.native
-  def wrapAll(wrappingElement_function: js.ThisFunction0[/* this */ TElement, java.lang.String | this.type]): this.type = js.native
+  def wrapAll(
+    wrappingElement_function: js.ThisFunction0[/* this */ TElement, java.lang.String | JQuery[stdLib.HTMLElement]]
+  ): this.type = js.native
   def wrapAll(wrappingElement_function: stdLib.Element): this.type = js.native
   /**
     * Wrap an HTML structure around the content of each element in the set of matched elements.
@@ -13613,7 +13619,7 @@ trait JQuery[TElement]
     wrappingElement_function: js.ThisFunction1[
       /* this */ TElement, 
       /* index */ scala.Double, 
-      java.lang.String | this.type | stdLib.Element
+      java.lang.String | JQuery[stdLib.HTMLElement] | stdLib.Element
     ]
   ): this.type = js.native
   def wrapInner(wrappingElement_function: stdLib.Element): this.type = js.native

@@ -5,14 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Fd extends js.Object {
   /**
-    * Asynchronous ftruncate(2) - Truncate a file to a specified length.
+    * Asynchronous fchown(2) - Change ownership of a file.
     * @param fd A file descriptor.
-    * @param len If not specified, defaults to `0`.
     */
-  def __promisify__(fd: scala.Double): js.Promise[scala.Unit] = js.native
-  def __promisify__(fd: scala.Double, len: scala.Double): js.Promise[scala.Unit] = js.native
+  def __promisify__(fd: scala.Double, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit]
+}
+
+object Anon_Fd {
+  @scala.inline
+  def apply(__promisify__ : (scala.Double, scala.Double, scala.Double) => js.Promise[scala.Unit]): Anon_Fd = {
+    val __obj = js.Dynamic.literal(__promisify__ = js.Any.fromFunction3(__promisify__))
+  
+    __obj.asInstanceOf[Anon_Fd]
+  }
 }
 

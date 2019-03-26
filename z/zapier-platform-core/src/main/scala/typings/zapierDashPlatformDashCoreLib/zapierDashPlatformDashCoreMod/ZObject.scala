@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ZObject extends js.Object {
-  var JSON: zapierDashPlatformDashCoreLib.Anon_KeyParse = js.native
+  var JSON: zapierDashPlatformDashCoreLib.Anon_Parse = js.native
   var console: stdLib.Console = js.native
   var cursor: zapierDashPlatformDashCoreLib.Anon_Cursor = js.native
   var errors: zapierDashPlatformDashCoreLib.Anon_ExpiredAuthError = js.native

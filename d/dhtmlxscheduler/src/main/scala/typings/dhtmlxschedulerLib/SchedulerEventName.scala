@@ -5,5 +5,80 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onAfterEventDisplay
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onAfterFolderToggle
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onAfterLightbox
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onAfterSchedulerResize
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeCollapse
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeDrag
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeEventChanged
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeEventCreated
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeEventDelete
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeEventDisplay
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeEventDragIn
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeEventDragOut
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeExpand
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeExternalDragIn
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeFolderToggle
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeLightbox
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeSectionRender
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeTodayDisplayed
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeTooltip
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onBeforeViewChange
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onCellClick
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onCellDblClick
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onClearAll
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onClick
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onCollapse
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onConfirmedBeforeEventDelete
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onContextMenu
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onDblClick
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onDragEnd
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEmptyClick
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventAdded
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventCancel
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventChanged
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventCollision
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventCopied
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventCreated
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventCut
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventDeleted
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventDrag
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventDragIn
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventDragOut
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventDropOut
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventIdChange
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventLoading
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventPasted
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onEventSave
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onExpand
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onExternalDragIn
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onLightbox
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onLightboxButton
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onLimitViolation
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onLoadError
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onLocationError
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onMouseDown
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onMouseMove
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onOptionsLoad
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onOptionsLoadFinal
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onOptionsLoadStart
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onSaveError
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onScaleAdd
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onScaleDblClick
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onSchedulerReady
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onSchedulerResize
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onTemplatesReady
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onTimelineCreated
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onViewChange
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onViewMoreClick
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onXLE
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onXLS
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onXScaleClick
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onXScaleDblClick
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onYScaleClick
+  - dhtmlxschedulerLib.dhtmlxschedulerLibStrings.onYScaleDblClick
+*/
 trait SchedulerEventName extends js.Object
 

@@ -24,6 +24,29 @@ trait RefreshableLayer extends js.Object {
   def refresh(): scala.Unit
 }
 
+@JSGlobal("__esri.RefreshableLayer")
+@js.native
+class RefreshableLayerCls () extends RefreshableLayer {
+  /**
+    * Refresh interval of the layer in minutes. Minimum refresh interval is 0.1 minute (6 seconds). Value of `0` indicates no refresh.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
+    *
+    * @default 0
+    */
+  /* CompleteClass */
+  override var refreshInterval: scala.Double = js.native
+  /**
+    * Fetches all the data for the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refresh)
+    *
+    *
+    */
+  /* CompleteClass */
+  override def refresh(): scala.Unit = js.native
+}
+
 object RefreshableLayer {
   @scala.inline
   def apply(refresh: () => scala.Unit, refreshInterval: scala.Double): RefreshableLayer = {

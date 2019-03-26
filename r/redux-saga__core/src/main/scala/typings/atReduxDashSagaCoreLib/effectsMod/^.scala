@@ -69,7 +69,7 @@ object ^ extends js.Object {
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type CpsFunctionParameters<Ctx[Name]> is not an array type */ args: CpsFunctionParameters[/* import warning: ImportType.apply Failed type conversion: Ctx[Name] */ js.Any]
   ): CpsEffect = js.native
   def cps[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, scala.Unit] */](
-    ctxAndFn: atReduxDashSagaCoreLib.Anon_ContextFnCtx_1614896010[Ctx, Fn],
+    ctxAndFn: atReduxDashSagaCoreLib.Anon_ContextFnCtx_735312900[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type CpsFunctionParameters<Fn> is not an array type */ args: CpsFunctionParameters[Fn]
   ): CpsEffect = js.native
   def cps[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, scala.Unit] */](

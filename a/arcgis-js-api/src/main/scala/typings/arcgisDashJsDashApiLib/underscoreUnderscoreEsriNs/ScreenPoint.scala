@@ -25,3 +25,9 @@ trait ScreenPoint extends Accessor {
   var y: scala.Double = js.native
 }
 
+@JSGlobal("__esri.ScreenPoint")
+@js.native
+class ScreenPointCls () extends ScreenPoint {
+  def this(properties: ScreenPointProperties) = this()
+}
+

@@ -38,6 +38,69 @@ trait DOMException extends js.Object {
 
 @JSGlobal("DOMException")
 @js.native
+class DOMExceptionCls () extends DOMException {
+  def this(message: java.lang.String) = this()
+  def this(message: java.lang.String, name: java.lang.String) = this()
+  /* CompleteClass */
+  override val ABORT_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val DATA_CLONE_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val DOMSTRING_SIZE_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val HIERARCHY_REQUEST_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val INDEX_SIZE_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val INUSE_ATTRIBUTE_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val INVALID_ACCESS_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val INVALID_CHARACTER_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val INVALID_MODIFICATION_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val INVALID_NODE_TYPE_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val INVALID_STATE_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val NAMESPACE_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val NETWORK_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val NOT_FOUND_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val NOT_SUPPORTED_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val NO_DATA_ALLOWED_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val NO_MODIFICATION_ALLOWED_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val QUOTA_EXCEEDED_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val SECURITY_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val SYNTAX_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val TIMEOUT_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val TYPE_MISMATCH_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val URL_MISMATCH_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val VALIDATION_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val WRONG_DOCUMENT_ERR: scala.Double = js.native
+  /* CompleteClass */
+  override val code: scala.Double = js.native
+  /* CompleteClass */
+  override val message: java.lang.String = js.native
+  /* CompleteClass */
+  override val name: java.lang.String = js.native
+}
+
+@JSGlobal("DOMException")
+@js.native
 object DOMException
   extends org.scalablytyped.runtime.Instantiable0[DOMException]
      with org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, DOMException]

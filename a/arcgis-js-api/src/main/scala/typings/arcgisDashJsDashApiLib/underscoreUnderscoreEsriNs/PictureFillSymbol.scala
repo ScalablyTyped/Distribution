@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 trait PictureFillSymbol
   extends FillSymbol
      with arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbolsNs.FillSymbol
-     with Symbol2D
      with arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbolsNs.Symbol2D
+     with Symbol2D
      with symbolsFillSymbol {
   /**
     * The height of the image in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
@@ -74,5 +74,25 @@ trait PictureFillSymbol
     * @default 1
     */
   var yscale: scala.Double = js.native
+}
+
+@JSGlobal("__esri.PictureFillSymbol")
+@js.native
+/**
+  * PictureFillSymbol uses an image in a repeating pattern to symbolize polygon features in a 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html). A [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#url) must point to a valid image. In addition, the symbol can have an optional [outline](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html#outline), which is defined by a [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html). PictureFillSymbols may be applied to polygon features in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) or an individual [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureFillSymbol.html)
+  */
+class PictureFillSymbolCls () extends PictureFillSymbol {
+  def this(properties: PictureFillSymbolProperties) = this()
+  /**
+    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    *
+    *
+    */
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 

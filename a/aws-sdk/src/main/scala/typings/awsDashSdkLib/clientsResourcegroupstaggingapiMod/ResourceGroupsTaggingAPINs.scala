@@ -308,6 +308,11 @@ object ResourceGroupsTaggingAPINs extends js.Object {
   val TypesNs: this.type = js.native
   type AmazonResourceType = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.InternalServiceException
+    - awsDashSdkLib.awsDashSdkLibStrings.InvalidParameterException
+    - java.lang.String
+  */
   type ErrorCode = _ErrorCode | java.lang.String
   type ErrorMessage = java.lang.String
   type PaginationToken = java.lang.String
@@ -326,6 +331,11 @@ object ResourceGroupsTaggingAPINs extends js.Object {
   type TagValueList = js.Array[TagValue]
   type TagValuesOutputList = js.Array[TagValue]
   type TagsPerPage = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-01-26`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

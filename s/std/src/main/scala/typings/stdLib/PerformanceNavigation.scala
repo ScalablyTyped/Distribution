@@ -17,6 +17,25 @@ trait PerformanceNavigation extends js.Object {
 
 @JSGlobal("PerformanceNavigation")
 @js.native
+class PerformanceNavigationCls () extends PerformanceNavigation {
+  /* CompleteClass */
+  override val TYPE_BACK_FORWARD: scala.Double = js.native
+  /* CompleteClass */
+  override val TYPE_NAVIGATE: scala.Double = js.native
+  /* CompleteClass */
+  override val TYPE_RELOAD: scala.Double = js.native
+  /* CompleteClass */
+  override val TYPE_RESERVED: scala.Double = js.native
+  /* CompleteClass */
+  override val redirectCount: scala.Double = js.native
+  /* CompleteClass */
+  override val `type`: scala.Double = js.native
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
+}
+
+@JSGlobal("PerformanceNavigation")
+@js.native
 object PerformanceNavigation
   extends org.scalablytyped.runtime.Instantiable0[PerformanceNavigation] {
   val TYPE_BACK_FORWARD: scala.Double = js.native

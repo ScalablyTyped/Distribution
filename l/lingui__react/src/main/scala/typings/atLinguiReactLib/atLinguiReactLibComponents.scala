@@ -9,7 +9,7 @@ object atLinguiReactLibComponents {
   @scala.inline
   def DateFormat: reactLib.reactMod.ReactNs.ComponentType[
     atLinguiReactLib.createFormatMod.FormatPropsWithoutI18n[stdLib.Date, stdLib.IntlNs.DateTimeFormatOptions]
-  ] = atLinguiReactLib.atLinguiReactMod.^.DateFormat.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atLinguiReactLib.atLinguiReactMod.DateFormat].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atLinguiReactLib.createFormatMod.FormatPropsWithoutI18n[stdLib.Date, stdLib.IntlNs.DateTimeFormatOptions]]]
   @scala.inline
   def I18n: reactLib.reactMod.ReactNs.ComponentType[atLinguiReactLib.i18nMod.I18nComponentProps] = js.constructorOf[atLinguiReactLib.i18nMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atLinguiReactLib.i18nMod.I18nComponentProps]]
@@ -18,7 +18,7 @@ object atLinguiReactLibComponents {
   @scala.inline
   def NumberFormat: reactLib.reactMod.ReactNs.ComponentType[
     atLinguiReactLib.createFormatMod.FormatPropsWithoutI18n[scala.Double, stdLib.IntlNs.NumberFormatOptions]
-  ] = atLinguiReactLib.atLinguiReactMod.^.NumberFormat.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atLinguiReactLib.atLinguiReactMod.NumberFormat].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atLinguiReactLib.createFormatMod.FormatPropsWithoutI18n[scala.Double, stdLib.IntlNs.NumberFormatOptions]]]
   @scala.inline
   def Plural: reactLib.reactMod.ReactNs.ComponentType[atLinguiReactLib.selectMod.PluralPropsWithoutI18n] = js.constructorOf[atLinguiReactLib.selectMod.Plural].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atLinguiReactLib.selectMod.PluralPropsWithoutI18n]]

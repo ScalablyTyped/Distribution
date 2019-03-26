@@ -26,6 +26,11 @@ trait QuobyteVolumeSource extends js.Object {
     */
   val registry: java.lang.String
   /**
+    * Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned
+    * Quobyte volumes, value is set by the plugin
+    */
+  val tenant: java.lang.String
+  /**
     * User to map volume access to Defaults to serivceaccount user
     */
   val user: java.lang.String
@@ -41,10 +46,11 @@ object QuobyteVolumeSource {
     group: java.lang.String,
     readOnly: scala.Boolean,
     registry: java.lang.String,
+    tenant: java.lang.String,
     user: java.lang.String,
     volume: java.lang.String
   ): QuobyteVolumeSource = {
-    val __obj = js.Dynamic.literal(group = group, readOnly = readOnly, registry = registry, user = user, volume = volume)
+    val __obj = js.Dynamic.literal(group = group, readOnly = readOnly, registry = registry, tenant = tenant, user = user, volume = volume)
   
     __obj.asInstanceOf[QuobyteVolumeSource]
   }

@@ -10,17 +10,15 @@ trait Log extends js.Object {
   def end(): Log = js.native
   def finish(): scala.Unit = js.native
   def get(): LogConfig = js.native
-  @JSName("get")
-  def get_$el(attr: cypressLib.cypressLibStrings.DOLLARel): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
+  def get(attr: cypressLib.cypressLibStrings.DOLLARel): cypressLib.JQuery[stdLib.HTMLElement] = js.native
   @JSName("get")
   def get_displayName(attr: cypressLib.cypressLibStrings.displayName): java.lang.String = js.native
   @JSName("get")
   def get_message(attr: cypressLib.cypressLibStrings.message): js.Array[_] = js.native
   @JSName("get")
   def get_name(attr: cypressLib.cypressLibStrings.name): java.lang.String = js.native
+  def set(key: cypressLib.cypressLibStrings.DOLLARel, value: cypressLib.JQuery[stdLib.HTMLElement]): Log = js.native
   def set(options: stdLib.Partial[LogConfig]): Log = js.native
-  @JSName("set")
-  def set_$el(key: cypressLib.cypressLibStrings.DOLLARel, value: jqueryLib.JQuery[stdLib.HTMLElement]): Log = js.native
   @JSName("set")
   def set_displayName(key: cypressLib.cypressLibStrings.displayName, value: java.lang.String): Log = js.native
   @JSName("set")

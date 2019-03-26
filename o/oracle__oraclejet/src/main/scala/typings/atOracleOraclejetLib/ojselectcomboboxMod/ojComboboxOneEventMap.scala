@@ -45,7 +45,7 @@ trait ojComboboxOneEventMap[K, D]
     ]) | scala.Null
   ]
   @JSName("valueChanged")
-  var valueChanged_ojComboboxOneEventMap: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var valueChanged_ojComboboxOneEventMap: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var valueOptionChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_LabelValue]
 }
 
@@ -184,7 +184,7 @@ object ojComboboxOneEventMap {
         atOracleOraclejetLib.ojvalidationDashBaseMod.Validator[_] | atOracleOraclejetLib.ojvalidationDashBaseMod.ValidationNs.RegisteredValidator
       ]) | scala.Null
     ],
-    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     valueOptionChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_LabelValue],
     volumechange: stdLib.Event,
     waiting: stdLib.Event,

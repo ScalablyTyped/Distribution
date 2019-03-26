@@ -44,3 +44,9 @@ trait Observable[T] extends js.Object {
   ): zenDashObservableDashTsLib.libTypesMod.ZenObservableNs.Subscription = js.native
 }
 
+@JSImport("zen-observable-ts/lib/zenObservable", "Observable")
+@js.native
+class ObservableCls[T] protected () extends Observable[T] {
+  def this(subscriber: Subscriber[T]) = this()
+}
+

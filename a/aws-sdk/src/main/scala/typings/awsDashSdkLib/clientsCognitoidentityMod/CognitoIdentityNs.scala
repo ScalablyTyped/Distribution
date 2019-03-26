@@ -1029,6 +1029,11 @@ object CognitoIdentityNs extends js.Object {
   type ARNString = java.lang.String
   type AccessKeyString = java.lang.String
   type AccountId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AuthenticatedRole
+    - awsDashSdkLib.awsDashSdkLibStrings.Deny
+    - java.lang.String
+  */
   type AmbiguousRoleResolutionType = _AmbiguousRoleResolutionType | java.lang.String
   type ClaimName = java.lang.String
   type ClaimValue = java.lang.String
@@ -1041,6 +1046,11 @@ object CognitoIdentityNs extends js.Object {
   type DeveloperProviderName = java.lang.String
   type DeveloperUserIdentifier = java.lang.String
   type DeveloperUserIdentifierList = js.Array[DeveloperUserIdentifier]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AccessDenied
+    - awsDashSdkLib.awsDashSdkLibStrings.InternalServerError
+    - java.lang.String
+  */
   type ErrorCode = _ErrorCode | java.lang.String
   type HideDisabled = scala.Boolean
   type IdentitiesList = js.Array[IdentityDescription]
@@ -1055,12 +1065,24 @@ object CognitoIdentityNs extends js.Object {
   type IdentityProviderName = java.lang.String
   type IdentityProviderToken = java.lang.String
   type LoginsList = js.Array[IdentityProviderName]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Equals
+    - awsDashSdkLib.awsDashSdkLibStrings.Contains
+    - awsDashSdkLib.awsDashSdkLibStrings.StartsWith
+    - awsDashSdkLib.awsDashSdkLibStrings.NotEqual
+    - java.lang.String
+  */
   type MappingRuleMatchType = _MappingRuleMatchType | java.lang.String
   type MappingRulesList = js.Array[MappingRule]
   type OIDCProviderList = js.Array[ARNString]
   type OIDCToken = java.lang.String
   type PaginationKey = java.lang.String
   type QueryLimit = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Token
+    - awsDashSdkLib.awsDashSdkLibStrings.Rules
+    - java.lang.String
+  */
   type RoleMappingType = _RoleMappingType | java.lang.String
   type RoleType = java.lang.String
   type SAMLProviderList = js.Array[ARNString]
@@ -1070,6 +1092,11 @@ object CognitoIdentityNs extends js.Object {
   type TagValueType = java.lang.String
   type TokenDuration = scala.Double
   type UnprocessedIdentityIdList = js.Array[UnprocessedIdentityId]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2014-06-30`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

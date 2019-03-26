@@ -7,8 +7,27 @@ import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashElementsMod {
   type DividerProps = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any
+  /* Rewritten from type alias, can be one of: 
+    - reactLib.reactMod.ReactNs.ReactElement[js.Object]
+    - TextProps
+    - HeaderIcon
+  */
   type HeaderSubComponent = _HeaderSubComponent | reactLib.reactMod.ReactNs.ReactElement[js.Object]
   type IconNode = scala.Boolean | reactLib.reactMod.ReactNs.ReactElement[js.Object] | IconProps
+  /* Rewritten from type alias, can be one of: 
+    - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.material
+    - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.`material-community`
+    - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.`simple-line-icon`
+    - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.zocial
+    - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.`font-awesome`
+    - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.octicon
+    - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.ionicon
+    - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.foundation
+    - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.evilicon
+    - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.entypo
+    - reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.antdesign
+    - java.lang.String
+  */
   type IconType = _IconType | java.lang.String
   type Theme[T] = stdLib.Partial[FullTheme] with T
   type UpdateTheme = js.Function1[

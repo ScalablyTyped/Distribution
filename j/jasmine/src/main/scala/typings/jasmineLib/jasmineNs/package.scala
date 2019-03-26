@@ -12,6 +12,12 @@ package object jasmineNs {
     /* customEqualityTesters */ js.Array[CustomEqualityTester], 
     CustomMatcher
   ]
+  /* Rewritten from type alias, can be one of: 
+    - T
+    - ObjectContaining[T]
+    - Any
+    - Spy
+  */
   type Expected[T] = _Expected[T] | T
   type PassedExpectation = CustomReportExpectation
   type SpecFunction = js.Function1[/* spec */ js.UndefOr[Spec], scala.Unit]

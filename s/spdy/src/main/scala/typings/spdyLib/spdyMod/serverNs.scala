@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("spdy", "server")
 @js.native
 object serverNs extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - spdyLib.spdyLibStrings.h2
+    - spdyLib.spdyLibStrings.`spdy/3DOT1`
+    - spdyLib.spdyLibStrings.`spdy/3`
+    - spdyLib.spdyLibStrings.`spdy/2`
+    - spdyLib.spdyLibStrings.`http/1DOT1`
+    - spdyLib.spdyLibStrings.`http/1DOT0`
+  */
   trait Protocol extends js.Object
   
   trait PushOptions extends js.Object {

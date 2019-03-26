@@ -150,6 +150,13 @@ object diaNs extends js.Object {
     def updateTools(opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - OrthogonalDirection
+    - jointjsLib.jointjsLibStrings.`top-left`
+    - jointjsLib.jointjsLibStrings.`top-right`
+    - jointjsLib.jointjsLibStrings.`bottom-right`
+    - jointjsLib.jointjsLibStrings.`bottom-left`
+  */
   trait Direction extends js.Object
   
   @js.native
@@ -514,6 +521,10 @@ object diaNs extends js.Object {
     def vertices(vertices: js.Array[jointjsLib.jointjsMod.diaNs.LinkNs.Vertex]): this.type = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - jointjsLib.jointjsLibStrings.source
+    - jointjsLib.jointjsLibStrings.target
+  */
   trait LinkEnd extends js.Object
   
   @js.native
@@ -591,6 +602,12 @@ object diaNs extends js.Object {
     var textContent: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - jointjsLib.jointjsLibStrings.left
+    - jointjsLib.jointjsLibStrings.top
+    - jointjsLib.jointjsLibStrings.right
+    - jointjsLib.jointjsLibStrings.bottom
+  */
   trait OrthogonalDirection extends Direction
   
   trait PaddingJSON extends js.Object {

@@ -5,5 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.contextualIdentities
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.dns
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.identity
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.management
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.alarms
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.mozillaAddons
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.storage
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.unlimitedStorage
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.privacy
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.proxy
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.nativeMessaging
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.telemetry
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.theme
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.browsingData
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.devtools
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.geckoProfiler
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.menus
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.contextMenus
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.pkcs11
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.sessions
+*/
 trait _Permission extends js.Object
 

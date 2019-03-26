@@ -489,6 +489,11 @@ object SimpleDBNs extends js.Object {
   type ReplaceableAttributeList = js.Array[ReplaceableAttribute]
   type ReplaceableItemList = js.Array[ReplaceableItem]
   type String = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2009-04-15`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

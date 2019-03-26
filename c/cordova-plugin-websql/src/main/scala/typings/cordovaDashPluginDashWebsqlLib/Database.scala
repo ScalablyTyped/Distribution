@@ -47,6 +47,13 @@ trait Database extends js.Object {
 
 @JSGlobal("Database")
 @js.native
+class DatabaseCls protected () extends Database {
+  /** Constructor for Database object */
+  def this(name: java.lang.String, version: java.lang.String, displayname: java.lang.String, size: scala.Double, creationCallback: js.Function1[/* database */ Database, scala.Unit]) = this()
+}
+
+@JSGlobal("Database")
+@js.native
 object Database
   extends /** Constructor for Database object */
 org.scalablytyped.runtime.Instantiable5[

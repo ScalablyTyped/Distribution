@@ -11,53 +11,53 @@ object reactDashSelectLibComponents {
   @scala.inline
   def AsyncCreatable[OptionType]: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libAsyncCreatableMod.Props[OptionType]] = js.constructorOf[reactDashSelectLib.libAsyncCreatableMod.default[OptionType]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libAsyncCreatableMod.Props[OptionType]]]
   @scala.inline
-  def ClearIndicator: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorProps[js.Any]] = reactDashSelectLib.libComponentsIndicatorsMod.^.ClearIndicator.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorProps[js.Any]]]
+  def ClearIndicator: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsIndicatorsMod.ClearIndicator].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorProps[js.Any]]]
   @scala.inline
   def Collapse: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libAnimatedTransitionsMod.CollapseProps] = js.constructorOf[reactDashSelectLib.libAnimatedTransitionsMod.Collapse].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libAnimatedTransitionsMod.CollapseProps]]
   @scala.inline
-  def Control: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsControlMod.ControlProps[js.Any]] = reactDashSelectLib.libComponentsControlMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsControlMod.ControlProps[js.Any]]]
+  def Control: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsControlMod.ControlProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsControlMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsControlMod.ControlProps[js.Any]]]
   @scala.inline
   def Creatable[OptionType]: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libCreatableMod.Props[OptionType]] = js.constructorOf[reactDashSelectLib.libCreatableMod.default[OptionType]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libCreatableMod.Props[OptionType]]]
   @scala.inline
-  def DropdownIndicator: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorProps[js.Any]] = reactDashSelectLib.libComponentsIndicatorsMod.^.DropdownIndicator.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorProps[js.Any]]]
+  def DropdownIndicator: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsIndicatorsMod.DropdownIndicator].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorProps[js.Any]]]
   @scala.inline
-  def Fade: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libAnimatedTransitionsMod.FadeProps] = reactDashSelectLib.libAnimatedTransitionsMod.^.Fade.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libAnimatedTransitionsMod.FadeProps]]
+  def Fade: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libAnimatedTransitionsMod.FadeProps] = js.constructorOf[reactDashSelectLib.libAnimatedTransitionsMod.Fade].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libAnimatedTransitionsMod.FadeProps]]
   @scala.inline
-  def Group: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsGroupMod.GroupProps[js.Any]] = reactDashSelectLib.libComponentsGroupMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsGroupMod.GroupProps[js.Any]]]
+  def Group: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsGroupMod.GroupProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsGroupMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsGroupMod.GroupProps[js.Any]]]
   @scala.inline
-  def GroupHeading: reactLib.reactMod.ReactNs.ComponentType[js.Any] = reactDashSelectLib.libComponentsGroupMod.^.GroupHeading.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
+  def GroupHeading: reactLib.reactMod.ReactNs.ComponentType[js.Any] = js.constructorOf[reactDashSelectLib.libComponentsGroupMod.GroupHeading].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
   @scala.inline
-  def IndicatorSeparator: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorProps[js.Any]] = reactDashSelectLib.libComponentsIndicatorsMod.^.IndicatorSeparator.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorProps[js.Any]]]
+  def IndicatorSeparator: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorSeparator].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.IndicatorProps[js.Any]]]
   @scala.inline
-  def IndicatorsContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsContainersMod.IndicatorContainerProps[js.Any]] = reactDashSelectLib.libComponentsContainersMod.^.IndicatorsContainer.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsContainersMod.IndicatorContainerProps[js.Any]]]
+  def IndicatorsContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsContainersMod.IndicatorContainerProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsContainersMod.IndicatorsContainer].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsContainersMod.IndicatorContainerProps[js.Any]]]
   @scala.inline
-  def Input: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsInputMod.InputProps] = reactDashSelectLib.libComponentsInputMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsInputMod.InputProps]]
+  def Input: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsInputMod.InputProps] = js.constructorOf[reactDashSelectLib.libComponentsInputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsInputMod.InputProps]]
   @scala.inline
-  def LoadingIndicator: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.LoadingIconProps[js.Any]] = reactDashSelectLib.libComponentsIndicatorsMod.^.LoadingIndicator.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.LoadingIconProps[js.Any]]]
+  def LoadingIndicator: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.LoadingIconProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsIndicatorsMod.LoadingIndicator].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsIndicatorsMod.LoadingIconProps[js.Any]]]
   @scala.inline
-  def LoadingMessage: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.NoticeProps[js.Any]] = reactDashSelectLib.libComponentsMenuMod.^.LoadingMessage.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.NoticeProps[js.Any]]]
+  def LoadingMessage: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.NoticeProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsMenuMod.LoadingMessage].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.NoticeProps[js.Any]]]
   @scala.inline
   def Menu[OptionType]: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.MenuProps[OptionType]] = js.constructorOf[reactDashSelectLib.libComponentsMenuMod.default[OptionType]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.MenuProps[OptionType]]]
   @scala.inline
-  def MenuList: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.MenuListComponentProps[js.Any]] = reactDashSelectLib.libComponentsMenuMod.^.MenuList.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.MenuListComponentProps[js.Any]]]
+  def MenuList: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.MenuListComponentProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsMenuMod.MenuList].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.MenuListComponentProps[js.Any]]]
   @scala.inline
   def MenuPortal[OptionType]: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.MenuPortalProps[OptionType]] = js.constructorOf[reactDashSelectLib.libComponentsMenuMod.MenuPortal[OptionType]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.MenuPortalProps[OptionType]]]
   @scala.inline
   def MultiValue[OptionType]: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueProps[OptionType]] = js.constructorOf[reactDashSelectLib.libComponentsMultiValueMod.default[OptionType]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueProps[OptionType]]]
   @scala.inline
-  def MultiValueContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGenericProps[js.Any]] = reactDashSelectLib.libComponentsMultiValueMod.^.MultiValueContainer.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGenericProps[js.Any]]]
+  def MultiValueContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGenericProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsMultiValueMod.MultiValueContainer].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGenericProps[js.Any]]]
   @scala.inline
-  def MultiValueGeneric: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGenericProps[js.Any]] = reactDashSelectLib.libComponentsMultiValueMod.^.MultiValueGeneric.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGenericProps[js.Any]]]
+  def MultiValueGeneric: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGenericProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGeneric].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGenericProps[js.Any]]]
   @scala.inline
-  def MultiValueLabel: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGenericProps[js.Any]] = reactDashSelectLib.libComponentsMultiValueMod.^.MultiValueLabel.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGenericProps[js.Any]]]
+  def MultiValueLabel: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGenericProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsMultiValueMod.MultiValueLabel].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueGenericProps[js.Any]]]
   @scala.inline
   def MultiValueRemove[OptionType]: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueRemoveProps[OptionType]] = js.constructorOf[reactDashSelectLib.libComponentsMultiValueMod.MultiValueRemove[OptionType]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMultiValueMod.MultiValueRemoveProps[OptionType]]]
   @scala.inline
-  def NoOptionsMessage: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.NoticeProps[js.Any]] = reactDashSelectLib.libComponentsMenuMod.^.NoOptionsMessage.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.NoticeProps[js.Any]]]
+  def NoOptionsMessage: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.NoticeProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsMenuMod.NoOptionsMessage].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsMenuMod.NoticeProps[js.Any]]]
   @scala.inline
-  def Option: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsOptionMod.OptionProps[js.Any]] = reactDashSelectLib.libComponentsOptionMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsOptionMod.OptionProps[js.Any]]]
+  def Option: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsOptionMod.OptionProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsOptionMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsOptionMod.OptionProps[js.Any]]]
   @scala.inline
-  def Placeholder: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsPlaceholderMod.PlaceholderProps[js.Any]] = reactDashSelectLib.libComponentsPlaceholderMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsPlaceholderMod.PlaceholderProps[js.Any]]]
+  def Placeholder: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsPlaceholderMod.PlaceholderProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsPlaceholderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsPlaceholderMod.PlaceholderProps[js.Any]]]
   @scala.inline
   def ReactDashSelect[OptionType]: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libSelectMod.Props[OptionType]] = js.constructorOf[reactDashSelectLib.reactDashSelectMod.default[OptionType]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libSelectMod.Props[OptionType]]]
   @scala.inline
@@ -65,9 +65,9 @@ object reactDashSelectLibComponents {
   @scala.inline
   def SelectBase[OptionType]: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libSelectMod.Props[OptionType]] = js.constructorOf[reactDashSelectLib.reactDashSelectMod.SelectBase[OptionType]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libSelectMod.Props[OptionType]]]
   @scala.inline
-  def SelectContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsContainersMod.ContainerProps[js.Any]] = reactDashSelectLib.libComponentsContainersMod.^.SelectContainer.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsContainersMod.ContainerProps[js.Any]]]
+  def SelectContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsContainersMod.ContainerProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsContainersMod.SelectContainer].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsContainersMod.ContainerProps[js.Any]]]
   @scala.inline
-  def SingleValue: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsSingleValueMod.SingleValueProps[js.Any]] = reactDashSelectLib.libComponentsSingleValueMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsSingleValueMod.SingleValueProps[js.Any]]]
+  def SingleValue: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsSingleValueMod.SingleValueProps[js.Any]] = js.constructorOf[reactDashSelectLib.libComponentsSingleValueMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsSingleValueMod.SingleValueProps[js.Any]]]
   @scala.inline
   def StateManager[OptionType]: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libStateManagerMod.Props[OptionType]] = js.constructorOf[reactDashSelectLib.libStateManagerMod.StateManager[OptionType]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libStateManagerMod.Props[OptionType]]]
   @scala.inline

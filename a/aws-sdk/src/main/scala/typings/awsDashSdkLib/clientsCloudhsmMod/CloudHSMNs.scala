@@ -1016,7 +1016,18 @@ object CloudHSMNs extends js.Object {
   type ClientLabel = java.lang.String
   type ClientList = js.Array[ClientArn]
   type ClientToken = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`5DOT1`
+    - awsDashSdkLib.awsDashSdkLibStrings.`5DOT3`
+    - java.lang.String
+  */
   type ClientVersion = _ClientVersion | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.READY
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATING
+    - awsDashSdkLib.awsDashSdkLibStrings.DEGRADED
+    - java.lang.String
+  */
   type CloudHsmObjectState = _CloudHsmObjectState | java.lang.String
   type EniId = java.lang.String
   type ExternalId = java.lang.String
@@ -1025,6 +1036,16 @@ object CloudHSMNs extends js.Object {
   type HsmArn = java.lang.String
   type HsmList = js.Array[HsmArn]
   type HsmSerialNumber = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.RUNNING
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATING
+    - awsDashSdkLib.awsDashSdkLibStrings.SUSPENDED
+    - awsDashSdkLib.awsDashSdkLibStrings.TERMINATING
+    - awsDashSdkLib.awsDashSdkLibStrings.TERMINATED
+    - awsDashSdkLib.awsDashSdkLibStrings.DEGRADED
+    - java.lang.String
+  */
   type HsmStatus = _HsmStatus | java.lang.String
   type IamRoleArn = java.lang.String
   type IpAddress = java.lang.String
@@ -1044,6 +1065,11 @@ object CloudHSMNs extends js.Object {
   type TagValue = java.lang.String
   type Timestamp = java.lang.String
   type VpcId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2014-05-30`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

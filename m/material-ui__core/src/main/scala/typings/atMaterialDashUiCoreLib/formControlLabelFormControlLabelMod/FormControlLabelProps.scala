@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.LabelHTMLAttributes<std.HTMLLabelElement>, 'classes' | 'onChange'> ]: react.react.LabelHTMLAttributes<std.HTMLLabelElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.LabelHTMLAttributes<std.HTMLLabelElement>, @material-ui/core.@material-ui/core/FormControlLabel/FormControlLabel.FormControlLabelClassKey, 'onChange'>) */ trait FormControlLabelProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[FormControlLabelClassKey] {
+- Dropped {[ P in std.Exclude<keyof react.react.React.LabelHTMLAttributes<std.HTMLLabelElement>, 'classes' | 'onChange'> ]: react.react.React.LabelHTMLAttributes<std.HTMLLabelElement>[P]} */ trait FormControlLabelProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[FormControlLabelClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var checked: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var control: reactLib.reactMod.ReactNs.ReactElement[_]
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
@@ -26,7 +25,6 @@ import scala.scalajs.js.annotation._
       scala.Unit
     ]
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

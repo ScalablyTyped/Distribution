@@ -43,6 +43,8 @@ trait MimeNode extends js.Object {
   /** Retrieves the first mathcing value of a selected key */
   def getHeader(key: java.lang.String): java.lang.String = js.native
   def getTransferEncoding(): java.lang.String = js.native
+  /** Returns Message-Id value. If it does not exist, then creates one */
+  def messageId(): java.lang.String = js.native
   /**
     * Appends a post process function. The functon is run after transforms and
     * uses the following syntax

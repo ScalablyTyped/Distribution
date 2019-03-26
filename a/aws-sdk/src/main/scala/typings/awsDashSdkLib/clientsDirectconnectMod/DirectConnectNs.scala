@@ -8,9 +8,32 @@ import scala.scalajs.js.annotation._
 @JSImport("aws-sdk/clients/directconnect", "DirectConnect")
 @js.native
 object DirectConnectNs extends js.Object {
+  trait AcceptDirectConnectGatewayAssociationProposalRequest extends js.Object {
+    /**
+      * The ID of the AWS account that owns the virtual private gateway.
+      */
+    var associatedGatewayOwnerAccount: OwnerAccount
+    /**
+      * The ID of the Direct Connect gateway.
+      */
+    var directConnectGatewayId: DirectConnectGatewayId
+    /**
+      * Overrides the Amazon VPC prefixes advertised to the Direct Connect gateway.
+      */
+    var overrideAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
+    /**
+      * The ID of the request proposal.
+      */
+    var proposalId: DirectConnectGatewayAssociationProposalId
+  }
+  
+  trait AcceptDirectConnectGatewayAssociationProposalResult extends js.Object {
+    var directConnectGatewayAssociation: js.UndefOr[DirectConnectGatewayAssociation] = js.undefined
+  }
+  
   trait AllocateConnectionOnInterconnectRequest extends js.Object {
     /**
-      * The bandwidth of the connection, in Mbps. The possible values are 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, and 500Mbps.
+      * The bandwidth of the connection. The possible values are 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, 500Mbps, 1Gbps, 2Gbps, 5Gbps, and 10Gbps. Note that only those AWS Direct Connect Partners who have met specific requirements are allowed to create a 1Gbps, 2Gbps, 5Gbps or 10Gbps hosted connection.
       */
     var bandwidth: Bandwidth
     /**
@@ -33,7 +56,7 @@ object DirectConnectNs extends js.Object {
   
   trait AllocateHostedConnectionRequest extends js.Object {
     /**
-      * The bandwidth of the hosted connection, in Mbps. The possible values are 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, and 500Mbps.
+      * The bandwidth of the connection. The possible values are 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, 500Mbps, 1Gbps, 2Gbps, 5Gbps, and 10Gbps. Note that only those AWS Direct Connect Partners who have met specific requirements are allowed to create a 1Gbps, 2Gbps, 5Gbps or 10Gbps hosted connection. 
       */
     var bandwidth: Bandwidth
     /**
@@ -115,6 +138,25 @@ object DirectConnectNs extends js.Object {
       * The ID of the virtual interface.
       */
     var virtualInterfaceId: VirtualInterfaceId
+  }
+  
+  trait AssociatedGateway extends js.Object {
+    /**
+      * The ID of the associated gateway.
+      */
+    var id: js.UndefOr[GatewayIdentifier] = js.undefined
+    /**
+      * The ID of the AWS account that owns the associated virtual private gateway.
+      */
+    var ownerAccount: js.UndefOr[OwnerAccount] = js.undefined
+    /**
+      * The Region where the associated gateway is located.
+      */
+    var region: js.UndefOr[Region] = js.undefined
+    /**
+      * The type of associated gateway.
+      */
+    var `type`: js.UndefOr[GatewayType] = js.undefined
   }
   
   trait BGPPeer extends js.Object {
@@ -320,7 +362,41 @@ object DirectConnectNs extends js.Object {
     var location: LocationCode
   }
   
+  trait CreateDirectConnectGatewayAssociationProposalRequest extends js.Object {
+    /**
+      * The Amazon VPC prefixes to advertise to the Direct Connect gateway.
+      */
+    var addAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
+    /**
+      * The ID of the Direct Connect gateway.
+      */
+    var directConnectGatewayId: DirectConnectGatewayId
+    /**
+      * The ID of the AWS account that owns the Direct Connect gateway.
+      */
+    var directConnectGatewayOwnerAccount: OwnerAccount
+    /**
+      * The ID of the virtual private gateway.
+      */
+    var gatewayId: GatewayIdToAssociate
+    /**
+      * The Amazon VPC prefixes to no longer advertise to the Direct Connect gateway.
+      */
+    var removeAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
+  }
+  
+  trait CreateDirectConnectGatewayAssociationProposalResult extends js.Object {
+    /**
+      * Information about the Direct Connect gateway proposal.
+      */
+    var directConnectGatewayAssociationProposal: js.UndefOr[DirectConnectGatewayAssociationProposal] = js.undefined
+  }
+  
   trait CreateDirectConnectGatewayAssociationRequest extends js.Object {
+    /**
+      * The Amazon VPC prefixes to advertise to the Direct Connect gateway
+      */
+    var addAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
     /**
       * The ID of the Direct Connect gateway.
       */
@@ -328,7 +404,11 @@ object DirectConnectNs extends js.Object {
     /**
       * The ID of the virtual private gateway.
       */
-    var virtualGatewayId: VirtualGatewayId
+    var gatewayId: js.UndefOr[GatewayIdToAssociate] = js.undefined
+    /**
+      * The ID of the virtual private gateway.
+      */
+    var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.undefined
   }
   
   trait CreateDirectConnectGatewayAssociationResult extends js.Object {
@@ -381,7 +461,7 @@ object DirectConnectNs extends js.Object {
       */
     var connectionId: js.UndefOr[ConnectionId] = js.undefined
     /**
-      * The bandwidth of the individual physical connections bundled by the LAG. The possible values are 1Gbps and 10Gbps.
+      * The bandwidth of the individual physical connections bundled by the LAG. The possible values are 50Mbps, 100Mbps, 200Mbps, 300Mbps, 400Mbps, 500Mbps, 1Gbps, 2Gbps, 5Gbps, and 10Gbps. 
       */
     var connectionsBandwidth: Bandwidth
     /**
@@ -453,20 +533,38 @@ object DirectConnectNs extends js.Object {
     var connectionId: ConnectionId
   }
   
-  trait DeleteDirectConnectGatewayAssociationRequest extends js.Object {
+  trait DeleteDirectConnectGatewayAssociationProposalRequest extends js.Object {
     /**
-      * The ID of the Direct Connect gateway.
+      * The ID of the proposal.
       */
-    var directConnectGatewayId: DirectConnectGatewayId
+    var proposalId: DirectConnectGatewayAssociationProposalId
+  }
+  
+  trait DeleteDirectConnectGatewayAssociationProposalResult extends js.Object {
     /**
       * The ID of the virtual private gateway.
       */
-    var virtualGatewayId: VirtualGatewayId
+    var directConnectGatewayAssociationProposal: js.UndefOr[DirectConnectGatewayAssociationProposal] = js.undefined
+  }
+  
+  trait DeleteDirectConnectGatewayAssociationRequest extends js.Object {
+    /**
+      * The ID of the Direct Connect gateway association.
+      */
+    var associationId: js.UndefOr[DirectConnectGatewayAssociationId] = js.undefined
+    /**
+      * The ID of the Direct Connect gateway.
+      */
+    var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
+    /**
+      * The ID of the virtual private gateway.
+      */
+    var virtualGatewayId: js.UndefOr[VirtualGatewayId] = js.undefined
   }
   
   trait DeleteDirectConnectGatewayAssociationResult extends js.Object {
     /**
-      * The association to be deleted.
+      * Information about the deleted association.
       */
     var directConnectGatewayAssociation: js.UndefOr[DirectConnectGatewayAssociation] = js.undefined
   }
@@ -556,13 +654,55 @@ object DirectConnectNs extends js.Object {
     var connectionId: js.UndefOr[ConnectionId] = js.undefined
   }
   
-  trait DescribeDirectConnectGatewayAssociationsRequest extends js.Object {
+  trait DescribeDirectConnectGatewayAssociationProposalsRequest extends js.Object {
+    /**
+      * The ID of the associated virtual private gateway.
+      */
+    var associatedGatewayId: js.UndefOr[AssociatedGatewayId] = js.undefined
     /**
       * The ID of the Direct Connect gateway.
       */
     var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
     /**
-      * The maximum number of associations to return per page.
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value. If MaxResults is given a value larger than 100, only 100 results are returned.
+      */
+    var maxResults: js.UndefOr[MaxResultSetSize] = js.undefined
+    /**
+      * The token for the next page of results.
+      */
+    var nextToken: js.UndefOr[PaginationToken] = js.undefined
+    /**
+      * The ID of the proposal.
+      */
+    var proposalId: js.UndefOr[DirectConnectGatewayAssociationProposalId] = js.undefined
+  }
+  
+  trait DescribeDirectConnectGatewayAssociationProposalsResult extends js.Object {
+    /**
+      * Describes the Direct Connect gateway association proposals.
+      */
+    var directConnectGatewayAssociationProposals: js.UndefOr[DirectConnectGatewayAssociationProposalList] = js.undefined
+    /**
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+      */
+    var nextToken: js.UndefOr[PaginationToken] = js.undefined
+  }
+  
+  trait DescribeDirectConnectGatewayAssociationsRequest extends js.Object {
+    /**
+      * The ID of the associated gateway.
+      */
+    var associatedGatewayId: js.UndefOr[AssociatedGatewayId] = js.undefined
+    /**
+      * The ID of the Direct Connect gateway association.
+      */
+    var associationId: js.UndefOr[DirectConnectGatewayAssociationId] = js.undefined
+    /**
+      * The ID of the Direct Connect gateway.
+      */
+    var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
+    /**
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value. If MaxResults is given a value larger than 100, only 100 results are returned.
       */
     var maxResults: js.UndefOr[MaxResultSetSize] = js.undefined
     /**
@@ -577,7 +717,7 @@ object DirectConnectNs extends js.Object {
   
   trait DescribeDirectConnectGatewayAssociationsResult extends js.Object {
     /**
-      * The associations.
+      * Information about the associations.
       */
     var directConnectGatewayAssociations: js.UndefOr[DirectConnectGatewayAssociationList] = js.undefined
     /**
@@ -592,7 +732,7 @@ object DirectConnectNs extends js.Object {
       */
     var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
     /**
-      * The maximum number of attachments to return per page.
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value. If MaxResults is given a value larger than 100, only 100 results are returned.
       */
     var maxResults: js.UndefOr[MaxResultSetSize] = js.undefined
     /**
@@ -622,7 +762,7 @@ object DirectConnectNs extends js.Object {
       */
     var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
     /**
-      * The maximum number of Direct Connect gateways to return per page.
+      * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value. If MaxResults is given a value larger than 100, only 100 results are returned.
       */
     var maxResults: js.UndefOr[MaxResultSetSize] = js.undefined
     /**
@@ -754,6 +894,18 @@ object DirectConnectNs extends js.Object {
   
   trait DirectConnectGatewayAssociation extends js.Object {
     /**
+      * The Amazon VPC prefixes to advertise to the Direct Connect gateway.
+      */
+    var allowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
+    /**
+      * Information about the associated virtual private gateway.
+      */
+    var associatedGateway: js.UndefOr[AssociatedGateway] = js.undefined
+    /**
+      * The ID of the Direct Connect gateway association.
+      */
+    var associationId: js.UndefOr[DirectConnectGatewayAssociationId] = js.undefined
+    /**
       * The state of the association. The following are the possible values:    associating: The initial state after calling CreateDirectConnectGatewayAssociation.    associated: The Direct Connect gateway and virtual private gateway are successfully associated and ready to pass traffic.    disassociating: The initial state after calling DeleteDirectConnectGatewayAssociation.    disassociated: The virtual private gateway is disassociated from the Direct Connect gateway. Traffic flow between the Direct Connect gateway and virtual private gateway is stopped.  
       */
     var associationState: js.UndefOr[DirectConnectGatewayAssociationState] = js.undefined
@@ -761,6 +913,10 @@ object DirectConnectNs extends js.Object {
       * The ID of the Direct Connect gateway.
       */
     var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
+    /**
+      * The ID of the AWS account that owns the associated gateway.
+      */
+    var directConnectGatewayOwnerAccount: js.UndefOr[OwnerAccount] = js.undefined
     /**
       * The error message if the state of an object failed to advance.
       */
@@ -777,6 +933,37 @@ object DirectConnectNs extends js.Object {
       * The AWS Region where the virtual private gateway is located.
       */
     var virtualGatewayRegion: js.UndefOr[VirtualGatewayRegion] = js.undefined
+  }
+  
+  trait DirectConnectGatewayAssociationProposal extends js.Object {
+    /**
+      * Information about the associated virtual private gateway.
+      */
+    var associatedGateway: js.UndefOr[AssociatedGateway] = js.undefined
+    /**
+      * The ID of the Direct Connect gateway.
+      */
+    var directConnectGatewayId: js.UndefOr[DirectConnectGatewayId] = js.undefined
+    /**
+      * The ID of the AWS account that owns the Direct Connect gateway.
+      */
+    var directConnectGatewayOwnerAccount: js.UndefOr[OwnerAccount] = js.undefined
+    /**
+      * The existing Amazon VPC prefixes advertised to the Direct Connect gateway.
+      */
+    var existingAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
+    /**
+      * The ID of the association proposal.
+      */
+    var proposalId: js.UndefOr[DirectConnectGatewayAssociationProposalId] = js.undefined
+    /**
+      * The state of the proposal. The following are possible values:    accepted: The proposal has been accepted. The Direct Connect gateway association is available to use in this state.    deleted: The proposal has been deleted by the owner that made the proposal. The Direct Connect gateway association cannot be used in this state.    requested: The proposal has been requested. The Direct Connect gateway association cannot be used in this state.  
+      */
+    var proposalState: js.UndefOr[DirectConnectGatewayAssociationProposalState] = js.undefined
+    /**
+      * The Amazon VPC prefixes to advertise to the Direct Connect gateway.
+      */
+    var requestedAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
   }
   
   trait DirectConnectGatewayAttachment extends js.Object {
@@ -881,11 +1068,11 @@ object DirectConnectNs extends js.Object {
       */
     var allowsHostedConnections: js.UndefOr[BooleanFlag] = js.undefined
     /**
-      * The Direct Connect endpoint that hosts the LAG.
+      * The AWS Direct Connect endpoint that hosts the LAG.
       */
     var awsDevice: js.UndefOr[AwsDevice] = js.undefined
     /**
-      * The Direct Connect endpoint that hosts the LAG.
+      * The AWS Direct Connect endpoint that hosts the LAG.
       */
     var awsDeviceV2: js.UndefOr[AwsDeviceV2] = js.undefined
     /**
@@ -893,7 +1080,7 @@ object DirectConnectNs extends js.Object {
       */
     var connections: js.UndefOr[ConnectionList] = js.undefined
     /**
-      * The individual bandwidth of the physical connections bundled by the LAG. The possible values are 1Gbps and 10Gbps.
+      * The individual bandwidth of the physical connections bundled by the LAG. The possible values are 1Gbps and 10Gbps. 
       */
     var connectionsBandwidth: js.UndefOr[Bandwidth] = js.undefined
     /**
@@ -1201,14 +1388,49 @@ object DirectConnectNs extends js.Object {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-      * Deprecated. Use AllocateHostedConnection instead. Creates a hosted connection on an interconnect. Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the specified interconnect.  Intended for use by AWS Direct Connect partners only. 
+      * Accepts a proposal request to attach a virtual private gateway to a Direct Connect gateway.
+      */
+    def acceptDirectConnectGatewayAssociationProposal(): awsDashSdkLib.libRequestMod.Request[
+        AcceptDirectConnectGatewayAssociationProposalResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def acceptDirectConnectGatewayAssociationProposal(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AcceptDirectConnectGatewayAssociationProposalResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        AcceptDirectConnectGatewayAssociationProposalResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+      * Accepts a proposal request to attach a virtual private gateway to a Direct Connect gateway.
+      */
+    def acceptDirectConnectGatewayAssociationProposal(params: AcceptDirectConnectGatewayAssociationProposalRequest): awsDashSdkLib.libRequestMod.Request[
+        AcceptDirectConnectGatewayAssociationProposalResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def acceptDirectConnectGatewayAssociationProposal(
+      params: AcceptDirectConnectGatewayAssociationProposalRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AcceptDirectConnectGatewayAssociationProposalResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        AcceptDirectConnectGatewayAssociationProposalResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+      * Deprecated. Use AllocateHostedConnection instead. Creates a hosted connection on an interconnect. Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the specified interconnect.  Intended for use by AWS Direct Connect Partners only. 
       */
     def allocateConnectionOnInterconnect(): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def allocateConnectionOnInterconnect(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Connection, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deprecated. Use AllocateHostedConnection instead. Creates a hosted connection on an interconnect. Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the specified interconnect.  Intended for use by AWS Direct Connect partners only. 
+      * Deprecated. Use AllocateHostedConnection instead. Creates a hosted connection on an interconnect. Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the specified interconnect.  Intended for use by AWS Direct Connect Partners only. 
       */
     def allocateConnectionOnInterconnect(params: AllocateConnectionOnInterconnectRequest): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def allocateConnectionOnInterconnect(
@@ -1216,14 +1438,14 @@ object DirectConnectNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Connection, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a hosted connection on the specified interconnect or a link aggregation group (LAG). Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the specified interconnect or LAG.  Intended for use by AWS Direct Connect partners only. 
+      * Creates a hosted connection on the specified interconnect or a link aggregation group (LAG) of interconnects. Allocates a VLAN number and a specified amount of capacity (bandwidth) for use by a hosted connection on the specified interconnect or LAG of interconnects. AWS polices the hosted connection for the specified capacity and the AWS Direct Connect Partner must also police the hosted connection for the specified capacity.  Intended for use by AWS Direct Connect Partners only. 
       */
     def allocateHostedConnection(): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def allocateHostedConnection(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Connection, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a hosted connection on the specified interconnect or a link aggregation group (LAG). Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the specified interconnect or LAG.  Intended for use by AWS Direct Connect partners only. 
+      * Creates a hosted connection on the specified interconnect or a link aggregation group (LAG) of interconnects. Allocates a VLAN number and a specified amount of capacity (bandwidth) for use by a hosted connection on the specified interconnect or LAG of interconnects. AWS polices the hosted connection for the specified capacity and the AWS Direct Connect Partner must also police the hosted connection for the specified capacity.  Intended for use by AWS Direct Connect Partners only. 
       */
     def allocateHostedConnection(params: AllocateHostedConnectionRequest): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def allocateHostedConnection(
@@ -1292,14 +1514,14 @@ object DirectConnectNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Connection, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Associates a hosted connection and its virtual interfaces with a link aggregation group (LAG) or interconnect. If the target interconnect or LAG has an existing hosted connection with a conflicting VLAN number or IP address, the operation fails. This action temporarily interrupts the hosted connection's connectivity to AWS as it is being migrated.  Intended for use by AWS Direct Connect partners only. 
+      * Associates a hosted connection and its virtual interfaces with a link aggregation group (LAG) or interconnect. If the target interconnect or LAG has an existing hosted connection with a conflicting VLAN number or IP address, the operation fails. This action temporarily interrupts the hosted connection's connectivity to AWS as it is being migrated.  Intended for use by AWS Direct Connect Partners only. 
       */
     def associateHostedConnection(): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def associateHostedConnection(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Connection, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Associates a hosted connection and its virtual interfaces with a link aggregation group (LAG) or interconnect. If the target interconnect or LAG has an existing hosted connection with a conflicting VLAN number or IP address, the operation fails. This action temporarily interrupts the hosted connection's connectivity to AWS as it is being migrated.  Intended for use by AWS Direct Connect partners only. 
+      * Associates a hosted connection and its virtual interfaces with a link aggregation group (LAG) or interconnect. If the target interconnect or LAG has an existing hosted connection with a conflicting VLAN number or IP address, the operation fails. This action temporarily interrupts the hosted connection's connectivity to AWS as it is being migrated.  Intended for use by AWS Direct Connect Partners only. 
       */
     def associateHostedConnection(params: AssociateHostedConnectionRequest): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def associateHostedConnection(
@@ -1483,14 +1705,49 @@ object DirectConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDirectConnectGatewayAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates an interconnect between an AWS Direct Connect partner's network and a specific AWS Direct Connect location. An interconnect is a connection which is capable of hosting other connections. The partner can use an interconnect to provide sub-1Gbps AWS Direct Connect service to tier 2 customers who do not have their own connections. Like a standard connection, an interconnect links the partner's network to an AWS Direct Connect location over a standard Ethernet fiber-optic cable. One end is connected to the partner's router, the other to an AWS Direct Connect router. You can automatically add the new interconnect to a link aggregation group (LAG) by specifying a LAG ID in the request. This ensures that the new interconnect is allocated on the same AWS Direct Connect endpoint that hosts the specified LAG. If there are no available ports on the endpoint, the request fails and no interconnect is created. For each end customer, the AWS Direct Connect partner provisions a connection on their interconnect by calling AllocateConnectionOnInterconnect. The end customer can then connect to AWS resources by creating a virtual interface on their connection, using the VLAN assigned to them by the partner.  Intended for use by AWS Direct Connect partners only. 
+      * Creates a proposal to associate the specified virtual private gateway with the specified Direct Connect gateway. You can only associate a Direct Connect gateway and virtual private gateway when the account that owns the Direct Connect gateway and the account that owns the virtual private gateway have the same payer ID.
+      */
+    def createDirectConnectGatewayAssociationProposal(): awsDashSdkLib.libRequestMod.Request[
+        CreateDirectConnectGatewayAssociationProposalResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def createDirectConnectGatewayAssociationProposal(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateDirectConnectGatewayAssociationProposalResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        CreateDirectConnectGatewayAssociationProposalResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+      * Creates a proposal to associate the specified virtual private gateway with the specified Direct Connect gateway. You can only associate a Direct Connect gateway and virtual private gateway when the account that owns the Direct Connect gateway and the account that owns the virtual private gateway have the same payer ID.
+      */
+    def createDirectConnectGatewayAssociationProposal(params: CreateDirectConnectGatewayAssociationProposalRequest): awsDashSdkLib.libRequestMod.Request[
+        CreateDirectConnectGatewayAssociationProposalResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def createDirectConnectGatewayAssociationProposal(
+      params: CreateDirectConnectGatewayAssociationProposalRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateDirectConnectGatewayAssociationProposalResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        CreateDirectConnectGatewayAssociationProposalResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+      * Creates an interconnect between an AWS Direct Connect Partner's network and a specific AWS Direct Connect location. An interconnect is a connection that is capable of hosting other connections. The AWS Direct Connect partner can use an interconnect to provide AWS Direct Connect hosted connections to customers through their own network services. Like a standard connection, an interconnect links the partner's network to an AWS Direct Connect location over a standard Ethernet fiber-optic cable. One end is connected to the partner's router, the other to an AWS Direct Connect router. You can automatically add the new interconnect to a link aggregation group (LAG) by specifying a LAG ID in the request. This ensures that the new interconnect is allocated on the same AWS Direct Connect endpoint that hosts the specified LAG. If there are no available ports on the endpoint, the request fails and no interconnect is created. For each end customer, the AWS Direct Connect Partner provisions a connection on their interconnect by calling AllocateHostedConnection. The end customer can then connect to AWS resources by creating a virtual interface on their connection, using the VLAN assigned to them by the AWS Direct Connect Partner.  Intended for use by AWS Direct Connect Partners only. 
       */
     def createInterconnect(): awsDashSdkLib.libRequestMod.Request[Interconnect, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createInterconnect(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Interconnect, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Interconnect, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates an interconnect between an AWS Direct Connect partner's network and a specific AWS Direct Connect location. An interconnect is a connection which is capable of hosting other connections. The partner can use an interconnect to provide sub-1Gbps AWS Direct Connect service to tier 2 customers who do not have their own connections. Like a standard connection, an interconnect links the partner's network to an AWS Direct Connect location over a standard Ethernet fiber-optic cable. One end is connected to the partner's router, the other to an AWS Direct Connect router. You can automatically add the new interconnect to a link aggregation group (LAG) by specifying a LAG ID in the request. This ensures that the new interconnect is allocated on the same AWS Direct Connect endpoint that hosts the specified LAG. If there are no available ports on the endpoint, the request fails and no interconnect is created. For each end customer, the AWS Direct Connect partner provisions a connection on their interconnect by calling AllocateConnectionOnInterconnect. The end customer can then connect to AWS resources by creating a virtual interface on their connection, using the VLAN assigned to them by the partner.  Intended for use by AWS Direct Connect partners only. 
+      * Creates an interconnect between an AWS Direct Connect Partner's network and a specific AWS Direct Connect location. An interconnect is a connection that is capable of hosting other connections. The AWS Direct Connect partner can use an interconnect to provide AWS Direct Connect hosted connections to customers through their own network services. Like a standard connection, an interconnect links the partner's network to an AWS Direct Connect location over a standard Ethernet fiber-optic cable. One end is connected to the partner's router, the other to an AWS Direct Connect router. You can automatically add the new interconnect to a link aggregation group (LAG) by specifying a LAG ID in the request. This ensures that the new interconnect is allocated on the same AWS Direct Connect endpoint that hosts the specified LAG. If there are no available ports on the endpoint, the request fails and no interconnect is created. For each end customer, the AWS Direct Connect Partner provisions a connection on their interconnect by calling AllocateHostedConnection. The end customer can then connect to AWS resources by creating a virtual interface on their connection, using the VLAN assigned to them by the AWS Direct Connect Partner.  Intended for use by AWS Direct Connect Partners only. 
       */
     def createInterconnect(params: CreateInterconnectRequest): awsDashSdkLib.libRequestMod.Request[Interconnect, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createInterconnect(
@@ -1498,12 +1755,12 @@ object DirectConnectNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Interconnect, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Interconnect, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a link aggregation group (LAG) with the specified number of bundled physical connections between the customer network and a specific AWS Direct Connect location. A LAG is a logical interface that uses the Link Aggregation Control Protocol (LACP) to aggregate multiple interfaces, enabling you to treat them as a single interface. All connections in a LAG must use the same bandwidth and must terminate at the same AWS Direct Connect endpoint. You can have up to 10 connections per LAG. Regardless of this limit, if you request more connections for the LAG than AWS Direct Connect can allocate on a single endpoint, no LAG is created. You can specify an existing physical connection or interconnect to include in the LAG (which counts towards the total number of connections). Doing so interrupts the current physical connection or hosted connections, and re-establishes them as a member of the LAG. The LAG will be created on the same AWS Direct Connect endpoint to which the connection terminates. Any virtual interfaces associated with the connection are automatically disassociated and re-associated with the LAG. The connection ID does not change. If the AWS account used to create a LAG is a registered AWS Direct Connect partner, the LAG is automatically enabled to host sub-connections. For a LAG owned by a partner, any associated virtual interfaces cannot be directly configured.
+      * Creates a link aggregation group (LAG) with the specified number of bundled physical connections between the customer network and a specific AWS Direct Connect location. A LAG is a logical interface that uses the Link Aggregation Control Protocol (LACP) to aggregate multiple interfaces, enabling you to treat them as a single interface. All connections in a LAG must use the same bandwidth and must terminate at the same AWS Direct Connect endpoint. You can have up to 10 connections per LAG. Regardless of this limit, if you request more connections for the LAG than AWS Direct Connect can allocate on a single endpoint, no LAG is created. You can specify an existing physical connection or interconnect to include in the LAG (which counts towards the total number of connections). Doing so interrupts the current physical connection or hosted connections, and re-establishes them as a member of the LAG. The LAG will be created on the same AWS Direct Connect endpoint to which the connection terminates. Any virtual interfaces associated with the connection are automatically disassociated and re-associated with the LAG. The connection ID does not change. If the AWS account used to create a LAG is a registered AWS Direct Connect Partner, the LAG is automatically enabled to host sub-connections. For a LAG owned by a partner, any associated virtual interfaces cannot be directly configured.
       */
     def createLag(): awsDashSdkLib.libRequestMod.Request[Lag, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createLag(callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Lag, scala.Unit]): awsDashSdkLib.libRequestMod.Request[Lag, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a link aggregation group (LAG) with the specified number of bundled physical connections between the customer network and a specific AWS Direct Connect location. A LAG is a logical interface that uses the Link Aggregation Control Protocol (LACP) to aggregate multiple interfaces, enabling you to treat them as a single interface. All connections in a LAG must use the same bandwidth and must terminate at the same AWS Direct Connect endpoint. You can have up to 10 connections per LAG. Regardless of this limit, if you request more connections for the LAG than AWS Direct Connect can allocate on a single endpoint, no LAG is created. You can specify an existing physical connection or interconnect to include in the LAG (which counts towards the total number of connections). Doing so interrupts the current physical connection or hosted connections, and re-establishes them as a member of the LAG. The LAG will be created on the same AWS Direct Connect endpoint to which the connection terminates. Any virtual interfaces associated with the connection are automatically disassociated and re-associated with the LAG. The connection ID does not change. If the AWS account used to create a LAG is a registered AWS Direct Connect partner, the LAG is automatically enabled to host sub-connections. For a LAG owned by a partner, any associated virtual interfaces cannot be directly configured.
+      * Creates a link aggregation group (LAG) with the specified number of bundled physical connections between the customer network and a specific AWS Direct Connect location. A LAG is a logical interface that uses the Link Aggregation Control Protocol (LACP) to aggregate multiple interfaces, enabling you to treat them as a single interface. All connections in a LAG must use the same bandwidth and must terminate at the same AWS Direct Connect endpoint. You can have up to 10 connections per LAG. Regardless of this limit, if you request more connections for the LAG than AWS Direct Connect can allocate on a single endpoint, no LAG is created. You can specify an existing physical connection or interconnect to include in the LAG (which counts towards the total number of connections). Doing so interrupts the current physical connection or hosted connections, and re-establishes them as a member of the LAG. The LAG will be created on the same AWS Direct Connect endpoint to which the connection terminates. Any virtual interfaces associated with the connection are automatically disassociated and re-associated with the LAG. The connection ID does not change. If the AWS account used to create a LAG is a registered AWS Direct Connect Partner, the LAG is automatically enabled to host sub-connections. For a LAG owned by a partner, any associated virtual interfaces cannot be directly configured.
       */
     def createLag(params: CreateLagRequest): awsDashSdkLib.libRequestMod.Request[Lag, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createLag(
@@ -1641,7 +1898,42 @@ object DirectConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteDirectConnectGatewayAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deletes the specified interconnect.  Intended for use by AWS Direct Connect partners only. 
+      * Deletes the association proposal request between the specified Direct Connect gateway and virtual private gateway.
+      */
+    def deleteDirectConnectGatewayAssociationProposal(): awsDashSdkLib.libRequestMod.Request[
+        DeleteDirectConnectGatewayAssociationProposalResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def deleteDirectConnectGatewayAssociationProposal(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteDirectConnectGatewayAssociationProposalResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        DeleteDirectConnectGatewayAssociationProposalResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+      * Deletes the association proposal request between the specified Direct Connect gateway and virtual private gateway.
+      */
+    def deleteDirectConnectGatewayAssociationProposal(params: DeleteDirectConnectGatewayAssociationProposalRequest): awsDashSdkLib.libRequestMod.Request[
+        DeleteDirectConnectGatewayAssociationProposalResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def deleteDirectConnectGatewayAssociationProposal(
+      params: DeleteDirectConnectGatewayAssociationProposalRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteDirectConnectGatewayAssociationProposalResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        DeleteDirectConnectGatewayAssociationProposalResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+      * Deletes the specified interconnect.  Intended for use by AWS Direct Connect Partners only. 
       */
     def deleteInterconnect(): awsDashSdkLib.libRequestMod.Request[DeleteInterconnectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def deleteInterconnect(
@@ -1652,7 +1944,7 @@ object DirectConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteInterconnectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deletes the specified interconnect.  Intended for use by AWS Direct Connect partners only. 
+      * Deletes the specified interconnect.  Intended for use by AWS Direct Connect Partners only. 
       */
     def deleteInterconnect(params: DeleteInterconnectRequest): awsDashSdkLib.libRequestMod.Request[DeleteInterconnectResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def deleteInterconnect(
@@ -1738,20 +2030,55 @@ object DirectConnectNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Connections, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Connections, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deprecated. Use DescribeHostedConnections instead. Lists the connections that have been provisioned on the specified interconnect.  Intended for use by AWS Direct Connect partners only. 
+      * Deprecated. Use DescribeHostedConnections instead. Lists the connections that have been provisioned on the specified interconnect.  Intended for use by AWS Direct Connect Partners only. 
       */
     def describeConnectionsOnInterconnect(): awsDashSdkLib.libRequestMod.Request[Connections, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeConnectionsOnInterconnect(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Connections, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Connections, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deprecated. Use DescribeHostedConnections instead. Lists the connections that have been provisioned on the specified interconnect.  Intended for use by AWS Direct Connect partners only. 
+      * Deprecated. Use DescribeHostedConnections instead. Lists the connections that have been provisioned on the specified interconnect.  Intended for use by AWS Direct Connect Partners only. 
       */
     def describeConnectionsOnInterconnect(params: DescribeConnectionsOnInterconnectRequest): awsDashSdkLib.libRequestMod.Request[Connections, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeConnectionsOnInterconnect(
       params: DescribeConnectionsOnInterconnectRequest,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Connections, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Connections, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Describes one or more association proposals for connection between a virtual private gateway and a Direct Connect gateway. 
+      */
+    def describeDirectConnectGatewayAssociationProposals(): awsDashSdkLib.libRequestMod.Request[
+        DescribeDirectConnectGatewayAssociationProposalsResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def describeDirectConnectGatewayAssociationProposals(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeDirectConnectGatewayAssociationProposalsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        DescribeDirectConnectGatewayAssociationProposalsResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    /**
+      * Describes one or more association proposals for connection between a virtual private gateway and a Direct Connect gateway. 
+      */
+    def describeDirectConnectGatewayAssociationProposals(params: DescribeDirectConnectGatewayAssociationProposalsRequest): awsDashSdkLib.libRequestMod.Request[
+        DescribeDirectConnectGatewayAssociationProposalsResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
+    def describeDirectConnectGatewayAssociationProposals(
+      params: DescribeDirectConnectGatewayAssociationProposalsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeDirectConnectGatewayAssociationProposalsResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[
+        DescribeDirectConnectGatewayAssociationProposalsResult, 
+        awsDashSdkLib.libErrorMod.AWSError
+      ] = js.native
     /**
       * Lists the associations between your Direct Connect gateways and virtual private gateways. You must specify a Direct Connect gateway, a virtual private gateway, or both. If you specify a Direct Connect gateway, the response contains all virtual private gateways associated with the Direct Connect gateway. If you specify a virtual private gateway, the response contains all Direct Connect gateways associated with the virtual private gateway. If you specify both, the response contains the association between the Direct Connect gateway and the virtual private gateway.
       */
@@ -1822,14 +2149,14 @@ object DirectConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeDirectConnectGatewaysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the hosted connections that have been provisioned on the specified interconnect or link aggregation group (LAG).  Intended for use by AWS Direct Connect partners only. 
+      * Lists the hosted connections that have been provisioned on the specified interconnect or link aggregation group (LAG).  Intended for use by AWS Direct Connect Partners only. 
       */
     def describeHostedConnections(): awsDashSdkLib.libRequestMod.Request[Connections, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeHostedConnections(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Connections, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Connections, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the hosted connections that have been provisioned on the specified interconnect or link aggregation group (LAG).  Intended for use by AWS Direct Connect partners only. 
+      * Lists the hosted connections that have been provisioned on the specified interconnect or link aggregation group (LAG).  Intended for use by AWS Direct Connect Partners only. 
       */
     def describeHostedConnections(params: DescribeHostedConnectionsRequest): awsDashSdkLib.libRequestMod.Request[Connections, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeHostedConnections(
@@ -1961,14 +2288,14 @@ object DirectConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[VirtualInterfaces, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Disassociates a connection from a link aggregation group (LAG). The connection is interrupted and re-established as a standalone connection (the connection is not deleted; to delete the connection, use the DeleteConnection request). If the LAG has associated virtual interfaces or hosted connections, they remain associated with the LAG. A disassociated connection owned by an AWS Direct Connect partner is automatically converted to an interconnect. If disassociating the connection would cause the LAG to fall below its setting for minimum number of operational connections, the request fails, except when it's the last member of the LAG. If all connections are disassociated, the LAG continues to exist as an empty LAG with no physical connections. 
+      * Disassociates a connection from a link aggregation group (LAG). The connection is interrupted and re-established as a standalone connection (the connection is not deleted; to delete the connection, use the DeleteConnection request). If the LAG has associated virtual interfaces or hosted connections, they remain associated with the LAG. A disassociated connection owned by an AWS Direct Connect Partner is automatically converted to an interconnect. If disassociating the connection would cause the LAG to fall below its setting for minimum number of operational connections, the request fails, except when it's the last member of the LAG. If all connections are disassociated, the LAG continues to exist as an empty LAG with no physical connections. 
       */
     def disassociateConnectionFromLag(): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def disassociateConnectionFromLag(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Connection, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Disassociates a connection from a link aggregation group (LAG). The connection is interrupted and re-established as a standalone connection (the connection is not deleted; to delete the connection, use the DeleteConnection request). If the LAG has associated virtual interfaces or hosted connections, they remain associated with the LAG. A disassociated connection owned by an AWS Direct Connect partner is automatically converted to an interconnect. If disassociating the connection would cause the LAG to fall below its setting for minimum number of operational connections, the request fails, except when it's the last member of the LAG. If all connections are disassociated, the LAG continues to exist as an empty LAG with no physical connections. 
+      * Disassociates a connection from a link aggregation group (LAG). The connection is interrupted and re-established as a standalone connection (the connection is not deleted; to delete the connection, use the DeleteConnection request). If the LAG has associated virtual interfaces or hosted connections, they remain associated with the LAG. A disassociated connection owned by an AWS Direct Connect Partner is automatically converted to an interconnect. If disassociating the connection would cause the LAG to fall below its setting for minimum number of operational connections, the request fails, except when it's the last member of the LAG. If all connections are disassociated, the LAG continues to exist as an empty LAG with no physical connections. 
       */
     def disassociateConnectionFromLag(params: DisassociateConnectionFromLagRequest): awsDashSdkLib.libRequestMod.Request[Connection, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def disassociateConnectionFromLag(
@@ -2022,6 +2349,29 @@ object DirectConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Updates the specified attributes of the Direct Connect gateway association. Add or remove prefixes from the association.
+      */
+    def updateDirectConnectGatewayAssociation(): awsDashSdkLib.libRequestMod.Request[UpdateDirectConnectGatewayAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateDirectConnectGatewayAssociation(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateDirectConnectGatewayAssociationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateDirectConnectGatewayAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates the specified attributes of the Direct Connect gateway association. Add or remove prefixes from the association.
+      */
+    def updateDirectConnectGatewayAssociation(params: UpdateDirectConnectGatewayAssociationRequest): awsDashSdkLib.libRequestMod.Request[UpdateDirectConnectGatewayAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateDirectConnectGatewayAssociation(
+      params: UpdateDirectConnectGatewayAssociationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateDirectConnectGatewayAssociationResult, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateDirectConnectGatewayAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Updates the attributes of the specified link aggregation group (LAG). You can update the following attributes:   The name of the LAG.   The value for the minimum number of connections that must be operational for the LAG itself to be operational.    When you create a LAG, the default value for the minimum number of operational connections is zero (0). If you update this value and the number of operational connections falls below the specified value, the LAG automatically goes down to avoid over-utilization of the remaining connections. Adjust this value with care, as it could force the LAG down if it is set higher than the current number of operational connections.
       */
     def updateLag(): awsDashSdkLib.libRequestMod.Request[Lag, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2071,6 +2421,25 @@ object DirectConnectNs extends js.Object {
   }
   
   trait UntagResourceResponse extends js.Object
+  
+  trait UpdateDirectConnectGatewayAssociationRequest extends js.Object {
+    /**
+      * The Amazon VPC prefixes to advertise to the Direct Connect gateway.
+      */
+    var addAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
+    /**
+      * The ID of the Direct Connect gateway association.
+      */
+    var associationId: js.UndefOr[DirectConnectGatewayAssociationId] = js.undefined
+    /**
+      * The Amazon VPC prefixes to no longer advertise to the Direct Connect gateway.
+      */
+    var removeAllowedPrefixesToDirectConnectGateway: js.UndefOr[RouteFilterPrefixList] = js.undefined
+  }
+  
+  trait UpdateDirectConnectGatewayAssociationResult extends js.Object {
+    var directConnectGatewayAssociation: js.UndefOr[DirectConnectGatewayAssociation] = js.undefined
+  }
   
   trait UpdateLagRequest extends js.Object {
     /**
@@ -2226,6 +2595,8 @@ object DirectConnectNs extends js.Object {
   
   trait _ConnectionState extends js.Object
   
+  trait _DirectConnectGatewayAssociationProposalState extends js.Object
+  
   trait _DirectConnectGatewayAssociationState extends js.Object
   
   trait _DirectConnectGatewayAttachmentState extends js.Object
@@ -2244,15 +2615,35 @@ object DirectConnectNs extends js.Object {
   
   val TypesNs: this.type = js.native
   type ASN = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ipv4
+    - awsDashSdkLib.awsDashSdkLibStrings.ipv6
+    - java.lang.String
+  */
   type AddressFamily = _AddressFamily | java.lang.String
   type AmazonAddress = java.lang.String
+  type AssociatedGatewayId = java.lang.String
   type AvailablePortSpeeds = js.Array[PortSpeed]
   type AwsDevice = java.lang.String
   type AwsDeviceV2 = java.lang.String
   type BGPAuthKey = java.lang.String
   type BGPPeerId = java.lang.String
   type BGPPeerList = js.Array[BGPPeer]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.verifying
+    - awsDashSdkLib.awsDashSdkLibStrings.pending
+    - awsDashSdkLib.awsDashSdkLibStrings.available
+    - awsDashSdkLib.awsDashSdkLibStrings.deleting
+    - awsDashSdkLib.awsDashSdkLibStrings.deleted
+    - java.lang.String
+  */
   type BGPPeerState = _BGPPeerState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.up
+    - awsDashSdkLib.awsDashSdkLibStrings.down
+    - awsDashSdkLib.awsDashSdkLibStrings.unknown
+    - java.lang.String
+  */
   type BGPStatus = _BGPStatus | java.lang.String
   type Bandwidth = java.lang.String
   type BooleanFlag = scala.Boolean
@@ -2261,26 +2652,99 @@ object DirectConnectNs extends js.Object {
   type ConnectionId = java.lang.String
   type ConnectionList = js.Array[Connection]
   type ConnectionName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ordering
+    - awsDashSdkLib.awsDashSdkLibStrings.requested
+    - awsDashSdkLib.awsDashSdkLibStrings.pending
+    - awsDashSdkLib.awsDashSdkLibStrings.available
+    - awsDashSdkLib.awsDashSdkLibStrings.down
+    - awsDashSdkLib.awsDashSdkLibStrings.deleting
+    - awsDashSdkLib.awsDashSdkLibStrings.deleted
+    - awsDashSdkLib.awsDashSdkLibStrings.rejected
+    - awsDashSdkLib.awsDashSdkLibStrings.unknown
+    - java.lang.String
+  */
   type ConnectionState = _ConnectionState | java.lang.String
   type Count = scala.Double
   type CustomerAddress = java.lang.String
+  type DirectConnectGatewayAssociationId = java.lang.String
   type DirectConnectGatewayAssociationList = js.Array[DirectConnectGatewayAssociation]
+  type DirectConnectGatewayAssociationProposalId = java.lang.String
+  type DirectConnectGatewayAssociationProposalList = js.Array[DirectConnectGatewayAssociationProposal]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.requested
+    - awsDashSdkLib.awsDashSdkLibStrings.accepted
+    - awsDashSdkLib.awsDashSdkLibStrings.deleted
+    - java.lang.String
+  */
+  type DirectConnectGatewayAssociationProposalState = _DirectConnectGatewayAssociationProposalState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.associating
+    - awsDashSdkLib.awsDashSdkLibStrings.associated
+    - awsDashSdkLib.awsDashSdkLibStrings.disassociating
+    - awsDashSdkLib.awsDashSdkLibStrings.disassociated
+    - awsDashSdkLib.awsDashSdkLibStrings.updating
+    - java.lang.String
+  */
   type DirectConnectGatewayAssociationState = _DirectConnectGatewayAssociationState | java.lang.String
   type DirectConnectGatewayAttachmentList = js.Array[DirectConnectGatewayAttachment]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.attaching
+    - awsDashSdkLib.awsDashSdkLibStrings.attached
+    - awsDashSdkLib.awsDashSdkLibStrings.detaching
+    - awsDashSdkLib.awsDashSdkLibStrings.detached
+    - java.lang.String
+  */
   type DirectConnectGatewayAttachmentState = _DirectConnectGatewayAttachmentState | java.lang.String
   type DirectConnectGatewayId = java.lang.String
   type DirectConnectGatewayList = js.Array[DirectConnectGateway]
   type DirectConnectGatewayName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.pending
+    - awsDashSdkLib.awsDashSdkLibStrings.available
+    - awsDashSdkLib.awsDashSdkLibStrings.deleting
+    - awsDashSdkLib.awsDashSdkLibStrings.deleted
+    - java.lang.String
+  */
   type DirectConnectGatewayState = _DirectConnectGatewayState | java.lang.String
+  type GatewayIdToAssociate = java.lang.String
+  type GatewayIdentifier = java.lang.String
+  type GatewayType = awsDashSdkLib.awsDashSdkLibStrings.virtualPrivateGateway | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.unknown
+    - awsDashSdkLib.awsDashSdkLibStrings.yes
+    - awsDashSdkLib.awsDashSdkLibStrings.no
+    - java.lang.String
+  */
   type HasLogicalRedundancy = _HasLogicalRedundancy | java.lang.String
   type InterconnectId = java.lang.String
   type InterconnectList = js.Array[Interconnect]
   type InterconnectName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.requested
+    - awsDashSdkLib.awsDashSdkLibStrings.pending
+    - awsDashSdkLib.awsDashSdkLibStrings.available
+    - awsDashSdkLib.awsDashSdkLibStrings.down
+    - awsDashSdkLib.awsDashSdkLibStrings.deleting
+    - awsDashSdkLib.awsDashSdkLibStrings.deleted
+    - awsDashSdkLib.awsDashSdkLibStrings.unknown
+    - java.lang.String
+  */
   type InterconnectState = _InterconnectState | java.lang.String
   type JumboFrameCapable = scala.Boolean
   type LagId = java.lang.String
   type LagList = js.Array[Lag]
   type LagName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.requested
+    - awsDashSdkLib.awsDashSdkLibStrings.pending
+    - awsDashSdkLib.awsDashSdkLibStrings.available
+    - awsDashSdkLib.awsDashSdkLibStrings.down
+    - awsDashSdkLib.awsDashSdkLibStrings.deleting
+    - awsDashSdkLib.awsDashSdkLibStrings.deleted
+    - awsDashSdkLib.awsDashSdkLibStrings.unknown
+    - java.lang.String
+  */
   type LagState = _LagState | java.lang.String
   type LoaContent = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsDirectconnectMod.Blob | java.lang.String
   type LoaContentType = awsDashSdkLib.awsDashSdkLibStrings.`application/pdf` | java.lang.String
@@ -2316,8 +2780,25 @@ object DirectConnectNs extends js.Object {
   type VirtualInterfaceList = js.Array[VirtualInterface]
   type VirtualInterfaceName = java.lang.String
   type VirtualInterfaceRegion = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.confirming
+    - awsDashSdkLib.awsDashSdkLibStrings.verifying
+    - awsDashSdkLib.awsDashSdkLibStrings.pending
+    - awsDashSdkLib.awsDashSdkLibStrings.available
+    - awsDashSdkLib.awsDashSdkLibStrings.down
+    - awsDashSdkLib.awsDashSdkLibStrings.deleting
+    - awsDashSdkLib.awsDashSdkLibStrings.deleted
+    - awsDashSdkLib.awsDashSdkLibStrings.rejected
+    - awsDashSdkLib.awsDashSdkLibStrings.unknown
+    - java.lang.String
+  */
   type VirtualInterfaceState = _VirtualInterfaceState | java.lang.String
   type VirtualInterfaceType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2012-10-25`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

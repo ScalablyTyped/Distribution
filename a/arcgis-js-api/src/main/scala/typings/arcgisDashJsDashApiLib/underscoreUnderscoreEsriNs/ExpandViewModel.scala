@@ -45,3 +45,9 @@ trait ExpandViewModel extends Accessor {
   var view: MapView | SceneView = js.native
 }
 
+@JSGlobal("__esri.ExpandViewModel")
+@js.native
+class ExpandViewModelCls () extends ExpandViewModel {
+  def this(properties: ExpandViewModelProperties) = this()
+}
+

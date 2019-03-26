@@ -12,7 +12,7 @@ trait Anon_DestinationFilter extends js.Object {
   var prefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var priority: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   var sourceSelectionCriteria: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[Anon_SseKmsEncryptedObjectsAnonEnabledBooleanInput654448986]
+    atPulumiPulumiLib.outputMod.Input[Anon_SseKmsEncryptedObjectsAnonEnabledBooleanInput2072549229]
   ] = js.undefined
   var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
@@ -26,7 +26,7 @@ object Anon_DestinationFilter {
     id: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     prefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     priority: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
-    sourceSelectionCriteria: atPulumiPulumiLib.outputMod.Input[Anon_SseKmsEncryptedObjectsAnonEnabledBooleanInput654448986] = null
+    sourceSelectionCriteria: atPulumiPulumiLib.outputMod.Input[Anon_SseKmsEncryptedObjectsAnonEnabledBooleanInput2072549229] = null
   ): Anon_DestinationFilter = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])

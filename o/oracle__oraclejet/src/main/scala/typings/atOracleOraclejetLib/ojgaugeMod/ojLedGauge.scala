@@ -51,7 +51,10 @@ trait ojLedGauge extends dvtBaseGauge[ojLedGaugeSettableProperties] {
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
-  var onSvgStyleChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onSvgStyleChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onThresholdsChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojgaugeMod.ojLedGaugeNs.Threshold]], 
     _
@@ -309,7 +312,7 @@ trait ojLedGauge extends dvtBaseGauge[ojLedGaugeSettableProperties] {
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -318,7 +321,7 @@ trait ojLedGauge extends dvtBaseGauge[ojLedGaugeSettableProperties] {
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -404,7 +407,7 @@ trait ojLedGauge extends dvtBaseGauge[ojLedGaugeSettableProperties] {
   @JSName("getProperty")
   def getProperty_svgClassName(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgClassName): java.lang.String = js.native
   @JSName("getProperty")
-  def getProperty_svgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyle): js.Any = js.native
+  def getProperty_svgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyle): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_thresholds(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.thresholds): js.Array[atOracleOraclejetLib.ojgaugeMod.ojLedGaugeNs.Threshold] = js.native
   @JSName("getProperty")

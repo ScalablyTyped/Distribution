@@ -100,7 +100,7 @@ object securityNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/module-role relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleRole because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsModuleSecurity, name, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleRole because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsModuleSecurity, name */ @js.native
   class ModuleRole protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -116,7 +116,7 @@ object securityNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/module-security relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleSecurity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsModule, moduleRoles, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleSecurity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsModule, moduleRoles */ @js.native
   class ModuleSecurity protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.ModelUnit {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule) = this()
@@ -146,7 +146,7 @@ object securityNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/project-security relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenSecurityMod.securityNs.IProjectSecurity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined userRoles, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenSecurityMod.securityNs.IProjectSecurity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined userRoles */ @js.native
   class ProjectSecurity protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject) = this()
@@ -183,7 +183,7 @@ object securityNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/user-role relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenSecurityMod.securityNs.IUserRole because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsProjectSecurity, name, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenSecurityMod.securityNs.IUserRole because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsProjectSecurity, name */ @js.native
   class UserRole protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()

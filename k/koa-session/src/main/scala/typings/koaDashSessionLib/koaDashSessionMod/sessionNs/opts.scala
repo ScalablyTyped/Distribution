@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof cookies.cookies.SetOption, 'maxAge'> ]: cookies.cookies.SetOption[P]} */ @js.native
+- Dropped {[ P in std.Exclude<keyof cookies.cookies.Cookies.SetOption, 'maxAge'> ]: cookies.cookies.Cookies.SetOption[P]} */ @js.native
 trait opts extends js.Object {
   /**
     * If your session store requires data or utilities from context, opts.ContextStore is alse supported.

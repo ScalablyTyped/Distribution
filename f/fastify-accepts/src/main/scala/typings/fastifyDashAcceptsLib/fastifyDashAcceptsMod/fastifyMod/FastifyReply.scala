@@ -5,130 +5,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait FastifyReply[HttpResponse] extends js.Object {
-  var requestCharset: js.Function0[js.Array[java.lang.String]] | (js.Function1[
-    /* charsets */ js.Array[java.lang.String], 
-    java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ]) | (js.Function1[
-    /* repeated */ java.lang.String, 
-    java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ])
-  var requestCharsets: js.Function0[js.Array[java.lang.String]] | (js.Function1[
-    /* charsets */ js.Array[java.lang.String], 
-    java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ]) | (js.Function1[
-    /* repeated */ java.lang.String, 
-    java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ])
-  var requestEncoding: js.Function0[js.Array[java.lang.String]] | (js.Function1[
-    /* encodings */ js.Array[java.lang.String], 
-    java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ]) | (js.Function1[
-    /* repeated */ java.lang.String, 
-    java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ])
-  var requestEncodings: js.Function0[js.Array[java.lang.String]] | (js.Function1[
-    /* charsets */ js.Array[java.lang.String], 
-    java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ]) | (js.Function1[
-    /* repeated */ java.lang.String, 
-    java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ])
-  var requestLanguage: js.Function0[js.Array[java.lang.String]] | (js.Function1[
-    /* languages */ js.Array[java.lang.String], 
-    java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ]) | (js.Function1[
-    /* repeated */ java.lang.String, 
-    java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ])
-  var requestLanguages: js.Function0[js.Array[java.lang.String]] | (js.Function1[
-    /* languages */ js.Array[java.lang.String], 
-    java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ]) | (js.Function1[
-    /* repeated */ java.lang.String, 
-    java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ])
-  var requestType: (js.Function1[
-    /* types */ js.Array[java.lang.String], 
-    js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ]) | (js.Function1[
-    /* repeated */ java.lang.String, 
-    js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ])
-  var requestTypes: (js.Function1[
-    /* types */ js.Array[java.lang.String], 
-    js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ]) | (js.Function1[
-    /* repeated */ java.lang.String, 
-    js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-  ])
-  def requestAccepts(): acceptsLib.acceptsMod.acceptsNs.Accepts
-}
-
-object FastifyReply {
-  @scala.inline
-  def apply[HttpResponse](
-    requestAccepts: () => acceptsLib.acceptsMod.acceptsNs.Accepts,
-    requestCharset: js.Function0[js.Array[java.lang.String]] | (js.Function1[
-      /* charsets */ js.Array[java.lang.String], 
-      java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]) | (js.Function1[
-      /* repeated */ java.lang.String, 
-      java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]),
-    requestCharsets: js.Function0[js.Array[java.lang.String]] | (js.Function1[
-      /* charsets */ js.Array[java.lang.String], 
-      java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]) | (js.Function1[
-      /* repeated */ java.lang.String, 
-      java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]),
-    requestEncoding: js.Function0[js.Array[java.lang.String]] | (js.Function1[
-      /* encodings */ js.Array[java.lang.String], 
-      java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]) | (js.Function1[
-      /* repeated */ java.lang.String, 
-      java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]),
-    requestEncodings: js.Function0[js.Array[java.lang.String]] | (js.Function1[
-      /* charsets */ js.Array[java.lang.String], 
-      java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]) | (js.Function1[
-      /* repeated */ java.lang.String, 
-      java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]),
-    requestLanguage: js.Function0[js.Array[java.lang.String]] | (js.Function1[
-      /* languages */ js.Array[java.lang.String], 
-      java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]) | (js.Function1[
-      /* repeated */ java.lang.String, 
-      java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]),
-    requestLanguages: js.Function0[js.Array[java.lang.String]] | (js.Function1[
-      /* languages */ js.Array[java.lang.String], 
-      java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]) | (js.Function1[
-      /* repeated */ java.lang.String, 
-      java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]),
-    requestType: (js.Function1[
-      /* types */ js.Array[java.lang.String], 
-      js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]) | (js.Function1[
-      /* repeated */ java.lang.String, 
-      js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]),
-    requestTypes: (js.Function1[
-      /* types */ js.Array[java.lang.String], 
-      js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ]) | (js.Function1[
-      /* repeated */ java.lang.String, 
-      js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false`
-    ])
-  ): FastifyReply[HttpResponse] = {
-    val __obj = js.Dynamic.literal(requestAccepts = js.Any.fromFunction0(requestAccepts), requestCharset = requestCharset.asInstanceOf[js.Any], requestCharsets = requestCharsets.asInstanceOf[js.Any], requestEncoding = requestEncoding.asInstanceOf[js.Any], requestEncodings = requestEncodings.asInstanceOf[js.Any], requestLanguage = requestLanguage.asInstanceOf[js.Any], requestLanguages = requestLanguages.asInstanceOf[js.Any], requestType = requestType.asInstanceOf[js.Any], requestTypes = requestTypes.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[FastifyReply[HttpResponse]]
-  }
+  @JSName("requestCharset")
+  var requestCharset_Original: fastifyDashAcceptsLib.Anon_Charsets = js.native
+  @JSName("requestCharsets")
+  var requestCharsets_Original: fastifyDashAcceptsLib.Anon_Charsets = js.native
+  @JSName("requestEncoding")
+  var requestEncoding_Original: fastifyDashAcceptsLib.Anon_Encodings = js.native
+  @JSName("requestEncodings")
+  var requestEncodings_Original: fastifyDashAcceptsLib.Anon_Charsets = js.native
+  @JSName("requestLanguage")
+  var requestLanguage_Original: fastifyDashAcceptsLib.Anon_False = js.native
+  @JSName("requestLanguages")
+  var requestLanguages_Original: fastifyDashAcceptsLib.Anon_False = js.native
+  @JSName("requestType")
+  var requestType_Original: fastifyDashAcceptsLib.Anon_FalseTypes = js.native
+  @JSName("requestTypes")
+  var requestTypes_Original: fastifyDashAcceptsLib.Anon_FalseTypes = js.native
+  def requestAccepts(): acceptsLib.acceptsMod.acceptsNs.Accepts = js.native
+  def requestCharset(): js.Array[java.lang.String] = js.native
+  def requestCharset(charsets: java.lang.String*): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestCharset(charsets: js.Array[java.lang.String]): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestCharsets(): js.Array[java.lang.String] = js.native
+  def requestCharsets(charsets: java.lang.String*): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestCharsets(charsets: js.Array[java.lang.String]): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestEncoding(): js.Array[java.lang.String] = js.native
+  def requestEncoding(encodings: java.lang.String*): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestEncoding(encodings: js.Array[java.lang.String]): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestEncodings(): js.Array[java.lang.String] = js.native
+  def requestEncodings(charsets: java.lang.String*): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestEncodings(charsets: js.Array[java.lang.String]): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestLanguage(): js.Array[java.lang.String] = js.native
+  def requestLanguage(languages: java.lang.String*): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestLanguage(languages: js.Array[java.lang.String]): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestLanguages(): js.Array[java.lang.String] = js.native
+  def requestLanguages(languages: java.lang.String*): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestLanguages(languages: js.Array[java.lang.String]): java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestType(types: java.lang.String*): js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestType(types: js.Array[java.lang.String]): js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestTypes(types: java.lang.String*): js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
+  def requestTypes(types: js.Array[java.lang.String]): js.Array[java.lang.String] | java.lang.String | fastifyDashAcceptsLib.fastifyDashAcceptsLibNumbers.`false` = js.native
 }
 

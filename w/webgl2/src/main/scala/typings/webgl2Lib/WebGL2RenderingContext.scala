@@ -2499,6 +2499,10 @@ trait WebGL2RenderingContext
 
 @JSGlobal("WebGL2RenderingContext")
 @js.native
+class WebGL2RenderingContextCls () extends WebGL2RenderingContext
+
+@JSGlobal("WebGL2RenderingContext")
+@js.native
 object WebGL2RenderingContext
   extends org.scalablytyped.runtime.Instantiable0[WebGL2RenderingContext] {
   /* WebGL1 constants */

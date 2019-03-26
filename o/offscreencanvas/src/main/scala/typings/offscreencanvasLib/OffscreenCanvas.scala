@@ -34,6 +34,12 @@ trait OffscreenCanvas
 
 @JSGlobal("OffscreenCanvas")
 @js.native
+class OffscreenCanvasCls protected () extends OffscreenCanvas {
+  def this(width: scala.Double, height: scala.Double) = this()
+}
+
+@JSGlobal("OffscreenCanvas")
+@js.native
 object OffscreenCanvas
   extends org.scalablytyped.runtime.Instantiable2[/* width */ scala.Double, /* height */ scala.Double, OffscreenCanvas]
 

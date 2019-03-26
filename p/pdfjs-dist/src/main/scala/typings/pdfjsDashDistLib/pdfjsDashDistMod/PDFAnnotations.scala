@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait PDFAnnotations extends js.Object {
   def getData(): PDFAnnotationData
    // throw new NotImplementedException()
-  def getEmptyContainer(tagName: java.lang.String, rect: js.Array[scala.Double]): pdfjsDashDistLib.HTMLElement
+  def getEmptyContainer(tagName: java.lang.String, rect: js.Array[scala.Double]): stdLib.HTMLElement
    // always false
-  def getHtmlElement(commonOjbs: js.Any): pdfjsDashDistLib.HTMLElement
+  def getHtmlElement(commonOjbs: js.Any): stdLib.HTMLElement
   def getOperatorList(evaluator: js.Any): PDFPromise[_]
   def hasHtml(): scala.Boolean
    // deprecated
@@ -22,8 +22,8 @@ object PDFAnnotations {
   @scala.inline
   def apply(
     getData: () => PDFAnnotationData,
-    getEmptyContainer: (java.lang.String, js.Array[scala.Double]) => pdfjsDashDistLib.HTMLElement,
-    getHtmlElement: js.Any => pdfjsDashDistLib.HTMLElement,
+    getEmptyContainer: (java.lang.String, js.Array[scala.Double]) => stdLib.HTMLElement,
+    getHtmlElement: js.Any => stdLib.HTMLElement,
     getOperatorList: js.Any => PDFPromise[_],
     hasHtml: () => scala.Boolean,
     isViewable: () => scala.Boolean,

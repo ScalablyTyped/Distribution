@@ -245,6 +245,11 @@ object ImportExportNs extends js.Object {
   type IsTruncated = scala.Boolean
   type JobId = java.lang.String
   type JobIdList = js.Array[GenericString]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Import
+    - awsDashSdkLib.awsDashSdkLibStrings.Export
+    - java.lang.String
+  */
   type JobType = _JobType | java.lang.String
   type JobsList = js.Array[Job]
   type LocationCode = java.lang.String
@@ -264,6 +269,11 @@ object ImportExportNs extends js.Object {
   type URL = java.lang.String
   type ValidateOnly = scala.Boolean
   type WarningMessage = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2010-06-01`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
   type city = java.lang.String
   type company = java.lang.String

@@ -21,6 +21,33 @@ trait TreeWalker extends js.Object {
 
 @JSGlobal("TreeWalker")
 @js.native
+class TreeWalkerCls () extends TreeWalker {
+  /* CompleteClass */
+  override var currentNode: Node = js.native
+  /* CompleteClass */
+  override val filter: NodeFilter | scala.Null = js.native
+  /* CompleteClass */
+  override val root: Node = js.native
+  /* CompleteClass */
+  override val whatToShow: scala.Double = js.native
+  /* CompleteClass */
+  override def firstChild(): Node | scala.Null = js.native
+  /* CompleteClass */
+  override def lastChild(): Node | scala.Null = js.native
+  /* CompleteClass */
+  override def nextNode(): Node | scala.Null = js.native
+  /* CompleteClass */
+  override def nextSibling(): Node | scala.Null = js.native
+  /* CompleteClass */
+  override def parentNode(): Node | scala.Null = js.native
+  /* CompleteClass */
+  override def previousNode(): Node | scala.Null = js.native
+  /* CompleteClass */
+  override def previousSibling(): Node | scala.Null = js.native
+}
+
+@JSGlobal("TreeWalker")
+@js.native
 object TreeWalker
   extends org.scalablytyped.runtime.Instantiable0[TreeWalker]
 

@@ -1542,6 +1542,15 @@ object KinesisAnalyticsNs extends js.Object {
   type ApplicationCode = java.lang.String
   type ApplicationDescription = java.lang.String
   type ApplicationName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETING
+    - awsDashSdkLib.awsDashSdkLibStrings.STARTING
+    - awsDashSdkLib.awsDashSdkLibStrings.STOPPING
+    - awsDashSdkLib.awsDashSdkLibStrings.READY
+    - awsDashSdkLib.awsDashSdkLibStrings.RUNNING
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATING
+    - java.lang.String
+  */
   type ApplicationStatus = _ApplicationStatus | java.lang.String
   type ApplicationSummaries = js.Array[ApplicationSummary]
   type ApplicationVersionId = scala.Double
@@ -1559,6 +1568,12 @@ object KinesisAnalyticsNs extends js.Object {
   type InputConfigurations = js.Array[InputConfiguration]
   type InputDescriptions = js.Array[InputDescription]
   type InputParallelismCount = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NOW
+    - awsDashSdkLib.awsDashSdkLibStrings.TRIM_HORIZON
+    - awsDashSdkLib.awsDashSdkLibStrings.LAST_STOPPED_POINT
+    - java.lang.String
+  */
   type InputStartingPosition = _InputStartingPosition | java.lang.String
   type InputUpdates = js.Array[InputUpdate]
   type Inputs = js.Array[Input]
@@ -1580,6 +1595,11 @@ object KinesisAnalyticsNs extends js.Object {
   type RecordColumnSqlType = java.lang.String
   type RecordColumns = js.Array[RecordColumn]
   type RecordEncoding = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.JSON
+    - awsDashSdkLib.awsDashSdkLibStrings.CSV
+    - java.lang.String
+  */
   type RecordFormatType = _RecordFormatType | java.lang.String
   type RecordRowDelimiter = java.lang.String
   type RecordRowPath = java.lang.String
@@ -1588,6 +1608,11 @@ object KinesisAnalyticsNs extends js.Object {
   type ResourceARN = java.lang.String
   type RoleARN = java.lang.String
   type Timestamp = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2015-08-14`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

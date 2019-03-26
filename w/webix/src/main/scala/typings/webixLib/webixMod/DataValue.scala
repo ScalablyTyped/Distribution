@@ -26,3 +26,9 @@ trait DataValue extends js.Object {
   def unblockEvent(): scala.Unit = js.native
 }
 
+@JSImport("webix", "DataValue")
+@js.native
+class DataValueCls () extends DataValue {
+  def this(config: js.Any) = this()
+}
+

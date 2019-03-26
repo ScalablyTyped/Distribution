@@ -1348,7 +1348,7 @@ object appsNs extends js.Object {
         * immediately when the rolling update starts, such that the total number of old and new pods
         * do not exceed 130% of desired pods. Once old pods have been killed, new ReplicaSet can be
         * scaled up further, ensuring that total number of pods running at any time during the update
-        * is atmost 130% of desired pods.
+        * is at most 130% of desired pods.
         */
       var maxSurge: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
       /**
@@ -1737,7 +1737,7 @@ object appsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
@@ -1775,7 +1775,8 @@ object appsNs extends js.Object {
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList]
           ] = js.undefined
       /**
-        * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * More info:
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
@@ -1807,20 +1808,20 @@ object appsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * The desired behavior of this daemon set. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DaemonSetSpec]] = js.undefined
       /**
         * The current status of this daemon set. This data may be out of date by some window of time.
         * Populated by the system. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DaemonSetStatus]] = js.undefined
     }
@@ -1879,7 +1880,7 @@ object appsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
@@ -2230,20 +2231,20 @@ object appsNs extends js.Object {
       /**
         * If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s)
         * that the ReplicaSet manages. Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the specification of the desired behavior of the ReplicaSet. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ReplicaSetSpec]] = js.undefined
       /**
         * Status is the most recently observed status of the ReplicaSet. This data may be out of date
         * by some window of time. Populated by the system. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ReplicaSetStatus]] = js.undefined
     }
@@ -2303,7 +2304,7 @@ object appsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
@@ -2408,7 +2409,7 @@ object appsNs extends js.Object {
         * immediately when the rolling update starts, such that the total number of old and new pods
         * do not exceed 130% of desired pods. Once old pods have been killed, new ReplicaSet can be
         * scaled up further, ensuring that total number of pods running at any time during the update
-        * is atmost 130% of desired pods.
+        * is at most 130% of desired pods.
         */
       var maxSurge: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
       /**
@@ -2456,19 +2457,19 @@ object appsNs extends js.Object {
       var kind: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Standard object metadata; More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata.
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * defines the behavior of the scale. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
         */
       var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ScaleSpec]] = js.undefined
       /**
         * current status of the scale. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
         * Read-only.
         */
       var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ScaleStatus]] = js.undefined

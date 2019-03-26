@@ -730,6 +730,14 @@ object formatNs extends js.Object {
     def readProjection(source: stdLib.Node): openlayersLib.openlayersMod.projNs.Projection = js.native
   }
   
+  /**
+    * IGC altitude/z. One of 'barometric', 'gps', 'none'.
+    */
+  /* Rewritten from type alias, can be one of: 
+    - openlayersLib.openlayersLibStrings.barometric
+    - openlayersLib.openlayersLibStrings.gps
+    - openlayersLib.openlayersLibStrings.none
+  */
   trait IGCZ extends js.Object
   
   /**

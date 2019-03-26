@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * contains a list where the user can choose items to fill into the control, this list can be filled with different data from a database, too.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.componentNs.ComboBox because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultText, getPropertyValues, getPropertyValues, setPropertyValues, setPropertyValues */ @js.native
+- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.componentNs.ComboBox because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultText */ @js.native
 trait DatabaseComboBox
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.DataAwareControlModel {
   /**

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val `_`: mobservableLib.Anon_Base = js.native
+  /* Extracted nested Instantiables into classes in extrasNs */
   val extras: mobservableLib.Anon_Extensive = js.native
   def asFlat[T](value: T): T = js.native
   def asReference[T](value: T): T = js.native

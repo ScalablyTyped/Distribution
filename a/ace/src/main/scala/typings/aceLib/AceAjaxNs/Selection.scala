@@ -207,3 +207,13 @@ trait Selection extends js.Object {
   def shiftSelection(columns: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("AceAjax.Selection")
+@js.native
+class SelectionCls protected () extends Selection {
+  /**
+    * Creates a new `Selection` object.
+    * @param session The session to use
+    **/
+  def this(session: IEditSession) = this()
+}
+

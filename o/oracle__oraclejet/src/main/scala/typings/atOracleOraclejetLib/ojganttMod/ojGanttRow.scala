@@ -14,7 +14,10 @@ trait ojGanttRow
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
-  var onLabelStyleChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onLabelStyleChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   @JSName("addEventListener")
   def addEventListener_abort(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.abort,
@@ -468,7 +471,7 @@ trait ojGanttRow
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -477,7 +480,7 @@ trait ojGanttRow
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -1036,7 +1039,7 @@ trait ojGanttRow
   @JSName("getProperty")
   def getProperty_label(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.label): java.lang.String = js.native
   @JSName("getProperty")
-  def getProperty_labelStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyle): js.Any = js.native
+  def getProperty_labelStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyle): scala.Nothing = js.native
   def setProperties(properties: ojGanttRowSettablePropertiesLenient): scala.Unit = js.native
   def setProperty[T /* <: java.lang.String */](
     property: T,

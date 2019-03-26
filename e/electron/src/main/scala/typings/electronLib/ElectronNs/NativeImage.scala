@@ -50,6 +50,10 @@ class NativeImage () extends js.Object {
   def toPNG(options: ToPNGOptions): nodeLib.Buffer = js.native
 }
 
+@JSGlobal("Electron.nativeImage")
+@js.native
+class nativeImageCls () extends NativeImage
+
 /* static members */
 @JSGlobal("Electron.NativeImage")
 @js.native

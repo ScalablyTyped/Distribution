@@ -17,6 +17,13 @@ trait CustomEvent[T] extends Event {
 
 @JSGlobal("CustomEvent")
 @js.native
+class CustomEventCls[T] protected () extends CustomEvent[T] {
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: CustomEventInit[T]) = this()
+}
+
+@JSGlobal("CustomEvent")
+@js.native
 object CustomEvent
   extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, CustomEvent[js.Object]]
      with org.scalablytyped.runtime.Instantiable2[

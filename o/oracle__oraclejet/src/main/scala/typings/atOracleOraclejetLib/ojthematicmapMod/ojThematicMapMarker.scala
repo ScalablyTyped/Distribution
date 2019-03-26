@@ -54,7 +54,10 @@ trait ojThematicMapMarker
     ], 
     _
   ]) | scala.Null = js.native
-  var onLabelStyleChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onLabelStyleChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onLocationChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
@@ -105,7 +108,10 @@ trait ojThematicMapMarker
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
-  var onSvgStyleChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onSvgStyleChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onValueChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double], 
     _
@@ -775,7 +781,7 @@ trait ojThematicMapMarker
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -784,7 +790,7 @@ trait ojThematicMapMarker
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -1372,7 +1378,7 @@ trait ojThematicMapMarker
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -1381,7 +1387,7 @@ trait ojThematicMapMarker
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -1623,7 +1629,7 @@ trait ojThematicMapMarker
   @JSName("getProperty")
   def getProperty_labelPosition(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelPosition): atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom | atOracleOraclejetLib.atOracleOraclejetLibStrings.center | atOracleOraclejetLib.atOracleOraclejetLibStrings.top = js.native
   @JSName("getProperty")
-  def getProperty_labelStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyle): js.Any = js.native
+  def getProperty_labelStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.labelStyle): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_location(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.location): java.lang.String = js.native
   @JSName("getProperty")
@@ -1649,7 +1655,7 @@ trait ojThematicMapMarker
   @JSName("getProperty")
   def getProperty_svgClassName(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgClassName): java.lang.String = js.native
   @JSName("getProperty")
-  def getProperty_svgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyle): js.Any = js.native
+  def getProperty_svgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyle): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_value(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.value): scala.Double = js.native
   @JSName("getProperty")

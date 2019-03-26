@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation._
 class WebContents ()
   extends electronLib.ElectronNs.WebContents
 
+@JSImport("electron", "webContents")
+@js.native
+class webContentsCls ()
+  extends electronLib.ElectronNs.WebContents
+
 /* static members */
 @JSImport("electron", "WebContents")
 @js.native

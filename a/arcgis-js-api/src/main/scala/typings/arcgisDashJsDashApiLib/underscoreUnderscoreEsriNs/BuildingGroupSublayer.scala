@@ -21,3 +21,9 @@ trait BuildingGroupSublayer extends BuildingSublayer {
   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`building-group` = js.native
 }
 
+@JSGlobal("__esri.BuildingGroupSublayer")
+@js.native
+class BuildingGroupSublayerCls () extends BuildingGroupSublayer {
+  def this(properties: BuildingGroupSublayerProperties) = this()
+}
+

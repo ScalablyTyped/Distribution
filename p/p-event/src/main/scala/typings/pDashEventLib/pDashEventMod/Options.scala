@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Options[EmittedType /* <: pDashEventLib.Array[_] */] extends js.Object {
+trait Options[EmittedType /* <: js.Array[_] */] extends js.Object {
   /**
   	 * Filter function for accepting an event.
   	 *
@@ -40,7 +40,7 @@ trait Options[EmittedType /* <: pDashEventLib.Array[_] */] extends js.Object {
   	 *
   	 * @default ['error']
   	 */
-  val rejectionEvents: js.UndefOr[pDashEventLib.Array[java.lang.String | js.Symbol]] = js.undefined
+  val rejectionEvents: js.UndefOr[js.Array[java.lang.String | js.Symbol]] = js.undefined
   /**
   	 * Time in milliseconds before timing out.
   	 *
@@ -51,10 +51,10 @@ trait Options[EmittedType /* <: pDashEventLib.Array[_] */] extends js.Object {
 
 object Options {
   @scala.inline
-  def apply[EmittedType /* <: pDashEventLib.Array[_] */](
+  def apply[EmittedType /* <: js.Array[_] */](
     filter: FilterFunction[EmittedType] = null,
     multiArgs: js.UndefOr[scala.Boolean] = js.undefined,
-    rejectionEvents: pDashEventLib.Array[java.lang.String | js.Symbol] = null,
+    rejectionEvents: js.Array[java.lang.String | js.Symbol] = null,
     timeout: scala.Int | scala.Double = null
   ): Options[EmittedType] = {
     val __obj = js.Dynamic.literal()

@@ -13,6 +13,13 @@ trait AnimationPlaybackEvent extends Event {
 
 @JSGlobal("AnimationPlaybackEvent")
 @js.native
+class AnimationPlaybackEventCls protected () extends AnimationPlaybackEvent {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: AnimationPlaybackEventInit) = this()
+}
+
+@JSGlobal("AnimationPlaybackEvent")
+@js.native
 object AnimationPlaybackEvent
   extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, AnimationPlaybackEvent]
      with org.scalablytyped.runtime.Instantiable2[

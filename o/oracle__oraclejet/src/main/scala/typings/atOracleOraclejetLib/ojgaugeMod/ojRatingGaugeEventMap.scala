@@ -25,7 +25,7 @@ trait ojRatingGaugeEventMap
   ]
   var thresholdsChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[atOracleOraclejetLib.ojgaugeMod.ojRatingGaugeNs.Threshold]]
   var tooltipChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-    atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_718918166
+    atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288
   ]
   var transientValueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double | scala.Null]
   var unselectedStateChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_BorderColorCircle]
@@ -134,7 +134,7 @@ object ojRatingGaugeEventMap {
     timeupdate: stdLib.Event,
     toggle: stdLib.Event,
     tooltipChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_718918166
+      atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288
     ],
     touchcancel: stdLib.TouchEvent,
     touchend: stdLib.TouchEvent,

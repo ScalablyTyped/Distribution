@@ -16,7 +16,7 @@ object restNs extends js.Object {
     * In version 7.18.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenRestMod.restNs.IConsumedODataService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenRestMod.restNs.IConsumedODataService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class ConsumedODataService protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -143,7 +143,7 @@ object restNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/published-odata-services relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenRestMod.restNs.IPublishedODataService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenRestMod.restNs.IPublishedODataService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class PublishedODataService protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -181,7 +181,7 @@ object restNs extends js.Object {
     * In version 7.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenRestMod.restNs.IPublishedRestService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenRestMod.restNs.IPublishedRestService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class PublishedRestService protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

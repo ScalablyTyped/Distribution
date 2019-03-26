@@ -11,6 +11,12 @@ package object atGoogleMapsMod {
     /* callback */ js.UndefOr[ResponseCallback[Response]], 
     RequestHandle[Response]
   ]
+  /* Rewritten from type alias, can be one of: 
+    - LatLngArray
+    - LatLngString
+    - LatLngLiteral
+    - LatLngLiteralVerbose
+  */
   type LatLng = _LatLng | LatLngArray | LatLngString
   type LatLngArray = js.Tuple2[scala.Double, scala.Double]
   type LatLngString = java.lang.String

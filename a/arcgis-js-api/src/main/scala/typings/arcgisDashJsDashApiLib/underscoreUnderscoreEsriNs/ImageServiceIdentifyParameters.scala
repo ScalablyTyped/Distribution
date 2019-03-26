@@ -75,3 +75,9 @@ trait ImageServiceIdentifyParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.ImageServiceIdentifyParameters")
+@js.native
+class ImageServiceIdentifyParametersCls () extends ImageServiceIdentifyParameters {
+  def this(properties: ImageServiceIdentifyParametersProperties) = this()
+}
+

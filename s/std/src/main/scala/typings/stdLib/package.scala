@@ -10,7 +10,20 @@ package object stdLib {
   type AutoKeyword = stdLib.stdLibStrings.auto
   type BigInteger = Uint8Array
   type BlobCallback = js.Function1[/* blob */ Blob | scala.Null, scala.Unit]
+  /* Rewritten from type alias, can be one of: 
+    - BufferSource
+    - Blob
+    - java.lang.String
+  */
   type BlobPart = _BlobPart | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - Blob
+    - BufferSource
+    - FormData
+    - URLSearchParams
+    - ReadableStream[Uint8Array]
+    - java.lang.String
+  */
   type BodyInit = _BodyInit | ReadableStream[Uint8Array] | java.lang.String
   type CDATASection = Text
   type CSSSupportsRule = CSSConditionRule
@@ -75,6 +88,13 @@ package object stdLib {
   type HashAlgorithmIdentifier = AlgorithmIdentifier
   type HeadersInit = Headers | js.Array[js.Array[java.lang.String]] | (Record[java.lang.String, java.lang.String])
   type IDBKeyPath = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - scala.Double
+    - java.lang.String
+    - Date
+    - BufferSource
+    - IDBArrayKey
+  */
   type IDBValidKey = _IDBValidKey | scala.Double | java.lang.String
   /**
     * Obtain the return type of a constructor function type
@@ -90,6 +110,11 @@ package object stdLib {
   type MSCredentialType = stdLib.stdLibStrings.FIDO_2_0
   type MSLaunchUriCallback = js.Function0[scala.Unit]
   type MediaStreamTrackAudioSourceNode = AudioNode
+  /* Rewritten from type alias, can be one of: 
+    - WindowProxy
+    - MessagePort
+    - ServiceWorker
+  */
   type MessageEventSource = _MessageEventSource | WindowProxy
   type MethodDecorator = js.Function3[
     /* target */ js.Object, 
@@ -197,6 +222,11 @@ package object stdLib {
     */
   type Record[K /* <: java.lang.String */, T] = org.scalablytyped.runtime.StringDictionary[K]
   type ReferenceError = Error
+  /* Rewritten from type alias, can be one of: 
+    - CanvasRenderingContext2D
+    - ImageBitmapRenderingContext
+    - WebGLRenderingContext
+  */
   type RenderingContext = _RenderingContext | WebGLRenderingContext
   type RequestInfo = Request | java.lang.String
   /**

@@ -17,6 +17,15 @@ trait ContactFindOptions extends js.Object {
 
 @JSGlobal("ContactFindOptions")
 @js.native
+/** Constructor for ContactFindOptions object */
+class ContactFindOptionsCls () extends ContactFindOptions {
+  def this(filter: java.lang.String) = this()
+  def this(filter: java.lang.String, multiple: scala.Boolean) = this()
+  def this(filter: java.lang.String, multiple: scala.Boolean, desiredFields: js.Array[ContactFieldType]) = this()
+}
+
+@JSGlobal("ContactFindOptions")
+@js.native
 object ContactFindOptions
   extends /** Constructor for ContactFindOptions object */
 org.scalablytyped.runtime.Instantiable0[ContactFindOptions]

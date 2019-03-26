@@ -18,6 +18,27 @@ trait NodeIterator extends js.Object {
 
 @JSGlobal("NodeIterator")
 @js.native
+class NodeIteratorCls () extends NodeIterator {
+  /* CompleteClass */
+  override val filter: NodeFilter | scala.Null = js.native
+  /* CompleteClass */
+  override val pointerBeforeReferenceNode: scala.Boolean = js.native
+  /* CompleteClass */
+  override val referenceNode: Node = js.native
+  /* CompleteClass */
+  override val root: Node = js.native
+  /* CompleteClass */
+  override val whatToShow: scala.Double = js.native
+  /* CompleteClass */
+  override def detach(): scala.Unit = js.native
+  /* CompleteClass */
+  override def nextNode(): Node | scala.Null = js.native
+  /* CompleteClass */
+  override def previousNode(): Node | scala.Null = js.native
+}
+
+@JSGlobal("NodeIterator")
+@js.native
 object NodeIterator
   extends org.scalablytyped.runtime.Instantiable0[NodeIterator]
 

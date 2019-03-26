@@ -83,7 +83,14 @@ trait FastifyInstance[HttpServer, HttpRequest, HttpResponse] extends js.Object {
   @JSName("addHook")
   def addHook_onRegister(
     name: fastifyLib.fastifyLibStrings.onRegister,
-    hook: js.Function1[/* instance */ this.type, scala.Unit]
+    hook: js.Function1[
+      /* instance */ FastifyInstance[
+        nodeLib.httpMod.Server, 
+        nodeLib.httpMod.IncomingMessage, 
+        nodeLib.httpMod.ServerResponse
+      ], 
+      scala.Unit
+    ]
   ): FastifyInstance[HttpServer, HttpRequest, HttpResponse] = js.native
   /**
     * Add a hook that is triggered when a request is initially received

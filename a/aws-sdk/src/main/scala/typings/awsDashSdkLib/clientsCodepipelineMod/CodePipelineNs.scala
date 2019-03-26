@@ -2355,22 +2355,54 @@ object CodePipelineNs extends js.Object {
   type AWSRegionName = java.lang.String
   type AccessKeyId = java.lang.String
   type AccountId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Source
+    - awsDashSdkLib.awsDashSdkLibStrings.Build
+    - awsDashSdkLib.awsDashSdkLibStrings.Deploy
+    - awsDashSdkLib.awsDashSdkLibStrings.Test
+    - awsDashSdkLib.awsDashSdkLibStrings.Invoke
+    - awsDashSdkLib.awsDashSdkLibStrings.Approval
+    - java.lang.String
+  */
   type ActionCategory = _ActionCategory | java.lang.String
   type ActionConfigurationKey = java.lang.String
   type ActionConfigurationPropertyList = js.Array[ActionConfigurationProperty]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.String
+    - awsDashSdkLib.awsDashSdkLibStrings.Number
+    - awsDashSdkLib.awsDashSdkLibStrings.Boolean
+    - java.lang.String
+  */
   type ActionConfigurationPropertyType = _ActionConfigurationPropertyType | java.lang.String
   type ActionConfigurationQueryableValue = java.lang.String
   type ActionConfigurationValue = java.lang.String
   type ActionExecutionDetailList = js.Array[ActionExecutionDetail]
   type ActionExecutionId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - awsDashSdkLib.awsDashSdkLibStrings.Succeeded
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - java.lang.String
+  */
   type ActionExecutionStatus = _ActionExecutionStatus | java.lang.String
   type ActionExecutionToken = java.lang.String
   type ActionName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AWS
+    - awsDashSdkLib.awsDashSdkLibStrings.ThirdParty
+    - awsDashSdkLib.awsDashSdkLibStrings.Custom
+    - java.lang.String
+  */
   type ActionOwner = _ActionOwner | java.lang.String
   type ActionProvider = java.lang.String
   type ActionRunOrder = scala.Double
   type ActionStateList = js.Array[ActionState]
   type ActionTypeList = js.Array[ActionType]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Approved
+    - awsDashSdkLib.awsDashSdkLibStrings.Rejected
+    - java.lang.String
+  */
   type ApprovalStatus = _ApprovalStatus | java.lang.String
   type ApprovalSummary = java.lang.String
   type ApprovalToken = java.lang.String
@@ -2399,10 +2431,29 @@ object CodePipelineNs extends js.Object {
   type ExecutionSummary = java.lang.String
   type ExternalExecutionId = java.lang.String
   type ExternalExecutionSummary = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.JobFailed
+    - awsDashSdkLib.awsDashSdkLibStrings.ConfigurationError
+    - awsDashSdkLib.awsDashSdkLibStrings.PermissionError
+    - awsDashSdkLib.awsDashSdkLibStrings.RevisionOutOfSync
+    - awsDashSdkLib.awsDashSdkLibStrings.RevisionUnavailable
+    - awsDashSdkLib.awsDashSdkLibStrings.SystemUnavailable
+    - java.lang.String
+  */
   type FailureType = _FailureType | java.lang.String
   type InputArtifactList = js.Array[InputArtifact]
   type JobId = java.lang.String
   type JobList = js.Array[Job]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Created
+    - awsDashSdkLib.awsDashSdkLibStrings.Queued
+    - awsDashSdkLib.awsDashSdkLibStrings.Dispatched
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - awsDashSdkLib.awsDashSdkLibStrings.TimedOut
+    - awsDashSdkLib.awsDashSdkLibStrings.Succeeded
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - java.lang.String
+  */
   type JobStatus = _JobStatus | java.lang.String
   type JsonPath = java.lang.String
   type LastChangedAt = stdLib.Date
@@ -2420,6 +2471,13 @@ object CodePipelineNs extends js.Object {
   type Percentage = scala.Double
   type PipelineArn = java.lang.String
   type PipelineExecutionId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - awsDashSdkLib.awsDashSdkLibStrings.Succeeded
+    - awsDashSdkLib.awsDashSdkLibStrings.Superseded
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - java.lang.String
+  */
   type PipelineExecutionStatus = _PipelineExecutionStatus | java.lang.String
   type PipelineExecutionSummaryList = js.Array[PipelineExecutionSummary]
   type PipelineList = js.Array[PipelineSummary]
@@ -2439,10 +2497,21 @@ object CodePipelineNs extends js.Object {
   type SourceRevisionList = js.Array[SourceRevision]
   type StageActionDeclarationList = js.Array[ActionDeclaration]
   type StageBlockerDeclarationList = js.Array[BlockerDeclaration]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - awsDashSdkLib.awsDashSdkLibStrings.Succeeded
+    - java.lang.String
+  */
   type StageExecutionStatus = _StageExecutionStatus | java.lang.String
   type StageName = java.lang.String
   type StageRetryMode = awsDashSdkLib.awsDashSdkLibStrings.FAILED_ACTIONS | java.lang.String
   type StageStateList = js.Array[StageState]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Inbound
+    - awsDashSdkLib.awsDashSdkLibStrings.Outbound
+    - java.lang.String
+  */
   type StageTransitionType = _StageTransitionType | java.lang.String
   type ThirdPartyJobId = java.lang.String
   type ThirdPartyJobList = js.Array[ThirdPartyJob]
@@ -2454,6 +2523,12 @@ object CodePipelineNs extends js.Object {
   type WebhookArn = java.lang.String
   type WebhookAuthConfigurationAllowedIPRange = java.lang.String
   type WebhookAuthConfigurationSecretToken = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.GITHUB_HMAC
+    - awsDashSdkLib.awsDashSdkLibStrings.IP
+    - awsDashSdkLib.awsDashSdkLibStrings.UNAUTHENTICATED
+    - java.lang.String
+  */
   type WebhookAuthenticationType = _WebhookAuthenticationType | java.lang.String
   type WebhookErrorCode = java.lang.String
   type WebhookErrorMessage = java.lang.String
@@ -2462,6 +2537,11 @@ object CodePipelineNs extends js.Object {
   type WebhookList = js.Array[ListWebhookItem]
   type WebhookName = java.lang.String
   type WebhookUrl = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2015-07-09`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

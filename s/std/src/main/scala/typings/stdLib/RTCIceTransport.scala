@@ -125,6 +125,10 @@ trait RTCIceTransport extends EventTarget {
 
 @JSGlobal("RTCIceTransport")
 @js.native
+class RTCIceTransportCls () extends RTCIceTransport
+
+@JSGlobal("RTCIceTransport")
+@js.native
 object RTCIceTransport
   extends org.scalablytyped.runtime.Instantiable0[RTCIceTransport]
 

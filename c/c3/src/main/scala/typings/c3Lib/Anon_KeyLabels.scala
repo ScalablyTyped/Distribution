@@ -31,7 +31,7 @@ trait Anon_KeyLabels extends js.Object {
     * Get and set axis min and max value.
     * @param range If range is given, specified axis' min and max value will be updated. If no argument is given, the current min and max values for each axis will be returned.
     */
-  def range(): Anon_Key = js.native
-  def range(range: Anon_KeyMax): Anon_Key = js.native
+  def range(): Anon_KeyMax = js.native
+  def range(range: Anon_Key): Anon_KeyMax = js.native
 }
 

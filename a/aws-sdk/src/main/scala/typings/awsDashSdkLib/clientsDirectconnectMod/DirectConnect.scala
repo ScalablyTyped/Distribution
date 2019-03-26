@@ -11,7 +11,44 @@ trait DirectConnect
   @JSName("config")
   var config_DirectConnect: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.ClientConfiguration = js.native
   /**
-    * Deprecated. Use AllocateHostedConnection instead. Creates a hosted connection on an interconnect. Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the specified interconnect.  Intended for use by AWS Direct Connect partners only. 
+    * Accepts a proposal request to attach a virtual private gateway to a Direct Connect gateway.
+    */
+  def acceptDirectConnectGatewayAssociationProposal(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.AcceptDirectConnectGatewayAssociationProposalResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def acceptDirectConnectGatewayAssociationProposal(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.AcceptDirectConnectGatewayAssociationProposalResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.AcceptDirectConnectGatewayAssociationProposalResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Accepts a proposal request to attach a virtual private gateway to a Direct Connect gateway.
+    */
+  def acceptDirectConnectGatewayAssociationProposal(
+    params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.AcceptDirectConnectGatewayAssociationProposalRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.AcceptDirectConnectGatewayAssociationProposalResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def acceptDirectConnectGatewayAssociationProposal(
+    params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.AcceptDirectConnectGatewayAssociationProposalRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.AcceptDirectConnectGatewayAssociationProposalResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.AcceptDirectConnectGatewayAssociationProposalResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Deprecated. Use AllocateHostedConnection instead. Creates a hosted connection on an interconnect. Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the specified interconnect.  Intended for use by AWS Direct Connect Partners only. 
     */
   def allocateConnectionOnInterconnect(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Connection, 
@@ -28,7 +65,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deprecated. Use AllocateHostedConnection instead. Creates a hosted connection on an interconnect. Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the specified interconnect.  Intended for use by AWS Direct Connect partners only. 
+    * Deprecated. Use AllocateHostedConnection instead. Creates a hosted connection on an interconnect. Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the specified interconnect.  Intended for use by AWS Direct Connect Partners only. 
     */
   def allocateConnectionOnInterconnect(
     params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.AllocateConnectionOnInterconnectRequest
@@ -48,7 +85,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a hosted connection on the specified interconnect or a link aggregation group (LAG). Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the specified interconnect or LAG.  Intended for use by AWS Direct Connect partners only. 
+    * Creates a hosted connection on the specified interconnect or a link aggregation group (LAG) of interconnects. Allocates a VLAN number and a specified amount of capacity (bandwidth) for use by a hosted connection on the specified interconnect or LAG of interconnects. AWS polices the hosted connection for the specified capacity and the AWS Direct Connect Partner must also police the hosted connection for the specified capacity.  Intended for use by AWS Direct Connect Partners only. 
     */
   def allocateHostedConnection(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Connection, 
@@ -65,7 +102,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a hosted connection on the specified interconnect or a link aggregation group (LAG). Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the specified interconnect or LAG.  Intended for use by AWS Direct Connect partners only. 
+    * Creates a hosted connection on the specified interconnect or a link aggregation group (LAG) of interconnects. Allocates a VLAN number and a specified amount of capacity (bandwidth) for use by a hosted connection on the specified interconnect or LAG of interconnects. AWS polices the hosted connection for the specified capacity and the AWS Direct Connect Partner must also police the hosted connection for the specified capacity.  Intended for use by AWS Direct Connect Partners only. 
     */
   def allocateHostedConnection(params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.AllocateHostedConnectionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Connection, 
@@ -192,7 +229,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Associates a hosted connection and its virtual interfaces with a link aggregation group (LAG) or interconnect. If the target interconnect or LAG has an existing hosted connection with a conflicting VLAN number or IP address, the operation fails. This action temporarily interrupts the hosted connection's connectivity to AWS as it is being migrated.  Intended for use by AWS Direct Connect partners only. 
+    * Associates a hosted connection and its virtual interfaces with a link aggregation group (LAG) or interconnect. If the target interconnect or LAG has an existing hosted connection with a conflicting VLAN number or IP address, the operation fails. This action temporarily interrupts the hosted connection's connectivity to AWS as it is being migrated.  Intended for use by AWS Direct Connect Partners only. 
     */
   def associateHostedConnection(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Connection, 
@@ -209,7 +246,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Associates a hosted connection and its virtual interfaces with a link aggregation group (LAG) or interconnect. If the target interconnect or LAG has an existing hosted connection with a conflicting VLAN number or IP address, the operation fails. This action temporarily interrupts the hosted connection's connectivity to AWS as it is being migrated.  Intended for use by AWS Direct Connect partners only. 
+    * Associates a hosted connection and its virtual interfaces with a link aggregation group (LAG) or interconnect. If the target interconnect or LAG has an existing hosted connection with a conflicting VLAN number or IP address, the operation fails. This action temporarily interrupts the hosted connection's connectivity to AWS as it is being migrated.  Intended for use by AWS Direct Connect Partners only. 
     */
   def associateHostedConnection(params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.AssociateHostedConnectionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Connection, 
@@ -511,7 +548,44 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates an interconnect between an AWS Direct Connect partner's network and a specific AWS Direct Connect location. An interconnect is a connection which is capable of hosting other connections. The partner can use an interconnect to provide sub-1Gbps AWS Direct Connect service to tier 2 customers who do not have their own connections. Like a standard connection, an interconnect links the partner's network to an AWS Direct Connect location over a standard Ethernet fiber-optic cable. One end is connected to the partner's router, the other to an AWS Direct Connect router. You can automatically add the new interconnect to a link aggregation group (LAG) by specifying a LAG ID in the request. This ensures that the new interconnect is allocated on the same AWS Direct Connect endpoint that hosts the specified LAG. If there are no available ports on the endpoint, the request fails and no interconnect is created. For each end customer, the AWS Direct Connect partner provisions a connection on their interconnect by calling AllocateConnectionOnInterconnect. The end customer can then connect to AWS resources by creating a virtual interface on their connection, using the VLAN assigned to them by the partner.  Intended for use by AWS Direct Connect partners only. 
+    * Creates a proposal to associate the specified virtual private gateway with the specified Direct Connect gateway. You can only associate a Direct Connect gateway and virtual private gateway when the account that owns the Direct Connect gateway and the account that owns the virtual private gateway have the same payer ID.
+    */
+  def createDirectConnectGatewayAssociationProposal(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.CreateDirectConnectGatewayAssociationProposalResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def createDirectConnectGatewayAssociationProposal(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.CreateDirectConnectGatewayAssociationProposalResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.CreateDirectConnectGatewayAssociationProposalResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Creates a proposal to associate the specified virtual private gateway with the specified Direct Connect gateway. You can only associate a Direct Connect gateway and virtual private gateway when the account that owns the Direct Connect gateway and the account that owns the virtual private gateway have the same payer ID.
+    */
+  def createDirectConnectGatewayAssociationProposal(
+    params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.CreateDirectConnectGatewayAssociationProposalRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.CreateDirectConnectGatewayAssociationProposalResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def createDirectConnectGatewayAssociationProposal(
+    params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.CreateDirectConnectGatewayAssociationProposalRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.CreateDirectConnectGatewayAssociationProposalResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.CreateDirectConnectGatewayAssociationProposalResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Creates an interconnect between an AWS Direct Connect Partner's network and a specific AWS Direct Connect location. An interconnect is a connection that is capable of hosting other connections. The AWS Direct Connect partner can use an interconnect to provide AWS Direct Connect hosted connections to customers through their own network services. Like a standard connection, an interconnect links the partner's network to an AWS Direct Connect location over a standard Ethernet fiber-optic cable. One end is connected to the partner's router, the other to an AWS Direct Connect router. You can automatically add the new interconnect to a link aggregation group (LAG) by specifying a LAG ID in the request. This ensures that the new interconnect is allocated on the same AWS Direct Connect endpoint that hosts the specified LAG. If there are no available ports on the endpoint, the request fails and no interconnect is created. For each end customer, the AWS Direct Connect Partner provisions a connection on their interconnect by calling AllocateHostedConnection. The end customer can then connect to AWS resources by creating a virtual interface on their connection, using the VLAN assigned to them by the AWS Direct Connect Partner.  Intended for use by AWS Direct Connect Partners only. 
     */
   def createInterconnect(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Interconnect, 
@@ -528,7 +602,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates an interconnect between an AWS Direct Connect partner's network and a specific AWS Direct Connect location. An interconnect is a connection which is capable of hosting other connections. The partner can use an interconnect to provide sub-1Gbps AWS Direct Connect service to tier 2 customers who do not have their own connections. Like a standard connection, an interconnect links the partner's network to an AWS Direct Connect location over a standard Ethernet fiber-optic cable. One end is connected to the partner's router, the other to an AWS Direct Connect router. You can automatically add the new interconnect to a link aggregation group (LAG) by specifying a LAG ID in the request. This ensures that the new interconnect is allocated on the same AWS Direct Connect endpoint that hosts the specified LAG. If there are no available ports on the endpoint, the request fails and no interconnect is created. For each end customer, the AWS Direct Connect partner provisions a connection on their interconnect by calling AllocateConnectionOnInterconnect. The end customer can then connect to AWS resources by creating a virtual interface on their connection, using the VLAN assigned to them by the partner.  Intended for use by AWS Direct Connect partners only. 
+    * Creates an interconnect between an AWS Direct Connect Partner's network and a specific AWS Direct Connect location. An interconnect is a connection that is capable of hosting other connections. The AWS Direct Connect partner can use an interconnect to provide AWS Direct Connect hosted connections to customers through their own network services. Like a standard connection, an interconnect links the partner's network to an AWS Direct Connect location over a standard Ethernet fiber-optic cable. One end is connected to the partner's router, the other to an AWS Direct Connect router. You can automatically add the new interconnect to a link aggregation group (LAG) by specifying a LAG ID in the request. This ensures that the new interconnect is allocated on the same AWS Direct Connect endpoint that hosts the specified LAG. If there are no available ports on the endpoint, the request fails and no interconnect is created. For each end customer, the AWS Direct Connect Partner provisions a connection on their interconnect by calling AllocateHostedConnection. The end customer can then connect to AWS resources by creating a virtual interface on their connection, using the VLAN assigned to them by the AWS Direct Connect Partner.  Intended for use by AWS Direct Connect Partners only. 
     */
   def createInterconnect(params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.CreateInterconnectRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Interconnect, 
@@ -546,7 +620,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a link aggregation group (LAG) with the specified number of bundled physical connections between the customer network and a specific AWS Direct Connect location. A LAG is a logical interface that uses the Link Aggregation Control Protocol (LACP) to aggregate multiple interfaces, enabling you to treat them as a single interface. All connections in a LAG must use the same bandwidth and must terminate at the same AWS Direct Connect endpoint. You can have up to 10 connections per LAG. Regardless of this limit, if you request more connections for the LAG than AWS Direct Connect can allocate on a single endpoint, no LAG is created. You can specify an existing physical connection or interconnect to include in the LAG (which counts towards the total number of connections). Doing so interrupts the current physical connection or hosted connections, and re-establishes them as a member of the LAG. The LAG will be created on the same AWS Direct Connect endpoint to which the connection terminates. Any virtual interfaces associated with the connection are automatically disassociated and re-associated with the LAG. The connection ID does not change. If the AWS account used to create a LAG is a registered AWS Direct Connect partner, the LAG is automatically enabled to host sub-connections. For a LAG owned by a partner, any associated virtual interfaces cannot be directly configured.
+    * Creates a link aggregation group (LAG) with the specified number of bundled physical connections between the customer network and a specific AWS Direct Connect location. A LAG is a logical interface that uses the Link Aggregation Control Protocol (LACP) to aggregate multiple interfaces, enabling you to treat them as a single interface. All connections in a LAG must use the same bandwidth and must terminate at the same AWS Direct Connect endpoint. You can have up to 10 connections per LAG. Regardless of this limit, if you request more connections for the LAG than AWS Direct Connect can allocate on a single endpoint, no LAG is created. You can specify an existing physical connection or interconnect to include in the LAG (which counts towards the total number of connections). Doing so interrupts the current physical connection or hosted connections, and re-establishes them as a member of the LAG. The LAG will be created on the same AWS Direct Connect endpoint to which the connection terminates. Any virtual interfaces associated with the connection are automatically disassociated and re-associated with the LAG. The connection ID does not change. If the AWS account used to create a LAG is a registered AWS Direct Connect Partner, the LAG is automatically enabled to host sub-connections. For a LAG owned by a partner, any associated virtual interfaces cannot be directly configured.
     */
   def createLag(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Lag, 
@@ -563,7 +637,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a link aggregation group (LAG) with the specified number of bundled physical connections between the customer network and a specific AWS Direct Connect location. A LAG is a logical interface that uses the Link Aggregation Control Protocol (LACP) to aggregate multiple interfaces, enabling you to treat them as a single interface. All connections in a LAG must use the same bandwidth and must terminate at the same AWS Direct Connect endpoint. You can have up to 10 connections per LAG. Regardless of this limit, if you request more connections for the LAG than AWS Direct Connect can allocate on a single endpoint, no LAG is created. You can specify an existing physical connection or interconnect to include in the LAG (which counts towards the total number of connections). Doing so interrupts the current physical connection or hosted connections, and re-establishes them as a member of the LAG. The LAG will be created on the same AWS Direct Connect endpoint to which the connection terminates. Any virtual interfaces associated with the connection are automatically disassociated and re-associated with the LAG. The connection ID does not change. If the AWS account used to create a LAG is a registered AWS Direct Connect partner, the LAG is automatically enabled to host sub-connections. For a LAG owned by a partner, any associated virtual interfaces cannot be directly configured.
+    * Creates a link aggregation group (LAG) with the specified number of bundled physical connections between the customer network and a specific AWS Direct Connect location. A LAG is a logical interface that uses the Link Aggregation Control Protocol (LACP) to aggregate multiple interfaces, enabling you to treat them as a single interface. All connections in a LAG must use the same bandwidth and must terminate at the same AWS Direct Connect endpoint. You can have up to 10 connections per LAG. Regardless of this limit, if you request more connections for the LAG than AWS Direct Connect can allocate on a single endpoint, no LAG is created. You can specify an existing physical connection or interconnect to include in the LAG (which counts towards the total number of connections). Doing so interrupts the current physical connection or hosted connections, and re-establishes them as a member of the LAG. The LAG will be created on the same AWS Direct Connect endpoint to which the connection terminates. Any virtual interfaces associated with the connection are automatically disassociated and re-associated with the LAG. The connection ID does not change. If the AWS account used to create a LAG is a registered AWS Direct Connect Partner, the LAG is automatically enabled to host sub-connections. For a LAG owned by a partner, any associated virtual interfaces cannot be directly configured.
     */
   def createLag(params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.CreateLagRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Lag, 
@@ -793,7 +867,44 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes the specified interconnect.  Intended for use by AWS Direct Connect partners only. 
+    * Deletes the association proposal request between the specified Direct Connect gateway and virtual private gateway.
+    */
+  def deleteDirectConnectGatewayAssociationProposal(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DeleteDirectConnectGatewayAssociationProposalResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def deleteDirectConnectGatewayAssociationProposal(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DeleteDirectConnectGatewayAssociationProposalResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DeleteDirectConnectGatewayAssociationProposalResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Deletes the association proposal request between the specified Direct Connect gateway and virtual private gateway.
+    */
+  def deleteDirectConnectGatewayAssociationProposal(
+    params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DeleteDirectConnectGatewayAssociationProposalRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DeleteDirectConnectGatewayAssociationProposalResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def deleteDirectConnectGatewayAssociationProposal(
+    params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DeleteDirectConnectGatewayAssociationProposalRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DeleteDirectConnectGatewayAssociationProposalResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DeleteDirectConnectGatewayAssociationProposalResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Deletes the specified interconnect.  Intended for use by AWS Direct Connect Partners only. 
     */
   def deleteInterconnect(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DeleteInterconnectResponse, 
@@ -810,7 +921,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes the specified interconnect.  Intended for use by AWS Direct Connect partners only. 
+    * Deletes the specified interconnect.  Intended for use by AWS Direct Connect Partners only. 
     */
   def deleteInterconnect(params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DeleteInterconnectRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DeleteInterconnectResponse, 
@@ -968,7 +1079,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deprecated. Use DescribeHostedConnections instead. Lists the connections that have been provisioned on the specified interconnect.  Intended for use by AWS Direct Connect partners only. 
+    * Deprecated. Use DescribeHostedConnections instead. Lists the connections that have been provisioned on the specified interconnect.  Intended for use by AWS Direct Connect Partners only. 
     */
   def describeConnectionsOnInterconnect(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Connections, 
@@ -985,7 +1096,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deprecated. Use DescribeHostedConnections instead. Lists the connections that have been provisioned on the specified interconnect.  Intended for use by AWS Direct Connect partners only. 
+    * Deprecated. Use DescribeHostedConnections instead. Lists the connections that have been provisioned on the specified interconnect.  Intended for use by AWS Direct Connect Partners only. 
     */
   def describeConnectionsOnInterconnect(
     params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DescribeConnectionsOnInterconnectRequest
@@ -1002,6 +1113,43 @@ trait DirectConnect
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Connections, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Describes one or more association proposals for connection between a virtual private gateway and a Direct Connect gateway. 
+    */
+  def describeDirectConnectGatewayAssociationProposals(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DescribeDirectConnectGatewayAssociationProposalsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def describeDirectConnectGatewayAssociationProposals(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DescribeDirectConnectGatewayAssociationProposalsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DescribeDirectConnectGatewayAssociationProposalsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Describes one or more association proposals for connection between a virtual private gateway and a Direct Connect gateway. 
+    */
+  def describeDirectConnectGatewayAssociationProposals(
+    params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DescribeDirectConnectGatewayAssociationProposalsRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DescribeDirectConnectGatewayAssociationProposalsResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def describeDirectConnectGatewayAssociationProposals(
+    params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DescribeDirectConnectGatewayAssociationProposalsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DescribeDirectConnectGatewayAssociationProposalsResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DescribeDirectConnectGatewayAssociationProposalsResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1114,7 +1262,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the hosted connections that have been provisioned on the specified interconnect or link aggregation group (LAG).  Intended for use by AWS Direct Connect partners only. 
+    * Lists the hosted connections that have been provisioned on the specified interconnect or link aggregation group (LAG).  Intended for use by AWS Direct Connect Partners only. 
     */
   def describeHostedConnections(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Connections, 
@@ -1131,7 +1279,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the hosted connections that have been provisioned on the specified interconnect or link aggregation group (LAG).  Intended for use by AWS Direct Connect partners only. 
+    * Lists the hosted connections that have been provisioned on the specified interconnect or link aggregation group (LAG).  Intended for use by AWS Direct Connect Partners only. 
     */
   def describeHostedConnections(params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DescribeHostedConnectionsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Connections, 
@@ -1393,7 +1541,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Disassociates a connection from a link aggregation group (LAG). The connection is interrupted and re-established as a standalone connection (the connection is not deleted; to delete the connection, use the DeleteConnection request). If the LAG has associated virtual interfaces or hosted connections, they remain associated with the LAG. A disassociated connection owned by an AWS Direct Connect partner is automatically converted to an interconnect. If disassociating the connection would cause the LAG to fall below its setting for minimum number of operational connections, the request fails, except when it's the last member of the LAG. If all connections are disassociated, the LAG continues to exist as an empty LAG with no physical connections. 
+    * Disassociates a connection from a link aggregation group (LAG). The connection is interrupted and re-established as a standalone connection (the connection is not deleted; to delete the connection, use the DeleteConnection request). If the LAG has associated virtual interfaces or hosted connections, they remain associated with the LAG. A disassociated connection owned by an AWS Direct Connect Partner is automatically converted to an interconnect. If disassociating the connection would cause the LAG to fall below its setting for minimum number of operational connections, the request fails, except when it's the last member of the LAG. If all connections are disassociated, the LAG continues to exist as an empty LAG with no physical connections. 
     */
   def disassociateConnectionFromLag(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Connection, 
@@ -1410,7 +1558,7 @@ trait DirectConnect
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Disassociates a connection from a link aggregation group (LAG). The connection is interrupted and re-established as a standalone connection (the connection is not deleted; to delete the connection, use the DeleteConnection request). If the LAG has associated virtual interfaces or hosted connections, they remain associated with the LAG. A disassociated connection owned by an AWS Direct Connect partner is automatically converted to an interconnect. If disassociating the connection would cause the LAG to fall below its setting for minimum number of operational connections, the request fails, except when it's the last member of the LAG. If all connections are disassociated, the LAG continues to exist as an empty LAG with no physical connections. 
+    * Disassociates a connection from a link aggregation group (LAG). The connection is interrupted and re-established as a standalone connection (the connection is not deleted; to delete the connection, use the DeleteConnection request). If the LAG has associated virtual interfaces or hosted connections, they remain associated with the LAG. A disassociated connection owned by an AWS Direct Connect Partner is automatically converted to an interconnect. If disassociating the connection would cause the LAG to fall below its setting for minimum number of operational connections, the request fails, except when it's the last member of the LAG. If all connections are disassociated, the LAG continues to exist as an empty LAG with no physical connections. 
     */
   def disassociateConnectionFromLag(params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.DisassociateConnectionFromLagRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.Connection, 
@@ -1495,6 +1643,43 @@ trait DirectConnect
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Updates the specified attributes of the Direct Connect gateway association. Add or remove prefixes from the association.
+    */
+  def updateDirectConnectGatewayAssociation(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.UpdateDirectConnectGatewayAssociationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def updateDirectConnectGatewayAssociation(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.UpdateDirectConnectGatewayAssociationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.UpdateDirectConnectGatewayAssociationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Updates the specified attributes of the Direct Connect gateway association. Add or remove prefixes from the association.
+    */
+  def updateDirectConnectGatewayAssociation(
+    params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.UpdateDirectConnectGatewayAssociationRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.UpdateDirectConnectGatewayAssociationResult, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def updateDirectConnectGatewayAssociation(
+    params: awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.UpdateDirectConnectGatewayAssociationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.UpdateDirectConnectGatewayAssociationResult, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs.UpdateDirectConnectGatewayAssociationResult, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

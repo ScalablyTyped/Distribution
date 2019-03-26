@@ -43,3 +43,9 @@ trait BuildingComponentSublayer
   val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`building-component` = js.native
 }
 
+@JSGlobal("__esri.BuildingComponentSublayer")
+@js.native
+class BuildingComponentSublayerCls () extends BuildingComponentSublayer {
+  def this(properties: BuildingComponentSublayerProperties) = this()
+}
+

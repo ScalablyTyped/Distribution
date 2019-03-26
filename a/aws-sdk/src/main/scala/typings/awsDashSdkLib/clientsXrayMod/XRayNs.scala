@@ -1726,7 +1726,17 @@ object XRayNs extends js.Object {
   type EC2InstanceId = java.lang.String
   type EdgeList = js.Array[Edge]
   type EncryptionKeyId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.UPDATING
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - java.lang.String
+  */
   type EncryptionStatus = _EncryptionStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.KMS
+    - java.lang.String
+  */
   type EncryptionType = _EncryptionType | java.lang.String
   type ErrorRootCauseEntityPath = js.Array[ErrorRootCauseEntity]
   type ErrorRootCauseServices = js.Array[ErrorRootCauseService]
@@ -1790,6 +1800,11 @@ object XRayNs extends js.Object {
   type UnprocessedTraceSegmentList = js.Array[UnprocessedTraceSegment]
   type ValuesWithServiceIds = js.Array[ValueWithServiceIds]
   type Version = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2016-04-12`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

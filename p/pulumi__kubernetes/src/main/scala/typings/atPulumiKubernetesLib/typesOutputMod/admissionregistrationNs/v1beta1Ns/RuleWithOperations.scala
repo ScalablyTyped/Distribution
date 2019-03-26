@@ -38,6 +38,14 @@ trait RuleWithOperations extends js.Object {
     * Depending on the enclosing object, subresources might not be allowed. Required.
     */
   val resources: js.Array[java.lang.String]
+  /**
+    * scope specifies the scope of this rule. Valid values are "Cluster", "Namespaced", and "*"
+    * "Cluster" means that only cluster-scoped resources will match this rule. Namespace API
+    * objects are cluster-scoped. "Namespaced" means that only namespaced resources will match
+    * this rule. "*" means that there are no scope restrictions. Subresources match the scope of
+    * their parent resource. Default is "*".
+    */
+  val scope: java.lang.String
 }
 
 object RuleWithOperations {
@@ -46,9 +54,10 @@ object RuleWithOperations {
     apiGroups: js.Array[java.lang.String],
     apiVersions: js.Array[java.lang.String],
     operations: js.Array[java.lang.String],
-    resources: js.Array[java.lang.String]
+    resources: js.Array[java.lang.String],
+    scope: java.lang.String
   ): RuleWithOperations = {
-    val __obj = js.Dynamic.literal(apiGroups = apiGroups, apiVersions = apiVersions, operations = operations, resources = resources)
+    val __obj = js.Dynamic.literal(apiGroups = apiGroups, apiVersions = apiVersions, operations = operations, resources = resources, scope = scope)
   
     __obj.asInstanceOf[RuleWithOperations]
   }

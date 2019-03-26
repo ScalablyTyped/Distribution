@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WritableStream protected ()
   extends nodeLib.streamMod.Writable {
-  def this(handler: Handler) = this()
-  def this(handler: Handler, options: Options) = this()
+  def this(handler: domhandlerLib.domhandlerMod.DomHandler) = this()
+  def this(handler: domhandlerLib.domhandlerMod.DomHandler, options: ParserOptions) = this()
 }
 

@@ -6,14 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLLIElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLLIElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLLIElement>, @material-ui/core.@material-ui/core/GridListTile/GridListTile.GridListTileClassKey, never>) */ trait GridListTileProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[GridListTileClassKey] {
-  var className: js.UndefOr[java.lang.String] = js.undefined
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLLIElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLLIElement>[P]} */ trait GridListTileProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[GridListTileClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var cols: js.UndefOr[scala.Double] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[GridListTileProps]] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
 object GridListTileProps {

@@ -403,6 +403,12 @@ trait RTCPeerConnection extends EventTarget {
 
 @JSGlobal("RTCPeerConnection")
 @js.native
+class RTCPeerConnectionCls () extends RTCPeerConnection {
+  def this(configuration: RTCConfiguration) = this()
+}
+
+@JSGlobal("RTCPeerConnection")
+@js.native
 object RTCPeerConnection
   extends org.scalablytyped.runtime.Instantiable0[RTCPeerConnection]
      with org.scalablytyped.runtime.Instantiable1[/* configuration */ RTCConfiguration, RTCPeerConnection] {

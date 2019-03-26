@@ -59,3 +59,9 @@ trait FeatureViewModel extends Accessor {
   val waitingForContent: scala.Boolean = js.native
 }
 
+@JSGlobal("__esri.FeatureViewModel")
+@js.native
+class FeatureViewModelCls () extends FeatureViewModel {
+  def this(properties: FeatureViewModelProperties) = this()
+}
+

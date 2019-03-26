@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLDivElement>, keyof rebass.rebass.BoxKnownProps> ]: react.react.HTMLProps<std.HTMLDivElement>[P]} */ trait BoxProps extends BoxKnownProps
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLProps<std.HTMLDivElement>, keyof rebass.rebass.BoxKnownProps> ]: react.react.React.HTMLProps<std.HTMLDivElement>[P]} */ trait BoxProps extends BoxKnownProps
 
 object BoxProps {
   @scala.inline

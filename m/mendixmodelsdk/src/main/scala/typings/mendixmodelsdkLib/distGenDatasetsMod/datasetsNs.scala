@@ -12,7 +12,7 @@ object datasetsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/data-sets relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSet because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined parameters, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSet because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined parameters */ @js.native
   class DataSet protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -101,7 +101,7 @@ object datasetsNs extends js.Object {
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSetParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDataSet, name, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSetParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDataSet, name */ @js.native
   class DataSetParameter protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()

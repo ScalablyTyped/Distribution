@@ -26,7 +26,7 @@ trait InstalledDetails extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHROMEUPDATE[keyof chrome-apps.Anon_CHROMEUPDATE] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.install | chromeDashAppsLib.chromeDashAppsLibStrings.update | chromeDashAppsLib.chromeDashAppsLibStrings.chrome_update | chromeDashAppsLib.chromeDashAppsLibStrings.shared_module_update
     ]
   ]
 }
@@ -39,7 +39,7 @@ object InstalledDetails {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHROMEUPDATE[keyof chrome-apps.Anon_CHROMEUPDATE] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.install | chromeDashAppsLib.chromeDashAppsLibStrings.update | chromeDashAppsLib.chromeDashAppsLibStrings.chrome_update | chromeDashAppsLib.chromeDashAppsLibStrings.shared_module_update
       ]
     ],
     id: java.lang.String = null,

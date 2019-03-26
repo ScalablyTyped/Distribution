@@ -41,3 +41,9 @@ trait DensifyParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.DensifyParameters")
+@js.native
+class DensifyParametersCls () extends DensifyParameters {
+  def this(properties: DensifyParametersProperties) = this()
+}
+

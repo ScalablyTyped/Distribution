@@ -35,3 +35,9 @@ trait Lighting
   var displayUTCOffset: scala.Double = js.native
 }
 
+@JSGlobal("__esri.Lighting")
+@js.native
+class LightingCls () extends Lighting {
+  def this(properties: LightingProperties) = this()
+}
+

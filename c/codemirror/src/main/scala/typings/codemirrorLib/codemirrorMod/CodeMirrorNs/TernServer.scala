@@ -46,7 +46,7 @@ trait TernServer extends js.Object {
     pos: Position
   ): scala.Unit = js.native
   @JSName("request")
-  def request_result[Q /* <: js.Any */](
+  def request_result[Q /* <: scala.Nothing */](
     cm: Doc,
     query: Q,
     callback: js.Function2[
@@ -58,7 +58,7 @@ trait TernServer extends js.Object {
     ]
   ): scala.Unit = js.native
   @JSName("request")
-  def request_result[Q /* <: js.Any */](
+  def request_result[Q /* <: scala.Nothing */](
     cm: Doc,
     query: Q,
     callback: js.Function2[

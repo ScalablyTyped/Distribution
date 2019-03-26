@@ -83,7 +83,7 @@ trait GetLaunchTemplateResult extends js.Object {
   /**
     * The monitoring option for the instance.
     */
-  val monitorings: js.Array[atPulumiAwsLib.Anon_EnabledBoolean_204597847]
+  val monitorings: js.Array[atPulumiAwsLib.Anon_EnabledBoolean_1082978225]
   /**
     * Customize network interfaces to be attached at instance boot time. See Network
     * Interfaces below for more details.
@@ -140,7 +140,7 @@ object GetLaunchTemplateResult {
     kernelId: java.lang.String,
     keyName: java.lang.String,
     latestVersion: scala.Double,
-    monitorings: js.Array[atPulumiAwsLib.Anon_EnabledBoolean_204597847],
+    monitorings: js.Array[atPulumiAwsLib.Anon_EnabledBoolean_1082978225],
     networkInterfaces: js.Array[atPulumiAwsLib.Anon_AssociatePublicIpAddress],
     placements: js.Array[atPulumiAwsLib.Anon_Affinity],
     ramDiskId: java.lang.String,

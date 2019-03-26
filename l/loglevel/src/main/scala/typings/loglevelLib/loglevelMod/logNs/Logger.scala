@@ -56,7 +56,7 @@ trait Logger extends js.Object {
     * level is set such that it'll actually be logged. This probably doesn't affect you, unless you've run profiling
     * on your code and you have hard numbers telling you that your log data generation is a real performance problem.
     */
-  def getLevel(): loglevelLib.loglevelLibNumbers.`0` | loglevelLib.loglevelLibNumbers.`1` | loglevelLib.loglevelLibNumbers.`2` | loglevelLib.loglevelLibNumbers.`3` | loglevelLib.loglevelLibNumbers.`4` | loglevelLib.loglevelLibNumbers.`5` = js.native
+  def getLevel(): loglevelLib.loglevelLibNumbers.`1` | loglevelLib.loglevelLibNumbers.`4` | loglevelLib.loglevelLibNumbers.`0` | loglevelLib.loglevelLibNumbers.`3` | loglevelLib.loglevelLibNumbers.`2` | loglevelLib.loglevelLibNumbers.`5` = js.native
   /**
     * Output info message to console including appropriate icons
     *

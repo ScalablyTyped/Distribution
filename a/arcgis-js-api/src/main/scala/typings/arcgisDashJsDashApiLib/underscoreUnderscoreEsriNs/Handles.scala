@@ -51,3 +51,9 @@ trait Handles extends Accessor {
   def removeAll(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.Handles")
+@js.native
+class HandlesCls () extends Handles {
+  def this(properties: HandlesProperties) = this()
+}
+

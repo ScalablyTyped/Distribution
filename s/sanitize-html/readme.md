@@ -7,5 +7,6 @@
 //                 Rinze de Laat <https://github.com/biermeester>
 //                 Will Gibson <https://github.com/WillGibson>
 //                 A penguin <https://github.com/sirMerr>
+//                 Johan Davidsson <https://github.com/johandavidson>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

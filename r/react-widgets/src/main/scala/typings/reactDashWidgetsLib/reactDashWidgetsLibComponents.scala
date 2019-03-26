@@ -7,19 +7,21 @@ import scala.scalajs.js.annotation._
 
 object reactDashWidgetsLibComponents {
   @scala.inline
-  def Calendar: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libCalendarMod.CalendarProps] = reactDashWidgetsLib.reactDashWidgetsMod.Calendar.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libCalendarMod.CalendarProps]]
+  def Calendar: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libCalendarMod.CalendarProps] = reactDashWidgetsLib.reactDashWidgetsMod.^.Calendar.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libCalendarMod.CalendarProps]]
   @scala.inline
-  def Combobox: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libComboboxMod.ComboBoxProps] = reactDashWidgetsLib.reactDashWidgetsMod.Combobox.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libComboboxMod.ComboBoxProps]]
+  def Combobox: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libComboboxMod.ComboBoxProps] = reactDashWidgetsLib.reactDashWidgetsMod.^.Combobox.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libComboboxMod.ComboBoxProps]]
   @scala.inline
-  def DateTimePicker: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libDateTimePickerMod.DateTimePickerProps] = reactDashWidgetsLib.reactDashWidgetsMod.DateTimePicker.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libDateTimePickerMod.DateTimePickerProps]]
+  def DateTimePicker: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libDateTimePickerMod.DateTimePickerProps] = reactDashWidgetsLib.reactDashWidgetsMod.^.DateTimePicker.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libDateTimePickerMod.DateTimePickerProps]]
   @scala.inline
-  def DropdownList: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libDropdownListMod.DropdownListProps] = reactDashWidgetsLib.reactDashWidgetsMod.DropdownList.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libDropdownListMod.DropdownListProps]]
+  def DropdownList: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libDropdownListMod.DropdownListProps] = reactDashWidgetsLib.reactDashWidgetsMod.^.DropdownList.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libDropdownListMod.DropdownListProps]]
   @scala.inline
-  def Multiselect: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libMultiselectMod.MultiselectProps] = reactDashWidgetsLib.reactDashWidgetsMod.Multiselect.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libMultiselectMod.MultiselectProps]]
+  def Multiselect: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libMultiselectMod.MultiselectProps] = reactDashWidgetsLib.reactDashWidgetsMod.^.Multiselect.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libMultiselectMod.MultiselectProps]]
   @scala.inline
-  def NumberPicker: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libNumberPickerMod.NumberPickerProps] = reactDashWidgetsLib.reactDashWidgetsMod.NumberPicker.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libNumberPickerMod.NumberPickerProps]]
+  def NumberPicker: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libNumberPickerMod.NumberPickerProps] = reactDashWidgetsLib.reactDashWidgetsMod.^.NumberPicker.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libNumberPickerMod.NumberPickerProps]]
   @scala.inline
-  def SelectList: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libSelectListMod.SelectListProps] = reactDashWidgetsLib.reactDashWidgetsMod.SelectList.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libSelectListMod.SelectListProps]]
+  def SelectList: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libSelectListMod.SelectListProps] = reactDashWidgetsLib.reactDashWidgetsMod.^.SelectList.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libSelectListMod.SelectListProps]]
+  @scala.inline
+  def namespacedCls: reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libCalendarMod.CalendarProps] = js.constructorOf[reactDashWidgetsLib.libCalendarMod.namespacedCls].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashWidgetsLib.libCalendarMod.CalendarProps]]
   @scala.inline
   def CalendarProps: reactDashWidgetsLib.libCalendarMod.CalendarProps.type = reactDashWidgetsLib.libCalendarMod.CalendarProps
   type CalendarProps = reactDashWidgetsLib.libCalendarMod.CalendarProps

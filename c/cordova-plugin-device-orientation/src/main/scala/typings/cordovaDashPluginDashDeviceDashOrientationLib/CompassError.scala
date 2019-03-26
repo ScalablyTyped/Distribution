@@ -17,6 +17,20 @@ trait CompassError extends js.Object {
 
 @JSGlobal("CompassError")
 @js.native
+class CompassErrorCls protected () extends CompassError {
+  /** Constructor for CompassError object */
+  def this(code: scala.Double) = this()
+  /**
+    * One of the predefined error codes
+    *     CompassError.COMPASS_INTERNAL_ERR
+    *     CompassError.COMPASS_NOT_SUPPORTED
+    */
+  /* CompleteClass */
+  override var code: scala.Double = js.native
+}
+
+@JSGlobal("CompassError")
+@js.native
 object CompassError
   extends /** Constructor for CompassError object */
 org.scalablytyped.runtime.Instantiable1[/* code */ scala.Double, CompassError] {

@@ -500,7 +500,20 @@ object KafkaNs extends js.Object {
   val TypesNs: this.type = js.native
   type BrokerAZDistribution = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATING
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETING
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - java.lang.String
+  */
   type ClusterState = _ClusterState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DEFAULT
+    - awsDashSdkLib.awsDashSdkLibStrings.PER_BROKER
+    - awsDashSdkLib.awsDashSdkLibStrings.PER_TOPIC_PER_BROKER
+    - java.lang.String
+  */
   type EnhancedMonitoring = _EnhancedMonitoring | java.lang.String
   type MaxResults = scala.Double
   type NodeType = awsDashSdkLib.awsDashSdkLibStrings.BROKER | java.lang.String
@@ -516,6 +529,11 @@ object KafkaNs extends js.Object {
   type __stringMin1Max64 = java.lang.String
   type __stringMin5Max32 = java.lang.String
   type __timestampIso8601 = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2018-11-14`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

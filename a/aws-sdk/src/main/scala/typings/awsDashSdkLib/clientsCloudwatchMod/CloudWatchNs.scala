@@ -1255,6 +1255,13 @@ object CloudWatchNs extends js.Object {
   type AlarmNamePrefix = java.lang.String
   type AlarmNames = js.Array[AlarmName]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.GreaterThanOrEqualToThreshold
+    - awsDashSdkLib.awsDashSdkLibStrings.GreaterThanThreshold
+    - awsDashSdkLib.awsDashSdkLibStrings.LessThanThreshold
+    - awsDashSdkLib.awsDashSdkLibStrings.LessThanOrEqualToThreshold
+    - java.lang.String
+  */
   type ComparisonOperator = _ComparisonOperator | java.lang.String
   type Counts = js.Array[DatapointValue]
   type DashboardArn = java.lang.String
@@ -1279,6 +1286,12 @@ object CloudWatchNs extends js.Object {
   type ExtendedStatistics = js.Array[ExtendedStatistic]
   type GetMetricDataMaxDatapoints = scala.Double
   type HistoryData = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ConfigurationUpdate
+    - awsDashSdkLib.awsDashSdkLibStrings.StateUpdate
+    - awsDashSdkLib.awsDashSdkLibStrings.Action
+    - java.lang.String
+  */
   type HistoryItemType = _HistoryItemType | java.lang.String
   type HistorySummary = java.lang.String
   type LastModified = stdLib.Date
@@ -1305,15 +1318,70 @@ object CloudWatchNs extends js.Object {
   type ResourceList = js.Array[ResourceName]
   type ResourceName = java.lang.String
   type ReturnData = scala.Boolean
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.TimestampDescending
+    - awsDashSdkLib.awsDashSdkLibStrings.TimestampAscending
+    - java.lang.String
+  */
   type ScanBy = _ScanBy | java.lang.String
   type Size = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Seconds
+    - awsDashSdkLib.awsDashSdkLibStrings.Microseconds
+    - awsDashSdkLib.awsDashSdkLibStrings.Milliseconds
+    - awsDashSdkLib.awsDashSdkLibStrings.Bytes
+    - awsDashSdkLib.awsDashSdkLibStrings.Kilobytes
+    - awsDashSdkLib.awsDashSdkLibStrings.Megabytes
+    - awsDashSdkLib.awsDashSdkLibStrings.Gigabytes
+    - awsDashSdkLib.awsDashSdkLibStrings.Terabytes
+    - awsDashSdkLib.awsDashSdkLibStrings.Bits
+    - awsDashSdkLib.awsDashSdkLibStrings.Kilobits
+    - awsDashSdkLib.awsDashSdkLibStrings.Megabits
+    - awsDashSdkLib.awsDashSdkLibStrings.Gigabits
+    - awsDashSdkLib.awsDashSdkLibStrings.Terabits
+    - awsDashSdkLib.awsDashSdkLibStrings.Percent
+    - awsDashSdkLib.awsDashSdkLibStrings.Count
+    - awsDashSdkLib.awsDashSdkLibStrings.`Bytes/Second`
+    - awsDashSdkLib.awsDashSdkLibStrings.`Kilobytes/Second`
+    - awsDashSdkLib.awsDashSdkLibStrings.`Megabytes/Second`
+    - awsDashSdkLib.awsDashSdkLibStrings.`Gigabytes/Second`
+    - awsDashSdkLib.awsDashSdkLibStrings.`Terabytes/Second`
+    - awsDashSdkLib.awsDashSdkLibStrings.`Bits/Second`
+    - awsDashSdkLib.awsDashSdkLibStrings.`Kilobits/Second`
+    - awsDashSdkLib.awsDashSdkLibStrings.`Megabits/Second`
+    - awsDashSdkLib.awsDashSdkLibStrings.`Gigabits/Second`
+    - awsDashSdkLib.awsDashSdkLibStrings.`Terabits/Second`
+    - awsDashSdkLib.awsDashSdkLibStrings.`Count/Second`
+    - awsDashSdkLib.awsDashSdkLibStrings.None
+    - java.lang.String
+  */
   type StandardUnit = _StandardUnit | java.lang.String
   type Stat = java.lang.String
   type StateReason = java.lang.String
   type StateReasonData = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.OK
+    - awsDashSdkLib.awsDashSdkLibStrings.ALARM
+    - awsDashSdkLib.awsDashSdkLibStrings.INSUFFICIENT_DATA
+    - java.lang.String
+  */
   type StateValue = _StateValue | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SampleCount
+    - awsDashSdkLib.awsDashSdkLibStrings.Average
+    - awsDashSdkLib.awsDashSdkLibStrings.Sum
+    - awsDashSdkLib.awsDashSdkLibStrings.Minimum
+    - awsDashSdkLib.awsDashSdkLibStrings.Maximum
+    - java.lang.String
+  */
   type Statistic = _Statistic | java.lang.String
   type Statistics = js.Array[Statistic]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Complete
+    - awsDashSdkLib.awsDashSdkLibStrings.InternalError
+    - awsDashSdkLib.awsDashSdkLibStrings.PartialData
+    - java.lang.String
+  */
   type StatusCode = _StatusCode | java.lang.String
   type StorageResolution = scala.Double
   type Threshold = scala.Double
@@ -1321,6 +1389,11 @@ object CloudWatchNs extends js.Object {
   type Timestamps = js.Array[Timestamp]
   type TreatMissingData = java.lang.String
   type Values = js.Array[DatapointValue]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2010-08-01`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

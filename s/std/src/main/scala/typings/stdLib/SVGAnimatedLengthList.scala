@@ -12,6 +12,15 @@ trait SVGAnimatedLengthList extends js.Object {
 
 @JSGlobal("SVGAnimatedLengthList")
 @js.native
+class SVGAnimatedLengthListCls () extends SVGAnimatedLengthList {
+  /* CompleteClass */
+  override val animVal: SVGLengthList = js.native
+  /* CompleteClass */
+  override val baseVal: SVGLengthList = js.native
+}
+
+@JSGlobal("SVGAnimatedLengthList")
+@js.native
 object SVGAnimatedLengthList
   extends org.scalablytyped.runtime.Instantiable0[SVGAnimatedLengthList]
 

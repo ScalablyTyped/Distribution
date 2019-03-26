@@ -7,19 +7,17 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sip.js/types/transactions", "InviteServerTransaction")
 @js.native
-class InviteServerTransaction protected ()
-  extends nodeLib.eventsMod.EventEmitter {
-  def this(request: sipDotJsLib.typesSipDashMessageMod.IncomingRequest, ua: sipDotJsLib.typesUaMod.UA) = this()
-  var I: js.UndefOr[_] = js.native
-  var id: java.lang.String = js.native
-  var kind: java.lang.String = js.native
-  var lastResponse: java.lang.String = js.native
-  var request: sipDotJsLib.typesSipDashMessageMod.IncomingRequest = js.native
-  var state: js.UndefOr[sipDotJsLib.typesEnumsMod.TransactionStatus] = js.native
-  var transport: js.UndefOr[sipDotJsLib.typesTransportMod.Transport] = js.native
-  var `type`: sipDotJsLib.typesEnumsMod.TypeStrings = js.native
-  def receiveResponse(statusCode: scala.Double, response: java.lang.String): js.Promise[scala.Unit] = js.native
-  def stateChanged(state: sipDotJsLib.typesEnumsMod.TransactionStatus): scala.Unit = js.native
-  def timer_I(): scala.Unit = js.native
+class InviteServerTransaction protected () extends ServerTransaction {
+  /**
+    * Constructor.
+    * Upon construction, a "100 Trying" reply will be immediately sent.
+    * After construction the transaction will be in the "proceeding" state and the transaction
+    * `id` will equal the branch parameter set in the Via header of the incoming request.
+    * https://tools.ietf.org/html/rfc3261#section-17.2.1
+    * @param request Incoming INVITE request from the transport.
+    * @param transport The transport.
+    * @param user The transaction user.
+    */
+  def this(request: sipDotJsLib.typesSipDashMessageMod.IncomingRequest, transport: sipDotJsLib.typesTransportMod.Transport, user: ServerTransactionUser) = this()
 }
 

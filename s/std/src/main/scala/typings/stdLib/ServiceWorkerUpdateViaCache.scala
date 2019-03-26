@@ -5,5 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - stdLib.stdLibStrings.imports
+  - stdLib.stdLibStrings.all
+  - stdLib.stdLibStrings.none
+*/
 trait ServiceWorkerUpdateViaCache extends js.Object
 

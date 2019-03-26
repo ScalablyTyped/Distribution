@@ -30,6 +30,13 @@ trait ContactAddress extends js.Object {
 
 @JSGlobal("ContactAddress")
 @js.native
+class ContactAddressCls protected () extends ContactAddress {
+  /** Constructor of ContactAddress object */
+  def this(pref: js.UndefOr[scala.Boolean], `type`: js.UndefOr[java.lang.String], formatted: js.UndefOr[java.lang.String], streetAddress: js.UndefOr[java.lang.String], locality: js.UndefOr[java.lang.String], region: js.UndefOr[java.lang.String], postalCode: js.UndefOr[java.lang.String], country: js.UndefOr[java.lang.String]) = this()
+}
+
+@JSGlobal("ContactAddress")
+@js.native
 object ContactAddress
   extends /** Constructor of ContactAddress object */
 org.scalablytyped.runtime.Instantiable8[

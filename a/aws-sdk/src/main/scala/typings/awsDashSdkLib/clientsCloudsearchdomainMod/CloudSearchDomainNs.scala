@@ -384,6 +384,11 @@ object CloudSearchDomainNs extends js.Object {
   type Adds = scala.Double
   type BucketList = js.Array[Bucket]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`application/json`
+    - awsDashSdkLib.awsDashSdkLibStrings.`application/xml`
+    - java.lang.String
+  */
   type ContentType = _ContentType | java.lang.String
   type Cursor = java.lang.String
   type Deletes = scala.Double
@@ -399,6 +404,13 @@ object CloudSearchDomainNs extends js.Object {
   type Partial = scala.Boolean
   type Query = java.lang.String
   type QueryOptions = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.simple
+    - awsDashSdkLib.awsDashSdkLibStrings.structured
+    - awsDashSdkLib.awsDashSdkLibStrings.lucene
+    - awsDashSdkLib.awsDashSdkLibStrings.dismax
+    - java.lang.String
+  */
   type QueryParser = _QueryParser | java.lang.String
   type Return = java.lang.String
   type Size = scala.Double
@@ -410,6 +422,11 @@ object CloudSearchDomainNs extends js.Object {
   type Suggestions = js.Array[SuggestionMatch]
   type SuggestionsSize = scala.Double
   type _Blob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsCloudsearchdomainMod.Blob | java.lang.String | nodeLib.streamMod.Readable
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2013-01-01`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

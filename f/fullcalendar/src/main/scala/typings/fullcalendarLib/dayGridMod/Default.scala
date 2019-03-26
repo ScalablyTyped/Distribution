@@ -13,9 +13,9 @@ class Default protected ()
   var bottomCoordPadding: scala.Double = js.native
   var cellEls: js.Any = js.native
   var cellWeekNumbersVisible: scala.Boolean = js.native
-  var colCnt: js.Any = js.native
+  var colCnt: scala.Nothing = js.native
   var colCoordCache: js.Any = js.native
-  var daysPerRow: js.Any = js.native
+  var daysPerRow: scala.Nothing = js.native
   @JSName("getCellDate")
   var getCellDate_Original: js.Function2[/* row */ js.Any, /* col */ js.Any, _] = js.native
   @JSName("getCellRange")
@@ -29,7 +29,7 @@ class Default protected ()
   var renderHeadHtml_Original: js.Function0[_] = js.native
   @JSName("renderIntroHtml")
   var renderIntroHtml_Original: js.Function0[_] = js.native
-  var rowCnt: js.Any = js.native
+  var rowCnt: scala.Nothing = js.native
   var rowCoordCache: js.Any = js.native
   var rowEls: js.Any = js.native
   var segPopover: js.Any = js.native

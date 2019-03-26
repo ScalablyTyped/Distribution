@@ -481,6 +481,11 @@ object STSNs extends js.Object {
   type accessKeyIdType = java.lang.String
   type accessKeySecretType = java.lang.String
   type accountType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2011-06-15`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
   type arnType = java.lang.String
   type assumedRoleIdType = java.lang.String

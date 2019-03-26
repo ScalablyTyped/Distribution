@@ -27,3 +27,9 @@ trait Series extends Accessor {
   var y: scala.Double = js.native
 }
 
+@JSGlobal("__esri.Series")
+@js.native
+class SeriesCls () extends Series {
+  def this(properties: SeriesProperties) = this()
+}
+

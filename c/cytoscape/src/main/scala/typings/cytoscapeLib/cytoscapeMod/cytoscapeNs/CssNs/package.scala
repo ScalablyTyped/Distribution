@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation._
 package object CssNs {
   type Colour = java.lang.String
   /** https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+  /* Rewritten from type alias, can be one of: 
+    - scala.Double
+    - cytoscapeLib.cytoscapeLibStrings.normal
+    - cytoscapeLib.cytoscapeLibStrings.bold
+    - cytoscapeLib.cytoscapeLibStrings.lighter
+    - cytoscapeLib.cytoscapeLibStrings.bolder
+  */
   type FontWeight = _FontWeight | scala.Double
   /**
     * A space-separated list of numbers ranging on [-1, 1],

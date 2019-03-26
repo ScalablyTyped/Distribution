@@ -1,0 +1,27 @@
+package typings
+package atMaterialDashUiIconsLib.atMaterialDashUiIconsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/icons", "ExposureOutlined")
+@js.native
+class ExposureOutlined protected ()
+  extends atMaterialDashUiIconsLib.exposureOutlinedMod.default {
+  def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()
+  def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, context: js.Any) = this()
+}
+
+@JSImport("@material-ui/icons", "ExposureOutlined")
+@js.native
+class ExposureOutlinedCls protected ()
+  extends reactLib.reactMod.ReactNs.Component[
+      atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
+      reactLib.reactMod.ReactNs.ComponentState, 
+      js.Any
+    ] {
+  def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()
+  def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, context: js.Any) = this()
+}
+

@@ -24,10 +24,7 @@ trait PartialManifest extends js.Object {
       chromeDashAppsLib.chromeNs.ToStringLiteral[
         chromeDashAppsLib.Anon_NEWNOTE, 
         java.lang.String, 
-        stdLib.Exclude[
-          java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_NEWNOTE[keyof chrome-apps.Anon_NEWNOTE] */ js.Any
-        ]
+        stdLib.Exclude[java.lang.String, chromeDashAppsLib.chromeDashAppsLibStrings.new_note]
       ]
     ]
   ] = js.undefined
@@ -203,7 +200,7 @@ trait PartialManifest extends js.Object {
     * @see[NDK Docs]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/doc/devguide/distributing.rst}
     * @see[Chromium Source]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/tools/fix_manifest.py}
     */
-  var platforms: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Naclarch]] = js.undefined
+  var platforms: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Arm]] = js.undefined
   /**
     * Technologies required by the app. Hosting sites such
     * as the Chrome Web Store may use this list to dissuade
@@ -325,10 +322,7 @@ object PartialManifest {
       chromeDashAppsLib.chromeNs.ToStringLiteral[
         chromeDashAppsLib.Anon_NEWNOTE, 
         java.lang.String, 
-        stdLib.Exclude[
-          java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_NEWNOTE[keyof chrome-apps.Anon_NEWNOTE] */ js.Any
-        ]
+        stdLib.Exclude[java.lang.String, chromeDashAppsLib.chromeDashAppsLibStrings.new_note]
       ]
     ] = null,
     author: chromeDashAppsLib.Anon_Email | js.Any = null,
@@ -353,7 +347,7 @@ object PartialManifest {
     offline_enabled: js.UndefOr[scala.Boolean] = js.undefined,
     optional_permissions: js.Array[OptionalPermission] | (js.Array[OptionalPermission | js.Array[UrlMatches]]) | (js.Array[OptionalPermission | js.Array[UrlMatches] | java.lang.String]) = null,
     permissions: js.Array[Permission] | (js.Array[Permission | java.lang.String]) = null,
-    platforms: js.Array[chromeDashAppsLib.Anon_Naclarch] = null,
+    platforms: js.Array[chromeDashAppsLib.Anon_Arm] = null,
     requirements: chromeDashAppsLib.Anon_3D = null,
     sandbox: chromeDashAppsLib.Anon_Contentsecuritypolicy = null,
     short_name: java.lang.String = null,

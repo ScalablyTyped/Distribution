@@ -233,6 +233,10 @@ trait FileReader extends EventTarget {
 
 @JSGlobal("FileReader")
 @js.native
+class FileReaderCls () extends FileReader
+
+@JSGlobal("FileReader")
+@js.native
 object FileReader
   extends org.scalablytyped.runtime.Instantiable0[FileReader] {
   val DONE: scala.Double = js.native

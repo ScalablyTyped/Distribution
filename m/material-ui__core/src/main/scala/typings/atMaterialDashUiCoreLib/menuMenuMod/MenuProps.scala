@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Popover.PopoverProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | never> ]: @material-ui/core.@material-ui/core/Popover.PopoverProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Popover.PopoverProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, @material-ui/core.@material-ui/core/Menu/Menu.MenuClassKey, never>) */ trait MenuProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[MenuClassKey] {
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Popover/Popover.PopoverProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>, 'classes' | never> ]: @material-ui/core.@material-ui/core/Popover/Popover.PopoverProps & std.Partial<@material-ui/core.@material-ui/core/transitions/transition.TransitionHandlerProps>[P]} */ trait MenuProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[MenuClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var MenuListProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menuListMenuListMod.MenuListProps]] = js.undefined
   var PaperProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
   var PopoverClasses: js.UndefOr[
@@ -16,10 +16,8 @@ import scala.scalajs.js.annotation._
       atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverClassKey]
     ]
   ] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var disableAutoFocusItem: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var transitionDuration: js.UndefOr[js.Any | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto] = js.undefined
+  var transitionDuration: js.UndefOr[scala.Nothing | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto] = js.undefined
 }
 
 object MenuProps {
@@ -35,7 +33,7 @@ object MenuProps {
     disableAutoFocusItem: js.UndefOr[scala.Boolean] = js.undefined,
     innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    transitionDuration: js.Any | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
+    transitionDuration: scala.Nothing | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
   ): MenuProps = {
     val __obj = js.Dynamic.literal()
     if (MenuListProps != null) __obj.updateDynamic("MenuListProps")(MenuListProps)

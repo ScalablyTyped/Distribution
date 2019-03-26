@@ -25,7 +25,7 @@ trait DisplayLayout extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_BOTTOM[keyof chrome-apps.Anon_BOTTOM] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.top | chromeDashAppsLib.chromeDashAppsLibStrings.right | chromeDashAppsLib.chromeDashAppsLibStrings.bottom | chromeDashAppsLib.chromeDashAppsLibStrings.left
     ]
   ]
 }
@@ -41,7 +41,7 @@ object DisplayLayout {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_BOTTOM[keyof chrome-apps.Anon_BOTTOM] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.top | chromeDashAppsLib.chromeDashAppsLibStrings.right | chromeDashAppsLib.chromeDashAppsLibStrings.bottom | chromeDashAppsLib.chromeDashAppsLibStrings.left
       ]
     ]
   ): DisplayLayout = {

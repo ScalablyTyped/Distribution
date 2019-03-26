@@ -28,6 +28,10 @@ trait SourceBuffer extends EventTarget {
 
 @JSGlobal("SourceBuffer")
 @js.native
+class SourceBufferCls () extends SourceBuffer
+
+@JSGlobal("SourceBuffer")
+@js.native
 object SourceBuffer
   extends org.scalablytyped.runtime.Instantiable0[SourceBuffer]
 

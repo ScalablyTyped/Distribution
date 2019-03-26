@@ -45,7 +45,7 @@ object ^ extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FAILED[keyof chrome-apps.Anon_FAILED] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.unhandled | chromeDashAppsLib.chromeDashAppsLibStrings.succeeded | chromeDashAppsLib.chromeDashAppsLibStrings.rejected | chromeDashAppsLib.chromeDashAppsLibStrings.failed
       ]
     ]
   ): scala.Unit = js.native
@@ -56,7 +56,7 @@ object ^ extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FAILED[keyof chrome-apps.Anon_FAILED] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.unhandled | chromeDashAppsLib.chromeDashAppsLibStrings.succeeded | chromeDashAppsLib.chromeDashAppsLibStrings.rejected | chromeDashAppsLib.chromeDashAppsLibStrings.failed
       ]
     ],
     callback: js.Function0[scala.Unit]

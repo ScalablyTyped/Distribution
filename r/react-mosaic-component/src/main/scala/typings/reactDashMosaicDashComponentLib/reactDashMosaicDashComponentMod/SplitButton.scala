@@ -14,6 +14,6 @@ class SplitButton[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey 
 @JSImport("react-mosaic-component", "SplitButton")
 @js.native
 object SplitButton extends js.Object {
-  var contextTypes: reactDashMosaicDashComponentLib.Anon_ComponentNameLocationMosaicActionsMosaicId = js.native
+  var contextTypes: reactDashMosaicDashComponentLib.Anon_MosaicActionsMosaicId = js.native
 }
 

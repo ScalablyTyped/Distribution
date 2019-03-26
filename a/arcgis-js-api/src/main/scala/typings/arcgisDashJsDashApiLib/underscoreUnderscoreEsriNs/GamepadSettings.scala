@@ -30,3 +30,9 @@ trait GamepadSettings extends Accessor {
   var enabledFocusMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.document | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.view | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none = js.native
 }
 
+@JSGlobal("__esri.GamepadSettings")
+@js.native
+class GamepadSettingsCls () extends GamepadSettings {
+  def this(properties: GamepadSettingsProperties) = this()
+}
+

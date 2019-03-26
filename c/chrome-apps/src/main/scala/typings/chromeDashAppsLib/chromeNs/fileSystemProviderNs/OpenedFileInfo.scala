@@ -17,7 +17,7 @@ trait OpenedFileInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_READ[keyof chrome-apps.Anon_READ] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.READ | chromeDashAppsLib.chromeDashAppsLibStrings.WRITE
     ]
   ]
   /** A request ID to be be used by consecutive read/write and close requests. */
@@ -33,7 +33,7 @@ object OpenedFileInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_READ[keyof chrome-apps.Anon_READ] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.READ | chromeDashAppsLib.chromeDashAppsLibStrings.WRITE
       ]
     ],
     openRequestId: chromeDashAppsLib.chromeNs.integer

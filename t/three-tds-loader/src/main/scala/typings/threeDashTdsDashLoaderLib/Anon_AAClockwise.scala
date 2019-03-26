@@ -719,7 +719,7 @@ trait Anon_AAClockwise extends js.Object {
     threeLib.threeMod.RingGeometry
   ] = js.native
   var SMAAPass: org.scalablytyped.runtime.Instantiable2[/* width */ scala.Double, /* height */ scala.Double, threeLib.threeMod.SMAAPass] = js.native
-  var SSAARenderPass: Anon_CameraJitterVectors = js.native
+  var SSAARenderPass: Anon_Camera = js.native
   var STLLoader: js.Any = js.native
   var Scene: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Scene] = js.native
   val SceneUtilsNs: Anon_Attach = js.native
@@ -1006,7 +1006,7 @@ trait Anon_AAClockwise extends js.Object {
     /* info */ js.Any, 
     threeLib.threeMod.WebGLTextures
   ] = js.native
-  var WebGLUniforms: Anon_Camera = js.native
+  var WebGLUniforms: Anon_CameraEvalDynamic = js.native
   var WireframeGeometry: org.scalablytyped.runtime.Instantiable1[
     /* geometry */ threeLib.threeDashCoreMod.Geometry, 
     threeLib.threeMod.WireframeGeometry

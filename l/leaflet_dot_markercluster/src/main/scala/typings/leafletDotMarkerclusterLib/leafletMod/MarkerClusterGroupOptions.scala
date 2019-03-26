@@ -24,6 +24,11 @@ trait MarkerClusterGroupOptions
     */
   var chunkDelay: js.UndefOr[scala.Double] = js.undefined
   /*
+    * Time interval (in ms) during which addLayers works before pausing to let the rest of the page process.
+    * In particular, this prevents the page from freezing while adding a lot of markers. Defaults to 200ms.
+    */
+  var chunkInterval: js.UndefOr[scala.Double] = js.undefined
+  /*
     * Boolean to split the addLayers processing in to small intervals so that the page does not freeze.
     */
   var chunkedLoading: js.UndefOr[scala.Boolean] = js.undefined
@@ -92,6 +97,7 @@ object MarkerClusterGroupOptions {
     animateAddingMarkers: js.UndefOr[scala.Boolean] = js.undefined,
     attribution: java.lang.String = null,
     chunkDelay: scala.Int | scala.Double = null,
+    chunkInterval: scala.Int | scala.Double = null,
     chunkedLoading: js.UndefOr[scala.Boolean] = js.undefined,
     disableClusteringAtZoom: scala.Int | scala.Double = null,
     iconCreateFunction: /* cluster */ MarkerCluster => leafletLib.leafletMod.Icon[leafletLib.leafletMod.IconOptions] | leafletLib.leafletMod.DivIcon = null,
@@ -111,6 +117,7 @@ object MarkerClusterGroupOptions {
     if (!js.isUndefined(animateAddingMarkers)) __obj.updateDynamic("animateAddingMarkers")(animateAddingMarkers)
     if (attribution != null) __obj.updateDynamic("attribution")(attribution)
     if (chunkDelay != null) __obj.updateDynamic("chunkDelay")(chunkDelay.asInstanceOf[js.Any])
+    if (chunkInterval != null) __obj.updateDynamic("chunkInterval")(chunkInterval.asInstanceOf[js.Any])
     if (!js.isUndefined(chunkedLoading)) __obj.updateDynamic("chunkedLoading")(chunkedLoading)
     if (disableClusteringAtZoom != null) __obj.updateDynamic("disableClusteringAtZoom")(disableClusteringAtZoom.asInstanceOf[js.Any])
     if (iconCreateFunction != null) __obj.updateDynamic("iconCreateFunction")(js.Any.fromFunction1(iconCreateFunction))

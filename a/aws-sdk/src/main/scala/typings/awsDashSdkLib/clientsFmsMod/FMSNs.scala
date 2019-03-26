@@ -28,7 +28,7 @@ object FMSNs extends js.Object {
       */
     var ResourceId: js.UndefOr[ResourceId] = js.undefined
     /**
-      * The resource type. This is in the format shown in AWS Resource Types Reference. Valid values are AWS::ElasticLoadBalancingV2::LoadBalancer or AWS::CloudFront::Distribution.
+      * The resource type. This is in the format shown in AWS Resource Types Reference. For example: AWS::ElasticLoadBalancingV2::LoadBalancer or AWS::CloudFront::Distribution.
       */
     var ResourceType: js.UndefOr[ResourceType] = js.undefined
     /**
@@ -44,7 +44,7 @@ object FMSNs extends js.Object {
   
   trait DeletePolicyRequest extends js.Object {
     /**
-      * If True, the request will also delete all web ACLs in this policy. Associated resources will no longer be protected by web ACLs in this policy.
+      * If True, the request will also perform a clean-up process that will:   Delete rule groups created by AWS Firewall Manager   Remove web ACLs from in-scope resources   Delete web ACLs that contain no rules or rule groups   After the cleanup, in-scope resources will no longer be protected by web ACLs in this policy. Protection of out-of-scope resources will remain unchanged. Scope is determined by tags and accounts associated with the policy. When creating the policy, if you specified that only resources in specific accounts or with specific tags be protected by the policy, those resources are in-scope. All others are out of scope. If you did not specify tags or accounts, all resources are in-scope. 
       */
     var DeleteAllPolicyResources: js.UndefOr[Boolean] = js.undefined
     /**
@@ -130,6 +130,52 @@ object FMSNs extends js.Object {
       * The Amazon Resource Name (ARN) of the specified policy.
       */
     var PolicyArn: js.UndefOr[ResourceArn] = js.undefined
+  }
+  
+  trait GetProtectionStatusRequest extends js.Object {
+    /**
+      * The end of the time period to query for the attacks. This is a timestamp type. The sample request above indicates a number type because the default used by AWS Firewall Manager is Unix time in seconds. However, any valid timestamp format is allowed.
+      */
+    var EndTime: js.UndefOr[TimeStamp] = js.undefined
+    /**
+      * Specifies the number of objects that you want AWS Firewall Manager to return for this request. If you have more objects than the number that you specify for MaxResults, the response includes a NextToken value that you can use to get another batch of objects.
+      */
+    var MaxResults: js.UndefOr[PaginationMaxResults] = js.undefined
+    /**
+      * The AWS account that is in scope of the policy that you want to get the details for.
+      */
+    var MemberAccountId: js.UndefOr[AWSAccountId] = js.undefined
+    /**
+      * If you specify a value for MaxResults and you have more objects than the number that you specify for MaxResults, AWS Firewall Manager returns a NextToken value in the response that allows you to list another group of objects. For the second and subsequent GetProtectionStatus requests, specify the value of NextToken from the previous response to get information about another batch of objects.
+      */
+    var NextToken: js.UndefOr[PaginationToken] = js.undefined
+    /**
+      * The ID of the policy for which you want to get the attack information.
+      */
+    var PolicyId: awsDashSdkLib.clientsFmsMod.FMSNs.PolicyId
+    /**
+      * The start of the time period to query for the attacks. This is a timestamp type. The sample request above indicates a number type because the default used by AWS Firewall Manager is Unix time in seconds. However, any valid timestamp format is allowed.
+      */
+    var StartTime: js.UndefOr[TimeStamp] = js.undefined
+  }
+  
+  trait GetProtectionStatusResponse extends js.Object {
+    /**
+      * The ID of the AWS Firewall administrator account for this policy.
+      */
+    var AdminAccountId: js.UndefOr[AWSAccountId] = js.undefined
+    /**
+      * Details about the attack, including the following:   Attack type   Account ID   ARN of the resource attacked   Start time of the attack   End time of the attack (ongoing attacks will not have an end time)   The details are in JSON format. An example is shown in the Examples section below.
+      */
+    var Data: js.UndefOr[ProtectionData] = js.undefined
+    /**
+      * If you have more objects than the number that you specified for MaxResults in the request, the response includes a NextToken value. To list more objects, submit another GetProtectionStatus request, and specify the NextToken value from the response in the NextToken value in the next request. AWS SDKs provide auto-pagination that identify NextToken in a response and make subsequent request calls automatically on your behalf. However, this feature is not supported by GetProtectionStatus. You must submit subsequent requests with NextToken using your own processes. 
+      */
+    var NextToken: js.UndefOr[PaginationToken] = js.undefined
+    /**
+      * The service type that is protected by the policy. Currently, this is always SHIELD_ADVANCED.
+      */
+    var ServiceType: js.UndefOr[SecurityServiceType] = js.undefined
   }
   
   trait IssueInfoMap
@@ -239,9 +285,13 @@ object FMSNs extends js.Object {
       */
     var ResourceTags: js.UndefOr[ResourceTags] = js.undefined
     /**
-      * The type of resource to protect with the policy, either an Application Load Balancer or a CloudFront distribution. This is in the format shown in AWS Resource Types Reference. Valid values are AWS::ElasticLoadBalancingV2::LoadBalancer or AWS::CloudFront::Distribution.
+      * The type of resource to protect with the policy. This is in the format shown in AWS Resource Types Reference. For example: AWS::ElasticLoadBalancingV2::LoadBalancer or AWS::CloudFront::Distribution.
       */
     var ResourceType: awsDashSdkLib.clientsFmsMod.FMSNs.ResourceType
+    /**
+      * An array of ResourceType.
+      */
+    var ResourceTypeList: js.UndefOr[ResourceTypeList] = js.undefined
     /**
       * Details about the security service that is being used to protect the resources.
       */
@@ -328,11 +378,11 @@ object FMSNs extends js.Object {
       */
     var RemediationEnabled: js.UndefOr[Boolean] = js.undefined
     /**
-      * The type of resource to protect with the policy, either an Application Load Balancer or a CloudFront distribution. This is in the format shown in AWS Resource Types Reference. Valid values are AWS::ElasticLoadBalancingV2::LoadBalancer or AWS::CloudFront::Distribution.
+      * The type of resource to protect with the policy. This is in the format shown in AWS Resource Types Reference. For example: AWS::ElasticLoadBalancingV2::LoadBalancer or AWS::CloudFront::Distribution.
       */
     var ResourceType: js.UndefOr[ResourceType] = js.undefined
     /**
-      * The service that the policy is using to protect the resources. This value is WAF.
+      * The service that the policy is using to protect the resources. This specifies the type of policy that is created, either a WAF policy or Shield Advanced policy.
       */
     var SecurityServiceType: js.UndefOr[SecurityServiceType] = js.undefined
   }
@@ -379,11 +429,11 @@ object FMSNs extends js.Object {
   
   trait SecurityServicePolicyData extends js.Object {
     /**
-      * Details about the service. This contains WAF data in JSON format, as shown in the following example:  ManagedServiceData": "{\"type\": \"WAF\", \"ruleGroups\": [{\"id\": \"12345678-1bcd-9012-efga-0987654321ab\", \"overrideAction\" : {\"type\": \"COUNT\"}}], \"defaultAction\": {\"type\": \"BLOCK\"}} 
+      * Details about the service. This contains WAF data in JSON format, as shown in the following example:  ManagedServiceData": "{\"type\": \"WAF\", \"ruleGroups\": [{\"id\": \"12345678-1bcd-9012-efga-0987654321ab\", \"overrideAction\" : {\"type\": \"COUNT\"}}], \"defaultAction\": {\"type\": \"BLOCK\"}}  If this is a Shield Advanced policy, this string will be empty.
       */
     var ManagedServiceData: js.UndefOr[ManagedServiceData] = js.undefined
     /**
-      * The service that the policy is using to protect the resources. This value is WAF.
+      * The service that the policy is using to protect the resources. This specifies the type of policy that is created, either a WAF policy or Shield Advanced policy.
       */
     var Type: SecurityServiceType
   }
@@ -546,6 +596,29 @@ object FMSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * If you created a Shield Advanced policy, returns policy-level attack summary information in the event of a potential DDoS attack.
+      */
+    def getProtectionStatus(): awsDashSdkLib.libRequestMod.Request[GetProtectionStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getProtectionStatus(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetProtectionStatusResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetProtectionStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * If you created a Shield Advanced policy, returns policy-level attack summary information in the event of a potential DDoS attack.
+      */
+    def getProtectionStatus(params: GetProtectionStatusRequest): awsDashSdkLib.libRequestMod.Request[GetProtectionStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getProtectionStatus(
+      params: GetProtectionStatusRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetProtectionStatusResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetProtectionStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Returns an array of PolicyComplianceStatus objects in the response. Use PolicyComplianceStatus to get a summary of which member accounts are protected by the specified policy. 
       */
     def listComplianceStatus(): awsDashSdkLib.libRequestMod.Request[ListComplianceStatusResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -630,7 +703,7 @@ object FMSNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates an AWS Firewall Manager policy.
+      * Creates an AWS Firewall Manager policy. Firewall Manager provides two types of policies: A Shield Advanced policy, which applies Shield Advanced protection to specified accounts and resources, or a WAF policy, which contains a rule group and defines which resources are to be protected by that rule group. A policy is specific to either WAF or Shield Advanced. If you want to enforce both WAF rules and Shield Advanced protection across accounts, you can create multiple policies. You can create one or more policies for WAF rules, and one or more policies for Shield Advanced. You must be subscribed to Shield Advanced to create a Shield Advanced policy. For more information on subscribing to Shield Advanced, see CreateSubscription.
       */
     def putPolicy(): awsDashSdkLib.libRequestMod.Request[PutPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putPolicy(
@@ -641,7 +714,7 @@ object FMSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates an AWS Firewall Manager policy.
+      * Creates an AWS Firewall Manager policy. Firewall Manager provides two types of policies: A Shield Advanced policy, which applies Shield Advanced protection to specified accounts and resources, or a WAF policy, which contains a rule group and defines which resources are to be protected by that rule group. A policy is specific to either WAF or Shield Advanced. If you want to enforce both WAF rules and Shield Advanced protection across accounts, you can create multiple policies. You can create one or more policies for WAF rules, and one or more policies for Shield Advanced. You must be subscribed to Shield Advanced to create a Shield Advanced policy. For more information on subscribing to Shield Advanced, see CreateSubscription.
       */
     def putPolicy(params: PutPolicyRequest): awsDashSdkLib.libRequestMod.Request[PutPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putPolicy(
@@ -660,12 +733,22 @@ object FMSNs extends js.Object {
   
   trait _PolicyComplianceStatusType extends js.Object
   
+  trait _SecurityServiceType extends js.Object
+  
   trait _ViolationReason extends js.Object
   
   trait _apiVersion extends js.Object
   
   val TypesNs: this.type = js.native
   type AWSAccountId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.READY
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATING
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING_DELETION
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETING
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETED
+    - java.lang.String
+  */
   type AccountRoleStatus = _AccountRoleStatus | java.lang.String
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -673,6 +756,12 @@ object FMSNs extends js.Object {
   type CustomerPolicyScopeId = java.lang.String
   type CustomerPolicyScopeIdList = js.Array[CustomerPolicyScopeId]
   type CustomerPolicyScopeIdType = awsDashSdkLib.awsDashSdkLibStrings.ACCOUNT | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AWSCONFIG
+    - awsDashSdkLib.awsDashSdkLibStrings.AWSWAF
+    - awsDashSdkLib.awsDashSdkLibStrings.AWSSHIELD_ADVANCED
+    - java.lang.String
+  */
   type DependentServiceName = _DependentServiceName | java.lang.String
   type DetailedInfo = java.lang.String
   type EvaluationResults = js.Array[EvaluationResult]
@@ -681,21 +770,45 @@ object FMSNs extends js.Object {
   type PaginationMaxResults = scala.Double
   type PaginationToken = java.lang.String
   type PolicyComplianceStatusList = js.Array[PolicyComplianceStatus]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLIANT
+    - awsDashSdkLib.awsDashSdkLibStrings.NON_COMPLIANT
+    - java.lang.String
+  */
   type PolicyComplianceStatusType = _PolicyComplianceStatusType | java.lang.String
   type PolicyId = java.lang.String
   type PolicySummaryList = js.Array[PolicySummary]
   type PolicyUpdateToken = java.lang.String
+  type ProtectionData = java.lang.String
   type ResourceArn = java.lang.String
   type ResourceCount = scala.Double
   type ResourceId = java.lang.String
   type ResourceName = java.lang.String
   type ResourceTags = js.Array[ResourceTag]
   type ResourceType = java.lang.String
-  type SecurityServiceType = awsDashSdkLib.awsDashSdkLibStrings.WAF | java.lang.String
+  type ResourceTypeList = js.Array[ResourceType]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.WAF
+    - awsDashSdkLib.awsDashSdkLibStrings.SHIELD_ADVANCED
+    - java.lang.String
+  */
+  type SecurityServiceType = _SecurityServiceType | java.lang.String
   type TagKey = java.lang.String
   type TagValue = java.lang.String
   type TimeStamp = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.WEB_ACL_MISSING_RULE_GROUP
+    - awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_MISSING_WEB_ACL
+    - awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_INCORRECT_WEB_ACL
+    - awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_MISSING_SHIELD_PROTECTION
+    - java.lang.String
+  */
   type ViolationReason = _ViolationReason | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2018-01-01`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

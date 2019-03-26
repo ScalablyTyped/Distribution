@@ -16,6 +16,20 @@ trait MimeTypeArray
 
 @JSGlobal("MimeTypeArray")
 @js.native
+class MimeTypeArrayCls () extends MimeTypeArray {
+  /* CompleteClass */
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  override var iterator: js.Function0[IterableIterator[Plugin]] = js.native
+  /* CompleteClass */
+  override val length: scala.Double = js.native
+  /* CompleteClass */
+  override def item(index: scala.Double): Plugin = js.native
+  /* CompleteClass */
+  override def namedItem(`type`: java.lang.String): Plugin = js.native
+}
+
+@JSGlobal("MimeTypeArray")
+@js.native
 object MimeTypeArray
   extends org.scalablytyped.runtime.Instantiable0[MimeTypeArray]
 

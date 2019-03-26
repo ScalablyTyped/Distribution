@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Vue extends js.Object {
   @JSName("$http")
-  var $http_Original: vueDashResourceLib.Anon_Data = js.native
+  var $http_Original: vueDashResourceLib.Anon_Delete = js.native
   @JSName("$resource")
   var $resource_Original: $resource = js.native
   @JSName("$http")

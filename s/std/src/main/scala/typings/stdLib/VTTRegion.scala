@@ -18,6 +18,27 @@ trait VTTRegion extends js.Object {
 
 @JSGlobal("VTTRegion")
 @js.native
+class VTTRegionCls () extends VTTRegion {
+  /* CompleteClass */
+  override var id: java.lang.String = js.native
+  /* CompleteClass */
+  override var lines: scala.Double = js.native
+  /* CompleteClass */
+  override var regionAnchorX: scala.Double = js.native
+  /* CompleteClass */
+  override var regionAnchorY: scala.Double = js.native
+  /* CompleteClass */
+  override var scroll: ScrollSetting = js.native
+  /* CompleteClass */
+  override var viewportAnchorX: scala.Double = js.native
+  /* CompleteClass */
+  override var viewportAnchorY: scala.Double = js.native
+  /* CompleteClass */
+  override var width: scala.Double = js.native
+}
+
+@JSGlobal("VTTRegion")
+@js.native
 object VTTRegion
   extends org.scalablytyped.runtime.Instantiable0[VTTRegion]
 

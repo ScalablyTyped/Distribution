@@ -29,7 +29,7 @@ trait PodPresetList extends js.Object {
   val kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodPresetList
   /**
     * Standard list metadata. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }

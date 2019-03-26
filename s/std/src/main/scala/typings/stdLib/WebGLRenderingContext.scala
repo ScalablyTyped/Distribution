@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WebGLRenderingContext")
 @js.native
+class WebGLRenderingContextCls () extends WebGLRenderingContext
+
+@JSGlobal("WebGLRenderingContext")
+@js.native
 object WebGLRenderingContext
   extends org.scalablytyped.runtime.Instantiable0[WebGLRenderingContext] {
   val ACTIVE_ATTRIBUTES: stdLib.GLenum = js.native

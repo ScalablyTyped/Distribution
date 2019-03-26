@@ -59,7 +59,7 @@ object ^ extends js.Object {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_APPUPDATE[keyof chrome-apps.Anon_APPUPDATE] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.app_update | chromeDashAppsLib.chromeDashAppsLibStrings.os_update | chromeDashAppsLib.chromeDashAppsLibStrings.periodic
         ]
       ], 
       scala.Unit
@@ -159,7 +159,7 @@ object ^ extends js.Object {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_NOUPDATE[keyof chrome-apps.Anon_NOUPDATE] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.throttled | chromeDashAppsLib.chromeDashAppsLibStrings.no_update | chromeDashAppsLib.chromeDashAppsLibStrings.update_available
         ]
       ], 
       /* details */ js.UndefOr[UpdateCheckDetails], 

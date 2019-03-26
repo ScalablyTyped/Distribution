@@ -68,6 +68,11 @@ object AnimatedNs extends js.Object {
     var useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - reactDashNativeLib.reactDashNativeLibStrings.extend
+    - reactDashNativeLib.reactDashNativeLibStrings.identity
+    - reactDashNativeLib.reactDashNativeLibStrings.clamp
+  */
   trait ExtrapolateType extends js.Object
   
   trait InterpolationConfigType extends js.Object {

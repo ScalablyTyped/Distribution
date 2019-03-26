@@ -19,6 +19,10 @@ trait PluginArray
 
 @JSGlobal("PluginArray")
 @js.native
+class PluginArrayCls () extends PluginArray
+
+@JSGlobal("PluginArray")
+@js.native
 object PluginArray
   extends org.scalablytyped.runtime.Instantiable0[PluginArray]
 

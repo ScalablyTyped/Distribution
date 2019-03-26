@@ -2,7 +2,7 @@
 [debug] PhaseRunner.scala:82 Success [id => combined-stream, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/combined-stream/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/combined-stream),TsIdentLibrarySimple(combined-stream)),TsIdentModule(None,List(combined-stream))) [id => combined-stream, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(combined-stream)) [id => combined-stream, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:201 Processing TsIdentLibrarySimple(combined-stream) [id => combined-stream, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:204 Processing TsIdentLibrarySimple(combined-stream) [id => combined-stream, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => combined-stream, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing combined-stream [id => combined-stream, phase => scala.js] 
 [info ] InferMemberOverrides.scala:84 added override methods List(Name(pipe), Name(pipe)) [id => combined-stream, phase => scala.js, this => Name(combinedDashStreamLib) / Name(combinedDashStreamMod) / Name(CombinedStream)] 

@@ -5,5 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - TSCallSignatureDeclaration
+  - TSConstructSignatureDeclaration
+  - TSPropertySignature
+  - TSMethodSignature
+  - TSIndexSignature
+*/
 trait TSTypeElement extends _Node
 

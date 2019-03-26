@@ -22,7 +22,7 @@ object regularexpressionsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/regular-expressions relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenRegularexpressionsMod.regularexpressionsNs.IRegularExpression because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenRegularexpressionsMod.regularexpressionsNs.IRegularExpression because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class RegularExpression protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

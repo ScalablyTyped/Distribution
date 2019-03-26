@@ -27,3 +27,9 @@ trait Codec extends js.Object {
   def valueAsBuffer(opts: CodecOptions): js.Any = js.native
 }
 
+@JSImport("level-codec", "Codec")
+@js.native
+class CodecCls () extends Codec {
+  def this(options: CodecOptions) = this()
+}
+

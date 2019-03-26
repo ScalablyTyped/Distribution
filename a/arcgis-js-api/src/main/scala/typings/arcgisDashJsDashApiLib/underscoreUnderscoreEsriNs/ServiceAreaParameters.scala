@@ -259,3 +259,14 @@ trait ServiceAreaParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.ServiceAreaParameters")
+@js.native
+/**
+  * Input parameters for [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html)
+  */
+class ServiceAreaParametersCls () extends ServiceAreaParameters {
+  def this(properties: ServiceAreaParametersProperties) = this()
+}
+

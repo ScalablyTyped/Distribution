@@ -30,6 +30,9 @@ object metricsNs extends js.Object {
   }
   
   @js.native
+  class DefaultMetricsCls () extends DefaultMetrics
+  
+  @js.native
   trait DefaultMetricsStatic
     extends org.scalablytyped.runtime.Instantiable0[DefaultMetrics]
   

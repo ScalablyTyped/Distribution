@@ -11,5 +11,5 @@ package object cavyMod {
     /* callback */ js.UndefOr[cavyLib.RefCallback], 
     cavyLib.RefCallback
   ]
-  type WithTestHook[T /* <: js.Object */] = T with cavyLib.Anon_Callback
+  type WithTestHook[T /* <: js.Object */] = T with cavyLib.Anon_GenerateTestHook
 }

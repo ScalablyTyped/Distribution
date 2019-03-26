@@ -15,6 +15,6 @@ import scala.scalajs.js.annotation._
   * The {@link ValidatableBindableControlModel} services describes the interaction of these concepts for control models which support both of them.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.bindingNs.BindableControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined setPropertyValues, setPropertyValues */ @js.native
+- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.bindingNs.BindableControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
 trait ValidatableBindableControlModel extends ValidatableControlModel
 

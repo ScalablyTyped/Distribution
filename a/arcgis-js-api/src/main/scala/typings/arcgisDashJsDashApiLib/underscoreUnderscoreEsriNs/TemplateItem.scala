@@ -47,3 +47,9 @@ trait TemplateItem extends Accessor {
   def fetchThumbnail(): arcgisDashJsDashApiLib.IPromise[_] = js.native
 }
 
+@JSGlobal("__esri.TemplateItem")
+@js.native
+class TemplateItemCls () extends TemplateItem {
+  def this(properties: TemplateItemProperties) = this()
+}
+

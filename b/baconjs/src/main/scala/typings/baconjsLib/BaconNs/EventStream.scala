@@ -520,3 +520,36 @@ trait EventStream[E, A] extends Observable[E, A] {
   def withHandler(f: js.Function1[/* event */ Initial[A] | Next[A] | End[A] | Error[E], _]): EventStream[E, A] = js.native
 }
 
+@JSGlobal("Bacon.EventStream")
+@js.native
+class EventStreamCls[E, A] protected () extends EventStream[E, A] {
+  /**
+    * @callback EventStream#new~subscribe
+    * @param {EventStream#new~sink} sink
+    * @returns {EventStream#new~unsubscribe}
+    */
+  /**
+    * @callback EventStream#new~sink
+    * @param {More|NoMore|(A|Initial<A>|Next<A>|End<A>|Error<E>)|(A|Initial<A>|Next<A>|End<A>|Error<E>)[]} value
+    * @returns {void}
+    */
+  /**
+    * @callback EventStream#new~unsubscribe
+    * @returns {void}
+    */
+  /**
+    * @constructor EventStream#new
+    * @constructs Bacon.EventStream
+    * @description Creates an [EventStream]{@link Bacon.EventStream} with the given `subscribe` function.
+    * @param {EventStream#new~subscribe} subscribe
+    * @returns {EventStream<E, A>}
+    */
+  def this(subscribe: js.Function1[
+      /* sink */ js.Function1[
+        /* value */ More | NoMore | A | Initial[A] | Next[A] | End[A] | Error[E] | (js.Array[A | Initial[A] | Next[A] | End[A] | Error[E]]), 
+        scala.Unit
+      ], 
+      js.Function0[scala.Unit]
+    ]) = this()
+}
+

@@ -9,6 +9,14 @@ package object EventTargetNs {
   type EventAttributes[TEventAttributes /* <: EventDefinition */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof TEventAttributes ]: event-target-shim.event-target-shim.EventTarget.FunctionListener<TEventAttributes[P]> | null}
     */ eventDashTargetDashShimLib.eventDashTargetDashShimLibStrings.EventAttributes with TEventAttributes
+  /* Rewritten from type alias, can be one of: 
+    - eventDashTargetDashShimLib.eventDashTargetDashShimMod.Event
+    - NonStandardEvent
+    - (stdLib.Pick[
+  / * import warning: ImportType.apply Failed type conversion: TEvents[TEventType] * / js.Any, 
+  stdLib.Exclude[java.lang.String, OmittableEventKeys]]) with (stdLib.Partial[
+  stdLib.Pick[eventDashTargetDashShimLib.eventDashTargetDashShimMod.Event, OmittableEventKeys]])
+  */
   type EventData[TEvents /* <: EventDefinition */, TEventType /* <: java.lang.String */, TMode /* <: Mode */] = (_EventData[TEvents, TEventType, TMode]) | ((stdLib.Pick[
     /* import warning: ImportType.apply Failed type conversion: TEvents[TEventType] */ js.Any, 
     stdLib.Exclude[java.lang.String, OmittableEventKeys]

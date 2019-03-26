@@ -5,5 +5,87 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - gestaltLib.gestaltLibStrings.add
+  - gestaltLib.gestaltLibStrings.`add-circle`
+  - gestaltLib.gestaltLibStrings.`add-pin`
+  - gestaltLib.gestaltLibStrings.`angled-pin`
+  - gestaltLib.gestaltLibStrings.`arrow-back`
+  - gestaltLib.gestaltLibStrings.`arrow-circle-down`
+  - gestaltLib.gestaltLibStrings.`arrow-circle-forward`
+  - gestaltLib.gestaltLibStrings.`arrow-down`
+  - gestaltLib.gestaltLibStrings.`arrow-forward`
+  - gestaltLib.gestaltLibStrings.`arrow-up`
+  - gestaltLib.gestaltLibStrings.`arrow-up-right`
+  - gestaltLib.gestaltLibStrings.bell
+  - gestaltLib.gestaltLibStrings.camera
+  - gestaltLib.gestaltLibStrings.cancel
+  - gestaltLib.gestaltLibStrings.check
+  - gestaltLib.gestaltLibStrings.`check-circle`
+  - gestaltLib.gestaltLibStrings.`circle-outline`
+  - gestaltLib.gestaltLibStrings.clear
+  - gestaltLib.gestaltLibStrings.clock
+  - gestaltLib.gestaltLibStrings.cog
+  - gestaltLib.gestaltLibStrings.compass
+  - gestaltLib.gestaltLibStrings.dash
+  - gestaltLib.gestaltLibStrings.edit
+  - gestaltLib.gestaltLibStrings.ellipsis
+  - gestaltLib.gestaltLibStrings.`ellipsis-circle-outline`
+  - gestaltLib.gestaltLibStrings.eye
+  - gestaltLib.gestaltLibStrings.facebook
+  - gestaltLib.gestaltLibStrings.`face-happy`
+  - gestaltLib.gestaltLibStrings.`face-sad`
+  - gestaltLib.gestaltLibStrings.`face-smiley`
+  - gestaltLib.gestaltLibStrings.filter
+  - gestaltLib.gestaltLibStrings.flag
+  - gestaltLib.gestaltLibStrings.flashlight
+  - gestaltLib.gestaltLibStrings.gif
+  - gestaltLib.gestaltLibStrings.globe
+  - gestaltLib.gestaltLibStrings.`globe-checked`
+  - gestaltLib.gestaltLibStrings.`graph-bar`
+  - gestaltLib.gestaltLibStrings.handle
+  - gestaltLib.gestaltLibStrings.`hand-pointing`
+  - gestaltLib.gestaltLibStrings.heart
+  - gestaltLib.gestaltLibStrings.`heart-broken`
+  - gestaltLib.gestaltLibStrings.knoop
+  - gestaltLib.gestaltLibStrings.lightbulb
+  - gestaltLib.gestaltLibStrings.link
+  - gestaltLib.gestaltLibStrings.location
+  - gestaltLib.gestaltLibStrings.lock
+  - gestaltLib.gestaltLibStrings.maximize
+  - gestaltLib.gestaltLibStrings.menu
+  - gestaltLib.gestaltLibStrings.minimize
+  - gestaltLib.gestaltLibStrings.move
+  - gestaltLib.gestaltLibStrings.mute
+  - gestaltLib.gestaltLibStrings.pause
+  - gestaltLib.gestaltLibStrings.people
+  - gestaltLib.gestaltLibStrings.person
+  - gestaltLib.gestaltLibStrings.`person-add`
+  - gestaltLib.gestaltLibStrings.pin
+  - gestaltLib.gestaltLibStrings.`pin-hide`
+  - gestaltLib.gestaltLibStrings.pinterest
+  - gestaltLib.gestaltLibStrings.play
+  - gestaltLib.gestaltLibStrings.`question-mark`
+  - gestaltLib.gestaltLibStrings.remove
+  - gestaltLib.gestaltLibStrings.report
+  - gestaltLib.gestaltLibStrings.search
+  - gestaltLib.gestaltLibStrings.`shopping-bag`
+  - gestaltLib.gestaltLibStrings.smiley
+  - gestaltLib.gestaltLibStrings.`smiley-outline`
+  - gestaltLib.gestaltLibStrings.send
+  - gestaltLib.gestaltLibStrings.share
+  - gestaltLib.gestaltLibStrings.sound
+  - gestaltLib.gestaltLibStrings.speech
+  - gestaltLib.gestaltLibStrings.`speech-ellipsis`
+  - gestaltLib.gestaltLibStrings.tag
+  - gestaltLib.gestaltLibStrings.terms
+  - gestaltLib.gestaltLibStrings.`text-align-left`
+  - gestaltLib.gestaltLibStrings.`text-align-center`
+  - gestaltLib.gestaltLibStrings.`text-align-right`
+  - gestaltLib.gestaltLibStrings.twitter
+  - gestaltLib.gestaltLibStrings.`view-type-default`
+  - gestaltLib.gestaltLibStrings.`view-type-dense`
+  - gestaltLib.gestaltLibStrings.`view-type-list`
+*/
 trait Icons extends js.Object
 

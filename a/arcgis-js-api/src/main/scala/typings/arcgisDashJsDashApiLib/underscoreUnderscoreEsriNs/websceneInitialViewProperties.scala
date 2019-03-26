@@ -37,3 +37,9 @@ trait websceneInitialViewProperties
   var viewpoint: Viewpoint = js.native
 }
 
+@JSGlobal("__esri.websceneInitialViewProperties")
+@js.native
+class websceneInitialViewPropertiesCls () extends websceneInitialViewProperties {
+  def this(properties: websceneInitialViewPropertiesProperties) = this()
+}
+

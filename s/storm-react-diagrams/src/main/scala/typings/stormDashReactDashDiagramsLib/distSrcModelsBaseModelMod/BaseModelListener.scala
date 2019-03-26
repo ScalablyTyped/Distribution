@@ -12,7 +12,7 @@ trait BaseModelListener
       /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[
         BaseModel[
           stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseListener[_]], 
-          BaseModelListener
+          this.type
         ]
       ], 
       scala.Unit
@@ -23,7 +23,7 @@ trait BaseModelListener
       /* event */ (stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[
         BaseModel[
           stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseListener[_]], 
-          BaseModelListener
+          this.type
         ]
       ]) with stormDashReactDashDiagramsLib.Anon_IsSelected, 
       scala.Unit

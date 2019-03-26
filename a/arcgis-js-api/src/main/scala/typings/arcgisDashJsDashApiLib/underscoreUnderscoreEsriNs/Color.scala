@@ -86,6 +86,14 @@ trait Color extends js.Object {
   def toRgba(): js.Array[scala.Double] = js.native
 }
 
+@JSGlobal("__esri.Color")
+@js.native
+class ColorCls protected () extends Color {
+  def this(color: java.lang.String) = this()
+  def this(color: js.Any) = this()
+  def this(color: js.Array[scala.Double]) = this()
+}
+
 /**
   * This object contains helper methods for generating data-driven visualizations with continuous color or class breaks based on a field value or expression from features in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html). The methods in this module generate renderer or visual variable objects that may be applied directly to a supported layer. The renderers specify how features should be visualized based on data values and colors optimized based on the indicated basemap.
   *

@@ -5,5 +5,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - auth0Lib.auth0LibStrings.ad
+  - auth0Lib.auth0LibStrings.adfs
+  - auth0Lib.auth0LibStrings.amazon
+  - auth0Lib.auth0LibStrings.dropbox
+  - auth0Lib.auth0LibStrings.bitbucket
+  - auth0Lib.auth0LibStrings.aol
+  - auth0Lib.auth0LibStrings.`auth0-adldap`
+  - auth0Lib.auth0LibStrings.`auth0-oidc`
+  - auth0Lib.auth0LibStrings.auth0
+  - auth0Lib.auth0LibStrings.baidu
+  - auth0Lib.auth0LibStrings.bitly
+  - auth0Lib.auth0LibStrings.box
+  - auth0Lib.auth0LibStrings.custom
+  - auth0Lib.auth0LibStrings.daccount
+  - auth0Lib.auth0LibStrings.dwolla
+  - auth0Lib.auth0LibStrings.email
+  - auth0Lib.auth0LibStrings.`evernote-sandbox`
+  - auth0Lib.auth0LibStrings.evernote
+  - auth0Lib.auth0LibStrings.exact
+  - auth0Lib.auth0LibStrings.facebook
+  - auth0Lib.auth0LibStrings.fitbit
+  - auth0Lib.auth0LibStrings.flickr
+  - auth0Lib.auth0LibStrings.github
+  - auth0Lib.auth0LibStrings.`google-apps`
+  - auth0Lib.auth0LibStrings.`google-oauth2`
+  - auth0Lib.auth0LibStrings.guardian
+  - auth0Lib.auth0LibStrings.instagram
+  - auth0Lib.auth0LibStrings.ip
+  - auth0Lib.auth0LibStrings.linkedin
+  - auth0Lib.auth0LibStrings.miicard
+  - auth0Lib.auth0LibStrings.oauth1
+  - auth0Lib.auth0LibStrings.oauth2
+  - auth0Lib.auth0LibStrings.office365
+  - auth0Lib.auth0LibStrings.paypal
+  - auth0Lib.auth0LibStrings.`paypal-sandbox`
+  - auth0Lib.auth0LibStrings.pingfederate
+  - auth0Lib.auth0LibStrings.planningcenter
+  - auth0Lib.auth0LibStrings.renren
+  - auth0Lib.auth0LibStrings.`salesforce-community`
+  - auth0Lib.auth0LibStrings.`salesforce-sandbox`
+  - auth0Lib.auth0LibStrings.salesforce
+  - auth0Lib.auth0LibStrings.samlp
+  - auth0Lib.auth0LibStrings.sharepoint
+  - auth0Lib.auth0LibStrings.shopify
+  - auth0Lib.auth0LibStrings.sms
+  - auth0Lib.auth0LibStrings.soundcloud
+  - auth0Lib.auth0LibStrings.`thecity-sandbox`
+  - auth0Lib.auth0LibStrings.thecity
+  - auth0Lib.auth0LibStrings.thirtysevensignals
+  - auth0Lib.auth0LibStrings.twitter
+  - auth0Lib.auth0LibStrings.untappd
+  - auth0Lib.auth0LibStrings.vkontakte
+  - auth0Lib.auth0LibStrings.waad
+  - auth0Lib.auth0LibStrings.weibo
+  - auth0Lib.auth0LibStrings.windowslive
+  - auth0Lib.auth0LibStrings.wordpress
+  - auth0Lib.auth0LibStrings.yahoo
+  - auth0Lib.auth0LibStrings.yammer
+  - auth0Lib.auth0LibStrings.yandex
+*/
 trait Strategy extends js.Object
 

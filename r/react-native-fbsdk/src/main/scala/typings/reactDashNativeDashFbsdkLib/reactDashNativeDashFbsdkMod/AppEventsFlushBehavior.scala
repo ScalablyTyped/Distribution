@@ -5,5 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkLibStrings.auto
+  - reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkLibStrings.`explicitly-only`
+*/
 trait AppEventsFlushBehavior extends js.Object
 

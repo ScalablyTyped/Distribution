@@ -100,7 +100,10 @@ trait ojTreemap[K, D]
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double], 
     _
   ]) | scala.Null = js.native
-  var onIsolatedNodeChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onIsolatedNodeChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onLayoutChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
       atOracleOraclejetLib.atOracleOraclejetLibStrings.sliceAndDiceHorizontal | atOracleOraclejetLib.atOracleOraclejetLibStrings.sliceAndDiceVertical | atOracleOraclejetLib.atOracleOraclejetLibStrings.squarified
@@ -123,7 +126,10 @@ trait ojTreemap[K, D]
   ]) | scala.Null = js.native
   var onOjBeforeDrill: (js.Function1[/* event */ atOracleOraclejetLib.ojtreemapMod.ojTreemapNs.ojBeforeDrill, _]) | scala.Null = js.native
   var onOjDrill: (js.Function1[/* event */ atOracleOraclejetLib.ojtreemapMod.ojTreemapNs.ojDrill, _]) | scala.Null = js.native
-  var onRootNodeChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onRootNodeChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onSelectionChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[_]], 
     _
@@ -570,7 +576,7 @@ trait ojTreemap[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.isolatedNodeChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -579,7 +585,7 @@ trait ojTreemap[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.isolatedNodeChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -665,7 +671,7 @@ trait ojTreemap[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rootNodeChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -674,7 +680,7 @@ trait ojTreemap[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rootNodeChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -769,7 +775,7 @@ trait ojTreemap[K, D]
   @JSName("getProperty")
   def getProperty_hoverBehaviorDelay(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.hoverBehaviorDelay): scala.Double = js.native
   @JSName("getProperty")
-  def getProperty_isolatedNode(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.isolatedNode): js.Any = js.native
+  def getProperty_isolatedNode(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.isolatedNode): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_layout(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.layout): atOracleOraclejetLib.atOracleOraclejetLibStrings.sliceAndDiceHorizontal | atOracleOraclejetLib.atOracleOraclejetLibStrings.sliceAndDiceVertical | atOracleOraclejetLib.atOracleOraclejetLibStrings.squarified = js.native
   @JSName("getProperty")
@@ -779,7 +785,7 @@ trait ojTreemap[K, D]
   @JSName("getProperty")
   def getProperty_nodeSeparators(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.nodeSeparators): atOracleOraclejetLib.atOracleOraclejetLibStrings.bevels | atOracleOraclejetLib.atOracleOraclejetLibStrings.gaps = js.native
   @JSName("getProperty")
-  def getProperty_rootNode(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rootNode): js.Any = js.native
+  def getProperty_rootNode(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rootNode): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_selection(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.selection): js.Array[_] = js.native
   @JSName("getProperty")

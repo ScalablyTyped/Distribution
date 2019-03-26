@@ -13,7 +13,7 @@ object javaactionsNs extends js.Object {
     * In version 6.7.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IBasicParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined `type`, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IBasicParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined `type` */ @js.native
   class BasicParameterType protected () extends ParameterType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     @JSName("containerAsJavaActionParameter")
@@ -26,7 +26,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IBooleanType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IBooleanType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class BooleanType protected () extends PrimitiveType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -36,7 +36,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IConcreteEntityType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IConcreteEntityType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName */ @js.native
   class ConcreteEntityType protected () extends EntityType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var entity: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IEntity = js.native
@@ -48,7 +48,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IDateTimeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IDateTimeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class DateTimeType protected () extends PrimitiveType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -58,7 +58,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IDecimalType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IDecimalType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class DecimalType protected () extends PrimitiveType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -68,7 +68,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IEntityType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IEntityType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   abstract class EntityType protected () extends Type {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     @JSName("containerAsBasicParameterType")
@@ -86,7 +86,7 @@ object javaactionsNs extends js.Object {
     * In version 6.7.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IEntityTypeParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined typeParameter, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IEntityTypeParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined typeParameter */ @js.native
   class EntityTypeParameterType protected () extends ParameterType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     @JSName("containerAsJavaActionParameter")
@@ -99,7 +99,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IEnumerationType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IEnumerationType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName */ @js.native
   class EnumerationType protected () extends Type {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     @JSName("containerAsBasicParameterType")
@@ -116,7 +116,7 @@ object javaactionsNs extends js.Object {
     * In version 7.21.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IExportMappingJavaActionParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IExportMappingJavaActionParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class ExportMappingJavaActionParameterType protected ()
     extends mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ParameterType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -129,7 +129,7 @@ object javaactionsNs extends js.Object {
     * In version 7.2.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IExportMappingParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IExportMappingParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class ExportMappingParameterType protected () extends ParameterType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     @JSName("containerAsJavaActionParameter")
@@ -141,7 +141,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IFloatType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IFloatType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class FloatType protected () extends PrimitiveType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -440,7 +440,7 @@ object javaactionsNs extends js.Object {
     * In version 7.21.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IImportMappingJavaActionParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IImportMappingJavaActionParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class ImportMappingJavaActionParameterType protected ()
     extends mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ParameterType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -453,7 +453,7 @@ object javaactionsNs extends js.Object {
     * In version 7.2.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IImportMappingParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IImportMappingParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class ImportMappingParameterType protected () extends ParameterType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     @JSName("containerAsJavaActionParameter")
@@ -465,7 +465,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IIntegerType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IIntegerType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class IntegerType protected () extends PrimitiveType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -474,7 +474,7 @@ object javaactionsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/java-actions relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaAction because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined typeParameters, parameters, returnType, javaReturnType, microflowActionInfo, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaAction because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined typeParameters, parameters, returnType, javaReturnType, microflowActionInfo */ @js.native
   class JavaAction protected ()
     extends mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -506,7 +506,7 @@ object javaactionsNs extends js.Object {
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaActionParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined `type`, javaType, parameterType, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaActionParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined `type`, javaType, parameterType */ @js.native
   class JavaActionParameter protected ()
     extends mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeActionParameter {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -537,7 +537,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IListType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined parameter, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IListType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined parameter */ @js.native
   class ListType protected () extends Type {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     @JSName("containerAsBasicParameterType")
@@ -555,7 +555,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IMicroflowActionInfo because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsJavaAction, caption, category, icon, iconQualifiedName, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IMicroflowActionInfo because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsJavaAction, caption, category, icon, iconQualifiedName */ @js.native
   class MicroflowActionInfo protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -572,7 +572,7 @@ object javaactionsNs extends js.Object {
     * In version 7.21.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IMicroflowJavaActionParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IMicroflowJavaActionParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class MicroflowJavaActionParameterType protected ()
     extends mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ParameterType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -585,7 +585,7 @@ object javaactionsNs extends js.Object {
     * In version 6.9.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IMicroflowParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IMicroflowParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class MicroflowParameterType protected () extends ParameterType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     @JSName("containerAsJavaActionParameter")
@@ -597,7 +597,7 @@ object javaactionsNs extends js.Object {
     * In version 6.7.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsJavaActionParameter, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IParameterType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsJavaActionParameter */ @js.native
   abstract class ParameterType protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -611,7 +611,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IParameterizedEntityType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined typeParameter, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IParameterizedEntityType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined typeParameter */ @js.native
   class ParameterizedEntityType protected () extends EntityType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var typeParameter: ITypeParameter | TypeParameter = js.native
@@ -622,7 +622,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IPrimitiveType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IPrimitiveType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   abstract class PrimitiveType protected () extends Type {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     @JSName("containerAsBasicParameterType")
@@ -638,7 +638,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IStringType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IStringType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class StringType protected () extends PrimitiveType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -648,7 +648,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, containerAsListType, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsBasicParameterType, containerAsJavaAction, containerAsJavaActionParameter, containerAsListType */ @js.native
   abstract class Type protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -665,7 +665,7 @@ object javaactionsNs extends js.Object {
     * In version 6.6.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ITypeParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsJavaAction, name, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ITypeParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsJavaAction, name */ @js.native
   class TypeParameter protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()

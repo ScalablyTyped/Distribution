@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("cassandra-driver", "tracker")
 @js.native
 object trackerNs extends js.Object {
+  @js.native
+  class RequestLoggerCls protected () extends RequestLogger {
+    def this(options: RequestLoggerOptions) = this()
+  }
+  
   trait RequestLoggerOptions extends js.Object {
     var logErroredRequests: js.UndefOr[scala.Boolean] = js.undefined
     var logNormalRequests: js.UndefOr[scala.Boolean] = js.undefined

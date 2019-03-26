@@ -65,11 +65,6 @@ trait DropTargetHookSpec[DragObject, DropResult, CollectedProps] extends js.Obje
     * The drop target optinos
     */
   var options: js.UndefOr[js.Any] = js.undefined
-  /**
-    * The ref object to associated with this dragged itom. If this is not specified it will be
-    * returned in the `ref` field of the result object.
-    */
-  var ref: js.UndefOr[reactLib.reactMod.ReactNs.RefObject[_]] = js.undefined
 }
 
 object DropTargetHookSpec {
@@ -80,8 +75,7 @@ object DropTargetHookSpec {
     collect: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor => CollectedProps = null,
     drop: (/* item */ DragObject, /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor) => js.UndefOr[DropResult] = null,
     hover: (/* item */ DragObject, /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DropTargetMonitor) => scala.Unit = null,
-    options: js.Any = null,
-    ref: reactLib.reactMod.ReactNs.RefObject[_] = null
+    options: js.Any = null
   ): DropTargetHookSpec[DragObject, DropResult, CollectedProps] = {
     val __obj = js.Dynamic.literal(accept = accept.asInstanceOf[js.Any])
     if (canDrop != null) __obj.updateDynamic("canDrop")(js.Any.fromFunction2(canDrop))
@@ -89,7 +83,6 @@ object DropTargetHookSpec {
     if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction2(drop))
     if (hover != null) __obj.updateDynamic("hover")(js.Any.fromFunction2(hover))
     if (options != null) __obj.updateDynamic("options")(options)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
     __obj.asInstanceOf[DropTargetHookSpec[DragObject, DropResult, CollectedProps]]
   }
 }

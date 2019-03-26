@@ -27,6 +27,10 @@ trait HTMLAllCollection
 
 @JSGlobal("HTMLAllCollection")
 @js.native
+class HTMLAllCollectionCls () extends HTMLAllCollection
+
+@JSGlobal("HTMLAllCollection")
+@js.native
 object HTMLAllCollection
   extends org.scalablytyped.runtime.Instantiable0[HTMLAllCollection]
 

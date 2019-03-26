@@ -63,3 +63,9 @@ trait AxeBuilder extends js.Object {
   def withTags(tags: js.Array[java.lang.String]): this.type = js.native
 }
 
+@JSImport("axe-webdriverjs", "AxeBuilder")
+@js.native
+class AxeBuilderCls protected () extends AxeBuilder {
+  def this(driver: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver) = this()
+}
+

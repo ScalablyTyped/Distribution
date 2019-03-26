@@ -255,3 +255,9 @@ trait RouteParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.RouteParameters")
+@js.native
+class RouteParametersCls () extends RouteParameters {
+  def this(properties: RouteParametersProperties) = this()
+}
+

@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Boolean extends js.Object
 
+@JSGlobal("Boolean")
+@js.native
+class BooleanCls () extends Boolean {
+  def this(value: js.Any) = this()
+}
+
 object Boolean {
   @scala.inline
   def apply(valueOf: () => scala.Boolean): Boolean = {

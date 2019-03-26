@@ -48,6 +48,12 @@ trait MutationObserver extends js.Object {
 
 @JSGlobal("MutationObserver")
 @js.native
+class MutationObserverCls protected () extends MutationObserver {
+  def this(callback: MutationCallback) = this()
+}
+
+@JSGlobal("MutationObserver")
+@js.native
 object MutationObserver
   extends org.scalablytyped.runtime.Instantiable1[/* callback */ MutationCallback, MutationObserver]
 

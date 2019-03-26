@@ -13,6 +13,13 @@ trait MediaQueryListEvent extends Event {
 
 @JSGlobal("MediaQueryListEvent")
 @js.native
+class MediaQueryListEventCls protected () extends MediaQueryListEvent {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: MediaQueryListEventInit) = this()
+}
+
+@JSGlobal("MediaQueryListEvent")
+@js.native
 object MediaQueryListEvent
   extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, MediaQueryListEvent]
      with org.scalablytyped.runtime.Instantiable2[

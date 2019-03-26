@@ -20,3 +20,12 @@ trait VariadicForeignFunction extends js.Object {
   def apply(args: js.Any*): ForeignFunction = js.native
 }
 
+@JSImport("ffi-napi", "VariadicForeignFunction")
+@js.native
+class VariadicForeignFunctionCls protected () extends VariadicForeignFunction {
+  def this(ptr: ffiDashNapiLib.Buffer, ret: java.lang.String, fixedArgs: js.Array[_]) = this()
+  def this(ptr: ffiDashNapiLib.Buffer, ret: refDashNapiLib.refDashNapiMod.Type, fixedArgs: js.Array[_]) = this()
+  def this(ptr: ffiDashNapiLib.Buffer, ret: java.lang.String, fixedArgs: js.Array[_], abi: scala.Double) = this()
+  def this(ptr: ffiDashNapiLib.Buffer, ret: refDashNapiLib.refDashNapiMod.Type, fixedArgs: js.Array[_], abi: scala.Double) = this()
+}
+

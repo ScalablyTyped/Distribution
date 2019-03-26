@@ -45,3 +45,9 @@ trait PixelBlock extends Accessor {
   var width: scala.Double = js.native
 }
 
+@JSGlobal("__esri.PixelBlock")
+@js.native
+class PixelBlockCls () extends PixelBlock {
+  def this(properties: PixelBlockProperties) = this()
+}
+

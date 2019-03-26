@@ -51,3 +51,14 @@ trait Function extends js.Object {
   def call(`this`: js.Function, thisArg: js.Any, argArray: js.Any*): js.Any = js.native
 }
 
+@JSGlobal("Function")
+@js.native
+class FunctionCls protected ()
+  extends js.Function {
+  /**
+    * Creates a new function.
+    * @param args A list of arguments the function accepts.
+    */
+  def this(args: java.lang.String*) = this()
+}
+

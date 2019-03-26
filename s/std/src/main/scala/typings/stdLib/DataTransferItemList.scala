@@ -34,6 +34,10 @@ trait DataTransferItemList
 
 @JSGlobal("DataTransferItemList")
 @js.native
+class DataTransferItemListCls () extends DataTransferItemList
+
+@JSGlobal("DataTransferItemList")
+@js.native
 object DataTransferItemList
   extends org.scalablytyped.runtime.Instantiable0[DataTransferItemList]
 

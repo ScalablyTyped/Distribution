@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- surveyDashKnockoutLib.surveyDashKnockoutMod.IMultipleTextData because var conflicts: isPage, isReadOnly, isVisible, name, parent. Inlined getSurvey, getTextProcessor, getAllValues, getMultipleTextValue, setMultipleTextValue, getIsRequiredText */ @JSImport("survey-knockout", "QuestionMultipleTextModel")
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IMultipleTextData because var conflicts: isPage, isReadOnly, isVisible, name, parent. Inlined getSurvey, getTextProcessor, getMultipleTextValue, setMultipleTextValue, getIsRequiredText */ @JSImport("survey-knockout", "QuestionMultipleTextModel")
 @js.native
 class QuestionMultipleTextModel protected () extends Question {
   def this(name: java.lang.String) = this()

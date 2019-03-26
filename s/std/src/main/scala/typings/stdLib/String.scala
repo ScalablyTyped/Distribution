@@ -293,3 +293,9 @@ trait String
   def trim(): java.lang.String = js.native
 }
 
+@JSGlobal("String")
+@js.native
+class StringCls () extends String {
+  def this(value: js.Any) = this()
+}
+

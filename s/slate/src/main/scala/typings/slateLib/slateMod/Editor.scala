@@ -19,6 +19,8 @@ class Editor protected () extends Controller {
     */
   def flush(): Editor = js.native
   def onChange(change: slateLib.Anon_Operations): scala.Unit = js.native
+  def setDecorations(decorations: immutableLib.immutableMod.List[Decoration]): Editor = js.native
+  def setDecorations(decorations: js.Array[Decoration]): Editor = js.native
   def setReadOnly(readOnly: scala.Boolean): Editor = js.native
   /**
     * Set the editor's value state.

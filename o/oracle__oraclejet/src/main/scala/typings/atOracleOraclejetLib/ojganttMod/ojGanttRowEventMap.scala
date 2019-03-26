@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ojGanttRowEventMap
   extends stdLib.HTMLElementEventMap {
   var labelChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String]
-  var labelStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var labelStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
 }
 
 object ojGanttRowEventMap {
@@ -54,7 +54,7 @@ object ojGanttRowEventMap {
     keypress: stdLib.KeyboardEvent,
     keyup: stdLib.KeyboardEvent,
     labelChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String],
-    labelStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    labelStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     load: stdLib.Event,
     loadeddata: stdLib.Event,
     loadedmetadata: stdLib.Event,

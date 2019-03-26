@@ -4853,21 +4853,68 @@ object ApiGatewayV2Ns extends js.Object {
   val TypesNs: this.type = js.native
   type Arn = java.lang.String
   type AuthorizationScopes = js.Array[StringWithLengthBetween1And64]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.AWS_IAM
+    - awsDashSdkLib.awsDashSdkLibStrings.CUSTOM
+    - java.lang.String
+  */
   type AuthorizationType = _AuthorizationType | java.lang.String
   type AuthorizerType = awsDashSdkLib.awsDashSdkLibStrings.REQUEST | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERNET
+    - awsDashSdkLib.awsDashSdkLibStrings.VPC_LINK
+    - java.lang.String
+  */
   type ConnectionType = _ConnectionType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CONVERT_TO_BINARY
+    - awsDashSdkLib.awsDashSdkLibStrings.CONVERT_TO_TEXT
+    - java.lang.String
+  */
   type ContentHandlingStrategy = _ContentHandlingStrategy | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.DEPLOYED
+    - java.lang.String
+  */
   type DeploymentStatus = _DeploymentStatus | java.lang.String
   type DomainNameConfigurations = js.Array[DomainNameConfiguration]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.REGIONAL
+    - awsDashSdkLib.awsDashSdkLibStrings.EDGE
+    - java.lang.String
+  */
   type EndpointType = _EndpointType | java.lang.String
   type Id = java.lang.String
   type IdentitySourceList = js.Array[__string]
   type IntegerWithLengthBetween0And3600 = scala.Double
   type IntegerWithLengthBetween50And29000 = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AWS
+    - awsDashSdkLib.awsDashSdkLibStrings.HTTP
+    - awsDashSdkLib.awsDashSdkLibStrings.MOCK
+    - awsDashSdkLib.awsDashSdkLibStrings.HTTP_PROXY
+    - awsDashSdkLib.awsDashSdkLibStrings.AWS_PROXY
+    - java.lang.String
+  */
   type IntegrationType = _IntegrationType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ERROR
+    - awsDashSdkLib.awsDashSdkLibStrings.INFO
+    - awsDashSdkLib.awsDashSdkLibStrings.`false`
+    - java.lang.String
+  */
   type LoggingLevel = _LoggingLevel | java.lang.String
   type NextToken = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.WHEN_NO_MATCH
+    - awsDashSdkLib.awsDashSdkLibStrings.NEVER
+    - awsDashSdkLib.awsDashSdkLibStrings.WHEN_NO_TEMPLATES
+    - java.lang.String
+  */
   type PassthroughBehavior = _PassthroughBehavior | java.lang.String
   type ProtocolType = awsDashSdkLib.awsDashSdkLibStrings.WEBSOCKET | java.lang.String
   type ProviderArnList = js.Array[Arn]
@@ -4899,6 +4946,11 @@ object ApiGatewayV2Ns extends js.Object {
   type __listOf__string = js.Array[__string]
   type __string = java.lang.String
   type __timestampIso8601 = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2018-11-29`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -35,3 +35,9 @@ trait BasemapGalleryItem extends Accessor {
   var view: MapView | SceneView = js.native
 }
 
+@JSGlobal("__esri.BasemapGalleryItem")
+@js.native
+class BasemapGalleryItemCls () extends BasemapGalleryItem {
+  def this(properties: BasemapGalleryItemProperties) = this()
+}
+

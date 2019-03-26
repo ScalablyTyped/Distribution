@@ -11,6 +11,10 @@ object OptionNs extends js.Object {
   @js.native
   sealed trait ActivityType extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - backlogDashJsLib.backlogDashJsLibStrings.asc
+    - backlogDashJsLib.backlogDashJsLibStrings.desc
+  */
   trait Order extends js.Object
   
   @js.native
@@ -255,6 +259,27 @@ object OptionNs extends js.Object {
       var versionId: js.UndefOr[js.Array[scala.Double]] = js.undefined
     }
     
+    /* Rewritten from type alias, can be one of: 
+      - backlogDashJsLib.backlogDashJsLibStrings.issueType
+      - backlogDashJsLib.backlogDashJsLibStrings.category
+      - backlogDashJsLib.backlogDashJsLibStrings.version
+      - backlogDashJsLib.backlogDashJsLibStrings.milestone
+      - backlogDashJsLib.backlogDashJsLibStrings.summary
+      - backlogDashJsLib.backlogDashJsLibStrings.status
+      - backlogDashJsLib.backlogDashJsLibStrings.priority
+      - backlogDashJsLib.backlogDashJsLibStrings.attachment
+      - backlogDashJsLib.backlogDashJsLibStrings.sharedFile
+      - backlogDashJsLib.backlogDashJsLibStrings.created
+      - backlogDashJsLib.backlogDashJsLibStrings.createdUser
+      - backlogDashJsLib.backlogDashJsLibStrings.updated
+      - backlogDashJsLib.backlogDashJsLibStrings.updatedUser
+      - backlogDashJsLib.backlogDashJsLibStrings.assignee
+      - backlogDashJsLib.backlogDashJsLibStrings.startDate
+      - backlogDashJsLib.backlogDashJsLibStrings.dueDate
+      - backlogDashJsLib.backlogDashJsLibStrings.estimatedHours
+      - backlogDashJsLib.backlogDashJsLibStrings.actualHours
+      - backlogDashJsLib.backlogDashJsLibStrings.childIssue
+    */
     trait SortKey extends js.Object
     
     @js.native
@@ -348,6 +373,18 @@ object OptionNs extends js.Object {
       var order: js.UndefOr[backlogDashJsLib.backlogDashJsMod.OptionNs.Order] = js.undefined
     }
     
+    /* Rewritten from type alias, can be one of: 
+      - backlogDashJsLib.backlogDashJsLibStrings.`#e30000`
+      - backlogDashJsLib.backlogDashJsLibStrings.`#990000`
+      - backlogDashJsLib.backlogDashJsLibStrings.`#934981`
+      - backlogDashJsLib.backlogDashJsLibStrings.`#814fbc`
+      - backlogDashJsLib.backlogDashJsLibStrings.`#2779ca`
+      - backlogDashJsLib.backlogDashJsLibStrings.`#007e9a`
+      - backlogDashJsLib.backlogDashJsLibStrings.`#7ea800`
+      - backlogDashJsLib.backlogDashJsLibStrings.`#ff9200`
+      - backlogDashJsLib.backlogDashJsLibStrings.`#ff3265`
+      - backlogDashJsLib.backlogDashJsLibStrings.`#666665`
+    */
     trait IssueTypeColor extends js.Object
     
     trait PatchCategoriesParams extends js.Object {
@@ -495,6 +532,10 @@ object OptionNs extends js.Object {
       var name: js.UndefOr[java.lang.String] = js.undefined
     }
     
+    /* Rewritten from type alias, can be one of: 
+      - backlogDashJsLib.backlogDashJsLibStrings.backlog
+      - backlogDashJsLib.backlogDashJsLibStrings.markdown
+    */
     trait TextFormattingRule extends js.Object
     
     @js.native

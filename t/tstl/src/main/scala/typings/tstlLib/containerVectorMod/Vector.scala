@@ -47,6 +47,10 @@ class Vector[T] ()
     */
   var data_ : js.Any = js.native
   /**
+    * @inheritDoc
+    */
+  def assign(n: scala.Double, `val`: T): scala.Unit = js.native
+  /**
     * Access data.
     *
     * @return An array capsuled by this {@link Vector}.

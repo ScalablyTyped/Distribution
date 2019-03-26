@@ -18,7 +18,10 @@ trait ojTabBar[K, D]
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
-  var onCurrentItemChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onCurrentItemChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onDataChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[(atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D]) | scala.Null], 
     _
@@ -66,7 +69,10 @@ trait ojTabBar[K, D]
     ], 
     _
   ]) | scala.Null = js.native
-  var onSelectionChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onSelectionChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onTruncationChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
       atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.progressive
@@ -208,7 +214,7 @@ trait ojTabBar[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.currentItemChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -217,7 +223,7 @@ trait ojTabBar[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.currentItemChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -436,7 +442,7 @@ trait ojTabBar[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.selectionChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -445,7 +451,7 @@ trait ojTabBar[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.selectionChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -454,7 +460,7 @@ trait ojTabBar[K, D]
   @JSName("getProperty")
   def getProperty_as(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.as): java.lang.String = js.native
   @JSName("getProperty")
-  def getProperty_currentItem(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.currentItem): js.Any = js.native
+  def getProperty_currentItem(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.currentItem): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_data(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.data): (atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D]) | scala.Null = js.native
   @JSName("getProperty")
@@ -468,7 +474,7 @@ trait ojTabBar[K, D]
   @JSName("getProperty")
   def getProperty_reorderable(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.reorderable): atOracleOraclejetLib.atOracleOraclejetLibStrings.enabled | atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled = js.native
   @JSName("getProperty")
-  def getProperty_selection(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.selection): js.Any = js.native
+  def getProperty_selection(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.selection): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_truncation(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.truncation): atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.progressive = js.native
   def setProperties(properties: ojTabBarSettablePropertiesLenient[K, D]): scala.Unit = js.native

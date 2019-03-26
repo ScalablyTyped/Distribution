@@ -15,7 +15,7 @@ trait NotificationChange extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHANGEDDELETED[keyof chrome-apps.Anon_CHANGEDDELETED] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.CHANGED | chromeDashAppsLib.chromeDashAppsLibStrings.DELETED
     ]
   ]
   /** The path of the changed entry. */
@@ -30,7 +30,7 @@ object NotificationChange {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHANGEDDELETED[keyof chrome-apps.Anon_CHANGEDDELETED] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.CHANGED | chromeDashAppsLib.chromeDashAppsLibStrings.DELETED
       ]
     ],
     entryPath: java.lang.String

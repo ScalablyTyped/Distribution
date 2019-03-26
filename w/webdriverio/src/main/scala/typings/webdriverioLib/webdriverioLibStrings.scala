@@ -10,6 +10,12 @@ object webdriverioLibStrings {
   sealed trait BrowserAsync extends js.Object
   
   @js.native
+  sealed trait DOLLAR extends js.Object
+  
+  @js.native
+  sealed trait DOLLARDOLLAR extends js.Object
+  
+  @js.native
   sealed trait ElementAsync extends js.Object
   
   @js.native
@@ -20,6 +26,10 @@ object webdriverioLibStrings {
   
   @scala.inline
   def BrowserAsync: BrowserAsync = "BrowserAsync".asInstanceOf[BrowserAsync]
+  @scala.inline
+  def DOLLAR: DOLLAR = "$".asInstanceOf[DOLLAR]
+  @scala.inline
+  def DOLLARDOLLAR: DOLLARDOLLAR = "$$".asInstanceOf[DOLLARDOLLAR]
   @scala.inline
   def ElementAsync: ElementAsync = "ElementAsync".asInstanceOf[ElementAsync]
   @scala.inline

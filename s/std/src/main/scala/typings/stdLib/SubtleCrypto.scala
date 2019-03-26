@@ -438,6 +438,10 @@ trait SubtleCrypto extends js.Object {
 
 @JSGlobal("SubtleCrypto")
 @js.native
+class SubtleCryptoCls () extends SubtleCrypto
+
+@JSGlobal("SubtleCrypto")
+@js.native
 object SubtleCrypto
   extends org.scalablytyped.runtime.Instantiable0[SubtleCrypto]
 

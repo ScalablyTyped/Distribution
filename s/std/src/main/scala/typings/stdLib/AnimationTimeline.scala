@@ -11,6 +11,13 @@ trait AnimationTimeline extends js.Object {
 
 @JSGlobal("AnimationTimeline")
 @js.native
+class AnimationTimelineCls () extends AnimationTimeline {
+  /* CompleteClass */
+  override val currentTime: scala.Double | scala.Null = js.native
+}
+
+@JSGlobal("AnimationTimeline")
+@js.native
 object AnimationTimeline
   extends org.scalablytyped.runtime.Instantiable0[AnimationTimeline]
 

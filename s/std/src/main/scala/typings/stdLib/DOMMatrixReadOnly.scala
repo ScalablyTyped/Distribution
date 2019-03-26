@@ -78,6 +78,13 @@ trait DOMMatrixReadOnly extends js.Object {
 
 @JSGlobal("DOMMatrixReadOnly")
 @js.native
+class DOMMatrixReadOnlyCls () extends DOMMatrixReadOnly {
+  def this(init: java.lang.String) = this()
+  def this(init: js.Array[scala.Double]) = this()
+}
+
+@JSGlobal("DOMMatrixReadOnly")
+@js.native
 object DOMMatrixReadOnly
   extends org.scalablytyped.runtime.Instantiable0[DOMMatrixReadOnly]
      with org.scalablytyped.runtime.Instantiable1[

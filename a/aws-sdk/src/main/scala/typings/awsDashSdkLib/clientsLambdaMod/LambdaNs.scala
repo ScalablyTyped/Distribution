@@ -2203,6 +2203,12 @@ object LambdaNs extends js.Object {
   type EnvironmentVariableName = java.lang.String
   type EnvironmentVariableValue = java.lang.String
   type EventSourceMappingsList = js.Array[EventSourceMappingConfiguration]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.TRIM_HORIZON
+    - awsDashSdkLib.awsDashSdkLibStrings.LATEST
+    - awsDashSdkLib.awsDashSdkLibStrings.AT_TIMESTAMP
+    - java.lang.String
+  */
   type EventSourcePosition = _EventSourcePosition | java.lang.String
   type EventSourceToken = java.lang.String
   type FunctionArn = java.lang.String
@@ -2212,6 +2218,12 @@ object LambdaNs extends js.Object {
   type Handler = java.lang.String
   type HttpStatus = scala.Double
   type Integer = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Event
+    - awsDashSdkLib.awsDashSdkLibStrings.RequestResponse
+    - awsDashSdkLib.awsDashSdkLibStrings.DryRun
+    - java.lang.String
+  */
   type InvocationType = _InvocationType | java.lang.String
   type KMSKeyArn = java.lang.String
   type LayerArn = java.lang.String
@@ -2225,6 +2237,11 @@ object LambdaNs extends js.Object {
   type LayersList = js.Array[LayersListItem]
   type LayersReferenceList = js.Array[Layer]
   type LicenseInfo = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.None
+    - awsDashSdkLib.awsDashSdkLibStrings.Tail
+    - java.lang.String
+  */
   type LogType = _LogType | java.lang.String
   type Long = scala.Double
   type MasterRegion = java.lang.String
@@ -2240,6 +2257,24 @@ object LambdaNs extends js.Object {
   type ReservedConcurrentExecutions = scala.Double
   type ResourceArn = java.lang.String
   type RoleArn = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.nodejs
+    - awsDashSdkLib.awsDashSdkLibStrings.nodejs4DOT3
+    - awsDashSdkLib.awsDashSdkLibStrings.nodejs6DOT10
+    - awsDashSdkLib.awsDashSdkLibStrings.nodejs8DOT10
+    - awsDashSdkLib.awsDashSdkLibStrings.java8
+    - awsDashSdkLib.awsDashSdkLibStrings.python2DOT7
+    - awsDashSdkLib.awsDashSdkLibStrings.python3DOT6
+    - awsDashSdkLib.awsDashSdkLibStrings.python3DOT7
+    - awsDashSdkLib.awsDashSdkLibStrings.dotnetcore1DOT0
+    - awsDashSdkLib.awsDashSdkLibStrings.dotnetcore2DOT0
+    - awsDashSdkLib.awsDashSdkLibStrings.dotnetcore2DOT1
+    - awsDashSdkLib.awsDashSdkLibStrings.`nodejs4DOT3-edge`
+    - awsDashSdkLib.awsDashSdkLibStrings.go1DOTx
+    - awsDashSdkLib.awsDashSdkLibStrings.ruby2DOT5
+    - awsDashSdkLib.awsDashSdkLibStrings.provided
+    - java.lang.String
+  */
   type Runtime = _Runtime | java.lang.String
   type S3Bucket = java.lang.String
   type S3Key = java.lang.String
@@ -2257,6 +2292,11 @@ object LambdaNs extends js.Object {
   type TagValue = java.lang.String
   type Timeout = scala.Double
   type Timestamp = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Active
+    - awsDashSdkLib.awsDashSdkLibStrings.PassThrough
+    - java.lang.String
+  */
   type TracingMode = _TracingMode | java.lang.String
   type UnreservedConcurrentExecutions = scala.Double
   type Version = java.lang.String
@@ -2264,6 +2304,12 @@ object LambdaNs extends js.Object {
   type Weight = scala.Double
   type _Blob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsLambdaMod.Blob | java.lang.String
   type _Date = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2014-11-11`
+    - awsDashSdkLib.awsDashSdkLibStrings.`2015-03-31`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

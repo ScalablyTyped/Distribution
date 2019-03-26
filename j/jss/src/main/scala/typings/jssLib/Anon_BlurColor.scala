@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait Anon_BlurColor extends js.Object {
   var blur: jssLib.cssMod.Length
-  var color: js.Any
+  var color: scala.Nothing
   var x: jssLib.cssMod.Length
   var y: jssLib.cssMod.Length
 }
 
 object Anon_BlurColor {
   @scala.inline
-  def apply(blur: jssLib.cssMod.Length, color: js.Any, x: jssLib.cssMod.Length, y: jssLib.cssMod.Length): Anon_BlurColor = {
+  def apply(blur: jssLib.cssMod.Length, color: scala.Nothing, x: jssLib.cssMod.Length, y: jssLib.cssMod.Length): Anon_BlurColor = {
     val __obj = js.Dynamic.literal(blur = blur.asInstanceOf[js.Any], color = color, x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_BlurColor]

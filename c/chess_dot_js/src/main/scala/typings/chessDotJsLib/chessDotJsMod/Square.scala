@@ -5,5 +5,71 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - chessDotJsLib.chessDotJsLibStrings.a8
+  - chessDotJsLib.chessDotJsLibStrings.b8
+  - chessDotJsLib.chessDotJsLibStrings.c8
+  - chessDotJsLib.chessDotJsLibStrings.d8
+  - chessDotJsLib.chessDotJsLibStrings.e8
+  - chessDotJsLib.chessDotJsLibStrings.f8
+  - chessDotJsLib.chessDotJsLibStrings.g8
+  - chessDotJsLib.chessDotJsLibStrings.h8
+  - chessDotJsLib.chessDotJsLibStrings.a7
+  - chessDotJsLib.chessDotJsLibStrings.b7
+  - chessDotJsLib.chessDotJsLibStrings.c7
+  - chessDotJsLib.chessDotJsLibStrings.d7
+  - chessDotJsLib.chessDotJsLibStrings.e7
+  - chessDotJsLib.chessDotJsLibStrings.f7
+  - chessDotJsLib.chessDotJsLibStrings.g7
+  - chessDotJsLib.chessDotJsLibStrings.h7
+  - chessDotJsLib.chessDotJsLibStrings.a6
+  - chessDotJsLib.chessDotJsLibStrings.b6
+  - chessDotJsLib.chessDotJsLibStrings.c6
+  - chessDotJsLib.chessDotJsLibStrings.d6
+  - chessDotJsLib.chessDotJsLibStrings.e6
+  - chessDotJsLib.chessDotJsLibStrings.f6
+  - chessDotJsLib.chessDotJsLibStrings.g6
+  - chessDotJsLib.chessDotJsLibStrings.h6
+  - chessDotJsLib.chessDotJsLibStrings.a5
+  - chessDotJsLib.chessDotJsLibStrings.b5
+  - chessDotJsLib.chessDotJsLibStrings.c5
+  - chessDotJsLib.chessDotJsLibStrings.d5
+  - chessDotJsLib.chessDotJsLibStrings.e5
+  - chessDotJsLib.chessDotJsLibStrings.f5
+  - chessDotJsLib.chessDotJsLibStrings.g5
+  - chessDotJsLib.chessDotJsLibStrings.h5
+  - chessDotJsLib.chessDotJsLibStrings.a4
+  - chessDotJsLib.chessDotJsLibStrings.b4
+  - chessDotJsLib.chessDotJsLibStrings.c4
+  - chessDotJsLib.chessDotJsLibStrings.d4
+  - chessDotJsLib.chessDotJsLibStrings.e4
+  - chessDotJsLib.chessDotJsLibStrings.f4
+  - chessDotJsLib.chessDotJsLibStrings.g4
+  - chessDotJsLib.chessDotJsLibStrings.h4
+  - chessDotJsLib.chessDotJsLibStrings.a3
+  - chessDotJsLib.chessDotJsLibStrings.b3
+  - chessDotJsLib.chessDotJsLibStrings.c3
+  - chessDotJsLib.chessDotJsLibStrings.d3
+  - chessDotJsLib.chessDotJsLibStrings.e3
+  - chessDotJsLib.chessDotJsLibStrings.f3
+  - chessDotJsLib.chessDotJsLibStrings.g3
+  - chessDotJsLib.chessDotJsLibStrings.h3
+  - chessDotJsLib.chessDotJsLibStrings.a2
+  - chessDotJsLib.chessDotJsLibStrings.b2
+  - chessDotJsLib.chessDotJsLibStrings.c2
+  - chessDotJsLib.chessDotJsLibStrings.d2
+  - chessDotJsLib.chessDotJsLibStrings.e2
+  - chessDotJsLib.chessDotJsLibStrings.f2
+  - chessDotJsLib.chessDotJsLibStrings.g2
+  - chessDotJsLib.chessDotJsLibStrings.h2
+  - chessDotJsLib.chessDotJsLibStrings.a1
+  - chessDotJsLib.chessDotJsLibStrings.b1
+  - chessDotJsLib.chessDotJsLibStrings.c1
+  - chessDotJsLib.chessDotJsLibStrings.d1
+  - chessDotJsLib.chessDotJsLibStrings.e1
+  - chessDotJsLib.chessDotJsLibStrings.f1
+  - chessDotJsLib.chessDotJsLibStrings.g1
+  - chessDotJsLib.chessDotJsLibStrings.h1
+*/
 trait Square extends js.Object
 

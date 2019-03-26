@@ -7,260 +7,260 @@ import scala.scalajs.js.annotation._
 
 object atMaterialDashUiCoreLibComponents {
   @scala.inline
-  def AppBar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.appBarAppBarMod.AppBarProps] = atMaterialDashUiCoreLib.appBarMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.appBarAppBarMod.AppBarProps]]
+  def AppBar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.appBarAppBarMod.AppBarProps] = js.constructorOf[atMaterialDashUiCoreLib.appBarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.appBarAppBarMod.AppBarProps]]
   @scala.inline
-  def Avatar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.avatarAvatarMod.AvatarProps] = atMaterialDashUiCoreLib.avatarMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.avatarAvatarMod.AvatarProps]]
+  def Avatar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.avatarAvatarMod.AvatarProps] = js.constructorOf[atMaterialDashUiCoreLib.avatarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.avatarAvatarMod.AvatarProps]]
   @scala.inline
-  def Backdrop: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = atMaterialDashUiCoreLib.backdropMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]]
+  def Backdrop: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = js.constructorOf[atMaterialDashUiCoreLib.backdropMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]]
   @scala.inline
-  def Badge: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.badgeBadgeMod.BadgeProps] = atMaterialDashUiCoreLib.badgeMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.badgeBadgeMod.BadgeProps]]
+  def Badge: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.badgeBadgeMod.BadgeProps] = js.constructorOf[atMaterialDashUiCoreLib.badgeMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.badgeBadgeMod.BadgeProps]]
   @scala.inline
   def BottomNavigation: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiCoreLib.bottomNavigationBottomNavigationMod.BottomNavigationProps
-  ] = atMaterialDashUiCoreLib.bottomNavigationMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atMaterialDashUiCoreLib.bottomNavigationMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atMaterialDashUiCoreLib.bottomNavigationBottomNavigationMod.BottomNavigationProps]]
   @scala.inline
   def BottomNavigationAction: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiCoreLib.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionProps
-  ] = atMaterialDashUiCoreLib.bottomNavigationActionMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atMaterialDashUiCoreLib.bottomNavigationActionMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atMaterialDashUiCoreLib.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionProps]]
   @scala.inline
-  def Button: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps] = atMaterialDashUiCoreLib.buttonMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps]]
+  def Button: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps] = js.constructorOf[atMaterialDashUiCoreLib.buttonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps]]
   @scala.inline
-  def ButtonBase: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseProps] = atMaterialDashUiCoreLib.buttonBaseMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseProps]]
+  def ButtonBase: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseProps] = js.constructorOf[atMaterialDashUiCoreLib.buttonBaseMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.buttonBaseButtonBaseMod.ButtonBaseProps]]
   @scala.inline
-  def Card: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardCardMod.CardProps] = atMaterialDashUiCoreLib.cardMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardCardMod.CardProps]]
+  def Card: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardCardMod.CardProps] = js.constructorOf[atMaterialDashUiCoreLib.cardMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardCardMod.CardProps]]
   @scala.inline
-  def CardActionArea: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardActionAreaCardActionAreaMod.CardActionAreaProps] = atMaterialDashUiCoreLib.cardActionAreaMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardActionAreaCardActionAreaMod.CardActionAreaProps]]
+  def CardActionArea: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardActionAreaCardActionAreaMod.CardActionAreaProps] = js.constructorOf[atMaterialDashUiCoreLib.cardActionAreaMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardActionAreaCardActionAreaMod.CardActionAreaProps]]
   @scala.inline
-  def CardActions: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardActionsCardActionsMod.CardActionsProps] = atMaterialDashUiCoreLib.cardActionsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardActionsCardActionsMod.CardActionsProps]]
+  def CardActions: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardActionsCardActionsMod.CardActionsProps] = js.constructorOf[atMaterialDashUiCoreLib.cardActionsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardActionsCardActionsMod.CardActionsProps]]
   @scala.inline
-  def CardContent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardContentCardContentMod.CardContentProps] = atMaterialDashUiCoreLib.cardContentMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardContentCardContentMod.CardContentProps]]
+  def CardContent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardContentCardContentMod.CardContentProps] = js.constructorOf[atMaterialDashUiCoreLib.cardContentMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardContentCardContentMod.CardContentProps]]
   @scala.inline
-  def CardHeader: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardHeaderCardHeaderMod.CardHeaderProps] = atMaterialDashUiCoreLib.cardHeaderMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardHeaderCardHeaderMod.CardHeaderProps]]
+  def CardHeader: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardHeaderCardHeaderMod.CardHeaderProps] = js.constructorOf[atMaterialDashUiCoreLib.cardHeaderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardHeaderCardHeaderMod.CardHeaderProps]]
   @scala.inline
-  def CardMedia: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardMediaCardMediaMod.CardMediaProps] = atMaterialDashUiCoreLib.cardMediaMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardMediaCardMediaMod.CardMediaProps]]
+  def CardMedia: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardMediaCardMediaMod.CardMediaProps] = js.constructorOf[atMaterialDashUiCoreLib.cardMediaMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardMediaCardMediaMod.CardMediaProps]]
   @scala.inline
-  def Checkbox: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxProps] = atMaterialDashUiCoreLib.checkboxMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxProps]]
+  def Checkbox: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxProps] = js.constructorOf[atMaterialDashUiCoreLib.checkboxMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxProps]]
   @scala.inline
-  def Chip: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.chipChipMod.ChipProps] = atMaterialDashUiCoreLib.chipMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.chipChipMod.ChipProps]]
+  def Chip: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.chipChipMod.ChipProps] = js.constructorOf[atMaterialDashUiCoreLib.chipMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.chipChipMod.ChipProps]]
   @scala.inline
   def CircularProgress: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiCoreLib.circularProgressCircularProgressMod.CircularProgressProps
-  ] = atMaterialDashUiCoreLib.circularProgressMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atMaterialDashUiCoreLib.circularProgressMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atMaterialDashUiCoreLib.circularProgressCircularProgressMod.CircularProgressProps]]
   @scala.inline
   def ClickAwayListener: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiCoreLib.clickAwayListenerClickAwayListenerMod.ClickAwayListenerProps
-  ] = atMaterialDashUiCoreLib.clickAwayListenerMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atMaterialDashUiCoreLib.clickAwayListenerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atMaterialDashUiCoreLib.clickAwayListenerClickAwayListenerMod.ClickAwayListenerProps]]
   @scala.inline
-  def Collapse: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.collapseCollapseMod.CollapseProps] = atMaterialDashUiCoreLib.collapseMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.collapseCollapseMod.CollapseProps]]
+  def Collapse: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.collapseCollapseMod.CollapseProps] = js.constructorOf[atMaterialDashUiCoreLib.collapseMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.collapseCollapseMod.CollapseProps]]
   @scala.inline
-  def CssBaseline: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cssBaselineCssBaselineMod.CssBaselineProps] = atMaterialDashUiCoreLib.cssBaselineMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cssBaselineCssBaselineMod.CssBaselineProps]]
+  def CssBaseline: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cssBaselineCssBaselineMod.CssBaselineProps] = js.constructorOf[atMaterialDashUiCoreLib.cssBaselineMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cssBaselineCssBaselineMod.CssBaselineProps]]
   @scala.inline
-  def Dialog: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogDialogMod.DialogProps] = atMaterialDashUiCoreLib.dialogMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogDialogMod.DialogProps]]
+  def Dialog: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogDialogMod.DialogProps] = js.constructorOf[atMaterialDashUiCoreLib.dialogMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogDialogMod.DialogProps]]
   @scala.inline
-  def DialogActions: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogActionsDialogActionsMod.DialogActionsProps] = atMaterialDashUiCoreLib.dialogActionsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogActionsDialogActionsMod.DialogActionsProps]]
+  def DialogActions: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogActionsDialogActionsMod.DialogActionsProps] = js.constructorOf[atMaterialDashUiCoreLib.dialogActionsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogActionsDialogActionsMod.DialogActionsProps]]
   @scala.inline
-  def DialogContent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps] = atMaterialDashUiCoreLib.dialogContentMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps]]
+  def DialogContent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps] = js.constructorOf[atMaterialDashUiCoreLib.dialogContentMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogContentDialogContentMod.DialogContentProps]]
   @scala.inline
   def DialogContentText: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps
-  ] = atMaterialDashUiCoreLib.dialogContentTextMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atMaterialDashUiCoreLib.dialogContentTextMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atMaterialDashUiCoreLib.dialogContentTextDialogContentTextMod.DialogContentTextProps]]
   @scala.inline
-  def DialogTitle: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogTitleDialogTitleMod.DialogTitleProps] = atMaterialDashUiCoreLib.dialogTitleMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogTitleDialogTitleMod.DialogTitleProps]]
+  def DialogTitle: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogTitleDialogTitleMod.DialogTitleProps] = js.constructorOf[atMaterialDashUiCoreLib.dialogTitleMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dialogTitleDialogTitleMod.DialogTitleProps]]
   @scala.inline
-  def Divider: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dividerDividerMod.DividerProps] = atMaterialDashUiCoreLib.dividerMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dividerDividerMod.DividerProps]]
+  def Divider: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dividerDividerMod.DividerProps] = js.constructorOf[atMaterialDashUiCoreLib.dividerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.dividerDividerMod.DividerProps]]
   @scala.inline
-  def Drawer: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerProps] = atMaterialDashUiCoreLib.drawerMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerProps]]
+  def Drawer: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerProps] = js.constructorOf[atMaterialDashUiCoreLib.drawerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.drawerDrawerMod.DrawerProps]]
   @scala.inline
-  def ExpansionPanel: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.expansionPanelExpansionPanelMod.ExpansionPanelProps] = atMaterialDashUiCoreLib.expansionPanelMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.expansionPanelExpansionPanelMod.ExpansionPanelProps]]
+  def ExpansionPanel: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.expansionPanelExpansionPanelMod.ExpansionPanelProps] = js.constructorOf[atMaterialDashUiCoreLib.expansionPanelMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.expansionPanelExpansionPanelMod.ExpansionPanelProps]]
   @scala.inline
   def ExpansionPanelActions: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps
-  ] = atMaterialDashUiCoreLib.expansionPanelActionsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atMaterialDashUiCoreLib.expansionPanelActionsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atMaterialDashUiCoreLib.expansionPanelActionsExpansionPanelActionsMod.ExpansionPanelActionsProps]]
   @scala.inline
   def ExpansionPanelDetails: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps
-  ] = atMaterialDashUiCoreLib.expansionPanelDetailsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atMaterialDashUiCoreLib.expansionPanelDetailsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atMaterialDashUiCoreLib.expansionPanelDetailsExpansionPanelDetailsMod.ExpansionPanelDetailsProps]]
   @scala.inline
   def ExpansionPanelSummary: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiCoreLib.expansionPanelSummaryExpansionPanelSummaryMod.ExpansionPanelSummaryProps
-  ] = atMaterialDashUiCoreLib.expansionPanelSummaryMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atMaterialDashUiCoreLib.expansionPanelSummaryMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atMaterialDashUiCoreLib.expansionPanelSummaryExpansionPanelSummaryMod.ExpansionPanelSummaryProps]]
   @scala.inline
-  def Fab: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.fabFabMod.FabProps] = atMaterialDashUiCoreLib.fabMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.fabFabMod.FabProps]]
+  def Fab: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.fabFabMod.FabProps] = js.constructorOf[atMaterialDashUiCoreLib.fabMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.fabFabMod.FabProps]]
   @scala.inline
-  def Fade: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.fadeFadeMod.FadeProps] = atMaterialDashUiCoreLib.fadeMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.fadeFadeMod.FadeProps]]
+  def Fade: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.fadeFadeMod.FadeProps] = js.constructorOf[atMaterialDashUiCoreLib.fadeMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.fadeFadeMod.FadeProps]]
   @scala.inline
-  def FilledInput: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputProps] = atMaterialDashUiCoreLib.filledInputMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputProps]]
+  def FilledInput: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputProps] = js.constructorOf[atMaterialDashUiCoreLib.filledInputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.filledInputFilledInputMod.FilledInputProps]]
   @scala.inline
-  def FormControl: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formControlFormControlMod.FormControlProps] = atMaterialDashUiCoreLib.formControlMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formControlFormControlMod.FormControlProps]]
+  def FormControl: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formControlFormControlMod.FormControlProps] = js.constructorOf[atMaterialDashUiCoreLib.formControlMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formControlFormControlMod.FormControlProps]]
   @scala.inline
   def FormControlLabel: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiCoreLib.formControlLabelFormControlLabelMod.FormControlLabelProps
-  ] = atMaterialDashUiCoreLib.formControlLabelMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atMaterialDashUiCoreLib.formControlLabelMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atMaterialDashUiCoreLib.formControlLabelFormControlLabelMod.FormControlLabelProps]]
   @scala.inline
-  def FormGroup: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formGroupFormGroupMod.FormGroupProps] = atMaterialDashUiCoreLib.formGroupMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formGroupFormGroupMod.FormGroupProps]]
+  def FormGroup: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formGroupFormGroupMod.FormGroupProps] = js.constructorOf[atMaterialDashUiCoreLib.formGroupMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formGroupFormGroupMod.FormGroupProps]]
   @scala.inline
-  def FormHelperText: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formHelperTextFormHelperTextMod.FormHelperTextProps] = atMaterialDashUiCoreLib.formHelperTextMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formHelperTextFormHelperTextMod.FormHelperTextProps]]
+  def FormHelperText: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formHelperTextFormHelperTextMod.FormHelperTextProps] = js.constructorOf[atMaterialDashUiCoreLib.formHelperTextMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formHelperTextFormHelperTextMod.FormHelperTextProps]]
   @scala.inline
-  def FormLabel: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelProps] = atMaterialDashUiCoreLib.formLabelMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelProps]]
+  def FormLabel: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelProps] = js.constructorOf[atMaterialDashUiCoreLib.formLabelMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.formLabelFormLabelMod.FormLabelProps]]
   @scala.inline
-  def Grid: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridGridMod.GridProps] = atMaterialDashUiCoreLib.gridMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridGridMod.GridProps]]
+  def Grid: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridGridMod.GridProps] = js.constructorOf[atMaterialDashUiCoreLib.gridMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridGridMod.GridProps]]
   @scala.inline
-  def GridList: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridListGridListMod.GridListProps] = atMaterialDashUiCoreLib.gridListMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridListGridListMod.GridListProps]]
+  def GridList: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridListGridListMod.GridListProps] = js.constructorOf[atMaterialDashUiCoreLib.gridListMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridListGridListMod.GridListProps]]
   @scala.inline
-  def GridListTile: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridListTileGridListTileMod.GridListTileProps] = atMaterialDashUiCoreLib.gridListTileMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridListTileGridListTileMod.GridListTileProps]]
+  def GridListTile: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridListTileGridListTileMod.GridListTileProps] = js.constructorOf[atMaterialDashUiCoreLib.gridListTileMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridListTileGridListTileMod.GridListTileProps]]
   @scala.inline
-  def GridListTileBar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridListTileBarGridListTileBarMod.GridListTileBarProps] = atMaterialDashUiCoreLib.gridListTileBarMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridListTileBarGridListTileBarMod.GridListTileBarProps]]
+  def GridListTileBar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridListTileBarGridListTileBarMod.GridListTileBarProps] = js.constructorOf[atMaterialDashUiCoreLib.gridListTileBarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.gridListTileBarGridListTileBarMod.GridListTileBarProps]]
   @scala.inline
-  def Grow: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.growGrowMod.GrowProps] = atMaterialDashUiCoreLib.growMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.growGrowMod.GrowProps]]
+  def Grow: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.growGrowMod.GrowProps] = js.constructorOf[atMaterialDashUiCoreLib.growMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.growGrowMod.GrowProps]]
   @scala.inline
-  def Hidden: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.hiddenHiddenMod.HiddenProps] = atMaterialDashUiCoreLib.hiddenMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.hiddenHiddenMod.HiddenProps]]
+  def Hidden: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.hiddenHiddenMod.HiddenProps] = js.constructorOf[atMaterialDashUiCoreLib.hiddenMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.hiddenHiddenMod.HiddenProps]]
   @scala.inline
-  def Icon: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.iconIconMod.IconProps] = atMaterialDashUiCoreLib.iconMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.iconIconMod.IconProps]]
+  def Icon: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.iconIconMod.IconProps] = js.constructorOf[atMaterialDashUiCoreLib.iconMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.iconIconMod.IconProps]]
   @scala.inline
-  def IconButton: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps] = atMaterialDashUiCoreLib.iconButtonMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]]
+  def IconButton: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps] = js.constructorOf[atMaterialDashUiCoreLib.iconButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.iconButtonIconButtonMod.IconButtonProps]]
   @scala.inline
-  def Input: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputInputMod.InputProps] = atMaterialDashUiCoreLib.inputMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputInputMod.InputProps]]
+  def Input: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputInputMod.InputProps] = js.constructorOf[atMaterialDashUiCoreLib.inputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputInputMod.InputProps]]
   @scala.inline
-  def InputAdornment: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputAdornmentInputAdornmentMod.InputAdornmentProps] = atMaterialDashUiCoreLib.inputAdornmentMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputAdornmentInputAdornmentMod.InputAdornmentProps]]
+  def InputAdornment: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputAdornmentInputAdornmentMod.InputAdornmentProps] = js.constructorOf[atMaterialDashUiCoreLib.inputAdornmentMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputAdornmentInputAdornmentMod.InputAdornmentProps]]
   @scala.inline
-  def InputBase: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputBaseInputBaseMod.InputBaseProps] = atMaterialDashUiCoreLib.inputBaseMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputBaseInputBaseMod.InputBaseProps]]
+  def InputBase: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputBaseInputBaseMod.InputBaseProps] = js.constructorOf[atMaterialDashUiCoreLib.inputBaseMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputBaseInputBaseMod.InputBaseProps]]
   @scala.inline
   def InputLabel: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputLabelInputLabelMod.InputLabelProps] = js.constructorOf[atMaterialDashUiCoreLib.inputLabelMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputLabelInputLabelMod.InputLabelProps]]
   @scala.inline
-  def LinearProgress: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressProps] = atMaterialDashUiCoreLib.linearProgressMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressProps]]
+  def LinearProgress: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressProps] = js.constructorOf[atMaterialDashUiCoreLib.linearProgressMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.linearProgressLinearProgressMod.LinearProgressProps]]
   @scala.inline
-  def Link: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.linkLinkMod.LinkProps] = atMaterialDashUiCoreLib.linkMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.linkLinkMod.LinkProps]]
+  def Link: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.linkLinkMod.LinkProps] = js.constructorOf[atMaterialDashUiCoreLib.linkMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.linkLinkMod.LinkProps]]
   @scala.inline
-  def List: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listListMod.ListProps] = atMaterialDashUiCoreLib.listMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listListMod.ListProps]]
+  def List: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listListMod.ListProps] = js.constructorOf[atMaterialDashUiCoreLib.listMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listListMod.ListProps]]
   @scala.inline
-  def ListItem: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemListItemMod.ListItemProps] = atMaterialDashUiCoreLib.listItemMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemListItemMod.ListItemProps]]
+  def ListItem: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemListItemMod.ListItemProps] = js.constructorOf[atMaterialDashUiCoreLib.listItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemListItemMod.ListItemProps]]
   @scala.inline
-  def ListItemAvatar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps] = atMaterialDashUiCoreLib.listItemAvatarMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps]]
+  def ListItemAvatar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps] = js.constructorOf[atMaterialDashUiCoreLib.listItemAvatarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemAvatarListItemAvatarMod.ListItemAvatarProps]]
   @scala.inline
-  def ListItemIcon: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemIconListItemIconMod.ListItemIconProps] = atMaterialDashUiCoreLib.listItemIconMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemIconListItemIconMod.ListItemIconProps]]
+  def ListItemIcon: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemIconListItemIconMod.ListItemIconProps] = js.constructorOf[atMaterialDashUiCoreLib.listItemIconMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemIconListItemIconMod.ListItemIconProps]]
   @scala.inline
   def ListItemSecondaryAction: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps
-  ] = atMaterialDashUiCoreLib.listItemSecondaryActionMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atMaterialDashUiCoreLib.listItemSecondaryActionMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atMaterialDashUiCoreLib.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps]]
   @scala.inline
-  def ListItemText: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextProps] = atMaterialDashUiCoreLib.listItemTextMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextProps]]
+  def ListItemText: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextProps] = js.constructorOf[atMaterialDashUiCoreLib.listItemTextMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextProps]]
   @scala.inline
-  def ListSubheader: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listSubheaderListSubheaderMod.ListSubheaderProps] = atMaterialDashUiCoreLib.listSubheaderMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listSubheaderListSubheaderMod.ListSubheaderProps]]
+  def ListSubheader: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listSubheaderListSubheaderMod.ListSubheaderProps] = js.constructorOf[atMaterialDashUiCoreLib.listSubheaderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listSubheaderListSubheaderMod.ListSubheaderProps]]
   @scala.inline
-  def Menu: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuMenuMod.MenuProps] = atMaterialDashUiCoreLib.menuMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuMenuMod.MenuProps]]
+  def Menu: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuMenuMod.MenuProps] = js.constructorOf[atMaterialDashUiCoreLib.menuMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuMenuMod.MenuProps]]
   @scala.inline
-  def MenuItem: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuItemMenuItemMod.MenuItemProps] = atMaterialDashUiCoreLib.menuItemMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuItemMenuItemMod.MenuItemProps]]
+  def MenuItem: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuItemMenuItemMod.MenuItemProps] = js.constructorOf[atMaterialDashUiCoreLib.menuItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuItemMenuItemMod.MenuItemProps]]
   @scala.inline
-  def MenuList: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuListMenuListMod.MenuListProps] = atMaterialDashUiCoreLib.menuListMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuListMenuListMod.MenuListProps]]
+  def MenuList: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuListMenuListMod.MenuListProps] = js.constructorOf[atMaterialDashUiCoreLib.menuListMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.menuListMenuListMod.MenuListProps]]
   @scala.inline
-  def MobileStepper: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.mobileStepperMobileStepperMod.MobileStepperProps] = atMaterialDashUiCoreLib.mobileStepperMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.mobileStepperMobileStepperMod.MobileStepperProps]]
+  def MobileStepper: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.mobileStepperMobileStepperMod.MobileStepperProps] = js.constructorOf[atMaterialDashUiCoreLib.mobileStepperMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.mobileStepperMobileStepperMod.MobileStepperProps]]
   @scala.inline
-  def Modal: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.modalModalMod.ModalProps] = atMaterialDashUiCoreLib.modalMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.modalModalMod.ModalProps]]
+  def Modal: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.modalModalMod.ModalProps] = js.constructorOf[atMaterialDashUiCoreLib.modalMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.modalModalMod.ModalProps]]
   @scala.inline
-  def MuiThemeProvider: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stylesMuiThemeProviderMod.MuiThemeProviderProps] = atMaterialDashUiCoreLib.stylesMuiThemeProviderMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stylesMuiThemeProviderMod.MuiThemeProviderProps]]
+  def MuiThemeProvider: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stylesMuiThemeProviderMod.MuiThemeProviderProps] = js.constructorOf[atMaterialDashUiCoreLib.stylesMuiThemeProviderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stylesMuiThemeProviderMod.MuiThemeProviderProps]]
   @scala.inline
-  def NativeSelect: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.nativeSelectNativeSelectMod.NativeSelectProps] = atMaterialDashUiCoreLib.nativeSelectMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.nativeSelectNativeSelectMod.NativeSelectProps]]
+  def NativeSelect: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.nativeSelectNativeSelectMod.NativeSelectProps] = js.constructorOf[atMaterialDashUiCoreLib.nativeSelectMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.nativeSelectNativeSelectMod.NativeSelectProps]]
   @scala.inline
-  def NativeSelectInput: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.nativeSelectNativeSelectInputMod.NativeSelectInputProps] = atMaterialDashUiCoreLib.nativeSelectNativeSelectInputMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.nativeSelectNativeSelectInputMod.NativeSelectInputProps]]
+  def NativeSelectInput: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.nativeSelectNativeSelectInputMod.NativeSelectInputProps] = js.constructorOf[atMaterialDashUiCoreLib.nativeSelectNativeSelectInputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.nativeSelectNativeSelectInputMod.NativeSelectInputProps]]
   @scala.inline
-  def NoSsr: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.noSsrNoSsrMod.NoSsrProps] = atMaterialDashUiCoreLib.noSsrMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.noSsrNoSsrMod.NoSsrProps]]
+  def NoSsr: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.noSsrNoSsrMod.NoSsrProps] = js.constructorOf[atMaterialDashUiCoreLib.noSsrMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.noSsrNoSsrMod.NoSsrProps]]
   @scala.inline
-  def OutlinedInput: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.outlinedInputOutlinedInputMod.OutlinedInputProps] = atMaterialDashUiCoreLib.outlinedInputMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.outlinedInputOutlinedInputMod.OutlinedInputProps]]
+  def OutlinedInput: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.outlinedInputOutlinedInputMod.OutlinedInputProps] = js.constructorOf[atMaterialDashUiCoreLib.outlinedInputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.outlinedInputOutlinedInputMod.OutlinedInputProps]]
   @scala.inline
-  def Paper: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = atMaterialDashUiCoreLib.paperMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]]
+  def Paper: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = js.constructorOf[atMaterialDashUiCoreLib.paperMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]]
   @scala.inline
-  def Popover: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverProps] = atMaterialDashUiCoreLib.popoverMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverProps]]
+  def Popover: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverProps] = js.constructorOf[atMaterialDashUiCoreLib.popoverMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverProps]]
   @scala.inline
-  def Popper: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.popperPopperMod.PopperProps] = atMaterialDashUiCoreLib.popperMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.popperPopperMod.PopperProps]]
+  def Popper: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.popperPopperMod.PopperProps] = js.constructorOf[atMaterialDashUiCoreLib.popperMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.popperPopperMod.PopperProps]]
   @scala.inline
   def Portal: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.portalPortalMod.PortalProps] = js.constructorOf[atMaterialDashUiCoreLib.portalMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.portalPortalMod.PortalProps]]
   @scala.inline
-  def Radio: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.radioRadioMod.RadioProps] = atMaterialDashUiCoreLib.radioMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.radioRadioMod.RadioProps]]
+  def Radio: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.radioRadioMod.RadioProps] = js.constructorOf[atMaterialDashUiCoreLib.radioMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.radioRadioMod.RadioProps]]
   @scala.inline
-  def RadioGroup: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.radioGroupRadioGroupMod.RadioGroupProps] = atMaterialDashUiCoreLib.radioGroupMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.radioGroupRadioGroupMod.RadioGroupProps]]
+  def RadioGroup: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.radioGroupRadioGroupMod.RadioGroupProps] = js.constructorOf[atMaterialDashUiCoreLib.radioGroupMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.radioGroupRadioGroupMod.RadioGroupProps]]
   @scala.inline
-  def RootRef: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.rootRefRootRefMod.RootRefProps[js.Any]] = atMaterialDashUiCoreLib.rootRefMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.rootRefRootRefMod.RootRefProps[js.Any]]]
+  def RootRef: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.rootRefRootRefMod.RootRefProps[js.Any]] = js.constructorOf[atMaterialDashUiCoreLib.rootRefMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.rootRefRootRefMod.RootRefProps[js.Any]]]
   @scala.inline
-  def Select: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.selectSelectMod.SelectProps] = atMaterialDashUiCoreLib.selectMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.selectSelectMod.SelectProps]]
+  def Select: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.selectSelectMod.SelectProps] = js.constructorOf[atMaterialDashUiCoreLib.selectMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.selectSelectMod.SelectProps]]
   @scala.inline
-  def SelectInput: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.selectSelectInputMod.SelectInputProps] = atMaterialDashUiCoreLib.selectSelectInputMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.selectSelectInputMod.SelectInputProps]]
+  def SelectInput: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.selectSelectInputMod.SelectInputProps] = js.constructorOf[atMaterialDashUiCoreLib.selectSelectInputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.selectSelectInputMod.SelectInputProps]]
   @scala.inline
-  def Slide: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.slideSlideMod.SlideProps] = atMaterialDashUiCoreLib.slideMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.slideSlideMod.SlideProps]]
+  def Slide: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.slideSlideMod.SlideProps] = js.constructorOf[atMaterialDashUiCoreLib.slideMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.slideSlideMod.SlideProps]]
   @scala.inline
-  def Snackbar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarProps] = atMaterialDashUiCoreLib.snackbarMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarProps]]
+  def Snackbar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarProps] = js.constructorOf[atMaterialDashUiCoreLib.snackbarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarProps]]
   @scala.inline
-  def SnackbarContent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentProps] = atMaterialDashUiCoreLib.snackbarContentMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentProps]]
+  def SnackbarContent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentProps] = js.constructorOf[atMaterialDashUiCoreLib.snackbarContentMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.snackbarContentSnackbarContentMod.SnackbarContentProps]]
   @scala.inline
-  def Step: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepStepMod.StepProps] = atMaterialDashUiCoreLib.stepMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepStepMod.StepProps]]
+  def Step: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepStepMod.StepProps] = js.constructorOf[atMaterialDashUiCoreLib.stepMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepStepMod.StepProps]]
   @scala.inline
-  def StepButton: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepButtonStepButtonMod.StepButtonProps] = atMaterialDashUiCoreLib.stepButtonMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepButtonStepButtonMod.StepButtonProps]]
+  def StepButton: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepButtonStepButtonMod.StepButtonProps] = js.constructorOf[atMaterialDashUiCoreLib.stepButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepButtonStepButtonMod.StepButtonProps]]
   @scala.inline
-  def StepConnector: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepConnectorStepConnectorMod.StepConnectorProps] = atMaterialDashUiCoreLib.stepConnectorMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepConnectorStepConnectorMod.StepConnectorProps]]
+  def StepConnector: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepConnectorStepConnectorMod.StepConnectorProps] = js.constructorOf[atMaterialDashUiCoreLib.stepConnectorMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepConnectorStepConnectorMod.StepConnectorProps]]
   @scala.inline
-  def StepContent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepContentStepContentMod.StepContentProps] = atMaterialDashUiCoreLib.stepContentMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepContentStepContentMod.StepContentProps]]
+  def StepContent: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepContentStepContentMod.StepContentProps] = js.constructorOf[atMaterialDashUiCoreLib.stepContentMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepContentStepContentMod.StepContentProps]]
   @scala.inline
-  def StepIcon: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconProps] = atMaterialDashUiCoreLib.stepIconMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconProps]]
+  def StepIcon: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconProps] = js.constructorOf[atMaterialDashUiCoreLib.stepIconMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconProps]]
   @scala.inline
-  def StepLabel: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepLabelStepLabelMod.StepLabelProps] = atMaterialDashUiCoreLib.stepLabelMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepLabelStepLabelMod.StepLabelProps]]
+  def StepLabel: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepLabelStepLabelMod.StepLabelProps] = js.constructorOf[atMaterialDashUiCoreLib.stepLabelMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepLabelStepLabelMod.StepLabelProps]]
   @scala.inline
-  def Stepper: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepperStepperMod.StepperProps] = atMaterialDashUiCoreLib.stepperMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepperStepperMod.StepperProps]]
+  def Stepper: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepperStepperMod.StepperProps] = js.constructorOf[atMaterialDashUiCoreLib.stepperMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stepperStepperMod.StepperProps]]
   @scala.inline
-  def SvgIcon: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps] = atMaterialDashUiCoreLib.svgIconMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps]]
+  def SvgIcon: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps] = js.constructorOf[atMaterialDashUiCoreLib.svgIconMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps]]
   @scala.inline
-  def SwipeableDrawer: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps] = atMaterialDashUiCoreLib.swipeableDrawerMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps]]
+  def SwipeableDrawer: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps] = js.constructorOf[atMaterialDashUiCoreLib.swipeableDrawerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.swipeableDrawerSwipeableDrawerMod.SwipeableDrawerProps]]
   @scala.inline
-  def Switch: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.switchSwitchMod.SwitchProps] = atMaterialDashUiCoreLib.switchMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.switchSwitchMod.SwitchProps]]
+  def Switch: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.switchSwitchMod.SwitchProps] = js.constructorOf[atMaterialDashUiCoreLib.switchMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.switchSwitchMod.SwitchProps]]
   @scala.inline
-  def SwitchBase: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseProps] = atMaterialDashUiCoreLib.internalSwitchBaseMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseProps]]
+  def SwitchBase: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseProps] = js.constructorOf[atMaterialDashUiCoreLib.internalSwitchBaseMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseProps]]
   @scala.inline
-  def Tab: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabTabMod.TabProps] = atMaterialDashUiCoreLib.tabMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabTabMod.TabProps]]
+  def Tab: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabTabMod.TabProps] = js.constructorOf[atMaterialDashUiCoreLib.tabMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabTabMod.TabProps]]
   @scala.inline
-  def TabIndicator: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps] = atMaterialDashUiCoreLib.tabsTabIndicatorMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps]]
+  def TabIndicator: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps] = js.constructorOf[atMaterialDashUiCoreLib.tabsTabIndicatorMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps]]
   @scala.inline
-  def Table: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableTableMod.TableProps] = atMaterialDashUiCoreLib.tableMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableTableMod.TableProps]]
+  def Table: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableTableMod.TableProps] = js.constructorOf[atMaterialDashUiCoreLib.tableMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableTableMod.TableProps]]
   @scala.inline
-  def TableBody: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableBodyTableBodyMod.TableBodyProps] = atMaterialDashUiCoreLib.tableBodyMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableBodyTableBodyMod.TableBodyProps]]
+  def TableBody: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableBodyTableBodyMod.TableBodyProps] = js.constructorOf[atMaterialDashUiCoreLib.tableBodyMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableBodyTableBodyMod.TableBodyProps]]
   @scala.inline
-  def TableCell: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableCellTableCellMod.TableCellProps] = atMaterialDashUiCoreLib.tableCellMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableCellTableCellMod.TableCellProps]]
+  def TableCell: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableCellTableCellMod.TableCellProps] = js.constructorOf[atMaterialDashUiCoreLib.tableCellMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableCellTableCellMod.TableCellProps]]
   @scala.inline
-  def TableFooter: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableFooterTableFooterMod.TableFooterProps] = atMaterialDashUiCoreLib.tableFooterMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableFooterTableFooterMod.TableFooterProps]]
+  def TableFooter: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableFooterTableFooterMod.TableFooterProps] = js.constructorOf[atMaterialDashUiCoreLib.tableFooterMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableFooterTableFooterMod.TableFooterProps]]
   @scala.inline
-  def TableHead: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableHeadTableHeadMod.TableHeadProps] = atMaterialDashUiCoreLib.tableHeadMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableHeadTableHeadMod.TableHeadProps]]
+  def TableHead: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableHeadTableHeadMod.TableHeadProps] = js.constructorOf[atMaterialDashUiCoreLib.tableHeadMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableHeadTableHeadMod.TableHeadProps]]
   @scala.inline
-  def TablePagination: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tablePaginationTablePaginationMod.TablePaginationProps] = atMaterialDashUiCoreLib.tablePaginationMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tablePaginationTablePaginationMod.TablePaginationProps]]
+  def TablePagination: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tablePaginationTablePaginationMod.TablePaginationProps] = js.constructorOf[atMaterialDashUiCoreLib.tablePaginationMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tablePaginationTablePaginationMod.TablePaginationProps]]
   @scala.inline
   def TablePaginationActions: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiCoreLib.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps
-  ] = atMaterialDashUiCoreLib.tablePaginationTablePaginationActionsMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atMaterialDashUiCoreLib.tablePaginationTablePaginationActionsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atMaterialDashUiCoreLib.tablePaginationTablePaginationActionsMod.TablePaginationActionsProps]]
   @scala.inline
-  def TableRow: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableRowTableRowMod.TableRowProps] = atMaterialDashUiCoreLib.tableRowMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableRowTableRowMod.TableRowProps]]
+  def TableRow: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableRowTableRowMod.TableRowProps] = js.constructorOf[atMaterialDashUiCoreLib.tableRowMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableRowTableRowMod.TableRowProps]]
   @scala.inline
-  def TableSortLabel: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableSortLabelTableSortLabelMod.TableSortLabelProps] = atMaterialDashUiCoreLib.tableSortLabelMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableSortLabelTableSortLabelMod.TableSortLabelProps]]
+  def TableSortLabel: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableSortLabelTableSortLabelMod.TableSortLabelProps] = js.constructorOf[atMaterialDashUiCoreLib.tableSortLabelMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tableSortLabelTableSortLabelMod.TableSortLabelProps]]
   @scala.inline
-  def Tabs: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabsTabsMod.TabsProps] = atMaterialDashUiCoreLib.tabsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabsTabsMod.TabsProps]]
+  def Tabs: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabsTabsMod.TabsProps] = js.constructorOf[atMaterialDashUiCoreLib.tabsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tabsTabsMod.TabsProps]]
   @scala.inline
-  def TextField: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.textFieldTextFieldMod.TextFieldProps] = atMaterialDashUiCoreLib.textFieldMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.textFieldTextFieldMod.TextFieldProps]]
+  def TextField: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.textFieldTextFieldMod.TextFieldProps] = js.constructorOf[atMaterialDashUiCoreLib.textFieldMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.textFieldTextFieldMod.TextFieldProps]]
   @scala.inline
-  def Toolbar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarProps] = atMaterialDashUiCoreLib.toolbarMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarProps]]
+  def Toolbar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarProps] = js.constructorOf[atMaterialDashUiCoreLib.toolbarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarProps]]
   @scala.inline
-  def Tooltip: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipProps] = atMaterialDashUiCoreLib.tooltipMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipProps]]
+  def Tooltip: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipProps] = js.constructorOf[atMaterialDashUiCoreLib.tooltipMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipProps]]
   @scala.inline
-  def TouchRipple: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleProps] = atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleProps]]
+  def TouchRipple: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleProps] = js.constructorOf[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.buttonBaseTouchRippleMod.TouchRippleProps]]
   @scala.inline
-  def Typography: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps] = atMaterialDashUiCoreLib.typographyMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps]]
+  def Typography: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps] = js.constructorOf[atMaterialDashUiCoreLib.typographyMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.typographyTypographyMod.TypographyProps]]
   @scala.inline
-  def Zoom: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.zoomZoomMod.ZoomProps] = atMaterialDashUiCoreLib.zoomMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.zoomZoomMod.ZoomProps]]
+  def Zoom: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.zoomZoomMod.ZoomProps] = js.constructorOf[atMaterialDashUiCoreLib.zoomMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.zoomZoomMod.ZoomProps]]
   @scala.inline
   def AppBarProps: atMaterialDashUiCoreLib.appBarAppBarMod.AppBarProps.type = atMaterialDashUiCoreLib.appBarAppBarMod.AppBarProps
   type AppBarProps = atMaterialDashUiCoreLib.appBarAppBarMod.AppBarProps

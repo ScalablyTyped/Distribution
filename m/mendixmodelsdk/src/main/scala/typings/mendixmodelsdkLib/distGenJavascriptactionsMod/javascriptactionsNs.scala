@@ -39,7 +39,7 @@ object javascriptactionsNs extends js.Object {
     * In version 7.21.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavascriptactionsMod.javascriptactionsNs.IJavaScriptAction because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavascriptactionsMod.javascriptactionsNs.IJavaScriptAction because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class JavaScriptAction protected ()
     extends mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -51,7 +51,7 @@ object javascriptactionsNs extends js.Object {
     * In version 7.21.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJavascriptactionsMod.javascriptactionsNs.IJavaScriptActionParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJavascriptactionsMod.javascriptactionsNs.IJavaScriptActionParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class JavaScriptActionParameter protected ()
     extends mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeActionParameter {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()

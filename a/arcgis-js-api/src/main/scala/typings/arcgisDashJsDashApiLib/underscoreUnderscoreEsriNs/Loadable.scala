@@ -91,3 +91,7 @@ trait Loadable extends js.Object {
   def when(callback: js.Function, errback: js.Function): arcgisDashJsDashApiLib.IPromise[_] = js.native
 }
 
+@JSGlobal("__esri.Loadable")
+@js.native
+class LoadableCls () extends Loadable
+

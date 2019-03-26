@@ -5,5 +5,71 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - astDashTypesLib.genNodesMod.BlockStatement
+  - astDashTypesLib.genNodesMod.EmptyStatement
+  - astDashTypesLib.genNodesMod.ExpressionStatement
+  - astDashTypesLib.genNodesMod.IfStatement
+  - astDashTypesLib.genNodesMod.LabeledStatement
+  - astDashTypesLib.genNodesMod.BreakStatement
+  - astDashTypesLib.genNodesMod.ContinueStatement
+  - astDashTypesLib.genNodesMod.WithStatement
+  - astDashTypesLib.genNodesMod.SwitchStatement
+  - astDashTypesLib.genNodesMod.ReturnStatement
+  - astDashTypesLib.genNodesMod.ThrowStatement
+  - astDashTypesLib.genNodesMod.TryStatement
+  - astDashTypesLib.genNodesMod.WhileStatement
+  - astDashTypesLib.genNodesMod.DoWhileStatement
+  - astDashTypesLib.genNodesMod.ForStatement
+  - astDashTypesLib.genNodesMod.VariableDeclaration
+  - astDashTypesLib.genNodesMod.ForInStatement
+  - astDashTypesLib.genNodesMod.DebuggerStatement
+  - astDashTypesLib.genNodesMod.FunctionDeclaration
+  - astDashTypesLib.genNodesMod.ForOfStatement
+  - astDashTypesLib.genNodesMod.MethodDefinition
+  - astDashTypesLib.genNodesMod.ClassPropertyDefinition
+  - astDashTypesLib.genNodesMod.ClassProperty
+  - astDashTypesLib.genNodesMod.ClassBody
+  - astDashTypesLib.genNodesMod.ClassDeclaration
+  - astDashTypesLib.genNodesMod.ImportDeclaration
+  - astDashTypesLib.genNodesMod.TSTypeParameterDeclaration
+  - astDashTypesLib.genNodesMod.InterfaceDeclaration
+  - astDashTypesLib.genNodesMod.DeclareInterface
+  - astDashTypesLib.genNodesMod.TypeAlias
+  - astDashTypesLib.genNodesMod.OpaqueType
+  - astDashTypesLib.genNodesMod.DeclareTypeAlias
+  - astDashTypesLib.genNodesMod.DeclareOpaqueType
+  - astDashTypesLib.genNodesMod.DeclareVariable
+  - astDashTypesLib.genNodesMod.DeclareFunction
+  - astDashTypesLib.genNodesMod.DeclareClass
+  - astDashTypesLib.genNodesMod.DeclareModule
+  - astDashTypesLib.genNodesMod.DeclareModuleExports
+  - astDashTypesLib.genNodesMod.DeclareExportDeclaration
+  - astDashTypesLib.genNodesMod.DeclareExportAllDeclaration
+  - astDashTypesLib.genNodesMod.ExportDeclaration
+  - astDashTypesLib.genNodesMod.Noop
+  - astDashTypesLib.genNodesMod.ExportDefaultDeclaration
+  - astDashTypesLib.genNodesMod.ExportNamedDeclaration
+  - astDashTypesLib.genNodesMod.ExportAllDeclaration
+  - astDashTypesLib.genNodesMod.ClassPrivateProperty
+  - astDashTypesLib.genNodesMod.ClassMethod
+  - astDashTypesLib.genNodesMod.ClassPrivateMethod
+  - astDashTypesLib.genNodesMod.ForAwaitStatement
+  - astDashTypesLib.genNodesMod.TSDeclareFunction
+  - astDashTypesLib.genNodesMod.TSDeclareMethod
+  - astDashTypesLib.genNodesMod.TSIndexSignature
+  - astDashTypesLib.genNodesMod.TSPropertySignature
+  - astDashTypesLib.genNodesMod.TSMethodSignature
+  - astDashTypesLib.genNodesMod.TSCallSignatureDeclaration
+  - astDashTypesLib.genNodesMod.TSConstructSignatureDeclaration
+  - astDashTypesLib.genNodesMod.TSEnumDeclaration
+  - astDashTypesLib.genNodesMod.TSTypeAliasDeclaration
+  - astDashTypesLib.genNodesMod.TSModuleDeclaration
+  - astDashTypesLib.genNodesMod.TSImportEqualsDeclaration
+  - astDashTypesLib.genNodesMod.TSExternalModuleReference
+  - astDashTypesLib.genNodesMod.TSExportAssignment
+  - astDashTypesLib.genNodesMod.TSNamespaceExportDeclaration
+  - astDashTypesLib.genNodesMod.TSInterfaceDeclaration
+*/
 trait StatementKind extends js.Object
 

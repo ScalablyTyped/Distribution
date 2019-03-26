@@ -1,0 +1,27 @@
+package typings
+package atMaterialDashUiIconsLib.atMaterialDashUiIconsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/icons", "SignalCellularConnectedNoInternet4Bar")
+@js.native
+class SignalCellularConnectedNoInternet4Bar protected ()
+  extends atMaterialDashUiIconsLib.signalCellularConnectedNoInternet4BarMod.default {
+  def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()
+  def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, context: js.Any) = this()
+}
+
+@JSImport("@material-ui/icons", "SignalCellularConnectedNoInternet4Bar")
+@js.native
+class SignalCellularConnectedNoInternet4BarCls protected ()
+  extends reactLib.reactMod.ReactNs.Component[
+      atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
+      reactLib.reactMod.ReactNs.ComponentState, 
+      js.Any
+    ] {
+  def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()
+  def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, context: js.Any) = this()
+}
+

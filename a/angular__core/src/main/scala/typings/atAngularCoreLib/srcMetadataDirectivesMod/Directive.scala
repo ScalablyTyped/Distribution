@@ -204,6 +204,15 @@ trait Directive extends js.Object {
   var selector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+@JSImport("@angular/core/src/metadata/directives", "Directive")
+@js.native
+class DirectiveCls protected () extends Directive {
+  /**
+    * See the `Directive` decorator.
+    */
+  def this(obj: Directive) = this()
+}
+
 object Directive {
   @scala.inline
   def apply(

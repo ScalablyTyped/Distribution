@@ -31,6 +31,26 @@ object esriNs extends js.Object {
     var token: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - esriDashLeafletLib.esriDashLeafletLibStrings.Streets
+    - esriDashLeafletLib.esriDashLeafletLibStrings.Topographic
+    - esriDashLeafletLib.esriDashLeafletLibStrings.NationalGeographic
+    - esriDashLeafletLib.esriDashLeafletLibStrings.Oceans
+    - esriDashLeafletLib.esriDashLeafletLibStrings.Gray
+    - esriDashLeafletLib.esriDashLeafletLibStrings.DarkGray
+    - esriDashLeafletLib.esriDashLeafletLibStrings.Imagery
+    - esriDashLeafletLib.esriDashLeafletLibStrings.ShadedRelief
+    - esriDashLeafletLib.esriDashLeafletLibStrings.Terrain
+    - esriDashLeafletLib.esriDashLeafletLibStrings.USATopo
+    - esriDashLeafletLib.esriDashLeafletLibStrings.OceansLabels
+    - esriDashLeafletLib.esriDashLeafletLibStrings.GrayLabels
+    - esriDashLeafletLib.esriDashLeafletLibStrings.DarkGrayLabels
+    - esriDashLeafletLib.esriDashLeafletLibStrings.ImageryLabels
+    - esriDashLeafletLib.esriDashLeafletLibStrings.ImageryClarity
+    - esriDashLeafletLib.esriDashLeafletLibStrings.ImageryTransportation
+    - esriDashLeafletLib.esriDashLeafletLibStrings.ShadedReliefLabels
+    - esriDashLeafletLib.esriDashLeafletLibStrings.TerrainLabels
+  */
   trait Basemaps extends js.Object
   
   /**

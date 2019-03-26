@@ -7,6 +7,15 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SVGPoint")
 @js.native
+class SVGPointCls () extends DOMPoint {
+  def this(x: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double, z: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double, z: scala.Double, w: scala.Double) = this()
+}
+
+@JSGlobal("SVGPoint")
+@js.native
 object SVGPoint
   extends org.scalablytyped.runtime.Instantiable0[DOMPoint]
      with org.scalablytyped.runtime.Instantiable1[/* x */ scala.Double, DOMPoint]

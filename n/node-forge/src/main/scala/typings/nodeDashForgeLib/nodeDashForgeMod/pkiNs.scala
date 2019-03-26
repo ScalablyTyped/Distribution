@@ -273,7 +273,20 @@ object pkiNs extends js.Object {
       callback: js.Function2[/* err */ stdLib.Error, /* keypair */ KeyPair, scala.Unit]
     ): KeyPair = js.native
     def setPublicKey(n: js.Any, e: js.Any): js.Any = js.native
+    /* Rewritten from type alias, can be one of: 
+      - nodeDashForgeLib.nodeDashForgeLibStrings.`RSAES-PKCS1-V1_5`
+      - nodeDashForgeLib.nodeDashForgeLibStrings.`RSA-OAEP`
+      - nodeDashForgeLib.nodeDashForgeLibStrings.RAW
+      - nodeDashForgeLib.nodeDashForgeLibStrings.NONE
+      - scala.Null
+    */
     type EncryptionScheme = _EncryptionScheme | scala.Null
+    /* Rewritten from type alias, can be one of: 
+      - nodeDashForgeLib.nodeDashForgeLibStrings.`RSASSA-PKCS1-V1_5`
+      - nodeDashForgeLib.nodeDashForgeMod.pssNs.PSS
+      - nodeDashForgeLib.nodeDashForgeLibStrings.NONE
+      - scala.Null
+    */
     type SignatureScheme = _SignatureScheme | nodeDashForgeLib.nodeDashForgeMod.pssNs.PSS | scala.Null
   }
   

@@ -12,6 +12,15 @@ trait PushSubscriptionOptions extends js.Object {
 
 @JSGlobal("PushSubscriptionOptions")
 @js.native
+class PushSubscriptionOptionsCls () extends PushSubscriptionOptions {
+  /* CompleteClass */
+  override val applicationServerKey: ArrayBuffer | scala.Null = js.native
+  /* CompleteClass */
+  override val userVisibleOnly: scala.Boolean = js.native
+}
+
+@JSGlobal("PushSubscriptionOptions")
+@js.native
 object PushSubscriptionOptions
   extends org.scalablytyped.runtime.Instantiable0[PushSubscriptionOptions]
 

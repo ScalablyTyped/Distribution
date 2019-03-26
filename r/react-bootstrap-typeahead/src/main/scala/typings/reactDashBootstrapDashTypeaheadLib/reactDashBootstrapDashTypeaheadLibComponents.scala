@@ -27,13 +27,6 @@ object reactDashBootstrapDashTypeaheadLibComponents {
   ] = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.^.ClearButton.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.ClearButtonProps]]
   @scala.inline
-  def Divider_Original: reactLib.reactMod.ReactNs.ComponentType[js.Object] = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.Menu.Divider_Original.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Object]]
-  @scala.inline
-  def Header_Original: reactLib.reactMod.ReactNs.ComponentType[
-    reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps
-  ] = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.Menu.Header_Original.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
-  reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps]]
-  @scala.inline
   def Highlighter: reactLib.reactMod.ReactNs.ComponentType[
     reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.HighligherProps
   ] = js.constructorOf[reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.Highlighter].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
@@ -95,14 +88,12 @@ object reactDashBootstrapDashTypeaheadLibComponents {
   @scala.inline
   def LoaderProps: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.LoaderProps.type = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.LoaderProps
   type LoaderProps = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.LoaderProps
-  type MenuHeaderProps = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps
   @scala.inline
   def MenuItemProps: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuItemProps.type = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuItemProps
   type MenuItemProps[T /* <: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.TypeaheadModel */] = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuItemProps[T]
   @scala.inline
   def MenuProps: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuProps.type = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuProps
   type MenuProps = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuProps
-  type Object = js.Object
   @scala.inline
   def OverlayProps: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.OverlayProps.type = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.OverlayProps
   type OverlayProps = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.OverlayProps

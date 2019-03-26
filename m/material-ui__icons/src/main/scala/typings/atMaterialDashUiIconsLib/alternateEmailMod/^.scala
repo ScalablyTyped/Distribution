@@ -1,0 +1,13 @@
+package typings
+package atMaterialDashUiIconsLib.alternateEmailMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/icons/AlternateEmail", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps] = js.native
+}
+

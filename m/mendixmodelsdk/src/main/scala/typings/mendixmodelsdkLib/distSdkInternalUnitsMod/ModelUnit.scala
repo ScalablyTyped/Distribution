@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- mendixmodelsdkLib.distSdkInternalUnitsMod.IModelUnit because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined delete */ @JSImport("mendixmodelsdk/dist/sdk/internal/units", "ModelUnit")
+- mendixmodelsdkLib.distSdkInternalUnitsMod.IModelUnit because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/sdk/internal/units", "ModelUnit")
 @js.native
 abstract class ModelUnit protected ()
   extends mendixmodelsdkLib.distSdkInternalElementsMod.AbstractElement {

@@ -8432,6 +8432,11 @@ object RDSNs extends js.Object {
   }
   
   type AccountQuotaList = js.Array[AccountQuota]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.immediate
+    - awsDashSdkLib.awsDashSdkLibStrings.`pending-reboot`
+    - java.lang.String
+  */
   type ApplyMethod = _ApplyMethod | java.lang.String
   type AttributeValueList = js.Array[String]
   type AvailabilityZoneList = js.Array[AvailabilityZone]
@@ -8514,6 +8519,15 @@ object RDSNs extends js.Object {
   type ReservedDBInstancesOfferingList = js.Array[ReservedDBInstancesOffering]
   type SourceIdsList = js.Array[String]
   type SourceRegionList = js.Array[SourceRegion]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`db-instance`
+    - awsDashSdkLib.awsDashSdkLibStrings.`db-parameter-group`
+    - awsDashSdkLib.awsDashSdkLibStrings.`db-security-group`
+    - awsDashSdkLib.awsDashSdkLibStrings.`db-snapshot`
+    - awsDashSdkLib.awsDashSdkLibStrings.`db-cluster`
+    - awsDashSdkLib.awsDashSdkLibStrings.`db-cluster-snapshot`
+    - java.lang.String
+  */
   type SourceType = _SourceType | java.lang.String
   type String = java.lang.String
   type StringList = js.Array[String]
@@ -8527,6 +8541,15 @@ object RDSNs extends js.Object {
   type ValidUpgradeTargetList = js.Array[UpgradeTarget]
   type VpcSecurityGroupIdList = js.Array[String]
   type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2013-01-10`
+    - awsDashSdkLib.awsDashSdkLibStrings.`2013-02-12`
+    - awsDashSdkLib.awsDashSdkLibStrings.`2013-09-09`
+    - awsDashSdkLib.awsDashSdkLibStrings.`2014-09-01`
+    - awsDashSdkLib.awsDashSdkLibStrings.`2014-10-31`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

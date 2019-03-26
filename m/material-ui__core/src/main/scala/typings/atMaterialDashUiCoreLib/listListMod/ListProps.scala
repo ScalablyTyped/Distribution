@@ -6,14 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLUListElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLUListElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLUListElement>, @material-ui/core.@material-ui/core/List/List.ListClassKey, never>) */ trait ListProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ListClassKey] {
-  var className: js.UndefOr[java.lang.String] = js.undefined
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLUListElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLUListElement>[P]} */ trait ListProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ListClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[ListProps]] = js.undefined
   var dense: js.UndefOr[scala.Boolean] = js.undefined
   var disablePadding: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var subheader: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
 }
 

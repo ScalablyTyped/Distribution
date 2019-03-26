@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait EntityEventMap extends js.Object {
-  var `child-attached`: DetailEvent[aframeLib.Anon_ElAny] = js.native
-  var `child-detached`: DetailEvent[aframeLib.Anon_ElAny] = js.native
+  var `child-attached`: DetailEvent[aframeLib.Anon_El] = js.native
+  var `child-detached`: DetailEvent[aframeLib.Anon_El] = js.native
   var componentchanged: DetailEvent[aframeLib.Anon_Id] = js.native
   var componentremoved: DetailEvent[aframeLib.Anon_IdName] = js.native
   @JSName("loaded")

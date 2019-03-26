@@ -10,3 +10,11 @@ trait IndexedSourceMapConsumer extends SourceMapConsumer {
   var sources: js.Array[java.lang.String] = js.native
 }
 
+@JSImport("source-map", "IndexedSourceMapConsumer")
+@js.native
+class IndexedSourceMapConsumerCls protected ()
+  extends stdLib.Promise[IndexedSourceMapConsumer] {
+  def this(rawSourceMap: java.lang.String) = this()
+  def this(rawSourceMap: RawIndexMap) = this()
+}
+

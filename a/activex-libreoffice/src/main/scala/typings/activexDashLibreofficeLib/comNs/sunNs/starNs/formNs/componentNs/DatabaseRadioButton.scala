@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /** This service specifies a radio button which is data-aware, and can be bound to a database field. */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.componentNs.RadioButton because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultState, getPropertyValues, getPropertyValues, RefValue, setPropertyValues, setPropertyValues, UncheckedRefValue */ @js.native
+- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.componentNs.RadioButton because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultState, RefValue, UncheckedRefValue */ @js.native
 trait DatabaseRadioButton
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.DataAwareControlModel {
   /**

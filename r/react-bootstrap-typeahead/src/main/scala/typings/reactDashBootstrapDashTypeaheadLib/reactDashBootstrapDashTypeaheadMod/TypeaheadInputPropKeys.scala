@@ -5,5 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.bsSize
+  - reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.disabled
+  - reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.inputProps
+  - reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.labelKey
+  - reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.multiple
+  - reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.onBlur
+  - reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.onChange
+  - reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.onFocus
+  - reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.onKeyDown
+  - reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.placeholder
+  - reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.renderToken
+  - reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.selected
+*/
 trait TypeaheadInputPropKeys extends js.Object
 

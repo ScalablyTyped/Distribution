@@ -5,5 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.FILE_FAILED
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.FILE_ACCESS_DENIED
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.FILE_NO_SPACE
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.FILE_NAME_TOO_LONG
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.FILE_TOO_LARGE
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.FILE_VIRUS_INFECTED
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.FILE_TRANSIENT_ERROR
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.FILE_BLOCKED
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.FILE_SECURITY_CHECK_FAILED
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.FILE_TOO_SHORT
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.NETWORK_FAILED
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.NETWORK_TIMEOUT
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.NETWORK_DISCONNECTED
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.NETWORK_SERVER_DOWN
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.NETWORK_INVALID_REQUEST
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.SERVER_FAILED
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.SERVER_NO_RANGE
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.SERVER_BAD_CONTENT
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.SERVER_UNAUTHORIZED
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.SERVER_CERT_PROBLEM
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.SERVER_FORBIDDEN
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.USER_CANCELED
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.USER_SHUTDOWN
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.CRASH
+*/
 trait InterruptReason extends js.Object
 

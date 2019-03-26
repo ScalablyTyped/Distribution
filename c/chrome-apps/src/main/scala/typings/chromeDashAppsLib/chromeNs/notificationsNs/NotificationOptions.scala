@@ -84,7 +84,7 @@ trait NotificationOptions extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_BASIC[keyof chrome-apps.Anon_BASIC] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.basic | chromeDashAppsLib.chromeDashAppsLibStrings.image | chromeDashAppsLib.chromeDashAppsLibStrings.list | chromeDashAppsLib.chromeDashAppsLibStrings.progress
     ]
   ]
 }
@@ -100,7 +100,7 @@ object NotificationOptions {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_BASIC[keyof chrome-apps.Anon_BASIC] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.basic | chromeDashAppsLib.chromeDashAppsLibStrings.image | chromeDashAppsLib.chromeDashAppsLibStrings.list | chromeDashAppsLib.chromeDashAppsLibStrings.progress
       ]
     ],
     appIconMaskUrl: java.lang.String = null,

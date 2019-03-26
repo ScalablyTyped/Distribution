@@ -117,8 +117,8 @@ trait Collection[TSchema] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#drop */
   def drop(): js.Promise[_] = js.native
   def drop(callback: MongoCallback[_]): scala.Unit = js.native
-  def drop(options: mongodbLib.Anon_SessionClientSession_1815921195): js.Promise[_] = js.native
-  def drop(options: mongodbLib.Anon_SessionClientSession_1815921195, callback: MongoCallback[_]): scala.Unit = js.native
+  def drop(options: mongodbLib.Anon_SessionClientSession_327439633): js.Promise[_] = js.native
+  def drop(options: mongodbLib.Anon_SessionClientSession_327439633, callback: MongoCallback[_]): scala.Unit = js.native
   def dropIndex(indexName: java.lang.String): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#dropIndex */
   def dropIndex(indexName: java.lang.String, callback: MongoCallback[_]): scala.Unit = js.native
@@ -789,18 +789,18 @@ trait Collection[TSchema] extends js.Object {
   def indexExists(indexes: java.lang.String): js.Promise[scala.Boolean] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#indexExists */
   def indexExists(indexes: java.lang.String, callback: MongoCallback[scala.Boolean]): scala.Unit = js.native
-  def indexExists(indexes: java.lang.String, options: mongodbLib.Anon_SessionClientSession_1815921195): js.Promise[scala.Boolean] = js.native
+  def indexExists(indexes: java.lang.String, options: mongodbLib.Anon_SessionClientSession_327439633): js.Promise[scala.Boolean] = js.native
   def indexExists(
     indexes: java.lang.String,
-    options: mongodbLib.Anon_SessionClientSession_1815921195,
+    options: mongodbLib.Anon_SessionClientSession_327439633,
     callback: MongoCallback[scala.Boolean]
   ): scala.Unit = js.native
   def indexExists(indexes: js.Array[java.lang.String]): js.Promise[scala.Boolean] = js.native
   def indexExists(indexes: js.Array[java.lang.String], callback: MongoCallback[scala.Boolean]): scala.Unit = js.native
-  def indexExists(indexes: js.Array[java.lang.String], options: mongodbLib.Anon_SessionClientSession_1815921195): js.Promise[scala.Boolean] = js.native
+  def indexExists(indexes: js.Array[java.lang.String], options: mongodbLib.Anon_SessionClientSession_327439633): js.Promise[scala.Boolean] = js.native
   def indexExists(
     indexes: js.Array[java.lang.String],
-    options: mongodbLib.Anon_SessionClientSession_1815921195,
+    options: mongodbLib.Anon_SessionClientSession_327439633,
     callback: MongoCallback[scala.Boolean]
   ): scala.Unit = js.native
   def indexInformation(): js.Promise[_] = js.native
@@ -811,7 +811,7 @@ trait Collection[TSchema] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#indexes */
   def indexes(): js.Promise[_] = js.native
   def indexes(callback: MongoCallback[_]): scala.Unit = js.native
-  def indexes(options: mongodbLib.Anon_SessionClientSession_1815921195): js.Promise[_] = js.native
+  def indexes(options: mongodbLib.Anon_SessionClientSession_327439633): js.Promise[_] = js.native
   def indexes(options: mongodbLib.Anon_SessionClientSession, callback: MongoCallback[_]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#initializeOrderedBulkOp */
   def initializeOrderedBulkOp(): OrderedBulkOperation = js.native
@@ -852,8 +852,8 @@ trait Collection[TSchema] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#isCapped */
   def isCapped(): js.Promise[_] = js.native
   def isCapped(callback: MongoCallback[_]): scala.Unit = js.native
-  def isCapped(options: mongodbLib.Anon_SessionClientSession_1815921195): js.Promise[_] = js.native
-  def isCapped(options: mongodbLib.Anon_SessionClientSession_1815921195, callback: MongoCallback[_]): scala.Unit = js.native
+  def isCapped(options: mongodbLib.Anon_SessionClientSession_327439633): js.Promise[_] = js.native
+  def isCapped(options: mongodbLib.Anon_SessionClientSession_327439633, callback: MongoCallback[_]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#listIndexes */
   def listIndexes(): CommandCursor = js.native
   def listIndexes(options: mongodbLib.Anon_BatchSizeReadPreference): CommandCursor = js.native
@@ -897,8 +897,8 @@ trait Collection[TSchema] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#options */
   def options(): js.Promise[_] = js.native
   def options(callback: MongoCallback[_]): scala.Unit = js.native
-  def options(options: mongodbLib.Anon_SessionClientSession_1815921195): js.Promise[_] = js.native
-  def options(options: mongodbLib.Anon_SessionClientSession_1815921195, callback: MongoCallback[_]): scala.Unit = js.native
+  def options(options: mongodbLib.Anon_SessionClientSession_327439633): js.Promise[_] = js.native
+  def options(options: mongodbLib.Anon_SessionClientSession_327439633, callback: MongoCallback[_]): scala.Unit = js.native
   def parallelCollectionScan(): js.Promise[js.Array[Cursor[_]]] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#parallelCollectionScan */
   def parallelCollectionScan(callback: MongoCallback[js.Array[Cursor[_]]]): scala.Unit = js.native
@@ -907,8 +907,8 @@ trait Collection[TSchema] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#reIndex */
   def reIndex(): js.Promise[_] = js.native
   def reIndex(callback: MongoCallback[_]): scala.Unit = js.native
-  def reIndex(options: mongodbLib.Anon_SessionClientSession_1815921195): js.Promise[_] = js.native
-  def reIndex(options: mongodbLib.Anon_SessionClientSession_1815921195, callback: MongoCallback[_]): scala.Unit = js.native
+  def reIndex(options: mongodbLib.Anon_SessionClientSession_327439633): js.Promise[_] = js.native
+  def reIndex(options: mongodbLib.Anon_SessionClientSession_327439633, callback: MongoCallback[_]): scala.Unit = js.native
   /** @deprecated Use use deleteOne, deleteMany or bulkWrite */
   def remove(selector: js.Object): js.Promise[WriteOpResult] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#remove */

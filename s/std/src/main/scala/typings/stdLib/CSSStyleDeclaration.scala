@@ -479,6 +479,10 @@ trait CSSStyleDeclaration
 
 @JSGlobal("CSSStyleDeclaration")
 @js.native
+class CSSStyleDeclarationCls () extends CSSStyleDeclaration
+
+@JSGlobal("CSSStyleDeclaration")
+@js.native
 object CSSStyleDeclaration
   extends org.scalablytyped.runtime.Instantiable0[CSSStyleDeclaration]
 

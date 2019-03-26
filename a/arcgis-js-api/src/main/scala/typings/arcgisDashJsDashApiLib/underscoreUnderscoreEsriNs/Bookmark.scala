@@ -27,3 +27,9 @@ trait Bookmark extends Accessor {
   var thumbnail: BookmarkThumbnail = js.native
 }
 
+@JSGlobal("__esri.Bookmark")
+@js.native
+class BookmarkCls () extends Bookmark {
+  def this(properties: BookmarkProperties) = this()
+}
+

@@ -1981,6 +1981,11 @@ object PinpointEmailNs extends js.Object {
   
   val TypesNs: this.type = js.native
   type AmazonResourceName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.USE_DEFAULT_VALUE
+    - awsDashSdkLib.awsDashSdkLibStrings.REJECT_MESSAGE
+    - java.lang.String
+  */
   type BehaviorOnMxFailure = _BehaviorOnMxFailure | java.lang.String
   type BlacklistEntries = js.Array[BlacklistEntry]
   type BlacklistItemName = java.lang.String
@@ -1996,10 +2001,29 @@ object PinpointEmailNs extends js.Object {
   type DedicatedIpList = js.Array[DedicatedIp]
   type DefaultDimensionValue = java.lang.String
   type DeliverabilityTestReports = js.Array[DeliverabilityTestReport]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETED
+    - java.lang.String
+  */
   type DeliverabilityTestStatus = _DeliverabilityTestStatus | java.lang.String
   type DeliverabilityTestSubject = java.lang.String
   type DimensionName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.MESSAGE_TAG
+    - awsDashSdkLib.awsDashSdkLibStrings.EMAIL_HEADER
+    - awsDashSdkLib.awsDashSdkLibStrings.LINK_TAG
+    - java.lang.String
+  */
   type DimensionValueSource = _DimensionValueSource | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCESS
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.TEMPORARY_FAILURE
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_STARTED
+    - java.lang.String
+  */
   type DkimStatus = _DkimStatus | java.lang.String
   type DnsToken = java.lang.String
   type DnsTokenList = js.Array[DnsToken]
@@ -2009,11 +2033,28 @@ object PinpointEmailNs extends js.Object {
   type Enabled = scala.Boolean
   type EventDestinationName = java.lang.String
   type EventDestinations = js.Array[EventDestination]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SEND
+    - awsDashSdkLib.awsDashSdkLibStrings.REJECT
+    - awsDashSdkLib.awsDashSdkLibStrings.BOUNCE
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLAINT
+    - awsDashSdkLib.awsDashSdkLibStrings.DELIVERY
+    - awsDashSdkLib.awsDashSdkLibStrings.OPEN
+    - awsDashSdkLib.awsDashSdkLibStrings.CLICK
+    - awsDashSdkLib.awsDashSdkLibStrings.RENDERING_FAILURE
+    - java.lang.String
+  */
   type EventType = _EventType | java.lang.String
   type EventTypes = js.Array[EventType]
   type GeneralEnforcementStatus = java.lang.String
   type Identity = java.lang.String
   type IdentityInfoList = js.Array[IdentityInfo]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.EMAIL_ADDRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.DOMAIN
+    - awsDashSdkLib.awsDashSdkLibStrings.MANAGED_DOMAIN
+    - java.lang.String
+  */
   type IdentityType = _IdentityType | java.lang.String
   type Ip = java.lang.String
   type IspName = java.lang.String
@@ -2021,6 +2062,13 @@ object PinpointEmailNs extends js.Object {
   type LastFreshStart = stdLib.Date
   type ListOfDedicatedIpPools = js.Array[PoolName]
   type MailFromDomainName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCESS
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.TEMPORARY_FAILURE
+    - java.lang.String
+  */
   type MailFromDomainStatus = _MailFromDomainStatus | java.lang.String
   type Max24HourSend = scala.Double
   type MaxItems = scala.Double
@@ -2043,7 +2091,17 @@ object PinpointEmailNs extends js.Object {
   type SentLast24Hours = scala.Double
   type Timestamp = stdLib.Date
   type Volume = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.DONE
+    - java.lang.String
+  */
   type WarmupStatus = _WarmupStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2018-07-26`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

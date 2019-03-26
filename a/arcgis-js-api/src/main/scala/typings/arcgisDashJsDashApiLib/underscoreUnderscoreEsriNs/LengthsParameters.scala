@@ -48,3 +48,9 @@ trait LengthsParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.LengthsParameters")
+@js.native
+class LengthsParametersCls () extends LengthsParameters {
+  def this(properties: LengthsParametersProperties) = this()
+}
+

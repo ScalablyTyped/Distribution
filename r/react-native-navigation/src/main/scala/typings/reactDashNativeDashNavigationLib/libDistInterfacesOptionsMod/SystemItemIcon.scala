@@ -5,5 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.done
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.cancel
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.edit
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.save
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.add
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.flexibleSpace
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.fixedSpace
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.compose
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.reply
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.action
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.organize
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.bookmarks
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.search
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.refresh
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.stop
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.camera
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.trash
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.play
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.pause
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.rewind
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.fastForward
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.undo
+  - reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.redo
+*/
 trait SystemItemIcon extends js.Object
 

@@ -39,3 +39,9 @@ trait LayerView
   var visible: scala.Boolean = js.native
 }
 
+@JSGlobal("__esri.LayerView")
+@js.native
+class LayerViewCls () extends LayerView {
+  def this(properties: LayerViewProperties) = this()
+}
+

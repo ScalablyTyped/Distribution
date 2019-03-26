@@ -10,7 +10,7 @@ trait SketchPickerProps
   var disableAlpha: js.UndefOr[scala.Boolean] = js.undefined
   var onSwatchHover: js.UndefOr[
     js.Function2[
-      /* color */ reactDashColorLib.reactDashColorMod.Color, 
+      /* color */ reactDashColorLib.reactDashColorMod.ColorResult, 
       /* event */ stdLib.MouseEvent, 
       scala.Unit
     ]
@@ -27,7 +27,7 @@ object SketchPickerProps {
     key: reactLib.reactMod.ReactNs.Key = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
-    onSwatchHover: (/* color */ reactDashColorLib.reactDashColorMod.Color, /* event */ stdLib.MouseEvent) => scala.Unit = null,
+    onSwatchHover: (/* color */ reactDashColorLib.reactDashColorMod.ColorResult, /* event */ stdLib.MouseEvent) => scala.Unit = null,
     presetColors: js.Array[java.lang.String] = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[SketchPicker] = null,
     width: java.lang.String = null

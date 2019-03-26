@@ -33,3 +33,9 @@ trait PortalBasemapsSource extends LocalBasemapsSource {
   var updateBasemapsCallback: js.Function = js.native
 }
 
+@JSGlobal("__esri.PortalBasemapsSource")
+@js.native
+class PortalBasemapsSourceCls () extends PortalBasemapsSource {
+  def this(properties: PortalBasemapsSourceProperties) = this()
+}
+

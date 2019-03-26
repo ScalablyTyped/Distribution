@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in 'className' | 'style' ]: react.react.InputHTMLAttributes<'input'>[P]} */ trait AutosizeInputProps extends js.Object {
+- Dropped {[ P in 'className' | 'style' ]: react.react.React.InputHTMLAttributes<'input'>[P]} */ trait AutosizeInputProps extends js.Object {
   var inputClassName: js.UndefOr[java.lang.String] = js.undefined
   var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.LegacyRef[stdLib.HTMLInputElement]] = js.undefined
   var inputStyle: js.UndefOr[

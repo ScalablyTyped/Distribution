@@ -1159,6 +1159,11 @@ object CodeStarNs extends js.Object {
   type UserArn = java.lang.String
   type UserProfileDisplayName = java.lang.String
   type UserProfilesList = js.Array[UserProfileSummary]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-04-19`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

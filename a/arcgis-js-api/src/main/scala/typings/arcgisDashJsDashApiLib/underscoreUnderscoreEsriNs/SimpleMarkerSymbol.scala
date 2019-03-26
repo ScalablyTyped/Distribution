@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 trait SimpleMarkerSymbol
   extends MarkerSymbol
      with arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbolsNs.MarkerSymbol
-     with Symbol2D
      with arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbolsNs.Symbol2D
+     with Symbol2D
      with symbolsMarkerSymbol {
   /**
     * The outline of the marker symbol. The `color` property of this object directly modifies the overall color of marker symbols defined with the `cross` or `x` [style](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#style).
@@ -60,5 +60,25 @@ trait SimpleMarkerSymbol
     */
   @JSName("type")
   val type_SimpleMarkerSymbol: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`simple-marker` = js.native
+}
+
+@JSGlobal("__esri.SimpleMarkerSymbol")
+@js.native
+/**
+  * SimpleMarkerSymbol is used for rendering 2D [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries with a simple shape and [color](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#color) in either a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). It may be filled with a solid [color](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#color) and have an optional [outline](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#outline), which is defined with a [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html)
+  */
+class SimpleMarkerSymbolCls () extends SimpleMarkerSymbol {
+  def this(properties: SimpleMarkerSymbolProperties) = this()
+  /**
+    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    *
+    *
+    */
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 

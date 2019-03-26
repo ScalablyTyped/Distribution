@@ -12,6 +12,12 @@ trait MediaElementAudioSourceNode extends AudioNode {
 
 @JSGlobal("MediaElementAudioSourceNode")
 @js.native
+class MediaElementAudioSourceNodeCls protected () extends MediaElementAudioSourceNode {
+  def this(context: AudioContext, options: MediaElementAudioSourceOptions) = this()
+}
+
+@JSGlobal("MediaElementAudioSourceNode")
+@js.native
 object MediaElementAudioSourceNode
   extends org.scalablytyped.runtime.Instantiable2[
       /* context */ AudioContext, 

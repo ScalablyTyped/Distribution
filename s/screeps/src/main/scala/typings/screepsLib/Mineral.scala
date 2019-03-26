@@ -32,6 +32,49 @@ trait Mineral[T /* <: MineralConstant */] extends RoomObject {
   var ticksToRegeneration: scala.Double
 }
 
+@JSGlobal("Mineral")
+@js.native
+class MineralCls protected () extends Mineral[MineralConstant] {
+  def this(id: java.lang.String) = this()
+  /**
+    * The density of this mineral deposit, one of the `DENSITY_*` constants.
+    */
+  /* CompleteClass */
+  override var density: scala.Double = js.native
+  /**
+    * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
+    */
+  /* CompleteClass */
+  override var id: java.lang.String = js.native
+  /**
+    * The remaining amount of resources.
+    */
+  /* CompleteClass */
+  override var mineralAmount: scala.Double = js.native
+  /**
+    * The resource type, one of the `RESOURCE_*` constants.
+    */
+  /* CompleteClass */
+  override var mineralType: MineralConstant = js.native
+  /**
+    * An object representing the position of this object in the room.
+    */
+  /* CompleteClass */
+  override var pos: RoomPosition = js.native
+  /**
+    * The link to the Room object. May be undefined in case if an object is a
+    * flag or a construction site and is placed in a room that is not visible
+    * to you.
+    */
+  /* CompleteClass */
+  override var room: js.UndefOr[Room] = js.native
+  /**
+    * The remaining time after which the deposit will be refilled.
+    */
+  /* CompleteClass */
+  override var ticksToRegeneration: scala.Double = js.native
+}
+
 object Mineral {
   @scala.inline
   def apply[T /* <: MineralConstant */](

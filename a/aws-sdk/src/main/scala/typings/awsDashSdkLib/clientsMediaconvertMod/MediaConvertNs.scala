@@ -9,20 +9,41 @@ import scala.scalajs.js.annotation._
 @js.native
 object MediaConvertNs extends js.Object {
   trait AacSettings extends js.Object {
+    /**
+      * Choose BROADCASTER_MIXED_AD when the input contains pre-mixed main audio + audio description (AD) as a stereo pair. The value for AudioType will be set to 3, which signals to downstream systems that this stream contains "broadcaster mixed AD". Note that the input received by the encoder must contain pre-mixed audio; the encoder does not perform the mixing. When you choose BROADCASTER_MIXED_AD, the encoder ignores any values you provide in AudioType and  FollowInputAudioType. Choose NORMAL when the input does not contain pre-mixed audio + audio description (AD). In this case, the encoder will use any values you provide for AudioType and FollowInputAudioType.
+      */
     var AudioDescriptionBroadcasterMix: js.UndefOr[AacAudioDescriptionBroadcasterMix] = js.undefined
     /**
       * Average bitrate in bits/second. The set of valid values for this setting is: 6000, 8000, 10000, 12000, 14000, 16000, 20000, 24000, 28000, 32000, 40000, 48000, 56000, 64000, 80000, 96000, 112000, 128000, 160000, 192000, 224000, 256000, 288000, 320000, 384000, 448000, 512000, 576000, 640000, 768000, 896000, 1024000. The value you set is also constrained by the values you choose for Profile (codecProfile), Bitrate control mode (codingMode), and Sample rate (sampleRate). Default values depend on Bitrate control mode and Profile.
       */
     var Bitrate: js.UndefOr[__integerMin6000Max1024000] = js.undefined
+    /**
+      * AAC Profile.
+      */
     var CodecProfile: js.UndefOr[AacCodecProfile] = js.undefined
+    /**
+      * Mono (Audio Description), Mono, Stereo, or 5.1 channel layout. Valid values depend on rate control mode and profile. "1.0 - Audio Description (Receiver Mix)" setting receives a stereo description plus control track and emits a mono AAC encode of the description track, with control data emitted in the PES header as per ETSI TS 101 154 Annex E.
+      */
     var CodingMode: js.UndefOr[AacCodingMode] = js.undefined
+    /**
+      * Rate Control Mode.
+      */
     var RateControlMode: js.UndefOr[AacRateControlMode] = js.undefined
+    /**
+      * Enables LATM/LOAS AAC output. Note that if you use LATM/LOAS AAC in an output, you must choose "No container" for the output container.
+      */
     var RawFormat: js.UndefOr[AacRawFormat] = js.undefined
     /**
       * Sample rate in Hz. Valid values depend on rate control mode and profile.
       */
     var SampleRate: js.UndefOr[__integerMin8000Max96000] = js.undefined
+    /**
+      * Use MPEG-2 AAC instead of MPEG-4 AAC audio for raw or MPEG-2 Transport Stream containers.
+      */
     var Specification: js.UndefOr[AacSpecification] = js.undefined
+    /**
+      * VBR Quality Level - Only used if rate_control_mode is VBR.
+      */
     var VbrQuality: js.UndefOr[AacVbrQuality] = js.undefined
   }
   
@@ -31,14 +52,29 @@ object MediaConvertNs extends js.Object {
       * Average bitrate in bits/second. Valid bitrates depend on the coding mode.
       */
     var Bitrate: js.UndefOr[__integerMin64000Max640000] = js.undefined
+    /**
+      * Specifies the "Bitstream Mode" (bsmod) for the emitted AC-3 stream. See ATSC A/52-2012 for background on these values.
+      */
     var BitstreamMode: js.UndefOr[Ac3BitstreamMode] = js.undefined
+    /**
+      * Dolby Digital coding mode. Determines number of channels.
+      */
     var CodingMode: js.UndefOr[Ac3CodingMode] = js.undefined
     /**
       * Sets the dialnorm for the output. If blank and input audio is Dolby Digital, dialnorm will be passed through.
       */
     var Dialnorm: js.UndefOr[__integerMin1Max31] = js.undefined
+    /**
+      * If set to FILM_STANDARD, adds dynamic range compression signaling to the output bitstream as defined in the Dolby Digital specification.
+      */
     var DynamicRangeCompressionProfile: js.UndefOr[Ac3DynamicRangeCompressionProfile] = js.undefined
+    /**
+      * Applies a 120Hz lowpass filter to the LFE channel prior to encoding. Only valid with 3_2_LFE coding mode.
+      */
     var LfeFilter: js.UndefOr[Ac3LfeFilter] = js.undefined
+    /**
+      * When set to FOLLOW_INPUT, encoder metadata will be sourced from the DD, DD+, or DolbyE decoder that supplied this audio data. If audio was not supplied from one of these streams, then the static metadata settings will be used.
+      */
     var MetadataControl: js.UndefOr[Ac3MetadataControl] = js.undefined
     /**
       * Sample rate in hz. Sample rate is always 48000.
@@ -85,16 +121,40 @@ object MediaConvertNs extends js.Object {
   trait AssociateCertificateResponse extends js.Object
   
   trait AudioCodecSettings extends js.Object {
+    /**
+      * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value AAC. The service accepts one of two mutually exclusive groups of AAC settings--VBR and CBR. To select one of these modes, set the value of Bitrate control mode (rateControlMode) to "VBR" or "CBR".  In VBR mode, you control the audio quality with the setting VBR quality (vbrQuality). In CBR mode, you use the setting Bitrate (bitrate). Defaults and valid values depend on the rate control mode.
+      */
     var AacSettings: js.UndefOr[AacSettings] = js.undefined
+    /**
+      * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value AC3.
+      */
     var Ac3Settings: js.UndefOr[Ac3Settings] = js.undefined
+    /**
+      * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value AIFF.
+      */
     var AiffSettings: js.UndefOr[AiffSettings] = js.undefined
+    /**
+      * Type of Audio codec.
+      */
     var Codec: js.UndefOr[AudioCodec] = js.undefined
+    /**
+      * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value EAC3.
+      */
     var Eac3Settings: js.UndefOr[Eac3Settings] = js.undefined
+    /**
+      * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value MP2.
+      */
     var Mp2Settings: js.UndefOr[Mp2Settings] = js.undefined
+    /**
+      * Required when you set (Codec) under (AudioDescriptions)>(CodecSettings) to the value WAV.
+      */
     var WavSettings: js.UndefOr[WavSettings] = js.undefined
   }
   
   trait AudioDescription extends js.Object {
+    /**
+      * Advanced audio normalization settings.
+      */
     var AudioNormalizationSettings: js.UndefOr[AudioNormalizationSettings] = js.undefined
     /**
       * Specifies which audio data to use from each input. In the simplest case, specify an "Audio Selector":#inputs-audio_selector by name based on its order within each input. For example if you specify "Audio Selector 3", then the third audio selector will be used from each input. If an input does not have an "Audio Selector 3", then the audio selector marked as "default" in that input will be used. If there is no audio selector marked as "default", silence will be inserted for the duration of that input. Alternatively, an "Audio Selector Group":#inputs-audio_selector_group name may be specified, with similar default/silence behavior. If no audio_source_name is specified, then "Audio Selector 1" will be chosen automatically.
@@ -104,7 +164,13 @@ object MediaConvertNs extends js.Object {
       * Applies only if Follow Input Audio Type is unchecked (false). A number between 0 and 255. The following are defined in ISO-IEC 13818-1: 0 = Undefined, 1 = Clean Effects, 2 = Hearing Impaired, 3 = Visually Impaired Commentary, 4-255 = Reserved.
       */
     var AudioType: js.UndefOr[__integerMin0Max255] = js.undefined
+    /**
+      * When set to FOLLOW_INPUT, if the input contains an ISO 639 audio_type, then that value is passed through to the output. If the input contains no ISO 639 audio_type, the value in Audio Type is included in the output. Otherwise the value in Audio Type is included in the output. Note that this field and audioType are both ignored if audioDescriptionBroadcasterMix is set to BROADCASTER_MIXED_AD.
+      */
     var AudioTypeControl: js.UndefOr[AudioTypeControl] = js.undefined
+    /**
+      * Audio codec settings (CodecSettings) under (AudioDescriptions) contains the group of settings related to audio encoding. The settings in this group vary depending on the value you choose for Audio codec (Codec). For each codec enum you choose, define the corresponding settings object. The following lists the codec enum, settings object pairs. * AAC, AacSettings * MP2, Mp2Settings * WAV, WavSettings * AIFF, AiffSettings * AC3, Ac3Settings * EAC3, Eac3Settings
+      */
     var CodecSettings: js.UndefOr[AudioCodecSettings] = js.undefined
     /**
       * Specify the language for this audio output track, using the ISO 639-2 or ISO 639-3 three-letter language code. The language specified will be used when 'Follow Input Language Code' is not selected or when 'Follow Input Language Code' is selected but there is no ISO 639 language code specified by the input.
@@ -114,6 +180,9 @@ object MediaConvertNs extends js.Object {
       * Indicates the language of the audio output track. The ISO 639 language specified in the 'Language Code' drop down will be used when 'Follow Input Language Code' is not selected or when 'Follow Input Language Code' is selected but there is no ISO 639 language code specified by the input.
       */
     var LanguageCode: js.UndefOr[LanguageCode] = js.undefined
+    /**
+      * Choosing FOLLOW_INPUT will cause the ISO 639 language code of the output to follow the ISO 639 language code of the input. The language specified for languageCode' will be used when USE_CONFIGURED is selected or when FOLLOW_INPUT is selected but there is no ISO 639 language code specified by the input.
+      */
     var LanguageCodeControl: js.UndefOr[AudioLanguageCodeControl] = js.undefined
     /**
       * Advanced audio remixing settings.
@@ -126,13 +195,25 @@ object MediaConvertNs extends js.Object {
   }
   
   trait AudioNormalizationSettings extends js.Object {
+    /**
+      * Audio normalization algorithm to use. 1770-1 conforms to the CALM Act specification, 1770-2 conforms to the EBU R-128 specification.
+      */
     var Algorithm: js.UndefOr[AudioNormalizationAlgorithm] = js.undefined
+    /**
+      * When enabled the output audio is corrected using the chosen algorithm. If disabled, the audio will be measured but not adjusted.
+      */
     var AlgorithmControl: js.UndefOr[AudioNormalizationAlgorithmControl] = js.undefined
     /**
       * Content measuring above this level will be corrected to the target level. Content measuring below this level will not be corrected. Gating only applies when not using real_time_correction.
       */
     var CorrectionGateLevel: js.UndefOr[__integerMinNegative70Max0] = js.undefined
+    /**
+      * If set to LOG, log each output's audio track loudness to a CSV file.
+      */
     var LoudnessLogging: js.UndefOr[AudioNormalizationLoudnessLogging] = js.undefined
+    /**
+      * If set to TRUE_PEAK, calculate and log the TruePeak for each output's audio track loudness.
+      */
     var PeakCalculation: js.UndefOr[AudioNormalizationPeakCalculation] = js.undefined
     /**
       * Target LKFS(loudness) to adjust volume to. If no value is entered, a default value will be used according to the chosen algorithm. The CALM Act (1770-1) recommends a target of -24 LKFS. The EBU R-128 specification (1770-2) recommends a target of -23 LKFS.
@@ -145,6 +226,9 @@ object MediaConvertNs extends js.Object {
       * Selects a specific language code from within an audio source, using the ISO 639-2 or ISO 639-3 three-letter language code
       */
     var CustomLanguageCode: js.UndefOr[__stringMin3Max3PatternAZaZ3] = js.undefined
+    /**
+      * Enable this setting on one audio selector to set it as the default for the job. The service uses this default for outputs where it can't find the specified input audio. If you don't set a default, those outputs have no audio.
+      */
     var DefaultSelection: js.UndefOr[AudioDefaultSelection] = js.undefined
     /**
       * Specifies audio data from an external file source.
@@ -172,6 +256,9 @@ object MediaConvertNs extends js.Object {
       * Use these settings to reorder the audio channels of one input to match those of another input. This allows you to combine the two files into a single output, one after the other.
       */
     var RemixSettings: js.UndefOr[RemixSettings] = js.undefined
+    /**
+      * Specifies the type of the audio selector.
+      */
     var SelectorType: js.UndefOr[AudioSelectorType] = js.undefined
     /**
       * Identify a track from the input audio to include in this selector by entering the track index number. To include several tracks in a single audio selector, specify multiple tracks as follows. Using the console, enter a comma-separated list. For examle, type "1,2,3" to include tracks 1 through 3. Specifying directly in your JSON job file, provide the track numbers in an array. For example, "tracks": [1,2,3].
@@ -194,12 +281,22 @@ object MediaConvertNs extends js.Object {
   }
   
   trait BurninDestinationSettings extends js.Object {
+    /**
+      * If no explicit x_position or y_position is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
+      */
     var Alignment: js.UndefOr[BurninSubtitleAlignment] = js.undefined
+    /**
+      * Specifies the color of the rectangle behind the captions.
+    All burn-in and DVB-Sub font settings must match.
+      */
     var BackgroundColor: js.UndefOr[BurninSubtitleBackgroundColor] = js.undefined
     /**
       * Specifies the opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter blank is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.
       */
     var BackgroundOpacity: js.UndefOr[__integerMin0Max255] = js.undefined
+    /**
+      * Specifies the color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
+      */
     var FontColor: js.UndefOr[BurninSubtitleFontColor] = js.undefined
     /**
       * Specifies the opacity of the burned-in captions. 255 is opaque; 0 is transparent.
@@ -219,11 +316,18 @@ object MediaConvertNs extends js.Object {
       * A positive integer indicates the exact font size in points. Set to 0 for automatic font size selection. All burn-in and DVB-Sub font settings must match.
       */
     var FontSize: js.UndefOr[__integerMin0Max96] = js.undefined
+    /**
+      * Specifies font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
+      */
     var OutlineColor: js.UndefOr[BurninSubtitleOutlineColor] = js.undefined
     /**
       * Specifies font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
       */
     var OutlineSize: js.UndefOr[__integerMin0Max10] = js.undefined
+    /**
+      * Specifies the color of the shadow cast by the captions.
+    All burn-in and DVB-Sub font settings must match.
+      */
     var ShadowColor: js.UndefOr[BurninSubtitleShadowColor] = js.undefined
     /**
       * Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter blank is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.
@@ -237,6 +341,9 @@ object MediaConvertNs extends js.Object {
       * Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text. All burn-in and DVB-Sub font settings must match.
       */
     var ShadowYOffset: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined
+    /**
+      * Only applies to jobs with input captions in Teletext or STL formats. Specify whether the spacing between letters in your captions is set by the captions grid or varies depending on letter width. Choose fixed grid to conform to the spacing specified in the captions file more accurately. Choose proportional to make the text easier to read if the captions are closed caption.
+      */
     var TeletextSpacing: js.UndefOr[BurninSubtitleTeletextSpacing] = js.undefined
     /**
       * Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit x_position is provided, the horizontal caption position will be determined by the alignment parameter. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
@@ -266,6 +373,9 @@ object MediaConvertNs extends js.Object {
       * Indicates the language of the caption output track, using the ISO 639-2 or ISO 639-3 three-letter language code. For most captions output formats, the encoder puts this language information in the output captions metadata. If your output captions format is DVB-Sub or Burn in, the encoder uses this language information to choose the font language for rendering the captions text.
       */
     var CustomLanguageCode: js.UndefOr[__stringMin3Max3PatternAZaZ3] = js.undefined
+    /**
+      * Specific settings required by destination type. Note that burnin_destination_settings are not available if the source of the caption data is Embedded or Teletext.
+      */
     var DestinationSettings: js.UndefOr[CaptionDestinationSettings] = js.undefined
     /**
       * Specify the language of this captions output track. For most captions output formats, the encoder puts this language information in the output captions metadata. If your output captions format is DVB-Sub or Burn in, the encoder uses this language information to choose the font language for rendering the captions text.
@@ -282,6 +392,9 @@ object MediaConvertNs extends js.Object {
       * Indicates the language of the caption output track, using the ISO 639-2 or ISO 639-3 three-letter language code. For most captions output formats, the encoder puts this language information in the output captions metadata. If your output captions format is DVB-Sub or Burn in, the encoder uses this language information to choose the font language for rendering the captions text.
       */
     var CustomLanguageCode: js.UndefOr[__stringMin3Max3PatternAZaZ3] = js.undefined
+    /**
+      * Specific settings required by destination type. Note that burnin_destination_settings are not available if the source of the caption data is Embedded or Teletext.
+      */
     var DestinationSettings: js.UndefOr[CaptionDestinationSettings] = js.undefined
     /**
       * Specify the language of this captions output track. For most captions output formats, the encoder puts this language information in the output captions metadata. If your output captions format is DVB-Sub or Burn in, the encoder uses this language information to choose the font language for rendering the captions text.
@@ -294,12 +407,33 @@ object MediaConvertNs extends js.Object {
   }
   
   trait CaptionDestinationSettings extends js.Object {
+    /**
+      * Burn-In Destination Settings.
+      */
     var BurninDestinationSettings: js.UndefOr[BurninDestinationSettings] = js.undefined
+    /**
+      * Specify the format for this set of captions on this output. The default format is embedded without SCTE-20. Other options are embedded with SCTE-20, burn-in, DVB-sub, SCC, SRT, teletext, TTML, and web-VTT. If you are using SCTE-20, choose SCTE-20 plus embedded (SCTE20_PLUS_EMBEDDED) to create an output that complies with the SCTE-43 spec. To create a non-compliant output where the embedded captions come first, choose Embedded plus SCTE-20 (EMBEDDED_PLUS_SCTE20).
+      */
     var DestinationType: js.UndefOr[CaptionDestinationType] = js.undefined
+    /**
+      * DVB-Sub Destination Settings
+      */
     var DvbSubDestinationSettings: js.UndefOr[DvbSubDestinationSettings] = js.undefined
+    /**
+      * Settings specific to embedded/ancillary caption outputs, including 608/708 Channel destination number.
+      */
     var EmbeddedDestinationSettings: js.UndefOr[EmbeddedDestinationSettings] = js.undefined
+    /**
+      * Settings for SCC caption output.
+      */
     var SccDestinationSettings: js.UndefOr[SccDestinationSettings] = js.undefined
+    /**
+      * Settings for Teletext caption output
+      */
     var TeletextDestinationSettings: js.UndefOr[TeletextDestinationSettings] = js.undefined
+    /**
+      * Settings specific to TTML caption outputs, including Pass style information (TtmlStylePassthrough).
+      */
     var TtmlDestinationSettings: js.UndefOr[TtmlDestinationSettings] = js.undefined
   }
   
@@ -312,16 +446,40 @@ object MediaConvertNs extends js.Object {
       * The specific language to extract from source. If input is SCTE-27, complete this field and/or PID to select the caption language to extract. If input is DVB-Sub and output is Burn-in or SMPTE-TT, complete this field and/or PID to select the caption language to extract. If input is DVB-Sub that is being passed through, omit this field (and PID field); there is no way to extract a specific language with pass-through captions.
       */
     var LanguageCode: js.UndefOr[LanguageCode] = js.undefined
+    /**
+      * Source settings (SourceSettings) contains the group of settings for captions in the input.
+      */
     var SourceSettings: js.UndefOr[CaptionSourceSettings] = js.undefined
   }
   
   trait CaptionSourceSettings extends js.Object {
+    /**
+      * Settings for ancillary captions source.
+      */
     var AncillarySourceSettings: js.UndefOr[AncillarySourceSettings] = js.undefined
+    /**
+      * DVB Sub Source Settings
+      */
     var DvbSubSourceSettings: js.UndefOr[DvbSubSourceSettings] = js.undefined
+    /**
+      * Settings for embedded captions Source
+      */
     var EmbeddedSourceSettings: js.UndefOr[EmbeddedSourceSettings] = js.undefined
+    /**
+      * Settings for File-based Captions in Source
+      */
     var FileSourceSettings: js.UndefOr[FileSourceSettings] = js.undefined
+    /**
+      * Use Source (SourceType) to identify the format of your input captions.  The service cannot auto-detect caption format.
+      */
     var SourceType: js.UndefOr[CaptionSourceType] = js.undefined
+    /**
+      * Settings specific to Teletext caption sources, including Page number.
+      */
     var TeletextSourceSettings: js.UndefOr[TeletextSourceSettings] = js.undefined
+    /**
+      * Settings specific to caption sources that are specfied by track number. Sources include IMSC in IMF.
+      */
     var TrackSourceSettings: js.UndefOr[TrackSourceSettings] = js.undefined
   }
   
@@ -344,9 +502,21 @@ object MediaConvertNs extends js.Object {
       * This is a 128-bit, 16-byte hex value represented by a 32-character text string. If this parameter is not set then the Initialization Vector will follow the segment number by default.
       */
     var ConstantInitializationVector: js.UndefOr[__stringMin32Max32Pattern09aFAF32] = js.undefined
+    /**
+      * Encrypts the segments with the given encryption scheme. Leave blank to disable. Selecting 'Disabled' in the web interface also disables encryption.
+      */
     var EncryptionMethod: js.UndefOr[CmafEncryptionType] = js.undefined
+    /**
+      * The Initialization Vector is a 128-bit number used in conjunction with the key for encrypting blocks. If set to INCLUDE, Initialization Vector is listed in the manifest. Otherwise Initialization Vector is not in the manifest.
+      */
     var InitializationVectorInManifest: js.UndefOr[CmafInitializationVectorInManifest] = js.undefined
+    /**
+      * Use these settings to set up encryption with a static key provider.
+      */
     var StaticKeyProvider: js.UndefOr[StaticKeyProvider] = js.undefined
+    /**
+      * Indicates which type of key provider is used for encryption.
+      */
     var Type: js.UndefOr[CmafKeyProviderType] = js.undefined
   }
   
@@ -355,12 +525,22 @@ object MediaConvertNs extends js.Object {
       * A partial URI prefix that will be put in the manifest file at the top level BaseURL element. Can be used if streams are delivered from a different URL than the manifest file.
       */
     var BaseUrl: js.UndefOr[__string] = js.undefined
+    /**
+      * When set to ENABLED, sets #EXT-X-ALLOW-CACHE:no tag, which prevents client from saving media segments for later replay.
+      */
     var ClientCache: js.UndefOr[CmafClientCache] = js.undefined
+    /**
+      * Specification to use (RFC-6381 or the default RFC-4281) during m3u8 playlist generation.
+      */
     var CodecSpecification: js.UndefOr[CmafCodecSpecification] = js.undefined
     /**
       * Use Destination (Destination) to specify the S3 output location and the output filename base. Destination accepts format identifiers. If you do not specify the base filename in the URI, the service will use the filename of the input file. If your job has multiple inputs, the service uses the filename of the first input file.
       */
     var Destination: js.UndefOr[__stringPatternS3] = js.undefined
+    /**
+      * Settings associated with the destination. Will vary based on the type of destination
+      */
+    var DestinationSettings: js.UndefOr[DestinationSettings] = js.undefined
     /**
       * DRM settings.
       */
@@ -369,7 +549,13 @@ object MediaConvertNs extends js.Object {
       * Length of fragments to generate (in seconds). Fragment length must be compatible with GOP size and Framerate. Note that fragments will end on the next keyframe after this number of seconds, so actual fragment length may be longer. When Emit Single File is checked, the fragmentation is internal to a single output file and it does not cause the creation of many output files as in other output types.
       */
     var FragmentLength: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * When set to GZIP, compresses HLS playlist.
+      */
     var ManifestCompression: js.UndefOr[CmafManifestCompression] = js.undefined
+    /**
+      * Indicates whether the output manifest should use floating point values for segment duration.
+      */
     var ManifestDurationFormat: js.UndefOr[CmafManifestDurationFormat] = js.undefined
     /**
       * Minimum time of initially buffered media that is needed to ensure smooth playout.
@@ -379,13 +565,25 @@ object MediaConvertNs extends js.Object {
       * Keep this setting at the default value of 0, unless you are troubleshooting a problem with how devices play back the end of your video asset. If you know that player devices are hanging on the final segment of your video because the length of your final segment is too short, use this setting to specify a minimum final segment length, in seconds. Choose a value that is greater than or equal to 1 and less than your segment length. When you specify a value for this setting, the encoder will combine any final segment that is shorter than the length that you specify with the previous segment. For example, your segment length is 3 seconds and your final segment is .5 seconds without a minimum final segment length; when you set the minimum final segment length to 1, your final segment is 3.5 seconds.
       */
     var MinFinalSegmentLength: js.UndefOr[__doubleMin0Max2147483647] = js.undefined
+    /**
+      * When set to SINGLE_FILE, a single output file is generated, which is internally segmented using the Fragment Length and Segment Length. When set to SEGMENTED_FILES, separate segment files will be created.
+      */
     var SegmentControl: js.UndefOr[CmafSegmentControl] = js.undefined
     /**
       * Use this setting to specify the length, in seconds, of each individual CMAF segment. This value applies to the whole package; that is, to every output in the output group. Note that segments end on the first keyframe after this number of seconds, so the actual segment length might be slightly longer. If you set Segment control (CmafSegmentControl) to single file, the service puts the content of each output in a single file that has metadata that marks these segments. If you set it to segmented files, the service creates multiple files for each output, each with the content of one segment.
       */
     var SegmentLength: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * Include or exclude RESOLUTION attribute for video in EXT-X-STREAM-INF tag of variant manifest.
+      */
     var StreamInfResolution: js.UndefOr[CmafStreamInfResolution] = js.undefined
+    /**
+      * When set to ENABLED, a DASH MPD manifest will be generated for this output.
+      */
     var WriteDashManifest: js.UndefOr[CmafWriteDASHManifest] = js.undefined
+    /**
+      * When set to ENABLED, an Apple HLS manifest will be generated for this output.
+      */
     var WriteHlsManifest: js.UndefOr[CmafWriteHLSManifest] = js.undefined
   }
   
@@ -394,6 +592,9 @@ object MediaConvertNs extends js.Object {
       * Brightness level.
       */
     var Brightness: js.UndefOr[__integerMin1Max100] = js.undefined
+    /**
+      * Determines if colorspace conversion will be performed. If set to _None_, no conversion will be performed. If _Force 601_ or _Force 709_ are selected, conversion will be performed for inputs with differing colorspaces. An input's colorspace can be specified explicitly in the "Video Selector":#inputs-video_selector if necessary.
+      */
     var ColorSpaceConversion: js.UndefOr[ColorSpaceConversion] = js.undefined
     /**
       * Contrast level.
@@ -414,11 +615,29 @@ object MediaConvertNs extends js.Object {
   }
   
   trait ContainerSettings extends js.Object {
+    /**
+      * Container for this output. Some containers require a container settings object. If not specified, the default object will be created.
+      */
     var Container: js.UndefOr[ContainerType] = js.undefined
+    /**
+      * Settings for F4v container
+      */
     var F4vSettings: js.UndefOr[F4vSettings] = js.undefined
+    /**
+      * MPEG-2 TS container settings. These apply to outputs in a File output group when the output's container (ContainerType) is MPEG-2 Transport Stream (M2TS). In these assets, data is organized by the program map table (PMT). Each transport stream program contains subsets of data, including audio, video, and metadata. Each of these subsets of data has a numerical label called a packet identifier (PID). Each transport stream program corresponds to one MediaConvert output. The PMT lists the types of data in a program along with their PID. Downstream systems and players use the program map table to look up the PID for each type of data it accesses and then uses the PIDs to locate specific data within the asset.
+      */
     var M2tsSettings: js.UndefOr[M2tsSettings] = js.undefined
+    /**
+      * Settings for TS segments in HLS
+      */
     var M3u8Settings: js.UndefOr[M3u8Settings] = js.undefined
+    /**
+      * Settings for MOV Container.
+      */
     var MovSettings: js.UndefOr[MovSettings] = js.undefined
+    /**
+      * Settings for MP4 Container
+      */
     var Mp4Settings: js.UndefOr[Mp4Settings] = js.undefined
   }
   
@@ -427,6 +646,9 @@ object MediaConvertNs extends js.Object {
       * This is a beta feature. If you are interested in using this feature, please contact AWS customer support.
       */
     var AccelerationSettings: js.UndefOr[AccelerationSettings] = js.undefined
+    /**
+      * Optional. Choose a tag type that AWS Billing and Cost Management will use to sort your AWS Elemental MediaConvert costs on any billing report that you set up. Any transcoding outputs that don't have an associated tag will appear in your billing report unsorted. If you don't choose a valid value for this field, your job outputs will appear on the billing report unsorted.
+      */
     var BillingTagsSource: js.UndefOr[BillingTagsSource] = js.undefined
     /**
       * Idempotency token for CreateJob operation.
@@ -444,11 +666,14 @@ object MediaConvertNs extends js.Object {
       * Required. The IAM role you use for creating this job. For details about permissions, see the User Guide topic at the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/iam-role.html.
       */
     var Role: __string
+    /**
+      * JobSettings contains all the transcode settings for a job.
+      */
     var Settings: JobSettings
     /**
       * Specify how often MediaConvert sends STATUS_UPDATE events to Amazon CloudWatch Events. Set the interval, in seconds, between status updates. MediaConvert sends an update at this interval from the time the service begins processing your job to the time it completes the transcode or encounters an error.
       */
-    var StatusUpdateIntervalInSecs: js.UndefOr[__integerMin10Max600] = js.undefined
+    var StatusUpdateInterval: js.UndefOr[StatusUpdateInterval] = js.undefined
     /**
       * User-defined metadata that you want to associate with an MediaConvert job. You specify metadata in key/value pairs.
       */
@@ -456,6 +681,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait CreateJobResponse extends js.Object {
+    /**
+      * Each job converts an input file into an output file or files. For more information, see the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+      */
     var Job: js.UndefOr[Job] = js.undefined
   }
   
@@ -480,11 +708,14 @@ object MediaConvertNs extends js.Object {
       * Optional. The queue that jobs created from this template are assigned to. If you don't specify this, jobs will go to the default queue.
       */
     var Queue: js.UndefOr[__string] = js.undefined
+    /**
+      * JobTemplateSettings contains all the transcode settings saved in the template that will be applied to jobs created from it.
+      */
     var Settings: JobTemplateSettings
     /**
       * Specify how often MediaConvert sends STATUS_UPDATE events to Amazon CloudWatch Events. Set the interval, in seconds, between status updates. MediaConvert sends an update at this interval from the time the service begins processing your job to the time it completes the transcode or encounters an error.
       */
-    var StatusUpdateIntervalInSecs: js.UndefOr[__integerMin10Max600] = js.undefined
+    var StatusUpdateInterval: js.UndefOr[StatusUpdateInterval] = js.undefined
     /**
       * The tags that you want to add to the resource. You can tag resources with a key-value pair or with only a key.
       */
@@ -492,6 +723,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait CreateJobTemplateResponse extends js.Object {
+    /**
+      * A job template is a pre-made set of encoding instructions that you can use to quickly create a job.
+      */
     var JobTemplate: js.UndefOr[JobTemplate] = js.undefined
   }
   
@@ -508,6 +742,9 @@ object MediaConvertNs extends js.Object {
       * The name of the preset you are creating.
       */
     var Name: __string
+    /**
+      * Settings for preset
+      */
     var Settings: PresetSettings
     /**
       * The tags that you want to add to the resource. You can tag resources with a key-value pair or with only a key.
@@ -516,6 +753,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait CreatePresetResponse extends js.Object {
+    /**
+      * A preset is a collection of preconfigured media conversion settings that you want MediaConvert to apply to the output during the conversion process.
+      */
     var Preset: js.UndefOr[Preset] = js.undefined
   }
   
@@ -543,10 +783,16 @@ object MediaConvertNs extends js.Object {
   }
   
   trait CreateQueueResponse extends js.Object {
+    /**
+      * You can use queues to manage the resources that are available to your AWS account for running multiple transcoding jobs at the same time. If you don't specify a queue, the service sends all jobs through the default queue. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html.
+      */
     var Queue: js.UndefOr[Queue] = js.undefined
   }
   
   trait DashIsoEncryptionSettings extends js.Object {
+    /**
+      * Settings for use with a SPEKE key provider
+      */
     var SpekeKeyProvider: js.UndefOr[SpekeKeyProvider] = js.undefined
   }
   
@@ -560,6 +806,10 @@ object MediaConvertNs extends js.Object {
       */
     var Destination: js.UndefOr[__stringPatternS3] = js.undefined
     /**
+      * Settings associated with the destination. Will vary based on the type of destination
+      */
+    var DestinationSettings: js.UndefOr[DestinationSettings] = js.undefined
+    /**
       * DRM settings.
       */
     var Encryption: js.UndefOr[DashIsoEncryptionSettings] = js.undefined
@@ -567,11 +817,17 @@ object MediaConvertNs extends js.Object {
       * Length of fragments to generate (in seconds). Fragment length must be compatible with GOP size and Framerate. Note that fragments will end on the next keyframe after this number of seconds, so actual fragment length may be longer. When Emit Single File is checked, the fragmentation is internal to a single output file and it does not cause the creation of many output files as in other output types.
       */
     var FragmentLength: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * Supports HbbTV specification as indicated
+      */
     var HbbtvCompliance: js.UndefOr[DashIsoHbbtvCompliance] = js.undefined
     /**
       * Minimum time of initially buffered media that is needed to ensure smooth playout.
       */
     var MinBufferTime: js.UndefOr[__integerMin0Max2147483647] = js.undefined
+    /**
+      * When set to SINGLE_FILE, a single output file is generated, which is internally segmented using the Fragment Length and Segment Length. When set to SEGMENTED_FILES, separate segment files will be created.
+      */
     var SegmentControl: js.UndefOr[DashIsoSegmentControl] = js.undefined
     /**
       * Length of mpd segments to create (in seconds). Note that segments will end on the next keyframe after this number of seconds, so actual segment length may be longer. When Emit Single File is checked, the segmentation is internal to a single output file and it does not cause the creation of many output files as in other output types.
@@ -584,8 +840,17 @@ object MediaConvertNs extends js.Object {
   }
   
   trait Deinterlacer extends js.Object {
+    /**
+      * Only applies when you set Deinterlacer (DeinterlaceMode) to Deinterlace (DEINTERLACE) or Adaptive (ADAPTIVE). Motion adaptive interpolate (INTERPOLATE) produces sharper pictures, while blend (BLEND) produces smoother motion. Use (INTERPOLATE_TICKER) OR (BLEND_TICKER) if your source file includes a ticker, such as a scrolling headline at the bottom of the frame.
+      */
     var Algorithm: js.UndefOr[DeinterlaceAlgorithm] = js.undefined
+    /**
+      * - When set to NORMAL (default), the deinterlacer does not convert frames that are tagged  in metadata as progressive. It will only convert those that are tagged as some other type. - When set to FORCE_ALL_FRAMES, the deinterlacer converts every frame to progressive - even those that are already tagged as progressive. Turn Force mode on only if there is  a good chance that the metadata has tagged frames as progressive when they are not  progressive. Do not turn on otherwise; processing frames that are already progressive  into progressive will probably result in lower quality video.
+      */
     var Control: js.UndefOr[DeinterlacerControl] = js.undefined
+    /**
+      * Use Deinterlacer (DeinterlaceMode) to choose how the service will do deinterlacing. Default is Deinterlace. - Deinterlace converts interlaced to progressive. - Inverse telecine converts Hard Telecine 29.97i to progressive 23.976p. - Adaptive auto-detects and converts to progressive.
+      */
     var Mode: js.UndefOr[DeinterlacerMode] = js.undefined
   }
   
@@ -621,6 +886,9 @@ object MediaConvertNs extends js.Object {
       * Optional. Max number of endpoints, up to twenty, that will be returned at one time.
       */
     var MaxResults: js.UndefOr[__integer] = js.undefined
+    /**
+      * Optional field, defaults to DEFAULT. Specify DEFAULT for this operation to return your endpoints if any exist, or to create an endpoint for you and return it if one doesn't already exist. Specify GET_ONLY to return your endpoints if any exist, or an empty list if none exist.
+      */
     var Mode: js.UndefOr[DescribeEndpointsMode] = js.undefined
     /**
       * Use this string, provided with the response to a previous request, to request the next batch of endpoints.
@@ -637,6 +905,13 @@ object MediaConvertNs extends js.Object {
       * Use this string to request the next batch of endpoints.
       */
     var NextToken: js.UndefOr[__string] = js.undefined
+  }
+  
+  trait DestinationSettings extends js.Object {
+    /**
+      * Settings associated with S3 destination
+      */
+    var S3Settings: js.UndefOr[S3DestinationSettings] = js.undefined
   }
   
   trait DisassociateCertificateRequest extends js.Object {
@@ -664,6 +939,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait DvbSdtSettings extends js.Object {
+    /**
+      * Selects method of inserting SDT information into output stream.  "Follow input SDT" copies SDT information from input stream to  output stream. "Follow input SDT if present" copies SDT information from  input stream to output stream if SDT information is present in the input, otherwise it will fall back on the user-defined values. Enter "SDT  Manually" means user will enter the SDT information. "No SDT" means output  stream will not contain SDT information.
+      */
     var OutputSdt: js.UndefOr[OutputSdt] = js.undefined
     /**
       * The number of milliseconds between instances of this table in the output transport stream.
@@ -680,12 +958,22 @@ object MediaConvertNs extends js.Object {
   }
   
   trait DvbSubDestinationSettings extends js.Object {
+    /**
+      * If no explicit x_position or y_position is provided, setting alignment to centered will place the captions at the bottom center of the output. Similarly, setting a left alignment will align captions to the bottom left of the output. If x and y positions are given in conjunction with the alignment parameter, the font will be justified (either left or centered) relative to those coordinates. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
+      */
     var Alignment: js.UndefOr[DvbSubtitleAlignment] = js.undefined
+    /**
+      * Specifies the color of the rectangle behind the captions.
+    All burn-in and DVB-Sub font settings must match.
+      */
     var BackgroundColor: js.UndefOr[DvbSubtitleBackgroundColor] = js.undefined
     /**
       * Specifies the opacity of the background rectangle. 255 is opaque; 0 is transparent. Leaving this parameter blank is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.
       */
     var BackgroundOpacity: js.UndefOr[__integerMin0Max255] = js.undefined
+    /**
+      * Specifies the color of the burned-in captions. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
+      */
     var FontColor: js.UndefOr[DvbSubtitleFontColor] = js.undefined
     /**
       * Specifies the opacity of the burned-in captions. 255 is opaque; 0 is transparent.
@@ -705,11 +993,18 @@ object MediaConvertNs extends js.Object {
       * A positive integer indicates the exact font size in points. Set to 0 for automatic font size selection. All burn-in and DVB-Sub font settings must match.
       */
     var FontSize: js.UndefOr[__integerMin0Max96] = js.undefined
+    /**
+      * Specifies font outline color. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
+      */
     var OutlineColor: js.UndefOr[DvbSubtitleOutlineColor] = js.undefined
     /**
       * Specifies font outline size in pixels. This option is not valid for source captions that are either 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
       */
     var OutlineSize: js.UndefOr[__integerMin0Max10] = js.undefined
+    /**
+      * Specifies the color of the shadow cast by the captions.
+    All burn-in and DVB-Sub font settings must match.
+      */
     var ShadowColor: js.UndefOr[DvbSubtitleShadowColor] = js.undefined
     /**
       * Specifies the opacity of the shadow. 255 is opaque; 0 is transparent. Leaving this parameter blank is equivalent to setting it to 0 (transparent). All burn-in and DVB-Sub font settings must match.
@@ -723,6 +1018,9 @@ object MediaConvertNs extends js.Object {
       * Specifies the vertical offset of the shadow relative to the captions in pixels. A value of -2 would result in a shadow offset 2 pixels above the text. All burn-in and DVB-Sub font settings must match.
       */
     var ShadowYOffset: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined
+    /**
+      * Only applies to jobs with input captions in Teletext or STL formats. Specify whether the spacing between letters in your captions is set by the captions grid or varies depending on letter width. Choose fixed grid to conform to the spacing specified in the captions file more accurately. Choose proportional to make the text easier to read if the captions are closed caption.
+      */
     var TeletextSpacing: js.UndefOr[DvbSubtitleTeletextSpacing] = js.undefined
     /**
       * Specifies the horizontal position of the caption relative to the left side of the output in pixels. A value of 10 would result in the captions starting 10 pixels from the left of the output. If no explicit x_position is provided, the horizontal caption position will be determined by the alignment parameter. This option is not valid for source captions that are STL, 608/embedded or teletext. These source settings are already pre-defined by the caption stream. All burn-in and DVB-Sub font settings must match.
@@ -749,21 +1047,45 @@ object MediaConvertNs extends js.Object {
   }
   
   trait Eac3Settings extends js.Object {
+    /**
+      * If set to ATTENUATE_3_DB, applies a 3 dB attenuation to the surround channels. Only used for 3/2 coding mode.
+      */
     var AttenuationControl: js.UndefOr[Eac3AttenuationControl] = js.undefined
     /**
       * Average bitrate in bits/second. Valid bitrates depend on the coding mode.
       */
     var Bitrate: js.UndefOr[__integerMin64000Max640000] = js.undefined
+    /**
+      * Specifies the "Bitstream Mode" (bsmod) for the emitted E-AC-3 stream. See ATSC A/52-2012 (Annex E) for background on these values.
+      */
     var BitstreamMode: js.UndefOr[Eac3BitstreamMode] = js.undefined
+    /**
+      * Dolby Digital Plus coding mode. Determines number of channels.
+      */
     var CodingMode: js.UndefOr[Eac3CodingMode] = js.undefined
+    /**
+      * Activates a DC highpass filter for all input channels.
+      */
     var DcFilter: js.UndefOr[Eac3DcFilter] = js.undefined
     /**
       * Sets the dialnorm for the output. If blank and input audio is Dolby Digital Plus, dialnorm will be passed through.
       */
     var Dialnorm: js.UndefOr[__integerMin1Max31] = js.undefined
+    /**
+      * Enables Dynamic Range Compression that restricts the absolute peak level for a signal.
+      */
     var DynamicRangeCompressionLine: js.UndefOr[Eac3DynamicRangeCompressionLine] = js.undefined
+    /**
+      * Enables Heavy Dynamic Range Compression, ensures that the instantaneous signal peaks do not exceed specified levels.
+      */
     var DynamicRangeCompressionRf: js.UndefOr[Eac3DynamicRangeCompressionRf] = js.undefined
+    /**
+      * When encoding 3/2 audio, controls whether the LFE channel is enabled
+      */
     var LfeControl: js.UndefOr[Eac3LfeControl] = js.undefined
+    /**
+      * Applies a 120Hz lowpass filter to the LFE channel prior to encoding. Only valid with 3_2_LFE coding mode.
+      */
     var LfeFilter: js.UndefOr[Eac3LfeFilter] = js.undefined
     /**
       * Left only/Right only center mix level. Only used for 3/2 coding mode.
@@ -785,15 +1107,33 @@ object MediaConvertNs extends js.Object {
     Valid values: -1.5 -3.0 -4.5 -6.0 -60
       */
     var LtRtSurroundMixLevel: js.UndefOr[__doubleMinNegative60MaxNegative1] = js.undefined
+    /**
+      * When set to FOLLOW_INPUT, encoder metadata will be sourced from the DD, DD+, or DolbyE decoder that supplied this audio data. If audio was not supplied from one of these streams, then the static metadata settings will be used.
+      */
     var MetadataControl: js.UndefOr[Eac3MetadataControl] = js.undefined
+    /**
+      * When set to WHEN_POSSIBLE, input DD+ audio will be passed through if it is present on the input. this detection is dynamic over the life of the transcode. Inputs that alternate between DD+ and non-DD+ content will have a consistent DD+ output as the system alternates between passthrough and encoding.
+      */
     var PassthroughControl: js.UndefOr[Eac3PassthroughControl] = js.undefined
+    /**
+      * Controls the amount of phase-shift applied to the surround channels. Only used for 3/2 coding mode.
+      */
     var PhaseControl: js.UndefOr[Eac3PhaseControl] = js.undefined
     /**
       * Sample rate in hz. Sample rate is always 48000.
       */
     var SampleRate: js.UndefOr[__integerMin48000Max48000] = js.undefined
+    /**
+      * Stereo downmix preference. Only used for 3/2 coding mode.
+      */
     var StereoDownmix: js.UndefOr[Eac3StereoDownmix] = js.undefined
+    /**
+      * When encoding 3/2 audio, sets whether an extra center back surround channel is matrix encoded into the left and right surround channels.
+      */
     var SurroundExMode: js.UndefOr[Eac3SurroundExMode] = js.undefined
+    /**
+      * When encoding 2/0 audio, sets whether Dolby Surround is matrix encoded into the two channels.
+      */
     var SurroundMode: js.UndefOr[Eac3SurroundMode] = js.undefined
   }
   
@@ -805,6 +1145,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait EmbeddedSourceSettings extends js.Object {
+    /**
+      * When set to UPCONVERT, 608 data is both passed through via the "608 compatibility bytes" fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.
+      */
     var Convert608To708: js.UndefOr[EmbeddedConvert608To708] = js.undefined
     /**
       * Specifies the 608/708 channel number within the video track from which to extract captions. Unused for passthrough.
@@ -853,6 +1196,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait F4vSettings extends js.Object {
+    /**
+      * If set to PROGRESSIVE_DOWNLOAD, the MOOV atom is relocated to the beginning of the archive as required for progressive downloading. Otherwise it is placed normally at the end.
+      */
     var MoovPlacement: js.UndefOr[F4vMoovPlacement] = js.undefined
   }
   
@@ -861,9 +1207,16 @@ object MediaConvertNs extends js.Object {
       * Use Destination (Destination) to specify the S3 output location and the output filename base. Destination accepts format identifiers. If you do not specify the base filename in the URI, the service will use the filename of the input file. If your job has multiple inputs, the service uses the filename of the first input file.
       */
     var Destination: js.UndefOr[__stringPatternS3] = js.undefined
+    /**
+      * Settings associated with the destination. Will vary based on the type of destination
+      */
+    var DestinationSettings: js.UndefOr[DestinationSettings] = js.undefined
   }
   
   trait FileSourceSettings extends js.Object {
+    /**
+      * If set to UPCONVERT, 608 caption data is both passed through via the "608 compatibility bytes" fields of the 708 wrapper as well as translated into 708. 708 data present in the source content will be discarded.
+      */
     var Convert608To708: js.UndefOr[FileSourceConvert608To708] = js.undefined
     /**
       * External caption file used for loading captions. Accepted file extensions are 'scc', 'ttml', 'dfxp', 'stl', 'srt', and 'smi'.
@@ -902,6 +1255,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait GetJobResponse extends js.Object {
+    /**
+      * Each job converts an input file into an output file or files. For more information, see the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/what-is.html
+      */
     var Job: js.UndefOr[Job] = js.undefined
   }
   
@@ -913,6 +1269,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait GetJobTemplateResponse extends js.Object {
+    /**
+      * A job template is a pre-made set of encoding instructions that you can use to quickly create a job.
+      */
     var JobTemplate: js.UndefOr[JobTemplate] = js.undefined
   }
   
@@ -924,6 +1283,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait GetPresetResponse extends js.Object {
+    /**
+      * A preset is a collection of preconfigured media conversion settings that you want MediaConvert to apply to the output during the conversion process.
+      */
     var Preset: js.UndefOr[Preset] = js.undefined
   }
   
@@ -935,6 +1297,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait GetQueueResponse extends js.Object {
+    /**
+      * You can use queues to manage the resources that are available to your AWS account for running multiple transcoding jobs at the same time. If you don't specify a queue, the service sends all jobs through the default queue. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html.
+      */
     var Queue: js.UndefOr[Queue] = js.undefined
   }
   
@@ -950,21 +1315,45 @@ object MediaConvertNs extends js.Object {
   }
   
   trait H264Settings extends js.Object {
+    /**
+      * Adaptive quantization. Allows intra-frame quantizers to vary to improve visual quality.
+      */
     var AdaptiveQuantization: js.UndefOr[H264AdaptiveQuantization] = js.undefined
     /**
       * Average bitrate in bits/second. Required for VBR and CBR. For MS Smooth outputs, bitrates must be unique when rounded down to the nearest multiple of 1000.
       */
     var Bitrate: js.UndefOr[__integerMin1000Max1152000000] = js.undefined
+    /**
+      * Specify an H.264 level that is consistent with your output video settings. If you aren't sure what level to specify, choose Auto (AUTO).
+      */
     var CodecLevel: js.UndefOr[H264CodecLevel] = js.undefined
+    /**
+      * H.264 Profile. High 4:2:2 and 10-bit profiles are only available with the AVC-I License.
+      */
     var CodecProfile: js.UndefOr[H264CodecProfile] = js.undefined
     /**
       * Choose Adaptive to improve subjective video quality for high-motion content. This will cause the service to use fewer B-frames (which infer information based on other frames) for high-motion portions of the video and more B-frames for low-motion portions. The maximum number of B-frames is limited by the value you provide for the setting B frames between reference frames (numberBFramesBetweenReferenceFrames).
       */
     var DynamicSubGop: js.UndefOr[H264DynamicSubGop] = js.undefined
+    /**
+      * Entropy encoding mode. Use CABAC (must be in Main or High profile) or CAVLC.
+      */
     var EntropyEncoding: js.UndefOr[H264EntropyEncoding] = js.undefined
+    /**
+      * Choosing FORCE_FIELD disables PAFF encoding for interlaced outputs.
+      */
     var FieldEncoding: js.UndefOr[H264FieldEncoding] = js.undefined
+    /**
+      * Adjust quantization within each frame to reduce flicker or 'pop' on I-frames.
+      */
     var FlickerAdaptiveQuantization: js.UndefOr[H264FlickerAdaptiveQuantization] = js.undefined
+    /**
+      * If you are using the console, use the Framerate setting to specify the frame rate for this output. If you want to keep the same frame rate as the input video, choose Follow source. If you want to do frame rate conversion, choose a frame rate from the dropdown list or choose Custom. The framerates shown in the dropdown list are decimal approximations of fractions. If you choose Custom, specify your frame rate as a fraction. If you are creating your transcoding job specification as a JSON file without the console, use FramerateControl to specify which value the service uses for the frame rate for this output. Choose INITIALIZE_FROM_SOURCE if you want the service to use the frame rate from the input. Choose SPECIFIED if you want the service to use the frame rate you specify in the settings FramerateNumerator and FramerateDenominator.
+      */
     var FramerateControl: js.UndefOr[H264FramerateControl] = js.undefined
+    /**
+      * When set to INTERPOLATE, produces smoother motion during frame rate conversion.
+      */
     var FramerateConversionAlgorithm: js.UndefOr[H264FramerateConversionAlgorithm] = js.undefined
     /**
       * When you use the API for transcode jobs that use frame rate conversion, specify the frame rate as a fraction. For example,  24000 / 1001 = 23.976 fps. Use FramerateDenominator to specify the denominator of this fraction. In this example, use 1001 for the value of FramerateDenominator. When you use the console for transcode jobs that use frame rate conversion, provide the value as a decimal number for Framerate. In this example, specify 23.976.
@@ -974,6 +1363,9 @@ object MediaConvertNs extends js.Object {
       * Frame rate numerator - frame rate is a fraction, e.g. 24000 / 1001 = 23.976 fps.
       */
     var FramerateNumerator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * If enable, use reference B frames for GOP structures that have B frames > 1.
+      */
     var GopBReference: js.UndefOr[H264GopBReference] = js.undefined
     /**
       * Frequency of closed GOPs. In streaming applications, it is recommended that this be set to 1 so a decoder joining mid-stream will receive an IDR frame as quickly as possible. Setting this value to 0 will break output segmenting.
@@ -983,6 +1375,9 @@ object MediaConvertNs extends js.Object {
       * GOP Length (keyframe interval) in frames or seconds. Must be greater than zero.
       */
     var GopSize: js.UndefOr[__doubleMin0] = js.undefined
+    /**
+      * Indicates if the GOP Size in H264 is specified in frames or seconds. If seconds the system will convert the GOP Size into a frame count at run time.
+      */
     var GopSizeUnits: js.UndefOr[H264GopSizeUnits] = js.undefined
     /**
       * Percentage of the buffer that should initially be filled (HRD buffer model).
@@ -992,6 +1387,11 @@ object MediaConvertNs extends js.Object {
       * Size of buffer (HRD buffer model) in bits. For example, enter five megabits as 5000000.
       */
     var HrdBufferSize: js.UndefOr[__integerMin0Max1152000000] = js.undefined
+    /**
+      * Use Interlace mode (InterlaceMode) to choose the scan line type for the output. * Top Field First (TOP_FIELD) and Bottom Field First (BOTTOM_FIELD) produce interlaced output with the entire output having the same field polarity (top or bottom first). * Follow, Default Top (FOLLOW_TOP_FIELD) and Follow, Default Bottom (FOLLOW_BOTTOM_FIELD) use the same field polarity as the source. Therefore, behavior depends on the input scan type, as follows.
+      - If the source is interlaced, the output will be interlaced with the same polarity as the source (it will follow the source). The output could therefore be a mix of "top field first" and "bottom field first".
+      - If the source is progressive, the output will be interlaced with "top field first" or "bottom field first" polarity, depending on which of the Follow options you chose.
+      */
     var InterlaceMode: js.UndefOr[H264InterlaceMode] = js.undefined
     /**
       * Maximum bitrate in bits/second. For example, enter five megabits per second as 5000000. Required when Rate control mode is QVBR.
@@ -1009,6 +1409,9 @@ object MediaConvertNs extends js.Object {
       * Number of reference frames to use. The encoder may use more than requested if using B-frames and/or interlaced encoding.
       */
     var NumberReferenceFrames: js.UndefOr[__integerMin1Max6] = js.undefined
+    /**
+      * Using the API, enable ParFollowSource if you want the service to use the pixel aspect ratio from the input. Using the console, do this by choosing Follow source for Pixel aspect ratio.
+      */
     var ParControl: js.UndefOr[H264ParControl] = js.undefined
     /**
       * Pixel Aspect Ratio denominator.
@@ -1018,27 +1421,57 @@ object MediaConvertNs extends js.Object {
       * Pixel Aspect Ratio numerator.
       */
     var ParNumerator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * Use Quality tuning level (H264QualityTuningLevel) to specifiy whether to use fast single-pass, high-quality singlepass, or high-quality multipass video encoding.
+      */
     var QualityTuningLevel: js.UndefOr[H264QualityTuningLevel] = js.undefined
     /**
       * Settings for quality-defined variable bitrate encoding with the H.264 codec. Required when you set Rate control mode to QVBR. Not valid when you set Rate control mode to a value other than QVBR, or when you don't define Rate control mode.
       */
     var QvbrSettings: js.UndefOr[H264QvbrSettings] = js.undefined
+    /**
+      * Use this setting to specify whether this output has a variable bitrate (VBR), constant bitrate (CBR) or quality-defined variable bitrate (QVBR).
+      */
     var RateControlMode: js.UndefOr[H264RateControlMode] = js.undefined
+    /**
+      * Places a PPS header on each encoded picture, even if repeated.
+      */
     var RepeatPps: js.UndefOr[H264RepeatPps] = js.undefined
+    /**
+      * Scene change detection (inserts I-frames on scene changes).
+      */
     var SceneChangeDetect: js.UndefOr[H264SceneChangeDetect] = js.undefined
     /**
       * Number of slices per picture. Must be less than or equal to the number of macroblock rows for progressive pictures, and less than or equal to half the number of macroblock rows for interlaced pictures.
       */
     var Slices: js.UndefOr[__integerMin1Max32] = js.undefined
+    /**
+      * Enables Slow PAL rate conversion. 23.976fps and 24fps input is relabeled as 25fps, and audio is sped up correspondingly.
+      */
     var SlowPal: js.UndefOr[H264SlowPal] = js.undefined
     /**
       * Softness. Selects quantizer matrix, larger values reduce high-frequency content in the encoded image.
       */
     var Softness: js.UndefOr[__integerMin0Max128] = js.undefined
+    /**
+      * Adjust quantization within each frame based on spatial variation of content complexity.
+      */
     var SpatialAdaptiveQuantization: js.UndefOr[H264SpatialAdaptiveQuantization] = js.undefined
+    /**
+      * Produces a bitstream compliant with SMPTE RP-2027.
+      */
     var Syntax: js.UndefOr[H264Syntax] = js.undefined
+    /**
+      * This field applies only if the Streams > Advanced > Framerate (framerate) field  is set to 29.970. This field works with the Streams > Advanced > Preprocessors > Deinterlacer  field (deinterlace_mode) and the Streams > Advanced > Interlaced Mode field (interlace_mode)  to identify the scan type for the output: Progressive, Interlaced, Hard Telecine or Soft Telecine. - Hard: produces 29.97i output from 23.976 input. - Soft: produces 23.976; the player converts this output to 29.97i.
+      */
     var Telecine: js.UndefOr[H264Telecine] = js.undefined
+    /**
+      * Adjust quantization within each frame based on temporal variation of content complexity.
+      */
     var TemporalAdaptiveQuantization: js.UndefOr[H264TemporalAdaptiveQuantization] = js.undefined
+    /**
+      * Inserts timecode for each frame as 4 bytes of an unregistered SEI message.
+      */
     var UnregisteredSeiTimecode: js.UndefOr[H264UnregisteredSeiTimecode] = js.undefined
   }
   
@@ -1054,20 +1487,41 @@ object MediaConvertNs extends js.Object {
   }
   
   trait H265Settings extends js.Object {
+    /**
+      * Adaptive quantization. Allows intra-frame quantizers to vary to improve visual quality.
+      */
     var AdaptiveQuantization: js.UndefOr[H265AdaptiveQuantization] = js.undefined
+    /**
+      * Enables Alternate Transfer Function SEI message for outputs using Hybrid Log Gamma (HLG) Electro-Optical Transfer Function (EOTF).
+      */
     var AlternateTransferFunctionSei: js.UndefOr[H265AlternateTransferFunctionSei] = js.undefined
     /**
       * Average bitrate in bits/second. Required for VBR and CBR. For MS Smooth outputs, bitrates must be unique when rounded down to the nearest multiple of 1000.
       */
     var Bitrate: js.UndefOr[__integerMin1000Max1466400000] = js.undefined
+    /**
+      * H.265 Level.
+      */
     var CodecLevel: js.UndefOr[H265CodecLevel] = js.undefined
+    /**
+      * Represents the Profile and Tier, per the HEVC (H.265) specification. Selections are grouped as [Profile] / [Tier], so "Main/High" represents Main Profile with High Tier. 4:2:2 profiles are only available with the HEVC 4:2:2 License.
+      */
     var CodecProfile: js.UndefOr[H265CodecProfile] = js.undefined
     /**
       * Choose Adaptive to improve subjective video quality for high-motion content. This will cause the service to use fewer B-frames (which infer information based on other frames) for high-motion portions of the video and more B-frames for low-motion portions. The maximum number of B-frames is limited by the value you provide for the setting B frames between reference frames (numberBFramesBetweenReferenceFrames).
       */
     var DynamicSubGop: js.UndefOr[H265DynamicSubGop] = js.undefined
+    /**
+      * Adjust quantization within each frame to reduce flicker or 'pop' on I-frames.
+      */
     var FlickerAdaptiveQuantization: js.UndefOr[H265FlickerAdaptiveQuantization] = js.undefined
+    /**
+      * If you are using the console, use the Framerate setting to specify the frame rate for this output. If you want to keep the same frame rate as the input video, choose Follow source. If you want to do frame rate conversion, choose a frame rate from the dropdown list or choose Custom. The framerates shown in the dropdown list are decimal approximations of fractions. If you choose Custom, specify your frame rate as a fraction. If you are creating your transcoding job sepecification as a JSON file without the console, use FramerateControl to specify which value the service uses for the frame rate for this output. Choose INITIALIZE_FROM_SOURCE if you want the service to use the frame rate from the input. Choose SPECIFIED if you want the service to use the frame rate you specify in the settings FramerateNumerator and FramerateDenominator.
+      */
     var FramerateControl: js.UndefOr[H265FramerateControl] = js.undefined
+    /**
+      * When set to INTERPOLATE, produces smoother motion during frame rate conversion.
+      */
     var FramerateConversionAlgorithm: js.UndefOr[H265FramerateConversionAlgorithm] = js.undefined
     /**
       * Frame rate denominator.
@@ -1077,6 +1531,9 @@ object MediaConvertNs extends js.Object {
       * Frame rate numerator - frame rate is a fraction, e.g. 24000 / 1001 = 23.976 fps.
       */
     var FramerateNumerator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * If enable, use reference B frames for GOP structures that have B frames > 1.
+      */
     var GopBReference: js.UndefOr[H265GopBReference] = js.undefined
     /**
       * Frequency of closed GOPs. In streaming applications, it is recommended that this be set to 1 so a decoder joining mid-stream will receive an IDR frame as quickly as possible. Setting this value to 0 will break output segmenting.
@@ -1086,6 +1543,9 @@ object MediaConvertNs extends js.Object {
       * GOP Length (keyframe interval) in frames or seconds. Must be greater than zero.
       */
     var GopSize: js.UndefOr[__doubleMin0] = js.undefined
+    /**
+      * Indicates if the GOP Size in H265 is specified in frames or seconds. If seconds the system will convert the GOP Size into a frame count at run time.
+      */
     var GopSizeUnits: js.UndefOr[H265GopSizeUnits] = js.undefined
     /**
       * Percentage of the buffer that should initially be filled (HRD buffer model).
@@ -1095,6 +1555,11 @@ object MediaConvertNs extends js.Object {
       * Size of buffer (HRD buffer model) in bits. For example, enter five megabits as 5000000.
       */
     var HrdBufferSize: js.UndefOr[__integerMin0Max1466400000] = js.undefined
+    /**
+      * Use Interlace mode (InterlaceMode) to choose the scan line type for the output. * Top Field First (TOP_FIELD) and Bottom Field First (BOTTOM_FIELD) produce interlaced output with the entire output having the same field polarity (top or bottom first). * Follow, Default Top (FOLLOW_TOP_FIELD) and Follow, Default Bottom (FOLLOW_BOTTOM_FIELD) use the same field polarity as the source. Therefore, behavior depends on the input scan type.
+      - If the source is interlaced, the output will be interlaced with the same polarity as the source (it will follow the source). The output could therefore be a mix of "top field first" and "bottom field first".
+      - If the source is progressive, the output will be interlaced with "top field first" or "bottom field first" polarity, depending on which of the Follow options you chose.
+      */
     var InterlaceMode: js.UndefOr[H265InterlaceMode] = js.undefined
     /**
       * Maximum bitrate in bits/second. For example, enter five megabits per second as 5000000. Required when Rate control mode is QVBR.
@@ -1112,6 +1577,9 @@ object MediaConvertNs extends js.Object {
       * Number of reference frames to use. The encoder may use more than requested if using B-frames and/or interlaced encoding.
       */
     var NumberReferenceFrames: js.UndefOr[__integerMin1Max6] = js.undefined
+    /**
+      * Using the API, enable ParFollowSource if you want the service to use the pixel aspect ratio from the input. Using the console, do this by choosing Follow source for Pixel aspect ratio.
+      */
     var ParControl: js.UndefOr[H265ParControl] = js.undefined
     /**
       * Pixel Aspect Ratio denominator.
@@ -1121,24 +1589,57 @@ object MediaConvertNs extends js.Object {
       * Pixel Aspect Ratio numerator.
       */
     var ParNumerator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * Use Quality tuning level (H265QualityTuningLevel) to specifiy whether to use fast single-pass, high-quality singlepass, or high-quality multipass video encoding.
+      */
     var QualityTuningLevel: js.UndefOr[H265QualityTuningLevel] = js.undefined
     /**
       * Settings for quality-defined variable bitrate encoding with the H.265 codec. Required when you set Rate control mode to QVBR. Not valid when you set Rate control mode to a value other than QVBR, or when you don't define Rate control mode.
       */
     var QvbrSettings: js.UndefOr[H265QvbrSettings] = js.undefined
+    /**
+      * Use this setting to specify whether this output has a variable bitrate (VBR), constant bitrate (CBR) or quality-defined variable bitrate (QVBR).
+      */
     var RateControlMode: js.UndefOr[H265RateControlMode] = js.undefined
+    /**
+      * Specify Sample Adaptive Offset (SAO) filter strength.  Adaptive mode dynamically selects best strength based on content
+      */
     var SampleAdaptiveOffsetFilterMode: js.UndefOr[H265SampleAdaptiveOffsetFilterMode] = js.undefined
+    /**
+      * Scene change detection (inserts I-frames on scene changes).
+      */
     var SceneChangeDetect: js.UndefOr[H265SceneChangeDetect] = js.undefined
     /**
       * Number of slices per picture. Must be less than or equal to the number of macroblock rows for progressive pictures, and less than or equal to half the number of macroblock rows for interlaced pictures.
       */
     var Slices: js.UndefOr[__integerMin1Max32] = js.undefined
+    /**
+      * Enables Slow PAL rate conversion. 23.976fps and 24fps input is relabeled as 25fps, and audio is sped up correspondingly.
+      */
     var SlowPal: js.UndefOr[H265SlowPal] = js.undefined
+    /**
+      * Adjust quantization within each frame based on spatial variation of content complexity.
+      */
     var SpatialAdaptiveQuantization: js.UndefOr[H265SpatialAdaptiveQuantization] = js.undefined
+    /**
+      * This field applies only if the Streams > Advanced > Framerate (framerate) field  is set to 29.970. This field works with the Streams > Advanced > Preprocessors > Deinterlacer  field (deinterlace_mode) and the Streams > Advanced > Interlaced Mode field (interlace_mode)  to identify the scan type for the output: Progressive, Interlaced, Hard Telecine or Soft Telecine. - Hard: produces 29.97i output from 23.976 input. - Soft: produces 23.976; the player converts this output to 29.97i.
+      */
     var Telecine: js.UndefOr[H265Telecine] = js.undefined
+    /**
+      * Adjust quantization within each frame based on temporal variation of content complexity.
+      */
     var TemporalAdaptiveQuantization: js.UndefOr[H265TemporalAdaptiveQuantization] = js.undefined
+    /**
+      * Enables temporal layer identifiers in the encoded bitstream. Up to 3 layers are supported depending on GOP structure: I- and P-frames form one layer, reference B-frames can form a second layer and non-reference b-frames can form a third layer. Decoders can optionally decode only the lower temporal layers to generate a lower frame rate output. For example, given a bitstream with temporal IDs and with b-frames = 1 (i.e. IbPbPb display order), a decoder could decode all the frames for full frame rate output or only the I and P frames (lowest temporal layer) for a half frame rate output.
+      */
     var TemporalIds: js.UndefOr[H265TemporalIds] = js.undefined
+    /**
+      * Enable use of tiles, allowing horizontal as well as vertical subdivision of the encoded pictures.
+      */
     var Tiles: js.UndefOr[H265Tiles] = js.undefined
+    /**
+      * Inserts timecode for each frame as 4 bytes of an unregistered SEI message.
+      */
     var UnregisteredSeiTimecode: js.UndefOr[H265UnregisteredSeiTimecode] = js.undefined
     /**
       * Use this setting only for outputs encoded with H.265 that are in CMAF or DASH output groups. If you include writeMp4PackagingType in your JSON job specification for other outputs, your video might not work properly with downstream systems and video players. If the location of parameter set NAL units don't matter in your workflow, ignore this setting. The service defaults to marking your output as HEV1. Choose HVC1 to mark your output as HVC1. This makes your output compliant with this specification: ISO IECJTC1 SC29 N13798 Text ISO/IEC FDIS 14496-15 3rd Edition. For these outputs, the service stores parameter set NAL units in the sample headers but not in the samples directly. Keep the default HEV1 to mark your output as HEV1. For these outputs, the service writes parameter set NAL units directly into the samples.
@@ -1206,6 +1707,9 @@ object MediaConvertNs extends js.Object {
       * Specify the language for this caption channel, using the ISO 639-2 or ISO 639-3 three-letter language code
       */
     var CustomLanguageCode: js.UndefOr[__stringMin3Max3PatternAZaZ3] = js.undefined
+    /**
+      * Specify the language, using the ISO 639-2 three-letter code listed at https://www.loc.gov/standards/iso639-2/php/code_list.php.
+      */
     var LanguageCode: js.UndefOr[LanguageCode] = js.undefined
     /**
       * Caption language description.
@@ -1218,11 +1722,29 @@ object MediaConvertNs extends js.Object {
       * This is a 128-bit, 16-byte hex value represented by a 32-character text string. If this parameter is not set then the Initialization Vector will follow the segment number by default.
       */
     var ConstantInitializationVector: js.UndefOr[__stringMin32Max32Pattern09aFAF32] = js.undefined
+    /**
+      * Encrypts the segments with the given encryption scheme. Leave blank to disable. Selecting 'Disabled' in the web interface also disables encryption.
+      */
     var EncryptionMethod: js.UndefOr[HlsEncryptionType] = js.undefined
+    /**
+      * The Initialization Vector is a 128-bit number used in conjunction with the key for encrypting blocks. If set to INCLUDE, Initialization Vector is listed in the manifest. Otherwise Initialization Vector is not in the manifest.
+      */
     var InitializationVectorInManifest: js.UndefOr[HlsInitializationVectorInManifest] = js.undefined
+    /**
+      * Enable this setting to insert the EXT-X-SESSION-KEY element into the master playlist. This allows for offline Apple HLS FairPlay content protection.
+      */
     var OfflineEncrypted: js.UndefOr[HlsOfflineEncrypted] = js.undefined
+    /**
+      * Settings for use with a SPEKE key provider
+      */
     var SpekeKeyProvider: js.UndefOr[SpekeKeyProvider] = js.undefined
+    /**
+      * Use these settings to set up encryption with a static key provider.
+      */
     var StaticKeyProvider: js.UndefOr[StaticKeyProvider] = js.undefined
+    /**
+      * Indicates which type of key provider is used for encryption.
+      */
     var Type: js.UndefOr[HlsKeyProviderType] = js.undefined
   }
   
@@ -1239,19 +1761,41 @@ object MediaConvertNs extends js.Object {
       * Language to be used on Caption outputs
       */
     var CaptionLanguageMappings: js.UndefOr[__listOfHlsCaptionLanguageMapping] = js.undefined
+    /**
+      * Applies only to 608 Embedded output captions. Insert: Include CLOSED-CAPTIONS lines in the manifest. Specify at least one language in the CC1 Language Code field. One CLOSED-CAPTION line is added for each Language Code you specify. Make sure to specify the languages in the order in which they appear in the original source (if the source is embedded format) or the order of the caption selectors (if the source is other than embedded). Otherwise, languages in the manifest will not match up properly with the output captions. None: Include CLOSED-CAPTIONS=NONE line in the manifest. Omit: Omit any CLOSED-CAPTIONS line from the manifest.
+      */
     var CaptionLanguageSetting: js.UndefOr[HlsCaptionLanguageSetting] = js.undefined
+    /**
+      * When set to ENABLED, sets #EXT-X-ALLOW-CACHE:no tag, which prevents client from saving media segments for later replay.
+      */
     var ClientCache: js.UndefOr[HlsClientCache] = js.undefined
+    /**
+      * Specification to use (RFC-6381 or the default RFC-4281) during m3u8 playlist generation.
+      */
     var CodecSpecification: js.UndefOr[HlsCodecSpecification] = js.undefined
     /**
       * Use Destination (Destination) to specify the S3 output location and the output filename base. Destination accepts format identifiers. If you do not specify the base filename in the URI, the service will use the filename of the input file. If your job has multiple inputs, the service uses the filename of the first input file.
       */
     var Destination: js.UndefOr[__stringPatternS3] = js.undefined
+    /**
+      * Settings associated with the destination. Will vary based on the type of destination
+      */
+    var DestinationSettings: js.UndefOr[DestinationSettings] = js.undefined
+    /**
+      * Indicates whether segments should be placed in subdirectories.
+      */
     var DirectoryStructure: js.UndefOr[HlsDirectoryStructure] = js.undefined
     /**
       * DRM settings.
       */
     var Encryption: js.UndefOr[HlsEncryptionSettings] = js.undefined
+    /**
+      * When set to GZIP, compresses HLS playlist.
+      */
     var ManifestCompression: js.UndefOr[HlsManifestCompression] = js.undefined
+    /**
+      * Indicates whether the output manifest should use floating point values for segment duration.
+      */
     var ManifestDurationFormat: js.UndefOr[HlsManifestDurationFormat] = js.undefined
     /**
       * Keep this setting at the default value of 0, unless you are troubleshooting a problem with how devices play back the end of your video asset. If you know that player devices are hanging on the final segment of your video because the length of your final segment is too short, use this setting to specify a minimum final segment length, in seconds. Choose a value that is greater than or equal to 1 and less than your segment length. When you specify a value for this setting, the encoder will combine any final segment that is shorter than the length that you specify with the previous segment. For example, your segment length is 3 seconds and your final segment is .5 seconds without a minimum final segment length; when you set the minimum final segment length to 1, your final segment is 3.5 seconds.
@@ -1261,12 +1805,21 @@ object MediaConvertNs extends js.Object {
       * When set, Minimum Segment Size is enforced by looking ahead and back within the specified range for a nearby avail and extending the segment size if needed.
       */
     var MinSegmentLength: js.UndefOr[__integerMin0Max2147483647] = js.undefined
+    /**
+      * Indicates whether the .m3u8 manifest file should be generated for this HLS output group.
+      */
     var OutputSelection: js.UndefOr[HlsOutputSelection] = js.undefined
+    /**
+      * Includes or excludes EXT-X-PROGRAM-DATE-TIME tag in .m3u8 manifest files. The value is calculated as follows: either the program date and time are initialized using the input timecode source, or the time is initialized using the input timecode source and the date is initialized using the timestamp_offset.
+      */
     var ProgramDateTime: js.UndefOr[HlsProgramDateTime] = js.undefined
     /**
       * Period of insertion of EXT-X-PROGRAM-DATE-TIME entry, in seconds.
       */
     var ProgramDateTimePeriod: js.UndefOr[__integerMin0Max3600] = js.undefined
+    /**
+      * When set to SINGLE_FILE, emits program as a single media resource (.ts) file, uses #EXT-X-BYTERANGE tags to index segment for playback.
+      */
     var SegmentControl: js.UndefOr[HlsSegmentControl] = js.undefined
     /**
       * Length of MPEG-2 Transport Stream segments to create (in seconds). Note that segments will end on the next keyframe after this number of seconds, so actual segment length may be longer.
@@ -1276,7 +1829,13 @@ object MediaConvertNs extends js.Object {
       * Number of segments to write to a subdirectory before starting a new one. directoryStructure must be SINGLE_DIRECTORY for this setting to have an effect.
       */
     var SegmentsPerSubdirectory: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * Include or exclude RESOLUTION attribute for video in EXT-X-STREAM-INF tag of variant manifest.
+      */
     var StreamInfResolution: js.UndefOr[HlsStreamInfResolution] = js.undefined
+    /**
+      * Indicates ID3 frame that has the timecode.
+      */
     var TimedMetadataId3Frame: js.UndefOr[HlsTimedMetadataId3Frame] = js.undefined
     /**
       * Timed Metadata interval in seconds.
@@ -1297,7 +1856,13 @@ object MediaConvertNs extends js.Object {
       * List all the audio groups that are used with the video output stream. Input all the audio GROUP-IDs that are associated to the video, separate by ','.
       */
     var AudioRenditionSets: js.UndefOr[__string] = js.undefined
+    /**
+      * Four types of audio-only tracks are supported: Audio-Only Variant Stream The client can play back this audio-only stream instead of video in low-bandwidth scenarios. Represented as an EXT-X-STREAM-INF in the HLS manifest. Alternate Audio, Auto Select, Default Alternate rendition that the client should try to play back by default. Represented as an EXT-X-MEDIA in the HLS manifest with DEFAULT=YES, AUTOSELECT=YES Alternate Audio, Auto Select, Not Default Alternate rendition that the client may try to play back by default. Represented as an EXT-X-MEDIA in the HLS manifest with DEFAULT=NO, AUTOSELECT=YES Alternate Audio, not Auto Select Alternate rendition that the client will not try to play back by default. Represented as an EXT-X-MEDIA in the HLS manifest with DEFAULT=NO, AUTOSELECT=NO
+      */
     var AudioTrackType: js.UndefOr[HlsAudioTrackType] = js.undefined
+    /**
+      * When set to INCLUDE, writes I-Frame Only Manifest in addition to the HLS manifest
+      */
     var IFrameOnlyManifest: js.UndefOr[HlsIFrameOnlyManifest] = js.undefined
     /**
       * String concatenated to end of segment filenames. Accepts "Format Identifiers":#format_identifier_parameters.
@@ -1336,11 +1901,17 @@ object MediaConvertNs extends js.Object {
       * Use Captions selectors (CaptionSelectors) to specify the captions data from the input that you will use in your outputs. You can use mutiple captions selectors per input.
       */
     var CaptionSelectors: js.UndefOr[__mapOfCaptionSelector] = js.undefined
+    /**
+      * Enable Deblock (InputDeblockFilter) to produce smoother motion in the output. Default is disabled. Only manaully controllable for MPEG2 and uncompressed video inputs.
+      */
     var DeblockFilter: js.UndefOr[InputDeblockFilter] = js.undefined
     /**
-      * Settings for decrypting any input files that are encrypted.
+      * Settings for decrypting any input files that you encrypt before you upload them to Amazon S3. MediaConvert can decrypt files only when you use AWS Key Management Service (KMS) to encrypt the data key that you use to encrypt your content.
       */
     var DecryptionSettings: js.UndefOr[InputDecryptionSettings] = js.undefined
+    /**
+      * Enable Denoise (InputDenoiseFilter) to filter noise from the input.  Default is disabled. Only applicable to MPEG2, H.264, H.265, and uncompressed video inputs.
+      */
     var DenoiseFilter: js.UndefOr[InputDenoiseFilter] = js.undefined
     /**
       * Specify the source file for your transcoding job. You can use multiple inputs in a single job. The service concatenates these inputs, in the order that you specify them in the job, to create the outputs. If your input format is IMF, specify your input by providing the path to your CPL. For example, "s3://bucket/vf/cpl.xml". If the CPL is in an incomplete IMP, make sure to use *Supplemental IMPs* (SupplementalImps) to specify any supplemental IMPs that contain assets referenced by the CPL.
@@ -1348,6 +1919,9 @@ object MediaConvertNs extends js.Object {
     var FileInput: js.UndefOr[
         __stringPatternS3MM2VVMMPPEEGGAAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLL
       ] = js.undefined
+    /**
+      * Use Filter enable (InputFilterEnable) to specify how the transcoding service applies the denoise and deblock filters. You must also enable the filters separately, with Denoise (InputDenoiseFilter) and Deblock (InputDeblockFilter). * Auto - The transcoding service determines whether to apply filtering, depending on input type and quality. * Disable - The input is not filtered. This is true even if you use the API to enable them in (InputDeblockFilter) and (InputDeblockFilter). * Force - The in put is filtered regardless of input type.
+      */
     var FilterEnable: js.UndefOr[InputFilterEnable] = js.undefined
     /**
       * Use Filter strength (FilterStrength) to adjust the magnitude the input filter settings (Deblock and Denoise). The range is -5 to 5. Default is 0.
@@ -1365,12 +1939,21 @@ object MediaConvertNs extends js.Object {
       * Use Program (programNumber) to select a specific program from within a multi-program transport stream. Note that Quad 4K is not currently supported. Default is the first program within the transport stream. If the program you specify doesn't exist, the transcoding service will use this default.
       */
     var ProgramNumber: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * Set PSI control (InputPsiControl) for transport stream inputs to specify which data the demux process to scans. * Ignore PSI - Scan all PIDs for audio and video. * Use PSI - Scan only PSI data.
+      */
     var PsiControl: js.UndefOr[InputPsiControl] = js.undefined
     /**
       * Provide a list of any necessary supplemental IMPs. You need supplemental IMPs if the CPL that you're using for your input is in an incomplete IMP. Specify either the supplemental IMP directories with a trailing slash or the ASSETMAP.xml files. For example ["s3://bucket/ov/", "s3://bucket/vf2/ASSETMAP.xml"]. You don't need to specify the IMP that contains your input CPL, because the service automatically detects it.
       */
     var SupplementalImps: js.UndefOr[__listOf__stringPatternS3ASSETMAPXml] = js.undefined
+    /**
+      * Timecode source under input settings (InputTimecodeSource) only affects the behavior of features that apply to a single input at a time, such as input clipping and synchronizing some captions formats. Use this setting to specify whether the service counts frames by timecodes embedded in the video (EMBEDDED) or by starting the first frame at zero (ZEROBASED). In both cases, the timecode format is HH:MM:SS:FF or HH:MM:SS;FF, where FF is the frame number. Only set this to EMBEDDED if your source video has embedded timecodes.
+      */
     var TimecodeSource: js.UndefOr[InputTimecodeSource] = js.undefined
+    /**
+      * Selector for video.
+      */
     var VideoSelector: js.UndefOr[VideoSelector] = js.undefined
   }
   
@@ -1386,17 +1969,20 @@ object MediaConvertNs extends js.Object {
   }
   
   trait InputDecryptionSettings extends js.Object {
+    /**
+      * Specify the encryption mode that you used to encrypt your input files.
+      */
     var DecryptionMode: js.UndefOr[DecryptionMode] = js.undefined
     /**
-      * Decryption key either 128 or 192 or 256 bits encrypted with KMS
+      * Warning! Don't provide your encryption key in plaintext. Your job settings could be intercepted, making your encrypted content vulnerable. Specify the encrypted version of the data key that you used to encrypt your content. The data key must be encrypted by AWS Key Management Service (KMS). The key can be 128, 192, or 256 bits.
       */
     var EncryptedDecryptionKey: js.UndefOr[__stringMin24Max512PatternAZaZ0902] = js.undefined
     /**
-      * Initialization Vector 96 bits (CTR/GCM mode only) or 128 bits.
+      * Specify the initialization vector that you used when you encrypted your content before uploading it to Amazon S3. You can use a 16-byte initialization vector with any encryption mode. Or, you can use a 12-byte initialization vector with GCM or CTR. MediaConvert accepts only initialization vectors that are base64-encoded.
       */
     var InitializationVector: js.UndefOr[__stringMin16Max24PatternAZaZ0922AZaZ0916] = js.undefined
     /**
-      * The AWS region in which decryption key was encrypted with KMS
+      * Specify the AWS Region for AWS Key Management Service (KMS) that you used to encrypt your data key, if that Region is different from the one you are using for AWS Elemental MediaConvert.
       */
     var KmsKeyRegion: js.UndefOr[__stringMin9Max19PatternAZ26EastWestCentralNorthSouthEastWest1912] = js.undefined
   }
@@ -1414,8 +2000,17 @@ object MediaConvertNs extends js.Object {
       * Use Captions selectors (CaptionSelectors) to specify the captions data from the input that you will use in your outputs. You can use mutiple captions selectors per input.
       */
     var CaptionSelectors: js.UndefOr[__mapOfCaptionSelector] = js.undefined
+    /**
+      * Enable Deblock (InputDeblockFilter) to produce smoother motion in the output. Default is disabled. Only manaully controllable for MPEG2 and uncompressed video inputs.
+      */
     var DeblockFilter: js.UndefOr[InputDeblockFilter] = js.undefined
+    /**
+      * Enable Denoise (InputDenoiseFilter) to filter noise from the input.  Default is disabled. Only applicable to MPEG2, H.264, H.265, and uncompressed video inputs.
+      */
     var DenoiseFilter: js.UndefOr[InputDenoiseFilter] = js.undefined
+    /**
+      * Use Filter enable (InputFilterEnable) to specify how the transcoding service applies the denoise and deblock filters. You must also enable the filters separately, with Denoise (InputDenoiseFilter) and Deblock (InputDeblockFilter). * Auto - The transcoding service determines whether to apply filtering, depending on input type and quality. * Disable - The input is not filtered. This is true even if you use the API to enable them in (InputDeblockFilter) and (InputDeblockFilter). * Force - The in put is filtered regardless of input type.
+      */
     var FilterEnable: js.UndefOr[InputFilterEnable] = js.undefined
     /**
       * Use Filter strength (FilterStrength) to adjust the magnitude the input filter settings (Deblock and Denoise). The range is -5 to 5. Default is 0.
@@ -1433,8 +2028,17 @@ object MediaConvertNs extends js.Object {
       * Use Program (programNumber) to select a specific program from within a multi-program transport stream. Note that Quad 4K is not currently supported. Default is the first program within the transport stream. If the program you specify doesn't exist, the transcoding service will use this default.
       */
     var ProgramNumber: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * Set PSI control (InputPsiControl) for transport stream inputs to specify which data the demux process to scans. * Ignore PSI - Scan all PIDs for audio and video. * Use PSI - Scan only PSI data.
+      */
     var PsiControl: js.UndefOr[InputPsiControl] = js.undefined
+    /**
+      * Timecode source under input settings (InputTimecodeSource) only affects the behavior of features that apply to a single input at a time, such as input clipping and synchronizing some captions formats. Use this setting to specify whether the service counts frames by timecodes embedded in the video (EMBEDDED) or by starting the first frame at zero (ZEROBASED). In both cases, the timecode format is HH:MM:SS:FF or HH:MM:SS;FF, where FF is the frame number. Only set this to EMBEDDED if your source video has embedded timecodes.
+      */
     var TimecodeSource: js.UndefOr[InputTimecodeSource] = js.undefined
+    /**
+      * Selector for video.
+      */
     var VideoSelector: js.UndefOr[VideoSelector] = js.undefined
   }
   
@@ -1487,18 +2091,25 @@ object MediaConvertNs extends js.Object {
   
   trait Job extends js.Object {
     /**
-      * Acceleration settings for job execution.
+      * Accelerated transcoding is currently in private preview. Contact AWS for more information.
       */
     var AccelerationSettings: js.UndefOr[AccelerationSettings] = js.undefined
     /**
       * An identifier for this resource that is unique within all of AWS.
       */
     var Arn: js.UndefOr[__string] = js.undefined
+    /**
+      * Optional. Choose a tag type that AWS Billing and Cost Management will use to sort your AWS Elemental MediaConvert costs on any billing report that you set up. Any transcoding outputs that don't have an associated tag will appear in your billing report unsorted. If you don't choose a valid value for this field, your job outputs will appear on the billing report unsorted.
+      */
     var BillingTagsSource: js.UndefOr[BillingTagsSource] = js.undefined
     /**
       * The time, in Unix epoch format in seconds, when the job got created.
       */
     var CreatedAt: js.UndefOr[__timestampUnix] = js.undefined
+    /**
+      * A job's phase can be PROBING, TRANSCODING OR UPLOADING
+      */
+    var CurrentPhase: js.UndefOr[JobPhase] = js.undefined
     /**
       * Error code for the job
       */
@@ -1512,6 +2123,10 @@ object MediaConvertNs extends js.Object {
       */
     var Id: js.UndefOr[__string] = js.undefined
     /**
+      * An estimate of how far your job has progressed. This estimate is shown as a percentage of the total time from when your job leaves its queue to when your output files appear in your output Amazon S3 bucket. AWS Elemental MediaConvert provides jobPercentComplete in CloudWatch STATUS_UPDATE events and in the response to GetJob and ListJobs requests. The jobPercentComplete estimate is reliable for the following input containers: Quicktime, Transport Stream, MP4, and MXF. For some jobs, including audio-only jobs and jobs that use input clipping, the service can't provide information about job progress. In those cases, jobPercentComplete returns a null value.
+      */
+    var JobPercentComplete: js.UndefOr[__integer] = js.undefined
+    /**
       * The job template that the job is created from, if it is created from a job template.
       */
     var JobTemplate: js.UndefOr[__string] = js.undefined
@@ -1524,15 +2139,28 @@ object MediaConvertNs extends js.Object {
       */
     var Queue: js.UndefOr[__string] = js.undefined
     /**
+      * The number of times that the service automatically attempted to process your job after encountering an error.
+      */
+    var RetryCount: js.UndefOr[__integer] = js.undefined
+    /**
       * The IAM role you use for creating this job. For details about permissions, see the User Guide topic at the User Guide at http://docs.aws.amazon.com/mediaconvert/latest/ug/iam-role.html
       */
     var Role: __string
+    /**
+      * JobSettings contains all the transcode settings for a job.
+      */
     var Settings: JobSettings
+    /**
+      * A job's status can be SUBMITTED, PROGRESSING, COMPLETE, CANCELED, or ERROR.
+      */
     var Status: js.UndefOr[JobStatus] = js.undefined
     /**
       * Specify how often MediaConvert sends STATUS_UPDATE events to Amazon CloudWatch Events. Set the interval, in seconds, between status updates. MediaConvert sends an update at this interval from the time the service begins processing your job to the time it completes the transcode or encounters an error.
       */
-    var StatusUpdateIntervalInSecs: js.UndefOr[__integerMin10Max600] = js.undefined
+    var StatusUpdateInterval: js.UndefOr[StatusUpdateInterval] = js.undefined
+    /**
+      * Information about when jobs are submitted, started, and finished is specified in Unix epoch format in seconds.
+      */
     var Timing: js.UndefOr[Timing] = js.undefined
     /**
       * User-defined metadata that you want to associate with an MediaConvert job. You specify metadata in key/value pairs.
@@ -1561,6 +2189,9 @@ object MediaConvertNs extends js.Object {
       * Overlay motion graphics on top of your video. The motion graphics that you specify here appear on all outputs in all output groups.
       */
     var MotionImageInserter: js.UndefOr[MotionImageInserter] = js.undefined
+    /**
+      * Settings for Nielsen Configuration
+      */
     var NielsenConfiguration: js.UndefOr[NielsenConfiguration] = js.undefined
     /**
       * (OutputGroups) contains one group of settings for each set of outputs that share a common package type. All unpackaged files (MPEG-4, MPEG-2 TS, Quicktime, MXF, and no container) are grouped in a single output group as well. Required in (OutputGroups) is a group of settings that apply to the whole group. This required object depends on the value you set for (Type) under (OutputGroups)>(OutputGroupSettings). Type, settings object pairs are as follows. * FILE_GROUP_SETTINGS, FileGroupSettings * HLS_GROUP_SETTINGS, HlsGroupSettings * DASH_ISO_GROUP_SETTINGS, DashIsoGroupSettings * MS_SMOOTH_GROUP_SETTINGS, MsSmoothGroupSettings * CMAF_GROUP_SETTINGS, CmafGroupSettings
@@ -1570,12 +2201,15 @@ object MediaConvertNs extends js.Object {
       * Contains settings used to acquire and adjust timecode information from inputs.
       */
     var TimecodeConfig: js.UndefOr[TimecodeConfig] = js.undefined
+    /**
+      * Enable Timed metadata insertion (TimedMetadataInsertion) to include ID3 tags in your job. To include timed metadata, you must enable it here, enable it in each output container, and specify tags and timecodes in ID3 insertion (Id3Insertion) objects.
+      */
     var TimedMetadataInsertion: js.UndefOr[TimedMetadataInsertion] = js.undefined
   }
   
   trait JobTemplate extends js.Object {
     /**
-      * Acceleration settings for job execution.
+      * Accelerated transcoding is currently in private preview. Contact AWS for more information.
       */
     var AccelerationSettings: js.UndefOr[AccelerationSettings] = js.undefined
     /**
@@ -1606,11 +2240,14 @@ object MediaConvertNs extends js.Object {
       * Optional. The queue that jobs created from this template are assigned to. If you don't specify this, jobs will go to the default queue.
       */
     var Queue: js.UndefOr[__string] = js.undefined
+    /**
+      * JobTemplateSettings contains all the transcode settings saved in the template that will be applied to jobs created from it.
+      */
     var Settings: JobTemplateSettings
     /**
       * Specify how often MediaConvert sends STATUS_UPDATE events to Amazon CloudWatch Events. Set the interval, in seconds, between status updates. MediaConvert sends an update at this interval from the time the service begins processing your job to the time it completes the transcode or encounters an error.
       */
-    var StatusUpdateIntervalInSecs: js.UndefOr[__integerMin10Max600] = js.undefined
+    var StatusUpdateInterval: js.UndefOr[StatusUpdateInterval] = js.undefined
     /**
       * A job template can be of two types: system or custom. System or built-in job templates can't be modified or deleted by the user.
       */
@@ -1638,6 +2275,9 @@ object MediaConvertNs extends js.Object {
       * Overlay motion graphics on top of your video. The motion graphics that you specify here appear on all outputs in all output groups.
       */
     var MotionImageInserter: js.UndefOr[MotionImageInserter] = js.undefined
+    /**
+      * Settings for Nielsen Configuration
+      */
     var NielsenConfiguration: js.UndefOr[NielsenConfiguration] = js.undefined
     /**
       * (OutputGroups) contains one group of settings for each set of outputs that share a common package type. All unpackaged files (MPEG-4, MPEG-2 TS, Quicktime, MXF, and no container) are grouped in a single output group as well. Required in (OutputGroups) is a group of settings that apply to the whole group. This required object depends on the value you set for (Type) under (OutputGroups)>(OutputGroupSettings). Type, settings object pairs are as follows. * FILE_GROUP_SETTINGS, FileGroupSettings * HLS_GROUP_SETTINGS, HlsGroupSettings * DASH_ISO_GROUP_SETTINGS, DashIsoGroupSettings * MS_SMOOTH_GROUP_SETTINGS, MsSmoothGroupSettings * CMAF_GROUP_SETTINGS, CmafGroupSettings
@@ -1647,6 +2287,9 @@ object MediaConvertNs extends js.Object {
       * Contains settings used to acquire and adjust timecode information from inputs.
       */
     var TimecodeConfig: js.UndefOr[TimecodeConfig] = js.undefined
+    /**
+      * Enable Timed metadata insertion (TimedMetadataInsertion) to include ID3 tags in your job. To include timed metadata, you must enable it here, enable it in each output container, and specify tags and timecodes in ID3 insertion (Id3Insertion) objects.
+      */
     var TimedMetadataInsertion: js.UndefOr[TimedMetadataInsertion] = js.undefined
   }
   
@@ -1655,6 +2298,9 @@ object MediaConvertNs extends js.Object {
       * Optionally, specify a job template category to limit responses to only job templates from that category.
       */
     var Category: js.UndefOr[__string] = js.undefined
+    /**
+      * Optional. When you request a list of job templates, you can choose to list them alphabetically by NAME or chronologically by CREATION_DATE. If you don't specify, the service will list them by name.
+      */
     var ListBy: js.UndefOr[JobTemplateListBy] = js.undefined
     /**
       * Optional. Number of job templates, up to twenty, that will be returned at one time.
@@ -1664,6 +2310,9 @@ object MediaConvertNs extends js.Object {
       * Use this string, provided with the response to a previous request, to request the next batch of job templates.
       */
     var NextToken: js.UndefOr[__string] = js.undefined
+    /**
+      * When you request lists of resources, you can optionally specify whether they are sorted in ASCENDING or DESCENDING order. Default varies by resource.
+      */
     var Order: js.UndefOr[Order] = js.undefined
   }
   
@@ -1687,11 +2336,17 @@ object MediaConvertNs extends js.Object {
       * Use this string, provided with the response to a previous request, to request the next batch of jobs.
       */
     var NextToken: js.UndefOr[__string] = js.undefined
+    /**
+      * When you request lists of resources, you can optionally specify whether they are sorted in ASCENDING or DESCENDING order. Default varies by resource.
+      */
     var Order: js.UndefOr[Order] = js.undefined
     /**
       * Provide a queue name to get back only jobs from that queue.
       */
     var Queue: js.UndefOr[__string] = js.undefined
+    /**
+      * A job's status can be SUBMITTED, PROGRESSING, COMPLETE, CANCELED, or ERROR.
+      */
     var Status: js.UndefOr[JobStatus] = js.undefined
   }
   
@@ -1711,6 +2366,9 @@ object MediaConvertNs extends js.Object {
       * Optionally, specify a preset category to limit responses to only presets from that category.
       */
     var Category: js.UndefOr[__string] = js.undefined
+    /**
+      * Optional. When you request a list of presets, you can choose to list them alphabetically by NAME or chronologically by CREATION_DATE. If you don't specify, the service will list them by name.
+      */
     var ListBy: js.UndefOr[PresetListBy] = js.undefined
     /**
       * Optional. Number of presets, up to twenty, that will be returned at one time
@@ -1720,6 +2378,9 @@ object MediaConvertNs extends js.Object {
       * Use this string, provided with the response to a previous request, to request the next batch of presets.
       */
     var NextToken: js.UndefOr[__string] = js.undefined
+    /**
+      * When you request lists of resources, you can optionally specify whether they are sorted in ASCENDING or DESCENDING order. Default varies by resource.
+      */
     var Order: js.UndefOr[Order] = js.undefined
   }
   
@@ -1735,6 +2396,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait ListQueuesRequest extends js.Object {
+    /**
+      * Optional. When you request a list of queues, you can choose to list them alphabetically by NAME or chronologically by CREATION_DATE. If you don't specify, the service will list them by creation date.
+      */
     var ListBy: js.UndefOr[QueueListBy] = js.undefined
     /**
       * Optional. Number of queues, up to twenty, that will be returned at one time.
@@ -1744,6 +2408,9 @@ object MediaConvertNs extends js.Object {
       * Use this string, provided with the response to a previous request, to request the next batch of queues.
       */
     var NextToken: js.UndefOr[__string] = js.undefined
+    /**
+      * When you request lists of resources, you can optionally specify whether they are sorted in ASCENDING or DESCENDING order. Default varies by resource.
+      */
     var Order: js.UndefOr[Order] = js.undefined
   }
   
@@ -1766,6 +2433,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait ListTagsForResourceResponse extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) and tags for an AWS Elemental MediaConvert resource.
+      */
     var ResourceTags: js.UndefOr[ResourceTags] = js.undefined
   }
   
@@ -1777,6 +2447,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait M2tsSettings extends js.Object {
+    /**
+      * Selects between the DVB and ATSC buffer models for Dolby Digital audio.
+      */
     var AudioBufferModel: js.UndefOr[M2tsAudioBufferModel] = js.undefined
     /**
       * The number of audio frames to insert for each PES packet.
@@ -1790,20 +2463,41 @@ object MediaConvertNs extends js.Object {
       * Specify the output bitrate of the transport stream in bits per second. Setting to 0 lets the muxer automatically determine the appropriate bitrate. Other common values are 3750000, 7500000, and 15000000.
       */
     var Bitrate: js.UndefOr[__integerMin0Max2147483647] = js.undefined
+    /**
+      * Controls what buffer model to use for accurate interleaving. If set to MULTIPLEX, use multiplex  buffer model. If set to NONE, this can lead to lower latency, but low-memory devices may not be able to play back the stream without interruptions.
+      */
     var BufferModel: js.UndefOr[M2tsBufferModel] = js.undefined
+    /**
+      * Inserts DVB Network Information Table (NIT) at the specified table repetition interval.
+      */
     var DvbNitSettings: js.UndefOr[DvbNitSettings] = js.undefined
+    /**
+      * Inserts DVB Service Description Table (NIT) at the specified table repetition interval.
+      */
     var DvbSdtSettings: js.UndefOr[DvbSdtSettings] = js.undefined
     /**
       * Specify the packet identifiers (PIDs) for DVB subtitle data included in this output. Specify multiple PIDs as a JSON array. Default is the range 460-479.
       */
     var DvbSubPids: js.UndefOr[__listOf__integerMin32Max8182] = js.undefined
+    /**
+      * Inserts DVB Time and Date Table (TDT) at the specified table repetition interval.
+      */
     var DvbTdtSettings: js.UndefOr[DvbTdtSettings] = js.undefined
     /**
       * Specify the packet identifier (PID) for DVB teletext data you include in this output. Default is 499.
       */
     var DvbTeletextPid: js.UndefOr[__integerMin32Max8182] = js.undefined
+    /**
+      * When set to VIDEO_AND_FIXED_INTERVALS, audio EBP markers will be added to partitions 3 and 4. The interval between these additional markers will be fixed, and will be slightly shorter than the video EBP marker interval. When set to VIDEO_INTERVAL, these additional markers will not be inserted. Only applicable when EBP segmentation markers are is selected (segmentationMarkers is EBP or EBP_LEGACY).
+      */
     var EbpAudioInterval: js.UndefOr[M2tsEbpAudioInterval] = js.undefined
+    /**
+      * Selects which PIDs to place EBP markers on. They can either be placed only on the video PID, or on both the video PID and all audio PIDs. Only applicable when EBP segmentation markers are is selected (segmentationMarkers is EBP or EBP_LEGACY).
+      */
     var EbpPlacement: js.UndefOr[M2tsEbpPlacement] = js.undefined
+    /**
+      * Controls whether to include the ES Rate field in the PES header.
+      */
     var EsRateInPes: js.UndefOr[M2tsEsRateInPes] = js.undefined
     /**
       * Keep the default value (DEFAULT) unless you know that your audio EBP markers are incorrectly appearing before your video EBP markers. To correct this problem, set this value to Force (FORCE).
@@ -1821,6 +2515,9 @@ object MediaConvertNs extends js.Object {
       * When set, enforces that Encoder Boundary Points do not come within the specified time interval of each other by looking ahead at input video. If another EBP is going to come in within the specified time interval, the current EBP is not emitted, and the segment is "stretched" to the next marker. The lookahead value does not add latency to the system. The Live Event must be configured elsewhere to create sufficient latency to make the lookahead accurate.
       */
     var MinEbpInterval: js.UndefOr[__integerMin0Max10000] = js.undefined
+    /**
+      * If INSERT, Nielsen inaudible tones for media tracking will be detected in the input audio and an equivalent ID3 tag will be inserted in the output.
+      */
     var NielsenId3: js.UndefOr[M2tsNielsenId3] = js.undefined
     /**
       * Value in bits per second of extra null packets to insert into the transport stream. This can be used if a downstream encryption system requires periodic null packets.
@@ -1830,6 +2527,9 @@ object MediaConvertNs extends js.Object {
       * The number of milliseconds between instances of this table in the output transport stream.
       */
     var PatInterval: js.UndefOr[__integerMin0Max1000] = js.undefined
+    /**
+      * When set to PCR_EVERY_PES_PACKET, a Program Clock Reference value is inserted for every Packetized Elementary Stream (PES) header. This is effective only when the PCR PID is the same as the video or audio elementary stream.
+      */
     var PcrControl: js.UndefOr[M2tsPcrControl] = js.undefined
     /**
       * Specify the packet identifier (PID) for the program clock reference (PCR) in this output. If you do not specify a value, the service will use the value for Video PID (VideoPid).
@@ -1851,6 +2551,9 @@ object MediaConvertNs extends js.Object {
       * Use Program number (programNumber) to specify the program number used in the program map table (PMT) for this output. Default is 1. Program numbers and program map tables are parts of MPEG-2 transport stream containers, used for organizing data.
       */
     var ProgramNumber: js.UndefOr[__integerMin0Max65535] = js.undefined
+    /**
+      * When set to CBR, inserts null packets into transport stream to fill specified bitrate. When set to VBR, the bitrate setting acts as the maximum bitrate, but the output will not be padded up to that bitrate.
+      */
     var RateMode: js.UndefOr[M2tsRateMode] = js.undefined
     /**
       * Include this in your job settings to put SCTE-35 markers in your HLS and transport stream outputs at the insertion points that you specify in an ESAM XML document. Provide the document in the setting SCC XML (sccXml).
@@ -1860,8 +2563,17 @@ object MediaConvertNs extends js.Object {
       * Specify the packet identifier (PID) of the SCTE-35 stream in the transport stream.
       */
     var Scte35Pid: js.UndefOr[__integerMin32Max8182] = js.undefined
+    /**
+      * Enables SCTE-35 passthrough (scte35Source) to pass any SCTE-35 signals from input to output.
+      */
     var Scte35Source: js.UndefOr[M2tsScte35Source] = js.undefined
+    /**
+      * Inserts segmentation markers at each segmentation_time period. rai_segstart sets the Random Access Indicator bit in the adaptation field. rai_adapt sets the RAI bit and adds the current timecode in the private data bytes. psi_segstart inserts PAT and PMT tables at the start of segments. ebp adds Encoder Boundary Point information to the adaptation field as per OpenCable specification OC-SP-EBP-I01-130118. ebp_legacy adds Encoder Boundary Point information to the adaptation field using a legacy proprietary format.
+      */
     var SegmentationMarkers: js.UndefOr[M2tsSegmentationMarkers] = js.undefined
+    /**
+      * The segmentation style parameter controls how segmentation markers are inserted into the transport stream. With avails, it is possible that segments may be truncated, which can influence where future segmentation markers are inserted. When a segmentation style of "reset_cadence" is selected and a segment is truncated due to an avail, we will reset the segmentation cadence. This means the subsequent segment will have a duration of of $segmentation_time seconds. When a segmentation style of "maintain_cadence" is selected and a segment is truncated due to an avail, we will not reset the segmentation cadence. This means the subsequent segment will likely be truncated as well. However, all segments after that will have a duration of $segmentation_time seconds. Note that EBP lookahead is a slight exception to this rule.
+      */
     var SegmentationStyle: js.UndefOr[M2tsSegmentationStyle] = js.undefined
     /**
       * Specify the length, in seconds, of each segment. Required unless markers is set to _none_.
@@ -1890,11 +2602,17 @@ object MediaConvertNs extends js.Object {
       * Packet Identifier (PID) of the elementary audio stream(s) in the transport stream. Multiple values are accepted, and can be entered in ranges and/or by comma separation.
       */
     var AudioPids: js.UndefOr[__listOf__integerMin32Max8182] = js.undefined
+    /**
+      * If INSERT, Nielsen inaudible tones for media tracking will be detected in the input audio and an equivalent ID3 tag will be inserted in the output.
+      */
     var NielsenId3: js.UndefOr[M3u8NielsenId3] = js.undefined
     /**
       * The number of milliseconds between instances of this table in the output transport stream.
       */
     var PatInterval: js.UndefOr[__integerMin0Max1000] = js.undefined
+    /**
+      * When set to PCR_EVERY_PES_PACKET a Program Clock Reference value is inserted for every Packetized Elementary Stream (PES) header. This parameter is effective only when the PCR PID is the same as the video or audio elementary stream.
+      */
     var PcrControl: js.UndefOr[M3u8PcrControl] = js.undefined
     /**
       * Packet Identifier (PID) of the Program Clock Reference (PCR) in the transport stream. When no value is given, the encoder will assign the same value as the Video PID.
@@ -1920,7 +2638,13 @@ object MediaConvertNs extends js.Object {
       * Packet Identifier (PID) of the SCTE-35 stream in the transport stream.
       */
     var Scte35Pid: js.UndefOr[__integerMin32Max8182] = js.undefined
+    /**
+      * Enables SCTE-35 passthrough (scte35Source) to pass any SCTE-35 signals from input to output.
+      */
     var Scte35Source: js.UndefOr[M3u8Scte35Source] = js.undefined
+    /**
+      * Applies only to HLS outputs. Use this setting to specify whether the service inserts the ID3 timed metadata from the input in this output.
+      */
     var TimedMetadata: js.UndefOr[TimedMetadata] = js.undefined
     /**
       * Packet Identifier (PID) of the timed metadata stream in the transport stream.
@@ -1986,10 +2710,25 @@ object MediaConvertNs extends js.Object {
   }
   
   trait MovSettings extends js.Object {
+    /**
+      * When enabled, include 'clap' atom if appropriate for the video output settings.
+      */
     var ClapAtom: js.UndefOr[MovClapAtom] = js.undefined
+    /**
+      * When enabled, file composition times will start at zero, composition times in the 'ctts' (composition time to sample) box for B-frames will be negative, and a 'cslg' (composition shift least greatest) box will be included per 14496-1 amendment 1. This improves compatibility with Apple players and tools.
+      */
     var CslgAtom: js.UndefOr[MovCslgAtom] = js.undefined
+    /**
+      * When set to XDCAM, writes MPEG2 video streams into the QuickTime file using XDCAM fourcc codes. This increases compatibility with Apple editors and players, but may decrease compatibility with other players. Only applicable when the video codec is MPEG2.
+      */
     var Mpeg2FourCCControl: js.UndefOr[MovMpeg2FourCCControl] = js.undefined
+    /**
+      * If set to OMNEON, inserts Omneon-compatible padding
+      */
     var PaddingControl: js.UndefOr[MovPaddingControl] = js.undefined
+    /**
+      * Always keep the default value (SELF_CONTAINED) for this setting.
+      */
     var Reference: js.UndefOr[MovReference] = js.undefined
   }
   
@@ -2009,8 +2748,17 @@ object MediaConvertNs extends js.Object {
   }
   
   trait Mp4Settings extends js.Object {
+    /**
+      * When enabled, file composition times will start at zero, composition times in the 'ctts' (composition time to sample) box for B-frames will be negative, and a 'cslg' (composition shift least greatest) box will be included per 14496-1 amendment 1. This improves compatibility with Apple players and tools.
+      */
     var CslgAtom: js.UndefOr[Mp4CslgAtom] = js.undefined
+    /**
+      * Inserts a free-space box immediately after the moov box.
+      */
     var FreeSpaceBox: js.UndefOr[Mp4FreeSpaceBox] = js.undefined
+    /**
+      * If set to PROGRESSIVE_DOWNLOAD, the MOOV atom is relocated to the beginning of the archive as required for progressive downloading. Otherwise it is placed normally at the end.
+      */
     var MoovPlacement: js.UndefOr[Mp4MoovPlacement] = js.undefined
     /**
       * Overrides the "Major Brand" field in the output file. Usually not necessary to specify.
@@ -2019,18 +2767,33 @@ object MediaConvertNs extends js.Object {
   }
   
   trait Mpeg2Settings extends js.Object {
+    /**
+      * Adaptive quantization. Allows intra-frame quantizers to vary to improve visual quality.
+      */
     var AdaptiveQuantization: js.UndefOr[Mpeg2AdaptiveQuantization] = js.undefined
     /**
       * Average bitrate in bits/second. Required for VBR and CBR. For MS Smooth outputs, bitrates must be unique when rounded down to the nearest multiple of 1000.
       */
     var Bitrate: js.UndefOr[__integerMin1000Max288000000] = js.undefined
+    /**
+      * Use Level (Mpeg2CodecLevel) to set the MPEG-2 level for the video output.
+      */
     var CodecLevel: js.UndefOr[Mpeg2CodecLevel] = js.undefined
+    /**
+      * Use Profile (Mpeg2CodecProfile) to set the MPEG-2 profile for the video output.
+      */
     var CodecProfile: js.UndefOr[Mpeg2CodecProfile] = js.undefined
     /**
       * Choose Adaptive to improve subjective video quality for high-motion content. This will cause the service to use fewer B-frames (which infer information based on other frames) for high-motion portions of the video and more B-frames for low-motion portions. The maximum number of B-frames is limited by the value you provide for the setting B frames between reference frames (numberBFramesBetweenReferenceFrames).
       */
     var DynamicSubGop: js.UndefOr[Mpeg2DynamicSubGop] = js.undefined
+    /**
+      * If you are using the console, use the Framerate setting to specify the frame rate for this output. If you want to keep the same frame rate as the input video, choose Follow source. If you want to do frame rate conversion, choose a frame rate from the dropdown list or choose Custom. The framerates shown in the dropdown list are decimal approximations of fractions. If you choose Custom, specify your frame rate as a fraction. If you are creating your transcoding job sepecification as a JSON file without the console, use FramerateControl to specify which value the service uses for the frame rate for this output. Choose INITIALIZE_FROM_SOURCE if you want the service to use the frame rate from the input. Choose SPECIFIED if you want the service to use the frame rate you specify in the settings FramerateNumerator and FramerateDenominator.
+      */
     var FramerateControl: js.UndefOr[Mpeg2FramerateControl] = js.undefined
+    /**
+      * When set to INTERPOLATE, produces smoother motion during frame rate conversion.
+      */
     var FramerateConversionAlgorithm: js.UndefOr[Mpeg2FramerateConversionAlgorithm] = js.undefined
     /**
       * Frame rate denominator.
@@ -2048,6 +2811,9 @@ object MediaConvertNs extends js.Object {
       * GOP Length (keyframe interval) in frames or seconds. Must be greater than zero.
       */
     var GopSize: js.UndefOr[__doubleMin0] = js.undefined
+    /**
+      * Indicates if the GOP Size in MPEG2 is specified in frames or seconds. If seconds the system will convert the GOP Size into a frame count at run time.
+      */
     var GopSizeUnits: js.UndefOr[Mpeg2GopSizeUnits] = js.undefined
     /**
       * Percentage of the buffer that should initially be filled (HRD buffer model).
@@ -2057,7 +2823,15 @@ object MediaConvertNs extends js.Object {
       * Size of buffer (HRD buffer model) in bits. For example, enter five megabits as 5000000.
       */
     var HrdBufferSize: js.UndefOr[__integerMin0Max47185920] = js.undefined
+    /**
+      * Use Interlace mode (InterlaceMode) to choose the scan line type for the output. * Top Field First (TOP_FIELD) and Bottom Field First (BOTTOM_FIELD) produce interlaced output with the entire output having the same field polarity (top or bottom first). * Follow, Default Top (FOLLOW_TOP_FIELD) and Follow, Default Bottom (FOLLOW_BOTTOM_FIELD) use the same field polarity as the source. Therefore, behavior depends on the input scan type.
+      - If the source is interlaced, the output will be interlaced with the same polarity as the source (it will follow the source). The output could therefore be a mix of "top field first" and "bottom field first".
+      - If the source is progressive, the output will be interlaced with "top field first" or "bottom field first" polarity, depending on which of the Follow options you chose.
+      */
     var InterlaceMode: js.UndefOr[Mpeg2InterlaceMode] = js.undefined
+    /**
+      * Use Intra DC precision (Mpeg2IntraDcPrecision) to set quantization precision for intra-block DC coefficients. If you choose the value auto, the service will automatically select the precision based on the per-frame compression ratio.
+      */
     var IntraDcPrecision: js.UndefOr[Mpeg2IntraDcPrecision] = js.undefined
     /**
       * Maximum bitrate in bits/second. For example, enter five megabits per second as 5000000.
@@ -2071,6 +2845,9 @@ object MediaConvertNs extends js.Object {
       * Number of B-frames between reference frames.
       */
     var NumberBFramesBetweenReferenceFrames: js.UndefOr[__integerMin0Max7] = js.undefined
+    /**
+      * Using the API, enable ParFollowSource if you want the service to use the pixel aspect ratio from the input. Using the console, do this by choosing Follow source for Pixel aspect ratio.
+      */
     var ParControl: js.UndefOr[Mpeg2ParControl] = js.undefined
     /**
       * Pixel Aspect Ratio denominator.
@@ -2080,35 +2857,75 @@ object MediaConvertNs extends js.Object {
       * Pixel Aspect Ratio numerator.
       */
     var ParNumerator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * Use Quality tuning level (Mpeg2QualityTuningLevel) to specifiy whether to use single-pass or multipass video encoding.
+      */
     var QualityTuningLevel: js.UndefOr[Mpeg2QualityTuningLevel] = js.undefined
+    /**
+      * Use Rate control mode (Mpeg2RateControlMode) to specifiy whether the bitrate is variable (vbr) or constant (cbr).
+      */
     var RateControlMode: js.UndefOr[Mpeg2RateControlMode] = js.undefined
+    /**
+      * Scene change detection (inserts I-frames on scene changes).
+      */
     var SceneChangeDetect: js.UndefOr[Mpeg2SceneChangeDetect] = js.undefined
+    /**
+      * Enables Slow PAL rate conversion. 23.976fps and 24fps input is relabeled as 25fps, and audio is sped up correspondingly.
+      */
     var SlowPal: js.UndefOr[Mpeg2SlowPal] = js.undefined
     /**
       * Softness. Selects quantizer matrix, larger values reduce high-frequency content in the encoded image.
       */
     var Softness: js.UndefOr[__integerMin0Max128] = js.undefined
+    /**
+      * Adjust quantization within each frame based on spatial variation of content complexity.
+      */
     var SpatialAdaptiveQuantization: js.UndefOr[Mpeg2SpatialAdaptiveQuantization] = js.undefined
+    /**
+      * Produces a Type D-10 compatible bitstream (SMPTE 356M-2001).
+      */
     var Syntax: js.UndefOr[Mpeg2Syntax] = js.undefined
+    /**
+      * Only use Telecine (Mpeg2Telecine) when you set Framerate (Framerate) to 29.970. Set Telecine (Mpeg2Telecine) to Hard (hard) to produce a 29.97i output from a 23.976 input. Set it to Soft (soft) to produce 23.976 output and leave converstion to the player.
+      */
     var Telecine: js.UndefOr[Mpeg2Telecine] = js.undefined
+    /**
+      * Adjust quantization within each frame based on temporal variation of content complexity.
+      */
     var TemporalAdaptiveQuantization: js.UndefOr[Mpeg2TemporalAdaptiveQuantization] = js.undefined
   }
   
   trait MsSmoothEncryptionSettings extends js.Object {
+    /**
+      * Settings for use with a SPEKE key provider
+      */
     var SpekeKeyProvider: js.UndefOr[SpekeKeyProvider] = js.undefined
   }
   
   trait MsSmoothGroupSettings extends js.Object {
+    /**
+      * COMBINE_DUPLICATE_STREAMS combines identical audio encoding settings across a Microsoft Smooth output group into a single audio stream.
+      */
     var AudioDeduplication: js.UndefOr[MsSmoothAudioDeduplication] = js.undefined
     /**
       * Use Destination (Destination) to specify the S3 output location and the output filename base. Destination accepts format identifiers. If you do not specify the base filename in the URI, the service will use the filename of the input file. If your job has multiple inputs, the service uses the filename of the first input file.
       */
     var Destination: js.UndefOr[__stringPatternS3] = js.undefined
+    /**
+      * Settings associated with the destination. Will vary based on the type of destination
+      */
+    var DestinationSettings: js.UndefOr[DestinationSettings] = js.undefined
+    /**
+      * If you are using DRM, set DRM System (MsSmoothEncryptionSettings) to specify the value SpekeKeyProvider.
+      */
     var Encryption: js.UndefOr[MsSmoothEncryptionSettings] = js.undefined
     /**
       * Use Fragment length (FragmentLength) to specify the mp4 fragment sizes in seconds. Fragment length must be compatible with GOP size and frame rate.
       */
     var FragmentLength: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * Use Manifest encoding (MsSmoothManifestEncoding) to specify the encoding format for the server and client manifest. Valid options are utf8 and utf16.
+      */
     var ManifestEncoding: js.UndefOr[MsSmoothManifestEncoding] = js.undefined
   }
   
@@ -2124,8 +2941,17 @@ object MediaConvertNs extends js.Object {
   }
   
   trait NoiseReducer extends js.Object {
+    /**
+      * Use Noise reducer filter (NoiseReducerFilter) to select one of the following spatial image filtering functions. To use this setting, you must also enable Noise reducer (NoiseReducer). * Bilateral is an edge preserving noise reduction filter. * Mean (softest), Gaussian, Lanczos, and Sharpen (sharpest) are convolution filters. * Conserve is a min/max noise reduction filter. * Spatial is a frequency-domain filter based on JND principles.
+      */
     var Filter: js.UndefOr[NoiseReducerFilter] = js.undefined
+    /**
+      * Settings for a noise reducer filter
+      */
     var FilterSettings: js.UndefOr[NoiseReducerFilterSettings] = js.undefined
+    /**
+      * Noise reducer filter settings for spatial filter.
+      */
     var SpatialFilterSettings: js.UndefOr[NoiseReducerSpatialFilterSettings] = js.undefined
   }
   
@@ -2160,6 +2986,9 @@ object MediaConvertNs extends js.Object {
       * (CaptionDescriptions) contains groups of captions settings. For each output that has captions, include one instance of (CaptionDescriptions). (CaptionDescriptions) can contain multiple groups of captions settings.
       */
     var CaptionDescriptions: js.UndefOr[__listOfCaptionDescription] = js.undefined
+    /**
+      * Container specific settings.
+      */
     var ContainerSettings: js.UndefOr[ContainerSettings] = js.undefined
     /**
       * Use Extension (Extension) to specify the file extension for outputs in File output groups. If you do not specify a value, the service will use default extensions by container type as follows * MPEG-2 transport stream, m2ts * Quicktime, mov * MXF container, mxf * MPEG-4 container, mp4 * No Container, the service will use codec extensions (e.g. AAC, H265, H265, AC3)
@@ -2169,6 +2998,9 @@ object MediaConvertNs extends js.Object {
       * Use Name modifier (NameModifier) to have the service add a string to the end of each output filename. You specify the base filename as part of your destination URI. When you create multiple outputs in the same output group, Name modifier (NameModifier) is required. Name modifier also accepts format identifiers. For DASH ISO outputs, if you use the format identifiers $Number$ or $Time$ in one output, you must use them in the same way in all outputs of the output group.
       */
     var NameModifier: js.UndefOr[__stringMin1] = js.undefined
+    /**
+      * Specific settings for this type of output.
+      */
     var OutputSettings: js.UndefOr[OutputSettings] = js.undefined
     /**
       * Use Preset (Preset) to specifiy a preset for your transcoding settings. Provide the system or custom preset name. You can specify either Preset (Preset) or Container settings (ContainerSettings), but not both.
@@ -2192,6 +3024,9 @@ object MediaConvertNs extends js.Object {
       * Duration in milliseconds
       */
     var DurationInMs: js.UndefOr[__integer] = js.undefined
+    /**
+      * Contains details about the output's video stream
+      */
     var VideoDetails: js.UndefOr[VideoDetail] = js.undefined
   }
   
@@ -2204,6 +3039,9 @@ object MediaConvertNs extends js.Object {
       * Name of the output group
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * Output Group settings, including type
+      */
     var OutputGroupSettings: js.UndefOr[OutputGroupSettings] = js.undefined
     /**
       * This object holds groups of encoding settings, one group of settings per output.
@@ -2219,15 +3057,36 @@ object MediaConvertNs extends js.Object {
   }
   
   trait OutputGroupSettings extends js.Object {
+    /**
+      * Required when you set (Type) under (OutputGroups)>(OutputGroupSettings) to CMAF_GROUP_SETTINGS. Each output in a CMAF Output Group may only contain a single video, audio, or caption output.
+      */
     var CmafGroupSettings: js.UndefOr[CmafGroupSettings] = js.undefined
+    /**
+      * Required when you set (Type) under (OutputGroups)>(OutputGroupSettings) to DASH_ISO_GROUP_SETTINGS.
+      */
     var DashIsoGroupSettings: js.UndefOr[DashIsoGroupSettings] = js.undefined
+    /**
+      * Required when you set (Type) under (OutputGroups)>(OutputGroupSettings) to FILE_GROUP_SETTINGS.
+      */
     var FileGroupSettings: js.UndefOr[FileGroupSettings] = js.undefined
+    /**
+      * Required when you set (Type) under (OutputGroups)>(OutputGroupSettings) to HLS_GROUP_SETTINGS.
+      */
     var HlsGroupSettings: js.UndefOr[HlsGroupSettings] = js.undefined
+    /**
+      * Required when you set (Type) under (OutputGroups)>(OutputGroupSettings) to MS_SMOOTH_GROUP_SETTINGS.
+      */
     var MsSmoothGroupSettings: js.UndefOr[MsSmoothGroupSettings] = js.undefined
+    /**
+      * Type of output group (File group, Apple HLS, DASH ISO, Microsoft Smooth Streaming, CMAF)
+      */
     var Type: js.UndefOr[OutputGroupType] = js.undefined
   }
   
   trait OutputSettings extends js.Object {
+    /**
+      * Settings for HLS output groups
+      */
     var HlsSettings: js.UndefOr[HlsSettings] = js.undefined
   }
   
@@ -2256,6 +3115,9 @@ object MediaConvertNs extends js.Object {
       * A name you create for each preset. Each name must be unique within your account.
       */
     var Name: __string
+    /**
+      * Settings for preset
+      */
     var Settings: PresetSettings
     /**
       * A preset can be of two types: system or custom. System or built-in preset can't be modified or deleted by the user.
@@ -2272,6 +3134,9 @@ object MediaConvertNs extends js.Object {
       * Caption settings for this preset. There can be multiple caption settings in a single output.
       */
     var CaptionDescriptions: js.UndefOr[__listOfCaptionDescriptionPreset] = js.undefined
+    /**
+      * Container specific settings.
+      */
     var ContainerSettings: js.UndefOr[ContainerSettings] = js.undefined
     /**
       * (VideoDescription) contains a group of video encoding settings. The specific video settings depend on the video codec you choose when you specify a value for Video codec (codec). Include one instance of (VideoDescription) per output.
@@ -2280,8 +3145,17 @@ object MediaConvertNs extends js.Object {
   }
   
   trait ProresSettings extends js.Object {
+    /**
+      * Use Profile (ProResCodecProfile) to specifiy the type of Apple ProRes codec to use for this output.
+      */
     var CodecProfile: js.UndefOr[ProresCodecProfile] = js.undefined
+    /**
+      * If you are using the console, use the Framerate setting to specify the frame rate for this output. If you want to keep the same frame rate as the input video, choose Follow source. If you want to do frame rate conversion, choose a frame rate from the dropdown list or choose Custom. The framerates shown in the dropdown list are decimal approximations of fractions. If you choose Custom, specify your frame rate as a fraction. If you are creating your transcoding job sepecification as a JSON file without the console, use FramerateControl to specify which value the service uses for the frame rate for this output. Choose INITIALIZE_FROM_SOURCE if you want the service to use the frame rate from the input. Choose SPECIFIED if you want the service to use the frame rate you specify in the settings FramerateNumerator and FramerateDenominator.
+      */
     var FramerateControl: js.UndefOr[ProresFramerateControl] = js.undefined
+    /**
+      * When set to INTERPOLATE, produces smoother motion during frame rate conversion.
+      */
     var FramerateConversionAlgorithm: js.UndefOr[ProresFramerateConversionAlgorithm] = js.undefined
     /**
       * Frame rate denominator.
@@ -2291,7 +3165,15 @@ object MediaConvertNs extends js.Object {
       * When you use the API for transcode jobs that use frame rate conversion, specify the frame rate as a fraction. For example,  24000 / 1001 = 23.976 fps. Use FramerateNumerator to specify the numerator of this fraction. In this example, use 24000 for the value of FramerateNumerator.
       */
     var FramerateNumerator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * Use Interlace mode (InterlaceMode) to choose the scan line type for the output. * Top Field First (TOP_FIELD) and Bottom Field First (BOTTOM_FIELD) produce interlaced output with the entire output having the same field polarity (top or bottom first). * Follow, Default Top (FOLLOW_TOP_FIELD) and Follow, Default Bottom (FOLLOW_BOTTOM_FIELD) use the same field polarity as the source. Therefore, behavior depends on the input scan type.
+      - If the source is interlaced, the output will be interlaced with the same polarity as the source (it will follow the source). The output could therefore be a mix of "top field first" and "bottom field first".
+      - If the source is progressive, the output will be interlaced with "top field first" or "bottom field first" polarity, depending on which of the Follow options you chose.
+      */
     var InterlaceMode: js.UndefOr[ProresInterlaceMode] = js.undefined
+    /**
+      * Use (ProresParControl) to specify how the service determines the pixel aspect ratio. Set to Follow source (INITIALIZE_FROM_SOURCE) to use the pixel aspect ratio from the input.  To specify a different pixel aspect ratio: Using the console, choose it from the dropdown menu. Using the API, set ProresParControl to (SPECIFIED) and provide  for (ParNumerator) and (ParDenominator).
+      */
     var ParControl: js.UndefOr[ProresParControl] = js.undefined
     /**
       * Pixel Aspect Ratio denominator.
@@ -2301,7 +3183,13 @@ object MediaConvertNs extends js.Object {
       * Pixel Aspect Ratio numerator.
       */
     var ParNumerator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
+    /**
+      * Enables Slow PAL rate conversion. 23.976fps and 24fps input is relabeled as 25fps, and audio is sped up correspondingly.
+      */
     var SlowPal: js.UndefOr[ProresSlowPal] = js.undefined
+    /**
+      * Only use Telecine (ProresTelecine) when you set Framerate (Framerate) to 29.970. Set Telecine (ProresTelecine) to Hard (hard) to produce a 29.97i output from a 23.976 input. Set it to Soft (soft) to produce 23.976 output and leave converstion to the player.
+      */
     var Telecine: js.UndefOr[ProresTelecine] = js.undefined
   }
   
@@ -2372,6 +3260,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait RemixSettings extends js.Object {
+    /**
+      * Channel mapping (ChannelMapping) contains the group of fields that hold the remixing value for each channel. Units are in dB. Acceptable values are within the range from -60 (mute) through 6. A setting of 0 passes the input channel unchanged to the output channel (no attenuation or amplification).
+      */
     var ChannelMapping: js.UndefOr[ChannelMapping] = js.undefined
     /**
       * Specify the number of audio channels from your input that you want to use in your output. With remixing, you might combine or split the data in these channels, so the number of channels in your final output might be different.
@@ -2436,7 +3327,30 @@ object MediaConvertNs extends js.Object {
     var Tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
+  trait S3DestinationSettings extends js.Object {
+    /**
+      * Settings for how your job outputs are encrypted as they are uploaded to Amazon S3.
+      */
+    var Encryption: js.UndefOr[S3EncryptionSettings] = js.undefined
+  }
+  
+  trait S3EncryptionSettings extends js.Object {
+    /**
+      * Specify how you want your data keys managed. AWS uses data keys to encrypt your content. AWS also encrypts the data keys themselves, using a customer master key (CMK), and then stores the encrypted data keys alongside your encrypted content. Use this setting to specify which AWS service manages the CMK. For simplest set up, choose Amazon S3 (SERVER_SIDE_ENCRYPTION_S3). If you want your master key to be managed by AWS Key Management Service (KMS), choose AWS KMS (SERVER_SIDE_ENCRYPTION_KMS). By default, when you choose AWS KMS, KMS uses the AWS managed customer master key (CMK) associated with Amazon S3 to encrypt your data keys. You can optionally choose to specify a different, customer managed CMK. Do so by specifying the Amazon Resource Name (ARN) of the key for the setting  KMS ARN (kmsKeyArn).
+      */
+    var EncryptionType: js.UndefOr[S3ServerSideEncryptionType] = js.undefined
+    /**
+      * Optionally, specify the customer master key (CMK) that you want to use to encrypt the data key that AWS uses to encrypt your output content. Enter the Amazon Resource Name (ARN) of the CMK. To use this setting, you must also set Server-side encryption (S3ServerSideEncryptionType) to AWS KMS (SERVER_SIDE_ENCRYPTION_KMS). If you set Server-side encryption to AWS KMS but don't specify a CMK here, AWS uses the AWS managed CMK associated with Amazon S3.
+      */
+    var KmsKeyArn: js.UndefOr[
+        __stringPatternArnAwsUsGovKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912
+      ] = js.undefined
+  }
+  
   trait SccDestinationSettings extends js.Object {
+    /**
+      * Set Framerate (SccDestinationFramerate) to make sure that the captions and the video are synchronized in the output. Specify a frame rate that matches the frame rate of the associated video. If the video frame rate is 29.97, choose 29.97 dropframe (FRAMERATE_29_97_DROPFRAME) only if the video has video_insertion=true and drop_frame_timecode=true; otherwise, choose 29.97 non-dropframe (FRAMERATE_29_97_NON_DROPFRAME).
+      */
     var Framerate: js.UndefOr[SccDestinationFramerate] = js.undefined
   }
   
@@ -2510,6 +3424,9 @@ object MediaConvertNs extends js.Object {
       * Use Font Size (FontSize) to set the font size of any burned-in timecode. Valid values are 10, 16, 32, 48.
       */
     var FontSize: js.UndefOr[__integerMin10Max48] = js.undefined
+    /**
+      * Use Position (Position) under under Timecode burn-in (TimecodeBurnIn) to specify the location the burned-in timecode on output video.
+      */
     var Position: js.UndefOr[TimecodeBurninPosition] = js.undefined
     /**
       * Use Prefix (Prefix) to place ASCII characters before any burned-in timecode. For example, a prefix of "EZ-" will result in the timecode "EZ-00:00:00:00". Provide either the characters themselves or the ASCII code equivalents. The supported range of characters is 0x20 through 0x7e. This includes letters, numbers, and all special characters represented on a standard English keyboard.
@@ -2522,6 +3439,9 @@ object MediaConvertNs extends js.Object {
       * If you use an editing platform that relies on an anchor timecode, use Anchor Timecode (Anchor) to specify a timecode that will match the input video frame to the output video frame. Use 24-hour format with frame number, (HH:MM:SS:FF) or (HH:MM:SS;FF). This setting ignores frame rate conversion. System behavior for Anchor Timecode varies depending on your setting for Source (TimecodeSource). * If Source (TimecodeSource) is set to Specified Start (SPECIFIEDSTART), the first input frame is the specified value in Start Timecode (Start). Anchor Timecode (Anchor) and Start Timecode (Start) are used calculate output timecode. * If Source (TimecodeSource) is set to Start at 0 (ZEROBASED)  the  first frame is 00:00:00:00. * If Source (TimecodeSource) is set to Embedded (EMBEDDED), the  first frame is the timecode value on the first input frame of the input.
       */
     var Anchor: js.UndefOr[__stringPattern010920405090509092] = js.undefined
+    /**
+      * Use Source (TimecodeSource) to set how timecodes are handled within this job. To make sure that your video, audio, captions, and markers are synchronized and that time-based features, such as image inserter, work correctly, choose the Timecode source option that matches your assets. All timecodes are in a 24-hour format with frame number (HH:MM:SS:FF). * Embedded (EMBEDDED) - Use the timecode that is in the input video. If no embedded timecode is in the source, the service will use Start at 0 (ZEROBASED) instead. * Start at 0 (ZEROBASED) - Set the timecode of the initial frame to 00:00:00:00. * Specified Start (SPECIFIEDSTART) - Set the timecode of the initial frame to a value other than zero. You use Start timecode (Start) to provide this value.
+      */
     var Source: js.UndefOr[TimecodeSource] = js.undefined
     /**
       * Only use when you set Source (TimecodeSource) to Specified start (SPECIFIEDSTART). Use Start timecode (Start) to specify the timecode for the initial frame. Use 24-hour format with frame number, (HH:MM:SS:FF) or (HH:MM:SS;FF).
@@ -2563,6 +3483,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait TtmlDestinationSettings extends js.Object {
+    /**
+      * Pass through style and position information from a TTML-like input source (TTML, SMPTE-TT, CFF-TT) to the CFF-TT output or TTML output.
+      */
     var StylePassthrough: js.UndefOr[TtmlStylePassthrough] = js.undefined
   }
   
@@ -3174,14 +4097,20 @@ object MediaConvertNs extends js.Object {
       * The new queue for the job template, if you are changing it.
       */
     var Queue: js.UndefOr[__string] = js.undefined
+    /**
+      * JobTemplateSettings contains all the transcode settings saved in the template that will be applied to jobs created from it.
+      */
     var Settings: js.UndefOr[JobTemplateSettings] = js.undefined
     /**
       * Specify how often MediaConvert sends STATUS_UPDATE events to Amazon CloudWatch Events. Set the interval, in seconds, between status updates. MediaConvert sends an update at this interval from the time the service begins processing your job to the time it completes the transcode or encounters an error.
       */
-    var StatusUpdateIntervalInSecs: js.UndefOr[__integerMin10Max600] = js.undefined
+    var StatusUpdateInterval: js.UndefOr[StatusUpdateInterval] = js.undefined
   }
   
   trait UpdateJobTemplateResponse extends js.Object {
+    /**
+      * A job template is a pre-made set of encoding instructions that you can use to quickly create a job.
+      */
     var JobTemplate: js.UndefOr[JobTemplate] = js.undefined
   }
   
@@ -3198,10 +4127,16 @@ object MediaConvertNs extends js.Object {
       * The name of the preset you are modifying.
       */
     var Name: __string
+    /**
+      * Settings for preset
+      */
     var Settings: js.UndefOr[PresetSettings] = js.undefined
   }
   
   trait UpdatePresetResponse extends js.Object {
+    /**
+      * A preset is a collection of preconfigured media conversion settings that you want MediaConvert to apply to the output during the conversion process.
+      */
     var Preset: js.UndefOr[Preset] = js.undefined
   }
   
@@ -3225,6 +4160,9 @@ object MediaConvertNs extends js.Object {
   }
   
   trait UpdateQueueResponse extends js.Object {
+    /**
+      * You can use queues to manage the resources that are available to your AWS account for running multiple transcoding jobs at the same time. If you don't specify a queue, the service sends all jobs through the default queue. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html.
+      */
     var Queue: js.UndefOr[Queue] = js.undefined
   }
   
@@ -3233,25 +4171,52 @@ object MediaConvertNs extends js.Object {
       * Specifies the video codec. This must be equal to one of the enum values defined by the object  VideoCodec.
       */
     var Codec: js.UndefOr[VideoCodec] = js.undefined
+    /**
+      * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value FRAME_CAPTURE.
+      */
     var FrameCaptureSettings: js.UndefOr[FrameCaptureSettings] = js.undefined
+    /**
+      * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value H_264.
+      */
     var H264Settings: js.UndefOr[H264Settings] = js.undefined
+    /**
+      * Settings for H265 codec
+      */
     var H265Settings: js.UndefOr[H265Settings] = js.undefined
+    /**
+      * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value MPEG2.
+      */
     var Mpeg2Settings: js.UndefOr[Mpeg2Settings] = js.undefined
+    /**
+      * Required when you set (Codec) under (VideoDescription)>(CodecSettings) to the value PRORES.
+      */
     var ProresSettings: js.UndefOr[ProresSettings] = js.undefined
   }
   
   trait VideoDescription extends js.Object {
+    /**
+      * This setting only applies to H.264, H.265, and MPEG2 outputs. Use Insert AFD signaling (AfdSignaling) to specify whether the service includes AFD values in the output video data and what those values are. * Choose None to remove all AFD values from this output. * Choose Fixed to ignore input AFD values and instead encode the value specified in the job. * Choose Auto to calculate output AFD values based on the input AFD scaler data.
+      */
     var AfdSignaling: js.UndefOr[AfdSignaling] = js.undefined
     /**
-      * You no longer need to specify the anti-alias filter. It's now automatically applied to all outputs. This property is deprecated.
+      * The anti-alias filter is automatically applied to all outputs. The service no longer accepts the value DISABLED for AntiAlias. If you specify that in your job, the service will ignore the setting.
       */
     var AntiAlias: js.UndefOr[AntiAlias] = js.undefined
+    /**
+      * Video codec settings, (CodecSettings) under (VideoDescription), contains the group of settings related to video encoding. The settings in this group vary depending on the value you choose for Video codec (Codec). For each codec enum you choose, define the corresponding settings object. The following lists the codec enum, settings object pairs. * H_264, H264Settings * H_265, H265Settings * MPEG2, Mpeg2Settings * PRORES, ProresSettings * FRAME_CAPTURE, FrameCaptureSettings
+      */
     var CodecSettings: js.UndefOr[VideoCodecSettings] = js.undefined
+    /**
+      * Enable Insert color metadata (ColorMetadata) to include color metadata in this output. This setting is enabled by default.
+      */
     var ColorMetadata: js.UndefOr[ColorMetadata] = js.undefined
     /**
       * Applies only if your input aspect ratio is different from your output aspect ratio. Use Input cropping rectangle (Crop) to specify the  video area the service will include in the output. This will crop the input source, causing video pixels to be removed on encode. If you crop your input frame size to smaller than your output frame size, make sure to specify the behavior you want in your output setting "Scaling behavior".
       */
     var Crop: js.UndefOr[Rectangle] = js.undefined
+    /**
+      * Applies only to 29.97 fps outputs. When this feature is enabled, the service will use drop-frame timecode on outputs. If it is not possible to use drop-frame timecode, the system will fall back to non-drop-frame. This setting is enabled by default when Timecode insertion (TimecodeInsertion) is enabled.
+      */
     var DropFrameTimecode: js.UndefOr[DropFrameTimecode] = js.undefined
     /**
       * Applies only if you set AFD Signaling(AfdSignaling) to Fixed (FIXED). Use Fixed (FixedAfd) to specify a four-bit AFD value which the service will write on all  frames of this video output.
@@ -3265,12 +4230,21 @@ object MediaConvertNs extends js.Object {
       * Use Position (Position) to point to a rectangle object to define your position. This setting overrides any other aspect ratio.
       */
     var Position: js.UndefOr[Rectangle] = js.undefined
+    /**
+      * Use Respond to AFD (RespondToAfd) to specify how the service changes the video itself in response to AFD values in the input. * Choose Respond to clip the input video frame according to the AFD value, input display aspect ratio, and output display aspect ratio. * Choose Passthrough to include the input AFD values. Do not choose this when AfdSignaling is set to (NONE). A preferred implementation of this workflow is to set RespondToAfd to (NONE) and set AfdSignaling to (AUTO). * Choose None to remove all input AFD values from this output.
+      */
     var RespondToAfd: js.UndefOr[RespondToAfd] = js.undefined
+    /**
+      * Applies only if your input aspect ratio is different from your output aspect ratio. Choose "Stretch to output" to have the service stretch your video image to fit. Keep the setting "Default" to allow the service to letterbox your video instead. This setting overrides any positioning value you specify elsewhere in the job.
+      */
     var ScalingBehavior: js.UndefOr[ScalingBehavior] = js.undefined
     /**
       * Use Sharpness (Sharpness) setting to specify the strength of anti-aliasing. This setting changes the width of the anti-alias filter kernel used for scaling. Sharpness only applies if your output resolution is different from your input resolution. 0 is the softest setting, 100 the sharpest, and 50 recommended for most content.
       */
     var Sharpness: js.UndefOr[__integerMin0Max100] = js.undefined
+    /**
+      * Applies only to H.264, H.265, MPEG2, and ProRes outputs. Only enable Timecode insertion when the input frame rate is identical to the output frame rate. To include timecodes in this output, set Timecode insertion (VideoTimecodeInsertion) to PIC_TIMING_SEI. To leave them out, set it to DISABLED. Default is DISABLED. When the service inserts timecodes in an output, by default, it uses any embedded timecodes from the input. If none are present, the service will set the timecode for the first output frame to zero. To change this default behavior, adjust the settings under Timecode configuration (TimecodeConfig). In the console, these settings are located under Job > Job settings > Timecode configuration. Note - Timecode source under input settings (InputTimecodeSource) does not affect the timecodes that are inserted in the output. Source under Job settings > Timecode configuration (TimecodeSource) does.
+      */
     var TimecodeInsertion: js.UndefOr[VideoTimecodeInsertion] = js.undefined
     /**
       * Find additional transcoding features under Preprocessors (VideoPreprocessors). Enable the features at each output individually. These features are disabled by default.
@@ -3317,8 +4291,17 @@ object MediaConvertNs extends js.Object {
   }
   
   trait VideoSelector extends js.Object {
+    /**
+      * If your input video has accurate color space metadata, or if you don't know about color space, leave this set to the default value FOLLOW. The service will automatically detect your input color space. If your input video has metadata indicating the wrong color space, or if your input video is missing color space metadata that should be there, specify the accurate color space here. If you choose HDR10, you can also correct inaccurate color space coefficients, using the HDR master display information controls. You must also set Color space usage (ColorSpaceUsage) to FORCE for the service to use these values.
+      */
     var ColorSpace: js.UndefOr[ColorSpace] = js.undefined
+    /**
+      * There are two sources for color metadata, the input file and the job configuration (in the Color space and HDR master display informaiton settings). The Color space usage setting controls which takes precedence. FORCE: The system will use color metadata supplied by user, if any. If the user does not supply color metadata, the system will use data from the source. FALLBACK: The system will use color metadata from the source. If source has no color metadata, the system will use user-supplied color metadata values if available.
+      */
     var ColorSpaceUsage: js.UndefOr[ColorSpaceUsage] = js.undefined
+    /**
+      * Use the "HDR master display information" (Hdr10Metadata) settings to correct HDR metadata or to provide missing metadata. These values vary depending on the input video and must be provided by a color grader. Range is 0 to 50,000; each increment represents 0.00002 in CIE1931 color coordinate. Note that these settings are not color correction. Note that if you are creating HDR outputs inside of an HLS CMAF package, to comply with the Apple specification, you must use the following settings. Set "MP4 packaging type" (writeMp4PackagingType) to HVC1 (HVC1). Set "Profile" (H265Settings > codecProfile) to Main10/High (MAIN10_HIGH). Set "Level" (H265Settings > codecLevel) to 5 (LEVEL_5).
+      */
     var Hdr10Metadata: js.UndefOr[Hdr10Metadata] = js.undefined
     /**
       * Use PID (Pid) to select specific video data from an input file. Specify this value as an integer; the system automatically converts it to the hexidecimal value. For example, 257 selects PID 0x101. A PID, or packet identifier, is an identifier for a set of data in an MPEG-2 transport stream container.
@@ -3328,6 +4311,9 @@ object MediaConvertNs extends js.Object {
       * Selects a specific program from within a multi-program transport stream. Note that Quad 4K is not currently supported.
       */
     var ProgramNumber: js.UndefOr[__integerMinNegative2147483648Max2147483647] = js.undefined
+    /**
+      * Use Rotate (InputRotate) to specify how the service rotates your video. You can choose automatic rotation or specify a rotation. You can specify a clockwise rotation of 0, 90, 180, or 270 degrees. If your input video container is .mov or .mp4 and your input has rotation metadata, you can choose Automatic to have the service rotate your video according to the rotation specified in the metadata. The rotation must be within one degree of 90, 180, or 270 degrees. If the rotation metadata specifies any other rotation, the service will default to no rotation. By default, the service does no rotation, even if your input video has rotation metadata. The service doesn't pass through rotation metadata.
+      */
     var Rotate: js.UndefOr[InputRotate] = js.undefined
   }
   
@@ -3340,6 +4326,9 @@ object MediaConvertNs extends js.Object {
       * Set Channels to specify the number of channels in this output audio track. With WAV, valid values 1, 2, 4, and 8. In the console, these values are Mono, Stereo, 4-Channel, and 8-Channel, respectively.
       */
     var Channels: js.UndefOr[__integerMin1Max8] = js.undefined
+    /**
+      * The service defaults to using RIFF for WAV outputs. If your output audio is likely to exceed 4 GB in file size, or if you otherwise need the extended support of the RF64 format, set your output WAV file format to RF64.
+      */
     var Format: js.UndefOr[WavFormat] = js.undefined
     /**
       * Sample rate in Hz.
@@ -3649,6 +4638,8 @@ object MediaConvertNs extends js.Object {
   
   trait _InputTimecodeSource extends js.Object
   
+  trait _JobPhase extends js.Object
+  
   trait _JobStatus extends js.Object
   
   trait _JobTemplateListBy extends js.Object
@@ -3781,9 +4772,13 @@ object MediaConvertNs extends js.Object {
   
   trait _RespondToAfd extends js.Object
   
+  trait _S3ServerSideEncryptionType extends js.Object
+  
   trait _ScalingBehavior extends js.Object
   
   trait _SccDestinationFramerate extends js.Object
+  
+  trait _StatusUpdateInterval extends js.Object
   
   trait _TimecodeBurninPosition extends js.Object
   
@@ -3816,236 +4811,1805 @@ object MediaConvertNs extends js.Object {
   trait _apiVersion extends js.Object
   
   val TypesNs: this.type = js.native
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.BROADCASTER_MIXED_AD
+    - awsDashSdkLib.awsDashSdkLibStrings.NORMAL
+    - java.lang.String
+  */
   type AacAudioDescriptionBroadcasterMix = _AacAudioDescriptionBroadcasterMix | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.LC
+    - awsDashSdkLib.awsDashSdkLibStrings.HEV1
+    - awsDashSdkLib.awsDashSdkLibStrings.HEV2
+    - java.lang.String
+  */
   type AacCodecProfile = _AacCodecProfile | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AD_RECEIVER_MIX
+    - awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_1_0
+    - awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_1_1
+    - awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_2_0
+    - awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_5_1
+    - java.lang.String
+  */
   type AacCodingMode = _AacCodingMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CBR
+    - awsDashSdkLib.awsDashSdkLibStrings.VBR
+    - java.lang.String
+  */
   type AacRateControlMode = _AacRateControlMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.LATM_LOAS
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type AacRawFormat = _AacRawFormat | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.MPEG2
+    - awsDashSdkLib.awsDashSdkLibStrings.MPEG4
+    - java.lang.String
+  */
   type AacSpecification = _AacSpecification | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.LOW
+    - awsDashSdkLib.awsDashSdkLibStrings.MEDIUM_LOW
+    - awsDashSdkLib.awsDashSdkLibStrings.MEDIUM_HIGH
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH
+    - java.lang.String
+  */
   type AacVbrQuality = _AacVbrQuality | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETE_MAIN
+    - awsDashSdkLib.awsDashSdkLibStrings.COMMENTARY
+    - awsDashSdkLib.awsDashSdkLibStrings.DIALOGUE
+    - awsDashSdkLib.awsDashSdkLibStrings.EMERGENCY
+    - awsDashSdkLib.awsDashSdkLibStrings.HEARING_IMPAIRED
+    - awsDashSdkLib.awsDashSdkLibStrings.MUSIC_AND_EFFECTS
+    - awsDashSdkLib.awsDashSdkLibStrings.VISUALLY_IMPAIRED
+    - awsDashSdkLib.awsDashSdkLibStrings.VOICE_OVER
+    - java.lang.String
+  */
   type Ac3BitstreamMode = _Ac3BitstreamMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_1_0
+    - awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_1_1
+    - awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_2_0
+    - awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_3_2_LFE
+    - java.lang.String
+  */
   type Ac3CodingMode = _Ac3CodingMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FILM_STANDARD
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type Ac3DynamicRangeCompressionProfile = _Ac3DynamicRangeCompressionProfile | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type Ac3LfeFilter = _Ac3LfeFilter | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_INPUT
+    - awsDashSdkLib.awsDashSdkLibStrings.USE_CONFIGURED
+    - java.lang.String
+  */
   type Ac3MetadataControl = _Ac3MetadataControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type AccelerationMode = _AccelerationMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTO
+    - awsDashSdkLib.awsDashSdkLibStrings.FIXED
+    - java.lang.String
+  */
   type AfdSignaling = _AfdSignaling | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type AntiAlias = _AntiAlias | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AAC
+    - awsDashSdkLib.awsDashSdkLibStrings.MP2
+    - awsDashSdkLib.awsDashSdkLibStrings.WAV
+    - awsDashSdkLib.awsDashSdkLibStrings.AIFF
+    - awsDashSdkLib.awsDashSdkLibStrings.AC3
+    - awsDashSdkLib.awsDashSdkLibStrings.EAC3
+    - awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH
+    - java.lang.String
+  */
   type AudioCodec = _AudioCodec | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DEFAULT
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_DEFAULT
+    - java.lang.String
+  */
   type AudioDefaultSelection = _AudioDefaultSelection | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_INPUT
+    - awsDashSdkLib.awsDashSdkLibStrings.USE_CONFIGURED
+    - java.lang.String
+  */
   type AudioLanguageCodeControl = _AudioLanguageCodeControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ITU_BS_1770_1
+    - awsDashSdkLib.awsDashSdkLibStrings.ITU_BS_1770_2
+    - java.lang.String
+  */
   type AudioNormalizationAlgorithm = _AudioNormalizationAlgorithm | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CORRECT_AUDIO
+    - awsDashSdkLib.awsDashSdkLibStrings.MEASURE_ONLY
+    - java.lang.String
+  */
   type AudioNormalizationAlgorithmControl = _AudioNormalizationAlgorithmControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.LOG
+    - awsDashSdkLib.awsDashSdkLibStrings.DONT_LOG
+    - java.lang.String
+  */
   type AudioNormalizationLoudnessLogging = _AudioNormalizationLoudnessLogging | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.TRUE_PEAK
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type AudioNormalizationPeakCalculation = _AudioNormalizationPeakCalculation | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PID
+    - awsDashSdkLib.awsDashSdkLibStrings.TRACK
+    - awsDashSdkLib.awsDashSdkLibStrings.LANGUAGE_CODE
+    - java.lang.String
+  */
   type AudioSelectorType = _AudioSelectorType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_INPUT
+    - awsDashSdkLib.awsDashSdkLibStrings.USE_CONFIGURED
+    - java.lang.String
+  */
   type AudioTypeControl = _AudioTypeControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.QUEUE
+    - awsDashSdkLib.awsDashSdkLibStrings.PRESET
+    - awsDashSdkLib.awsDashSdkLibStrings.JOB_TEMPLATE
+    - java.lang.String
+  */
   type BillingTagsSource = _BillingTagsSource | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CENTERED
+    - awsDashSdkLib.awsDashSdkLibStrings.LEFT
+    - java.lang.String
+  */
   type BurninSubtitleAlignment = _BurninSubtitleAlignment | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.BLACK
+    - awsDashSdkLib.awsDashSdkLibStrings.WHITE
+    - java.lang.String
+  */
   type BurninSubtitleBackgroundColor = _BurninSubtitleBackgroundColor | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.WHITE
+    - awsDashSdkLib.awsDashSdkLibStrings.BLACK
+    - awsDashSdkLib.awsDashSdkLibStrings.YELLOW
+    - awsDashSdkLib.awsDashSdkLibStrings.RED
+    - awsDashSdkLib.awsDashSdkLibStrings.GREEN
+    - awsDashSdkLib.awsDashSdkLibStrings.BLUE
+    - java.lang.String
+  */
   type BurninSubtitleFontColor = _BurninSubtitleFontColor | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.BLACK
+    - awsDashSdkLib.awsDashSdkLibStrings.WHITE
+    - awsDashSdkLib.awsDashSdkLibStrings.YELLOW
+    - awsDashSdkLib.awsDashSdkLibStrings.RED
+    - awsDashSdkLib.awsDashSdkLibStrings.GREEN
+    - awsDashSdkLib.awsDashSdkLibStrings.BLUE
+    - java.lang.String
+  */
   type BurninSubtitleOutlineColor = _BurninSubtitleOutlineColor | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.BLACK
+    - awsDashSdkLib.awsDashSdkLibStrings.WHITE
+    - java.lang.String
+  */
   type BurninSubtitleShadowColor = _BurninSubtitleShadowColor | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FIXED_GRID
+    - awsDashSdkLib.awsDashSdkLibStrings.PROPORTIONAL
+    - java.lang.String
+  */
   type BurninSubtitleTeletextSpacing = _BurninSubtitleTeletextSpacing | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.BURN_IN
+    - awsDashSdkLib.awsDashSdkLibStrings.DVB_SUB
+    - awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED
+    - awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED_PLUS_SCTE20
+    - awsDashSdkLib.awsDashSdkLibStrings.SCTE20_PLUS_EMBEDDED
+    - awsDashSdkLib.awsDashSdkLibStrings.SCC
+    - awsDashSdkLib.awsDashSdkLibStrings.SRT
+    - awsDashSdkLib.awsDashSdkLibStrings.SMI
+    - awsDashSdkLib.awsDashSdkLibStrings.TELETEXT
+    - awsDashSdkLib.awsDashSdkLibStrings.TTML
+    - awsDashSdkLib.awsDashSdkLibStrings.WEBVTT
+    - java.lang.String
+  */
   type CaptionDestinationType = _CaptionDestinationType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ANCILLARY
+    - awsDashSdkLib.awsDashSdkLibStrings.DVB_SUB
+    - awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED
+    - awsDashSdkLib.awsDashSdkLibStrings.SCTE20
+    - awsDashSdkLib.awsDashSdkLibStrings.SCC
+    - awsDashSdkLib.awsDashSdkLibStrings.TTML
+    - awsDashSdkLib.awsDashSdkLibStrings.STL
+    - awsDashSdkLib.awsDashSdkLibStrings.SRT
+    - awsDashSdkLib.awsDashSdkLibStrings.SMI
+    - awsDashSdkLib.awsDashSdkLibStrings.TELETEXT
+    - awsDashSdkLib.awsDashSdkLibStrings.NULL_SOURCE
+    - awsDashSdkLib.awsDashSdkLibStrings.IMSC
+    - java.lang.String
+  */
   type CaptionSourceType = _CaptionSourceType | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type CmafClientCache = _CmafClientCache | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.RFC_6381
+    - awsDashSdkLib.awsDashSdkLibStrings.RFC_4281
+    - java.lang.String
+  */
   type CmafCodecSpecification = _CmafCodecSpecification | java.lang.String
   type CmafEncryptionType = awsDashSdkLib.awsDashSdkLibStrings.SAMPLE_AES | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INCLUDE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE
+    - java.lang.String
+  */
   type CmafInitializationVectorInManifest = _CmafInitializationVectorInManifest | java.lang.String
   type CmafKeyProviderType = awsDashSdkLib.awsDashSdkLibStrings.STATIC_KEY | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.GZIP
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type CmafManifestCompression = _CmafManifestCompression | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FLOATING_POINT
+    - awsDashSdkLib.awsDashSdkLibStrings.INTEGER
+    - java.lang.String
+  */
   type CmafManifestDurationFormat = _CmafManifestDurationFormat | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_FILE
+    - awsDashSdkLib.awsDashSdkLibStrings.SEGMENTED_FILES
+    - java.lang.String
+  */
   type CmafSegmentControl = _CmafSegmentControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INCLUDE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE
+    - java.lang.String
+  */
   type CmafStreamInfResolution = _CmafStreamInfResolution | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type CmafWriteDASHManifest = _CmafWriteDASHManifest | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type CmafWriteHLSManifest = _CmafWriteHLSManifest | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.IGNORE
+    - awsDashSdkLib.awsDashSdkLibStrings.INSERT
+    - java.lang.String
+  */
   type ColorMetadata = _ColorMetadata | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW
+    - awsDashSdkLib.awsDashSdkLibStrings.REC_601
+    - awsDashSdkLib.awsDashSdkLibStrings.REC_709
+    - awsDashSdkLib.awsDashSdkLibStrings.HDR10
+    - awsDashSdkLib.awsDashSdkLibStrings.HLG_2020
+    - java.lang.String
+  */
   type ColorSpace = _ColorSpace | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.FORCE_601
+    - awsDashSdkLib.awsDashSdkLibStrings.FORCE_709
+    - awsDashSdkLib.awsDashSdkLibStrings.FORCE_HDR10
+    - awsDashSdkLib.awsDashSdkLibStrings.FORCE_HLG_2020
+    - java.lang.String
+  */
   type ColorSpaceConversion = _ColorSpaceConversion | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FORCE
+    - awsDashSdkLib.awsDashSdkLibStrings.FALLBACK
+    - java.lang.String
+  */
   type ColorSpaceUsage = _ColorSpaceUsage | java.lang.String
   type Commitment = awsDashSdkLib.awsDashSdkLibStrings.ONE_YEAR | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.F4V
+    - awsDashSdkLib.awsDashSdkLibStrings.ISMV
+    - awsDashSdkLib.awsDashSdkLibStrings.M2TS
+    - awsDashSdkLib.awsDashSdkLibStrings.M3U8
+    - awsDashSdkLib.awsDashSdkLibStrings.CMFC
+    - awsDashSdkLib.awsDashSdkLibStrings.MOV
+    - awsDashSdkLib.awsDashSdkLibStrings.MP4
+    - awsDashSdkLib.awsDashSdkLibStrings.MPD
+    - awsDashSdkLib.awsDashSdkLibStrings.MXF
+    - awsDashSdkLib.awsDashSdkLibStrings.RAW
+    - java.lang.String
+  */
   type ContainerType = _ContainerType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.HBBTV_1_5
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type DashIsoHbbtvCompliance = _DashIsoHbbtvCompliance | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_FILE
+    - awsDashSdkLib.awsDashSdkLibStrings.SEGMENTED_FILES
+    - java.lang.String
+  */
   type DashIsoSegmentControl = _DashIsoSegmentControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type DashIsoWriteSegmentTimelineInRepresentation = _DashIsoWriteSegmentTimelineInRepresentation | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AES_CTR
+    - awsDashSdkLib.awsDashSdkLibStrings.AES_CBC
+    - awsDashSdkLib.awsDashSdkLibStrings.AES_GCM
+    - java.lang.String
+  */
   type DecryptionMode = _DecryptionMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE_TICKER
+    - awsDashSdkLib.awsDashSdkLibStrings.BLEND
+    - awsDashSdkLib.awsDashSdkLibStrings.BLEND_TICKER
+    - java.lang.String
+  */
   type DeinterlaceAlgorithm = _DeinterlaceAlgorithm | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FORCE_ALL_FRAMES
+    - awsDashSdkLib.awsDashSdkLibStrings.NORMAL
+    - java.lang.String
+  */
   type DeinterlacerControl = _DeinterlacerControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DEINTERLACE
+    - awsDashSdkLib.awsDashSdkLibStrings.INVERSE_TELECINE
+    - awsDashSdkLib.awsDashSdkLibStrings.ADAPTIVE
+    - java.lang.String
+  */
   type DeinterlacerMode = _DeinterlacerMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DEFAULT
+    - awsDashSdkLib.awsDashSdkLibStrings.GET_ONLY
+    - java.lang.String
+  */
   type DescribeEndpointsMode = _DescribeEndpointsMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type DropFrameTimecode = _DropFrameTimecode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CENTERED
+    - awsDashSdkLib.awsDashSdkLibStrings.LEFT
+    - java.lang.String
+  */
   type DvbSubtitleAlignment = _DvbSubtitleAlignment | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.BLACK
+    - awsDashSdkLib.awsDashSdkLibStrings.WHITE
+    - java.lang.String
+  */
   type DvbSubtitleBackgroundColor = _DvbSubtitleBackgroundColor | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.WHITE
+    - awsDashSdkLib.awsDashSdkLibStrings.BLACK
+    - awsDashSdkLib.awsDashSdkLibStrings.YELLOW
+    - awsDashSdkLib.awsDashSdkLibStrings.RED
+    - awsDashSdkLib.awsDashSdkLibStrings.GREEN
+    - awsDashSdkLib.awsDashSdkLibStrings.BLUE
+    - java.lang.String
+  */
   type DvbSubtitleFontColor = _DvbSubtitleFontColor | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.BLACK
+    - awsDashSdkLib.awsDashSdkLibStrings.WHITE
+    - awsDashSdkLib.awsDashSdkLibStrings.YELLOW
+    - awsDashSdkLib.awsDashSdkLibStrings.RED
+    - awsDashSdkLib.awsDashSdkLibStrings.GREEN
+    - awsDashSdkLib.awsDashSdkLibStrings.BLUE
+    - java.lang.String
+  */
   type DvbSubtitleOutlineColor = _DvbSubtitleOutlineColor | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.BLACK
+    - awsDashSdkLib.awsDashSdkLibStrings.WHITE
+    - java.lang.String
+  */
   type DvbSubtitleShadowColor = _DvbSubtitleShadowColor | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FIXED_GRID
+    - awsDashSdkLib.awsDashSdkLibStrings.PROPORTIONAL
+    - java.lang.String
+  */
   type DvbSubtitleTeletextSpacing = _DvbSubtitleTeletextSpacing | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ATTENUATE_3_DB
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type Eac3AttenuationControl = _Eac3AttenuationControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETE_MAIN
+    - awsDashSdkLib.awsDashSdkLibStrings.COMMENTARY
+    - awsDashSdkLib.awsDashSdkLibStrings.EMERGENCY
+    - awsDashSdkLib.awsDashSdkLibStrings.HEARING_IMPAIRED
+    - awsDashSdkLib.awsDashSdkLibStrings.VISUALLY_IMPAIRED
+    - java.lang.String
+  */
   type Eac3BitstreamMode = _Eac3BitstreamMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_1_0
+    - awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_2_0
+    - awsDashSdkLib.awsDashSdkLibStrings.CODING_MODE_3_2
+    - java.lang.String
+  */
   type Eac3CodingMode = _Eac3CodingMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type Eac3DcFilter = _Eac3DcFilter | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.FILM_STANDARD
+    - awsDashSdkLib.awsDashSdkLibStrings.FILM_LIGHT
+    - awsDashSdkLib.awsDashSdkLibStrings.MUSIC_STANDARD
+    - awsDashSdkLib.awsDashSdkLibStrings.MUSIC_LIGHT
+    - awsDashSdkLib.awsDashSdkLibStrings.SPEECH
+    - java.lang.String
+  */
   type Eac3DynamicRangeCompressionLine = _Eac3DynamicRangeCompressionLine | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.FILM_STANDARD
+    - awsDashSdkLib.awsDashSdkLibStrings.FILM_LIGHT
+    - awsDashSdkLib.awsDashSdkLibStrings.MUSIC_STANDARD
+    - awsDashSdkLib.awsDashSdkLibStrings.MUSIC_LIGHT
+    - awsDashSdkLib.awsDashSdkLibStrings.SPEECH
+    - java.lang.String
+  */
   type Eac3DynamicRangeCompressionRf = _Eac3DynamicRangeCompressionRf | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.LFE
+    - awsDashSdkLib.awsDashSdkLibStrings.NO_LFE
+    - java.lang.String
+  */
   type Eac3LfeControl = _Eac3LfeControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type Eac3LfeFilter = _Eac3LfeFilter | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_INPUT
+    - awsDashSdkLib.awsDashSdkLibStrings.USE_CONFIGURED
+    - java.lang.String
+  */
   type Eac3MetadataControl = _Eac3MetadataControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.WHEN_POSSIBLE
+    - awsDashSdkLib.awsDashSdkLibStrings.NO_PASSTHROUGH
+    - java.lang.String
+  */
   type Eac3PassthroughControl = _Eac3PassthroughControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SHIFT_90_DEGREES
+    - awsDashSdkLib.awsDashSdkLibStrings.NO_SHIFT
+    - java.lang.String
+  */
   type Eac3PhaseControl = _Eac3PhaseControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_INDICATED
+    - awsDashSdkLib.awsDashSdkLibStrings.LO_RO
+    - awsDashSdkLib.awsDashSdkLibStrings.LT_RT
+    - awsDashSdkLib.awsDashSdkLibStrings.DPL2
+    - java.lang.String
+  */
   type Eac3StereoDownmix = _Eac3StereoDownmix | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_INDICATED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type Eac3SurroundExMode = _Eac3SurroundExMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_INDICATED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type Eac3SurroundMode = _Eac3SurroundMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.UPCONVERT
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type EmbeddedConvert608To708 = _EmbeddedConvert608To708 | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE_DOWNLOAD
+    - awsDashSdkLib.awsDashSdkLibStrings.NORMAL
+    - java.lang.String
+  */
   type F4vMoovPlacement = _F4vMoovPlacement | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.UPCONVERT
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type FileSourceConvert608To708 = _FileSourceConvert608To708 | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTOMATIC
+    - awsDashSdkLib.awsDashSdkLibStrings.HANS
+    - awsDashSdkLib.awsDashSdkLibStrings.HANT
+    - java.lang.String
+  */
   type FontScript = _FontScript | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.OFF
+    - awsDashSdkLib.awsDashSdkLibStrings.LOW
+    - awsDashSdkLib.awsDashSdkLibStrings.MEDIUM
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGHER
+    - awsDashSdkLib.awsDashSdkLibStrings.MAX
+    - java.lang.String
+  */
   type H264AdaptiveQuantization = _H264AdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTO
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1_1
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1_2
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1_3
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2_1
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2_2
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3_1
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3_2
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4_1
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4_2
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5_1
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5_2
+    - java.lang.String
+  */
   type H264CodecLevel = _H264CodecLevel | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.BASELINE
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH_10BIT
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH_422
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH_422_10BIT
+    - awsDashSdkLib.awsDashSdkLibStrings.MAIN
+    - java.lang.String
+  */
   type H264CodecProfile = _H264CodecProfile | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ADAPTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.STATIC
+    - java.lang.String
+  */
   type H264DynamicSubGop = _H264DynamicSubGop | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CABAC
+    - awsDashSdkLib.awsDashSdkLibStrings.CAVLC
+    - java.lang.String
+  */
   type H264EntropyEncoding = _H264EntropyEncoding | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PAFF
+    - awsDashSdkLib.awsDashSdkLibStrings.FORCE_FIELD
+    - java.lang.String
+  */
   type H264FieldEncoding = _H264FieldEncoding | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H264FlickerAdaptiveQuantization = _H264FlickerAdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE
+    - awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED
+    - java.lang.String
+  */
   type H264FramerateControl = _H264FramerateControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DUPLICATE_DROP
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE
+    - java.lang.String
+  */
   type H264FramerateConversionAlgorithm = _H264FramerateConversionAlgorithm | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H264GopBReference = _H264GopBReference | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FRAMES
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS
+    - java.lang.String
+  */
   type H264GopSizeUnits = _H264GopSizeUnits | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.TOP_FIELD
+    - awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_FIELD
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_TOP_FIELD
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_BOTTOM_FIELD
+    - java.lang.String
+  */
   type H264InterlaceMode = _H264InterlaceMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE
+    - awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED
+    - java.lang.String
+  */
   type H264ParControl = _H264ParControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PASS
+    - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PASS_HQ
+    - awsDashSdkLib.awsDashSdkLibStrings.MULTI_PASS_HQ
+    - java.lang.String
+  */
   type H264QualityTuningLevel = _H264QualityTuningLevel | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.VBR
+    - awsDashSdkLib.awsDashSdkLibStrings.CBR
+    - awsDashSdkLib.awsDashSdkLibStrings.QVBR
+    - java.lang.String
+  */
   type H264RateControlMode = _H264RateControlMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H264RepeatPps = _H264RepeatPps | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H264SceneChangeDetect = _H264SceneChangeDetect | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H264SlowPal = _H264SlowPal | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H264SpatialAdaptiveQuantization = _H264SpatialAdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DEFAULT
+    - awsDashSdkLib.awsDashSdkLibStrings.RP2027
+    - java.lang.String
+  */
   type H264Syntax = _H264Syntax | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.SOFT
+    - awsDashSdkLib.awsDashSdkLibStrings.HARD
+    - java.lang.String
+  */
   type H264Telecine = _H264Telecine | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H264TemporalAdaptiveQuantization = _H264TemporalAdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H264UnregisteredSeiTimecode = _H264UnregisteredSeiTimecode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.OFF
+    - awsDashSdkLib.awsDashSdkLibStrings.LOW
+    - awsDashSdkLib.awsDashSdkLibStrings.MEDIUM
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGHER
+    - awsDashSdkLib.awsDashSdkLibStrings.MAX
+    - java.lang.String
+  */
   type H265AdaptiveQuantization = _H265AdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H265AlternateTransferFunctionSei = _H265AlternateTransferFunctionSei | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTO
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2_1
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3_1
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4_1
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5_1
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5_2
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_6
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_6_1
+    - awsDashSdkLib.awsDashSdkLibStrings.LEVEL_6_2
+    - java.lang.String
+  */
   type H265CodecLevel = _H265CodecLevel | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.MAIN_MAIN
+    - awsDashSdkLib.awsDashSdkLibStrings.MAIN_HIGH
+    - awsDashSdkLib.awsDashSdkLibStrings.MAIN10_MAIN
+    - awsDashSdkLib.awsDashSdkLibStrings.MAIN10_HIGH
+    - awsDashSdkLib.awsDashSdkLibStrings.MAIN_422_8BIT_MAIN
+    - awsDashSdkLib.awsDashSdkLibStrings.MAIN_422_8BIT_HIGH
+    - awsDashSdkLib.awsDashSdkLibStrings.MAIN_422_10BIT_MAIN
+    - awsDashSdkLib.awsDashSdkLibStrings.MAIN_422_10BIT_HIGH
+    - java.lang.String
+  */
   type H265CodecProfile = _H265CodecProfile | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ADAPTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.STATIC
+    - java.lang.String
+  */
   type H265DynamicSubGop = _H265DynamicSubGop | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H265FlickerAdaptiveQuantization = _H265FlickerAdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE
+    - awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED
+    - java.lang.String
+  */
   type H265FramerateControl = _H265FramerateControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DUPLICATE_DROP
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE
+    - java.lang.String
+  */
   type H265FramerateConversionAlgorithm = _H265FramerateConversionAlgorithm | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H265GopBReference = _H265GopBReference | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FRAMES
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS
+    - java.lang.String
+  */
   type H265GopSizeUnits = _H265GopSizeUnits | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.TOP_FIELD
+    - awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_FIELD
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_TOP_FIELD
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_BOTTOM_FIELD
+    - java.lang.String
+  */
   type H265InterlaceMode = _H265InterlaceMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE
+    - awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED
+    - java.lang.String
+  */
   type H265ParControl = _H265ParControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PASS
+    - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PASS_HQ
+    - awsDashSdkLib.awsDashSdkLibStrings.MULTI_PASS_HQ
+    - java.lang.String
+  */
   type H265QualityTuningLevel = _H265QualityTuningLevel | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.VBR
+    - awsDashSdkLib.awsDashSdkLibStrings.CBR
+    - awsDashSdkLib.awsDashSdkLibStrings.QVBR
+    - java.lang.String
+  */
   type H265RateControlMode = _H265RateControlMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DEFAULT
+    - awsDashSdkLib.awsDashSdkLibStrings.ADAPTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.OFF
+    - java.lang.String
+  */
   type H265SampleAdaptiveOffsetFilterMode = _H265SampleAdaptiveOffsetFilterMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H265SceneChangeDetect = _H265SceneChangeDetect | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H265SlowPal = _H265SlowPal | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H265SpatialAdaptiveQuantization = _H265SpatialAdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.SOFT
+    - awsDashSdkLib.awsDashSdkLibStrings.HARD
+    - java.lang.String
+  */
   type H265Telecine = _H265Telecine | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H265TemporalAdaptiveQuantization = _H265TemporalAdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H265TemporalIds = _H265TemporalIds | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H265Tiles = _H265Tiles | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type H265UnregisteredSeiTimecode = _H265UnregisteredSeiTimecode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.HVC1
+    - awsDashSdkLib.awsDashSdkLibStrings.HEV1
+    - java.lang.String
+  */
   type H265WriteMp4PackagingType = _H265WriteMp4PackagingType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ELEMENTAL
+    - awsDashSdkLib.awsDashSdkLibStrings.ELEMENTAL_SCTE35
+    - java.lang.String
+  */
   type HlsAdMarkers = _HlsAdMarkers | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT
+    - awsDashSdkLib.awsDashSdkLibStrings.ALTERNATE_AUDIO_AUTO_SELECT
+    - awsDashSdkLib.awsDashSdkLibStrings.ALTERNATE_AUDIO_NOT_AUTO_SELECT
+    - awsDashSdkLib.awsDashSdkLibStrings.AUDIO_ONLY_VARIANT_STREAM
+    - java.lang.String
+  */
   type HlsAudioTrackType = _HlsAudioTrackType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INSERT
+    - awsDashSdkLib.awsDashSdkLibStrings.OMIT
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type HlsCaptionLanguageSetting = _HlsCaptionLanguageSetting | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type HlsClientCache = _HlsClientCache | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.RFC_6381
+    - awsDashSdkLib.awsDashSdkLibStrings.RFC_4281
+    - java.lang.String
+  */
   type HlsCodecSpecification = _HlsCodecSpecification | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_DIRECTORY
+    - awsDashSdkLib.awsDashSdkLibStrings.SUBDIRECTORY_PER_STREAM
+    - java.lang.String
+  */
   type HlsDirectoryStructure = _HlsDirectoryStructure | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AES128
+    - awsDashSdkLib.awsDashSdkLibStrings.SAMPLE_AES
+    - java.lang.String
+  */
   type HlsEncryptionType = _HlsEncryptionType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INCLUDE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE
+    - java.lang.String
+  */
   type HlsIFrameOnlyManifest = _HlsIFrameOnlyManifest | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INCLUDE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE
+    - java.lang.String
+  */
   type HlsInitializationVectorInManifest = _HlsInitializationVectorInManifest | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SPEKE
+    - awsDashSdkLib.awsDashSdkLibStrings.STATIC_KEY
+    - java.lang.String
+  */
   type HlsKeyProviderType = _HlsKeyProviderType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.GZIP
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type HlsManifestCompression = _HlsManifestCompression | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FLOATING_POINT
+    - awsDashSdkLib.awsDashSdkLibStrings.INTEGER
+    - java.lang.String
+  */
   type HlsManifestDurationFormat = _HlsManifestDurationFormat | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type HlsOfflineEncrypted = _HlsOfflineEncrypted | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.MANIFESTS_AND_SEGMENTS
+    - awsDashSdkLib.awsDashSdkLibStrings.SEGMENTS_ONLY
+    - java.lang.String
+  */
   type HlsOutputSelection = _HlsOutputSelection | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INCLUDE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE
+    - java.lang.String
+  */
   type HlsProgramDateTime = _HlsProgramDateTime | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_FILE
+    - awsDashSdkLib.awsDashSdkLibStrings.SEGMENTED_FILES
+    - java.lang.String
+  */
   type HlsSegmentControl = _HlsSegmentControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INCLUDE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE
+    - java.lang.String
+  */
   type HlsStreamInfResolution = _HlsStreamInfResolution | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.PRIV
+    - awsDashSdkLib.awsDashSdkLibStrings.TDRL
+    - java.lang.String
+  */
   type HlsTimedMetadataId3Frame = _HlsTimedMetadataId3Frame | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type InputDeblockFilter = _InputDeblockFilter | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type InputDenoiseFilter = _InputDenoiseFilter | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTO
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLE
+    - awsDashSdkLib.awsDashSdkLibStrings.FORCE
+    - java.lang.String
+  */
   type InputFilterEnable = _InputFilterEnable | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.IGNORE_PSI
+    - awsDashSdkLib.awsDashSdkLibStrings.USE_PSI
+    - java.lang.String
+  */
   type InputPsiControl = _InputPsiControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DEGREE_0
+    - awsDashSdkLib.awsDashSdkLibStrings.DEGREES_90
+    - awsDashSdkLib.awsDashSdkLibStrings.DEGREES_180
+    - awsDashSdkLib.awsDashSdkLibStrings.DEGREES_270
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTO
+    - java.lang.String
+  */
   type InputRotate = _InputRotate | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED
+    - awsDashSdkLib.awsDashSdkLibStrings.ZEROBASED
+    - awsDashSdkLib.awsDashSdkLibStrings.SPECIFIEDSTART
+    - java.lang.String
+  */
   type InputTimecodeSource = _InputTimecodeSource | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PROBING
+    - awsDashSdkLib.awsDashSdkLibStrings.TRANSCODING
+    - awsDashSdkLib.awsDashSdkLibStrings.UPLOADING
+    - java.lang.String
+  */
+  type JobPhase = _JobPhase | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SUBMITTED
+    - awsDashSdkLib.awsDashSdkLibStrings.PROGRESSING
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETE
+    - awsDashSdkLib.awsDashSdkLibStrings.CANCELED
+    - awsDashSdkLib.awsDashSdkLibStrings.ERROR
+    - java.lang.String
+  */
   type JobStatus = _JobStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NAME
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATION_DATE
+    - awsDashSdkLib.awsDashSdkLibStrings.SYSTEM
+    - java.lang.String
+  */
   type JobTemplateListBy = _JobTemplateListBy | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENG
+    - awsDashSdkLib.awsDashSdkLibStrings.SPA
+    - awsDashSdkLib.awsDashSdkLibStrings.FRA
+    - awsDashSdkLib.awsDashSdkLibStrings.DEU
+    - awsDashSdkLib.awsDashSdkLibStrings.GER
+    - awsDashSdkLib.awsDashSdkLibStrings.ZHO
+    - awsDashSdkLib.awsDashSdkLibStrings.ARA
+    - awsDashSdkLib.awsDashSdkLibStrings.HIN
+    - awsDashSdkLib.awsDashSdkLibStrings.JPN
+    - awsDashSdkLib.awsDashSdkLibStrings.RUS
+    - awsDashSdkLib.awsDashSdkLibStrings.POR
+    - awsDashSdkLib.awsDashSdkLibStrings.ITA
+    - awsDashSdkLib.awsDashSdkLibStrings.URD
+    - awsDashSdkLib.awsDashSdkLibStrings.VIE
+    - awsDashSdkLib.awsDashSdkLibStrings.KOR
+    - awsDashSdkLib.awsDashSdkLibStrings.PAN
+    - awsDashSdkLib.awsDashSdkLibStrings.ABK
+    - awsDashSdkLib.awsDashSdkLibStrings.AAR
+    - awsDashSdkLib.awsDashSdkLibStrings.AFR
+    - awsDashSdkLib.awsDashSdkLibStrings.AKA
+    - awsDashSdkLib.awsDashSdkLibStrings.SQI
+    - awsDashSdkLib.awsDashSdkLibStrings.AMH
+    - awsDashSdkLib.awsDashSdkLibStrings.ARG
+    - awsDashSdkLib.awsDashSdkLibStrings.HYE
+    - awsDashSdkLib.awsDashSdkLibStrings.ASM
+    - awsDashSdkLib.awsDashSdkLibStrings.AVA
+    - awsDashSdkLib.awsDashSdkLibStrings.AVE
+    - awsDashSdkLib.awsDashSdkLibStrings.AYM
+    - awsDashSdkLib.awsDashSdkLibStrings.AZE
+    - awsDashSdkLib.awsDashSdkLibStrings.BAM
+    - awsDashSdkLib.awsDashSdkLibStrings.BAK
+    - awsDashSdkLib.awsDashSdkLibStrings.EUS
+    - awsDashSdkLib.awsDashSdkLibStrings.BEL
+    - awsDashSdkLib.awsDashSdkLibStrings.BEN
+    - awsDashSdkLib.awsDashSdkLibStrings.BIH
+    - awsDashSdkLib.awsDashSdkLibStrings.BIS
+    - awsDashSdkLib.awsDashSdkLibStrings.BOS
+    - awsDashSdkLib.awsDashSdkLibStrings.BRE
+    - awsDashSdkLib.awsDashSdkLibStrings.BUL
+    - awsDashSdkLib.awsDashSdkLibStrings.MYA
+    - awsDashSdkLib.awsDashSdkLibStrings.CAT
+    - awsDashSdkLib.awsDashSdkLibStrings.KHM
+    - awsDashSdkLib.awsDashSdkLibStrings.CHA
+    - awsDashSdkLib.awsDashSdkLibStrings.CHE
+    - awsDashSdkLib.awsDashSdkLibStrings.NYA
+    - awsDashSdkLib.awsDashSdkLibStrings.CHU
+    - awsDashSdkLib.awsDashSdkLibStrings.CHV
+    - awsDashSdkLib.awsDashSdkLibStrings.COR
+    - awsDashSdkLib.awsDashSdkLibStrings.COS
+    - awsDashSdkLib.awsDashSdkLibStrings.CRE
+    - awsDashSdkLib.awsDashSdkLibStrings.HRV
+    - awsDashSdkLib.awsDashSdkLibStrings.CES
+    - awsDashSdkLib.awsDashSdkLibStrings.DAN
+    - awsDashSdkLib.awsDashSdkLibStrings.DIV
+    - awsDashSdkLib.awsDashSdkLibStrings.NLD
+    - awsDashSdkLib.awsDashSdkLibStrings.DZO
+    - awsDashSdkLib.awsDashSdkLibStrings.ENM
+    - awsDashSdkLib.awsDashSdkLibStrings.EPO
+    - awsDashSdkLib.awsDashSdkLibStrings.EST
+    - awsDashSdkLib.awsDashSdkLibStrings.EWE
+    - awsDashSdkLib.awsDashSdkLibStrings.FAO
+    - awsDashSdkLib.awsDashSdkLibStrings.FIJ
+    - awsDashSdkLib.awsDashSdkLibStrings.FIN
+    - awsDashSdkLib.awsDashSdkLibStrings.FRM
+    - awsDashSdkLib.awsDashSdkLibStrings.FUL
+    - awsDashSdkLib.awsDashSdkLibStrings.GLA
+    - awsDashSdkLib.awsDashSdkLibStrings.GLG
+    - awsDashSdkLib.awsDashSdkLibStrings.LUG
+    - awsDashSdkLib.awsDashSdkLibStrings.KAT
+    - awsDashSdkLib.awsDashSdkLibStrings.ELL
+    - awsDashSdkLib.awsDashSdkLibStrings.GRN
+    - awsDashSdkLib.awsDashSdkLibStrings.GUJ
+    - awsDashSdkLib.awsDashSdkLibStrings.HAT
+    - awsDashSdkLib.awsDashSdkLibStrings.HAU
+    - awsDashSdkLib.awsDashSdkLibStrings.HEB
+    - awsDashSdkLib.awsDashSdkLibStrings.HER
+    - awsDashSdkLib.awsDashSdkLibStrings.HMO
+    - awsDashSdkLib.awsDashSdkLibStrings.HUN
+    - awsDashSdkLib.awsDashSdkLibStrings.ISL
+    - awsDashSdkLib.awsDashSdkLibStrings.IDO
+    - awsDashSdkLib.awsDashSdkLibStrings.IBO
+    - awsDashSdkLib.awsDashSdkLibStrings.IND
+    - awsDashSdkLib.awsDashSdkLibStrings.INA
+    - awsDashSdkLib.awsDashSdkLibStrings.ILE
+    - awsDashSdkLib.awsDashSdkLibStrings.IKU
+    - awsDashSdkLib.awsDashSdkLibStrings.IPK
+    - awsDashSdkLib.awsDashSdkLibStrings.GLE
+    - awsDashSdkLib.awsDashSdkLibStrings.JAV
+    - awsDashSdkLib.awsDashSdkLibStrings.KAL
+    - awsDashSdkLib.awsDashSdkLibStrings.KAN
+    - awsDashSdkLib.awsDashSdkLibStrings.KAU
+    - awsDashSdkLib.awsDashSdkLibStrings.KAS
+    - awsDashSdkLib.awsDashSdkLibStrings.KAZ
+    - awsDashSdkLib.awsDashSdkLibStrings.KIK
+    - awsDashSdkLib.awsDashSdkLibStrings.KIN
+    - awsDashSdkLib.awsDashSdkLibStrings.KIR
+    - awsDashSdkLib.awsDashSdkLibStrings.KOM
+    - awsDashSdkLib.awsDashSdkLibStrings.KON
+    - awsDashSdkLib.awsDashSdkLibStrings.KUA
+    - awsDashSdkLib.awsDashSdkLibStrings.KUR
+    - awsDashSdkLib.awsDashSdkLibStrings.LAO
+    - awsDashSdkLib.awsDashSdkLibStrings.LAT
+    - awsDashSdkLib.awsDashSdkLibStrings.LAV
+    - awsDashSdkLib.awsDashSdkLibStrings.LIM
+    - awsDashSdkLib.awsDashSdkLibStrings.LIN
+    - awsDashSdkLib.awsDashSdkLibStrings.LIT
+    - awsDashSdkLib.awsDashSdkLibStrings.LUB
+    - awsDashSdkLib.awsDashSdkLibStrings.LTZ
+    - awsDashSdkLib.awsDashSdkLibStrings.MKD
+    - awsDashSdkLib.awsDashSdkLibStrings.MLG
+    - awsDashSdkLib.awsDashSdkLibStrings.MSA
+    - awsDashSdkLib.awsDashSdkLibStrings.MAL
+    - awsDashSdkLib.awsDashSdkLibStrings.MLT
+    - awsDashSdkLib.awsDashSdkLibStrings.GLV
+    - awsDashSdkLib.awsDashSdkLibStrings.MRI
+    - awsDashSdkLib.awsDashSdkLibStrings.MAR
+    - awsDashSdkLib.awsDashSdkLibStrings.MAH
+    - awsDashSdkLib.awsDashSdkLibStrings.MON
+    - awsDashSdkLib.awsDashSdkLibStrings.NAU
+    - awsDashSdkLib.awsDashSdkLibStrings.NAV
+    - awsDashSdkLib.awsDashSdkLibStrings.NDE
+    - awsDashSdkLib.awsDashSdkLibStrings.NBL
+    - awsDashSdkLib.awsDashSdkLibStrings.NDO
+    - awsDashSdkLib.awsDashSdkLibStrings.NEP
+    - awsDashSdkLib.awsDashSdkLibStrings.SME
+    - awsDashSdkLib.awsDashSdkLibStrings.NOR
+    - awsDashSdkLib.awsDashSdkLibStrings.NOB
+    - awsDashSdkLib.awsDashSdkLibStrings.NNO
+    - awsDashSdkLib.awsDashSdkLibStrings.OCI
+    - awsDashSdkLib.awsDashSdkLibStrings.OJI
+    - awsDashSdkLib.awsDashSdkLibStrings.ORI
+    - awsDashSdkLib.awsDashSdkLibStrings.ORM
+    - awsDashSdkLib.awsDashSdkLibStrings.OSS
+    - awsDashSdkLib.awsDashSdkLibStrings.PLI
+    - awsDashSdkLib.awsDashSdkLibStrings.FAS
+    - awsDashSdkLib.awsDashSdkLibStrings.POL
+    - awsDashSdkLib.awsDashSdkLibStrings.PUS
+    - awsDashSdkLib.awsDashSdkLibStrings.QUE
+    - awsDashSdkLib.awsDashSdkLibStrings.QAA
+    - awsDashSdkLib.awsDashSdkLibStrings.RON
+    - awsDashSdkLib.awsDashSdkLibStrings.ROH
+    - awsDashSdkLib.awsDashSdkLibStrings.RUN
+    - awsDashSdkLib.awsDashSdkLibStrings.SMO
+    - awsDashSdkLib.awsDashSdkLibStrings.SAG
+    - awsDashSdkLib.awsDashSdkLibStrings.SAN
+    - awsDashSdkLib.awsDashSdkLibStrings.SRD
+    - awsDashSdkLib.awsDashSdkLibStrings.SRB
+    - awsDashSdkLib.awsDashSdkLibStrings.SNA
+    - awsDashSdkLib.awsDashSdkLibStrings.III
+    - awsDashSdkLib.awsDashSdkLibStrings.SND
+    - awsDashSdkLib.awsDashSdkLibStrings.SIN
+    - awsDashSdkLib.awsDashSdkLibStrings.SLK
+    - awsDashSdkLib.awsDashSdkLibStrings.SLV
+    - awsDashSdkLib.awsDashSdkLibStrings.SOM
+    - awsDashSdkLib.awsDashSdkLibStrings.SOT
+    - awsDashSdkLib.awsDashSdkLibStrings.SUN
+    - awsDashSdkLib.awsDashSdkLibStrings.SWA
+    - awsDashSdkLib.awsDashSdkLibStrings.SSW
+    - awsDashSdkLib.awsDashSdkLibStrings.SWE
+    - awsDashSdkLib.awsDashSdkLibStrings.TGL
+    - awsDashSdkLib.awsDashSdkLibStrings.TAH
+    - awsDashSdkLib.awsDashSdkLibStrings.TGK
+    - awsDashSdkLib.awsDashSdkLibStrings.TAM
+    - awsDashSdkLib.awsDashSdkLibStrings.TAT
+    - awsDashSdkLib.awsDashSdkLibStrings.TEL
+    - awsDashSdkLib.awsDashSdkLibStrings.THA
+    - awsDashSdkLib.awsDashSdkLibStrings.BOD
+    - awsDashSdkLib.awsDashSdkLibStrings.TIR
+    - awsDashSdkLib.awsDashSdkLibStrings.TON
+    - awsDashSdkLib.awsDashSdkLibStrings.TSO
+    - awsDashSdkLib.awsDashSdkLibStrings.TSN
+    - awsDashSdkLib.awsDashSdkLibStrings.TUR
+    - awsDashSdkLib.awsDashSdkLibStrings.TUK
+    - awsDashSdkLib.awsDashSdkLibStrings.TWI
+    - awsDashSdkLib.awsDashSdkLibStrings.UIG
+    - awsDashSdkLib.awsDashSdkLibStrings.UKR
+    - awsDashSdkLib.awsDashSdkLibStrings.UZB
+    - awsDashSdkLib.awsDashSdkLibStrings.VEN
+    - awsDashSdkLib.awsDashSdkLibStrings.VOL
+    - awsDashSdkLib.awsDashSdkLibStrings.WLN
+    - awsDashSdkLib.awsDashSdkLibStrings.CYM
+    - awsDashSdkLib.awsDashSdkLibStrings.FRY
+    - awsDashSdkLib.awsDashSdkLibStrings.WOL
+    - awsDashSdkLib.awsDashSdkLibStrings.XHO
+    - awsDashSdkLib.awsDashSdkLibStrings.YID
+    - awsDashSdkLib.awsDashSdkLibStrings.YOR
+    - awsDashSdkLib.awsDashSdkLibStrings.ZHA
+    - awsDashSdkLib.awsDashSdkLibStrings.ZUL
+    - awsDashSdkLib.awsDashSdkLibStrings.ORJ
+    - awsDashSdkLib.awsDashSdkLibStrings.QPC
+    - awsDashSdkLib.awsDashSdkLibStrings.TNG
+    - java.lang.String
+  */
   type LanguageCode = _LanguageCode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DVB
+    - awsDashSdkLib.awsDashSdkLibStrings.ATSC
+    - java.lang.String
+  */
   type M2tsAudioBufferModel = _M2tsAudioBufferModel | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.MULTIPLEX
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type M2tsBufferModel = _M2tsBufferModel | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.VIDEO_AND_FIXED_INTERVALS
+    - awsDashSdkLib.awsDashSdkLibStrings.VIDEO_INTERVAL
+    - java.lang.String
+  */
   type M2tsEbpAudioInterval = _M2tsEbpAudioInterval | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.VIDEO_AND_AUDIO_PIDS
+    - awsDashSdkLib.awsDashSdkLibStrings.VIDEO_PID
+    - java.lang.String
+  */
   type M2tsEbpPlacement = _M2tsEbpPlacement | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INCLUDE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE
+    - java.lang.String
+  */
   type M2tsEsRateInPes = _M2tsEsRateInPes | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FORCE
+    - awsDashSdkLib.awsDashSdkLibStrings.DEFAULT
+    - java.lang.String
+  */
   type M2tsForceTsVideoEbpOrder = _M2tsForceTsVideoEbpOrder | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INSERT
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type M2tsNielsenId3 = _M2tsNielsenId3 | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PCR_EVERY_PES_PACKET
+    - awsDashSdkLib.awsDashSdkLibStrings.CONFIGURED_PCR_PERIOD
+    - java.lang.String
+  */
   type M2tsPcrControl = _M2tsPcrControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.VBR
+    - awsDashSdkLib.awsDashSdkLibStrings.CBR
+    - java.lang.String
+  */
   type M2tsRateMode = _M2tsRateMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type M2tsScte35Source = _M2tsScte35Source | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.RAI_SEGSTART
+    - awsDashSdkLib.awsDashSdkLibStrings.RAI_ADAPT
+    - awsDashSdkLib.awsDashSdkLibStrings.PSI_SEGSTART
+    - awsDashSdkLib.awsDashSdkLibStrings.EBP
+    - awsDashSdkLib.awsDashSdkLibStrings.EBP_LEGACY
+    - java.lang.String
+  */
   type M2tsSegmentationMarkers = _M2tsSegmentationMarkers | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.MAINTAIN_CADENCE
+    - awsDashSdkLib.awsDashSdkLibStrings.RESET_CADENCE
+    - java.lang.String
+  */
   type M2tsSegmentationStyle = _M2tsSegmentationStyle | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INSERT
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type M3u8NielsenId3 = _M3u8NielsenId3 | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PCR_EVERY_PES_PACKET
+    - awsDashSdkLib.awsDashSdkLibStrings.CONFIGURED_PCR_PERIOD
+    - java.lang.String
+  */
   type M3u8PcrControl = _M3u8PcrControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type M3u8Scte35Source = _M3u8Scte35Source | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.MOV
+    - awsDashSdkLib.awsDashSdkLibStrings.PNG
+    - java.lang.String
+  */
   type MotionImageInsertionMode = _MotionImageInsertionMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ONCE
+    - awsDashSdkLib.awsDashSdkLibStrings.REPEAT
+    - java.lang.String
+  */
   type MotionImagePlayback = _MotionImagePlayback | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INCLUDE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE
+    - java.lang.String
+  */
   type MovClapAtom = _MovClapAtom | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INCLUDE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE
+    - java.lang.String
+  */
   type MovCslgAtom = _MovCslgAtom | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.XDCAM
+    - awsDashSdkLib.awsDashSdkLibStrings.MPEG
+    - java.lang.String
+  */
   type MovMpeg2FourCCControl = _MovMpeg2FourCCControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.OMNEON
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type MovPaddingControl = _MovPaddingControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SELF_CONTAINED
+    - awsDashSdkLib.awsDashSdkLibStrings.EXTERNAL
+    - java.lang.String
+  */
   type MovReference = _MovReference | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INCLUDE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE
+    - java.lang.String
+  */
   type Mp4CslgAtom = _Mp4CslgAtom | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INCLUDE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE
+    - java.lang.String
+  */
   type Mp4FreeSpaceBox = _Mp4FreeSpaceBox | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE_DOWNLOAD
+    - awsDashSdkLib.awsDashSdkLibStrings.NORMAL
+    - java.lang.String
+  */
   type Mp4MoovPlacement = _Mp4MoovPlacement | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.OFF
+    - awsDashSdkLib.awsDashSdkLibStrings.LOW
+    - awsDashSdkLib.awsDashSdkLibStrings.MEDIUM
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH
+    - java.lang.String
+  */
   type Mpeg2AdaptiveQuantization = _Mpeg2AdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTO
+    - awsDashSdkLib.awsDashSdkLibStrings.LOW
+    - awsDashSdkLib.awsDashSdkLibStrings.MAIN
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH1440
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH
+    - java.lang.String
+  */
   type Mpeg2CodecLevel = _Mpeg2CodecLevel | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.MAIN
+    - awsDashSdkLib.awsDashSdkLibStrings.PROFILE_422
+    - java.lang.String
+  */
   type Mpeg2CodecProfile = _Mpeg2CodecProfile | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ADAPTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.STATIC
+    - java.lang.String
+  */
   type Mpeg2DynamicSubGop = _Mpeg2DynamicSubGop | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE
+    - awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED
+    - java.lang.String
+  */
   type Mpeg2FramerateControl = _Mpeg2FramerateControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DUPLICATE_DROP
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE
+    - java.lang.String
+  */
   type Mpeg2FramerateConversionAlgorithm = _Mpeg2FramerateConversionAlgorithm | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FRAMES
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS
+    - java.lang.String
+  */
   type Mpeg2GopSizeUnits = _Mpeg2GopSizeUnits | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.TOP_FIELD
+    - awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_FIELD
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_TOP_FIELD
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_BOTTOM_FIELD
+    - java.lang.String
+  */
   type Mpeg2InterlaceMode = _Mpeg2InterlaceMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTO
+    - awsDashSdkLib.awsDashSdkLibStrings.INTRA_DC_PRECISION_8
+    - awsDashSdkLib.awsDashSdkLibStrings.INTRA_DC_PRECISION_9
+    - awsDashSdkLib.awsDashSdkLibStrings.INTRA_DC_PRECISION_10
+    - awsDashSdkLib.awsDashSdkLibStrings.INTRA_DC_PRECISION_11
+    - java.lang.String
+  */
   type Mpeg2IntraDcPrecision = _Mpeg2IntraDcPrecision | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE
+    - awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED
+    - java.lang.String
+  */
   type Mpeg2ParControl = _Mpeg2ParControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PASS
+    - awsDashSdkLib.awsDashSdkLibStrings.MULTI_PASS
+    - java.lang.String
+  */
   type Mpeg2QualityTuningLevel = _Mpeg2QualityTuningLevel | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.VBR
+    - awsDashSdkLib.awsDashSdkLibStrings.CBR
+    - java.lang.String
+  */
   type Mpeg2RateControlMode = _Mpeg2RateControlMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type Mpeg2SceneChangeDetect = _Mpeg2SceneChangeDetect | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type Mpeg2SlowPal = _Mpeg2SlowPal | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type Mpeg2SpatialAdaptiveQuantization = _Mpeg2SpatialAdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DEFAULT
+    - awsDashSdkLib.awsDashSdkLibStrings.D_10
+    - java.lang.String
+  */
   type Mpeg2Syntax = _Mpeg2Syntax | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.SOFT
+    - awsDashSdkLib.awsDashSdkLibStrings.HARD
+    - java.lang.String
+  */
   type Mpeg2Telecine = _Mpeg2Telecine | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type Mpeg2TemporalAdaptiveQuantization = _Mpeg2TemporalAdaptiveQuantization | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.COMBINE_DUPLICATE_STREAMS
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type MsSmoothAudioDeduplication = _MsSmoothAudioDeduplication | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.UTF8
+    - awsDashSdkLib.awsDashSdkLibStrings.UTF16
+    - java.lang.String
+  */
   type MsSmoothManifestEncoding = _MsSmoothManifestEncoding | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.BILATERAL
+    - awsDashSdkLib.awsDashSdkLibStrings.MEAN
+    - awsDashSdkLib.awsDashSdkLibStrings.GAUSSIAN
+    - awsDashSdkLib.awsDashSdkLibStrings.LANCZOS
+    - awsDashSdkLib.awsDashSdkLibStrings.SHARPEN
+    - awsDashSdkLib.awsDashSdkLibStrings.CONSERVE
+    - awsDashSdkLib.awsDashSdkLibStrings.SPATIAL
+    - java.lang.String
+  */
   type NoiseReducerFilter = _NoiseReducerFilter | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ASCENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.DESCENDING
+    - java.lang.String
+  */
   type Order = _Order | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.HLS_GROUP_SETTINGS
+    - awsDashSdkLib.awsDashSdkLibStrings.DASH_ISO_GROUP_SETTINGS
+    - awsDashSdkLib.awsDashSdkLibStrings.FILE_GROUP_SETTINGS
+    - awsDashSdkLib.awsDashSdkLibStrings.MS_SMOOTH_GROUP_SETTINGS
+    - awsDashSdkLib.awsDashSdkLibStrings.CMAF_GROUP_SETTINGS
+    - java.lang.String
+  */
   type OutputGroupType = _OutputGroupType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SDT_FOLLOW
+    - awsDashSdkLib.awsDashSdkLibStrings.SDT_FOLLOW_IF_PRESENT
+    - awsDashSdkLib.awsDashSdkLibStrings.SDT_MANUAL
+    - awsDashSdkLib.awsDashSdkLibStrings.SDT_NONE
+    - java.lang.String
+  */
   type OutputSdt = _OutputSdt | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NAME
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATION_DATE
+    - awsDashSdkLib.awsDashSdkLibStrings.SYSTEM
+    - java.lang.String
+  */
   type PresetListBy = _PresetListBy | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ON_DEMAND
+    - awsDashSdkLib.awsDashSdkLibStrings.RESERVED
+    - java.lang.String
+  */
   type PricingPlan = _PricingPlan | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.APPLE_PRORES_422
+    - awsDashSdkLib.awsDashSdkLibStrings.APPLE_PRORES_422_HQ
+    - awsDashSdkLib.awsDashSdkLibStrings.APPLE_PRORES_422_LT
+    - awsDashSdkLib.awsDashSdkLibStrings.APPLE_PRORES_422_PROXY
+    - java.lang.String
+  */
   type ProresCodecProfile = _ProresCodecProfile | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE
+    - awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED
+    - java.lang.String
+  */
   type ProresFramerateControl = _ProresFramerateControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DUPLICATE_DROP
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERPOLATE
+    - java.lang.String
+  */
   type ProresFramerateConversionAlgorithm = _ProresFramerateConversionAlgorithm | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.TOP_FIELD
+    - awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_FIELD
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_TOP_FIELD
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_BOTTOM_FIELD
+    - java.lang.String
+  */
   type ProresInterlaceMode = _ProresInterlaceMode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INITIALIZE_FROM_SOURCE
+    - awsDashSdkLib.awsDashSdkLibStrings.SPECIFIED
+    - java.lang.String
+  */
   type ProresParControl = _ProresParControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - java.lang.String
+  */
   type ProresSlowPal = _ProresSlowPal | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.HARD
+    - java.lang.String
+  */
   type ProresTelecine = _ProresTelecine | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NAME
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATION_DATE
+    - java.lang.String
+  */
   type QueueListBy = _QueueListBy | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.PAUSED
+    - java.lang.String
+  */
   type QueueStatus = _QueueStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTO_RENEW
+    - awsDashSdkLib.awsDashSdkLibStrings.EXPIRE
+    - java.lang.String
+  */
   type RenewalType = _RenewalType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXPIRED
+    - java.lang.String
+  */
   type ReservationPlanStatus = _ReservationPlanStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.RESPOND
+    - awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH
+    - java.lang.String
+  */
   type RespondToAfd = _RespondToAfd | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SERVER_SIDE_ENCRYPTION_S3
+    - awsDashSdkLib.awsDashSdkLibStrings.SERVER_SIDE_ENCRYPTION_KMS
+    - java.lang.String
+  */
+  type S3ServerSideEncryptionType = _S3ServerSideEncryptionType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DEFAULT
+    - awsDashSdkLib.awsDashSdkLibStrings.STRETCH_TO_OUTPUT
+    - java.lang.String
+  */
   type ScalingBehavior = _ScalingBehavior | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FRAMERATE_23_97
+    - awsDashSdkLib.awsDashSdkLibStrings.FRAMERATE_24
+    - awsDashSdkLib.awsDashSdkLibStrings.FRAMERATE_29_97_DROPFRAME
+    - awsDashSdkLib.awsDashSdkLibStrings.FRAMERATE_29_97_NON_DROPFRAME
+    - java.lang.String
+  */
   type SccDestinationFramerate = _SccDestinationFramerate | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_10
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_12
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_15
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_20
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_30
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_60
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_120
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_180
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_240
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_300
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_360
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_420
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_480
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_540
+    - awsDashSdkLib.awsDashSdkLibStrings.SECONDS_600
+    - java.lang.String
+  */
+  type StatusUpdateInterval = _StatusUpdateInterval | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.TOP_CENTER
+    - awsDashSdkLib.awsDashSdkLibStrings.TOP_LEFT
+    - awsDashSdkLib.awsDashSdkLibStrings.TOP_RIGHT
+    - awsDashSdkLib.awsDashSdkLibStrings.MIDDLE_LEFT
+    - awsDashSdkLib.awsDashSdkLibStrings.MIDDLE_CENTER
+    - awsDashSdkLib.awsDashSdkLibStrings.MIDDLE_RIGHT
+    - awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_LEFT
+    - awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_CENTER
+    - awsDashSdkLib.awsDashSdkLibStrings.BOTTOM_RIGHT
+    - java.lang.String
+  */
   type TimecodeBurninPosition = _TimecodeBurninPosition | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED
+    - awsDashSdkLib.awsDashSdkLibStrings.ZEROBASED
+    - awsDashSdkLib.awsDashSdkLibStrings.SPECIFIEDSTART
+    - java.lang.String
+  */
   type TimecodeSource = _TimecodeSource | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - java.lang.String
+  */
   type TimedMetadata = _TimedMetadata | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type TtmlStylePassthrough = _TtmlStylePassthrough | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SYSTEM
+    - awsDashSdkLib.awsDashSdkLibStrings.CUSTOM
+    - java.lang.String
+  */
   type Type = _Type | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FRAME_CAPTURE
+    - awsDashSdkLib.awsDashSdkLibStrings.H_264
+    - awsDashSdkLib.awsDashSdkLibStrings.H_265
+    - awsDashSdkLib.awsDashSdkLibStrings.MPEG2
+    - awsDashSdkLib.awsDashSdkLibStrings.PRORES
+    - java.lang.String
+  */
   type VideoCodec = _VideoCodec | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.PIC_TIMING_SEI
+    - java.lang.String
+  */
   type VideoTimecodeInsertion = _VideoTimecodeInsertion | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.RIFF
+    - awsDashSdkLib.awsDashSdkLibStrings.RF64
+    - java.lang.String
+  */
   type WavFormat = _WavFormat | java.lang.String
   type __doubleMin0 = scala.Double
   type __doubleMin0Max2147483647 = scala.Double
@@ -4083,7 +6647,6 @@ object MediaConvertNs extends js.Object {
   type __integerMin1000Max30000 = scala.Double
   type __integerMin1000Max300000000 = scala.Double
   type __integerMin10Max48 = scala.Double
-  type __integerMin10Max600 = scala.Double
   type __integerMin16Max24 = scala.Double
   type __integerMin1Max1 = scala.Double
   type __integerMin1Max10 = scala.Double
@@ -4173,6 +6736,7 @@ object MediaConvertNs extends js.Object {
   type __stringPatternAZaZ0902 = java.lang.String
   type __stringPatternAZaZ0932 = java.lang.String
   type __stringPatternArnAwsUsGovAcm = java.lang.String
+  type __stringPatternArnAwsUsGovKmsAZ26EastWestCentralNorthSouthEastWest1912D12KeyAFAF098AFAF094AFAF094AFAF094AFAF0912 = java.lang.String
   type __stringPatternDD = java.lang.String
   type __stringPatternHttps = java.lang.String
   type __stringPatternIdentityAZaZ26AZaZ09163 = java.lang.String
@@ -4184,6 +6748,11 @@ object MediaConvertNs extends js.Object {
   type __stringPatternSNSignalProcessingNotificationNS = java.lang.String
   type __stringPatternWS = java.lang.String
   type __timestampUnix = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-08-29`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

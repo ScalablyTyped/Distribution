@@ -14,6 +14,6 @@ class ReplaceButton[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKe
 @JSImport("react-mosaic-component", "ReplaceButton")
 @js.native
 object ReplaceButton extends js.Object {
-  var contextTypes: reactDashMosaicDashComponentLib.Anon_ComponentNameLocationMosaicActionsMosaicId = js.native
+  var contextTypes: reactDashMosaicDashComponentLib.Anon_MosaicActionsMosaicId = js.native
 }
 

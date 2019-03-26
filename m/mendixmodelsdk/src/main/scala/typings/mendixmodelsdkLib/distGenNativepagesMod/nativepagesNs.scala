@@ -49,7 +49,7 @@ object nativepagesNs extends js.Object {
     * In version 7.21.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativeLayout because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativeLayout because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class NativeLayout protected ()
     extends mendixmodelsdkLib.distGenPagesMod.pagesNs.FormBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -86,7 +86,7 @@ object nativepagesNs extends js.Object {
     * In version 7.23.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativeLayoutParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined name, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativeLayoutParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined name */ @js.native
   class NativeLayoutParameter protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -102,7 +102,7 @@ object nativepagesNs extends js.Object {
     * In version 7.21.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativePage because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativePage because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class NativePage protected ()
     extends mendixmodelsdkLib.distGenPagesMod.pagesNs.FormBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

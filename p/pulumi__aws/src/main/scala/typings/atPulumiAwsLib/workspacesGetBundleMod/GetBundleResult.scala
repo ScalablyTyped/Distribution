@@ -9,7 +9,7 @@ trait GetBundleResult extends js.Object {
   /**
     * The compute type. See supported fields below.
     */
-  val computeTypes: js.Array[atPulumiAwsLib.Anon_NameString_201725593]
+  val computeTypes: js.Array[atPulumiAwsLib.Anon_NameString_1260399121]
   /**
     * The description of the bundle.
     */
@@ -39,7 +39,7 @@ trait GetBundleResult extends js.Object {
 object GetBundleResult {
   @scala.inline
   def apply(
-    computeTypes: js.Array[atPulumiAwsLib.Anon_NameString_201725593],
+    computeTypes: js.Array[atPulumiAwsLib.Anon_NameString_1260399121],
     description: java.lang.String,
     id: java.lang.String,
     name: java.lang.String,

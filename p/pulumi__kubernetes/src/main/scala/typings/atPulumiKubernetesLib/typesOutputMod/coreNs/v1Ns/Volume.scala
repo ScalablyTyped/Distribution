@@ -37,6 +37,11 @@ trait Volume extends js.Object {
     */
   val configMap: ConfigMapVolumeSource
   /**
+    * CSI (Container Storage Interface) represents storage that is handled by an external CSI
+    * driver (Alpha feature).
+    */
+  val csi: CSIVolumeSource
+  /**
     * DownwardAPI represents downward API about the pod that should populate this volume
     */
   val downwardAPI: DownwardAPIVolumeSource
@@ -157,6 +162,7 @@ object Volume {
     cephfs: CephFSVolumeSource,
     cinder: CinderVolumeSource,
     configMap: ConfigMapVolumeSource,
+    csi: CSIVolumeSource,
     downwardAPI: DownwardAPIVolumeSource,
     emptyDir: EmptyDirVolumeSource,
     fc: FCVolumeSource,
@@ -180,7 +186,7 @@ object Volume {
     storageos: StorageOSVolumeSource,
     vsphereVolume: VsphereVirtualDiskVolumeSource
   ): Volume = {
-    val __obj = js.Dynamic.literal(awsElasticBlockStore = awsElasticBlockStore, azureDisk = azureDisk, azureFile = azureFile, cephfs = cephfs, cinder = cinder, configMap = configMap, downwardAPI = downwardAPI, emptyDir = emptyDir, fc = fc, flexVolume = flexVolume, flocker = flocker, gcePersistentDisk = gcePersistentDisk, gitRepo = gitRepo, glusterfs = glusterfs, hostPath = hostPath, iscsi = iscsi, name = name, nfs = nfs, persistentVolumeClaim = persistentVolumeClaim, photonPersistentDisk = photonPersistentDisk, portworxVolume = portworxVolume, projected = projected, quobyte = quobyte, rbd = rbd, scaleIO = scaleIO, secret = secret, storageos = storageos, vsphereVolume = vsphereVolume)
+    val __obj = js.Dynamic.literal(awsElasticBlockStore = awsElasticBlockStore, azureDisk = azureDisk, azureFile = azureFile, cephfs = cephfs, cinder = cinder, configMap = configMap, csi = csi, downwardAPI = downwardAPI, emptyDir = emptyDir, fc = fc, flexVolume = flexVolume, flocker = flocker, gcePersistentDisk = gcePersistentDisk, gitRepo = gitRepo, glusterfs = glusterfs, hostPath = hostPath, iscsi = iscsi, name = name, nfs = nfs, persistentVolumeClaim = persistentVolumeClaim, photonPersistentDisk = photonPersistentDisk, portworxVolume = portworxVolume, projected = projected, quobyte = quobyte, rbd = rbd, scaleIO = scaleIO, secret = secret, storageos = storageos, vsphereVolume = vsphereVolume)
   
     __obj.asInstanceOf[Volume]
   }

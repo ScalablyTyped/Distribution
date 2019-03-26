@@ -649,9 +649,19 @@ object ResourceGroupsNs extends js.Object {
   type MaxResults = scala.Double
   type NextToken = java.lang.String
   type Query = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CLOUDFORMATION_STACK_INACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.CLOUDFORMATION_STACK_NOT_EXISTING
+    - java.lang.String
+  */
   type QueryErrorCode = _QueryErrorCode | java.lang.String
   type QueryErrorList = js.Array[QueryError]
   type QueryErrorMessage = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.TAG_FILTERS_1_0
+    - awsDashSdkLib.awsDashSdkLibStrings.CLOUDFORMATION_STACK_1_0
+    - java.lang.String
+  */
   type QueryType = _QueryType | java.lang.String
   type ResourceArn = java.lang.String
   type ResourceFilterList = js.Array[ResourceFilter]
@@ -663,6 +673,11 @@ object ResourceGroupsNs extends js.Object {
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagValue = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-11-27`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

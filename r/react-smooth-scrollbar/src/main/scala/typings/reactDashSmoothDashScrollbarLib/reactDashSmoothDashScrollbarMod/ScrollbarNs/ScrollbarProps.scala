@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof smooth-scrollbar.smooth-scrollbar/interfaces.ScrollbarOptions ]:? smooth-scrollbar.smooth-scrollbar/interfaces.ScrollbarOptions[P]} */ trait ScrollbarProps extends js.Object {
+- Dropped {[ P in keyof smooth-scrollbar.smooth-scrollbar/interfaces/scrollbar.ScrollbarOptions ]:? smooth-scrollbar.smooth-scrollbar/interfaces/scrollbar.ScrollbarOptions[P]} */ trait ScrollbarProps extends js.Object {
   /**
     * Keep scrollbar tracks visible whether it's scrolling or not
     * @default false

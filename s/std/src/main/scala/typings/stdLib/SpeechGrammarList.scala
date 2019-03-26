@@ -20,6 +20,10 @@ trait SpeechGrammarList
 
 @JSGlobal("SpeechGrammarList")
 @js.native
+class SpeechGrammarListCls () extends SpeechGrammarList
+
+@JSGlobal("SpeechGrammarList")
+@js.native
 object SpeechGrammarList
   extends org.scalablytyped.runtime.Instantiable0[SpeechGrammarList]
 

@@ -67,3 +67,14 @@ trait ReportTask extends Task {
   def getReportStylesheet(reportId: scala.Double, requestOptions: js.Any): arcgisDashJsDashApiLib.IPromise[java.lang.String] = js.native
 }
 
+@JSGlobal("__esri.ReportTask")
+@js.native
+/**
+  * Helps you generate reports about the work being managed in your Workflow Manager system.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-ReportTask.html)
+  */
+class ReportTaskCls () extends ReportTask {
+  def this(properties: ReportTaskProperties) = this()
+}
+

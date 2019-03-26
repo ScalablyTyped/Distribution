@@ -5,6 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - csstypeLib.csstypeLibStrings.dashed
+  - csstypeLib.csstypeLibStrings.dotted
+  - csstypeLib.csstypeLibStrings.double
+  - csstypeLib.csstypeLibStrings.groove
+  - csstypeLib.csstypeLibStrings.hidden
+  - csstypeLib.csstypeLibStrings.inset
+  - csstypeLib.csstypeLibStrings.none
+  - csstypeLib.csstypeLibStrings.outset
+  - csstypeLib.csstypeLibStrings.ridge
+  - csstypeLib.csstypeLibStrings.solid
+*/
 trait LineStyle
   extends csstypeLib.csstypeMod.BorderBlockEndStyleProperty
      with csstypeLib.csstypeMod.BorderBlockStartStyleProperty

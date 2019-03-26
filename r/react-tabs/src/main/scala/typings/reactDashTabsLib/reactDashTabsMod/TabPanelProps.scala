@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<std.HTMLDivElement>, 'className'> ]: react.react.HTMLProps<std.HTMLDivElement>[P]} */ trait TabPanelProps extends js.Object {
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLProps<std.HTMLDivElement>, 'className'> ]: react.react.React.HTMLProps<std.HTMLDivElement>[P]} */ trait TabPanelProps extends js.Object {
   var className: js.UndefOr[
     java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   ] = js.undefined

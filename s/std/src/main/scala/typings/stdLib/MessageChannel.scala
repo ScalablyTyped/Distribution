@@ -12,6 +12,15 @@ trait MessageChannel extends js.Object {
 
 @JSGlobal("MessageChannel")
 @js.native
+class MessageChannelCls () extends MessageChannel {
+  /* CompleteClass */
+  override val port1: MessagePort = js.native
+  /* CompleteClass */
+  override val port2: MessagePort = js.native
+}
+
+@JSGlobal("MessageChannel")
+@js.native
 object MessageChannel
   extends org.scalablytyped.runtime.Instantiable0[MessageChannel]
 

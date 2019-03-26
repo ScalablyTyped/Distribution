@@ -5,5 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - Globals
+  - csstypeLib.csstypeLibStrings.auto
+  - csstypeLib.csstypeLibStrings.smooth
+*/
 trait ScrollBehaviorProperty extends js.Object
 

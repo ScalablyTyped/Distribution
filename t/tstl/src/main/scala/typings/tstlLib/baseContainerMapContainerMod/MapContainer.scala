@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerUnderscoreIAssociativeContainerMod._IAssociativeContainer because var conflicts: iterator. Inlined find, has, count, erase, erase, erase */ @JSImport("tstl/base/container/MapContainer", "MapContainer")
+- tstlLib.baseContainerUnderscoreIAssociativeContainerMod._IAssociativeContainer because var conflicts: iterator. Inlined find, has, count */ @JSImport("tstl/base/container/MapContainer", "MapContainer")
 @js.native
 /**
   * Default Constructor.
@@ -69,12 +69,6 @@ abstract class MapContainer[Key, T, Unique /* <: scala.Boolean */, Source /* <: 
   def emplace_hint(hint: tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, Unique, Source], key: Key, `val`: T): tstlLib.baseIteratorMapIteratorMod.MapIterator[Key, T, Unique, Source] = js.native
   /**
     * @inheritDoc
-    */
-  /**
-    * Erase elements with a specified key.
-    *
-    * @param key Key to search for.
-    * @return Number of erased elements.
     */
   def erase(key: Key): scala.Double = js.native
   /**

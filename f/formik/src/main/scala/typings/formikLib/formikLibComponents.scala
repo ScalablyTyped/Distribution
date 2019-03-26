@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 
 object formikLibComponents {
   @scala.inline
-  def ErrorMessage: reactLib.reactMod.ReactNs.ComponentType[formikLib.distErrorMessageMod.ErrorMessageProps] = formikLib.formikMod.^.ErrorMessage.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[formikLib.distErrorMessageMod.ErrorMessageProps]]
+  def ErrorMessage: reactLib.reactMod.ReactNs.ComponentType[formikLib.distErrorMessageMod.ErrorMessageProps] = js.constructorOf[formikLib.formikMod.ErrorMessage].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[formikLib.distErrorMessageMod.ErrorMessageProps]]
   @scala.inline
-  def FastField: reactLib.reactMod.ReactNs.ComponentType[js.Any] = formikLib.formikMod.^.FastField.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
+  def FastField: reactLib.reactMod.ReactNs.ComponentType[js.Any] = js.constructorOf[formikLib.formikMod.FastField].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
   @scala.inline
-  def Field: reactLib.reactMod.ReactNs.ComponentType[js.Any] = formikLib.formikMod.^.Field.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
+  def Field: reactLib.reactMod.ReactNs.ComponentType[js.Any] = js.constructorOf[formikLib.formikMod.Field].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
   @scala.inline
-  def FieldArray: reactLib.reactMod.ReactNs.ComponentType[formikLib.distFieldArrayMod.FieldArrayConfig] = formikLib.formikMod.^.FieldArray.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[formikLib.distFieldArrayMod.FieldArrayConfig]]
+  def FieldArray: reactLib.reactMod.ReactNs.ComponentType[formikLib.distFieldArrayMod.FieldArrayConfig] = js.constructorOf[formikLib.formikMod.FieldArray].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[formikLib.distFieldArrayMod.FieldArrayConfig]]
   @scala.inline
   def Form: reactLib.reactMod.ReactNs.ComponentType[
     stdLib.Pick[
       reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement], 
       /* import warning: LimitUnionLength.enterTypeRef Was union type with length 255 */ js.Any
     ]
-  ] = formikLib.formikMod.^.Form.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[formikLib.formikMod.Form].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   stdLib.Pick[
     reactLib.reactMod.ReactNs.FormHTMLAttributes[stdLib.HTMLFormElement], 
     /* import warning: LimitUnionLength.enterTypeRef Was union type with length 255 */ js.Any
@@ -30,7 +30,7 @@ object formikLibComponents {
   @scala.inline
   def FormikProvider: reactLib.reactMod.ReactNs.ComponentType[
     createDashReactDashContextLib.createDashReactDashContextMod.ProviderProps[formikLib.distTypesMod.FormikContext[js.Any]]
-  ] = formikLib.formikMod.^.FormikProvider.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[formikLib.formikMod.FormikProvider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   createDashReactDashContextLib.createDashReactDashContextMod.ProviderProps[formikLib.distTypesMod.FormikContext[js.Any]]]]
   @scala.inline
   def ErrorMessageProps: formikLib.distErrorMessageMod.ErrorMessageProps.type = formikLib.distErrorMessageMod.ErrorMessageProps

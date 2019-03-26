@@ -1,0 +1,17 @@
+package typings
+package easyDashXapiDashSupertestLib.stringUnderscoreDecoderMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("string_decoder", "StringDecoder")
+@js.native
+class StringDecoder protected () extends NodeStringDecoder {
+  def this(encoding: java.lang.String) = this()
+  /* CompleteClass */
+  override def detectIncompleteChar(buffer: easyDashXapiDashSupertestLib.Buffer): scala.Double = js.native
+  /* CompleteClass */
+  override def write(buffer: easyDashXapiDashSupertestLib.Buffer): java.lang.String = js.native
+}
+

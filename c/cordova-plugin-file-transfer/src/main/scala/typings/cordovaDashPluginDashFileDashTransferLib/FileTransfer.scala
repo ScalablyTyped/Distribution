@@ -90,6 +90,10 @@ trait FileTransfer extends js.Object {
 
 @JSGlobal("FileTransfer")
 @js.native
+class FileTransferCls () extends FileTransfer
+
+@JSGlobal("FileTransfer")
+@js.native
 object FileTransfer
   extends org.scalablytyped.runtime.Instantiable0[FileTransfer]
 

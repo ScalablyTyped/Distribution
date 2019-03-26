@@ -52,3 +52,9 @@ trait SliceViewModel extends Accessor {
   def newSlice(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.SliceViewModel")
+@js.native
+class SliceViewModelCls () extends SliceViewModel {
+  def this(properties: SliceViewModelProperties) = this()
+}
+

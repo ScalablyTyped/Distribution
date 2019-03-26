@@ -12,6 +12,12 @@ trait IIRFilterNode extends AudioNode {
 
 @JSGlobal("IIRFilterNode")
 @js.native
+class IIRFilterNodeCls protected () extends IIRFilterNode {
+  def this(context: BaseAudioContext, options: IIRFilterOptions) = this()
+}
+
+@JSGlobal("IIRFilterNode")
+@js.native
 object IIRFilterNode
   extends org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ IIRFilterOptions, IIRFilterNode]
 

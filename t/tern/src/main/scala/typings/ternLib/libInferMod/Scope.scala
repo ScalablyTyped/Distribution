@@ -15,3 +15,9 @@ trait Scope extends Obj {
   def defVar(name: java.lang.String, originNode: estreeLib.estreeMod.Node): AVal = js.native
 }
 
+@JSImport("tern/lib/infer", "Scope")
+@js.native
+class ScopeCls () extends Scope {
+  def this(parent: Scope, originNode: estreeLib.estreeMod.Node) = this()
+}
+

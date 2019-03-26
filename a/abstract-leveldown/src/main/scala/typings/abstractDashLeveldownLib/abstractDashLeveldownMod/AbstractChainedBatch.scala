@@ -14,3 +14,10 @@ trait AbstractChainedBatch[K, V] extends AbstractOptions {
   def write(options: js.Any, cb: ErrorCallback): js.Any = js.native
 }
 
+@JSImport("abstract-leveldown", "AbstractChainedBatch")
+@js.native
+class AbstractChainedBatchCls[K, V] protected () extends AbstractChainedBatch[K, V] {
+  // tslint:disable-next-line no-unnecessary-generics
+  def this(db: js.Any) = this()
+}
+

@@ -94,7 +94,7 @@ object webservicesNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/consumed-web-services relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.IImportedWebService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.IImportedWebService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class ImportedWebService protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -147,7 +147,7 @@ object webservicesNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/published-app-services relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.IPublishedAppService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.IPublishedAppService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class PublishedAppService protected () extends PublishedServiceBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
   }
@@ -224,7 +224,7 @@ object webservicesNs extends js.Object {
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.IPublishedServiceBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.IPublishedServiceBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   abstract class PublishedServiceBase protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -235,7 +235,7 @@ object webservicesNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/published-web-services relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.IPublishedWebService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.IPublishedWebService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class PublishedWebService protected () extends PublishedServiceBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
   }

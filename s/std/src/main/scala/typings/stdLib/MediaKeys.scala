@@ -17,6 +17,10 @@ trait MediaKeys extends js.Object {
 
 @JSGlobal("MediaKeys")
 @js.native
+class MediaKeysCls () extends MediaKeys
+
+@JSGlobal("MediaKeys")
+@js.native
 object MediaKeys
   extends org.scalablytyped.runtime.Instantiable0[MediaKeys]
 

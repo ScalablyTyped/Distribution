@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 package object eggMod {
   type EggContextHttpClient = urllibLib.urllibMod.HttpClient2
+  /* Rewritten from type alias, can be one of: 
+    - eggLib.eggLibStrings.local
+    - eggLib.eggLibStrings.unittest
+    - eggLib.eggLibStrings.prod
+    - java.lang.String
+  */
   type EggEnvType = _EggEnvType | java.lang.String
   type EggHttpClient = urllibLib.urllibMod.HttpClient2
   type EggPluginItem = IEggPluginItem | scala.Boolean

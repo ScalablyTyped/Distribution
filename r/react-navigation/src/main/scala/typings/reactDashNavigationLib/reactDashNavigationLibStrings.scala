@@ -94,9 +94,6 @@ object reactDashNavigationLibStrings {
   sealed trait inverted extends js.Object
   
   @js.native
-  sealed trait isFocused extends js.Object
-  
-  @js.native
   sealed trait left extends js.Object
   
   @js.native
@@ -109,9 +106,6 @@ object reactDashNavigationLibStrings {
   
   @js.native
   sealed trait modal extends js.Object
-  
-  @js.native
-  sealed trait navigation extends js.Object
   
   @js.native
   sealed trait never
@@ -217,8 +211,6 @@ object reactDashNavigationLibStrings {
   @scala.inline
   def inverted: inverted = "inverted".asInstanceOf[inverted]
   @scala.inline
-  def isFocused: isFocused = "isFocused".asInstanceOf[isFocused]
-  @scala.inline
   def left: left = "left".asInstanceOf[left]
   @scala.inline
   def `locked-closed`: `locked-closed` = "locked-closed".asInstanceOf[`locked-closed`]
@@ -226,8 +218,6 @@ object reactDashNavigationLibStrings {
   def `locked-open`: `locked-open` = "locked-open".asInstanceOf[`locked-open`]
   @scala.inline
   def modal: modal = "modal".asInstanceOf[modal]
-  @scala.inline
-  def navigation: navigation = "navigation".asInstanceOf[navigation]
   @scala.inline
   def never: never = "never".asInstanceOf[never]
   @scala.inline

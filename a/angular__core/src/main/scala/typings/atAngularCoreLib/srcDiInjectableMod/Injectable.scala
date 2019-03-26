@@ -17,6 +17,12 @@ trait Injectable extends js.Object {
   ] = js.undefined
 }
 
+@JSImport("@angular/core/src/di/injectable", "Injectable")
+@js.native
+class InjectableCls () extends Injectable {
+  def this(options: atAngularCoreLib.Anon_ProvidedIn with InjectableProvider) = this()
+}
+
 object Injectable {
   @scala.inline
   def apply(

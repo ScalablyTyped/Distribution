@@ -19,6 +19,13 @@ trait AudioBufferSourceNode extends AudioScheduledSourceNode {
 
 @JSGlobal("AudioBufferSourceNode")
 @js.native
+class AudioBufferSourceNodeCls protected () extends AudioBufferSourceNode {
+  def this(context: BaseAudioContext) = this()
+  def this(context: BaseAudioContext, options: AudioBufferSourceOptions) = this()
+}
+
+@JSGlobal("AudioBufferSourceNode")
+@js.native
 object AudioBufferSourceNode
   extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, AudioBufferSourceNode]
      with org.scalablytyped.runtime.Instantiable2[

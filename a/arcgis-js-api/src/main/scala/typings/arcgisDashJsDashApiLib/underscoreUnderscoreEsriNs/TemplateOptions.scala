@@ -108,3 +108,9 @@ trait TemplateOptions extends Accessor {
   var width: scala.Double = js.native
 }
 
+@JSGlobal("__esri.TemplateOptions")
+@js.native
+class TemplateOptionsCls () extends TemplateOptions {
+  def this(properties: TemplateOptionsProperties) = this()
+}
+

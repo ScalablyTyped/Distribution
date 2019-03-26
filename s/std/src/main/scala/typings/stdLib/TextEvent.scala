@@ -31,6 +31,10 @@ trait TextEvent extends UIEvent {
 
 @JSGlobal("TextEvent")
 @js.native
+class TextEventCls () extends TextEvent
+
+@JSGlobal("TextEvent")
+@js.native
 object TextEvent
   extends org.scalablytyped.runtime.Instantiable0[TextEvent] {
   val DOM_INPUT_METHOD_DROP: scala.Double = js.native

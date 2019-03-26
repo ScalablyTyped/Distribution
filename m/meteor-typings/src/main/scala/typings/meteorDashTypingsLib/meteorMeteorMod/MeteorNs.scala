@@ -24,6 +24,18 @@ object MeteorNs extends js.Object {
   }
   
   @js.native
+  class ErrorCls protected () extends Error {
+    def this(error: java.lang.String) = this()
+    def this(error: scala.Double) = this()
+    def this(error: java.lang.String, reason: java.lang.String) = this()
+    def this(error: scala.Double, reason: java.lang.String) = this()
+    def this(error: java.lang.String, reason: java.lang.String, details: java.lang.String) = this()
+    def this(error: scala.Double, reason: java.lang.String, details: java.lang.String) = this()
+    /* CompleteClass */
+    override var error: java.lang.String | scala.Double = js.native
+  }
+  
+  @js.native
   trait ErrorStatic
     extends org.scalablytyped.runtime.Instantiable2[
           (/* error */ scala.Double) | (/* error */ java.lang.String), 

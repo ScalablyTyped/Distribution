@@ -1053,6 +1053,11 @@ object CloudWatchEventsNs extends js.Object {
   val TypesNs: this.type = js.native
   type Action = java.lang.String
   type Arn = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type AssignPublicIp = _AssignPublicIp | java.lang.String
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -1065,6 +1070,11 @@ object CloudWatchEventsNs extends js.Object {
   type EventTime = stdLib.Date
   type InputTransformerPathKey = java.lang.String
   type Integer = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.EC2
+    - awsDashSdkLib.awsDashSdkLibStrings.FARGATE
+    - java.lang.String
+  */
   type LaunchType = _LaunchType | java.lang.String
   type LimitMax100 = scala.Double
   type LimitMin1 = scala.Double
@@ -1082,6 +1092,11 @@ object CloudWatchEventsNs extends js.Object {
   type RuleName = java.lang.String
   type RuleNameList = js.Array[RuleName]
   type RuleResponseList = js.Array[Rule]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type RuleState = _RuleState | java.lang.String
   type RunCommandTargetKey = java.lang.String
   type RunCommandTargetValue = java.lang.String
@@ -1103,6 +1118,12 @@ object CloudWatchEventsNs extends js.Object {
   type TargetList = js.Array[Target]
   type TargetPartitionKeyPath = java.lang.String
   type TransformerInput = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2014-02-03`
+    - awsDashSdkLib.awsDashSdkLibStrings.`2015-10-07`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -39,6 +39,12 @@ trait Relationship extends Accessor {
   var relatedTableId: scala.Double = js.native
 }
 
+@JSGlobal("__esri.Relationship")
+@js.native
+class RelationshipCls () extends Relationship {
+  def this(properties: RelationshipProperties) = this()
+}
+
 /**
   * This object contains a helper method for creating a renderer for exploring the relationship between two numeric attributes. This is commonly known as a [bivariate choropleth](http://www.joshuastevens.net/cartography/make-a-bivariate-choropleth-map/) visualization. This renderer classifies each variable in either 2, 3, or 4 classes along separate color ramps. One of those ramps is rotated 90 degrees and overlaid on the other to create a 2x2, 3x3, or 4x4 square grid. The x-axis indicates the range of values for one variable, and the y-axis indicates the range for the second variable. The squares running diagonal from the lower left corner to the upper right corner indicate features where the two variables may be related or in agreement with one another.
   *

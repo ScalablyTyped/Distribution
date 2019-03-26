@@ -22,6 +22,41 @@ trait View extends js.Object {
   def templateInstance(): TemplateInstance
 }
 
+@JSGlobal("Blaze.View")
+@js.native
+class ViewCls () extends View {
+  def this(name: java.lang.String) = this()
+  def this(name: java.lang.String, renderFunction: js.Function) = this()
+  /* CompleteClass */
+  override var isCreated: scala.Boolean = js.native
+  /* CompleteClass */
+  override var isDestroyed: scala.Boolean = js.native
+  /* CompleteClass */
+  override var isRendered: scala.Boolean = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
+  /* CompleteClass */
+  override var parentView: View = js.native
+  /* CompleteClass */
+  override var renderCount: scala.Double = js.native
+  /* CompleteClass */
+  override var template: Template = js.native
+  /* CompleteClass */
+  override def autorun(runFunc: js.Function1[/* computation */ meteorDashTypingsLib.TrackerNs.Computation, scala.Unit]): meteorDashTypingsLib.TrackerNs.Computation = js.native
+  /* CompleteClass */
+  override def firstNode(): stdLib.Node = js.native
+  /* CompleteClass */
+  override def lastNode(): stdLib.Node = js.native
+  /* CompleteClass */
+  override def onViewCreated(func: js.Function): scala.Unit = js.native
+  /* CompleteClass */
+  override def onViewDestroyed(func: js.Function): scala.Unit = js.native
+  /* CompleteClass */
+  override def onViewReady(func: js.Function): scala.Unit = js.native
+  /* CompleteClass */
+  override def templateInstance(): TemplateInstance = js.native
+}
+
 object View {
   @scala.inline
   def apply(

@@ -6,6 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typeDefinitionMod {
+  /* Rewritten from type alias, can be one of: 
+    - GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
+    - GraphQLInterfaceType
+    - GraphQLUnionType
+  */
   type GraphQLCompositeType = _GraphQLCompositeType | (GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]])
   type GraphQLFieldResolver[TSource, TContext, TArgs] = js.Function4[
     /* source */ TSource, 
@@ -14,6 +19,14 @@ package object typeDefinitionMod {
     /* info */ GraphQLResolveInfo, 
     js.Any
   ]
+  /* Rewritten from type alias, can be one of: 
+    - GraphQLScalarType
+    - GraphQLEnumType
+    - GraphQLInputObjectType
+    - GraphQLList[js.Any]
+    - GraphQLNonNull[
+  GraphQLScalarType | GraphQLEnumType | GraphQLInputObjectType | GraphQLList[js.Any]]
+  */
   type GraphQLInputType = _GraphQLInputType | GraphQLList[js.Any] | (GraphQLNonNull[
     GraphQLScalarType | GraphQLEnumType | GraphQLInputObjectType | GraphQLList[js.Any]
   ])
@@ -23,8 +36,35 @@ package object typeDefinitionMod {
     /* info */ GraphQLResolveInfo, 
     graphqlLib.jsutilsMaybePromiseMod.MaybePromise[scala.Boolean]
   ]
+  /* Rewritten from type alias, can be one of: 
+    - GraphQLScalarType
+    - GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
+    - GraphQLInterfaceType
+    - GraphQLUnionType
+    - GraphQLEnumType
+    - GraphQLInputObjectType
+  */
   type GraphQLNamedType = _GraphQLNamedType | (GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]])
+  /* Rewritten from type alias, can be one of: 
+    - GraphQLScalarType
+    - GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
+    - GraphQLInterfaceType
+    - GraphQLUnionType
+    - GraphQLEnumType
+    - GraphQLInputObjectType
+    - GraphQLList[js.Any]
+  */
   type GraphQLNullableType = _GraphQLNullableType | (GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | GraphQLList[js.Any]
+  /* Rewritten from type alias, can be one of: 
+    - GraphQLScalarType
+    - GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
+    - GraphQLInterfaceType
+    - GraphQLUnionType
+    - GraphQLEnumType
+    - GraphQLList[js.Any]
+    - GraphQLNonNull[
+  GraphQLScalarType | (GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | GraphQLInterfaceType | GraphQLUnionType | GraphQLEnumType | GraphQLList[js.Any]]
+  */
   type GraphQLOutputType = _GraphQLOutputType | (GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | GraphQLList[js.Any] | (GraphQLNonNull[
     GraphQLScalarType | (GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | GraphQLInterfaceType | GraphQLUnionType | GraphQLEnumType | GraphQLList[js.Any]
   ])
@@ -35,6 +75,16 @@ package object typeDefinitionMod {
   ]
   type GraphQLScalarSerializer[TExternal] = js.Function1[/* value */ js.Any, graphqlLib.tsutilsMaybeMod.Maybe[TExternal]]
   type GraphQLScalarValueParser[TInternal] = js.Function1[/* value */ js.Any, graphqlLib.tsutilsMaybeMod.Maybe[TInternal]]
+  /* Rewritten from type alias, can be one of: 
+    - GraphQLScalarType
+    - GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]
+    - GraphQLInterfaceType
+    - GraphQLUnionType
+    - GraphQLEnumType
+    - GraphQLInputObjectType
+    - GraphQLList[js.Any]
+    - GraphQLNonNull[js.Any]
+  */
   type GraphQLType = _GraphQLType | (GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | GraphQLList[js.Any] | GraphQLNonNull[js.Any]
   type GraphQLTypeResolver[TSource, TContext, TArgs] = js.Function3[
     /* value */ TSource, 

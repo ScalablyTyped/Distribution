@@ -90,3 +90,9 @@ trait PrintTemplate extends Accessor {
   var showLabels: scala.Boolean = js.native
 }
 
+@JSGlobal("__esri.PrintTemplate")
+@js.native
+class PrintTemplateCls () extends PrintTemplate {
+  def this(properties: PrintTemplateProperties) = this()
+}
+

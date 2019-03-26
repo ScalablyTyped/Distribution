@@ -647,3 +647,7 @@ trait S7Client extends js.Object {
   ): js.Array[MultiVarsWriteResult] | scala.Boolean = js.native
 }
 
+@JSImport("node-snap7", "S7Client")
+@js.native
+class S7ClientCls () extends S7Client
+

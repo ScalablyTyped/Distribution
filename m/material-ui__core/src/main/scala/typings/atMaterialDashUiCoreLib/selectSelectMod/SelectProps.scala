@@ -6,15 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Input.InputProps, 'classes' | 'value' | 'onChange'> ]: @material-ui/core.@material-ui/core/Input.InputProps[P]}
-- Dropped {[ P in 'onChange' ]: @material-ui/core.@material-ui/core/Select/SelectInput.SelectInputProps[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Input.InputProps, @material-ui/core.@material-ui/core/Select/Select.SelectClassKey, 'value' | 'onChange'>) */ trait SelectProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SelectClassKey] {
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Input/Input.InputProps, 'classes' | 'value' | 'onChange'> ]: @material-ui/core.@material-ui/core/Input/Input.InputProps[P]}
+- Dropped {[ P in 'onChange' ]: @material-ui/core.@material-ui/core/Select/SelectInput.SelectInputProps[P]} */ trait SelectProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SelectClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var IconComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var MenuProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.menuMenuMod.MenuProps]] = js.undefined
   var SelectDisplayProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]] = js.undefined
   var autoWidth: js.UndefOr[scala.Boolean] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var displayEmpty: js.UndefOr[scala.Boolean] = js.undefined
   var input: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
@@ -34,7 +33,6 @@ import scala.scalajs.js.annotation._
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var value: js.UndefOr[
     (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object
   ] = js.undefined

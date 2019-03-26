@@ -32,3 +32,16 @@ trait Service extends js.Object {
   def getEndpoint(containerName: java.lang.String, containerPort: scala.Double): js.Promise[Endpoint] = js.native
 }
 
+@JSImport("@pulumi/cloud/service", "Service")
+@js.native
+class ServiceCls protected () extends Service {
+  /**
+    * Construct a new Service, which is one or more managed replicas of a group of one or more Containers.
+    *
+    * @param name The unique name of the service.
+    * @param opts A bag of options that controls how this resource behaves.
+    */
+  def this(name: java.lang.String, args: ServiceArguments) = this()
+  def this(name: java.lang.String, args: ServiceArguments, opts: atPulumiPulumiLib.resourceMod.ResourceOptions) = this()
+}
+

@@ -67,6 +67,10 @@ trait Performance extends EventTarget {
 
 @JSGlobal("Performance")
 @js.native
+class PerformanceCls () extends Performance
+
+@JSGlobal("Performance")
+@js.native
 object Performance
   extends org.scalablytyped.runtime.Instantiable0[Performance]
 

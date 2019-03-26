@@ -51,3 +51,9 @@ trait BasemapGalleryViewModel extends Accessor {
   def basemapEquals(basemap1: Basemap, basemap2: Basemap): scala.Boolean = js.native
 }
 
+@JSGlobal("__esri.BasemapGalleryViewModel")
+@js.native
+class BasemapGalleryViewModelCls () extends BasemapGalleryViewModel {
+  def this(properties: BasemapGalleryViewModelProperties) = this()
+}
+

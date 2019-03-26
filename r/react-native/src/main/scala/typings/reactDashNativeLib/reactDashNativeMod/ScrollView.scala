@@ -48,6 +48,6 @@ class ScrollView ()
     * The animated prop defaults to true
     */
   def scrollToEnd(): scala.Unit = js.native
-  def scrollToEnd(options: reactDashNativeLib.Anon_AnimatedBoolean_1590081086): scala.Unit = js.native
+  def scrollToEnd(options: reactDashNativeLib.Anon_AnimatedBoolean_769269887): scala.Unit = js.native
 }
 

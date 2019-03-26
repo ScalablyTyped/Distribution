@@ -25,6 +25,7 @@ object ^ extends js.Object {
   val powerMonitor: electronLib.ElectronNs.PowerMonitor = js.native
   val powerSaveBlocker: electronLib.ElectronNs.PowerSaveBlocker = js.native
   val protocol: electronLib.ElectronNs.Protocol = js.native
+  /* Extracted nested Instantiables into classes in remoteNs */
   val remote: electronLib.ElectronNs.Remote = js.native
   val screen: electronLib.ElectronNs.Screen = js.native
   val session: electronLib.Anon_DefaultSession = js.native

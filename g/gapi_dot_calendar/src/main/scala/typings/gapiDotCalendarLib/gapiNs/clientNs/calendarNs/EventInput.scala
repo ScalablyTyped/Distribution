@@ -14,7 +14,7 @@ trait EventInput extends js.Object {
   var colorId: js.UndefOr[java.lang.String] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var end: gapiDotCalendarLib.Anon_Date
-  var extendedProperties: js.UndefOr[gapiDotCalendarLib.Anon_KeyPrivate] = js.undefined
+  var extendedProperties: js.UndefOr[gapiDotCalendarLib.Anon_Private] = js.undefined
   var gadget: js.UndefOr[gapiDotCalendarLib.Anon_Display] = js.undefined
   var guestsCanInviteOthers: js.UndefOr[scala.Boolean] = js.undefined
   var guestsCanSeeOtherGuests: js.UndefOr[scala.Boolean] = js.undefined
@@ -42,7 +42,7 @@ object EventInput {
     attendees: js.Array[gapiDotCalendarLib.Anon_AdditionalGuests] = null,
     colorId: java.lang.String = null,
     description: java.lang.String = null,
-    extendedProperties: gapiDotCalendarLib.Anon_KeyPrivate = null,
+    extendedProperties: gapiDotCalendarLib.Anon_Private = null,
     gadget: gapiDotCalendarLib.Anon_Display = null,
     guestsCanInviteOthers: js.UndefOr[scala.Boolean] = js.undefined,
     guestsCanSeeOtherGuests: js.UndefOr[scala.Boolean] = js.undefined,

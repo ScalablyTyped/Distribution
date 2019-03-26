@@ -1,0 +1,27 @@
+package typings
+package atMaterialDashUiIconsLib.atMaterialDashUiIconsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/icons", "TimeToLeaveTwoTone")
+@js.native
+class TimeToLeaveTwoTone protected ()
+  extends atMaterialDashUiIconsLib.timeToLeaveTwoToneMod.default {
+  def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()
+  def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, context: js.Any) = this()
+}
+
+@JSImport("@material-ui/icons", "TimeToLeaveTwoTone")
+@js.native
+class TimeToLeaveTwoToneCls protected ()
+  extends reactLib.reactMod.ReactNs.Component[
+      atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, 
+      reactLib.reactMod.ReactNs.ComponentState, 
+      js.Any
+    ] {
+  def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps) = this()
+  def this(props: atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps, context: js.Any) = this()
+}
+

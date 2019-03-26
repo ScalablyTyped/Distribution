@@ -53,10 +53,8 @@ class Loki protected () extends LokiEventEmitter {
   var throttledSavePending: scala.Boolean = js.native
   var throttledSaves: scala.Boolean = js.native
   // alias of serialize
-  var toJson: js.Function0[java.lang.String] | (js.Function1[/* options */ Anon_Normal, java.lang.String]) | (js.Function1[/* options */ Anon_Destructured, js.Array[java.lang.String]]) | (js.Function1[
-    /* options */ js.UndefOr[Anon_SerializationMethod], 
-    java.lang.String | js.Array[java.lang.String]
-  ]) = js.native
+  @JSName("toJson")
+  var toJson_Original: Anon_Options = js.native
   var verbose: scala.Boolean = js.native
   /**
     * Adds a collection to the database.
@@ -398,5 +396,15 @@ class Loki protected () extends LokiEventEmitter {
     callback: js.Function1[/* result */ js.UndefOr[scala.Boolean], scala.Unit],
     options: stdLib.Partial[ThrottledSaveDrainOptions]
   ): scala.Unit = js.native
+  // alias of serialize
+  def toJson(): java.lang.String | js.Array[java.lang.String] = js.native
+  // alias of serialize
+  def toJson(options: Anon_Destructured): js.Array[java.lang.String] = js.native
+  // alias of serialize
+  def toJson(options: Anon_Normal): java.lang.String = js.native
+  def toJson(options: Anon_SerializationMethod): java.lang.String | js.Array[java.lang.String] = js.native
+  // alias of serialize
+  @JSName("toJson")
+  def toJson_String(): java.lang.String = js.native
 }
 

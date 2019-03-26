@@ -21,3 +21,9 @@ trait HeatmapColorStop extends Accessor {
   var ratio: scala.Double = js.native
 }
 
+@JSGlobal("__esri.HeatmapColorStop")
+@js.native
+class HeatmapColorStopCls () extends HeatmapColorStop {
+  def this(properties: HeatmapColorStopProperties) = this()
+}
+

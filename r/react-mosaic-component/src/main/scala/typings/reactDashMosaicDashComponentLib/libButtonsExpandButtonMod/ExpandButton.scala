@@ -22,6 +22,6 @@ class ExpandButton[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey
 @JSImport("react-mosaic-component/lib/buttons/ExpandButton", "ExpandButton")
 @js.native
 object ExpandButton extends js.Object {
-  var contextTypes: reactDashMosaicDashComponentLib.Anon_ComponentNameLocationMosaicActionsMosaicId = js.native
+  var contextTypes: reactDashMosaicDashComponentLib.Anon_MosaicActionsMosaicId = js.native
 }
 

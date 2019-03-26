@@ -12,6 +12,15 @@ trait SVGAnimatedEnumeration extends js.Object {
 
 @JSGlobal("SVGAnimatedEnumeration")
 @js.native
+class SVGAnimatedEnumerationCls () extends SVGAnimatedEnumeration {
+  /* CompleteClass */
+  override val animVal: scala.Double = js.native
+  /* CompleteClass */
+  override var baseVal: scala.Double = js.native
+}
+
+@JSGlobal("SVGAnimatedEnumeration")
+@js.native
 object SVGAnimatedEnumeration
   extends org.scalablytyped.runtime.Instantiable0[SVGAnimatedEnumeration]
 

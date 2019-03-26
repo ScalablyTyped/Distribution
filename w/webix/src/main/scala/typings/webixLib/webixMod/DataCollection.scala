@@ -112,3 +112,9 @@ trait DataCollection extends js.Object {
   def validate(id: java.lang.String): scala.Boolean = js.native
 }
 
+@JSImport("webix", "DataCollection")
+@js.native
+class DataCollectionCls () extends DataCollection {
+  def this(config: DataCollectionConfig) = this()
+}
+

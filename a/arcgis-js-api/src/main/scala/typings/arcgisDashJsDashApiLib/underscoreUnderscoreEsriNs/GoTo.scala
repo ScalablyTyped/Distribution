@@ -23,3 +23,7 @@ trait GoTo extends js.Object {
   def goToOverride(view: SceneView, goToParameters: GoToParameters): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.GoTo")
+@js.native
+class GoToCls () extends GoTo
+

@@ -9,7 +9,7 @@ object reactDashMentionsLibComponents {
   @scala.inline
   def Mention: reactLib.reactMod.ReactNs.ComponentType[reactDashMentionsLib.reactDashMentionsMod.MentionProps] = reactDashMentionsLib.reactDashMentionsMod.^.Mention.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMentionsLib.reactDashMentionsMod.MentionProps]]
   @scala.inline
-  def MentionsInput: reactLib.reactMod.ReactNs.ComponentType[reactDashMentionsLib.reactDashMentionsMod.MentionsInputProps] = reactDashMentionsLib.reactDashMentionsMod.^.MentionsInput.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMentionsLib.reactDashMentionsMod.MentionsInputProps]]
+  def MentionsInput: reactLib.reactMod.ReactNs.ComponentType[reactDashMentionsLib.reactDashMentionsMod.MentionsInputProps] = js.constructorOf[reactDashMentionsLib.reactDashMentionsMod.MentionsInput].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMentionsLib.reactDashMentionsMod.MentionsInputProps]]
   @scala.inline
   def MentionProps: reactDashMentionsLib.reactDashMentionsMod.MentionProps.type = reactDashMentionsLib.reactDashMentionsMod.MentionProps
   type MentionProps = reactDashMentionsLib.reactDashMentionsMod.MentionProps

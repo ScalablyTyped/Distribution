@@ -140,6 +140,13 @@ trait DeviceMotionEvent extends Event {
 
 @JSGlobal("DeviceMotionEvent")
 @js.native
+class DeviceMotionEventCls protected () extends DeviceMotionEvent {
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: DeviceMotionEventInit) = this()
+}
+
+@JSGlobal("DeviceMotionEvent")
+@js.native
 object DeviceMotionEvent
   extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, DeviceMotionEvent]
      with org.scalablytyped.runtime.Instantiable2[

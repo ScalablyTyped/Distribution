@@ -164,8 +164,8 @@ package object underscoreNs {
     /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never}[keyof T] */ js.Any
   ]
   type PartialDeep[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? lodash.lodash._.PartialDeep<T[P]>}
-    */ lodashLib.lodashLibStrings.PartialDeep with T
+  {[ P in keyof T ]:? object}
+    */ lodashLib.lodashLibStrings.PartialDeep with js.Any
   type PartialObject[T] = lodashLib.GlobalPartial[T]
   type PropertyName = java.lang.String | scala.Double | js.Symbol
   type PropertyPath = Many[PropertyName]

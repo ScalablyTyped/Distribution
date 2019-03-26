@@ -38,3 +38,9 @@ trait VBArray[T] extends js.Object {
   def ubound(dimension: scala.Double): scala.Double = js.native
 }
 
+@JSGlobal("VBArray")
+@js.native
+class VBArrayCls[T] protected () extends VBArray[T] {
+  def this(safeArray: SafeArray[T]) = this()
+}
+

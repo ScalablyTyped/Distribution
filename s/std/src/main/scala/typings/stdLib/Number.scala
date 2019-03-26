@@ -32,3 +32,9 @@ trait Number extends js.Object {
   def toString(radix: scala.Double): java.lang.String = js.native
 }
 
+@JSGlobal("Number")
+@js.native
+class NumberCls () extends Number {
+  def this(value: js.Any) = this()
+}
+

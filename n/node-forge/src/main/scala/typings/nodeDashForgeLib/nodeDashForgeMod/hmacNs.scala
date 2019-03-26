@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("node-forge", "hmac")
 @js.native
 object hmacNs extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - nodeDashForgeLib.nodeDashForgeLibStrings.sha1
+    - nodeDashForgeLib.nodeDashForgeLibStrings.md5
+    - nodeDashForgeLib.nodeDashForgeLibStrings.sha256
+  */
   trait Algorithm extends js.Object
   
   @js.native

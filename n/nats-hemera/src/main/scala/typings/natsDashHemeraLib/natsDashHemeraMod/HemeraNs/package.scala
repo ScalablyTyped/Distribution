@@ -38,6 +38,15 @@ package object HemeraNs {
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias nats-hemera.nats-hemera.Hemera.LanguageOptions */ js.Object
   ])
   type LanguageRootOptions = natsDashHemeraLib.Anon_Key with (stdLib.Partial[stdLib.Record[Types, LanguageOptions]])
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - scala.Double
+    - scala.Boolean
+    - js.Object
+    - scala.Null
+    - Schema
+    - SchemaMap
+  */
   type SchemaLike = _SchemaLike | java.lang.String | scala.Double | scala.Boolean | js.Object | scala.Null
   type ValidationErrorFunction = js.Function1[
     /* errors */ js.Array[ValidationErrorItem], 

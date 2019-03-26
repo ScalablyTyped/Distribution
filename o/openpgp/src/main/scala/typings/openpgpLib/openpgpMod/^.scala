@@ -21,8 +21,8 @@ object ^ extends js.Object {
   @JSName("convertStreams")
   def convertStreams_web(obj: js.Object, streaming: openpgpLib.openpgpLibStrings.web, keys: js.Array[_]): js.Object = js.native
   def decrypt(options: DecryptOptions): js.Promise[DecryptResult] = js.native
-  def decryptKey(privateKey: openpgpLib.openpgpMod.keyNs.Key, passphrase: java.lang.String): js.Promise[openpgpLib.Anon_Key_1928025561] = js.native
-  def decryptKey(privateKey: openpgpLib.openpgpMod.keyNs.Key, passphrase: js.Array[_]): js.Promise[openpgpLib.Anon_Key_1928025561] = js.native
+  def decryptKey(privateKey: openpgpLib.openpgpMod.keyNs.Key, passphrase: java.lang.String): js.Promise[openpgpLib.Anon_Key_1025945043] = js.native
+  def decryptKey(privateKey: openpgpLib.openpgpMod.keyNs.Key, passphrase: js.Array[_]): js.Promise[openpgpLib.Anon_Key_1025945043] = js.native
   def decryptSessionKeys(message: openpgpLib.openpgpMod.messageNs.Message): js.Promise[js.UndefOr[js.Array[openpgpLib.Anon_Algorithm]]] = js.native
   def decryptSessionKeys(
     message: openpgpLib.openpgpMod.messageNs.Message,
@@ -51,8 +51,8 @@ object ^ extends js.Object {
   ): js.Promise[js.UndefOr[js.Array[openpgpLib.Anon_Algorithm]]] = js.native
   def destroyWorker(): scala.Unit = js.native
   def encrypt(options: EncryptOptions): js.Promise[EncryptResult] = js.native
-  def encryptKey(privateKey: openpgpLib.openpgpMod.keyNs.Key, passphrase: java.lang.String): js.Promise[openpgpLib.Anon_Key_1928025561] = js.native
-  def encryptKey(privateKey: openpgpLib.openpgpMod.keyNs.Key, passphrase: js.Array[_]): js.Promise[openpgpLib.Anon_Key_1928025561] = js.native
+  def encryptKey(privateKey: openpgpLib.openpgpMod.keyNs.Key, passphrase: java.lang.String): js.Promise[openpgpLib.Anon_Key_1025945043] = js.native
+  def encryptKey(privateKey: openpgpLib.openpgpMod.keyNs.Key, passphrase: js.Array[_]): js.Promise[openpgpLib.Anon_Key_1025945043] = js.native
   def encryptSessionKey(
     data: stdLib.Uint8Array,
     algorithm: java.lang.String,

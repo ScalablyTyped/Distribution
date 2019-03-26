@@ -9,13 +9,13 @@ trait LinkModelListener
   extends stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener {
   var sourcePortChanged: js.UndefOr[
     js.Function1[
-      /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[LinkModel[LinkModelListener]] with stormDashReactDashDiagramsLib.Anon_Port, 
+      /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[LinkModel[this.type]] with stormDashReactDashDiagramsLib.Anon_Port, 
       scala.Unit
     ]
   ] = js.undefined
   var targetPortChanged: js.UndefOr[
     js.Function1[
-      /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[LinkModel[LinkModelListener]] with stormDashReactDashDiagramsLib.Anon_Port, 
+      /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[LinkModel[this.type]] with stormDashReactDashDiagramsLib.Anon_Port, 
       scala.Unit
     ]
   ] = js.undefined
@@ -27,14 +27,14 @@ object LinkModelListener {
     entityRemoved: /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[
       stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModel[
         stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseListener[_]], 
-        stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener
+        LinkModelListener
       ]
     ] => scala.Unit = null,
     lockChanged: /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[js.Any] with stormDashReactDashDiagramsLib.Anon_Locked => scala.Unit = null,
     selectionChanged: /* event */ (stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[
       stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModel[
         stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEntity[stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseListener[_]], 
-        stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener
+        LinkModelListener
       ]
     ]) with stormDashReactDashDiagramsLib.Anon_IsSelected => scala.Unit = null,
     sourcePortChanged: /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[LinkModel[LinkModelListener]] with stormDashReactDashDiagramsLib.Anon_Port => scala.Unit = null,

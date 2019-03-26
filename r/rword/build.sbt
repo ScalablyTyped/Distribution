@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "rword"
-version := "2.2-dt-20180501Z-2f8ae3"
+version := "2.2-dt-20180501Z-e3d6e4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.3-ec2942")
+  "org.scalablytyped" %%% "std" % "3.3-14e863")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

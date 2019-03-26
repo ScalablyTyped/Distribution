@@ -88,3 +88,7 @@ trait CssJs extends js.Object {
   def stripComments(css: java.lang.String): java.lang.String = js.native
 }
 
+@JSImport("jotform-css.js", "cssjs")
+@js.native
+class cssjs () extends CssJs
+

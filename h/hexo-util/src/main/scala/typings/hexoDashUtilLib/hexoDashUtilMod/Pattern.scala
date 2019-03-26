@@ -10,6 +10,17 @@ trait Pattern[T] extends js.Object {
   def test(str: java.lang.String): scala.Boolean
 }
 
+@JSImport("hexo-util", "Pattern")
+@js.native
+class PatternCls[T] protected () extends Pattern[T] {
+  def this(rule: Pattern[T]) = this()
+  def this(rule: js.Function1[/* str */ java.lang.String, T]) = this()
+  /* CompleteClass */
+  override def `match`(str: java.lang.String): T = js.native
+  /* CompleteClass */
+  override def test(str: java.lang.String): scala.Boolean = js.native
+}
+
 object Pattern {
   @scala.inline
   def apply[T](`match`: java.lang.String => T, test: java.lang.String => scala.Boolean): Pattern[T] = {

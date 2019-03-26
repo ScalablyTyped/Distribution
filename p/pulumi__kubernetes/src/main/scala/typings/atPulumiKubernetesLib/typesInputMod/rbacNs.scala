@@ -69,7 +69,9 @@ object rbacNs extends js.Object {
       /**
         * Rules holds all the PolicyRules for this ClusterRole
         */
-      var rules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PolicyRule]]]
+      var rules: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PolicyRule]]]
+          ] = js.undefined
     }
     
     /**
@@ -266,7 +268,9 @@ object rbacNs extends js.Object {
       /**
         * Rules holds all the PolicyRules for this Role
         */
-      var rules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PolicyRule]]]
+      var rules: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PolicyRule]]]
+          ] = js.undefined
     }
     
     /**
@@ -504,7 +508,9 @@ object rbacNs extends js.Object {
       /**
         * Rules holds all the PolicyRules for this ClusterRole
         */
-      var rules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PolicyRule]]]
+      var rules: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PolicyRule]]]
+          ] = js.undefined
     }
     
     /**
@@ -702,7 +708,9 @@ object rbacNs extends js.Object {
       /**
         * Rules holds all the PolicyRules for this Role
         */
-      var rules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PolicyRule]]]
+      var rules: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PolicyRule]]]
+          ] = js.undefined
     }
     
     /**
@@ -942,7 +950,9 @@ object rbacNs extends js.Object {
       /**
         * Rules holds all the PolicyRules for this ClusterRole
         */
-      var rules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PolicyRule]]]
+      var rules: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PolicyRule]]]
+          ] = js.undefined
     }
     
     /**
@@ -1140,7 +1150,9 @@ object rbacNs extends js.Object {
       /**
         * Rules holds all the PolicyRules for this Role
         */
-      var rules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PolicyRule]]]
+      var rules: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PolicyRule]]]
+          ] = js.undefined
     }
     
     /**

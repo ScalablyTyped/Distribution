@@ -21,10 +21,20 @@ object authNs extends js.Object {
   }
   
   @js.native
+  class AuthenticatorCls () extends Authenticator
+  
+  @js.native
   trait AuthenticatorStatic
     extends org.scalablytyped.runtime.Instantiable0[Authenticator]
   
   trait PlainTextAuthProvider extends AuthProvider
+  
+  @js.native
+  class PlainTextAuthProviderCls protected () extends PlainTextAuthProvider {
+    def this(username: java.lang.String, password: java.lang.String) = this()
+    /* CompleteClass */
+    override def newAuthenticator(endpoint: java.lang.String, name: java.lang.String): scala.Unit = js.native
+  }
   
   @js.native
   trait PlainTextAuthProviderStatic

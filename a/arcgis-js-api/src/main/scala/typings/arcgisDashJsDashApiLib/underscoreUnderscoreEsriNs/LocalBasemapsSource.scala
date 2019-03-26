@@ -29,3 +29,9 @@ trait LocalBasemapsSource extends Accessor {
   def refresh(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.LocalBasemapsSource")
+@js.native
+class LocalBasemapsSourceCls () extends LocalBasemapsSource {
+  def this(properties: LocalBasemapsSourceProperties) = this()
+}
+

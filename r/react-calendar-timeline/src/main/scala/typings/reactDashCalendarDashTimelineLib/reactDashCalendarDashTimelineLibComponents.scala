@@ -9,7 +9,7 @@ object reactDashCalendarDashTimelineLibComponents {
   @scala.inline
   def ReactDashCalendarDashTimeline: reactLib.reactMod.ReactNs.ComponentType[
     reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineMod.ReactCalendarTimelineProps
-  ] = reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineMod.ReactCalendarTimelineProps]]
   @scala.inline
   def ReactCalendarTimelineProps: reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineMod.ReactCalendarTimelineProps.type = reactDashCalendarDashTimelineLib.reactDashCalendarDashTimelineMod.ReactCalendarTimelineProps

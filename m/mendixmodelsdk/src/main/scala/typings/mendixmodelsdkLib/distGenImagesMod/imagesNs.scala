@@ -31,7 +31,7 @@ object imagesNs extends js.Object {
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenImagesMod.imagesNs.IImage because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsImageCollection, name, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenImagesMod.imagesNs.IImage because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsImageCollection, name */ @js.native
   class Image protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -47,7 +47,7 @@ object imagesNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/images relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenImagesMod.imagesNs.IImageCollection because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined images, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenImagesMod.imagesNs.IImageCollection because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined images */ @js.native
   class ImageCollection protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

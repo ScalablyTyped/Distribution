@@ -58,3 +58,14 @@ trait Bookmarks
   def render(): js.Any = js.native
 }
 
+@JSGlobal("__esri.Bookmarks")
+@js.native
+/**
+  * The Bookmarks widget allows end users to quickly navigate to a particular area of interest. It displays a list of [bookmarks](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html), which typically are defined inside the [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#bookmarks).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html)
+  */
+class BookmarksCls () extends Bookmarks {
+  def this(properties: BookmarksProperties) = this()
+}
+

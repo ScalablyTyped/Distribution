@@ -17,6 +17,13 @@ trait FocusNavigationEvent extends Event {
 
 @JSGlobal("FocusNavigationEvent")
 @js.native
+class FocusNavigationEventCls protected () extends FocusNavigationEvent {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: FocusNavigationEventInit) = this()
+}
+
+@JSGlobal("FocusNavigationEvent")
+@js.native
 object FocusNavigationEvent
   extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, FocusNavigationEvent]
      with org.scalablytyped.runtime.Instantiable2[

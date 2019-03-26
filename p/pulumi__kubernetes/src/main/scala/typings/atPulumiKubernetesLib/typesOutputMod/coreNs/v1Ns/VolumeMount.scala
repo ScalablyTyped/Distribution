@@ -31,6 +31,13 @@ trait VolumeMount extends js.Object {
     * (volume's root).
     */
   val subPath: java.lang.String
+  /**
+    * Expanded path within the volume from which the container's volume should be mounted.
+    * Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded
+    * using the container's environment. Defaults to "" (volume's root). SubPathExpr and SubPath
+    * are mutually exclusive. This field is alpha in 1.14.
+    */
+  val subPathExpr: java.lang.String
 }
 
 object VolumeMount {
@@ -40,9 +47,10 @@ object VolumeMount {
     mountPropagation: java.lang.String,
     name: java.lang.String,
     readOnly: scala.Boolean,
-    subPath: java.lang.String
+    subPath: java.lang.String,
+    subPathExpr: java.lang.String
   ): VolumeMount = {
-    val __obj = js.Dynamic.literal(mountPath = mountPath, mountPropagation = mountPropagation, name = name, readOnly = readOnly, subPath = subPath)
+    val __obj = js.Dynamic.literal(mountPath = mountPath, mountPropagation = mountPropagation, name = name, readOnly = readOnly, subPath = subPath, subPathExpr = subPathExpr)
   
     __obj.asInstanceOf[VolumeMount]
   }

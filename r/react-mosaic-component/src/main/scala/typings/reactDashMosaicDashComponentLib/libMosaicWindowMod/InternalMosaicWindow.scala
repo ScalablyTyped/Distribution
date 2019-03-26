@@ -31,8 +31,8 @@ class InternalMosaicWindow[T /* <: reactDashMosaicDashComponentLib.libTypesMod.M
 @JSImport("react-mosaic-component/lib/MosaicWindow", "InternalMosaicWindow")
 @js.native
 object InternalMosaicWindow extends js.Object {
-  var childContextTypes: reactDashMosaicDashComponentLib.Anon_ComponentNameLocation = js.native
-  var contextTypes: reactDashMosaicDashComponentLib.Anon_ComponentName = js.native
+  var childContextTypes: reactDashMosaicDashComponentLib.Anon_MosaicWindowActions = js.native
+  var contextTypes: reactDashMosaicDashComponentLib.Anon_MosaicActions = js.native
   var defaultProps: stdLib.Partial[reactDashMosaicDashComponentLib.libMosaicWindowMod.InternalMosaicWindowProps[_]] = js.native
 }
 

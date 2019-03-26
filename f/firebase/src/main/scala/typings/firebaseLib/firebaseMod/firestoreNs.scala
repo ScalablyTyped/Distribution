@@ -96,6 +96,11 @@ object firestoreNs extends js.Object {
     val `type`: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChangeType
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - firebaseLib.firebaseLibStrings.added
+    - firebaseLib.firebaseLibStrings.removed
+    - firebaseLib.firebaseLibStrings.modified
+  */
   trait DocumentChangeType extends js.Object
   
   trait DocumentData
@@ -538,6 +543,24 @@ object firestoreNs extends js.Object {
     var stack: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - firebaseLib.firebaseLibStrings.cancelled
+    - firebaseLib.firebaseLibStrings.unknown
+    - firebaseLib.firebaseLibStrings.`invalid-argument`
+    - firebaseLib.firebaseLibStrings.`deadline-exceeded`
+    - firebaseLib.firebaseLibStrings.`not-found`
+    - firebaseLib.firebaseLibStrings.`already-exists`
+    - firebaseLib.firebaseLibStrings.`permission-denied`
+    - firebaseLib.firebaseLibStrings.`resource-exhausted`
+    - firebaseLib.firebaseLibStrings.`failed-precondition`
+    - firebaseLib.firebaseLibStrings.aborted
+    - firebaseLib.firebaseLibStrings.`out-of-range`
+    - firebaseLib.firebaseLibStrings.unimplemented
+    - firebaseLib.firebaseLibStrings.internal
+    - firebaseLib.firebaseLibStrings.unavailable
+    - firebaseLib.firebaseLibStrings.`data-loss`
+    - firebaseLib.firebaseLibStrings.unauthenticated
+  */
   trait FirestoreErrorCode extends js.Object
   
   @js.native
@@ -592,8 +615,17 @@ object firestoreNs extends js.Object {
       ] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - firebaseLib.firebaseLibStrings.debug
+    - firebaseLib.firebaseLibStrings.error
+    - firebaseLib.firebaseLibStrings.silent
+  */
   trait LogLevel extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - firebaseLib.firebaseLibStrings.desc
+    - firebaseLib.firebaseLibStrings.asc
+  */
   trait OrderByDirection extends js.Object
   
   trait PersistenceSettings extends js.Object {
@@ -1173,6 +1205,14 @@ object firestoreNs extends js.Object {
   trait UpdateData
     extends /* fieldPath */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
+  /* Rewritten from type alias, can be one of: 
+    - firebaseLib.firebaseLibStrings.`<`
+    - firebaseLib.firebaseLibStrings.`<=`
+    - firebaseLib.firebaseLibStrings.`==`
+    - firebaseLib.firebaseLibStrings.`>=`
+    - firebaseLib.firebaseLibStrings.`>`
+    - firebaseLib.firebaseLibStrings.`array-contains`
+  */
   trait WhereFilterOp extends js.Object
   
   @js.native

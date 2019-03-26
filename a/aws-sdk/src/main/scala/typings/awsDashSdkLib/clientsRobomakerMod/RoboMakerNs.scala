@@ -461,7 +461,7 @@ object RoboMakerNs extends js.Object {
       */
     var lastUpdatedAt: js.UndefOr[LastUpdatedAt] = js.undefined
     /**
-      * The maximum simulation job duration in seconds. The value must be 8 days (691,200 seconds) or less. 
+      * The maximum simulation job duration in seconds. 
       */
     var maxJobDurationInSeconds: js.UndefOr[JobDuration] = js.undefined
     /**
@@ -607,19 +607,19 @@ object RoboMakerNs extends js.Object {
     /**
       * The launch file name.
       */
-    var launchFile: GenericString
+    var launchFile: Command
     /**
       * The package name.
       */
-    var packageName: GenericString
+    var packageName: Command
     /**
       * The deployment post-launch file. This file will be executed after the launch file.
       */
-    var postLaunchFile: js.UndefOr[GenericString] = js.undefined
+    var postLaunchFile: js.UndefOr[Path] = js.undefined
     /**
       * The deployment pre-launch file. This file will be executed prior to the launch file.
       */
-    var preLaunchFile: js.UndefOr[GenericString] = js.undefined
+    var preLaunchFile: js.UndefOr[Path] = js.undefined
   }
   
   trait DeregisterRobotRequest extends js.Object {
@@ -1009,16 +1009,16 @@ object RoboMakerNs extends js.Object {
     /**
       * The launch file name.
       */
-    var launchFile: GenericString
+    var launchFile: Command
     /**
       * The package name.
       */
-    var packageName: GenericString
+    var packageName: Command
   }
   
   trait ListDeploymentJobsRequest extends js.Object {
     /**
-      * Optional filters to limit results.
+      * Optional filters to limit results. The filter names status and fleetName are supported. When filtering, you must use the complete value of the filtered item. You can use up to three filters, but they must be for the same named item. For example, if you are looking for items with the status InProgress or the status Pending.
       */
     var filters: js.UndefOr[Filters] = js.undefined
     /**
@@ -1044,7 +1044,7 @@ object RoboMakerNs extends js.Object {
   
   trait ListFleetsRequest extends js.Object {
     /**
-      * Optional filters to limit results.
+      * Optional filters to limit results. The filter name name is supported. When filtering, you must use the complete value of the filtered item. You can use up to three filters.
       */
     var filters: js.UndefOr[Filters] = js.undefined
     /**
@@ -1070,11 +1070,11 @@ object RoboMakerNs extends js.Object {
   
   trait ListRobotApplicationsRequest extends js.Object {
     /**
-      * Optional filters to limit results.
+      * Optional filters to limit results. The filter name name is supported. When filtering, you must use the complete value of the filtered item. You can use up to three filters.
       */
     var filters: js.UndefOr[Filters] = js.undefined
     /**
-      * The maximum number of deployment job results returned by ListRobotApplications in paginated output. When this parameter is used, ListRobotApplications only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListFleets request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListRobotApplications returns up to 100 results and a nextToken value if applicable. 
+      * The maximum number of deployment job results returned by ListRobotApplications in paginated output. When this parameter is used, ListRobotApplications only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListRobotApplications request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListRobotApplications returns up to 100 results and a nextToken value if applicable. 
       */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
@@ -1100,11 +1100,11 @@ object RoboMakerNs extends js.Object {
   
   trait ListRobotsRequest extends js.Object {
     /**
-      * Optional filters to limit results.
+      * Optional filters to limit results. The filter names status and fleetName are supported. When filtering, you must use the complete value of the filtered item. You can use up to three filters, but they must be for the same named item. For example, if you are looking for items with the status Registered or the status Available.
       */
     var filters: js.UndefOr[Filters] = js.undefined
     /**
-      * The maximum number of deployment job results returned by ListRobots in paginated output. When this parameter is used, ListRobots only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListFleets request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListRobots returns up to 100 results and a nextToken value if applicable. 
+      * The maximum number of deployment job results returned by ListRobots in paginated output. When this parameter is used, ListRobots only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListRobots request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListRobots returns up to 100 results and a nextToken value if applicable. 
       */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
@@ -1126,11 +1126,11 @@ object RoboMakerNs extends js.Object {
   
   trait ListSimulationApplicationsRequest extends js.Object {
     /**
-      * Optional list of filters to limit results. The only valid filter name is name.
+      * Optional list of filters to limit results. The filter name name is supported. When filtering, you must use the complete value of the filtered item. You can use up to three filters.
       */
     var filters: js.UndefOr[Filters] = js.undefined
     /**
-      * The maximum number of deployment job results returned by ListSimulationApplications in paginated output. When this parameter is used, ListSimulationApplications only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListFleets request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListSimulationApplications returns up to 100 results and a nextToken value if applicable. 
+      * The maximum number of deployment job results returned by ListSimulationApplications in paginated output. When this parameter is used, ListSimulationApplications only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListSimulationApplications request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListSimulationApplications returns up to 100 results and a nextToken value if applicable. 
       */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
@@ -1156,11 +1156,11 @@ object RoboMakerNs extends js.Object {
   
   trait ListSimulationJobsRequest extends js.Object {
     /**
-      * Optional filters to limit results.
+      * Optional filters to limit results. The filter names status and simulationApplicationName and robotApplicationName are supported. When filtering, you must use the complete value of the filtered item. You can use up to three filters, but they must be for the same named item. For example, if you are looking for items with the status Preparing or the status Running.
       */
     var filters: js.UndefOr[Filters] = js.undefined
     /**
-      * The maximum number of deployment job results returned by ListSimulationJobs in paginated output. When this parameter is used, ListSimulationJobs only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListFleets request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListSimulationJobs returns up to 100 results and a nextToken value if applicable. 
+      * The maximum number of deployment job results returned by ListSimulationJobs in paginated output. When this parameter is used, ListSimulationJobs only returns maxResults results in a single page along with a nextToken response element. The remaining results of the initial request can be seen by sending another ListSimulationJobs request with the returned nextToken value. This value can be between 1 and 100. If this parameter is not used, then ListSimulationJobs returns up to 100 results and a nextToken value if applicable. 
       */
     var maxResults: js.UndefOr[MaxResults] = js.undefined
     /**
@@ -1207,9 +1207,17 @@ object RoboMakerNs extends js.Object {
   
   trait ProgressDetail extends js.Object {
     /**
-      * The current progress status.
+      * The current progress status.  Validating  Validating the deployment.  Downloading/Extracting  Downloading and extracting the bundle on the robot.  Executing pre-launch script(s)  Executing pre-launch script(s) if provided.  Launching  Launching the robot application.  Executing post-launch script(s)  Executing post-launch script(s) if provided.  Finished  Deployment is complete.  
       */
-    var currentProgress: js.UndefOr[GenericString] = js.undefined
+    var currentProgress: js.UndefOr[RobotDeploymentStep] = js.undefined
+    /**
+      * Estimated amount of time in seconds remaining in the step. This currently only applies to the Downloading/Extracting step of the deployment. It is empty for other steps.
+      */
+    var estimatedTimeRemainingSeconds: js.UndefOr[GenericInteger] = js.undefined
+    /**
+      * Precentage of the step that is done. This currently only applies to the Downloading/Extracting step of the deployment. It is empty for other steps.
+      */
+    var percentDone: js.UndefOr[PercentDone] = js.undefined
     /**
       * The Amazon Resource Name (ARN) of the deployment job.
       */
@@ -1660,7 +1668,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CancelSimulationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version. 
+      * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version.   After 90 days, deployment jobs expire and will be deleted. They will no longer be accessible.  
       */
     def createDeploymentJob(): awsDashSdkLib.libRequestMod.Request[CreateDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createDeploymentJob(
@@ -1671,7 +1679,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version. 
+      * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version.   After 90 days, deployment jobs expire and will be deleted. They will no longer be accessible.  
       */
     def createDeploymentJob(params: CreateDeploymentJobRequest): awsDashSdkLib.libRequestMod.Request[CreateDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createDeploymentJob(
@@ -1821,7 +1829,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateSimulationApplicationVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a simulation job.
+      * Creates a simulation job.  After 90 days, simulation jobs expire and will be deleted. They will no longer be accessible.  
       */
     def createSimulationJob(): awsDashSdkLib.libRequestMod.Request[CreateSimulationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createSimulationJob(
@@ -1832,7 +1840,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateSimulationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a simulation job.
+      * Creates a simulation job.  After 90 days, simulation jobs expire and will be deleted. They will no longer be accessible.  
       */
     def createSimulationJob(params: CreateSimulationJobRequest): awsDashSdkLib.libRequestMod.Request[CreateSimulationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createSimulationJob(
@@ -2097,7 +2105,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeSimulationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.
+      * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.     
       */
     def listDeploymentJobs(): awsDashSdkLib.libRequestMod.Request[ListDeploymentJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listDeploymentJobs(
@@ -2108,7 +2116,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDeploymentJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.
+      * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.     
       */
     def listDeploymentJobs(params: ListDeploymentJobsRequest): awsDashSdkLib.libRequestMod.Request[ListDeploymentJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listDeploymentJobs(
@@ -2120,7 +2128,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDeploymentJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns a list of fleets. You can optionally provide filters to retrieve specific fleets.
+      * Returns a list of fleets. You can optionally provide filters to retrieve specific fleets. 
       */
     def listFleets(): awsDashSdkLib.libRequestMod.Request[ListFleetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listFleets(
@@ -2131,7 +2139,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListFleetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns a list of fleets. You can optionally provide filters to retrieve specific fleets.
+      * Returns a list of fleets. You can optionally provide filters to retrieve specific fleets. 
       */
     def listFleets(params: ListFleetsRequest): awsDashSdkLib.libRequestMod.Request[ListFleetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listFleets(
@@ -2189,7 +2197,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListRobotsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns a list of simulation applications. You can optionally provide filters to retrieve specific simulation applications.
+      * Returns a list of simulation applications. You can optionally provide filters to retrieve specific simulation applications. 
       */
     def listSimulationApplications(): awsDashSdkLib.libRequestMod.Request[ListSimulationApplicationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listSimulationApplications(
@@ -2200,7 +2208,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListSimulationApplicationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns a list of simulation applications. You can optionally provide filters to retrieve specific simulation applications.
+      * Returns a list of simulation applications. You can optionally provide filters to retrieve specific simulation applications. 
       */
     def listSimulationApplications(params: ListSimulationApplicationsRequest): awsDashSdkLib.libRequestMod.Request[ListSimulationApplicationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listSimulationApplications(
@@ -2212,7 +2220,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListSimulationApplicationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns a list of simulation jobs. You can optionally provide filters to retrieve specific simulation jobs.
+      * Returns a list of simulation jobs. You can optionally provide filters to retrieve specific simulation jobs. 
       */
     def listSimulationJobs(): awsDashSdkLib.libRequestMod.Request[ListSimulationJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listSimulationJobs(
@@ -2223,7 +2231,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListSimulationJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns a list of simulation jobs. You can optionally provide filters to retrieve specific simulation jobs.
+      * Returns a list of simulation jobs. You can optionally provide filters to retrieve specific simulation jobs. 
       */
     def listSimulationJobs(params: ListSimulationJobsRequest): awsDashSdkLib.libRequestMod.Request[ListSimulationJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listSimulationJobs(
@@ -2591,6 +2599,8 @@ object RoboMakerNs extends js.Object {
   
   trait _FailureBehavior extends js.Object
   
+  trait _RobotDeploymentStep extends js.Object
+  
   trait _RobotStatus extends js.Object
   
   trait _SimulationJobErrorCode extends js.Object
@@ -2600,24 +2610,64 @@ object RoboMakerNs extends js.Object {
   trait _apiVersion extends js.Object
   
   val TypesNs: this.type = js.native
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.X86_64
+    - awsDashSdkLib.awsDashSdkLibStrings.ARM64
+    - awsDashSdkLib.awsDashSdkLibStrings.ARMHF
+    - java.lang.String
+  */
   type Architecture = _Architecture | java.lang.String
   type Arn = java.lang.String
   type Arns = js.Array[Arn]
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientRequestToken = java.lang.String
+  type Command = java.lang.String
   type CreatedAt = stdLib.Date
   type DeploymentApplicationConfigs = js.Array[DeploymentApplicationConfig]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ResourceNotFound
+    - awsDashSdkLib.awsDashSdkLibStrings.EnvironmentSetupError
+    - awsDashSdkLib.awsDashSdkLibStrings.EtagMismatch
+    - awsDashSdkLib.awsDashSdkLibStrings.FailureThresholdBreached
+    - awsDashSdkLib.awsDashSdkLibStrings.RobotDeploymentNoResponse
+    - awsDashSdkLib.awsDashSdkLibStrings.RobotAgentConnectionTimeout
+    - awsDashSdkLib.awsDashSdkLibStrings.GreengrassDeploymentFailed
+    - awsDashSdkLib.awsDashSdkLibStrings.MissingRobotArchitecture
+    - awsDashSdkLib.awsDashSdkLibStrings.MissingRobotApplicationArchitecture
+    - awsDashSdkLib.awsDashSdkLibStrings.MissingRobotDeploymentResource
+    - awsDashSdkLib.awsDashSdkLibStrings.GreengrassGroupVersionDoesNotExist
+    - awsDashSdkLib.awsDashSdkLibStrings.ExtractingBundleFailure
+    - awsDashSdkLib.awsDashSdkLibStrings.PreLaunchFileFailure
+    - awsDashSdkLib.awsDashSdkLibStrings.PostLaunchFileFailure
+    - awsDashSdkLib.awsDashSdkLibStrings.BadPermissionError
+    - awsDashSdkLib.awsDashSdkLibStrings.InternalServerError
+    - java.lang.String
+  */
   type DeploymentJobErrorCode = _DeploymentJobErrorCode | java.lang.String
   type DeploymentJobs = js.Array[DeploymentJob]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Pending
+    - awsDashSdkLib.awsDashSdkLibStrings.Preparing
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - awsDashSdkLib.awsDashSdkLibStrings.Succeeded
+    - java.lang.String
+  */
   type DeploymentStatus = _DeploymentStatus | java.lang.String
   type DeploymentVersion = java.lang.String
   type EnvironmentVariableKey = java.lang.String
   type EnvironmentVariableValue = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Fail
+    - awsDashSdkLib.awsDashSdkLibStrings.Continue
+    - java.lang.String
+  */
   type FailureBehavior = _FailureBehavior | java.lang.String
   type FilterValues = js.Array[Name]
   type Filters = js.Array[Filter]
   type Fleets = js.Array[Fleet]
+  type GenericInteger = scala.Double
   type GenericString = java.lang.String
   type IamRole = java.lang.String
   type Id = java.lang.String
@@ -2626,6 +2676,8 @@ object RoboMakerNs extends js.Object {
   type MaxResults = scala.Double
   type Name = java.lang.String
   type PaginationToken = java.lang.String
+  type Path = java.lang.String
+  type PercentDone = scala.Double
   type Percentage = scala.Double
   type RenderingEngineType = awsDashSdkLib.awsDashSdkLibStrings.OGRE | java.lang.String
   type RenderingEngineVersionType = java.lang.String
@@ -2633,9 +2685,29 @@ object RoboMakerNs extends js.Object {
   type RobotApplicationConfigs = js.Array[RobotApplicationConfig]
   type RobotApplicationNames = js.Array[Name]
   type RobotApplicationSummaries = js.Array[RobotApplicationSummary]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Validating
+    - awsDashSdkLib.awsDashSdkLibStrings.DownloadingExtracting
+    - awsDashSdkLib.awsDashSdkLibStrings.ExecutingPreLaunch
+    - awsDashSdkLib.awsDashSdkLibStrings.Launching
+    - awsDashSdkLib.awsDashSdkLibStrings.ExecutingPostLaunch
+    - awsDashSdkLib.awsDashSdkLibStrings.Finished
+    - java.lang.String
+  */
+  type RobotDeploymentStep = _RobotDeploymentStep | java.lang.String
   type RobotDeploymentSummary = js.Array[RobotDeployment]
   type RobotSoftwareSuiteType = awsDashSdkLib.awsDashSdkLibStrings.ROS | java.lang.String
   type RobotSoftwareSuiteVersionType = awsDashSdkLib.awsDashSdkLibStrings.Kinetic | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Available
+    - awsDashSdkLib.awsDashSdkLibStrings.Registered
+    - awsDashSdkLib.awsDashSdkLibStrings.PendingNewDeployment
+    - awsDashSdkLib.awsDashSdkLibStrings.Deploying
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - awsDashSdkLib.awsDashSdkLibStrings.InSync
+    - awsDashSdkLib.awsDashSdkLibStrings.NoResponse
+    - java.lang.String
+  */
   type RobotStatus = _RobotStatus | java.lang.String
   type Robots = js.Array[Robot]
   type S3Bucket = java.lang.String
@@ -2645,7 +2717,40 @@ object RoboMakerNs extends js.Object {
   type SimulationApplicationConfigs = js.Array[SimulationApplicationConfig]
   type SimulationApplicationNames = js.Array[Name]
   type SimulationApplicationSummaries = js.Array[SimulationApplicationSummary]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.InternalServiceError
+    - awsDashSdkLib.awsDashSdkLibStrings.RobotApplicationCrash
+    - awsDashSdkLib.awsDashSdkLibStrings.SimulationApplicationCrash
+    - awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsRobotApplication
+    - awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsSimulationApplication
+    - awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsS3Output
+    - awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsCloudwatchLogs
+    - awsDashSdkLib.awsDashSdkLibStrings.SubnetIpLimitExceeded
+    - awsDashSdkLib.awsDashSdkLibStrings.ENILimitExceeded
+    - awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsUserCredentials
+    - awsDashSdkLib.awsDashSdkLibStrings.InvalidBundleRobotApplication
+    - awsDashSdkLib.awsDashSdkLibStrings.InvalidBundleSimulationApplication
+    - awsDashSdkLib.awsDashSdkLibStrings.RobotApplicationVersionMismatchedEtag
+    - awsDashSdkLib.awsDashSdkLibStrings.SimulationApplicationVersionMismatchedEtag
+    - awsDashSdkLib.awsDashSdkLibStrings.WrongRegionS3Output
+    - awsDashSdkLib.awsDashSdkLibStrings.WrongRegionRobotApplication
+    - awsDashSdkLib.awsDashSdkLibStrings.WrongRegionSimulationApplication
+    - java.lang.String
+  */
   type SimulationJobErrorCode = _SimulationJobErrorCode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Pending
+    - awsDashSdkLib.awsDashSdkLibStrings.Preparing
+    - awsDashSdkLib.awsDashSdkLibStrings.Running
+    - awsDashSdkLib.awsDashSdkLibStrings.Restarting
+    - awsDashSdkLib.awsDashSdkLibStrings.Completed
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - awsDashSdkLib.awsDashSdkLibStrings.RunningFailed
+    - awsDashSdkLib.awsDashSdkLibStrings.Terminating
+    - awsDashSdkLib.awsDashSdkLibStrings.Terminated
+    - awsDashSdkLib.awsDashSdkLibStrings.Canceled
+    - java.lang.String
+  */
   type SimulationJobStatus = _SimulationJobStatus | java.lang.String
   type SimulationJobSummaries = js.Array[SimulationJobSummary]
   type SimulationJobs = js.Array[SimulationJob]
@@ -2660,6 +2765,11 @@ object RoboMakerNs extends js.Object {
   type TagValue = java.lang.String
   type Version = java.lang.String
   type VersionQualifier = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2018-06-29`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

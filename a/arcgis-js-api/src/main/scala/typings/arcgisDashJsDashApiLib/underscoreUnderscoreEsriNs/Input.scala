@@ -15,3 +15,9 @@ trait Input extends Accessor {
   val gamepad: GamepadSettings = js.native
 }
 
+@JSGlobal("__esri.Input")
+@js.native
+class InputCls () extends Input {
+  def this(properties: InputProperties) = this()
+}
+

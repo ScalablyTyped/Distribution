@@ -5,5 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTAddRequestCookie
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTAddResponseCookie
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTAddResponseHeader
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTCancelRequest
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTEditRequestCookie
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTEditResponseCookie
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTRedirectRequest
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTRedirectToTransparentImage
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTRedirectToEmptyDocument
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTRedirectByRegEx
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTRemoveRequestCookie
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTRemoveResponseCookie
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTRemoveRequestHeader
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTRemoveResponseHeader
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTSetRequestHeader
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTSendMessageToExtension
+  - chromeDashAppsLib.chromeDashAppsLibStrings.declarativeWebRequestDOTIgnoreRules
+*/
 trait DeclarativeWebRequestActionsList extends js.Object
 

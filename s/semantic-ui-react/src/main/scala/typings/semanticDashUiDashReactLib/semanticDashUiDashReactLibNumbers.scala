@@ -8,83 +8,83 @@ import scala.scalajs.js.annotation._
 object semanticDashUiDashReactLibNumbers {
   @js.native
   sealed trait `1`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `10`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `11`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `12`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `13`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `14`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `15`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `16`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `2`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `3`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `4`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `5`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `6`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `7`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `8`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `9`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSNUMBER
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSNUMBER
   
   @js.native
   sealed trait `true` extends js.Object

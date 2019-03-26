@@ -5,5 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - jsonDashSchemaLib.jsonDashSchemaLibStrings.string
+  - jsonDashSchemaLib.jsonDashSchemaLibStrings.number
+  - jsonDashSchemaLib.jsonDashSchemaLibStrings.integer
+  - jsonDashSchemaLib.jsonDashSchemaLibStrings.boolean
+  - jsonDashSchemaLib.jsonDashSchemaLibStrings.`object`
+  - jsonDashSchemaLib.jsonDashSchemaLibStrings.array
+  - jsonDashSchemaLib.jsonDashSchemaLibStrings.`null`
+*/
 trait JSONSchema7TypeName extends js.Object
 

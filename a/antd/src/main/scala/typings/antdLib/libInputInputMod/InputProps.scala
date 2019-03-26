@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.InputHTMLAttributes<std.HTMLInputElement>, 'size' | 'prefix'> ]: react.react.InputHTMLAttributes<std.HTMLInputElement>[P]} */ trait InputProps extends js.Object {
+- Dropped {[ P in std.Exclude<keyof react.react.React.InputHTMLAttributes<std.HTMLInputElement>, 'size' | 'prefix'> ]: react.react.React.InputHTMLAttributes<std.HTMLInputElement>[P]} */ trait InputProps extends js.Object {
   var addonAfter: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var addonBefore: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var allowClear: js.UndefOr[scala.Boolean] = js.undefined

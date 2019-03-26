@@ -81,6 +81,10 @@ trait IDBOpenDBRequest extends IDBRequest[IDBDatabase] {
 
 @JSGlobal("IDBOpenDBRequest")
 @js.native
+class IDBOpenDBRequestCls () extends IDBOpenDBRequest
+
+@JSGlobal("IDBOpenDBRequest")
+@js.native
 object IDBOpenDBRequest
   extends org.scalablytyped.runtime.Instantiable0[IDBOpenDBRequest]
 

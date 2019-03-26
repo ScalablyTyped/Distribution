@@ -5,5 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - TextFilterData
+  - SelectFilterData
+  - RegexFilterData
+  - NumberFilterData
+  - DateFilterData
+  - ArrayFilterData
+*/
 trait FilterValue extends js.Object
 

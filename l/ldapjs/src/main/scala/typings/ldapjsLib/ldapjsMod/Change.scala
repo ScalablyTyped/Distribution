@@ -10,6 +10,16 @@ trait Change extends js.Object {
   var operation: java.lang.String
 }
 
+@JSImport("ldapjs", "Change")
+@js.native
+class ChangeCls protected () extends Change {
+  def this(change: Change) = this()
+  /* CompleteClass */
+  override var modification: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  /* CompleteClass */
+  override var operation: java.lang.String = js.native
+}
+
 object Change {
   @scala.inline
   def apply(modification: org.scalablytyped.runtime.StringDictionary[js.Any], operation: java.lang.String): Change = {

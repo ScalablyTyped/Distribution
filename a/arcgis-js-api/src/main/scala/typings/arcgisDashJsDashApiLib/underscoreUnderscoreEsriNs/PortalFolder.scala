@@ -39,3 +39,9 @@ trait PortalFolder extends Accessor {
   val url: java.lang.String = js.native
 }
 
+@JSGlobal("__esri.PortalFolder")
+@js.native
+class PortalFolderCls () extends PortalFolder {
+  def this(properties: PortalFolderProperties) = this()
+}
+

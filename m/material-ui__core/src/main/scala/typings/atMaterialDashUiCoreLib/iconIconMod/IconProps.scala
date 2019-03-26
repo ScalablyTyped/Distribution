@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLSpanElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLSpanElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLSpanElement>, @material-ui/core.@material-ui/core/Icon/Icon.IconClassKey, never>) */ trait IconProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[IconClassKey] {
-  var className: js.UndefOr[java.lang.String] = js.undefined
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLSpanElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLSpanElement>[P]} */ trait IconProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[IconClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.action | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.disabled | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
   ] = js.undefined
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation._
   var fontSize: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.small | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.large
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
 object IconProps {

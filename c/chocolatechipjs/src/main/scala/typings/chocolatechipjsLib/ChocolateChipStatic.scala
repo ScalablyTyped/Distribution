@@ -124,7 +124,7 @@ trait ChocolateChipStatic extends js.Object {
     *
     */
   @JSName("template")
-  var template_Original: Anon_DataElement = js.native
+  var template_Original: Anon_DataIndex = js.native
   /**
     * Object used to store string templates and parsed templates.
     *

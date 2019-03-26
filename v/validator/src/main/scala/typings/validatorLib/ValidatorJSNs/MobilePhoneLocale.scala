@@ -5,5 +5,66 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - validatorLib.validatorLibStrings.`ar-AE`
+  - validatorLib.validatorLibStrings.`ar-DZ`
+  - validatorLib.validatorLibStrings.`ar-EG`
+  - validatorLib.validatorLibStrings.`ar-JO`
+  - validatorLib.validatorLibStrings.`ar-SA`
+  - validatorLib.validatorLibStrings.`ar-SY`
+  - validatorLib.validatorLibStrings.`be-BY`
+  - validatorLib.validatorLibStrings.`bg-BG`
+  - validatorLib.validatorLibStrings.`cs-CZ`
+  - validatorLib.validatorLibStrings.`de-DE`
+  - validatorLib.validatorLibStrings.`da-DK`
+  - validatorLib.validatorLibStrings.`el-GR`
+  - validatorLib.validatorLibStrings.`en-AU`
+  - validatorLib.validatorLibStrings.`en-GB`
+  - validatorLib.validatorLibStrings.`en-HK`
+  - validatorLib.validatorLibStrings.`en-IN`
+  - validatorLib.validatorLibStrings.`en-KE`
+  - validatorLib.validatorLibStrings.`en-NG`
+  - validatorLib.validatorLibStrings.`en-NZ`
+  - validatorLib.validatorLibStrings.`en-UG`
+  - validatorLib.validatorLibStrings.`en-RW`
+  - validatorLib.validatorLibStrings.`en-SG`
+  - validatorLib.validatorLibStrings.`en-TZ`
+  - validatorLib.validatorLibStrings.`en-PK`
+  - validatorLib.validatorLibStrings.`en-US`
+  - validatorLib.validatorLibStrings.`en-CA`
+  - validatorLib.validatorLibStrings.`en-ZA`
+  - validatorLib.validatorLibStrings.`en-ZM`
+  - validatorLib.validatorLibStrings.`es-ES`
+  - validatorLib.validatorLibStrings.`fa-IR`
+  - validatorLib.validatorLibStrings.`fi-FI`
+  - validatorLib.validatorLibStrings.`fo-FO`
+  - validatorLib.validatorLibStrings.`fr-FR`
+  - validatorLib.validatorLibStrings.`he-IL`
+  - validatorLib.validatorLibStrings.`hu-HU`
+  - validatorLib.validatorLibStrings.`id-ID`
+  - validatorLib.validatorLibStrings.`it-IT`
+  - validatorLib.validatorLibStrings.`ja-JP`
+  - validatorLib.validatorLibStrings.`kk-KZ`
+  - validatorLib.validatorLibStrings.`kl-GL`
+  - validatorLib.validatorLibStrings.`ko-KR`
+  - validatorLib.validatorLibStrings.`lt-LT`
+  - validatorLib.validatorLibStrings.`ms-MY`
+  - validatorLib.validatorLibStrings.`nb-NO`
+  - validatorLib.validatorLibStrings.`nn-NO`
+  - validatorLib.validatorLibStrings.`pl-PL`
+  - validatorLib.validatorLibStrings.`pt-PT`
+  - validatorLib.validatorLibStrings.`ro-RO`
+  - validatorLib.validatorLibStrings.`ru-RU`
+  - validatorLib.validatorLibStrings.`sk-SK`
+  - validatorLib.validatorLibStrings.`sr-RS`
+  - validatorLib.validatorLibStrings.`th-TH`
+  - validatorLib.validatorLibStrings.`tr-TR`
+  - validatorLib.validatorLibStrings.`uk-UA`
+  - validatorLib.validatorLibStrings.`vi-VN`
+  - validatorLib.validatorLibStrings.`zh-CN`
+  - validatorLib.validatorLibStrings.`zh-HK`
+  - validatorLib.validatorLibStrings.`zh-TW`
+  - validatorLib.validatorLibStrings.any
+*/
 trait MobilePhoneLocale extends js.Object
 

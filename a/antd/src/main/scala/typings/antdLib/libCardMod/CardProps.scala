@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'title'> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait CardProps extends js.Object {
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'title'> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait CardProps extends js.Object {
   var actions: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   var activeTabKey: js.UndefOr[java.lang.String] = js.undefined
   var bodyStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

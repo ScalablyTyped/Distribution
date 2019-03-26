@@ -5,5 +5,499 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ad
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.andorra
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ae
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`united arab emirates`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.uae
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.af
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.afghanistan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ag
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.antigua
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ai
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.anguilla
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.al
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.albania
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.am
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.armenia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.an
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`netherlands antilles`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ao
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.angola
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ar
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.argentina
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.as
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`american samoa`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.at
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.austria
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.au
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.australia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.aw
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.aruba
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ax
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`aland islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.az
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.azerbaijan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ba
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bosnia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bb
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.barbados
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bd
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bangladesh
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.be
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.belgium
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bf
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`burkina faso`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bg
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bulgaria
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bh
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bahrain
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bi
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.burundi
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bj
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.benin
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bm
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bermuda
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bn
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.brunei
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bo
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bolivia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.br
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.brazil
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bs
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bahamas
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bt
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bhutan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bv
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`bouvet island`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bw
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.botswana
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.by
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.belarus
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bz
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.belize
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ca
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.canada
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cc
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`cocos islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cd
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.congo
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cf
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`central african republic`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cg
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`congo brazzaville`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ch
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.switzerland
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ci
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`cote divoire`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ck
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`cook islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cl
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.chile
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cm
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cameroon
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cn
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.china
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.co
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.colombia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cr
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`costa rica`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cs
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cu
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cuba
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cv
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`cape verde`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cx
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`christmas island`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cy
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cyprus
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cz
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`czech republic`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.de
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.germany
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.dj
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.djibouti
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.dk
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.denmark
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.dm
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.dominica
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`do`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`dominican republic`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.dz
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.algeria
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ec
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ecuador
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ee
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.estonia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.eg
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.egypt
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.eh
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`western sahara`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.er
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.eritrea
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.es
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.spain
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.et
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ethiopia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.eu
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`european union`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fi
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.finland
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fj
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fiji
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fk
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`falkland islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fm
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.micronesia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fo
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`faroe islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.fr
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.france
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ga
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gabon
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gb
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.uk
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`united kingdom`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gd
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.grenada
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ge
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.georgia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gf
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`french guiana`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gh
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ghana
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gi
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gibraltar
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gl
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.greenland
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gm
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gambia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gn
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.guinea
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gp
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.guadeloupe
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gq
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`equatorial guinea`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gr
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.greece
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gs
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`sandwich islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gt
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.guatemala
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gu
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.guam
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gw
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`guinea-bissau`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.gy
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.guyana
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hk
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`hong kong`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hm
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`heard island`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hn
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.honduras
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hr
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.croatia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ht
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.haiti
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hu
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hungary
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.id
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.indonesia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ie
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ireland
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.il
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.israel
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.in
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.india
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.io
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`indian ocean territory`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.iq
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.iraq
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ir
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.iran
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.is
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.iceland
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.it
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.italy
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.jm
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.jamaica
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.jo
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.jordan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.jp
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.japan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ke
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.kenya
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.kg
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.kyrgyzstan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.kh
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.cambodia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ki
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.kiribati
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.km
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.comoros
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.kn
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`saint kitts and nevis`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.kp
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`north korea`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.kr
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`south korea`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.kw
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.kuwait
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ky
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`cayman islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.kz
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.kazakhstan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.la
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.laos
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.lb
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.lebanon
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.lc
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`saint lucia`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.li
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.liechtenstein
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.lk
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`sri lanka`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.lr
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.liberia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ls
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.lesotho
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.lt
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.lithuania
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.lu
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.luxembourg
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.lv
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.latvia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ly
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.libya
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ma
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.morocco
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mc
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.monaco
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.md
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.moldova
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.me
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.montenegro
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mg
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.madagascar
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mh
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`marshall islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mk
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.macedonia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ml
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mali
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mm
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.myanmar
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.burma
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mn
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mongolia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mo
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.macau
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mp
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`northern mariana islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mq
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.martinique
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mr
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mauritania
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ms
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.montserrat
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mt
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.malta
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mu
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mauritius
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mv
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.maldives
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mw
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.malawi
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mx
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mexico
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.my
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.malaysia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mz
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mozambique
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.na
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.namibia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.nc
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`new caledonia`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ne
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.niger
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.nf
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`norfolk island`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ng
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.nigeria
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ni
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.nicaragua
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.nl
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.netherlands
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.no
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.norway
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.np
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.nepal
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.nr
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.nauru
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.nu
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.niue
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.nz
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`new zealand`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.om
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.oman
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pa
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.panama
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pe
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.peru
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pf
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`french polynesia`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pg
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`new guinea`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ph
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.philippines
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pk
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pakistan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pl
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.poland
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pm
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`saint pierre`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pn
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`pitcairn islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pr
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`puerto rico`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ps
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.palestine
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pt
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.portugal
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.pw
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.palau
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.py
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.paraguay
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.qa
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.qatar
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.re
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.reunion
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ro
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.romania
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.rs
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.serbia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ru
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.russia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.rw
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.rwanda
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sa
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`saudi arabia`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sb
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`solomon islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sc
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.seychelles
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`gb sct`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.scotland
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sd
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sudan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.se
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sweden
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sg
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.singapore
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sh
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`saint helena`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.si
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.slovenia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sj
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.svalbard
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`jan mayen`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sk
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.slovakia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sl
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`sierra leone`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sm
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`san marino`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sn
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.senegal
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.so
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.somalia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sr
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.suriname
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.st
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`sao tome`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sv
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`el salvador`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sy
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.syria
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.sz
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.swaziland
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tc
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`caicos islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.td
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.chad
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tf
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`french territories`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tg
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.togo
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.th
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.thailand
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tj
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tajikistan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tk
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tokelau
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tl
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.timorleste
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tm
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.turkmenistan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tn
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tunisia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.to
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tonga
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tr
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.turkey
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tt
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.trinidad
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tv
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tuvalu
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tw
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.taiwan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tz
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tanzania
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ua
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ukraine
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ug
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.uganda
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.um
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`us minor islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.us
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.america
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`united states`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.uy
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.uruguay
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.uz
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.uzbekistan
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.va
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`vatican city`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.vc
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`saint vincent`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ve
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.venezuela
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.vg
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`british virgin islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.vi
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`us virgin islands`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.vn
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.vietnam
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.vu
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.vanuatu
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`gb wls`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.wales
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.wf
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`wallis and futuna`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ws
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.samoa
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.ye
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.yemen
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.yt
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mayotte
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.za
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`south africa`
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.zm
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.zambia
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.zw
+  - semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.zimbabwe
+*/
 trait FlagNameValues extends js.Object
 

@@ -20,6 +20,12 @@ trait VTTCue extends TextTrackCue {
 
 @JSGlobal("VTTCue")
 @js.native
+class VTTCueCls protected () extends VTTCue {
+  def this(startTime: scala.Double, endTime: scala.Double, text: java.lang.String) = this()
+}
+
+@JSGlobal("VTTCue")
+@js.native
 object VTTCue
   extends org.scalablytyped.runtime.Instantiable3[
       /* startTime */ scala.Double, 

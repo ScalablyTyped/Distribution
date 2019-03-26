@@ -13,6 +13,10 @@ object LocalAuthenticationNs extends js.Object {
     var FINGERPRINT: scala.Double
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - expoLib.Anon_Success
+    - expoLib.Anon_ErrorFalse
+  */
   trait LocalAuthenticationResult extends js.Object
   
   /**

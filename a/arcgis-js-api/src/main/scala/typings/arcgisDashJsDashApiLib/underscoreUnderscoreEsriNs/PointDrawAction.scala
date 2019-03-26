@@ -23,3 +23,9 @@ trait PointDrawAction extends DrawAction {
   def complete(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.PointDrawAction")
+@js.native
+class PointDrawActionCls () extends PointDrawAction {
+  def this(properties: PointDrawActionProperties) = this()
+}
+

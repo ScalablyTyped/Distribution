@@ -57,7 +57,7 @@ trait ContextMenuCreateProperties extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHECKBOX[keyof chrome-apps.Anon_CHECKBOX] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.normal | chromeDashAppsLib.chromeDashAppsLibStrings.checkbox | chromeDashAppsLib.chromeDashAppsLibStrings.radio | chromeDashAppsLib.chromeDashAppsLibStrings.separator
       ]
     ]
   ] = js.undefined
@@ -80,7 +80,7 @@ object ContextMenuCreateProperties {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHECKBOX[keyof chrome-apps.Anon_CHECKBOX] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.normal | chromeDashAppsLib.chromeDashAppsLibStrings.checkbox | chromeDashAppsLib.chromeDashAppsLibStrings.radio | chromeDashAppsLib.chromeDashAppsLibStrings.separator
       ]
     ] = null
   ): ContextMenuCreateProperties = {

@@ -5,28 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Lifted 3 members from Set(graphql-tools.graphql-tools/dist/Interfaces.Transform) */ @js.native
-trait RenameRootFields extends js.Object {
-  var transformRequest: js.UndefOr[
-    js.Function1[
-      /* originalRequest */ graphqlDashToolsLib.distInterfacesMod.Request, 
-      graphqlDashToolsLib.distInterfacesMod.Request
-    ]
-  ] = js.native
-  var transformResult: js.UndefOr[
-    js.Function1[
-      /* result */ graphqlDashToolsLib.distInterfacesMod.Result, 
-      graphqlDashToolsLib.distInterfacesMod.Result
-    ]
-  ] = js.native
-  var transformSchema: js.UndefOr[
-    js.Function1[
-      /* schema */ graphqlLib.graphqlMod.GraphQLSchema, 
-      graphqlLib.graphqlMod.GraphQLSchema
-    ]
-  ] = js.native
-  var transformer: js.Any = js.native
-  def transformSchema(originalSchema: graphqlLib.graphqlMod.GraphQLSchema): graphqlLib.graphqlMod.GraphQLSchema = js.native
+trait RenameRootFields
+  extends graphqlDashToolsLib.distInterfacesMod.Transform {
+  var transformer: js.Any
+  @JSName("transformSchema")
+  def transformSchema_MRenameRootFields(originalSchema: graphqlLib.graphqlMod.GraphQLSchema): graphqlLib.graphqlMod.GraphQLSchema
+}
+
+object RenameRootFields {
+  @scala.inline
+  def apply(
+    transformSchema: graphqlLib.graphqlMod.GraphQLSchema => graphqlLib.graphqlMod.GraphQLSchema,
+    transformer: js.Any,
+    transformRequest: /* originalRequest */ graphqlDashToolsLib.distInterfacesMod.Request => graphqlDashToolsLib.distInterfacesMod.Request = null,
+    transformResult: /* result */ graphqlDashToolsLib.distInterfacesMod.Result => graphqlDashToolsLib.distInterfacesMod.Result = null
+  ): RenameRootFields = {
+    val __obj = js.Dynamic.literal(transformSchema = js.Any.fromFunction1(transformSchema), transformer = transformer)
+    if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction1(transformRequest))
+    if (transformResult != null) __obj.updateDynamic("transformResult")(js.Any.fromFunction1(transformResult))
+    __obj.asInstanceOf[RenameRootFields]
+  }
 }
 

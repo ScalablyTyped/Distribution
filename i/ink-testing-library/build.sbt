@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "ink-testing-library"
-version := "1.0-dt-20190313Z-ecd82f"
+version := "1.0-dt-20190313Z-fa1d95"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ink" % "0.5-dt-20190126Z-85fc8c",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f878d0",
-  "org.scalablytyped" %%% "std" % "3.3-ec2942")
+  "org.scalablytyped" %%% "ink" % "0.5-dt-20190126Z-997fed",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190325Z-000e7b",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-1549d2",
+  "org.scalablytyped" %%% "std" % "3.3-14e863")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

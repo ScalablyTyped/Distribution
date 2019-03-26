@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   */
 trait VolumeError extends js.Object {
   /**
-    * String detailing the error encountered during Attach or Detach operation. This string maybe
-    * logged, so it should not contain sensitive information.
+    * String detailing the error encountered during Attach or Detach operation. This string may
+    * be logged, so it should not contain sensitive information.
     */
   val message: java.lang.String
   /**

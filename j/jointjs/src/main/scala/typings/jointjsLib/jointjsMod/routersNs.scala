@@ -46,6 +46,13 @@ object routersNs extends js.Object {
     var orthogonal: OrthogonalRouterArguments
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - jointjsLib.jointjsLibStrings.normal
+    - jointjsLib.jointjsLibStrings.manhattan
+    - jointjsLib.jointjsLibStrings.metro
+    - jointjsLib.jointjsLibStrings.orthogonal
+    - jointjsLib.jointjsLibStrings.oneSide
+  */
   trait RouterType extends js.Object
   
   var manhattan: GenericRouter[jointjsLib.jointjsLibStrings.manhattan] = js.native

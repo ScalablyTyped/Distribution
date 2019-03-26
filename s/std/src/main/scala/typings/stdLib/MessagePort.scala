@@ -101,6 +101,10 @@ trait MessagePort
 
 @JSGlobal("MessagePort")
 @js.native
+class MessagePortCls () extends MessagePort
+
+@JSGlobal("MessagePort")
+@js.native
 object MessagePort
   extends org.scalablytyped.runtime.Instantiable0[MessagePort]
 

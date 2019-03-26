@@ -17,6 +17,11 @@ package object leafletMod {
   ]
   type LatLngBoundsExpression = LatLngBounds | LatLngBoundsLiteral
   type LatLngBoundsLiteral = js.Array[LatLngTuple]
+  /* Rewritten from type alias, can be one of: 
+    - LatLng
+    - LatLngLiteral
+    - LatLngTuple
+  */
   type LatLngExpression = _LatLngExpression | LatLngTuple
   type LatLngTuple = js.Tuple2[scala.Double, scala.Double]
   type LeafletEventHandlerFn = js.Function1[/* event */ LeafletEvent, scala.Unit]

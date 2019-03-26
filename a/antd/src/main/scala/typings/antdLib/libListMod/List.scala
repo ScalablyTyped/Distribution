@@ -12,7 +12,7 @@ trait List
   var keys: js.Any = js.native
   @JSName("state")
   var state_List: antdLib.Anon_PaginationCurrent = js.native
-  def getChildContext(): antdLib.Anon_Grid = js.native
+  def getChildContext(): antdLib.Anon_GridHorizontal = js.native
   def isSomethingAfterLastItem(): scala.Boolean = js.native
   def renderEmpty(
     prefixCls: java.lang.String,

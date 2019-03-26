@@ -28,7 +28,7 @@ trait StorageUnitInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FIXED[keyof chrome-apps.Anon_FIXED] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.fixed | chromeDashAppsLib.chromeDashAppsLibStrings.removable | chromeDashAppsLib.chromeDashAppsLibStrings.unknown
     ]
   ]
 }
@@ -44,7 +44,7 @@ object StorageUnitInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FIXED[keyof chrome-apps.Anon_FIXED] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.fixed | chromeDashAppsLib.chromeDashAppsLibStrings.removable | chromeDashAppsLib.chromeDashAppsLibStrings.unknown
       ]
     ]
   ): StorageUnitInfo = {

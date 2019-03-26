@@ -24,7 +24,7 @@ trait ojRadiosetEventMap[K, D]
   var optionsKeysChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[atOracleOraclejetLib.ojradiosetMod.ojRadiosetNs.OptionsKeys]]
   var requiredChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean]
   @JSName("valueChanged")
-  var valueChanged_ojRadiosetEventMap: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var valueChanged_ojRadiosetEventMap: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
 }
 
 object ojRadiosetEventMap {
@@ -141,7 +141,7 @@ object ojRadiosetEventMap {
     validChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
       atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown
     ],
-    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     volumechange: stdLib.Event,
     waiting: stdLib.Event,
     wheel: stdLib.WheelEvent

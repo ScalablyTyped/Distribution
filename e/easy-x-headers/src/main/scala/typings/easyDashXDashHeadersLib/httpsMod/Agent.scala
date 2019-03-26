@@ -11,6 +11,18 @@ trait Agent extends js.Object {
   var sockets: js.Any
 }
 
+@JSImport("https", "Agent")
+@js.native
+class AgentCls () extends Agent {
+  def this(options: RequestOptions) = this()
+  /* CompleteClass */
+  override var maxSockets: scala.Double = js.native
+  /* CompleteClass */
+  override var requests: js.Any = js.native
+  /* CompleteClass */
+  override var sockets: js.Any = js.native
+}
+
 object Agent {
   @scala.inline
   def apply(maxSockets: scala.Double, requests: js.Any, sockets: js.Any): Agent = {

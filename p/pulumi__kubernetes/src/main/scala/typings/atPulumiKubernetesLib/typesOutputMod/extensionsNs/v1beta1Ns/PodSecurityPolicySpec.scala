@@ -16,6 +16,12 @@ trait PodSecurityPolicySpec extends js.Object {
     */
   val allowPrivilegeEscalation: scala.Boolean
   /**
+    * AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be
+    * embedded within a pod spec. An empty value means no CSI drivers can run inline within a pod
+    * spec.
+    */
+  val allowedCSIDrivers: js.Array[AllowedCSIDriver]
+  /**
     * allowedCapabilities is a list of capabilities that can be requested to add to the
     * container. Capabilities in this field may be added at the pod author's discretion. You must
     * not list a capability in both allowedCapabilities and requiredDropCapabilities.
@@ -135,6 +141,7 @@ object PodSecurityPolicySpec {
   @scala.inline
   def apply(
     allowPrivilegeEscalation: scala.Boolean,
+    allowedCSIDrivers: js.Array[AllowedCSIDriver],
     allowedCapabilities: js.Array[java.lang.String],
     allowedFlexVolumes: js.Array[AllowedFlexVolume],
     allowedHostPaths: js.Array[AllowedHostPath],
@@ -157,7 +164,7 @@ object PodSecurityPolicySpec {
     supplementalGroups: SupplementalGroupsStrategyOptions,
     volumes: js.Array[java.lang.String]
   ): PodSecurityPolicySpec = {
-    val __obj = js.Dynamic.literal(allowPrivilegeEscalation = allowPrivilegeEscalation, allowedCapabilities = allowedCapabilities, allowedFlexVolumes = allowedFlexVolumes, allowedHostPaths = allowedHostPaths, allowedProcMountTypes = allowedProcMountTypes, allowedUnsafeSysctls = allowedUnsafeSysctls, defaultAddCapabilities = defaultAddCapabilities, defaultAllowPrivilegeEscalation = defaultAllowPrivilegeEscalation, forbiddenSysctls = forbiddenSysctls, fsGroup = fsGroup, hostIPC = hostIPC, hostNetwork = hostNetwork, hostPID = hostPID, hostPorts = hostPorts, privileged = privileged, readOnlyRootFilesystem = readOnlyRootFilesystem, requiredDropCapabilities = requiredDropCapabilities, runAsGroup = runAsGroup, runAsUser = runAsUser, seLinux = seLinux, supplementalGroups = supplementalGroups, volumes = volumes)
+    val __obj = js.Dynamic.literal(allowPrivilegeEscalation = allowPrivilegeEscalation, allowedCSIDrivers = allowedCSIDrivers, allowedCapabilities = allowedCapabilities, allowedFlexVolumes = allowedFlexVolumes, allowedHostPaths = allowedHostPaths, allowedProcMountTypes = allowedProcMountTypes, allowedUnsafeSysctls = allowedUnsafeSysctls, defaultAddCapabilities = defaultAddCapabilities, defaultAllowPrivilegeEscalation = defaultAllowPrivilegeEscalation, forbiddenSysctls = forbiddenSysctls, fsGroup = fsGroup, hostIPC = hostIPC, hostNetwork = hostNetwork, hostPID = hostPID, hostPorts = hostPorts, privileged = privileged, readOnlyRootFilesystem = readOnlyRootFilesystem, requiredDropCapabilities = requiredDropCapabilities, runAsGroup = runAsGroup, runAsUser = runAsUser, seLinux = seLinux, supplementalGroups = supplementalGroups, volumes = volumes)
   
     __obj.asInstanceOf[PodSecurityPolicySpec]
   }

@@ -2212,8 +2212,8 @@ object chromeDashAppsLibStrings {
   
   @js.native
   sealed trait phone
-    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
-       with chromeDashAppsLib.chromeNs.signedInDevicesNs.DeviceType
+    extends chromeDashAppsLib.chromeNs.signedInDevicesNs.DeviceType
+       with chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
   
   @js.native
   sealed trait ping
@@ -2639,8 +2639,8 @@ object chromeDashAppsLibStrings {
   
   @js.native
   sealed trait tablet
-    extends chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
-       with chromeDashAppsLib.chromeNs.signedInDevicesNs.DeviceType
+    extends chromeDashAppsLib.chromeNs.signedInDevicesNs.DeviceType
+       with chromeDashAppsLib.chromeNs.bluetoothNs.DeviceType
   
   @js.native
   sealed trait te

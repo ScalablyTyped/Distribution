@@ -10,7 +10,7 @@ trait CompactPickerProps
   var colors: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var onSwatchHover: js.UndefOr[
     js.Function2[
-      /* color */ reactDashColorLib.reactDashColorMod.Color, 
+      /* color */ reactDashColorLib.reactDashColorMod.ColorResult, 
       /* event */ stdLib.MouseEvent, 
       scala.Unit
     ]
@@ -25,7 +25,7 @@ object CompactPickerProps {
     key: reactLib.reactMod.ReactNs.Key = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
-    onSwatchHover: (/* color */ reactDashColorLib.reactDashColorMod.Color, /* event */ stdLib.MouseEvent) => scala.Unit = null,
+    onSwatchHover: (/* color */ reactDashColorLib.reactDashColorMod.ColorResult, /* event */ stdLib.MouseEvent) => scala.Unit = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[CompactPicker] = null
   ): CompactPickerProps = {
     val __obj = js.Dynamic.literal()

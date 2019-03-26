@@ -30,6 +30,42 @@ trait AudioListener extends js.Object {
 
 @JSGlobal("AudioListener")
 @js.native
+class AudioListenerCls () extends AudioListener {
+  /* CompleteClass */
+  override val forwardX: AudioParam = js.native
+  /* CompleteClass */
+  override val forwardY: AudioParam = js.native
+  /* CompleteClass */
+  override val forwardZ: AudioParam = js.native
+  /* CompleteClass */
+  override val positionX: AudioParam = js.native
+  /* CompleteClass */
+  override val positionY: AudioParam = js.native
+  /* CompleteClass */
+  override val positionZ: AudioParam = js.native
+  /* CompleteClass */
+  override val upX: AudioParam = js.native
+  /* CompleteClass */
+  override val upY: AudioParam = js.native
+  /* CompleteClass */
+  override val upZ: AudioParam = js.native
+  /** @deprecated */
+  /* CompleteClass */
+  override def setOrientation(
+    x: scala.Double,
+    y: scala.Double,
+    z: scala.Double,
+    xUp: scala.Double,
+    yUp: scala.Double,
+    zUp: scala.Double
+  ): scala.Unit = js.native
+  /** @deprecated */
+  /* CompleteClass */
+  override def setPosition(x: scala.Double, y: scala.Double, z: scala.Double): scala.Unit = js.native
+}
+
+@JSGlobal("AudioListener")
+@js.native
 object AudioListener
   extends org.scalablytyped.runtime.Instantiable0[AudioListener]
 

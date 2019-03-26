@@ -12,7 +12,7 @@ class UA protected ()
   def this(options: sipDotJsLib.typesUaMod.UANs.Options) = this()
   var applicants: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.typesSessionMod.InviteClientContext] = js.native
   var configuration: sipDotJsLib.typesUaMod.UANs.Options = js.native
-  var contact: js.UndefOr[_] = js.native
+  var contact: sipDotJsLib.Anon_Options = js.native
   var data: js.Any = js.native
   var dialogs: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.typesDialogsMod.Dialog] = js.native
   var earlySubscriptions: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.typesSubscriptionMod.Subscription] = js.native
@@ -25,7 +25,6 @@ class UA protected ()
   var sessions: org.scalablytyped.runtime.StringDictionary[
     sipDotJsLib.typesSessionMod.InviteClientContext | sipDotJsLib.typesSessionMod.InviteServerContext
   ] = js.native
-   //TODO fix this
   var status: sipDotJsLib.typesEnumsMod.UAStatus = js.native
   var subscriptions: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.typesSubscriptionMod.Subscription] = js.native
   var transactions: sipDotJsLib.Anon_Ict = js.native
@@ -41,6 +40,7 @@ class UA protected ()
   ] = js.native
   def getLogger(category: java.lang.String): sipDotJsLib.typesLoggerDashFactoryMod.Logger = js.native
   def getLogger(category: java.lang.String, label: java.lang.String): sipDotJsLib.typesLoggerDashFactoryMod.Logger = js.native
+  def getLoggerFactory(): sipDotJsLib.typesLoggerDashFactoryMod.LoggerFactory = js.native
   def invite(target: java.lang.String): sipDotJsLib.typesSessionMod.InviteClientContext = js.native
   def invite(target: java.lang.String, options: sipDotJsLib.typesSessionMod.InviteClientContextNs.Options): sipDotJsLib.typesSessionMod.InviteClientContext = js.native
   def invite(

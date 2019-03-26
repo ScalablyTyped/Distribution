@@ -12,10 +12,10 @@ object ^ extends js.Object {
     data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.Anon_AddAsFirstChild
   ): reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeIndex = js.native
   def changeNodeAtPath(
-    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreePath with reactDashSortableDashTreeLib.Anon_DataGetNodeKey
+    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreePath with reactDashSortableDashTreeLib.Anon_GetNodeKeyIgnoreCollapsed
   ): js.Array[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeItem] = js.native
   def find(
-    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.Anon_DataExpandAllMatchPaths
+    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.Anon_Data
   ): reactDashSortableDashTreeLib.Anon_Matches with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree = js.native
   def getDepth(node: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeItem): scala.Double = js.native
   def getDepth(node: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeItem, depth: scala.Double): scala.Double = js.native
@@ -23,18 +23,18 @@ object ^ extends js.Object {
     data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeNode with reactDashSortableDashTreeLib.Anon_IgnoreCollapsed
   ): scala.Double = js.native
   def getFlatDataFromTree(
-    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.Anon_DataGetNodeKeyIgnoreCollapsed
+    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.Anon_GetNodeKeyIgnoreCollapsedBoolean
   ): js.Array[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FlatDataItem] = js.native
   def getNodeAtPath(
-    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreePath with reactDashSortableDashTreeLib.Anon_DataGetNodeKeyIgnoreCollapsed
+    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreePath with reactDashSortableDashTreeLib.Anon_GetNodeKeyIgnoreCollapsedBoolean
   ): (reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeNode with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeIndex) | scala.Null = js.native
   def getTreeFromFlatData(data: reactDashSortableDashTreeLib.Anon_FlatData): js.Array[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeItem] = js.native
   def getVisibleNodeCount(data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree): scala.Double = js.native
   def getVisibleNodeInfoAtIndex(
-    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.Anon_Data
+    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.Anon_GetNodeKey
   ): reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeNode with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreePath with (reactDashSortableDashTreeLib.Anon_LowerSiblingsCounts | scala.Null) = js.native
   def insertNode(
-    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.Anon_DataDepth
+    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.Anon_Depth
   ): reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeIndex with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreePath with reactDashSortableDashTreeLib.Anon_ParentNode = js.native
   def isDescendant(
     older: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeItem,
@@ -42,10 +42,10 @@ object ^ extends js.Object {
   ): scala.Boolean = js.native
   def map(data: WalkAndMapFunctionParameters): js.Array[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeItem] = js.native
   def removeNode(
-    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreePath with reactDashSortableDashTreeLib.Anon_DataGetNodeKeyIgnoreCollapsed
+    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreePath with reactDashSortableDashTreeLib.Anon_GetNodeKeyIgnoreCollapsedBoolean
   ): (reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeNode with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeIndex) | scala.Null = js.native
   def removeNodeAtPath(
-    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreePath with reactDashSortableDashTreeLib.Anon_DataGetNodeKeyIgnoreCollapsed
+    data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreePath with reactDashSortableDashTreeLib.Anon_GetNodeKeyIgnoreCollapsedBoolean
   ): js.Array[reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.TreeItem] = js.native
   def toggleExpandedForAll(
     data: reactDashSortableDashTreeLib.reactDashSortableDashTreeMod.FullTree with reactDashSortableDashTreeLib.Anon_Expanded

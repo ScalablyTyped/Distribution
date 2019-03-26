@@ -15,6 +15,21 @@ trait DeferredPermissionRequest extends js.Object {
 
 @JSGlobal("DeferredPermissionRequest")
 @js.native
+class DeferredPermissionRequestCls () extends DeferredPermissionRequest {
+  /* CompleteClass */
+  override val id: scala.Double = js.native
+  /* CompleteClass */
+  override val `type`: MSWebViewPermissionType = js.native
+  /* CompleteClass */
+  override val uri: java.lang.String = js.native
+  /* CompleteClass */
+  override def allow(): scala.Unit = js.native
+  /* CompleteClass */
+  override def deny(): scala.Unit = js.native
+}
+
+@JSGlobal("DeferredPermissionRequest")
+@js.native
 object DeferredPermissionRequest
   extends org.scalablytyped.runtime.Instantiable0[DeferredPermissionRequest]
 

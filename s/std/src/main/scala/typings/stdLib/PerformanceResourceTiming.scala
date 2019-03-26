@@ -27,6 +27,55 @@ trait PerformanceResourceTiming extends PerformanceEntry {
 
 @JSGlobal("PerformanceResourceTiming")
 @js.native
+class PerformanceResourceTimingCls () extends PerformanceResourceTiming {
+  /* CompleteClass */
+  override val connectEnd: scala.Double = js.native
+  /* CompleteClass */
+  override val connectStart: scala.Double = js.native
+  /* CompleteClass */
+  override val decodedBodySize: scala.Double = js.native
+  /* CompleteClass */
+  override val domainLookupEnd: scala.Double = js.native
+  /* CompleteClass */
+  override val domainLookupStart: scala.Double = js.native
+  /* CompleteClass */
+  override val duration: scala.Double = js.native
+  /* CompleteClass */
+  override val encodedBodySize: scala.Double = js.native
+  /* CompleteClass */
+  override val entryType: java.lang.String = js.native
+  /* CompleteClass */
+  override val fetchStart: scala.Double = js.native
+  /* CompleteClass */
+  override val initiatorType: java.lang.String = js.native
+  /* CompleteClass */
+  override val name: java.lang.String = js.native
+  /* CompleteClass */
+  override val nextHopProtocol: java.lang.String = js.native
+  /* CompleteClass */
+  override val redirectEnd: scala.Double = js.native
+  /* CompleteClass */
+  override val redirectStart: scala.Double = js.native
+  /* CompleteClass */
+  override val requestStart: scala.Double = js.native
+  /* CompleteClass */
+  override val responseEnd: scala.Double = js.native
+  /* CompleteClass */
+  override val responseStart: scala.Double = js.native
+  /* CompleteClass */
+  override val secureConnectionStart: scala.Double = js.native
+  /* CompleteClass */
+  override val startTime: scala.Double = js.native
+  /* CompleteClass */
+  override val transferSize: scala.Double = js.native
+  /* CompleteClass */
+  override val workerStart: scala.Double = js.native
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
+}
+
+@JSGlobal("PerformanceResourceTiming")
+@js.native
 object PerformanceResourceTiming
   extends org.scalablytyped.runtime.Instantiable0[PerformanceResourceTiming]
 

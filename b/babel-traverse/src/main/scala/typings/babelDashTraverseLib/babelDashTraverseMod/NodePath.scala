@@ -434,13 +434,13 @@ class NodePath[T] protected () extends js.Object {
     * rely on coercion when using this method and check with === if it's false.
     */
   def evaluateTruthy(): scala.Boolean = js.native
-  def find(callback: js.Function1[/* path */ this.type, scala.Boolean]): NodePath[Node] = js.native
+  def find(callback: js.Function1[/* path */ NodePath[Node], scala.Boolean]): NodePath[Node] = js.native
   // ------------------------- ancestry -------------------------
   /**
     * Call the provided `callback` with the `NodePath`s of all the parents.
     * When the `callback` returns a truthy value, we return that node path.
     */
-  def findParent(callback: js.Function1[/* path */ this.type, scala.Boolean]): NodePath[Node] = js.native
+  def findParent(callback: js.Function1[/* path */ NodePath[Node], scala.Boolean]): NodePath[Node] = js.native
   def get(key: java.lang.String): NodePath[Node] | js.Array[NodePath[Node]] = js.native
   def get(key: java.lang.String, context: TraversalContext): NodePath[Node] | js.Array[NodePath[Node]] = js.native
   def get(key: java.lang.String, context: scala.Boolean): NodePath[Node] | js.Array[NodePath[Node]] = js.native
@@ -479,8 +479,8 @@ class NodePath[T] protected () extends js.Object {
     filter: js.Function3[
       /* deepest */ Node, 
       /* i */ scala.Double, 
-      /* ancestries */ js.Array[this.type], 
-      this.type
+      /* ancestries */ js.Array[NodePath[Node]], 
+      NodePath[Node]
     ]
   ): NodePath[Node] = js.native
   /**

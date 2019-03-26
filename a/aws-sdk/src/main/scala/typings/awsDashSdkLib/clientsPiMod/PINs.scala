@@ -305,6 +305,11 @@ object PINs extends js.Object {
   type ServiceType = awsDashSdkLib.awsDashSdkLibStrings.RDS | java.lang.String
   type String = java.lang.String
   type StringList = js.Array[String]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2018-02-27`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -57,6 +57,10 @@ trait Console extends js.Object {
 
 @JSGlobal("Console")
 @js.native
+class ConsoleCls () extends Console
+
+@JSGlobal("Console")
+@js.native
 object Console
   extends org.scalablytyped.runtime.Instantiable0[Console]
 

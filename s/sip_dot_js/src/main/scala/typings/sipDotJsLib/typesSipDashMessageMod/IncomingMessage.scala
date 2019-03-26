@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js/types/sip-message", "IncomingMessage")
 @js.native
 class IncomingMessage () extends js.Object {
-  var body: java.lang.String | js.Any = js.native
+  var body: java.lang.String = js.native
   var callId: java.lang.String = js.native
   var cseq: scala.Double = js.native
   var data: java.lang.String = js.native

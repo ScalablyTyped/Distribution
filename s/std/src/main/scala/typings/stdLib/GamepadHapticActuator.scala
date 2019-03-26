@@ -12,6 +12,15 @@ trait GamepadHapticActuator extends js.Object {
 
 @JSGlobal("GamepadHapticActuator")
 @js.native
+class GamepadHapticActuatorCls () extends GamepadHapticActuator {
+  /* CompleteClass */
+  override val `type`: GamepadHapticActuatorType = js.native
+  /* CompleteClass */
+  override def pulse(value: scala.Double, duration: scala.Double): js.Promise[scala.Boolean] = js.native
+}
+
+@JSGlobal("GamepadHapticActuator")
+@js.native
 object GamepadHapticActuator
   extends org.scalablytyped.runtime.Instantiable0[GamepadHapticActuator]
 

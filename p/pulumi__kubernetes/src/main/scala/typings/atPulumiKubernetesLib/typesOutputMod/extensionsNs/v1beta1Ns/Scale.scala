@@ -25,17 +25,17 @@ trait Scale extends js.Object {
   val kind: java.lang.String
   /**
     * Standard object metadata; More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata.
     */
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta
   /**
     * defines the behavior of the scale. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
     */
   val spec: ScaleSpec
   /**
     * current status of the scale. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
     * Read-only.
     */
   val status: ScaleStatus

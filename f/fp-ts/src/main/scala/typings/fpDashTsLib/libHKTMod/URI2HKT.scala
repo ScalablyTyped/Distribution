@@ -12,7 +12,7 @@ trait URI2HKT[A] extends js.Object {
   var Identity: fpDashTsLib.libIdentityMod.Identity[A]
   var NonEmptyArray: fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A]
   var NonEmptyArray2v: fpDashTsLib.libNonEmptyArray2vMod.NonEmptyArray[A]
-  var Option: fpDashTsLib.libOptionMod.Option[A]
+  var Option: stdLib.Option
   var Pair: fpDashTsLib.libPairMod.Pair[A]
   var StrMap: fpDashTsLib.libStrMapMod.StrMap[A]
   var Task: fpDashTsLib.libTaskMod.Task[A]
@@ -29,7 +29,7 @@ object URI2HKT {
     Identity: fpDashTsLib.libIdentityMod.Identity[A],
     NonEmptyArray: fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A],
     NonEmptyArray2v: fpDashTsLib.libNonEmptyArray2vMod.NonEmptyArray[A],
-    Option: fpDashTsLib.libOptionMod.Option[A],
+    Option: stdLib.Option,
     Pair: fpDashTsLib.libPairMod.Pair[A],
     StrMap: fpDashTsLib.libStrMapMod.StrMap[A],
     Task: fpDashTsLib.libTaskMod.Task[A],

@@ -50,6 +50,63 @@ trait Navigator
 
 @JSGlobal("Navigator")
 @js.native
+class NavigatorCls () extends Navigator {
+  /* CompleteClass */
+  override val appCodeName: java.lang.String = js.native
+  /* CompleteClass */
+  override val appName: java.lang.String = js.native
+  /* CompleteClass */
+  override val appVersion: java.lang.String = js.native
+  /* CompleteClass */
+  override val hardwareConcurrency: scala.Double = js.native
+  /* CompleteClass */
+  override val language: java.lang.String = js.native
+  /* CompleteClass */
+  override val languages: js.Array[java.lang.String] = js.native
+  /* CompleteClass */
+  override val mediaDevices: MediaDevices = js.native
+  /* CompleteClass */
+  override val onLine: scala.Boolean = js.native
+  /* CompleteClass */
+  override val platform: java.lang.String = js.native
+  /* CompleteClass */
+  override val product: java.lang.String = js.native
+  /* CompleteClass */
+  override val productSub: java.lang.String = js.native
+  /* CompleteClass */
+  override val storage: StorageManager = js.native
+  /* CompleteClass */
+  override val userAgent: java.lang.String = js.native
+  /* CompleteClass */
+  override val vendor: java.lang.String = js.native
+  /* CompleteClass */
+  override val vendorSub: java.lang.String = js.native
+  /* CompleteClass */
+  override val webdriver: scala.Boolean = js.native
+  /* CompleteClass */
+  override def confirmSiteSpecificTrackingException(args: ConfirmSiteSpecificExceptionsInformation): scala.Boolean = js.native
+  /* CompleteClass */
+  override def confirmWebWideTrackingException(args: ExceptionInformation): scala.Boolean = js.native
+  /* CompleteClass */
+  override def getDisplayMedia(constraints: MediaStreamConstraints): js.Promise[MediaStream] = js.native
+  /* CompleteClass */
+  override def getUserMedia(
+    constraints: MediaStreamConstraints,
+    successCallback: NavigatorUserMediaSuccessCallback,
+    errorCallback: NavigatorUserMediaErrorCallback
+  ): scala.Unit = js.native
+  /* CompleteClass */
+  override def removeSiteSpecificTrackingException(args: ExceptionInformation): scala.Unit = js.native
+  /* CompleteClass */
+  override def removeWebWideTrackingException(args: ExceptionInformation): scala.Unit = js.native
+  /* CompleteClass */
+  override def storeSiteSpecificTrackingException(args: StoreSiteSpecificExceptionsInformation): scala.Unit = js.native
+  /* CompleteClass */
+  override def storeWebWideTrackingException(args: StoreExceptionsInformation): scala.Unit = js.native
+}
+
+@JSGlobal("Navigator")
+@js.native
 object Navigator
   extends org.scalablytyped.runtime.Instantiable0[Navigator]
 

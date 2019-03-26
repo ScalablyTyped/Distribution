@@ -11,10 +11,10 @@ trait Anon_GetInputProps extends js.Object {
   var suggestions: js.Array[reactDashPlacesDashAutocompleteLib.reactDashPlacesDashAutocompleteMod.Suggestion] = js.native
   def getInputProps[InputProps /* <: js.Object */](): Anon_Ariaactivedescendant with InputProps = js.native
   def getInputProps[InputProps /* <: js.Object */](options: InputProps): Anon_Ariaactivedescendant with InputProps = js.native
-  def getSuggestionItemProps[SuggestionProps /* <: js.Object */](suggestion: reactDashPlacesDashAutocompleteLib.reactDashPlacesDashAutocompleteMod.Suggestion): Anon_Event with SuggestionProps = js.native
+  def getSuggestionItemProps[SuggestionProps /* <: js.Object */](suggestion: reactDashPlacesDashAutocompleteLib.reactDashPlacesDashAutocompleteMod.Suggestion): Anon_Id with SuggestionProps = js.native
   def getSuggestionItemProps[SuggestionProps /* <: js.Object */](
     suggestion: reactDashPlacesDashAutocompleteLib.reactDashPlacesDashAutocompleteMod.Suggestion,
     options: SuggestionProps
-  ): Anon_Event with SuggestionProps = js.native
+  ): Anon_Id with SuggestionProps = js.native
 }
 

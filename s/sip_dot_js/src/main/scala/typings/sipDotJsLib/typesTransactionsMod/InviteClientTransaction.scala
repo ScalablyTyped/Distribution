@@ -7,18 +7,40 @@ import scala.scalajs.js.annotation._
 
 @JSImport("sip.js/types/transactions", "InviteClientTransaction")
 @js.native
-class InviteClientTransaction protected ()
-  extends nodeLib.eventsMod.EventEmitter {
-  def this(requestSender: sipDotJsLib.typesRequestDashSenderMod.RequestSender, request: sipDotJsLib.typesSipDashMessageMod.OutgoingRequest, transport: sipDotJsLib.typesTransportMod.Transport) = this()
-  var id: java.lang.String = js.native
-  var kind: java.lang.String = js.native
-  var state: js.UndefOr[sipDotJsLib.typesEnumsMod.TransactionStatus] = js.native
-  var transport: sipDotJsLib.typesTransportMod.Transport = js.native
-  var `type`: sipDotJsLib.typesEnumsMod.TypeStrings = js.native
-  def receiveResponse(response: sipDotJsLib.typesSipDashMessageMod.IncomingResponse): scala.Unit = js.native
-  def send(): scala.Unit = js.native
-  def sendACK(): js.UndefOr[sipDotJsLib.typesSipDashMessageMod.OutgoingRequest] = js.native
-  def sendACK(options: js.Any): js.UndefOr[sipDotJsLib.typesSipDashMessageMod.OutgoingRequest] = js.native
-  def stateChanged(state: sipDotJsLib.typesEnumsMod.TransactionStatus): scala.Unit = js.native
+class InviteClientTransaction protected () extends ClientTransaction {
+  /**
+    * Constructor.
+    * Upon construction, the outgoing request's Via header is updated by calling `setViaHeader`.
+    * Then `toString` is called on the outgoing request and the message is sent via the transport.
+    * After construction the transaction will be in the "calling" state and the transaction id
+    * will equal the branch parameter set in the Via header of the outgoing request.
+    * https://tools.ietf.org/html/rfc3261#section-17.1.1
+    * @param request The outgoing INVITE request.
+    * @param transport The transport.
+    * @param user The transaction user.
+    */
+  def this(request: sipDotJsLib.typesSipDashMessageMod.OutgoingRequest, transport: sipDotJsLib.typesTransportMod.Transport, user: ClientTransactionUser) = this()
+  /**
+    * ACK a 2xx final response.
+    *
+    * The transaction includes the ACK only if the final response was not a 2xx response (the
+    * transaction will generate and send the ACK to the transport automagically). If the
+    * final response was a 2xx, the ACK is not considered part of the transaction (the
+    * transaction user needs to generate and send the ACK).
+    *
+    * This library is not strictly RFC compliant with regard to ACK handling for 2xx final
+    * responses. Specifically, retransmissions of ACKs to a 2xx final responses is handled
+    * by the transaction layer (instead of the UAC core). The "standard" approach is for
+    * the UAC core to receive all 2xx responses and manage sending ACK retransmissions to
+    * the transport directly. Herein the transaction layer manages sending ACKs to 2xx responses
+    * and any retransmissions of those ACKs as needed.
+    *
+    * @param response The incoming 2xx final response.
+    * @param ack The outgoing ACK request.
+    */
+  def ackResponse(
+    response: sipDotJsLib.typesSipDashMessageMod.IncomingResponse,
+    ack: sipDotJsLib.typesSipDashMessageMod.OutgoingRequest
+  ): scala.Unit = js.native
 }
 

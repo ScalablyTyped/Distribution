@@ -14,6 +14,19 @@ trait VRFieldOfView extends js.Object {
 
 @JSGlobal("VRFieldOfView")
 @js.native
+class VRFieldOfViewCls () extends VRFieldOfView {
+  /* CompleteClass */
+  override val downDegrees: scala.Double = js.native
+  /* CompleteClass */
+  override val leftDegrees: scala.Double = js.native
+  /* CompleteClass */
+  override val rightDegrees: scala.Double = js.native
+  /* CompleteClass */
+  override val upDegrees: scala.Double = js.native
+}
+
+@JSGlobal("VRFieldOfView")
+@js.native
 object VRFieldOfView
   extends org.scalablytyped.runtime.Instantiable0[VRFieldOfView]
 

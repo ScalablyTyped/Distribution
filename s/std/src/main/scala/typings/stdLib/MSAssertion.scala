@@ -12,6 +12,15 @@ trait MSAssertion extends js.Object {
 
 @JSGlobal("MSAssertion")
 @js.native
+class MSAssertionCls () extends MSAssertion {
+  /* CompleteClass */
+  override val id: java.lang.String = js.native
+  /* CompleteClass */
+  override val `type`: MSCredentialType = js.native
+}
+
+@JSGlobal("MSAssertion")
+@js.native
 object MSAssertion
   extends org.scalablytyped.runtime.Instantiable0[MSAssertion]
 

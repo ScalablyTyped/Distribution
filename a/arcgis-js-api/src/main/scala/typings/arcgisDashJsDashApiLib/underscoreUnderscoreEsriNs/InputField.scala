@@ -121,3 +121,9 @@ trait InputField extends Accessor {
   val visible: scala.Boolean = js.native
 }
 
+@JSGlobal("__esri.InputField")
+@js.native
+class InputFieldCls () extends InputField {
+  def this(properties: InputFieldProperties) = this()
+}
+

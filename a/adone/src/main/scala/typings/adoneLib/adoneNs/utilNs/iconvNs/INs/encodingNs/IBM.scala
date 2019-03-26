@@ -5,5 +5,85 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - adoneLib.adoneLibStrings.`437`
+  - adoneLib.adoneLibStrings.`737`
+  - adoneLib.adoneLibStrings.`775`
+  - adoneLib.adoneLibStrings.`808`
+  - adoneLib.adoneLibStrings.`850`
+  - adoneLib.adoneLibStrings.`852`
+  - adoneLib.adoneLibStrings.`855`
+  - adoneLib.adoneLibStrings.`856`
+  - adoneLib.adoneLibStrings.`857`
+  - adoneLib.adoneLibStrings.`858`
+  - adoneLib.adoneLibStrings.`860`
+  - adoneLib.adoneLibStrings.`861`
+  - adoneLib.adoneLibStrings.`862`
+  - adoneLib.adoneLibStrings.`863`
+  - adoneLib.adoneLibStrings.`864`
+  - adoneLib.adoneLibStrings.`865`
+  - adoneLib.adoneLibStrings.`866`
+  - adoneLib.adoneLibStrings.`869`
+  - adoneLib.adoneLibStrings.`922`
+  - adoneLib.adoneLibStrings.`1046`
+  - adoneLib.adoneLibStrings.`1124`
+  - adoneLib.adoneLibStrings.`1125`
+  - adoneLib.adoneLibStrings.`1129`
+  - adoneLib.adoneLibStrings.`1133`
+  - adoneLib.adoneLibStrings.`1161`
+  - adoneLib.adoneLibStrings.`1163`
+  - adoneLib.adoneLibStrings.CP437
+  - adoneLib.adoneLibStrings.CP737
+  - adoneLib.adoneLibStrings.CP775
+  - adoneLib.adoneLibStrings.CP808
+  - adoneLib.adoneLibStrings.CP850
+  - adoneLib.adoneLibStrings.CP852
+  - adoneLib.adoneLibStrings.CP855
+  - adoneLib.adoneLibStrings.CP856
+  - adoneLib.adoneLibStrings.CP857
+  - adoneLib.adoneLibStrings.CP858
+  - adoneLib.adoneLibStrings.CP860
+  - adoneLib.adoneLibStrings.CP861
+  - adoneLib.adoneLibStrings.CP862
+  - adoneLib.adoneLibStrings.CP863
+  - adoneLib.adoneLibStrings.CP864
+  - adoneLib.adoneLibStrings.CP865
+  - adoneLib.adoneLibStrings.CP866
+  - adoneLib.adoneLibStrings.CP869
+  - adoneLib.adoneLibStrings.CP922
+  - adoneLib.adoneLibStrings.CP1046
+  - adoneLib.adoneLibStrings.CP1124
+  - adoneLib.adoneLibStrings.CP1125
+  - adoneLib.adoneLibStrings.CP1129
+  - adoneLib.adoneLibStrings.CP1133
+  - adoneLib.adoneLibStrings.CP1161
+  - adoneLib.adoneLibStrings.CP1163
+  - adoneLib.adoneLibStrings.IBM437
+  - adoneLib.adoneLibStrings.IBM737
+  - adoneLib.adoneLibStrings.IBM775
+  - adoneLib.adoneLibStrings.IBM808
+  - adoneLib.adoneLibStrings.IBM850
+  - adoneLib.adoneLibStrings.IBM852
+  - adoneLib.adoneLibStrings.IBM855
+  - adoneLib.adoneLibStrings.IBM856
+  - adoneLib.adoneLibStrings.IBM857
+  - adoneLib.adoneLibStrings.IBM858
+  - adoneLib.adoneLibStrings.IBM860
+  - adoneLib.adoneLibStrings.IBM861
+  - adoneLib.adoneLibStrings.IBM862
+  - adoneLib.adoneLibStrings.IBM863
+  - adoneLib.adoneLibStrings.IBM864
+  - adoneLib.adoneLibStrings.IBM865
+  - adoneLib.adoneLibStrings.IBM866
+  - adoneLib.adoneLibStrings.IBM869
+  - adoneLib.adoneLibStrings.IBM922
+  - adoneLib.adoneLibStrings.IBM1046
+  - adoneLib.adoneLibStrings.IBM1124
+  - adoneLib.adoneLibStrings.IBM1125
+  - adoneLib.adoneLibStrings.IBM1129
+  - adoneLib.adoneLibStrings.IBM1133
+  - adoneLib.adoneLibStrings.IBM1161
+  - adoneLib.adoneLibStrings.IBM1163
+*/
 trait IBM extends Singlebyte
 

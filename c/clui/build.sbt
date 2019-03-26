@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "clui"
-version := "0.3-dt-20190319Z-b146a7"
+version := "0.3-dt-20190319Z-c68340"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "cli-color" % "0.3.2-dt-20190322Z-00debf",
-  "org.scalablytyped" %%% "std" % "3.3-ec2942")
+  "org.scalablytyped" %%% "cli-color" % "0.3.2-dt-20190322Z-2ae6b6",
+  "org.scalablytyped" %%% "std" % "3.3-14e863")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("assert", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  /* Extracted nested Instantiables into classes in strictNs */
   val strict: (js.Function2[
     /* value */ js.Any, 
     /* message */ js.UndefOr[java.lang.String | nodeLib.Error], 

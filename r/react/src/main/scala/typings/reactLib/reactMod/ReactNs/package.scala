@@ -58,7 +58,7 @@ package object ReactNs {
   //
   // React Elements
   // ----------------------------------------------------------------------
-  type ElementType[P] = js.Any | ComponentType[P]
+  type ElementType[P] = scala.Nothing | ComponentType[P]
   //
   // Event Handler Types
   // ----------------------------------------------------------------------

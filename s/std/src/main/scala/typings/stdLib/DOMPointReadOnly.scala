@@ -18,6 +18,15 @@ trait DOMPointReadOnly extends js.Object {
 
 @JSGlobal("DOMPointReadOnly")
 @js.native
+class DOMPointReadOnlyCls () extends DOMPointReadOnly {
+  def this(x: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double, z: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double, z: scala.Double, w: scala.Double) = this()
+}
+
+@JSGlobal("DOMPointReadOnly")
+@js.native
 object DOMPointReadOnly
   extends org.scalablytyped.runtime.Instantiable0[DOMPointReadOnly]
      with org.scalablytyped.runtime.Instantiable1[/* x */ scala.Double, DOMPointReadOnly]

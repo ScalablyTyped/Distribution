@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/FormControl.FormControlProps, 'classes' | 'onChange' | 'defaultValue'> ]: @material-ui/core.@material-ui/core/FormControl.FormControlProps[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/FormControl.FormControlProps, @material-ui/core.@material-ui/core/TextField/TextField.TextFieldClassKey, 'onChange' | 'defaultValue'>) */ trait BaseTextFieldProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TextFieldClassKey] {
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/FormControl/FormControl.FormControlProps, 'classes' | 'onChange' | 'defaultValue'> ]: @material-ui/core.@material-ui/core/FormControl/FormControl.FormControlProps[P]} */ trait BaseTextFieldProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TextFieldClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var FormHelperTextProps: js.UndefOr[
     stdLib.Partial[atMaterialDashUiCoreLib.formHelperTextFormHelperTextMod.FormHelperTextProps]
   ] = js.undefined
@@ -17,7 +17,6 @@ import scala.scalajs.js.annotation._
   var autoComplete: js.UndefOr[java.lang.String] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultValue: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
@@ -37,7 +36,6 @@ import scala.scalajs.js.annotation._
   var rows: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var rowsMax: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var select: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[
     (js.Array[java.lang.String | scala.Double | scala.Boolean]) | java.lang.String | scala.Double | scala.Boolean

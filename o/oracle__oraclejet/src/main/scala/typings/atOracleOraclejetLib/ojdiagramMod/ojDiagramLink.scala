@@ -32,7 +32,10 @@ trait ojDiagramLink
     ], 
     _
   ]) | scala.Null = js.native
-  var onEndNodeChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onEndNodeChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onLabelChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[java.lang.String]], 
     _
@@ -61,7 +64,10 @@ trait ojDiagramLink
     ], 
     _
   ]) | scala.Null = js.native
-  var onStartNodeChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onStartNodeChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onSvgClassNameChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.UndefOr[java.lang.String]], 
     _
@@ -511,7 +517,7 @@ trait ojDiagramLink
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.endNodeChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -520,7 +526,7 @@ trait ojDiagramLink
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.endNodeChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -1093,7 +1099,7 @@ trait ojDiagramLink
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.startNodeChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -1102,7 +1108,7 @@ trait ojDiagramLink
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.startNodeChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -1339,7 +1345,7 @@ trait ojDiagramLink
     atOracleOraclejetLib.atOracleOraclejetLibStrings.arrow | atOracleOraclejetLib.atOracleOraclejetLibStrings.arrowConcave | atOracleOraclejetLib.atOracleOraclejetLibStrings.arrowOpen | atOracleOraclejetLib.atOracleOraclejetLibStrings.circle | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.rectangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.rectangleRounded
   ] = js.native
   @JSName("getProperty")
-  def getProperty_endNode(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.endNode): js.Any = js.native
+  def getProperty_endNode(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.endNode): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_label(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.label): js.UndefOr[java.lang.String] = js.native
   @JSName("getProperty")
@@ -1355,7 +1361,7 @@ trait ojDiagramLink
     atOracleOraclejetLib.atOracleOraclejetLibStrings.arrow | atOracleOraclejetLib.atOracleOraclejetLibStrings.arrowConcave | atOracleOraclejetLib.atOracleOraclejetLibStrings.arrowOpen | atOracleOraclejetLib.atOracleOraclejetLibStrings.circle | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.rectangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.rectangleRounded
   ] = js.native
   @JSName("getProperty")
-  def getProperty_startNode(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.startNode): js.Any = js.native
+  def getProperty_startNode(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.startNode): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_svgClassName(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgClassName): js.UndefOr[java.lang.String] = js.native
   @JSName("getProperty")

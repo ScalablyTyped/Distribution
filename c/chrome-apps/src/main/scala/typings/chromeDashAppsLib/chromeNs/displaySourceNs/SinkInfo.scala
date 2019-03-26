@@ -19,7 +19,7 @@ trait SinkInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONNECTED[keyof chrome-apps.Anon_CONNECTED] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.Connected | chromeDashAppsLib.chromeDashAppsLibStrings.Connecting | chromeDashAppsLib.chromeDashAppsLibStrings.Disconnected
     ]
   ]
 }
@@ -34,7 +34,7 @@ object SinkInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONNECTED[keyof chrome-apps.Anon_CONNECTED] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.Connected | chromeDashAppsLib.chromeDashAppsLibStrings.Connecting | chromeDashAppsLib.chromeDashAppsLibStrings.Disconnected
       ]
     ]
   ): SinkInfo = {

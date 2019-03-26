@@ -9,12 +9,12 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def Accordion: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionMod.AccordionProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionMod.AccordionProps]]
   @scala.inline
   def AccordionAccordion: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionAccordionMod.AccordionAccordionProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionAccordionMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionAccordionMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionAccordionMod.AccordionAccordionProps]]
   @scala.inline
   def AccordionContent: reactLib.reactMod.ReactNs.ComponentType[
@@ -29,7 +29,7 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def AccordionTitle: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionTitleMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionTitleMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionTitleMod.AccordionTitleProps]]
   @scala.inline
   def Advertisement: reactLib.reactMod.ReactNs.ComponentType[
@@ -39,7 +39,7 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def Breadcrumb: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbProps
-  ] = semanticDashUiDashReactLib.distCommonjsCollectionsBreadcrumbMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsCollectionsBreadcrumbMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsCollectionsBreadcrumbBreadcrumbMod.BreadcrumbProps]]
   @scala.inline
   def BreadcrumbDivider: reactLib.reactMod.ReactNs.ComponentType[
@@ -49,7 +49,7 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def BreadcrumbSection: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsCollectionsBreadcrumbBreadcrumbSectionMod.BreadcrumbSectionProps
-  ] = semanticDashUiDashReactLib.distCommonjsCollectionsBreadcrumbBreadcrumbSectionMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsCollectionsBreadcrumbBreadcrumbSectionMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsCollectionsBreadcrumbBreadcrumbSectionMod.BreadcrumbSectionProps]]
   @scala.inline
   def Button: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonMod.ButtonProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsElementsButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonMod.ButtonProps]]
@@ -66,7 +66,7 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def ButtonOr: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps] = semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps]]
   @scala.inline
-  def Card: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsCardCardMod.CardProps] = semanticDashUiDashReactLib.distCommonjsViewsCardMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsCardCardMod.CardProps]]
+  def Card: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsCardCardMod.CardProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsViewsCardMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsCardCardMod.CardProps]]
   @scala.inline
   def CardContent: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsCardCardContentMod.CardContentProps] = semanticDashUiDashReactLib.distCommonjsViewsCardCardContentMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsCardCardContentMod.CardContentProps]]
   @scala.inline
@@ -81,13 +81,13 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def CardMeta: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsCardCardMetaMod.CardMetaProps] = semanticDashUiDashReactLib.distCommonjsViewsCardCardMetaMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsCardCardMetaMod.CardMetaProps]]
   @scala.inline
-  def Checkbox: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps] = semanticDashUiDashReactLib.distCommonjsModulesCheckboxMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps]]
+  def Checkbox: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesCheckboxMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesCheckboxCheckboxMod.CheckboxProps]]
   @scala.inline
   def Comment: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsCommentCommentMod.CommentProps] = semanticDashUiDashReactLib.distCommonjsViewsCommentMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsCommentCommentMod.CommentProps]]
   @scala.inline
   def CommentAction: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionMod.CommentActionProps
-  ] = semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionMod.CommentActionProps]]
   @scala.inline
   def CommentActions: reactLib.reactMod.ReactNs.ComponentType[
@@ -125,7 +125,7 @@ object semanticDashUiDashReactLibComponents {
   ] = semanticDashUiDashReactLib.distCommonjsViewsCommentCommentTextMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsViewsCommentCommentTextMod.CommentTextProps]]
   @scala.inline
-  def Confirm: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsAddonsConfirmConfirmMod.ConfirmProps] = semanticDashUiDashReactLib.distCommonjsAddonsConfirmMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsAddonsConfirmConfirmMod.ConfirmProps]]
+  def Confirm: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsAddonsConfirmConfirmMod.ConfirmProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsAddonsConfirmMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsAddonsConfirmConfirmMod.ConfirmProps]]
   @scala.inline
   def Container: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsElementsContainerContainerMod.ContainerProps
@@ -134,14 +134,14 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def Content: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsElementsButtonButtonContentMod.ButtonContentProps
-  ] = semanticDashUiDashReactLib.semanticDashUiDashReactMod.Button.Content.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = semanticDashUiDashReactLib.distCommonjsElementsButtonButtonMod.default.Content.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsElementsButtonButtonContentMod.ButtonContentProps]]
   @scala.inline
-  def Dimmer: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerMod.DimmerProps] = semanticDashUiDashReactLib.distCommonjsModulesDimmerMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerMod.DimmerProps]]
+  def Dimmer: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerMod.DimmerProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesDimmerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerMod.DimmerProps]]
   @scala.inline
   def DimmerDimmable: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerDimmableMod.DimmerDimmableProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerDimmableMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerDimmableMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerDimmableMod.DimmerDimmableProps]]
   @scala.inline
   def DimmerInner: reactLib.reactMod.ReactNs.ComponentType[
@@ -151,21 +151,21 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def Divider: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsDividerDividerMod.DividerProps] = semanticDashUiDashReactLib.distCommonjsElementsDividerMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsDividerDividerMod.DividerProps]]
   @scala.inline
-  def Dropdown: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps] = semanticDashUiDashReactLib.distCommonjsModulesDropdownMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps]]
+  def Dropdown: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesDropdownMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMod.DropdownProps]]
   @scala.inline
   def DropdownDivider: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownDividerMod.DropdownDividerProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownDividerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownDividerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownDividerMod.DropdownDividerProps]]
   @scala.inline
   def DropdownHeader: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownHeaderMod.DropdownHeaderProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownHeaderMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownHeaderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownHeaderMod.DropdownHeaderProps]]
   @scala.inline
   def DropdownItem: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownItemMod.DropdownItemProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownItemMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownItemMod.DropdownItemProps]]
   @scala.inline
   def DropdownMenu: reactLib.reactMod.ReactNs.ComponentType[
@@ -175,10 +175,10 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def DropdownSearchInput: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownSearchInputMod.DropdownSearchInputProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownSearchInputMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownSearchInputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownSearchInputMod.DropdownSearchInputProps]]
   @scala.inline
-  def Embed: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesEmbedEmbedMod.EmbedProps] = semanticDashUiDashReactLib.distCommonjsModulesEmbedMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesEmbedEmbedMod.EmbedProps]]
+  def Embed: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesEmbedEmbedMod.EmbedProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesEmbedMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesEmbedEmbedMod.EmbedProps]]
   @scala.inline
   def Feed: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedMod.FeedProps] = semanticDashUiDashReactLib.distCommonjsViewsFeedMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedMod.FeedProps]]
   @scala.inline
@@ -258,7 +258,7 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def GridRow: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsGridGridRowMod.GridRowProps] = semanticDashUiDashReactLib.distCommonjsCollectionsGridGridRowMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsGridGridRowMod.GridRowProps]]
   @scala.inline
-  def Group: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsIconIconGroupMod.IconGroupProps] = semanticDashUiDashReactLib.semanticDashUiDashReactMod.Icon.Group.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsIconIconGroupMod.IconGroupProps]]
+  def Group: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsIconIconGroupMod.IconGroupProps] = semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.default.Group.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsIconIconGroupMod.IconGroupProps]]
   @scala.inline
   def Header: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsHeaderHeaderMod.HeaderProps] = semanticDashUiDashReactLib.distCommonjsElementsHeaderMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsHeaderHeaderMod.HeaderProps]]
   @scala.inline
@@ -283,11 +283,16 @@ object semanticDashUiDashReactLibComponents {
   ] = semanticDashUiDashReactLib.distCommonjsElementsImageImageGroupMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsElementsImageImageGroupMod.ImageGroupProps]]
   @scala.inline
+  def Inner: reactLib.reactMod.ReactNs.ComponentType[
+    semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerInnerMod.DimmerInnerProps
+  ] = js.constructorOf[semanticDashUiDashReactLib.semanticDashUiDashReactMod.DimmerNs.Inner].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerInnerMod.DimmerInnerProps]]
+  @scala.inline
   def Input: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsInputInputMod.InputProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsElementsInputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsInputInputMod.InputProps]]
   @scala.inline
   def Item: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsItemItemMod.ItemProps] = semanticDashUiDashReactLib.distCommonjsViewsItemMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsItemItemMod.ItemProps]]
   @scala.inline
-  def ItemContent: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsItemItemContentMod.ItemContentProps] = semanticDashUiDashReactLib.distCommonjsViewsItemItemContentMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsItemItemContentMod.ItemContentProps]]
+  def ItemContent: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsItemItemContentMod.ItemContentProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsViewsItemItemContentMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsItemItemContentMod.ItemContentProps]]
   @scala.inline
   def ItemDescription: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsViewsItemItemDescriptionMod.ItemDescriptionProps
@@ -304,7 +309,7 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def ItemMeta: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsItemItemMetaMod.ItemMetaProps] = semanticDashUiDashReactLib.distCommonjsViewsItemItemMetaMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsViewsItemItemMetaMod.ItemMetaProps]]
   @scala.inline
-  def Label: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps] = semanticDashUiDashReactLib.distCommonjsElementsLabelMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps]]
+  def Label: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsElementsLabelMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsLabelLabelMod.LabelProps]]
   @scala.inline
   def LabelDetail: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsElementsLabelLabelDetailMod.LabelDetailProps
@@ -338,18 +343,18 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def Loader: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsLoaderLoaderMod.LoaderProps] = semanticDashUiDashReactLib.distCommonjsElementsLoaderMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsLoaderLoaderMod.LoaderProps]]
   @scala.inline
-  def Menu: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMod.MenuProps] = semanticDashUiDashReactLib.distCommonjsCollectionsMenuMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMod.MenuProps]]
+  def Menu: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMod.MenuProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMod.MenuProps]]
   @scala.inline
   def MenuHeader: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuHeaderMod.MenuHeaderProps
-  ] = semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuHeaderMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuHeaderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuHeaderMod.MenuHeaderProps]]
   @scala.inline
-  def MenuItem: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps] = semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps]]
+  def MenuItem: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps]]
   @scala.inline
   def MenuMenu: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps] = semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps]]
   @scala.inline
-  def Message: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageMod.MessageProps] = semanticDashUiDashReactLib.distCommonjsCollectionsMessageMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageMod.MessageProps]]
+  def Message: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageMod.MessageProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsCollectionsMessageMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageMod.MessageProps]]
   @scala.inline
   def MessageContent: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageContentMod.MessageContentProps
@@ -371,11 +376,11 @@ object semanticDashUiDashReactLibComponents {
   ] = semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageListMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageListMod.MessageListProps]]
   @scala.inline
-  def Modal: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps] = semanticDashUiDashReactLib.distCommonjsModulesModalMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps]]
+  def Modal: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesModalMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesModalModalMod.ModalProps]]
   @scala.inline
   def ModalActions: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesModalModalActionsMod.ModalActionsProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesModalModalActionsMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesModalModalActionsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesModalModalActionsMod.ModalActionsProps]]
   @scala.inline
   def ModalContent: reactLib.reactMod.ReactNs.ComponentType[
@@ -398,7 +403,7 @@ object semanticDashUiDashReactLibComponents {
   ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsAddonsMountNodeMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsAddonsMountNodeMountNodeMod.MountNodeProps]]
   @scala.inline
-  def Or: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps] = semanticDashUiDashReactLib.semanticDashUiDashReactMod.Button.Or.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps]]
+  def Or: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps] = semanticDashUiDashReactLib.distCommonjsElementsButtonButtonMod.default.Or.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps]]
   @scala.inline
   def Pagination: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsAddonsPaginationPaginationMod.PaginationProps
@@ -435,7 +440,7 @@ object semanticDashUiDashReactLibComponents {
   ] = semanticDashUiDashReactLib.distCommonjsElementsPlaceholderPlaceholderParagraphMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsElementsPlaceholderPlaceholderParagraphMod.PlaceholderParagraphProps]]
   @scala.inline
-  def Popup: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesPopupPopupMod.PopupProps] = semanticDashUiDashReactLib.distCommonjsModulesPopupMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesPopupPopupMod.PopupProps]]
+  def Popup: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesPopupPopupMod.PopupProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesPopupMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesPopupPopupMod.PopupProps]]
   @scala.inline
   def PopupContent: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesPopupPopupContentMod.PopupContentProps
@@ -454,17 +459,17 @@ object semanticDashUiDashReactLibComponents {
   ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalInnerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalInnerMod.PortalInnerProps]]
   @scala.inline
-  def Progress: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesProgressProgressMod.ProgressProps] = semanticDashUiDashReactLib.distCommonjsModulesProgressMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesProgressProgressMod.ProgressProps]]
+  def Progress: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesProgressProgressMod.ProgressProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesProgressMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesProgressProgressMod.ProgressProps]]
   @scala.inline
   def Radio: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsAddonsRadioRadioMod.RadioProps] = semanticDashUiDashReactLib.distCommonjsAddonsRadioMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsAddonsRadioRadioMod.RadioProps]]
   @scala.inline
   def Rail: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsRailRailMod.RailProps] = semanticDashUiDashReactLib.distCommonjsElementsRailMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsRailRailMod.RailProps]]
   @scala.inline
-  def Rating: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesRatingRatingMod.RatingProps] = semanticDashUiDashReactLib.distCommonjsModulesRatingMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesRatingRatingMod.RatingProps]]
+  def Rating: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesRatingRatingMod.RatingProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesRatingMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesRatingRatingMod.RatingProps]]
   @scala.inline
   def RatingIcon: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesRatingRatingIconMod.RatingIconProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesRatingRatingIconMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesRatingRatingIconMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesRatingRatingIconMod.RatingIconProps]]
   @scala.inline
   def Ref: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsAddonsRefRefMod.RefProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsAddonsRefMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsAddonsRefRefMod.RefProps]]
@@ -485,7 +490,7 @@ object semanticDashUiDashReactLibComponents {
   ] = semanticDashUiDashReactLib.distCommonjsElementsRevealRevealContentMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsElementsRevealRevealContentMod.RevealContentProps]]
   @scala.inline
-  def Search: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesSearchSearchMod.SearchProps] = semanticDashUiDashReactLib.distCommonjsModulesSearchMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesSearchSearchMod.SearchProps]]
+  def Search: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesSearchSearchMod.SearchProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesSearchMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesSearchSearchMod.SearchProps]]
   @scala.inline
   def SearchCategory: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps
@@ -494,7 +499,7 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def SearchResult: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps]]
   @scala.inline
   def SearchResults: reactLib.reactMod.ReactNs.ComponentType[
@@ -516,7 +521,7 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def Select: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsAddonsSelectSelectMod.SelectProps] = semanticDashUiDashReactLib.distCommonjsAddonsSelectMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsAddonsSelectSelectMod.SelectProps]]
   @scala.inline
-  def Sidebar: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarMod.SidebarProps] = semanticDashUiDashReactLib.distCommonjsModulesSidebarMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarMod.SidebarProps]]
+  def Sidebar: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarMod.SidebarProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesSidebarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarMod.SidebarProps]]
   @scala.inline
   def SidebarPushable: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarPushableMod.SidebarPushableProps
@@ -545,7 +550,7 @@ object semanticDashUiDashReactLibComponents {
   ] = semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticValueMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticValueMod.StatisticValueProps]]
   @scala.inline
-  def Step: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsStepStepMod.StepProps] = semanticDashUiDashReactLib.distCommonjsElementsStepMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsStepStepMod.StepProps]]
+  def Step: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsStepStepMod.StepProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsElementsStepMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsStepStepMod.StepProps]]
   @scala.inline
   def StepContent: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsElementsStepStepContentMod.StepContentProps
@@ -561,9 +566,9 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def StepTitle: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsStepStepTitleMod.StepTitleProps] = semanticDashUiDashReactLib.distCommonjsElementsStepStepTitleMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsStepStepTitleMod.StepTitleProps]]
   @scala.inline
-  def Sticky: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesStickyStickyMod.StickyProps] = semanticDashUiDashReactLib.distCommonjsModulesStickyMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesStickyStickyMod.StickyProps]]
+  def Sticky: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesStickyStickyMod.StickyProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesStickyMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesStickyStickyMod.StickyProps]]
   @scala.inline
-  def Tab: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesTabTabMod.TabProps] = semanticDashUiDashReactLib.distCommonjsModulesTabMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesTabTabMod.TabProps]]
+  def Tab: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesTabTabMod.TabProps] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesTabMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesTabTabMod.TabProps]]
   @scala.inline
   def TabPane: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesTabTabPaneMod.TabPaneProps] = semanticDashUiDashReactLib.distCommonjsModulesTabTabPaneMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsModulesTabTabPaneMod.TabPaneProps]]
   @scala.inline
@@ -600,23 +605,25 @@ object semanticDashUiDashReactLibComponents {
   @scala.inline
   def Transition: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionMod.TransitionProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesTransitionMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesTransitionMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionMod.TransitionProps]]
   @scala.inline
   def TransitionGroup: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionGroupMod.TransitionGroupProps
-  ] = semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionGroupMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionGroupMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionGroupMod.TransitionGroupProps]]
   @scala.inline
   def TransitionablePortal: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalProps
-  ] = semanticDashUiDashReactLib.distCommonjsAddonsTransitionablePortalMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsAddonsTransitionablePortalMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsAddonsTransitionablePortalTransitionablePortalMod.TransitionablePortalProps]]
   @scala.inline
   def Visibility: reactLib.reactMod.ReactNs.ComponentType[
     semanticDashUiDashReactLib.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps
-  ] = semanticDashUiDashReactLib.distCommonjsBehaviorsVisibilityMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[semanticDashUiDashReactLib.distCommonjsBehaviorsVisibilityMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   semanticDashUiDashReactLib.distCommonjsBehaviorsVisibilityVisibilityMod.VisibilityProps]]
+  @scala.inline
+  def default: reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps] = semanticDashUiDashReactLib.distCommonjsElementsButtonMod.default.Or.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps]]
   @scala.inline
   def AccordionAccordionProps: semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionAccordionMod.AccordionAccordionProps.type = semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionAccordionMod.AccordionAccordionProps
   type AccordionAccordionProps = semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionAccordionMod.AccordionAccordionProps

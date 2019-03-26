@@ -2265,7 +2265,22 @@ object InspectorNs extends js.Object {
   
   val TypesNs: this.type = js.native
   type AddRemoveAttributesFindingArnList = js.Array[Arn]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.HEALTHY
+    - awsDashSdkLib.awsDashSdkLibStrings.UNHEALTHY
+    - awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN
+    - java.lang.String
+  */
   type AgentHealth = _AgentHealth | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.IDLE
+    - awsDashSdkLib.awsDashSdkLibStrings.RUNNING
+    - awsDashSdkLib.awsDashSdkLibStrings.SHUTDOWN
+    - awsDashSdkLib.awsDashSdkLibStrings.UNHEALTHY
+    - awsDashSdkLib.awsDashSdkLibStrings.THROTTLED
+    - awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN
+    - java.lang.String
+  */
   type AgentHealthCode = _AgentHealthCode | java.lang.String
   type AgentHealthCodeList = js.Array[AgentHealthCode]
   type AgentHealthList = js.Array[AgentHealth]
@@ -2282,7 +2297,30 @@ object InspectorNs extends js.Object {
   type AssessmentRunList = js.Array[AssessmentRun]
   type AssessmentRunName = java.lang.String
   type AssessmentRunNotificationList = js.Array[AssessmentRunNotification]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCESS
+    - awsDashSdkLib.awsDashSdkLibStrings.TOPIC_DOES_NOT_EXIST
+    - awsDashSdkLib.awsDashSdkLibStrings.ACCESS_DENIED
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERNAL_ERROR
+    - java.lang.String
+  */
   type AssessmentRunNotificationSnsStatusCode = _AssessmentRunNotificationSnsStatusCode | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATED
+    - awsDashSdkLib.awsDashSdkLibStrings.START_DATA_COLLECTION_PENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.START_DATA_COLLECTION_IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.COLLECTING_DATA
+    - awsDashSdkLib.awsDashSdkLibStrings.STOP_DATA_COLLECTION_PENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.DATA_COLLECTED
+    - awsDashSdkLib.awsDashSdkLibStrings.START_EVALUATING_RULES_PENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.EVALUATING_RULES
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.ERROR
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETED
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETED_WITH_ERRORS
+    - awsDashSdkLib.awsDashSdkLibStrings.CANCELED
+    - java.lang.String
+  */
   type AssessmentRunState = _AssessmentRunState | java.lang.String
   type AssessmentRunStateChangeList = js.Array[AssessmentRunStateChange]
   type AssessmentRunStateList = js.Array[AssessmentRunState]
@@ -2303,12 +2341,29 @@ object InspectorNs extends js.Object {
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type EventSubscriptionList = js.Array[EventSubscription]
   type ExclusionPreviewList = js.Array[ExclusionPreview]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INVALID_ARN
+    - awsDashSdkLib.awsDashSdkLibStrings.DUPLICATE_ARN
+    - awsDashSdkLib.awsDashSdkLibStrings.ITEM_DOES_NOT_EXIST
+    - awsDashSdkLib.awsDashSdkLibStrings.ACCESS_DENIED
+    - awsDashSdkLib.awsDashSdkLibStrings.LIMIT_EXCEEDED
+    - awsDashSdkLib.awsDashSdkLibStrings.INTERNAL_ERROR
+    - java.lang.String
+  */
   type FailedItemErrorCode = _FailedItemErrorCode | java.lang.String
   type FilterRulesPackageArnList = js.Array[Arn]
   type FindingCount = scala.Double
   type FindingId = java.lang.String
   type FindingList = js.Array[Finding]
   type Hostname = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ASSESSMENT_RUN_STARTED
+    - awsDashSdkLib.awsDashSdkLibStrings.ASSESSMENT_RUN_COMPLETED
+    - awsDashSdkLib.awsDashSdkLibStrings.ASSESSMENT_RUN_STATE_CHANGED
+    - awsDashSdkLib.awsDashSdkLibStrings.FINDING_REPORTED
+    - awsDashSdkLib.awsDashSdkLibStrings.OTHER
+    - java.lang.String
+  */
   type InspectorEvent = _InspectorEvent | java.lang.String
   type IocConfidence = scala.Double
   type Ipv4Address = java.lang.String
@@ -2330,11 +2385,32 @@ object InspectorNs extends js.Object {
   type OperatingSystem = java.lang.String
   type PaginationToken = java.lang.String
   type PreviewAgentsMaxResults = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.WORK_IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETED
+    - java.lang.String
+  */
   type PreviewStatus = _PreviewStatus | java.lang.String
   type PrivateIpAddresses = js.Array[PrivateIp]
   type ProviderName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.HTML
+    - awsDashSdkLib.awsDashSdkLibStrings.PDF
+    - java.lang.String
+  */
   type ReportFileFormat = _ReportFileFormat | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.WORK_IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETED
+    - java.lang.String
+  */
   type ReportStatus = _ReportStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FINDING
+    - awsDashSdkLib.awsDashSdkLibStrings.FULL
+    - java.lang.String
+  */
   type ReportType = _ReportType | java.lang.String
   type ResourceGroupList = js.Array[ResourceGroup]
   type ResourceGroupTags = js.Array[ResourceGroupTag]
@@ -2343,12 +2419,30 @@ object InspectorNs extends js.Object {
   type RulesPackageList = js.Array[RulesPackage]
   type RulesPackageName = java.lang.String
   type ScopeList = js.Array[Scope]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INSTANCE_ID
+    - awsDashSdkLib.awsDashSdkLibStrings.RULES_PACKAGE_ARN
+    - java.lang.String
+  */
   type ScopeType = _ScopeType | java.lang.String
   type ScopeValue = java.lang.String
   type SecurityGroups = js.Array[SecurityGroup]
   type ServiceName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Low
+    - awsDashSdkLib.awsDashSdkLibStrings.Medium
+    - awsDashSdkLib.awsDashSdkLibStrings.High
+    - awsDashSdkLib.awsDashSdkLibStrings.Informational
+    - awsDashSdkLib.awsDashSdkLibStrings.Undefined
+    - java.lang.String
+  */
   type Severity = _Severity | java.lang.String
   type SeverityList = js.Array[Severity]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.START_EVALUATION
+    - awsDashSdkLib.awsDashSdkLibStrings.SKIP_EVALUATION
+    - java.lang.String
+  */
   type StopAction = _StopAction | java.lang.String
   type SubscriptionList = js.Array[Subscription]
   type TagKey = java.lang.String
@@ -2363,6 +2457,12 @@ object InspectorNs extends js.Object {
   type UserAttributeKeyList = js.Array[AttributeKey]
   type UserAttributeList = js.Array[Attribute]
   type Version = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2015-08-18`
+    - awsDashSdkLib.awsDashSdkLibStrings.`2016-02-16`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

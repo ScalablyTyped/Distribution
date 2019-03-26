@@ -17,7 +17,7 @@ trait ojButtonsetOneEventMap
   var focusManagementChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.oneTabstop | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
   ]
-  var valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
 }
 
 object ojButtonsetOneEventMap {
@@ -120,7 +120,7 @@ object ojButtonsetOneEventMap {
     transitionrun: stdLib.TransitionEvent,
     transitionstart: stdLib.TransitionEvent,
     translationsChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Object | scala.Null],
-    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    valueChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     volumechange: stdLib.Event,
     waiting: stdLib.Event,
     wheel: stdLib.WheelEvent

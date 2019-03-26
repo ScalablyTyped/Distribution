@@ -31,9 +31,9 @@ trait Anon_Barcode extends js.Object {
   val OverviewNs: js.Any = js.native
   var RangeNavigator: Anon_ElementFnLocaleOptionsAnyJQueryModelRangeNavigator = js.native
   val RangeNavigatorNs: js.Any = js.native
-  var Sparkline: Anon_ElementFnLocaleOptionsAnyJQueryModelSparkline_914963345 = js.native
+  var Sparkline: Anon_ElementFnLocaleOptionsAnyJQueryModelSparklineOptional = js.native
   val SparklineNs: js.Any = js.native
-  var SunburstChart: Anon_ElementFnLocaleOptionsAnyJQueryModelSunburstChart_1587876174 = js.native
+  var SunburstChart: Anon_ElementFnLocaleOptionsAnyJQueryModelSunburstChartOptional = js.native
   val SunburstChartNs: js.Any = js.native
   val SunburstNs: js.Any = js.native
   var SymbolPalette: Anon_ElementFnLocaleOptionsAnyJQueryModelSymbolPalette = js.native

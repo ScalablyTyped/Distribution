@@ -13,7 +13,10 @@ trait ojOption
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Boolean], 
     _
   ]) | scala.Null = js.native
-  var onValueChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onValueChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var value: js.Any = js.native
   @JSName("addEventListener")
   def addEventListener_abort(
@@ -985,7 +988,7 @@ trait ojOption
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -994,7 +997,7 @@ trait ojOption
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.valueChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -1036,7 +1039,7 @@ trait ojOption
   @JSName("getProperty")
   def getProperty_disabled(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled): scala.Boolean = js.native
   @JSName("getProperty")
-  def getProperty_value(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.value): js.Any = js.native
+  def getProperty_value(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.value): scala.Nothing = js.native
   def refresh(): scala.Unit = js.native
   def setProperties(properties: ojOptionSettablePropertiesLenient): scala.Unit = js.native
   def setProperty[T /* <: java.lang.String */](

@@ -49,6 +49,37 @@ trait SVGFEConvolveMatrixElement
 
 @JSGlobal("SVGFEConvolveMatrixElement")
 @js.native
+class SVGFEConvolveMatrixElementCls () extends SVGFEConvolveMatrixElement {
+  /* CompleteClass */
+  override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override val height: SVGAnimatedLength = js.native
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val nextElementSibling: Element | scala.Null = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val previousElementSibling: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val result: SVGAnimatedString = js.native
+  /* CompleteClass */
+  override val style: CSSStyleDeclaration = js.native
+  /* CompleteClass */
+  override val width: SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override val x: SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override val y: SVGAnimatedLength = js.native
+}
+
+@JSGlobal("SVGFEConvolveMatrixElement")
+@js.native
 object SVGFEConvolveMatrixElement
   extends org.scalablytyped.runtime.Instantiable0[SVGFEConvolveMatrixElement] {
   val SVG_EDGEMODE_DUPLICATE: scala.Double = js.native

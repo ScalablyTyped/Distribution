@@ -11,6 +11,17 @@ package object srcConfigMod {
     atAngularCoreLib.srcTypeMod.Type[js.Any] | atAngularCoreLib.atAngularCoreMod.NgModuleFactory[js.Any] | js.Promise[atAngularCoreLib.srcTypeMod.Type[js.Any]] | rxjsLib.rxjsMod.Observable[atAngularCoreLib.srcTypeMod.Type[js.Any]]
   ]
   type Routes = js.Array[Route]
+  /* Rewritten from type alias, can be one of: 
+    - atAngularRouterLib.atAngularRouterLibStrings.pathParamsChange
+    - atAngularRouterLib.atAngularRouterLibStrings.pathParamsOrQueryParamsChange
+    - atAngularRouterLib.atAngularRouterLibStrings.paramsChange
+    - atAngularRouterLib.atAngularRouterLibStrings.paramsOrQueryParamsChange
+    - atAngularRouterLib.atAngularRouterLibStrings.always
+    - js.Function2[
+  / * from * / atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot, 
+  / * to * / atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot, 
+  scala.Boolean]
+  */
   type RunGuardsAndResolvers = _RunGuardsAndResolvers | (js.Function2[
     /* from */ atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot, 
     /* to */ atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot, 

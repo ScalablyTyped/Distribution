@@ -38,7 +38,7 @@ object powerNs extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_DISPLAY[keyof chrome-apps.Anon_DISPLAY] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.system | chromeDashAppsLib.chromeDashAppsLibStrings.display
       ]
     ]
   ): scala.Unit = js.native

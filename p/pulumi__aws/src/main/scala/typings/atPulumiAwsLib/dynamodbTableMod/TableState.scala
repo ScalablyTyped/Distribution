@@ -57,7 +57,7 @@ trait TableState extends js.Object {
     * Point-in-time recovery options.
     */
   val pointInTimeRecovery: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_654448986]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_2072549229]
   ] = js.undefined
   /**
     * The name of the range key; must be defined
@@ -71,7 +71,7 @@ trait TableState extends js.Object {
     * Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
     */
   val serverSideEncryption: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_654448986]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_2072549229]
   ] = js.undefined
   /**
     * The ARN of the Table Stream. Only available when `stream_enabled = true`
@@ -124,10 +124,10 @@ object TableState {
       ]
     ] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    pointInTimeRecovery: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_654448986] = null,
+    pointInTimeRecovery: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_2072549229] = null,
     rangeKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     readCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
-    serverSideEncryption: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_654448986] = null,
+    serverSideEncryption: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_2072549229] = null,
     streamArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     streamEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     streamLabel: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,

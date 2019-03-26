@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "WebBrowser")
 @js.native
 object WebBrowserNs extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - RedirectResult
+    - BrowserResult
+  */
   trait AuthSessionResult extends js.Object
   
   trait BrowserResult extends AuthSessionResult {

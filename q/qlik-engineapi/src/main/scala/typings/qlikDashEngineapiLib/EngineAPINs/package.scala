@@ -40,5 +40,11 @@ package object EngineAPINs {
     * VariableListObject width extend GenericObject
     */
   type IVariableListObject = IGenericObjectPrototype[IGenericVariableListProperties, IGenericVariableListLayout]
+  /* Rewritten from type alias, can be one of: 
+    - qlikDashEngineapiLib.qlikDashEngineapiLibStrings.N
+    - qlikDashEngineapiLib.qlikDashEngineapiLibStrings.H
+    - qlikDashEngineapiLib.qlikDashEngineapiLibStrings.C
+    - java.lang.String
+  */
   type NxGrpType = _NxGrpType | java.lang.String
 }

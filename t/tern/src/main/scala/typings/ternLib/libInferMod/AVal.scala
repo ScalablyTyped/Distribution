@@ -57,3 +57,7 @@ trait AVal extends js.Object {
   def propagate(target: Constraint): scala.Unit = js.native
 }
 
+@JSImport("tern/lib/infer", "AVal")
+@js.native
+class AValCls () extends AVal
+

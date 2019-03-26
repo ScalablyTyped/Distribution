@@ -18,6 +18,27 @@ trait SVGPointList extends js.Object {
 
 @JSGlobal("SVGPointList")
 @js.native
+class SVGPointListCls () extends SVGPointList {
+  /* CompleteClass */
+  override val numberOfItems: scala.Double = js.native
+  /* CompleteClass */
+  override def appendItem(newItem: SVGPoint): SVGPoint = js.native
+  /* CompleteClass */
+  override def clear(): scala.Unit = js.native
+  /* CompleteClass */
+  override def getItem(index: scala.Double): SVGPoint = js.native
+  /* CompleteClass */
+  override def initialize(newItem: SVGPoint): SVGPoint = js.native
+  /* CompleteClass */
+  override def insertItemBefore(newItem: SVGPoint, index: scala.Double): SVGPoint = js.native
+  /* CompleteClass */
+  override def removeItem(index: scala.Double): SVGPoint = js.native
+  /* CompleteClass */
+  override def replaceItem(newItem: SVGPoint, index: scala.Double): SVGPoint = js.native
+}
+
+@JSGlobal("SVGPointList")
+@js.native
 object SVGPointList
   extends org.scalablytyped.runtime.Instantiable0[SVGPointList]
 

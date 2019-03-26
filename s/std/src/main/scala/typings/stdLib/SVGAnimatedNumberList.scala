@@ -12,6 +12,15 @@ trait SVGAnimatedNumberList extends js.Object {
 
 @JSGlobal("SVGAnimatedNumberList")
 @js.native
+class SVGAnimatedNumberListCls () extends SVGAnimatedNumberList {
+  /* CompleteClass */
+  override val animVal: SVGNumberList = js.native
+  /* CompleteClass */
+  override val baseVal: SVGNumberList = js.native
+}
+
+@JSGlobal("SVGAnimatedNumberList")
+@js.native
 object SVGAnimatedNumberList
   extends org.scalablytyped.runtime.Instantiable0[SVGAnimatedNumberList]
 

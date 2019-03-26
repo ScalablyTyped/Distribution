@@ -44,16 +44,16 @@ trait Anon_AAAAAADDRCONFIG extends js.Object {
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val resolve6Ns: Anon_HostnameOptions = js.native
   val resolveAnyNs: Anon_HostnamePromisifyAnyRecord = js.native
-  val resolveCnameNs: Anon_HostnamePromisify = js.native
+  val resolveCnameNs: Anon_HostnamePromisifyArrayPromiseString = js.native
   val resolveMxNs: Anon_HostnamePromisifyArray = js.native
-  val resolveNaptrNs: Anon_HostnamePromisifyArrayNaptrRecord = js.native
+  val resolveNaptrNs: Anon_HostnamePromisify = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val resolveNs: Anon_AAAAA = js.native
-  val resolveNsNs: Anon_HostnamePromisify = js.native
-  val resolvePtrNs: Anon_HostnamePromisify = js.native
+  val resolveNsNs: Anon_HostnamePromisifyArrayPromiseString = js.native
+  val resolvePtrNs: Anon_HostnamePromisifyArrayPromiseString = js.native
   val resolveSoaNs: Anon_HostnamePromisifyPromise = js.native
-  val resolveSrvNs: Anon_HostnamePromisifyArrayPromise = js.native
-  val resolveTxtNs: Anon_HostnamePromisifyArrayPromiseString = js.native
+  val resolveSrvNs: Anon_HostnamePromisifyArrayPromiseSrvRecord = js.native
+  val resolveTxtNs: Anon_HostnamePromisifyArrayPromise = js.native
   def getServers(): js.Array[java.lang.String] = js.native
   def lookup(
     hostname: java.lang.String,

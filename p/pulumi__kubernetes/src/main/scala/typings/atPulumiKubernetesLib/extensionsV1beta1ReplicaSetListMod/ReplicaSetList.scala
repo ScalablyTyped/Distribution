@@ -41,7 +41,7 @@ class ReplicaSetList protected ()
   val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList] = js.native
   /**
     * Standard list metadata. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
   val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
   def getInputs(): atPulumiKubernetesLib.typesInputMod.extensionsNs.v1beta1Ns.ReplicaSetList = js.native

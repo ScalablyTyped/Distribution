@@ -70,6 +70,13 @@ trait Event extends js.Object {
 
 @JSGlobal("Event")
 @js.native
+class EventCls protected () extends Event {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: EventInit) = this()
+}
+
+@JSGlobal("Event")
+@js.native
 object Event
   extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, Event]
      with org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ EventInit, Event] {

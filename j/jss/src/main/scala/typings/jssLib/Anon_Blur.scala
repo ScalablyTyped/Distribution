@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Blur extends js.Object {
   var blur: jssLib.cssMod.Length
-  var color: js.Any
+  var color: scala.Nothing
   var inset: js.UndefOr[jssLib.jssLibStrings.inset] = js.undefined
   var spread: jssLib.cssMod.Length
   var x: jssLib.cssMod.Length
@@ -18,7 +18,7 @@ object Anon_Blur {
   @scala.inline
   def apply(
     blur: jssLib.cssMod.Length,
-    color: js.Any,
+    color: scala.Nothing,
     spread: jssLib.cssMod.Length,
     x: jssLib.cssMod.Length,
     y: jssLib.cssMod.Length,

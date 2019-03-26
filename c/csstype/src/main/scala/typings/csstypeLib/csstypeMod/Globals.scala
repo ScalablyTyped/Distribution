@@ -5,6 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - csstypeLib.csstypeLibStrings.`-moz-initial`
+  - csstypeLib.csstypeLibStrings.inherit
+  - csstypeLib.csstypeLibStrings.initial
+  - csstypeLib.csstypeLibStrings.revert
+  - csstypeLib.csstypeLibStrings.unset
+*/
 trait Globals
   extends AlignmentBaselineProperty
      with AppearanceProperty

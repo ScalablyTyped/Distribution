@@ -104,8 +104,6 @@ object atBlueprintjsCoreLibComponents {
   @scala.inline
   def HTMLTable: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHtmlDashTableHtmlTableMod.IHTMLTableProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.HTMLTable].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHtmlDashTableHtmlTableMod.IHTMLTableProps]]
   @scala.inline
-  def Handle: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps] = atBlueprintjsCoreLib.libEsmComponentsMod.MultiSlider.Handle.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps]]
-  @scala.inline
   def Hotkey: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Hotkey].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps]]
   @scala.inline
   def Hotkeys: reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysMod.IHotkeysProps] = js.constructorOf[atBlueprintjsCoreLib.libEsmComponentsMod.Hotkeys].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysMod.IHotkeysProps]]
@@ -284,9 +282,6 @@ object atBlueprintjsCoreLibComponents {
   @scala.inline
   def IHTMLTableProps: atBlueprintjsCoreLib.libEsmComponentsHtmlDashTableHtmlTableMod.IHTMLTableProps.type = atBlueprintjsCoreLib.libEsmComponentsHtmlDashTableHtmlTableMod.IHTMLTableProps
   type IHTMLTableProps = atBlueprintjsCoreLib.libEsmComponentsHtmlDashTableHtmlTableMod.IHTMLTableProps
-  @scala.inline
-  def IHandleProps: atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps.type = atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps
-  type IHandleProps = atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps
   @scala.inline
   def IHotkeyProps: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps.type = atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps
   type IHotkeyProps = atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps

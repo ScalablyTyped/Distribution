@@ -77,8 +77,8 @@ trait Schema[T]
     * Registers a plugin for this schema.
     * @param plugin callback
     */
-  def plugin(plugin: js.Function1[/* schema */ this.type, scala.Unit]): this.type = js.native
-  def plugin[T](plugin: js.Function2[/* schema */ this.type, /* options */ T, scala.Unit], opts: T): this.type = js.native
+  def plugin(plugin: js.Function1[/* schema */ Schema[_], scala.Unit]): this.type = js.native
+  def plugin[T](plugin: js.Function2[/* schema */ Schema[_], /* options */ T, scala.Unit], opts: T): this.type = js.native
   /**
     * Defines a post hook for the document
     * Post hooks fire on the event emitted from document instances of Models compiled

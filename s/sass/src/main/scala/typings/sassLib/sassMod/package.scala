@@ -12,5 +12,11 @@ package object sassMod {
     /* done */ js.Function1[/* data */ ImporterReturnType, scala.Unit], 
     ImporterReturnType | scala.Unit
   ]
+  /* Rewritten from type alias, can be one of: 
+    - sassLib.Anon_File
+    - sassLib.Anon_Contents
+    - stdLib.Error
+    - scala.Null
+  */
   type ImporterReturnType = _ImporterReturnType | stdLib.Error | scala.Null
 }

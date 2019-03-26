@@ -68,7 +68,7 @@ trait Actions extends js.Object {
     */
   def apply(
     action: cypressLib.cypressLibStrings.`test:after:run`,
-    fn: js.Function2[/* attributes */ ObjectLike, /* test */ mochaLib.MochaNs.ITest, scala.Unit]
+    fn: js.Function2[/* attributes */ ObjectLike, /* test */ cypressLib.MochaNs.ITest, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires before the test and all **before** and **beforeEach** hooks run.
@@ -76,7 +76,7 @@ trait Actions extends js.Object {
     */
   def apply(
     action: cypressLib.cypressLibStrings.`test:before:run`,
-    fn: js.Function2[/* attributes */ ObjectLike, /* test */ mochaLib.MochaNs.ITest, scala.Unit]
+    fn: js.Function2[/* attributes */ ObjectLike, /* test */ cypressLib.MochaNs.ITest, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when an uncaught exception occurs in your application.
@@ -108,7 +108,7 @@ trait Actions extends js.Object {
     action: cypressLib.cypressLibStrings.`uncaught:exception`,
     fn: js.Function2[
       /* error */ stdLib.Error, 
-      /* runnable */ mochaLib.MochaNs.IRunnable, 
+      /* runnable */ cypressLib.MochaNs.IRunnable, 
       cypressLib.cypressLibNumbers.`false` | scala.Unit
     ]
   ): scala.Unit = js.native
@@ -128,7 +128,12 @@ trait Actions extends js.Object {
     action: cypressLib.cypressLibStrings.`viewport:changed`,
     fn: js.Function1[/* viewport */ Viewport, scala.Unit]
   ): scala.Unit = js.native
-  def apply(action: cypressLib.cypressLibStrings.`window:alert`, fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]): scala.Unit = js.native
+  def apply(
+    action: cypressLib.cypressLibStrings.`window:alert`,
+    fn: Agent[
+      cypressLib.typesSinonMod.SinonNs.SinonSpy | cypressLib.typesSinonMod.SinonNs.SinonStub
+    ]
+  ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.alert()` method.
     * Cypress will auto accept alerts. You cannot change this behavior.
@@ -167,7 +172,9 @@ trait Actions extends js.Object {
   ): scala.Unit = js.native
   def apply(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]
+    fn: Agent[
+      cypressLib.typesSinonMod.SinonNs.SinonSpy | cypressLib.typesSinonMod.SinonNs.SinonStub
+    ]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.confirm()` method.
@@ -207,7 +214,7 @@ trait Actions extends js.Object {
     */
   def apply(
     action: cypressLib.cypressLibStrings.fail,
-    fn: js.Function2[/* error */ stdLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
+    fn: js.Function2[/* error */ stdLib.Error, /* mocha */ cypressLib.MochaNs.IRunnable, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires whenever **Cypress** is scrolling your application. This event is fired when Cypress is {% url 'waiting for and calculating actionability' interacting-with-elements %}. It will scroll to 'uncover' elements currently being covered. This event is extremely useful to debug why Cypress may think an element is not interactive.
@@ -215,7 +222,7 @@ trait Actions extends js.Object {
     */
   def apply(
     action: cypressLib.cypressLibStrings.scrolled,
-    fn: js.Function1[/* $el */ jqueryLib.JQuery[stdLib.HTMLElement], scala.Unit]
+    fn: js.Function1[/* $el */ cypressLib.JQuery[stdLib.HTMLElement], scala.Unit]
   ): scala.Unit = js.native
 }
 

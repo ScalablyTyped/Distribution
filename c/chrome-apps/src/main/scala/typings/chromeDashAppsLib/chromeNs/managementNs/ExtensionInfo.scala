@@ -22,7 +22,7 @@ trait ExtensionInfo extends js.Object {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OPENASPINNEDTAB[keyof chrome-apps.Anon_OPENASPINNEDTAB] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_REGULAR_TAB | chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_PINNED_TAB | chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_WINDOW | chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_FULL_SCREEN
         ]
       ]
     ]
@@ -42,7 +42,7 @@ trait ExtensionInfo extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PERMISSIONSINCREASE[keyof chrome-apps.Anon_PERMISSIONSINCREASE] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.unknown | chromeDashAppsLib.chromeDashAppsLibStrings.permissions_increase
       ]
     ]
   ] = js.undefined
@@ -77,7 +77,7 @@ trait ExtensionInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ADMIN[keyof chrome-apps.Anon_ADMIN] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.other | chromeDashAppsLib.chromeDashAppsLibStrings.admin | chromeDashAppsLib.chromeDashAppsLibStrings.development | chromeDashAppsLib.chromeDashAppsLibStrings.sideload | chromeDashAppsLib.chromeDashAppsLibStrings.normal
     ]
   ]
   /**
@@ -95,7 +95,7 @@ trait ExtensionInfo extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OPENASPINNEDTAB[keyof chrome-apps.Anon_OPENASPINNEDTAB] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_REGULAR_TAB | chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_PINNED_TAB | chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_WINDOW | chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_FULL_SCREEN
       ]
     ]
   ] = js.undefined
@@ -147,7 +147,7 @@ object ExtensionInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ADMIN[keyof chrome-apps.Anon_ADMIN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.other | chromeDashAppsLib.chromeDashAppsLibStrings.admin | chromeDashAppsLib.chromeDashAppsLibStrings.development | chromeDashAppsLib.chromeDashAppsLibStrings.sideload | chromeDashAppsLib.chromeDashAppsLibStrings.normal
       ]
     ],
     mayDisable: scala.Boolean,
@@ -165,7 +165,7 @@ object ExtensionInfo {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OPENASPINNEDTAB[keyof chrome-apps.Anon_OPENASPINNEDTAB] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_REGULAR_TAB | chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_PINNED_TAB | chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_WINDOW | chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_FULL_SCREEN
         ]
       ]
     ] = null,
@@ -174,7 +174,7 @@ object ExtensionInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PERMISSIONSINCREASE[keyof chrome-apps.Anon_PERMISSIONSINCREASE] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.unknown | chromeDashAppsLib.chromeDashAppsLibStrings.permissions_increase
       ]
     ] = null,
     homepageUrl: java.lang.String = null,
@@ -185,7 +185,7 @@ object ExtensionInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OPENASPINNEDTAB[keyof chrome-apps.Anon_OPENASPINNEDTAB] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_REGULAR_TAB | chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_PINNED_TAB | chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_WINDOW | chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_FULL_SCREEN
       ]
     ] = null,
     updateUrl: java.lang.String = null

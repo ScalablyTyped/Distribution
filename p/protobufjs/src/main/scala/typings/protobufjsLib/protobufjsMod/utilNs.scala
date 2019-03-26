@@ -8,6 +8,18 @@ import scala.scalajs.js.annotation._
 @JSImport("protobufjs", "util")
 @js.native
 object utilNs extends js.Object {
+  @js.native
+  class Array protected ()
+    extends stdLib.Uint8Array {
+    def this(params: js.Any*) = this()
+  }
+  
+  @js.native
+  class Buffer protected ()
+    extends protobufjsLib.protobufjsMod.Buffer {
+    def this(params: js.Any*) = this()
+  }
+  
   /** A minimal event emitter. */
   @js.native
   /** Constructs a new event emitter instance. */
@@ -37,6 +49,21 @@ object utilNs extends js.Object {
       */
     def on(evt: java.lang.String, fn: protobufjsLib.EventEmitterListener): this.type = js.native
     def on(evt: java.lang.String, fn: protobufjsLib.EventEmitterListener, ctx: js.Any): this.type = js.native
+  }
+  
+  @js.native
+  class Long protected ()
+    extends protobufjsLib.protobufjsMod.Long {
+    def this(params: js.Any*) = this()
+    /** High bits */
+    /* CompleteClass */
+    override var high: scala.Double = js.native
+    /** Low bits */
+    /* CompleteClass */
+    override var low: scala.Double = js.native
+    /** Whether unsigned or not */
+    /* CompleteClass */
+    override var unsigned: scala.Boolean = js.native
   }
   
   /** Helper class for working with the low and high bits of a 64 bit value. */

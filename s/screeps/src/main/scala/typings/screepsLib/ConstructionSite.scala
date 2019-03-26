@@ -40,6 +40,60 @@ trait ConstructionSite[T /* <: BuildableStructureConstant */] extends RoomObject
   def remove(): scala.Double
 }
 
+@JSGlobal("ConstructionSite")
+@js.native
+class ConstructionSiteCls protected () extends ConstructionSite[BuildableStructureConstant] {
+  def this(id: java.lang.String) = this()
+  /**
+    * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
+    */
+  /* CompleteClass */
+  override var id: java.lang.String = js.native
+  /**
+    * Whether this is your own construction site.
+    */
+  /* CompleteClass */
+  override var my: scala.Boolean = js.native
+  /**
+    * An object with the structure’s owner info.
+    */
+  /* CompleteClass */
+  override var owner: Owner = js.native
+  /**
+    * An object representing the position of this object in the room.
+    */
+  /* CompleteClass */
+  override var pos: RoomPosition = js.native
+  /**
+    * The current construction progress.
+    */
+  /* CompleteClass */
+  override var progress: scala.Double = js.native
+  /**
+    * The total construction progress needed for the structure to be built.
+    */
+  /* CompleteClass */
+  override var progressTotal: scala.Double = js.native
+  /**
+    * The link to the Room object. May be undefined in case if an object is a
+    * flag or a construction site and is placed in a room that is not visible
+    * to you.
+    */
+  /* CompleteClass */
+  override var room: js.UndefOr[Room] = js.native
+  /**
+    * One of the `STRUCTURE_*` constants.
+    */
+  /* CompleteClass */
+  override var structureType: BuildableStructureConstant = js.native
+  /**
+    * Remove the construction site.
+    * @returns Result Code: OK, ERR_NOT_OWNER
+    */
+  /* CompleteClass */
+  override def remove(): scala.Double = js.native
+}
+
 object ConstructionSite {
   @scala.inline
   def apply[T /* <: BuildableStructureConstant */](

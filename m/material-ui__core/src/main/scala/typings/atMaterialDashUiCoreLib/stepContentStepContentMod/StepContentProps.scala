@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/StepContent/StepContent.StepContentClasskey, never>) */ trait StepContentProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[StepContentClasskey] {
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait StepContentProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[StepContentClasskey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var TransitionComponent: js.UndefOr[
     reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
   ] = js.undefined
@@ -16,13 +16,11 @@ import scala.scalajs.js.annotation._
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var alternativeLabel: js.UndefOr[scala.Boolean] = js.undefined
   var children: reactLib.reactMod.ReactNs.ReactNode
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var completed: js.UndefOr[scala.Boolean] = js.undefined
   var last: js.UndefOr[scala.Boolean] = js.undefined
   var optional: js.UndefOr[scala.Boolean] = js.undefined
   var orientation: js.UndefOr[atMaterialDashUiCoreLib.stepperStepperMod.Orientation] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var transitionDuration: js.UndefOr[js.Any | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto] = js.undefined
+  var transitionDuration: js.UndefOr[scala.Nothing | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto] = js.undefined
 }
 
 object StepContentProps {
@@ -41,7 +39,7 @@ object StepContentProps {
     optional: js.UndefOr[scala.Boolean] = js.undefined,
     orientation: atMaterialDashUiCoreLib.stepperStepperMod.Orientation = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    transitionDuration: js.Any | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
+    transitionDuration: scala.Nothing | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
   ): StepContentProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     if (TransitionComponent != null) __obj.updateDynamic("TransitionComponent")(TransitionComponent.asInstanceOf[js.Any])

@@ -23,6 +23,39 @@ trait Resource[T /* <: ResourceConstant */] extends RoomObject {
   var resourceType: T
 }
 
+@JSGlobal("Resource")
+@js.native
+class ResourceCls protected () extends Resource[ResourceConstant] {
+  def this(id: java.lang.String) = this()
+  /**
+    * The amount of resource units containing.
+    */
+  /* CompleteClass */
+  override var amount: scala.Double = js.native
+  /**
+    * A unique object identifier. You can use `Game.getObjectById` method to retrieve an object instance by its `id`.
+    */
+  /* CompleteClass */
+  override var id: java.lang.String = js.native
+  /**
+    * An object representing the position of this object in the room.
+    */
+  /* CompleteClass */
+  override var pos: RoomPosition = js.native
+  /**
+    * One of the `RESOURCE_*` constants.
+    */
+  /* CompleteClass */
+  override var resourceType: ResourceConstant = js.native
+  /**
+    * The link to the Room object. May be undefined in case if an object is a
+    * flag or a construction site and is placed in a room that is not visible
+    * to you.
+    */
+  /* CompleteClass */
+  override var room: js.UndefOr[Room] = js.native
+}
+
 object Resource {
   @scala.inline
   def apply[T /* <: ResourceConstant */](amount: scala.Double, id: java.lang.String, pos: RoomPosition, resourceType: T, room: Room = null): Resource[T] = {

@@ -35,13 +35,13 @@ object meteorLibStrings {
   
   @js.native
   sealed trait connected
-    extends meteorLib.ddpMod.DDPNs.Status
-       with meteorLib.DDPNs.Status
+    extends meteorLib.DDPNs.Status
+       with meteorLib.ddpMod.DDPNs.Status
   
   @js.native
   sealed trait connecting
-    extends meteorLib.ddpMod.DDPNs.Status
-       with meteorLib.DDPNs.Status
+    extends meteorLib.DDPNs.Status
+       with meteorLib.ddpMod.DDPNs.Status
   
   @js.native
   sealed trait date
@@ -65,8 +65,8 @@ object meteorLibStrings {
   
   @js.native
   sealed trait failed
-    extends meteorLib.ddpMod.DDPNs.Status
-       with meteorLib.DDPNs.Status
+    extends meteorLib.DDPNs.Status
+       with meteorLib.ddpMod.DDPNs.Status
   
   @js.native
   sealed trait int
@@ -120,8 +120,8 @@ object meteorLibStrings {
   
   @js.native
   sealed trait offline
-    extends meteorLib.ddpMod.DDPNs.Status
-       with meteorLib.DDPNs.Status
+    extends meteorLib.DDPNs.Status
+       with meteorLib.ddpMod.DDPNs.Status
   
   @js.native
   sealed trait regex
@@ -150,8 +150,8 @@ object meteorLibStrings {
   
   @js.native
   sealed trait waiting
-    extends meteorLib.ddpMod.DDPNs.Status
-       with meteorLib.DDPNs.Status
+    extends meteorLib.DDPNs.Status
+       with meteorLib.ddpMod.DDPNs.Status
   
   @scala.inline
   def ArraysOrEach: ArraysOrEach = "ArraysOrEach".asInstanceOf[ArraysOrEach]

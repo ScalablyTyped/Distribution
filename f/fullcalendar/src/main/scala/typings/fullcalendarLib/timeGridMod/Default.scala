@@ -16,14 +16,14 @@ class Default protected ()
   var bottomRuleEl: js.Any = js.native
   var businessContainerEls: js.Any = js.native
   var businessSegs: js.Any = js.native
-  var colCnt: js.Any = js.native
+  var colCnt: scala.Nothing = js.native
   var colContainerEls: js.Any = js.native
   var colCoordCache: js.Any = js.native
   var colEls: js.Any = js.native
   var contentSkeletonEl: js.Any = js.native
-  var dayDates: js.Any = js.native
+  var dayDates: scala.Nothing = js.native
   var dayRanges: js.Any = js.native
-  var daysPerRow: js.Any = js.native
+  var daysPerRow: scala.Nothing = js.native
   var fgContainerEls: js.Any = js.native
   @JSName("getCellDate")
   var getCellDate_Original: js.Function2[/* row */ js.Any, /* col */ js.Any, _] = js.native

@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation._
 class NativeImage ()
   extends electronLib.ElectronNs.NativeImage
 
+@JSImport("electron", "nativeImage")
+@js.native
+class nativeImageCls ()
+  extends electronLib.ElectronNs.NativeImage
+
 /* static members */
 @JSImport("electron", "NativeImage")
 @js.native

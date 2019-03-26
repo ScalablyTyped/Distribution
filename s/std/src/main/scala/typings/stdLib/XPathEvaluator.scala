@@ -43,6 +43,10 @@ trait XPathEvaluator extends js.Object {
 
 @JSGlobal("XPathEvaluator")
 @js.native
+class XPathEvaluatorCls () extends XPathEvaluator
+
+@JSGlobal("XPathEvaluator")
+@js.native
 object XPathEvaluator
   extends org.scalablytyped.runtime.Instantiable0[XPathEvaluator]
 

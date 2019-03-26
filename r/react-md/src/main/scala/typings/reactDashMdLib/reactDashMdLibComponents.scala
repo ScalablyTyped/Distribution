@@ -7,216 +7,216 @@ import scala.scalajs.js.annotation._
 
 object reactDashMdLibComponents {
   @scala.inline
-  def AccessibleFakeButton: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersAccessibleFakeButtonMod.AccessibleFakeButtonProps] = reactDashMdLib.libHelpersAccessibleFakeButtonMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersAccessibleFakeButtonMod.AccessibleFakeButtonProps]]
+  def AccessibleFakeButton: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersAccessibleFakeButtonMod.AccessibleFakeButtonProps] = js.constructorOf[reactDashMdLib.libHelpersAccessibleFakeButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersAccessibleFakeButtonMod.AccessibleFakeButtonProps]]
   @scala.inline
-  def Autocomplete: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAutocompletesAutocompleteMod.AutocompleteProps] = reactDashMdLib.libAutocompletesAutocompleteMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAutocompletesAutocompleteMod.AutocompleteProps]]
+  def Autocomplete: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAutocompletesAutocompleteMod.AutocompleteProps] = js.constructorOf[reactDashMdLib.libAutocompletesAutocompleteMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAutocompletesAutocompleteMod.AutocompleteProps]]
   @scala.inline
-  def Autocompletes: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAutocompletesAutocompleteMod.AutocompleteProps] = reactDashMdLib.libAutocompletesMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAutocompletesAutocompleteMod.AutocompleteProps]]
+  def Autocompletes: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAutocompletesAutocompleteMod.AutocompleteProps] = js.constructorOf[reactDashMdLib.libAutocompletesMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAutocompletesAutocompleteMod.AutocompleteProps]]
   @scala.inline
-  def Avatar: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAvatarsAvatarMod.AvatarProps] = reactDashMdLib.libAvatarsAvatarMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAvatarsAvatarMod.AvatarProps]]
+  def Avatar: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAvatarsAvatarMod.AvatarProps] = js.constructorOf[reactDashMdLib.libAvatarsAvatarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAvatarsAvatarMod.AvatarProps]]
   @scala.inline
-  def Avatars: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAvatarsAvatarMod.AvatarProps] = reactDashMdLib.libAvatarsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAvatarsAvatarMod.AvatarProps]]
+  def Avatars: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAvatarsAvatarMod.AvatarProps] = js.constructorOf[reactDashMdLib.libAvatarsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libAvatarsAvatarMod.AvatarProps]]
   @scala.inline
-  def Badge: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBadgesBadgeMod.BadgeProps] = reactDashMdLib.libBadgesBadgeMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBadgesBadgeMod.BadgeProps]]
+  def Badge: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBadgesBadgeMod.BadgeProps] = js.constructorOf[reactDashMdLib.libBadgesBadgeMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBadgesBadgeMod.BadgeProps]]
   @scala.inline
-  def Badges: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBadgesBadgeMod.BadgeProps] = reactDashMdLib.libBadgesMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBadgesBadgeMod.BadgeProps]]
+  def Badges: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBadgesBadgeMod.BadgeProps] = js.constructorOf[reactDashMdLib.libBadgesMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBadgesBadgeMod.BadgeProps]]
   @scala.inline
-  def BottomNavigation: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBottomNavigationsBottomNavigationMod.BottomNavigationProps] = reactDashMdLib.libBottomNavigationsBottomNavigationMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBottomNavigationsBottomNavigationMod.BottomNavigationProps]]
+  def BottomNavigation: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBottomNavigationsBottomNavigationMod.BottomNavigationProps] = js.constructorOf[reactDashMdLib.libBottomNavigationsBottomNavigationMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBottomNavigationsBottomNavigationMod.BottomNavigationProps]]
   @scala.inline
-  def BottomNavigations: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBottomNavigationsBottomNavigationMod.BottomNavigationProps] = reactDashMdLib.libBottomNavigationsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBottomNavigationsBottomNavigationMod.BottomNavigationProps]]
+  def BottomNavigations: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBottomNavigationsBottomNavigationMod.BottomNavigationProps] = js.constructorOf[reactDashMdLib.libBottomNavigationsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libBottomNavigationsBottomNavigationMod.BottomNavigationProps]]
   @scala.inline
-  def Button: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libButtonsButtonMod.ButtonProps] = reactDashMdLib.libButtonsButtonMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libButtonsButtonMod.ButtonProps]]
+  def Button: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libButtonsButtonMod.ButtonProps] = js.constructorOf[reactDashMdLib.libButtonsButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libButtonsButtonMod.ButtonProps]]
   @scala.inline
-  def Buttons: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libButtonsButtonMod.ButtonProps] = reactDashMdLib.libButtonsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libButtonsButtonMod.ButtonProps]]
+  def Buttons: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libButtonsButtonMod.ButtonProps] = js.constructorOf[reactDashMdLib.libButtonsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libButtonsButtonMod.ButtonProps]]
   @scala.inline
-  def Card: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardMod.CardProps] = reactDashMdLib.libCardsCardMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardMod.CardProps]]
+  def Card: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardMod.CardProps] = js.constructorOf[reactDashMdLib.libCardsCardMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardMod.CardProps]]
   @scala.inline
-  def CardActions: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardActionsMod.CardActionsProps] = reactDashMdLib.libCardsCardActionsMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardActionsMod.CardActionsProps]]
+  def CardActions: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardActionsMod.CardActionsProps] = js.constructorOf[reactDashMdLib.libCardsCardActionsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardActionsMod.CardActionsProps]]
   @scala.inline
-  def CardText: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardTextMod.CardTextProps] = reactDashMdLib.libCardsCardTextMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardTextMod.CardTextProps]]
+  def CardText: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardTextMod.CardTextProps] = js.constructorOf[reactDashMdLib.libCardsCardTextMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardTextMod.CardTextProps]]
   @scala.inline
-  def CardTitle: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardTitleMod.CardTitleProps] = reactDashMdLib.libCardsCardTitleMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardTitleMod.CardTitleProps]]
+  def CardTitle: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardTitleMod.CardTitleProps] = js.constructorOf[reactDashMdLib.libCardsCardTitleMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardTitleMod.CardTitleProps]]
   @scala.inline
-  def Cards: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardMod.CardProps] = reactDashMdLib.libCardsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardMod.CardProps]]
+  def Cards: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardMod.CardProps] = js.constructorOf[reactDashMdLib.libCardsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libCardsCardMod.CardProps]]
   @scala.inline
-  def Cell: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libGridsCellMod.CellProps] = reactDashMdLib.libGridsCellMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libGridsCellMod.CellProps]]
+  def Cell: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libGridsCellMod.CellProps] = js.constructorOf[reactDashMdLib.libGridsCellMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libGridsCellMod.CellProps]]
   @scala.inline
-  def Checkbox: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsCheckboxMod.CheckboxProps] = reactDashMdLib.libSelectionControlsCheckboxMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsCheckboxMod.CheckboxProps]]
+  def Checkbox: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsCheckboxMod.CheckboxProps] = js.constructorOf[reactDashMdLib.libSelectionControlsCheckboxMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsCheckboxMod.CheckboxProps]]
   @scala.inline
-  def Chip: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libChipsChipMod.ChipProps] = reactDashMdLib.libChipsChipMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libChipsChipMod.ChipProps]]
+  def Chip: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libChipsChipMod.ChipProps] = js.constructorOf[reactDashMdLib.libChipsChipMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libChipsChipMod.ChipProps]]
   @scala.inline
-  def Chips: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libChipsChipMod.ChipProps] = reactDashMdLib.libChipsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libChipsChipMod.ChipProps]]
+  def Chips: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libChipsChipMod.ChipProps] = js.constructorOf[reactDashMdLib.libChipsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libChipsChipMod.ChipProps]]
   @scala.inline
-  def CircularProgress: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libProgressCircularProgressMod.CircularProgressProps] = reactDashMdLib.libProgressCircularProgressMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libProgressCircularProgressMod.CircularProgressProps]]
+  def CircularProgress: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libProgressCircularProgressMod.CircularProgressProps] = js.constructorOf[reactDashMdLib.libProgressCircularProgressMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libProgressCircularProgressMod.CircularProgressProps]]
   @scala.inline
-  def CloseButton: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersCloseButtonMod.CloseButtonProps] = reactDashMdLib.libNavigationDrawersCloseButtonMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersCloseButtonMod.CloseButtonProps]]
+  def CloseButton: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersCloseButtonMod.CloseButtonProps] = js.constructorOf[reactDashMdLib.libNavigationDrawersCloseButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersCloseButtonMod.CloseButtonProps]]
   @scala.inline
-  def Collapse: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersCollapseMod.CollapseProps] = reactDashMdLib.libHelpersCollapseMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersCollapseMod.CollapseProps]]
+  def Collapse: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersCollapseMod.CollapseProps] = js.constructorOf[reactDashMdLib.libHelpersCollapseMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersCollapseMod.CollapseProps]]
   @scala.inline
-  def DataTable: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesDataTableMod.DataTableProps] = reactDashMdLib.libDataTablesDataTableMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesDataTableMod.DataTableProps]]
+  def DataTable: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesDataTableMod.DataTableProps] = js.constructorOf[reactDashMdLib.libDataTablesDataTableMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesDataTableMod.DataTableProps]]
   @scala.inline
-  def DataTables: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesDataTableMod.DataTableProps] = reactDashMdLib.libDataTablesMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesDataTableMod.DataTableProps]]
+  def DataTables: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesDataTableMod.DataTableProps] = js.constructorOf[reactDashMdLib.libDataTablesMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesDataTableMod.DataTableProps]]
   @scala.inline
-  def DatePicker: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersDatePickerContainerMod.DatePickerProps] = reactDashMdLib.libPickersMod.^.DatePicker.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersDatePickerContainerMod.DatePickerProps]]
+  def DatePicker: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersDatePickerContainerMod.DatePickerProps] = js.constructorOf[reactDashMdLib.libPickersMod.DatePicker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersDatePickerContainerMod.DatePickerProps]]
   @scala.inline
-  def DatePickerContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersDatePickerContainerMod.DatePickerProps] = reactDashMdLib.libPickersDatePickerContainerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersDatePickerContainerMod.DatePickerProps]]
+  def DatePickerContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersDatePickerContainerMod.DatePickerProps] = js.constructorOf[reactDashMdLib.libPickersDatePickerContainerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersDatePickerContainerMod.DatePickerProps]]
   @scala.inline
-  def Dialog: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDialogsDialogMod.DialogProps] = reactDashMdLib.libDialogsDialogMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDialogsDialogMod.DialogProps]]
+  def Dialog: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDialogsDialogMod.DialogProps] = js.constructorOf[reactDashMdLib.libDialogsDialogMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDialogsDialogMod.DialogProps]]
   @scala.inline
-  def DialogContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDialogsDialogContainerMod.DialogContainerProps] = reactDashMdLib.libDialogsDialogContainerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDialogsDialogContainerMod.DialogContainerProps]]
+  def DialogContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDialogsDialogContainerMod.DialogContainerProps] = js.constructorOf[reactDashMdLib.libDialogsDialogContainerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDialogsDialogContainerMod.DialogContainerProps]]
   @scala.inline
-  def Dialogs: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDialogsDialogContainerMod.DialogContainerProps] = reactDashMdLib.libDialogsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDialogsDialogContainerMod.DialogContainerProps]]
+  def Dialogs: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDialogsDialogContainerMod.DialogContainerProps] = js.constructorOf[reactDashMdLib.libDialogsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDialogsDialogContainerMod.DialogContainerProps]]
   @scala.inline
-  def Divider: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDividersDividerMod.DividerProps] = reactDashMdLib.libDividersDividerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDividersDividerMod.DividerProps]]
+  def Divider: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDividersDividerMod.DividerProps] = js.constructorOf[reactDashMdLib.libDividersDividerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDividersDividerMod.DividerProps]]
   @scala.inline
-  def Dividers: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDividersDividerMod.DividerProps] = reactDashMdLib.libDividersMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDividersDividerMod.DividerProps]]
+  def Dividers: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDividersDividerMod.DividerProps] = js.constructorOf[reactDashMdLib.libDividersMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDividersDividerMod.DividerProps]]
   @scala.inline
-  def Drawer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDrawersDrawerMod.DrawerProps] = reactDashMdLib.libDrawersDrawerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDrawersDrawerMod.DrawerProps]]
+  def Drawer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDrawersDrawerMod.DrawerProps] = js.constructorOf[reactDashMdLib.libDrawersDrawerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDrawersDrawerMod.DrawerProps]]
   @scala.inline
-  def Drawers: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDrawersDrawerMod.DrawerProps] = reactDashMdLib.libDrawersMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDrawersDrawerMod.DrawerProps]]
+  def Drawers: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDrawersDrawerMod.DrawerProps] = js.constructorOf[reactDashMdLib.libDrawersMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDrawersDrawerMod.DrawerProps]]
   @scala.inline
-  def DropdownMenu: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusDropdownMenuMod.DropdownMenuProps] = reactDashMdLib.libMenusDropdownMenuMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusDropdownMenuMod.DropdownMenuProps]]
+  def DropdownMenu: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusDropdownMenuMod.DropdownMenuProps] = js.constructorOf[reactDashMdLib.libMenusDropdownMenuMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusDropdownMenuMod.DropdownMenuProps]]
   @scala.inline
-  def DropdownMenuColumn: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesDropdownMenuColumnMod.DropdownMenuColumnProps] = reactDashMdLib.libDataTablesDropdownMenuColumnMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesDropdownMenuColumnMod.DropdownMenuColumnProps]]
+  def DropdownMenuColumn: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesDropdownMenuColumnMod.DropdownMenuColumnProps] = js.constructorOf[reactDashMdLib.libDataTablesDropdownMenuColumnMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesDropdownMenuColumnMod.DropdownMenuColumnProps]]
   @scala.inline
-  def EditDialogColumn: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesEditDialogColumnMod.EditDialogColumnProps] = reactDashMdLib.libDataTablesEditDialogColumnMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesEditDialogColumnMod.EditDialogColumnProps]]
+  def EditDialogColumn: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesEditDialogColumnMod.EditDialogColumnProps] = js.constructorOf[reactDashMdLib.libDataTablesEditDialogColumnMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesEditDialogColumnMod.EditDialogColumnProps]]
   @scala.inline
-  def ExpansionList: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libExpansionPanelsExpansionListMod.ExpansionListProps] = reactDashMdLib.libExpansionPanelsExpansionListMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libExpansionPanelsExpansionListMod.ExpansionListProps]]
+  def ExpansionList: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libExpansionPanelsExpansionListMod.ExpansionListProps] = js.constructorOf[reactDashMdLib.libExpansionPanelsExpansionListMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libExpansionPanelsExpansionListMod.ExpansionListProps]]
   @scala.inline
-  def ExpansionPanel: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libExpansionPanelsExpansionPanelMod.ExpansionPanelProps] = reactDashMdLib.libExpansionPanelsExpansionPanelMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libExpansionPanelsExpansionPanelMod.ExpansionPanelProps]]
+  def ExpansionPanel: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libExpansionPanelsExpansionPanelMod.ExpansionPanelProps] = js.constructorOf[reactDashMdLib.libExpansionPanelsExpansionPanelMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libExpansionPanelsExpansionPanelMod.ExpansionPanelProps]]
   @scala.inline
-  def ExpansionPanels: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libExpansionPanelsExpansionPanelMod.ExpansionPanelProps] = reactDashMdLib.libExpansionPanelsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libExpansionPanelsExpansionPanelMod.ExpansionPanelProps]]
+  def ExpansionPanels: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libExpansionPanelsExpansionPanelMod.ExpansionPanelProps] = js.constructorOf[reactDashMdLib.libExpansionPanelsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libExpansionPanelsExpansionPanelMod.ExpansionPanelProps]]
   @scala.inline
-  def FileInput: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFileInputsFileInputMod.FileInputProps] = reactDashMdLib.libFileInputsFileInputMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFileInputsFileInputMod.FileInputProps]]
+  def FileInput: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFileInputsFileInputMod.FileInputProps] = js.constructorOf[reactDashMdLib.libFileInputsFileInputMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFileInputsFileInputMod.FileInputProps]]
   @scala.inline
-  def FileInputs: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFileInputsFileInputMod.FileInputProps] = reactDashMdLib.libFileInputsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFileInputsFileInputMod.FileInputProps]]
+  def FileInputs: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFileInputsFileInputMod.FileInputProps] = js.constructorOf[reactDashMdLib.libFileInputsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFileInputsFileInputMod.FileInputProps]]
   @scala.inline
-  def FileUpload: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFileInputsFileUploadMod.FileUploadProps] = reactDashMdLib.libFileInputsFileUploadMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFileInputsFileUploadMod.FileUploadProps]]
+  def FileUpload: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFileInputsFileUploadMod.FileUploadProps] = js.constructorOf[reactDashMdLib.libFileInputsFileUploadMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFileInputsFileUploadMod.FileUploadProps]]
   @scala.inline
-  def FocusContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersFocusContainerMod.FocusContainerProps] = reactDashMdLib.libHelpersFocusContainerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersFocusContainerMod.FocusContainerProps]]
+  def FocusContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersFocusContainerMod.FocusContainerProps] = js.constructorOf[reactDashMdLib.libHelpersFocusContainerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersFocusContainerMod.FocusContainerProps]]
   @scala.inline
-  def FontIcon: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFontIconsFontIconMod.FontIconProps] = reactDashMdLib.libFontIconsFontIconMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFontIconsFontIconMod.FontIconProps]]
+  def FontIcon: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFontIconsFontIconMod.FontIconProps] = js.constructorOf[reactDashMdLib.libFontIconsFontIconMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFontIconsFontIconMod.FontIconProps]]
   @scala.inline
-  def FontIcons: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFontIconsFontIconMod.FontIconProps] = reactDashMdLib.libFontIconsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFontIconsFontIconMod.FontIconProps]]
+  def FontIcons: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFontIconsFontIconMod.FontIconProps] = js.constructorOf[reactDashMdLib.libFontIconsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libFontIconsFontIconMod.FontIconProps]]
   @scala.inline
-  def Grid: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libGridsGridMod.GridProps] = reactDashMdLib.libGridsGridMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libGridsGridMod.GridProps]]
+  def Grid: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libGridsGridMod.GridProps] = js.constructorOf[reactDashMdLib.libGridsGridMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libGridsGridMod.GridProps]]
   @scala.inline
-  def GridList: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libGridsGridListMod.GridListProps] = reactDashMdLib.libGridsGridListMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libGridsGridListMod.GridListProps]]
+  def GridList: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libGridsGridListMod.GridListProps] = js.constructorOf[reactDashMdLib.libGridsGridListMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libGridsGridListMod.GridListProps]]
   @scala.inline
-  def IconSeparator: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersIconSeparatorMod.IconSeparatorProps] = reactDashMdLib.libHelpersIconSeparatorMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersIconSeparatorMod.IconSeparatorProps]]
+  def IconSeparator: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersIconSeparatorMod.IconSeparatorProps] = js.constructorOf[reactDashMdLib.libHelpersIconSeparatorMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersIconSeparatorMod.IconSeparatorProps]]
   @scala.inline
-  def JumpToContentLink: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersJumpToContentLinkMod.JumpToContentLinkProps] = reactDashMdLib.libNavigationDrawersJumpToContentLinkMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersJumpToContentLinkMod.JumpToContentLinkProps]]
+  def JumpToContentLink: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersJumpToContentLinkMod.JumpToContentLinkProps] = js.constructorOf[reactDashMdLib.libNavigationDrawersJumpToContentLinkMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersJumpToContentLinkMod.JumpToContentLinkProps]]
   @scala.inline
-  def Layover: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersLayoverMod.LayoverProps] = reactDashMdLib.libHelpersLayoverMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersLayoverMod.LayoverProps]]
+  def Layover: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersLayoverMod.LayoverProps] = js.constructorOf[reactDashMdLib.libHelpersLayoverMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersLayoverMod.LayoverProps]]
   @scala.inline
-  def LinearProgress: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libProgressLinearProgressMod.LinearProgressProps] = reactDashMdLib.libProgressLinearProgressMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libProgressLinearProgressMod.LinearProgressProps]]
+  def LinearProgress: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libProgressLinearProgressMod.LinearProgressProps] = js.constructorOf[reactDashMdLib.libProgressLinearProgressMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libProgressLinearProgressMod.LinearProgressProps]]
   @scala.inline
-  def List: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListMod.ListProps] = reactDashMdLib.libListsListMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListMod.ListProps]]
+  def List: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListMod.ListProps] = js.constructorOf[reactDashMdLib.libListsListMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListMod.ListProps]]
   @scala.inline
-  def ListItem: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListItemMod.ListItemProps] = reactDashMdLib.libListsListItemMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListItemMod.ListItemProps]]
+  def ListItem: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListItemMod.ListItemProps] = js.constructorOf[reactDashMdLib.libListsListItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListItemMod.ListItemProps]]
   @scala.inline
-  def ListItemControl: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListItemControlMod.ListItemControlProps] = reactDashMdLib.libListsListItemControlMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListItemControlMod.ListItemControlProps]]
+  def ListItemControl: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListItemControlMod.ListItemControlProps] = js.constructorOf[reactDashMdLib.libListsListItemControlMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListItemControlMod.ListItemControlProps]]
   @scala.inline
-  def Lists: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListMod.ListProps] = reactDashMdLib.libListsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListMod.ListProps]]
+  def Lists: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListMod.ListProps] = js.constructorOf[reactDashMdLib.libListsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libListsListMod.ListProps]]
   @scala.inline
-  def Media: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMediaMediaMod.MediaProps] = reactDashMdLib.libMediaMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMediaMediaMod.MediaProps]]
+  def Media: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMediaMediaMod.MediaProps] = js.constructorOf[reactDashMdLib.libMediaMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMediaMediaMod.MediaProps]]
   @scala.inline
-  def MediaOverlay: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMediaMediaOverlayMod.MediaOverlayProps] = reactDashMdLib.libMediaMediaOverlayMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMediaMediaOverlayMod.MediaOverlayProps]]
+  def MediaOverlay: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMediaMediaOverlayMod.MediaOverlayProps] = js.constructorOf[reactDashMdLib.libMediaMediaOverlayMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMediaMediaOverlayMod.MediaOverlayProps]]
   @scala.inline
-  def Menu: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusMenuMod.MenuProps] = reactDashMdLib.libMenusMenuMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusMenuMod.MenuProps]]
+  def Menu: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusMenuMod.MenuProps] = js.constructorOf[reactDashMdLib.libMenusMenuMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusMenuMod.MenuProps]]
   @scala.inline
-  def MenuButton: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusMenuButtonMod.MenuButtonProps] = reactDashMdLib.libMenusMenuButtonMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusMenuButtonMod.MenuButtonProps]]
+  def MenuButton: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusMenuButtonMod.MenuButtonProps] = js.constructorOf[reactDashMdLib.libMenusMenuButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusMenuButtonMod.MenuButtonProps]]
   @scala.inline
-  def MenuButtonColumn: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesMenuButtonColumnMod.MenuButtonColumnProps] = reactDashMdLib.libDataTablesMenuButtonColumnMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesMenuButtonColumnMod.MenuButtonColumnProps]]
+  def MenuButtonColumn: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesMenuButtonColumnMod.MenuButtonColumnProps] = js.constructorOf[reactDashMdLib.libDataTablesMenuButtonColumnMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesMenuButtonColumnMod.MenuButtonColumnProps]]
   @scala.inline
-  def MenuTab: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsMenuTabMod.MenuTabProps] = reactDashMdLib.libTabsMenuTabMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsMenuTabMod.MenuTabProps]]
+  def MenuTab: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsMenuTabMod.MenuTabProps] = js.constructorOf[reactDashMdLib.libTabsMenuTabMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsMenuTabMod.MenuTabProps]]
   @scala.inline
-  def Menus: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusMenuMod.MenuProps] = reactDashMdLib.libMenusMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusMenuMod.MenuProps]]
+  def Menus: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusMenuMod.MenuProps] = js.constructorOf[reactDashMdLib.libMenusMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libMenusMenuMod.MenuProps]]
   @scala.inline
-  def NavigationDrawer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersNavigationDrawerMod.NavigationDrawerProps] = reactDashMdLib.libNavigationDrawersNavigationDrawerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersNavigationDrawerMod.NavigationDrawerProps]]
+  def NavigationDrawer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersNavigationDrawerMod.NavigationDrawerProps] = js.constructorOf[reactDashMdLib.libNavigationDrawersNavigationDrawerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersNavigationDrawerMod.NavigationDrawerProps]]
   @scala.inline
-  def NavigationDrawers: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersNavigationDrawerMod.NavigationDrawerProps] = reactDashMdLib.libNavigationDrawersMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersNavigationDrawerMod.NavigationDrawerProps]]
+  def NavigationDrawers: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersNavigationDrawerMod.NavigationDrawerProps] = js.constructorOf[reactDashMdLib.libNavigationDrawersMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libNavigationDrawersNavigationDrawerMod.NavigationDrawerProps]]
   @scala.inline
-  def Paper: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPapersPaperMod.PaperProps] = reactDashMdLib.libPapersPaperMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPapersPaperMod.PaperProps]]
+  def Paper: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPapersPaperMod.PaperProps] = js.constructorOf[reactDashMdLib.libPapersPaperMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPapersPaperMod.PaperProps]]
   @scala.inline
-  def Papers: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPapersPaperMod.PaperProps] = reactDashMdLib.libPapersMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPapersPaperMod.PaperProps]]
+  def Papers: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPapersPaperMod.PaperProps] = js.constructorOf[reactDashMdLib.libPapersMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPapersPaperMod.PaperProps]]
   @scala.inline
-  def Portal: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersPortalMod.PortalProps] = reactDashMdLib.libHelpersPortalMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersPortalMod.PortalProps]]
+  def Portal: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersPortalMod.PortalProps] = js.constructorOf[reactDashMdLib.libHelpersPortalMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersPortalMod.PortalProps]]
   @scala.inline
-  def Radio: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsRadioMod.RadioProps] = reactDashMdLib.libSelectionControlsRadioMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsRadioMod.RadioProps]]
+  def Radio: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsRadioMod.RadioProps] = js.constructorOf[reactDashMdLib.libSelectionControlsRadioMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsRadioMod.RadioProps]]
   @scala.inline
-  def ResizeObserver: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersResizeObserverMod.ResizeObserverProps] = reactDashMdLib.libHelpersResizeObserverMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersResizeObserverMod.ResizeObserverProps]]
+  def ResizeObserver: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersResizeObserverMod.ResizeObserverProps] = js.constructorOf[reactDashMdLib.libHelpersResizeObserverMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libHelpersResizeObserverMod.ResizeObserverProps]]
   @scala.inline
-  def SVGIcon: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSVGIconsSVGIconMod.SVGIconProps] = reactDashMdLib.libSVGIconsSVGIconMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSVGIconsSVGIconMod.SVGIconProps]]
+  def SVGIcon: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSVGIconsSVGIconMod.SVGIconProps] = js.constructorOf[reactDashMdLib.libSVGIconsSVGIconMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSVGIconsSVGIconMod.SVGIconProps]]
   @scala.inline
-  def SVGIcons: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSVGIconsSVGIconMod.SVGIconProps] = reactDashMdLib.libSVGIconsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSVGIconsSVGIconMod.SVGIconProps]]
+  def SVGIcons: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSVGIconsSVGIconMod.SVGIconProps] = js.constructorOf[reactDashMdLib.libSVGIconsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSVGIconsSVGIconMod.SVGIconProps]]
   @scala.inline
-  def SelectField: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectFieldsSelectFieldMod.SelectFieldProps] = reactDashMdLib.libSelectFieldsSelectFieldMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectFieldsSelectFieldMod.SelectFieldProps]]
+  def SelectField: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectFieldsSelectFieldMod.SelectFieldProps] = js.constructorOf[reactDashMdLib.libSelectFieldsSelectFieldMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectFieldsSelectFieldMod.SelectFieldProps]]
   @scala.inline
-  def SelectFieldColumn: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesSelectFieldColumnMod.SelectFieldColumnProps] = reactDashMdLib.libDataTablesSelectFieldColumnMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesSelectFieldColumnMod.SelectFieldColumnProps]]
+  def SelectFieldColumn: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesSelectFieldColumnMod.SelectFieldColumnProps] = js.constructorOf[reactDashMdLib.libDataTablesSelectFieldColumnMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesSelectFieldColumnMod.SelectFieldColumnProps]]
   @scala.inline
-  def SelectFields: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectFieldsSelectFieldMod.SelectFieldProps] = reactDashMdLib.libSelectFieldsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectFieldsSelectFieldMod.SelectFieldProps]]
+  def SelectFields: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectFieldsSelectFieldMod.SelectFieldProps] = js.constructorOf[reactDashMdLib.libSelectFieldsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectFieldsSelectFieldMod.SelectFieldProps]]
   @scala.inline
-  def SelectionControl: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsSelectionControlMod.SelectionControlProps] = reactDashMdLib.libSelectionControlsSelectionControlMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsSelectionControlMod.SelectionControlProps]]
+  def SelectionControl: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsSelectionControlMod.SelectionControlProps] = js.constructorOf[reactDashMdLib.libSelectionControlsSelectionControlMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsSelectionControlMod.SelectionControlProps]]
   @scala.inline
   def SelectionControlGroup: reactLib.reactMod.ReactNs.ComponentType[
     reactDashMdLib.libSelectionControlsSelectionControlGroupMod.SelectionControlGroupProps
-  ] = reactDashMdLib.libSelectionControlsSelectionControlGroupMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashMdLib.libSelectionControlsSelectionControlGroupMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   reactDashMdLib.libSelectionControlsSelectionControlGroupMod.SelectionControlGroupProps]]
   @scala.inline
-  def SelectionControls: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsSelectionControlMod.SelectionControlProps] = reactDashMdLib.libSelectionControlsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsSelectionControlMod.SelectionControlProps]]
+  def SelectionControls: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsSelectionControlMod.SelectionControlProps] = js.constructorOf[reactDashMdLib.libSelectionControlsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsSelectionControlMod.SelectionControlProps]]
   @scala.inline
-  def Slider: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSlidersSliderMod.SliderProps] = reactDashMdLib.libSlidersSliderMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSlidersSliderMod.SliderProps]]
+  def Slider: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSlidersSliderMod.SliderProps] = js.constructorOf[reactDashMdLib.libSlidersSliderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSlidersSliderMod.SliderProps]]
   @scala.inline
-  def Sliders: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSlidersSliderMod.SliderProps] = reactDashMdLib.libSlidersMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSlidersSliderMod.SliderProps]]
+  def Sliders: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSlidersSliderMod.SliderProps] = js.constructorOf[reactDashMdLib.libSlidersMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSlidersSliderMod.SliderProps]]
   @scala.inline
-  def Snackbar: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps] = reactDashMdLib.reactDashMdMod.Snackbar.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps]]
+  def Snackbar: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps] = js.constructorOf[reactDashMdLib.reactDashMdMod.Snackbar].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps]]
   @scala.inline
-  def SnackbarContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps] = reactDashMdLib.libSnackbarsSnackbarContainerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps]]
+  def SnackbarContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps] = js.constructorOf[reactDashMdLib.libSnackbarsSnackbarContainerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps]]
   @scala.inline
-  def Snackbars: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps] = reactDashMdLib.libSnackbarsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps]]
+  def Snackbars: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps] = js.constructorOf[reactDashMdLib.libSnackbarsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSnackbarsSnackbarContainerMod.SnackbarProps]]
   @scala.inline
-  def Subheader: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSubheadersSubheaderMod.SubheaderProps] = reactDashMdLib.libSubheadersSubheaderMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSubheadersSubheaderMod.SubheaderProps]]
+  def Subheader: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSubheadersSubheaderMod.SubheaderProps] = js.constructorOf[reactDashMdLib.libSubheadersSubheaderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSubheadersSubheaderMod.SubheaderProps]]
   @scala.inline
-  def Subheaders: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSubheadersSubheaderMod.SubheaderProps] = reactDashMdLib.libSubheadersMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSubheadersSubheaderMod.SubheaderProps]]
+  def Subheaders: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSubheadersSubheaderMod.SubheaderProps] = js.constructorOf[reactDashMdLib.libSubheadersMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSubheadersSubheaderMod.SubheaderProps]]
   @scala.inline
-  def Switch: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsSwitchMod.SwitchProps] = reactDashMdLib.libSelectionControlsSwitchMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsSwitchMod.SwitchProps]]
+  def Switch: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsSwitchMod.SwitchProps] = js.constructorOf[reactDashMdLib.libSelectionControlsSwitchMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libSelectionControlsSwitchMod.SwitchProps]]
   @scala.inline
-  def Tab: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabMod.TabProps] = reactDashMdLib.libTabsTabMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabMod.TabProps]]
+  def Tab: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabMod.TabProps] = js.constructorOf[reactDashMdLib.libTabsTabMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabMod.TabProps]]
   @scala.inline
-  def TabPanel: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabPanelMod.TabPanelProps] = reactDashMdLib.libTabsTabPanelMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabPanelMod.TabPanelProps]]
+  def TabPanel: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabPanelMod.TabPanelProps] = js.constructorOf[reactDashMdLib.libTabsTabPanelMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabPanelMod.TabPanelProps]]
   @scala.inline
-  def TableBody: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableBodyMod.TableBodyProps] = reactDashMdLib.libDataTablesTableBodyMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableBodyMod.TableBodyProps]]
+  def TableBody: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableBodyMod.TableBodyProps] = js.constructorOf[reactDashMdLib.libDataTablesTableBodyMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableBodyMod.TableBodyProps]]
   @scala.inline
-  def TableCardHeader: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableCardHeaderMod.TableCardHeaderProps] = reactDashMdLib.libDataTablesTableCardHeaderMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableCardHeaderMod.TableCardHeaderProps]]
+  def TableCardHeader: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableCardHeaderMod.TableCardHeaderProps] = js.constructorOf[reactDashMdLib.libDataTablesTableCardHeaderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableCardHeaderMod.TableCardHeaderProps]]
   @scala.inline
-  def TableColumn: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableColumnMod.TableColumnProps] = reactDashMdLib.libDataTablesTableColumnMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableColumnMod.TableColumnProps]]
+  def TableColumn: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableColumnMod.TableColumnProps] = js.constructorOf[reactDashMdLib.libDataTablesTableColumnMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableColumnMod.TableColumnProps]]
   @scala.inline
-  def TableFooter: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableFooterMod.TableFooterProps] = reactDashMdLib.libDataTablesTableFooterMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableFooterMod.TableFooterProps]]
+  def TableFooter: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableFooterMod.TableFooterProps] = js.constructorOf[reactDashMdLib.libDataTablesTableFooterMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableFooterMod.TableFooterProps]]
   @scala.inline
-  def TableHeader: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableHeaderMod.TableHeaderProps] = reactDashMdLib.libDataTablesTableHeaderMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableHeaderMod.TableHeaderProps]]
+  def TableHeader: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableHeaderMod.TableHeaderProps] = js.constructorOf[reactDashMdLib.libDataTablesTableHeaderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableHeaderMod.TableHeaderProps]]
   @scala.inline
-  def TablePagination: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTablePaginationMod.TablePaginationProps] = reactDashMdLib.libDataTablesTablePaginationMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTablePaginationMod.TablePaginationProps]]
+  def TablePagination: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTablePaginationMod.TablePaginationProps] = js.constructorOf[reactDashMdLib.libDataTablesTablePaginationMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTablePaginationMod.TablePaginationProps]]
   @scala.inline
-  def TableRow: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableRowMod.TableRowProps] = reactDashMdLib.libDataTablesTableRowMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableRowMod.TableRowProps]]
+  def TableRow: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableRowMod.TableRowProps] = js.constructorOf[reactDashMdLib.libDataTablesTableRowMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libDataTablesTableRowMod.TableRowProps]]
   @scala.inline
-  def Tabs: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabsContainerMod.TabsContainerProps] = reactDashMdLib.libTabsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabsContainerMod.TabsContainerProps]]
+  def Tabs: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabsContainerMod.TabsContainerProps] = js.constructorOf[reactDashMdLib.libTabsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabsContainerMod.TabsContainerProps]]
   @scala.inline
-  def TabsContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabsContainerMod.TabsContainerProps] = reactDashMdLib.libTabsTabsContainerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabsContainerMod.TabsContainerProps]]
+  def TabsContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabsContainerMod.TabsContainerProps] = js.constructorOf[reactDashMdLib.libTabsTabsContainerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTabsTabsContainerMod.TabsContainerProps]]
   @scala.inline
-  def TextField: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTextFieldsTextFieldMod.TextFieldProps] = reactDashMdLib.libTextFieldsTextFieldMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTextFieldsTextFieldMod.TextFieldProps]]
+  def TextField: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTextFieldsTextFieldMod.TextFieldProps] = js.constructorOf[reactDashMdLib.libTextFieldsTextFieldMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTextFieldsTextFieldMod.TextFieldProps]]
   @scala.inline
-  def TextFields: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTextFieldsTextFieldMod.TextFieldProps] = reactDashMdLib.libTextFieldsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTextFieldsTextFieldMod.TextFieldProps]]
+  def TextFields: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTextFieldsTextFieldMod.TextFieldProps] = js.constructorOf[reactDashMdLib.libTextFieldsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTextFieldsTextFieldMod.TextFieldProps]]
   @scala.inline
-  def TimePicker: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersTimePickerContainerMod.TimePickerProps] = reactDashMdLib.libPickersMod.^.TimePicker.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersTimePickerContainerMod.TimePickerProps]]
+  def TimePicker: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersTimePickerContainerMod.TimePickerProps] = js.constructorOf[reactDashMdLib.libPickersMod.TimePicker].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersTimePickerContainerMod.TimePickerProps]]
   @scala.inline
-  def TimePickerContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersTimePickerContainerMod.TimePickerProps] = reactDashMdLib.libPickersTimePickerContainerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersTimePickerContainerMod.TimePickerProps]]
+  def TimePickerContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersTimePickerContainerMod.TimePickerProps] = js.constructorOf[reactDashMdLib.libPickersTimePickerContainerMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libPickersTimePickerContainerMod.TimePickerProps]]
   @scala.inline
-  def Toolbar: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libToolbarsToolbarMod.ToolbarProps] = reactDashMdLib.libToolbarsToolbarMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libToolbarsToolbarMod.ToolbarProps]]
+  def Toolbar: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libToolbarsToolbarMod.ToolbarProps] = js.constructorOf[reactDashMdLib.libToolbarsToolbarMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libToolbarsToolbarMod.ToolbarProps]]
   @scala.inline
-  def Toolbars: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libToolbarsToolbarMod.ToolbarProps] = reactDashMdLib.libToolbarsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libToolbarsToolbarMod.ToolbarProps]]
+  def Toolbars: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libToolbarsToolbarMod.ToolbarProps] = js.constructorOf[reactDashMdLib.libToolbarsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libToolbarsToolbarMod.ToolbarProps]]
   @scala.inline
-  def Tooltipped: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTooltipsTooltippedMod.TooltippedProps] = reactDashMdLib.libTooltipsTooltippedMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTooltipsTooltippedMod.TooltippedProps]]
+  def Tooltipped: reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTooltipsTooltippedMod.TooltippedProps] = js.constructorOf[reactDashMdLib.libTooltipsTooltippedMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMdLib.libTooltipsTooltippedMod.TooltippedProps]]
   @scala.inline
   def AccessibleFakeButtonProps: reactDashMdLib.libHelpersAccessibleFakeButtonMod.AccessibleFakeButtonProps.type = reactDashMdLib.libHelpersAccessibleFakeButtonMod.AccessibleFakeButtonProps
   type AccessibleFakeButtonProps = reactDashMdLib.libHelpersAccessibleFakeButtonMod.AccessibleFakeButtonProps

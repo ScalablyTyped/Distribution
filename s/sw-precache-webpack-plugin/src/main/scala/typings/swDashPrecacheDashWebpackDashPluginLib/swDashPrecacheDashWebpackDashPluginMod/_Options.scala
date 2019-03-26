@@ -23,7 +23,7 @@ object _Options {
     handleFetch: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreUrlParametersMatching: js.Array[stdLib.RegExp] = null,
     importScripts: js.Any = null,
-    logger: js.Function0[scala.Unit] | (js.Function2[/* message */ js.Any, /* repeated */ js.Any, scala.Unit]) = null,
+    logger: swDashPrecacheLib.Anon_Message = null,
     maximumFileSizeToCacheInBytes: scala.Int | scala.Double = null,
     navigateFallback: java.lang.String = null,
     navigateFallbackWhitelist: js.Array[stdLib.RegExp] = null,
@@ -45,7 +45,7 @@ object _Options {
     if (!js.isUndefined(handleFetch)) __obj.updateDynamic("handleFetch")(handleFetch)
     if (ignoreUrlParametersMatching != null) __obj.updateDynamic("ignoreUrlParametersMatching")(ignoreUrlParametersMatching)
     if (importScripts != null) __obj.updateDynamic("importScripts")(importScripts)
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger)
     if (maximumFileSizeToCacheInBytes != null) __obj.updateDynamic("maximumFileSizeToCacheInBytes")(maximumFileSizeToCacheInBytes.asInstanceOf[js.Any])
     if (navigateFallback != null) __obj.updateDynamic("navigateFallback")(navigateFallback)
     if (navigateFallbackWhitelist != null) __obj.updateDynamic("navigateFallbackWhitelist")(navigateFallbackWhitelist)

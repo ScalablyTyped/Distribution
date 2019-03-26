@@ -74,3 +74,9 @@ trait FeatureTemplatesViewModel extends Accessor {
   def refresh(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.FeatureTemplatesViewModel")
+@js.native
+class FeatureTemplatesViewModelCls () extends FeatureTemplatesViewModel {
+  def this(properties: FeatureTemplatesViewModelProperties) = this()
+}
+

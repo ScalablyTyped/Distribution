@@ -10,6 +10,33 @@ trait HTMLMainElement extends HTMLElement
 
 @JSGlobal("HTMLMainElement")
 @js.native
+class HTMLMainElementCls () extends HTMLMainElement {
+  /* CompleteClass */
+  override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override var contentEditable: java.lang.String = js.native
+  /* CompleteClass */
+  override var inputMode: java.lang.String = js.native
+  /* CompleteClass */
+  override val isContentEditable: scala.Boolean = js.native
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val nextElementSibling: Element | scala.Null = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val previousElementSibling: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val style: CSSStyleDeclaration = js.native
+}
+
+@JSGlobal("HTMLMainElement")
+@js.native
 object HTMLMainElement
   extends org.scalablytyped.runtime.Instantiable0[HTMLMainElement]
 

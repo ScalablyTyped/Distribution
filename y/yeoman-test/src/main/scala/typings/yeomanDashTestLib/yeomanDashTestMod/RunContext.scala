@@ -14,37 +14,29 @@ trait RunContext
   /**
   	 * Promise `.catch()` duck typing
   	 */
-  var `catch`: (js.Function0[js.Promise[java.lang.String | _]]) | (js.Function1[
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-    js.Promise[java.lang.String | _]
-  ]) = js.native
+  @JSName("catch")
+  var catch_Original: yeomanDashTestLib.Anon_Onrejected = js.native
   var dependencies: js.Array[Dependency] = js.native
   var inDirSet: scala.Boolean = js.native
   var ran: scala.Boolean = js.native
   /**
   	 * Promise `.then()` duck typing
   	 */
-  var `then`: js.Function0[js.Promise[_]] | (js.Function1[
-    /* onfulfilled */ js.Function1[/* value */ java.lang.String, _ | js.Thenable[_]], 
-    js.Promise[_]
-  ]) | (js.Function2[
-    /* onfulfilled */ js.Function1[/* value */ java.lang.String, _ | js.Thenable[_]], 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-    js.Promise[_]
-  ]) | (js.Function2[
-    /* onfulfilled */ js.UndefOr[scala.Nothing], 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-    js.Promise[_]
-  ]) | (js.Function2[
-    /* onfulfilled */ scala.Null, 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-    js.Promise[_]
-  ]) = js.native
+  @JSName("then")
+  var then_Original: yeomanDashTestLib.Anon_Onfulfilled = js.native
   /**
   	 * Hold the execution until the returned callback is triggered
   	 * @return Callback to notify the normal execution can resume
   	 */
   def async(): js.Function0[scala.Unit] = js.native
+  /**
+  	 * Promise `.catch()` duck typing
+  	 */
+  def `catch`[TResult](): js.Promise[java.lang.String | TResult] = js.native
+  /**
+  	 * Promise `.catch()` duck typing
+  	 */
+  def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[java.lang.String | TResult] = js.native
   /**
   	 * Change directory without deleting directory content.
   	 * @param  dirPath - Directory path (relative to CWD). Prefer passing an absolute
@@ -75,6 +67,35 @@ trait RunContext
   	 * @return run context instance
   	 */
   def inTmpDir(cb: js.Function1[/* folderPath */ java.lang.String, scala.Unit]): this.type = js.native
+  /**
+  	 * Promise `.then()` duck typing
+  	 */
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  /**
+  	 * Promise `.then()` duck typing
+  	 */
+  def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ java.lang.String, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
+  /**
+  	 * Promise `.then()` duck typing
+  	 */
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.Function1[/* value */ java.lang.String, TResult1 | js.Thenable[TResult1]],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
+  /**
+  	 * Promise `.then()` duck typing
+  	 */
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.UndefOr[scala.Nothing],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
+  /**
+  	 * Promise `.then()` duck typing
+  	 */
+  def `then`[TResult1, TResult2](
+    onfulfilled: scala.Null,
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
   /**
   	 * Return a promise representing the generator run process
   	 * @return Promise resolved on end or rejected on error

@@ -4,7 +4,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(test, adapter)) [id => @ember/test, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__test/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember__test),TsIdentLibraryScoped(ember,Some(test))),TsIdentModule(Some(ember),List(test))) [id => @ember/test, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(Some(ember),List(test)) [id => @ember/test, phase => typescript] 
-[warn ] Phase1ReadTypescript.scala:201 Processing TsIdentLibraryScoped(ember,Some(test)) [id => @ember/test, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:204 Processing TsIdentLibraryScoped(ember,Some(test)) [id => @ember/test, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => @ember/test, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing @ember/test [id => @ember/test, phase => scala.js] 
 [info ] CompleteClass.scala:62 Completed implementations Vector(asyncStart, exception, asyncEnd) [id => @ember/test, phase => scala.js, this => Name(atEmberTestLib) / Name(adapterMod) / Name(default)] 

@@ -15,3 +15,9 @@ trait Navigation extends Accessor {
   val gamepad: gamepadGamepadSettings = js.native
 }
 
+@JSGlobal("__esri.Navigation")
+@js.native
+class NavigationCls () extends Navigation {
+  def this(properties: NavigationProperties) = this()
+}
+

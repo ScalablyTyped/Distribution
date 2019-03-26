@@ -12,6 +12,10 @@ trait RadioNodeList extends NodeList {
 
 @JSGlobal("RadioNodeList")
 @js.native
+class RadioNodeListCls () extends RadioNodeList
+
+@JSGlobal("RadioNodeList")
+@js.native
 object RadioNodeList
   extends org.scalablytyped.runtime.Instantiable0[RadioNodeList]
 

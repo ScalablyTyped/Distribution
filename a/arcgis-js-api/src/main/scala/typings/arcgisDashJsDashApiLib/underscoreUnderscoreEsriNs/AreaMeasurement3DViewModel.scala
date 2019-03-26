@@ -64,3 +64,9 @@ trait AreaMeasurement3DViewModel extends Accessor {
   def newMeasurement(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.AreaMeasurement3DViewModel")
+@js.native
+class AreaMeasurement3DViewModelCls () extends AreaMeasurement3DViewModel {
+  def this(properties: AreaMeasurement3DViewModelProperties) = this()
+}
+

@@ -13,7 +13,29 @@ package object joiMod {
   ])
   type LanguageRootOptions = joiLib.Anon_Key with (stdLib.Partial[stdLib.Record[Types, LanguageOptions]])
   type LazySchema = AnySchema
+  /* Rewritten from type alias, can be one of: 
+    - AnySchema
+    - ArraySchema
+    - AlternativesSchema
+    - BinarySchema
+    - BooleanSchema
+    - DateSchema
+    - FunctionSchema
+    - NumberSchema
+    - ObjectSchema
+    - StringSchema
+    - LazySchema
+  */
   type Schema = _Schema | LazySchema
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - scala.Double
+    - scala.Boolean
+    - js.Object
+    - scala.Null
+    - Schema
+    - SchemaMap
+  */
   type SchemaLike = _SchemaLike | java.lang.String | scala.Double | scala.Boolean | js.Object | scala.Null | LazySchema
   type ValidationErrorFunction = js.Function1[
     /* errors */ js.Array[ValidationErrorItem], 

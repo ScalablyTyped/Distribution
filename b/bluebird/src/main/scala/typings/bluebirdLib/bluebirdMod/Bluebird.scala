@@ -16,70 +16,8 @@ trait Bluebird[R]
     *
     * Alias `.caught();` for compatibility with earlier ECMAScript version.
     */
-  var caught: (js.Function1[
-    /* onReject */ js.UndefOr[(js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]]) | scala.Null], 
-    Bluebird[_ | R]
-  ]) | (js.Function6[
-    /* filter1 */ bluebirdLib.Constructor[_], 
-    /* filter2 */ bluebirdLib.Constructor[_], 
-    /* filter3 */ bluebirdLib.Constructor[_], 
-    /* filter4 */ bluebirdLib.Constructor[_], 
-    /* filter5 */ bluebirdLib.Constructor[_], 
-    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
-    Bluebird[_ | R]
-  ]) | (js.Function6[
-    /* filter1 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* filter2 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* filter3 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* filter4 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* filter5 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
-    Bluebird[_ | R]
-  ]) | (js.Function5[
-    /* filter1 */ bluebirdLib.Constructor[_], 
-    /* filter2 */ bluebirdLib.Constructor[_], 
-    /* filter3 */ bluebirdLib.Constructor[_], 
-    /* filter4 */ bluebirdLib.Constructor[_], 
-    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
-    Bluebird[_ | R]
-  ]) | (js.Function5[
-    /* filter1 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* filter2 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* filter3 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* filter4 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
-    Bluebird[_ | R]
-  ]) | (js.Function4[
-    /* filter1 */ bluebirdLib.Constructor[_], 
-    /* filter2 */ bluebirdLib.Constructor[_], 
-    /* filter3 */ bluebirdLib.Constructor[_], 
-    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
-    Bluebird[_ | R]
-  ]) | (js.Function4[
-    /* filter1 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* filter2 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* filter3 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
-    Bluebird[_ | R]
-  ]) | (js.Function3[
-    /* filter1 */ bluebirdLib.Constructor[_], 
-    /* filter2 */ bluebirdLib.Constructor[_], 
-    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
-    Bluebird[_ | R]
-  ]) | (js.Function3[
-    /* filter1 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* filter2 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
-    Bluebird[_ | R]
-  ]) | (js.Function2[
-    /* filter1 */ bluebirdLib.Constructor[_], 
-    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
-    Bluebird[_ | R]
-  ]) | (js.Function2[
-    /* filter1 */ bluebirdLib.Constructor[_] | bluebirdLib.CatchFilter[_], 
-    /* onReject */ js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[_]], 
-    Bluebird[_ | R]
-  ]) = js.native
+  @JSName("caught")
+  var caught_Original: bluebirdLib.Anon_Error[R] = js.native
   @JSName("lastly")
   var lastly_Original: js.Function1[/* handler */ js.Function0[bluebirdLib.Resolvable[_]], Bluebird[R]] = js.native
   /**
@@ -783,6 +721,262 @@ trait Bluebird[R]
     * Same limitations apply as with `.catchReturn()`.
     */
   def catchThrow(reason: stdLib.Error): Bluebird[R] = js.native
+  def caught[U](): Bluebird[U | R] = js.native
+  /**
+    * This is a catch-all exception handler, shortcut for calling `.then(null, handler)` on this promise.
+    *
+    * Any exception happening in a `.then`-chain will propagate to nearest `.catch` handler.
+    *
+    * Alias `.caught();` for compatibility with earlier ECMAScript version.
+    */
+  def caught[U](onReject: js.Function1[/* error */ js.Any, bluebirdLib.Resolvable[U]]): Bluebird[U | R] = js.native
+  def caught[U, E1](
+    // tslint:disable-next-line:unified-signatures
+  filter1: bluebirdLib.CatchFilter[E1],
+    onReject: js.Function1[/* error */ E1, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  /**
+    * This is a catch-all exception handler, shortcut for calling `.then(null, handler)` on this promise.
+    *
+    * Any exception happening in a `.then`-chain will propagate to nearest `.catch` handler.
+    *
+    * Alias `.caught();` for compatibility with earlier ECMAScript version.
+    */
+  def caught[U, E1](
+    filter1: bluebirdLib.Constructor[E1],
+    onReject: js.Function1[/* error */ E1, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  /**
+    * This is a catch-all exception handler, shortcut for calling `.then(null, handler)` on this promise.
+    *
+    * Any exception happening in a `.then`-chain will propagate to nearest `.catch` handler.
+    *
+    * Alias `.caught();` for compatibility with earlier ECMAScript version.
+    */
+  def caught[U, E1, E2](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    onReject: js.Function1[/* error */ E1 | E2, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.CatchFilter[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.CatchFilter[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.CatchFilter[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.CatchFilter[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  /**
+    * This is a catch-all exception handler, shortcut for calling `.then(null, handler)` on this promise.
+    *
+    * Any exception happening in a `.then`-chain will propagate to nearest `.catch` handler.
+    *
+    * Alias `.caught();` for compatibility with earlier ECMAScript version.
+    */
+  def caught[U, E1, E2, E3](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    onReject: js.Function1[/* error */ E1 | E2 | E3, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.CatchFilter[E3],
+    filter4: bluebirdLib.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.CatchFilter[E3],
+    filter4: bluebirdLib.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    filter4: bluebirdLib.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    filter4: bluebirdLib.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.CatchFilter[E3],
+    filter4: bluebirdLib.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.CatchFilter[E3],
+    filter4: bluebirdLib.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    filter4: bluebirdLib.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    filter4: bluebirdLib.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.CatchFilter[E3],
+    filter4: bluebirdLib.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.CatchFilter[E3],
+    filter4: bluebirdLib.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    filter4: bluebirdLib.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    filter4: bluebirdLib.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.CatchFilter[E3],
+    filter4: bluebirdLib.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.CatchFilter[E3],
+    filter4: bluebirdLib.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    filter4: bluebirdLib.CatchFilter[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  /**
+    * This is a catch-all exception handler, shortcut for calling `.then(null, handler)` on this promise.
+    *
+    * Any exception happening in a `.then`-chain will propagate to nearest `.catch` handler.
+    *
+    * Alias `.caught();` for compatibility with earlier ECMAScript version.
+    */
+  def caught[U, E1, E2, E3, E4](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    filter4: bluebirdLib.Constructor[E4],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  /**
+    * This is a catch-all exception handler, shortcut for calling `.then(null, handler)` on this promise.
+    *
+    * Any exception happening in a `.then`-chain will propagate to nearest `.catch` handler.
+    *
+    * Alias `.caught();` for compatibility with earlier ECMAScript version.
+    */
+  def caught[U, E1, E2, E3, E4, E5](
+    filter1: bluebirdLib.Constructor[E1] | bluebirdLib.CatchFilter[E1],
+    filter2: bluebirdLib.Constructor[E2] | bluebirdLib.CatchFilter[E2],
+    filter3: bluebirdLib.Constructor[E3] | bluebirdLib.CatchFilter[E3],
+    filter4: bluebirdLib.Constructor[E4] | bluebirdLib.CatchFilter[E4],
+    filter5: bluebirdLib.Constructor[E5] | bluebirdLib.CatchFilter[E5],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
+  /**
+    * This is a catch-all exception handler, shortcut for calling `.then(null, handler)` on this promise.
+    *
+    * Any exception happening in a `.then`-chain will propagate to nearest `.catch` handler.
+    *
+    * Alias `.caught();` for compatibility with earlier ECMAScript version.
+    */
+  def caught[U, E1, E2, E3, E4, E5](
+    filter1: bluebirdLib.Constructor[E1],
+    filter2: bluebirdLib.Constructor[E2],
+    filter3: bluebirdLib.Constructor[E3],
+    filter4: bluebirdLib.Constructor[E4],
+    filter5: bluebirdLib.Constructor[E5],
+    onReject: js.Function1[/* error */ E1 | E2 | E3 | E4 | E5, bluebirdLib.Resolvable[U]]
+  ): Bluebird[U | R] = js.native
   /**
     * Same as calling `Promise.delay(ms, this)`.
     */

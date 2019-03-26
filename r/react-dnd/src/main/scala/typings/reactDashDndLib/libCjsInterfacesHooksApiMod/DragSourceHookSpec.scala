@@ -12,7 +12,7 @@ trait DragSourceHookSpec[DragObject /* <: DragObjectWithType */, DropResult, Col
   var begin: js.UndefOr[
     js.Function1[
       /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor, 
-      js.UndefOr[DragObject]
+      js.UndefOr[DragObject | scala.Unit]
     ]
   ] = js.undefined
   /**
@@ -84,33 +84,22 @@ trait DragSourceHookSpec[DragObject /* <: DragObjectWithType */, DropResult, Col
     */
   var options: js.UndefOr[reactDashDndLib.libCjsInterfacesOptionsMod.DragSourceOptions] = js.undefined
   /**
-    * An optional dragPreview
-    */
-  var preview: js.UndefOr[reactLib.reactMod.ReactNs.RefObject[_] | stdLib.Element] = js.undefined
-  /**
     * DragPreview options
     */
   var previewOptions: js.UndefOr[reactDashDndLib.libCjsInterfacesOptionsMod.DragPreviewOptions] = js.undefined
-  /**
-    * The ref object to associated with this dragged itom. If this is not specified it will be
-    * returned in the `ref` field of the result object.
-    */
-  var ref: js.UndefOr[reactLib.reactMod.ReactNs.RefObject[_]] = js.undefined
 }
 
 object DragSourceHookSpec {
   @scala.inline
   def apply[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](
     item: DragObject,
-    begin: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => js.UndefOr[DragObject] = null,
+    begin: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => js.UndefOr[DragObject | scala.Unit] = null,
     canDrag: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => scala.Boolean = null,
     collect: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => CollectedProps = null,
     end: (/* dropResult */ js.UndefOr[DropResult], /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor) => scala.Unit = null,
     isDragging: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => scala.Boolean = null,
     options: reactDashDndLib.libCjsInterfacesOptionsMod.DragSourceOptions = null,
-    preview: reactLib.reactMod.ReactNs.RefObject[_] | stdLib.Element = null,
-    previewOptions: reactDashDndLib.libCjsInterfacesOptionsMod.DragPreviewOptions = null,
-    ref: reactLib.reactMod.ReactNs.RefObject[_] = null
+    previewOptions: reactDashDndLib.libCjsInterfacesOptionsMod.DragPreviewOptions = null
   ): DragSourceHookSpec[DragObject, DropResult, CollectedProps] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
@@ -119,9 +108,7 @@ object DragSourceHookSpec {
     if (end != null) __obj.updateDynamic("end")(js.Any.fromFunction2(end))
     if (isDragging != null) __obj.updateDynamic("isDragging")(js.Any.fromFunction1(isDragging))
     if (options != null) __obj.updateDynamic("options")(options)
-    if (preview != null) __obj.updateDynamic("preview")(preview.asInstanceOf[js.Any])
     if (previewOptions != null) __obj.updateDynamic("previewOptions")(previewOptions)
-    if (ref != null) __obj.updateDynamic("ref")(ref)
     __obj.asInstanceOf[DragSourceHookSpec[DragObject, DropResult, CollectedProps]]
   }
 }

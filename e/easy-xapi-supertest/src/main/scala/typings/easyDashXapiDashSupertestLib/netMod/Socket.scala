@@ -41,3 +41,9 @@ trait Socket
   def write(str: java.lang.String, encoding: java.lang.String, fd: java.lang.String): scala.Boolean = js.native
 }
 
+@JSImport("net", "Socket")
+@js.native
+class SocketCls () extends Socket {
+  def this(options: easyDashXapiDashSupertestLib.Anon_AllowHalfOpen) = this()
+}
+

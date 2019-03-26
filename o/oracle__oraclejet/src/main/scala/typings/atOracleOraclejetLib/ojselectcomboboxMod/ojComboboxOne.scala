@@ -98,7 +98,10 @@ trait ojComboboxOne[K, D]
     _
   ]) | scala.Null = js.native
   @JSName("onValueChanged")
-  var onValueChanged_ojComboboxOne: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onValueChanged_ojComboboxOne: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onValueOptionChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_LabelValue], 
     _

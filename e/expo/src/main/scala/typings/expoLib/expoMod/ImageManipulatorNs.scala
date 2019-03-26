@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "ImageManipulator")
 @js.native
 object ImageManipulatorNs extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - Resize
+    - Rotate
+    - Flip
+    - Crop
+  */
   trait Action extends js.Object
   
   trait Crop extends Action {

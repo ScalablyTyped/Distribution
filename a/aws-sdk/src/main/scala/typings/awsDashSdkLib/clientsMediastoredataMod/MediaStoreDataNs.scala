@@ -324,6 +324,11 @@ object MediaStoreDataNs extends js.Object {
   type ETag = java.lang.String
   type ItemList = js.Array[Item]
   type ItemName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.OBJECT
+    - awsDashSdkLib.awsDashSdkLibStrings.FOLDER
+    - java.lang.String
+  */
   type ItemType = _ItemType | java.lang.String
   type ListLimit = scala.Double
   type ListPathNaming = java.lang.String
@@ -336,6 +341,11 @@ object MediaStoreDataNs extends js.Object {
   type StorageClass = awsDashSdkLib.awsDashSdkLibStrings.TEMPORAL | java.lang.String
   type StringPrimitive = java.lang.String
   type TimeStamp = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-09-01`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
   type statusCode = scala.Double
 }

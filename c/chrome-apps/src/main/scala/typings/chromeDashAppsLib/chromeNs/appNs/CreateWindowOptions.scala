@@ -131,7 +131,7 @@ trait CreateWindowOptions extends ContentBounds {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FULLSCREEN[keyof chrome-apps.Anon_FULLSCREEN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.normal | chromeDashAppsLib.chromeDashAppsLibStrings.fullscreen | chromeDashAppsLib.chromeDashAppsLibStrings.maximized | chromeDashAppsLib.chromeDashAppsLibStrings.minimized
       ]
     ]
   ] = js.undefined
@@ -175,7 +175,7 @@ object CreateWindowOptions {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FULLSCREEN[keyof chrome-apps.Anon_FULLSCREEN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.normal | chromeDashAppsLib.chromeDashAppsLibStrings.fullscreen | chromeDashAppsLib.chromeDashAppsLibStrings.maximized | chromeDashAppsLib.chromeDashAppsLibStrings.minimized
       ]
     ] = null,
     top: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,

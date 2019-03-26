@@ -57,3 +57,9 @@ trait RelationParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.RelationParameters")
+@js.native
+class RelationParametersCls () extends RelationParameters {
+  def this(properties: RelationParametersProperties) = this()
+}
+

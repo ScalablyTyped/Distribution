@@ -1,0 +1,19 @@
+package typings
+package atMaterialDashUiLabLib.atMaterialDashUiLabMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/lab", "ToggleButtonGroup")
+@js.native
+class ToggleButtonGroup protected ()
+  extends reactLib.reactMod.ReactNs.Component[
+      atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps, 
+      reactLib.reactMod.ReactNs.ComponentState, 
+      js.Any
+    ] {
+  def this(props: atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps) = this()
+  def this(props: atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps, context: js.Any) = this()
+}
+

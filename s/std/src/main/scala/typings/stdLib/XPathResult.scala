@@ -29,6 +29,49 @@ trait XPathResult extends js.Object {
 
 @JSGlobal("XPathResult")
 @js.native
+class XPathResultCls () extends XPathResult {
+  /* CompleteClass */
+  override val ANY_TYPE: scala.Double = js.native
+  /* CompleteClass */
+  override val ANY_UNORDERED_NODE_TYPE: scala.Double = js.native
+  /* CompleteClass */
+  override val BOOLEAN_TYPE: scala.Double = js.native
+  /* CompleteClass */
+  override val FIRST_ORDERED_NODE_TYPE: scala.Double = js.native
+  /* CompleteClass */
+  override val NUMBER_TYPE: scala.Double = js.native
+  /* CompleteClass */
+  override val ORDERED_NODE_ITERATOR_TYPE: scala.Double = js.native
+  /* CompleteClass */
+  override val ORDERED_NODE_SNAPSHOT_TYPE: scala.Double = js.native
+  /* CompleteClass */
+  override val STRING_TYPE: scala.Double = js.native
+  /* CompleteClass */
+  override val UNORDERED_NODE_ITERATOR_TYPE: scala.Double = js.native
+  /* CompleteClass */
+  override val UNORDERED_NODE_SNAPSHOT_TYPE: scala.Double = js.native
+  /* CompleteClass */
+  override val booleanValue: scala.Boolean = js.native
+  /* CompleteClass */
+  override val invalidIteratorState: scala.Boolean = js.native
+  /* CompleteClass */
+  override val numberValue: scala.Double = js.native
+  /* CompleteClass */
+  override val resultType: scala.Double = js.native
+  /* CompleteClass */
+  override val singleNodeValue: Node = js.native
+  /* CompleteClass */
+  override val snapshotLength: scala.Double = js.native
+  /* CompleteClass */
+  override val stringValue: java.lang.String = js.native
+  /* CompleteClass */
+  override def iterateNext(): Node = js.native
+  /* CompleteClass */
+  override def snapshotItem(index: scala.Double): Node = js.native
+}
+
+@JSGlobal("XPathResult")
+@js.native
 object XPathResult
   extends org.scalablytyped.runtime.Instantiable0[XPathResult] {
   val ANY_TYPE: scala.Double = js.native

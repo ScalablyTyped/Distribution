@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "object-path-immutable"
-version := "3.0.2-6555d0"
+version := "3.0.2-bfabc6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "is-plain-object" % "2.0.4-12839b",
-  "org.scalablytyped" %%% "isobject" % "3.0.1-76e358",
-  "org.scalablytyped" %%% "std" % "3.3-ec2942")
+  "org.scalablytyped" %%% "is-plain-object" % "2.0.4-afe393",
+  "org.scalablytyped" %%% "isobject" % "3.0.1-745cb6",
+  "org.scalablytyped" %%% "std" % "3.3-14e863")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

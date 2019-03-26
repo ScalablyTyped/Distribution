@@ -6,6 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object CoreNs {
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - pouchdbDashCoreLib.Blob
+    - pouchdbDashCoreLib.Buffer
+  */
   type AttachmentData = _AttachmentData | java.lang.String
   type AttachmentId = java.lang.String
   type Callback[R] = js.Function2[/* error */ Error | scala.Null, /* result */ R | scala.Null, scala.Unit]

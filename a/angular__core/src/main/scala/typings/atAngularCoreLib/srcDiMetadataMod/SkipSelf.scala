@@ -7,3 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SkipSelf extends js.Object
 
+@JSImport("@angular/core/src/di/metadata", "SkipSelf")
+@js.native
+class SkipSelfCls () extends SkipSelf
+

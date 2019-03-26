@@ -19,7 +19,7 @@ object SecureClientSessionOptions {
     checkServerIdentity: (/* host */ java.lang.String, /* cert */ nodeLib.tlsMod.PeerCertificate) => js.UndefOr[nodeLib.Error] = null,
     ciphers: java.lang.String = null,
     clientCertEngine: java.lang.String = null,
-    createConnection: /* option */ SessionOptions => nodeLib.streamMod.Duplex = null,
+    createConnection: (/* authority */ nodeLib.urlMod.URL, /* option */ SessionOptions) => nodeLib.streamMod.Duplex = null,
     crl: java.lang.String | nodeLib.Buffer | (js.Array[java.lang.String | nodeLib.Buffer]) = null,
     dhparam: java.lang.String | nodeLib.Buffer = null,
     ecdhCurve: java.lang.String = null,
@@ -59,7 +59,7 @@ object SecureClientSessionOptions {
     if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2(checkServerIdentity))
     if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
     if (clientCertEngine != null) __obj.updateDynamic("clientCertEngine")(clientCertEngine)
-    if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction1(createConnection))
+    if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction2(createConnection))
     if (crl != null) __obj.updateDynamic("crl")(crl.asInstanceOf[js.Any])
     if (dhparam != null) __obj.updateDynamic("dhparam")(dhparam.asInstanceOf[js.Any])
     if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve)

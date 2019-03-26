@@ -5,5 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.bitcoin
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.dat
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.dweb
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.geo
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.gopher
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.im
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.ipfs
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.ipns
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.irc
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.ircs
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.magnet
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.mailto
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.mms
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.news
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.nntp
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.sip
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.sms
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.smsto
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.ssb
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.ssh
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.tel
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.urn
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.webcal
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.wtai
+  - firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.xmpp
+*/
 trait _ProtocolHandlerProtocol extends js.Object
 

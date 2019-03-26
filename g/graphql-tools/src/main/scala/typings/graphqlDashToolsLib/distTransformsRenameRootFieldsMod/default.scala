@@ -14,5 +14,10 @@ class default protected () extends RenameRootFields {
       /* field */ graphqlLib.typeDefinitionMod.GraphQLField[_, _, org.scalablytyped.runtime.StringDictionary[_]], 
       java.lang.String
     ]) = this()
+  /* CompleteClass */
+  override var transformer: js.Any = js.native
+  /* CompleteClass */
+  @JSName("transformSchema")
+  override def transformSchema_MRenameRootFields(originalSchema: graphqlLib.graphqlMod.GraphQLSchema): graphqlLib.graphqlMod.GraphQLSchema = js.native
 }
 

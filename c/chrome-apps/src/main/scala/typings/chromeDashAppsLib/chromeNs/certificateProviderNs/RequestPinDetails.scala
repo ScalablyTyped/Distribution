@@ -25,7 +25,7 @@ trait RequestPinDetails extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INVALIDPIN[keyof chrome-apps.Anon_INVALIDPIN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_PIN | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_PUK | chromeDashAppsLib.chromeDashAppsLibStrings.MAX_ATTEMPTS_EXCEEDED | chromeDashAppsLib.chromeDashAppsLibStrings.UNKNOWN_ERROR
       ]
     ]
   ] = js.undefined
@@ -39,7 +39,7 @@ trait RequestPinDetails extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PIN[keyof chrome-apps.Anon_PIN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.PIN | chromeDashAppsLib.chromeDashAppsLibStrings.PUK
       ]
     ]
   ] = js.undefined
@@ -59,7 +59,7 @@ object RequestPinDetails {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INVALIDPIN[keyof chrome-apps.Anon_INVALIDPIN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_PIN | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_PUK | chromeDashAppsLib.chromeDashAppsLibStrings.MAX_ATTEMPTS_EXCEEDED | chromeDashAppsLib.chromeDashAppsLibStrings.UNKNOWN_ERROR
       ]
     ] = null,
     requestType: chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -67,7 +67,7 @@ object RequestPinDetails {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PIN[keyof chrome-apps.Anon_PIN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.PIN | chromeDashAppsLib.chromeDashAppsLibStrings.PUK
       ]
     ] = null
   ): RequestPinDetails = {

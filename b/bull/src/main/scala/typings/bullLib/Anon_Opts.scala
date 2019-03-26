@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Opts
-  extends  // tslint:disable-line unified-signatures
-org.scalablytyped.runtime.Instantiable1[/* queueName */ java.lang.String, bullLib.bullMod.BullNs.Queue[js.Any]]
+  extends org.scalablytyped.runtime.Instantiable1[/* queueName */ java.lang.String, bullLib.bullMod.BullNs.Queue[js.Object]]
      with org.scalablytyped.runtime.Instantiable3[
       /* queueName */ java.lang.String, 
       /* url */ java.lang.String, 
       /* opts */ bullLib.bullMod.BullNs.QueueOptions, 
-      bullLib.bullMod.BullNs.Queue[js.Any]
+      bullLib.bullMod.BullNs.Queue[js.Object]
     ]
      with org.scalablytyped.runtime.Instantiable2[
       /* queueName */ java.lang.String, 
       (/* opts */ bullLib.bullMod.BullNs.QueueOptions) | (/* url */ java.lang.String), 
-      bullLib.bullMod.BullNs.Queue[js.Any]
+      bullLib.bullMod.BullNs.Queue[js.Object]
     ] {
-  def apply(queueName: java.lang.String): bullLib.bullMod.BullNs.Queue[_] = js.native
-  def apply(queueName: java.lang.String, opts: bullLib.bullMod.BullNs.QueueOptions): bullLib.bullMod.BullNs.Queue[_] = js.native
-  def apply(queueName: java.lang.String, url: java.lang.String): bullLib.bullMod.BullNs.Queue[_] = js.native
-  def apply(queueName: java.lang.String, url: java.lang.String, opts: bullLib.bullMod.BullNs.QueueOptions): bullLib.bullMod.BullNs.Queue[_] = js.native
+  /* tslint:disable:no-unnecessary-generics unified-signatures */
+  def apply[T](queueName: java.lang.String): bullLib.bullMod.BullNs.Queue[T] = js.native
+  def apply[T](queueName: java.lang.String, opts: bullLib.bullMod.BullNs.QueueOptions): bullLib.bullMod.BullNs.Queue[T] = js.native
+  def apply[T](queueName: java.lang.String, url: java.lang.String): bullLib.bullMod.BullNs.Queue[T] = js.native
+  def apply[T](queueName: java.lang.String, url: java.lang.String, opts: bullLib.bullMod.BullNs.QueueOptions): bullLib.bullMod.BullNs.Queue[T] = js.native
 }
 

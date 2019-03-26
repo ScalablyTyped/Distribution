@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object muiDashDatatablesLibComponents {
   @scala.inline
-  def MuiDashDatatables: reactLib.reactMod.ReactNs.ComponentType[muiDashDatatablesLib.muiDashDatatablesMod.MUIDataTableProps] = muiDashDatatablesLib.muiDashDatatablesMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[muiDashDatatablesLib.muiDashDatatablesMod.MUIDataTableProps]]
+  def MuiDashDatatables: reactLib.reactMod.ReactNs.ComponentType[muiDashDatatablesLib.muiDashDatatablesMod.MUIDataTableProps] = js.constructorOf[muiDashDatatablesLib.muiDashDatatablesMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[muiDashDatatablesLib.muiDashDatatablesMod.MUIDataTableProps]]
   @scala.inline
   def Popover: reactLib.reactMod.ReactNs.ComponentType[muiDashDatatablesLib.muiDashDatatablesMod.MUIDataTablePopover] = muiDashDatatablesLib.muiDashDatatablesMod.^.Popover.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[muiDashDatatablesLib.muiDashDatatablesMod.MUIDataTablePopover]]
   @scala.inline

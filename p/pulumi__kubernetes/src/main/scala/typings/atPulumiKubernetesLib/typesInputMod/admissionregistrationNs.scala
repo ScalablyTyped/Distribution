@@ -8,150 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/kubernetes/types/input", "admissionregistration")
 @js.native
 object admissionregistrationNs extends js.Object {
-  @JSName("v1alpha1")
-  @js.native
-  object v1alpha1Ns extends js.Object {
-    /**
-      * Initializer describes the name and the failure policy of an initializer, and what resources
-      * it applies to.
-      */
-    trait Initializer extends js.Object {
-      /**
-        * Name is the identifier of the initializer. It will be added to the object that needs to be
-        * initialized. Name should be fully qualified, e.g., alwayspullimages.kubernetes.io, where
-        * "alwayspullimages" is the name of the webhook, and kubernetes.io is the name of the
-        * organization. Required
-        */
-      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
-      /**
-        * Rules describes what resources/subresources the initializer cares about. The initializer
-        * cares about an operation if it matches _any_ Rule. Rule.Resources must not include
-        * subresources.
-        */
-      var rules: js.UndefOr[
-            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Rule]]]
-          ] = js.undefined
-    }
-    
-    /**
-      * InitializerConfiguration describes the configuration of initializers.
-      */
-    trait InitializerConfiguration extends js.Object {
-      /**
-        * APIVersion defines the versioned schema of this representation of an object. Servers should
-        * convert recognized schemas to the latest internal value, and may reject unrecognized
-        * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
-        */
-      var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.outputMod.Input[
-              atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1`
-            ]
-          ] = js.undefined
-      /**
-        * Initializers is a list of resources and their default initializers Order-sensitive. When
-        * merging multiple InitializerConfigurations, we sort the initializers from different
-        * InitializerConfigurations by the name of the InitializerConfigurations; the order of the
-        * initializers from the same InitializerConfiguration is preserved.
-        */
-      var initializers: js.UndefOr[
-            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Initializer]]]
-          ] = js.undefined
-      /**
-        * Kind is a string value representing the REST resource this object represents. Servers may
-        * infer this from the endpoint the client submits requests to. Cannot be updated. In
-        * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
-        */
-      var kind: js.UndefOr[
-            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.InitializerConfiguration]
-          ] = js.undefined
-      /**
-        * Standard object metadata; More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
-        */
-      var metadata: js.UndefOr[
-            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
-          ] = js.undefined
-    }
-    
-    /**
-      * InitializerConfigurationList is a list of InitializerConfiguration.
-      */
-    trait InitializerConfigurationList extends js.Object {
-      /**
-        * APIVersion defines the versioned schema of this representation of an object. Servers should
-        * convert recognized schemas to the latest internal value, and may reject unrecognized
-        * values. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
-        */
-      var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.outputMod.Input[
-              atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1`
-            ]
-          ] = js.undefined
-      /**
-        * List of InitializerConfiguration.
-        */
-      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[InitializerConfiguration]]]
-      /**
-        * Kind is a string value representing the REST resource this object represents. Servers may
-        * infer this from the endpoint the client submits requests to. Cannot be updated. In
-        * CamelCase. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
-        */
-      var kind: js.UndefOr[
-            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.InitializerConfigurationList]
-          ] = js.undefined
-      /**
-        * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
-        */
-      var metadata: js.UndefOr[
-            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
-          ] = js.undefined
-    }
-    
-    /**
-      * Rule is a tuple of APIGroups, APIVersion, and Resources.It is recommended to make sure that
-      * all the tuple expansions are valid.
-      */
-    trait Rule extends js.Object {
-      /**
-        * APIGroups is the API groups the resources belong to. '*' is all groups. If '*' is present,
-        * the length of the slice must be one. Required.
-        */
-      var apiGroups: js.UndefOr[
-            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
-          ] = js.undefined
-      /**
-        * APIVersions is the API versions the resources belong to. '*' is all versions. If '*' is
-        * present, the length of the slice must be one. Required.
-        */
-      var apiVersions: js.UndefOr[
-            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
-          ] = js.undefined
-      /**
-        * Resources is a list of resources this rule applies to.
-        *
-        * For example: 'pods' means pods. 'pods/log' means the log subresource of pods. '*' means all
-        * resources, but not subresources. 'pods/ *' means all subresources of pods. '*&#8205;/scale'
-        * means all scale subresources. '*&#8205;/ *' means all resources and their subresources.
-        *
-        * If wildcard is present, the validation rule will ensure resources do not overlap with each
-        * other.
-        *
-        * Depending on the enclosing object, subresources might not be allowed. Required.
-        */
-      var resources: js.UndefOr[
-            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
-          ] = js.undefined
-    }
-    
-    def isInitializerConfiguration(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.admissionregistration.v1alpha1.InitializerConfiguration */ scala.Boolean = js.native
-    def isInitializerConfigurationList(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.admissionregistration.v1alpha1.InitializerConfigurationList */ scala.Boolean = js.native
-  }
-  
   @JSName("v1beta1")
   @js.native
   object v1beta1Ns extends js.Object {
@@ -275,6 +131,14 @@ object admissionregistrationNs extends js.Object {
       var resources: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
+      /**
+        * scope specifies the scope of this rule. Valid values are "Cluster", "Namespaced", and "*"
+        * "Cluster" means that only cluster-scoped resources will match this rule. Namespace API
+        * objects are cluster-scoped. "Namespaced" means that only namespaced resources will match
+        * this rule. "*" means that there are no scope restrictions. Subresources match the scope of
+        * their parent resource. Default is "*".
+        */
+      var scope: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -381,6 +245,17 @@ object admissionregistrationNs extends js.Object {
       */
     trait Webhook extends js.Object {
       /**
+        * AdmissionReviewVersions is an ordered list of preferred `AdmissionReview` versions the
+        * Webhook expects. API server will try to use first version in the list which it supports. If
+        * none of the versions specified in this list supported by API server, validation will fail
+        * for this object. If a persisted webhook configuration specifies allowed versions and does
+        * not include any versions known to the API Server, calls to the webhook will fail and be
+        * subject to the failure policy. Default to `['v1beta1']`.
+        */
+      var admissionReviewVersions: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
+          ] = js.undefined
+      /**
         * ClientConfig defines how to communicate with the hook. Required
         */
       var clientConfig: atPulumiPulumiLib.outputMod.Input[WebhookClientConfig]
@@ -458,6 +333,12 @@ object admissionregistrationNs extends js.Object {
         * Unknown.
         */
       var sideEffects: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
+        * TimeoutSeconds specifies the timeout for this webhook. After the timeout passes, the
+        * webhook call will be ignored or the API call will fail based on the failure policy. The
+        * timeout value must be between 1 and 30 seconds. Default to 30 seconds.
+        */
+      var timeoutSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**

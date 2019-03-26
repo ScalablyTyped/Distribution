@@ -26,6 +26,11 @@ package object JQueryNs {
   // #endregion
   // region Effects
   // #region Effects
+  /* Rewritten from type alias, can be one of: 
+    - scala.Double
+    - jqueryLib.jqueryLibStrings.fast
+    - jqueryLib.jqueryLibStrings.slow
+  */
   type Duration = _Duration | scala.Double
   // #endregion
   // region Easing
@@ -68,6 +73,11 @@ package object JQueryNs {
     * @since 1.8
     */
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
+  /* Rewritten from type alias, can be one of: 
+    - jqueryLib.Anon_Get[TElement]
+    - jqueryLib.Anon_Set[TElement]
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
   type PropHook[TElement] = _PropHook[TElement] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   // region Queue
@@ -88,11 +98,32 @@ package object JQueryNs {
     * @see \`{@link https://learn.jquery.com/events/event-extensions/#special-event-hooks }\`
     */
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
+  /* Rewritten from type alias, can be one of: 
+    - jqueryLib.Anon_NoBubble
+    - jqueryLib.Anon_BindType
+    - jqueryLib.Anon_DelegateType
+    - jqueryLib.Anon_Data[TTarget, TData]
+    - jqueryLib.Anon_False[TTarget]
+    - jqueryLib.Anon_Add[TTarget, TData]
+    - jqueryLib.Anon_HandleObj[TTarget, TData]
+    - jqueryLib.Anon_DataEvent[TTarget, TData]
+    - jqueryLib.Anon_DataDefault[TTarget, TData]
+    - jqueryLib.Anon_DataEventHandle[TTarget, TData]
+    - jqueryLib.Anon_Event[TTarget]
+    - jqueryLib.Anon_EventPostDispatch[TTarget]
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
   type SpecialEventHook[TTarget, TData] = (_SpecialEventHook[TTarget, TData]) | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   // region Speed
   // #region Speed
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
+  /* Rewritten from type alias, can be one of: 
+    - jqueryLib.Anon_Duration
+    - jqueryLib.Anon_Easing
+    - jqueryLib.Anon_Complete[TElement]
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
   type SpeedSettings[TElement] = _SpeedSettings[TElement] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   // region Deferred
@@ -121,6 +152,11 @@ package object JQueryNs {
   // region Val hooks
   // #region Val hooks
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
+  /* Rewritten from type alias, can be one of: 
+    - jqueryLib.Anon_Elem[TElement]
+    - jqueryLib.Anon_ElemSet[TElement]
+    - org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  */
   type ValHook[TElement] = _ValHook[TElement] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   type _Falsy = js.UndefOr[

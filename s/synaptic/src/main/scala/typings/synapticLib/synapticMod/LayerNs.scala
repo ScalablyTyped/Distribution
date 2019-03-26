@@ -31,6 +31,9 @@ object LayerNs extends js.Object {
   }
   
   @js.native
+  class connection () extends LayerConnection
+  
+  @js.native
   sealed trait connectionType extends js.Object
   
   @js.native

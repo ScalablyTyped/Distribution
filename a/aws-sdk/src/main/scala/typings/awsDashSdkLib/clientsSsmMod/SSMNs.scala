@@ -9433,19 +9433,55 @@ object SSMNs extends js.Object {
   type AggregatorSchemaOnly = scala.Boolean
   type AllowedPattern = java.lang.String
   type ApproveAfterDays = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CRITICAL
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH
+    - awsDashSdkLib.awsDashSdkLibStrings.MEDIUM
+    - awsDashSdkLib.awsDashSdkLibStrings.LOW
+    - awsDashSdkLib.awsDashSdkLibStrings.UNSPECIFIED
+    - java.lang.String
+  */
   type AssociationComplianceSeverity = _AssociationComplianceSeverity | java.lang.String
   type AssociationDescriptionList = js.Array[AssociationDescription]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ExecutionId
+    - awsDashSdkLib.awsDashSdkLibStrings.Status
+    - awsDashSdkLib.awsDashSdkLibStrings.CreatedTime
+    - java.lang.String
+  */
   type AssociationExecutionFilterKey = _AssociationExecutionFilterKey | java.lang.String
   type AssociationExecutionFilterList = js.Array[AssociationExecutionFilter]
   type AssociationExecutionFilterValue = java.lang.String
   type AssociationExecutionId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Status
+    - awsDashSdkLib.awsDashSdkLibStrings.ResourceId
+    - awsDashSdkLib.awsDashSdkLibStrings.ResourceType
+    - java.lang.String
+  */
   type AssociationExecutionTargetsFilterKey = _AssociationExecutionTargetsFilterKey | java.lang.String
   type AssociationExecutionTargetsFilterList = js.Array[AssociationExecutionTargetsFilter]
   type AssociationExecutionTargetsFilterValue = java.lang.String
   type AssociationExecutionTargetsList = js.Array[AssociationExecutionTarget]
   type AssociationExecutionsList = js.Array[AssociationExecution]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.InstanceId
+    - awsDashSdkLib.awsDashSdkLibStrings.Name
+    - awsDashSdkLib.awsDashSdkLibStrings.AssociationId
+    - awsDashSdkLib.awsDashSdkLibStrings.AssociationStatusName
+    - awsDashSdkLib.awsDashSdkLibStrings.LastExecutedBefore
+    - awsDashSdkLib.awsDashSdkLibStrings.LastExecutedAfter
+    - awsDashSdkLib.awsDashSdkLibStrings.AssociationName
+    - java.lang.String
+  */
   type AssociationFilterKey = _AssociationFilterKey | java.lang.String
   type AssociationFilterList = js.Array[AssociationFilter]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.EQUAL
+    - awsDashSdkLib.awsDashSdkLibStrings.LESS_THAN
+    - awsDashSdkLib.awsDashSdkLibStrings.GREATER_THAN
+    - java.lang.String
+  */
   type AssociationFilterOperatorType = _AssociationFilterOperatorType | java.lang.String
   type AssociationFilterValue = java.lang.String
   type AssociationId = java.lang.String
@@ -9454,6 +9490,12 @@ object SSMNs extends js.Object {
   type AssociationName = java.lang.String
   type AssociationResourceId = java.lang.String
   type AssociationResourceType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Pending
+    - awsDashSdkLib.awsDashSdkLibStrings.Success
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - java.lang.String
+  */
   type AssociationStatusName = _AssociationStatusName | java.lang.String
   type AssociationVersion = java.lang.String
   type AssociationVersionList = js.Array[AssociationVersionInfo]
@@ -9470,17 +9512,44 @@ object SSMNs extends js.Object {
   type AttributeName = java.lang.String
   type AttributeValue = java.lang.String
   type AutomationActionName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DocumentNamePrefix
+    - awsDashSdkLib.awsDashSdkLibStrings.ExecutionStatus
+    - awsDashSdkLib.awsDashSdkLibStrings.ExecutionId
+    - awsDashSdkLib.awsDashSdkLibStrings.ParentExecutionId
+    - awsDashSdkLib.awsDashSdkLibStrings.CurrentAction
+    - awsDashSdkLib.awsDashSdkLibStrings.StartTimeBefore
+    - awsDashSdkLib.awsDashSdkLibStrings.StartTimeAfter
+    - awsDashSdkLib.awsDashSdkLibStrings.AutomationType
+    - java.lang.String
+  */
   type AutomationExecutionFilterKey = _AutomationExecutionFilterKey | java.lang.String
   type AutomationExecutionFilterList = js.Array[AutomationExecutionFilter]
   type AutomationExecutionFilterValue = java.lang.String
   type AutomationExecutionFilterValueList = js.Array[AutomationExecutionFilterValue]
   type AutomationExecutionId = java.lang.String
   type AutomationExecutionMetadataList = js.Array[AutomationExecutionMetadata]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Pending
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - awsDashSdkLib.awsDashSdkLibStrings.Waiting
+    - awsDashSdkLib.awsDashSdkLibStrings.Success
+    - awsDashSdkLib.awsDashSdkLibStrings.TimedOut
+    - awsDashSdkLib.awsDashSdkLibStrings.Cancelling
+    - awsDashSdkLib.awsDashSdkLibStrings.Cancelled
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - java.lang.String
+  */
   type AutomationExecutionStatus = _AutomationExecutionStatus | java.lang.String
   type AutomationParameterKey = java.lang.String
   type AutomationParameterValue = java.lang.String
   type AutomationParameterValueList = js.Array[AutomationParameterValue]
   type AutomationTargetParameterName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CrossAccount
+    - awsDashSdkLib.awsDashSdkLibStrings.Local
+    - java.lang.String
+  */
   type AutomationType = _AutomationType | java.lang.String
   type BaselineDescription = java.lang.String
   type BaselineId = java.lang.String
@@ -9491,18 +9560,56 @@ object SSMNs extends js.Object {
   type ClientToken = java.lang.String
   type CloudWatchLogGroupName = java.lang.String
   type CloudWatchOutputEnabled = scala.Boolean
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.InvokedAfter
+    - awsDashSdkLib.awsDashSdkLibStrings.InvokedBefore
+    - awsDashSdkLib.awsDashSdkLibStrings.Status
+    - awsDashSdkLib.awsDashSdkLibStrings.ExecutionStage
+    - awsDashSdkLib.awsDashSdkLibStrings.DocumentName
+    - java.lang.String
+  */
   type CommandFilterKey = _CommandFilterKey | java.lang.String
   type CommandFilterList = js.Array[CommandFilter]
   type CommandFilterValue = java.lang.String
   type CommandId = java.lang.String
   type CommandInvocationList = js.Array[CommandInvocation]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Pending
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - awsDashSdkLib.awsDashSdkLibStrings.Delayed
+    - awsDashSdkLib.awsDashSdkLibStrings.Success
+    - awsDashSdkLib.awsDashSdkLibStrings.Cancelled
+    - awsDashSdkLib.awsDashSdkLibStrings.TimedOut
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - awsDashSdkLib.awsDashSdkLibStrings.Cancelling
+    - java.lang.String
+  */
   type CommandInvocationStatus = _CommandInvocationStatus | java.lang.String
   type CommandList = js.Array[Command]
   type CommandMaxResults = scala.Double
   type CommandPluginList = js.Array[CommandPlugin]
   type CommandPluginName = java.lang.String
   type CommandPluginOutput = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Pending
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - awsDashSdkLib.awsDashSdkLibStrings.Success
+    - awsDashSdkLib.awsDashSdkLibStrings.TimedOut
+    - awsDashSdkLib.awsDashSdkLibStrings.Cancelled
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - java.lang.String
+  */
   type CommandPluginStatus = _CommandPluginStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Pending
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - awsDashSdkLib.awsDashSdkLibStrings.Success
+    - awsDashSdkLib.awsDashSdkLibStrings.Cancelled
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - awsDashSdkLib.awsDashSdkLibStrings.TimedOut
+    - awsDashSdkLib.awsDashSdkLibStrings.Cancelling
+    - java.lang.String
+  */
   type CommandStatus = _CommandStatus | java.lang.String
   type Comment = java.lang.String
   type CompletedCount = scala.Double
@@ -9514,12 +9621,34 @@ object SSMNs extends js.Object {
   type ComplianceItemId = java.lang.String
   type ComplianceItemList = js.Array[ComplianceItem]
   type ComplianceItemTitle = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.EQUAL
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_EQUAL
+    - awsDashSdkLib.awsDashSdkLibStrings.BEGIN_WITH
+    - awsDashSdkLib.awsDashSdkLibStrings.LESS_THAN
+    - awsDashSdkLib.awsDashSdkLibStrings.GREATER_THAN
+    - java.lang.String
+  */
   type ComplianceQueryOperatorType = _ComplianceQueryOperatorType | java.lang.String
   type ComplianceResourceId = java.lang.String
   type ComplianceResourceIdList = js.Array[ComplianceResourceId]
   type ComplianceResourceType = java.lang.String
   type ComplianceResourceTypeList = js.Array[ComplianceResourceType]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CRITICAL
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH
+    - awsDashSdkLib.awsDashSdkLibStrings.MEDIUM
+    - awsDashSdkLib.awsDashSdkLibStrings.LOW
+    - awsDashSdkLib.awsDashSdkLibStrings.INFORMATIONAL
+    - awsDashSdkLib.awsDashSdkLibStrings.UNSPECIFIED
+    - java.lang.String
+  */
   type ComplianceSeverity = _ComplianceSeverity | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLIANT
+    - awsDashSdkLib.awsDashSdkLibStrings.NON_COMPLIANT
+    - java.lang.String
+  */
   type ComplianceStatus = _ComplianceStatus | java.lang.String
   type ComplianceStringFilterKey = java.lang.String
   type ComplianceStringFilterList = js.Array[ComplianceStringFilter]
@@ -9528,6 +9657,11 @@ object SSMNs extends js.Object {
   type ComplianceSummaryItemList = js.Array[ComplianceSummaryItem]
   type ComplianceTypeName = java.lang.String
   type ComputerName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Connected
+    - awsDashSdkLib.awsDashSdkLibStrings.NotConnected
+    - java.lang.String
+  */
   type ConnectionStatus = _ConnectionStatus | java.lang.String
   type ContentLength = scala.Double
   type CreateAssociationBatchRequestEntries = js.Array[CreateAssociationBatchRequestEntry]
@@ -9536,16 +9670,39 @@ object SSMNs extends js.Object {
   type DefaultBaseline = scala.Boolean
   type DefaultInstanceName = java.lang.String
   type DeliveryTimedOutCount = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ActivationIds
+    - awsDashSdkLib.awsDashSdkLibStrings.DefaultInstanceName
+    - awsDashSdkLib.awsDashSdkLibStrings.IamRole
+    - java.lang.String
+  */
   type DescribeActivationsFilterKeys = _DescribeActivationsFilterKeys | java.lang.String
   type DescribeActivationsFilterList = js.Array[DescribeActivationsFilter]
   type DescriptionInDocument = java.lang.String
   type DocumentARN = java.lang.String
   type DocumentContent = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Name
+    - awsDashSdkLib.awsDashSdkLibStrings.Owner
+    - awsDashSdkLib.awsDashSdkLibStrings.PlatformTypes
+    - awsDashSdkLib.awsDashSdkLibStrings.DocumentType
+    - java.lang.String
+  */
   type DocumentFilterKey = _DocumentFilterKey | java.lang.String
   type DocumentFilterList = js.Array[DocumentFilter]
   type DocumentFilterValue = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.YAML
+    - awsDashSdkLib.awsDashSdkLibStrings.JSON
+    - java.lang.String
+  */
   type DocumentFormat = _DocumentFormat | java.lang.String
   type DocumentHash = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Sha256
+    - awsDashSdkLib.awsDashSdkLibStrings.Sha1
+    - java.lang.String
+  */
   type DocumentHashType = _DocumentHashType | java.lang.String
   type DocumentIdentifierList = js.Array[DocumentIdentifier]
   type DocumentKeyValuesFilterKey = java.lang.String
@@ -9558,12 +9715,33 @@ object SSMNs extends js.Object {
   type DocumentParameterDescrption = java.lang.String
   type DocumentParameterList = js.Array[DocumentParameter]
   type DocumentParameterName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.String
+    - awsDashSdkLib.awsDashSdkLibStrings.StringList
+    - java.lang.String
+  */
   type DocumentParameterType = _DocumentParameterType | java.lang.String
   type DocumentPermissionType = awsDashSdkLib.awsDashSdkLibStrings.Share | java.lang.String
   type DocumentSchemaVersion = java.lang.String
   type DocumentSha1 = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Creating
+    - awsDashSdkLib.awsDashSdkLibStrings.Active
+    - awsDashSdkLib.awsDashSdkLibStrings.Updating
+    - awsDashSdkLib.awsDashSdkLibStrings.Deleting
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - java.lang.String
+  */
   type DocumentStatus = _DocumentStatus | java.lang.String
   type DocumentStatusInformation = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Command
+    - awsDashSdkLib.awsDashSdkLibStrings.Policy
+    - awsDashSdkLib.awsDashSdkLibStrings.Automation
+    - awsDashSdkLib.awsDashSdkLibStrings.Session
+    - awsDashSdkLib.awsDashSdkLibStrings.Package
+    - java.lang.String
+  */
   type DocumentType = _DocumentType | java.lang.String
   type DocumentVersion = java.lang.String
   type DocumentVersionList = js.Array[DocumentVersionInfo]
@@ -9573,10 +9751,21 @@ object SSMNs extends js.Object {
   type EffectiveInstanceAssociationMaxResults = scala.Double
   type EffectivePatchList = js.Array[EffectivePatch]
   type ErrorCount = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Auto
+    - awsDashSdkLib.awsDashSdkLibStrings.Interactive
+    - java.lang.String
+  */
   type ExecutionMode = _ExecutionMode | java.lang.String
   type ExecutionRoleName = java.lang.String
   type ExpirationDate = stdLib.Date
   type FailedCreateAssociationList = js.Array[FailedCreateAssociation]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Client
+    - awsDashSdkLib.awsDashSdkLibStrings.Server
+    - awsDashSdkLib.awsDashSdkLibStrings.Unknown
+    - java.lang.String
+  */
   type Fault = _Fault | java.lang.String
   type GetInventorySchemaMaxResults = scala.Double
   type GetParametersByPathMaxResults = scala.Double
@@ -9590,6 +9779,17 @@ object SSMNs extends js.Object {
   type InstanceCount = scala.Double
   type InstanceId = java.lang.String
   type InstanceIdList = js.Array[InstanceId]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.InstanceIds
+    - awsDashSdkLib.awsDashSdkLibStrings.AgentVersion
+    - awsDashSdkLib.awsDashSdkLibStrings.PingStatus
+    - awsDashSdkLib.awsDashSdkLibStrings.PlatformTypes
+    - awsDashSdkLib.awsDashSdkLibStrings.ActivationIds
+    - awsDashSdkLib.awsDashSdkLibStrings.IamRole
+    - awsDashSdkLib.awsDashSdkLibStrings.ResourceType
+    - awsDashSdkLib.awsDashSdkLibStrings.AssociationStatus
+    - java.lang.String
+  */
   type InstanceInformationFilterKey = _InstanceInformationFilterKey | java.lang.String
   type InstanceInformationFilterList = js.Array[InstanceInformationFilter]
   type InstanceInformationFilterValue = java.lang.String
@@ -9602,6 +9802,13 @@ object SSMNs extends js.Object {
   type InstancePatchStateFilterValue = java.lang.String
   type InstancePatchStateFilterValues = js.Array[InstancePatchStateFilterValue]
   type InstancePatchStateList = js.Array[InstancePatchState]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Equal
+    - awsDashSdkLib.awsDashSdkLibStrings.NotEqual
+    - awsDashSdkLib.awsDashSdkLibStrings.LessThan
+    - awsDashSdkLib.awsDashSdkLibStrings.GreaterThan
+    - java.lang.String
+  */
   type InstancePatchStateOperatorType = _InstancePatchStateOperatorType | java.lang.String
   type InstancePatchStatesList = js.Array[InstancePatchState]
   type InstanceTagName = java.lang.String
@@ -9609,11 +9816,21 @@ object SSMNs extends js.Object {
   type Integer = scala.Double
   type InventoryAggregatorExpression = java.lang.String
   type InventoryAggregatorList = js.Array[InventoryAggregator]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.string
+    - awsDashSdkLib.awsDashSdkLibStrings.number
+    - java.lang.String
+  */
   type InventoryAttributeDataType = _InventoryAttributeDataType | java.lang.String
   type InventoryDeletionId = java.lang.String
   type InventoryDeletionLastStatusMessage = java.lang.String
   type InventoryDeletionLastStatusUpdateTime = stdLib.Date
   type InventoryDeletionStartTime = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - awsDashSdkLib.awsDashSdkLibStrings.Complete
+    - java.lang.String
+  */
   type InventoryDeletionStatus = _InventoryDeletionStatus | java.lang.String
   type InventoryDeletionSummaryItems = js.Array[InventoryDeletionSummaryItem]
   type InventoryDeletionsList = js.Array[InventoryDeletionStatusItem]
@@ -9633,16 +9850,36 @@ object SSMNs extends js.Object {
   type InventoryItemSchemaVersion = java.lang.String
   type InventoryItemTypeName = java.lang.String
   type InventoryItemTypeNameFilter = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Equal
+    - awsDashSdkLib.awsDashSdkLibStrings.NotEqual
+    - awsDashSdkLib.awsDashSdkLibStrings.BeginWith
+    - awsDashSdkLib.awsDashSdkLibStrings.LessThan
+    - awsDashSdkLib.awsDashSdkLibStrings.GreaterThan
+    - awsDashSdkLib.awsDashSdkLibStrings.Exists
+    - java.lang.String
+  */
   type InventoryQueryOperatorType = _InventoryQueryOperatorType | java.lang.String
   type InventoryResultEntityId = java.lang.String
   type InventoryResultEntityList = js.Array[InventoryResultEntity]
   type InventoryResultItemKey = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.DisableSchema
+    - awsDashSdkLib.awsDashSdkLibStrings.DeleteSchema
+    - java.lang.String
+  */
   type InventorySchemaDeleteOption = _InventorySchemaDeleteOption | java.lang.String
   type InventoryTypeDisplayName = java.lang.String
   type InvocationTraceOutput = java.lang.String
   type IsSubTypeSchema = scala.Boolean
   type KeyList = js.Array[TagKey]
   type LastResourceDataSyncMessage = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Successful
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - java.lang.String
+  */
   type LastResourceDataSyncStatus = _LastResourceDataSyncStatus | java.lang.String
   type LastResourceDataSyncTime = stdLib.Date
   type LastSuccessfulResourceDataSyncTime = stdLib.Date
@@ -9654,6 +9891,17 @@ object SSMNs extends js.Object {
   type MaintenanceWindowEnabled = scala.Boolean
   type MaintenanceWindowExecutionId = java.lang.String
   type MaintenanceWindowExecutionList = js.Array[MaintenanceWindowExecution]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCESS
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.TIMED_OUT
+    - awsDashSdkLib.awsDashSdkLibStrings.CANCELLING
+    - awsDashSdkLib.awsDashSdkLibStrings.CANCELLED
+    - awsDashSdkLib.awsDashSdkLibStrings.SKIPPED_OVERLAPPING
+    - java.lang.String
+  */
   type MaintenanceWindowExecutionStatus = _MaintenanceWindowExecutionStatus | java.lang.String
   type MaintenanceWindowExecutionStatusDetails = java.lang.String
   type MaintenanceWindowExecutionTaskExecutionId = java.lang.String
@@ -9691,6 +9939,13 @@ object SSMNs extends js.Object {
   type MaintenanceWindowTaskParametersList = js.Array[MaintenanceWindowTaskParameters]
   type MaintenanceWindowTaskPriority = scala.Double
   type MaintenanceWindowTaskTargetId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.RUN_COMMAND
+    - awsDashSdkLib.awsDashSdkLibStrings.AUTOMATION
+    - awsDashSdkLib.awsDashSdkLibStrings.STEP_FUNCTIONS
+    - awsDashSdkLib.awsDashSdkLibStrings.LAMBDA
+    - java.lang.String
+  */
   type MaintenanceWindowTaskType = _MaintenanceWindowTaskType | java.lang.String
   type MaintenanceWindowTimezone = java.lang.String
   type MaintenanceWindowsForTargetList = js.Array[MaintenanceWindowIdentityForTarget]
@@ -9701,9 +9956,33 @@ object SSMNs extends js.Object {
   type MaxResultsEC2Compatible = scala.Double
   type NextToken = java.lang.String
   type NotificationArn = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.All
+    - awsDashSdkLib.awsDashSdkLibStrings.InProgress
+    - awsDashSdkLib.awsDashSdkLibStrings.Success
+    - awsDashSdkLib.awsDashSdkLibStrings.TimedOut
+    - awsDashSdkLib.awsDashSdkLibStrings.Cancelled
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - java.lang.String
+  */
   type NotificationEvent = _NotificationEvent | java.lang.String
   type NotificationEventList = js.Array[NotificationEvent]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Command
+    - awsDashSdkLib.awsDashSdkLibStrings.Invocation
+    - java.lang.String
+  */
   type NotificationType = _NotificationType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.WINDOWS
+    - awsDashSdkLib.awsDashSdkLibStrings.AMAZON_LINUX
+    - awsDashSdkLib.awsDashSdkLibStrings.AMAZON_LINUX_2
+    - awsDashSdkLib.awsDashSdkLibStrings.UBUNTU
+    - awsDashSdkLib.awsDashSdkLibStrings.REDHAT_ENTERPRISE_LINUX
+    - awsDashSdkLib.awsDashSdkLibStrings.SUSE
+    - awsDashSdkLib.awsDashSdkLibStrings.CENTOS
+    - java.lang.String
+  */
   type OperatingSystem = _OperatingSystem | java.lang.String
   type OutputSourceId = java.lang.String
   type OutputSourceType = java.lang.String
@@ -9726,25 +10005,77 @@ object SSMNs extends js.Object {
   type ParameterStringFilterValue = java.lang.String
   type ParameterStringFilterValueList = js.Array[ParameterStringFilterValue]
   type ParameterStringQueryOption = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.String
+    - awsDashSdkLib.awsDashSdkLibStrings.StringList
+    - awsDashSdkLib.awsDashSdkLibStrings.SecureString
+    - java.lang.String
+  */
   type ParameterType = _ParameterType | java.lang.String
   type ParameterValue = java.lang.String
   type ParameterValueList = js.Array[ParameterValue]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Name
+    - awsDashSdkLib.awsDashSdkLibStrings.Type
+    - awsDashSdkLib.awsDashSdkLibStrings.KeyId
+    - java.lang.String
+  */
   type ParametersFilterKey = _ParametersFilterKey | java.lang.String
   type ParametersFilterList = js.Array[ParametersFilter]
   type ParametersFilterValue = java.lang.String
   type ParametersFilterValueList = js.Array[ParametersFilterValue]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ALLOW_AS_DEPENDENCY
+    - awsDashSdkLib.awsDashSdkLibStrings.BLOCK
+    - java.lang.String
+  */
   type PatchAction = _PatchAction | java.lang.String
   type PatchBaselineIdentityList = js.Array[PatchBaselineIdentity]
   type PatchBaselineMaxResults = scala.Double
   type PatchClassification = java.lang.String
   type PatchComplianceDataList = js.Array[PatchComplianceData]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INSTALLED
+    - awsDashSdkLib.awsDashSdkLibStrings.INSTALLED_OTHER
+    - awsDashSdkLib.awsDashSdkLibStrings.INSTALLED_REJECTED
+    - awsDashSdkLib.awsDashSdkLibStrings.MISSING
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_APPLICABLE
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - java.lang.String
+  */
   type PatchComplianceDataState = _PatchComplianceDataState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CRITICAL
+    - awsDashSdkLib.awsDashSdkLibStrings.HIGH
+    - awsDashSdkLib.awsDashSdkLibStrings.MEDIUM
+    - awsDashSdkLib.awsDashSdkLibStrings.LOW
+    - awsDashSdkLib.awsDashSdkLibStrings.INFORMATIONAL
+    - awsDashSdkLib.awsDashSdkLibStrings.UNSPECIFIED
+    - java.lang.String
+  */
   type PatchComplianceLevel = _PatchComplianceLevel | java.lang.String
   type PatchComplianceMaxResults = scala.Double
   type PatchContentUrl = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.APPROVED
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING_APPROVAL
+    - awsDashSdkLib.awsDashSdkLibStrings.EXPLICIT_APPROVED
+    - awsDashSdkLib.awsDashSdkLibStrings.EXPLICIT_REJECTED
+    - java.lang.String
+  */
   type PatchDeploymentStatus = _PatchDeploymentStatus | java.lang.String
   type PatchDescription = java.lang.String
   type PatchFailedCount = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PRODUCT
+    - awsDashSdkLib.awsDashSdkLibStrings.CLASSIFICATION
+    - awsDashSdkLib.awsDashSdkLibStrings.MSRC_SEVERITY
+    - awsDashSdkLib.awsDashSdkLibStrings.PATCH_ID
+    - awsDashSdkLib.awsDashSdkLibStrings.SECTION
+    - awsDashSdkLib.awsDashSdkLibStrings.PRIORITY
+    - awsDashSdkLib.awsDashSdkLibStrings.SEVERITY
+    - java.lang.String
+  */
   type PatchFilterKey = _PatchFilterKey | java.lang.String
   type PatchFilterList = js.Array[PatchFilter]
   type PatchFilterValue = java.lang.String
@@ -9764,6 +10095,11 @@ object SSMNs extends js.Object {
   type PatchMsrcNumber = java.lang.String
   type PatchMsrcSeverity = java.lang.String
   type PatchNotApplicableCount = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Scan
+    - awsDashSdkLib.awsDashSdkLibStrings.Install
+    - java.lang.String
+  */
   type PatchOperationType = _PatchOperationType | java.lang.String
   type PatchOrchestratorFilterKey = java.lang.String
   type PatchOrchestratorFilterList = js.Array[PatchOrchestratorFilter]
@@ -9780,7 +10116,18 @@ object SSMNs extends js.Object {
   type PatchSourceProductList = js.Array[PatchSourceProduct]
   type PatchTitle = java.lang.String
   type PatchVendor = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Online
+    - awsDashSdkLib.awsDashSdkLibStrings.ConnectionLost
+    - awsDashSdkLib.awsDashSdkLibStrings.Inactive
+    - java.lang.String
+  */
   type PingStatus = _PingStatus | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Windows
+    - awsDashSdkLib.awsDashSdkLibStrings.Linux
+    - java.lang.String
+  */
   type PlatformType = _PlatformType | java.lang.String
   type PlatformTypeList = js.Array[PlatformType]
   type Product = java.lang.String
@@ -9802,7 +10149,21 @@ object SSMNs extends js.Object {
   type ResourceDataSyncS3Prefix = java.lang.String
   type ResourceDataSyncS3Region = java.lang.String
   type ResourceId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ManagedInstance
+    - awsDashSdkLib.awsDashSdkLibStrings.Document
+    - awsDashSdkLib.awsDashSdkLibStrings.EC2Instance
+    - java.lang.String
+  */
   type ResourceType = _ResourceType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Document
+    - awsDashSdkLib.awsDashSdkLibStrings.ManagedInstance
+    - awsDashSdkLib.awsDashSdkLibStrings.MaintenanceWindow
+    - awsDashSdkLib.awsDashSdkLibStrings.Parameter
+    - awsDashSdkLib.awsDashSdkLibStrings.PatchBaseline
+    - java.lang.String
+  */
   type ResourceTypeForTagging = _ResourceTypeForTagging | java.lang.String
   type ResponseCode = scala.Double
   type ResultAttributeList = js.Array[ResultAttribute]
@@ -9815,6 +10176,14 @@ object SSMNs extends js.Object {
   type ServiceSettingId = java.lang.String
   type ServiceSettingValue = java.lang.String
   type SessionDetails = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.InvokedAfter
+    - awsDashSdkLib.awsDashSdkLibStrings.InvokedBefore
+    - awsDashSdkLib.awsDashSdkLibStrings.Target
+    - awsDashSdkLib.awsDashSdkLibStrings.Owner
+    - awsDashSdkLib.awsDashSdkLibStrings.Status
+    - java.lang.String
+  */
   type SessionFilterKey = _SessionFilterKey | java.lang.String
   type SessionFilterList = js.Array[SessionFilter]
   type SessionFilterValue = java.lang.String
@@ -9827,9 +10196,31 @@ object SSMNs extends js.Object {
   type SessionManagerS3OutputUrl = java.lang.String
   type SessionMaxResults = scala.Double
   type SessionOwner = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Active
+    - awsDashSdkLib.awsDashSdkLibStrings.History
+    - java.lang.String
+  */
   type SessionState = _SessionState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Connected
+    - awsDashSdkLib.awsDashSdkLibStrings.Connecting
+    - awsDashSdkLib.awsDashSdkLibStrings.Disconnected
+    - awsDashSdkLib.awsDashSdkLibStrings.Terminated
+    - awsDashSdkLib.awsDashSdkLibStrings.Terminating
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - java.lang.String
+  */
   type SessionStatus = _SessionStatus | java.lang.String
   type SessionTarget = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Approve
+    - awsDashSdkLib.awsDashSdkLibStrings.Reject
+    - awsDashSdkLib.awsDashSdkLibStrings.StartStep
+    - awsDashSdkLib.awsDashSdkLibStrings.StopStep
+    - awsDashSdkLib.awsDashSdkLibStrings.Resume
+    - java.lang.String
+  */
   type SignalType = _SignalType | java.lang.String
   type SnapshotDownloadUrl = java.lang.String
   type SnapshotId = java.lang.String
@@ -9839,11 +10230,25 @@ object SSMNs extends js.Object {
   type StatusDetails = java.lang.String
   type StatusMessage = java.lang.String
   type StatusName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.StartTimeBefore
+    - awsDashSdkLib.awsDashSdkLibStrings.StartTimeAfter
+    - awsDashSdkLib.awsDashSdkLibStrings.StepExecutionStatus
+    - awsDashSdkLib.awsDashSdkLibStrings.StepExecutionId
+    - awsDashSdkLib.awsDashSdkLibStrings.StepName
+    - awsDashSdkLib.awsDashSdkLibStrings.Action
+    - java.lang.String
+  */
   type StepExecutionFilterKey = _StepExecutionFilterKey | java.lang.String
   type StepExecutionFilterList = js.Array[StepExecutionFilter]
   type StepExecutionFilterValue = java.lang.String
   type StepExecutionFilterValueList = js.Array[StepExecutionFilterValue]
   type StepExecutionList = js.Array[StepExecution]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Complete
+    - awsDashSdkLib.awsDashSdkLibStrings.Cancel
+    - java.lang.String
+  */
   type StopType = _StopType | java.lang.String
   type StreamUrl = java.lang.String
   type String = java.lang.String
@@ -9871,6 +10276,11 @@ object SSMNs extends js.Object {
   type ValidNextStep = java.lang.String
   type ValidNextStepList = js.Array[ValidNextStep]
   type Version = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2014-11-06`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

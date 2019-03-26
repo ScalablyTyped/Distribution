@@ -15,6 +15,13 @@ trait OscillatorNode extends AudioScheduledSourceNode {
 
 @JSGlobal("OscillatorNode")
 @js.native
+class OscillatorNodeCls protected () extends OscillatorNode {
+  def this(context: BaseAudioContext) = this()
+  def this(context: BaseAudioContext, options: OscillatorOptions) = this()
+}
+
+@JSGlobal("OscillatorNode")
+@js.native
 object OscillatorNode
   extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, OscillatorNode]
      with org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ OscillatorOptions, OscillatorNode]

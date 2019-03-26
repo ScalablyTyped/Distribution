@@ -24,6 +24,10 @@ trait Cache extends js.Object {
 
 @JSGlobal("Cache")
 @js.native
+class CacheCls () extends Cache
+
+@JSGlobal("Cache")
+@js.native
 object Cache
   extends org.scalablytyped.runtime.Instantiable0[Cache]
 

@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * PriorityClass defines mapping from a priority class name to the priority integer value. The
-  * value can be any valid integer.
+  * DEPRECATED - This group version of PriorityClass is deprecated by
+  * scheduling.k8s.io/v1/PriorityClass. PriorityClass defines mapping from a priority class name
+  * to the priority integer value. The value can be any valid integer.
   */
 trait PriorityClass extends js.Object {
   /**

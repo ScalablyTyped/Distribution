@@ -12,6 +12,15 @@ trait SVGAnimatedAngle extends js.Object {
 
 @JSGlobal("SVGAnimatedAngle")
 @js.native
+class SVGAnimatedAngleCls () extends SVGAnimatedAngle {
+  /* CompleteClass */
+  override val animVal: SVGAngle = js.native
+  /* CompleteClass */
+  override val baseVal: SVGAngle = js.native
+}
+
+@JSGlobal("SVGAnimatedAngle")
+@js.native
 object SVGAnimatedAngle
   extends org.scalablytyped.runtime.Instantiable0[SVGAnimatedAngle]
 

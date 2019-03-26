@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps & react.react.LiHTMLAttributes<std.HTMLElement>, 'classes' | 'component'> ]: @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps & react.react.LiHTMLAttributes<std.HTMLElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps & react.react.LiHTMLAttributes<std.HTMLElement>, @material-ui/core.@material-ui/core/ListItem/ListItem.ListItemClassKey, 'component'>) */ trait ListItemProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ListItemClassKey] {
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps & react.react.React.LiHTMLAttributes<std.HTMLElement>, 'classes' | 'component'> ]: @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps & react.react.React.LiHTMLAttributes<std.HTMLElement>[P]} */ trait ListItemProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ListItemClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var ContainerComponent: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactType[reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLDivElement]]
   ] = js.undefined
@@ -17,7 +17,6 @@ import scala.scalajs.js.annotation._
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`flex-start` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.center
   ] = js.undefined
   var button: js.UndefOr[scala.Boolean] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[ListItemProps]] = js.undefined
   var dense: js.UndefOr[scala.Boolean] = js.undefined
   var disableGutters: js.UndefOr[scala.Boolean] = js.undefined
@@ -25,7 +24,6 @@ import scala.scalajs.js.annotation._
   var divider: js.UndefOr[scala.Boolean] = js.undefined
   var focusVisibleClassName: js.UndefOr[java.lang.String] = js.undefined
   var selected: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
 object ListItemProps {

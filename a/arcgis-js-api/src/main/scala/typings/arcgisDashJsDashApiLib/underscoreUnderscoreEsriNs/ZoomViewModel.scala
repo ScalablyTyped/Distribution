@@ -51,3 +51,9 @@ trait ZoomViewModel extends Accessor {
   def zoomOut(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.ZoomViewModel")
+@js.native
+class ZoomViewModelCls () extends ZoomViewModel {
+  def this(properties: ZoomViewModelProperties) = this()
+}
+

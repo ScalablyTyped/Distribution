@@ -21,3 +21,9 @@ trait TemplateItemGroup extends Accessor {
   val label: java.lang.String = js.native
 }
 
+@JSGlobal("__esri.TemplateItemGroup")
+@js.native
+class TemplateItemGroupCls () extends TemplateItemGroup {
+  def this(properties: TemplateItemGroupProperties) = this()
+}
+

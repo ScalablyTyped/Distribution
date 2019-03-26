@@ -66,3 +66,9 @@ trait Server extends js.Object {
   def signal(event: java.lang.String, file: File): scala.Unit = js.native
 }
 
+@JSImport("tern/lib/tern", "Server")
+@js.native
+class ServerCls () extends Server {
+  def this(options: ConstructorOptions) = this()
+}
+

@@ -1890,6 +1890,10 @@ class WebContents () extends EventEmitter {
   def unselect(): scala.Unit = js.native
 }
 
+@JSGlobal("Electron.webContents")
+@js.native
+class webContentsCls () extends WebContents
+
 /* static members */
 @JSGlobal("Electron.WebContents")
 @js.native

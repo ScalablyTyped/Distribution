@@ -15,6 +15,13 @@ package object datetimeNs {
     Duration | scala.Double | java.lang.String | FromTo | DurationInputObject | scala.Null
   ]
   type DurationInputArg2 = adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.DurationConstructor
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - Datetime
+    - Duration
+    - js.Array[java.lang.String]
+    - scala.Boolean
+  */
   type LocaleSpecifier = _LocaleSpecifier | js.Array[java.lang.String] | java.lang.String | scala.Boolean
   type MonthWeekdayFn = js.Function2[
     /* datetimeToFormat */ Datetime, 

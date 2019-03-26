@@ -31,6 +31,10 @@ trait VRDisplay extends EventTarget {
 
 @JSGlobal("VRDisplay")
 @js.native
+class VRDisplayCls () extends VRDisplay
+
+@JSGlobal("VRDisplay")
+@js.native
 object VRDisplay
   extends org.scalablytyped.runtime.Instantiable0[VRDisplay]
 

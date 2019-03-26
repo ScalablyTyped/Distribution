@@ -5,17 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_ShTarget extends js.Object {
-  val Sh: activexDashExcelLib.ExcelNs.Worksheet
-  val Target: activexDashExcelLib.ExcelNs.Hyperlink
-}
-
-object Anon_ShTarget {
-  @scala.inline
-  def apply(Sh: activexDashExcelLib.ExcelNs.Worksheet, Target: activexDashExcelLib.ExcelNs.Hyperlink): Anon_ShTarget = {
-    val __obj = js.Dynamic.literal(Sh = Sh, Target = Target)
-  
-    __obj.asInstanceOf[Anon_ShTarget]
-  }
+  val Sh: activexDashExcelLib.ExcelNs.Worksheet = js.native
+  @JSName("Target")
+  val Target_Original: activexDashExcelLib.ExcelNs.Range = js.native
+  def Target(Address: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
+  def Target(RowIndex: scala.Double): activexDashExcelLib.ExcelNs.Range = js.native
+  def Target(RowIndex: scala.Double, ColumnIndex: scala.Double): activexDashExcelLib.ExcelNs.Range = js.native
 }
 

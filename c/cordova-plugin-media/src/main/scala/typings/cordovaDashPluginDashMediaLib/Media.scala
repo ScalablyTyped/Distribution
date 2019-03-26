@@ -66,6 +66,14 @@ trait Media extends js.Object {
 
 @JSGlobal("Media")
 @js.native
+class MediaCls protected () extends Media {
+  def this(src: java.lang.String, mediaSuccess: js.Function0[scala.Unit]) = this()
+  def this(src: java.lang.String, mediaSuccess: js.Function0[scala.Unit], mediaError: js.Function1[/* error */ stdLib.MediaError, _]) = this()
+  def this(src: java.lang.String, mediaSuccess: js.Function0[scala.Unit], mediaError: js.Function1[/* error */ stdLib.MediaError, _], mediaStatus: js.Function1[/* status */ scala.Double, scala.Unit]) = this()
+}
+
+@JSGlobal("Media")
+@js.native
 object Media
   extends org.scalablytyped.runtime.Instantiable2[/* src */ java.lang.String, /* mediaSuccess */ js.Function0[scala.Unit], Media]
      with org.scalablytyped.runtime.Instantiable3[

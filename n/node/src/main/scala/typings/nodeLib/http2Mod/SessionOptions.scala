@@ -6,7 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SessionOptions extends js.Object {
-  var createConnection: js.UndefOr[js.Function1[/* option */ SessionOptions, nodeLib.streamMod.Duplex]] = js.undefined
+  var createConnection: js.UndefOr[
+    js.Function2[
+      /* authority */ nodeLib.urlMod.URL, 
+      /* option */ SessionOptions, 
+      nodeLib.streamMod.Duplex
+    ]
+  ] = js.undefined
   var maxDeflateDynamicTableSize: js.UndefOr[scala.Double] = js.undefined
   var maxReservedRemoteStreams: js.UndefOr[scala.Double] = js.undefined
   var maxSendHeaderBlockLength: js.UndefOr[scala.Double] = js.undefined
@@ -21,7 +27,7 @@ trait SessionOptions extends js.Object {
 object SessionOptions {
   @scala.inline
   def apply(
-    createConnection: /* option */ SessionOptions => nodeLib.streamMod.Duplex = null,
+    createConnection: (/* authority */ nodeLib.urlMod.URL, /* option */ SessionOptions) => nodeLib.streamMod.Duplex = null,
     maxDeflateDynamicTableSize: scala.Int | scala.Double = null,
     maxReservedRemoteStreams: scala.Int | scala.Double = null,
     maxSendHeaderBlockLength: scala.Int | scala.Double = null,
@@ -31,7 +37,7 @@ object SessionOptions {
     settings: Settings = null
   ): SessionOptions = {
     val __obj = js.Dynamic.literal()
-    if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction1(createConnection))
+    if (createConnection != null) __obj.updateDynamic("createConnection")(js.Any.fromFunction2(createConnection))
     if (maxDeflateDynamicTableSize != null) __obj.updateDynamic("maxDeflateDynamicTableSize")(maxDeflateDynamicTableSize.asInstanceOf[js.Any])
     if (maxReservedRemoteStreams != null) __obj.updateDynamic("maxReservedRemoteStreams")(maxReservedRemoteStreams.asInstanceOf[js.Any])
     if (maxSendHeaderBlockLength != null) __obj.updateDynamic("maxSendHeaderBlockLength")(maxSendHeaderBlockLength.asInstanceOf[js.Any])

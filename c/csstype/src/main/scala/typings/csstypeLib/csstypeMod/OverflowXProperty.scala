@@ -5,5 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - Globals
+  - csstypeLib.csstypeLibStrings.auto
+  - csstypeLib.csstypeLibStrings.clip
+  - csstypeLib.csstypeLibStrings.hidden
+  - csstypeLib.csstypeLibStrings.scroll
+  - csstypeLib.csstypeLibStrings.visible
+*/
 trait OverflowXProperty extends js.Object
 

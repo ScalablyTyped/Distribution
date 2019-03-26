@@ -45,10 +45,7 @@ object InvalidManifest {
       chromeDashAppsLib.chromeNs.ToStringLiteral[
         chromeDashAppsLib.Anon_NEWNOTE, 
         java.lang.String, 
-        stdLib.Exclude[
-          java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_NEWNOTE[keyof chrome-apps.Anon_NEWNOTE] */ js.Any
-        ]
+        stdLib.Exclude[java.lang.String, chromeDashAppsLib.chromeDashAppsLibStrings.new_note]
       ]
     ] = null,
     author: chromeDashAppsLib.Anon_Email | js.Any = null,
@@ -78,7 +75,7 @@ object InvalidManifest {
     options_page: js.UndefOr[scala.Nothing] = js.undefined,
     options_ui: js.UndefOr[scala.Nothing] = js.undefined,
     permissions: js.Array[Permission] | (js.Array[Permission | java.lang.String]) = null,
-    platforms: js.Array[chromeDashAppsLib.Anon_Naclarch] = null,
+    platforms: js.Array[chromeDashAppsLib.Anon_Arm] = null,
     requirements: chromeDashAppsLib.Anon_3D = null,
     sandbox: chromeDashAppsLib.Anon_Contentsecuritypolicy = null,
     short_name: java.lang.String = null,

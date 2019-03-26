@@ -73,6 +73,17 @@ trait Widget
   def scheduleRender(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.Widget")
+@js.native
+/**
+  * The base class for widgets. Each widget's presentation is separate from its properties, methods, and data.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html)
+  */
+class WidgetCls () extends Widget {
+  def this(properties: WidgetProperties) = this()
+}
+
 @js.native
 trait widget extends js.Object {
   /**

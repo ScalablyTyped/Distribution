@@ -16,7 +16,7 @@ trait OpenFileRequestedEventOptions
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_READ[keyof chrome-apps.Anon_READ] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.READ | chromeDashAppsLib.chromeDashAppsLibStrings.WRITE
     ]
   ]
 }
@@ -31,7 +31,7 @@ object OpenFileRequestedEventOptions {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_READ[keyof chrome-apps.Anon_READ] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.READ | chromeDashAppsLib.chromeDashAppsLibStrings.WRITE
       ]
     ],
     requestId: chromeDashAppsLib.chromeNs.integer

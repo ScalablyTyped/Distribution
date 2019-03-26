@@ -51,3 +51,7 @@ trait DynamicLayer extends js.Object {
   def getImageUrl(extent: Extent, width: scala.Double, height: scala.Double, options: DynamicLayerGetImageUrlOptions): arcgisDashJsDashApiLib.IPromise[java.lang.String] | java.lang.String = js.native
 }
 
+@JSGlobal("__esri.DynamicLayer")
+@js.native
+class DynamicLayerCls () extends DynamicLayer
+

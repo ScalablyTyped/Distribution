@@ -17,9 +17,15 @@ trait Props extends js.Object {
   var customCrossIcon: js.UndefOr[
     reactLib.reactMod.Global.JSXNs.Element | reactDashBurgerDashMenuLib.reactDashBurgerDashMenuLibNumbers.`false`
   ] = js.undefined
+  var customOnKeyDown: js.UndefOr[
+    js.Function1[/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.Element], scala.Unit]
+  ] = js.undefined
+  var disableCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined
   var disableOverlayClick: js.UndefOr[scala.Boolean] = js.undefined
+  var htmlClassName: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
+  var itemClassName: js.UndefOr[java.lang.String] = js.undefined
   var itemListClassName: js.UndefOr[java.lang.String] = js.undefined
   var menuClassName: js.UndefOr[java.lang.String] = js.undefined
   var morphShapeClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -47,9 +53,13 @@ object Props {
     crossClassName: java.lang.String = null,
     customBurgerIcon: reactLib.reactMod.Global.JSXNs.Element | reactDashBurgerDashMenuLib.reactDashBurgerDashMenuLibNumbers.`false` = null,
     customCrossIcon: reactLib.reactMod.Global.JSXNs.Element | reactDashBurgerDashMenuLib.reactDashBurgerDashMenuLibNumbers.`false` = null,
+    customOnKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.Element] => scala.Unit = null,
+    disableCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
     disableOverlayClick: js.UndefOr[scala.Boolean] = js.undefined,
+    htmlClassName: java.lang.String = null,
     id: java.lang.String = null,
     isOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    itemClassName: java.lang.String = null,
     itemListClassName: java.lang.String = null,
     menuClassName: java.lang.String = null,
     morphShapeClassName: java.lang.String = null,
@@ -70,9 +80,13 @@ object Props {
     if (crossClassName != null) __obj.updateDynamic("crossClassName")(crossClassName)
     if (customBurgerIcon != null) __obj.updateDynamic("customBurgerIcon")(customBurgerIcon.asInstanceOf[js.Any])
     if (customCrossIcon != null) __obj.updateDynamic("customCrossIcon")(customCrossIcon.asInstanceOf[js.Any])
+    if (customOnKeyDown != null) __obj.updateDynamic("customOnKeyDown")(js.Any.fromFunction1(customOnKeyDown))
+    if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc)
     if (!js.isUndefined(disableOverlayClick)) __obj.updateDynamic("disableOverlayClick")(disableOverlayClick)
+    if (htmlClassName != null) __obj.updateDynamic("htmlClassName")(htmlClassName)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (itemClassName != null) __obj.updateDynamic("itemClassName")(itemClassName)
     if (itemListClassName != null) __obj.updateDynamic("itemListClassName")(itemListClassName)
     if (menuClassName != null) __obj.updateDynamic("menuClassName")(menuClassName)
     if (morphShapeClassName != null) __obj.updateDynamic("morphShapeClassName")(morphShapeClassName)

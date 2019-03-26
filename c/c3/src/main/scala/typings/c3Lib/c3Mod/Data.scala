@@ -69,7 +69,7 @@ trait Data extends js.Object {
     * - j is the sub index of the data point where the label is shown.
     * Formatter function can be defined for each data by specifying as an object and D3 formatter function can be set (e.g. d3.format('$'))
     */
-  var labels: js.UndefOr[scala.Boolean | c3Lib.Anon_FormatI | c3Lib.Anon_FormatKey] = js.undefined
+  var labels: js.UndefOr[scala.Boolean | c3Lib.Anon_FormatFormatFunction | c3Lib.Anon_FormatKey] = js.undefined
   /**
     * Used if loading JSON via data.url
     */
@@ -169,7 +169,7 @@ object Data {
     hide: scala.Boolean | js.Array[java.lang.String] = null,
     json: js.Object = null,
     keys: c3Lib.Anon_Value = null,
-    labels: scala.Boolean | c3Lib.Anon_FormatI | c3Lib.Anon_FormatKey = null,
+    labels: scala.Boolean | c3Lib.Anon_FormatFormatFunction | c3Lib.Anon_FormatKey = null,
     mimeType: java.lang.String = null,
     names: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     onclick: (/* d */ js.Any, /* element */ js.Any) => scala.Unit = null,

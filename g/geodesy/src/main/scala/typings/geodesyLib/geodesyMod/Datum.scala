@@ -18,6 +18,18 @@ trait Datum extends js.Object {
   ]
 }
 
+/* Rewritten from type alias, can be one of: 
+  - geodesyLib.geodesyLibStrings.ED50
+  - geodesyLib.geodesyLibStrings.Irl1975
+  - geodesyLib.geodesyLibStrings.NAD27
+  - geodesyLib.geodesyLibStrings.NAD83
+  - geodesyLib.geodesyLibStrings.NTF
+  - geodesyLib.geodesyLibStrings.OSGB36
+  - geodesyLib.geodesyLibStrings.Potsdam
+  - geodesyLib.geodesyLibStrings.TokyoJapan
+  - geodesyLib.geodesyLibStrings.WGS72
+  - geodesyLib.geodesyLibStrings.WGS84
+*/
 trait datum extends js.Object
 
 object Datum {

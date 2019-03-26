@@ -17,7 +17,7 @@ trait RollingUpdateDeployment extends js.Object {
     * immediately when the rolling update starts, such that the total number of old and new pods
     * do not exceed 130% of desired pods. Once old pods have been killed, new ReplicaSet can be
     * scaled up further, ensuring that total number of pods running at any time during the update
-    * is atmost 130% of desired pods.
+    * is at most 130% of desired pods.
     */
   val maxSurge: scala.Double | java.lang.String
   /**

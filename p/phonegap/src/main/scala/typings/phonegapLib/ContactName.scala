@@ -16,6 +16,23 @@ trait ContactName extends js.Object {
 
 @JSGlobal("ContactName")
 @js.native
+class ContactNameCls () extends ContactName {
+  /* CompleteClass */
+  override var familyName: java.lang.String = js.native
+  /* CompleteClass */
+  override var formatted: java.lang.String = js.native
+  /* CompleteClass */
+  override var givenName: java.lang.String = js.native
+  /* CompleteClass */
+  override var honorificPrefix: java.lang.String = js.native
+  /* CompleteClass */
+  override var honorificSuffix: java.lang.String = js.native
+  /* CompleteClass */
+  override var middleName: java.lang.String = js.native
+}
+
+@JSGlobal("ContactName")
+@js.native
 object ContactName
   extends org.scalablytyped.runtime.Instantiable0[ContactName]
 

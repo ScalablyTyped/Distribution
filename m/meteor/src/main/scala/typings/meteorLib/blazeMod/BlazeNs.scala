@@ -33,6 +33,43 @@ object BlazeNs extends js.Object {
     def onRendered(cb: js.Function): scala.Unit
   }
   
+  @js.native
+  class TemplateCls () extends Template {
+    def this(viewName: java.lang.String) = this()
+    def this(viewName: java.lang.String, renderFunction: js.Function) = this()
+    /* CompleteClass */
+    @JSName("$")
+    override var $: js.Any = js.native
+    /* CompleteClass */
+    override var created: js.Function = js.native
+    /* CompleteClass */
+    override var destroyed: js.Function = js.native
+    /* CompleteClass */
+    override var head: Template = js.native
+    /* CompleteClass */
+    override var renderFunction: js.Function = js.native
+    /* CompleteClass */
+    override var rendered: js.Function = js.native
+    /* CompleteClass */
+    override var viewName: java.lang.String = js.native
+    /* CompleteClass */
+    override def constructView(): View = js.native
+    /* CompleteClass */
+    override def events(eventsMap: EventsMap): scala.Unit = js.native
+    /* CompleteClass */
+    override def find(selector: java.lang.String): stdLib.HTMLElement = js.native
+    /* CompleteClass */
+    override def findAll(selector: java.lang.String): js.Array[stdLib.HTMLElement] = js.native
+    /* CompleteClass */
+    override def helpers(helpersMap: HelpersMap): scala.Unit = js.native
+    /* CompleteClass */
+    override def onCreated(cb: js.Function): scala.Unit = js.native
+    /* CompleteClass */
+    override def onDestroyed(cb: js.Function): scala.Unit = js.native
+    /* CompleteClass */
+    override def onRendered(cb: js.Function): scala.Unit = js.native
+  }
+  
   trait TemplateInstance extends js.Object {
     var data: js.Object
     var firstNode: js.Object
@@ -45,6 +82,32 @@ object BlazeNs extends js.Object {
     def findAll(selector: java.lang.String): js.Array[stdLib.HTMLElement]
     def subscribe(name: java.lang.String, args: js.Any*): meteorLib.MeteorNs.SubscriptionHandle
     def subscriptionsReady(): scala.Boolean
+  }
+  
+  @js.native
+  class TemplateInstanceCls protected () extends TemplateInstance {
+    def this(view: View) = this()
+    /* CompleteClass */
+    override var data: js.Object = js.native
+    /* CompleteClass */
+    override var firstNode: js.Object = js.native
+    /* CompleteClass */
+    override var lastNode: js.Object = js.native
+    /* CompleteClass */
+    override var view: js.Object = js.native
+    /* CompleteClass */
+    @JSName("$")
+    override def $(selector: java.lang.String): js.Any = js.native
+    /* CompleteClass */
+    override def autorun(runFunc: js.Function1[/* computation */ meteorLib.TrackerNs.Computation, scala.Unit]): meteorLib.TrackerNs.Computation = js.native
+    /* CompleteClass */
+    override def find(selector: java.lang.String): stdLib.HTMLElement = js.native
+    /* CompleteClass */
+    override def findAll(selector: java.lang.String): js.Array[stdLib.HTMLElement] = js.native
+    /* CompleteClass */
+    override def subscribe(name: java.lang.String, args: js.Any*): meteorLib.MeteorNs.SubscriptionHandle = js.native
+    /* CompleteClass */
+    override def subscriptionsReady(): scala.Boolean = js.native
   }
   
   @js.native
@@ -77,6 +140,40 @@ object BlazeNs extends js.Object {
     def onViewDestroyed(func: js.Function): scala.Unit
     def onViewReady(func: js.Function): scala.Unit
     def templateInstance(): TemplateInstance
+  }
+  
+  @js.native
+  class ViewCls () extends View {
+    def this(name: java.lang.String) = this()
+    def this(name: java.lang.String, renderFunction: js.Function) = this()
+    /* CompleteClass */
+    override var isCreated: scala.Boolean = js.native
+    /* CompleteClass */
+    override var isDestroyed: scala.Boolean = js.native
+    /* CompleteClass */
+    override var isRendered: scala.Boolean = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
+    /* CompleteClass */
+    override var parentView: View = js.native
+    /* CompleteClass */
+    override var renderCount: scala.Double = js.native
+    /* CompleteClass */
+    override var template: Template = js.native
+    /* CompleteClass */
+    override def autorun(runFunc: js.Function1[/* computation */ meteorLib.TrackerNs.Computation, scala.Unit]): meteorLib.TrackerNs.Computation = js.native
+    /* CompleteClass */
+    override def firstNode(): stdLib.Node = js.native
+    /* CompleteClass */
+    override def lastNode(): stdLib.Node = js.native
+    /* CompleteClass */
+    override def onViewCreated(func: js.Function): scala.Unit = js.native
+    /* CompleteClass */
+    override def onViewDestroyed(func: js.Function): scala.Unit = js.native
+    /* CompleteClass */
+    override def onViewReady(func: js.Function): scala.Unit = js.native
+    /* CompleteClass */
+    override def templateInstance(): TemplateInstance = js.native
   }
   
   @js.native

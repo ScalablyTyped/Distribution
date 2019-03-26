@@ -7,23 +7,20 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Buffer extends js.Object {
+  def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
   /**
-    * Asynchronous readlink(2) - read value of a symbolic link.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
+    * @param fd A file descriptor.
+    * @param buffer The buffer that the data will be written to.
+    * @param offset The offset in the buffer at which to start writing.
+    * @param length The number of bytes to read.
+    * @param position The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.
     */
-  def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[java.lang.String] = js.native
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
-  /**
-    * Asynchronous readlink(2) - read value of a symbolic link.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
-  @JSName("__promisify__")
-  def __promisify___buffer(path: nodeLib.fsMod.PathLike, options: adoneLib.adoneLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
+  def __promisify__[TBuffer /* <: nodeLib.fsMod.BinaryData */](
+    fd: scala.Double,
+    buffer: TBuffer,
+    offset: scala.Double,
+    length: scala.Double,
+    position: scala.Double
+  ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
 }
 

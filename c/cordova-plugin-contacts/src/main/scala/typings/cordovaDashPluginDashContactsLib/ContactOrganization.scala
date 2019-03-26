@@ -24,6 +24,17 @@ trait ContactOrganization extends js.Object {
 
 @JSGlobal("ContactOrganization")
 @js.native
+/** Constructor for ContactOrganization object */
+class ContactOrganizationCls () extends ContactOrganization {
+  def this(pref: scala.Boolean) = this()
+  def this(pref: scala.Boolean, `type`: java.lang.String) = this()
+  def this(pref: scala.Boolean, `type`: java.lang.String, name: java.lang.String) = this()
+  def this(pref: scala.Boolean, `type`: java.lang.String, name: java.lang.String, department: java.lang.String) = this()
+  def this(pref: scala.Boolean, `type`: java.lang.String, name: java.lang.String, department: java.lang.String, title: java.lang.String) = this()
+}
+
+@JSGlobal("ContactOrganization")
+@js.native
 object ContactOrganization
   extends /** Constructor for ContactOrganization object */
 org.scalablytyped.runtime.Instantiable0[ContactOrganization]

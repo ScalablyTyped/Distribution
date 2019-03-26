@@ -1246,6 +1246,23 @@ trait Window
 
 @JSGlobal("Window")
 @js.native
+class WindowCls () extends Window {
+  /* CompleteClass */
+  override val console: Console = js.native
+  /* CompleteClass */
+  override val indexedDB: IDBFactory = js.native
+  /* CompleteClass */
+  override val localStorage: Storage = js.native
+  /* CompleteClass */
+  override val sessionStorage: Storage = js.native
+  /* CompleteClass */
+  override def atob(encodedString: java.lang.String): java.lang.String = js.native
+  /* CompleteClass */
+  override def btoa(rawString: java.lang.String): java.lang.String = js.native
+}
+
+@JSGlobal("Window")
+@js.native
 object Window
   extends org.scalablytyped.runtime.Instantiable0[Window]
 

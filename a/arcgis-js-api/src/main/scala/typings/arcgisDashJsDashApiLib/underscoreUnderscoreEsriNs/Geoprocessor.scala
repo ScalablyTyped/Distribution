@@ -145,3 +145,9 @@ trait Geoprocessor extends Task {
   def submitJob(params: js.Any, requestOptions: js.Any): arcgisDashJsDashApiLib.IPromise[_] = js.native
 }
 
+@JSGlobal("__esri.Geoprocessor")
+@js.native
+class GeoprocessorCls () extends Geoprocessor {
+  def this(properties: GeoprocessorProperties) = this()
+}
+

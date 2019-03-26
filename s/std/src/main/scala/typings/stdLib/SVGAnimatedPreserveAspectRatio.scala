@@ -12,6 +12,15 @@ trait SVGAnimatedPreserveAspectRatio extends js.Object {
 
 @JSGlobal("SVGAnimatedPreserveAspectRatio")
 @js.native
+class SVGAnimatedPreserveAspectRatioCls () extends SVGAnimatedPreserveAspectRatio {
+  /* CompleteClass */
+  override val animVal: SVGPreserveAspectRatio = js.native
+  /* CompleteClass */
+  override val baseVal: SVGPreserveAspectRatio = js.native
+}
+
+@JSGlobal("SVGAnimatedPreserveAspectRatio")
+@js.native
 object SVGAnimatedPreserveAspectRatio
   extends org.scalablytyped.runtime.Instantiable0[SVGAnimatedPreserveAspectRatio]
 

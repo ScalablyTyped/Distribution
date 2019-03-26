@@ -79,3 +79,9 @@ trait LayerList extends Widget {
   def triggerAction(action: ActionToggle, item: ListItem): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.LayerList")
+@js.native
+class LayerListCls () extends LayerList {
+  def this(properties: LayerListProperties) = this()
+}
+

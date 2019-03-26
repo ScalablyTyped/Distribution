@@ -13,3 +13,7 @@ trait Dependency extends js.Object {
   def hasDependents(): scala.Boolean = js.native
 }
 
+@JSGlobal("Tracker.Dependency")
+@js.native
+class DependencyCls () extends Dependency
+

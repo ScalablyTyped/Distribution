@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerUnderscoreIAssociativeContainerMod._IAssociativeContainer because var conflicts: iterator. Inlined find, has, count, erase, erase, erase */ @JSImport("tstl/base/container/SetContainer", "SetContainer")
+- tstlLib.baseContainerUnderscoreIAssociativeContainerMod._IAssociativeContainer because var conflicts: iterator. Inlined find, has, count */ @JSImport("tstl/base/container/SetContainer", "SetContainer")
 @js.native
 /**
   * Default Constructor.
@@ -73,12 +73,6 @@ abstract class SetContainer[Key, Unique /* <: scala.Boolean */, Source /* <: Set
   def count(key: Key): scala.Double = js.native
   /**
     * @inheritDoc
-    */
-  /**
-    * Erase elements with a specified key.
-    *
-    * @param key Key to search for.
-    * @return Number of erased elements.
     */
   def erase(key: Key): scala.Double = js.native
   /**

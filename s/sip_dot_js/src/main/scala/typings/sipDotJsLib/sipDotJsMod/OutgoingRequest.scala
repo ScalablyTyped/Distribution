@@ -12,6 +12,8 @@ class OutgoingRequest protected ()
   def this(method: java.lang.String, ruri: java.lang.String, ua: sipDotJsLib.typesUaMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String]) = this()
   def this(method: java.lang.String, ruri: sipDotJsLib.typesUriMod.URI, ua: sipDotJsLib.typesUaMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String]) = this()
   def this(method: java.lang.String, ruri: java.lang.String, ua: sipDotJsLib.typesUaMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: java.lang.String) = this()
+  def this(method: java.lang.String, ruri: java.lang.String, ua: sipDotJsLib.typesUaMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: sipDotJsLib.Anon_Body) = this()
   def this(method: java.lang.String, ruri: sipDotJsLib.typesUriMod.URI, ua: sipDotJsLib.typesUaMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: java.lang.String) = this()
+  def this(method: java.lang.String, ruri: sipDotJsLib.typesUriMod.URI, ua: sipDotJsLib.typesUaMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: sipDotJsLib.Anon_Body) = this()
 }
 

@@ -17,6 +17,14 @@ package object swDashPrecacheMod {
     ], 
     js.Promise[java.lang.String]
   ]
+  /* Rewritten from type alias, can be one of: 
+    - swDashPrecacheLib.swDashPrecacheLibStrings.networkFirst
+    - swDashPrecacheLib.swDashPrecacheLibStrings.cacheFirst
+    - swDashPrecacheLib.swDashPrecacheLibStrings.fastest
+    - swDashPrecacheLib.swDashPrecacheLibStrings.cacheOnly
+    - swDashPrecacheLib.swDashPrecacheLibStrings.networkOnly
+    - swDashToolboxLib.swDashToolboxMod.Handler
+  */
   type Handler = _Handler | swDashToolboxLib.swDashToolboxMod.Handler
   type Write = js.Function3[
     /* filePath */ java.lang.String, 

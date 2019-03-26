@@ -23,6 +23,13 @@ trait ContactName extends js.Object {
 
 @JSGlobal("ContactName")
 @js.native
+class ContactNameCls protected () extends ContactName {
+  /** Constructor for ContactName object */
+  def this(formatted: js.UndefOr[java.lang.String], familyName: js.UndefOr[java.lang.String], givenName: js.UndefOr[java.lang.String], middleName: js.UndefOr[java.lang.String], honorificPrefix: js.UndefOr[java.lang.String], honorificSuffix: js.UndefOr[java.lang.String]) = this()
+}
+
+@JSGlobal("ContactName")
+@js.native
 object ContactName
   extends /** Constructor for ContactName object */
 org.scalablytyped.runtime.Instantiable6[

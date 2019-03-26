@@ -22,6 +22,24 @@ trait RoomObject extends js.Object {
   var room: js.UndefOr[Room]
 }
 
+@JSGlobal("RoomObject")
+@js.native
+class RoomObjectCls protected () extends RoomObject {
+  def this(x: scala.Double, y: scala.Double, roomName: java.lang.String) = this()
+  /**
+    * An object representing the position of this object in the room.
+    */
+  /* CompleteClass */
+  override var pos: RoomPosition = js.native
+  /**
+    * The link to the Room object. May be undefined in case if an object is a
+    * flag or a construction site and is placed in a room that is not visible
+    * to you.
+    */
+  /* CompleteClass */
+  override var room: js.UndefOr[Room] = js.native
+}
+
 object RoomObject {
   @scala.inline
   def apply(pos: RoomPosition, room: Room = null): RoomObject = {

@@ -27,3 +27,9 @@ trait SearchLayerField extends Accessor {
   var `type`: java.lang.String = js.native
 }
 
+@JSGlobal("__esri.SearchLayerField")
+@js.native
+class SearchLayerFieldCls () extends SearchLayerField {
+  def this(properties: SearchLayerFieldProperties) = this()
+}
+

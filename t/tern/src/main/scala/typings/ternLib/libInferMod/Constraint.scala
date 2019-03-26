@@ -13,3 +13,10 @@ trait Constraint extends AVal {
   var typeHint: js.UndefOr[js.Function0[js.UndefOr[Type]]] = js.native
 }
 
+@JSImport("tern/lib/infer", "constraint")
+@js.native
+class constraint protected ()
+  extends ternLib.Anon_Constraint {
+  def this(methods: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+}
+

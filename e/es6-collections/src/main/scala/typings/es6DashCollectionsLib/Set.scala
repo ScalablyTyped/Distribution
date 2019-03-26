@@ -22,3 +22,9 @@ trait Set[T] extends js.Object {
   def values(): Iterator[T] = js.native
 }
 
+@JSGlobal("Set")
+@js.native
+class SetCls[T] () extends Set[T] {
+  def this(iterable: ForEachable[T]) = this()
+}
+

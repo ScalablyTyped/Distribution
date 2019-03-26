@@ -368,10 +368,20 @@ object TranslateNs extends js.Object {
   type String = java.lang.String
   type TermList = js.Array[Term]
   type TerminologyArn = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CSV
+    - awsDashSdkLib.awsDashSdkLibStrings.TMX
+    - java.lang.String
+  */
   type TerminologyDataFormat = _TerminologyDataFormat | java.lang.String
   type TerminologyFile = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsTranslateMod.Blob | java.lang.String
   type TerminologyPropertiesList = js.Array[TerminologyProperties]
   type Timestamp = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-07-01`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

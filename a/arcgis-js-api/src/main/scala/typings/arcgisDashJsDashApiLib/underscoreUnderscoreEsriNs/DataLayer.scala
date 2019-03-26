@@ -54,3 +54,14 @@ trait DataLayer extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.DataLayer")
+@js.native
+/**
+  * Input for properties of ClosestFacilityParameters,RouteParameters or ServiceAreaParameters. The DataLayer can be used to define the following for each paramater type:
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html)
+  */
+class DataLayerCls () extends DataLayer {
+  def this(properties: DataLayerProperties) = this()
+}
+

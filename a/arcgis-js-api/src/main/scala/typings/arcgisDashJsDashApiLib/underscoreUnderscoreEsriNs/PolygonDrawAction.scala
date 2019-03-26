@@ -38,3 +38,9 @@ trait PolygonDrawAction extends DrawAction {
   def complete(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.PolygonDrawAction")
+@js.native
+class PolygonDrawActionCls () extends PolygonDrawAction {
+  def this(properties: PolygonDrawActionProperties) = this()
+}
+

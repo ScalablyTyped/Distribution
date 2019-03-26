@@ -15,6 +15,6 @@ class InfiniteLoader ()
 @js.native
 object InfiniteLoader extends js.Object {
   var defaultProps: reactDashVirtualizedLib.Anon_010 = js.native
-  var propTypes: reactDashVirtualizedLib.Anon_ChildrenComponentName = js.native
+  var propTypes: reactDashVirtualizedLib.Anon_ChildrenIsRowLoaded = js.native
 }
 

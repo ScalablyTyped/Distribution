@@ -24,6 +24,51 @@ object MongoNs extends js.Object {
       ] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - meteorLib.meteorLibNumbers.`1`
+    - meteorLib.meteorLibStrings.double
+    - meteorLib.meteorLibNumbers.`2`
+    - meteorLib.meteorLibStrings.string
+    - meteorLib.meteorLibNumbers.`3`
+    - meteorLib.meteorLibStrings.`object`
+    - meteorLib.meteorLibNumbers.`4`
+    - meteorLib.meteorLibStrings.array
+    - meteorLib.meteorLibNumbers.`5`
+    - meteorLib.meteorLibStrings.binData
+    - meteorLib.meteorLibNumbers.`6`
+    - meteorLib.meteorLibStrings.undefined
+    - meteorLib.meteorLibNumbers.`7`
+    - meteorLib.meteorLibStrings.objectId
+    - meteorLib.meteorLibNumbers.`8`
+    - meteorLib.meteorLibStrings.bool
+    - meteorLib.meteorLibNumbers.`9`
+    - meteorLib.meteorLibStrings.date
+    - meteorLib.meteorLibNumbers.`10`
+    - meteorLib.meteorLibStrings.`null`
+    - meteorLib.meteorLibNumbers.`11`
+    - meteorLib.meteorLibStrings.regex
+    - meteorLib.meteorLibNumbers.`12`
+    - meteorLib.meteorLibStrings.dbPointer
+    - meteorLib.meteorLibNumbers.`13`
+    - meteorLib.meteorLibStrings.javascript
+    - meteorLib.meteorLibNumbers.`14`
+    - meteorLib.meteorLibStrings.symbol
+    - meteorLib.meteorLibNumbers.`15`
+    - meteorLib.meteorLibStrings.javascriptWithScope
+    - meteorLib.meteorLibNumbers.`16`
+    - meteorLib.meteorLibStrings.int
+    - meteorLib.meteorLibNumbers.`17`
+    - meteorLib.meteorLibStrings.timestamp
+    - meteorLib.meteorLibNumbers.`18`
+    - meteorLib.meteorLibStrings.long
+    - meteorLib.meteorLibNumbers.`19`
+    - meteorLib.meteorLibStrings.decimal
+    - meteorLib.meteorLibNumbers.`-1`
+    - meteorLib.meteorLibStrings.minKey
+    - meteorLib.meteorLibNumbers.`127`
+    - meteorLib.meteorLibStrings.maxKey
+    - meteorLib.meteorLibStrings.number
+  */
   trait BsonType extends js.Object
   
   @js.native
@@ -104,6 +149,12 @@ object MongoNs extends js.Object {
   }
   
   @js.native
+  class CollectionCls[T] protected () extends Collection[T] {
+    def this(name: java.lang.String) = this()
+    def this(name: java.lang.String, options: meteorLib.Anon_Connection) = this()
+  }
+  
+  @js.native
   trait CollectionStatic
     extends org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, Collection[js.Object]]
        with org.scalablytyped.runtime.Instantiable2[
@@ -112,6 +163,10 @@ object MongoNs extends js.Object {
           Collection[js.Object]
         ]
   
+  /* Rewritten from type alias, can be one of: 
+    - meteorLib.Anon_Date
+    - meteorLib.meteorLibNumbers.`true`
+  */
   trait CurrentDateModifier extends js.Object
   
   @js.native
@@ -132,6 +187,9 @@ object MongoNs extends js.Object {
     def observe(callbacks: ObserveCallbacks): meteorLib.MeteorNs.LiveQueryHandle = js.native
     def observeChanges(callbacks: ObserveChangesCallbacks): meteorLib.MeteorNs.LiveQueryHandle = js.native
   }
+  
+  @js.native
+  class CursorCls[T] () extends Cursor[T]
   
   @js.native
   trait CursorStatic
@@ -214,6 +272,15 @@ object MongoNs extends js.Object {
   trait ObjectID extends js.Object {
     def equals(otherID: ObjectID): scala.Boolean
     def toHexString(): java.lang.String
+  }
+  
+  @js.native
+  class ObjectIDCls () extends ObjectID {
+    def this(hexString: java.lang.String) = this()
+    /* CompleteClass */
+    override def equals(otherID: ObjectID): scala.Boolean = js.native
+    /* CompleteClass */
+    override def toHexString(): java.lang.String = js.native
   }
   
   @js.native

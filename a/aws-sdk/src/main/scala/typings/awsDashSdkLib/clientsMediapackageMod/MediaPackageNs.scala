@@ -1223,14 +1223,52 @@ object MediaPackageNs extends js.Object {
   trait _apiVersion extends js.Object
   
   val TypesNs: this.type = js.native
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.SCTE35_ENHANCED
+    - awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH
+    - java.lang.String
+  */
   type AdMarkers = _AdMarkers | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AES_128
+    - awsDashSdkLib.awsDashSdkLibStrings.SAMPLE_AES
+    - java.lang.String
+  */
   type EncryptionMethod = _EncryptionMethod | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FULL
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPACT
+    - java.lang.String
+  */
   type ManifestLayout = _ManifestLayout | java.lang.String
   type MaxResults = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.EVENT
+    - awsDashSdkLib.awsDashSdkLibStrings.VOD
+    - java.lang.String
+  */
   type PlaylistType = _PlaylistType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NONE
+    - awsDashSdkLib.awsDashSdkLibStrings.HBBTV_1_5
+    - java.lang.String
+  */
   type Profile = _Profile | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NUMBER_WITH_TIMELINE
+    - awsDashSdkLib.awsDashSdkLibStrings.TIME_WITH_TIMELINE
+    - java.lang.String
+  */
   type SegmentTemplateFormat = _SegmentTemplateFormat | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ORIGINAL
+    - awsDashSdkLib.awsDashSdkLibStrings.VIDEO_BITRATE_ASCENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.VIDEO_BITRATE_DESCENDING
+    - java.lang.String
+  */
   type StreamOrder = _StreamOrder | java.lang.String
   type __PeriodTriggersElement = awsDashSdkLib.awsDashSdkLibStrings.ADS | java.lang.String
   type __boolean = scala.Boolean
@@ -1243,6 +1281,11 @@ object MediaPackageNs extends js.Object {
   type __listOf__PeriodTriggersElement = js.Array[__PeriodTriggersElement]
   type __listOf__string = js.Array[__string]
   type __string = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-10-12`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

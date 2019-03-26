@@ -56,8 +56,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2010-12-01`
-    extends awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs._apiVersion
-       with awsDashSdkLib.clientsSesMod.SESNs._apiVersion
+    extends awsDashSdkLib.clientsSesMod.SESNs._apiVersion
+       with awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs._apiVersion
   
   @js.native
   sealed trait `2011-01-01`
@@ -81,13 +81,13 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2012-06-01`
-    extends awsDashSdkLib.clientsElbMod.ELBNs._apiVersion
-       with awsDashSdkLib.clientsGlacierMod.GlacierNs._apiVersion
+    extends awsDashSdkLib.clientsGlacierMod.GlacierNs._apiVersion
+       with awsDashSdkLib.clientsElbMod.ELBNs._apiVersion
   
   @js.native
   sealed trait `2012-08-10`
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._apiVersion
-       with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._apiVersion
+    extends awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._apiVersion
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._apiVersion
   
   @js.native
   sealed trait `2012-09-25`
@@ -212,8 +212,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2014-06-30`
-    extends awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs._apiVersion
-       with awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs._apiVersion
+    extends awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs._apiVersion
+       with awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs._apiVersion
   
   @js.native
   sealed trait `2014-07-15`
@@ -313,8 +313,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2015-05-28`
-    extends awsDashSdkLib.clientsIotMod.IotNs._apiVersion
-       with awsDashSdkLib.clientsIotdataMod.IotDataNs._apiVersion
+    extends awsDashSdkLib.clientsIotdataMod.IotDataNs._apiVersion
+       with awsDashSdkLib.clientsIotMod.IotNs._apiVersion
   
   @js.native
   sealed trait `2015-06-23`
@@ -502,10 +502,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2016-11-28`
-    extends awsDashSdkLib.clientsLexruntimeMod.LexRuntimeNs._apiVersion
-       with awsDashSdkLib.clientsLightsailMod.LightsailNs._apiVersion
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._apiVersion
+       with awsDashSdkLib.clientsLexruntimeMod.LexRuntimeNs._apiVersion
        with awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs._apiVersion
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._apiVersion
+       with awsDashSdkLib.clientsLightsailMod.LightsailNs._apiVersion
   
   @js.native
   sealed trait `2016-12-01`
@@ -518,8 +518,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2017-01-11`
-    extends awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs._apiVersion
-       with awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs._apiVersion
+    extends awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs._apiVersion
+       with awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs._apiVersion
   
   @js.native
   sealed trait `2017-01-17`
@@ -544,8 +544,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait `2017-04-19`
     extends awsDashSdkLib.clientsCodestarMod.CodeStarNs._apiVersion
-       with awsDashSdkLib.clientsDaxMod.DAXNs._apiVersion
        with awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs._apiVersion
+       with awsDashSdkLib.clientsDaxMod.DAXNs._apiVersion
   
   @js.native
   sealed trait `2017-04-28`
@@ -578,8 +578,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2017-07-25`
-    extends awsDashSdkLib.clientsAmplifyMod.AmplifyNs._apiVersion
-       with awsDashSdkLib.clientsAppsyncMod.AppSyncNs._apiVersion
+    extends awsDashSdkLib.clientsAppsyncMod.AppSyncNs._apiVersion
+       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._apiVersion
   
   @js.native
   sealed trait `2017-08-08`
@@ -587,9 +587,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2017-08-22`
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._apiVersion
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._apiVersion
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._apiVersion
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._apiVersion
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._apiVersion
   
   @js.native
   sealed trait `2017-08-25`
@@ -618,9 +618,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2017-09-30`
-    extends awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs._apiVersion
-       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs._apiVersion
+    extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs._apiVersion
        with awsDashSdkLib.clientsKinesisvideomediaMod.KinesisVideoMediaNs._apiVersion
+       with awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs._apiVersion
   
   @js.native
   sealed trait `2017-10-01`
@@ -666,10 +666,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2017-11-27`
-    extends awsDashSdkLib.clientsComprehendMod.ComprehendNs._apiVersion
-       with awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs._apiVersion
-       with awsDashSdkLib.clientsMqMod.MQNs._apiVersion
+    extends awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs._apiVersion
        with awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs._apiVersion
+       with awsDashSdkLib.clientsMqMod.MQNs._apiVersion
+       with awsDashSdkLib.clientsComprehendMod.ComprehendNs._apiVersion
   
   @js.native
   sealed trait `2017-11-28`
@@ -705,8 +705,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2018-04-01`
-    extends awsDashSdkLib.clientsQuicksightMod.QuickSightNs._apiVersion
-       with awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs._apiVersion
+    extends awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs._apiVersion
+       with awsDashSdkLib.clientsQuicksightMod.QuickSightNs._apiVersion
   
   @js.native
   sealed trait `2018-04-23`
@@ -718,8 +718,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2018-05-14`
-    extends awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs._apiVersion
-       with awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs._apiVersion
+    extends awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs._apiVersion
+       with awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs._apiVersion
   
   @js.native
   sealed trait `2018-05-23`
@@ -743,8 +743,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `2018-08-01`
-    extends awsDashSdkLib.clientsLicensemanagerMod.LicenseManagerNs._apiVersion
-       with awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs._apiVersion
+    extends awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs._apiVersion
+       with awsDashSdkLib.clientsLicensemanagerMod.LicenseManagerNs._apiVersion
   
   @js.native
   sealed trait `2018-08-08`
@@ -868,9 +868,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ABSOLUTE
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ValidityPeriodType
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ValidityPeriodType
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ValidityPeriodType
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._ValidityPeriodType
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ValidityPeriodType
   
   @js.native
   sealed trait ABSOLUTE_VALUE
@@ -947,9 +947,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSmsMod.SMSNs._AppStatus
        with awsDashSdkLib.clientsIotMod.IotNs._AuthorizerStatus
        with awsDashSdkLib.clientsIotMod.IotNs._CACertificateStatus
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.clientsIotMod.IotNs._CertificateStatus
        with awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs._ChannelStatus
        with awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns._ClusterState
@@ -968,8 +968,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs._DomainStatusType
        with awsDashSdkLib.clientsIotMod.IotNs._DynamicGroupStatus
        with awsDashSdkLib.clientsXrayMod.XRayNs._EncryptionStatus
-       with awsDashSdkLib.clientsGameliftMod.GameLiftNs._FleetStatus
        with awsDashSdkLib.clientsWorklinkMod.WorkLinkNs._FleetStatus
+       with awsDashSdkLib.clientsGameliftMod.GameLiftNs._FleetStatus
        with awsDashSdkLib.clientsGameliftMod.GameLiftNs._GameSessionStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._GlobalTableStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._GlobalTableStatus
@@ -1002,9 +1002,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAppstreamMod.AppStreamNs._SessionState
        with awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._StackSetStatus
        with awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs._StateMachineStatus
-       with awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs._Status
        with awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs._Status
        with awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs._Status
+       with awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs._Status
        with awsDashSdkLib.clientsKinesisMod.KinesisNs._StreamStatus
        with awsDashSdkLib.clientsShieldMod.ShieldNs._SubscriptionState
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._TableStatus
@@ -1072,8 +1072,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AD
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ADAPTIVE
@@ -1174,8 +1174,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AE
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait AES128
@@ -1214,8 +1214,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AF
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait AFD_0000
@@ -1265,11 +1265,11 @@ object awsDashSdkLibStrings {
   sealed trait AFFILIATION_CHANGED
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerTlsCertificateRevocationReason
        with awsDashSdkLib.clientsAcmMod.ACMNs._RevocationReason
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RevocationReason
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._RevocationReason
-       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RevocationReason
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RevocationReason
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._RevocationReason
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RevocationReason
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
   
   @js.native
   sealed trait AFR
@@ -1294,8 +1294,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AG
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait AGE
@@ -1339,8 +1339,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AI
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait AIFF
@@ -1357,8 +1357,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AL
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ALARM
@@ -1371,8 +1371,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ALBRequestCountPerTarget
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricType
-       with awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._MetricType
+    extends awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._MetricType
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricType
        with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalingMetricType
   
   @js.native
@@ -1428,8 +1428,8 @@ object awsDashSdkLibStrings {
   sealed trait ALLOW
     extends awsDashSdkLib.clientsAppsyncMod.AppSyncNs._DefaultAction
        with awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs._IAMUserAccessToBilling
-       with awsDashSdkLib.clientsWafMod.WAFNs._WafActionType
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._WafActionType
+       with awsDashSdkLib.clientsWafMod.WAFNs._WafActionType
   
   @js.native
   sealed trait ALLOWED
@@ -1447,14 +1447,14 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ALL_NEW
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnValue
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ReturnValue
+    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ReturnValue
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnValue
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnValue
   
   @js.native
   sealed trait ALL_OLD
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnValue
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ReturnValue
+    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ReturnValue
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnValue
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnValue
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnValuesOnConditionCheckFailure
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ReturnValuesOnConditionCheckFailure
@@ -1468,8 +1468,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ALL_QUERY_ARGS
-    extends awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
+       with awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
   
   @js.native
   sealed trait ALL_STEPS_COMPLETED
@@ -1499,8 +1499,8 @@ object awsDashSdkLibStrings {
   sealed trait ALWAYS
     extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs._DiscontinuityMode
        with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs._DisplayFragmentTimestamp
-       with awsDashSdkLib.clientsGlacierMod.GlacierNs._QuoteFields
        with awsDashSdkLib.clientsS3Mod.S3Ns._QuoteFields
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._QuoteFields
        with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._RequiresRecreation
   
   @js.native
@@ -1511,8 +1511,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait AMAZON
@@ -1540,8 +1540,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait AMAZON_LINUX
-    extends awsDashSdkLib.clientsGameliftMod.GameLiftNs._OperatingSystem
-       with awsDashSdkLib.clientsSsmMod.SSMNs._OperatingSystem
+    extends awsDashSdkLib.clientsSsmMod.SSMNs._OperatingSystem
+       with awsDashSdkLib.clientsGameliftMod.GameLiftNs._OperatingSystem
        with awsDashSdkLib.clientsCodebuildMod.CodeBuildNs._PlatformType
   
   @js.native
@@ -1570,8 +1570,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait AND
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ConditionalOperator
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ConditionalOperator
+    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ConditionalOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ConditionalOperator
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ConditionalOperator
        with awsDashSdkLib.clientsGlueMod.GlueNs._Logical
   
@@ -1579,8 +1579,8 @@ object awsDashSdkLibStrings {
   sealed trait ANDROID
     extends awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs._DevicePlatform
        with awsDashSdkLib.clientsCodebuildMod.CodeBuildNs._LanguageType
-       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._Platform
        with awsDashSdkLib.clientsMobileMod.MobileNs._Platform
+       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._Platform
   
   @js.native
   sealed trait ANDROID_APP
@@ -1619,8 +1619,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AO
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait API
@@ -1854,14 +1854,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AQ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait AR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ARA
@@ -1909,8 +1909,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AS
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ASC
@@ -1962,8 +1962,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ASNEEDED
-    extends awsDashSdkLib.clientsGlacierMod.GlacierNs._QuoteFields
-       with awsDashSdkLib.clientsS3Mod.S3Ns._QuoteFields
+    extends awsDashSdkLib.clientsS3Mod.S3Ns._QuoteFields
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._QuoteFields
   
   @js.native
   sealed trait ASSESSMENT_RUN_COMPLETED
@@ -1999,8 +1999,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AT
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ATHENA
@@ -2041,8 +2041,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AU
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait AUDIO
@@ -2213,8 +2213,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AW
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait AWAITING_FULFILLMENT
@@ -2223,8 +2223,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait AWS
     extends awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs._ActionOwner
-       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._IntegrationType
        with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._IntegrationType
+       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._IntegrationType
        with awsDashSdkLib.clientsKmsMod.KMSNs._KeyManagerType
        with awsDashSdkLib.clientsSmsMod.SMSNs._LicenseType
        with awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs._Owner
@@ -2502,6 +2502,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsIamMod.IAMNs._EntityType
   
   @js.native
+  sealed trait AWSSHIELD_ADVANCED
+    extends awsDashSdkLib.clientsFmsMod.FMSNs._DependentServiceName
+  
+  @js.native
   sealed trait AWSWAF
     extends awsDashSdkLib.clientsFmsMod.FMSNs._DependentServiceName
   
@@ -2537,8 +2541,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait AWS_PROXY
-    extends awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._IntegrationType
-       with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._IntegrationType
+    extends awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._IntegrationType
+       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._IntegrationType
   
   @js.native
   sealed trait AWS_REGION
@@ -2551,8 +2555,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait AX
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait AYM
@@ -2562,8 +2566,8 @@ object awsDashSdkLibStrings {
   sealed trait AZ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
        with awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs._Dimension
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait AZE
@@ -2573,11 +2577,11 @@ object awsDashSdkLibStrings {
   sealed trait A_A_COMPROMISE
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerTlsCertificateRevocationReason
        with awsDashSdkLib.clientsAcmMod.ACMNs._RevocationReason
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RevocationReason
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._RevocationReason
-       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RevocationReason
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RevocationReason
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._RevocationReason
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RevocationReason
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
   
   @js.native
   sealed trait Accept
@@ -2589,8 +2593,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait AccessDenied
-    extends awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs._ErrorCode
-       with awsDashSdkLib.clientsEksMod.EKSNs._ErrorCode
+    extends awsDashSdkLib.clientsEksMod.EKSNs._ErrorCode
+       with awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs._ErrorCode
   
   @js.native
   sealed trait AccessDeniedException
@@ -2826,8 +2830,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait AmazonCustomerByEmail
-    extends awsDashSdkLib.clientsGlacierMod.GlacierNs._Type
-       with awsDashSdkLib.clientsS3Mod.S3Ns._Type
+    extends awsDashSdkLib.clientsS3Mod.S3Ns._Type
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._Type
   
   @js.native
   sealed trait Amy
@@ -3041,12 +3045,12 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Average
     extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricAggregationType
-       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._MetricStatistic
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._MetricStatistic
-       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._Statistic
        with awsDashSdkLib.clientsRoute53Mod.Route53Ns._Statistic
+       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._Statistic
   
   @js.native
   sealed trait AwaitingQuorum
@@ -3065,8 +3069,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait BA
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BACKDOOR
@@ -3133,20 +3137,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait BB
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BD
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BE
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BEFORE
@@ -3195,26 +3199,26 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait BF
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BG
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BH
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BI
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BIH
@@ -3282,14 +3286,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait BJ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BL
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BLACK
@@ -3335,8 +3339,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs._AccountTakeoverEventActionType
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs._CompromisedCredentialsEventActionType
        with awsDashSdkLib.clientsSsmMod.SSMNs._PatchAction
-       with awsDashSdkLib.clientsWafMod.WAFNs._WafActionType
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._WafActionType
+       with awsDashSdkLib.clientsWafMod.WAFNs._WafActionType
   
   @js.native
   sealed trait BLUE
@@ -3368,20 +3372,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait BM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BN
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BO
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BOD
@@ -3389,8 +3393,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait BODY
-    extends awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
+       with awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
   
   @js.native
   sealed trait BOOLEAN
@@ -3451,14 +3455,14 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait BQ
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BRAND_NAME
@@ -3483,14 +3487,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait BS
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BT
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BUILD
@@ -3546,20 +3550,20 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait BV
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BW
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BY
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BYOL
@@ -3589,8 +3593,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait BZ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait BZIP2
@@ -3722,8 +3726,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ByteMatch
-    extends awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+       with awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
   
   @js.native
   sealed trait Bytes
@@ -3738,8 +3742,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CA
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CAA
@@ -3808,8 +3812,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs._HandshakeState
        with awsDashSdkLib.clientsIotMod.IotNs._JobExecutionStatus
        with awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs._JobExecutionStatus
-       with awsDashSdkLib.clientsIotMod.IotNs._JobStatus
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._JobStatus
+       with awsDashSdkLib.clientsIotMod.IotNs._JobStatus
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._ReservationState
        with awsDashSdkLib.clientsRedshiftMod.RedshiftNs._TableRestoreStatusType
   
@@ -3842,18 +3846,18 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CAPABILITY_AUTO_EXPAND
-    extends awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._Capability
-       with awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs._Capability
+    extends awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs._Capability
+       with awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._Capability
   
   @js.native
   sealed trait CAPABILITY_IAM
-    extends awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._Capability
-       with awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs._Capability
+    extends awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs._Capability
+       with awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._Capability
   
   @js.native
   sealed trait CAPABILITY_NAMED_IAM
-    extends awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._Capability
-       with awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs._Capability
+    extends awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs._Capability
+       with awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._Capability
   
   @js.native
   sealed trait CAPABILITY_RESOURCE_POLICY
@@ -3906,8 +3910,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CC
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CCONJ
@@ -3916,8 +3920,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CD
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CELL
@@ -3946,9 +3950,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CERTIFICATE_AUTHORITY_COMPROMISE
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._RevocationReason
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._RevocationReason
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._RevocationReason
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
   
   @js.native
   sealed trait CERTIFICATE_HOLD
@@ -3971,29 +3975,29 @@ object awsDashSdkLibStrings {
   sealed trait CESSATION_OF_OPERATION
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerTlsCertificateRevocationReason
        with awsDashSdkLib.clientsAcmMod.ACMNs._RevocationReason
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RevocationReason
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._RevocationReason
-       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RevocationReason
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RevocationReason
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._RevocationReason
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RevocationReason
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
   
   @js.native
   sealed trait CF
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CG
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CH
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CHA
@@ -4066,20 +4070,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CI
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CK
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CL
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CLASSIFICATION
@@ -4156,8 +4160,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CMAF_GROUP_SETTINGS
@@ -4165,8 +4169,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CMD_LINE
-    extends awsDashSdkLib.clientsWafMod.WAFNs._TextTransformation
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._TextTransformation
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._TextTransformation
+       with awsDashSdkLib.clientsWafMod.WAFNs._TextTransformation
   
   @js.native
   sealed trait CMFC
@@ -4175,8 +4179,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CN
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CNAME
@@ -4186,8 +4190,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CO
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CODEBUILD
@@ -4349,9 +4353,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs._ExecutionStatus
        with awsDashSdkLib.clientsCloudwatchlogsMod.CloudWatchLogsNs._ExportTaskStatusCode
        with awsDashSdkLib.clientsEmrMod.EMRNs._JobFlowExecutionState
-       with awsDashSdkLib.clientsComprehendMod.ComprehendNs._JobStatus
-       with awsDashSdkLib.clientsIotMod.IotNs._JobStatus
        with awsDashSdkLib.clientsPinpointMod.PinpointNs._JobStatus
+       with awsDashSdkLib.clientsIotMod.IotNs._JobStatus
+       with awsDashSdkLib.clientsComprehendMod.ComprehendNs._JobStatus
        with awsDashSdkLib.clientsGameliftMod.GameLiftNs._MatchmakingConfigurationStatus
        with awsDashSdkLib.clientsGameliftMod.GameLiftNs._PlayerSessionStatus
        with awsDashSdkLib.clientsInspectorMod.InspectorNs._PreviewStatus
@@ -4408,8 +4412,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait COMPRESS_WHITE_SPACE
-    extends awsDashSdkLib.clientsWafMod.WAFNs._TextTransformation
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._TextTransformation
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._TextTransformation
+       with awsDashSdkLib.clientsWafMod.WAFNs._TextTransformation
   
   @js.native
   sealed trait COMPROMISED
@@ -4591,15 +4595,15 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with awsDashSdkLib.clientsLicensemanagerMod.LicenseManagerNs._InventoryFilterCondition
-       with awsDashSdkLib.clientsWafMod.WAFNs._PositionalConstraint
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PositionalConstraint
+       with awsDashSdkLib.clientsWafMod.WAFNs._PositionalConstraint
        with awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs._RuleOperator
        with awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs._StringFilterComparison
   
   @js.native
   sealed trait CONTAINS_WORD
-    extends awsDashSdkLib.clientsWafMod.WAFNs._PositionalConstraint
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PositionalConstraint
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PositionalConstraint
+       with awsDashSdkLib.clientsWafMod.WAFNs._PositionalConstraint
   
   @js.native
   sealed trait CONTINUATION_TOKEN
@@ -4637,13 +4641,13 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CONVERT_TO_BINARY
-    extends awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._ContentHandlingStrategy
-       with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._ContentHandlingStrategy
+    extends awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._ContentHandlingStrategy
+       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._ContentHandlingStrategy
   
   @js.native
   sealed trait CONVERT_TO_TEXT
-    extends awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._ContentHandlingStrategy
-       with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._ContentHandlingStrategy
+    extends awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._ContentHandlingStrategy
+       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._ContentHandlingStrategy
   
   @js.native
   sealed trait COOWNER
@@ -4695,10 +4699,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._Select
        with awsDashSdkLib.clientsConnectMod.ConnectNs._Unit
        with awsDashSdkLib.clientsEmrMod.EMRNs._Unit
-       with awsDashSdkLib.clientsWafMod.WAFNs._WafActionType
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._WafActionType
-       with awsDashSdkLib.clientsWafMod.WAFNs._WafOverrideActionType
+       with awsDashSdkLib.clientsWafMod.WAFNs._WafActionType
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._WafOverrideActionType
+       with awsDashSdkLib.clientsWafMod.WAFNs._WafOverrideActionType
   
   @js.native
   sealed trait COUNT_BY_SEVERITY extends js.Object
@@ -4719,8 +4723,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CRE
@@ -4805,17 +4809,17 @@ object awsDashSdkLibStrings {
   sealed trait CREATING
     extends awsDashSdkLib.clientsFmsMod.FMSNs._AccountRoleStatus
        with awsDashSdkLib.clientsSmsMod.SMSNs._AppStatus
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._AuditReportStatus
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._AuditReportStatus
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._AuditReportStatus
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._AuditReportStatus
        with awsDashSdkLib.clientsFsxMod.FSxNs._BackupLifecycle
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._BackupStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._BackupStatus
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupStatus
        with awsDashSdkLib.clientsBatchMod.BatchNs._CEStatus
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._ChannelState
        with awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs._ChannelStatus
        with awsDashSdkLib.clientsKafkaMod.KafkaNs._ClusterState
@@ -4845,8 +4849,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs._ResolverRuleAssociationStatus
        with awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs._ServerStatus
        with awsDashSdkLib.clientsKinesisanalyticsv2Mod.KinesisAnalyticsV2Ns._SnapshotStatus
-       with awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs._Status
        with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._Status
+       with awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs._Status
        with awsDashSdkLib.clientsKinesisMod.KinesisNs._StreamStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._TableStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._TableStatus
@@ -4895,9 +4899,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CSV
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._AuditReportResponseFormat
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._AuditReportResponseFormat
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._AuditReportResponseFormat
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._AuditReportResponseFormat
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._AuditReportResponseFormat
        with awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs._BusinessReportFormat
        with awsDashSdkLib.clientsAllMod.AlexaForBusinessNs.AlexaForBusinessNs._BusinessReportFormat
        with awsDashSdkLib.awsDashSdkMod.AlexaForBusinessNs.AlexaForBusinessNs._BusinessReportFormat
@@ -4917,8 +4921,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CU
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CURATED
@@ -4986,25 +4990,25 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CV
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CW
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CX
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CY
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait CYM
@@ -5013,8 +5017,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait CZ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait Cancel
@@ -5078,8 +5082,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait CanonicalUser
-    extends awsDashSdkLib.clientsGlacierMod.GlacierNs._Type
-       with awsDashSdkLib.clientsS3Mod.S3Ns._Type
+    extends awsDashSdkLib.clientsS3Mod.S3Ns._Type
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._Type
   
   @js.native
   sealed trait CapacityForecast
@@ -5556,9 +5560,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait DAYS
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ValidityPeriodType
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ValidityPeriodType
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ValidityPeriodType
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._ValidityPeriodType
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ValidityPeriodType
   
   @js.native
   sealed trait DAY_14
@@ -5579,8 +5583,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DE
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait DEACTIVATED
@@ -5599,8 +5603,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DEBUG
     extends awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs._EventSeverity
-       with awsDashSdkLib.clientsIotMod.IotNs._LogLevel
        with awsDashSdkLib.clientsKinesisanalyticsv2Mod.KinesisAnalyticsV2Ns._LogLevel
+       with awsDashSdkLib.clientsIotMod.IotNs._LogLevel
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._LogLevel
        with awsDashSdkLib.clientsGreengrassMod.GreengrassNs._LoggerLevel
        with awsDashSdkLib.clientsGreengrassMod.GreengrassNs._UpdateAgentLogLevel
@@ -5728,9 +5732,9 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._AttributeAction
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._AttributeAction
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._AttributeAction
-       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._ChangeAction
-       with awsDashSdkLib.clientsWafMod.WAFNs._ChangeAction
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ChangeAction
+       with awsDashSdkLib.clientsWafMod.WAFNs._ChangeAction
+       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._ChangeAction
        with awsDashSdkLib.clientsMqMod.MQNs._ChangeType
        with awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs._Method
        with awsDashSdkLib.clientsMediastoreMod.MediaStoreNs._MethodName
@@ -5750,9 +5754,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupStatus
        with awsDashSdkLib.clientsBatchMod.BatchNs._CEStatus
        with awsDashSdkLib.clientsPinpointMod.PinpointNs._CampaignStatus
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._ChannelState
        with awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns._ClusterState
        with awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs._CommentStatusType
@@ -5859,8 +5863,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs._DomainStatusType
        with awsDashSdkLib.clientsCloud9Mod.Cloud9Ns._EnvironmentLifecycleStatus
        with awsDashSdkLib.clientsFsxMod.FSxNs._FileSystemLifecycle
-       with awsDashSdkLib.clientsGameliftMod.GameLiftNs._FleetStatus
        with awsDashSdkLib.clientsWorklinkMod.WorkLinkNs._FleetStatus
+       with awsDashSdkLib.clientsGameliftMod.GameLiftNs._FleetStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._GlobalTableStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._GlobalTableStatus
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._GlobalTableStatus
@@ -5889,8 +5893,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsKinesisanalyticsv2Mod.KinesisAnalyticsV2Ns._SnapshotStatus
        with awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs._StandardsStatus
        with awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs._StateMachineStatus
-       with awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs._Status
        with awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs._Status
+       with awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs._Status
        with awsDashSdkLib.clientsKinesisMod.KinesisNs._StreamStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._TableStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._TableStatus
@@ -6133,17 +6137,17 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._AccelerationMode
        with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._AccessStatus
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._AntiAlias
-       with awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs._AssignPublicIp
        with awsDashSdkLib.clientsEcsMod.ECSNs._AssignPublicIp
+       with awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs._AssignPublicIp
        with awsDashSdkLib.clientsShieldMod.ShieldNs._AutoRenew
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._AvailBlankingState
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._BlackoutSlateNetworkEndBlackout
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._BlackoutSlateState
        with awsDashSdkLib.clientsBatchMod.BatchNs._CEState
        with awsDashSdkLib.clientsGlueMod.GlueNs._CatalogEncryptionMode
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.clientsAcmMod.ACMNs._CertificateTransparencyLoggingPreference
        with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._CertificateTransparencyLoggingPreference
        with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._CertificateTransparencyLoggingPreference
@@ -6228,10 +6232,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs._ReconnectEnum
        with awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs._RuleState
        with awsDashSdkLib.clientsGlueMod.GlueNs._S3EncryptionMode
-       with awsDashSdkLib.clientsDaxMod.DAXNs._SSEStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._SSEStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._SSEStatus
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEStatus
+       with awsDashSdkLib.clientsDaxMod.DAXNs._SSEStatus
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._Scte20Convert608To708
        with awsDashSdkLib.clientsDlmMod.DLMNs._SettablePolicyStateValues
        with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._StreamStatus
@@ -6250,10 +6254,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DISABLING
     extends awsDashSdkLib.clientsFirehoseMod.FirehoseNs._DeliveryStreamEncryptionStatus
-       with awsDashSdkLib.clientsDaxMod.DAXNs._SSEStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._SSEStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._SSEStatus
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEStatus
+       with awsDashSdkLib.clientsDaxMod.DAXNs._SSEStatus
        with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._StreamStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._TimeToLiveStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._TimeToLiveStatus
@@ -6311,20 +6315,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DJ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait DK
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait DM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait DML
@@ -6347,8 +6351,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DO
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait DOCKER
@@ -6648,8 +6652,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait DZ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait DZO
@@ -7009,6 +7013,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSagemakerMod.SageMakerNs._SecondaryStatus
   
   @js.native
+  sealed trait DownloadingExtracting
+    extends awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._RobotDeploymentStep
+  
+  @js.native
   sealed trait DownloadingTrainingImage
     extends awsDashSdkLib.clientsSagemakerMod.SageMakerNs._SecondaryStatus
   
@@ -7055,15 +7063,15 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait EC
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait EC2
     extends awsDashSdkLib.clientsBatchMod.BatchNs._CRType
        with awsDashSdkLib.clientsEcsMod.ECSNs._Compatibility
-       with awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs._LaunchType
        with awsDashSdkLib.clientsEcsMod.ECSNs._LaunchType
+       with awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs._LaunchType
   
   @js.native
   sealed trait EC2Instance
@@ -7132,20 +7140,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait EC_prime256v1
     extends awsDashSdkLib.clientsAcmMod.ACMNs._KeyAlgorithm
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._KeyAlgorithm
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._KeyAlgorithm
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._KeyAlgorithm
-       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._KeyAlgorithm
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._KeyAlgorithm
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._KeyAlgorithm
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._KeyAlgorithm
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._KeyAlgorithm
   
   @js.native
   sealed trait EC_secp384r1
     extends awsDashSdkLib.clientsAcmMod.ACMNs._KeyAlgorithm
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._KeyAlgorithm
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._KeyAlgorithm
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._KeyAlgorithm
-       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._KeyAlgorithm
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._KeyAlgorithm
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._KeyAlgorithm
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._KeyAlgorithm
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._KeyAlgorithm
   
   @js.native
   sealed trait EC_secp521r1
@@ -7155,8 +7163,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait EDGE
-    extends awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._EndpointType
-       with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._EndpointType
+    extends awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._EndpointType
+       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._EndpointType
        with awsDashSdkLib.clientsSnowballMod.SnowballNs._SnowballType
   
   @js.native
@@ -7170,19 +7178,19 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait EE
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait EG
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait EH
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait `EIP-ASSOCIATE`
@@ -7288,8 +7296,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._AccelerationMode
        with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._AccessStatus
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._AntiAlias
-       with awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs._AssignPublicIp
        with awsDashSdkLib.clientsEcsMod.ECSNs._AssignPublicIp
+       with awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs._AssignPublicIp
        with awsDashSdkLib.clientsShieldMod.ShieldNs._AutoRenew
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._AvailBlankingState
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._BlackoutSlateNetworkEndBlackout
@@ -7374,10 +7382,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._ProresSlowPal
        with awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs._ReconnectEnum
        with awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs._RuleState
-       with awsDashSdkLib.clientsDaxMod.DAXNs._SSEStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._SSEStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._SSEStatus
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEStatus
+       with awsDashSdkLib.clientsDaxMod.DAXNs._SSEStatus
        with awsDashSdkLib.clientsDlmMod.DLMNs._SettablePolicyStateValues
        with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._StreamStatus
        with awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs._StreamingStatus
@@ -7398,10 +7406,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ENABLING
     extends awsDashSdkLib.clientsFirehoseMod.FirehoseNs._DeliveryStreamEncryptionStatus
-       with awsDashSdkLib.clientsDaxMod.DAXNs._SSEStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._SSEStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._SSEStatus
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEStatus
+       with awsDashSdkLib.clientsDaxMod.DAXNs._SSEStatus
        with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._StreamStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._TimeToLiveStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._TimeToLiveStatus
@@ -7438,14 +7446,14 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ENDS_WITH
-    extends awsDashSdkLib.clientsWafMod.WAFNs._PositionalConstraint
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PositionalConstraint
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PositionalConstraint
+       with awsDashSdkLib.clientsWafMod.WAFNs._PositionalConstraint
   
   @js.native
   sealed trait END_DATE
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ValidityPeriodType
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ValidityPeriodType
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ValidityPeriodType
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._ValidityPeriodType
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ValidityPeriodType
   
   @js.native
   sealed trait ENFORCED
@@ -7480,10 +7488,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait EQ
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ComparisonOperator
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
        with awsDashSdkLib.clientsWafMod.WAFNs._ComparisonOperator
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ComparisonOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._FilterCondition
        with awsDashSdkLib.clientsDatapipelineMod.DataPipelineNs._OperatorType
@@ -7510,8 +7518,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ER
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ERROR
@@ -7524,8 +7532,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDlmMod.DLMNs._GettablePolicyStateValues
        with awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs._IpSetStatus
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._JobStatus
-       with awsDashSdkLib.clientsIotMod.IotNs._LogLevel
        with awsDashSdkLib.clientsKinesisanalyticsv2Mod.KinesisAnalyticsV2Ns._LogLevel
+       with awsDashSdkLib.clientsIotMod.IotNs._LogLevel
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._LogLevel
        with awsDashSdkLib.clientsGreengrassMod.GreengrassNs._LoggerLevel
        with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._LoggingLevel
@@ -7554,8 +7562,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ES
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait EST
@@ -7580,8 +7588,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ET
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ETag
@@ -7624,8 +7632,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait EXACTLY
-    extends awsDashSdkLib.clientsWafMod.WAFNs._PositionalConstraint
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PositionalConstraint
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PositionalConstraint
+       with awsDashSdkLib.clientsWafMod.WAFNs._PositionalConstraint
   
   @js.native
   sealed trait EXACT_CAPACITY
@@ -7700,9 +7708,9 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait EXPIRED
     extends awsDashSdkLib.clientsBackupMod.BackupNs._BackupJobState
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.clientsAcmMod.ACMNs._CertificateStatus
        with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._CertificateStatus
        with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._CertificateStatus
@@ -7891,6 +7899,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsChimeMod.ChimeNs._AccountType
   
   @js.native
+  sealed trait EnvironmentSetupError
+    extends awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._DeploymentJobErrorCode
+  
+  @js.native
   sealed trait Equal
     extends awsDashSdkLib.clientsSsmMod.SSMNs._InstancePatchStateOperatorType
        with awsDashSdkLib.clientsSsmMod.SSMNs._InventoryQueryOperatorType
@@ -7909,14 +7921,18 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEcsMod.ECSNs._TaskStopCode
   
   @js.native
+  sealed trait EtagMismatch
+    extends awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._DeploymentJobErrorCode
+  
+  @js.native
   sealed trait Evaluation
     extends awsDashSdkLib.clientsMachinelearningMod.MachineLearningNs._TaggableResourceType
   
   @js.native
   sealed trait Event
     extends awsDashSdkLib.clientsFirehoseMod.FirehoseNs._HECEndpointType
-       with awsDashSdkLib.clientsLambdaMod.LambdaNs._InvocationType
        with awsDashSdkLib.clientsSesMod.SESNs._InvocationType
+       with awsDashSdkLib.clientsLambdaMod.LambdaNs._InvocationType
   
   @js.native
   sealed trait EventId
@@ -7942,6 +7958,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ExceededQuota
     extends awsDashSdkLib.clientsSesMod.SESNs._BounceType
+  
+  @js.native
+  sealed trait ExecutingPostLaunch
+    extends awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._RobotDeploymentStep
+  
+  @js.native
+  sealed trait ExecutingPreLaunch
+    extends awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._RobotDeploymentStep
   
   @js.native
   sealed trait ExecutionAborted
@@ -8035,9 +8059,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs._AggregatedSourceStatusType
        with awsDashSdkLib.clientsInspectorMod.InspectorNs._AssessmentRunState
        with awsDashSdkLib.clientsIotMod.IotNs._AuditCheckRunStatus
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._AuditReportStatus
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._AuditReportStatus
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._AuditReportStatus
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._AuditReportStatus
        with awsDashSdkLib.clientsIotMod.IotNs._AuditTaskStatus
        with awsDashSdkLib.clientsEmrMod.EMRNs._AutoScalingPolicyState
        with awsDashSdkLib.clientsBackupMod.BackupNs._BackupJobState
@@ -8049,9 +8073,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAllMod.AlexaForBusinessNs.AlexaForBusinessNs._BusinessReportStatus
        with awsDashSdkLib.awsDashSdkMod.AlexaForBusinessNs.AlexaForBusinessNs._BusinessReportStatus
        with awsDashSdkLib.clientsEmrMod.EMRNs._CancelStepsRequestStatus
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.clientsAcmMod.ACMNs._CertificateStatus
        with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._CertificateStatus
        with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._CertificateStatus
@@ -8072,8 +8096,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs._DkimStatus
        with awsDashSdkLib.clientsAcmMod.ACMNs._DomainStatus
        with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._DomainStatus
-       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._DomainStatus
        with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._DomainStatus
+       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._DomainStatus
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs._DomainStatusType
        with awsDashSdkLib.clientsMachinelearningMod.MachineLearningNs._EntityStatus
        with awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs._EventType
@@ -8091,11 +8115,11 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs._JobExecutionStatus
        with awsDashSdkLib.clientsEmrMod.EMRNs._JobFlowExecutionState
        with awsDashSdkLib.clientsGlueMod.GlueNs._JobRunState
-       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._JobStatus
-       with awsDashSdkLib.clientsBatchMod.BatchNs._JobStatus
-       with awsDashSdkLib.clientsComprehendMod.ComprehendNs._JobStatus
-       with awsDashSdkLib.clientsPinpointMod.PinpointNs._JobStatus
        with awsDashSdkLib.clientsTextractMod.TextractNs._JobStatus
+       with awsDashSdkLib.clientsPinpointMod.PinpointNs._JobStatus
+       with awsDashSdkLib.clientsComprehendMod.ComprehendNs._JobStatus
+       with awsDashSdkLib.clientsBatchMod.BatchNs._JobStatus
+       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._JobStatus
        with awsDashSdkLib.clientsGlueMod.GlueNs._LastCrawlStatus
        with awsDashSdkLib.clientsEcrMod.ECRNs._LifecyclePolicyPreviewStatus
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerTlsCertificateDomainStatus
@@ -8132,9 +8156,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._StackSetOperationResultStatus
        with awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._StackSetOperationStatus
        with awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs._StandardsStatus
-       with awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs._Status
        with awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs._Status
        with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._Status
+       with awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs._Status
        with awsDashSdkLib.clientsCodebuildMod.CodeBuildNs._StatusType
        with awsDashSdkLib.clientsEmrMod.EMRNs._StepExecutionState
        with awsDashSdkLib.clientsEmrMod.EMRNs._StepState
@@ -8209,8 +8233,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait FARGATE
     extends awsDashSdkLib.clientsEcsMod.ECSNs._Compatibility
-       with awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs._LaunchType
        with awsDashSdkLib.clientsEcsMod.ECSNs._LaunchType
+       with awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs._LaunchType
   
   @js.native
   sealed trait FAS
@@ -8236,8 +8260,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait FI
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait FIELD1_608
@@ -8357,14 +8381,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait FJ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait FK
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait FLEET_ACTIVATION_FAILED
@@ -8484,14 +8508,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait FM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait FO
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait FOLDER
@@ -8652,8 +8676,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait FR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait FRA
@@ -8735,8 +8759,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait FULL_CONTROL
     extends awsDashSdkLib.clientsS3Mod.S3Ns._BucketLogsPermission
-       with awsDashSdkLib.clientsGlacierMod.GlacierNs._Permission
        with awsDashSdkLib.clientsS3Mod.S3Ns._Permission
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._Permission
   
   @js.native
   sealed trait FULL_NAME
@@ -8818,8 +8842,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._RecordState
        with awsDashSdkLib.clientsMturkMod.MTurkNs._ReviewActionStatus
        with awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._RobotStatus
-       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalingActivityStatusCode
        with awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._ScalingActivityStatusCode
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalingActivityStatusCode
        with awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs._SchemaExtensionStatus
        with awsDashSdkLib.clientsSagemakerMod.SageMakerNs._SecondaryStatus
        with awsDashSdkLib.clientsEc2Mod.EC2Ns._ServiceState
@@ -8893,6 +8917,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsSagemakerMod.SageMakerNs._TrainingJobSortByOptions
   
   @js.native
+  sealed trait Finished
+    extends awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._RobotDeploymentStep
+  
+  @js.native
   sealed trait Forbidden
     extends awsDashSdkLib.clientsChimeMod.ChimeNs._ErrorCode
   
@@ -8959,8 +8987,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait GA
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GAME_SESSION_ACTIVATION_TIMEOUT
@@ -8973,8 +9001,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait GB
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GCM
@@ -8984,19 +9012,19 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait GD
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GE
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ComparisonOperator
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
        with awsDashSdkLib.clientsWafMod.WAFNs._ComparisonOperator
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ComparisonOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsDatapipelineMod.DataPipelineNs._OperatorType
   
   @js.native
@@ -9034,25 +9062,25 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait GF
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GG
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GH
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GI
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GIGA_BITS
@@ -9087,8 +9115,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait GL
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GLA
@@ -9115,14 +9143,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait GM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GN
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GOLANG
@@ -9145,8 +9173,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait GP
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GPU extends js.Object
@@ -9154,14 +9182,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait GQ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GRAPHICS
@@ -9209,33 +9237,33 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait GROUP
     extends awsDashSdkLib.clientsWorkmailMod.WorkMailNs._MemberType
-       with awsDashSdkLib.clientsGlueMod.GlueNs._PrincipalType
        with awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs._PrincipalType
-       with awsDashSdkLib.clientsWafMod.WAFNs._WafRuleType
+       with awsDashSdkLib.clientsGlueMod.GlueNs._PrincipalType
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._WafRuleType
+       with awsDashSdkLib.clientsWafMod.WAFNs._WafRuleType
        with awsDashSdkLib.clientsIamMod.IAMNs._policyOwnerEntityType
   
   @js.native
   sealed trait GS
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GT
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ComparisonOperator
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
        with awsDashSdkLib.clientsWafMod.WAFNs._ComparisonOperator
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ComparisonOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GU
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GUJ
@@ -9244,20 +9272,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait GW
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GY
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait GZIP
     extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._CmafManifestCompression
-       with awsDashSdkLib.clientsCurMod.CURNs._CompressionFormat
        with awsDashSdkLib.clientsFirehoseMod.FirehoseNs._CompressionFormat
+       with awsDashSdkLib.clientsCurMod.CURNs._CompressionFormat
        with awsDashSdkLib.clientsS3Mod.S3Ns._CompressionType
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._HlsManifestCompression
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._HlsManifestCompression
@@ -9293,8 +9321,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait GeoMatch
-    extends awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+       with awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
   
   @js.native
   sealed trait Geraint
@@ -9302,9 +9330,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait GetCertificate
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ActionType
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ActionType
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ActionType
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._ActionType
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ActionType
   
   @js.native
   sealed trait Gigabits
@@ -9360,14 +9388,14 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait GreaterThanOrEqualToThreshold
-    extends awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._ComparisonOperator
-       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._ComparisonOperator
+    extends awsDashSdkLib.clientsRoute53Mod.Route53Ns._ComparisonOperator
+       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._ComparisonOperator
        with awsDashSdkLib.clientsGameliftMod.GameLiftNs._ComparisonOperatorType
   
   @js.native
   sealed trait GreaterThanThreshold
-    extends awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._ComparisonOperator
-       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._ComparisonOperator
+    extends awsDashSdkLib.clientsRoute53Mod.Route53Ns._ComparisonOperator
+       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._ComparisonOperator
        with awsDashSdkLib.clientsGameliftMod.GameLiftNs._ComparisonOperatorType
   
   @js.native
@@ -9399,8 +9427,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Group
     extends awsDashSdkLib.clientsIamMod.IAMNs._EntityType
-       with awsDashSdkLib.clientsGlacierMod.GlacierNs._Type
        with awsDashSdkLib.clientsS3Mod.S3Ns._Type
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._Type
   
   @js.native
   sealed trait GroupPolicySizeQuota
@@ -9529,9 +9557,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait HASH
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._KeyType
+    extends awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._KeyType
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._KeyType
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._KeyType
-       with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._KeyType
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._KeyType
   
   @js.native
@@ -9580,8 +9608,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait HEADER
     extends awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._ApiKeySourceType
-       with awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
+       with awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
   
   @js.native
   sealed trait HEAD_REF
@@ -9595,8 +9623,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEcsMod.ECSNs._ContainerCondition
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._CustomHealthStatus
        with awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs._HealthState
-       with awsDashSdkLib.clientsEcsMod.ECSNs._HealthStatus
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._HealthStatus
+       with awsDashSdkLib.clientsEcsMod.ECSNs._HealthStatus
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._HealthStatusFilter
        with awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs._ServerStatus
   
@@ -9725,8 +9753,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait HK
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait HLG_2020
@@ -9738,8 +9766,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait HM
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait HMO
@@ -9748,8 +9776,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait HN
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait HOLD_TIME
@@ -9783,8 +9811,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait HR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait HRV
@@ -9797,8 +9825,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait HT
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait HTML
@@ -9806,17 +9834,17 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait HTML_ENTITY_DECODE
-    extends awsDashSdkLib.clientsWafMod.WAFNs._TextTransformation
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._TextTransformation
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._TextTransformation
+       with awsDashSdkLib.clientsWafMod.WAFNs._TextTransformation
   
   @js.native
   sealed trait HTTP
     extends awsDashSdkLib.clientsAppsyncMod.AppSyncNs._DataSourceType
        with awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs._HealthCheckProtocol
-       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._HealthCheckType
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._HealthCheckType
-       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._IntegrationType
+       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._HealthCheckType
        with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._IntegrationType
+       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._IntegrationType
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerProtocol
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._NamespaceType
        with awsDashSdkLib.clientsElbv2Mod.ELBv2Ns._ProtocolEnum
@@ -9848,8 +9876,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait HTTPS
     extends awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs._HealthCheckProtocol
-       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._HealthCheckType
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._HealthCheckType
+       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._HealthCheckType
        with awsDashSdkLib.clientsElbv2Mod.ELBv2Ns._ProtocolEnum
   
   @js.native
@@ -9870,8 +9898,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait HTTP_PROXY
-    extends awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._IntegrationType
-       with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._IntegrationType
+    extends awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._IntegrationType
+       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._IntegrationType
   
   @js.native
   sealed trait HTTP_STR_MATCH
@@ -9880,8 +9908,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait HU
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait HUN
@@ -10020,8 +10048,8 @@ object awsDashSdkLibStrings {
   sealed trait ID
     extends awsDashSdkLib.clientsRekognitionMod.RekognitionNs._CelebrityRecognitionSortBy
        with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait IDENTIFIER
@@ -10044,14 +10072,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait IE
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait IGNORE
     extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._ColorMetadata
-       with awsDashSdkLib.clientsGlacierMod.GlacierNs._FileHeaderInfo
        with awsDashSdkLib.clientsS3Mod.S3Ns._FileHeaderInfo
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._FileHeaderInfo
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._H264ColorMetadata
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._Scte35AposNoRegionalBlackoutBehavior
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._Scte35AposWebDeliveryAllowedBehavior
@@ -10077,8 +10105,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait IL
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ILE
@@ -10087,8 +10115,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait IM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait IMAGE_BUILDER_NOT_AVAILABLE
@@ -10178,8 +10206,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._FilterCondition
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs._NetworkDirection
        with awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs._RuleOperator
   
@@ -10192,8 +10220,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsIotMod.IotNs._AuthorizerStatus
        with awsDashSdkLib.clientsIotMod.IotNs._CACertificateStatus
        with awsDashSdkLib.clientsAcmMod.ACMNs._CertificateStatus
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._CertificateStatus
        with awsDashSdkLib.clientsIotMod.IotNs._CertificateStatus
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._CertificateStatus
        with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._CertificateStatus
        with awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs._ContinuousExportStatus
        with awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs._IpSetStatus
@@ -10274,8 +10302,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait INFO
     extends awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs._EventSeverity
-       with awsDashSdkLib.clientsIotMod.IotNs._LogLevel
        with awsDashSdkLib.clientsKinesisanalyticsv2Mod.KinesisAnalyticsV2Ns._LogLevel
+       with awsDashSdkLib.clientsIotMod.IotNs._LogLevel
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._LogLevel
        with awsDashSdkLib.clientsGreengrassMod.GreengrassNs._LoggerLevel
        with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._LoggingLevel
@@ -10353,8 +10381,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait INSERT
-    extends awsDashSdkLib.clientsWafMod.WAFNs._ChangeAction
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ChangeAction
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ChangeAction
+       with awsDashSdkLib.clientsWafMod.WAFNs._ChangeAction
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._ColorMetadata
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._H264ColorMetadata
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._HlsCaptionLanguageSetting
@@ -10462,8 +10490,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait INSYNC
     extends awsDashSdkLib.clientsRoute53Mod.Route53Ns._ChangeStatus
-       with awsDashSdkLib.clientsWafMod.WAFNs._ChangeTokenStatus
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ChangeTokenStatus
+       with awsDashSdkLib.clientsWafMod.WAFNs._ChangeTokenStatus
   
   @js.native
   sealed trait INTEGER
@@ -10537,8 +10565,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait INTERNET
-    extends awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._ConnectionType
-       with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._ConnectionType
+    extends awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._ConnectionType
+       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._ConnectionType
   
   @js.native
   sealed trait INTERPOLATE
@@ -10683,9 +10711,9 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs._ImportStatus
        with awsDashSdkLib.clientsIotMod.IotNs._JobExecutionStatus
        with awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs._JobExecutionStatus
-       with awsDashSdkLib.clientsComprehendMod.ComprehendNs._JobStatus
-       with awsDashSdkLib.clientsIotMod.IotNs._JobStatus
        with awsDashSdkLib.clientsTextractMod.TextractNs._JobStatus
+       with awsDashSdkLib.clientsIotMod.IotNs._JobStatus
+       with awsDashSdkLib.clientsComprehendMod.ComprehendNs._JobStatus
        with awsDashSdkLib.clientsEcrMod.ECRNs._LifecyclePolicyPreviewStatus
        with awsDashSdkLib.clientsSsmMod.SSMNs._MaintenanceWindowExecutionStatus
        with awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs._NodeAssociationStatus
@@ -10719,8 +10747,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait IO
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait IOS
@@ -10746,8 +10774,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait IPMatch
-    extends awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+       with awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
   
   @js.native
   sealed trait IPSEC_END_SYSTEM
@@ -10769,8 +10797,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait IPV4
-    extends awsDashSdkLib.clientsWafMod.WAFNs._IPSetDescriptorType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._IPSetDescriptorType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._IPSetDescriptorType
+       with awsDashSdkLib.clientsWafMod.WAFNs._IPSetDescriptorType
   
   @js.native
   sealed trait IPV4_ADDRESS
@@ -10779,8 +10807,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait IPV6
-    extends awsDashSdkLib.clientsWafMod.WAFNs._IPSetDescriptorType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._IPSetDescriptorType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._IPSetDescriptorType
+       with awsDashSdkLib.clientsWafMod.WAFNs._IPSetDescriptorType
   
   @js.native
   sealed trait IPV6_ADDRESS
@@ -10790,20 +10818,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait IQ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait IR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait IS
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ISL
@@ -10823,8 +10851,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait IT
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ITA
@@ -10922,8 +10950,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSagemakerMod.SageMakerNs._ModelPackageStatus
        with awsDashSdkLib.clientsSsmMod.SSMNs._NotificationEvent
        with awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs._PipelineExecutionStatus
-       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalingActivityStatusCode
        with awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._ScalingActivityStatusCode
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalingActivityStatusCode
        with awsDashSdkLib.clientsSignerMod.SignerNs._SigningStatus
        with awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs._StageExecutionStatus
        with awsDashSdkLib.clientsIotMod.IotNs._Status
@@ -11227,9 +11255,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait IssueCertificate
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ActionType
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ActionType
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ActionType
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._ActionType
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ActionType
   
   @js.native
   sealed trait IteratorAgeMilliseconds
@@ -11285,20 +11313,20 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait JE
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait JM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait JO
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait JOB
@@ -11315,8 +11343,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait JP
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait JPN
@@ -11324,9 +11352,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait JSON
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._AuditReportResponseFormat
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._AuditReportResponseFormat
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._AuditReportResponseFormat
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._AuditReportResponseFormat
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._AuditReportResponseFormat
        with awsDashSdkLib.clientsCodedeployMod.CodeDeployNs._BundleType
        with awsDashSdkLib.clientsSsmMod.SSMNs._DocumentFormat
        with awsDashSdkLib.clientsPinpointMod.PinpointNs._Format
@@ -11411,8 +11439,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait KE
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait KEEP_ALIVE
@@ -11432,9 +11460,9 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ProjectionType
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ProjectionType
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ProjectionType
+       with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._StreamViewType
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._StreamViewType
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._StreamViewType
-       with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._StreamViewType
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._StreamViewType
   
   @js.native
@@ -11452,11 +11480,11 @@ object awsDashSdkLibStrings {
   sealed trait KEY_COMPROMISE
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerTlsCertificateRevocationReason
        with awsDashSdkLib.clientsAcmMod.ACMNs._RevocationReason
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RevocationReason
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._RevocationReason
-       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RevocationReason
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RevocationReason
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._RevocationReason
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RevocationReason
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
   
   @js.native
   sealed trait KEY_ENCIPHERMENT
@@ -11484,14 +11512,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait KG
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait KH
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait KHM
@@ -11500,8 +11528,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait KI
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait KIK
@@ -11534,8 +11562,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait KM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait KMS
@@ -11548,8 +11576,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait KN
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait KOM
@@ -11566,14 +11594,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait KP
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait KR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait KUA
@@ -11586,20 +11614,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait KW
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait KY
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait KZ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait Karl
@@ -11667,8 +11695,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait LA
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait LAMBDA
@@ -11757,23 +11785,23 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait LB
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait LC
     extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._AacCodecProfile
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._AacProfile
        with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait LE
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ComparisonOperator
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
        with awsDashSdkLib.clientsWafMod.WAFNs._ComparisonOperator
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ComparisonOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with awsDashSdkLib.clientsDatapipelineMod.DataPipelineNs._OperatorType
   
@@ -11906,8 +11934,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait LI
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait LIGHT_UTILIZATION
@@ -11983,8 +12011,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait LK
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait LOCAL
@@ -12043,8 +12071,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait LOWERCASE
-    extends awsDashSdkLib.clientsWafMod.WAFNs._TextTransformation
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._TextTransformation
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._TextTransformation
+       with awsDashSdkLib.clientsWafMod.WAFNs._TextTransformation
   
   @js.native
   sealed trait LOW_BRIGHTNESS
@@ -12066,25 +12094,25 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait LR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait LS
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait LT
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ComparisonOperator
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
        with awsDashSdkLib.clientsWafMod.WAFNs._ComparisonOperator
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ComparisonOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait LTZ
@@ -12098,8 +12126,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait LU
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait LUB
@@ -12116,14 +12144,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait LV
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait LY
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait Lambda
@@ -12221,6 +12249,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Launching
     extends awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs._EnvironmentStatus
+       with awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._RobotDeploymentStep
   
   @js.native
   sealed trait LaunchingMLInstances
@@ -12256,14 +12285,14 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait LessThanOrEqualToThreshold
-    extends awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._ComparisonOperator
-       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._ComparisonOperator
+    extends awsDashSdkLib.clientsRoute53Mod.Route53Ns._ComparisonOperator
+       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._ComparisonOperator
        with awsDashSdkLib.clientsGameliftMod.GameLiftNs._ComparisonOperatorType
   
   @js.native
   sealed trait LessThanThreshold
-    extends awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._ComparisonOperator
-       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._ComparisonOperator
+    extends awsDashSdkLib.clientsRoute53Mod.Route53Ns._ComparisonOperator
+       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._ComparisonOperator
        with awsDashSdkLib.clientsGameliftMod.GameLiftNs._ComparisonOperatorType
   
   @js.native
@@ -12314,9 +12343,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ListPermissions
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ActionType
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ActionType
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ActionType
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._ActionType
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ActionType
   
   @js.native
   sealed trait Listing
@@ -12387,8 +12416,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MA
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MACRO
@@ -12579,20 +12608,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MC
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MD
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ME
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MEAN
@@ -12679,8 +12708,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait METHOD
     extends awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._DocumentationPartType
-       with awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
+       with awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
   
   @js.native
   sealed trait METRIC
@@ -12691,8 +12720,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MF
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MFADevices
@@ -12717,14 +12746,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MG
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MH
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MICRO_SECONDS
@@ -12785,8 +12814,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MK
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MKD
@@ -12795,8 +12824,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ML
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MLG
@@ -12822,25 +12851,25 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MN
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MO
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MOCK
-    extends awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._IntegrationType
-       with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._IntegrationType
+    extends awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._IntegrationType
+       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._IntegrationType
   
   @js.native
   sealed trait MODEL
@@ -12884,9 +12913,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait MONTHS
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ValidityPeriodType
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ValidityPeriodType
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ValidityPeriodType
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._ValidityPeriodType
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ValidityPeriodType
   
   @js.native
   sealed trait MOTHERBOARD_SERIAL_NUMBER
@@ -12900,8 +12929,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MP
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MP2
@@ -12942,14 +12971,14 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait MQ
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MRI
@@ -12958,8 +12987,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MS
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait `MS-CHAPv1`
@@ -12984,14 +13013,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MT
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MU
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MULTICLASS
@@ -13045,20 +13074,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MV
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MW
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MX
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsRoute53Mod.Route53Ns._RRType
   
   @js.native
@@ -13072,8 +13101,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MY
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait MYA
@@ -13082,8 +13111,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait MZ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait Mads
@@ -13158,12 +13187,12 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Maximum
     extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricAggregationType
-       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._MetricStatistic
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._MetricStatistic
-       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._Statistic
        with awsDashSdkLib.clientsRoute53Mod.Route53Ns._Statistic
+       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._Statistic
   
   @js.native
   sealed trait MaximumMessageSize
@@ -13263,12 +13292,12 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Minimum
     extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricAggregationType
-       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._MetricStatistic
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._MetricStatistic
-       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._Statistic
        with awsDashSdkLib.clientsRoute53Mod.Route53Ns._Statistic
+       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._Statistic
   
   @js.native
   sealed trait Missed
@@ -13327,8 +13356,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait NA
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait NAME
@@ -13391,8 +13420,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait NC
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait NDE
@@ -13404,14 +13433,14 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NE
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ComparisonOperator
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
        with awsDashSdkLib.clientsWafMod.WAFNs._ComparisonOperator
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ComparisonOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ComparisonOperator
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ComparisonOperator
        with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait NEGATION
@@ -13463,16 +13492,16 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NEW_AND_OLD_IMAGES
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._StreamViewType
+    extends awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._StreamViewType
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._StreamViewType
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._StreamViewType
-       with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._StreamViewType
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._StreamViewType
   
   @js.native
   sealed trait NEW_IMAGE
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._StreamViewType
+    extends awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._StreamViewType
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._StreamViewType
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._StreamViewType
-       with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._StreamViewType
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._StreamViewType
   
   @js.native
@@ -13485,8 +13514,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NF
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait NFS
@@ -13495,20 +13524,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait NG
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait NI
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait NL
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait NLD
@@ -13521,8 +13550,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait NO
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs._RequirePin
        with awsDashSdkLib.clientsAllMod.AlexaForBusinessNs.AlexaForBusinessNs._RequirePin
        with awsDashSdkLib.awsDashSdkMod.AlexaForBusinessNs.AlexaForBusinessNs._RequirePin
@@ -13584,8 +13613,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._ExtendedKeyUsageName
        with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._ExtendedKeyUsageName
        with awsDashSdkLib.clientsAppsyncMod.AppSyncNs._FieldLogLevel
-       with awsDashSdkLib.clientsGlacierMod.GlacierNs._FileHeaderInfo
        with awsDashSdkLib.clientsS3Mod.S3Ns._FileHeaderInfo
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._FileHeaderInfo
        with awsDashSdkLib.clientsDatasyncMod.DataSyncNs._Gid
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._GlobalConfigurationInputEndAction
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._H264Telecine
@@ -13629,8 +13658,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnItemCollectionMetrics
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ReturnItemCollectionMetrics
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnItemCollectionMetrics
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnValue
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ReturnValue
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnValue
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnValue
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnValuesOnConditionCheckFailure
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ReturnValuesOnConditionCheckFailure
@@ -13640,8 +13669,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._SmoothGroupEventStopBehavior
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._SmoothGroupSparseTrackType
        with awsDashSdkLib.clientsPinpointMod.PinpointNs._SourceType
-       with awsDashSdkLib.clientsWafMod.WAFNs._TextTransformation
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._TextTransformation
+       with awsDashSdkLib.clientsWafMod.WAFNs._TextTransformation
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._TimedMetadata
        with awsDashSdkLib.clientsPinpointMod.PinpointNs._Type
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._UdpTimedMetadataId3Frame
@@ -13650,8 +13679,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsGreengrassMod.GreengrassNs._UpdateAgentLogLevel
        with awsDashSdkLib.clientsDatasyncMod.DataSyncNs._VerifyMode
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._VideoDescriptionRespondToAfd
-       with awsDashSdkLib.clientsWafMod.WAFNs._WafOverrideActionType
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._WafOverrideActionType
+       with awsDashSdkLib.clientsWafMod.WAFNs._WafOverrideActionType
   
   @js.native
   sealed trait NON_CHUNKED
@@ -13896,14 +13925,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait NP
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait NR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait NS
@@ -13912,8 +13941,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait NU
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait NULL
@@ -13953,8 +13982,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait NZ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait N_TO_N
@@ -14229,16 +14258,16 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait OLD_IMAGE
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._StreamViewType
+    extends awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._StreamViewType
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._StreamViewType
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._StreamViewType
-       with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._StreamViewType
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._StreamViewType
   
   @js.native
   sealed trait OM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait OMIT
@@ -14430,8 +14459,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait OR
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ConditionalOperator
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ConditionalOperator
+    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ConditionalOperator
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ConditionalOperator
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ConditionalOperator
   
   @js.native
@@ -14500,11 +14529,11 @@ object awsDashSdkLibStrings {
   sealed trait OTHER
     extends awsDashSdkLib.clientsComprehendMod.ComprehendNs._EntityType
        with awsDashSdkLib.clientsAcmMod.ACMNs._FailureReason
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._FailureReason
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._FailureReason
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._FailureReason
-       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._FailureReason
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._FailureReason
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._FailureReason
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._FailureReason
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._FailureReason
        with awsDashSdkLib.clientsInspectorMod.InspectorNs._InspectorEvent
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerTlsCertificateFailureReason
   
@@ -14672,8 +14701,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PA
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PACKETS
@@ -14870,8 +14899,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PE
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PEM
@@ -14883,8 +14912,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEmrMod.EMRNs._AutoScalingPolicyState
        with awsDashSdkLib.clientsBackupMod.BackupNs._BackupJobState
        with awsDashSdkLib.clientsRoute53Mod.Route53Ns._ChangeStatus
-       with awsDashSdkLib.clientsWafMod.WAFNs._ChangeTokenStatus
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ChangeTokenStatus
+       with awsDashSdkLib.clientsWafMod.WAFNs._ChangeTokenStatus
        with awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs._DedicatedTenancyModificationStateEnum
        with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._DeploymentStatus
        with awsDashSdkLib.clientsEcsMod.ECSNs._DesiredStatus
@@ -14910,8 +14939,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAppstreamMod.AppStreamNs._ImageBuilderState
        with awsDashSdkLib.clientsAppstreamMod.AppStreamNs._ImageState
        with awsDashSdkLib.clientsGameliftMod.GameLiftNs._InstanceStatus
-       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._JobStatus
        with awsDashSdkLib.clientsBatchMod.BatchNs._JobStatus
+       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._JobStatus
        with awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs._MailFromDomainStatus
        with awsDashSdkLib.clientsSsmMod.SSMNs._MaintenanceWindowExecutionStatus
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._OperationStatus
@@ -14958,9 +14987,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait PENDING_CERTIFICATE
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._CertificateAuthorityStatus
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._CertificateAuthorityStatus
   
   @js.native
   sealed trait PENDING_CONCURRENCY
@@ -15059,20 +15088,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PF
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PG
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PH
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PHONE
@@ -15106,14 +15135,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PK
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PL
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PLACING
@@ -15141,14 +15170,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PN
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PNG
@@ -15212,8 +15241,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PREFIX
@@ -15297,11 +15326,15 @@ object awsDashSdkLibStrings {
   sealed trait PRIVILEGE_WITHDRAWN
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerTlsCertificateRevocationReason
        with awsDashSdkLib.clientsAcmMod.ACMNs._RevocationReason
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RevocationReason
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._RevocationReason
-       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RevocationReason
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RevocationReason
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._RevocationReason
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RevocationReason
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
+  
+  @js.native
+  sealed trait PROBING
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._JobPhase
   
   @js.native
   sealed trait PROCEDURE_NAME
@@ -15397,8 +15430,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._BillingMode
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._BillingMode
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BillingMode
-       with awsDashSdkLib.clientsWafMod.WAFNs._ChangeTokenStatus
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ChangeTokenStatus
+       with awsDashSdkLib.clientsWafMod.WAFNs._ChangeTokenStatus
   
   @js.native
   sealed trait PROVISIONING
@@ -15414,8 +15447,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait PS
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PSI_SEGSTART
@@ -15425,8 +15458,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PT
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PTR
@@ -15506,14 +15539,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PW
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PY
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait PYTHON
@@ -15879,8 +15912,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait QA
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait QAA
@@ -15917,8 +15950,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait QUERY_STRING
-    extends awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
+       with awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
   
   @js.native
   sealed trait QUEUE
@@ -15990,9 +16023,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RANGE
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._KeyType
+    extends awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._KeyType
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._KeyType
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._KeyType
-       with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._KeyType
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._KeyType
   
   @js.native
@@ -16005,8 +16038,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RATE_BASED
-    extends awsDashSdkLib.clientsWafMod.WAFNs._WafRuleType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._WafRuleType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._WafRuleType
+       with awsDashSdkLib.clientsWafMod.WAFNs._WafRuleType
   
   @js.native
   sealed trait RAW
@@ -16032,8 +16065,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RE
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait REACT_NATIVE
@@ -16042,8 +16075,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait READ
     extends awsDashSdkLib.clientsS3Mod.S3Ns._BucketLogsPermission
-       with awsDashSdkLib.clientsGlacierMod.GlacierNs._Permission
        with awsDashSdkLib.clientsS3Mod.S3Ns._Permission
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._Permission
   
   @js.native
   sealed trait READER
@@ -16091,8 +16124,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait READ_ACP
-    extends awsDashSdkLib.clientsGlacierMod.GlacierNs._Permission
-       with awsDashSdkLib.clientsS3Mod.S3Ns._Permission
+    extends awsDashSdkLib.clientsS3Mod.S3Ns._Permission
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._Permission
   
   @js.native
   sealed trait REBOOTING
@@ -16176,8 +16209,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait REDUCED_REDUNDANCY
     extends awsDashSdkLib.clientsS3Mod.S3Ns._ObjectStorageClass
-       with awsDashSdkLib.clientsGlacierMod.GlacierNs._StorageClass
        with awsDashSdkLib.clientsS3Mod.S3Ns._StorageClass
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._StorageClass
   
   @js.native
   sealed trait REFERRER
@@ -16201,8 +16234,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait REGIONAL
-    extends awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._EndpointType
-       with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._EndpointType
+    extends awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._EndpointType
+       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._EndpointType
   
   @js.native
   sealed trait REGIONAL_BLACKOUT
@@ -16246,8 +16279,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait REGULAR
-    extends awsDashSdkLib.clientsWafMod.WAFNs._WafRuleType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._WafRuleType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._WafRuleType
+       with awsDashSdkLib.clientsWafMod.WAFNs._WafRuleType
   
   @js.native
   sealed trait REJECT
@@ -16416,9 +16449,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait REQUEST_TIMED_OUT
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._FailureReason
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._FailureReason
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._FailureReason
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._FailureReason
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._FailureReason
   
   @js.native
   sealed trait REQUEST_TOO_LARGE
@@ -16491,6 +16524,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RESOURCE_INCORRECT_WEB_ACL
+    extends awsDashSdkLib.clientsFmsMod.FMSNs._ViolationReason
+  
+  @js.native
+  sealed trait RESOURCE_MISSING_SHIELD_PROTECTION
     extends awsDashSdkLib.clientsFmsMod.FMSNs._ViolationReason
   
   @js.native
@@ -16591,8 +16628,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait REVOKED
     extends awsDashSdkLib.clientsAcmMod.ACMNs._CertificateStatus
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._CertificateStatus
        with awsDashSdkLib.clientsIotMod.IotNs._CertificateStatus
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._CertificateStatus
        with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._CertificateStatus
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerTlsCertificateStatus
   
@@ -16637,8 +16674,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait RO
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ROH
@@ -16717,8 +16754,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait RS
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait RSA
@@ -16745,20 +16782,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait RSA_2048
     extends awsDashSdkLib.clientsAcmMod.ACMNs._KeyAlgorithm
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._KeyAlgorithm
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._KeyAlgorithm
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._KeyAlgorithm
-       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._KeyAlgorithm
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._KeyAlgorithm
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._KeyAlgorithm
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._KeyAlgorithm
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._KeyAlgorithm
   
   @js.native
   sealed trait RSA_4096
     extends awsDashSdkLib.clientsAcmMod.ACMNs._KeyAlgorithm
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._KeyAlgorithm
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._KeyAlgorithm
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._KeyAlgorithm
-       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._KeyAlgorithm
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._KeyAlgorithm
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._KeyAlgorithm
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._KeyAlgorithm
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._KeyAlgorithm
   
   @js.native
   sealed trait RTMP_PULL
@@ -16775,8 +16812,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait RU
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait RUBY
@@ -16820,8 +16857,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsEmrMod.EMRNs._InstanceState
        with awsDashSdkLib.clientsEmrMod.EMRNs._JobFlowExecutionState
        with awsDashSdkLib.clientsGlueMod.GlueNs._JobRunState
-       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._JobStatus
        with awsDashSdkLib.clientsBatchMod.BatchNs._JobStatus
+       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._JobStatus
        with awsDashSdkLib.clientsAthenaMod.AthenaNs._QueryExecutionState
        with awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs._ReprocessingStatus
        with awsDashSdkLib.clientsBackupMod.BackupNs._RestoreJobStatus
@@ -16848,8 +16885,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait RW
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait RX
@@ -16961,8 +16998,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RegexMatch
-    extends awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+       with awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
   
   @js.native
   sealed trait Region
@@ -17084,8 +17121,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RequestResponse
-    extends awsDashSdkLib.clientsLambdaMod.LambdaNs._InvocationType
-       with awsDashSdkLib.clientsSesMod.SESNs._InvocationType
+    extends awsDashSdkLib.clientsSesMod.SESNs._InvocationType
+       with awsDashSdkLib.clientsLambdaMod.LambdaNs._InvocationType
   
   @js.native
   sealed trait Requested
@@ -17233,6 +17270,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsPollyMod.PollyNs._VoiceId
   
   @js.native
+  sealed trait RobotAgentConnectionTimeout
+    extends awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._DeploymentJobErrorCode
+  
+  @js.native
   sealed trait RobotApplicationCrash
     extends awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._SimulationJobErrorCode
   
@@ -17329,8 +17370,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SA
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SAD
@@ -17374,14 +17415,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SB
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SC
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SCALA
@@ -17456,8 +17497,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SD
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._InputResolution
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._ReservationResolution
   
@@ -17489,8 +17530,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SE
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SEARCHING
@@ -17512,6 +17553,66 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._Mpeg2GopSizeUnits
        with awsDashSdkLib.clientsConnectMod.ConnectNs._Unit
        with awsDashSdkLib.clientsEmrMod.EMRNs._Unit
+  
+  @js.native
+  sealed trait SECONDS_10
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_12
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_120
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_15
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_180
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_20
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_240
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_30
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_300
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_360
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_420
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_480
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_540
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_60
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
+  
+  @js.native
+  sealed trait SECONDS_600
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._StatusUpdateInterval
   
   @js.native
   sealed trait SECOND_DAY
@@ -17630,6 +17731,14 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsGameliftMod.GameLiftNs._EventCode
   
   @js.native
+  sealed trait SERVER_SIDE_ENCRYPTION_KMS
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._S3ServerSideEncryptionType
+  
+  @js.native
+  sealed trait SERVER_SIDE_ENCRYPTION_S3
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._S3ServerSideEncryptionType
+  
+  @js.native
   sealed trait SERVER_TIMESTAMP
     extends awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs._FragmentSelectorType
        with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs._HLSFragmentSelectorType
@@ -17691,8 +17800,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SG
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SG_ID_NUMBER
@@ -17701,8 +17810,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SH
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SHA1
@@ -17714,39 +17823,39 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SHA256WITHECDSA
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._SigningAlgorithm
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._SigningAlgorithm
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._SigningAlgorithm
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._SigningAlgorithm
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._SigningAlgorithm
   
   @js.native
   sealed trait SHA256WITHRSA
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._SigningAlgorithm
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._SigningAlgorithm
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._SigningAlgorithm
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._SigningAlgorithm
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._SigningAlgorithm
   
   @js.native
   sealed trait SHA384WITHECDSA
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._SigningAlgorithm
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._SigningAlgorithm
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._SigningAlgorithm
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._SigningAlgorithm
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._SigningAlgorithm
   
   @js.native
   sealed trait SHA384WITHRSA
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._SigningAlgorithm
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._SigningAlgorithm
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._SigningAlgorithm
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._SigningAlgorithm
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._SigningAlgorithm
   
   @js.native
   sealed trait SHA512WITHECDSA
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._SigningAlgorithm
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._SigningAlgorithm
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._SigningAlgorithm
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._SigningAlgorithm
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._SigningAlgorithm
   
   @js.native
   sealed trait SHA512WITHRSA
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._SigningAlgorithm
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._SigningAlgorithm
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._SigningAlgorithm
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._SigningAlgorithm
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._SigningAlgorithm
   
   @js.native
   sealed trait SHARED
@@ -17763,6 +17872,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SHARPEN
     extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._NoiseReducerFilter
+  
+  @js.native
+  sealed trait SHIELD_ADVANCED
+    extends awsDashSdkLib.clientsFmsMod.FMSNs._SecurityServiceType
   
   @js.native
   sealed trait SHIFT_90_DEGREES
@@ -17782,8 +17895,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SI
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SIGN
@@ -17846,8 +17959,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SINGLE_QUERY_ARG
-    extends awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
+       with awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
   
   @js.native
   sealed trait SIP
@@ -17877,14 +17990,14 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SJ
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SK
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SKILLS
@@ -17918,8 +18031,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SL
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SLATE
@@ -17940,8 +18053,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SMALL
@@ -17989,8 +18102,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SN
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SNA
@@ -18026,8 +18139,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SO
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SOA
@@ -18154,8 +18267,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SRB
@@ -18177,8 +18290,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SS
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait `SSE-KMS`
@@ -18225,8 +18338,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ST
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait STABILIZING
@@ -18253,14 +18366,14 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._ReservationVideoQuality
        with awsDashSdkLib.clientsSnowballMod.SnowballNs._ShippingOption
        with awsDashSdkLib.clientsSnowballMod.SnowballNs._SnowballType
-       with awsDashSdkLib.clientsGlacierMod.GlacierNs._StorageClass
        with awsDashSdkLib.clientsS3Mod.S3Ns._StorageClass
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._StorageClass
   
   @js.native
   sealed trait STANDARD_IA
     extends awsDashSdkLib.clientsS3Mod.S3Ns._ObjectStorageClass
-       with awsDashSdkLib.clientsGlacierMod.GlacierNs._StorageClass
        with awsDashSdkLib.clientsS3Mod.S3Ns._StorageClass
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._StorageClass
        with awsDashSdkLib.clientsS3Mod.S3Ns._TransitionStorageClass
   
   @js.native
@@ -18294,8 +18407,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait STARTS_WITH
-    extends awsDashSdkLib.clientsWafMod.WAFNs._PositionalConstraint
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PositionalConstraint
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PositionalConstraint
+       with awsDashSdkLib.clientsWafMod.WAFNs._PositionalConstraint
   
   @js.native
   sealed trait START_DATA_COLLECTION_IN_PROGRESS
@@ -18489,12 +18602,12 @@ object awsDashSdkLibStrings {
   sealed trait SUBMITTED
     extends awsDashSdkLib.clientsCodebuildMod.CodeBuildNs._BuildPhaseType
        with awsDashSdkLib.clientsEmrMod.EMRNs._CancelStepsRequestStatus
-       with awsDashSdkLib.clientsBatchMod.BatchNs._JobStatus
-       with awsDashSdkLib.clientsComprehendMod.ComprehendNs._JobStatus
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._JobStatus
+       with awsDashSdkLib.clientsComprehendMod.ComprehendNs._JobStatus
+       with awsDashSdkLib.clientsBatchMod.BatchNs._JobStatus
        with awsDashSdkLib.clientsComprehendMod.ComprehendNs._ModelStatus
-       with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._OperationStatus
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._OperationStatus
+       with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._OperationStatus
   
   @js.native
   sealed trait SUBNET_GROUP
@@ -18540,8 +18653,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotMod.IotNs._JobExecutionStatus
        with awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs._JobExecutionStatus
        with awsDashSdkLib.clientsGlueMod.GlueNs._JobRunState
-       with awsDashSdkLib.clientsBatchMod.BatchNs._JobStatus
        with awsDashSdkLib.clientsTextractMod.TextractNs._JobStatus
+       with awsDashSdkLib.clientsBatchMod.BatchNs._JobStatus
        with awsDashSdkLib.clientsGlueMod.GlueNs._LastCrawlStatus
        with awsDashSdkLib.clientsAthenaMod.AthenaNs._QueryExecutionState
        with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._RecordStatus
@@ -18571,9 +18684,9 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SUCCESS
     extends awsDashSdkLib.clientsInspectorMod.InspectorNs._AssessmentRunNotificationSnsStatusCode
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._AuditReportStatus
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._AuditReportStatus
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._AuditReportStatus
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._AuditReportStatus
        with awsDashSdkLib.clientsEcsMod.ECSNs._ContainerCondition
        with awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs._DkimStatus
        with awsDashSdkLib.clientsAcmMod.ACMNs._DomainStatus
@@ -18623,9 +18736,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SUPERSEDED
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._RevocationReason
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._RevocationReason
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._RevocationReason
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
   
   @js.native
   sealed trait SUPPRESS
@@ -18655,8 +18768,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SV
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SWA
@@ -18680,14 +18793,14 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SX
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SY
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SYM
@@ -18739,8 +18852,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait SZ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait SageMakerVariantInvocationsPerInstance
@@ -18752,12 +18865,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SampleCount
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricStatistic
-       with awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._MetricStatistic
+    extends awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._MetricStatistic
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._MetricStatistic
-       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._Statistic
        with awsDashSdkLib.clientsRoute53Mod.Route53Ns._Statistic
+       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._Statistic
   
   @js.native
   sealed trait Scalar
@@ -18997,8 +19110,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SizeConstraint
-    extends awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+       with awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
   
   @js.native
   sealed trait Skipped
@@ -19039,8 +19152,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SqlInjectionMatch
-    extends awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+       with awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
   
   @js.native
   sealed trait Standard
@@ -19286,18 +19399,18 @@ object awsDashSdkLibStrings {
   sealed trait Successful
     extends awsDashSdkLib.clientsSsmMod.SSMNs._LastResourceDataSyncStatus
        with awsDashSdkLib.clientsChimeMod.ChimeNs._PhoneNumberOrderStatus
-       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalingActivityStatusCode
        with awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._ScalingActivityStatusCode
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalingActivityStatusCode
        with awsDashSdkLib.clientsEksMod.EKSNs._UpdateStatus
   
   @js.native
   sealed trait Sum
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricStatistic
-       with awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._MetricStatistic
+    extends awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._MetricStatistic
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._MetricStatistic
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._MetricStatistic
-       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._Statistic
        with awsDashSdkLib.clientsRoute53Mod.Route53Ns._Statistic
+       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._Statistic
   
   @js.native
   sealed trait Superseded
@@ -19397,14 +19510,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TC
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TCP
     extends awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs._HealthCheckProtocol
-       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._HealthCheckType
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._HealthCheckType
+       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._HealthCheckType
        with awsDashSdkLib.clientsGameliftMod.GameLiftNs._IpProtocol
        with awsDashSdkLib.clientsChimeMod.ChimeNs._OriginationRouteProtocol
        with awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs._Protocol
@@ -19413,8 +19526,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TD
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TDRL
@@ -19560,8 +19673,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait TF
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TFRecord
@@ -19570,8 +19683,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TG
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TGK
@@ -19584,8 +19697,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TH
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait THA
@@ -19713,20 +19826,20 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TJ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TK
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TL
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TLS
@@ -19772,8 +19885,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TMX
@@ -19782,8 +19895,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TN
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TNG
@@ -19792,8 +19905,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TO
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TOKEN
@@ -19843,8 +19956,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TR
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TRACE
@@ -19866,6 +19979,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TRANSACTIONAL
     extends awsDashSdkLib.clientsPinpointMod.PinpointNs._MessageType
+  
+  @js.native
+  sealed trait TRANSCODING
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._JobPhase
   
   @js.native
   sealed trait TRANSFERABLE
@@ -19928,8 +20045,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TT
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TTML
@@ -19955,14 +20072,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TV
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TW
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait TWI
@@ -19989,8 +20106,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait TZ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait Tags
@@ -20282,8 +20399,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait UA
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait UBUNTU
@@ -20303,8 +20420,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait UG
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait UHD
@@ -20345,8 +20462,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait UM
-    extends awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait UNAUTHENTICATED
@@ -20417,8 +20534,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsSmsMod.SMSNs._ConnectorStatus
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._CustomHealthStatus
        with awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs._HealthState
-       with awsDashSdkLib.clientsEcsMod.ECSNs._HealthStatus
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._HealthStatus
+       with awsDashSdkLib.clientsEcsMod.ECSNs._HealthStatus
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._HealthStatusFilter
        with awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs._ServerStatus
        with awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs._WorkspaceState
@@ -20447,8 +20564,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsAthenaMod.AthenaNs._ColumnNullable
        with awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs._ConnectionState
        with awsDashSdkLib.clientsRekognitionMod.RekognitionNs._EmotionName
-       with awsDashSdkLib.clientsEcsMod.ECSNs._HealthStatus
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._HealthStatus
+       with awsDashSdkLib.clientsEcsMod.ECSNs._HealthStatus
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerTlsCertificateStatus
        with awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._StackDriftStatus
        with awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs._UserStatusType
@@ -20483,17 +20600,17 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsLightsailMod.LightsailNs._LoadBalancerTlsCertificateRevocationReason
        with awsDashSdkLib.clientsSsmMod.SSMNs._PatchComplianceLevel
        with awsDashSdkLib.clientsAcmMod.ACMNs._RevocationReason
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RevocationReason
        with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._RevocationReason
-       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RevocationReason
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._RevocationReason
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._RevocationReason
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._RevocationReason
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._RevocationReason
   
   @js.native
   sealed trait UNSUPPORTED_ALGORITHM
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._FailureReason
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._FailureReason
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._FailureReason
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._FailureReason
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._FailureReason
   
   @js.native
   sealed trait UNSUPPORTED_MEDIA_TYPE
@@ -20531,14 +20648,14 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait UPDATED_NEW
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnValue
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ReturnValue
+    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ReturnValue
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnValue
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnValue
   
   @js.native
   sealed trait UPDATED_OLD
-    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnValue
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ReturnValue
+    extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._ReturnValue
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._ReturnValue
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._ReturnValue
   
   @js.native
@@ -20638,8 +20755,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._SSEStatus
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._SSEStatus
        with awsDashSdkLib.clientsGameliftMod.GameLiftNs._ScalingStatusType
-       with awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs._Status
        with awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs._Status
+       with awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs._Status
        with awsDashSdkLib.clientsKinesisMod.KinesisNs._StreamStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._TableStatus
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._TableStatus
@@ -20656,6 +20773,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEsMod.ESNs._UpgradeStep
   
   @js.native
+  sealed trait UPLOADING
+    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._JobPhase
+  
+  @js.native
   sealed trait UPLOAD_ARTIFACTS
     extends awsDashSdkLib.clientsCodebuildMod.CodeBuildNs._BuildPhaseType
   
@@ -20669,8 +20790,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait URI
-    extends awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
+       with awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
   
   @js.native
   sealed trait URL
@@ -20684,8 +20805,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait URL_DECODE
-    extends awsDashSdkLib.clientsWafMod.WAFNs._TextTransformation
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._TextTransformation
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._TextTransformation
+       with awsDashSdkLib.clientsWafMod.WAFNs._TextTransformation
   
   @js.native
   sealed trait URL_PULL
@@ -20694,8 +20815,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait US
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait USAGE
@@ -20718,8 +20839,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait USE
-    extends awsDashSdkLib.clientsGlacierMod.GlacierNs._FileHeaderInfo
-       with awsDashSdkLib.clientsS3Mod.S3Ns._FileHeaderInfo
+    extends awsDashSdkLib.clientsS3Mod.S3Ns._FileHeaderInfo
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._FileHeaderInfo
   
   @js.native
   sealed trait USEFUL
@@ -20734,8 +20855,8 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._BackupTypeFilter
        with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._BackupTypeFilter
        with awsDashSdkLib.clientsWorkmailMod.WorkMailNs._MemberType
-       with awsDashSdkLib.clientsGlueMod.GlueNs._PrincipalType
        with awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs._PrincipalType
+       with awsDashSdkLib.clientsGlueMod.GlueNs._PrincipalType
        with awsDashSdkLib.clientsWorkmailMod.WorkMailNs._UserRole
        with awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs._UserType
        with awsDashSdkLib.clientsIamMod.IAMNs._policyOwnerEntityType
@@ -20861,14 +20982,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait UY
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait UZ
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait UZB
@@ -21046,8 +21167,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait VA
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait VALID
@@ -21110,14 +21231,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait VC
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait VE
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait VEN
@@ -21143,8 +21264,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait VG
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait VHD
@@ -21153,8 +21274,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait VI
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait VIDEO
@@ -21245,8 +21366,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait VN
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait VOD
@@ -21290,8 +21411,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait VPC_LINK
-    extends awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._ConnectionType
-       with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._ConnectionType
+    extends awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._ConnectionType
+       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._ConnectionType
   
   @js.native
   sealed trait VSPHERE
@@ -21301,8 +21422,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait VU
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait V_1 extends js.Object
@@ -21310,6 +21431,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Valid
     extends awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs._FeedbackValueType
+  
+  @js.native
+  sealed trait Validating
+    extends awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._RobotDeploymentStep
   
   @js.native
   sealed trait ValidationException
@@ -21369,7 +21494,8 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEksMod.EKSNs._ErrorCode
   
   @js.native
-  sealed trait WAF extends js.Object
+  sealed trait WAF
+    extends awsDashSdkLib.clientsFmsMod.FMSNs._SecurityServiceType
   
   @js.native
   sealed trait WAITING
@@ -21391,8 +21517,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait WARN
     extends awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs._EventSeverity
-       with awsDashSdkLib.clientsIotMod.IotNs._LogLevel
        with awsDashSdkLib.clientsKinesisanalyticsv2Mod.KinesisAnalyticsV2Ns._LogLevel
+       with awsDashSdkLib.clientsIotMod.IotNs._LogLevel
        with awsDashSdkLib.clientsGreengrassMod.GreengrassNs._LoggerLevel
        with awsDashSdkLib.clientsGreengrassMod.GreengrassNs._UpdateAgentLogLevel
   
@@ -21484,8 +21610,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait WF
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait WHEN_NO_MATCH
@@ -21594,19 +21720,19 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait WRITE
     extends awsDashSdkLib.clientsS3Mod.S3Ns._BucketLogsPermission
-       with awsDashSdkLib.clientsGlacierMod.GlacierNs._Permission
        with awsDashSdkLib.clientsS3Mod.S3Ns._Permission
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._Permission
   
   @js.native
   sealed trait WRITE_ACP
-    extends awsDashSdkLib.clientsGlacierMod.GlacierNs._Permission
-       with awsDashSdkLib.clientsS3Mod.S3Ns._Permission
+    extends awsDashSdkLib.clientsS3Mod.S3Ns._Permission
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._Permission
   
   @js.native
   sealed trait WS
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait WaitStateAborted
@@ -21792,8 +21918,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait XssMatch
-    extends awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._PredicateType
+       with awsDashSdkLib.clientsWafMod.WAFNs._PredicateType
   
   @js.native
   sealed trait YAML
@@ -21804,14 +21930,14 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait YE
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait YEARS
-    extends awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ValidityPeriodType
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ValidityPeriodType
+    extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ValidityPeriodType
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._ValidityPeriodType
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._ValidityPeriodType
   
   @js.native
   sealed trait YELLOW
@@ -21841,8 +21967,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait YT
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait Yellow
@@ -21851,8 +21977,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ZA
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ZEROBASED
@@ -21871,8 +21997,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ZIP
     extends awsDashSdkLib.clientsCodebuildMod.CodeBuildNs._ArtifactPackaging
-       with awsDashSdkLib.clientsCurMod.CURNs._CompressionFormat
        with awsDashSdkLib.clientsFirehoseMod.FirehoseNs._CompressionFormat
+       with awsDashSdkLib.clientsCurMod.CURNs._CompressionFormat
   
   @js.native
   sealed trait ZIPFILE
@@ -21885,8 +22011,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ZM
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait ZONAL_RESOURCE_INACCESSIBLE
@@ -21905,8 +22031,8 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ZW
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
-       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
+       with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
   sealed trait Zhiyu
@@ -21939,6 +22065,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait aarch64
     extends awsDashSdkLib.clientsGreengrassMod.GreengrassNs._UpdateTargetsArchitecture
+  
+  @js.native
+  sealed trait accepted
+    extends awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._DirectConnectGatewayAssociationProposalState
   
   @js.native
   sealed trait accountNotification
@@ -23229,6 +23359,7 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._BGPPeerState
        with awsDashSdkLib.clientsEc2Mod.EC2Ns._ClientVpnEndpointStatusCode
        with awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._ConnectionState
+       with awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._DirectConnectGatewayAssociationProposalState
        with awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._DirectConnectGatewayState
        with awsDashSdkLib.clientsEc2Mod.EC2Ns._FleetStateCode
        with awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._InterconnectState
@@ -23479,28 +23610,28 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait dynamodb
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ServiceNamespace
-       with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ServiceNamespace
+    extends awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ServiceNamespace
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ServiceNamespace
   
   @js.native
   sealed trait `dynamodb:index:ReadCapacityUnits`
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
-       with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+    extends awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
   
   @js.native
   sealed trait `dynamodb:index:WriteCapacityUnits`
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
-       with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+    extends awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
   
   @js.native
   sealed trait `dynamodb:table:ReadCapacityUnits`
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
-       with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+    extends awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
   
   @js.native
   sealed trait `dynamodb:table:WriteCapacityUnits`
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
-       with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+    extends awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
   
   @js.native
   sealed trait ebs
@@ -23514,21 +23645,21 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ec2
     extends awsDashSdkLib.clientsCloud9Mod.Cloud9Ns._EnvironmentType
-       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ServiceNamespace
        with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ServiceNamespace
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ServiceNamespace
   
   @js.native
   sealed trait `ec2-instance` extends js.Object
   
   @js.native
   sealed trait `ec2:spot-fleet-request:TargetCapacity`
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
-       with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+    extends awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
   
   @js.native
   sealed trait ecs
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ServiceNamespace
-       with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ServiceNamespace
+    extends awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ServiceNamespace
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ServiceNamespace
   
   @js.native
   sealed trait `ecs-cluster`
@@ -23536,8 +23667,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait `ecs:service:DesiredCount`
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
-       with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+    extends awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
   
   @js.native
   sealed trait el
@@ -24701,185 +24832,185 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait latest
-    extends awsDashSdkLib.clientsAcmMod.ACMNs._apiVersion
-       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._apiVersion
-       with awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs._apiVersion
-       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._apiVersion
-       with awsDashSdkLib.clientsAllMod.AlexaForBusinessNs.AlexaForBusinessNs._apiVersion
-       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._apiVersion
-       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._apiVersion
-       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._apiVersion
-       with awsDashSdkLib.clientsApigatewaymanagementapiMod.ApiGatewayManagementApiNs._apiVersion
-       with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._apiVersion
-       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._apiVersion
-       with awsDashSdkLib.clientsAppmeshMod.AppMeshNs._apiVersion
-       with awsDashSdkLib.clientsAppstreamMod.AppStreamNs._apiVersion
-       with awsDashSdkLib.clientsAppsyncMod.AppSyncNs._apiVersion
-       with awsDashSdkLib.clientsAthenaMod.AthenaNs._apiVersion
-       with awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._apiVersion
-       with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._apiVersion
-       with awsDashSdkLib.clientsBackupMod.BackupNs._apiVersion
-       with awsDashSdkLib.clientsBatchMod.BatchNs._apiVersion
-       with awsDashSdkLib.clientsBudgetsMod.BudgetsNs._apiVersion
-       with awsDashSdkLib.clientsChimeMod.ChimeNs._apiVersion
-       with awsDashSdkLib.clientsCloud9Mod.Cloud9Ns._apiVersion
-       with awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs._apiVersion
-       with awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._apiVersion
+    extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._apiVersion
        with awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs._apiVersion
-       with awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs._apiVersion
-       with awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns._apiVersion
-       with awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs._apiVersion
-       with awsDashSdkLib.clientsCloudsearchdomainMod.CloudSearchDomainNs._apiVersion
-       with awsDashSdkLib.clientsCloudtrailMod.CloudTrailNs._apiVersion
-       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._apiVersion
-       with awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs._apiVersion
-       with awsDashSdkLib.clientsCloudwatchlogsMod.CloudWatchLogsNs._apiVersion
        with awsDashSdkLib.clientsCodebuildMod.CodeBuildNs._apiVersion
-       with awsDashSdkLib.clientsCodecommitMod.CodeCommitNs._apiVersion
-       with awsDashSdkLib.clientsCodedeployMod.CodeDeployNs._apiVersion
-       with awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs._apiVersion
-       with awsDashSdkLib.clientsCodestarMod.CodeStarNs._apiVersion
-       with awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs._apiVersion
-       with awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs._apiVersion
-       with awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs._apiVersion
-       with awsDashSdkLib.clientsComprehendMod.ComprehendNs._apiVersion
-       with awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs._apiVersion
-       with awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs._apiVersion
-       with awsDashSdkLib.clientsConnectMod.ConnectNs._apiVersion
-       with awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs._apiVersion
-       with awsDashSdkLib.clientsCurMod.CURNs._apiVersion
-       with awsDashSdkLib.clientsDatapipelineMod.DataPipelineNs._apiVersion
-       with awsDashSdkLib.clientsDatasyncMod.DataSyncNs._apiVersion
-       with awsDashSdkLib.clientsDaxMod.DAXNs._apiVersion
-       with awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs._apiVersion
-       with awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._apiVersion
-       with awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs._apiVersion
-       with awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs._apiVersion
-       with awsDashSdkLib.clientsDlmMod.DLMNs._apiVersion
-       with awsDashSdkLib.clientsDmsMod.DMSNs._apiVersion
-       with awsDashSdkLib.clientsDocdbMod.DocDBNs._apiVersion
-       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._apiVersion
-       with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._apiVersion
-       with awsDashSdkLib.clientsEc2Mod.EC2Ns._apiVersion
-       with awsDashSdkLib.clientsEcrMod.ECRNs._apiVersion
-       with awsDashSdkLib.clientsEcsMod.ECSNs._apiVersion
-       with awsDashSdkLib.clientsEfsMod.EFSNs._apiVersion
+       with awsDashSdkLib.clientsAppstreamMod.AppStreamNs._apiVersion
+       with awsDashSdkLib.clientsRekognitionMod.RekognitionNs._apiVersion
+       with awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs._apiVersion
        with awsDashSdkLib.clientsEksMod.EKSNs._apiVersion
-       with awsDashSdkLib.clientsElasticacheMod.ElastiCacheNs._apiVersion
-       with awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs._apiVersion
-       with awsDashSdkLib.clientsElastictranscoderMod.ElasticTranscoderNs._apiVersion
-       with awsDashSdkLib.clientsElbMod.ELBNs._apiVersion
-       with awsDashSdkLib.clientsElbv2Mod.ELBv2Ns._apiVersion
-       with awsDashSdkLib.clientsEmrMod.EMRNs._apiVersion
-       with awsDashSdkLib.clientsEsMod.ESNs._apiVersion
-       with awsDashSdkLib.clientsFirehoseMod.FirehoseNs._apiVersion
-       with awsDashSdkLib.clientsFmsMod.FMSNs._apiVersion
-       with awsDashSdkLib.clientsFsxMod.FSxNs._apiVersion
-       with awsDashSdkLib.clientsGameliftMod.GameLiftNs._apiVersion
-       with awsDashSdkLib.clientsGlacierMod.GlacierNs._apiVersion
-       with awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs._apiVersion
-       with awsDashSdkLib.clientsGlueMod.GlueNs._apiVersion
-       with awsDashSdkLib.clientsGreengrassMod.GreengrassNs._apiVersion
-       with awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs._apiVersion
-       with awsDashSdkLib.clientsHealthMod.HealthNs._apiVersion
-       with awsDashSdkLib.clientsIamMod.IAMNs._apiVersion
-       with awsDashSdkLib.clientsImportexportMod.ImportExportNs._apiVersion
-       with awsDashSdkLib.clientsInspectorMod.InspectorNs._apiVersion
-       with awsDashSdkLib.clientsIotMod.IotNs._apiVersion
-       with awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs._apiVersion
-       with awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs._apiVersion
-       with awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs._apiVersion
-       with awsDashSdkLib.clientsIotdataMod.IotDataNs._apiVersion
-       with awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs._apiVersion
-       with awsDashSdkLib.clientsKafkaMod.KafkaNs._apiVersion
-       with awsDashSdkLib.clientsKinesisMod.KinesisNs._apiVersion
-       with awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs._apiVersion
-       with awsDashSdkLib.clientsKinesisanalyticsv2Mod.KinesisAnalyticsV2Ns._apiVersion
-       with awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs._apiVersion
-       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs._apiVersion
-       with awsDashSdkLib.clientsKinesisvideomediaMod.KinesisVideoMediaNs._apiVersion
-       with awsDashSdkLib.clientsKmsMod.KMSNs._apiVersion
-       with awsDashSdkLib.clientsLambdaMod.LambdaNs._apiVersion
-       with awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs._apiVersion
-       with awsDashSdkLib.clientsLexruntimeMod.LexRuntimeNs._apiVersion
-       with awsDashSdkLib.clientsLicensemanagerMod.LicenseManagerNs._apiVersion
-       with awsDashSdkLib.clientsLightsailMod.LightsailNs._apiVersion
-       with awsDashSdkLib.clientsMachinelearningMod.MachineLearningNs._apiVersion
-       with awsDashSdkLib.clientsMacieMod.MacieNs._apiVersion
-       with awsDashSdkLib.clientsMarketplacecommerceanalyticsMod.MarketplaceCommerceAnalyticsNs._apiVersion
-       with awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs._apiVersion
-       with awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs._apiVersion
-       with awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs._apiVersion
-       with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._apiVersion
-       with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._apiVersion
-       with awsDashSdkLib.clientsMediapackageMod.MediaPackageNs._apiVersion
-       with awsDashSdkLib.clientsMediastoreMod.MediaStoreNs._apiVersion
-       with awsDashSdkLib.clientsMediastoredataMod.MediaStoreDataNs._apiVersion
-       with awsDashSdkLib.clientsMediatailorMod.MediaTailorNs._apiVersion
-       with awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs._apiVersion
-       with awsDashSdkLib.clientsMobileMod.MobileNs._apiVersion
-       with awsDashSdkLib.clientsMobileanalyticsMod.MobileAnalyticsNs._apiVersion
-       with awsDashSdkLib.clientsMqMod.MQNs._apiVersion
-       with awsDashSdkLib.clientsMturkMod.MTurkNs._apiVersion
-       with awsDashSdkLib.clientsNeptuneMod.NeptuneNs._apiVersion
-       with awsDashSdkLib.clientsOpsworksMod.OpsWorksNs._apiVersion
+       with awsDashSdkLib.clientsSqsMod.SQSNs._apiVersion
+       with awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs._apiVersion
+       with awsDashSdkLib.clientsApigatewaymanagementapiMod.ApiGatewayManagementApiNs._apiVersion
+       with awsDashSdkLib.clientsChimeMod.ChimeNs._apiVersion
+       with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._apiVersion
+       with awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs._apiVersion
+       with awsDashSdkLib.clientsSesMod.SESNs._apiVersion
        with awsDashSdkLib.clientsOpsworkscmMod.OpsWorksCMNs._apiVersion
+       with awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs._apiVersion
+       with awsDashSdkLib.clientsAcmMod.ACMNs._apiVersion
+       with awsDashSdkLib.clientsCloud9Mod.Cloud9Ns._apiVersion
+       with awsDashSdkLib.clientsAthenaMod.AthenaNs._apiVersion
+       with awsDashSdkLib.clientsGlobalacceleratorMod.GlobalAcceleratorNs._apiVersion
+       with awsDashSdkLib.clientsDatasyncMod.DataSyncNs._apiVersion
+       with awsDashSdkLib.clientsCognitosyncMod.CognitoSyncNs._apiVersion
+       with awsDashSdkLib.clientsFsxMod.FSxNs._apiVersion
+       with awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns._apiVersion
+       with awsDashSdkLib.clientsSignerMod.SignerNs._apiVersion
+       with awsDashSdkLib.clientsMturkMod.MTurkNs._apiVersion
+       with awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs._apiVersion
+       with awsDashSdkLib.clientsMediastoreMod.MediaStoreNs._apiVersion
+       with awsDashSdkLib.clientsMachinelearningMod.MachineLearningNs._apiVersion
+       with awsDashSdkLib.clientsPricingMod.PricingNs._apiVersion
+       with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._apiVersion
+       with awsDashSdkLib.clientsKafkaMod.KafkaNs._apiVersion
+       with awsDashSdkLib.clientsPollyMod.PollyNs._apiVersion
+       with awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs._apiVersion
+       with awsDashSdkLib.clientsGlueMod.GlueNs._apiVersion
+       with awsDashSdkLib.clientsSmsMod.SMSNs._apiVersion
+       with awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs._apiVersion
+       with awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs._apiVersion
+       with awsDashSdkLib.clientsMobileanalyticsMod.MobileAnalyticsNs._apiVersion
+       with awsDashSdkLib.clientsCloudtrailMod.CloudTrailNs._apiVersion
+       with awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs._apiVersion
+       with awsDashSdkLib.clientsFmsMod.FMSNs._apiVersion
+       with awsDashSdkLib.clientsMediapackageMod.MediaPackageNs._apiVersion
+       with awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs._apiVersion
+       with awsDashSdkLib.clientsKinesisanalyticsv2Mod.KinesisAnalyticsV2Ns._apiVersion
+       with awsDashSdkLib.clientsResourcegroupstaggingapiMod.ResourceGroupsTaggingAPINs._apiVersion
+       with awsDashSdkLib.clientsWafMod.WAFNs._apiVersion
+       with awsDashSdkLib.clientsElasticacheMod.ElastiCacheNs._apiVersion
+       with awsDashSdkLib.clientsIot1clickprojectsMod.IoT1ClickProjectsNs._apiVersion
+       with awsDashSdkLib.clientsWorkmailMod.WorkMailNs._apiVersion
+       with awsDashSdkLib.clientsBudgetsMod.BudgetsNs._apiVersion
+       with awsDashSdkLib.clientsIotdataMod.IotDataNs._apiVersion
+       with awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs._apiVersion
+       with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._apiVersion
+       with awsDashSdkLib.clientsTextractMod.TextractNs._apiVersion
+       with awsDashSdkLib.clientsKinesisvideoarchivedmediaMod.KinesisVideoArchivedMediaNs._apiVersion
+       with awsDashSdkLib.clientsHealthMod.HealthNs._apiVersion
+       with awsDashSdkLib.clientsRedshiftMod.RedshiftNs._apiVersion
+       with awsDashSdkLib.clientsSagemakerMod.SageMakerNs._apiVersion
+       with awsDashSdkLib.clientsImportexportMod.ImportExportNs._apiVersion
+       with awsDashSdkLib.clientsLambdaMod.LambdaNs._apiVersion
+       with awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs._apiVersion
+       with awsDashSdkLib.clientsCloudsearchdomainMod.CloudSearchDomainNs._apiVersion
+       with awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs._apiVersion
+       with awsDashSdkLib.clientsMarketplaceentitlementserviceMod.MarketplaceEntitlementServiceNs._apiVersion
+       with awsDashSdkLib.clientsSnsMod.SNSNs._apiVersion
+       with awsDashSdkLib.clientsMediaconnectMod.MediaConnectNs._apiVersion
+       with awsDashSdkLib.clientsEc2Mod.EC2Ns._apiVersion
+       with awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs._apiVersion
+       with awsDashSdkLib.clientsBackupMod.BackupNs._apiVersion
+       with awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns._apiVersion
+       with awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs._apiVersion
+       with awsDashSdkLib.clientsDatapipelineMod.DataPipelineNs._apiVersion
+       with awsDashSdkLib.clientsElastictranscoderMod.ElasticTranscoderNs._apiVersion
+       with awsDashSdkLib.clientsAppsyncMod.AppSyncNs._apiVersion
+       with awsDashSdkLib.clientsKinesisvideomediaMod.KinesisVideoMediaNs._apiVersion
+       with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs._apiVersion
+       with awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._apiVersion
+       with awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs._apiVersion
+       with awsDashSdkLib.clientsS3controlMod.S3ControlNs._apiVersion
+       with awsDashSdkLib.clientsSupportMod.SupportNs._apiVersion
+       with awsDashSdkLib.clientsConnectMod.ConnectNs._apiVersion
+       with awsDashSdkLib.clientsInspectorMod.InspectorNs._apiVersion
+       with awsDashSdkLib.clientsCodestarMod.CodeStarNs._apiVersion
+       with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._apiVersion
+       with awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs._apiVersion
+       with awsDashSdkLib.clientsDocdbMod.DocDBNs._apiVersion
+       with awsDashSdkLib.clientsMacieMod.MacieNs._apiVersion
+       with awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs._apiVersion
+       with awsDashSdkLib.clientsSecretsmanagerMod.SecretsManagerNs._apiVersion
+       with awsDashSdkLib.clientsElbv2Mod.ELBv2Ns._apiVersion
+       with awsDashSdkLib.clientsConfigserviceMod.ConfigServiceNs._apiVersion
+       with awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs._apiVersion
+       with awsDashSdkLib.clientsGreengrassMod.GreengrassNs._apiVersion
+       with awsDashSdkLib.clientsEmrMod.EMRNs._apiVersion
+       with awsDashSdkLib.clientsEcsMod.ECSNs._apiVersion
+       with awsDashSdkLib.clientsSwfMod.SWFNs._apiVersion
+       with awsDashSdkLib.clientsMobileMod.MobileNs._apiVersion
+       with awsDashSdkLib.clientsSsmMod.SSMNs._apiVersion
+       with awsDashSdkLib.clientsEfsMod.EFSNs._apiVersion
+       with awsDashSdkLib.clientsComprehendmedicalMod.ComprehendMedicalNs._apiVersion
+       with awsDashSdkLib.clientsApigatewayMod.APIGatewayNs._apiVersion
+       with awsDashSdkLib.clientsAppmeshMod.AppMeshNs._apiVersion
+       with awsDashSdkLib.clientsMqMod.MQNs._apiVersion
+       with awsDashSdkLib.clientsFirehoseMod.FirehoseNs._apiVersion
+       with awsDashSdkLib.clientsRamMod.RAMNs._apiVersion
+       with awsDashSdkLib.clientsCloudformationMod.CloudFormationNs._apiVersion
+       with awsDashSdkLib.clientsKinesisMod.KinesisNs._apiVersion
+       with awsDashSdkLib.clientsMediatailorMod.MediaTailorNs._apiVersion
+       with awsDashSdkLib.clientsCodedeployMod.CodeDeployNs._apiVersion
+       with awsDashSdkLib.clientsStsMod.STSNs._apiVersion
+       with awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs._apiVersion
+       with awsDashSdkLib.clientsPinpointMod.PinpointNs._apiVersion
+       with awsDashSdkLib.clientsXrayMod.XRayNs._apiVersion
+       with awsDashSdkLib.clientsIotMod.IotNs._apiVersion
+       with awsDashSdkLib.clientsNeptuneMod.NeptuneNs._apiVersion
+       with awsDashSdkLib.clientsClouddirectoryMod.CloudDirectoryNs._apiVersion
+       with awsDashSdkLib.clientsTransferMod.TransferNs._apiVersion
+       with awsDashSdkLib.clientsMarketplacemeteringMod.MarketplaceMeteringNs._apiVersion
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._apiVersion
+       with awsDashSdkLib.clientsDmsMod.DMSNs._apiVersion
+       with awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs._apiVersion
+       with awsDashSdkLib.clientsCurMod.CURNs._apiVersion
+       with awsDashSdkLib.clientsCodecommitMod.CodeCommitNs._apiVersion
+       with awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs._apiVersion
+       with awsDashSdkLib.clientsWorklinkMod.WorkLinkNs._apiVersion
+       with awsDashSdkLib.clientsComprehendMod.ComprehendNs._apiVersion
+       with awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._apiVersion
+       with awsDashSdkLib.clientsAllMod.AlexaForBusinessNs.AlexaForBusinessNs._apiVersion
+       with awsDashSdkLib.clientsAllMod.ACMNs.ACMNs._apiVersion
+       with awsDashSdkLib.clientsSimpledbMod.SimpleDBNs._apiVersion
+       with awsDashSdkLib.clientsCognitoidentityMod.CognitoIdentityNs._apiVersion
+       with awsDashSdkLib.clientsMarketplacecommerceanalyticsMod.MarketplaceCommerceAnalyticsNs._apiVersion
+       with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._apiVersion
+       with awsDashSdkLib.clientsSagemakerruntimeMod.SageMakerRuntimeNs._apiVersion
+       with awsDashSdkLib.clientsLexruntimeMod.LexRuntimeNs._apiVersion
+       with awsDashSdkLib.clientsS3Mod.S3Ns._apiVersion
+       with awsDashSdkLib.clientsGameliftMod.GameLiftNs._apiVersion
+       with awsDashSdkLib.clientsEsMod.ESNs._apiVersion
+       with awsDashSdkLib.clientsLicensemanagerMod.LicenseManagerNs._apiVersion
+       with awsDashSdkLib.clientsCodepipelineMod.CodePipelineNs._apiVersion
+       with awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs._apiVersion
+       with awsDashSdkLib.clientsQuicksightMod.QuickSightNs._apiVersion
+       with awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs._apiVersion
+       with awsDashSdkLib.clientsDlmMod.DLMNs._apiVersion
        with awsDashSdkLib.clientsOrganizationsMod.OrganizationsNs._apiVersion
        with awsDashSdkLib.clientsPiMod.PINs._apiVersion
-       with awsDashSdkLib.clientsPinpointMod.PinpointNs._apiVersion
-       with awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs._apiVersion
-       with awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs._apiVersion
-       with awsDashSdkLib.clientsPollyMod.PollyNs._apiVersion
-       with awsDashSdkLib.clientsPricingMod.PricingNs._apiVersion
-       with awsDashSdkLib.clientsQuicksightMod.QuickSightNs._apiVersion
-       with awsDashSdkLib.clientsRamMod.RAMNs._apiVersion
+       with awsDashSdkLib.clientsGlacierMod.GlacierNs._apiVersion
+       with awsDashSdkLib.clientsIamMod.IAMNs._apiVersion
+       with awsDashSdkLib.clientsBatchMod.BatchNs._apiVersion
        with awsDashSdkLib.clientsRdsMod.RDSNs._apiVersion
-       with awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs._apiVersion
-       with awsDashSdkLib.clientsRedshiftMod.RedshiftNs._apiVersion
-       with awsDashSdkLib.clientsRekognitionMod.RekognitionNs._apiVersion
-       with awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs._apiVersion
-       with awsDashSdkLib.clientsResourcegroupstaggingapiMod.ResourceGroupsTaggingAPINs._apiVersion
-       with awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._apiVersion
-       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._apiVersion
-       with awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._apiVersion
-       with awsDashSdkLib.clientsRoute53resolverMod.Route53ResolverNs._apiVersion
-       with awsDashSdkLib.clientsS3Mod.S3Ns._apiVersion
-       with awsDashSdkLib.clientsS3controlMod.S3ControlNs._apiVersion
-       with awsDashSdkLib.clientsSagemakerMod.SageMakerNs._apiVersion
-       with awsDashSdkLib.clientsSagemakerruntimeMod.SageMakerRuntimeNs._apiVersion
-       with awsDashSdkLib.clientsSecretsmanagerMod.SecretsManagerNs._apiVersion
-       with awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs._apiVersion
-       with awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs._apiVersion
-       with awsDashSdkLib.clientsServicecatalogMod.ServiceCatalogNs._apiVersion
-       with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._apiVersion
-       with awsDashSdkLib.clientsSesMod.SESNs._apiVersion
-       with awsDashSdkLib.clientsShieldMod.ShieldNs._apiVersion
-       with awsDashSdkLib.clientsSignerMod.SignerNs._apiVersion
-       with awsDashSdkLib.clientsSimpledbMod.SimpleDBNs._apiVersion
-       with awsDashSdkLib.clientsSmsMod.SMSNs._apiVersion
-       with awsDashSdkLib.clientsSnowballMod.SnowballNs._apiVersion
-       with awsDashSdkLib.clientsSnsMod.SNSNs._apiVersion
-       with awsDashSdkLib.clientsSqsMod.SQSNs._apiVersion
-       with awsDashSdkLib.clientsSsmMod.SSMNs._apiVersion
-       with awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs._apiVersion
-       with awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs._apiVersion
-       with awsDashSdkLib.clientsStsMod.STSNs._apiVersion
-       with awsDashSdkLib.clientsSupportMod.SupportNs._apiVersion
-       with awsDashSdkLib.clientsSwfMod.SWFNs._apiVersion
-       with awsDashSdkLib.clientsTextractMod.TextractNs._apiVersion
-       with awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs._apiVersion
-       with awsDashSdkLib.clientsTransferMod.TransferNs._apiVersion
-       with awsDashSdkLib.clientsTranslateMod.TranslateNs._apiVersion
-       with awsDashSdkLib.clientsWafMod.WAFNs._apiVersion
-       with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._apiVersion
-       with awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs._apiVersion
-       with awsDashSdkLib.clientsWorklinkMod.WorkLinkNs._apiVersion
-       with awsDashSdkLib.clientsWorkmailMod.WorkMailNs._apiVersion
-       with awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs._apiVersion
-       with awsDashSdkLib.clientsXrayMod.XRayNs._apiVersion
-       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._apiVersion
-       with awsDashSdkLib.awsDashSdkMod.AlexaForBusinessNs.AlexaForBusinessNs._apiVersion
+       with awsDashSdkLib.clientsDaxMod.DAXNs._apiVersion
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._apiVersion
+       with awsDashSdkLib.awsDashSdkMod.AlexaForBusinessNs.AlexaForBusinessNs._apiVersion
+       with awsDashSdkLib.awsDashSdkMod.ACMNs.ACMNs._apiVersion
+       with awsDashSdkLib.clientsMediastoredataMod.MediaStoreDataNs._apiVersion
+       with awsDashSdkLib.clientsLightsailMod.LightsailNs._apiVersion
+       with awsDashSdkLib.clientsShieldMod.ShieldNs._apiVersion
+       with awsDashSdkLib.clientsRoute53Mod.Route53Ns._apiVersion
+       with awsDashSdkLib.clientsRobomakerMod.RoboMakerNs._apiVersion
+       with awsDashSdkLib.clientsTranslateMod.TranslateNs._apiVersion
+       with awsDashSdkLib.clientsCloudhsmMod.CloudHSMNs._apiVersion
+       with awsDashSdkLib.clientsCloudwatcheventsMod.CloudWatchEventsNs._apiVersion
+       with awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs._apiVersion
+       with awsDashSdkLib.clientsCloudwatchlogsMod.CloudWatchLogsNs._apiVersion
+       with awsDashSdkLib.clientsSnowballMod.SnowballNs._apiVersion
+       with awsDashSdkLib.clientsElbMod.ELBNs._apiVersion
+       with awsDashSdkLib.clientsKmsMod.KMSNs._apiVersion
+       with awsDashSdkLib.clientsEcrMod.ECRNs._apiVersion
+       with awsDashSdkLib.clientsOpsworksMod.OpsWorksNs._apiVersion
+       with awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs._apiVersion
+       with awsDashSdkLib.clientsGuarddutyMod.GuardDutyNs._apiVersion
+       with awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs._apiVersion
+       with awsDashSdkLib.clientsAmplifyMod.AmplifyNs._apiVersion
+       with awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs._apiVersion
+       with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._apiVersion
+       with awsDashSdkLib.clientsCloudwatchMod.CloudWatchNs._apiVersion
+       with awsDashSdkLib.clientsAcmpcaMod.ACMPCANs._apiVersion
+       with awsDashSdkLib.clientsSecurityhubMod.SecurityHubNs._apiVersion
   
   @js.native
   sealed trait latin_1
@@ -26438,13 +26569,13 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait rds
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ServiceNamespace
-       with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ServiceNamespace
+    extends awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ServiceNamespace
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ServiceNamespace
   
   @js.native
   sealed trait `rds:cluster:ReadReplicaCount`
-    extends awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
-       with awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+    extends awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs._ScalableDimension
+       with awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs._ScalableDimension
   
   @js.native
   sealed trait reachability extends js.Object
@@ -26579,6 +26710,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait requested
     extends awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._ConnectionState
+       with awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._DirectConnectGatewayAssociationProposalState
        with awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._InterconnectState
        with awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._LagState
   
@@ -27475,7 +27607,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait updating
-    extends awsDashSdkLib.clientsEfsMod.EFSNs._LifeCycleState
+    extends awsDashSdkLib.clientsDirectconnectMod.DirectConnectNs._DirectConnectGatewayAssociationState
+       with awsDashSdkLib.clientsEfsMod.EFSNs._LifeCycleState
   
   @js.native
   sealed trait upperJawlineLeft
@@ -27630,6 +27763,9 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait vip
     extends awsDashSdkLib.clientsCloudfrontMod.CloudFrontNs._SSLSupportMethod
+  
+  @js.native
+  sealed trait virtualPrivateGateway extends js.Object
   
   @js.native
   sealed trait viseme
@@ -28897,6 +29033,8 @@ object awsDashSdkLibStrings {
   def AWSIoT: AWSIoT = "AWSIoT".asInstanceOf[AWSIoT]
   @scala.inline
   def AWSManagedPolicy: AWSManagedPolicy = "AWSManagedPolicy".asInstanceOf[AWSManagedPolicy]
+  @scala.inline
+  def AWSSHIELD_ADVANCED: AWSSHIELD_ADVANCED = "AWSSHIELD_ADVANCED".asInstanceOf[AWSSHIELD_ADVANCED]
   @scala.inline
   def AWSWAF: AWSWAF = "AWSWAF".asInstanceOf[AWSWAF]
   @scala.inline
@@ -30672,6 +30810,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Downloading: Downloading = "Downloading".asInstanceOf[Downloading]
   @scala.inline
+  def DownloadingExtracting: DownloadingExtracting = "DownloadingExtracting".asInstanceOf[DownloadingExtracting]
+  @scala.inline
   def DownloadingTrainingImage: DownloadingTrainingImage = "DownloadingTrainingImage".asInstanceOf[DownloadingTrainingImage]
   @scala.inline
   def DryRun: DryRun = "DryRun".asInstanceOf[DryRun]
@@ -30978,6 +31118,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def EnterpriseOIDC: EnterpriseOIDC = "EnterpriseOIDC".asInstanceOf[EnterpriseOIDC]
   @scala.inline
+  def EnvironmentSetupError: EnvironmentSetupError = "EnvironmentSetupError".asInstanceOf[EnvironmentSetupError]
+  @scala.inline
   def Equal: Equal = "Equal".asInstanceOf[Equal]
   @scala.inline
   def EqualTo: EqualTo = "EqualTo".asInstanceOf[EqualTo]
@@ -30985,6 +31127,8 @@ object awsDashSdkLibStrings {
   def Equals: Equals = "Equals".asInstanceOf[Equals]
   @scala.inline
   def EssentialContainerExited: EssentialContainerExited = "EssentialContainerExited".asInstanceOf[EssentialContainerExited]
+  @scala.inline
+  def EtagMismatch: EtagMismatch = "EtagMismatch".asInstanceOf[EtagMismatch]
   @scala.inline
   def Evaluation: Evaluation = "Evaluation".asInstanceOf[Evaluation]
   @scala.inline
@@ -31001,6 +31145,10 @@ object awsDashSdkLibStrings {
   def ExactCapacity: ExactCapacity = "ExactCapacity".asInstanceOf[ExactCapacity]
   @scala.inline
   def ExceededQuota: ExceededQuota = "ExceededQuota".asInstanceOf[ExceededQuota]
+  @scala.inline
+  def ExecutingPostLaunch: ExecutingPostLaunch = "ExecutingPostLaunch".asInstanceOf[ExecutingPostLaunch]
+  @scala.inline
+  def ExecutingPreLaunch: ExecutingPreLaunch = "ExecutingPreLaunch".asInstanceOf[ExecutingPreLaunch]
   @scala.inline
   def ExecutionAborted: ExecutionAborted = "ExecutionAborted".asInstanceOf[ExecutionAborted]
   @scala.inline
@@ -31345,6 +31493,8 @@ object awsDashSdkLibStrings {
   def Filiz: Filiz = "Filiz".asInstanceOf[Filiz]
   @scala.inline
   def FinalObjectiveMetricValue: FinalObjectiveMetricValue = "FinalObjectiveMetricValue".asInstanceOf[FinalObjectiveMetricValue]
+  @scala.inline
+  def Finished: Finished = "Finished".asInstanceOf[Finished]
   @scala.inline
   def Forbidden: Forbidden = "Forbidden".asInstanceOf[Forbidden]
   @scala.inline
@@ -33940,6 +34090,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def PRIVILEGE_WITHDRAWN: PRIVILEGE_WITHDRAWN = "PRIVILEGE_WITHDRAWN".asInstanceOf[PRIVILEGE_WITHDRAWN]
   @scala.inline
+  def PROBING: PROBING = "PROBING".asInstanceOf[PROBING]
+  @scala.inline
   def PROCEDURE_NAME: PROCEDURE_NAME = "PROCEDURE_NAME".asInstanceOf[PROCEDURE_NAME]
   @scala.inline
   def PROCESS: PROCESS = "PROCESS".asInstanceOf[PROCESS]
@@ -34452,6 +34604,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def RESOURCE_INCORRECT_WEB_ACL: RESOURCE_INCORRECT_WEB_ACL = "RESOURCE_INCORRECT_WEB_ACL".asInstanceOf[RESOURCE_INCORRECT_WEB_ACL]
   @scala.inline
+  def RESOURCE_MISSING_SHIELD_PROTECTION: RESOURCE_MISSING_SHIELD_PROTECTION = "RESOURCE_MISSING_SHIELD_PROTECTION".asInstanceOf[RESOURCE_MISSING_SHIELD_PROTECTION]
+  @scala.inline
   def RESOURCE_MISSING_WEB_ACL: RESOURCE_MISSING_WEB_ACL = "RESOURCE_MISSING_WEB_ACL".asInstanceOf[RESOURCE_MISSING_WEB_ACL]
   @scala.inline
   def RESOURCE_NOT_FOUND: RESOURCE_NOT_FOUND = "RESOURCE_NOT_FOUND".asInstanceOf[RESOURCE_NOT_FOUND]
@@ -34776,6 +34930,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Ricardo: Ricardo = "Ricardo".asInstanceOf[Ricardo]
   @scala.inline
+  def RobotAgentConnectionTimeout: RobotAgentConnectionTimeout = "RobotAgentConnectionTimeout".asInstanceOf[RobotAgentConnectionTimeout]
+  @scala.inline
   def RobotApplicationCrash: RobotApplicationCrash = "RobotApplicationCrash".asInstanceOf[RobotApplicationCrash]
   @scala.inline
   def RobotApplicationVersionMismatchedEtag: RobotApplicationVersionMismatchedEtag = "RobotApplicationVersionMismatchedEtag".asInstanceOf[RobotApplicationVersionMismatchedEtag]
@@ -34896,6 +35052,36 @@ object awsDashSdkLibStrings {
   @scala.inline
   def SECONDS: SECONDS = "SECONDS".asInstanceOf[SECONDS]
   @scala.inline
+  def SECONDS_10: SECONDS_10 = "SECONDS_10".asInstanceOf[SECONDS_10]
+  @scala.inline
+  def SECONDS_12: SECONDS_12 = "SECONDS_12".asInstanceOf[SECONDS_12]
+  @scala.inline
+  def SECONDS_120: SECONDS_120 = "SECONDS_120".asInstanceOf[SECONDS_120]
+  @scala.inline
+  def SECONDS_15: SECONDS_15 = "SECONDS_15".asInstanceOf[SECONDS_15]
+  @scala.inline
+  def SECONDS_180: SECONDS_180 = "SECONDS_180".asInstanceOf[SECONDS_180]
+  @scala.inline
+  def SECONDS_20: SECONDS_20 = "SECONDS_20".asInstanceOf[SECONDS_20]
+  @scala.inline
+  def SECONDS_240: SECONDS_240 = "SECONDS_240".asInstanceOf[SECONDS_240]
+  @scala.inline
+  def SECONDS_30: SECONDS_30 = "SECONDS_30".asInstanceOf[SECONDS_30]
+  @scala.inline
+  def SECONDS_300: SECONDS_300 = "SECONDS_300".asInstanceOf[SECONDS_300]
+  @scala.inline
+  def SECONDS_360: SECONDS_360 = "SECONDS_360".asInstanceOf[SECONDS_360]
+  @scala.inline
+  def SECONDS_420: SECONDS_420 = "SECONDS_420".asInstanceOf[SECONDS_420]
+  @scala.inline
+  def SECONDS_480: SECONDS_480 = "SECONDS_480".asInstanceOf[SECONDS_480]
+  @scala.inline
+  def SECONDS_540: SECONDS_540 = "SECONDS_540".asInstanceOf[SECONDS_540]
+  @scala.inline
+  def SECONDS_60: SECONDS_60 = "SECONDS_60".asInstanceOf[SECONDS_60]
+  @scala.inline
+  def SECONDS_600: SECONDS_600 = "SECONDS_600".asInstanceOf[SECONDS_600]
+  @scala.inline
   def SECOND_DAY: SECOND_DAY = "SECOND_DAY".asInstanceOf[SECOND_DAY]
   @scala.inline
   def SECRETS_MANAGER: SECRETS_MANAGER = "SECRETS_MANAGER".asInstanceOf[SECRETS_MANAGER]
@@ -34951,6 +35137,10 @@ object awsDashSdkLibStrings {
   def SERVER_PROCESS_SDK_INITIALIZATION_TIMEOUT: SERVER_PROCESS_SDK_INITIALIZATION_TIMEOUT = "SERVER_PROCESS_SDK_INITIALIZATION_TIMEOUT".asInstanceOf[SERVER_PROCESS_SDK_INITIALIZATION_TIMEOUT]
   @scala.inline
   def SERVER_PROCESS_TERMINATED_UNHEALTHY: SERVER_PROCESS_TERMINATED_UNHEALTHY = "SERVER_PROCESS_TERMINATED_UNHEALTHY".asInstanceOf[SERVER_PROCESS_TERMINATED_UNHEALTHY]
+  @scala.inline
+  def SERVER_SIDE_ENCRYPTION_KMS: SERVER_SIDE_ENCRYPTION_KMS = "SERVER_SIDE_ENCRYPTION_KMS".asInstanceOf[SERVER_SIDE_ENCRYPTION_KMS]
+  @scala.inline
+  def SERVER_SIDE_ENCRYPTION_S3: SERVER_SIDE_ENCRYPTION_S3 = "SERVER_SIDE_ENCRYPTION_S3".asInstanceOf[SERVER_SIDE_ENCRYPTION_S3]
   @scala.inline
   def SERVER_TIMESTAMP: SERVER_TIMESTAMP = "SERVER_TIMESTAMP".asInstanceOf[SERVER_TIMESTAMP]
   @scala.inline
@@ -35009,6 +35199,8 @@ object awsDashSdkLibStrings {
   def SHARED_WITH_ME: SHARED_WITH_ME = "SHARED_WITH_ME".asInstanceOf[SHARED_WITH_ME]
   @scala.inline
   def SHARPEN: SHARPEN = "SHARPEN".asInstanceOf[SHARPEN]
+  @scala.inline
+  def SHIELD_ADVANCED: SHIELD_ADVANCED = "SHIELD_ADVANCED".asInstanceOf[SHIELD_ADVANCED]
   @scala.inline
   def SHIFT_90_DEGREES: SHIFT_90_DEGREES = "SHIFT_90_DEGREES".asInstanceOf[SHIFT_90_DEGREES]
   @scala.inline
@@ -35866,6 +36058,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def TRANSACTIONAL: TRANSACTIONAL = "TRANSACTIONAL".asInstanceOf[TRANSACTIONAL]
   @scala.inline
+  def TRANSCODING: TRANSCODING = "TRANSCODING".asInstanceOf[TRANSCODING]
+  @scala.inline
   def TRANSFERABLE: TRANSFERABLE = "TRANSFERABLE".asInstanceOf[TRANSFERABLE]
   @scala.inline
   def TRANSFERRING: TRANSFERRING = "TRANSFERRING".asInstanceOf[TRANSFERRING]
@@ -36194,6 +36388,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def UPGRADE: UPGRADE = "UPGRADE".asInstanceOf[UPGRADE]
   @scala.inline
+  def UPLOADING: UPLOADING = "UPLOADING".asInstanceOf[UPLOADING]
+  @scala.inline
   def UPLOAD_ARTIFACTS: UPLOAD_ARTIFACTS = "UPLOAD_ARTIFACTS".asInstanceOf[UPLOAD_ARTIFACTS]
   @scala.inline
   def UPSERT: UPSERT = "UPSERT".asInstanceOf[UPSERT]
@@ -36474,6 +36670,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def Valid: Valid = "Valid".asInstanceOf[Valid]
   @scala.inline
+  def Validating: Validating = "Validating".asInstanceOf[Validating]
+  @scala.inline
   def ValidationException: ValidationException = "ValidationException".asInstanceOf[ValidationException]
   @scala.inline
   def Verified: Verified = "Verified".asInstanceOf[Verified]
@@ -36751,6 +36949,8 @@ object awsDashSdkLibStrings {
   def a1DOTxlarge: a1DOTxlarge = "a1.xlarge".asInstanceOf[a1DOTxlarge]
   @scala.inline
   def aarch64: aarch64 = "aarch64".asInstanceOf[aarch64]
+  @scala.inline
+  def accepted: accepted = "accepted".asInstanceOf[accepted]
   @scala.inline
   def accountNotification: accountNotification = "accountNotification".asInstanceOf[accountNotification]
   @scala.inline
@@ -39239,6 +39439,8 @@ object awsDashSdkLibStrings {
   def `viewer-response`: `viewer-response` = "viewer-response".asInstanceOf[`viewer-response`]
   @scala.inline
   def vip: vip = "vip".asInstanceOf[vip]
+  @scala.inline
+  def virtualPrivateGateway: virtualPrivateGateway = "virtualPrivateGateway".asInstanceOf[virtualPrivateGateway]
   @scala.inline
   def viseme: viseme = "viseme".asInstanceOf[viseme]
   @scala.inline

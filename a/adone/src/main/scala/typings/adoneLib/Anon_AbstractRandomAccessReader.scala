@@ -411,7 +411,7 @@ trait Anon_AbstractRandomAccessReader extends js.Object {
   def readFile(filepath: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[java.lang.String] = js.native
   def readFile(
     filepath: adoneLib.adoneNs.fsNs.INs.URL,
-    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (Anon_Check | Anon_CheckEncoding | Anon_CheckTrue | Anon_Encoding | Anon_Encoding_1054351342)) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
+    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (Anon_Check | Anon_CheckEncoding | Anon_CheckTrue | Anon_Encoding | Anon_Encoding_1429386911)) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
   ): js.Promise[nodeLib.Buffer | scala.Null] = js.native
   def readFile(filepath: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
   def readFile(filepath: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[java.lang.String] = js.native
@@ -420,13 +420,13 @@ trait Anon_AbstractRandomAccessReader extends js.Object {
     */
   def readFile(
     filepath: java.lang.String,
-    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (Anon_Check | Anon_CheckEncoding | Anon_CheckTrue | Anon_Encoding | Anon_Encoding_1054351342)) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
+    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (Anon_Check | Anon_CheckEncoding | Anon_CheckTrue | Anon_Encoding | Anon_Encoding_1429386911)) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
   ): js.Promise[nodeLib.Buffer | scala.Null] = js.native
   def readFile(filepath: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def readFile(filepath: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[java.lang.String] = js.native
   def readFile(
     filepath: nodeLib.Buffer,
-    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (Anon_Check | Anon_CheckEncoding | Anon_CheckTrue | Anon_Encoding | Anon_Encoding_1054351342)) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
+    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (Anon_Check | Anon_CheckEncoding | Anon_CheckTrue | Anon_Encoding | Anon_Encoding_1429386911)) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
   ): js.Promise[nodeLib.Buffer | scala.Null] = js.native
   def readFileSync(filepath: adoneLib.adoneNs.fsNs.INs.URL): nodeLib.Buffer = js.native
   def readFileSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): java.lang.String = js.native
@@ -467,17 +467,17 @@ trait Anon_AbstractRandomAccessReader extends js.Object {
   @JSName("readFileSync")
   def readFileSync_String(
     filepath: adoneLib.adoneNs.fsNs.INs.URL,
-    options: adoneLib.adoneNs.fsNs.INs.ReadFileOptions with Anon_Encoding_1054351342
+    options: adoneLib.adoneNs.fsNs.INs.ReadFileOptions with Anon_Encoding_1429386911
   ): java.lang.String = js.native
   @JSName("readFileSync")
   def readFileSync_String(
     filepath: java.lang.String,
-    options: adoneLib.adoneNs.fsNs.INs.ReadFileOptions with Anon_Encoding_1054351342
+    options: adoneLib.adoneNs.fsNs.INs.ReadFileOptions with Anon_Encoding_1429386911
   ): java.lang.String = js.native
   @JSName("readFileSync")
   def readFileSync_String(
     filepath: nodeLib.Buffer,
-    options: adoneLib.adoneNs.fsNs.INs.ReadFileOptions with Anon_Encoding_1054351342
+    options: adoneLib.adoneNs.fsNs.INs.ReadFileOptions with Anon_Encoding_1429386911
   ): java.lang.String = js.native
   def readLines(filepath: adoneLib.adoneNs.fsNs.INs.URL): js.Promise[js.Array[java.lang.String]] = js.native
   def readLines(filepath: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[js.Array[java.lang.String]] = js.native

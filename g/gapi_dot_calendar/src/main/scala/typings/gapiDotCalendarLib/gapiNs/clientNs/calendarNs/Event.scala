@@ -26,7 +26,7 @@ class Event () extends js.Object {
   var endTimeUnspecified: js.UndefOr[scala.Boolean] = js.native
   var etag: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.etag = js.native
   // Extended properties of the event.
-  var extendedProperties: js.UndefOr[gapiDotCalendarLib.Anon_KeyPrivate] = js.native
+  var extendedProperties: js.UndefOr[gapiDotCalendarLib.Anon_Private] = js.native
   // A gadget that extends this event.
   var gadget: js.UndefOr[gapiDotCalendarLib.Anon_DisplayHeight] = js.native
   var guestsCanInviteOthers: js.UndefOr[scala.Boolean] = js.native

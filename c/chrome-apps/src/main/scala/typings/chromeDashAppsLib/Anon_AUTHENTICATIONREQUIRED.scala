@@ -13,6 +13,18 @@ trait Anon_AUTHENTICATIONREQUIRED extends js.Object {
   var TEMPORARY_UNAVAILABLE: chromeDashAppsLib.chromeDashAppsLibStrings.temporary_unavailable
 }
 
+trait Anon_Authenticationrequired extends js.Object {
+  var description: java.lang.String
+  var state: chromeDashAppsLib.chromeNs.ToStringLiteral[
+    Anon_AUTHENTICATIONREQUIRED, 
+    java.lang.String, 
+    stdLib.Exclude[
+      java.lang.String, 
+      chromeDashAppsLib.chromeDashAppsLibStrings.initializing | chromeDashAppsLib.chromeDashAppsLibStrings.running | chromeDashAppsLib.chromeDashAppsLibStrings.temporary_unavailable | chromeDashAppsLib.chromeDashAppsLibStrings.authentication_required | chromeDashAppsLib.chromeDashAppsLibStrings.disabled
+    ]
+  ]
+}
+
 object Anon_AUTHENTICATIONREQUIRED {
   @scala.inline
   def apply(
@@ -25,6 +37,25 @@ object Anon_AUTHENTICATIONREQUIRED {
     val __obj = js.Dynamic.literal(AUTHENTICATION_REQUIRED = AUTHENTICATION_REQUIRED, DISABLED = DISABLED, INITIALIZING = INITIALIZING, RUNNING = RUNNING, TEMPORARY_UNAVAILABLE = TEMPORARY_UNAVAILABLE)
   
     __obj.asInstanceOf[Anon_AUTHENTICATIONREQUIRED]
+  }
+}
+
+object Anon_Authenticationrequired {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    state: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      Anon_AUTHENTICATIONREQUIRED, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        chromeDashAppsLib.chromeDashAppsLibStrings.initializing | chromeDashAppsLib.chromeDashAppsLibStrings.running | chromeDashAppsLib.chromeDashAppsLibStrings.temporary_unavailable | chromeDashAppsLib.chromeDashAppsLibStrings.authentication_required | chromeDashAppsLib.chromeDashAppsLibStrings.disabled
+      ]
+    ]
+  ): Anon_Authenticationrequired = {
+    val __obj = js.Dynamic.literal(description = description, state = state.asInstanceOf[js.Any])
+  
+    __obj.asInstanceOf[Anon_Authenticationrequired]
   }
 }
 

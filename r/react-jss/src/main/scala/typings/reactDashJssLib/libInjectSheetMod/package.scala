@@ -10,7 +10,7 @@ package object libInjectSheetMod {
   type ConsistentWith[DecorationTargetProps, InjectedProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: DecorationTargetProps[P] | InjectedProps[P]}
     */ reactDashJssLib.reactDashJssLibStrings.ConsistentWith with js.Any
-  type DynamicCSSRule[Props] = js.Any
+  type DynamicCSSRule[Props] = scala.Nothing
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
   type Overwrite[T, U] = (Omit[T, java.lang.String]) with U
   type PropInjector[InjectedProps, AdditionalProps] = js.Function1[

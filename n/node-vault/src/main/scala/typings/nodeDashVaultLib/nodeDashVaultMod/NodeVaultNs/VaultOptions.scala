@@ -11,7 +11,7 @@ trait VaultOptions extends js.Object {
   var commands: js.UndefOr[js.Array[nodeDashVaultLib.Anon_Method]] = js.undefined
   var debug: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var endpoint: js.UndefOr[java.lang.String] = js.undefined
-  var mustache: js.UndefOr[mustacheLib.mustacheMod.MustacheStatic] = js.undefined
+  var mustache: js.UndefOr[mustacheLib.mustacheMod.MustacheStatic with nodeDashVaultLib.Anon_Context] = js.undefined
   var `request-promise`: js.UndefOr[js.Any] = js.undefined
   var requestOptions: js.UndefOr[requestLib.requestMod.requestNs.CoreOptions] = js.undefined
   var token: js.UndefOr[java.lang.String] = js.undefined
@@ -26,7 +26,7 @@ object VaultOptions {
     commands: js.Array[nodeDashVaultLib.Anon_Method] = null,
     debug: /* repeated */ js.Any => _ = null,
     endpoint: java.lang.String = null,
-    mustache: mustacheLib.mustacheMod.MustacheStatic = null,
+    mustache: mustacheLib.mustacheMod.MustacheStatic with nodeDashVaultLib.Anon_Context = null,
     `request-promise`: js.Any = null,
     requestOptions: requestLib.requestMod.requestNs.CoreOptions = null,
     token: java.lang.String = null,

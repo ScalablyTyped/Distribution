@@ -12,6 +12,20 @@ trait MailComposer extends js.Object {
   def streamMessage(): scala.Unit
 }
 
+@JSImport("meteor/email", "MailComposer")
+@js.native
+class MailComposerCls protected () extends MailComposer {
+  def this(options: MailComposerOptions) = this()
+  /* CompleteClass */
+  override def addHeader(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
+  /* CompleteClass */
+  override def pipe(stream: js.Any): scala.Unit = js.native
+  /* CompleteClass */
+  override def setMessageOption(from: java.lang.String, to: java.lang.String, body: java.lang.String, html: java.lang.String): scala.Unit = js.native
+  /* CompleteClass */
+  override def streamMessage(): scala.Unit = js.native
+}
+
 object MailComposer {
   @scala.inline
   def apply(

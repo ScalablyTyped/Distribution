@@ -11,3 +11,7 @@ trait ConnectableObservable[T] extends Observable[T] {
   def refCount(): Observable[T] = js.native
 }
 
+@JSGlobal("Rx.ConnectableObservable")
+@js.native
+class ConnectableObservableCls[T] () extends ConnectableObservable[T]
+

@@ -1868,6 +1868,15 @@ object ioBrokerNs extends js.Object {
     var writeFile64: ObjectOrStatePermission
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - iobrokerLib.iobrokerLibStrings.number
+    - iobrokerLib.iobrokerLibStrings.string
+    - iobrokerLib.iobrokerLibStrings.boolean
+    - iobrokerLib.iobrokerLibStrings.array
+    - iobrokerLib.iobrokerLibStrings.`object`
+    - iobrokerLib.iobrokerLibStrings.mixed
+    - iobrokerLib.iobrokerLibStrings.file
+  */
   trait CommonType extends js.Object
   
   trait DeviceCommon extends ObjectCommon {
@@ -1966,6 +1975,14 @@ object ioBrokerNs extends js.Object {
     var value: T
   }
   
+  // end interface Objects
+  /* Rewritten from type alias, can be one of: 
+    - iobrokerLib.iobrokerLibStrings.silly
+    - iobrokerLib.iobrokerLibStrings.debug
+    - iobrokerLib.iobrokerLibStrings.info
+    - iobrokerLib.iobrokerLibStrings.warn
+    - iobrokerLib.iobrokerLibStrings.error
+  */
   trait LogLevel extends js.Object
   
   trait Logger extends js.Object {
@@ -2009,6 +2026,12 @@ object ioBrokerNs extends js.Object {
     var time: scala.Double
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - StateObject
+    - ChannelObject
+    - DeviceObject
+    - OtherObject
+  */
   trait Object extends js.Object
   
   /** Defines access rights for a single object */
@@ -2069,6 +2092,11 @@ object ioBrokerNs extends js.Object {
     var users: ObjectOperationPermissions
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - iobrokerLib.iobrokerLibStrings.state
+    - iobrokerLib.iobrokerLibStrings.channel
+    - iobrokerLib.iobrokerLibStrings.device
+  */
   trait ObjectType extends js.Object
   
   /** Provides low-level access to the ioBroker objects db */
@@ -2480,6 +2508,12 @@ object ioBrokerNs extends js.Object {
     var common: js.UndefOr[stdLib.Partial[DeviceCommon]] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - PartialStateObject
+    - PartialChannelObject
+    - PartialDeviceObject
+    - PartialOtherObject
+  */
   trait PartialObject extends js.Object
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 

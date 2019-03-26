@@ -47,3 +47,9 @@ trait ProjectParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.ProjectParameters")
+@js.native
+class ProjectParametersCls () extends ProjectParameters {
+  def this(properties: ProjectParametersProperties) = this()
+}
+

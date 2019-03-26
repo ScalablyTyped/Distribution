@@ -221,7 +221,7 @@ trait IoTAnalytics
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a pipeline. A pipeline consumes messages from one or more channels and allows you to process the messages before storing them in a data store.
+    * Creates a pipeline. A pipeline consumes messages from one or more channels and allows you to process the messages before storing them in a data store. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
     */
   def createPipeline(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreatePipelineResponse, 
@@ -238,7 +238,7 @@ trait IoTAnalytics
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a pipeline. A pipeline consumes messages from one or more channels and allows you to process the messages before storing them in a data store.
+    * Creates a pipeline. A pipeline consumes messages from one or more channels and allows you to process the messages before storing them in a data store. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
     */
   def createPipeline(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreatePipelineRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.CreatePipelineResponse, 
@@ -986,14 +986,14 @@ trait IoTAnalytics
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates the settings of a pipeline.
+    * Updates the settings of a pipeline. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
     */
   def updatePipeline(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePipeline(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates the settings of a pipeline.
+    * Updates the settings of a pipeline. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
     */
   def updatePipeline(params: awsDashSdkLib.clientsIotanalyticsMod.IoTAnalyticsNs.UpdatePipelineRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def updatePipeline(

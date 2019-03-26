@@ -13,6 +13,11 @@ package object ReactDatesNs {
   type DayPickerRangeController = reactLib.reactMod.ReactNs.ClassicComponentClass[DayPickerRangeControllerShape]
   type DayPickerSingleDateController = reactLib.reactMod.ReactNs.ClassicComponentClass[DayPickerSingleDateControllerShape]
   // shapes/DisabledShape.js
+  /* Rewritten from type alias, can be one of: 
+    - scala.Boolean
+    - reactDashDatesLib.reactDashDatesLibStrings.startDate
+    - reactDashDatesLib.reactDashDatesLibStrings.endDate
+  */
   type DisabledShape = _DisabledShape | scala.Boolean
   // components/SingleDatePicker.js
   type SingleDatePicker = reactLib.reactMod.ReactNs.ClassicComponentClass[SingleDatePickerShape]

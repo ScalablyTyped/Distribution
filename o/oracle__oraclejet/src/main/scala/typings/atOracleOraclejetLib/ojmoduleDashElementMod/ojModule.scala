@@ -10,7 +10,10 @@ trait ojModule
   extends atOracleOraclejetLib.atOracleOraclejetMod.JetElement[ojModuleSettableProperties] {
   var animation: js.Object = js.native
   var config: atOracleOraclejetLib.Anon_CleanupMode = js.native
-  var onAnimationChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onAnimationChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onConfigChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_CleanupMode], 
     _
@@ -47,7 +50,7 @@ trait ojModule
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.animationChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -56,7 +59,7 @@ trait ojModule
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.animationChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -1126,7 +1129,7 @@ trait ojModule
   ): scala.Unit = js.native
   def getProperty(property: java.lang.String): js.Any = js.native
   @JSName("getProperty")
-  def getProperty_animation(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.animation): js.Any = js.native
+  def getProperty_animation(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.animation): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_config(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.config): atOracleOraclejetLib.Anon_CleanupMode = js.native
   def setProperties(properties: ojModuleSettablePropertiesLenient): scala.Unit = js.native

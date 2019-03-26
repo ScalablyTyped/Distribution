@@ -1009,6 +1009,13 @@ object CognitoSyncNs extends js.Object {
   type ApplicationArnList = js.Array[ApplicationArn]
   type AssumeRoleArn = java.lang.String
   type Boolean = scala.Boolean
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_STARTED
+    - awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED
+    - java.lang.String
+  */
   type BulkPublishStatus = _BulkPublishStatus | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientContext = java.lang.String
@@ -1024,7 +1031,19 @@ object CognitoSyncNs extends js.Object {
   type LambdaFunctionArn = java.lang.String
   type Long = scala.Double
   type MergedDatasetNameList = js.Array[String]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.replace
+    - awsDashSdkLib.awsDashSdkLibStrings.remove
+    - java.lang.String
+  */
   type Operation = _Operation | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.APNS
+    - awsDashSdkLib.awsDashSdkLibStrings.APNS_SANDBOX
+    - awsDashSdkLib.awsDashSdkLibStrings.GCM
+    - awsDashSdkLib.awsDashSdkLibStrings.ADM
+    - java.lang.String
+  */
   type Platform = _Platform | java.lang.String
   type PushToken = java.lang.String
   type RecordKey = java.lang.String
@@ -1032,10 +1051,20 @@ object CognitoSyncNs extends js.Object {
   type RecordPatchList = js.Array[RecordPatch]
   type RecordValue = java.lang.String
   type StreamName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ENABLED
+    - awsDashSdkLib.awsDashSdkLibStrings.DISABLED
+    - java.lang.String
+  */
   type StreamingStatus = _StreamingStatus | java.lang.String
   type String = java.lang.String
   type SyncSessionToken = java.lang.String
   type _Date = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2014-06-30`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

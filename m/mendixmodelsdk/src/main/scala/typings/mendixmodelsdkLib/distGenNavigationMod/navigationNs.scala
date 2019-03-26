@@ -74,7 +74,7 @@ object navigationNs extends js.Object {
     * In version 7.22.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INativeNavigationProfile because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INativeNavigationProfile because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class NativeNavigationProfile protected () extends NavigationProfileBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     @JSName("containerAsNavigationDocument")
@@ -90,7 +90,7 @@ object navigationNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/navigation relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined profiles, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined profiles */ @js.native
   class NavigationDocument protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject) = this()
@@ -142,7 +142,7 @@ object navigationNs extends js.Object {
     * In version 7.2.0: added public
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfile because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfile because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class NavigationProfile protected () extends NavigationProfileBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var applicationTitle: java.lang.String = js.native
@@ -182,7 +182,7 @@ object navigationNs extends js.Object {
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfileBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsNavigationDocument, name, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfileBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsNavigationDocument, name */ @js.native
   abstract class NavigationProfileBase protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()

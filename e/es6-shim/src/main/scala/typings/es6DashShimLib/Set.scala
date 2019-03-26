@@ -23,3 +23,9 @@ trait Set[T] extends js.Object {
   def values(): IterableIteratorShim[T] = js.native
 }
 
+@JSGlobal("Set")
+@js.native
+class SetCls[T] () extends Set[T] {
+  def this(iterable: IterableShim[T]) = this()
+}
+

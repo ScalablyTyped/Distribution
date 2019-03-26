@@ -47,3 +47,10 @@ trait UndoManager extends js.Object {
   def undo(dontSelect: scala.Boolean): Range = js.native
 }
 
+@JSGlobal("AceAjax.UndoManager")
+@js.native
+/**
+  * Resets the current undo state and creates a new `UndoManager`.
+  **/
+class UndoManagerCls () extends UndoManager
+

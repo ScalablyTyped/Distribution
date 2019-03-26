@@ -116,6 +116,11 @@ object MobileAnalyticsNs extends js.Object {
   type String0to1000Chars = java.lang.String
   type String10Chars = java.lang.String
   type String50Chars = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2014-06-05`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -56,7 +56,12 @@ class Request protected ()
   @JSName("on")
   def on_done(
     event: tediousLib.tediousLibStrings.done,
-    listener: js.Function3[/* error */ stdLib.Error, /* more */ scala.Boolean, /* rows */ js.Array[_], scala.Unit]
+    listener: js.Function3[
+      /* rowCount */ scala.Double, 
+      /* more */ scala.Boolean, 
+      /* rows */ js.Array[_], 
+      scala.Unit
+    ]
   ): this.type = js.native
   /**
     * Indicates the completion status of a SQL statement within a stored procedure. All rows from a statement in a stored procedure have been provided (through row events).
@@ -64,10 +69,9 @@ class Request protected ()
   @JSName("on")
   def on_doneInProc(
     event: tediousLib.tediousLibStrings.doneInProc,
-    listener: js.Function4[
-      /* error */ stdLib.Error, 
+    listener: js.Function3[
+      /* rowCount */ scala.Double, 
       /* more */ scala.Boolean, 
-      /* returnStatus */ js.Any, 
       /* rows */ js.Array[_], 
       scala.Unit
     ]
@@ -78,10 +82,16 @@ class Request protected ()
   @JSName("on")
   def on_doneProc(
     event: tediousLib.tediousLibStrings.doneProc,
-    listener: js.Function3[/* error */ stdLib.Error, /* more */ scala.Boolean, /* rows */ js.Array[_], scala.Unit]
+    listener: js.Function4[
+      /* rowCount */ scala.Double, 
+      /* more */ scala.Boolean, 
+      /* returnStatus */ js.Any, 
+      /* rows */ js.Array[_], 
+      scala.Unit
+    ]
   ): this.type = js.native
   /**
-    * The request encountered an error and has not been prepared. 
+    * The request encountered an error and has not been prepared.
     */
   @JSName("on")
   def on_error(
@@ -89,12 +99,12 @@ class Request protected ()
     listener: js.Function1[/* err */ stdLib.Error, scala.Unit]
   ): this.type = js.native
   /**
-    * The request has been prepared and can be used in subsequent calls to execute and unprepare. 
+    * The request has been prepared and can be used in subsequent calls to execute and unprepare.
     */
   @JSName("on")
   def on_prepared(event: tediousLib.tediousLibStrings.prepared, listener: js.Function0[scala.Unit]): this.type = js.native
   /**
-    * This is the final event emitted by a request. This is emitted after the callback passed in a request is called. 
+    * This is the final event emitted by a request. This is emitted after the callback passed in a request is called.
     */
   @JSName("on")
   def on_requestCompleted(event: tediousLib.tediousLibStrings.requestCompleted, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -120,11 +130,11 @@ class Request protected ()
     listener: js.Function1[/* columns */ js.Array[ColumnValue], scala.Unit]
   ): this.type = js.native
   /**
-    * Temporarily suspends the flow of data from the database. No more 'row' events will be emitted until request.resume() is called. 
+    * Temporarily suspends the flow of data from the database. No more 'row' events will be emitted until request.resume() is called.
     */
   def pause(): scala.Unit = js.native
   /**
-    * Resumes the flow of data from the database. 
+    * Resumes the flow of data from the database.
     */
   def resume(): scala.Unit = js.native
 }

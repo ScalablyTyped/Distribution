@@ -23,3 +23,9 @@ trait MultipointDrawAction extends DrawAction {
   def complete(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.MultipointDrawAction")
+@js.native
+class MultipointDrawActionCls () extends MultipointDrawAction {
+  def this(properties: MultipointDrawActionProperties) = this()
+}
+

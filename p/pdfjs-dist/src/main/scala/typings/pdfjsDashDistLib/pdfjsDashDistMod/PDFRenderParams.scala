@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PDFRenderParams extends js.Object {
-  var canvasContext: pdfjsDashDistLib.CanvasRenderingContext2D
+  var canvasContext: stdLib.CanvasRenderingContext2D
   var continueCallback: js.UndefOr[js.Function1[/* _continue */ js.Function0[scala.Unit], scala.Unit]] = js.undefined
   var imageLayer: js.UndefOr[PDFRenderImageLayer] = js.undefined
   var textLayer: js.UndefOr[PDFRenderTextLayer] = js.undefined
@@ -16,7 +16,7 @@ trait PDFRenderParams extends js.Object {
 object PDFRenderParams {
   @scala.inline
   def apply(
-    canvasContext: pdfjsDashDistLib.CanvasRenderingContext2D,
+    canvasContext: stdLib.CanvasRenderingContext2D,
     continueCallback: /* _continue */ js.Function0[scala.Unit] => scala.Unit = null,
     imageLayer: PDFRenderImageLayer = null,
     textLayer: PDFRenderTextLayer = null,

@@ -41,6 +41,14 @@ trait APIResource extends js.Object {
     */
   val singularName: java.lang.String
   /**
+    * The hash value of the storage version, the version this resource is converted to when
+    * written to the data store. Value must be treated as opaque by clients. Only equality
+    * comparison on the value is valid. This is an alpha feature and may change or be removed in
+    * the future. The field is populated by the apiserver only if the StorageVersionHash feature
+    * gate is enabled. This field will remain optional even if it graduates.
+    */
+  val storageVersionHash: java.lang.String
+  /**
     * verbs is a list of supported kube verbs (this includes get, list, watch, create, update,
     * patch, delete, deletecollection, and proxy)
     */
@@ -63,10 +71,11 @@ object APIResource {
     namespaced: scala.Boolean,
     shortNames: js.Array[java.lang.String],
     singularName: java.lang.String,
+    storageVersionHash: java.lang.String,
     verbs: js.Array[java.lang.String],
     version: java.lang.String
   ): APIResource = {
-    val __obj = js.Dynamic.literal(categories = categories, group = group, kind = kind, name = name, namespaced = namespaced, shortNames = shortNames, singularName = singularName, verbs = verbs, version = version)
+    val __obj = js.Dynamic.literal(categories = categories, group = group, kind = kind, name = name, namespaced = namespaced, shortNames = shortNames, singularName = singularName, storageVersionHash = storageVersionHash, verbs = verbs, version = version)
   
     __obj.asInstanceOf[APIResource]
   }

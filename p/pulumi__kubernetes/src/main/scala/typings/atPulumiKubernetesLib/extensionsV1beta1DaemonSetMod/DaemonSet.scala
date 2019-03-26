@@ -36,18 +36,18 @@ class DaemonSet protected ()
   val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSet] = js.native
   /**
     * Standard object's metadata. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
   /**
     * The desired behavior of this daemon set. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
   val spec: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.extensionsNs.v1beta1Ns.DaemonSetSpec] = js.native
   /**
     * The current status of this daemon set. This data may be out of date by some window of time.
     * Populated by the system. Read-only. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
     */
   val status: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.extensionsNs.v1beta1Ns.DaemonSetStatus] = js.native
   def getInputs(): atPulumiKubernetesLib.typesInputMod.extensionsNs.v1beta1Ns.DaemonSet = js.native

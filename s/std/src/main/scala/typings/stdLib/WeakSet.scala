@@ -13,6 +13,22 @@ trait WeakSet[T /* <: js.Object */] extends js.Object {
   def has(value: T): scala.Boolean
 }
 
+@JSGlobal("WeakSet")
+@js.native
+class WeakSetCls[T /* <: js.Object */] () extends WeakSet[T] {
+  def this(iterable: Iterable[T]) = this()
+  def this(values: js.Array[T]) = this()
+  /* CompleteClass */
+  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
+  override val toStringTag: java.lang.String = js.native
+  /* CompleteClass */
+  override def add(value: T): this.type = js.native
+  /* CompleteClass */
+  override def delete(value: T): scala.Boolean = js.native
+  /* CompleteClass */
+  override def has(value: T): scala.Boolean = js.native
+}
+
 object WeakSet {
   @scala.inline
   def apply[T /* <: js.Object */](

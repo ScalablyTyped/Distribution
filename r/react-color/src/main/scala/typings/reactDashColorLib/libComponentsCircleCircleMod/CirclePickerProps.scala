@@ -12,7 +12,7 @@ trait CirclePickerProps
   var colors: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var onSwatchHover: js.UndefOr[
     js.Function2[
-      /* colorResult */ reactDashColorLib.reactDashColorMod.ColorResult, 
+      /* color */ reactDashColorLib.reactDashColorMod.ColorResult, 
       /* event */ stdLib.MouseEvent, 
       scala.Unit
     ]
@@ -30,7 +30,7 @@ object CirclePickerProps {
     key: reactLib.reactMod.ReactNs.Key = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
-    onSwatchHover: (/* colorResult */ reactDashColorLib.reactDashColorMod.ColorResult, /* event */ stdLib.MouseEvent) => scala.Unit = null,
+    onSwatchHover: (/* color */ reactDashColorLib.reactDashColorMod.ColorResult, /* event */ stdLib.MouseEvent) => scala.Unit = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[CirclePicker] = null,
     width: java.lang.String = null
   ): CirclePickerProps = {

@@ -11,6 +11,8 @@ object reactDashRouterDashBootstrapLibComponents {
   @scala.inline
   def LinkContainer: reactLib.reactMod.ReactNs.ComponentType[reactDashRouterDashDomLib.reactDashRouterDashDomMod.NavLinkProps] = reactDashRouterDashBootstrapLib.libLinkContainerMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashRouterDashDomLib.reactDashRouterDashDomMod.NavLinkProps]]
   @scala.inline
+  def defaultCls: reactLib.reactMod.ReactNs.ComponentType[reactDashRouterDashDomLib.reactDashRouterDashDomMod.NavLinkProps] = js.constructorOf[reactDashRouterDashBootstrapLib.libLinkContainerMod.defaultCls].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashRouterDashDomLib.reactDashRouterDashDomMod.NavLinkProps]]
+  @scala.inline
   def NavLinkProps: reactDashRouterDashDomLib.reactDashRouterDashDomMod.NavLinkProps.type = reactDashRouterDashDomLib.reactDashRouterDashDomMod.NavLinkProps
   type NavLinkProps = reactDashRouterDashDomLib.reactDashRouterDashDomMod.NavLinkProps
 }

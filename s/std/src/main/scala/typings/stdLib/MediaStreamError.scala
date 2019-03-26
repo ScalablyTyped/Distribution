@@ -13,6 +13,17 @@ trait MediaStreamError extends js.Object {
 
 @JSGlobal("MediaStreamError")
 @js.native
+class MediaStreamErrorCls () extends MediaStreamError {
+  /* CompleteClass */
+  override val constraintName: java.lang.String | scala.Null = js.native
+  /* CompleteClass */
+  override val message: java.lang.String | scala.Null = js.native
+  /* CompleteClass */
+  override val name: java.lang.String = js.native
+}
+
+@JSGlobal("MediaStreamError")
+@js.native
 object MediaStreamError
   extends org.scalablytyped.runtime.Instantiable0[MediaStreamError]
 

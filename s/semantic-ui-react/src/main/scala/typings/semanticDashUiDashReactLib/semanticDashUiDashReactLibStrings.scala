@@ -8,97 +8,97 @@ import scala.scalajs.js.annotation._
 object semanticDashUiDashReactLibStrings {
   @js.native
   sealed trait `1`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `10`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `11`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `12`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `13`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `14`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `15`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `16`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `16:9` extends js.Object
   
   @js.native
   sealed trait `2`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `21:9` extends js.Object
   
   @js.native
   sealed trait `3`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `4`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `4:3` extends js.Object
   
   @js.native
   sealed trait `5`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `500px`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `6`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `7`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `8`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `9`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait ENTERED
@@ -118,8 +118,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait JS
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait UNMOUNTED
@@ -130,13 +130,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait accessible
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait accusoft
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ad
@@ -144,68 +144,68 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait add
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `add circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `add square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `add to calendar`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `add to cart`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `add user`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `address book`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `address book outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `address card`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `address card outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait adjust
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait adn
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait adversal
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ae
@@ -217,8 +217,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait affiliatetheme
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait afghanistan
@@ -242,13 +242,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait alarm
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `alarm mute`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait albania
@@ -256,8 +256,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait ald
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait algeria
@@ -265,33 +265,33 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait algolia
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `align center`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `align justify`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `align left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `align right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait als
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait am
@@ -299,18 +299,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait amazon
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `amazon pay`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ambulance
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait america
@@ -322,13 +322,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `american sign language interpreting`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait amilia
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait an
@@ -336,8 +336,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait anchor
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait andorra
@@ -345,53 +345,53 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait android
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait angellist
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `angle double down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `angle double left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `angle double right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `angle double up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `angle down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `angle left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `angle right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `angle up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait angola
@@ -399,8 +399,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait angrycreative
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait anguilla
@@ -408,13 +408,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait angular
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait announcement
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait antigua
@@ -426,28 +426,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `app store`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `app store ios`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait apper
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait apple
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `apple pay`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ar
@@ -455,18 +455,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait archive
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `area chart`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `area graph`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait argentina
@@ -478,103 +478,103 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `arrow alternate circle down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow alternate circle down outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow alternate circle left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow alternate circle left outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow alternate circle right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow alternate circle right outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow alternate circle up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow alternate circle up outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow circle down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow circle left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow circle right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow circle up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow down cart`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrow up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrows alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrows alternate horizontal`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `arrows alternate vertical`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait aruba
@@ -589,54 +589,54 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait asexual
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait asl
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `asl interpreting`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `assistive listening devices`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `assistive listening systems`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait asterisk
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait asymmetrik
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait at
     extends semanticDashUiDashReactLib.distCommonjsElementsFlagFlagMod.FlagNameValues
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
        with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait attach
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait attention
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait au
@@ -644,13 +644,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait audible
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `audio description`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait australia
@@ -665,18 +665,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait autoprefixer
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait avianex
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait aviato
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait aw
@@ -684,8 +684,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait aws
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ax
@@ -705,8 +705,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait backward
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bahamas
@@ -718,28 +718,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait balance
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `balance scale`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ban
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `band aid`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bandcamp
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bangladesh
@@ -750,8 +750,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait bar
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait barbados
@@ -759,93 +759,93 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait barcode
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bars
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `baseball ball`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `basketball ball`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bath
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bathtub
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `battery empty`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `battery four`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `battery full`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `battery half`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `battery high`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `battery low`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `battery one`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `battery quarter`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `battery three`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `battery three quarters`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `battery two`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `battery zero`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bb
@@ -861,23 +861,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait bed
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait beer
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait behance
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `behance square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait belarus
@@ -893,23 +893,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait bell
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `bell outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `bell slash`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `bell slash outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait below extends js.Object
@@ -944,59 +944,59 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait bicycle
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait big
     extends semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconSizeProp
        with semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageMod.MessageSizeProp
        with semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentMod.SegmentSizeProp
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
        with semanticDashUiDashReactLib.srcGenericMod.SemanticSIZES
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
   
   @js.native
   sealed trait billboard extends js.Object
   
   @js.native
   sealed trait bimobject
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait binoculars
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait birthday
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `birthday cake`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bitbucket
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `bitbucket square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bitcoin
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bity
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bj
@@ -1004,58 +1004,58 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait black
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait `black tie`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait blackberry
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait blind
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `block layout`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait blogger
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `blogger b`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait blue
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait bluetooth
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `bluetooth alternative`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `bluetooth b`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait blurring extends js.Object
@@ -1074,8 +1074,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait bold
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bolivia
@@ -1083,28 +1083,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait bolt
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bomb
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait book
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bookmark
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `bookmark outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bosnia
@@ -1116,8 +1116,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait bottom
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticVERTICALALIGNMENTS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticVERTICALALIGNMENTS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
   
   @js.native
   sealed trait `bottom center` extends js.Object
@@ -1132,8 +1132,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait bounce
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
   
   @js.native
   sealed trait `bouvet island`
@@ -1141,18 +1141,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `bowling ball`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait box
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait boxes
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait br
@@ -1160,8 +1160,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait braille
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait brazil
@@ -1169,8 +1169,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait briefcase
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `british virgin islands`
@@ -1178,28 +1178,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `broken chain`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait brown
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait browse
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `browse right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait browser
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait brunei
@@ -1215,23 +1215,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait btc
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bug
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait building
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `building outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bulgaria
@@ -1239,13 +1239,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait bullhorn
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bullseye
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `burkina faso`
@@ -1257,8 +1257,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait buromobelexperte
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait burundi
@@ -1266,16 +1266,16 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait bus
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait button extends js.Object
   
   @js.native
   sealed trait buysellads
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait bv
@@ -1303,78 +1303,78 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait calculator
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait calendar
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `calendar alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `calendar alternate outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `calendar check`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `calendar check outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `calendar minus`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `calendar minus outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `calendar outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `calendar plus`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `calendar plus outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `calendar times`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `calendar times outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait call
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `call square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cambodia
@@ -1382,13 +1382,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait camera
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `camera retro`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cameroon
@@ -1400,8 +1400,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait cancel
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cape verde`
@@ -1409,83 +1409,83 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait car
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `caret down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `caret left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `caret right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `caret square down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `caret square down outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `caret square left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `caret square left outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `caret square right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `caret square right outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `caret square up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `caret square up outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `caret up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cart
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cart arrow down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cart plus`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cayman islands`
@@ -1494,58 +1494,58 @@ object semanticDashUiDashReactLibStrings {
   @js.native
   sealed trait cc
     extends semanticDashUiDashReactLib.distCommonjsElementsFlagFlagMod.FlagNameValues
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
        with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cc amazon pay`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cc amex`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cc apple pay`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cc diners club`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cc discover`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cc jcb`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cc mastercard`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cc paypal`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cc stripe`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cc visa`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cd
@@ -1553,13 +1553,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait center
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticTEXTALIGNMENTS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticTEXTALIGNMENTS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
   
   @js.native
   sealed trait centercode
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait centered extends js.Object
@@ -1570,8 +1570,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait certificate
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cf
@@ -1591,171 +1591,171 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait chain
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chart area`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chart bar`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chart bar outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chart line`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chart pie`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait chat
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait check
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `check circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `check circle outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `check square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `check square outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait checkbox extends js.Object
   
   @js.native
   sealed trait `checked calendar`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait checkmark
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `checkmark box`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait chess
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chess bishop`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chess board`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chess king`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chess knight`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chess pawn`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chess queen`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chess rock`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chess rook`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chevron circle down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chevron circle left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chevron circle right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chevron circle up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chevron down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chevron left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chevron right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `chevron up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait child
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait chile
@@ -1771,8 +1771,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait chrome
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ci
@@ -1780,28 +1780,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait circle
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `circle notch`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `circle notched`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `circle outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `circle thin`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ck
@@ -1816,91 +1816,91 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait clipboard
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `clipboard check`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `clipboard list`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `clipboard outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait clock
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `clock outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait clockwise extends js.Object
   
   @js.native
   sealed trait clone
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `clone outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait close
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `closed captioning`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `closed captioning outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cloud
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cloud download`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cloud upload`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cloudscale
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cloudsmith
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cloudversify
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cm
@@ -1912,8 +1912,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait cny
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait co
@@ -1921,8 +1921,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait cocktail
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cocos islands`
@@ -1930,38 +1930,38 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait code
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `code branch`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait codepen
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait codiepie
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait coffee
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cog
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cogs
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait colombia
@@ -1969,43 +1969,43 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait columns
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait comment
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `comment alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `comment alternate outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `comment outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait commenting
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait comments
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `comments outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait comoros
@@ -2013,28 +2013,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait compass
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `compass outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait compose
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait compress
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait computer
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
        with semanticDashUiDashReactLib.distCommonjsCollectionsGridGridColumnMod._GridOnlyProp
        with semanticDashUiDashReactLib.distCommonjsCollectionsGridGridMod._GridReversedProp
   
@@ -2044,8 +2044,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait configure
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait congo
@@ -2057,23 +2057,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait connectdevelop
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait contao
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait content
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait conversation
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `cook islands`
@@ -2081,23 +2081,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait copy
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `copy outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait copyright
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `copyright outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `costa rica`
@@ -2112,8 +2112,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait cpanel
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cr
@@ -2121,23 +2121,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `creative commons`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `credit card`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `credit card alternative`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `credit card outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait croatia
@@ -2145,13 +2145,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait crop
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait crosshairs
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cs
@@ -2159,13 +2159,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait css3
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `css3 alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cu
@@ -2177,28 +2177,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait cube
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cubes
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait currency
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cut
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cuttlefish
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait cv
@@ -2226,23 +2226,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `d and d`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait dashboard
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait dashcube
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait database
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait de
@@ -2250,28 +2250,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait deaf
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait deafness
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait delete
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `delete calendar`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait delicious
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait denmark
@@ -2279,66 +2279,66 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait deploydog
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait descending extends js.Object
   
   @js.native
   sealed trait deskpro
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait desktop
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait detective
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait deviantart
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait diamond
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait digg
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `digital ocean`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait discord
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait discourse
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait discussions
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait disk
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait dj
@@ -2358,8 +2358,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait dna
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `do`
@@ -2367,38 +2367,38 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait dochub
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait docker
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait doctor
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait dollar
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `dollar sign`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait dolly
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `dolly flatbed`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait dominica
@@ -2410,71 +2410,71 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait dont
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `dot circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `dot circle outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait down extends js.Object
   
   @js.native
   sealed trait download
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait draft2digital
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait dribbble
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `dribbble square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `drivers license`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait drop
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait dropbox
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait dropdown
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait drupal
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait dyalog
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait dz
@@ -2482,8 +2482,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait earlybirds
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ec
@@ -2495,18 +2495,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait edge
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait edit
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `edit outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ee
@@ -2526,13 +2526,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait eight
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait eject
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `el salvador`
@@ -2540,76 +2540,76 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait elementor
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait eleven
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `ellipsis horizontal`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `ellipsis vertical`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ellipsisItem extends js.Object
   
   @js.native
   sealed trait ember
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait emergency
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait empire
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait envelope
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `envelope open`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `envelope open outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `envelope outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `envelope square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait envira
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `envira gallery`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait equal extends js.Object
@@ -2624,13 +2624,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait erase
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait eraser
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait eritrea
@@ -2638,8 +2638,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait erlang
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait es
@@ -2655,8 +2655,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait ethereum
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ethiopia
@@ -2664,8 +2664,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait etsy
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait eu
@@ -2673,18 +2673,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait eur
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait euro
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `euro sign`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `european union`
@@ -2695,143 +2695,143 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait exchange
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait exclamation
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `exclamation circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `exclamation triangle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait expand
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `expand arrows alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait expeditedssl
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait external
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `external alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `external share`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `external square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `external square alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait eye
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `eye dropper`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `eye slash`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `eye slash outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait eyedropper
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait facebook
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `facebook f`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `facebook messenger`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `facebook official`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `facebook square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait factory
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait fade
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `fade down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `fade left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `fade right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `fade up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `falkland islands`
@@ -2843,38 +2843,38 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `fast backward`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `fast forward`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait favorite
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait fax
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait feed
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait female
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `female homosexual`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait fi
@@ -2882,13 +2882,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait fifteen
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `fighter jet`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait fiji
@@ -2896,138 +2896,138 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait file
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file alternate outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file archive`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file archive outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file audio`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file audio outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file code`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file code outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file excel`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file excel outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file image`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file image outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file pdf`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file pdf outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file powerpoint`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file powerpoint outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file text`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file text outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file video`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file video outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file word`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `file word outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait film
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait filter
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait find
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait finland
@@ -3035,41 +3035,41 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait fire
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `fire extinguisher`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait firefox
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `first aid`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `first order`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait firstItem extends js.Object
   
   @js.native
   sealed trait firstdraft
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait five
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait fj
@@ -3081,63 +3081,63 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait flag
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `flag checkered`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `flag outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait flash
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
   
   @js.native
   sealed trait flask
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait flickr
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait flipboard
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait fly
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `fly down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `fly left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `fly right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `fly up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait fm
@@ -3152,103 +3152,103 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait folder
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `folder open`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `folder open outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `folder outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait font
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `font awesome`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `font awesome alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `font awesome flag`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait fonticons
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `fonticons fi`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait food
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `football ball`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait fork
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `fort awesome`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `fort awesome alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait forumbee
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait forward
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait four
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait foursquare
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait fourteen
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait fr
@@ -3260,13 +3260,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `free code camp`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait freebsd
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `french guiana`
@@ -3282,13 +3282,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait frown
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `frown outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait full extends js.Object
@@ -3298,13 +3298,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait futbol
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `futbol outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ga
@@ -3320,23 +3320,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait game
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gamepad
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gavel
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gay
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gb
@@ -3352,8 +3352,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait gbp
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gd
@@ -3365,18 +3365,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait gem
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `gem outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait genderless
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait georgia
@@ -3388,8 +3388,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `get pocket`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gf
@@ -3397,13 +3397,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait gg
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `gg circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gh
@@ -3423,48 +3423,48 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait gift
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait git
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `git square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait github
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `github alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `github square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gitkraken
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gitlab
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gitter
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gl
@@ -3472,28 +3472,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `glass martini`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait glide
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `glide g`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait globe
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait glow
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
   
   @js.native
   sealed trait gm
@@ -3505,68 +3505,68 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait gofore
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `golf ball`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait goodreads
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `goodreads g`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait google
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `google drive`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `google play`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `google plus`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `google plus circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `google plus g`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `google plus official`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `google plus square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `google wallet`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gp
@@ -3582,28 +3582,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait grab
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait graduation
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `graduation cap`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gratipay
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait grav
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait greece
@@ -3611,8 +3611,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait green
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait greenland
@@ -3624,28 +3624,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait grey
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait `grid layout`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gripfire
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait group
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait grunt
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait gs
@@ -3681,8 +3681,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait gulp
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait guyana
@@ -3698,23 +3698,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait h
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `h square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hacker news`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hacker news square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait haiti
@@ -3728,168 +3728,168 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `hand lizard`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand lizard outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand paper`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand paper outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand peace`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand peace outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand point down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand point down outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand point left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand point left outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand point right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand point right outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand point up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand point up outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand pointer`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand pointer outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand rock`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand rock outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand scissors`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand scissors outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand spock`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand spock outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hand victory`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait handicap
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait handshake
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `handshake outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hard of hearing`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait hashtag
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait hdd
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hdd outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait header
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait heading
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait headphones
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `heard island`
@@ -3897,53 +3897,53 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait heart
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `heart outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait heartbeat
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait help
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `help circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait heterosexual
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait hide
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait hips
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hire a helper`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait history
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait hk
@@ -3959,13 +3959,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `hockey puck`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait home
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait honduras
@@ -3977,101 +3977,101 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait hooli
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `horizontal flip`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait horizontally extends js.Object
   
   @js.native
   sealed trait hospital
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hospital outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hospital symbol`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait hotel
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait hotjar
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait hourglass
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hourglass end`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hourglass four`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hourglass full`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hourglass half`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hourglass one`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hourglass outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hourglass start`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hourglass three`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hourglass two`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `hourglass zero`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait houzz
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait hover extends js.Object
@@ -4086,8 +4086,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait html5
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait hu
@@ -4095,16 +4095,16 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait hubspot
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait huge
     extends semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconSizeProp
        with semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageMod.MessageSizeProp
        with semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentMod.SegmentSizeProp
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
        with semanticDashUiDashReactLib.srcGenericMod.SemanticSIZES
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
        with semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticMod.StatisticSizeProp
   
   @js.native
@@ -4113,8 +4113,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `i cursor`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait iceland
@@ -4126,28 +4126,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `id badge`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `id badge outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `id card`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `id card outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait idea
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ie
@@ -4159,33 +4159,33 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait ils
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait image
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `image outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait images
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `images outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait imdb
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait in
@@ -4193,18 +4193,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `in cart`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait inbox
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait indent
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait india
@@ -4220,46 +4220,46 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait industry
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait info
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `info circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait inr
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait instagram
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait intergender
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait internally extends js.Object
   
   @js.native
   sealed trait `internet explorer`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait intersex
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait inverted extends js.Object
@@ -4270,8 +4270,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait ioxhost
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait iq
@@ -4307,8 +4307,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait italic
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait italy
@@ -4316,13 +4316,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait itunes
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `itunes note`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait jamaica
@@ -4338,13 +4338,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait jenkins
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait jiggle
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
   
   @js.native
   sealed trait jm
@@ -4356,13 +4356,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait joget
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait joomla
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait jordan
@@ -4374,23 +4374,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait jpy
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `js square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait jsfiddle
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait justified
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticTEXTALIGNMENTS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticTEXTALIGNMENTS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
   
   @js.native
   sealed trait kazakhstan
@@ -4406,23 +4406,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait key
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait keyboard
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `keyboard outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait keycdn
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait kg
@@ -4438,13 +4438,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait kickstarter
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `kickstarter k`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait kiribati
@@ -4460,8 +4460,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait korvue
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait kp
@@ -4473,8 +4473,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait krw
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait kuwait
@@ -4502,16 +4502,16 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait lab
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait labeled extends js.Object
   
   @js.native
   sealed trait language
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait laos
@@ -4519,21 +4519,21 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait laptop
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait laravel
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait large
     extends semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconSizeProp
        with semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageMod.MessageSizeProp
        with semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentMod.SegmentSizeProp
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
        with semanticDashUiDashReactLib.srcGenericMod.SemanticSIZES
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
        with semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticMod.StatisticSizeProp
   
   @js.native
@@ -4551,13 +4551,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait lastfm
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `lastfm square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait latvia
@@ -4565,8 +4565,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait law
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait lb
@@ -4581,13 +4581,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait leaf
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait leanpub
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait lebanon
@@ -4595,10 +4595,10 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait left
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticFLOATS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticFLOATS
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticFLOATS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticFLOATS
        with semanticDashUiDashReactLib.srcGenericMod.SemanticTEXTALIGNMENTS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
   
   @js.native
   sealed trait `left center` extends js.Object
@@ -4608,23 +4608,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait legal
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait lemon
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `lemon outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait lesbian
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait lesotho
@@ -4632,28 +4632,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait less
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `level down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `level down alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `level up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `level up alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait li
@@ -4673,113 +4673,113 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `life ring`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `life ring outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait lightbulb
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `lightbulb outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait lightning
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait like
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `line graph`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait linechat
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait linkedin
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `linkedin alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `linkedin square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait linkify
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait linode
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait linux
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait lira
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `lira sign`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait list
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `list alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `list alternate outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `list layout`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `list ol`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `list ul`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait lithuania
@@ -4791,51 +4791,51 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `location arrow`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait lock
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `lock open`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `log out`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait long extends js.Object
   
   @js.native
   sealed trait `long arrow alternate down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `long arrow alternate left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `long arrow alternate right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `long arrow alternate up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `low vision`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait lr
@@ -4867,8 +4867,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait lyft
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ma
@@ -4888,43 +4888,43 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait magento
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait magic
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait magnet
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait magnify
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mail
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `mail forward`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `mail outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `mail square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait malawi
@@ -4940,13 +4940,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait male
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `male homosexual`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mali
@@ -4958,83 +4958,83 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait man
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait map
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `map marker`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `map marker alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `map outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `map pin`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `map signs`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait marker
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mars
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `mars alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `mars double`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `mars horizontal`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `mars stroke`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `mars stroke horizontal`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `mars stroke vertical`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `mars vertical`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `marshall islands`
@@ -5049,8 +5049,8 @@ object semanticDashUiDashReactLibStrings {
     extends semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconSizeProp
        with semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageMod.MessageSizeProp
        with semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentMod.SegmentSizeProp
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
        with semanticDashUiDashReactLib.srcGenericMod.SemanticSIZES
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
   
   @js.native
   sealed trait mauritania
@@ -5062,8 +5062,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait maxcdn
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mayotte
@@ -5083,58 +5083,58 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait meanpath
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait medapps
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait medium
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
        with semanticDashUiDashReactLib.srcGenericMod.SemanticSIZES
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
   
   @js.native
   sealed trait `medium m`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `medium rectangle` extends js.Object
   
   @js.native
   sealed trait medkit
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait medrt
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait meetup
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait meh
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `meh outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mercury
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mexico
@@ -5150,8 +5150,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait microchip
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait micronesia
@@ -5159,77 +5159,77 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait microphone
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `microphone slash`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait microsoft
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `microsoft edge`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait middle
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticVERTICALALIGNMENTS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticVERTICALALIGNMENTS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
   
   @js.native
   sealed trait military
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mini
     extends semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconSizeProp
        with semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageMod.MessageSizeProp
        with semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentMod.SegmentSizeProp
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
        with semanticDashUiDashReactLib.srcGenericMod.SemanticSIZES
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
        with semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticMod.StatisticSizeProp
   
   @js.native
   sealed trait minus
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `minus circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `minus square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `minus square outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mix
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mixcloud
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mizuni
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mk
@@ -5253,15 +5253,15 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait mobile
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
        with semanticDashUiDashReactLib.distCommonjsCollectionsGridGridColumnMod._GridOnlyProp
        with semanticDashUiDashReactLib.distCommonjsCollectionsGridGridMod._GridReversedProp
   
   @js.native
   sealed trait `mobile alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `mobile banner` extends js.Object
@@ -5275,8 +5275,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait modx
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait moldova
@@ -5288,23 +5288,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait monero
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait money
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `money bill alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `money bill alternate outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mongolia
@@ -5320,13 +5320,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait moon
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `moon outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait morocco
@@ -5334,18 +5334,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait motorcycle
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `mouse pointer`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait move
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `move down` extends js.Object
@@ -5378,8 +5378,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `ms edge`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mt
@@ -5391,13 +5391,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait music
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mute
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait mv
@@ -5433,8 +5433,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait napster
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait nauru
@@ -5465,8 +5465,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait neuter
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `new caledonia`
@@ -5478,8 +5478,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `new pied piper`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `new zealand`
@@ -5487,13 +5487,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait newspaper
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `newspaper outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait nextItem extends js.Object
@@ -5524,13 +5524,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait nine
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `nintendo switch`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait niue
@@ -5546,18 +5546,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait node
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `node js`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `non binary transgender`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `norfolk island`
@@ -5581,8 +5581,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait npm
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait nr
@@ -5590,8 +5590,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait ns8
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait nu
@@ -5599,13 +5599,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `numbered list`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait nutritionix
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait nz
@@ -5613,38 +5613,38 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `object group`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `object group outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `object ungroup`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `object ungroup outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait odnoklassniki
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `odnoklassniki square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait olive
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait om
@@ -5656,68 +5656,68 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait one
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait opencart
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait openid
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait opera
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `optin monster`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait options
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait orange
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait `ordered list`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait osi
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `other gender`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `other gender horizontal`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `other gender vertical`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait outdent
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait overlay extends js.Object
@@ -5728,21 +5728,21 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait page4
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait pageItem extends js.Object
   
   @js.native
   sealed trait pagelines
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `paint brush`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait pakistan
@@ -5758,13 +5758,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait palfed
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait pallet
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait panama
@@ -5775,23 +5775,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `paper plane`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `paper plane outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait paperclip
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait paragraph
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait paraguay
@@ -5799,48 +5799,48 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait paste
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait patreon
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait pause
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pause circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pause circle outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait paw
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait payment
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait paypal
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `paypal card`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait pe
@@ -5848,33 +5848,33 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `pen square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait pencil
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pencil alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pencil square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait percent
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait periscope
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait peru
@@ -5894,8 +5894,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait phabricator
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait philippines
@@ -5903,98 +5903,98 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `phoenix framework`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait phone
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `phone square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `phone volume`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait photo
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait php
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait picture
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pie chart`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pie graph`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pied piper`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pied piper alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pied piper hat`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pied piper pp`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait pills
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait pin
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait pink
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait pinterest
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pinterest p`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pinterest square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pitcairn islands`
@@ -6010,58 +6010,58 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait plane
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait play
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `play circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `play circle outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait playstation
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait plug
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait plus
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `plus cart`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `plus circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `plus square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `plus square outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait pm
@@ -6073,33 +6073,33 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait podcast
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait point
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pointing down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pointing left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pointing right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pointing up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait poland
@@ -6111,28 +6111,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait pound
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `pound sign`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait power
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `power cord`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `power off`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait pr
@@ -6143,23 +6143,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait print
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait privacy
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `product hunt`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait protect
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ps
@@ -6175,31 +6175,31 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait pulse
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
   
   @js.native
   sealed trait purple
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait push extends js.Object
   
   @js.native
   sealed trait pushed
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait puzzle
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `puzzle piece`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait pw
@@ -6211,8 +6211,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait python
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait qa
@@ -6224,81 +6224,81 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait qq
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait qrcode
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait question
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `question circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `question circle outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait quidditch
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait quinscape
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait quora
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `quote left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `quote right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `r circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait radio
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait rain
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait random
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ratio extends js.Object
   
   @js.native
   sealed trait ravelry
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait re
@@ -6306,151 +6306,151 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait react
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait rebel
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait record
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait recycle
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait red
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait reddit
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `reddit alien`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `reddit square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait redo
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `redo alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait redriver
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait refresh
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait registered
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `registered outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait remove
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `remove bookmark`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `remove circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `remove from calendar`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `remove user`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait rendact
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait renren
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait repaint extends js.Object
   
   @js.native
   sealed trait repeat
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait reply
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `reply all`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait replyd
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `resize horizontal`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `resize vertical`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait resolving
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait retweet
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait reunion
@@ -6458,10 +6458,10 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait right
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticFLOATS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticFLOATS
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticFLOATS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticFLOATS
        with semanticDashUiDashReactLib.srcGenericMod.SemanticTEXTALIGNMENTS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
   
   @js.native
   sealed trait `right center` extends js.Object
@@ -6471,8 +6471,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait rmb
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ro
@@ -6480,23 +6480,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait road
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait rocket
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait rocketchat
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait rockrms
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait romania
@@ -6510,8 +6510,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait rouble
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait rs
@@ -6519,13 +6519,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait rss
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `rss square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ru
@@ -6533,28 +6533,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait rub
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ruble
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `ruble sign`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait rupee
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `rupee sign`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait russia
@@ -6570,8 +6570,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait s15
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sa
@@ -6579,8 +6579,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait safari
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `saint helena`
@@ -6620,8 +6620,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait sass
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `saudi arabia`
@@ -6629,13 +6629,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait save
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `save outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sb
@@ -6647,16 +6647,16 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait scale
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `scale down` extends js.Object
   
   @js.native
   sealed trait schlix
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait scotland
@@ -6664,8 +6664,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait scribd
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sd
@@ -6677,43 +6677,43 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait search
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `search minus`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `search plus`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait searchengin
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `selected radio`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sellcast
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sellsy
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait send
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait senegal
@@ -6725,28 +6725,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait server
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait servicestack
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait setting
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait settings
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait seven
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait seychelles
@@ -6762,116 +6762,116 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait shake
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
   
   @js.native
   sealed trait share
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `share alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `share alternate square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `share square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `share square outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait shekel
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `shekel sign`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sheqel
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait shield
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `shield alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ship
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait shipping
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `shipping fast`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait shirtsinbulk
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait shop
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `shopping bag`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `shopping basket`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `shopping cart`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait short extends js.Object
   
   @js.native
   sealed trait shower
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait shuffle
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait shutdown
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait si
@@ -6879,8 +6879,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait sidebar
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sierra leone`
@@ -6888,68 +6888,68 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `sign in`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sign in alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sign language`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sign out`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sign out alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sign-in`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sign-in alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sign-out`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sign-out alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait signal
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait signing
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait signup
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait simplybuilt
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait singapore
@@ -6957,23 +6957,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait sistrix
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sitemap
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait six
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait sixteen
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait sj
@@ -6985,13 +6985,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait skyatlas
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait skype
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait skyscraper extends js.Object
@@ -7002,54 +7002,54 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait slack
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `slack hash`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `slide along` extends js.Object
   
   @js.native
   sealed trait `slide down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `slide left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `slide out` extends js.Object
   
   @js.native
   sealed trait `slide right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `slide up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait sliders
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sliders horizontal`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait slideshare
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait slovakia
@@ -7068,8 +7068,8 @@ object semanticDashUiDashReactLibStrings {
     extends semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconSizeProp
        with semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageMod.MessageSizeProp
        with semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentMod.SegmentSizeProp
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
        with semanticDashUiDashReactLib.srcGenericMod.SemanticSIZES
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
        with semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticMod.StatisticSizeProp
   
   @js.native
@@ -7086,13 +7086,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait smile
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `smile outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sn
@@ -7100,28 +7100,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait snapchat
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `snapchat ghost`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `snapchat square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait snowflake
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `snowflake outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait so
@@ -7129,8 +7129,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait soccer
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `solomon islands`
@@ -7142,98 +7142,98 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait sort
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort alphabet ascending`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort alphabet descending`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort alphabet down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort alphabet up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort amount down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort amount up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort ascending`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort content ascending`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort content descending`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort descending`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort numeric ascending`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort numeric descending`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort numeric down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort numeric up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sort up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sound
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait soundcloud
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `south africa`
@@ -7245,8 +7245,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `space shuttle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait spain
@@ -7254,46 +7254,46 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait speakap
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait spinner
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait spoon
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait spotify
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait spy
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait square
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `square button` extends js.Object
   
   @js.native
   sealed trait `square full`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `square outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sr
@@ -7309,173 +7309,173 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `stack exchange`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `stack overflow`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait star
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `star half`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `star half empty`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `star half full`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `star half outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `star outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait staylinked
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait steam
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `steam square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `steam symbol`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `step backward`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `step forward`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait stethoscope
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sticker mule`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sticky note`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sticky note outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait stop
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `stop circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `stop circle outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait stopwatch
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait strava
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `street view`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait strikethrough
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait stripe
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `stripe card`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `stripe s`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait student
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait studiovinari
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait stumbleupon
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `stumbleupon circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait subscript
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait subway
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sudan
@@ -7483,33 +7483,33 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait suitcase
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sun
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sun outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait superpowers
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait superscript
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait supple
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait suriname
@@ -7533,23 +7533,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `swing down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `swing left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `swing right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `swing up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait switzerland
@@ -7561,13 +7561,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait sync
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `sync alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait syria
@@ -7575,8 +7575,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait syringe
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait sz
@@ -7584,25 +7584,25 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait table
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `table tennis`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tablet
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
        with semanticDashUiDashReactLib.distCommonjsCollectionsGridGridColumnMod._GridOnlyProp
        with semanticDashUiDashReactLib.distCommonjsCollectionsGridGridMod._GridReversedProp
   
   @js.native
   sealed trait `tablet alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `tablet mobile`
@@ -7614,23 +7614,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `tachometer alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tada
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticSTATICTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSTATICTRANSITIONS
   
   @js.native
   sealed trait tag
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tags
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait taiwan
@@ -7642,8 +7642,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait talk
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tanzania
@@ -7651,18 +7651,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait target
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tasks
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait taxi
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tc
@@ -7674,63 +7674,63 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait teal
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait telegram
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `telegram plane`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait teletype
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait television
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ten
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `tencent weibo`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait terminal
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `text cursor`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `text height`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `text telephone`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `text width`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tf
@@ -7743,18 +7743,18 @@ object semanticDashUiDashReactLibStrings {
   @js.native
   sealed trait th
     extends semanticDashUiDashReactLib.distCommonjsElementsFlagFlagMod.FlagNameValues
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
        with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `th large`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `th list`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait thailand
@@ -7762,121 +7762,121 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait theme
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait themeisle
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait thermometer
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `thermometer empty`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `thermometer full`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `thermometer half`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `thermometer quarter`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `thermometer three quarters`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait thin extends js.Object
   
   @js.native
   sealed trait thirteen
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait three
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait `thumb tack`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `thumbs down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `thumbs down outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `thumbs up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `thumbs up outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait thumbtack
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ticket
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `ticket alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait time
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait times
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `times circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `times circle outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `times rectangle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait timorleste
@@ -7884,16 +7884,16 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait tint
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tiny
     extends semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconSizeProp
        with semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageMod.MessageSizeProp
        with semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentMod.SegmentSizeProp
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
        with semanticDashUiDashReactLib.srcGenericMod.SemanticSIZES
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES
        with semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticMod.StatisticSizeProp
   
   @js.native
@@ -7911,8 +7911,8 @@ object semanticDashUiDashReactLibStrings {
   @js.native
   sealed trait tm
     extends semanticDashUiDashReactLib.distCommonjsElementsFlagFlagMod.FlagNameValues
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
        with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tn
@@ -7924,33 +7924,33 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `toggle down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `toggle left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `toggle off`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `toggle on`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `toggle right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `toggle up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait togo
@@ -7966,8 +7966,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait top
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticVERTICALALIGNMENTS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticVERTICALALIGNMENTS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS
   
   @js.native
   sealed trait `top banner` extends js.Object
@@ -7989,83 +7989,83 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait trademark
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait train
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait transgender
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `transgender alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait translate
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait trash
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `trash alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `trash alternate outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait travel
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait treatment
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tree
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait trello
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `triangle down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `triangle left`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `triangle right`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `triangle up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait trinidad
@@ -8073,23 +8073,23 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait tripadvisor
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait trophy
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait truck
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `try`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tt
@@ -8097,18 +8097,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait tty
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tumblr
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `tumblr square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tunisia
@@ -8129,8 +8129,8 @@ object semanticDashUiDashReactLibStrings {
   @js.native
   sealed trait tv
     extends semanticDashUiDashReactLib.distCommonjsElementsFlagFlagMod.FlagNameValues
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
        with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tw
@@ -8138,33 +8138,33 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait twelve
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait twitch
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait twitter
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `twitter square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait two
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticWIDTHSSTRING
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHSSTRING
   
   @js.native
   sealed trait typo3
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait tz
@@ -8180,8 +8180,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait uber
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ug
@@ -8193,8 +8193,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait uikit
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait uk
@@ -8210,36 +8210,36 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait umbrella
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait uncover extends js.Object
   
   @js.native
   sealed trait underline
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait undo
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `undo alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait unhide
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait uniregistry
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `united arab emirates`
@@ -8255,56 +8255,56 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `universal access`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait university
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait unlink
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait unlinkify
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait unlock
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `unlock alternate`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait unmute
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `unordered list`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait untappd
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait up extends js.Object
   
   @js.native
   sealed trait upload
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait uruguay
@@ -8324,98 +8324,98 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait usb
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait usd
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait user
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `user cancel`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `user circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `user circle outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `user close`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `user delete`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `user doctor`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `user md`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `user outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `user plus`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `user secret`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `user times`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `user x`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait users
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ussunnah
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `utensil spoon`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait utensils
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait uy
@@ -8435,8 +8435,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait vaadin
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait value extends js.Object
@@ -8455,8 +8455,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait vcard
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ve
@@ -8468,18 +8468,18 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait venus
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `venus double`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `venus mars`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait vertical extends js.Object
@@ -8489,8 +8489,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait `vertical flip`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
   
   @js.native
   sealed trait `vertical rectangle` extends js.Object
@@ -8523,38 +8523,38 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait viacoin
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait viadeo
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `viadeo square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait viber
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait video
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `video camera`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `video play`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait vietnam
@@ -8562,33 +8562,33 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait vimeo
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `vimeo square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `vimeo v`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait vine
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait violet
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait vk
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait vn
@@ -8596,33 +8596,33 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait vnv
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `volleyball ball`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `volume control phone`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `volume down`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `volume off`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `volume up`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait vu
@@ -8630,13 +8630,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait vuejs
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait wait
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait wales
@@ -8648,43 +8648,43 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait warehouse
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait warning
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `warning circle`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `warning sign`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait wechat
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait weibo
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait weight
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait weixin
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `western sahara`
@@ -8696,28 +8696,28 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait whatsapp
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `whatsapp square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait wheelchair
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait whmcs
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `wi-fi`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait wide extends js.Object
@@ -8731,138 +8731,138 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait wifi
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `wikipedia w`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `window close`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `window close outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `window maximize`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `window maximize outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `window minimize`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `window minimize outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `window restore`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `window restore outline`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait windows
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait winner
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait wizard
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait woman
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait won
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `won sign`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait wordpress
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `wordpress beginner`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `wordpress forms`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `wordpress simple`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait world
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait wpbeginner
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait wpexplorer
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait wpforms
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait wrench
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait write
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `write square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ws
@@ -8870,43 +8870,43 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait x
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait xbox
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait xing
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `xing square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `y combinator`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait yahoo
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait yandex
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `yandex international`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait ye
@@ -8914,13 +8914,13 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait yellow
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticCOLORS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS
   
   @js.native
   sealed trait yelp
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait yemen
@@ -8928,33 +8928,33 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait yen
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `yen sign`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait yoast
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait youtube
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `youtube play`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `youtube square`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait yt
@@ -8974,8 +8974,8 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait zip
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait zm
@@ -8983,30 +8983,30 @@ object semanticDashUiDashReactLibStrings {
   
   @js.native
   sealed trait zoom
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
-       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticDIRECTIONALTRANSITIONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticDIRECTIONALTRANSITIONS
        with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `zoom in`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `zoom out`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `zoom-in`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait `zoom-out`
-    extends semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
-       with semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+    extends semanticDashUiDashReactLib.srcGenericMod.SemanticICONS
+       with semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticICONS
   
   @js.native
   sealed trait zw

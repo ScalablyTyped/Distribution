@@ -67,6 +67,10 @@ trait XMLHttpRequest
 
 @JSGlobal("XMLHttpRequest")
 @js.native
+class XMLHttpRequestCls () extends XMLHttpRequest
+
+@JSGlobal("XMLHttpRequest")
+@js.native
 object XMLHttpRequest
   extends org.scalablytyped.runtime.Instantiable0[XMLHttpRequest] {
   val DONE: scala.Double = js.native

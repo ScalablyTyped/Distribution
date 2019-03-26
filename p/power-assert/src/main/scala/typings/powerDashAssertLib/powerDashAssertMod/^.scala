@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var doesNotThrow: powerDashAssertLib.Anon_Block = js.native
+  /* Extracted nested Instantiables into classes in strictNs */
   val strict: (js.Function2[/* value */ js.Any, /* message */ js.UndefOr[java.lang.String], scala.Unit]) with powerDashAssertLib.Anon_ActualAcutal = js.native
   var throws: powerDashAssertLib.Anon_Block = js.native
   def apply(value: js.Any): scala.Unit = js.native

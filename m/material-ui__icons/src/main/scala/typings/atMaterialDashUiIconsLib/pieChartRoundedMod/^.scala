@@ -1,0 +1,13 @@
+package typings
+package atMaterialDashUiIconsLib.pieChartRoundedMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/icons/PieChartRounded", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps] = js.native
+}
+

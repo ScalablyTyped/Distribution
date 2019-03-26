@@ -5,5 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - ExportAllDeclaration
+  - ExportDefaultDeclaration
+  - ExportNamedDeclaration
+*/
 trait ExportDeclaration extends _Node
 

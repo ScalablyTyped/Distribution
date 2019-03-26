@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("mjml-react", "utils")
 @js.native
 object utilsNs extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - mjmlDashReactLib.mjmlDashReactLibStrings.left
+    - mjmlDashReactLib.mjmlDashReactLibStrings.right
+    - mjmlDashReactLib.mjmlDashReactLibStrings.center
+    - mjmlDashReactLib.mjmlDashReactLibStrings.justify
+    - mjmlDashReactLib.mjmlDashReactLibStrings.inherit
+  */
   trait TextAlignment extends js.Object
   
   def addQueryParams(url: java.lang.String, params: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String = js.native

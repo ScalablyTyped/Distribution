@@ -93,3 +93,7 @@ trait LayersMixin extends js.Object {
   def reorder(layer: Layer, index: scala.Double): Layer = js.native
 }
 
+@JSGlobal("__esri.LayersMixin")
+@js.native
+class LayersMixinCls () extends LayersMixin
+

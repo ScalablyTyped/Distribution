@@ -30,13 +30,13 @@ trait Permissions extends js.Object {
     * @see  {@link https://developer.mozilla.org/en-US/docs/Web/API/Permissions/query}
     */
   def query(
-    permissionDescriptor: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.accelerometer] | (PermissionDescriptor[
-      navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`accessibility-events`
-    ]) | (PermissionDescriptor[
-      navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`ambient-light-sensor`
-    ]) | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`background-sync`] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.camera] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`clipboard-read`] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`clipboard-write`] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.geolocation] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.gyroscope] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.magnetometer] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.microphone] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.notifications] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`payment-handler`] | (PermissionDescriptor[
+    permissionDescriptor: (PermissionDescriptor[
       navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`persistent-storage`
-    ]) | MidiPermissionDescriptor | PushPermissionDescriptor
+    ]) | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`clipboard-write`] | (PermissionDescriptor[
+      navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`accessibility-events`
+    ]) | PushPermissionDescriptor | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.accelerometer] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.camera] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`background-sync`] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.microphone] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.magnetometer] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`payment-handler`] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.geolocation] | (PermissionDescriptor[
+      navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`ambient-light-sensor`
+    ]) | MidiPermissionDescriptor | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`clipboard-read`] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.notifications] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.gyroscope]
   ): js.Promise[PermissionStatus] = js.native
   def revoke(permissionDescriptor: MidiPermissionDescriptor): js.Promise[PermissionStatus] = js.native
   def revoke(permissionDescriptor: PushPermissionDescriptor): js.Promise[PermissionStatus] = js.native

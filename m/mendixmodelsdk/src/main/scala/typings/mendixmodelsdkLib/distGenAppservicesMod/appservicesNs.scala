@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object appservicesNs extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceAction because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsConsumedAppService, name, parameters, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceAction because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsConsumedAppService, name, parameters */ @js.native
   class AppServiceAction protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -38,7 +38,7 @@ object appservicesNs extends js.Object {
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceActionParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsAppServiceAction, name, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceActionParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsAppServiceAction, name */ @js.native
   class AppServiceActionParameter protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -68,7 +68,7 @@ object appservicesNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/consumed-app-services relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IConsumedAppService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined actions, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IConsumedAppService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined actions */ @js.native
   class ConsumedAppService protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

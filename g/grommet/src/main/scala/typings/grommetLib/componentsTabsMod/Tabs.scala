@@ -1,0 +1,28 @@
+package typings
+package grommetLib.componentsTabsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("grommet/components/Tabs", "Tabs")
+@js.native
+class Tabs protected ()
+  extends reactLib.reactMod.ReactNs.Component[
+      TabsProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
+        reactLib.HTMLDivElement
+      ]), 
+      reactLib.reactMod.ReactNs.ComponentState, 
+      js.Any
+    ] {
+  def this(props: TabsProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
+      reactLib.HTMLDivElement
+    ])) = this()
+  def this(props: TabsProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
+      reactLib.HTMLDivElement
+    ]), context: js.Any) = this()
+}
+

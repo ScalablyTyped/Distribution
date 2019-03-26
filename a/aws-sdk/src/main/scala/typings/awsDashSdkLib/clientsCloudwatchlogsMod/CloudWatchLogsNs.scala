@@ -1930,6 +1930,11 @@ object CloudWatchLogsNs extends js.Object {
   type DestinationArn = java.lang.String
   type DestinationName = java.lang.String
   type Destinations = js.Array[Destination]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Random
+    - awsDashSdkLib.awsDashSdkLibStrings.ByLogStream
+    - java.lang.String
+  */
   type Distribution = _Distribution | java.lang.String
   type EventId = java.lang.String
   type EventMessage = java.lang.String
@@ -1939,6 +1944,15 @@ object CloudWatchLogsNs extends js.Object {
   type ExportDestinationPrefix = java.lang.String
   type ExportTaskId = java.lang.String
   type ExportTaskName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CANCELLED
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETED
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING_CANCEL
+    - awsDashSdkLib.awsDashSdkLibStrings.RUNNING
+    - java.lang.String
+  */
   type ExportTaskStatusCode = _ExportTaskStatusCode | java.lang.String
   type ExportTaskStatusMessage = java.lang.String
   type ExportTasks = js.Array[ExportTask]
@@ -1966,6 +1980,11 @@ object CloudWatchLogsNs extends js.Object {
   type MetricTransformations = js.Array[MetricTransformation]
   type MetricValue = java.lang.String
   type NextToken = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.LogStreamName
+    - awsDashSdkLib.awsDashSdkLibStrings.LastEventTime
+    - java.lang.String
+  */
   type OrderBy = _OrderBy | java.lang.String
   type OutputLogEvents = js.Array[OutputLogEvent]
   type Percentage = scala.Double
@@ -1974,6 +1993,14 @@ object CloudWatchLogsNs extends js.Object {
   type QueryId = java.lang.String
   type QueryInfoList = js.Array[QueryInfo]
   type QueryResults = js.Array[ResultRows]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Scheduled
+    - awsDashSdkLib.awsDashSdkLibStrings.Running
+    - awsDashSdkLib.awsDashSdkLibStrings.Complete
+    - awsDashSdkLib.awsDashSdkLibStrings.Failed
+    - awsDashSdkLib.awsDashSdkLibStrings.Cancelled
+    - java.lang.String
+  */
   type QueryStatus = _QueryStatus | java.lang.String
   type QueryString = java.lang.String
   type ResourcePolicies = js.Array[ResourcePolicy]
@@ -1994,6 +2021,11 @@ object CloudWatchLogsNs extends js.Object {
   type Timestamp = scala.Double
   type Token = java.lang.String
   type Value = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2014-03-28`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

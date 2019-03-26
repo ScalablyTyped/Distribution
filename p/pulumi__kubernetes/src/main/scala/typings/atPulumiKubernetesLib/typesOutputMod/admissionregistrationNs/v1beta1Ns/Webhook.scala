@@ -10,6 +10,15 @@ import scala.scalajs.js.annotation._
   */
 trait Webhook extends js.Object {
   /**
+    * AdmissionReviewVersions is an ordered list of preferred `AdmissionReview` versions the
+    * Webhook expects. API server will try to use first version in the list which it supports. If
+    * none of the versions specified in this list supported by API server, validation will fail
+    * for this object. If a persisted webhook configuration specifies allowed versions and does
+    * not include any versions known to the API Server, calls to the webhook will fail and be
+    * subject to the failure policy. Default to `['v1beta1']`.
+    */
+  val admissionReviewVersions: js.Array[java.lang.String]
+  /**
     * ClientConfig defines how to communicate with the hook. Required
     */
   val clientConfig: WebhookClientConfig
@@ -83,19 +92,27 @@ trait Webhook extends js.Object {
     * Unknown.
     */
   val sideEffects: java.lang.String
+  /**
+    * TimeoutSeconds specifies the timeout for this webhook. After the timeout passes, the
+    * webhook call will be ignored or the API call will fail based on the failure policy. The
+    * timeout value must be between 1 and 30 seconds. Default to 30 seconds.
+    */
+  val timeoutSeconds: scala.Double
 }
 
 object Webhook {
   @scala.inline
   def apply(
+    admissionReviewVersions: js.Array[java.lang.String],
     clientConfig: WebhookClientConfig,
     failurePolicy: java.lang.String,
     name: java.lang.String,
     namespaceSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
     rules: js.Array[RuleWithOperations],
-    sideEffects: java.lang.String
+    sideEffects: java.lang.String,
+    timeoutSeconds: scala.Double
   ): Webhook = {
-    val __obj = js.Dynamic.literal(clientConfig = clientConfig, failurePolicy = failurePolicy, name = name, namespaceSelector = namespaceSelector, rules = rules, sideEffects = sideEffects)
+    val __obj = js.Dynamic.literal(admissionReviewVersions = admissionReviewVersions, clientConfig = clientConfig, failurePolicy = failurePolicy, name = name, namespaceSelector = namespaceSelector, rules = rules, sideEffects = sideEffects, timeoutSeconds = timeoutSeconds)
   
     __obj.asInstanceOf[Webhook]
   }

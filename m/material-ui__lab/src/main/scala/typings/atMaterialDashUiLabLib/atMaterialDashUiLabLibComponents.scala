@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation._
 
 object atMaterialDashUiLabLibComponents {
   @scala.inline
-  def Breadcrumbs: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsProps] = atMaterialDashUiLabLib.breadcrumbsMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsProps]]
+  def Breadcrumbs: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsProps] = js.constructorOf[atMaterialDashUiLabLib.breadcrumbsMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsProps]]
   @scala.inline
-  def Slider: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.sliderSliderMod.SliderProps] = atMaterialDashUiLabLib.sliderMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.sliderSliderMod.SliderProps]]
+  def Slider: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.sliderSliderMod.SliderProps] = js.constructorOf[atMaterialDashUiLabLib.sliderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.sliderSliderMod.SliderProps]]
   @scala.inline
-  def SpeedDial: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialProps] = atMaterialDashUiLabLib.speedDialMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialProps]]
+  def SpeedDial: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialProps] = js.constructorOf[atMaterialDashUiLabLib.speedDialMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.speedDialSpeedDialMod.SpeedDialProps]]
   @scala.inline
-  def SpeedDialAction: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionProps] = atMaterialDashUiLabLib.speedDialActionMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionProps]]
+  def SpeedDialAction: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionProps] = js.constructorOf[atMaterialDashUiLabLib.speedDialActionMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.speedDialActionSpeedDialActionMod.SpeedDialActionProps]]
   @scala.inline
-  def SpeedDialIcon: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconProps] = atMaterialDashUiLabLib.speedDialIconMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconProps]]
+  def SpeedDialIcon: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconProps] = js.constructorOf[atMaterialDashUiLabLib.speedDialIconMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.speedDialIconSpeedDialIconMod.SpeedDialIconProps]]
   @scala.inline
-  def ToggleButton: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.toggleButtonToggleButtonMod.ToggleButtonProps] = atMaterialDashUiLabLib.toggleButtonMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.toggleButtonToggleButtonMod.ToggleButtonProps]]
+  def ToggleButton: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.toggleButtonToggleButtonMod.ToggleButtonProps] = js.constructorOf[atMaterialDashUiLabLib.toggleButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiLabLib.toggleButtonToggleButtonMod.ToggleButtonProps]]
   @scala.inline
   def ToggleButtonGroup: reactLib.reactMod.ReactNs.ComponentType[
     atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps
-  ] = atMaterialDashUiLabLib.toggleButtonGroupMod.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atMaterialDashUiLabLib.toggleButtonGroupMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atMaterialDashUiLabLib.toggleButtonGroupToggleButtonGroupMod.ToggleButtonGroupProps]]
   @scala.inline
   def BreadcrumbsProps: atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsProps.type = atMaterialDashUiLabLib.breadcrumbsBreadcrumbsMod.BreadcrumbsProps

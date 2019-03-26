@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Paper.PaperProps, 'classes' | 'onChange'> ]: @material-ui/core.@material-ui/core/Paper.PaperProps[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Paper.PaperProps, @material-ui/core.@material-ui/core/ExpansionPanel/ExpansionPanel.ExpansionPanelClassKey, 'onChange'>) */ trait ExpansionPanelProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ExpansionPanelClassKey] {
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/Paper/Paper.PaperProps, 'classes' | 'onChange'> ]: @material-ui/core.@material-ui/core/Paper/Paper.PaperProps[P]} */ trait ExpansionPanelProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ExpansionPanelClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var CollapseProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.collapseCollapseMod.CollapseProps]] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultExpanded: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var expanded: js.UndefOr[scala.Boolean] = js.undefined
@@ -21,7 +20,6 @@ import scala.scalajs.js.annotation._
       scala.Unit
     ]
   ] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
 object ExpansionPanelProps {

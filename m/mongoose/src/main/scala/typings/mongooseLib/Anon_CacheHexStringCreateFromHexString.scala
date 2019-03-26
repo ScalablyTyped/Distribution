@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_CacheHexStringCreateFromHexString
-  extends org.scalablytyped.runtime.Instantiable0[mongodbLib.mongodbMod.ObjectId] {
+  extends org.scalablytyped.runtime.Instantiable0[mongodbLib.mongodbMod.ObjectID] {
   /** If true cache the hex string representation of ObjectId */
   var cacheHexString: js.UndefOr[scala.Boolean] = js.native
   /**

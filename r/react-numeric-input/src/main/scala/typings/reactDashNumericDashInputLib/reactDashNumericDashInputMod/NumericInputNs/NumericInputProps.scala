@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.InputHTMLAttributes<std.HTMLInputElement>, 'min' | 'max' | 'step' | 'onChange' | 'defaultValue' | 'onInvalid' | 'style'> ]: react.react.InputHTMLAttributes<std.HTMLInputElement>[P]} */ trait NumericInputProps extends js.Object {
+- Dropped {[ P in std.Exclude<keyof react.react.React.InputHTMLAttributes<std.HTMLInputElement>, 'min' | 'max' | 'step' | 'onChange' | 'defaultValue' | 'onInvalid' | 'style'> ]: react.react.React.InputHTMLAttributes<std.HTMLInputElement>[P]} */ trait NumericInputProps extends js.Object {
   var addLabelText: js.UndefOr[java.lang.String] = js.undefined
   var componentClass: js.UndefOr[java.lang.String] = js.undefined
   var defaultValue: js.UndefOr[scala.Double | java.lang.String] = js.undefined

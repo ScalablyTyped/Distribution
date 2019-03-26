@@ -8,6 +8,23 @@ package object reactDashNativeLib {
   type AccessibilityChangeEvent = scala.Boolean
   type AccessibilityEvent = AccessibilityChangeEvent | AccessibilityAnnoucementFinishedEvent
   type BackgroundPropType = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify RippleBackgroundPropType */ js.Any
+  /* Rewritten from type alias, can be one of: 
+    - Blob
+    - stdLib.Int8Array
+    - stdLib.Int16Array
+    - stdLib.Int32Array
+    - stdLib.Uint8Array
+    - stdLib.Uint16Array
+    - stdLib.Uint32Array
+    - stdLib.Uint8ClampedArray
+    - stdLib.Float32Array
+    - stdLib.Float64Array
+    - stdLib.DataView
+    - stdLib.ArrayBuffer
+    - FormData
+    - java.lang.String
+    - scala.Null
+  */
   type BodyInit_ = _BodyInit_ | stdLib.Int8Array | stdLib.Int16Array | stdLib.Int32Array | stdLib.Uint8Array | stdLib.Uint16Array | stdLib.Uint32Array | stdLib.Uint8ClampedArray | stdLib.Float32Array | stdLib.Float64Array | stdLib.DataView | stdLib.ArrayBuffer | java.lang.String | scala.Null
   type Constructor[T] = org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]
   type ErrorHandlerCallback = js.Function2[/* error */ js.Any, /* isFatal */ js.UndefOr[scala.Boolean], scala.Unit]

@@ -266,13 +266,13 @@ object firefoxDashWebextDashBrowserLibStrings {
   
   @js.native
   sealed trait auto_bookmark
-    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
-       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+    extends firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
   
   @js.native
   sealed trait auto_subframe
-    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
-       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+    extends firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
   
   @js.native
   sealed trait auto_toplevel
@@ -601,8 +601,8 @@ object firefoxDashWebextDashBrowserLibStrings {
   
   @js.native
   sealed trait form_submit
-    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
-       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+    extends firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
   
   @js.native
   sealed trait forward_back
@@ -627,8 +627,8 @@ object firefoxDashWebextDashBrowserLibStrings {
   
   @js.native
   sealed trait generated
-    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
-       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+    extends firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
   
   @js.native
   sealed trait geo
@@ -749,14 +749,14 @@ object firefoxDashWebextDashBrowserLibStrings {
   
   @js.native
   sealed trait keyword
-    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
-       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+    extends firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
        with firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestChromeSettingsOverridesSearchProviderParamsPurpose
   
   @js.native
   sealed trait keyword_generated
-    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
-       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+    extends firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
   
   @js.native
   sealed trait launcher
@@ -791,8 +791,8 @@ object firefoxDashWebextDashBrowserLibStrings {
   sealed trait link
     extends firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType
        with firefoxDashWebextDashBrowserLib.browserNs.menusNs.ContextType
-       with firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
        with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
   
   @js.native
   sealed trait linux
@@ -840,8 +840,8 @@ object firefoxDashWebextDashBrowserLibStrings {
   
   @js.native
   sealed trait manual_subframe
-    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
-       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+    extends firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
   
   @js.native
   sealed trait `match`
@@ -1142,8 +1142,8 @@ object firefoxDashWebextDashBrowserLibStrings {
   
   @js.native
   sealed trait reload
-    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
-       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+    extends firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
   
   @js.native
   sealed trait repeat
@@ -1389,8 +1389,8 @@ object firefoxDashWebextDashBrowserLibStrings {
   
   @js.native
   sealed trait typed
-    extends firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
-       with firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+    extends firefoxDashWebextDashBrowserLib.browserNs.historyNs.TransitionType
+       with firefoxDashWebextDashBrowserLib.browserNs.webNavigationNs.TransitionType
   
   @js.native
   sealed trait uncommon

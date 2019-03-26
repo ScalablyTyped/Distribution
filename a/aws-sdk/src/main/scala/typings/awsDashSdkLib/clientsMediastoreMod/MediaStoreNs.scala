@@ -619,6 +619,12 @@ object MediaStoreNs extends js.Object {
   type ContainerListLimit = scala.Double
   type ContainerName = java.lang.String
   type ContainerPolicy = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATING
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETING
+    - java.lang.String
+  */
   type ContainerStatus = _ContainerStatus | java.lang.String
   type CorsPolicy = js.Array[CorsRule]
   type Endpoint = java.lang.String
@@ -626,10 +632,22 @@ object MediaStoreNs extends js.Object {
   type Header = java.lang.String
   type LifecyclePolicy = java.lang.String
   type MaxAgeSeconds = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PUT
+    - awsDashSdkLib.awsDashSdkLibStrings.GET
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETE
+    - awsDashSdkLib.awsDashSdkLibStrings.HEAD
+    - java.lang.String
+  */
   type MethodName = _MethodName | java.lang.String
   type Origin = java.lang.String
   type PaginationToken = java.lang.String
   type TimeStamp = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-09-01`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

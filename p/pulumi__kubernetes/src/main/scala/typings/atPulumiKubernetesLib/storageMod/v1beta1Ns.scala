@@ -9,6 +9,66 @@ import scala.scalajs.js.annotation._
 @js.native
 object v1beta1Ns extends js.Object {
   @js.native
+  class CSIDriver protected ()
+    extends atPulumiKubernetesLib.storageV1beta1Mod.CSIDriver {
+    /**
+      * Create a storage.v1beta1.CSIDriver resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: java.lang.String) = this()
+    def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.CSIDriver) = this()
+    def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.CSIDriver, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  }
+  
+  @js.native
+  class CSIDriverList protected ()
+    extends atPulumiKubernetesLib.storageV1beta1Mod.CSIDriverList {
+    /**
+      * Create a storage.v1beta1.CSIDriverList resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: java.lang.String) = this()
+    def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.CSIDriverList) = this()
+    def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.CSIDriverList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  }
+  
+  @js.native
+  class CSINode protected ()
+    extends atPulumiKubernetesLib.storageV1beta1Mod.CSINode {
+    /**
+      * Create a storage.v1beta1.CSINode resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: java.lang.String) = this()
+    def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.CSINode) = this()
+    def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.CSINode, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  }
+  
+  @js.native
+  class CSINodeList protected ()
+    extends atPulumiKubernetesLib.storageV1beta1Mod.CSINodeList {
+    /**
+      * Create a storage.v1beta1.CSINodeList resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: java.lang.String) = this()
+    def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.CSINodeList) = this()
+    def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.CSINodeList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  }
+  
+  @js.native
   class StorageClass protected ()
     extends atPulumiKubernetesLib.storageV1beta1Mod.StorageClass {
     /**
@@ -66,6 +126,98 @@ object v1beta1Ns extends js.Object {
     def this(name: java.lang.String) = this()
     def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.VolumeAttachmentList) = this()
     def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.VolumeAttachmentList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  }
+  
+  /* static members */
+  @js.native
+  object CSIDriver extends js.Object {
+    /**
+      * Get the state of an existing `CSIDriver` resource, as identified by `id`.
+      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
+      * Kubernetes convention) the ID becomes default/<name>.
+      *
+      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
+      *
+      * @param name _Unique_ name used to register this resource with Pulumi.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
+      *  <namespace>/<name> or <name>.
+      * @param opts Uniquely specifies a CustomResource to select.
+      */
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1beta1CSIDriverMod.CSIDriver = js.native
+    def get(
+      name: java.lang.String,
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+    ): atPulumiKubernetesLib.storageV1beta1CSIDriverMod.CSIDriver = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object CSIDriverList extends js.Object {
+    /**
+      * Get the state of an existing `CSIDriverList` resource, as identified by `id`.
+      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
+      * Kubernetes convention) the ID becomes default/<name>.
+      *
+      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
+      *
+      * @param name _Unique_ name used to register this resource with Pulumi.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
+      *  <namespace>/<name> or <name>.
+      * @param opts Uniquely specifies a CustomResource to select.
+      */
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1beta1CSIDriverListMod.CSIDriverList = js.native
+    def get(
+      name: java.lang.String,
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+    ): atPulumiKubernetesLib.storageV1beta1CSIDriverListMod.CSIDriverList = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object CSINode extends js.Object {
+    /**
+      * Get the state of an existing `CSINode` resource, as identified by `id`.
+      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
+      * Kubernetes convention) the ID becomes default/<name>.
+      *
+      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
+      *
+      * @param name _Unique_ name used to register this resource with Pulumi.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
+      *  <namespace>/<name> or <name>.
+      * @param opts Uniquely specifies a CustomResource to select.
+      */
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1beta1CSINodeMod.CSINode = js.native
+    def get(
+      name: java.lang.String,
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+    ): atPulumiKubernetesLib.storageV1beta1CSINodeMod.CSINode = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object CSINodeList extends js.Object {
+    /**
+      * Get the state of an existing `CSINodeList` resource, as identified by `id`.
+      * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
+      * Kubernetes convention) the ID becomes default/<name>.
+      *
+      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
+      *
+      * @param name _Unique_ name used to register this resource with Pulumi.
+      * @param id An ID for the Kubernetes resource to retrieve. Takes the form
+      *  <namespace>/<name> or <name>.
+      * @param opts Uniquely specifies a CustomResource to select.
+      */
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.storageV1beta1CSINodeListMod.CSINodeList = js.native
+    def get(
+      name: java.lang.String,
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+    ): atPulumiKubernetesLib.storageV1beta1CSINodeListMod.CSINodeList = js.native
   }
   
   /* static members */

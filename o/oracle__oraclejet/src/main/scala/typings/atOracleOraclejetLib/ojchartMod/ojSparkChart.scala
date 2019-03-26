@@ -52,7 +52,10 @@ trait ojSparkChart[K, D]
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
-  var onAreaSvgStyleChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onAreaSvgStyleChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onAsChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
@@ -125,7 +128,10 @@ trait ojSparkChart[K, D]
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
-  var onSvgStyleChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onSvgStyleChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onTooltipChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_ContextRenderer], 
     _
@@ -380,7 +386,7 @@ trait ojSparkChart[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.areaSvgStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -389,7 +395,7 @@ trait ojSparkChart[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.areaSvgStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -627,7 +633,7 @@ trait ojSparkChart[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -636,7 +642,7 @@ trait ojSparkChart[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -672,7 +678,7 @@ trait ojSparkChart[K, D]
   @JSName("getProperty")
   def getProperty_areaSvgClassName(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.areaSvgClassName): java.lang.String = js.native
   @JSName("getProperty")
-  def getProperty_areaSvgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.areaSvgStyle): js.Any = js.native
+  def getProperty_areaSvgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.areaSvgStyle): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_as(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.as): java.lang.String = js.native
   @JSName("getProperty")
@@ -706,7 +712,7 @@ trait ojSparkChart[K, D]
   @JSName("getProperty")
   def getProperty_svgClassName(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgClassName): java.lang.String = js.native
   @JSName("getProperty")
-  def getProperty_svgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyle): js.Any = js.native
+  def getProperty_svgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyle): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_tooltip(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.tooltip): atOracleOraclejetLib.Anon_ContextRenderer = js.native
   @JSName("getProperty")

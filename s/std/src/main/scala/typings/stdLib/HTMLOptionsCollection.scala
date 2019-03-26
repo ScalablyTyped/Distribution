@@ -35,6 +35,29 @@ trait HTMLOptionsCollection extends HTMLCollectionOf[HTMLOptionElement] {
 
 @JSGlobal("HTMLOptionsCollection")
 @js.native
+class HTMLOptionsCollectionCls () extends HTMLOptionsCollection {
+  /* CompleteClass */
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  override var iterator: js.Function0[IterableIterator[Element]] = js.native
+  /* CompleteClass */
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  override var iterator_HTMLCollectionOf: js.Function0[IterableIterator[HTMLOptionElement]] = js.native
+  /**
+    * Sets or retrieves the number of objects in a collection.
+    */
+  /* CompleteClass */
+  override val length: scala.Double = js.native
+  /**
+    * Retrieves an object from various collections.
+    */
+  /* CompleteClass */
+  override def item(index: scala.Double): Element | scala.Null = js.native
+  /* CompleteClass */
+  override def namedItem(name: java.lang.String): HTMLOptionElement | scala.Null = js.native
+}
+
+@JSGlobal("HTMLOptionsCollection")
+@js.native
 object HTMLOptionsCollection
   extends org.scalablytyped.runtime.Instantiable0[HTMLOptionsCollection]
 

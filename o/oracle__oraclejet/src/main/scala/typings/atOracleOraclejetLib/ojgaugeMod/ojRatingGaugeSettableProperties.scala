@@ -17,7 +17,7 @@ trait ojRatingGaugeSettableProperties extends dvtBaseGaugeSettableProperties {
   var selectedState: atOracleOraclejetLib.Anon_BorderColorCircle
   var step: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0DOT5` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`1`
   var thresholds: js.Array[atOracleOraclejetLib.ojgaugeMod.ojRatingGaugeNs.Threshold]
-  var tooltip: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_718918166
+  var tooltip: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288
   val transientValue: scala.Double | scala.Null
   var unselectedState: atOracleOraclejetLib.Anon_BorderColorCircle
   var value: scala.Double | scala.Null
@@ -38,7 +38,7 @@ object ojRatingGaugeSettableProperties {
     selectedState: atOracleOraclejetLib.Anon_BorderColorCircle,
     step: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0DOT5` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`1`,
     thresholds: js.Array[atOracleOraclejetLib.ojgaugeMod.ojRatingGaugeNs.Threshold],
-    tooltip: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_718918166,
+    tooltip: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288,
     trackResize: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
     translations: atOracleOraclejetLib.Anon_ComponentNameLabelAndValue,
     unselectedState: atOracleOraclejetLib.Anon_BorderColorCircle,

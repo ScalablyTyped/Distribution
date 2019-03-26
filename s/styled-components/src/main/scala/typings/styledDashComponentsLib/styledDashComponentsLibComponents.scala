@@ -14,7 +14,7 @@ object styledDashComponentsLibComponents {
       AnyIfEmpty[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]], 
       AnyIfEmpty[AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]]
     ]
-  ] = styledDashComponentsLib.macroMod.^.ThemeProvider.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[styledDashComponentsLib.macroMod.ThemeProvider].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   styledDashComponentsLib.styledDashComponentsMod.ThemeProviderProps[
     styledDashComponentsLib.AnyIfEmpty[
       styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]

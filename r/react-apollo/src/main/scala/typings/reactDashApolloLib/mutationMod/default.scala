@@ -15,7 +15,7 @@ class default[TData, TVariables] protected () extends Mutation[TData, TVariables
 @JSImport("react-apollo/Mutation", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var contextTypes: reactDashApolloLib.Anon_ClientComponentName = js.native
+  var contextTypes: reactDashApolloLib.Anon_ClientOperationsObject = js.native
   var propTypes: reactDashApolloLib.Anon_Args = js.native
 }
 

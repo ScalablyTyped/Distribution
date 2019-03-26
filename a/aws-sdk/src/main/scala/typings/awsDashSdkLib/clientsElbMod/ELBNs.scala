@@ -1768,6 +1768,11 @@ object ELBNs extends js.Object {
   type TagValue = java.lang.String
   type UnhealthyThreshold = scala.Double
   type VPCId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2012-06-01`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

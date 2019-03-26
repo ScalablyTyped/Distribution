@@ -174,6 +174,10 @@ object tlsNs extends js.Object {
     var send: scala.Boolean
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - nodeDashForgeLib.nodeDashForgeLibNumbers.`true`
+    - nodeDashForgeLib.Anon_Alert
+  */
   trait Verified extends js.Object
   
   val MaxFragment: scala.Double = js.native

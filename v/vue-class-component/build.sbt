@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "vue-class-component"
-version := "7.0.2-c48178"
+version := "7.0.2-00cad4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "vue" % "2.6.10-842fa1")
+  "org.scalablytyped" %%% "std" % "3.3-14e863",
+  "org.scalablytyped" %%% "vue" % "2.6.10-722360")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

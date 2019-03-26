@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.RequestHandler = js.native
-  def apply(options: Options): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.RequestHandler = js.native
+  def apply(
+    options: connectDashHistoryDashApiDashFallbackLib.connectDashHistoryDashApiDashFallbackMod.historyApiFallbackNs.Options
+  ): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.RequestHandler = js.native
 }
 

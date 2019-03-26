@@ -6,15 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps, 'classes' | 'onChange' | 'action' | 'component'> ]: @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps, @material-ui/core.@material-ui/core/Tabs/Tabs.TabsClassKey, 'onChange' | 'action' | 'component'>) */ trait TabsProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TabsClassKey] {
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps, 'classes' | 'onChange' | 'action' | 'component'> ]: @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps[P]} */ trait TabsProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TabsClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var ScrollButtonComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var TabIndicatorProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps]] = js.undefined
   var action: js.UndefOr[js.Function1[/* actions */ TabsActions, scala.Unit]] = js.undefined
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[TabsProps]] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var indicatorColor: js.UndefOr[
@@ -31,7 +30,6 @@ import scala.scalajs.js.annotation._
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.on | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.off
   ] = js.undefined
   var scrollable: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var textColor: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inherit | java.lang.String
   ] = js.undefined

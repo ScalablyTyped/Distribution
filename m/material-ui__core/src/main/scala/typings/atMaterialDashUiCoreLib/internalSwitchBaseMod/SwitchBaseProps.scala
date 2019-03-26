@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/IconButton.IconButtonProps, 'classes' | 'onChange' | 'value'> ]: @material-ui/core.@material-ui/core/IconButton.IconButtonProps[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/IconButton.IconButtonProps, @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseClassKey, 'onChange' | 'value'>) */ trait SwitchBaseProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SwitchBaseClassKey] {
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonProps, 'classes' | 'onChange' | 'value'> ]: @material-ui/core.@material-ui/core/IconButton/IconButton.IconButtonProps[P]} */ trait SwitchBaseProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SwitchBaseClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var checked: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var checkedIcon: reactLib.reactMod.ReactNs.ReactNode
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultChecked: js.UndefOr[scala.Boolean] = js.undefined
   var disableRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -29,7 +28,6 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var value: js.UndefOr[java.lang.String | scala.Double | scala.Boolean] = js.undefined
 }

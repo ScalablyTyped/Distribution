@@ -247,6 +247,42 @@ object coreNs extends js.Object {
     }
     
     /**
+      * Represents a source location of a volume to mount, managed by an external CSI driver
+      */
+    trait CSIVolumeSource extends js.Object {
+      /**
+        * Driver is the name of the CSI driver that handles this volume. Consult with your admin for
+        * the correct name as registered in the cluster.
+        */
+      var driver: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+      /**
+        * Filesystem type to mount. Ex. "ext4", "xfs", "ntfs". If not provided, the empty value is
+        * passed to the associated CSI driver which will determine the default filesystem to apply.
+        */
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
+        * NodePublishSecretRef is a reference to the secret object containing sensitive information
+        * to pass to the CSI driver to complete the CSI NodePublishVolume and NodeUnpublishVolume
+        * calls. This field is optional, and  may be empty if no secret is required. If the secret
+        * object contains more than one secret, all secret references are passed.
+        */
+      var nodePublishSecretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[LocalObjectReference]] = js.undefined
+      /**
+        * Specifies a read-only configuration for the volume. Defaults to false (read/write).
+        */
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+      /**
+        * VolumeAttributes stores driver-specific properties that are passed to the CSI driver.
+        * Consult your driver's documentation for supported values.
+        */
+      var volumeAttributes: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+            ]
+          ] = js.undefined
+    }
+    
+    /**
       * Adds and removes POSIX capabilities from running containers.
       */
     trait Capabilities extends js.Object {
@@ -2020,10 +2056,14 @@ object coreNs extends js.Object {
         */
       var postStart: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Handler]] = js.undefined
       /**
-        * PreStop is called immediately before a container is terminated. The container is terminated
-        * after the handler completes. The reason for termination is passed to the handler.
-        * Regardless of the outcome of the handler, the container is eventually terminated. Other
-        * management of the container blocks until the hook completes. More info:
+        * PreStop is called immediately before a container is terminated due to an API request or
+        * management event such as liveness probe failure, preemption, resource contention, etc. The
+        * handler is not called if the container crashes or exits. The reason for termination is
+        * passed to the handler. The Pod's termination grace period countdown begins before the
+        * PreStop hooked is executed. Regardless of the outcome of the handler, the container will
+        * eventually terminate within the Pod's termination grace period. Other management of the
+        * container blocks until the hook completes or until the termination grace period is reached.
+        * More info:
         * https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
         */
       var preStop: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Handler]] = js.undefined
@@ -3138,7 +3178,7 @@ object coreNs extends js.Object {
         */
       var claimRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ObjectReference]] = js.undefined
       /**
-        * CSI represents storage that handled by an external CSI driver (Beta feature).
+        * CSI represents storage that is handled by an external CSI driver (Beta feature).
         */
       var csi: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CSIPersistentVolumeSource]] = js.undefined
       /**
@@ -3638,7 +3678,8 @@ object coreNs extends js.Object {
       var dnsPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * EnableServiceLinks indicates whether information about services should be injected into
-        * pod's environment variables, matching the syntax of Docker links.
+        * pod's environment variables, matching the syntax of Docker links. Optional: Defaults to
+        * true.
         */
       var enableServiceLinks: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
@@ -3726,7 +3767,7 @@ object coreNs extends js.Object {
         * If specified, all readiness gates will be evaluated for pod readiness. A pod is ready when
         * all its containers are ready AND all conditions specified in the readiness gates have
         * status equal to "True" More info:
-        * https://github.com/kubernetes/community/blob/master/keps/sig-network/0007-pod-ready%2B%2B.md
+        * https://git.k8s.io/enhancements/keps/sig-network/0007-pod-ready%2B%2B.md
         */
       var readinessGates: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PodReadinessGate]]]
@@ -3742,8 +3783,8 @@ object coreNs extends js.Object {
         * used to run this pod.  If no RuntimeClass resource matches the named class, the pod will
         * not be run. If unset or empty, the "legacy" RuntimeClass will be used, which is an implicit
         * class with an empty definition that uses the default runtime handler. More info:
-        * https://github.com/kubernetes/community/blob/master/keps/sig-node/0014-runtime-class.md
-        * This is an alpha feature and may change in the future.
+        * https://git.k8s.io/enhancements/keps/sig-node/runtime-class.md This is an alpha feature and
+        * may change in the future.
         */
       var runtimeClassName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
@@ -4100,6 +4141,11 @@ object coreNs extends js.Object {
         * registry for volumes
         */
       var registry: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+      /**
+        * Tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned
+        * Quobyte volumes, value is set by the plugin
+        */
+      var tenant: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * User to map volume access to Defaults to serivceaccount user
         */
@@ -5312,7 +5358,7 @@ object coreNs extends js.Object {
         * builds on ClusterIP and allocates a port on every node which routes to the clusterIP.
         * "LoadBalancer" builds on NodePort and creates an external load-balancer (if supported in
         * the current cloud) which routes to the clusterIP. More info:
-        * https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services---service-types
+        * https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
         */
       var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
@@ -5578,6 +5624,11 @@ object coreNs extends js.Object {
         */
       var configMap: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ConfigMapVolumeSource]] = js.undefined
       /**
+        * CSI (Container Storage Interface) represents storage that is handled by an external CSI
+        * driver (Alpha feature).
+        */
+      var csi: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CSIVolumeSource]] = js.undefined
+      /**
         * DownwardAPI represents downward API about the pod that should populate this volume
         */
       var downwardAPI: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DownwardAPIVolumeSource]] = js.undefined
@@ -5729,6 +5780,13 @@ object coreNs extends js.Object {
         * (volume's root).
         */
       var subPath: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
+        * Expanded path within the volume from which the container's volume should be mounted.
+        * Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded
+        * using the container's environment. Defaults to "" (volume's root). SubPathExpr and SubPath
+        * are mutually exclusive. This field is alpha in 1.14.
+        */
+      var subPathExpr: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**

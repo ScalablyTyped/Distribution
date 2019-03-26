@@ -369,3 +369,14 @@ trait Uint32Array
   def values(): IterableIterator[scala.Double] = js.native
 }
 
+@JSGlobal("Uint32Array")
+@js.native
+class Uint32ArrayCls () extends Uint32Array {
+  def this(arrayOrArrayBuffer: ArrayBufferLike) = this()
+  def this(arrayOrArrayBuffer: ArrayLike[scala.Double]) = this()
+  def this(elements: Iterable[scala.Double]) = this()
+  def this(length: scala.Double) = this()
+  def this(buffer: ArrayBufferLike, byteOffset: scala.Double) = this()
+  def this(buffer: ArrayBufferLike, byteOffset: scala.Double, length: scala.Double) = this()
+}
+

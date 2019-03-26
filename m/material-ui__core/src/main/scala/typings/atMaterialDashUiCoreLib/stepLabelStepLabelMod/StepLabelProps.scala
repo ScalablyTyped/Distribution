@@ -6,15 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/StepLabel/StepLabel.StepLabelClasskey, never>) */ trait StepLabelProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[StepLabelClasskey] {
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait StepLabelProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[StepLabelClasskey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var StepIconComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var StepIconProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.stepIconStepIconMod.StepIconProps]] = js.undefined
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var alternativeLabel: js.UndefOr[scala.Boolean] = js.undefined
   var children: reactLib.reactMod.ReactNs.ReactNode
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var completed: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
@@ -22,7 +21,6 @@ import scala.scalajs.js.annotation._
   var last: js.UndefOr[scala.Boolean] = js.undefined
   var optional: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var orientation: js.UndefOr[atMaterialDashUiCoreLib.stepperStepperMod.Orientation] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
 object StepLabelProps {

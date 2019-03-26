@@ -12,6 +12,10 @@ trait XMLHttpRequestUpload
 
 @JSGlobal("XMLHttpRequestUpload")
 @js.native
+class XMLHttpRequestUploadCls () extends XMLHttpRequestUpload
+
+@JSGlobal("XMLHttpRequestUpload")
+@js.native
 object XMLHttpRequestUpload
   extends org.scalablytyped.runtime.Instantiable0[XMLHttpRequestUpload]
 

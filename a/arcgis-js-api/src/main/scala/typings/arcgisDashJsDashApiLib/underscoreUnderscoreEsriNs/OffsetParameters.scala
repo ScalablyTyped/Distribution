@@ -54,3 +54,9 @@ trait OffsetParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.OffsetParameters")
+@js.native
+class OffsetParametersCls () extends OffsetParameters {
+  def this(properties: OffsetParametersProperties) = this()
+}
+

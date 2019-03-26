@@ -27,3 +27,9 @@ trait LegendLayer extends Accessor {
   var title: java.lang.String = js.native
 }
 
+@JSGlobal("__esri.LegendLayer")
+@js.native
+class LegendLayerCls () extends LegendLayer {
+  def this(properties: LegendLayerProperties) = this()
+}
+

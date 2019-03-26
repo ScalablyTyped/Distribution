@@ -84,6 +84,11 @@ object JWKNs extends js.Object {
     var kid: java.lang.String
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - nodeDashJoseLib.nodeDashJoseLibStrings.sig
+    - nodeDashJoseLib.nodeDashJoseLibStrings.enc
+    - nodeDashJoseLib.nodeDashJoseLibStrings.desc
+  */
   trait KeyUse extends js.Object
   
   trait RawKey extends js.Object {

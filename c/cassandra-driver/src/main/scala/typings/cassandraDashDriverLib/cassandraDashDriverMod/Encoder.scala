@@ -14,3 +14,9 @@ trait Encoder extends js.Object {
   def encode(value: js.Any, typeInfo: scala.Double): nodeLib.Buffer = js.native
 }
 
+@JSImport("cassandra-driver", "Encoder")
+@js.native
+class EncoderCls protected () extends Encoder {
+  def this(protocolVersion: scala.Double, options: ClientOptions) = this()
+}
+

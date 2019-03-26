@@ -10,6 +10,17 @@ trait ReactiveVar[T] extends js.Object {
   def set(newValue: T): scala.Unit
 }
 
+@JSGlobal("ReactiveVar")
+@js.native
+class ReactiveVarCls[T] protected () extends ReactiveVar[T] {
+  def this(initialValue: T) = this()
+  def this(initialValue: T, equalsFunc: js.Function) = this()
+  /* CompleteClass */
+  override def get(): T = js.native
+  /* CompleteClass */
+  override def set(newValue: T): scala.Unit = js.native
+}
+
 object ReactiveVar {
   @scala.inline
   def apply[T](get: () => T, set: T => scala.Unit): ReactiveVar[T] = {

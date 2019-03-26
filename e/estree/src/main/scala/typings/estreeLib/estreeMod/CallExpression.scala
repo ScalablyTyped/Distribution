@@ -5,5 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - SimpleCallExpression
+  - NewExpression
+*/
 trait CallExpression extends js.Object
 

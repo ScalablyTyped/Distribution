@@ -497,6 +497,23 @@ object layerNs extends js.Object {
     def setUseInterimTilesOnError(useInterimTilesOnError: scala.Boolean): scala.Unit = js.native
   }
   
+  /**
+    * Render mode for vector tiles:
+    *  * `'image'`: Vector tiles are rendered as images. Great performance, but
+    *    point symbols and texts are always rotated with the view and pixels are
+    *    scaled during zoom animations.
+    *  * `'hybrid'`: Polygon and line elements are rendered as images, so pixels
+    *    are scaled during zoom animations. Point symbols and texts are accurately
+    *    rendered as vectors and can stay upright on rotated views.
+    *  * `'vector'`: Vector tiles are rendered as vectors. Most accurate rendering
+    *    even during animations, but slower performance than the other options.
+    * @api
+    */
+  /* Rewritten from type alias, can be one of: 
+    - openlayersLib.openlayersLibStrings.image
+    - openlayersLib.openlayersLibStrings.hybrid
+    - openlayersLib.openlayersLibStrings.vector
+  */
   trait VectorTileRenderType extends js.Object
   
 }

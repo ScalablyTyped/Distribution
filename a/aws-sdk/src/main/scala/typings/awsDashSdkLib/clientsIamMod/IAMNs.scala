@@ -6313,11 +6313,41 @@ object IAMNs extends js.Object {
   type ContextEntryListType = js.Array[ContextEntry]
   type ContextKeyNameType = java.lang.String
   type ContextKeyNamesResultListType = js.Array[ContextKeyNameType]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.string
+    - awsDashSdkLib.awsDashSdkLibStrings.stringList
+    - awsDashSdkLib.awsDashSdkLibStrings.numeric
+    - awsDashSdkLib.awsDashSdkLibStrings.numericList
+    - awsDashSdkLib.awsDashSdkLibStrings.boolean
+    - awsDashSdkLib.awsDashSdkLibStrings.booleanList
+    - awsDashSdkLib.awsDashSdkLibStrings.ip
+    - awsDashSdkLib.awsDashSdkLibStrings.ipList
+    - awsDashSdkLib.awsDashSdkLibStrings.binary
+    - awsDashSdkLib.awsDashSdkLibStrings.binaryList
+    - awsDashSdkLib.awsDashSdkLibStrings.date
+    - awsDashSdkLib.awsDashSdkLibStrings.dateList
+    - java.lang.String
+  */
   type ContextKeyTypeEnum = _ContextKeyTypeEnum | java.lang.String
   type ContextKeyValueListType = js.Array[ContextKeyValueType]
   type ContextKeyValueType = java.lang.String
   type DeletionTaskIdType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED
+    - awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.NOT_STARTED
+    - java.lang.String
+  */
   type DeletionTaskStatusType = _DeletionTaskStatusType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.User
+    - awsDashSdkLib.awsDashSdkLibStrings.Role
+    - awsDashSdkLib.awsDashSdkLibStrings.Group
+    - awsDashSdkLib.awsDashSdkLibStrings.LocalManagedPolicy
+    - awsDashSdkLib.awsDashSdkLibStrings.AWSManagedPolicy
+    - java.lang.String
+  */
   type EntityType = _EntityType | java.lang.String
   type EvalDecisionSourceType = java.lang.String
   type EvaluationResultsListType = js.Array[EvaluationResult]
@@ -6326,11 +6356,32 @@ object IAMNs extends js.Object {
   type OpenIDConnectProviderListType = js.Array[OpenIDConnectProviderListEntry]
   type OpenIDConnectProviderUrlType = java.lang.String
   type PermissionsBoundaryAttachmentType = awsDashSdkLib.awsDashSdkLibStrings.PermissionsBoundaryPolicy | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.allowed
+    - awsDashSdkLib.awsDashSdkLibStrings.explicitDeny
+    - awsDashSdkLib.awsDashSdkLibStrings.implicitDeny
+    - java.lang.String
+  */
   type PolicyEvaluationDecisionType = _PolicyEvaluationDecisionType | java.lang.String
   type PolicyGroupListType = js.Array[PolicyGroup]
   type PolicyIdentifierType = java.lang.String
   type PolicyRoleListType = js.Array[PolicyRole]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.user
+    - awsDashSdkLib.awsDashSdkLibStrings.group
+    - awsDashSdkLib.awsDashSdkLibStrings.role
+    - awsDashSdkLib.awsDashSdkLibStrings.`aws-managed`
+    - awsDashSdkLib.awsDashSdkLibStrings.`user-managed`
+    - awsDashSdkLib.awsDashSdkLibStrings.resource
+    - awsDashSdkLib.awsDashSdkLibStrings.none
+    - java.lang.String
+  */
   type PolicySourceType = _PolicySourceType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PermissionsPolicy
+    - awsDashSdkLib.awsDashSdkLibStrings.PermissionsBoundary
+    - java.lang.String
+  */
   type PolicyUsageType = _PolicyUsageType | java.lang.String
   type PolicyUserListType = js.Array[PolicyUser]
   type ReasonType = java.lang.String
@@ -6338,6 +6389,12 @@ object IAMNs extends js.Object {
   type ReportContentType = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsIamMod.Blob | java.lang.String
   type ReportFormatType = awsDashSdkLib.awsDashSdkLibStrings.`text/csv` | java.lang.String
   type ReportStateDescriptionType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.STARTED
+    - awsDashSdkLib.awsDashSdkLibStrings.INPROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETE
+    - java.lang.String
+  */
   type ReportStateType = _ReportStateType | java.lang.String
   type ResourceHandlingOptionType = java.lang.String
   type ResourceNameListType = js.Array[ResourceNameType]
@@ -6357,8 +6414,19 @@ object IAMNs extends js.Object {
   type accessKeySecretType = java.lang.String
   type accountAliasListType = js.Array[accountAliasType]
   type accountAliasType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2010-05-08`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
   type arnType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Assigned
+    - awsDashSdkLib.awsDashSdkLibStrings.Unassigned
+    - awsDashSdkLib.awsDashSdkLibStrings.Any
+    - java.lang.String
+  */
   type assignmentStatusType = _assignmentStatusType | java.lang.String
   type attachedPoliciesListType = js.Array[AttachedPolicy]
   type attachmentCountType = scala.Double
@@ -6373,6 +6441,11 @@ object IAMNs extends js.Object {
   type clientIDType = java.lang.String
   type customSuffixType = java.lang.String
   type dateType = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SSH
+    - awsDashSdkLib.awsDashSdkLibStrings.PEM
+    - java.lang.String
+  */
   type encodingType = _encodingType | java.lang.String
   type entityDetailsListType = js.Array[EntityDetails]
   type entityListType = js.Array[EntityType]
@@ -6387,6 +6460,12 @@ object IAMNs extends js.Object {
   type instanceProfileNameType = java.lang.String
   type integerType = scala.Double
   type jobIDType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETED
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - java.lang.String
+  */
   type jobStatusType = _jobStatusType | java.lang.String
   type listPolicyGrantingServiceAccessResponseListType = js.Array[ListPoliciesGrantingServiceAccessEntry]
   type markerType = java.lang.String
@@ -6406,9 +6485,26 @@ object IAMNs extends js.Object {
   type policyListType = js.Array[Policy]
   type policyNameListType = js.Array[policyNameType]
   type policyNameType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.USER
+    - awsDashSdkLib.awsDashSdkLibStrings.ROLE
+    - awsDashSdkLib.awsDashSdkLibStrings.GROUP
+    - java.lang.String
+  */
   type policyOwnerEntityType = _policyOwnerEntityType | java.lang.String
   type policyPathType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.All
+    - awsDashSdkLib.awsDashSdkLibStrings.AWS
+    - awsDashSdkLib.awsDashSdkLibStrings.Local
+    - java.lang.String
+  */
   type policyScopeType = _policyScopeType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.INLINE
+    - awsDashSdkLib.awsDashSdkLibStrings.MANAGED
+    - java.lang.String
+  */
   type policyType = _policyType | java.lang.String
   type policyVersionIdType = java.lang.String
   type privateKeyType = java.lang.String
@@ -6430,8 +6526,41 @@ object IAMNs extends js.Object {
   type servicePassword = java.lang.String
   type serviceSpecificCredentialId = java.lang.String
   type serviceUserName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Active
+    - awsDashSdkLib.awsDashSdkLibStrings.Inactive
+    - java.lang.String
+  */
   type statusType = _statusType | java.lang.String
   type stringType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Users
+    - awsDashSdkLib.awsDashSdkLibStrings.UsersQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.Groups
+    - awsDashSdkLib.awsDashSdkLibStrings.GroupsQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.ServerCertificates
+    - awsDashSdkLib.awsDashSdkLibStrings.ServerCertificatesQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.UserPolicySizeQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.GroupPolicySizeQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.GroupsPerUserQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.SigningCertificatesPerUserQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.AccessKeysPerUserQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.MFADevices
+    - awsDashSdkLib.awsDashSdkLibStrings.MFADevicesInUse
+    - awsDashSdkLib.awsDashSdkLibStrings.AccountMFAEnabled
+    - awsDashSdkLib.awsDashSdkLibStrings.AccountAccessKeysPresent
+    - awsDashSdkLib.awsDashSdkLibStrings.AccountSigningCertificatesPresent
+    - awsDashSdkLib.awsDashSdkLibStrings.AttachedPoliciesPerGroupQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.AttachedPoliciesPerRoleQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.AttachedPoliciesPerUserQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.Policies
+    - awsDashSdkLib.awsDashSdkLibStrings.PoliciesQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.PolicySizeQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.PolicyVersionsInUse
+    - awsDashSdkLib.awsDashSdkLibStrings.PolicyVersionsInUseQuota
+    - awsDashSdkLib.awsDashSdkLibStrings.VersionsPerPolicyQuota
+    - java.lang.String
+  */
   type summaryKeyType = _summaryKeyType | java.lang.String
   type summaryValueType = scala.Double
   type tagKeyListType = js.Array[tagKeyType]

@@ -22,6 +22,10 @@ trait ImageBitmapRenderingContext extends _RenderingContext {
 
 @JSGlobal("ImageBitmapRenderingContext")
 @js.native
+class ImageBitmapRenderingContextCls () extends ImageBitmapRenderingContext
+
+@JSGlobal("ImageBitmapRenderingContext")
+@js.native
 object ImageBitmapRenderingContext
   extends org.scalablytyped.runtime.Instantiable0[ImageBitmapRenderingContext]
 

@@ -18,6 +18,6 @@ class MosaicZeroState[T /* <: reactDashMosaicDashComponentLib.libTypesMod.Mosaic
 @JSImport("react-mosaic-component/lib/MosaicZeroState", "MosaicZeroState")
 @js.native
 object MosaicZeroState extends js.Object {
-  var contextTypes: reactDashMosaicDashComponentLib.Anon_ComponentNameLocationMosaicActions = js.native
+  var contextTypes: reactDashMosaicDashComponentLib.Anon_MosaicActionsAnonArgs = js.native
 }
 

@@ -120,6 +120,14 @@ object metaNs extends js.Object {
         */
       var singularName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
+        * The hash value of the storage version, the version this resource is converted to when
+        * written to the data store. Value must be treated as opaque by clients. Only equality
+        * comparison on the value is valid. This is an alpha feature and may change or be removed in
+        * the future. The field is populated by the apiserver only if the StorageVersionHash feature
+        * gate is enabled. This field will remain optional even if it graduates.
+        */
+      var storageVersionHash: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
         * verbs is a list of supported kube verbs (this includes get, list, watch, create, update,
         * patch, delete, deletecollection, and proxy)
         */
@@ -373,6 +381,37 @@ object metaNs extends js.Object {
     }
     
     /**
+      * ManagedFieldsEntry is a workflow-id, a FieldSet and the group version of the resource that
+      * the fieldset applies to.
+      */
+    trait ManagedFieldsEntry extends js.Object {
+      /**
+        * APIVersion defines the version of this resource that this field set applies to. The format
+        * is "group/version" just like the top-level APIVersion field. It is necessary to track the
+        * version of a field set because it cannot be automatically converted.
+        */
+      var apiVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
+        * Fields identifies a set of fields.
+        */
+      var fields: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
+      /**
+        * Manager is an identifier of the workflow managing these fields.
+        */
+      var manager: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
+        * Operation is the type of operation which lead to this ManagedFieldsEntry being created. The
+        * only valid values for this field are 'Apply' and 'Update'.
+        */
+      var operation: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      /**
+        * Time is timestamp of when these fields were set. It should always be empty if Operation is
+        * 'Apply'
+        */
+      var time: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+    }
+    
+    /**
       * ObjectMeta is metadata that all persisted resources must have, which includes all objects
       * users must create.
       */
@@ -468,6 +507,8 @@ object metaNs extends js.Object {
         * When an object is created, the system will populate this list with the current set of
         * initializers. Only privileged users may set or modify this list. Once it is empty, it may
         * not be modified further by any user.
+        *
+        * DEPRECATED - initializers are an alpha field and will be removed in v1.15.
         */
       var initializers: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Initializers]] = js.undefined
       /**
@@ -479,6 +520,18 @@ object metaNs extends js.Object {
             atPulumiPulumiLib.outputMod.Input[
               org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
+          ] = js.undefined
+      /**
+        * ManagedFields maps workflow-id and version to the set of fields that are managed by that
+        * workflow. This is mostly for internal housekeeping, and users typically shouldn't need to
+        * set or understand this field. A workflow can be the user's name, a controller's name, or
+        * the name of a specific apply path like "ci-cd". The set of fields is always in the version
+        * that the workflow used when modifying the object.
+        *
+        * This field is alpha and can be changed or removed without notice.
+        */
+      var managedFields: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ManagedFieldsEntry]]]
           ] = js.undefined
       /**
         * Name must be unique within a namespace. Is required when creating resources, although some
@@ -573,6 +626,10 @@ object metaNs extends js.Object {
       * Preconditions must be fulfilled before an operation (update, delete, etc.) is carried out.
       */
     trait Preconditions extends js.Object {
+      /**
+        * Specifies the target ResourceVersion
+        */
+      var resourceVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Specifies the target UID.
         */
@@ -740,6 +797,7 @@ object metaNs extends js.Object {
     def isAPIResourceList(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.meta.v1.APIResourceList */ scala.Boolean = js.native
     def isAPIVersions(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.meta.v1.APIVersions */ scala.Boolean = js.native
     def isDeleteOptions(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.meta.v1.DeleteOptions */ scala.Boolean = js.native
+    def isManagedFieldsEntry(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.meta.v1.ManagedFieldsEntry */ scala.Boolean = js.native
     def isOwnerReference(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.meta.v1.OwnerReference */ scala.Boolean = js.native
     def isStatus(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.meta.v1.Status */ scala.Boolean = js.native
   }

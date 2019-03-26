@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof bunyan.bunyan.LoggerOptions ]:? bunyan.bunyan.LoggerOptions[P]} */ trait Options extends js.Object {
+- Dropped {[ P in keyof bunyan.bunyan.Logger.LoggerOptions ]:? bunyan.bunyan.Logger.LoggerOptions[P]} */ trait Options extends js.Object {
   var excludes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var format: js.UndefOr[java.lang.String | FormatFunction] = js.undefined
   var genReqId: js.UndefOr[RequestIdGenFunction] = js.undefined

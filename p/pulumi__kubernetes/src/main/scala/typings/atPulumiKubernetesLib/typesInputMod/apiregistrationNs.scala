@@ -48,6 +48,9 @@ object apiregistrationNs extends js.Object {
       var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[APIServiceStatus]] = js.undefined
     }
     
+    /**
+      * APIServiceCondition describes the state of an APIService at a particular point
+      */
     trait APIServiceCondition extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.
@@ -227,6 +230,9 @@ object apiregistrationNs extends js.Object {
       var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[APIServiceStatus]] = js.undefined
     }
     
+    /**
+      * APIServiceCondition describes the state of an APIService at a particular point
+      */
     trait APIServiceCondition extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.

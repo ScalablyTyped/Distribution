@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sip.js", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var Transactions: sipDotJsLib.Anon_AckClientTransaction = js.native
+  var Transactions: sipDotJsLib.Anon_InviteClientTransaction = js.native
   val name: java.lang.String = js.native
   val version: java.lang.String = js.native
   def sanityCheck(): js.Function3[

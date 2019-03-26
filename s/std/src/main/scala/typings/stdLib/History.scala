@@ -22,6 +22,10 @@ trait History extends js.Object {
 
 @JSGlobal("History")
 @js.native
+class HistoryCls () extends History
+
+@JSGlobal("History")
+@js.native
 object History
   extends org.scalablytyped.runtime.Instantiable0[History]
 

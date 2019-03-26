@@ -20,7 +20,7 @@ abstract class Node[TKind /* <: grammarkdownLib.distTokensMod.SyntaxKind */] pro
   override var pos: scala.Double = js.native
   var trailingHtmlTrivia: js.UndefOr[js.Array[HtmlTrivia]] = js.native
   def children(): stdLib.IterableIterator[Node[grammarkdownLib.distTokensMod.SyntaxKind]] = js.native
-  def forEachChild[T](_cbNode: js.Function1[/* node */ this.type, js.UndefOr[T]]): js.UndefOr[T] = js.native
+  def forEachChild[T](_cbNode: js.Function1[/* node */ Node[grammarkdownLib.distTokensMod.SyntaxKind], js.UndefOr[T]]): js.UndefOr[T] = js.native
   def getEnd(): scala.Double = js.native
   def getFullStart(): scala.Double = js.native
   def getFullText(sourceFile: SourceFile): java.lang.String = js.native

@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WebKitCSSMatrix")
 @js.native
+class WebKitCSSMatrixCls () extends DOMMatrix {
+  def this(init: java.lang.String) = this()
+  def this(init: js.Array[scala.Double]) = this()
+}
+
+@JSGlobal("WebKitCSSMatrix")
+@js.native
 object WebKitCSSMatrix
   extends org.scalablytyped.runtime.Instantiable0[DOMMatrix]
      with org.scalablytyped.runtime.Instantiable1[(/* init */ js.Array[scala.Double]) | (/* init */ java.lang.String), DOMMatrix] {

@@ -12,6 +12,15 @@ trait Crypto extends js.Object {
 
 @JSGlobal("Crypto")
 @js.native
+class CryptoCls () extends Crypto {
+  /* CompleteClass */
+  override val subtle: SubtleCrypto = js.native
+  /* CompleteClass */
+  override def getRandomValues[T /* <: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | scala.Null */](array: T): T = js.native
+}
+
+@JSGlobal("Crypto")
+@js.native
 object Crypto
   extends org.scalablytyped.runtime.Instantiable0[Crypto]
 

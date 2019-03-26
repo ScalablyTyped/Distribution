@@ -83,6 +83,7 @@ object ^ extends js.Object {
   val Container: reactLib.reactMod.ReactNs.StatelessComponent[
     semanticDashUiDashReactLib.distCommonjsElementsContainerContainerMod.ContainerProps
   ] = js.native
+  /* Extracted nested Instantiables into classes in DimmerNs */
   val Dimmer: semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerMod.DimmerComponent = js.native
   val DimmerDimmable: reactLib.reactMod.ReactNs.ComponentClass[
     semanticDashUiDashReactLib.distCommonjsModulesDimmerDimmerDimmableMod.DimmerDimmableProps, 

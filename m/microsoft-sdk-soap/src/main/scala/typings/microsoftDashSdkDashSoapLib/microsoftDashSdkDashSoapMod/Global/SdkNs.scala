@@ -951,6 +951,11 @@ object SdkNs extends js.Object {
   @JSName("Mdq")
   @js.native
   object MdqNs extends js.Object {
+    /* Rewritten from type alias, can be one of: 
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.DoNotDisplay
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.UseCollectionName
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.UseLabel
+    */
     trait AssociatedMenuBehavior extends js.Object
     
     trait AssociatedMenuConfiguration extends js.Object {
@@ -960,6 +965,12 @@ object SdkNs extends js.Object {
       var Order: scala.Double
     }
     
+    /* Rewritten from type alias, can be one of: 
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Details
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Marketing
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Sales
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Service
+    */
     trait AssociatedMenuGroup extends js.Object
     
     @js.native
@@ -980,6 +991,12 @@ object SdkNs extends js.Object {
       var Unshare: CascadeType
     }
     
+    /* Rewritten from type alias, can be one of: 
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Active
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Cascade
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.NoCascade
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.UserOwned
+    */
     trait CascadeType extends js.Object
     
     @js.native
@@ -1223,6 +1240,11 @@ object SdkNs extends js.Object {
       def this(criteria: MetadataFilterExpression, properties: MetadataPropertiesExpression) = this()
     }
     
+    /* Rewritten from type alias, can be one of: 
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Default
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.ManyToManyRelationship
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.OneToManyRelationship
+    */
     trait RelationshipType extends js.Object
     
     @js.native
@@ -1247,6 +1269,13 @@ object SdkNs extends js.Object {
       var PrivilegeType: microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Append | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.AppendTo | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Assign | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Create | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Delete | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.None | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Read | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Share | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Write
     }
     
+    /* Rewritten from type alias, can be one of: 
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Append
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Inheritance
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.None
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.ParentChild
+      - microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Pointer
+    */
     trait SecurityType extends js.Object
     
     @js.native

@@ -28,7 +28,7 @@ trait ClientCertificateRequest extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ECDSASIGN[keyof chrome-apps.Anon_ECDSASIGN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.rsaSign | chromeDashAppsLib.chromeDashAppsLibStrings.ecdsaSign
       ]
     ]
   ]
@@ -44,7 +44,7 @@ object ClientCertificateRequest {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ECDSASIGN[keyof chrome-apps.Anon_ECDSASIGN] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.rsaSign | chromeDashAppsLib.chromeDashAppsLibStrings.ecdsaSign
         ]
       ]
     ]

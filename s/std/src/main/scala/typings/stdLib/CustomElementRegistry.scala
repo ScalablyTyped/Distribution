@@ -16,6 +16,10 @@ trait CustomElementRegistry extends js.Object {
 
 @JSGlobal("CustomElementRegistry")
 @js.native
+class CustomElementRegistryCls () extends CustomElementRegistry
+
+@JSGlobal("CustomElementRegistry")
+@js.native
 object CustomElementRegistry
   extends org.scalablytyped.runtime.Instantiable0[CustomElementRegistry]
 

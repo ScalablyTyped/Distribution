@@ -14,6 +14,19 @@ trait Acceleration extends js.Object {
 
 @JSGlobal("Acceleration")
 @js.native
+class AccelerationCls () extends Acceleration {
+  /* CompleteClass */
+  override var timestamp: scala.Double = js.native
+  /* CompleteClass */
+  override var x: scala.Double = js.native
+  /* CompleteClass */
+  override var y: scala.Double = js.native
+  /* CompleteClass */
+  override var z: scala.Double = js.native
+}
+
+@JSGlobal("Acceleration")
+@js.native
 object Acceleration
   extends org.scalablytyped.runtime.Instantiable0[Acceleration]
 

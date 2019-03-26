@@ -5,5 +5,79 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - tmiDotJsLib.tmiDotJsLibStrings.already_banned
+  - tmiDotJsLib.tmiDotJsLibStrings.already_emote_only_on
+  - tmiDotJsLib.tmiDotJsLibStrings.already_emote_only_off
+  - tmiDotJsLib.tmiDotJsLibStrings.already_subs_on
+  - tmiDotJsLib.tmiDotJsLibStrings.already_subs_off
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_ban_admin
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_ban_broadcaster
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_ban_global_mod
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_ban_self
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_ban_staff
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_commercial_error
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_host_hosting
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_host_rate_exceeded
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_mod_mod
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_mod_banned
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_timeout_admin
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_timeout_global_mod
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_timeout_self
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_timeout_staff
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_unban_no_ban
+  - tmiDotJsLib.tmiDotJsLibStrings.bad_unmod_mod
+  - tmiDotJsLib.tmiDotJsLibStrings.ban_success
+  - tmiDotJsLib.tmiDotJsLibStrings.cmds_available
+  - tmiDotJsLib.tmiDotJsLibStrings.color_changed
+  - tmiDotJsLib.tmiDotJsLibStrings.commercial_success
+  - tmiDotJsLib.tmiDotJsLibStrings.emote_only_on
+  - tmiDotJsLib.tmiDotJsLibStrings.emote_only_off
+  - tmiDotJsLib.tmiDotJsLibStrings.hosts_remaining
+  - tmiDotJsLib.tmiDotJsLibStrings.host_target_went_offline
+  - tmiDotJsLib.tmiDotJsLibStrings.mod_success
+  - tmiDotJsLib.tmiDotJsLibStrings.msg_banned
+  - tmiDotJsLib.tmiDotJsLibStrings.msg_censored_broadcaster
+  - tmiDotJsLib.tmiDotJsLibStrings.msg_channel_suspended
+  - tmiDotJsLib.tmiDotJsLibStrings.msg_duplicate
+  - tmiDotJsLib.tmiDotJsLibStrings.msg_emoteonly
+  - tmiDotJsLib.tmiDotJsLibStrings.msg_ratelimit
+  - tmiDotJsLib.tmiDotJsLibStrings.msg_subsonly
+  - tmiDotJsLib.tmiDotJsLibStrings.msg_timedout
+  - tmiDotJsLib.tmiDotJsLibStrings.msg_verified_email
+  - tmiDotJsLib.tmiDotJsLibStrings.no_help
+  - tmiDotJsLib.tmiDotJsLibStrings.no_permission
+  - tmiDotJsLib.tmiDotJsLibStrings.not_hosting
+  - tmiDotJsLib.tmiDotJsLibStrings.timeout_success
+  - tmiDotJsLib.tmiDotJsLibStrings.unban_success
+  - tmiDotJsLib.tmiDotJsLibStrings.unmod_success
+  - tmiDotJsLib.tmiDotJsLibStrings.unrecognized_cmd
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_ban
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_clear
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_color
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_commercial
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_disconnect
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_emote_only_on
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_emote_only_off
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_help
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_host
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_me
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_mod
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_mods
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_r9k_on
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_r9k_off
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_slow_on
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_slow_off
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_subs_on
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_subs_off
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_timeout
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_unban
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_unhost
+  - tmiDotJsLib.tmiDotJsLibStrings.usage_unmod
+  - tmiDotJsLib.tmiDotJsLibStrings.whisper_invalid_self
+  - tmiDotJsLib.tmiDotJsLibStrings.whisper_limit_per_min
+  - tmiDotJsLib.tmiDotJsLibStrings.whisper_limit_per_sec
+  - tmiDotJsLib.tmiDotJsLibStrings.whisper_restricted_recipient
+*/
 trait MsgID extends js.Object
 

@@ -40,6 +40,11 @@ object highlightersNs extends js.Object {
     var stroke: StrokeHighlighterArguments
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - jointjsLib.jointjsLibStrings.addClass
+    - jointjsLib.jointjsLibStrings.opacity
+    - jointjsLib.jointjsLibStrings.stroke
+  */
   trait HighlighterType extends js.Object
   
   trait OpacityHighlighterArguments extends js.Object

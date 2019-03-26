@@ -13,3 +13,11 @@ trait BasicSourceMapConsumer extends SourceMapConsumer {
   var sourcesContent: js.Array[java.lang.String] = js.native
 }
 
+@JSImport("source-map", "BasicSourceMapConsumer")
+@js.native
+class BasicSourceMapConsumerCls protected ()
+  extends stdLib.Promise[BasicSourceMapConsumer] {
+  def this(rawSourceMap: java.lang.String) = this()
+  def this(rawSourceMap: RawSourceMap) = this()
+}
+

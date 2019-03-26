@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * APIServiceCondition describes the state of an APIService at a particular point
+  */
 trait APIServiceCondition extends js.Object {
   /**
     * Last time the condition transitioned from one status to another.

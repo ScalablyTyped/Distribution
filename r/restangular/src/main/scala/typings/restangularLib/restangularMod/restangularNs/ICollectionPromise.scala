@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ICollectionPromise[T]
-  extends angularLib.angularMod.angularNs.IPromise[js.Array[js.Array[T]]] {
+  extends angularLib.angularMod.angularNs.IPromise[js.Array[T]] {
   @JSName("$object")
   var $object: js.Array[T] = js.native
   def call(methodName: java.lang.String): ICollectionPromise[T] = js.native

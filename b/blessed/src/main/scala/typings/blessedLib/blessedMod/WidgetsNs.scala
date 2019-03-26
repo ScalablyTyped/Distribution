@@ -1131,6 +1131,15 @@ object WidgetsNs extends js.Object {
     def up(amount: scala.Double): scala.Unit = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - blessedLib.blessedLibStrings.cancel
+    - blessedLib.blessedLibStrings.action
+    - blessedLib.blessedLibStrings.`create item`
+    - blessedLib.blessedLibStrings.`add item`
+    - blessedLib.blessedLibStrings.`remove item`
+    - blessedLib.blessedLibStrings.`insert item`
+    - blessedLib.blessedLibStrings.`set items`
+  */
   trait ListElementEventType extends js.Object
   
   trait ListElementStyle extends js.Object {
@@ -1471,12 +1480,50 @@ object WidgetsNs extends js.Object {
     var timeout: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - blessedLib.blessedLibStrings.adopt
+    - blessedLib.blessedLibStrings.remove
+    - blessedLib.blessedLibStrings.reparent
+    - blessedLib.blessedLibStrings.attach
+    - blessedLib.blessedLibStrings.detach
+  */
   trait NodeEventType extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - blessedLib.blessedLibStrings.resize
+    - blessedLib.blessedLibStrings.prerender
+    - blessedLib.blessedLibStrings.render
+    - blessedLib.blessedLibStrings.destroy
+    - blessedLib.blessedLibStrings.move
+    - blessedLib.blessedLibStrings.show
+    - blessedLib.blessedLibStrings.hide
+    - blessedLib.blessedLibStrings.`set content`
+    - blessedLib.blessedLibStrings.`parsed content`
+  */
   trait NodeGenericEventType extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - blessedLib.blessedLibStrings.mouse
+    - blessedLib.blessedLibStrings.mouseout
+    - blessedLib.blessedLibStrings.mouseover
+    - blessedLib.blessedLibStrings.mousedown
+    - blessedLib.blessedLibStrings.mouseup
+    - blessedLib.blessedLibStrings.mousewheel
+    - blessedLib.blessedLibStrings.wheeldown
+    - blessedLib.blessedLibStrings.wheelup
+    - blessedLib.blessedLibStrings.mousemove
+  */
   trait NodeMouseEventType extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - blessedLib.blessedLibStrings.focus
+    - blessedLib.blessedLibStrings.blur
+    - blessedLib.blessedLibStrings.click
+    - blessedLib.blessedLibStrings.`element click`
+    - blessedLib.blessedLibStrings.`element mouseover`
+    - blessedLib.blessedLibStrings.`element mouseout`
+    - blessedLib.blessedLibStrings.`element mouseup`
+  */
   trait NodeScreenEventType extends js.Object
   
   @js.native
@@ -2391,6 +2438,12 @@ object WidgetsNs extends js.Object {
     def submit(): scala.Unit = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - blessedLib.blessedLibStrings.error
+    - blessedLib.blessedLibStrings.submit
+    - blessedLib.blessedLibStrings.cancel
+    - blessedLib.blessedLibStrings.action
+  */
   trait TextareaElementEventType extends js.Object
   
   /**
@@ -2532,6 +2585,11 @@ object WidgetsNs extends js.Object {
       def callback(): scala.Unit
     }
     
+    /* Rewritten from type alias, can be one of: 
+      - blessedLib.blessedLibStrings.left
+      - blessedLib.blessedLibStrings.center
+      - blessedLib.blessedLibStrings.right
+    */
     trait TAlign extends js.Object
     
     trait TBorder extends js.Object {
@@ -2593,6 +2651,11 @@ object WidgetsNs extends js.Object {
       var width: scala.Double
     }
     
+    /* Rewritten from type alias, can be one of: 
+      - blessedLib.blessedLibStrings.mousedown
+      - blessedLib.blessedLibStrings.mouseup
+      - blessedLib.blessedLibStrings.mousemove
+    */
     trait TMouseAction extends js.Object
     
     trait TStyle extends js.Object {

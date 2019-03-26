@@ -39,7 +39,7 @@ object desktopCaptureNs extends js.Object {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_AUDIO[keyof chrome-apps.Anon_AUDIO] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.screen | chromeDashAppsLib.chromeDashAppsLibStrings.window | chromeDashAppsLib.chromeDashAppsLibStrings.tab | chromeDashAppsLib.chromeDashAppsLibStrings.audio
         ]
       ]
     ],

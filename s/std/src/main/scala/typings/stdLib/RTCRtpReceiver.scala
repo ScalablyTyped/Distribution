@@ -17,6 +17,25 @@ trait RTCRtpReceiver extends js.Object {
 
 @JSGlobal("RTCRtpReceiver")
 @js.native
+class RTCRtpReceiverCls () extends RTCRtpReceiver {
+  /* CompleteClass */
+  override val rtcpTransport: RTCDtlsTransport | scala.Null = js.native
+  /* CompleteClass */
+  override val track: MediaStreamTrack = js.native
+  /* CompleteClass */
+  override val transport: RTCDtlsTransport | scala.Null = js.native
+  /* CompleteClass */
+  override def getContributingSources(): js.Array[RTCRtpContributingSource] = js.native
+  /* CompleteClass */
+  override def getParameters(): RTCRtpReceiveParameters = js.native
+  /* CompleteClass */
+  override def getStats(): js.Promise[RTCStatsReport] = js.native
+  /* CompleteClass */
+  override def getSynchronizationSources(): js.Array[RTCRtpSynchronizationSource] = js.native
+}
+
+@JSGlobal("RTCRtpReceiver")
+@js.native
 object RTCRtpReceiver
   extends org.scalablytyped.runtime.Instantiable0[RTCRtpReceiver] {
   def getCapabilities(kind: java.lang.String): stdLib.RTCRtpCapabilities | scala.Null = js.native

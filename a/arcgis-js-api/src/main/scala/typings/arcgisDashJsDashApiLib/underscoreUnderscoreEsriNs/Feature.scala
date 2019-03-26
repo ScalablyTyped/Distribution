@@ -75,3 +75,9 @@ trait Feature extends Widget {
   def render(): js.Any = js.native
 }
 
+@JSGlobal("__esri.Feature")
+@js.native
+class FeatureCls () extends Feature {
+  def this(properties: FeatureProperties) = this()
+}
+

@@ -115,3 +115,11 @@ trait SourceMapConsumer extends js.Object {
   def sourceContentFor(source: java.lang.String, returnNullOnMissing: scala.Boolean): java.lang.String | scala.Null = js.native
 }
 
+@JSImport("source-map", "SourceMapConsumer")
+@js.native
+class SourceMapConsumerCls protected ()
+  extends stdLib.Promise[BasicSourceMapConsumer] {
+  def this(rawSourceMap: RawSourceMap) = this()
+  def this(rawSourceMap: RawSourceMap, sourceMapUrl: SourceMapUrl) = this()
+}
+

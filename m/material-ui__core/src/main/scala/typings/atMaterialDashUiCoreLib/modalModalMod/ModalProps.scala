@@ -6,14 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HtmlHTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.HtmlHTMLAttributes<std.HTMLDivElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HtmlHTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/Modal/Modal.ModalClassKey, never>) */ trait ModalProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ModalClassKey] {
+- Dropped {[ P in std.Exclude<keyof react.react.React.HtmlHTMLAttributes<std.HTMLDivElement>, 'classes' | never> ]: react.react.React.HtmlHTMLAttributes<std.HTMLDivElement>[P]} */ trait ModalProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ModalClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var BackdropComponent: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]
   ] = js.undefined
   var BackdropProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined
   var container: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] | scala.Null
@@ -32,7 +31,6 @@ import scala.scalajs.js.annotation._
   var onEscapeKeyDown: js.UndefOr[reactLib.reactMod.ReactNs.ReactEventHandler[js.Object]] = js.undefined
   var onRendered: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var open: scala.Boolean
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
 object ModalProps {

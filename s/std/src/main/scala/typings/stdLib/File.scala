@@ -13,6 +13,13 @@ trait File extends Blob {
 
 @JSGlobal("File")
 @js.native
+class FileCls protected () extends File {
+  def this(fileBits: js.Array[BlobPart], fileName: java.lang.String) = this()
+  def this(fileBits: js.Array[BlobPart], fileName: java.lang.String, options: FilePropertyBag) = this()
+}
+
+@JSGlobal("File")
+@js.native
 object File
   extends org.scalablytyped.runtime.Instantiable2[/* fileBits */ js.Array[BlobPart], /* fileName */ java.lang.String, File]
      with org.scalablytyped.runtime.Instantiable3[

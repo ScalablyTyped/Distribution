@@ -25,6 +25,38 @@ trait TextMetrics extends js.Object {
 
 @JSGlobal("TextMetrics")
 @js.native
+class TextMetricsCls () extends TextMetrics {
+  /* CompleteClass */
+  override val actualBoundingBoxAscent: scala.Double = js.native
+  /* CompleteClass */
+  override val actualBoundingBoxDescent: scala.Double = js.native
+  /* CompleteClass */
+  override val actualBoundingBoxLeft: scala.Double = js.native
+  /* CompleteClass */
+  override val actualBoundingBoxRight: scala.Double = js.native
+  /* CompleteClass */
+  override val alphabeticBaseline: scala.Double = js.native
+  /* CompleteClass */
+  override val emHeightAscent: scala.Double = js.native
+  /* CompleteClass */
+  override val emHeightDescent: scala.Double = js.native
+  /* CompleteClass */
+  override val fontBoundingBoxAscent: scala.Double = js.native
+  /* CompleteClass */
+  override val fontBoundingBoxDescent: scala.Double = js.native
+  /* CompleteClass */
+  override val hangingBaseline: scala.Double = js.native
+  /**
+    * Returns the measurement described below.
+    */
+  /* CompleteClass */
+  override val ideographicBaseline: scala.Double = js.native
+  /* CompleteClass */
+  override val width: scala.Double = js.native
+}
+
+@JSGlobal("TextMetrics")
+@js.native
 object TextMetrics
   extends org.scalablytyped.runtime.Instantiable0[TextMetrics]
 

@@ -5,21 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Grid extends js.Object {
-  var grid: js.UndefOr[antdLib.libListMod.ListGridType]
-  var itemLayout: js.UndefOr[antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical]
-}
-
-object Anon_Grid {
-  @scala.inline
-  def apply(
-    grid: antdLib.libListMod.ListGridType = null,
-    itemLayout: antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical = null
-  ): Anon_Grid = {
-    val __obj = js.Dynamic.literal()
-    if (grid != null) __obj.updateDynamic("grid")(grid)
-    if (itemLayout != null) __obj.updateDynamic("itemLayout")(itemLayout.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Anon_Grid]
-  }
+  @JSName("grid")
+  var grid_Original: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
+  @JSName("itemLayout")
+  var itemLayout_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
+  def grid(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
+  def itemLayout(
+    props: js.Object,
+    propName: java.lang.String,
+    componentName: java.lang.String,
+    location: java.lang.String,
+    propFullName: java.lang.String
+  ): stdLib.Error | scala.Null = js.native
 }
 

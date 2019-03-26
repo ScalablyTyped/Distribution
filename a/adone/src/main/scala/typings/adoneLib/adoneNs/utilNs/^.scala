@@ -12,6 +12,7 @@ object ^ extends js.Object {
   val braces: adoneLib.adoneNs.utilNs.INs.BracesFunction = js.native
   val fakeClock: adoneLib.adoneNs.utilNs.INs.fakeClockNs.FakeClock = js.native
   val `match`: adoneLib.adoneNs.utilNs.INs.MatchFunction = js.native
+  /* Extracted nested Instantiables into classes in toposortNs */
   val toposort: adoneLib.adoneNs.utilNs.INs.ToposortFunction = js.native
   /**
     * Finds difference between the given arrays

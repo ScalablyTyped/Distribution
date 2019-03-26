@@ -1118,6 +1118,11 @@ object SecretsManagerNs extends js.Object {
   type TagKeyType = java.lang.String
   type TagListType = js.Array[Tag]
   type TagValueType = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-10-17`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

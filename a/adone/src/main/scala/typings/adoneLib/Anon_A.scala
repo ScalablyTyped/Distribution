@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_A extends js.Object {
+  var CertificateCls: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.cryptoNs.CertificateCls] = js.native
   @JSName("Certificate")
   val Certificate_Original: nodeLib.Anon_Certificate = js.native
   /** @deprecated since v10.0.0 */

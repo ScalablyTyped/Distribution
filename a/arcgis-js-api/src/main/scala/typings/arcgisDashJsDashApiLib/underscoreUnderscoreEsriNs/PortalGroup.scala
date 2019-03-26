@@ -126,3 +126,9 @@ trait PortalGroup extends Accessor {
   def queryItems(queryParams: PortalQueryParamsProperties): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
 }
 
+@JSGlobal("__esri.PortalGroup")
+@js.native
+class PortalGroupCls () extends PortalGroup {
+  def this(properties: PortalGroupProperties) = this()
+}
+

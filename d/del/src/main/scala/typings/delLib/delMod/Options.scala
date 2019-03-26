@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {readonly [ P in keyof glob.glob.IOptions ]: glob.glob.IOptions[P]} */ trait Options extends js.Object {
+- Dropped {readonly [ P in keyof glob.glob.G.IOptions ]: glob.glob.G.IOptions[P]} */ trait Options extends js.Object {
   /**
   	 * Concurrency limit. Minimum: `1`.
   	 *

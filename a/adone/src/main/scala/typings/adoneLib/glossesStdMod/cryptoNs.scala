@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object cryptoNs extends js.Object {
   @js.native
+  class CertificateCls ()
+    extends nodeLib.cryptoMod.CertificateCls
+  
+  @js.native
   class ECDH ()
     extends nodeLib.cryptoMod.ECDH
   

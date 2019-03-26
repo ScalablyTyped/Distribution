@@ -49,8 +49,8 @@ trait Anon_AggregationCursor extends js.Object {
   var MongoClient: Anon_Callback = js.native
   var MongoError: Anon_Create = js.native
   var Mongos: org.scalablytyped.runtime.Instantiable1[/* servers */ js.Array[mongodbLib.mongodbMod.Server], mongodbLib.mongodbMod.Mongos] = js.native
-  var ObjectID: Anon_CacheHexString = js.native
-  var ObjectId: Anon_CacheHexStringCreateFromHexString = js.native
+  var ObjectID: Anon_CacheHexStringCreateFromHexString = js.native
+  var ObjectId: Anon_CacheHexString = js.native
   var ReadPreference: Anon_IsValid = js.native
   var ReplSet: org.scalablytyped.runtime.Instantiable1[
     /* servers */ js.Array[mongodbLib.mongodbMod.Server], 

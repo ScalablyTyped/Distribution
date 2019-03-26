@@ -42,7 +42,7 @@ class PodPresetList protected ()
   val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodPresetList] = js.native
   /**
     * Standard list metadata. More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
   def getInputs(): atPulumiKubernetesLib.typesInputMod.settingsNs.v1alpha1Ns.PodPresetList = js.native

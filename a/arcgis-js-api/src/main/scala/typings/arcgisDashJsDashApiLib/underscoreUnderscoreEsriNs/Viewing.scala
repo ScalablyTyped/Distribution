@@ -15,3 +15,9 @@ trait Viewing extends Accessor {
   var search: Search = js.native
 }
 
+@JSGlobal("__esri.Viewing")
+@js.native
+class ViewingCls () extends Viewing {
+  def this(properties: ViewingProperties) = this()
+}
+

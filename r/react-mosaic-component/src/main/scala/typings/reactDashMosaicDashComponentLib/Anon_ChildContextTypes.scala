@@ -10,8 +10,8 @@ trait Anon_ChildContextTypes
   extends org.scalablytyped.runtime.Instantiable0[
       reactDashMosaicDashComponentLib.libMosaicWindowMod.InternalMosaicWindow[reactDashMosaicDashComponentLib.libTypesMod.MosaicKey]
     ] {
-  var childContextTypes: Anon_ComponentNameLocation = js.native
-  var contextTypes: Anon_ComponentName = js.native
+  var childContextTypes: Anon_MosaicWindowActions = js.native
+  var contextTypes: Anon_MosaicActions = js.native
   var defaultProps: stdLib.Partial[reactDashMosaicDashComponentLib.libMosaicWindowMod.InternalMosaicWindowProps[_]] = js.native
 }
 

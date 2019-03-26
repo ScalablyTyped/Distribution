@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation._
   */
 trait Preconditions extends js.Object {
   /**
+    * Specifies the target ResourceVersion
+    */
+  val resourceVersion: java.lang.String
+  /**
     * Specifies the target UID.
     */
   val uid: java.lang.String
@@ -17,8 +21,8 @@ trait Preconditions extends js.Object {
 
 object Preconditions {
   @scala.inline
-  def apply(uid: java.lang.String): Preconditions = {
-    val __obj = js.Dynamic.literal(uid = uid)
+  def apply(resourceVersion: java.lang.String, uid: java.lang.String): Preconditions = {
+    val __obj = js.Dynamic.literal(resourceVersion = resourceVersion, uid = uid)
   
     __obj.asInstanceOf[Preconditions]
   }

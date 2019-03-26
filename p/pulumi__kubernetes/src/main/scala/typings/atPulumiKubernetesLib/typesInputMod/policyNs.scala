@@ -12,6 +12,16 @@ object policyNs extends js.Object {
   @js.native
   object v1beta1Ns extends js.Object {
     /**
+      * AllowedCSIDriver represents a single inline CSI Driver that is allowed to be used.
+      */
+    trait AllowedCSIDriver extends js.Object {
+      /**
+        * Name is the registered name of the CSI driver
+        */
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+    }
+    
+    /**
       * AllowedFlexVolume represents a single Flexvolume that is allowed to be used.
       */
     trait AllowedFlexVolume extends js.Object {
@@ -332,6 +342,14 @@ object policyNs extends js.Object {
         * unspecified, defaults to true.
         */
       var allowPrivilegeEscalation: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+      /**
+        * AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be
+        * embedded within a pod spec. An empty value means no CSI drivers can run inline within a pod
+        * spec.
+        */
+      var allowedCSIDrivers: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[AllowedCSIDriver]]]
+          ] = js.undefined
       /**
         * allowedCapabilities is a list of capabilities that can be requested to add to the
         * container. Capabilities in this field may be added at the pod author's discretion. You must

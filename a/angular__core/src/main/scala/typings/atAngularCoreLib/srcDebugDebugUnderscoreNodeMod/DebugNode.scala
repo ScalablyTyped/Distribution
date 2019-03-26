@@ -16,6 +16,28 @@ trait DebugNode extends js.Object {
   val references: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+@JSImport("@angular/core/src/debug/debug_node", "DebugNode")
+@js.native
+class DebugNodeCls protected () extends DebugNode {
+  def this(args: js.Any*) = this()
+  /* CompleteClass */
+  override val componentInstance: js.Any = js.native
+  /* CompleteClass */
+  override val context: js.Any = js.native
+  /* CompleteClass */
+  override val injector: atAngularCoreLib.srcDiMod.Injector = js.native
+  /* CompleteClass */
+  override val listeners: js.Array[EventListener] = js.native
+  /* CompleteClass */
+  override val nativeNode: js.Any = js.native
+  /* CompleteClass */
+  override val parent: DebugElement | scala.Null = js.native
+  /* CompleteClass */
+  override val providerTokens: js.Array[_] = js.native
+  /* CompleteClass */
+  override val references: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+}
+
 object DebugNode {
   @scala.inline
   def apply(

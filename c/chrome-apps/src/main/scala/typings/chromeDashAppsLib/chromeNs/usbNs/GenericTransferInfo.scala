@@ -17,7 +17,7 @@ trait GenericTransferInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_IN[keyof chrome-apps.Anon_IN] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.in | chromeDashAppsLib.chromeDashAppsLibStrings.out
     ]
   ]
   /** The target endpoint address. The interface containing this endpoint must be claimed. */
@@ -40,7 +40,7 @@ object GenericTransferInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_IN[keyof chrome-apps.Anon_IN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.in | chromeDashAppsLib.chromeDashAppsLibStrings.out
       ]
     ],
     endpoint: chromeDashAppsLib.chromeNs.integer,

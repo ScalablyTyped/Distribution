@@ -48,7 +48,7 @@ object ExceptionsNs extends js.Object {
   }
   
   @js.native
-  class TransportError protected ()
+  class TransportError ()
     extends sipDotJsLib.typesExceptionsMod.ExceptionsNs.TransportError {
     def this(message: java.lang.String) = this()
   }

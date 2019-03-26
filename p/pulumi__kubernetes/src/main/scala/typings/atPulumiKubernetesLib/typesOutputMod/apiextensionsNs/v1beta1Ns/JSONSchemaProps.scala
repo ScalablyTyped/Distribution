@@ -39,6 +39,7 @@ trait JSONSchemaProps extends js.Object {
   val minimum: scala.Double
   val multipleOf: scala.Double
   val not: JSONSchemaProps
+  val nullable: scala.Boolean
   val oneOf: js.Array[JSONSchemaProps]
   val pattern: java.lang.String
   val patternProperties: js.Object
@@ -80,6 +81,7 @@ object JSONSchemaProps {
     minimum: scala.Double,
     multipleOf: scala.Double,
     not: JSONSchemaProps,
+    nullable: scala.Boolean,
     oneOf: js.Array[JSONSchemaProps],
     pattern: java.lang.String,
     patternProperties: js.Object,
@@ -89,7 +91,7 @@ object JSONSchemaProps {
     `type`: java.lang.String,
     uniqueItems: scala.Boolean
   ): JSONSchemaProps = {
-    val __obj = js.Dynamic.literal($ref = $ref, $schema = $schema, additionalItems = additionalItems.asInstanceOf[js.Any], additionalProperties = additionalProperties.asInstanceOf[js.Any], allOf = allOf, anyOf = anyOf, default = default, definitions = definitions, dependencies = dependencies, description = description, enum = enum, example = example, exclusiveMaximum = exclusiveMaximum, exclusiveMinimum = exclusiveMinimum, externalDocs = externalDocs, format = format, id = id, items = items.asInstanceOf[js.Any], maxItems = maxItems, maxLength = maxLength, maxProperties = maxProperties, maximum = maximum, minItems = minItems, minLength = minLength, minProperties = minProperties, minimum = minimum, multipleOf = multipleOf, not = not, oneOf = oneOf, pattern = pattern, patternProperties = patternProperties, properties = properties, required = required, title = title, uniqueItems = uniqueItems)
+    val __obj = js.Dynamic.literal($ref = $ref, $schema = $schema, additionalItems = additionalItems.asInstanceOf[js.Any], additionalProperties = additionalProperties.asInstanceOf[js.Any], allOf = allOf, anyOf = anyOf, default = default, definitions = definitions, dependencies = dependencies, description = description, enum = enum, example = example, exclusiveMaximum = exclusiveMaximum, exclusiveMinimum = exclusiveMinimum, externalDocs = externalDocs, format = format, id = id, items = items.asInstanceOf[js.Any], maxItems = maxItems, maxLength = maxLength, maxProperties = maxProperties, maximum = maximum, minItems = minItems, minLength = minLength, minProperties = minProperties, minimum = minimum, multipleOf = multipleOf, not = not, nullable = nullable, oneOf = oneOf, pattern = pattern, patternProperties = patternProperties, properties = properties, required = required, title = title, uniqueItems = uniqueItems)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[JSONSchemaProps]
   }

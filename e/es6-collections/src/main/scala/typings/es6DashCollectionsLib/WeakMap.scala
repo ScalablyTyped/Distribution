@@ -15,3 +15,9 @@ trait WeakMap[K /* <: js.Object */, V] extends js.Object {
   def set(key: K, value: V): WeakMap[K, V] = js.native
 }
 
+@JSGlobal("WeakMap")
+@js.native
+class WeakMapCls[K /* <: js.Object */, V] () extends WeakMap[K, V] {
+  def this(iterable: ForEachable[js.Tuple2[K, V]]) = this()
+}
+

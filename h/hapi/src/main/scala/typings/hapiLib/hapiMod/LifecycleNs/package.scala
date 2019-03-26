@@ -18,6 +18,12 @@ package object LifecycleNs {
     * * * err - the error object.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-failaction-configuration)
     */
+  /* Rewritten from type alias, can be one of: 
+    - hapiLib.hapiLibStrings.error
+    - hapiLib.hapiLibStrings.log
+    - hapiLib.hapiLibStrings.ignore
+    - Method
+  */
   type FailAction = _FailAction | Method
   /**
     * Lifecycle methods are the interface between the framework and the application. Many of the request lifecycle steps:

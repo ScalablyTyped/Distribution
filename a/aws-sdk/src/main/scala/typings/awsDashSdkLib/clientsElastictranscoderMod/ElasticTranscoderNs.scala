@@ -1808,6 +1808,11 @@ object ElasticTranscoderNs extends js.Object {
   type WatermarkSizingPolicy = java.lang.String
   type ZeroTo255String = java.lang.String
   type ZeroTo512String = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2012-09-25`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -6,15 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade.FadeProps>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade.FadeProps>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade.FadeProps>, @material-ui/core.@material-ui/core/Backdrop/Backdrop.BackdropClassKey, never>) */ trait BackdropProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BackdropClassKey] {
-  var className: js.UndefOr[java.lang.String] = js.undefined
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade/Fade.FadeProps>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLDivElement> & std.Partial<@material-ui/core.@material-ui/core/Fade/Fade.FadeProps>[P]} */ trait BackdropProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BackdropClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var invisible: js.UndefOr[scala.Boolean] = js.undefined
   var onClick: js.UndefOr[reactLib.reactMod.ReactNs.ReactEventHandler[js.Object]] = js.undefined
   var open: scala.Boolean
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var transitionDuration: js.UndefOr[js.Any] = js.undefined
+  var transitionDuration: js.UndefOr[scala.Nothing] = js.undefined
 }
 
 object BackdropProps {
@@ -27,7 +25,7 @@ object BackdropProps {
     invisible: js.UndefOr[scala.Boolean] = js.undefined,
     onClick: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    transitionDuration: js.Any = null
+    transitionDuration: js.UndefOr[scala.Nothing] = js.undefined
   ): BackdropProps = {
     val __obj = js.Dynamic.literal(open = open)
     if (className != null) __obj.updateDynamic("className")(className)
@@ -36,7 +34,7 @@ object BackdropProps {
     if (!js.isUndefined(invisible)) __obj.updateDynamic("invisible")(invisible)
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)
     if (style != null) __obj.updateDynamic("style")(style)
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration)
+    if (!js.isUndefined(transitionDuration)) __obj.updateDynamic("transitionDuration")(transitionDuration)
     __obj.asInstanceOf[BackdropProps]
   }
 }

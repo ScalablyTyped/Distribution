@@ -54,7 +54,7 @@ class Table protected ()
   /**
     * Point-in-time recovery options.
     */
-  val pointInTimeRecovery: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_EnabledBoolean_204597847] = js.native
+  val pointInTimeRecovery: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_EnabledBoolean_1082978225] = js.native
   /**
     * The name of the range key; must be defined
     */
@@ -66,7 +66,7 @@ class Table protected ()
   /**
     * Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
     */
-  val serverSideEncryption: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_EnabledBoolean_204597847] = js.native
+  val serverSideEncryption: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_EnabledBoolean_1082978225] = js.native
   /**
     * The ARN of the Table Stream. Only available when `stream_enabled = true`
     */

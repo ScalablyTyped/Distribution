@@ -22,6 +22,18 @@ object atPulumiKubernetesLibStrings {
   sealed trait Binding extends js.Object
   
   @js.native
+  sealed trait CSIDriver extends js.Object
+  
+  @js.native
+  sealed trait CSIDriverList extends js.Object
+  
+  @js.native
+  sealed trait CSINode extends js.Object
+  
+  @js.native
+  sealed trait CSINodeList extends js.Object
+  
+  @js.native
   sealed trait CertificateSigningRequest extends js.Object
   
   @js.native
@@ -104,12 +116,6 @@ object atPulumiKubernetesLibStrings {
   
   @js.native
   sealed trait IngressList extends js.Object
-  
-  @js.native
-  sealed trait InitializerConfiguration extends js.Object
-  
-  @js.native
-  sealed trait InitializerConfigurationList extends js.Object
   
   @js.native
   sealed trait Job extends js.Object
@@ -235,6 +241,12 @@ object atPulumiKubernetesLibStrings {
   sealed trait RoleList extends js.Object
   
   @js.native
+  sealed trait RuntimeClass extends js.Object
+  
+  @js.native
+  sealed trait RuntimeClassList extends js.Object
+  
+  @js.native
   sealed trait Secret extends js.Object
   
   @js.native
@@ -293,15 +305,6 @@ object atPulumiKubernetesLibStrings {
   
   @js.native
   sealed trait action extends js.Object
-  
-  @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1alpha1` extends js.Object
-  
-  @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfiguration` extends js.Object
-  
-  @js.native
-  sealed trait `admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfigurationList` extends js.Object
   
   @js.native
   sealed trait `admissionregistrationDOTk8sDOTio/v1beta1` extends js.Object
@@ -583,6 +586,15 @@ object atPulumiKubernetesLibStrings {
   sealed trait conditions extends js.Object
   
   @js.native
+  sealed trait `coordinationDOTk8sDOTio/v1` extends js.Object
+  
+  @js.native
+  sealed trait `coordinationDOTk8sDOTio/v1/Lease` extends js.Object
+  
+  @js.native
+  sealed trait `coordinationDOTk8sDOTio/v1/LeaseList` extends js.Object
+  
+  @js.native
   sealed trait `coordinationDOTk8sDOTio/v1beta1` extends js.Object
   
   @js.native
@@ -673,10 +685,10 @@ object atPulumiKubernetesLibStrings {
   sealed trait global_default extends js.Object
   
   @js.native
-  sealed trait image_pull_secrets extends js.Object
+  sealed trait handler extends js.Object
   
   @js.native
-  sealed trait initializers extends js.Object
+  sealed trait image_pull_secrets extends js.Object
   
   @js.native
   sealed trait involved_object extends js.Object
@@ -707,6 +719,33 @@ object atPulumiKubernetesLibStrings {
   
   @js.native
   sealed trait `networkingDOTk8sDOTio/v1/NetworkPolicyList` extends js.Object
+  
+  @js.native
+  sealed trait `networkingDOTk8sDOTio/v1beta1` extends js.Object
+  
+  @js.native
+  sealed trait `networkingDOTk8sDOTio/v1beta1/Ingress` extends js.Object
+  
+  @js.native
+  sealed trait `networkingDOTk8sDOTio/v1beta1/IngressList` extends js.Object
+  
+  @js.native
+  sealed trait `nodeDOTk8sDOTio/v1alpha1` extends js.Object
+  
+  @js.native
+  sealed trait `nodeDOTk8sDOTio/v1alpha1/RuntimeClass` extends js.Object
+  
+  @js.native
+  sealed trait `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList` extends js.Object
+  
+  @js.native
+  sealed trait `nodeDOTk8sDOTio/v1beta1` extends js.Object
+  
+  @js.native
+  sealed trait `nodeDOTk8sDOTio/v1beta1/RuntimeClass` extends js.Object
+  
+  @js.native
+  sealed trait `nodeDOTk8sDOTio/v1beta1/RuntimeClassList` extends js.Object
   
   @js.native
   sealed trait note extends js.Object
@@ -844,6 +883,15 @@ object atPulumiKubernetesLibStrings {
   sealed trait rules extends js.Object
   
   @js.native
+  sealed trait `schedulingDOTk8sDOTio/v1` extends js.Object
+  
+  @js.native
+  sealed trait `schedulingDOTk8sDOTio/v1/PriorityClass` extends js.Object
+  
+  @js.native
+  sealed trait `schedulingDOTk8sDOTio/v1/PriorityClassList` extends js.Object
+  
+  @js.native
   sealed trait `schedulingDOTk8sDOTio/v1alpha1` extends js.Object
   
   @js.native
@@ -911,6 +959,18 @@ object atPulumiKubernetesLibStrings {
   
   @js.native
   sealed trait `storageDOTk8sDOTio/v1beta1` extends js.Object
+  
+  @js.native
+  sealed trait `storageDOTk8sDOTio/v1beta1/CSIDriver` extends js.Object
+  
+  @js.native
+  sealed trait `storageDOTk8sDOTio/v1beta1/CSIDriverList` extends js.Object
+  
+  @js.native
+  sealed trait `storageDOTk8sDOTio/v1beta1/CSINode` extends js.Object
+  
+  @js.native
+  sealed trait `storageDOTk8sDOTio/v1beta1/CSINodeList` extends js.Object
   
   @js.native
   sealed trait `storageDOTk8sDOTio/v1beta1/StorageClass` extends js.Object
@@ -1067,6 +1127,14 @@ object atPulumiKubernetesLibStrings {
   @scala.inline
   def Binding: Binding = "Binding".asInstanceOf[Binding]
   @scala.inline
+  def CSIDriver: CSIDriver = "CSIDriver".asInstanceOf[CSIDriver]
+  @scala.inline
+  def CSIDriverList: CSIDriverList = "CSIDriverList".asInstanceOf[CSIDriverList]
+  @scala.inline
+  def CSINode: CSINode = "CSINode".asInstanceOf[CSINode]
+  @scala.inline
+  def CSINodeList: CSINodeList = "CSINodeList".asInstanceOf[CSINodeList]
+  @scala.inline
   def CertificateSigningRequest: CertificateSigningRequest = "CertificateSigningRequest".asInstanceOf[CertificateSigningRequest]
   @scala.inline
   def CertificateSigningRequestList: CertificateSigningRequestList = "CertificateSigningRequestList".asInstanceOf[CertificateSigningRequestList]
@@ -1122,10 +1190,6 @@ object atPulumiKubernetesLibStrings {
   def Ingress: Ingress = "Ingress".asInstanceOf[Ingress]
   @scala.inline
   def IngressList: IngressList = "IngressList".asInstanceOf[IngressList]
-  @scala.inline
-  def InitializerConfiguration: InitializerConfiguration = "InitializerConfiguration".asInstanceOf[InitializerConfiguration]
-  @scala.inline
-  def InitializerConfigurationList: InitializerConfigurationList = "InitializerConfigurationList".asInstanceOf[InitializerConfigurationList]
   @scala.inline
   def Job: Job = "Job".asInstanceOf[Job]
   @scala.inline
@@ -1209,6 +1273,10 @@ object atPulumiKubernetesLibStrings {
   @scala.inline
   def RoleList: RoleList = "RoleList".asInstanceOf[RoleList]
   @scala.inline
+  def RuntimeClass: RuntimeClass = "RuntimeClass".asInstanceOf[RuntimeClass]
+  @scala.inline
+  def RuntimeClassList: RuntimeClassList = "RuntimeClassList".asInstanceOf[RuntimeClassList]
+  @scala.inline
   def Secret: Secret = "Secret".asInstanceOf[Secret]
   @scala.inline
   def SecretList: SecretList = "SecretList".asInstanceOf[SecretList]
@@ -1248,12 +1316,6 @@ object atPulumiKubernetesLibStrings {
   def VolumeAttachmentList: VolumeAttachmentList = "VolumeAttachmentList".asInstanceOf[VolumeAttachmentList]
   @scala.inline
   def action: action = "action".asInstanceOf[action]
-  @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1alpha1`: `admissionregistrationDOTk8sDOTio/v1alpha1` = "admissionregistration.k8s.io/v1alpha1".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1alpha1`]
-  @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfiguration`: `admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfiguration` = "admissionregistration.k8s.io/v1alpha1/InitializerConfiguration".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfiguration`]
-  @scala.inline
-  def `admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfigurationList`: `admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfigurationList` = "admissionregistration.k8s.io/v1alpha1/InitializerConfigurationList".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfigurationList`]
   @scala.inline
   def `admissionregistrationDOTk8sDOTio/v1beta1`: `admissionregistrationDOTk8sDOTio/v1beta1` = "admissionregistration.k8s.io/v1beta1".asInstanceOf[`admissionregistrationDOTk8sDOTio/v1beta1`]
   @scala.inline
@@ -1441,6 +1503,12 @@ object atPulumiKubernetesLibStrings {
   @scala.inline
   def conditions: conditions = "conditions".asInstanceOf[conditions]
   @scala.inline
+  def `coordinationDOTk8sDOTio/v1`: `coordinationDOTk8sDOTio/v1` = "coordination.k8s.io/v1".asInstanceOf[`coordinationDOTk8sDOTio/v1`]
+  @scala.inline
+  def `coordinationDOTk8sDOTio/v1/Lease`: `coordinationDOTk8sDOTio/v1/Lease` = "coordination.k8s.io/v1/Lease".asInstanceOf[`coordinationDOTk8sDOTio/v1/Lease`]
+  @scala.inline
+  def `coordinationDOTk8sDOTio/v1/LeaseList`: `coordinationDOTk8sDOTio/v1/LeaseList` = "coordination.k8s.io/v1/LeaseList".asInstanceOf[`coordinationDOTk8sDOTio/v1/LeaseList`]
+  @scala.inline
   def `coordinationDOTk8sDOTio/v1beta1`: `coordinationDOTk8sDOTio/v1beta1` = "coordination.k8s.io/v1beta1".asInstanceOf[`coordinationDOTk8sDOTio/v1beta1`]
   @scala.inline
   def `coordinationDOTk8sDOTio/v1beta1/Lease`: `coordinationDOTk8sDOTio/v1beta1/Lease` = "coordination.k8s.io/v1beta1/Lease".asInstanceOf[`coordinationDOTk8sDOTio/v1beta1/Lease`]
@@ -1501,9 +1569,9 @@ object atPulumiKubernetesLibStrings {
   @scala.inline
   def global_default: global_default = "global_default".asInstanceOf[global_default]
   @scala.inline
-  def image_pull_secrets: image_pull_secrets = "image_pull_secrets".asInstanceOf[image_pull_secrets]
+  def handler: handler = "handler".asInstanceOf[handler]
   @scala.inline
-  def initializers: initializers = "initializers".asInstanceOf[initializers]
+  def image_pull_secrets: image_pull_secrets = "image_pull_secrets".asInstanceOf[image_pull_secrets]
   @scala.inline
   def involved_object: involved_object = "involved_object".asInstanceOf[involved_object]
   @scala.inline
@@ -1524,6 +1592,24 @@ object atPulumiKubernetesLibStrings {
   def `networkingDOTk8sDOTio/v1/NetworkPolicy`: `networkingDOTk8sDOTio/v1/NetworkPolicy` = "networking.k8s.io/v1/NetworkPolicy".asInstanceOf[`networkingDOTk8sDOTio/v1/NetworkPolicy`]
   @scala.inline
   def `networkingDOTk8sDOTio/v1/NetworkPolicyList`: `networkingDOTk8sDOTio/v1/NetworkPolicyList` = "networking.k8s.io/v1/NetworkPolicyList".asInstanceOf[`networkingDOTk8sDOTio/v1/NetworkPolicyList`]
+  @scala.inline
+  def `networkingDOTk8sDOTio/v1beta1`: `networkingDOTk8sDOTio/v1beta1` = "networking.k8s.io/v1beta1".asInstanceOf[`networkingDOTk8sDOTio/v1beta1`]
+  @scala.inline
+  def `networkingDOTk8sDOTio/v1beta1/Ingress`: `networkingDOTk8sDOTio/v1beta1/Ingress` = "networking.k8s.io/v1beta1/Ingress".asInstanceOf[`networkingDOTk8sDOTio/v1beta1/Ingress`]
+  @scala.inline
+  def `networkingDOTk8sDOTio/v1beta1/IngressList`: `networkingDOTk8sDOTio/v1beta1/IngressList` = "networking.k8s.io/v1beta1/IngressList".asInstanceOf[`networkingDOTk8sDOTio/v1beta1/IngressList`]
+  @scala.inline
+  def `nodeDOTk8sDOTio/v1alpha1`: `nodeDOTk8sDOTio/v1alpha1` = "node.k8s.io/v1alpha1".asInstanceOf[`nodeDOTk8sDOTio/v1alpha1`]
+  @scala.inline
+  def `nodeDOTk8sDOTio/v1alpha1/RuntimeClass`: `nodeDOTk8sDOTio/v1alpha1/RuntimeClass` = "node.k8s.io/v1alpha1/RuntimeClass".asInstanceOf[`nodeDOTk8sDOTio/v1alpha1/RuntimeClass`]
+  @scala.inline
+  def `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList`: `nodeDOTk8sDOTio/v1alpha1/RuntimeClassList` = "node.k8s.io/v1alpha1/RuntimeClassList".asInstanceOf[`nodeDOTk8sDOTio/v1alpha1/RuntimeClassList`]
+  @scala.inline
+  def `nodeDOTk8sDOTio/v1beta1`: `nodeDOTk8sDOTio/v1beta1` = "node.k8s.io/v1beta1".asInstanceOf[`nodeDOTk8sDOTio/v1beta1`]
+  @scala.inline
+  def `nodeDOTk8sDOTio/v1beta1/RuntimeClass`: `nodeDOTk8sDOTio/v1beta1/RuntimeClass` = "node.k8s.io/v1beta1/RuntimeClass".asInstanceOf[`nodeDOTk8sDOTio/v1beta1/RuntimeClass`]
+  @scala.inline
+  def `nodeDOTk8sDOTio/v1beta1/RuntimeClassList`: `nodeDOTk8sDOTio/v1beta1/RuntimeClassList` = "node.k8s.io/v1beta1/RuntimeClassList".asInstanceOf[`nodeDOTk8sDOTio/v1beta1/RuntimeClassList`]
   @scala.inline
   def note: note = "note".asInstanceOf[note]
   @scala.inline
@@ -1615,6 +1701,12 @@ object atPulumiKubernetesLibStrings {
   @scala.inline
   def rules: rules = "rules".asInstanceOf[rules]
   @scala.inline
+  def `schedulingDOTk8sDOTio/v1`: `schedulingDOTk8sDOTio/v1` = "scheduling.k8s.io/v1".asInstanceOf[`schedulingDOTk8sDOTio/v1`]
+  @scala.inline
+  def `schedulingDOTk8sDOTio/v1/PriorityClass`: `schedulingDOTk8sDOTio/v1/PriorityClass` = "scheduling.k8s.io/v1/PriorityClass".asInstanceOf[`schedulingDOTk8sDOTio/v1/PriorityClass`]
+  @scala.inline
+  def `schedulingDOTk8sDOTio/v1/PriorityClassList`: `schedulingDOTk8sDOTio/v1/PriorityClassList` = "scheduling.k8s.io/v1/PriorityClassList".asInstanceOf[`schedulingDOTk8sDOTio/v1/PriorityClassList`]
+  @scala.inline
   def `schedulingDOTk8sDOTio/v1alpha1`: `schedulingDOTk8sDOTio/v1alpha1` = "scheduling.k8s.io/v1alpha1".asInstanceOf[`schedulingDOTk8sDOTio/v1alpha1`]
   @scala.inline
   def `schedulingDOTk8sDOTio/v1alpha1/PriorityClass`: `schedulingDOTk8sDOTio/v1alpha1/PriorityClass` = "scheduling.k8s.io/v1alpha1/PriorityClass".asInstanceOf[`schedulingDOTk8sDOTio/v1alpha1/PriorityClass`]
@@ -1660,6 +1752,14 @@ object atPulumiKubernetesLibStrings {
   def `storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`: `storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList` = "storage.k8s.io/v1alpha1/VolumeAttachmentList".asInstanceOf[`storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`]
   @scala.inline
   def `storageDOTk8sDOTio/v1beta1`: `storageDOTk8sDOTio/v1beta1` = "storage.k8s.io/v1beta1".asInstanceOf[`storageDOTk8sDOTio/v1beta1`]
+  @scala.inline
+  def `storageDOTk8sDOTio/v1beta1/CSIDriver`: `storageDOTk8sDOTio/v1beta1/CSIDriver` = "storage.k8s.io/v1beta1/CSIDriver".asInstanceOf[`storageDOTk8sDOTio/v1beta1/CSIDriver`]
+  @scala.inline
+  def `storageDOTk8sDOTio/v1beta1/CSIDriverList`: `storageDOTk8sDOTio/v1beta1/CSIDriverList` = "storage.k8s.io/v1beta1/CSIDriverList".asInstanceOf[`storageDOTk8sDOTio/v1beta1/CSIDriverList`]
+  @scala.inline
+  def `storageDOTk8sDOTio/v1beta1/CSINode`: `storageDOTk8sDOTio/v1beta1/CSINode` = "storage.k8s.io/v1beta1/CSINode".asInstanceOf[`storageDOTk8sDOTio/v1beta1/CSINode`]
+  @scala.inline
+  def `storageDOTk8sDOTio/v1beta1/CSINodeList`: `storageDOTk8sDOTio/v1beta1/CSINodeList` = "storage.k8s.io/v1beta1/CSINodeList".asInstanceOf[`storageDOTk8sDOTio/v1beta1/CSINodeList`]
   @scala.inline
   def `storageDOTk8sDOTio/v1beta1/StorageClass`: `storageDOTk8sDOTio/v1beta1/StorageClass` = "storage.k8s.io/v1beta1/StorageClass".asInstanceOf[`storageDOTk8sDOTio/v1beta1/StorageClass`]
   @scala.inline

@@ -224,7 +224,7 @@ object IoTAnalyticsNs extends js.Object {
       */
     var datasetName: DatasetName
     /**
-      * [Optional] How long, in days, message data is kept for the data set. If not given or set to null, the latest version of the dataset content plus the latest succeeded version (if they are different) are retained for at most 90 days.
+      * [Optional] How long, in days, versions of data set contents are kept for the data set. If not specified or set to null, versions of data set contents are retained for at most 90 days. The number of versions of data set contents retained is determined by the versioningConfiguration parameter. (For more information, see https://docs.aws.amazon.com/iotanalytics/latest/userguide/getting-started.html#aws-iot-analytics-dataset-versions)
       */
     var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
     /**
@@ -235,6 +235,10 @@ object IoTAnalyticsNs extends js.Object {
       * A list of triggers. A trigger causes data set contents to be populated at a specified time interval or when another data set's contents are created. The list of triggers can be empty or contain up to five DataSetTrigger objects.
       */
     var triggers: js.UndefOr[DatasetTriggers] = js.undefined
+    /**
+      * [Optional] How many versions of data set contents are kept. If not specified or set to null, only the latest version plus the latest succeeded version (if they are different) are kept for the time period specified by the "retentionPeriod" parameter. (For more information, see https://docs.aws.amazon.com/iotanalytics/latest/userguide/getting-started.html#aws-iot-analytics-dataset-versions)
+      */
+    var versioningConfiguration: js.UndefOr[VersioningConfiguration] = js.undefined
   }
   
   trait CreateDatasetResponse extends js.Object {
@@ -247,7 +251,7 @@ object IoTAnalyticsNs extends js.Object {
       */
     var datasetName: js.UndefOr[DatasetName] = js.undefined
     /**
-      * How long, in days, message data is kept for the data set.
+      * How long, in days, data set contents are kept for the data set.
       */
     var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
   }
@@ -284,7 +288,7 @@ object IoTAnalyticsNs extends js.Object {
   
   trait CreatePipelineRequest extends js.Object {
     /**
-      * A list of pipeline activities. The list can be 1-25 PipelineActivity objects. Activities perform transformations on your messages, such as removing, renaming, or adding message attributes; filtering messages based on attribute values; invoking your Lambda functions on messages for advanced processing; or performing mathematical transformations to normalize device data.
+      * A list of "PipelineActivity" objects. Activities perform transformations on your messages, such as removing, renaming or adding message attributes; filtering messages based on attribute values; invoking your Lambda functions on messages for advanced processing; or performing mathematical transformations to normalize device data. The list can be 2-25 PipelineActivity objects and must contain both a channel and a datastore activity. Each entry in the list must contain only one activity, for example:  pipelineActivities = [ { "channel": { ... } }, { "lambda": { ... } }, ... ] 
       */
     var pipelineActivities: PipelineActivities
     /**
@@ -345,6 +349,10 @@ object IoTAnalyticsNs extends js.Object {
       * The "DatasetTrigger" objects that specify when the data set is automatically updated.
       */
     var triggers: js.UndefOr[DatasetTriggers] = js.undefined
+    /**
+      * [Optional] How many versions of data set contents are kept. If not specified or set to null, only the latest version plus the latest succeeded version (if they are different) are kept for the time period specified by the "retentionPeriod" parameter. (For more information, see https://docs.aws.amazon.com/iotanalytics/latest/userguide/getting-started.html#aws-iot-analytics-dataset-versions)
+      */
+    var versioningConfiguration: js.UndefOr[VersioningConfiguration] = js.undefined
   }
   
   trait DatasetAction extends js.Object {
@@ -1193,7 +1201,7 @@ object IoTAnalyticsNs extends js.Object {
   
   trait Schedule extends js.Object {
     /**
-      * The expression that defines when to trigger an update. For more information, see  Schedule Expressions for Rules in the Amazon CloudWatch documentation.
+      * The expression that defines when to trigger an update. For more information, see  Schedule Expressions for Rules in the Amazon CloudWatch Events User Guide.
       */
     var expression: js.UndefOr[ScheduleExpression] = js.undefined
   }
@@ -1421,7 +1429,7 @@ object IoTAnalyticsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDatastoreResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a pipeline. A pipeline consumes messages from one or more channels and allows you to process the messages before storing them in a data store.
+      * Creates a pipeline. A pipeline consumes messages from one or more channels and allows you to process the messages before storing them in a data store. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
       */
     def createPipeline(): awsDashSdkLib.libRequestMod.Request[CreatePipelineResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createPipeline(
@@ -1432,7 +1440,7 @@ object IoTAnalyticsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreatePipelineResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a pipeline. A pipeline consumes messages from one or more channels and allows you to process the messages before storing them in a data store.
+      * Creates a pipeline. A pipeline consumes messages from one or more channels and allows you to process the messages before storing them in a data store. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
       */
     def createPipeline(params: CreatePipelineRequest): awsDashSdkLib.libRequestMod.Request[CreatePipelineResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createPipeline(
@@ -1970,14 +1978,14 @@ object IoTAnalyticsNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Updates the settings of a pipeline.
+      * Updates the settings of a pipeline. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
       */
     def updatePipeline(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updatePipeline(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Updates the settings of a pipeline.
+      * Updates the settings of a pipeline. You must specify both a channel and a datastore activity and, optionally, as many as 23 additional activities in the pipelineActivities array.
       */
     def updatePipeline(params: UpdatePipelineRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updatePipeline(
@@ -2024,13 +2032,17 @@ object IoTAnalyticsNs extends js.Object {
       */
     var datasetName: DatasetName
     /**
-      * How long, in days, message data is kept for the data set.
+      * How long, in days, data set contents are kept for the data set.
       */
     var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
     /**
       * A list of "DatasetTrigger" objects. The list can be empty or can contain up to five DataSetTrigger objects.
       */
     var triggers: js.UndefOr[DatasetTriggers] = js.undefined
+    /**
+      * [Optional] How many versions of data set contents are kept. If not specified or set to null, only the latest version plus the latest succeeded version (if they are different) are kept for the time period specified by the "retentionPeriod" parameter. (For more information, see https://docs.aws.amazon.com/iotanalytics/latest/userguide/getting-started.html#aws-iot-analytics-dataset-versions)
+      */
+    var versioningConfiguration: js.UndefOr[VersioningConfiguration] = js.undefined
   }
   
   trait UpdateDatastoreRequest extends js.Object {
@@ -2046,7 +2058,7 @@ object IoTAnalyticsNs extends js.Object {
   
   trait UpdatePipelineRequest extends js.Object {
     /**
-      * A list of "PipelineActivity" objects. The list can be 1-25 PipelineActivity objects. Activities perform transformations on your messages, such as removing, renaming or adding message attributes; filtering messages based on attribute values; invoking your Lambda functions on messages for advanced processing; or performing mathematical transformations to normalize device data.
+      * A list of "PipelineActivity" objects. Activities perform transformations on your messages, such as removing, renaming or adding message attributes; filtering messages based on attribute values; invoking your Lambda functions on messages for advanced processing; or performing mathematical transformations to normalize device data. The list can be 2-25 PipelineActivity objects and must contain both a channel and a datastore activity. Each entry in the list must contain only one activity, for example:  pipelineActivities = [ { "channel": { ... } }, { "lambda": { ... } }, ... ] 
       */
     var pipelineActivities: PipelineActivities
     /**
@@ -2078,6 +2090,17 @@ object IoTAnalyticsNs extends js.Object {
     var stringValue: js.UndefOr[StringValue] = js.undefined
   }
   
+  trait VersioningConfiguration extends js.Object {
+    /**
+      * How many versions of data set contents will be kept. The "unlimited" parameter must be false.
+      */
+    var maxVersions: js.UndefOr[MaxVersions] = js.undefined
+    /**
+      * If true, unlimited versions of data set contents will be kept.
+      */
+    var unlimited: js.UndefOr[UnlimitedVersioning] = js.undefined
+  }
+  
   trait _ChannelStatus extends js.Object
   
   trait _ComputeType extends js.Object
@@ -2102,26 +2125,60 @@ object IoTAnalyticsNs extends js.Object {
   type BatchPutMessageErrorEntries = js.Array[BatchPutMessageErrorEntry]
   type ChannelArn = java.lang.String
   type ChannelName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATING
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETING
+    - java.lang.String
+  */
   type ChannelStatus = _ChannelStatus | java.lang.String
   type ChannelSummaries = js.Array[ChannelSummary]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ACU_1
+    - awsDashSdkLib.awsDashSdkLibStrings.ACU_2
+    - java.lang.String
+  */
   type ComputeType = _ComputeType | java.lang.String
   type DatasetActionName = java.lang.String
   type DatasetActionSummaries = js.Array[DatasetActionSummary]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.QUERY
+    - awsDashSdkLib.awsDashSdkLibStrings.CONTAINER
+    - java.lang.String
+  */
   type DatasetActionType = _DatasetActionType | java.lang.String
   type DatasetActions = js.Array[DatasetAction]
   type DatasetArn = java.lang.String
   type DatasetContentDeliveryRules = js.Array[DatasetContentDeliveryRule]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATING
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - java.lang.String
+  */
   type DatasetContentState = _DatasetContentState | java.lang.String
   type DatasetContentSummaries = js.Array[DatasetContentSummary]
   type DatasetContentVersion = java.lang.String
   type DatasetEntries = js.Array[DatasetEntry]
   type DatasetName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATING
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETING
+    - java.lang.String
+  */
   type DatasetStatus = _DatasetStatus | java.lang.String
   type DatasetSummaries = js.Array[DatasetSummary]
   type DatasetTriggers = js.Array[DatasetTrigger]
   type DatastoreArn = java.lang.String
   type DatastoreName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATING
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETING
+    - java.lang.String
+  */
   type DatastoreStatus = _DatastoreStatus | java.lang.String
   type DatastoreSummaries = js.Array[DatastoreSummary]
   type DoubleValue = scala.Double
@@ -2140,6 +2197,7 @@ object IoTAnalyticsNs extends js.Object {
   type MathExpression = java.lang.String
   type MaxMessages = scala.Double
   type MaxResults = scala.Double
+  type MaxVersions = scala.Double
   type MessageId = java.lang.String
   type MessagePayload = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsIotanalyticsMod.Blob | java.lang.String
   type MessagePayloads = js.Array[MessagePayload]
@@ -2155,6 +2213,13 @@ object IoTAnalyticsNs extends js.Object {
   type QueryFilters = js.Array[QueryFilter]
   type Reason = java.lang.String
   type ReprocessingId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.RUNNING
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED
+    - awsDashSdkLib.awsDashSdkLibStrings.CANCELLED
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - java.lang.String
+  */
   type ReprocessingStatus = _ReprocessingStatus | java.lang.String
   type ReprocessingSummaries = js.Array[ReprocessingSummary]
   type ResourceArn = java.lang.String
@@ -2172,9 +2237,15 @@ object IoTAnalyticsNs extends js.Object {
   type TimeExpression = java.lang.String
   type Timestamp = stdLib.Date
   type UnlimitedRetentionPeriod = scala.Boolean
+  type UnlimitedVersioning = scala.Boolean
   type VariableName = java.lang.String
   type Variables = js.Array[Variable]
   type VolumeSizeInGB = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-11-27`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

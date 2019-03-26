@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'onBlur' | 'onFocus'> ]: react.react.HTMLAttributes<std.HTMLElement>[P]} */ @js.native
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLElement>, 'onBlur' | 'onFocus'> ]: react.react.React.HTMLAttributes<std.HTMLElement>[P]} */ @js.native
 trait WidgetProps extends js.Object {
   var autofocus: scala.Boolean = js.native
   var disabled: scala.Boolean = js.native

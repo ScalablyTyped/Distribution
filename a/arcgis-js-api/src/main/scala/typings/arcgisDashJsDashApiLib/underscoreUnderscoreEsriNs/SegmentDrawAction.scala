@@ -37,3 +37,9 @@ trait SegmentDrawAction extends DrawAction {
   def complete(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.SegmentDrawAction")
+@js.native
+class SegmentDrawActionCls () extends SegmentDrawAction {
+  def this(properties: SegmentDrawActionProperties) = this()
+}
+

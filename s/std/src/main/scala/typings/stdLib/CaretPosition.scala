@@ -13,6 +13,17 @@ trait CaretPosition extends js.Object {
 
 @JSGlobal("CaretPosition")
 @js.native
+class CaretPositionCls () extends CaretPosition {
+  /* CompleteClass */
+  override val offset: scala.Double = js.native
+  /* CompleteClass */
+  override val offsetNode: Node = js.native
+  /* CompleteClass */
+  override def getClientRect(): DOMRect | scala.Null = js.native
+}
+
+@JSGlobal("CaretPosition")
+@js.native
 object CaretPosition
   extends org.scalablytyped.runtime.Instantiable0[CaretPosition]
 

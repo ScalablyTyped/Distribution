@@ -1015,6 +1015,11 @@ object SupportNs extends js.Object {
   type TrustedAdvisorCheckRefreshStatusList = js.Array[TrustedAdvisorCheckRefreshStatus]
   type TrustedAdvisorCheckSummaryList = js.Array[TrustedAdvisorCheckSummary]
   type TrustedAdvisorResourceDetailList = js.Array[TrustedAdvisorResourceDetail]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2013-04-15`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

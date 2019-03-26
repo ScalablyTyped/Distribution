@@ -1542,6 +1542,14 @@ object ECRNs extends js.Object {
   type ImageCount = scala.Double
   type ImageDetailList = js.Array[ImageDetail]
   type ImageDigest = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.InvalidImageDigest
+    - awsDashSdkLib.awsDashSdkLibStrings.InvalidImageTag
+    - awsDashSdkLib.awsDashSdkLibStrings.ImageTagDoesNotMatchDigest
+    - awsDashSdkLib.awsDashSdkLibStrings.ImageNotFound
+    - awsDashSdkLib.awsDashSdkLibStrings.MissingDigestAndTag
+    - java.lang.String
+  */
   type ImageFailureCode = _ImageFailureCode | java.lang.String
   type ImageFailureList = js.Array[ImageFailure]
   type ImageFailureReason = java.lang.String
@@ -1551,9 +1559,19 @@ object ECRNs extends js.Object {
   type ImageSizeInBytes = scala.Double
   type ImageTag = java.lang.String
   type ImageTagList = js.Array[ImageTag]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE
+    - awsDashSdkLib.awsDashSdkLibStrings.UNAVAILABLE
+    - java.lang.String
+  */
   type LayerAvailability = _LayerAvailability | java.lang.String
   type LayerDigest = java.lang.String
   type LayerDigestList = js.Array[LayerDigest]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.InvalidLayerDigest
+    - awsDashSdkLib.awsDashSdkLibStrings.MissingLayerDigest
+    - java.lang.String
+  */
   type LayerFailureCode = _LayerFailureCode | java.lang.String
   type LayerFailureList = js.Array[LayerFailure]
   type LayerFailureReason = java.lang.String
@@ -1561,6 +1579,13 @@ object ECRNs extends js.Object {
   type LayerPartBlob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsEcrMod.Blob | java.lang.String
   type LayerSizeInBytes = scala.Double
   type LifecyclePolicyPreviewResultList = js.Array[LifecyclePolicyPreviewResult]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETE
+    - awsDashSdkLib.awsDashSdkLibStrings.EXPIRED
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - java.lang.String
+  */
   type LifecyclePolicyPreviewStatus = _LifecyclePolicyPreviewStatus | java.lang.String
   type LifecyclePolicyRulePriority = scala.Double
   type LifecyclePolicyText = java.lang.String
@@ -1580,10 +1605,21 @@ object ECRNs extends js.Object {
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.TAGGED
+    - awsDashSdkLib.awsDashSdkLibStrings.UNTAGGED
+    - awsDashSdkLib.awsDashSdkLibStrings.ANY
+    - java.lang.String
+  */
   type TagStatus = _TagStatus | java.lang.String
   type TagValue = java.lang.String
   type UploadId = java.lang.String
   type Url = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2015-09-21`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

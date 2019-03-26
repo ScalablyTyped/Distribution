@@ -81,7 +81,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version. 
+    * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version.   After 90 days, deployment jobs expire and will be deleted. They will no longer be accessible.  
     */
   def createDeploymentJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.CreateDeploymentJobResponse, 
@@ -98,7 +98,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version. 
+    * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version.   After 90 days, deployment jobs expire and will be deleted. They will no longer be accessible.  
     */
   def createDeploymentJob(params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.CreateDeploymentJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.CreateDeploymentJobResponse, 
@@ -326,7 +326,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a simulation job.
+    * Creates a simulation job.  After 90 days, simulation jobs expire and will be deleted. They will no longer be accessible.  
     */
   def createSimulationJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.CreateSimulationJobResponse, 
@@ -343,7 +343,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a simulation job.
+    * Creates a simulation job.  After 90 days, simulation jobs expire and will be deleted. They will no longer be accessible.  
     */
   def createSimulationJob(params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.CreateSimulationJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.CreateSimulationJobResponse, 
@@ -746,7 +746,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.
+    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.     
     */
   def listDeploymentJobs(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListDeploymentJobsResponse, 
@@ -763,7 +763,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.
+    * Returns a list of deployment jobs for a fleet. You can optionally provide filters to retrieve specific deployment jobs.     
     */
   def listDeploymentJobs(params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListDeploymentJobsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListDeploymentJobsResponse, 
@@ -781,7 +781,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of fleets. You can optionally provide filters to retrieve specific fleets.
+    * Returns a list of fleets. You can optionally provide filters to retrieve specific fleets. 
     */
   def listFleets(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListFleetsResponse, 
@@ -798,7 +798,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of fleets. You can optionally provide filters to retrieve specific fleets.
+    * Returns a list of fleets. You can optionally provide filters to retrieve specific fleets. 
     */
   def listFleets(params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListFleetsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListFleetsResponse, 
@@ -886,7 +886,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of simulation applications. You can optionally provide filters to retrieve specific simulation applications.
+    * Returns a list of simulation applications. You can optionally provide filters to retrieve specific simulation applications. 
     */
   def listSimulationApplications(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListSimulationApplicationsResponse, 
@@ -903,7 +903,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of simulation applications. You can optionally provide filters to retrieve specific simulation applications.
+    * Returns a list of simulation applications. You can optionally provide filters to retrieve specific simulation applications. 
     */
   def listSimulationApplications(params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListSimulationApplicationsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListSimulationApplicationsResponse, 
@@ -921,7 +921,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of simulation jobs. You can optionally provide filters to retrieve specific simulation jobs.
+    * Returns a list of simulation jobs. You can optionally provide filters to retrieve specific simulation jobs. 
     */
   def listSimulationJobs(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListSimulationJobsResponse, 
@@ -938,7 +938,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of simulation jobs. You can optionally provide filters to retrieve specific simulation jobs.
+    * Returns a list of simulation jobs. You can optionally provide filters to retrieve specific simulation jobs. 
     */
   def listSimulationJobs(params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListSimulationJobsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListSimulationJobsResponse, 

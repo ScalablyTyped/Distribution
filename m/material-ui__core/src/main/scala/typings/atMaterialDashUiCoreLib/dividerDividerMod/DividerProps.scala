@@ -6,15 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLHRElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLHRElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLHRElement>, @material-ui/core.@material-ui/core/Divider/Divider.DividerClassKey, never>) */ trait DividerProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[DividerClassKey] {
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLHRElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLHRElement>[P]} */ trait DividerProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[DividerClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var absolute: js.UndefOr[scala.Boolean] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[DividerProps]] = js.undefined
   var inset: js.UndefOr[scala.Boolean] = js.undefined
   var light: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var variant: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fullWidth | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.inset | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.middle
   ] = js.undefined

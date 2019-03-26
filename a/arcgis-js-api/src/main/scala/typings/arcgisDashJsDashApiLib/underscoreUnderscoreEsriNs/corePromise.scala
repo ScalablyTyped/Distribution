@@ -45,3 +45,7 @@ trait corePromise extends js.Object {
   def when(callback: js.Function, errback: js.Function): arcgisDashJsDashApiLib.IPromise[_] = js.native
 }
 
+@JSGlobal("__esri.corePromise")
+@js.native
+class corePromiseCls () extends corePromise
+

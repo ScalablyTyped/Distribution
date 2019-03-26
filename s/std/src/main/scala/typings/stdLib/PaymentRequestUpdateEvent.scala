@@ -12,6 +12,13 @@ trait PaymentRequestUpdateEvent extends Event {
 
 @JSGlobal("PaymentRequestUpdateEvent")
 @js.native
+class PaymentRequestUpdateEventCls protected () extends PaymentRequestUpdateEvent {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: PaymentRequestUpdateEventInit) = this()
+}
+
+@JSGlobal("PaymentRequestUpdateEvent")
+@js.native
 object PaymentRequestUpdateEvent
   extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, PaymentRequestUpdateEvent]
      with org.scalablytyped.runtime.Instantiable2[

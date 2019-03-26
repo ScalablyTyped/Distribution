@@ -23,6 +23,33 @@ object typesNs extends js.Object {
   }
   
   @js.native
+  class BigDecimalCls protected () extends BigDecimal {
+    def this(unscaledValue: scala.Double, scale: scala.Double) = this()
+    /* CompleteClass */
+    override def add(other: BigDecimal): BigDecimal = js.native
+    /* CompleteClass */
+    override def compare(other: BigDecimal): scala.Double = js.native
+    /* CompleteClass */
+    override def equals(other: BigDecimal): scala.Boolean = js.native
+    /* CompleteClass */
+    override def greaterThan(other: BigDecimal): scala.Boolean = js.native
+    /* CompleteClass */
+    override def inspect(): java.lang.String = js.native
+    /* CompleteClass */
+    override def isNegative(): scala.Boolean = js.native
+    /* CompleteClass */
+    override def isZero(): scala.Boolean = js.native
+    /* CompleteClass */
+    override def notEquals(other: BigDecimal): scala.Boolean = js.native
+    /* CompleteClass */
+    override def subtract(other: BigDecimal): BigDecimal = js.native
+    /* CompleteClass */
+    override def toJSON(): java.lang.String = js.native
+    /* CompleteClass */
+    override def toNumber(): scala.Double = js.native
+  }
+  
+  @js.native
   trait BigDecimalStatic
     extends org.scalablytyped.runtime.Instantiable2[/* unscaledValue */ scala.Double, /* scale */ scala.Double, BigDecimal] {
     def fromBuffer(buf: nodeLib.Buffer): BigDecimal = js.native
@@ -34,6 +61,16 @@ object typesNs extends js.Object {
   trait Duration extends js.Object {
     def equals(other: Duration): scala.Boolean
     def toBuffer(): nodeLib.Buffer
+  }
+  
+  @js.native
+  class DurationCls protected () extends Duration {
+    def this(month: scala.Double, days: scala.Double, nanoseconds: longLib.longMod.namespaced) = this()
+    def this(month: scala.Double, days: scala.Double, nanoseconds: scala.Double) = this()
+    /* CompleteClass */
+    override def equals(other: Duration): scala.Boolean = js.native
+    /* CompleteClass */
+    override def toBuffer(): nodeLib.Buffer = js.native
   }
   
   @js.native
@@ -55,6 +92,23 @@ object typesNs extends js.Object {
     def getBuffer(): nodeLib.Buffer
     def inspect(): java.lang.String
     def toJSON(): java.lang.String
+  }
+  
+  @js.native
+  class InetAddressCls protected () extends InetAddress {
+    def this(buffer: nodeLib.Buffer) = this()
+    /* CompleteClass */
+    override var length: scala.Double = js.native
+    /* CompleteClass */
+    override var version: scala.Double = js.native
+    /* CompleteClass */
+    override def equals(other: InetAddress): scala.Boolean = js.native
+    /* CompleteClass */
+    override def getBuffer(): nodeLib.Buffer = js.native
+    /* CompleteClass */
+    override def inspect(): java.lang.String = js.native
+    /* CompleteClass */
+    override def toJSON(): java.lang.String = js.native
   }
   
   @js.native
@@ -100,6 +154,11 @@ object typesNs extends js.Object {
   }
   
   @js.native
+  class IntegerCls protected () extends Integer {
+    def this(bits: js.Array[scala.Double], sign: scala.Double) = this()
+  }
+  
+  @js.native
   trait IntegerStatic
     extends org.scalablytyped.runtime.Instantiable2[/* bits */ js.Array[scala.Double], /* sign */ scala.Double, Integer] {
     var ONE: Integer = js.native
@@ -125,6 +184,27 @@ object typesNs extends js.Object {
   }
   
   @js.native
+  class LocalDateCls protected () extends LocalDate {
+    def this(year: scala.Double, month: scala.Double, day: scala.Double) = this()
+    /* CompleteClass */
+    override var _value: scala.Double = js.native
+    /* CompleteClass */
+    override var day: scala.Double = js.native
+    /* CompleteClass */
+    override var month: scala.Double = js.native
+    /* CompleteClass */
+    override var year: scala.Double = js.native
+    /* CompleteClass */
+    override def equals(other: LocalDate): scala.Boolean = js.native
+    /* CompleteClass */
+    override def inspect(): java.lang.String = js.native
+    /* CompleteClass */
+    override def toBuffer(): nodeLib.Buffer = js.native
+    /* CompleteClass */
+    override def toJSON(): java.lang.String = js.native
+  }
+  
+  @js.native
   trait LocalDateStatic
     extends org.scalablytyped.runtime.Instantiable3[/* year */ scala.Double, /* month */ scala.Double, /* day */ scala.Double, LocalDate] {
     def fromBuffer(buffer: nodeLib.Buffer): LocalDate = js.native
@@ -145,6 +225,31 @@ object typesNs extends js.Object {
     def inspect(): java.lang.String
     def toBuffer(): nodeLib.Buffer
     def toJSON(): java.lang.String
+  }
+  
+  @js.native
+  class LocalTimeCls protected () extends LocalTime {
+    def this(totalNanoseconds: longLib.longMod.namespaced) = this()
+    /* CompleteClass */
+    override var hour: scala.Double = js.native
+    /* CompleteClass */
+    override var minute: scala.Double = js.native
+    /* CompleteClass */
+    override var nanosecond: scala.Double = js.native
+    /* CompleteClass */
+    override var second: scala.Double = js.native
+    /* CompleteClass */
+    override def compare(other: LocalTime): scala.Boolean = js.native
+    /* CompleteClass */
+    override def equals(other: LocalTime): scala.Boolean = js.native
+    /* CompleteClass */
+    override def getTotalNanoseconds(): longLib.longMod.namespaced = js.native
+    /* CompleteClass */
+    override def inspect(): java.lang.String = js.native
+    /* CompleteClass */
+    override def toBuffer(): nodeLib.Buffer = js.native
+    /* CompleteClass */
+    override def toJSON(): java.lang.String = js.native
   }
   
   @js.native
@@ -172,6 +277,34 @@ object typesNs extends js.Object {
     def getPageState(): java.lang.String
     def nextPage(): scala.Unit
     def wasApplied(): scala.Boolean
+  }
+  
+  @js.native
+  class ResultSetCls protected () extends ResultSet {
+    def this(response: js.Any, host: java.lang.String, triedHost: org.scalablytyped.runtime.StringDictionary[js.Any], speculativeExecutions: scala.Double, consistency: consistencies) = this()
+    /* CompleteClass */
+    override var columns: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
+    /* CompleteClass */
+    override var info: cassandraDashDriverLib.Anon_AchievedConsistency = js.native
+    /* CompleteClass */
+    @JSName(org.scalablytyped.runtime.Symbol.iterator)
+    override var iterator: js.Function0[stdLib.Iterator[Row]] = js.native
+    /* CompleteClass */
+    override var pageState: java.lang.String = js.native
+    /* CompleteClass */
+    override var rowLength: scala.Double = js.native
+    /* CompleteClass */
+    override var rows: js.Array[Row] = js.native
+    /* CompleteClass */
+    override def first(): Row | scala.Null = js.native
+    /* CompleteClass */
+    override def getColumns(): js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native
+    /* CompleteClass */
+    override def getPageState(): java.lang.String = js.native
+    /* CompleteClass */
+    override def nextPage(): scala.Unit = js.native
+    /* CompleteClass */
+    override def wasApplied(): scala.Boolean = js.native
   }
   
   @js.native
@@ -209,6 +342,11 @@ object typesNs extends js.Object {
   }
   
   @js.native
+  class RowCls protected () extends Row {
+    def this(columns: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]) = this()
+  }
+  
+  @js.native
   trait RowStatic
     extends org.scalablytyped.runtime.Instantiable1[
           /* columns */ js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]], 
@@ -220,6 +358,37 @@ object typesNs extends js.Object {
     def getDatePrecision(): cassandraDashDriverLib.Anon_Date
     def getNodeId(): nodeLib.Buffer
     def getNodeIdString(): java.lang.String
+  }
+  
+  @js.native
+  class TimeUuidCls () extends TimeUuid {
+    def this(value: stdLib.Date) = this()
+    def this(value: stdLib.Date, ticks: scala.Double) = this()
+    def this(value: stdLib.Date, ticks: scala.Double, nodeId: java.lang.String) = this()
+    def this(value: stdLib.Date, ticks: scala.Double, nodeId: nodeLib.Buffer) = this()
+    def this(value: stdLib.Date, ticks: scala.Double, nodeId: java.lang.String, clockId: java.lang.String) = this()
+    def this(value: stdLib.Date, ticks: scala.Double, nodeId: java.lang.String, clockId: nodeLib.Buffer) = this()
+    def this(value: stdLib.Date, ticks: scala.Double, nodeId: nodeLib.Buffer, clockId: java.lang.String) = this()
+    def this(value: stdLib.Date, ticks: scala.Double, nodeId: nodeLib.Buffer, clockId: nodeLib.Buffer) = this()
+    /* CompleteClass */
+    override var buffer: nodeLib.Buffer = js.native
+    // tslint:disable-next-line:no-unnecessary-qualifier
+    /* CompleteClass */
+    override def equals(other: Uuid): scala.Boolean = js.native
+    /* CompleteClass */
+    override def getBuffer(): nodeLib.Buffer = js.native
+    /* CompleteClass */
+    override def getDate(): stdLib.Date = js.native
+    /* CompleteClass */
+    override def getDatePrecision(): cassandraDashDriverLib.Anon_Date = js.native
+    /* CompleteClass */
+    override def getNodeId(): nodeLib.Buffer = js.native
+    /* CompleteClass */
+    override def getNodeIdString(): java.lang.String = js.native
+    /* CompleteClass */
+    override def inspect(): java.lang.String = js.native
+    /* CompleteClass */
+    override def toJSON(): java.lang.String = js.native
   }
   
   @js.native
@@ -271,6 +440,21 @@ object typesNs extends js.Object {
   }
   
   @js.native
+  class TupleCls protected () extends Tuple {
+    def this(args: js.Any*) = this()
+    /* CompleteClass */
+    override var elements: js.Array[_] = js.native
+    /* CompleteClass */
+    override var length: scala.Double = js.native
+    /* CompleteClass */
+    override def get(index: scala.Double): js.Any = js.native
+    /* CompleteClass */
+    override def toJSON(): java.lang.String = js.native
+    /* CompleteClass */
+    override def values(): js.Array[_] = js.native
+  }
+  
+  @js.native
   trait TupleStatic
     extends org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, Tuple] {
     def fromArray(elements: js.Array[_]): Tuple = js.native
@@ -283,6 +467,22 @@ object typesNs extends js.Object {
     def getBuffer(): nodeLib.Buffer
     def inspect(): java.lang.String
     def toJSON(): java.lang.String
+  }
+  
+  @js.native
+  class UuidCls protected () extends Uuid {
+    def this(buffer: nodeLib.Buffer) = this()
+    /* CompleteClass */
+    override var buffer: nodeLib.Buffer = js.native
+    // tslint:disable-next-line:no-unnecessary-qualifier
+    /* CompleteClass */
+    override def equals(other: Uuid): scala.Boolean = js.native
+    /* CompleteClass */
+    override def getBuffer(): nodeLib.Buffer = js.native
+    /* CompleteClass */
+    override def inspect(): java.lang.String = js.native
+    /* CompleteClass */
+    override def toJSON(): java.lang.String = js.native
   }
   
   @js.native

@@ -15,6 +15,12 @@ package object cytoscapeNs {
   /**
     * The output is a collection of node and edge elements OR single element.
     */
+  /* Rewritten from type alias, can be one of: 
+    - Collection[SingularElementReturnValue, SingularElementArgument]
+    - EdgeCollection
+    - NodeCollection
+    - SingularElementArgument
+  */
   type CollectionArgument = _CollectionArgument | (Collection[SingularElementReturnValue, SingularElementArgument])
   /**
     * Get a new collection, resulting from the collection without some specified elements.

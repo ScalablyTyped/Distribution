@@ -7,12 +7,16 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Collator extends js.Object {
+  var CollatorCls: org.scalablytyped.runtime.Instantiable0[stdLib.IntlNs.CollatorCls] = js.native
   @JSName("Collator")
   var Collator_Original: stdLib.Anon_LocalesOptions = js.native
+  var DateTimeFormatCls: org.scalablytyped.runtime.Instantiable0[stdLib.IntlNs.DateTimeFormatCls] = js.native
   @JSName("DateTimeFormat")
   var DateTimeFormat_Original: stdLib.Anon_LocalesOptionsSupportedLocalesOfArray = js.native
+  var NumberFormatCls: org.scalablytyped.runtime.Instantiable0[stdLib.IntlNs.NumberFormatCls] = js.native
   @JSName("NumberFormat")
   var NumberFormat_Original: stdLib.Anon_LocalesOptionsSupportedLocalesOf = js.native
+  var PluralRulesCls: org.scalablytyped.runtime.Instantiable0[stdLib.IntlNs.PluralRulesCls] = js.native
   @JSName("PluralRules")
   val PluralRules_Original: stdLib.Anon_Locales = js.native
   def Collator(): stdLib.IntlNs.Collator = js.native

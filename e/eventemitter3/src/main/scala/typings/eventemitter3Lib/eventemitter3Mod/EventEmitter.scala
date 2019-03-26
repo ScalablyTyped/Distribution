@@ -84,3 +84,7 @@ trait EventEmitter[EventTypes /* <: java.lang.String | js.Symbol */] extends js.
   ): this.type = js.native
 }
 
+@JSImport("eventemitter3", "EventEmitter")
+@js.native
+class EventEmitterCls[EventTypes /* <: java.lang.String | js.Symbol */] () extends EventEmitter[EventTypes]
+

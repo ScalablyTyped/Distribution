@@ -113,7 +113,10 @@ trait ojStatusMeterGauge extends dvtBaseGauge[ojStatusMeterGaugeSettableProperti
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
-  var onSvgStyleChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onSvgStyleChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onThresholdDisplayChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
       atOracleOraclejetLib.atOracleOraclejetLibStrings.currentOnly | atOracleOraclejetLib.atOracleOraclejetLibStrings.all | atOracleOraclejetLib.atOracleOraclejetLibStrings.onIndicator
@@ -126,7 +129,7 @@ trait ojStatusMeterGauge extends dvtBaseGauge[ojStatusMeterGaugeSettableProperti
   ]) | scala.Null = js.native
   var onTooltipChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1927274009
+      atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1592349836
     ], 
     _
   ]) | scala.Null = js.native
@@ -154,7 +157,7 @@ trait ojStatusMeterGauge extends dvtBaseGauge[ojStatusMeterGaugeSettableProperti
   var svgStyle: js.Object = js.native
   var thresholdDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.currentOnly | atOracleOraclejetLib.atOracleOraclejetLibStrings.all | atOracleOraclejetLib.atOracleOraclejetLibStrings.onIndicator = js.native
   var thresholds: js.Array[atOracleOraclejetLib.ojgaugeMod.ojStatusMeterGaugeNs.Threshold] = js.native
-  var tooltip: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1927274009 = js.native
+  var tooltip: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1592349836 = js.native
   val transientValue: scala.Double | scala.Null = js.native
   var value: scala.Double | scala.Null = js.native
   var visualEffects: atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto = js.native
@@ -614,7 +617,7 @@ trait ojStatusMeterGauge extends dvtBaseGauge[ojStatusMeterGaugeSettableProperti
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -623,7 +626,7 @@ trait ojStatusMeterGauge extends dvtBaseGauge[ojStatusMeterGaugeSettableProperti
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -653,7 +656,7 @@ trait ojStatusMeterGauge extends dvtBaseGauge[ojStatusMeterGaugeSettableProperti
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1927274009
+        atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1592349836
       ], 
       _
     ]
@@ -664,7 +667,7 @@ trait ojStatusMeterGauge extends dvtBaseGauge[ojStatusMeterGaugeSettableProperti
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1927274009
+        atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1592349836
       ], 
       _
     ],
@@ -752,13 +755,13 @@ trait ojStatusMeterGauge extends dvtBaseGauge[ojStatusMeterGaugeSettableProperti
   @JSName("getProperty")
   def getProperty_svgClassName(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgClassName): java.lang.String = js.native
   @JSName("getProperty")
-  def getProperty_svgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyle): js.Any = js.native
+  def getProperty_svgStyle(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.svgStyle): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_thresholdDisplay(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.thresholdDisplay): atOracleOraclejetLib.atOracleOraclejetLibStrings.currentOnly | atOracleOraclejetLib.atOracleOraclejetLibStrings.all | atOracleOraclejetLib.atOracleOraclejetLibStrings.onIndicator = js.native
   @JSName("getProperty")
   def getProperty_thresholds(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.thresholds): js.Array[atOracleOraclejetLib.ojgaugeMod.ojStatusMeterGaugeNs.Threshold] = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.tooltip): atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1927274009 = js.native
+  def getProperty_tooltip(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.tooltip): atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1592349836 = js.native
   @JSName("getProperty")
   def getProperty_transientValue(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.transientValue): scala.Double | scala.Null = js.native
   @JSName("getProperty")
@@ -877,7 +880,7 @@ trait ojStatusMeterGauge extends dvtBaseGauge[ojStatusMeterGaugeSettableProperti
   @JSName("setProperty")
   def setProperty_tooltip(
     property: atOracleOraclejetLib.atOracleOraclejetLibStrings.tooltip,
-    value: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1927274009
+    value: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_1592349836
   ): scala.Unit = js.native
   @JSName("setProperty")
   def setProperty_transientValue(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.transientValue): scala.Unit = js.native

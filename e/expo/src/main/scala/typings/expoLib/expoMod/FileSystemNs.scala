@@ -36,13 +36,21 @@ object FileSystemNs extends js.Object {
     def savable(): PauseResult = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - expoLib.expoLibStrings.utf8
+    - expoLib.expoLibStrings.base64
+  */
   trait EncodingType extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - expoLib.Anon_Exists
+    - expoLib.Anon_ExistsFalse
+  */
   trait FileInfo extends js.Object
   
   trait PauseResult extends js.Object {
     var fileUri: java.lang.String
-    var options: expoLib.Anon_Md5Boolean_1357212231
+    var options: expoLib.Anon_Md5Boolean_932053220
     var resumeData: java.lang.String
     var url: java.lang.String
   }

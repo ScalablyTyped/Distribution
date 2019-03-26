@@ -13,6 +13,13 @@ trait HashChangeEvent extends Event {
 
 @JSGlobal("HashChangeEvent")
 @js.native
+class HashChangeEventCls protected () extends HashChangeEvent {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: HashChangeEventInit) = this()
+}
+
+@JSGlobal("HashChangeEvent")
+@js.native
 object HashChangeEvent
   extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, HashChangeEvent]
      with org.scalablytyped.runtime.Instantiable2[

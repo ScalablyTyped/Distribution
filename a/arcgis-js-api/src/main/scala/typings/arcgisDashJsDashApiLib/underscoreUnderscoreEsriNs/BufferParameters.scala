@@ -59,3 +59,9 @@ trait BufferParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.BufferParameters")
+@js.native
+class BufferParametersCls () extends BufferParameters {
+  def this(properties: BufferParametersProperties) = this()
+}
+

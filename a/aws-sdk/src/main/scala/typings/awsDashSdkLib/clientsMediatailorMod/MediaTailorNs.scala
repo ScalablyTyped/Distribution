@@ -486,6 +486,11 @@ object MediaTailorNs extends js.Object {
   type __listOfPlaybackConfigurations = js.Array[PlaybackConfiguration]
   type __listOf__string = js.Array[__string]
   type __string = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2018-04-23`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

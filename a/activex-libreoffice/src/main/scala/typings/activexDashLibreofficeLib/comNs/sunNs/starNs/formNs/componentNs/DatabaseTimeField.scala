@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /** This service specifies a data-aware field for inputting a time value. */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.componentNs.TimeField because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultTime, getPropertyValues, getPropertyValues, setPropertyValues, setPropertyValues */ @js.native
+- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.componentNs.TimeField because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultTime */ @js.native
 trait DatabaseTimeField
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.DataAwareControlModel {
   /**

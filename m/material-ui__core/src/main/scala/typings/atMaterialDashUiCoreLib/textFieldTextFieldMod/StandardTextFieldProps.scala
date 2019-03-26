@@ -9,7 +9,7 @@ trait StandardTextFieldProps
   extends BaseTextFieldProps
      with TextFieldProps {
   var InputProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.inputInputMod.InputProps]] = js.undefined
-  var inputProps: js.UndefOr[js.Any] = js.undefined
+  var inputProps: js.UndefOr[scala.Nothing] = js.undefined
   var variant: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.standard] = js.undefined
 }
 
@@ -32,7 +32,7 @@ object StandardTextFieldProps {
     helperText: reactLib.reactMod.ReactNs.ReactNode = null,
     id: java.lang.String = null,
     innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
-    inputProps: js.Any = null,
+    inputProps: js.UndefOr[scala.Nothing] = js.undefined,
     inputRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
     label: reactLib.reactMod.ReactNs.ReactNode = null,
     margin: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Margin = null,
@@ -66,7 +66,7 @@ object StandardTextFieldProps {
     if (helperText != null) __obj.updateDynamic("helperText")(helperText.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
     if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
+    if (!js.isUndefined(inputProps)) __obj.updateDynamic("inputProps")(inputProps)
     if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     if (margin != null) __obj.updateDynamic("margin")(margin)

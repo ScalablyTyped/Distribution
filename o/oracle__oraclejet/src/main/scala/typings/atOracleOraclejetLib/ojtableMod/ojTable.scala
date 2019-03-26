@@ -59,7 +59,10 @@ trait ojTable[K, D]
     ], 
     _
   ]) | scala.Null = js.native
-  var onFirstSelectedRowChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onFirstSelectedRowChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onHorizontalGridVisibleChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
       atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.enabled | atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled
@@ -379,7 +382,7 @@ trait ojTable[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.firstSelectedRowChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -388,7 +391,7 @@ trait ojTable[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.firstSelectedRowChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -664,7 +667,7 @@ trait ojTable[K, D]
   @JSName("getProperty")
   def getProperty_editMode(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.editMode): atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.rowEdit = js.native
   @JSName("getProperty")
-  def getProperty_firstSelectedRow(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.firstSelectedRow): js.Any = js.native
+  def getProperty_firstSelectedRow(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.firstSelectedRow): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_horizontalGridVisible(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.horizontalGridVisible): atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.enabled | atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled = js.native
   @JSName("getProperty")

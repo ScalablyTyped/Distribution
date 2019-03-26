@@ -9,7 +9,7 @@ object reactDashGaLibComponents {
   @scala.inline
   def OutboundLink: reactLib.reactMod.ReactNs.ComponentType[
     reactDashGaLib.reactDashGaMod.OutboundLinkProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLAnchorElement]
-  ] = reactDashGaLib.reactDashGaMod.^.OutboundLink.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashGaLib.reactDashGaMod.OutboundLink].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   reactDashGaLib.reactDashGaMod.OutboundLinkProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLAnchorElement]]]
 }
 

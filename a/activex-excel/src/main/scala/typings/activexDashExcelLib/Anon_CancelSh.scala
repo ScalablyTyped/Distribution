@@ -5,26 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_CancelSh extends js.Object {
-  var Cancel: scala.Boolean
-  val Sh: activexDashExcelLib.ExcelNs.Worksheet
-  val TargetPivotTable: activexDashExcelLib.ExcelNs.PivotTable
-  val ValueChangeEnd: scala.Double
-  val ValueChangeStart: scala.Double
-}
-
-object Anon_CancelSh {
-  @scala.inline
-  def apply(
-    Cancel: scala.Boolean,
-    Sh: activexDashExcelLib.ExcelNs.Worksheet,
-    TargetPivotTable: activexDashExcelLib.ExcelNs.PivotTable,
-    ValueChangeEnd: scala.Double,
-    ValueChangeStart: scala.Double
-  ): Anon_CancelSh = {
-    val __obj = js.Dynamic.literal(Cancel = Cancel, Sh = Sh, TargetPivotTable = TargetPivotTable, ValueChangeEnd = ValueChangeEnd, ValueChangeStart = ValueChangeStart)
-  
-    __obj.asInstanceOf[Anon_CancelSh]
-  }
+  var Cancel: scala.Boolean = js.native
+  val Sh: activexDashExcelLib.ExcelNs.Worksheet = js.native
+  @JSName("Target")
+  val Target_Original: activexDashExcelLib.ExcelNs.Range = js.native
+  def Target(Address: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
+  def Target(RowIndex: scala.Double): activexDashExcelLib.ExcelNs.Range = js.native
+  def Target(RowIndex: scala.Double, ColumnIndex: scala.Double): activexDashExcelLib.ExcelNs.Range = js.native
 }
 

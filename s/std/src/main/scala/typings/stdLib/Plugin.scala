@@ -20,6 +20,28 @@ trait Plugin
 
 @JSGlobal("Plugin")
 @js.native
+class PluginCls () extends Plugin {
+  /* CompleteClass */
+  override val description: java.lang.String = js.native
+  /* CompleteClass */
+  override val filename: java.lang.String = js.native
+  /* CompleteClass */
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  override var iterator: js.Function0[IterableIterator[MimeType]] = js.native
+  /* CompleteClass */
+  override val length: scala.Double = js.native
+  /* CompleteClass */
+  override val name: java.lang.String = js.native
+  /* CompleteClass */
+  override val version: java.lang.String = js.native
+  /* CompleteClass */
+  override def item(index: scala.Double): MimeType = js.native
+  /* CompleteClass */
+  override def namedItem(`type`: java.lang.String): MimeType = js.native
+}
+
+@JSGlobal("Plugin")
+@js.native
 object Plugin
   extends org.scalablytyped.runtime.Instantiable0[Plugin]
 

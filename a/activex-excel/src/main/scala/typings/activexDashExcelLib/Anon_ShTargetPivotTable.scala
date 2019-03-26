@@ -5,24 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_ShTargetPivotTable extends js.Object {
-  val Sh: js.Any
-  val TargetPivotTable: activexDashExcelLib.ExcelNs.PivotTable
-  val ValueChangeEnd: scala.Double
-  val ValueChangeStart: scala.Double
-}
-
-object Anon_ShTargetPivotTable {
-  @scala.inline
-  def apply(
-    Sh: js.Any,
-    TargetPivotTable: activexDashExcelLib.ExcelNs.PivotTable,
-    ValueChangeEnd: scala.Double,
-    ValueChangeStart: scala.Double
-  ): Anon_ShTargetPivotTable = {
-    val __obj = js.Dynamic.literal(Sh = Sh, TargetPivotTable = TargetPivotTable, ValueChangeEnd = ValueChangeEnd, ValueChangeStart = ValueChangeStart)
-  
-    __obj.asInstanceOf[Anon_ShTargetPivotTable]
-  }
+  val Sh: activexDashExcelLib.ExcelNs.Worksheet = js.native
+  val TargetPivotTable: activexDashExcelLib.ExcelNs.PivotTable = js.native
+  @JSName("TargetRange")
+  val TargetRange_Original: activexDashExcelLib.ExcelNs.Range = js.native
+  def TargetRange(Address: java.lang.String): activexDashExcelLib.ExcelNs.Range = js.native
+  def TargetRange(RowIndex: scala.Double): activexDashExcelLib.ExcelNs.Range = js.native
+  def TargetRange(RowIndex: scala.Double, ColumnIndex: scala.Double): activexDashExcelLib.ExcelNs.Range = js.native
 }
 

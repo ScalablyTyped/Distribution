@@ -33,6 +33,10 @@ trait IDBFactory extends js.Object {
 
 @JSGlobal("IDBFactory")
 @js.native
+class IDBFactoryCls () extends IDBFactory
+
+@JSGlobal("IDBFactory")
+@js.native
 object IDBFactory
   extends org.scalablytyped.runtime.Instantiable0[IDBFactory]
 

@@ -5,5 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - nukaDashCarouselLib.nukaDashCarouselLibStrings.fade
+  - nukaDashCarouselLib.nukaDashCarouselLibStrings.scroll
+*/
 trait CarouselTransitionModeProp extends js.Object
 

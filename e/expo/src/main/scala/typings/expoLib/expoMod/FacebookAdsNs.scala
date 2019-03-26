@@ -20,6 +20,14 @@ object FacebookAdsNs extends js.Object {
   class AdTriggerView[P] ()
     extends reactLib.reactMod.Component[AdTriggerViewProps[P], js.Object, js.Any]
   
+  /**
+    * Banner View
+    */
+  /* Rewritten from type alias, can be one of: 
+    - expoLib.expoLibStrings.large
+    - expoLib.expoLibStrings.rectangle
+    - expoLib.expoLibStrings.standard
+  */
   trait AdType extends js.Object
   
   @js.native
@@ -33,6 +41,15 @@ object FacebookAdsNs extends js.Object {
     def onPress(): scala.Unit
   }
   
+  /**
+    * Native Ads
+    */
+  /* Rewritten from type alias, can be one of: 
+    - expoLib.expoLibStrings.none
+    - expoLib.expoLibStrings.icon
+    - expoLib.expoLibStrings.image
+    - expoLib.expoLibStrings.all
+  */
   trait MediaCachePolicy extends js.Object
   
   trait NativeAd extends js.Object {
@@ -91,6 +108,14 @@ object FacebookAdsNs extends js.Object {
   @JSName("AdSettings")
   @js.native
   object AdSettingsNs extends js.Object {
+    /* Rewritten from type alias, can be one of: 
+      - expoLib.expoLibStrings.none
+      - expoLib.expoLibStrings.debug
+      - expoLib.expoLibStrings.verbose
+      - expoLib.expoLibStrings.warning
+      - expoLib.expoLibStrings.error
+      - expoLib.expoLibStrings.notification
+    */
     trait SDKLogLevel extends js.Object
     
     val currentDeviceHash: java.lang.String = js.native

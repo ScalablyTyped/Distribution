@@ -49,6 +49,10 @@ trait RTCDTMFSender extends EventTarget {
   ): scala.Unit = js.native
 }
 
+@JSGlobal("RTCDTMFSender")
+@js.native
+class RTCDTMFSenderCls () extends RTCDTMFSender
+
 @js.native
 trait RTCDtmfSender extends EventTarget {
   val canInsertDTMF: scala.Boolean = js.native
@@ -94,6 +98,12 @@ trait RTCDtmfSender extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
+}
+
+@JSGlobal("RTCDtmfSender")
+@js.native
+class RTCDtmfSenderCls protected () extends RTCDtmfSender {
+  def this(sender: RTCRtpSender) = this()
 }
 
 @JSGlobal("RTCDTMFSender")

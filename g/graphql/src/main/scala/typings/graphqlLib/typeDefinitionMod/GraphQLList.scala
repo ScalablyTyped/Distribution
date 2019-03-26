@@ -29,6 +29,18 @@ trait GraphQLList[T /* <: GraphQLType */] extends js.Object {
   def toJSON(): java.lang.String
 }
 
+@JSImport("graphql/type/definition", "GraphQLList")
+@js.native
+class GraphQLListCls protected () extends GraphQLList[GraphQLType] {
+  def this(`type`: GraphQLType) = this()
+  /* CompleteClass */
+  override val ofType: GraphQLType = js.native
+  /* CompleteClass */
+  override def inspect(): java.lang.String = js.native
+  /* CompleteClass */
+  override def toJSON(): java.lang.String = js.native
+}
+
 object GraphQLList {
   @scala.inline
   def apply[T /* <: GraphQLType */](

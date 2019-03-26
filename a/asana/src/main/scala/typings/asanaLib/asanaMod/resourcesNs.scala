@@ -8,6 +8,88 @@ import scala.scalajs.js.annotation._
 @JSImport("asana", "resources")
 @js.native
 object resourcesNs extends js.Object {
+  @js.native
+  class AttachmentsCls protected ()
+    extends asanaLib.asanaMod.asanaNs.resourcesNs.Attachments {
+    /**
+      * @param dispatcher
+      */
+    def this(dispatcher: asanaLib.asanaMod.asanaNs.Dispatcher) = this()
+  }
+  
+  @js.native
+  class EventsCls protected ()
+    extends asanaLib.asanaMod.asanaNs.resourcesNs.Events {
+    /**
+      * @param dispatcher
+      * @return
+      */
+    def this(dispatcher: asanaLib.asanaMod.asanaNs.Dispatcher) = this()
+  }
+  
+  @js.native
+  class ProjectsCls protected ()
+    extends asanaLib.asanaMod.asanaNs.resourcesNs.Projects {
+    /**
+      * @param dispatcher
+      */
+    def this(dispatcher: asanaLib.asanaMod.asanaNs.Dispatcher) = this()
+  }
+  
+  @js.native
+  class ResourceCls protected ()
+    extends asanaLib.asanaMod.asanaNs.resourcesNs.Resource {
+    /**
+      * @param dispatcher
+      */
+    def this(dispatcher: asanaLib.asanaMod.asanaNs.Dispatcher) = this()
+  }
+  
+  @js.native
+  class StoriesCls protected ()
+    extends asanaLib.asanaMod.asanaNs.resourcesNs.Stories {
+    /**
+      * @param dispatcher
+      */
+    def this(dispatcher: asanaLib.asanaMod.asanaNs.Dispatcher) = this()
+  }
+  
+  @js.native
+  class TagsCls protected ()
+    extends asanaLib.asanaMod.asanaNs.resourcesNs.Tags {
+    /**
+      * @param dispatcher
+      */
+    def this(dispatcher: asanaLib.asanaMod.asanaNs.Dispatcher) = this()
+  }
+  
+  @js.native
+  class TasksCls protected ()
+    extends asanaLib.asanaMod.asanaNs.resourcesNs.Tasks {
+    /**
+      * @param dispatcher
+      */
+    def this(dispatcher: asanaLib.asanaMod.asanaNs.Dispatcher) = this()
+  }
+  
+  @js.native
+  class TeamsCls protected ()
+    extends asanaLib.asanaMod.asanaNs.resourcesNs.Teams {
+    /**
+      * @param dispatcher
+      */
+    def this(dispatcher: asanaLib.asanaMod.asanaNs.Dispatcher) = this()
+  }
+  
+  @js.native
+  class UsersCls protected ()
+    extends asanaLib.asanaMod.asanaNs.resourcesNs.Users {
+    /**
+      * @param dispatcher
+      */
+    def this(dispatcher: asanaLib.asanaMod.asanaNs.Dispatcher) = this()
+  }
+  
   /**
     * **Webhooks are currently in BETA - The information here may change.**
     *
@@ -61,6 +143,15 @@ object resourcesNs extends js.Object {
   @js.native
   class Webhooks protected ()
     extends asanaLib.asanaMod.asanaNs.resourcesNs.Webhooks {
+    /**
+      * @param dispatcher
+      */
+    def this(dispatcher: asanaLib.asanaMod.asanaNs.Dispatcher) = this()
+  }
+  
+  @js.native
+  class WorkspacesCls protected ()
+    extends asanaLib.asanaMod.asanaNs.resourcesNs.Workspaces {
     /**
       * @param dispatcher
       */

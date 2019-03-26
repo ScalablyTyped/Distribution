@@ -22,7 +22,7 @@ trait AdditionalItems extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_TEXTHTML[keyof chrome-apps.Anon_TEXTHTML] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.textPlain | chromeDashAppsLib.chromeDashAppsLibStrings.textHtml
     ]
   ]
 }
@@ -36,7 +36,7 @@ object AdditionalItems {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_TEXTHTML[keyof chrome-apps.Anon_TEXTHTML] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.textPlain | chromeDashAppsLib.chromeDashAppsLibStrings.textHtml
       ]
     ]
   ): AdditionalItems = {

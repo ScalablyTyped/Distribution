@@ -12,6 +12,17 @@ trait WebKitPoint extends js.Object {
 
 @JSGlobal("WebKitPoint")
 @js.native
+class WebKitPointCls () extends WebKitPoint {
+  def this(x: scala.Double) = this()
+  def this(x: scala.Double, y: scala.Double) = this()
+  /* CompleteClass */
+  override var x: scala.Double = js.native
+  /* CompleteClass */
+  override var y: scala.Double = js.native
+}
+
+@JSGlobal("WebKitPoint")
+@js.native
 object WebKitPoint
   extends org.scalablytyped.runtime.Instantiable0[WebKitPoint]
      with org.scalablytyped.runtime.Instantiable1[/* x */ scala.Double, WebKitPoint]

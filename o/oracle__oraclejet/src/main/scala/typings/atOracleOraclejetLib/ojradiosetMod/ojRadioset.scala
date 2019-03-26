@@ -41,7 +41,10 @@ trait ojRadioset[K, D]
     _
   ]) | scala.Null = js.native
   @JSName("onValueChanged")
-  var onValueChanged_ojRadioset: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onValueChanged_ojRadioset: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var optionRenderer: js.UndefOr[
     (js.Function1[
       /* param0 */ atOracleOraclejetLib.ojradiosetMod.ojRadiosetNs.OptionContext[D], 

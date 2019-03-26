@@ -20,6 +20,33 @@ trait AnimationPlaybackEvent extends js.Object {
 
 @JSGlobal("AnimationPlaybackEvent")
 @js.native
+class AnimationPlaybackEventCls protected () extends AnimationPlaybackEvent {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: AnimationPlaybackEventInit) = this()
+  /* CompleteClass */
+  override var bubbles: scala.Boolean = js.native
+  /* CompleteClass */
+  override var cancelable: scala.Boolean = js.native
+  /* CompleteClass */
+  override var currentTarget: Animation = js.native
+  /* CompleteClass */
+  override val currentTime: scala.Double | scala.Null = js.native
+  /* CompleteClass */
+  override var defaultPrevented: scala.Boolean = js.native
+  /* CompleteClass */
+  override var eventPhase: scala.Double = js.native
+  /* CompleteClass */
+  override var target: Animation = js.native
+  /* CompleteClass */
+  override var timeStamp: scala.Double = js.native
+  /* CompleteClass */
+  override val timelineTime: scala.Double | scala.Null = js.native
+  /* CompleteClass */
+  override var `type`: java.lang.String = js.native
+}
+
+@JSGlobal("AnimationPlaybackEvent")
+@js.native
 object AnimationPlaybackEvent
   extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, AnimationPlaybackEvent]
      with org.scalablytyped.runtime.Instantiable2[

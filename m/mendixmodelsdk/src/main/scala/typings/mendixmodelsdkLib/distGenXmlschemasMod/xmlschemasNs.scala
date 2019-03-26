@@ -22,7 +22,7 @@ object xmlschemasNs extends js.Object {
   trait IXmlSchema extends IMxSchema
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.IMxSchema because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.IMxSchema because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   abstract class MxSchema protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -45,7 +45,7 @@ object xmlschemasNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/xml-schemas relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.IXmlSchema because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.IXmlSchema because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class XmlSchema protected () extends MxSchema {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     val entries: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[XmlSchemaEntry] = js.native

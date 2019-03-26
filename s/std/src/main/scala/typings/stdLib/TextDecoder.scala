@@ -40,6 +40,13 @@ trait TextDecoder extends js.Object {
 
 @JSGlobal("TextDecoder")
 @js.native
+class TextDecoderCls () extends TextDecoder {
+  def this(label: java.lang.String) = this()
+  def this(label: java.lang.String, options: TextDecoderOptions) = this()
+}
+
+@JSGlobal("TextDecoder")
+@js.native
 object TextDecoder
   extends org.scalablytyped.runtime.Instantiable0[TextDecoder]
      with org.scalablytyped.runtime.Instantiable1[/* label */ java.lang.String, TextDecoder]

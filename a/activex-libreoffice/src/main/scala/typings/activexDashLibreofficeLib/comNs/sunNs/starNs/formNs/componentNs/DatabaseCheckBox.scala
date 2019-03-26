@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * @see com.sun.star.awt.UnoControlCheckBoxModel.TriState
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.componentNs.CheckBox because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultState, getPropertyValues, getPropertyValues, RefValue, setPropertyValues, setPropertyValues */ @js.native
+- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.componentNs.CheckBox because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined DefaultState, RefValue */ @js.native
 trait DatabaseCheckBox
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.DataAwareControlModel {
   /**

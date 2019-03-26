@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("optics-agent", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  /* Extracted nested Instantiables into classes in defaultNs */
   val default: opticsDashAgentLib.Anon_Agent = js.native
   def configureAgent(options: Options): Agent = js.native
   def context(req: expressLib.expressMod.eNs.Request): js.Any = js.native

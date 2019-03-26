@@ -138,3 +138,9 @@ trait IdentifyParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.IdentifyParameters")
+@js.native
+class IdentifyParametersCls () extends IdentifyParameters {
+  def this(properties: IdentifyParametersProperties) = this()
+}
+

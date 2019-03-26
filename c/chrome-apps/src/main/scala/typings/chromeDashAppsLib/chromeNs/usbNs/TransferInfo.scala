@@ -17,7 +17,7 @@ trait TransferInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_IN[keyof chrome-apps.Anon_IN] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.in | chromeDashAppsLib.chromeDashAppsLibStrings.out
     ]
   ]
   /** The wIndex field, see *Ibid*. */
@@ -34,7 +34,7 @@ trait TransferInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_DEVICE[keyof chrome-apps.Anon_DEVICE] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.device | chromeDashAppsLib.chromeDashAppsLibStrings.interface | chromeDashAppsLib.chromeDashAppsLibStrings.endpoint | chromeDashAppsLib.chromeDashAppsLibStrings.other
     ]
   ]
   /** The bRequest field, see *Universal Serial Bus Specification Revision 1.1 § 9.3.* */
@@ -48,7 +48,7 @@ trait TransferInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CLASS[keyof chrome-apps.Anon_CLASS] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.standard | chromeDashAppsLib.chromeDashAppsLibStrings.`class` | chromeDashAppsLib.chromeDashAppsLibStrings.vendor | chromeDashAppsLib.chromeDashAppsLibStrings.reserved
     ]
   ]
   /**
@@ -70,7 +70,7 @@ object TransferInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_IN[keyof chrome-apps.Anon_IN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.in | chromeDashAppsLib.chromeDashAppsLibStrings.out
       ]
     ],
     index: chromeDashAppsLib.chromeNs.integer,
@@ -79,7 +79,7 @@ object TransferInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_DEVICE[keyof chrome-apps.Anon_DEVICE] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.device | chromeDashAppsLib.chromeDashAppsLibStrings.interface | chromeDashAppsLib.chromeDashAppsLibStrings.endpoint | chromeDashAppsLib.chromeDashAppsLibStrings.other
       ]
     ],
     request: chromeDashAppsLib.chromeNs.integer,
@@ -88,7 +88,7 @@ object TransferInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CLASS[keyof chrome-apps.Anon_CLASS] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.standard | chromeDashAppsLib.chromeDashAppsLibStrings.`class` | chromeDashAppsLib.chromeDashAppsLibStrings.vendor | chromeDashAppsLib.chromeDashAppsLibStrings.reserved
       ]
     ],
     value: chromeDashAppsLib.chromeNs.integer,

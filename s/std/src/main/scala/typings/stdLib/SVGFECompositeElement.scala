@@ -47,6 +47,37 @@ trait SVGFECompositeElement
 
 @JSGlobal("SVGFECompositeElement")
 @js.native
+class SVGFECompositeElementCls () extends SVGFECompositeElement {
+  /* CompleteClass */
+  override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override val height: SVGAnimatedLength = js.native
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val nextElementSibling: Element | scala.Null = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val previousElementSibling: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val result: SVGAnimatedString = js.native
+  /* CompleteClass */
+  override val style: CSSStyleDeclaration = js.native
+  /* CompleteClass */
+  override val width: SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override val x: SVGAnimatedLength = js.native
+  /* CompleteClass */
+  override val y: SVGAnimatedLength = js.native
+}
+
+@JSGlobal("SVGFECompositeElement")
+@js.native
 object SVGFECompositeElement
   extends org.scalablytyped.runtime.Instantiable0[SVGFECompositeElement] {
   val SVG_FECOMPOSITE_OPERATOR_ARITHMETIC: scala.Double = js.native

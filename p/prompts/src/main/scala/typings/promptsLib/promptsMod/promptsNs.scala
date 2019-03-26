@@ -58,6 +58,18 @@ object promptsNs extends js.Object {
     var validate: js.UndefOr[PrevCaller[T, scala.Unit]] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - promptsLib.promptsLibStrings.text
+    - promptsLib.promptsLibStrings.password
+    - promptsLib.promptsLibStrings.invisible
+    - promptsLib.promptsLibStrings.number
+    - promptsLib.promptsLibStrings.confirm
+    - promptsLib.promptsLibStrings.list
+    - promptsLib.promptsLibStrings.toggle
+    - promptsLib.promptsLibStrings.select
+    - promptsLib.promptsLibStrings.multiselect
+    - promptsLib.promptsLibStrings.autocomplete
+  */
   trait PromptType extends js.Object
   
   def autocomplete(args: PromptObject[java.lang.String]): js.Any = js.native

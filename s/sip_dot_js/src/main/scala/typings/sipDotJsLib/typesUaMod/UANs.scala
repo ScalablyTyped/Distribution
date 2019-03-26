@@ -33,8 +33,7 @@ object UANs extends js.Object {
     var hackViaTcp: js.UndefOr[scala.Boolean] = js.undefined
     var hackWssInTransport: js.UndefOr[scala.Boolean] = js.undefined
     var hostportParams: js.UndefOr[js.Any] = js.undefined
-    var log: js.UndefOr[js.Any] = js.undefined
-     // TODO
+    var log: js.UndefOr[sipDotJsLib.Anon_BuiltinEnabled] = js.undefined
     var noAnswerTimeout: js.UndefOr[scala.Double] = js.undefined
     var password: js.UndefOr[java.lang.String] = js.undefined
     var register: js.UndefOr[scala.Boolean] = js.undefined

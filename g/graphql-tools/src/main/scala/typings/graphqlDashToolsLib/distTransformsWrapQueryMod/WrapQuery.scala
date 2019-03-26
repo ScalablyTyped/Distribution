@@ -5,31 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Lifted 3 members from Set(graphql-tools.graphql-tools/dist/Interfaces.Transform) */ @js.native
-trait WrapQuery extends js.Object {
-  var extractor: js.Any = js.native
-  var path: js.Any = js.native
-  var transformRequest: js.UndefOr[
-    js.Function1[
-      /* originalRequest */ graphqlDashToolsLib.distInterfacesMod.Request, 
-      graphqlDashToolsLib.distInterfacesMod.Request
-    ]
-  ] = js.native
-  var transformResult: js.UndefOr[
-    js.Function1[
-      /* result */ graphqlDashToolsLib.distInterfacesMod.Result, 
-      graphqlDashToolsLib.distInterfacesMod.Result
-    ]
-  ] = js.native
-  var transformSchema: js.UndefOr[
-    js.Function1[
-      /* schema */ graphqlLib.graphqlMod.GraphQLSchema, 
-      graphqlLib.graphqlMod.GraphQLSchema
-    ]
-  ] = js.native
-  var wrapper: js.Any = js.native
-  def transformRequest(originalRequest: graphqlDashToolsLib.distInterfacesMod.Request): graphqlDashToolsLib.distInterfacesMod.Request = js.native
-  def transformResult(originalResult: graphqlDashToolsLib.distInterfacesMod.Result): graphqlDashToolsLib.distInterfacesMod.Result = js.native
+trait WrapQuery
+  extends graphqlDashToolsLib.distInterfacesMod.Transform {
+  var extractor: js.Any
+  var path: js.Any
+  var wrapper: js.Any
+  @JSName("transformRequest")
+  def transformRequest_MWrapQuery(originalRequest: graphqlDashToolsLib.distInterfacesMod.Request): graphqlDashToolsLib.distInterfacesMod.Request
+  @JSName("transformResult")
+  def transformResult_MWrapQuery(originalResult: graphqlDashToolsLib.distInterfacesMod.Result): graphqlDashToolsLib.distInterfacesMod.Result
+}
+
+object WrapQuery {
+  @scala.inline
+  def apply(
+    extractor: js.Any,
+    path: js.Any,
+    transformRequest: graphqlDashToolsLib.distInterfacesMod.Request => graphqlDashToolsLib.distInterfacesMod.Request,
+    transformResult: graphqlDashToolsLib.distInterfacesMod.Result => graphqlDashToolsLib.distInterfacesMod.Result,
+    wrapper: js.Any,
+    transformSchema: /* schema */ graphqlLib.graphqlMod.GraphQLSchema => graphqlLib.graphqlMod.GraphQLSchema = null
+  ): WrapQuery = {
+    val __obj = js.Dynamic.literal(extractor = extractor, path = path, transformRequest = js.Any.fromFunction1(transformRequest), transformResult = js.Any.fromFunction1(transformResult), wrapper = wrapper)
+    if (transformSchema != null) __obj.updateDynamic("transformSchema")(js.Any.fromFunction1(transformSchema))
+    __obj.asInstanceOf[WrapQuery]
+  }
 }
 

@@ -89,6 +89,11 @@ object modelNs extends js.Object {
   @js.native
   class History () extends js.Object
   
+  // engine/model/item
+  /* Rewritten from type alias, can be one of: 
+    - Node
+    - TextProxy
+  */
   trait Item extends js.Object
   
   // engine/model/liveposition
@@ -274,8 +279,18 @@ object modelNs extends js.Object {
     def toJSON(): js.Object = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.before
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.after
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.same
+  */
   trait PositionRelation extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.toNone
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.toNext
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.toPrevious
+  */
   trait PositionStickiness extends js.Object
   
   // engine/model/range
@@ -443,6 +458,12 @@ object modelNs extends js.Object {
     var `type`: TreeWalkerValueType
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.elementStart
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.elementEnd
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.character
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.text
+  */
   trait TreeWalkerValueType extends js.Object
   
   // engine/model/writer
@@ -717,7 +738,22 @@ object modelNs extends js.Object {
     ): scala.Unit = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - Node
+    - TextProxy
+    - java.lang.String
+    - NodeList
+    - DocumentFragment
+    - stdLib.Iterable[js.Any]
+  */
   type NodeSet = _NodeSet | stdLib.Iterable[js.Any] | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - Node
+    - Position
+    - SchemaContext
+    - java.lang.String
+    - js.Array[java.lang.String | Node]
+  */
   type SchemaContextDefinition = _SchemaContextDefinition | (js.Array[java.lang.String | Node]) | java.lang.String
 }
 

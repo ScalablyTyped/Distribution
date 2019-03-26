@@ -24,6 +24,20 @@ object anchorsNs extends js.Object {
     var topRight: BBoxAnchorArguments
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - jointjsLib.jointjsLibStrings.center
+    - jointjsLib.jointjsLibStrings.top
+    - jointjsLib.jointjsLibStrings.bottom
+    - jointjsLib.jointjsLibStrings.left
+    - jointjsLib.jointjsLibStrings.right
+    - jointjsLib.jointjsLibStrings.topLeft
+    - jointjsLib.jointjsLibStrings.topRight
+    - jointjsLib.jointjsLibStrings.bottomLeft
+    - jointjsLib.jointjsLibStrings.bottomRight
+    - jointjsLib.jointjsLibStrings.perpendicular
+    - jointjsLib.jointjsLibStrings.midSide
+    - jointjsLib.jointjsLibStrings.modelCenter
+  */
   trait AnchorType extends js.Object
   
   trait BBoxAnchorArguments extends RotateAnchorArguments {

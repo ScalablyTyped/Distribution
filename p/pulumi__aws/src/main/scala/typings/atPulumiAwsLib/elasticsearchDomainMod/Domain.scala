@@ -76,7 +76,7 @@ class Domain protected ()
   /**
     * Node-to-node encryption options. See below.
     */
-  val nodeToNodeEncryption: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_EnabledBoolean_204597847] = js.native
+  val nodeToNodeEncryption: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_EnabledBoolean_1082978225] = js.native
   /**
     * Snapshot related options, see below.
     */

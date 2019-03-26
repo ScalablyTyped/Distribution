@@ -5,16 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_PathPromisify extends js.Object {
   /**
-    * Asynchronous symlink(2) - Create a new symbolic link to an existing file.
-    * @param target A path to an existing file. If a URL is provided, it must use the `file:` protocol.
-    * @param path A path to the new symlink. If a URL is provided, it must use the `file:` protocol.
-    * @param type May be set to `'dir'`, `'file'`, or `'junction'` (default is `'file'`) and is only available on Windows (ignored on other platforms).
-    * When using `'junction'`, the `target` argument will automatically be normalized to an absolute path.
+    * Asynchronous lstat(2) - Get file status. Does not dereference symbolic links.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     */
-  def __promisify__(target: nodeLib.fsMod.PathLike, path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
-  def __promisify__(target: nodeLib.fsMod.PathLike, path: nodeLib.fsMod.PathLike, `type`: java.lang.String): js.Promise[scala.Unit] = js.native
+  def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[nodeLib.fsMod.Stats]
+}
+
+object Anon_PathPromisify {
+  @scala.inline
+  def apply(__promisify__ : nodeLib.fsMod.PathLike => js.Promise[nodeLib.fsMod.Stats]): Anon_PathPromisify = {
+    val __obj = js.Dynamic.literal(__promisify__ = js.Any.fromFunction1(__promisify__))
+  
+    __obj.asInstanceOf[Anon_PathPromisify]
+  }
 }
 

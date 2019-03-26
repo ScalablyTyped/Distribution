@@ -83,6 +83,10 @@ class Deque[T] ()
     */
   var size_ : js.Any = js.native
   /**
+    * @inheritDoc
+    */
+  def assign(n: scala.Double, `val`: T): scala.Unit = js.native
+  /**
     * The capacity to store elements.
     *
     * @return The capacity.

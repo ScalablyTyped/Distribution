@@ -119,6 +119,14 @@ package object nodeDashSassMod {
   ]
   type FunctionDeclarations[FunctionType /* <: SassFunction */] = stdLib.Record[java.lang.String, FunctionType]
   type Importer = AsyncImporter | SyncImporter
+  /* Rewritten from type alias, can be one of: 
+    - nodeDashSassLib.Anon_File
+    - nodeDashSassLib.Anon_Contents
+    - stdLib.Error
+    - scala.Null
+    - nodeDashSassLib.nodeDashSassMod.typesNs.Null
+    - nodeDashSassLib.nodeDashSassMod.typesNs.Error
+  */
   type ImporterReturnType = _ImporterReturnType | stdLib.Error | scala.Null
   type SassFunction = SyncSassFunction | AsyncSassFunction
   type SassFunctionCallback = js.Function1[/* $result */ nodeDashSassLib.nodeDashSassMod.typesNs.ReturnValue, scala.Unit]

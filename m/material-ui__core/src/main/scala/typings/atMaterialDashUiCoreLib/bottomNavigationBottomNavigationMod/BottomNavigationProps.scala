@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange'> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLDivElement>, @material-ui/core.@material-ui/core/BottomNavigation/BottomNavigation.BottomNavigationClassKey, 'onChange'>) */ trait BottomNavigationProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BottomNavigationClassKey] {
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange'> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait BottomNavigationProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BottomNavigationClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var children: reactLib.reactMod.ReactNs.ReactNode
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[BottomNavigationProps]] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
@@ -20,7 +19,6 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   var showLabels: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
 }
 

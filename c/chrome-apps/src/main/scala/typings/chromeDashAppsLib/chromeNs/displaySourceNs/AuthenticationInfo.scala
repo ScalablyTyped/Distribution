@@ -20,7 +20,7 @@ trait AuthenticationInfo extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PBC[keyof chrome-apps.Anon_PBC] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.PBC | chromeDashAppsLib.chromeDashAppsLibStrings.PIN
       ]
     ]
   ] = js.undefined
@@ -35,7 +35,7 @@ object AuthenticationInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PBC[keyof chrome-apps.Anon_PBC] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.PBC | chromeDashAppsLib.chromeDashAppsLibStrings.PIN
       ]
     ] = null
   ): AuthenticationInfo = {

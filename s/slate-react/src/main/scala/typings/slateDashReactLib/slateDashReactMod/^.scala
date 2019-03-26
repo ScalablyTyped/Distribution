@@ -31,8 +31,8 @@ object ^ extends js.Object {
     editor: slateLib.slateMod.Editor
   ): slateLib.slateMod.Range = js.native
   def getEventRange(event: stdLib.Event, editor: slateLib.slateMod.Editor): slateLib.slateMod.Range = js.native
-  def getEventTransfer(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event]): slateDashReactLib.Anon_Node = js.native
-  def getEventTransfer(event: stdLib.Event): slateDashReactLib.Anon_Node = js.native
+  def getEventTransfer(event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event]): slateDashReactLib.Anon_NodeType = js.native
+  def getEventTransfer(event: stdLib.Event): slateDashReactLib.Anon_NodeType = js.native
   def setEventTransfer(
     event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.Element, reactLib.Event],
     `type`: SlateType,

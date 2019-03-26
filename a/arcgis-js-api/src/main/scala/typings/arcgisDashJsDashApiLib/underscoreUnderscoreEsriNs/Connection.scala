@@ -46,3 +46,12 @@ trait Connection extends js.Object {
   def invoke(methodName: java.lang.String, data: js.Any, options: ConnectionInvokeOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
 }
 
+@JSGlobal("__esri.Connection")
+@js.native
+/**
+  * This class is used to execute remote methods located on the module loaded into a separate thread via the [workers framework](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers-Connection.html)
+  */
+class ConnectionCls () extends Connection
+

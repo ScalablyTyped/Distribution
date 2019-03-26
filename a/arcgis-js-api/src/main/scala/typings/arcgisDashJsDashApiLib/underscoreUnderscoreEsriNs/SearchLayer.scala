@@ -27,3 +27,9 @@ trait SearchLayer extends Accessor {
   var subLayer: scala.Double = js.native
 }
 
+@JSGlobal("__esri.SearchLayer")
+@js.native
+class SearchLayerCls () extends SearchLayer {
+  def this(properties: SearchLayerProperties) = this()
+}
+

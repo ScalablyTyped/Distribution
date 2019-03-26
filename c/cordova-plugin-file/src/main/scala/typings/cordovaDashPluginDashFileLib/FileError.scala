@@ -12,6 +12,15 @@ trait FileError extends js.Object {
 
 @JSGlobal("FileError")
 @js.native
+class FileErrorCls protected () extends FileError {
+  def this(code: scala.Double) = this()
+  /** Error code */
+  /* CompleteClass */
+  override var code: scala.Double = js.native
+}
+
+@JSGlobal("FileError")
+@js.native
 object FileError
   extends org.scalablytyped.runtime.Instantiable1[/* code */ scala.Double, FileError] {
   var ABORT_ERR: scala.Double = js.native

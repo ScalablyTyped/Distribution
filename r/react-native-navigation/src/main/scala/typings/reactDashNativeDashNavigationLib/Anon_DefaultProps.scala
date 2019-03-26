@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait Anon_DefaultProps
   extends org.scalablytyped.runtime.Instantiable0[reactDashNativeDashNavigationLib.libDistAdaptersSharedElementMod.SharedElement] {
   var defaultProps: Anon_ResizeMode = js.native
-  var propTypes: Anon_ComponentName = js.native
+  var propTypes: Anon_ElementId = js.native
 }
 

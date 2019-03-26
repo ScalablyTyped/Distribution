@@ -13,6 +13,12 @@ trait Dict[T]
   extends /* key */ org.scalablytyped.runtime.StringDictionary[T]
      with /* key */ org.scalablytyped.runtime.NumberDictionary[T]
 
+@JSGlobal("Dict")
+@js.native
+class DictCls[T] () extends Dict[T] {
+  def this(value: Dict[T]) = this()
+}
+
 object Dict {
   @scala.inline
   def apply[T](

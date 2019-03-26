@@ -107,7 +107,7 @@ trait FrameBase extends Evalable {
   def `type`(
     selector: java.lang.String,
     text: java.lang.String,
-    options: puppeteerLib.Anon_DelayNumber_2000594539
+    options: puppeteerLib.Anon_DelayNumber_507099768
   ): js.Promise[scala.Unit] = js.native
   /** Returns frame's url. */
   def url(): java.lang.String = js.native

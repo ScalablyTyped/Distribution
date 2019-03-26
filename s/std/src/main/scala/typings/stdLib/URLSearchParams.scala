@@ -67,6 +67,15 @@ trait URLSearchParams extends _BodyInit {
 
 @JSGlobal("URLSearchParams")
 @js.native
+class URLSearchParamsCls () extends URLSearchParams {
+  def this(init: java.lang.String) = this()
+  def this(init: js.Array[js.Array[java.lang.String]]) = this()
+  def this(init: Record[java.lang.String, java.lang.String]) = this()
+  def this(init: URLSearchParams) = this()
+}
+
+@JSGlobal("URLSearchParams")
+@js.native
 object URLSearchParams
   extends org.scalablytyped.runtime.Instantiable0[URLSearchParams]
      with org.scalablytyped.runtime.Instantiable1[

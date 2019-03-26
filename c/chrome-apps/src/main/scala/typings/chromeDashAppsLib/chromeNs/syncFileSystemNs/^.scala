@@ -42,7 +42,9 @@ object ^ extends js.Object {
     * (for example, when the sync is temporarily disabled due to network or authentication error).
     * @see ServiceStatus
     */
-  val onServiceStatusChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* detail */ chromeDashAppsLib.Anon_DescriptionState, scala.Unit]] = js.native
+  val onServiceStatusChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[
+    js.Function1[/* detail */ chromeDashAppsLib.Anon_Authenticationrequired, scala.Unit]
+  ] = js.native
   /**
     * Gets the current conflict resolution policy.
     * @see ConflictResolutionPolicy
@@ -54,7 +56,7 @@ object ^ extends js.Object {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_LASTWRITEWIN[keyof chrome-apps.Anon_LASTWRITEWIN] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.last_write_win | chromeDashAppsLib.chromeDashAppsLibStrings.manual
         ]
       ], 
       scala.Unit
@@ -74,7 +76,7 @@ object ^ extends js.Object {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONFLICTING[keyof chrome-apps.Anon_CONFLICTING] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.synced | chromeDashAppsLib.chromeDashAppsLibStrings.pending | chromeDashAppsLib.chromeDashAppsLibStrings.conflicting
         ]
       ], 
       scala.Unit
@@ -98,7 +100,7 @@ object ^ extends js.Object {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_AUTHENTICATIONREQUIRED[keyof chrome-apps.Anon_AUTHENTICATIONREQUIRED] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.initializing | chromeDashAppsLib.chromeDashAppsLibStrings.running | chromeDashAppsLib.chromeDashAppsLibStrings.temporary_unavailable | chromeDashAppsLib.chromeDashAppsLibStrings.authentication_required | chromeDashAppsLib.chromeDashAppsLibStrings.disabled
         ]
       ], 
       scala.Unit
@@ -144,7 +146,7 @@ object ^ extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_LASTWRITEWIN[keyof chrome-apps.Anon_LASTWRITEWIN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.last_write_win | chromeDashAppsLib.chromeDashAppsLibStrings.manual
       ]
     ]
   ): scala.Unit = js.native
@@ -154,7 +156,7 @@ object ^ extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_LASTWRITEWIN[keyof chrome-apps.Anon_LASTWRITEWIN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.last_write_win | chromeDashAppsLib.chromeDashAppsLibStrings.manual
       ]
     ],
     callback: js.Function0[scala.Unit]

@@ -64,7 +64,7 @@ import scala.scalajs.js.annotation._
     * function
     * renderSeparator will be called to render the list separators which will be displayed between the list elements in the result view below the text input.
     */
-  var renderSeparator: js.UndefOr[js.Any] = js.undefined
+  var renderSeparator: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * function
     * render custom TextInput. All props passed to this function.
@@ -94,7 +94,7 @@ object AutocompleteProps {
     listStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
     onShowResult: /* showResults */ scala.Boolean => scala.Unit = null,
     onStartShouldSetResponderCapture: /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent => scala.Boolean = null,
-    renderSeparator: js.Any = null,
+    renderSeparator: js.UndefOr[scala.Nothing] = js.undefined,
     renderTextInput: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties */ /* props */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null
   ): AutocompleteProps[T] = {
     val __obj = js.Dynamic.literal(data = data, renderItem = js.Any.fromFunction1(renderItem))
@@ -105,7 +105,7 @@ object AutocompleteProps {
     if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
     if (onShowResult != null) __obj.updateDynamic("onShowResult")(js.Any.fromFunction1(onShowResult))
     if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1(onStartShouldSetResponderCapture))
-    if (renderSeparator != null) __obj.updateDynamic("renderSeparator")(renderSeparator)
+    if (!js.isUndefined(renderSeparator)) __obj.updateDynamic("renderSeparator")(renderSeparator)
     if (renderTextInput != null) __obj.updateDynamic("renderTextInput")(js.Any.fromFunction1(renderTextInput))
     __obj.asInstanceOf[AutocompleteProps[T]]
   }

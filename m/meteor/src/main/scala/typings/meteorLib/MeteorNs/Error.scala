@@ -11,6 +11,19 @@ trait Error extends js.Object {
   var reason: js.UndefOr[java.lang.String] = js.undefined
 }
 
+@JSGlobal("Meteor.Error")
+@js.native
+class ErrorCls protected () extends Error {
+  def this(error: java.lang.String) = this()
+  def this(error: scala.Double) = this()
+  def this(error: java.lang.String, reason: java.lang.String) = this()
+  def this(error: scala.Double, reason: java.lang.String) = this()
+  def this(error: java.lang.String, reason: java.lang.String, details: java.lang.String) = this()
+  def this(error: scala.Double, reason: java.lang.String, details: java.lang.String) = this()
+  /* CompleteClass */
+  override var error: java.lang.String | scala.Double = js.native
+}
+
 object Error {
   @scala.inline
   def apply(

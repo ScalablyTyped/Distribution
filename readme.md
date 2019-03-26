@@ -10,9 +10,13 @@ Beware: While these typings generally work, some details of the encoding are sti
 All currently published artifacts should be considered snapshots and will be deleted without notice.
 Expect the first stable release before May.
 
+## While you're here
+There will be a talk about this project at [flatMap(Oslo)](https://2019.flatmap.no/talks/berg) in May,
+which will be available online shortly after.
+
 ## About
 
-This is the home of Scala.js typings for **6514** Javascript libraries,
+This is the home of Scala.js typings for **6541** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -21,13 +25,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               180061      9163867       811328      2296387      6056152
- Markdown              6061        62798         1179            0        61619
+ Scala               191617      9496245       854543      2383578      6258124
+ Markdown              6077        62970         1160            0        61810
  JSON                     5           29            0            0           29
  Makefile                 2           35            7            0           28
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               186130      9226735       812514      2296387      6117834
+ Total               197702      9559285       855710      2383578      6319997
 --------------------------------------------------------------------------------
 
 ```
@@ -94,7 +98,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201903250331")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201903260537")
 ```
 
 ### `build.sbt`
@@ -158,7 +162,7 @@ You'll see there are two projects which target Scala.
 This project tries to pick up where it left off and finish the task.
 
 The converter, `tso`, powers `ScalablyTyped` with a huge set of features not frequently found elsewhere:
-- Parser for ~all of typescript 3.2
+- Parser for ~all of Typescript
 - Keeps ~all comments
 - Full handling of dependencies between libraries, including those outside of `DefinitelyTyped`
 - Full implementation of the module system, which all useful javascript libraries rely on
@@ -171,7 +175,7 @@ The converter, `tso`, powers `ScalablyTyped` with a huge set of features not fre
 - Fills in defaulted type parameters
 
 All these features combined enable us to rewrite a very high percentage of all typings,
-somewhere around 97-98% of the newest version of all libraries in the current set.
+somewhere around 98-99% of the newest version of all libraries in the current set.
 
 ## Is it production ready?
 
@@ -351,10 +355,11 @@ trait Crypto extends js.Object {
 
 For now you'll have to be aware of this limitation and treat bounds as documentation.
 
-### Whatsup with Instantiable?
+### Whatsup with classes?
+
 In Javascript classes are first class values, while in Scala they just float around in a parallel type-dimension.
-To capture this (and the idea of a "newable" function),
-a family of interfaces is introduced (in the `runtime` helper artifact):
+
+To capture this (and the idea of a "newable" function), a family of interfaces is introduced (in the `runtime` helper artifact):
 
 ```scala
 trait Instantiable1[T1, R] extends js.Object
@@ -366,8 +371,6 @@ object Instantiable1 {
   }
 }
 ```
-Barring better solutions to this problem, this will be extended with even more traits which can handle
- type parameters as well, but it's not done yet.
 
 Given this, we can capture that `window` owns a newable `Blob` thing for instance:
 ```scala
@@ -382,8 +385,39 @@ trait Anon_BlobParts
   with ScalablyTyped.runtime.Instantiable1[/* blobParts */ js.Array[BlobPart], Blob]
   with ScalablyTyped.runtime.Instantiable2[/* blobParts */ js.Array[BlobPart], /* options */ BlobPropertyBag, Blob]
 
+//usage
 val blob: Blob = stdLibMembers.window.Blob.newInstance0()
 ```
+
+#### inferred classes
+Since `Instantiable` has some drawbacks, statically reachable `Instantiable`s are upgraded to proper classes.
+
+For instance for this
+
+```scala
+@js.native
+trait HTMLDivElement extends HTMLElement
+
+@JSGlobal("HTMLDivElement")
+@js.native
+object HTMLDivElement
+  extends org.scalablytyped.runtime.Instantiable0[HTMLDivElement]
+```
+
+We will infer this class
+
+```scala
+@JSGlobal("HTMLDivElement")
+@js.native
+class HTMLDivElementCls () extends HTMLDivElement
+```
+
+These classes will frequently have a `Cls` suffix, again to avoid name conflicts.
+We keep both interface/type alias and the class because both might be useful (and in the case of angular, needed).
+
+Note: Be a bit wary with these classes. In typescript this pattern is sometimes used to signal
+that a it can participate in an instanceof check, but can't be instantiated.
+This applies to `HTMLDivElement` for instance.
 
 ### Whatsup with `this`?
 Javascript and `this` is a long story. Surprisingly, it's not getting shorter with Scala.js
@@ -413,62 +447,13 @@ trait UnderlyingSink extends js.Object {
 }
 ```
 
-### Whatsup with looong compile times?
-
-It shouldn't be too bad, except for one thing: instantiating a class with insanely deeply nested inheritance.
-A case study is `csstype`.
-
-Thousand of lines of members defining the entirety of CSS, including the legal values on the right hand side.
-
-Here is a taste:
-
-```scala
-trait StandardLonghandProperties[TLength] extends js.Object {
-  /**
-     * The CSS **`align-content`** property defines how the browser distributes space between and around content items along the cross\-axis of their container, which is serving as a flexbox container.
-     *
-     * **Initial value**: `normal`
-     *
-     * ---
-     *
-     * _Supported in Flex Layout_
-     *
-     * |  Chrome  | Firefox |  Safari   |  Edge  |   IE   |
-     * | :------: | :-----: | :-------: | :----: | :----: |
-     * |  **29**  | **28**  |   **9**   | **12** | **11** |
-     * | 21 _-x-_ |         | 6.1 _-x-_ |        |        |
-     *
-     * ---
-     *
-     * _Supported in Grid Layout_
-     *
-     * | Chrome | Firefox |  Safari  |  Edge  | IE  |
-     * | :----: | :-----: | :------: | :----: | :-: |
-     * | **57** | **52**  | **10.1** | **16** | n/a |
-     *
-     * ---
-     *
-     * @see https://developer.mozilla.org/docs/Web/CSS/align-content
-     */
-  val alignContent: js.UndefOr[AlignContentProperty] = js.undefined
-}
-
-type AlignContentProperty = Globals | ContentDistribution | ContentPosition | csstypeLib.csstypeLibStrings.baseline | csstypeLib.csstypeLibStrings.normal | java.lang.String
-type Globals = csstypeLib.csstypeLibStrings.`-moz-initial` | csstypeLib.csstypeLibStrings.inherit | csstypeLib.csstypeLibStrings.initial | csstypeLib.csstypeLibStrings.revert | csstypeLib.csstypeLibStrings.unset
-type ContentDistribution = csstypeLib.csstypeLibStrings.`space-around` | csstypeLib.csstypeLibStrings.`space-between` | csstypeLib.csstypeLibStrings.`space-evenly` | csstypeLib.csstypeLibStrings.stretch
-type ContentPosition = csstypeLib.csstypeLibStrings.center | csstypeLib.csstypeLibStrings.end | csstypeLib.csstypeLibStrings.`flex-end` | csstypeLib.csstypeLibStrings.`flex-start` | csstypeLib.csstypeLibStrings.start
-```
-
-Instantiating a single CSS style (for use in react, for instance) can add a second or two
- to your build time - Enjoy!
-
 ### Whatsup with strings?
 The Javascript world is a stringly-typed world.
 Typescript models the insanity with literal types.
 Literal types are supposed to land in Scala 2.13/dotty, but we don't have them yet.
 Even when we get them, erasure probably means they won't be too useful in this particular context.
 
-Soo, we cheat a bit. Wondering about what those `csstypeLib.csstypeLibStrings` things above?
+Soo, we cheat a bit. Let's have a look at what it looks like in the `csstype` library:
 ```scala
 package typings
 package csstypeLib
@@ -631,6 +616,45 @@ trait MediaStream extends EventTarget {
 
 Note also that this although this section mainly explores duplication of methods, there is also a consolidation step,
  which combines methods with the same JVM erasure, as Scala cares about that a lot.
+
+### Whatsup with rewriting type unions to inheritance?
+
+We've had some issues where unions of many types, among other issues like compile time, bumps
+into the JVMs limit for how many string literals can be referenced in a class/method.
+
+Scala is much better prepared to handle `trait`s with many implementations, so as long as all
+types in a long type union is contained in the same library, we rewrite for instance this:
+
+```scala
+type BlobPart = BufferSource | Blob | java.lang.String
+```
+
+Into this:
+
+```scala
+/* Rewritten from type alias, can be one of:
+  BufferSource |
+  Blob |
+  java.lang.String
+*/
+type BlobPart = _BlobPart | java.lang.String
+
+trait _BlobPart extends js.Object
+
+trait BufferSource extends _BlobPart
+```
+
+This mechanism also means that the fake string literals seen above can inherit from traits:
+```
+@js.native
+sealed trait center
+  extends AlignSetting
+     with CanvasTextAlign
+     with LineAlignSetting
+     with PositionAlignSetting
+     with ScrollLogicalPosition
+```
+
 
 ### Whatsup with @js.native and all that?
 So Scala.js has two types of interop, which is better described in the Scala.js documentation.

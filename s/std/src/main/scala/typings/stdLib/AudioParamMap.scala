@@ -14,6 +14,10 @@ trait AudioParamMap
 
 @JSGlobal("AudioParamMap")
 @js.native
+class AudioParamMapCls () extends AudioParamMap
+
+@JSGlobal("AudioParamMap")
+@js.native
 object AudioParamMap
   extends org.scalablytyped.runtime.Instantiable0[AudioParamMap]
 

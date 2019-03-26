@@ -296,3 +296,9 @@ trait Enumerable[T] extends js.Object {
   def zip[TRight, TResult](right: Enumerable[TRight], selector: js.Function2[/* left */ T, /* right */ TRight, TResult]): Enumerable[TResult] = js.native
 }
 
+@JSGlobal("Ix.Enumerable")
+@js.native
+class EnumerableCls[T] protected () extends Enumerable[T] {
+  def this(getEnumerator: js.Function0[Enumerator[T]]) = this()
+}
+

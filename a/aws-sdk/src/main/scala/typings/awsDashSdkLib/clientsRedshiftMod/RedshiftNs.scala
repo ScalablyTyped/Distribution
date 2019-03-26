@@ -5292,6 +5292,11 @@ object RedshiftNs extends js.Object {
   type Long = scala.Double
   type LongOptional = scala.Double
   type OrderableClusterOptionsList = js.Array[OrderableClusterOption]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.static
+    - awsDashSdkLib.awsDashSdkLibStrings.dynamic
+    - java.lang.String
+  */
   type ParameterApplyType = _ParameterApplyType | java.lang.String
   type ParameterGroupList = js.Array[ClusterParameterGroup]
   type ParametersList = js.Array[Parameter]
@@ -5299,21 +5304,50 @@ object RedshiftNs extends js.Object {
   type RecurringChargeList = js.Array[RecurringCharge]
   type ReservedNodeList = js.Array[ReservedNode]
   type ReservedNodeOfferingList = js.Array[ReservedNodeOffering]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Regular
+    - awsDashSdkLib.awsDashSdkLibStrings.Upgradable
+    - java.lang.String
+  */
   type ReservedNodeOfferingType = _ReservedNodeOfferingType | java.lang.String
   type RestorableNodeTypeList = js.Array[String]
   type RevisionTargetsList = js.Array[RevisionTarget]
   type ScheduleDefinitionList = js.Array[String]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.MODIFYING
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - java.lang.String
+  */
   type ScheduleState = _ScheduleState | java.lang.String
   type ScheduledSnapshotTimeList = js.Array[TStamp]
   type SensitiveString = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.SOURCE_TYPE
+    - awsDashSdkLib.awsDashSdkLibStrings.TOTAL_SIZE
+    - awsDashSdkLib.awsDashSdkLibStrings.CREATE_TIME
+    - java.lang.String
+  */
   type SnapshotAttributeToSortBy = _SnapshotAttributeToSortBy | java.lang.String
   type SnapshotCopyGrantList = js.Array[SnapshotCopyGrant]
   type SnapshotIdentifierList = js.Array[String]
   type SnapshotList = js.Array[Snapshot]
   type SnapshotScheduleList = js.Array[SnapshotSchedule]
   type SnapshotSortingEntityList = js.Array[SnapshotSortingEntity]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ASC
+    - awsDashSdkLib.awsDashSdkLibStrings.DESC
+    - java.lang.String
+  */
   type SortByOrder = _SortByOrder | java.lang.String
   type SourceIdsList = js.Array[String]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.cluster
+    - awsDashSdkLib.awsDashSdkLibStrings.`cluster-parameter-group`
+    - awsDashSdkLib.awsDashSdkLibStrings.`cluster-security-group`
+    - awsDashSdkLib.awsDashSdkLibStrings.`cluster-snapshot`
+    - java.lang.String
+  */
   type SourceType = _SourceType | java.lang.String
   type String = java.lang.String
   type SubnetIdentifierList = js.Array[String]
@@ -5322,6 +5356,14 @@ object RedshiftNs extends js.Object {
   type SupportedPlatformsList = js.Array[SupportedPlatform]
   type TStamp = stdLib.Date
   type TableRestoreStatusList = js.Array[TableRestoreStatus]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.CANCELED
+    - java.lang.String
+  */
   type TableRestoreStatusType = _TableRestoreStatusType | java.lang.String
   type TagKeyList = js.Array[String]
   type TagList = js.Array[Tag]
@@ -5330,6 +5372,11 @@ object RedshiftNs extends js.Object {
   type TrackList = js.Array[MaintenanceTrack]
   type VpcSecurityGroupIdList = js.Array[String]
   type VpcSecurityGroupMembershipList = js.Array[VpcSecurityGroupMembership]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2012-12-01`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

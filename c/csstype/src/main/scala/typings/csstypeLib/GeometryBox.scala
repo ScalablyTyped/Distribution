@@ -5,6 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - Box
+  - csstypeLib.csstypeLibStrings.`fill-box`
+  - csstypeLib.csstypeLibStrings.`margin-box`
+  - csstypeLib.csstypeLibStrings.`stroke-box`
+  - csstypeLib.csstypeLibStrings.`view-box`
+*/
 trait GeometryBox
   extends _MaskLayer[js.Any]
      with csstypeLib.csstypeMod._ClipPathProperty

@@ -5,15 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Lifted 2 members from Set(sip.js.sip.js/types/session-description-handler.SessionDescriptionHandlerOptions) */ trait WebSessionDescriptionHandlerOptions extends js.Object {
+trait WebSessionDescriptionHandlerOptions
+  extends sipDotJsLib.typesSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerOptions {
   var RTCOfferOptions: js.UndefOr[js.Any] = js.undefined
   var alwaysAcquireMediaFirst: js.UndefOr[scala.Boolean] = js.undefined
-  var constraints: js.UndefOr[js.Any with sipDotJsLib.Anon_Audio] = js.undefined
+  @JSName("constraints")
+  var constraints_WebSessionDescriptionHandlerOptions: js.UndefOr[js.Any] = js.undefined
   var disableAudioFallback: js.UndefOr[scala.Boolean] = js.undefined
-  var modifiers: js.UndefOr[
-    sipDotJsLib.typesSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers
-  ] = js.undefined
   var peerConnectionOptions: js.UndefOr[PeerConnectionOptions] = js.undefined
 }
 
@@ -22,7 +20,7 @@ object WebSessionDescriptionHandlerOptions {
   def apply(
     RTCOfferOptions: js.Any = null,
     alwaysAcquireMediaFirst: js.UndefOr[scala.Boolean] = js.undefined,
-    constraints: js.Any with sipDotJsLib.Anon_Audio = null,
+    constraints: js.Any = null,
     disableAudioFallback: js.UndefOr[scala.Boolean] = js.undefined,
     modifiers: sipDotJsLib.typesSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifiers = null,
     peerConnectionOptions: PeerConnectionOptions = null

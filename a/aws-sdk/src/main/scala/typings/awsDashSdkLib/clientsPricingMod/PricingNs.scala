@@ -239,6 +239,11 @@ object PricingNs extends js.Object {
   type PriceListItemJSON = java.lang.String
   type ServiceList = js.Array[Service]
   type String = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-10-15`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

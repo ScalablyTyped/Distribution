@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  /* Extracted nested Instantiables into classes in ARTNs */
   val ART: ARTStatic = js.native
   val AccessibilityInfo: AccessibilityInfoStatic = js.native
   val ActionSheetIOS: ActionSheetIOSStatic = js.native

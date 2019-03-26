@@ -52,6 +52,10 @@ trait TextTrackList
 
 @JSGlobal("TextTrackList")
 @js.native
+class TextTrackListCls () extends TextTrackList
+
+@JSGlobal("TextTrackList")
+@js.native
 object TextTrackList
   extends org.scalablytyped.runtime.Instantiable0[TextTrackList]
 

@@ -184,8 +184,24 @@ object styleNs extends js.Object {
     def load(): scala.Unit = js.native
   }
   
+  /**
+    * Icon anchor units. One of 'fraction', 'pixels'.
+    */
+  /* Rewritten from type alias, can be one of: 
+    - openlayersLib.openlayersLibStrings.fraction
+    - openlayersLib.openlayersLibStrings.pixels
+  */
   trait IconAnchorUnits extends js.Object
   
+  /**
+    * Icon origin. One of 'bottom-left', 'bottom-right', 'top-left', 'top-right'.
+    */
+  /* Rewritten from type alias, can be one of: 
+    - openlayersLib.openlayersLibStrings.`bottom-left`
+    - openlayersLib.openlayersLibStrings.`bottom-right`
+    - openlayersLib.openlayersLibStrings.`top-left`
+    - openlayersLib.openlayersLibStrings.`top-right`
+  */
   trait IconOrigin extends js.Object
   
   /**

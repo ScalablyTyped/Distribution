@@ -578,3 +578,35 @@ trait Editor extends OptionProvider {
   def unsetStyle(): scala.Unit = js.native
 }
 
+@JSGlobal("AceAjax.Editor")
+@js.native
+class EditorCls protected () extends Editor {
+  /**
+    * Creates a new `Editor` object.
+    * @param renderer Associated `VirtualRenderer` that draws everything
+    * @param session The `EditSession` to refer to
+    **/
+  def this(renderer: VirtualRenderer) = this()
+  def this(renderer: VirtualRenderer, session: IEditSession) = this()
+  /**
+    * Get a Configuration Option
+    **/
+  /* CompleteClass */
+  override def getOption(name: java.lang.String): js.Any = js.native
+  /**
+    * Get Configuration Options
+    **/
+  /* CompleteClass */
+  override def getOptions(): js.Any = js.native
+  /**
+    * Sets a Configuration Option
+    **/
+  /* CompleteClass */
+  override def setOption(optionName: java.lang.String, optionValue: js.Any): scala.Unit = js.native
+  /**
+    * Sets Configuration Options
+    **/
+  /* CompleteClass */
+  override def setOptions(keyValueTuples: js.Any): scala.Unit = js.native
+}
+

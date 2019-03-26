@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ts-mockito", JSImport.Namespace)
 @js.native
 object tsDashMockitoMod extends js.Object {
-  val default: tsDashMockitoLib.Anon_AAnyFunction = js.native
+  val default: tsDashMockitoLib.Anon_AnyFunction = js.native
   def anyFunction(): js.Any = js.native
   def anyNumber(): js.Any = js.native
   def anyOfClass[T](expectedClass: tsDashMockitoLib.Anon_Args[T]): js.Any = js.native

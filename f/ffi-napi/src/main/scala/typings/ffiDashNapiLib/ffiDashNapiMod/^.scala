@@ -33,7 +33,7 @@ object ^ extends js.Object {
   val RTLD_NOLOAD: scala.Double = js.native
   val RTLD_NOW: scala.Double = js.native
   val VariadicForeignFunction: ffiDashNapiLib.Anon_AbiFixedArgs = js.native
-  val ffiType: ffiDashNapiLib.Anon_Arg = js.native
+  val ffiType: ffiDashNapiLib.Anon_FFITYPE = js.native
   val types: ffiDashNapiLib.Anon_Bool = js.native
   def CIF(retType: js.Any, types: js.Array[_]): ffiDashNapiLib.Buffer = js.native
   def CIF(retType: js.Any, types: js.Array[_], abi: js.Any): ffiDashNapiLib.Buffer = js.native

@@ -256,6 +256,10 @@ trait XMLHttpRequestEventTarget extends EventTarget {
 
 @JSGlobal("XMLHttpRequestEventTarget")
 @js.native
+class XMLHttpRequestEventTargetCls () extends XMLHttpRequestEventTarget
+
+@JSGlobal("XMLHttpRequestEventTarget")
+@js.native
 object XMLHttpRequestEventTarget
   extends org.scalablytyped.runtime.Instantiable0[XMLHttpRequestEventTarget]
 

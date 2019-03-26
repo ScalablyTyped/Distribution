@@ -5,5 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - vegaDashTypingsLib.vegaDashTypingsLibStrings.ltr
+  - vegaDashTypingsLib.vegaDashTypingsLibStrings.rtl
+*/
 trait TextDirection extends js.Object
 

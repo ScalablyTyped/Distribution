@@ -28,6 +28,13 @@ object DDPNs extends js.Object {
     var status: Status
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - meteorDashTypingsLib.meteorDashTypingsLibStrings.connected
+    - meteorDashTypingsLib.meteorDashTypingsLibStrings.connecting
+    - meteorDashTypingsLib.meteorDashTypingsLibStrings.failed
+    - meteorDashTypingsLib.meteorDashTypingsLibStrings.waiting
+    - meteorDashTypingsLib.meteorDashTypingsLibStrings.offline
+  */
   trait Status extends js.Object
   
   def _allSubscriptionsReady(): scala.Boolean = js.native

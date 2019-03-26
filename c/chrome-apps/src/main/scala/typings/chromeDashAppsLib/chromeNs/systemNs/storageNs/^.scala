@@ -36,7 +36,7 @@ object ^ extends js.Object {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FAILURE[keyof chrome-apps.Anon_FAILURE] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.success | chromeDashAppsLib.chromeDashAppsLibStrings.in_use | chromeDashAppsLib.chromeDashAppsLibStrings.no_such_device | chromeDashAppsLib.chromeDashAppsLibStrings.failure
         ]
       ], 
       scala.Unit

@@ -14,6 +14,6 @@ class RemoveButton[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey
 @JSImport("react-mosaic-component", "RemoveButton")
 @js.native
 object RemoveButton extends js.Object {
-  var contextTypes: reactDashMosaicDashComponentLib.Anon_ComponentNameLocationMosaicActionsMosaicId = js.native
+  var contextTypes: reactDashMosaicDashComponentLib.Anon_MosaicActionsMosaicId = js.native
 }
 

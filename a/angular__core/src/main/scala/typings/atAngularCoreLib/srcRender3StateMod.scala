@@ -29,7 +29,7 @@ object srcRender3StateMod extends js.Object {
   def getFirstTemplatePass(): scala.Boolean = js.native
   def getIsParent(): scala.Boolean = js.native
   def getLView(): atAngularCoreLib.srcRender3InterfacesViewMod.LView = js.native
-  def getOrCreateCurrentQueries(QueryType: atAngularCoreLib.Anon_LQueries): atAngularCoreLib.srcRender3InterfacesQueryMod.LQueries = js.native
+  def getOrCreateCurrentQueries(QueryType: atAngularCoreLib.Anon_Deep): atAngularCoreLib.srcRender3InterfacesQueryMod.LQueries = js.native
   def getPreviousOrParentTNode(): atAngularCoreLib.srcRender3InterfacesNodeMod.TNode = js.native
   def increaseElementDepthCount(): scala.Unit = js.native
   def isCreationMode(): scala.Boolean = js.native

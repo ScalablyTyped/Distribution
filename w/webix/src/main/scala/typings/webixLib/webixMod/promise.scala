@@ -22,3 +22,14 @@ trait promise
   def resolve(value: js.Any): js.Promise[_] = js.native
 }
 
+@JSImport("webix", "promise")
+@js.native
+class promiseCls protected ()
+  extends stdLib.Promise[js.Any] {
+  def this(executor: js.Function2[
+      /* resolve */ js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit], 
+      /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
+      scala.Unit
+    ]) = this()
+}
+

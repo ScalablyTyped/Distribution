@@ -11,6 +11,19 @@ trait AbstractIterator[K, V] extends AbstractOptions {
   def next(cb: ErrorKeyValueCallback[K, V]): this.type
 }
 
+@JSImport("abstract-leveldown", "AbstractIterator")
+@js.native
+class AbstractIteratorCls[K, V] protected () extends AbstractIterator[K, V] {
+  // tslint:disable-next-line no-unnecessary-generics
+  def this(db: js.Any) = this()
+  /* CompleteClass */
+  override var db: AbstractLevelDOWN[K, V] = js.native
+  /* CompleteClass */
+  override def end(cb: ErrorCallback): scala.Unit = js.native
+  /* CompleteClass */
+  override def next(cb: ErrorKeyValueCallback[K, V]): this.type = js.native
+}
+
 object AbstractIterator {
   @scala.inline
   def apply[K, V](

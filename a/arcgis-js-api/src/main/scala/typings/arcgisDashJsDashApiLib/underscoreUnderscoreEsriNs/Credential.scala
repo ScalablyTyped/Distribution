@@ -69,3 +69,9 @@ trait Credential extends Accessor {
   def refreshToken(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.Credential")
+@js.native
+class CredentialCls () extends Credential {
+  def this(properties: CredentialProperties) = this()
+}
+

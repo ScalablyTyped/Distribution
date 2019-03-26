@@ -36,5 +36,15 @@ package object slonikMod {
     */ slonikLib.slonikLibStrings.QueryResultRowType with js.Any
   type QueryResultType[T] = stdLib.Readonly[slonikLib.Anon_Command[T]]
   type TransactionFunctionType = js.Function1[/* connection */ DatabaseTransactionConnectionType, js.Promise[js.Any]]
+  /* Rewritten from type alias, can be one of: 
+    - PrimitiveValueExpressionType
+    - IdentifierTokenType
+    - RawSqlTokenType
+    - SqlSqlTokenType
+    - TupleListSqlTokenType
+    - TupleSqlTokenType
+    - UnnestSqlTokenType
+    - ValueListSqlTokenType
+  */
   type ValueExpressionType = _ValueExpressionType | PrimitiveValueExpressionType
 }

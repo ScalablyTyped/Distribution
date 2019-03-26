@@ -54,6 +54,12 @@ trait FormData extends _BodyInit {
 
 @JSGlobal("FormData")
 @js.native
+class FormDataCls () extends FormData {
+  def this(form: HTMLFormElement) = this()
+}
+
+@JSGlobal("FormData")
+@js.native
 object FormData
   extends org.scalablytyped.runtime.Instantiable0[FormData]
      with org.scalablytyped.runtime.Instantiable1[/* form */ HTMLFormElement, FormData]

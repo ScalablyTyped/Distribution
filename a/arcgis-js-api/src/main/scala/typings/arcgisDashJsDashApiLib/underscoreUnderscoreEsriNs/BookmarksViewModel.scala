@@ -46,3 +46,9 @@ trait BookmarksViewModel
   def goTo(Bookmark: Bookmark): arcgisDashJsDashApiLib.IPromise[_] = js.native
 }
 
+@JSGlobal("__esri.BookmarksViewModel")
+@js.native
+class BookmarksViewModelCls () extends BookmarksViewModel {
+  def this(properties: BookmarksViewModelProperties) = this()
+}
+

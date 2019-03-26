@@ -313,6 +313,10 @@ trait ApplicationCache extends EventTarget {
 
 @JSGlobal("ApplicationCache")
 @js.native
+class ApplicationCacheCls () extends ApplicationCache
+
+@JSGlobal("ApplicationCache")
+@js.native
 object ApplicationCache
   extends org.scalablytyped.runtime.Instantiable0[ApplicationCache] {
   val CHECKING: scala.Double = js.native

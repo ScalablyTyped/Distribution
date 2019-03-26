@@ -10,6 +10,16 @@ trait MockObserver[T]
   var messages: js.Array[Recorded]
 }
 
+@JSGlobal("Rx.MockObserver")
+@js.native
+class MockObserverCls[T] protected () extends MockObserver[T] {
+  def this(scheduler: rxDashCoreLib.RxNs.IScheduler) = this()
+  /* CompleteClass */
+  override var messages: js.Array[Recorded] = js.native
+  /* CompleteClass */
+  override def checked(): rxDashCoreLib.RxNs.Observer[_] = js.native
+}
+
 object MockObserver {
   @scala.inline
   def apply[T](checked: () => rxDashCoreLib.RxNs.Observer[_], messages: js.Array[Recorded]): MockObserver[T] = {

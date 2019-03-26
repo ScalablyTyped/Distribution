@@ -253,6 +253,10 @@ object wxNs extends js.Object {
     var backgroundColorTop: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - weappDashApiLib.weappDashApiLibStrings.front
+    - weappDashApiLib.weappDashApiLibStrings.back
+  */
   trait CameraDevice extends js.Object
   
   trait CanvasAction extends js.Object {
@@ -708,12 +712,30 @@ object wxNs extends js.Object {
     var success: js.UndefOr[js.Function1[/* res */ UserInfoResponse, scala.Unit]] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - weappDashApiLib.weappDashApiLibStrings.original
+    - weappDashApiLib.weappDashApiLibStrings.compressed
+  */
   trait ImageSizeType extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - weappDashApiLib.weappDashApiLibStrings.album
+    - weappDashApiLib.weappDashApiLibStrings.camera
+  */
   trait ImageSourceType extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - weappDashApiLib.weappDashApiLibStrings.butt
+    - weappDashApiLib.weappDashApiLibStrings.round
+    - weappDashApiLib.weappDashApiLibStrings.square
+  */
   trait LineCapType extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - weappDashApiLib.weappDashApiLibStrings.bevel
+    - weappDashApiLib.weappDashApiLibStrings.round
+    - weappDashApiLib.weappDashApiLibStrings.miter
+  */
   trait LineJoinType extends js.Object
   
   trait LoadingOptions extends CommonCallbackOptions {
@@ -1006,6 +1028,30 @@ object wxNs extends js.Object {
     var savedFilePath: java.lang.String
   }
   
+  //  授权
+  /**
+    * https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html
+    * 用户信息 wx.getUserInfo、
+    * 地理位置 wx.getLocation,wx.chooseLocation、
+    * 通讯地址 wx.chooseAddress、
+    * 发票抬头 wx.chooseInvoiceTitle、
+    * 获取发票 wx.chooseInvoice、
+    * 微信运动步数 wx.getWeRunData、
+    * 录音功能 wx.startRecord、
+    * 保存到相册 wx.saveImageToPhotosAlbum, wx.saveVideoToPhotosAlbum、
+    * 摄像头 <camera />组件
+    */
+  /* Rewritten from type alias, can be one of: 
+    - weappDashApiLib.weappDashApiLibStrings.userInfo
+    - weappDashApiLib.weappDashApiLibStrings.userLocation
+    - weappDashApiLib.weappDashApiLibStrings.address
+    - weappDashApiLib.weappDashApiLibStrings.invoiceTitle
+    - weappDashApiLib.weappDashApiLibStrings.invoice
+    - weappDashApiLib.weappDashApiLibStrings.werun
+    - weappDashApiLib.weappDashApiLibStrings.record
+    - weappDashApiLib.weappDashApiLibStrings.writePhotosAlbum
+    - weappDashApiLib.weappDashApiLibStrings.camera
+  */
   trait Scope extends js.Object
   
   trait SeekBackgroundAudioOptions extends js.Object {
@@ -1149,6 +1195,15 @@ object wxNs extends js.Object {
     var tempFilePaths: java.lang.String
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - weappDashApiLib.weappDashApiLibStrings.linear
+    - weappDashApiLib.weappDashApiLibStrings.ease
+    - weappDashApiLib.weappDashApiLibStrings.`ease-in`
+    - weappDashApiLib.weappDashApiLibStrings.`ease-in-out`
+    - weappDashApiLib.weappDashApiLibStrings.`ease-out`
+    - weappDashApiLib.weappDashApiLibStrings.`step-start`
+    - weappDashApiLib.weappDashApiLibStrings.`step-end`
+  */
   trait TimingFunction extends js.Object
   
   trait ToastOptions extends CommonCallbackOptions {
@@ -1253,10 +1308,24 @@ object wxNs extends js.Object {
     var width: scala.Double
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - weappDashApiLib.weappDashApiLibStrings.album
+    - weappDashApiLib.weappDashApiLibStrings.camera
+  */
   trait VideoSourceType extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - weappDashApiLib.weappDashApiLibStrings.develop
+    - weappDashApiLib.weappDashApiLibStrings.trial
+    - weappDashApiLib.weappDashApiLibStrings.release
+  */
   trait envVersion extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - weappDashApiLib.weappDashApiLibStrings.success
+    - weappDashApiLib.weappDashApiLibStrings.loading
+    - weappDashApiLib.weappDashApiLibStrings.none
+  */
   trait icon extends js.Object
   
   trait onLaunchOptions extends js.Object {

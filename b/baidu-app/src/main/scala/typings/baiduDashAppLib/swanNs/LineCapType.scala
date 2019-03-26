@@ -5,5 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - baiduDashAppLib.baiduDashAppLibStrings.butt
+  - baiduDashAppLib.baiduDashAppLibStrings.round
+  - baiduDashAppLib.baiduDashAppLibStrings.square
+*/
 trait LineCapType extends js.Object
 

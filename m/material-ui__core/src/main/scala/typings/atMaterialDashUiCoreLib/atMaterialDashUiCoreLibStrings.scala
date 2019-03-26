@@ -307,8 +307,8 @@ object atMaterialDashUiCoreLibStrings {
   
   @js.native
   sealed trait checkbox
-    extends atMaterialDashUiCoreLib.tableTableMod.Padding
-       with atMaterialDashUiCoreLib.tableCellTableCellMod.Padding
+    extends atMaterialDashUiCoreLib.tableCellTableCellMod.Padding
+       with atMaterialDashUiCoreLib.tableTableMod.Padding
   
   @js.native
   sealed trait checked
@@ -497,8 +497,8 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait default
     extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color
        with atMaterialDashUiCoreLib.listItemListItemMod.ListItemClassKey
-       with atMaterialDashUiCoreLib.tableTableMod.Padding
        with atMaterialDashUiCoreLib.tableCellTableCellMod.Padding
+       with atMaterialDashUiCoreLib.tableTableMod.Padding
   
   @js.native
   sealed trait deletable
@@ -538,8 +538,8 @@ object atMaterialDashUiCoreLibStrings {
        with atMaterialDashUiCoreLib.listItemListItemMod.ListItemClassKey
        with atMaterialDashUiCoreLib.listItemTextListItemTextMod.ListItemTextClassKey
        with atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Margin
-       with atMaterialDashUiCoreLib.tableTableMod.Padding
        with atMaterialDashUiCoreLib.tableCellTableCellMod.Padding
+       with atMaterialDashUiCoreLib.tableTableMod.Padding
        with atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarClassKey
   
   @js.native
@@ -1299,8 +1299,8 @@ object atMaterialDashUiCoreLibStrings {
   @js.native
   sealed trait none
     extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Margin
-       with atMaterialDashUiCoreLib.tableTableMod.Padding
        with atMaterialDashUiCoreLib.tableCellTableCellMod.Padding
+       with atMaterialDashUiCoreLib.tableTableMod.Padding
        with atMaterialDashUiCoreLib.popoverPopoverMod.PopoverReference
   
   @js.native

@@ -16,7 +16,7 @@ trait Action extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OFFLINENOTNECESSARY[keyof chrome-apps.Anon_OFFLINENOTNECESSARY] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.SAVE_FOR_OFFLINE | chromeDashAppsLib.chromeDashAppsLibStrings.OFFLINE_NOT_NECESSARY | chromeDashAppsLib.chromeDashAppsLibStrings.SHARE
     ]
   ]) | java.lang.String
   /** The title of the action. It may be ignored for common actions.  */
@@ -31,7 +31,7 @@ object Action {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OFFLINENOTNECESSARY[keyof chrome-apps.Anon_OFFLINENOTNECESSARY] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.SAVE_FOR_OFFLINE | chromeDashAppsLib.chromeDashAppsLibStrings.OFFLINE_NOT_NECESSARY | chromeDashAppsLib.chromeDashAppsLibStrings.SHARE
       ]
     ]) | java.lang.String,
     title: java.lang.String = null

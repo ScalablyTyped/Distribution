@@ -29,6 +29,11 @@ object viewNs extends js.Object {
     def getElementsWithSameId(): stdLib.Set[AttributeElement] = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.children
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.attributes
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.text
+  */
   trait ChangeType extends js.Object
   
   // engine/view/containerelement
@@ -201,6 +206,11 @@ object viewNs extends js.Object {
     protected def this(name: java.lang.String, attrs: stdLib.Map[java.lang.String, java.lang.String], children: stdLib.Iterable[Node]) = this()
   }
   
+  // engine/view/item
+  /* Rewritten from type alias, can be one of: 
+    - Node
+    - TextProxy
+  */
   trait Item extends js.Object
   
   // engine/view/matcher
@@ -249,6 +259,12 @@ object viewNs extends js.Object {
   @js.native
   class Position () extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.before
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.after
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.same
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.different
+  */
   trait PositionRelation extends js.Object
   
   // engine/view/range
@@ -311,6 +327,10 @@ object viewNs extends js.Object {
     def skip(skip: js.Function1[/* treeWalkerValue */ TreeWalkerValue, scala.Boolean]): scala.Unit = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.forward
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.backward
+  */
   trait TreeWalkerDirection extends js.Object
   
   trait TreeWalkerValue extends js.Object {
@@ -321,6 +341,11 @@ object viewNs extends js.Object {
     var `type`: TreeWalkerValueType
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.elementStart
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.elementEnd
+    - atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.text
+  */
   trait TreeWalkerValueType extends js.Object
   
   // engine/view/uielement

@@ -17,6 +17,27 @@ trait IntersectionObserver extends js.Object {
 
 @JSGlobal("IntersectionObserver")
 @js.native
+class IntersectionObserverCls protected () extends IntersectionObserver {
+  def this(callback: IntersectionObserverCallback) = this()
+  def this(callback: IntersectionObserverCallback, options: IntersectionObserverInit) = this()
+  /* CompleteClass */
+  override val root: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val rootMargin: java.lang.String = js.native
+  /* CompleteClass */
+  override val thresholds: js.Array[scala.Double] = js.native
+  /* CompleteClass */
+  override def disconnect(): scala.Unit = js.native
+  /* CompleteClass */
+  override def observe(target: Element): scala.Unit = js.native
+  /* CompleteClass */
+  override def takeRecords(): js.Array[IntersectionObserverEntry] = js.native
+  /* CompleteClass */
+  override def unobserve(target: Element): scala.Unit = js.native
+}
+
+@JSGlobal("IntersectionObserver")
+@js.native
 object IntersectionObserver
   extends org.scalablytyped.runtime.Instantiable1[/* callback */ IntersectionObserverCallback, IntersectionObserver]
      with org.scalablytyped.runtime.Instantiable2[

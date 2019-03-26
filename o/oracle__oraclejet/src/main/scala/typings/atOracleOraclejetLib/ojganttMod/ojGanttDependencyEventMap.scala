@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait ojGanttDependencyEventMap
   extends stdLib.HTMLElementEventMap {
-  var predecessorTaskIdChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var predecessorTaskIdChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var shortDescChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null]
-  var successorTaskIdChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var successorTaskIdChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var svgClassNameChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String]
-  var svgStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var svgStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var typeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.finishStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.finishFinish | atOracleOraclejetLib.atOracleOraclejetLibStrings.startStart | atOracleOraclejetLib.atOracleOraclejetLibStrings.startFinish
   ]
@@ -84,7 +84,7 @@ object ojGanttDependencyEventMap {
     pointerout: stdLib.PointerEvent,
     pointerover: stdLib.PointerEvent,
     pointerup: stdLib.PointerEvent,
-    predecessorTaskIdChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    predecessorTaskIdChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     progress: stdLib.ProgressEvent,
     ratechange: stdLib.Event,
     reset: stdLib.Event,
@@ -97,10 +97,10 @@ object ojGanttDependencyEventMap {
     shortDescChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null],
     stalled: stdLib.Event,
     submit: stdLib.Event,
-    successorTaskIdChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    successorTaskIdChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     suspend: stdLib.Event,
     svgClassNameChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String],
-    svgStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    svgStyleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     timeupdate: stdLib.Event,
     toggle: stdLib.Event,
     touchcancel: stdLib.TouchEvent,

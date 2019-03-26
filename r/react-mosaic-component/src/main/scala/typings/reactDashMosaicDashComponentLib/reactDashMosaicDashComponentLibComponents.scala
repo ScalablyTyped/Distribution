@@ -25,6 +25,8 @@ object reactDashMosaicDashComponentLibComponents {
   @scala.inline
   def Separator: reactLib.reactMod.ReactNs.ComponentType[js.Object] = js.constructorOf[reactDashMosaicDashComponentLib.libButtonsSeparatorMod.Separator].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Object]]
   @scala.inline
+  def SourceConnectedInternalMosaicWindow[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */]: reactLib.reactMod.ReactNs.ComponentType[reactDashMosaicDashComponentLib.libMosaicWindowMod.InternalMosaicWindowProps[T]] = js.constructorOf[reactDashMosaicDashComponentLib.libMosaicWindowMod.SourceConnectedInternalMosaicWindow[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMosaicDashComponentLib.libMosaicWindowMod.InternalMosaicWindowProps[T]]]
+  @scala.inline
   def SplitButton[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */]: reactLib.reactMod.ReactNs.ComponentType[reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps] = js.constructorOf[reactDashMosaicDashComponentLib.libButtonsSplitButtonMod.SplitButton[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashMosaicDashComponentLib.libButtonsMosaicButtonMod.MosaicButtonProps]]
   type InternalMosaicWindowProps[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */] = reactDashMosaicDashComponentLib.libMosaicWindowMod.InternalMosaicWindowProps[T]
   @scala.inline

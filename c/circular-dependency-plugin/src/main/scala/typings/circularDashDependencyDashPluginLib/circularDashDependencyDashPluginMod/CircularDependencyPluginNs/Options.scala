@@ -15,13 +15,13 @@ trait Options extends js.Object {
   ] = js.undefined
   var onEnd: js.UndefOr[
     js.Function1[
-      /* x */ circularDashDependencyDashPluginLib.Anon_Compilation_1970258025, 
+      /* x */ circularDashDependencyDashPluginLib.Anon_Compilation_1177322662, 
       scala.Unit
     ]
   ] = js.undefined
   var onStart: js.UndefOr[
     js.Function1[
-      /* x */ circularDashDependencyDashPluginLib.Anon_Compilation_1970258025, 
+      /* x */ circularDashDependencyDashPluginLib.Anon_Compilation_1177322662, 
       scala.Unit
     ]
   ] = js.undefined
@@ -35,8 +35,8 @@ object Options {
     exclude: stdLib.RegExp = null,
     failOnError: js.UndefOr[scala.Boolean] = js.undefined,
     onDetected: /* x */ circularDashDependencyDashPluginLib.Anon_Compilation => scala.Unit = null,
-    onEnd: /* x */ circularDashDependencyDashPluginLib.Anon_Compilation_1970258025 => scala.Unit = null,
-    onStart: /* x */ circularDashDependencyDashPluginLib.Anon_Compilation_1970258025 => scala.Unit = null
+    onEnd: /* x */ circularDashDependencyDashPluginLib.Anon_Compilation_1177322662 => scala.Unit = null,
+    onStart: /* x */ circularDashDependencyDashPluginLib.Anon_Compilation_1177322662 => scala.Unit = null
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(allowAsyncCycles)) __obj.updateDynamic("allowAsyncCycles")(allowAsyncCycles)

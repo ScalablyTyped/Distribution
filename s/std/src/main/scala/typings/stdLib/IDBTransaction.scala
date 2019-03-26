@@ -146,6 +146,10 @@ trait IDBTransaction extends EventTarget {
 
 @JSGlobal("IDBTransaction")
 @js.native
+class IDBTransactionCls () extends IDBTransaction
+
+@JSGlobal("IDBTransaction")
+@js.native
 object IDBTransaction
   extends org.scalablytyped.runtime.Instantiable0[IDBTransaction]
 

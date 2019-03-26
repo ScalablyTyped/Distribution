@@ -334,6 +334,20 @@ object ServerNs extends js.Object {
     def forTransaction(transactionId: java.lang.String): this.type = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - CreateAccountOperationRecord
+    - PaymentOperationRecord
+    - PathPaymentOperationRecord
+    - ManageOfferOperationRecord
+    - PassiveOfferOperationRecord
+    - SetOptionsOperationRecord
+    - ChangeTrustOperationRecord
+    - AllowTrustOperationRecord
+    - AccountMergeOperationRecord
+    - InflationOperationRecord
+    - ManageDataOperationRecord
+    - BumpSequenceOperationRecord
+  */
   trait OperationRecord extends js.Object
   
   trait Options extends js.Object {

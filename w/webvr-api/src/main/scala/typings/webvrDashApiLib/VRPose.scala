@@ -17,6 +17,25 @@ trait VRPose extends js.Object {
 
 @JSGlobal("VRPose")
 @js.native
+class VRPoseCls () extends VRPose {
+  /* CompleteClass */
+  override val angularAcceleration: stdLib.Float32Array | scala.Null = js.native
+  /* CompleteClass */
+  override val angularVelocity: stdLib.Float32Array | scala.Null = js.native
+  /* CompleteClass */
+  override val linearAcceleration: stdLib.Float32Array | scala.Null = js.native
+  /* CompleteClass */
+  override val linearVelocity: stdLib.Float32Array | scala.Null = js.native
+  /* CompleteClass */
+  override val orientation: stdLib.Float32Array | scala.Null = js.native
+  /* CompleteClass */
+  override val position: stdLib.Float32Array | scala.Null = js.native
+  /* CompleteClass */
+  override val timestamp: scala.Double = js.native
+}
+
+@JSGlobal("VRPose")
+@js.native
 object VRPose
   extends org.scalablytyped.runtime.Instantiable0[VRPose]
 

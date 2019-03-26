@@ -5,5 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - summernoteLib.summernoteLibStrings.linkDialogShow
+  - summernoteLib.summernoteLibStrings.unlink
+*/
 trait popoverLinkLinkOptions extends js.Object
 

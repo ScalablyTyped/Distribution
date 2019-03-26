@@ -17,6 +17,13 @@ trait BiquadFilterNode extends AudioNode {
 
 @JSGlobal("BiquadFilterNode")
 @js.native
+class BiquadFilterNodeCls protected () extends BiquadFilterNode {
+  def this(context: BaseAudioContext) = this()
+  def this(context: BaseAudioContext, options: BiquadFilterOptions) = this()
+}
+
+@JSGlobal("BiquadFilterNode")
+@js.native
 object BiquadFilterNode
   extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, BiquadFilterNode]
      with org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ BiquadFilterOptions, BiquadFilterNode]

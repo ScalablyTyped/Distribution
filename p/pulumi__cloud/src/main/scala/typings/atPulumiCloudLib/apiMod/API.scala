@@ -97,3 +97,9 @@ trait API extends js.Object {
   def static(path: java.lang.String, localPath: java.lang.String, options: ServeStaticOptions): scala.Unit = js.native
 }
 
+@JSImport("@pulumi/cloud/api", "API")
+@js.native
+class APICls protected () extends API {
+  def this(apiName: java.lang.String) = this()
+}
+

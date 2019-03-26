@@ -30,6 +30,7 @@ class User () extends Object {
   def setPassword(password: java.lang.String, options: SuccessFailureOptions): scala.Boolean = js.native
   def setUsername(username: java.lang.String): scala.Boolean = js.native
   def setUsername(username: java.lang.String, options: SuccessFailureOptions): scala.Boolean = js.native
+  def signUp(): js.Promise[this.type] = js.native
   def signUp(attrs: js.Any): js.Promise[this.type] = js.native
   def signUp(attrs: js.Any, options: SignUpOptions): js.Promise[this.type] = js.native
 }

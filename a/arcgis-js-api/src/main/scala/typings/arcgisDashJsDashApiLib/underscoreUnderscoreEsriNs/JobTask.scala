@@ -466,3 +466,14 @@ trait JobTask extends Task {
   def updateRecord(params: JobTaskUpdateRecordParams, requestOptions: js.Any): arcgisDashJsDashApiLib.IPromise[scala.Boolean] = js.native
 }
 
+@JSGlobal("__esri.JobTask")
+@js.native
+/**
+  * Helps you work with Workflow Manager jobs. A job is a single unit of work that is carried out within an organization. Various methods are available in the class to work with the following:
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-JobTask.html)
+  */
+class JobTaskCls () extends JobTask {
+  def this(properties: JobTaskProperties) = this()
+}
+

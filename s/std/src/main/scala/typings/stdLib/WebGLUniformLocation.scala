@@ -9,6 +9,10 @@ trait WebGLUniformLocation extends js.Object
 
 @JSGlobal("WebGLUniformLocation")
 @js.native
+class WebGLUniformLocationCls () extends WebGLUniformLocation
+
+@JSGlobal("WebGLUniformLocation")
+@js.native
 object WebGLUniformLocation
   extends org.scalablytyped.runtime.Instantiable0[WebGLUniformLocation]
 

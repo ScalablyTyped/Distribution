@@ -53,3 +53,9 @@ trait HomeViewModel
   def go(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.HomeViewModel")
+@js.native
+class HomeViewModelCls () extends HomeViewModel {
+  def this(properties: HomeViewModelProperties) = this()
+}
+

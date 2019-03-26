@@ -36,6 +36,13 @@ trait MessageEvent extends Event {
 
 @JSGlobal("MessageEvent")
 @js.native
+class MessageEventCls protected () extends MessageEvent {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: MessageEventInit) = this()
+}
+
+@JSGlobal("MessageEvent")
+@js.native
 object MessageEvent
   extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, MessageEvent]
      with org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ MessageEventInit, MessageEvent]

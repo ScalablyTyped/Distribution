@@ -190,3 +190,9 @@ trait PortalUser extends Accessor {
   def queryFavorites(queryParams: PortalQueryParams): arcgisDashJsDashApiLib.IPromise[PortalQueryResult] = js.native
 }
 
+@JSGlobal("__esri.PortalUser")
+@js.native
+class PortalUserCls () extends PortalUser {
+  def this(properties: PortalUserProperties) = this()
+}
+

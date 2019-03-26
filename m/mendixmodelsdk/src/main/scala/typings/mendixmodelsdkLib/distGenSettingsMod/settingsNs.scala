@@ -159,7 +159,7 @@ object settingsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/project-settings relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenSettingsMod.settingsNs.IProjectSettings because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenSettingsMod.settingsNs.IProjectSettings because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class ProjectSettings protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject) = this()

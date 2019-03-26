@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IteratorOptions[EmittedType /* <: pDashEventLib.Array[_] */] extends Options[EmittedType] {
+trait IteratorOptions[EmittedType /* <: js.Array[_] */] extends Options[EmittedType] {
   /**
   	 * Maximum number of events for the iterator before it ends. When the limit is reached, the iterator will be marked as `done`. This option is useful to paginate events, for example, fetching 10 events per page.
   	 *
@@ -17,17 +17,17 @@ trait IteratorOptions[EmittedType /* <: pDashEventLib.Array[_] */] extends Optio
   	 *
   	 * @default []
   	 */
-  var resolutionEvents: js.UndefOr[pDashEventLib.Array[java.lang.String | js.Symbol]] = js.undefined
+  var resolutionEvents: js.UndefOr[js.Array[java.lang.String | js.Symbol]] = js.undefined
 }
 
 object IteratorOptions {
   @scala.inline
-  def apply[EmittedType /* <: pDashEventLib.Array[_] */](
+  def apply[EmittedType /* <: js.Array[_] */](
     filter: FilterFunction[EmittedType] = null,
     limit: scala.Int | scala.Double = null,
     multiArgs: js.UndefOr[scala.Boolean] = js.undefined,
-    rejectionEvents: pDashEventLib.Array[java.lang.String | js.Symbol] = null,
-    resolutionEvents: pDashEventLib.Array[java.lang.String | js.Symbol] = null,
+    rejectionEvents: js.Array[java.lang.String | js.Symbol] = null,
+    resolutionEvents: js.Array[java.lang.String | js.Symbol] = null,
     timeout: scala.Int | scala.Double = null
   ): IteratorOptions[EmittedType] = {
     val __obj = js.Dynamic.literal()

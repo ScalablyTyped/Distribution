@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("styled-components/macro", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val ThemeConsumer: (js.Function1[
+  val ThemeConsumer: (reactLib.reactMod.ReactNs.Consumer[
+    styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
+  ]) with (js.Function1[
     /* props */ reactLib.reactMod.ReactNs.ConsumerProps[
       styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
     ], 
-    reactLib.reactMod.ReactNs.ReactElement[js.Any] | scala.Null
-  ]) | (reactLib.reactMod.ReactNs.Consumer[
-    styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
+    reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
   ]) = js.native
   val ThemeContext: reactLib.reactMod.ReactNs.Context[
     styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]

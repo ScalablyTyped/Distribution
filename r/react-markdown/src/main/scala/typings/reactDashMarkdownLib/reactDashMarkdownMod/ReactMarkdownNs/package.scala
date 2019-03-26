@@ -6,6 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object ReactMarkdownNs {
+  /* Rewritten from type alias, can be one of: 
+    - reactDashMarkdownLib.reactDashMarkdownLibStrings.left
+    - reactDashMarkdownLib.reactDashMarkdownLibStrings.right
+    - reactDashMarkdownLib.reactDashMarkdownLibStrings.center
+    - scala.Null
+  */
   type AlignType = _AlignType | scala.Null
   type LinkTargetResolver = js.Function3[
     /* uri */ java.lang.String, 

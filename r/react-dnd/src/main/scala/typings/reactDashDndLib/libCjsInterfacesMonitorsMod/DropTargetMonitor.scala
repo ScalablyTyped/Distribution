@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait DropTargetMonitor extends HandlerManager {
+trait DropTargetMonitor
+  extends HandlerManager
+     with MonitorEventEmitter {
   /**
     * Returns true if there is a drag operation in progress, and the owner's canDrop() returns true or is not defined.
     */

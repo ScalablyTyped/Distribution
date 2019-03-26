@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Select2Plugin[TElement] extends js.Object {
-  var amd: select2Lib.Anon_Errback = js.native
+  var amd: select2Lib.Anon_Require = js.native
   var defaults: select2Lib.Anon_Key = js.native
   def apply(): select2Lib.select2Mod.Global.JQuery[TElement] = js.native
   /**

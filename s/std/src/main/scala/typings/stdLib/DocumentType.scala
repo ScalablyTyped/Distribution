@@ -14,6 +14,10 @@ trait DocumentType extends ChildNode {
 
 @JSGlobal("DocumentType")
 @js.native
+class DocumentTypeCls () extends DocumentType
+
+@JSGlobal("DocumentType")
+@js.native
 object DocumentType
   extends org.scalablytyped.runtime.Instantiable0[DocumentType]
 

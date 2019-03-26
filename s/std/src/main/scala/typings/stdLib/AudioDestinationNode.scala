@@ -12,6 +12,10 @@ trait AudioDestinationNode extends AudioNode {
 
 @JSGlobal("AudioDestinationNode")
 @js.native
+class AudioDestinationNodeCls () extends AudioDestinationNode
+
+@JSGlobal("AudioDestinationNode")
+@js.native
 object AudioDestinationNode
   extends org.scalablytyped.runtime.Instantiable0[AudioDestinationNode]
 

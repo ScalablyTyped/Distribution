@@ -1768,24 +1768,65 @@ object AppMeshNs extends js.Object {
   type Listeners = js.Array[Listener]
   type Long = scala.Double
   type MeshList = js.Array[MeshRef]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETED
+    - awsDashSdkLib.awsDashSdkLibStrings.INACTIVE
+    - java.lang.String
+  */
   type MeshStatusCode = _MeshStatusCode | java.lang.String
   type PercentInt = scala.Double
   type PortNumber = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.http
+    - awsDashSdkLib.awsDashSdkLibStrings.tcp
+    - java.lang.String
+  */
   type PortProtocol = _PortProtocol | java.lang.String
   type ResourceName = java.lang.String
   type RouteList = js.Array[RouteRef]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETED
+    - awsDashSdkLib.awsDashSdkLibStrings.INACTIVE
+    - java.lang.String
+  */
   type RouteStatusCode = _RouteStatusCode | java.lang.String
   type ServiceName = java.lang.String
   type String = java.lang.String
   type Timestamp = stdLib.Date
   type VirtualNodeList = js.Array[VirtualNodeRef]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETED
+    - awsDashSdkLib.awsDashSdkLibStrings.INACTIVE
+    - java.lang.String
+  */
   type VirtualNodeStatusCode = _VirtualNodeStatusCode | java.lang.String
   type VirtualRouterList = js.Array[VirtualRouterRef]
   type VirtualRouterListeners = js.Array[VirtualRouterListener]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETED
+    - awsDashSdkLib.awsDashSdkLibStrings.INACTIVE
+    - java.lang.String
+  */
   type VirtualRouterStatusCode = _VirtualRouterStatusCode | java.lang.String
   type VirtualServiceList = js.Array[VirtualServiceRef]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ACTIVE
+    - awsDashSdkLib.awsDashSdkLibStrings.DELETED
+    - awsDashSdkLib.awsDashSdkLibStrings.INACTIVE
+    - java.lang.String
+  */
   type VirtualServiceStatusCode = _VirtualServiceStatusCode | java.lang.String
   type WeightedTargets = js.Array[WeightedTarget]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2018-10-01`
+    - awsDashSdkLib.awsDashSdkLibStrings.`2019-01-25`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

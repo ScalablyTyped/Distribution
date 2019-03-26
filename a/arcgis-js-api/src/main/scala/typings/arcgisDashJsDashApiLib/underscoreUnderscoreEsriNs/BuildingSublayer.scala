@@ -43,3 +43,9 @@ trait BuildingSublayer extends Accessor {
   var visible: scala.Boolean = js.native
 }
 
+@JSGlobal("__esri.BuildingSublayer")
+@js.native
+class BuildingSublayerCls () extends BuildingSublayer {
+  def this(properties: BuildingSublayerProperties) = this()
+}
+

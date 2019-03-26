@@ -69,3 +69,9 @@ trait FindParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.FindParameters")
+@js.native
+class FindParametersCls () extends FindParameters {
+  def this(properties: FindParametersProperties) = this()
+}
+

@@ -81,3 +81,9 @@ trait FieldConfig extends Accessor {
   var required: scala.Boolean = js.native
 }
 
+@JSGlobal("__esri.FieldConfig")
+@js.native
+class FieldConfigCls () extends FieldConfig {
+  def this(properties: FieldConfigProperties) = this()
+}
+

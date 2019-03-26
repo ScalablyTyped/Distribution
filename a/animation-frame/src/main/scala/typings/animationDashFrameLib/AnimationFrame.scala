@@ -11,3 +11,7 @@ trait AnimationFrame
   def request(callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 
+@JSGlobal("AnimationFrame")
+@js.native
+class AnimationFrameCls () extends AnimationFrame
+

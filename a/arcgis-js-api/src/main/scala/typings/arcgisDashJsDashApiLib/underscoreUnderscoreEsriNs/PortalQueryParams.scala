@@ -84,3 +84,9 @@ trait PortalQueryParams extends Accessor {
   var start: scala.Double = js.native
 }
 
+@JSGlobal("__esri.PortalQueryParams")
+@js.native
+class PortalQueryParamsCls () extends PortalQueryParams {
+  def this(properties: PortalQueryParamsProperties) = this()
+}
+

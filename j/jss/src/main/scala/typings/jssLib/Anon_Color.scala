@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Color extends js.Object {
-  var color: js.Any
-  var style: js.Any
-  var width: js.Any
+  var color: scala.Nothing
+  var style: scala.Nothing
+  var width: scala.Nothing
 }
 
 object Anon_Color {
   @scala.inline
-  def apply(color: js.Any, style: js.Any, width: js.Any): Anon_Color = {
+  def apply(color: scala.Nothing, style: scala.Nothing, width: scala.Nothing): Anon_Color = {
     val __obj = js.Dynamic.literal(color = color, style = style, width = width)
   
     __obj.asInstanceOf[Anon_Color]

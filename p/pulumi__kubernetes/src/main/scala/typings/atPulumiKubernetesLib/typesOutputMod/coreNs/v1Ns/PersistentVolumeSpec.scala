@@ -50,7 +50,7 @@ trait PersistentVolumeSpec extends js.Object {
     */
   val claimRef: ObjectReference
   /**
-    * CSI represents storage that handled by an external CSI driver (Beta feature).
+    * CSI represents storage that is handled by an external CSI driver (Beta feature).
     */
   val csi: CSIPersistentVolumeSource
   /**

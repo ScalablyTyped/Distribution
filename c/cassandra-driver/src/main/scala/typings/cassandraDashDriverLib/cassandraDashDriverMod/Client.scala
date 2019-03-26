@@ -52,3 +52,9 @@ trait Client
   def stream(query: java.lang.String, params: js.Any, options: QueryOptions, callback: Callback): nodeLib.NodeJSNs.ReadableStream = js.native
 }
 
+@JSImport("cassandra-driver", "Client")
+@js.native
+class ClientCls () extends Client {
+  def this(options: ClientOptions) = this()
+}
+

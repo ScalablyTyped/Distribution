@@ -11,3 +11,9 @@ trait Deserializer extends js.Object {
   def deserialize(data: js.Any, callback: Callback): scala.Unit = js.native
 }
 
+@JSImport("jsonapi-serializer", "Deserializer")
+@js.native
+class DeserializerCls protected () extends Deserializer {
+  def this(opts: DeserializerOptions) = this()
+}
+

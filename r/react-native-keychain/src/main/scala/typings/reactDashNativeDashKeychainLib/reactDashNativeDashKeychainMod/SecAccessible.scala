@@ -5,5 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - reactDashNativeDashKeychainLib.reactDashNativeDashKeychainLibStrings.AccessibleWhenUnlocked
+  - reactDashNativeDashKeychainLib.reactDashNativeDashKeychainLibStrings.AccessibleAfterFirstUnlock
+  - reactDashNativeDashKeychainLib.reactDashNativeDashKeychainLibStrings.AccessibleAlways
+  - reactDashNativeDashKeychainLib.reactDashNativeDashKeychainLibStrings.AccessibleWhenPasscodeSetThisDeviceOnly
+  - reactDashNativeDashKeychainLib.reactDashNativeDashKeychainLibStrings.AccessibleWhenUnlockedThisDeviceOnly
+  - reactDashNativeDashKeychainLib.reactDashNativeDashKeychainLibStrings.AccessibleAfterFirstUnlockThisDeviceOnly
+  - reactDashNativeDashKeychainLib.reactDashNativeDashKeychainLibStrings.AccessibleAlwaysThisDeviceOnly
+*/
 trait SecAccessible extends js.Object
 

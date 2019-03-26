@@ -9,12 +9,12 @@ object atLinguiMacroLibComponents {
   @scala.inline
   def DateFormat: reactLib.reactMod.ReactNs.ComponentType[
     atLinguiMacroLib.createFormatMod.FormatPropsWithoutI18n[stdLib.Date, stdLib.IntlNs.DateTimeFormatOptions]
-  ] = atLinguiMacroLib.atLinguiMacroMod.^.DateFormat.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atLinguiMacroLib.atLinguiMacroMod.DateFormat].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atLinguiMacroLib.createFormatMod.FormatPropsWithoutI18n[stdLib.Date, stdLib.IntlNs.DateTimeFormatOptions]]]
   @scala.inline
   def NumberFormat: reactLib.reactMod.ReactNs.ComponentType[
     atLinguiMacroLib.createFormatMod.FormatPropsWithoutI18n[scala.Double, stdLib.IntlNs.NumberFormatOptions]
-  ] = atLinguiMacroLib.atLinguiMacroMod.^.NumberFormat.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[atLinguiMacroLib.atLinguiMacroMod.NumberFormat].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   atLinguiMacroLib.createFormatMod.FormatPropsWithoutI18n[scala.Double, stdLib.IntlNs.NumberFormatOptions]]]
   @scala.inline
   def Plural: reactLib.reactMod.ReactNs.ComponentType[atLinguiMacroLib.reactSelectMod.PluralPropsWithoutI18n] = js.constructorOf[atLinguiMacroLib.reactSelectMod.Plural].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atLinguiMacroLib.reactSelectMod.PluralPropsWithoutI18n]]

@@ -9,19 +9,19 @@ trait ImageProps
   extends ResponderProps
      with TouchableProps {
   var height: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var href: js.Any
+  var href: scala.Nothing
   var opacity: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
   var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined
   var width: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
   var x: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var xlinkHref: js.UndefOr[js.Any] = js.undefined
+  var xlinkHref: js.UndefOr[scala.Nothing] = js.undefined
   var y: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
 }
 
 object ImageProps {
   @scala.inline
   def apply(
-    href: js.Any,
+    href: scala.Nothing,
     delayLongPress: scala.Int | scala.Double = null,
     delayPressIn: scala.Int | scala.Double = null,
     delayPressOut: scala.Int | scala.Double = null,
@@ -48,7 +48,7 @@ object ImageProps {
     preserveAspectRatio: java.lang.String = null,
     width: reactDashNativeDashSvgLib.NumberProp = null,
     x: reactDashNativeDashSvgLib.NumberProp = null,
-    xlinkHref: js.Any = null,
+    xlinkHref: js.UndefOr[scala.Nothing] = js.undefined,
     y: reactDashNativeDashSvgLib.NumberProp = null
   ): ImageProps = {
     val __obj = js.Dynamic.literal(href = href)
@@ -78,7 +78,7 @@ object ImageProps {
     if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (xlinkHref != null) __obj.updateDynamic("xlinkHref")(xlinkHref)
+    if (!js.isUndefined(xlinkHref)) __obj.updateDynamic("xlinkHref")(xlinkHref)
     if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageProps]
   }

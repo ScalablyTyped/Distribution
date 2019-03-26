@@ -8,6 +8,924 @@ import scala.scalajs.js.annotation._
 @JSImport("video.js", JSImport.Default)
 @js.native
 object defaultNs extends js.Object {
+  @js.native
+  /**
+  		 * Create an instance of this class.
+  		 *
+  		 * @param [options={}]
+  		 *        Object of option names and values
+  		 *
+  		 * @param [options.kind='']
+  		 *        A valid audio track kind
+  		 *
+  		 * @param [options.id='vjs_track_' + Guid.newGUID()]
+  		 *        A unique id for this AudioTrack.
+  		 *
+  		 * @param [options.label='']
+  		 *        The menu label for this track.
+  		 *
+  		 * @param [options.language='']
+  		 *        A valid two character language code.
+  		 *
+  		 * @param [options.enabled]
+  		 *        If this track is the one that is currently playing. If this track is part of
+  		 *        an {@link AudioTrackList}, only one {@link AudioTrack} will be enabled.
+  		 */
+  class AudioTrack ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.Track {
+    def this(options: videoDotJsLib.videoDotJsMod.videojsNs.AudioTrackOptions) = this()
+  }
+  
+  @js.native
+  class AudioTrackButtonCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.AudioTrackButton {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options={}]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.TrackButtonOptions) = this()
+  }
+  
+  @js.native
+  class AudioTrackMenuItemCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.AudioTrackMenuItem {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.AudioTrackMenuItemOptions) = this()
+  }
+  
+  @js.native
+  class BigPlayButtonCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.BigPlayButton {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *         The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *         The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+  }
+  
+  @js.native
+  class ButtonCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.Button {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *         The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *         The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+  }
+  
+  @js.native
+  class CaptionsButtonCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.CaptionsButton {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 *
+    		 * @param [ready]
+    		 *        The function to call when this function is ready.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.TrackButtonOptions) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.TrackButtonOptions, ready: videoDotJsLib.videoDotJsMod.videojsNs.ComponentNs.ReadyCallback) = this()
+  }
+  
+  @js.native
+  class CaptionsSettingsMenuItem protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.CaptionSettingsMenuItem {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.CaptionSettingsMenuItemOptions) = this()
+  }
+  
+  @js.native
+  class ChaptersButtonCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.ChaptersButton {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 *
+    		 * @param [ready]
+    		 *        The function to call when this function is ready.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.TrackButtonOptions) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.TrackButtonOptions, ready: videoDotJsLib.videoDotJsMod.videojsNs.ComponentNs.ReadyCallback) = this()
+  }
+  
+  @js.native
+  class ChaptersTrackMenuItemCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.ChaptersTrackMenuItem {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ChaptersTrackMenuItemOptions) = this()
+  }
+  
+  @js.native
+  class ClickableComponentCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.ClickableComponent {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *         The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *         The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+  }
+  
+  @js.native
+  class CloseButtonCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.CloseButton {
+    /**
+    		 * Creates an instance of the this class.
+    		 *
+    		 * @param player
+    		 *         The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *         The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.CloseButtonOptions) = this()
+  }
+  
+  @js.native
+  class ComponentCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.Component {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 *
+    		 * @param [options.children]
+    		 *        An array of children objects to intialize this component with. Children objects have
+    		 *        a name property that will be used if more than one component of the same type needs to be
+    		 *        added.
+    		 *
+    		 * @param [ready]
+    		 *        Function that gets called when the `Component` is ready.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions, ready: videoDotJsLib.videoDotJsMod.videojsNs.ComponentNs.ReadyCallback) = this()
+  }
+  
+  @js.native
+  class ControlBarCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.ControlBar {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ControlBarOptions) = this()
+  }
+  
+  @js.native
+  class CurrentTimeDisplayCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.CurrentTimeDisplay {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+  }
+  
+  @js.native
+  class CustomControlSpacerCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.CustomControlSpacer {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 *
+    		 * @param [ready]
+    		 *        Function that gets called when the `Component` is ready.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions, ready: videoDotJsLib.videoDotJsMod.videojsNs.ComponentNs.ReadyCallback) = this()
+  }
+  
+  @js.native
+  class DescriptionsButtonCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.DescriptionsButton {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 *
+    		 * @param [ready]
+    		 *        The function to call when this component is ready.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.TrackButtonOptions) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.TrackButtonOptions, ready: videoDotJsLib.videoDotJsMod.videojsNs.ComponentNs.ReadyCallback) = this()
+  }
+  
+  @js.native
+  class DurationDisplayCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.DurationDisplay {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+  }
+  
+  @js.native
+  class ErrorDisplayCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.ErrorDisplay {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *         The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *         The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ModalDialogOptions) = this()
+  }
+  
+  @js.native
+  class EventTargetCls ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.EventTarget
+  
+  @js.native
+  class FullscreenToggleCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.FullscreenToggle {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+  }
+  
+  @js.native
+  /**
+  		 * Create an instance of this class.
+  		 *
+  		 * @param [tracks=[]]
+  		 *        A list of `HtmlTrackElement` to instantiate the list with.
+  		 */
+  class HTMLTrackElementListCls ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.HTMLTrackElementList {
+    def this(tracks: js.Array[stdLib.HTMLTrackElement]) = this()
+    /**
+    		 * The current number of `Track`s in the this Trackist.
+    		 */
+    /* CompleteClass */
+    override var length: scala.Double = js.native
+  }
+  
+  @js.native
+  class MediaErrorCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.MediaError {
+    def this(value: java.lang.String) = this()
+    def this(value: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
+    /**
+    		 * Create an instance of this class.
+    		 *
+    		 * @param value
+    		 *        This can be of multiple types:
+    		 *        - number: should be a standard error code
+    		 *        - string: an error message (the code will be 0)
+    		 *        - Object: arbitrary properties
+    		 *        - `MediaError` (native): used to populate a video.js `MediaError` object
+    		 *        - `MediaError` (video.js): will return itself if it's already a
+    		 *          video.js `MediaError` object.
+    		 */
+    def this(value: scala.Double) = this()
+    def this(value: videoDotJsLib.videoDotJsMod.videojsNs.MediaError) = this()
+    /**
+    		 * W3C error code for media error aborted.
+    		 * @default 1
+    		 */
+    /* CompleteClass */
+    override var MEDIA_ERR_ABORTED: videoDotJsLib.videoDotJsLibNumbers.`1` = js.native
+    /**
+    		 * W3C error code for any custom error.
+    		 * @default 0
+    		 */
+    /* CompleteClass */
+    override var MEDIA_ERR_CUSTOM: videoDotJsLib.videoDotJsLibNumbers.`0` = js.native
+    /**
+    		 * W3C error code for any decoding error.
+    		 * @default 3
+    		 */
+    /* CompleteClass */
+    override var MEDIA_ERR_DECODE: videoDotJsLib.videoDotJsLibNumbers.`3` = js.native
+    /**
+    		 * W3C error code for any time that a source is encrypted.
+    		 * @default 5
+    		 */
+    /* CompleteClass */
+    override var MEDIA_ERR_ENCRYPTED: videoDotJsLib.videoDotJsLibNumbers.`5` = js.native
+    /**
+    		 * W3C error code for any network error.
+    		 * @default 2
+    		 */
+    /* CompleteClass */
+    override var MEDIA_ERR_NETWORK: videoDotJsLib.videoDotJsLibNumbers.`2` = js.native
+    /**
+    		 * W3C error code for any time that a source is not supported.
+    		 * @default 4
+    		 */
+    /* CompleteClass */
+    override var MEDIA_ERR_SRC_NOT_SUPPORTED: videoDotJsLib.videoDotJsLibNumbers.`4` = js.native
+    /**
+    		 * The error code that refers two one of the defined `MediaError` types
+    		 *
+    		 */
+    /* CompleteClass */
+    override var code: scala.Double = js.native
+    /**
+    		 * An optional message that to show with the error. Message is not part of the HTML5
+    		 * video spec but allows for more informative custom errors.
+    		 *
+    		 */
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /**
+    		 * An optional status code that can be set by plugins to allow even more detail about
+    		 * the error. For example a plugin might provide a specific HTTP status code and an
+    		 * error message for that code. Then when the plugin gets that error this class will
+    		 * know how to display an error message for it. This allows a custom message to show
+    		 * up on the `Player` error overlay.
+    		 *
+    		 */
+    /* CompleteClass */
+    override var status: js.Array[_] = js.native
+  }
+  
+  @js.native
+  class MenuButtonCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.MenuButton {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options={}]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.MenuButtonOptions) = this()
+  }
+  
+  @js.native
+  class MenuCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.Menu {
+    /**
+    		 * Create an instance of this class.
+    		 *
+    		 * @param player
+    		 *        the player that this component should attach to
+    		 *
+    		 * @param [options]
+    		 *        Object of option names and values
+    		 *
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.MenuOptions) = this()
+  }
+  
+  @js.native
+  class MenuItemCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.MenuItem {
+    /**
+    		 * Creates an instance of the this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options={}]
+    		 *        The key/value store of player options.
+    		 *
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.MenuItemOptions) = this()
+  }
+  
+  @js.native
+  class ModalDialogCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.ModalDialog {
+    /**
+    		 * Create an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ModalDialogOptions) = this()
+  }
+  
+  @js.native
+  class MouseTimeDisplayCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.MouseTimeDisplay {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The {@link Player} that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+  }
+  
+  @js.native
+  class PlayerCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.Player {
+    /**
+    		 * An instance of the `Player` class is created when any of the Video.js setup methods
+    		 * are used to initialize a video.
+    		 *
+    		 * After an instance has been created it can be accessed globally in two ways:
+    		 * 1. By calling `videojs('example_video_1');`
+    		 * 2. By using it directly via  `videojs.players.example_video_1;`
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.PlayerOptions) = this()
+  }
+  
+  @js.native
+  class PluginCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.Plugin {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * Sub-classes should call `super` to ensure plugins are properly initialized.
+    		 *
+    		 * @param player
+    		 *        A Video.js player instance.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+  }
+  
+  @js.native
+  class ProgressControlCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.ProgressControl {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+  }
+  
+  @js.native
+  class SeekBarCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.SeekBar {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.SliderOptions) = this()
+  }
+  
+  @js.native
+  class SliderCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.Slider {
+    /**
+    		 * Create an instance of this class
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.SliderOptions) = this()
+  }
+  
+  @js.native
+  class SpacerCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.Spacer {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 *
+    		 * @param [ready]
+    		 *        Function that gets called when the `Component` is ready.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions, ready: videoDotJsLib.videoDotJsMod.videojsNs.ComponentNs.ReadyCallback) = this()
+  }
+  
+  @js.native
+  /**
+  		 * Create an instance of this Tech.
+  		 *
+  		 * @param [options]
+  		 *        The key/value store of player options.
+  		 *
+  		 * @param ready
+  		 *        Callback function to call when the `HTML5` Tech is ready.
+  		 */
+  class TechCls ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.Tech {
+    def this(options: js.Any) = this()
+    def this(options: js.Any, ready: videoDotJsLib.videoDotJsMod.videojsNs.ComponentNs.ReadyCallback) = this()
+  }
+  
+  @js.native
+  class TextTrackButtonCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.TextTrackButton {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options={}]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.TrackButtonOptions) = this()
+  }
+  
+  @js.native
+  class TextTrackCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.TextTrack {
+    /**
+    		 * Create an instance of this class.
+    		 *
+    		 * @param options={}
+    		 *        Object of option names and values
+    		 *
+    		 * @param options.tech
+    		 *        A reference to the tech that owns this TextTrack.
+    		 *
+    		 * @param [options.kind='subtitles']
+    		 *        A valid text track kind.
+    		 *
+    		 * @param [options.mode='disabled']
+    		 *        A valid text track mode.
+    		 *
+    		 * @param [options.id='vjs_track_' + Guid.newGUID()]
+    		 *        A unique id for this TextTrack.
+    		 *
+    		 * @param [options.label='']
+    		 *        The menu label for this track.
+    		 *
+    		 * @param [options.language='']
+    		 *        A valid two character language code.
+    		 *
+    		 * @param [options.srclang='']
+    		 *        A valid two character language code. An alternative, but deprioritized
+    		 *        version of `options.language`
+    		 *
+    		 * @param [options.src]
+    		 *        A url to TextTrack cues.
+    		 *
+    		 * @param [options.default]
+    		 *        If this track should default to on or off.
+    		 */
+    def this(options: videoDotJsLib.videoDotJsMod.videojsNs.TextTrackOptions) = this()
+  }
+  
+  @js.native
+  class TextTrackCueListCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.TextTrackCueList {
+    /**
+    		 * Create an instance of this class..
+    		 *
+    		 * @param cues
+    		 *        A list of cues to be initialized with
+    		 */
+    def this(cues: js.Array[videoDotJsLib.videoDotJsMod.videojsNs.TextTrackCueListNs.TextTrackCue]) = this()
+    /**
+    		 * The current number of `TextTrackCue`s in the TextTrackCueList.
+    		 */
+    /* CompleteClass */
+    override var length: scala.Double = js.native
+    /**
+    		 * Get a `TextTrackCue` that is currently in the `TextTrackCueList` by id.
+    		 *
+    		 * @param id
+    		 *        The id of the cue that should be searched for.
+    		 *
+    		 * @return A single cue or null if none was found.
+    		 */
+    /* CompleteClass */
+    override def getCueById(id: java.lang.String): videoDotJsLib.videoDotJsMod.videojsNs.TextTrackCueListNs.TextTrackCue = js.native
+  }
+  
+  @js.native
+  /**
+  		 * Create an instance of this class
+  		 *
+  		 * @param tracks
+  		 *        A list of tracks to initialize the list with.
+  		 */
+  class TextTrackListCls ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.TextTrackList {
+    def this(tracks: js.Array[videoDotJsLib.videoDotJsMod.videojsNs.TextTrack]) = this()
+  }
+  
+  @js.native
+  class TextTrackMenuItemCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.TextTrackMenuItem {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.TextTrackMenuItemOptions) = this()
+  }
+  
+  @js.native
+  class TextTrackSettingsCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.TextTrackSettings {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *         The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *         The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.TextTrackSettingsOptions) = this()
+  }
+  
+  @js.native
+  class TimeDisplayCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.TimeDisplay {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+  }
+  
+  @js.native
+  class TimeToolTipCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.TimeToolTip {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *         The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *         The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+  }
+  
+  @js.native
+  class TrackButton protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.MenuButton {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *         The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *         The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.TrackButtonOptions) = this()
+  }
+  
+  @js.native
+  /**
+  		 * Create an instance of this class.
+  		 *
+  		 * @param [options={}]
+  		 *        Object of option names and values
+  		 *
+  		 * @param [options.kind='']
+  		 *        A valid kind for the track type you are creating.
+  		 *
+  		 * @param [options.id='vjs_track_' + Guid.newGUID()]
+  		 *        A unique id for this AudioTrack.
+  		 *
+  		 * @param [options.label='']
+  		 *        The menu label for this track.
+  		 *
+  		 * @param [options.language='']
+  		 *        A valid two character language code.
+  		 */
+  class TrackCls ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.Track {
+    def this(options: videoDotJsLib.videoDotJsMod.videojsNs.TrackOptions) = this()
+  }
+  
+  @js.native
+  /**
+  		 * Create an instance of this class
+  		 *
+  		 * @param tracks
+  		 *        A list of tracks to initialize the list with.
+  		 */
+  class TrackListCls ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.TrackList {
+    def this(tracks: js.Array[videoDotJsLib.videoDotJsMod.videojsNs.Track]) = this()
+  }
+  
+  @js.native
+  class VolumeBarCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.VolumeBar {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.SliderOptions) = this()
+  }
+  
+  @js.native
+  class VolumeControlCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.VolumeControl {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options={}]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.VolumeControlOptions) = this()
+  }
+  
+  @js.native
+  class VolumeLevelCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.VolumeLevel {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options]
+    		 *        The key/value store of player options.
+    		 *
+    		 * @param [options.children]
+    		 *        An array of children objects to intialize this component with. Children objects have
+    		 *        a name property that will be used if more than one component of the same type needs to be
+    		 *        added.
+    		 *
+    		 * @param [ready]
+    		 *        Function that gets called when the `Component` is ready.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.ComponentOptions, ready: videoDotJsLib.videoDotJsMod.videojsNs.ComponentNs.ReadyCallback) = this()
+  }
+  
+  @js.native
+  class VolumePanelCls protected ()
+    extends videoDotJsLib.videoDotJsMod.videojsNs.VolumePanel {
+    /**
+    		 * Creates an instance of this class.
+    		 *
+    		 * @param player
+    		 *        The `Player` that this class should be attached to.
+    		 *
+    		 * @param [options={}]
+    		 *        The key/value store of player options.
+    		 */
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player) = this()
+    def this(player: videoDotJsLib.videoDotJsMod.videojsNs.Player, options: videoDotJsLib.videoDotJsMod.videojsNs.VolumePanel) = this()
+  }
+  
   /**
   	 * A representation of a single `AudioTrack`. If it is part of an {@link AudioTrackList}
   	 * only one `AudioTrack` in the list will be enabled at a time.

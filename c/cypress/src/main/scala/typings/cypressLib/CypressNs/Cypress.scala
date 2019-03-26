@@ -20,7 +20,7 @@ trait Cypress extends js.Object {
     *    Cypress.$('p')
     */
   @JSName("$")
-  var $_Original: jqueryLib.JQueryStatic = js.native
+  var $_Original: cypressLib.JQueryStatic = js.native
   /**
     * Cypress automatically includes a Blob library and exposes it as Cypress.Blob.
     *
@@ -62,8 +62,7 @@ trait Cypress extends js.Object {
     * @example
     *    Cypress._.keys(obj)
     */
-  @JSName("_")
-  var __Original: lodashLib.lodashMod.underscoreNs.LoDashStatic = js.native
+  var `_`: cypressLib.typesLodashMod.underscoreNs.LoDashStatic = js.native
   /**
     * CPU architecture, from Node `os.arch()`
     *
@@ -85,7 +84,7 @@ trait Cypress extends js.Object {
     *
     * @see https://on.cypress.io/minimatch
     */
-  var minimatch: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mimimatch.MimimatchStatic */ js.Any = js.native
+  var minimatch: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Minimatch.minimatch */ js.Any = js.native
   /**
     * Cypress automatically includes moment.js and exposes it as Cypress.moment.
     *
@@ -140,26 +139,6 @@ trait Cypress extends js.Object {
     ```
     */
   var version: java.lang.String = js.native
-  /**
-    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-    * @param element A DOM element to wrap in a jQuery object.
-    * @see \`{@link https://api.jquery.com/jQuery/ }\`
-    * @since 1.0
-    * @example ​ ````Set the background color of the page to black.
-  ```javascript
-  $( document.body ).css( "background", "black" );
-  ```
-    */
-  // NOTE: `HTMLSelectElement` is both an Element and an Array-Like Object but jQuery treats it as an Element.
-  /**
-    * jQuery library
-    *
-    * @see https://on.cypress.io/$
-    * @example
-    *    Cypress.$('p')
-    */
-  @JSName("$")
-  def $(element: stdLib.HTMLSelectElement): jqueryLib.JQuery[stdLib.HTMLSelectElement] = js.native
   // HACK: This is the factory function returned when importing jQuery without a DOM. Declaring it separately breaks using the type parameter on JQueryStatic.
   // HACK: The discriminator parameter handles the edge case of passing a Window object to JQueryStatic. It doesn't actually exist on the factory function.
   /**
@@ -170,9 +149,10 @@ trait Cypress extends js.Object {
     *    Cypress.$('p')
     */
   @JSName("$")
-  def $(window: stdLib.Window, discriminator: scala.Boolean): jqueryLib.JQueryStatic = js.native
+  def $(window: stdLib.Window, discriminator: scala.Boolean): cypressLib.JQueryStatic = js.native
   /**
     * Returns an empty jQuery set.
+    *
     * @see \`{@link https://api.jquery.com/jQuery/ }\`
     * @since 1.4
     */
@@ -185,24 +165,13 @@ trait Cypress extends js.Object {
     *    Cypress.$('p')
     */
   @JSName("$")
-  def $[TElement](): jqueryLib.JQuery[TElement] = js.native
+  def $[TElement](): cypressLib.JQuery[TElement] = js.native
   /**
     * Binds a function to be executed when the DOM has finished loading.
+    *
     * @param callback The function to execute when the DOM is ready.
     * @see \`{@link https://api.jquery.com/jQuery/ }\`
     * @since 1.0
-    * @example ​ ````Execute the function when the DOM is ready to be used.
-  ```javascript
-  $(function() {
-    // Document is ready
-  });
-  ```
-    * @example ​ ````Use both the shortcut for $(document).ready() and the argument to write failsafe jQuery code using the $ alias, without relying on the global alias.
-  ```javascript
-  jQuery(function( $ ) {
-    // Your code using failsafe $ alias here...
-  });
-  ```
     */
   // tslint:disable-next-line:no-unnecessary-generics unified-signatures
   /**
@@ -213,190 +182,31 @@ trait Cypress extends js.Object {
     *    Cypress.$('p')
     */
   @JSName("$")
-  def $[TElement](callback: js.ThisFunction1[/* this */ stdLib.Document, /* $ */ this.type, scala.Unit]): jqueryLib.JQuery[TElement] = js.native
+  def $[TElement](callback: js.ThisFunction1[/* this */ stdLib.Document, /* $ */ this.type, scala.Unit]): cypressLib.JQuery[TElement] = js.native
+  /**
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created
+    * by passing an HTML string.
+    *
+    * @param elementArray An array containing a set of DOM elements to wrap in a jQuery object.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    */
+  // Using a unified signature is not possible due to a TypeScript 2.4 bug (DefinitelyTyped#27810)
+  // tslint:disable-next-line:unified-signatures
+  /**
+    * jQuery library
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    Cypress.$('p')
+    */
+  @JSName("$")
+  def $[T /* <: stdLib.Element */](elementArray: js.Array[T]): cypressLib.JQuery[T] = js.native
+  @JSName("$")
+  def $[TElement /* <: stdLib.HTMLElement */](html: cypressLib.JQueryNs.htmlString, ownerDocument_attributes: cypressLib.JQueryNs.PlainObject[_]): cypressLib.JQuery[TElement] = js.native
   /**
     * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-    * @param element_elementArray _&#x40;param_ `element_elementArray`
-    * <br>
-    * * `element` — A DOM element to wrap in a jQuery object. <br>
-    * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
-    * @see \`{@link https://api.jquery.com/jQuery/ }\`
-    * @since 1.0
-    * @example ​ ````Set the background color of the page to black.
-  ```javascript
-  $( document.body ).css( "background", "black" );
-  ```
-    * @example ​ ````Hide all the input elements within a form.
-  ```javascript
-  $( myForm.elements ).hide();
-  ```
-    */
-  /**
-    * jQuery library
     *
-    * @see https://on.cypress.io/$
-    * @example
-    *    Cypress.$('p')
-    */
-  @JSName("$")
-  def $[T /* <: stdLib.Element */](element_elementArray: T): jqueryLib.JQuery[T] = js.native
-  /**
-    * jQuery library
-    *
-    * @see https://on.cypress.io/$
-    * @example
-    *    Cypress.$('p')
-    */
-  @JSName("$")
-  def $[T /* <: stdLib.Element */](element_elementArray: stdLib.ArrayLike[T]): jqueryLib.JQuery[T] = js.native
-  /**
-    * jQuery library
-    *
-    * @see https://on.cypress.io/$
-    * @example
-    *    Cypress.$('p')
-    */
-  @JSName("$")
-  def $[TElement /* <: stdLib.HTMLElement */](html: jqueryLib.JQueryNs.htmlString, ownerDocument_attributes: jqueryLib.JQueryNs.PlainObject[_]): jqueryLib.JQuery[TElement] = js.native
-  /**
-    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-    * @param selection An existing jQuery object to clone.
-    * @see \`{@link https://api.jquery.com/jQuery/ }\`
-    * @since 1.0
-    */
-  /**
-    * jQuery library
-    *
-    * @see https://on.cypress.io/$
-    * @example
-    *    Cypress.$('p')
-    */
-  @JSName("$")
-  def $[T](selection: jqueryLib.JQuery[T]): jqueryLib.JQuery[T] = js.native
-  /**
-    * Accepts a string containing a CSS selector which is then used to match a set of elements.
-    * @param selector A string containing a selector expression
-    * @param context A DOM Element, Document, or jQuery to use as context
-    * @see \`{@link https://api.jquery.com/jQuery/ }\`
-    * @since 1.0
-    * @example ​ ````Find all p elements that are children of a div element and apply a border to them.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>one</p>
-  <div><p>two</p></div>
-  <p>three</p>
-  ​
-  <script>
-  $( "div > p" ).css( "border", "1px solid gray" );
-  </script>
-  </body>
-  </html>
-  ```
-    * @example ​ ````Find all inputs of type radio within the first form in the document.
-  ```javascript
-  $( "input:radio", document.forms[ 0 ] );
-  ```
-    * @example ​ ````Find all div elements within an XML document from an Ajax response.
-  ```javascript
-  $( "div", xml.responseXML );
-  ```
-  ​
-    */
-  // tslint:disable-next-line:no-unnecessary-generics
-  /**
-    * jQuery library
-    *
-    * @see https://on.cypress.io/$
-    * @example
-    *    Cypress.$('p')
-    */
-  @JSName("$")
-  def $[TElement /* <: stdLib.Element */](selector: jqueryLib.JQueryNs.Selector): jqueryLib.JQuery[TElement] = js.native
-  /**
-    * jQuery library
-    *
-    * @see https://on.cypress.io/$
-    * @example
-    *    Cypress.$('p')
-    */
-  @JSName("$")
-  def $[TElement /* <: stdLib.Element */](selector: jqueryLib.JQueryNs.Selector, context: jqueryLib.JQuery[stdLib.HTMLElement]): jqueryLib.JQuery[TElement] = js.native
-  /**
-    * jQuery library
-    *
-    * @see https://on.cypress.io/$
-    * @example
-    *    Cypress.$('p')
-    */
-  @JSName("$")
-  def $[TElement /* <: stdLib.Element */](selector: jqueryLib.JQueryNs.Selector, context: stdLib.Document): jqueryLib.JQuery[TElement] = js.native
-  /**
-    * jQuery library
-    *
-    * @see https://on.cypress.io/$
-    * @example
-    *    Cypress.$('p')
-    */
-  @JSName("$")
-  def $[TElement /* <: stdLib.Element */](selector: jqueryLib.JQueryNs.Selector, context: stdLib.Element): jqueryLib.JQuery[TElement] = js.native
-  /**
-    * Creates DOM elements on the fly from the provided string of raw HTML.
-    * @param html _&#x40;param_ `html`
-    * <br>
-    * * `html (ownerDocument)` — A string of HTML to create on the fly. Note that this parses HTML, not XML. <br>
-    * * `html (attributes)` — A string defining a single, standalone, HTML element (e.g. &lt;div/&gt; or &lt;div&gt;&lt;/div&gt;).
-    * @param ownerDocument_attributes _&#x40;param_ `ownerDocument_attributes`
-    * <br>
-    * * `ownerDocument` — A document in which the new elements will be created. <br>
-    * * `attributes` — An object of attributes, events, and methods to call on the newly-created element.
-    * @see \`{@link https://api.jquery.com/jQuery/ }\`
-    * @since 1.0
-    * @since 1.4
-    * @example ​ ````Create a div element (and all of its contents) dynamically and append it to the body element. Internally, an element is created and its innerHTML property set to the given markup.
-  ```javascript
-  $( "<div><p>Hello</p></div>" ).appendTo( "body" )
-  ```
-    * @example ​ ````Create some DOM elements.
-  ```javascript
-  $( "<div/>", {
-    "class": "test",
-    text: "Click me!",
-    click: function() {
-    $( this ).toggleClass( "test" );
-    }
-  })
-    .appendTo( "body" );
-  ```
-    */
-  // tslint:disable-next-line:no-unnecessary-generics
-  /**
-    * jQuery library
-    *
-    * @see https://on.cypress.io/$
-    * @example
-    *    Cypress.$('p')
-    */
-  @JSName("$")
-  def $_TElementHTMLElement[TElement /* <: stdLib.HTMLElement */](html: jqueryLib.JQueryNs.htmlString): jqueryLib.JQuery[TElement] = js.native
-  /**
-    * jQuery library
-    *
-    * @see https://on.cypress.io/$
-    * @example
-    *    Cypress.$('p')
-    */
-  @JSName("$")
-  def $_TElementHTMLElement[TElement /* <: stdLib.HTMLElement */](html: jqueryLib.JQueryNs.htmlString, ownerDocument_attributes: stdLib.Document): jqueryLib.JQuery[TElement] = js.native
-  /**
-    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
     * @param object A plain object to wrap in a jQuery object.
     * @see \`{@link https://api.jquery.com/jQuery/ }\`
     * @since 1.0
@@ -409,83 +219,90 @@ trait Cypress extends js.Object {
     *    Cypress.$('p')
     */
   @JSName("$")
-  def $_TPlainObject[T /* <: jqueryLib.JQueryNs.PlainObject[_] */](`object`: T): jqueryLib.JQuery[T] = js.native
+  def $[T /* <: cypressLib.JQueryNs.PlainObject[_] */](`object`: T): cypressLib.JQuery[T] = js.native
   /**
-    * Creates a lodash object which wraps value to enable implicit method chain sequences.
-    * Methods that operate on and return arrays, collections, and functions can be chained together.
-    * Methods that retrieve a single value or may return a primitive value will automatically end the
-    * chain sequence and return the unwrapped value. Otherwise, the value must be unwrapped with value().
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created
+    * by passing an HTML string.
     *
-    * Explicit chain sequences, which must be unwrapped with value(), may be enabled using _.chain.
-    *
-    * The execution of chained methods is lazy, that is, it's deferred until value() is
-    * implicitly or explicitly called.
-    *
-    * Lazy evaluation allows several methods to support shortcut fusion. Shortcut fusion
-    * is an optimization to merge iteratee calls; this avoids the creation of intermediate
-    * arrays and can greatly reduce the number of iteratee executions. Sections of a chain
-    * sequence qualify for shortcut fusion if the section is applied to an array and iteratees
-    * accept only one argument. The heuristic for whether a section qualifies for shortcut
-    * fusion is subject to change.
-    *
-    * Chaining is supported in custom builds as long as the value() method is directly or
-    * indirectly included in the build.
-    *
-    * In addition to lodash methods, wrappers have Array and String methods.
-    * The wrapper Array methods are:
-    * concat, join, pop, push, shift, sort, splice, and unshift.
-    * The wrapper String methods are:
-    * replace and split.
-    *
-    * The wrapper methods that support shortcut fusion are:
-    * at, compact, drop, dropRight, dropWhile, filter, find, findLast, head, initial, last,
-    * map, reject, reverse, slice, tail, take, takeRight, takeRightWhile, takeWhile, and toArray
-    *
-    * The chainable wrapper methods are:
-    * after, ary, assign, assignIn, assignInWith, assignWith, at, before, bind, bindAll, bindKey,
-    * castArray, chain, chunk, commit, compact, concat, conforms, constant, countBy, create,
-    * curry, debounce, defaults, defaultsDeep, defer, delay, difference, differenceBy, differenceWith,
-    * drop, dropRight, dropRightWhile, dropWhile, extend, extendWith, fill, filter, flatMap,
-    * flatMapDeep, flatMapDepth, flatten, flattenDeep, flattenDepth, flip, flow, flowRight,
-    * fromPairs, functions, functionsIn, groupBy, initial, intersection, intersectionBy, intersectionWith,
-    * invert, invertBy, invokeMap, iteratee, keyBy, keys, keysIn, map, mapKeys, mapValues,
-    * matches, matchesProperty, memoize, merge, mergeWith, method, methodOf, mixin, negate,
-    * nthArg, omit, omitBy, once, orderBy, over, overArgs, overEvery, overSome, partial, partialRight,
-    * partition, pick, pickBy, plant, property, propertyOf, pull, pullAll, pullAllBy, pullAllWith, pullAt,
-    * push, range, rangeRight, rearg, reject, remove, rest, reverse, sampleSize, set, setWith,
-    * shuffle, slice, sort, sortBy, sortedUniq, sortedUniqBy, splice, spread, tail, take,
-    * takeRight, takeRightWhile, takeWhile, tap, throttle, thru, toArray, toPairs, toPairsIn,
-    * toPath, toPlainObject, transform, unary, union, unionBy, unionWith, uniq, uniqBy, uniqWith,
-    * unset, unshift, unzip, unzipWith, update, updateWith, values, valuesIn, without, wrap,
-    * xor, xorBy, xorWith, zip, zipObject, zipObjectDeep, and zipWith.
-    *
-    * The wrapper methods that are not chainable by default are:
-    * add, attempt, camelCase, capitalize, ceil, clamp, clone, cloneDeep, cloneDeepWith, cloneWith,
-    * conformsTo, deburr, defaultTo, divide, each, eachRight, endsWith, eq, escape, escapeRegExp,
-    * every, find, findIndex, findKey, findLast, findLastIndex, findLastKey, first, floor, forEach,
-    * forEachRight, forIn, forInRight, forOwn, forOwnRight, get, gt, gte, has, hasIn, head,
-    * identity, includes, indexOf, inRange, invoke, isArguments, isArray, isArrayBuffer,
-    * isArrayLike, isArrayLikeObject, isBoolean, isBuffer, isDate, isElement, isEmpty, isEqual, isEqualWith,
-    * isError, isFinite, isFunction, isInteger, isLength, isMap, isMatch, isMatchWith, isNaN,
-    * isNative, isNil, isNull, isNumber, isObject, isObjectLike, isPlainObject, isRegExp,
-    * isSafeInteger, isSet, isString, isUndefined, isTypedArray, isWeakMap, isWeakSet, join,
-    * kebabCase, last, lastIndexOf, lowerCase, lowerFirst, lt, lte, max, maxBy, mean, meanBy,
-    * min, minBy, multiply, noConflict, noop, now, nth, pad, padEnd, padStart, parseInt, pop,
-    * random, reduce, reduceRight, repeat, result, round, runInContext, sample, shift, size,
-    * snakeCase, some, sortedIndex, sortedIndexBy, sortedLastIndex, sortedLastIndexBy, startCase,
-    * startsWith, stubArray, stubFalse, stubObject, stubString, stubTrue, subtract, sum, sumBy,
-    * template, times, toFinite, toInteger, toJSON, toLength, toLower, toNumber, toSafeInteger,
-    * toString, toUpper, trim, trimEnd, trimStart, truncate, unescape, uniqueId, upperCase,
-    * upperFirst, value, and words.
-    **/
-  /**
-    * Lodash library
-    *
-    * @see https://on.cypress.io/_
-    * @example
-    *    Cypress._.keys(obj)
+    * @param selection An existing jQuery object to clone.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
     */
-  def `_`[T](value: T): lodashLib.lodashMod.underscoreNs.LoDashImplicitWrapper[T] = js.native
+  /**
+    * jQuery library
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    Cypress.$('p')
+    */
+  @JSName("$")
+  def $[T](selection: cypressLib.JQuery[T]): cypressLib.JQuery[T] = js.native
+  /**
+    * Accepts a string containing a CSS selector which is then used to match a set of elements.
+    *
+    * @param selector A string containing a selector expression
+    * @param context A DOM Element, Document, or jQuery to use as context
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  /**
+    * jQuery library
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    Cypress.$('p')
+    */
+  @JSName("$")
+  def $[TElement /* <: stdLib.Element */](selector: cypressLib.JQueryNs.Selector): cypressLib.JQuery[TElement] = js.native
+  @JSName("$")
+  def $[TElement /* <: stdLib.Element */](selector: cypressLib.JQueryNs.Selector, context: cypressLib.JQuery[stdLib.HTMLElement]): cypressLib.JQuery[TElement] = js.native
+  @JSName("$")
+  def $[TElement /* <: stdLib.Element */](selector: cypressLib.JQueryNs.Selector, context: stdLib.Document): cypressLib.JQuery[TElement] = js.native
+  @JSName("$")
+  def $[TElement /* <: stdLib.Element */](selector: cypressLib.JQueryNs.Selector, context: stdLib.Element): cypressLib.JQuery[TElement] = js.native
+  /**
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created
+    * by passing an HTML string.
+    *
+    * @param element A DOM element to wrap in a jQuery object.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    */
+  // Using a unified signature is not possible due to a TypeScript 2.4 bug (DefinitelyTyped#27810)
+  // tslint:disable-next-line:unified-signatures
+  /**
+    * jQuery library
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    Cypress.$('p')
+    */
+  @JSName("$")
+  def $_TElement[T /* <: stdLib.Element */](element: T): cypressLib.JQuery[T] = js.native
+  /**
+    * Creates DOM elements on the fly from the provided string of raw HTML.
+    *
+    * @param html A string of HTML to create on the fly. Note that this parses HTML, not XML.
+    *             A string defining a single, standalone, HTML element (e.g. <div/> or <div></div>).
+    * @param ownerDocument_attributes A document in which the new elements will be created.
+    *                                 An object of attributes, events, and methods to call on the newly-created element.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    * @since 1.4
+    */
+  // tslint:disable-next-line:no-unnecessary-generics
+  /**
+    * jQuery library
+    *
+    * @see https://on.cypress.io/$
+    * @example
+    *    Cypress.$('p')
+    */
+  @JSName("$")
+  def $_TElementHTMLElement[TElement /* <: stdLib.HTMLElement */](html: cypressLib.JQueryNs.htmlString): cypressLib.JQuery[TElement] = js.native
+  @JSName("$")
+  def $_TElementHTMLElement[TElement /* <: stdLib.HTMLElement */](html: cypressLib.JQueryNs.htmlString, ownerDocument_attributes: stdLib.Document): cypressLib.JQuery[TElement] = js.native
   /**
     * Returns all configuration objects.
     * @see https://on.cypress.io/config
@@ -1202,7 +1019,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def off_fail(
     action: cypressLib.cypressLibStrings.fail,
-    fn: js.Function2[/* error */ stdLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
+    fn: js.Function2[/* error */ stdLib.Error, /* mocha */ cypressLib.MochaNs.IRunnable, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires whenever a command emits this event so it can be displayed in the Command Log. Useful to see how internal cypress commands utilize the {% url 'Cypress.log()' cypress-log %} API.
@@ -1241,7 +1058,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def off_scrolled(
     action: cypressLib.cypressLibStrings.scrolled,
-    fn: js.Function1[/* $el */ jqueryLib.JQuery[stdLib.HTMLElement], scala.Unit]
+    fn: js.Function1[/* $el */ cypressLib.JQuery[stdLib.HTMLElement], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires after the test and all **afterEach** and **after** hooks run.
@@ -1254,7 +1071,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def `off_test:after:run`(
     action: cypressLib.cypressLibStrings.`test:after:run`,
-    fn: js.Function2[/* attributes */ ObjectLike, /* test */ mochaLib.MochaNs.ITest, scala.Unit]
+    fn: js.Function2[/* attributes */ ObjectLike, /* test */ cypressLib.MochaNs.ITest, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires before the test and all **before** and **beforeEach** hooks run.
@@ -1267,7 +1084,7 @@ trait Cypress extends js.Object {
   @JSName("off")
   def `off_test:before:run`(
     action: cypressLib.cypressLibStrings.`test:before:run`,
-    fn: js.Function2[/* attributes */ ObjectLike, /* test */ mochaLib.MochaNs.ITest, scala.Unit]
+    fn: js.Function2[/* attributes */ ObjectLike, /* test */ cypressLib.MochaNs.ITest, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when an uncaught exception occurs in your application.
@@ -1304,7 +1121,7 @@ trait Cypress extends js.Object {
     action: cypressLib.cypressLibStrings.`uncaught:exception`,
     fn: js.Function2[
       /* error */ stdLib.Error, 
-      /* runnable */ mochaLib.MochaNs.IRunnable, 
+      /* runnable */ cypressLib.MochaNs.IRunnable, 
       cypressLib.cypressLibNumbers.`false` | scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1335,7 +1152,12 @@ trait Cypress extends js.Object {
     fn: js.Function1[/* viewport */ Viewport, scala.Unit]
   ): scala.Unit = js.native
   @JSName("off")
-  def `off_window:alert`(action: cypressLib.cypressLibStrings.`window:alert`, fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]): scala.Unit = js.native
+  def `off_window:alert`(
+    action: cypressLib.cypressLibStrings.`window:alert`,
+    fn: Agent[
+      cypressLib.typesSinonMod.SinonNs.SinonSpy | cypressLib.typesSinonMod.SinonNs.SinonStub
+    ]
+  ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.alert()` method.
     * Cypress will auto accept alerts. You cannot change this behavior.
@@ -1390,7 +1212,9 @@ trait Cypress extends js.Object {
   @JSName("off")
   def `off_window:confirm`(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]
+    fn: Agent[
+      cypressLib.typesSinonMod.SinonNs.SinonSpy | cypressLib.typesSinonMod.SinonNs.SinonStub
+    ]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.confirm()` method.
@@ -1502,7 +1326,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def on_fail(
     action: cypressLib.cypressLibStrings.fail,
-    fn: js.Function2[/* error */ stdLib.Error, /* mocha */ mochaLib.MochaNs.IRunnable, scala.Unit]
+    fn: js.Function2[/* error */ stdLib.Error, /* mocha */ cypressLib.MochaNs.IRunnable, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires whenever a command emits this event so it can be displayed in the Command Log. Useful to see how internal cypress commands utilize the {% url 'Cypress.log()' cypress-log %} API.
@@ -1541,7 +1365,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def on_scrolled(
     action: cypressLib.cypressLibStrings.scrolled,
-    fn: js.Function1[/* $el */ jqueryLib.JQuery[stdLib.HTMLElement], scala.Unit]
+    fn: js.Function1[/* $el */ cypressLib.JQuery[stdLib.HTMLElement], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires after the test and all **afterEach** and **after** hooks run.
@@ -1554,7 +1378,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def `on_test:after:run`(
     action: cypressLib.cypressLibStrings.`test:after:run`,
-    fn: js.Function2[/* attributes */ ObjectLike, /* test */ mochaLib.MochaNs.ITest, scala.Unit]
+    fn: js.Function2[/* attributes */ ObjectLike, /* test */ cypressLib.MochaNs.ITest, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires before the test and all **before** and **beforeEach** hooks run.
@@ -1567,7 +1391,7 @@ trait Cypress extends js.Object {
   @JSName("on")
   def `on_test:before:run`(
     action: cypressLib.cypressLibStrings.`test:before:run`,
-    fn: js.Function2[/* attributes */ ObjectLike, /* test */ mochaLib.MochaNs.ITest, scala.Unit]
+    fn: js.Function2[/* attributes */ ObjectLike, /* test */ cypressLib.MochaNs.ITest, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Fires when an uncaught exception occurs in your application.
@@ -1604,7 +1428,7 @@ trait Cypress extends js.Object {
     action: cypressLib.cypressLibStrings.`uncaught:exception`,
     fn: js.Function2[
       /* error */ stdLib.Error, 
-      /* runnable */ mochaLib.MochaNs.IRunnable, 
+      /* runnable */ cypressLib.MochaNs.IRunnable, 
       cypressLib.cypressLibNumbers.`false` | scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1635,7 +1459,12 @@ trait Cypress extends js.Object {
     fn: js.Function1[/* viewport */ Viewport, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
-  def `on_window:alert`(action: cypressLib.cypressLibStrings.`window:alert`, fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]): scala.Unit = js.native
+  def `on_window:alert`(
+    action: cypressLib.cypressLibStrings.`window:alert`,
+    fn: Agent[
+      cypressLib.typesSinonMod.SinonNs.SinonSpy | cypressLib.typesSinonMod.SinonNs.SinonStub
+    ]
+  ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.alert()` method.
     * Cypress will auto accept alerts. You cannot change this behavior.
@@ -1690,7 +1519,9 @@ trait Cypress extends js.Object {
   @JSName("on")
   def `on_window:confirm`(
     action: cypressLib.cypressLibStrings.`window:confirm`,
-    fn: Agent[sinonLib.sinonMod.SinonNs.SinonSpy]
+    fn: Agent[
+      cypressLib.typesSinonMod.SinonNs.SinonSpy | cypressLib.typesSinonMod.SinonNs.SinonStub
+    ]
   ): scala.Unit = js.native
   /**
     * Fires when your app calls the global `window.confirm()` method.

@@ -15,6 +15,10 @@ trait SpeechSynthesisEvent extends Event {
 
 @JSGlobal("SpeechSynthesisEvent")
 @js.native
+class SpeechSynthesisEventCls () extends SpeechSynthesisEvent
+
+@JSGlobal("SpeechSynthesisEvent")
+@js.native
 object SpeechSynthesisEvent
   extends org.scalablytyped.runtime.Instantiable0[SpeechSynthesisEvent]
 

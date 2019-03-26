@@ -33,3 +33,9 @@ trait PrintParameters extends Accessor {
   var view: MapView = js.native
 }
 
+@JSGlobal("__esri.PrintParameters")
+@js.native
+class PrintParametersCls () extends PrintParameters {
+  def this(properties: PrintParametersProperties) = this()
+}
+

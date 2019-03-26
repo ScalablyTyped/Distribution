@@ -333,6 +333,60 @@ trait IoT1ClickDevicesService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * List all tags on an AWS IoT 1-Click resource.
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * List all tags on an AWS IoT 1-Click resource.
+    */
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Associate a set of tags with an AWS IoT 1-Click resource. You can then activate these user-defined tags so that they appear on the Billing and Cost Management console for cost allocation tracking.
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Associate a set of tags with an AWS IoT 1-Click resource. You can then activate these user-defined tags so that they appear on the Billing and Cost Management console for cost allocation tracking.
+    */
+  def tagResource(
+    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.TagResourceRequest
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.TagResourceRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Disassociates a device from your AWS account using its device ID.
     */
   def unclaimDevice(): awsDashSdkLib.libRequestMod.Request[
@@ -369,6 +423,23 @@ trait IoT1ClickDevicesService
     awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UnclaimDeviceResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
+  /**
+    * Removes the association of tags from an AWS IoT 1-Click resource.
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes the association of tags from an AWS IoT 1-Click resource.
+    */
+  def untagResource(
+    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UntagResourceRequest
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    params: awsDashSdkLib.clientsIot1clickdevicesserviceMod.IoT1ClickDevicesServiceNs.UntagResourceRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Using a Boolean value (true or false), this operation
     enables or disables the device given a device ID.

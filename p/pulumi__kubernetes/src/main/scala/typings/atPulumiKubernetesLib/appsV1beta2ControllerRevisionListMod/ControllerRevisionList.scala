@@ -41,7 +41,8 @@ class ControllerRevisionList protected ()
     */
   val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList] = js.native
   /**
-    * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * More info:
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
   def getInputs(): atPulumiKubernetesLib.typesInputMod.appsNs.v1beta2Ns.ControllerRevisionList = js.native

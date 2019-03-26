@@ -1,0 +1,13 @@
+package typings
+package atMaterialDashUiIconsLib.swapCallsRoundedMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/icons/SwapCallsRounded", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps] = js.native
+}
+

@@ -6,6 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object postcssNs {
+  /* Rewritten from type alias, can be one of: 
+    - Plugin[js.Any]
+    - Transformer
+    - postcssLib.Anon_Postcss
+    - Processor
+  */
   type AcceptedPlugin = _AcceptedPlugin | Plugin[js.Any]
   type Builder = js.Function3[
     /* part */ java.lang.String, 

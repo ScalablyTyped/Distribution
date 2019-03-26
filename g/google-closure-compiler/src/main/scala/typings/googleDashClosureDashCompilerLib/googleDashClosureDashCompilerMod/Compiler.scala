@@ -22,3 +22,12 @@ trait Compiler extends js.Object {
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
 }
 
+@JSImport("google-closure-compiler", "compiler")
+@js.native
+class compiler protected () extends Compiler {
+  def this(opts: googleDashClosureDashCompilerLib.CompileOptions) = this()
+  def this(opts: js.Array[java.lang.String]) = this()
+  def this(opts: googleDashClosureDashCompilerLib.CompileOptions, extraCommandArgs: js.Array[java.lang.String]) = this()
+  def this(opts: js.Array[java.lang.String], extraCommandArgs: js.Array[java.lang.String]) = this()
+}
+

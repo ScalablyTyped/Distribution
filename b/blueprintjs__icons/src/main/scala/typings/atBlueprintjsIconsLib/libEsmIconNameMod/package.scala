@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libEsmIconNameMod {
-  type IconName = js.Any
+  type IconName = scala.Nothing
 }

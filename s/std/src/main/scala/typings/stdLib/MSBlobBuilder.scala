@@ -15,6 +15,10 @@ trait MSBlobBuilder extends js.Object {
 
 @JSGlobal("MSBlobBuilder")
 @js.native
+class MSBlobBuilderCls () extends MSBlobBuilder
+
+@JSGlobal("MSBlobBuilder")
+@js.native
 object MSBlobBuilder
   extends org.scalablytyped.runtime.Instantiable0[MSBlobBuilder]
 

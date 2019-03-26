@@ -23,7 +23,7 @@ object ScreenBufferHD extends js.Object {
   ): scala.Unit = js.native
   def loadImage(
     url: java.lang.String,
-    options: terminalDashKitLib.Anon_Shrink,
+    options: terminalDashKitLib.Anon_ShrinkAnonHeightWidth,
     callback: js.Function2[/* error */ js.Any, /* image */ this.type, scala.Unit]
   ): scala.Unit = js.native
 }

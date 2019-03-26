@@ -26,9 +26,7 @@ package object typesSpecConfigMod {
     vegaDashTypingsLib.vegaDashTypingsLibStrings.prevent | vegaDashTypingsLib.vegaDashTypingsLibStrings.allow, 
     scala.Boolean | js.Array[vegaDashTypingsLib.typesSpecStreamMod.EventType]
   ]
-  type MarkConfigKeys = vegaDashTypingsLib.vegaDashTypingsLibStrings.mark | (js.UndefOr[
-    vegaDashTypingsLib.vegaDashTypingsLibStrings.arc | vegaDashTypingsLib.vegaDashTypingsLibStrings.area | vegaDashTypingsLib.vegaDashTypingsLibStrings.image | vegaDashTypingsLib.vegaDashTypingsLibStrings.group | vegaDashTypingsLib.vegaDashTypingsLibStrings.line | vegaDashTypingsLib.vegaDashTypingsLibStrings.path | vegaDashTypingsLib.vegaDashTypingsLibStrings.rect | vegaDashTypingsLib.vegaDashTypingsLibStrings.rule | vegaDashTypingsLib.vegaDashTypingsLibStrings.shape | vegaDashTypingsLib.vegaDashTypingsLibStrings.symbol | vegaDashTypingsLib.vegaDashTypingsLibStrings.text | vegaDashTypingsLib.vegaDashTypingsLibStrings.trail
-  ])
+  type MarkConfigKeys = vegaDashTypingsLib.vegaDashTypingsLibStrings.mark | (js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibStrings.arc] with js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibStrings.area] with js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibStrings.image] with js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibStrings.group] with js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibStrings.line] with js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibStrings.path] with js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibStrings.rect] with js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibStrings.rule] with js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibStrings.shape] with js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibStrings.symbol] with js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibStrings.text] with js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibStrings.trail])
   type TitleConfig = vegaDashTypingsLib.typesSpecTitleMod.BaseTitle[
     vegaDashTypingsLib.typesSpecValuesMod.NumberValue, 
     vegaDashTypingsLib.typesSpecValuesMod.StringValue, 

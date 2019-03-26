@@ -300,3 +300,15 @@ trait RoomPosition extends js.Object {
   def lookFor_tombstone(`type`: screepsLib.screepsLibStrings.tombstone): js.Array[Tombstone] = js.native
 }
 
+@JSGlobal("RoomPosition")
+@js.native
+class RoomPositionCls protected () extends RoomPosition {
+  /**
+    * You can create new RoomPosition object using its constructor.
+    * @param x X position in the room.
+    * @param y Y position in the room.
+    * @param roomName The room name.
+    */
+  def this(x: scala.Double, y: scala.Double, roomName: java.lang.String) = this()
+}
+

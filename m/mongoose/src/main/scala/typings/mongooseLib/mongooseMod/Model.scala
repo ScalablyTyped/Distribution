@@ -95,6 +95,16 @@ org.scalablytyped.runtime.Instantiable0[T]
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], scala.Unit]
   ): js.Promise[js.Array[T]] = js.native
   /**
+    * Create the collection for this model. By default, if no indexes are specified, mongoose will not create the
+    * collection for the model until any documents are created. Use this method to create the collection explicitly.
+    */
+  def createCollection(): js.Promise[scala.Unit] = js.native
+  def createCollection(options: mongodbLib.mongodbMod.CollectionCreateOptions): js.Promise[scala.Unit] = js.native
+  def createCollection(
+    options: mongodbLib.mongodbMod.CollectionCreateOptions,
+    cb: js.Function1[/* err */ js.Any, scala.Unit]
+  ): js.Promise[scala.Unit] = js.native
+  /**
     * Similar to ensureIndexes(), except for it uses the createIndex function. The ensureIndex() function checks to see if an index with that name already exists, and, if not, does not attempt to create the index. createIndex() bypasses this check.
     * @param cb Optional callback
     */

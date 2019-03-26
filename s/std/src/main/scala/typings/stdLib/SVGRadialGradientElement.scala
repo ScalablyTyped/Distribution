@@ -16,6 +16,29 @@ trait SVGRadialGradientElement extends SVGGradientElement {
 
 @JSGlobal("SVGRadialGradientElement")
 @js.native
+class SVGRadialGradientElementCls () extends SVGRadialGradientElement {
+  /* CompleteClass */
+  override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /* CompleteClass */
+  override val href: SVGAnimatedString = js.native
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val nextElementSibling: Element | scala.Null = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val previousElementSibling: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val style: CSSStyleDeclaration = js.native
+}
+
+@JSGlobal("SVGRadialGradientElement")
+@js.native
 object SVGRadialGradientElement
   extends org.scalablytyped.runtime.Instantiable0[SVGRadialGradientElement]
 

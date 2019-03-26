@@ -29,3 +29,9 @@ trait ArrayBuffer
   def slice(begin: scala.Double, end: scala.Double): ArrayBuffer = js.native
 }
 
+@JSGlobal("ArrayBuffer")
+@js.native
+class ArrayBufferCls protected () extends ArrayBuffer {
+  def this(byteLength: scala.Double) = this()
+}
+

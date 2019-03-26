@@ -5,5 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - Assertion
+  - Quantifier
+  - QuantifiableElement
+*/
 trait Element extends js.Object
 

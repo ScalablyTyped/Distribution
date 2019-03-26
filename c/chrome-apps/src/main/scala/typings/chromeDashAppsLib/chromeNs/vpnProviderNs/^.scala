@@ -75,7 +75,7 @@ object ^ extends js.Object {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONNECTEDConnected[keyof chrome-apps.Anon_CONNECTEDConnected] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.linkChanged | chromeDashAppsLib.chromeDashAppsLibStrings.linkUp | chromeDashAppsLib.chromeDashAppsLibStrings.suspend | chromeDashAppsLib.chromeDashAppsLibStrings.error | chromeDashAppsLib.chromeDashAppsLibStrings.connected | chromeDashAppsLib.chromeDashAppsLibStrings.resume | chromeDashAppsLib.chromeDashAppsLibStrings.disconnected | chromeDashAppsLib.chromeDashAppsLibStrings.linkDown
         ]
       ], 
       /* error */ java.lang.String, 
@@ -93,7 +93,7 @@ object ^ extends js.Object {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_SHOWADDDIALOG[keyof chrome-apps.Anon_SHOWADDDIALOG] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.showAddDialog | chromeDashAppsLib.chromeDashAppsLibStrings.showConfigureDialog
         ]
       ], 
       /* id */ js.UndefOr[java.lang.String], 
@@ -128,7 +128,7 @@ object ^ extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONNECTEDConnectedFAILURE[keyof chrome-apps.Anon_CONNECTEDConnectedFAILURE] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.connected | chromeDashAppsLib.chromeDashAppsLibStrings.failure
       ]
     ]
   ): scala.Unit = js.native
@@ -138,7 +138,7 @@ object ^ extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONNECTEDConnectedFAILURE[keyof chrome-apps.Anon_CONNECTEDConnectedFAILURE] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.connected | chromeDashAppsLib.chromeDashAppsLibStrings.failure
       ]
     ],
     callback: js.Function0[scala.Unit]

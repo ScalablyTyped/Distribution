@@ -13,6 +13,17 @@ trait WebGLShaderPrecisionFormat extends js.Object {
 
 @JSGlobal("WebGLShaderPrecisionFormat")
 @js.native
+class WebGLShaderPrecisionFormatCls () extends WebGLShaderPrecisionFormat {
+  /* CompleteClass */
+  override val precision: GLint = js.native
+  /* CompleteClass */
+  override val rangeMax: GLint = js.native
+  /* CompleteClass */
+  override val rangeMin: GLint = js.native
+}
+
+@JSGlobal("WebGLShaderPrecisionFormat")
+@js.native
 object WebGLShaderPrecisionFormat
   extends org.scalablytyped.runtime.Instantiable0[WebGLShaderPrecisionFormat]
 

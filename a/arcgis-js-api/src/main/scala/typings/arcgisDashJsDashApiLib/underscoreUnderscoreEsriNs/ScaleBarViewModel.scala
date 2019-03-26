@@ -15,3 +15,9 @@ trait ScaleBarViewModel extends Accessor {
   var view: MapView = js.native
 }
 
+@JSGlobal("__esri.ScaleBarViewModel")
+@js.native
+class ScaleBarViewModelCls () extends ScaleBarViewModel {
+  def this(properties: ScaleBarViewModelProperties) = this()
+}
+

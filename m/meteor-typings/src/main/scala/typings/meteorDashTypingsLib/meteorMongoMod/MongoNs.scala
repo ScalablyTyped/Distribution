@@ -112,6 +112,13 @@ object MongoNs extends js.Object {
   }
   
   @js.native
+  class CollectionCls[T] () extends Collection[T] {
+    def this(name: java.lang.String) = this()
+    def this(name: java.lang.String, options: meteorDashTypingsLib.Anon_Connection) = this()
+    def this(name: scala.Null, options: meteorDashTypingsLib.Anon_Connection) = this()
+  }
+  
+  @js.native
   trait CollectionStatic
     extends org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, Collection[js.Object]]
        with org.scalablytyped.runtime.Instantiable0[Collection[js.Object]]
@@ -141,6 +148,9 @@ object MongoNs extends js.Object {
   }
   
   @js.native
+  class CursorCls[T] () extends Cursor[T]
+  
+  @js.native
   trait CursorStatic
     extends org.scalablytyped.runtime.Instantiable0[Cursor[js.Object]]
   
@@ -150,6 +160,11 @@ object MongoNs extends js.Object {
   trait Modifier extends js.Object
   
   trait ObjectID extends js.Object
+  
+  @js.native
+  class ObjectIDCls () extends ObjectID {
+    def this(hexString: java.lang.String) = this()
+  }
   
   @js.native
   trait ObjectIDStatic

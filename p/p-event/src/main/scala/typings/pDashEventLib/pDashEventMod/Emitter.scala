@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Emitter[EmittedType /* <: pDashEventLib.Array[_] */] extends js.Object {
+trait Emitter[EmittedType /* <: js.Array[_] */] extends js.Object {
   var addEventListener: js.UndefOr[AddRemoveListener[EmittedType]] = js.undefined
   var addListener: js.UndefOr[AddRemoveListener[EmittedType]] = js.undefined
   var off: js.UndefOr[AddRemoveListener[EmittedType]] = js.undefined
@@ -16,7 +16,7 @@ trait Emitter[EmittedType /* <: pDashEventLib.Array[_] */] extends js.Object {
 
 object Emitter {
   @scala.inline
-  def apply[EmittedType /* <: pDashEventLib.Array[_] */](
+  def apply[EmittedType /* <: js.Array[_] */](
     addEventListener: AddRemoveListener[EmittedType] = null,
     addListener: AddRemoveListener[EmittedType] = null,
     off: AddRemoveListener[EmittedType] = null,

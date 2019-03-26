@@ -10,6 +10,10 @@ trait DOMStringMap
 
 @JSGlobal("DOMStringMap")
 @js.native
+class DOMStringMapCls () extends DOMStringMap
+
+@JSGlobal("DOMStringMap")
+@js.native
 object DOMStringMap
   extends org.scalablytyped.runtime.Instantiable0[DOMStringMap]
 

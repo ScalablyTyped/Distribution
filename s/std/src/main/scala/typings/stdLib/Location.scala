@@ -75,6 +75,10 @@ trait Location extends js.Object {
 
 @JSGlobal("Location")
 @js.native
+class LocationCls () extends Location
+
+@JSGlobal("Location")
+@js.native
 object Location
   extends org.scalablytyped.runtime.Instantiable0[Location]
 

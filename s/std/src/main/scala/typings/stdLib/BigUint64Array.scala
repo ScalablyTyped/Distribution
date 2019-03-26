@@ -298,3 +298,13 @@ trait BigUint64Array
   def values(): IterableIterator[BigInt] = js.native
 }
 
+@JSGlobal("BigUint64Array")
+@js.native
+class BigUint64ArrayCls () extends BigUint64Array {
+  def this(array: Iterable[BigInt]) = this()
+  def this(buffer: ArrayBufferLike) = this()
+  def this(length: scala.Double) = this()
+  def this(buffer: ArrayBufferLike, byteOffset: scala.Double) = this()
+  def this(buffer: ArrayBufferLike, byteOffset: scala.Double, length: scala.Double) = this()
+}
+

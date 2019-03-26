@@ -29,7 +29,7 @@ class MosaicWithoutDragDropContext[T /* <: reactDashMosaicDashComponentLib.libTy
 @JSImport("react-mosaic-component/lib/Mosaic", "MosaicWithoutDragDropContext")
 @js.native
 object MosaicWithoutDragDropContext extends js.Object {
-  var childContextTypes: reactDashMosaicDashComponentLib.Anon_ComponentName = js.native
+  var childContextTypes: reactDashMosaicDashComponentLib.Anon_MosaicActions = js.native
   var defaultProps: reactDashMosaicDashComponentLib.Anon_ClassName = js.native
   def ofType[T /* <: reactDashMosaicDashComponentLib.libTypesMod.MosaicKey */](): org.scalablytyped.runtime.Instantiable2[
     /* props */ reactDashMosaicDashComponentLib.libMosaicMod.MosaicProps[T], 

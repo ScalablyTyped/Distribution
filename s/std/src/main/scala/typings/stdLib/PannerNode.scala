@@ -29,6 +29,13 @@ trait PannerNode extends AudioNode {
 
 @JSGlobal("PannerNode")
 @js.native
+class PannerNodeCls protected () extends PannerNode {
+  def this(context: BaseAudioContext) = this()
+  def this(context: BaseAudioContext, options: PannerOptions) = this()
+}
+
+@JSGlobal("PannerNode")
+@js.native
 object PannerNode
   extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, PannerNode]
      with org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ PannerOptions, PannerNode]

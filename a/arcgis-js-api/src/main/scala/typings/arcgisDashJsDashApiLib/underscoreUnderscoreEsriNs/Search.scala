@@ -27,3 +27,9 @@ trait Search extends Accessor {
   var layers: Collection[SearchLayer] = js.native
 }
 
+@JSGlobal("__esri.Search")
+@js.native
+class SearchCls () extends Search {
+  def this(properties: SearchProperties) = this()
+}
+

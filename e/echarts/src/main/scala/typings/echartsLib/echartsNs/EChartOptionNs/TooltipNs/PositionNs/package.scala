@@ -14,5 +14,11 @@ package object PositionNs {
     /* size */ js.Object, 
     (js.Array[scala.Double | java.lang.String]) | Obj
   ]
+  /* Rewritten from type alias, can be one of: 
+    - Str
+    - Obj
+    - js.Array[scala.Double | java.lang.String]
+    - Fn
+  */
   type Type = _Type | (js.Array[scala.Double | java.lang.String]) | Fn
 }

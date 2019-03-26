@@ -15,6 +15,6 @@ class SharedElement ()
 @js.native
 object SharedElement extends js.Object {
   var defaultProps: reactDashNativeDashNavigationLib.Anon_ResizeMode = js.native
-  var propTypes: reactDashNativeDashNavigationLib.Anon_ComponentName = js.native
+  var propTypes: reactDashNativeDashNavigationLib.Anon_ElementId = js.native
 }
 

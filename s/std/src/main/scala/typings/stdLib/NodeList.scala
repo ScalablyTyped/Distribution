@@ -46,6 +46,10 @@ trait NodeList
 
 @JSGlobal("NodeList")
 @js.native
+class NodeListCls () extends NodeList
+
+@JSGlobal("NodeList")
+@js.native
 object NodeList
   extends org.scalablytyped.runtime.Instantiable0[NodeList]
 

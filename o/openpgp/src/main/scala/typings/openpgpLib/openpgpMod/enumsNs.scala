@@ -17,6 +17,21 @@ object enumsNs extends js.Object {
   @js.native
   sealed trait compression extends js.Object
   
+  /**
+    * Maps curve names under various standards to one
+    * @see
+    */
+  /* Rewritten from type alias, can be one of: 
+    - openpgpLib.openpgpLibStrings.p256
+    - openpgpLib.openpgpLibStrings.p384
+    - openpgpLib.openpgpLibStrings.p251
+    - openpgpLib.openpgpLibStrings.secp256k1
+    - openpgpLib.openpgpLibStrings.ed25519
+    - openpgpLib.openpgpLibStrings.curve25519
+    - openpgpLib.openpgpLibStrings.brainpoolP256r1
+    - openpgpLib.openpgpLibStrings.brainpoolP384r1
+    - openpgpLib.openpgpLibStrings.brainpoolP512r1
+  */
   trait curve extends js.Object
   
   @js.native

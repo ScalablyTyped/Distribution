@@ -1,0 +1,32 @@
+package typings
+package nodeLib.assertMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("assert", "strict")
+@js.native
+object strictNs extends js.Object {
+  @js.native
+  class AssertionError ()
+    extends nodeLib.assertMod.internalNs.AssertionError {
+    def this(options: nodeLib.Anon_Actual) = this()
+    /* CompleteClass */
+    override var actual: js.Any = js.native
+    /* CompleteClass */
+    override var code: nodeLib.nodeLibStrings.ERR_ASSERTION = js.native
+    /* CompleteClass */
+    override var expected: js.Any = js.native
+    /* CompleteClass */
+    override var generatedMessage: scala.Boolean = js.native
+    /* CompleteClass */
+    override var message: java.lang.String = js.native
+    /* CompleteClass */
+    override var name: java.lang.String = js.native
+    /* CompleteClass */
+    override var operator: java.lang.String = js.native
+  }
+  
+}
+

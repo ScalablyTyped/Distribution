@@ -1250,6 +1250,25 @@ trait Element
 
 @JSGlobal("Element")
 @js.native
+class ElementCls () extends Element {
+  /* CompleteClass */
+  override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val nextElementSibling: Element | scala.Null = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val previousElementSibling: Element | scala.Null = js.native
+}
+
+@JSGlobal("Element")
+@js.native
 object Element
   extends org.scalablytyped.runtime.Instantiable0[Element]
 

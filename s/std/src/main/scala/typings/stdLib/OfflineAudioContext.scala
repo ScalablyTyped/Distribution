@@ -49,6 +49,13 @@ trait OfflineAudioContext extends BaseAudioContext {
 
 @JSGlobal("OfflineAudioContext")
 @js.native
+class OfflineAudioContextCls protected () extends OfflineAudioContext {
+  def this(contextOptions: OfflineAudioContextOptions) = this()
+  def this(numberOfChannels: scala.Double, length: scala.Double, sampleRate: scala.Double) = this()
+}
+
+@JSGlobal("OfflineAudioContext")
+@js.native
 object OfflineAudioContext
   extends org.scalablytyped.runtime.Instantiable1[/* contextOptions */ OfflineAudioContextOptions, OfflineAudioContext]
      with org.scalablytyped.runtime.Instantiable3[

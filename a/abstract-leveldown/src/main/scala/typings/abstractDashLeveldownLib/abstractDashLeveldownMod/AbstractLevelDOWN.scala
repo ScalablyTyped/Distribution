@@ -23,3 +23,10 @@ trait AbstractLevelDOWN[K, V] extends AbstractOptions {
   def put(key: K, value: V, options: AbstractOptions, cb: ErrorCallback): scala.Unit = js.native
 }
 
+@JSImport("abstract-leveldown", "AbstractLevelDOWN")
+@js.native
+class AbstractLevelDOWNCls[K, V] protected () extends AbstractLevelDOWN[K, V] {
+  // tslint:disable-next-line no-unnecessary-generics
+  def this(location: java.lang.String) = this()
+}
+

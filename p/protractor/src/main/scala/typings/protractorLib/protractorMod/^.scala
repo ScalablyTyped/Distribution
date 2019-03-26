@@ -21,6 +21,7 @@ object ^ extends js.Object {
   var browser: protractorLib.builtBrowserMod.ProtractorBrowser = js.native
   var by: protractorLib.builtLocatorsMod.ProtractorBy = js.native
   var element: protractorLib.builtBrowserMod.ElementHelper = js.native
+  /* Extracted nested Instantiables into classes in protractorNs */
   var protractor: protractorLib.builtPtorMod.Ptor = js.native
   val utils: protractorLib.Anon_Firefox = js.native
 }

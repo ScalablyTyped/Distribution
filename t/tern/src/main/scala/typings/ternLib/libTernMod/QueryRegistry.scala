@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait QueryRegistry extends js.Object {
-  var completions: ternLib.Anon_QueryResult
+  var completions: ternLib.Anon_QueryResultCompletionsQuery
   var definition: ternLib.Anon_QueryResultDefinitionQuery
-  var documentation: ternLib.Anon_QueryResultDocumentationQuery
+  var documentation: ternLib.Anon_QueryResult
   var files: ternLib.Anon_QueryResultFilesQuery
   var properties: ternLib.Anon_QueryResultPropertiesQuery
   var refs: ternLib.Anon_QueryResultRefsQuery
@@ -19,9 +19,9 @@ trait QueryRegistry extends js.Object {
 object QueryRegistry {
   @scala.inline
   def apply(
-    completions: ternLib.Anon_QueryResult,
+    completions: ternLib.Anon_QueryResultCompletionsQuery,
     definition: ternLib.Anon_QueryResultDefinitionQuery,
-    documentation: ternLib.Anon_QueryResultDocumentationQuery,
+    documentation: ternLib.Anon_QueryResult,
     files: ternLib.Anon_QueryResultFilesQuery,
     properties: ternLib.Anon_QueryResultPropertiesQuery,
     refs: ternLib.Anon_QueryResultRefsQuery,

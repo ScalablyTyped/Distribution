@@ -105,7 +105,10 @@ trait ojSunburst[K, D]
   var onOjDrill: (js.Function1[/* event */ atOracleOraclejetLib.ojsunburstMod.ojSunburstNs.ojDrill, _]) | scala.Null = js.native
   var onOjExpand: (js.Function1[/* event */ atOracleOraclejetLib.ojsunburstMod.ojSunburstNs.ojExpand, _]) | scala.Null = js.native
   var onOjRotateInput: (js.Function1[/* event */ atOracleOraclejetLib.ojsunburstMod.ojSunburstNs.ojRotateInput, _]) | scala.Null = js.native
-  var onRootNodeChanged: (js.Function1[/* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], _]) | scala.Null = js.native
+  var onRootNodeChanged: (js.Function1[
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
+    _
+  ]) | scala.Null = js.native
   var onRootNodeContentChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_ContextRendererAnonInsertD[K, D]], 
     _
@@ -698,7 +701,7 @@ trait ojSunburst[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rootNodeChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ]
   ): scala.Unit = js.native
@@ -707,7 +710,7 @@ trait ojSunburst[K, D]
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.rootNodeChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing], 
       _
     ],
     useCapture: scala.Boolean
@@ -842,7 +845,7 @@ trait ojSunburst[K, D]
   @JSName("getProperty")
   def getProperty_nodeDefaults(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.nodeDefaults): atOracleOraclejetLib.Anon_AutoBorderColorBorderWidth = js.native
   @JSName("getProperty")
-  def getProperty_rootNode(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rootNode): js.Any = js.native
+  def getProperty_rootNode(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rootNode): scala.Nothing = js.native
   @JSName("getProperty")
   def getProperty_rootNodeContent(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.rootNodeContent): atOracleOraclejetLib.Anon_ContextRendererAnonInsertD[K, D] = js.native
   @JSName("getProperty")

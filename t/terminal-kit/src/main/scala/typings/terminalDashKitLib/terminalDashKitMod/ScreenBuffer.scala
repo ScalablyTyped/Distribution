@@ -29,7 +29,7 @@ object ScreenBuffer extends js.Object {
   ): scala.Unit = js.native
   def loadImage(
     url: java.lang.String,
-    options: terminalDashKitLib.Anon_Args,
+    options: terminalDashKitLib.Anon_Shrink,
     calback: js.Function2[
       /* error */ js.Any, 
       /* image */ terminalDashKitLib.screenBufferHDMod.namespaced, 

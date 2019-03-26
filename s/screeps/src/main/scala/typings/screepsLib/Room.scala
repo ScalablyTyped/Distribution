@@ -1043,3 +1043,9 @@ trait Room extends js.Object {
   def lookForAt_tombstone(`type`: screepsLib.screepsLibStrings.tombstone, x: scala.Double, y: scala.Double): js.Array[Tombstone] = js.native
 }
 
+@JSGlobal("Room")
+@js.native
+class RoomCls protected () extends Room {
+  def this(id: java.lang.String) = this()
+}
+

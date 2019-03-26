@@ -369,3 +369,14 @@ trait Uint8Array
   def values(): IterableIterator[scala.Double] = js.native
 }
 
+@JSGlobal("Uint8Array")
+@js.native
+class Uint8ArrayCls () extends Uint8Array {
+  def this(arrayOrArrayBuffer: ArrayBufferLike) = this()
+  def this(arrayOrArrayBuffer: ArrayLike[scala.Double]) = this()
+  def this(elements: Iterable[scala.Double]) = this()
+  def this(length: scala.Double) = this()
+  def this(buffer: ArrayBufferLike, byteOffset: scala.Double) = this()
+  def this(buffer: ArrayBufferLike, byteOffset: scala.Double, length: scala.Double) = this()
+}
+

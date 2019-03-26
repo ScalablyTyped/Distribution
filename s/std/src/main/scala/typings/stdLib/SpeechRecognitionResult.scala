@@ -16,6 +16,20 @@ trait SpeechRecognitionResult
 
 @JSGlobal("SpeechRecognitionResult")
 @js.native
+class SpeechRecognitionResultCls () extends SpeechRecognitionResult {
+  /* CompleteClass */
+  override val isFinal: scala.Boolean = js.native
+  /* CompleteClass */
+  @JSName(org.scalablytyped.runtime.Symbol.iterator)
+  override var iterator: js.Function0[IterableIterator[SpeechRecognitionAlternative]] = js.native
+  /* CompleteClass */
+  override val length: scala.Double = js.native
+  /* CompleteClass */
+  override def item(index: scala.Double): SpeechRecognitionAlternative = js.native
+}
+
+@JSGlobal("SpeechRecognitionResult")
+@js.native
 object SpeechRecognitionResult
   extends org.scalablytyped.runtime.Instantiable0[SpeechRecognitionResult]
 

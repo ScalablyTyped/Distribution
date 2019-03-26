@@ -45,3 +45,13 @@ trait Bus[E, A] extends EventStream[E, A] {
   def push(value: A): scala.Unit = js.native
 }
 
+@JSGlobal("Bacon.Bus")
+@js.native
+/**
+  * @constructor
+  * @constructs Bacon.Bus
+  * @description Returns a new [Bus]{@link Bacon.Bus}.
+  * @returns {Bus<E, A>}
+  */
+class BusCls[E, A] () extends Bus[E, A]
+

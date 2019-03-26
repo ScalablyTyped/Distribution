@@ -23,7 +23,11 @@ object TranscribeServiceNs extends js.Object {
     /**
       * An array of strings that contains the vocabulary entries. 
       */
-    var Phrases: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.Phrases
+    var Phrases: js.UndefOr[Phrases] = js.undefined
+    /**
+      * The S3 location of the text file that contains the definition of the custom vocabulary. The URI must be in the same region as the API endpoint that you are calling. The general form is    https://s3-&lt;aws-region&gt;.amazonaws.com/&lt;bucket-name&gt;/&lt;keyprefix&gt;/&lt;objectkey&gt;   For example:  https://s3-us-east-1.amazonaws.com/examplebucket/vocab.txt  For more information about S3 object names, see Object Keys in the Amazon S3 Developer Guide. For more information about custom vocabularies, see Custom Vocabularies.
+      */
+    var VocabularyFileUri: js.UndefOr[Uri] = js.undefined
     /**
       * The name of the vocabulary. The name must be unique within an AWS account. The name is case-sensitive.
       */
@@ -538,7 +542,11 @@ object TranscribeServiceNs extends js.Object {
     /**
       * An array of strings containing the vocabulary entries.
       */
-    var Phrases: awsDashSdkLib.clientsTranscribeserviceMod.TranscribeServiceNs.Phrases
+    var Phrases: js.UndefOr[Phrases] = js.undefined
+    /**
+      * The S3 location of the text file that contains the definition of the custom vocabulary. The URI must be in the same region as the API endpoint that you are calling. The general form is    https://s3-&lt;aws-region&gt;.amazonaws.com/&lt;bucket-name&gt;/&lt;keyprefix&gt;/&lt;objectkey&gt;   For example:  https://s3-us-east-1.amazonaws.com/examplebucket/vocab.txt  For more information about S3 object names, see Object Keys in the Amazon S3 Developer Guide. For more information about custom vocabularies, see Custom Vocabularies.
+      */
+    var VocabularyFileUri: js.UndefOr[Uri] = js.undefined
     /**
       * The name of the vocabulary to update. The name is case-sensitive.
       */
@@ -600,23 +608,65 @@ object TranscribeServiceNs extends js.Object {
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type DateTime = stdLib.Date
   type FailureReason = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`en-US`
+    - awsDashSdkLib.awsDashSdkLibStrings.`es-US`
+    - awsDashSdkLib.awsDashSdkLibStrings.`en-AU`
+    - awsDashSdkLib.awsDashSdkLibStrings.`fr-CA`
+    - awsDashSdkLib.awsDashSdkLibStrings.`en-GB`
+    - awsDashSdkLib.awsDashSdkLibStrings.`de-DE`
+    - awsDashSdkLib.awsDashSdkLibStrings.`pt-BR`
+    - awsDashSdkLib.awsDashSdkLibStrings.`fr-FR`
+    - awsDashSdkLib.awsDashSdkLibStrings.`it-IT`
+    - awsDashSdkLib.awsDashSdkLibStrings.`ko-KR`
+    - java.lang.String
+  */
   type LanguageCode = _LanguageCode | java.lang.String
   type MaxResults = scala.Double
   type MaxSpeakers = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.mp3
+    - awsDashSdkLib.awsDashSdkLibStrings.mp4
+    - awsDashSdkLib.awsDashSdkLibStrings.wav
+    - awsDashSdkLib.awsDashSdkLibStrings.flac
+    - java.lang.String
+  */
   type MediaFormat = _MediaFormat | java.lang.String
   type MediaSampleRateHertz = scala.Double
   type NextToken = java.lang.String
   type OutputBucketName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.CUSTOMER_BUCKET
+    - awsDashSdkLib.awsDashSdkLibStrings.SERVICE_BUCKET
+    - java.lang.String
+  */
   type OutputLocationType = _OutputLocationType | java.lang.String
   type Phrase = java.lang.String
   type Phrases = js.Array[Phrase]
   type TranscriptionJobName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.COMPLETED
+    - java.lang.String
+  */
   type TranscriptionJobStatus = _TranscriptionJobStatus | java.lang.String
   type TranscriptionJobSummaries = js.Array[TranscriptionJobSummary]
   type Uri = java.lang.String
   type Vocabularies = js.Array[VocabularyInfo]
   type VocabularyName = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PENDING
+    - awsDashSdkLib.awsDashSdkLibStrings.READY
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - java.lang.String
+  */
   type VocabularyState = _VocabularyState | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2017-10-26`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -114,7 +114,7 @@ object ^ extends js.Object {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_DENIED[keyof chrome-apps.Anon_DENIED] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.granted | chromeDashAppsLib.chromeDashAppsLibStrings.denied
         ]
       ], 
       scala.Unit

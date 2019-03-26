@@ -14,84 +14,84 @@ object gitlabLibStrings {
   
   @js.native
   sealed trait asana
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait assembla
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait bamboo
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait bugzilla
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait buildkite
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait campfire
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait create extends js.Object
   
   @js.native
   sealed trait `custom-issue-tracker`
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait default extends js.Object
   
   @js.native
   sealed trait delete
-    extends gitlabLib.distEs5InfrastructureRequestHelperMod.RequestType
-       with gitlabLib.distLatestInfrastructureRequestHelperMod.RequestType
+    extends gitlabLib.distLatestInfrastructureRequestHelperMod.RequestType
+       with gitlabLib.distEs5InfrastructureRequestHelperMod.RequestType
   
   @js.native
   sealed trait `drone-ci`
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait `emails-on-push`
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait `external-wiki`
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait flowdock
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait get
-    extends gitlabLib.distEs5InfrastructureRequestHelperMod.RequestType
-       with gitlabLib.distLatestInfrastructureRequestHelperMod.RequestType
+    extends gitlabLib.distLatestInfrastructureRequestHelperMod.RequestType
+       with gitlabLib.distEs5InfrastructureRequestHelperMod.RequestType
   
   @js.native
   sealed trait hangouts_chat
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait hipchat
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait internal
@@ -100,51 +100,51 @@ object gitlabLibStrings {
   
   @js.native
   sealed trait irker
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait jenkins
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait `jenkins-deprecated`
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait jira
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait jobToken extends js.Object
   
   @js.native
   sealed trait kubernetes
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait mattermost
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait `mattermost-slash-commands`
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait `microsoft-teams`
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait `mock-ci`
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait move extends js.Object
@@ -154,23 +154,23 @@ object gitlabLibStrings {
   
   @js.native
   sealed trait packagist
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait `pipelines-email`
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait pivotaltracker
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait post
-    extends gitlabLib.distEs5InfrastructureRequestHelperMod.RequestType
-       with gitlabLib.distLatestInfrastructureRequestHelperMod.RequestType
+    extends gitlabLib.distLatestInfrastructureRequestHelperMod.RequestType
+       with gitlabLib.distEs5InfrastructureRequestHelperMod.RequestType
   
   @js.native
   sealed trait `private`
@@ -179,8 +179,8 @@ object gitlabLibStrings {
   
   @js.native
   sealed trait prometheus
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait public
@@ -189,33 +189,33 @@ object gitlabLibStrings {
   
   @js.native
   sealed trait pushover
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait put
-    extends gitlabLib.distEs5InfrastructureRequestHelperMod.RequestType
-       with gitlabLib.distLatestInfrastructureRequestHelperMod.RequestType
+    extends gitlabLib.distLatestInfrastructureRequestHelperMod.RequestType
+       with gitlabLib.distEs5InfrastructureRequestHelperMod.RequestType
   
   @js.native
   sealed trait redmine
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait slack
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait `slack-slash-commands`
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait teamcity
-    extends gitlabLib.distEs5ServicesServicesMod.ServiceName
-       with gitlabLib.distLatestServicesServicesMod.ServiceName
+    extends gitlabLib.distLatestServicesServicesMod.ServiceName
+       with gitlabLib.distEs5ServicesServicesMod.ServiceName
   
   @js.native
   sealed trait token extends js.Object

@@ -109,3 +109,9 @@ trait CSVLayerView extends LayerView {
   def queryObjectIds(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
 }
 
+@JSGlobal("__esri.CSVLayerView")
+@js.native
+class CSVLayerViewCls () extends CSVLayerView {
+  def this(properties: CSVLayerViewProperties) = this()
+}
+

@@ -18,7 +18,7 @@ trait StopRequestPinDetails extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INVALIDPIN[keyof chrome-apps.Anon_INVALIDPIN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_PIN | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_PUK | chromeDashAppsLib.chromeDashAppsLibStrings.MAX_ATTEMPTS_EXCEEDED | chromeDashAppsLib.chromeDashAppsLibStrings.UNKNOWN_ERROR
       ]
     ]
   ] = js.undefined
@@ -37,7 +37,7 @@ object StopRequestPinDetails {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INVALIDPIN[keyof chrome-apps.Anon_INVALIDPIN] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_PIN | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_PUK | chromeDashAppsLib.chromeDashAppsLibStrings.MAX_ATTEMPTS_EXCEEDED | chromeDashAppsLib.chromeDashAppsLibStrings.UNKNOWN_ERROR
       ]
     ] = null
   ): StopRequestPinDetails = {

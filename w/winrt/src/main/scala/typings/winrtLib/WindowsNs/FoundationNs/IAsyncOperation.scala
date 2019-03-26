@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IAsyncOperation[TResult] extends IPromise[TResult] {
-  var operation: winrtLib.Anon_AsyncInfoAsyncStatus[TResult] = js.native
+  var operation: winrtLib.Anon_CompletedGetResults[TResult] = js.native
 }
 

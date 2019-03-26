@@ -20,6 +20,13 @@ trait Blob
 
 @JSGlobal("Blob")
 @js.native
+class BlobCls () extends Blob {
+  def this(blobParts: js.Array[BlobPart]) = this()
+  def this(blobParts: js.Array[BlobPart], options: BlobPropertyBag) = this()
+}
+
+@JSGlobal("Blob")
+@js.native
 object Blob
   extends org.scalablytyped.runtime.Instantiable0[Blob]
      with org.scalablytyped.runtime.Instantiable1[/* blobParts */ js.Array[BlobPart], Blob]

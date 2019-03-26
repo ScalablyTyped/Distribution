@@ -12,7 +12,9 @@ object ^ extends js.Object {
   val AEntity: Entity[ObjectMap[Component[js.Any, System[js.Any]]]] = js.native
   val ANode: aframeLib.aframeMod.ANode = js.native
   val AScene: Scene = js.native
+  /* Extracted nested Instantiables into classes in THREENs */
   val THREE: ThreeLib = js.native
+  /* Extracted nested Instantiables into classes in TWEENNs */
   val TWEEN: TweenLib = js.native
   val components: ObjectMap[ComponentDescriptor[Component[js.Any, System[js.Any]]]] = js.native
   val geometries: ObjectMap[GeometryDescriptor[Geometry[js.Any]]] = js.native

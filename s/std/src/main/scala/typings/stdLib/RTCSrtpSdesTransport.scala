@@ -49,6 +49,12 @@ trait RTCSrtpSdesTransport
 
 @JSGlobal("RTCSrtpSdesTransport")
 @js.native
+class RTCSrtpSdesTransportCls protected () extends RTCSrtpSdesTransport {
+  def this(transport: RTCIceTransport, encryptParameters: RTCSrtpSdesParameters, decryptParameters: RTCSrtpSdesParameters) = this()
+}
+
+@JSGlobal("RTCSrtpSdesTransport")
+@js.native
 object RTCSrtpSdesTransport
   extends org.scalablytyped.runtime.Instantiable3[
       /* transport */ RTCIceTransport, 

@@ -191,6 +191,12 @@ trait NgModule extends js.Object {
   var schemas: js.UndefOr[js.Array[SchemaMetadata | js.Array[_]]] = js.undefined
 }
 
+@JSImport("@angular/core/src/metadata/ng_module", "NgModule")
+@js.native
+class NgModuleCls () extends NgModule {
+  def this(obj: NgModule) = this()
+}
+
 object NgModule {
   @scala.inline
   def apply(

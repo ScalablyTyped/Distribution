@@ -6,18 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps, 'classes' | 'checkedIcon' | 'color' | 'icon'> ]: @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps, @material-ui/core.@material-ui/core/Checkbox/Checkbox.CheckboxClassKey, 'checkedIcon' | 'color' | 'icon'>) */ trait CheckboxProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[CheckboxClassKey] {
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps, 'classes' | 'checkedIcon' | 'color' | 'icon'> ]: @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseProps[P]} */ trait CheckboxProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[CheckboxClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var checkedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.primary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.secondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.default
   ] = js.undefined
   var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var indeterminate: js.UndefOr[scala.Boolean] = js.undefined
   var indeterminateIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
 object CheckboxProps {

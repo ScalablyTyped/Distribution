@@ -8,6 +8,16 @@ import scala.scalajs.js.annotation._
 @JSImport("jointjs", "g")
 @js.native
 object gNs extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - jointjsLib.jointjsLibStrings.NE
+    - jointjsLib.jointjsLibStrings.E
+    - jointjsLib.jointjsLibStrings.SE
+    - jointjsLib.jointjsLibStrings.S
+    - jointjsLib.jointjsLibStrings.SW
+    - jointjsLib.jointjsLibStrings.W
+    - jointjsLib.jointjsLibStrings.NW
+    - jointjsLib.jointjsLibStrings.N
+  */
   trait CardinalDirection extends js.Object
   
   @js.native
@@ -431,6 +441,12 @@ object gNs extends js.Object {
     def union(rect: PlainRect): Rect = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - jointjsLib.jointjsLibStrings.left
+    - jointjsLib.jointjsLibStrings.right
+    - jointjsLib.jointjsLibStrings.top
+    - jointjsLib.jointjsLibStrings.bottom
+  */
   trait RectangleSide extends js.Object
   
   trait Scale extends js.Object {
@@ -485,6 +501,12 @@ object gNs extends js.Object {
     var segmentSubdivisions: js.UndefOr[js.Array[js.Array[Curve]]] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - jointjsLib.jointjsLibStrings.L
+    - jointjsLib.jointjsLibStrings.C
+    - jointjsLib.jointjsLibStrings.M
+    - jointjsLib.jointjsLibStrings.Z
+  */
   trait SegmentType extends js.Object
   
   trait SegmentTypes

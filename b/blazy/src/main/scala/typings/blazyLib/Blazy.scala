@@ -9,3 +9,9 @@ import scala.scalajs.js.annotation._
 trait Blazy
   extends org.scalablytyped.runtime.Instantiable1[/* options */ BlazyOptions, BlazyInstance]
 
+@JSGlobal("Blazy")
+@js.native
+class BlazyCls protected () extends BlazyInstance {
+  def this(options: BlazyOptions) = this()
+}
+

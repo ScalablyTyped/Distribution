@@ -42,7 +42,7 @@ import scala.scalajs.js.annotation._
   * XValueBinding.getValue()} ) at the control model.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.bindingNs.BindableControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined setPropertyValues, setPropertyValues */ @js.native
+- activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.bindingNs.BindableControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
 trait BindableDataAwareControlModel
   extends activexDashLibreofficeLib.comNs.sunNs.starNs.formNs.DataAwareControlModel
 

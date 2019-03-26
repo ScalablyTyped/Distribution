@@ -9,6 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object mappingNs extends js.Object {
   @js.native
+  class DefaultTableMappingsCls () extends DefaultTableMappings {
+    /* CompleteClass */
+    override def getColumnName(propName: java.lang.String): java.lang.String = js.native
+    /* CompleteClass */
+    override def getPropertyName(columnName: java.lang.String): java.lang.String = js.native
+    /* CompleteClass */
+    override def newObjectInstance(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  }
+  
+  @js.native
   trait DefaultTableMappingsStatic
     extends org.scalablytyped.runtime.Instantiable0[DefaultTableMappings]
   
@@ -18,6 +28,12 @@ object mappingNs extends js.Object {
     def batch(items: js.Array[ModelBatchItem], executionOptions: MappingExecutionOptions): js.Promise[Result] = js.native
     def batch(items: js.Array[ModelBatchItem], executionOptions: java.lang.String): js.Promise[Result] = js.native
     def forModel(name: java.lang.String): ModelMapper = js.native
+  }
+  
+  @js.native
+  class MapperCls protected () extends Mapper {
+    def this(client: cassandraDashDriverLib.cassandraDashDriverMod.Client) = this()
+    def this(client: cassandraDashDriverLib.cassandraDashDriverMod.Client, options: MappingOptions) = this()
   }
   
   @js.native
@@ -53,6 +69,11 @@ object mappingNs extends js.Object {
   trait MappingHandler extends js.Object
   
   @js.native
+  class MappingHandlerCls protected () extends MappingHandler {
+    def this(client: cassandraDashDriverLib.cassandraDashDriverMod.Client, mappingInfo: ModelMappingInfo) = this()
+  }
+  
+  @js.native
   trait MappingHandlerStatic
     extends org.scalablytyped.runtime.Instantiable2[
           /* client */ cassandraDashDriverLib.cassandraDashDriverMod.Client, 
@@ -71,6 +92,11 @@ object mappingNs extends js.Object {
   }
   
   trait ModelBatchItem extends js.Object
+  
+  @js.native
+  class ModelBatchItemCls protected () extends ModelBatchItem {
+    def this(queries: js.Promise[js.Array[MappingQuery]], doc: org.scalablytyped.runtime.StringDictionary[js.Any], docInfo: MappingDocInfo, mappingInfo: ModelMappingInfo) = this()
+  }
   
   @js.native
   trait ModelBatchItemStatic
@@ -189,6 +215,11 @@ object mappingNs extends js.Object {
   }
   
   @js.native
+  class ModelMapperCls protected () extends ModelMapper {
+    def this(name: java.lang.String, handler: MappingHandler) = this()
+  }
+  
+  @js.native
   trait ModelMapperStatic
     extends org.scalablytyped.runtime.Instantiable2[/* name */ java.lang.String, /* handler */ MappingHandler, ModelMapper]
   
@@ -198,6 +229,21 @@ object mappingNs extends js.Object {
     def getColumnName(propName: java.lang.String): java.lang.String
     def getPropertyName(columnName: java.lang.String): java.lang.String
     def newInstance(): TableMappings
+  }
+  
+  @js.native
+  class ModelMappingInfoCls protected () extends ModelMappingInfo {
+    def this(keyspace: java.lang.String, tables: js.Array[ModelTables], mappings: TableMappings, columns: org.scalablytyped.runtime.StringDictionary[java.lang.String]) = this()
+    /* CompleteClass */
+    override var keyspace: java.lang.String = js.native
+    /* CompleteClass */
+    override var tables: js.Array[ModelTables] = js.native
+    /* CompleteClass */
+    override def getColumnName(propName: java.lang.String): java.lang.String = js.native
+    /* CompleteClass */
+    override def getPropertyName(columnName: java.lang.String): java.lang.String = js.native
+    /* CompleteClass */
+    override def newInstance(): TableMappings = js.native
   }
   
   @js.native
@@ -250,6 +296,15 @@ object mappingNs extends js.Object {
   }
   
   @js.native
+  class ResultCls protected () extends Result {
+    def this(rs: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.ResultSet, info: ModelMappingInfo, rowAdapter: js.Function2[
+          /* row */ cassandraDashDriverLib.cassandraDashDriverMod.typesNs.Row, 
+          /* info */ ModelMappingInfo, 
+          org.scalablytyped.runtime.StringDictionary[_]
+        ]) = this()
+  }
+  
+  @js.native
   trait ResultStatic
     extends org.scalablytyped.runtime.Instantiable3[
           /* rs */ cassandraDashDriverLib.cassandraDashDriverMod.typesNs.ResultSet, 
@@ -266,6 +321,16 @@ object mappingNs extends js.Object {
     def getColumnName(propName: java.lang.String): java.lang.String
     def getPropertyName(columnName: java.lang.String): java.lang.String
     def newObjectInstance(): org.scalablytyped.runtime.StringDictionary[js.Any]
+  }
+  
+  @js.native
+  class UnderscoreCqlToCamelCaseMappingsCls () extends UnderscoreCqlToCamelCaseMappings {
+    /* CompleteClass */
+    override def getColumnName(propName: java.lang.String): java.lang.String = js.native
+    /* CompleteClass */
+    override def getPropertyName(columnName: java.lang.String): java.lang.String = js.native
+    /* CompleteClass */
+    override def newObjectInstance(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   }
   
   @js.native

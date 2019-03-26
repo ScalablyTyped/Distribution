@@ -24,6 +24,18 @@ object policiesNs extends js.Object {
     }
     
     @js.native
+    class EC2MultiRegionTranslatorCls () extends EC2MultiRegionTranslator {
+      /* CompleteClass */
+      override def logError(address: java.lang.String, err: stdLib.Error): scala.Unit = js.native
+      /* CompleteClass */
+      override def translate(
+        address: java.lang.String,
+        port: scala.Double,
+        callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
+      ): scala.Unit = js.native
+    }
+    
+    @js.native
     trait EC2MultiRegionTranslatorStatic
       extends org.scalablytyped.runtime.Instantiable0[EC2MultiRegionTranslator]
     
@@ -80,8 +92,22 @@ object policiesNs extends js.Object {
   @js.native
   object reconnectionNs extends js.Object {
     @js.native
+    class ConstantReconnectionPolicyCls protected () extends ConstantReconnectionPolicy {
+      def this(delay: scala.Double) = this()
+      /* CompleteClass */
+      override def newSchedule(): cassandraDashDriverLib.Anon_Next = js.native
+    }
+    
+    @js.native
     trait ConstantReconnectionPolicyStatic
       extends org.scalablytyped.runtime.Instantiable1[/* delay */ scala.Double, ConstantReconnectionPolicy]
+    
+    @js.native
+    class ExponentialReconnectionPolicyCls protected () extends ExponentialReconnectionPolicy {
+      def this(baseDelay: scala.Double, maxDelay: scala.Double, startWithNoDelay: scala.Boolean) = this()
+      /* CompleteClass */
+      override def newSchedule(): cassandraDashDriverLib.Anon_Next = js.native
+    }
     
     @js.native
     trait ExponentialReconnectionPolicyStatic
@@ -148,6 +174,9 @@ object policiesNs extends js.Object {
     }
     
     @js.native
+    class RetryPolicyCls () extends RetryPolicy
+    
+    @js.native
     trait RetryPolicyStatic
       extends org.scalablytyped.runtime.Instantiable0[RetryPolicy] {
       var retryDecision: cassandraDashDriverLib.Anon_Ignore = js.native
@@ -194,6 +223,9 @@ object policiesNs extends js.Object {
             ]
     
     @js.native
+    class NoSpeculativeExecutionPolicyCls () extends NoSpeculativeExecutionPolicy
+    
+    @js.native
     trait NoSpeculativeExecutionPolicyStatic
       extends org.scalablytyped.runtime.Instantiable0[NoSpeculativeExecutionPolicy]
     
@@ -214,6 +246,12 @@ object policiesNs extends js.Object {
   object timestampGenerationNs extends js.Object {
     trait MonotonicTimestampGenerator extends TimestampGenerator {
       def getDate(): scala.Double
+    }
+    
+    @js.native
+    class MonotonicTimestampGeneratorCls () extends MonotonicTimestampGeneratorStatic {
+      def this(warningThreshold: scala.Double) = this()
+      def this(warningThreshold: scala.Double, minLogInterval: scala.Double) = this()
     }
     
     @js.native

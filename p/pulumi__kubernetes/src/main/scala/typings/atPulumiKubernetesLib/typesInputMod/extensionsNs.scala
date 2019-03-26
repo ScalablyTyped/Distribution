@@ -12,6 +12,16 @@ object extensionsNs extends js.Object {
   @js.native
   object v1beta1Ns extends js.Object {
     /**
+      * AllowedCSIDriver represents a single inline CSI Driver that is allowed to be used.
+      */
+    trait AllowedCSIDriver extends js.Object {
+      /**
+        * Name is the registered name of the CSI driver
+        */
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+    }
+    
+    /**
       * AllowedFlexVolume represents a single Flexvolume that is allowed to be used. Deprecated: use
       * AllowedFlexVolume from policy API Group instead.
       */
@@ -68,20 +78,20 @@ object extensionsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * The desired behavior of this daemon set. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DaemonSetSpec]] = js.undefined
       /**
         * The current status of this daemon set. This data may be out of date by some window of time.
         * Populated by the system. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DaemonSetStatus]] = js.undefined
     }
@@ -140,7 +150,7 @@ object extensionsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
@@ -617,7 +627,9 @@ object extensionsNs extends js.Object {
     /**
       * Ingress is a collection of rules that allow inbound connections to reach the endpoints
       * defined by a backend. An Ingress can be configured to give services externally-reachable
-      * urls, load balance traffic, terminate SSL, offer name based virtual hosting etc.
+      * urls, load balance traffic, terminate SSL, offer name based virtual hosting etc. DEPRECATED -
+      * This group version of Ingress is deprecated by networking.k8s.io/v1beta1 Ingress. See the
+      * release notes for more information.
       */
     trait Ingress extends js.Object {
       /**
@@ -640,19 +652,19 @@ object extensionsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec is the desired state of the Ingress. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[IngressSpec]] = js.undefined
       /**
         * Status is the current state of the Ingress. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[IngressStatus]] = js.undefined
     }
@@ -699,7 +711,7 @@ object extensionsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
@@ -815,7 +827,7 @@ object extensionsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
@@ -911,7 +923,7 @@ object extensionsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
@@ -1006,15 +1018,15 @@ object extensionsNs extends js.Object {
         */
       var podSelector: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
       /**
-        * List of rule types that the NetworkPolicy relates to. Valid options are Ingress, Egress, or
-        * Ingress,Egress. If this field is not specified, it will default based on the existence of
-        * Ingress or Egress rules; policies that contain an Egress section are assumed to affect
-        * Egress, and all policies (whether or not they contain an Ingress section) are assumed to
-        * affect Ingress. If you want to write an egress-only policy, you must explicitly specify
-        * policyTypes [ "Egress" ]. Likewise, if you want to write a policy that specifies that no
-        * egress is allowed, you must specify a policyTypes value that include "Egress" (since such a
-        * policy would not include an Egress section and would otherwise default to just [ "Ingress"
-        * ]). This field is beta-level in 1.8
+        * List of rule types that the NetworkPolicy relates to. Valid options are "Ingress",
+        * "Egress", or "Ingress,Egress". If this field is not specified, it will default based on the
+        * existence of Ingress or Egress rules; policies that contain an Egress section are assumed
+        * to affect Egress, and all policies (whether or not they contain an Ingress section) are
+        * assumed to affect Ingress. If you want to write an egress-only policy, you must explicitly
+        * specify policyTypes [ "Egress" ]. Likewise, if you want to write a policy that specifies
+        * that no egress is allowed, you must specify a policyTypes value that include "Egress"
+        * (since such a policy would not include an Egress section and would otherwise default to
+        * just [ "Ingress" ]). This field is beta-level in 1.8
         */
       var policyTypes: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
@@ -1047,7 +1059,7 @@ object extensionsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
@@ -1087,7 +1099,7 @@ object extensionsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
@@ -1104,6 +1116,14 @@ object extensionsNs extends js.Object {
         * unspecified, defaults to true.
         */
       var allowPrivilegeEscalation: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+      /**
+        * AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be
+        * embedded within a pod spec. An empty value means no CSI drivers can run inline within a pod
+        * spec.
+        */
+      var allowedCSIDrivers: js.UndefOr[
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[AllowedCSIDriver]]]
+          ] = js.undefined
       /**
         * allowedCapabilities is a list of capabilities that can be requested to add to the
         * container. Capabilities in this field may be added at the pod author's discretion. You must
@@ -1267,20 +1287,20 @@ object extensionsNs extends js.Object {
       /**
         * If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s)
         * that the ReplicaSet manages. Standard object's metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the specification of the desired behavior of the ReplicaSet. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ReplicaSetSpec]] = js.undefined
       /**
         * Status is the most recently observed status of the ReplicaSet. This data may be out of date
         * by some window of time. Populated by the system. Read-only. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status
         */
       var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ReplicaSetStatus]] = js.undefined
     }
@@ -1340,7 +1360,7 @@ object extensionsNs extends js.Object {
           ] = js.undefined
       /**
         * Standard list metadata. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
@@ -1457,7 +1477,7 @@ object extensionsNs extends js.Object {
         * scaled up immediately when the rolling update starts, such that the total number of old and
         * new pods do not exceed 130% of desired pods. Once old pods have been killed, new RC can be
         * scaled up further, ensuring that total number of pods running at any time during the update
-        * is atmost 130% of desired pods.
+        * is at most 130% of desired pods.
         */
       var maxSurge: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
       /**
@@ -1547,19 +1567,19 @@ object extensionsNs extends js.Object {
       var kind: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Standard object metadata; More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata.
         */
       var metadata: js.UndefOr[
             atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * defines the behavior of the scale. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
         */
       var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ScaleSpec]] = js.undefined
       /**
         * current status of the scale. More info:
-        * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
+        * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
         * Read-only.
         */
       var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ScaleStatus]] = js.undefined

@@ -18,6 +18,12 @@ trait Headers extends js.Object {
 
 @JSGlobal("Headers")
 @js.native
+class HeadersCls () extends Headers {
+  def this(init: HeadersInit_) = this()
+}
+
+@JSGlobal("Headers")
+@js.native
 object Headers
   extends org.scalablytyped.runtime.Instantiable0[Headers]
      with org.scalablytyped.runtime.Instantiable1[/* init */ HeadersInit_, Headers]

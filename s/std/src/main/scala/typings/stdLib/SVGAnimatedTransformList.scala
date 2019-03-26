@@ -12,6 +12,15 @@ trait SVGAnimatedTransformList extends js.Object {
 
 @JSGlobal("SVGAnimatedTransformList")
 @js.native
+class SVGAnimatedTransformListCls () extends SVGAnimatedTransformList {
+  /* CompleteClass */
+  override val animVal: SVGTransformList = js.native
+  /* CompleteClass */
+  override val baseVal: SVGTransformList = js.native
+}
+
+@JSGlobal("SVGAnimatedTransformList")
+@js.native
 object SVGAnimatedTransformList
   extends org.scalablytyped.runtime.Instantiable0[SVGAnimatedTransformList]
 

@@ -1204,6 +1204,11 @@ object SNSNs extends js.Object {
   type TopicsList = js.Array[Topic]
   type account = java.lang.String
   type action = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2010-03-31`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
   type attributeName = java.lang.String
   type attributeValue = java.lang.String

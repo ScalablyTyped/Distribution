@@ -10,5 +10,5 @@ package object TypesNs {
   //   commonly used in mongoose and is found in an example in the docs:
   //   http://mongoosejs.com/docs/api.html#aggregate_Aggregate
   // constructor exposes static methods of mongodb.ObjectID and ObjectId(id)
-  type ObjectIdConstructor = mongooseLib.Anon_CacheHexString with mongooseLib.Anon_S
+  type ObjectIdConstructor = mongooseLib.Anon_CacheHexStringCreateFromHexString with mongooseLib.Anon_S
 }

@@ -90,7 +90,7 @@ trait Anon_AppArchive extends js.Object {
   /**
     * various utility functions
     */
-  val utilNs: Anon_AABias = js.native
+  val utilNs: Anon_AArgsArgument = js.native
   val vaultNs: Anon_IId = js.native
   /**
     * Asserts that value is truthy

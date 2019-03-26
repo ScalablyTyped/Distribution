@@ -19,7 +19,7 @@ trait PlatformInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ARM[keyof chrome-apps.Anon_ARM] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.mips | chromeDashAppsLib.chromeDashAppsLibStrings.arm | chromeDashAppsLib.chromeDashAppsLibStrings.`x86-64` | chromeDashAppsLib.chromeDashAppsLibStrings.`x86-32` | chromeDashAppsLib.chromeDashAppsLibStrings.mips64
     ]
   ]
   /**
@@ -31,7 +31,7 @@ trait PlatformInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ARM[keyof chrome-apps.Anon_ARM] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.mips | chromeDashAppsLib.chromeDashAppsLibStrings.arm | chromeDashAppsLib.chromeDashAppsLibStrings.`x86-64` | chromeDashAppsLib.chromeDashAppsLibStrings.`x86-32` | chromeDashAppsLib.chromeDashAppsLibStrings.mips64
     ]
   ]
   /**
@@ -43,7 +43,7 @@ trait PlatformInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ANDROID[keyof chrome-apps.Anon_ANDROID] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.mac | chromeDashAppsLib.chromeDashAppsLibStrings.android | chromeDashAppsLib.chromeDashAppsLibStrings.cros | chromeDashAppsLib.chromeDashAppsLibStrings.win | chromeDashAppsLib.chromeDashAppsLibStrings.linux | chromeDashAppsLib.chromeDashAppsLibStrings.openbsd
     ]
   ]
 }
@@ -56,7 +56,7 @@ object PlatformInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ARM[keyof chrome-apps.Anon_ARM] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.mips | chromeDashAppsLib.chromeDashAppsLibStrings.arm | chromeDashAppsLib.chromeDashAppsLibStrings.`x86-64` | chromeDashAppsLib.chromeDashAppsLibStrings.`x86-32` | chromeDashAppsLib.chromeDashAppsLibStrings.mips64
       ]
     ],
     nacl_arch: chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -64,7 +64,7 @@ object PlatformInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ARM[keyof chrome-apps.Anon_ARM] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.mips | chromeDashAppsLib.chromeDashAppsLibStrings.arm | chromeDashAppsLib.chromeDashAppsLibStrings.`x86-64` | chromeDashAppsLib.chromeDashAppsLibStrings.`x86-32` | chromeDashAppsLib.chromeDashAppsLibStrings.mips64
       ]
     ],
     os: chromeDashAppsLib.chromeNs.ToStringLiteral[
@@ -72,7 +72,7 @@ object PlatformInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ANDROID[keyof chrome-apps.Anon_ANDROID] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.mac | chromeDashAppsLib.chromeDashAppsLibStrings.android | chromeDashAppsLib.chromeDashAppsLibStrings.cros | chromeDashAppsLib.chromeDashAppsLibStrings.win | chromeDashAppsLib.chromeDashAppsLibStrings.linux | chromeDashAppsLib.chromeDashAppsLibStrings.openbsd
       ]
     ]
   ): PlatformInfo = {

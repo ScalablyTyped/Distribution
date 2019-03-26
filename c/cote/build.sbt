@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "cote"
-version := "0.19-dt-20190227Z-c65d35"
+version := "0.19-dt-20190227Z-72d1fe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "eventemitter2" % "5.0.1-2a40bc",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
-  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20190322Z-3491bd",
-  "org.scalablytyped" %%% "std" % "3.3-ec2942")
+  "org.scalablytyped" %%% "eventemitter2" % "5.0.1-8e056e",
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190325Z-000e7b",
+  "org.scalablytyped" %%% "socket_dot_io" % "2.1-dt-20190322Z-c9112b",
+  "org.scalablytyped" %%% "std" % "3.3-14e863")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

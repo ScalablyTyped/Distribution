@@ -24,3 +24,9 @@ trait Map[K, V] extends js.Object {
   def values(): Iterator[V] = js.native
 }
 
+@JSGlobal("Map")
+@js.native
+class MapCls[K, V] () extends Map[K, V] {
+  def this(iterable: ForEachable[js.Tuple2[K, V]]) = this()
+}
+

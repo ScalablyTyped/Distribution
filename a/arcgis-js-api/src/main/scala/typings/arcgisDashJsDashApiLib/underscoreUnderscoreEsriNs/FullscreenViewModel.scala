@@ -53,3 +53,9 @@ trait FullscreenViewModel extends Accessor {
   def toggle(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.FullscreenViewModel")
+@js.native
+class FullscreenViewModelCls () extends FullscreenViewModel {
+  def this(properties: FullscreenViewModelProperties) = this()
+}
+

@@ -24,8 +24,26 @@ object PermissionsNs extends js.Object {
     var status: PermissionStatus
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - expoLib.expoLibStrings.undetermined
+    - expoLib.expoLibStrings.granted
+    - expoLib.expoLibStrings.denied
+  */
   trait PermissionStatus extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - expoLib.expoLibStrings.audioRecording
+    - expoLib.expoLibStrings.calendar
+    - expoLib.expoLibStrings.cameraRoll
+    - expoLib.expoLibStrings.camera
+    - expoLib.expoLibStrings.contacts
+    - expoLib.expoLibStrings.location
+    - expoLib.expoLibStrings.reminders
+    - expoLib.expoLibStrings.notifications
+    - expoLib.expoLibStrings.systemBrightness
+    - expoLib.expoLibStrings.userFacingNotifications
+    - expoLib.expoLibStrings.SMS
+  */
   trait PermissionType extends js.Object
   
   trait SinglePermissionResponse extends js.Object {

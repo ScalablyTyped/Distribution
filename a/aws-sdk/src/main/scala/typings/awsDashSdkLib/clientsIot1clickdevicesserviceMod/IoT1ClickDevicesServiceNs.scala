@@ -70,6 +70,10 @@ object IoT1ClickDevicesServiceNs extends js.Object {
   
   trait DeviceDescription extends js.Object {
     /**
+      * The ARN of the device.
+      */
+    var Arn: js.UndefOr[__string] = js.undefined
+    /**
       * An array of zero or more elements of DeviceAttribute objects
       providing user specified device attributes.
       */
@@ -87,6 +91,10 @@ object IoT1ClickDevicesServiceNs extends js.Object {
       the device.
       */
     var RemainingLife: js.UndefOr[__doubleMin0Max100] = js.undefined
+    /**
+      * The tags currently associated with the AWS IoT 1-Click device.
+      */
+    var Tags: js.UndefOr[__mapOf__string] = js.undefined
     /**
       * The type of the device, such as "button".
       */
@@ -120,6 +128,10 @@ object IoT1ClickDevicesServiceNs extends js.Object {
       * The unique identifier of the device.
       */
     var DeviceId: __string
+    /**
+      * The tags to be assigned to the AWS IoT 1-Click device.
+      */
+    var Tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   trait FinalizeDeviceClaimResponse extends js.Object {
@@ -244,6 +256,31 @@ object IoT1ClickDevicesServiceNs extends js.Object {
       * The token to retrieve the next set of results.
       */
     var NextToken: js.UndefOr[__string] = js.undefined
+  }
+  
+  trait ListTagsForResourceRequest extends js.Object {
+    /**
+      * The AWS IoT 1-Click resource with tags to be listed. This value is an Amazon Resource Name (ARN).
+      */
+    var ResourceArn: __string
+  }
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    /**
+      * The tags currently associated with the AWS IoT 1-Click resource.
+      */
+    var Tags: js.UndefOr[__mapOf__string] = js.undefined
+  }
+  
+  trait TagResourceRequest extends js.Object {
+    /**
+      * Identifies the AWS IoT 1-Click resource to which tags should be added. This value is an Amazon Resource Name (ARN).
+      */
+    var ResourceArn: __string
+    /**
+      * The tags to be assigned to the AWS IoT 1-Click resource.
+      */
+    var Tags: __mapOf__string
   }
   
   @js.native
@@ -462,6 +499,44 @@ object IoT1ClickDevicesServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDevicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * List all tags on an AWS IoT 1-Click resource.
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * List all tags on an AWS IoT 1-Click resource.
+      */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Associate a set of tags with an AWS IoT 1-Click resource. You can then activate these user-defined tags so that they appear on the Billing and Cost Management console for cost allocation tracking.
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Associate a set of tags with an AWS IoT 1-Click resource. You can then activate these user-defined tags so that they appear on the Billing and Cost Management console for cost allocation tracking.
+      */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Disassociates a device from your AWS account using its device ID.
       */
     def unclaimDevice(): awsDashSdkLib.libRequestMod.Request[UnclaimDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -484,6 +559,21 @@ object IoT1ClickDevicesServiceNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UnclaimDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes the association of tags from an AWS IoT 1-Click resource.
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes the association of tags from an AWS IoT 1-Click resource.
+      */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Using a Boolean value (true or false), this operation
       enables or disables the device given a device ID.
@@ -525,6 +615,17 @@ object IoT1ClickDevicesServiceNs extends js.Object {
     var State: js.UndefOr[__string] = js.undefined
   }
   
+  trait UntagResourceRequest extends js.Object {
+    /**
+      * The AWS IoT 1-Click resource the tags will be removed from. This value is an Amazon Resource Name (ARN).
+      */
+    var ResourceArn: __string
+    /**
+      * A list of tag keys. Existing tags of the resource whose keys are members of this list will be removed from the AWS IoT 1-Click resource.
+      */
+    var TagKeys: __listOf__string
+  }
+  
   trait UpdateDeviceStateRequest extends js.Object {
     /**
       * The unique identifier of the device.
@@ -539,6 +640,9 @@ object IoT1ClickDevicesServiceNs extends js.Object {
   
   trait UpdateDeviceStateResponse extends js.Object
   
+  trait __mapOf__string
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
+  
   trait _apiVersion extends js.Object
   
   val TypesNs: this.type = js.native
@@ -550,9 +654,15 @@ object IoT1ClickDevicesServiceNs extends js.Object {
   type __listOfDeviceDescription = js.Array[DeviceDescription]
   type __listOfDeviceEvent = js.Array[DeviceEvent]
   type __listOfDeviceMethod = js.Array[DeviceMethod]
+  type __listOf__string = js.Array[__string]
   type __string = java.lang.String
   type __stringMin12Max40 = java.lang.String
   type __timestampIso8601 = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2018-05-14`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

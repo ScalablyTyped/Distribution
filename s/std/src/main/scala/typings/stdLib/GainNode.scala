@@ -12,6 +12,13 @@ trait GainNode extends AudioNode {
 
 @JSGlobal("GainNode")
 @js.native
+class GainNodeCls protected () extends GainNode {
+  def this(context: BaseAudioContext) = this()
+  def this(context: BaseAudioContext, options: GainOptions) = this()
+}
+
+@JSGlobal("GainNode")
+@js.native
 object GainNode
   extends org.scalablytyped.runtime.Instantiable1[/* context */ BaseAudioContext, GainNode]
      with org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* options */ GainOptions, GainNode]

@@ -64,7 +64,7 @@ trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   ]) | scala.Null = js.native
   var onTooltipChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_718918166
+      atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288
     ], 
     _
   ]) | scala.Null = js.native
@@ -92,7 +92,7 @@ trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   var selectedState: atOracleOraclejetLib.Anon_BorderColorCircle = js.native
   var step: atOracleOraclejetLib.atOracleOraclejetLibNumbers.`0DOT5` | atOracleOraclejetLib.atOracleOraclejetLibNumbers.`1` = js.native
   var thresholds: js.Array[atOracleOraclejetLib.ojgaugeMod.ojRatingGaugeNs.Threshold] = js.native
-  var tooltip: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_718918166 = js.native
+  var tooltip: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288 = js.native
   val transientValue: scala.Double | scala.Null = js.native
   var unselectedState: atOracleOraclejetLib.Anon_BorderColorCircle = js.native
   var value: scala.Double | scala.Null = js.native
@@ -341,7 +341,7 @@ trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_718918166
+        atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288
       ], 
       _
     ]
@@ -352,7 +352,7 @@ trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_718918166
+        atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288
       ], 
       _
     ],
@@ -438,7 +438,7 @@ trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   @JSName("getProperty")
   def getProperty_thresholds(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.thresholds): js.Array[atOracleOraclejetLib.ojgaugeMod.ojRatingGaugeNs.Threshold] = js.native
   @JSName("getProperty")
-  def getProperty_tooltip(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.tooltip): atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_718918166 = js.native
+  def getProperty_tooltip(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.tooltip): atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288 = js.native
   @JSName("getProperty")
   def getProperty_transientValue(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.transientValue): scala.Double | scala.Null = js.native
   @JSName("getProperty")
@@ -513,7 +513,7 @@ trait ojRatingGauge extends dvtBaseGauge[ojRatingGaugeSettableProperties] {
   @JSName("setProperty")
   def setProperty_tooltip(
     property: atOracleOraclejetLib.atOracleOraclejetLibStrings.tooltip,
-    value: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_718918166
+    value: atOracleOraclejetLib.Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext_885303288
   ): scala.Unit = js.native
   @JSName("setProperty")
   def setProperty_transientValue(property: atOracleOraclejetLib.atOracleOraclejetLibStrings.transientValue): scala.Unit = js.native

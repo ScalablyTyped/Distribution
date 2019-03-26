@@ -69,6 +69,10 @@ class VectorBoolean ()
     */
   var size_ : js.Any = js.native
   /**
+    * @inheritDoc
+    */
+  def assign(n: scala.Double, `val`: scala.Boolean): scala.Unit = js.native
+  /**
     * Flip all values.
     */
   def flip(): scala.Unit = js.native

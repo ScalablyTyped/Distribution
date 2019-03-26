@@ -24,6 +24,12 @@ object connectionPointsNs extends js.Object {
     var rectangle: StrokeConnectionPointArguments
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - jointjsLib.jointjsLibStrings.anchor
+    - jointjsLib.jointjsLibStrings.bbox
+    - jointjsLib.jointjsLibStrings.rectangle
+    - jointjsLib.jointjsLibStrings.boundary
+  */
   trait ConnectionPointType extends js.Object
   
   trait DefaultConnectionPointArguments extends js.Object {

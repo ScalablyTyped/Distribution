@@ -48,6 +48,11 @@ package object reactDashNativeMod {
     */
   type KeyboardAvoidingViewComponent = reactLib.reactMod.Component[KeyboardAvoidingViewProps, js.Object, js.Any]
   type KeyboardTypeAndroid = reactDashNativeLib.reactDashNativeLibStrings.`visible-password`
+  /* Rewritten from type alias, can be one of: 
+    - KeyboardType
+    - KeyboardTypeAndroid
+    - KeyboardTypeIOS
+  */
   type KeyboardTypeOptions = _KeyboardTypeOptions | KeyboardTypeAndroid
   type LayoutAnimation = LayoutAnimationStatic
   type Linking = LinkingStatic

@@ -130,3 +130,9 @@ trait Expand extends Widget {
   def toggle(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.Expand")
+@js.native
+class ExpandCls () extends Expand {
+  def this(properties: ExpandProperties) = this()
+}
+

@@ -16,10 +16,10 @@ trait GetTableResult extends js.Object {
     */
   val id: java.lang.String
   val localSecondaryIndexes: js.Array[atPulumiAwsLib.Anon_NameNonKeyAttributes]
-  val pointInTimeRecovery: atPulumiAwsLib.Anon_EnabledBoolean_204597847
+  val pointInTimeRecovery: atPulumiAwsLib.Anon_EnabledBoolean_1082978225
   val rangeKey: java.lang.String
   val readCapacity: scala.Double
-  val serverSideEncryption: atPulumiAwsLib.Anon_EnabledBoolean_204597847
+  val serverSideEncryption: atPulumiAwsLib.Anon_EnabledBoolean_1082978225
   val streamArn: java.lang.String
   val streamEnabled: scala.Boolean
   val streamLabel: java.lang.String
@@ -39,10 +39,10 @@ object GetTableResult {
     hashKey: java.lang.String,
     id: java.lang.String,
     localSecondaryIndexes: js.Array[atPulumiAwsLib.Anon_NameNonKeyAttributes],
-    pointInTimeRecovery: atPulumiAwsLib.Anon_EnabledBoolean_204597847,
+    pointInTimeRecovery: atPulumiAwsLib.Anon_EnabledBoolean_1082978225,
     rangeKey: java.lang.String,
     readCapacity: scala.Double,
-    serverSideEncryption: atPulumiAwsLib.Anon_EnabledBoolean_204597847,
+    serverSideEncryption: atPulumiAwsLib.Anon_EnabledBoolean_1082978225,
     streamArn: java.lang.String,
     streamEnabled: scala.Boolean,
     streamLabel: java.lang.String,

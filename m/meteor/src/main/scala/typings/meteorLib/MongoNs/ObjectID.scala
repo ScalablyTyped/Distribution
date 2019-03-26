@@ -10,6 +10,16 @@ trait ObjectID extends js.Object {
   def toHexString(): java.lang.String
 }
 
+@JSGlobal("Mongo.ObjectID")
+@js.native
+class ObjectIDCls () extends ObjectID {
+  def this(hexString: java.lang.String) = this()
+  /* CompleteClass */
+  override def equals(otherID: ObjectID): scala.Boolean = js.native
+  /* CompleteClass */
+  override def toHexString(): java.lang.String = js.native
+}
+
 object ObjectID {
   @scala.inline
   def apply(equals: ObjectID => scala.Boolean, toHexString: () => java.lang.String): ObjectID = {

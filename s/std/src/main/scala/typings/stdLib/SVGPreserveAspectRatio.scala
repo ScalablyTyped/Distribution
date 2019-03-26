@@ -26,6 +26,43 @@ trait SVGPreserveAspectRatio extends js.Object {
 
 @JSGlobal("SVGPreserveAspectRatio")
 @js.native
+class SVGPreserveAspectRatioCls () extends SVGPreserveAspectRatio {
+  /* CompleteClass */
+  override val SVG_MEETORSLICE_MEET: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_MEETORSLICE_SLICE: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_MEETORSLICE_UNKNOWN: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_PRESERVEASPECTRATIO_NONE: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_PRESERVEASPECTRATIO_UNKNOWN: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_PRESERVEASPECTRATIO_XMAXYMAX: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_PRESERVEASPECTRATIO_XMAXYMID: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_PRESERVEASPECTRATIO_XMAXYMIN: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_PRESERVEASPECTRATIO_XMIDYMAX: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_PRESERVEASPECTRATIO_XMIDYMID: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_PRESERVEASPECTRATIO_XMIDYMIN: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_PRESERVEASPECTRATIO_XMINYMAX: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_PRESERVEASPECTRATIO_XMINYMID: scala.Double = js.native
+  /* CompleteClass */
+  override val SVG_PRESERVEASPECTRATIO_XMINYMIN: scala.Double = js.native
+  /* CompleteClass */
+  override var align: scala.Double = js.native
+  /* CompleteClass */
+  override var meetOrSlice: scala.Double = js.native
+}
+
+@JSGlobal("SVGPreserveAspectRatio")
+@js.native
 object SVGPreserveAspectRatio
   extends org.scalablytyped.runtime.Instantiable0[SVGPreserveAspectRatio] {
   val SVG_MEETORSLICE_MEET: scala.Double = js.native

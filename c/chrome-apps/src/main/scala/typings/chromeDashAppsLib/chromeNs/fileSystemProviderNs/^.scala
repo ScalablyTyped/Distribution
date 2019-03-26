@@ -45,7 +45,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -69,7 +69,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -92,7 +92,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -117,7 +117,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -140,7 +140,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -164,7 +164,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -187,7 +187,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -211,7 +211,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -236,7 +236,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -263,7 +263,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -287,7 +287,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -312,7 +312,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -335,7 +335,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -359,7 +359,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -383,7 +383,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -407,7 +407,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -431,7 +431,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -454,7 +454,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -481,7 +481,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit
@@ -503,7 +503,7 @@ object ^ extends js.Object {
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
+            chromeDashAppsLib.chromeDashAppsLibStrings.IN_USE | chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_DIRECTORY | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_OPERATION | chromeDashAppsLib.chromeDashAppsLibStrings.OK | chromeDashAppsLib.chromeDashAppsLibStrings.NO_MEMORY | chromeDashAppsLib.chromeDashAppsLibStrings.SECURITY | chromeDashAppsLib.chromeDashAppsLibStrings.ABORT | chromeDashAppsLib.chromeDashAppsLibStrings.INVALID_URL | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_EMPTY | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_A_FILE | chromeDashAppsLib.chromeDashAppsLibStrings.NO_SPACE | chromeDashAppsLib.chromeDashAppsLibStrings.NOT_FOUND | chromeDashAppsLib.chromeDashAppsLibStrings.IO | chromeDashAppsLib.chromeDashAppsLibStrings.TOO_MANY_OPENED | chromeDashAppsLib.chromeDashAppsLibStrings.FAILED | chromeDashAppsLib.chromeDashAppsLibStrings.EXISTS
           ]
         ], 
         scala.Unit

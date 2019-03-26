@@ -144,6 +144,16 @@ object defaultNs extends js.Object {
   }
   
   @js.native
+  class PromiseCls[T] protected ()
+    extends dexieLib.dexieMod.DexieNs.Promise[T] {
+    def this(executor: js.Function2[
+          /* resolve */ js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], scala.Unit], 
+          /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
+          scala.Unit
+        ]) = this()
+  }
+  
+  @js.native
   class QuotaExceededError ()
     extends dexieLib.dexieMod.DexieNs.QuotaExceededError {
     def this(inner: js.Object) = this()

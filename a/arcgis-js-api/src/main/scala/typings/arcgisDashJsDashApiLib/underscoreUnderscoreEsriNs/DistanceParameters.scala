@@ -41,3 +41,9 @@ trait DistanceParameters extends Accessor {
   def toJSON(): js.Any = js.native
 }
 
+@JSGlobal("__esri.DistanceParameters")
+@js.native
+class DistanceParametersCls () extends DistanceParameters {
+  def this(properties: DistanceParametersProperties) = this()
+}
+

@@ -39,3 +39,7 @@ trait Evented extends js.Object {
   def on(`type`: java.lang.String, listener: EventHandler): arcgisDashJsDashApiLib.IHandle = js.native
 }
 
+@JSGlobal("__esri.Evented")
+@js.native
+class EventedCls () extends Evented
+

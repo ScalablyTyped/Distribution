@@ -14,11 +14,15 @@ object ^ extends js.Object {
   val crashlytics: CrashlyticsModule = js.native
   val database: DatabaseModule = js.native
   val default: Firebase = js.native
+  /* Extracted nested Instantiables into classes in firestoreNs */
   val firestore: FirestoreModule = js.native
   val functions: FunctionsModule = js.native
   val iid: IidModule = js.native
+  /* Extracted nested Instantiables into classes in linksNs */
   val links: LinksModule = js.native
+  /* Extracted nested Instantiables into classes in messagingNs */
   val messaging: MessagingModule = js.native
+  /* Extracted nested Instantiables into classes in notificationsNs */
   val notifications: NotificationsModule = js.native
   val storage: StorageModule = js.native
 }

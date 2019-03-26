@@ -5,5 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/* Rewritten from type alias, can be one of: 
+  - stdLib.stdLibStrings.sendrecv
+  - stdLib.stdLibStrings.sendonly
+  - stdLib.stdLibStrings.recvonly
+  - stdLib.stdLibStrings.inactive
+*/
 trait RTCRtpTransceiverDirection extends js.Object
 

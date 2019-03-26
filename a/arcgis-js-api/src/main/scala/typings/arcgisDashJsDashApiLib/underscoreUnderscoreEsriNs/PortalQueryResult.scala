@@ -33,3 +33,9 @@ trait PortalQueryResult extends Accessor {
   var total: scala.Double = js.native
 }
 
+@JSGlobal("__esri.PortalQueryResult")
+@js.native
+class PortalQueryResultCls () extends PortalQueryResult {
+  def this(properties: PortalQueryResultProperties) = this()
+}
+

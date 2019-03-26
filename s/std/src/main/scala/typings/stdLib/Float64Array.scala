@@ -369,3 +369,14 @@ trait Float64Array
   def values(): IterableIterator[scala.Double] = js.native
 }
 
+@JSGlobal("Float64Array")
+@js.native
+class Float64ArrayCls () extends Float64Array {
+  def this(arrayOrArrayBuffer: ArrayBufferLike) = this()
+  def this(arrayOrArrayBuffer: ArrayLike[scala.Double]) = this()
+  def this(elements: Iterable[scala.Double]) = this()
+  def this(length: scala.Double) = this()
+  def this(buffer: ArrayBufferLike, byteOffset: scala.Double) = this()
+  def this(buffer: ArrayBufferLike, byteOffset: scala.Double, length: scala.Double) = this()
+}
+

@@ -42,6 +42,12 @@ package object rollupMod {
     /* parent */ java.lang.String, 
     js.Promise[ResolveIdResult] | ResolveIdResult
   ]
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - rollupLib.rollupLibNumbers.`false`
+    - scala.Unit
+    - ResolvedId
+  */
   type ResolveIdResult = _ResolveIdResult | java.lang.String | scala.Unit
   type TransformChunkHook = js.ThisFunction2[
     /* this */ PluginContext, 

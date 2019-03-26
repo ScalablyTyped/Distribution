@@ -50,6 +50,13 @@ trait DOMMatrix extends DOMMatrixReadOnly {
 
 @JSGlobal("DOMMatrix")
 @js.native
+class DOMMatrixCls () extends DOMMatrix {
+  def this(init: java.lang.String) = this()
+  def this(init: js.Array[scala.Double]) = this()
+}
+
+@JSGlobal("DOMMatrix")
+@js.native
 object DOMMatrix
   extends org.scalablytyped.runtime.Instantiable0[DOMMatrix]
      with org.scalablytyped.runtime.Instantiable1[(/* init */ js.Array[scala.Double]) | (/* init */ java.lang.String), DOMMatrix] {

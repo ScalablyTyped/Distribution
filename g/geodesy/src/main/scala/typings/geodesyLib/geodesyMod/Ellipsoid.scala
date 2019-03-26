@@ -11,6 +11,17 @@ trait Ellipsoid extends js.Object {
   var f: scala.Double
 }
 
+/* Rewritten from type alias, can be one of: 
+  - geodesyLib.geodesyLibStrings.WGS84
+  - geodesyLib.geodesyLibStrings.Airy1830
+  - geodesyLib.geodesyLibStrings.AiryModified
+  - geodesyLib.geodesyLibStrings.Bessel1841
+  - geodesyLib.geodesyLibStrings.Clarke1866
+  - geodesyLib.geodesyLibStrings.Clarke1880IGN
+  - geodesyLib.geodesyLibStrings.GRS80
+  - geodesyLib.geodesyLibStrings.Intl1924
+  - geodesyLib.geodesyLibStrings.WGS72
+*/
 trait ellipsoid extends js.Object
 
 object Ellipsoid {

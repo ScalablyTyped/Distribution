@@ -820,6 +820,11 @@ object IoT1ClickProjectsNs extends js.Object {
   type TagKeyList = js.Array[TagKey]
   type TagValue = java.lang.String
   type Time = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2018-05-14`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

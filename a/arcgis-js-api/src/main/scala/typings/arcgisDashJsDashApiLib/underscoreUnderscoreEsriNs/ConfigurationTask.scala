@@ -130,3 +130,9 @@ trait ConfigurationTask extends Task {
   def getVisibleJobTypes(user: java.lang.String, requestOptions: js.Any): arcgisDashJsDashApiLib.IPromise[JobType] = js.native
 }
 
+@JSGlobal("__esri.ConfigurationTask")
+@js.native
+class ConfigurationTaskCls () extends ConfigurationTask {
+  def this(properties: ConfigurationTaskProperties) = this()
+}
+

@@ -6,15 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLUListElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLUListElement>[P]}
-- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<std.HTMLUListElement>, @material-ui/core.@material-ui/core/GridList/GridList.GridListClassKey, never>) */ trait GridListProps
-  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[GridListClassKey] {
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLUListElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLUListElement>[P]} */ trait GridListProps
+  extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[GridListClassKey]
+     with atMaterialDashUiCoreLib.Anon_ClassName {
   var cellHeight: js.UndefOr[scala.Double | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
   var cols: js.UndefOr[scala.Double] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[GridListProps]] = js.undefined
   var spacing: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
 object GridListProps {

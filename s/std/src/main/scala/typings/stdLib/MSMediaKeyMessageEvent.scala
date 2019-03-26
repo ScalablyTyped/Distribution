@@ -13,6 +13,10 @@ trait MSMediaKeyMessageEvent extends Event {
 
 @JSGlobal("MSMediaKeyMessageEvent")
 @js.native
+class MSMediaKeyMessageEventCls () extends MSMediaKeyMessageEvent
+
+@JSGlobal("MSMediaKeyMessageEvent")
+@js.native
 object MSMediaKeyMessageEvent
   extends org.scalablytyped.runtime.Instantiable0[MSMediaKeyMessageEvent]
 

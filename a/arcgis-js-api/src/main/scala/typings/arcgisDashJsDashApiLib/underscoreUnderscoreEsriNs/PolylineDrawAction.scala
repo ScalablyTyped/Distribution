@@ -38,3 +38,9 @@ trait PolylineDrawAction extends DrawAction {
   def complete(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.PolylineDrawAction")
+@js.native
+class PolylineDrawActionCls () extends PolylineDrawAction {
+  def this(properties: PolylineDrawActionProperties) = this()
+}
+

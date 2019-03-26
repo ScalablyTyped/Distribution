@@ -106,8 +106,8 @@ object openlayersLibStrings {
   
   @js.native
   sealed trait degrees
-    extends openlayersLib.openlayersMod.controlNs.ScaleLineNs.Units
-       with openlayersLib.openlayersMod.projNs.Units
+    extends openlayersLib.openlayersMod.projNs.Units
+       with openlayersLib.openlayersMod.controlNs.ScaleLineNs.Units
   
   @js.native
   sealed trait dom

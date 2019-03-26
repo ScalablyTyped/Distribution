@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof react.react.ForwardRefExoticComponent<any> ]: react.react.ForwardRefExoticComponent<styled-components.styled-components.StyledComponentProps<C, react.react.ForwardRefExoticComponent<styled-components.styled-components.StyledComponentProps<C, T, O, A>>, O, A>>[P]} */ @js.native
+- Dropped {[ P in keyof react.react.React.ForwardRefExoticComponent<any> ]: react.react.React.ForwardRefExoticComponent<styled-components.styled-components.StyledComponentProps<C, react.react.React.ForwardRefExoticComponent<styled-components.styled-components.StyledComponentProps<C, T, O, A>>, O, A>>[P]} */ @js.native
 trait StyledComponentBase[C /* <: java.lang.String */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] extends js.Object {
   // add our own fake call signature to implement the polymorphic 'as' prop
   // NOTE: TS <3.2 will refuse to infer the generic and this component becomes impossible to use in JSX

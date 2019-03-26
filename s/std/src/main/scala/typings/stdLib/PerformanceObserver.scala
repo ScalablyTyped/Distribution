@@ -13,6 +13,18 @@ trait PerformanceObserver extends js.Object {
 
 @JSGlobal("PerformanceObserver")
 @js.native
+class PerformanceObserverCls protected () extends PerformanceObserver {
+  def this(callback: PerformanceObserverCallback) = this()
+  /* CompleteClass */
+  override def disconnect(): scala.Unit = js.native
+  /* CompleteClass */
+  override def observe(options: PerformanceObserverInit): scala.Unit = js.native
+  /* CompleteClass */
+  override def takeRecords(): PerformanceEntryList = js.native
+}
+
+@JSGlobal("PerformanceObserver")
+@js.native
 object PerformanceObserver
   extends org.scalablytyped.runtime.Instantiable1[/* callback */ PerformanceObserverCallback, PerformanceObserver]
 

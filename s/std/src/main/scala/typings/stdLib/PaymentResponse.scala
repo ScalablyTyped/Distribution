@@ -22,6 +22,10 @@ trait PaymentResponse extends js.Object {
 
 @JSGlobal("PaymentResponse")
 @js.native
+class PaymentResponseCls () extends PaymentResponse
+
+@JSGlobal("PaymentResponse")
+@js.native
 object PaymentResponse
   extends org.scalablytyped.runtime.Instantiable0[PaymentResponse]
 

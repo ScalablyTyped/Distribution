@@ -83,6 +83,10 @@ trait IDBIndex extends js.Object {
 
 @JSGlobal("IDBIndex")
 @js.native
+class IDBIndexCls () extends IDBIndex
+
+@JSGlobal("IDBIndex")
+@js.native
 object IDBIndex
   extends org.scalablytyped.runtime.Instantiable0[IDBIndex]
 

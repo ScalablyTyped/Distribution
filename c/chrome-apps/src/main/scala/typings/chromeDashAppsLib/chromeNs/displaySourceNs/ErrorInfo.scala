@@ -13,7 +13,7 @@ trait ErrorInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CAPABILITIESNEGOTIATIONERROR[keyof chrome-apps.Anon_CAPABILITIESNEGOTIATIONERROR] */ js.Any
+      chromeDashAppsLib.chromeDashAppsLibStrings.unknown_error | chromeDashAppsLib.chromeDashAppsLibStrings.capabilities_negotiation_error | chromeDashAppsLib.chromeDashAppsLibStrings.timeout_error | chromeDashAppsLib.chromeDashAppsLibStrings.media_pipeline_error | chromeDashAppsLib.chromeDashAppsLibStrings.connection_error
     ]
   ]
 }
@@ -26,7 +26,7 @@ object ErrorInfo {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CAPABILITIESNEGOTIATIONERROR[keyof chrome-apps.Anon_CAPABILITIESNEGOTIATIONERROR] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.unknown_error | chromeDashAppsLib.chromeDashAppsLibStrings.capabilities_negotiation_error | chromeDashAppsLib.chromeDashAppsLibStrings.timeout_error | chromeDashAppsLib.chromeDashAppsLibStrings.media_pipeline_error | chromeDashAppsLib.chromeDashAppsLibStrings.connection_error
       ]
     ],
     description: java.lang.String = null

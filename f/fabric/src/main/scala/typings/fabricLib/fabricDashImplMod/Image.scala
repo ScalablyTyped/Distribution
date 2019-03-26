@@ -116,10 +116,11 @@ class Image () extends Object {
   	 * Sets image element for this instance to a specified one.
   	 * If filters defined they are applied to new image.
   	 * You might need to call `canvas.renderAll` and `object.setCoords` after replacing, to render new image and update controls area.
-  	 * @param [callback] Callback is invoked when all filters have been applied and new image is generated
+  	 * @param element image element
   	 * @param [options] Options object
   	 */
-  def setElement(element: stdLib.HTMLImageElement, callback: js.Function, options: IImageOptions): Image = js.native
+  def setElement(element: stdLib.HTMLImageElement): Image = js.native
+  def setElement(element: stdLib.HTMLImageElement, options: IImageOptions): Image = js.native
   /**
   	 * Sets source of an image
   	 * @param {String} src Source string (URL)

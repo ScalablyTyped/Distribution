@@ -115,7 +115,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAdodbLib.ADODBNs.Recordset, 
-      /* parameter */ Anon_AdStatusFieldIndex, 
+      /* parameter */ Anon_AdStatusPError, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -130,7 +130,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAdodbLib.ADODBNs.Recordset, 
-      /* parameter */ Anon_AdStatusFieldIndexMaxProgress, 
+      /* parameter */ Anon_AdStatusMaxProgress, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -207,7 +207,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAdodbLib.ADODBNs.Recordset, 
-      /* parameter */ Anon_AdStatusCFieldsFieldIndex, 
+      /* parameter */ Anon_AdStatusCFieldsFields, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -236,7 +236,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAdodbLib.ADODBNs.Recordset, 
-      /* parameter */ Anon_AdReasonAdStatusFieldIndex, 
+      /* parameter */ Anon_AdReasonAdStatusPRecordset, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -250,7 +250,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashAdodbLib.ADODBNs.Recordset, 
-      /* parameter */ Anon_AdReasonAdStatusFieldIndex, 
+      /* parameter */ Anon_AdReasonAdStatusPRecordset, 
       scala.Unit
     ]
   ): scala.Unit = js.native

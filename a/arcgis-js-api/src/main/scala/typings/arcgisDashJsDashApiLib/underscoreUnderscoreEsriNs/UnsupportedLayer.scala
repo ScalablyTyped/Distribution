@@ -19,3 +19,9 @@ trait UnsupportedLayer extends Layer {
   ): arcgisDashJsDashApiLib.IHandle = js.native
 }
 
+@JSGlobal("__esri.UnsupportedLayer")
+@js.native
+class UnsupportedLayerCls () extends UnsupportedLayer {
+  def this(properties: UnsupportedLayerProperties) = this()
+}
+

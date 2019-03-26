@@ -6,6 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object runtimeNs {
+  /* Rewritten from type alias, can be one of: 
+    - scala.Boolean
+    - AutomationDesktop
+    - AutomationNonInteractive
+  */
   type AutomationOptions = _AutomationOptions | scala.Boolean
   type ExtensionConnectEvent = chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* port */ Port, scala.Unit]]
   type ExtensionMessageEvent = chromeDashAppsLib.chromeNs.eventsNs.Event[

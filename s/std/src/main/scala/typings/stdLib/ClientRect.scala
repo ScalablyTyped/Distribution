@@ -16,6 +16,23 @@ trait ClientRect extends js.Object {
 
 @JSGlobal("ClientRect")
 @js.native
+class ClientRectCls () extends ClientRect {
+  /* CompleteClass */
+  override var bottom: scala.Double = js.native
+  /* CompleteClass */
+  override val height: scala.Double = js.native
+  /* CompleteClass */
+  override var left: scala.Double = js.native
+  /* CompleteClass */
+  override var right: scala.Double = js.native
+  /* CompleteClass */
+  override var top: scala.Double = js.native
+  /* CompleteClass */
+  override val width: scala.Double = js.native
+}
+
+@JSGlobal("ClientRect")
+@js.native
 object ClientRect
   extends org.scalablytyped.runtime.Instantiable0[ClientRect]
 

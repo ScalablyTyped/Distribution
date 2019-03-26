@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerIHashSetMod.IHashSet because var conflicts: data_, iterator. Inlined begin, begin, end, end */ @JSImport("tstl/container/HashMultiSet", "HashMultiSet")
+- tstlLib.baseContainerIHashSetMod.IHashSet because var conflicts: data_, iterator. Inlined  */ @JSImport("tstl/container/HashMultiSet", "HashMultiSet")
 @js.native
 /**
   * Default Constructor.
@@ -62,22 +62,9 @@ class HashMultiSet[Key] ()
     */
   var buckets_ : js.Any = js.native
   /**
-    * Iterator to the first element in a specific bucket.
-    *
-    * @param index Index number of the specific bucket.
-    * @return Iterator from the specific bucket.
-    */
-  def begin(index: scala.Double): tstlLib.baseIteratorSetIteratorMod.SetIterator[Key, tstlLib.tstlLibNumbers.`false`, HashMultiSet[Key]] = js.native
-  /**
     * @inheritDoc
     */
-  @JSName("begin")
-  def begin_Iterator(): tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key] = js.native
-  /**
-    * @inheritDoc
-    */
-  @JSName("begin")
-  def begin_Iterator(index: scala.Double): tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key] = js.native
+  def begin(index: scala.Double): tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key] = js.native
   /**
     * @inheritDoc
     */
@@ -91,22 +78,9 @@ class HashMultiSet[Key] ()
     */
   def bucket_size(n: scala.Double): scala.Double = js.native
   /**
-    * Iterator to the end in a specific bucket.
-    *
-    * @param index Index number of the specific bucket.
-    * @return Iterator from the specific bucket.
-    */
-  def end(index: scala.Double): tstlLib.baseIteratorSetIteratorMod.SetIterator[Key, tstlLib.tstlLibNumbers.`false`, HashMultiSet[Key]] = js.native
-  /**
     * @inheritDoc
     */
-  @JSName("end")
-  def end_Iterator(): tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key] = js.native
-  /**
-    * @inheritDoc
-    */
-  @JSName("end")
-  def end_Iterator(index: scala.Double): tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key] = js.native
+  def end(index: scala.Double): tstlLib.containerHashMultiSetMod.HashMultiSetNs.Iterator[Key] = js.native
   /**
     * @inheritDoc
     */

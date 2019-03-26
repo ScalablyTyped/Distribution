@@ -41,3 +41,9 @@ trait gamepadGamepadSettings extends Accessor {
   var tiltDirection: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`forward-down` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`forward-up` = js.native
 }
 
+@JSGlobal("__esri.gamepadGamepadSettings")
+@js.native
+class gamepadGamepadSettingsCls () extends gamepadGamepadSettings {
+  def this(properties: gamepadGamepadSettingsProperties) = this()
+}
+

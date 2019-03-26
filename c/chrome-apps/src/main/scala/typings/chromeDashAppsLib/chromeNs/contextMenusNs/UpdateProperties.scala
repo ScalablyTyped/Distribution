@@ -15,7 +15,7 @@ trait UpdateProperties extends js.Object {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ALL[keyof chrome-apps.Anon_ALL] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.browser_action | chromeDashAppsLib.chromeDashAppsLibStrings.launcher | chromeDashAppsLib.chromeDashAppsLibStrings.all | chromeDashAppsLib.chromeDashAppsLibStrings.frame | chromeDashAppsLib.chromeDashAppsLibStrings.audio | chromeDashAppsLib.chromeDashAppsLibStrings.link | chromeDashAppsLib.chromeDashAppsLibStrings.page | chromeDashAppsLib.chromeDashAppsLibStrings.selection | chromeDashAppsLib.chromeDashAppsLibStrings.page_action | chromeDashAppsLib.chromeDashAppsLibStrings.editable | chromeDashAppsLib.chromeDashAppsLibStrings.video | chromeDashAppsLib.chromeDashAppsLibStrings.image
         ]
       ]
     ]
@@ -38,7 +38,7 @@ trait UpdateProperties extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHECKBOX[keyof chrome-apps.Anon_CHECKBOX] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.normal | chromeDashAppsLib.chromeDashAppsLibStrings.checkbox | chromeDashAppsLib.chromeDashAppsLibStrings.radio | chromeDashAppsLib.chromeDashAppsLibStrings.separator
       ]
     ]
   ] = js.undefined
@@ -59,7 +59,7 @@ object UpdateProperties {
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ALL[keyof chrome-apps.Anon_ALL] */ js.Any
+          chromeDashAppsLib.chromeDashAppsLibStrings.browser_action | chromeDashAppsLib.chromeDashAppsLibStrings.launcher | chromeDashAppsLib.chromeDashAppsLibStrings.all | chromeDashAppsLib.chromeDashAppsLibStrings.frame | chromeDashAppsLib.chromeDashAppsLibStrings.audio | chromeDashAppsLib.chromeDashAppsLibStrings.link | chromeDashAppsLib.chromeDashAppsLibStrings.page | chromeDashAppsLib.chromeDashAppsLibStrings.selection | chromeDashAppsLib.chromeDashAppsLibStrings.page_action | chromeDashAppsLib.chromeDashAppsLibStrings.editable | chromeDashAppsLib.chromeDashAppsLibStrings.video | chromeDashAppsLib.chromeDashAppsLibStrings.image
         ]
       ]
     ] = null,
@@ -74,7 +74,7 @@ object UpdateProperties {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHECKBOX[keyof chrome-apps.Anon_CHECKBOX] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.normal | chromeDashAppsLib.chromeDashAppsLibStrings.checkbox | chromeDashAppsLib.chromeDashAppsLibStrings.radio | chromeDashAppsLib.chromeDashAppsLibStrings.separator
       ]
     ] = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined

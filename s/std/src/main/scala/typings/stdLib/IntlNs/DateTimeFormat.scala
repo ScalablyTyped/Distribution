@@ -16,3 +16,12 @@ trait DateTimeFormat extends js.Object {
   def resolvedOptions(): ResolvedDateTimeFormatOptions = js.native
 }
 
+@JSGlobal("Intl.DateTimeFormat")
+@js.native
+class DateTimeFormatCls () extends DateTimeFormat {
+  def this(locales: java.lang.String) = this()
+  def this(locales: js.Array[java.lang.String]) = this()
+  def this(locales: java.lang.String, options: DateTimeFormatOptions) = this()
+  def this(locales: js.Array[java.lang.String], options: DateTimeFormatOptions) = this()
+}
+

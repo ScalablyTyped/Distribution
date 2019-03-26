@@ -12,6 +12,10 @@ trait ContactFindOptions extends js.Object {
 
 @JSGlobal("ContactFindOptions")
 @js.native
+class ContactFindOptionsCls () extends ContactFindOptions
+
+@JSGlobal("ContactFindOptions")
+@js.native
 object ContactFindOptions
   extends org.scalablytyped.runtime.Instantiable0[ContactFindOptions]
 

@@ -23,3 +23,9 @@ trait InitialViewProperties
   var viewpoint: Viewpoint = js.native
 }
 
+@JSGlobal("__esri.InitialViewProperties")
+@js.native
+class InitialViewPropertiesCls () extends InitialViewProperties {
+  def this(properties: InitialViewPropertiesProperties) = this()
+}
+

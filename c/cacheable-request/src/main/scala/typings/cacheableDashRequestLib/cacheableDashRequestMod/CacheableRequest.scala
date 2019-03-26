@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait CacheableRequest
   extends org.scalablytyped.runtime.Instantiable2[
       /* requestFn */ cacheableDashRequestLib.RequestFn, 
-      (/* storageAdapter */ keyvLib.keyvMod.KeyvNs.Store[js.Any]) | (/* storageAdapter */ java.lang.String), 
+      (/* storageAdapter */ cacheableDashRequestLib.cacheableDashRequestMod.CacheableRequestNs.StorageAdapter) | (/* storageAdapter */ java.lang.String), 
       js.Function2[
         /* opts */ java.lang.String | nodeLib.urlMod.URL | (nodeLib.httpMod.RequestOptions with httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.Options), 
         /* cb */ js.UndefOr[

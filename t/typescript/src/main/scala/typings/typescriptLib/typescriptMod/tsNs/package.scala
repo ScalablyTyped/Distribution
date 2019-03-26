@@ -17,7 +17,28 @@ package object tsNs {
   type BaseType = ObjectType | IntersectionType
   type BinaryOperator = AssignmentOperatorOrHigher | SyntaxKind
   type BinaryOperatorToken = Token[BinaryOperator]
+  /* Rewritten from type alias, can be one of: 
+    - VariableDeclaration
+    - ParameterDeclaration
+    - BindingElement
+    - PropertyAssignment
+    - ShorthandPropertyAssignment
+    - SpreadAssignment
+    - OmittedExpression
+    - SpreadElement
+    - ArrayLiteralExpression
+    - ObjectLiteralExpression
+    - AssignmentExpression[EqualsToken]
+    - Identifier
+    - PropertyAccessExpression
+    - ElementAccessExpression
+  */
   type BindingOrAssignmentElement = _BindingOrAssignmentElement | AssignmentExpression[EqualsToken]
+  /* Rewritten from type alias, can be one of: 
+    - DotDotDotToken
+    - SpreadElement
+    - SpreadAssignment
+  */
   type BindingOrAssignmentElementRestIndicator = _BindingOrAssignmentElementRestIndicator | DotDotDotToken
   type BitwiseOperator = SyntaxKind
   type BitwiseOperatorOrHigher = EqualityOperatorOrHigher | BitwiseOperator
@@ -58,6 +79,40 @@ package object tsNs {
   /** @deprecated Use SignatureDeclaration */
   type FunctionLike = SignatureDeclaration
   type GenerateTypesAction = GenerateTypesOptions
+  /* Rewritten from type alias, can be one of: 
+    - ParameterDeclaration
+    - CallSignatureDeclaration
+    - ConstructSignatureDeclaration
+    - MethodSignature
+    - PropertySignature
+    - ArrowFunction
+    - ParenthesizedExpression
+    - SpreadAssignment
+    - ShorthandPropertyAssignment
+    - PropertyAssignment
+    - FunctionExpression
+    - LabeledStatement
+    - ExpressionStatement
+    - VariableStatement
+    - FunctionDeclaration
+    - ConstructorDeclaration
+    - MethodDeclaration
+    - PropertyDeclaration
+    - AccessorDeclaration
+    - ClassLikeDeclaration
+    - InterfaceDeclaration
+    - TypeAliasDeclaration
+    - EnumMember
+    - EnumDeclaration
+    - ModuleDeclaration
+    - ImportEqualsDeclaration
+    - IndexSignatureDeclaration
+    - FunctionTypeNode
+    - ConstructorTypeNode
+    - JSDocFunctionType
+    - ExportDeclaration
+    - EndOfFileToken
+  */
   type HasJSDoc = _HasJSDoc | EndOfFileToken
   /** Deprecated, please use UpdateExpression */
   type IncrementExpression = UpdateExpression

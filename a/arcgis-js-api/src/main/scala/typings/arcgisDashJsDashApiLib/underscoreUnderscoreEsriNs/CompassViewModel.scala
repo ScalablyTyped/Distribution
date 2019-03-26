@@ -41,3 +41,14 @@ trait CompassViewModel
   def reset(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.CompassViewModel")
+@js.native
+/**
+  * Provides the logic for the [Compass](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html) widget.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass-CompassViewModel.html)
+  */
+class CompassViewModelCls () extends CompassViewModel {
+  def this(properties: CompassViewModelProperties) = this()
+}
+

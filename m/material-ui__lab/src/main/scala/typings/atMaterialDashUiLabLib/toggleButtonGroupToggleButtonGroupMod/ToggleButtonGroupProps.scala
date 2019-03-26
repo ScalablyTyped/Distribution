@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange'> ]: react.react.HTMLAttributes<std.HTMLDivElement>[P]} */ trait ToggleButtonGroupProps
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLDivElement>, 'classes' | 'onChange'> ]: react.react.React.HTMLAttributes<std.HTMLDivElement>[P]} */ trait ToggleButtonGroupProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ToggleButtonGroupClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var exclusive: js.UndefOr[scala.Boolean] = js.undefined

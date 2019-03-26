@@ -1,0 +1,20 @@
+package typings
+package chaiLib.chaiMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("chai", JSImport.Namespace)
+@js.native
+object namespacedNs extends js.Object {
+  @js.native
+  class AssertionError protected ()
+    extends chaiLib.ChaiNs.AssertionError {
+    def this(message: java.lang.String) = this()
+    def this(message: java.lang.String, _props: js.Any) = this()
+    def this(message: java.lang.String, _props: js.Any, ssf: js.Function) = this()
+  }
+  
+}
+

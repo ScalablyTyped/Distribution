@@ -261,8 +261,19 @@ object MarketplaceMeteringNs extends js.Object {
   type UsageQuantity = scala.Double
   type UsageRecordList = js.Array[UsageRecord]
   type UsageRecordResultList = js.Array[UsageRecordResult]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.Success
+    - awsDashSdkLib.awsDashSdkLibStrings.CustomerNotSubscribed
+    - awsDashSdkLib.awsDashSdkLibStrings.DuplicateRecord
+    - java.lang.String
+  */
   type UsageRecordResultStatus = _UsageRecordResultStatus | java.lang.String
   type VersionInteger = scala.Double
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2016-01-14`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

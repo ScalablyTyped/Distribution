@@ -19,19 +19,19 @@ trait Anon_0
   /**
   	 * Get the current log level.
   	 */
-  val logLevel: workboxDashSwLib.workboxDashSwLibNumbers.`0` | workboxDashSwLib.workboxDashSwLibNumbers.`1` | workboxDashSwLib.workboxDashSwLibNumbers.`2` | workboxDashSwLib.workboxDashSwLibNumbers.`3` | workboxDashSwLib.workboxDashSwLibNumbers.`4` = js.native
+  val logLevel: workboxDashSwLib.workboxDashSwLibNumbers.`2` | workboxDashSwLib.workboxDashSwLibNumbers.`4` | workboxDashSwLib.workboxDashSwLibNumbers.`0` | workboxDashSwLib.workboxDashSwLibNumbers.`3` | workboxDashSwLib.workboxDashSwLibNumbers.`1` = js.native
   /**
   	 * You can alter the default cache names used by the Workbox modules by changing the cache name details.
   	 * Cache names are generated as <prefix>-<Cache Name>-<suffix>.
   	 * @param {Partial<ICacheNameDetails>} details
   	 */
   def setCacheNameDetails(details: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.ICacheNameDetails]): scala.Unit = js.native
+  def setLogLevel(logLevel: workboxDashSwLib.workboxDashSwLibNumbers.`0`): scala.Unit = js.native
+  def setLogLevel(logLevel: workboxDashSwLib.workboxDashSwLibNumbers.`1`): scala.Unit = js.native
   /**
   	 * Set the current log level passing in one of the values from LOG_LEVELS.
   	 * @param {number} logLevel - The new log level to use.
   	 */
-  def setLogLevel(logLevel: workboxDashSwLib.workboxDashSwLibNumbers.`0`): scala.Unit = js.native
-  def setLogLevel(logLevel: workboxDashSwLib.workboxDashSwLibNumbers.`1`): scala.Unit = js.native
   def setLogLevel(logLevel: workboxDashSwLib.workboxDashSwLibNumbers.`2`): scala.Unit = js.native
   def setLogLevel(logLevel: workboxDashSwLib.workboxDashSwLibNumbers.`3`): scala.Unit = js.native
   def setLogLevel(logLevel: workboxDashSwLib.workboxDashSwLibNumbers.`4`): scala.Unit = js.native

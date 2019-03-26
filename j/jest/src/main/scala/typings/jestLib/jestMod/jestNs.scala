@@ -841,12 +841,18 @@ object jestNs extends js.Object {
     var `type`: LogType
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - jestLib.jestLibStrings.log
+    - jestLib.jestLibStrings.info
+    - jestLib.jestLibStrings.warn
+    - jestLib.jestLibStrings.error
+  */
   trait LogType extends js.Object
   
   trait MatcherUtils extends js.Object {
     val expand: scala.Boolean
     val isNot: scala.Boolean
-    var utils: jestLib.Anon_AActual
+    var utils: jestLib.Anon_Actual
     /**
       *  This is a deep-equality function that will return true if two objects have the same values (recursively).
       */
@@ -1313,6 +1319,11 @@ object jestNs extends js.Object {
     var virtual: js.UndefOr[scala.Boolean] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - MockResultReturn[T]
+    - MockResultThrow
+    - MockResultIncomplete
+  */
   trait MockResult[T] extends js.Object
   
   /**
@@ -1503,8 +1514,19 @@ object jestNs extends js.Object {
     var updated: scala.Double
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - jestLib.jestLibStrings.all
+    - jestLib.jestLibStrings.`new`
+    - jestLib.jestLibStrings.none
+  */
   trait SnapshotUpdateState extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - jestLib.jestLibStrings.passed
+    - jestLib.jestLibStrings.failed
+    - jestLib.jestLibStrings.skipped
+    - jestLib.jestLibStrings.pending
+  */
   trait Status extends js.Object
   
   // TestRunner

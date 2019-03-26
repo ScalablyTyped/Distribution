@@ -24,7 +24,7 @@ class Form ()
 @JSImport("react-form", "Form")
 @js.native
 object Form extends js.Object {
-  var childContextTypes: reactDashFormLib.Anon_ComponentName = js.native
+  var childContextTypes: reactDashFormLib.Anon_FormApiAny = js.native
   var defaultProps: reactDashFormLib.reactDashFormMod.FormProps = js.native
 }
 

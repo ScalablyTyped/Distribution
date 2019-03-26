@@ -44,7 +44,7 @@ class PriorityClassList protected ()
   val kind: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClassList] = js.native
   /**
     * Standard list metadata More info:
-    * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
+    * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
   val metadata: atPulumiPulumiLib.outputMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
   def getInputs(): atPulumiKubernetesLib.typesInputMod.schedulingNs.v1beta1Ns.PriorityClassList = js.native

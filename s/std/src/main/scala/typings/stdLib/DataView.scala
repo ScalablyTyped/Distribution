@@ -166,3 +166,11 @@ trait DataView extends js.Object {
   def setUint8(byteOffset: scala.Double, value: scala.Double): scala.Unit = js.native
 }
 
+@JSGlobal("DataView")
+@js.native
+class DataViewCls protected () extends DataView {
+  def this(buffer: ArrayBufferLike) = this()
+  def this(buffer: ArrayBufferLike, byteOffset: scala.Double) = this()
+  def this(buffer: ArrayBufferLike, byteOffset: scala.Double, byteLength: scala.Double) = this()
+}
+

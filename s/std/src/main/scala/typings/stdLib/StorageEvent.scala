@@ -31,6 +31,13 @@ trait StorageEvent extends Event {
 
 @JSGlobal("StorageEvent")
 @js.native
+class StorageEventCls protected () extends StorageEvent {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, eventInitDict: StorageEventInit) = this()
+}
+
+@JSGlobal("StorageEvent")
+@js.native
 object StorageEvent
   extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, StorageEvent]
      with org.scalablytyped.runtime.Instantiable2[/* type */ java.lang.String, /* eventInitDict */ StorageEventInit, StorageEvent]

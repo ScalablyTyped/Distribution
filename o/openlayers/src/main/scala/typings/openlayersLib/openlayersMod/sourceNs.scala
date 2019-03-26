@@ -636,6 +636,15 @@ object sourceNs extends js.Object {
     def this(options: openlayersLib.openlayersMod.olxNs.sourceNs.StamenOptions) = this()
   }
   
+  /**
+    * State of the source, one of 'undefined', 'loading', 'ready' or 'error'.
+    */
+  /* Rewritten from type alias, can be one of: 
+    - openlayersLib.openlayersLibStrings.undefined
+    - openlayersLib.openlayersLibStrings.loading
+    - openlayersLib.openlayersLibStrings.ready
+    - openlayersLib.openlayersLibStrings.error
+  */
   trait State extends js.Object
   
   /**
@@ -1341,6 +1350,13 @@ object sourceNs extends js.Object {
     def updateDimensions(dimensions: openlayersLib.openlayersMod.GlobalObject): scala.Unit = js.native
   }
   
+  /**
+    * Request encoding. One of 'KVP', 'REST'.
+    */
+  /* Rewritten from type alias, can be one of: 
+    - openlayersLib.openlayersLibStrings.KVP
+    - openlayersLib.openlayersLibStrings.REST
+  */
   trait WMTSRequestEncoding extends js.Object
   
   /**
@@ -1466,6 +1482,17 @@ object sourceNs extends js.Object {
   @JSName("wms")
   @js.native
   object wmsNs extends js.Object {
+    /**
+      * Available server types: `'carmentaserver'`, `'geoserver'`, `'mapserver'`,
+      *     `'qgis'`. These are servers that have vendor parameters beyond the WMS
+      *     specification that OpenLayers can make use of.
+      */
+    /* Rewritten from type alias, can be one of: 
+      - openlayersLib.openlayersLibStrings.carmentaserver
+      - openlayersLib.openlayersLibStrings.geoserver
+      - openlayersLib.openlayersLibStrings.mapserver
+      - openlayersLib.openlayersLibStrings.qgis
+    */
     trait ServerType extends js.Object
     
   }

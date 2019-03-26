@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "chrome-trace-event"
-version := "1.0.0-cbca45"
+version := "1.0.0-0b2c6f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190322Z-28a0c1",
-  "org.scalablytyped" %%% "std" % "3.3-ec2942",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-28a6ab")
+  "org.scalablytyped" %%% "node" % "11.11-dt-20190325Z-000e7b",
+  "org.scalablytyped" %%% "std" % "3.3-14e863",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-f320f9")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

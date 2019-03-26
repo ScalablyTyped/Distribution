@@ -453,3 +453,10 @@ trait Array[T]
   def values(): IterableIterator[T] = js.native
 }
 
+@JSGlobal("Array")
+@js.native
+class ArrayCls[T] protected () extends Array[T] {
+  def this(arrayLength: scala.Double) = this()
+  def this(items: T*) = this()
+}
+

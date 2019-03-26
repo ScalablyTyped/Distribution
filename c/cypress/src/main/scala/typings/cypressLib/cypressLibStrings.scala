@@ -57,6 +57,12 @@ object cypressLibStrings {
     extends cypressLib.CypressNs.HttpMethod
   
   @js.native
+  sealed trait ResolvableProps extends js.Object
+  
+  @js.native
+  sealed trait SinonStubbedInstance extends js.Object
+  
+  @js.native
   sealed trait TRACE
     extends cypressLib.CypressNs.HttpMethod
   
@@ -67,7 +73,8 @@ object cypressLibStrings {
   sealed trait abbr extends js.Object
   
   @js.native
-  sealed trait abort extends js.Object
+  sealed trait abort
+    extends cypressLib.JQueryNs.AjaxNs.ErrorTextStatus
   
   @js.native
   sealed trait address extends js.Object
@@ -95,6 +102,9 @@ object cypressLibStrings {
   
   @js.native
   sealed trait area extends js.Object
+  
+  @js.native
+  sealed trait array extends js.Object
   
   @js.native
   sealed trait article extends js.Object
@@ -266,6 +276,9 @@ object cypressLibStrings {
   sealed trait body extends js.Object
   
   @js.native
+  sealed trait boolean extends js.Object
+  
+  @js.native
   sealed trait bottom
     extends cypressLib.CypressNs.PositionType
   
@@ -375,6 +388,9 @@ object cypressLibStrings {
   sealed trait datalist extends js.Object
   
   @js.native
+  sealed trait date extends js.Object
+  
+  @js.native
   sealed trait dblclick extends js.Object
   
   @js.native
@@ -479,7 +495,8 @@ object cypressLibStrings {
   sealed trait equal extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends cypressLib.JQueryNs.AjaxNs.ErrorTextStatus
   
   @js.native
   sealed trait execTimeout extends js.Object
@@ -489,6 +506,13 @@ object cypressLibStrings {
   
   @js.native
   sealed trait fail extends js.Object
+  
+  @js.native
+  sealed trait failed extends js.Object
+  
+  @js.native
+  sealed trait fast
+    extends cypressLib.JQueryNs._Duration
   
   @js.native
   sealed trait fieldset extends js.Object
@@ -538,6 +562,9 @@ object cypressLibStrings {
   
   @js.native
   sealed trait fullscreenerror extends js.Object
+  
+  @js.native
+  sealed trait function extends js.Object
   
   @js.native
   sealed trait gotpointercapture extends js.Object
@@ -725,6 +752,12 @@ object cypressLibStrings {
     extends cypressLib.CypressNs.ViewportPreset
   
   @js.native
+  sealed trait json extends js.Object
+  
+  @js.native
+  sealed trait jsonp extends js.Object
+  
+  @js.native
   sealed trait kbd extends js.Object
   
   @js.native
@@ -849,6 +882,10 @@ object cypressLibStrings {
   
   @js.native
   sealed trait nav extends js.Object
+  
+  @js.native
+  sealed trait nocontent
+    extends cypressLib.JQueryNs.AjaxNs.SuccessTextStatus
   
   @js.native
   sealed trait noscript extends js.Object
@@ -1100,7 +1137,17 @@ object cypressLibStrings {
   sealed trait notDOTsatisfy extends js.Object
   
   @js.native
+  sealed trait notmodified
+    extends cypressLib.JQueryNs.AjaxNs.SuccessTextStatus
+  
+  @js.native
+  sealed trait `null` extends js.Object
+  
+  @js.native
   sealed trait numTestsKeptInMemory extends js.Object
+  
+  @js.native
+  sealed trait number extends js.Object
   
   @js.native
   sealed trait `object` extends js.Object
@@ -1131,10 +1178,20 @@ object cypressLibStrings {
   sealed trait param extends js.Object
   
   @js.native
+  sealed trait parsererror
+    extends cypressLib.JQueryNs.AjaxNs.ErrorTextStatus
+  
+  @js.native
+  sealed trait passed extends js.Object
+  
+  @js.native
   sealed trait paste extends js.Object
   
   @js.native
   sealed trait pause extends js.Object
+  
+  @js.native
+  sealed trait pending extends js.Object
   
   @js.native
   sealed trait picture extends js.Object
@@ -1195,6 +1252,12 @@ object cypressLibStrings {
   sealed trait readystatechange extends js.Object
   
   @js.native
+  sealed trait regexp extends js.Object
+  
+  @js.native
+  sealed trait rejected extends js.Object
+  
+  @js.native
   sealed trait reporter extends js.Object
   
   @js.native
@@ -1205,6 +1268,9 @@ object cypressLibStrings {
   
   @js.native
   sealed trait resize extends js.Object
+  
+  @js.native
+  sealed trait resolved extends js.Object
   
   @js.native
   sealed trait respondTo extends js.Object
@@ -1274,6 +1340,10 @@ object cypressLibStrings {
   sealed trait slot extends js.Object
   
   @js.native
+  sealed trait slow
+    extends cypressLib.JQueryNs._Duration
+  
+  @js.native
   sealed trait small extends js.Object
   
   @js.native
@@ -1284,6 +1354,9 @@ object cypressLibStrings {
   
   @js.native
   sealed trait stalled extends js.Object
+  
+  @js.native
+  sealed trait string extends js.Object
   
   @js.native
   sealed trait strong extends js.Object
@@ -1298,6 +1371,10 @@ object cypressLibStrings {
   sealed trait submit extends js.Object
   
   @js.native
+  sealed trait success
+    extends cypressLib.JQueryNs.AjaxNs.SuccessTextStatus
+  
+  @js.native
   sealed trait sup extends js.Object
   
   @js.native
@@ -1308,6 +1385,9 @@ object cypressLibStrings {
   
   @js.native
   sealed trait swing extends js.Object
+  
+  @js.native
+  sealed trait symbol extends js.Object
   
   @js.native
   sealed trait table extends js.Object
@@ -1328,6 +1408,9 @@ object cypressLibStrings {
   sealed trait `test:before:run` extends js.Object
   
   @js.native
+  sealed trait text extends js.Object
+  
+  @js.native
   sealed trait textarea extends js.Object
   
   @js.native
@@ -1344,6 +1427,10 @@ object cypressLibStrings {
   
   @js.native
   sealed trait time extends js.Object
+  
+  @js.native
+  sealed trait timeout
+    extends cypressLib.JQueryNs.AjaxNs.ErrorTextStatus
   
   @js.native
   sealed trait timeupdate extends js.Object
@@ -1415,6 +1502,9 @@ object cypressLibStrings {
   
   @js.native
   sealed trait `uncaught:exception` extends js.Object
+  
+  @js.native
+  sealed trait undefined extends js.Object
   
   @js.native
   sealed trait `url:changed` extends js.Object
@@ -1508,6 +1598,9 @@ object cypressLibStrings {
   @js.native
   sealed trait withArgs extends js.Object
   
+  @js.native
+  sealed trait xml extends js.Object
+  
   @scala.inline
   def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   @scala.inline
@@ -1537,6 +1630,10 @@ object cypressLibStrings {
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
+  def ResolvableProps: ResolvableProps = "ResolvableProps".asInstanceOf[ResolvableProps]
+  @scala.inline
+  def SinonStubbedInstance: SinonStubbedInstance = "SinonStubbedInstance".asInstanceOf[SinonStubbedInstance]
+  @scala.inline
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   @scala.inline
   def a: a = "a".asInstanceOf[a]
@@ -1562,6 +1659,8 @@ object cypressLibStrings {
   def applet: applet = "applet".asInstanceOf[applet]
   @scala.inline
   def area: area = "area".asInstanceOf[area]
+  @scala.inline
+  def array: array = "array".asInstanceOf[array]
   @scala.inline
   def article: article = "article".asInstanceOf[article]
   @scala.inline
@@ -1673,6 +1772,8 @@ object cypressLibStrings {
   @scala.inline
   def body: body = "body".asInstanceOf[body]
   @scala.inline
+  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
   def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
@@ -1742,6 +1843,8 @@ object cypressLibStrings {
   def data: data = "data".asInstanceOf[data]
   @scala.inline
   def datalist: datalist = "datalist".asInstanceOf[datalist]
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
   @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   @scala.inline
@@ -1819,6 +1922,10 @@ object cypressLibStrings {
   @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
   @scala.inline
+  def failed: failed = "failed".asInstanceOf[failed]
+  @scala.inline
+  def fast: fast = "fast".asInstanceOf[fast]
+  @scala.inline
   def fieldset: fieldset = "fieldset".asInstanceOf[fieldset]
   @scala.inline
   def figcaption: figcaption = "figcaption".asInstanceOf[figcaption]
@@ -1850,6 +1957,8 @@ object cypressLibStrings {
   def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   @scala.inline
   def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
+  @scala.inline
+  def function: function = "function".asInstanceOf[function]
   @scala.inline
   def gotpointercapture: gotpointercapture = "gotpointercapture".asInstanceOf[gotpointercapture]
   @scala.inline
@@ -1969,6 +2078,10 @@ object cypressLibStrings {
   @scala.inline
   def `iphone-6+`: `iphone-6+` = "iphone-6+".asInstanceOf[`iphone-6+`]
   @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  @scala.inline
+  def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
+  @scala.inline
   def kbd: kbd = "kbd".asInstanceOf[kbd]
   @scala.inline
   def keydown: keydown = "keydown".asInstanceOf[keydown]
@@ -2048,6 +2161,8 @@ object cypressLibStrings {
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
+  @scala.inline
+  def nocontent: nocontent = "nocontent".asInstanceOf[nocontent]
   @scala.inline
   def noscript: noscript = "noscript".asInstanceOf[noscript]
   @scala.inline
@@ -2215,7 +2330,13 @@ object cypressLibStrings {
   @scala.inline
   def notDOTsatisfy: notDOTsatisfy = "not.satisfy".asInstanceOf[notDOTsatisfy]
   @scala.inline
+  def notmodified: notmodified = "notmodified".asInstanceOf[notmodified]
+  @scala.inline
+  def `null`: `null` = "null".asInstanceOf[`null`]
+  @scala.inline
   def numTestsKeptInMemory: numTestsKeptInMemory = "numTestsKeptInMemory".asInstanceOf[numTestsKeptInMemory]
+  @scala.inline
+  def number: number = "number".asInstanceOf[number]
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
@@ -2235,9 +2356,15 @@ object cypressLibStrings {
   @scala.inline
   def param: param = "param".asInstanceOf[param]
   @scala.inline
+  def parsererror: parsererror = "parsererror".asInstanceOf[parsererror]
+  @scala.inline
+  def passed: passed = "passed".asInstanceOf[passed]
+  @scala.inline
   def paste: paste = "paste".asInstanceOf[paste]
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
+  def pending: pending = "pending".asInstanceOf[pending]
   @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
   @scala.inline
@@ -2277,6 +2404,10 @@ object cypressLibStrings {
   @scala.inline
   def readystatechange: readystatechange = "readystatechange".asInstanceOf[readystatechange]
   @scala.inline
+  def regexp: regexp = "regexp".asInstanceOf[regexp]
+  @scala.inline
+  def rejected: rejected = "rejected".asInstanceOf[rejected]
+  @scala.inline
   def reporter: reporter = "reporter".asInstanceOf[reporter]
   @scala.inline
   def requestTimeout: requestTimeout = "requestTimeout".asInstanceOf[requestTimeout]
@@ -2284,6 +2415,8 @@ object cypressLibStrings {
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
+  @scala.inline
+  def resolved: resolved = "resolved".asInstanceOf[resolved]
   @scala.inline
   def respondTo: respondTo = "respondTo".asInstanceOf[respondTo]
   @scala.inline
@@ -2329,6 +2462,8 @@ object cypressLibStrings {
   @scala.inline
   def slot: slot = "slot".asInstanceOf[slot]
   @scala.inline
+  def slow: slow = "slow".asInstanceOf[slow]
+  @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline
   def source: source = "source".asInstanceOf[source]
@@ -2336,6 +2471,8 @@ object cypressLibStrings {
   def span: span = "span".asInstanceOf[span]
   @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
+  @scala.inline
+  def string: string = "string".asInstanceOf[string]
   @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
   @scala.inline
@@ -2345,6 +2482,8 @@ object cypressLibStrings {
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
+  def success: success = "success".asInstanceOf[success]
+  @scala.inline
   def sup: sup = "sup".asInstanceOf[sup]
   @scala.inline
   def supportFile: supportFile = "supportFile".asInstanceOf[supportFile]
@@ -2352,6 +2491,8 @@ object cypressLibStrings {
   def suspend: suspend = "suspend".asInstanceOf[suspend]
   @scala.inline
   def swing: swing = "swing".asInstanceOf[swing]
+  @scala.inline
+  def symbol: symbol = "symbol".asInstanceOf[symbol]
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   @scala.inline
@@ -2365,6 +2506,8 @@ object cypressLibStrings {
   @scala.inline
   def `test:before:run`: `test:before:run` = "test:before:run".asInstanceOf[`test:before:run`]
   @scala.inline
+  def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline
   def tfoot: tfoot = "tfoot".asInstanceOf[tfoot]
@@ -2376,6 +2519,8 @@ object cypressLibStrings {
   def `throw`: `throw` = "throw".asInstanceOf[`throw`]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
+  @scala.inline
+  def timeout: timeout = "timeout".asInstanceOf[timeout]
   @scala.inline
   def timeupdate: timeupdate = "timeupdate".asInstanceOf[timeupdate]
   @scala.inline
@@ -2420,6 +2565,8 @@ object cypressLibStrings {
   def ul: ul = "ul".asInstanceOf[ul]
   @scala.inline
   def `uncaught:exception`: `uncaught:exception` = "uncaught:exception".asInstanceOf[`uncaught:exception`]
+  @scala.inline
+  def undefined: undefined = "undefined".asInstanceOf[undefined]
   @scala.inline
   def `url:changed`: `url:changed` = "url:changed".asInstanceOf[`url:changed`]
   @scala.inline
@@ -2478,5 +2625,7 @@ object cypressLibStrings {
   def `window:unload`: `window:unload` = "window:unload".asInstanceOf[`window:unload`]
   @scala.inline
   def withArgs: withArgs = "withArgs".asInstanceOf[withArgs]
+  @scala.inline
+  def xml: xml = "xml".asInstanceOf[xml]
 }
 

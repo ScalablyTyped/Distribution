@@ -22,7 +22,7 @@ object importmappingsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/import-mappings relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.IImportMapping because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.IImportMapping because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class ImportMapping protected ()
     extends mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

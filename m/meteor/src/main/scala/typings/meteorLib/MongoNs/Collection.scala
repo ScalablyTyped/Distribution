@@ -82,3 +82,10 @@ trait Collection[T] extends js.Object {
   ): meteorLib.Anon_InsertedId = js.native
 }
 
+@JSGlobal("Mongo.Collection")
+@js.native
+class CollectionCls[T] protected () extends Collection[T] {
+  def this(name: java.lang.String) = this()
+  def this(name: java.lang.String, options: meteorLib.Anon_Connection) = this()
+}
+

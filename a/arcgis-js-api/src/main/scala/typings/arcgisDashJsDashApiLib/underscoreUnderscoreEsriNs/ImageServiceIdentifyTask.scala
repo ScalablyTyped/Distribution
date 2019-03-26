@@ -20,3 +20,9 @@ trait ImageServiceIdentifyTask extends Task {
   def execute(params: ImageServiceIdentifyParameters, requestOptions: js.Any): arcgisDashJsDashApiLib.IPromise[ImageServiceIdentifyResult] = js.native
 }
 
+@JSGlobal("__esri.ImageServiceIdentifyTask")
+@js.native
+class ImageServiceIdentifyTaskCls () extends ImageServiceIdentifyTask {
+  def this(properties: ImageServiceIdentifyTaskProperties) = this()
+}
+

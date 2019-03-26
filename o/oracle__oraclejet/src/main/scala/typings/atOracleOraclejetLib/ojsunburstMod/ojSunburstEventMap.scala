@@ -40,7 +40,7 @@ trait ojSunburstEventMap[K, D]
   var ojDrill: atOracleOraclejetLib.ojsunburstMod.ojSunburstNs.ojDrill
   var ojExpand: atOracleOraclejetLib.ojsunburstMod.ojSunburstNs.ojExpand
   var ojRotateInput: atOracleOraclejetLib.ojsunburstMod.ojSunburstNs.ojRotateInput
-  var rootNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var rootNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var rootNodeContentChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_ContextRendererAnonInsertD[K, D]]
   var rotationChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on
@@ -164,7 +164,7 @@ object ojSunburstEventMap {
     ratechange: stdLib.Event,
     reset: stdLib.Event,
     resize: stdLib.UIEvent,
-    rootNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    rootNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     rootNodeContentChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.Anon_ContextRendererAnonInsertD[K, D]],
     rotationChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
       atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on

@@ -22,3 +22,9 @@ trait Logger
   def warn(message: java.lang.String, data: js.Object): scala.Unit = js.native
 }
 
+@JSImport("heroku-logger", "Logger")
+@js.native
+class LoggerCls protected () extends LoggerConfig {
+  def this(config: LoggerConfig) = this()
+}
+

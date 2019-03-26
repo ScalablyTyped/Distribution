@@ -312,3 +312,9 @@ trait SearchViewModel
   def suggest(value: java.lang.String): arcgisDashJsDashApiLib.IPromise[SearchViewModelSuggestResponse] = js.native
 }
 
+@JSGlobal("__esri.SearchViewModel")
+@js.native
+class SearchViewModelCls () extends SearchViewModel {
+  def this(properties: SearchViewModelProperties) = this()
+}
+

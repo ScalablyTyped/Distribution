@@ -102,7 +102,7 @@ trait ServiceSpec extends js.Object {
     * builds on ClusterIP and allocates a port on every node which routes to the clusterIP.
     * "LoadBalancer" builds on NodePort and creates an external load-balancer (if supported in
     * the current cloud) which routes to the clusterIP. More info:
-    * https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services---service-types
+    * https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types
     */
   val `type`: java.lang.String
 }

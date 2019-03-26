@@ -21,3 +21,9 @@ trait PortalRating extends Accessor {
   var rating: scala.Double = js.native
 }
 
+@JSGlobal("__esri.PortalRating")
+@js.native
+class PortalRatingCls () extends PortalRating {
+  def this(properties: PortalRatingProperties) = this()
+}
+

@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Bezier")
 @js.native
+class Bezier protected ()
+  extends bezierDashJsLib.BezierJsNs.Bezier {
+  def this(points: js.Array[bezierDashJsLib.BezierJsNs.Point]) = this()
+}
+
+@JSGlobal("Bezier")
+@js.native
 object Bezier
   extends org.scalablytyped.runtime.Instantiable1[
       /* points */ js.Array[bezierDashJsLib.BezierJsNs.Point], 

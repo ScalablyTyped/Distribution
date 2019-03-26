@@ -161,6 +161,37 @@ trait SVGSVGElement
 
 @JSGlobal("SVGSVGElement")
 @js.native
+class SVGSVGElementCls () extends SVGSVGElement {
+  /* CompleteClass */
+  override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val nextElementSibling: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val preserveAspectRatio: SVGAnimatedPreserveAspectRatio = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val previousElementSibling: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val requiredExtensions: SVGStringList = js.native
+  /* CompleteClass */
+  override val style: CSSStyleDeclaration = js.native
+  /* CompleteClass */
+  override val systemLanguage: SVGStringList = js.native
+  /* CompleteClass */
+  override val viewBox: SVGAnimatedRect = js.native
+  /* CompleteClass */
+  override val zoomAndPan: scala.Double = js.native
+}
+
+@JSGlobal("SVGSVGElement")
+@js.native
 object SVGSVGElement
   extends org.scalablytyped.runtime.Instantiable0[SVGSVGElement] {
   val SVG_ZOOMANDPAN_DISABLE: scala.Double = js.native

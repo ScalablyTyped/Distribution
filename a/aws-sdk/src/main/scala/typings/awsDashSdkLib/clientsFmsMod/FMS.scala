@@ -211,6 +211,41 @@ trait FMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * If you created a Shield Advanced policy, returns policy-level attack summary information in the event of a potential DDoS attack.
+    */
+  def getProtectionStatus(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsFmsMod.FMSNs.GetProtectionStatusResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def getProtectionStatus(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsFmsMod.FMSNs.GetProtectionStatusResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsFmsMod.FMSNs.GetProtectionStatusResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * If you created a Shield Advanced policy, returns policy-level attack summary information in the event of a potential DDoS attack.
+    */
+  def getProtectionStatus(params: awsDashSdkLib.clientsFmsMod.FMSNs.GetProtectionStatusRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsFmsMod.FMSNs.GetProtectionStatusResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def getProtectionStatus(
+    params: awsDashSdkLib.clientsFmsMod.FMSNs.GetProtectionStatusRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsFmsMod.FMSNs.GetProtectionStatusResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsFmsMod.FMSNs.GetProtectionStatusResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Returns an array of PolicyComplianceStatus objects in the response. Use PolicyComplianceStatus to get a summary of which member accounts are protected by the specified policy. 
     */
   def listComplianceStatus(): awsDashSdkLib.libRequestMod.Request[
@@ -331,7 +366,7 @@ trait FMS
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates an AWS Firewall Manager policy.
+    * Creates an AWS Firewall Manager policy. Firewall Manager provides two types of policies: A Shield Advanced policy, which applies Shield Advanced protection to specified accounts and resources, or a WAF policy, which contains a rule group and defines which resources are to be protected by that rule group. A policy is specific to either WAF or Shield Advanced. If you want to enforce both WAF rules and Shield Advanced protection across accounts, you can create multiple policies. You can create one or more policies for WAF rules, and one or more policies for Shield Advanced. You must be subscribed to Shield Advanced to create a Shield Advanced policy. For more information on subscribing to Shield Advanced, see CreateSubscription.
     */
   def putPolicy(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsFmsMod.FMSNs.PutPolicyResponse, 
@@ -348,7 +383,7 @@ trait FMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates an AWS Firewall Manager policy.
+    * Creates an AWS Firewall Manager policy. Firewall Manager provides two types of policies: A Shield Advanced policy, which applies Shield Advanced protection to specified accounts and resources, or a WAF policy, which contains a rule group and defines which resources are to be protected by that rule group. A policy is specific to either WAF or Shield Advanced. If you want to enforce both WAF rules and Shield Advanced protection across accounts, you can create multiple policies. You can create one or more policies for WAF rules, and one or more policies for Shield Advanced. You must be subscribed to Shield Advanced to create a Shield Advanced policy. For more information on subscribing to Shield Advanced, see CreateSubscription.
     */
   def putPolicy(params: awsDashSdkLib.clientsFmsMod.FMSNs.PutPolicyRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsFmsMod.FMSNs.PutPolicyResponse, 

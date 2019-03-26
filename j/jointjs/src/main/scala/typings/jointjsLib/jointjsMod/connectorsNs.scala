@@ -16,6 +16,12 @@ object connectorsNs extends js.Object {
     var smooth: SmoothConnectorArguments
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - jointjsLib.jointjsLibStrings.normal
+    - jointjsLib.jointjsLibStrings.rounded
+    - jointjsLib.jointjsLibStrings.smooth
+    - jointjsLib.jointjsLibStrings.jumpover
+  */
   trait ConnectorType extends js.Object
   
   trait GenericConnectorJSON[K /* <: ConnectorType */] extends js.Object {

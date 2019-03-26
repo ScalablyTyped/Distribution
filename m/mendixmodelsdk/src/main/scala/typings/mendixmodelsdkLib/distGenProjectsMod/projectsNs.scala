@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object projectsNs extends js.Object {
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined name, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined name */ @js.native
   abstract class Document protected () extends ModuleDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IFolderBase) = this()
     @JSName("containerAsFolderBase")
@@ -169,7 +169,7 @@ object projectsNs extends js.Object {
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModuleDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsFolderBase, containerAsModule, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModuleDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsFolderBase, containerAsModule */ @js.native
   abstract class ModuleDocument protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.ModelUnit {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IFolderBase) = this()
@@ -207,7 +207,7 @@ object projectsNs extends js.Object {
   }
   
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectConversion because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsProject, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectConversion because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsProject */ @js.native
   class ProjectConversion protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.ModelUnit {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IProject) = this()
@@ -221,7 +221,7 @@ object projectsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsProject, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsProject */ @js.native
   abstract class ProjectDocument protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.ModelUnit {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IProject) = this()

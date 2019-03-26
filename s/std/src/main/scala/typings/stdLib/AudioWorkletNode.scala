@@ -48,6 +48,13 @@ trait AudioWorkletNode extends AudioNode {
 
 @JSGlobal("AudioWorkletNode")
 @js.native
+class AudioWorkletNodeCls protected () extends AudioWorkletNode {
+  def this(context: BaseAudioContext, name: java.lang.String) = this()
+  def this(context: BaseAudioContext, name: java.lang.String, options: AudioWorkletNodeOptions) = this()
+}
+
+@JSGlobal("AudioWorkletNode")
+@js.native
 object AudioWorkletNode
   extends org.scalablytyped.runtime.Instantiable2[/* context */ BaseAudioContext, /* name */ java.lang.String, AudioWorkletNode]
      with org.scalablytyped.runtime.Instantiable3[

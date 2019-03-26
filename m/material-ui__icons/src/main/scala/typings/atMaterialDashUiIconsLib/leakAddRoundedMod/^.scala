@@ -1,0 +1,13 @@
+package typings
+package atMaterialDashUiIconsLib.leakAddRoundedMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/icons/LeakAddRounded", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.svgIconSvgIconMod.SvgIconProps] = js.native
+}
+

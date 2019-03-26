@@ -36,3 +36,9 @@ trait Set[T] extends js.Object {
   def values(): IterableIterator[T] = js.native
 }
 
+@JSGlobal("Set")
+@js.native
+class SetCls[T] () extends Set[T] {
+  def this(values: js.Array[T]) = this()
+}
+

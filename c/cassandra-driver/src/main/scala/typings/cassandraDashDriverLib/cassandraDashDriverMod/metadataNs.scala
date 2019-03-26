@@ -167,6 +167,11 @@ object metadataNs extends js.Object {
   }
   
   @js.native
+  class MetadataCls protected () extends Metadata {
+    def this(options: cassandraDashDriverLib.cassandraDashDriverMod.ClientOptions, controlConnection: js.Any) = this()
+  }
+  
+  @js.native
   trait MetadataStatic
     extends org.scalablytyped.runtime.Instantiable2[
           /* options */ cassandraDashDriverLib.cassandraDashDriverMod.ClientOptions, 
@@ -206,6 +211,12 @@ object metadataNs extends js.Object {
     var virtual: scala.Boolean
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - cassandraDashDriverLib.cassandraDashDriverLibStrings.all
+    - cassandraDashDriverLib.cassandraDashDriverLibStrings.keys_only
+    - cassandraDashDriverLib.cassandraDashDriverLibStrings.rows_only
+    - cassandraDashDriverLib.cassandraDashDriverLibStrings.none
+  */
   trait caching extends js.Object
   
   var Metadata: MetadataStatic = js.native

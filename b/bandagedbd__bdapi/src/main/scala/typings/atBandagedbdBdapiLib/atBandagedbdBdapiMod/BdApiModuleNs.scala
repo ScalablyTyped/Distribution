@@ -11,6 +11,7 @@ object BdApiModuleNs extends js.Object {
   /**
   	 * The React module being used inside Discord.
   	 */
+  /* Extracted nested Instantiables into classes in ReactNs */
   val React: atBandagedbdBdapiLib.Anon_A = js.native
   /**
   	 * The ReactDOM module being used inside Discord.
@@ -112,5 +113,17 @@ object BdApiModuleNs extends js.Object {
   	 * Removes some previously linked JS by [`linkJS`](#linkjsid-url).
   	 */
   def unlinkJS(id: java.lang.String): scala.Unit = js.native
+  /**
+  	 * The React module being used inside Discord.
+  	 */
+  @JSName("React")
+  @js.native
+  object ReactNs extends js.Object {
+    @js.native
+    class PureComponent[P, S, SS] ()
+      extends reactLib.reactMod.PureComponent[P, S, SS]
+    
+  }
+  
 }
 

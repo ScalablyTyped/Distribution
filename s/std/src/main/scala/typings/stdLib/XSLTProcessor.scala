@@ -18,6 +18,27 @@ trait XSLTProcessor extends js.Object {
 
 @JSGlobal("XSLTProcessor")
 @js.native
+class XSLTProcessorCls () extends XSLTProcessor {
+  /* CompleteClass */
+  override def clearParameters(): scala.Unit = js.native
+  /* CompleteClass */
+  override def getParameter(namespaceURI: java.lang.String, localName: java.lang.String): js.Any = js.native
+  /* CompleteClass */
+  override def importStylesheet(style: Node): scala.Unit = js.native
+  /* CompleteClass */
+  override def removeParameter(namespaceURI: java.lang.String, localName: java.lang.String): scala.Unit = js.native
+  /* CompleteClass */
+  override def reset(): scala.Unit = js.native
+  /* CompleteClass */
+  override def setParameter(namespaceURI: java.lang.String, localName: java.lang.String, value: js.Any): scala.Unit = js.native
+  /* CompleteClass */
+  override def transformToDocument(source: Node): Document = js.native
+  /* CompleteClass */
+  override def transformToFragment(source: Node, document: Document): DocumentFragment = js.native
+}
+
+@JSGlobal("XSLTProcessor")
+@js.native
 object XSLTProcessor
   extends org.scalablytyped.runtime.Instantiable0[XSLTProcessor]
 

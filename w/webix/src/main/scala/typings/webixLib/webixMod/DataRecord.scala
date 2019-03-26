@@ -35,3 +35,9 @@ trait DataRecord extends js.Object {
   def unblockEvent(): scala.Unit = js.native
 }
 
+@JSImport("webix", "DataRecord")
+@js.native
+class DataRecordCls () extends DataRecord {
+  def this(config: js.Any) = this()
+}
+

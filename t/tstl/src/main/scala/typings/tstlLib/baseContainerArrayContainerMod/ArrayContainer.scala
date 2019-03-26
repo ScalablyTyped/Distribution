@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerILinearContainerMod.ILinearContainer because var conflicts: iterator. Inlined assign, assign, resize, back, back, push_back, pop_back, insert, insert, insert */ @JSImport("tstl/base/container/ArrayContainer", "ArrayContainer")
+- tstlLib.baseContainerILinearContainerMod.ILinearContainer because var conflicts: iterator. Inlined resize, back, back, push_back, pop_back, insert, insert, insert */ @JSImport("tstl/base/container/ArrayContainer", "ArrayContainer")
 @js.native
 abstract class ArrayContainer[T, SourceT /* <: ArrayContainer[T, SourceT] */] ()
   extends tstlLib.baseContainerContainerMod.Container[
@@ -39,13 +39,6 @@ abstract class ArrayContainer[T, SourceT /* <: ArrayContainer[T, SourceT] */] ()
     n: scala.Double,
     `val`: T
   ): tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT] = js.native
-  /**
-    * Fill Assigner.
-    *
-    * @param n Initial size.
-    * @param val Value to fill.
-    */
-  def assign(n: scala.Double, `val`: T): scala.Unit = js.native
   /**
     * Get element at specific position.
     *

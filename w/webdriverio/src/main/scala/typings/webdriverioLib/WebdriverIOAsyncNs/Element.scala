@@ -7,5 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ K in keyof webdriverio.ElementPromise ]: webdriver.WrapWithPromise<webdriverio.ElementPromise[K], std.ReturnType<webdriverio.ElementPromise[K]>>}
-- Dropped {[ P in 'addCommand' ]: any[P]} */ trait Element extends js.Object
+- Dropped {[ P in 'addCommand' ]: any[P]} */ @js.native
+trait Element
+  extends webdriverioLib.AsyncSelectors
 

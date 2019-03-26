@@ -40,19 +40,5 @@ abstract class BaseLocationServices protected ()
     * HREF including those data.
     */
   /* protected */ def _set(state: js.Any, title: java.lang.String, url: java.lang.String, replace: scala.Boolean): js.Any = js.native
-  @JSName("hash")
-  def hash_MBaseLocationServices(): js.Any = js.native
-  @JSName("onChange")
-  def onChange_MBaseLocationServices(cb: stdLib.EventListener): js.Function0[js.Array[js.Function]] = js.native
-  @JSName("path")
-  def path_MBaseLocationServices(): js.Any = js.native
-  @JSName("search")
-  def search_MBaseLocationServices(): js.Any = js.native
-  @JSName("url")
-  def url_MBaseLocationServices(): java.lang.String = js.native
-  @JSName("url")
-  def url_MBaseLocationServices(url: java.lang.String): java.lang.String = js.native
-  @JSName("url")
-  def url_MBaseLocationServices(url: java.lang.String, replace: scala.Boolean): java.lang.String = js.native
 }
 

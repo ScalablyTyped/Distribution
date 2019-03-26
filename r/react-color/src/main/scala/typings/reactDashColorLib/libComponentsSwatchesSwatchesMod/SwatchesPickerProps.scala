@@ -11,7 +11,7 @@ trait SwatchesPickerProps
   var height: js.UndefOr[scala.Double] = js.undefined
   var onSwatchHover: js.UndefOr[
     js.Function2[
-      /* color */ reactDashColorLib.reactDashColorMod.Color, 
+      /* color */ reactDashColorLib.reactDashColorMod.ColorResult, 
       /* event */ stdLib.MouseEvent, 
       scala.Unit
     ]
@@ -28,7 +28,7 @@ object SwatchesPickerProps {
     key: reactLib.reactMod.ReactNs.Key = null,
     onChange: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
     onChangeComplete: reactDashColorLib.reactDashColorMod.ColorChangeHandler = null,
-    onSwatchHover: (/* color */ reactDashColorLib.reactDashColorMod.Color, /* event */ stdLib.MouseEvent) => scala.Unit = null,
+    onSwatchHover: (/* color */ reactDashColorLib.reactDashColorMod.ColorResult, /* event */ stdLib.MouseEvent) => scala.Unit = null,
     ref: reactLib.reactMod.ReactNs.LegacyRef[SwatchesPicker] = null,
     width: scala.Int | scala.Double = null
   ): SwatchesPickerProps = {

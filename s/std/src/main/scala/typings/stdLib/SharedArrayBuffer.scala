@@ -26,3 +26,9 @@ trait SharedArrayBuffer extends ArrayBufferLike {
   def slice(begin: scala.Double, end: scala.Double): SharedArrayBuffer = js.native
 }
 
+@JSGlobal("SharedArrayBuffer")
+@js.native
+class SharedArrayBufferCls protected () extends SharedArrayBuffer {
+  def this(byteLength: scala.Double) = this()
+}
+

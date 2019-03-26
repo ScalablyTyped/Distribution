@@ -37,6 +37,13 @@ trait WheelEvent extends MouseEvent {
 
 @JSGlobal("WheelEvent")
 @js.native
+class WheelEventCls protected () extends WheelEvent {
+  def this(typeArg: java.lang.String) = this()
+  def this(typeArg: java.lang.String, eventInitDict: WheelEventInit) = this()
+}
+
+@JSGlobal("WheelEvent")
+@js.native
 object WheelEvent
   extends org.scalablytyped.runtime.Instantiable1[/* typeArg */ java.lang.String, WheelEvent]
      with org.scalablytyped.runtime.Instantiable2[/* typeArg */ java.lang.String, /* eventInitDict */ WheelEventInit, WheelEvent] {

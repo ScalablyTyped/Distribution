@@ -20,7 +20,7 @@ trait ojTableEventMap[K, D]
   var editModeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.rowEdit
   ]
-  var firstSelectedRowChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var firstSelectedRowChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var horizontalGridVisibleChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.enabled | atOracleOraclejetLib.atOracleOraclejetLibStrings.disabled
   ]
@@ -101,7 +101,7 @@ object ojTableEventMap {
     emptied: stdLib.Event,
     ended: stdLib.Event,
     error: stdLib.ErrorEvent,
-    firstSelectedRowChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    firstSelectedRowChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     focus: stdLib.FocusEvent,
     fullscreenchange: stdLib.Event,
     fullscreenerror: stdLib.Event,

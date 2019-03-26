@@ -8,19 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
   /** Executes this query and returns a promise */
-  var `then`: js.Function0[js.Promise[_]] | (js.Function1[/* onfulfilled */ js.Function1[/* value */ T, _ | js.Thenable[_]], js.Promise[_]]) | (js.Function2[
-    /* onfulfilled */ js.Function1[/* value */ T, _ | js.Thenable[_]], 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-    js.Promise[_]
-  ]) | (js.Function2[
-    /* onfulfilled */ js.UndefOr[scala.Nothing], 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-    js.Promise[_]
-  ]) | (js.Function2[
-    /* onfulfilled */ scala.Null, 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-    js.Promise[_]
-  ]) = js.native
+  @JSName("then")
+  var then_Original: mongooseLib.Anon_OnfulfilledOnrejected[T] = js.native
   /**
     * Specifies a javascript function or expression to pass to MongoDBs query system.
     * Only use $where when you have a condition that cannot be met using other MongoDB
@@ -509,12 +498,12 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     * you must first call remove() and then execute it by using the exec() method.
     * @param criteria mongodb selector
     */
-  def remove(): Query[_] with QueryHelpers = js.native
-  def remove(callback: js.Function1[/* err */ js.Any, scala.Unit]): Query[_] with QueryHelpers = js.native
-  def remove(criteria: js.Any): Query[_] with QueryHelpers = js.native
-  def remove(criteria: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): Query[_] with QueryHelpers = js.native
-  def remove(criteria: Query[_]): Query[_] with QueryHelpers = js.native
-  def remove(criteria: Query[_], callback: js.Function1[/* err */ js.Any, scala.Unit]): Query[_] with QueryHelpers = js.native
+  def remove(): Query[scala.Nothing] with QueryHelpers = js.native
+  def remove(callback: js.Function1[/* err */ js.Any, scala.Unit]): Query[scala.Nothing] with QueryHelpers = js.native
+  def remove(criteria: js.Any): Query[scala.Nothing] with QueryHelpers = js.native
+  def remove(criteria: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): Query[scala.Nothing] with QueryHelpers = js.native
+  def remove(criteria: Query[_]): Query[scala.Nothing] with QueryHelpers = js.native
+  def remove(criteria: Query[_], callback: js.Function1[/* err */ js.Any, scala.Unit]): Query[scala.Nothing] with QueryHelpers = js.native
   /** Specifies which document fields to include or exclude (also known as the query "projection") */
   def select(arg: java.lang.String): this.type = js.native
   def select(arg: js.Any): this.type = js.native
@@ -580,6 +569,25 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
   def tailable(): this.type = js.native
   def tailable(bool: scala.Boolean): this.type = js.native
   def tailable(bool: scala.Boolean, opts: mongooseLib.Anon_NumberOfRetries): this.type = js.native
+  /** Executes this query and returns a promise */
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  /** Executes this query and returns a promise */
+  def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
+  /** Executes this query and returns a promise */
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
+  /** Executes this query and returns a promise */
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.UndefOr[scala.Nothing],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
+  /** Executes this query and returns a promise */
+  def `then`[TResult1, TResult2](
+    onfulfilled: scala.Null,
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
   /**
     * Converts this query to a customized, reusable query
     * constructor with all arguments and options retained.

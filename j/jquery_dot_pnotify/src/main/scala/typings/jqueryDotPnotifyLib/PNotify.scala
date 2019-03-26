@@ -30,3 +30,9 @@ trait PNotify extends js.Object {
   def update(options: PNotifyOptions): PNotify = js.native
 }
 
+@JSGlobal("PNotify")
+@js.native
+class PNotifyCls () extends PNotify {
+  def this(options: PNotifyOptions) = this()
+}
+

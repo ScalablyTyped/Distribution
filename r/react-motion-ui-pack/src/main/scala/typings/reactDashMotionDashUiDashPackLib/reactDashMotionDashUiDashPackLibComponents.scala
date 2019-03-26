@@ -9,7 +9,7 @@ object reactDashMotionDashUiDashPackLibComponents {
   @scala.inline
   def ReactDashMotionDashUiDashPack: reactLib.reactMod.ReactNs.ComponentType[
     reactDashMotionDashUiDashPackLib.reactDashMotionDashUiDashPackMod.TransitionNs.TransitionProps
-  ] = reactDashMotionDashUiDashPackLib.reactDashMotionDashUiDashPackMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  ] = js.constructorOf[reactDashMotionDashUiDashPackLib.reactDashMotionDashUiDashPackMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
   reactDashMotionDashUiDashPackLib.reactDashMotionDashUiDashPackMod.TransitionNs.TransitionProps]]
   @scala.inline
   def TransitionProps: reactDashMotionDashUiDashPackLib.reactDashMotionDashUiDashPackMod.TransitionNs.TransitionProps.type = reactDashMotionDashUiDashPackLib.reactDashMotionDashUiDashPackMod.TransitionNs.TransitionProps

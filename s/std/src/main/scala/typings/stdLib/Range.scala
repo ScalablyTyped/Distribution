@@ -51,6 +51,21 @@ trait Range extends AbstractRange {
 
 @JSGlobal("Range")
 @js.native
+class RangeCls () extends Range {
+  /* CompleteClass */
+  override val collapsed: scala.Boolean = js.native
+  /* CompleteClass */
+  override val endContainer: Node = js.native
+  /* CompleteClass */
+  override val endOffset: scala.Double = js.native
+  /* CompleteClass */
+  override val startContainer: Node = js.native
+  /* CompleteClass */
+  override val startOffset: scala.Double = js.native
+}
+
+@JSGlobal("Range")
+@js.native
 object Range
   extends org.scalablytyped.runtime.Instantiable0[Range] {
   val END_TO_END: scala.Double = js.native

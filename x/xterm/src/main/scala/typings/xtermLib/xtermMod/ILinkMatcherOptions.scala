@@ -12,7 +12,7 @@ trait ILinkMatcherOptions extends js.Object {
     */
   var leaveCallback: js.UndefOr[
     js.Function2[
-      /* event */ xtermLib.MouseEvent, 
+      /* event */ stdLib.MouseEvent, 
       /* uri */ java.lang.String, 
       scala.Boolean | scala.Unit
     ]
@@ -33,7 +33,7 @@ trait ILinkMatcherOptions extends js.Object {
     */
   var tooltipCallback: js.UndefOr[
     js.Function2[
-      /* event */ xtermLib.MouseEvent, 
+      /* event */ stdLib.MouseEvent, 
       /* uri */ java.lang.String, 
       scala.Boolean | scala.Unit
     ]
@@ -56,19 +56,19 @@ trait ILinkMatcherOptions extends js.Object {
     * mouse event will continue propagation (eg. double click to select word).
     */
   var willLinkActivate: js.UndefOr[
-    js.Function2[/* event */ xtermLib.MouseEvent, /* uri */ java.lang.String, scala.Boolean]
+    js.Function2[/* event */ stdLib.MouseEvent, /* uri */ java.lang.String, scala.Boolean]
   ] = js.undefined
 }
 
 object ILinkMatcherOptions {
   @scala.inline
   def apply(
-    leaveCallback: (/* event */ xtermLib.MouseEvent, /* uri */ java.lang.String) => scala.Boolean | scala.Unit = null,
+    leaveCallback: (/* event */ stdLib.MouseEvent, /* uri */ java.lang.String) => scala.Boolean | scala.Unit = null,
     matchIndex: scala.Int | scala.Double = null,
     priority: scala.Int | scala.Double = null,
-    tooltipCallback: (/* event */ xtermLib.MouseEvent, /* uri */ java.lang.String) => scala.Boolean | scala.Unit = null,
+    tooltipCallback: (/* event */ stdLib.MouseEvent, /* uri */ java.lang.String) => scala.Boolean | scala.Unit = null,
     validationCallback: (/* uri */ java.lang.String, /* callback */ js.Function1[/* isValid */ scala.Boolean, scala.Unit]) => scala.Unit = null,
-    willLinkActivate: (/* event */ xtermLib.MouseEvent, /* uri */ java.lang.String) => scala.Boolean = null
+    willLinkActivate: (/* event */ stdLib.MouseEvent, /* uri */ java.lang.String) => scala.Boolean = null
   ): ILinkMatcherOptions = {
     val __obj = js.Dynamic.literal()
     if (leaveCallback != null) __obj.updateDynamic("leaveCallback")(js.Any.fromFunction2(leaveCallback))

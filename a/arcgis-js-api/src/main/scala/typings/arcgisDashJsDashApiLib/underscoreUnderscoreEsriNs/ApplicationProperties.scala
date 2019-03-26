@@ -15,3 +15,9 @@ trait ApplicationProperties extends Accessor {
   var viewing: Viewing = js.native
 }
 
+@JSGlobal("__esri.ApplicationProperties")
+@js.native
+class ApplicationPropertiesCls () extends ApplicationProperties {
+  def this(properties: ApplicationPropertiesProperties) = this()
+}
+

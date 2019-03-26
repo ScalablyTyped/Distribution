@@ -33,3 +33,9 @@ trait InputFieldGroup extends Accessor {
   val visible: scala.Boolean = js.native
 }
 
+@JSGlobal("__esri.InputFieldGroup")
+@js.native
+class InputFieldGroupCls () extends InputFieldGroup {
+  def this(properties: InputFieldGroupProperties) = this()
+}
+

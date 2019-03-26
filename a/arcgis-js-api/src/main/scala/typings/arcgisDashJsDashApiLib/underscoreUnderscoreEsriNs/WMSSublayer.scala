@@ -93,3 +93,9 @@ trait WMSSublayer extends Accessor {
   var visible: scala.Boolean = js.native
 }
 
+@JSGlobal("__esri.WMSSublayer")
+@js.native
+class WMSSublayerCls () extends WMSSublayer {
+  def this(properties: WMSSublayerProperties) = this()
+}
+

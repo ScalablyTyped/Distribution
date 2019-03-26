@@ -38,6 +38,50 @@ trait Wallet extends js.Object {
   ): scala.Unit
 }
 
+@JSImport("yandex-money-sdk", "Wallet")
+@js.native
+class WalletCls protected () extends Wallet {
+  def this(accessToken: java.lang.String) = this()
+  /* CompleteClass */
+  override def accountInfo(callback: ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.AccountInfoResult]): scala.Unit = js.native
+  /* CompleteClass */
+  override def incomingTransferAccept(
+    operation_id: java.lang.String,
+    protectionCode: java.lang.String,
+    callback: ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.IncomingTransferAcceptResult]
+  ): scala.Unit = js.native
+  /* CompleteClass */
+  override def incomingTransferReject(
+    operation_id: java.lang.String,
+    callback: ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.IncomingTransferRejectResult]
+  ): scala.Unit = js.native
+  /* CompleteClass */
+  override def operationDetails(
+    operation_id: java.lang.String,
+    callback: ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.OperationDetailsResult]
+  ): scala.Unit = js.native
+  /* CompleteClass */
+  override def operationHistory(
+    options: yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.OperationHistoryOptions,
+    callback: ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.OperationHistoryResult]
+  ): scala.Unit = js.native
+  /* CompleteClass */
+  override def processPayment(
+    options: yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.ProcessPaymentOptions,
+    callback: ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.ProcessPaymentResult]
+  ): scala.Unit = js.native
+  /* CompleteClass */
+  override def requestPayment(
+    options: yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.RequestPaymentOptions,
+    callback: ResponseCallback[yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.RequestPaymentResult]
+  ): scala.Unit = js.native
+  /* CompleteClass */
+  override def sendAuthenticatedRequest(
+    params: yandexDashMoneyDashSdkLib.YandexMoneySDKNs.WalletNs.SendAuthenticatedRequestParams,
+    callback: ResponseCallback[_]
+  ): scala.Unit = js.native
+}
+
 object Wallet {
   @scala.inline
   def apply(

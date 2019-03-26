@@ -5,13 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait EggAppConfig
   extends /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
     * The current HOME directory
     */
-  var HOME: java.lang.String
-  var baseDir: java.lang.String
+  var HOME: java.lang.String = js.native
+  var baseDir: java.lang.String = js.native
   /**
     * The option of `bodyParser` middleware
     *
@@ -29,30 +30,30 @@ trait EggAppConfig
     * @property {string[]} enableTypes - parser will only parse when request type hits enableTypes, default is ['json', 'form']
     * @property {any} extendTypes - support extend types
     */
-  var bodyParser: eggLib.Anon_Enable
+  var bodyParser: eggLib.Anon_Enable = js.native
   /**
     * customLoader config
     */
-  var customLoader: org.scalablytyped.runtime.StringDictionary[CustomLoaderConfig]
-  var development: eggLib.Anon_FastReady
+  var customLoader: org.scalablytyped.runtime.StringDictionary[CustomLoaderConfig] = js.native
+  var development: eggLib.Anon_FastReady = js.native
   /**
     * It will ignore special keys when dumpConfig
     */
-  var dump: eggLib.Anon_Ignore
+  var dump: eggLib.Anon_Ignore = js.native
   /**
     * The environment of egg
     */
-  var env: EggEnvType
-  var hostHeaders: java.lang.String
-  var httpclient: eggLib.Anon_EnableDNSCache
+  var env: EggEnvType = js.native
+  var hostHeaders: java.lang.String = js.native
+  var httpclient: eggLib.Anon_EnableDNSCache = js.native
   /**
     * I18n options
     */
-  var i18n: eggLib.Anon_CookieField
+  var i18n: eggLib.Anon_CookieField = js.native
   /**
     * Detect request' ip from specified headers, not case-sensitive. Only worked when config.proxy set to true.
     */
-  var ipHeaders: java.lang.String
+  var ipHeaders: java.lang.String = js.native
   /**
     * jsonp options
     * @member Config#jsonp
@@ -61,11 +62,12 @@ trait EggAppConfig
     * @property {Boolean} csrf - enable csrf check or not. default to false
     * @property {String|RegExp|Array} whiteList - referrer white list
     */
-  var jsonp: eggLib.Anon_Callback
+  @JSName("jsonp")
+  var jsonp_Original: eggLib.Anon_Callback = js.native
   /**
     * The key that signing cookies. It can contain multiple keys seperated by .
     */
-  var keys: java.lang.String
+  var keys: java.lang.String = js.native
   /**
     * logger options
     * @member Config#logger
@@ -82,18 +84,18 @@ trait EggAppConfig
     * @property {Object} coreLogger - custom config of coreLogger
     * @property {Boolean} allowDebugAtProd - allow debug log at prod, defaults to true
     */
-  var logger: eggLib.Anon_AgentLogName
-  var middleware: js.Array[java.lang.String]
+  var logger: eggLib.Anon_AgentLogName = js.native
+  var middleware: js.Array[java.lang.String] = js.native
   /**
     * The name of the application
     */
-  var name: java.lang.String
+  var name: java.lang.String = js.native
   /**
     * package.json
     */
-  var pkg: js.Any
-  var rundir: java.lang.String
-  var security: eggLib.Anon_Csp
+  var pkg: js.Any = js.native
+  var rundir: java.lang.String = js.native
+  var security: eggLib.Anon_Csp = js.native
   /**
     * server timeout in milliseconds, default to 2 minutes.
     *
@@ -101,48 +103,88 @@ trait EggAppConfig
     *
     * @see https://nodejs.org/api/http.html#http_server_timeout
     */
-  var serverTimeout: scala.Double | scala.Null
-  var siteFile: PlainObject[java.lang.String | nodeLib.Buffer]
-  var static: eggLib.Anon_Buffer with PlainObject[_]
-  var watcher: PlainObject[_]
-  var workerStartTimeout: scala.Double
-  def onClientError(err: stdLib.Error, socket: nodeLib.netMod.Socket, app: EggApplication): ClientErrorResponse | js.Promise[ClientErrorResponse]
-}
-
-object EggAppConfig {
-  @scala.inline
-  def apply(
-    HOME: java.lang.String,
-    baseDir: java.lang.String,
-    bodyParser: eggLib.Anon_Enable,
-    customLoader: org.scalablytyped.runtime.StringDictionary[CustomLoaderConfig],
-    development: eggLib.Anon_FastReady,
-    dump: eggLib.Anon_Ignore,
-    env: EggEnvType,
-    hostHeaders: java.lang.String,
-    httpclient: eggLib.Anon_EnableDNSCache,
-    i18n: eggLib.Anon_CookieField,
-    ipHeaders: java.lang.String,
-    jsonp: eggLib.Anon_Callback,
-    keys: java.lang.String,
-    logger: eggLib.Anon_AgentLogName,
-    middleware: js.Array[java.lang.String],
-    name: java.lang.String,
-    onClientError: (stdLib.Error, nodeLib.netMod.Socket, EggApplication) => ClientErrorResponse | js.Promise[ClientErrorResponse],
-    pkg: js.Any,
-    rundir: java.lang.String,
-    security: eggLib.Anon_Csp,
-    siteFile: PlainObject[java.lang.String | nodeLib.Buffer],
-    static: eggLib.Anon_Buffer with PlainObject[_],
-    watcher: PlainObject[_],
-    workerStartTimeout: scala.Double,
-    StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
-    serverTimeout: scala.Int | scala.Double = null
-  ): EggAppConfig = {
-    val __obj = js.Dynamic.literal(HOME = HOME, baseDir = baseDir, bodyParser = bodyParser, customLoader = customLoader, development = development, dump = dump, env = env.asInstanceOf[js.Any], hostHeaders = hostHeaders, httpclient = httpclient, i18n = i18n, ipHeaders = ipHeaders, jsonp = jsonp, keys = keys, logger = logger, middleware = middleware, name = name, onClientError = js.Any.fromFunction3(onClientError), pkg = pkg, rundir = rundir, security = security, siteFile = siteFile, static = static, watcher = watcher, workerStartTimeout = workerStartTimeout)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (serverTimeout != null) __obj.updateDynamic("serverTimeout")(serverTimeout.asInstanceOf[js.Any])
-    __obj.asInstanceOf[EggAppConfig]
-  }
+  var serverTimeout: scala.Double | scala.Null = js.native
+  var siteFile: PlainObject[java.lang.String | nodeLib.Buffer] = js.native
+  var static: eggLib.Anon_Buffer with PlainObject[_] = js.native
+  var watcher: PlainObject[_] = js.native
+  var workerStartTimeout: scala.Double = js.native
+  /**
+    * jsonp options
+    * @member Config#jsonp
+    * @property {String} callback - jsonp callback method key, default to `_callback`
+    * @property {Number} limit - callback method name's max length, default to `50`
+    * @property {Boolean} csrf - enable csrf check or not. default to false
+    * @property {String|RegExp|Array} whiteList - referrer white list
+    */
+  def jsonp(
+    path: nodeLib.fsMod.PathLike,
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * jsonp options
+    * @member Config#jsonp
+    * @property {String} callback - jsonp callback method key, default to `_callback`
+    * @property {Number} limit - callback method name's max length, default to `50`
+    * @property {Boolean} csrf - enable csrf check or not. default to false
+    * @property {String|RegExp|Array} whiteList - referrer white list
+    */
+  def jsonp(
+    path: nodeLib.fsMod.PathLike,
+    options: java.lang.String,
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * jsonp options
+    * @member Config#jsonp
+    * @property {String} callback - jsonp callback method key, default to `_callback`
+    * @property {Number} limit - callback method name's max length, default to `50`
+    * @property {Boolean} csrf - enable csrf check or not. default to false
+    * @property {String|RegExp|Array} whiteList - referrer white list
+    */
+  def jsonp(
+    path: nodeLib.fsMod.PathLike,
+    options: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * jsonp options
+    * @member Config#jsonp
+    * @property {String} callback - jsonp callback method key, default to `_callback`
+    * @property {Number} limit - callback method name's max length, default to `50`
+    * @property {Boolean} csrf - enable csrf check or not. default to false
+    * @property {String|RegExp|Array} whiteList - referrer white list
+    */
+  def jsonp(
+    path: nodeLib.fsMod.PathLike,
+    options: nodeLib.fsMod.MakeDirectoryOptions,
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * jsonp options
+    * @member Config#jsonp
+    * @property {String} callback - jsonp callback method key, default to `_callback`
+    * @property {Number} limit - callback method name's max length, default to `50`
+    * @property {Boolean} csrf - enable csrf check or not. default to false
+    * @property {String|RegExp|Array} whiteList - referrer white list
+    */
+  def jsonp(
+    path: nodeLib.fsMod.PathLike,
+    options: scala.Double,
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+  ): scala.Unit = js.native
+  /**
+    * jsonp options
+    * @member Config#jsonp
+    * @property {String} callback - jsonp callback method key, default to `_callback`
+    * @property {Number} limit - callback method name's max length, default to `50`
+    * @property {Boolean} csrf - enable csrf check or not. default to false
+    * @property {String|RegExp|Array} whiteList - referrer white list
+    */
+  def jsonp(
+    path: nodeLib.fsMod.PathLike,
+    options: scala.Null,
+    callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
+  ): scala.Unit = js.native
+  def onClientError(err: stdLib.Error, socket: nodeLib.netMod.Socket, app: EggApplication): ClientErrorResponse | js.Promise[ClientErrorResponse] = js.native
 }
 

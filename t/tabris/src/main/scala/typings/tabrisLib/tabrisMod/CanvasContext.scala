@@ -1,0 +1,271 @@
+package typings
+package tabrisLib.tabrisMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("tabris", "CanvasContext")
+@js.native
+class CanvasContext protected () extends js.Object {
+  /**
+    * Specifies the color to use inside shapes.
+    */
+  var fillStyle: tabrisLib.Color = js.native
+  /**
+    * Specifies the current text style being used when drawing text.
+    */
+  var font: tabrisLib.Font = js.native
+  /**
+    * Determines how the end points of every line are drawn.
+    */
+  var lineCap: tabrisLib.tabrisLibStrings.butt | tabrisLib.tabrisLibStrings.round | tabrisLib.tabrisLibStrings.square = js.native
+  /**
+    * Determines how two connecting segments in a shape are joined together.
+    */
+  var lineJoin: tabrisLib.tabrisLibStrings.bevel | tabrisLib.tabrisLibStrings.miter | tabrisLib.tabrisLibStrings.round = js.native
+  /**
+    * The thickness of lines in space units.
+    */
+  var lineWidth: scala.Double = js.native
+  /**
+    * Specifies the color to use for the lines around shapes.
+    */
+  var strokeStyle: tabrisLib.Color = js.native
+  /**
+    * Specifies the current text alignment being used when drawing text.
+    */
+  var textAlign: tabrisLib.tabrisLibStrings.center | tabrisLib.tabrisLibStrings.end | tabrisLib.tabrisLibStrings.left | tabrisLib.tabrisLibStrings.right | tabrisLib.tabrisLibStrings.start = js.native
+  /**
+    * Specifies the current text baseline being used when drawing text.
+    */
+  var textBaseline: tabrisLib.tabrisLibStrings.alphabetic | tabrisLib.tabrisLibStrings.bottom | tabrisLib.tabrisLibStrings.hanging | tabrisLib.tabrisLibStrings.ideographic | tabrisLib.tabrisLibStrings.middle | tabrisLib.tabrisLibStrings.top = js.native
+  /**
+    * Adds an arc to the path which is centered at *(x, y)* position with radius *r* starting at
+    * *startAngle* and ending at *endAngle* going in the given direction by *anticlockwise* (defaulting to
+    * clockwise).
+    * @param x The x coordinate of the arc's center.
+    * @param y The y coordinate of the arc's center.
+    * @param radius The arc's radius.
+    * @param startAngle The angle in radians at which the arc starts, measured clockwise from the positive x axis.
+    * @param endAngle The angle in radians at which the arc ends, measured clockwise from the positive x axis.
+    * @param anticlockwise if true, causes the arc to be drawn counter-clockwise between the two angles.
+    */
+  def arc(
+    x: scala.Double,
+    y: scala.Double,
+    radius: scala.Double,
+    startAngle: scala.Double,
+    endAngle: scala.Double
+  ): scala.Unit = js.native
+  def arc(
+    x: scala.Double,
+    y: scala.Double,
+    radius: scala.Double,
+    startAngle: scala.Double,
+    endAngle: scala.Double,
+    anticlockwise: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+    * Starts a new path by emptying the list of sub-paths.
+    */
+  def beginPath(): scala.Unit = js.native
+  /**
+    * Adds a cubic Bézier curve to the path. The starting point is the last point in the current path.
+    * @param cp1x The x axis of the coordinate for the first control point.
+    * @param cp1y The y axis of the coordinate for the first control point.
+    * @param cp2x The x axis of the coordinate for the second control point.
+    * @param cp2y The y axis of the coordinate for the second control point.
+    * @param x The x axis of the coordinate for the end point.
+    * @param y The y axis of the coordinate for the end point.
+    */
+  def bezierCurveTo(
+    cp1x: scala.Double,
+    cp1y: scala.Double,
+    cp2x: scala.Double,
+    cp2y: scala.Double,
+    x: scala.Double,
+    y: scala.Double
+  ): scala.Unit = js.native
+  /**
+    * Sets all pixels in the rectangle defined by starting point *(x, y)* and size *(width, height)* to
+    * transparent, erasing any previously drawn content.
+    * @param x The x axis of the rectangle's upper-left corner.
+    * @param y The y axis of the rectangle's upper-left corner.
+    * @param width The rectangle's width.
+    * @param height The rectangles height.
+    */
+  def clearRect(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): scala.Unit = js.native
+  /**
+    * Adds a straight line from the current point to the start of the current sub-path.
+    */
+  def closePath(): scala.Unit = js.native
+  /**
+    * creates a new, blank ImageData object with the same dimensions as the specified existing ImageData
+    * object. All of the pixels in the new object are transparent black.
+    * @param imageData An existing ImageData object from which to copy the width and height.
+    */
+  def createImageData(imageData: ImageData): ImageData = js.native
+  /**
+    * creates a new, blank ImageData object with the specified dimensions. All of the pixels in the new
+    * object are transparent black.
+    * @param width The width of the new ImageData object.
+    * @param height The height of the new ImageData object.
+    */
+  def createImageData(width: scala.Double, height: scala.Double): ImageData = js.native
+  /**
+    * Fills the current or path with the current fill style.
+    */
+  def fill(): scala.Unit = js.native
+  /**
+    * draws a filled rectangle at *(x, y)* position whose size is determined by *width* and *height*. and
+    * whose color is determined by the fillStyle attribute.
+    * @param x The x axis of the rectangle's upper-left corner.
+    * @param y The y axis of the rectangle's upper-left corner.
+    * @param width The rectangle's width.
+    * @param height The rectangles height.
+    */
+  def fillRect(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): scala.Unit = js.native
+  /**
+    * Fills a given text at the given *(x, y)* position using the current *textAlign* and *textBaseline*
+    * values.
+    * @param text The text to render.
+    * @param x The x axis of the coordinate for the text starting point.
+    * @param y The y axis of the coordinate for the text starting point.
+    */
+  def fillText(text: java.lang.String, x: scala.Double, y: scala.Double): scala.Unit = js.native
+  /**
+    * Returns an ImageData object representing the underlying pixel data for the area of the canvas denoted
+    * by the given rectangle.
+    * @param x The x axis of the rectangle's upper-left corner.
+    * @param y The y axis of the rectangle's upper-left corner.
+    * @param width The rectangle's width.
+    * @param height The rectangle's height.
+    */
+  def getImageData(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): ImageData = js.native
+  /**
+    * Connects the last point in the sub-path to the *(x, y)* coordinates with a straight line.
+    * @param x The x axis of the coordinate for the end of the line.
+    * @param y The y axis of the coordinate for the end of the line.
+    */
+  def lineTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
+  /**
+    * Moves the starting point of a new sub-path to the *(x, y)* coordinates.
+    * @param x The x axis of the point.
+    * @param y The y axis of the point.
+    */
+  def moveTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
+  /**
+    * Paints data from the given ImageData object onto the bitmap at coordinates (x, y).
+    * @param imageData An ImageData object containing the array of pixel values.
+    * @param x x-coordinate of the upper-left corner of the image data rectangle
+    * @param y y-coordinate of the upper-left corner of the image data rectangle
+    */
+  def putImageData(imageData: ImageData, x: scala.Double, y: scala.Double): scala.Unit = js.native
+  /**
+    * Adds a quadratic Bézier curve to the path. The starting point is the last point in the current path.
+    * @param cpx The x axis of the coordinate for the control point.
+    * @param cpy The y axis of the coordinate for the control point.
+    * @param x The x axis of the coordinate for the end point.
+    * @param y The y axis of the coordinate for the end point.
+    */
+  def quadraticCurveTo(cpx: scala.Double, cpy: scala.Double, x: scala.Double, y: scala.Double): scala.Unit = js.native
+  /**
+    * Creates a path for a rectangle with the top-left corner at *(x, y)*
+    * @param x The x axis of the rectangle's upper-left corner.
+    * @param y The y axis of the rectangle's upper-left corner.
+    * @param width The rectangle's width.
+    * @param height The rectangles height.
+    */
+  def rect(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): scala.Unit = js.native
+  /**
+    * Restores the most recently saved canvas state by popping the top entry in the drawing state stack.
+    */
+  def restore(): scala.Unit = js.native
+  /**
+    * Adds a rotation to the transformation matrix.
+    * @param angle  The angle to rotate clockwise in radians.
+    */
+  def rotate(angle: scala.Double): scala.Unit = js.native
+  /**
+    * Saves the entire state of the canvas by pushing the current state onto a stack.
+    */
+  def save(): scala.Unit = js.native
+  /**
+    * Adds a scaling transformation to the canvas units by x horizontally and by y vertically.
+    * @param x Scaling factor in the horizontal direction.
+    * @param y Scaling factor in the vertical direction.
+    */
+  def scale(x: scala.Double, y: scala.Double): scala.Unit = js.native
+  /**
+    * resets (overrides) the current transformation to the identity matrix and then invokes a
+    * transformation described by the arguments of this method. The matrix has the following format:
+    * [[a, c, e],
+    * [b, d, f],
+    * [0, 0, 1]]
+    * @param a Horizontal scaling.
+    * @param b Horizontal skewing.
+    * @param c Vertical skewing.
+    * @param d Vertical scaling.
+    * @param e Horizontal moving.
+    * @param f Vertical moving.
+    */
+  def setTransform(
+    a: scala.Double,
+    b: scala.Double,
+    c: scala.Double,
+    d: scala.Double,
+    e: scala.Double,
+    f: scala.Double
+  ): scala.Unit = js.native
+  /**
+    * Strokes the current path with the current stroke style.
+    */
+  def stroke(): scala.Unit = js.native
+  /**
+    * draws the outline of a rectangle at *(x, y)* position whose size is determined by *width* and
+    * *height* using the current stroke style.
+    * @param x The x axis of the rectangle's upper-left corner.
+    * @param y The y axis of the rectangle's upper-left corner.
+    * @param width The rectangle's width.
+    * @param height The rectangles height.
+    */
+  def strokeRect(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): scala.Unit = js.native
+  /**
+    * Strokes a given text at the given *(x, y)* position using the current *textAlign* and *textBaseline*
+    * values.
+    * @param text The text to render.
+    * @param x The x axis of the coordinate for the text starting point.
+    * @param y The y axis of the coordinate for the text starting point.
+    */
+  def strokeText(text: java.lang.String, x: scala.Double, y: scala.Double): scala.Unit = js.native
+  /**
+    * Multiplies the current transformation with the matrix described by the arguments of this method. The
+    * matrix has the following format:
+    * [[a, c, e],
+    * [b, d, f],
+    * [0, 0, 1]]
+    * @param a Horizontal scaling.
+    * @param b Horizontal skewing.
+    * @param c Vertical skewing.
+    * @param d Vertical scaling.
+    * @param e Horizontal moving.
+    * @param f Vertical moving.
+    */
+  def transform(
+    a: scala.Double,
+    b: scala.Double,
+    c: scala.Double,
+    d: scala.Double,
+    e: scala.Double,
+    f: scala.Double
+  ): scala.Unit = js.native
+  /**
+    * Adds a translation transformation by moving the canvas and its origin *x* horizontally and *y*
+    * vertically on the grid.
+    * @param x The distance to move in the horizontal direction.
+    * @param y The distance to move in the vertical direction.
+    */
+  def translate(x: scala.Double, y: scala.Double): scala.Unit = js.native
+}
+

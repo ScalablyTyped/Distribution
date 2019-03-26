@@ -18,10 +18,10 @@ object ^ extends js.Object {
   val MosaicActionsPropType: propDashTypesLib.propDashTypesMod.Validator[
     propDashTypesLib.propDashTypesMod.InferProps[reactDashMosaicDashComponentLib.Anon_Args]
   ] = js.native
-  val MosaicContext: reactDashMosaicDashComponentLib.Anon_ComponentName = js.native
+  val MosaicContext: reactDashMosaicDashComponentLib.Anon_MosaicActions = js.native
   val MosaicWindowActionsPropType: propDashTypesLib.propDashTypesMod.Validator[
-    propDashTypesLib.propDashTypesMod.InferProps[reactDashMosaicDashComponentLib.Anon_ArgsComponentName]
+    propDashTypesLib.propDashTypesMod.InferProps[reactDashMosaicDashComponentLib.Anon_ArgsConnectDragSource]
   ] = js.native
-  val MosaicWindowContext: reactDashMosaicDashComponentLib.Anon_ComponentNameLocationMosaicActionsMosaicId = js.native
+  val MosaicWindowContext: reactDashMosaicDashComponentLib.Anon_MosaicActionsMosaicId = js.native
 }
 

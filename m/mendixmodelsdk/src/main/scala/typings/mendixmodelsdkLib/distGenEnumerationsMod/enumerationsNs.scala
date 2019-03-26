@@ -27,7 +27,7 @@ object enumerationsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/enumerations relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumeration because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined values, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumeration because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined values */ @js.native
   class Enumeration protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -38,7 +38,7 @@ object enumerationsNs extends js.Object {
     * See: {@link https://docs.mendix.com/refguide7/enumeration-values relevant section in reference guide}
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumerationValue because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsEnumeration, name, asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumerationValue because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsEnumeration, name */ @js.native
   class EnumerationValue protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()

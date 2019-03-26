@@ -15,6 +15,10 @@ trait IDBCursorWithValue extends IDBCursor {
 
 @JSGlobal("IDBCursorWithValue")
 @js.native
+class IDBCursorWithValueCls () extends IDBCursorWithValue
+
+@JSGlobal("IDBCursorWithValue")
+@js.native
 object IDBCursorWithValue
   extends org.scalablytyped.runtime.Instantiable0[IDBCursorWithValue]
 

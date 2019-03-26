@@ -35,6 +35,12 @@ package object interfacesNs {
   type Rebind = js.Function1[/* serviceIdentifier */ ServiceIdentifier[js.Any], BindingToSyntax[js.Any]]
   type RequestScope = (stdLib.Map[js.Any, js.Any]) | scala.Null
   type ResolveRequestHandler = js.Function1[/* request */ Request, js.Any]
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - js.Symbol
+    - Newable[T]
+    - Abstract[T]
+  */
   type ServiceIdentifier[T] = _ServiceIdentifier[T] | java.lang.String | js.Symbol
   type Unbind = js.Function1[/* serviceIdentifier */ ServiceIdentifier[js.Any], scala.Unit]
 }

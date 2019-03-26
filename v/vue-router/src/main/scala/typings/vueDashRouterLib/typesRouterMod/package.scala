@@ -31,6 +31,11 @@ package object typesRouterMod {
     ], 
     js.Any
   ]
+  /* Rewritten from type alias, can be one of: 
+    - Position
+    - vueDashRouterLib.Anon_Offset
+    - scala.Unit
+  */
   type PositionResult = _PositionResult | scala.Unit
   type RawLocation = java.lang.String | Location
   type RedirectOption = RawLocation | (js.Function1[/* to */ Route, RawLocation])

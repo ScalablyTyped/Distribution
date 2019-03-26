@@ -21,3 +21,9 @@ trait Task extends Accessor {
   var url: java.lang.String = js.native
 }
 
+@JSGlobal("__esri.Task")
+@js.native
+class TaskCls () extends Task {
+  def this(properties: TaskProperties) = this()
+}
+

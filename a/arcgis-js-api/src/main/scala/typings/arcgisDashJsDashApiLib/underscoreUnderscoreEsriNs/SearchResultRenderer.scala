@@ -31,3 +31,9 @@ trait SearchResultRenderer extends Widget {
   def render(): js.Any = js.native
 }
 
+@JSGlobal("__esri.SearchResultRenderer")
+@js.native
+class SearchResultRendererCls () extends SearchResultRenderer {
+  def this(properties: SearchResultRendererProperties) = this()
+}
+

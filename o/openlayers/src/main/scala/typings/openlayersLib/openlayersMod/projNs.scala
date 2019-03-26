@@ -156,6 +156,18 @@ object projNs extends js.Object {
     def setWorldExtent(worldExtent: openlayersLib.openlayersMod.Extent): scala.Unit = js.native
   }
   
+  /**
+    * Projection units: `'degrees'`, `'ft'`, `'m'`, `'pixels'`, `'tile-pixels'` or
+    * `'us-ft'`.
+    */
+  /* Rewritten from type alias, can be one of: 
+    - openlayersLib.openlayersLibStrings.degrees
+    - openlayersLib.openlayersLibStrings.ft
+    - openlayersLib.openlayersLibStrings.m
+    - openlayersLib.openlayersLibStrings.pixels
+    - openlayersLib.openlayersLibStrings.`tile-pixels`
+    - openlayersLib.openlayersLibStrings.`us-ft`
+  */
   trait Units extends js.Object
   
   /**

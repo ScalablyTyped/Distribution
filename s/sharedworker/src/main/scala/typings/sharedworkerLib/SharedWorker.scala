@@ -7,6 +7,19 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SharedWorker")
 @js.native
+class SharedWorker protected ()
+  extends sharedworkerLib.SharedWorkerNs.SharedWorker {
+  /***
+    *
+    * @param {string} stringUrl    Pathname to JavaScript file
+    * @param {string} name         Name of the worker to execute
+    */
+  def this(stringUrl: java.lang.String) = this()
+  def this(stringUrl: java.lang.String, name: java.lang.String) = this()
+}
+
+@JSGlobal("SharedWorker")
+@js.native
 object SharedWorker
   extends /***
   *

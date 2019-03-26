@@ -8,6 +8,18 @@ import scala.scalajs.js.annotation._
 @JSImport("node-forge", "cipher")
 @js.native
 object cipherNs extends js.Object {
+  /* Rewritten from type alias, can be one of: 
+    - nodeDashForgeLib.nodeDashForgeLibStrings.`AES-ECB`
+    - nodeDashForgeLib.nodeDashForgeLibStrings.`AES-CBC`
+    - nodeDashForgeLib.nodeDashForgeLibStrings.`AES-CFB`
+    - nodeDashForgeLib.nodeDashForgeLibStrings.`AES-OFB`
+    - nodeDashForgeLib.nodeDashForgeLibStrings.`AES-CTR`
+    - nodeDashForgeLib.nodeDashForgeLibStrings.`AES-GCM`
+    - nodeDashForgeLib.nodeDashForgeLibStrings.`3DES-ECB`
+    - nodeDashForgeLib.nodeDashForgeLibStrings.`3DES-CBC`
+    - nodeDashForgeLib.nodeDashForgeLibStrings.`DES-ECB`
+    - nodeDashForgeLib.nodeDashForgeLibStrings.`DES-CBC`
+  */
   trait Algorithm extends js.Object
   
   @js.native

@@ -20,11 +20,39 @@ object jsPlumbNs extends js.Object {
     var y: scala.Double
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - jsplumbLib.jsplumbLibStrings.Assign
+    - jsplumbLib.jsplumbLibStrings.AutoDefault
+    - jsplumbLib.jsplumbLibStrings.Bottom
+    - jsplumbLib.jsplumbLibStrings.BottomCenter
+    - jsplumbLib.jsplumbLibStrings.BottomLeft
+    - jsplumbLib.jsplumbLibStrings.BottomRight
+    - jsplumbLib.jsplumbLibStrings.Center
+    - jsplumbLib.jsplumbLibStrings.Continuous
+    - jsplumbLib.jsplumbLibStrings.ContinuousBottom
+    - jsplumbLib.jsplumbLibStrings.ContinuousLeft
+    - jsplumbLib.jsplumbLibStrings.ContinuousRight
+    - jsplumbLib.jsplumbLibStrings.ContinuousTop
+    - jsplumbLib.jsplumbLibStrings.Left
+    - jsplumbLib.jsplumbLibStrings.LeftMiddle
+    - jsplumbLib.jsplumbLibStrings.Perimeter
+    - jsplumbLib.jsplumbLibStrings.Right
+    - jsplumbLib.jsplumbLibStrings.RightMiddle
+    - jsplumbLib.jsplumbLibStrings.Top
+    - jsplumbLib.jsplumbLibStrings.TopCenter
+    - jsplumbLib.jsplumbLibStrings.TopLeft
+    - jsplumbLib.jsplumbLibStrings.TopRight
+  */
   trait AnchorId extends js.Object
   
   /* -------------------------------------------- ANCHORS -------------------------------------------------------- */
   trait AnchorOptions extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - jsplumbLib.jsplumbLibNumbers.`-1`
+    - jsplumbLib.jsplumbLibNumbers.`0`
+    - jsplumbLib.jsplumbLibNumbers.`1`
+  */
   trait AnchorOrientationHint extends js.Object
   
   trait ArrowOverlayOptions extends OverlayOptions {
@@ -219,6 +247,12 @@ object jsPlumbNs extends js.Object {
   
   trait Overlay extends js.Object
   
+  /* Rewritten from type alias, can be one of: 
+    - jsplumbLib.jsplumbLibStrings.Label
+    - jsplumbLib.jsplumbLibStrings.Arrow
+    - jsplumbLib.jsplumbLibStrings.PlainArrow
+    - jsplumbLib.jsplumbLibStrings.Custom
+  */
   trait OverlayId extends js.Object
   
   /* --------------------------------------- OVERLAYS ------------------------------------------------------------- */
@@ -538,12 +572,25 @@ object jsPlumbNs extends js.Object {
   def revalidate(el: stdLib.Element): scala.Unit = js.native
   type AnchorSpec = AnchorId | (js.Tuple2[AnchorId, AnchorOptions])
   type ConnectionId = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - jsplumbLib.jsplumbLibStrings.Bezier
+    - jsplumbLib.jsplumbLibStrings.StateMachine
+    - jsplumbLib.jsplumbLibStrings.Flowchart
+    - jsplumbLib.jsplumbLibStrings.Straight
+    - UserDefinedConnectorId
+  */
   type ConnectorId = _ConnectorId | UserDefinedConnectorId
   type ConnectorSpec = ConnectorId | (js.Tuple2[ConnectorId, ConnectorOptions])
   type ElementGroupRef = ElementId | stdLib.Element | js.Array[ElementId] | js.Array[stdLib.Element]
   type ElementId = java.lang.String
   type ElementRef = ElementId | stdLib.Element
   /* -------------------------------------------- ENDPOINTS ------------------------------------------------------ */
+  /* Rewritten from type alias, can be one of: 
+    - jsplumbLib.jsplumbLibStrings.Rectangle
+    - jsplumbLib.jsplumbLibStrings.Dot
+    - jsplumbLib.jsplumbLibStrings.Blank
+    - UserDefinedEndpointId
+  */
   type EndpointId = _EndpointId | UserDefinedEndpointId
   type EndpointSpec = EndpointId | (js.Tuple2[EndpointId, EndpointOptions])
   type OverlaySpec = OverlayId | (js.Tuple2[OverlayId, OverlayOptions])

@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SingleSelectListBox")
 @js.native
+class SingleSelectListBoxCls protected () extends SingleSelectListBox {
+  def this(domElement: stdLib.HTMLElement) = this()
+  def this(domElement: stdLib.HTMLElement, options: ListBoxSettings) = this()
+}
+
+@JSGlobal("SingleSelectListBox")
+@js.native
 object SingleSelectListBox
   extends org.scalablytyped.runtime.Instantiable1[/* domElement */ stdLib.HTMLElement, SingleSelectListBox]
      with org.scalablytyped.runtime.Instantiable2[

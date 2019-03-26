@@ -201,3 +201,18 @@ trait Date extends _IDBValidKey {
   def toUTCString(): java.lang.String = js.native
 }
 
+@JSGlobal("Date")
+@js.native
+class DateCls () extends Date {
+  def this(value: java.lang.String) = this()
+  def this(value: scala.Double) = this()
+  def this(value: Date) = this()
+  def this(vd: VarDate) = this()
+  def this(year: scala.Double, month: scala.Double) = this()
+  def this(year: scala.Double, month: scala.Double, date: scala.Double) = this()
+  def this(year: scala.Double, month: scala.Double, date: scala.Double, hours: scala.Double) = this()
+  def this(year: scala.Double, month: scala.Double, date: scala.Double, hours: scala.Double, minutes: scala.Double) = this()
+  def this(year: scala.Double, month: scala.Double, date: scala.Double, hours: scala.Double, minutes: scala.Double, seconds: scala.Double) = this()
+  def this(year: scala.Double, month: scala.Double, date: scala.Double, hours: scala.Double, minutes: scala.Double, seconds: scala.Double, ms: scala.Double) = this()
+}
+

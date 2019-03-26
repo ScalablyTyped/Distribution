@@ -12,6 +12,27 @@ trait SVGFEMergeNodeElement extends SVGElement {
 
 @JSGlobal("SVGFEMergeNodeElement")
 @js.native
+class SVGFEMergeNodeElementCls () extends SVGFEMergeNodeElement {
+  /* CompleteClass */
+  override val assignedSlot: HTMLSlotElement | scala.Null = js.native
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val nextElementSibling: Element | scala.Null = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val previousElementSibling: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val style: CSSStyleDeclaration = js.native
+}
+
+@JSGlobal("SVGFEMergeNodeElement")
+@js.native
 object SVGFEMergeNodeElement
   extends org.scalablytyped.runtime.Instantiable0[SVGFEMergeNodeElement]
 

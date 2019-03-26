@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'classes' | never> ]: react.react.HTMLAttributes<std.HTMLElement>[P]} */ trait BreadcrumbsProps
+- Dropped {[ P in std.Exclude<keyof react.react.React.HTMLAttributes<std.HTMLElement>, 'classes' | never> ]: react.react.React.HTMLAttributes<std.HTMLElement>[P]} */ trait BreadcrumbsProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BreadcrumbsClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var itemsAfterCollapse: js.UndefOr[scala.Boolean] = js.undefined

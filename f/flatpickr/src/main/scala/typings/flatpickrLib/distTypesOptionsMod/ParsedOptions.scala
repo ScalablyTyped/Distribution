@@ -32,7 +32,7 @@ trait ParsedOptions extends js.Object {
   var enable: js.Array[DateLimit[stdLib.Date]]
   var enableSeconds: scala.Boolean
   var enableTime: scala.Boolean
-  var formatDate: js.UndefOr[js.Any] = js.undefined
+  var formatDate: js.UndefOr[scala.Nothing] = js.undefined
   var hourIncrement: scala.Double
   var ignoredFocusElements: js.Array[stdLib.HTMLElement]
   var `inline`: scala.Boolean
@@ -136,7 +136,7 @@ object ParsedOptions {
     _minTime: stdLib.Date = null,
     appendTo: stdLib.HTMLElement = null,
     defaultDate: stdLib.Date | js.Array[stdLib.Date] = null,
-    formatDate: js.Any = null,
+    formatDate: js.UndefOr[scala.Nothing] = js.undefined,
     maxDate: stdLib.Date = null,
     maxTime: stdLib.Date = null,
     minDate: stdLib.Date = null,
@@ -152,7 +152,7 @@ object ParsedOptions {
     if (_minTime != null) __obj.updateDynamic("_minTime")(_minTime)
     if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
     if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate.asInstanceOf[js.Any])
-    if (formatDate != null) __obj.updateDynamic("formatDate")(formatDate)
+    if (!js.isUndefined(formatDate)) __obj.updateDynamic("formatDate")(formatDate)
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
     if (maxTime != null) __obj.updateDynamic("maxTime")(maxTime)
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)

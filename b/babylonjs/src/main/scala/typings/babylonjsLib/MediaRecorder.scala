@@ -18,6 +18,33 @@ trait MediaRecorder extends js.Object {
   def stop(): scala.Unit
 }
 
+@JSGlobal("MediaRecorder")
+@js.native
+class MediaRecorderCls protected () extends MediaRecorder {
+  /**
+    * Creates a new MediaRecorder.
+    * @param stream Defines the stream to record.
+    * @param options Defines the options for the recorder available in the type MediaRecorderOptions.
+    */
+  def this(stream: stdLib.MediaStream) = this()
+  def this(stream: stdLib.MediaStream, options: MediaRecorderOptions) = this()
+  /** Event raised when a new chunk  of data is available and should be tracked. */
+  /* CompleteClass */
+  override def ondataavailable(event: stdLib.Event): scala.Unit = js.native
+  /** Event raised when an error arised. */
+  /* CompleteClass */
+  override def onerror(event: stdLib.ErrorEvent): scala.Unit = js.native
+  /** Event raised when the recording stops. */
+  /* CompleteClass */
+  override def onstop(event: stdLib.Event): scala.Unit = js.native
+  /** Starts recording */
+  /* CompleteClass */
+  override def start(timeSlice: scala.Double): scala.Unit = js.native
+  /** Stops recording */
+  /* CompleteClass */
+  override def stop(): scala.Unit = js.native
+}
+
 object MediaRecorder {
   @scala.inline
   def apply(

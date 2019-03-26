@@ -11,6 +11,17 @@ package object victoryMod {
     * Category prop type
     */
   type CategoryPropType = js.Array[java.lang.String] | victoryLib.Anon_XYArray
+  /* Rewritten from type alias, can be one of: 
+    - victoryLib.victoryLibStrings.greyscale
+    - victoryLib.victoryLibStrings.qualitative
+    - victoryLib.victoryLibStrings.heatmap
+    - victoryLib.victoryLibStrings.warm
+    - victoryLib.victoryLibStrings.cool
+    - victoryLib.victoryLibStrings.red
+    - victoryLib.victoryLibStrings.green
+    - victoryLib.victoryLibStrings.blue
+    - js.Array[java.lang.String]
+  */
   type ColorScalePropType = _ColorScalePropType | js.Array[java.lang.String]
   /**
     * Data getter property type
@@ -20,6 +31,11 @@ package object victoryMod {
     * Domain padding
     */
   type DomainPaddingPropType = scala.Double | victoryLib.Anon_XYNumber
+  /* Rewritten from type alias, can be one of: 
+    - DomainTuple
+    - victoryLib.Anon_XY
+    - victoryLib.Anon_XYDomainTuple
+  */
   type DomainPropType = _DomainPropType | DomainTuple
   /**
     * Data domain type

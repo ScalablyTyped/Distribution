@@ -135,3 +135,9 @@ trait TreeCollection extends js.Object {
   def validate(id: java.lang.String): scala.Boolean = js.native
 }
 
+@JSImport("webix", "TreeCollection")
+@js.native
+class TreeCollectionCls () extends TreeCollection {
+  def this(config: TreeCollectionConfig) = this()
+}
+

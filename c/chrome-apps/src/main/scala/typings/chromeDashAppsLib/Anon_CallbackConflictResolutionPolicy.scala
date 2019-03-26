@@ -46,7 +46,7 @@ trait Anon_CallbackConflictResolutionPolicy extends js.Object {
     * (for example, when the sync is temporarily disabled due to network or authentication error).
     * @see ServiceStatus
     */
-  val onServiceStatusChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* detail */ Anon_DescriptionStateExclude, scala.Unit]] = js.native
+  val onServiceStatusChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* detail */ Anon_DescriptionState, scala.Unit]] = js.native
   /**
     * Gets the current conflict resolution policy.
     * @see ConflictResolutionPolicy

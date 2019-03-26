@@ -64,3 +64,9 @@ trait DirectLineMeasurement3DViewModel extends Accessor {
   def newMeasurement(): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.DirectLineMeasurement3DViewModel")
+@js.native
+class DirectLineMeasurement3DViewModelCls () extends DirectLineMeasurement3DViewModel {
+  def this(properties: DirectLineMeasurement3DViewModelProperties) = this()
+}
+

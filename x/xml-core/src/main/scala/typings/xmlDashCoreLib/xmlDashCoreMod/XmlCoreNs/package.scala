@@ -10,5 +10,13 @@ package object XmlCoreNs {
   // utils
   type SelectNodes = js.Function2[/* node */ stdLib.Node, /* xpath */ java.lang.String, js.Array[stdLib.Node]]
   type XmlAttributeType[T] = XmlSchemaItem[T]
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - xmlDashCoreLib.xmlDashCoreLibStrings.utf8
+    - xmlDashCoreLib.xmlDashCoreLibStrings.binary
+    - xmlDashCoreLib.xmlDashCoreLibStrings.hex
+    - xmlDashCoreLib.xmlDashCoreLibStrings.base64
+    - xmlDashCoreLib.xmlDashCoreLibStrings.base64url
+  */
   type XmlBufferEncoding = _XmlBufferEncoding | java.lang.String
 }

@@ -97,6 +97,14 @@ trait Animation extends EventTarget {
 
 @JSGlobal("Animation")
 @js.native
+class AnimationCls () extends Animation {
+  def this(effect: AnimationEffect) = this()
+  def this(effect: scala.Null, timeline: AnimationTimeline) = this()
+  def this(effect: AnimationEffect, timeline: AnimationTimeline) = this()
+}
+
+@JSGlobal("Animation")
+@js.native
 object Animation
   extends org.scalablytyped.runtime.Instantiable0[Animation]
      with org.scalablytyped.runtime.Instantiable2[

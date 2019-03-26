@@ -14,3 +14,17 @@ trait Task extends js.Object {
   def run(options: TaskRunOptions): js.Promise[scala.Unit] = js.native
 }
 
+@JSImport("@pulumi/cloud/service", "Task")
+@js.native
+class TaskCls protected () extends Task {
+  /**
+    * Construct a new Task, which is a Container that can be run many times as individual tasks.
+    *
+    * @param name The unique name of the task.
+    * @param container The container specification.
+    * @param opts A bag of options that controls how this resource behaves.
+    */
+  def this(name: java.lang.String, container: Container) = this()
+  def this(name: java.lang.String, container: Container, opts: atPulumiPulumiLib.resourceMod.ResourceOptions) = this()
+}
+

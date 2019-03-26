@@ -243,6 +243,11 @@ object RDSDataServiceNs extends js.Object {
   type SqlStatementResults = js.Array[SqlStatementResult]
   type String = java.lang.String
   type _Blob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsRdsdataserviceMod.Blob | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2018-08-01`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
 }
 

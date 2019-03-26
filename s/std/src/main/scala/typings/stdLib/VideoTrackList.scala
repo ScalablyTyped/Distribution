@@ -124,6 +124,10 @@ trait VideoTrackList
 
 @JSGlobal("VideoTrackList")
 @js.native
+class VideoTrackListCls () extends VideoTrackList
+
+@JSGlobal("VideoTrackList")
+@js.native
 object VideoTrackList
   extends org.scalablytyped.runtime.Instantiable0[VideoTrackList]
 

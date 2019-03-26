@@ -13,6 +13,24 @@ trait StatusCodeError
   var statusCode: scala.Double
 }
 
+@JSImport("request-promise/errors", "StatusCodeError")
+@js.native
+class StatusCodeErrorCls protected () extends StatusCodeError {
+  def this(statusCode: scala.Double, body: js.Any, options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options, response: nodeLib.httpMod.IncomingMessage) = this()
+  /* CompleteClass */
+  override var error: js.Any = js.native
+  /* CompleteClass */
+  override var message: java.lang.String = js.native
+  /* CompleteClass */
+  override var name: java.lang.String = js.native
+  /* CompleteClass */
+  override var options: requestDashPromiseLib.requestDashPromiseMod.requestPromiseNs.Options = js.native
+  /* CompleteClass */
+  override var response: nodeLib.httpMod.IncomingMessage = js.native
+  /* CompleteClass */
+  override var statusCode: scala.Double = js.native
+}
+
 object StatusCodeError {
   @scala.inline
   def apply(

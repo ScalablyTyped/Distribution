@@ -11,8 +11,11 @@ class OutgoingRequest protected () extends js.Object {
   def this(method: java.lang.String, ruri: java.lang.String, ua: sipDotJsLib.typesUaMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String]) = this()
   def this(method: java.lang.String, ruri: sipDotJsLib.typesUriMod.URI, ua: sipDotJsLib.typesUaMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String]) = this()
   def this(method: java.lang.String, ruri: java.lang.String, ua: sipDotJsLib.typesUaMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: java.lang.String) = this()
+  def this(method: java.lang.String, ruri: java.lang.String, ua: sipDotJsLib.typesUaMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: sipDotJsLib.Anon_Body) = this()
   def this(method: java.lang.String, ruri: sipDotJsLib.typesUriMod.URI, ua: sipDotJsLib.typesUaMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: java.lang.String) = this()
-  var body: java.lang.String | js.Any = js.native
+  def this(method: java.lang.String, ruri: sipDotJsLib.typesUriMod.URI, ua: sipDotJsLib.typesUaMod.UA, params: js.Any, extraHeaders: js.Array[java.lang.String], body: sipDotJsLib.Anon_Body) = this()
+  var body: js.UndefOr[java.lang.String | sipDotJsLib.Anon_Body] = js.native
+  var branch: js.UndefOr[java.lang.String] = js.native
   var callId: java.lang.String = js.native
   var cseq: scala.Double = js.native
   var dialog: js.UndefOr[sipDotJsLib.typesDialogsMod.Dialog] = js.native
@@ -22,14 +25,17 @@ class OutgoingRequest protected () extends js.Object {
   var method: java.lang.String = js.native
   var ruri: java.lang.String | sipDotJsLib.typesUriMod.URI = js.native
   var to: js.UndefOr[sipDotJsLib.typesNameDashAddrDashHeaderMod.NameAddrHeader] = js.native
+  var transaction: js.UndefOr[sipDotJsLib.typesTransactionsMod.ClientTransaction] = js.native
   var `type`: sipDotJsLib.typesEnumsMod.TypeStrings = js.native
   var ua: sipDotJsLib.typesUaMod.UA = js.native
+  def cancel(): scala.Unit = js.native
+  def cancel(reason: java.lang.String): scala.Unit = js.native
   def cancel(reason: java.lang.String, extraHeaders: js.Array[java.lang.String]): scala.Unit = js.native
-  def cancel(reason: js.UndefOr[scala.Nothing], extraHeaders: js.Array[java.lang.String]): scala.Unit = js.native
   def getHeader(name: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def getHeaders(name: java.lang.String): js.Array[java.lang.String] = js.native
   def hasHeader(name: java.lang.String): scala.Boolean = js.native
   def setHeader(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def setHeader(name: java.lang.String, value: js.Array[java.lang.String]): scala.Unit = js.native
+  def setViaHeader(branchParameter: java.lang.String, transport: sipDotJsLib.typesTransportMod.Transport): scala.Unit = js.native
 }
 

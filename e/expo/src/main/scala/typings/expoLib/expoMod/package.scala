@@ -9,6 +9,11 @@ package object expoMod {
   type Axis = scala.Double
   type BarCodeScannedCallback = js.Function1[/* result */ expoLib.Anon_Data, scala.Unit]
   type Md5 = java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - RequireSource
+    - expoLib.Anon_Uri
+    - Asset
+  */
   type PlaybackSource = _PlaybackSource | RequireSource
   type RequireSource = reactDashNativeLib.reactDashNativeMod.ImageRequireSource
   type ResizeModeContain = expoLib.expoLibStrings.contain

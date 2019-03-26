@@ -43,7 +43,10 @@ object ^ extends js.Object {
   @JSName("create")
   def create_lcov(name: istanbulDashReportsLib.istanbulDashReportsLibStrings.lcov): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
   @JSName("create")
-  def create_lcov(name: istanbulDashReportsLib.istanbulDashReportsLibStrings.lcov, options: stdLib.Partial[_]): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
+  def create_lcov(
+    name: istanbulDashReportsLib.istanbulDashReportsLibStrings.lcov,
+    options: stdLib.Partial[scala.Nothing]
+  ): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
   @JSName("create")
   def create_lcovonly(name: istanbulDashReportsLib.istanbulDashReportsLibStrings.lcovonly): istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Visitor[istanbulDashLibDashReportLib.istanbulDashLibDashReportMod.Node] = js.native
   @JSName("create")

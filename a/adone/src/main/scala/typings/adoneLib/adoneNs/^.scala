@@ -48,6 +48,7 @@ object ^ extends js.Object {
     /* repeated */ js.Any, 
     nodeLib.NodeJSNs.Timeout
   ] = js.native
+  /* Extracted nested Instantiables into classes in stdNs */
   val std: adoneLib.Anon_Assert = js.native
   val tag: adoneLib.adoneNs.INs.Tag = js.native
   def definePrivate(modules: js.Object, obj: js.Object): js.Object = js.native

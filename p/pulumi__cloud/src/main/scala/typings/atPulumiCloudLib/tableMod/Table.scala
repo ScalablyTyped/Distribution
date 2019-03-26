@@ -62,3 +62,20 @@ trait Table extends js.Object {
   def update(query: js.Object, updates: js.Object): js.Promise[scala.Unit] = js.native
 }
 
+@JSImport("@pulumi/cloud/table", "Table")
+@js.native
+class TableCls protected () extends Table {
+  /**
+    * Creates a new Table.
+    *
+    * @param name A unique name for the table.
+    * @param primaryKey An optional primary key name.
+    * @param primaryKeyType An optional primary key type.
+    * @param opts A bag of options that controls how this resource behaves.
+    */
+  def this(name: java.lang.String) = this()
+  def this(name: java.lang.String, primaryKey: atPulumiPulumiLib.outputMod.Input[java.lang.String]) = this()
+  def this(name: java.lang.String, primaryKey: atPulumiPulumiLib.outputMod.Input[java.lang.String], primaryKeyType: atPulumiPulumiLib.outputMod.Input[PrimaryKeyType]) = this()
+  def this(name: java.lang.String, primaryKey: atPulumiPulumiLib.outputMod.Input[java.lang.String], primaryKeyType: atPulumiPulumiLib.outputMod.Input[PrimaryKeyType], opts: atPulumiPulumiLib.resourceMod.ResourceOptions) = this()
+}
+

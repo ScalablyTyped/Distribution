@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation._
 package object typesSpecDataMod {
   type Data = SourceData | ValuesData | UrlData | BaseData
   type Datum = js.Any
+  /* Rewritten from type alias, can be one of: 
+    - FormatJSON
+    - FormatSV
+    - FormatDSV
+    - FormatTopoJSON
+    - vegaDashTypingsLib.Anon_Parse
+  */
   type Format = _Format | FormatTopoJSON
   type FormatTopoJSON = vegaDashTypingsLib.Anon_Property with (vegaDashTypingsLib.Anon_Feature | vegaDashTypingsLib.Anon_Mesh)
   type Parse = vegaDashTypingsLib.vegaDashTypingsLibStrings.auto | (org.scalablytyped.runtime.StringDictionary[DataType | java.lang.String])

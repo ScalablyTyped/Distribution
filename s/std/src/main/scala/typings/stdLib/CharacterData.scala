@@ -20,6 +20,23 @@ trait CharacterData
 
 @JSGlobal("CharacterData")
 @js.native
+class CharacterDataCls () extends CharacterData {
+  /**
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val nextElementSibling: Element | scala.Null = js.native
+  /**
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
+  /* CompleteClass */
+  override val previousElementSibling: Element | scala.Null = js.native
+}
+
+@JSGlobal("CharacterData")
+@js.native
 object CharacterData
   extends org.scalablytyped.runtime.Instantiable0[CharacterData]
 

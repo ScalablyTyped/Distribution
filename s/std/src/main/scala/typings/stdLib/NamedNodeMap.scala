@@ -24,6 +24,10 @@ trait NamedNodeMap
 
 @JSGlobal("NamedNodeMap")
 @js.native
+class NamedNodeMapCls () extends NamedNodeMap
+
+@JSGlobal("NamedNodeMap")
+@js.native
 object NamedNodeMap
   extends org.scalablytyped.runtime.Instantiable0[NamedNodeMap]
 

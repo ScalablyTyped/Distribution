@@ -31,6 +31,10 @@ trait SqlTransaction extends js.Object {
 
 @JSGlobal("SqlTransaction")
 @js.native
+class SqlTransactionCls () extends SqlTransaction
+
+@JSGlobal("SqlTransaction")
+@js.native
 object SqlTransaction
   extends org.scalablytyped.runtime.Instantiable0[SqlTransaction]
 

@@ -55,6 +55,12 @@ package object awsDashLambdaMod {
   type S3Handler = Handler[S3Event, scala.Unit]
   type SNSHandler = Handler[SNSEvent, scala.Unit]
   type SQSHandler = Handler[SQSEvent, scala.Unit]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashLambdaLib.awsDashLambdaLibStrings.String
+    - awsDashLambdaLib.awsDashLambdaLibStrings.Number
+    - awsDashLambdaLib.awsDashLambdaLibStrings.Binary
+    - java.lang.String
+  */
   type SQSMessageAttributeDataType = _SQSMessageAttributeDataType | java.lang.String
   type ScheduledHandler = Handler[ScheduledEvent, scala.Unit]
   type Statement = BaseStatement with StatementAction with (StatementResource | StatementPrincipal)

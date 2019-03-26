@@ -34,7 +34,7 @@ trait ojTreemapEventMap[K, D]
     atOracleOraclejetLib.atOracleOraclejetLibStrings.dim | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
   ]
   var hoverBehaviorDelayChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double]
-  var isolatedNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var isolatedNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var layoutChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.sliceAndDiceHorizontal | atOracleOraclejetLib.atOracleOraclejetLibStrings.sliceAndDiceVertical | atOracleOraclejetLib.atOracleOraclejetLibStrings.squarified
   ]
@@ -45,7 +45,7 @@ trait ojTreemapEventMap[K, D]
   ]
   var ojBeforeDrill: atOracleOraclejetLib.ojtreemapMod.ojTreemapNs.ojBeforeDrill
   var ojDrill: atOracleOraclejetLib.ojtreemapMod.ojTreemapNs.ojDrill
-  var rootNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_]
+  var rootNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing]
   var selectionChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[js.Array[_]]
   var selectionModeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
     atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.single | atOracleOraclejetLib.atOracleOraclejetLibStrings.multiple
@@ -126,7 +126,7 @@ object ojTreemapEventMap {
     hoverBehaviorDelayChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Double],
     input: stdLib.Event,
     invalid: stdLib.Event,
-    isolatedNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    isolatedNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     keydown: stdLib.KeyboardEvent,
     keypress: stdLib.KeyboardEvent,
     keyup: stdLib.KeyboardEvent,
@@ -169,7 +169,7 @@ object ojTreemapEventMap {
     ratechange: stdLib.Event,
     reset: stdLib.Event,
     resize: stdLib.UIEvent,
-    rootNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[_],
+    rootNodeChanged: atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[scala.Nothing],
     scroll: stdLib.UIEvent,
     securitypolicyviolation: stdLib.SecurityPolicyViolationEvent,
     seeked: stdLib.Event,

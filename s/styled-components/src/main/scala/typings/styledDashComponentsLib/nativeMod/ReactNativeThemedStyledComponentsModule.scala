@@ -37,60 +37,81 @@ trait ReactNativeThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.O
   ): styledDashComponentsLib.styledDashComponentsMod.FlattenSimpleInterpolation = js.native
   def css(
     first: styledDashComponentsLib.styledDashComponentsMod.InterpolationFunction[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[js.Object, AnyIfEmpty[AnyIfEmpty[T]]]
+      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
+        js.Object, 
+        styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]
+      ]
     ],
     interpolations: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[js.Object, AnyIfEmpty[AnyIfEmpty[T]]]
+      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
+        js.Object, 
+        styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]
+      ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.FlattenInterpolation[
-    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[js.Object, AnyIfEmpty[AnyIfEmpty[T]]]
+    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
+      js.Object, 
+      styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]
+    ]
   ] = js.native
   @JSName("css")
   def css_FlattenInterpolation(
     first: stdLib.TemplateStringsArray,
     interpolations: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[js.Object, AnyIfEmpty[AnyIfEmpty[T]]]
+      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
+        js.Object, 
+        styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]
+      ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.FlattenInterpolation[
-    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[js.Object, AnyIfEmpty[AnyIfEmpty[T]]]
+    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
+      js.Object, 
+      styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]
+    ]
   ] = js.native
   @JSName("css")
   def css_FlattenInterpolation(
     first: styledDashComponentsLib.styledDashComponentsMod.CSSObject,
     interpolations: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[js.Object, AnyIfEmpty[AnyIfEmpty[T]]]
+      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
+        js.Object, 
+        styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]
+      ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.FlattenInterpolation[
-    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[js.Object, AnyIfEmpty[AnyIfEmpty[T]]]
+    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[
+      js.Object, 
+      styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]
+    ]
   ] = js.native
   @JSName("css")
   def css_PObject[P /* <: js.Object */](
     first: styledDashComponentsLib.styledDashComponentsMod.InterpolationFunction[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, AnyIfEmpty[AnyIfEmpty[T]]]
+      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]]
     ],
     interpolations: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, AnyIfEmpty[AnyIfEmpty[T]]]
+      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.FlattenInterpolation[
-    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, AnyIfEmpty[AnyIfEmpty[T]]]
+    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]]
   ] = js.native
   @JSName("css")
   def css_PObjectFlattenInterpolation[P /* <: js.Object */](
     first: stdLib.TemplateStringsArray,
     interpolations: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, AnyIfEmpty[AnyIfEmpty[T]]]
+      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.FlattenInterpolation[
-    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, AnyIfEmpty[AnyIfEmpty[T]]]
+    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]]
   ] = js.native
   @JSName("css")
   def css_PObjectFlattenInterpolation[P /* <: js.Object */](
     first: styledDashComponentsLib.styledDashComponentsMod.CSSObject,
     interpolations: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
-      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, AnyIfEmpty[AnyIfEmpty[T]]]
+      styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.FlattenInterpolation[
-    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, AnyIfEmpty[AnyIfEmpty[T]]]
+    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[P, styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]]
   ] = js.native
   def default[C /* <: styledDashComponentsLib.styledDashComponentsMod.AnyStyledComponent */](component: C): styledDashComponentsLib.styledDashComponentsMod.ThemedStyledFunction[
     styledDashComponentsLib.styledDashComponentsMod.StyledComponentInnerComponent[C], 
@@ -111,7 +132,10 @@ trait ReactNativeThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.O
   // not allow any component that accepts _more_ than theme as a prop
   component: C
   ): reactLib.reactMod.ReactNs.ForwardRefExoticComponent[
-    styledDashComponentsLib.WithOptionalTheme[reactLib.reactMod.ReactNs.ComponentPropsWithRef[C], AnyIfEmpty[AnyIfEmpty[T]]]
+    styledDashComponentsLib.WithOptionalTheme[
+      reactLib.reactMod.ReactNs.ComponentPropsWithRef[C], 
+      styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]
+    ]
   ] = js.native
 }
 

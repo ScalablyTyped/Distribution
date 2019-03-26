@@ -1047,6 +1047,14 @@ object DataPipelineNs extends js.Object {
   
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.EQ
+    - awsDashSdkLib.awsDashSdkLibStrings.REF_EQ
+    - awsDashSdkLib.awsDashSdkLibStrings.LE
+    - awsDashSdkLib.awsDashSdkLibStrings.GE
+    - awsDashSdkLib.awsDashSdkLibStrings.BETWEEN
+    - java.lang.String
+  */
   type OperatorType = _OperatorType | java.lang.String
   type ParameterAttributeList = js.Array[ParameterAttribute]
   type ParameterObjectList = js.Array[ParameterObject]
@@ -1054,9 +1062,20 @@ object DataPipelineNs extends js.Object {
   type PipelineDescriptionList = js.Array[PipelineDescription]
   type PipelineObjectList = js.Array[PipelineObject]
   type SelectorList = js.Array[Selector]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.FINISHED
+    - awsDashSdkLib.awsDashSdkLibStrings.FAILED
+    - awsDashSdkLib.awsDashSdkLibStrings.FALSE
+    - java.lang.String
+  */
   type TaskStatus = _TaskStatus | java.lang.String
   type ValidationErrors = js.Array[ValidationError]
   type ValidationWarnings = js.Array[ValidationWarning]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.`2012-10-29`
+    - awsDashSdkLib.awsDashSdkLibStrings.latest
+    - java.lang.String
+  */
   type apiVersion = _apiVersion | java.lang.String
   type attributeNameString = java.lang.String
   type attributeValueString = java.lang.String

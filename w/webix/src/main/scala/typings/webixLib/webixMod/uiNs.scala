@@ -61,6 +61,10 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDestruct
+  */
   trait abslayoutEventName extends js.Object
   
   @js.native
@@ -121,6 +125,12 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterCollapse
+    - webixLib.webixLibStrings.onAfterExpand
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDestruct
+  */
   trait accordionEventName extends js.Object
   
   @js.native
@@ -182,6 +192,30 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait accordionitemEventName extends js.Object
   
   @js.native
@@ -221,6 +255,23 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait barcodeEventName extends js.Object
   
   @js.native
@@ -272,6 +323,10 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDestruct
+  */
   trait baselayoutEventName extends js.Object
   
   @js.native
@@ -335,6 +390,10 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDestruct
+  */
   trait baseviewEventName extends js.Object
   
   @js.native
@@ -390,6 +449,23 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait bulletEventName extends js.Object
   
   @js.native
@@ -470,6 +546,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait buttonEventName extends js.Object
   
   @js.native
@@ -561,6 +658,42 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDateSelect
+    - webixLib.webixLibStrings.onAfterMonthChange
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterZoom
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDateSelect
+    - webixLib.webixLibStrings.onBeforeMonthChange
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeZoom
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDateClear
+    - webixLib.webixLibStrings.onDateSelect
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTodaySet
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait calendarEventName extends js.Object
   
   @js.native
@@ -615,6 +748,24 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait carouselEventName extends js.Object
   
   @js.native
@@ -782,6 +933,43 @@ object uiNs extends js.Object {
     var yValue: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait chartEventName extends js.Object
   
   @js.native
@@ -894,6 +1082,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait checkboxEventName extends js.Object
   
   @js.native
@@ -983,6 +1192,29 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeShow
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHide
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValueSuggest
+    - webixLib.webixLibStrings.onViewMove
+    - webixLib.webixLibStrings.onViewMoveEnd
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait checksuggestEventName extends js.Object
   
   @js.native
@@ -1036,6 +1268,26 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSelect
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait colorboardEventName extends js.Object
   
   @js.native
@@ -1152,6 +1404,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait colorpickerEventName extends js.Object
   
   @js.native
@@ -1270,6 +1543,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait comboEventName extends js.Object
   
   @js.native
@@ -1335,6 +1629,28 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeShow
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHide
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewMove
+    - webixLib.webixLibStrings.onViewMoveEnd
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait contextEventName extends js.Object
   
   @js.native
@@ -1608,6 +1924,64 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDropOrder
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDropOrder
+    - webixLib.webixLibStrings.onBeforeDropOut
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeShow
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHide
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onItemRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMenuItemClick
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onPaste
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewMove
+    - webixLib.webixLibStrings.onViewMoveEnd
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait contextmenuEventName extends js.Object
   
   @js.native
@@ -1724,6 +2098,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait counterEventName extends js.Object
   
   @js.native
@@ -1807,6 +2202,11 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+  */
   trait dashboardEventName extends js.Object
   
   @js.native
@@ -1926,6 +2326,21 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onLoadError
+  */
   trait datalayoutEventName extends js.Object
   
   @js.native
@@ -2012,6 +2427,29 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeShow
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHide
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValueSuggest
+    - webixLib.webixLibStrings.onViewMove
+    - webixLib.webixLibStrings.onViewMoveEnd
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait datasuggestEventName extends js.Object
   
   @js.native
@@ -2444,6 +2882,97 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterAreaAdd
+    - webixLib.webixLibStrings.onAfterAreaRemove
+    - webixLib.webixLibStrings.onAfterBlockSelect
+    - webixLib.webixLibStrings.onAfterColumnDrop
+    - webixLib.webixLibStrings.onAfterColumnDropOrder
+    - webixLib.webixLibStrings.onAfterColumnHide
+    - webixLib.webixLibStrings.onAfterColumnShow
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDropOrder
+    - webixLib.webixLibStrings.onAfterEditStart
+    - webixLib.webixLibStrings.onAfterEditStop
+    - webixLib.webixLibStrings.onAfterFilter
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onAfterUnSelect
+    - webixLib.webixLibStrings.onAreaDrag
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeAreaAdd
+    - webixLib.webixLibStrings.onBeforeAreaRemove
+    - webixLib.webixLibStrings.onBeforeBlockSelect
+    - webixLib.webixLibStrings.onBeforeColumnDrag
+    - webixLib.webixLibStrings.onBeforeColumnDrop
+    - webixLib.webixLibStrings.onBeforeColumnDropOrder
+    - webixLib.webixLibStrings.onBeforeColumnHide
+    - webixLib.webixLibStrings.onBeforeColumnShow
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDropOrder
+    - webixLib.webixLibStrings.onBeforeDropOut
+    - webixLib.webixLibStrings.onBeforeEditStart
+    - webixLib.webixLibStrings.onBeforeEditStop
+    - webixLib.webixLibStrings.onBeforeFilter
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBeforeUnSelect
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onCheck
+    - webixLib.webixLibStrings.onCollectValues
+    - webixLib.webixLibStrings.onColumnResize
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onEditorChange
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHeaderClick
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLiveEdit
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onPaste
+    - webixLib.webixLibStrings.onResize
+    - webixLib.webixLibStrings.onRowResize
+    - webixLib.webixLibStrings.onScrollX
+    - webixLib.webixLibStrings.onScrollY
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onStructureLoad
+    - webixLib.webixLibStrings.onStructureUpdate
+    - webixLib.webixLibStrings.onSubViewClose
+    - webixLib.webixLibStrings.onSubViewCreate
+    - webixLib.webixLibStrings.onSubViewOpen
+    - webixLib.webixLibStrings.onSubViewRender
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait datatableEventName extends js.Object
   
   @js.native
@@ -2666,6 +3195,57 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDropOrder
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDropOrder
+    - webixLib.webixLibStrings.onBeforeDropOut
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onItemRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait dataviewEventName extends js.Object
   
   @js.native
@@ -2788,6 +3368,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait datepickerEventName extends js.Object
   
   @js.native
@@ -2838,6 +3439,15 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterDateSelect
+    - webixLib.webixLibStrings.onBeforeDateSelect
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDateClear
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onTodaySet
+  */
   trait daterangeEventName extends js.Object
   
   @js.native
@@ -2958,6 +3568,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait daterangepickerEventName extends js.Object
   
   @js.native
@@ -3043,6 +3674,29 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeShow
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHide
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValueSuggest
+    - webixLib.webixLibStrings.onViewMove
+    - webixLib.webixLibStrings.onViewMoveEnd
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait daterangesuggestEventName extends js.Object
   
   @js.native
@@ -3111,6 +3765,14 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onLoadError
+  */
   trait dbllistEventName extends js.Object
   
   @js.native
@@ -3505,6 +4167,97 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterAreaAdd
+    - webixLib.webixLibStrings.onAfterAreaRemove
+    - webixLib.webixLibStrings.onAfterBlockSelect
+    - webixLib.webixLibStrings.onAfterColumnDrop
+    - webixLib.webixLibStrings.onAfterColumnDropOrder
+    - webixLib.webixLibStrings.onAfterColumnHide
+    - webixLib.webixLibStrings.onAfterColumnShow
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDropOrder
+    - webixLib.webixLibStrings.onAfterEditStart
+    - webixLib.webixLibStrings.onAfterEditStop
+    - webixLib.webixLibStrings.onAfterFilter
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onAfterUnSelect
+    - webixLib.webixLibStrings.onAreaDrag
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeAreaAdd
+    - webixLib.webixLibStrings.onBeforeAreaRemove
+    - webixLib.webixLibStrings.onBeforeBlockSelect
+    - webixLib.webixLibStrings.onBeforeColumnDrag
+    - webixLib.webixLibStrings.onBeforeColumnDrop
+    - webixLib.webixLibStrings.onBeforeColumnDropOrder
+    - webixLib.webixLibStrings.onBeforeColumnHide
+    - webixLib.webixLibStrings.onBeforeColumnShow
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDropOrder
+    - webixLib.webixLibStrings.onBeforeDropOut
+    - webixLib.webixLibStrings.onBeforeEditStart
+    - webixLib.webixLibStrings.onBeforeEditStop
+    - webixLib.webixLibStrings.onBeforeFilter
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBeforeUnSelect
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onCheck
+    - webixLib.webixLibStrings.onCollectValues
+    - webixLib.webixLibStrings.onColumnResize
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onEditorChange
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHeaderClick
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLiveEdit
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onPaste
+    - webixLib.webixLibStrings.onResize
+    - webixLib.webixLibStrings.onRowResize
+    - webixLib.webixLibStrings.onScrollX
+    - webixLib.webixLibStrings.onScrollY
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onStructureLoad
+    - webixLib.webixLibStrings.onStructureUpdate
+    - webixLib.webixLibStrings.onSubViewClose
+    - webixLib.webixLibStrings.onSubViewCreate
+    - webixLib.webixLibStrings.onSubViewOpen
+    - webixLib.webixLibStrings.onSubViewRender
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait excelviewerEventName extends js.Object
   
   @js.native
@@ -3541,6 +4294,23 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait fieldsetEventName extends js.Object
   
   @js.native
@@ -3731,6 +4501,82 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterBack
+    - webixLib.webixLibStrings.onAfterCreateFolder
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDeleteFile
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDynParse
+    - webixLib.webixLibStrings.onAfterEditFile
+    - webixLib.webixLibStrings.onAfterEditStop
+    - webixLib.webixLibStrings.onAfterFileUpload
+    - webixLib.webixLibStrings.onAfterHideTree
+    - webixLib.webixLibStrings.onAfterLevelDown
+    - webixLib.webixLibStrings.onAfterLevelUp
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterMarkCopy
+    - webixLib.webixLibStrings.onAfterMarkCut
+    - webixLib.webixLibStrings.onAfterMenu
+    - webixLib.webixLibStrings.onAfterModeChange
+    - webixLib.webixLibStrings.onAfterPasteFile
+    - webixLib.webixLibStrings.onAfterPathClick
+    - webixLib.webixLibStrings.onAfterRun
+    - webixLib.webixLibStrings.onAfterSearch
+    - webixLib.webixLibStrings.onAfterShowTree
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onAfterUploadDialog
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeBack
+    - webixLib.webixLibStrings.onBeforeCreateFolder
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDeleteFile
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDynLoad
+    - webixLib.webixLibStrings.onBeforeDynParse
+    - webixLib.webixLibStrings.onBeforeEditFile
+    - webixLib.webixLibStrings.onBeforeEditStop
+    - webixLib.webixLibStrings.onBeforeFileUpload
+    - webixLib.webixLibStrings.onBeforeHideTree
+    - webixLib.webixLibStrings.onBeforeLevelDown
+    - webixLib.webixLibStrings.onBeforeLevelUp
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeMarkCopy
+    - webixLib.webixLibStrings.onBeforeMarkCut
+    - webixLib.webixLibStrings.onBeforeMenu
+    - webixLib.webixLibStrings.onBeforeModeChange
+    - webixLib.webixLibStrings.onBeforePasteFile
+    - webixLib.webixLibStrings.onBeforeRequest
+    - webixLib.webixLibStrings.onBeforeRun
+    - webixLib.webixLibStrings.onBeforeSearch
+    - webixLib.webixLibStrings.onBeforeSearchRequest
+    - webixLib.webixLibStrings.onBeforeShowTree
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBeforeUploadDialog
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onComponentInit
+    - webixLib.webixLibStrings.onCopyError
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDynLoadError
+    - webixLib.webixLibStrings.onErrorResponse
+    - webixLib.webixLibStrings.onFolderSelect
+    - webixLib.webixLibStrings.onHideSearchResults
+    - webixLib.webixLibStrings.onHistoryChange
+    - webixLib.webixLibStrings.onItemRename
+    - webixLib.webixLibStrings.onItemSelect
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onMoveError
+    - webixLib.webixLibStrings.onPathComplete
+    - webixLib.webixLibStrings.onPathLevel
+    - webixLib.webixLibStrings.onShowSearchResults
+    - webixLib.webixLibStrings.onSuccessResponse
+    - webixLib.webixLibStrings.onViewInit
+  */
   trait filemanagerEventName extends js.Object
   
   @js.native
@@ -3826,6 +4672,21 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterValidation
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeValidate
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onSubmit
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onValues
+  */
   trait formEventName extends js.Object
   
   @js.native
@@ -3867,6 +4728,23 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait forminputEventName extends js.Object
   
   @js.native
@@ -3914,6 +4792,23 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait gageEventName extends js.Object
   
   @js.native
@@ -4021,6 +4916,38 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMapError
+    - webixLib.webixLibStrings.onMapReady
+    - webixLib.webixLibStrings.onRegionClick
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait geochartEventName extends js.Object
   
   @js.native
@@ -4133,6 +5060,35 @@ object uiNs extends js.Object {
     var zoom: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHeatMapRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait googleMapEventName extends js.Object
   
   @js.native
@@ -4197,6 +5153,11 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+  */
   trait gridlayoutEventName extends js.Object
   
   @js.native
@@ -4283,6 +5244,29 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeShow
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHide
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValueSuggest
+    - webixLib.webixLibStrings.onViewMove
+    - webixLib.webixLibStrings.onViewMoveEnd
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait gridsuggestEventName extends js.Object
   
   @js.native
@@ -4517,6 +5501,58 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDropOrder
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDropOrder
+    - webixLib.webixLibStrings.onBeforeDropOut
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onItemRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onPaste
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait grouplistEventName extends js.Object
   
   @js.native
@@ -4577,6 +5613,12 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterCollapse
+    - webixLib.webixLibStrings.onAfterExpand
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDestruct
+  */
   trait headerlayoutEventName extends js.Object
   
   @js.native
@@ -4624,6 +5666,29 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterStart
+    - webixLib.webixLibStrings.onBeforeStart
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnd
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onNext
+    - webixLib.webixLibStrings.onPrevious
+    - webixLib.webixLibStrings.onSkip
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait hintEventName extends js.Object
   
   @js.native
@@ -4700,6 +5765,30 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValues
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait htmlformEventName extends js.Object
   
   @js.native
@@ -4775,6 +5864,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait iconEventName extends js.Object
   
   @js.native
@@ -4816,6 +5926,25 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait iframeEventName extends js.Object
   
   @js.native
@@ -4947,6 +6076,37 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterCollapse
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterExpand
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onAfterStatusChange
+    - webixLib.webixLibStrings.onAvatarClick
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBeforeStatusChange
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onListAfterContextMenu
+    - webixLib.webixLibStrings.onListAfterDrop
+    - webixLib.webixLibStrings.onListAfterSelect
+    - webixLib.webixLibStrings.onListBeforeContextMenu
+    - webixLib.webixLibStrings.onListBeforeDrag
+    - webixLib.webixLibStrings.onListBeforeDragIn
+    - webixLib.webixLibStrings.onListBeforeDrop
+    - webixLib.webixLibStrings.onListBeforeSelect
+    - webixLib.webixLibStrings.onListIconClick
+    - webixLib.webixLibStrings.onListItemClick
+    - webixLib.webixLibStrings.onListItemDblClick
+    - webixLib.webixLibStrings.onLoadError
+  */
   trait kanbanEventName extends js.Object
   
   @js.native
@@ -5024,6 +6184,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait labelEventName extends js.Object
   
   @js.native
@@ -5080,6 +6261,10 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDestruct
+  */
   trait layoutEventName extends js.Object
   
   @js.native
@@ -5308,6 +6493,58 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDropOrder
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDropOrder
+    - webixLib.webixLibStrings.onBeforeDropOut
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onItemRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onPaste
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait listEventName extends js.Object
   
   @js.native
@@ -5553,6 +6790,59 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDropOrder
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDropOrder
+    - webixLib.webixLibStrings.onBeforeDropOut
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onItemRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMenuItemClick
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onPaste
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait menuEventName extends js.Object
   
   @js.native
@@ -5673,6 +6963,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait multicomboEventName extends js.Object
   
   @js.native
@@ -5793,6 +7104,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait multiselectEventName extends js.Object
   
   @js.native
@@ -5881,6 +7213,29 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeShow
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHide
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValueSuggest
+    - webixLib.webixLibStrings.onViewMove
+    - webixLib.webixLibStrings.onViewMoveEnd
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait multisuggestEventName extends js.Object
   
   @js.native
@@ -6004,6 +7359,29 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSectionAdd
+    - webixLib.webixLibStrings.onSectionRemove
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait multitextEventName extends js.Object
   
   @js.native
@@ -6059,6 +7437,12 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onBeforeBack
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onViewChange
+  */
   trait multiviewEventName extends js.Object
   
   @js.native
@@ -6258,6 +7642,52 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterClose
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterOpen
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeClose
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeOpen
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemCheck
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onItemRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait organogramEventName extends js.Object
   
   @js.native
@@ -6327,6 +7757,34 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterPageChange
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforePageChange
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait pagerEventName extends js.Object
   
   @js.native
@@ -6373,6 +7831,11 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait panelEventName extends js.Object
   
   @js.native
@@ -6438,6 +7901,29 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDocumentReady
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onPageRender
+    - webixLib.webixLibStrings.onScaleChange
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait pdfviewerEventName extends js.Object
   
   @js.native
@@ -6572,6 +8058,34 @@ object uiNs extends js.Object {
     var yScaleWidth: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onApply
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeApply
+    - webixLib.webixLibStrings.onBeforeCancel
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onCancel
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onFilterChange
+    - webixLib.webixLibStrings.onFilterCreate
+    - webixLib.webixLibStrings.onHeaderInit
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onPopup
+    - webixLib.webixLibStrings.onViewInit
+    - webixLib.webixLibStrings.onWebWorkerEnd
+    - webixLib.webixLibStrings.onWebWorkerStart
+  */
   trait pivotEventName extends js.Object
   
   @js.native
@@ -6634,6 +8148,28 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeShow
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHide
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewMove
+    - webixLib.webixLibStrings.onViewMoveEnd
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait popupEventName extends js.Object
   
   @js.native
@@ -6698,6 +8234,12 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterPortletMove
+    - webixLib.webixLibStrings.onBeforePortletMove
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDestruct
+  */
   trait portletEventName extends js.Object
   
   @js.native
@@ -6805,6 +8347,41 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterEditStart
+    - webixLib.webixLibStrings.onAfterEditStop
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeEditStart
+    - webixLib.webixLibStrings.onBeforeEditStop
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onCheck
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLiveEdit
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait propertyEventName extends js.Object
   
   @js.native
@@ -6940,6 +8517,39 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait protoEventName extends js.Object
   
   @js.native
@@ -6999,6 +8609,11 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onKeySelect
+  */
   trait querybuilderEventName extends js.Object
   
   @js.native
@@ -7111,6 +8726,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait radioEventName extends js.Object
   
   @js.native
@@ -7280,6 +8916,44 @@ object uiNs extends js.Object {
     var yValue: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRangeChange
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait rangechartEventName extends js.Object
   
   @js.native
@@ -7397,6 +9071,28 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSliderDrag
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait rangesliderEventName extends js.Object
   
   @js.native
@@ -7428,6 +9124,10 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onResize
+    - webixLib.webixLibStrings.onResizeEnd
+  */
   trait resizeareaEventName extends js.Object
   
   @js.native
@@ -7468,6 +9168,29 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait resizerEventName extends js.Object
   
   @js.native
@@ -7584,6 +9307,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait richselectEventName extends js.Object
   
   @js.native
@@ -7637,6 +9381,11 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+  */
   trait richtextEventName extends js.Object
   
   @js.native
@@ -7683,6 +9432,23 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait scrollviewEventName extends js.Object
   
   @js.native
@@ -7796,6 +9562,28 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSearchIconClick
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait searchEventName extends js.Object
   
   @js.native
@@ -7922,6 +9710,30 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterTabClick
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeTabClick
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onOptionRemove
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait segmentedEventName extends js.Object
   
   @js.native
@@ -8032,6 +9844,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait selectEventName extends js.Object
   
   @js.native
@@ -8298,6 +10131,64 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterClose
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDropOrder
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterOpen
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeClose
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDropOrder
+    - webixLib.webixLibStrings.onBeforeDropOut
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeOpen
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemCheck
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onItemRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onPartialRender
+    - webixLib.webixLibStrings.onPaste
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait sidebarEventName extends js.Object
   
   @js.native
@@ -8358,6 +10249,28 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeShow
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHide
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewMove
+    - webixLib.webixLibStrings.onViewMoveEnd
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait sidemenuEventName extends js.Object
   
   @js.native
@@ -8476,6 +10389,28 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSliderDrag
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait sliderEventName extends js.Object
   
   @js.native
@@ -8504,6 +10439,23 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait spacerEventName extends js.Object
   
   @js.native
@@ -8632,6 +10584,29 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSheetShow
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeSheetShow
+    - webixLib.webixLibStrings.onBeforeSpan
+    - webixLib.webixLibStrings.onBeforeSplit
+    - webixLib.webixLibStrings.onBeforeValueChange
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onCellChange
+    - webixLib.webixLibStrings.onComponentInit
+    - webixLib.webixLibStrings.onDataParse
+    - webixLib.webixLibStrings.onDataSerialize
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onMathRefresh
+    - webixLib.webixLibStrings.onReset
+    - webixLib.webixLibStrings.onSheetAdd
+    - webixLib.webixLibStrings.onSheetRemove
+    - webixLib.webixLibStrings.onSheetRename
+    - webixLib.webixLibStrings.onStyleSet
+  */
   trait spreadsheetEventName extends js.Object
   
   @js.native
@@ -8902,6 +10877,64 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDropOrder
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDropOrder
+    - webixLib.webixLibStrings.onBeforeDropOut
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeShow
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHide
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onItemRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMenuItemClick
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onPaste
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewMove
+    - webixLib.webixLibStrings.onViewMoveEnd
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait submenuEventName extends js.Object
   
   @js.native
@@ -8988,6 +11021,29 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeShow
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHide
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValueSuggest
+    - webixLib.webixLibStrings.onViewMove
+    - webixLib.webixLibStrings.onViewMoveEnd
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait suggestEventName extends js.Object
   
   @js.native
@@ -9106,6 +11162,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait switchButtonEventName extends js.Object
   
   @js.native
@@ -9248,6 +11325,31 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterTabClick
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeTabClick
+    - webixLib.webixLibStrings.onBeforeTabClose
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onOptionRemove
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait tabbarEventName extends js.Object
   
   @js.native
@@ -9296,6 +11398,10 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onDestruct
+  */
   trait tabviewEventName extends js.Object
   
   @js.native
@@ -9360,6 +11466,28 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait templateEventName extends js.Object
   
   @js.native
@@ -9471,6 +11599,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait textEventName extends js.Object
   
   @js.native
@@ -9582,6 +11731,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait textareaEventName extends js.Object
   
   @js.native
@@ -9663,6 +11833,27 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait toggleEventName extends js.Object
   
   @js.native
@@ -9756,6 +11947,20 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterValidation
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeValidate
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onChange
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onValues
+  */
   trait toolbarEventName extends js.Object
   
   @js.native
@@ -9831,6 +12036,25 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait tooltipEventName extends js.Object
   
   @js.native
@@ -10084,6 +12308,64 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterClose
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDropOrder
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterOpen
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeClose
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDropOrder
+    - webixLib.webixLibStrings.onBeforeDropOut
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeOpen
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemCheck
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onItemRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onPartialRender
+    - webixLib.webixLibStrings.onPaste
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait treeEventName extends js.Object
   
   @js.native
@@ -10301,6 +12583,56 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterClose
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterOpen
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeClose
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeOpen
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemCheck
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onItemRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onPartialRender
+    - webixLib.webixLibStrings.onPaste
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait treemapEventName extends js.Object
   
   @js.native
@@ -10727,6 +13059,102 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterAreaAdd
+    - webixLib.webixLibStrings.onAfterAreaRemove
+    - webixLib.webixLibStrings.onAfterBlockSelect
+    - webixLib.webixLibStrings.onAfterClose
+    - webixLib.webixLibStrings.onAfterColumnDrop
+    - webixLib.webixLibStrings.onAfterColumnDropOrder
+    - webixLib.webixLibStrings.onAfterColumnHide
+    - webixLib.webixLibStrings.onAfterColumnShow
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDropOrder
+    - webixLib.webixLibStrings.onAfterEditStart
+    - webixLib.webixLibStrings.onAfterEditStop
+    - webixLib.webixLibStrings.onAfterFilter
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterOpen
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onAfterUnSelect
+    - webixLib.webixLibStrings.onAreaDrag
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeAreaAdd
+    - webixLib.webixLibStrings.onBeforeAreaRemove
+    - webixLib.webixLibStrings.onBeforeBlockSelect
+    - webixLib.webixLibStrings.onBeforeClose
+    - webixLib.webixLibStrings.onBeforeColumnDrag
+    - webixLib.webixLibStrings.onBeforeColumnDrop
+    - webixLib.webixLibStrings.onBeforeColumnDropOrder
+    - webixLib.webixLibStrings.onBeforeColumnHide
+    - webixLib.webixLibStrings.onBeforeColumnShow
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDropOrder
+    - webixLib.webixLibStrings.onBeforeDropOut
+    - webixLib.webixLibStrings.onBeforeEditStart
+    - webixLib.webixLibStrings.onBeforeEditStop
+    - webixLib.webixLibStrings.onBeforeFilter
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeOpen
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBeforeUnSelect
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onCheck
+    - webixLib.webixLibStrings.onCollectValues
+    - webixLib.webixLibStrings.onColumnResize
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onEditorChange
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHeaderClick
+    - webixLib.webixLibStrings.onItemCheck
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLiveEdit
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onPaste
+    - webixLib.webixLibStrings.onResize
+    - webixLib.webixLibStrings.onRowResize
+    - webixLib.webixLibStrings.onScrollX
+    - webixLib.webixLibStrings.onScrollY
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onStructureLoad
+    - webixLib.webixLibStrings.onStructureUpdate
+    - webixLib.webixLibStrings.onSubViewClose
+    - webixLib.webixLibStrings.onSubViewCreate
+    - webixLib.webixLibStrings.onSubViewOpen
+    - webixLib.webixLibStrings.onSubViewRender
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait treetableEventName extends js.Object
   
   @js.native
@@ -10954,6 +13382,58 @@ object uiNs extends js.Object {
     var yCount: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterAdd
+    - webixLib.webixLibStrings.onAfterContextMenu
+    - webixLib.webixLibStrings.onAfterDelete
+    - webixLib.webixLibStrings.onAfterDrop
+    - webixLib.webixLibStrings.onAfterDropOrder
+    - webixLib.webixLibStrings.onAfterLoad
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onAfterSelect
+    - webixLib.webixLibStrings.onAfterSort
+    - webixLib.webixLibStrings.onBeforeAdd
+    - webixLib.webixLibStrings.onBeforeContextMenu
+    - webixLib.webixLibStrings.onBeforeDelete
+    - webixLib.webixLibStrings.onBeforeDrag
+    - webixLib.webixLibStrings.onBeforeDragIn
+    - webixLib.webixLibStrings.onBeforeDrop
+    - webixLib.webixLibStrings.onBeforeDropOrder
+    - webixLib.webixLibStrings.onBeforeDropOut
+    - webixLib.webixLibStrings.onBeforeLoad
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBeforeSelect
+    - webixLib.webixLibStrings.onBeforeSort
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDataRequest
+    - webixLib.webixLibStrings.onDataUpdate
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onDragOut
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onItemDblClick
+    - webixLib.webixLibStrings.onItemRender
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLoadError
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onMouseMove
+    - webixLib.webixLibStrings.onMouseMoving
+    - webixLib.webixLibStrings.onMouseOut
+    - webixLib.webixLibStrings.onPaste
+    - webixLib.webixLibStrings.onSelectChange
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onValidationError
+    - webixLib.webixLibStrings.onValidationSuccess
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait unitlistEventName extends js.Object
   
   @js.native
@@ -11062,6 +13542,31 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterFileAdd
+    - webixLib.webixLibStrings.onAfterRender
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeFileAdd
+    - webixLib.webixLibStrings.onBeforeRender
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFileUpload
+    - webixLib.webixLibStrings.onFileUploadError
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onItemClick
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onUploadComplete
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait uploaderEventName extends js.Object
   
   @js.native
@@ -11093,6 +13598,23 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait videoEventName extends js.Object
   
   @js.native
@@ -11121,6 +13643,23 @@ object uiNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait viewEventName extends js.Object
   
   @js.native
@@ -11220,6 +13759,28 @@ object uiNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - webixLib.webixLibStrings.onAfterScroll
+    - webixLib.webixLibStrings.onBeforeShow
+    - webixLib.webixLibStrings.onBindRequest
+    - webixLib.webixLibStrings.onBlur
+    - webixLib.webixLibStrings.onDestruct
+    - webixLib.webixLibStrings.onEnter
+    - webixLib.webixLibStrings.onFocus
+    - webixLib.webixLibStrings.onHide
+    - webixLib.webixLibStrings.onKeyPress
+    - webixLib.webixLibStrings.onLongTouch
+    - webixLib.webixLibStrings.onShow
+    - webixLib.webixLibStrings.onSwipeX
+    - webixLib.webixLibStrings.onSwipeY
+    - webixLib.webixLibStrings.onTimedKeyPress
+    - webixLib.webixLibStrings.onTouchEnd
+    - webixLib.webixLibStrings.onTouchMove
+    - webixLib.webixLibStrings.onTouchStart
+    - webixLib.webixLibStrings.onViewMove
+    - webixLib.webixLibStrings.onViewMoveEnd
+    - webixLib.webixLibStrings.onViewResize
+  */
   trait windowEventName extends js.Object
   
   var scrollSize: scala.Double = js.native

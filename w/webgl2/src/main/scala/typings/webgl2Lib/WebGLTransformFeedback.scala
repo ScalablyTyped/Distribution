@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("WebGLTransformFeedback")
 @js.native
+class WebGLTransformFeedbackCls () extends WebGLTransformFeedback
+
+@JSGlobal("WebGLTransformFeedback")
+@js.native
 object WebGLTransformFeedback
   extends org.scalablytyped.runtime.Instantiable0[WebGLTransformFeedback]
 

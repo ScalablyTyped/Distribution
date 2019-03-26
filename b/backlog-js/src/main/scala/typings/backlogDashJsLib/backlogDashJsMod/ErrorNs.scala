@@ -44,6 +44,11 @@ object ErrorNs extends js.Object {
     var moreInfo: java.lang.String
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - backlogDashJsLib.backlogDashJsLibStrings.BacklogApiError
+    - backlogDashJsLib.backlogDashJsLibStrings.BacklogAuthError
+    - backlogDashJsLib.backlogDashJsLibStrings.UnexpectedError
+  */
   trait BacklogErrorNameType extends js.Object
   
   @js.native

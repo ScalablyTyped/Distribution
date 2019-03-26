@@ -32,10 +32,7 @@ trait NetworkInfo extends js.Object {
   var Type: chromeDashAppsLib.chromeNs.ToStringLiteral[
     chromeDashAppsLib.Anon_WIFI, 
     java.lang.String, 
-    stdLib.Exclude[
-      java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_WIFI[keyof chrome-apps.Anon_WIFI] */ js.Any
-    ]
+    stdLib.Exclude[java.lang.String, chromeDashAppsLib.chromeDashAppsLibStrings.WiFi]
   ]
 }
 
@@ -45,10 +42,7 @@ object NetworkInfo {
     Type: chromeDashAppsLib.chromeNs.ToStringLiteral[
       chromeDashAppsLib.Anon_WIFI, 
       java.lang.String, 
-      stdLib.Exclude[
-        java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_WIFI[keyof chrome-apps.Anon_WIFI] */ js.Any
-      ]
+      stdLib.Exclude[java.lang.String, chromeDashAppsLib.chromeDashAppsLibStrings.WiFi]
     ],
     BSSID: java.lang.String = null,
     GUID: java.lang.String = null,

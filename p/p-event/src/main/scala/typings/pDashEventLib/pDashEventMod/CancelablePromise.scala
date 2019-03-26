@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CancelablePromise[ResolveType]
-  extends pDashEventLib.Promise[ResolveType] {
+  extends stdLib.Promise[ResolveType] {
   def cancel(): scala.Unit = js.native
 }
 

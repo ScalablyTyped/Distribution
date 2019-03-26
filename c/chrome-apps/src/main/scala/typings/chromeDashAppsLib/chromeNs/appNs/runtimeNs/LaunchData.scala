@@ -18,10 +18,7 @@ trait LaunchData extends js.Object {
     chromeDashAppsLib.chromeNs.ToStringLiteral[
       chromeDashAppsLib.Anon_NEWNOTE, 
       java.lang.String, 
-      stdLib.Exclude[
-        java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_NEWNOTE[keyof chrome-apps.Anon_NEWNOTE] */ js.Any
-      ]
+      stdLib.Exclude[java.lang.String, chromeDashAppsLib.chromeDashAppsLibStrings.new_note]
     ]
   ] = js.undefined
   /**
@@ -56,7 +53,7 @@ trait LaunchData extends js.Object {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABOUTPAGE[keyof chrome-apps.Anon_ABOUTPAGE] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.new_tab_page | chromeDashAppsLib.chromeDashAppsLibStrings.context_menu | chromeDashAppsLib.chromeDashAppsLibStrings.reload | chromeDashAppsLib.chromeDashAppsLibStrings.ephemeral_app | chromeDashAppsLib.chromeDashAppsLibStrings.restart | chromeDashAppsLib.chromeDashAppsLibStrings.test | chromeDashAppsLib.chromeDashAppsLibStrings.url_handler | chromeDashAppsLib.chromeDashAppsLibStrings.chrome_internal | chromeDashAppsLib.chromeDashAppsLibStrings.kiosk | chromeDashAppsLib.chromeDashAppsLibStrings.installed_notification | chromeDashAppsLib.chromeDashAppsLibStrings.keyboard | chromeDashAppsLib.chromeDashAppsLibStrings.untracked | chromeDashAppsLib.chromeDashAppsLibStrings.about_page | chromeDashAppsLib.chromeDashAppsLibStrings.load_and_launch | chromeDashAppsLib.chromeDashAppsLibStrings.command_line | chromeDashAppsLib.chromeDashAppsLibStrings.app_launcher | chromeDashAppsLib.chromeDashAppsLibStrings.extensions_page | chromeDashAppsLib.chromeDashAppsLibStrings.management_api | chromeDashAppsLib.chromeDashAppsLibStrings.background | chromeDashAppsLib.chromeDashAppsLibStrings.file_handler | chromeDashAppsLib.chromeDashAppsLibStrings.system_tray
       ]
     ]
   ] = js.undefined
@@ -72,10 +69,7 @@ object LaunchData {
     actionData: chromeDashAppsLib.chromeNs.ToStringLiteral[
       chromeDashAppsLib.Anon_NEWNOTE, 
       java.lang.String, 
-      stdLib.Exclude[
-        java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_NEWNOTE[keyof chrome-apps.Anon_NEWNOTE] */ js.Any
-      ]
+      stdLib.Exclude[java.lang.String, chromeDashAppsLib.chromeDashAppsLibStrings.new_note]
     ] = null,
     id: java.lang.String = null,
     isKioskSession: js.UndefOr[scala.Boolean] = js.undefined,
@@ -87,7 +81,7 @@ object LaunchData {
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABOUTPAGE[keyof chrome-apps.Anon_ABOUTPAGE] */ js.Any
+        chromeDashAppsLib.chromeDashAppsLibStrings.new_tab_page | chromeDashAppsLib.chromeDashAppsLibStrings.context_menu | chromeDashAppsLib.chromeDashAppsLibStrings.reload | chromeDashAppsLib.chromeDashAppsLibStrings.ephemeral_app | chromeDashAppsLib.chromeDashAppsLibStrings.restart | chromeDashAppsLib.chromeDashAppsLibStrings.test | chromeDashAppsLib.chromeDashAppsLibStrings.url_handler | chromeDashAppsLib.chromeDashAppsLibStrings.chrome_internal | chromeDashAppsLib.chromeDashAppsLibStrings.kiosk | chromeDashAppsLib.chromeDashAppsLibStrings.installed_notification | chromeDashAppsLib.chromeDashAppsLibStrings.keyboard | chromeDashAppsLib.chromeDashAppsLibStrings.untracked | chromeDashAppsLib.chromeDashAppsLibStrings.about_page | chromeDashAppsLib.chromeDashAppsLibStrings.load_and_launch | chromeDashAppsLib.chromeDashAppsLibStrings.command_line | chromeDashAppsLib.chromeDashAppsLibStrings.app_launcher | chromeDashAppsLib.chromeDashAppsLibStrings.extensions_page | chromeDashAppsLib.chromeDashAppsLibStrings.management_api | chromeDashAppsLib.chromeDashAppsLibStrings.background | chromeDashAppsLib.chromeDashAppsLibStrings.file_handler | chromeDashAppsLib.chromeDashAppsLibStrings.system_tray
       ]
     ] = null,
     url: java.lang.String = null

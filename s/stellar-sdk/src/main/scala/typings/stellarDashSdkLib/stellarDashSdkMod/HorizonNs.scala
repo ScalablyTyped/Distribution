@@ -362,6 +362,12 @@ object HorizonNs extends js.Object {
       ] = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - BalanceLineNative
+    - BalanceLineAsset[
+  stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit4 | stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit12]
+    - BalanceLineAsset[T]
+  */
   type BalanceLine[T /* <: stellarDashBaseLib.stellarDashBaseMod.AssetType */] = _BalanceLine[T] | (BalanceLineAsset[
     stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit4 | stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit12
   ])

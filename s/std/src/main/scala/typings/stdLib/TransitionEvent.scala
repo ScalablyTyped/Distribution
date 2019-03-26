@@ -14,6 +14,13 @@ trait TransitionEvent extends Event {
 
 @JSGlobal("TransitionEvent")
 @js.native
+class TransitionEventCls protected () extends TransitionEvent {
+  def this(`type`: java.lang.String) = this()
+  def this(`type`: java.lang.String, transitionEventInitDict: TransitionEventInit) = this()
+}
+
+@JSGlobal("TransitionEvent")
+@js.native
 object TransitionEvent
   extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, TransitionEvent]
      with org.scalablytyped.runtime.Instantiable2[

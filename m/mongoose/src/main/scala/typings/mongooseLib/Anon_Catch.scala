@@ -5,57 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Catch extends js.Object {
-  var `catch`: (js.Function0[js.Promise[mongooseLib.mongooseMod.Connection | _]]) | (js.Function1[
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-    js.Promise[mongooseLib.mongooseMod.Connection | _]
-  ])
-  var `then`: js.Function0[js.Promise[_]] | (js.Function1[
-    /* onfulfilled */ js.Function1[/* value */ mongooseLib.mongooseMod.Connection, _ | js.Thenable[_]], 
-    js.Promise[_]
-  ]) | (js.Function2[
-    /* onfulfilled */ js.Function1[/* value */ mongooseLib.mongooseMod.Connection, _ | js.Thenable[_]], 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-    js.Promise[_]
-  ]) | (js.Function2[
-    /* onfulfilled */ js.UndefOr[scala.Nothing], 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-    js.Promise[_]
-  ]) | (js.Function2[
-    /* onfulfilled */ scala.Null, 
-    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-    js.Promise[_]
-  ])
-}
-
-object Anon_Catch {
-  @scala.inline
-  def apply(
-    `catch`: (js.Function0[js.Promise[mongooseLib.mongooseMod.Connection | _]]) | (js.Function1[
-      /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-      js.Promise[mongooseLib.mongooseMod.Connection | _]
-    ]),
-    `then`: js.Function0[js.Promise[_]] | (js.Function1[
-      /* onfulfilled */ js.Function1[/* value */ mongooseLib.mongooseMod.Connection, _ | js.Thenable[_]], 
-      js.Promise[_]
-    ]) | (js.Function2[
-      /* onfulfilled */ js.Function1[/* value */ mongooseLib.mongooseMod.Connection, _ | js.Thenable[_]], 
-      /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-      js.Promise[_]
-    ]) | (js.Function2[
-      /* onfulfilled */ js.UndefOr[scala.Nothing], 
-      /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-      js.Promise[_]
-    ]) | (js.Function2[
-      /* onfulfilled */ scala.Null, 
-      /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
-      js.Promise[_]
-    ])
-  ): Anon_Catch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("catch")(`catch`.asInstanceOf[js.Any])
-    __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Anon_Catch]
-  }
+  @JSName("catch")
+  var catch_Original: Anon_Onrejected = js.native
+  @JSName("then")
+  var then_Original: Anon_Onfulfilled = js.native
+  def `catch`[TResult](): js.Promise[mongooseLib.mongooseMod.Connection | TResult] = js.native
+  def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): js.Promise[mongooseLib.mongooseMod.Connection | TResult] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.Function1[/* value */ mongooseLib.mongooseMod.Connection, TResult1 | js.Thenable[TResult1]]
+  ): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.Function1[/* value */ mongooseLib.mongooseMod.Connection, TResult1 | js.Thenable[TResult1]],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    onfulfilled: js.UndefOr[scala.Nothing],
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](
+    onfulfilled: scala.Null,
+    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+  ): js.Promise[TResult1 | TResult2] = js.native
 }
 

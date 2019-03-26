@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Lifted 1 members from Set(egg.egg.PlainObject<any>) */ @js.native
+@js.native
 trait IHelper
   extends BaseContextClass
-     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+     with PlainObject[js.Any] {
   /**
     * Generate URL path(without host) for route. Takes the route name and a map of named params.
     * @method Helper#pathFor

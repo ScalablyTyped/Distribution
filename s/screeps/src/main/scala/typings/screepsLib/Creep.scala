@@ -329,3 +329,21 @@ trait Creep extends RoomObject {
   def withdraw(target: Tombstone, resourceType: ResourceConstant, amount: scala.Double): ScreepsReturnCode = js.native
 }
 
+@JSGlobal("Creep")
+@js.native
+class CreepCls protected () extends Creep {
+  def this(id: java.lang.String) = this()
+  /**
+    * An object representing the position of this object in the room.
+    */
+  /* CompleteClass */
+  override var pos: RoomPosition = js.native
+  /**
+    * The link to the Room object. May be undefined in case if an object is a
+    * flag or a construction site and is placed in a room that is not visible
+    * to you.
+    */
+  /* CompleteClass */
+  override var room: js.UndefOr[Room] = js.native
+}
+

@@ -38,7 +38,7 @@ object jsonstructuresNs extends js.Object {
     * In version 6.2.0: introduced
     */
   /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.IJsonStructure because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
+  - mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.IJsonStructure because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @js.native
   class JsonStructure protected ()
     extends mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.MxSchema {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

@@ -524,9 +524,6 @@ object antdLibStrings {
   sealed trait footer extends js.Object
   
   @js.native
-  sealed trait form extends js.Object
-  
-  @js.native
   sealed trait `full-width` extends js.Object
   
   @js.native
@@ -1949,8 +1946,6 @@ object antdLibStrings {
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def footer: footer = "footer".asInstanceOf[footer]
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
   @scala.inline
   def `full-width`: `full-width` = "full-width".asInstanceOf[`full-width`]
   @scala.inline

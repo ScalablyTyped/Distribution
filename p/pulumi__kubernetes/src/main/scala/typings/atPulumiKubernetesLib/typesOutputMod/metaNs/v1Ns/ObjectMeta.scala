@@ -95,6 +95,8 @@ trait ObjectMeta extends js.Object {
     * When an object is created, the system will populate this list with the current set of
     * initializers. Only privileged users may set or modify this list. Once it is empty, it may
     * not be modified further by any user.
+    *
+    * DEPRECATED - initializers are an alpha field and will be removed in v1.15.
     */
   val initializers: Initializers
   /**
@@ -103,6 +105,16 @@ trait ObjectMeta extends js.Object {
     * http://kubernetes.io/docs/user-guide/labels
     */
   val labels: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  /**
+    * ManagedFields maps workflow-id and version to the set of fields that are managed by that
+    * workflow. This is mostly for internal housekeeping, and users typically shouldn't need to
+    * set or understand this field. A workflow can be the user's name, a controller's name, or
+    * the name of a specific apply path like "ci-cd". The set of fields is always in the version
+    * that the workflow used when modifying the object.
+    *
+    * This field is alpha and can be changed or removed without notice.
+    */
+  val managedFields: js.Array[ManagedFieldsEntry]
   /**
     * Name must be unique within a namespace. Is required when creating resources, although some
     * resources may allow a client to request the generation of an appropriate name
@@ -167,6 +179,7 @@ object ObjectMeta {
     generation: scala.Double,
     initializers: Initializers,
     labels: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    managedFields: js.Array[ManagedFieldsEntry],
     name: java.lang.String,
     namespace: java.lang.String,
     ownerReferences: js.Array[OwnerReference],
@@ -174,7 +187,7 @@ object ObjectMeta {
     selfLink: java.lang.String,
     uid: java.lang.String
   ): ObjectMeta = {
-    val __obj = js.Dynamic.literal(annotations = annotations, clusterName = clusterName, creationTimestamp = creationTimestamp, deletionGracePeriodSeconds = deletionGracePeriodSeconds, deletionTimestamp = deletionTimestamp, finalizers = finalizers, generateName = generateName, generation = generation, initializers = initializers, labels = labels, name = name, namespace = namespace, ownerReferences = ownerReferences, resourceVersion = resourceVersion, selfLink = selfLink, uid = uid)
+    val __obj = js.Dynamic.literal(annotations = annotations, clusterName = clusterName, creationTimestamp = creationTimestamp, deletionGracePeriodSeconds = deletionGracePeriodSeconds, deletionTimestamp = deletionTimestamp, finalizers = finalizers, generateName = generateName, generation = generation, initializers = initializers, labels = labels, managedFields = managedFields, name = name, namespace = namespace, ownerReferences = ownerReferences, resourceVersion = resourceVersion, selfLink = selfLink, uid = uid)
   
     __obj.asInstanceOf[ObjectMeta]
   }

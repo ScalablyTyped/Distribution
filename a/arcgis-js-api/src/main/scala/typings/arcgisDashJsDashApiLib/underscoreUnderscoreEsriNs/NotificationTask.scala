@@ -177,3 +177,14 @@ trait NotificationTask extends Task {
   def unsubscribeFromNotification(params: NotificationTaskUnsubscribeFromNotificationParams, requestOptions: js.Any): arcgisDashJsDashApiLib.IPromise[scala.Boolean] = js.native
 }
 
+@JSGlobal("__esri.NotificationTask")
+@js.native
+/**
+  * Exposes functions to perform operations with Workflow Manager notifications.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-workflow-NotificationTask.html)
+  */
+class NotificationTaskCls () extends NotificationTask {
+  def this(properties: NotificationTaskProperties) = this()
+}
+

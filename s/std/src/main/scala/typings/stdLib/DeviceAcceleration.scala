@@ -13,6 +13,17 @@ trait DeviceAcceleration extends js.Object {
 
 @JSGlobal("DeviceAcceleration")
 @js.native
+class DeviceAccelerationCls () extends DeviceAcceleration {
+  /* CompleteClass */
+  override val x: scala.Double | scala.Null = js.native
+  /* CompleteClass */
+  override val y: scala.Double | scala.Null = js.native
+  /* CompleteClass */
+  override val z: scala.Double | scala.Null = js.native
+}
+
+@JSGlobal("DeviceAcceleration")
+@js.native
 object DeviceAcceleration
   extends org.scalablytyped.runtime.Instantiable0[DeviceAcceleration]
 

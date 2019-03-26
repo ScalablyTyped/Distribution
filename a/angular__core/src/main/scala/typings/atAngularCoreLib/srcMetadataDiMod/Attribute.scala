@@ -12,6 +12,12 @@ trait Attribute extends js.Object {
   var attributeName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+@JSImport("@angular/core/src/metadata/di", "Attribute")
+@js.native
+class AttributeCls protected () extends Attribute {
+  def this(name: java.lang.String) = this()
+}
+
 object Attribute {
   @scala.inline
   def apply(attributeName: java.lang.String = null): Attribute = {

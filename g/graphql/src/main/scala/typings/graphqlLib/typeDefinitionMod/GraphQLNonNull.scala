@@ -31,6 +31,18 @@ trait GraphQLNonNull[T /* <: GraphQLNullableType */] extends js.Object {
   def toJSON(): java.lang.String
 }
 
+@JSImport("graphql/type/definition", "GraphQLNonNull")
+@js.native
+class GraphQLNonNullCls protected () extends GraphQLNonNull[GraphQLNullableType] {
+  def this(`type`: GraphQLNullableType) = this()
+  /* CompleteClass */
+  override val ofType: GraphQLNullableType = js.native
+  /* CompleteClass */
+  override def inspect(): java.lang.String = js.native
+  /* CompleteClass */
+  override def toJSON(): java.lang.String = js.native
+}
+
 object GraphQLNonNull {
   @scala.inline
   def apply[T /* <: GraphQLNullableType */](

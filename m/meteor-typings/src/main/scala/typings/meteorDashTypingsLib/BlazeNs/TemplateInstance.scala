@@ -19,6 +19,33 @@ trait TemplateInstance extends js.Object {
   def subscriptionsReady(): scala.Boolean
 }
 
+@JSGlobal("Blaze.TemplateInstance")
+@js.native
+class TemplateInstanceCls protected () extends TemplateInstance {
+  def this(view: View) = this()
+  /* CompleteClass */
+  override var data: js.Object = js.native
+  /* CompleteClass */
+  override var firstNode: js.Object = js.native
+  /* CompleteClass */
+  override var lastNode: js.Object = js.native
+  /* CompleteClass */
+  override var view: js.Object = js.native
+  /* CompleteClass */
+  @JSName("$")
+  override def $(selector: java.lang.String): js.Any = js.native
+  /* CompleteClass */
+  override def autorun(runFunc: js.Function1[/* computation */ meteorDashTypingsLib.TrackerNs.Computation, scala.Unit]): meteorDashTypingsLib.TrackerNs.Computation = js.native
+  /* CompleteClass */
+  override def find(selector: java.lang.String): stdLib.HTMLElement = js.native
+  /* CompleteClass */
+  override def findAll(selector: java.lang.String): js.Array[stdLib.HTMLElement] = js.native
+  /* CompleteClass */
+  override def subscribe(name: java.lang.String, args: js.Any*): meteorDashTypingsLib.MeteorNs.SubscriptionHandle = js.native
+  /* CompleteClass */
+  override def subscriptionsReady(): scala.Boolean = js.native
+}
+
 object TemplateInstance {
   @scala.inline
   def apply(

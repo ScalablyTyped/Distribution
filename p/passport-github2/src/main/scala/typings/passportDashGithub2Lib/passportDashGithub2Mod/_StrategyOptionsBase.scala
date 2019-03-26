@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in std.Exclude<keyof passport-oauth2.passport-oauth2._StrategyOptionsBase, 'authorizationURL' | 'tokenURL'> ]: passport-oauth2.passport-oauth2._StrategyOptionsBase[P]} */ trait _StrategyOptionsBase extends js.Object {
+- Dropped {[ P in std.Exclude<keyof passport-oauth2.passport-oauth2.OAuth2Strategy._StrategyOptionsBase, 'authorizationURL' | 'tokenURL'> ]: passport-oauth2.passport-oauth2.OAuth2Strategy._StrategyOptionsBase[P]} */ trait _StrategyOptionsBase extends js.Object {
   var authorizationURL: js.UndefOr[java.lang.String] = js.undefined
   var callbackURL: java.lang.String
   var clientID: java.lang.String

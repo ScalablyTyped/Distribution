@@ -366,7 +366,7 @@ trait Anon_ACMACMPCA extends js.Object {
   var Shield: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Shield] = js.native
   val ShieldNs: Anon_Shield = js.native
   var Signer: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Signer] = js.native
-  val SignerNs: Anon_SignerTypes = js.native
+  val SignerNs: Anon_Signer = js.native
   var SimpleDB: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.SimpleDB] = js.native
   val SimpleDBNs: Anon_SimpleDB = js.native
   var Snowball: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Snowball] = js.native

@@ -14,3 +14,10 @@ trait Fn extends Obj {
   def isArrowFn(): scala.Boolean = js.native
 }
 
+@JSImport("tern/lib/infer", "Fn")
+@js.native
+class FnCls protected () extends Fn {
+  def this(name: java.lang.String, self: AVal, args: js.Array[AVal], argNames: js.Array[java.lang.String], retval: AVal) = this()
+  def this(name: js.UndefOr[scala.Nothing], self: AVal, args: js.Array[AVal], argNames: js.Array[java.lang.String], retval: AVal) = this()
+}
+

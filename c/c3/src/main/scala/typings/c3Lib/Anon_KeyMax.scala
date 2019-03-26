@@ -6,19 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_KeyMax extends js.Object {
-  var max: js.UndefOr[scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.undefined
-  var min: js.UndefOr[scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.undefined
+  var max: scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double]
+  var min: scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double]
 }
 
 object Anon_KeyMax {
   @scala.inline
   def apply(
-    max: scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
-    min: scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double] = null
+    max: scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double],
+    min: scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double]
   ): Anon_KeyMax = {
-    val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
+  
     __obj.asInstanceOf[Anon_KeyMax]
   }
 }

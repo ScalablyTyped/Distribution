@@ -17,9 +17,9 @@ trait Anon_After extends js.Object {
   def beforeEach(fn: js.Function): scala.Unit = js.native
   def controlFlow(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow = js.native
   /**
-    * Registers a new test suite.
-    * @param name The suite name.
-    * @param fn The suite function, or {@code undefined} to define a pending test suite.
+    * Add a test to the current suite.
+    * @param name The test name.
+    * @param fn The test function, or {@code undefined} to define a pending test case.
     */
   def describe(name: java.lang.String, fn: js.Function): scala.Unit = js.native
   def ignore(predicateFn: js.Function0[scala.Boolean]): /* import warning: ImportType.apply Failed type conversion: typeof Testing */ js.Any = js.native

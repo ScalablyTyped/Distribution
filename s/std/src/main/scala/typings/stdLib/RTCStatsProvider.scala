@@ -13,6 +13,10 @@ trait RTCStatsProvider extends EventTarget {
 
 @JSGlobal("RTCStatsProvider")
 @js.native
+class RTCStatsProviderCls () extends RTCStatsProvider
+
+@JSGlobal("RTCStatsProvider")
+@js.native
 object RTCStatsProvider
   extends org.scalablytyped.runtime.Instantiable0[RTCStatsProvider]
 

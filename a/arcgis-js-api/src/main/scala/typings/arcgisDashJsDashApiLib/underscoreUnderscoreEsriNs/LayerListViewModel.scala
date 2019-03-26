@@ -46,3 +46,9 @@ trait LayerListViewModel extends Accessor {
   def triggerAction(action: ActionToggle, item: ListItem): scala.Unit = js.native
 }
 
+@JSGlobal("__esri.LayerListViewModel")
+@js.native
+class LayerListViewModelCls () extends LayerListViewModel {
+  def this(properties: LayerListViewModelProperties) = this()
+}
+

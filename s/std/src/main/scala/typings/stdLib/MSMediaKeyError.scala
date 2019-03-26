@@ -18,6 +18,27 @@ trait MSMediaKeyError extends js.Object {
 
 @JSGlobal("MSMediaKeyError")
 @js.native
+class MSMediaKeyErrorCls () extends MSMediaKeyError {
+  /* CompleteClass */
+  override val MS_MEDIA_KEYERR_CLIENT: scala.Double = js.native
+  /* CompleteClass */
+  override val MS_MEDIA_KEYERR_DOMAIN: scala.Double = js.native
+  /* CompleteClass */
+  override val MS_MEDIA_KEYERR_HARDWARECHANGE: scala.Double = js.native
+  /* CompleteClass */
+  override val MS_MEDIA_KEYERR_OUTPUT: scala.Double = js.native
+  /* CompleteClass */
+  override val MS_MEDIA_KEYERR_SERVICE: scala.Double = js.native
+  /* CompleteClass */
+  override val MS_MEDIA_KEYERR_UNKNOWN: scala.Double = js.native
+  /* CompleteClass */
+  override val code: scala.Double = js.native
+  /* CompleteClass */
+  override val systemCode: scala.Double = js.native
+}
+
+@JSGlobal("MSMediaKeyError")
+@js.native
 object MSMediaKeyError
   extends org.scalablytyped.runtime.Instantiable0[MSMediaKeyError] {
   val MS_MEDIA_KEYERR_CLIENT: scala.Double = js.native
