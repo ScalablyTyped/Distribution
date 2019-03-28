@@ -1,7 +1,7 @@
 package typings.reactDashReduxLib
 
 import typings.reactDashReduxLib.reactDashReduxMod.^.connect
-import typings.reactLib.reactMod.ReactNs.FC
+import typings.reactLib.reactMod.FC
 import typings.reduxLib.reduxMod.{Action, Dispatch, Store}
 
 import scala.scalajs.js

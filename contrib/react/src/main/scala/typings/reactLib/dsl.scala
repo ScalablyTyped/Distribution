@@ -1,8 +1,7 @@
 package typings.reactLib
 
 import org.scalablytyped.runtime.{Instantiable1, Instantiable2}
-import typings.reactLib.reactMod.ReactNs._
-import typings.reactLib.reactMod.^
+import typings.reactLib.reactMod._
 import typings.stdLib.^.{Object, console}
 import typings.{reactLib, stdLib}
 
@@ -270,12 +269,7 @@ object dsl {
   /* we're having some instability with createElement and overloads, so just inline it for now*/
   @js.native
   sealed trait Hack extends js.Object {
-    def createElement[P /* <: js.Object */ ](
-                                              `type`: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState],
-                                              props: reactLib.reactMod.ReactNs.Attributes with (P | scala.Null),
-                                              children: reactLib.reactMod.ReactNs.ReactNode*
-                                            ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
-
+    def createElement[P /* <: js.Object */ ](`type`: ComponentClass[P, ComponentState], props: Attributes with (P | scala.Null), children: ReactNode*): ReactElement[P] = js.native
   }
 
   @inline final class BuildComponent[P] private[dsl](ctor: ComponentClass[P, ComponentState],
