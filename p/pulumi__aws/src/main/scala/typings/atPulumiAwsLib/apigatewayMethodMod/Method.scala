@@ -46,17 +46,9 @@ class Method protected ()
   val requestModels: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
   /**
     * A map of request query string parameters and headers that should be passed to the integration.
-    * For example:
-    * ```typescript
-    * import * as pulumi from "@pulumi/pulumi";
-    * ```
-    * would define that the header `X-Some-Header` and the query string `some-query-param` must be provided on the request, or
+    * For example: `request_parameters = {"method.request.header.X-Some-Header" = true "method.request.querystring.some-query-param" = true}` would define that the header `X-Some-Header` and the query string `some-query-param` must be provided in the request
     */
   val requestParameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean]]] = js.native
-  /**
-    * **Deprecated**, use `request_parameters` instead.
-    */
-  val requestParametersInJson: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ID of a `aws_api_gateway_request_validator`
     */

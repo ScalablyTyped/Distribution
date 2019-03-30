@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "Instant")
 @js.native
-class Instant ()
+class Instant protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.Instant {
   /* CompleteClass */
   override def get(field: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalField): scala.Double = js.native

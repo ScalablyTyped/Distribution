@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "mqtt-packet"
-version := "5.6.0-e17cce"
+version := "5.6.0-cd687b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bl" % "v2.1.0-dt-20190322Z-7abbe7",
-  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-2a9acd",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190325Z-000e7b",
-  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-1895d1",
-  "org.scalablytyped" %%% "std" % "3.3-14e863")
+  "org.scalablytyped" %%% "bl" % "v2.1.0-dt-20190322Z-714673",
+  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-b8b248",
+  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-195cbe",
+  "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -7,8 +7,16 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Authority extends js.Object {
+  var ClientHttp2Session: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.http2Ns.ClientHttp2Session] = js.native
+  var ClientHttp2Stream: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.http2Ns.ClientHttp2Stream] = js.native
+  var Http2SecureServer: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.http2Ns.Http2SecureServer] = js.native
+  var Http2Server: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.http2Ns.Http2Server] = js.native
   var Http2ServerRequest: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.http2Ns.Http2ServerRequest] = js.native
   var Http2ServerResponse: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.http2Ns.Http2ServerResponse] = js.native
+  var Http2Session: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.http2Ns.Http2Session] = js.native
+  var Http2Stream: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.http2Ns.Http2Stream] = js.native
+  var ServerHttp2Session: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.http2Ns.ServerHttp2Session] = js.native
+  var ServerHttp2Stream: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.http2Ns.ServerHttp2Stream] = js.native
   val constantsNs: Anon_DEFAULTSETTINGSENABLEPUSH = js.native
   def connect(authority: java.lang.String): nodeLib.http2Mod.ClientHttp2Session = js.native
   def connect(
@@ -103,7 +111,7 @@ trait Anon_Authority extends js.Object {
     ]
   ): nodeLib.http2Mod.Http2Server = js.native
   def getDefaultSettings(): nodeLib.http2Mod.Settings = js.native
-  def getPackedSettings(settings: nodeLib.http2Mod.Settings): nodeLib.http2Mod.Settings = js.native
+  def getPackedSettings(settings: nodeLib.http2Mod.Settings): nodeLib.Buffer = js.native
   def getUnpackedSettings(buf: nodeLib.Buffer): nodeLib.http2Mod.Settings = js.native
   def getUnpackedSettings(buf: stdLib.Uint8Array): nodeLib.http2Mod.Settings = js.native
 }

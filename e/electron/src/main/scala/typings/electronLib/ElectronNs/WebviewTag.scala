@@ -1257,12 +1257,12 @@ trait WebviewTag
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: electronLib.electronLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: electronLib.electronLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1301,12 +1301,34 @@ trait WebviewTag
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: electronLib.electronLibStrings.select,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: electronLib.electronLibStrings.select,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: electronLib.electronLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: electronLib.electronLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: electronLib.electronLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: electronLib.electronLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -2563,12 +2585,12 @@ trait WebviewTag
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: electronLib.electronLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: electronLib.electronLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -2607,12 +2629,34 @@ trait WebviewTag
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: electronLib.electronLibStrings.select,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: electronLib.electronLibStrings.select,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: electronLib.electronLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: electronLib.electronLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: electronLib.electronLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: electronLib.electronLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")

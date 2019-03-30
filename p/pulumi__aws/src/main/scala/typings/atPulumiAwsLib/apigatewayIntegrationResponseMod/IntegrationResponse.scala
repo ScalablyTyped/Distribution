@@ -32,13 +32,9 @@ class IntegrationResponse protected ()
   val resourceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * A map of response parameters that can be read from the backend response.
-    * For example: `response_parameters = { "method.response.header.X-Some-Header" = "integration.response.header.X-Some-Other-Header" }`,
+    * For example: `response_parameters = { "method.response.header.X-Some-Header" = "integration.response.header.X-Some-Other-Header" }`
     */
   val responseParameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
-  /**
-    * **Deprecated**, use `response_parameters` instead.
-    */
-  val responseParametersInJson: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A map specifying the templates used to transform the integration response body
     */

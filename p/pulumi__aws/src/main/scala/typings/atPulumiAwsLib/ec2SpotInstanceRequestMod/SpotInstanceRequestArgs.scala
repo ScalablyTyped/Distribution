@@ -45,7 +45,7 @@ trait SpotInstanceRequestArgs extends js.Object {
   val disableApiTermination: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * Additional EBS block devices to attach to the
-    * instance.  See Block Devices below for details.
+    * instance.  Block device configurations only apply on resource creation. See Block Devices below for details on attributes and drift detection.
     */
   val ebsBlockDevices: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[

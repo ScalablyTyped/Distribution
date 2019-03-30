@@ -13,6 +13,7 @@ trait dwtEnv extends js.Object {
   var Containers: js.Array[Container] = js.native
   var Debug: scala.Boolean = js.native
   var DynamicContainers: js.Array[java.lang.String] = js.native
+  var IfInstallDWTModuleWithZIP: scala.Boolean = js.native
   var IfUpdateService: scala.Boolean = js.native
   var IfUseActiveXForIE10Plus: scala.Boolean = js.native
   var JSVersion: java.lang.String = js.native

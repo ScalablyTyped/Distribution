@@ -24,7 +24,7 @@ class Zone protected ()
     */
   val comment: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The ID of the reusable delegation set whose NS records you want to assign to the hosted zone. Conflicts with `vpc` and `vpc_id` as delegation sets can only be used for public zones.
+    * The ID of the reusable delegation set whose NS records you want to assign to the hosted zone. Conflicts with `vpc` as delegation sets can only be used for public zones.
     */
   val delegationSetId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
@@ -45,17 +45,9 @@ class Zone protected ()
     */
   val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
-    * ID of the VPC to associate.
+    * Configuration block(s) specifying VPC(s) to associate with a private hosted zone. Conflicts with the `delegation_set_id` argument in this resource and any [`aws_route53_zone_association` resource](https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html) specifying the same zone ID. Detailed below.
     */
-  val vpcId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * Region of the VPC to associate. Defaults to AWS provider region.
-    */
-  val vpcRegion: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * Configuration block(s) specifying VPC(s) to associate with a private hosted zone. Conflicts with `delegation_set_id`, `vpc_id`, and `vpc_region` in this resource and any [`aws_route53_zone_association` resource](https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html) specifying the same zone ID. Detailed below.
-    */
-  val vpcs: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_VpcId]] = js.native
+  val vpcs: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_VpcId]]] = js.native
   /**
     * The Hosted Zone ID. This can be referenced by zone records.
     */

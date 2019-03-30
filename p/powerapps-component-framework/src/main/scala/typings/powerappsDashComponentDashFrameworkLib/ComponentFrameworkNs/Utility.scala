@@ -29,8 +29,8 @@ trait Utility extends js.Object {
   		 */
   def hasEntityPrivilege(
     entityTypeName: java.lang.String,
-    privilegeType: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.PrivilegeType,
-    privilegeDepth: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.PrivilegeDepth
+    privilegeType: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.TypesNs.PrivilegeType,
+    privilegeDepth: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.TypesNs.PrivilegeDepth
   ): scala.Boolean = js.native
   /**
   		 * Opens a lookup dialog allowing the user to select one or more entities.

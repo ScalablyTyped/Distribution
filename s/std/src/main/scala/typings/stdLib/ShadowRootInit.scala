@@ -7,16 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait ShadowRootInit extends js.Object {
   var delegatesFocus: js.UndefOr[scala.Boolean] = js.undefined
-  var mode: stdLib.stdLibStrings.open | stdLib.stdLibStrings.closed
+  var mode: ShadowRootMode
 }
 
 object ShadowRootInit {
   @scala.inline
-  def apply(
-    mode: stdLib.stdLibStrings.open | stdLib.stdLibStrings.closed,
-    delegatesFocus: js.UndefOr[scala.Boolean] = js.undefined
-  ): ShadowRootInit = {
-    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
+  def apply(mode: ShadowRootMode, delegatesFocus: js.UndefOr[scala.Boolean] = js.undefined): ShadowRootInit = {
+    val __obj = js.Dynamic.literal(mode = mode)
     if (!js.isUndefined(delegatesFocus)) __obj.updateDynamic("delegatesFocus")(delegatesFocus)
     __obj.asInstanceOf[ShadowRootInit]
   }

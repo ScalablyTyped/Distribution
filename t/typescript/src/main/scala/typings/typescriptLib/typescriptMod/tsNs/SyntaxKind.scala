@@ -1324,7 +1324,27 @@ object SyntaxKind extends js.Object {
     extends typescriptLib.typescriptMod.tsNs.SyntaxKind
   
   @js.native
+  sealed trait UnparsedInternalText
+    extends typescriptLib.typescriptMod.tsNs.SyntaxKind
+  
+  @js.native
+  sealed trait UnparsedPrepend
+    extends typescriptLib.typescriptMod.tsNs.SyntaxKind
+  
+  @js.native
+  sealed trait UnparsedPrologue
+    extends typescriptLib.typescriptMod.tsNs.SyntaxKind
+  
+  @js.native
   sealed trait UnparsedSource
+    extends typescriptLib.typescriptMod.tsNs.SyntaxKind
+  
+  @js.native
+  sealed trait UnparsedSyntheticReference
+    extends typescriptLib.typescriptMod.tsNs.SyntaxKind
+  
+  @js.native
+  sealed trait UnparsedText
     extends typescriptLib.typescriptMod.tsNs.SyntaxKind
   
   @js.native

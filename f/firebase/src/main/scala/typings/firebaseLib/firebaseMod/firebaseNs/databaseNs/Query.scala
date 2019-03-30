@@ -51,7 +51,7 @@ trait Query extends js.Object {
     *  Filtering data}.
     *
     * @example
-    * ```
+    * ```javascript
     * // Find all dinosaurs whose names come before Pterodactyl lexicographically.
     * var ref = firebase.database().ref("dinosaurs");
     * ref.orderByKey().endAt("pterodactyl").on("child_added", function(snapshot) {
@@ -59,14 +59,13 @@ trait Query extends js.Object {
     * });
     * ```
     *
-    * @param {number|string|boolean|null} value The value to end at. The argument
+    * @param value The value to end at. The argument
     *   type depends on which `orderBy*()` function was used in this query.
     *   Specify a value that matches the `orderBy*()` type. When used in
     *   combination with `orderByKey()`, the value must be a string.
-    * @param {string=} key The child key to end at, among the children with the
+    * @param key The child key to end at, among the children with the
     *   previously specified priority. This argument is only allowed if ordering by
     *   child, value, or priority.
-    * @return {!firebase.database.Query}
     */
   def endAt(value: scala.Double): Query = js.native
   def endAt(value: scala.Double, key: java.lang.String): Query = js.native
@@ -93,7 +92,7 @@ trait Query extends js.Object {
     *  Filtering data}.
     *
     * @example
-    * ```
+    * ```javascript
     * // Find all dinosaurs whose height is exactly 25 meters.
     * var ref = firebase.database().ref("dinosaurs");
     * ref.orderByChild("height").equalTo(25).on("child_added", function(snapshot) {
@@ -101,14 +100,13 @@ trait Query extends js.Object {
     * });
     * ```
     *
-    * @param {number|string|boolean|null} value The value to match for. The
+    * @param value The value to match for. The
     *   argument type depends on which `orderBy*()` function was used in this
     *   query. Specify a value that matches the `orderBy*()` type. When used in
     *   combination with `orderByKey()`, the value must be a string.
-    * @param {string=} key The child key to start at, among the children with the
+    * @param key The child key to start at, among the children with the
     *   previously specified priority. This argument is only allowed if ordering by
     *   child, value, or priority.
-    * @return {!firebase.database.Query}
     */
   def equalTo(value: scala.Double): Query = js.native
   def equalTo(value: scala.Double, key: java.lang.String): Query = js.native
@@ -128,7 +126,7 @@ trait Query extends js.Object {
     * starting and ending points.
     *
     * @example
-    * ```
+    * ```javascript
     * var rootRef = firebase.database.ref();
     * var usersRef = rootRef.child("users");
     *
@@ -138,7 +136,7 @@ trait Query extends js.Object {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * var rootRef = firebase.database.ref();
     * var usersRef = rootRef.child("users");
     * var usersQuery = usersRef.limitToLast(10);
@@ -149,8 +147,8 @@ trait Query extends js.Object {
     * usersQuery.isEqual(usersRef.orderByKey().limitToLast(10));  // false
     * ```
     *
-    * @param {firebase.database.Query} other The query to compare against.
-    * @return {boolean} Whether or not the current and provided queries are
+    * @param other The query to compare against.
+    * @return Whether or not the current and provided queries are
     *   equivalent.
     */
   def isEqual(other: Query): scala.Boolean = js.native
@@ -172,7 +170,7 @@ trait Query extends js.Object {
     *  Filtering data}.
     *
     * @example
-    * ```
+    * ```javascript
     * // Find the two shortest dinosaurs.
     * var ref = firebase.database().ref("dinosaurs");
     * ref.orderByChild("height").limitToFirst(2).on("child_added", function(snapshot) {
@@ -186,8 +184,7 @@ trait Query extends js.Object {
     * });
     * ```
     *
-    * @param {number} limit The maximum number of nodes to include in this query.
-    * @return {!firebase.database.Query}
+    * @param limit The maximum number of nodes to include in this query.
     */
   def limitToFirst(limit: scala.Double): Query = js.native
   /**
@@ -209,7 +206,7 @@ trait Query extends js.Object {
     *  Filtering data}.
     *
     * @example
-    * ```
+    * ```javascript
     * // Find the two heaviest dinosaurs.
     * var ref = firebase.database().ref("dinosaurs");
     * ref.orderByChild("weight").limitToLast(2).on("child_added", function(snapshot) {
@@ -220,8 +217,7 @@ trait Query extends js.Object {
     * });
     * ```
     *
-    * @param {number} limit The maximum number of nodes to include in this query.
-    * @return {!firebase.database.Query}
+    * @param limit The maximum number of nodes to include in this query.
     */
   def limitToLast(limit: scala.Double): Query = js.native
   /**
@@ -239,7 +235,7 @@ trait Query extends js.Object {
     * callbacks for the `Reference` will be removed.
     *
     * @example
-    * ```
+    * ```javascript
     * var onValueChange = function(dataSnapshot) {  ... };
     * ref.on('value', onValueChange);
     * ref.child('meta-data').on('child_added', onChildAdded);
@@ -252,7 +248,7 @@ trait Query extends js.Object {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Or you can save a line of code by using an inline function
     * // and on()'s return value.
     * var onValueChange = ref.on('value', function(dataSnapshot) { ... });
@@ -260,11 +256,11 @@ trait Query extends js.Object {
     * ref.off('value', onValueChange);
     * ```
     *
-    * @param {string=} eventType One of the following strings: "value",
+    * @param eventType One of the following strings: "value",
     *   "child_added", "child_changed", "child_removed", or "child_moved."
-    * @param {function(!firebase.database.DataSnapshot, ?string=)=} callback The
+    * @param callback The
     *   callback function that was passed to `on()`.
-    * @param {Object=} context The context that was passed to `on()`.
+    * @param context The context that was passed to `on()`.
     */
   def off(): js.Any = js.native
   def off(eventType: EventType): js.Any = js.native
@@ -335,56 +331,56 @@ trait Query extends js.Object {
     * sibling child by sort order, or `null` if it is the first child.
     *
     * @example **Handle a new value:**
-    * ```
+    * ```javascript
     * ref.on('value', function(dataSnapshot) {
     *   ...
     * });
     * ```
     *
     * @example **Handle a new child:**
-    * ```
+    * ```javascript
     * ref.on('child_added', function(childSnapshot, prevChildKey) {
     *   ...
     * });
     * ```
     *
     * @example **Handle child removal:**
-    * ```
+    * ```javascript
     * ref.on('child_removed', function(oldChildSnapshot) {
     *   ...
     * });
     * ```
     *
     * @example **Handle child data changes:**
-    * ```
+    * ```javascript
     * ref.on('child_changed', function(childSnapshot, prevChildKey) {
     *   ...
     * });
     * ```
     *
     * @example **Handle child ordering changes:**
-    * ```
+    * ```javascript
     * ref.on('child_moved', function(childSnapshot, prevChildKey) {
     *   ...
     * });
     * ```
     *
-    * @param {string} eventType One of the following strings: "value",
+    * @param eventType One of the following strings: "value",
     *   "child_added", "child_changed", "child_removed", or "child_moved."
-    * @param {!function(firebase.database.DataSnapshot, string=)} callback A
+    * @param callback A
     *   callback that fires when the specified event occurs. The callback will be
     *   passed a DataSnapshot. For ordering purposes, "child_added",
     *   "child_changed", and "child_moved" will also be passed a string containing
     *   the key of the previous child, by sort order, or `null` if it is the
     *   first child.
-    * @param {(function(Error)|Object)=} cancelCallbackOrContext An optional
+    * @param cancelCallbackOrContext An optional
     *   callback that will be notified if your event subscription is ever canceled
     *   because your client does not have permission to read this data (or it had
     *   permission but has now lost it). This callback will be passed an `Error`
     *   object indicating why the failure occurred.
-    * @param {Object=} context If provided, this object will be used as `this`
+    * @param context If provided, this object will be used as `this`
     *   when calling your callback(s).
-    * @return {!function(firebase.database.DataSnapshot, string=)} The provided
+    * @return The provided
     *   callback function is returned unmodified. This is just for convenience if
     *   you want to pass an inline function to `on()` but store the callback
     *   function for later passing to `off()`.
@@ -420,7 +416,7 @@ trait Query extends js.Object {
     * event types.
     *
     * @example
-    * ```
+    * ```javascript
     * // Basic usage of .once() to read the data located at ref.
     * ref.once('value')
     *   .then(function(dataSnapshot) {
@@ -428,21 +424,20 @@ trait Query extends js.Object {
     *   });
     * ```
     *
-    * @param {string} eventType One of the following strings: "value",
+    * @param eventType One of the following strings: "value",
     *   "child_added", "child_changed", "child_removed", or "child_moved."
-    * @param {function(!firebase.database.DataSnapshot, string=)=} successCallback A
+    * @param successCallback A
     *   callback that fires when the specified event occurs. The callback will be
     *   passed a DataSnapshot. For ordering purposes, "child_added",
     *   "child_changed", and "child_moved" will also be passed a string containing
     *   the key of the previous child by sort order, or `null` if it is the
     *   first child.
-    * @param {(function(Error)|Object)=} failureCallbackOrContext An optional
+    * @param failureCallbackOrContext An optional
     *   callback that will be notified if your client does not have permission to
     *   read the data. This callback will be passed an `Error` object indicating
     *   why the failure occurred.
-    * @param {Object=} context If provided, this object will be used as `this`
+    * @param context If provided, this object will be used as `this`
     *   when calling your callback(s).
-    * @return {!firebase.Promise<*>}
     */
   def once(eventType: EventType): js.Promise[DataSnapshot] = js.native
   def once(
@@ -484,7 +479,7 @@ trait Query extends js.Object {
     *  Sort data}.
     *
     * @example
-    * ```
+    * ```javascript
     * var ref = firebase.database().ref("dinosaurs");
     * ref.orderByChild("height").on("child_added", function(snapshot) {
     *   console.log(snapshot.key + " was " + snapshot.val().height + " m tall");
@@ -503,7 +498,7 @@ trait Query extends js.Object {
     *  Sort data}.
     *
     * @example
-    * ```
+    * ```javascript
     * var ref = firebase.database().ref("dinosaurs");
     * ref.orderByKey().on("child_added", function(snapshot) {
     *   console.log(snapshot.key);
@@ -533,7 +528,7 @@ trait Query extends js.Object {
     *  Sort data}.
     *
     * @example
-    * ```
+    * ```javascript
     * var scoresRef = firebase.database().ref("scores");
     * scoresRef.orderByValue().limitToLast(3).on("value", function(snapshot) {
     *   snapshot.forEach(function(data) {
@@ -566,7 +561,7 @@ trait Query extends js.Object {
     *  Filtering data}.
     *
     * @example
-    * ```
+    * ```javascript
     * // Find all dinosaurs that are at least three meters tall.
     * var ref = firebase.database().ref("dinosaurs");
     * ref.orderByChild("height").startAt(3).on("child_added", function(snapshot) {
@@ -574,13 +569,12 @@ trait Query extends js.Object {
     * });
     * ```
     *
-    * @param {number|string|boolean|null} value The value to start at. The argument
+    * @param value The value to start at. The argument
     *   type depends on which `orderBy*()` function was used in this query.
     *   Specify a value that matches the `orderBy*()` type. When used in
     *   combination with `orderByKey()`, the value must be a string.
-    * @param {string=} key The child key to start at. This argument is only allowed
+    * @param key The child key to start at. This argument is only allowed
     *   if ordering by child, value, or priority.
-    * @return {!firebase.database.Query}
     */
   def startAt(value: scala.Double): Query = js.native
   def startAt(value: scala.Double, key: java.lang.String): Query = js.native
@@ -588,7 +582,7 @@ trait Query extends js.Object {
   /**
     * Returns a JSON-serializable representation of this object.
     *
-    * @return {!Object} A JSON-serializable representation of this object.
+    * @return A JSON-serializable representation of this object.
     */
   def toJSON(): js.Object = js.native
 }

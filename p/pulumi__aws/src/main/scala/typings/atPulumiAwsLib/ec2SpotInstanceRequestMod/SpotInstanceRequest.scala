@@ -58,7 +58,7 @@ class SpotInstanceRequest protected ()
   val disableApiTermination: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Additional EBS block devices to attach to the
-    * instance.  See Block Devices below for details.
+    * instance.  Block device configurations only apply on resource creation. See Block Devices below for details on attributes and drift detection.
     */
   val ebsBlockDevices: atPulumiPulumiLib.outputMod.Output[
     js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeId]
@@ -124,7 +124,6 @@ class SpotInstanceRequest protected ()
     * If true, the launched EC2 instance will have detailed monitoring enabled. (Available since v0.6.0)
     */
   val monitoring: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
-  val networkInterfaceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Customize network interfaces to be attached at instance boot time. See Network Interfaces below for more details.
     */

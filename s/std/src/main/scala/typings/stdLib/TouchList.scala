@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The TouchList interface represents a list of contact points with a touch surface; for example, if the user has three fingers on the touch surface (such as a screen or trackpad), the corresponding TouchList object would have one Touch object for each finger, for a total of three entries. */
 trait TouchList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[Touch] {
   @JSName(org.scalablytyped.runtime.Symbol.iterator)

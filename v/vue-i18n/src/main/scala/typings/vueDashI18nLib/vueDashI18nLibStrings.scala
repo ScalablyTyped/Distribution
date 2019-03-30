@@ -24,10 +24,32 @@ object vueDashI18nLibStrings {
     extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.CurrencyDisplay
   
   @js.native
-  sealed trait currency extends js.Object
+  sealed trait currency
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
   
   @js.native
-  sealed trait decimal extends js.Object
+  sealed trait decimal
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
+  
+  @js.native
+  sealed trait fraction
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
+  
+  @js.native
+  sealed trait group
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
+  
+  @js.native
+  sealed trait infinity
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
+  
+  @js.native
+  sealed trait integer
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
+  
+  @js.native
+  sealed trait literal
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
   
   @js.native
   sealed trait long
@@ -38,8 +60,16 @@ object vueDashI18nLibStrings {
     extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.LocaleMatcher
   
   @js.native
+  sealed trait minusSign
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
+  
+  @js.native
   sealed trait name
     extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.CurrencyDisplay
+  
+  @js.native
+  sealed trait nan
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
   
   @js.native
   sealed trait narrow
@@ -51,6 +81,14 @@ object vueDashI18nLibStrings {
   
   @js.native
   sealed trait percent extends js.Object
+  
+  @js.native
+  sealed trait percentSign
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
+  
+  @js.native
+  sealed trait plusSign
+    extends vueDashI18nLib.vueDashI18nMod.VueI18nNs.FormattedNumberPartType
   
   @js.native
   sealed trait short
@@ -73,17 +111,35 @@ object vueDashI18nLibStrings {
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   @scala.inline
+  def fraction: fraction = "fraction".asInstanceOf[fraction]
+  @scala.inline
+  def group: group = "group".asInstanceOf[group]
+  @scala.inline
+  def infinity: infinity = "infinity".asInstanceOf[infinity]
+  @scala.inline
+  def integer: integer = "integer".asInstanceOf[integer]
+  @scala.inline
+  def literal: literal = "literal".asInstanceOf[literal]
+  @scala.inline
   def long: long = "long".asInstanceOf[long]
   @scala.inline
   def lookup: lookup = "lookup".asInstanceOf[lookup]
   @scala.inline
+  def minusSign: minusSign = "minusSign".asInstanceOf[minusSign]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
+  def nan: nan = "nan".asInstanceOf[nan]
   @scala.inline
   def narrow: narrow = "narrow".asInstanceOf[narrow]
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   @scala.inline
   def percent: percent = "percent".asInstanceOf[percent]
+  @scala.inline
+  def percentSign: percentSign = "percentSign".asInstanceOf[percentSign]
+  @scala.inline
+  def plusSign: plusSign = "plusSign".asInstanceOf[plusSign]
   @scala.inline
   def short: short = "short".asInstanceOf[short]
   @scala.inline

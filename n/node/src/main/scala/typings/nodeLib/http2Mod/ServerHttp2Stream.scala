@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("http2", "ServerHttp2Stream")
 @js.native
-trait ServerHttp2Stream extends Http2Stream {
+class ServerHttp2Stream protected () extends Http2Stream {
   val headersSent: scala.Boolean = js.native
   val pushAllowed: scala.Boolean = js.native
   def additionalHeaders(headers: nodeLib.httpMod.OutgoingHttpHeaders): scala.Unit = js.native

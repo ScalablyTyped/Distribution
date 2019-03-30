@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFEImageElement interface corresponds to the <feImage> element. */
 @js.native
 trait SVGFEImageElement
   extends SVGElement

@@ -46,7 +46,6 @@ class QuestionSelectBase protected () extends Question {
     * Returns true if a user select the 'other' item.
     */
   val isOtherSelected: scala.Boolean = js.native
-  var isRenderedValueSetting: scala.Boolean = js.native
   var isSettingDefaultValue: scala.Boolean = js.native
   val locOtherErrorText: LocalizableString = js.native
   val locOtherText: LocalizableString = js.native

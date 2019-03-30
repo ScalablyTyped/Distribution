@@ -1117,7 +1117,7 @@ class SurveyModel ()
     * set options.includeEmpty to false if you want to skip empty answers
     */
   def getPlainData(): js.Array[_] = js.native
-  def getPlainData(options: surveyDashKnockoutLib.Anon_IncludeEmpty): js.Array[_] = js.native
+  def getPlainData(options: surveyDashKnockoutLib.Anon_Calculations): js.Array[_] = js.native
   def getProcessedText(text: java.lang.String): java.lang.String = js.native
   /**
     * Returns the progress that a user made by answering on the survey.

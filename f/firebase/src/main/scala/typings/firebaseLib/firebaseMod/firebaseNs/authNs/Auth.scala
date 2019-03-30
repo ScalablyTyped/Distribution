@@ -23,7 +23,7 @@ trait Auth extends js.Object {
     * instance.
     *
     * @example
-    * ```
+    * ```javascript
     * var app = auth.app;
     * ```
     */
@@ -67,7 +67,7 @@ trait Auth extends js.Object {
     *     issued and when this method was called.</dd>
     * </dl>
     *
-    * @param {string} code A verification code sent to the user.
+    * @param code A verification code sent to the user.
     */
   def applyActionCode(code: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
@@ -92,8 +92,7 @@ trait Auth extends js.Object {
     *     issued and when this method was called.</dd>
     * </dl>
     *
-    * @param {string} code A verification code sent to the user.
-    * @return {!firebase.Promise<!firebase.auth.ActionCodeInfo>}
+    * @param code A verification code sent to the user.
     */
   def checkActionCode(code: java.lang.String): js.Promise[ActionCodeInfo] = js.native
   /**
@@ -118,8 +117,8 @@ trait Auth extends js.Object {
     * <dd>Thrown if the new password is not strong enough.</dd>
     * </dl>
     *
-    * @param {string} code The confirmation code send via email to the user.
-    * @param {string} newPassword The new password.
+    * @param code The confirmation code send via email to the user.
+    * @param newPassword The new password.
     */
   def confirmPasswordReset(code: java.lang.String, newPassword: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
@@ -154,7 +153,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().createUserAndRetrieveDataWithEmailAndPassword(email, password)
     *     .catch(function(error) {
     *       // Handle Errors here.
@@ -168,8 +167,8 @@ trait Auth extends js.Object {
     *       console.log(error);
     *     });
     * ```
-    * @param {string} email The user's email address.
-    * @param {string} password The user's chosen password.
+    * @param email The user's email address.
+    * @param password The user's chosen password.
     */
   def createUserAndRetrieveDataWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[UserCredential] = js.native
   /**
@@ -201,7 +200,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().createUserWithEmailAndPassword(email, password)
     *     .catch(function(error) {
     *   // Handle Errors here.
@@ -215,8 +214,8 @@ trait Auth extends js.Object {
     *   console.log(error);
     * });
     * ```
-    * @param {string} email The user's email address.
-    * @param {string} password The user's chosen password.
+    * @param email The user's email address.
+    * @param password The user's chosen password.
     */
   def createUserWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[UserCredential] = js.native
   /**
@@ -309,7 +308,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * // First, we perform the signInWithRedirect.
     * // Creates the provider object.
     * var provider = new firebase.auth.FacebookAuthProvider();
@@ -350,8 +349,6 @@ trait Auth extends js.Object {
     *   }
     * });
     * ```
-    *
-    * @return {!firebase.Promise<!firebase.auth.UserCredential>}
     */
   def getRedirectResult(): js.Promise[UserCredential] = js.native
   /**
@@ -369,7 +366,7 @@ trait Auth extends js.Object {
     * To keep the old behavior, see {@link firebase.auth.Auth.onIdTokenChanged}.
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().onAuthStateChanged(function(user) {
     *   if (user) {
     *     // User is signed in.
@@ -403,18 +400,18 @@ trait Auth extends js.Object {
     * behavior as {@link firebase.auth.Auth.onAuthStateChanged} had prior to 4.0.0.
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().onIdTokenChanged(function(user) {
     *   if (user) {
     *     // User is signed in or token was refreshed.
     *   }
     * });
     * ```
-    * @param {!firebase.Observer<firebase.User, firebase.auth.Error>|function(?firebase.User)}
+    * @param
     *     nextOrObserver An observer object or a function triggered on change.
-    * @param {function(!firebase.auth.Error)=} error Optional A function
+    * @param error Optional A function
     *     triggered on auth error.
-    * @param {firebase.CompleteFn=} completed Optional A function triggered when the
+    * @param completed Optional A function triggered when the
     *     observer is removed.
     */
   def onIdTokenChanged(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
@@ -465,7 +462,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * var actionCodeSettings = {
     *   url: 'https://www.example.com/?email=user@example.com',
     *   iOS: {
@@ -488,8 +485,8 @@ trait Auth extends js.Object {
     *     });
     * ```
     *
-    * @param {string} email The email address with the password to be reset.
-    * @param {?firebase.auth.ActionCodeSettings=} actionCodeSettings The action
+    * @param email The email address with the password to be reset.
+    * @param actionCodeSettings The action
     *     code settings. If specified, the state/continue URL will be set as the
     *     "continueUrl" parameter in the password reset link. The default password
     *     reset landing page will use this to display a link to go back to the app
@@ -538,7 +535,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * var actionCodeSettings = {
     *   // The URL to redirect to for sign-in completion. This is also the deep
     *   // link for mobile redirects. The domain (www.example.com) for this URL
@@ -565,8 +562,8 @@ trait Auth extends js.Object {
     *       // Some error occurred, you can inspect the code: error.code
     *     });
     * ```
-    * @param {string} email The email account to sign in with.
-    * @param {!firebase.auth.ActionCodeSettings} actionCodeSettings The action
+    * @param email The email account to sign in with.
+    * @param actionCodeSettings The action
     *     code settings. The action code settings which provides Firebase with
     *     instructions on how to construct the email link. This includes the
     *     sign in completion URL or the deep link for mobile redirects, the mobile
@@ -605,7 +602,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().setPersistence(firebase.auth.Auth.Persistence.SESSION)
     *     .then(function() {
     *   // Existing and future Auth states are now persisted in the current
@@ -657,13 +654,13 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().signInAndRetrieveDataWithCredential(credential)
     *     .then(function(userCredential) {
     *       console.log(userCredential.additionalUserInfo.username);
     *     });
     * ```
-    * @param {!firebase.auth.AuthCredential} credential The auth credential.
+    * @param credential The auth credential.
     */
   def signInAndRetrieveDataWithCredential(credential: AuthCredential): js.Promise[UserCredential] = js.native
   /**
@@ -688,7 +685,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().signInAndRetrieveDataWithCustomToken(token)
     *     .catch(function(error) {
     *       // Handle Errors here.
@@ -702,7 +699,7 @@ trait Auth extends js.Object {
     *     });
     * ```
     *
-    * @param {string} token The custom token to sign in with.
+    * @param token The custom token to sign in with.
     */
   def signInAndRetrieveDataWithCustomToken(token: java.lang.String): js.Promise[UserCredential] = js.native
   /**
@@ -736,7 +733,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().signInAndRetrieveDataWithEmailAndPassword(email, password)
     *     .catch(function(error) {
     *       // Handle Errors here.
@@ -751,8 +748,8 @@ trait Auth extends js.Object {
     *     });
     * ```
     *
-    * @param {string} email The users email address.
-    * @param {string} password The users password.
+    * @param email The users email address.
+    * @param password The users password.
     */
   def signInAndRetrieveDataWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[UserCredential] = js.native
   /**
@@ -770,7 +767,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().signInAnonymously().catch(function(error) {
     *   // Handle Errors here.
     *   var errorCode = error.code;
@@ -804,7 +801,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().signInAnonymouslyAndRetrieveData().catch(function(error) {
     *   // Handle Errors here.
     *   var errorCode = error.code;
@@ -863,7 +860,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().signInWithCredential(credential).catch(function(error) {
     *   // Handle Errors here.
     *   var errorCode = error.code;
@@ -881,7 +878,7 @@ trait Auth extends js.Object {
     *  });
     * ```
     *
-    * @param {!firebase.auth.AuthCredential} credential The auth credential.
+    * @param credential The auth credential.
     */
   def signInWithCredential(credential: AuthCredential): js.Promise[firebaseLib.firebaseMod.firebaseNs.User] = js.native
   /**
@@ -902,7 +899,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().signInWithCustomToken(token).catch(function(error) {
     *   // Handle Errors here.
     *   var errorCode = error.code;
@@ -915,7 +912,7 @@ trait Auth extends js.Object {
     * });
     * ```
     *
-    * @param {string} token The custom token to sign in with.
+    * @param token The custom token to sign in with.
     */
   def signInWithCustomToken(token: java.lang.String): js.Promise[UserCredential] = js.native
   /**
@@ -944,7 +941,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().signInWithEmailAndPassword(email, password)
     *     .catch(function(error) {
     *   // Handle Errors here.
@@ -959,8 +956,8 @@ trait Auth extends js.Object {
     * });
     * ```
     *
-    * @param {string} email The users email address.
-    * @param {string} password The users password.
+    * @param email The users email address.
+    * @param password The users password.
     */
   def signInWithEmailAndPassword(email: java.lang.String, password: java.lang.String): js.Promise[UserCredential] = js.native
   /**
@@ -985,7 +982,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.auth().signInWithEmailLink(email, emailLink)
     *     .catch(function(error) {
     *       // Some error occurred, you can inspect the code: error.code
@@ -993,8 +990,8 @@ trait Auth extends js.Object {
     *     });
     * ```
     *
-    * @param {string} email The email account to sign in with.
-    * @param {?string=} emailLink The optional link which contains the OTP needed
+    * @param email The email account to sign in with.
+    * @param emailLink The optional link which contains the OTP needed
     *     to complete the sign in with email link. If not specified, the current
     *     URL is used instead.
     */
@@ -1032,7 +1029,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * // 'recaptcha-container' is the ID of an element in the DOM.
     * var applicationVerifier = new firebase.auth.RecaptchaVerifier(
     *     'recaptcha-container');
@@ -1047,9 +1044,9 @@ trait Auth extends js.Object {
     *     });
     * ```
     *
-    * @param {string} phoneNumber The user's phone number in E.164 format (e.g.
+    * @param phoneNumber The user's phone number in E.164 format (e.g.
     *     +16505550101).
-    * @param {!firebase.auth.ApplicationVerifier} applicationVerifier
+    * @param applicationVerifier
     */
   def signInWithPhoneNumber(phoneNumber: java.lang.String, applicationVerifier: ApplicationVerifier): js.Promise[ConfirmationResult] = js.native
   /**
@@ -1104,7 +1101,7 @@ trait Auth extends js.Object {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * // Creates the provider object.
     * var provider = new firebase.auth.FacebookAuthProvider();
     * // You can add additional scopes to the provider:
@@ -1136,10 +1133,9 @@ trait Auth extends js.Object {
     * });
     * ```
     *
-    * @param {!firebase.auth.AuthProvider} provider The provider to authenticate.
+    * @param provider The provider to authenticate.
     *     The provider has to be an OAuth provider. Non-OAuth providers like {@link
     *     firebase.auth.EmailAuthProvider} will throw an error.
-    * @return {!firebase.Promise<!firebase.auth.UserCredential>}
     */
   def signInWithPopup(provider: AuthProvider): js.Promise[UserCredential] = js.native
   /**
@@ -1163,10 +1159,9 @@ trait Auth extends js.Object {
     *     console.</dd>
     * </dl>
     *
-    * @param {!firebase.auth.AuthProvider} provider The provider to authenticate.
+    * @param provider The provider to authenticate.
     *     The provider has to be an OAuth provider. Non-OAuth providers like {@link
     *     firebase.auth.EmailAuthProvider} will throw an error.
-    * @return {!firebase.Promise<void>}
     */
   def signInWithRedirect(provider: AuthProvider): js.Promise[scala.Unit] = js.native
   /**
@@ -1224,8 +1219,7 @@ trait Auth extends js.Object {
     *     issued and when this method was called.</dd>
     * </dl>
     *
-    * @param {string} code A verification code sent to the user.
-    * @return {!firebase.Promise<string>}
+    * @param code A verification code sent to the user.
     */
   def verifyPasswordResetCode(code: java.lang.String): js.Promise[java.lang.String] = js.native
 }

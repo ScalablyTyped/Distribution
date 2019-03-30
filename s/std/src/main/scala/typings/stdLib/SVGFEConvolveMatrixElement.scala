@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFEConvolveMatrixElement interface corresponds to the <feConvolveMatrix> element. */
 @js.native
 trait SVGFEConvolveMatrixElement
   extends SVGElement

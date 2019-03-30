@@ -102,8 +102,7 @@ trait GlobalEventHandlers extends js.Object {
     * Fires when an error occurs during object loading.
     * @param ev The event.
     */
-  @JSName("onerror")
-  var onerror_Original: ErrorEventHandler = js.native
+  var onerror: OnErrorEventHandler = js.native
   /**
     * Fires when the object receives focus.
     * @param ev The event.
@@ -219,7 +218,7 @@ trait GlobalEventHandlers extends js.Object {
     * Fires when the user repositions the scroll box in the scroll bar on the object.
     * @param ev The event.
     */
-  var onscroll: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | scala.Null = js.native
+  var onscroll: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   var onsecuritypolicyviolation: (js.ThisFunction1[/* this */ this.type, /* ev */ SecurityPolicyViolationEvent, _]) | scala.Null = js.native
   /**
     * Occurs when the seek operation ends.
@@ -235,7 +234,9 @@ trait GlobalEventHandlers extends js.Object {
     * Fires when the current selection changes.
     * @param ev The event.
     */
-  var onselect: (js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]) | scala.Null = js.native
+  var onselect: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
+  var onselectionchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
+  var onselectstart: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   /**
     * Occurs when the download has stopped.
     * @param ev The event.
@@ -1353,18 +1354,18 @@ trait GlobalEventHandlers extends js.Object {
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: stdLib.stdLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: stdLib.stdLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: stdLib.stdLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1421,18 +1422,52 @@ trait GlobalEventHandlers extends js.Object {
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: stdLib.stdLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: stdLib.stdLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: stdLib.stdLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: stdLib.stdLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: stdLib.stdLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: stdLib.stdLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: stdLib.stdLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: stdLib.stdLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: stdLib.stdLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1706,37 +1741,6 @@ trait GlobalEventHandlers extends js.Object {
     `type`: stdLib.stdLibStrings.wheel,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ WheelEvent, _],
     options: AddEventListenerOptions
-  ): scala.Unit = js.native
-  def onerror(event: java.lang.String): scala.Unit = js.native
-  def onerror(event: java.lang.String, source: java.lang.String): scala.Unit = js.native
-  def onerror(event: java.lang.String, source: java.lang.String, fileno: scala.Double): scala.Unit = js.native
-  def onerror(
-    event: java.lang.String,
-    source: java.lang.String,
-    fileno: scala.Double,
-    columnNumber: scala.Double
-  ): scala.Unit = js.native
-  def onerror(
-    event: java.lang.String,
-    source: java.lang.String,
-    fileno: scala.Double,
-    columnNumber: scala.Double,
-    error: Error
-  ): scala.Unit = js.native
-  /**
-    * Fires when an error occurs during object loading.
-    * @param ev The event.
-    */
-  def onerror(event: Event): scala.Unit = js.native
-  def onerror(event: Event, source: java.lang.String): scala.Unit = js.native
-  def onerror(event: Event, source: java.lang.String, fileno: scala.Double): scala.Unit = js.native
-  def onerror(event: Event, source: java.lang.String, fileno: scala.Double, columnNumber: scala.Double): scala.Unit = js.native
-  def onerror(
-    event: Event,
-    source: java.lang.String,
-    fileno: scala.Double,
-    columnNumber: scala.Double,
-    error: Error
   ): scala.Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
@@ -2819,18 +2823,18 @@ trait GlobalEventHandlers extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: stdLib.stdLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: stdLib.stdLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: stdLib.stdLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -2887,18 +2891,52 @@ trait GlobalEventHandlers extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: stdLib.stdLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: stdLib.stdLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: stdLib.stdLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: stdLib.stdLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: stdLib.stdLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: stdLib.stdLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: stdLib.stdLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: stdLib.stdLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: stdLib.stdLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")

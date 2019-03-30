@@ -17,7 +17,7 @@ trait SecurityPrivilegeMetadata extends js.Object {
   var CanBeParentEntityReference: scala.Boolean
   var Name: java.lang.String
   var PrivilegeId: java.lang.String
-  var PrivilegeType: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.PrivilegeType
+  var PrivilegeType: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.TypesNs.PrivilegeType
 }
 
 object SecurityPrivilegeMetadata {
@@ -31,7 +31,7 @@ object SecurityPrivilegeMetadata {
     CanBeParentEntityReference: scala.Boolean,
     Name: java.lang.String,
     PrivilegeId: java.lang.String,
-    PrivilegeType: PrivilegeType
+    PrivilegeType: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.TypesNs.PrivilegeType
   ): SecurityPrivilegeMetadata = {
     val __obj = js.Dynamic.literal(CanBeBasic = CanBeBasic, CanBeDeep = CanBeDeep, CanBeEntityReference = CanBeEntityReference, CanBeGlobal = CanBeGlobal, CanBeLocal = CanBeLocal, CanBeParentEntityReference = CanBeParentEntityReference, Name = Name, PrivilegeId = PrivilegeId, PrivilegeType = PrivilegeType)
   

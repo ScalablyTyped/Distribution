@@ -20,6 +20,10 @@ trait ThreadFlowLocation extends js.Object {
     */
   var importance: js.UndefOr[sarifLib.sarifMod.ThreadFlowLocationNs.importance] = js.undefined
   /**
+    * The index within the run threadFlowLocations array.
+    */
+  var index: js.UndefOr[scala.Double] = js.undefined
+  /**
     * A set of distinct strings that categorize the thread flow location. Well-known kinds include acquire, release,
     * enter, exit, call, return, branch, implicit, false, true, caution, danger, unknown, unreachable, taint,
     * function, handler, lock, memory, resource, and scope.
@@ -59,6 +63,7 @@ object ThreadFlowLocation {
     executionOrder: scala.Int | scala.Double = null,
     executionTimeUtc: java.lang.String = null,
     importance: sarifLib.sarifMod.ThreadFlowLocationNs.importance = null,
+    index: scala.Int | scala.Double = null,
     kinds: js.Array[java.lang.String] = null,
     location: Location = null,
     module: java.lang.String = null,
@@ -71,6 +76,7 @@ object ThreadFlowLocation {
     if (executionOrder != null) __obj.updateDynamic("executionOrder")(executionOrder.asInstanceOf[js.Any])
     if (executionTimeUtc != null) __obj.updateDynamic("executionTimeUtc")(executionTimeUtc)
     if (importance != null) __obj.updateDynamic("importance")(importance)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (kinds != null) __obj.updateDynamic("kinds")(kinds)
     if (location != null) __obj.updateDynamic("location")(location)
     if (module != null) __obj.updateDynamic("module")(module)

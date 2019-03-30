@@ -107,6 +107,12 @@ trait ParentNode extends js.Object {
     * match selectors.
     */
   @JSName("querySelectorAll")
+  def querySelectorAll_bdi(selectors: stdLib.stdLibStrings.bdi): NodeListOf[HTMLElement] = js.native
+  /**
+    * Returns all element descendants of node that
+    * match selectors.
+    */
+  @JSName("querySelectorAll")
   def querySelectorAll_bdo(selectors: stdLib.stdLibStrings.bdo): NodeListOf[HTMLElement] = js.native
   /**
     * Returns all element descendants of node that
@@ -495,6 +501,12 @@ trait ParentNode extends js.Object {
     * match selectors.
     */
   @JSName("querySelectorAll")
+  def querySelectorAll_main(selectors: stdLib.stdLibStrings.main): NodeListOf[HTMLElement] = js.native
+  /**
+    * Returns all element descendants of node that
+    * match selectors.
+    */
+  @JSName("querySelectorAll")
   def querySelectorAll_map(selectors: stdLib.stdLibStrings.map): NodeListOf[HTMLMapElement] = js.native
   /**
     * Returns all element descendants of node that
@@ -627,6 +639,12 @@ trait ParentNode extends js.Object {
     * match selectors.
     */
   @JSName("querySelectorAll")
+  def querySelectorAll_rp(selectors: stdLib.stdLibStrings.rp): NodeListOf[HTMLElement] = js.native
+  /**
+    * Returns all element descendants of node that
+    * match selectors.
+    */
+  @JSName("querySelectorAll")
   def querySelectorAll_rt(selectors: stdLib.stdLibStrings.rt): NodeListOf[HTMLElement] = js.native
   /**
     * Returns all element descendants of node that
@@ -708,6 +726,12 @@ trait ParentNode extends js.Object {
     */
   @JSName("querySelectorAll")
   def querySelectorAll_sub(selectors: stdLib.stdLibStrings.sub): NodeListOf[HTMLElement] = js.native
+  /**
+    * Returns all element descendants of node that
+    * match selectors.
+    */
+  @JSName("querySelectorAll")
+  def querySelectorAll_summary(selectors: stdLib.stdLibStrings.summary): NodeListOf[HTMLElement] = js.native
   /**
     * Returns all element descendants of node that
     * match selectors.
@@ -898,6 +922,12 @@ trait ParentNode extends js.Object {
     */
   @JSName("querySelector")
   def querySelector_basefont(selectors: stdLib.stdLibStrings.basefont): HTMLBaseFontElement | scala.Null = js.native
+  /**
+    * Returns the first element that is a descendant of node that
+    * matches selectors.
+    */
+  @JSName("querySelector")
+  def querySelector_bdi(selectors: stdLib.stdLibStrings.bdi): HTMLElement | scala.Null = js.native
   /**
     * Returns the first element that is a descendant of node that
     * matches selectors.
@@ -1291,6 +1321,12 @@ trait ParentNode extends js.Object {
     * matches selectors.
     */
   @JSName("querySelector")
+  def querySelector_main(selectors: stdLib.stdLibStrings.main): HTMLElement | scala.Null = js.native
+  /**
+    * Returns the first element that is a descendant of node that
+    * matches selectors.
+    */
+  @JSName("querySelector")
   def querySelector_map(selectors: stdLib.stdLibStrings.map): HTMLMapElement | scala.Null = js.native
   /**
     * Returns the first element that is a descendant of node that
@@ -1423,6 +1459,12 @@ trait ParentNode extends js.Object {
     * matches selectors.
     */
   @JSName("querySelector")
+  def querySelector_rp(selectors: stdLib.stdLibStrings.rp): HTMLElement | scala.Null = js.native
+  /**
+    * Returns the first element that is a descendant of node that
+    * matches selectors.
+    */
+  @JSName("querySelector")
   def querySelector_rt(selectors: stdLib.stdLibStrings.rt): HTMLElement | scala.Null = js.native
   /**
     * Returns the first element that is a descendant of node that
@@ -1504,6 +1546,12 @@ trait ParentNode extends js.Object {
     */
   @JSName("querySelector")
   def querySelector_sub(selectors: stdLib.stdLibStrings.sub): HTMLElement | scala.Null = js.native
+  /**
+    * Returns the first element that is a descendant of node that
+    * matches selectors.
+    */
+  @JSName("querySelector")
+  def querySelector_summary(selectors: stdLib.stdLibStrings.summary): HTMLElement | scala.Null = js.native
   /**
     * Returns the first element that is a descendant of node that
     * matches selectors.

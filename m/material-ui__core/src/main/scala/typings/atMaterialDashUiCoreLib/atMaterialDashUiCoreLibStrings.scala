@@ -1571,6 +1571,9 @@ object atMaterialDashUiCoreLibStrings {
        with atMaterialDashUiCoreLib.inputLabelInputLabelMod.InputLabelClassKey
   
   @js.native
+  sealed trait reset extends js.Object
+  
+  @js.native
   sealed trait right
     extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Alignment
        with atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
@@ -1850,6 +1853,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait subheading
     extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
        with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
+  
+  @js.native
+  sealed trait submit extends js.Object
   
   @js.native
   sealed trait subtitle
@@ -2752,6 +2758,8 @@ object atMaterialDashUiCoreLibStrings {
   @scala.inline
   def required: required = "required".asInstanceOf[required]
   @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
   def `right-end`: `right-end` = "right-end".asInstanceOf[`right-end`]
@@ -2849,6 +2857,8 @@ object atMaterialDashUiCoreLibStrings {
   def subheader: subheader = "subheader".asInstanceOf[subheader]
   @scala.inline
   def subheading: subheading = "subheading".asInstanceOf[subheading]
+  @scala.inline
+  def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def subtitle: subtitle = "subtitle".asInstanceOf[subtitle]
   @scala.inline

@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait JsxText
-  extends Node
+  extends LiteralLikeNode
      with JsxChild {
-  var containsOnlyWhiteSpaces: scala.Boolean = js.native
+  var containsOnlyTriviaWhiteSpaces: scala.Boolean = js.native
   @JSName("parent")
   var parent_JsxText: JsxElement = js.native
 }

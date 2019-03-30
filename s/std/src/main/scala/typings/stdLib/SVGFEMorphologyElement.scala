@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFEMorphologyElement interface corresponds to the <feMorphology> element. */
 @js.native
 trait SVGFEMorphologyElement
   extends SVGElement

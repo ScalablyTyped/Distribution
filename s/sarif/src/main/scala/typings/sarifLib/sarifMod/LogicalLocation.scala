@@ -17,8 +17,9 @@ trait LogicalLocation extends js.Object {
   var fullyQualifiedName: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The type of construct this logical location component refers to. Should be one of 'function', 'member',
-    * 'module', 'namespace', 'parameter', 'resource', 'returnType', 'type', or 'variable', if any of those accurately
-    * describe the construct.
+    * 'module', 'namespace', 'parameter', 'resource', 'returnType', 'type', 'variable', 'object', 'array', 'property',
+    * 'value', 'element', 'text', 'attribute', 'comment', 'declaration', 'dtd' or 'processingInstruction', if any of
+    * those accurately describe the construct.
     */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**

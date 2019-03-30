@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The PushSubscription interface of the Push API provides a subcription's URL endpoint and allows unsubscription from a push service. */
 trait PushSubscription extends js.Object {
   val endpoint: java.lang.String
   val expirationTime: scala.Double | scala.Null

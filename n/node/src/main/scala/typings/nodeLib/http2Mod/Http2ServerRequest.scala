@@ -9,15 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 class Http2ServerRequest protected ()
   extends nodeLib.streamMod.Readable {
-  var headers: IncomingHttpHeaders = js.native
-  var httpVersion: java.lang.String = js.native
-  var method: java.lang.String = js.native
-  var rawHeaders: js.Array[java.lang.String] = js.native
-  var rawTrailers: js.Array[java.lang.String] = js.native
-  var socket: nodeLib.netMod.Socket | nodeLib.tlsMod.TLSSocket = js.native
-  var stream: ServerHttp2Stream = js.native
-  var trailers: IncomingHttpHeaders = js.native
-  var url: java.lang.String = js.native
+  val aborted: scala.Boolean = js.native
+  val authority: java.lang.String = js.native
+  val headers: IncomingHttpHeaders = js.native
+  val httpVersion: java.lang.String = js.native
+  val method: java.lang.String = js.native
+  val rawHeaders: js.Array[java.lang.String] = js.native
+  val rawTrailers: js.Array[java.lang.String] = js.native
+  val scheme: java.lang.String = js.native
+  val socket: nodeLib.netMod.Socket | nodeLib.tlsMod.TLSSocket = js.native
+  val stream: ServerHttp2Stream = js.native
+  val trailers: IncomingHttpHeaders = js.native
+  val url: java.lang.String = js.native
   @JSName("addListener")
   def addListener_aborted(
     event: nodeLib.nodeLibStrings.aborted,
@@ -25,6 +28,10 @@ class Http2ServerRequest protected ()
   ): this.type = js.native
   @JSName("emit")
   def emit_aborted(event: nodeLib.nodeLibStrings.aborted, hadError: scala.Boolean, code: scala.Double): scala.Boolean = js.native
+  @JSName("emit")
+  def emit_data(event: nodeLib.nodeLibStrings.data, chunk: java.lang.String): scala.Boolean = js.native
+  @JSName("emit")
+  def emit_data(event: nodeLib.nodeLibStrings.data, chunk: nodeLib.Buffer): scala.Boolean = js.native
   @JSName("on")
   def on_aborted(
     event: nodeLib.nodeLibStrings.aborted,

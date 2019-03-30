@@ -24,7 +24,7 @@ trait Database extends js.Object {
     * instance.
     *
     * @example
-    * ```
+    * ```javascript
     * var app = database.app;
     * ```
     */
@@ -49,7 +49,7 @@ trait Database extends js.Object {
     * `goOnline()`.
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.database().goOffline();
     * ```
     */
@@ -64,7 +64,7 @@ trait Database extends js.Object {
     * automatically.
     *
     * @example
-    * ```
+    * ```javascript
     * firebase.database().goOnline();
     * ```
     */
@@ -75,13 +75,13 @@ trait Database extends js.Object {
     * will point to the root of the Database.
     *
     * @example
-    * ```
+    * ```javascript
     * // Get a reference to the root of the Database
     * var rootRef = firebase.database().ref();
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Get a reference to the /users/ada node
     * var adaRef = firebase.database().ref("users/ada");
     * // The above is shorthand for the following operations:
@@ -89,10 +89,10 @@ trait Database extends js.Object {
     * //var adaRef = rootRef.child("users/ada");
     * ```
     *
-    * @param {string=} path Optional path representing the location the returned
+    * @param path Optional path representing the location the returned
     *   `Reference` will point. If not provided, the returned `Reference` will
     *   point to the root of the Database.
-    * @return {!firebase.database.Reference} If a path is provided, a `Reference`
+    * @return If a path is provided, a `Reference`
     *   pointing to the provided path. Otherwise, a `Reference` pointing to the
     *   root of the Database.
     */
@@ -109,20 +109,20 @@ trait Database extends js.Object {
     * and are not applied to the returned `Reference`.
     *
     * @example
-    * ```
+    * ```javascript
     * // Get a reference to the root of the Database
     * var rootRef = firebase.database().ref("https://<DATABASE_NAME>.firebaseio.com");
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Get a reference to the /users/ada node
     * var adaRef = firebase.database().ref("https://<DATABASE_NAME>.firebaseio.com/users/ada");
     * ```
     *
-    * @param {string} url The Firebase URL at which the returned `Reference` will
+    * @param url The Firebase URL at which the returned `Reference` will
     *   point.
-    * @return {!firebase.database.Reference} A `Reference` pointing to the provided
+    * @return A `Reference` pointing to the provided
     *   Firebase URL.
     */
   def refFromURL(url: java.lang.String): Reference = js.native

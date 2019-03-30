@@ -45,6 +45,8 @@ object PointerEventInit {
     modifierSuper: js.UndefOr[scala.Boolean] = js.undefined,
     modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined,
     modifierSymbolLock: js.UndefOr[scala.Boolean] = js.undefined,
+    movementX: scala.Int | scala.Double = null,
+    movementY: scala.Int | scala.Double = null,
     pointerId: scala.Int | scala.Double = null,
     pointerType: java.lang.String = null,
     pressure: scala.Int | scala.Double = null,
@@ -84,6 +86,8 @@ object PointerEventInit {
     if (!js.isUndefined(modifierSuper)) __obj.updateDynamic("modifierSuper")(modifierSuper)
     if (!js.isUndefined(modifierSymbol)) __obj.updateDynamic("modifierSymbol")(modifierSymbol)
     if (!js.isUndefined(modifierSymbolLock)) __obj.updateDynamic("modifierSymbolLock")(modifierSymbolLock)
+    if (movementX != null) __obj.updateDynamic("movementX")(movementX.asInstanceOf[js.Any])
+    if (movementY != null) __obj.updateDynamic("movementY")(movementY.asInstanceOf[js.Any])
     if (pointerId != null) __obj.updateDynamic("pointerId")(pointerId.asInstanceOf[js.Any])
     if (pointerType != null) __obj.updateDynamic("pointerType")(pointerType)
     if (pressure != null) __obj.updateDynamic("pressure")(pressure.asInstanceOf[js.Any])

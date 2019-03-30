@@ -94,8 +94,8 @@ class Group protected ()
   val metricsGranularity: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Setting this causes Terraform to wait for
-    * this number of instances to show up healthy in the ELB only on creation.
-    * Updates will not wait on ELB instance number changes.
+    * this number of instances from this autoscaling group to show up healthy in the
+    * ELB only on creation. Updates will not wait on ELB instance number changes.
     * (See also Waiting for Capacity below.)
     */
   val minElbCapacity: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
@@ -149,7 +149,7 @@ class Group protected ()
     */
   val targetGroupArns: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
-    * A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `Default`.
+    * A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
     */
   val terminationPolicies: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
@@ -159,9 +159,9 @@ class Group protected ()
   val waitForCapacityTimeout: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Setting this will cause Terraform to wait
-    * for exactly this number of healthy instances in all attached load balancers
-    * on both create and update operations. (Takes precedence over
-    * `min_elb_capacity` behavior.)
+    * for exactly this number of healthy instances from this autoscaling group in
+    * all attached load balancers on both create and update operations. (Takes
+    * precedence over `min_elb_capacity` behavior.)
     * (See also Waiting for Capacity below.)
     */
   val waitForElbCapacity: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native

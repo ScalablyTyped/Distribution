@@ -2139,12 +2139,12 @@ trait Builders
   def tsBooleanKeyword(): astDashTypesLib.genNodesMod.TSBooleanKeyword = js.native
   def tsCallSignatureDeclaration(
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ]
   ): astDashTypesLib.genNodesMod.TSCallSignatureDeclaration = js.native
   def tsCallSignatureDeclaration(
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ],
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
   ): astDashTypesLib.genNodesMod.TSCallSignatureDeclaration = js.native
@@ -2156,18 +2156,18 @@ trait Builders
   ): astDashTypesLib.genNodesMod.TSConditionalType = js.native
   def tsConstructSignatureDeclaration(
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ]
   ): astDashTypesLib.genNodesMod.TSConstructSignatureDeclaration = js.native
   def tsConstructSignatureDeclaration(
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ],
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
   ): astDashTypesLib.genNodesMod.TSConstructSignatureDeclaration = js.native
   def tsConstructorType(
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ]
   ): astDashTypesLib.genNodesMod.TSConstructorType = js.native
   def tsDeclareFunction(
@@ -2290,7 +2290,7 @@ trait Builders
   def tsExternalModuleReference(expression: astDashTypesLib.genKindsMod.StringLiteralKind): astDashTypesLib.genNodesMod.TSExternalModuleReference = js.native
   def tsFunctionType(
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ]
   ): astDashTypesLib.genNodesMod.TSFunctionType = js.native
   def tsImportEqualsDeclaration(
@@ -2364,13 +2364,13 @@ trait Builders
   def tsMethodSignature(
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ]
   ): astDashTypesLib.genNodesMod.TSMethodSignature = js.native
   def tsMethodSignature(
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ],
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
   ): astDashTypesLib.genNodesMod.TSMethodSignature = js.native

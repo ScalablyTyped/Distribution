@@ -397,6 +397,8 @@ class Editor ()
   var setBlocksAtRange_Original: slateDashReactLib.Anon_PropertiesRange = js.native
   @JSName("setBlocks")
   var setBlocks_Original: slateDashReactLib.Anon_Properties = js.native
+  @JSName("setDecorations")
+  var setDecorations_Original: slateDashReactLib.Anon_Decorations = js.native
   @JSName("setInlinesAtRange")
   var setInlinesAtRange_Original: slateDashReactLib.Anon_PropertiesRangeController = js.native
   @JSName("setInlines")
@@ -1030,6 +1032,8 @@ class Editor ()
   def setBlocks_Controller(properties: java.lang.String): slateLib.slateMod.Controller = js.native
   @JSName("setBlocks")
   def setBlocks_Controller(properties: slateLib.slateMod.BlockProperties): slateLib.slateMod.Controller = js.native
+  def setDecorations(decorations: immutableLib.immutableMod.List[slateLib.slateMod.Decoration]): slateLib.slateMod.Editor = js.native
+  def setDecorations(decorations: js.Array[slateLib.slateMod.Decoration]): slateLib.slateMod.Editor = js.native
   @JSName("setInlinesAtRange")
   def setInlinesAtRange_Controller(range: slateLib.slateMod.Range, properties: java.lang.String): slateLib.slateMod.Controller = js.native
   @JSName("setInlinesAtRange")

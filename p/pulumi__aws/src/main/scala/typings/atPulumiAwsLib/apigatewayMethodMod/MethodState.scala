@@ -40,21 +40,13 @@ trait MethodState extends js.Object {
   ] = js.undefined
   /**
     * A map of request query string parameters and headers that should be passed to the integration.
-    * For example:
-    * ```typescript
-    * import * as pulumi from "@pulumi/pulumi";
-    * ```
-    * would define that the header `X-Some-Header` and the query string `some-query-param` must be provided on the request, or
+    * For example: `request_parameters = {"method.request.header.X-Some-Header" = true "method.request.querystring.some-query-param" = true}` would define that the header `X-Some-Header` and the query string `some-query-param` must be provided in the request
     */
   val requestParameters: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[scala.Boolean]]
     ]
   ] = js.undefined
-  /**
-    * **Deprecated**, use `request_parameters` instead.
-    */
-  val requestParametersInJson: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The ID of a `aws_api_gateway_request_validator`
     */
@@ -83,7 +75,6 @@ object MethodState {
     requestParameters: atPulumiPulumiLib.outputMod.Input[
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[scala.Boolean]]
     ] = null,
-    requestParametersInJson: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     requestValidatorId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     resourceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     restApi: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = null
@@ -96,7 +87,6 @@ object MethodState {
     if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
     if (requestModels != null) __obj.updateDynamic("requestModels")(requestModels.asInstanceOf[js.Any])
     if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters.asInstanceOf[js.Any])
-    if (requestParametersInJson != null) __obj.updateDynamic("requestParametersInJson")(requestParametersInJson.asInstanceOf[js.Any])
     if (requestValidatorId != null) __obj.updateDynamic("requestValidatorId")(requestValidatorId.asInstanceOf[js.Any])
     if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
     if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])

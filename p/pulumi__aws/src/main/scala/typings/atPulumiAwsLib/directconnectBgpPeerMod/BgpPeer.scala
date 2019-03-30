@@ -28,6 +28,10 @@ class BgpPeer protected ()
     */
   val amazonAddress: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * The Direct Connect endpoint on which the BGP peer terminates.
+    */
+  val awsDevice: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
     */
   val bgpAsn: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
@@ -35,6 +39,10 @@ class BgpPeer protected ()
     * The authentication key for BGP configuration.
     */
   val bgpAuthKey: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * The ID of the BGP peer.
+    */
+  val bgpPeerId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Up/Down state of the BGP peer.
     */

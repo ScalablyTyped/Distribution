@@ -34,10 +34,6 @@ class Distribution protected ()
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * **Deprecated**, use `ordered_cache_behavior` instead.
-    */
-  val cacheBehaviors: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AllowedMethods]]] = js.native
-  /**
     * Internal value used by CloudFront to allow future
     * updates to the distribution configuration.
     */
@@ -55,7 +51,7 @@ class Distribution protected ()
     * The default cache behavior for this distribution (maximum
     * one).
     */
-  val defaultCacheBehavior: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AllowedMethodsCachedMethods] = js.native
+  val defaultCacheBehavior: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AllowedMethods] = js.native
   /**
     * The object that you want CloudFront to
     * return (for example, index.html) when an end user requests the root URL.
@@ -110,9 +106,9 @@ class Distribution protected ()
   /**
     * An ordered list of cache behaviors
     * resource for this distribution. List from top to bottom
-    * +    in order of precedence. The topmost cache behavior will have precedence 0.
+    * in order of precedence. The topmost cache behavior will have precedence 0.
     */
-  val orderedCacheBehaviors: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AllowedMethods]]] = js.native
+  val orderedCacheBehaviors: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AllowedMethodsCachedMethods]]] = js.native
   /**
     * One or more origins for this
     * distribution (multiples allowed).

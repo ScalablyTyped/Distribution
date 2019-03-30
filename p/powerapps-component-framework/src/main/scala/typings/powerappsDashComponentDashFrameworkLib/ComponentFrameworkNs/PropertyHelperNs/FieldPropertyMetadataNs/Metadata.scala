@@ -10,7 +10,7 @@ trait Metadata extends js.Object {
   var DisplayName: java.lang.String
   var IsSecured: scala.Boolean
   var LogicalName: java.lang.String
-  var RequiredLevel: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.RequiredLevel
+  var RequiredLevel: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.TypesNs.RequiredLevel
   var SourceType: scala.Double
 }
 
@@ -21,7 +21,7 @@ object Metadata {
     DisplayName: java.lang.String,
     IsSecured: scala.Boolean,
     LogicalName: java.lang.String,
-    RequiredLevel: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.RequiredLevel,
+    RequiredLevel: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.TypesNs.RequiredLevel,
     SourceType: scala.Double
   ): Metadata = {
     val __obj = js.Dynamic.literal(Description = Description, DisplayName = DisplayName, IsSecured = IsSecured, LogicalName = LogicalName, RequiredLevel = RequiredLevel, SourceType = SourceType)

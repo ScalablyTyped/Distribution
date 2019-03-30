@@ -12,6 +12,6 @@ trait ClassPrivatePropertyBuilder extends js.Object {
     key: astDashTypesLib.genKindsMod.PrivateNameKind,
     value: astDashTypesLib.genKindsMod.ExpressionKind
   ): astDashTypesLib.genNodesMod.ClassPrivateProperty = js.native
-  def from(params: astDashTypesLib.Anon_CommentsComputedKeyLocMinus): astDashTypesLib.genNodesMod.ClassPrivateProperty = js.native
+  def from(params: astDashTypesLib.Anon_AccessComments): astDashTypesLib.genNodesMod.ClassPrivateProperty = js.native
 }
 

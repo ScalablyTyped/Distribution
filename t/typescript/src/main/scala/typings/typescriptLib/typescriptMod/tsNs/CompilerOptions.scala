@@ -28,6 +28,7 @@ trait CompilerOptions
   var experimentalDecorators: js.UndefOr[scala.Boolean] = js.undefined
   var forceConsistentCasingInFileNames: js.UndefOr[scala.Boolean] = js.undefined
   var importHelpers: js.UndefOr[scala.Boolean] = js.undefined
+  var incremental: js.UndefOr[scala.Boolean] = js.undefined
   var inlineSourceMap: js.UndefOr[scala.Boolean] = js.undefined
   var inlineSources: js.UndefOr[scala.Boolean] = js.undefined
   var isolatedModules: js.UndefOr[scala.Boolean] = js.undefined
@@ -81,6 +82,7 @@ trait CompilerOptions
   var suppressImplicitAnyIndexErrors: js.UndefOr[scala.Boolean] = js.undefined
   var target: js.UndefOr[ScriptTarget] = js.undefined
   var traceResolution: js.UndefOr[scala.Boolean] = js.undefined
+  var tsBuildInfoFile: js.UndefOr[java.lang.String] = js.undefined
   /** Paths used to compute primary types search locations */
   var typeRoots: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -111,6 +113,7 @@ object CompilerOptions {
     experimentalDecorators: js.UndefOr[scala.Boolean] = js.undefined,
     forceConsistentCasingInFileNames: js.UndefOr[scala.Boolean] = js.undefined,
     importHelpers: js.UndefOr[scala.Boolean] = js.undefined,
+    incremental: js.UndefOr[scala.Boolean] = js.undefined,
     inlineSourceMap: js.UndefOr[scala.Boolean] = js.undefined,
     inlineSources: js.UndefOr[scala.Boolean] = js.undefined,
     isolatedModules: js.UndefOr[scala.Boolean] = js.undefined,
@@ -164,6 +167,7 @@ object CompilerOptions {
     suppressImplicitAnyIndexErrors: js.UndefOr[scala.Boolean] = js.undefined,
     target: ScriptTarget = null,
     traceResolution: js.UndefOr[scala.Boolean] = js.undefined,
+    tsBuildInfoFile: java.lang.String = null,
     typeRoots: js.Array[java.lang.String] = null,
     types: js.Array[java.lang.String] = null
   ): CompilerOptions = {
@@ -190,6 +194,7 @@ object CompilerOptions {
     if (!js.isUndefined(experimentalDecorators)) __obj.updateDynamic("experimentalDecorators")(experimentalDecorators)
     if (!js.isUndefined(forceConsistentCasingInFileNames)) __obj.updateDynamic("forceConsistentCasingInFileNames")(forceConsistentCasingInFileNames)
     if (!js.isUndefined(importHelpers)) __obj.updateDynamic("importHelpers")(importHelpers)
+    if (!js.isUndefined(incremental)) __obj.updateDynamic("incremental")(incremental)
     if (!js.isUndefined(inlineSourceMap)) __obj.updateDynamic("inlineSourceMap")(inlineSourceMap)
     if (!js.isUndefined(inlineSources)) __obj.updateDynamic("inlineSources")(inlineSources)
     if (!js.isUndefined(isolatedModules)) __obj.updateDynamic("isolatedModules")(isolatedModules)
@@ -243,6 +248,7 @@ object CompilerOptions {
     if (!js.isUndefined(suppressImplicitAnyIndexErrors)) __obj.updateDynamic("suppressImplicitAnyIndexErrors")(suppressImplicitAnyIndexErrors)
     if (target != null) __obj.updateDynamic("target")(target)
     if (!js.isUndefined(traceResolution)) __obj.updateDynamic("traceResolution")(traceResolution)
+    if (tsBuildInfoFile != null) __obj.updateDynamic("tsBuildInfoFile")(tsBuildInfoFile)
     if (typeRoots != null) __obj.updateDynamic("typeRoots")(typeRoots)
     if (types != null) __obj.updateDynamic("types")(types)
     __obj.asInstanceOf[CompilerOptions]

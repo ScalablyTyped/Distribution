@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "TemporalUnit")
 @js.native
-class TemporalUnit ()
+abstract class TemporalUnit ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalUnit {
   /* CompleteClass */
   override def addTo[T /* <: jsDashJodaLib.jsDashJodaMod.JSJodaNs.Temporal */](temporal: T, amount: scala.Double): T = js.native

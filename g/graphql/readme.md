@@ -1,5 +1,5 @@
 ```
-// Type definitions for graphql 14.0
+// Type definitions for graphql 14.2
 // Project: https://github.com/graphql/graphql-js
 // Definitions by: TonyYang <https://github.com/TonyPythoneer>
 //                 Caleb Meredith <https://github.com/calebmer>
@@ -19,6 +19,7 @@
 //                 Jonathan Cardoso <https://github.com/JCMais>
 //                 Pavel Lang <https://github.com/langpavel>
 //                 Mark Caudill <https://github.com/mc0>
+//                 Martijn Walraven <https://github.com/martijnwalraven>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.6
 // The primary entry point into fulfilling a GraphQL request.
@@ -33,10 +34,6 @@
  */
 /**
  * The set of allowed kind values for AST nodes.
- */
-/**
- * Converts an AST into a string, using one set of reasonable
- * formatting rules.
  */
 // Conveniently represents flow's "Maybe" type https://flow.org/en/docs/types/maybe/
 // The GraphQL query recommended for a full schema introspection.

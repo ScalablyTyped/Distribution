@@ -930,17 +930,5 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayVpcLinkMod.VpcLink = js.native
   }
   
-  @JSName("x")
-  @js.native
-  object xNs extends js.Object {
-    @js.native
-    class API protected ()
-      extends atPulumiAwsLib.apigatewayMod.xNs.API {
-      def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayExperimentalApiMod.APIArgs) = this()
-      def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayExperimentalApiMod.APIArgs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
-    }
-    
-  }
-  
 }
 

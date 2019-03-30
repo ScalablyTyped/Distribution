@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("crypto", "DiffieHellman")
 @js.native
-trait DiffieHellman extends js.Object {
+class DiffieHellman protected () extends js.Object {
   var verifyError: scala.Double = js.native
   def computeSecret(other_public_key: java.lang.String, input_encoding: HexBase64Latin1Encoding): nodeLib.Buffer = js.native
   def computeSecret(

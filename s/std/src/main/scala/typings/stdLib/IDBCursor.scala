@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The IDBCursor interface of the IndexedDB API represents a cursor for traversing or iterating over multiple records in a database. */
 @js.native
 trait IDBCursor extends js.Object {
   /**
@@ -16,12 +17,12 @@ trait IDBCursor extends js.Object {
     * Returns the key of the cursor.
     * Throws a "InvalidStateError" DOMException if the cursor is advancing or is finished.
     */
-  val key: IDBValidKey | IDBKeyRange = js.native
+  val key: IDBValidKey = js.native
   /**
     * Returns the effective key of the cursor.
     * Throws a "InvalidStateError" DOMException if the cursor is advancing or is finished.
     */
-  val primaryKey: IDBValidKey | IDBKeyRange = js.native
+  val primaryKey: IDBValidKey = js.native
   /**
     * Returns the IDBObjectStore or IDBIndex the cursor was opened from.
     */
@@ -36,11 +37,7 @@ trait IDBCursor extends js.Object {
     * after key.
     */
   def continue(): scala.Unit = js.native
-  def continue(key: IDBKeyRange): scala.Unit = js.native
   def continue(key: IDBValidKey): scala.Unit = js.native
-  def continuePrimaryKey(key: IDBKeyRange, primaryKey: IDBKeyRange): scala.Unit = js.native
-  def continuePrimaryKey(key: IDBKeyRange, primaryKey: IDBValidKey): scala.Unit = js.native
-  def continuePrimaryKey(key: IDBValidKey, primaryKey: IDBKeyRange): scala.Unit = js.native
   /**
     * Advances the cursor to the next record in range matching
     * or after key and primaryKey. Throws an "InvalidAccessError" DOMException if the source is not an index.

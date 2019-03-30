@@ -28,6 +28,10 @@ object ScriptTarget extends js.Object {
     extends typescriptLib.typescriptMod.tsNs.ScriptTarget
   
   @js.native
+  sealed trait ES2019
+    extends typescriptLib.typescriptMod.tsNs.ScriptTarget
+  
+  @js.native
   sealed trait ES3
     extends typescriptLib.typescriptMod.tsNs.ScriptTarget
   

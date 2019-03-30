@@ -31,10 +31,6 @@ class Cluster protected ()
     */
   val availabilityZone: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * Use `preferred_availability_zones` instead unless you want to create cache nodes in single-az, then use `availability_zone`. Set of Availability Zones in which the cache nodes will be created.
-    */
-  val availabilityZones: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
-  /**
     * Specifies whether the nodes in this Memcached node group are created in a single Availability Zone or created across multiple Availability Zones in the cluster's region. Valid values for this parameter are `single-az` or `cross-az`, default is `single-az`. If you want to choose `cross-az`, `num_cache_nodes` must be greater than `1`
     */
   val azMode: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

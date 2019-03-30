@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object sarifLibStrings {
   @js.native
-  sealed trait `2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-24` extends js.Object
+  sealed trait `2DOT0DOT0-csdDOT2DOTbetaDOT2019-02-20` extends js.Object
   
   @js.native
   sealed trait absent
@@ -57,8 +57,7 @@ object sarifLibStrings {
   
   @js.native
   sealed trait none
-    extends sarifLib.sarifMod.ResultNs.kind
-       with sarifLib.sarifMod.NotificationNs.level
+    extends sarifLib.sarifMod.NotificationNs.level
        with sarifLib.sarifMod.ReportingConfigurationNs.level
        with sarifLib.sarifMod.ResultNs.level
   
@@ -151,7 +150,7 @@ object sarifLibStrings {
        with sarifLib.sarifMod.ResultNs.level
   
   @scala.inline
-  def `2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-24`: `2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-24` = "2.0.0-csd.2.beta.2019-01-24".asInstanceOf[`2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-24`]
+  def `2DOT0DOT0-csdDOT2DOTbetaDOT2019-02-20`: `2DOT0DOT0-csdDOT2DOTbetaDOT2019-02-20` = "2.0.0-csd.2.beta.2019-02-20".asInstanceOf[`2DOT0DOT0-csdDOT2DOTbetaDOT2019-02-20`]
   @scala.inline
   def absent: absent = "absent".asInstanceOf[absent]
   @scala.inline

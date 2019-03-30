@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "react-themeable-ts"
-version := "1.0.0-0e7451"
+version := "1.0.0-89ac37"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20190325Z-43290b",
-  "org.scalablytyped" %%% "csstype" % "2.6.3-9dec0a",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-7a74e5",
-  "org.scalablytyped" %%% "lodash_dot_get" % "4.4-dt-20190214Z-2c7878",
-  "org.scalablytyped" %%% "lodash_dot_isobject" % "3.0-dt-20190214Z-55274c",
-  "org.scalablytyped" %%% "lodash_dot_size" % "4.2-dt-20190214Z-e510cd",
-  "org.scalablytyped" %%% "memoizee" % "0.4-dt-20180214Z-6bc800",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-1549d2",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190322Z-acd0bd",
-  "org.scalablytyped" %%% "std" % "3.3-14e863",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-f320f9")
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20190325Z-9fc905",
+  "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "lodash_dot_get" % "4.4-dt-20190214Z-e908b9",
+  "org.scalablytyped" %%% "lodash_dot_isobject" % "3.0-dt-20190214Z-b35ad3",
+  "org.scalablytyped" %%% "lodash_dot_size" % "4.2-dt-20190214Z-3177f6",
+  "org.scalablytyped" %%% "memoizee" % "0.4-dt-20180214Z-0bb9ec",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
+  "org.scalablytyped" %%% "std" % "3.4-d52857",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-446b32")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

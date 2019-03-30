@@ -16,7 +16,7 @@ trait ConditionExpression extends js.Object {
   /**
   				 * The value evaluated by the condition
   				 */
-  var conditionOperator: ConditionOperator
+  var conditionOperator: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.DataSetApiNs.TypesNs.ConditionOperator
   /**
   				 * Entity alias name so filtering can be used on linked entities.
   				 */
@@ -31,7 +31,7 @@ object ConditionExpression {
   @scala.inline
   def apply(
     attributeName: java.lang.String,
-    conditionOperator: ConditionOperator,
+    conditionOperator: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.DataSetApiNs.TypesNs.ConditionOperator,
     value: java.lang.String | js.Array[java.lang.String],
     entityAliasName: java.lang.String = null
   ): ConditionExpression = {

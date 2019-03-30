@@ -16,7 +16,7 @@ trait ApplicationVerifier extends js.Object {
   var `type`: java.lang.String
   /**
     * Executes the verification process.
-    * @return {!firebase.Promise<string>} A Promise for a token that can be used to
+    * @return A Promise for a token that can be used to
     *     assert the validity of a request.
     */
   def verify(): js.Promise[java.lang.String]

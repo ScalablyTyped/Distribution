@@ -14,6 +14,7 @@ trait GetTargetGroupResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  val lambdaMultiValueHeadersEnabled: scala.Boolean
   val name: java.lang.String
   val port: scala.Double
   val protocol: java.lang.String
@@ -31,6 +32,7 @@ object GetTargetGroupResult {
     deregistrationDelay: scala.Double,
     healthCheck: atPulumiAwsLib.Anon_HealthyThreshold,
     id: java.lang.String,
+    lambdaMultiValueHeadersEnabled: scala.Boolean,
     name: java.lang.String,
     port: scala.Double,
     protocol: java.lang.String,
@@ -39,7 +41,7 @@ object GetTargetGroupResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     vpcId: java.lang.String
   ): GetTargetGroupResult = {
-    val __obj = js.Dynamic.literal(arn = arn, arnSuffix = arnSuffix, deregistrationDelay = deregistrationDelay, healthCheck = healthCheck, id = id, name = name, port = port, protocol = protocol, slowStart = slowStart, stickiness = stickiness, tags = tags, vpcId = vpcId)
+    val __obj = js.Dynamic.literal(arn = arn, arnSuffix = arnSuffix, deregistrationDelay = deregistrationDelay, healthCheck = healthCheck, id = id, lambdaMultiValueHeadersEnabled = lambdaMultiValueHeadersEnabled, name = name, port = port, protocol = protocol, slowStart = slowStart, stickiness = stickiness, tags = tags, vpcId = vpcId)
   
     __obj.asInstanceOf[GetTargetGroupResult]
   }

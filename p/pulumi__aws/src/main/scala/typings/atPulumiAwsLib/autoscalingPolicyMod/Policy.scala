@@ -44,10 +44,6 @@ class Policy protected ()
   val metricAggregationType: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   val minAdjustmentMagnitude: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
-    * Use `min_adjustment_magnitude` instead.
-    */
-  val minAdjustmentStep: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
-  /**
     * The name of the dimension.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

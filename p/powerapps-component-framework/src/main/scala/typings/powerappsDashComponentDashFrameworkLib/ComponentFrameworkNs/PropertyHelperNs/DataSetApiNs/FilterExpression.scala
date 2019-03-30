@@ -16,7 +16,7 @@ trait FilterExpression extends js.Object {
   /**
   				 * The operator used to combine conditions in this filter.
   				 */
-  var filterOperator: FilterOperator
+  var filterOperator: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.DataSetApiNs.TypesNs.FilterOperator
   /**
   				 * Any child filters that should be evaluated after evaluating this filter.
   				 */
@@ -27,7 +27,7 @@ object FilterExpression {
   @scala.inline
   def apply(
     conditions: js.Array[ConditionExpression],
-    filterOperator: FilterOperator,
+    filterOperator: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.DataSetApiNs.TypesNs.FilterOperator,
     filters: js.Array[FilterExpression] = null
   ): FilterExpression = {
     val __obj = js.Dynamic.literal(conditions = conditions, filterOperator = filterOperator)

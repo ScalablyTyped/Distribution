@@ -781,7 +781,7 @@ trait WorkSpaces
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modifies the properties of the specified Amazon WorkSpaces client.
+    * Modifies the properties of the specified Amazon WorkSpaces clients.
     */
   def modifyClientProperties(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyClientPropertiesResult, 
@@ -798,7 +798,7 @@ trait WorkSpaces
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modifies the properties of the specified Amazon WorkSpaces client.
+    * Modifies the properties of the specified Amazon WorkSpaces clients.
     */
   def modifyClientProperties(params: awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyClientPropertiesRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.ModifyClientPropertiesResult, 

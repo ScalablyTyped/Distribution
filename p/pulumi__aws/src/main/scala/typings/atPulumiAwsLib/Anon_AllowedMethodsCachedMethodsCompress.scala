@@ -17,7 +17,6 @@ trait Anon_AllowedMethodsCachedMethodsCompress extends js.Object {
   ] = js.undefined
   var maxTtl: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   var minTtl: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
-  var pathPattern: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   var smoothStreaming: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   var targetOriginId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   var trustedSigners: js.UndefOr[
@@ -32,7 +31,6 @@ object Anon_AllowedMethodsCachedMethodsCompress {
     allowedMethods: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
     cachedMethods: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
     forwardedValues: atPulumiPulumiLib.outputMod.Input[Anon_CookiesHeaders],
-    pathPattern: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     targetOriginId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     viewerProtocolPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     compress: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
@@ -44,7 +42,7 @@ object Anon_AllowedMethodsCachedMethodsCompress {
     smoothStreaming: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     trustedSigners: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
   ): Anon_AllowedMethodsCachedMethodsCompress = {
-    val __obj = js.Dynamic.literal(allowedMethods = allowedMethods.asInstanceOf[js.Any], cachedMethods = cachedMethods.asInstanceOf[js.Any], forwardedValues = forwardedValues.asInstanceOf[js.Any], pathPattern = pathPattern.asInstanceOf[js.Any], targetOriginId = targetOriginId.asInstanceOf[js.Any], viewerProtocolPolicy = viewerProtocolPolicy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allowedMethods = allowedMethods.asInstanceOf[js.Any], cachedMethods = cachedMethods.asInstanceOf[js.Any], forwardedValues = forwardedValues.asInstanceOf[js.Any], targetOriginId = targetOriginId.asInstanceOf[js.Any], viewerProtocolPolicy = viewerProtocolPolicy.asInstanceOf[js.Any])
     if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
     if (defaultTtl != null) __obj.updateDynamic("defaultTtl")(defaultTtl.asInstanceOf[js.Any])
     if (fieldLevelEncryptionId != null) __obj.updateDynamic("fieldLevelEncryptionId")(fieldLevelEncryptionId.asInstanceOf[js.Any])

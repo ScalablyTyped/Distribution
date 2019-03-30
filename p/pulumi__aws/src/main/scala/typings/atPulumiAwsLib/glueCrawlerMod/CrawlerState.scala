@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait CrawlerState extends js.Object {
   /**
+    * The ARN of the crawler
+    */
+  val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
     */
   val classifiers: js.UndefOr[
@@ -75,6 +79,7 @@ trait CrawlerState extends js.Object {
 object CrawlerState {
   @scala.inline
   def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     classifiers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     configuration: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     databaseName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -92,6 +97,7 @@ object CrawlerState {
     tablePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): CrawlerState = {
     val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (classifiers != null) __obj.updateDynamic("classifiers")(classifiers.asInstanceOf[js.Any])
     if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
     if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])

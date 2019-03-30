@@ -9,62 +9,62 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var ActiveXObject: stdLib.ActiveXObject = js.native
-  val Array: ArrayConstructor = js.native
-  val ArrayBuffer: ArrayBufferConstructor = js.native
+  var Array: ArrayConstructor = js.native
+  var ArrayBuffer: ArrayBufferConstructor = js.native
   var Atomics: stdLib.Atomics = js.native
-  val BigInt: BigIntConstructor = js.native
-  val BigInt64Array: BigInt64ArrayConstructor = js.native
-  val BigUint64Array: BigUint64ArrayConstructor = js.native
-  val Boolean: BooleanConstructor = js.native
+  var BigInt: BigIntConstructor = js.native
+  var BigInt64Array: BigInt64ArrayConstructor = js.native
+  var BigUint64Array: BigUint64ArrayConstructor = js.native
+  var Boolean: BooleanConstructor = js.native
   var CSS: stdLib.CSS = js.native
-  val DataView: DataViewConstructor = js.native
-  val Date: DateConstructor = js.native
+  var DataView: DataViewConstructor = js.native
+  var Date: DateConstructor = js.native
   var Enumerator: EnumeratorConstructor = js.native
-  val Error: ErrorConstructor = js.native
-  val EvalError: EvalErrorConstructor = js.native
-  val Float32Array: Float32ArrayConstructor = js.native
-  val Float64Array: Float64ArrayConstructor = js.native
-  val Function: FunctionConstructor = js.native
-  val Infinity: scala.Double = js.native
-  val Int16Array: Int16ArrayConstructor = js.native
-  val Int32Array: Int32ArrayConstructor = js.native
-  val Int8Array: Int8ArrayConstructor = js.native
+  var Error: ErrorConstructor = js.native
+  var EvalError: EvalErrorConstructor = js.native
+  var Float32Array: Float32ArrayConstructor = js.native
+  var Float64Array: Float64ArrayConstructor = js.native
+  var Function: FunctionConstructor = js.native
+  var Infinity: scala.Double = js.native
+  var Int16Array: Int16ArrayConstructor = js.native
+  var Int32Array: Int32ArrayConstructor = js.native
+  var Int8Array: Int8ArrayConstructor = js.native
   /**
     * An intrinsic object that provides functions to convert JavaScript values to and from the JavaScript Object Notation (JSON) format.
     */
-  val JSON: stdLib.JSON = js.native
+  var JSON: stdLib.JSON = js.native
   var Map: MapConstructor = js.native
   /** An intrinsic object that provides basic mathematics functionality and constants. */
-  val Math: stdLib.Math = js.native
+  var Math: stdLib.Math = js.native
   /////////////////////////////
   /// ECMAScript APIs
   /////////////////////////////
-  val NaN: scala.Double = js.native
+  var NaN: scala.Double = js.native
   /** An object that represents a number of any kind. All JavaScript numbers are 64-bit floating-point numbers. */
-  val Number: NumberConstructor = js.native
+  var Number: NumberConstructor = js.native
   /**
     * Provides functionality common to all JavaScript objects.
     */
-  val Object: ObjectConstructor = js.native
+  var Object: ObjectConstructor = js.native
   var Promise: PromiseConstructor = js.native
   var Proxy: ProxyConstructor = js.native
-  val RangeError: RangeErrorConstructor = js.native
-  val ReferenceError: ReferenceErrorConstructor = js.native
-  val RegExp: RegExpConstructor = js.native
+  var RangeError: RangeErrorConstructor = js.native
+  var ReferenceError: ReferenceErrorConstructor = js.native
+  var RegExp: RegExpConstructor = js.native
   var ServiceUIFrameContext: stdLib.ServiceUIFrameContext = js.native
   var Set: SetConstructor = js.native
   var SharedArrayBuffer: SharedArrayBufferConstructor = js.native
   /**
     * Allows manipulation and formatting of text strings and determination and location of substrings within strings.
     */
-  val String: StringConstructor = js.native
-  val SyntaxError: SyntaxErrorConstructor = js.native
-  val TypeError: TypeErrorConstructor = js.native
-  val URIError: URIErrorConstructor = js.native
-  val Uint16Array: Uint16ArrayConstructor = js.native
-  val Uint32Array: Uint32ArrayConstructor = js.native
-  val Uint8Array: Uint8ArrayConstructor = js.native
-  val Uint8ClampedArray: Uint8ClampedArrayConstructor = js.native
+  var String: StringConstructor = js.native
+  var SyntaxError: SyntaxErrorConstructor = js.native
+  var TypeError: TypeErrorConstructor = js.native
+  var URIError: URIErrorConstructor = js.native
+  var Uint16Array: Uint16ArrayConstructor = js.native
+  var Uint32Array: Uint32ArrayConstructor = js.native
+  var Uint8Array: Uint8ArrayConstructor = js.native
+  var Uint8ClampedArray: Uint8ClampedArrayConstructor = js.native
   var VBArray: VBArrayConstructor = js.native
   var WeakMap: WeakMapConstructor = js.native
   var WeakSet: WeakSetConstructor = js.native
@@ -79,6 +79,7 @@ object ^ extends js.Object {
   var devicePixelRatio: scala.Double = js.native
   var doNotTrack: java.lang.String = js.native
   var document: Document = js.native
+  /** @deprecated */
   var event: js.UndefOr[Event] = js.native
   /** @deprecated */
   var external: External = js.native
@@ -200,7 +201,7 @@ object ^ extends js.Object {
     * Fires when an error occurs during object loading.
     * @param ev The event.
     */
-  var onerror: ErrorEventHandler = js.native
+  var onerror: OnErrorEventHandler = js.native
   /**
     * Fires when the object receives focus.
     * @param ev The event.
@@ -345,7 +346,7 @@ object ^ extends js.Object {
     * Fires when the user repositions the scroll box in the scroll bar on the object.
     * @param ev The event.
     */
-  var onscroll: (js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, js.Any]) | scala.Null = js.native
+  var onscroll: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onsecuritypolicyviolation: (js.ThisFunction1[/* this */ Window, /* ev */ SecurityPolicyViolationEvent, js.Any]) | scala.Null = js.native
   /**
     * Occurs when the seek operation ends.
@@ -361,7 +362,9 @@ object ^ extends js.Object {
     * Fires when the current selection changes.
     * @param ev The event.
     */
-  var onselect: (js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, js.Any]) | scala.Null = js.native
+  var onselect: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
+  var onselectionchange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
+  var onselectstart: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
     * Occurs when the download has stopped.
     * @param ev The event.
@@ -2114,18 +2117,18 @@ object ^ extends js.Object {
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: stdLib.stdLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, _]
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: stdLib.stdLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: stdLib.stdLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -2182,18 +2185,52 @@ object ^ extends js.Object {
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: stdLib.stdLibStrings.select,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, _]
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: stdLib.stdLibStrings.select,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: stdLib.stdLibStrings.select,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: stdLib.stdLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: stdLib.stdLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: stdLib.stdLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: stdLib.stdLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: stdLib.stdLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: stdLib.stdLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -2732,7 +2769,7 @@ object ^ extends js.Object {
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native
   def getMatchedCSSRules(elt: Element): CSSRuleList = js.native
   def getMatchedCSSRules(elt: Element, pseudoElt: java.lang.String): CSSRuleList = js.native
-  def getSelection(): Selection = js.native
+  def getSelection(): Selection | scala.Null = js.native
   /////////////////////////////
   /// WorkerGlobalScope APIs
   /////////////////////////////
@@ -4461,18 +4498,18 @@ object ^ extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: stdLib.stdLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, _]
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: stdLib.stdLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: stdLib.stdLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -4529,18 +4566,52 @@ object ^ extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: stdLib.stdLibStrings.select,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, _]
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: stdLib.stdLibStrings.select,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: stdLib.stdLibStrings.select,
-    listener: js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, _],
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: stdLib.stdLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: stdLib.stdLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: stdLib.stdLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: stdLib.stdLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: stdLib.stdLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: stdLib.stdLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ Window, /* ev */ Event, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")

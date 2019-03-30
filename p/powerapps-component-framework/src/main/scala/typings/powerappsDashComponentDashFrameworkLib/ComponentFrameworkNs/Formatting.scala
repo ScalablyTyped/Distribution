@@ -80,7 +80,7 @@ trait Formatting extends js.Object {
   		 */
   def formatTime(
     value: stdLib.Date,
-    behavior: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.FormattingApiNs.DateTimeFieldBehavior
+    behavior: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.FormattingApiNs.TypesNs.DateTimeFieldBehavior
   ): java.lang.String = js.native
   /**
   		 * Gets the ISO week number of the year for a given date. Range 1-53

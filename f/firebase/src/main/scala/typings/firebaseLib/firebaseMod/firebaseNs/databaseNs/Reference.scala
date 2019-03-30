@@ -29,14 +29,14 @@ trait Reference extends Query {
     * The key of a root `Reference` is `null`.
     *
     * @example
-    * ```
+    * ```javascript
     * // The key of a root reference is null
     * var rootRef = firebase.database().ref();
     * var key = rootRef.key;  // key === null
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // The key of any non-root reference is the last token in the path
     * var adaRef = firebase.database().ref("users/ada");
     * var key = adaRef.key;  // key === "ada"
@@ -50,14 +50,14 @@ trait Reference extends Query {
     * The parent of a root `Reference` is `null`.
     *
     * @example
-    * ```
+    * ```javascript
     * // The parent of a root reference is null
     * var rootRef = firebase.database().ref();
     * parent = rootRef.parent;  // parent === null
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // The parent of any non-root reference is the parent location
     * var usersRef = firebase.database().ref("users");
     * var adaRef = firebase.database().ref("users/ada");
@@ -69,14 +69,14 @@ trait Reference extends Query {
     * The root `Reference` of the Database.
     *
     * @example
-    * ```
+    * ```javascript
     * // The root of a root reference is itself
     * var rootRef = firebase.database().ref();
     * // rootRef and rootRef.root represent the same location
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // The root of any non-root reference is the root location
     * var adaRef = firebase.database().ref("users/ada");
     * // rootRef and adaRef.root represent the same location
@@ -90,7 +90,7 @@ trait Reference extends Query {
     * a deeper slash-separated path (for example, "ada/name/first").
     *
     * @example
-    * ```
+    * ```javascript
     * var usersRef = firebase.database().ref('users');
     * var adaRef = usersRef.child('ada');
     * var adaFirstNameRef = adaRef.child('name/first');
@@ -98,9 +98,9 @@ trait Reference extends Query {
     * // path is now 'https://sample-app.firebaseio.com/users/ada/name/first'
     * ```
     *
-    * @param {string} path A relative path from this location to the desired child
+    * @param path A relative path from this location to the desired child
     *   location.
-    * @return {!firebase.database.Reference} The specified child location.
+    * @return The specified child location.
     */
   def child(path: java.lang.String): Reference = js.native
   /**
@@ -137,7 +137,7 @@ trait Reference extends Query {
     *  The 2^120 Ways to Ensure Unique Identifiers}
     *
     * @example
-    * ```
+    * ```javascript
     * var messageListRef = firebase.database().ref('message_list');
     * var newMessageRef = messageListRef.push();
     * newMessageRef.set({
@@ -150,10 +150,10 @@ trait Reference extends Query {
     * // 'https://sample-app.firebaseio.com/message_list/-IKo28nwJLH0Nc5XeFmj'
     * ```
     *
-    * @param {*=} value Optional value to be written at the generated location.
-    * @param {function(?Error)=} onComplete Callback called when write to server is
+    * @param value Optional value to be written at the generated location.
+    * @param onComplete Callback called when write to server is
     *   complete.
-    * @return {!firebase.database.ThenableReference} Combined `Promise` and
+    * @return Combined `Promise` and
     *   `Reference`; resolves when write is complete, but can be used immediately
     *   as the `Reference` to the child location.
     */
@@ -172,7 +172,7 @@ trait Reference extends Query {
     * asynchronously after synchronization has finished.
     *
     * @example
-    * ```
+    * ```javascript
     * var adaRef = firebase.database().ref('users/ada');
     * adaRef.remove()
     *   .then(function() {
@@ -183,9 +183,9 @@ trait Reference extends Query {
     *   });
     * ```
     *
-    * @param {function(?Error)=} onComplete Callback called when write to server is
+    * @param onComplete Callback called when write to server is
     *   complete.
-    * @return {!firebase.Promise<void>} Resolves when remove on server is complete.
+    * @return Resolves when remove on server is complete.
     */
   def remove(): js.Promise[_] = js.native
   def remove(onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native
@@ -214,7 +214,7 @@ trait Reference extends Query {
     * the `set()` was performed.
     *
     * @example
-    * ```
+    * ```javascript
     * var adaNameRef = firebase.database().ref('users/ada/name');
     * adaNameRef.child('first').set('Ada');
     * adaNameRef.child('last').set('Lovelace');
@@ -223,14 +223,14 @@ trait Reference extends Query {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * adaNameRef.set({ first: 'Ada', last: 'Lovelace' });
     * // Exact same effect as the previous example, except we've written
     * // Ada's first and last name simultaneously.
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * adaNameRef.set({ first: 'Ada', last: 'Lovelace' })
     *   .then(function() {
     *     console.log('Synchronization succeeded');
@@ -242,11 +242,11 @@ trait Reference extends Query {
     * // when the data has finished synchronizing.
     * ```
     *
-    * @param {*} value The value to be written (string, number, boolean, object,
+    * @param value The value to be written (string, number, boolean, object,
     *   array, or null).
-    * @param {function(?Error)=} onComplete Callback called when write to server is
+    * @param onComplete Callback called when write to server is
     *   complete.
-    * @return {!firebase.Promise<void>} Resolves when write to server is complete.
+    * @return Resolves when write to server is complete.
     */
   def set(value: js.Any): js.Promise[_] = js.native
   def set(value: js.Any, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native
@@ -317,7 +317,7 @@ trait Reference extends Query {
     * update it.
     *
     * @example
-    * ```
+    * ```javascript
     * // Increment Ada's rank by 1.
     * var adaRankRef = firebase.database().ref('users/ada/rank');
     * adaRankRef.transaction(function(currentRank) {
@@ -327,7 +327,7 @@ trait Reference extends Query {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Try to create a user for ada, but only if the user id 'ada' isn't
     * // already taken
     * var adaRef = firebase.database().ref('users/ada');
@@ -350,14 +350,13 @@ trait Reference extends Query {
     * });
     * ```
     *
-    * @param {function(*): *} transactionUpdate A developer-supplied function which
+    * @param transactionUpdate A developer-supplied function which
     *   will be passed the current data stored at this location (as a JavaScript
     *   object). The function should return the new value it would like written (as
     *   a JavaScript object). If `undefined` is returned (i.e. you return with no
     *   arguments) the transaction will be aborted and the data at this location
     *   will not be modified.
-    * @param {(function(?Error, boolean,
-    *                   ?firebase.database.DataSnapshot))=} onComplete A callback
+    * @param onComplete A callback
     *   function that will be called when the transaction completes. The callback
     *   is passed three arguments: a possibly-null `Error`, a `boolean` indicating
     *   whether the transaction was committed, and a `DataSnapshot` indicating the
@@ -368,15 +367,12 @@ trait Reference extends Query {
     *   transaction completed and committed data to Firebase, the second argument
     *   will be true. Regardless, the third argument will be a `DataSnapshot`
     *   containing the resulting data in this location.
-    * @param {boolean=} applyLocally By default, events are raised each time the
+    * @param applyLocally By default, events are raised each time the
     *   transaction update function runs. So if it is run multiple times, you may
     *   see intermediate states. You can set this to false to suppress these
     *   intermediate states and instead wait until the transaction has completed
     *   before events are raised.
-    * @return {!firebase.Promise<{
-    *   committed: boolean,
-    *   snapshot: ?firebase.database.DataSnapshot
-    * }>} Returns a Promise that can optionally be used instead of the onComplete
+    * @return Returns a Promise that can optionally be used instead of the onComplete
     *   callback to handle success and failure.
     */
   def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): js.Promise[_] = js.native
@@ -433,17 +429,17 @@ trait Reference extends Query {
     *  Introducing multi-location updates and more}.
     *
     * @example
-    * ```
+    * ```javascript
     * var adaNameRef = firebase.database().ref('users/ada/name');
     * // Modify the 'first' and 'last' properties, but leave other data at
     * // adaNameRef unchanged.
     * adaNameRef.update({ first: 'Ada', last: 'Lovelace' });
     * ```
     *
-    * @param {!Object} values Object containing multiple values.
-    * @param {function(?Error)=} onComplete Callback called when write to server is
+    * @param values Object containing multiple values.
+    * @param onComplete Callback called when write to server is
     *   complete.
-    * @return {!firebase.Promise<void>} Resolves when update on server is complete.
+    * @return Resolves when update on server is complete.
     */
   def update(values: js.Object): js.Promise[_] = js.native
   def update(values: js.Object, onComplete: js.Function1[/* a */ stdLib.Error | scala.Null, _]): js.Promise[_] = js.native

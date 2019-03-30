@@ -49,7 +49,7 @@ trait IOverflowListProps[T]
     * @default "div"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any
   ] = js.undefined
   /**
     * Callback invoked to render the overflowed items. Unlike
@@ -79,7 +79,7 @@ object IOverflowListProps {
     observeParents: js.UndefOr[scala.Boolean] = js.undefined,
     onOverflow: /* overflowItems */ js.Array[T] => scala.Unit = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null
   ): IOverflowListProps[T] = {
     val __obj = js.Dynamic.literal(items = items, overflowRenderer = js.Any.fromFunction1(overflowRenderer), visibleItemRenderer = js.Any.fromFunction2(visibleItemRenderer))
     if (className != null) __obj.updateDynamic("className")(className)

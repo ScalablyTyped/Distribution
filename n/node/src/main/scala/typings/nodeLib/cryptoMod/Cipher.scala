@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("crypto", "Cipher")
 @js.native
-trait Cipher
-  extends nodeLib.NodeJSNs.ReadWriteStream {
+class Cipher protected ()
+  extends nodeLib.streamMod.Duplex {
   def `final`(): nodeLib.Buffer = js.native
   def `final`(output_encoding: java.lang.String): java.lang.String = js.native
   def setAutoPadding(): this.type = js.native

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "angular-permission"
-version := "2.3.6-dt-20190322Z-e426ab"
+version := "2.3.6-dt-20190322Z-cf0d7d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-3aa366",
-  "org.scalablytyped" %%% "angular-ui-router" % "1.1.38-dt-20190322Z-bbf6a8",
-  "org.scalablytyped" %%% "std" % "3.3-14e863")
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-6a291a",
+  "org.scalablytyped" %%% "angular-ui-router" % "1.1.38-dt-20190322Z-a820b3",
+  "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

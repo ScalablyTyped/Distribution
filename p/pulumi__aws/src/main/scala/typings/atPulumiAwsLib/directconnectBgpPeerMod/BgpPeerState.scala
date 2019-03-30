@@ -16,6 +16,10 @@ trait BgpPeerState extends js.Object {
     */
   val amazonAddress: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * The Direct Connect endpoint on which the BGP peer terminates.
+    */
+  val awsDevice: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
     */
   val bgpAsn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
@@ -23,6 +27,10 @@ trait BgpPeerState extends js.Object {
     * The authentication key for BGP configuration.
     */
   val bgpAuthKey: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * The ID of the BGP peer.
+    */
+  val bgpPeerId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The Up/Down state of the BGP peer.
     */
@@ -43,8 +51,10 @@ object BgpPeerState {
   def apply(
     addressFamily: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     amazonAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    awsDevice: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     bgpAsn: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     bgpAuthKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bgpPeerId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     bgpStatus: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     customerAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     virtualInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
@@ -52,8 +62,10 @@ object BgpPeerState {
     val __obj = js.Dynamic.literal()
     if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
     if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
+    if (awsDevice != null) __obj.updateDynamic("awsDevice")(awsDevice.asInstanceOf[js.Any])
     if (bgpAsn != null) __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])
     if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
+    if (bgpPeerId != null) __obj.updateDynamic("bgpPeerId")(bgpPeerId.asInstanceOf[js.Any])
     if (bgpStatus != null) __obj.updateDynamic("bgpStatus")(bgpStatus.asInstanceOf[js.Any])
     if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
     if (virtualInterfaceId != null) __obj.updateDynamic("virtualInterfaceId")(virtualInterfaceId.asInstanceOf[js.Any])

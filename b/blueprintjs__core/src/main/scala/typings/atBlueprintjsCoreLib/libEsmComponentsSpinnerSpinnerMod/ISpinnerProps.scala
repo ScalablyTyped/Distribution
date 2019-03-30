@@ -26,7 +26,7 @@ trait ISpinnerProps
     * @default "div"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any
   ] = js.undefined
   /**
     * A value between 0 and 1 (inclusive) representing how far along the operation is.
@@ -42,7 +42,7 @@ object ISpinnerProps {
     className: java.lang.String = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     size: scala.Int | scala.Double = null,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,
     value: scala.Int | scala.Double = null
   ): ISpinnerProps = {
     val __obj = js.Dynamic.literal()

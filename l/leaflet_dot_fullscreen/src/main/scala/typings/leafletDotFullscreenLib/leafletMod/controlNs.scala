@@ -12,6 +12,6 @@ object controlNs extends js.Object {
     * Creates a fullscreen control.
     */
   def fullscreen(): leafletDotFullscreenLib.leafletMod.ControlNs.Fullscreen = js.native
-  def fullscreen(options: leafletDotFullscreenLib.leafletMod.ControlNs.FullscreenOptions): leafletDotFullscreenLib.leafletMod.ControlNs.Fullscreen = js.native
+  def fullscreen(options: stdLib.FullscreenOptions): leafletDotFullscreenLib.leafletMod.ControlNs.Fullscreen = js.native
 }
 

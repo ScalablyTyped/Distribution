@@ -122,6 +122,8 @@ trait ValidatorStatic extends js.Object {
   def isInt(str: java.lang.String, options: IsIntOptions): scala.Boolean = js.native
   // check if the string is valid JSON (note: uses JSON.parse).
   def isJSON(str: java.lang.String): scala.Boolean = js.native
+  // check if the string is valid JWT token.
+  def isJWT(str: java.lang.String): scala.Boolean = js.native
   // check if the string is a valid latitude-longitude coordinate in the format lat,long or lat, long.
   def isLatLong(str: java.lang.String): scala.Boolean = js.native
   def isLength(str: java.lang.String, min: scala.Double): scala.Boolean = js.native

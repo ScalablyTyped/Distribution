@@ -23,9 +23,17 @@ class Connection protected ()
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * The Direct Connect endpoint on which the physical connection terminates.
+    */
+  val awsDevice: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * The bandwidth of the connection. Available values: 1Gbps, 10Gbps. Case sensitive.
     */
   val bandwidth: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * Indicates whether the connection supports a secondary BGP peer in the same address family (IPv4/IPv6).
+    */
+  val hasLogicalRedundancy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Boolean value representing if jumbo frames have been enabled for this connection.
     */

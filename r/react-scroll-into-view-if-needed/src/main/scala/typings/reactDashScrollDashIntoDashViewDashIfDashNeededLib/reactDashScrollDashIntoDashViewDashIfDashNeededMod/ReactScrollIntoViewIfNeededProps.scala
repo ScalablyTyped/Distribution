@@ -9,7 +9,7 @@ trait ReactScrollIntoViewIfNeededProps
   extends reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var elementType: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any
   ] = js.undefined
   var options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ScrollIntoViewIfNeeded.Options */ js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ScrollIntoViewIfNeeded.Options */ js.Any
@@ -21,7 +21,7 @@ object ReactScrollIntoViewIfNeededProps {
   def apply(
     HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLElement] = null,
     active: js.UndefOr[scala.Boolean] = js.undefined,
-    elementType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null,
+    elementType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ScrollIntoViewIfNeeded.Options */ js.Any = null
   ): ReactScrollIntoViewIfNeededProps = {
     val __obj = js.Dynamic.literal()

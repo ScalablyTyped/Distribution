@@ -31,7 +31,7 @@ trait ServiceState extends js.Object {
     */
   val enableEcsManagedTags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
-    * Seconds to ignore failing load balancer health checks on newly instantiated tasks to prevent premature shutdown, up to 7200. Only valid for services configured to use load balancers.
+    * Seconds to ignore failing load balancer health checks on newly instantiated tasks to prevent premature shutdown, up to 2147483647. Only valid for services configured to use load balancers.
     */
   val healthCheckGracePeriodSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**
@@ -76,12 +76,6 @@ trait ServiceState extends js.Object {
     atPulumiPulumiLib.outputMod.Input[
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ExpressionTypeInput]]
     ]
-  ] = js.undefined
-  /**
-    * **Deprecated**, use `ordered_placement_strategy` instead.
-    */
-  val placementStrategies: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FieldTypeInput]]]
   ] = js.undefined
   /**
     * The platform version on which to run your service. Only applicable for `launch_type` set to `FARGATE`. Defaults to `LATEST`. More information about Fargate platform versions can be found in the [AWS ECS User Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
@@ -139,7 +133,6 @@ object ServiceState {
     placementConstraints: atPulumiPulumiLib.outputMod.Input[
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ExpressionTypeInput]]
     ] = null,
-    placementStrategies: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FieldTypeInput]]] = null,
     platformVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     propagateTags: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     schedulingStrategy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -163,7 +156,6 @@ object ServiceState {
     if (networkConfiguration != null) __obj.updateDynamic("networkConfiguration")(networkConfiguration.asInstanceOf[js.Any])
     if (orderedPlacementStrategies != null) __obj.updateDynamic("orderedPlacementStrategies")(orderedPlacementStrategies.asInstanceOf[js.Any])
     if (placementConstraints != null) __obj.updateDynamic("placementConstraints")(placementConstraints.asInstanceOf[js.Any])
-    if (placementStrategies != null) __obj.updateDynamic("placementStrategies")(placementStrategies.asInstanceOf[js.Any])
     if (platformVersion != null) __obj.updateDynamic("platformVersion")(platformVersion.asInstanceOf[js.Any])
     if (propagateTags != null) __obj.updateDynamic("propagateTags")(propagateTags.asInstanceOf[js.Any])
     if (schedulingStrategy != null) __obj.updateDynamic("schedulingStrategy")(schedulingStrategy.asInstanceOf[js.Any])

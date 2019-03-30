@@ -112,6 +112,10 @@ object PinpointEmailNs extends js.Object {
       */
     var SendingOptions: js.UndefOr[SendingOptions] = js.undefined
     /**
+      * An object that defines the tags (keys and values) that you want to associate with the configuration set.
+      */
+    var Tags: js.UndefOr[TagList] = js.undefined
+    /**
       * An object that defines the open and click tracking options for emails that you send using the configuration set.
       */
     var TrackingOptions: js.UndefOr[TrackingOptions] = js.undefined
@@ -124,6 +128,10 @@ object PinpointEmailNs extends js.Object {
       * The name of the dedicated IP pool.
       */
     var PoolName: awsDashSdkLib.clientsPinpointemailMod.PinpointEmailNs.PoolName
+    /**
+      * An object that defines the tags (keys and values) that you want to associate with the pool.
+      */
+    var Tags: js.UndefOr[TagList] = js.undefined
   }
   
   trait CreateDedicatedIpPoolResponse extends js.Object
@@ -141,6 +149,10 @@ object PinpointEmailNs extends js.Object {
       * A unique name that helps you to identify the predictive inbox placement test when you retrieve the results.
       */
     var ReportName: js.UndefOr[ReportName] = js.undefined
+    /**
+      * An object that defines the tags (keys and values) that you want to associate with the predictive inbox placement test.
+      */
+    var Tags: js.UndefOr[TagList] = js.undefined
   }
   
   trait CreateDeliverabilityTestReportResponse extends js.Object {
@@ -159,6 +171,10 @@ object PinpointEmailNs extends js.Object {
       * The email address or domain that you want to verify.
       */
     var EmailIdentity: Identity
+    /**
+      * An object that defines the tags (keys and values) that you want to associate with the email identity.
+      */
+    var Tags: js.UndefOr[TagList] = js.undefined
   }
   
   trait CreateEmailIdentityResponse extends js.Object {
@@ -745,6 +761,20 @@ object PinpointEmailNs extends js.Object {
     var NextToken: js.UndefOr[NextToken] = js.undefined
   }
   
+  trait ListTagsForResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the resource that you want to retrieve tag information for.
+      */
+    var ResourceArn: AmazonResourceName
+  }
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    /**
+      * An array that lists all the tags that are associated with the resource. Each tag consists of a required tag key (Key) and an associated tag value (Value)
+      */
+    var Tags: TagList
+  }
+  
   trait MailFromAttributes extends js.Object {
     /**
       * The action that Amazon Pinpoint to takes if it can't read the required MX record for a custom MAIL FROM domain. When you set this value to UseDefaultValue, Amazon Pinpoint uses amazonses.com as the MAIL FROM domain. When you set this value to RejectMessage, Amazon Pinpoint returns a MailFromDomainNotVerified error, and doesn't attempt to deliver the email. These behaviors are taken when the custom MAIL FROM domain configuration is in the Pending, Failed, and TemporaryFailure states.
@@ -1059,6 +1089,30 @@ object PinpointEmailNs extends js.Object {
       */
     var TopicArn: AmazonResourceName
   }
+  
+  trait Tag extends js.Object {
+    /**
+      * One part of a key-value pair that defines a tag. The maximum length of a tag key is 128 characters. The minimum length is 1 character.
+      */
+    var Key: TagKey
+    /**
+      * The optional part of a key-value pair that defines a tag. The maximum length of a tag value is 256 characters. The minimum length is 0 characters. If you don’t want a resource to have a specific tag value, don’t specify a value for this parameter. Amazon Pinpoint will set the value to an empty string.
+      */
+    var Value: TagValue
+  }
+  
+  trait TagResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the resource that you want to add one or more tags to.
+      */
+    var ResourceArn: AmazonResourceName
+    /**
+      * A list of the tags that you want to add to the resource. A tag consists of a required tag key (Key) and an associated tag value (Value). The maximum length of a tag key is 128 characters. The maximum length of a tag value is 256 characters.
+      */
+    var Tags: TagList
+  }
+  
+  trait TagResourceResponse extends js.Object
   
   trait TrackingOptions extends js.Object {
     /**
@@ -1602,6 +1656,29 @@ object PinpointEmailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListEmailIdentitiesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Retrieve a list of the tags (keys and values) that are associated with a specific resource. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Each tag consists of a required tag key and an optional associated tag value. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieve a list of the tags (keys and values) that are associated with a specific resource. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Each tag consists of a required tag key and an optional associated tag value. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
+      */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Enable or disable the automatic warm-up feature for dedicated IP addresses.
       */
     def putAccountDedicatedIpWarmupAttributes(): awsDashSdkLib.libRequestMod.Request[PutAccountDedicatedIpWarmupAttributesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1901,6 +1978,52 @@ object PinpointEmailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[SendEmailResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Add one or more tags (keys and values) to one or more specified resources. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Tags can help you categorize and manage resources in different ways, such as by purpose, owner, environment, or other criteria. A resource can have as many as 50 tags. Each tag consists of a required tag key and an associated tag value, both of which you define. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Add one or more tags (keys and values) to one or more specified resources. A tag is a label that you optionally define and associate with a resource in Amazon Pinpoint. Tags can help you categorize and manage resources in different ways, such as by purpose, owner, environment, or other criteria. A resource can have as many as 50 tags. Each tag consists of a required tag key and an associated tag value, both of which you define. A tag key is a general label that acts as a category for more specific tag values. A tag value acts as a descriptor within a tag key.
+      */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Remove one or more tags (keys and values) from a specified resource.
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Remove one or more tags (keys and values) from a specified resource.
+      */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Update the configuration of an event destination for a configuration set. In Amazon Pinpoint, events include message sends, deliveries, opens, clicks, bounces, and complaints. Event destinations are places that you can send information about these events to. For example, you can send event data to Amazon SNS to receive notifications when you receive bounces or complaints, or you can use Amazon Kinesis Data Firehose to stream data to Amazon S3 for long-term storage.
       */
     def updateConfigurationSetEventDestination(): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1924,6 +2047,19 @@ object PinpointEmailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateConfigurationSetEventDestinationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
+  
+  trait UntagResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the resource that you want to remove one or more tags from.
+      */
+    var ResourceArn: AmazonResourceName
+    /**
+      * The tags (tag keys) that you want to remove from the resource. When you specify a tag key, the action removes both that key and its associated tag value. To remove more than one tag from the resource, append the TagKeys parameter and argument for each additional tag to remove, separated by an ampersand. For example: /v1/email/tags?ResourceArn=ResourceArn&amp;TagKeys=Key1&amp;TagKeys=Key2 
+      */
+    var TagKeys: TagKeyList
+  }
+  
+  trait UntagResourceResponse extends js.Object
   
   trait UpdateConfigurationSetEventDestinationRequest extends js.Object {
     /**
@@ -2089,6 +2225,10 @@ object PinpointEmailNs extends js.Object {
   type ReportName = java.lang.String
   type SendingPoolName = java.lang.String
   type SentLast24Hours = scala.Double
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = java.lang.String
   type Timestamp = stdLib.Date
   type Volume = scala.Double
   /* Rewritten from type alias, can be one of: 

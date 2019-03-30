@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
      with astDashTypesLib.genKindsMod.TSHasOptionalTypeParametersKind
      with astDashTypesLib.genKindsMod.TSTypeKind {
   var parameters: js.Array[
-    astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+    astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
   ]
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSConstructorType
 }
@@ -25,7 +25,7 @@ object TSConstructorType {
   @scala.inline
   def apply(
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ],
     `type`: astDashTypesLib.astDashTypesLibStrings.TSConstructorType,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,

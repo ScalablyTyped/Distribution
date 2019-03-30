@@ -12,21 +12,13 @@ object ^ extends js.Object {
   val $mobx: js.Symbol = js.native
   val EMPTY_ARRAY: js.Array[scala.Nothing] = js.native
   val OBFUSCATED_ERROR: /* An invariant failed, however the error is obfuscated because this is an production build. */ java.lang.String = js.native
-  var action: mobxLib.libApiActionMod.IActionFactory = js.native
+  val action: mobxLib.libApiActionMod.IActionFactory = js.native
   val comparer: mobxLib.Anon_A = js.native
-  var computed: mobxLib.libApiComputedMod.IComputed = js.native
+  val computed: mobxLib.libApiComputedMod.IComputed = js.native
   val computedDecorator: js.Function = js.native
   val deepDecorator: mobxLib.libApiObservabledecoratorMod.IObservableDecorator = js.native
   val defaultCreateObservableOptions: mobxLib.libApiObservableMod.CreateObservableOptions = js.native
   var globalState: mobxLib.libCoreGlobalstateMod.MobXGlobals = js.native
-  var isObservableMap: js.Function1[
-    /* thing */ js.Any, 
-    /* is mobx.mobx/lib/types/observablemap.ObservableMap<any, any> */ scala.Boolean
-  ] = js.native
-  var isObservableValue: js.Function1[
-    /* x */ js.Any, 
-    /* is mobx.mobx/lib/types/observablevalue.IObservableValue<any> */ scala.Boolean
-  ] = js.native
   val mobxDidRunLazyInitializersSymbol: js.Symbol = js.native
   val mobxPendingDecorators: js.Symbol = js.native
   val observable: mobxLib.libApiObservableMod.IObservableFactory with mobxLib.libApiObservableMod.IObservableFactories with mobxLib.Anon_Enhancer = js.native
@@ -61,6 +53,7 @@ object ^ extends js.Object {
   def clearObserving(derivation: mobxLib.libCoreDerivationMod.IDerivation): scala.Unit = js.native
   def configure(options: mobxLib.Anon_Always): scala.Unit = js.native
   def createAction(actionName: java.lang.String, fn: js.Function): js.Function with mobxLib.libCoreActionMod.IAction = js.native
+  def createAction(actionName: java.lang.String, fn: js.Function, ref: js.Object): js.Function with mobxLib.libCoreActionMod.IAction = js.native
   def createAtom(name: java.lang.String): mobxLib.libCoreAtomMod.IAtom = js.native
   def createAtom(name: java.lang.String, onBecomeObservedHandler: js.Function0[scala.Unit]): mobxLib.libCoreAtomMod.IAtom = js.native
   def createAtom(
@@ -253,9 +246,11 @@ object ^ extends js.Object {
   def isObject(value: js.Any): scala.Boolean = js.native
   def isObservable(value: js.Any): scala.Boolean = js.native
   def isObservableArray(thing: js.Any): /* is mobx.mobx/lib/types/observablearray.IObservableArray<any> */ scala.Boolean = js.native
+  def isObservableMap(thing: js.Any): /* is mobx.mobx/lib/types/observablemap.ObservableMap<any, any> */ scala.Boolean = js.native
   def isObservableObject(thing: js.Any): /* is mobx.mobx/lib/types/observableobject.IObservableObject */ scala.Boolean = js.native
   def isObservableProp(value: js.Any, propName: java.lang.String): scala.Boolean = js.native
   def isObservableSet(thing: js.Any): /* is mobx.mobx/lib/types/observableset.ObservableSet<any> */ scala.Boolean = js.native
+  def isObservableValue(x: js.Any): /* is mobx.mobx/lib/types/observablevalue.IObservableValue<any> */ scala.Boolean = js.native
   def isPlainObject(value: js.Any): scala.Boolean = js.native
   def isPropertyConfigurable(`object`: js.Any, prop: stdLib.PropertyKey): scala.Boolean = js.native
   def isReaction(x: js.Any): /* is mobx.mobx/lib/core/reaction.Reaction */ scala.Boolean = js.native

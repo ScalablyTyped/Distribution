@@ -180,32 +180,32 @@ trait ChildProcess
   ): this.type = js.native
   def ref(): scala.Unit = js.native
   def send(message: js.Any): scala.Boolean = js.native
-  def send(message: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Boolean = js.native
+  def send(message: js.Any, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Boolean = js.native
   def send(message: js.Any, sendHandle: nodeLib.netMod.Server): scala.Boolean = js.native
   def send(
     message: js.Any,
     sendHandle: nodeLib.netMod.Server,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]
   ): scala.Boolean = js.native
   def send(message: js.Any, sendHandle: nodeLib.netMod.Server, options: MessageOptions): scala.Boolean = js.native
   def send(
     message: js.Any,
     sendHandle: nodeLib.netMod.Server,
     options: MessageOptions,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]
   ): scala.Boolean = js.native
   def send(message: js.Any, sendHandle: nodeLib.netMod.Socket): scala.Boolean = js.native
   def send(
     message: js.Any,
     sendHandle: nodeLib.netMod.Socket,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]
   ): scala.Boolean = js.native
   def send(message: js.Any, sendHandle: nodeLib.netMod.Socket, options: MessageOptions): scala.Boolean = js.native
   def send(
     message: js.Any,
     sendHandle: nodeLib.netMod.Socket,
     options: MessageOptions,
-    callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]
+    callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]
   ): scala.Boolean = js.native
   def unref(): scala.Unit = js.native
 }

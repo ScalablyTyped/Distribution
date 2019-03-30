@@ -16,14 +16,14 @@ trait Blob extends js.Object {
   /**
     * Returns the bytes of a Blob as a Base64-encoded string.
     *
-    * @return {string}
+    * @return
     *   The Base64-encoded string created from the Blob object.
     */
   def toBase64(): java.lang.String
   /**
     * Returns the bytes of a Blob in a new Uint8Array.
     *
-    * @return {!Uint8Array}
+    * @return
     *   The Uint8Array created from the Blob object.
     */
   def toUint8Array(): stdLib.Uint8Array

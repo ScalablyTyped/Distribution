@@ -25,6 +25,10 @@ trait TargetGroupState extends js.Object {
     atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalMatcher]
   ] = js.undefined
   /**
+    * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `target_type` is `lambda`.
+    */
+  val lambdaMultiValueHeadersEnabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+  /**
     * The name of the target group. If omitted, Terraform will assign a random, unique name.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -78,6 +82,7 @@ object TargetGroupState {
     arnSuffix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     deregistrationDelay: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     healthCheck: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalMatcher] = null,
+    lambdaMultiValueHeadersEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
@@ -94,6 +99,7 @@ object TargetGroupState {
     if (arnSuffix != null) __obj.updateDynamic("arnSuffix")(arnSuffix.asInstanceOf[js.Any])
     if (deregistrationDelay != null) __obj.updateDynamic("deregistrationDelay")(deregistrationDelay.asInstanceOf[js.Any])
     if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
+    if (lambdaMultiValueHeadersEnabled != null) __obj.updateDynamic("lambdaMultiValueHeadersEnabled")(lambdaMultiValueHeadersEnabled.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

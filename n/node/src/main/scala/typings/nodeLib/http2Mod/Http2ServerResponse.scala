@@ -9,19 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class Http2ServerResponse protected ()
   extends nodeLib.streamMod.Stream {
-  var connection: nodeLib.netMod.Socket | nodeLib.tlsMod.TLSSocket = js.native
+  val connection: nodeLib.netMod.Socket | nodeLib.tlsMod.TLSSocket = js.native
   val finished: scala.Boolean = js.native
   val headersSent: scala.Boolean = js.native
   var sendDate: scala.Boolean = js.native
-  var socket: nodeLib.netMod.Socket | nodeLib.tlsMod.TLSSocket = js.native
+  val socket: nodeLib.netMod.Socket | nodeLib.tlsMod.TLSSocket = js.native
   var statusCode: scala.Double = js.native
   var statusMessage: nodeLib.nodeLibStrings.Empty = js.native
-  var stream: ServerHttp2Stream = js.native
-  @JSName("addListener")
-  def addListener_aborted(
-    event: nodeLib.nodeLibStrings.aborted,
-    listener: js.Function2[/* hadError */ scala.Boolean, /* code */ scala.Double, scala.Unit]
-  ): this.type = js.native
+  val stream: ServerHttp2Stream = js.native
   @JSName("addListener")
   def addListener_close(event: nodeLib.nodeLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
@@ -30,13 +25,21 @@ class Http2ServerResponse protected ()
   def addListener_error(event: nodeLib.nodeLibStrings.error, listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_finish(event: nodeLib.nodeLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("addListener")
+  def addListener_pipe(
+    event: nodeLib.nodeLibStrings.pipe,
+    listener: js.Function1[/* src */ nodeLib.streamMod.Readable, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_unpipe(
+    event: nodeLib.nodeLibStrings.unpipe,
+    listener: js.Function1[/* src */ nodeLib.streamMod.Readable, scala.Unit]
+  ): this.type = js.native
   def addTrailers(trailers: nodeLib.httpMod.OutgoingHttpHeaders): scala.Unit = js.native
   def createPushResponse(
     headers: nodeLib.httpMod.OutgoingHttpHeaders,
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* res */ this.type, scala.Unit]
   ): scala.Unit = js.native
-  @JSName("emit")
-  def emit_aborted(event: nodeLib.nodeLibStrings.aborted, hadError: scala.Boolean, code: scala.Double): scala.Boolean = js.native
   @JSName("emit")
   def emit_close(event: nodeLib.nodeLibStrings.close): scala.Boolean = js.native
   @JSName("emit")
@@ -45,6 +48,10 @@ class Http2ServerResponse protected ()
   def emit_error(event: nodeLib.nodeLibStrings.error, error: nodeLib.Error): scala.Boolean = js.native
   @JSName("emit")
   def emit_finish(event: nodeLib.nodeLibStrings.finish): scala.Boolean = js.native
+  @JSName("emit")
+  def emit_pipe(event: nodeLib.nodeLibStrings.pipe, src: nodeLib.streamMod.Readable): scala.Boolean = js.native
+  @JSName("emit")
+  def emit_unpipe(event: nodeLib.nodeLibStrings.unpipe, src: nodeLib.streamMod.Readable): scala.Boolean = js.native
   def end(): scala.Unit = js.native
   def end(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def end(data: java.lang.String): scala.Unit = js.native
@@ -55,15 +62,14 @@ class Http2ServerResponse protected ()
   def end(data: nodeLib.Buffer, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def end(data: nodeLib.Buffer, encoding: java.lang.String): scala.Unit = js.native
   def end(data: nodeLib.Buffer, encoding: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def end(data: stdLib.Uint8Array): scala.Unit = js.native
+  def end(data: stdLib.Uint8Array, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def end(data: stdLib.Uint8Array, encoding: java.lang.String): scala.Unit = js.native
+  def end(data: stdLib.Uint8Array, encoding: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def getHeader(name: java.lang.String): java.lang.String = js.native
   def getHeaderNames(): js.Array[java.lang.String] = js.native
   def getHeaders(): nodeLib.httpMod.OutgoingHttpHeaders = js.native
   def hasHeader(name: java.lang.String): scala.Boolean = js.native
-  @JSName("on")
-  def on_aborted(
-    event: nodeLib.nodeLibStrings.aborted,
-    listener: js.Function2[/* hadError */ scala.Boolean, /* code */ scala.Double, scala.Unit]
-  ): this.type = js.native
   @JSName("on")
   def on_close(event: nodeLib.nodeLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
@@ -72,10 +78,15 @@ class Http2ServerResponse protected ()
   def on_error(event: nodeLib.nodeLibStrings.error, listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_finish(event: nodeLib.nodeLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
-  @JSName("once")
-  def once_aborted(
-    event: nodeLib.nodeLibStrings.aborted,
-    listener: js.Function2[/* hadError */ scala.Boolean, /* code */ scala.Double, scala.Unit]
+  @JSName("on")
+  def on_pipe(
+    event: nodeLib.nodeLibStrings.pipe,
+    listener: js.Function1[/* src */ nodeLib.streamMod.Readable, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_unpipe(
+    event: nodeLib.nodeLibStrings.unpipe,
+    listener: js.Function1[/* src */ nodeLib.streamMod.Readable, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_close(event: nodeLib.nodeLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -85,10 +96,15 @@ class Http2ServerResponse protected ()
   def once_error(event: nodeLib.nodeLibStrings.error, listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_finish(event: nodeLib.nodeLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_aborted(
-    event: nodeLib.nodeLibStrings.aborted,
-    listener: js.Function2[/* hadError */ scala.Boolean, /* code */ scala.Double, scala.Unit]
+  @JSName("once")
+  def once_pipe(
+    event: nodeLib.nodeLibStrings.pipe,
+    listener: js.Function1[/* src */ nodeLib.streamMod.Readable, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def once_unpipe(
+    event: nodeLib.nodeLibStrings.unpipe,
+    listener: js.Function1[/* src */ nodeLib.streamMod.Readable, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_close(event: nodeLib.nodeLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -98,10 +114,15 @@ class Http2ServerResponse protected ()
   def prependListener_error(event: nodeLib.nodeLibStrings.error, listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_finish(event: nodeLib.nodeLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_aborted(
-    event: nodeLib.nodeLibStrings.aborted,
-    listener: js.Function2[/* hadError */ scala.Boolean, /* code */ scala.Double, scala.Unit]
+  @JSName("prependListener")
+  def prependListener_pipe(
+    event: nodeLib.nodeLibStrings.pipe,
+    listener: js.Function1[/* src */ nodeLib.streamMod.Readable, scala.Unit]
+  ): this.type = js.native
+  @JSName("prependListener")
+  def prependListener_unpipe(
+    event: nodeLib.nodeLibStrings.unpipe,
+    listener: js.Function1[/* src */ nodeLib.streamMod.Readable, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: nodeLib.nodeLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -111,6 +132,16 @@ class Http2ServerResponse protected ()
   def prependOnceListener_error(event: nodeLib.nodeLibStrings.error, listener: js.Function1[/* error */ nodeLib.Error, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_finish(event: nodeLib.nodeLibStrings.finish, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  def prependOnceListener_pipe(
+    event: nodeLib.nodeLibStrings.pipe,
+    listener: js.Function1[/* src */ nodeLib.streamMod.Readable, scala.Unit]
+  ): this.type = js.native
+  @JSName("prependOnceListener")
+  def prependOnceListener_unpipe(
+    event: nodeLib.nodeLibStrings.unpipe,
+    listener: js.Function1[/* src */ nodeLib.streamMod.Readable, scala.Unit]
+  ): this.type = js.native
   def removeHeader(name: java.lang.String): scala.Unit = js.native
   def setHeader(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def setHeader(name: java.lang.String, value: js.Array[java.lang.String]): scala.Unit = js.native
@@ -130,6 +161,14 @@ class Http2ServerResponse protected ()
   def write(chunk: nodeLib.Buffer, encoding: java.lang.String): scala.Boolean = js.native
   def write(
     chunk: nodeLib.Buffer,
+    encoding: java.lang.String,
+    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+  ): scala.Boolean = js.native
+  def write(chunk: stdLib.Uint8Array): scala.Boolean = js.native
+  def write(chunk: stdLib.Uint8Array, callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Boolean = js.native
+  def write(chunk: stdLib.Uint8Array, encoding: java.lang.String): scala.Boolean = js.native
+  def write(
+    chunk: stdLib.Uint8Array,
     encoding: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Boolean = js.native

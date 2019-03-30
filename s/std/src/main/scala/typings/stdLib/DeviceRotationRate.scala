@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** A DeviceRotationRate object provides information about the rate at which the device is rotating around all three axes. */
 trait DeviceRotationRate extends js.Object {
   val alpha: scala.Double | scala.Null
   val beta: scala.Double | scala.Null

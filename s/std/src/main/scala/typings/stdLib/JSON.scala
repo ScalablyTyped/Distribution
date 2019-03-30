@@ -16,7 +16,10 @@ trait JSON extends js.Object {
     * If a member contains nested objects, the nested objects are transformed before the parent object is.
     */
   def parse(text: java.lang.String): js.Any = js.native
-  def parse(text: java.lang.String, reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, _]): js.Any = js.native
+  def parse(
+    text: java.lang.String,
+    reviver: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, _]
+  ): js.Any = js.native
   /**
     * Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
     * @param value A JavaScript value, usually an object or array, to be converted.
@@ -27,15 +30,18 @@ trait JSON extends js.Object {
   def stringify(value: js.Any, replacer: js.Array[scala.Double | java.lang.String]): java.lang.String = js.native
   def stringify(value: js.Any, replacer: js.Array[scala.Double | java.lang.String], space: java.lang.String): java.lang.String = js.native
   def stringify(value: js.Any, replacer: js.Array[scala.Double | java.lang.String], space: scala.Double): java.lang.String = js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _]): java.lang.String = js.native
   def stringify(
     value: js.Any,
-    replacer: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _],
+    replacer: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, _]
+  ): java.lang.String = js.native
+  def stringify(
+    value: js.Any,
+    replacer: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, _],
     space: java.lang.String
   ): java.lang.String = js.native
   def stringify(
     value: js.Any,
-    replacer: js.Function2[/* key */ java.lang.String, /* value */ js.Any, _],
+    replacer: js.ThisFunction2[/* this */ js.Any, /* key */ java.lang.String, /* value */ js.Any, _],
     space: scala.Double
   ): java.lang.String = js.native
   def stringify(value: js.Any, replacer: scala.Null, space: java.lang.String): java.lang.String = js.native

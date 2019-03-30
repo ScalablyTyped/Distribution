@@ -17,8 +17,10 @@ trait CrashReporter extends EventEmitter {
     */
   def addExtraParameter(key: java.lang.String, value: java.lang.String): scala.Unit = js.native
   /**
-    * Returns the date and ID of the last crash report. If no crash reports have been
-    * sent or the crash reporter has not been started, null is returned.
+    * Returns the date and ID of the last crash report. Only crash reports that have
+    * been uploaded will be returned; even if a crash report is present on disk it
+    * will not be returned until it is uploaded. In the case that there are no
+    * uploaded reports, null is returned.
     */
   def getLastCrashReport(): CrashReport = js.native
   /**

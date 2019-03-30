@@ -82,7 +82,9 @@ trait TableArgs extends js.Object {
   /**
     * Defines ttl, has two properties, and can only be specified once:
     */
-  val ttl: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AttributeNameEnabled]] = js.undefined
+  val ttl: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AttributeNameEnabledBoolean]
+  ] = js.undefined
   /**
     * The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
     */
@@ -113,7 +115,7 @@ object TableArgs {
     streamEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     streamViewType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
-    ttl: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AttributeNameEnabled] = null,
+    ttl: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AttributeNameEnabledBoolean] = null,
     writeCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
   ): TableArgs = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], hashKey = hashKey.asInstanceOf[js.Any])

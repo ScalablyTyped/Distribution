@@ -24,10 +24,6 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait ANY
-    extends atPulumiAwsLib.apigatewayExperimentalApiMod.Method
-  
-  @js.native
   sealed trait AT_TIMESTAMP extends js.Object
   
   @js.native
@@ -64,10 +60,6 @@ object atPulumiAwsLibStrings {
     extends atPulumiAwsLib.ecsContainerMod.KernelCapability
   
   @js.native
-  sealed trait DELETE
-    extends atPulumiAwsLib.apigatewayExperimentalApiMod.Method
-  
-  @js.native
   sealed trait Delete extends js.Object
   
   @js.native
@@ -83,10 +75,6 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait FSETID
     extends atPulumiAwsLib.ecsContainerMod.KernelCapability
-  
-  @js.native
-  sealed trait GET
-    extends atPulumiAwsLib.apigatewayExperimentalApiMod.Method
   
   @js.native
   sealed trait GroupDesiredCapacity
@@ -180,18 +168,6 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait NET_RAW
     extends atPulumiAwsLib.ecsContainerMod.KernelCapability
-  
-  @js.native
-  sealed trait PATCH
-    extends atPulumiAwsLib.apigatewayExperimentalApiMod.Method
-  
-  @js.native
-  sealed trait POST
-    extends atPulumiAwsLib.apigatewayExperimentalApiMod.Method
-  
-  @js.native
-  sealed trait PUT
-    extends atPulumiAwsLib.apigatewayExperimentalApiMod.Method
   
   @js.native
   sealed trait Post extends js.Object
@@ -1198,8 +1174,6 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def ALL: ALL = "ALL".asInstanceOf[ALL]
   @scala.inline
-  def ANY: ANY = "ANY".asInstanceOf[ANY]
-  @scala.inline
   def AT_TIMESTAMP: AT_TIMESTAMP = "AT_TIMESTAMP".asInstanceOf[AT_TIMESTAMP]
   @scala.inline
   def AUDIT_CONTROL: AUDIT_CONTROL = "AUDIT_CONTROL".asInstanceOf[AUDIT_CONTROL]
@@ -1220,8 +1194,6 @@ object atPulumiAwsLibStrings {
   @scala.inline
   def DAC_READ_SEARCH: DAC_READ_SEARCH = "DAC_READ_SEARCH".asInstanceOf[DAC_READ_SEARCH]
   @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
   def Delete: Delete = "Delete".asInstanceOf[Delete]
   @scala.inline
   def DeleteMarkerCreated: DeleteMarkerCreated = "DeleteMarkerCreated".asInstanceOf[DeleteMarkerCreated]
@@ -1231,8 +1203,6 @@ object atPulumiAwsLibStrings {
   def FOWNER: FOWNER = "FOWNER".asInstanceOf[FOWNER]
   @scala.inline
   def FSETID: FSETID = "FSETID".asInstanceOf[FSETID]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
   @scala.inline
   def GroupDesiredCapacity: GroupDesiredCapacity = "GroupDesiredCapacity".asInstanceOf[GroupDesiredCapacity]
   @scala.inline
@@ -1281,12 +1251,6 @@ object atPulumiAwsLibStrings {
   def NET_BROADCAST: NET_BROADCAST = "NET_BROADCAST".asInstanceOf[NET_BROADCAST]
   @scala.inline
   def NET_RAW: NET_RAW = "NET_RAW".asInstanceOf[NET_RAW]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
   def Post: Post = "Post".asInstanceOf[Post]
   @scala.inline

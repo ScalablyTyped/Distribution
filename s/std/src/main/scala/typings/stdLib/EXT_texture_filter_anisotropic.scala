@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The EXT_texture_filter_anisotropic extension is part of the WebGL API and exposes two constants for anisotropic filtering (AF). */
 trait EXT_texture_filter_anisotropic extends js.Object {
   val MAX_TEXTURE_MAX_ANISOTROPY_EXT: GLenum
   val TEXTURE_MAX_ANISOTROPY_EXT: GLenum

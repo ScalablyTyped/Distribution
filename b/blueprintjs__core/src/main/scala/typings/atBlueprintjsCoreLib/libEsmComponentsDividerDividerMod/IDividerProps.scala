@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
     * @default "div"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any
   ] = js.undefined
 }
 
@@ -267,7 +267,7 @@ object IDividerProps {
     suppressContentEditableWarning: js.UndefOr[scala.Boolean] = js.undefined,
     suppressHydrationWarning: js.UndefOr[scala.Boolean] = js.undefined,
     tabIndex: scala.Int | scala.Double = null,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,
     title: java.lang.String = null,
     typeof: java.lang.String = null,
     unselectable: reactLib.reactLibStrings.on | reactLib.reactLibStrings.off = null,

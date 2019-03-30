@@ -46,7 +46,6 @@ trait ZonedDateTime extends ChronoZonedDateTime {
   def toLocalDate(): LocalDate = js.native
   def toLocalDateTime(): LocalDateTime = js.native
   def toLocalTime(): LocalTime = js.native
-  def toOffsetDateTime(): OffsetDateTime = js.native
   def truncatedTo(unit: TemporalUnit): ZonedDateTime = js.native
   def until(endExclusive: Temporal, unit: TemporalUnit): scala.Double = js.native
   def `with`(): js.Any = js.native

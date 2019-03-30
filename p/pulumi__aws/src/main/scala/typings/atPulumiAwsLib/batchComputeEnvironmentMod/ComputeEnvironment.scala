@@ -30,7 +30,6 @@ class ComputeEnvironment protected ()
     * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
     */
   val computeResources: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BidPercentage]] = js.native
-  val eccClusterArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
     */

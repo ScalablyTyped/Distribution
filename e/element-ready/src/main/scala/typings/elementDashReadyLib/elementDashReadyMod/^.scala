@@ -55,6 +55,10 @@ object ^ extends js.Object {
   @JSName("default")
   def default_basefont(selector: elementDashReadyLib.elementDashReadyLibStrings.basefont, options: Options): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLBaseFontElement] = js.native
   @JSName("default")
+  def default_bdi(selector: elementDashReadyLib.elementDashReadyLibStrings.bdi): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
+  @JSName("default")
+  def default_bdi(selector: elementDashReadyLib.elementDashReadyLibStrings.bdi, options: Options): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
+  @JSName("default")
   def default_bdo(selector: elementDashReadyLib.elementDashReadyLibStrings.bdo): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
   @JSName("default")
   def default_bdo(selector: elementDashReadyLib.elementDashReadyLibStrings.bdo, options: Options): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
@@ -407,6 +411,10 @@ object ^ extends js.Object {
   @JSName("default")
   def default_link(selector: elementDashReadyLib.elementDashReadyLibStrings.link, options: Options): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLLinkElement] = js.native
   @JSName("default")
+  def default_main(selector: elementDashReadyLib.elementDashReadyLibStrings.main): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
+  @JSName("default")
+  def default_main(selector: elementDashReadyLib.elementDashReadyLibStrings.main, options: Options): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
+  @JSName("default")
   def default_map(selector: elementDashReadyLib.elementDashReadyLibStrings.map): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLMapElement] = js.native
   @JSName("default")
   def default_map(selector: elementDashReadyLib.elementDashReadyLibStrings.map, options: Options): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLMapElement] = js.native
@@ -519,6 +527,10 @@ object ^ extends js.Object {
   @JSName("default")
   def default_rect(selector: elementDashReadyLib.elementDashReadyLibStrings.rect, options: Options): pDashCancelableLib.pDashCancelableMod.default[stdLib.SVGRectElement] = js.native
   @JSName("default")
+  def default_rp(selector: elementDashReadyLib.elementDashReadyLibStrings.rp): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
+  @JSName("default")
+  def default_rp(selector: elementDashReadyLib.elementDashReadyLibStrings.rp, options: Options): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
+  @JSName("default")
   def default_rt(selector: elementDashReadyLib.elementDashReadyLibStrings.rt): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
   @JSName("default")
   def default_rt(selector: elementDashReadyLib.elementDashReadyLibStrings.rt, options: Options): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
@@ -578,6 +590,10 @@ object ^ extends js.Object {
   def default_sub(selector: elementDashReadyLib.elementDashReadyLibStrings.sub): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
   @JSName("default")
   def default_sub(selector: elementDashReadyLib.elementDashReadyLibStrings.sub, options: Options): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
+  @JSName("default")
+  def default_summary(selector: elementDashReadyLib.elementDashReadyLibStrings.summary): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
+  @JSName("default")
+  def default_summary(selector: elementDashReadyLib.elementDashReadyLibStrings.summary, options: Options): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
   @JSName("default")
   def default_sup(selector: elementDashReadyLib.elementDashReadyLibStrings.sup): pDashCancelableLib.pDashCancelableMod.default[stdLib.HTMLElement] = js.native
   @JSName("default")

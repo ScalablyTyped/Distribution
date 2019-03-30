@@ -32,7 +32,7 @@
  * @public
  */
 /**
- * @deprecated Use `IProcessedStyleSet` from @uifabric/styling or @uifabric/merge-styles instead.
+ * @deprecated Use `IProcessedStyleSet` from `@uifabric/styling` or `@uifabric/merge-styles` instead.
  */
 /**
  * Properties used by render function interface for providing overrideable render callbacks.

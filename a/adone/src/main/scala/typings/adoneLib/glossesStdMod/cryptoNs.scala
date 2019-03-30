@@ -13,8 +13,40 @@ object cryptoNs extends js.Object {
     extends nodeLib.cryptoMod.CertificateCls
   
   @js.native
-  class ECDH ()
+  class Cipher protected ()
+    extends nodeLib.cryptoMod.Cipher
+  
+  @js.native
+  class Decipher protected ()
+    extends nodeLib.cryptoMod.Decipher
+  
+  @js.native
+  class DiffieHellman protected ()
+    extends nodeLib.cryptoMod.DiffieHellman
+  
+  @js.native
+  class ECDH protected ()
     extends nodeLib.cryptoMod.ECDH
+  
+  @js.native
+  class Hash protected ()
+    extends nodeLib.cryptoMod.Hash
+  
+  @js.native
+  class Hmac protected ()
+    extends nodeLib.cryptoMod.Hmac
+  
+  @js.native
+  class KeyObject protected ()
+    extends nodeLib.cryptoMod.KeyObject
+  
+  @js.native
+  class Signer protected ()
+    extends nodeLib.cryptoMod.Signer
+  
+  @js.native
+  class Verify protected ()
+    extends nodeLib.cryptoMod.Verify
   
   val Certificate: nodeLib.Anon_Certificate = js.native
   /** @deprecated since v10.0.0 */

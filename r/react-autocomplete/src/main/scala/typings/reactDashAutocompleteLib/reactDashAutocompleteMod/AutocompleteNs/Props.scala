@@ -99,7 +99,7 @@ trait Props extends js.Object {
     */
   var renderMenu: js.UndefOr[
     js.Function3[
-      /* items */ js.Array[_], 
+      /* items */ js.Array[reactLib.reactMod.ReactNs.ReactNode], 
       /* value */ java.lang.String, 
       /* styles */ reactLib.reactMod.ReactNs.CSSProperties, 
       reactLib.reactMod.ReactNs.ReactNode

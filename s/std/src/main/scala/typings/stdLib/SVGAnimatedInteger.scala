@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGAnimatedInteger interface is used for attributes of basic type <integer> which can be animated. */
 trait SVGAnimatedInteger extends js.Object {
   val animVal: scala.Double
   var baseVal: scala.Double

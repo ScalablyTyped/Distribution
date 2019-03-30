@@ -31,6 +31,10 @@ class PublicVirtualInterface protected ()
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * The Direct Connect endpoint on which the virtual interface terminates.
+    */
+  val awsDevice: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
     */
   val bgpAsn: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native

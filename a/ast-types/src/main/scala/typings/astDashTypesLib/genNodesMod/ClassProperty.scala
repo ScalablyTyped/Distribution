@@ -13,6 +13,9 @@ import scala.scalajs.js.annotation._
      with astDashTypesLib.genKindsMod.NodeKind
      with astDashTypesLib.genKindsMod.PrintableKind
      with astDashTypesLib.genKindsMod.StatementKind {
+  var access: js.UndefOr[
+    astDashTypesLib.astDashTypesLibStrings.public | astDashTypesLib.astDashTypesLibStrings.`private` | astDashTypesLib.astDashTypesLibStrings.`protected`
+  ]
   var computed: scala.Boolean
   var key: astDashTypesLib.genKindsMod.LiteralKind | astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.ExpressionKind
   var static: scala.Boolean
@@ -29,12 +32,14 @@ object ClassProperty {
     key: astDashTypesLib.genKindsMod.LiteralKind | astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.ExpressionKind,
     static: scala.Boolean,
     `type`: astDashTypesLib.astDashTypesLibStrings.ClassProperty,
+    access: astDashTypesLib.astDashTypesLibStrings.public | astDashTypesLib.astDashTypesLibStrings.`private` | astDashTypesLib.astDashTypesLibStrings.`protected` = null,
     typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
     value: astDashTypesLib.genKindsMod.ExpressionKind = null,
     variance: astDashTypesLib.genKindsMod.VarianceKind | astDashTypesLib.astDashTypesLibStrings.plus | astDashTypesLib.astDashTypesLibStrings.minus = null
   ): ClassProperty = {
     val __obj = js.Dynamic.literal(computed = computed, key = key.asInstanceOf[js.Any], static = static)
     __obj.updateDynamic("type")(`type`)
+    if (access != null) __obj.updateDynamic("access")(access.asInstanceOf[js.Any])
     if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value)
     if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])

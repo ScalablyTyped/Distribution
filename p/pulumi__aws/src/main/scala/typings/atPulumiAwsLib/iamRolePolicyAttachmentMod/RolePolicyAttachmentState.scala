@@ -13,14 +13,16 @@ trait RolePolicyAttachmentState extends js.Object {
   /**
     * The role the policy should be applied to
     */
-  val role: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamRoleMod.Role]] = js.undefined
+  val role: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamRoleMod.Role]
+  ] = js.undefined
 }
 
 object RolePolicyAttachmentState {
   @scala.inline
   def apply(
     policyArn: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN] = null,
-    role: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamRoleMod.Role] = null
+    role: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamRoleMod.Role] = null
   ): RolePolicyAttachmentState = {
     val __obj = js.Dynamic.literal()
     if (policyArn != null) __obj.updateDynamic("policyArn")(policyArn.asInstanceOf[js.Any])

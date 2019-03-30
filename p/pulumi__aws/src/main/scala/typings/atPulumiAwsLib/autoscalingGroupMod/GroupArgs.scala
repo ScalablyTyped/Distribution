@@ -96,8 +96,8 @@ trait GroupArgs extends js.Object {
   ] = js.undefined
   /**
     * Setting this causes Terraform to wait for
-    * this number of instances to show up healthy in the ELB only on creation.
-    * Updates will not wait on ELB instance number changes.
+    * this number of instances from this autoscaling group to show up healthy in the
+    * ELB only on creation. Updates will not wait on ELB instance number changes.
     * (See also Waiting for Capacity below.)
     */
   val minElbCapacity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
@@ -167,7 +167,7 @@ trait GroupArgs extends js.Object {
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
   /**
-    * A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `Default`.
+    * A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
     */
   val terminationPolicies: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
@@ -181,9 +181,9 @@ trait GroupArgs extends js.Object {
   val waitForCapacityTimeout: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Setting this will cause Terraform to wait
-    * for exactly this number of healthy instances in all attached load balancers
-    * on both create and update operations. (Takes precedence over
-    * `min_elb_capacity` behavior.)
+    * for exactly this number of healthy instances from this autoscaling group in
+    * all attached load balancers on both create and update operations. (Takes
+    * precedence over `min_elb_capacity` behavior.)
     * (See also Waiting for Capacity below.)
     */
   val waitForElbCapacity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined

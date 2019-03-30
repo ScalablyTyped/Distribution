@@ -192,6 +192,10 @@ object GreengrassNs extends js.Object {
       * The name of the connector definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * Tag(s) to add to the new resource
+      */
+    var tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateConnectorDefinitionResponse extends js.Object {
@@ -272,6 +276,10 @@ object GreengrassNs extends js.Object {
       * The name of the core definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * Tag(s) to add to the new resource
+      */
+    var tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateCoreDefinitionResponse extends js.Object {
@@ -386,6 +394,10 @@ object GreengrassNs extends js.Object {
       * The name of the device definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * Tag(s) to add to the new resource
+      */
+    var tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateDeviceDefinitionResponse extends js.Object {
@@ -466,6 +478,10 @@ object GreengrassNs extends js.Object {
       * The name of the function definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * Tag(s) to add to the new resource
+      */
+    var tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateFunctionDefinitionResponse extends js.Object {
@@ -568,6 +584,10 @@ object GreengrassNs extends js.Object {
       * The name of the group.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * Tag(s) to add to the new resource
+      */
+    var tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateGroupResponse extends js.Object {
@@ -672,6 +692,10 @@ object GreengrassNs extends js.Object {
       * The name of the logger definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * Tag(s) to add to the new resource
+      */
+    var tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateLoggerDefinitionResponse extends js.Object {
@@ -752,6 +776,10 @@ object GreengrassNs extends js.Object {
       * The name of the resource definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * Tag(s) to add to the new resource
+      */
+    var tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateResourceDefinitionResponse extends js.Object {
@@ -856,6 +884,10 @@ object GreengrassNs extends js.Object {
       * The name of the subscription definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * Tag(s) to add to the new resource
+      */
+    var tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateSubscriptionDefinitionResponse extends js.Object {
@@ -952,6 +984,10 @@ object GreengrassNs extends js.Object {
       * The name of the definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * The tags for the definition.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait DeleteConnectorDefinitionRequest extends js.Object {
@@ -1257,6 +1293,10 @@ object GreengrassNs extends js.Object {
       * Error message
       */
     var ErrorMessage: js.UndefOr[__string] = js.undefined
+    /**
+      * The tags for the definition.
+      */
+    var tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   trait GetConnectivityInfoRequest extends js.Object {
@@ -1313,6 +1353,10 @@ object GreengrassNs extends js.Object {
       * The name of the definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * The tags for the definition.
+      */
+    var tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   trait GetConnectorDefinitionVersionRequest extends js.Object {
@@ -1393,6 +1437,10 @@ object GreengrassNs extends js.Object {
       * The name of the definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * The tags for the definition.
+      */
+    var tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   trait GetCoreDefinitionVersionRequest extends js.Object {
@@ -1503,6 +1551,10 @@ object GreengrassNs extends js.Object {
       * The name of the definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * The tags for the definition.
+      */
+    var tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   trait GetDeviceDefinitionVersionRequest extends js.Object {
@@ -1583,6 +1635,10 @@ object GreengrassNs extends js.Object {
       * The name of the definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * The tags for the definition.
+      */
+    var tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   trait GetFunctionDefinitionVersionRequest extends js.Object {
@@ -1711,6 +1767,10 @@ object GreengrassNs extends js.Object {
       * The name of the definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * The tags for the definition.
+      */
+    var tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   trait GetGroupVersionRequest extends js.Object {
@@ -1783,6 +1843,10 @@ object GreengrassNs extends js.Object {
       * The name of the definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * The tags for the definition.
+      */
+    var tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   trait GetLoggerDefinitionVersionRequest extends js.Object {
@@ -1859,6 +1923,10 @@ object GreengrassNs extends js.Object {
       * The name of the definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * The tags for the definition.
+      */
+    var tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   trait GetResourceDefinitionVersionRequest extends js.Object {
@@ -1944,6 +2012,10 @@ object GreengrassNs extends js.Object {
       * The name of the definition.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * The tags for the definition.
+      */
+    var tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   trait GetSubscriptionDefinitionVersionRequest extends js.Object {
@@ -2544,6 +2616,20 @@ object GreengrassNs extends js.Object {
     var NextToken: js.UndefOr[__string] = js.undefined
   }
   
+  trait ListTagsForResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the resource.
+      */
+    var ResourceArn: __string
+  }
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    /**
+      * A map of the key-value pairs for the resource tag.
+      */
+    var tags: js.UndefOr[__mapOf__string] = js.undefined
+  }
+  
   trait LocalDeviceResourceData extends js.Object {
     /**
       * Group/owner related settings for local resources.
@@ -2728,6 +2814,10 @@ object GreengrassNs extends js.Object {
       * The URI of the input file contained in the S3 bucket. The execution role must have ''getObject'' permissions on this bucket to access the input file. The input file is a JSON-serialized, line delimited file with UTF-8 encoding that provides a list of group and version IDs and the deployment type. This file must be less than 100 MB. Currently, AWS IoT Greengrass supports only ''NewDeployment'' deployment types.
       */
     var InputFileUri: js.UndefOr[__string] = js.undefined
+    /**
+      * Tag(s) to add to the new resource
+      */
+    var tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait StartBulkDeploymentResponse extends js.Object {
@@ -2775,6 +2865,20 @@ object GreengrassNs extends js.Object {
       */
     var Subscriptions: js.UndefOr[__listOfSubscription] = js.undefined
   }
+  
+  trait TagResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the resource.
+      */
+    var ResourceArn: __string
+    /**
+      * A map of the key-value pairs for the resource tag.
+      */
+    var tags: __mapOf__string
+  }
+  
+  trait Tags
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
   @js.native
   trait Types
@@ -4484,6 +4588,29 @@ object GreengrassNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListSubscriptionDefinitionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Retrieves the tags for a resource.
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves the tags for a resource.
+      */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Resets a group's deployments.
       */
     def resetDeployments(): awsDashSdkLib.libRequestMod.Request[ResetDeploymentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4552,6 +4679,36 @@ object GreengrassNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopBulkDeploymentResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Add tags to a resource.
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Add tags to a resource.
+      */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Remove tags with specified keys from a resource.
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Remove tags with specified keys from a resource.
+      */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Updates the connectivity information for the core. Any devices that belong to the group which has this core will receive this information in order to find the location of the core and connect to it.
       */
@@ -4782,6 +4939,17 @@ object GreengrassNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateSubscriptionDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  }
+  
+  trait UntagResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the resource.
+      */
+    var ResourceArn: __string
+    /**
+      * A list of the keys to remove from the resource tags.
+      */
+    var TagKeys: __listOf__string
   }
   
   trait UpdateConnectivityInfoRequest extends js.Object {

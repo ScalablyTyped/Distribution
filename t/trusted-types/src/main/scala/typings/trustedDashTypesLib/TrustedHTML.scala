@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("TrustedHTML")
 @js.native
 class TrustedHTML () extends js.Object {
-  val _TrustedHTMLBrand: trustedDashTypesLib.trustedDashTypesLibNumbers.`true` = js.native
+  val _brand: trustedDashTypesLib.trustedDashTypesLibNumbers.`true` = js.native
 }
 

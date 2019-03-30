@@ -34,7 +34,7 @@ trait Popup extends js.Object {
   /**
   			 * The type of Popup, which is described in PopupType enum. Should be only one "root" Popup for each set of Popups.
   			 */
-  var `type`: PopupType
+  var `type`: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.FactoryApiNs.PopupNs.TypesNs.PopupType
 }
 
 object Popup {
@@ -42,7 +42,7 @@ object Popup {
   def apply(
     content: stdLib.HTMLElement,
     name: java.lang.String,
-    `type`: PopupType,
+    `type`: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.FactoryApiNs.PopupNs.TypesNs.PopupType,
     closeOnOutsideClick: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
     popupToOpen: java.lang.String = null

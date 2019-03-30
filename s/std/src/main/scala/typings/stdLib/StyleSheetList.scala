@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The StyleSheetList interface represents a list of StyleSheet. */
 trait StyleSheetList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[StyleSheet] {
   @JSName(org.scalablytyped.runtime.Symbol.iterator)

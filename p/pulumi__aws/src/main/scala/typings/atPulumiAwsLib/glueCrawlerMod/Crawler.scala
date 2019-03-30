@@ -19,6 +19,10 @@ class Crawler protected ()
   def this(name: java.lang.String, args: CrawlerArgs) = this()
   def this(name: java.lang.String, args: CrawlerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
+    * The ARN of the crawler
+    */
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * List of custom classifiers. By default, all AWS classifiers are included in a crawl, but these custom classifiers always override the default classifiers for a given classification.
     */
   val classifiers: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native

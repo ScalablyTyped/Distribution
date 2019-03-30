@@ -24,7 +24,7 @@ class InputTypeComposer[TContext] protected ()
   def clearFieldExtensions(fieldName: java.lang.String): this.type = js.native
   def clone(newTypeName: java.lang.String): InputTypeComposer[TContext] = js.native
   def extendExtensions(extensions: graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions): this.type = js.native
-  def extendField(fieldName: java.lang.String, parialFieldConfig: stdLib.Partial[ComposeInputFieldConfig]): this.type = js.native
+  def extendField(fieldName: java.lang.String, partialFieldConfig: stdLib.Partial[ComposeInputFieldConfig]): this.type = js.native
   def extendFieldExtensions(fieldName: java.lang.String, extensions: graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions): this.type = js.native
   // -----------------------------------------------
   // Misc methods

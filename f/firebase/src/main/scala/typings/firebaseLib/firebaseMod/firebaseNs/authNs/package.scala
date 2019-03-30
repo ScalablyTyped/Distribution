@@ -17,7 +17,7 @@ package object authNs {
     * Facebook auth provider.
     *
     * @example
-    * ```
+    * ```javascript
     * // Sign in using a redirect.
     * firebase.auth().getRedirectResult().then(function(result) {
     *   if (result.credential) {
@@ -33,7 +33,7 @@ package object authNs {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Sign in using a popup.
     * var provider = new firebase.auth.FacebookAuthProvider();
     * provider.addScope('user_birthday');
@@ -50,13 +50,13 @@ package object authNs {
     */
   type FacebookAuthProvider = FacebookAuthProvider_Instance
   /**
-    * Github auth provider.
+    * GitHub auth provider.
     *
     * GitHub requires an OAuth 2.0 redirect, so you can either handle the redirect
     * directly, or use the signInWithPopup handler:
     *
     * @example
-    * ```
+    * ```javascript
     * // Using a redirect.
     * firebase.auth().getRedirectResult().then(function(result) {
     *   if (result.credential) {
@@ -87,7 +87,7 @@ package object authNs {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // With popup.
     * var provider = new firebase.auth.GithubAuthProvider();
     *  provider.addScope('repo');
@@ -121,7 +121,7 @@ package object authNs {
     * Google auth provider.
     *
     * @example
-    * ```
+    * ```javascript
     * // Using a redirect.
     * firebase.auth().getRedirectResult().then(function(result) {
     *   if (result.credential) {
@@ -139,7 +139,7 @@ package object authNs {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Using a popup.
     * var provider = new firebase.auth.GoogleAuthProvider();
     * provider.addScope('profile');
@@ -160,7 +160,7 @@ package object authNs {
     * Phone number auth provider.
     *
     * @example
-    * ```
+    * ```javascript
     * // 'recaptcha-container' is the ID of an element in the DOM.
     * var applicationVerifier = new firebase.auth.RecaptchaVerifier(
     *     'recaptcha-container');
@@ -176,24 +176,24 @@ package object authNs {
     *       return firebase.auth().signInWithCredential(phoneCredential);
     *     });
     * ```
-    * @param {?firebase.auth.Auth=} auth The Firebase Auth instance in which
+    * @param auth The Firebase Auth instance in which
     *     sign-ins should occur. Uses the default Auth instance if unspecified.
     */
   type PhoneAuthProvider = PhoneAuthProvider_Instance
   /**
     * An {@link https://www.google.com/recaptcha/ reCAPTCHA}-based application
     * verifier.
-    * @param {!Element|string} container The reCAPTCHA container parameter. This
+    * @param container The reCAPTCHA container parameter. This
     *     has different meaning depending on whether the reCAPTCHA is hidden or
     *     visible. For a visible reCAPTCHA the container must be empty. If a string
     *     is used, it has to correspond to an element ID. The corresponding element
     *     must also must be in the DOM at the time of initialization.
-    * @param {?Object=} parameters The optional reCAPTCHA parameters. Check the
+    * @param parameters The optional reCAPTCHA parameters. Check the
     *     reCAPTCHA docs for a comprehensive list. All parameters are accepted
     *     except for the sitekey. Firebase Auth backend provisions a reCAPTCHA for
     *     each project and will configure this upon rendering. For an invisible
     *     reCAPTCHA, a size key must have the value 'invisible'.
-    * @param {?firebase.app.App=} app The corresponding Firebase app. If none is
+    * @param app The corresponding Firebase app. If none is
     *     provided, the default Firebase App instance is used. A Firebase App
     *     instance must be initialized with an API key, otherwise an error will be
     *     thrown.
@@ -203,7 +203,7 @@ package object authNs {
     * Twitter auth provider.
     *
     * @example
-    * ```
+    * ```javascript
     * // Using a redirect.
     * firebase.auth().getRedirectResult().then(function(result) {
     *   if (result.credential) {
@@ -219,7 +219,7 @@ package object authNs {
     * firebase.auth().signInWithRedirect(provider);
     * ```
     * @example
-    * ```
+    * ```javascript
     * // Using a popup.
     * var provider = new firebase.auth.TwitterAuthProvider();
     * firebase.auth().signInWithPopup(provider).then(function(result) {

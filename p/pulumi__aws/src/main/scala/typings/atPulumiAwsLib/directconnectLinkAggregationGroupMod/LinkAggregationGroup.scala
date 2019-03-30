@@ -20,6 +20,7 @@ class LinkAggregationGroup protected ()
   def this(name: java.lang.String, args: LinkAggregationGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
     * The ARN of the LAG.
+    * * `jumbo_frame_capable` -Indicates whether jumbo frames (9001 MTU) are supported.
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
@@ -31,6 +32,11 @@ class LinkAggregationGroup protected ()
     */
   val forceDestroy: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
+    * Indicates whether the LAG supports a secondary BGP peer in the same address family (IPv4/IPv6).
+    */
+  val hasLogicalRedundancy: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val jumboFrameCapable: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
+  /**
     * The AWS Direct Connect location in which the LAG should be allocated. See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html) for the list of AWS Direct Connect locations. Use `locationCode`.
     */
   val location: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
@@ -38,10 +44,6 @@ class LinkAggregationGroup protected ()
     * The name of the LAG.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
-    * The number of physical connections initially provisioned and bundled by the LAG. Use `aws_dx_connection` and `aws_dx_connection_association` resources instead. Default connections will be removed as part of LAG creation automatically in future versions.
-    */
-  val numberOfConnections: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

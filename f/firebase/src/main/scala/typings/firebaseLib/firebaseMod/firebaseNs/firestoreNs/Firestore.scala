@@ -20,7 +20,7 @@ trait Firestore extends js.Object {
     * Creates a write batch, used for performing multiple writes as a single
     * atomic operation.
     *
-    * @return {!firebase.firestore.WriteBatch}
+    * @return
     *   A `WriteBatch` that can be used to atomically execute multiple writes.
     */
   def batch(): WriteBatch = js.native
@@ -39,7 +39,7 @@ trait Firestore extends js.Object {
     * results from cache, and any write operations will be queued until the network
     * is restored.
     *
-    * @return {!Promise<void>} A promise that is resolved once the network has been
+    * @return A promise that is resolved once the network has been
     *   disabled.
     */
   def disableNetwork(): js.Promise[scala.Unit] = js.native
@@ -56,7 +56,7 @@ trait Firestore extends js.Object {
     * call to {@link firebase.firestore.Firestore.disableNetwork
     * `disableNetwork()`}.
     *
-    * @return {!Promise<void>} A promise that is resolved once the network has been
+    * @return A promise that is resolved once the network has been
     *   enabled.
     */
   def enableNetwork(): js.Promise[scala.Unit] = js.native
@@ -82,29 +82,16 @@ trait Firestore extends js.Object {
     */
   def enablePersistence(): js.Promise[scala.Unit] = js.native
   def enablePersistence(settings: PersistenceSettings): js.Promise[scala.Unit] = js.native
-  // TODO(b/116617988): Uncomment method and change jsdoc comment to "/**"
-  // once backend support is ready.
-  /*
-    * Creates and returns a new Query that includes all documents in the
-    * database that are contained in a collection or subcollection with the
-    * given collectionId.
-    *
-    * @param collectionId Identifies the collections to query over. Every
-    * collection or subcollection with this ID as the last segment of its path
-    * will be included. Cannot contain a slash.
-    * @return The created Query.
-    */
-  //collectionGroup(collectionId: string): Query;
   /**
     * Executes the given `updateFunction` and then attempts to commit the changes
     * applied within the transaction. If any document read within the transaction
     * has changed, Cloud Firestore retries the `updateFunction`. If it fails to
     * commit after 5 attempts, the transaction fails.
     *
-    * @param {function(!firebase.firestore.Transaction)} updateFunction
+    * @param updateFunction
     *   The function to execute within the transaction context.
     *
-    * @return {!Promise}
+    * @return
     *   If the transaction completed successfully or was explicitly aborted
     *   (the `updateFunction` returned a failed promise),
     *   the promise returned by the updateFunction is returned here. Else, if the

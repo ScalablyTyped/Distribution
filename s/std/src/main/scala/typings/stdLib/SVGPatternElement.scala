@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGPatternElement interface corresponds to the <pattern> element. */
 @js.native
 trait SVGPatternElement
   extends SVGElement

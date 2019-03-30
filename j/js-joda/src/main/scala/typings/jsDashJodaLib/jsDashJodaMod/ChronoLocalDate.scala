@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "ChronoLocalDate")
 @js.native
-class ChronoLocalDate ()
+abstract class ChronoLocalDate ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.ChronoLocalDate {
   /* CompleteClass */
   override def get(field: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalField): scala.Double = js.native

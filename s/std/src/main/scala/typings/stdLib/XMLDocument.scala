@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The XMLDocument interface represent an XML document. It inherits from the generic Document and does not add any specific methods or properties to it: nevertheless, several algorithms behave differently with the two types of documents. */
 @js.native
 trait XMLDocument extends Document
 
@@ -13,6 +14,10 @@ trait XMLDocument extends Document
 class XMLDocumentCls () extends XMLDocument {
   /* CompleteClass */
   override val activeElement: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val fullscreenElement: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val pointerLockElement: Element | scala.Null = js.native
   /**
     * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
     */

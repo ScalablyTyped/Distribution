@@ -45,9 +45,12 @@ trait ClusterState extends js.Object {
     * The DocDB Cluster Resource ID
     */
   val clusterResourceId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * A cluster parameter group to associate with the cluster.
+    */
   val dbClusterParameterGroupName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * A DB subnet group to associate with this DB instance.* `db_cluster_parameter_group_name` - (Optional) A cluster parameter group to associate with the cluster.
+    * A DB subnet group to associate with this DB instance.
     */
   val dbSubnetGroupName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

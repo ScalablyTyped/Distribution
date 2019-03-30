@@ -5,10 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("http2", "Http2Stream")
 @js.native
-trait Http2Stream
+class Http2Stream protected ()
   extends nodeLib.streamMod.Duplex {
   val aborted: scala.Boolean = js.native
+  val bufferSize: scala.Double = js.native
   val closed: scala.Boolean = js.native
   val destroyed: scala.Boolean = js.native
   /**
@@ -152,7 +154,7 @@ trait Http2Stream
   @JSName("prependOnceListener")
   def prependOnceListener_wantTrailers(event: nodeLib.nodeLibStrings.wantTrailers, listener: js.Function0[scala.Unit]): this.type = js.native
   def priority(options: StreamPriorityOptions): scala.Unit = js.native
-  def sendTrailers(headers: nodeLib.httpMod.OutgoingHttpHeaders): this.type = js.native
+  def sendTrailers(headers: nodeLib.httpMod.OutgoingHttpHeaders): scala.Unit = js.native
   def setTimeout(msecs: scala.Double): scala.Unit = js.native
   def setTimeout(msecs: scala.Double, callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }

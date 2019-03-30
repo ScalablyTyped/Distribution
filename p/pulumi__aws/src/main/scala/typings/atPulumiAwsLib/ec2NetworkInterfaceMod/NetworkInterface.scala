@@ -33,7 +33,7 @@ class NetworkInterface protected ()
     */
   val privateIps: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native
   /**
-    * Number of private IPs to assign to the ENI.
+    * Number of secondary private IPs to assign to the ENI. The total number of private IPs will be 1 + private_ips_count, as a primary private IP will be assiged to an ENI by default.
     */
   val privateIpsCount: atPulumiPulumiLib.outputMod.Output[scala.Double] = js.native
   /**

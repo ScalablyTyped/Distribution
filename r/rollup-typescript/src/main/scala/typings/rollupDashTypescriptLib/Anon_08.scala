@@ -18,7 +18,7 @@ trait Anon_08 extends js.Object {
   var unchangedTextChangeRange: typescriptLib.typescriptMod.tsNs.TextChangeRange = js.native
   /** The version of the TypeScript compiler release */
   val version: java.lang.String = js.native
-  val versionMajorMinor: /* 3.3 */ java.lang.String = js.native
+  val versionMajorMinor: /* 3.4 */ java.lang.String = js.native
   /**
     * Adds an EmitHelper to a node.
     */
@@ -1625,6 +1625,22 @@ trait Anon_08 extends js.Object {
   def createInputFiles(
     readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
     javascriptPath: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    declarationPath: java.lang.String,
+    declarationMapPath: java.lang.String,
+    buildInfoPath: java.lang.String
+  ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    declarationPath: java.lang.String,
+    declarationMapPath: js.UndefOr[scala.Nothing],
+    buildInfoPath: java.lang.String
+  ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
     javascriptMapPath: js.UndefOr[scala.Nothing],
     declarationPath: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
@@ -1634,6 +1650,22 @@ trait Anon_08 extends js.Object {
     javascriptMapPath: js.UndefOr[scala.Nothing],
     declarationPath: java.lang.String,
     declarationMapPath: java.lang.String
+  ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    declarationPath: java.lang.String,
+    declarationMapPath: java.lang.String,
+    buildInfoPath: java.lang.String
+  ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    declarationPath: java.lang.String,
+    declarationMapPath: js.UndefOr[scala.Nothing],
+    buildInfoPath: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInterfaceDeclaration(
     decorators: js.UndefOr[js.Array[typescriptLib.typescriptMod.tsNs.Decorator]],
@@ -1671,6 +1703,7 @@ trait Anon_08 extends js.Object {
     children: js.Array[typescriptLib.typescriptMod.tsNs.JsxChild],
     closingFragment: typescriptLib.typescriptMod.tsNs.JsxClosingFragment
   ): typescriptLib.typescriptMod.tsNs.JsxFragment = js.native
+  def createJsxJsxClosingFragment(): typescriptLib.typescriptMod.tsNs.JsxClosingFragment = js.native
   def createJsxOpeningElement(
     tagName: typescriptLib.typescriptMod.tsNs.JsxTagNameExpression,
     typeArguments: js.Array[typescriptLib.typescriptMod.tsNs.TypeNode],
@@ -1681,6 +1714,7 @@ trait Anon_08 extends js.Object {
     typeArguments: js.UndefOr[scala.Nothing],
     attributes: typescriptLib.typescriptMod.tsNs.JsxAttributes
   ): typescriptLib.typescriptMod.tsNs.JsxOpeningElement = js.native
+  def createJsxOpeningFragment(): typescriptLib.typescriptMod.tsNs.JsxOpeningFragment = js.native
   def createJsxSelfClosingElement(
     tagName: typescriptLib.typescriptMod.tsNs.JsxTagNameExpression,
     typeArguments: js.Array[typescriptLib.typescriptMod.tsNs.TypeNode],
@@ -1692,6 +1726,8 @@ trait Anon_08 extends js.Object {
     attributes: typescriptLib.typescriptMod.tsNs.JsxAttributes
   ): typescriptLib.typescriptMod.tsNs.JsxSelfClosingElement = js.native
   def createJsxSpreadAttribute(expression: typescriptLib.typescriptMod.tsNs.Expression): typescriptLib.typescriptMod.tsNs.JsxSpreadAttribute = js.native
+  def createJsxText(text: java.lang.String): typescriptLib.typescriptMod.tsNs.JsxText = js.native
+  def createJsxText(text: java.lang.String, containsOnlyTriviaWhiteSpaces: scala.Boolean): typescriptLib.typescriptMod.tsNs.JsxText = js.native
   def createKeywordTypeNode(kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): typescriptLib.typescriptMod.tsNs.KeywordTypeNode = js.native
   def createLabel(label: java.lang.String, statement: typescriptLib.typescriptMod.tsNs.Statement): typescriptLib.typescriptMod.tsNs.LabeledStatement = js.native
   def createLabel(
@@ -2055,6 +2091,7 @@ trait Anon_08 extends js.Object {
   def createNotEmittedStatement(original: typescriptLib.typescriptMod.tsNs.Node): typescriptLib.typescriptMod.tsNs.NotEmittedStatement = js.native
   def createNull(): typescriptLib.typescriptMod.tsNs.NullLiteral with typescriptLib.typescriptMod.tsNs.Token[typescriptLib.typescriptMod.tsNs.SyntaxKind] = js.native
   def createNumericLiteral(value: java.lang.String): typescriptLib.typescriptMod.tsNs.NumericLiteral = js.native
+  def createNumericLiteral(value: java.lang.String, numericLiteralFlags: typescriptLib.typescriptMod.tsNs.TokenFlags): typescriptLib.typescriptMod.tsNs.NumericLiteral = js.native
   def createObjectBindingPattern(elements: js.Array[typescriptLib.typescriptMod.tsNs.BindingElement]): typescriptLib.typescriptMod.tsNs.ObjectBindingPattern = js.native
   def createObjectLiteral(): typescriptLib.typescriptMod.tsNs.ObjectLiteralExpression = js.native
   def createObjectLiteral(properties: js.Array[typescriptLib.typescriptMod.tsNs.ObjectLiteralElementLike]): typescriptLib.typescriptMod.tsNs.ObjectLiteralExpression = js.native
@@ -3483,9 +3520,21 @@ trait Anon_08 extends js.Object {
     `type`: rollupDashTypescriptLib.rollupDashTypescriptLibStrings.dts
   ): typescriptLib.typescriptMod.tsNs.UnparsedSource = js.native
   @JSName("createUnparsedSourceFile")
+  def createUnparsedSourceFile_dts(
+    inputFile: typescriptLib.typescriptMod.tsNs.InputFiles,
+    `type`: rollupDashTypescriptLib.rollupDashTypescriptLibStrings.dts,
+    stripInternal: scala.Boolean
+  ): typescriptLib.typescriptMod.tsNs.UnparsedSource = js.native
+  @JSName("createUnparsedSourceFile")
   def createUnparsedSourceFile_js(
     inputFile: typescriptLib.typescriptMod.tsNs.InputFiles,
     `type`: rollupDashTypescriptLib.rollupDashTypescriptLibStrings.JS
+  ): typescriptLib.typescriptMod.tsNs.UnparsedSource = js.native
+  @JSName("createUnparsedSourceFile")
+  def createUnparsedSourceFile_js(
+    inputFile: typescriptLib.typescriptMod.tsNs.InputFiles,
+    `type`: rollupDashTypescriptLib.rollupDashTypescriptLibStrings.JS,
+    stripInternal: scala.Boolean
   ): typescriptLib.typescriptMod.tsNs.UnparsedSource = js.native
   def createVariableDeclaration(name: java.lang.String): typescriptLib.typescriptMod.tsNs.VariableDeclaration = js.native
   def createVariableDeclaration(name: java.lang.String, `type`: typescriptLib.typescriptMod.tsNs.TypeNode): typescriptLib.typescriptMod.tsNs.VariableDeclaration = js.native
@@ -4006,6 +4055,7 @@ trait Anon_08 extends js.Object {
   def isComputedPropertyName(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.ComputedPropertyName */ scala.Boolean = js.native
   def isConditionalExpression(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.ConditionalExpression */ scala.Boolean = js.native
   def isConditionalTypeNode(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.ConditionalTypeNode */ scala.Boolean = js.native
+  def isConstTypeReference(node: typescriptLib.typescriptMod.tsNs.Node): scala.Boolean = js.native
   def isConstructSignatureDeclaration(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.ConstructSignatureDeclaration */ scala.Boolean = js.native
   def isConstructorDeclaration(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.ConstructorDeclaration */ scala.Boolean = js.native
   def isConstructorTypeNode(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.ConstructorTypeNode */ scala.Boolean = js.native
@@ -4194,7 +4244,10 @@ trait Anon_08 extends js.Object {
   def isTypeQueryNode(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.TypeQueryNode */ scala.Boolean = js.native
   def isTypeReferenceNode(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.TypeReferenceNode */ scala.Boolean = js.native
   def isUnionTypeNode(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.UnionTypeNode */ scala.Boolean = js.native
+  def isUnparsedNode(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.UnparsedNode */ scala.Boolean = js.native
+  def isUnparsedPrepend(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.UnparsedPrepend */ scala.Boolean = js.native
   def isUnparsedSource(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.UnparsedSource */ scala.Boolean = js.native
+  def isUnparsedTextLike(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.UnparsedTextLike */ scala.Boolean = js.native
   def isVariableDeclaration(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.VariableDeclaration */ scala.Boolean = js.native
   def isVariableDeclarationList(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.VariableDeclarationList */ scala.Boolean = js.native
   def isVariableStatement(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.VariableStatement */ scala.Boolean = js.native
@@ -5927,6 +5980,12 @@ trait Anon_08 extends js.Object {
     node: typescriptLib.typescriptMod.tsNs.JsxSpreadAttribute,
     expression: typescriptLib.typescriptMod.tsNs.Expression
   ): typescriptLib.typescriptMod.tsNs.JsxSpreadAttribute = js.native
+  def updateJsxText(node: typescriptLib.typescriptMod.tsNs.JsxText, text: java.lang.String): typescriptLib.typescriptMod.tsNs.JsxText = js.native
+  def updateJsxText(
+    node: typescriptLib.typescriptMod.tsNs.JsxText,
+    text: java.lang.String,
+    containsOnlyTriviaWhiteSpaces: scala.Boolean
+  ): typescriptLib.typescriptMod.tsNs.JsxText = js.native
   def updateLabel(
     node: typescriptLib.typescriptMod.tsNs.LabeledStatement,
     label: typescriptLib.typescriptMod.tsNs.Identifier,

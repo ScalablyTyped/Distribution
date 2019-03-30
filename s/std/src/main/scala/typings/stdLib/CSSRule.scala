@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The CSSRule interface represents a single CSS rule. There are several types of rules, listed in the Type constants section below. */
 trait CSSRule extends js.Object {
   val CHARSET_RULE: scala.Double
   val FONT_FACE_RULE: scala.Double

@@ -14,7 +14,7 @@ class Treebuilder () extends js.Object {
   def get(filename: java.lang.String): nodegitLib.treeDashEntryMod.TreeEntry = js.native
   def insert(filename: java.lang.String, id: nodegitLib.oidMod.Oid, filemode: scala.Double): js.Promise[nodegitLib.treeDashEntryMod.TreeEntry] = js.native
   def remove(filename: java.lang.String): scala.Double = js.native
-  def write(): nodegitLib.oidMod.Oid = js.native
+  def write(): js.Promise[nodegitLib.oidMod.Oid] = js.native
 }
 
 /* static members */

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashJsonschemaDashFormMod {
-  type Field = reactLib.reactMod.ReactNs.StatelessComponent[FieldProps] | (reactLib.reactMod.ReactNs.ComponentClass[FieldProps, reactLib.reactMod.ReactNs.ComponentState])
+  type Field = reactLib.reactMod.ReactNs.StatelessComponent[FieldProps[js.Any]] | (reactLib.reactMod.ReactNs.ComponentClass[FieldProps[js.Any], reactLib.reactMod.ReactNs.ComponentState])
   type FieldError = java.lang.String
   type Form[T] = reactLib.reactMod.Component[FormProps[T], js.Object, js.Any]
   type FormValidation = FieldValidation with org.scalablytyped.runtime.StringDictionary[FieldValidation]

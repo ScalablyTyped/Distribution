@@ -24,6 +24,7 @@ class GraphQLInterfaceType protected ()
   var resolveType: graphqlLib.tsutilsMaybeMod.Maybe[GraphQLTypeResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   def getFields(): GraphQLFieldMap[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def inspect(): java.lang.String = js.native
+  def toConfig(): (GraphQLInterfaceTypeConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]]) with graphqlLib.Anon_ExtensionASTNodesFieldsKey = js.native
   def toJSON(): java.lang.String = js.native
 }
 

@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
   - turndownLib.turndownLibStrings.b
   - turndownLib.turndownLibStrings.base
   - turndownLib.turndownLibStrings.basefont
+  - turndownLib.turndownLibStrings.bdi
   - turndownLib.turndownLibStrings.bdo
   - turndownLib.turndownLibStrings.blockquote
   - turndownLib.turndownLibStrings.body
@@ -70,6 +71,7 @@ import scala.scalajs.js.annotation._
   - turndownLib.turndownLibStrings.legend
   - turndownLib.turndownLibStrings.li
   - turndownLib.turndownLibStrings.link
+  - turndownLib.turndownLibStrings.main
   - turndownLib.turndownLibStrings.map
   - turndownLib.turndownLibStrings.mark
   - turndownLib.turndownLibStrings.marquee
@@ -89,6 +91,7 @@ import scala.scalajs.js.annotation._
   - turndownLib.turndownLibStrings.pre
   - turndownLib.turndownLibStrings.progress
   - turndownLib.turndownLibStrings.q
+  - turndownLib.turndownLibStrings.rp
   - turndownLib.turndownLibStrings.rt
   - turndownLib.turndownLibStrings.ruby
   - turndownLib.turndownLibStrings.s
@@ -103,6 +106,7 @@ import scala.scalajs.js.annotation._
   - turndownLib.turndownLibStrings.strong
   - turndownLib.turndownLibStrings.style
   - turndownLib.turndownLibStrings.sub
+  - turndownLib.turndownLibStrings.summary
   - turndownLib.turndownLibStrings.sup
   - turndownLib.turndownLibStrings.table
   - turndownLib.turndownLibStrings.tbody

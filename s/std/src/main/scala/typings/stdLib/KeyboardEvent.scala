@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** KeyboardEvent objects describe a user interaction with the keyboard; each event describes a single interaction between the user and a key (or combination of a key with modifier keys) on the keyboard. */
 @js.native
 trait KeyboardEvent extends UIEvent {
   val DOM_KEY_LOCATION_JOYSTICK: scala.Double = js.native

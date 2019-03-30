@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object inkDashSelectDashInputMod {
-  type SelectInput = inkLib.inkMod.Component[SelectInputProps[ItemOfSelectInput], js.Object, js.Object]
+  type SelectInput = reactLib.reactMod.Component[SelectInputProps[ItemOfSelectInput], js.Object, js.Any]
 }

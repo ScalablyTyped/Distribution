@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** All of the SVG DOM interfaces that correspond directly to elements in the SVG language derive from the SVGElement interface. */
 @js.native
 trait SVGElement
   extends Element

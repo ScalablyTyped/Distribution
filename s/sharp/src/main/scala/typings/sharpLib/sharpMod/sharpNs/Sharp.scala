@@ -188,6 +188,7 @@ trait Sharp
   def linear(): Sharp = js.native
   def linear(a: scala.Double): Sharp = js.native
   def linear(a: scala.Double, b: scala.Double): Sharp = js.native
+  def linear(a: scala.Null, b: scala.Double): Sharp = js.native
   /**
     * Apply median filter. When used without parameters the default window is 3x3.
     * @param size square mask size: size x size (optional, default 3)
@@ -262,6 +263,13 @@ trait Sharp
     * @returns A sharp instance that can be used to chain operations
     */
   def raw(): Sharp = js.native
+  /**
+    * Recomb the image with the specified matrix.
+    * @param inputMatrix 3x3 Recombination matrix
+    * @throws {Error} Invalid parameters
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def recomb(inputMatrix: Matrix3x3): Sharp = js.native
   //#region Channel functions
   /**
     * Remove alpha channel, if any. This is a no-op if the image does not have an alpha channel.

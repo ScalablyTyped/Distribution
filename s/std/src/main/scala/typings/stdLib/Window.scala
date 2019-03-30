@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The Window interface represents a window containing a DOM document; the document property points to the DOM document loaded in that window. */
 @js.native
 trait Window
   extends EventTarget
@@ -29,6 +30,7 @@ trait Window
   val devicePixelRatio: scala.Double = js.native
   val doNotTrack: java.lang.String = js.native
   val document: Document = js.native
+  /** @deprecated */
   val event: js.UndefOr[Event] = js.native
   /** @deprecated */
   val external: External = js.native
@@ -665,7 +667,7 @@ trait Window
   def getComputedStyle(elt: Element, pseudoElt: java.lang.String): CSSStyleDeclaration = js.native
   def getMatchedCSSRules(elt: Element): CSSRuleList = js.native
   def getMatchedCSSRules(elt: Element, pseudoElt: java.lang.String): CSSRuleList = js.native
-  def getSelection(): Selection = js.native
+  def getSelection(): Selection | scala.Null = js.native
   def matchMedia(query: java.lang.String): MediaQueryList = js.native
   def moveBy(x: scala.Double, y: scala.Double): scala.Unit = js.native
   def moveTo(x: scala.Double, y: scala.Double): scala.Unit = js.native

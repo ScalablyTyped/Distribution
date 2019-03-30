@@ -31,11 +31,6 @@ class NetworkAcl protected ()
     */
   val ownerId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The ID of the associated Subnet. This
-    * attribute is deprecated, please use the `subnet_ids` attribute instead
-    */
-  val subnetId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
     * A list of Subnet IDs to apply the ACL to
     */
   val subnetIds: atPulumiPulumiLib.outputMod.Output[js.Array[java.lang.String]] = js.native

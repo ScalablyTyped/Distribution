@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "ChronoField")
 @js.native
-class ChronoField ()
+class ChronoField protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.ChronoField {
   /* CompleteClass */
   override def baseUnit(): scala.Double = js.native

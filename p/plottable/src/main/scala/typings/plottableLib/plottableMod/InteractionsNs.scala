@@ -14,7 +14,9 @@ object InteractionsNs extends js.Object {
   
   @js.native
   class Drag ()
-    extends plottableLib.buildSrcInteractionsMod.Drag
+    extends plottableLib.buildSrcInteractionsMod.Drag {
+    def this(mouseButton: scala.Double) = this()
+  }
   
   @js.native
   class Key ()

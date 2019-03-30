@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("crypto", "Signer")
 @js.native
-trait Signer
-  extends nodeLib.NodeJSNs.WritableStream {
+class Signer protected ()
+  extends nodeLib.streamMod.Writable {
   def sign(private_key: KeyLike): nodeLib.Buffer = js.native
   def sign(private_key: KeyLike, output_format: HexBase64Latin1Encoding): java.lang.String = js.native
   def sign(private_key: SignPrivateKeyInput): nodeLib.Buffer = js.native

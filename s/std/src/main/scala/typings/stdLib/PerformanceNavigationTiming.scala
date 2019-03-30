@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The PerformanceNavigationTiming interface provides methods and properties to store and retrieve metrics regarding the browser's document navigation events. For example, this interface can be used to determine how much time it takes to load or unload a document. */
 trait PerformanceNavigationTiming extends PerformanceResourceTiming {
   val domComplete: scala.Double
   val domContentLoadedEventEnd: scala.Double

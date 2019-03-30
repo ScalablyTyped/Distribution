@@ -17,8 +17,12 @@ trait ListenerState extends js.Object {
   /**
     * An Action block. Action blocks are documented below.
     */
-  val defaultAction: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc]
+  val defaultActions: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc]
+      ]
+    ]
   ] = js.undefined
   /**
     * The ARN of the load balancer.
@@ -43,7 +47,11 @@ object ListenerState {
   def apply(
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     certificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    defaultAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc] = null,
+    defaultActions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc]
+      ]
+    ] = null,
     loadBalancerArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -52,7 +60,7 @@ object ListenerState {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
-    if (defaultAction != null) __obj.updateDynamic("defaultAction")(defaultAction.asInstanceOf[js.Any])
+    if (defaultActions != null) __obj.updateDynamic("defaultActions")(defaultActions.asInstanceOf[js.Any])
     if (loadBalancerArn != null) __obj.updateDynamic("loadBalancerArn")(loadBalancerArn.asInstanceOf[js.Any])
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])

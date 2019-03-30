@@ -264,6 +264,13 @@ class Question protected ()
   def getMarkdownHtml(text: java.lang.String): java.lang.String = js.native
   def getOthersMaxLength(): js.Any = js.native
   def getPanel(): IPanel = js.native
+  /**
+    * Returns question answer data as a plain object: with question title, name, value and displayValue.
+    * For complex questions (like matrix, etc.) isNode flag is set to true and data contains array of nested objects (rows)
+    * set options.includeEmpty to false if you want to skip empty answers
+    */
+  def getPlainData(): js.Any = js.native
+  def getPlainData(options: surveyDashKnockoutLib.Anon_Calculations): js.Any = js.native
   def getProcessedText(text: java.lang.String): java.lang.String = js.native
   /* protected */ def getProcessedTextValue(textValue: TextPreProcessorValue): scala.Unit = js.native
   /* protected */ def getQuestionTitleTemplate(): java.lang.String = js.native

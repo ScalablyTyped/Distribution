@@ -65,10 +65,6 @@ class Integration protected ()
     */
   val requestParameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
   /**
-    * **Deprecated**, use `request_parameters` instead.
-    */
-  val requestParametersInJson: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
     * A map of the integration's request templates.
     */
   val requestTemplates: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native

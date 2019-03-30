@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
 - postmanDashCollectionLib.postmanDashCollectionMod.PropertyDefinition because var conflicts: description. Inlined id, name, disabled */ @JSImport("postman-collection", "Property")
 @js.native
-class Property[TDefinition] () extends PropertyBase[TDefinition] {
+class Property[TDefinition /* <: js.Object */] () extends PropertyBase[TDefinition] {
   def this(definition: TDefinition) = this()
   def this(definition: postmanDashCollectionLib.Anon_Disabled[TDefinition]) = this()
   var disabled: scala.Boolean | js.UndefOr[scala.Boolean] = js.native

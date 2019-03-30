@@ -1773,18 +1773,18 @@ class HTMLWebViewElement () extends HTMLElement {
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
     options: stdLib.AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1841,18 +1841,52 @@ class HTMLWebViewElement () extends HTMLElement {
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.select,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.select,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.select,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
+    options: stdLib.AddEventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
+    options: stdLib.AddEventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
     options: stdLib.AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -3911,18 +3945,18 @@ class HTMLWebViewElement () extends HTMLElement {
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
     options: stdLib.EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -3979,18 +4013,52 @@ class HTMLWebViewElement () extends HTMLElement {
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.select,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.select,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.select,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
+    options: stdLib.EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
+    options: stdLib.EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ stdLib.Event, _],
     options: stdLib.EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")

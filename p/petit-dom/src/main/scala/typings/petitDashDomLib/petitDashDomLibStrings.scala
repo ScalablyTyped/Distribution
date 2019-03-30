@@ -46,6 +46,9 @@ object petitDashDomLibStrings {
   sealed trait basefont extends js.Object
   
   @js.native
+  sealed trait bdi extends js.Object
+  
+  @js.native
   sealed trait bdo extends js.Object
   
   @js.native
@@ -397,6 +400,9 @@ object petitDashDomLibStrings {
   sealed trait rect extends js.Object
   
   @js.native
+  sealed trait rp extends js.Object
+  
+  @js.native
   sealed trait rt extends js.Object
   
   @js.native
@@ -440,6 +446,9 @@ object petitDashDomLibStrings {
   
   @js.native
   sealed trait sub extends js.Object
+  
+  @js.native
+  sealed trait summary extends js.Object
   
   @js.native
   sealed trait sup extends js.Object
@@ -545,6 +554,8 @@ object petitDashDomLibStrings {
   def base: base = "base".asInstanceOf[base]
   @scala.inline
   def basefont: basefont = "basefont".asInstanceOf[basefont]
+  @scala.inline
+  def bdi: bdi = "bdi".asInstanceOf[bdi]
   @scala.inline
   def bdo: bdo = "bdo".asInstanceOf[bdo]
   @scala.inline
@@ -780,6 +791,8 @@ object petitDashDomLibStrings {
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
+  def rp: rp = "rp".asInstanceOf[rp]
+  @scala.inline
   def rt: rt = "rt".asInstanceOf[rt]
   @scala.inline
   def ruby: ruby = "ruby".asInstanceOf[ruby]
@@ -809,6 +822,8 @@ object petitDashDomLibStrings {
   def style: style = "style".asInstanceOf[style]
   @scala.inline
   def sub: sub = "sub".asInstanceOf[sub]
+  @scala.inline
+  def summary: summary = "summary".asInstanceOf[summary]
   @scala.inline
   def sup: sup = "sup".asInstanceOf[sup]
   @scala.inline

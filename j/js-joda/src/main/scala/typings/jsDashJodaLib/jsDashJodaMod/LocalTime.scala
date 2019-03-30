@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "LocalTime")
 @js.native
-class LocalTime ()
+class LocalTime protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.LocalTime {
   /* CompleteClass */
   override def get(field: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalField): scala.Double = js.native

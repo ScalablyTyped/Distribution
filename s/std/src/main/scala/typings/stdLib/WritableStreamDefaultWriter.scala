@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The WritableStreamDefaultWriter interface of the the Streams API is the object returned by WritableStream.getWriter() and once created locks the < writer to the WritableStream ensuring that no other streams can write to the underlying sink. */
 @js.native
 trait WritableStreamDefaultWriter[W] extends js.Object {
   val closed: js.Promise[scala.Unit] = js.native

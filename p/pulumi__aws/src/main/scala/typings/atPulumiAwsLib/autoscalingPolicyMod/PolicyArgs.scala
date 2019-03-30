@@ -28,10 +28,6 @@ trait PolicyArgs extends js.Object {
   val metricAggregationType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   val minAdjustmentMagnitude: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
   /**
-    * Use `min_adjustment_magnitude` instead.
-    */
-  val minAdjustmentStep: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
-  /**
     * The name of the dimension.
     */
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -71,7 +67,6 @@ object PolicyArgs {
     estimatedInstanceWarmup: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     metricAggregationType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     minAdjustmentMagnitude: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
-    minAdjustmentStep: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     policyType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     scalingAdjustment: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
@@ -90,7 +85,6 @@ object PolicyArgs {
     if (estimatedInstanceWarmup != null) __obj.updateDynamic("estimatedInstanceWarmup")(estimatedInstanceWarmup.asInstanceOf[js.Any])
     if (metricAggregationType != null) __obj.updateDynamic("metricAggregationType")(metricAggregationType.asInstanceOf[js.Any])
     if (minAdjustmentMagnitude != null) __obj.updateDynamic("minAdjustmentMagnitude")(minAdjustmentMagnitude.asInstanceOf[js.Any])
-    if (minAdjustmentStep != null) __obj.updateDynamic("minAdjustmentStep")(minAdjustmentStep.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     if (policyType != null) __obj.updateDynamic("policyType")(policyType.asInstanceOf[js.Any])
     if (scalingAdjustment != null) __obj.updateDynamic("scalingAdjustment")(scalingAdjustment.asInstanceOf[js.Any])

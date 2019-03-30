@@ -12,18 +12,5 @@ class namespaced () extends ParcelBundler {
   def this(entryFiles: js.Array[java.lang.String]) = this()
   def this(entryFiles: java.lang.String, options: parcelDashBundlerLib.parcelDashBundlerMod.ParcelBundlerNs.ParcelOptions) = this()
   def this(entryFiles: js.Array[java.lang.String], options: parcelDashBundlerLib.parcelDashBundlerMod.ParcelBundlerNs.ParcelOptions) = this()
-  /* CompleteClass */
-  override def addAssetType(extension: java.lang.String, path: java.lang.String): scala.Unit = js.native
-  /* CompleteClass */
-  override def addPackager(`type`: java.lang.String, packager: java.lang.String): scala.Unit = js.native
-  /* CompleteClass */
-  override def bundle(): js.Promise[parcelDashBundlerLib.parcelDashBundlerMod.ParcelBundlerNs.ParcelBundle] = js.native
-  /* CompleteClass */
-  override def middleware(): js.Function3[
-    /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request, 
-    /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response, 
-    /* next */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.NextFunction, 
-    _
-  ] = js.native
 }
 

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGImageElement interface corresponds to the <image> element. */
 @js.native
 trait SVGImageElement
   extends SVGGraphicsElement

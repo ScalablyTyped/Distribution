@@ -35,11 +35,28 @@ class ElementEvents protected () extends js.Object {
     */
   def subscribe(eventName: java.lang.String, handler: js.Function): EventHandler = js.native
   def subscribe(eventName: java.lang.String, handler: js.Function, captureOrOptions: scala.Boolean): EventHandler = js.native
+  def subscribe(
+    eventName: java.lang.String,
+    handler: js.Function,
+    captureOrOptions: stdLib.AddEventListenerOptions
+  ): EventHandler = js.native
   /**
     * Adds an Event Listener on the context element, that will be disposed on the first trigger.
     * @return Returns the eventHandler containing a dispose method
     */
   def subscribeOnce(eventName: java.lang.String, handler: js.Function): EventHandler = js.native
   def subscribeOnce(eventName: java.lang.String, handler: js.Function, captureOrOptions: scala.Boolean): EventHandler = js.native
+  def subscribeOnce(
+    eventName: java.lang.String,
+    handler: js.Function,
+    captureOrOptions: stdLib.AddEventListenerOptions
+  ): EventHandler = js.native
+}
+
+/* static members */
+@JSImport("aurelia-templating", "ElementEvents")
+@js.native
+object ElementEvents extends js.Object {
+  var defaultListenerOptions: scala.Boolean | stdLib.AddEventListenerOptions = js.native
 }
 

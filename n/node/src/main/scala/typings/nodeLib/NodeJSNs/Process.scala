@@ -32,9 +32,19 @@ trait Process extends EventEmitter {
   var platform: Platform = js.native
   var ppid: scala.Double = js.native
   var release: ProcessRelease = js.native
+  /**
+    * Only available with `--experimental-report`
+    */
+  var report: js.UndefOr[ProcessReport] = js.native
   // Worker
   var send: js.UndefOr[
-    js.Function2[/* message */ js.Any, /* sendHandle */ js.UndefOr[js.Any], scala.Unit]
+    js.Function4[
+      /* message */ js.Any, 
+      /* sendHandle */ js.UndefOr[js.Any], 
+      /* options */ js.UndefOr[nodeLib.Anon_SwallowErrors], 
+      /* callback */ js.UndefOr[js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]], 
+      scala.Boolean
+    ]
   ] = js.native
   /**
     * Can also be a tty.WriteStream, not typed due to limitation.s

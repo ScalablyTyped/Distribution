@@ -166,7 +166,7 @@ object GlueNs extends js.Object {
       */
     var Crawlers: js.UndefOr[CrawlerList] = js.undefined
     /**
-      * A list of crawlers not found.
+      * A list of names of crawlers not found.
       */
     var CrawlersNotFound: js.UndefOr[CrawlerNameList] = js.undefined
   }
@@ -330,6 +330,10 @@ object GlueNs extends js.Object {
   }
   
   trait Classifier extends js.Object {
+    /**
+      * A CSVClassifier object.
+      */
+    var CsvClassifier: js.UndefOr[CsvClassifier] = js.undefined
     /**
       * A GrokClassifier object.
       */
@@ -651,6 +655,10 @@ object GlueNs extends js.Object {
   
   trait CreateClassifierRequest extends js.Object {
     /**
+      * A CsvClassifier object specifying the classifier to create.
+      */
+    var CsvClassifier: js.UndefOr[CreateCsvClassifierRequest] = js.undefined
+    /**
       * A GrokClassifier object specifying the classifier to create.
       */
     var GrokClassifier: js.UndefOr[CreateGrokClassifierRequest] = js.undefined
@@ -731,6 +739,37 @@ object GlueNs extends js.Object {
   }
   
   trait CreateCrawlerResponse extends js.Object
+  
+  trait CreateCsvClassifierRequest extends js.Object {
+    /**
+      * Enables the processing of files that contain only one column.
+      */
+    var AllowSingleColumn: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+      * Indicates whether the CSV file contains a header.
+      */
+    var ContainsHeader: js.UndefOr[CsvHeaderOption] = js.undefined
+    /**
+      * A custom symbol to denote what separates each column entry in the row.
+      */
+    var Delimiter: js.UndefOr[CsvColumnDelimiter] = js.undefined
+    /**
+      * Specifies not to trim values before identifying the type of column values. The default value is true.
+      */
+    var DisableValueTrimming: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+      * A list of strings representing column names.
+      */
+    var Header: js.UndefOr[CsvHeader] = js.undefined
+    /**
+      * The name of the classifier.
+      */
+    var Name: NameString
+    /**
+      * A custom symbol to denote what combines content into a single column value. Must be different from the column delimiter.
+      */
+    var QuoteSymbol: js.UndefOr[CsvQuoteSymbol] = js.undefined
+  }
   
   trait CreateDatabaseRequest extends js.Object {
     /**
@@ -1121,6 +1160,49 @@ object GlueNs extends js.Object {
       * The XML tag designating the element that contains each record in an XML document being parsed. Note that this cannot identify a self-closing element (closed by /&gt;). An empty row element that contains only attributes can be parsed as long as it ends with a closing tag (for example, &lt;row item_a="A" item_b="B"&gt;&lt;/row&gt; is okay, but &lt;row item_a="A" item_b="B" /&gt; is not).
       */
     var RowTag: js.UndefOr[RowTag] = js.undefined
+  }
+  
+  trait CsvClassifier extends js.Object {
+    /**
+      * Enables the processing of files that contain only one column.
+      */
+    var AllowSingleColumn: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+      * Indicates whether the CSV file contains a header.
+      */
+    var ContainsHeader: js.UndefOr[CsvHeaderOption] = js.undefined
+    /**
+      * The time this classifier was registered.
+      */
+    var CreationTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+      * A custom symbol to denote what separates each column entry in the row.
+      */
+    var Delimiter: js.UndefOr[CsvColumnDelimiter] = js.undefined
+    /**
+      * Specifies not to trim values before identifying the type of column values. The default value is true.
+      */
+    var DisableValueTrimming: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+      * A list of strings representing column names.
+      */
+    var Header: js.UndefOr[CsvHeader] = js.undefined
+    /**
+      * The time this classifier was last updated.
+      */
+    var LastUpdated: js.UndefOr[Timestamp] = js.undefined
+    /**
+      * The name of the classifier.
+      */
+    var Name: NameString
+    /**
+      * A custom symbol to denote what combines content into a single column value. Must be different from the column delimiter.
+      */
+    var QuoteSymbol: js.UndefOr[CsvQuoteSymbol] = js.undefined
+    /**
+      * The version of this classifier.
+      */
+    var Version: js.UndefOr[VersionId] = js.undefined
   }
   
   trait DataCatalogEncryptionSettings extends js.Object {
@@ -3600,7 +3682,7 @@ object GlueNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchDeleteTableVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions to based on tags.
+      * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
       */
     def batchGetCrawlers(): awsDashSdkLib.libRequestMod.Request[BatchGetCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def batchGetCrawlers(
@@ -3611,7 +3693,7 @@ object GlueNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchGetCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions to based on tags.
+      * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
       */
     def batchGetCrawlers(params: BatchGetCrawlersRequest): awsDashSdkLib.libRequestMod.Request[BatchGetCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def batchGetCrawlers(
@@ -3738,7 +3820,7 @@ object GlueNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchStopJobRunResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a classifier in the user's account. This may be a GrokClassifier, an XMLClassifier, or abbrev JsonClassifier, depending on which field of the request is present.
+      * Creates a classifier in the user's account. This may be a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field of the request is present.
       */
     def createClassifier(): awsDashSdkLib.libRequestMod.Request[CreateClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createClassifier(
@@ -3749,7 +3831,7 @@ object GlueNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a classifier in the user's account. This may be a GrokClassifier, an XMLClassifier, or abbrev JsonClassifier, depending on which field of the request is present.
+      * Creates a classifier in the user's account. This may be a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field of the request is present.
       */
     def createClassifier(params: CreateClassifierRequest): awsDashSdkLib.libRequestMod.Request[CreateClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createClassifier(
@@ -5454,7 +5536,7 @@ object GlueNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Modifies an existing classifier (a GrokClassifier, XMLClassifier, or JsonClassifier, depending on which field is present).
+      * Modifies an existing classifier (a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field is present).
       */
     def updateClassifier(): awsDashSdkLib.libRequestMod.Request[UpdateClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateClassifier(
@@ -5465,7 +5547,7 @@ object GlueNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Modifies an existing classifier (a GrokClassifier, XMLClassifier, or JsonClassifier, depending on which field is present).
+      * Modifies an existing classifier (a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field is present).
       */
     def updateClassifier(params: UpdateClassifierRequest): awsDashSdkLib.libRequestMod.Request[UpdateClassifierResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateClassifier(
@@ -5723,6 +5805,10 @@ object GlueNs extends js.Object {
   
   trait UpdateClassifierRequest extends js.Object {
     /**
+      * A CsvClassifier object with updated fields.
+      */
+    var CsvClassifier: js.UndefOr[UpdateCsvClassifierRequest] = js.undefined
+    /**
       * A GrokClassifier object with updated fields.
       */
     var GrokClassifier: js.UndefOr[UpdateGrokClassifierRequest] = js.undefined
@@ -5816,6 +5902,37 @@ object GlueNs extends js.Object {
   }
   
   trait UpdateCrawlerScheduleResponse extends js.Object
+  
+  trait UpdateCsvClassifierRequest extends js.Object {
+    /**
+      * Enables the processing of files that contain only one column.
+      */
+    var AllowSingleColumn: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+      * Indicates whether the CSV file contains a header.
+      */
+    var ContainsHeader: js.UndefOr[CsvHeaderOption] = js.undefined
+    /**
+      * A custom symbol to denote what separates each column entry in the row.
+      */
+    var Delimiter: js.UndefOr[CsvColumnDelimiter] = js.undefined
+    /**
+      * Specifies not to trim values before identifying the type of column values. The default value is true.
+      */
+    var DisableValueTrimming: js.UndefOr[NullableBoolean] = js.undefined
+    /**
+      * A list of strings representing column names.
+      */
+    var Header: js.UndefOr[CsvHeader] = js.undefined
+    /**
+      * The name of the classifier.
+      */
+    var Name: NameString
+    /**
+      * A custom symbol to denote what combines content into a single column value. Must be different from the column delimiter.
+      */
+    var QuoteSymbol: js.UndefOr[CsvQuoteSymbol] = js.undefined
+  }
   
   trait UpdateDatabaseRequest extends js.Object {
     /**
@@ -6106,6 +6223,8 @@ object GlueNs extends js.Object {
   
   trait _CrawlerState extends js.Object
   
+  trait _CsvHeaderOption extends js.Object
+  
   trait _DeleteBehavior extends js.Object
   
   trait _ExistCondition extends js.Object
@@ -6217,6 +6336,16 @@ object GlueNs extends js.Object {
   */
   type CrawlerState = _CrawlerState | java.lang.String
   type CronExpression = java.lang.String
+  type CsvColumnDelimiter = java.lang.String
+  type CsvHeader = js.Array[NameString]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN
+    - awsDashSdkLib.awsDashSdkLibStrings.PRESENT
+    - awsDashSdkLib.awsDashSdkLibStrings.ABSENT
+    - java.lang.String
+  */
+  type CsvHeaderOption = _CsvHeaderOption | java.lang.String
+  type CsvQuoteSymbol = java.lang.String
   type CustomPatterns = java.lang.String
   type DagEdges = js.Array[CodeGenEdge]
   type DagNodes = js.Array[CodeGenNode]
@@ -6317,6 +6446,7 @@ object GlueNs extends js.Object {
   type NonNegativeDouble = scala.Double
   type NonNegativeInteger = scala.Double
   type NotifyDelayAfter = scala.Double
+  type NullableBoolean = scala.Boolean
   type NullableDouble = scala.Double
   type OrderList = js.Array[Order]
   type PageSize = scala.Double

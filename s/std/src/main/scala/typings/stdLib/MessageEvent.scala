@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The MessageEvent interface represents a message received by a target object. */
 @js.native
 trait MessageEvent extends Event {
   /**

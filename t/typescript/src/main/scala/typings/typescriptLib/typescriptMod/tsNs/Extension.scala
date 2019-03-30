@@ -32,6 +32,10 @@ object Extension extends js.Object {
     extends typescriptLib.typescriptMod.tsNs.Extension
   
   @js.native
+  sealed trait TsBuildInfo
+    extends typescriptLib.typescriptMod.tsNs.Extension
+  
+  @js.native
   sealed trait Tsx
     extends typescriptLib.typescriptMod.tsNs.Extension
   

@@ -6,13 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SecureServerSessionOptions
-  extends nodeLib.tlsMod.TlsOptions
-     with SessionOptions
+  extends ServerSessionOptions
+     with nodeLib.tlsMod.TlsOptions
 
 object SecureServerSessionOptions {
   @scala.inline
   def apply(
     ALPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
+    Http1IncomingMessage: org.scalablytyped.runtime.Instantiable1[/* socket */ nodeLib.netMod.Socket, nodeLib.httpMod.IncomingMessage] = null,
+    Http1ServerResponse: org.scalablytyped.runtime.Instantiable1[/* req */ nodeLib.httpMod.IncomingMessage, nodeLib.httpMod.ServerResponse] = null,
+    Http2ServerRequest: org.scalablytyped.runtime.Instantiable0[Http2ServerRequest] = null,
+    Http2ServerResponse: org.scalablytyped.runtime.Instantiable0[Http2ServerResponse] = null,
     NPNProtocols: js.Array[java.lang.String] | js.Array[nodeLib.Buffer] | js.Array[stdLib.Uint8Array] | nodeLib.Buffer | stdLib.Uint8Array = null,
     SNICallback: (/* servername */ java.lang.String, /* cb */ js.Function2[
       /* err */ nodeLib.Error | scala.Null, 
@@ -31,8 +35,10 @@ object SecureServerSessionOptions {
     honorCipherOrder: js.UndefOr[scala.Boolean] = js.undefined,
     key: java.lang.String | nodeLib.Buffer | (js.Array[nodeLib.Buffer | js.Object]) = null,
     maxDeflateDynamicTableSize: scala.Int | scala.Double = null,
-    maxReservedRemoteStreams: scala.Int | scala.Double = null,
+    maxHeaderListPairs: scala.Int | scala.Double = null,
+    maxOutstandingPings: scala.Int | scala.Double = null,
     maxSendHeaderBlockLength: scala.Int | scala.Double = null,
+    maxSessionMemory: scala.Int | scala.Double = null,
     maxVersion: nodeLib.tlsMod.SecureVersion = null,
     minVersion: nodeLib.tlsMod.SecureVersion = null,
     paddingStrategy: scala.Int | scala.Double = null,
@@ -51,6 +57,10 @@ object SecureServerSessionOptions {
   ): SecureServerSessionOptions = {
     val __obj = js.Dynamic.literal()
     if (ALPNProtocols != null) __obj.updateDynamic("ALPNProtocols")(ALPNProtocols.asInstanceOf[js.Any])
+    if (Http1IncomingMessage != null) __obj.updateDynamic("Http1IncomingMessage")(Http1IncomingMessage)
+    if (Http1ServerResponse != null) __obj.updateDynamic("Http1ServerResponse")(Http1ServerResponse)
+    if (Http2ServerRequest != null) __obj.updateDynamic("Http2ServerRequest")(Http2ServerRequest)
+    if (Http2ServerResponse != null) __obj.updateDynamic("Http2ServerResponse")(Http2ServerResponse)
     if (NPNProtocols != null) __obj.updateDynamic("NPNProtocols")(NPNProtocols.asInstanceOf[js.Any])
     if (SNICallback != null) __obj.updateDynamic("SNICallback")(js.Any.fromFunction2(SNICallback))
     if (ca != null) __obj.updateDynamic("ca")(ca.asInstanceOf[js.Any])
@@ -65,8 +75,10 @@ object SecureServerSessionOptions {
     if (!js.isUndefined(honorCipherOrder)) __obj.updateDynamic("honorCipherOrder")(honorCipherOrder)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (maxDeflateDynamicTableSize != null) __obj.updateDynamic("maxDeflateDynamicTableSize")(maxDeflateDynamicTableSize.asInstanceOf[js.Any])
-    if (maxReservedRemoteStreams != null) __obj.updateDynamic("maxReservedRemoteStreams")(maxReservedRemoteStreams.asInstanceOf[js.Any])
+    if (maxHeaderListPairs != null) __obj.updateDynamic("maxHeaderListPairs")(maxHeaderListPairs.asInstanceOf[js.Any])
+    if (maxOutstandingPings != null) __obj.updateDynamic("maxOutstandingPings")(maxOutstandingPings.asInstanceOf[js.Any])
     if (maxSendHeaderBlockLength != null) __obj.updateDynamic("maxSendHeaderBlockLength")(maxSendHeaderBlockLength.asInstanceOf[js.Any])
+    if (maxSessionMemory != null) __obj.updateDynamic("maxSessionMemory")(maxSessionMemory.asInstanceOf[js.Any])
     if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion)
     if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion)
     if (paddingStrategy != null) __obj.updateDynamic("paddingStrategy")(paddingStrategy.asInstanceOf[js.Any])

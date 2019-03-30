@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "ZonedDateTime")
 @js.native
-class ZonedDateTime ()
+class ZonedDateTime protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZonedDateTime {
   /* CompleteClass */
   override def compareTo(other: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ChronoZonedDateTime): scala.Double = js.native

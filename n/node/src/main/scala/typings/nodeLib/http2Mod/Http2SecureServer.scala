@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("http2", "Http2SecureServer")
 @js.native
-trait Http2SecureServer
+class Http2SecureServer protected ()
   extends nodeLib.tlsMod.Server {
   @JSName("addListener")
   def addListener_checkContinue(
@@ -17,6 +18,11 @@ trait Http2SecureServer
   def addListener_request(
     event: nodeLib.nodeLibStrings.request,
     listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_session(
+    event: nodeLib.nodeLibStrings.session,
+    listener: js.Function1[/* session */ ServerHttp2Session, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_sessionError(
@@ -49,6 +55,8 @@ trait Http2SecureServer
   @JSName("emit")
   def emit_request(event: nodeLib.nodeLibStrings.request, request: Http2ServerRequest, response: Http2ServerResponse): scala.Boolean = js.native
   @JSName("emit")
+  def emit_session(event: nodeLib.nodeLibStrings.session, session: ServerHttp2Session): scala.Boolean = js.native
+  @JSName("emit")
   def emit_sessionError(event: nodeLib.nodeLibStrings.sessionError, err: nodeLib.Error): scala.Boolean = js.native
   @JSName("emit")
   def emit_stream(
@@ -70,6 +78,11 @@ trait Http2SecureServer
   def on_request(
     event: nodeLib.nodeLibStrings.request,
     listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_session(
+    event: nodeLib.nodeLibStrings.session,
+    listener: js.Function1[/* session */ ServerHttp2Session, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_sessionError(
@@ -104,6 +117,11 @@ trait Http2SecureServer
     listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, scala.Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_session(
+    event: nodeLib.nodeLibStrings.session,
+    listener: js.Function1[/* session */ ServerHttp2Session, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_sessionError(
     event: nodeLib.nodeLibStrings.sessionError,
     listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
@@ -134,6 +152,11 @@ trait Http2SecureServer
   def prependListener_request(
     event: nodeLib.nodeLibStrings.request,
     listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, scala.Unit]
+  ): this.type = js.native
+  @JSName("prependListener")
+  def prependListener_session(
+    event: nodeLib.nodeLibStrings.session,
+    listener: js.Function1[/* session */ ServerHttp2Session, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_sessionError(
@@ -168,6 +191,11 @@ trait Http2SecureServer
     listener: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
+  def prependOnceListener_session(
+    event: nodeLib.nodeLibStrings.session,
+    listener: js.Function1[/* session */ ServerHttp2Session, scala.Unit]
+  ): this.type = js.native
+  @JSName("prependOnceListener")
   def prependOnceListener_sessionError(
     event: nodeLib.nodeLibStrings.sessionError,
     listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
@@ -189,5 +217,8 @@ trait Http2SecureServer
     event: nodeLib.nodeLibStrings.unknownProtocol,
     listener: js.Function1[/* socket */ nodeLib.tlsMod.TLSSocket, scala.Unit]
   ): this.type = js.native
+  def setTimeout(): this.type = js.native
+  def setTimeout(msec: scala.Double): this.type = js.native
+  def setTimeout(msec: scala.Double, callback: js.Function0[scala.Unit]): this.type = js.native
 }
 

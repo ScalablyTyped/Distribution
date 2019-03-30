@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGPreserveAspectRatio interface corresponds to the preserveAspectRatio attribute, which is available for some of SVG's elements. */
 trait SVGPreserveAspectRatio extends js.Object {
   val SVG_MEETORSLICE_MEET: scala.Double
   val SVG_MEETORSLICE_SLICE: scala.Double

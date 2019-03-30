@@ -85,7 +85,7 @@ object ^ extends js.Object {
     onRequestHandler: js.Function2[/* request */ Http2ServerRequest, /* response */ Http2ServerResponse, scala.Unit]
   ): Http2Server = js.native
   def getDefaultSettings(): Settings = js.native
-  def getPackedSettings(settings: Settings): Settings = js.native
+  def getPackedSettings(settings: Settings): nodeLib.Buffer = js.native
   def getUnpackedSettings(buf: nodeLib.Buffer): Settings = js.native
   def getUnpackedSettings(buf: stdLib.Uint8Array): Settings = js.native
 }

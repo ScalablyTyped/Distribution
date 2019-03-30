@@ -22,10 +22,10 @@ trait DragSourceHookSpec[DragObject /* <: DragObjectWithType */, DropResult, Col
     * monitor.canDrag() inside this method.
     */
   var canDrag: js.UndefOr[
-    js.Function1[
+    scala.Boolean | (js.Function1[
       /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor, 
       scala.Boolean
-    ]
+    ])
   ] = js.undefined
   /**
     * A function to collect rendering properties
@@ -94,7 +94,10 @@ object DragSourceHookSpec {
   def apply[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](
     item: DragObject,
     begin: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => js.UndefOr[DragObject | scala.Unit] = null,
-    canDrag: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => scala.Boolean = null,
+    canDrag: scala.Boolean | (js.Function1[
+      /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor, 
+      scala.Boolean
+    ]) = null,
     collect: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => CollectedProps = null,
     end: (/* dropResult */ js.UndefOr[DropResult], /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor) => scala.Unit = null,
     isDragging: /* monitor */ reactDashDndLib.libCjsInterfacesMonitorsMod.DragSourceMonitor => scala.Boolean = null,
@@ -103,7 +106,7 @@ object DragSourceHookSpec {
   ): DragSourceHookSpec[DragObject, DropResult, CollectedProps] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
     if (begin != null) __obj.updateDynamic("begin")(js.Any.fromFunction1(begin))
-    if (canDrag != null) __obj.updateDynamic("canDrag")(js.Any.fromFunction1(canDrag))
+    if (canDrag != null) __obj.updateDynamic("canDrag")(canDrag.asInstanceOf[js.Any])
     if (collect != null) __obj.updateDynamic("collect")(js.Any.fromFunction1(collect))
     if (end != null) __obj.updateDynamic("end")(js.Any.fromFunction2(end))
     if (isDragging != null) __obj.updateDynamic("isDragging")(js.Any.fromFunction1(isDragging))

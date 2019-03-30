@@ -16,7 +16,7 @@ object LookupMetadata {
     DisplayName: java.lang.String,
     IsSecured: scala.Boolean,
     LogicalName: java.lang.String,
-    RequiredLevel: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.RequiredLevel,
+    RequiredLevel: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.TypesNs.RequiredLevel,
     SourceType: scala.Double,
     Targets: js.Array[java.lang.String]
   ): LookupMetadata = {

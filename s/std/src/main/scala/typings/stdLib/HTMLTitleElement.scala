@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLTitleElement interface contains the title for a document. This element inherits all of the properties and methods of the HTMLElement interface. */
 @js.native
 trait HTMLTitleElement extends HTMLElement {
   /**

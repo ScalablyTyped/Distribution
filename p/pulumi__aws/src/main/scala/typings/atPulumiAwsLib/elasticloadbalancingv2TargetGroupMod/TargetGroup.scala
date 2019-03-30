@@ -36,6 +36,10 @@ class TargetGroup protected ()
     */
   val healthCheck: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_HealthyThresholdInterval] = js.native
   /**
+    * Boolean whether the request and response headers exchanged between the load balancer and the Lambda function include arrays of values or strings. Only applies when `target_type` is `lambda`.
+    */
+  val lambdaMultiValueHeadersEnabled: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  /**
     * The name of the target group. If omitted, Terraform will assign a random, unique name.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

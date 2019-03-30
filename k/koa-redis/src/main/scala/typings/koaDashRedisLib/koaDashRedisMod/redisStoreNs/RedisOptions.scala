@@ -35,6 +35,7 @@ object RedisOptions {
     retry_strategy: redisLib.redisMod.RetryStrategy = null,
     retry_unfulfilled_commands: js.UndefOr[scala.Boolean] = js.undefined,
     return_buffers: js.UndefOr[scala.Boolean] = js.undefined,
+    socket_initialdelay: scala.Int | scala.Double = null,
     socket_keepalive: js.UndefOr[scala.Boolean] = js.undefined,
     string_numbers: js.UndefOr[scala.Boolean] = js.undefined,
     tls: js.Any = null,
@@ -62,6 +63,7 @@ object RedisOptions {
     if (retry_strategy != null) __obj.updateDynamic("retry_strategy")(retry_strategy)
     if (!js.isUndefined(retry_unfulfilled_commands)) __obj.updateDynamic("retry_unfulfilled_commands")(retry_unfulfilled_commands)
     if (!js.isUndefined(return_buffers)) __obj.updateDynamic("return_buffers")(return_buffers)
+    if (socket_initialdelay != null) __obj.updateDynamic("socket_initialdelay")(socket_initialdelay.asInstanceOf[js.Any])
     if (!js.isUndefined(socket_keepalive)) __obj.updateDynamic("socket_keepalive")(socket_keepalive)
     if (!js.isUndefined(string_numbers)) __obj.updateDynamic("string_numbers")(string_numbers)
     if (tls != null) __obj.updateDynamic("tls")(tls)

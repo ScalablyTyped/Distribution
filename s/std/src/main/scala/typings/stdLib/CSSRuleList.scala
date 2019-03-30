@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** A CSSRuleList is an (indirect-modify only) array-like object containing an ordered collection of CSSRule objects. */
 trait CSSRuleList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[CSSRule] {
   @JSName(org.scalablytyped.runtime.Symbol.iterator)

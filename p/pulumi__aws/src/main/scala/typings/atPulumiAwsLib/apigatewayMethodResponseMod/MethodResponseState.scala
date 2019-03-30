@@ -33,10 +33,6 @@ trait MethodResponseState extends js.Object {
     ]
   ] = js.undefined
   /**
-    * **Deprecated**, use `response_parameters` instead.
-    */
-  val responseParametersInJson: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
     * The ID of the associated REST API
     */
   val restApi: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi]] = js.undefined
@@ -57,7 +53,6 @@ object MethodResponseState {
     responseParameters: atPulumiPulumiLib.outputMod.Input[
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[scala.Boolean]]
     ] = null,
-    responseParametersInJson: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     restApi: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = null,
     statusCode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): MethodResponseState = {
@@ -66,7 +61,6 @@ object MethodResponseState {
     if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
     if (responseModels != null) __obj.updateDynamic("responseModels")(responseModels.asInstanceOf[js.Any])
     if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
-    if (responseParametersInJson != null) __obj.updateDynamic("responseParametersInJson")(responseParametersInJson.asInstanceOf[js.Any])
     if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
     if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodResponseState]

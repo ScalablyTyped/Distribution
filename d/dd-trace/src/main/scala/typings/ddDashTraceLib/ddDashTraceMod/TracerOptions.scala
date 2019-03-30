@@ -36,6 +36,12 @@ trait TracerOptions extends js.Object {
     */
   var hostname: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Whether to enable trace ID injection in log records to be able to correlate
+    * traces with logs.
+    * @default false
+    */
+  var logInjection: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Custom logger to be used by the tracer (if debug = true),
     * should support debug() and error() methods
     * see https://datadog.github.io/dd-trace-js/#custom-logging
@@ -81,6 +87,7 @@ object TracerOptions {
     env: java.lang.String = null,
     experimental: js.Object | scala.Boolean = null,
     hostname: java.lang.String = null,
+    logInjection: js.UndefOr[scala.Boolean] = js.undefined,
     logger: ddDashTraceLib.Anon_Debug = null,
     plugins: js.UndefOr[scala.Boolean] = js.undefined,
     port: scala.Double | java.lang.String = null,
@@ -96,6 +103,7 @@ object TracerOptions {
     if (env != null) __obj.updateDynamic("env")(env)
     if (experimental != null) __obj.updateDynamic("experimental")(experimental.asInstanceOf[js.Any])
     if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (!js.isUndefined(logInjection)) __obj.updateDynamic("logInjection")(logInjection)
     if (logger != null) __obj.updateDynamic("logger")(logger)
     if (!js.isUndefined(plugins)) __obj.updateDynamic("plugins")(plugins)
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGAngle interface is used to represent a value that can be an <angle> or <number> value. An SVGAngle reflected through the animVal attribute is always read only. */
 trait SVGAngle extends js.Object {
   val SVG_ANGLETYPE_DEG: scala.Double
   val SVG_ANGLETYPE_GRAD: scala.Double

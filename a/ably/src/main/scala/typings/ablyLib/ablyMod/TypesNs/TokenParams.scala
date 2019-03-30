@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TokenParams extends js.Object {
-  var capability: js.UndefOr[java.lang.String] = js.undefined
+  var capability: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[js.Array[capabilityOp]] | java.lang.String
+  ] = js.undefined
   var clientId: js.UndefOr[java.lang.String] = js.undefined
   var nonce: js.UndefOr[java.lang.String] = js.undefined
   var timestamp: js.UndefOr[scala.Double] = js.undefined
@@ -16,14 +18,14 @@ trait TokenParams extends js.Object {
 object TokenParams {
   @scala.inline
   def apply(
-    capability: java.lang.String = null,
+    capability: org.scalablytyped.runtime.StringDictionary[js.Array[capabilityOp]] | java.lang.String = null,
     clientId: java.lang.String = null,
     nonce: java.lang.String = null,
     timestamp: scala.Int | scala.Double = null,
     ttl: scala.Int | scala.Double = null
   ): TokenParams = {
     val __obj = js.Dynamic.literal()
-    if (capability != null) __obj.updateDynamic("capability")(capability)
+    if (capability != null) __obj.updateDynamic("capability")(capability.asInstanceOf[js.Any])
     if (clientId != null) __obj.updateDynamic("clientId")(clientId)
     if (nonce != null) __obj.updateDynamic("nonce")(nonce)
     if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])

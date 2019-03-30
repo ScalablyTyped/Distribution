@@ -22,7 +22,7 @@ trait Client extends js.Object {
   def assertPerformance(name: java.lang.String, metrics: js.Array[java.lang.String]): scala.Boolean = js.native
   def back(): scala.Unit = js.native
   def background(): scala.Unit = js.native
-  def background(duration: scala.Double): scala.Unit = js.native
+  def background(seconds: scala.Double): scala.Unit = js.native
   def buttonDown(): scala.Unit = js.native
   def buttonDown(button: scala.Double): scala.Unit = js.native
   def buttonUp(): scala.Unit = js.native

@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-relay", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val ReactRelayContext: reactLib.reactMod.ReactNs.Context[
+    relayDashRuntimeLib.relayDashRuntimeMod.CRelayContext[relayDashRuntimeLib.relayDashRuntimeMod.Environment]
+  ] = js.native
   val graphql: GraphqlInterface = js.native
   def FragmentVariablesGetter(prevVars: relayDashRuntimeLib.relayDashRuntimeMod.Variables, totalCount: scala.Double): relayDashRuntimeLib.relayDashRuntimeMod.Variables = js.native
   def RelayQL(strings: js.Array[java.lang.String], substitutions: js.Any*): relayDashRuntimeLib.relayDashRuntimeMod.RelayConcreteNode = js.native

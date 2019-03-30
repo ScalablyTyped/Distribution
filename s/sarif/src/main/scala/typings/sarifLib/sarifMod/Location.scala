@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait Location extends js.Object {
   /**
+    * The address of the location.
+    */
+  var address: js.UndefOr[Address] = js.undefined
+  /**
     * A set of regions relevant to the location.
     */
   var annotations: js.UndefOr[js.Array[Region]] = js.undefined
@@ -37,6 +41,7 @@ trait Location extends js.Object {
 object Location {
   @scala.inline
   def apply(
+    address: Address = null,
     annotations: js.Array[Region] = null,
     fullyQualifiedLogicalName: java.lang.String = null,
     logicalLocationIndex: scala.Int | scala.Double = null,
@@ -45,6 +50,7 @@ object Location {
     properties: PropertyBag = null
   ): Location = {
     val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
     if (annotations != null) __obj.updateDynamic("annotations")(annotations)
     if (fullyQualifiedLogicalName != null) __obj.updateDynamic("fullyQualifiedLogicalName")(fullyQualifiedLogicalName)
     if (logicalLocationIndex != null) __obj.updateDynamic("logicalLocationIndex")(logicalLocationIndex.asInstanceOf[js.Any])

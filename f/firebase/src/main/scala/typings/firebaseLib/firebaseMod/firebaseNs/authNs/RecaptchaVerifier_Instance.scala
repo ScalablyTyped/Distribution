@@ -15,7 +15,7 @@ trait RecaptchaVerifier_Instance extends ApplicationVerifier {
   def clear(): scala.Unit
   /**
     * Renders the reCAPTCHA widget on the page.
-    * @return {!firebase.Promise<number>} A Promise that resolves with the
+    * @return A Promise that resolves with the
     *     reCAPTCHA widget ID.
     */
   def render(): js.Promise[scala.Double]

@@ -11,9 +11,17 @@ trait ConnectionState extends js.Object {
     */
   val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * The Direct Connect endpoint on which the physical connection terminates.
+    */
+  val awsDevice: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * The bandwidth of the connection. Available values: 1Gbps, 10Gbps. Case sensitive.
     */
   val bandwidth: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * Indicates whether the connection supports a secondary BGP peer in the same address family (IPv4/IPv6).
+    */
+  val hasLogicalRedundancy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Boolean value representing if jumbo frames have been enabled for this connection.
     */
@@ -36,7 +44,9 @@ object ConnectionState {
   @scala.inline
   def apply(
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    awsDevice: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     bandwidth: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    hasLogicalRedundancy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     jumboFrameCapable: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     location: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -44,7 +54,9 @@ object ConnectionState {
   ): ConnectionState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (awsDevice != null) __obj.updateDynamic("awsDevice")(awsDevice.asInstanceOf[js.Any])
     if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
+    if (hasLogicalRedundancy != null) __obj.updateDynamic("hasLogicalRedundancy")(hasLogicalRedundancy.asInstanceOf[js.Any])
     if (jumboFrameCapable != null) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.asInstanceOf[js.Any])
     if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])

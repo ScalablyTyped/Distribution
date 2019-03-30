@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFETurbulenceElement interface corresponds to the <feTurbulence> element. */
 @js.native
 trait SVGFETurbulenceElement
   extends SVGElement

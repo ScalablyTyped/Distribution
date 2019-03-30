@@ -35,8 +35,8 @@ package object ioDashTsMod {
   type Int = Branded[scala.Double, IntBrand]
   type IntersectionC[CS /* <: js.Array[Mixed] */] = IntersectionType[
     CS, 
-    js.Any | (TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any]), 
-    js.Any | (OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any]), 
+    js.Any | (TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[0] */ js.Any]), 
+    js.Any | (OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[0] */ js.Any]), 
     js.Any
   ]
   type Is[A] = js.Function1[/* u */ js.Any, /* is A */ scala.Boolean]
@@ -126,46 +126,46 @@ package object ioDashTsMod {
   type TupleC[CS /* <: js.Array[Mixed] */] = TupleType[
     CS, 
     js.Any | (js.Tuple5[
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any], 
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['1'] */ js.Any], 
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['2'] */ js.Any], 
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['3'] */ js.Any], 
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['4'] */ js.Any]
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[0] */ js.Any], 
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[1] */ js.Any], 
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[2] */ js.Any], 
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[3] */ js.Any], 
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[4] */ js.Any]
     ]) | (js.Tuple4[
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any], 
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['1'] */ js.Any], 
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['2'] */ js.Any], 
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['3'] */ js.Any]
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[0] */ js.Any], 
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[1] */ js.Any], 
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[2] */ js.Any], 
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[3] */ js.Any]
     ]) | (js.Tuple3[
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any], 
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['1'] */ js.Any], 
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['2'] */ js.Any]
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[0] */ js.Any], 
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[1] */ js.Any], 
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[2] */ js.Any]
     ]) | (js.Tuple2[
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any], 
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['1'] */ js.Any]
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[0] */ js.Any], 
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[1] */ js.Any]
     ]) | (js.Array[
-      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any]
+      TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[0] */ js.Any]
     ]), 
     js.Any | (js.Tuple5[
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any], 
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['1'] */ js.Any], 
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['2'] */ js.Any], 
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['3'] */ js.Any], 
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['4'] */ js.Any]
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[0] */ js.Any], 
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[1] */ js.Any], 
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[2] */ js.Any], 
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[3] */ js.Any], 
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[4] */ js.Any]
     ]) | (js.Tuple4[
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any], 
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['1'] */ js.Any], 
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['2'] */ js.Any], 
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['3'] */ js.Any]
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[0] */ js.Any], 
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[1] */ js.Any], 
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[2] */ js.Any], 
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[3] */ js.Any]
     ]) | (js.Tuple3[
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any], 
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['1'] */ js.Any], 
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['2'] */ js.Any]
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[0] */ js.Any], 
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[1] */ js.Any], 
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[2] */ js.Any]
     ]) | (js.Tuple2[
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any], 
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['1'] */ js.Any]
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[0] */ js.Any], 
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[1] */ js.Any]
     ]) | (js.Array[
-      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any]
+      OutputOf[/* import warning: ImportType.apply Failed type conversion: CS[0] */ js.Any]
     ]), 
     js.Any
   ]

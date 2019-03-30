@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLFieldSetElement interface has special properties and methods (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of field-set elements. */
 @js.native
 trait HTMLFieldSetElement extends HTMLElement {
   var disabled: scala.Boolean = js.native

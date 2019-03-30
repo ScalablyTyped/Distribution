@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The VideoTrackList interface is used to represent a list of the video tracks contained within a <video> element, with each track represented by a separate VideoTrack object in the list. */
 @js.native
 trait VideoTrackList
   extends EventTarget

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements. More specific classes inherit from Element. */
 @js.native
 trait Element
   extends ChildNode
@@ -98,7 +99,7 @@ trait Element
   /**
     * Creates a shadow root for element and returns it.
     */
-  def attachShadow(shadowRootInitDict: ShadowRootInit): ShadowRoot = js.native
+  def attachShadow(init: ShadowRootInit): ShadowRoot = js.native
   def closest(selector: java.lang.String): Element | scala.Null = js.native
   /**
     * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
@@ -155,6 +156,11 @@ trait Element
     */
   @JSName("closest")
   def closest_basefont(selector: stdLib.stdLibStrings.basefont): HTMLBaseFontElement | scala.Null = js.native
+  /**
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
+  @JSName("closest")
+  def closest_bdi(selector: stdLib.stdLibStrings.bdi): HTMLElement | scala.Null = js.native
   /**
     * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
     */
@@ -494,6 +500,11 @@ trait Element
     * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
     */
   @JSName("closest")
+  def closest_main(selector: stdLib.stdLibStrings.main): HTMLElement | scala.Null = js.native
+  /**
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
+  @JSName("closest")
   def closest_map(selector: stdLib.stdLibStrings.map): HTMLMapElement | scala.Null = js.native
   /**
     * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
@@ -607,6 +618,11 @@ trait Element
     * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
     */
   @JSName("closest")
+  def closest_rp(selector: stdLib.stdLibStrings.rp): HTMLElement | scala.Null = js.native
+  /**
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
+  @JSName("closest")
   def closest_rt(selector: stdLib.stdLibStrings.rt): HTMLElement | scala.Null = js.native
   /**
     * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
@@ -675,6 +691,11 @@ trait Element
     */
   @JSName("closest")
   def closest_sub(selector: stdLib.stdLibStrings.sub): HTMLElement | scala.Null = js.native
+  /**
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
+  @JSName("closest")
+  def closest_summary(selector: stdLib.stdLibStrings.summary): HTMLElement | scala.Null = js.native
   /**
     * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
     */
@@ -829,6 +850,8 @@ trait Element
   def getElementsByTagName_base(qualifiedName: stdLib.stdLibStrings.base): HTMLCollectionOf[HTMLBaseElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_basefont(qualifiedName: stdLib.stdLibStrings.basefont): HTMLCollectionOf[HTMLBaseFontElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_bdi(qualifiedName: stdLib.stdLibStrings.bdi): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_bdo(qualifiedName: stdLib.stdLibStrings.bdo): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1006,6 +1029,8 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_link(qualifiedName: stdLib.stdLibStrings.link): HTMLCollectionOf[HTMLLinkElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_main(qualifiedName: stdLib.stdLibStrings.main): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_map(qualifiedName: stdLib.stdLibStrings.map): HTMLCollectionOf[HTMLMapElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_mark(qualifiedName: stdLib.stdLibStrings.mark): HTMLCollectionOf[HTMLElement] = js.native
@@ -1062,6 +1087,8 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_rect(qualifiedName: stdLib.stdLibStrings.rect): HTMLCollectionOf[SVGRectElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_rp(qualifiedName: stdLib.stdLibStrings.rp): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_rt(qualifiedName: stdLib.stdLibStrings.rt): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_ruby(qualifiedName: stdLib.stdLibStrings.ruby): HTMLCollectionOf[HTMLElement] = js.native
@@ -1091,6 +1118,8 @@ trait Element
   def getElementsByTagName_style(qualifiedName: stdLib.stdLibStrings.style): HTMLCollectionOf[HTMLStyleElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_sub(qualifiedName: stdLib.stdLibStrings.sub): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_summary(qualifiedName: stdLib.stdLibStrings.summary): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_sup(qualifiedName: stdLib.stdLibStrings.sup): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -1212,8 +1241,15 @@ trait Element
   ): scala.Unit = js.native
   /**
     * Displays element fullscreen and resolves promise when done.
+    * When supplied, options's navigationUI member indicates whether showing
+    * navigation UI while in fullscreen is preferred or not. If set to "show", navigation
+    * simplicity is preferred over screen space, and if set to "hide", more screen space
+    * is preferred. User agents are always free to honor user preference over the application's. The
+    * default value "auto" indicates no application preference.
     */
   def requestFullscreen(): js.Promise[scala.Unit] = js.native
+  def requestFullscreen(options: FullscreenOptions): js.Promise[scala.Unit] = js.native
+  def requestPointerLock(): scala.Unit = js.native
   def scroll(): scala.Unit = js.native
   def scroll(options: ScrollToOptions): scala.Unit = js.native
   def scroll(x: scala.Double, y: scala.Double): scala.Unit = js.native

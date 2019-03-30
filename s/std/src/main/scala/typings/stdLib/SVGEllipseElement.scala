@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGEllipseElement interface provides access to the properties of <ellipse> elements. */
 @js.native
 trait SVGEllipseElement extends SVGGraphicsElement {
   val cx: SVGAnimatedLength = js.native

@@ -24,8 +24,8 @@ trait Messaging extends js.Object {
     * To forceably stop a registration token from being used, delete it
     * by calling this method.
     *
-    * @param {!string} token The token to delete.
-    * @return {firebase.Promise} The promise resolves when the token has been
+    * @param token The token to delete.
+    * @return The promise resolves when the token has been
     *   successfully deleted.
     */
   def deleteToken(token: java.lang.String): js.Promise[scala.Boolean] = js.native
@@ -33,7 +33,7 @@ trait Messaging extends js.Object {
     * After calling `requestPermission()` you can call this method to get an FCM
     * registration token that can be used to send push messages to this user.
     *
-    * @return {firebase.Promise<string>} The promise resolves if an FCM token can
+    * @return The promise resolves if an FCM token can
     *   be retrieved. This method returns null if the current origin does not have
     *   permission to show notifications.
     */
@@ -46,10 +46,10 @@ trait Messaging extends js.Object {
     * NOTE: These events are dispatched when you have called
     * `setBackgroundMessageHandler()` in your service worker.
     *
-    * @param {!firebase.Observer<Object, void>|!function(!Object)}
+    * @param
     *     nextOrObserver This function, or observer object with `next` defined,
     *     is called when a message is received and the user is currently viewing your page.
-    * @return {firebase.Unsubscribe} To stop listening for messages
+    * @return To stop listening for messages
     *    execute this returned function.
     */
   def onMessage(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.NextFn[_]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
@@ -77,10 +77,10 @@ trait Messaging extends js.Object {
     * has invalidated your existing token and you need to call `getToken()`
     * to get a new token.
     *
-    * @param {!firebase.Observer<Object, void>|!function(!Object)}
+    * @param
     *     nextOrObserver This function, or observer object with `next` defined,
     *     is called when a token refresh has occurred.
-    * @return {firebase.Unsubscribe} To stop listening for token
+    * @return To stop listening for token
     *   refresh events execute this returned function.
     */
   def onTokenRefresh(nextOrObserver: firebaseLib.firebaseMod.firebaseNs.NextFn[_]): firebaseLib.firebaseMod.firebaseNs.Unsubscribe = js.native
@@ -108,7 +108,7 @@ trait Messaging extends js.Object {
     * Calling this method displays the permission dialog to the user and
     * resolves if the permission is granted.
     *
-    * @return {firebase.Promise} The promise resolves if permission is
+    * @return The promise resolves if permission is
     *   granted. Otherwise, the promise is rejected with an error.
     */
   def requestPermission(): js.Promise[scala.Unit] = js.native
@@ -120,7 +120,7 @@ trait Messaging extends js.Object {
     * Your callback should return a promise that, once resolved, has
     * shown a notification.
     *
-    * @param {!function(!Object)} callback The function to handle the push message.
+    * @param callback The function to handle the push message.
     */
   def setBackgroundMessageHandler(callback: js.Function1[/* payload */ js.Any, js.Promise[_] | scala.Unit]): scala.Unit = js.native
   def usePublicVapidKey(b64PublicKey: java.lang.String): scala.Unit = js.native
@@ -128,7 +128,7 @@ trait Messaging extends js.Object {
     * To use your own service worker for receiving push messages, you
     * can pass in your service worker registration in this method.
     *
-    * @param {!ServiceWorkerRegistration} registration The service worker
+    * @param registration The service worker
     *   registration you wish to use for push messaging.
     */
   def useServiceWorker(registration: stdLib.ServiceWorkerRegistration): scala.Unit = js.native

@@ -186,7 +186,7 @@ trait Glue
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions to based on tags.
+    * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
     */
   def batchGetCrawlers(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetCrawlersResponse, 
@@ -203,7 +203,7 @@ trait Glue
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions to based on tags.
+    * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
     */
   def batchGetCrawlers(params: awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetCrawlersRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetCrawlersResponse, 
@@ -396,7 +396,7 @@ trait Glue
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a classifier in the user's account. This may be a GrokClassifier, an XMLClassifier, or abbrev JsonClassifier, depending on which field of the request is present.
+    * Creates a classifier in the user's account. This may be a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field of the request is present.
     */
   def createClassifier(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGlueMod.GlueNs.CreateClassifierResponse, 
@@ -413,7 +413,7 @@ trait Glue
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a classifier in the user's account. This may be a GrokClassifier, an XMLClassifier, or abbrev JsonClassifier, depending on which field of the request is present.
+    * Creates a classifier in the user's account. This may be a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field of the request is present.
     */
   def createClassifier(params: awsDashSdkLib.clientsGlueMod.GlueNs.CreateClassifierRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGlueMod.GlueNs.CreateClassifierResponse, 
@@ -3056,7 +3056,7 @@ trait Glue
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modifies an existing classifier (a GrokClassifier, XMLClassifier, or JsonClassifier, depending on which field is present).
+    * Modifies an existing classifier (a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field is present).
     */
   def updateClassifier(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGlueMod.GlueNs.UpdateClassifierResponse, 
@@ -3073,7 +3073,7 @@ trait Glue
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modifies an existing classifier (a GrokClassifier, XMLClassifier, or JsonClassifier, depending on which field is present).
+    * Modifies an existing classifier (a GrokClassifier, an XMLClassifier, a JsonClassifier, or a CsvClassifier, depending on which field is present).
     */
   def updateClassifier(params: awsDashSdkLib.clientsGlueMod.GlueNs.UpdateClassifierRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGlueMod.GlueNs.UpdateClassifierResponse, 

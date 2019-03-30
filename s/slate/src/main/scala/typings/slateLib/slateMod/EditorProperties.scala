@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait EditorProperties extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* change */ slateLib.Anon_Operations, scala.Unit]] = js.undefined
-  var plugins: js.UndefOr[js.Array[_]] = js.undefined
+  var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var value: js.UndefOr[Value] = js.undefined
 }
@@ -16,7 +16,7 @@ object EditorProperties {
   @scala.inline
   def apply(
     onChange: /* change */ slateLib.Anon_Operations => scala.Unit = null,
-    plugins: js.Array[_] = null,
+    plugins: js.Array[Plugin] = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     value: Value = null
   ): EditorProperties = {

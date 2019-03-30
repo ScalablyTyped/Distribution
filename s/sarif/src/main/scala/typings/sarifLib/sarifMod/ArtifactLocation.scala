@@ -17,7 +17,7 @@ trait ArtifactLocation extends js.Object {
   /**
     * A string containing a valid relative or absolute URI.
     */
-  var uri: java.lang.String
+  var uri: js.UndefOr[java.lang.String] = js.undefined
   /**
     * A string which indirectly specifies the absolute URI with respect to which a relative URI in the "uri" property
     * is interpreted.
@@ -28,14 +28,15 @@ trait ArtifactLocation extends js.Object {
 object ArtifactLocation {
   @scala.inline
   def apply(
-    uri: java.lang.String,
     index: scala.Int | scala.Double = null,
     properties: PropertyBag = null,
+    uri: java.lang.String = null,
     uriBaseId: java.lang.String = null
   ): ArtifactLocation = {
-    val __obj = js.Dynamic.literal(uri = uri)
+    val __obj = js.Dynamic.literal()
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (uri != null) __obj.updateDynamic("uri")(uri)
     if (uriBaseId != null) __obj.updateDynamic("uriBaseId")(uriBaseId)
     __obj.asInstanceOf[ArtifactLocation]
   }

@@ -54,9 +54,12 @@ class Cluster protected ()
     * The DocDB Cluster Resource ID
     */
   val clusterResourceId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * A cluster parameter group to associate with the cluster.
+    */
   val dbClusterParameterGroupName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * A DB subnet group to associate with this DB instance.* `db_cluster_parameter_group_name` - (Optional) A cluster parameter group to associate with the cluster.
+    * A DB subnet group to associate with this DB instance.
     */
   val dbSubnetGroupName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

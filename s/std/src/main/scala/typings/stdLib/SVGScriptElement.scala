@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGScriptElement interface corresponds to the SVG <script> element. */
 @js.native
 trait SVGScriptElement
   extends SVGElement

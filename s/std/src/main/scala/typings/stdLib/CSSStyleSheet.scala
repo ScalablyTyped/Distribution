@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The CSSStyleSheet interface represents a single CSS style sheet. It inherits properties and methods from its parent, StyleSheet. */
 @js.native
 trait CSSStyleSheet extends StyleSheet {
   val cssRules: CSSRuleList = js.native

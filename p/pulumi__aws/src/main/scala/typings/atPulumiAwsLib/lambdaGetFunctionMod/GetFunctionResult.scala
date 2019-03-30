@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GetFunctionResult extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) identifying your Lambda Function.
+    * Unqualified (no `:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `qualified_arn`.
     */
   val arn: java.lang.String
   /**
@@ -51,11 +51,11 @@ trait GetFunctionResult extends js.Object {
     */
   val memorySize: scala.Double
   /**
-    * The Amazon Resource Name (ARN) identifying your Lambda Function Version
+    * Qualified (`:QUALIFIER` or `:VERSION` suffix) Amazon Resource Name (ARN) identifying your Lambda Function. See also `arn`.
     */
   val qualifiedArn: java.lang.String
   /**
-    * The amount of reserved concurrent executions for this lambda function.
+    * The amount of reserved concurrent executions for this lambda function or `-1` if unreserved.
     */
   val reservedConcurrentExecutions: scala.Double
   /**
@@ -74,6 +74,7 @@ trait GetFunctionResult extends js.Object {
     * The size in bytes of the function .zip file.
     */
   val sourceCodeSize: scala.Double
+  val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   /**
     * The function execution time at which Lambda should terminate the function.
     */
@@ -112,12 +113,13 @@ object GetFunctionResult {
     runtime: java.lang.String,
     sourceCodeHash: java.lang.String,
     sourceCodeSize: scala.Double,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     timeout: scala.Double,
     tracingConfig: atPulumiAwsLib.Anon_Mode,
     version: java.lang.String,
     vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
   ): GetFunctionResult = {
-    val __obj = js.Dynamic.literal(arn = arn, deadLetterConfig = deadLetterConfig, description = description, environment = environment, handler = handler, id = id, invokeArn = invokeArn, kmsKeyArn = kmsKeyArn, lastModified = lastModified, layers = layers, memorySize = memorySize, qualifiedArn = qualifiedArn, reservedConcurrentExecutions = reservedConcurrentExecutions, role = role, runtime = runtime, sourceCodeHash = sourceCodeHash, sourceCodeSize = sourceCodeSize, timeout = timeout, tracingConfig = tracingConfig, version = version, vpcConfig = vpcConfig)
+    val __obj = js.Dynamic.literal(arn = arn, deadLetterConfig = deadLetterConfig, description = description, environment = environment, handler = handler, id = id, invokeArn = invokeArn, kmsKeyArn = kmsKeyArn, lastModified = lastModified, layers = layers, memorySize = memorySize, qualifiedArn = qualifiedArn, reservedConcurrentExecutions = reservedConcurrentExecutions, role = role, runtime = runtime, sourceCodeHash = sourceCodeHash, sourceCodeSize = sourceCodeSize, tags = tags, timeout = timeout, tracingConfig = tracingConfig, version = version, vpcConfig = vpcConfig)
   
     __obj.asInstanceOf[GetFunctionResult]
   }

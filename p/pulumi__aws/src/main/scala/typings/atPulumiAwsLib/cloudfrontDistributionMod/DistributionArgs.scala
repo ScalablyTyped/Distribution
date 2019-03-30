@@ -14,16 +14,6 @@ trait DistributionArgs extends js.Object {
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
   /**
-    * **Deprecated**, use `ordered_cache_behavior` instead.
-    */
-  val cacheBehaviors: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[
-      js.Array[
-        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
-      ]
-    ]
-  ] = js.undefined
-  /**
     * Any comments you want to include about the
     * distribution.
     */
@@ -42,7 +32,7 @@ trait DistributionArgs extends js.Object {
     * The default cache behavior for this distribution (maximum
     * one).
     */
-  val defaultCacheBehavior: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]
+  val defaultCacheBehavior: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
   /**
     * The object that you want CloudFront to
     * return (for example, index.html) when an end user requests the root URL.
@@ -74,12 +64,12 @@ trait DistributionArgs extends js.Object {
   /**
     * An ordered list of cache behaviors
     * resource for this distribution. List from top to bottom
-    * +    in order of precedence. The topmost cache behavior will have precedence 0.
+    * in order of precedence. The topmost cache behavior will have precedence 0.
     */
   val orderedCacheBehaviors: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]
       ]
     ]
   ] = js.undefined
@@ -129,7 +119,7 @@ trait DistributionArgs extends js.Object {
 object DistributionArgs {
   @scala.inline
   def apply(
-    defaultCacheBehavior: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl],
+    defaultCacheBehavior: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress],
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean],
     origins: atPulumiPulumiLib.outputMod.Input[
       js.Array[
@@ -139,11 +129,6 @@ object DistributionArgs {
     restrictions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_GeoRestrictionAnonLocationsRestrictionType],
     viewerCertificate: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AcmCertificateArnCloudfrontDefaultCertificate],
     aliases: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
-    cacheBehaviors: atPulumiPulumiLib.outputMod.Input[
-      js.Array[
-        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
-      ]
-    ] = null,
     comment: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     customErrorResponses: atPulumiPulumiLib.outputMod.Input[
       js.Array[
@@ -156,7 +141,7 @@ object DistributionArgs {
     loggingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketIncludeCookiesPrefix] = null,
     orderedCacheBehaviors: atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]
       ]
     ] = null,
     priceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -166,7 +151,6 @@ object DistributionArgs {
   ): DistributionArgs = {
     val __obj = js.Dynamic.literal(defaultCacheBehavior = defaultCacheBehavior.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], origins = origins.asInstanceOf[js.Any], restrictions = restrictions.asInstanceOf[js.Any], viewerCertificate = viewerCertificate.asInstanceOf[js.Any])
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (cacheBehaviors != null) __obj.updateDynamic("cacheBehaviors")(cacheBehaviors.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (customErrorResponses != null) __obj.updateDynamic("customErrorResponses")(customErrorResponses.asInstanceOf[js.Any])
     if (defaultRootObject != null) __obj.updateDynamic("defaultRootObject")(defaultRootObject.asInstanceOf[js.Any])

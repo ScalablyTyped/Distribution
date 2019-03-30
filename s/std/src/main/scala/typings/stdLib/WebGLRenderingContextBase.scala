@@ -493,6 +493,7 @@ trait WebGLRenderingContextBase extends js.Object {
   def isTexture(texture: WebGLTexture): GLboolean = js.native
   def lineWidth(width: GLfloat): scala.Unit = js.native
   def linkProgram(program: WebGLProgram): scala.Unit = js.native
+  def pixelStorei(pname: GLenum, param: GLboolean): scala.Unit = js.native
   def pixelStorei(pname: GLenum, param: GLint): scala.Unit = js.native
   def polygonOffset(factor: GLfloat, units: GLfloat): scala.Unit = js.native
   def readPixels(x: GLint, y: GLint, width: GLsizei, height: GLsizei, format: GLenum, `type`: GLenum): scala.Unit = js.native

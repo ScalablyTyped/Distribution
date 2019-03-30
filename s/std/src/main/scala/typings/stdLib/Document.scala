@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The Document interface represents any web page loaded in the browser and serves as an entry point into the web page's content, which is the DOM tree. */
 @js.native
 trait Document
   extends Node
@@ -164,6 +165,8 @@ trait Document
   var location: Location = js.native
   var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
+  var onpointerlockchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
+  var onpointerlockerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   /**
     * Fires when the state of the object has changed.
     * @param ev The event
@@ -212,9 +215,6 @@ trait Document
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): scala.Unit = js.native
-  /**
-    * Returns an object representing the current selection of the document that is loaded into the object displaying a webpage.
-    */
   @JSName("addEventListener")
   def addEventListener_fullscreenchange(
     `type`: stdLib.stdLibStrings.fullscreenchange,
@@ -232,9 +232,6 @@ trait Document
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
-  /**
-    * Returns an object representing the current selection of the document that is loaded into the object displaying a webpage.
-    */
   @JSName("addEventListener")
   def addEventListener_fullscreenerror(
     `type`: stdLib.stdLibStrings.fullscreenerror,
@@ -252,9 +249,40 @@ trait Document
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
-  /**
-    * Returns an object representing the current selection of the document that is loaded into the object displaying a webpage.
-    */
+  @JSName("addEventListener")
+  def addEventListener_pointerlockchange(
+    `type`: stdLib.stdLibStrings.pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockchange(
+    `type`: stdLib.stdLibStrings.pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockchange(
+    `type`: stdLib.stdLibStrings.pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockerror(
+    `type`: stdLib.stdLibStrings.pointerlockerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockerror(
+    `type`: stdLib.stdLibStrings.pointerlockerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_pointerlockerror(
+    `type`: stdLib.stdLibStrings.pointerlockerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readystatechange(
     `type`: stdLib.stdLibStrings.readystatechange,
@@ -272,9 +300,6 @@ trait Document
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
-  /**
-    * Returns an object representing the current selection of the document that is loaded into the object displaying a webpage.
-    */
   @JSName("addEventListener")
   def addEventListener_visibilitychange(
     `type`: stdLib.stdLibStrings.visibilitychange,
@@ -344,14 +369,6 @@ trait Document
     namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
     qualifiedName: stdLib.stdLibStrings.clipPath
   ): SVGClipPathElement = js.native
-  def createElementNS(
-    namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
-    qualifiedName: stdLib.stdLibStrings.componentTransferFunction
-  ): SVGComponentTransferFunctionElement = js.native
-  def createElementNS(
-    namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
-    qualifiedName: stdLib.stdLibStrings.cursor
-  ): SVGCursorElement = js.native
   def createElementNS(
     namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
     qualifiedName: stdLib.stdLibStrings.defs
@@ -474,10 +491,6 @@ trait Document
   ): SVGGElement = js.native
   def createElementNS(
     namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
-    qualifiedName: stdLib.stdLibStrings.gradient
-  ): SVGGradientElement = js.native
-  def createElementNS(
-    namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
     qualifiedName: stdLib.stdLibStrings.image
   ): SVGImageElement = js.native
   def createElementNS(
@@ -554,16 +567,8 @@ trait Document
   ): SVGTextElement = js.native
   def createElementNS(
     namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
-    qualifiedName: stdLib.stdLibStrings.textContent
-  ): SVGTextContentElement = js.native
-  def createElementNS(
-    namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
     qualifiedName: stdLib.stdLibStrings.textPath
   ): SVGTextPathElement = js.native
-  def createElementNS(
-    namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
-    qualifiedName: stdLib.stdLibStrings.textPositioning
-  ): SVGTextPositioningElement = js.native
   def createElementNS(
     namespaceURI: stdLib.stdLibStrings.`http://wwwDOTw3DOTorg/2000/svg`,
     qualifiedName: stdLib.stdLibStrings.title
@@ -694,6 +699,14 @@ trait Document
   def createElement_basefont(tagName: stdLib.stdLibStrings.basefont): HTMLBaseFontElement = js.native
   @JSName("createElement")
   def createElement_basefont(tagName: stdLib.stdLibStrings.basefont, options: ElementCreationOptions): HTMLBaseFontElement = js.native
+  /**
+    * Creates an instance of the element for the specified tag.
+    * @param tagName The name of an element.
+    */
+  @JSName("createElement")
+  def createElement_bdi(tagName: stdLib.stdLibStrings.bdi): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_bdi(tagName: stdLib.stdLibStrings.bdi, options: ElementCreationOptions): HTMLElement = js.native
   /**
     * Creates an instance of the element for the specified tag.
     * @param tagName The name of an element.
@@ -1128,6 +1141,14 @@ trait Document
     * @param tagName The name of an element.
     */
   @JSName("createElement")
+  def createElement_main(tagName: stdLib.stdLibStrings.main): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_main(tagName: stdLib.stdLibStrings.main, options: ElementCreationOptions): HTMLElement = js.native
+  /**
+    * Creates an instance of the element for the specified tag.
+    * @param tagName The name of an element.
+    */
+  @JSName("createElement")
   def createElement_map(tagName: stdLib.stdLibStrings.map): HTMLMapElement = js.native
   @JSName("createElement")
   def createElement_map(tagName: stdLib.stdLibStrings.map, options: ElementCreationOptions): HTMLMapElement = js.native
@@ -1280,6 +1301,14 @@ trait Document
     * @param tagName The name of an element.
     */
   @JSName("createElement")
+  def createElement_rp(tagName: stdLib.stdLibStrings.rp): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_rp(tagName: stdLib.stdLibStrings.rp, options: ElementCreationOptions): HTMLElement = js.native
+  /**
+    * Creates an instance of the element for the specified tag.
+    * @param tagName The name of an element.
+    */
+  @JSName("createElement")
   def createElement_rt(tagName: stdLib.stdLibStrings.rt): HTMLElement = js.native
   @JSName("createElement")
   def createElement_rt(tagName: stdLib.stdLibStrings.rt, options: ElementCreationOptions): HTMLElement = js.native
@@ -1387,6 +1416,14 @@ trait Document
   def createElement_sub(tagName: stdLib.stdLibStrings.sub): HTMLElement = js.native
   @JSName("createElement")
   def createElement_sub(tagName: stdLib.stdLibStrings.sub, options: ElementCreationOptions): HTMLElement = js.native
+  /**
+    * Creates an instance of the element for the specified tag.
+    * @param tagName The name of an element.
+    */
+  @JSName("createElement")
+  def createElement_summary(tagName: stdLib.stdLibStrings.summary): HTMLElement = js.native
+  @JSName("createElement")
+  def createElement_summary(tagName: stdLib.stdLibStrings.summary, options: ElementCreationOptions): HTMLElement = js.native
   /**
     * Creates an instance of the element for the specified tag.
     * @param tagName The name of an element.
@@ -1783,6 +1820,7 @@ trait Document
     * resolves promise when done.
     */
   def exitFullscreen(): js.Promise[scala.Unit] = js.native
+  def exitPointerLock(): scala.Unit = js.native
   def getAnimations(): js.Array[Animation] = js.native
   /**
     * collection = element . getElementsByClassName(classNames)
@@ -1872,6 +1910,12 @@ trait Document
     */
   @JSName("getElementsByTagName")
   def getElementsByTagName_basefont(qualifiedName: stdLib.stdLibStrings.basefont): HTMLCollectionOf[HTMLBaseFontElement] = js.native
+  /**
+    * Retrieves a collection of objects based on the specified element name.
+    * @param name Specifies the name of an element.
+    */
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_bdi(qualifiedName: stdLib.stdLibStrings.bdi): HTMLCollectionOf[HTMLElement] = js.native
   /**
     * Retrieves a collection of objects based on the specified element name.
     * @param name Specifies the name of an element.
@@ -2265,6 +2309,12 @@ trait Document
     * @param name Specifies the name of an element.
     */
   @JSName("getElementsByTagName")
+  def getElementsByTagName_main(qualifiedName: stdLib.stdLibStrings.main): HTMLCollectionOf[HTMLElement] = js.native
+  /**
+    * Retrieves a collection of objects based on the specified element name.
+    * @param name Specifies the name of an element.
+    */
+  @JSName("getElementsByTagName")
   def getElementsByTagName_map(qualifiedName: stdLib.stdLibStrings.map): HTMLCollectionOf[HTMLMapElement] = js.native
   /**
     * Retrieves a collection of objects based on the specified element name.
@@ -2397,6 +2447,12 @@ trait Document
     * @param name Specifies the name of an element.
     */
   @JSName("getElementsByTagName")
+  def getElementsByTagName_rp(qualifiedName: stdLib.stdLibStrings.rp): HTMLCollectionOf[HTMLElement] = js.native
+  /**
+    * Retrieves a collection of objects based on the specified element name.
+    * @param name Specifies the name of an element.
+    */
+  @JSName("getElementsByTagName")
   def getElementsByTagName_rt(qualifiedName: stdLib.stdLibStrings.rt): HTMLCollectionOf[HTMLElement] = js.native
   /**
     * Retrieves a collection of objects based on the specified element name.
@@ -2478,6 +2534,12 @@ trait Document
     */
   @JSName("getElementsByTagName")
   def getElementsByTagName_sub(qualifiedName: stdLib.stdLibStrings.sub): HTMLCollectionOf[HTMLElement] = js.native
+  /**
+    * Retrieves a collection of objects based on the specified element name.
+    * @param name Specifies the name of an element.
+    */
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_summary(qualifiedName: stdLib.stdLibStrings.summary): HTMLCollectionOf[HTMLElement] = js.native
   /**
     * Retrieves a collection of objects based on the specified element name.
     * @param name Specifies the name of an element.
@@ -2606,6 +2668,11 @@ trait Document
     * Gets a value indicating whether the object currently has focus.
     */
   def hasFocus(): scala.Boolean = js.native
+  /**
+    * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
+    * If node is a document or a shadow root, throws a
+    * "NotSupportedError" DOMException.
+    */
   def importNode[T /* <: Node */](importedNode: T, deep: scala.Boolean): T = js.native
   /**
     * Opens a new window and loads a document specified by a given URL. Also, opens a new window that uses the url parameter and the name parameter to collect the output of the write method and the writeln method.
@@ -2691,6 +2758,40 @@ trait Document
     options: EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")
+  def removeEventListener_pointerlockchange(
+    `type`: stdLib.stdLibStrings.pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockchange(
+    `type`: stdLib.stdLibStrings.pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockchange(
+    `type`: stdLib.stdLibStrings.pointerlockchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockerror(
+    `type`: stdLib.stdLibStrings.pointerlockerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockerror(
+    `type`: stdLib.stdLibStrings.pointerlockerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_pointerlockerror(
+    `type`: stdLib.stdLibStrings.pointerlockerror,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
   def removeEventListener_readystatechange(
     `type`: stdLib.stdLibStrings.readystatechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ ProgressEvent, _]
@@ -2741,6 +2842,10 @@ trait Document
 class DocumentCls () extends Document {
   /* CompleteClass */
   override val activeElement: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val fullscreenElement: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val pointerLockElement: Element | scala.Null = js.native
   /**
     * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
     */

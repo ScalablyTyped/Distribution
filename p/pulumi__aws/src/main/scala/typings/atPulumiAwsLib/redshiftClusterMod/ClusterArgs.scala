@@ -19,11 +19,6 @@ trait ClusterArgs extends js.Object {
     */
   val availabilityZone: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * The name of an existing S3 bucket where the log files are to be stored. Must be in the same region as the cluster and the cluster must have read bucket and put object permissions.
-    * For more information on the permissions required for the bucket, please read the AWS [documentation](http://docs.aws.amazon.com/redshift/latest/mgmt/db-auditing.html#db-auditing-enable-logging)
-    */
-  val bucketName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
     * The Cluster Identifier. Must be a lower case
     * string.
     */
@@ -68,7 +63,6 @@ trait ClusterArgs extends js.Object {
     * The Elastic IP (EIP) address for the cluster.
     */
   val elasticIp: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  val enableLogging: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * If true , the data in the cluster is encrypted at rest.
     */
@@ -138,10 +132,6 @@ trait ClusterArgs extends js.Object {
     */
   val publiclyAccessible: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
-    * The prefix applied to the log file names.
-    */
-  val s3KeyPrefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
     * Determines whether a final snapshot of the cluster is created before Amazon Redshift deletes the cluster. If true , a final cluster snapshot is not created. If false , a final cluster snapshot is created before the cluster is deleted. Default is false.
     */
   val skipFinalSnapshot: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
@@ -179,7 +169,6 @@ object ClusterArgs {
     allowVersionUpgrade: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     automatedSnapshotRetentionPeriod: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    bucketName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     clusterParameterGroupName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     clusterPublicKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     clusterRevisionNumber: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -189,7 +178,6 @@ object ClusterArgs {
     clusterVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     databaseName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     elasticIp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    enableLogging: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     encrypted: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     enhancedVpcRouting: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
@@ -204,7 +192,6 @@ object ClusterArgs {
     port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     preferredMaintenanceWindow: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     publiclyAccessible: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
-    s3KeyPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     skipFinalSnapshot: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     snapshotClusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     snapshotCopy: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DestinationRegionGrantName] = null,
@@ -216,7 +203,6 @@ object ClusterArgs {
     if (allowVersionUpgrade != null) __obj.updateDynamic("allowVersionUpgrade")(allowVersionUpgrade.asInstanceOf[js.Any])
     if (automatedSnapshotRetentionPeriod != null) __obj.updateDynamic("automatedSnapshotRetentionPeriod")(automatedSnapshotRetentionPeriod.asInstanceOf[js.Any])
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName.asInstanceOf[js.Any])
     if (clusterParameterGroupName != null) __obj.updateDynamic("clusterParameterGroupName")(clusterParameterGroupName.asInstanceOf[js.Any])
     if (clusterPublicKey != null) __obj.updateDynamic("clusterPublicKey")(clusterPublicKey.asInstanceOf[js.Any])
     if (clusterRevisionNumber != null) __obj.updateDynamic("clusterRevisionNumber")(clusterRevisionNumber.asInstanceOf[js.Any])
@@ -226,7 +212,6 @@ object ClusterArgs {
     if (clusterVersion != null) __obj.updateDynamic("clusterVersion")(clusterVersion.asInstanceOf[js.Any])
     if (databaseName != null) __obj.updateDynamic("databaseName")(databaseName.asInstanceOf[js.Any])
     if (elasticIp != null) __obj.updateDynamic("elasticIp")(elasticIp.asInstanceOf[js.Any])
-    if (enableLogging != null) __obj.updateDynamic("enableLogging")(enableLogging.asInstanceOf[js.Any])
     if (encrypted != null) __obj.updateDynamic("encrypted")(encrypted.asInstanceOf[js.Any])
     if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
     if (enhancedVpcRouting != null) __obj.updateDynamic("enhancedVpcRouting")(enhancedVpcRouting.asInstanceOf[js.Any])
@@ -241,7 +226,6 @@ object ClusterArgs {
     if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
     if (publiclyAccessible != null) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
-    if (s3KeyPrefix != null) __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix.asInstanceOf[js.Any])
     if (skipFinalSnapshot != null) __obj.updateDynamic("skipFinalSnapshot")(skipFinalSnapshot.asInstanceOf[js.Any])
     if (snapshotClusterIdentifier != null) __obj.updateDynamic("snapshotClusterIdentifier")(snapshotClusterIdentifier.asInstanceOf[js.Any])
     if (snapshotCopy != null) __obj.updateDynamic("snapshotCopy")(snapshotCopy.asInstanceOf[js.Any])

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The VREyeParameters interface of the WebVR API represents all the information required to correctly render a scene for a given eye, including field of view information. */
 trait VREyeParameters extends js.Object {
   /** @deprecated */
   val fieldOfView: VRFieldOfView

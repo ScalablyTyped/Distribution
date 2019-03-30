@@ -15,6 +15,10 @@ trait GetBucketResult extends js.Object {
     */
   val bucketDomainName: java.lang.String
   /**
+    * The bucket region-specific domain name. The bucket domain name including the region name, please refer [here](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region) for format. Note: The AWS CloudFront allows specifying S3 region-specific endpoint when creating S3 origin, it will prevent [redirect issues](https://forums.aws.amazon.com/thread.jspa?threadID=216814) from CloudFront to S3 Origin URL.
+    */
+  val bucketRegionalDomainName: java.lang.String
+  /**
     * The [Route 53 Hosted Zone ID](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_website_region_endpoints) for this bucket's region.
     */
   val hostedZoneId: java.lang.String
@@ -41,13 +45,14 @@ object GetBucketResult {
   def apply(
     arn: java.lang.String,
     bucketDomainName: java.lang.String,
+    bucketRegionalDomainName: java.lang.String,
     hostedZoneId: java.lang.String,
     id: java.lang.String,
     region: java.lang.String,
     websiteDomain: java.lang.String,
     websiteEndpoint: java.lang.String
   ): GetBucketResult = {
-    val __obj = js.Dynamic.literal(arn = arn, bucketDomainName = bucketDomainName, hostedZoneId = hostedZoneId, id = id, region = region, websiteDomain = websiteDomain, websiteEndpoint = websiteEndpoint)
+    val __obj = js.Dynamic.literal(arn = arn, bucketDomainName = bucketDomainName, bucketRegionalDomainName = bucketRegionalDomainName, hostedZoneId = hostedZoneId, id = id, region = region, websiteDomain = websiteDomain, websiteEndpoint = websiteEndpoint)
   
     __obj.asInstanceOf[GetBucketResult]
   }

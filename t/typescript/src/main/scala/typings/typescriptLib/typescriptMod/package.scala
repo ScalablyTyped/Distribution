@@ -44,6 +44,7 @@ package object typescriptMod {
   type SymbolFormatFlags = typescriptLib.typescriptMod.tsNs.SymbolFormatFlags
   type SyntaxKind = typescriptLib.typescriptMod.tsNs.SyntaxKind
   type TokenClass = typescriptLib.typescriptMod.tsNs.TokenClass
+  type TokenFlags = typescriptLib.typescriptMod.tsNs.TokenFlags
   type TypeFlags = typescriptLib.typescriptMod.tsNs.TypeFlags
   type TypeFormatFlags = typescriptLib.typescriptMod.tsNs.TypeFormatFlags
   type TypePredicateKind = typescriptLib.typescriptMod.tsNs.TypePredicateKind

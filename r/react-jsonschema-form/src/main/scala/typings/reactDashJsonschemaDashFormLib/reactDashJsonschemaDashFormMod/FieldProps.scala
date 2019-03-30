@@ -5,48 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FieldProps
+@js.native
+trait FieldProps[T]
   extends reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement]
      with /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var autofocus: scala.Boolean
-  var disabled: scala.Boolean
-  var errorSchema: js.Object
-  var formContext: js.Any
-  var formData: js.Any
-  var idSchema: IdSchema
-  var name: java.lang.String
-  var readonly: scala.Boolean
-  var registry: reactDashJsonschemaDashFormLib.Anon_Definitions
-  var required: scala.Boolean
-  var schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6
-  var uiSchema: UiSchema
+  var autofocus: scala.Boolean = js.native
+  var disabled: scala.Boolean = js.native
+  var errorSchema: ErrorSchema = js.native
+  var formContext: js.Any = js.native
+  var formData: T = js.native
+  var idSchema: IdSchema = js.native
+  var name: java.lang.String = js.native
+  var readonly: scala.Boolean = js.native
+  var registry: reactDashJsonschemaDashFormLib.Anon_Definitions = js.native
+  var required: scala.Boolean = js.native
+  var schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6 = js.native
+  var uiSchema: UiSchema = js.native
   @JSName("onChange")
-  def onChange_MFieldProps(value: js.Any): scala.Unit
-}
-
-object FieldProps {
-  @scala.inline
-  def apply(
-    autofocus: scala.Boolean,
-    disabled: scala.Boolean,
-    errorSchema: js.Object,
-    formContext: js.Any,
-    formData: js.Any,
-    idSchema: IdSchema,
-    name: java.lang.String,
-    onChange: js.Any => scala.Unit,
-    readonly: scala.Boolean,
-    registry: reactDashJsonschemaDashFormLib.Anon_Definitions,
-    required: scala.Boolean,
-    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
-    uiSchema: UiSchema,
-    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
-    StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
-  ): FieldProps = {
-    val __obj = js.Dynamic.literal(autofocus = autofocus, disabled = disabled, errorSchema = errorSchema, formContext = formContext, formData = formData, idSchema = idSchema, name = name, onChange = js.Any.fromFunction1(onChange), readonly = readonly, registry = registry, required = required, schema = schema, uiSchema = uiSchema)
-    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
-    js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[FieldProps]
-  }
+  def onChange_MFieldProps(e: js.Any): js.Any = js.native
+  @JSName("onChange")
+  def onChange_MFieldProps(e: js.Any, es: ErrorSchema): js.Any = js.native
+  @JSName("onChange")
+  def onChange_MFieldProps(e: IChangeEvent[T]): js.Any = js.native
+  @JSName("onChange")
+  def onChange_MFieldProps(e: IChangeEvent[T], es: ErrorSchema): js.Any = js.native
 }
 

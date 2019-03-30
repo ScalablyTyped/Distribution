@@ -18,7 +18,6 @@ trait ComputeEnvironmentState extends js.Object {
     * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
     */
   val computeResources: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BidPercentageDesiredVcpus]] = js.undefined
-  val eccClusterArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
     */
@@ -51,7 +50,6 @@ object ComputeEnvironmentState {
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     computeEnvironmentName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     computeResources: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BidPercentageDesiredVcpus] = null,
-    eccClusterArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     ecsClusterArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     serviceRole: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     state: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -63,7 +61,6 @@ object ComputeEnvironmentState {
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
     if (computeEnvironmentName != null) __obj.updateDynamic("computeEnvironmentName")(computeEnvironmentName.asInstanceOf[js.Any])
     if (computeResources != null) __obj.updateDynamic("computeResources")(computeResources.asInstanceOf[js.Any])
-    if (eccClusterArn != null) __obj.updateDynamic("eccClusterArn")(eccClusterArn.asInstanceOf[js.Any])
     if (ecsClusterArn != null) __obj.updateDynamic("ecsClusterArn")(ecsClusterArn.asInstanceOf[js.Any])
     if (serviceRole != null) __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
     if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])

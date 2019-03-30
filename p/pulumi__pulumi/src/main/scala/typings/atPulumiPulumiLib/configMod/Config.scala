@@ -26,8 +26,8 @@ class Config () extends js.Object {
     * @param key The key to lookup.
     * @param opts An options bag to constrain legal values.
     */
-  def get(key: java.lang.String): js.UndefOr[java.lang.String] = js.native
-  def get(key: java.lang.String, opts: StringConfigOptions): js.UndefOr[java.lang.String] = js.native
+  def get[K /* <: java.lang.String */](key: java.lang.String): js.UndefOr[K] = js.native
+  def get[K /* <: java.lang.String */](key: java.lang.String, opts: StringConfigOptions[K]): js.UndefOr[K] = js.native
   /**
     * getBoolean loads an optional configuration value, as a boolean, by its key, or undefined if it doesn't exist.
     * If the configuration value isn't a legal boolean, this function will throw an error.
@@ -57,8 +57,8 @@ class Config () extends js.Object {
     * @param key The key to lookup.
     * @param opts An options bag to constrain legal values.
     */
-  def require(key: java.lang.String): java.lang.String = js.native
-  def require(key: java.lang.String, opts: StringConfigOptions): java.lang.String = js.native
+  def require[K /* <: java.lang.String */](key: java.lang.String): K = js.native
+  def require[K /* <: java.lang.String */](key: java.lang.String, opts: StringConfigOptions[K]): K = js.native
   /**
     * requireBoolean loads a configuration value, as a boolean, by its given key.  If it doesn't exist, or the
     * configuration value is not a legal boolean, an error is thrown.

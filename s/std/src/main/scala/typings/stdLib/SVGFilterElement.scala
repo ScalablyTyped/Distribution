@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFilterElement interface provides access to the properties of <filter> elements, as well as methods to manipulate them. */
 @js.native
 trait SVGFilterElement
   extends SVGElement

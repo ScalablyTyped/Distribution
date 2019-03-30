@@ -52,7 +52,7 @@ trait IIconProps
     * @default "span"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any
   ] = js.undefined
   /**
     * Description string. This string does not appear in normal browsers, but
@@ -76,7 +76,7 @@ object IIconProps {
     iconSize: scala.Int | scala.Double = null,
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null,
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,
     title: java.lang.String | atBlueprintjsCoreLib.atBlueprintjsCoreLibNumbers.`false` = null
   ): IIconProps = {
     val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])

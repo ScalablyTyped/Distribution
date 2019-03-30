@@ -26,6 +26,7 @@ object Node {
     label: java.lang.String = null,
     labelHighlightBold: js.UndefOr[scala.Boolean] = js.undefined,
     level: scala.Int | scala.Double = null,
+    margin: visLib.Anon_Bottom = null,
     mass: scala.Int | scala.Double = null,
     physics: js.UndefOr[scala.Boolean] = js.undefined,
     scaling: OptionsScaling = null,
@@ -53,6 +54,7 @@ object Node {
     if (label != null) __obj.updateDynamic("label")(label)
     if (!js.isUndefined(labelHighlightBold)) __obj.updateDynamic("labelHighlightBold")(labelHighlightBold)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin)
     if (mass != null) __obj.updateDynamic("mass")(mass.asInstanceOf[js.Any])
     if (!js.isUndefined(physics)) __obj.updateDynamic("physics")(physics)
     if (scaling != null) __obj.updateDynamic("scaling")(scaling)

@@ -18,7 +18,7 @@ trait User extends UserInfo {
   /**
     * Deletes and signs out the user.
     *
-    * <b>Important:</b> this is a security sensitive operation that requires the
+    * <b>Important:</b> this is a security-sensitive operation that requires the
     * user to have recently signed in. If this requirement isn't met, ask the user
     * to authenticate again and then call
     * {@link firebase.User.reauthenticateWithCredential}.
@@ -30,26 +30,24 @@ trait User extends UserInfo {
     *     threshold. Use {@link firebase.User.reauthenticateWithCredential} to
     *     resolve. This does not apply if the user is anonymous.</dd>
     * </dl>
-    *
-    * @return {!firebase.Promise<void>}
     */
   def delete(): js.Promise[scala.Unit] = js.native
   /**
-    * Returns a JWT token used to identify the user to a Firebase service.
+    * Returns a JSON Web Token (JWT) used to identify the user to a Firebase
+    * service.
     *
-    * Returns the current token if it has not expired, otherwise this will
+    * Returns the current token if it has not expired. Otherwise, this will
     * refresh the token and return a new one.
     *
-    * @param {boolean=} forceRefresh Force refresh regardless of token
+    * @param forceRefresh Force refresh regardless of token
     *     expiration.
-    * @return {!firebase.Promise<string>}
     */
   def getIdToken(): js.Promise[java.lang.String] = js.native
   def getIdToken(forceRefresh: scala.Boolean): js.Promise[java.lang.String] = js.native
   def getIdTokenResult(): js.Promise[firebaseLib.firebaseMod.firebaseNs.authNs.IdTokenResult] = js.native
   def getIdTokenResult(forceRefresh: scala.Boolean): js.Promise[firebaseLib.firebaseMod.firebaseNs.authNs.IdTokenResult] = js.native
   /**
-    * Links the user account with the given credentials, and returns any available
+    * Links the user account with the given credentials and returns any available
     * additional user information, such as user name.
     *
     * <h4>Error Codes</h4>
@@ -107,8 +105,7 @@ trait User extends UserInfo {
     *     ID of the credential is not valid.</dd>
     * </dl>
     *
-    * @param {!firebase.auth.AuthCredential} credential The auth credential.
-    * @return {!firebase.Promise<!firebase.auth.UserCredential>}
+    * @param credential The auth credential.
     */
   def linkAndRetrieveDataWithCredential(credential: firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential): js.Promise[firebaseLib.firebaseMod.firebaseNs.authNs.UserCredential] = js.native
   /**
@@ -172,8 +169,7 @@ trait User extends UserInfo {
     *     ID of the credential is not valid.</dd>
     * </dl>
     *
-    * @param {!firebase.auth.AuthCredential} credential The auth credential.
-    * @return {!firebase.Promise<!firebase.User>}
+    * @param credential The auth credential.
     */
   def linkWithCredential(credential: firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential): js.Promise[User] = js.native
   /**
@@ -212,10 +208,9 @@ trait User extends UserInfo {
     *     the provider.</dd>
     * </dl>
     *
-    * @param {string} phoneNumber The user's phone number in E.164 format (e.g.
+    * @param phoneNumber The user's phone number in E.164 format (e.g.
     *     +16505550101).
-    * @param {!firebase.auth.ApplicationVerifier} applicationVerifier
-    * @return {!firebase.Promise<!firebase.auth.ConfirmationResult>}
+    * @param applicationVerifier
     */
   def linkWithPhoneNumber(
     phoneNumber: java.lang.String,
@@ -285,7 +280,7 @@ trait User extends UserInfo {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * // Creates the provider object.
     * var provider = new firebase.auth.FacebookAuthProvider();
     * // You can add additional scopes to the provider:
@@ -303,10 +298,9 @@ trait User extends UserInfo {
     * });
     * ```
     *
-    * @param {!firebase.auth.AuthProvider} provider The provider to authenticate.
+    * @param provider The provider to authenticate.
     *     The provider has to be an OAuth provider. Non-OAuth providers like {@link
     *     firebase.auth.EmailAuthProvider} will throw an error.
-    * @return {!firebase.Promise<!firebase.auth.UserCredential>}
     */
   def linkWithPopup(provider: firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider): js.Promise[firebaseLib.firebaseMod.firebaseNs.authNs.UserCredential] = js.native
   /**
@@ -333,10 +327,9 @@ trait User extends UserInfo {
     *     console.</dd>
     * </dl>
     *
-    * @param {!firebase.auth.AuthProvider} provider The provider to authenticate.
+    * @param provider The provider to authenticate.
     *     The provider has to be an OAuth provider. Non-OAuth providers like {@link
     *     firebase.auth.EmailAuthProvider} will throw an error.
-    * @return {!firebase.Promise<void>}
     */
   def linkWithRedirect(provider: firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider): js.Promise[scala.Unit] = js.native
   /**
@@ -374,8 +367,7 @@ trait User extends UserInfo {
     *     ID of the credential is not valid.</dd>
     * </dl>
     *
-    * @param {!firebase.auth.AuthCredential} credential
-    * @return {!firebase.Promise<!firebase.auth.UserCredential>}
+    * @param credential
     */
   def reauthenticateAndRetrieveDataWithCredential(credential: firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential): js.Promise[firebaseLib.firebaseMod.firebaseNs.authNs.UserCredential] = js.native
   /**
@@ -415,8 +407,7 @@ trait User extends UserInfo {
     *     ID of the credential is not valid.</dd>
     * </dl>
     *
-    * @param {!firebase.auth.AuthCredential} credential
-    * @return {!firebase.Promise<void>}
+    * @param credential
     */
   def reauthenticateWithCredential(credential: firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential): js.Promise[scala.Unit] = js.native
   /**
@@ -442,10 +433,9 @@ trait User extends UserInfo {
     * <dd>Thrown if the SMS quota for the Firebase project has been exceeded.</dd>
     * </dl>
     *
-    * @param {string} phoneNumber The user's phone number in E.164 format (e.g.
+    * @param phoneNumber The user's phone number in E.164 format (e.g.
     *     +16505550101).
-    * @param {!firebase.auth.ApplicationVerifier} applicationVerifier
-    * @return {!firebase.Promise<!firebase.auth.ConfirmationResult>}
+    * @param applicationVerifier
     */
   def reauthenticateWithPhoneNumber(
     phoneNumber: java.lang.String,
@@ -491,7 +481,7 @@ trait User extends UserInfo {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * // Creates the provider object.
     * var provider = new firebase.auth.FacebookAuthProvider();
     * // You can add additional scopes to the provider:
@@ -509,10 +499,9 @@ trait User extends UserInfo {
     * });
     * ```
     *
-    * @param {!firebase.auth.AuthProvider} provider The provider to authenticate.
+    * @param provider The provider to authenticate.
     *     The provider has to be an OAuth provider. Non-OAuth providers like {@link
     *     firebase.auth.EmailAuthProvider} will throw an error.
-    * @return {!firebase.Promise<!firebase.auth.UserCredential>}
     */
   def reauthenticateWithPopup(provider: firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider): js.Promise[firebaseLib.firebaseMod.firebaseNs.authNs.UserCredential] = js.native
   /**
@@ -537,16 +526,14 @@ trait User extends UserInfo {
     *     console.</dd>
     * </dl>
     *
-    * @param {!firebase.auth.AuthProvider} provider The provider to authenticate.
+    * @param provider The provider to authenticate.
     *     The provider has to be an OAuth provider. Non-OAuth providers like {@link
     *     firebase.auth.EmailAuthProvider} will throw an error.
-    * @return {!firebase.Promise<void>}
     */
   def reauthenticateWithRedirect(provider: firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider): js.Promise[scala.Unit] = js.native
   /**
     * Refreshes the current user, if signed in.
     *
-    * @return {!firebase.Promise<void>}
     */
   def reload(): js.Promise[scala.Unit] = js.native
   /**
@@ -572,7 +559,7 @@ trait User extends UserInfo {
     * </dl>
     *
     * @example
-    * ```
+    * ```javascript
     * var actionCodeSettings = {
     *   url: 'https://www.example.com/cart?email=user@example.com&cartId=123',
     *   iOS: {
@@ -594,7 +581,7 @@ trait User extends UserInfo {
     *     });
     * ```
     *
-    * @param {?firebase.auth.ActionCodeSettings=} actionCodeSettings The action
+    * @param actionCodeSettings The action
     *     code settings. If specified, the state/continue URL will be set as the
     *     "continueUrl" parameter in the email verification link. The default email
     *     verification landing page will use this to display a link to go back to
@@ -607,14 +594,13 @@ trait User extends UserInfo {
     *     and accepts the Firebase Dynamic Links terms of condition.
     *     The Android package name and iOS bundle ID will be respected only if they
     *     are configured in the same Firebase Auth project used.
-    * @return {!firebase.Promise<void>}
     */
   def sendEmailVerification(): js.Promise[scala.Unit] = js.native
   def sendEmailVerification(actionCodeSettings: firebaseLib.firebaseMod.firebaseNs.authNs.ActionCodeSettings): js.Promise[scala.Unit] = js.native
   /**
     * Returns a JSON-serializable representation of this object.
     *
-    * @return {!Object} A JSON-serializable representation of this object.
+    * @return A JSON-serializable representation of this object.
     */
   def toJSON(): js.Object = js.native
   /**
@@ -627,8 +613,7 @@ trait User extends UserInfo {
     *     provider ID given does not exist.</dd>
     * </dt>
     *
-    * @param {string} providerId
-    * @return {!firebase.Promise<!firebase.User>}
+    * @param providerId
     */
   def unlink(providerId: java.lang.String): js.Promise[User] = js.native
   /**
@@ -655,8 +640,7 @@ trait User extends UserInfo {
     *     resolve. This does not apply if the user is anonymous.</dd>
     * </dl>
     *
-    * @param {string} newEmail The new email address.
-    * @return {!firebase.Promise<void>}
+    * @param newEmail The new email address.
     */
   def updateEmail(newEmail: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
@@ -677,8 +661,7 @@ trait User extends UserInfo {
     *     resolve. This does not apply if the user is anonymous.</dd>
     * </dl>
     *
-    * @param {string} newPassword
-    * @return {!firebase.Promise<void>}
+    * @param newPassword
     */
   def updatePassword(newPassword: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
@@ -692,15 +675,14 @@ trait User extends UserInfo {
     * <dd>Thrown if the verification ID of the credential is not valid.</dd>
     * </dl>
     *
-    * @param {!firebase.auth.AuthCredential} phoneCredential
-    * @return {!firebase.Promise<void>}
+    * @param phoneCredential
     */
   def updatePhoneNumber(phoneCredential: firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential): js.Promise[scala.Unit] = js.native
   /**
     * Updates a user's profile data.
     *
     * @example
-    * ```
+    * ```javascript
     * // Updates the user attributes:
     * user.updateProfile({
     *   displayName: "Jane Q. User",
@@ -729,9 +711,8 @@ trait User extends UserInfo {
     * });
     * ```
     *
-    * @param {!{displayName: ?string, photoURL: ?string}} profile The profile's
+    * @param profile The profile's
     *     displayName and photoURL to update.
-    * @return {!firebase.Promise<void>}
     */
   def updateProfile(profile: firebaseLib.Anon_DisplayName): js.Promise[scala.Unit] = js.native
 }

@@ -24,6 +24,10 @@ class ResourceShare protected ()
     */
   val allowExternalPrincipals: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
+    * The Amazon Resource Name (ARN) of the resource share.
+    */
+  val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * The name of the resource share.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait LayerVersionState extends js.Object {
   /**
-    * The Amazon Resource Name (ARN) identifying your Lambda Layer.
+    * The Amazon Resource Name (ARN) of the Lambda Layer with version.
     */
   val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
@@ -29,7 +29,7 @@ trait LayerVersionState extends js.Object {
     */
   val filename: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * The Amazon Resource Name (ARN) identifying your specific Lambda Layer version.
+    * The Amazon Resource Name (ARN) of the Lambda Layer without version.
     */
   val layerArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

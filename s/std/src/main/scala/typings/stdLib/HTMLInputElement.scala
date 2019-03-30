@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLInputElement interface provides special properties and methods for manipulating the options, layout, and presentation of <input> elements. */
 @js.native
 trait HTMLInputElement extends HTMLElement {
   /**

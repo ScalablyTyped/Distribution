@@ -19,27 +19,23 @@ class UserLoginProfile protected ()
   def this(name: java.lang.String, args: UserLoginProfileArgs) = this()
   def this(name: java.lang.String, args: UserLoginProfileArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
-    * The encrypted password, base64 encoded.
+    * The encrypted password, base64 encoded. Only available if password was handled on Terraform resource creation, not import.
     */
   val encryptedPassword: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The fingerprint of the PGP key used to encrypt
-    * the password
+    * The fingerprint of the PGP key used to encrypt the password. Only available if password was handled on Terraform resource creation, not import.
     */
   val keyFingerprint: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The length of the generated
-    * password.
+    * The length of the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.
     */
   val passwordLength: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
-    * Whether the
-    * user should be forced to reset the generated password on first login.
+    * Whether the user should be forced to reset the generated password on resource creation. Only applies on resource creation. Drift detection is not possible with this argument.
     */
   val passwordResetRequired: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
-    * Either a base-64 encoded PGP public key, or a
-    * keybase username in the form `keybase:username`.
+    * Either a base-64 encoded PGP public key, or a keybase username in the form `keybase:username`. Only applies on resource creation. Drift detection is not possible with this argument.
     */
   val pgpKey: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

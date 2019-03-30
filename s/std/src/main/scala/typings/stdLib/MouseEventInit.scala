@@ -10,6 +10,8 @@ trait MouseEventInit extends EventModifierInit {
   var buttons: js.UndefOr[scala.Double] = js.undefined
   var clientX: js.UndefOr[scala.Double] = js.undefined
   var clientY: js.UndefOr[scala.Double] = js.undefined
+  var movementX: js.UndefOr[scala.Double] = js.undefined
+  var movementY: js.UndefOr[scala.Double] = js.undefined
   var relatedTarget: js.UndefOr[EventTarget | scala.Null] = js.undefined
   var screenX: js.UndefOr[scala.Double] = js.undefined
   var screenY: js.UndefOr[scala.Double] = js.undefined
@@ -40,6 +42,8 @@ object MouseEventInit {
     modifierSuper: js.UndefOr[scala.Boolean] = js.undefined,
     modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined,
     modifierSymbolLock: js.UndefOr[scala.Boolean] = js.undefined,
+    movementX: scala.Int | scala.Double = null,
+    movementY: scala.Int | scala.Double = null,
     relatedTarget: EventTarget = null,
     screenX: scala.Int | scala.Double = null,
     screenY: scala.Int | scala.Double = null,
@@ -69,6 +73,8 @@ object MouseEventInit {
     if (!js.isUndefined(modifierSuper)) __obj.updateDynamic("modifierSuper")(modifierSuper)
     if (!js.isUndefined(modifierSymbol)) __obj.updateDynamic("modifierSymbol")(modifierSymbol)
     if (!js.isUndefined(modifierSymbolLock)) __obj.updateDynamic("modifierSymbolLock")(modifierSymbolLock)
+    if (movementX != null) __obj.updateDynamic("movementX")(movementX.asInstanceOf[js.Any])
+    if (movementY != null) __obj.updateDynamic("movementY")(movementY.asInstanceOf[js.Any])
     if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget)
     if (screenX != null) __obj.updateDynamic("screenX")(screenX.asInstanceOf[js.Any])
     if (screenY != null) __obj.updateDynamic("screenY")(screenY.asInstanceOf[js.Any])

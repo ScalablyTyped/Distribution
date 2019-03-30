@@ -24,16 +24,6 @@ trait DistributionState extends js.Object {
     */
   val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * **Deprecated**, use `ordered_cache_behavior` instead.
-    */
-  val cacheBehaviors: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[
-      js.Array[
-        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
-      ]
-    ]
-  ] = js.undefined
-  /**
     * Internal value used by CloudFront to allow future
     * updates to the distribution configuration.
     */
@@ -58,7 +48,7 @@ trait DistributionState extends js.Object {
     * one).
     */
   val defaultCacheBehavior: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
   ] = js.undefined
   /**
     * The object that you want CloudFront to
@@ -116,12 +106,12 @@ trait DistributionState extends js.Object {
   /**
     * An ordered list of cache behaviors
     * resource for this distribution. List from top to bottom
-    * +    in order of precedence. The topmost cache behavior will have precedence 0.
+    * in order of precedence. The topmost cache behavior will have precedence 0.
     */
   val orderedCacheBehaviors: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]
       ]
     ]
   ] = js.undefined
@@ -186,11 +176,6 @@ object DistributionState {
     activeTrustedSigners: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     aliases: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    cacheBehaviors: atPulumiPulumiLib.outputMod.Input[
-      js.Array[
-        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
-      ]
-    ] = null,
     callerReference: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     comment: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     customErrorResponses: atPulumiPulumiLib.outputMod.Input[
@@ -198,7 +183,7 @@ object DistributionState {
         atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ErrorCachingMinTtlErrorCode]
       ]
     ] = null,
-    defaultCacheBehavior: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl] = null,
+    defaultCacheBehavior: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress] = null,
     defaultRootObject: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
@@ -211,7 +196,7 @@ object DistributionState {
     loggingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketIncludeCookiesPrefix] = null,
     orderedCacheBehaviors: atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]
       ]
     ] = null,
     origins: atPulumiPulumiLib.outputMod.Input[
@@ -231,7 +216,6 @@ object DistributionState {
     if (activeTrustedSigners != null) __obj.updateDynamic("activeTrustedSigners")(activeTrustedSigners.asInstanceOf[js.Any])
     if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
-    if (cacheBehaviors != null) __obj.updateDynamic("cacheBehaviors")(cacheBehaviors.asInstanceOf[js.Any])
     if (callerReference != null) __obj.updateDynamic("callerReference")(callerReference.asInstanceOf[js.Any])
     if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
     if (customErrorResponses != null) __obj.updateDynamic("customErrorResponses")(customErrorResponses.asInstanceOf[js.Any])

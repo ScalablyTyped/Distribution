@@ -18,7 +18,7 @@ trait Exception extends js.Object {
   /**
     * A message that describes the exception.
     */
-  var message: js.UndefOr[Message] = js.undefined
+  var message: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Key/value pairs that provide additional information about the exception.
     */
@@ -34,7 +34,7 @@ object Exception {
   def apply(
     innerExceptions: js.Array[Exception] = null,
     kind: java.lang.String = null,
-    message: Message = null,
+    message: java.lang.String = null,
     properties: PropertyBag = null,
     stack: Stack = null
   ): Exception = {

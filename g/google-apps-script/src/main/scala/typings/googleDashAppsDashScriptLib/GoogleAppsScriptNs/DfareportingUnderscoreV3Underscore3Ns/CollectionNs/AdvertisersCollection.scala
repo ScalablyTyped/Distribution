@@ -1,0 +1,33 @@
+package typings
+package googleDashAppsDashScriptLib.GoogleAppsScriptNs.DfareportingUnderscoreV3Underscore3Ns.CollectionNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait AdvertisersCollection extends js.Object {
+  // Gets one advertiser by ID.
+  def get(profileId: java.lang.String, id: java.lang.String): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DfareportingUnderscoreV3Underscore3Ns.SchemaNs.Advertiser = js.native
+  // Inserts a new advertiser.
+  def insert(
+    resource: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DfareportingUnderscoreV3Underscore3Ns.SchemaNs.Advertiser,
+    profileId: java.lang.String
+  ): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DfareportingUnderscoreV3Underscore3Ns.SchemaNs.Advertiser = js.native
+  // Retrieves a list of advertisers, possibly filtered. This method supports paging.
+  def list(profileId: java.lang.String): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DfareportingUnderscoreV3Underscore3Ns.SchemaNs.AdvertisersListResponse = js.native
+  // Retrieves a list of advertisers, possibly filtered. This method supports paging.
+  def list(profileId: java.lang.String, optionalArgs: js.Object): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DfareportingUnderscoreV3Underscore3Ns.SchemaNs.AdvertisersListResponse = js.native
+  // Updates an existing advertiser. This method supports patch semantics.
+  def patch(
+    resource: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DfareportingUnderscoreV3Underscore3Ns.SchemaNs.Advertiser,
+    profileId: java.lang.String,
+    id: java.lang.String
+  ): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DfareportingUnderscoreV3Underscore3Ns.SchemaNs.Advertiser = js.native
+  // Updates an existing advertiser.
+  def update(
+    resource: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DfareportingUnderscoreV3Underscore3Ns.SchemaNs.Advertiser,
+    profileId: java.lang.String
+  ): googleDashAppsDashScriptLib.GoogleAppsScriptNs.DfareportingUnderscoreV3Underscore3Ns.SchemaNs.Advertiser = js.native
+}
+

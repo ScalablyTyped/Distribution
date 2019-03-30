@@ -150,6 +150,10 @@ class Worker ()
   def prependOnceListener_online(event: nodeLib.nodeLibStrings.online, listener: js.Function0[scala.Unit]): this.type = js.native
   def send(message: js.Any): scala.Boolean = js.native
   def send(message: js.Any, sendHandle: js.Any): scala.Boolean = js.native
-  def send(message: js.Any, sendHandle: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Boolean = js.native
+  def send(
+    message: js.Any,
+    sendHandle: js.Any,
+    callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]
+  ): scala.Boolean = js.native
 }
 

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGLinearGradientElement interface corresponds to the <linearGradient> element. */
 @js.native
 trait SVGLinearGradientElement extends SVGGradientElement {
   val x1: SVGAnimatedLength = js.native

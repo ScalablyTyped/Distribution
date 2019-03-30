@@ -21,7 +21,7 @@ object reactDashTransitionDashGroupLibComponents {
   @scala.inline
   def CSSTransitionProps: reactDashTransitionDashGroupLib.cSSTransitionMod.CSSTransitionNs.CSSTransitionProps.type = reactDashTransitionDashGroupLib.cSSTransitionMod.CSSTransitionNs.CSSTransitionProps
   type CSSTransitionProps = reactDashTransitionDashGroupLib.cSSTransitionMod.CSSTransitionNs.CSSTransitionProps
-  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any */, V /* <: reactLib.reactMod.ReactNs.ReactType[_] */] = reactDashTransitionDashGroupLib.transitionGroupMod.TransitionGroupNs.TransitionGroupProps[T, V]
+  type TransitionGroupProps[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any */, V /* <: reactLib.reactMod.ReactNs.ReactType[_] */] = reactDashTransitionDashGroupLib.transitionGroupMod.TransitionGroupNs.TransitionGroupProps[T, V]
   @scala.inline
   def TransitionProps: reactDashTransitionDashGroupLib.transitionMod.TransitionProps.type = reactDashTransitionDashGroupLib.transitionMod.TransitionProps
   type TransitionProps = reactDashTransitionDashGroupLib.transitionMod.TransitionProps

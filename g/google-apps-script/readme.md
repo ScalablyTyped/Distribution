@@ -5,16 +5,154 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 // Base Types
-// Type definitions for Google Apps Script 2019-03-22
+// Type definitions for Google Apps Script 2019-03-25
 // Project: https://developers.google.com/apps-script/
-// Definitions by: mtgto <https://github.com/mtgto/>
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2019-03-22
+// Type definitions for Google Apps Script 2019-03-25
 // Project: https://developers.google.com/apps-script/
-// Definitions by: mtgto <https://github.com/mtgto/>
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-10-02
+// Type definitions for Google Apps Script 2019-03-25
 // Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-03-25
+// Project: https://developers.google.com/apps-script/
+// Generator: https://github.com/grant/google-apps-script-dts
 // Definitions by: grant <https://github.com/grant/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // Type definitions for Google Apps Script 2019-02-27

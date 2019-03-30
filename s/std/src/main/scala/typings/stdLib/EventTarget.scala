@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** EventTarget is an interface implemented by objects that can receive events and may have listeners for them. */
 @js.native
 trait EventTarget extends js.Object {
   def addEventListener(`type`: java.lang.String): scala.Unit = js.native

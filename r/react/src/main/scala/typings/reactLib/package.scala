@@ -114,6 +114,7 @@ package object reactLib {
   type SVGFEDiffuseLightingElement = SVGElement
   type SVGFEDisplacementMapElement = SVGElement
   type SVGFEDistantLightElement = SVGElement
+  type SVGFEDropShadowElement = SVGElement
   type SVGFEFloodElement = SVGElement
   type SVGFEFuncAElement = SVGElement
   type SVGFEFuncBElement = SVGElement

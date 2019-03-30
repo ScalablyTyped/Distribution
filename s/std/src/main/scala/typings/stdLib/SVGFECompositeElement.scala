@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFECompositeElement interface corresponds to the <feComposite> element. */
 @js.native
 trait SVGFECompositeElement
   extends SVGElement

@@ -110,6 +110,24 @@ trait QueryInterface extends js.Object {
     options: QueryOptions,
     attributes: js.Array[java.lang.String]
   ): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
+  def bulkInsert(tableName: sequelizeLib.Anon_SchemaTableNameString, records: js.Array[js.Object]): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
+  def bulkInsert(
+    tableName: sequelizeLib.Anon_SchemaTableNameString,
+    records: js.Array[js.Object],
+    options: QueryOptions
+  ): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
+  def bulkInsert(
+    tableName: sequelizeLib.Anon_SchemaTableNameString,
+    records: js.Array[js.Object],
+    options: QueryOptions,
+    attributes: java.lang.String
+  ): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
+  def bulkInsert(
+    tableName: sequelizeLib.Anon_SchemaTableNameString,
+    records: js.Array[js.Object],
+    options: QueryOptions,
+    attributes: js.Array[java.lang.String]
+  ): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
   /**
     * Updates multiple rows at once
     */

@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait TSConstructSignatureDeclarationBuilder extends js.Object {
   def apply(
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ]
   ): astDashTypesLib.genNodesMod.TSConstructSignatureDeclaration = js.native
   def apply(
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ],
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
   ): astDashTypesLib.genNodesMod.TSConstructSignatureDeclaration = js.native

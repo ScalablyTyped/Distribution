@@ -15,6 +15,8 @@ object reactDashNativeLibComponents {
   @scala.inline
   def Button: reactLib.reactMod.ReactNs.ComponentType[reactDashNativeLib.reactDashNativeMod.ButtonProps] = js.constructorOf[reactDashNativeLib.reactDashNativeMod.Button].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashNativeLib.reactDashNativeMod.ButtonProps]]
   @scala.inline
+  def CheckBox: reactLib.reactMod.ReactNs.ComponentType[reactDashNativeLib.reactDashNativeMod.CheckBoxProps] = js.constructorOf[reactDashNativeLib.reactDashNativeMod.CheckBox].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashNativeLib.reactDashNativeMod.CheckBoxProps]]
+  @scala.inline
   def ClippingRectangle: reactLib.reactMod.ReactNs.ComponentType[reactDashNativeLib.reactDashNativeMod.ARTClippingRectangleProps] = js.constructorOf[reactDashNativeLib.reactDashNativeMod.ClippingRectangle].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashNativeLib.reactDashNativeMod.ARTClippingRectangleProps]]
   @scala.inline
   def DatePickerIOS: reactLib.reactMod.ReactNs.ComponentType[reactDashNativeLib.reactDashNativeMod.DatePickerIOSProps] = js.constructorOf[reactDashNativeLib.reactDashNativeMod.DatePickerIOS].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashNativeLib.reactDashNativeMod.DatePickerIOSProps]]
@@ -130,6 +132,9 @@ object reactDashNativeLibComponents {
   @scala.inline
   def ButtonProps: reactDashNativeLib.reactDashNativeMod.ButtonProps.type = reactDashNativeLib.reactDashNativeMod.ButtonProps
   type ButtonProps = reactDashNativeLib.reactDashNativeMod.ButtonProps
+  @scala.inline
+  def CheckBoxProps: reactDashNativeLib.reactDashNativeMod.CheckBoxProps.type = reactDashNativeLib.reactDashNativeMod.CheckBoxProps
+  type CheckBoxProps = reactDashNativeLib.reactDashNativeMod.CheckBoxProps
   @scala.inline
   def DatePickerIOSProps: reactDashNativeLib.reactDashNativeMod.DatePickerIOSProps.type = reactDashNativeLib.reactDashNativeMod.DatePickerIOSProps
   type DatePickerIOSProps = reactDashNativeLib.reactDashNativeMod.DatePickerIOSProps

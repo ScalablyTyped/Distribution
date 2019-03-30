@@ -26249,6 +26249,14 @@ object EC2Ns extends js.Object {
     - awsDashSdkLib.awsDashSdkLibStrings.r5dDOT12xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5dDOT24xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.r5dDOTmetal
+    - awsDashSdkLib.awsDashSdkLibStrings.r5adDOTlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5adDOTxlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5adDOT2xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5adDOT4xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5adDOT8xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5adDOT12xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5adDOT16xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.r5adDOT24xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.x1DOT16xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.x1DOT32xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.x1eDOTxlarge
@@ -26343,6 +26351,14 @@ object EC2Ns extends js.Object {
     - awsDashSdkLib.awsDashSdkLibStrings.m5dDOT12xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5dDOT24xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.m5dDOTmetal
+    - awsDashSdkLib.awsDashSdkLibStrings.m5adDOTlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5adDOTxlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5adDOT2xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5adDOT4xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5adDOT8xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5adDOT12xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5adDOT16xlarge
+    - awsDashSdkLib.awsDashSdkLibStrings.m5adDOT24xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.h1DOT2xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.h1DOT4xlarge
     - awsDashSdkLib.awsDashSdkLibStrings.h1DOT8xlarge

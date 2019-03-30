@@ -17,6 +17,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var b: HTMLElement
   var base: HTMLBaseElement
   var basefont: HTMLBaseFontElement
+  var bdi: HTMLElement
   var bdo: HTMLElement
   var blockquote: HTMLQuoteElement
   var body: HTMLBodyElement
@@ -70,6 +71,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var legend: HTMLLegendElement
   var li: HTMLLIElement
   var link: HTMLLinkElement
+  var main: HTMLElement
   var map: HTMLMapElement
   var mark: HTMLElement
   var marquee: HTMLMarqueeElement
@@ -89,6 +91,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var pre: HTMLPreElement
   var progress: HTMLProgressElement
   var q: HTMLQuoteElement
+  var rp: HTMLElement
   var rt: HTMLElement
   var ruby: HTMLElement
   var s: HTMLElement
@@ -103,6 +106,7 @@ trait HTMLElementTagNameMap extends js.Object {
   var strong: HTMLElement
   var style: HTMLStyleElement
   var sub: HTMLElement
+  var summary: HTMLElement
   var sup: HTMLElement
   var table: HTMLTableElement
   var tbody: HTMLTableSectionElement
@@ -137,6 +141,7 @@ object HTMLElementTagNameMap {
     b: HTMLElement,
     base: HTMLBaseElement,
     basefont: HTMLBaseFontElement,
+    bdi: HTMLElement,
     bdo: HTMLElement,
     blockquote: HTMLQuoteElement,
     body: HTMLBodyElement,
@@ -190,6 +195,7 @@ object HTMLElementTagNameMap {
     legend: HTMLLegendElement,
     li: HTMLLIElement,
     link: HTMLLinkElement,
+    main: HTMLElement,
     map: HTMLMapElement,
     mark: HTMLElement,
     marquee: HTMLMarqueeElement,
@@ -209,6 +215,7 @@ object HTMLElementTagNameMap {
     pre: HTMLPreElement,
     progress: HTMLProgressElement,
     q: HTMLQuoteElement,
+    rp: HTMLElement,
     rt: HTMLElement,
     ruby: HTMLElement,
     s: HTMLElement,
@@ -223,6 +230,7 @@ object HTMLElementTagNameMap {
     strong: HTMLElement,
     style: HTMLStyleElement,
     sub: HTMLElement,
+    summary: HTMLElement,
     sup: HTMLElement,
     table: HTMLTableElement,
     tbody: HTMLTableSectionElement,
@@ -242,7 +250,7 @@ object HTMLElementTagNameMap {
     video: HTMLVideoElement,
     wbr: HTMLElement
   ): HTMLElementTagNameMap = {
-    val __obj = js.Dynamic.literal(a = a, abbr = abbr, address = address, applet = applet, area = area, article = article, aside = aside, audio = audio, b = b, base = base, basefont = basefont, bdo = bdo, blockquote = blockquote, body = body, br = br, button = button, canvas = canvas, caption = caption, cite = cite, code = code, col = col, colgroup = colgroup, data = data, datalist = datalist, dd = dd, del = del, details = details, dfn = dfn, dialog = dialog, dir = dir, div = div, dl = dl, dt = dt, em = em, embed = embed, fieldset = fieldset, figcaption = figcaption, figure = figure, font = font, footer = footer, form = form, frame = frame, frameset = frameset, h1 = h1, h2 = h2, h3 = h3, h4 = h4, h5 = h5, h6 = h6, head = head, header = header, hgroup = hgroup, hr = hr, html = html, i = i, iframe = iframe, img = img, input = input, ins = ins, kbd = kbd, label = label, legend = legend, li = li, link = link, map = map, mark = mark, marquee = marquee, menu = menu, meta = meta, meter = meter, nav = nav, noscript = noscript, ol = ol, optgroup = optgroup, option = option, output = output, p = p, param = param, picture = picture, pre = pre, progress = progress, q = q, rt = rt, ruby = ruby, s = s, samp = samp, script = script, section = section, select = select, slot = slot, small = small, source = source, span = span, strong = strong, style = style, sub = sub, sup = sup, table = table, tbody = tbody, td = td, template = template, textarea = textarea, tfoot = tfoot, th = th, thead = thead, time = time, title = title, tr = tr, track = track, u = u, ul = ul, video = video, wbr = wbr)
+    val __obj = js.Dynamic.literal(a = a, abbr = abbr, address = address, applet = applet, area = area, article = article, aside = aside, audio = audio, b = b, base = base, basefont = basefont, bdi = bdi, bdo = bdo, blockquote = blockquote, body = body, br = br, button = button, canvas = canvas, caption = caption, cite = cite, code = code, col = col, colgroup = colgroup, data = data, datalist = datalist, dd = dd, del = del, details = details, dfn = dfn, dialog = dialog, dir = dir, div = div, dl = dl, dt = dt, em = em, embed = embed, fieldset = fieldset, figcaption = figcaption, figure = figure, font = font, footer = footer, form = form, frame = frame, frameset = frameset, h1 = h1, h2 = h2, h3 = h3, h4 = h4, h5 = h5, h6 = h6, head = head, header = header, hgroup = hgroup, hr = hr, html = html, i = i, iframe = iframe, img = img, input = input, ins = ins, kbd = kbd, label = label, legend = legend, li = li, link = link, main = main, map = map, mark = mark, marquee = marquee, menu = menu, meta = meta, meter = meter, nav = nav, noscript = noscript, ol = ol, optgroup = optgroup, option = option, output = output, p = p, param = param, picture = picture, pre = pre, progress = progress, q = q, rp = rp, rt = rt, ruby = ruby, s = s, samp = samp, script = script, section = section, select = select, slot = slot, small = small, source = source, span = span, strong = strong, style = style, sub = sub, summary = summary, sup = sup, table = table, tbody = tbody, td = td, template = template, textarea = textarea, tfoot = tfoot, th = th, thead = thead, time = time, title = title, tr = tr, track = track, u = u, ul = ul, video = video, wbr = wbr)
     __obj.updateDynamic("object")(`object`)
     __obj.updateDynamic("var")(`var`)
     __obj.asInstanceOf[HTMLElementTagNameMap]

@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IntrinsicTransitionGroupProps[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any */]
+trait IntrinsicTransitionGroupProps[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any */]
   extends reactDashTransitionDashGroupLib.transitionMod.TransitionActions {
   var component: js.UndefOr[T | scala.Null] = js.undefined
 }
 
 object IntrinsicTransitionGroupProps {
   @scala.inline
-  def apply[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any */](
+  def apply[T /* <: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any */](
     appear: js.UndefOr[scala.Boolean] = js.undefined,
     component: T = null,
     enter: js.UndefOr[scala.Boolean] = js.undefined,

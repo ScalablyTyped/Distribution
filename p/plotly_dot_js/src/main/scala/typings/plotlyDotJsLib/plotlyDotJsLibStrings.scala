@@ -114,6 +114,9 @@ object plotlyDotJsLibStrings {
   sealed trait basefont extends js.Object
   
   @js.native
+  sealed trait bdi extends js.Object
+  
+  @js.native
   sealed trait bdo extends js.Object
   
   @js.native
@@ -694,6 +697,9 @@ object plotlyDotJsLibStrings {
     extends plotlyDotJsLib.plotlyDotJsMod.Dash
   
   @js.native
+  sealed trait main extends js.Object
+  
+  @js.native
   sealed trait manual extends js.Object
   
   @js.native
@@ -1051,6 +1057,9 @@ object plotlyDotJsLibStrings {
   sealed trait rms extends js.Object
   
   @js.native
+  sealed trait rp extends js.Object
+  
+  @js.native
   sealed trait rt extends js.Object
   
   @js.native
@@ -1169,6 +1178,9 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait sum extends js.Object
+  
+  @js.native
+  sealed trait summary extends js.Object
   
   @js.native
   sealed trait sup extends js.Object
@@ -1596,6 +1608,8 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def basefont: basefont = "basefont".asInstanceOf[basefont]
   @scala.inline
+  def bdi: bdi = "bdi".asInstanceOf[bdi]
+  @scala.inline
   def bdo: bdo = "bdo".asInstanceOf[bdo]
   @scala.inline
   def below: below = "below".asInstanceOf[below]
@@ -1966,6 +1980,8 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def longdashdot: longdashdot = "longdashdot".asInstanceOf[longdashdot]
   @scala.inline
+  def main: main = "main".asInstanceOf[main]
+  @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
   def map: map = "map".asInstanceOf[map]
@@ -2196,6 +2212,8 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def rms: rms = "rms".asInstanceOf[rms]
   @scala.inline
+  def rp: rp = "rp".asInstanceOf[rp]
+  @scala.inline
   def rt: rt = "rt".asInstanceOf[rt]
   @scala.inline
   def ruby: ruby = "ruby".asInstanceOf[ruby]
@@ -2273,6 +2291,8 @@ object plotlyDotJsLibStrings {
   def sub: sub = "sub".asInstanceOf[sub]
   @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
+  @scala.inline
+  def summary: summary = "summary".asInstanceOf[summary]
   @scala.inline
   def sup: sup = "sup".asInstanceOf[sup]
   @scala.inline

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("activestorage", "DirectUpload")
 @js.native
 class DirectUpload protected () extends js.Object {
+  def this(file: stdLib.File, url: java.lang.String) = this()
   def this(file: stdLib.File, url: java.lang.String, delegate: DirectUploadDelegate) = this()
   var file: stdLib.File = js.native
   var id: scala.Double = js.native

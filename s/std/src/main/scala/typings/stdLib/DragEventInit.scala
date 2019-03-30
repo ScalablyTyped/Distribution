@@ -35,6 +35,8 @@ object DragEventInit {
     modifierSuper: js.UndefOr[scala.Boolean] = js.undefined,
     modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined,
     modifierSymbolLock: js.UndefOr[scala.Boolean] = js.undefined,
+    movementX: scala.Int | scala.Double = null,
+    movementY: scala.Int | scala.Double = null,
     relatedTarget: EventTarget = null,
     screenX: scala.Int | scala.Double = null,
     screenY: scala.Int | scala.Double = null,
@@ -65,6 +67,8 @@ object DragEventInit {
     if (!js.isUndefined(modifierSuper)) __obj.updateDynamic("modifierSuper")(modifierSuper)
     if (!js.isUndefined(modifierSymbol)) __obj.updateDynamic("modifierSymbol")(modifierSymbol)
     if (!js.isUndefined(modifierSymbolLock)) __obj.updateDynamic("modifierSymbolLock")(modifierSymbolLock)
+    if (movementX != null) __obj.updateDynamic("movementX")(movementX.asInstanceOf[js.Any])
+    if (movementY != null) __obj.updateDynamic("movementY")(movementY.asInstanceOf[js.Any])
     if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget)
     if (screenX != null) __obj.updateDynamic("screenX")(screenX.asInstanceOf[js.Any])
     if (screenY != null) __obj.updateDynamic("screenY")(screenY.asInstanceOf[js.Any])

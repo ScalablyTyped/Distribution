@@ -11,26 +11,7 @@ trait NavigationScreenProp[S, P] extends js.Object {
   var dispatch_Original: NavigationDispatch = js.native
   var router: js.UndefOr[NavigationRouter[NavigationState, js.Object]] = js.native
   var state: S with reactDashNavigationLib.Anon_ParamsP[P] = js.native
-  @JSName("addListener")
-  def addListener_didBlur(
-    eventName: reactDashNavigationLib.reactDashNavigationLibStrings.didBlur,
-    callback: NavigationEventCallback
-  ): NavigationEventSubscription = js.native
-  @JSName("addListener")
-  def addListener_didFocus(
-    eventName: reactDashNavigationLib.reactDashNavigationLibStrings.didFocus,
-    callback: NavigationEventCallback
-  ): NavigationEventSubscription = js.native
-  @JSName("addListener")
-  def addListener_willBlur(
-    eventName: reactDashNavigationLib.reactDashNavigationLibStrings.willBlur,
-    callback: NavigationEventCallback
-  ): NavigationEventSubscription = js.native
-  @JSName("addListener")
-  def addListener_willFocus(
-    eventName: reactDashNavigationLib.reactDashNavigationLibStrings.willFocus,
-    callback: NavigationEventCallback
-  ): NavigationEventSubscription = js.native
+  def addListener(eventName: EventType, callback: NavigationEventCallback): NavigationEventSubscription = js.native
   def closeDrawer(): js.Any = js.native
   def dangerouslyGetParent(): js.UndefOr[NavigationScreenProp[S, NavigationParams]] = js.native
   def dismiss(): scala.Boolean = js.native

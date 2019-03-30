@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("TrustedScript")
 @js.native
 class TrustedScript () extends js.Object {
-  val _TrustedScriptBrand: trustedDashTypesLib.trustedDashTypesLibNumbers.`true` = js.native
+  val _brand: trustedDashTypesLib.trustedDashTypesLibNumbers.`true` = js.native
 }
 

@@ -37,9 +37,17 @@ class Eip protected ()
     */
   val networkInterface: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * The Private DNS associated with the Elastic IP address (if in VPC).
+    */
+  val privateDns: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * Contains the private IP address (if in VPC).
     */
   val privateIp: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
+    * Public DNS associated with the Elastic IP address.
+    */
+  val publicDns: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Contains the public IP address.
     */

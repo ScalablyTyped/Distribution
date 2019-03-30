@@ -23,10 +23,8 @@ object ^ extends js.Object {
   var USEast2Region: atPulumiAwsLib.regionMod.Region = js.native
   var USWest1Region: atPulumiAwsLib.regionMod.Region = js.native
   var USWest2Region: atPulumiAwsLib.regionMod.Region = js.native
-  def getAmi(): js.Promise[atPulumiAwsLib.getAmiMod.GetAmiResult] = js.native
   def getAmi(args: atPulumiAwsLib.getAmiMod.GetAmiArgs): js.Promise[atPulumiAwsLib.getAmiMod.GetAmiResult] = js.native
   def getAmi(args: atPulumiAwsLib.getAmiMod.GetAmiArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.getAmiMod.GetAmiResult] = js.native
-  def getAmiIds(): js.Promise[atPulumiAwsLib.getAmiIdsMod.GetAmiIdsResult] = js.native
   def getAmiIds(args: atPulumiAwsLib.getAmiIdsMod.GetAmiIdsArgs): js.Promise[atPulumiAwsLib.getAmiIdsMod.GetAmiIdsResult] = js.native
   def getAmiIds(args: atPulumiAwsLib.getAmiIdsMod.GetAmiIdsArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.getAmiIdsMod.GetAmiIdsResult] = js.native
   def getArn(args: atPulumiAwsLib.getArnMod.GetArnArgs): js.Promise[atPulumiAwsLib.getArnMod.GetArnResult] = js.native

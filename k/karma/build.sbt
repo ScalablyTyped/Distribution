@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "karma"
-version := "3.0-dt-20190212Z-7d3e1e"
+version := "3.0-dt-20190212Z-5ff8c2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-d754c7",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-e59bbf",
-  "org.scalablytyped" %%% "flatted" % "2.0.0-1e1bed",
-  "org.scalablytyped" %%% "log4js" % "4.1.0-770fa1",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190325Z-000e7b",
-  "org.scalablytyped" %%% "std" % "3.3-14e863")
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-986805",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
+  "org.scalablytyped" %%% "flatted" % "2.0.0-5cf2f6",
+  "org.scalablytyped" %%% "log4js" % "4.1.0-7f01c4",
+  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

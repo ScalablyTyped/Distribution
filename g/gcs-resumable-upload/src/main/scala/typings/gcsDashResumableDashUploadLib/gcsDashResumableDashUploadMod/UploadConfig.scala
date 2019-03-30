@@ -17,6 +17,11 @@ trait UploadConfig extends js.Object {
     */
   var bucket: java.lang.String
   /**
+    * Where the gcs-resumable-upload configuration file should be stored on your
+    * system. This maps to the configstore option by the same name.
+    */
+  var configPath: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The name of the destination file.
     */
   var file: java.lang.String
@@ -86,6 +91,7 @@ object UploadConfig {
     file: java.lang.String,
     authClient: googleDashAuthDashLibraryLib.googleDashAuthDashLibraryMod.GoogleAuth = null,
     authConfig: googleDashAuthDashLibraryLib.buildSrcAuthGoogleauthMod.GoogleAuthOptions = null,
+    configPath: java.lang.String = null,
     generation: scala.Int | scala.Double = null,
     key: java.lang.String | nodeLib.Buffer = null,
     kmsKeyName: java.lang.String = null,
@@ -101,6 +107,7 @@ object UploadConfig {
     val __obj = js.Dynamic.literal(bucket = bucket, file = file)
     if (authClient != null) __obj.updateDynamic("authClient")(authClient)
     if (authConfig != null) __obj.updateDynamic("authConfig")(authConfig)
+    if (configPath != null) __obj.updateDynamic("configPath")(configPath)
     if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName)

@@ -51,6 +51,10 @@ class Endpoint protected ()
     */
   val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  /**
     * The transport protocol to be used by the VPN session. Default value is `udp`.
     */
   val transportProtocol: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native

@@ -22,5 +22,6 @@ object KeyBindingUtil extends js.Object {
     */
   def isCtrlKeyCommand(e: draftDashJsLib.SyntheticKeyboardEvent): scala.Boolean = js.native
   def isOptionKeyCommand(e: draftDashJsLib.SyntheticKeyboardEvent): scala.Boolean = js.native
+  def isSoftNewlineEvent(e: draftDashJsLib.SyntheticKeyboardEvent): scala.Boolean = js.native
 }
 

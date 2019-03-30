@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mz/crypto", "ECDH")
 @js.native
-class ECDH ()
+class ECDH protected ()
   extends nodeLib.cryptoMod.ECDH
 
 /* static members */

@@ -254,6 +254,10 @@ object ComprehendNs extends js.Object {
       * The language of the input documents. You can specify English ("en") or Spanish ("es"). All documents must be in the same language.
       */
     var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait CreateDocumentClassifierResponse extends js.Object {
@@ -284,6 +288,10 @@ object ComprehendNs extends js.Object {
       * The name given to the newly created recognizer. Recognizer names can be a maximum of 256 characters. Alphanumeric characters, hyphens (-) and underscores (_) are allowed. The name must be unique in the account/region.
       */
     var RecognizerName: ComprehendArnName
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait CreateEntityRecognizerResponse extends js.Object {
@@ -573,6 +581,10 @@ object ComprehendNs extends js.Object {
       * The time that the document classification job was submitted for processing.
       */
     var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait DocumentClassifierFilter extends js.Object {
@@ -642,6 +654,10 @@ object ComprehendNs extends js.Object {
       * Indicates the time when the training starts on documentation classifiers. You are billed for the time interval between this time and the value of TrainingEndTime. 
       */
     var TrainingStartTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait DominantLanguage extends js.Object {
@@ -711,6 +727,10 @@ object ComprehendNs extends js.Object {
       * The time that the dominant language detection job was submitted for processing.
       */
     var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait EntitiesDetectionJobFilter extends js.Object {
@@ -777,6 +797,10 @@ object ComprehendNs extends js.Object {
       * The time that the entities detection job was submitted for processing.
       */
     var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait Entity extends js.Object {
@@ -943,6 +967,10 @@ object ComprehendNs extends js.Object {
       * The time that training of the entity recognizer started.
       */
     var TrainingStartTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait EntityTypesListItem extends js.Object {
@@ -1042,6 +1070,10 @@ object ComprehendNs extends js.Object {
       * The time that the key phrases detection job was submitted for processing.
       */
     var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait ListDocumentClassificationJobsRequest extends js.Object {
@@ -1254,6 +1286,10 @@ object ComprehendNs extends js.Object {
   
   trait OutputDataConfig extends js.Object {
     /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt the output results from an analysis job. The KmsKeyId can be one of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"    KMS Key Alias: "alias/ExampleAlias"    ARN of a KMS Key Alias: "arn:aws:kms:us-west-2:111122223333:alias/ExampleAlias"   
+      */
+    var KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
+    /**
       * When you use the OutputDataConfig object with asynchronous operations, you specify the Amazon S3 location where you want to write the output data. The URI must be in the same region as the API endpoint that you are calling. The location is used as the prefix for the actual location of the output file. When the topic detection job is finished, the service creates an output file in a directory specific to the job. The S3Uri field contains the location of the output file, called output.tar.gz. It is a compressed archive that contains the ouput of the operation.
       */
     var S3Uri: awsDashSdkLib.clientsComprehendMod.ComprehendNs.S3Uri
@@ -1330,6 +1366,10 @@ object ComprehendNs extends js.Object {
       * The time that the sentiment detection job was submitted for processing.
       */
     var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait SentimentScore extends js.Object {
@@ -1376,6 +1416,10 @@ object ComprehendNs extends js.Object {
       * Specifies where to send the output files.
       */
     var OutputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.OutputDataConfig
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait StartDocumentClassificationJobResponse extends js.Object {
@@ -1410,6 +1454,10 @@ object ComprehendNs extends js.Object {
       * Specifies where to send the output files.
       */
     var OutputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.OutputDataConfig
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait StartDominantLanguageDetectionJobResponse extends js.Object {
@@ -1452,6 +1500,10 @@ object ComprehendNs extends js.Object {
       * Specifies where to send the output files.
       */
     var OutputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.OutputDataConfig
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait StartEntitiesDetectionJobResponse extends js.Object {
@@ -1490,6 +1542,10 @@ object ComprehendNs extends js.Object {
       * Specifies where to send the output files.
       */
     var OutputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.OutputDataConfig
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait StartKeyPhrasesDetectionJobResponse extends js.Object {
@@ -1528,6 +1584,10 @@ object ComprehendNs extends js.Object {
       * Specifies where to send the output files. 
       */
     var OutputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.OutputDataConfig
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait StartSentimentDetectionJobResponse extends js.Object {
@@ -1566,6 +1626,10 @@ object ComprehendNs extends js.Object {
       * Specifies where to send the output files. The output is a compressed archive with two files, topic-terms.csv that lists the terms associated with each topic, and doc-topics.csv that lists the documents associated with each topic
       */
     var OutputDataConfig: awsDashSdkLib.clientsComprehendMod.ComprehendNs.OutputDataConfig
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   trait StartTopicsDetectionJobResponse extends js.Object {
@@ -1713,6 +1777,10 @@ object ComprehendNs extends js.Object {
   
   trait TopicsDetectionJobProperties extends js.Object {
     /**
+      *  The Amazon Resource Name (ARN) of the AWS Identity and Management (IAM) role that grants Amazon Comprehend read access to your input data.
+      */
+    var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.undefined
+    /**
       * The time that the topic detection job was completed.
       */
     var EndTime: js.UndefOr[Timestamp] = js.undefined
@@ -1748,6 +1816,10 @@ object ComprehendNs extends js.Object {
       * The time that the topic detection job was submitted for processing.
       */
     var SubmitTime: js.UndefOr[Timestamp] = js.undefined
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+      */
+    var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   }
   
   @js.native
@@ -2793,6 +2865,7 @@ object ComprehendNs extends js.Object {
   */
   type JobStatus = _JobStatus | java.lang.String
   type KeyPhrasesDetectionJobPropertiesList = js.Array[KeyPhrasesDetectionJobProperties]
+  type KmsKeyId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.en
     - awsDashSdkLib.awsDashSdkLibStrings.es

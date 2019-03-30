@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The WEBGL_compressed_texture_s3tc extension is part of the WebGL API and exposes four S3TC compressed texture formats. */
 trait WEBGL_compressed_texture_s3tc extends js.Object {
   val COMPRESSED_RGBA_S3TC_DXT1_EXT: GLenum
   val COMPRESSED_RGBA_S3TC_DXT3_EXT: GLenum

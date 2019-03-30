@@ -1,32 +1,32 @@
 organization := "org.scalablytyped"
 name := "builder-util"
-version := "9.7.0-dd14e1"
+version := "9.7.0-9ef559"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "7zip-bin" % "4.1.0-0f078b",
-  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20190322Z-749fa6",
-  "org.scalablytyped" %%% "app-builder-bin" % "2.6.4-22a489",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-d754c7",
-  "org.scalablytyped" %%% "bluebird-lst" % "1.0.7-89d29c",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.0-de10ea",
-  "org.scalablytyped" %%% "chalk" % "2.4.2-3344ae",
-  "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-7e7317",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-e59bbf",
-  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-0fc5fc",
-  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-6662de",
-  "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-cff3d2",
-  "org.scalablytyped" %%% "is-ci" % "1.1-dt-20180416Z-10ff31",
-  "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-26cfe6",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190325Z-000e7b",
-  "org.scalablytyped" %%% "sax" % "1.x-dt-20190322Z-2d2484",
-  "org.scalablytyped" %%% "source-map-support" % "0.5-dt-20190224Z-7c13c5",
-  "org.scalablytyped" %%% "stat-mode" % "0.2-dt-20180214Z-120589",
-  "org.scalablytyped" %%% "std" % "3.3-14e863",
-  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-b01a75",
-  "org.scalablytyped" %%% "temp-file" % "3.3.2-263b9a")
+  "org.scalablytyped" %%% "7zip-bin" % "4.1.0-2393db",
+  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20190322Z-d84c1e",
+  "org.scalablytyped" %%% "app-builder-bin" % "2.6.4-3a9366",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-986805",
+  "org.scalablytyped" %%% "bluebird-lst" % "1.0.7-55a535",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.0-ed5f7e",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
+  "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
+  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-7a792d",
+  "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-ca4672",
+  "org.scalablytyped" %%% "is-ci" % "1.1-dt-20180416Z-9b420a",
+  "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-bb4a1b",
+  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "sax" % "1.x-dt-20190322Z-da2201",
+  "org.scalablytyped" %%% "source-map-support" % "0.5-dt-20190224Z-432a17",
+  "org.scalablytyped" %%% "stat-mode" % "0.2-dt-20180214Z-eadfcf",
+  "org.scalablytyped" %%% "std" % "3.4-d52857",
+  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-1b70da",
+  "org.scalablytyped" %%% "temp-file" % "3.3.2-f82ea8")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

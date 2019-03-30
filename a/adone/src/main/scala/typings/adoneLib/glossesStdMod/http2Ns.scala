@@ -9,12 +9,44 @@ import scala.scalajs.js.annotation._
 @js.native
 object http2Ns extends js.Object {
   @js.native
+  class ClientHttp2Session protected ()
+    extends nodeLib.http2Mod.ClientHttp2Session
+  
+  @js.native
+  class ClientHttp2Stream protected ()
+    extends nodeLib.http2Mod.ClientHttp2Stream
+  
+  @js.native
+  class Http2SecureServer protected ()
+    extends nodeLib.http2Mod.Http2SecureServer
+  
+  @js.native
+  class Http2Server protected ()
+    extends nodeLib.http2Mod.Http2Server
+  
+  @js.native
   class Http2ServerRequest protected ()
     extends nodeLib.http2Mod.Http2ServerRequest
   
   @js.native
   class Http2ServerResponse protected ()
     extends nodeLib.http2Mod.Http2ServerResponse
+  
+  @js.native
+  class Http2Session protected ()
+    extends nodeLib.http2Mod.Http2Session
+  
+  @js.native
+  class Http2Stream protected ()
+    extends nodeLib.http2Mod.Http2Stream
+  
+  @js.native
+  class ServerHttp2Session protected ()
+    extends nodeLib.http2Mod.ServerHttp2Session
+  
+  @js.native
+  class ServerHttp2Stream protected ()
+    extends nodeLib.http2Mod.ServerHttp2Stream
   
   def connect(authority: java.lang.String): nodeLib.http2Mod.ClientHttp2Session = js.native
   def connect(
@@ -109,7 +141,7 @@ object http2Ns extends js.Object {
     ]
   ): nodeLib.http2Mod.Http2Server = js.native
   def getDefaultSettings(): nodeLib.http2Mod.Settings = js.native
-  def getPackedSettings(settings: nodeLib.http2Mod.Settings): nodeLib.http2Mod.Settings = js.native
+  def getPackedSettings(settings: nodeLib.http2Mod.Settings): nodeLib.Buffer = js.native
   def getUnpackedSettings(buf: nodeLib.Buffer): nodeLib.http2Mod.Settings = js.native
   def getUnpackedSettings(buf: stdLib.Uint8Array): nodeLib.http2Mod.Settings = js.native
   @JSName("constants")

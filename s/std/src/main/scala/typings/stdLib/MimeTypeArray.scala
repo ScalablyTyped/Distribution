@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The MimeTypeArray interface returns an array of MimeType instances, each of which contains information about a supported browser plugins. This object is returned by NavigatorPlugins.mimeTypes. */
 trait MimeTypeArray
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[Plugin] {
   @JSName(org.scalablytyped.runtime.Symbol.iterator)

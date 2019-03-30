@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The Worker interface of the Web Workers API represents a background task that can be easily created and can send messages back to its creator. Creating a worker is as simple as calling the Worker() constructor and specifying a script to be run in the worker thread. */
 @js.native
 trait Worker
   extends EventTarget
@@ -86,12 +87,18 @@ trait Worker
 @js.native
 class WorkerCls protected () extends Worker {
   def this(stringUrl: java.lang.String) = this()
+  def this(stringUrl: URL) = this()
   def this(stringUrl: java.lang.String, options: WorkerOptions) = this()
+  def this(stringUrl: URL, options: WorkerOptions) = this()
 }
 
 @JSGlobal("Worker")
 @js.native
 object Worker
-  extends org.scalablytyped.runtime.Instantiable1[/* stringUrl */ java.lang.String, Worker]
-     with org.scalablytyped.runtime.Instantiable2[/* stringUrl */ java.lang.String, /* options */ WorkerOptions, Worker]
+  extends org.scalablytyped.runtime.Instantiable2[
+      (/* stringUrl */ java.lang.String) | (/* stringUrl */ URL), 
+      /* options */ WorkerOptions, 
+      Worker
+    ]
+     with org.scalablytyped.runtime.Instantiable1[(/* stringUrl */ java.lang.String) | (/* stringUrl */ URL), Worker]
 

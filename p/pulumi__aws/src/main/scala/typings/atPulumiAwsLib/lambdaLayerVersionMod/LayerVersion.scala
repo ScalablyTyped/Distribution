@@ -19,7 +19,7 @@ class LayerVersion protected ()
   def this(name: java.lang.String, args: LayerVersionArgs) = this()
   def this(name: java.lang.String, args: LayerVersionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
-    * The Amazon Resource Name (ARN) identifying your Lambda Layer.
+    * The Amazon Resource Name (ARN) of the Lambda Layer with version.
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
@@ -39,7 +39,7 @@ class LayerVersion protected ()
     */
   val filename: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
-    * The Amazon Resource Name (ARN) identifying your specific Lambda Layer version.
+    * The Amazon Resource Name (ARN) of the Lambda Layer without version.
     */
   val layerArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

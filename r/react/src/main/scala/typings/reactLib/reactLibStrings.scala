@@ -589,6 +589,9 @@ object reactLibStrings {
   sealed trait replace extends js.Object
   
   @js.native
+  sealed trait reset extends js.Object
+  
+  @js.native
   sealed trait right extends js.Object
   
   @js.native
@@ -650,6 +653,9 @@ object reactLibStrings {
   
   @js.native
   sealed trait sub extends js.Object
+  
+  @js.native
+  sealed trait submit extends js.Object
   
   @js.native
   sealed trait sum extends js.Object
@@ -1154,6 +1160,8 @@ object reactLibStrings {
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
+  def reset: reset = "reset".asInstanceOf[reset]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
   def round: round = "round".asInstanceOf[round]
@@ -1195,6 +1203,8 @@ object reactLibStrings {
   def style: style = "style".asInstanceOf[style]
   @scala.inline
   def sub: sub = "sub".asInstanceOf[sub]
+  @scala.inline
+  def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
   @scala.inline

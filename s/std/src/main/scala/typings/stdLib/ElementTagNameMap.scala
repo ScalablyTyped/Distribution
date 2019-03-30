@@ -24,6 +24,7 @@ object ElementTagNameMap {
     b: HTMLElement,
     base: HTMLBaseElement,
     basefont: HTMLBaseFontElement,
+    bdi: HTMLElement,
     bdo: HTMLElement,
     blockquote: HTMLQuoteElement,
     body: HTMLBodyElement,
@@ -112,6 +113,7 @@ object ElementTagNameMap {
     line: SVGLineElement,
     linearGradient: SVGLinearGradientElement,
     link: HTMLLinkElement,
+    main: HTMLElement,
     map: HTMLMapElement,
     mark: HTMLElement,
     marker: SVGMarkerElement,
@@ -140,6 +142,7 @@ object ElementTagNameMap {
     q: HTMLQuoteElement,
     radialGradient: SVGRadialGradientElement,
     rect: SVGRectElement,
+    rp: HTMLElement,
     rt: HTMLElement,
     ruby: HTMLElement,
     s: HTMLElement,
@@ -155,6 +158,7 @@ object ElementTagNameMap {
     strong: HTMLElement,
     style: HTMLStyleElement,
     sub: HTMLElement,
+    summary: HTMLElement,
     sup: HTMLElement,
     svg: SVGSVGElement,
     switch: SVGSwitchElement,
@@ -182,7 +186,7 @@ object ElementTagNameMap {
     view: SVGViewElement,
     wbr: HTMLElement
   ): ElementTagNameMap = {
-    val __obj = js.Dynamic.literal(a = a, abbr = abbr, address = address, applet = applet, area = area, article = article, aside = aside, audio = audio, b = b, base = base, basefont = basefont, bdo = bdo, blockquote = blockquote, body = body, br = br, button = button, canvas = canvas, caption = caption, circle = circle, cite = cite, clipPath = clipPath, code = code, col = col, colgroup = colgroup, data = data, datalist = datalist, dd = dd, defs = defs, del = del, desc = desc, details = details, dfn = dfn, dialog = dialog, dir = dir, div = div, dl = dl, dt = dt, ellipse = ellipse, em = em, embed = embed, feBlend = feBlend, feColorMatrix = feColorMatrix, feComponentTransfer = feComponentTransfer, feComposite = feComposite, feConvolveMatrix = feConvolveMatrix, feDiffuseLighting = feDiffuseLighting, feDisplacementMap = feDisplacementMap, feDistantLight = feDistantLight, feFlood = feFlood, feFuncA = feFuncA, feFuncB = feFuncB, feFuncG = feFuncG, feFuncR = feFuncR, feGaussianBlur = feGaussianBlur, feImage = feImage, feMerge = feMerge, feMergeNode = feMergeNode, feMorphology = feMorphology, feOffset = feOffset, fePointLight = fePointLight, feSpecularLighting = feSpecularLighting, feSpotLight = feSpotLight, feTile = feTile, feTurbulence = feTurbulence, fieldset = fieldset, figcaption = figcaption, figure = figure, filter = filter, font = font, footer = footer, foreignObject = foreignObject, form = form, frame = frame, frameset = frameset, g = g, h1 = h1, h2 = h2, h3 = h3, h4 = h4, h5 = h5, h6 = h6, head = head, header = header, hgroup = hgroup, hr = hr, html = html, i = i, iframe = iframe, image = image, img = img, input = input, ins = ins, kbd = kbd, label = label, legend = legend, li = li, line = line, linearGradient = linearGradient, link = link, map = map, mark = mark, marker = marker, marquee = marquee, mask = mask, menu = menu, meta = meta, metadata = metadata, meter = meter, nav = nav, noscript = noscript, ol = ol, optgroup = optgroup, option = option, output = output, p = p, param = param, path = path, pattern = pattern, picture = picture, polygon = polygon, polyline = polyline, pre = pre, progress = progress, q = q, radialGradient = radialGradient, rect = rect, rt = rt, ruby = ruby, s = s, samp = samp, script = script, section = section, select = select, slot = slot, small = small, source = source, span = span, stop = stop, strong = strong, style = style, sub = sub, sup = sup, svg = svg, switch = switch, symbol = symbol, table = table, tbody = tbody, td = td, template = template, text = text, textPath = textPath, textarea = textarea, tfoot = tfoot, th = th, thead = thead, time = time, title = title, tr = tr, track = track, tspan = tspan, u = u, ul = ul, use = use, video = video, view = view, wbr = wbr)
+    val __obj = js.Dynamic.literal(a = a, abbr = abbr, address = address, applet = applet, area = area, article = article, aside = aside, audio = audio, b = b, base = base, basefont = basefont, bdi = bdi, bdo = bdo, blockquote = blockquote, body = body, br = br, button = button, canvas = canvas, caption = caption, circle = circle, cite = cite, clipPath = clipPath, code = code, col = col, colgroup = colgroup, data = data, datalist = datalist, dd = dd, defs = defs, del = del, desc = desc, details = details, dfn = dfn, dialog = dialog, dir = dir, div = div, dl = dl, dt = dt, ellipse = ellipse, em = em, embed = embed, feBlend = feBlend, feColorMatrix = feColorMatrix, feComponentTransfer = feComponentTransfer, feComposite = feComposite, feConvolveMatrix = feConvolveMatrix, feDiffuseLighting = feDiffuseLighting, feDisplacementMap = feDisplacementMap, feDistantLight = feDistantLight, feFlood = feFlood, feFuncA = feFuncA, feFuncB = feFuncB, feFuncG = feFuncG, feFuncR = feFuncR, feGaussianBlur = feGaussianBlur, feImage = feImage, feMerge = feMerge, feMergeNode = feMergeNode, feMorphology = feMorphology, feOffset = feOffset, fePointLight = fePointLight, feSpecularLighting = feSpecularLighting, feSpotLight = feSpotLight, feTile = feTile, feTurbulence = feTurbulence, fieldset = fieldset, figcaption = figcaption, figure = figure, filter = filter, font = font, footer = footer, foreignObject = foreignObject, form = form, frame = frame, frameset = frameset, g = g, h1 = h1, h2 = h2, h3 = h3, h4 = h4, h5 = h5, h6 = h6, head = head, header = header, hgroup = hgroup, hr = hr, html = html, i = i, iframe = iframe, image = image, img = img, input = input, ins = ins, kbd = kbd, label = label, legend = legend, li = li, line = line, linearGradient = linearGradient, link = link, main = main, map = map, mark = mark, marker = marker, marquee = marquee, mask = mask, menu = menu, meta = meta, metadata = metadata, meter = meter, nav = nav, noscript = noscript, ol = ol, optgroup = optgroup, option = option, output = output, p = p, param = param, path = path, pattern = pattern, picture = picture, polygon = polygon, polyline = polyline, pre = pre, progress = progress, q = q, radialGradient = radialGradient, rect = rect, rp = rp, rt = rt, ruby = ruby, s = s, samp = samp, script = script, section = section, select = select, slot = slot, small = small, source = source, span = span, stop = stop, strong = strong, style = style, sub = sub, summary = summary, sup = sup, svg = svg, switch = switch, symbol = symbol, table = table, tbody = tbody, td = td, template = template, text = text, textPath = textPath, textarea = textarea, tfoot = tfoot, th = th, thead = thead, time = time, title = title, tr = tr, track = track, tspan = tspan, u = u, ul = ul, use = use, video = video, view = view, wbr = wbr)
     __obj.updateDynamic("object")(`object`)
     __obj.updateDynamic("var")(`var`)
     __obj.asInstanceOf[ElementTagNameMap]

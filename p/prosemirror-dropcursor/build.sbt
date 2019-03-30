@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "prosemirror-dropcursor"
-version := "1.0-dt-20180917Z-47e3b3"
+version := "1.0-dt-20180917Z-a7d0e8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "orderedmap" % "1.0-dt-20180214Z-47d72b",
-  "org.scalablytyped" %%% "prosemirror-model" % "1.7-dt-20190130Z-4c96c3",
-  "org.scalablytyped" %%% "prosemirror-state" % "1.2-dt-20190222Z-803798",
-  "org.scalablytyped" %%% "prosemirror-transform" % "1.1-dt-20180621Z-dd93cb",
-  "org.scalablytyped" %%% "prosemirror-view" % "1.3-dt-20190222Z-67c79f",
-  "org.scalablytyped" %%% "std" % "3.3-14e863")
+  "org.scalablytyped" %%% "orderedmap" % "1.0-dt-20180214Z-fb9751",
+  "org.scalablytyped" %%% "prosemirror-model" % "1.7-dt-20190130Z-bb9b53",
+  "org.scalablytyped" %%% "prosemirror-state" % "1.2-dt-20190222Z-14f824",
+  "org.scalablytyped" %%% "prosemirror-transform" % "1.1-dt-20180621Z-cb26f6",
+  "org.scalablytyped" %%% "prosemirror-view" % "1.3-dt-20190222Z-12634a",
+  "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

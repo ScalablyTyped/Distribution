@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFEOffsetElement interface corresponds to the <feOffset> element. */
 @js.native
 trait SVGFEOffsetElement
   extends SVGElement

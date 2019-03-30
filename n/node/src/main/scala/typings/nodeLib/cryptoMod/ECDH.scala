@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("crypto", "ECDH")
 @js.native
-class ECDH () extends js.Object {
+class ECDH protected () extends js.Object {
   def computeSecret(other_public_key: java.lang.String, input_encoding: HexBase64Latin1Encoding): nodeLib.Buffer = js.native
   def computeSecret(
     other_public_key: java.lang.String,

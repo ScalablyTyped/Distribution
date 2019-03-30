@@ -317,6 +317,8 @@ trait Anon_A extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
   @JSName("create")
+  def create_bdi(name: plotlyDotJsLib.plotlyDotJsLibStrings.bdi): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  @JSName("create")
   def create_bdo(name: plotlyDotJsLib.plotlyDotJsLibStrings.bdo): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
   def create_blockquote(name: plotlyDotJsLib.plotlyDotJsLibStrings.blockquote): d3DashSelectionLib.d3DashSelectionMod.Selection[
@@ -843,6 +845,8 @@ trait Anon_A extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
   @JSName("create")
+  def create_main(name: plotlyDotJsLib.plotlyDotJsLibStrings.main): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  @JSName("create")
   def create_map(name: plotlyDotJsLib.plotlyDotJsLibStrings.map): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLMapElement, 
     js.UndefOr[scala.Nothing], 
@@ -1024,6 +1028,8 @@ trait Anon_A extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
   @JSName("create")
+  def create_rp(name: plotlyDotJsLib.plotlyDotJsLibStrings.rp): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  @JSName("create")
   def create_rt(name: plotlyDotJsLib.plotlyDotJsLibStrings.rt): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
   def create_ruby(name: plotlyDotJsLib.plotlyDotJsLibStrings.ruby): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
@@ -1088,6 +1094,8 @@ trait Anon_A extends js.Object {
   ] = js.native
   @JSName("create")
   def create_sub(name: plotlyDotJsLib.plotlyDotJsLibStrings.sub): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  @JSName("create")
+  def create_summary(name: plotlyDotJsLib.plotlyDotJsLibStrings.summary): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
   def create_sup(name: plotlyDotJsLib.plotlyDotJsLibStrings.sup): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
@@ -1272,6 +1280,8 @@ trait Anon_A extends js.Object {
     /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
     stdLib.HTMLBaseFontElement
   ] = js.native
+  @JSName("creator")
+  def creator_bdi(name: plotlyDotJsLib.plotlyDotJsLibStrings.bdi): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
   def creator_bdo(name: plotlyDotJsLib.plotlyDotJsLibStrings.bdo): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
@@ -1587,6 +1597,8 @@ trait Anon_A extends js.Object {
   @JSName("creator")
   def creator_link(name: plotlyDotJsLib.plotlyDotJsLibStrings.link): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLLinkElement] = js.native
   @JSName("creator")
+  def creator_main(name: plotlyDotJsLib.plotlyDotJsLibStrings.main): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
+  @JSName("creator")
   def creator_map(name: plotlyDotJsLib.plotlyDotJsLibStrings.map): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLMapElement] = js.native
   @JSName("creator")
   def creator_mark(name: plotlyDotJsLib.plotlyDotJsLibStrings.mark): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
@@ -1682,6 +1694,8 @@ trait Anon_A extends js.Object {
   @JSName("creator")
   def creator_rect(name: plotlyDotJsLib.plotlyDotJsLibStrings.rect): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGRectElement] = js.native
   @JSName("creator")
+  def creator_rp(name: plotlyDotJsLib.plotlyDotJsLibStrings.rp): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
+  @JSName("creator")
   def creator_rt(name: plotlyDotJsLib.plotlyDotJsLibStrings.rt): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
   def creator_ruby(name: plotlyDotJsLib.plotlyDotJsLibStrings.ruby): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
@@ -1720,6 +1734,8 @@ trait Anon_A extends js.Object {
   def creator_style(name: plotlyDotJsLib.plotlyDotJsLibStrings.style): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLStyleElement] = js.native
   @JSName("creator")
   def creator_sub(name: plotlyDotJsLib.plotlyDotJsLibStrings.sub): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
+  @JSName("creator")
+  def creator_summary(name: plotlyDotJsLib.plotlyDotJsLibStrings.summary): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
   def creator_sup(name: plotlyDotJsLib.plotlyDotJsLibStrings.sup): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")

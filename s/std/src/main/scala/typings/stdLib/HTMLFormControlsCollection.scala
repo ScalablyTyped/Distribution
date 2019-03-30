@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLFormControlsCollection interface represents a collection of HTML form control elements.  */
 trait HTMLFormControlsCollection extends HTMLCollectionBase {
   /**
     * element = collection[name]

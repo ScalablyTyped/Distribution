@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** A MutationRecord represents an individual DOM mutation. It is the object that is passed to MutationObserver's callback. */
 trait MutationRecord extends js.Object {
   val addedNodes: NodeList
   /**

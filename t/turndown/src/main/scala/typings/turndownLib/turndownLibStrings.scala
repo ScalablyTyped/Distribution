@@ -75,6 +75,10 @@ object turndownLibStrings {
     extends turndownLib.turndownMod.TurndownServiceNs.TagName
   
   @js.native
+  sealed trait bdi
+    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+  
+  @js.native
   sealed trait bdo
     extends turndownLib.turndownMod.TurndownServiceNs.TagName
   
@@ -302,6 +306,10 @@ object turndownLibStrings {
     extends turndownLib.turndownMod.TurndownServiceNs.TagName
   
   @js.native
+  sealed trait main
+    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+  
+  @js.native
   sealed trait map
     extends turndownLib.turndownMod.TurndownServiceNs.TagName
   
@@ -381,6 +389,10 @@ object turndownLibStrings {
   sealed trait referenced extends js.Object
   
   @js.native
+  sealed trait rp
+    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+  
+  @js.native
   sealed trait rt
     extends turndownLib.turndownMod.TurndownServiceNs.TagName
   
@@ -440,6 +452,10 @@ object turndownLibStrings {
   
   @js.native
   sealed trait sub
+    extends turndownLib.turndownMod.TurndownServiceNs.TagName
+  
+  @js.native
+  sealed trait summary
     extends turndownLib.turndownMod.TurndownServiceNs.TagName
   
   @js.native
@@ -555,6 +571,8 @@ object turndownLibStrings {
   def base: base = "base".asInstanceOf[base]
   @scala.inline
   def basefont: basefont = "basefont".asInstanceOf[basefont]
+  @scala.inline
+  def bdi: bdi = "bdi".asInstanceOf[bdi]
   @scala.inline
   def bdo: bdo = "bdo".asInstanceOf[bdo]
   @scala.inline
@@ -672,6 +690,8 @@ object turndownLibStrings {
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
+  def main: main = "main".asInstanceOf[main]
+  @scala.inline
   def map: map = "map".asInstanceOf[map]
   @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
@@ -712,6 +732,8 @@ object turndownLibStrings {
   @scala.inline
   def referenced: referenced = "referenced".asInstanceOf[referenced]
   @scala.inline
+  def rp: rp = "rp".asInstanceOf[rp]
+  @scala.inline
   def rt: rt = "rt".asInstanceOf[rt]
   @scala.inline
   def ruby: ruby = "ruby".asInstanceOf[ruby]
@@ -743,6 +765,8 @@ object turndownLibStrings {
   def style: style = "style".asInstanceOf[style]
   @scala.inline
   def sub: sub = "sub".asInstanceOf[sub]
+  @scala.inline
+  def summary: summary = "summary".asInstanceOf[summary]
   @scala.inline
   def sup: sup = "sup".asInstanceOf[sup]
   @scala.inline

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** A type returned by some APIs which contains a list of DOMString (strings). */
 trait DOMStringList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
   @JSName(org.scalablytyped.runtime.Symbol.iterator)

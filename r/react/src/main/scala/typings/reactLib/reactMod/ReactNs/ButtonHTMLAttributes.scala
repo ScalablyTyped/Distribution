@@ -15,7 +15,9 @@ trait ButtonHTMLAttributes[T] extends HTMLAttributes[T] {
   var formNoValidate: js.UndefOr[scala.Boolean] = js.undefined
   var formTarget: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[
+    reactLib.reactLibStrings.submit | reactLib.reactLibStrings.reset | reactLib.reactLibStrings.button
+  ] = js.undefined
   var value: js.UndefOr[java.lang.String | js.Array[java.lang.String] | scala.Double] = js.undefined
 }
 
@@ -32,7 +34,7 @@ object ButtonHTMLAttributes {
     formNoValidate: js.UndefOr[scala.Boolean] = js.undefined,
     formTarget: java.lang.String = null,
     name: java.lang.String = null,
-    `type`: java.lang.String = null,
+    `type`: reactLib.reactLibStrings.submit | reactLib.reactLibStrings.reset | reactLib.reactLibStrings.button = null,
     value: java.lang.String | js.Array[java.lang.String] | scala.Double = null
   ): ButtonHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
@@ -46,7 +48,7 @@ object ButtonHTMLAttributes {
     if (!js.isUndefined(formNoValidate)) __obj.updateDynamic("formNoValidate")(formNoValidate)
     if (formTarget != null) __obj.updateDynamic("formTarget")(formTarget)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonHTMLAttributes[T]]
   }

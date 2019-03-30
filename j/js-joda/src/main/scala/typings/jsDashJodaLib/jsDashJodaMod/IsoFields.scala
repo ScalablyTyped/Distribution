@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "IsoFields")
 @js.native
-class IsoFields ()
+class IsoFields protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.IsoFields
 
 /* static members */

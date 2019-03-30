@@ -24,9 +24,17 @@ trait EipState extends js.Object {
     */
   val networkInterface: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * The Private DNS associated with the Elastic IP address (if in VPC).
+    */
+  val privateDns: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * Contains the private IP address (if in VPC).
     */
   val privateIp: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
+    * Public DNS associated with the Elastic IP address.
+    */
+  val publicDns: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Contains the public IP address.
     */
@@ -54,7 +62,9 @@ object EipState {
     domain: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     instance: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     networkInterface: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    privateDns: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     privateIp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    publicDns: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     publicIp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     publicIpv4Pool: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
@@ -67,7 +77,9 @@ object EipState {
     if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
     if (instance != null) __obj.updateDynamic("instance")(instance.asInstanceOf[js.Any])
     if (networkInterface != null) __obj.updateDynamic("networkInterface")(networkInterface.asInstanceOf[js.Any])
+    if (privateDns != null) __obj.updateDynamic("privateDns")(privateDns.asInstanceOf[js.Any])
     if (privateIp != null) __obj.updateDynamic("privateIp")(privateIp.asInstanceOf[js.Any])
+    if (publicDns != null) __obj.updateDynamic("publicDns")(publicDns.asInstanceOf[js.Any])
     if (publicIp != null) __obj.updateDynamic("publicIp")(publicIp.asInstanceOf[js.Any])
     if (publicIpv4Pool != null) __obj.updateDynamic("publicIpv4Pool")(publicIpv4Pool.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

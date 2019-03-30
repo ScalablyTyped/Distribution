@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLIFrameElement interface provides special properties and methods (beyond those of the HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of inline frame elements. */
 @js.native
-trait HTMLIFrameElement
-  extends HTMLElement
-     with GetSVGDocument {
+trait HTMLIFrameElement extends HTMLElement {
   /**
     * Sets or retrieves how the object is aligned with adjacent text.
     */
   /** @deprecated */
   var align: java.lang.String = js.native
+  var allow: java.lang.String = js.native
   var allowFullscreen: scala.Boolean = js.native
   var allowPaymentRequest: scala.Boolean = js.native
   /**
@@ -23,7 +23,7 @@ trait HTMLIFrameElement
   /**
     * Retrieves the object of the specified.
     */
-  val contentWindow: Window | scala.Null = js.native
+  val contentWindow: WindowProxy | scala.Null = js.native
   /**
     * Sets or retrieves whether to display a border for the frame.
     */
@@ -52,7 +52,7 @@ trait HTMLIFrameElement
     * Sets or retrieves the frame name.
     */
   var name: java.lang.String = js.native
-  val referrerPolicy: ReferrerPolicy = js.native
+  var referrerPolicy: ReferrerPolicy = js.native
   val sandbox: DOMTokenList = js.native
   /**
     * Sets or retrieves whether the frame can be scrolled.
@@ -71,26 +71,7 @@ trait HTMLIFrameElement
     * Sets or retrieves the width of the object.
     */
   var width: java.lang.String = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(
-    `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
-    options: AddEventListenerOptions
-  ): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(
-    `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
-  ): scala.Unit = js.native
+  def getSVGDocument(): Document | scala.Null = js.native
 }
 
 @JSGlobal("HTMLIFrameElement")
@@ -118,8 +99,6 @@ class HTMLIFrameElementCls () extends HTMLIFrameElement {
   override val previousElementSibling: Element | scala.Null = js.native
   /* CompleteClass */
   override val style: CSSStyleDeclaration = js.native
-  /* CompleteClass */
-  override def getSVGDocument(): Document = js.native
 }
 
 @JSGlobal("HTMLIFrameElement")

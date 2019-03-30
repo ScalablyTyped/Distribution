@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The PositionError interface represents the reason of an error occurring when using the geolocating device. */
 trait PositionError extends js.Object {
   val PERMISSION_DENIED: scala.Double
   val POSITION_UNAVAILABLE: scala.Double

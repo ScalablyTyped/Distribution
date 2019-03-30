@@ -17,6 +17,7 @@ class GraphQLObjectType[TSource, TContext, TArgs] protected () extends js.Object
   def getFields(): GraphQLFieldMap[_, TContext, TArgs] = js.native
   def getInterfaces(): js.Array[GraphQLInterfaceType] = js.native
   def inspect(): java.lang.String = js.native
+  def toConfig(): (GraphQLObjectTypeConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]]) with graphqlLib.Anon_ExtensionASTNodesFields = js.native
   def toJSON(): java.lang.String = js.native
 }
 

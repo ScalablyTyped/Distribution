@@ -10,3 +10,12 @@ trait ECFile extends js.Object {
   var name: java.lang.String
 }
 
+object ECFile {
+  @scala.inline
+  def apply(contents: java.lang.String | nodeLib.Buffer, name: java.lang.String): ECFile = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], name = name)
+  
+    __obj.asInstanceOf[ECFile]
+  }
+}
+

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** An object implementing the StyleSheet interface represents a single style sheet. CSS style sheets will further implement the more specialized CSSStyleSheet interface. */
 trait StyleSheet extends js.Object {
   var disabled: scala.Boolean
   val href: java.lang.String | scala.Null

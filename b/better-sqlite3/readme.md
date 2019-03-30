@@ -6,6 +6,7 @@
 //                 Santiago Aguilar <https://github.com/sant123>
 //                 Alessandro Vergani <https://github.com/loghorn>
 //                 Andrew Kaiser <https://github.com/andykais>
+//                 Mark Stewart <https://github.com/mrkstwrt>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.0
 ```

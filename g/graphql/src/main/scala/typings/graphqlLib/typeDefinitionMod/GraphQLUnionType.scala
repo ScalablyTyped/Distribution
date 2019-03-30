@@ -22,6 +22,7 @@ class GraphQLUnionType protected ()
   var resolveType: graphqlLib.tsutilsMaybeMod.Maybe[GraphQLTypeResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   def getTypes(): js.Array[GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   def inspect(): java.lang.String = js.native
+  def toConfig(): (GraphQLUnionTypeConfig[_, _]) with graphqlLib.Anon_ExtensionASTNodesKey = js.native
   def toJSON(): java.lang.String = js.native
 }
 

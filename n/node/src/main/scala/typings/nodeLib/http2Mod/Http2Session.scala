@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("http2", "Http2Session")
 @js.native
-trait Http2Session
+class Http2Session protected ()
   extends nodeLib.eventsMod.EventEmitter {
   val alpnProtocol: js.UndefOr[java.lang.String] = js.native
   val closed: scala.Boolean = js.native
@@ -282,10 +283,7 @@ trait Http2Session
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_timeout(event: nodeLib.nodeLibStrings.timeout, listener: js.Function0[scala.Unit]): this.type = js.native
-  def priority(stream: Http2Stream, options: StreamPriorityOptions): scala.Unit = js.native
   def ref(): scala.Unit = js.native
-  def rstStream(stream: Http2Stream): scala.Unit = js.native
-  def rstStream(stream: Http2Stream, code: scala.Double): scala.Unit = js.native
   def setTimeout(msecs: scala.Double): scala.Unit = js.native
   def setTimeout(msecs: scala.Double, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def settings(settings: Settings): scala.Unit = js.native

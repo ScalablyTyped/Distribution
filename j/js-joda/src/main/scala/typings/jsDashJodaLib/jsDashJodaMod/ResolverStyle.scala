@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "ResolverStyle")
 @js.native
-class ResolverStyle ()
+class ResolverStyle protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.ResolverStyle
 
 /* static members */

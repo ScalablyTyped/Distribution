@@ -43,7 +43,7 @@ object ^ extends js.Object {
   def parseValue(source: graphqlLib.languageSourceMod.Source, options: graphqlLib.languageParserMod.ParseOptions): graphqlLib.languageAstMod.ValueNode = js.native
   def parseValue(source: java.lang.String): graphqlLib.languageAstMod.ValueNode = js.native
   def parseValue(source: java.lang.String, options: graphqlLib.languageParserMod.ParseOptions): graphqlLib.languageAstMod.ValueNode = js.native
-  def print(ast: js.Any): java.lang.String = js.native
+  def print(ast: graphqlLib.languageAstMod.ASTNode): java.lang.String = js.native
   def visit(
     root: graphqlLib.languageAstMod.ASTNode,
     visitor: graphqlLib.languageVisitorMod.Visitor[

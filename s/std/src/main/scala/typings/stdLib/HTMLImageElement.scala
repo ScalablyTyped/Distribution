@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLImageElement interface provides special properties and methods  for manipulating the layout and presentation of <img> elements. */
 @js.native
 trait HTMLImageElement
   extends HTMLElement

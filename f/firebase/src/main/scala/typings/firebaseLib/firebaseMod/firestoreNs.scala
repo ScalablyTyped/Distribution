@@ -20,14 +20,14 @@ object firestoreNs extends js.Object {
     /**
       * Returns the bytes of a Blob as a Base64-encoded string.
       *
-      * @return {string}
+      * @return
       *   The Base64-encoded string created from the Blob object.
       */
     def toBase64(): java.lang.String = js.native
     /**
       * Returns the bytes of a Blob in a new Uint8Array.
       *
-      * @return {!Uint8Array}
+      * @return
       *   The Uint8Array created from the Blob object.
       */
     def toUint8Array(): stdLib.Uint8Array = js.native
@@ -430,7 +430,7 @@ object firestoreNs extends js.Object {
       * Creates a write batch, used for performing multiple writes as a single
       * atomic operation.
       *
-      * @return {!firebase.firestore.WriteBatch}
+      * @return
       *   A `WriteBatch` that can be used to atomically execute multiple writes.
       */
     def batch(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.WriteBatch = js.native
@@ -449,7 +449,7 @@ object firestoreNs extends js.Object {
       * results from cache, and any write operations will be queued until the network
       * is restored.
       *
-      * @return {!Promise<void>} A promise that is resolved once the network has been
+      * @return A promise that is resolved once the network has been
       *   disabled.
       */
     def disableNetwork(): js.Promise[scala.Unit] = js.native
@@ -466,7 +466,7 @@ object firestoreNs extends js.Object {
       * call to {@link firebase.firestore.Firestore.disableNetwork
       * `disableNetwork()`}.
       *
-      * @return {!Promise<void>} A promise that is resolved once the network has been
+      * @return A promise that is resolved once the network has been
       *   enabled.
       */
     def enableNetwork(): js.Promise[scala.Unit] = js.native
@@ -492,29 +492,16 @@ object firestoreNs extends js.Object {
       */
     def enablePersistence(): js.Promise[scala.Unit] = js.native
     def enablePersistence(settings: firebaseLib.firebaseMod.firebaseNs.firestoreNs.PersistenceSettings): js.Promise[scala.Unit] = js.native
-    // TODO(b/116617988): Uncomment method and change jsdoc comment to "/**"
-    // once backend support is ready.
-    /*
-      * Creates and returns a new Query that includes all documents in the
-      * database that are contained in a collection or subcollection with the
-      * given collectionId.
-      *
-      * @param collectionId Identifies the collections to query over. Every
-      * collection or subcollection with this ID as the last segment of its path
-      * will be included. Cannot contain a slash.
-      * @return The created Query.
-      */
-    //collectionGroup(collectionId: string): Query;
     /**
       * Executes the given `updateFunction` and then attempts to commit the changes
       * applied within the transaction. If any document read within the transaction
       * has changed, Cloud Firestore retries the `updateFunction`. If it fails to
       * commit after 5 attempts, the transaction fails.
       *
-      * @param {function(!firebase.firestore.Transaction)} updateFunction
+      * @param updateFunction
       *   The function to execute within the transaction context.
       *
-      * @return {!Promise}
+      * @return
       *   If the transaction completed successfully or was explicitly aborted
       *   (the `updateFunction` returned a failed promise),
       *   the promise returned by the updateFunction is returned here. Else, if the
@@ -1303,14 +1290,14 @@ object firestoreNs extends js.Object {
       * Creates a new Blob from the given Base64 string, converting it to
       * bytes.
       *
-      * @param {string} base64
+      * @param base64
       *   The Base64 string used to create the Blob object.
       */
     def fromBase64String(base64: java.lang.String): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Blob = js.native
     /**
       * Creates a new Blob from the given Uint8Array.
       *
-      * @param {!Uint8Array} array
+      * @param array
       *   The Uint8Array used to create the Blob object.
       */
     def fromUint8Array(array: stdLib.Uint8Array): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Blob = js.native
@@ -1357,21 +1344,21 @@ object firestoreNs extends js.Object {
       */
     def delete(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue = js.native
     /**
-      * Returns a special value that can be used with set() or update() that tells
+      * Returns a special value that can be used with `set()` or `update()` that tells
       * the server to increment the field's current value by the given value.
-      *
-      * If either the operand or the current field value uses floating point
-      * precision, all arithmetic will follow IEEE 754 semantics. If both values
-      * are integers, values outside of JavaScript's safe number range
-      * (`Number.MIN_SAFE_INTEGER` to `Number.MAX_SAFE_INTEGER`) are also subject
-      * to precision loss. Furthermore, once processed by the Firestore backend,
-      * all integer operations are capped between -2^63 and 2^63-1.
-      *
-      * If the current field value is not of type 'number', or if the field does
-      * not yet exist, the transformation will set the field to the given value.
+      * 
+      * If either the operand or the current field value uses floating point precision,
+      * all arithmetic follows IEEE 754 semantics. If both values are integers,
+      * values outside of JavaScript's safe number range (`Number.MIN_SAFE_INTEGER` to
+      * `Number.MAX_SAFE_INTEGER`) are also subject to precision loss. Furthermore,
+      * once processed by the Firestore backend, all integer operations are capped
+      * between -2^63 and 2^63-1.
+      * 
+      * If the current field value is not of type `number`, or if the field does not
+      * yet exist, the transformation sets the field to the given value.
       *
       * @param n The value to increment by.
-      * @return The FieldValue sentinel for use in a call to set() or update().
+      * @return The FieldValue sentinel for use in a call to `set()` or `update()`.
       */
     def increment(n: scala.Double): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue = js.native
     /**

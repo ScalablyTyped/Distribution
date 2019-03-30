@@ -19,6 +19,7 @@ trait NodeOptions extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
   var labelHighlightBold: js.UndefOr[scala.Boolean] = js.undefined
   var level: js.UndefOr[scala.Double] = js.undefined
+  var margin: js.UndefOr[visLib.Anon_Bottom] = js.undefined
   var mass: js.UndefOr[scala.Double] = js.undefined
   var physics: js.UndefOr[scala.Boolean] = js.undefined
   var scaling: js.UndefOr[OptionsScaling] = js.undefined
@@ -48,6 +49,7 @@ object NodeOptions {
     label: java.lang.String = null,
     labelHighlightBold: js.UndefOr[scala.Boolean] = js.undefined,
     level: scala.Int | scala.Double = null,
+    margin: visLib.Anon_Bottom = null,
     mass: scala.Int | scala.Double = null,
     physics: js.UndefOr[scala.Boolean] = js.undefined,
     scaling: OptionsScaling = null,
@@ -74,6 +76,7 @@ object NodeOptions {
     if (label != null) __obj.updateDynamic("label")(label)
     if (!js.isUndefined(labelHighlightBold)) __obj.updateDynamic("labelHighlightBold")(labelHighlightBold)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin)
     if (mass != null) __obj.updateDynamic("mass")(mass.asInstanceOf[js.Any])
     if (!js.isUndefined(physics)) __obj.updateDynamic("physics")(physics)
     if (scaling != null) __obj.updateDynamic("scaling")(scaling)

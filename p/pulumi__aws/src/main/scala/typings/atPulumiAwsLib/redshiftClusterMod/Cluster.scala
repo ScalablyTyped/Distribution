@@ -31,11 +31,6 @@ class Cluster protected ()
     */
   val availabilityZone: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The name of an existing S3 bucket where the log files are to be stored. Must be in the same region as the cluster and the cluster must have read bucket and put object permissions.
-    * For more information on the permissions required for the bucket, please read the AWS [documentation](http://docs.aws.amazon.com/redshift/latest/mgmt/db-auditing.html#db-auditing-enable-logging)
-    */
-  val bucketName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  /**
     * The Cluster Identifier. Must be a lower case
     * string.
     */
@@ -82,7 +77,6 @@ class Cluster protected ()
     * The Elastic IP (EIP) address for the cluster.
     */
   val elasticIp: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val enableLogging: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**
     * If true , the data in the cluster is encrypted at rest.
     */
@@ -147,10 +141,6 @@ class Cluster protected ()
     * If true, the cluster can be accessed from a public network. Default is `true`.
     */
   val publiclyAccessible: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
-  /**
-    * The prefix applied to the log file names.
-    */
-  val s3KeyPrefix: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Determines whether a final snapshot of the cluster is created before Amazon Redshift deletes the cluster. If true , a final cluster snapshot is not created. If false , a final cluster snapshot is created before the cluster is deleted. Default is false.
     */

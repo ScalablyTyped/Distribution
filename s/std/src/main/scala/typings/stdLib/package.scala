@@ -25,11 +25,16 @@ package object stdLib {
     - java.lang.String
   */
   type BodyInit = _BodyInit | ReadableStream[Uint8Array] | java.lang.String
+  /** The CDATASection interface represents a CDATA section that can be used within XML to include extended portions of unescaped text. The symbols < and & don’t need escaping as they normally do when inside a CDATA section. */
   type CDATASection = Text
+  /** The CSSSupportsRule interface describes an object representing a single CSS @supports at-rule. It implements the CSSConditionRule interface, and therefore the CSSRule and CSSGroupingRule interfaces with a type value of 12 (CSSRule.SUPPORTS_RULE). */
   type CSSSupportsRule = CSSConditionRule
+  /** The ChannelMergerNode interface, often used in conjunction with its opposite, ChannelSplitterNode, reunites different mono inputs into a single output. Each input is used to fill a channel of the output. This is useful for accessing each channels separately, e.g. for performing channel mixing where gain must be separately controlled on each channel. */
   type ChannelMergerNode = AudioNode
+  /** The ChannelSplitterNode interface, often used in conjunction with its opposite, ChannelMergerNode, separates the different channels of an audio source into a set of mono outputs. This is useful for accessing each channel separately, e.g. for performing channel mixing where gain must be separately controlled on each channel. */
   type ChannelSplitterNode = AudioNode
   type ClassDecorator = js.Function1[/* target */ js.Function, js.Function | scala.Unit]
+  /** The Comment interface represents textual notations within markup; although it is generally not visually shown, such comments are available to be read in the source view. Comments are represented in HTML and XML as content between '<!--' and '-->'. In XML, the character sequence '--' cannot be used within a comment. */
   type Comment = CharacterData
   type ConstrainBoolean = scala.Boolean | ConstrainBooleanParameters
   type ConstrainDOMString = java.lang.String | js.Array[java.lang.String] | ConstrainDOMStringParameters
@@ -38,20 +43,12 @@ package object stdLib {
   /**
     * Obtain the parameters of a constructor function type in a tuple
     */
-  type ConstructorParameters[T /* <: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
+  type ConstructorParameters[T /* <: org.scalablytyped.runtime.Instantiable1[/* args */ js.Any, js.Any] */] = js.Any
   type DOMHighResTimeStamp = scala.Double
   type DOMTimeStamp = scala.Double
   type DecodeErrorCallback = js.Function1[/* error */ DOMException, scala.Unit]
   type DecodeSuccessCallback = js.Function1[/* decodedData */ AudioBuffer, scala.Unit]
   type DocumentTimeline = AnimationTimeline
-  type ErrorEventHandler = js.Function5[
-    /* event */ Event | java.lang.String, 
-    /* source */ js.UndefOr[java.lang.String], 
-    /* fileno */ js.UndefOr[scala.Double], 
-    /* columnNumber */ js.UndefOr[scala.Double], 
-    /* error */ js.UndefOr[Error], 
-    scala.Unit
-  ]
   type EvalError = Error
   type EventHandlerNonNull = js.Function1[/* event */ Event, js.Any]
   type EventListener = js.Function1[/* evt */ Event, scala.Unit]
@@ -99,7 +96,7 @@ package object stdLib {
   /**
     * Obtain the return type of a constructor function type
     */
-  type InstanceType[T /* <: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, js.Any] */] = js.Any
+  type InstanceType[T /* <: org.scalablytyped.runtime.Instantiable1[/* args */ js.Any, js.Any] */] = js.Any
   type Int32List = Int32Array | js.Array[GLint]
   type IntersectionObserverCallback = js.Function2[
     /* entries */ js.Array[IntersectionObserverEntry], 
@@ -149,7 +146,7 @@ package object stdLib {
     /* source */ js.UndefOr[java.lang.String], 
     /* lineno */ js.UndefOr[scala.Double], 
     /* colno */ js.UndefOr[scala.Double], 
-    /* error */ js.UndefOr[js.Any], 
+    /* error */ js.UndefOr[Error], 
     js.Any
   ]
   type ParameterDecorator = js.Function3[
@@ -161,7 +158,7 @@ package object stdLib {
   /**
     * Obtain the parameters of a function type in a tuple
     */
-  type Parameters[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
+  type Parameters[T /* <: js.Function1[/* args */ js.Any, _] */] = js.Any
   /**
     * Make all properties in T optional
     */
@@ -170,7 +167,9 @@ package object stdLib {
     */ stdLib.stdLibStrings.Partial with T
   type PaymentRequestUpdateEventInit = EventInit
   type PerformanceEntryList = js.Array[PerformanceEntry]
+  /** PerformanceMark is an abstract interface for PerformanceEntry objects with an entryType of "mark". Entries of this type are created by calling performance.mark() to add a named DOMHighResTimeStamp (the mark) to the browser's performance timeline. */
   type PerformanceMark = PerformanceEntry
+  /** PerformanceMeasure is an abstract interface for PerformanceEntry objects with an entryType of "measure". Entries of this type are created by calling performance.measure() to add a named DOMHighResTimeStamp (the measure) between two marks to the browser's performance timeline. */
   type PerformanceMeasure = PerformanceEntry
   type PerformanceObserverCallback = js.Function2[
     /* entries */ PerformanceObserverEntryList, 
@@ -238,7 +237,7 @@ package object stdLib {
   /**
     * Obtain the return type of a function type
     */
-  type ReturnType[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
+  type ReturnType[T /* <: js.Function1[/* args */ js.Any, _] */] = js.Any
   type SVGMatrix = DOMMatrix
   type SVGPathSegClosePath = SVGPathSeg
   type SVGPoint = DOMPoint
@@ -264,12 +263,19 @@ package object stdLib {
   type URIError = Error
   type VibratePattern = scala.Double | js.Array[scala.Double]
   type VoidFunction = js.Function0[scala.Unit]
+  /** The WebGLBuffer interface is part of the WebGL API and represents an opaque buffer object storing data such as vertices or colors. */
   type WebGLBuffer = WebGLObject
+  /** The WebGLFramebuffer interface is part of the WebGL API and represents a collection of buffers that serve as a rendering destination. */
   type WebGLFramebuffer = WebGLObject
+  /** The WebGLProgram is part of the WebGL API and is a combination of two compiled WebGLShaders consisting of a vertex shader and a fragment shader (both written in GLSL). */
   type WebGLProgram = WebGLObject
+  /** The WebGLRenderbuffer interface is part of the WebGL API and represents a buffer that can contain an image, or can be source or target of an rendering operation. */
   type WebGLRenderbuffer = WebGLObject
+  /** The WebGLRenderingContext interface provides an interface to the OpenGL ES 2.0 graphics rendering context for the drawing surface of an HTML <canvas> element. */
   type WebGLRenderingContext = WebGLRenderingContextBase
+  /** The WebGLShader is part of the WebGL API and can either be a vertex or a fragment shader. A WebGLProgram requires both types of shaders. */
   type WebGLShader = WebGLObject
+  /** The WebGLTexture interface is part of the WebGL API and represents an opaque texture object providing storage and state for texturing operations. */
   type WebGLTexture = WebGLObject
   type WebGLVertexArrayObjectOES = WebGLObject
   type WebKitCSSMatrix = DOMMatrix

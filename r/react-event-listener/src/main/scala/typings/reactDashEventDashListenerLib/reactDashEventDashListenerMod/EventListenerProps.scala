@@ -56,8 +56,12 @@ trait EventListenerProps extends js.Object {
   var onEmptiedCapture: js.UndefOr[js.Function1[/* ev */ stdLib.Event, _]] = js.undefined
   var onEnded: js.UndefOr[js.Function1[/* ev */ stdLib.Event, _]] = js.undefined
   var onEndedCapture: js.UndefOr[js.Function1[/* ev */ stdLib.Event, _]] = js.undefined
-  var onError: js.UndefOr[stdLib.ErrorEventHandler] = js.undefined
-  var onErrorCapture: js.UndefOr[stdLib.ErrorEventHandler] = js.undefined
+  var onError: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any
+  ] = js.undefined
+  var onErrorCapture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any
+  ] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* ev */ stdLib.FocusEvent, _]] = js.undefined
   var onFocusCapture: js.UndefOr[js.Function1[/* ev */ stdLib.FocusEvent, _]] = js.undefined
   var onHashChange: js.UndefOr[js.Function1[/* ev */ stdLib.HashChangeEvent, _]] = js.undefined
@@ -265,8 +269,8 @@ object EventListenerProps {
     onEmptiedCapture: /* ev */ stdLib.Event => _ = null,
     onEnded: /* ev */ stdLib.Event => _ = null,
     onEndedCapture: /* ev */ stdLib.Event => _ = null,
-    onError: stdLib.ErrorEventHandler = null,
-    onErrorCapture: stdLib.ErrorEventHandler = null,
+    onError: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any = null,
+    onErrorCapture: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ErrorEventHandler */ js.Any = null,
     onFocus: /* ev */ stdLib.FocusEvent => _ = null,
     onFocusCapture: /* ev */ stdLib.FocusEvent => _ = null,
     onHashChange: /* ev */ stdLib.HashChangeEvent => _ = null,

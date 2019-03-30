@@ -562,10 +562,16 @@ object stripeLibStrings {
   sealed trait subscription_canceled extends js.Object
   
   @js.native
+  sealed trait subscription_create extends js.Object
+  
+  @js.native
   sealed trait subscription_cycle extends js.Object
   
   @js.native
   sealed trait subscription_item extends js.Object
+  
+  @js.native
+  sealed trait subscription_threshold extends js.Object
   
   @js.native
   sealed trait subscription_update extends js.Object
@@ -1022,9 +1028,13 @@ object stripeLibStrings {
   @scala.inline
   def subscription_canceled: subscription_canceled = "subscription_canceled".asInstanceOf[subscription_canceled]
   @scala.inline
+  def subscription_create: subscription_create = "subscription_create".asInstanceOf[subscription_create]
+  @scala.inline
   def subscription_cycle: subscription_cycle = "subscription_cycle".asInstanceOf[subscription_cycle]
   @scala.inline
   def subscription_item: subscription_item = "subscription_item".asInstanceOf[subscription_item]
+  @scala.inline
+  def subscription_threshold: subscription_threshold = "subscription_threshold".asInstanceOf[subscription_threshold]
   @scala.inline
   def subscription_update: subscription_update = "subscription_update".asInstanceOf[subscription_update]
   @scala.inline

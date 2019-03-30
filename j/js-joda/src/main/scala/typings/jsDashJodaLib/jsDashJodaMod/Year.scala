@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "Year")
 @js.native
-class Year ()
+class Year protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.Year {
   /* CompleteClass */
   override def get(field: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalField): scala.Double = js.native

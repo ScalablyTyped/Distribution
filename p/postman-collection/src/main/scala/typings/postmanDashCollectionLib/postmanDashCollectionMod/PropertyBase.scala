@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("postman-collection", "PropertyBase")
 @js.native
-class PropertyBase[TDefinition] () extends PropertyBaseDefinition {
+class PropertyBase[TDefinition /* <: js.Object */] () extends PropertyBaseDefinition {
   def this(definition: java.lang.String) = this()
   def this(definition: postmanDashCollectionLib.Anon_Info) = this()
   def this(definition: PropertyBaseDefinition) = this()

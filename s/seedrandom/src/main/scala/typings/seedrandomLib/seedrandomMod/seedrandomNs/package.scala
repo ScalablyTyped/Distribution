@@ -10,8 +10,7 @@ package object seedrandomNs {
     /* prng */ js.UndefOr[prng], 
     /* shortseed */ js.UndefOr[java.lang.String], 
     /* global */ js.UndefOr[scala.Boolean], 
-    /* state */ js.UndefOr[seedrandomStateType], 
+    /* state */ js.UndefOr[State], 
     prng
   ]
-  type seedrandomStateType = scala.Boolean | js.Function0[prng]
 }

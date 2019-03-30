@@ -31,29 +31,27 @@ trait GetAmiArgs extends js.Object {
     */
   val nameRegex: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Limit search to specific AMI owners. Valid items are the numeric
-    * account ID, `amazon`, or `self`.
+    * List of AMI owners to limit search. At least 1 value must be specified. Valid values: an AWS account ID, `self` (the current account), or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`).
     */
-  val owners: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  val owners: js.Array[java.lang.String]
   val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
 object GetAmiArgs {
   @scala.inline
   def apply(
+    owners: js.Array[java.lang.String],
     executableUsers: js.Array[java.lang.String] = null,
     filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
     mostRecent: js.UndefOr[scala.Boolean] = js.undefined,
     nameRegex: java.lang.String = null,
-    owners: js.Array[java.lang.String] = null,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): GetAmiArgs = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(owners = owners)
     if (executableUsers != null) __obj.updateDynamic("executableUsers")(executableUsers)
     if (filters != null) __obj.updateDynamic("filters")(filters)
     if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
     if (nameRegex != null) __obj.updateDynamic("nameRegex")(nameRegex)
-    if (owners != null) __obj.updateDynamic("owners")(owners)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[GetAmiArgs]
   }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-server-express", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val SyntaxError: stdLib.SyntaxErrorConstructor = js.native
+  var SyntaxError: stdLib.SyntaxErrorConstructor = js.native
   val attachConnectorsToContext: js.Function = js.native
   val defaultMergedResolver: graphqlLib.typeDefinitionMod.GraphQLFieldResolver[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   def addCatchUndefinedToSchema(schema: graphqlLib.graphqlMod.GraphQLSchema): scala.Unit = js.native

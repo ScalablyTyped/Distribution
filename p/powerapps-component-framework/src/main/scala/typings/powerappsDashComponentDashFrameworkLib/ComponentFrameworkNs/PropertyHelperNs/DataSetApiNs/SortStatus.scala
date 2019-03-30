@@ -16,12 +16,15 @@ trait SortStatus extends js.Object {
   /**
   				 * The current sort direction for the column.
   				 */
-  var sortDirection: SortDirection
+  var sortDirection: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.DataSetApiNs.TypesNs.SortDirection
 }
 
 object SortStatus {
   @scala.inline
-  def apply(name: java.lang.String, sortDirection: SortDirection): SortStatus = {
+  def apply(
+    name: java.lang.String,
+    sortDirection: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.DataSetApiNs.TypesNs.SortDirection
+  ): SortStatus = {
     val __obj = js.Dynamic.literal(name = name, sortDirection = sortDirection)
   
     __obj.asInstanceOf[SortStatus]

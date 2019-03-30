@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The ServiceWorkerRegistration interface of the ServiceWorker API represents the service worker registration. You register a service worker to control one or more pages that share the same origin. */
 @js.native
 trait ServiceWorkerRegistration extends EventTarget {
   val active: ServiceWorker | scala.Null = js.native

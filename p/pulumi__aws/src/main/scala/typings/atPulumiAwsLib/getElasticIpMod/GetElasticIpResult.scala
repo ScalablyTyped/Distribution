@@ -31,9 +31,17 @@ trait GetElasticIpResult extends js.Object {
     */
   val networkInterfaceOwnerId: java.lang.String
   /**
+    * The Private DNS associated with the Elastic IP address.
+    */
+  val privateDns: java.lang.String
+  /**
     * The private IP address associated with the Elastic IP address.
     */
   val privateIp: java.lang.String
+  /**
+    * Public DNS associated with the Elastic IP address.
+    */
+  val publicDns: java.lang.String
   /**
     * Public IP address of Elastic IP.
     */
@@ -57,12 +65,14 @@ object GetElasticIpResult {
     instanceId: java.lang.String,
     networkInterfaceId: java.lang.String,
     networkInterfaceOwnerId: java.lang.String,
+    privateDns: java.lang.String,
     privateIp: java.lang.String,
+    publicDns: java.lang.String,
     publicIp: java.lang.String,
     publicIpv4Pool: java.lang.String,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): GetElasticIpResult = {
-    val __obj = js.Dynamic.literal(associationId = associationId, domain = domain, id = id, instanceId = instanceId, networkInterfaceId = networkInterfaceId, networkInterfaceOwnerId = networkInterfaceOwnerId, privateIp = privateIp, publicIp = publicIp, publicIpv4Pool = publicIpv4Pool, tags = tags)
+    val __obj = js.Dynamic.literal(associationId = associationId, domain = domain, id = id, instanceId = instanceId, networkInterfaceId = networkInterfaceId, networkInterfaceOwnerId = networkInterfaceOwnerId, privateDns = privateDns, privateIp = privateIp, publicDns = publicDns, publicIp = publicIp, publicIpv4Pool = publicIpv4Pool, tags = tags)
   
     __obj.asInstanceOf[GetElasticIpResult]
   }

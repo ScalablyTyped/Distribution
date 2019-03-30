@@ -609,7 +609,7 @@ object AFRAMENs extends js.Object {
     @js.native
     class InstancedBufferAttribute protected ()
       extends threeLib.threeMod.InstancedBufferAttribute {
-      def this(data: stdLib.ArrayLike[scala.Double], itemSize: scala.Double) = this()
+      def this(array: stdLib.ArrayLike[scala.Double], itemSize: scala.Double) = this()
     }
     
     @js.native
@@ -759,6 +759,12 @@ object AFRAMENs extends js.Object {
     @js.native
     class LoadingManager ()
       extends threeLib.threeMod.LoadingManager
+    
+    @js.native
+    class Lut protected ()
+      extends threeLib.threeMod.Lut {
+      def this(colormap: threeLib.threeDashLutMod.ColorMapKeyword, numberofcolors: scala.Double) = this()
+    }
     
     @js.native
     class MTLLoader ()

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "ChronoUnit")
 @js.native
-class ChronoUnit ()
+class ChronoUnit protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.ChronoUnit {
   /* CompleteClass */
   override def addTo[T /* <: jsDashJodaLib.jsDashJodaMod.JSJodaNs.Temporal */](temporal: T, amount: scala.Double): T = js.native

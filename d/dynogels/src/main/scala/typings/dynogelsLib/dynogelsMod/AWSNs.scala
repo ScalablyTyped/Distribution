@@ -1296,6 +1296,15 @@ object AWSNs extends js.Object {
   
   @js.native
   /**
+    * Creates a new ProcessCredentials object.
+    */
+  class ProcessCredentials ()
+    extends awsDashSdkLib.awsDashSdkMod.ProcessCredentials {
+    def this(options: awsDashSdkLib.libCredentialsProcessUnderscoreCredentialsMod.ProcessCredentialsOptions) = this()
+  }
+  
+  @js.native
+  /**
     * Constructs a service object. This object has one method for each API operation.
     */
   class QuickSight ()

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "LocalDateTime")
 @js.native
-class LocalDateTime ()
+class LocalDateTime protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.LocalDateTime {
   /* CompleteClass */
   override def adjustInto(temporal: js.Any): js.Any = js.native

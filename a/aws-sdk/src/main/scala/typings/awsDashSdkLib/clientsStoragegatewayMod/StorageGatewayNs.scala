@@ -34,7 +34,7 @@ object StorageGatewayNs extends js.Object {
       */
     var MediumChangerType: js.UndefOr[MediumChangerType] = js.undefined
     /**
-      * A list of up to ten (10) tags assigned to the gateway may be specified. Every tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
+      * A list of up to 10 tags that can be assigned to the gateway. Each tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
       */
     var Tags: js.UndefOr[Tags] = js.undefined
     /**
@@ -344,11 +344,11 @@ object StorageGatewayNs extends js.Object {
       */
     var Role: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.Role
     /**
-      * Maps a user to anonymous user. Valid options are the following:     RootSquash - Only root is mapped to anonymous user.    NoSquash - No one is mapped to anonymous user    AllSquash - Everyone is mapped to anonymous user.  
+      * A value that maps a user to anonymous user. Valid options are the following:     RootSquash - Only root is mapped to anonymous user.    NoSquash - No one is mapped to anonymous user    AllSquash - Everyone is mapped to anonymous user.  
       */
     var Squash: js.UndefOr[Squash] = js.undefined
     /**
-      * A list of up to ten (10) tags can be assigned to the NFS file share. Every tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
+      * A list of up to 10 tags that can be assigned to the NFS file share. Each tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
       */
     var Tags: js.UndefOr[Tags] = js.undefined
   }
@@ -414,7 +414,7 @@ object StorageGatewayNs extends js.Object {
       */
     var Role: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.Role
     /**
-      * A list of up to ten (10) tags can be assigned to the NFS file share. Every tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
+      * A list of up to 10 tags that can be assigned to the NFS file share. Each tag is a key-value pair.  Valid characters for key and value are letters, spaces, and numbers representable in UTF-8 format, and the following special characters: + - = . _ : / @. The maximum length of a tag's key is 128 characters, and the maximum length for a tag's value is 256. 
       */
     var Tags: js.UndefOr[Tags] = js.undefined
     /**
@@ -539,6 +539,10 @@ object StorageGatewayNs extends js.Object {
       */
     var KMSKey: js.UndefOr[KMSKey] = js.undefined
     /**
+      * The ID of the pool that you want to add your tape to for archiving. The tape in this pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (Glacier or Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
+      */
+    var PoolId: js.UndefOr[PoolId] = js.undefined
+    /**
       * The barcode that you want to assign to the tape.  Barcodes cannot be reused. This includes barcodes used for tapes that have been deleted. 
       */
     var TapeBarcode: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.TapeBarcode
@@ -576,6 +580,10 @@ object StorageGatewayNs extends js.Object {
       * The number of virtual tapes that you want to create.
       */
     var NumTapesToCreate: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.NumTapesToCreate
+    /**
+      * The ID of the pool that you want to add your tape to for archiving. The tape in this pool is archived in the S3 storage class you chose when you created the tape. When you use your backup application to eject the tape, the tape is archived directly into the storage class (Glacier or Deep Archive). Valid values: "GLACIER", "DEEP_ARCHIVE"
+      */
+    var PoolId: js.UndefOr[PoolId] = js.undefined
     /**
       * A prefix that you append to the barcode of the virtual tape you are creating. This prefix makes the barcode unique.  The prefix must be 1 to 4 characters in length and must be one of the uppercase letters from A to Z. 
       */
@@ -828,7 +836,7 @@ object StorageGatewayNs extends js.Object {
       */
     var NextUpdateAvailabilityDate: js.UndefOr[NextUpdateAvailabilityDate] = js.undefined
     /**
-      * A list of up to ten (10) tags assigned to the gateway are returned, sorted alphabetically by key name. Every tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API.
+      * A list of up to 10 tags assigned to the gateway, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
       */
     var Tags: js.UndefOr[Tags] = js.undefined
   }
@@ -1449,7 +1457,7 @@ object StorageGatewayNs extends js.Object {
     var Role: js.UndefOr[Role] = js.undefined
     var Squash: js.UndefOr[Squash] = js.undefined
     /**
-      * A list of up to ten (10) tags assigned to the NFS file share are returned, sorted alphabetically by key name. Every tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API.
+      * A list of up to 10 tags assigned to the NFS file share, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
       */
     var Tags: js.UndefOr[Tags] = js.undefined
   }
@@ -1596,7 +1604,7 @@ object StorageGatewayNs extends js.Object {
     var RequesterPays: js.UndefOr[Boolean] = js.undefined
     var Role: js.UndefOr[Role] = js.undefined
     /**
-      * A list of up to ten (10) tags assigned to the SMB file share are returned, sorted alphabetically by key name. Every tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API.
+      * A list of up to 10 tags assigned to the SMB file share, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
       */
     var Tags: js.UndefOr[Tags] = js.undefined
     /**
@@ -1722,6 +1730,10 @@ object StorageGatewayNs extends js.Object {
   trait Tape extends js.Object {
     var KMSKey: js.UndefOr[KMSKey] = js.undefined
     /**
+      * The ID of the pool that contains tapes that will be archived. The tapes in this pool are archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (Glacier or Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
+      */
+    var PoolId: js.UndefOr[PoolId] = js.undefined
+    /**
       * For archiving virtual tapes, indicates how much data remains to be uploaded before archiving is complete. Range: 0 (not started) to 100 (complete).
       */
     var Progress: js.UndefOr[DoubleObject] = js.undefined
@@ -1762,6 +1774,10 @@ object StorageGatewayNs extends js.Object {
     var CompletionTime: js.UndefOr[Time] = js.undefined
     var KMSKey: js.UndefOr[KMSKey] = js.undefined
     /**
+      * The ID of the pool that was used to archive the tape. The tapes in this pool are archived in the S3 storage class that is associated with the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
+      */
+    var PoolId: js.UndefOr[PoolId] = js.undefined
+    /**
       * The Amazon Resource Name (ARN) of the tape gateway that the virtual tape is being retrieved to. The virtual tape is retrieved from the virtual tape shelf (VTS).
       */
     var RetrievedTo: js.UndefOr[GatewayARN] = js.undefined
@@ -1796,6 +1812,10 @@ object StorageGatewayNs extends js.Object {
       * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and region.
       */
     var GatewayARN: js.UndefOr[GatewayARN] = js.undefined
+    /**
+      * The ID of the pool that you want to add your tape to for archiving. The tape in this pool is archived in the S3 storage class that is associated with the pool. When you use your backup application to eject the tape, the tape is archived directly into the storage class (Glacier or Deep Archive) that corresponds to the pool. Valid values: "GLACIER", "DEEP_ARCHIVE"
+      */
+    var PoolId: js.UndefOr[PoolId] = js.undefined
     /**
       * The Amazon Resource Name (ARN) of a virtual tape.
       */
@@ -1877,7 +1897,7 @@ object StorageGatewayNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ AddCacheOutput, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[AddCacheOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds one or more tags to the specified resource. You use tags to add metadata to resources, which you can use to categorize these resources. For example, you can categorize resources by purpose, owner, environment, or team. Each tag consists of a key and a value, which you define. You can add tags to the following AWS Storage Gateway resources:   Storage gateways of all types   Storage Volumes   Virtual Tapes   NFS and SMB File Shares   You can create a maximum of 10 tags for each resource. Virtual tapes and storage volumes that are recovered to a new gateway maintain their tags.
+      * Adds one or more tags to the specified resource. You use tags to add metadata to resources, which you can use to categorize these resources. For example, you can categorize resources by purpose, owner, environment, or team. Each tag consists of a key and a value, which you define. You can add tags to the following AWS Storage Gateway resources:   Storage gateways of all types   Storage volumes   Virtual tapes   NFS and SMB file shares   You can create a maximum of 10 tags for each resource. Virtual tapes and storage volumes that are recovered to a new gateway maintain their tags.
       */
     def addTagsToResource(): awsDashSdkLib.libRequestMod.Request[AddTagsToResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def addTagsToResource(
@@ -1888,7 +1908,7 @@ object StorageGatewayNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AddTagsToResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds one or more tags to the specified resource. You use tags to add metadata to resources, which you can use to categorize these resources. For example, you can categorize resources by purpose, owner, environment, or team. Each tag consists of a key and a value, which you define. You can add tags to the following AWS Storage Gateway resources:   Storage gateways of all types   Storage Volumes   Virtual Tapes   NFS and SMB File Shares   You can create a maximum of 10 tags for each resource. Virtual tapes and storage volumes that are recovered to a new gateway maintain their tags.
+      * Adds one or more tags to the specified resource. You use tags to add metadata to resources, which you can use to categorize these resources. For example, you can categorize resources by purpose, owner, environment, or team. Each tag consists of a key and a value, which you define. You can add tags to the following AWS Storage Gateway resources:   Storage gateways of all types   Storage volumes   Virtual tapes   NFS and SMB file shares   You can create a maximum of 10 tags for each resource. Virtual tapes and storage volumes that are recovered to a new gateway maintain their tags.
       */
     def addTagsToResource(params: AddTagsToResourceInput): awsDashSdkLib.libRequestMod.Request[AddTagsToResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def addTagsToResource(
@@ -3880,6 +3900,7 @@ object StorageGatewayNs extends js.Object {
   type Path = java.lang.String
   type PermissionId = scala.Double
   type PermissionMode = java.lang.String
+  type PoolId = java.lang.String
   type PositiveIntObject = scala.Double
   type RecurrenceInHours = scala.Double
   type RegionId = java.lang.String

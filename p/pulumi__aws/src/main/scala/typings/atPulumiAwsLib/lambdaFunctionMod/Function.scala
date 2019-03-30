@@ -76,7 +76,7 @@ class Function protected ()
     */
   val qualifiedArn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * The amount of reserved concurrent executions for this lambda function. Defaults to Unreserved Concurrency Limits. See [Managing Concurrency][9]
+    * The amount of reserved concurrent executions for this lambda function. A value of `0` disables lambda from being triggered and `-1` removes any concurrency limitations. Defaults to Unreserved Concurrency Limits `-1`. See [Managing Concurrency][9]
     */
   val reservedConcurrentExecutions: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**

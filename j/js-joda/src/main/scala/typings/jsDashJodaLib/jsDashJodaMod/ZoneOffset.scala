@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "ZoneOffset")
 @js.native
-class ZoneOffset ()
+class ZoneOffset protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneOffset {
   /* CompleteClass */
   override def adjustInto(temporal: jsDashJodaLib.jsDashJodaMod.JSJodaNs.Temporal): jsDashJodaLib.jsDashJodaMod.JSJodaNs.Temporal = js.native

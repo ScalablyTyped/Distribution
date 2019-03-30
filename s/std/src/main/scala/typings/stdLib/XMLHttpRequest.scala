@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** Use XMLHttpRequest (XHR) objects to interact with servers. You can retrieve data from a URL without having to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the user is doing. */
 @js.native
 trait XMLHttpRequest extends XMLHttpRequestEventTarget {
   val DONE: scala.Double = js.native
@@ -139,7 +140,8 @@ trait XMLHttpRequest extends XMLHttpRequestEventTarget {
     options: EventListenerOptions
   ): scala.Unit = js.native
   /**
-    * Initiates the request. The optional argument provides the request body. The argument is ignored if request method is GET or HEAD.
+    * Initiates the request. The body argument provides the request body, if any,
+    * and is ignored if the request method is GET or HEAD.
     * Throws an "InvalidStateError" DOMException if either state is not opened or the send() flag is set.
     */
   def send(): scala.Unit = js.native

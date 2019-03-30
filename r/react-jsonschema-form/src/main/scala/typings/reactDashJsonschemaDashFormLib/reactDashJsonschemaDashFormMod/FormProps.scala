@@ -27,7 +27,7 @@ trait FormProps[T] extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var noHtml5Validate: js.UndefOr[scala.Boolean] = js.undefined
   var noValidate: js.UndefOr[scala.Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ IChangeEvent[T], _]] = js.undefined
+  var onChange: js.UndefOr[js.Function2[/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema], _]] = js.undefined
   var onError: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
   var onSubmit: js.UndefOr[js.Function1[/* e */ ISubmitEvent[T], _]] = js.undefined
   var safeRenderCompletion: js.UndefOr[scala.Boolean] = js.undefined
@@ -64,7 +64,7 @@ object FormProps {
     name: java.lang.String = null,
     noHtml5Validate: js.UndefOr[scala.Boolean] = js.undefined,
     noValidate: js.UndefOr[scala.Boolean] = js.undefined,
-    onChange: /* e */ IChangeEvent[T] => _ = null,
+    onChange: (/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema]) => _ = null,
     onError: /* e */ js.Any => _ = null,
     onSubmit: /* e */ ISubmitEvent[T] => _ = null,
     safeRenderCompletion: js.UndefOr[scala.Boolean] = js.undefined,
@@ -96,7 +96,7 @@ object FormProps {
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(noHtml5Validate)) __obj.updateDynamic("noHtml5Validate")(noHtml5Validate)
     if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate)
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1(onSubmit))
     if (!js.isUndefined(safeRenderCompletion)) __obj.updateDynamic("safeRenderCompletion")(safeRenderCompletion)

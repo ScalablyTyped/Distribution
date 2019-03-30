@@ -17,7 +17,7 @@ trait UploadTask extends js.Object {
   var snapshot: UploadTaskSnapshot = js.native
   /**
     * Cancels a running task. Has no effect on a complete or failed task.
-    * @return {boolean} True if the cancel had an effect.
+    * @return True if the cancel had an effect.
     */
   def cancel(): scala.Boolean = js.native
   /**
@@ -40,7 +40,7 @@ trait UploadTask extends js.Object {
     * function to unregister the associated callbacks.
     *
     * @example **Pass callbacks separately or in an object.**
-    * ```
+    * ```javascript
     * var next = function(snapshot) {};
     * var error = function(error) {};
     * var complete = function() {};
@@ -73,7 +73,7 @@ trait UploadTask extends js.Object {
     * ```
     *
     * @example **Any callback is optional.**
-    * ```
+    * ```javascript
     * // Just listening for completion, this is legal.
     * uploadTask.on(
     *     firebase.storage.TaskEvent.STATE_CHANGED,
@@ -98,7 +98,7 @@ trait UploadTask extends js.Object {
     * ```
     *
     * @example **Use the returned function to remove callbacks.**
-    * ```
+    * ```javascript
     * var unsubscribe = uploadTask.on(
     *     firebase.storage.TaskEvent.STATE_CHANGED,
     *     function(snapshot) {
@@ -118,62 +118,55 @@ trait UploadTask extends js.Object {
     * });
     * ```
     *
-    * @param {!firebase.storage.TaskEvent} event The event to listen for.
-    * @param {(?firebase.Observer<firebase.storage.UploadTaskSnapshot,Error>|
-    *       ?function(!Object))=} nextOrObserver
+    * @param event The event to listen for.
+    * @param nextOrObserver
     *     The `next` function, which gets called for each item in
     *     the event stream, or an observer object with some or all of these three
     *     properties (`next`, `error`, `complete`).
-    * @param {?function(!Error)=} error A function that gets called with an Error
+    * @param error A function that gets called with an Error
     *     if the event stream ends due to an error.
-    * @param {?firebase.CompleteFn=} complete A function that gets called if the
+    * @param complete A function that gets called if the
     *     event stream ends normally.
-    * @return {
-    *     !firebase.Unsubscribe|
-    *     !function(?function(!Object),?function(!Error)=,?firebase.CompleteFn=)
-    *       :!firebase.Unsubscribe}
+    * @return
     *     If only the event argument is passed, returns a function you can use to
     *     add callbacks (see the examples above). If more than just the event
     *     argument is passed, returns a function you can call to unregister the
     *     callbacks.
     */
   def on(event: TaskEvent): js.Function = js.native
+  def on(event: TaskEvent, nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error]): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[UploadTaskSnapshot, stdLib.Error]
-  ): js.Function = js.native
-  def on(
-    event: TaskEvent,
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[UploadTaskSnapshot, stdLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
     error: js.Function1[/* a */ stdLib.Error, _]
   ): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[UploadTaskSnapshot, stdLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
     error: js.Function1[/* a */ stdLib.Error, _],
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[UploadTaskSnapshot, stdLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
     error: scala.Null,
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): js.Function = js.native
-  def on(event: TaskEvent, nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _]): js.Function = js.native
+  def on(event: TaskEvent, nextOrObserver: js.Function1[/* a */ js.Object, _]): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _],
+    nextOrObserver: js.Function1[/* a */ js.Object, _],
     error: js.Function1[/* a */ stdLib.Error, _]
   ): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _],
+    nextOrObserver: js.Function1[/* a */ js.Object, _],
     error: js.Function1[/* a */ stdLib.Error, _],
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _],
+    nextOrObserver: js.Function1[/* a */ js.Object, _],
     error: scala.Null,
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): js.Function = js.native
@@ -192,20 +185,20 @@ trait UploadTask extends js.Object {
   ): js.Function = js.native
   /**
     * Pauses a running task. Has no effect on a paused or failed task.
-    * @return {boolean} True if the pause had an effect.
+    * @return True if the pause had an effect.
     */
   def pause(): scala.Boolean = js.native
   /**
     * Resumes a paused task. Has no effect on a running or failed task.
-    * @return {boolean} True if the resume had an effect.
+    * @return True if the resume had an effect.
     */
   def resume(): scala.Boolean = js.native
   /**
     * This object behaves like a Promise, and resolves with its snapshot data when
     * the upload completes.
-    * @param {(?function(!firebase.storage.UploadTaskSnapshot):*)=} onFulfilled
+    * @param onFulfilled
     *     The fulfillment callback. Promise chaining works as normal.
-    * @param {(?function(!Error):*)=} onRejected The rejection callback.
+    * @param onRejected The rejection callback.
     */
   def `then`(): js.Promise[_] = js.native
   def `then`(onFulfilled: js.Function1[/* a */ UploadTaskSnapshot, _]): js.Promise[_] = js.native

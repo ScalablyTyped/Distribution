@@ -5,14 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLObjectElement interface provides special properties and methods (beyond those on the HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of <object> element, representing external resources. */
 @js.native
-trait HTMLObjectElement
-  extends HTMLElement
-     with GetSVGDocument {
-  /**
-    * Retrieves a string of the URL where the object tag can be found. This is often the href of the document that the object is in, or the value set by a base element.
-    */
-  val BaseHref: java.lang.String = js.native
+trait HTMLObjectElement extends HTMLElement {
   /** @deprecated */
   var align: java.lang.String = js.native
   /**
@@ -41,6 +36,7 @@ trait HTMLObjectElement
     * Retrieves the document object of the page or frame.
     */
   val contentDocument: Document | scala.Null = js.native
+  val contentWindow: WindowProxy | scala.Null = js.native
   /**
     * Sets or retrieves the URL that references the data of the object.
     */
@@ -58,26 +54,9 @@ trait HTMLObjectElement
   /** @deprecated */
   var hspace: scala.Double = js.native
   /**
-    * Gets or sets whether the DLNA PlayTo device is available.
-    */
-  var msPlayToDisabled: scala.Boolean = js.native
-  /**
-    * Gets or sets the path to the preferred media source. This enables the Play To target device to stream the media content, which can be DRM protected, from a different location, such as a cloud media server.
-    */
-  var msPlayToPreferredSourceUri: java.lang.String = js.native
-  /**
-    * Gets or sets the primary DLNA PlayTo device.
-    */
-  var msPlayToPrimary: scala.Boolean = js.native
-  /**
-    * Gets the source associated with the media element for use by the PlayToManager.
-    */
-  val msPlayToSource: js.Any = js.native
-  /**
     * Sets or retrieves the name of the object.
     */
   var name: java.lang.String = js.native
-  val readyState: scala.Double = js.native
   /**
     * Sets or retrieves a message to be displayed while an object is loading.
     */
@@ -87,7 +66,7 @@ trait HTMLObjectElement
     * Sets or retrieves the MIME type of the object.
     */
   var `type`: java.lang.String = js.native
-  var typemustmatch: scala.Boolean = js.native
+  var typeMustMatch: scala.Boolean = js.native
   /**
     * Sets or retrieves the URL, often with a bookmark extension (#name), to use as a client-side image map.
     */
@@ -110,30 +89,11 @@ trait HTMLObjectElement
     * Returns whether an element will successfully validate based on forms validation rules and constraints.
     */
   val willValidate: scala.Boolean = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(
-    `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
-    options: AddEventListenerOptions
-  ): scala.Unit = js.native
   /**
     * Returns whether a form will validate when it is submitted, without having to submit it.
     */
   def checkValidity(): scala.Boolean = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(
-    `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
-  ): scala.Unit = js.native
+  def getSVGDocument(): Document | scala.Null = js.native
   def reportValidity(): scala.Boolean = js.native
   /**
     * Sets a custom error message that is displayed when a form is submitted.
@@ -167,8 +127,6 @@ class HTMLObjectElementCls () extends HTMLObjectElement {
   override val previousElementSibling: Element | scala.Null = js.native
   /* CompleteClass */
   override val style: CSSStyleDeclaration = js.native
-  /* CompleteClass */
-  override def getSVGDocument(): Document = js.native
 }
 
 @JSGlobal("HTMLObjectElement")

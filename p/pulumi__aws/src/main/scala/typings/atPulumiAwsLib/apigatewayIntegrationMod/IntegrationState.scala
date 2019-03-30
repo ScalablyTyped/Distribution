@@ -59,10 +59,6 @@ trait IntegrationState extends js.Object {
     ]
   ] = js.undefined
   /**
-    * **Deprecated**, use `request_parameters` instead.
-    */
-  val requestParametersInJson: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
-  /**
     * A map of the integration's request templates.
     */
   val requestTemplates: js.UndefOr[
@@ -109,7 +105,6 @@ object IntegrationState {
     requestParameters: atPulumiPulumiLib.outputMod.Input[
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ] = null,
-    requestParametersInJson: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     requestTemplates: atPulumiPulumiLib.outputMod.Input[
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ] = null,
@@ -130,7 +125,6 @@ object IntegrationState {
     if (integrationHttpMethod != null) __obj.updateDynamic("integrationHttpMethod")(integrationHttpMethod.asInstanceOf[js.Any])
     if (passthroughBehavior != null) __obj.updateDynamic("passthroughBehavior")(passthroughBehavior.asInstanceOf[js.Any])
     if (requestParameters != null) __obj.updateDynamic("requestParameters")(requestParameters.asInstanceOf[js.Any])
-    if (requestParametersInJson != null) __obj.updateDynamic("requestParametersInJson")(requestParametersInJson.asInstanceOf[js.Any])
     if (requestTemplates != null) __obj.updateDynamic("requestTemplates")(requestTemplates.asInstanceOf[js.Any])
     if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
     if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])

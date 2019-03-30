@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGSymbolElement interface corresponds to the <symbol> element. */
 @js.native
 trait SVGSymbolElement
   extends SVGElement

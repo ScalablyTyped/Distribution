@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable/build/src/interactions", "Drag")
 @js.native
 class Drag ()
-  extends plottableLib.buildSrcInteractionsDragInteractionMod.Drag
+  extends plottableLib.buildSrcInteractionsDragInteractionMod.Drag {
+  def this(mouseButton: scala.Double) = this()
+}
 
 /* static members */
 @JSImport("plottable/build/src/interactions", "Drag")

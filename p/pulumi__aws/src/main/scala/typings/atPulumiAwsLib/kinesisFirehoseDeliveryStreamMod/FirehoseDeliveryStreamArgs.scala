@@ -44,7 +44,7 @@ trait FirehoseDeliveryStreamArgs extends js.Object {
     atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CloudwatchLoggingOptionsClusterJdbcurl]
   ] = js.undefined
   /**
-    * Configuration options for the s3 destination (or the intermediate bucket if the destination
+    * Required for non-S3 destinations. For S3 destination, use `extended_s3_configuration` instead. Configuration options for the s3 destination (or the intermediate bucket if the destination
     * is redshift). More details are given below.
     */
   val s3Configuration: js.UndefOr[

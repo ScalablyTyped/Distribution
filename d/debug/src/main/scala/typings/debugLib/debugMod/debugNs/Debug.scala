@@ -15,5 +15,6 @@ trait Debug extends js.Object {
   def disable(): java.lang.String = js.native
   def enable(namespaces: java.lang.String): scala.Unit = js.native
   def enabled(namespaces: java.lang.String): scala.Boolean = js.native
+  def log(args: js.Any*): js.Any = js.native
 }
 

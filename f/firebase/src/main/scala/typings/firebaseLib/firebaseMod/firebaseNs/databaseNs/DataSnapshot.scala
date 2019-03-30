@@ -30,7 +30,7 @@ trait DataSnapshot extends js.Object {
     * However, accessing the key on the root URL of a Database will return `null`.
     *
     * @example
-    * ```
+    * ```javascript
     * // Assume we have the following data in the Database:
     * {
     *   "name": {
@@ -48,7 +48,7 @@ trait DataSnapshot extends js.Object {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * var rootRef = firebase.database().ref();
     * rootRef.once("value")
     *   .then(function(snapshot) {
@@ -73,7 +73,7 @@ trait DataSnapshot extends js.Object {
     * whose value is `null`) is returned.
     *
     * @example
-    * ```
+    * ```javascript
     * // Assume we have the following data in the Database:
     * {
     *   "name": {
@@ -93,7 +93,7 @@ trait DataSnapshot extends js.Object {
     *   });
     * ```
     *
-    * @param {string} path A relative path to the location of child data.
+    * @param path A relative path to the location of child data.
     */
   def child(path: java.lang.String): DataSnapshot
   /**
@@ -101,7 +101,7 @@ trait DataSnapshot extends js.Object {
     * efficient than using `snapshot.val() !== null`.
     *
     * @example
-    * ```
+    * ```javascript
     * // Assume we have the following data in the Database:
     * {
     *   "name": {
@@ -120,8 +120,6 @@ trait DataSnapshot extends js.Object {
     *     var d = snapshot.child("name/middle").exists(); // false
     *   });
     * ```
-    *
-    * @return {boolean}
     */
   def exists(): scala.Boolean
   /**
@@ -130,7 +128,7 @@ trait DataSnapshot extends js.Object {
     * The `exportVal()` method is similar to `val()`, except priority information
     * is included (if available), making it suitable for backing up your data.
     *
-    * @return {*} The DataSnapshot's contents as a JavaScript value (Object,
+    * @return The DataSnapshot's contents as a JavaScript value (Object,
     *   Array, string, number, boolean, or `null`).
     */
   def exportVal(): js.Any
@@ -148,7 +146,7 @@ trait DataSnapshot extends js.Object {
     * returned by priority).
     *
     * @example
-    * ```
+    * ```javascript
     * // Assume we have the following data in the Database:
     * {
     *   "users": {
@@ -179,7 +177,7 @@ trait DataSnapshot extends js.Object {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // You can cancel the enumeration at any point by having your callback
     * // function return true. For example, the following code sample will only
     * // fire the callback function one time:
@@ -195,10 +193,10 @@ trait DataSnapshot extends js.Object {
     * });
     * ```
     *
-    * @param {function(!firebase.database.DataSnapshot): boolean} action A function
+    * @param action A function
     *   that will be called for each child DataSnapshot. The callback can return
     *   true to cancel further enumeration.
-    * @return {boolean} true if enumeration was canceled due to your callback
+    * @return true if enumeration was canceled due to your callback
     *   returning true.
     */
   def forEach(action: js.Function1[/* a */ this.type, scala.Boolean | scala.Unit]): scala.Boolean
@@ -216,7 +214,7 @@ trait DataSnapshot extends js.Object {
     * Returns true if the specified child path has (non-null) data.
     *
     * @example
-    * ```
+    * ```javascript
     * // Assume we have the following data in the Database:
     * {
     *   "name": {
@@ -234,8 +232,8 @@ trait DataSnapshot extends js.Object {
     *   });
     * ```
     *
-    * @param {string} path A relative path to the location of a potential child.
-    * @return {boolean} `true` if data exists at the specified child path; else
+    * @param path A relative path to the location of a potential child.
+    * @return `true` if data exists at the specified child path; else
     *  `false`.
     */
   def hasChild(path: java.lang.String): scala.Boolean
@@ -250,7 +248,7 @@ trait DataSnapshot extends js.Object {
     * `null`).
     *
     * @example
-    * ```
+    * ```javascript
     * // Assume we have the following data in the Database:
     * {
     *   "name": {
@@ -268,14 +266,14 @@ trait DataSnapshot extends js.Object {
     *   });
     * ```
     *
-    * @return {boolean} true if this snapshot has any children; else false.
+    * @return true if this snapshot has any children; else false.
     */
   def hasChildren(): scala.Boolean
   /**
     * Returns the number of child properties of this `DataSnapshot`.
     *
     * @example
-    * ```
+    * ```javascript
     * // Assume we have the following data in the Database:
     * {
     *   "name": {
@@ -306,7 +304,7 @@ trait DataSnapshot extends js.Object {
     * return null, indicating that the `DataSnapshot` is empty (contains no data).
     *
     * @example
-    * ```
+    * ```javascript
     * // Write and then read back a string from the Database.
     * ref.set("hello")
     *   .then(function() {
@@ -318,7 +316,7 @@ trait DataSnapshot extends js.Object {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Write and then read back a JavaScript object from the Database.
     * ref.set({ name: "Ada", age: 36 })
     *   .then(function() {
@@ -332,7 +330,7 @@ trait DataSnapshot extends js.Object {
     *   });
     * ```
     *
-    * @return {*} The DataSnapshot's contents as a JavaScript value (Object,
+    * @return The DataSnapshot's contents as a JavaScript value (Object,
     *   Array, string, number, boolean, or `null`).
     */
   def `val`(): js.Any

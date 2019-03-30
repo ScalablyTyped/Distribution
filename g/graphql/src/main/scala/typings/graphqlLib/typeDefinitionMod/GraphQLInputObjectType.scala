@@ -19,6 +19,7 @@ class GraphQLInputObjectType protected ()
   var name: java.lang.String = js.native
   def getFields(): GraphQLInputFieldMap = js.native
   def inspect(): java.lang.String = js.native
+  def toConfig(): GraphQLInputObjectTypeConfig with graphqlLib.Anon_ExtensionASTNodesFieldsGraphQLInputFieldConfigMap = js.native
   def toJSON(): java.lang.String = js.native
 }
 

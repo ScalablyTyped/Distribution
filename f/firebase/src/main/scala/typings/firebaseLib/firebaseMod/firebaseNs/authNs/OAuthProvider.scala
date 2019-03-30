@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
   * Generic OAuth provider.
   *
   * @example
-  * ```
+  * ```javascript
   * // Using a redirect.
   * firebase.auth().getRedirectResult().then(function(result) {
   *   if (result.credential) {
@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
   * firebase.auth().signInWithRedirect(provider);
   * ```
   * @example
-  * ```
+  * ```javascript
   * // Using a popup.
   * var provider = new firebase.auth.OAuthProvider('google.com');
   * provider.addScope('profile');
@@ -41,12 +41,12 @@ import scala.scalajs.js.annotation._
   *
   * @see {@link firebase.auth.Auth.onAuthStateChanged} to receive sign in state
   * changes.
-  * @param {string} providerId The associated provider ID, such as `github.com`.
+  * @param providerId The associated provider ID, such as `github.com`.
   */
 @js.native
 trait OAuthProvider extends AuthProvider {
   /**
-    * @param {string} scope Provider OAuth scope to add.
+    * @param scope Provider OAuth scope to add.
     */
   def addScope(scope: java.lang.String): AuthProvider = js.native
   /**
@@ -54,7 +54,7 @@ trait OAuthProvider extends AuthProvider {
     * ID token.
     *
     * @example
-    * ```
+    * ```javascript
     * // `googleUser` from the onsuccess Google Sign In callback.
     * // Initialize a generate OAuth provider with a `google.com` providerId.
     * var provider = new firebase.auth.OAuthProvider('google.com');
@@ -63,8 +63,8 @@ trait OAuthProvider extends AuthProvider {
     * firebase.auth().signInWithCredential(credential)
     * ```
     *
-    * @param {?string=} idToken The OAuth ID token if OIDC compliant.
-    * @param {?string=} accessToken The OAuth access token.
+    * @param idToken The OAuth ID token if OIDC compliant.
+    * @param accessToken The OAuth access token.
     */
   def credential(): OAuthCredential = js.native
   def credential(idToken: java.lang.String): OAuthCredential = js.native
@@ -75,7 +75,7 @@ trait OAuthProvider extends AuthProvider {
     * For a detailed list, check the
     * reserved required OAuth 2.0 parameters such as `client_id`, `redirect_uri`,
     * `scope`, `response_type` and `state` are not allowed and will be ignored.
-    * @param {!Object} customOAuthParameters The custom OAuth parameters to pass
+    * @param customOAuthParameters The custom OAuth parameters to pass
     *     in the OAuth request.
     */
   def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native

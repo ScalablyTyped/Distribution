@@ -31,5 +31,6 @@ class GraphQLSchema protected () extends js.Object {
     abstractType: graphqlLib.typeDefinitionMod.GraphQLAbstractType,
     possibleType: graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): scala.Boolean = js.native
+  def toConfig(): GraphQLSchemaConfig with graphqlLib.Anon_DirectivesExtensionASTNodes = js.native
 }
 

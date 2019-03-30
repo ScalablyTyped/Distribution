@@ -1,0 +1,8 @@
+[debug] PhaseRunner.scala:90 Ignored [id => gatsby, phase => typescript] 
+[info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(react)) for TsIdentLibrarySimple(gatsby) [id => gatsby, phase => typescript, file => ../node_modules/gatsby/index.d.ts] 
+[debug] PhaseRunner.scala:82 Success [id => gatsby, phase => typescript] 
+[warn ] PhaseRunner.scala:68 Failed because of, [xstate => InFile(/home/tso/tmp/tso-cache/npm/node_modules/xstate/lib/actionTypes.d.ts): Parse error at 2.30 boolean literal expected] [id => gatsby, phase => typescript] 
+[error] PhaseRunner.scala:86 Failure, [xstate => InFile(/home/tso/tmp/tso-cache/npm/node_modules/xstate/lib/actionTypes.d.ts): Parse error at 2.30 boolean literal expected] [id => gatsby, phase => typescript] 
+[error] PhaseRunner.scala:86 Failure, [xstate => InFile(/home/tso/tmp/tso-cache/npm/node_modules/xstate/lib/actionTypes.d.ts): Parse error at 2.30 boolean literal expected] [id => gatsby, phase => scala.js] 
+[error] PhaseRunner.scala:86 Failure, [xstate => InFile(/home/tso/tmp/tso-cache/npm/node_modules/xstate/lib/actionTypes.d.ts): Parse error at 2.30 boolean literal expected] [id => gatsby, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [xstate => InFile(/home/tso/tmp/tso-cache/npm/node_modules/xstate/lib/actionTypes.d.ts): Parse error at 2.30 boolean literal expected] [id => gatsby, phase => publish] 

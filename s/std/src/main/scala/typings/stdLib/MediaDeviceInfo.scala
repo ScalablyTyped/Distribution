@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The MediaDevicesInfo interface contains information that describes a single media input or output device. */
 trait MediaDeviceInfo extends js.Object {
   val deviceId: java.lang.String
   val groupId: java.lang.String

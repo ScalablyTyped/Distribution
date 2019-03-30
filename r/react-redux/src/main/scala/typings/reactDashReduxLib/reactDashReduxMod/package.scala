@@ -63,7 +63,7 @@ package object reactDashReduxMod {
     /* factoryOptions */ TFactoryOptions, 
     Selector[S, TProps, TOwnProps]
   ]
-  type Shared[InjectedProps, DecorationTargetProps /* <: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-redux.react-redux.Shared<InjectedProps, DecorationTargetProps> */ js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Shared[InjectedProps, DecorationTargetProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? DecorationTargetProps[P]}
     */ reactDashReduxLib.reactDashReduxLibStrings.Shared with DecorationTargetProps
 }

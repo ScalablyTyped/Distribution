@@ -1,0 +1,29 @@
+package typings
+package naverDashWhaleLib.whaleNs.privacyNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Websites extends js.Object {
+  var hyperlinkAuditingEnabled: chromeLib.chromeNs.typesNs.ChromeSetting
+  /** @since Chrome 21. */
+  var protectedContentEnabled: chromeLib.chromeNs.typesNs.ChromeSetting
+  var referrersEnabled: chromeLib.chromeNs.typesNs.ChromeSetting
+  var thirdPartyCookiesAllowed: chromeLib.chromeNs.typesNs.ChromeSetting
+}
+
+object Websites {
+  @scala.inline
+  def apply(
+    hyperlinkAuditingEnabled: chromeLib.chromeNs.typesNs.ChromeSetting,
+    protectedContentEnabled: chromeLib.chromeNs.typesNs.ChromeSetting,
+    referrersEnabled: chromeLib.chromeNs.typesNs.ChromeSetting,
+    thirdPartyCookiesAllowed: chromeLib.chromeNs.typesNs.ChromeSetting
+  ): Websites = {
+    val __obj = js.Dynamic.literal(hyperlinkAuditingEnabled = hyperlinkAuditingEnabled, protectedContentEnabled = protectedContentEnabled, referrersEnabled = referrersEnabled, thirdPartyCookiesAllowed = thirdPartyCookiesAllowed)
+  
+    __obj.asInstanceOf[Websites]
+  }
+}
+

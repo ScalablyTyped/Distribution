@@ -6755,6 +6755,7 @@ object S3Ns extends js.Object {
     - awsDashSdkLib.awsDashSdkLibStrings.STANDARD_IA
     - awsDashSdkLib.awsDashSdkLibStrings.ONEZONE_IA
     - awsDashSdkLib.awsDashSdkLibStrings.INTELLIGENT_TIERING
+    - awsDashSdkLib.awsDashSdkLibStrings.DEEP_ARCHIVE
     - java.lang.String
   */
   type ObjectStorageClass = _ObjectStorageClass | java.lang.String
@@ -6863,6 +6864,7 @@ object S3Ns extends js.Object {
     - awsDashSdkLib.awsDashSdkLibStrings.ONEZONE_IA
     - awsDashSdkLib.awsDashSdkLibStrings.INTELLIGENT_TIERING
     - awsDashSdkLib.awsDashSdkLibStrings.GLACIER
+    - awsDashSdkLib.awsDashSdkLibStrings.DEEP_ARCHIVE
     - java.lang.String
   */
   type StorageClass = _StorageClass | java.lang.String
@@ -6896,6 +6898,7 @@ object S3Ns extends js.Object {
     - awsDashSdkLib.awsDashSdkLibStrings.STANDARD_IA
     - awsDashSdkLib.awsDashSdkLibStrings.ONEZONE_IA
     - awsDashSdkLib.awsDashSdkLibStrings.INTELLIGENT_TIERING
+    - awsDashSdkLib.awsDashSdkLibStrings.DEEP_ARCHIVE
     - java.lang.String
   */
   type TransitionStorageClass = _TransitionStorageClass | java.lang.String

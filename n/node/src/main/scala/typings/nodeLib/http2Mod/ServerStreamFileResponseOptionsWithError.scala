@@ -12,18 +12,18 @@ trait ServerStreamFileResponseOptionsWithError extends ServerStreamFileResponseO
 object ServerStreamFileResponseOptionsWithError {
   @scala.inline
   def apply(
-    getTrailers: /* trailers */ nodeLib.httpMod.OutgoingHttpHeaders => scala.Unit = null,
     length: scala.Int | scala.Double = null,
     offset: scala.Int | scala.Double = null,
     onError: /* err */ nodeLib.NodeJSNs.ErrnoException => scala.Unit = null,
-    statCheck: (/* stats */ nodeLib.fsMod.Stats, /* headers */ nodeLib.httpMod.OutgoingHttpHeaders, /* statOptions */ StatOptions) => scala.Unit | scala.Boolean = null
+    statCheck: (/* stats */ nodeLib.fsMod.Stats, /* headers */ nodeLib.httpMod.OutgoingHttpHeaders, /* statOptions */ StatOptions) => scala.Unit | scala.Boolean = null,
+    waitForTrailers: js.UndefOr[scala.Boolean] = js.undefined
   ): ServerStreamFileResponseOptionsWithError = {
     val __obj = js.Dynamic.literal()
-    if (getTrailers != null) __obj.updateDynamic("getTrailers")(js.Any.fromFunction1(getTrailers))
     if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1(onError))
     if (statCheck != null) __obj.updateDynamic("statCheck")(js.Any.fromFunction3(statCheck))
+    if (!js.isUndefined(waitForTrailers)) __obj.updateDynamic("waitForTrailers")(waitForTrailers)
     __obj.asInstanceOf[ServerStreamFileResponseOptionsWithError]
   }
 }

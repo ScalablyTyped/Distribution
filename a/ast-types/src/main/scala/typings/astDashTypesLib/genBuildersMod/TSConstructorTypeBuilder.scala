@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait TSConstructorTypeBuilder extends js.Object {
   def apply(
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ]
   ): astDashTypesLib.genNodesMod.TSConstructorType = js.native
   def from(params: astDashTypesLib.Anon_CommentsLocParameters): astDashTypesLib.genNodesMod.TSConstructorType = js.native

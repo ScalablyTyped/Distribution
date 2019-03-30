@@ -696,6 +696,19 @@ object ELBv2Ns extends js.Object {
     var StatusCode: FixedResponseActionStatusCode
   }
   
+  trait HostHeaderConditionConfig extends js.Object {
+    var Values: js.UndefOr[ListOfString] = js.undefined
+  }
+  
+  trait HttpHeaderConditionConfig extends js.Object {
+    var HttpHeaderName: js.UndefOr[HttpHeaderConditionName] = js.undefined
+    var Values: js.UndefOr[ListOfString] = js.undefined
+  }
+  
+  trait HttpRequestMethodConditionConfig extends js.Object {
+    var Values: js.UndefOr[ListOfString] = js.undefined
+  }
+  
   trait Limit extends js.Object {
     /**
       * The maximum value of the limit.
@@ -971,6 +984,19 @@ object ELBv2Ns extends js.Object {
     var TargetGroups: js.UndefOr[TargetGroups] = js.undefined
   }
   
+  trait PathPatternConditionConfig extends js.Object {
+    var Values: js.UndefOr[ListOfString] = js.undefined
+  }
+  
+  trait QueryStringConditionConfig extends js.Object {
+    var Values: js.UndefOr[QueryStringKeyValuePairList] = js.undefined
+  }
+  
+  trait QueryStringKeyValuePair extends js.Object {
+    var Key: js.UndefOr[StringValue] = js.undefined
+    var Value: js.UndefOr[StringValue] = js.undefined
+  }
+  
   trait RedirectActionConfig extends js.Object {
     /**
       * The hostname. This component is not percent-encoded. The hostname can contain #{host}.
@@ -1065,6 +1091,12 @@ object ELBv2Ns extends js.Object {
       * The name of the field. The possible values are host-header and path-pattern.
       */
     var Field: js.UndefOr[ConditionFieldName] = js.undefined
+    var HostHeaderConfig: js.UndefOr[HostHeaderConditionConfig] = js.undefined
+    var HttpHeaderConfig: js.UndefOr[HttpHeaderConditionConfig] = js.undefined
+    var HttpRequestMethodConfig: js.UndefOr[HttpRequestMethodConditionConfig] = js.undefined
+    var PathPatternConfig: js.UndefOr[PathPatternConditionConfig] = js.undefined
+    var QueryStringConfig: js.UndefOr[QueryStringConditionConfig] = js.undefined
+    var SourceIpConfig: js.UndefOr[SourceIpConditionConfig] = js.undefined
     /**
       * The condition value. If the field name is host-header, you can specify a single host name (for example, my.example.com). A host name is case insensitive, can be up to 128 characters in length, and can contain any of the following characters. You can include up to three wildcard characters.   A-Z, a-z, 0-9   - .   * (matches 0 or more characters)   ? (matches exactly 1 character)   If the field name is path-pattern, you can specify a single path pattern (for example, /img/ *). A path pattern is case-sensitive, can be up to 128 characters in length, and can contain any of the following characters. You can include up to three wildcard characters.   A-Z, a-z, 0-9   _ - . $ / ~ " ' @ : +   &amp; (using &amp;amp;)   * (matches 0 or more characters)   ? (matches exactly 1 character)  
       */
@@ -1152,6 +1184,10 @@ object ELBv2Ns extends js.Object {
       * Information about the subnet and Availability Zone.
       */
     var AvailabilityZones: js.UndefOr[AvailabilityZones] = js.undefined
+  }
+  
+  trait SourceIpConditionConfig extends js.Object {
+    var Values: js.UndefOr[ListOfString] = js.undefined
   }
   
   trait SslPolicy extends js.Object {
@@ -2361,6 +2397,7 @@ object ELBv2Ns extends js.Object {
   type HealthCheckThresholdCount = scala.Double
   type HealthCheckTimeoutSeconds = scala.Double
   type HttpCode = java.lang.String
+  type HttpHeaderConditionName = java.lang.String
   type IpAddress = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ipv4
@@ -2417,6 +2454,7 @@ object ELBv2Ns extends js.Object {
     - java.lang.String
   */
   type ProtocolEnum = _ProtocolEnum | java.lang.String
+  type QueryStringKeyValuePairList = js.Array[QueryStringKeyValuePair]
   type RedirectActionHost = java.lang.String
   type RedirectActionPath = java.lang.String
   type RedirectActionPort = java.lang.String

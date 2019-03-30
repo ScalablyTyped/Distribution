@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The File interface provides information about files and allows JavaScript in a web page to access their content. */
 @js.native
 trait File extends Blob {
   val lastModified: scala.Double = js.native

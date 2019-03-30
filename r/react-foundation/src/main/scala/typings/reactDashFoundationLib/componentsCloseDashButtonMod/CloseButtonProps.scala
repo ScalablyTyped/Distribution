@@ -17,7 +17,9 @@ import scala.scalajs.js.annotation._
   var formNoValidate: js.UndefOr[scala.Boolean] = js.undefined
   var formTarget: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var `type`: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[
+    reactLib.reactLibStrings.submit | reactLib.reactLibStrings.reset | reactLib.reactLibStrings.button
+  ] = js.undefined
   var value: js.UndefOr[java.lang.String | js.Array[java.lang.String] | scala.Double] = js.undefined
 }
 

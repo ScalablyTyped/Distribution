@@ -40,7 +40,11 @@ trait Map[K, V] extends js.Object {
 @JSGlobal("Map")
 @js.native
 class MapCls[K, V] () extends Map[K, V] {
-  def this(entries: js.Array[js.Tuple2[K, V]]) = this()
-  def this(iterable: Iterable[js.Tuple2[K, V]]) = this()
+  def this(entries: js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify readonly */ _
+    ]) = this()
+  def this(iterable: Iterable[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify readonly */ _
+    ]) = this()
 }
 

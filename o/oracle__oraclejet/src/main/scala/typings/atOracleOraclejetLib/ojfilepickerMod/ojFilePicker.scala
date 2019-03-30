@@ -859,12 +859,12 @@ trait ojFilePicker
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -903,12 +903,34 @@ trait ojFilePicker
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.select,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.select,
-    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ stdLib.HTMLElement, /* ev */ stdLib.Event, _],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")

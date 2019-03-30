@@ -5,11 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The Gamepad interface of the Gamepad API defines an individual gamepad or other controller, allowing access to information such as button presses, axis positions, and id. */
 trait Gamepad extends js.Object {
   val axes: js.Array[scala.Double]
   val buttons: js.Array[GamepadButton]
   val connected: scala.Boolean
-  val displayId: scala.Double
   val hand: GamepadHand
   val hapticActuators: js.Array[GamepadHapticActuator]
   val id: java.lang.String
@@ -28,8 +28,6 @@ class GamepadCls () extends Gamepad {
   override val buttons: js.Array[GamepadButton] = js.native
   /* CompleteClass */
   override val connected: scala.Boolean = js.native
-  /* CompleteClass */
-  override val displayId: scala.Double = js.native
   /* CompleteClass */
   override val hand: GamepadHand = js.native
   /* CompleteClass */

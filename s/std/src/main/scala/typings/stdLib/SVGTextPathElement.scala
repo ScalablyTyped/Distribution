@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGTextPathElement interface corresponds to the <textPath> element. */
 @js.native
 trait SVGTextPathElement
   extends SVGTextContentElement

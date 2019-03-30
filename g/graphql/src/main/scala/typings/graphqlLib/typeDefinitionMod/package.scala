@@ -34,7 +34,7 @@ package object typeDefinitionMod {
     /* source */ TSource, 
     /* context */ TContext, 
     /* info */ GraphQLResolveInfo, 
-    graphqlLib.jsutilsMaybePromiseMod.MaybePromise[scala.Boolean]
+    graphqlLib.jsutilsPromiseOrValueMod.PromiseOrValue[scala.Boolean]
   ]
   /* Rewritten from type alias, can be one of: 
     - GraphQLScalarType
@@ -90,7 +90,7 @@ package object typeDefinitionMod {
     /* value */ TSource, 
     /* context */ TContext, 
     /* info */ GraphQLResolveInfo, 
-    graphqlLib.jsutilsMaybePromiseMod.MaybePromise[
+    graphqlLib.jsutilsPromiseOrValueMod.PromiseOrValue[
       graphqlLib.tsutilsMaybeMod.Maybe[(GraphQLObjectType[TSource, TContext, TArgs]) | java.lang.String]
     ]
   ]

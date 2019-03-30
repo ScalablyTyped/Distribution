@@ -25,7 +25,7 @@ object TwoOptionMetadata {
       powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.OptionMetadata, 
       powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.OptionMetadata
     ],
-    RequiredLevel: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.RequiredLevel,
+    RequiredLevel: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.TypesNs.RequiredLevel,
     SourceType: scala.Double
   ): TwoOptionMetadata = {
     val __obj = js.Dynamic.literal(DefaultValue = DefaultValue, Description = Description, DisplayName = DisplayName, IsSecured = IsSecured, LogicalName = LogicalName, Options = Options, RequiredLevel = RequiredLevel, SourceType = SourceType)

@@ -157,6 +157,9 @@ object reactDashScrollDashIntoDashViewDashIfDashNeededLibStrings {
   sealed trait feDistantLight extends js.Object
   
   @js.native
+  sealed trait feDropShadow extends js.Object
+  
+  @js.native
   sealed trait feFlood extends js.Object
   
   @js.native
@@ -622,6 +625,8 @@ object reactDashScrollDashIntoDashViewDashIfDashNeededLibStrings {
   def feDisplacementMap: feDisplacementMap = "feDisplacementMap".asInstanceOf[feDisplacementMap]
   @scala.inline
   def feDistantLight: feDistantLight = "feDistantLight".asInstanceOf[feDistantLight]
+  @scala.inline
+  def feDropShadow: feDropShadow = "feDropShadow".asInstanceOf[feDropShadow]
   @scala.inline
   def feFlood: feFlood = "feFlood".asInstanceOf[feFlood]
   @scala.inline

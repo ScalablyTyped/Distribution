@@ -20,6 +20,6 @@ trait prng
   def double(): scala.Double = js.native
   def int32(): scala.Double = js.native
   def quick(): scala.Double = js.native
-  def state(): js.Function0[this.type] = js.native
+  def state(): State = js.native
 }
 

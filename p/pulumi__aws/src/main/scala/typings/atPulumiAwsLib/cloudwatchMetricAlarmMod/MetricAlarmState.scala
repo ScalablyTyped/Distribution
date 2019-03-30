@@ -11,7 +11,7 @@ trait MetricAlarmState extends js.Object {
     */
   val actionsEnabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
-    * The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Number (ARN).
+    * The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
     */
   val alarmActions: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[
@@ -58,7 +58,7 @@ trait MetricAlarmState extends js.Object {
     */
   val extendedStatistic: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Number (ARN).
+    * The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
     */
   val insufficientDataActions: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[
@@ -88,7 +88,7 @@ trait MetricAlarmState extends js.Object {
     */
   val namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Number (ARN).
+    * The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
     */
   val okActions: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[

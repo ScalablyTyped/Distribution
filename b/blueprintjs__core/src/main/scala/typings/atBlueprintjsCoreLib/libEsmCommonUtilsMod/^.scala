@@ -27,7 +27,7 @@ object ^ extends js.Object {
   def ensureElement(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   def ensureElement(
     child: reactLib.reactMod.ReactNs.ReactNode | js.UndefOr[scala.Nothing],
-    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   def ensureElement(child: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native

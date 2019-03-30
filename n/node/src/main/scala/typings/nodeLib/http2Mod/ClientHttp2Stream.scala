@@ -5,8 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("http2", "ClientHttp2Stream")
 @js.native
-trait ClientHttp2Stream extends Http2Stream {
+class ClientHttp2Stream protected () extends Http2Stream {
+  @JSName("addListener")
+  def addListener_continue(event: nodeLib.nodeLibStrings.continue, listener: js.Function0[js.Object]): this.type = js.native
   @JSName("addListener")
   def addListener_headers(
     event: nodeLib.nodeLibStrings.headers,
@@ -31,6 +34,8 @@ trait ClientHttp2Stream extends Http2Stream {
     ]
   ): this.type = js.native
   @JSName("emit")
+  def emit_continue(event: nodeLib.nodeLibStrings.continue): scala.Boolean = js.native
+  @JSName("emit")
   def emit_headers(
     event: nodeLib.nodeLibStrings.headers,
     headers: IncomingHttpHeaders with IncomingHttpStatusHeader,
@@ -44,6 +49,8 @@ trait ClientHttp2Stream extends Http2Stream {
     headers: IncomingHttpHeaders with IncomingHttpStatusHeader,
     flags: scala.Double
   ): scala.Boolean = js.native
+  @JSName("on")
+  def on_continue(event: nodeLib.nodeLibStrings.continue, listener: js.Function0[js.Object]): this.type = js.native
   @JSName("on")
   def on_headers(
     event: nodeLib.nodeLibStrings.headers,
@@ -68,6 +75,8 @@ trait ClientHttp2Stream extends Http2Stream {
     ]
   ): this.type = js.native
   @JSName("once")
+  def once_continue(event: nodeLib.nodeLibStrings.continue, listener: js.Function0[js.Object]): this.type = js.native
+  @JSName("once")
   def once_headers(
     event: nodeLib.nodeLibStrings.headers,
     listener: js.Function2[
@@ -91,6 +100,8 @@ trait ClientHttp2Stream extends Http2Stream {
     ]
   ): this.type = js.native
   @JSName("prependListener")
+  def prependListener_continue(event: nodeLib.nodeLibStrings.continue, listener: js.Function0[js.Object]): this.type = js.native
+  @JSName("prependListener")
   def prependListener_headers(
     event: nodeLib.nodeLibStrings.headers,
     listener: js.Function2[
@@ -113,6 +124,8 @@ trait ClientHttp2Stream extends Http2Stream {
       scala.Unit
     ]
   ): this.type = js.native
+  @JSName("prependOnceListener")
+  def prependOnceListener_continue(event: nodeLib.nodeLibStrings.continue, listener: js.Function0[js.Object]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_headers(
     event: nodeLib.nodeLibStrings.headers,

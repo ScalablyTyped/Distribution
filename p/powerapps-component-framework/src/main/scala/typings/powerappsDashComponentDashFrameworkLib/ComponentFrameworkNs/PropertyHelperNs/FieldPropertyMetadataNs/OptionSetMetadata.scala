@@ -23,7 +23,7 @@ object OptionSetMetadata {
     Options: js.Array[
       powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.OptionMetadata
     ],
-    RequiredLevel: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.RequiredLevel,
+    RequiredLevel: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.PropertyHelperNs.TypesNs.RequiredLevel,
     SourceType: scala.Double
   ): OptionSetMetadata = {
     val __obj = js.Dynamic.literal(DefaultValue = DefaultValue, Description = Description, DisplayName = DisplayName, IsSecured = IsSecured, LogicalName = LogicalName, Options = Options, RequiredLevel = RequiredLevel, SourceType = SourceType)

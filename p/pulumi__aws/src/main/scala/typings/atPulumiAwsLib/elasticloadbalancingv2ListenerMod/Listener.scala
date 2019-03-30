@@ -29,7 +29,7 @@ class Listener protected ()
   /**
     * An Action block. Action blocks are documented below.
     */
-  val defaultAction: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_AuthenticateCognito] = js.native
+  val defaultActions: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_AuthenticateCognito]] = js.native
   /**
     * The ARN of the load balancer.
     */

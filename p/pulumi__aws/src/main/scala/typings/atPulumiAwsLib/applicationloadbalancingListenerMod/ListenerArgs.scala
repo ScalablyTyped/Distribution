@@ -13,7 +13,11 @@ trait ListenerArgs extends js.Object {
   /**
     * An Action block. Action blocks are documented below.
     */
-  val defaultAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc]
+  val defaultActions: atPulumiPulumiLib.outputMod.Input[
+    js.Array[
+      atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc]
+    ]
+  ]
   /**
     * The ARN of the load balancer.
     */
@@ -35,14 +39,18 @@ trait ListenerArgs extends js.Object {
 object ListenerArgs {
   @scala.inline
   def apply(
-    defaultAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc],
+    defaultActions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc]
+      ]
+    ],
     loadBalancerArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     port: atPulumiPulumiLib.outputMod.Input[scala.Double],
     certificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     sslPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): ListenerArgs = {
-    val __obj = js.Dynamic.literal(defaultAction = defaultAction.asInstanceOf[js.Any], loadBalancerArn = loadBalancerArn.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(defaultActions = defaultActions.asInstanceOf[js.Any], loadBalancerArn = loadBalancerArn.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
     if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
     if (sslPolicy != null) __obj.updateDynamic("sslPolicy")(sslPolicy.asInstanceOf[js.Any])

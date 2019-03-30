@@ -32,6 +32,7 @@ class GraphQLScalarType protected ()
   ): graphqlLib.tsutilsMaybeMod.Maybe[_] = js.native
   def parseValue(value: js.Any): graphqlLib.tsutilsMaybeMod.Maybe[_] = js.native
   def serialize(value: js.Any): graphqlLib.tsutilsMaybeMod.Maybe[_] = js.native
+  def toConfig(): (GraphQLScalarTypeConfig[_, _]) with graphqlLib.Anon_ExtensionASTNodes = js.native
   def toJSON(): java.lang.String = js.native
 }
 

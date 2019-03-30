@@ -9,12 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class Drag ()
   extends plottableLib.buildSrcInteractionsInteractionMod.Interaction {
+  def this(mouseButton: scala.Double) = this()
   var _constrainedToComponent: js.Any = js.native
   var _dragCallbacks: js.Any = js.native
   var _dragEndCallbacks: js.Any = js.native
   var _dragOrigin: js.Any = js.native
   var _dragStartCallbacks: js.Any = js.native
   var _dragging: js.Any = js.native
+  var _mouseButton: js.Any = js.native
   var _mouseDispatcher: js.Any = js.native
   var _mouseDownCallback: js.Any = js.native
   /**

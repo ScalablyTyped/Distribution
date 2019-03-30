@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLDocument property of Window objects is an alias that browsers expose for the Document interface object. */
 @js.native
 trait HTMLDocument extends Document
 
@@ -13,6 +14,10 @@ trait HTMLDocument extends Document
 class HTMLDocumentCls () extends HTMLDocument {
   /* CompleteClass */
   override val activeElement: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val fullscreenElement: Element | scala.Null = js.native
+  /* CompleteClass */
+  override val pointerLockElement: Element | scala.Null = js.native
   /**
     * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
     */

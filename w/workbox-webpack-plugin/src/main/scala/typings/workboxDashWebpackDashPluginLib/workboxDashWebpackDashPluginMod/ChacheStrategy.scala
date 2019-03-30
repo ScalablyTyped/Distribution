@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.cacheFirst
-  - workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.cacheOnly
-  - workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.networkFirst
-  - workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.networkOnly
-  - workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.staleWhileRevalidate
+  - workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.CacheFirst
+  - workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.CacheOnly
+  - workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.NetworkFirst
+  - workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.NetworkOnly
+  - workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginLibStrings.StaleWhileRevalidate
 */
 trait ChacheStrategy extends js.Object
 

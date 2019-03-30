@@ -28,6 +28,7 @@ trait Instant extends TemporalAccessor {
   def plusNanos(nanosToAdd: scala.Double): Instant = js.native
   def plusSeconds(secondsToAdd: scala.Double): Instant = js.native
   def toEpochMilli(): scala.Double = js.native
+  def toJSON(): java.lang.String = js.native
   def truncatedTo(unit: TemporalUnit): Instant = js.native
   def until(endExclusive: Temporal, unit: TemporalUnit): scala.Double = js.native
   def `with`(adjuster: TemporalAdjuster): Instant = js.native

@@ -1,38 +1,38 @@
 organization := "org.scalablytyped"
 name := "objection"
-version := "1.6.4-6fc616"
+version := "1.6.6-72de9e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ajv" % "6.10.0-7799d3",
-  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20190322Z-749fa6",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-d754c7",
-  "org.scalablytyped" %%% "chalk" % "2.4.2-3344ae",
-  "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-7e7317",
-  "org.scalablytyped" %%% "commander" % "2.19.0-708743",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-e59bbf",
-  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-0fc5fc",
-  "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-cbad63",
-  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-130897",
-  "org.scalablytyped" %%% "fined" % "1.1-dt-20190212Z-55cc7f",
-  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-2a9acd",
-  "org.scalablytyped" %%% "interpret" % "1.1-dt-20190212Z-eb7612",
-  "org.scalablytyped" %%% "knex" % "0.16.3-c7b401",
-  "org.scalablytyped" %%% "liftoff" % "2.5-dt-20181206Z-1bc6c3",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190311Z-7a74e5",
-  "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-2ad77d",
-  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-727fc1",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190325Z-000e7b",
-  "org.scalablytyped" %%% "pg-connection-string" % "2.0.0-381ff3",
-  "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-6f3a8b",
-  "org.scalablytyped" %%% "std" % "3.3-14e863",
-  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-b01a75",
-  "org.scalablytyped" %%% "tildify" % "1.2-dt-20181206Z-c643ca",
-  "org.scalablytyped" %%% "uri-js" % "4.2.2-d68e3d",
-  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-43c72f",
-  "org.scalablytyped" %%% "v8flags" % "3.1-dt-20190212Z-1c475b")
+  "org.scalablytyped" %%% "ajv" % "6.10.0-4b0839",
+  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20190322Z-d84c1e",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-986805",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
+  "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
+  "org.scalablytyped" %%% "commander" % "2.19.0-119da5",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
+  "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-42ef87",
+  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-82585c",
+  "org.scalablytyped" %%% "fined" % "1.1-dt-20190212Z-9ce3ac",
+  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-b8b248",
+  "org.scalablytyped" %%% "interpret" % "1.1-dt-20190212Z-334274",
+  "org.scalablytyped" %%% "knex" % "0.16.3-79b760",
+  "org.scalablytyped" %%% "liftoff" % "2.5-dt-20181206Z-1819fc",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",
+  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-e16d89",
+  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "pg-connection-string" % "2.0.0-2a8abc",
+  "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-63baaa",
+  "org.scalablytyped" %%% "std" % "3.4-d52857",
+  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-1b70da",
+  "org.scalablytyped" %%% "tildify" % "1.2-dt-20181206Z-9a78ae",
+  "org.scalablytyped" %%% "uri-js" % "4.2.2-8cad7e",
+  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-6fb7ef",
+  "org.scalablytyped" %%% "v8flags" % "3.1-dt-20190212Z-0b14eb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

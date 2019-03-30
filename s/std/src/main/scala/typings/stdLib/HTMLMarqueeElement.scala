@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLMarqueeElement interface provides methods to manipulate <marquee> elements. */
 @js.native
 trait HTMLMarqueeElement extends HTMLElement {
   /** @deprecated */

@@ -18,12 +18,6 @@ trait ClusterState extends js.Object {
     */
   val availabilityZone: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * Use `preferred_availability_zones` instead unless you want to create cache nodes in single-az, then use `availability_zone`. Set of Availability Zones in which the cache nodes will be created.
-    */
-  val availabilityZones: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
-  ] = js.undefined
-  /**
     * Specifies whether the nodes in this Memcached node group are created in a single Availability Zone or created across multiple Availability Zones in the cluster's region. Valid values for this parameter are `single-az` or `cross-az`, default is `single-az`. If you want to choose `cross-az`, `num_cache_nodes` must be greater than `1`
     */
   val azMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -159,7 +153,6 @@ object ClusterState {
   def apply(
     applyImmediately: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    availabilityZones: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
     azMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     cacheNodes: atPulumiPulumiLib.outputMod.Input[
       js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AddressAvailabilityZone]]
@@ -189,7 +182,6 @@ object ClusterState {
     val __obj = js.Dynamic.literal()
     if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
     if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
-    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
     if (azMode != null) __obj.updateDynamic("azMode")(azMode.asInstanceOf[js.Any])
     if (cacheNodes != null) __obj.updateDynamic("cacheNodes")(cacheNodes.asInstanceOf[js.Any])
     if (clusterAddress != null) __obj.updateDynamic("clusterAddress")(clusterAddress.asInstanceOf[js.Any])

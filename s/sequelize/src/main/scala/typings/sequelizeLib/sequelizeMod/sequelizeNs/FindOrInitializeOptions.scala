@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * Options for Model.findOrInitialize method
   */
-trait FindOrInitializeOptions[TAttributes]
-  extends FindOptions[js.Any] {
+trait FindOrInitializeOptions[TAttributes] extends FindOptions[TAttributes] {
   /**
     * Default values to use if building a new instance
     */
@@ -38,7 +37,7 @@ object FindOrInitializeOptions {
     subQuery: js.UndefOr[scala.Boolean] = js.undefined,
     transaction: Transaction = null,
     useMaster: js.UndefOr[scala.Boolean] = js.undefined,
-    where: WhereOptions[js.Any] | where | fn | (js.Array[col | and | or | java.lang.String]) = null
+    where: WhereOptions[TAttributes] | where | fn | (js.Array[col | and | or | java.lang.String]) = null
   ): FindOrInitializeOptions[TAttributes] = {
     val __obj = js.Dynamic.literal()
     if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])

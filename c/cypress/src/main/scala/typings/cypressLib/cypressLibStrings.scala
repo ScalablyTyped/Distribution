@@ -143,6 +143,9 @@ object cypressLibStrings {
   sealed trait basefont extends js.Object
   
   @js.native
+  sealed trait bdi extends js.Object
+  
+  @js.native
   sealed trait bdo extends js.Object
   
   @js.native
@@ -833,6 +836,9 @@ object cypressLibStrings {
     extends cypressLib.CypressNs.ViewportPreset
   
   @js.native
+  sealed trait main extends js.Object
+  
+  @js.native
   sealed trait map extends js.Object
   
   @js.native
@@ -1218,6 +1224,12 @@ object cypressLibStrings {
   sealed trait pointerleave extends js.Object
   
   @js.native
+  sealed trait pointerlockchange extends js.Object
+  
+  @js.native
+  sealed trait pointerlockerror extends js.Object
+  
+  @js.native
   sealed trait pointermove extends js.Object
   
   @js.native
@@ -1286,6 +1298,9 @@ object cypressLibStrings {
     extends cypressLib.CypressNs.PositionType
   
   @js.native
+  sealed trait rp extends js.Object
+  
+  @js.native
   sealed trait rt extends js.Object
   
   @js.native
@@ -1331,6 +1346,12 @@ object cypressLibStrings {
   sealed trait select extends js.Object
   
   @js.native
+  sealed trait selectionchange extends js.Object
+  
+  @js.native
+  sealed trait selectstart extends js.Object
+  
+  @js.native
   sealed trait setInterval extends js.Object
   
   @js.native
@@ -1373,6 +1394,9 @@ object cypressLibStrings {
   @js.native
   sealed trait success
     extends cypressLib.JQueryNs.AjaxNs.SuccessTextStatus
+  
+  @js.native
+  sealed trait summary extends js.Object
   
   @js.native
   sealed trait sup extends js.Object
@@ -1683,6 +1707,8 @@ object cypressLibStrings {
   def baseUrl: baseUrl = "baseUrl".asInstanceOf[baseUrl]
   @scala.inline
   def basefont: basefont = "basefont".asInstanceOf[basefont]
+  @scala.inline
+  def bdi: bdi = "bdi".asInstanceOf[bdi]
   @scala.inline
   def bdo: bdo = "bdo".asInstanceOf[bdo]
   @scala.inline
@@ -2128,6 +2154,8 @@ object cypressLibStrings {
   @scala.inline
   def `macbook-15`: `macbook-15` = "macbook-15".asInstanceOf[`macbook-15`]
   @scala.inline
+  def main: main = "main".asInstanceOf[main]
+  @scala.inline
   def map: map = "map".asInstanceOf[map]
   @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
@@ -2382,6 +2410,10 @@ object cypressLibStrings {
   @scala.inline
   def pointerleave: pointerleave = "pointerleave".asInstanceOf[pointerleave]
   @scala.inline
+  def pointerlockchange: pointerlockchange = "pointerlockchange".asInstanceOf[pointerlockchange]
+  @scala.inline
+  def pointerlockerror: pointerlockerror = "pointerlockerror".asInstanceOf[pointerlockerror]
+  @scala.inline
   def pointermove: pointermove = "pointermove".asInstanceOf[pointermove]
   @scala.inline
   def pointerout: pointerout = "pointerout".asInstanceOf[pointerout]
@@ -2426,6 +2458,8 @@ object cypressLibStrings {
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   @scala.inline
+  def rp: rp = "rp".asInstanceOf[rp]
+  @scala.inline
   def rt: rt = "rt".asInstanceOf[rt]
   @scala.inline
   def ruby: ruby = "ruby".asInstanceOf[ruby]
@@ -2456,6 +2490,10 @@ object cypressLibStrings {
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   @scala.inline
+  def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
+  @scala.inline
+  def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
+  @scala.inline
   def setInterval: setInterval = "setInterval".asInstanceOf[setInterval]
   @scala.inline
   def setTimeout: setTimeout = "setTimeout".asInstanceOf[setTimeout]
@@ -2483,6 +2521,8 @@ object cypressLibStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   @scala.inline
   def success: success = "success".asInstanceOf[success]
+  @scala.inline
+  def summary: summary = "summary".asInstanceOf[summary]
   @scala.inline
   def sup: sup = "sup".asInstanceOf[sup]
   @scala.inline

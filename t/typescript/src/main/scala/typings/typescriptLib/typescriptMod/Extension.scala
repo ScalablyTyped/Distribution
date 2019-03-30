@@ -13,6 +13,7 @@ object Extension extends js.Object {
   /* ".json" */ val Json: typescriptLib.typescriptMod.tsNs.Extension.Json with java.lang.String = js.native
   /* ".jsx" */ val Jsx: typescriptLib.typescriptMod.tsNs.Extension.Jsx with java.lang.String = js.native
   /* ".ts" */ val Ts: typescriptLib.typescriptMod.tsNs.Extension.Ts with java.lang.String = js.native
+  /* ".tsbuildinfo" */ val TsBuildInfo: typescriptLib.typescriptMod.tsNs.Extension.TsBuildInfo with java.lang.String = js.native
   /* ".tsx" */ val Tsx: typescriptLib.typescriptMod.tsNs.Extension.Tsx with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[typescriptLib.typescriptMod.tsNs.Extension with java.lang.String] = js.native

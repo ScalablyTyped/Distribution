@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The MediaError interface represents an error which occurred while handling media in an HTML media element based on HTMLMediaElement, such as <audio> or <video>. */
 trait MediaError extends js.Object {
   val MEDIA_ERR_ABORTED: scala.Double
   val MEDIA_ERR_DECODE: scala.Double

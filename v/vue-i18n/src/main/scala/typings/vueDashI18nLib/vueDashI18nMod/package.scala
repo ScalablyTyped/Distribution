@@ -23,6 +23,7 @@ package object vueDashI18nMod {
   type NumberFormat = vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormat
   type NumberFormatOptions = vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormatOptions
   type NumberFormatResult = vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormatResult
+  type NumberFormatToPartsResult = vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormatToPartsResult
   type NumberFormats = vueDashI18nLib.vueDashI18nMod.VueI18nNs.NumberFormats
   type Path = vueDashI18nLib.vueDashI18nMod.VueI18nNs.Path
   type TranslateResult = vueDashI18nLib.vueDashI18nMod.VueI18nNs.TranslateResult

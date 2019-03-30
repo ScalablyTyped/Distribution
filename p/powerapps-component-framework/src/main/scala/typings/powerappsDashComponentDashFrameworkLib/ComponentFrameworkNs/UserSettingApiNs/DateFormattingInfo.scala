@@ -45,7 +45,7 @@ trait DateFormattingInfo extends js.Object {
   /**
   			 * @example See interface DayOfWeek
   			 */
-  var firstDayOfWeek: DayOfWeek
+  var firstDayOfWeek: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.UserSettingApiNs.TypesNs.DayOfWeek
   /**
   			 * @example "dddd, MMMM d, yyyy h:mm:ss tt"
   			 */
@@ -115,7 +115,7 @@ object DateFormattingInfo {
     calendarWeekRule: scala.Double,
     dateSeparator: java.lang.String,
     dayNames: js.Array[java.lang.String],
-    firstDayOfWeek: DayOfWeek,
+    firstDayOfWeek: powerappsDashComponentDashFrameworkLib.ComponentFrameworkNs.UserSettingApiNs.TypesNs.DayOfWeek,
     fullDateTimePattern: java.lang.String,
     longDatePattern: java.lang.String,
     longTimePattern: java.lang.String,

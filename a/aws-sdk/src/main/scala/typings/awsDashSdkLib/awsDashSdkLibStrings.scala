@@ -867,6 +867,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsBackupMod.BackupNs._BackupJobState
   
   @js.native
+  sealed trait ABSENT
+    extends awsDashSdkLib.clientsGlueMod.GlueNs._CsvHeaderOption
+  
+  @js.native
   sealed trait ABSOLUTE
     extends awsDashSdkLib.clientsAllMod.ACMPCANs.ACMPCANs._ValidityPeriodType
        with awsDashSdkLib.awsDashSdkMod.ACMPCANs.ACMPCANs._ValidityPeriodType
@@ -1434,6 +1438,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait ALLOWED
     extends awsDashSdkLib.clientsIotMod.IotNs._AuthDecision
+  
+  @js.native
+  sealed trait ALLOW_ALL
+    extends awsDashSdkLib.clientsAppmeshMod.AppMeshNs._EgressFilterType
   
   @js.native
   sealed trait ALLOW_AS_DEPENDENCY
@@ -5628,6 +5636,12 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs._WorkspaceImageRequiredTenancy
   
   @js.native
+  sealed trait DEEP_ARCHIVE
+    extends awsDashSdkLib.clientsS3Mod.S3Ns._ObjectStorageClass
+       with awsDashSdkLib.clientsS3Mod.S3Ns._StorageClass
+       with awsDashSdkLib.clientsS3Mod.S3Ns._TransitionStorageClass
+  
+  @js.native
   sealed trait DEEP_LINK
     extends awsDashSdkLib.clientsPinpointMod.PinpointNs._Action
   
@@ -6594,6 +6608,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._M2tsAbsentInputAudioBehavior
   
   @js.native
+  sealed trait DROP_ALL
+    extends awsDashSdkLib.clientsAppmeshMod.AppMeshNs._EgressFilterType
+  
+  @js.native
   sealed trait DROP_PROGRAM
     extends awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._InputLossActionForUdpOut
   
@@ -7487,6 +7505,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._LanguageCode
   
   @js.native
+  sealed trait EPOCH_LOCKING
+    extends awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._GlobalConfigurationOutputLockingMode
+  
+  @js.native
   sealed trait EQ
     extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
        with awsDashSdkLib.clientsWafMod.WAFNs._ComparisonOperator
@@ -7776,7 +7798,8 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait EXTERNAL
-    extends awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._MovReference
+    extends awsDashSdkLib.clientsEcsMod.ECSNs._DeploymentControllerType
+       with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._MovReference
        with awsDashSdkLib.clientsKmsMod.KMSNs._OriginType
   
   @js.native
@@ -15133,6 +15156,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._PipelineId
   
   @js.native
+  sealed trait PIPELINE_LOCKING
+    extends awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._GlobalConfigurationOutputLockingMode
+  
+  @js.native
   sealed trait PK
     extends awsDashSdkLib.clientsRoute53domainsMod.Route53DomainsNs._CountryCode
        with awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._GeoMatchConstraintValue
@@ -15258,6 +15285,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs._InstanceStatus
        with awsDashSdkLib.clientsServerlessapplicationrepositoryMod.ServerlessApplicationRepositoryNs._Status
        with awsDashSdkLib.clientsDatasyncMod.DataSyncNs._TaskExecutionStatus
+  
+  @js.native
+  sealed trait PRESENT
+    extends awsDashSdkLib.clientsGlueMod.GlueNs._CsvHeaderOption
   
   @js.native
   sealed trait PRESERVE
@@ -15468,6 +15499,7 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait PUBLIC
     extends awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs._CommentVisibilityType
+       with awsDashSdkLib.clientsTransferMod.TransferNs._EndpointType
        with awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs._SkillType
        with awsDashSdkLib.clientsAllMod.AlexaForBusinessNs.AlexaForBusinessNs._SkillType
        with awsDashSdkLib.awsDashSdkMod.AlexaForBusinessNs.AlexaForBusinessNs._SkillType
@@ -20563,6 +20595,7 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsDevicefarmMod.DeviceFarmNs._ArtifactType
        with awsDashSdkLib.clientsAthenaMod.AthenaNs._ColumnNullable
        with awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs._ConnectionState
+       with awsDashSdkLib.clientsGlueMod.GlueNs._CsvHeaderOption
        with awsDashSdkLib.clientsRekognitionMod.RekognitionNs._EmotionName
        with awsDashSdkLib.clientsServicediscoveryMod.ServiceDiscoveryNs._HealthStatus
        with awsDashSdkLib.clientsEcsMod.ECSNs._HealthStatus
@@ -21404,6 +21437,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait VPC_CONFIGURATION_SECURITY_GROUP_IDS
     extends awsDashSdkLib.clientsAppstreamMod.AppStreamNs._FleetAttribute
+  
+  @js.native
+  sealed trait VPC_ENDPOINT
+    extends awsDashSdkLib.clientsTransferMod.TransferNs._EndpointType
   
   @js.native
   sealed trait VPC_ENDPOINT_SETUP_FAILED
@@ -25325,6 +25362,38 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
   
   @js.native
+  sealed trait m5adDOT12xlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait m5adDOT16xlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait m5adDOT24xlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait m5adDOT2xlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait m5adDOT4xlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait m5adDOT8xlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait m5adDOTlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait m5adDOTxlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
   sealed trait m5dDOT12xlarge
     extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
   
@@ -26507,6 +26576,38 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait r5aDOTxlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait r5adDOT12xlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait r5adDOT16xlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait r5adDOT24xlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait r5adDOT2xlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait r5adDOT4xlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait r5adDOT8xlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait r5adDOTlarge
+    extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
+  
+  @js.native
+  sealed trait r5adDOTxlarge
     extends awsDashSdkLib.clientsEc2Mod.EC2Ns._InstanceType
   
   @js.native
@@ -28364,6 +28465,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def ABORTING: ABORTING = "ABORTING".asInstanceOf[ABORTING]
   @scala.inline
+  def ABSENT: ABSENT = "ABSENT".asInstanceOf[ABSENT]
+  @scala.inline
   def ABSOLUTE: ABSOLUTE = "ABSOLUTE".asInstanceOf[ABSOLUTE]
   @scala.inline
   def ABSOLUTE_VALUE: ABSOLUTE_VALUE = "ABSOLUTE_VALUE".asInstanceOf[ABSOLUTE_VALUE]
@@ -28565,6 +28668,8 @@ object awsDashSdkLibStrings {
   def ALLOW: ALLOW = "ALLOW".asInstanceOf[ALLOW]
   @scala.inline
   def ALLOWED: ALLOWED = "ALLOWED".asInstanceOf[ALLOWED]
+  @scala.inline
+  def ALLOW_ALL: ALLOW_ALL = "ALLOW_ALL".asInstanceOf[ALLOW_ALL]
   @scala.inline
   def ALLOW_AS_DEPENDENCY: ALLOW_AS_DEPENDENCY = "ALLOW_AS_DEPENDENCY".asInstanceOf[ALLOW_AS_DEPENDENCY]
   @scala.inline
@@ -30304,6 +30409,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def DEDICATED: DEDICATED = "DEDICATED".asInstanceOf[DEDICATED]
   @scala.inline
+  def DEEP_ARCHIVE: DEEP_ARCHIVE = "DEEP_ARCHIVE".asInstanceOf[DEEP_ARCHIVE]
+  @scala.inline
   def DEEP_LINK: DEEP_LINK = "DEEP_LINK".asInstanceOf[DEEP_LINK]
   @scala.inline
   def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
@@ -30625,6 +30732,8 @@ object awsDashSdkLibStrings {
   def DRIFTED: DRIFTED = "DRIFTED".asInstanceOf[DRIFTED]
   @scala.inline
   def DROP: DROP = "DROP".asInstanceOf[DROP]
+  @scala.inline
+  def DROP_ALL: DROP_ALL = "DROP_ALL".asInstanceOf[DROP_ALL]
   @scala.inline
   def DROP_PROGRAM: DROP_PROGRAM = "DROP_PROGRAM".asInstanceOf[DROP_PROGRAM]
   @scala.inline
@@ -30959,6 +31068,8 @@ object awsDashSdkLibStrings {
   def EN_US: EN_US = "EN_US".asInstanceOf[EN_US]
   @scala.inline
   def EPO: EPO = "EPO".asInstanceOf[EPO]
+  @scala.inline
+  def EPOCH_LOCKING: EPOCH_LOCKING = "EPOCH_LOCKING".asInstanceOf[EPOCH_LOCKING]
   @scala.inline
   def EQ: EQ = "EQ".asInstanceOf[EQ]
   @scala.inline
@@ -34012,6 +34123,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def PIPELINE_1: PIPELINE_1 = "PIPELINE_1".asInstanceOf[PIPELINE_1]
   @scala.inline
+  def PIPELINE_LOCKING: PIPELINE_LOCKING = "PIPELINE_LOCKING".asInstanceOf[PIPELINE_LOCKING]
+  @scala.inline
   def PK: PK = "PK".asInstanceOf[PK]
   @scala.inline
   def PL: PL = "PL".asInstanceOf[PL]
@@ -34065,6 +34178,8 @@ object awsDashSdkLibStrings {
   def PREMIUM: PREMIUM = "PREMIUM".asInstanceOf[PREMIUM]
   @scala.inline
   def PREPARING: PREPARING = "PREPARING".asInstanceOf[PREPARING]
+  @scala.inline
+  def PRESENT: PRESENT = "PRESENT".asInstanceOf[PRESENT]
   @scala.inline
   def PRESERVE: PRESERVE = "PRESERVE".asInstanceOf[PRESERVE]
   @scala.inline
@@ -36658,6 +36773,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def VPC_CONFIGURATION_SECURITY_GROUP_IDS: VPC_CONFIGURATION_SECURITY_GROUP_IDS = "VPC_CONFIGURATION_SECURITY_GROUP_IDS".asInstanceOf[VPC_CONFIGURATION_SECURITY_GROUP_IDS]
   @scala.inline
+  def VPC_ENDPOINT: VPC_ENDPOINT = "VPC_ENDPOINT".asInstanceOf[VPC_ENDPOINT]
+  @scala.inline
   def VPC_ENDPOINT_SETUP_FAILED: VPC_ENDPOINT_SETUP_FAILED = "VPC_ENDPOINT_SETUP_FAILED".asInstanceOf[VPC_ENDPOINT_SETUP_FAILED]
   @scala.inline
   def VPC_LINK: VPC_LINK = "VPC_LINK".asInstanceOf[VPC_LINK]
@@ -38328,6 +38445,22 @@ object awsDashSdkLibStrings {
   @scala.inline
   def m5aDOTxlarge: m5aDOTxlarge = "m5a.xlarge".asInstanceOf[m5aDOTxlarge]
   @scala.inline
+  def m5adDOT12xlarge: m5adDOT12xlarge = "m5ad.12xlarge".asInstanceOf[m5adDOT12xlarge]
+  @scala.inline
+  def m5adDOT16xlarge: m5adDOT16xlarge = "m5ad.16xlarge".asInstanceOf[m5adDOT16xlarge]
+  @scala.inline
+  def m5adDOT24xlarge: m5adDOT24xlarge = "m5ad.24xlarge".asInstanceOf[m5adDOT24xlarge]
+  @scala.inline
+  def m5adDOT2xlarge: m5adDOT2xlarge = "m5ad.2xlarge".asInstanceOf[m5adDOT2xlarge]
+  @scala.inline
+  def m5adDOT4xlarge: m5adDOT4xlarge = "m5ad.4xlarge".asInstanceOf[m5adDOT4xlarge]
+  @scala.inline
+  def m5adDOT8xlarge: m5adDOT8xlarge = "m5ad.8xlarge".asInstanceOf[m5adDOT8xlarge]
+  @scala.inline
+  def m5adDOTlarge: m5adDOTlarge = "m5ad.large".asInstanceOf[m5adDOTlarge]
+  @scala.inline
+  def m5adDOTxlarge: m5adDOTxlarge = "m5ad.xlarge".asInstanceOf[m5adDOTxlarge]
+  @scala.inline
   def m5dDOT12xlarge: m5dDOT12xlarge = "m5d.12xlarge".asInstanceOf[m5dDOT12xlarge]
   @scala.inline
   def m5dDOT24xlarge: m5dDOT24xlarge = "m5d.24xlarge".asInstanceOf[m5dDOT24xlarge]
@@ -38835,6 +38968,22 @@ object awsDashSdkLibStrings {
   def r5aDOTlarge: r5aDOTlarge = "r5a.large".asInstanceOf[r5aDOTlarge]
   @scala.inline
   def r5aDOTxlarge: r5aDOTxlarge = "r5a.xlarge".asInstanceOf[r5aDOTxlarge]
+  @scala.inline
+  def r5adDOT12xlarge: r5adDOT12xlarge = "r5ad.12xlarge".asInstanceOf[r5adDOT12xlarge]
+  @scala.inline
+  def r5adDOT16xlarge: r5adDOT16xlarge = "r5ad.16xlarge".asInstanceOf[r5adDOT16xlarge]
+  @scala.inline
+  def r5adDOT24xlarge: r5adDOT24xlarge = "r5ad.24xlarge".asInstanceOf[r5adDOT24xlarge]
+  @scala.inline
+  def r5adDOT2xlarge: r5adDOT2xlarge = "r5ad.2xlarge".asInstanceOf[r5adDOT2xlarge]
+  @scala.inline
+  def r5adDOT4xlarge: r5adDOT4xlarge = "r5ad.4xlarge".asInstanceOf[r5adDOT4xlarge]
+  @scala.inline
+  def r5adDOT8xlarge: r5adDOT8xlarge = "r5ad.8xlarge".asInstanceOf[r5adDOT8xlarge]
+  @scala.inline
+  def r5adDOTlarge: r5adDOTlarge = "r5ad.large".asInstanceOf[r5adDOTlarge]
+  @scala.inline
+  def r5adDOTxlarge: r5adDOTxlarge = "r5ad.xlarge".asInstanceOf[r5adDOTxlarge]
   @scala.inline
   def r5dDOT12xlarge: r5dDOT12xlarge = "r5d.12xlarge".asInstanceOf[r5dDOT12xlarge]
   @scala.inline

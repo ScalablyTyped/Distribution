@@ -558,9 +558,10 @@ trait Anon_AAClockwise extends js.Object {
     /* material */ threeLib.threeDashCoreMod.Material, 
     threeLib.threeMod.ImmediateRenderObject
   ] = js.native
-  var InstancedBufferAttribute: org.scalablytyped.runtime.Instantiable3[
-    /* data */ stdLib.ArrayLike[scala.Double], 
+  var InstancedBufferAttribute: org.scalablytyped.runtime.Instantiable4[
+    /* array */ stdLib.ArrayLike[scala.Double], 
     /* itemSize */ scala.Double, 
+    /* normalized */ js.UndefOr[/* normalized */ scala.Boolean], 
     /* meshPerAttribute */ js.UndefOr[/* meshPerAttribute */ scala.Double], 
     threeLib.threeMod.InstancedBufferAttribute
   ] = js.native
@@ -733,6 +734,11 @@ trait Anon_AAClockwise extends js.Object {
   val LoopRepeat: threeLib.threeDashCoreMod.AnimationActionLoopStyles = js.native
   val LuminanceAlphaFormat: threeLib.threeDashCoreMod.PixelFormat = js.native
   val LuminanceFormat: threeLib.threeDashCoreMod.PixelFormat = js.native
+  var Lut: org.scalablytyped.runtime.Instantiable2[
+    /* colormap */ threeLib.threeDashLutMod.ColorMapKeyword, 
+    /* numberofcolors */ scala.Double, 
+    threeLib.threeMod.Lut
+  ] = js.native
   var MTLLoader: org.scalablytyped.runtime.Instantiable1[
     /* manager */ js.UndefOr[/* manager */ threeLib.threeDashCoreMod.LoadingManager], 
     threeLib.threeMod.MTLLoader

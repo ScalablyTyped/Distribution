@@ -132,6 +132,7 @@
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEDiffuseLightingElement))] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEDisplacementMapElement))] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEDistantLightElement))] 
+[info ] PreferTypeAlias.scala:45 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEDropShadowElement))] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEFloodElement))] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEFuncAElement))] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(SVGFEFuncBElement))] 

@@ -1490,6 +1490,12 @@ object MediaLiveNs extends js.Object {
       */
     var InputLossBehavior: js.UndefOr[InputLossBehavior] = js.undefined
     /**
+      * Indicates how MediaLive pipelines are synchronized.
+    PIPELINELOCKING - MediaLive will attempt to synchronize the output of each pipeline to the other.
+    EPOCHLOCKING - MediaLive will attempt to synchronize the output of each pipeline to the Unix epoch.
+      */
+    var OutputLockingMode: js.UndefOr[GlobalConfigurationOutputLockingMode] = js.undefined
+    /**
       * Indicates whether the rate of frames emitted by the Live encoder should be paced by its system clock (which optionally may be locked to another source via NTP) or should be locked to the clock of the source that is providing the input stream.
       */
     var OutputTimingSource: js.UndefOr[GlobalConfigurationOutputTimingSource] = js.undefined
@@ -4552,6 +4558,8 @@ object MediaLiveNs extends js.Object {
   
   trait _GlobalConfigurationLowFramerateInputs extends js.Object
   
+  trait _GlobalConfigurationOutputLockingMode extends js.Object
+  
   trait _GlobalConfigurationOutputTimingSource extends js.Object
   
   trait _H264AdaptiveQuantization extends js.Object
@@ -5214,6 +5222,12 @@ object MediaLiveNs extends js.Object {
     - java.lang.String
   */
   type GlobalConfigurationLowFramerateInputs = _GlobalConfigurationLowFramerateInputs | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.EPOCH_LOCKING
+    - awsDashSdkLib.awsDashSdkLibStrings.PIPELINE_LOCKING
+    - java.lang.String
+  */
+  type GlobalConfigurationOutputLockingMode = _GlobalConfigurationOutputLockingMode | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.INPUT_CLOCK
     - awsDashSdkLib.awsDashSdkLibStrings.SYSTEM_CLOCK

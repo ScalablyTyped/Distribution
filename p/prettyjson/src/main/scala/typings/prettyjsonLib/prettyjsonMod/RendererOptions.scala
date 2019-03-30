@@ -15,6 +15,7 @@ trait RendererOptions extends js.Object {
     // default: (empty)
   var inlineArrays: js.UndefOr[scala.Boolean] = js.undefined
   var keysColor: js.UndefOr[java.lang.String] = js.undefined
+  var noAlign: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Color definition
     */
@@ -31,6 +32,7 @@ object RendererOptions {
     emptyArrayMsg: java.lang.String = null,
     inlineArrays: js.UndefOr[scala.Boolean] = js.undefined,
     keysColor: java.lang.String = null,
+    noAlign: js.UndefOr[scala.Boolean] = js.undefined,
     noColor: js.UndefOr[scala.Boolean] = js.undefined,
     numberColor: java.lang.String = null,
     stringColor: java.lang.String = null
@@ -41,6 +43,7 @@ object RendererOptions {
     if (emptyArrayMsg != null) __obj.updateDynamic("emptyArrayMsg")(emptyArrayMsg)
     if (!js.isUndefined(inlineArrays)) __obj.updateDynamic("inlineArrays")(inlineArrays)
     if (keysColor != null) __obj.updateDynamic("keysColor")(keysColor)
+    if (!js.isUndefined(noAlign)) __obj.updateDynamic("noAlign")(noAlign)
     if (!js.isUndefined(noColor)) __obj.updateDynamic("noColor")(noColor)
     if (numberColor != null) __obj.updateDynamic("numberColor")(numberColor)
     if (stringColor != null) __obj.updateDynamic("stringColor")(stringColor)

@@ -37,10 +37,6 @@ class MethodResponse protected ()
     */
   val responseParameters: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean]]] = js.native
   /**
-    * **Deprecated**, use `response_parameters` instead.
-    */
-  val responseParametersInJson: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  /**
     * The ID of the associated REST API
     */
   val restApi: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native

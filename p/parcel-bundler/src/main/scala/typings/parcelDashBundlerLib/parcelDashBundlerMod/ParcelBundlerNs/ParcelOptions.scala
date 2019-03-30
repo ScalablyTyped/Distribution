@@ -7,6 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait ParcelOptions extends js.Object {
   /**
+    * By default, package.json dependencies are not included when using 'node' or 'electron' with the 'target' option.
+    *
+    * Set to true to add them to the bundle.
+    *
+    * @default false
+    */
+  var bundleNodeModules: js.UndefOr[
+    parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false`
+  ] = js.undefined
+  /**
     * Enabled or disables caching
     *
     * @default true
@@ -33,6 +43,18 @@ trait ParcelOptions extends js.Object {
     */
   var detailedReport: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Expose modules as UMD under this name, disabled by default
+    */
+  var global: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Enable or disable HMR while watching
+    *
+    * @default false
+    */
+  var hmr: js.UndefOr[
+    parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false`
+  ] = js.undefined
+  /**
     * A hostname for hot module reload
     *
     * @default ""
@@ -52,7 +74,7 @@ trait ParcelOptions extends js.Object {
     * Use true to generate one or false to use http
     */
   var https: js.UndefOr[
-    parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false` | parcelDashBundlerLib.Anon_Cert
+    parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false` | HttpsOptions
   ] = js.undefined
   /**
     * 3 = log everything, 2 = log warnings & errors, 1 = log errors
@@ -117,13 +139,16 @@ trait ParcelOptions extends js.Object {
 object ParcelOptions {
   @scala.inline
   def apply(
+    bundleNodeModules: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false` = null,
     cache: js.UndefOr[scala.Boolean] = js.undefined,
     cacheDir: java.lang.String = null,
     contentHash: js.UndefOr[scala.Boolean] = js.undefined,
     detailedReport: js.UndefOr[scala.Boolean] = js.undefined,
+    global: java.lang.String = null,
+    hmr: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false` = null,
     hmrHostname: java.lang.String = null,
     hmrPort: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`0` | scala.Double = null,
-    https: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false` | parcelDashBundlerLib.Anon_Cert = null,
+    https: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false` | HttpsOptions = null,
     logLevel: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`3` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`2` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`1` = null,
     minify: js.UndefOr[scala.Boolean] = js.undefined,
     outDir: java.lang.String = null,
@@ -135,10 +160,13 @@ object ParcelOptions {
     watch: js.UndefOr[scala.Boolean] = js.undefined
   ): ParcelOptions = {
     val __obj = js.Dynamic.literal()
+    if (bundleNodeModules != null) __obj.updateDynamic("bundleNodeModules")(bundleNodeModules.asInstanceOf[js.Any])
     if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
     if (cacheDir != null) __obj.updateDynamic("cacheDir")(cacheDir)
     if (!js.isUndefined(contentHash)) __obj.updateDynamic("contentHash")(contentHash)
     if (!js.isUndefined(detailedReport)) __obj.updateDynamic("detailedReport")(detailedReport)
+    if (global != null) __obj.updateDynamic("global")(global)
+    if (hmr != null) __obj.updateDynamic("hmr")(hmr.asInstanceOf[js.Any])
     if (hmrHostname != null) __obj.updateDynamic("hmrHostname")(hmrHostname)
     if (hmrPort != null) __obj.updateDynamic("hmrPort")(hmrPort.asInstanceOf[js.Any])
     if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])

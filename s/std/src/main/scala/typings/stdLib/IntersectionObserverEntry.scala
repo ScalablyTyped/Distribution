@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The IntersectionObserverEntry interface of the Intersection Observer API describes the intersection between the target element and its root container at a specific moment of transition. */
 trait IntersectionObserverEntry extends js.Object {
   val boundingClientRect: ClientRect | DOMRect
   val intersectionRatio: scala.Double

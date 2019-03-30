@@ -15,7 +15,7 @@ trait Message extends js.Object {
     */
   var markdown: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The resource id for a plain text or Markdown message string.
+    * The message identifier for this message.
     */
   var messageId: js.UndefOr[java.lang.String] = js.undefined
   /**

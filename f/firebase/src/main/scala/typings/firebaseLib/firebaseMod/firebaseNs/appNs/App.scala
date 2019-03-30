@@ -21,14 +21,14 @@ trait App extends js.Object {
     * The default app's name is `"[DEFAULT]"`.
     *
     * @example
-    * ```
+    * ```javascript
     * // The default app's name is "[DEFAULT]"
     * firebase.initializeApp(defaultAppConfig);
     * console.log(firebase.app().name);  // "[DEFAULT]"
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // A named app's name is what you provide to initializeApp()
     * var otherApp = firebase.initializeApp(otherAppConfig, "other");
     * console.log(otherApp.name);  // "other"
@@ -41,7 +41,7 @@ trait App extends js.Object {
     * {@link firebase.initializeApp `firebase.initializeApp()`}.
     *
     * @example
-    * ```
+    * ```javascript
     * var app = firebase.initializeApp(config);
     * console.log(app.options.databaseURL === config.databaseURL);  // true
     * ```
@@ -51,13 +51,11 @@ trait App extends js.Object {
     * Gets the {@link firebase.auth.Auth `Auth`} service for the current app.
     *
     * @example
-    * ```
+    * ```javascript
     * var auth = app.auth();
     * // The above is shorthand for:
     * // var auth = firebase.auth(app);
     * ```
-    *
-    * @return {!firebase.auth.Auth}
     */
   def auth(): firebaseLib.firebaseMod.firebaseNs.authNs.Auth = js.native
   /**
@@ -65,13 +63,11 @@ trait App extends js.Object {
     * current app.
     *
     * @example
-    * ```
+    * ```javascript
     * var database = app.database();
     * // The above is shorthand for:
     * // var database = firebase.database(app);
     * ```
-    *
-    * @return {!firebase.database.Database}
     */
   def database(): firebaseLib.firebaseMod.firebaseNs.databaseNs.Database = js.native
   def database(url: java.lang.String): firebaseLib.firebaseMod.firebaseNs.databaseNs.Database = js.native
@@ -80,7 +76,7 @@ trait App extends js.Object {
     * services.
     *
     * @example
-    * ```
+    * ```javascript
     * app.delete()
     *   .then(function() {
     *     console.log("App deleted successfully");
@@ -89,9 +85,6 @@ trait App extends js.Object {
     *     console.log("Error deleting app:", error);
     *   });
     * ```
-    *
-    * @return {!firebase.Promise<void>} An empty promise fulfilled when the app has
-    *   been deleted.
     */
   def delete(): js.Promise[_] = js.native
   def firestore(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Firestore = js.native
@@ -102,13 +95,11 @@ trait App extends js.Object {
     * current app.
     *
     * @example
-    * ```
+    * ```javascript
     * var messaging = app.messaging();
     * // The above is shorthand for:
     * // var messaging = firebase.messaging(app);
     * ```
-    *
-    * @return {!firebase.messaging.Messaging}
     */
   def messaging(): firebaseLib.firebaseMod.firebaseNs.messagingNs.Messaging = js.native
   /**
@@ -116,20 +107,19 @@ trait App extends js.Object {
     * app, optionally initialized with a custom storage bucket.
     *
     * @example
-    * ```
+    * ```javascript
     * var storage = app.storage();
     * // The above is shorthand for:
     * // var storage = firebase.storage(app);
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * var storage = app.storage("gs://your-app.appspot.com");
     * ```
     *
-    * @param {string=} url The gs:// url to your Firebase Storage Bucket.
+    * @param url The gs:// url to your Firebase Storage Bucket.
     *     If not passed, uses the app's default Storage Bucket.
-    * @return {!firebase.storage.Storage}
     */
   def storage(): firebaseLib.firebaseMod.firebaseNs.storageNs.Storage = js.native
   def storage(url: java.lang.String): firebaseLib.firebaseMod.firebaseNs.storageNs.Storage = js.native

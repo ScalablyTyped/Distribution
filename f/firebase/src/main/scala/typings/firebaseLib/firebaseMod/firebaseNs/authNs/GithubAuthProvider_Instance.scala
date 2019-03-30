@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   */
 trait GithubAuthProvider_Instance extends AuthProvider {
   /**
-    * @param {string} scope Github OAuth scope.
-    * @return {!firebase.auth.AuthProvider} The provider instance itself.
+    * @param scope Github OAuth scope.
+    * @return The provider instance itself.
     */
   def addScope(scope: java.lang.String): AuthProvider
   /**
@@ -22,9 +22,9 @@ trait GithubAuthProvider_Instance extends AuthProvider {
     * {@link https://developer.github.com/v3/oauth/ GitHub} documentation.
     * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
     * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
-    * @param {!Object} customOAuthParameters The custom OAuth parameters to pass
+    * @param customOAuthParameters The custom OAuth parameters to pass
     *     in the OAuth request.
-    * @return {!firebase.auth.AuthProvider} The provider instance itself.
+    * @return The provider instance itself.
     */
   def setCustomParameters(customOAuthParameters: js.Object): AuthProvider
 }

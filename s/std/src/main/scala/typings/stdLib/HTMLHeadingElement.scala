@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLHeadingElement interface represents the different heading elements. It inherits methods and properties from the HTMLElement interface. */
 @js.native
 trait HTMLHeadingElement extends HTMLElement {
   /**

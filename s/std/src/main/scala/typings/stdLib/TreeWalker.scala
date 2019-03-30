@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The TreeWalker object represents the nodes of a document subtree and a position within them. */
 trait TreeWalker extends js.Object {
   var currentNode: Node
   val filter: NodeFilter | scala.Null

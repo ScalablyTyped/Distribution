@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The CSSStyleDeclaration API represents an object that is a CSS declaration block, that exposes style information and various style-related methods and properties. */
 @js.native
 trait CSSStyleDeclaration
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {

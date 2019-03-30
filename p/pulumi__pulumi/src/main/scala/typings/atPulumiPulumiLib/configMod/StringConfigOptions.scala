@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 /**
   * StringConfigOptions may be used to constrain the set of legal values a string config value may contain.
   */
-trait StringConfigOptions extends js.Object {
+trait StringConfigOptions[K /* <: java.lang.String */] extends js.Object {
   /**
     * The legal enum values. If it does not match, a ConfigEnumError is thrown.
     */
-  var allowedValues: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var allowedValues: js.UndefOr[js.Array[K]] = js.undefined
   /**
     * The maximum string length. If the string is longer than this, a ConfigRangeError is thrown.
     */
@@ -29,18 +29,18 @@ trait StringConfigOptions extends js.Object {
 
 object StringConfigOptions {
   @scala.inline
-  def apply(
-    allowedValues: js.Array[java.lang.String] = null,
+  def apply[K /* <: java.lang.String */](
+    allowedValues: js.Array[K] = null,
     maxLength: scala.Int | scala.Double = null,
     minLength: scala.Int | scala.Double = null,
     pattern: java.lang.String | stdLib.RegExp = null
-  ): StringConfigOptions = {
+  ): StringConfigOptions[K] = {
     val __obj = js.Dynamic.literal()
     if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues)
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
     if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    __obj.asInstanceOf[StringConfigOptions]
+    __obj.asInstanceOf[StringConfigOptions[K]]
   }
 }
 

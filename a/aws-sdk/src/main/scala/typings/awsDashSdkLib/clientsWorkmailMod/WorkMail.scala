@@ -11,7 +11,7 @@ trait WorkMail
   @JSName("config")
   var config_WorkMail: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ClientConfiguration = js.native
   /**
-    * Adds a member to the resource's set of delegates.
+    * Adds a member (user or group) to the resource's set of delegates.
     */
   def associateDelegateToResource(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.AssociateDelegateToResourceResponse, 
@@ -28,7 +28,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds a member to the resource's set of delegates.
+    * Adds a member (user or group) to the resource's set of delegates.
     */
   def associateDelegateToResource(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.AssociateDelegateToResourceRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.AssociateDelegateToResourceResponse, 
@@ -46,7 +46,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds a member to the group's set.
+    * Adds a member (user or group) to the group's set.
     */
   def associateMemberToGroup(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.AssociateMemberToGroupResponse, 
@@ -63,7 +63,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds a member to the group's set.
+    * Adds a member (user or group) to the group's set.
     */
   def associateMemberToGroup(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.AssociateMemberToGroupRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.AssociateMemberToGroupResponse, 
@@ -81,7 +81,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds an alias to the set of a given member of Amazon WorkMail.
+    * Adds an alias to the set of a given member (user or group) of Amazon WorkMail.
     */
   def createAlias(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.CreateAliasResponse, 
@@ -98,7 +98,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds an alias to the set of a given member of Amazon WorkMail.
+    * Adds an alias to the set of a given member (user or group) of Amazon WorkMail.
     */
   def createAlias(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.CreateAliasRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.CreateAliasResponse, 
@@ -151,7 +151,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a new Amazon WorkMail resource. The available types are equipment and room.
+    * Creates a new Amazon WorkMail resource. 
     */
   def createResource(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.CreateResourceResponse, 
@@ -168,7 +168,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a new Amazon WorkMail resource. The available types are equipment and room.
+    * Creates a new Amazon WorkMail resource. 
     */
   def createResource(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.CreateResourceRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.CreateResourceResponse, 
@@ -221,7 +221,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Remove the alias from a set of aliases for a given user.
+    * Remove one or more specified aliases from a set of aliases for a given user.
     */
   def deleteAlias(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.DeleteAliasResponse, 
@@ -238,7 +238,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Remove the alias from a set of aliases for a given user.
+    * Remove one or more specified aliases from a set of aliases for a given user.
     */
   def deleteAlias(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.DeleteAliasRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.DeleteAliasResponse, 
@@ -291,7 +291,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes permissions granted to a user or group.
+    * Deletes permissions granted to a member (user or group).
     */
   def deleteMailboxPermissions(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.DeleteMailboxPermissionsResponse, 
@@ -308,7 +308,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes permissions granted to a user or group.
+    * Deletes permissions granted to a member (user or group).
     */
   def deleteMailboxPermissions(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.DeleteMailboxPermissionsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.DeleteMailboxPermissionsResponse, 
@@ -361,7 +361,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes a user from Amazon WorkMail and all subsequent systems. The action can't be undone. The mailbox is kept as-is for a minimum of 30 days, without any means to restore it. 
+    * Deletes a user from Amazon WorkMail and all subsequent systems. Before you can delete a user, the user state must be DISABLED. Use the DescribeUser action to confirm the user state. Deleting a user is permanent and cannot be undone. WorkMail archives user mailboxes for 30 days before they are permanently removed.
     */
   def deleteUser(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.DeleteUserResponse, 
@@ -378,7 +378,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes a user from Amazon WorkMail and all subsequent systems. The action can't be undone. The mailbox is kept as-is for a minimum of 30 days, without any means to restore it. 
+    * Deletes a user from Amazon WorkMail and all subsequent systems. Before you can delete a user, the user state must be DISABLED. Use the DescribeUser action to confirm the user state. Deleting a user is permanent and cannot be undone. WorkMail archives user mailboxes for 30 days before they are permanently removed.
     */
   def deleteUser(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.DeleteUserRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.DeleteUserResponse, 
@@ -396,7 +396,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Mark a user, group, or resource as no longer used in Amazon WorkMail. This action disassociates the mailbox and schedules it for clean-up. Amazon WorkMail keeps mailboxes for 30 days before they are permanently removed. The functionality in the console is Disable.
+    * Mark a user, group, or resource as no longer used in Amazon WorkMail. This action disassociates the mailbox and schedules it for clean-up. WorkMail keeps mailboxes for 30 days before they are permanently removed. The functionality in the console is Disable.
     */
   def deregisterFromWorkMail(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.DeregisterFromWorkMailResponse, 
@@ -413,7 +413,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Mark a user, group, or resource as no longer used in Amazon WorkMail. This action disassociates the mailbox and schedules it for clean-up. Amazon WorkMail keeps mailboxes for 30 days before they are permanently removed. The functionality in the console is Disable.
+    * Mark a user, group, or resource as no longer used in Amazon WorkMail. This action disassociates the mailbox and schedules it for clean-up. WorkMail keeps mailboxes for 30 days before they are permanently removed. The functionality in the console is Disable.
     */
   def deregisterFromWorkMail(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.DeregisterFromWorkMailRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.DeregisterFromWorkMailResponse, 
@@ -676,7 +676,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns an overview of the members of a group.
+    * Returns an overview of the members of a group. Users and groups can be members of a group.
     */
   def listGroupMembers(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ListGroupMembersResponse, 
@@ -693,7 +693,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns an overview of the members of a group.
+    * Returns an overview of the members of a group. Users and groups can be members of a group.
     */
   def listGroupMembers(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ListGroupMembersRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ListGroupMembersResponse, 
@@ -746,7 +746,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the mailbox permissions associated with a mailbox.
+    * Lists the mailbox permissions associated with a user, group, or resource mailbox.
     */
   def listMailboxPermissions(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ListMailboxPermissionsResponse, 
@@ -763,7 +763,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the mailbox permissions associated with a mailbox.
+    * Lists the mailbox permissions associated with a user, group, or resource mailbox.
     */
   def listMailboxPermissions(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ListMailboxPermissionsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ListMailboxPermissionsResponse, 
@@ -921,7 +921,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Sets permissions for a user or group. This replaces any pre-existing permissions set for the entity.
+    * Sets permissions for a user, group, or resource. This replaces any pre-existing permissions.
     */
   def putMailboxPermissions(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.PutMailboxPermissionsResponse, 
@@ -938,7 +938,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Sets permissions for a user or group. This replaces any pre-existing permissions set for the entity.
+    * Sets permissions for a user, group, or resource. This replaces any pre-existing permissions.
     */
   def putMailboxPermissions(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.PutMailboxPermissionsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.PutMailboxPermissionsResponse, 
@@ -956,7 +956,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Registers an existing and disabled user, group, or resource/entity for Amazon WorkMail use by associating a mailbox and calendaring capabilities. It performs no change if the entity is enabled and fails if the entity is deleted. This operation results in the accumulation of costs. For more information, see Pricing. The equivalent console functionality for this operation is Enable. Users can either be created by calling the CreateUser API or they can be synchronized from your directory. For more information, see DeregisterFromWorkMail.
+    * Registers an existing and disabled user, group, or resource for Amazon WorkMail use by associating a mailbox and calendaring capabilities. It performs no change if the user, group, or resource is enabled and fails if the user, group, or resource is deleted. This operation results in the accumulation of costs. For more information, see Pricing. The equivalent console functionality for this operation is Enable.  Users can either be created by calling the CreateUser API operation or they can be synchronized from your directory. For more information, see DeregisterFromWorkMail.
     */
   def registerToWorkMail(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.RegisterToWorkMailResponse, 
@@ -973,7 +973,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Registers an existing and disabled user, group, or resource/entity for Amazon WorkMail use by associating a mailbox and calendaring capabilities. It performs no change if the entity is enabled and fails if the entity is deleted. This operation results in the accumulation of costs. For more information, see Pricing. The equivalent console functionality for this operation is Enable. Users can either be created by calling the CreateUser API or they can be synchronized from your directory. For more information, see DeregisterFromWorkMail.
+    * Registers an existing and disabled user, group, or resource for Amazon WorkMail use by associating a mailbox and calendaring capabilities. It performs no change if the user, group, or resource is enabled and fails if the user, group, or resource is deleted. This operation results in the accumulation of costs. For more information, see Pricing. The equivalent console functionality for this operation is Enable.  Users can either be created by calling the CreateUser API operation or they can be synchronized from your directory. For more information, see DeregisterFromWorkMail.
     */
   def registerToWorkMail(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.RegisterToWorkMailRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.RegisterToWorkMailResponse, 
@@ -1026,7 +1026,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Updates the primary email for an entity. The current email is moved into the list of aliases (or swapped between an existing alias and the current primary email) and the email provided in the input is promoted as the primary.
+    * Updates the primary email for a user, group, or resource. The current email is moved into the list of aliases (or swapped between an existing alias and the current primary email), and the email provided in the input is promoted as the primary.
     */
   def updatePrimaryEmailAddress(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.UpdatePrimaryEmailAddressResponse, 
@@ -1043,7 +1043,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Updates the primary email for an entity. The current email is moved into the list of aliases (or swapped between an existing alias and the current primary email) and the email provided in the input is promoted as the primary.
+    * Updates the primary email for a user, group, or resource. The current email is moved into the list of aliases (or swapped between an existing alias and the current primary email), and the email provided in the input is promoted as the primary.
     */
   def updatePrimaryEmailAddress(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.UpdatePrimaryEmailAddressRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.UpdatePrimaryEmailAddressResponse, 
@@ -1061,7 +1061,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Updates data for the resource. It must be preceded by a describe call in order to have the latest information. The dataset in the request should be the one expected when performing another describe call.
+    * Updates data for the resource. To have the latest information, it must be preceded by a DescribeResource call. The dataset in the request should be the one expected when performing another DescribeResource call.
     */
   def updateResource(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.UpdateResourceResponse, 
@@ -1078,7 +1078,7 @@ trait WorkMail
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Updates data for the resource. It must be preceded by a describe call in order to have the latest information. The dataset in the request should be the one expected when performing another describe call.
+    * Updates data for the resource. To have the latest information, it must be preceded by a DescribeResource call. The dataset in the request should be the one expected when performing another DescribeResource call.
     */
   def updateResource(params: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.UpdateResourceRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsWorkmailMod.WorkMailNs.UpdateResourceResponse, 

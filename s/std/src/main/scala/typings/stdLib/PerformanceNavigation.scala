@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The legacy PerformanceNavigation interface represents information about how the navigation to the current document was done. */
 trait PerformanceNavigation extends js.Object {
   val TYPE_BACK_FORWARD: scala.Double
   val TYPE_NAVIGATE: scala.Double

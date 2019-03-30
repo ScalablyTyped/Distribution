@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   var key: astDashTypesLib.genKindsMod.ExpressionKind
   var optional: scala.Boolean
   var parameters: js.Array[
-    astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+    astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
   ]
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSMethodSignature
 }
@@ -32,7 +32,7 @@ object TSMethodSignature {
     key: astDashTypesLib.genKindsMod.ExpressionKind,
     optional: scala.Boolean,
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ],
     `type`: astDashTypesLib.astDashTypesLibStrings.TSMethodSignature,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,

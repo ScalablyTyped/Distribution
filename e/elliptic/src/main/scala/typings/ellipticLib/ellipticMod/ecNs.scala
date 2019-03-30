@@ -38,6 +38,7 @@ object ecNs extends js.Object {
     def validate(): ellipticLib.Anon_Reason = js.native
     def verify(msg: ellipticLib.ellipticMod.BNInput, signature: Signature): scala.Boolean = js.native
     def verify(msg: ellipticLib.ellipticMod.BNInput, signature: SignatureOptions): scala.Boolean = js.native
+    def verify(msg: ellipticLib.ellipticMod.BNInput, signature: java.lang.String): scala.Boolean = js.native
   }
   
   trait KeyPairOptions extends js.Object {

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** An XSLTProcessor applies an XSLT stylesheet transformation to an XML document to produce a new XML document as output. It has methods to load the XSLT stylesheet, to manipulate <xsl:param> parameter values, and to apply the transformation to documents. */
 trait XSLTProcessor extends js.Object {
   def clearParameters(): scala.Unit
   def getParameter(namespaceURI: java.lang.String, localName: java.lang.String): js.Any

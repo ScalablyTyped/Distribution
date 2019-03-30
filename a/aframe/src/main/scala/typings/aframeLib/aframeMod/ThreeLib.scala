@@ -388,7 +388,7 @@ trait ThreeLib extends js.Object {
     threeLib.threeMod.ImmediateRenderObject
   ] = js.native
   var InstancedBufferAttribute: org.scalablytyped.runtime.Instantiable2[
-    /* data */ stdLib.ArrayLike[scala.Double], 
+    /* array */ stdLib.ArrayLike[scala.Double], 
     /* itemSize */ scala.Double, 
     threeLib.threeMod.InstancedBufferAttribute
   ] = js.native
@@ -493,6 +493,11 @@ trait ThreeLib extends js.Object {
   val LoopRepeat: threeLib.threeDashCoreMod.AnimationActionLoopStyles = js.native
   val LuminanceAlphaFormat: threeLib.threeDashCoreMod.PixelFormat = js.native
   val LuminanceFormat: threeLib.threeDashCoreMod.PixelFormat = js.native
+  var Lut: org.scalablytyped.runtime.Instantiable2[
+    /* colormap */ threeLib.threeDashLutMod.ColorMapKeyword, 
+    /* numberofcolors */ scala.Double, 
+    threeLib.threeMod.Lut
+  ] = js.native
   var MTLLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MTLLoader] = js.native
   var MapControls: org.scalablytyped.runtime.Instantiable1[/* object */ threeLib.threeDashCoreMod.Camera, threeLib.threeMod.MapControls] = js.native
   var MaskPass: org.scalablytyped.runtime.Instantiable2[

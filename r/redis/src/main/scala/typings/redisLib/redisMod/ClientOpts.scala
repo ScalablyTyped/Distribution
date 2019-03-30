@@ -25,6 +25,7 @@ trait ClientOpts extends js.Object {
   var retry_strategy: js.UndefOr[RetryStrategy] = js.undefined
   var retry_unfulfilled_commands: js.UndefOr[scala.Boolean] = js.undefined
   var return_buffers: js.UndefOr[scala.Boolean] = js.undefined
+  var socket_initialdelay: js.UndefOr[scala.Double] = js.undefined
   var socket_keepalive: js.UndefOr[scala.Boolean] = js.undefined
   var string_numbers: js.UndefOr[scala.Boolean] = js.undefined
   var tls: js.UndefOr[js.Any] = js.undefined
@@ -53,6 +54,7 @@ object ClientOpts {
     retry_strategy: RetryStrategy = null,
     retry_unfulfilled_commands: js.UndefOr[scala.Boolean] = js.undefined,
     return_buffers: js.UndefOr[scala.Boolean] = js.undefined,
+    socket_initialdelay: scala.Int | scala.Double = null,
     socket_keepalive: js.UndefOr[scala.Boolean] = js.undefined,
     string_numbers: js.UndefOr[scala.Boolean] = js.undefined,
     tls: js.Any = null,
@@ -78,6 +80,7 @@ object ClientOpts {
     if (retry_strategy != null) __obj.updateDynamic("retry_strategy")(retry_strategy)
     if (!js.isUndefined(retry_unfulfilled_commands)) __obj.updateDynamic("retry_unfulfilled_commands")(retry_unfulfilled_commands)
     if (!js.isUndefined(return_buffers)) __obj.updateDynamic("return_buffers")(return_buffers)
+    if (socket_initialdelay != null) __obj.updateDynamic("socket_initialdelay")(socket_initialdelay.asInstanceOf[js.Any])
     if (!js.isUndefined(socket_keepalive)) __obj.updateDynamic("socket_keepalive")(socket_keepalive)
     if (!js.isUndefined(string_numbers)) __obj.updateDynamic("string_numbers")(string_numbers)
     if (tls != null) __obj.updateDynamic("tls")(tls)

@@ -34,6 +34,8 @@ trait CloudflareAppsMethods extends js.Object {
   @JSName("querySelector")
   def querySelector_basefont(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.basefont): stdLib.HTMLBaseFontElement | scala.Null = js.native
   @JSName("querySelector")
+  def querySelector_bdi(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.bdi): stdLib.HTMLElement | scala.Null = js.native
+  @JSName("querySelector")
   def querySelector_bdo(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.bdo): stdLib.HTMLElement | scala.Null = js.native
   @JSName("querySelector")
   def querySelector_blockquote(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.blockquote): stdLib.HTMLQuoteElement | scala.Null = js.native
@@ -210,6 +212,8 @@ trait CloudflareAppsMethods extends js.Object {
   @JSName("querySelector")
   def querySelector_link(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.link): stdLib.HTMLLinkElement | scala.Null = js.native
   @JSName("querySelector")
+  def querySelector_main(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.main): stdLib.HTMLElement | scala.Null = js.native
+  @JSName("querySelector")
   def querySelector_map(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.map): stdLib.HTMLMapElement | scala.Null = js.native
   @JSName("querySelector")
   def querySelector_mark(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.mark): stdLib.HTMLElement | scala.Null = js.native
@@ -266,6 +270,8 @@ trait CloudflareAppsMethods extends js.Object {
   @JSName("querySelector")
   def querySelector_rect(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.rect): stdLib.SVGRectElement | scala.Null = js.native
   @JSName("querySelector")
+  def querySelector_rp(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.rp): stdLib.HTMLElement | scala.Null = js.native
+  @JSName("querySelector")
   def querySelector_rt(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.rt): stdLib.HTMLElement | scala.Null = js.native
   @JSName("querySelector")
   def querySelector_ruby(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.ruby): stdLib.HTMLElement | scala.Null = js.native
@@ -295,6 +301,8 @@ trait CloudflareAppsMethods extends js.Object {
   def querySelector_style(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.style): stdLib.HTMLStyleElement | scala.Null = js.native
   @JSName("querySelector")
   def querySelector_sub(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.sub): stdLib.HTMLElement | scala.Null = js.native
+  @JSName("querySelector")
+  def querySelector_summary(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.summary): stdLib.HTMLElement | scala.Null = js.native
   @JSName("querySelector")
   def querySelector_sup(selectors: cloudflareDashAppsLib.cloudflareDashAppsLibStrings.sup): stdLib.HTMLElement | scala.Null = js.native
   @JSName("querySelector")

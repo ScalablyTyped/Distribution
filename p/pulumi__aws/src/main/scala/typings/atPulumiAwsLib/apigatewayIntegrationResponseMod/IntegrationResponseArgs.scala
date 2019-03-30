@@ -20,17 +20,13 @@ trait IntegrationResponseArgs extends js.Object {
   val resourceId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * A map of response parameters that can be read from the backend response.
-    * For example: `response_parameters = { "method.response.header.X-Some-Header" = "integration.response.header.X-Some-Other-Header" }`,
+    * For example: `response_parameters = { "method.response.header.X-Some-Header" = "integration.response.header.X-Some-Other-Header" }`
     */
   val responseParameters: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ]
   ] = js.undefined
-  /**
-    * **Deprecated**, use `response_parameters` instead.
-    */
-  val responseParametersInJson: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A map specifying the templates used to transform the integration response body
     */
@@ -67,7 +63,6 @@ object IntegrationResponseArgs {
     responseParameters: atPulumiPulumiLib.outputMod.Input[
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ] = null,
-    responseParametersInJson: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     responseTemplates: atPulumiPulumiLib.outputMod.Input[
       org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ] = null,
@@ -76,7 +71,6 @@ object IntegrationResponseArgs {
     val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApi = restApi.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     if (contentHandling != null) __obj.updateDynamic("contentHandling")(contentHandling.asInstanceOf[js.Any])
     if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
-    if (responseParametersInJson != null) __obj.updateDynamic("responseParametersInJson")(responseParametersInJson.asInstanceOf[js.Any])
     if (responseTemplates != null) __obj.updateDynamic("responseTemplates")(responseTemplates.asInstanceOf[js.Any])
     if (selectionPattern != null) __obj.updateDynamic("selectionPattern")(selectionPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntegrationResponseArgs]

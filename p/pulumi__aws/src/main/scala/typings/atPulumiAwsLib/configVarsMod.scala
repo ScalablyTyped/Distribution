@@ -11,11 +11,9 @@ object configVarsMod extends js.Object {
   var accessKey: js.UndefOr[java.lang.String] = js.native
   var allowedAccountIds: js.UndefOr[js.Array[java.lang.String]] = js.native
   var assumeRole: js.UndefOr[atPulumiAwsLib.Anon_ExternalIdPolicy] = js.native
-  var dynamodbEndpoint: js.UndefOr[java.lang.String] = js.native
   var endpoints: js.UndefOr[js.Array[atPulumiAwsLib.Anon_Acm]] = js.native
   var forbiddenAccountIds: js.UndefOr[js.Array[java.lang.String]] = js.native
   var insecure: js.UndefOr[scala.Boolean] = js.native
-  var kinesisEndpoint: js.UndefOr[java.lang.String] = js.native
   var maxRetries: js.UndefOr[scala.Double] = js.native
   var profile: js.UndefOr[java.lang.String] = js.native
   var region: atPulumiAwsLib.regionMod.Region = js.native

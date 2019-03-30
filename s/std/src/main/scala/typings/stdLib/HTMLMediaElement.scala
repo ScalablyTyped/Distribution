@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLMediaElement interface adds to HTMLElement the properties and methods needed to support basic media-related capabilities that are common to audio and video. */
 @js.native
 trait HTMLMediaElement extends HTMLElement {
   val HAVE_CURRENT_DATA: scala.Double = js.native
@@ -108,6 +109,7 @@ trait HTMLMediaElement extends HTMLElement {
   var onencrypted: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _]) | scala.Null = js.native
   /** @deprecated */
   var onmsneedkey: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
+  var onwaitingforkey: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   /**
     * Gets a flag that specifies whether playback is paused.
     */
@@ -178,6 +180,23 @@ trait HTMLMediaElement extends HTMLElement {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_waitingforkey(
+    `type`: stdLib.stdLibStrings.waitingforkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_waitingforkey(
+    `type`: stdLib.stdLibStrings.waitingforkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_waitingforkey(
+    `type`: stdLib.stdLibStrings.waitingforkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
   def addTextTrack(kind: TextTrackKind): TextTrack = js.native
   def addTextTrack(kind: TextTrackKind, label: java.lang.String): TextTrack = js.native
   def addTextTrack(kind: TextTrackKind, label: java.lang.String, language: java.lang.String): TextTrack = js.native
@@ -245,6 +264,23 @@ trait HTMLMediaElement extends HTMLElement {
   @JSName("removeEventListener")
   def removeEventListener_msneedkey(
     `type`: stdLib.stdLibStrings.msneedkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_waitingforkey(
+    `type`: stdLib.stdLibStrings.waitingforkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_waitingforkey(
+    `type`: stdLib.stdLibStrings.waitingforkey,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_waitingforkey(
+    `type`: stdLib.stdLibStrings.waitingforkey,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
     options: EventListenerOptions
   ): scala.Unit = js.native

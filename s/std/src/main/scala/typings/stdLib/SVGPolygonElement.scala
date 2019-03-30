@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGPolygonElement interface provides access to the properties of <polygon> elements, as well as methods to manipulate them. */
 @js.native
 trait SVGPolygonElement
   extends SVGGraphicsElement

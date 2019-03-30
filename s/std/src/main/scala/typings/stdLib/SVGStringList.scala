@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGStringList defines a list of DOMString objects. */
 trait SVGStringList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
   @JSName(org.scalablytyped.runtime.Symbol.iterator)

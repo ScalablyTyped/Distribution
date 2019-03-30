@@ -11,6 +11,10 @@ trait ParcelBundle extends js.Object {
     */
   var assets: stdLib.Set[_]
   /**
+    * A Set of all child bundles
+    */
+  var childBundles: stdLib.Set[_]
+  /**
     * The entryPoint of the bundle, used for generating the name and gathering assets.
     */
   var entryAsset: js.Any
@@ -44,6 +48,7 @@ object ParcelBundle {
   @scala.inline
   def apply(
     assets: stdLib.Set[_],
+    childBundles: stdLib.Set[_],
     entryAsset: js.Any,
     name: java.lang.String,
     offsets: stdLib.Map[ParcelAsset, scala.Double],
@@ -52,7 +57,7 @@ object ParcelBundle {
     `type`: java.lang.String,
     parentBundle: js.Any = null
   ): ParcelBundle = {
-    val __obj = js.Dynamic.literal(assets = assets, entryAsset = entryAsset, name = name, offsets = offsets, siblingBundles = siblingBundles, siblingBundlesMap = siblingBundlesMap)
+    val __obj = js.Dynamic.literal(assets = assets, childBundles = childBundles, entryAsset = entryAsset, name = name, offsets = offsets, siblingBundles = siblingBundles, siblingBundlesMap = siblingBundlesMap)
     __obj.updateDynamic("type")(`type`)
     if (parentBundle != null) __obj.updateDynamic("parentBundle")(parentBundle)
     __obj.asInstanceOf[ParcelBundle]

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ScopedSettings extends js.Object {
   /**
-    * @description
     * Scoped settings are settings that are scoped to a specific scope. The
     * scope is the name that is passed to the `customizable` function when the
     * the component is customized.
@@ -32,7 +31,6 @@ trait Anon_ScopedSettings extends js.Object {
     */
   var scopedSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings | atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettingsFunction
   /**
-    * @description
     * Settings are used as general settings for the React tree below.
     * Components can subscribe to receive the settings by using `customizable`.
     *

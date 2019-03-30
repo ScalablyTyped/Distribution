@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** Also inherits methods from its parents IDBRequest and EventTarget. */
 @js.native
 trait IDBOpenDBRequest extends IDBRequest[IDBDatabase] {
   var onblocked: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native

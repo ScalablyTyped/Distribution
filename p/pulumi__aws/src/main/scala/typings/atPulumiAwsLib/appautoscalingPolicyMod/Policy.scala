@@ -18,18 +18,11 @@ class Policy protected ()
     */
   def this(name: java.lang.String, args: PolicyArgs) = this()
   def this(name: java.lang.String, args: PolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  /**
-    * The scaling policy's adjustment type.
-    */
-  val adjustmentType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   val alarms: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The ARN assigned by AWS to the scaling policy.
     */
   val arn: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  val cooldown: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
-  val metricAggregationType: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val minAdjustmentMagnitude: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The name of the policy.
     */
@@ -50,11 +43,10 @@ class Policy protected ()
     * The AWS service namespace of the scalable target. Documentation can be found in the `ServiceNamespace` parameter at: [AWS Application Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
     */
   val serviceNamespace: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
-  val stepAdjustments: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_MetricIntervalLowerBound]]] = js.native
   /**
     * Step scaling policy configuration, requires `policy_type = "StepScaling"` (default). See supported fields below.
     */
-  val stepScalingPolicyConfigurations: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AdjustmentType]]] = js.native
+  val stepScalingPolicyConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AdjustmentType]] = js.native
   /**
     * A target tracking policy, requires `policy_type = "TargetTrackingScaling"`. See supported fields below.
     */

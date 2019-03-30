@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** SVGTransform is the interface for one of the component transformations within an SVGTransformList; thus, an SVGTransform object corresponds to a single component (e.g., scale(…) or matrix(…)) within a transform attribute. */
 trait SVGTransform extends js.Object {
   val SVG_TRANSFORM_MATRIX: scala.Double
   val SVG_TRANSFORM_ROTATE: scala.Double

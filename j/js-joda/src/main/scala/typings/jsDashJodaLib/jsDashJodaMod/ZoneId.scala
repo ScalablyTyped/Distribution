@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "ZoneId")
 @js.native
-class ZoneId ()
+abstract class ZoneId ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId {
   /* CompleteClass */
   override def equals(other: js.Any): scala.Boolean = js.native

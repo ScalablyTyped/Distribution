@@ -1381,16 +1381,16 @@ trait Anon_AbortAfterprint extends js.Object {
   ): scala.Unit = js.native
   def apply(
     `type`: downshiftLib.downshiftLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   def apply(
     `type`: downshiftLib.downshiftLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   def apply(
     `type`: downshiftLib.downshiftLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     options: stdLib.EventListenerOptions
   ): scala.Unit = js.native
   def apply(
@@ -1436,17 +1436,45 @@ trait Anon_AbortAfterprint extends js.Object {
     options: stdLib.EventListenerOptions
   ): scala.Unit = js.native
   def apply(
-    `type`: downshiftLib.downshiftLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _]
+    `type`: downshiftLib.downshiftLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  def apply(
+    `type`: downshiftLib.downshiftLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  def apply(
+    `type`: downshiftLib.downshiftLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    options: stdLib.EventListenerOptions
   ): scala.Unit = js.native
   def apply(
     `type`: downshiftLib.downshiftLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  def apply(
+    `type`: downshiftLib.downshiftLibStrings.select,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   def apply(
     `type`: downshiftLib.downshiftLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    options: stdLib.EventListenerOptions
+  ): scala.Unit = js.native
+  def apply(
+    `type`: downshiftLib.downshiftLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  def apply(
+    `type`: downshiftLib.downshiftLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  def apply(
+    `type`: downshiftLib.downshiftLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     options: stdLib.EventListenerOptions
   ): scala.Unit = js.native
   def apply(

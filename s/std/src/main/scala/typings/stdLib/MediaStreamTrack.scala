@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The MediaStreamTrack interface represents a single media track within a stream; typically, these are audio or video tracks, but other track types may exist as well. */
 @js.native
 trait MediaStreamTrack extends EventTarget {
   var enabled: scala.Boolean = js.native

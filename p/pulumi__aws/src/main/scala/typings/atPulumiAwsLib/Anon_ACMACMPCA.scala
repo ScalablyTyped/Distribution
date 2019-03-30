@@ -294,6 +294,7 @@ trait Anon_ACMACMPCA extends js.Object {
   val PollyNs: Anon_Polly = js.native
   var Pricing: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Pricing] = js.native
   val PricingNs: Anon_Pricing = js.native
+  var ProcessCredentials: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.ProcessCredentials] = js.native
   var QuickSight: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.QuickSight] = js.native
   val QuickSightNs: Anon_QuickSight = js.native
   var RAM: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.RAM] = js.native

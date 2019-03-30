@@ -1695,18 +1695,18 @@ trait Environment extends js.Object {
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: downshiftLib.downshiftLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: downshiftLib.downshiftLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_scroll(
     `type`: downshiftLib.downshiftLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     options: stdLib.AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1763,18 +1763,52 @@ trait Environment extends js.Object {
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: downshiftLib.downshiftLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: downshiftLib.downshiftLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_select(
     `type`: downshiftLib.downshiftLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    options: stdLib.AddEventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: downshiftLib.downshiftLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: downshiftLib.downshiftLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectionchange(
+    `type`: downshiftLib.downshiftLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    options: stdLib.AddEventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: downshiftLib.downshiftLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: downshiftLib.downshiftLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_selectstart(
+    `type`: downshiftLib.downshiftLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     options: stdLib.AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -3936,18 +3970,18 @@ trait Environment extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: downshiftLib.downshiftLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: downshiftLib.downshiftLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_scroll(
     `type`: downshiftLib.downshiftLibStrings.scroll,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     options: stdLib.EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -4004,18 +4038,52 @@ trait Environment extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: downshiftLib.downshiftLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: downshiftLib.downshiftLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_select(
     `type`: downshiftLib.downshiftLibStrings.select,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.UIEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    options: stdLib.EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: downshiftLib.downshiftLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: downshiftLib.downshiftLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectionchange(
+    `type`: downshiftLib.downshiftLibStrings.selectionchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    options: stdLib.EventListenerOptions
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: downshiftLib.downshiftLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: downshiftLib.downshiftLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_selectstart(
+    `type`: downshiftLib.downshiftLibStrings.selectstart,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _],
     options: stdLib.EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")

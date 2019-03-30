@@ -251,6 +251,8 @@ object ^ extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
   @JSName("create")
+  def create_bdi(name: d3Lib.d3LibStrings.bdi): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  @JSName("create")
   def create_bdo(name: d3Lib.d3LibStrings.bdo): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
   def create_blockquote(name: d3Lib.d3LibStrings.blockquote): d3DashSelectionLib.d3DashSelectionMod.Selection[
@@ -777,6 +779,8 @@ object ^ extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
   @JSName("create")
+  def create_main(name: d3Lib.d3LibStrings.main): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  @JSName("create")
   def create_map(name: d3Lib.d3LibStrings.map): d3DashSelectionLib.d3DashSelectionMod.Selection[
     stdLib.HTMLMapElement, 
     js.UndefOr[scala.Nothing], 
@@ -958,6 +962,8 @@ object ^ extends js.Object {
     js.UndefOr[scala.Nothing]
   ] = js.native
   @JSName("create")
+  def create_rp(name: d3Lib.d3LibStrings.rp): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  @JSName("create")
   def create_rt(name: d3Lib.d3LibStrings.rt): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
   def create_ruby(name: d3Lib.d3LibStrings.ruby): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
@@ -1022,6 +1028,8 @@ object ^ extends js.Object {
   ] = js.native
   @JSName("create")
   def create_sub(name: d3Lib.d3LibStrings.sub): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
+  @JSName("create")
+  def create_summary(name: d3Lib.d3LibStrings.summary): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
   def create_sup(name: d3Lib.d3LibStrings.sup): d3DashSelectionLib.d3DashSelectionMod.Selection[stdLib.HTMLElement, js.UndefOr[scala.Nothing], scala.Null, js.UndefOr[scala.Nothing]] = js.native
   @JSName("create")
@@ -1206,6 +1214,8 @@ object ^ extends js.Object {
     /* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, 
     stdLib.HTMLBaseFontElement
   ] = js.native
+  @JSName("creator")
+  def creator_bdi(name: d3Lib.d3LibStrings.bdi): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
   def creator_bdo(name: d3Lib.d3LibStrings.bdo): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
@@ -1521,6 +1531,8 @@ object ^ extends js.Object {
   @JSName("creator")
   def creator_link(name: d3Lib.d3LibStrings.link): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLLinkElement] = js.native
   @JSName("creator")
+  def creator_main(name: d3Lib.d3LibStrings.main): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
+  @JSName("creator")
   def creator_map(name: d3Lib.d3LibStrings.map): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLMapElement] = js.native
   @JSName("creator")
   def creator_mark(name: d3Lib.d3LibStrings.mark): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
@@ -1616,6 +1628,8 @@ object ^ extends js.Object {
   @JSName("creator")
   def creator_rect(name: d3Lib.d3LibStrings.rect): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.SVGRectElement] = js.native
   @JSName("creator")
+  def creator_rp(name: d3Lib.d3LibStrings.rp): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
+  @JSName("creator")
   def creator_rt(name: d3Lib.d3LibStrings.rt): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
   def creator_ruby(name: d3Lib.d3LibStrings.ruby): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
@@ -1654,6 +1668,8 @@ object ^ extends js.Object {
   def creator_style(name: d3Lib.d3LibStrings.style): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLStyleElement] = js.native
   @JSName("creator")
   def creator_sub(name: d3Lib.d3LibStrings.sub): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
+  @JSName("creator")
+  def creator_summary(name: d3Lib.d3LibStrings.summary): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")
   def creator_sup(name: d3Lib.d3LibStrings.sup): js.ThisFunction0[/* this */ d3DashSelectionLib.d3DashSelectionMod.BaseType, stdLib.HTMLElement] = js.native
   @JSName("creator")

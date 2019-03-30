@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFEDiffuseLightingElement interface corresponds to the <feDiffuseLighting> element. */
 @js.native
 trait SVGFEDiffuseLightingElement
   extends SVGElement

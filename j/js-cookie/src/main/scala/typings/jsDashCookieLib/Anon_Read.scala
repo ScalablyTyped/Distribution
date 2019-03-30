@@ -5,14 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_Read[TConv /* <: js.Object */] extends js.Object {
-  @JSName("read")
-  var read_Original: jsDashCookieLib.jsDashCookieMod.CookiesNs.CookieReadConverter = js.native
-  @JSName("write")
-  var write_Original: jsDashCookieLib.jsDashCookieMod.CookiesNs.CookieWriteConverter[TConv] = js.native
-  def read(value: java.lang.String, name: java.lang.String): java.lang.String = js.native
-  def write(value: TConv, name: java.lang.String): java.lang.String = js.native
-  def write(value: java.lang.String, name: java.lang.String): java.lang.String = js.native
+  var read: js.UndefOr[jsDashCookieLib.jsDashCookieMod.CookiesNs.CookieReadConverter] = js.undefined
+  var write: js.UndefOr[jsDashCookieLib.jsDashCookieMod.CookiesNs.CookieWriteConverter[TConv]] = js.undefined
+}
+
+object Anon_Read {
+  @scala.inline
+  def apply[TConv /* <: js.Object */](
+    read: jsDashCookieLib.jsDashCookieMod.CookiesNs.CookieReadConverter = null,
+    write: jsDashCookieLib.jsDashCookieMod.CookiesNs.CookieWriteConverter[TConv] = null
+  ): Anon_Read[TConv] = {
+    val __obj = js.Dynamic.literal()
+    if (read != null) __obj.updateDynamic("read")(read)
+    if (write != null) __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[Anon_Read[TConv]]
+  }
 }
 

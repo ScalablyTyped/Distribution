@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - sarifLib.sarifLibStrings.none
   - sarifLib.sarifLibStrings.notApplicable
   - sarifLib.sarifLibStrings.pass
   - sarifLib.sarifLibStrings.fail

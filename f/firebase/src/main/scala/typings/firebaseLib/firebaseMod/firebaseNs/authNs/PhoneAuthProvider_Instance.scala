@@ -34,10 +34,10 @@ trait PhoneAuthProvider_Instance extends AuthProvider {
     *     disabled.</dd>
     * </dl>
     *
-    * @param {string} phoneNumber The user's phone number in E.164 format (e.g.
+    * @param phoneNumber The user's phone number in E.164 format (e.g.
     *     +16505550101).
-    * @param {!firebase.auth.ApplicationVerifier} applicationVerifier
-    * @return {!firebase.Promise<string>} A Promise for the verification ID.
+    * @param applicationVerifier
+    * @return A Promise for the verification ID.
     */
   def verifyPhoneNumber(phoneNumber: java.lang.String, applicationVerifier: ApplicationVerifier): js.Promise[java.lang.String]
 }

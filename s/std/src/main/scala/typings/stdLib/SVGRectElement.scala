@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGRectElement interface provides access to the properties of <rect> elements, as well as methods to manipulate them. */
 @js.native
 trait SVGRectElement extends SVGGraphicsElement {
   val height: SVGAnimatedLength = js.native

@@ -28,5 +28,20 @@ object validationValidateMod extends js.Object {
     rules: js.Array[graphqlLib.validationValidationContextMod.ValidationRule],
     typeInfo: graphqlLib.utilitiesTypeInfoMod.TypeInfo
   ): js.Array[graphqlLib.errorMod.GraphQLError] = js.native
+  def validateSDL(documentAST: graphqlLib.languageAstMod.DocumentNode): js.Array[graphqlLib.errorMod.GraphQLError] = js.native
+  def validateSDL(
+    documentAST: graphqlLib.languageAstMod.DocumentNode,
+    schemaToExtend: graphqlLib.typeSchemaMod.GraphQLSchema
+  ): js.Array[graphqlLib.errorMod.GraphQLError] = js.native
+  def validateSDL(
+    documentAST: graphqlLib.languageAstMod.DocumentNode,
+    schemaToExtend: graphqlLib.typeSchemaMod.GraphQLSchema,
+    rules: js.Array[graphqlLib.validationValidationContextMod.SDLValidationRule]
+  ): js.Array[graphqlLib.errorMod.GraphQLError] = js.native
+  def validateSDL(
+    documentAST: graphqlLib.languageAstMod.DocumentNode,
+    schemaToExtend: scala.Null,
+    rules: js.Array[graphqlLib.validationValidationContextMod.SDLValidationRule]
+  ): js.Array[graphqlLib.errorMod.GraphQLError] = js.native
 }
 

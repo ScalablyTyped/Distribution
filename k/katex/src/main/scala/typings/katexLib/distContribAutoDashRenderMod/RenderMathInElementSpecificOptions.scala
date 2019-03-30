@@ -37,7 +37,7 @@ trait RenderMathInElementSpecificOptions extends js.Object {
     */
   var ignoredTags: js.UndefOr[
     js.Array[
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 119 */ js.Any
     ]
   ] = js.undefined
 }
@@ -49,7 +49,7 @@ object RenderMathInElementSpecificOptions {
     errorCallback: (/* msg */ java.lang.String, /* err */ stdLib.Error) => scala.Unit = null,
     ignoredClasses: js.Array[java.lang.String] = null,
     ignoredTags: js.Array[
-      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ js.Any
+      /* import warning: LimitUnionLength.enterTypeRef Was union type with length 119 */ js.Any
     ] = null
   ): RenderMathInElementSpecificOptions = {
     val __obj = js.Dynamic.literal()

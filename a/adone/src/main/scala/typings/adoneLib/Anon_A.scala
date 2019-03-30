@@ -10,9 +10,17 @@ trait Anon_A extends js.Object {
   var CertificateCls: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.cryptoNs.CertificateCls] = js.native
   @JSName("Certificate")
   val Certificate_Original: nodeLib.Anon_Certificate = js.native
+  var Cipher: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.cryptoNs.Cipher] = js.native
   /** @deprecated since v10.0.0 */
   val DEFAULT_ENCODING: java.lang.String = js.native
+  var Decipher: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.cryptoNs.Decipher] = js.native
+  var DiffieHellman: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.cryptoNs.DiffieHellman] = js.native
   var ECDH: Anon_Base64 = js.native
+  var Hash: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.cryptoNs.Hash] = js.native
+  var Hmac: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.cryptoNs.Hmac] = js.native
+  var KeyObject: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.cryptoNs.KeyObject] = js.native
+  var Signer: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.cryptoNs.Signer] = js.native
+  var Verify: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.cryptoNs.Verify] = js.native
   val constantsNs: Anon_ALPNENABLED = js.native
   /** @deprecated since v10.0.0 */
   val fips: scala.Boolean = js.native

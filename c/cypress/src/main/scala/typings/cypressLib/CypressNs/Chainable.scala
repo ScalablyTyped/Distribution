@@ -3024,6 +3024,10 @@ trait Chainable[Subject] extends js.Object {
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
   @JSName("children")
+  def children_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("children")
+  def children_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("children")
   def children_bdo(selector: cypressLib.cypressLibStrings.bdo): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("children")
   def children_bdo(selector: cypressLib.cypressLibStrings.bdo, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -3254,6 +3258,10 @@ trait Chainable[Subject] extends js.Object {
   @JSName("children")
   def children_link(selector: cypressLib.cypressLibStrings.link, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLLinkElement]] = js.native
   @JSName("children")
+  def children_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("children")
+  def children_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("children")
   def children_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("children")
   def children_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -3342,6 +3350,10 @@ trait Chainable[Subject] extends js.Object {
   @JSName("children")
   def children_q(selector: cypressLib.cypressLibStrings.q, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLQuoteElement]] = js.native
   @JSName("children")
+  def children_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("children")
+  def children_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("children")
   def children_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("children")
   def children_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -3397,6 +3409,10 @@ trait Chainable[Subject] extends js.Object {
   def children_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("children")
   def children_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("children")
+  def children_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("children")
+  def children_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("children")
   def children_sup(selector: cypressLib.cypressLibStrings.sup): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("children")
@@ -3728,6 +3744,15 @@ trait Chainable[Subject] extends js.Object {
     selector: cypressLib.cypressLibStrings.basefont,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
+  /**
+    * Get the first DOM element that matches the selector (whether it be itself or one of its ancestors).
+    *
+    * @see https://on.cypress.io/closest
+    */
+  @JSName("closest")
+  def closest_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("closest")
+  def closest_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the first DOM element that matches the selector (whether it be itself or one of its ancestors).
     *
@@ -4229,6 +4254,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/closest
     */
   @JSName("closest")
+  def closest_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("closest")
+  def closest_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the first DOM element that matches the selector (whether it be itself or one of its ancestors).
+    *
+    * @see https://on.cypress.io/closest
+    */
+  @JSName("closest")
   def closest_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("closest")
   def closest_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -4412,6 +4446,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/closest
     */
   @JSName("closest")
+  def closest_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("closest")
+  def closest_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the first DOM element that matches the selector (whether it be itself or one of its ancestors).
+    *
+    * @see https://on.cypress.io/closest
+    */
+  @JSName("closest")
   def closest_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("closest")
   def closest_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -4532,6 +4575,15 @@ trait Chainable[Subject] extends js.Object {
   def closest_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("closest")
   def closest_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the first DOM element that matches the selector (whether it be itself or one of its ancestors).
+    *
+    * @see https://on.cypress.io/closest
+    */
+  @JSName("closest")
+  def closest_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("closest")
+  def closest_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the first DOM element that matches the selector (whether it be itself or one of its ancestors).
     *
@@ -5107,6 +5159,38 @@ trait Chainable[Subject] extends js.Object {
     text: stdLib.RegExp,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
+  /**
+    * Get the DOM element with name "selector" containing the text or regular expression.
+    *
+    * @see https://on.cypress.io/contains
+    * @example
+    *    // yields <ul>...</ul>
+    *    cy.contains('ul', 'apples')
+    */
+  @JSName("contains")
+  def contains_bdi(selector: cypressLib.cypressLibStrings.bdi, text: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_bdi(
+    selector: cypressLib.cypressLibStrings.bdi,
+    text: java.lang.String,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_bdi(selector: cypressLib.cypressLibStrings.bdi, text: scala.Double): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_bdi(
+    selector: cypressLib.cypressLibStrings.bdi,
+    text: scala.Double,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_bdi(selector: cypressLib.cypressLibStrings.bdi, text: stdLib.RegExp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_bdi(
+    selector: cypressLib.cypressLibStrings.bdi,
+    text: stdLib.RegExp,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the DOM element with name "selector" containing the text or regular expression.
     *
@@ -6812,6 +6896,38 @@ trait Chainable[Subject] extends js.Object {
     *    cy.contains('ul', 'apples')
     */
   @JSName("contains")
+  def contains_main(selector: cypressLib.cypressLibStrings.main, text: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_main(
+    selector: cypressLib.cypressLibStrings.main,
+    text: java.lang.String,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_main(selector: cypressLib.cypressLibStrings.main, text: scala.Double): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_main(
+    selector: cypressLib.cypressLibStrings.main,
+    text: scala.Double,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_main(selector: cypressLib.cypressLibStrings.main, text: stdLib.RegExp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_main(
+    selector: cypressLib.cypressLibStrings.main,
+    text: stdLib.RegExp,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the DOM element with name "selector" containing the text or regular expression.
+    *
+    * @see https://on.cypress.io/contains
+    * @example
+    *    // yields <ul>...</ul>
+    *    cy.contains('ul', 'apples')
+    */
+  @JSName("contains")
   def contains_map(selector: cypressLib.cypressLibStrings.map, text: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("contains")
   def contains_map(
@@ -7420,6 +7536,38 @@ trait Chainable[Subject] extends js.Object {
     *    cy.contains('ul', 'apples')
     */
   @JSName("contains")
+  def contains_rp(selector: cypressLib.cypressLibStrings.rp, text: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_rp(
+    selector: cypressLib.cypressLibStrings.rp,
+    text: java.lang.String,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_rp(selector: cypressLib.cypressLibStrings.rp, text: scala.Double): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_rp(
+    selector: cypressLib.cypressLibStrings.rp,
+    text: scala.Double,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_rp(selector: cypressLib.cypressLibStrings.rp, text: stdLib.RegExp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_rp(
+    selector: cypressLib.cypressLibStrings.rp,
+    text: stdLib.RegExp,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the DOM element with name "selector" containing the text or regular expression.
+    *
+    * @see https://on.cypress.io/contains
+    * @example
+    *    // yields <ul>...</ul>
+    *    cy.contains('ul', 'apples')
+    */
+  @JSName("contains")
   def contains_rt(selector: cypressLib.cypressLibStrings.rt, text: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("contains")
   def contains_rt(
@@ -7856,6 +8004,38 @@ trait Chainable[Subject] extends js.Object {
   @JSName("contains")
   def contains_sub(
     selector: cypressLib.cypressLibStrings.sub,
+    text: stdLib.RegExp,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the DOM element with name "selector" containing the text or regular expression.
+    *
+    * @see https://on.cypress.io/contains
+    * @example
+    *    // yields <ul>...</ul>
+    *    cy.contains('ul', 'apples')
+    */
+  @JSName("contains")
+  def contains_summary(selector: cypressLib.cypressLibStrings.summary, text: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_summary(
+    selector: cypressLib.cypressLibStrings.summary,
+    text: java.lang.String,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_summary(selector: cypressLib.cypressLibStrings.summary, text: scala.Double): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_summary(
+    selector: cypressLib.cypressLibStrings.summary,
+    text: scala.Double,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_summary(selector: cypressLib.cypressLibStrings.summary, text: stdLib.RegExp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("contains")
+  def contains_summary(
+    selector: cypressLib.cypressLibStrings.summary,
     text: stdLib.RegExp,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -8626,6 +8806,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/filter
     */
   @JSName("filter")
+  def filter_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("filter")
+  def filter_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the DOM elements that match a specific selector. Opposite of `.not()`
+    *
+    * @see https://on.cypress.io/filter
+    */
+  @JSName("filter")
   def filter_bdo(selector: cypressLib.cypressLibStrings.bdo): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("filter")
   def filter_bdo(selector: cypressLib.cypressLibStrings.bdo, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -9121,6 +9310,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/filter
     */
   @JSName("filter")
+  def filter_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("filter")
+  def filter_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the DOM elements that match a specific selector. Opposite of `.not()`
+    *
+    * @see https://on.cypress.io/filter
+    */
+  @JSName("filter")
   def filter_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("filter")
   def filter_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -9304,6 +9502,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/filter
     */
   @JSName("filter")
+  def filter_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("filter")
+  def filter_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the DOM elements that match a specific selector. Opposite of `.not()`
+    *
+    * @see https://on.cypress.io/filter
+    */
+  @JSName("filter")
   def filter_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("filter")
   def filter_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -9424,6 +9631,15 @@ trait Chainable[Subject] extends js.Object {
   def filter_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("filter")
   def filter_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the DOM elements that match a specific selector. Opposite of `.not()`
+    *
+    * @see https://on.cypress.io/filter
+    */
+  @JSName("filter")
+  def filter_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("filter")
+  def filter_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the DOM elements that match a specific selector. Opposite of `.not()`
     *
@@ -9726,6 +9942,17 @@ trait Chainable[Subject] extends js.Object {
     selector: cypressLib.cypressLibStrings.basefont,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
+  /**
+    * Get the descendent DOM elements of a specific selector.
+    *
+    * @see https://on.cypress.io/find
+    * @example
+    *    cy.get('.article').find('footer') // Yield 'footer' within '.article'
+    */
+  @JSName("find")
+  def find_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("find")
+  def find_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the descendent DOM elements of a specific selector.
     *
@@ -10335,6 +10562,17 @@ trait Chainable[Subject] extends js.Object {
     *    cy.get('.article').find('footer') // Yield 'footer' within '.article'
     */
   @JSName("find")
+  def find_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("find")
+  def find_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the descendent DOM elements of a specific selector.
+    *
+    * @see https://on.cypress.io/find
+    * @example
+    *    cy.get('.article').find('footer') // Yield 'footer' within '.article'
+    */
+  @JSName("find")
   def find_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("find")
   def find_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -10556,6 +10794,17 @@ trait Chainable[Subject] extends js.Object {
     *    cy.get('.article').find('footer') // Yield 'footer' within '.article'
     */
   @JSName("find")
+  def find_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("find")
+  def find_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the descendent DOM elements of a specific selector.
+    *
+    * @see https://on.cypress.io/find
+    * @example
+    *    cy.get('.article').find('footer') // Yield 'footer' within '.article'
+    */
+  @JSName("find")
   def find_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("find")
   def find_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -10702,6 +10951,17 @@ trait Chainable[Subject] extends js.Object {
   def find_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("find")
   def find_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the descendent DOM elements of a specific selector.
+    *
+    * @see https://on.cypress.io/find
+    * @example
+    *    cy.get('.article').find('footer') // Yield 'footer' within '.article'
+    */
+  @JSName("find")
+  def find_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("find")
+  def find_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the descendent DOM elements of a specific selector.
     *
@@ -11117,6 +11377,17 @@ trait Chainable[Subject] extends js.Object {
     selector: cypressLib.cypressLibStrings.basefont,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
+  /**
+    * Get one or more DOM elements by node name: input, button, etc.
+    * @see https://on.cypress.io/get
+    * @example
+    *    cy.get('input').should('be.disabled')
+    *    cy.get('button').should('be.visible')
+    */
+  @JSName("get")
+  def get_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("get")
+  def get_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get one or more DOM elements by node name: input, button, etc.
     * @see https://on.cypress.io/get
@@ -11726,6 +11997,17 @@ trait Chainable[Subject] extends js.Object {
     *    cy.get('button').should('be.visible')
     */
   @JSName("get")
+  def get_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("get")
+  def get_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get one or more DOM elements by node name: input, button, etc.
+    * @see https://on.cypress.io/get
+    * @example
+    *    cy.get('input').should('be.disabled')
+    *    cy.get('button').should('be.visible')
+    */
+  @JSName("get")
   def get_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("get")
   def get_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -11947,6 +12229,17 @@ trait Chainable[Subject] extends js.Object {
     *    cy.get('button').should('be.visible')
     */
   @JSName("get")
+  def get_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("get")
+  def get_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get one or more DOM elements by node name: input, button, etc.
+    * @see https://on.cypress.io/get
+    * @example
+    *    cy.get('input').should('be.disabled')
+    *    cy.get('button').should('be.visible')
+    */
+  @JSName("get")
   def get_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -12093,6 +12386,17 @@ trait Chainable[Subject] extends js.Object {
   def get_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("get")
   def get_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get one or more DOM elements by node name: input, button, etc.
+    * @see https://on.cypress.io/get
+    * @example
+    *    cy.get('input').should('be.disabled')
+    *    cy.get('button').should('be.visible')
+    */
+  @JSName("get")
+  def get_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("get")
+  def get_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get one or more DOM elements by node name: input, button, etc.
     * @see https://on.cypress.io/get
@@ -12501,6 +12805,15 @@ trait Chainable[Subject] extends js.Object {
     selector: cypressLib.cypressLibStrings.basefont,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
+  /**
+    * Get all following siblings of each DOM element in a set of matched DOM elements.
+    *
+    * @see https://on.cypress.io/nextall
+    */
+  @JSName("nextAll")
+  def nextAll_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("nextAll")
+  def nextAll_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get all following siblings of each DOM element in a set of matched DOM elements.
     *
@@ -13002,6 +13315,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/nextall
     */
   @JSName("nextAll")
+  def nextAll_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("nextAll")
+  def nextAll_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all following siblings of each DOM element in a set of matched DOM elements.
+    *
+    * @see https://on.cypress.io/nextall
+    */
+  @JSName("nextAll")
   def nextAll_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("nextAll")
   def nextAll_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -13185,6 +13507,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/nextall
     */
   @JSName("nextAll")
+  def nextAll_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("nextAll")
+  def nextAll_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all following siblings of each DOM element in a set of matched DOM elements.
+    *
+    * @see https://on.cypress.io/nextall
+    */
+  @JSName("nextAll")
   def nextAll_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("nextAll")
   def nextAll_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -13305,6 +13636,15 @@ trait Chainable[Subject] extends js.Object {
   def nextAll_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("nextAll")
   def nextAll_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all following siblings of each DOM element in a set of matched DOM elements.
+    *
+    * @see https://on.cypress.io/nextall
+    */
+  @JSName("nextAll")
+  def nextAll_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("nextAll")
+  def nextAll_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get all following siblings of each DOM element in a set of matched DOM elements.
     *
@@ -13589,6 +13929,15 @@ trait Chainable[Subject] extends js.Object {
     selector: cypressLib.cypressLibStrings.basefont,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
+  /**
+    * Get all following siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
+    *
+    * @see https://on.cypress.io/nextuntil
+    */
+  @JSName("nextUntil")
+  def nextUntil_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get all following siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
     *
@@ -14090,6 +14439,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/nextuntil
     */
   @JSName("nextUntil")
+  def nextUntil_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all following siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
+    *
+    * @see https://on.cypress.io/nextuntil
+    */
+  @JSName("nextUntil")
   def nextUntil_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -14273,6 +14631,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/nextuntil
     */
   @JSName("nextUntil")
+  def nextUntil_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all following siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
+    *
+    * @see https://on.cypress.io/nextuntil
+    */
+  @JSName("nextUntil")
   def nextUntil_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -14393,6 +14760,15 @@ trait Chainable[Subject] extends js.Object {
   def nextUntil_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all following siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
+    *
+    * @see https://on.cypress.io/nextuntil
+    */
+  @JSName("nextUntil")
+  def nextUntil_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get all following siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
     *
@@ -14663,6 +15039,15 @@ trait Chainable[Subject] extends js.Object {
     selector: cypressLib.cypressLibStrings.basefont,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
+  /**
+    * Get the immediately following sibling of each DOM element within a set of DOM elements.
+    *
+    * @see https://on.cypress.io/next
+    */
+  @JSName("next")
+  def next_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("next")
+  def next_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the immediately following sibling of each DOM element within a set of DOM elements.
     *
@@ -15164,6 +15549,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/next
     */
   @JSName("next")
+  def next_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("next")
+  def next_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the immediately following sibling of each DOM element within a set of DOM elements.
+    *
+    * @see https://on.cypress.io/next
+    */
+  @JSName("next")
   def next_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("next")
   def next_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -15347,6 +15741,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/next
     */
   @JSName("next")
+  def next_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("next")
+  def next_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the immediately following sibling of each DOM element within a set of DOM elements.
+    *
+    * @see https://on.cypress.io/next
+    */
+  @JSName("next")
   def next_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("next")
   def next_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -15467,6 +15870,15 @@ trait Chainable[Subject] extends js.Object {
   def next_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("next")
   def next_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the immediately following sibling of each DOM element within a set of DOM elements.
+    *
+    * @see https://on.cypress.io/next
+    */
+  @JSName("next")
+  def next_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("next")
+  def next_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the immediately following sibling of each DOM element within a set of DOM elements.
     *
@@ -16378,6 +16790,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/parent
     */
   @JSName("parent")
+  def parent_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parent")
+  def parent_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the parent DOM element of a set of DOM elements.
+    *
+    * @see https://on.cypress.io/parent
+    */
+  @JSName("parent")
   def parent_bdo(selector: cypressLib.cypressLibStrings.bdo): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("parent")
   def parent_bdo(selector: cypressLib.cypressLibStrings.bdo, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -16873,6 +17294,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/parent
     */
   @JSName("parent")
+  def parent_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parent")
+  def parent_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the parent DOM element of a set of DOM elements.
+    *
+    * @see https://on.cypress.io/parent
+    */
+  @JSName("parent")
   def parent_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("parent")
   def parent_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -17056,6 +17486,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/parent
     */
   @JSName("parent")
+  def parent_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parent")
+  def parent_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the parent DOM element of a set of DOM elements.
+    *
+    * @see https://on.cypress.io/parent
+    */
+  @JSName("parent")
   def parent_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("parent")
   def parent_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -17176,6 +17615,15 @@ trait Chainable[Subject] extends js.Object {
   def parent_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("parent")
   def parent_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the parent DOM element of a set of DOM elements.
+    *
+    * @see https://on.cypress.io/parent
+    */
+  @JSName("parent")
+  def parent_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parent")
+  def parent_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the parent DOM element of a set of DOM elements.
     *
@@ -17550,6 +17998,21 @@ trait Chainable[Subject] extends js.Object {
     filter: java.lang.String,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
+  /**
+    * Get all ancestors of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
+    *
+    * @see https://on.cypress.io/parentsuntil
+    */
+  @JSName("parentsUntil")
+  def parentsUntil_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parentsUntil")
+  def parentsUntil_bdi(selector: cypressLib.cypressLibStrings.bdi, filter: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parentsUntil")
+  def parentsUntil_bdi(
+    selector: cypressLib.cypressLibStrings.bdi,
+    filter: java.lang.String,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get all ancestors of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
     *
@@ -18351,6 +18814,21 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/parentsuntil
     */
   @JSName("parentsUntil")
+  def parentsUntil_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parentsUntil")
+  def parentsUntil_main(selector: cypressLib.cypressLibStrings.main, filter: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parentsUntil")
+  def parentsUntil_main(
+    selector: cypressLib.cypressLibStrings.main,
+    filter: java.lang.String,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all ancestors of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
+    *
+    * @see https://on.cypress.io/parentsuntil
+    */
+  @JSName("parentsUntil")
   def parentsUntil_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("parentsUntil")
   def parentsUntil_map(selector: cypressLib.cypressLibStrings.map, filter: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -18636,6 +19114,21 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/parentsuntil
     */
   @JSName("parentsUntil")
+  def parentsUntil_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parentsUntil")
+  def parentsUntil_rp(selector: cypressLib.cypressLibStrings.rp, filter: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parentsUntil")
+  def parentsUntil_rp(
+    selector: cypressLib.cypressLibStrings.rp,
+    filter: java.lang.String,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all ancestors of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
+    *
+    * @see https://on.cypress.io/parentsuntil
+    */
+  @JSName("parentsUntil")
   def parentsUntil_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("parentsUntil")
   def parentsUntil_rt(selector: cypressLib.cypressLibStrings.rt, filter: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -18837,6 +19330,21 @@ trait Chainable[Subject] extends js.Object {
   @JSName("parentsUntil")
   def parentsUntil_sub(
     selector: cypressLib.cypressLibStrings.sub,
+    filter: java.lang.String,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all ancestors of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
+    *
+    * @see https://on.cypress.io/parentsuntil
+    */
+  @JSName("parentsUntil")
+  def parentsUntil_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parentsUntil")
+  def parentsUntil_summary(selector: cypressLib.cypressLibStrings.summary, filter: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parentsUntil")
+  def parentsUntil_summary(
+    selector: cypressLib.cypressLibStrings.summary,
     filter: java.lang.String,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -19212,6 +19720,15 @@ trait Chainable[Subject] extends js.Object {
     selector: cypressLib.cypressLibStrings.basefont,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
+  /**
+    * Get the parent DOM elements of a set of DOM elements.
+    *
+    * @see https://on.cypress.io/parents
+    */
+  @JSName("parents")
+  def parents_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parents")
+  def parents_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the parent DOM elements of a set of DOM elements.
     *
@@ -19713,6 +20230,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/parents
     */
   @JSName("parents")
+  def parents_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parents")
+  def parents_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the parent DOM elements of a set of DOM elements.
+    *
+    * @see https://on.cypress.io/parents
+    */
+  @JSName("parents")
   def parents_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("parents")
   def parents_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -19896,6 +20422,15 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/parents
     */
   @JSName("parents")
+  def parents_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parents")
+  def parents_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the parent DOM elements of a set of DOM elements.
+    *
+    * @see https://on.cypress.io/parents
+    */
+  @JSName("parents")
   def parents_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("parents")
   def parents_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -20016,6 +20551,15 @@ trait Chainable[Subject] extends js.Object {
   def parents_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("parents")
   def parents_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the parent DOM elements of a set of DOM elements.
+    *
+    * @see https://on.cypress.io/parents
+    */
+  @JSName("parents")
+  def parents_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("parents")
+  def parents_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the parent DOM elements of a set of DOM elements.
     *
@@ -20339,6 +20883,16 @@ trait Chainable[Subject] extends js.Object {
     selector: cypressLib.cypressLibStrings.basefont,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
+  /**
+    * Get all previous siblings of each DOM element in a set of matched DOM elements.
+    * > The querying behavior of this command matches exactly how [.prevAll()](http://api.jquery.com/prevAll) works in jQuery.
+    *
+    * @see https://on.cypress.io/prevall
+    */
+  @JSName("prevAll")
+  def prevAll_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prevAll")
+  def prevAll_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get all previous siblings of each DOM element in a set of matched DOM elements.
     * > The querying behavior of this command matches exactly how [.prevAll()](http://api.jquery.com/prevAll) works in jQuery.
@@ -20894,6 +21448,16 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/prevall
     */
   @JSName("prevAll")
+  def prevAll_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prevAll")
+  def prevAll_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all previous siblings of each DOM element in a set of matched DOM elements.
+    * > The querying behavior of this command matches exactly how [.prevAll()](http://api.jquery.com/prevAll) works in jQuery.
+    *
+    * @see https://on.cypress.io/prevall
+    */
+  @JSName("prevAll")
   def prevAll_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("prevAll")
   def prevAll_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -21096,6 +21660,16 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/prevall
     */
   @JSName("prevAll")
+  def prevAll_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prevAll")
+  def prevAll_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all previous siblings of each DOM element in a set of matched DOM elements.
+    * > The querying behavior of this command matches exactly how [.prevAll()](http://api.jquery.com/prevAll) works in jQuery.
+    *
+    * @see https://on.cypress.io/prevall
+    */
+  @JSName("prevAll")
   def prevAll_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("prevAll")
   def prevAll_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -21229,6 +21803,16 @@ trait Chainable[Subject] extends js.Object {
   def prevAll_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("prevAll")
   def prevAll_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all previous siblings of each DOM element in a set of matched DOM elements.
+    * > The querying behavior of this command matches exactly how [.prevAll()](http://api.jquery.com/prevAll) works in jQuery.
+    *
+    * @see https://on.cypress.io/prevall
+    */
+  @JSName("prevAll")
+  def prevAll_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prevAll")
+  def prevAll_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get all previous siblings of each DOM element in a set of matched DOM elements.
     * > The querying behavior of this command matches exactly how [.prevAll()](http://api.jquery.com/prevAll) works in jQuery.
@@ -21620,6 +22204,22 @@ trait Chainable[Subject] extends js.Object {
     filter: java.lang.String,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
+  /**
+    * Get all previous siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
+    * > The querying behavior of this command matches exactly how [.prevUntil()](http://api.jquery.com/prevUntil) works in jQuery.
+    *
+    * @see https://on.cypress.io/prevall
+    */
+  @JSName("prevUntil")
+  def prevUntil_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prevUntil")
+  def prevUntil_bdi(selector: cypressLib.cypressLibStrings.bdi, filter: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prevUntil")
+  def prevUntil_bdi(
+    selector: cypressLib.cypressLibStrings.bdi,
+    filter: java.lang.String,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get all previous siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
     * > The querying behavior of this command matches exactly how [.prevUntil()](http://api.jquery.com/prevUntil) works in jQuery.
@@ -22475,6 +23075,22 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/prevall
     */
   @JSName("prevUntil")
+  def prevUntil_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prevUntil")
+  def prevUntil_main(selector: cypressLib.cypressLibStrings.main, filter: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prevUntil")
+  def prevUntil_main(
+    selector: cypressLib.cypressLibStrings.main,
+    filter: java.lang.String,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all previous siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
+    * > The querying behavior of this command matches exactly how [.prevUntil()](http://api.jquery.com/prevUntil) works in jQuery.
+    *
+    * @see https://on.cypress.io/prevall
+    */
+  @JSName("prevUntil")
   def prevUntil_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("prevUntil")
   def prevUntil_map(selector: cypressLib.cypressLibStrings.map, filter: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -22779,6 +23395,22 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/prevall
     */
   @JSName("prevUntil")
+  def prevUntil_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prevUntil")
+  def prevUntil_rp(selector: cypressLib.cypressLibStrings.rp, filter: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prevUntil")
+  def prevUntil_rp(
+    selector: cypressLib.cypressLibStrings.rp,
+    filter: java.lang.String,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all previous siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
+    * > The querying behavior of this command matches exactly how [.prevUntil()](http://api.jquery.com/prevUntil) works in jQuery.
+    *
+    * @see https://on.cypress.io/prevall
+    */
+  @JSName("prevUntil")
   def prevUntil_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("prevUntil")
   def prevUntil_rt(selector: cypressLib.cypressLibStrings.rt, filter: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -22993,6 +23625,22 @@ trait Chainable[Subject] extends js.Object {
   @JSName("prevUntil")
   def prevUntil_sub(
     selector: cypressLib.cypressLibStrings.sub,
+    filter: java.lang.String,
+    options: stdLib.Partial[Loggable with Timeoutable]
+  ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get all previous siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
+    * > The querying behavior of this command matches exactly how [.prevUntil()](http://api.jquery.com/prevUntil) works in jQuery.
+    *
+    * @see https://on.cypress.io/prevall
+    */
+  @JSName("prevUntil")
+  def prevUntil_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prevUntil")
+  def prevUntil_summary(selector: cypressLib.cypressLibStrings.summary, filter: java.lang.String): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prevUntil")
+  def prevUntil_summary(
+    selector: cypressLib.cypressLibStrings.summary,
     filter: java.lang.String,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -23408,6 +24056,17 @@ trait Chainable[Subject] extends js.Object {
     selector: cypressLib.cypressLibStrings.basefont,
     options: stdLib.Partial[Loggable with Timeoutable]
   ): Chainable[cypressLib.JQuery[stdLib.HTMLBaseFontElement]] = js.native
+  /**
+    * Get the immediately preceding sibling of each element in a set of the elements.
+    *
+    * @example
+    *    cy.get('nav').prev('a') // Yield previous 'a'
+    * @see https://on.cypress.io/prev
+    */
+  @JSName("prev")
+  def prev_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prev")
+  def prev_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the immediately preceding sibling of each element in a set of the elements.
     *
@@ -24017,6 +24676,17 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/prev
     */
   @JSName("prev")
+  def prev_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prev")
+  def prev_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the immediately preceding sibling of each element in a set of the elements.
+    *
+    * @example
+    *    cy.get('nav').prev('a') // Yield previous 'a'
+    * @see https://on.cypress.io/prev
+    */
+  @JSName("prev")
   def prev_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("prev")
   def prev_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -24238,6 +24908,17 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/prev
     */
   @JSName("prev")
+  def prev_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prev")
+  def prev_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the immediately preceding sibling of each element in a set of the elements.
+    *
+    * @example
+    *    cy.get('nav').prev('a') // Yield previous 'a'
+    * @see https://on.cypress.io/prev
+    */
+  @JSName("prev")
   def prev_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("prev")
   def prev_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -24384,6 +25065,17 @@ trait Chainable[Subject] extends js.Object {
   def prev_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("prev")
   def prev_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get the immediately preceding sibling of each element in a set of the elements.
+    *
+    * @example
+    *    cy.get('nav').prev('a') // Yield previous 'a'
+    * @see https://on.cypress.io/prev
+    */
+  @JSName("prev")
+  def prev_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("prev")
+  def prev_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get the immediately preceding sibling of each element in a set of the elements.
     *
@@ -27661,6 +28353,17 @@ trait Chainable[Subject] extends js.Object {
     *    cy.get('td').siblings('a') // Yield all link siblings of "td"
     */
   @JSName("siblings")
+  def siblings_bdi(selector: cypressLib.cypressLibStrings.bdi): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("siblings")
+  def siblings_bdi(selector: cypressLib.cypressLibStrings.bdi, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get sibling DOM elements.
+    *
+    * @see https://on.cypress.io/siblings
+    * @example
+    *    cy.get('td').siblings('a') // Yield all link siblings of "td"
+    */
+  @JSName("siblings")
   def siblings_bdo(selector: cypressLib.cypressLibStrings.bdo): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("siblings")
   def siblings_bdo(selector: cypressLib.cypressLibStrings.bdo, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -28262,6 +28965,17 @@ trait Chainable[Subject] extends js.Object {
     *    cy.get('td').siblings('a') // Yield all link siblings of "td"
     */
   @JSName("siblings")
+  def siblings_main(selector: cypressLib.cypressLibStrings.main): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("siblings")
+  def siblings_main(selector: cypressLib.cypressLibStrings.main, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get sibling DOM elements.
+    *
+    * @see https://on.cypress.io/siblings
+    * @example
+    *    cy.get('td').siblings('a') // Yield all link siblings of "td"
+    */
+  @JSName("siblings")
   def siblings_map(selector: cypressLib.cypressLibStrings.map): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
   @JSName("siblings")
   def siblings_map(selector: cypressLib.cypressLibStrings.map, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLMapElement]] = js.native
@@ -28483,6 +29197,17 @@ trait Chainable[Subject] extends js.Object {
     *    cy.get('td').siblings('a') // Yield all link siblings of "td"
     */
   @JSName("siblings")
+  def siblings_rp(selector: cypressLib.cypressLibStrings.rp): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("siblings")
+  def siblings_rp(selector: cypressLib.cypressLibStrings.rp, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get sibling DOM elements.
+    *
+    * @see https://on.cypress.io/siblings
+    * @example
+    *    cy.get('td').siblings('a') // Yield all link siblings of "td"
+    */
+  @JSName("siblings")
   def siblings_rt(selector: cypressLib.cypressLibStrings.rt): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("siblings")
   def siblings_rt(selector: cypressLib.cypressLibStrings.rt, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
@@ -28629,6 +29354,17 @@ trait Chainable[Subject] extends js.Object {
   def siblings_sub(selector: cypressLib.cypressLibStrings.sub): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   @JSName("siblings")
   def siblings_sub(selector: cypressLib.cypressLibStrings.sub, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  /**
+    * Get sibling DOM elements.
+    *
+    * @see https://on.cypress.io/siblings
+    * @example
+    *    cy.get('td').siblings('a') // Yield all link siblings of "td"
+    */
+  @JSName("siblings")
+  def siblings_summary(selector: cypressLib.cypressLibStrings.summary): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
+  @JSName("siblings")
+  def siblings_summary(selector: cypressLib.cypressLibStrings.summary, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[cypressLib.JQuery[stdLib.HTMLElement]] = js.native
   /**
     * Get sibling DOM elements.
     *
@@ -31103,6 +31839,74 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/trigger
     */
   @JSName("trigger")
+  def trigger_pointerlockchange(eventName: cypressLib.cypressLibStrings.pointerlockchange): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_pointerlockchange(
+    eventName: cypressLib.cypressLibStrings.pointerlockchange,
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+  ): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_pointerlockchange(eventName: cypressLib.cypressLibStrings.pointerlockchange, position: PositionType): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_pointerlockchange(
+    eventName: cypressLib.cypressLibStrings.pointerlockchange,
+    position: PositionType,
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+  ): Chainable[Subject] = js.native
+  /**
+    * Trigger an event on a DOM element.
+    *
+    * @see https://on.cypress.io/trigger
+    */
+  @JSName("trigger")
+  def trigger_pointerlockchange(eventName: cypressLib.cypressLibStrings.pointerlockchange, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_pointerlockchange(
+    eventName: cypressLib.cypressLibStrings.pointerlockchange,
+    x: scala.Double,
+    y: scala.Double,
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+  ): Chainable[Subject] = js.native
+  /**
+    * Trigger an event on a DOM element.
+    *
+    * @see https://on.cypress.io/trigger
+    */
+  @JSName("trigger")
+  def trigger_pointerlockerror(eventName: cypressLib.cypressLibStrings.pointerlockerror): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_pointerlockerror(
+    eventName: cypressLib.cypressLibStrings.pointerlockerror,
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+  ): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_pointerlockerror(eventName: cypressLib.cypressLibStrings.pointerlockerror, position: PositionType): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_pointerlockerror(
+    eventName: cypressLib.cypressLibStrings.pointerlockerror,
+    position: PositionType,
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+  ): Chainable[Subject] = js.native
+  /**
+    * Trigger an event on a DOM element.
+    *
+    * @see https://on.cypress.io/trigger
+    */
+  @JSName("trigger")
+  def trigger_pointerlockerror(eventName: cypressLib.cypressLibStrings.pointerlockerror, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_pointerlockerror(
+    eventName: cypressLib.cypressLibStrings.pointerlockerror,
+    x: scala.Double,
+    y: scala.Double,
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+  ): Chainable[Subject] = js.native
+  /**
+    * Trigger an event on a DOM element.
+    *
+    * @see https://on.cypress.io/trigger
+    */
+  @JSName("trigger")
   def trigger_pointermove(eventName: cypressLib.cypressLibStrings.pointermove): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_pointermove(
@@ -31413,7 +32217,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("trigger")
   def trigger_scroll(
     eventName: cypressLib.cypressLibStrings.scroll,
-    options: stdLib.Partial[TriggerOptions with stdLib.UIEvent]
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_scroll(eventName: cypressLib.cypressLibStrings.scroll, position: PositionType): Chainable[Subject] = js.native
@@ -31421,7 +32225,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_scroll(
     eventName: cypressLib.cypressLibStrings.scroll,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.UIEvent]
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
   ): Chainable[Subject] = js.native
   /**
     * Trigger an event on a DOM element.
@@ -31435,7 +32239,7 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.scroll,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.UIEvent]
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
   ): Chainable[Subject] = js.native
   /**
     * Trigger an event on a DOM element.
@@ -31549,7 +32353,7 @@ trait Chainable[Subject] extends js.Object {
   @JSName("trigger")
   def trigger_select(
     eventName: cypressLib.cypressLibStrings.select,
-    options: stdLib.Partial[TriggerOptions with stdLib.UIEvent]
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
   ): Chainable[Subject] = js.native
   @JSName("trigger")
   def trigger_select(eventName: cypressLib.cypressLibStrings.select, position: PositionType): Chainable[Subject] = js.native
@@ -31557,7 +32361,7 @@ trait Chainable[Subject] extends js.Object {
   def trigger_select(
     eventName: cypressLib.cypressLibStrings.select,
     position: PositionType,
-    options: stdLib.Partial[TriggerOptions with stdLib.UIEvent]
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
   ): Chainable[Subject] = js.native
   /**
     * Trigger an event on a DOM element.
@@ -31571,7 +32375,75 @@ trait Chainable[Subject] extends js.Object {
     eventName: cypressLib.cypressLibStrings.select,
     x: scala.Double,
     y: scala.Double,
-    options: stdLib.Partial[TriggerOptions with stdLib.UIEvent]
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+  ): Chainable[Subject] = js.native
+  /**
+    * Trigger an event on a DOM element.
+    *
+    * @see https://on.cypress.io/trigger
+    */
+  @JSName("trigger")
+  def trigger_selectionchange(eventName: cypressLib.cypressLibStrings.selectionchange): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_selectionchange(
+    eventName: cypressLib.cypressLibStrings.selectionchange,
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+  ): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_selectionchange(eventName: cypressLib.cypressLibStrings.selectionchange, position: PositionType): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_selectionchange(
+    eventName: cypressLib.cypressLibStrings.selectionchange,
+    position: PositionType,
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+  ): Chainable[Subject] = js.native
+  /**
+    * Trigger an event on a DOM element.
+    *
+    * @see https://on.cypress.io/trigger
+    */
+  @JSName("trigger")
+  def trigger_selectionchange(eventName: cypressLib.cypressLibStrings.selectionchange, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_selectionchange(
+    eventName: cypressLib.cypressLibStrings.selectionchange,
+    x: scala.Double,
+    y: scala.Double,
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+  ): Chainable[Subject] = js.native
+  /**
+    * Trigger an event on a DOM element.
+    *
+    * @see https://on.cypress.io/trigger
+    */
+  @JSName("trigger")
+  def trigger_selectstart(eventName: cypressLib.cypressLibStrings.selectstart): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_selectstart(
+    eventName: cypressLib.cypressLibStrings.selectstart,
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+  ): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_selectstart(eventName: cypressLib.cypressLibStrings.selectstart, position: PositionType): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_selectstart(
+    eventName: cypressLib.cypressLibStrings.selectstart,
+    position: PositionType,
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
+  ): Chainable[Subject] = js.native
+  /**
+    * Trigger an event on a DOM element.
+    *
+    * @see https://on.cypress.io/trigger
+    */
+  @JSName("trigger")
+  def trigger_selectstart(eventName: cypressLib.cypressLibStrings.selectstart, x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
+  @JSName("trigger")
+  def trigger_selectstart(
+    eventName: cypressLib.cypressLibStrings.selectstart,
+    x: scala.Double,
+    y: scala.Double,
+    options: stdLib.Partial[TriggerOptions with stdLib.Event]
   ): Chainable[Subject] = js.native
   /**
     * Trigger an event on a DOM element.

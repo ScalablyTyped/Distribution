@@ -99,6 +99,11 @@ trait Atomics extends js.Object {
   def load(typedArray: Uint16Array, index: scala.Double): scala.Double = js.native
   def load(typedArray: Uint32Array, index: scala.Double): scala.Double = js.native
   def load(typedArray: Uint8Array, index: scala.Double): scala.Double = js.native
+  /**
+    * Wakes up sleeping agents that are waiting on the given index of the array, returning the
+    * number of agents that were awoken.
+    */
+  def notify(typedArray: Int32Array, index: scala.Double, count: scala.Double): scala.Double = js.native
   def or(typedArray: Int16Array, index: scala.Double, value: scala.Double): scala.Double = js.native
   def or(typedArray: Int32Array, index: scala.Double, value: scala.Double): scala.Double = js.native
   /**
@@ -139,11 +144,6 @@ trait Atomics extends js.Object {
     */
   def wait(typedArray: Int32Array, index: scala.Double, value: scala.Double): stdLib.stdLibStrings.ok | stdLib.stdLibStrings.`not-equal` | stdLib.stdLibStrings.`timed-out` = js.native
   def wait(typedArray: Int32Array, index: scala.Double, value: scala.Double, timeout: scala.Double): stdLib.stdLibStrings.ok | stdLib.stdLibStrings.`not-equal` | stdLib.stdLibStrings.`timed-out` = js.native
-  /**
-    * Wakes up sleeping agents that are waiting on the given index of the array, returning the
-    * number of agents that were awoken.
-    */
-  def wake(typedArray: Int32Array, index: scala.Double, count: scala.Double): scala.Double = js.native
   def xor(typedArray: Int16Array, index: scala.Double, value: scala.Double): scala.Double = js.native
   def xor(typedArray: Int32Array, index: scala.Double, value: scala.Double): scala.Double = js.native
   /**

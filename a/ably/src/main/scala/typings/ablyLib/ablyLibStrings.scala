@@ -43,6 +43,10 @@ object ablyLibStrings {
   sealed trait car extends js.Object
   
   @js.native
+  sealed trait `channel-metadata`
+    extends ablyLib.ablyMod.TypesNs.capabilityOp
+  
+  @js.native
   sealed trait closed extends js.Object
   
   @js.native
@@ -79,6 +83,10 @@ object ablyLibStrings {
   sealed trait failed extends js.Object
   
   @js.native
+  sealed trait history
+    extends ablyLib.ablyMod.TypesNs.capabilityOp
+  
+  @js.native
   sealed trait hour extends js.Object
   
   @js.native
@@ -103,7 +111,31 @@ object ablyLibStrings {
   sealed trait phone extends js.Object
   
   @js.native
+  sealed trait presence
+    extends ablyLib.ablyMod.TypesNs.capabilityOp
+  
+  @js.native
   sealed trait present extends js.Object
+  
+  @js.native
+  sealed trait publish
+    extends ablyLib.ablyMod.TypesNs.capabilityOp
+  
+  @js.native
+  sealed trait `push-admin`
+    extends ablyLib.ablyMod.TypesNs.capabilityOp
+  
+  @js.native
+  sealed trait `push-subscribe`
+    extends ablyLib.ablyMod.TypesNs.capabilityOp
+  
+  @js.native
+  sealed trait stats
+    extends ablyLib.ablyMod.TypesNs.capabilityOp
+  
+  @js.native
+  sealed trait subscribe
+    extends ablyLib.ablyMod.TypesNs.capabilityOp
   
   @js.native
   sealed trait suspended extends js.Object
@@ -143,6 +175,8 @@ object ablyLibStrings {
   @scala.inline
   def car: car = "car".asInstanceOf[car]
   @scala.inline
+  def `channel-metadata`: `channel-metadata` = "channel-metadata".asInstanceOf[`channel-metadata`]
+  @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
   @scala.inline
   def closing: closing = "closing".asInstanceOf[closing]
@@ -167,6 +201,8 @@ object ablyLibStrings {
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
   @scala.inline
+  def history: history = "history".asInstanceOf[history]
+  @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   @scala.inline
   def initialized: initialized = "initialized".asInstanceOf[initialized]
@@ -183,7 +219,19 @@ object ablyLibStrings {
   @scala.inline
   def phone: phone = "phone".asInstanceOf[phone]
   @scala.inline
+  def presence: presence = "presence".asInstanceOf[presence]
+  @scala.inline
   def present: present = "present".asInstanceOf[present]
+  @scala.inline
+  def publish: publish = "publish".asInstanceOf[publish]
+  @scala.inline
+  def `push-admin`: `push-admin` = "push-admin".asInstanceOf[`push-admin`]
+  @scala.inline
+  def `push-subscribe`: `push-subscribe` = "push-subscribe".asInstanceOf[`push-subscribe`]
+  @scala.inline
+  def stats: stats = "stats".asInstanceOf[stats]
+  @scala.inline
+  def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
   @scala.inline
   def suspended: suspended = "suspended".asInstanceOf[suspended]
   @scala.inline

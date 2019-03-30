@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** This interface also inherits properties from EventTarget. */
 @js.native
 trait TextTrack extends EventTarget {
   val DISABLED: scala.Double = js.native
@@ -25,6 +26,7 @@ trait TextTrack extends EventTarget {
   var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   var onload: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   val readyState: scala.Double = js.native
+  val sourceBuffer: SourceBuffer | scala.Null = js.native
   def addCue(cue: TextTrackCue): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_cuechange(

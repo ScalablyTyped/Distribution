@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The SVGFEComponentTransferElement interface corresponds to the <feComponentTransfer> element. */
 @js.native
 trait SVGFEComponentTransferElement
   extends SVGElement

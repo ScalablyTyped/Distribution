@@ -7,11 +7,23 @@ import scala.scalajs.js.annotation._
 
 object workboxDashWebpackDashPluginLibStrings {
   @js.native
-  sealed trait cacheFirst
+  sealed trait CacheFirst
     extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
   
   @js.native
-  sealed trait cacheOnly
+  sealed trait CacheOnly
+    extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
+  
+  @js.native
+  sealed trait NetworkFirst
+    extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
+  
+  @js.native
+  sealed trait NetworkOnly
+    extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
+  
+  @js.native
+  sealed trait StaleWhileRevalidate
     extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
   
   @js.native
@@ -23,33 +35,21 @@ object workboxDashWebpackDashPluginLibStrings {
   @js.native
   sealed trait local extends js.Object
   
-  @js.native
-  sealed trait networkFirst
-    extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
-  
-  @js.native
-  sealed trait networkOnly
-    extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
-  
-  @js.native
-  sealed trait staleWhileRevalidate
-    extends workboxDashWebpackDashPluginLib.workboxDashWebpackDashPluginMod.ChacheStrategy
-  
   @scala.inline
-  def cacheFirst: cacheFirst = "cacheFirst".asInstanceOf[cacheFirst]
+  def CacheFirst: CacheFirst = "CacheFirst".asInstanceOf[CacheFirst]
   @scala.inline
-  def cacheOnly: cacheOnly = "cacheOnly".asInstanceOf[cacheOnly]
+  def CacheOnly: CacheOnly = "CacheOnly".asInstanceOf[CacheOnly]
+  @scala.inline
+  def NetworkFirst: NetworkFirst = "NetworkFirst".asInstanceOf[NetworkFirst]
+  @scala.inline
+  def NetworkOnly: NetworkOnly = "NetworkOnly".asInstanceOf[NetworkOnly]
+  @scala.inline
+  def StaleWhileRevalidate: StaleWhileRevalidate = "StaleWhileRevalidate".asInstanceOf[StaleWhileRevalidate]
   @scala.inline
   def cdn: cdn = "cdn".asInstanceOf[cdn]
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   @scala.inline
   def local: local = "local".asInstanceOf[local]
-  @scala.inline
-  def networkFirst: networkFirst = "networkFirst".asInstanceOf[networkFirst]
-  @scala.inline
-  def networkOnly: networkOnly = "networkOnly".asInstanceOf[networkOnly]
-  @scala.inline
-  def staleWhileRevalidate: staleWhileRevalidate = "staleWhileRevalidate".asInstanceOf[staleWhileRevalidate]
 }
 

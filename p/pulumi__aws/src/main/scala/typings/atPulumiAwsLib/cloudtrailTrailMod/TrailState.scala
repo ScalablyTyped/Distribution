@@ -71,7 +71,7 @@ trait TrailState extends js.Object {
     */
   val s3BucketName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * Specifies the S3 key prefix that precedes
+    * Specifies the S3 key prefix that follows
     * the name of the bucket you have designated for log file delivery.
     */
   val s3KeyPrefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined

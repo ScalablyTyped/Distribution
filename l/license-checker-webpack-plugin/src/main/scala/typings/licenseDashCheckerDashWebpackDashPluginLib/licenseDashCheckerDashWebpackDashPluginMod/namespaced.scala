@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("license-checker-webpack-plugin", JSImport.Namespace)
 @js.native
-class namespaced protected () extends LicenseCheckerWebpackPlugin {
-  def this(options: licenseDashCheckerDashWebpackDashPluginLib.licenseDashCheckerDashWebpackDashPluginMod.LicenseCheckerWebpackPluginNs.Options) = this()
+class namespaced () extends LicenseCheckerWebpackPlugin {
+  def this(options: stdLib.Partial[
+      licenseDashCheckerDashWebpackDashPluginLib.licenseDashCheckerDashWebpackDashPluginMod.LicenseCheckerWebpackPluginNs.Options
+    ]) = this()
 }
 

@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("crypto", "Hash")
 @js.native
-trait Hash
-  extends nodeLib.NodeJSNs.ReadWriteStream {
+class Hash protected ()
+  extends nodeLib.streamMod.Duplex {
   def digest(): nodeLib.Buffer = js.native
   def digest(encoding: HexBase64Latin1Encoding): java.lang.String = js.native
   def update(data: java.lang.String, input_encoding: Utf8AsciiLatin1Encoding): Hash = js.native

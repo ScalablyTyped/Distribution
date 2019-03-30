@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SecureClientSessionOptions
-  extends nodeLib.tlsMod.ConnectionOptions
-     with SessionOptions
+  extends ClientSessionOptions
+     with nodeLib.tlsMod.ConnectionOptions
 
 object SecureClientSessionOptions {
   @scala.inline
@@ -28,8 +28,11 @@ object SecureClientSessionOptions {
     key: java.lang.String | nodeLib.Buffer | (js.Array[nodeLib.Buffer | js.Object]) = null,
     lookup: nodeLib.netMod.LookupFunction = null,
     maxDeflateDynamicTableSize: scala.Int | scala.Double = null,
+    maxHeaderListPairs: scala.Int | scala.Double = null,
+    maxOutstandingPings: scala.Int | scala.Double = null,
     maxReservedRemoteStreams: scala.Int | scala.Double = null,
     maxSendHeaderBlockLength: scala.Int | scala.Double = null,
+    maxSessionMemory: scala.Int | scala.Double = null,
     maxVersion: nodeLib.tlsMod.SecureVersion = null,
     minDHSize: scala.Int | scala.Double = null,
     minVersion: nodeLib.tlsMod.SecureVersion = null,
@@ -68,8 +71,11 @@ object SecureClientSessionOptions {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (lookup != null) __obj.updateDynamic("lookup")(lookup)
     if (maxDeflateDynamicTableSize != null) __obj.updateDynamic("maxDeflateDynamicTableSize")(maxDeflateDynamicTableSize.asInstanceOf[js.Any])
+    if (maxHeaderListPairs != null) __obj.updateDynamic("maxHeaderListPairs")(maxHeaderListPairs.asInstanceOf[js.Any])
+    if (maxOutstandingPings != null) __obj.updateDynamic("maxOutstandingPings")(maxOutstandingPings.asInstanceOf[js.Any])
     if (maxReservedRemoteStreams != null) __obj.updateDynamic("maxReservedRemoteStreams")(maxReservedRemoteStreams.asInstanceOf[js.Any])
     if (maxSendHeaderBlockLength != null) __obj.updateDynamic("maxSendHeaderBlockLength")(maxSendHeaderBlockLength.asInstanceOf[js.Any])
+    if (maxSessionMemory != null) __obj.updateDynamic("maxSessionMemory")(maxSessionMemory.asInstanceOf[js.Any])
     if (maxVersion != null) __obj.updateDynamic("maxVersion")(maxVersion)
     if (minDHSize != null) __obj.updateDynamic("minDHSize")(minDHSize.asInstanceOf[js.Any])
     if (minVersion != null) __obj.updateDynamic("minVersion")(minVersion)

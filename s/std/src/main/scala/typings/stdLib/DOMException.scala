@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The DOMException interface represents an abnormal event (called an exception) which occurs as a result of calling a method or accessing a property of a web API. */
 trait DOMException extends js.Object {
   val ABORT_ERR: scala.Double
   val DATA_CLONE_ERR: scala.Double

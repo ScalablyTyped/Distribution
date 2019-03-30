@@ -181,6 +181,6 @@ trait ClassPropertyBuilder extends js.Object {
     typeAnnotation: scala.Null,
     staticParam: scala.Boolean
   ): astDashTypesLib.genNodesMod.ClassProperty = js.native
-  def from(params: astDashTypesLib.Anon_CommentsComputedKeyLoc): astDashTypesLib.genNodesMod.ClassProperty = js.native
+  def from(params: astDashTypesLib.Anon_Access): astDashTypesLib.genNodesMod.ClassProperty = js.native
 }
 

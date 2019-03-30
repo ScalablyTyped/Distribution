@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The MediaKeyMessageEvent interface of the EncryptedMediaExtensions API contains the content and related data when the content decryption module generates a message for the session. */
 @js.native
 trait MediaKeyMessageEvent extends Event {
   val message: ArrayBuffer = js.native
@@ -14,15 +15,13 @@ trait MediaKeyMessageEvent extends Event {
 @JSGlobal("MediaKeyMessageEvent")
 @js.native
 class MediaKeyMessageEventCls protected () extends MediaKeyMessageEvent {
-  def this(`type`: java.lang.String) = this()
   def this(`type`: java.lang.String, eventInitDict: MediaKeyMessageEventInit) = this()
 }
 
 @JSGlobal("MediaKeyMessageEvent")
 @js.native
 object MediaKeyMessageEvent
-  extends org.scalablytyped.runtime.Instantiable1[/* type */ java.lang.String, MediaKeyMessageEvent]
-     with org.scalablytyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       /* type */ java.lang.String, 
       /* eventInitDict */ MediaKeyMessageEventInit, 
       MediaKeyMessageEvent

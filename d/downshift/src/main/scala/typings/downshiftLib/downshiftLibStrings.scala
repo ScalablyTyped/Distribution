@@ -316,6 +316,12 @@ object downshiftLibStrings {
   sealed trait select extends js.Object
   
   @js.native
+  sealed trait selectionchange extends js.Object
+  
+  @js.native
+  sealed trait selectstart extends js.Object
+  
+  @js.native
   sealed trait stalled extends js.Object
   
   @js.native
@@ -605,6 +611,10 @@ object downshiftLibStrings {
   def seeking: seeking = "seeking".asInstanceOf[seeking]
   @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
+  def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
+  @scala.inline
+  def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
   @scala.inline

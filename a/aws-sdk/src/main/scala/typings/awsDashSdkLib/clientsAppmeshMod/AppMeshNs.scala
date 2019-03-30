@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("aws-sdk/clients/appmesh", "AppMesh")
 @js.native
 object AppMeshNs extends js.Object {
+  trait AccessLog extends js.Object {
+    /**
+      * The file object to send virtual node access logs to.
+      */
+    var file: js.UndefOr[FileAccessLog] = js.undefined
+  }
+  
   trait Backend extends js.Object {
     /**
       * Specifies a virtual service to use as a backend for a virtual node. 
@@ -32,6 +39,17 @@ object AppMeshNs extends js.Object {
       * The name to use for the service mesh.
       */
     var meshName: ResourceName
+    /**
+      * The service mesh specification to apply.
+      */
+    var spec: js.UndefOr[MeshSpec] = js.undefined
+    /**
+      * Optional metadata that you can apply to the service mesh to assist with categorization and organization.
+      Each tag consists of a key and an optional value, both of which you define.
+      Tag keys can have a maximum character length of 128 characters, and tag values can have
+      a maximum length of 256 characters.
+      */
+    var tags: js.UndefOr[TagList] = js.undefined
   }
   
   trait CreateMeshOutput extends js.Object {
@@ -48,7 +66,7 @@ object AppMeshNs extends js.Object {
       */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-      * The name of the service mesh in which to create the route.
+      * The name of the service mesh to create the route in.
       */
     var meshName: ResourceName
     /**
@@ -59,6 +77,13 @@ object AppMeshNs extends js.Object {
       * The route specification to apply.
       */
     var spec: RouteSpec
+    /**
+      * Optional metadata that you can apply to the route to assist with categorization and organization.
+      Each tag consists of a key and an optional value, both of which you define.
+      Tag keys can have a maximum character length of 128 characters, and tag values can have
+      a maximum length of 256 characters.
+      */
+    var tags: js.UndefOr[TagList] = js.undefined
     /**
       * The name of the virtual router in which to create the route.
       */
@@ -79,13 +104,20 @@ object AppMeshNs extends js.Object {
       */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-      * The name of the service mesh in which to create the virtual node.
+      * The name of the service mesh to create the virtual node in.
       */
     var meshName: ResourceName
     /**
       * The virtual node specification to apply.
       */
     var spec: VirtualNodeSpec
+    /**
+      * Optional metadata that you can apply to the virtual node to assist with categorization and organization.
+      Each tag consists of a key and an optional value, both of which you define.
+      Tag keys can have a maximum character length of 128 characters, and tag values can have
+      a maximum length of 256 characters.
+      */
+    var tags: js.UndefOr[TagList] = js.undefined
     /**
       * The name to use for the virtual node.
       */
@@ -114,6 +146,13 @@ object AppMeshNs extends js.Object {
       */
     var spec: VirtualRouterSpec
     /**
+      * Optional metadata that you can apply to the virtual router to assist with categorization and organization.
+      Each tag consists of a key and an optional value, both of which you define.
+      Tag keys can have a maximum character length of 128 characters, and tag values can have
+      a maximum length of 256 characters.
+      */
+    var tags: js.UndefOr[TagList] = js.undefined
+    /**
       * The name to use for the virtual router.
       */
     var virtualRouterName: ResourceName
@@ -133,13 +172,20 @@ object AppMeshNs extends js.Object {
       */
     var clientToken: js.UndefOr[String] = js.undefined
     /**
-      * The name of the service mesh in which to create the virtual service.
+      * The name of the service mesh to create the virtual service in.
       */
     var meshName: ResourceName
     /**
       * The virtual service specification to apply.
       */
     var spec: VirtualServiceSpec
+    /**
+      * Optional metadata that you can apply to the virtual service to assist with categorization and organization.
+      Each tag consists of a key and an optional value, both of which you define.
+      Tag keys can have a maximum character length of 128 characters, and tag values can have
+      a maximum length of 256 characters.
+      */
+    var tags: js.UndefOr[TagList] = js.undefined
     /**
       * The name to use for the virtual service.
       */
@@ -340,6 +386,32 @@ object AppMeshNs extends js.Object {
     var hostname: Hostname
   }
   
+  trait EgressFilter extends js.Object {
+    /**
+      * The egress filter type. By default, the type is DROP_ALL, which allows
+      egress only from virtual nodes to other defined resources in the service mesh (and any traffic
+      to *.amazonaws.com for AWS API calls). You can set the egress filter type to
+      ALLOW_ALL to allow egress to any endpoint inside or outside of the service
+      mesh.
+      */
+    var `type`: EgressFilterType
+  }
+  
+  trait FileAccessLog extends js.Object {
+    /**
+      * The file path to write access logs to. You can use /dev/stdout to send
+      access logs to standard out and configure your Envoy container to use a log driver, such as
+      awslogs, to export the access logs to a log storage service such as Amazon CloudWatch
+      Logs. You can also specify a path in the Envoy container's file system to write the files
+      to disk.
+      
+      The Envoy process must have write permissions to the path that you specify here.
+      Otherwise, Envoy fails to bootstrap properly.
+      
+      */
+    var path: FilePath
+  }
+  
   trait HealthCheckPolicy extends js.Object {
     /**
       * The number of consecutive successful health checks that must occur before declaring
@@ -398,9 +470,9 @@ object AppMeshNs extends js.Object {
   trait HttpRouteMatch extends js.Object {
     /**
       * Specifies the path to match requests with. This parameter must always start with
-      /, which by itself matches all requests to the virtual router service name.
-      You can also match for path-based routing of requests. For example, if your virtual router
-      service name is my-service.local and you want the route to match requests to
+      /, which by itself matches all requests to the virtual service name. You
+      can also match for path-based routing of requests. For example, if your virtual service
+      name is my-service.local and you want the route to match requests to
       my-service.local/metrics, your prefix should be
       /metrics.
       */
@@ -425,7 +497,7 @@ object AppMeshNs extends js.Object {
       results exceeded the value of that parameter. Pagination continues from the end of the
       previous results that returned the nextToken value.
       
-      This token should be treated as an opaque identifier that is only used to
+      This token should be treated as an opaque identifier that is used only to
       retrieve the next items in a list and not for other programmatic purposes.
       
       */
@@ -460,7 +532,7 @@ object AppMeshNs extends js.Object {
       */
     var limit: js.UndefOr[ListRoutesLimit] = js.undefined
     /**
-      * The name of the service mesh in which to list routes.
+      * The name of the service mesh to list routes in.
       */
     var meshName: ResourceName
     /**
@@ -489,6 +561,46 @@ object AppMeshNs extends js.Object {
       * The list of existing routes for the specified service mesh and virtual router.
       */
     var routes: RouteList
+  }
+  
+  trait ListTagsForResourceInput extends js.Object {
+    /**
+      * The maximum number of tag results returned by ListTagsForResource in
+      paginated output. When this parameter is used, ListTagsForResource returns only
+      limit results in a single page along with a nextToken
+      response element. You can see the remaining results of the initial request by sending
+      another ListTagsForResource request with the returned nextToken
+      value. This value can be between 1 and 100. If you don't use this
+      parameter, ListTagsForResource returns up to
+      100 results and a nextToken value if applicable.
+      */
+    var limit: js.UndefOr[TagsLimit] = js.undefined
+    /**
+      * The nextToken value returned from a previous paginated
+      ListTagsForResource request where limit was used and the
+      results exceeded the value of that parameter. Pagination continues from the end of the
+      previous results that returned the nextToken value.
+      */
+    var nextToken: js.UndefOr[String] = js.undefined
+    /**
+      * The Amazon Resource Name (ARN) that identifies the resource to list the tags for.
+      */
+    var resourceArn: Arn
+  }
+  
+  trait ListTagsForResourceOutput extends js.Object {
+    /**
+      * The nextToken value to include in a future ListTagsForResource
+      request. When the results of a ListTagsForResource request exceed
+      limit, you can use this value to retrieve the next page of
+      results. This value is null when there are no more results to
+      return.
+      */
+    var nextToken: js.UndefOr[String] = js.undefined
+    /**
+      * The tags for the resource.
+      */
+    var tags: TagList
   }
   
   trait ListVirtualNodesInput extends js.Object {
@@ -536,7 +648,7 @@ object AppMeshNs extends js.Object {
       * The maximum number of results returned by ListVirtualRouters in paginated
       output. When you use this parameter, ListVirtualRouters returns only
       limit results in a single page along with a nextToken response
-      element. You can see the remaining results of the initial request  by sending another
+      element. You can see the remaining results of the initial request by sending another
       ListVirtualRouters request with the returned nextToken value.
       This value can be between 1 and 100. If you don't use this parameter, 
       ListVirtualRouters returns up to 100 results and
@@ -621,6 +733,13 @@ object AppMeshNs extends js.Object {
     var portMapping: PortMapping
   }
   
+  trait Logging extends js.Object {
+    /**
+      * The access log configuration for a virtual node.
+      */
+    var accessLog: js.UndefOr[AccessLog] = js.undefined
+  }
+  
   trait MeshData extends js.Object {
     /**
       * The name of the service mesh.
@@ -630,6 +749,10 @@ object AppMeshNs extends js.Object {
       * The associated metadata for the service mesh.
       */
     var metadata: ResourceMetadata
+    /**
+      * The associated specification for the service mesh.
+      */
+    var spec: MeshSpec
     /**
       * The status of the service mesh.
       */
@@ -645,6 +768,13 @@ object AppMeshNs extends js.Object {
       * The name of the service mesh.
       */
     var meshName: ResourceName
+  }
+  
+  trait MeshSpec extends js.Object {
+    /**
+      * The egress filter rules for the service mesh.
+      */
+    var egressFilter: js.UndefOr[EgressFilter] = js.undefined
   }
   
   trait MeshStatus extends js.Object {
@@ -668,17 +798,6 @@ object AppMeshNs extends js.Object {
   trait ResourceMetadata extends js.Object {
     /**
       * The full Amazon Resource Name (ARN) for the resource.
-      
-      After you create a virtual node, set this value (either the full ARN or the
-      truncated resource name, for example, mesh/default/virtualNode/simpleapp,
-      as the APPMESH_VIRTUAL_NODE_NAME environment variable for your task group's
-      Envoy proxy container in your task definition or pod spec. This is then mapped to the
-      node.id and node.cluster Envoy parameters.
-      If you require your Envoy stats or tracing to use a different name, you can override
-      the node.cluster value that is set by
-      APPMESH_VIRTUAL_NODE_NAME with the
-      APPMESH_VIRTUAL_NODE_CLUSTER environment variable.
-      
       */
     var arn: Arn
     /**
@@ -751,6 +870,10 @@ object AppMeshNs extends js.Object {
       * The HTTP routing information for the route.
       */
     var httpRoute: js.UndefOr[HttpRoute] = js.undefined
+    /**
+      * The TCP routing information for the route.
+      */
+    var tcpRoute: js.UndefOr[TcpRoute] = js.undefined
   }
   
   trait RouteStatus extends js.Object {
@@ -767,13 +890,56 @@ object AppMeshNs extends js.Object {
     var dns: js.UndefOr[DnsServiceDiscovery] = js.undefined
   }
   
+  trait TagRef extends js.Object {
+    /**
+      * One part of a key-value pair that make up a tag. A key is a general label
+      that acts like a category for more specific tag values.
+      */
+    var key: TagKey
+    /**
+      * The optional part of a key-value pair that make up a tag. A value acts as
+      a descriptor within a tag category (key).
+      */
+    var value: js.UndefOr[TagValue] = js.undefined
+  }
+  
+  trait TagResourceInput extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the resource to add tags to.
+      */
+    var resourceArn: Arn
+    /**
+      * The tags to add to the resource. A tag is an array of key-value pairs.
+      Tag keys can have a maximum character length of 128 characters, and tag values can have
+      a maximum length of 256 characters.
+      */
+    var tags: TagList
+  }
+  
+  trait TagResourceOutput extends js.Object
+  
+  trait TcpRoute extends js.Object {
+    /**
+      * The action to take if a match is determined.
+      */
+    var action: TcpRouteAction
+  }
+  
+  trait TcpRouteAction extends js.Object {
+    /**
+      * The targets that traffic is routed to when a request matches the route. You can specify
+      one or more targets and their relative weights to distribute traffic with.
+      */
+    var weightedTargets: WeightedTargets
+  }
+  
   @js.native
   trait Types
     extends awsDashSdkLib.libServiceMod.Service {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-      * Creates a new service mesh. A service mesh is a logical boundary for network traffic
+      * Creates a service mesh. A service mesh is a logical boundary for network traffic
       between the services that reside within it.
       After you create your service mesh, you can create virtual services, virtual nodes,
       virtual routers, and routes to distribute traffic between the applications in your
@@ -788,7 +954,7 @@ object AppMeshNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a new service mesh. A service mesh is a logical boundary for network traffic
+      * Creates a service mesh. A service mesh is a logical boundary for network traffic
       between the services that reside within it.
       After you create your service mesh, you can create virtual services, virtual nodes,
       virtual routers, and routes to distribute traffic between the applications in your
@@ -804,11 +970,11 @@ object AppMeshNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a new route that is associated with a virtual router.
+      * Creates a route that is associated with a virtual router.
       You can use the prefix parameter in your route specification for path-based
-      routing of requests. For example, if your virtual router service name is
-      my-service.local, and you want the route to match requests to
-      my-service.local/metrics, then your prefix should be
+      routing of requests. For example, if your virtual service name is
+      my-service.local and you want the route to match requests to
+      my-service.local/metrics, your prefix should be
       /metrics.
       If your route matches a request, you can distribute traffic to one or more target
       virtual nodes with relative weighting.
@@ -822,11 +988,11 @@ object AppMeshNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateRouteOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a new route that is associated with a virtual router.
+      * Creates a route that is associated with a virtual router.
       You can use the prefix parameter in your route specification for path-based
-      routing of requests. For example, if your virtual router service name is
-      my-service.local, and you want the route to match requests to
-      my-service.local/metrics, then your prefix should be
+      routing of requests. For example, if your virtual service name is
+      my-service.local and you want the route to match requests to
+      my-service.local/metrics, your prefix should be
       /metrics.
       If your route matches a request, you can distribute traffic to one or more target
       virtual nodes with relative weighting.
@@ -841,8 +1007,8 @@ object AppMeshNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateRouteOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a new virtual node within a service mesh.
-      A virtual node acts as logical pointer to a particular task group, such as an Amazon ECS
+      * Creates a virtual node within a service mesh.
+      A virtual node acts as a logical pointer to a particular task group, such as an Amazon ECS
       service or a Kubernetes deployment. When you create a virtual node, you must specify the
       DNS service discovery hostname for your task group.
       Any inbound traffic that your virtual node expects should be specified as a
@@ -850,7 +1016,7 @@ object AppMeshNs extends js.Object {
       should be specified as a backend.
       The response metadata for your new virtual node contains the arn that is
       associated with the virtual node. Set this value (either the full ARN or the truncated
-      resource name, for example, mesh/default/virtualNode/simpleapp, as the
+      resource name: for example, mesh/default/virtualNode/simpleapp) as the
       APPMESH_VIRTUAL_NODE_NAME environment variable for your task group's Envoy
       proxy container in your task definition or pod spec. This is then mapped to the
       node.id and node.cluster Envoy parameters.
@@ -870,8 +1036,8 @@ object AppMeshNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateVirtualNodeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a new virtual node within a service mesh.
-      A virtual node acts as logical pointer to a particular task group, such as an Amazon ECS
+      * Creates a virtual node within a service mesh.
+      A virtual node acts as a logical pointer to a particular task group, such as an Amazon ECS
       service or a Kubernetes deployment. When you create a virtual node, you must specify the
       DNS service discovery hostname for your task group.
       Any inbound traffic that your virtual node expects should be specified as a
@@ -879,7 +1045,7 @@ object AppMeshNs extends js.Object {
       should be specified as a backend.
       The response metadata for your new virtual node contains the arn that is
       associated with the virtual node. Set this value (either the full ARN or the truncated
-      resource name, for example, mesh/default/virtualNode/simpleapp, as the
+      resource name: for example, mesh/default/virtualNode/simpleapp) as the
       APPMESH_VIRTUAL_NODE_NAME environment variable for your task group's Envoy
       proxy container in your task definition or pod spec. This is then mapped to the
       node.id and node.cluster Envoy parameters.
@@ -900,12 +1066,12 @@ object AppMeshNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateVirtualNodeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a new virtual router within a service mesh.
+      * Creates a virtual router within a service mesh.
       Any inbound traffic that your virtual router expects should be specified as a
       listener. 
-      Virtual routers handle traffic for one or more service names within your mesh. After you
-      create your virtual router, create and associate routes for your virtual router that direct
-      incoming requests to different virtual nodes.
+      Virtual routers handle traffic for one or more virtual services within your mesh. After
+      you create your virtual router, create and associate routes for your virtual router that
+      direct incoming requests to different virtual nodes.
       */
     def createVirtualRouter(): awsDashSdkLib.libRequestMod.Request[CreateVirtualRouterOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createVirtualRouter(
@@ -916,12 +1082,12 @@ object AppMeshNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateVirtualRouterOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a new virtual router within a service mesh.
+      * Creates a virtual router within a service mesh.
       Any inbound traffic that your virtual router expects should be specified as a
       listener. 
-      Virtual routers handle traffic for one or more service names within your mesh. After you
-      create your virtual router, create and associate routes for your virtual router that direct
-      incoming requests to different virtual nodes.
+      Virtual routers handle traffic for one or more virtual services within your mesh. After
+      you create your virtual router, create and associate routes for your virtual router that
+      direct incoming requests to different virtual nodes.
       */
     def createVirtualRouter(params: CreateVirtualRouterInput): awsDashSdkLib.libRequestMod.Request[CreateVirtualRouterOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createVirtualRouter(
@@ -934,8 +1100,8 @@ object AppMeshNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[CreateVirtualRouterOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Creates a virtual service within a service mesh.
-      A virtual service is an abstraction of a real service that is either provided by a
-      virtual node directly, or indirectly by means of a virtual router. Dependent services call
+      A virtual service is an abstraction of a real service that is provided by a
+      virtual node directly or indirectly by means of a virtual router. Dependent services call
       your virtual service by its virtualServiceName, and those requests are routed
       to the virtual node or virtual router that is specified as the provider for the virtual
       service.
@@ -950,8 +1116,8 @@ object AppMeshNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[CreateVirtualServiceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Creates a virtual service within a service mesh.
-      A virtual service is an abstraction of a real service that is either provided by a
-      virtual node directly, or indirectly by means of a virtual router. Dependent services call
+      A virtual service is an abstraction of a real service that is provided by a
+      virtual node directly or indirectly by means of a virtual router. Dependent services call
       your virtual service by its virtualServiceName, and those requests are routed
       to the virtual node or virtual router that is specified as the provider for the virtual
       service.
@@ -967,7 +1133,7 @@ object AppMeshNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[CreateVirtualServiceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Deletes an existing service mesh.
-      You must delete all resources (virtual services, routes, virtual routers, virtual nodes)
+      You must delete all resources (virtual services, routes, virtual routers, and virtual nodes)
       in the service mesh before you can delete the mesh itself.
       */
     def deleteMesh(): awsDashSdkLib.libRequestMod.Request[DeleteMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -980,7 +1146,7 @@ object AppMeshNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[DeleteMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Deletes an existing service mesh.
-      You must delete all resources (virtual services, routes, virtual routers, virtual nodes)
+      You must delete all resources (virtual services, routes, virtual routers, and virtual nodes)
       in the service mesh before you can delete the mesh itself.
       */
     def deleteMesh(params: DeleteMeshInput): awsDashSdkLib.libRequestMod.Request[DeleteMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1254,6 +1420,29 @@ object AppMeshNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListRoutesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * List the tags for an App Mesh resource.
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * List the tags for an App Mesh resource.
+      */
+    def listTagsForResource(params: ListTagsForResourceInput): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Returns a list of existing virtual nodes.
       */
     def listVirtualNodes(): awsDashSdkLib.libRequestMod.Request[ListVirtualNodesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1322,6 +1511,81 @@ object AppMeshNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListVirtualServicesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Associates the specified tags to a resource with the specified
+      resourceArn. If existing tags on a resource aren't specified in the
+      request parameters, they aren't changed. When a resource is deleted, the tags
+      associated with that resource are also deleted.
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Associates the specified tags to a resource with the specified
+      resourceArn. If existing tags on a resource aren't specified in the
+      request parameters, they aren't changed. When a resource is deleted, the tags
+      associated with that resource are also deleted.
+      */
+    def tagResource(params: TagResourceInput): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes specified tags from a resource.
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes specified tags from a resource.
+      */
+    def untagResource(params: UntagResourceInput): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates an existing service mesh.
+      */
+    def updateMesh(): awsDashSdkLib.libRequestMod.Request[UpdateMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateMesh(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateMeshOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates an existing service mesh.
+      */
+    def updateMesh(params: UpdateMeshInput): awsDashSdkLib.libRequestMod.Request[UpdateMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateMesh(
+      params: UpdateMeshInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateMeshOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Updates an existing route for a specified service mesh and virtual router.
       */
@@ -1414,6 +1678,39 @@ object AppMeshNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateVirtualServiceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  }
+  
+  trait UntagResourceInput extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the resource to delete tags from.
+      */
+    var resourceArn: Arn
+    /**
+      * The keys of the tags to be removed.
+      */
+    var tagKeys: TagKeyList
+  }
+  
+  trait UntagResourceOutput extends js.Object
+  
+  trait UpdateMeshInput extends js.Object {
+    /**
+      * Unique, case-sensitive identifier that you provide to ensure the idempotency of the
+    request. Up to 36 letters, numbers, hyphens, and underscores are allowed.
+      */
+    var clientToken: js.UndefOr[String] = js.undefined
+    /**
+      * The name of the service mesh to update.
+      */
+    var meshName: ResourceName
+    /**
+      * The service mesh specification to apply.
+      */
+    var spec: js.UndefOr[MeshSpec] = js.undefined
+  }
+  
+  trait UpdateMeshOutput extends js.Object {
+    var mesh: MeshData
   }
   
   trait UpdateRouteInput extends js.Object {
@@ -1584,7 +1881,12 @@ object AppMeshNs extends js.Object {
       */
     var listeners: js.UndefOr[Listeners] = js.undefined
     /**
-      * The service discovery information for the virtual node.
+      * The inbound and outbound access logging information for the virtual node.
+      */
+    var logging: js.UndefOr[Logging] = js.undefined
+    /**
+      * The service discovery information for the virtual node. If your virtual node does not
+      expect ingress traffic, you can omit this parameter.
       */
     var serviceDiscovery: js.UndefOr[ServiceDiscovery] = js.undefined
   }
@@ -1738,6 +2040,8 @@ object AppMeshNs extends js.Object {
     var weight: PercentInt
   }
   
+  trait _EgressFilterType extends js.Object
+  
   trait _MeshStatusCode extends js.Object
   
   trait _PortProtocol extends js.Object
@@ -1756,6 +2060,13 @@ object AppMeshNs extends js.Object {
   type Arn = java.lang.String
   type Backends = js.Array[Backend]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.ALLOW_ALL
+    - awsDashSdkLib.awsDashSdkLibStrings.DROP_ALL
+    - java.lang.String
+  */
+  type EgressFilterType = _EgressFilterType | java.lang.String
+  type FilePath = java.lang.String
   type HealthCheckIntervalMillis = scala.Double
   type HealthCheckThreshold = scala.Double
   type HealthCheckTimeoutMillis = scala.Double
@@ -1794,6 +2105,11 @@ object AppMeshNs extends js.Object {
   type RouteStatusCode = _RouteStatusCode | java.lang.String
   type ServiceName = java.lang.String
   type String = java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[TagRef]
+  type TagValue = java.lang.String
+  type TagsLimit = scala.Double
   type Timestamp = stdLib.Date
   type VirtualNodeList = js.Array[VirtualNodeRef]
   /* Rewritten from type alias, can be one of: 

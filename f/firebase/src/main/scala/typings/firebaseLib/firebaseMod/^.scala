@@ -26,21 +26,21 @@ object ^ extends js.Object {
     * initialized.
     *
     * @example
-    * ```
+    * ```javascript
     * // Return the default app
     * var app = firebase.app();
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Return a named app
     * var otherApp = firebase.app("otherApp");
     * ```
     *
-    * @param {string=} name Optional name of the app to return. If no name is
+    * @param name Optional name of the app to return. If no name is
     *   provided, the default is `"[DEFAULT]"`.
     *
-    * @return {!firebase.app.App} The app corresponding to the provided app name.
+    * @return The app corresponding to the provided app name.
     *   If no app name is provided, the default app is returned.
     */
   def app(): firebaseLib.firebaseMod.firebaseNs.appNs.App = js.native
@@ -55,20 +55,18 @@ object ^ extends js.Object {
     * specific app.
     *
     * @example
-    * ```
+    * ```javascript
     *
     * // Get the Auth service for the default app
     * var defaultAuth = firebase.auth();
     * ```
     * @example
-    * ```
+    * ```javascript
     *
     * // Get the Auth service for a given app
     * var otherAuth = firebase.auth(otherApp);
     * ```
-    * @param {!firebase.app.App=} app
-    *
-    * @return {!firebase.auth.Auth}
+    * @param app
     */
   def auth(): firebaseLib.firebaseMod.firebaseNs.authNs.Auth = js.native
   def auth(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.authNs.Auth = js.native
@@ -86,21 +84,21 @@ object ^ extends js.Object {
     * constants and methods associated with the `Database` service.
     *
     * @example
-    * ```
+    * ```javascript
     * // Get the Database service for the default app
     * var defaultDatabase = firebase.database();
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Get the Database service for a specific app
     * var otherDatabase = firebase.database(app);
     * ```
     *
     * @namespace
-    * @param {!firebase.app.App=} app Optional app whose Database service to
+    * @param app Optional app whose Database service to
     *   return. If not provided, the default Database service will be returned.
-    * @return {!firebase.database.Database} The default Database service if no app
+    * @return The default Database service if no app
     *   is provided or the Database service associated with the provided app.
     */
   def database(): firebaseLib.firebaseMod.firebaseNs.databaseNs.Database = js.native
@@ -121,7 +119,7 @@ object ^ extends js.Object {
     *   Initialize multiple apps} for detailed documentation.
     *
     * @example
-    * ```
+    * ```javascript
     *
     * // Initialize default app
     * // Retrieve your own options values by adding a web app on
@@ -136,7 +134,7 @@ object ^ extends js.Object {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     *
     * // Initialize another app
     * var otherApp = firebase.initializeApp({
@@ -145,8 +143,8 @@ object ^ extends js.Object {
     * }, "otherApp");
     * ```
     *
-    * @param {!Object} options Options to configure the app's services.
-    * @param {string=} name Optional name of the app to initialize. If no name
+    * @param options Options to configure the app's services.
+    * @param name Optional name of the app to initialize. If no name
     *   is provided, the default is `"[DEFAULT]"`.
     *
     * @return {!firebase.app.App} The initialized app.
@@ -168,22 +166,20 @@ object ^ extends js.Object {
     * parameter.
     *
     * @example
-    * ```
+    * ```javascript
     * // Get the Messaging service for the default app
     * var defaultMessaging = firebase.messaging();
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Get the Messaging service for a given app
     * var otherMessaging = firebase.messaging(otherApp);
     * ```
     *
     * @namespace
-    * @param {!firebase.app.App=} app The app to create a Messaging service for.
+    * @param app The app to create a Messaging service for.
     *     If not passed, uses the default app.
-    *
-    * @return {!firebase.messaging.Messaging}
     */
   def messaging(): firebaseLib.firebaseMod.firebaseNs.messagingNs.Messaging = js.native
   def messaging(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.messagingNs.Messaging = js.native
@@ -198,21 +194,19 @@ object ^ extends js.Object {
     * specific app.
     *
     * @example
-    * ```
+    * ```javascript
     * // Get the Storage service for the default app
     * var defaultStorage = firebase.storage();
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Get the Storage service for a given app
     * var otherStorage = firebase.storage(otherApp);
     * ```
     *
-    * @param {!firebase.app.App=} app The app to create a storage service for.
+    * @param app The app to create a storage service for.
     *     If not passed, uses the default app.
-    *
-    * @return {!firebase.storage.Storage}
     */
   def storage(): firebaseLib.firebaseMod.firebaseNs.storageNs.Storage = js.native
   def storage(app: firebaseLib.firebaseMod.firebaseNs.appNs.App): firebaseLib.firebaseMod.firebaseNs.storageNs.Storage = js.native

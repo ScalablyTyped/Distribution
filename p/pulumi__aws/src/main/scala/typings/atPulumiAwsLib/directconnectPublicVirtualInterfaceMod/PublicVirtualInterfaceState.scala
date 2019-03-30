@@ -19,6 +19,10 @@ trait PublicVirtualInterfaceState extends js.Object {
     */
   val arn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * The Direct Connect endpoint on which the virtual interface terminates.
+    */
+  val awsDevice: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
     */
   val bgpAsn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
@@ -60,6 +64,7 @@ object PublicVirtualInterfaceState {
     addressFamily: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     amazonAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    awsDevice: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     bgpAsn: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     bgpAuthKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     connectionId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -73,6 +78,7 @@ object PublicVirtualInterfaceState {
     if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
     if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (awsDevice != null) __obj.updateDynamic("awsDevice")(awsDevice.asInstanceOf[js.Any])
     if (bgpAsn != null) __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])
     if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
     if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])

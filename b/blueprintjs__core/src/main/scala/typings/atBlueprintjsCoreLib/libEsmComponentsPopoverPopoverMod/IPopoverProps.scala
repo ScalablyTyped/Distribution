@@ -83,10 +83,10 @@ object IPopoverProps {
     target: java.lang.String | reactLib.reactMod.Global.JSXNs.Element = null,
     targetClassName: java.lang.String = null,
     targetProps: reactLib.reactMod.ReactNs.HTMLAttributes[stdLib.HTMLElement] = null,
-    targetTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null,
+    targetTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null,
     transitionDuration: scala.Int | scala.Double = null,
     usePortal: js.UndefOr[scala.Boolean] = js.undefined,
-    wrapperTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null
+    wrapperTagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 173 */ js.Any = null
   ): IPopoverProps = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)

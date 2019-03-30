@@ -35,7 +35,7 @@ object authNs extends js.Object {
     * Facebook auth provider.
     *
     * @example
-    * ```
+    * ```javascript
     * // Sign in using a redirect.
     * firebase.auth().getRedirectResult().then(function(result) {
     *   if (result.credential) {
@@ -51,7 +51,7 @@ object authNs extends js.Object {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Sign in using a popup.
     * var provider = new firebase.auth.FacebookAuthProvider();
     * provider.addScope('user_birthday');
@@ -72,8 +72,8 @@ object authNs extends js.Object {
     /* CompleteClass */
     override var providerId: java.lang.String = js.native
     /**
-      * @param {string} scope Facebook OAuth scope.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @param scope Facebook OAuth scope.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def addScope(scope: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -86,9 +86,9 @@ object authNs extends js.Object {
       * documentation.
       * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
       * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
-      * @param {!Object} customOAuthParameters The custom OAuth parameters to pass
+      * @param customOAuthParameters The custom OAuth parameters to pass
       *     in the OAuth request.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -103,8 +103,8 @@ object authNs extends js.Object {
     /* CompleteClass */
     override var providerId: java.lang.String = js.native
     /**
-      * @param {string} scope Facebook OAuth scope.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @param scope Facebook OAuth scope.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def addScope(scope: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -117,22 +117,22 @@ object authNs extends js.Object {
       * documentation.
       * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
       * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
-      * @param {!Object} customOAuthParameters The custom OAuth parameters to pass
+      * @param customOAuthParameters The custom OAuth parameters to pass
       *     in the OAuth request.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
   }
   
   /**
-    * Github auth provider.
+    * GitHub auth provider.
     *
     * GitHub requires an OAuth 2.0 redirect, so you can either handle the redirect
     * directly, or use the signInWithPopup handler:
     *
     * @example
-    * ```
+    * ```javascript
     * // Using a redirect.
     * firebase.auth().getRedirectResult().then(function(result) {
     *   if (result.credential) {
@@ -163,7 +163,7 @@ object authNs extends js.Object {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // With popup.
     * var provider = new firebase.auth.GithubAuthProvider();
     *  provider.addScope('repo');
@@ -198,8 +198,8 @@ object authNs extends js.Object {
     /* CompleteClass */
     override var providerId: java.lang.String = js.native
     /**
-      * @param {string} scope Github OAuth scope.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @param scope Github OAuth scope.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def addScope(scope: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -211,9 +211,9 @@ object authNs extends js.Object {
       * {@link https://developer.github.com/v3/oauth/ GitHub} documentation.
       * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
       * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
-      * @param {!Object} customOAuthParameters The custom OAuth parameters to pass
+      * @param customOAuthParameters The custom OAuth parameters to pass
       *     in the OAuth request.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -228,8 +228,8 @@ object authNs extends js.Object {
     /* CompleteClass */
     override var providerId: java.lang.String = js.native
     /**
-      * @param {string} scope Github OAuth scope.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @param scope Github OAuth scope.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def addScope(scope: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -241,9 +241,9 @@ object authNs extends js.Object {
       * {@link https://developer.github.com/v3/oauth/ GitHub} documentation.
       * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
       * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
-      * @param {!Object} customOAuthParameters The custom OAuth parameters to pass
+      * @param customOAuthParameters The custom OAuth parameters to pass
       *     in the OAuth request.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -253,7 +253,7 @@ object authNs extends js.Object {
     * Google auth provider.
     *
     * @example
-    * ```
+    * ```javascript
     * // Using a redirect.
     * firebase.auth().getRedirectResult().then(function(result) {
     *   if (result.credential) {
@@ -271,7 +271,7 @@ object authNs extends js.Object {
     * ```
     *
     * @example
-    * ```
+    * ```javascript
     * // Using a popup.
     * var provider = new firebase.auth.GoogleAuthProvider();
     * provider.addScope('profile');
@@ -293,8 +293,8 @@ object authNs extends js.Object {
     /* CompleteClass */
     override var providerId: java.lang.String = js.native
     /**
-      * @param {string} scope Google OAuth scope.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @param scope Google OAuth scope.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def addScope(scope: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -308,9 +308,9 @@ object authNs extends js.Object {
       * documentation.
       * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
       * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
-      * @param {!Object} customOAuthParameters The custom OAuth parameters to pass
+      * @param customOAuthParameters The custom OAuth parameters to pass
       *     in the OAuth request.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -325,8 +325,8 @@ object authNs extends js.Object {
     /* CompleteClass */
     override var providerId: java.lang.String = js.native
     /**
-      * @param {string} scope Google OAuth scope.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @param scope Google OAuth scope.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def addScope(scope: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -340,9 +340,9 @@ object authNs extends js.Object {
       * documentation.
       * Reserved required OAuth 2.0 parameters such as 'client_id', 'redirect_uri',
       * 'scope', 'response_type' and 'state' are not allowed and will be ignored.
-      * @param {!Object} customOAuthParameters The custom OAuth parameters to pass
+      * @param customOAuthParameters The custom OAuth parameters to pass
       *     in the OAuth request.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -352,7 +352,7 @@ object authNs extends js.Object {
     * Generic OAuth provider.
     *
     * @example
-    * ```
+    * ```javascript
     * // Using a redirect.
     * firebase.auth().getRedirectResult().then(function(result) {
     *   if (result.credential) {
@@ -369,7 +369,7 @@ object authNs extends js.Object {
     * firebase.auth().signInWithRedirect(provider);
     * ```
     * @example
-    * ```
+    * ```javascript
     * // Using a popup.
     * var provider = new firebase.auth.OAuthProvider('google.com');
     * provider.addScope('profile');
@@ -384,7 +384,7 @@ object authNs extends js.Object {
     *
     * @see {@link firebase.auth.Auth.onAuthStateChanged} to receive sign in state
     * changes.
-    * @param {string} providerId The associated provider ID, such as `github.com`.
+    * @param providerId The associated provider ID, such as `github.com`.
     */
   @js.native
   class OAuthProvider ()
@@ -397,7 +397,7 @@ object authNs extends js.Object {
     * Phone number auth provider.
     *
     * @example
-    * ```
+    * ```javascript
     * // 'recaptcha-container' is the ID of an element in the DOM.
     * var applicationVerifier = new firebase.auth.RecaptchaVerifier(
     *     'recaptcha-container');
@@ -413,7 +413,7 @@ object authNs extends js.Object {
     *       return firebase.auth().signInWithCredential(phoneCredential);
     *     });
     * ```
-    * @param {?firebase.auth.Auth=} auth The Firebase Auth instance in which
+    * @param auth The Firebase Auth instance in which
     *     sign-ins should occur. Uses the default Auth instance if unspecified.
     */
   @js.native
@@ -446,10 +446,10 @@ object authNs extends js.Object {
       *     disabled.</dd>
       * </dl>
       *
-      * @param {string} phoneNumber The user's phone number in E.164 format (e.g.
+      * @param phoneNumber The user's phone number in E.164 format (e.g.
       *     +16505550101).
-      * @param {!firebase.auth.ApplicationVerifier} applicationVerifier
-      * @return {!firebase.Promise<string>} A Promise for the verification ID.
+      * @param applicationVerifier
+      * @return A Promise for the verification ID.
       */
     /* CompleteClass */
     override def verifyPhoneNumber(
@@ -492,10 +492,10 @@ object authNs extends js.Object {
       *     disabled.</dd>
       * </dl>
       *
-      * @param {string} phoneNumber The user's phone number in E.164 format (e.g.
+      * @param phoneNumber The user's phone number in E.164 format (e.g.
       *     +16505550101).
-      * @param {!firebase.auth.ApplicationVerifier} applicationVerifier
-      * @return {!firebase.Promise<string>} A Promise for the verification ID.
+      * @param applicationVerifier
+      * @return A Promise for the verification ID.
       */
     /* CompleteClass */
     override def verifyPhoneNumber(
@@ -507,17 +507,17 @@ object authNs extends js.Object {
   /**
     * An {@link https://www.google.com/recaptcha/ reCAPTCHA}-based application
     * verifier.
-    * @param {!Element|string} container The reCAPTCHA container parameter. This
+    * @param container The reCAPTCHA container parameter. This
     *     has different meaning depending on whether the reCAPTCHA is hidden or
     *     visible. For a visible reCAPTCHA the container must be empty. If a string
     *     is used, it has to correspond to an element ID. The corresponding element
     *     must also must be in the DOM at the time of initialization.
-    * @param {?Object=} parameters The optional reCAPTCHA parameters. Check the
+    * @param parameters The optional reCAPTCHA parameters. Check the
     *     reCAPTCHA docs for a comprehensive list. All parameters are accepted
     *     except for the sitekey. Firebase Auth backend provisions a reCAPTCHA for
     *     each project and will configure this upon rendering. For an invisible
     *     reCAPTCHA, a size key must have the value 'invisible'.
-    * @param {?firebase.app.App=} app The corresponding Firebase app. If none is
+    * @param app The corresponding Firebase app. If none is
     *     provided, the default Firebase App instance is used. A Firebase App
     *     instance must be initialized with an API key, otherwise an error will be
     *     thrown.
@@ -537,14 +537,14 @@ object authNs extends js.Object {
     override def clear(): scala.Unit = js.native
     /**
       * Renders the reCAPTCHA widget on the page.
-      * @return {!firebase.Promise<number>} A Promise that resolves with the
+      * @return A Promise that resolves with the
       *     reCAPTCHA widget ID.
       */
     /* CompleteClass */
     override def render(): js.Promise[scala.Double] = js.native
     /**
       * Executes the verification process.
-      * @return {!firebase.Promise<string>} A Promise for a token that can be used to
+      * @return A Promise for a token that can be used to
       *     assert the validity of a request.
       */
     /* CompleteClass */
@@ -577,14 +577,14 @@ object authNs extends js.Object {
     override def clear(): scala.Unit = js.native
     /**
       * Renders the reCAPTCHA widget on the page.
-      * @return {!firebase.Promise<number>} A Promise that resolves with the
+      * @return A Promise that resolves with the
       *     reCAPTCHA widget ID.
       */
     /* CompleteClass */
     override def render(): js.Promise[scala.Double] = js.native
     /**
       * Executes the verification process.
-      * @return {!firebase.Promise<string>} A Promise for a token that can be used to
+      * @return A Promise for a token that can be used to
       *     assert the validity of a request.
       */
     /* CompleteClass */
@@ -602,7 +602,7 @@ object authNs extends js.Object {
     * Twitter auth provider.
     *
     * @example
-    * ```
+    * ```javascript
     * // Using a redirect.
     * firebase.auth().getRedirectResult().then(function(result) {
     *   if (result.credential) {
@@ -618,7 +618,7 @@ object authNs extends js.Object {
     * firebase.auth().signInWithRedirect(provider);
     * ```
     * @example
-    * ```
+    * ```javascript
     * // Using a popup.
     * var provider = new firebase.auth.TwitterAuthProvider();
     * firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -644,9 +644,9 @@ object authNs extends js.Object {
       * Valid parameters include 'lang'.
       * Reserved required OAuth 1.0 parameters such as 'oauth_consumer_key',
       * 'oauth_token', 'oauth_signature', etc are not allowed and will be ignored.
-      * @param {!Object} customOAuthParameters The custom OAuth parameters to pass
+      * @param customOAuthParameters The custom OAuth parameters to pass
       *     in the OAuth request.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -666,9 +666,9 @@ object authNs extends js.Object {
       * Valid parameters include 'lang'.
       * Reserved required OAuth 1.0 parameters such as 'oauth_consumer_key',
       * 'oauth_token', 'oauth_signature', etc are not allowed and will be ignored.
-      * @param {!Object} customOAuthParameters The custom OAuth parameters to pass
+      * @param customOAuthParameters The custom OAuth parameters to pass
       *     in the OAuth request.
-      * @return {!firebase.auth.AuthProvider} The provider instance itself.
+      * @return The provider instance itself.
       */
     /* CompleteClass */
     override def setCustomParameters(customOAuthParameters: js.Object): firebaseLib.firebaseMod.firebaseNs.authNs.AuthProvider = js.native
@@ -699,16 +699,16 @@ object authNs extends js.Object {
     var PROVIDER_ID: java.lang.String = js.native
     /**
       * @example
-      * ```
+      * ```javascript
       * var cred = firebase.auth.EmailAuthProvider.credential(
       *     email,
       *     password
       * );
       * ```
       *
-      * @param {string} email Email address.
-      * @param {string} password User account password.
-      * @return {!firebase.auth.AuthCredential} The auth provider credential.
+      * @param email Email address.
+      * @param password User account password.
+      * @return The auth provider credential.
       */
     def credential(email: java.lang.String, password: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
     /**
@@ -716,16 +716,16 @@ object authNs extends js.Object {
       * after a sign in with email link operation.
       *
       * @example
-      * ```
+      * ```javascript
       * var cred = firebase.auth.EmailAuthProvider.credentialWithLink(
       *     email,
       *     emailLink
       * );
       * ```
       *
-      * @param {string} email Email address.
-      * @param {string} emailLink Sign-in email link.
-      * @return {!firebase.auth.AuthCredential} The auth provider credential.
+      * @param email Email address.
+      * @param emailLink Sign-in email link.
+      * @return The auth provider credential.
       */
     def credentialWithLink(email: java.lang.String, emailLink: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
   }
@@ -741,14 +741,14 @@ object authNs extends js.Object {
     var PROVIDER_ID: java.lang.String = js.native
     /**
       * @example
-      * ```
+      * ```javascript
       * var cred = firebase.auth.FacebookAuthProvider.credential(
       *     // `event` from the Facebook auth.authResponseChange callback.
       *     event.authResponse.accessToken
       * );
       * ```
       *
-      * @param {string} token Facebook access token.
+      * @param token Facebook access token.
       */
     def credential(token: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.OAuthCredential = js.native
   }
@@ -764,14 +764,14 @@ object authNs extends js.Object {
     var PROVIDER_ID: java.lang.String = js.native
     /**
       * @example
-      * ```
+      * ```javascript
       * var cred = firebase.auth.FacebookAuthProvider.credential(
       *     // `event` from the Facebook auth.authResponseChange callback.
       *     event.authResponse.accessToken
       * );
       * ```
       *
-      * @param {string} token Github access token.
+      * @param token Github access token.
       * @return {!firebase.auth.OAuthCredential} The auth provider credential.
       */
     def credential(token: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.OAuthCredential = js.native
@@ -791,15 +791,15 @@ object authNs extends js.Object {
       * is required.
       *
       * @example
-      * ```
+      * ```javascript
       * // \`googleUser\` from the onsuccess Google Sign In callback.
       * var credential = firebase.auth.GoogleAuthProvider.credential(
       googleUser.getAuthResponse().id_token);
       * firebase.auth().signInWithCredential(credential)
       * ```
-      * @param {?string=} idToken Google ID token.
-      * @param {?string=} accessToken Google access token.
-      * @return {!firebase.auth.OAuthCredential} The auth provider credential.
+      * @param idToken Google ID token.
+      * @param accessToken Google access token.
+      * @return The auth provider credential.
       */
     def credential(): firebaseLib.firebaseMod.firebaseNs.authNs.OAuthCredential = js.native
     def credential(idToken: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.OAuthCredential = js.native
@@ -829,11 +829,11 @@ object authNs extends js.Object {
       * <dd>Thrown if the verification ID is missing.</dd>
       * </dl>
       *
-      * @param {string} verificationId The verification ID returned from
+      * @param verificationId The verification ID returned from
       *     {@link firebase.auth.PhoneAuthProvider.verifyPhoneNumber}.
-      * @param {string} verificationCode The verification code sent to the user's
+      * @param verificationCode The verification code sent to the user's
       *     mobile device.
-      * @return {!firebase.auth.AuthCredential} The auth provider credential.
+      * @return The auth provider credential.
       */
     def credential(verificationId: java.lang.String, verificationCode: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
   }
@@ -849,9 +849,9 @@ object authNs extends js.Object {
       */
     var TWITTER_SIGN_IN_METHOD: java.lang.String = js.native
     /**
-      * @param {string} token Twitter access token.
-      * @param {string} secret Twitter secret.
-      * @return {!firebase.auth.OAuthCredential} The auth provider credential.
+      * @param token Twitter access token.
+      * @param secret Twitter secret.
+      * @return The auth provider credential.
       */
     def credential(token: java.lang.String, secret: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.OAuthCredential = js.native
   }

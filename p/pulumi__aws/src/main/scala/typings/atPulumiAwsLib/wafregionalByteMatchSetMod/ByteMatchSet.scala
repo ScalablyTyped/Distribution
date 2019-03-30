@@ -24,10 +24,6 @@ class ByteMatchSet protected ()
     */
   val byteMatchTuples: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatch]]] = js.native
   /**
-    * **Deprecated**, use `byte_match_tuples` instead.
-    */
-  val byte_match_tuple: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatch]]] = js.native
-  /**
     * The name or description of the ByteMatchSet.
     */
   val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native

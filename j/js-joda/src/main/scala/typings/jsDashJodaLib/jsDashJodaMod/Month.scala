@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "Month")
 @js.native
-class Month ()
+class Month protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.Month {
   /* CompleteClass */
   override def adjustInto(temporal: jsDashJodaLib.jsDashJodaMod.JSJodaNs.Temporal): jsDashJodaLib.jsDashJodaMod.JSJodaNs.Temporal = js.native

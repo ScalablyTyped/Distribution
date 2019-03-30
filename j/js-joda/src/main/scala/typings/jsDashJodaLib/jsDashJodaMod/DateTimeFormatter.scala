@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "DateTimeFormatter")
 @js.native
-class DateTimeFormatter ()
+class DateTimeFormatter protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.DateTimeFormatter {
   /* CompleteClass */
   override def chronology(): js.Any = js.native

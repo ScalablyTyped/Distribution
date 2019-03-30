@@ -61,6 +61,10 @@ trait DOMMatrixReadOnly extends js.Object {
   def scale3d(scale: scala.Double, originX: scala.Double): DOMMatrix = js.native
   def scale3d(scale: scala.Double, originX: scala.Double, originY: scala.Double): DOMMatrix = js.native
   def scale3d(scale: scala.Double, originX: scala.Double, originY: scala.Double, originZ: scala.Double): DOMMatrix = js.native
+  /** @deprecated */
+  def scaleNonUniform(): DOMMatrix = js.native
+  def scaleNonUniform(scaleX: scala.Double): DOMMatrix = js.native
+  def scaleNonUniform(scaleX: scala.Double, scaleY: scala.Double): DOMMatrix = js.native
   def skewX(): DOMMatrix = js.native
   def skewX(sx: scala.Double): DOMMatrix = js.native
   def skewY(): DOMMatrix = js.native

@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "express-flash"
-version := "0.0-dt-20180403Z-79530d"
+version := "0.0-dt-20180403Z-513af4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-9f78fd",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-c85ddc",
-  "org.scalablytyped" %%% "connect-flash" % "0.0-unknown-dt-20190322Z-fc2a0c",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-4576ab",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-506446",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-03fba5",
-  "org.scalablytyped" %%% "node" % "11.11-dt-20190325Z-000e7b",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-d16283",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-604ebf",
-  "org.scalablytyped" %%% "std" % "3.3-14e863")
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-684e50",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-50cbb3",
+  "org.scalablytyped" %%% "connect-flash" % "0.0-unknown-dt-20190322Z-759cd2",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-4aab25",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-faea1f",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
+  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-623d43",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-dd9008",
+  "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

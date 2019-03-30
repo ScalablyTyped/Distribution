@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait Run extends js.Object {
   /**
+    * Addresses associated with this run instance, if any.
+    */
+  var addresses: js.UndefOr[js.Array[Address]] = js.undefined
+  /**
     * Automation details that describe the aggregate of runs to which this run belongs.
     */
   var aggregateIds: js.UndefOr[js.Array[RunAutomationDetails]] = js.undefined
@@ -84,11 +88,23 @@ trait Run extends js.Object {
     */
   var results: js.UndefOr[js.Array[Result]] = js.undefined
   /**
+    * An array of reportingDescriptor objects relevant to a taxonomy in which results are categorized.
+    */
+  var taxonomies: js.UndefOr[js.Array[ReportingDescriptor]] = js.undefined
+  /**
+    * An array of threadFlowLocation objects cached at run level.
+    */
+  var threadFlowLocations: js.UndefOr[js.Array[ThreadFlowLocation]] = js.undefined
+  /**
     * Information about the tool or tool pipeline that generated the results in this run. A run can only contain
     * results produced by a single tool or tool pipeline. A run can aggregate results from multiple log files, as long
     * as context around the tool run (tool command-line arguments and the like) is identical for all aggregated files.
     */
   var tool: Tool
+  /**
+    * The set of available translations of the localized data provided by the tool.
+    */
+  var translations: js.UndefOr[js.Array[Translation]] = js.undefined
   /**
     * Specifies the revision in version control of the artifacts that were scanned.
     */
@@ -99,6 +115,7 @@ object Run {
   @scala.inline
   def apply(
     tool: Tool,
+    addresses: js.Array[Address] = null,
     aggregateIds: js.Array[RunAutomationDetails] = null,
     artifacts: js.Array[Artifact] = null,
     baselineInstanceGuid: java.lang.String = null,
@@ -117,9 +134,13 @@ object Run {
     properties: PropertyBag = null,
     redactionToken: java.lang.String = null,
     results: js.Array[Result] = null,
+    taxonomies: js.Array[ReportingDescriptor] = null,
+    threadFlowLocations: js.Array[ThreadFlowLocation] = null,
+    translations: js.Array[Translation] = null,
     versionControlProvenance: js.Array[VersionControlDetails] = null
   ): Run = {
     val __obj = js.Dynamic.literal(tool = tool)
+    if (addresses != null) __obj.updateDynamic("addresses")(addresses)
     if (aggregateIds != null) __obj.updateDynamic("aggregateIds")(aggregateIds)
     if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts)
     if (baselineInstanceGuid != null) __obj.updateDynamic("baselineInstanceGuid")(baselineInstanceGuid)
@@ -138,6 +159,9 @@ object Run {
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (redactionToken != null) __obj.updateDynamic("redactionToken")(redactionToken)
     if (results != null) __obj.updateDynamic("results")(results)
+    if (taxonomies != null) __obj.updateDynamic("taxonomies")(taxonomies)
+    if (threadFlowLocations != null) __obj.updateDynamic("threadFlowLocations")(threadFlowLocations)
+    if (translations != null) __obj.updateDynamic("translations")(translations)
     if (versionControlProvenance != null) __obj.updateDynamic("versionControlProvenance")(versionControlProvenance)
     __obj.asInstanceOf[Run]
   }

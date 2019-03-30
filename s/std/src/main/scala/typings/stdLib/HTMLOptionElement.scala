@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLOptionElement interface represents <option> elements and inherits all classes and methods of the HTMLElement interface. */
 @js.native
 trait HTMLOptionElement extends HTMLElement {
   /**

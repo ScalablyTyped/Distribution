@@ -8,6 +8,7 @@
 //                 Sylvain Thénault <https://github.com/sthenault>
 //                 Sebastian Busch <https://github.com/sbusch>
 //                 Mehdi Lahlou <https://github.com/medfreeman>
+//                 Saad Tazi <https://github.com/saadtazi>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

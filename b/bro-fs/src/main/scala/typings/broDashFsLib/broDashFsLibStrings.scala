@@ -14,8 +14,14 @@ object broDashFsLibStrings {
     extends broDashFsLib.broDashFsMod.TextType
   
   @js.native
+  sealed trait Blob extends js.Object
+  
+  @js.native
   sealed trait DataURL
     extends broDashFsLib.broDashFsMod.TextType
+  
+  @js.native
+  sealed trait File extends js.Object
   
   @js.native
   sealed trait Text
@@ -26,7 +32,11 @@ object broDashFsLibStrings {
   @scala.inline
   def BinaryString: BinaryString = "BinaryString".asInstanceOf[BinaryString]
   @scala.inline
+  def Blob: Blob = "Blob".asInstanceOf[Blob]
+  @scala.inline
   def DataURL: DataURL = "DataURL".asInstanceOf[DataURL]
+  @scala.inline
+  def File: File = "File".asInstanceOf[File]
   @scala.inline
   def Text: Text = "Text".asInstanceOf[Text]
 }

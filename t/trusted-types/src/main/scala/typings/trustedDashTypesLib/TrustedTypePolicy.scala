@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("TrustedTypePolicy")
 @js.native
 class TrustedTypePolicy () extends js.Object {
-  def createHTML(s: java.lang.String): TrustedHTML = js.native
-  def createScript(s: java.lang.String): TrustedScript = js.native
-  def createScriptURL(s: java.lang.String): TrustedScriptURL = js.native
-  def createURL(s: java.lang.String): TrustedURL = js.native
+  val name: java.lang.String = js.native
+  def createHTML(input: java.lang.String): TrustedHTML = js.native
+  def createScript(input: java.lang.String): TrustedScript = js.native
+  def createScriptURL(input: java.lang.String): TrustedScriptURL = js.native
+  def createURL(input: java.lang.String): TrustedURL = js.native
 }
 

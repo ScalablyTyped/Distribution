@@ -28,6 +28,7 @@ class GraphQLEnumType protected ()
   ): graphqlLib.tsutilsMaybeMod.Maybe[_] = js.native
   def parseValue(value: js.Any): graphqlLib.tsutilsMaybeMod.Maybe[_] = js.native
   def serialize(value: js.Any): graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = js.native
+  def toConfig(): GraphQLEnumTypeConfig with graphqlLib.Anon_ExtensionASTNodesEnumTypeExtensionNode = js.native
   def toJSON(): java.lang.String = js.native
 }
 

@@ -33,6 +33,10 @@ trait EndpointArgs extends js.Object {
     */
   val serverCertificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
+  /**
     * The transport protocol to be used by the VPN session. Default value is `udp`.
     */
   val transportProtocol: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -47,11 +51,13 @@ object EndpointArgs {
     serverCertificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
     description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     dnsServers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     transportProtocol: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): EndpointArgs = {
     val __obj = js.Dynamic.literal(authenticationOptions = authenticationOptions.asInstanceOf[js.Any], clientCidrBlock = clientCidrBlock.asInstanceOf[js.Any], connectionLogOptions = connectionLogOptions.asInstanceOf[js.Any], serverCertificateArn = serverCertificateArn.asInstanceOf[js.Any])
     if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     if (dnsServers != null) __obj.updateDynamic("dnsServers")(dnsServers.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     if (transportProtocol != null) __obj.updateDynamic("transportProtocol")(transportProtocol.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndpointArgs]
   }

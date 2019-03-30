@@ -93,7 +93,7 @@ class Table protected ()
   /**
     * Defines ttl, has two properties, and can only be specified once:
     */
-  val ttl: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AttributeName]] = js.native
+  val ttl: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AttributeNameEnabled]] = js.native
   /**
     * The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
     */

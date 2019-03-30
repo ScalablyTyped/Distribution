@@ -25,7 +25,7 @@ class RolePolicyAttachment protected ()
   /**
     * The role the policy should be applied to
     */
-  val role: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.iamRoleMod.Role] = js.native
+  val role: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
 }
 
 /* static members */

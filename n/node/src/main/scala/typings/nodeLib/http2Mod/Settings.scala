@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Settings extends js.Object {
+  var enableConnectProtocol: js.UndefOr[scala.Boolean] = js.undefined
   var enablePush: js.UndefOr[scala.Boolean] = js.undefined
   var headerTableSize: js.UndefOr[scala.Double] = js.undefined
   var initialWindowSize: js.UndefOr[scala.Double] = js.undefined
@@ -17,6 +18,7 @@ trait Settings extends js.Object {
 object Settings {
   @scala.inline
   def apply(
+    enableConnectProtocol: js.UndefOr[scala.Boolean] = js.undefined,
     enablePush: js.UndefOr[scala.Boolean] = js.undefined,
     headerTableSize: scala.Int | scala.Double = null,
     initialWindowSize: scala.Int | scala.Double = null,
@@ -25,6 +27,7 @@ object Settings {
     maxHeaderListSize: scala.Int | scala.Double = null
   ): Settings = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableConnectProtocol)) __obj.updateDynamic("enableConnectProtocol")(enableConnectProtocol)
     if (!js.isUndefined(enablePush)) __obj.updateDynamic("enablePush")(enablePush)
     if (headerTableSize != null) __obj.updateDynamic("headerTableSize")(headerTableSize.asInstanceOf[js.Any])
     if (initialWindowSize != null) __obj.updateDynamic("initialWindowSize")(initialWindowSize.asInstanceOf[js.Any])

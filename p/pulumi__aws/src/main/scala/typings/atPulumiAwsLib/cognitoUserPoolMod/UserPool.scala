@@ -48,11 +48,11 @@ class UserPool protected ()
     */
   val emailConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ReplyToEmailAddress]] = js.native
   /**
-    * A string representing the email verification message. Must contain the `{####}` placeholder. **NOTE:** - If `email_verification_message` and `verification_message_template.email_message` are specified and the values are different, either one is prioritized and updated.
+    * A string representing the email verification message. Conflicts with `verification_message_template` configuration block `email_message` argument.
     */
   val emailVerificationMessage: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * A string representing the email verification subject. **NOTE:** - If `email_verification_subject` and `verification_message_template.email_subject` are specified and the values are different, either one is prioritized and updated.
+    * A string representing the email verification subject. Conflicts with `verification_message_template` configuration block `email_subject` argument.
     */
   val emailVerificationSubject: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
@@ -92,7 +92,7 @@ class UserPool protected ()
     */
   val smsConfiguration: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ExternalId]] = js.native
   /**
-    * A string representing the SMS verification message.
+    * A string representing the SMS verification message. Conflicts with `verification_message_template` configuration block `sms_message` argument.
     */
   val smsVerificationMessage: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The Request interface of the Fetch API represents a resource request. */
 trait Request extends Body {
   /**
     * Returns the cache mode associated with request, which is a string indicating

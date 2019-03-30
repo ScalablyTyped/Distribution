@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait DocumentOrShadowRoot extends js.Object {
   val activeElement: Element | scala.Null
+  val fullscreenElement: Element | scala.Null
+  val pointerLockElement: Element | scala.Null
   /**
     * Retrieves a collection of styleSheet objects representing the style sheets that correspond to each instance of a link or style object in the document.
     */
@@ -28,10 +30,14 @@ object DocumentOrShadowRoot {
     elementsFromPoint: (scala.Double, scala.Double) => js.Array[Element],
     getSelection: () => Selection | scala.Null,
     styleSheets: StyleSheetList,
-    activeElement: Element = null
+    activeElement: Element = null,
+    fullscreenElement: Element = null,
+    pointerLockElement: Element = null
   ): DocumentOrShadowRoot = {
     val __obj = js.Dynamic.literal(caretPositionFromPoint = js.Any.fromFunction2(caretPositionFromPoint), caretRangeFromPoint = js.Any.fromFunction2(caretRangeFromPoint), elementFromPoint = js.Any.fromFunction2(elementFromPoint), elementsFromPoint = js.Any.fromFunction2(elementsFromPoint), getSelection = js.Any.fromFunction0(getSelection), styleSheets = styleSheets)
     if (activeElement != null) __obj.updateDynamic("activeElement")(activeElement)
+    if (fullscreenElement != null) __obj.updateDynamic("fullscreenElement")(fullscreenElement)
+    if (pointerLockElement != null) __obj.updateDynamic("pointerLockElement")(pointerLockElement)
     __obj.asInstanceOf[DocumentOrShadowRoot]
   }
 }

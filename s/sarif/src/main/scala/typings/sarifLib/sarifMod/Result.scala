@@ -117,6 +117,10 @@ trait Result extends js.Object {
     */
   var suppressionStates: js.UndefOr[js.Array[sarifLib.sarifMod.ResultNs.suppressionStates]] = js.undefined
   /**
+    * An array of references to taxonomy reporting descriptors that are applicable to the result.
+    */
+  var taxonomyReferences: js.UndefOr[js.Array[ReportingDescriptorReference]] = js.undefined
+  /**
     * The URIs of the work items associated with this result.
     */
   var workItemUris: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -151,6 +155,7 @@ object Result {
     ruleIndex: scala.Int | scala.Double = null,
     stacks: js.Array[Stack] = null,
     suppressionStates: js.Array[sarifLib.sarifMod.ResultNs.suppressionStates] = null,
+    taxonomyReferences: js.Array[ReportingDescriptorReference] = null,
     workItemUris: js.Array[java.lang.String] = null
   ): Result = {
     val __obj = js.Dynamic.literal(message = message)
@@ -179,6 +184,7 @@ object Result {
     if (ruleIndex != null) __obj.updateDynamic("ruleIndex")(ruleIndex.asInstanceOf[js.Any])
     if (stacks != null) __obj.updateDynamic("stacks")(stacks)
     if (suppressionStates != null) __obj.updateDynamic("suppressionStates")(suppressionStates)
+    if (taxonomyReferences != null) __obj.updateDynamic("taxonomyReferences")(taxonomyReferences)
     if (workItemUris != null) __obj.updateDynamic("workItemUris")(workItemUris)
     __obj.asInstanceOf[Result]
   }

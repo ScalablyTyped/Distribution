@@ -1024,6 +1024,12 @@ object electronLibStrings {
   sealed trait selection extends js.Object
   
   @js.native
+  sealed trait selectionchange extends js.Object
+  
+  @js.native
+  sealed trait selectstart extends js.Object
+  
+  @js.native
   sealed trait separated extends js.Object
   
   @js.native
@@ -1938,6 +1944,10 @@ object electronLibStrings {
   def `select-client-certificate`: `select-client-certificate` = "select-client-certificate".asInstanceOf[`select-client-certificate`]
   @scala.inline
   def selection: selection = "selection".asInstanceOf[selection]
+  @scala.inline
+  def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
+  @scala.inline
+  def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   @scala.inline
   def separated: separated = "separated".asInstanceOf[separated]
   @scala.inline

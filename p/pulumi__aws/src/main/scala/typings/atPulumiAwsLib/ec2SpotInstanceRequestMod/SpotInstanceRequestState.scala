@@ -46,7 +46,7 @@ trait SpotInstanceRequestState extends js.Object {
   val disableApiTermination: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * Additional EBS block devices to attach to the
-    * instance.  See Block Devices below for details.
+    * instance.  Block device configurations only apply on resource creation. See Block Devices below for details on attributes and drift detection.
     */
   val ebsBlockDevices: js.UndefOr[
     atPulumiPulumiLib.outputMod.Input[
@@ -126,7 +126,6 @@ trait SpotInstanceRequestState extends js.Object {
     * If true, the launched EC2 instance will have detailed monitoring enabled. (Available since v0.6.0)
     */
   val monitoring: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
-  val networkInterfaceId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Customize network interfaces to be attached at instance boot time. See Network Interfaces below for more details.
     */
@@ -288,7 +287,6 @@ object SpotInstanceRequestState {
     keyName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     launchGroup: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     monitoring: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
-    networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     networkInterfaces: atPulumiPulumiLib.outputMod.Input[
       js.Array[
         atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceIndexNetworkInterfaceId]
@@ -345,7 +343,6 @@ object SpotInstanceRequestState {
     if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
     if (launchGroup != null) __obj.updateDynamic("launchGroup")(launchGroup.asInstanceOf[js.Any])
     if (monitoring != null) __obj.updateDynamic("monitoring")(monitoring.asInstanceOf[js.Any])
-    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
     if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces.asInstanceOf[js.Any])
     if (passwordData != null) __obj.updateDynamic("passwordData")(passwordData.asInstanceOf[js.Any])
     if (placementGroup != null) __obj.updateDynamic("placementGroup")(placementGroup.asInstanceOf[js.Any])

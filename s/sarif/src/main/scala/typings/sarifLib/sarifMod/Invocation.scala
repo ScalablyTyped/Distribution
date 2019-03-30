@@ -16,17 +16,9 @@ trait Invocation extends js.Object {
     */
   var arguments: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-    * A set of artifacts relevant to the invocation of the tool.
-    */
-  var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
-  /**
     * The command line used to invoke the tool.
     */
   var commandLine: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * A list of conditions detected by the tool that are relevant to the tool's configuration.
-    */
-  var configurationNotifications: js.UndefOr[js.Array[Notification]] = js.undefined
   /**
     * The Coordinated Universal Time (UTC) date and time at which the run ended. See "Date/time properties" in the
     * SARIF spec for the required format.
@@ -102,13 +94,17 @@ trait Invocation extends js.Object {
     */
   var stdoutStderr: js.UndefOr[ArtifactLocation] = js.undefined
   /**
-    * A value indicating whether the tool's execution completed successfully.
+    * A list of conditions detected by the tool that are relevant to the tool's configuration.
     */
-  var toolExecutionSuccessful: js.UndefOr[scala.Boolean] = js.undefined
+  var toolConfigurationNotifications: js.UndefOr[js.Array[Notification]] = js.undefined
   /**
     * A list of runtime conditions detected by the tool during the analysis.
     */
-  var toolNotifications: js.UndefOr[js.Array[Notification]] = js.undefined
+  var toolExecutionNotifications: js.UndefOr[js.Array[Notification]] = js.undefined
+  /**
+    * A value indicating whether the tool's execution completed successfully.
+    */
+  var toolExecutionSuccessful: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * The working directory for the analysis tool run.
     */
@@ -120,9 +116,7 @@ object Invocation {
   def apply(
     account: java.lang.String = null,
     arguments: js.Array[java.lang.String] = null,
-    attachments: js.Array[Attachment] = null,
     commandLine: java.lang.String = null,
-    configurationNotifications: js.Array[Notification] = null,
     endTimeUtc: java.lang.String = null,
     environmentVariables: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     executableLocation: ArtifactLocation = null,
@@ -141,16 +135,15 @@ object Invocation {
     stdin: ArtifactLocation = null,
     stdout: ArtifactLocation = null,
     stdoutStderr: ArtifactLocation = null,
+    toolConfigurationNotifications: js.Array[Notification] = null,
+    toolExecutionNotifications: js.Array[Notification] = null,
     toolExecutionSuccessful: js.UndefOr[scala.Boolean] = js.undefined,
-    toolNotifications: js.Array[Notification] = null,
     workingDirectory: ArtifactLocation = null
   ): Invocation = {
     val __obj = js.Dynamic.literal()
     if (account != null) __obj.updateDynamic("account")(account)
     if (arguments != null) __obj.updateDynamic("arguments")(arguments)
-    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
     if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine)
-    if (configurationNotifications != null) __obj.updateDynamic("configurationNotifications")(configurationNotifications)
     if (endTimeUtc != null) __obj.updateDynamic("endTimeUtc")(endTimeUtc)
     if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables)
     if (executableLocation != null) __obj.updateDynamic("executableLocation")(executableLocation)
@@ -169,8 +162,9 @@ object Invocation {
     if (stdin != null) __obj.updateDynamic("stdin")(stdin)
     if (stdout != null) __obj.updateDynamic("stdout")(stdout)
     if (stdoutStderr != null) __obj.updateDynamic("stdoutStderr")(stdoutStderr)
+    if (toolConfigurationNotifications != null) __obj.updateDynamic("toolConfigurationNotifications")(toolConfigurationNotifications)
+    if (toolExecutionNotifications != null) __obj.updateDynamic("toolExecutionNotifications")(toolExecutionNotifications)
     if (!js.isUndefined(toolExecutionSuccessful)) __obj.updateDynamic("toolExecutionSuccessful")(toolExecutionSuccessful)
-    if (toolNotifications != null) __obj.updateDynamic("toolNotifications")(toolNotifications)
     if (workingDirectory != null) __obj.updateDynamic("workingDirectory")(workingDirectory)
     __obj.asInstanceOf[Invocation]
   }

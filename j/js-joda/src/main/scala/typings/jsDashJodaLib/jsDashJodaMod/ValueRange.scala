@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("js-joda", "ValueRange")
 @js.native
-class ValueRange ()
+class ValueRange protected ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.ValueRange {
   /* CompleteClass */
   override def checkValidIntValue(value: scala.Double, field: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalField): scala.Double = js.native

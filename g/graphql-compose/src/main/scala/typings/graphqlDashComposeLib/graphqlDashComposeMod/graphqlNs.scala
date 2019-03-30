@@ -237,26 +237,26 @@ object graphqlNs extends js.Object {
     typeA: graphqlLib.typeDefinitionMod.GraphQLCompositeType,
     typeB: graphqlLib.typeDefinitionMod.GraphQLCompositeType
   ): scala.Boolean = js.native
-  def execute[TData](args: graphqlLib.executionExecuteMod.ExecutionArgs): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
-  def execute[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, document: graphqlLib.languageAstMod.DocumentNode): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  def execute[TData](args: graphqlLib.executionExecuteMod.ExecutionArgs): graphqlLib.jsutilsPromiseOrValueMod.PromiseOrValue[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  def execute[TData](schema: graphqlLib.typeSchemaMod.GraphQLSchema, document: graphqlLib.languageAstMod.DocumentNode): graphqlLib.jsutilsPromiseOrValueMod.PromiseOrValue[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def execute[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any
-  ): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): graphqlLib.jsutilsPromiseOrValueMod.PromiseOrValue[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def execute[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any,
     contextValue: js.Any
-  ): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): graphqlLib.jsutilsPromiseOrValueMod.PromiseOrValue[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def execute[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
     rootValue: js.Any,
     contextValue: js.Any,
     variableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]]
-  ): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): graphqlLib.jsutilsPromiseOrValueMod.PromiseOrValue[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def execute[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
@@ -264,7 +264,7 @@ object graphqlNs extends js.Object {
     contextValue: js.Any,
     variableValues: graphqlLib.tsutilsMaybeMod.Maybe[org.scalablytyped.runtime.StringDictionary[_]],
     operationName: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String]
-  ): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): graphqlLib.jsutilsPromiseOrValueMod.PromiseOrValue[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def execute[TData](
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     document: graphqlLib.languageAstMod.DocumentNode,
@@ -275,7 +275,7 @@ object graphqlNs extends js.Object {
     fieldResolver: graphqlLib.tsutilsMaybeMod.Maybe[
       graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
     ]
-  ): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
+  ): graphqlLib.jsutilsPromiseOrValueMod.PromiseOrValue[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def extendSchema(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     documentAST: graphqlLib.languageAstMod.DocumentNode
@@ -543,7 +543,7 @@ object graphqlNs extends js.Object {
   def parseValue(source: graphqlLib.languageSourceMod.Source, options: graphqlLib.languageParserMod.ParseOptions): graphqlLib.languageAstMod.ValueNode = js.native
   def parseValue(source: java.lang.String): graphqlLib.languageAstMod.ValueNode = js.native
   def parseValue(source: java.lang.String, options: graphqlLib.languageParserMod.ParseOptions): graphqlLib.languageAstMod.ValueNode = js.native
-  def print(ast: js.Any): java.lang.String = js.native
+  def print(ast: graphqlLib.languageAstMod.ASTNode): java.lang.String = js.native
   def printError(error: graphqlLib.errorGraphQLErrorMod.GraphQLError): java.lang.String = js.native
   def printIntrospectionSchema(schema: graphqlLib.typeSchemaMod.GraphQLSchema): java.lang.String = js.native
   def printIntrospectionSchema(

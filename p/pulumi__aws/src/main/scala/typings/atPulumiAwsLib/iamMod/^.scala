@@ -344,7 +344,6 @@ object ^ extends js.Object {
     args: atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.iamGetPolicyDocumentMod.GetPolicyDocumentResult] = js.native
-  def getRole(): js.Promise[atPulumiAwsLib.iamGetRoleMod.GetRoleResult] = js.native
   def getRole(args: atPulumiAwsLib.iamGetRoleMod.GetRoleArgs): js.Promise[atPulumiAwsLib.iamGetRoleMod.GetRoleResult] = js.native
   def getRole(args: atPulumiAwsLib.iamGetRoleMod.GetRoleArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.iamGetRoleMod.GetRoleResult] = js.native
   def getServerCertificate(): js.Promise[atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateResult] = js.native

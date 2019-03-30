@@ -37,18 +37,18 @@ trait OnDisconnect extends js.Object {
     * to sibling locations will still occur.
     *
     * @example
-    * ```
+    * ```javascript
     * var ref = firebase.database().ref("onlineState");
     * ref.onDisconnect().set(false);
     * // ... sometime later
     * ref.onDisconnect().cancel();
     * ```
     *
-    * @param {function(?Error)=} onComplete An optional callback function that will
+    * @param onComplete An optional callback function that will
     *   be called when synchronization to the server has completed. The callback
     *   will be passed a single parameter: null for success, or an Error object
     *   indicating a failure.
-    * @return {!firebase.Promise<void>} Resolves when synchronization to the server
+    * @return Resolves when synchronization to the server
     *   is complete.
     */
   def cancel(): js.Promise[_] = js.native
@@ -57,11 +57,11 @@ trait OnDisconnect extends js.Object {
     * Ensures the data at this location is deleted when the client is disconnected
     * (due to closing the browser, navigating to a new page, or network issues).
     *
-    * @param {function(?Error)=} onComplete An optional callback function that will
+    * @param onComplete An optional callback function that will
     *   be called when synchronization to the server has completed. The callback
     *   will be passed a single parameter: null for success, or an Error object
     *   indicating a failure.
-    * @return {!firebase.Promise<void>} Resolves when synchronization to the server
+    * @return Resolves when synchronization to the server
     *   is complete.
     */
   def remove(): js.Promise[_] = js.native
@@ -83,18 +83,18 @@ trait OnDisconnect extends js.Object {
     * the `onDisconnect` operations each time.
     *
     * @example
-    * ```
+    * ```javascript
     * var ref = firebase.database().ref("users/ada/status");
     * ref.onDisconnect().set("I disconnected!");
     * ```
     *
-    * @param {*} value The value to be written to this location on
+    * @param value The value to be written to this location on
     *   disconnect (can be an object, array, string, number, boolean, or null).
-    * @param {function(?Error)=} onComplete An optional callback function that
+    * @param onComplete An optional callback function that
     *   will be called when synchronization to the Database server has completed.
     *   The callback will be passed a single parameter: null for success, or an
     *   `Error` object indicating a failure.
-    * @return {!firebase.Promise<void>} Resolves when synchronization to the
+    * @return Resolves when synchronization to the
     *   Database is complete.
     */
   def set(value: js.Any): js.Promise[_] = js.native
@@ -139,7 +139,7 @@ trait OnDisconnect extends js.Object {
     * {@link firebase.database.Reference.update `update()`}.
     *
     * @example
-    * ```
+    * ```javascript
     * var ref = firebase.database().ref("users/ada");
     * ref.update({
     *    onlineState: true,
@@ -151,12 +151,12 @@ trait OnDisconnect extends js.Object {
     * });
     * ```
     *
-    * @param {!Object} values Object containing multiple values.
-    * @param {function(?Error)=} onComplete An optional callback function that will
+    * @param values Object containing multiple values.
+    * @param onComplete An optional callback function that will
     *   be called when synchronization to the server has completed. The
     *   callback will be passed a single parameter: null for success, or an Error
     *   object indicating a failure.
-    * @return {!firebase.Promise<void>} Resolves when synchronization to the
+    * @return Resolves when synchronization to the
     *   Database is complete.
     */
   def update(values: js.Object): js.Promise[_] = js.native

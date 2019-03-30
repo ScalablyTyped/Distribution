@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
      with astDashTypesLib.genKindsMod.TSHasOptionalTypeAnnotationKind
      with astDashTypesLib.genKindsMod.TSHasOptionalTypeParametersKind {
   var parameters: js.Array[
-    astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+    astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
   ]
   var `type`: astDashTypesLib.astDashTypesLibStrings.TSCallSignatureDeclaration
 }
@@ -26,7 +26,7 @@ object TSCallSignatureDeclaration {
   @scala.inline
   def apply(
     parameters: js.Array[
-      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ArrayPatternKind | astDashTypesLib.genKindsMod.ObjectPatternKind
     ],
     `type`: astDashTypesLib.astDashTypesLibStrings.TSCallSignatureDeclaration,
     typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,

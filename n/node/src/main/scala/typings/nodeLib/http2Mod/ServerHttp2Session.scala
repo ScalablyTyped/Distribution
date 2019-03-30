@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("http2", "ServerHttp2Session")
 @js.native
-trait ServerHttp2Session extends Http2Session {
+class ServerHttp2Session protected () extends Http2Session {
   val server: Http2Server | Http2SecureServer = js.native
   @JSName("addListener")
   def addListener_connect(
@@ -84,6 +85,7 @@ trait ServerHttp2Session extends Http2Session {
       scala.Unit
     ]
   ): this.type = js.native
+  def origin(args: (java.lang.String | nodeLib.urlMod.URL | nodeLib.Anon_Origin)*): scala.Unit = js.native
   @JSName("prependListener")
   def prependListener_connect(
     event: nodeLib.nodeLibStrings.connect,

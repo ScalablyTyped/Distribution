@@ -103,6 +103,10 @@ object WorkSpacesNs extends js.Object {
       */
     var GroupName: IpGroupName
     /**
+      * The tags. Each WorkSpaces resource can have a maximum of 50 tags.
+      */
+    var Tags: js.UndefOr[TagList] = js.undefined
+    /**
       * The rules to add to the group.
       */
     var UserRules: js.UndefOr[IpRuleList] = js.undefined
@@ -233,7 +237,7 @@ object WorkSpacesNs extends js.Object {
   
   trait DescribeClientPropertiesRequest extends js.Object {
     /**
-      * The resource identifiers, in the form of directory IDs.
+      * The resource identifier, in the form of directory IDs.
       */
     var ResourceIds: ResourceIdList
   }
@@ -479,6 +483,10 @@ object WorkSpacesNs extends js.Object {
       * The ingestion process to be used when importing the image.
       */
     var IngestionProcess: WorkspaceImageIngestionProcess
+    /**
+      * The tags. Each WorkSpaces resource can have a maximum of 50 tags.
+      */
+    var Tags: js.UndefOr[TagList] = js.undefined
   }
   
   trait ImportWorkspaceImageResult extends js.Object {
@@ -1243,7 +1251,7 @@ object WorkSpacesNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyAccountResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Modifies the properties of the specified Amazon WorkSpaces client.
+      * Modifies the properties of the specified Amazon WorkSpaces clients.
       */
     def modifyClientProperties(): awsDashSdkLib.libRequestMod.Request[ModifyClientPropertiesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def modifyClientProperties(
@@ -1254,7 +1262,7 @@ object WorkSpacesNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyClientPropertiesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Modifies the properties of the specified Amazon WorkSpaces client.
+      * Modifies the properties of the specified Amazon WorkSpaces clients.
       */
     def modifyClientProperties(params: ModifyClientPropertiesRequest): awsDashSdkLib.libRequestMod.Request[ModifyClientPropertiesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def modifyClientProperties(

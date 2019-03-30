@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("crypto", "KeyObject")
 @js.native
-trait KeyObject extends _KeyLike {
+class KeyObject protected () extends _KeyLike {
   var asymmetricKeyType: js.UndefOr[KeyType] = js.native
   var symmetricSize: js.UndefOr[scala.Double] = js.native
   var `type`: KeyObjectType = js.native

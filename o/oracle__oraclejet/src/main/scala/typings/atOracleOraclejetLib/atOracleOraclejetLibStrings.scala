@@ -2939,6 +2939,12 @@ object atOracleOraclejetLibStrings {
   sealed trait selectionRequiredChanged extends js.Object
   
   @js.native
+  sealed trait selectionchange extends js.Object
+  
+  @js.native
+  sealed trait selectstart extends js.Object
+  
+  @js.native
   sealed trait seriesComparator extends js.Object
   
   @js.native
@@ -5675,6 +5681,10 @@ object atOracleOraclejetLibStrings {
   def selectionRequired: selectionRequired = "selectionRequired".asInstanceOf[selectionRequired]
   @scala.inline
   def selectionRequiredChanged: selectionRequiredChanged = "selectionRequiredChanged".asInstanceOf[selectionRequiredChanged]
+  @scala.inline
+  def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
+  @scala.inline
+  def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   @scala.inline
   def seriesComparator: seriesComparator = "seriesComparator".asInstanceOf[seriesComparator]
   @scala.inline

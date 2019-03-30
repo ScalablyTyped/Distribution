@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("http2", "ClientHttp2Session")
 @js.native
-trait ClientHttp2Session extends Http2Session {
+class ClientHttp2Session protected () extends Http2Session {
   @JSName("addListener")
   def addListener_altsvc(
     event: nodeLib.nodeLibStrings.altsvc,
@@ -25,6 +26,11 @@ trait ClientHttp2Session extends Http2Session {
       /* socket */ nodeLib.netMod.Socket | nodeLib.tlsMod.TLSSocket, 
       scala.Unit
     ]
+  ): this.type = js.native
+  @JSName("addListener")
+  def addListener_origin(
+    event: nodeLib.nodeLibStrings.origin,
+    listener: js.Function1[/* origins */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_stream(
@@ -52,6 +58,8 @@ trait ClientHttp2Session extends Http2Session {
     socket: nodeLib.tlsMod.TLSSocket
   ): scala.Boolean = js.native
   @JSName("emit")
+  def emit_origin(event: nodeLib.nodeLibStrings.origin, origins: js.Array[java.lang.String]): scala.Boolean = js.native
+  @JSName("emit")
   def emit_stream(
     event: nodeLib.nodeLibStrings.stream,
     stream: ClientHttp2Stream,
@@ -76,6 +84,11 @@ trait ClientHttp2Session extends Http2Session {
       /* socket */ nodeLib.netMod.Socket | nodeLib.tlsMod.TLSSocket, 
       scala.Unit
     ]
+  ): this.type = js.native
+  @JSName("on")
+  def on_origin(
+    event: nodeLib.nodeLibStrings.origin,
+    listener: js.Function1[/* origins */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_stream(
@@ -107,6 +120,11 @@ trait ClientHttp2Session extends Http2Session {
     ]
   ): this.type = js.native
   @JSName("once")
+  def once_origin(
+    event: nodeLib.nodeLibStrings.origin,
+    listener: js.Function1[/* origins */ js.Array[java.lang.String], scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
   def once_stream(
     event: nodeLib.nodeLibStrings.stream,
     listener: js.Function3[
@@ -136,6 +154,11 @@ trait ClientHttp2Session extends Http2Session {
     ]
   ): this.type = js.native
   @JSName("prependListener")
+  def prependListener_origin(
+    event: nodeLib.nodeLibStrings.origin,
+    listener: js.Function1[/* origins */ js.Array[java.lang.String], scala.Unit]
+  ): this.type = js.native
+  @JSName("prependListener")
   def prependListener_stream(
     event: nodeLib.nodeLibStrings.stream,
     listener: js.Function3[
@@ -163,6 +186,11 @@ trait ClientHttp2Session extends Http2Session {
       /* socket */ nodeLib.netMod.Socket | nodeLib.tlsMod.TLSSocket, 
       scala.Unit
     ]
+  ): this.type = js.native
+  @JSName("prependOnceListener")
+  def prependOnceListener_origin(
+    event: nodeLib.nodeLibStrings.origin,
+    listener: js.Function1[/* origins */ js.Array[java.lang.String], scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_stream(

@@ -209,6 +209,20 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     * @param type A string representing the tag name.
     */
   @JSName("append")
+  def append_bdi(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.bdi): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends a new element of this type (tag name) as the last child of each selected element,
+    * or before the next following sibling in the update selection if this is an enter selection.
+    * The latter behavior for enter selections allows you to insert elements into the DOM in an order consistent with the new bound data;
+    * however, note that selection.order may still be required if updating elements change order
+    * (i.e., if the order of new data is inconsistent with old data).
+    *
+    * This method returns a new selection containing the appended elements.
+    * Each new element inherits the data of the current elements, if any.
+    *
+    * @param type A string representing the tag name.
+    */
+  @JSName("append")
   def append_bdo(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.bdo): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   /**
     * Appends a new element of this type (tag name) as the last child of each selected element,
@@ -1441,6 +1455,20 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     * @param type A string representing the tag name.
     */
   @JSName("append")
+  def append_main(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.main): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends a new element of this type (tag name) as the last child of each selected element,
+    * or before the next following sibling in the update selection if this is an enter selection.
+    * The latter behavior for enter selections allows you to insert elements into the DOM in an order consistent with the new bound data;
+    * however, note that selection.order may still be required if updating elements change order
+    * (i.e., if the order of new data is inconsistent with old data).
+    *
+    * This method returns a new selection containing the appended elements.
+    * Each new element inherits the data of the current elements, if any.
+    *
+    * @param type A string representing the tag name.
+    */
+  @JSName("append")
   def append_map(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.map): Selection[stdLib.HTMLMapElement, Datum, PElement, PDatum] = js.native
   /**
     * Appends a new element of this type (tag name) as the last child of each selected element,
@@ -1833,6 +1861,20 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     * @param type A string representing the tag name.
     */
   @JSName("append")
+  def append_rp(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.rp): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends a new element of this type (tag name) as the last child of each selected element,
+    * or before the next following sibling in the update selection if this is an enter selection.
+    * The latter behavior for enter selections allows you to insert elements into the DOM in an order consistent with the new bound data;
+    * however, note that selection.order may still be required if updating elements change order
+    * (i.e., if the order of new data is inconsistent with old data).
+    *
+    * This method returns a new selection containing the appended elements.
+    * Each new element inherits the data of the current elements, if any.
+    *
+    * @param type A string representing the tag name.
+    */
+  @JSName("append")
   def append_rt(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.rt): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   /**
     * Appends a new element of this type (tag name) as the last child of each selected element,
@@ -2030,6 +2072,20 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     */
   @JSName("append")
   def append_sub(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.sub): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends a new element of this type (tag name) as the last child of each selected element,
+    * or before the next following sibling in the update selection if this is an enter selection.
+    * The latter behavior for enter selections allows you to insert elements into the DOM in an order consistent with the new bound data;
+    * however, note that selection.order may still be required if updating elements change order
+    * (i.e., if the order of new data is inconsistent with old data).
+    *
+    * This method returns a new selection containing the appended elements.
+    * Each new element inherits the data of the current elements, if any.
+    *
+    * @param type A string representing the tag name.
+    */
+  @JSName("append")
+  def append_summary(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.summary): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   /**
     * Appends a new element of this type (tag name) as the last child of each selected element,
     * or before the next following sibling in the update selection if this is an enter selection.
@@ -3007,6 +3063,32 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLBaseFontElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_basefont(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.basefont, before: java.lang.String): Selection[stdLib.HTMLBaseFontElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Inserts a new element of the specified type (tag name) before the first element matching the specified
+    * before selector for each selected element. For example, a before selector :first-child will prepend nodes before the first child.
+    * If before is not specified, it defaults to null. (To append elements in an order consistent with bound data, use selection.append.)
+    *
+    * This method returns a new selection containing the appended elements.
+    * Each new element inherits the data of the current elements, if any.
+    *
+    * The generic refers to the type of the child element to be appended.
+    *
+    * @param type A string representing the tag name for the element type to be inserted.
+    * @param before One of:
+    *   * A CSS selector string for the element before which the insertion should occur.
+    *   * A child selector function which is evaluated for each selected element, in order, being passed the current datum (d),
+    *     the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). This function should return the child element
+    *     before which the element should be inserted.
+    */
+  @JSName("insert")
+  def insert_bdi(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.bdi): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("insert")
+  def insert_bdi(
+    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.bdi,
+    before: ValueFn[GElement, Datum, BaseType]
+  ): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("insert")
+  def insert_bdi(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.bdi, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   /**
     * Inserts a new element of the specified type (tag name) before the first element matching the specified
     * before selector for each selected element. For example, a before selector :first-child will prepend nodes before the first child.
@@ -5307,6 +5389,32 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     *     before which the element should be inserted.
     */
   @JSName("insert")
+  def insert_main(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.main): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("insert")
+  def insert_main(
+    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.main,
+    before: ValueFn[GElement, Datum, BaseType]
+  ): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("insert")
+  def insert_main(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.main, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Inserts a new element of the specified type (tag name) before the first element matching the specified
+    * before selector for each selected element. For example, a before selector :first-child will prepend nodes before the first child.
+    * If before is not specified, it defaults to null. (To append elements in an order consistent with bound data, use selection.append.)
+    *
+    * This method returns a new selection containing the appended elements.
+    * Each new element inherits the data of the current elements, if any.
+    *
+    * The generic refers to the type of the child element to be appended.
+    *
+    * @param type A string representing the tag name for the element type to be inserted.
+    * @param before One of:
+    *   * A CSS selector string for the element before which the insertion should occur.
+    *   * A child selector function which is evaluated for each selected element, in order, being passed the current datum (d),
+    *     the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). This function should return the child element
+    *     before which the element should be inserted.
+    */
+  @JSName("insert")
   def insert_map(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.map): Selection[stdLib.HTMLMapElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_map(
@@ -6029,6 +6137,32 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     *     before which the element should be inserted.
     */
   @JSName("insert")
+  def insert_rp(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.rp): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("insert")
+  def insert_rp(
+    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.rp,
+    before: ValueFn[GElement, Datum, BaseType]
+  ): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("insert")
+  def insert_rp(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.rp, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Inserts a new element of the specified type (tag name) before the first element matching the specified
+    * before selector for each selected element. For example, a before selector :first-child will prepend nodes before the first child.
+    * If before is not specified, it defaults to null. (To append elements in an order consistent with bound data, use selection.append.)
+    *
+    * This method returns a new selection containing the appended elements.
+    * Each new element inherits the data of the current elements, if any.
+    *
+    * The generic refers to the type of the child element to be appended.
+    *
+    * @param type A string representing the tag name for the element type to be inserted.
+    * @param before One of:
+    *   * A CSS selector string for the element before which the insertion should occur.
+    *   * A child selector function which is evaluated for each selected element, in order, being passed the current datum (d),
+    *     the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). This function should return the child element
+    *     before which the element should be inserted.
+    */
+  @JSName("insert")
   def insert_rt(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.rt): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_rt(
@@ -6398,6 +6532,32 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   ): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("insert")
   def insert_sub(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.sub, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Inserts a new element of the specified type (tag name) before the first element matching the specified
+    * before selector for each selected element. For example, a before selector :first-child will prepend nodes before the first child.
+    * If before is not specified, it defaults to null. (To append elements in an order consistent with bound data, use selection.append.)
+    *
+    * This method returns a new selection containing the appended elements.
+    * Each new element inherits the data of the current elements, if any.
+    *
+    * The generic refers to the type of the child element to be appended.
+    *
+    * @param type A string representing the tag name for the element type to be inserted.
+    * @param before One of:
+    *   * A CSS selector string for the element before which the insertion should occur.
+    *   * A child selector function which is evaluated for each selected element, in order, being passed the current datum (d),
+    *     the current index (i), and the current group (nodes), with this as the current DOM element (nodes[i]). This function should return the child element
+    *     before which the element should be inserted.
+    */
+  @JSName("insert")
+  def insert_summary(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.summary): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("insert")
+  def insert_summary(
+    `type`: d3DashSelectionLib.d3DashSelectionLibStrings.summary,
+    before: ValueFn[GElement, Datum, BaseType]
+  ): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("insert")
+  def insert_summary(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.summary, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   /**
     * Inserts a new element of the specified type (tag name) before the first element matching the specified
     * before selector for each selected element. For example, a before selector :first-child will prepend nodes before the first child.
@@ -7401,6 +7561,31 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     ],
     exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
   ): Selection[GElement | stdLib.HTMLBaseFontElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_bdi[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.bdi): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_bdi[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.bdi,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_bdi[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.bdi,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   /**
     * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
     * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
@@ -9608,6 +9793,31 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     * The "matching" logic is determined by the key function passed to `selection.data`.
     */
   @JSName("join")
+  def join_main[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.main): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_main[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.main,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_main[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.main,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
   def join_map[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.map): Selection[GElement | stdLib.HTMLMapElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_map[OldDatum](
@@ -10308,6 +10518,31 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     * The "matching" logic is determined by the key function passed to `selection.data`.
     */
   @JSName("join")
+  def join_rp[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.rp): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_rp[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.rp,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_rp[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.rp,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
   def join_rt[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.rt): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   @JSName("join")
   def join_rt[OldDatum](
@@ -10670,6 +10905,31 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("join")
   def join_sub[OldDatum](
     enter: d3DashSelectionLib.d3DashSelectionLibStrings.sub,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_summary[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.summary): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_summary[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.summary,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_summary[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.summary,
     update: js.Function1[
       /* elem */ Selection[GElement, Datum, PElement, PDatum], 
       js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]

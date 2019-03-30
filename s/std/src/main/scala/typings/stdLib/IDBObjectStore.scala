@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** This example shows a variety of different uses of object stores, from updating the data structure with IDBObjectStore.createIndex inside an onupgradeneeded function, to adding a new item to our object store with IDBObjectStore.add. For a full working example, see our To-do Notifications app (view example live.) */
 @js.native
 trait IDBObjectStore extends js.Object {
   /**
@@ -30,7 +31,6 @@ trait IDBObjectStore extends js.Object {
     */
   val transaction: IDBTransaction = js.native
   def add(value: js.Any): IDBRequest[IDBValidKey] = js.native
-  def add(value: js.Any, key: IDBKeyRange): IDBRequest[IDBValidKey] = js.native
   def add(value: js.Any, key: IDBValidKey): IDBRequest[IDBValidKey] = js.native
   /**
     * Deletes all records in store.
@@ -129,7 +129,6 @@ trait IDBObjectStore extends js.Object {
   def openKeyCursor(query: IDBValidKey): IDBRequest[IDBCursor | scala.Null] = js.native
   def openKeyCursor(query: IDBValidKey, direction: IDBCursorDirection): IDBRequest[IDBCursor | scala.Null] = js.native
   def put(value: js.Any): IDBRequest[IDBValidKey] = js.native
-  def put(value: js.Any, key: IDBKeyRange): IDBRequest[IDBValidKey] = js.native
   def put(value: js.Any, key: IDBValidKey): IDBRequest[IDBValidKey] = js.native
 }
 

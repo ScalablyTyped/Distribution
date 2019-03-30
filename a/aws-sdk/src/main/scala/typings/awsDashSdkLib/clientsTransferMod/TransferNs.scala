@@ -16,6 +16,8 @@ object TransferNs extends js.Object {
   }
   
   trait CreateServerRequest extends js.Object {
+    var EndpointDetails: js.UndefOr[EndpointDetails] = js.undefined
+    var EndpointType: js.UndefOr[EndpointType] = js.undefined
     /**
       * An array containing all of the information required to call a customer-supplied authentication API. This parameter is not required when the IdentityProviderType value of server that is created uses the SERVICE_MANAGED authentication method.
       */
@@ -25,7 +27,7 @@ object TransferNs extends js.Object {
       */
     var IdentityProviderType: js.UndefOr[IdentityProviderType] = js.undefined
     /**
-      * A value that allows the service to write your SFTP users’ activity to your Amazon CloudWatch logs for monitoring and auditing purposes.
+      * A value that allows the service to write your SFTP users' activity to your Amazon CloudWatch logs for monitoring and auditing purposes.
       */
     var LoggingRole: js.UndefOr[Role] = js.undefined
     /**
@@ -51,7 +53,7 @@ object TransferNs extends js.Object {
       */
     var Policy: js.UndefOr[Policy] = js.undefined
     /**
-      * The IAM role that controls your user’s access to your Amazon S3 bucket. The policies attached to this role will determine the level of access you want to provide your users when transferring files into and out of your Amazon S3 bucket or buckets. The IAM role should also contain a trust relationship that allows the SFTP server to access your resources when servicing your SFTP user’s transfer requests.
+      * The IAM role that controls your user's access to your Amazon S3 bucket. The policies attached to this role will determine the level of access you want to provide your users when transferring files into and out of your Amazon S3 bucket or buckets. The IAM role should also contain a trust relationship that allows the SFTP server to access your resources when servicing your SFTP user's transfer requests.
       */
     var Role: awsDashSdkLib.clientsTransferMod.TransferNs.Role
     /**
@@ -96,7 +98,7 @@ object TransferNs extends js.Object {
       */
     var ServerId: awsDashSdkLib.clientsTransferMod.TransferNs.ServerId
     /**
-      * A unique identifier used to reference your user’s specific SSH key.
+      * A unique identifier used to reference your user's specific SSH key.
       */
     var SshPublicKeyId: awsDashSdkLib.clientsTransferMod.TransferNs.SshPublicKeyId
     /**
@@ -157,6 +159,8 @@ object TransferNs extends js.Object {
       * Specifies the unique Amazon Resource Name (ARN) for the server to be described.
       */
     var Arn: awsDashSdkLib.clientsTransferMod.TransferNs.Arn
+    var EndpointDetails: js.UndefOr[EndpointDetails] = js.undefined
+    var EndpointType: js.UndefOr[EndpointType] = js.undefined
     /**
       * Specifies information to call a customer-supplied authentication API. This field is not populated when the IdentityProviderType of the server is SERVICE_MANAGED&gt;.
       */
@@ -201,7 +205,7 @@ object TransferNs extends js.Object {
       */
     var Policy: js.UndefOr[Policy] = js.undefined
     /**
-      * This property specifies the IAM role that controls your user’s access to your Amazon S3 bucket. The policies attached to this role will determine the level of access you want to provide your users when transferring files into and out of your Amazon S3 bucket or buckets. The IAM role should also contain a trust relationship that allows the SFTP server to access your resources when servicing your SFTP user’s transfer requests.
+      * This property specifies the IAM role that controls your user's access to your Amazon S3 bucket. The policies attached to this role will determine the level of access you want to provide your users when transferring files into and out of your Amazon S3 bucket or buckets. The IAM role should also contain a trust relationship that allows the SFTP server to access your resources when servicing your SFTP user's transfer requests.
       */
     var Role: js.UndefOr[Role] = js.undefined
     /**
@@ -216,6 +220,10 @@ object TransferNs extends js.Object {
       * This property is the name of the user that was requested to be described. User names are used for authentication purposes. This is the string that will be used by your user when they log in to your SFTP server.
       */
     var UserName: js.UndefOr[UserName] = js.undefined
+  }
+  
+  trait EndpointDetails extends js.Object {
+    var VpcEndpointId: js.UndefOr[VpcEndpointId] = js.undefined
   }
   
   trait IdentityProviderDetails extends js.Object {
@@ -346,6 +354,7 @@ object TransferNs extends js.Object {
       * The unique Amazon Resource Name (ARN) for the server to be listed.
       */
     var Arn: awsDashSdkLib.clientsTransferMod.TransferNs.Arn
+    var EndpointType: js.UndefOr[EndpointType] = js.undefined
     /**
       * The authentication method used to validate a user for the server that was specified. listed. This can include Secure Shell (SSH), user name and password combinations, or your own custom authentication method. Valid values include SERVICE_MANAGED or API_GATEWAY.
       */
@@ -849,6 +858,8 @@ object TransferNs extends js.Object {
   }
   
   trait UpdateServerRequest extends js.Object {
+    var EndpointDetails: js.UndefOr[EndpointDetails] = js.undefined
+    var EndpointType: js.UndefOr[EndpointType] = js.undefined
     /**
       * This response parameter is an array containing all of the information required to call a customer's authentication API method.
       */
@@ -880,7 +891,7 @@ object TransferNs extends js.Object {
       */
     var Policy: js.UndefOr[Policy] = js.undefined
     /**
-      * The IAM role that controls your user’s access to your Amazon S3 bucket. The policies attached to this role will determine the level of access you want to provide your users when transferring files into and out of your Amazon S3 bucket or buckets. The IAM role should also contain a trust relationship that allows the Secure File Transfer Protocol (SFTP) server to access your resources when servicing your SFTP user’s transfer requests.
+      * The IAM role that controls your user's access to your Amazon S3 bucket. The policies attached to this role will determine the level of access you want to provide your users when transferring files into and out of your Amazon S3 bucket or buckets. The IAM role should also contain a trust relationship that allows the Secure File Transfer Protocol (SFTP) server to access your resources when servicing your SFTP user's transfer requests.
       */
     var Role: js.UndefOr[Role] = js.undefined
     /**
@@ -904,6 +915,8 @@ object TransferNs extends js.Object {
     var UserName: awsDashSdkLib.clientsTransferMod.TransferNs.UserName
   }
   
+  trait _EndpointType extends js.Object
+  
   trait _IdentityProviderType extends js.Object
   
   trait _State extends js.Object
@@ -914,6 +927,12 @@ object TransferNs extends js.Object {
   type Arn = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type DateImported = stdLib.Date
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.PUBLIC
+    - awsDashSdkLib.awsDashSdkLibStrings.VPC_ENDPOINT
+    - java.lang.String
+  */
+  type EndpointType = _EndpointType | java.lang.String
   type HomeDirectory = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.SERVICE_MANAGED
@@ -953,6 +972,7 @@ object TransferNs extends js.Object {
   type UserCount = scala.Double
   type UserName = java.lang.String
   type UserPassword = java.lang.String
+  type VpcEndpointId = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.`2018-11-05`
     - awsDashSdkLib.awsDashSdkLibStrings.latest

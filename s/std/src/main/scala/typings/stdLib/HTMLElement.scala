@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** The HTMLElement interface represents any HTML element. Some elements directly implement this interface, others implement it via an interface that inherits it. */
 @js.native
 trait HTMLElement
   extends Element

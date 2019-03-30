@@ -40,6 +40,9 @@ object d3DashSelectionLibStrings {
   sealed trait basefont extends js.Object
   
   @js.native
+  sealed trait bdi extends js.Object
+  
+  @js.native
   sealed trait bdo extends js.Object
   
   @js.native
@@ -307,6 +310,9 @@ object d3DashSelectionLibStrings {
   sealed trait link extends js.Object
   
   @js.native
+  sealed trait main extends js.Object
+  
+  @js.native
   sealed trait map extends js.Object
   
   @js.native
@@ -391,6 +397,9 @@ object d3DashSelectionLibStrings {
   sealed trait rect extends js.Object
   
   @js.native
+  sealed trait rp extends js.Object
+  
+  @js.native
   sealed trait rt extends js.Object
   
   @js.native
@@ -434,6 +443,9 @@ object d3DashSelectionLibStrings {
   
   @js.native
   sealed trait sub extends js.Object
+  
+  @js.native
+  sealed trait summary extends js.Object
   
   @js.native
   sealed trait sup extends js.Object
@@ -535,6 +547,8 @@ object d3DashSelectionLibStrings {
   def base: base = "base".asInstanceOf[base]
   @scala.inline
   def basefont: basefont = "basefont".asInstanceOf[basefont]
+  @scala.inline
+  def bdi: bdi = "bdi".asInstanceOf[bdi]
   @scala.inline
   def bdo: bdo = "bdo".asInstanceOf[bdo]
   @scala.inline
@@ -714,6 +728,8 @@ object d3DashSelectionLibStrings {
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
+  def main: main = "main".asInstanceOf[main]
+  @scala.inline
   def map: map = "map".asInstanceOf[map]
   @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
@@ -770,6 +786,8 @@ object d3DashSelectionLibStrings {
   @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
+  def rp: rp = "rp".asInstanceOf[rp]
+  @scala.inline
   def rt: rt = "rt".asInstanceOf[rt]
   @scala.inline
   def ruby: ruby = "ruby".asInstanceOf[ruby]
@@ -799,6 +817,8 @@ object d3DashSelectionLibStrings {
   def style: style = "style".asInstanceOf[style]
   @scala.inline
   def sub: sub = "sub".asInstanceOf[sub]
+  @scala.inline
+  def summary: summary = "summary".asInstanceOf[summary]
   @scala.inline
   def sup: sup = "sup".asInstanceOf[sup]
   @scala.inline

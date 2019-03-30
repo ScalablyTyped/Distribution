@@ -15,9 +15,9 @@ trait TwitterAuthProvider_Instance extends AuthProvider {
     * Valid parameters include 'lang'.
     * Reserved required OAuth 1.0 parameters such as 'oauth_consumer_key',
     * 'oauth_token', 'oauth_signature', etc are not allowed and will be ignored.
-    * @param {!Object} customOAuthParameters The custom OAuth parameters to pass
+    * @param customOAuthParameters The custom OAuth parameters to pass
     *     in the OAuth request.
-    * @return {!firebase.auth.AuthProvider} The provider instance itself.
+    * @return The provider instance itself.
     */
   def setCustomParameters(customOAuthParameters: js.Object): AuthProvider
 }

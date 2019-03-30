@@ -658,6 +658,9 @@ object nodeLibStrings {
   sealed trait connection extends js.Object
   
   @js.native
+  sealed trait continue extends js.Object
+  
+  @js.native
   sealed trait cygwin
     extends nodeLib.NodeJSNs.Platform
   
@@ -797,6 +800,9 @@ object nodeLibStrings {
   @js.native
   sealed trait openbsd
     extends nodeLib.NodeJSNs.Platform
+  
+  @js.native
+  sealed trait origin extends js.Object
   
   @js.native
   sealed trait pause extends js.Object
@@ -1364,6 +1370,8 @@ object nodeLibStrings {
   @scala.inline
   def connection: connection = "connection".asInstanceOf[connection]
   @scala.inline
+  def continue: continue = "continue".asInstanceOf[continue]
+  @scala.inline
   def cygwin: cygwin = "cygwin".asInstanceOf[cygwin]
   @scala.inline
   def darwin: darwin = "darwin".asInstanceOf[darwin]
@@ -1443,6 +1451,8 @@ object nodeLibStrings {
   def open: open = "open".asInstanceOf[open]
   @scala.inline
   def openbsd: openbsd = "openbsd".asInstanceOf[openbsd]
+  @scala.inline
+  def origin: origin = "origin".asInstanceOf[origin]
   @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
   @scala.inline

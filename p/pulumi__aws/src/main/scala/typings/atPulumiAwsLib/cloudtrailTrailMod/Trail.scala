@@ -77,7 +77,7 @@ class Trail protected ()
     */
   val s3BucketName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * Specifies the S3 key prefix that precedes
+    * Specifies the S3 key prefix that follows
     * the name of the bucket you have designated for log file delivery.
     */
   val s3KeyPrefix: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native

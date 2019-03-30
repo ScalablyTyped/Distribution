@@ -2432,6 +2432,12 @@ object chromeDashAppsLibStrings {
     extends chromeDashAppsLib.WebViewNs.ContextType
   
   @js.native
+  sealed trait selectionchange extends js.Object
+  
+  @js.native
+  sealed trait selectstart extends js.Object
+  
+  @js.native
   sealed trait separator extends js.Object
   
   @js.native
@@ -4299,6 +4305,10 @@ object chromeDashAppsLibStrings {
   def select: select = "select".asInstanceOf[select]
   @scala.inline
   def selection: selection = "selection".asInstanceOf[selection]
+  @scala.inline
+  def selectionchange: selectionchange = "selectionchange".asInstanceOf[selectionchange]
+  @scala.inline
+  def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   @scala.inline
   def separator: separator = "separator".asInstanceOf[separator]
   @scala.inline

@@ -9,7 +9,7 @@ trait seedRandomOptions extends js.Object {
   var entropy: js.UndefOr[scala.Boolean] = js.undefined
   var global: js.UndefOr[scala.Boolean] = js.undefined
   var pass: js.UndefOr[seedrandomCallback] = js.undefined
-  var state: js.UndefOr[seedrandomStateType] = js.undefined
+  var state: js.UndefOr[scala.Boolean | State] = js.undefined
 }
 
 object seedRandomOptions {
@@ -18,7 +18,7 @@ object seedRandomOptions {
     entropy: js.UndefOr[scala.Boolean] = js.undefined,
     global: js.UndefOr[scala.Boolean] = js.undefined,
     pass: seedrandomCallback = null,
-    state: seedrandomStateType = null
+    state: scala.Boolean | State = null
   ): seedRandomOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(entropy)) __obj.updateDynamic("entropy")(entropy)
