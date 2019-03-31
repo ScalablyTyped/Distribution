@@ -1,0 +1,16 @@
+package typings
+package rmcDashTooltipLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+object rmcDashTooltipLibComponents {
+  @scala.inline
+  def Es: reactLib.reactMod.ReactNs.ComponentType[rmcDashTooltipLib.esTooltipMod.ITooltipProps] = js.constructorOf[rmcDashTooltipLib.esMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rmcDashTooltipLib.esTooltipMod.ITooltipProps]]
+  @scala.inline
+  def Lib: reactLib.reactMod.ReactNs.ComponentType[rmcDashTooltipLib.libTooltipMod.ITooltipProps] = js.constructorOf[rmcDashTooltipLib.libMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rmcDashTooltipLib.libTooltipMod.ITooltipProps]]
+  @scala.inline
+  def Tooltip: reactLib.reactMod.ReactNs.ComponentType[rmcDashTooltipLib.esTooltipMod.ITooltipProps] = js.constructorOf[rmcDashTooltipLib.esTooltipMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[rmcDashTooltipLib.esTooltipMod.ITooltipProps]]
+}
+
