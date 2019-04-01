@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("npm-name", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  val default: npmDashNameLib.Anon_Many = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[npmDashNameLib.Anon_DefaultInvalidNameError]
 

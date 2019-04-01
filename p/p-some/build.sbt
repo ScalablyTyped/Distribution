@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-some"
-version := "4.0.0-55aa3f"
+version := "4.0.0-fd513f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "aggregate-error" % "2.2.0-b44f5b",
   "org.scalablytyped" %%% "clean-stack" % "1.3-dt-20180214Z-272cb8",
   "org.scalablytyped" %%% "indent-string" % "3.2-dt-20181210Z-22a521",
-  "org.scalablytyped" %%% "p-cancelable" % "1.1.0-f198d5",
+  "org.scalablytyped" %%% "p-cancelable" % "2.0.0-03d86c",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

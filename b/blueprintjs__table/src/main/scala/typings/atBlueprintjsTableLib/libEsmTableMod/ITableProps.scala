@@ -81,7 +81,7 @@ trait ITableProps
   var enableRowReordering: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * If `false`, disables resizing of rows.
-    * @default false
+    * @default true
     */
   var enableRowResizing: js.UndefOr[scala.Boolean] = js.undefined
   /**

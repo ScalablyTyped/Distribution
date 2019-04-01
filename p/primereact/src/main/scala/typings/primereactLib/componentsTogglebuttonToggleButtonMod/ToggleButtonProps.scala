@@ -19,3 +19,34 @@ trait ToggleButtonProps extends js.Object {
   var tooltipOptions: js.UndefOr[primereactLib.componentsTooltipTooltipOptionsMod.TooltipOptions] = js.undefined
 }
 
+object ToggleButtonProps {
+  @scala.inline
+  def apply(
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    id: java.lang.String = null,
+    offIcon: java.lang.String = null,
+    offLabel: java.lang.String = null,
+    onChange: /* e */ primereactLib.Anon_OriginalEventValueBoolean => scala.Unit = null,
+    onIcon: java.lang.String = null,
+    onLabel: java.lang.String = null,
+    style: js.Object = null,
+    tooltip: js.Any = null,
+    tooltipOptions: primereactLib.componentsTooltipTooltipOptionsMod.TooltipOptions = null
+  ): ToggleButtonProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (offIcon != null) __obj.updateDynamic("offIcon")(offIcon)
+    if (offLabel != null) __obj.updateDynamic("offLabel")(offLabel)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (onIcon != null) __obj.updateDynamic("onIcon")(onIcon)
+    if (onLabel != null) __obj.updateDynamic("onLabel")(onLabel)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
+    __obj.asInstanceOf[ToggleButtonProps]
+  }
+}
+

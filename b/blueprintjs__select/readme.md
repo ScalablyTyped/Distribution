@@ -2,7 +2,17 @@
 /*!
  * Copyright 2018 Palantir Technologies, Inc. All rights reserved.
  *
- * Licensed under the terms of the LICENSE file distributed with this project.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 /**
  * The reserved type of the "Create Item" option in item lists. This is intended
@@ -10,10 +20,7 @@
  * list.
  */
 /**
- * Customize querying of entire `items` array. Return new list of items.
- * This method can reorder, add, or remove items at will.
- * (Supports filter algorithms that operate on the entire set, rather than individual items.)
- *
- * If defined with `itemPredicate`, this prop takes priority and the other will be ignored.
+ * A custom predicate for returning an entirely new `items` array based on the provided query.
+ * See usage sites in `IListItemsProps`.
  */
 ```

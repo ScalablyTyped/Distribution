@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "log-update"
-version := "3.1.0-5b75ef"
+version := "3.1.1-231197"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

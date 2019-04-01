@@ -20,7 +20,7 @@ trait IDatePickerProps
   var clearButtonText: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Props to pass to ReactDayPicker. See API documentation
-    * [here](http://react-day-picker.js.org/docs/api-daypicker.html).
+    * [here](http://react-day-picker.js.org/api/DayPicker).
     *
     * The following props are managed by the component and cannot be configured:
     * `canChangeMonth`, `captionElement`, `fromMonth` (use `minDate`), `month` (use

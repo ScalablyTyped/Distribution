@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "decompress-response"
-version := "4.1.0-dd446a"
+version := "4.2.0-b9d4a5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

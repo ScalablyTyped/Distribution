@@ -19,8 +19,8 @@ trait Anon_Create extends js.Object {
   	 *
   	 * @param stream - The stream to log to.
   	 */
-  def create(stream: nodeLib.streamMod.Writable): logDashUpdateLib.logDashUpdateMod.LogUpdate = js.native
-  def create(stream: nodeLib.streamMod.Writable, options: logDashUpdateLib.logDashUpdateMod.Options): logDashUpdateLib.logDashUpdateMod.LogUpdate = js.native
+  def create(stream: nodeLib.NodeJSNs.WritableStream): logDashUpdateLib.logDashUpdateMod.LogUpdate = js.native
+  def create(stream: nodeLib.NodeJSNs.WritableStream, options: logDashUpdateLib.logDashUpdateMod.Options): logDashUpdateLib.logDashUpdateMod.LogUpdate = js.native
   /**
   	 * Log to `stderr` by overwriting the previous output in the terminal.
   	 *

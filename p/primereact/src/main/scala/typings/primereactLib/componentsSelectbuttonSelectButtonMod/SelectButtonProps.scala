@@ -21,3 +21,38 @@ trait SelectButtonProps extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object SelectButtonProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    dataKey: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    onChange: /* e */ primereactLib.Anon_OriginalEventValue => scala.Unit = null,
+    optionLabel: java.lang.String = null,
+    options: js.Array[_] = null,
+    style: js.Object = null,
+    tabIndex: java.lang.String = null,
+    tooltip: js.Any = null,
+    tooltipOptions: primereactLib.componentsTooltipTooltipOptionsMod.TooltipOptions = null,
+    value: js.Any = null
+  ): SelectButtonProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (optionLabel != null) __obj.updateDynamic("optionLabel")(optionLabel)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SelectButtonProps]
+  }
+}
+

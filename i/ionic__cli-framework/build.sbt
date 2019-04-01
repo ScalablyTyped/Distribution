@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic__cli-framework"
-version := "1.7.0-d7a65d"
+version := "1.7.0-c50cec"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -25,7 +25,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ionic__utils-subprocess" % "0.1.0-c25b64",
   "org.scalablytyped" %%% "ionic__utils-terminal" % "0.0.1-afccfe",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
-  "org.scalablytyped" %%% "log-update" % "3.1.0-5b75ef",
+  "org.scalablytyped" %%% "log-update" % "3.1.1-231197",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-e6c927",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",
   "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",

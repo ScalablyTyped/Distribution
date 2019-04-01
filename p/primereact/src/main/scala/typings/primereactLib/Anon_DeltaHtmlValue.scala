@@ -12,3 +12,17 @@ trait Anon_DeltaHtmlValue extends js.Object {
   var textValue: java.lang.String
 }
 
+object Anon_DeltaHtmlValue {
+  @scala.inline
+  def apply(
+    delta: js.Any,
+    source: java.lang.String,
+    textValue: java.lang.String,
+    htmlValue: java.lang.String = null
+  ): Anon_DeltaHtmlValue = {
+    val __obj = js.Dynamic.literal(delta = delta, source = source, textValue = textValue)
+    if (htmlValue != null) __obj.updateDynamic("htmlValue")(htmlValue)
+    __obj.asInstanceOf[Anon_DeltaHtmlValue]
+  }
+}
+

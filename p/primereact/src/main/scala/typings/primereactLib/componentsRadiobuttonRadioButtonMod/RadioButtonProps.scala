@@ -19,3 +19,33 @@ trait RadioButtonProps extends js.Object {
   def onChange(e: primereactLib.Anon_Checked): scala.Unit
 }
 
+object RadioButtonProps {
+  @scala.inline
+  def apply(
+    onChange: primereactLib.Anon_Checked => scala.Unit,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    inputId: java.lang.String = null,
+    name: java.lang.String = null,
+    style: js.Object = null,
+    tooltip: js.Any = null,
+    tooltipOptions: primereactLib.componentsTooltipTooltipOptionsMod.TooltipOptions = null,
+    value: js.Any = null
+  ): RadioButtonProps = {
+    val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inputId != null) __obj.updateDynamic("inputId")(inputId)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltipOptions != null) __obj.updateDynamic("tooltipOptions")(tooltipOptions)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[RadioButtonProps]
+  }
+}
+

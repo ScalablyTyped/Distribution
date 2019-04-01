@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object filenamifyDashUrlMod extends js.Object {
   def default(input: java.lang.String): java.lang.String = js.native
-  def default(input: java.lang.String, options: filenamifyLib.filenamifyMod.Options): java.lang.String = js.native
+  def default(input: java.lang.String, options: filenamifyLib.filenamifyMod.filenamifyNs.Options): java.lang.String = js.native
 }
 

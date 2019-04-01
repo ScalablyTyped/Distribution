@@ -145,6 +145,10 @@ object ClassesNs extends js.Object {
   val POPOVER_TARGET: java.lang.String = js.native
   val POPOVER_WRAPPER: java.lang.String = js.native
   val PORTAL: java.lang.String = js.native
+  val POSITION_BOTTOM: java.lang.String = js.native
+  val POSITION_LEFT: java.lang.String = js.native
+  val POSITION_RIGHT: java.lang.String = js.native
+  val POSITION_TOP: java.lang.String = js.native
   val PROGRESS_BAR: java.lang.String = js.native
   val PROGRESS_METER: java.lang.String = js.native
   val PROGRESS_NO_ANIMATION: java.lang.String = js.native
@@ -215,5 +219,6 @@ object ClassesNs extends js.Object {
   def iconClass(iconName: java.lang.String): java.lang.String = js.native
   def intentClass(): java.lang.String = js.native
   def intentClass(intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent): java.lang.String = js.native
+  def positionClass(position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position): java.lang.String = js.native
 }
 

@@ -15,3 +15,25 @@ trait StepsProps extends js.Object {
   var style: js.UndefOr[js.Object] = js.undefined
 }
 
+object StepsProps {
+  @scala.inline
+  def apply(
+    model: js.Array[primereactLib.componentsMenuitemMenuItemMod.MenuItem],
+    activeIndex: scala.Int | scala.Double = null,
+    className: java.lang.String = null,
+    id: java.lang.String = null,
+    onSelect: /* e */ primereactLib.Anon_IndexItem => scala.Unit = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.Object = null
+  ): StepsProps = {
+    val __obj = js.Dynamic.literal(model = model)
+    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1(onSelect))
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[StepsProps]
+  }
+}
+

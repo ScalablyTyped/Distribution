@@ -15,6 +15,7 @@ object ^ extends js.Object {
   val Elevation: atBlueprintjsCoreLib.Anon_0 = js.native
   val Intent: atBlueprintjsCoreLib.Anon_DANGER = js.native
   val Position: atBlueprintjsCoreLib.Anon_BOTTOM = js.native
+  def getPositionIgnoreAngles(position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position): atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.left | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.right | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.bottom | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.top = js.native
   def isPositionHorizontal(position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position): scala.Boolean = js.native
   def isPositionVertical(position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position): scala.Boolean = js.native
   def removeNonHTMLProps(props: org.scalablytyped.runtime.StringDictionary[js.Any]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native

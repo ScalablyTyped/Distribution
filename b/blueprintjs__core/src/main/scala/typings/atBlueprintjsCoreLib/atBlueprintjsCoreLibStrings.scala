@@ -67,6 +67,10 @@ object atBlueprintjsCoreLibStrings {
   sealed trait blockquote extends js.Object
   
   @js.native
+  sealed trait blur
+    extends atBlueprintjsCoreLib.libEsmComponentsTagDashInputTagInputMod.TagInputAddMethod
+  
+  @js.native
   sealed trait body extends js.Object
   
   @js.native
@@ -141,6 +145,10 @@ object atBlueprintjsCoreLibStrings {
   
   @js.native
   sealed trait dd extends js.Object
+  
+  @js.native
+  sealed trait default
+    extends atBlueprintjsCoreLib.libEsmComponentsTagDashInputTagInputMod.TagInputAddMethod
   
   @js.native
   sealed trait defs extends js.Object
@@ -458,6 +466,10 @@ object atBlueprintjsCoreLibStrings {
   sealed trait param extends js.Object
   
   @js.native
+  sealed trait paste
+    extends atBlueprintjsCoreLib.libEsmComponentsTagDashInputTagInputMod.TagInputAddMethod
+  
+  @js.native
   sealed trait path extends js.Object
   
   @js.native
@@ -713,6 +725,8 @@ object atBlueprintjsCoreLibStrings {
   @scala.inline
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   @scala.inline
+  def blur: blur = "blur".asInstanceOf[blur]
+  @scala.inline
   def body: body = "body".asInstanceOf[body]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
@@ -754,6 +768,8 @@ object atBlueprintjsCoreLibStrings {
   def datalist: datalist = "datalist".asInstanceOf[datalist]
   @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
+  @scala.inline
+  def default: default = "default".asInstanceOf[default]
   @scala.inline
   def defs: defs = "defs".asInstanceOf[defs]
   @scala.inline
@@ -954,6 +970,8 @@ object atBlueprintjsCoreLibStrings {
   def p: p = "p".asInstanceOf[p]
   @scala.inline
   def param: param = "param".asInstanceOf[param]
+  @scala.inline
+  def paste: paste = "paste".asInstanceOf[paste]
   @scala.inline
   def path: path = "path".asInstanceOf[path]
   @scala.inline

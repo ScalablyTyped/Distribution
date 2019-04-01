@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-jwt"
-version := "3.5.1-36dfff"
+version := "3.5.1-b0bf2c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -22,9 +22,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190131Z-2b27d0",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
   "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
-  "org.scalablytyped" %%% "p-any" % "2.0.0-a4dddf",
-  "org.scalablytyped" %%% "p-cancelable" % "1.1.0-f198d5",
-  "org.scalablytyped" %%% "p-some" % "4.0.0-55aa3f",
+  "org.scalablytyped" %%% "p-any" % "2.0.0-cf42ec",
+  "org.scalablytyped" %%% "p-cancelable" % "2.0.0-03d86c",
+  "org.scalablytyped" %%% "p-some" % "4.0.0-fd513f",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-623d43",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-dd9008",
   "org.scalablytyped" %%% "std" % "3.4-d52857",

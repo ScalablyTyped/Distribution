@@ -21,3 +21,34 @@ trait OrderListProps extends js.Object {
   var value: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object OrderListProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    dragdrop: js.UndefOr[scala.Boolean] = js.undefined,
+    header: js.Any = null,
+    id: java.lang.String = null,
+    itemTemplate: /* item */ js.Any => js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = null,
+    listStyle: js.Object = null,
+    onChange: /* e */ primereactLib.Anon_OriginalEventValue => scala.Unit = null,
+    responsive: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.Object = null,
+    tabIndex: java.lang.String = null,
+    value: js.Array[_] = null
+  ): OrderListProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(dragdrop)) __obj.updateDynamic("dragdrop")(dragdrop)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(js.Any.fromFunction1(itemTemplate))
+    if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle)
+    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[OrderListProps]
+  }
+}
+

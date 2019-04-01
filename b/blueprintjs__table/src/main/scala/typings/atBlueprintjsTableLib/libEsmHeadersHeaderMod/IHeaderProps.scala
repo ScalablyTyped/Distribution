@@ -28,7 +28,7 @@ trait IHeaderProps
   var grid: atBlueprintjsTableLib.libEsmCommonMod.Grid = js.native
   /**
     * Enables/disables the resize interaction.
-    * @default false
+    * @default true
     */
   var isResizable: js.UndefOr[scala.Boolean] = js.native
   /**

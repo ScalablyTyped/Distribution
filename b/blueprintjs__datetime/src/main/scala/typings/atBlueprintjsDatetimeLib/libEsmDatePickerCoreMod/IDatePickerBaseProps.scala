@@ -32,7 +32,7 @@ trait IDatePickerBaseProps extends js.Object {
   /**
     * Collection of functions that determine which modifier classes get applied to which days.
     * Each function should accept a `Date` and return a boolean.
-    * See the [**react-day-picker** documentation](http://react-day-picker.js.org/Modifiers.html) to learn more.
+    * See the [**react-day-picker** documentation](http://react-day-picker.js.org/api/ModifiersUtils) to learn more.
     */
   var modifiers: js.UndefOr[IDatePickerModifiers] = js.undefined
   /**

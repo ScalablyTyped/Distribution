@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gcp-metadata"
-version := "1.0.0-5ec777"
+version := "1.0.0-206d5f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "abort-controller" % "2.0.3-3eaeb3",
   "org.scalablytyped" %%% "event-target-shim" % "5.0.1-4b0f6d",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-ef9ad3",
-  "org.scalablytyped" %%% "gaxios" % "1.8.2-f35ccf",
+  "org.scalablytyped" %%% "gaxios" % "1.8.3-f35ccf",
   "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
   "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-5525e1",
   "org.scalablytyped" %%% "std" % "3.4-d52857")

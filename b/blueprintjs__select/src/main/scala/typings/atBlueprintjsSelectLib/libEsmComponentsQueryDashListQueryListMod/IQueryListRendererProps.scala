@@ -46,6 +46,23 @@ trait IQueryListRendererProps[T]
     */
   def handleKeyUp(event: reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement]): scala.Unit = js.native
   /**
+    * Handler that should be invoked when the user pastes one or more values.
+    *
+    * This callback will use `itemPredicate` with `exactMatch=true` to find a
+    * subset of `items` exactly matching the pasted `values` provided, then it
+    * will invoke `onItemsPaste` with those found items. Each pasted value that
+    * does not exactly match an item will be ignored.
+    *
+    * If creating items is enabled (by providing both `createNewItemFromQuery`
+    * and `createNewItemRenderer`), then pasted values that do not exactly
+    * match an existing item will emit a new item as created via
+    * `createNewItemFromQuery`.
+    *
+    * If `itemPredicate` returns multiple matching items for a particular query
+    * in `queries`, then only the first matching item will be emitted.
+    */
+  def handlePaste(queries: js.Array[java.lang.String]): scala.Unit = js.native
+  /**
     * Change handler for query string. Attach this to an input element to allow
     * `QueryList` to control the query.
     */

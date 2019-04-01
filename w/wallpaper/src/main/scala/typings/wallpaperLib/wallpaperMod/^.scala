@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("wallpaper", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  val default: wallpaperLib.Anon_Get = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[wallpaperLib.Anon_DefaultGet]
 

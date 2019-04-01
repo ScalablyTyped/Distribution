@@ -29,6 +29,12 @@ trait IDrawerProps
     */
   var isOpen: scala.Boolean
   /**
+    * Position of a drawer. All angled positions will be casted into pure positions
+    * (TOP, BOTTOM, LEFT or RIGHT).
+    * @default Position.RIGHT
+    */
+  var position: js.UndefOr[atBlueprintjsCoreLib.libEsmCommonPositionMod.Position] = js.undefined
+  /**
     * CSS size of the drawer. This sets `width` if `vertical={false}` (default)
     * and `height` otherwise.
     *
@@ -57,7 +63,9 @@ trait IDrawerProps
   var transitionName: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Whether the drawer should appear with vertical styling.
+    * It will be ignored if `position` prop is set
     * @default false
+    * @deprecated use `position` instead
     */
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -84,6 +92,7 @@ object IDrawerProps {
     onOpening: /* node */ stdLib.HTMLElement => scala.Unit = null,
     portalClassName: java.lang.String = null,
     portalContainer: stdLib.HTMLElement = null,
+    position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position = null,
     size: scala.Double | java.lang.String = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
     title: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -111,6 +120,7 @@ object IDrawerProps {
     if (onOpening != null) __obj.updateDynamic("onOpening")(js.Any.fromFunction1(onOpening))
     if (portalClassName != null) __obj.updateDynamic("portalClassName")(portalClassName)
     if (portalContainer != null) __obj.updateDynamic("portalContainer")(portalContainer)
+    if (position != null) __obj.updateDynamic("position")(position)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)
     if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])

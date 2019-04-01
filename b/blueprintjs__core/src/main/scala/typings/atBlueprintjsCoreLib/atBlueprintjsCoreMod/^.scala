@@ -71,6 +71,7 @@ object ^ extends js.Object {
   ): scala.Boolean = js.native
   def getKeyCombo(e: stdLib.KeyboardEvent): atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo = js.native
   def getKeyComboString(e: stdLib.KeyboardEvent): java.lang.String = js.native
+  def getPositionIgnoreAngles(position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position): atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.left | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.right | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.bottom | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.top = js.native
   def hideHotkeysDialog(): scala.Unit = js.native
   def isPositionHorizontal(position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position): scala.Boolean = js.native
   def isPositionVertical(position: atBlueprintjsCoreLib.libEsmCommonPositionMod.Position): scala.Boolean = js.native

@@ -60,7 +60,11 @@ trait ITagInputProps
     * not be added as a tag.
     */
   var onAdd: js.UndefOr[
-    js.Function1[/* values */ js.Array[java.lang.String], scala.Boolean | scala.Unit]
+    js.Function2[
+      /* values */ js.Array[java.lang.String], 
+      /* method */ TagInputAddMethod, 
+      scala.Boolean | scala.Unit
+    ]
   ] = js.undefined
   /**
     * Callback invoked when new tags are added or removed. Receives the updated list of `values`:
@@ -185,7 +189,7 @@ object ITagInputProps {
     intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
     large: js.UndefOr[scala.Boolean] = js.undefined,
     leftIcon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
-    onAdd: /* values */ js.Array[java.lang.String] => scala.Boolean | scala.Unit = null,
+    onAdd: (/* values */ js.Array[java.lang.String], /* method */ TagInputAddMethod) => scala.Boolean | scala.Unit = null,
     onChange: /* values */ js.Array[reactLib.reactMod.ReactNs.ReactNode] => scala.Boolean | scala.Unit = null,
     onInputChange: reactLib.reactMod.ReactNs.FormEventHandler[stdLib.HTMLInputElement] = null,
     onKeyDown: (/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[stdLib.HTMLElement], /* index */ js.UndefOr[scala.Double]) => scala.Unit = null,
@@ -212,7 +216,7 @@ object ITagInputProps {
     if (intent != null) __obj.updateDynamic("intent")(intent)
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
     if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
-    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1(onAdd))
+    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2(onAdd))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))
     if (onInputChange != null) __obj.updateDynamic("onInputChange")(onInputChange)
     if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction2(onKeyDown))

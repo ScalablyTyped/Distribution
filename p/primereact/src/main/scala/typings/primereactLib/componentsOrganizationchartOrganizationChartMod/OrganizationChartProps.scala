@@ -20,3 +20,32 @@ trait OrganizationChartProps extends js.Object {
   var value: js.UndefOr[js.Array[OrganizationChartNodeData]] = js.undefined
 }
 
+object OrganizationChartProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    id: java.lang.String = null,
+    nodeTemplate: /* node */ OrganizationChartNodeData => reactLib.reactMod.ReactNs.ReactNode = null,
+    onNodeSelect: /* e */ primereactLib.Anon_Node => scala.Unit = null,
+    onNodeUnselect: /* e */ primereactLib.Anon_Node => scala.Unit = null,
+    selection: js.Any = null,
+    selectionChange: /* data */ js.Any => scala.Unit = null,
+    selectionMode: java.lang.String = null,
+    style: js.Object = null,
+    value: js.Array[OrganizationChartNodeData] = null
+  ): OrganizationChartProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (nodeTemplate != null) __obj.updateDynamic("nodeTemplate")(js.Any.fromFunction1(nodeTemplate))
+    if (onNodeSelect != null) __obj.updateDynamic("onNodeSelect")(js.Any.fromFunction1(onNodeSelect))
+    if (onNodeUnselect != null) __obj.updateDynamic("onNodeUnselect")(js.Any.fromFunction1(onNodeUnselect))
+    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (selectionChange != null) __obj.updateDynamic("selectionChange")(js.Any.fromFunction1(selectionChange))
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[OrganizationChartProps]
+  }
+}
+

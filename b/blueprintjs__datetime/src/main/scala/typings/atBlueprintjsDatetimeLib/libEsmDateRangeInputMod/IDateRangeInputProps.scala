@@ -30,7 +30,7 @@ trait IDateRangeInputProps
   var contiguousCalendarMonths: js.UndefOr[scala.Boolean] = js.native
   /**
     * Props to pass to ReactDayPicker. See API documentation
-    * [here](http://react-day-picker.js.org/docs/api-daypicker.html).
+    * [here](http://react-day-picker.js.org/api/DayPicker).
     *
     * The following props are managed by the component and cannot be configured:
     * `canChangeMonth`, `captionElement`, `numberOfMonths`, `fromMonth` (use

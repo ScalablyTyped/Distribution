@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "read-chunk"
-version := "3.1.0-a7b757"
+version := "3.2.0-dd1df8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

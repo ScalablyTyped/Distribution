@@ -21,6 +21,7 @@ class QueryList[T] protected ()
   var handleItemSelect: js.Any = js.native
   var handleKeyDown: js.Any = js.native
   var handleKeyUp: js.Any = js.native
+  var handlePaste: js.Any = js.native
   var handleQueryChange: js.Any = js.native
   var itemsParentRef: js.UndefOr[js.Any] = js.native
   var refHandlers: js.Any = js.native
@@ -35,6 +36,7 @@ class QueryList[T] protected ()
     * manipulating state in a way that may cause active item to scroll away.
     */
   var shouldCheckActiveItemInViewport: js.Any = js.native
+  /* private */ def canCreateItems(): js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MQueryList(prevProps: IQueryListProps[T]): scala.Unit = js.native
   @JSName("componentWillReceiveProps")
