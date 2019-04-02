@@ -22,14 +22,14 @@ trait LayersMixin extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers)
     */
   var layers: Collection[Layer] = js.native
-  def add(layer: arcgisDashJsDashApiLib.IPromise[Layer]): scala.Unit = js.native
-  def add(layer: arcgisDashJsDashApiLib.IPromise[Layer], index: scala.Double): scala.Unit = js.native
+  def add(layer: arcgisDashJsDashApiLib.IPromise[_]): scala.Unit = js.native
+  def add(layer: arcgisDashJsDashApiLib.IPromise[_], index: scala.Double): scala.Unit = js.native
   /**
     * Adds a layer to the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#add)
     *
-    * @param layer Layer or a Promise&lt;Layer&gt; to be added to the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers).
+    * @param layer Layer or a promise that resolves to a layer to add to the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers).
     * @param index A layer can be added at a specified index in the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers). If no index is specified or the index specified is greater than the current number of layers, the layer is automatically appended to the list of layers in the [layers collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-LayersMixin.html#layers) and the index is normalized.
     *
     */

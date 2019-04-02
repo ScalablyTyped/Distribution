@@ -46,6 +46,7 @@ object BasemapGalleryProperties {
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     iconClass: java.lang.String = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     source: LocalBasemapsSourceProperties | PortalBasemapsSourceProperties = null,
     view: MapViewProperties | SceneViewProperties = null,
     viewModel: BasemapGalleryViewModelProperties = null
@@ -56,6 +57,7 @@ object BasemapGalleryProperties {
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)

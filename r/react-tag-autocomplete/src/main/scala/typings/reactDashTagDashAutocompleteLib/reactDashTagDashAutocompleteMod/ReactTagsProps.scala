@@ -46,6 +46,10 @@ trait ReactTagsProps extends js.Object {
     */
   var handleInputChange: js.UndefOr[js.Function1[/* input */ java.lang.String, scala.Unit]] = js.undefined
   /**
+    * Optional validation function that determines if tag should be added to tags. Receives a tag object. Should return a boolean.
+    */
+  var handleValidate: js.UndefOr[js.Function1[/* tag */ Tag, scala.Boolean]] = js.undefined
+  /**
     * An object containing additional attributes that will be applied to the underlying <input /> field.
     */
   var inputAttributes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
@@ -98,6 +102,7 @@ object ReactTagsProps {
     handleBlur: () => scala.Unit = null,
     handleFocus: () => scala.Unit = null,
     handleInputChange: /* input */ java.lang.String => scala.Unit = null,
+    handleValidate: /* tag */ Tag => scala.Boolean = null,
     inputAttributes: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     maxSuggestionsLength: scala.Int | scala.Double = null,
     minQueryLength: scala.Int | scala.Double = null,
@@ -117,6 +122,7 @@ object ReactTagsProps {
     if (handleBlur != null) __obj.updateDynamic("handleBlur")(js.Any.fromFunction0(handleBlur))
     if (handleFocus != null) __obj.updateDynamic("handleFocus")(js.Any.fromFunction0(handleFocus))
     if (handleInputChange != null) __obj.updateDynamic("handleInputChange")(js.Any.fromFunction1(handleInputChange))
+    if (handleValidate != null) __obj.updateDynamic("handleValidate")(js.Any.fromFunction1(handleValidate))
     if (inputAttributes != null) __obj.updateDynamic("inputAttributes")(inputAttributes)
     if (maxSuggestionsLength != null) __obj.updateDynamic("maxSuggestionsLength")(maxSuggestionsLength.asInstanceOf[js.Any])
     if (minQueryLength != null) __obj.updateDynamic("minQueryLength")(minQueryLength.asInstanceOf[js.Any])

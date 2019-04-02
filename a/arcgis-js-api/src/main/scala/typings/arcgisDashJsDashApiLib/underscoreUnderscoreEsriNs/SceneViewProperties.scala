@@ -56,6 +56,9 @@ trait SceneViewProperties
     * // Disable automatic lighting updates by camera tracking
     * view.environment.lighting.cameraTrackingEnabled = true;
     *
+    * // Enable displaying shadows cast by the sun
+    * view.environment.lighting.directShadowsEnabled = true;
+    *
     * // Set a background color
     * var view = new SceneView({
     *   container: "view",

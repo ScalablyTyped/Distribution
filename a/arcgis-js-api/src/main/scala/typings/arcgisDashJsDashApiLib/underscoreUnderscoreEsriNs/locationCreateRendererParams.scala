@@ -35,7 +35,7 @@ trait locationCreateRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-location.html#createRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   /**
     * In authoring apps, the user may select a pre-defined location scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
     *
@@ -70,7 +70,7 @@ object locationCreateRendererParams {
   def apply(
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     basemap: java.lang.String | Basemap = null,
     colorMixMode: java.lang.String = null,

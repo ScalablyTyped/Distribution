@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "bn_dot_js"
-version := "4.11-dt-20190114Z-77904d"
+version := "4.11-dt-20190328Z-634698"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

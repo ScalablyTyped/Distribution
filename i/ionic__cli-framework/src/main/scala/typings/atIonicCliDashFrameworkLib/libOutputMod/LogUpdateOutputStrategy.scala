@@ -12,10 +12,32 @@ class LogUpdateOutputStrategy protected ()
      with RedrawLine {
   def this(hasLogUpdateStreamColors: LogUpdateOutputStrategyOptions) = this()
   val colors: atIonicCliDashFrameworkLib.libColorsMod.Colors = js.native
-  val logUpdate: atIonicCliDashFrameworkLib.Anon_Default = js.native
+  @JSName("logUpdate")
+  val logUpdate_Original: atIonicCliDashFrameworkLib.Anon_LogUpdate with logDashUpdateLib.logDashUpdateMod.logUpdateNs.LogUpdate with logDashUpdateLib.Anon_CreateDefault = js.native
   /* CompleteClass */
   override val stream: nodeLib.NodeJSNs.WritableStream = js.native
   /* CompleteClass */
   override def createTaskChain(): atIonicCliDashFrameworkLib.libTasksMod.TaskChain = js.native
+  /**
+  		Log to `stdout` by overwriting the previous output in the terminal.
+  		@param text - The text to log to `stdout`.
+  		@example
+  		```
+  		import logUpdate = require('log-update');
+  		const frames = ['-', '\\', '|', '/'];
+  		let i = 0;
+  		setInterval(() => {
+  			const frame = frames[i = ++i % frames.length];
+  			logUpdate(
+  		`
+  				♥♥
+  		${frame} unicorns ${frame}
+  				♥♥
+  		`
+  			);
+  		}, 80);
+  		```
+  		*/
+  /* protected */ def logUpdate(text: java.lang.String*): scala.Unit = js.native
 }
 

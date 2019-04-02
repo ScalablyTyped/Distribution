@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object renderersNs {
   type ClassBreaksRenderer = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.ClassBreaksRenderer
+  type DotDensityRenderer = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.DotDensityRenderer
   type HeatmapRenderer = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.HeatmapRenderer
   type SimpleRenderer = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.SimpleRenderer
   type UniqueValueRenderer = arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.UniqueValueRenderer

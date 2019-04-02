@@ -13,8 +13,8 @@ object DateTimeJSOptions {
   @scala.inline
   def apply(
     locale: java.lang.String = null,
-    numberingSystem: java.lang.String = null,
-    outputCalendar: java.lang.String = null,
+    numberingSystem: NumberingSystem = null,
+    outputCalendar: CalendarSystem = null,
     zone: java.lang.String | Zone = null
   ): DateTimeJSOptions = {
     val __obj = js.Dynamic.literal()

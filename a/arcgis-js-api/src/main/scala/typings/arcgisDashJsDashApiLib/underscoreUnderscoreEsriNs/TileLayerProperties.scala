@@ -26,6 +26,14 @@ import scala.scalajs.js.annotation._
     */
   var legendEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Resampling is enabled by default in 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). This means that tile images are resampled at a lower level of detail and displayed at levels where tiles may not be available. Setting this property to `true` disables this behavior. Instead, if a tile is not available, a transparent image is displayed.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#resampling)
+    *
+    * @default true
+    */
+  var resampling: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Contains information about the tiling scheme for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#tileInfo)
@@ -52,12 +60,13 @@ object TileLayerProperties {
     fullExtent: ExtentProperties = null,
     id: java.lang.String = null,
     legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    listMode: java.lang.String = null,
+    listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
     maxScale: scala.Int | scala.Double = null,
     minScale: scala.Int | scala.Double = null,
     opacity: scala.Int | scala.Double = null,
     portalItem: PortalItemProperties = null,
     refreshInterval: scala.Int | scala.Double = null,
+    resampling: js.UndefOr[scala.Boolean] = js.undefined,
     tileInfo: TileInfoProperties = null,
     tileServers: js.Array[java.lang.String] = null,
     title: java.lang.String = null,
@@ -69,12 +78,13 @@ object TileLayerProperties {
     if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
     if (id != null) __obj.updateDynamic("id")(id)
     if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(resampling)) __obj.updateDynamic("resampling")(resampling)
     if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo)
     if (tileServers != null) __obj.updateDynamic("tileServers")(tileServers)
     if (title != null) __obj.updateDynamic("title")(title)

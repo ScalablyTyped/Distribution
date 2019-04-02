@@ -65,13 +65,21 @@ trait FeatureTemplatesViewModel extends Accessor {
     */
   def filterFunction(filterName: js.Any): scala.Boolean = js.native
   /**
-    * Use this method to apply a filter on the items.
+    * This method updates the [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) with the provided filter.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#refresh)
     *
     *
     */
   def refresh(): scala.Unit = js.native
+  /**
+    * Fires when a [template item](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html) is selected.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#select)
+    *
+    *
+    */
+  def select(): scala.Unit = js.native
 }
 
 @JSGlobal("__esri.FeatureTemplatesViewModel")

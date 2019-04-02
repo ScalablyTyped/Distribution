@@ -1411,7 +1411,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves the individual task executions (one per target) for a particular task executed as part of a Maintenance Window execution.
+    * Retrieves the individual task executions (one per target) for a particular task run as part of a Maintenance Window execution.
     */
   def describeMaintenanceWindowExecutionTaskInvocations(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.DescribeMaintenanceWindowExecutionTaskInvocationsResult, 
@@ -1428,7 +1428,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves the individual task executions (one per target) for a particular task executed as part of a Maintenance Window execution.
+    * Retrieves the individual task executions (one per target) for a particular task run as part of a Maintenance Window execution.
     */
   def describeMaintenanceWindowExecutionTaskInvocations(params: awsDashSdkLib.clientsSsmMod.SSMNs.DescribeMaintenanceWindowExecutionTaskInvocationsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.DescribeMaintenanceWindowExecutionTaskInvocationsResult, 
@@ -1446,7 +1446,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * For a given Maintenance Window execution, lists the tasks that were executed.
+    * For a given Maintenance Window execution, lists the tasks that were run.
     */
   def describeMaintenanceWindowExecutionTasks(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.DescribeMaintenanceWindowExecutionTasksResult, 
@@ -1463,7 +1463,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * For a given Maintenance Window execution, lists the tasks that were executed.
+    * For a given Maintenance Window execution, lists the tasks that were run.
     */
   def describeMaintenanceWindowExecutionTasks(params: awsDashSdkLib.clientsSsmMod.SSMNs.DescribeMaintenanceWindowExecutionTasksRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.DescribeMaintenanceWindowExecutionTasksResult, 
@@ -2181,7 +2181,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves details about a specific task executed as part of a Maintenance Window execution.
+    * Retrieves details about a specific task run as part of a Maintenance Window execution.
     */
   def getMaintenanceWindowExecution(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.GetMaintenanceWindowExecutionResult, 
@@ -2198,7 +2198,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves details about a specific task executed as part of a Maintenance Window execution.
+    * Retrieves details about a specific task run as part of a Maintenance Window execution.
     */
   def getMaintenanceWindowExecution(params: awsDashSdkLib.clientsSsmMod.SSMNs.GetMaintenanceWindowExecutionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.GetMaintenanceWindowExecutionResult, 
@@ -2216,7 +2216,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves the details about a specific task executed as part of a Maintenance Window execution.
+    * Retrieves the details about a specific task run as part of a Maintenance Window execution.
     */
   def getMaintenanceWindowExecutionTask(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.GetMaintenanceWindowExecutionTaskResult, 
@@ -2233,7 +2233,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves the details about a specific task executed as part of a Maintenance Window execution.
+    * Retrieves the details about a specific task run as part of a Maintenance Window execution.
     */
   def getMaintenanceWindowExecutionTask(params: awsDashSdkLib.clientsSsmMod.SSMNs.GetMaintenanceWindowExecutionTaskRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.GetMaintenanceWindowExecutionTaskResult, 
@@ -2251,7 +2251,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves a task invocation. A task invocation is a specific task executing on a specific target. Maintenance Windows report status for all invocations. 
+    * Retrieves a task invocation. A task invocation is a specific task running on a specific target. Maintenance Windows report status for all invocations. 
     */
   def getMaintenanceWindowExecutionTaskInvocation(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.GetMaintenanceWindowExecutionTaskInvocationResult, 
@@ -2268,7 +2268,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves a task invocation. A task invocation is a specific task executing on a specific target. Maintenance Windows report status for all invocations. 
+    * Retrieves a task invocation. A task invocation is a specific task running on a specific target. Maintenance Windows report status for all invocations. 
     */
   def getMaintenanceWindowExecutionTaskInvocation(params: awsDashSdkLib.clientsSsmMod.SSMNs.GetMaintenanceWindowExecutionTaskInvocationRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.GetMaintenanceWindowExecutionTaskInvocationResult, 
@@ -2671,7 +2671,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * An invocation is copy of a command sent to a specific instance. A command can apply to one or more instances. A command invocation applies to one instance. For example, if a user executes SendCommand against three instances, then a command invocation is created for each requested instance ID. ListCommandInvocations provide status about command execution.
+    * An invocation is copy of a command sent to a specific instance. A command can apply to one or more instances. A command invocation applies to one instance. For example, if a user runs SendCommand against three instances, then a command invocation is created for each requested instance ID. ListCommandInvocations provide status about command execution.
     */
   def listCommandInvocations(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.ListCommandInvocationsResult, 
@@ -2688,7 +2688,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * An invocation is copy of a command sent to a specific instance. A command can apply to one or more instances. A command invocation applies to one instance. For example, if a user executes SendCommand against three instances, then a command invocation is created for each requested instance ID. ListCommandInvocations provide status about command execution.
+    * An invocation is copy of a command sent to a specific instance. A command can apply to one or more instances. A command invocation applies to one instance. For example, if a user runs SendCommand against three instances, then a command invocation is created for each requested instance ID. ListCommandInvocations provide status about command execution.
     */
   def listCommandInvocations(params: awsDashSdkLib.clientsSsmMod.SSMNs.ListCommandInvocationsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.ListCommandInvocationsResult, 
@@ -3441,7 +3441,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Executes commands on one or more managed instances.
+    * Runs commands on one or more managed instances.
     */
   def sendCommand(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.SendCommandResult, 
@@ -3458,7 +3458,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Executes commands on one or more managed instances.
+    * Runs commands on one or more managed instances.
     */
   def sendCommand(params: awsDashSdkLib.clientsSsmMod.SSMNs.SendCommandRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.SendCommandResult, 
@@ -3476,7 +3476,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Use this API action to execute an association immediately and only one time. This action can be helpful when troubleshooting associations.
+    * Use this API action to run an association immediately and only one time. This action can be helpful when troubleshooting associations.
     */
   def startAssociationsOnce(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.StartAssociationsOnceResult, 
@@ -3493,7 +3493,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Use this API action to execute an association immediately and only one time. This action can be helpful when troubleshooting associations.
+    * Use this API action to run an association immediately and only one time. This action can be helpful when troubleshooting associations.
     */
   def startAssociationsOnce(params: awsDashSdkLib.clientsSsmMod.SSMNs.StartAssociationsOnceRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.StartAssociationsOnceResult, 
@@ -3581,7 +3581,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Stop an Automation that is currently executing.
+    * Stop an Automation that is currently running.
     */
   def stopAutomationExecution(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.StopAutomationExecutionResult, 
@@ -3598,7 +3598,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Stop an Automation that is currently executing.
+    * Stop an Automation that is currently running.
     */
   def stopAutomationExecution(params: awsDashSdkLib.clientsSsmMod.SSMNs.StopAutomationExecutionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.StopAutomationExecutionResult, 
@@ -3651,7 +3651,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Updates an association. You can update the association name and version, the document version, schedule, parameters, and Amazon S3 output.
+    * Updates an association. You can update the association name and version, the document version, schedule, parameters, and Amazon S3 output.  When you update an association, the association immediately runs against the specified targets. 
     */
   def updateAssociation(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.UpdateAssociationResult, 
@@ -3668,7 +3668,7 @@ trait SSM
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Updates an association. You can update the association name and version, the document version, schedule, parameters, and Amazon S3 output.
+    * Updates an association. You can update the association name and version, the document version, schedule, parameters, and Amazon S3 output.  When you update an association, the association immediately runs against the specified targets. 
     */
   def updateAssociation(params: awsDashSdkLib.clientsSsmMod.SSMNs.UpdateAssociationRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSsmMod.SSMNs.UpdateAssociationResult, 

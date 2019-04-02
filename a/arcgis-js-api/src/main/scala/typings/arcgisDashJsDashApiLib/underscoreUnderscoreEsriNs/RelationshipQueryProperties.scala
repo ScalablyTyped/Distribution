@@ -7,12 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait RelationshipQueryProperties extends js.Object {
   /**
-    * The definition expression to be applied to the related table or layer. Only records in the list of [objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#objectIds) that satisfy the definition expression are queried for related records.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#definitionExpression)
-    */
-  var definitionExpression: js.UndefOr[java.lang.String] = js.undefined
-  /**
     * Specify the geodatabase version to query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#gdbVersion)
@@ -68,12 +62,17 @@ trait RelationshipQueryProperties extends js.Object {
     * @default false
     */
   var returnGeometry: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * The definition expression to be applied to the related table or layer. Only records in the list of [objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#objectIds) that satisfy the definition expression are queried for related records.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#where)
+    */
+  var where: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object RelationshipQueryProperties {
   @scala.inline
   def apply(
-    definitionExpression: java.lang.String = null,
     gdbVersion: java.lang.String = null,
     geometryPrecision: scala.Int | scala.Double = null,
     historicMoment: DateProperties = null,
@@ -82,10 +81,10 @@ object RelationshipQueryProperties {
     outFields: js.Array[java.lang.String] = null,
     outSpatialReference: SpatialReferenceProperties = null,
     relationshipId: scala.Int | scala.Double = null,
-    returnGeometry: js.UndefOr[scala.Boolean] = js.undefined
+    returnGeometry: js.UndefOr[scala.Boolean] = js.undefined,
+    where: java.lang.String = null
   ): RelationshipQueryProperties = {
     val __obj = js.Dynamic.literal()
-    if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
     if (gdbVersion != null) __obj.updateDynamic("gdbVersion")(gdbVersion)
     if (geometryPrecision != null) __obj.updateDynamic("geometryPrecision")(geometryPrecision.asInstanceOf[js.Any])
     if (historicMoment != null) __obj.updateDynamic("historicMoment")(historicMoment.asInstanceOf[js.Any])
@@ -95,6 +94,7 @@ object RelationshipQueryProperties {
     if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
     if (relationshipId != null) __obj.updateDynamic("relationshipId")(relationshipId.asInstanceOf[js.Any])
     if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry)
+    if (where != null) __obj.updateDynamic("where")(where)
     __obj.asInstanceOf[RelationshipQueryProperties]
   }
 }

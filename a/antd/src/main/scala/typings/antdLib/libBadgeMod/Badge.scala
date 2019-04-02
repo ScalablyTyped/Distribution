@@ -13,9 +13,8 @@ trait Badge
   def getNumberedDispayCount(): java.lang.String | scala.Double | scala.Null = js.native
   def getScrollNumberTitle(): js.UndefOr[java.lang.String | scala.Double] = js.native
   def getStyleWithOffset(): js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.native
-  def isDot(): js.UndefOr[
-    antdLib.antdLibNumbers.`true` | antdLib.antdLibStrings.default | antdLib.antdLibStrings.error | antdLib.antdLibStrings.success | antdLib.antdLibStrings.warning | antdLib.antdLibStrings.processing
-  ] = js.native
+  def hasStatus(): scala.Boolean = js.native
+  def isDot(): scala.Boolean = js.native
   def isHidden(): scala.Boolean = js.native
   def isZero(): scala.Boolean = js.native
   def renderBadge(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native

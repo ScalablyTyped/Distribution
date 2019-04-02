@@ -47,7 +47,7 @@ trait typeCreateRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#createRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   /**
     * Provides options for setting a title to a field that will override the field alias defined in the service. This title will represent the field in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
@@ -131,7 +131,7 @@ object typeCreateRendererParams {
   def apply(
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     basemap: java.lang.String | Basemap = null,
     colorMixMode: java.lang.String = null,

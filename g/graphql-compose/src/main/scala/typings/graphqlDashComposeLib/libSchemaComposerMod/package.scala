@@ -15,5 +15,5 @@ package object libSchemaComposerMod {
     - graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext]
     - graphqlLib.typeDefinitionMod.GraphQLNamedType
   */
-  type MustHaveTypes[TContext] = _MustHaveTypes[TContext] | (graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[js.Any, TContext]) | (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[js.Any, TContext]) | (graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[js.Any, TContext]) | graphqlLib.typeDefinitionMod.GraphQLNamedType
+  type AnyType[TContext] = _AnyType[TContext] | (graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[js.Any, TContext]) | (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[js.Any, TContext]) | (graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[js.Any, TContext]) | graphqlLib.typeDefinitionMod.GraphQLNamedType
 }

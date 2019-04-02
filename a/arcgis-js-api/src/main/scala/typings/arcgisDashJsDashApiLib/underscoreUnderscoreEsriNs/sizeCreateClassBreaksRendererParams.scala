@@ -50,7 +50,7 @@ trait sizeCreateClassBreaksRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-size.html#createClassBreaksRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   /**
     * Provides options for setting a title to describe a field instead of using the field name. This title will represent the field in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
@@ -171,7 +171,7 @@ object sizeCreateClassBreaksRendererParams {
     constructor: js.Function,
     field: java.lang.String,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     basemap: java.lang.String | Basemap = null,
     classificationMethod: java.lang.String = null,

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 package object underscoreUnderscoreEsriNs {
   type AfterInterceptorCallback = js.Function1[/* response */ RequestResponse, scala.Unit]
-  type BarChartProperties = ChartProperties
   type BaseDynamicLayerLayerviewCreateEventHandler = js.Function1[/* event */ BaseDynamicLayerLayerviewCreateEvent, scala.Unit]
   type BaseDynamicLayerLayerviewDestroyEventHandler = js.Function1[/* event */ BaseDynamicLayerLayerviewDestroyEvent, scala.Unit]
   type BaseElevationLayerLayerviewCreateEventHandler = js.Function1[/* event */ BaseElevationLayerLayerviewCreateEvent, scala.Unit]
@@ -17,19 +16,20 @@ package object underscoreUnderscoreEsriNs {
   type BeforeInterceptorCallback = js.Function1[/* params */ js.Any, js.Any]
   type BingMapsLayerLayerviewCreateEventHandler = js.Function1[/* event */ BingMapsLayerLayerviewCreateEvent, scala.Unit]
   type BingMapsLayerLayerviewDestroyEventHandler = js.Function1[/* event */ BingMapsLayerLayerviewDestroyEvent, scala.Unit]
-  type BuildingGroupSublayerProperties = BuildingSublayerProperties
   type BuildingSceneLayerLayerviewCreateEventHandler = js.Function1[/* event */ BuildingSceneLayerLayerviewCreateEvent, scala.Unit]
   type BuildingSceneLayerLayerviewDestroyEventHandler = js.Function1[/* event */ BuildingSceneLayerLayerviewDestroyEvent, scala.Unit]
   type CSVLayerLayerviewCreateEventHandler = js.Function1[/* event */ CSVLayerLayerviewCreateEvent, scala.Unit]
   type CSVLayerLayerviewDestroyEventHandler = js.Function1[/* event */ CSVLayerLayerviewDestroyEvent, scala.Unit]
   type ClosestFacilityTaskProperties = TaskProperties
+  type CollectionAfterAddEventHandler[T] = js.Function1[/* event */ CollectionAfterEvent[T], scala.Unit]
+  type CollectionAfterChangesEventHandler[T] = js.Function1[/* event */ CollectionAfterChangesEvent[T], scala.Unit]
+  type CollectionAfterRemoveEventHandler[T] = js.Function1[/* event */ CollectionAfterEvent[T], scala.Unit]
+  type CollectionBeforeAddEventHandler[T] = js.Function1[/* event */ CollectionBeforeEvent[T], scala.Unit]
+  type CollectionBeforeChangesEventHandler[T] = js.Function1[/* event */ CollectionBeforeEvent[T], scala.Unit]
+  type CollectionBeforeRemoveEventHandler[T] = js.Function1[/* event */ CollectionBeforeEvent[T], scala.Unit]
+  type CollectionChangeEventHandler[T] = js.Function1[/* event */ CollectionChangeEvent[T], scala.Unit]
   type CollectionProperties[T] = js.Array[T] | Collection[T]
-  type ColumnChartProperties = ChartProperties
   type Constructor[T] = org.scalablytyped.runtime.Instantiable1[/* params (repeated) */ js.Any, T]
-  type ContentElementAttachments = Attachments
-  type ContentElementFields = Fields
-  type ContentElementMedia = Media
-  type ContentElementText = Text
   type CredentialDestroyEventHandler = js.Function1[/* event */ CredentialDestroyEvent, scala.Unit]
   type CredentialTokenChangeEventHandler = js.Function1[/* event */ CredentialTokenChangeEvent, scala.Unit]
   type DateProperties = scala.Double | java.lang.String | stdLib.Date
@@ -38,14 +38,14 @@ package object underscoreUnderscoreEsriNs {
   type ElevationLayerLayerviewDestroyEventHandler = js.Function1[/* event */ ElevationLayerLayerviewDestroyEvent, scala.Unit]
   type ElevationSamplerChangedEventHandler = js.Function1[/* event */ ElevationSamplerChangedEvent, scala.Unit]
   type EventAttachedCallback = js.Function4[
-    /* target */ js.Any, 
-    /* propName */ java.lang.String, 
-    /* obj */ Accessor, 
-    /* eventName */ java.lang.String, 
+    /* target */ js.UndefOr[js.Any], 
+    /* propName */ js.UndefOr[java.lang.String], 
+    /* obj */ js.UndefOr[Accessor], 
+    /* eventName */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
   type EventHandler = js.Function1[/* event */ js.Any, scala.Unit]
-  type Executor = js.Function0[scala.Unit]
+  type Executor = js.Function2[/* resolve */ ResolveCallback, /* reject */ RejectCallback, scala.Unit]
   type FeatureLayerLayerviewCreateEventHandler = js.Function1[/* event */ FeatureLayerLayerviewCreateEvent, scala.Unit]
   type FeatureLayerLayerviewDestroyEventHandler = js.Function1[/* event */ FeatureLayerLayerviewDestroyEvent, scala.Unit]
   type FilterFunction = js.Function1[/* filterName */ js.Any, scala.Boolean]
@@ -54,8 +54,11 @@ package object underscoreUnderscoreEsriNs {
     /* index */ scala.Double, 
     arcgisDashJsDashApiLib.IPromise[js.Any]
   ]
+  type GeoJSONLayerLayerviewCreateEventHandler = js.Function1[/* event */ GeoJSONLayerLayerviewCreateEvent, scala.Unit]
+  type GeoJSONLayerLayerviewDestroyEventHandler = js.Function1[/* event */ GeoJSONLayerLayerviewDestroyEvent, scala.Unit]
   type GeoRSSLayerLayerviewCreateEventHandler = js.Function1[/* event */ GeoRSSLayerLayerviewCreateEvent, scala.Unit]
   type GeoRSSLayerLayerviewDestroyEventHandler = js.Function1[/* event */ GeoRSSLayerLayerviewDestroyEvent, scala.Unit]
+  type GeoRSSLayerViewProperties = LayerViewProperties
   type GeometryServiceProperties = TaskProperties
   type GetHeader = js.Function1[/* headerName */ java.lang.String, java.lang.String]
   type GoToOverride = js.Function2[/* view */ MapView | SceneView, /* goToParameters */ GoToParameters, scala.Unit]
@@ -87,7 +90,6 @@ package object underscoreUnderscoreEsriNs {
   type KMLLayerLayerviewCreateEventHandler = js.Function1[/* event */ KMLLayerLayerviewCreateEvent, scala.Unit]
   type KMLLayerLayerviewDestroyEventHandler = js.Function1[/* event */ KMLLayerLayerviewDestroyEvent, scala.Unit]
   type KMLLayerViewProperties = LayerViewProperties
-  type LineChartProperties = ChartProperties
   type LineSymbol3DProperties = Symbol3DProperties
   type ListItemCreatedHandler = js.Function1[/* event */ js.Any, scala.Unit]
   type MapImageLayerLayerviewCreateEventHandler = js.Function1[/* event */ MapImageLayerLayerviewCreateEvent, scala.Unit]
@@ -117,18 +119,21 @@ package object underscoreUnderscoreEsriNs {
   type OpenStreetMapLayerLayerviewCreateEventHandler = js.Function1[/* event */ OpenStreetMapLayerLayerviewCreateEvent, scala.Unit]
   type OpenStreetMapLayerLayerviewDestroyEventHandler = js.Function1[/* event */ OpenStreetMapLayerLayerviewDestroyEvent, scala.Unit]
   type OpenStreetMapLayerProperties = WebTileLayerProperties
-  type PhaseCallback = js.Function1[/* event */ PhaseEvent, scala.Unit]
-  type PieChartProperties = ChartProperties
+  type PhaseCallback = js.Function1[/* event */ js.UndefOr[PhaseEvent], scala.Unit]
   type PointCloudLayerLayerviewCreateEventHandler = js.Function1[/* event */ PointCloudLayerLayerviewCreateEvent, scala.Unit]
   type PointCloudLayerLayerviewDestroyEventHandler = js.Function1[/* event */ PointCloudLayerLayerviewDestroyEvent, scala.Unit]
   type PointDrawActionProperties = DrawActionProperties
   type PolygonSymbol3DProperties = Symbol3DProperties
   type PopupViewModelTriggerActionEventHandler = js.Function1[/* event */ PopupViewModelTriggerActionEvent, scala.Unit]
-  type RenderContextCallback = js.Function1[/* context */ RenderContext, scala.Unit]
+  type RejectCallback = js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]
+  type RenderContextCallback = js.Function1[/* context */ js.UndefOr[RenderContext], scala.Unit]
+  type ResolveCallback = js.Function1[
+    /* value */ js.UndefOr[js.Any | arcgisDashJsDashApiLib.IPromise[js.Any]], 
+    scala.Unit
+  ]
   type RouteTaskProperties = TaskProperties
   type SceneLayerLayerviewCreateEventHandler = js.Function1[/* event */ SceneLayerLayerviewCreateEvent, scala.Unit]
   type SceneLayerLayerviewDestroyEventHandler = js.Function1[/* event */ SceneLayerLayerviewDestroyEvent, scala.Unit]
-  type SceneLayerViewProperties = LayerViewProperties
   type SceneViewBlurEventHandler = js.Function1[/* event */ SceneViewBlurEvent, scala.Unit]
   type SceneViewClickEventHandler = js.Function1[/* event */ SceneViewClickEvent, scala.Unit]
   type SceneViewDoubleClickEventHandler = js.Function1[/* event */ SceneViewDoubleClickEvent, scala.Unit]
@@ -181,6 +186,10 @@ package object underscoreUnderscoreEsriNs {
   ]
   type WebTileLayerLayerviewCreateEventHandler = js.Function1[/* event */ WebTileLayerLayerviewCreateEvent, scala.Unit]
   type WebTileLayerLayerviewDestroyEventHandler = js.Function1[/* event */ WebTileLayerLayerviewDestroyEvent, scala.Unit]
+  type contentAttachmentsContent = AttachmentsContent
+  type contentFieldsContent = FieldsContent
+  type contentMediaContent = MediaContent
+  type contentTextContent = TextContent
   type geometryExtent = Extent
   type geometryMesh = Mesh
   type geometryMultipoint = Multipoint
@@ -192,6 +201,7 @@ package object underscoreUnderscoreEsriNs {
   type pointCloudRenderersPointCloudStretchRenderer = PointCloudStretchRenderer
   type pointCloudRenderersPointCloudUniqueValueRenderer = PointCloudUniqueValueRenderer
   type renderersClassBreaksRenderer = ClassBreaksRenderer
+  type renderersDotDensityRenderer = DotDensityRenderer
   type renderersHeatmapRenderer = HeatmapRenderer
   type renderersSimpleRenderer = SimpleRenderer
   type renderersUniqueValueRenderer = UniqueValueRenderer

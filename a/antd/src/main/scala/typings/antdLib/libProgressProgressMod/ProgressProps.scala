@@ -25,7 +25,7 @@ trait ProgressProps extends js.Object {
   var status: /* import warning: ImportType.apply Failed type conversion: ['normal', 'exception', 'active', 'success'][number] */ js.UndefOr[
     /* import warning: ImportType.apply Failed type conversion: ['normal', 'exception', 'active', 'success'][number] */ js.Any
   ] = js.undefined
-  var strokeColor: js.UndefOr[java.lang.String] = js.undefined
+  var strokeColor: js.UndefOr[java.lang.String | ProgressGradient] = js.undefined
   var strokeLinecap: js.UndefOr[java.lang.String] = js.undefined
   var strokeWidth: js.UndefOr[scala.Double] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
@@ -47,7 +47,7 @@ object ProgressProps {
     showInfo: js.UndefOr[scala.Boolean] = js.undefined,
     size: ProgressSize = null,
     status: /* import warning: ImportType.apply Failed type conversion: ['normal', 'exception', 'active', 'success'][number] */ js.Any = null,
-    strokeColor: java.lang.String = null,
+    strokeColor: java.lang.String | ProgressGradient = null,
     strokeLinecap: java.lang.String = null,
     strokeWidth: scala.Int | scala.Double = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -66,7 +66,7 @@ object ProgressProps {
     if (!js.isUndefined(showInfo)) __obj.updateDynamic("showInfo")(showInfo)
     if (size != null) __obj.updateDynamic("size")(size)
     if (status != null) __obj.updateDynamic("status")(status)
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap)
     if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)

@@ -64,7 +64,7 @@ trait SearchSource extends JSONSupport {
   var popupEnabled: scala.Boolean
   /**
     * The popup template used to display search results. If no popup is needed, set the source's popupTemplate to `null`.
-    * > This property should be set in instances where there is no existing [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) configured. For example, [feature sources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-FeatureLayerSearchSource.html) will default to any existing [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupTemplate) configured on the layer.
+    * > This property should be set in instances where there is no existing [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) configured. For example, [feature sources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html) will default to any existing [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupTemplate) configured on the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#popupTemplate)
     */
@@ -115,6 +115,24 @@ trait SearchSource extends JSONSupport {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#zoomScale)
     */
   var zoomScale: scala.Double
+  /**
+    * Method to provide parameters for a given search source.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getResults)
+    *
+    * @param resultsParams An object that is passed as a parameter to get search results.
+    *
+    */
+  def getResults(resultsParams: GetResultsParameters): arcgisDashJsDashApiLib.IPromise[js.Array[SearchResult]]
+  /**
+    * Method to provide parameters for search suggestions.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getSuggestions)
+    *
+    * @param suggestionsParams An object that is passed as a parameter for search suggestions.
+    *
+    */
+  def getSuggestions(suggestionsParams: GetSuggestionsParameters): arcgisDashJsDashApiLib.IPromise[js.Array[SuggestResult]]
 }
 
 @JSGlobal("__esri.SearchSource")
@@ -187,7 +205,7 @@ class SearchSourceCls () extends SearchSource {
   override var popupEnabled: scala.Boolean = js.native
   /**
     * The popup template used to display search results. If no popup is needed, set the source's popupTemplate to `null`.
-    * > This property should be set in instances where there is no existing [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) configured. For example, [feature sources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-FeatureLayerSearchSource.html) will default to any existing [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupTemplate) configured on the layer.
+    * > This property should be set in instances where there is no existing [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) configured. For example, [feature sources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html) will default to any existing [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupTemplate) configured on the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#popupTemplate)
     */
@@ -247,6 +265,26 @@ class SearchSourceCls () extends SearchSource {
   /* CompleteClass */
   override var zoomScale: scala.Double = js.native
   /**
+    * Method to provide parameters for a given search source.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getResults)
+    *
+    * @param resultsParams An object that is passed as a parameter to get search results.
+    *
+    */
+  /* CompleteClass */
+  override def getResults(resultsParams: GetResultsParameters): arcgisDashJsDashApiLib.IPromise[js.Array[SearchResult]] = js.native
+  /**
+    * Method to provide parameters for search suggestions.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#getSuggestions)
+    *
+    * @param suggestionsParams An object that is passed as a parameter for search suggestions.
+    *
+    */
+  /* CompleteClass */
+  override def getSuggestions(suggestionsParams: GetSuggestionsParameters): arcgisDashJsDashApiLib.IPromise[js.Array[SuggestResult]] = js.native
+  /**
     * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
@@ -262,6 +300,8 @@ object SearchSource {
   def apply(
     autoNavigate: scala.Boolean,
     filter: SearchSourceFilter,
+    getResults: GetResultsParameters => arcgisDashJsDashApiLib.IPromise[js.Array[SearchResult]],
+    getSuggestions: GetSuggestionsParameters => arcgisDashJsDashApiLib.IPromise[js.Array[SuggestResult]],
     maxResults: scala.Double,
     maxSuggestions: scala.Double,
     minSuggestCharacters: scala.Double,
@@ -278,7 +318,7 @@ object SearchSource {
     withinViewEnabled: scala.Boolean,
     zoomScale: scala.Double
   ): SearchSource = {
-    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, filter = filter, maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, suffix = suffix, suggestionsEnabled = suggestionsEnabled, toJSON = js.Any.fromFunction0(toJSON), withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
+    val __obj = js.Dynamic.literal(autoNavigate = autoNavigate, filter = filter, getResults = js.Any.fromFunction1(getResults), getSuggestions = js.Any.fromFunction1(getSuggestions), maxResults = maxResults, maxSuggestions = maxSuggestions, minSuggestCharacters = minSuggestCharacters, outFields = outFields, placeholder = placeholder, popupEnabled = popupEnabled, popupTemplate = popupTemplate, prefix = prefix, resultGraphicEnabled = resultGraphicEnabled, resultSymbol = resultSymbol, suffix = suffix, suggestionsEnabled = suggestionsEnabled, toJSON = js.Any.fromFunction0(toJSON), withinViewEnabled = withinViewEnabled, zoomScale = zoomScale)
   
     __obj.asInstanceOf[SearchSource]
   }

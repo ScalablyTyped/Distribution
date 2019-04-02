@@ -15,12 +15,21 @@ trait PointCloudReturnFilterProperties extends PointCloudFilterProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudReturnFilter.html#includedReturns)
     */
-  var includedReturns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var includedReturns: js.UndefOr[
+    js.Array[
+      arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.firstOfMany | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.last | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.lastOfMany | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.single
+    ]
+  ] = js.undefined
 }
 
 object PointCloudReturnFilterProperties {
   @scala.inline
-  def apply(field: java.lang.String = null, includedReturns: js.Array[java.lang.String] = null): PointCloudReturnFilterProperties = {
+  def apply(
+    field: java.lang.String = null,
+    includedReturns: js.Array[
+      arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.firstOfMany | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.last | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.lastOfMany | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.single
+    ] = null
+  ): PointCloudReturnFilterProperties = {
     val __obj = js.Dynamic.literal()
     if (field != null) __obj.updateDynamic("field")(field)
     if (includedReturns != null) __obj.updateDynamic("includedReturns")(includedReturns)

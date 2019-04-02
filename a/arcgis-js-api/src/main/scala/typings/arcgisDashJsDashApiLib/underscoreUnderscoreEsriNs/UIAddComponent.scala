@@ -20,7 +20,7 @@ trait UIAddComponent
     */
   var index: js.UndefOr[scala.Double] = js.undefined
   /**
-    * The position in the view at which to add the component. If not specified, `manual` is used by default. **Possible Values:** top-left | top-right | bottom-left | bottom-right | manual
+    * The position in the view at which to add the component. If not specified, `manual` is used by default. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#add)
     */

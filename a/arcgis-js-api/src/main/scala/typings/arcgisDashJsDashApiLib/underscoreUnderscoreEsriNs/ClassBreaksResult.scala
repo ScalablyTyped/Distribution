@@ -12,7 +12,7 @@ trait ClassBreaksResult
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#ClassBreaksResult)
     */
-  var classBreaksInfos: js.Array[ClassBreaksResultClassBreaksInfos]
+  var classBreakInfos: js.Array[ClassBreak]
   /**
     * The maximum value of features in the dataset. This will be the upper bound of the highest class break.
     *
@@ -36,7 +36,7 @@ trait ClassBreaksResult
 object ClassBreaksResult {
   @scala.inline
   def apply(
-    classBreaksInfos: js.Array[ClassBreaksResultClassBreaksInfos],
+    classBreakInfos: js.Array[ClassBreak],
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     maxValue: scala.Double,
@@ -44,7 +44,7 @@ object ClassBreaksResult {
     normalizationTotal: scala.Double,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean
   ): ClassBreaksResult = {
-    val __obj = js.Dynamic.literal(classBreaksInfos = classBreaksInfos, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxValue = maxValue, minValue = minValue, normalizationTotal = normalizationTotal, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    val __obj = js.Dynamic.literal(classBreakInfos = classBreakInfos, constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), maxValue = maxValue, minValue = minValue, normalizationTotal = normalizationTotal, propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
   
     __obj.asInstanceOf[ClassBreaksResult]
   }

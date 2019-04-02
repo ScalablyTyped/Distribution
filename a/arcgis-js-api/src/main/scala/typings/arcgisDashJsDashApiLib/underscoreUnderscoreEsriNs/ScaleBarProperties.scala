@@ -40,6 +40,7 @@ object ScaleBarProperties {
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     style: java.lang.String = null,
     unit: java.lang.String = null,
     view: MapViewProperties = null,
@@ -49,6 +50,7 @@ object ScaleBarProperties {
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (style != null) __obj.updateDynamic("style")(style)
     if (unit != null) __obj.updateDynamic("unit")(unit)
     if (view != null) __obj.updateDynamic("view")(view)

@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 trait Layer
   extends Accessor
      with Loadable
-     with Evented {
+     with Evented
+     with IntersectItem {
   /**
     * The full extent of the layer. By default, this is worldwide. This property may be used to set the extent of the view to match a layer's extent so that its features appear to fill the view. See the sample snippet below.
     *
@@ -29,14 +30,14 @@ trait Layer
     * ------|------------
     *  show | The layer is visible in the table of contents.
     *  hide | The layer is hidden in the table of contents.
-    *  hide-children | If the layer is a [GroupLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html), hide the children layers from the table of contents.
+    *  hide-children | If the layer is a [GroupLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html), [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html), [KMLLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html), [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html), [TileLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html) or [WMSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html), hide the children layers from the table of contents.
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
     *
     * @default show
     */
-  var listMode: java.lang.String = js.native
+  var listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = js.native
   /**
     * Indicates whether the layer's resources have loaded. When `true`, all the properties of the object can be accessed.
     *
@@ -73,6 +74,15 @@ trait Layer
     * @default true
     */
   var visible: scala.Boolean = js.native
+  /**
+    * Called by the views, such as [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html), when the layer is added to the [Map.layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#layers) collection and a layer view must be created for it. **This method is used internally and there is no use case for invoking it directly**.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#createLayerView)
+    *
+    * @param view The parent view.
+    *
+    */
+  def createLayerView(view: js.Any): scala.Unit = js.native
   /**
     * Fetches custom attribution data for the layer when it becomes available.
     *

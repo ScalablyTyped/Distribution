@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait LayerListProperties extends WidgetProperties {
   /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#iconClass)
+    */
+  var iconClass: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html). Each list item can be modified according to its modifiable properties. Actions can be added to list items using the [actionsSections](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#actionsSections) property of the ListItem.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html#listItemCreatedFunction)
@@ -39,7 +45,9 @@ object LayerListProperties {
   def apply(
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    iconClass: java.lang.String = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     listItemCreatedFunction: ListItemCreatedHandler = null,
     statusIndicatorsVisible: js.UndefOr[scala.Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null,
@@ -48,7 +56,9 @@ object LayerListProperties {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (listItemCreatedFunction != null) __obj.updateDynamic("listItemCreatedFunction")(listItemCreatedFunction)
     if (!js.isUndefined(statusIndicatorsVisible)) __obj.updateDynamic("statusIndicatorsVisible")(statusIndicatorsVisible)
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])

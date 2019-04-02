@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "airtable"
-version := "0.5-dt-20190325Z-17c61e"
+version := "0.5-dt-20190326Z-17c61e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

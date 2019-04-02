@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait LocaleOptions extends js.Object {
   var locale: js.UndefOr[java.lang.String] = js.undefined
-  var numberingSystem: js.UndefOr[java.lang.String] = js.undefined
-  var outputCalendar: js.UndefOr[java.lang.String] = js.undefined
+  var numberingSystem: js.UndefOr[NumberingSystem] = js.undefined
+  var outputCalendar: js.UndefOr[CalendarSystem] = js.undefined
 }
 
 object LocaleOptions {
   @scala.inline
   def apply(
     locale: java.lang.String = null,
-    numberingSystem: java.lang.String = null,
-    outputCalendar: java.lang.String = null
+    numberingSystem: NumberingSystem = null,
+    outputCalendar: CalendarSystem = null
   ): LocaleOptions = {
     val __obj = js.Dynamic.literal()
     if (locale != null) __obj.updateDynamic("locale")(locale)

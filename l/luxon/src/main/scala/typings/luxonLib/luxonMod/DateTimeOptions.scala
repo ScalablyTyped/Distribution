@@ -14,8 +14,8 @@ object DateTimeOptions {
   @scala.inline
   def apply(
     locale: java.lang.String = null,
-    numberingSystem: java.lang.String = null,
-    outputCalendar: java.lang.String = null,
+    numberingSystem: NumberingSystem = null,
+    outputCalendar: CalendarSystem = null,
     setZone: js.UndefOr[scala.Boolean] = js.undefined,
     zone: java.lang.String | Zone = null
   ): DateTimeOptions = {

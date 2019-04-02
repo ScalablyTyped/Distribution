@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "luxon"
-version := "1.11-dt-20190218Z-038aaa"
+version := "1.12-dt-20190329Z-359908"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

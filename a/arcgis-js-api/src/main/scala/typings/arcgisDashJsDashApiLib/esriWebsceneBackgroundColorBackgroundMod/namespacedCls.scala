@@ -13,8 +13,8 @@ import scala.scalajs.js.annotation._
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-ColorBackground.html)
   */
 class namespacedCls ()
-  extends arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.ColorBackground {
-  def this(properties: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.ColorBackgroundProperties) = this()
+  extends arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.backgroundColorBackground {
+  def this(properties: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.backgroundColorBackgroundProperties) = this()
   /**
     * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
     *

@@ -13,16 +13,16 @@ trait NAMessageProperties extends js.Object {
     */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The network analyst message type.
+    * The network analyst message type.  **Possible Values:** informative | process-definition | process-start | process-stop | warning | error | empty | abort
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-NAMessage.html#type)
     */
-  var `type`: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object NAMessageProperties {
   @scala.inline
-  def apply(description: java.lang.String = null, `type`: js.Any = null): NAMessageProperties = {
+  def apply(description: java.lang.String = null, `type`: java.lang.String = null): NAMessageProperties = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

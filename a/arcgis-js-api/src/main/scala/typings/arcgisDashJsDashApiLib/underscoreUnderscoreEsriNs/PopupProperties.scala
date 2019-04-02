@@ -15,6 +15,19 @@ trait PopupProperties
     */
   var actions: js.UndefOr[CollectionProperties[ActionButton | ActionToggle]] = js.undefined
   /**
+    * Indicates whether [actions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#actions) within the popup should display in a menu item.
+    *
+    * | actionsMenuEnabled = false | actionsMenuEnabled = true |
+    * | -------------------------- | ------------------------- |
+    * | ![actions49](https://developers.arcgis.com/javascript/assets/img/guide/whats-new/410/popup-actions-49.png) | ![actions410](https://developers.arcgis.com/javascript/assets/img/guide/whats-new/410/popup-actions-410.png) |
+    *
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#actionsMenuEnabled)
+    *
+    * @default true
+    */
+  var actionsMenuEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Position of the popup in relation to the selected feature.  **Possible Values:** auto | top-center | top-right | bottom-left | bottom-center | bottom-right | Function
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#alignment)
@@ -60,6 +73,14 @@ trait PopupProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#content)
     */
   var content: js.UndefOr[java.lang.String | stdLib.HTMLElement | WidgetProperties] = js.undefined
+  /**
+    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined. Automatic popup templates are supported for layers that support the `createPopupTemplate` method. (Supported for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html) and [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled)
+    *
+    * @default false
+    */
+  var defaultPopupTemplateEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Indicates whether the placement of the popup is docked to the side of the view.  Docking the popup allows for a better user experience, particularly when opening popups in apps on mobile devices. When a popup is "dockEnabled" it means the popup no longer points to the [selected feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#selectedFeature) or the [location](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#location) assigned to it. Rather it is attached to a side, the top, or the bottom of the view.  See [dockOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions) to override default options related to docking the popup.
     *
@@ -148,6 +169,7 @@ object PopupProperties {
   @scala.inline
   def apply(
     actions: CollectionProperties[ActionButton | ActionToggle] = null,
+    actionsMenuEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     alignment: java.lang.String | js.Function = null,
     autoCloseEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     autoOpenEnabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -155,6 +177,7 @@ object PopupProperties {
     collapsed: js.UndefOr[scala.Boolean] = js.undefined,
     container: java.lang.String | stdLib.HTMLElement = null,
     content: java.lang.String | stdLib.HTMLElement | WidgetProperties = null,
+    defaultPopupTemplateEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     dockEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     dockOptions: PopupDockOptions = null,
@@ -163,6 +186,7 @@ object PopupProperties {
     goToOverride: GoToOverride = null,
     highlightEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     location: PointProperties = null,
     promises: js.Array[arcgisDashJsDashApiLib.IPromise[_]] = null,
     selectedFeatureIndex: scala.Int | scala.Double = null,
@@ -174,6 +198,7 @@ object PopupProperties {
   ): PopupProperties = {
     val __obj = js.Dynamic.literal()
     if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
+    if (!js.isUndefined(actionsMenuEnabled)) __obj.updateDynamic("actionsMenuEnabled")(actionsMenuEnabled)
     if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
     if (!js.isUndefined(autoCloseEnabled)) __obj.updateDynamic("autoCloseEnabled")(autoCloseEnabled)
     if (!js.isUndefined(autoOpenEnabled)) __obj.updateDynamic("autoOpenEnabled")(autoOpenEnabled)
@@ -181,6 +206,7 @@ object PopupProperties {
     if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultPopupTemplateEnabled)) __obj.updateDynamic("defaultPopupTemplateEnabled")(defaultPopupTemplateEnabled)
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (!js.isUndefined(dockEnabled)) __obj.updateDynamic("dockEnabled")(dockEnabled)
     if (dockOptions != null) __obj.updateDynamic("dockOptions")(dockOptions)
@@ -189,6 +215,7 @@ object PopupProperties {
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
     if (!js.isUndefined(highlightEnabled)) __obj.updateDynamic("highlightEnabled")(highlightEnabled)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (location != null) __obj.updateDynamic("location")(location)
     if (promises != null) __obj.updateDynamic("promises")(promises)
     if (selectedFeatureIndex != null) __obj.updateDynamic("selectedFeatureIndex")(selectedFeatureIndex.asInstanceOf[js.Any])

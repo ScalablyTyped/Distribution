@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait TagCloudProps
   extends reactLib.reactMod.ReactNs.Props[scala.Unit] {
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var colorOptions: js.UndefOr[js.Object] = js.undefined
   var disableRandomColor: js.UndefOr[scala.Boolean] = js.undefined
   var maxSize: scala.Double
   var minSize: scala.Double
@@ -25,6 +26,7 @@ object TagCloudProps {
     tags: js.Array[_],
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
+    colorOptions: js.Object = null,
     disableRandomColor: js.UndefOr[scala.Boolean] = js.undefined,
     key: reactLib.reactMod.ReactNs.Key = null,
     onClick: js.Function = null,
@@ -35,6 +37,7 @@ object TagCloudProps {
     val __obj = js.Dynamic.literal(maxSize = maxSize, minSize = minSize, tags = tags)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
+    if (colorOptions != null) __obj.updateDynamic("colorOptions")(colorOptions)
     if (!js.isUndefined(disableRandomColor)) __obj.updateDynamic("disableRandomColor")(disableRandomColor)
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (onClick != null) __obj.updateDynamic("onClick")(onClick)

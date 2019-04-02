@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ClosestFacilityParameters extends Accessor {
+trait ClosestFacilityParameters
+  extends Accessor
+     with JSONSupport {
   /**
     * The list of network attribute names to be accumulated with the analysis, i.e., which attributes should be returned as part of the response.
     *
@@ -42,13 +44,13 @@ trait ClosestFacilityParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#directionsLengthUnits)
     */
-  var directionsLengthUnits: java.lang.String = js.native
+  var directionsLengthUnits: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards = js.native
   /**
     * Defines the amount of direction information returned. The default value is standard.  **Possible Values:** complete | complete-no-events | instructions-only | standard | summary-only
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#directionsOutputType)
     */
-  var directionsOutputType: java.lang.String = js.native
+  var directionsOutputType: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.complete | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`complete-no-events` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`instructions-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.standard | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`summary-only` = js.native
   /**
     * The style to be used when returning directions. The default will be as defined in the network layer. View the REST layer description for your network service to see a list of supported styles.
     *
@@ -65,8 +67,6 @@ trait ClosestFacilityParameters extends Accessor {
     * When `true`, restricted network elements should be considered when finding network locations.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#doNotLocateOnRestrictedElements)
-    *
-    * @default true
     */
   var doNotLocateOnRestrictedElements: scala.Boolean = js.native
   /**
@@ -104,7 +104,7 @@ trait ClosestFacilityParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#outputGeometryPrecisionUnits)
     */
-  var outputGeometryPrecisionUnits: java.lang.String = js.native
+  var outputGeometryPrecisionUnits: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards = js.native
   /**
     * The type of output lines to be generated in the result. The default is defined in the specific routing network layer used in your RouteTask.
     *
@@ -118,7 +118,7 @@ trait ClosestFacilityParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#outputLines)
     */
-  var outputLines: java.lang.String = js.native
+  var outputLines: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.straight | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape-with-measure` = js.native
   /**
     * The set of point barriers loaded as network locations during analysis. Can be an instance of [DataLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html) or [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html). At ArcGIS Server 10.1 an optional `url` property was added. Use this property to specify a REST query request to a Feature, Map or GP Service that returns a JSON feature set. The url property can be specified using [DataFile](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataFile.html). Either the features or url property should be specified.
     *
@@ -142,7 +142,7 @@ trait ClosestFacilityParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#restrictUTurns)
     */
-  var restrictUTurns: java.lang.String = js.native
+  var restrictUTurns: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`allow-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`no-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-and-intersections` = js.native
   /**
     * The list of network attribute names to be used as restrictions with the analysis. The default is as defined in the specific routing network layer used in your RouteTask. Possible values are listed in the Service Directory under Network Dataset > Network Attributes. You can also specify a value of none to indicate that no network attributes should be used as restrictions. If you specify an empty array, it will default to the default of the service. Use `["none"]` to override the service defaults and specify that no restrictions should be used.
     *
@@ -201,8 +201,6 @@ trait ClosestFacilityParameters extends Accessor {
     * When `true`, closest facility routes will be generated and returned in the route property of each [ClosestFacilitySolveResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#returnRoutes)
-    *
-    * @default true
     */
   var returnRoutes: scala.Boolean = js.native
   /**
@@ -216,7 +214,7 @@ trait ClosestFacilityParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#timeOfDayUsage)
     */
-  var timeOfDayUsage: java.lang.String = js.native
+  var timeOfDayUsage: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.start | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.end = js.native
   /**
     * Options for traveling to or from the facility. Default values are defined by the network layer.
     *
@@ -228,13 +226,13 @@ trait ClosestFacilityParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#travelDirection)
     */
-  var travelDirection: java.lang.String = js.native
+  var travelDirection: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`from-facility` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`to-facility` = js.native
   /**
     * Travel modes define how a pedestrian, car, truck or other medium of transportation moves through the street network.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#travelMode)
     */
-  var travelMode: js.Any = js.native
+  var travelMode: java.lang.String = js.native
   /**
     * If `true`, the hierarchy attribute for the network will be used in analysis. The default is defined in the routing network layer used by the [ClosestFacilityTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ClosestFacilityTask.html).
     *
@@ -243,14 +241,6 @@ trait ClosestFacilityParameters extends Accessor {
     * @default false
     */
   var useHierarchy: scala.Boolean = js.native
-  /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#toJSON)
-    *
-    *
-    */
-  def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("__esri.ClosestFacilityParameters")
@@ -262,5 +252,14 @@ trait ClosestFacilityParameters extends Accessor {
   */
 class ClosestFacilityParametersCls () extends ClosestFacilityParameters {
   def this(properties: ClosestFacilityParametersProperties) = this()
+  /**
+    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    *
+    *
+    */
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 

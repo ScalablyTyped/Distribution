@@ -41,13 +41,14 @@ trait DistanceMeasurement2DViewModel extends js.Object {
     */
   val modes: js.Array[java.lang.String]
   /**
-    * The view model's state.  **Possible Values:** disabled | ready | measuring
+    * The view model's state.  **Possible Values:** disabled | ready | measuring | measured
     *
     *    Value    | Description
     * ------------|-------------
     * disabled    | not ready yet
     * ready       | ready for measuring
     * measuring   | measuring has started
+    * measured    | measuring has finished
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#state)
@@ -135,13 +136,14 @@ class DistanceMeasurement2DViewModelCls () extends DistanceMeasurement2DViewMode
   /* CompleteClass */
   override val modes: js.Array[java.lang.String] = js.native
   /**
-    * The view model's state.  **Possible Values:** disabled | ready | measuring
+    * The view model's state.  **Possible Values:** disabled | ready | measuring | measured
     *
     *    Value    | Description
     * ------------|-------------
     * disabled    | not ready yet
     * ready       | ready for measuring
     * measuring   | measuring has started
+    * measured    | measuring has finished
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html#state)

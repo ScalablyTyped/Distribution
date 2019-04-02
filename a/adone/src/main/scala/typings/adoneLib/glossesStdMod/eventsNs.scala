@@ -12,6 +12,8 @@ object eventsNs extends js.Object {
   class EventEmitter ()
     extends nodeLib.eventsMod.EventEmitter
   
+  def once(emitter: nodeLib.eventsMod.internalNs.EventEmitter, event: java.lang.String): js.Promise[_] = js.native
+  def once(emitter: nodeLib.eventsMod.internalNs.EventEmitter, event: js.Symbol): js.Promise[_] = js.native
   /* static members */
   @js.native
   object EventEmitter extends js.Object {

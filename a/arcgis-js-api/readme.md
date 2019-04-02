@@ -1,5 +1,5 @@
 ```
-// Type definitions for ArcGIS API for JavaScript 4.10
+// Type definitions for ArcGIS API for JavaScript 4.11
 // Project: http://js.arcgis.com
 // Definitions by: Esri <https://github.com/Esri>
 //                 Bjorn Svensson <https://github.com/bsvensson>

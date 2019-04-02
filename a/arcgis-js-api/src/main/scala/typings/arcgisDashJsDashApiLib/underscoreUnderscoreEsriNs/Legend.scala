@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Legend extends Widget {
   /**
+    * Collection of [ActiveLayerInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html) objects used by the legend view to display data in the legend. The legend widget watches this property to hide or display the layer's legend when an [ActiveLayerInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html) is removed from or added to this collection.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#activeLayerInfos)
+    */
+  var activeLayerInfos: Collection[ActiveLayerInfo] = js.native
+  /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#iconClass)
     */
-  val iconClass: java.lang.String = js.native
-  /**
-    * The widget's default label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#label)
-    */
-  val label: java.lang.String = js.native
+  var iconClass: java.lang.String = js.native
   /**
     * Specifies a subset of the layers to display in the legend. If this property is not set, all layers in the map will display in the legend. Objects in this array are defined with the properties listed below.
     *
@@ -39,6 +39,12 @@ trait Legend extends Widget {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#view)
     */
   var view: MapView | SceneView = js.native
+  /**
+    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [LegendViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html) class to access all properties and methods on the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#viewModel)
+    */
+  var viewModel: LegendViewModel = js.native
   /**
     * *This method is primarily used by developers when implementing custom widgets.* It must be implemented by subclasses for rendering.
     *

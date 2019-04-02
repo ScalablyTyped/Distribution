@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "diff-match-patch"
-version := "1.0-dt-20190325Z-136ad7"
+version := "1.0-dt-20190326Z-136ad7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

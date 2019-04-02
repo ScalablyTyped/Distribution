@@ -26,11 +26,17 @@ trait MeshCreatePlaneParams
     */
   var material: js.UndefOr[MeshCreatePlaneParamsMaterial] = js.undefined
   /**
-    * A uniform size value or an object containing individual values width and height. The unit of the size values is derived from the spatial reference of the provided location.
+    * A uniform size value or an object containing individual values width and height. The unit of the size values is derived from the spatial reference of the provided location, unless a unit is specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
     */
   var size: js.UndefOr[scala.Double | MeshCreatePlaneParamsSize] = js.undefined
+  /**
+    * The unit of the size (defaults to the unit of the location's spatial reference).  **Possible Values:** millimeters | centimeters | decimeters | meters | kilometers | inches | feet | yards | miles | nautical-miles | us-feet
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createPlane)
+    */
+  var unit: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object MeshCreatePlaneParams {
@@ -42,13 +48,15 @@ object MeshCreatePlaneParams {
     facing: java.lang.String = null,
     geographic: js.UndefOr[scala.Boolean] = js.undefined,
     material: MeshCreatePlaneParamsMaterial = null,
-    size: scala.Double | MeshCreatePlaneParamsSize = null
+    size: scala.Double | MeshCreatePlaneParamsSize = null,
+    unit: java.lang.String = null
   ): MeshCreatePlaneParams = {
     val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (facing != null) __obj.updateDynamic("facing")(facing)
     if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
     if (material != null) __obj.updateDynamic("material")(material)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit)
     __obj.asInstanceOf[MeshCreatePlaneParams]
   }
 }

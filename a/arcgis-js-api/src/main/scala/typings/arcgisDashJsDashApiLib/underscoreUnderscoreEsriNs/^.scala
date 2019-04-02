@@ -11,7 +11,9 @@ object ^ extends js.Object {
   val ActionBase: ActionBaseConstructor = js.native
   val ActionButton: ActionButtonConstructor = js.native
   val ActionToggle: ActionToggleConstructor = js.native
+  val ActiveLayerInfo: ActiveLayerInfoConstructor = js.native
   val AddressCandidate: AddressCandidateConstructor = js.native
+  val AlgorithmicColorRamp: AlgorithmicColorRampConstructor = js.native
   val ApplicationProperties: ApplicationPropertiesConstructor = js.native
   val ArcGISCachedService: ArcGISCachedServiceConstructor = js.native
   val ArcGISImageService: ArcGISImageServiceConstructor = js.native
@@ -23,16 +25,18 @@ object ^ extends js.Object {
   val AreasAndLengthsParameters: AreasAndLengthsParametersConstructor = js.native
   val AttachmentInfo: AttachmentInfoConstructor = js.native
   val AttachmentQuery: AttachmentQueryConstructor = js.native
-  val Attachments: AttachmentsConstructor = js.native
+  val AttachmentsContent: AttachmentsContentConstructor = js.native
+  val AttributeColorInfo: AttributeColorInfoConstructor = js.native
   val Attribution: AttributionConstructor = js.native
   val AttributionViewModel: AttributionViewModelConstructor = js.native
   val AuthoringInfo: AuthoringInfoConstructor = js.native
   val AuthoringInfoVisualVariable: AuthoringInfoVisualVariableConstructor = js.native
   val Background: BackgroundConstructor = js.native
-  val BarChart: BarChartConstructor = js.native
+  val BarChartMediaInfo: BarChartMediaInfoConstructor = js.native
   val BaseDynamicLayer: BaseDynamicLayerConstructor = js.native
   val BaseElevationLayer: BaseElevationLayerConstructor = js.native
-  val BaseLayerView2D: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.BaseLayerView2D = js.native
+  val BaseLayerView2D: BaseLayerView2DConstructor = js.native
+  val BaseLayerViewGL2D: BaseLayerViewGL2DConstructor = js.native
   val BaseTileLayer: BaseTileLayerConstructor = js.native
   val Basemap: BasemapConstructor = js.native
   val BasemapGallery: BasemapGalleryConstructor = js.native
@@ -51,10 +55,11 @@ object ^ extends js.Object {
   val BuildingSceneLayer: BuildingSceneLayerConstructor = js.native
   val BuildingSublayer: BuildingSublayerConstructor = js.native
   val CSVLayer: CSVLayerConstructor = js.native
-  val CSVLayerView: CSVLayerViewConstructor = js.native
   val Callout3D: Callout3DConstructor = js.native
   val Camera: CameraConstructor = js.native
-  val Chart: ChartConstructor = js.native
+  val ChartMediaInfo: ChartMediaInfoConstructor = js.native
+  val ChartMediaInfoValue: ChartMediaInfoValueConstructor = js.native
+  val ChartMediaInfoValueSeries: ChartMediaInfoValueSeriesConstructor = js.native
   val Circle: CircleConstructor = js.native
   val ClassBreaksRenderer: ClassBreaksRendererConstructor = js.native
   val ClosestFacilityParameters: ClosestFacilityParametersConstructor = js.native
@@ -63,15 +68,16 @@ object ^ extends js.Object {
   val CodedValueDomain: CodedValueDomainConstructor = js.native
   val Color: ColorConstructor = js.native
   val ColorBackground: ColorBackgroundConstructor = js.native
+  val ColorRamp: ColorRampConstructor = js.native
   val ColorSlider: ColorSliderConstructor = js.native
   val ColorStop: ColorStopConstructor = js.native
   val ColorVariable: ColorVariableConstructor = js.native
-  val ColumnChart: ColumnChartConstructor = js.native
+  val ColumnChartMediaInfo: ColumnChartMediaInfoConstructor = js.native
   val Compass: CompassConstructor = js.native
   val CompassViewModel: CompassViewModelConstructor = js.native
   val ConfigurationTask: ConfigurationTaskConstructor = js.native
   val Connection: ConnectionConstructor = js.native
-  val ContentElementContentElement: ContentElementContentElementConstructor = js.native
+  val Content: ContentConstructor = js.native
   val Conversion: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.Conversion = js.native
   val CoordinateConversion: CoordinateConversionConstructor = js.native
   val CoordinateConversionViewModel: CoordinateConversionViewModelConstructor = js.native
@@ -91,10 +97,12 @@ object ^ extends js.Object {
   val DistanceMeasurement2DViewModel: DistanceMeasurement2DViewModelConstructor = js.native
   val DistanceParameters: DistanceParametersConstructor = js.native
   val Domain: DomainConstructor = js.native
+  val DotDensityRenderer: DotDensityRendererConstructor = js.native
   val Draw: DrawConstructor = js.native
   val DrawAction: DrawActionConstructor = js.native
-  val DynamicLayer: DynamicLayerConstructor = js.native
   val Edges3D: Edges3DConstructor = js.native
+  val Editor: EditorConstructor = js.native
+  val EditorViewModel: EditorViewModelConstructor = js.native
   val ElevationLayer: ElevationLayerConstructor = js.native
   val ElevationSampler: ElevationSamplerConstructor = js.native
   val Environment: EnvironmentConstructor = js.native
@@ -106,10 +114,11 @@ object ^ extends js.Object {
   val Extent: ExtentConstructor = js.native
   val ExtrudeSymbol3DLayer: ExtrudeSymbol3DLayerConstructor = js.native
   val Feature: FeatureConstructor = js.native
+  val FeatureEffect: FeatureEffectConstructor = js.native
+  val FeatureFilter: FeatureFilterConstructor = js.native
   val FeatureForm: FeatureFormConstructor = js.native
   val FeatureFormViewModel: FeatureFormViewModelConstructor = js.native
   val FeatureLayer: FeatureLayerConstructor = js.native
-  val FeatureLayerSearchSource: FeatureLayerSearchSourceConstructor = js.native
   val FeatureLayerView: FeatureLayerViewConstructor = js.native
   val FeatureSet: FeatureSetConstructor = js.native
   val FeatureTemplate: FeatureTemplateConstructor = js.native
@@ -122,8 +131,7 @@ object ^ extends js.Object {
   val FieldGroupConfig: FieldGroupConfigConstructor = js.native
   val FieldInfo: FieldInfoConstructor = js.native
   val FieldInfoFormat: FieldInfoFormatConstructor = js.native
-  val FieldOrder: FieldOrderConstructor = js.native
-  val Fields: FieldsConstructor = js.native
+  val FieldsContent: FieldsContentConstructor = js.native
   val FillSymbol: FillSymbolConstructor = js.native
   val FillSymbol3DLayer: FillSymbol3DLayerConstructor = js.native
   val FindParameters: FindParametersConstructor = js.native
@@ -137,6 +145,7 @@ object ^ extends js.Object {
   val GamepadInputDevice: GamepadInputDeviceConstructor = js.native
   val GamepadSettings: GamepadSettingsConstructor = js.native
   val GeneralizeParameters: GeneralizeParametersConstructor = js.native
+  val GeoJSONLayer: GeoJSONLayerConstructor = js.native
   val GeoRSSLayer: GeoRSSLayerConstructor = js.native
   val GeographicTransformation: GeographicTransformationConstructor = js.native
   val GeographicTransformationStep: GeographicTransformationStepConstructor = js.native
@@ -147,7 +156,6 @@ object ^ extends js.Object {
   val GoTo: GoToConstructor = js.native
   val Graphic: GraphicConstructor = js.native
   val GraphicsLayer: GraphicsLayerConstructor = js.native
-  val GraphicsLayerView: GraphicsLayerViewConstructor = js.native
   val Ground: GroundConstructor = js.native
   val GroundView: GroundViewConstructor = js.native
   val GroupLayer: GroupLayerConstructor = js.native
@@ -163,13 +171,13 @@ object ^ extends js.Object {
   val IdentifyResult: IdentifyResultConstructor = js.native
   val IdentifyTask: IdentifyTaskConstructor = js.native
   val IdentityManager: IdentityManagerConstructor = js.native
-  val Image: ImageConstructor = js.native
+  val ImageMediaInfo: ImageMediaInfoConstructor = js.native
+  val ImageMediaInfoValue: ImageMediaInfoValueConstructor = js.native
   val ImageMeshColor: ImageMeshColorConstructor = js.native
   val ImageParameters: ImageParametersConstructor = js.native
   val ImageServiceIdentifyParameters: ImageServiceIdentifyParametersConstructor = js.native
   val ImageServiceIdentifyResult: ImageServiceIdentifyResultConstructor = js.native
   val ImageServiceIdentifyTask: ImageServiceIdentifyTaskConstructor = js.native
-  val ImageValue: ImageValueConstructor = js.native
   val ImageryLayer: ImageryLayerConstructor = js.native
   val ImageryLayerView: ImageryLayerViewConstructor = js.native
   val InheritedDomain: InheritedDomainConstructor = js.native
@@ -182,7 +190,6 @@ object ^ extends js.Object {
   val JobInfo: JobInfoConstructor = js.native
   val JobTask: JobTaskConstructor = js.native
   val KMLLayer: KMLLayerConstructor = js.native
-  val KMLLayerView: KMLLayerViewConstructor = js.native
   val KMLSublayer: KMLSublayerConstructor = js.native
   val LOD: LODConstructor = js.native
   val LabelClass: LabelClassConstructor = js.native
@@ -191,14 +198,16 @@ object ^ extends js.Object {
   val LayerList: LayerListConstructor = js.native
   val LayerListViewModel: LayerListViewModelConstructor = js.native
   val LayerOptions: LayerOptionsConstructor = js.native
+  val LayerSearchSource: LayerSearchSourceConstructor = js.native
   val LayerView: LayerViewConstructor = js.native
   val LayersMixin: LayersMixinConstructor = js.native
   val Legend: LegendConstructor = js.native
   val LegendLayer: LegendLayerConstructor = js.native
+  val LegendViewModel: LegendViewModelConstructor = js.native
   val LengthsParameters: LengthsParametersConstructor = js.native
   val Lighting: LightingConstructor = js.native
   val LineCallout3D: LineCallout3DConstructor = js.native
-  val LineChart: LineChartConstructor = js.native
+  val LineChartMediaInfo: LineChartMediaInfoConstructor = js.native
   val LineSymbol: LineSymbolConstructor = js.native
   val LineSymbol3D: LineSymbol3DConstructor = js.native
   val LineSymbol3DLayer: LineSymbol3DLayerConstructor = js.native
@@ -216,13 +225,17 @@ object ^ extends js.Object {
   val MapImageLayer: MapImageLayerConstructor = js.native
   val MapNotesLayer: MapNotesLayerConstructor = js.native
   val MapView: MapViewConstructor = js.native
+  val MapViewBase: MapViewBaseConstructor = js.native
   val MarkerSymbol: MarkerSymbolConstructor = js.native
-  val Media: MediaConstructor = js.native
-  val MediaMedia: MediaMediaConstructor = js.native
+  val MediaContent: MediaContentConstructor = js.native
+  val MediaInfo: MediaInfoConstructor = js.native
   val Mesh: MeshConstructor = js.native
   val MeshComponent: MeshComponentConstructor = js.native
+  val MeshMaterial: MeshMaterialConstructor = js.native
   val MeshSymbol3D: MeshSymbol3DConstructor = js.native
+  val MeshTexture: MeshTextureConstructor = js.native
   val MosaicRule: MosaicRuleConstructor = js.native
+  val MultipartColorRamp: MultipartColorRampConstructor = js.native
   val Multipoint: MultipointConstructor = js.native
   val MultipointDrawAction: MultipointDrawActionConstructor = js.native
   val NAMessage: NAMessageConstructor = js.native
@@ -240,7 +253,7 @@ object ^ extends js.Object {
   val PathSymbol3DLayer: PathSymbol3DLayerConstructor = js.native
   val PictureFillSymbol: PictureFillSymbolConstructor = js.native
   val PictureMarkerSymbol: PictureMarkerSymbolConstructor = js.native
-  val PieChart: PieChartConstructor = js.native
+  val PieChartMediaInfo: PieChartMediaInfoConstructor = js.native
   val PixelBlock: PixelBlockConstructor = js.native
   val Point: PointConstructor = js.native
   val PointCloudClassBreaksRenderer: PointCloudClassBreaksRendererConstructor = js.native
@@ -286,6 +299,7 @@ object ^ extends js.Object {
   val RasterFunction: RasterFunctionConstructor = js.native
   val RefreshableLayer: RefreshableLayerConstructor = js.native
   val RelatedRecordsInfo: RelatedRecordsInfoConstructor = js.native
+  val RelatedRecordsInfoFieldOrder: RelatedRecordsInfoFieldOrderConstructor = js.native
   val RelationParameters: RelationParametersConstructor = js.native
   val Relationship: RelationshipConstructor = js.native
   val RelationshipQuery: RelationshipQueryConstructor = js.native
@@ -299,10 +313,8 @@ object ^ extends js.Object {
   val ScaleBarViewModel: ScaleBarViewModelConstructor = js.native
   val ScaleRangeLayer: ScaleRangeLayerConstructor = js.native
   val SceneLayer: SceneLayerConstructor = js.native
-  val SceneLayerView: SceneLayerViewConstructor = js.native
   val SceneService: SceneServiceConstructor = js.native
   val SceneView: SceneViewConstructor = js.native
-  val ScreenPoint: ScreenPointConstructor = js.native
   val Search: SearchConstructor = js.native
   val SearchLayer: SearchLayerConstructor = js.native
   val SearchLayerField: SearchLayerFieldConstructor = js.native
@@ -310,7 +322,6 @@ object ^ extends js.Object {
   val SearchSource: SearchSourceConstructor = js.native
   val SearchViewModel: SearchViewModelConstructor = js.native
   val SegmentDrawAction: SegmentDrawActionConstructor = js.native
-  val Series: SeriesConstructor = js.native
   val ServerInfo: ServerInfoConstructor = js.native
   val ServiceAreaParameters: ServiceAreaParametersConstructor = js.native
   val ServiceAreaSolveResult: ServiceAreaSolveResultConstructor = js.native
@@ -333,6 +344,7 @@ object ^ extends js.Object {
   val StatisticDefinition: StatisticDefinitionConstructor = js.native
   val StreamLayer: StreamLayerConstructor = js.native
   val StreamLayerView: StreamLayerViewConstructor = js.native
+  val StretchRenderer: StretchRendererConstructor = js.native
   val Sublayer: SublayerConstructor = js.native
   val SublayersOwner: SublayersOwnerConstructor = js.native
   val Symbol3D: Symbol3DConstructor = js.native
@@ -341,12 +353,15 @@ object ^ extends js.Object {
   val TemplateItem: TemplateItemConstructor = js.native
   val TemplateItemGroup: TemplateItemGroupConstructor = js.native
   val TemplateOptions: TemplateOptionsConstructor = js.native
-  val Text: TextConstructor = js.native
+  val TemporalLayer: TemporalLayerConstructor = js.native
+  val TextContent: TextContentConstructor = js.native
   val TextSymbol: TextSymbolConstructor = js.native
   val TextSymbol3DLayer: TextSymbol3DLayerConstructor = js.native
   val TileInfo: TileInfoConstructor = js.native
   val TileLayer: TileLayerConstructor = js.native
   val TileMatrixSet: TileMatrixSetConstructor = js.native
+  val TimeExtent: TimeExtentConstructor = js.native
+  val TimeInfo: TimeInfoConstructor = js.native
   val TokenTask: TokenTaskConstructor = js.native
   val Track: TrackConstructor = js.native
   val TrackViewModel: TrackViewModelConstructor = js.native
@@ -356,7 +371,6 @@ object ^ extends js.Object {
   val UnivariateColorSizeSlider: UnivariateColorSizeSliderConstructor = js.native
   val UnknownLayer: UnknownLayerConstructor = js.native
   val UnsupportedLayer: UnsupportedLayerConstructor = js.native
-  val Value: ValueConstructor = js.native
   val ValueMeshColor: ValueMeshColorConstructor = js.native
   val VectorTileLayer: VectorTileLayerConstructor = js.native
   val View: ViewConstructor = js.native
@@ -377,6 +391,7 @@ object ^ extends js.Object {
   val WebTileLayer: WebTileLayerConstructor = js.native
   val Widget: WidgetConstructor = js.native
   val Widgette: WidgetteConstructor = js.native
+  val Workflow: WorkflowConstructor = js.native
   val WorkflowTask: WorkflowTaskConstructor = js.native
   val Zoom: ZoomConstructor = js.native
   val ZoomViewModel: ZoomViewModelConstructor = js.native
@@ -385,6 +400,7 @@ object ^ extends js.Object {
   val __requestMapped: request = js.native
   val __summaryStatisticsMapped: summaryStatistics = js.native
   val __uniqueValuesMapped: uniqueValues = js.native
+  val backgroundColorBackground: backgroundColorBackgroundConstructor = js.native
   val classBreaks: js.Function1[
     /* params */ classBreaksClassBreaksParams, 
     arcgisDashJsDashApiLib.IPromise[ClassBreaksResult]
@@ -395,9 +411,12 @@ object ^ extends js.Object {
   val corePromise: corePromiseConstructor = js.native
   val decorators: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.decorators = js.native
   val externalRenderers: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.externalRenderers = js.native
+  val fieldUtils: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.fieldUtils = js.native
   val gamepadGamepadSettings: gamepadGamepadSettingsConstructor = js.native
   val geometryEngine: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.geometryEngine = js.native
   val geometryEngineAsync: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.geometryEngineAsync = js.native
+  val heatmap: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.heatmap = js.native
+  val heatmapStatistics: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.heatmapStatistics = js.native
   val histogram: js.Function1[
     /* params */ histogramHistogramParams, 
     arcgisDashJsDashApiLib.IPromise[HistogramResult]
@@ -428,7 +447,9 @@ object ^ extends js.Object {
   val supportDate: supportDateConstructor = js.native
   val supportJsonUtils: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.supportJsonUtils = js.native
   val symbolPreview: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbolPreview = js.native
+  val symbolUtils: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbolUtils = js.native
   val symbologyColor: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbologyColor = js.native
+  val symbologyHeatmap: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbologyHeatmap = js.native
   val symbologyLocation: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbologyLocation = js.native
   val symbologyPredominance: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbologyPredominance = js.native
   val symbologyRelationship: arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.symbologyRelationship = js.native

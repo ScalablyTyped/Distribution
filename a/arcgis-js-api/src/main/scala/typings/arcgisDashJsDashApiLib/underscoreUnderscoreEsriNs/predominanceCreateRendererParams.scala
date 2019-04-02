@@ -61,7 +61,7 @@ trait predominanceCreateRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-predominance.html#createRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   /**
     * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
     *
@@ -125,7 +125,7 @@ object predominanceCreateRendererParams {
     constructor: js.Function,
     fields: js.Array[predominanceCreateRendererParamsFields],
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     view: View,
     basemap: java.lang.String | Basemap = null,

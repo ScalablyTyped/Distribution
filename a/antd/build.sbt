@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "3.15.2-979da8"
+version := "3.16.1-285cad"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ant-design__icons" % "1.2.1-1f3517",
   "org.scalablytyped" %%% "ant-design__icons-react" % "1.1.2-89291a",
   "org.scalablytyped" %%% "array-tree-filter" % "2.1.0-ab2410",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20190325Z-9fc905",
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20190326Z-9fc905",
   "org.scalablytyped" %%% "copy-to-clipboard" % "3.0.8-b2be1d",
   "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-b8207d",
   "org.scalablytyped" %%% "create-react-context" % "0.2.2-12f0fd",
@@ -17,10 +17,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "enquire_dot_js" % "2.1-dt-20190212Z-ff324a",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
   "org.scalablytyped" %%% "moment" % "2.24.0-da0e25",
-  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
   "org.scalablytyped" %%% "raf" % "3.4-dt-20190103Z-2b5ff3",
-  "org.scalablytyped" %%% "rc-calendar" % "9.10.10-c48056",
+  "org.scalablytyped" %%% "rc-calendar" % "9.12.3-8a9faa",
   "org.scalablytyped" %%% "rc-dialog" % "7.3.0-2e604e",
   "org.scalablytyped" %%% "rc-pagination" % "1.17.13-349908",
   "org.scalablytyped" %%% "rc-progress" % "2.2-dt-20190212Z-975691",
@@ -31,7 +31,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rc-tooltip" % "3.7-dt-20190212Z-bc2509",
   "org.scalablytyped" %%% "rc-tree" % "1.11-dt-20190212Z-6c9def",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-3be409",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-348bcf",
   "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-960518",
   "org.scalablytyped" %%% "react-slick" % "0.23-dt-20190126Z-21ad7b",
   "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-d41765",

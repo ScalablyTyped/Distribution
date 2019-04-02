@@ -38,16 +38,20 @@ class InterfaceTypeComposer[TSource, TContext] protected ()
     ]
   ): this.type = js.native
   def extendFieldExtensions(fieldName: java.lang.String, extensions: graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions): this.type = js.native
-  // -----------------------------------------------
-  // Misc methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Misc methods
+    * -----------------------------------------------
+    */
   def get(path: java.lang.String): js.Any = js.native
   def get(path: js.Array[java.lang.String]): js.Any = js.native
   def getDescription(): java.lang.String = js.native
   def getExtension(extensionName: java.lang.String): js.Any = js.native
-  // -----------------------------------------------
-  // Extensions methods
-  // -----------------------------------------------
+  /**
+    *  -----------------------------------------------
+    * Extensions methods
+    * -----------------------------------------------
+    */
   def getExtensions(): graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions = js.native
   def getField(name: java.lang.String): graphqlDashComposeLib.libObjectTypeComposerMod.ComposeFieldConfig[TSource, TContext, graphqlDashComposeLib.libObjectTypeComposerMod.ArgsMap] = js.native
   def getFieldArg(fieldName: java.lang.String, argName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLArgumentConfig = js.native
@@ -57,22 +61,31 @@ class InterfaceTypeComposer[TSource, TContext] protected ()
   def getFieldExtension(fieldName: java.lang.String, extensionName: java.lang.String): js.Any = js.native
   def getFieldExtensions(fieldName: java.lang.String): graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions = js.native
   def getFieldNames(): js.Array[java.lang.String] = js.native
-  def getFieldTC(fieldName: java.lang.String): graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext] = js.native
+  def getFieldTC(fieldName: java.lang.String): (graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[TSource, TContext]) | graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[TContext] | (InterfaceTypeComposer[TSource, TContext]) | (graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[TSource, TContext]) | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext] = js.native
   def getFieldType(fieldName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLOutputType = js.native
   def getFields(): graphqlDashComposeLib.libObjectTypeComposerMod.ComposeFieldConfigMap[TSource, TContext] = js.native
+  /**
+    * An alias for `getInputTypeComposer`
+    */
   def getITC(): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] = js.native
-  // -----------------------------------------------
-  // InputType methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * InputType methods
+    * -----------------------------------------------
+    */
   def getInputType(): graphqlLib.graphqlMod.GraphQLInputObjectType = js.native
   def getInputTypeComposer(): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] = js.native
-  // -----------------------------------------------
-  // ResolveType methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * ResolveType methods
+    * -----------------------------------------------
+    */
   def getResolveType(): (graphqlLib.typeDefinitionMod.GraphQLTypeResolver[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]]) | scala.Null | scala.Unit = js.native
-  // -----------------------------------------------
-  // Type methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Type methods
+    * -----------------------------------------------
+    */
   def getType(): graphqlLib.graphqlMod.GraphQLInterfaceType = js.native
   def getTypeName(): java.lang.String = js.native
   def getTypeNonNull(): graphqlLib.typeDefinitionMod.GraphQLNonNull[graphqlLib.graphqlMod.GraphQLInterfaceType] = js.native
@@ -87,9 +100,11 @@ class InterfaceTypeComposer[TSource, TContext] protected ()
   ] = js.native
   def getTypeResolvers(): InterfaceTypeResolversMap[TContext] = js.native
   def hasExtension(extensionName: java.lang.String): scala.Boolean = js.native
-  // -----------------------------------------------
-  // Field methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Field methods
+    * -----------------------------------------------
+    */
   def hasField(name: java.lang.String): scala.Boolean = js.native
   def hasFieldArg(fieldName: java.lang.String, argName: java.lang.String): scala.Boolean = js.native
   def hasFieldExtension(fieldName: java.lang.String, extensionName: java.lang.String): scala.Boolean = js.native
@@ -139,10 +154,16 @@ class InterfaceTypeComposer[TSource, TContext] protected ()
 @JSImport("graphql-compose/lib/InterfaceTypeComposer", "InterfaceTypeComposer")
 @js.native
 object InterfaceTypeComposer extends js.Object {
+  /**
+    * Create `InterfaceTypeComposer` with adding it by name to the `SchemaComposer`.
+    */
   def create[TSrc, TCtx](
     typeDef: graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposeDefinition[TSrc, TCtx],
     schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TCtx]
   ): graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[TSrc, TCtx] = js.native
+  /**
+    * Create `InterfaceTypeComposer` without adding it to the `SchemaComposer`. This method may be usefull in plugins, when you need to create type temporary.
+    */
   def createTemp[TSrc, TCtx](
     typeDef: graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposeDefinition[TSrc, TCtx]
   ): graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[TSrc, TCtx] = js.native

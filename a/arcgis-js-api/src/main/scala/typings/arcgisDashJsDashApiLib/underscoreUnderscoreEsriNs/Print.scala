@@ -12,13 +12,7 @@ trait Print extends Widget {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#iconClass)
     */
-  val iconClass: java.lang.String = js.native
-  /**
-    * The widget's default label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#label)
-    */
-  val label: java.lang.String = js.native
+  var iconClass: java.lang.String = js.native
   /**
     * The URL of the REST endpoint of the Export Web Map Task.
     *

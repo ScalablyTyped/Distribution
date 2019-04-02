@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ServiceAreaParameters extends Accessor {
+trait ServiceAreaParameters
+  extends Accessor
+     with JSONSupport {
   /**
     * The list of network attribute names to be accumulated with the analysis (i.e. which attributes should be returned as part of the response). The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html). You can specify any attributes names listed in the Service Directory under `Network Dataset > Network Attributes` as `Usage Type: esriNAUTCost`.
     *
@@ -29,8 +31,6 @@ trait ServiceAreaParameters extends Accessor {
     * When `true`, restricted network elements should be considered when finding network locations.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#doNotLocateOnRestrictedElements)
-    *
-    * @default true
     */
   var doNotLocateOnRestrictedElements: scala.Boolean = js.native
   /**
@@ -76,7 +76,7 @@ trait ServiceAreaParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputGeometryPrecisionUnits)
     */
-  var outputGeometryPrecisionUnits: java.lang.String = js.native
+  var outputGeometryPrecisionUnits: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards = js.native
   /**
     * The type of output lines to be generated in the result. The default is defined in the specific routing network layer used in your [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html).
     *
@@ -90,13 +90,13 @@ trait ServiceAreaParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputLines)
     */
-  var outputLines: java.lang.String = js.native
+  var outputLines: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.straight | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape-with-measure` = js.native
   /**
     * The type of output polygons to be generated in the result. The default is as defined in the specific routing network layer used in your [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html).  **Possible Values:** none | simplified | detailed
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputPolygons)
     */
-  var outputPolygons: java.lang.String = js.native
+  var outputPolygons: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.simplified | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.detailed = js.native
   /**
     * Indicates if the lines should overlap from multiple facilities. The default is defined by the network analysis layer in your [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html).
     *
@@ -144,7 +144,7 @@ trait ServiceAreaParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#restrictUTurns)
     */
-  var restrictUTurns: java.lang.String = js.native
+  var restrictUTurns: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`allow-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`no-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-and-intersections` = js.native
   /**
     * The list of network attribute names to be used as restrictions with the analysis. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html). You can specify any attributes names listed in the Service Directory under `Network Dataset > Network Attributes` as `Usage Type: esriNAUTCost`.
     *
@@ -216,13 +216,13 @@ trait ServiceAreaParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#travelDirection)
     */
-  var travelDirection: java.lang.String = js.native
+  var travelDirection: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`from-facility` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`to-facility` = js.native
   /**
     * Travel modes define how a pedestrian, car, truck or other medium of transportation moves through the street network.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#travelMode)
     */
-  var travelMode: js.Any = js.native
+  var travelMode: java.lang.String = js.native
   /**
     * If `true`, the outermost polygon (at the maximum break value) will be trimmed. The default is defined in the network analysis layer in your [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html).
     *
@@ -242,21 +242,13 @@ trait ServiceAreaParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#trimPolygonDistanceUnits)
     */
-  var trimPolygonDistanceUnits: java.lang.String = js.native
+  var trimPolygonDistanceUnits: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards = js.native
   /**
     * When `true`, the hierarchy attributes for the network will be used in the analysis. The default value is defined in the network layer. `useHierarchy` cannot be used in conjunction with [outputLines](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputLines). Requires an ArcGIS Server service version 10.1 or greater.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#useHierarchy)
     */
   var useHierarchy: scala.Boolean = js.native
-  /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#toJSON)
-    *
-    *
-    */
-  def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("__esri.ServiceAreaParameters")
@@ -268,5 +260,14 @@ trait ServiceAreaParameters extends Accessor {
   */
 class ServiceAreaParametersCls () extends ServiceAreaParameters {
   def this(properties: ServiceAreaParametersProperties) = this()
+  /**
+    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    *
+    *
+    */
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 

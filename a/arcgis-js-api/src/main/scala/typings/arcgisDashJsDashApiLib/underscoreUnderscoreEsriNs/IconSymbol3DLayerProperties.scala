@@ -15,6 +15,12 @@ trait IconSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var anchor: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Defines the [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchor) relative to the center of the icon. It is specified as a ratio of the icon's dimensions. For example, a value of `{ x: 0, y: 0 }` designates the center of the icon, while a value of `{ x: -0.5, y: -0.5 }` causes the top-left corner of the icon to coincide with the feature geometry.  This property only applies when [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchor) is set to `relative`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchorPosition)
+    */
+  var anchorPosition: js.UndefOr[IconSymbol3DLayerAnchorPosition] = js.undefined
+  /**
     * The outline of the icon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#outline)
@@ -22,6 +28,7 @@ trait IconSymbol3DLayerProperties extends Symbol3DLayerProperties {
   var outline: js.UndefOr[IconSymbol3DLayerOutlineProperties] = js.undefined
   /**
     * The shape (`primitive`) or image URL (`href`) used to visualize the features. If both properties are present, `href` takes precedence and `primitive` is ignored.
+    * > **Known Limitations**  Using this property to render an SVG path is not supported in IE11.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)
     *
@@ -42,6 +49,7 @@ object IconSymbol3DLayerProperties {
   @scala.inline
   def apply(
     anchor: java.lang.String = null,
+    anchorPosition: IconSymbol3DLayerAnchorPosition = null,
     material: js.Any = null,
     outline: IconSymbol3DLayerOutlineProperties = null,
     resource: IconSymbol3DLayerResource = null,
@@ -49,6 +57,7 @@ object IconSymbol3DLayerProperties {
   ): IconSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (anchorPosition != null) __obj.updateDynamic("anchorPosition")(anchorPosition)
     if (material != null) __obj.updateDynamic("material")(material)
     if (outline != null) __obj.updateDynamic("outline")(outline)
     if (resource != null) __obj.updateDynamic("resource")(resource)

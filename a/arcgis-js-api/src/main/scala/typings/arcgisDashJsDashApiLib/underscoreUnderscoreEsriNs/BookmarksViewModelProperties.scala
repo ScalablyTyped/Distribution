@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait BookmarksViewModelProperties extends GoToProperties {
   /**
+    * A collection of [Bookmark](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-Bookmark.html)s.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#bookmarks)
+    */
+  var bookmarks: js.UndefOr[CollectionProperties[BookmarkProperties]] = js.undefined
+  /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#view)
@@ -16,8 +22,13 @@ trait BookmarksViewModelProperties extends GoToProperties {
 
 object BookmarksViewModelProperties {
   @scala.inline
-  def apply(goToOverride: GoToOverride = null, view: MapViewProperties = null): BookmarksViewModelProperties = {
+  def apply(
+    bookmarks: CollectionProperties[BookmarkProperties] = null,
+    goToOverride: GoToOverride = null,
+    view: MapViewProperties = null
+  ): BookmarksViewModelProperties = {
     val __obj = js.Dynamic.literal()
+    if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks.asInstanceOf[js.Any])
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
     if (view != null) __obj.updateDynamic("view")(view)
     __obj.asInstanceOf[BookmarksViewModelProperties]

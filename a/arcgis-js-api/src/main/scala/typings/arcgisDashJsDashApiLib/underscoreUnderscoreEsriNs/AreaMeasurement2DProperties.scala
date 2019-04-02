@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait AreaMeasurement2DProperties extends WidgetProperties {
   /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D.html#iconClass)
+    */
+  var iconClass: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Unit system (imperial, metric) or specific unit used for displaying the area values.  **Possible Values:** metric | imperial | square-inches | square-feet | square-us-feet | square-yards | square-miles | square-meters | square-kilometers | acres | ares | hectares
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D.html#unit)
@@ -39,7 +45,9 @@ object AreaMeasurement2DProperties {
   def apply(
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    iconClass: java.lang.String = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     unit: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.metric | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.imperial | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-inches` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-feet` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-us-feet` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-yards` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-meters` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`square-kilometers` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.acres | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.ares | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hectares = null,
     unitOptions: js.Array[java.lang.String] = null,
     view: MapViewProperties = null,
@@ -48,7 +56,9 @@ object AreaMeasurement2DProperties {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
     if (unitOptions != null) __obj.updateDynamic("unitOptions")(unitOptions)
     if (view != null) __obj.updateDynamic("view")(view)

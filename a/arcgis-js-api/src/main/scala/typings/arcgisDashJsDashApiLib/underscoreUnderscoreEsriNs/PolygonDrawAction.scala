@@ -17,7 +17,7 @@ trait PolygonDrawAction extends DrawAction {
     * click | Vertices are added when the pointer is clicked.
     *
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-PolygonDrawAction.html#mode)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#mode)
     *
     * @default hybrid
     */
@@ -25,13 +25,13 @@ trait PolygonDrawAction extends DrawAction {
   /**
     * Two-dimensional array of numbers representing the coordinates of each vertex comprising the geometry being drawn.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-PolygonDrawAction.html#vertices)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#vertices)
     */
   val vertices: js.Array[js.Array[scala.Double]] = js.native
   /**
-    * Completes drawing the polygon geometry and fires the [draw-complete](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-PolygonDrawAction.html#event:draw-complete) event. Call this method if the drawing logic needs to be completed other than by double-clicking or pressing the "C" key.
+    * Completes drawing the polygon geometry and fires the [draw-complete](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#event:draw-complete) event. Call this method if the drawing logic needs to be completed other than by double-clicking or pressing the "C" key.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-PolygonDrawAction.html#complete)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#complete)
     *
     *
     */

@@ -22,14 +22,13 @@ trait Widget
     */
   var id: java.lang.String = js.native
   /**
+    * The widget's label.  This property is useful whenever the widget is controlled by another one (e.g. [Expand](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html))
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#label)
+    */
+  var label: java.lang.String = js.native
+  /**
     * A utility method used for building the value for a widget's `class` property. This aids in simplifying CSS class setup.
-    * > Prior to version 4.7, there were various approaches towards setting CSS classes. These were dependent upon variables, such as whether the classes were:
-    *   * a single static class,
-    *   * multiple static classes, or
-    *   * dynamic classes.
-    *
-    *
-    * This helper method takes all of these approaches into account and simplifies it to use one single pattern to accommodate these multiple approaches.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#classes)
     *

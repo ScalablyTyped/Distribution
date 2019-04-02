@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-lambda-mock-context"
-version := "1.0-dt-20190325Z-6954f2"
+version := "1.0-dt-20190326Z-6954f2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

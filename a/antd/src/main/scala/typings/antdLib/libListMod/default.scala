@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("antd/lib/list", JSImport.Default)
 @js.native
-class default () extends List
+class default[T] () extends List[T]
 
 /* static members */
 @JSImport("antd/lib/list", JSImport.Default)

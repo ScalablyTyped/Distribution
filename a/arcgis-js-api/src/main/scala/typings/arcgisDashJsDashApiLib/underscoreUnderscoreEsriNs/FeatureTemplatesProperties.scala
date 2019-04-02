@@ -21,6 +21,12 @@ trait FeatureTemplatesProperties extends WidgetProperties {
     */
   var filterFunction: js.UndefOr[FilterFunction] = js.undefined
   /**
+    * Text used to filter items.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterText)
+    */
+  var filterText: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * It is possible to group [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html). This can aid in managing various template items and how they display within the widget. The values are discussed below.
     *
     * Type | Description | Example
@@ -58,8 +64,10 @@ object FeatureTemplatesProperties {
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     filterEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     filterFunction: FilterFunction = null,
+    filterText: java.lang.String = null,
     groupBy: java.lang.String | GroupByFunction = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     layers: js.Array[FeatureLayerProperties] = null,
     viewModel: FeatureTemplatesViewModelProperties = null
   ): FeatureTemplatesProperties = {
@@ -68,8 +76,10 @@ object FeatureTemplatesProperties {
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (!js.isUndefined(filterEnabled)) __obj.updateDynamic("filterEnabled")(filterEnabled)
     if (filterFunction != null) __obj.updateDynamic("filterFunction")(filterFunction)
+    if (filterText != null) __obj.updateDynamic("filterText")(filterText)
     if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (layers != null) __obj.updateDynamic("layers")(layers)
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
     __obj.asInstanceOf[FeatureTemplatesProperties]

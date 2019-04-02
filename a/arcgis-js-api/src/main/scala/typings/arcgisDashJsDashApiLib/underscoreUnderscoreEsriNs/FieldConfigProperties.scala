@@ -78,6 +78,15 @@ trait FieldConfigProperties extends js.Object {
     * @default false
     */
   var required: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that controls this field's visibility. The field will only display if this expression is `true`.  [![featureFormFieldVisibility](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/featureform-fieldvisilbility.png)](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/sandbox.html?sample=editing-featureform-fieldvisibility)
+    * > This only affects how the field is rendered. It does not have any impact on the attribute's values.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldConfig.html#visibilityExpression)
+    *
+    * @default null
+    */
+  var visibilityExpression: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object FieldConfigProperties {
@@ -91,7 +100,8 @@ object FieldConfigProperties {
     label: java.lang.String = null,
     maxLength: scala.Int | scala.Double = null,
     name: java.lang.String = null,
-    required: js.UndefOr[scala.Boolean] = js.undefined
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    visibilityExpression: java.lang.String = null
   ): FieldConfigProperties = {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description)
@@ -103,6 +113,7 @@ object FieldConfigProperties {
     if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
     if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (visibilityExpression != null) __obj.updateDynamic("visibilityExpression")(visibilityExpression)
     __obj.asInstanceOf[FieldConfigProperties]
   }
 }

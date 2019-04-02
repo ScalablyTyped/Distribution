@@ -16,7 +16,7 @@ trait Renderer
     */
   var authoringInfo: AuthoringInfo = js.native
   /**
-    * The renderer type.  **Possible values:** class-breaks | heatmap | simple | unique-value
+    * The renderer type.  **Possible values:** class-breaks | heatmap | simple | unique-value | raster-stretch
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html#type)
     */

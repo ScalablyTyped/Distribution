@@ -103,7 +103,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT15DOT2` extends js.Object
+  sealed trait `3DOT16DOT1` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -1521,6 +1521,9 @@ object antdLibStrings {
     extends antdLib.libIconMod.ThemeType
   
   @js.native
+  sealed trait `type` extends js.Object
+  
+  @js.native
   sealed trait under extends js.Object
   
   @js.native
@@ -1693,7 +1696,7 @@ object antdLibStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT15DOT2`: `3DOT15DOT2` = "3.15.2".asInstanceOf[`3DOT15DOT2`]
+  def `3DOT16DOT1`: `3DOT16DOT1` = "3.16.1".asInstanceOf[`3DOT16DOT1`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
@@ -2566,6 +2569,8 @@ object antdLibStrings {
   def `true`: `true` = "true".asInstanceOf[`true`]
   @scala.inline
   def twoTone: twoTone = "twoTone".asInstanceOf[twoTone]
+  @scala.inline
+  def `type`: `type` = "type".asInstanceOf[`type`]
   @scala.inline
   def under: under = "under".asInstanceOf[under]
   @scala.inline

@@ -14,13 +14,7 @@ trait Directions
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#iconClass)
     */
-  val iconClass: java.lang.String = js.native
-  /**
-    * The widget's default label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#label)
-    */
-  val label: java.lang.String = js.native
+  var iconClass: java.lang.String = js.native
   /**
     * The maximum number of stops allowed for routing.
     *

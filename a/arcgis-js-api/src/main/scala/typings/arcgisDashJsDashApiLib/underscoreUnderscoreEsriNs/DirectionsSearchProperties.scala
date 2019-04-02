@@ -90,7 +90,7 @@ trait DirectionsSearchProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#SearchProperties)
     */
-  var sources: js.UndefOr[Collection[FeatureLayerSearchSource | LocatorSearchSource]] = js.undefined
+  var sources: js.UndefOr[Collection[LayerSearchSource | LocatorSearchSource]] = js.undefined
   /**
     * Indicates whether to display suggestions as the user enters input text in the widget.
     *
@@ -130,7 +130,7 @@ object DirectionsSearchProperties {
     resultGraphicEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     searchAllEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     searchTerm: java.lang.String = null,
-    sources: Collection[FeatureLayerSearchSource | LocatorSearchSource] = null,
+    sources: Collection[LayerSearchSource | LocatorSearchSource] = null,
     suggestionsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     view: MapView | SceneView = null,
     viewModel: SearchViewModel = null

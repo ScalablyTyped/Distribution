@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "devcert-san"
-version := "0.3.3-ff2f62"
+version := "0.3.3-3166ae"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,12 +11,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
   "org.scalablytyped" %%% "eol" % "0.8.1-f8a3c8",
   "org.scalablytyped" %%% "get-port" % "4.2.0-b34d19",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-8bb714",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ce8e08",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-e6c927",
-  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-e16d89",
-  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-6520aa",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "tmp" % "0.0-dt-20190212Z-cba742",
+  "org.scalablytyped" %%% "tmp" % "0.1-dt-20190327Z-58e817",
   "org.scalablytyped" %%% "tslib" % "1.9.3-446b32")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

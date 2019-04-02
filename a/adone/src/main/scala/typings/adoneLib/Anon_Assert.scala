@@ -19,7 +19,7 @@ trait Anon_Assert extends js.Object {
   val dnsNs: Anon_AAAAAADDRCONFIG = js.native
   val domainNs: Anon_Create = js.native
   var events: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.events] = js.native
-  val eventsNs: Anon_EventEmitter = js.native
+  val eventsNs: Anon_Emitter = js.native
   val fsNs: Anon_AccessAccessSync = js.native
   val http2Ns: Anon_Authority = js.native
   val httpNs: Anon_Agent = js.native
@@ -42,7 +42,7 @@ trait Anon_Assert extends js.Object {
   val ttyNs: Anon_FdIsatty = js.native
   val urlNs: Anon_Domain = js.native
   val utilNs: Anon_Arg1 = js.native
-  val v8Ns: Anon_FlagsGetHeapSpaceStatistics = js.native
+  val v8Ns: Anon_FileName = js.native
   val vmNs: Anon_Code = js.native
   val zlibNs: Anon_BrotliCompress = js.native
   def assert(value: js.Any): scala.Unit = js.native

@@ -13,11 +13,11 @@ trait MeshComponentProperties extends js.Object {
     */
   var faces: js.UndefOr[stdLib.Uint32Array | js.Array[scala.Double] | stdLib.Uint16Array] = js.undefined
   /**
-    * The material determines how the component is visualized. Materials specify a color that may either be a single color value (a [ValueMeshColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-ValueMeshColor.html)) or an image ( an [ImageMeshColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-ImageMeshColor.html)), which is mapped to the uv coordinate specified for each vertex in the mesh vertex attributes.  The material property supports a number of convenience autocast types, including hex color strings and well known color strings (autocasts to [ValueMeshColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-ValueMeshColor.html)), or strings representing urls, HTMLImageElements or HTMLCanvasElements (autocasts to [ImageMeshColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-ImageMeshColor.html)).
+    * The material determines how the component is visualized.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html#material)
     */
-  var material: js.UndefOr[MeshComponentMaterialProperties] = js.undefined
+  var material: js.UndefOr[MeshMaterialProperties] = js.undefined
   /**
     * Specifies the type of normals used for lighting. This determines whether the object has a smooth or an angular appearance. The following shading types are supported:
     *
@@ -37,7 +37,7 @@ object MeshComponentProperties {
   @scala.inline
   def apply(
     faces: stdLib.Uint32Array | js.Array[scala.Double] | stdLib.Uint16Array = null,
-    material: MeshComponentMaterialProperties = null,
+    material: MeshMaterialProperties = null,
     shading: java.lang.String = null
   ): MeshComponentProperties = {
     val __obj = js.Dynamic.literal()

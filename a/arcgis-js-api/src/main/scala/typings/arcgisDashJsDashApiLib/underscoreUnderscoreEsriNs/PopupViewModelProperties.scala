@@ -35,6 +35,14 @@ trait PopupViewModelProperties extends GoToProperties {
     */
   var content: js.UndefOr[java.lang.String | stdLib.HTMLElement | WidgetProperties] = js.undefined
   /**
+    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined. Automatic popup templates are supported for layers that support the `createPopupTemplate` method. (Supported for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html) and [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#defaultPopupTemplateEnabled)
+    *
+    * @default false
+    */
+  var defaultPopupTemplateEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * An array of features associated with the popup. Each graphic in this array must have a valid [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) set. They may share the same [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) or have unique [PopupTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) depending on their attributes. The [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#content) and [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#title) of the poup is set based on the `content` and `title` properties of each graphic's respective [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).  When more than one graphic exists in this array, the current content of the Popup is set based on the value of the [selected feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#selectedFeature).  This value is `null` if no features are associated with the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup-PopupViewModel.html#features)
@@ -93,6 +101,7 @@ object PopupViewModelProperties {
     autoCloseEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     autoOpenEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     content: java.lang.String | stdLib.HTMLElement | WidgetProperties = null,
+    defaultPopupTemplateEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     features: js.Array[GraphicProperties] = null,
     goToOverride: GoToOverride = null,
     highlightEnabled: js.UndefOr[scala.Boolean] = js.undefined,
@@ -108,6 +117,7 @@ object PopupViewModelProperties {
     if (!js.isUndefined(autoCloseEnabled)) __obj.updateDynamic("autoCloseEnabled")(autoCloseEnabled)
     if (!js.isUndefined(autoOpenEnabled)) __obj.updateDynamic("autoOpenEnabled")(autoOpenEnabled)
     if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(defaultPopupTemplateEnabled)) __obj.updateDynamic("defaultPopupTemplateEnabled")(defaultPopupTemplateEnabled)
     if (features != null) __obj.updateDynamic("features")(features)
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
     if (!js.isUndefined(highlightEnabled)) __obj.updateDynamic("highlightEnabled")(highlightEnabled)

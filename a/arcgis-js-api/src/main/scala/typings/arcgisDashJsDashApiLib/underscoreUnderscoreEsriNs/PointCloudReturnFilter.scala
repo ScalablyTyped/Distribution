@@ -16,7 +16,16 @@ trait PointCloudReturnFilter extends PointCloudFilter {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudReturnFilter.html#includedReturns)
     */
-  var includedReturns: js.Array[java.lang.String] = js.native
+  var includedReturns: js.Array[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.firstOfMany | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.last | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.lastOfMany | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.single
+  ] = js.native
+  /**
+    * For PointCloudReturnFilter the type is always `return`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudReturnFilter.html#type)
+    */
+  @JSName("type")
+  val type_PointCloudReturnFilter: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`return` = js.native
 }
 
 @JSGlobal("__esri.PointCloudReturnFilter")

@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CSVLayerProperties extends LayerProperties {
+trait CSVLayerProperties
+  extends LayerProperties
+     with PortalLayerProperties
+     with ScaleRangeLayerProperties
+     with TemporalLayerProperties {
   /**
     * Copyright information for the layer.
     *
@@ -52,7 +56,7 @@ trait CSVLayerProperties extends LayerProperties {
     */
   var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   /**
-    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). Use this property to specify labeling properties for the layer.  For labels to display in the view, the [labelsVisible](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#labelsVisible) property of this layer must be set to `true`.  Multiple Label classes with different `where` clauses can be used to define several labels with varying styles on the same feature. Likewise, multiple label classes may be used to label different types of features (for example blue labels for lakes and green labels for parks).
+    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). Use this property to specify labeling properties for the layer.  Multiple Label classes with different `where` clauses can be used to define several labels with varying styles on the same feature. Likewise, multiple label classes may be used to label different types of features (for example blue labels for lakes and green labels for parks).
     * > **Known Limitations**  Currently only one [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) is supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#labelingInfo)
@@ -75,35 +79,17 @@ trait CSVLayerProperties extends LayerProperties {
     */
   var latitudeField: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Indicates whether the layer will be included in the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#legendEnabled)
-    *
-    * @default true
-    */
-  var legendEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  /**
     * The longitude field name. If not specified, the API will look for following field names in the CSV source: "lon", "lng", "long", "longitude", "x", "xcenter", "longitude83", "longdecdeg", "POINT-X".
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#longitudeField)
     */
   var longitudeField: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The maximum scale (most zoomed in) at which the layer is visible in the view. If the map is zoomed in beyond this scale, the layer will not be visible. A value of `0` means the layer does not have a maximum scale. The maxScale value should always be smaller than the [minScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#minScale) value, and greater than or equal to the service specification.
+    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#fields) containing a unique value or identifier for each feature in the layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#maxScale)
-    *
-    * @default 0
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#objectIdField)
     */
-  var maxScale: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * The minimum scale (most zoomed out) at which the layer is visible in the view. If the map is zoomed out beyond this scale, the layer will not be visible. A value of `0` means the layer does not have a minimum scale. The minScale value should always be larger than the [maxScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#maxScale) value, and lesser than or equal to the service specification.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#minScale)
-    *
-    * @default 0
-    */
-  var minScale: js.UndefOr[scala.Double] = js.undefined
+  var objectIdField: js.UndefOr[java.lang.String] = js.undefined
   /**
     * An array of field names to include in the CSVLayer. If not specified, the layer will include all fields.
     *
@@ -111,7 +97,7 @@ trait CSVLayerProperties extends LayerProperties {
     */
   var outFields: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-    * Indicates whether to display popups when features in the layer are clicked.
+    * Indicates whether to display popups when features in the layer are clicked. The layer needs to have a [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#popupTemplate) to define what information should be displayed in the popup. Alternatively, a default popup template may be automatically used if [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#popupEnabled)
     *
@@ -119,7 +105,7 @@ trait CSVLayerProperties extends LayerProperties {
     */
   var popupEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * The popup template for the layer. When set on the layer, the `popupTemplate` allows users to access attributes and display their values in the [view's popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#popup) when a feature is selected using text and/or charts. See the [PopupTemplate sample](https://developers.arcgis.com/javascript/latest/sample-code/intro-popuptemplate/index.html) for an example of how [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) interacts with a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).
+    * The popup template for the layer. When set on the layer, the `popupTemplate` allows users to access attributes and display their values in the [view's popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#popup) when a feature is selected using text and/or charts. See the [PopupTemplate sample](https://developers.arcgis.com/javascript/latest/sample-code/intro-popuptemplate/index.html) for an example of how [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) interacts with a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).  A default popup template is automatically used if no `popupTemplate` has been defined when [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#popupTemplate)
     */
@@ -170,18 +156,20 @@ object CSVLayerProperties {
     labelingInfo: js.Array[LabelClassProperties] = null,
     labelsVisible: js.UndefOr[scala.Boolean] = js.undefined,
     latitudeField: java.lang.String = null,
-    legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    listMode: java.lang.String = null,
+    listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
     longitudeField: java.lang.String = null,
     maxScale: scala.Int | scala.Double = null,
     minScale: scala.Int | scala.Double = null,
+    objectIdField: java.lang.String = null,
     opacity: scala.Int | scala.Double = null,
     outFields: js.Array[java.lang.String] = null,
     popupEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     popupTemplate: PopupTemplateProperties = null,
+    portalItem: PortalItemProperties = null,
     renderer: RendererProperties = null,
     screenSizePerspectiveEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     spatialReference: SpatialReferenceProperties = null,
+    timeInfo: TimeInfoProperties = null,
     title: java.lang.String = null,
     url: java.lang.String = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
@@ -198,18 +186,20 @@ object CSVLayerProperties {
     if (labelingInfo != null) __obj.updateDynamic("labelingInfo")(labelingInfo)
     if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible)
     if (latitudeField != null) __obj.updateDynamic("latitudeField")(latitudeField)
-    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (longitudeField != null) __obj.updateDynamic("longitudeField")(longitudeField)
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
+    if (objectIdField != null) __obj.updateDynamic("objectIdField")(objectIdField)
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (outFields != null) __obj.updateDynamic("outFields")(outFields)
     if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled)
     if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate)
+    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
     if (renderer != null) __obj.updateDynamic("renderer")(renderer)
     if (!js.isUndefined(screenSizePerspectiveEnabled)) __obj.updateDynamic("screenSizePerspectiveEnabled")(screenSizePerspectiveEnabled)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo)
     if (title != null) __obj.updateDynamic("title")(title)
     if (url != null) __obj.updateDynamic("url")(url)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

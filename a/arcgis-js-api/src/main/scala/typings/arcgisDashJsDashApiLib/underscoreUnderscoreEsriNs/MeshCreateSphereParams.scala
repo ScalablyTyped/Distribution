@@ -26,11 +26,17 @@ trait MeshCreateSphereParams
     */
   var material: js.UndefOr[MeshCreateSphereParamsMaterial] = js.undefined
   /**
-    * A uniform size value or an object containing individual values width, height and depth. The unit of the size values is derived from the spatial reference of the provided location.
+    * A uniform size value or an object containing individual values width, height and depth. The unit of the size values is derived from the spatial reference of the provided location, unless a unit is specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
     */
   var size: js.UndefOr[scala.Double | MeshCreateSphereParamsSize] = js.undefined
+  /**
+    * The unit of the size (defaults to the unit of the location's spatial reference).  **Possible Values:** millimeters | centimeters | decimeters | meters | kilometers | inches | feet | yards | miles | nautical-miles | us-feet
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createSphere)
+    */
+  var unit: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object MeshCreateSphereParams {
@@ -42,13 +48,15 @@ object MeshCreateSphereParams {
     densificationFactor: scala.Int | scala.Double = null,
     geographic: js.UndefOr[scala.Boolean] = js.undefined,
     material: MeshCreateSphereParamsMaterial = null,
-    size: scala.Double | MeshCreateSphereParamsSize = null
+    size: scala.Double | MeshCreateSphereParamsSize = null,
+    unit: java.lang.String = null
   ): MeshCreateSphereParams = {
     val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (densificationFactor != null) __obj.updateDynamic("densificationFactor")(densificationFactor.asInstanceOf[js.Any])
     if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
     if (material != null) __obj.updateDynamic("material")(material)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit)
     __obj.asInstanceOf[MeshCreateSphereParams]
   }
 }

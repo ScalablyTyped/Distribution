@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait SketchViewModelProperties extends js.Object {
   /**
+    * Default update options set for the SketchViewModel. Update options set on this property will be overridden by options passed to the [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update) method.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
+    */
+  var defaultUpdateOptions: js.UndefOr[SketchViewModelDefaultUpdateOptions] = js.undefined
+  /**
     * The [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) associated with the SketchViewModel. The SketchViewModel adds new [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) to this layer or can only update graphics stored in this layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#layer)
@@ -70,26 +76,28 @@ trait SketchViewModelProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 
 object SketchViewModelProperties {
   @scala.inline
   def apply(
+    defaultUpdateOptions: SketchViewModelDefaultUpdateOptions = null,
     layer: GraphicsLayerProperties = null,
     pointSymbol: SimpleMarkerSymbolProperties = null,
     polygonSymbol: SimpleFillSymbolProperties = null,
     polylineSymbol: SimpleLineSymbolProperties = null,
     updateOnGraphicClick: js.UndefOr[scala.Boolean] = js.undefined,
-    view: MapViewProperties = null
+    view: MapViewProperties | SceneViewProperties = null
   ): SketchViewModelProperties = {
     val __obj = js.Dynamic.literal()
+    if (defaultUpdateOptions != null) __obj.updateDynamic("defaultUpdateOptions")(defaultUpdateOptions)
     if (layer != null) __obj.updateDynamic("layer")(layer)
     if (pointSymbol != null) __obj.updateDynamic("pointSymbol")(pointSymbol)
     if (polygonSymbol != null) __obj.updateDynamic("polygonSymbol")(polygonSymbol)
     if (polylineSymbol != null) __obj.updateDynamic("polylineSymbol")(polylineSymbol)
     if (!js.isUndefined(updateOnGraphicClick)) __obj.updateDynamic("updateOnGraphicClick")(updateOnGraphicClick)
-    if (view != null) __obj.updateDynamic("view")(view)
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchViewModelProperties]
   }
 }

@@ -139,7 +139,7 @@ object WMSLayerProperties {
     imageMaxWidth: scala.Int | scala.Double = null,
     imageTransparency: js.UndefOr[scala.Boolean] = js.undefined,
     legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    listMode: java.lang.String = null,
+    listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
     maxScale: scala.Int | scala.Double = null,
     minScale: scala.Int | scala.Double = null,
     opacity: scala.Int | scala.Double = null,
@@ -168,7 +168,7 @@ object WMSLayerProperties {
     if (imageMaxWidth != null) __obj.updateDynamic("imageMaxWidth")(imageMaxWidth.asInstanceOf[js.Any])
     if (!js.isUndefined(imageTransparency)) __obj.updateDynamic("imageTransparency")(imageTransparency)
     if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])

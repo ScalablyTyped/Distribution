@@ -56,7 +56,7 @@ trait ScaleDependentIcons
     */
   var `type`: java.lang.String
   /**
-    * This value must be `$view.scale`.
+    * See [valueExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#valueExpression).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html#ScaleDependentIcons)
     */

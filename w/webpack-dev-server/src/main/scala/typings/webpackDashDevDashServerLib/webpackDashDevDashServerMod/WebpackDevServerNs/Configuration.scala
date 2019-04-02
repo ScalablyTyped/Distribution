@@ -121,6 +121,8 @@ trait Configuration extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
+  /** The path at which to connect to the reloading socket. */
+  var sockPath: js.UndefOr[java.lang.String] = js.undefined
   /** The Unix socket to listen to (instead of a host). */
   var socket: js.UndefOr[java.lang.String] = js.undefined
   /** It is possible to configure advanced options for serving static files from contentBase. */
@@ -173,6 +175,7 @@ object Configuration {
     publicPath: java.lang.String = null,
     quiet: js.UndefOr[scala.Boolean] = js.undefined,
     setup: (/* app */ expressLib.expressMod.eNs.Application, /* server */ webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServer) => scala.Unit = null,
+    sockPath: java.lang.String = null,
     socket: java.lang.String = null,
     staticOptions: serveDashStaticLib.serveDashStaticMod.serveStaticNs.ServeStaticOptions = null,
     stats: webpackLib.webpackMod.webpackNs.OptionsNs.Stats = null,
@@ -212,6 +215,7 @@ object Configuration {
     if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
     if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
     if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction2(setup))
+    if (sockPath != null) __obj.updateDynamic("sockPath")(sockPath)
     if (socket != null) __obj.updateDynamic("socket")(socket)
     if (staticOptions != null) __obj.updateDynamic("staticOptions")(staticOptions)
     if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])

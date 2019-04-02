@@ -1,32 +1,32 @@
 organization := "org.scalablytyped"
 name := "koa-jwt"
-version := "3.5.1-b0bf2c"
+version := "3.5.1-4c0adb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-8da082",
-  "org.scalablytyped" %%% "aggregate-error" % "2.2.0-b44f5b",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-684e50",
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-0bdd08",
+  "org.scalablytyped" %%% "aggregate-error" % "3.0.0-0044a4",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-249d28",
   "org.scalablytyped" %%% "clean-stack" % "1.3-dt-20180214Z-272cb8",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-50cbb3",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20180214Z-e977e6",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-4aab25",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-faea1f",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-53c35c",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20180214Z-a34c84",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-33b861",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-c31b2e",
   "org.scalablytyped" %%% "http-assert" % "1.4-dt-20181225Z-0cd2ad",
   "org.scalablytyped" %%% "indent-string" % "3.2-dt-20181210Z-22a521",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190304Z-d1e184",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190304Z-8c8962",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-cf9c5c",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-2f78df",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20190322Z-b2a1ff",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190131Z-2b27d0",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
-  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
-  "org.scalablytyped" %%% "p-any" % "2.0.0-cf42ec",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "p-any" % "2.0.0-01121a",
   "org.scalablytyped" %%% "p-cancelable" % "2.0.0-03d86c",
-  "org.scalablytyped" %%% "p-some" % "4.0.0-fd513f",
+  "org.scalablytyped" %%% "p-some" % "4.0.0-4e1244",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-623d43",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-dd9008",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-201a01",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "type-fest" % "0.1.0-207b13")
 publishArtifact in packageDoc := false

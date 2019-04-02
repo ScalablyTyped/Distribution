@@ -16,7 +16,7 @@ class default protected () extends Menu {
 @js.native
 object default extends js.Object {
   var Divider: js.Any = js.native
-  var Item: antdLib.Anon_ContextTypesIsMenuItem = js.native
+  var Item: antdLib.Anon_IsMenuItem = js.native
   var ItemGroup: js.Any = js.native
   var SubMenu: antdLib.Anon_ContextTypesIsSubMenu = js.native
   var childContextTypes: antdLib.Anon_AntdMenuThemeInlineCollapsed = js.native

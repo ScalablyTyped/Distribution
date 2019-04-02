@@ -40,6 +40,7 @@ trait RangePickerProps extends PickerProps {
   ] = js.undefined
   var placeholder: js.UndefOr[js.Tuple2[java.lang.String, java.lang.String]] = js.undefined
   var ranges: js.UndefOr[org.scalablytyped.runtime.StringDictionary[RangePickerPresetRange]] = js.undefined
+  var separator: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var showTime: js.UndefOr[antdLib.libTimeDashPickerMod.TimePickerProps | scala.Boolean] = js.undefined
   var value: js.UndefOr[RangePickerValue] = js.undefined
 }
@@ -74,6 +75,7 @@ object RangePickerProps {
     prefixCls: java.lang.String = null,
     ranges: org.scalablytyped.runtime.StringDictionary[RangePickerPresetRange] = null,
     renderExtraFooter: () => reactLib.reactMod.ReactNs.ReactNode = null,
+    separator: reactLib.reactMod.ReactNs.ReactNode = null,
     showTime: antdLib.libTimeDashPickerMod.TimePickerProps | scala.Boolean = null,
     size: antdLib.antdLibStrings.large | antdLib.antdLibStrings.small | antdLib.antdLibStrings.default = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null,
@@ -108,6 +110,7 @@ object RangePickerProps {
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (ranges != null) __obj.updateDynamic("ranges")(ranges)
     if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction0(renderExtraFooter))
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     if (showTime != null) __obj.updateDynamic("showTime")(showTime.asInstanceOf[js.Any])
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     if (style != null) __obj.updateDynamic("style")(style)

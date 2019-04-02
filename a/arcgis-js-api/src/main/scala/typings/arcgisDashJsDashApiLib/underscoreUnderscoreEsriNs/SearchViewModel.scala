@@ -11,11 +11,11 @@ trait SearchViewModel
      with Evented
      with GoTo {
   /**
-    * The [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#sources) object currently selected. Can be either a [feature layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) or a [locator task](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html).
+    * The [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#sources) object currently selected. Can be either a [feature layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) or a [locator task](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#activeSource)
     */
-  val activeSource: FeatureLayerSearchSource | LocatorSearchSource = js.native
+  val activeSource: LayerSearchSource | LocatorSearchSource = js.native
   /**
     * The selected source's index. This value is `-1` when all sources are selected.
     *
@@ -37,7 +37,7 @@ trait SearchViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#allSources)
     */
-  val allSources: Collection[FeatureLayerSearchSource | LocatorSearchSource] = js.native
+  val allSources: Collection[LayerSearchSource | LocatorSearchSource] = js.native
   /**
     * Indicates whether to automatically select and zoom to the first geocoded result. If `false`, the [findAddressCandidates](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-find-address-candidates.htm) operation will still geocode the input string, but the top result will not be selected. To work with the geocoded results, you can set up a [search-complete](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#event:search-complete) event handler and get the results through the event object.
     *
@@ -47,11 +47,11 @@ trait SearchViewModel
     */
   var autoSelect: scala.Boolean = js.native
   /**
-    * A read-only property that is a [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of module:esri/widgets/Search/FeaturelayerSource and/or [LocatorSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html). This property may contain [ArcGIS Portal](https://enterprise.arcgis.com/en/portal/) [locators](http://enterprise.arcgis.com/en/server/latest/publish-services/windows/geocode-services.htm) and any web map or web scene [configurable search sources](http://doc.arcgis.com/en/arcgis-online/create-maps/configure-feature-search.htm).  This property is used to populate the Search UI if the [sources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#sources) property is not set.
+    * A read-only property that is a [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [LayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html) and/or [LocatorSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html). This property may contain [ArcGIS Portal](https://enterprise.arcgis.com/en/portal/) [locators](http://enterprise.arcgis.com/en/server/latest/publish-services/windows/geocode-services.htm) and any web map or web scene [configurable search sources](http://doc.arcgis.com/en/arcgis-online/create-maps/configure-feature-search.htm).  This property is used to populate the Search UI if the [sources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#sources) property is not set.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSources)
     */
-  val defaultSources: Collection[FeatureLayerSearchSource | LocatorSearchSource] = js.native
+  val defaultSources: Collection[LayerSearchSource | LocatorSearchSource] = js.native
   /**
     * The default [symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) for the search result.
     *
@@ -191,8 +191,8 @@ trait SearchViewModel
     */
   val selectedSuggestion: Geometry | SearchViewModelSuggestResult = js.native
   /**
-    * The Search widget may be used to search features in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) or geocode locations with a [Locator](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html). The `sources` property defines the sources from which to search for the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#view) specified by the Search widget instance. There are two types of sources:
-    *   * [FeatureLayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-FeatureLayerSearchSource.html)
+    * The Search widget may be used to search features in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) or geocode locations with a [Locator](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html). The `sources` property defines the sources from which to search for the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#view) specified by the Search widget instance. There are two types of sources:
+    *   * [LayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html)
     *   * [LocatorSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html)
     *
     *
@@ -200,7 +200,7 @@ trait SearchViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#sources)
     */
-  var sources: Collection[FeatureLayerSearchSource | LocatorSearchSource] = js.native
+  var sources: Collection[LayerSearchSource | LocatorSearchSource] = js.native
   /**
     * The current state of the widget. This property was removed from [Search](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html) and should now be accessed within the [SearchViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html).  **Possible Values:** ready | disabled | searching | loading
     *

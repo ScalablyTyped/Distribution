@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RouteParameters extends Accessor {
+trait RouteParameters
+  extends Accessor
+     with JSONSupport {
   /**
     * The list of network attribute names to be accumulated with the analysis. For example, which attributes should be returned as part of the response. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html). You can specify any attribute names listed in the Service Directory under `Network Dataset -> Network Attributes` as `Usage Type: esriNAUTCost`. See also [Understanding the network attribute](http://resources.arcgis.com/en/help/main/10.2/index.html#//00470000000m000000).
     *
@@ -18,7 +20,7 @@ trait RouteParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#attributeParameterValues)
     */
-  var attributeParameterValues: AttributeParamValue = js.native
+  var attributeParameterValues: js.Array[AttributeParamValue] = js.native
   /**
     * The set of point barriers loaded as network locations during analysis. At ArcGIS Server 10.1 an optional url property was added. Use this property to specify a REST query request to a Feature, Map or GP Service that returns a JSON feature set. The url property can be specified using [DataFile](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataFile.html). Note that either the features or url property should be specified.
     *
@@ -36,15 +38,13 @@ trait RouteParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsLengthUnits)
     */
-  var directionsLengthUnits: java.lang.String = js.native
+  var directionsLengthUnits: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards = js.native
   /**
     * Defines the amount of direction information returned.  **Possible Values:** complete | complete-no-events | instructions-only | standard | summary-only
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsOutputType)
-    *
-    * @default standard
     */
-  var directionsOutputType: java.lang.String = js.native
+  var directionsOutputType: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.complete | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`complete-no-events` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`instructions-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.standard | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`summary-only` = js.native
   /**
     * The style to be used when returning directions. The default will be as defined in the network layer. View the REST layer description for your network service to see a list of supported styles.
     *
@@ -61,8 +61,6 @@ trait RouteParameters extends Accessor {
     * If `true`, avoids network elements restricted by barriers or restrictions specified in [restrictionAttributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#restrictionAttributes).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#doNotLocateOnRestrictedElements)
-    *
-    * @default true
     */
   var doNotLocateOnRestrictedElements: scala.Boolean = js.native
   /**
@@ -96,7 +94,7 @@ trait RouteParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#outSpatialReference)
     */
-  var outSpatialReference: SpatialReference = js.native
+  var outSpatialReference: SpatialReference | java.lang.String = js.native
   /**
     * The precision of the output geometry after generalization. If `0`, no generalization of output geometry is performed. If present and positive, it represents the `MaximumAllowableOffset` parameter and generalization is performed according to `IPolycurve.Generalize`.
     *
@@ -108,15 +106,27 @@ trait RouteParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#outputGeometryPrecisionUnits)
     */
-  var outputGeometryPrecisionUnits: java.lang.String = js.native
+  var outputGeometryPrecisionUnits: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards = js.native
   /**
-    * The type of output lines to be generated in the result. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html).  **Possible Values:** none | straight | true-shape | true-shape-with-measure
+    * The type of output lines to be generated in the result. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html).
+    *
+    * Possible Value | Description
+    * ---------------|------------
+    * none | No lines are returned
+    * straight | Only returns straight lines
+    * true-shape | Return the true shape of the lines
+    * true-shape-with-measure | Return the true shape of the lines with their measurements
+    *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#outputLines)
-    *
-    * @default true-shape
     */
-  var outputLines: java.lang.String = js.native
+  var outputLines: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.straight | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape-with-measure` = js.native
+  /**
+    * The set of point barriers loaded as network locations during analysis. At ArcGIS Server 10.1 an optional url property was added. Use this property to specify a REST query request to a Feature, Map or GP Service that returns a JSON feature set. The url property can be specified using [DataFile](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataFile.html). Note that either the features or url property should be specified.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#pointBarriers)
+    */
+  var pointBarriers: DataLayer | FeatureSet = js.native
   /**
     * The set of polygon barriers loaded as network locations during analysis. At ArcGIS Server 10.1, an optional `url` property was added. Use this property to specify a REST query request to a Feature, Map or GP Service that returns a JSON feature set. The url property can be specified using [DataFile](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataFile.html). Note that either the `features` or `url` property should be specified.
     *
@@ -146,7 +156,7 @@ trait RouteParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#restrictUTurns)
     */
-  var restrictUTurns: java.lang.String = js.native
+  var restrictUTurns: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`allow-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`no-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-and-intersections` = js.native
   /**
     * The list of network attribute names to be used as restrictions with the analysis. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html). Possible values are listed in the Service Directory under `Network Dataset -> Network Attributes`. You can also specify a value of `none` to indicate that no network attributes should be used as restrictions. If you specify an empty array, it will default to the default of the service.
     *
@@ -162,7 +172,7 @@ trait RouteParameters extends Accessor {
     */
   var returnBarriers: scala.Boolean = js.native
   /**
-    * If `true`, barriers are returned in the [directions property of each RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html#directions).
+    * Indicates whether the service should generate driving directions for each route.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnDirections)
     *
@@ -189,24 +199,18 @@ trait RouteParameters extends Accessor {
     * If `true`, routes are generated and returned in the route property of each [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnRoutes)
-    *
-    * @default true
     */
   var returnRoutes: scala.Boolean = js.native
   /**
     * If `true`, stops are returned in the stops property of each [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnStops)
-    *
-    * @default false
     */
   var returnStops: scala.Boolean = js.native
   /**
     * If `true`, `z` values are returned in the [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnZ)
-    *
-    * @default true
     */
   var returnZ: scala.Boolean = js.native
   /**
@@ -232,32 +236,37 @@ trait RouteParameters extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#travelMode)
     */
-  var travelMode: js.Any = js.native
+  var travelMode: java.lang.String = js.native
   /**
     * If `true`, the hierarchy attribute for the network should be used in analysis. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#useHierarchy)
+    *
+    * @default false
     */
   var useHierarchy: scala.Boolean = js.native
   /**
     * A useful feature of the [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html) is the ability to constrain stop visits to certain times of day, or "time windows". If you were required to deliver orders to four homes and each customer was available during a limited time period during the day, the route task could help you find the most efficient path for making all the deliveries.  Time windows are treated as a "soft" constraint. This means that although the solver attempts to honor time windows, if necessary, it will violate the time windows of some stops in order to reach them. Remember, the stops will be visited in the order they were added unless you set `RouteParameters.findBestSequence = true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#useTimeWindows)
+    *
+    * @default false
     */
   var useTimeWindows: scala.Boolean = js.native
-  /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#toJSON)
-    *
-    *
-    */
-  def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("__esri.RouteParameters")
 @js.native
 class RouteParametersCls () extends RouteParameters {
   def this(properties: RouteParametersProperties) = this()
+  /**
+    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    *
+    *
+    */
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 

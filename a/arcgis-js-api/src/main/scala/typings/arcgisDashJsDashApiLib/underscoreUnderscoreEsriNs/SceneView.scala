@@ -57,6 +57,9 @@ trait SceneView
     * // Disable automatic lighting updates by camera tracking
     * view.environment.lighting.cameraTrackingEnabled = true;
     *
+    * // Enable displaying shadows cast by the sun
+    * view.environment.lighting.directShadowsEnabled = true;
+    *
     * // Set a background color
     * var view = new SceneView({
     *   container: "view",
@@ -84,6 +87,12 @@ trait SceneView
     * @default null
     */
   var extent: Extent = js.native
+  /**
+    * The view for the ground of the map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#groundView)
+    */
+  val groundView: GroundView = js.native
   /**
     * Options for configuring the highlight. Use the highlight method on the appropriate [LayerView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) to highlight a feature.
     *
@@ -191,25 +200,20 @@ trait SceneView
   def goTo(target: js.Array[scala.Double | Geometry | Graphic]): arcgisDashJsDashApiLib.IPromise[_] = js.native
   def goTo(target: js.Array[scala.Double | Geometry | Graphic], options: SceneViewGoToOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
   /**
-    * Indicates whether there is an event listener on the instance that matches the provided event name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#hasEventListener)
-    *
-    *
-    */
-  def hasEventListener(): scala.Unit = js.native
-  /**
-    * Returns the topmost feature from each layer that intersects the specified screen coordinates. The following layer types will return a result if a hit is made on an intersecting feature: [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html), [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [GeoRSSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html), [KMLLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html), and [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html).  Draped graphics (i.e. graphics in layers where the [elevation mode](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#elevationInfo) is `on-the-ground`) are currently **not** returned from this method, even when they intersect the input screen point.  When the ground surface is hit, but no graphic is found, then the result of hitTest will be a single object with its mapPoint set to the point on the surface that was hit, but its graphic will be set to `null`.
+    * Returns graphics that intersect the specified screen coordinate. The following layer types will return a result if a hit is made on an intersecting feature: [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html), [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html), [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html), [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html) and [SceneView.graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#graphics).  If no options are specified, graphics that are behind the ground surface will not be returned unless the ground surface is semi-transparent. Otherwise, using the [map.ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#ground) in the include and exclude options determines whether the ground surface prevents hit testing graphics that are under it.  Starting with version 4.11, if a label intersects the specified screen coordinates then the result of the hitTest will contain the graphic associated with that label.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#hitTest)
     *
-    * @param screenPoint The screen coordinates of the click on the view.
-    * @param screenPoint.x The horizontal screen coordinate of the click on the view.
-    * @param screenPoint.y The vertical screen coordinate of the click on the view.
+    * @param screenPoint The screen coordinates (or native mouse event) of the click on the view.
+    * @param options Intersection test options. By default the [map.ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#ground) is excluded if its opacity is smaller than one.
+    * @param options.include A list of layers and graphics to include for intersection testing. All layers and graphics will be included if include is not specified.
+    * @param options.exclude A list of layers and graphics to include for intersection testing. No layers or graphics will be excluded if exclude is not specified.
     *
     */
-  def hitTest(screenPoint: SceneViewHitTestScreenPoint): arcgisDashJsDashApiLib.IPromise[SceneViewHitTestResult] = js.native
-  def on(`type`: java.lang.String, modifiersOrHandler: EventHandler): arcgisDashJsDashApiLib.IHandle = js.native
+  def hitTest(screenPoint: SceneViewScreenPoint): arcgisDashJsDashApiLib.IPromise[SceneViewHitTestResult] = js.native
+  def hitTest(screenPoint: SceneViewScreenPoint, options: SceneViewHitTestOptions): arcgisDashJsDashApiLib.IPromise[SceneViewHitTestResult] = js.native
+  def hitTest(screenPoint: stdLib.MouseEvent): arcgisDashJsDashApiLib.IPromise[SceneViewHitTestResult] = js.native
+  def hitTest(screenPoint: stdLib.MouseEvent, options: SceneViewHitTestOptions): arcgisDashJsDashApiLib.IPromise[SceneViewHitTestResult] = js.native
   def on(`type`: java.lang.String, modifiersOrHandler: EventHandler, handler: EventHandler): arcgisDashJsDashApiLib.IHandle = js.native
   /**
     * Registers an event handler on the instance. Call this method to hook an event with a listener. See the [Events summary table](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#events-summary) for a list of listened events.
@@ -223,7 +227,6 @@ trait SceneView
     */
   def on(`type`: java.lang.String, modifiersOrHandler: js.Array[java.lang.String]): arcgisDashJsDashApiLib.IHandle = js.native
   def on(`type`: java.lang.String, modifiersOrHandler: js.Array[java.lang.String], handler: EventHandler): arcgisDashJsDashApiLib.IHandle = js.native
-  def on(`type`: js.Array[java.lang.String], modifiersOrHandler: EventHandler): arcgisDashJsDashApiLib.IHandle = js.native
   def on(`type`: js.Array[java.lang.String], modifiersOrHandler: EventHandler, handler: EventHandler): arcgisDashJsDashApiLib.IHandle = js.native
   def on(`type`: js.Array[java.lang.String], modifiersOrHandler: js.Array[java.lang.String]): arcgisDashJsDashApiLib.IHandle = js.native
   def on(
@@ -430,7 +433,7 @@ trait SceneView
     eventHandler: SceneViewResizeEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   /**
-    * Create a screenshot of the current view. Screenshots include only elements that are rendered on the canvas (all geographical elements), but excludes overlayed DOM elements (UI, popups, measurement labels, etc.). By default, a screenshot of the whole view is created. Different options allow for creating different types of screenshots, including taking screenshots at different aspect ratios, different resolutions and creating thumbnails.  Screenshots are always taken inside the padded area of the view (see [padding](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#padding)).
+    * Create a screenshot of the current view. Screenshots include only elements that are rendered on the canvas (all geographical elements), but excludes overlayed DOM elements (UI, popups, etc.). By default, a screenshot of the whole view is created. Different options allow for creating different types of screenshots, including taking screenshots at different aspect ratios, different resolutions and creating thumbnails.  Screenshots are always taken inside the padded area of the view (see [padding](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#padding)).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#takeScreenshot)
     *
@@ -449,25 +452,25 @@ trait SceneView
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#toMap)
     *
-    * @param screenPoint The screen coordinates to convert.
-    * @param screenPoint.x The horizontal screen coordinate to convert.
-    * @param screenPoint.y The vertical screen coordinate to convert.
-    * @param mapPoint The point object that will reference the result.
+    * @param screenPoint The location on the screen (or native mouse event) to convert.
+    * @param options Intersection test options. By default only the [map.ground](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#ground) and any [IntegratedMeshLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-IntegratedMeshLayer.html) are included.
+    * @param options.include A list of layers and graphics to include for intersection testing. All layers and graphics will be included if include is not specified.
+    * @param options.exclude A list of layers and graphics to include for intersection testing. No layers or graphics will be excluded if exclude is not specified.
     *
     */
-  def toMap(screenPoint: SceneViewToMapScreenPoint): Point = js.native
-  def toMap(screenPoint: SceneViewToMapScreenPoint, mapPoint: Point): Point = js.native
+  def toMap(screenPoint: SceneViewScreenPoint): Point = js.native
+  def toMap(screenPoint: SceneViewScreenPoint, options: SceneViewToMapOptions): Point = js.native
+  def toMap(screenPoint: stdLib.MouseEvent): Point = js.native
+  def toMap(screenPoint: stdLib.MouseEvent, options: SceneViewToMapOptions): Point = js.native
   /**
-    * Converts the given [map point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) to a [screen point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-ScreenPoint.html).
+    * Converts the given [map point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) to a screen point.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#toScreen)
     *
     * @param point A point geometry.
-    * @param screenPoint ScreenPoint object that will reference the result.
     *
     */
-  def toScreen(point: Point): ScreenPoint = js.native
-  def toScreen(point: Point, screenPoint: ScreenPoint): ScreenPoint = js.native
+  def toScreen(point: Point): SceneViewScreenPoint = js.native
 }
 
 @JSGlobal("__esri.SceneView")

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typesafe-actions"
-version := "3.2.1-e8b8e5"
+version := "3.3.0-5a1f6b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

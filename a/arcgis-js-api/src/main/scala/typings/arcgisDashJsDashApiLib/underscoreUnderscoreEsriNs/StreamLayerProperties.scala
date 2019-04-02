@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait StreamLayerProperties extends FeatureLayerProperties {
   /**
-    * Contains the attribute and spatial filters used to filter messages sent to the client by a Stream Service. This property can be set in the constructor but is `read-only` after the layer is created. To change the filter after the layer is created, use the [updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateFilter) method.
+    * Contains the attribute and spatial filters used to filter messages sent to the client by a Stream Service. This property can be set in the constructor but is `read-only` after the layer is created. To change the filter after the layer is created, use the [updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateFilter) method.  **Use definitionExpression or geometryDefinition instead.**
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#filter)
     */
   var filter: js.UndefOr[StreamLayerFilter] = js.undefined
   /**
-    * An extent object used to filter features. Only features intersecting the extent are displayed in the view. Instead of using this property, use [StreamLayer.filter.geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#filter) when creating the service or [StreamLayer.updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateFilter) when changing the spatial filter.
+    * An extent object used to filter features. Only features intersecting the extent are displayed in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#geometryDefinition)
     */
@@ -48,11 +48,12 @@ object StreamLayerProperties {
     geometryType: java.lang.String = null,
     historicMoment: DateProperties = null,
     id: java.lang.String = null,
+    isTable: js.UndefOr[scala.Boolean] = js.undefined,
     labelingInfo: js.Array[LabelClassProperties] = null,
     labelsVisible: js.UndefOr[scala.Boolean] = js.undefined,
     layerId: scala.Int | scala.Double = null,
     legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    listMode: java.lang.String = null,
+    listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
     maxScale: scala.Int | scala.Double = null,
     maximumTrackPoints: scala.Int | scala.Double = null,
     minScale: scala.Int | scala.Double = null,
@@ -71,6 +72,7 @@ object StreamLayerProperties {
     source: CollectionProperties[GraphicProperties] = null,
     spatialReference: SpatialReferenceProperties = null,
     templates: js.Array[FeatureTemplateProperties] = null,
+    timeInfo: TimeInfoProperties = null,
     title: java.lang.String = null,
     types: js.Array[FeatureTypeProperties] = null,
     url: java.lang.String = null,
@@ -90,11 +92,12 @@ object StreamLayerProperties {
     if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
     if (historicMoment != null) __obj.updateDynamic("historicMoment")(historicMoment.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isTable)) __obj.updateDynamic("isTable")(isTable)
     if (labelingInfo != null) __obj.updateDynamic("labelingInfo")(labelingInfo)
     if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible)
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
     if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (maximumTrackPoints != null) __obj.updateDynamic("maximumTrackPoints")(maximumTrackPoints.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
@@ -113,6 +116,7 @@ object StreamLayerProperties {
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
     if (templates != null) __obj.updateDynamic("templates")(templates)
+    if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo)
     if (title != null) __obj.updateDynamic("title")(title)
     if (types != null) __obj.updateDynamic("types")(types)
     if (url != null) __obj.updateDynamic("url")(url)

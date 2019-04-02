@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait PrintProperties extends WidgetProperties {
   /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#iconClass)
+    */
+  var iconClass: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The URL of the REST endpoint of the Export Web Map Task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print.html#printServiceUrl)
@@ -37,7 +43,9 @@ object PrintProperties {
   def apply(
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    iconClass: java.lang.String = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     printServiceUrl: java.lang.String = null,
     templateOptions: TemplateOptionsProperties = null,
     view: MapViewProperties = null,
@@ -46,7 +54,9 @@ object PrintProperties {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (printServiceUrl != null) __obj.updateDynamic("printServiceUrl")(printServiceUrl)
     if (templateOptions != null) __obj.updateDynamic("templateOptions")(templateOptions)
     if (view != null) __obj.updateDynamic("view")(view)

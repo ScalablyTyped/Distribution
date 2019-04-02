@@ -13,5 +13,12 @@ trait ViewConstructor
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html)
   */
 org.scalablytyped.runtime.Instantiable0[View]
-     with org.scalablytyped.runtime.Instantiable1[/* properties */ ViewProperties, View]
+     with org.scalablytyped.runtime.Instantiable1[/* properties */ ViewProperties, View] {
+  /**
+    * Contains the collection of active views on the page. Only views that are [ready](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#ready) appear in the collection.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#views)
+    */
+  val views: Collection[View] = js.native
+}
 

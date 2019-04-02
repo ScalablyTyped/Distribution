@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 /** An object which allows two way communication with other pages. */
 trait Port extends js.Object {
   var name: java.lang.String
-  var onDisconnect: firefoxDashWebextDashBrowserLib.browserNs.eventsNs.Event
-  var onMessage: firefoxDashWebextDashBrowserLib.browserNs.eventsNs.Event
+  var onDisconnect: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function0[scala.Unit]]
+  var onMessage: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function0[scala.Unit]]
   /** This property will **only** be present on ports passed to onConnect/onConnectExternal listeners. */
   var sender: js.UndefOr[MessageSender] = js.undefined
   def disconnect(): scala.Unit
@@ -22,8 +22,8 @@ object Port {
   def apply(
     disconnect: () => scala.Unit,
     name: java.lang.String,
-    onDisconnect: firefoxDashWebextDashBrowserLib.browserNs.eventsNs.Event,
-    onMessage: firefoxDashWebextDashBrowserLib.browserNs.eventsNs.Event,
+    onDisconnect: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function0[scala.Unit]],
+    onMessage: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function0[scala.Unit]],
     postMessage: js.Object => scala.Unit,
     sender: MessageSender = null
   ): Port = {

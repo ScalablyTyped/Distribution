@@ -12,13 +12,7 @@ trait DistanceMeasurement2D extends Widget {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#iconClass)
     */
-  val iconClass: java.lang.String = js.native
-  /**
-    * The widget's default label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#label)
-    */
-  val label: java.lang.String = js.native
+  var iconClass: java.lang.String = js.native
   /**
     * Unit system (imperial, metric) or specific unit used for displaying the distance values.  **Possible Values:** metric | imperial | inches | feet | us-feet | yards | miles | nautical-miles | meters | kilometers
     *

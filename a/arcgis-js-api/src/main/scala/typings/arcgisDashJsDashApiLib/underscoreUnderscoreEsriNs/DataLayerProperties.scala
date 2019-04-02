@@ -37,6 +37,7 @@ trait DataLayerProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#spatialRelationship)
     */
   var spatialRelationship: js.UndefOr[java.lang.String] = js.undefined
+  var `type`: js.UndefOr[scala.Unit] = js.undefined
   /**
     * A where clause for the query. Any legal SQL where clause operating on the fields in the layer is allowed.
     *
@@ -51,12 +52,14 @@ object DataLayerProperties {
     geometry: GeometryProperties = null,
     name: java.lang.String = null,
     spatialRelationship: java.lang.String = null,
+    `type`: js.UndefOr[scala.Unit] = js.undefined,
     where: java.lang.String = null
   ): DataLayerProperties = {
     val __obj = js.Dynamic.literal()
     if (geometry != null) __obj.updateDynamic("geometry")(geometry)
     if (name != null) __obj.updateDynamic("name")(name)
     if (spatialRelationship != null) __obj.updateDynamic("spatialRelationship")(spatialRelationship)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
     if (where != null) __obj.updateDynamic("where")(where)
     __obj.asInstanceOf[DataLayerProperties]
   }

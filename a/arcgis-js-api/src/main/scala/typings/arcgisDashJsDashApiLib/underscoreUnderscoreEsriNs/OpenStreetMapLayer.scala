@@ -31,7 +31,7 @@ class OpenStreetMapLayerCls () extends OpenStreetMapLayer {
   /* CompleteClass */
   override var minScale: scala.Double = js.native
   /**
-    * Refresh interval of the layer in minutes. Minimum refresh interval is 0.1 minute (6 seconds). Value of `0` indicates no refresh.
+    * Refresh interval of the layer in minutes. Value of `0` indicates no refresh.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
     *

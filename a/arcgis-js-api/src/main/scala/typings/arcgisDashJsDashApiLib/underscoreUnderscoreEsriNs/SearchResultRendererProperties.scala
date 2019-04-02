@@ -28,6 +28,7 @@ object SearchResultRendererProperties {
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     showMoreResultsOpen: js.UndefOr[scala.Boolean] = js.undefined,
     viewModel: SearchViewModelProperties = null
   ): SearchResultRendererProperties = {
@@ -35,6 +36,7 @@ object SearchResultRendererProperties {
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (!js.isUndefined(showMoreResultsOpen)) __obj.updateDynamic("showMoreResultsOpen")(showMoreResultsOpen)
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
     __obj.asInstanceOf[SearchResultRendererProperties]

@@ -27,6 +27,14 @@ trait ObjectSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var anchorPosition: js.UndefOr[ObjectSymbol3DLayerAnchorPosition] = js.undefined
   /**
+    * Indicates whether the symbol layer geometry casts shadows in the scene. Setting this property to `false` will disable shadows for the symbol layer even if direct shadows are enabled in [SceneView.environment](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#castShadows)
+    *
+    * @default true
+    */
+  var castShadows: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The depth, or diameter from north to south, of the object in meters. If `undefined`, the depth will be calculated to maintain the original proportions of the object.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#depth)
@@ -49,7 +57,7 @@ trait ObjectSymbol3DLayerProperties extends Symbol3DLayerProperties {
     */
   var height: js.UndefOr[scala.Double] = js.undefined
   /**
-    * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points. If both properties are present, `primitive` takes precedence and `href` is ignored. When using the `href` property, external 3D models must be present in a specific format, which can be generated using the ArcGIS Pro SDK. [See these instructions](https://github.com/Esri/arcgis-pro-sdk-community-samples/tree/master/Map-Authoring/ExportWeb3DObjectResource#exportweb3dobjectresource) to learn how to generate a custom 3D model for use in this property.
+    * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points. If both properties are present, `primitive` takes precedence and `href` is ignored. When using the `href` property, external 3D models must be present in glTF format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
     *
@@ -83,6 +91,7 @@ object ObjectSymbol3DLayerProperties {
   def apply(
     anchor: java.lang.String = null,
     anchorPosition: ObjectSymbol3DLayerAnchorPosition = null,
+    castShadows: js.UndefOr[scala.Boolean] = js.undefined,
     depth: scala.Int | scala.Double = null,
     heading: scala.Int | scala.Double = null,
     height: scala.Int | scala.Double = null,
@@ -95,6 +104,7 @@ object ObjectSymbol3DLayerProperties {
     val __obj = js.Dynamic.literal()
     if (anchor != null) __obj.updateDynamic("anchor")(anchor)
     if (anchorPosition != null) __obj.updateDynamic("anchorPosition")(anchorPosition)
+    if (!js.isUndefined(castShadows)) __obj.updateDynamic("castShadows")(castShadows)
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
     if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])

@@ -20,8 +20,38 @@ object ^ extends js.Object {
   def applyOperation[T](document: T, operation: Operation): OperationResult[T] = js.native
   def applyOperation[T](document: T, operation: Operation, validateOperation: Validator[T]): OperationResult[T] = js.native
   def applyOperation[T](document: T, operation: Operation, validateOperation: Validator[T], mutateDocument: scala.Boolean): OperationResult[T] = js.native
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Validator[T],
+    mutateDocument: scala.Boolean,
+    banPrototypeModifications: scala.Boolean
+  ): OperationResult[T] = js.native
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: Validator[T],
+    mutateDocument: scala.Boolean,
+    banPrototypeModifications: scala.Boolean,
+    index: scala.Double
+  ): OperationResult[T] = js.native
   def applyOperation[T](document: T, operation: Operation, validateOperation: scala.Boolean): OperationResult[T] = js.native
   def applyOperation[T](document: T, operation: Operation, validateOperation: scala.Boolean, mutateDocument: scala.Boolean): OperationResult[T] = js.native
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: scala.Boolean,
+    mutateDocument: scala.Boolean,
+    banPrototypeModifications: scala.Boolean
+  ): OperationResult[T] = js.native
+  def applyOperation[T](
+    document: T,
+    operation: Operation,
+    validateOperation: scala.Boolean,
+    mutateDocument: scala.Boolean,
+    banPrototypeModifications: scala.Boolean,
+    index: scala.Double
+  ): OperationResult[T] = js.native
   def applyPatch[T](document: T, patch: js.Array[Operation]): PatchResult[T] = js.native
   def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: Validator[T]): PatchResult[T] = js.native
   def applyPatch[T](
@@ -30,6 +60,13 @@ object ^ extends js.Object {
     validateOperation: Validator[T],
     mutateDocument: scala.Boolean
   ): PatchResult[T] = js.native
+  def applyPatch[T](
+    document: T,
+    patch: js.Array[Operation],
+    validateOperation: Validator[T],
+    mutateDocument: scala.Boolean,
+    banPrototypeModifications: scala.Boolean
+  ): PatchResult[T] = js.native
   def applyPatch[T](document: T, patch: js.Array[Operation], validateOperation: scala.Boolean): PatchResult[T] = js.native
   def applyPatch[T](
     document: T,
@@ -37,7 +74,14 @@ object ^ extends js.Object {
     validateOperation: scala.Boolean,
     mutateDocument: scala.Boolean
   ): PatchResult[T] = js.native
-  def applyReducer[T](document: T, operation: Operation): T = js.native
+  def applyPatch[T](
+    document: T,
+    patch: js.Array[Operation],
+    validateOperation: scala.Boolean,
+    mutateDocument: scala.Boolean,
+    banPrototypeModifications: scala.Boolean
+  ): PatchResult[T] = js.native
+  def applyReducer[T](document: T, operation: Operation, index: scala.Double): T = js.native
   def getValueByPointer(document: js.Any, pointer: java.lang.String): js.Any = js.native
   def validate[T](sequence: js.Array[Operation]): fastDashJsonDashPatchLib.libHelpersMod.PatchError = js.native
   def validate[T](sequence: js.Array[Operation], document: T): fastDashJsonDashPatchLib.libHelpersMod.PatchError = js.native

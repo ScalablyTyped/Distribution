@@ -15,6 +15,12 @@ trait MosaicRuleProperties extends js.Object {
     */
   var ascending: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * The rendering rule applied on items before mosaicking.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#itemRenderingRule)
+    */
+  var itemRenderingRule: js.UndefOr[RasterFunctionProperties] = js.undefined
+  /**
     * An array of raster Ids. All the rasters with the given list of raster Ids are selected to participate in the mosaic. The rasters will be visible at all pixel sizes regardless of the minimum and maximum pixel size range of the locked rasters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#lockRasterIds)
@@ -78,6 +84,7 @@ object MosaicRuleProperties {
   @scala.inline
   def apply(
     ascending: js.UndefOr[scala.Boolean] = js.undefined,
+    itemRenderingRule: RasterFunctionProperties = null,
     lockRasterIds: js.Array[scala.Double] = null,
     method: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.center | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.nadir | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.viewpoint | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.attribute | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`lock-raster` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.northwest | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.seamline = null,
     multidimensionalDefinition: js.Array[DimensionalDefinitionProperties] = null,
@@ -90,6 +97,7 @@ object MosaicRuleProperties {
   ): MosaicRuleProperties = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
+    if (itemRenderingRule != null) __obj.updateDynamic("itemRenderingRule")(itemRenderingRule)
     if (lockRasterIds != null) __obj.updateDynamic("lockRasterIds")(lockRasterIds)
     if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     if (multidimensionalDefinition != null) __obj.updateDynamic("multidimensionalDefinition")(multidimensionalDefinition)

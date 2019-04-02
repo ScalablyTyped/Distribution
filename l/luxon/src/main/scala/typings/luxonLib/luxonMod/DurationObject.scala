@@ -12,7 +12,7 @@ trait DurationObject
 object DurationObject {
   @scala.inline
   def apply(
-    conversionAccuracy: java.lang.String = null,
+    conversionAccuracy: ConversionAccuracy = null,
     day: scala.Int | scala.Double = null,
     days: scala.Int | scala.Double = null,
     hour: scala.Int | scala.Double = null,
@@ -24,7 +24,7 @@ object DurationObject {
     minutes: scala.Int | scala.Double = null,
     month: scala.Int | scala.Double = null,
     months: scala.Int | scala.Double = null,
-    numberingSystem: java.lang.String = null,
+    numberingSystem: NumberingSystem = null,
     quarter: scala.Int | scala.Double = null,
     quarters: scala.Int | scala.Double = null,
     second: scala.Int | scala.Double = null,

@@ -6,5 +6,6 @@
 //                 George Kalpakas <https://github.com/gkalpak>
 //                 Paul Huynh <https://github.com/pheromonez>
 //                 Alexander Futász <https://github.com/aldafu>
+//                 ExE Boss <https://github.com/ExE-Boss>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

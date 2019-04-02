@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait MapView
   extends View
+     with MapViewBase
      with BreakpointsOwner {
   /**
     * Represents the view's center point; when setting the center, you may pass a [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) instance or an array of numbers representing a longitude/latitude pair (`[-100.4593, 36.9014]`). Setting the center immediately changes the current view. For animating the view, see [goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo).  If set in the constructor, this property will be ignored if the [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#viewpoint) or [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent) properties are also set in the constructor.  The returned [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) object is always in the spatial reference of the [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#map) and may be modified internally. To persist the returned object, create a clone using [Point.clone()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html#clone).
@@ -77,60 +78,16 @@ trait MapView
     *
     */
   def focus(): scala.Unit = js.native
-  def goTo(target: Geometry): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: Geometry, options: MapViewGoToOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: Graphic): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: Graphic, options: MapViewGoToOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: MapViewGoToTarget): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: MapViewGoToTarget, options: MapViewGoToOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: Viewpoint): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: Viewpoint, options: MapViewGoToOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  /**
-    * Sets the view to a given target. The target parameter can be one of the following:
-    *   * `[longitude, latitude]` pair of coordinates
-    *   * [Geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html) (or array of [Geometry[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html))
-    *   * [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) (or array of [Graphic[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html))
-    *   * [Viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-Viewpoint.html)
-    *   * Object with a combination of `target`, `center` and `scale` properties (with `target` being any of the types listed above). The `center` property is provided as a convenience to animate the [MapView.center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#center) and is equivalent to specifying the `target` with the center [Point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html).
-    *
-    *
-    * This function returns a promise which resolves as soon as the new view has been set to the target. If the transition is animated, then the ongoing animation can be obtained using [MapView.animation](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#animation).  If a tiled map service is used as the basemap and `snapToZoom` property is set to `true` in [constraints](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints), the `goTo` method will zoom in to fit the defined `target`. If `snapToZoom` property is set to `false`, the `goTo` method will zoom to the exact `target`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo)
-    *
-    * @param target The target location/viewpoint to animate to. When using an object for `target`, use the properties in the table below.
-    * @param target.target The target of the animation.
-    * @param target.center The [MapView.center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#center) to go to.
-    * @param target.scale The [MapView.scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) to go to.
-    * @param target.zoom The [MapView.zoom](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#zoom) to go to.
-    * @param options Animation options. See properties below for object specifications.
-    * @param options.animate Indicates if the transition to the new view should be animated. If set to false, `duration` and `easing` properties are ignored.
-    * @param options.duration The duration of the animation in milliseconds.
-    * @param options.easing The easing function used for the animation. See [easing functions](https://easings.net/) for graphical representations of these functions.  **Possible Values:** linear | ease | ease-in | ease-out | ease-in-out
-    *
-    */
-  def goTo(target: js.Array[scala.Double | Geometry | Graphic]): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def goTo(target: js.Array[scala.Double | Geometry | Graphic], options: MapViewGoToOptions): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  /**
-    * Indicates whether there is an event listener on the instance that matches the provided event name.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hasEventListener)
-    *
-    *
-    */
-  def hasEventListener(): scala.Unit = js.native
   /**
     * Returns the topmost feature from each layer that intersects the specified screen coordinates. The following layer types will return a result if a hit is made on an intersecting feature: [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html), [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [GeoRSSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoRSSLayer.html), [KMLLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html), and [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html).  At 4.6 and later, a hit test will always return a result from [VectorTileLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html). However, the result will only indicate the ID and the name of the layer within the [vector tile style](https://doc.arcgis.com/en/arcgis-online/reference/tile-layers.htm#ESRI_SECTION1_8F68399EB47B48FF9EF46719FCC96978) that intersects the screen point. Detailed attribute and spatial information about the actual feature represented in the layer is not returned. HitTest results returned from VectorTileLayers are primarily used for [Vector tile style editor applications](https://maps.esri.com/jg/VectorBasemapStyleEditor/index.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#hitTest)
     *
-    * @param screenPoint The screen coordinates of the click on the view.
-    * @param screenPoint.x The horizontal screen coordinate of the click on the view.
-    * @param screenPoint.y The vertical screen coordinate of the click on the view.
+    * @param screenPoint The screen coordinates (or native mouse event) of the click on the view.
     *
     */
-  def hitTest(screenPoint: MapViewHitTestScreenPoint): arcgisDashJsDashApiLib.IPromise[HitTestResult] = js.native
-  def on(`type`: java.lang.String, modifiersOrHandler: EventHandler): arcgisDashJsDashApiLib.IHandle = js.native
+  def hitTest(screenPoint: ScreenPoint): arcgisDashJsDashApiLib.IPromise[HitTestResult] = js.native
+  def hitTest(screenPoint: stdLib.MouseEvent): arcgisDashJsDashApiLib.IPromise[HitTestResult] = js.native
   def on(`type`: java.lang.String, modifiersOrHandler: EventHandler, handler: EventHandler): arcgisDashJsDashApiLib.IHandle = js.native
   /**
     * Registers an event handler on the instance. Call this method to hook an event with a listener. See the [Events summary table](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#events-summary) for a list of listened events.
@@ -144,7 +101,6 @@ trait MapView
     */
   def on(`type`: java.lang.String, modifiersOrHandler: js.Array[java.lang.String]): arcgisDashJsDashApiLib.IHandle = js.native
   def on(`type`: java.lang.String, modifiersOrHandler: js.Array[java.lang.String], handler: EventHandler): arcgisDashJsDashApiLib.IHandle = js.native
-  def on(`type`: js.Array[java.lang.String], modifiersOrHandler: EventHandler): arcgisDashJsDashApiLib.IHandle = js.native
   def on(`type`: js.Array[java.lang.String], modifiersOrHandler: EventHandler, handler: EventHandler): arcgisDashJsDashApiLib.IHandle = js.native
   def on(`type`: js.Array[java.lang.String], modifiersOrHandler: js.Array[java.lang.String]): arcgisDashJsDashApiLib.IHandle = js.native
   def on(
@@ -367,27 +323,24 @@ trait MapView
   def takeScreenshot(): arcgisDashJsDashApiLib.IPromise[Screenshot] = js.native
   def takeScreenshot(options: MapViewTakeScreenshotOptions): arcgisDashJsDashApiLib.IPromise[Screenshot] = js.native
   /**
-    * Converts the given screen point to a [map point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html). The [screen point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-ScreenPoint.html) represents a point in terms of pixels relative to the top-left corner of the view.
+    * Converts the given screen point to a [map point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html). The screen point represents a point in terms of pixels relative to the top-left corner of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#toMap)
     *
-    * @param screenPoint The screen coordinates to convert.
-    * @param screenPoint.x The horizontal screen coordinate to convert.
-    * @param screenPoint.y The vertical screen coordinate to convert.
+    * @param screenPoint The location on the screen (or native mouse event) to convert.
     *
     */
-  def toMap(screenPoint: MapViewToMapScreenPoint): Point = js.native
+  def toMap(screenPoint: ScreenPoint): Point = js.native
+  def toMap(screenPoint: stdLib.MouseEvent): Point = js.native
   /**
-    * Converts the given [map point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) to a [screen point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-ScreenPoint.html). The [screen point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-ScreenPoint.html) represents a point in terms of pixels relative to the top-left corner of the view.
+    * Converts the given [map point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) to a screen point. The screen point represents a point in terms of pixels relative to the top-left corner of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#toScreen)
     *
     * @param point A point geometry.
-    * @param screenPoint ScreenPoint object that will reference the result.
     *
     */
   def toScreen(point: Point): ScreenPoint = js.native
-  def toScreen(point: Point, screenPoint: ScreenPoint): ScreenPoint = js.native
 }
 
 @JSGlobal("__esri.MapView")

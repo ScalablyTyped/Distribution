@@ -9,6 +9,12 @@ trait DirectionsProperties
   extends WidgetProperties
      with GoToProperties {
   /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#iconClass)
+    */
+  var iconClass: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The maximum number of stops allowed for routing.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#maxStops)
@@ -64,7 +70,9 @@ object DirectionsProperties {
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     goToOverride: GoToOverride = null,
+    iconClass: java.lang.String = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     maxStops: scala.Int | scala.Double = null,
     routeServiceUrl: java.lang.String = null,
     routeSymbol: SimpleLineSymbolProperties = null,
@@ -77,7 +85,9 @@ object DirectionsProperties {
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (maxStops != null) __obj.updateDynamic("maxStops")(maxStops.asInstanceOf[js.Any])
     if (routeServiceUrl != null) __obj.updateDynamic("routeServiceUrl")(routeServiceUrl)
     if (routeSymbol != null) __obj.updateDynamic("routeSymbol")(routeSymbol)

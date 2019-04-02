@@ -131,8 +131,8 @@ trait SearchViewModelProperties extends GoToProperties {
     */
   var searchTerm: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The Search widget may be used to search features in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) or geocode locations with a [Locator](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html). The `sources` property defines the sources from which to search for the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#view) specified by the Search widget instance. There are two types of sources:
-    *   * [FeatureLayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-FeatureLayerSearchSource.html)
+    * The Search widget may be used to search features in a [Layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html) or geocode locations with a [Locator](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html). The `sources` property defines the sources from which to search for the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#view) specified by the Search widget instance. There are two types of sources:
+    *   * [LayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html)
     *   * [LocatorSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html)
     *
     *
@@ -141,7 +141,7 @@ trait SearchViewModelProperties extends GoToProperties {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#sources)
     */
   var sources: js.UndefOr[
-    CollectionProperties[FeatureLayerSearchSourceProperties | LocatorSearchSourceProperties]
+    CollectionProperties[LayerSearchSourceProperties | LocatorSearchSourceProperties]
   ] = js.undefined
   /**
     * The millisecond delay after keyup and before making a [suggest](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#suggest) network request.
@@ -189,7 +189,7 @@ object SearchViewModelProperties {
     resultGraphicEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     searchAllEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     searchTerm: java.lang.String = null,
-    sources: CollectionProperties[FeatureLayerSearchSourceProperties | LocatorSearchSourceProperties] = null,
+    sources: CollectionProperties[LayerSearchSourceProperties | LocatorSearchSourceProperties] = null,
     suggestionDelay: scala.Int | scala.Double = null,
     suggestionsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null

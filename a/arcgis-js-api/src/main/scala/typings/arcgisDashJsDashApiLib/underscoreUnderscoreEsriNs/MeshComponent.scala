@@ -14,11 +14,11 @@ trait MeshComponent extends Accessor {
     */
   var faces: stdLib.Uint32Array = js.native
   /**
-    * The material determines how the component is visualized. Materials specify a color that may either be a single color value (a [ValueMeshColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-ValueMeshColor.html)) or an image ( an [ImageMeshColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-ImageMeshColor.html)), which is mapped to the uv coordinate specified for each vertex in the mesh vertex attributes.  The material property supports a number of convenience autocast types, including hex color strings and well known color strings (autocasts to [ValueMeshColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-ValueMeshColor.html)), or strings representing urls, HTMLImageElements or HTMLCanvasElements (autocasts to [ImageMeshColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-ImageMeshColor.html)).
+    * The material determines how the component is visualized.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshComponent.html#material)
     */
-  var material: MeshComponentMaterial = js.native
+  var material: MeshMaterial = js.native
   /**
     * Specifies the type of normals used for lighting. This determines whether the object has a smooth or an angular appearance. The following shading types are supported:
     *

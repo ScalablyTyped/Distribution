@@ -17,7 +17,7 @@ trait DrawCreateDrawOptions
     * click | Vertices are added when the pointer is clicked.
     *
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-Draw.html#create)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-Draw.html#create)
     */
   var mode: js.UndefOr[java.lang.String] = js.undefined
 }

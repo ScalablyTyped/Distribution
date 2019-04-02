@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait View
   extends Accessor
      with corePromise
+     with Evented
      with DOMContainer {
   /**
     * Collection containing a flat list of all the created [LayerViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) related to the basemap, operational layers, and group layers in this view.
@@ -28,12 +29,6 @@ trait View
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#graphics)
     */
   var graphics: Collection[Graphic] = js.native
-  /**
-    * The view for the ground of the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#groundView)
-    */
-  val groundView: GroundView = js.native
   /**
     * Options to configure input handling of the View.
     *
@@ -78,7 +73,7 @@ trait View
     * When `true`, this property indicates whether the view successfully satisfied all dependencies, signaling that the following conditions are met.
     *   * The view has a [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#map). If [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#map) is a [WebMap](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html) or a [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html), then the map or scene must be [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#loaded).
     *   * The view has a [container](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#container) with a size greater than `0`.
-    *   * The view has a [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#spatialReference).
+    *   * The view has a [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#spatialReference), a [center](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#center), and a [scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#scale). These also can be inferred by setting an [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#extent).
     *
     *
     * When a view becomes ready it will resolve itself and invoke the callback defined in [when()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#when) where code can execute on a working view. Subsequent changes to a view's readiness would typically be handled by watching `view.ready` and providing logic for cases where the [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#map) or [container](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#container) change.
@@ -114,8 +109,6 @@ trait View
     * Indication whether the view is animating, being interacted with or resizing.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#stationary)
-    *
-    * @default true
     */
   val stationary: scala.Boolean = js.native
   /**

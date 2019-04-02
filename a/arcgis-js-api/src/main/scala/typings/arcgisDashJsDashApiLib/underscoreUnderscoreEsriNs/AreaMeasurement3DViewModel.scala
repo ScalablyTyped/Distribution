@@ -21,6 +21,7 @@ trait AreaMeasurement3DViewModel extends Accessor {
     * disabled | not ready yet
     * ready | ready for measuring
     * measuring | currently measuring
+    * measured | measuring has finished
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#state)

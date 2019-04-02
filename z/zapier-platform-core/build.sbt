@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zapier-platform-core"
-version := "8.0.1-8bdc47"
+version := "8.0.1-ce5e6d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,12 +8,12 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-986805",
   "org.scalablytyped" %%% "content-disposition" % "0.5-dt-20180214Z-20dd2b",
-  "org.scalablytyped" %%% "dotenv" % "6.1-dt-20190329Z-a6fc4f",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-3bb744",
+  "org.scalablytyped" %%% "dotenv" % "6.1-dt-20190329Z-1aa814",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-57c0e7",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
-  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-5525e1",
-  "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-6adbd7",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-2db1bb",
+  "org.scalablytyped" %%% "semver" % "6.0-dt-20190330Z-1b8b1f",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

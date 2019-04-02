@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FieldInfoFormatConstructor
   extends /**
-  * An object used with numerical or date fields to provide more detail about how the value should be displayed in a popup.
+  * The `FieldInfoFormat` class is used with numerical or date fields to provide more detail about how the value should be displayed in a popup.
   *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-FieldInfo-Format.html)
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-support-FieldInfoFormat.html)
   */
 org.scalablytyped.runtime.Instantiable0[FieldInfoFormat]
      with org.scalablytyped.runtime.Instantiable1[/* properties */ FieldInfoFormatProperties, FieldInfoFormat] {

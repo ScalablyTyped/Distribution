@@ -20,6 +20,9 @@ trait PictureMarkerSymbolProperties extends MarkerSymbolProperties {
     *   * Use an [image](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#url) hosted on the same domain as the application.
     *   * Install a proxy.
     *
+    *
+    * > **Known Limitations**  Using this property to render SVG paths as images is not supported in IE11.
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PictureMarkerSymbol.html#url)
     */
   var url: js.UndefOr[java.lang.String] = js.undefined

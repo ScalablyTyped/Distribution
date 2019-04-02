@@ -56,8 +56,8 @@ trait Geoprocessor extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def checkJobStatus(jobId: java.lang.String): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def checkJobStatus(jobId: java.lang.String, requestOptions: js.Any): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def checkJobStatus(jobId: java.lang.String): arcgisDashJsDashApiLib.IPromise[JobInfo] = js.native
+  def checkJobStatus(jobId: java.lang.String, requestOptions: js.Any): arcgisDashJsDashApiLib.IPromise[JobInfo] = js.native
   /**
     * Sends a request to the server to execute a synchronous GP task.
     *
@@ -141,8 +141,8 @@ trait Geoprocessor extends Task {
     * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request (will override requestOptions defined during construction).
     *
     */
-  def submitJob(params: js.Any): arcgisDashJsDashApiLib.IPromise[_] = js.native
-  def submitJob(params: js.Any, requestOptions: js.Any): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  def submitJob(params: js.Any): arcgisDashJsDashApiLib.IPromise[JobInfo] = js.native
+  def submitJob(params: js.Any, requestOptions: js.Any): arcgisDashJsDashApiLib.IPromise[JobInfo] = js.native
 }
 
 @JSGlobal("__esri.Geoprocessor")

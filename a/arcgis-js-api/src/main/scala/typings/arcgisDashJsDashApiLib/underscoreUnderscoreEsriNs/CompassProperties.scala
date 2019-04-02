@@ -9,6 +9,12 @@ trait CompassProperties
   extends WidgetProperties
      with GoToProperties {
   /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html#iconClass)
+    */
+  var iconClass: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The view in which the Compass obtains and indicates camera [heading](https://developers.arcgis.com/javascript/latest/api-reference/esri-Camera.html#heading), using a (SceneView) or rotation (MapView).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Compass.html#view)
@@ -28,7 +34,9 @@ object CompassProperties {
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     goToOverride: GoToOverride = null,
+    iconClass: java.lang.String = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     view: MapViewProperties | SceneViewProperties = null,
     viewModel: CompassViewModelProperties = null
   ): CompassProperties = {
@@ -36,7 +44,9 @@ object CompassProperties {
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
     __obj.asInstanceOf[CompassProperties]

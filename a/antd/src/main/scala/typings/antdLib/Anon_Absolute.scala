@@ -614,7 +614,7 @@ trait Anon_Absolute extends js.Object {
     antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hanging | antdLib.antdLibStrings.middle | antdLib.antdLibStrings.alphabetic | antdLib.antdLibStrings.ideographic | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.central | antdLib.antdLibStrings.mathematical | antdLib.antdLibStrings.`text-after-edge` | antdLib.antdLibStrings.`text-before-edge` | antdLib.antdLibStrings.`no-change` | antdLib.antdLibStrings.`reset-size` | antdLib.antdLibStrings.`use-script`
   ] = js.undefined
   var emptyCells: js.UndefOr[
-    antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.show | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.hide
+    antdLib.antdLibStrings.show | antdLib.antdLibStrings.hide | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var fill: js.UndefOr[java.lang.String] = js.undefined
   var fillOpacity: js.UndefOr[

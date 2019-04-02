@@ -84,6 +84,7 @@ object CoordinateConversionProperties {
     formats: CollectionProperties[Format] = null,
     goToOverride: GoToOverride = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     mode: java.lang.String = null,
     multipleConversions: js.UndefOr[scala.Boolean] = js.undefined,
     orientation: java.lang.String = null,
@@ -99,6 +100,7 @@ object CoordinateConversionProperties {
     if (formats != null) __obj.updateDynamic("formats")(formats.asInstanceOf[js.Any])
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (!js.isUndefined(multipleConversions)) __obj.updateDynamic("multipleConversions")(multipleConversions)
     if (orientation != null) __obj.updateDynamic("orientation")(orientation)

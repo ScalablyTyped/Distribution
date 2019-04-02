@@ -18,25 +18,25 @@ trait Map
   /**
     * Specifies a basemap for the map. The basemap is a set of tile layers that give geographic context to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) and the other [operational layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#layers) in the map.  This value can be an instance of [Basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html) or one of the strings listed in the table below.
     *
-    * Value | Description
-    * ------|------------
-    * streets | ![basemap-streets](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/streets.jpg)
-    * satellite | ![basemap-satellite](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/satellite.jpg)
-    * hybrid | ![basemap-hybrid](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/hybrid.jpg)
-    * topo | ![basemap-topo](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/topo.jpg)
-    * gray | ![basemap-gray](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/gray.jpg)
-    * dark-gray | ![basemap-dark-gray](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/dark-gray.jpg)
-    * oceans | ![basemap-oceans](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/oceans.jpg)
-    * national-geographic | ![basemap-national-geographic](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/national-geographic.jpg)
-    * terrain | ![basemap-terrain](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/terrain.jpg)
-    * osm | ![basemap-osm](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/osm.jpg)
-    * dark-gray-vector | ![dark-gray-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/dark-gray.jpg)
-    * gray-vector | ![gray-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/gray.jpg)
-    * streets-vector | ![streets-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/streets.jpg)
-    * topo-vector | ![topo-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/topo.jpg)
-    * streets-night-vector | ![streets-night-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/streets-night.jpg)
-    * streets-relief-vector | ![streets-relief-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/streets-relief.jpg)
-    * streets-navigation-vector | ![streets-navigation-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/streets-navigation.jpg)
+    * Value | Source | Thumbnail
+    * ------|------- |----------
+    * `topo`                | https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer   | ![basemap-topo](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/topo.jpg)
+    * `streets`             | https://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer | ![basemap-streets](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/streets.jpg)
+    * `satellite`           | https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer    | ![basemap-satellite](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/satellite.jpg)
+    * `hybrid`              | https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer   and  https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer            | ![basemap-hybrid](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/hybrid.jpg)
+    * `dark-gray`           | https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer        and  https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer   | ![basemap-dark-gray](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/dark-gray.jpg)
+    * `gray`                | https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer       and  https://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer | ![basemap-gray](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/gray.jpg)
+    * `national-geographic` | https://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer | ![basemap-national-geographic](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/national-geographic.jpg)
+    * `oceans`              | https://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Reference/MapServer             and  https://services.arcgisonline.com/arcgis/rest/services/Ocean/World_Ocean_Base/MapServer | ![basemap-oceans](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/oceans.jpg)
+    * `osm`                 | [OpenStreetMapLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-OpenStreetMapLayer.html) | ![basemap-osm](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/osm.jpg)
+    * `terrain`             | https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Reference_Overlay/MapServer       and  https://services.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer | ![basemap-terrain](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/terrain.jpg)
+    * `dark-gray-vector`          | [Dark Gray Canvas [v2]](https://www.arcgis.com/home/item.html?id=c11ce4f7801740b2905eb03ddc963ac8)         | ![dark-gray-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/dark-gray.jpg)
+    * `gray-vector`               | [Light Gray Canvas [v2]](https://www.arcgis.com/home/item.html?id=8a2cba3b0ebf4140b7c0dc5ee149549a)        | ![gray-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/gray.jpg)
+    * `streets-vector`            | [World Street Map [v2]](https://www.arcgis.com/home/item.html?id=de26a3cf4cc9451298ea173c4b324736)         | ![streets-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/streets.jpg)
+    * `streets-night-vector`      | [World Street Map (Night) [v2]](https://www.arcgis.com/home/item.html?id=86f556a2d1fd468181855a35e344567f) | ![streets-night-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/streets-night.jpg)
+    * `streets-navigation-vector` | [World Navigation Map [v2]](https://www.arcgis.com/home/item.html?id=63c47b7177f946b49902c24129b87252)     | ![streets-navigation-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/streets-navigation.jpg)
+    * `topo-vector`               | https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer   and  [World Topographic Map [v2]](https://www.arcgis.com/home/item.html?id=7dc6cea0b1764a1f9af2e679f642f0f5) | ![topo-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/topo.jpg)
+    * `streets-relief-vector`     | https://services.arcgisonline.com/arcgis/rest/services/Elevation/World_Hillshade/MapServer   and  [World Street Map (with Relief) [v2]](https://www.arcgis.com/home/item.html?id=b266e6d17fc345b498345613930fbd76) | ![streets-relief-vector](https://developers.arcgis.com/javascript/assets/img/apiref/basemap/streets-relief.jpg)
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap)

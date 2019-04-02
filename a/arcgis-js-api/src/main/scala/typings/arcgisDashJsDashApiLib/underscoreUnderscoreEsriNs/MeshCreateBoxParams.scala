@@ -26,11 +26,17 @@ trait MeshCreateBoxParams
     */
   var material: js.UndefOr[MeshCreateBoxParamsMaterial] = js.undefined
   /**
-    * A uniform size value or an object containing individual values width, height and depth. The unit of the size values is derived from the spatial reference of the provided location.
+    * A uniform size value or an object containing individual values width, height and depth. The unit of the size values is derived from the spatial reference of the provided location, unless a unit is specified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
     */
   var size: js.UndefOr[scala.Double | MeshCreateBoxParamsSize] = js.undefined
+  /**
+    * The unit of the size (defaults to the unit of the location's spatial reference).  **Possible Values:** millimeters | centimeters | decimeters | meters | kilometers | inches | feet | yards | miles | nautical-miles | us-feet
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createBox)
+    */
+  var unit: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object MeshCreateBoxParams {
@@ -42,13 +48,15 @@ object MeshCreateBoxParams {
     geographic: js.UndefOr[scala.Boolean] = js.undefined,
     imageFace: java.lang.String = null,
     material: MeshCreateBoxParamsMaterial = null,
-    size: scala.Double | MeshCreateBoxParamsSize = null
+    size: scala.Double | MeshCreateBoxParamsSize = null,
+    unit: java.lang.String = null
   ): MeshCreateBoxParams = {
     val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     if (!js.isUndefined(geographic)) __obj.updateDynamic("geographic")(geographic)
     if (imageFace != null) __obj.updateDynamic("imageFace")(imageFace)
     if (material != null) __obj.updateDynamic("material")(material)
     if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit)
     __obj.asInstanceOf[MeshCreateBoxParams]
   }
 }

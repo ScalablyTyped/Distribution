@@ -112,6 +112,7 @@ object ExpandProperties {
     group: java.lang.String = null,
     iconNumber: scala.Int | scala.Double = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     mode: java.lang.String = null,
     view: MapViewProperties | SceneViewProperties = null,
     viewModel: ExpandViewModelProperties = null
@@ -129,6 +130,7 @@ object ExpandProperties {
     if (group != null) __obj.updateDynamic("group")(group)
     if (iconNumber != null) __obj.updateDynamic("iconNumber")(iconNumber.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)

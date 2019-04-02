@@ -77,6 +77,7 @@ object LocateProperties {
     graphic: GraphicProperties = null,
     iconClass: java.lang.String = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     scale: scala.Int | scala.Double = null,
     useHeadingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null,
@@ -91,6 +92,7 @@ object LocateProperties {
     if (graphic != null) __obj.updateDynamic("graphic")(graphic)
     if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (!js.isUndefined(useHeadingEnabled)) __obj.updateDynamic("useHeadingEnabled")(useHeadingEnabled)
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])

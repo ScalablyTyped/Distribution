@@ -8,6 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CSVLayerView extends LayerView {
   /**
+    * The effect applied to the layer view. The effect allows for the selection of features via a [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#filter), and an [includedEffect](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#includedEffect) and [excludedEffect](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureEffect.html#excludedEffect) are applied to those features that respectively pass or fail the filter requirements.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html#effect)
+    */
+  var effect: FeatureEffect = js.native
+  /**
+    * The [attribute](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#where), [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#geometry), and [time extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-support-FeatureFilter.html#timeExtent) filter. Only the features that satisfy the filter are displayed on the view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html#filter)
+    */
+  var filter: FeatureFilter = js.native
+  /**
     * The maximum number of features that can be displayed at a time. This setting currently only applies to SceneView. By default, the maximum number of features is estimated automatically depending on the symbology, geometry complexity, memory consumption and display quality profile.  Changing this setting to a higher value may lead to a significant decrease in performance and increase in memory usage.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-CSVLayerView.html#maximumNumberOfFeatures)
@@ -27,10 +39,10 @@ trait CSVLayerView extends LayerView {
     * @param target The feature(s) to highlight. When passing a graphic or array of graphics, each feature must have a valid `objectID`. You may alternatively pass one or more objectIDs as a single number or an array.
     *
     */
-  def highlight(): js.Any = js.native
-  def highlight(target: Graphic): js.Any = js.native
-  def highlight(target: js.Array[scala.Double | Graphic]): js.Any = js.native
-  def highlight(target: scala.Double): js.Any = js.native
+  def highlight(): Handle = js.native
+  def highlight(target: Graphic): Handle = js.native
+  def highlight(target: js.Array[scala.Double | Graphic]): Handle = js.native
+  def highlight(target: scala.Double): Handle = js.native
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against features available for drawing in the layer view and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query.
     * > **Known Limitations**
@@ -107,11 +119,5 @@ trait CSVLayerView extends LayerView {
   def queryObjectIds(): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
   def queryObjectIds(params: Query): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
   def queryObjectIds(params: QueryProperties): arcgisDashJsDashApiLib.IPromise[js.Array[scala.Double]] = js.native
-}
-
-@JSGlobal("__esri.CSVLayerView")
-@js.native
-class CSVLayerViewCls () extends CSVLayerView {
-  def this(properties: CSVLayerViewProperties) = this()
 }
 

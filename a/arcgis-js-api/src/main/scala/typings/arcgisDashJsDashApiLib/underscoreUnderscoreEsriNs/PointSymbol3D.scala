@@ -17,7 +17,7 @@ trait PointSymbol3D
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#callout)
     */
-  var callout: Callout3D = js.native
+  var callout: LineCallout3D = js.native
   /**
     * For PointSymbol3D the type is always `point-3d`.
     *

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "avvio"
-version := "6.2.1-2517fb"
+version := "6.2.1-1b9f11"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "archy" % "0.0-unknown-dt-20190322Z-751faa",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
   "org.scalablytyped" %%% "fastq" % "1.6.0-da4a5e",
-  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

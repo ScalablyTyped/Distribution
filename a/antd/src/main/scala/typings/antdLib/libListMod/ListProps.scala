@@ -5,11 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ListProps extends js.Object {
+trait ListProps[T] extends js.Object {
   var bordered: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var dataSource: js.Any
+  var dataSource: js.Array[T]
   var extra: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var grid: js.UndefOr[ListGridType] = js.undefined
@@ -23,17 +23,17 @@ trait ListProps extends js.Object {
     antdLib.libPaginationPaginationMod.PaginationConfig | antdLib.antdLibNumbers.`false`
   ] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
-  var renderItem: js.Any
   var rowKey: js.UndefOr[js.Any] = js.undefined
   var size: js.UndefOr[ListSize] = js.undefined
   var split: js.UndefOr[scala.Boolean] = js.undefined
+  def renderItem(item: T, index: scala.Double): reactLib.reactMod.ReactNs.ReactNode
 }
 
 object ListProps {
   @scala.inline
-  def apply(
-    dataSource: js.Any,
-    renderItem: js.Any,
+  def apply[T](
+    dataSource: js.Array[T],
+    renderItem: (T, scala.Double) => reactLib.reactMod.ReactNs.ReactNode,
     bordered: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     className: java.lang.String = null,
@@ -51,8 +51,8 @@ object ListProps {
     rowKey: js.Any = null,
     size: ListSize = null,
     split: js.UndefOr[scala.Boolean] = js.undefined
-  ): ListProps = {
-    val __obj = js.Dynamic.literal(dataSource = dataSource, renderItem = renderItem)
+  ): ListProps[T] = {
+    val __obj = js.Dynamic.literal(dataSource = dataSource, renderItem = js.Any.fromFunction2(renderItem))
     if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (className != null) __obj.updateDynamic("className")(className)
@@ -70,7 +70,7 @@ object ListProps {
     if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey)
     if (size != null) __obj.updateDynamic("size")(size)
     if (!js.isUndefined(split)) __obj.updateDynamic("split")(split)
-    __obj.asInstanceOf[ListProps]
+    __obj.asInstanceOf[ListProps[T]]
   }
 }
 

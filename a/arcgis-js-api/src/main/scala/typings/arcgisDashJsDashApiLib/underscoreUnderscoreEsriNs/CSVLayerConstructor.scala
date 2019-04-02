@@ -13,5 +13,7 @@ trait CSVLayerConstructor
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html)
   */
 org.scalablytyped.runtime.Instantiable0[CSVLayer]
-     with org.scalablytyped.runtime.Instantiable1[/* properties */ CSVLayerProperties, CSVLayer]
+     with org.scalablytyped.runtime.Instantiable1[/* properties */ CSVLayerProperties, CSVLayer] {
+  def fromJSON(json: js.Any): CSVLayer = js.native
+}
 

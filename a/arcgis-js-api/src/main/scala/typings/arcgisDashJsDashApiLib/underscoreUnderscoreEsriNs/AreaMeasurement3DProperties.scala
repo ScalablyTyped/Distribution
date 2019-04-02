@@ -38,6 +38,7 @@ object AreaMeasurement3DProperties {
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     unit: java.lang.String = null,
     unitOptions: js.Array[java.lang.String] = null,
     view: SceneViewProperties = null,
@@ -47,6 +48,7 @@ object AreaMeasurement3DProperties {
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (unit != null) __obj.updateDynamic("unit")(unit)
     if (unitOptions != null) __obj.updateDynamic("unitOptions")(unitOptions)
     if (view != null) __obj.updateDynamic("view")(view)

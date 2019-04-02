@@ -13,5 +13,7 @@ trait ServiceAreaParametersConstructor
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html)
   */
 org.scalablytyped.runtime.Instantiable0[ServiceAreaParameters]
-     with org.scalablytyped.runtime.Instantiable1[/* properties */ ServiceAreaParametersProperties, ServiceAreaParameters]
+     with org.scalablytyped.runtime.Instantiable1[/* properties */ ServiceAreaParametersProperties, ServiceAreaParameters] {
+  def fromJSON(json: js.Any): ServiceAreaParameters = js.native
+}
 

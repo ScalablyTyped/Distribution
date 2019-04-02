@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait FillSymbol3DLayerProperties extends Symbol3DLayerProperties {
   /**
+    * Indicates whether the symbol layer geometry casts shadows in the scene. Setting this property to `false` will disable shadows for the symbol layer even if direct shadows are enabled in [SceneView.environment](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment).  This property applies only to [MeshSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MeshSymbol3D.html) symbols.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#castShadows)
+    *
+    * @default true
+    */
+  var castShadows: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Sets the contour edges on 3D Objects. This is only applicable for [MeshSymbol3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MeshSymbol3D.html).  ![symbol3D-edges-solid](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbol3d-edges-solid-2.png)
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html#edges)
@@ -23,11 +31,13 @@ trait FillSymbol3DLayerProperties extends Symbol3DLayerProperties {
 object FillSymbol3DLayerProperties {
   @scala.inline
   def apply(
+    castShadows: js.UndefOr[scala.Boolean] = js.undefined,
     edges: Edges3DProperties = null,
     material: js.Any = null,
     outline: FillSymbol3DLayerOutlineProperties = null
   ): FillSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(castShadows)) __obj.updateDynamic("castShadows")(castShadows)
     if (edges != null) __obj.updateDynamic("edges")(edges)
     if (material != null) __obj.updateDynamic("material")(material)
     if (outline != null) __obj.updateDynamic("outline")(outline)

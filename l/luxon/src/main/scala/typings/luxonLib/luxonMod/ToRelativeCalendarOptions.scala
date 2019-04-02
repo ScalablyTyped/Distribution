@@ -10,7 +10,7 @@ trait ToRelativeCalendarOptions extends js.Object {
   var base: js.UndefOr[DateTime] = js.undefined
   var locale: js.UndefOr[java.lang.String] = js.undefined
   /** The Intl system may choose not to honor this. */
-  var numberingSystem: js.UndefOr[java.lang.String] = js.undefined
+  var numberingSystem: js.UndefOr[NumberingSystem] = js.undefined
   /** If omitted, the method will pick the unit. */
   var unit: js.UndefOr[ToRelativeUnit] = js.undefined
 }
@@ -20,7 +20,7 @@ object ToRelativeCalendarOptions {
   def apply(
     base: DateTime = null,
     locale: java.lang.String = null,
-    numberingSystem: java.lang.String = null,
+    numberingSystem: NumberingSystem = null,
     unit: ToRelativeUnit = null
   ): ToRelativeCalendarOptions = {
     val __obj = js.Dynamic.literal()

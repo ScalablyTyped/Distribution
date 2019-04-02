@@ -104,6 +104,7 @@ object ^ extends js.Object {
   def createPrivateKey(key: PrivateKeyInput): KeyObject = js.native
   def createPublicKey(key: java.lang.String): KeyObject = js.native
   def createPublicKey(key: nodeLib.Buffer): KeyObject = js.native
+  def createPublicKey(key: KeyObject): KeyObject = js.native
   def createPublicKey(key: PublicKeyInput): KeyObject = js.native
   def createSecretKey(key: nodeLib.Buffer): KeyObject = js.native
   def createSign(algorithm: java.lang.String): Signer = js.native

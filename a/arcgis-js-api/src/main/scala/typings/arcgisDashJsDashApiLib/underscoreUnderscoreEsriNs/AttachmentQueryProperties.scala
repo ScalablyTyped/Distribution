@@ -13,12 +13,6 @@ trait AttachmentQueryProperties extends js.Object {
     */
   var attachmentTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-    * The definition expression to be applied to the layer. Only features that satisfy the definition expression and are in the list of [objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#objectIds) will be returned.  Requires an ArcGIS Server service 10.5 or greater and feature layer's [capabilities.query.supportsAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) to be `true`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#definitionExpression)
-    */
-  var definitionExpression: js.UndefOr[java.lang.String] = js.undefined
-  /**
     * An array of globalIds for the features in the layer being queried. The query results will return attachments only for specified global ids.  Requires an ArcGIS Server service 10.5 or greater and feature layer's [capabilities.query.supportsAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) to be `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#globalIds)
@@ -37,6 +31,14 @@ trait AttachmentQueryProperties extends js.Object {
     */
   var objectIds: js.UndefOr[js.Array[scala.Double]] = js.undefined
   /**
+    * If `true`, the [exif information](http://www.cipa.jp/std/documents/e/DC-008-Translation-2016-E.pdf) for the attachment will be included in [attachmentInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#exifInfo).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#returnMetadata)
+    *
+    * @default false
+    */
+  var returnMetadata: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The file size of the attachment is specified in bytes. You can enter a file size range [1000,15000] to query for attachments. The query result will return all attachments within the specified file size range (1000 - 15000).  Requires an ArcGIS Server service 10.5 or greater and feature layer's [capabilities.query.supportsAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) to be `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#size)
@@ -48,27 +50,35 @@ trait AttachmentQueryProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#start)
     */
   var start: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * The `where` clause to be applied to the layer. Only features that satisfy the `where` clause and are in the list of [objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#objectIds) will be returned. Requires an ArcGIS Server service 10.5 or greater and feature layer's [capabilities.query.supportsAttachments](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) to be `true`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-AttachmentQuery.html#where)
+    */
+  var where: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object AttachmentQueryProperties {
   @scala.inline
   def apply(
     attachmentTypes: js.Array[java.lang.String] = null,
-    definitionExpression: java.lang.String = null,
     globalIds: js.Array[scala.Double] = null,
     num: scala.Int | scala.Double = null,
     objectIds: js.Array[scala.Double] = null,
+    returnMetadata: js.UndefOr[scala.Boolean] = js.undefined,
     size: js.Array[scala.Double] = null,
-    start: scala.Int | scala.Double = null
+    start: scala.Int | scala.Double = null,
+    where: java.lang.String = null
   ): AttachmentQueryProperties = {
     val __obj = js.Dynamic.literal()
     if (attachmentTypes != null) __obj.updateDynamic("attachmentTypes")(attachmentTypes)
-    if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression)
     if (globalIds != null) __obj.updateDynamic("globalIds")(globalIds)
     if (num != null) __obj.updateDynamic("num")(num.asInstanceOf[js.Any])
     if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
+    if (!js.isUndefined(returnMetadata)) __obj.updateDynamic("returnMetadata")(returnMetadata)
     if (size != null) __obj.updateDynamic("size")(size)
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (where != null) __obj.updateDynamic("where")(where)
     __obj.asInstanceOf[AttachmentQueryProperties]
   }
 }

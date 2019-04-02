@@ -196,26 +196,26 @@ trait QueryProperties extends js.Object {
     */
   var returnM: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * If `true`, the [query geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#queryGeometry) will be returned with the query results. It is useful for getting the buffer geometry generated when querying features by [distance](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#distance) or getting the query geometry projected in the [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outSpatialReference) of the query. The query geometry is returned only for [client-side queries](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatures) and [hosted feature services](http://doc.arcgis.com/en/arcgis-online/share-maps/hosted-web-layers.htm) and if the layer's [capabilities.query.supportsQueryGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) is `true`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnQueryGeometry)
+    *
+    * @default false
+    */
+  var returnQueryGeometry: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnGeometry) is `true`, then z-values are included in the geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#returnZ)
     */
   var returnZ: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * For spatial queries, this parameter defines the spatial relationship to query features in the layer or layer view against the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry). See the [Types of spatial relationships that can be validated](https://desktop.arcgis.com/en/arcmap/latest/extensions/data-reviewer/types-of-spatial-relationships-that-can-be-validated.htm) document for more details about each spatial relationship.  The possible values are listed in the table below:
+    * For spatial queries, this parameter defines the spatial relationship to query features in the layer or layer view against the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry). The spatial relationships discover how features are spatially related to each other. For example, you may want to know if a polygon representing a county completely contains points representing settlements.  The spatial relationship is determined by whether the boundaries or interiors of a geometry intersect.
+    *   * Boundary — The endpoints of all linear parts for line features, or the linear outline of a polygon. Only lines and polygons have boundaries.
+    *   * Interior — Points are entirely interior and have no boundary. For lines and polygons, the interior is any part of the geometry that is not part of the boundary.
     *
-    * Value | Description
-    * ------|-------------
-    * intersects | Returns features from the layer or layer view that intersect the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry).
-    * contains | Returns features from the layer or layer view that are completely contained by the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry).
-    * crosses | Returns features from the layer or layer view that cross the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry).
-    * envelope-intersects | Returns features from the layer or layer view that intersect the envelope (or extent) of the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry).
-    * index-intersects | The envelope of the query feature class intersects the index entry for the target feature class.
-    * overlaps | Returns features from the layer or layer view that overlap the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry).
-    * touches | Returns features from the layer or layer view that touch the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry).
-    * within | Returns features from the layer or layer view that are completely within the input [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry).
-    * relation | Allows specification of any relationship defined using the [Shape Comparison Language](http://resources.esri.com/help/9.3/arcgisengine/dotnet/concepts_start.htm#40de6491-9b2d-440d-848b-2609efcd46b1.htm). If this value is specified, then the [relationParameter](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#relationParameter) must also be specified.
     *
+    * The possible values for this parameter are described below and the images highlight the geometries returned for the specified spatial relationship for given geometries.  The `intersects` spatial relationship returns features in the layer view that intersect the query [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry).  ![intersects](https://developers.arcgis.com/javascript/assets/img/apiref/layers/spatialRelationships/intersects.png)  The `contains` spatial relationship returns features in the layer view that are completely contained by the query [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry).  ![contains](https://developers.arcgis.com/javascript/assets/img/apiref/layers/spatialRelationships/contains.png)  The `crosses` spatial relationship returns features in the layer view when the interior of a query [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry) comes into contact with the interior or boundary of features in the layer view. In other words, the geometries share some interior area, but not all interior area.  ![crosses](https://developers.arcgis.com/javascript/assets/img/apiref/layers/spatialRelationships/crosses.png)  The `envelope-intersects` spatial relationship returns features in the layer view that intersect the envelope (or extent) of the filter [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry).  ![envelope-intersects](https://developers.arcgis.com/javascript/assets/img/apiref/layers/spatialRelationships/envelope-intersects.png)  The `overlaps` spatial relationship returns features in the layer view that overlap the query [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry). Only features of the same geometry can be compared.  ![overlaps](https://developers.arcgis.com/javascript/assets/img/apiref/layers/spatialRelationships/overlap.png)  The `touches` spatial relationship returns features in the layer view that touch the query [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry). The boundaries of the geometries intersect, but not their interiors.  ![touches](https://developers.arcgis.com/javascript/assets/img/apiref/layers/spatialRelationships/touches.png)  The `within` spatial relationship returns features in the layer view that completely contain the query [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry). In other words, the filter geometry is completely `within` the features in the layer view. It is opposite of `contains`.  ![within](https://developers.arcgis.com/javascript/assets/img/apiref/layers/spatialRelationships/within.png)  The `disjoint` spatial relationship returns features in the layer view that do not intersect the query [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry) in anyway. Opposite of `intersects`.  ![disjoint](https://developers.arcgis.com/javascript/assets/img/apiref/layers/spatialRelationships/disjoint.png)
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#spatialRelationship)
     *
@@ -247,11 +247,17 @@ trait QueryProperties extends js.Object {
     */
   var text: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The unit for calculating the buffer distance when [distance](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#distance) is specified in spatial queries. if `unit` is not specified, the unit is derived from the layer or layer view's [SpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html).
-    * > **Known Limitations**  For service-based queries, this parameter only applies if [supportsQueryWithDistance](https://developers.arcgis.com/rest/services-reference/query-feature-service-layer-.htm) is `true`.
-    * **Possible Values:** feet | miles | nautical-miles | us-nautical-miles | meters | kilometers
+    * A time extent for a temporal query against [time-aware layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#timeInfo). For example, it can be used to discover all crimes that occurred during the night shift from 10 PM to 6 AM on a particular date.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#timeExtent)
+    */
+  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
+  /**
+    * The unit for calculating the buffer distance when [distance](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#distance) is specified in spatial queries. If `units` is not specified, the unit is derived from the geometry spatial reference. If the geometry spatial reference is not specified, the unit is derived from the feature service data spatial reference. For service-based queries, this parameter only applies if the layer's [capabilities.query.supportsDistance](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) is `true`.  **Possible Values:** feet | miles | nautical-miles | us-nautical-miles | meters | kilometers
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#units)
+    *
+    * @default null
     */
   var units: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -292,11 +298,13 @@ object QueryProperties {
     returnExceededLimitFeatures: js.UndefOr[scala.Boolean] = js.undefined,
     returnGeometry: js.UndefOr[scala.Boolean] = js.undefined,
     returnM: js.UndefOr[scala.Boolean] = js.undefined,
+    returnQueryGeometry: js.UndefOr[scala.Boolean] = js.undefined,
     returnZ: js.UndefOr[scala.Boolean] = js.undefined,
     spatialRelationship: java.lang.String = null,
     sqlFormat: java.lang.String = null,
     start: scala.Int | scala.Double = null,
     text: java.lang.String = null,
+    timeExtent: TimeExtentProperties = null,
     units: java.lang.String = null,
     where: java.lang.String = null
   ): QueryProperties = {
@@ -328,11 +336,13 @@ object QueryProperties {
     if (!js.isUndefined(returnExceededLimitFeatures)) __obj.updateDynamic("returnExceededLimitFeatures")(returnExceededLimitFeatures)
     if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry)
     if (!js.isUndefined(returnM)) __obj.updateDynamic("returnM")(returnM)
+    if (!js.isUndefined(returnQueryGeometry)) __obj.updateDynamic("returnQueryGeometry")(returnQueryGeometry)
     if (!js.isUndefined(returnZ)) __obj.updateDynamic("returnZ")(returnZ)
     if (spatialRelationship != null) __obj.updateDynamic("spatialRelationship")(spatialRelationship)
     if (sqlFormat != null) __obj.updateDynamic("sqlFormat")(sqlFormat)
     if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     if (text != null) __obj.updateDynamic("text")(text)
+    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent)
     if (units != null) __obj.updateDynamic("units")(units)
     if (where != null) __obj.updateDynamic("where")(where)
     __obj.asInstanceOf[QueryProperties]

@@ -33,6 +33,7 @@ object FullscreenProperties {
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     element: stdLib.HTMLElement = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     view: MapViewProperties | SceneViewProperties = null,
     viewModel: FullscreenViewModelProperties = null
   ): FullscreenProperties = {
@@ -41,6 +42,7 @@ object FullscreenProperties {
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (element != null) __obj.updateDynamic("element")(element)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
     __obj.asInstanceOf[FullscreenProperties]

@@ -51,7 +51,7 @@ trait IdentityManager extends Evented {
     */
   def checkSignInStatus(resUrl: java.lang.String): arcgisDashJsDashApiLib.IPromise[Credential] = js.native
   /**
-    * Destroys all credentials.
+    * Destroys all credentials. It is good practice to call this method if working with an application that contains sign-out functionality as any tokens generated via OAuth will automatically be revoked.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#destroyCredentials)
     *
@@ -72,12 +72,12 @@ trait IdentityManager extends Evented {
   /**
     * Returns the [OAuthInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html) configuration for the passed in Portal server URL.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#findOauthInfo)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#findOAuthInfo)
     *
     * @param url The URL to a Portal.
     *
     */
-  def findOauthInfo(url: java.lang.String): OAuthInfo = js.native
+  def findOAuthInfo(url: java.lang.String): OAuthInfo = js.native
   /**
     * Returns information about the server that is hosting the specified URL.
     *

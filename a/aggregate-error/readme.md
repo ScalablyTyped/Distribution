@@ -1,5 +1,5 @@
 ```
 /**
- * Create an error from multiple errors.
- */
+Create an error from multiple errors.
+*/
 ```

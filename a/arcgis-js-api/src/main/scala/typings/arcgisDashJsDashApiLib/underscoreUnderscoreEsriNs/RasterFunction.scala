@@ -34,7 +34,7 @@ trait RasterFunction
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#variableName)
     */
-  var variableName: js.Any = js.native
+  var variableName: java.lang.String = js.native
 }
 
 @JSGlobal("__esri.RasterFunction")

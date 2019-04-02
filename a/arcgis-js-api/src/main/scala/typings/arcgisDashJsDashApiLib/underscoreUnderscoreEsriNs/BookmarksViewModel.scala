@@ -20,7 +20,7 @@ trait BookmarksViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks-BookmarksViewModel.html#bookmarks)
     */
-  val bookmarks: Collection[Bookmark] = js.native
+  var bookmarks: Collection[Bookmark] = js.native
   /**
     * The view model's state.  **Possible Values:** loading | disabled
     *

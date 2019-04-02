@@ -55,7 +55,7 @@ trait colorCreateAgeRendererParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createAgeRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   /**
     * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
     *
@@ -123,7 +123,7 @@ object colorCreateAgeRendererParams {
     constructor: js.Function,
     endTime: stdLib.Date | java.lang.String | scala.Double,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     startTime: stdLib.Date | java.lang.String | scala.Double,
     view: View,

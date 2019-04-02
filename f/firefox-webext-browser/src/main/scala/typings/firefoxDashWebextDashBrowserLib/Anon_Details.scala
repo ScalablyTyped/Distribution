@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Details extends js.Object {
   /** Notifies about proxy script errors. */
-  val onError: WebExtEvent[js.Function1[/* error */ js.Object, scala.Unit]]
+  val onError: WebExtEvent[js.Function1[/* error */ stdLib.Error, scala.Unit]]
   /** Please use `proxy.onError`. */
-  val onProxyError: WebExtEvent[js.Function1[/* error */ js.Object, scala.Unit]]
+  val onProxyError: WebExtEvent[js.Function1[/* error */ stdLib.Error, scala.Unit]]
   /* proxy events */
   /** Fired when proxy data is needed for a request. */
   val onRequest: firefoxDashWebextDashBrowserLib.browserNs.proxyNs._ProxyOnRequestEvent[js.Function1[/* details */ Anon_DocumentUrl, scala.Unit]]
@@ -31,8 +31,8 @@ trait Anon_Details extends js.Object {
 object Anon_Details {
   @scala.inline
   def apply(
-    onError: WebExtEvent[js.Function1[/* error */ js.Object, scala.Unit]],
-    onProxyError: WebExtEvent[js.Function1[/* error */ js.Object, scala.Unit]],
+    onError: WebExtEvent[js.Function1[/* error */ stdLib.Error, scala.Unit]],
+    onProxyError: WebExtEvent[js.Function1[/* error */ stdLib.Error, scala.Unit]],
     onRequest: firefoxDashWebextDashBrowserLib.browserNs.proxyNs._ProxyOnRequestEvent[js.Function1[/* details */ Anon_DocumentUrl, scala.Unit]],
     register: java.lang.String => js.Promise[scala.Unit],
     registerProxyScript: java.lang.String => js.Promise[_],

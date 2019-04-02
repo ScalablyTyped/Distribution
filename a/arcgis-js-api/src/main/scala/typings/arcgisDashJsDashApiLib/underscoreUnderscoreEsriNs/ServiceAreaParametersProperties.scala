@@ -28,8 +28,6 @@ trait ServiceAreaParametersProperties extends js.Object {
     * When `true`, restricted network elements should be considered when finding network locations.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#doNotLocateOnRestrictedElements)
-    *
-    * @default true
     */
   var doNotLocateOnRestrictedElements: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -75,7 +73,9 @@ trait ServiceAreaParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputGeometryPrecisionUnits)
     */
-  var outputGeometryPrecisionUnits: js.UndefOr[java.lang.String] = js.undefined
+  var outputGeometryPrecisionUnits: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards
+  ] = js.undefined
   /**
     * The type of output lines to be generated in the result. The default is defined in the specific routing network layer used in your [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html).
     *
@@ -89,13 +89,17 @@ trait ServiceAreaParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputLines)
     */
-  var outputLines: js.UndefOr[java.lang.String] = js.undefined
+  var outputLines: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.straight | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape-with-measure`
+  ] = js.undefined
   /**
     * The type of output polygons to be generated in the result. The default is as defined in the specific routing network layer used in your [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html).  **Possible Values:** none | simplified | detailed
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputPolygons)
     */
-  var outputPolygons: js.UndefOr[java.lang.String] = js.undefined
+  var outputPolygons: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.simplified | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.detailed
+  ] = js.undefined
   /**
     * Indicates if the lines should overlap from multiple facilities. The default is defined by the network analysis layer in your [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html).
     *
@@ -143,7 +147,9 @@ trait ServiceAreaParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#restrictUTurns)
     */
-  var restrictUTurns: js.UndefOr[java.lang.String] = js.undefined
+  var restrictUTurns: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`allow-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`no-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-and-intersections`
+  ] = js.undefined
   /**
     * The list of network attribute names to be used as restrictions with the analysis. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html). You can specify any attributes names listed in the Service Directory under `Network Dataset > Network Attributes` as `Usage Type: esriNAUTCost`.
     *
@@ -215,13 +221,15 @@ trait ServiceAreaParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#travelDirection)
     */
-  var travelDirection: js.UndefOr[java.lang.String] = js.undefined
+  var travelDirection: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`from-facility` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`to-facility`
+  ] = js.undefined
   /**
     * Travel modes define how a pedestrian, car, truck or other medium of transportation moves through the street network.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#travelMode)
     */
-  var travelMode: js.UndefOr[js.Any] = js.undefined
+  var travelMode: js.UndefOr[java.lang.String] = js.undefined
   /**
     * If `true`, the outermost polygon (at the maximum break value) will be trimmed. The default is defined in the network analysis layer in your [ServiceAreaTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ServiceAreaTask.html).
     *
@@ -241,7 +249,9 @@ trait ServiceAreaParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#trimPolygonDistanceUnits)
     */
-  var trimPolygonDistanceUnits: js.UndefOr[java.lang.String] = js.undefined
+  var trimPolygonDistanceUnits: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards
+  ] = js.undefined
   /**
     * When `true`, the hierarchy attributes for the network will be used in the analysis. The default value is defined in the network layer. `useHierarchy` cannot be used in conjunction with [outputLines](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputLines). Requires an ArcGIS Server service version 10.1 or greater.
     *
@@ -263,15 +273,15 @@ object ServiceAreaParametersProperties {
     mergeSimilarPolygonRanges: js.UndefOr[scala.Boolean] = js.undefined,
     outSpatialReference: SpatialReferenceProperties = null,
     outputGeometryPrecision: scala.Int | scala.Double = null,
-    outputGeometryPrecisionUnits: java.lang.String = null,
-    outputLines: java.lang.String = null,
-    outputPolygons: java.lang.String = null,
+    outputGeometryPrecisionUnits: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards = null,
+    outputLines: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.straight | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape-with-measure` = null,
+    outputPolygons: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.simplified | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.detailed = null,
     overlapLines: js.UndefOr[scala.Boolean] = js.undefined,
     overlapPolygons: js.UndefOr[scala.Boolean] = js.undefined,
     pointBarriers: DataLayerProperties | FeatureSetProperties = null,
     polygonBarriers: DataLayerProperties | FeatureSetProperties = null,
     polylineBarriers: DataLayerProperties | FeatureSetProperties = null,
-    restrictUTurns: java.lang.String = null,
+    restrictUTurns: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`allow-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`no-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-and-intersections` = null,
     restrictionAttributes: js.Array[java.lang.String] = null,
     returnFacilities: js.UndefOr[scala.Boolean] = js.undefined,
     returnPointBarriers: js.UndefOr[scala.Boolean] = js.undefined,
@@ -280,11 +290,11 @@ object ServiceAreaParametersProperties {
     splitLinesAtBreaks: js.UndefOr[scala.Boolean] = js.undefined,
     splitPolygonsAtBreaks: js.UndefOr[scala.Boolean] = js.undefined,
     timeOfDay: DateProperties = null,
-    travelDirection: java.lang.String = null,
-    travelMode: js.Any = null,
+    travelDirection: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`from-facility` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`to-facility` = null,
+    travelMode: java.lang.String = null,
     trimOuterPolygon: js.UndefOr[scala.Boolean] = js.undefined,
     trimPolygonDistance: scala.Int | scala.Double = null,
-    trimPolygonDistanceUnits: java.lang.String = null,
+    trimPolygonDistanceUnits: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards = null,
     useHierarchy: js.UndefOr[scala.Boolean] = js.undefined
   ): ServiceAreaParametersProperties = {
     val __obj = js.Dynamic.literal()
@@ -298,15 +308,15 @@ object ServiceAreaParametersProperties {
     if (!js.isUndefined(mergeSimilarPolygonRanges)) __obj.updateDynamic("mergeSimilarPolygonRanges")(mergeSimilarPolygonRanges)
     if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
     if (outputGeometryPrecision != null) __obj.updateDynamic("outputGeometryPrecision")(outputGeometryPrecision.asInstanceOf[js.Any])
-    if (outputGeometryPrecisionUnits != null) __obj.updateDynamic("outputGeometryPrecisionUnits")(outputGeometryPrecisionUnits)
-    if (outputLines != null) __obj.updateDynamic("outputLines")(outputLines)
-    if (outputPolygons != null) __obj.updateDynamic("outputPolygons")(outputPolygons)
+    if (outputGeometryPrecisionUnits != null) __obj.updateDynamic("outputGeometryPrecisionUnits")(outputGeometryPrecisionUnits.asInstanceOf[js.Any])
+    if (outputLines != null) __obj.updateDynamic("outputLines")(outputLines.asInstanceOf[js.Any])
+    if (outputPolygons != null) __obj.updateDynamic("outputPolygons")(outputPolygons.asInstanceOf[js.Any])
     if (!js.isUndefined(overlapLines)) __obj.updateDynamic("overlapLines")(overlapLines)
     if (!js.isUndefined(overlapPolygons)) __obj.updateDynamic("overlapPolygons")(overlapPolygons)
     if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
     if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
     if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
-    if (restrictUTurns != null) __obj.updateDynamic("restrictUTurns")(restrictUTurns)
+    if (restrictUTurns != null) __obj.updateDynamic("restrictUTurns")(restrictUTurns.asInstanceOf[js.Any])
     if (restrictionAttributes != null) __obj.updateDynamic("restrictionAttributes")(restrictionAttributes)
     if (!js.isUndefined(returnFacilities)) __obj.updateDynamic("returnFacilities")(returnFacilities)
     if (!js.isUndefined(returnPointBarriers)) __obj.updateDynamic("returnPointBarriers")(returnPointBarriers)
@@ -315,11 +325,11 @@ object ServiceAreaParametersProperties {
     if (!js.isUndefined(splitLinesAtBreaks)) __obj.updateDynamic("splitLinesAtBreaks")(splitLinesAtBreaks)
     if (!js.isUndefined(splitPolygonsAtBreaks)) __obj.updateDynamic("splitPolygonsAtBreaks")(splitPolygonsAtBreaks)
     if (timeOfDay != null) __obj.updateDynamic("timeOfDay")(timeOfDay.asInstanceOf[js.Any])
-    if (travelDirection != null) __obj.updateDynamic("travelDirection")(travelDirection)
+    if (travelDirection != null) __obj.updateDynamic("travelDirection")(travelDirection.asInstanceOf[js.Any])
     if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode)
     if (!js.isUndefined(trimOuterPolygon)) __obj.updateDynamic("trimOuterPolygon")(trimOuterPolygon)
     if (trimPolygonDistance != null) __obj.updateDynamic("trimPolygonDistance")(trimPolygonDistance.asInstanceOf[js.Any])
-    if (trimPolygonDistanceUnits != null) __obj.updateDynamic("trimPolygonDistanceUnits")(trimPolygonDistanceUnits)
+    if (trimPolygonDistanceUnits != null) __obj.updateDynamic("trimPolygonDistanceUnits")(trimPolygonDistanceUnits.asInstanceOf[js.Any])
     if (!js.isUndefined(useHierarchy)) __obj.updateDynamic("useHierarchy")(useHierarchy)
     __obj.asInstanceOf[ServiceAreaParametersProperties]
   }

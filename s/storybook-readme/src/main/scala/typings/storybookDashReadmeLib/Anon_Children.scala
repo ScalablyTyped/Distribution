@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Children extends js.Object {
-  var children: reactLib.reactMod.Global.JSXNs.Element
+  var children: reactLib.reactMod.ReactNs.ReactNode
 }
 
 object Anon_Children {
   @scala.inline
-  def apply(children: reactLib.reactMod.Global.JSXNs.Element): Anon_Children = {
-    val __obj = js.Dynamic.literal(children = children)
+  def apply(children: reactLib.reactMod.ReactNs.ReactNode): Anon_Children = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_Children]
   }

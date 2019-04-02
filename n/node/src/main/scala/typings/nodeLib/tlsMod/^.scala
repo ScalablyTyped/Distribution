@@ -46,8 +46,10 @@ object ^ extends js.Object {
     requestCert: scala.Boolean,
     rejectUnauthorized: scala.Boolean
   ): SecurePair = js.native
+  def createServer(): Server = js.native
   def createServer(options: TlsOptions): Server = js.native
   def createServer(options: TlsOptions, secureConnectionListener: js.Function1[/* socket */ TLSSocket, scala.Unit]): Server = js.native
+  def createServer(secureConnectionListener: js.Function1[/* socket */ TLSSocket, scala.Unit]): Server = js.native
   def getCiphers(): js.Array[java.lang.String] = js.native
 }
 

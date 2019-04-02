@@ -16,7 +16,7 @@ trait SegmentDrawAction extends DrawAction {
     * click | Vertices are added when the pointer is clicked. SegmentDrawActions are created from 2 vertices.
     *
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-SegmentDrawAction.html#mode)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html#mode)
     *
     * @default freehand
     */
@@ -24,13 +24,13 @@ trait SegmentDrawAction extends DrawAction {
   /**
     * Two-dimensional array of numbers representing the coordinates of each vertex comprising the geometry being drawn.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-SegmentDrawAction.html#vertices)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html#vertices)
     */
   val vertices: js.Array[js.Array[scala.Double]] = js.native
   /**
-    * Completes drawing the polygon geometry and fires the [draw-complete](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-SegmentDrawAction.html#event:draw-complete) event.
+    * Completes drawing the polygon geometry and fires the [draw-complete](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html#event:draw-complete) event.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-SegmentDrawAction.html#complete)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html#complete)
     *
     *
     */

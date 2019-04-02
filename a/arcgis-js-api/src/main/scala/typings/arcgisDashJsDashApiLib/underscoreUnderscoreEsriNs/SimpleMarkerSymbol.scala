@@ -21,7 +21,7 @@ trait SimpleMarkerSymbol
   var outline: SimpleLineSymbol = js.native
   /**
     * The SVG path of the icon.
-    * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    * > **Known Limitations**  This property is not supported in IE11.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#path)
     */
@@ -36,7 +36,6 @@ trait SimpleMarkerSymbol
   var size: scala.Double = js.native
   /**
     * The marker style. Possible values are in the table below.
-    * > **Known Limitations**  The `triangle` value is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * Value | Description
     * ------|------------

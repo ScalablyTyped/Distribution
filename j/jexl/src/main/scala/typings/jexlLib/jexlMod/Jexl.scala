@@ -34,13 +34,13 @@ trait Jexl extends js.Object {
     * @param name The name of the transform function, as it will be used
     *      within Jexl expressions
     * @param fn The function to be executed when this transform is
-    *      invoked.  It will be provided with at least one argument:
+    *      invoked. It will be provided with at least one argument:
     *          - {*} value: The value to be transformed
     *          - {...*} args: The arguments for this transform
     */
   def addTransform(name: java.lang.String, fn: jexlLib.TransformFunction): scala.Unit = js.native
   /**
-    * Syntactic sugar for calling {@link #Jexl:addTransform} repeatedly.  This function
+    * Syntactic sugar for calling {@link #addTransform} repeatedly.  This function
     * accepts a map of one or more transform names to their transform function.
     * @param map A map of transform names to transform functions
     */
@@ -56,31 +56,29 @@ trait Jexl extends js.Object {
     */
   def addUnaryOp(operator: java.lang.String, fn: jexlLib.UnaryOpFunction): scala.Unit = js.native
   /**
-    * Evaluates a Jexl string within an optional context.
+    * Asynchronously evaluates a Jexl string within an optional context.
     * @param expression The Jexl expression to be evaluated
-    * @param context A mapping of variables to values, which will be
+    * @param [context] A mapping of variables to values, which will be
     *      made accessible to the Jexl expression when evaluating it
-    * @param cb An optional callback function to be executed when
-    *      evaluation is complete.  It will be supplied with two arguments:
-    *          - err: Present if an error occurred
-    *          - result: The result of the evaluation
-    * @returns resolves with the result of the evaluation.  Note that
-    *      if a callback is supplied, the returned promise will already have
-    *      a '.catch' attached to it in order to pass the error to the callback.
+    * @returns resolves with the result of the evaluation.
     */
   def eval(expression: java.lang.String): js.Promise[_] = js.native
   def eval(expression: java.lang.String, context: js.Object): js.Promise[_] = js.native
-  def eval(expression: java.lang.String, context: js.Object, cb: jexlLib.EvalCallbackFunction): js.Promise[_] = js.native
+  /**
+    * Synchronously evaluates a Jexl string within an optional context.
+    * @param expression The Jexl expression to be evaluated
+    * @param [context] A mapping of variables to values, which will be
+    *      made accessible to the Jexl expression when evaluating it
+    * @returns the result of the evaluation.
+    * @throws on error
+    */
+  def evalSync(expression: java.lang.String): js.Any = js.native
+  def evalSync(expression: java.lang.String, context: js.Object): js.Any = js.native
   /**
     * Retrieves a previously set transform function.
     * @param name The name of the transform function
     * @returns The transform function
     */
   def getTransform(name: java.lang.String): jexlLib.TransformFunction = js.native
-  /**
-    * Removes a binary or unary operator from the Jexl grammar.
-    * @param operator The operator string to be removed
-    */
-  def removeOp(operator: java.lang.String): scala.Unit = js.native
 }
 

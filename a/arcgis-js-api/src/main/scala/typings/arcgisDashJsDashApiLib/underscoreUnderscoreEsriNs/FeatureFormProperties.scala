@@ -14,7 +14,7 @@ trait FeatureFormProperties extends WidgetProperties {
   var feature: js.UndefOr[GraphicProperties] = js.undefined
   /**
     * Array of individual or grouped field configuration objects. This is where you specify what fields to display and how you wish to display them. It is possible to configure individual or [grouped fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html). For an example of individual field configurations, please refer to the [Update FeatureLayer using ApplyEdits](https://developers.arcgis.com/javascript/latest/sample-code/editing-applyedits/index.html) sample. For an example of grouped field configurations, please refer to the [Update Feature Attributes](https://developers.arcgis.com/javascript/latest/sample-code/editing-groupedfeatureform/index.html) sample.
-    * > When not set, all fields except for `editor`, `globalID`, and `objectID` fields will be included, otherwise it is up to the developer to set the right field(s) to override and display.
+    * > When not set, all fields except for `editor`, `globalID`, `objectID`, and system maintained area and length fields will be included. Otherwise, it is up to the developer to set the right field(s) to override and display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#fieldConfig)
     */
@@ -56,6 +56,7 @@ object FeatureFormProperties {
     fieldConfig: js.Array[FieldConfigProperties] | js.Array[FieldGroupConfigProperties] = null,
     groupDisplay: java.lang.String = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     layer: FeatureLayerProperties = null,
     viewModel: FeatureFormViewModelProperties = null
   ): FeatureFormProperties = {
@@ -66,6 +67,7 @@ object FeatureFormProperties {
     if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
     if (groupDisplay != null) __obj.updateDynamic("groupDisplay")(groupDisplay)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (layer != null) __obj.updateDynamic("layer")(layer)
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)
     __obj.asInstanceOf[FeatureFormProperties]

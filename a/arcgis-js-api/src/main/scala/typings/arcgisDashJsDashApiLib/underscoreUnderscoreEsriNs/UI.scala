@@ -49,10 +49,10 @@ trait UI extends Accessor {
     *
     * @param component The component(s) to add to the UI. This can be a widget instance, HTML element, a string value representing a DOM node ID, or an array containing a combination of any of those types. See the example snippets below for code examples. Alternatively, you can pass an array of objects with the following specification.
     * @param component.component The component to add to the UI. This can be a widget instance, HTML element, a string value representing a DOM node ID.
-    * @param component.position The position in the view at which to add the component. If not specified, `manual` is used by default. **Possible Values:** top-left | top-right | bottom-left | bottom-right | manual
+    * @param component.position The position in the view at which to add the component. If not specified, `manual` is used by default. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
     * @param component.index The placement index of the component. This index shows where to place the component relative to other components. For example a value of `0` would place it topmost when position is top-*, leftmost for bottom-left and right most for bottom-right.
-    * @param position The position in the view at which to add the component. If not specified, `manual` is used by default. **Possible Values:** top-left | top-right | bottom-left | bottom-right | manual
-    * @param position.position The position in the view at which to add the component(s). If not specified, `manual` is used by default. **Possible Values:** top-left | top-right | bottom-left | bottom-right | manual
+    * @param position The position in the view at which to add the component. If not specified, `manual` is used by default. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
+    * @param position.position The position in the view at which to add the component(s). If not specified, `manual` is used by default. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
     * @param position.index The placement index of the component(s). This index shows where to place the component relative to other components. For example a value of `0` would place it topmost when position is top-*, leftmost for bottom-left and right most for bottom-right.
     *
     */
@@ -73,7 +73,7 @@ trait UI extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#empty)
     *
-    * @param position The position from which to remove all components. If not specified, `manual` is used by default. **Possible Values:** top-left | top-right | bottom-left | bottom-right | manual
+    * @param position The position from which to remove all components. If not specified, `manual` is used by default. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
     *
     */
   def empty(): scala.Unit = js.native
@@ -87,8 +87,8 @@ trait UI extends Accessor {
     *
     * @param component The component(s) to move. This value can be a widget instance, HTML element, a string value representing a DOM node ID, or an array containing a combination of any of those types. See the example snippets below for code examples. Alternatively, you can pass an array of objects with the following specification.
     * @param component.component The component to move. This can be a widget instance, HTML element, a string value representing a DOM node ID.
-    * @param component.position The destination position. The component will be placed in the UI [container](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#container) when not provided. If not specified, `manual` is used by default. **Possible Values:** top-left | top-right | bottom-left | bottom-right | manual
-    * @param position The destination position. The component will be placed in the UI [container](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#container) when not provided. **Possible Values:** top-left | top-right | bottom-left | bottom-right | manual
+    * @param component.position The destination position. The component will be placed in the UI [container](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#container) when not provided. If not specified, `manual` is used by default. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
+    * @param position The destination position. The component will be placed in the UI [container](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#container) when not provided. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
     *
     */
   def move(component: Widget): scala.Unit = js.native

@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait BuildingSublayer extends Accessor {
+trait BuildingSublayer
+  extends Accessor
+     with IntersectItem {
   /**
     * The sublayer's layer id as defined by the Scene Service.
     *

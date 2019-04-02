@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Callback extends js.Object {
+  var InlineLexer: Anon_Escapes = js.native
   var Lexer: org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[/* options */ markedLib.markedMod.markedNs.MarkedOptions], 
     markedLib.markedMod.markedNs.Lexer

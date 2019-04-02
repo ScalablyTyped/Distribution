@@ -19,6 +19,12 @@ trait IconSymbol3DLayer
     */
   var anchor: java.lang.String = js.native
   /**
+    * Defines the [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchor) relative to the center of the icon. It is specified as a ratio of the icon's dimensions. For example, a value of `{ x: 0, y: 0 }` designates the center of the icon, while a value of `{ x: -0.5, y: -0.5 }` causes the top-left corner of the icon to coincide with the feature geometry.  This property only applies when [anchor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchor) is set to `relative`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#anchorPosition)
+    */
+  var anchorPosition: IconSymbol3DLayerAnchorPosition = js.native
+  /**
     * The outline of the icon.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#outline)
@@ -26,6 +32,7 @@ trait IconSymbol3DLayer
   var outline: IconSymbol3DLayerOutline = js.native
   /**
     * The shape (`primitive`) or image URL (`href`) used to visualize the features. If both properties are present, `href` takes precedence and `primitive` is ignored.
+    * > **Known Limitations**  Using this property to render an SVG path is not supported in IE11.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)
     *

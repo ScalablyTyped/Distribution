@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sendmail"
-version := "1.4-dt-20190305Z-3762cb"
+version := "1.4-dt-20190401Z-369aba"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

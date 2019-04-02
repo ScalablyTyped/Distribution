@@ -58,7 +58,7 @@ trait DirectionsViewModel
     *
     * @default null | 'Driving Time'
     */
-  val selectedTravelMode: DirectionsViewModelSelectedTravelMode = js.native
+  var selectedTravelMode: DirectionsViewModelSelectedTravelMode = js.native
   /**
     * The Service Description object returned by the Route REST Endpoint. This object contains service specific details like available Cost attributes, supported Restrictions, default Attribute Parameter Values, Service Limits (like maximum input stop count), default Impedance Attribute, etc. This information is useful when implementing complex logistics scenarios operating with limitations or preferences on vehicle or stop properties, for example avoiding toll roads, dealing with hazardous materials, working with stop service times, etc.
     *
@@ -157,6 +157,15 @@ trait DirectionsViewModel
     */
   def highlightSegment(maneuver: Graphic): scala.Unit = js.native
   /**
+    * This method should be called to load the view model's routing resources.
+    * > You must first call this before using `DirectionsViewModel`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#load)
+    *
+    *
+    */
+  def load(): arcgisDashJsDashApiLib.IPromise[_] = js.native
+  /**
     * Resets the state of the ViewModel, clearing off all the input stops, and results in the widget. The results persist in the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#reset)
@@ -176,11 +185,6 @@ trait DirectionsViewModel
 
 @JSGlobal("__esri.DirectionsViewModel")
 @js.native
-/**
-  * Provides the communication and data manipulation logic for the [Directions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html) widget.
-  *
-  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html)
-  */
 class DirectionsViewModelCls () extends DirectionsViewModel {
   def this(properties: DirectionsViewModelProperties) = this()
 }

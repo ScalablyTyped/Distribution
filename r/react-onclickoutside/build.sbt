@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-onclickoutside"
-version := "6.7-dt-20190325Z-2b0b13"
+version := "6.7-dt-20190326Z-2b0b13"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -84,7 +84,7 @@ trait TreeProps extends js.Object {
       scala.Unit | js.Thenable[_]
     ]
   ] = js.undefined
-  var onLoaded: js.UndefOr[
+  var onLoad: js.UndefOr[
     js.Function2[
       /* loadedKeys */ js.Array[java.lang.String], 
       /* info */ antdLib.Anon_Event, 
@@ -145,7 +145,7 @@ object TreeProps {
     onDragStart: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
     onDrop: /* options */ AntTreeNodeDropEvent => scala.Unit = null,
     onExpand: (/* expandedKeys */ js.Array[java.lang.String], /* info */ AntTreeNodeExpandedEvent) => scala.Unit | js.Thenable[_] = null,
-    onLoaded: (/* loadedKeys */ js.Array[java.lang.String], /* info */ antdLib.Anon_Event) => scala.Unit = null,
+    onLoad: (/* loadedKeys */ js.Array[java.lang.String], /* info */ antdLib.Anon_Event) => scala.Unit = null,
     onRightClick: /* options */ AntTreeNodeMouseEvent => scala.Unit = null,
     onSelect: (/* selectedKeys */ js.Array[java.lang.String], /* e */ AntTreeNodeSelectedEvent) => scala.Unit = null,
     prefixCls: java.lang.String = null,
@@ -188,7 +188,7 @@ object TreeProps {
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1(onDragStart))
     if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1(onDrop))
     if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction2(onExpand))
-    if (onLoaded != null) __obj.updateDynamic("onLoaded")(js.Any.fromFunction2(onLoaded))
+    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction2(onLoad))
     if (onRightClick != null) __obj.updateDynamic("onRightClick")(js.Any.fromFunction1(onRightClick))
     if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2(onSelect))
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "align-text"
-version := "1.0-dt-20190325Z-738996"
+version := "1.0-dt-20190330Z-57f084"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

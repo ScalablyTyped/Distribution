@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BadgeProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var color: js.UndefOr[java.lang.String] = js.undefined
   /** Number to show in badge */
   var count: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /** whether to show red dot without number */
@@ -29,6 +30,7 @@ object BadgeProps {
   @scala.inline
   def apply(
     className: java.lang.String = null,
+    color: java.lang.String = null,
     count: reactLib.reactMod.ReactNs.ReactNode = null,
     dot: js.UndefOr[scala.Boolean] = js.undefined,
     offset: js.Tuple2[scala.Double | java.lang.String, scala.Double | java.lang.String] = null,
@@ -43,6 +45,7 @@ object BadgeProps {
   ): BadgeProps = {
     val __obj = js.Dynamic.literal()
     if (className != null) __obj.updateDynamic("className")(className)
+    if (color != null) __obj.updateDynamic("color")(color)
     if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
     if (!js.isUndefined(dot)) __obj.updateDynamic("dot")(dot)
     if (offset != null) __obj.updateDynamic("offset")(offset)

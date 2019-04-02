@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webassembly-web-api"
-version := "v1-dt-20190325Z-d3b010"
+version := "v1-dt-20190326Z-d3b010"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

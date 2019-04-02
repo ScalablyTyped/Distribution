@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fs-extra-p"
-version := "7.0.1-ca4672"
+version := "7.0.1-f4853c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-986805",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.7-55a535",
-  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-7a792d",
-  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-a8786c",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

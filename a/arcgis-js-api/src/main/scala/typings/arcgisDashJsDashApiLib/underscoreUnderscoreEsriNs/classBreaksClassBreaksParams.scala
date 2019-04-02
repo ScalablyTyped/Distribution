@@ -38,7 +38,7 @@ trait classBreaksClassBreaksParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-classBreaks.html#classBreaks)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer
   /**
     * The maximum bounding value for the class breaks definition. Use this in conjunction with `minValue` to generate class breaks between lower and upper bounds.
     *
@@ -100,7 +100,7 @@ object classBreaksClassBreaksParams {
   def apply(
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     classificationMethod: java.lang.String = null,
     features: js.Array[Graphic] = null,

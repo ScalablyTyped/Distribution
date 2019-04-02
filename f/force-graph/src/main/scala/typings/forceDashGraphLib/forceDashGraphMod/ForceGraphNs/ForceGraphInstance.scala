@@ -8,13 +8,19 @@ import scala.scalajs.js.annotation._
 /**
   * Represents ForceGraph runtime object
   * @example:
+  *  // Create an empty ForceGraph instance on an existing DOM element
   *  let forceGraph = ForceGraph();
   *  forceGraph(myHtmlElement);
-  *  forceGraph.graphData([])
+  *  forceGraph.graphData([]);
+  *
+  *  // Destroy the ForceGraph instance
+  *  forceGraph._destructor();
   */
 @js.native
 trait ForceGraphInstance extends js.Object {
+  // Init / de-init
   def apply(element: stdLib.HTMLElement): ForceGraphInstance = js.native
+  def _destructor(): scala.Unit = js.native
   def backgroundColor(): ForceGraphInstance with java.lang.String = js.native
   def backgroundColor(color: java.lang.String): ForceGraphInstance with java.lang.String = js.native
   def centerAt(): ForceGraphInstance with forceDashGraphLib.Anon_X = js.native

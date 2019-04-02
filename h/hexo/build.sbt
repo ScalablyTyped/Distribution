@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "hexo"
-version := "3.8-dt-20190221Z-daa033"
+version := "3.8-dt-20190221Z-8b81cc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-043064",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-50cbb3",
-  "org.scalablytyped" %%% "hexo-util" % "0.6-dt-20180810Z-dda524",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20190311Z-a86bd4",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-53c35c",
+  "org.scalablytyped" %%% "hexo-util" % "0.6-dt-20180810Z-0e304c",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",
   "org.scalablytyped" %%% "moment" % "2.24.0-da0e25",
-  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "underscore" % "1.8-dt-20190322Z-2c9e42")
 publishArtifact in packageDoc := false

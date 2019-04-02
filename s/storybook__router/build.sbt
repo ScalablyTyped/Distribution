@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "storybook__router"
-version := "5.0.5-c3f596"
+version := "5.0.6-9a5e85"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "common-tags" % "1.8-dt-20181205Z-1fedc3",
-  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-7e0d81",
+  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-0940d0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
   "org.scalablytyped" %%% "deep-object-diff" % "1.1.0-c47466",
   "org.scalablytyped" %%% "emotion-theming" % "10.0.10-eff5d3",
@@ -26,17 +26,17 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20190214Z-c3cf18",
   "org.scalablytyped" %%% "lodash_dot_mergewith" % "4.6-dt-20190214Z-f0154f",
   "org.scalablytyped" %%% "memoizerific" % "1.11.3-512dd8",
-  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "object-assign" % "4.0.1-dt-20190322Z-d95386",
   "org.scalablytyped" %%% "polished" % "2.3.3-5430b2",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
   "org.scalablytyped" %%% "qs" % "6.5.0-dt-20190322Z-2e1340",
   "org.scalablytyped" %%% "reach__router" % "1.2-dt-20190114Z-39f4e9",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-3be409",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-348bcf",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "storybook__client-logger" % "5.0.5-cb4b2e",
-  "org.scalablytyped" %%% "storybook__theming" % "5.0.5-989ef5")
+  "org.scalablytyped" %%% "storybook__client-logger" % "5.0.6-c9af9b",
+  "org.scalablytyped" %%% "storybook__theming" % "5.0.6-88ee9f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -23,6 +23,12 @@ trait FeatureTemplates extends Widget {
   @JSName("filterFunction")
   var filterFunction_Original: FilterFunction = js.native
   /**
+    * Text used to filter items.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html#filterText)
+    */
+  var filterText: java.lang.String = js.native
+  /**
     * It is possible to group [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html). This can aid in managing various template items and how they display within the widget. The values are discussed below.
     *
     * Type | Description | Example

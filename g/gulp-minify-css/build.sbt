@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "gulp-minify-css"
-version := "0.0-unknown-dt-20190322Z-566651"
+version := "0.0-unknown-dt-20190322Z-361675"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-43a3f6",
-  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-9062be",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

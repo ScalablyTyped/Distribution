@@ -22,19 +22,19 @@ trait StreamLayerView
     */
   val connectionStatus: java.lang.String = js.native
   /**
-    * Contains the attribute and spatial filters used to filter messages sent to the given layer view by a stream service. To change the filter for only a single layer view, use the [updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#updateFilter) method. The layer view's filter is always updated when the [updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateFilter) method of the associated stream layer instance is called.
+    * The geometry and attribute filter. Only the features that satisfy the filter are displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#filter)
     */
-  val filter: StreamLayerViewFilter = js.native
+  val filter: FeatureFilter = js.native
   /**
-    * Contains the collection of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) visible in the layer view for the live stream. Graphics may be removed from the layer view by calling the [removeAll()](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#removeAll) method from [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html).
+    * Contains the collection of [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) visible in the layer view for the live stream. Graphics may be removed from the layer view by calling the [removeAll()](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html#removeAll) method from [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html).  **This property is deprecated. Use [queryFeatures](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#queryFeatures) method instead.**
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#graphics)
     */
   var graphics: Collection[Graphic] = js.native
   /**
-    * Opens a web socket connection with the stream service to start receiving messages. This is called internally when the StreamLayer is added to a view.
+    * Opens a web socket connection with the stream service to start receiving messages. This is called internally when the StreamLayer is added to a view.  **The layer will now automatically connect when it is added to a view.**
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#connect)
     *
@@ -42,7 +42,7 @@ trait StreamLayerView
     */
   def connect(): arcgisDashJsDashApiLib.IPromise[_] = js.native
   /**
-    * Closes the web socket connection with the stream service. This is called internally when the StreamLayer is removed from a view. To verify when the connection is closed, watch the [connectionStatus](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#connectionStatus) property.
+    * Closes the web socket connection with the stream service. This is called internally when the StreamLayer is removed from a view. To verify when the connection is closed, watch the [connectionStatus](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#connectionStatus) property.  **The layer will now automatically disconnect when it is removed a view.**
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#disconnect)
     *
@@ -55,7 +55,7 @@ trait StreamLayerView
     eventHandler: StreamLayerViewDataReceivedEventHandler
   ): arcgisDashJsDashApiLib.IHandle = js.native
   /**
-    * Updates the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#filter) on the StreamLayerView. The filter is updated only on the layer view from which it is called. To update the filter on all layer views generated from a common layer, use the [StreamLayer.updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateFilter) method. If the input `filter` object is `undefined` or `null`, the spatial and attribute filters are removed.  Filter changes only apply to incoming features. Features already displayed in the view will be removed automatically.
+    * **This method is deprecated. Update [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#filter) directly instead.** Updates the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#filter) on the StreamLayerView. The filter is updated only on the layer view from which it is called. To update the filter on all layer views generated from a common layer, use the [StreamLayer.updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateFilter) method. If the input `filter` object is `undefined` or `null`, the spatial and attribute filters are removed.  Filter changes only apply to incoming features. Features already displayed in the view will be removed automatically.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#updateFilter)
     *

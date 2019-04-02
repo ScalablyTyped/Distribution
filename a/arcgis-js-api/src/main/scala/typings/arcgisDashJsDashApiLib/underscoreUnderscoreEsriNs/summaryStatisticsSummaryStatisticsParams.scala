@@ -24,7 +24,7 @@ trait summaryStatisticsSummaryStatisticsParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html#summaryStatistics)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer
   /**
     * The maximum bounding value for the statistics calculation. Use this in conjunction with `minValue` to generate statistics between lower and upper bounds.
     *
@@ -74,7 +74,7 @@ object summaryStatisticsSummaryStatisticsParams {
   def apply(
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     features: js.Array[Graphic] = null,
     field: java.lang.String = null,

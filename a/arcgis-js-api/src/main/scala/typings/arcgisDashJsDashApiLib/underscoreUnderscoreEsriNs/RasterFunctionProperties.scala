@@ -31,7 +31,7 @@ trait RasterFunctionProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterFunction.html#variableName)
     */
-  var variableName: js.UndefOr[js.Any] = js.undefined
+  var variableName: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object RasterFunctionProperties {
@@ -40,7 +40,7 @@ object RasterFunctionProperties {
     functionArguments: js.Any = null,
     functionName: java.lang.String = null,
     outputPixelType: java.lang.String = null,
-    variableName: js.Any = null
+    variableName: java.lang.String = null
   ): RasterFunctionProperties = {
     val __obj = js.Dynamic.literal()
     if (functionArguments != null) __obj.updateDynamic("functionArguments")(functionArguments)

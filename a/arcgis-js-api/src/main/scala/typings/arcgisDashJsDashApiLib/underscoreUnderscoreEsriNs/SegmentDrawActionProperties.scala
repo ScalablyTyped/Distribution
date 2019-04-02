@@ -15,7 +15,7 @@ trait SegmentDrawActionProperties extends DrawActionProperties {
     * click | Vertices are added when the pointer is clicked. SegmentDrawActions are created from 2 vertices.
     *
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-SegmentDrawAction.html#mode)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-SegmentDrawAction.html#mode)
     *
     * @default freehand
     */

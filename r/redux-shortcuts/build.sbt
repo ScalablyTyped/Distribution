@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "redux-shortcuts"
-version := "0.0-dt-20190314Z-b92661"
+version := "0.0-dt-20190314Z-2e4128"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "mousetrap" % "1.6.x-dt-20190322Z-732568",
+  "org.scalablytyped" %%% "mousetrap" % "1.6.x-dt-20190328Z-22bc7d",
   "org.scalablytyped" %%% "redux" % "4.0.1-caedab",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-a7455c")

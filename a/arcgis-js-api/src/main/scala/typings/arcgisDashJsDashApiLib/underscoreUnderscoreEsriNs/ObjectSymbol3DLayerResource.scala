@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ObjectSymbol3DLayerResource
   extends stdLib.Object {
   /**
-    * The URL to the 3D model. [See these instructions](https://github.com/Esri/arcgis-pro-sdk-community-samples/tree/master/Map-Authoring/ExportWeb3DObjectResource#exportweb3dobjectresource) to learn how to create a custom 3D model.
+    * The URL to the 3D model in glTF format. The URL should point to a glTF file (.gltf or .glb) which can reference additional binary (.bin) and image files (.jpg, .png). See the guide topic on [Visualizing points with 3D symbols](https://developers.arcgis.com/javascript/latest/guide/visualizing-points-3d/index.html) to learn how to use a custom 3D model.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
     */

@@ -6,8 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ExecOutputReturnValue extends js.Object {
+  /** The process exit code. */
   var code: scala.Double
+  /** The process standard error output. */
   var stderr: java.lang.String
+  /** The process standard output. */
   var stdout: java.lang.String
 }
 

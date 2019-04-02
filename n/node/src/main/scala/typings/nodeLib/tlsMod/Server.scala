@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Server ()
   extends nodeLib.netMod.Server {
-  def addContext(hostName: java.lang.String, credentials: nodeLib.Anon_Ca): scala.Unit = js.native
+  def addContext(hostName: java.lang.String, credentials: SecureContextOptions): scala.Unit = js.native
   @JSName("addListener")
   def addListener_OCSPRequest(
     event: nodeLib.nodeLibStrings.OCSPRequest,

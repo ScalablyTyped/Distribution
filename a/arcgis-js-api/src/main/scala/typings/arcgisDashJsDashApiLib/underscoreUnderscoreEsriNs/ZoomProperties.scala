@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait ZoomProperties extends WidgetProperties {
   /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#iconClass)
+    */
+  var iconClass: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Determines the layout/orientation of the Zoom widget.  **Possible Values:** vertical | horizontal
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom.html#layout)
@@ -33,7 +39,9 @@ object ZoomProperties {
   def apply(
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    iconClass: java.lang.String = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     layout: java.lang.String = null,
     view: MapViewProperties | SceneViewProperties = null,
     viewModel: ZoomViewModelProperties = null
@@ -41,7 +49,9 @@ object ZoomProperties {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)

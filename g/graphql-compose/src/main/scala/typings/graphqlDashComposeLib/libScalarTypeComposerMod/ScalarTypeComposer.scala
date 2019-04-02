@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-compose/lib/ScalarTypeComposer", "ScalarTypeComposer")
 @js.native
 class ScalarTypeComposer[TContext] protected ()
-  extends graphqlDashComposeLib.libObjectTypeComposerMod._ComposeOutputType[js.Any, TContext]
-     with graphqlDashComposeLib.libSchemaComposerMod._MustHaveTypes[TContext] {
+  extends graphqlDashComposeLib.libSchemaComposerMod._AnyType[TContext]
+     with graphqlDashComposeLib.libObjectTypeComposerMod._ComposeOutputType[js.Any, TContext] {
   def this(gqType: graphqlDashComposeLib.libGraphqlMod.GraphQLScalarType, schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext]) = this()
   var gqType: GraphQLScalarTypeExtended = js.native
   var schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext] = js.native
@@ -18,16 +18,20 @@ class ScalarTypeComposer[TContext] protected ()
   def extendExtensions(extensions: graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions): this.type = js.native
   def getDescription(): java.lang.String = js.native
   def getExtension(extensionName: java.lang.String): js.Any = js.native
-  // -----------------------------------------------
-  // Extensions methods
-  // -----------------------------------------------
+  /**
+    *  -----------------------------------------------
+    * Extensions methods
+    * -----------------------------------------------
+    */
   def getExtensions(): graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions = js.native
   def getParseLiteral(): graphqlLib.typeDefinitionMod.GraphQLScalarLiteralParser[_] = js.native
   def getParseValue(): graphqlLib.typeDefinitionMod.GraphQLScalarValueParser[_] = js.native
   def getSerialize(): graphqlLib.typeDefinitionMod.GraphQLScalarSerializer[_] = js.native
-  // -----------------------------------------------
-  // Type methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Type methods
+    * -----------------------------------------------
+    */
   def getType(): graphqlDashComposeLib.libGraphqlMod.GraphQLScalarType = js.native
   def getTypeName(): java.lang.String = js.native
   def getTypeNonNull(): graphqlLib.typeDefinitionMod.GraphQLNonNull[graphqlDashComposeLib.libGraphqlMod.GraphQLScalarType] = js.native
@@ -41,9 +45,11 @@ class ScalarTypeComposer[TContext] protected ()
   def setParseLiteral(fn: scala.Unit): scala.Unit = js.native
   def setParseValue(fn: graphqlLib.typeDefinitionMod.GraphQLScalarValueParser[_]): scala.Unit = js.native
   def setParseValue(fn: scala.Unit): scala.Unit = js.native
-  // -----------------------------------------------
-  // Serialize methods
-  // -----------------------------------------------
+  /**
+    *  -----------------------------------------------
+    * Serialize methods
+    * -----------------------------------------------
+    */
   def setSerialize(fn: graphqlLib.typeDefinitionMod.GraphQLScalarSerializer[_]): scala.Unit = js.native
   def setTypeName(name: java.lang.String): this.type = js.native
 }
@@ -52,10 +58,16 @@ class ScalarTypeComposer[TContext] protected ()
 @JSImport("graphql-compose/lib/ScalarTypeComposer", "ScalarTypeComposer")
 @js.native
 object ScalarTypeComposer extends js.Object {
+  /**
+    * Create `ScalarTypeComposer` with adding it by name to the `SchemaComposer`. This type became avaliable in SDL by its name.
+    */
   def create[TCtx](
     typeDef: graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposeDefinition,
     schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TCtx]
   ): graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TCtx] = js.native
+  /**
+    * Create `ScalarTypeComposer` without adding it to the `SchemaComposer`. This method may be usefull in plugins, when you need to create type temporary.
+    */
   def createTemp[TCtx](typeDef: graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposeDefinition): graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TCtx] = js.native
   def createTemp[TCtx](
     typeDef: graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposeDefinition,

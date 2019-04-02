@@ -7,12 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("log-update", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  /**
-    * Log to `stdout` by overwriting the previous output in the terminal.
-    *
-    * @param text - The text to log to `stdout`.
-    */
-  val default: LogUpdate with logDashUpdateLib.Anon_Create = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[
+      logDashUpdateLib.logDashUpdateMod.logUpdateNs.LogUpdate with logDashUpdateLib.Anon_CreateDefault
+    ]
 

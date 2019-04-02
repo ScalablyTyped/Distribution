@@ -18,7 +18,7 @@ trait Attribution extends Widget {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html#iconClass)
     */
-  val iconClass: java.lang.String = js.native
+  var iconClass: java.lang.String = js.native
   /**
     * Text used to split attribution by [layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html)
     *
@@ -27,12 +27,6 @@ trait Attribution extends Widget {
     * @default |
     */
   var itemDelimiter: java.lang.String = js.native
-  /**
-    * The widget's default label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Attribution.html#label)
-    */
-  val label: java.lang.String = js.native
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
     *

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "topojson-server"
-version := "3.0-dt-20190325Z-919b2b"
+version := "3.0-dt-20190326Z-919b2b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

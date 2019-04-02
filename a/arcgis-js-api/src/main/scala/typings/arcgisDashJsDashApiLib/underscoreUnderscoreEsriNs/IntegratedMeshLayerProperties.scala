@@ -25,7 +25,7 @@ object IntegratedMeshLayerProperties {
     fullExtent: ExtentProperties = null,
     id: java.lang.String = null,
     layerId: scala.Int | scala.Double = null,
-    listMode: java.lang.String = null,
+    listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
     opacity: scala.Int | scala.Double = null,
     portalItem: PortalItemProperties = null,
     spatialReference: SpatialReferenceProperties = null,
@@ -39,7 +39,7 @@ object IntegratedMeshLayerProperties {
     if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
     if (id != null) __obj.updateDynamic("id")(id)
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)

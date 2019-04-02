@@ -31,6 +31,6 @@ package object reactDashBigDashCalendarMod {
   ]
   type FormatInput = scala.Double | java.lang.String | stdLib.Date
   type SlotPropGetter = js.Function1[/* date */ stdLib.Date, reactDashBigDashCalendarLib.Anon_ClassName]
-  type Views = js.Array[View] | reactDashBigDashCalendarLib.Anon_Month
+  type Views = js.Array[View] | reactDashBigDashCalendarLib.Anon_Agenda
   type stringOrDate = java.lang.String | stdLib.Date
 }

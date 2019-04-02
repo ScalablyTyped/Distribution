@@ -14,7 +14,7 @@ trait SimpleMarkerSymbolProperties extends MarkerSymbolProperties {
   var outline: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   /**
     * The SVG path of the icon.
-    * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    * > **Known Limitations**  This property is not supported in IE11.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html#path)
     */
@@ -29,7 +29,6 @@ trait SimpleMarkerSymbolProperties extends MarkerSymbolProperties {
   var size: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
     * The marker style. Possible values are in the table below.
-    * > **Known Limitations**  The `triangle` value is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * Value | Description
     * ------|------------

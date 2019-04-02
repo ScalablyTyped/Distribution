@@ -38,7 +38,7 @@ trait histogramHistogramParams
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-histogram.html#histogram)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer
   /**
     * The maximum bounding value for the histogram. Use this in conjunction with `minValue` to generate a histogram between custom lower and upper bounds.
     *
@@ -102,7 +102,7 @@ object histogramHistogramParams {
   def apply(
     constructor: js.Function,
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
-    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer,
+    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     classificationMethod: java.lang.String = null,
     features: js.Array[Graphic] = null,

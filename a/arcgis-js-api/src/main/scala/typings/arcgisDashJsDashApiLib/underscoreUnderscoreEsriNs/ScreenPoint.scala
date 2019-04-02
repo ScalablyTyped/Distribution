@@ -5,29 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait ScreenPoint extends Accessor {
+trait ScreenPoint
+  extends stdLib.Object {
   /**
-    * X-coordinate in pixels relative to the top-left corner of the view.
+    * The x coordinate.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-ScreenPoint.html#x)
-    *
-    * @default 0
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#ScreenPoint)
     */
-  var x: scala.Double = js.native
+  var x: scala.Double
   /**
-    * Y-coordinate in pixels relative to the top-left corner of the view.
+    * The y coordinate.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-ScreenPoint.html#y)
-    *
-    * @default 0
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#ScreenPoint)
     */
-  var y: scala.Double = js.native
+  var y: scala.Double
 }
 
-@JSGlobal("__esri.ScreenPoint")
-@js.native
-class ScreenPointCls () extends ScreenPoint {
-  def this(properties: ScreenPointProperties) = this()
+object ScreenPoint {
+  @scala.inline
+  def apply(
+    constructor: js.Function,
+    hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
+    propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
+    x: scala.Double,
+    y: scala.Double
+  ): ScreenPoint = {
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), x = x, y = y)
+  
+    __obj.asInstanceOf[ScreenPoint]
+  }
 }
 

@@ -33,9 +33,3 @@ trait KMLLayerView extends LayerView {
   val allVisiblePolylines: Collection[Polyline] = js.native
 }
 
-@JSGlobal("__esri.KMLLayerView")
-@js.native
-class KMLLayerViewCls () extends KMLLayerView {
-  def this(properties: KMLLayerViewProperties) = this()
-}
-

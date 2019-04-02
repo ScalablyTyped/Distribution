@@ -12,7 +12,7 @@ trait ColorConstructor
       Color
     ] {
   /**
-    * Creates a new color object by passing either a hex, rgba, or named color value.
+    * Creates a new color object by passing either a hex, rgb(a), hsl(a) or [named color value](https://www.w3.org/wiki/CSS/Properties/color/keywords). Hex, hsl(a) and named color values can be passed as a string:
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html)
     */

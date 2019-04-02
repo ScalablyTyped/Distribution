@@ -1,25 +1,25 @@
 organization := "org.scalablytyped"
 name := "aws-iot-device-sdk"
-version := "2.2.0-dt-20190322Z-fe7f79"
+version := "2.2.0-dt-20190322Z-4818bd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bl" % "v2.1.0-dt-20190322Z-714673",
-  "org.scalablytyped" %%% "concat-stream" % "1.6-dt-20180214Z-b8125e",
-  "org.scalablytyped" %%% "end-of-stream" % "1.4-dt-20180214Z-7298d3",
-  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-b8b248",
+  "org.scalablytyped" %%% "bl" % "v2.1.0-dt-20190322Z-40bbb7",
+  "org.scalablytyped" %%% "concat-stream" % "1.6-dt-20180214Z-93f4ee",
+  "org.scalablytyped" %%% "end-of-stream" % "1.4-dt-20180214Z-e9dda0",
+  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-75670b",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",
-  "org.scalablytyped" %%% "mqtt" % "2.18.8-7cc2bd",
-  "org.scalablytyped" %%% "mqtt-packet" % "5.6.0-cd687b",
-  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
-  "org.scalablytyped" %%% "pump" % "1.0-dt-20180214Z-dd737b",
-  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20190227Z-c565bc",
-  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-195cbe",
-  "org.scalablytyped" %%% "split2" % "2.1.0-dt-20190322Z-940815",
+  "org.scalablytyped" %%% "mqtt" % "2.18.8-8fc9fa",
+  "org.scalablytyped" %%% "mqtt-packet" % "5.6.0-edbaff",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "pump" % "1.0-dt-20180214Z-148163",
+  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20190227Z-fea888",
+  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-5d06ef",
+  "org.scalablytyped" %%% "split2" % "2.1.0-dt-20190322Z-8760d6",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-e0e064",
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-a4282d",
   "org.scalablytyped" %%% "xtend" % "4.0.1-dt-20190322Z-8e3fb4")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

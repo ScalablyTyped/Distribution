@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-tag-autocomplete"
-version := "5.6-dt-20181018Z-e1afa3"
+version := "5.6-dt-20190328Z-e9dcd0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -55,7 +55,7 @@ trait Portal
     */
   var bingKey: java.lang.String = js.native
   /**
-    * Indicates whether an organization can list applications in the marketplace .
+    * Indicates whether an organization can list applications in the marketplace.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#canListApps)
     */

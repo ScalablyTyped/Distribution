@@ -20,7 +20,7 @@ trait RelationParameters extends Accessor {
     */
   var geometries2: js.Array[Geometry] = js.native
   /**
-    * The spatial relationship to be tested between the two input geometry arrays. See table below for a list of possible values. If the relation is specified as `relation`, the `relationParamater` parameter describes the spatial relationship and must be specified.
+    * The spatial relationship to be tested between the two input geometry arrays. See table below for a list of possible values. If the relation is specified as `relation`, the `relationParameter` parameter describes the spatial relationship and must be specified.
     *
     * Value | Description
     * ------|------------

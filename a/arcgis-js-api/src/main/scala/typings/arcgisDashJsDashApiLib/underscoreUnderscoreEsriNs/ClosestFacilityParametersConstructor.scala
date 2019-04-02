@@ -13,5 +13,7 @@ trait ClosestFacilityParametersConstructor
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html)
   */
 org.scalablytyped.runtime.Instantiable0[ClosestFacilityParameters]
-     with org.scalablytyped.runtime.Instantiable1[/* properties */ ClosestFacilityParametersProperties, ClosestFacilityParameters]
+     with org.scalablytyped.runtime.Instantiable1[/* properties */ ClosestFacilityParametersProperties, ClosestFacilityParameters] {
+  def fromJSON(json: js.Any): ClosestFacilityParameters = js.native
+}
 

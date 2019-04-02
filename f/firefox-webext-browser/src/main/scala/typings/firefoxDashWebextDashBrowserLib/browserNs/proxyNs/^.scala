@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /** Notifies about proxy script errors. */
-  val onError: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* error */ js.Object, scala.Unit]] = js.native
+  val onError: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* error */ stdLib.Error, scala.Unit]] = js.native
   /** Please use `proxy.onError`. */
-  val onProxyError: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* error */ js.Object, scala.Unit]] = js.native
+  val onProxyError: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* error */ stdLib.Error, scala.Unit]] = js.native
   /* proxy events */
   /** Fired when proxy data is needed for a request. */
   val onRequest: _ProxyOnRequestEvent[

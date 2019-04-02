@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait SimpleRenderer
   extends Renderer
      with VisualVariablesRenderer
-     with arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.renderersNs.Renderer
-     with renderersRenderer {
+     with RendererWithVisualVariables
+     with arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.renderersNs.RendererWithVisualVariables {
   /**
     * The label for the renderer. This describes what features with the given [symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#symbol) represent in the real world. This will display next to the layer's [symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#symbol) inside the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widget.  This text is not displayed in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) when [visualVariables](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#visualVariables) are used. When the renderer contains [visualVariables](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#visualVariables), you should set the `title` property in `legendOptions` on each visual variable to describe the visualization.
     *

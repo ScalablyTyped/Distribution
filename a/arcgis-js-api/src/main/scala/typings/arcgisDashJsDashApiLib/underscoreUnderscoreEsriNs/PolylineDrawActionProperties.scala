@@ -16,7 +16,7 @@ trait PolylineDrawActionProperties extends DrawActionProperties {
     * click | Vertices are added when the pointer is clicked.
     *
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-PolylineDrawAction.html#mode)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolylineDrawAction.html#mode)
     *
     * @default hybrid
     */

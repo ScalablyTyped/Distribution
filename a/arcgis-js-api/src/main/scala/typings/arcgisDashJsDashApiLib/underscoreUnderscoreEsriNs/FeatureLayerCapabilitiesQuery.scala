@@ -14,6 +14,12 @@ trait FeatureLayerCapabilitiesQuery
     */
   var supportsCentroid: scala.Boolean
   /**
+    * Indicates if the query operation supports `disjoint` [spatial relationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#spatialRelationship). This is valid only for [hosted feature services](http://doc.arcgis.com/en/arcgis-online/share-maps/hosted-web-layers.htm).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
+    */
+  var supportsDisjointSpatialRelationship: scala.Boolean
+  /**
     * Indicates if the layer's query operation supports a buffer distance for input geometries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
@@ -32,7 +38,7 @@ trait FeatureLayerCapabilitiesQuery
     */
   var supportsExtent: scala.Boolean
   /**
-    * Indicates if the layer's query response contains geometry attributes, including shape area and length attributes. This operation is only supported in ArcGIS Online hosted feature services.
+    * Indicates if the layer's query response contains geometry attributes, including shape area and length attributes. This operation is supported in ArcGIS Online hosted feature services created since December 2016 and ArcGIS Enterprise feature services since version 10.7.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
@@ -74,6 +80,12 @@ trait FeatureLayerCapabilitiesQuery
     */
   var supportsQuantizationEditMode: scala.Boolean
   /**
+    * Indicates if the query response includes the [query geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#queryGeometry). This is valid only for [hosted feature services](http://doc.arcgis.com/en/arcgis-online/share-maps/hosted-web-layers.htm).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
+    */
+  var supportsQueryGeometry: scala.Boolean
+  /**
     * Indicates if the number of features returned by the query operation can be controlled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
@@ -106,6 +118,7 @@ object FeatureLayerCapabilitiesQuery {
     hasOwnProperty: stdLib.PropertyKey => scala.Boolean,
     propertyIsEnumerable: stdLib.PropertyKey => scala.Boolean,
     supportsCentroid: scala.Boolean,
+    supportsDisjointSpatialRelationship: scala.Boolean,
     supportsDistance: scala.Boolean,
     supportsDistinct: scala.Boolean,
     supportsExtent: scala.Boolean,
@@ -116,12 +129,13 @@ object FeatureLayerCapabilitiesQuery {
     supportsPagination: scala.Boolean,
     supportsQuantization: scala.Boolean,
     supportsQuantizationEditMode: scala.Boolean,
+    supportsQueryGeometry: scala.Boolean,
     supportsResultType: scala.Boolean,
     supportsSqlExpression: scala.Boolean,
     supportsStandardizedQueriesOnly: scala.Boolean,
     supportsStatistics: scala.Boolean
   ): FeatureLayerCapabilitiesQuery = {
-    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsCentroid = supportsCentroid, supportsDistance = supportsDistance, supportsDistinct = supportsDistinct, supportsExtent = supportsExtent, supportsGeometryProperties = supportsGeometryProperties, supportsHavingClause = supportsHavingClause, supportsHistoricMoment = supportsHistoricMoment, supportsOrderBy = supportsOrderBy, supportsPagination = supportsPagination, supportsQuantization = supportsQuantization, supportsQuantizationEditMode = supportsQuantizationEditMode, supportsResultType = supportsResultType, supportsSqlExpression = supportsSqlExpression, supportsStandardizedQueriesOnly = supportsStandardizedQueriesOnly, supportsStatistics = supportsStatistics)
+    val __obj = js.Dynamic.literal(constructor = constructor, hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsCentroid = supportsCentroid, supportsDisjointSpatialRelationship = supportsDisjointSpatialRelationship, supportsDistance = supportsDistance, supportsDistinct = supportsDistinct, supportsExtent = supportsExtent, supportsGeometryProperties = supportsGeometryProperties, supportsHavingClause = supportsHavingClause, supportsHistoricMoment = supportsHistoricMoment, supportsOrderBy = supportsOrderBy, supportsPagination = supportsPagination, supportsQuantization = supportsQuantization, supportsQuantizationEditMode = supportsQuantizationEditMode, supportsQueryGeometry = supportsQueryGeometry, supportsResultType = supportsResultType, supportsSqlExpression = supportsSqlExpression, supportsStandardizedQueriesOnly = supportsStandardizedQueriesOnly, supportsStatistics = supportsStatistics)
   
     __obj.asInstanceOf[FeatureLayerCapabilitiesQuery]
   }

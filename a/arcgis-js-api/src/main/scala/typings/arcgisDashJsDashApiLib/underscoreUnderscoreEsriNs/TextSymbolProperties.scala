@@ -84,7 +84,8 @@ trait TextSymbolProperties extends SymbolProperties {
     */
   var rotated: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * The text string to display in the view.
+    * The text string to display in the view. Long text strings will be split into multiple lines. The maximum length of each line is equal to this formula: (512 * [font.size](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html#size)) / 24.
+    * > **Known Limitations**  This property only applies when TextSymbol is used to define the symbol property of a [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html), and not for labelling purposes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#text)
     */

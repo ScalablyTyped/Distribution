@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nonogram-solver"
-version := "2.0-dt-20190325Z-b79406"
+version := "2.0-dt-20190326Z-b79406"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

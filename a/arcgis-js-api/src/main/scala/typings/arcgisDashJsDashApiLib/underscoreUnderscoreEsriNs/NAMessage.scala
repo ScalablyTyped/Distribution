@@ -16,11 +16,11 @@ trait NAMessage
     */
   var description: java.lang.String = js.native
   /**
-    * The network analyst message type.
+    * The network analyst message type.  **Possible Values:** informative | process-definition | process-start | process-stop | warning | error | empty | abort
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-NAMessage.html#type)
     */
-  var `type`: js.Any = js.native
+  var `type`: java.lang.String = js.native
 }
 
 @JSGlobal("__esri.NAMessage")

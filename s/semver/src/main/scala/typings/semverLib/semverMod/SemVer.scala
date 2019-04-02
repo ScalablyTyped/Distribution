@@ -10,12 +10,15 @@ import scala.scalajs.js.annotation._
 class SemVer protected () extends js.Object {
   def this(version: java.lang.String) = this()
   def this(version: SemVer) = this()
-  def this(version: java.lang.String, loose: scala.Boolean) = this()
-  def this(version: SemVer, loose: scala.Boolean) = this()
+  def this(version: java.lang.String, optionsOrLoose: scala.Boolean) = this()
+  def this(version: java.lang.String, optionsOrLoose: Options) = this()
+  def this(version: SemVer, optionsOrLoose: scala.Boolean) = this()
+  def this(version: SemVer, optionsOrLoose: Options) = this()
   var build: js.Array[java.lang.String] = js.native
   var loose: scala.Boolean = js.native
   var major: scala.Double = js.native
   var minor: scala.Double = js.native
+  var options: Options = js.native
   var patch: scala.Double = js.native
   var prerelease: js.Array[java.lang.String] = js.native
   var raw: java.lang.String = js.native

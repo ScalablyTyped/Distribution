@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {readonly [ P in keyof globby.globby.GlobbyOptions ]: globby.globby.GlobbyOptions[P]} */ trait Options
+- Dropped {readonly [ P in keyof globby.globby.globby.GlobbyOptions ]: globby.globby.globby.GlobbyOptions[P]} */ trait Options
   extends cpDashFileLib.cpDashFileMod.Options {
   /**
   	 * Working directory to find source files.

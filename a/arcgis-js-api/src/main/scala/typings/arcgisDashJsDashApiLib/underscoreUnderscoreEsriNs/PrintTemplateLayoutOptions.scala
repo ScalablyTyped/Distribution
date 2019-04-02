@@ -26,7 +26,7 @@ trait PrintTemplateLayoutOptions
     */
   var customTextElements: js.Array[_]
   /**
-    * An array of [LegendLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LegendLayer.html) containing the id's of the layers that will be included in the legend. If `legendLayers` is not specified, all operational layers (non-tiled layers) will be present in the legend. To specify that no layers will be included in the legend set `legendLayer = []`.
+    * An array of [LegendLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LegendLayer.html) containing the id's of the layers that will be included in the legend. If `legendLayers` is not specified, all operational layers (non-tiled layers) except [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) will be present in the legend. To specify that no layers will be included in the legend set `legendLayer = []`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
     */

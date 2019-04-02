@@ -24,6 +24,12 @@ trait WidgetProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#id)
     */
   var id: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The widget's label.  This property is useful whenever the widget is controlled by another one (e.g. [Expand](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html))
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Widget.html#label)
+    */
+  var label: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object WidgetProperties {
@@ -31,12 +37,14 @@ object WidgetProperties {
   def apply(
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
-    id: java.lang.String = null
+    id: java.lang.String = null,
+    label: java.lang.String = null
   ): WidgetProperties = {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     __obj.asInstanceOf[WidgetProperties]
   }
 }

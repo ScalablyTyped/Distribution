@@ -27,6 +27,7 @@ trait SliceViewModel extends Accessor {
     * disabled | not ready yet
     * ready | ready for slicing
     * slicing | currently slicing
+    * sliced | finished slicing
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#state)

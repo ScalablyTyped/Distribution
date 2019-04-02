@@ -6,5 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libProgressProgressMod {
+  type ProgressGradient = antdLib.Anon_Direction with (StringGradients | FromToGradients)
   type ProgressType = /* import warning: ImportType.apply Failed type conversion: ['line', 'circle', 'dashboard'][number] */ js.Any
 }

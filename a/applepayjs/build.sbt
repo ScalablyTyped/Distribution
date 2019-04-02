@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "applepayjs"
-version := "3.0-dt-20190325Z-9c4a5e"
+version := "3.0-dt-20190326Z-9c4a5e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

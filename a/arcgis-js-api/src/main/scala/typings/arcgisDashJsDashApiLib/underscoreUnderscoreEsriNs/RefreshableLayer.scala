@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RefreshableLayer extends js.Object {
   /**
-    * Refresh interval of the layer in minutes. Minimum refresh interval is 0.1 minute (6 seconds). Value of `0` indicates no refresh.
+    * Refresh interval of the layer in minutes. Value of `0` indicates no refresh.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
     *
@@ -28,7 +28,7 @@ trait RefreshableLayer extends js.Object {
 @js.native
 class RefreshableLayerCls () extends RefreshableLayer {
   /**
-    * Refresh interval of the layer in minutes. Minimum refresh interval is 0.1 minute (6 seconds). Value of `0` indicates no refresh.
+    * Refresh interval of the layer in minutes. Value of `0` indicates no refresh.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
     *

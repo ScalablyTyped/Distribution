@@ -49,14 +49,14 @@ trait Anon_AccessAccessSync extends js.Object {
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val lstatNs: Anon_PathPromisify = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val mkdirNs: Anon_Options = js.native
+  val mkdirNs: Anon_OptionsPath = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val mkdtempNs: Anon_BufferOptionsPrefix = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val openNs: Anon_Flags = js.native
   val promisesNs: Anon_Access = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-  val readFileNs: Anon_OptionsPath = js.native
+  val readFileNs: Anon_OptionsPathPromisify = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
   val readNs: Anon_Buffer = js.native
   // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.

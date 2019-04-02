@@ -16,7 +16,7 @@ trait PolygonDrawActionProperties extends DrawActionProperties {
     * click | Vertices are added when the pointer is clicked.
     *
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-draw-PolygonDrawAction.html#mode)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PolygonDrawAction.html#mode)
     *
     * @default hybrid
     */

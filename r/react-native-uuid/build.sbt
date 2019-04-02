@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-uuid"
-version := "1.4-dt-20190325Z-d15baa"
+version := "1.4-dt-20190326Z-d15baa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

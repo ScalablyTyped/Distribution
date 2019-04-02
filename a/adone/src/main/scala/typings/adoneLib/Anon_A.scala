@@ -189,6 +189,7 @@ trait Anon_A extends js.Object {
   def createPrivateKey(key: nodeLib.cryptoMod.PrivateKeyInput): nodeLib.cryptoMod.KeyObject = js.native
   def createPublicKey(key: java.lang.String): nodeLib.cryptoMod.KeyObject = js.native
   def createPublicKey(key: nodeLib.Buffer): nodeLib.cryptoMod.KeyObject = js.native
+  def createPublicKey(key: nodeLib.cryptoMod.KeyObject): nodeLib.cryptoMod.KeyObject = js.native
   def createPublicKey(key: nodeLib.cryptoMod.PublicKeyInput): nodeLib.cryptoMod.KeyObject = js.native
   def createSecretKey(key: nodeLib.Buffer): nodeLib.cryptoMod.KeyObject = js.native
   def createSign(algorithm: java.lang.String): nodeLib.cryptoMod.Signer = js.native

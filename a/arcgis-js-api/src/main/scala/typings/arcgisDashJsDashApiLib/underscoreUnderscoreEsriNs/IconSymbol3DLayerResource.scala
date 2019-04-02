@@ -23,6 +23,7 @@ trait IconSymbol3DLayerResource
     * cross | ![s3d-icon-cross](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols3d-icon-cross.png)
     * x | ![s3d-icon-x](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols3d-icon-x.png)
     * kite | ![s3d-icon-kite](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols3d-icon-kite.png)
+    * triangle | ![s3d-icon-triangle](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols3d-icon-triangle.png)
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html#resource)

@@ -21,9 +21,11 @@ class ObjectTypeComposer[TSource, TContext] protected () extends _ComposeOutputT
     * Add new fields or replace existed (where field name may have dots)
     */
   def addNestedFields(newFields: ComposeFieldConfigMap[TSource, TContext]): this.type = js.native
-  // -----------------------------------------------
-  // Misc methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Misc methods
+    * -----------------------------------------------
+    */
   def addRelation[TRelationSource, TArgs](fieldName: java.lang.String, relationOpts: RelationOpts[TRelationSource, TSource, TContext, TArgs]): this.type = js.native
   def addResolver[TResolverSource, TArgs](resolver: graphqlDashComposeLib.libResolverMod.Resolver[TResolverSource, TContext, TArgs, _]): this.type = js.native
   def addResolver[TResolverSource, TArgs](resolver: graphqlDashComposeLib.libResolverMod.ResolverOpts[TResolverSource, TContext, TArgs, _]): this.type = js.native
@@ -43,9 +45,11 @@ class ObjectTypeComposer[TSource, TContext] protected () extends _ComposeOutputT
   def get(path: js.Array[java.lang.String]): js.Any = js.native
   def getDescription(): java.lang.String = js.native
   def getExtension(extensionName: java.lang.String): js.Any = js.native
-  // -----------------------------------------------
-  // Extensions methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Extensions methods
+    * -----------------------------------------------
+    */
   def getExtensions(): graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions = js.native
   def getField[TArgs](fieldName: java.lang.String): ComposeFieldConfig[TSource, TContext, TArgs] = js.native
   def getFieldArg(fieldName: java.lang.String, argName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLArgumentConfig = js.native
@@ -55,21 +59,27 @@ class ObjectTypeComposer[TSource, TContext] protected () extends _ComposeOutputT
   def getFieldExtension(fieldName: java.lang.String, extensionName: java.lang.String): js.Any = js.native
   def getFieldExtensions(fieldName: java.lang.String): graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions = js.native
   def getFieldNames(): js.Array[java.lang.String] = js.native
-  def getFieldTC(fieldName: java.lang.String): ObjectTypeComposer[TSource, TContext] = js.native
+  def getFieldTC(fieldName: java.lang.String): (ObjectTypeComposer[TSource, TContext]) | graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[TContext] | (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[TSource, TContext]) | (graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[TSource, TContext]) | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext] = js.native
   def getFieldType(fieldName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLOutputType = js.native
-  // -----------------------------------------------
-  // Field methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Field methods
+    * -----------------------------------------------
+    */
   def getFields(): ComposeFieldConfigMap[TSource, TContext] = js.native
   def getITC(): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] = js.native
-  // -----------------------------------------------
-  // InputType methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * InputType methods
+    * -----------------------------------------------
+    */
   def getInputType(): graphqlLib.graphqlMod.GraphQLInputObjectType = js.native
   def getInputTypeComposer(): graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] = js.native
-  // -----------------------------------------------
-  // Interface methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Interface methods
+    * -----------------------------------------------
+    */
   def getInterfaces(): js.Array[
     (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext]) | graphqlLib.graphqlMod.GraphQLInterfaceType
   ] = js.native
@@ -82,6 +92,27 @@ class ObjectTypeComposer[TSource, TContext] protected () extends _ComposeOutputT
   def getRecordId(source: TSource, args: ArgsMap, context: TContext): java.lang.String | scala.Double = js.native
   def getRecordIdFn(): GetRecordIdFn[TSource, TContext] = js.native
   def getRelations(): RelationThunkMap[_, TContext] = js.native
+  /**
+    * Returns existed Resolver by name.
+    *
+    * Resolver may be additionally wrapped by middlewares. Eg:
+    *
+    * @example
+    *     async function authMiddleware(resolve, source, args, context, info) {
+    *       if (somehowCheckAuthInContext(context)) {
+    *         return resolve(source, args, context, info);
+    *       }
+    *       throw new Error('You must be authorized');
+    *     }
+    *
+    *     schemaComposer.Query.addFields({
+    *       userById: UserTC.getResolver('findById', [authMiddleware]),
+    *       userByIds: UserTC.getResolver('findByIds', [authMiddleware]),
+    *     });
+    *
+    * @param name
+    * @param middlewares type ResolverMiddleware = (resolve, source, args, context, info) => any;
+    */
   def getResolver[TResolverSource, TArgs](name: java.lang.String): graphqlDashComposeLib.libResolverMod.Resolver[TResolverSource, TContext, TArgs, _] = js.native
   def getResolver[TResolverSource, TArgs](
     name: java.lang.String,
@@ -89,13 +120,17 @@ class ObjectTypeComposer[TSource, TContext] protected () extends _ComposeOutputT
       graphqlDashComposeLib.libResolverMod.ResolverMiddleware[TResolverSource, TContext, TArgs]
     ]
   ): graphqlDashComposeLib.libResolverMod.Resolver[TResolverSource, TContext, TArgs, _] = js.native
-  // -----------------------------------------------
-  // Resolver methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Resolver methods
+    * -----------------------------------------------
+    */
   def getResolvers(): stdLib.Map[java.lang.String, graphqlDashComposeLib.libResolverMod.Resolver[_, TContext, _, _]] = js.native
-  // -----------------------------------------------
-  // Type methods
-  // -----------------------------------------------
+  /**
+    * -----------------------------------------------
+    * Type methods
+    * -----------------------------------------------
+    */
   def getType(): graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def getTypeName(): java.lang.String = js.native
   def getTypeNonNull(): graphqlLib.typeDefinitionMod.GraphQLNonNull[
@@ -171,10 +206,16 @@ class ObjectTypeComposer[TSource, TContext] protected () extends _ComposeOutputT
 @JSImport("graphql-compose/lib/ObjectTypeComposer", "ObjectTypeComposer")
 @js.native
 object ObjectTypeComposer extends js.Object {
+  /**
+    * Create `ObjectTypeComposer` with adding it by name to the `SchemaComposer`.
+    */
   def create[TSrc, TCtx](
     typeDef: graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposeDefinition[TSrc, TCtx],
     schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TCtx]
   ): graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[TSrc, TCtx] = js.native
+  /**
+    * Create `ObjectTypeComposer` without adding it to the `SchemaComposer`. This method may be usefull in plugins, when you need to create type temporary.
+    */
   def createTemp[TSrc, TCtx](typeDef: graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposeDefinition[TSrc, TCtx]): graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[TSrc, TCtx] = js.native
   def createTemp[TSrc, TCtx](
     typeDef: graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposeDefinition[TSrc, TCtx],

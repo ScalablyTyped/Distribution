@@ -31,6 +31,14 @@ trait ObjectSymbol3DLayer
     */
   var anchorPosition: ObjectSymbol3DLayerAnchorPosition = js.native
   /**
+    * Indicates whether the symbol layer geometry casts shadows in the scene. Setting this property to `false` will disable shadows for the symbol layer even if direct shadows are enabled in [SceneView.environment](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#castShadows)
+    *
+    * @default true
+    */
+  var castShadows: scala.Boolean = js.native
+  /**
     * The depth, or diameter from north to south, of the object in meters. If `undefined`, the depth will be calculated to maintain the original proportions of the object.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#depth)
@@ -53,7 +61,7 @@ trait ObjectSymbol3DLayer
     */
   var height: scala.Double = js.native
   /**
-    * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points. If both properties are present, `primitive` takes precedence and `href` is ignored. When using the `href` property, external 3D models must be present in a specific format, which can be generated using the ArcGIS Pro SDK. [See these instructions](https://github.com/Esri/arcgis-pro-sdk-community-samples/tree/master/Map-Authoring/ExportWeb3DObjectResource#exportweb3dobjectresource) to learn how to generate a custom 3D model for use in this property.
+    * The primitive shape (`primitive`) or external 3D model (`href`) used to visualize the points. If both properties are present, `primitive` takes precedence and `href` is ignored. When using the `href` property, external 3D models must be present in glTF format.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#resource)
     *

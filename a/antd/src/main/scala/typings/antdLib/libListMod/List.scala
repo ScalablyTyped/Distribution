@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait List
-  extends reactLib.reactMod.Component[ListProps, js.Object, js.Any] {
+trait List[T]
+  extends reactLib.reactMod.Component[ListProps[T], js.Object, js.Any] {
   var defaultPaginationProps: antdLib.Anon_CurrentOnChange = js.native
   var keys: js.Any = js.native
   @JSName("state")
@@ -21,7 +21,7 @@ trait List
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def renderItem(item: js.Any, index: scala.Double): js.Any = js.native
+  def renderItem(item: js.Any, index: scala.Double): reactLib.reactMod.ReactNs.ReactNode = js.native
   def renderList(hasGetPrefixClsRenderEmpty: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

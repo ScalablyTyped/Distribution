@@ -14,7 +14,7 @@ trait TemplateItemGroup extends Accessor {
     */
   val items: js.Array[TemplateItem] = js.native
   /**
-    * The name displayed in the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget indicating the grouped [TemplateItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html).
+    * The label displayed in the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget indicating the grouped [TemplateItems](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItemGroup.html#label)
     */

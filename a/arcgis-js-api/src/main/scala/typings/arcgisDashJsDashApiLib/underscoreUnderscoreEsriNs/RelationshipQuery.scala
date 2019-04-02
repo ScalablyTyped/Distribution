@@ -10,12 +10,6 @@ trait RelationshipQuery
   extends Accessor
      with JSONSupport {
   /**
-    * The definition expression to be applied to the related table or layer. Only records in the list of [objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#objectIds) that satisfy the definition expression are queried for related records.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#definitionExpression)
-    */
-  var definitionExpression: java.lang.String = js.native
-  /**
     * Specify the geodatabase version to query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#gdbVersion)
@@ -71,6 +65,12 @@ trait RelationshipQuery
     * @default false
     */
   var returnGeometry: scala.Boolean = js.native
+  /**
+    * The definition expression to be applied to the related table or layer. Only records in the list of [objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#objectIds) that satisfy the definition expression are queried for related records.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#where)
+    */
+  var where: java.lang.String = js.native
 }
 
 @JSGlobal("__esri.RelationshipQuery")

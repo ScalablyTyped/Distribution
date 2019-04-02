@@ -105,7 +105,7 @@ trait ArcGISImageServiceProperties extends js.Object {
     */
   var pixelType: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The popup template for the layer. When set on the layer, the popupTemplate allows users to access attributes and display their values using text and/or charts in the [view's popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#popup) when a pixel is clicked. See [this sample](https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-popup/index.html) for an example of how [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) interacts with an [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).
+    * The popup template for the layer. When set on the layer, the popupTemplate allows users to access attributes and display their values using text and/or charts in the [view's popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#popup) when a pixel is clicked. See [this sample](https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-popup/index.html) for an example of how [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) interacts with an [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).  A default popup template is automatically used if no `popupTemplate` has been defined when [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#popupTemplate)
     */
@@ -130,6 +130,12 @@ trait ArcGISImageServiceProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#rasterFields)
     */
   var rasterFields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
+  /**
+    * The renderer assigned to the layer. The renderer defines how to visualize pixels in the layer. Depending on the renderer type, the pixels may be stretched across the color ramp, classified or have different symbols based on values.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#renderer)
+    */
+  var renderer: js.UndefOr[RendererProperties] = js.undefined
   /**
     * Specifies the rule for how the requested image should be rendered.
     *
@@ -166,6 +172,7 @@ object ArcGISImageServiceProperties {
     rasterAttributeTable: js.Any = null,
     rasterAttributeTableFieldPrefix: java.lang.String = null,
     rasterFields: js.Array[FieldProperties] = null,
+    renderer: RendererProperties = null,
     renderingRule: RasterFunctionProperties = null,
     url: java.lang.String = null
   ): ArcGISImageServiceProperties = {
@@ -189,6 +196,7 @@ object ArcGISImageServiceProperties {
     if (rasterAttributeTable != null) __obj.updateDynamic("rasterAttributeTable")(rasterAttributeTable)
     if (rasterAttributeTableFieldPrefix != null) __obj.updateDynamic("rasterAttributeTableFieldPrefix")(rasterAttributeTableFieldPrefix)
     if (rasterFields != null) __obj.updateDynamic("rasterFields")(rasterFields)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
     if (renderingRule != null) __obj.updateDynamic("renderingRule")(renderingRule)
     if (url != null) __obj.updateDynamic("url")(url)
     __obj.asInstanceOf[ArcGISImageServiceProperties]

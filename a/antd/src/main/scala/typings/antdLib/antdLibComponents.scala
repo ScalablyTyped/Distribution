@@ -90,8 +90,6 @@ object antdLibComponents {
   @scala.inline
   def DropdownDashButton: reactLib.reactMod.ReactNs.ComponentType[antdLib.libDropdownDropdownDashButtonMod.DropdownButtonProps] = js.constructorOf[antdLib.libDropdownDropdownDashButtonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libDropdownDropdownDashButtonMod.DropdownButtonProps]]
   @scala.inline
-  def Empty: reactLib.reactMod.ReactNs.ComponentType[antdLib.libEmptyMod.EmptyProps] = antdLib.libEmptyMod.^.default.asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libEmptyMod.EmptyProps]]
-  @scala.inline
   def Form: reactLib.reactMod.ReactNs.ComponentType[antdLib.libFormFormMod.FormProps] = js.constructorOf[antdLib.libFormMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libFormFormMod.FormProps]]
   @scala.inline
   def FormItem: reactLib.reactMod.ReactNs.ComponentType[antdLib.libFormFormItemMod.FormItemProps] = js.constructorOf[antdLib.libFormFormItemMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libFormFormItemMod.FormItemProps]]
@@ -114,7 +112,7 @@ object antdLibComponents {
   @scala.inline
   def Layout: reactLib.reactMod.ReactNs.ComponentType[antdLib.libLayoutLayoutMod.BasicProps] = js.constructorOf[antdLib.libLayoutMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libLayoutLayoutMod.BasicProps]]
   @scala.inline
-  def List: reactLib.reactMod.ReactNs.ComponentType[antdLib.libListMod.ListProps] = js.constructorOf[antdLib.libListMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libListMod.ListProps]]
+  def List[T]: reactLib.reactMod.ReactNs.ComponentType[antdLib.libListMod.ListProps[T]] = js.constructorOf[antdLib.libListMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libListMod.ListProps[T]]]
   @scala.inline
   def LocaleDashProvider: reactLib.reactMod.ReactNs.ComponentType[antdLib.libLocaleDashProviderMod.LocaleProviderProps] = js.constructorOf[antdLib.libLocaleDashProviderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libLocaleDashProviderMod.LocaleProviderProps]]
   @scala.inline
@@ -333,9 +331,6 @@ object antdLibComponents {
   def DropdownButtonProps: antdLib.libDropdownDropdownDashButtonMod.DropdownButtonProps.type = antdLib.libDropdownDropdownDashButtonMod.DropdownButtonProps
   type DropdownButtonProps = antdLib.libDropdownDropdownDashButtonMod.DropdownButtonProps
   @scala.inline
-  def EmptyProps: antdLib.libEmptyMod.EmptyProps.type = antdLib.libEmptyMod.EmptyProps
-  type EmptyProps = antdLib.libEmptyMod.EmptyProps
-  @scala.inline
   def FormItemProps: antdLib.libFormFormItemMod.FormItemProps.type = antdLib.libFormFormItemMod.FormItemProps
   type FormItemProps = antdLib.libFormFormItemMod.FormItemProps
   @scala.inline
@@ -367,7 +362,7 @@ object antdLibComponents {
   type ListItemProps = antdLib.libListItemMod.ListItemProps
   @scala.inline
   def ListProps: antdLib.libListMod.ListProps.type = antdLib.libListMod.ListProps
-  type ListProps = antdLib.libListMod.ListProps
+  type ListProps[T] = antdLib.libListMod.ListProps[T]
   @scala.inline
   def LocaleProviderProps: antdLib.libLocaleDashProviderMod.LocaleProviderProps.type = antdLib.libLocaleDashProviderMod.LocaleProviderProps
   type LocaleProviderProps = antdLib.libLocaleDashProviderMod.LocaleProviderProps

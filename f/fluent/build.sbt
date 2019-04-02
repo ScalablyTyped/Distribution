@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fluent"
-version := "0.11-dt-20190325Z-8affbb"
+version := "0.11-dt-20190326Z-8affbb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

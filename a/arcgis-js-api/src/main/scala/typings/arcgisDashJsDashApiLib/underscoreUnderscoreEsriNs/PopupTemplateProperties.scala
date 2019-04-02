@@ -16,12 +16,12 @@ trait PopupTemplateProperties extends js.Object {
     * The template for defining and formatting a popup's content. Content may be defined with one of four types of values.
     *   * **String** - A popup's content can be a simple text or string value referencing field values or [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions. Expressions must be defined in the [expressionInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#expressionInfos) property.
     *   * **Popup elements** - You can also display content as popup elements. These elements can be used individually or combined. The order in which they are set determines how they display within the popup. See the items below describing each element.
-    *   * **text** - A [TextContentElement](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-ContentElement-Text.html) that provides descriptive text as content.
-    *   * **media** - A [MediaContentElement](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-ContentElement-Media.html) that is used to display media such as [charts](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-ContentElement-Media-Chart.html) and/or [images](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-ContentElement-Media-Image.html).
-    *   * **fields** - A [FieldsContentElement](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-ContentElement-Fields.html). that contains the fields to display within the content. If this is not set directly within the `content` property, the popup will display whatever is set in the [PopupTemplate.fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos) property.
-    *   * **attachments** -  A [AttachmentsContentElement](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-ContentElement-Attachments.html) that contains attachments associated with the feature.
+    *   * **text** - A [text content element](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-TextContent.html) that provides descriptive text as content.
+    *   * **media** - A [media content element](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-MediaContent.html) that is used to display media such as charts/images.
+    *   * **fields** - A [fields content element](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html). that contains the fields to display within the content. If this is not set directly within the `content` property, the popup will display whatever is set in the [PopupTemplate.fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos) property.
+    *   * **attachments** -  A [attachments content element](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-AttachmentsContent.html) that contains attachments associated with the feature.
     *   * **promise** - The PopupTemplate's content may also be defined with a promise that resolves to any of the above-mentioned elements. This is useful for cases when you run a task or execute a query and want to display the results in the popup. Simply pass the promise to the popupTemplate's content and ensure that it resolves to a string or other popup element.
-    *   * **function** - Content may be defined with a JavaScript function that returns any of the above-mentioned elements. This is handy when your popup requires additional processing or functionality than what is provided with the four content types listed above. For example, let’s assume that you would like to display charts using third-party JavaScript libraries or categorize information into separate tabs. In these cases, you can use a function that returns either a string, a reference to an HTML element, a popup element, or a promise. When the feature is clicked, the feature is passed as an argument to the function and provides access to the feature’s graphic and attributes. The function then executes and returns a value to display in the popup template. It is also possible to check a specific feature attribute and determine whether to apply a function based on its value. Out-of-the-box formatting functions can be used to format date, time, and number values. The syntax for using an out-of-the-box formatting function is: `{field-name:format-function-name(option-a: value, option-b: value)}`
+    *   * **function** - Content may be defined with a JavaScript function that returns any of the above-mentioned elements. This is handy when your popup requires additional processing or functionality than what is provided with the four content types listed above. For example, let’s assume that you would like to display charts using third-party JavaScript libraries or categorize information into separate tabs. In these cases, you can use a function that returns either a string, a reference to an HTML element, a popup element, or a promise. When the feature is clicked, the feature is passed as an argument to the function and provides access to the feature’s graphic and attributes. Set the [outFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#outFields) property to specify any fields needed for rendering the popup. The function then executes and returns a value to display in the popup template. It is also possible to check a specific feature attribute and determine whether to apply a function based on its value. Out-of-the-box formatting functions can be used to format date, time, and number values. The syntax for using an out-of-the-box formatting function is: `{field-name:format-function-name(option-a: value, option-b: value)}`
     *
     *
     * The formatter functions are described below:
@@ -38,16 +38,16 @@ trait PopupTemplateProperties extends js.Object {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content)
     */
   var content: js.UndefOr[
-    ContentElementContentElementProperties | js.Array[ContentElementContentElementProperties] | java.lang.String | js.Function | arcgisDashJsDashApiLib.IPromise[_]
+    ContentProperties | js.Array[ContentProperties] | java.lang.String | js.Function | arcgisDashJsDashApiLib.IPromise[_]
   ] = js.undefined
   /**
-    * An array of objects or [ExpressionInfo[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-ExpressionInfo.html) that reference [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions.
+    * An array of objects or [ExpressionInfo[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html) that reference [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#expressionInfos)
     */
   var expressionInfos: js.UndefOr[js.Array[ExpressionInfoProperties]] = js.undefined
   /**
-    * An array of [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-FieldInfo.html) that defines how fields in the dataset or values from [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions participate in a popup. Each object [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-FieldInfo.html) contains properties for a single field or expression.
+    * An array of [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html) that defines how fields in the dataset or values from [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions participate in a popup. Each object [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html) contains properties for a single field or expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos)
     */
@@ -67,7 +67,8 @@ trait PopupTemplateProperties extends js.Object {
     */
   var layerOptions: js.UndefOr[LayerOptionsProperties] = js.undefined
   /**
-    * An array of fields used in the PopupTemplate. Use this property to indicate what fields are required to fully render the PopupTemplate.  To fetch the values from all fields, use `["*"]`.
+    * An array of field names used in the PopupTemplate. Use this property to indicate what fields are required to fully render the PopupTemplate. This is important if setting [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content) via a function since any fields needed for successful rendering should be specified here.  To fetch the values from all fields, use `["*"]`.
+    * > This will not fetch fields from related tables. If related features are needed, set this using [FieldInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#outFields)
     *
@@ -100,7 +101,7 @@ object PopupTemplateProperties {
   @scala.inline
   def apply(
     actions: CollectionProperties[ActionButton | ActionToggle] = null,
-    content: ContentElementContentElementProperties | js.Array[ContentElementContentElementProperties] | java.lang.String | js.Function | arcgisDashJsDashApiLib.IPromise[_] = null,
+    content: ContentProperties | js.Array[ContentProperties] | java.lang.String | js.Function | arcgisDashJsDashApiLib.IPromise[_] = null,
     expressionInfos: js.Array[ExpressionInfoProperties] = null,
     fieldInfos: js.Array[FieldInfoProperties] = null,
     lastEditInfoEnabled: js.UndefOr[scala.Boolean] = js.undefined,

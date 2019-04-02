@@ -13,6 +13,12 @@ trait AuthoringInfoProperties extends js.Object {
     */
   var classificationMethod: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Indicates the color ramp was used to create the symbols for Unique Value or Class Breaks renderer for Imagery Layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#colorRamp)
+    */
+  var colorRamp: js.UndefOr[ColorRampProperties] = js.undefined
+  /**
     * A numeric field used for generating a [relationship renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-relationship.html) along with [field2](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field2). In the default visualization, the values of this field are rendered along the vertical axis of the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field1)
@@ -72,6 +78,7 @@ object AuthoringInfoProperties {
   @scala.inline
   def apply(
     classificationMethod: java.lang.String = null,
+    colorRamp: ColorRampProperties = null,
     field1: AuthoringInfoField1 = null,
     field2: AuthoringInfoField2 = null,
     fields: js.Array[java.lang.String] = null,
@@ -84,6 +91,7 @@ object AuthoringInfoProperties {
   ): AuthoringInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (classificationMethod != null) __obj.updateDynamic("classificationMethod")(classificationMethod)
+    if (colorRamp != null) __obj.updateDynamic("colorRamp")(colorRamp)
     if (field1 != null) __obj.updateDynamic("field1")(field1)
     if (field2 != null) __obj.updateDynamic("field2")(field2)
     if (fields != null) __obj.updateDynamic("fields")(fields)

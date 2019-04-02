@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Sublayer extends Accessor {
   /**
-    * A SQL where clause used to filter features in the image. Only the features that satisfy the definition expression are displayed in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html). Definition expressions may be set when a sublayer is constructed prior to it loading in the view or after it has been added to the MapImageLayer.
+    * A SQL where clause used to filter features in the image. Only the features that satisfy the definition expression are displayed in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html). Definition expressions may be set when a sublayer is constructed prior to it loading in the view or after it has been added to the MapImageLayer. To see if you can use this property, check the `supportsSublayerDefinitionExpression` property of [MapImageLayer.capabilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#capabilities).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#definitionExpression)
     */
@@ -20,7 +20,7 @@ trait Sublayer extends Accessor {
     */
   var id: scala.Double = js.native
   /**
-    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) objects. Use this property to specify labeling properties for the layer such as label expression, placement, and size. For labels to display in the view, the [labelsVisible](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#labelsVisible) property of the sublayer must be `true`.
+    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) objects. Use this property to specify labeling properties for the layer such as label expression, placement, and size.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#labelingInfo)
     */
@@ -47,6 +47,21 @@ trait Sublayer extends Accessor {
     * @default true
     */
   var legendEnabled: scala.Boolean = js.native
+  /**
+    * Indicates how the layer should display in the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) widget. The possible values are listed below.
+    *
+    * Value | Description
+    * ------|------------
+    *  show | The layer is visible in the table of contents.
+    *  hide | The layer is hidden in the table of contents.
+    *  hide-children | Hide the children layers from the table of contents.
+    *
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#listMode)
+    *
+    * @default show
+    */
+  var listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = js.native
   /**
     * The maximum scale (most zoomed in) at which the layer is visible in the view. If the map is zoomed in beyond this scale, the layer will not be visible. A value of `0` means the layer does not have a maximum scale. The maxScale value should always be smaller than the [minScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#minScale) value, and greater than or equal to the service specification.
     *
@@ -82,7 +97,7 @@ trait Sublayer extends Accessor {
     */
   var popupTemplate: PopupTemplate = js.native
   /**
-    * The renderer to apply to the sublayer. This value overrides the renderer read from the map service.
+    * The renderer to apply to the sublayer. This value overrides the renderer read from the map service. To see if you can use this property, check the `supportsDynamicLayers` property of [MapImageLayer.capabilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#capabilities).
     * > **Known Limitations**
     *   * [3D symbols](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html) are not currently supported in renderers set on sublayers.
     *   * [Visual variables](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#visualVariables) and [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions are not supported in renderers set on MapImageLayer sublayers unless they reference ArcGIS Enterprise 10.6 map services (or later) created from ArcGIS Pro.
@@ -115,7 +130,7 @@ trait Sublayer extends Accessor {
     */
   val url: java.lang.String = js.native
   /**
-    * Indicates if the layer is visible in the view.
+    * Indicates if the layer is visible in the view. To see if you can use this property, check the `supportsSublayerVisibility` property of [MapImageLayer.capabilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#capabilities).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#visible)
     */
@@ -127,7 +142,7 @@ trait Sublayer extends Accessor {
     *
     *
     */
-  def createFeatureLayer(): FeatureLayer = js.native
+  def createFeatureLayer(): arcgisDashJsDashApiLib.IPromise[FeatureLayer] = js.native
   /**
     * Creates a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) object with default values representing the layer's state, including filters (definition expression) on the layer's features.
     *
@@ -137,7 +152,7 @@ trait Sublayer extends Accessor {
     */
   def createQuery(): Query = js.native
   /**
-    * Executes a [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-QueryTask.html) against features in the sublayer.
+    * Executes a [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-QueryTask.html) against features in the sublayer. To see if you can use this property, check the `supportsQuery` property of [MapImageLayer.capabilities](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#capabilities).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#queryFeatures)
     *

@@ -41,13 +41,17 @@ trait ClosestFacilityParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#directionsLengthUnits)
     */
-  var directionsLengthUnits: js.UndefOr[java.lang.String] = js.undefined
+  var directionsLengthUnits: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards
+  ] = js.undefined
   /**
     * Defines the amount of direction information returned. The default value is standard.  **Possible Values:** complete | complete-no-events | instructions-only | standard | summary-only
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#directionsOutputType)
     */
-  var directionsOutputType: js.UndefOr[java.lang.String] = js.undefined
+  var directionsOutputType: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.complete | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`complete-no-events` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`instructions-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.standard | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`summary-only`
+  ] = js.undefined
   /**
     * The style to be used when returning directions. The default will be as defined in the network layer. View the REST layer description for your network service to see a list of supported styles.
     *
@@ -64,8 +68,6 @@ trait ClosestFacilityParametersProperties extends js.Object {
     * When `true`, restricted network elements should be considered when finding network locations.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#doNotLocateOnRestrictedElements)
-    *
-    * @default true
     */
   var doNotLocateOnRestrictedElements: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -103,7 +105,9 @@ trait ClosestFacilityParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#outputGeometryPrecisionUnits)
     */
-  var outputGeometryPrecisionUnits: js.UndefOr[java.lang.String] = js.undefined
+  var outputGeometryPrecisionUnits: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards
+  ] = js.undefined
   /**
     * The type of output lines to be generated in the result. The default is defined in the specific routing network layer used in your RouteTask.
     *
@@ -117,7 +121,9 @@ trait ClosestFacilityParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#outputLines)
     */
-  var outputLines: js.UndefOr[java.lang.String] = js.undefined
+  var outputLines: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.straight | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape-with-measure`
+  ] = js.undefined
   /**
     * The set of point barriers loaded as network locations during analysis. Can be an instance of [DataLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html) or [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html). At ArcGIS Server 10.1 an optional `url` property was added. Use this property to specify a REST query request to a Feature, Map or GP Service that returns a JSON feature set. The url property can be specified using [DataFile](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataFile.html). Either the features or url property should be specified.
     *
@@ -141,7 +147,9 @@ trait ClosestFacilityParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#restrictUTurns)
     */
-  var restrictUTurns: js.UndefOr[java.lang.String] = js.undefined
+  var restrictUTurns: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`allow-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`no-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-and-intersections`
+  ] = js.undefined
   /**
     * The list of network attribute names to be used as restrictions with the analysis. The default is as defined in the specific routing network layer used in your RouteTask. Possible values are listed in the Service Directory under Network Dataset > Network Attributes. You can also specify a value of none to indicate that no network attributes should be used as restrictions. If you specify an empty array, it will default to the default of the service. Use `["none"]` to override the service defaults and specify that no restrictions should be used.
     *
@@ -200,8 +208,6 @@ trait ClosestFacilityParametersProperties extends js.Object {
     * When `true`, closest facility routes will be generated and returned in the route property of each [ClosestFacilitySolveResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilitySolveResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#returnRoutes)
-    *
-    * @default true
     */
   var returnRoutes: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -215,7 +221,9 @@ trait ClosestFacilityParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#timeOfDayUsage)
     */
-  var timeOfDayUsage: js.UndefOr[java.lang.String] = js.undefined
+  var timeOfDayUsage: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.start | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.end
+  ] = js.undefined
   /**
     * Options for traveling to or from the facility. Default values are defined by the network layer.
     *
@@ -227,13 +235,15 @@ trait ClosestFacilityParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#travelDirection)
     */
-  var travelDirection: js.UndefOr[java.lang.String] = js.undefined
+  var travelDirection: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`from-facility` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`to-facility`
+  ] = js.undefined
   /**
     * Travel modes define how a pedestrian, car, truck or other medium of transportation moves through the street network.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ClosestFacilityParameters.html#travelMode)
     */
-  var travelMode: js.UndefOr[js.Any] = js.undefined
+  var travelMode: js.UndefOr[java.lang.String] = js.undefined
   /**
     * If `true`, the hierarchy attribute for the network will be used in analysis. The default is defined in the routing network layer used by the [ClosestFacilityTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-ClosestFacilityTask.html).
     *
@@ -252,8 +262,8 @@ object ClosestFacilityParametersProperties {
     defaultCutoff: scala.Int | scala.Double = null,
     defaultTargetFacilityCount: scala.Int | scala.Double = null,
     directionsLanguage: java.lang.String = null,
-    directionsLengthUnits: java.lang.String = null,
-    directionsOutputType: java.lang.String = null,
+    directionsLengthUnits: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards = null,
+    directionsOutputType: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.complete | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`complete-no-events` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`instructions-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.standard | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`summary-only` = null,
     directionsStyleName: java.lang.String = null,
     directionsTimeAttribute: java.lang.String = null,
     doNotLocateOnRestrictedElements: js.UndefOr[scala.Boolean] = js.undefined,
@@ -262,12 +272,12 @@ object ClosestFacilityParametersProperties {
     incidents: DataLayerProperties | FeatureSetProperties = null,
     outSpatialReference: SpatialReferenceProperties | java.lang.String = null,
     outputGeometryPrecision: scala.Int | scala.Double = null,
-    outputGeometryPrecisionUnits: java.lang.String = null,
-    outputLines: java.lang.String = null,
+    outputGeometryPrecisionUnits: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards = null,
+    outputLines: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.straight | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape-with-measure` = null,
     pointBarriers: DataLayerProperties | FeatureSetProperties = null,
     polygonBarriers: DataLayerProperties | FeatureSetProperties = null,
     polylineBarriers: DataLayerProperties | FeatureSetProperties = null,
-    restrictUTurns: java.lang.String = null,
+    restrictUTurns: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`allow-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`no-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-and-intersections` = null,
     restrictionAttributes: js.Array[java.lang.String] = null,
     returnDirections: js.UndefOr[scala.Boolean] = js.undefined,
     returnFacilities: js.UndefOr[scala.Boolean] = js.undefined,
@@ -277,9 +287,9 @@ object ClosestFacilityParametersProperties {
     returnPolylineBarriers: js.UndefOr[scala.Boolean] = js.undefined,
     returnRoutes: js.UndefOr[scala.Boolean] = js.undefined,
     timeOfDay: DateProperties = null,
-    timeOfDayUsage: java.lang.String = null,
-    travelDirection: java.lang.String = null,
-    travelMode: js.Any = null,
+    timeOfDayUsage: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.start | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.end = null,
+    travelDirection: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`from-facility` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`to-facility` = null,
+    travelMode: java.lang.String = null,
     useHierarchy: js.UndefOr[scala.Boolean] = js.undefined
   ): ClosestFacilityParametersProperties = {
     val __obj = js.Dynamic.literal()
@@ -288,8 +298,8 @@ object ClosestFacilityParametersProperties {
     if (defaultCutoff != null) __obj.updateDynamic("defaultCutoff")(defaultCutoff.asInstanceOf[js.Any])
     if (defaultTargetFacilityCount != null) __obj.updateDynamic("defaultTargetFacilityCount")(defaultTargetFacilityCount.asInstanceOf[js.Any])
     if (directionsLanguage != null) __obj.updateDynamic("directionsLanguage")(directionsLanguage)
-    if (directionsLengthUnits != null) __obj.updateDynamic("directionsLengthUnits")(directionsLengthUnits)
-    if (directionsOutputType != null) __obj.updateDynamic("directionsOutputType")(directionsOutputType)
+    if (directionsLengthUnits != null) __obj.updateDynamic("directionsLengthUnits")(directionsLengthUnits.asInstanceOf[js.Any])
+    if (directionsOutputType != null) __obj.updateDynamic("directionsOutputType")(directionsOutputType.asInstanceOf[js.Any])
     if (directionsStyleName != null) __obj.updateDynamic("directionsStyleName")(directionsStyleName)
     if (directionsTimeAttribute != null) __obj.updateDynamic("directionsTimeAttribute")(directionsTimeAttribute)
     if (!js.isUndefined(doNotLocateOnRestrictedElements)) __obj.updateDynamic("doNotLocateOnRestrictedElements")(doNotLocateOnRestrictedElements)
@@ -298,12 +308,12 @@ object ClosestFacilityParametersProperties {
     if (incidents != null) __obj.updateDynamic("incidents")(incidents.asInstanceOf[js.Any])
     if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
     if (outputGeometryPrecision != null) __obj.updateDynamic("outputGeometryPrecision")(outputGeometryPrecision.asInstanceOf[js.Any])
-    if (outputGeometryPrecisionUnits != null) __obj.updateDynamic("outputGeometryPrecisionUnits")(outputGeometryPrecisionUnits)
-    if (outputLines != null) __obj.updateDynamic("outputLines")(outputLines)
+    if (outputGeometryPrecisionUnits != null) __obj.updateDynamic("outputGeometryPrecisionUnits")(outputGeometryPrecisionUnits.asInstanceOf[js.Any])
+    if (outputLines != null) __obj.updateDynamic("outputLines")(outputLines.asInstanceOf[js.Any])
     if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
     if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
     if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
-    if (restrictUTurns != null) __obj.updateDynamic("restrictUTurns")(restrictUTurns)
+    if (restrictUTurns != null) __obj.updateDynamic("restrictUTurns")(restrictUTurns.asInstanceOf[js.Any])
     if (restrictionAttributes != null) __obj.updateDynamic("restrictionAttributes")(restrictionAttributes)
     if (!js.isUndefined(returnDirections)) __obj.updateDynamic("returnDirections")(returnDirections)
     if (!js.isUndefined(returnFacilities)) __obj.updateDynamic("returnFacilities")(returnFacilities)
@@ -313,8 +323,8 @@ object ClosestFacilityParametersProperties {
     if (!js.isUndefined(returnPolylineBarriers)) __obj.updateDynamic("returnPolylineBarriers")(returnPolylineBarriers)
     if (!js.isUndefined(returnRoutes)) __obj.updateDynamic("returnRoutes")(returnRoutes)
     if (timeOfDay != null) __obj.updateDynamic("timeOfDay")(timeOfDay.asInstanceOf[js.Any])
-    if (timeOfDayUsage != null) __obj.updateDynamic("timeOfDayUsage")(timeOfDayUsage)
-    if (travelDirection != null) __obj.updateDynamic("travelDirection")(travelDirection)
+    if (timeOfDayUsage != null) __obj.updateDynamic("timeOfDayUsage")(timeOfDayUsage.asInstanceOf[js.Any])
+    if (travelDirection != null) __obj.updateDynamic("travelDirection")(travelDirection.asInstanceOf[js.Any])
     if (travelMode != null) __obj.updateDynamic("travelMode")(travelMode)
     if (!js.isUndefined(useHierarchy)) __obj.updateDynamic("useHierarchy")(useHierarchy)
     __obj.asInstanceOf[ClosestFacilityParametersProperties]

@@ -41,6 +41,14 @@ trait DirectionsViewModelProperties extends GoToProperties {
     */
   var routeSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   /**
+    * The selected travel mode. More information can be found in the [ArcGIS Online documentation](https://doc.arcgis.com/en/arcgis-online/reference/travel-modes.htm#GUID-96DF7F50-E0B2-4BF3-8271-EB515D3F0107).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#selectedTravelMode)
+    *
+    * @default null | 'Driving Time'
+    */
+  var selectedTravelMode: js.UndefOr[DirectionsViewModelSelectedTravelMode] = js.undefined
+  /**
     * The default stop symbols used to display locations between the origin and final destination.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#stopSymbols)
@@ -75,6 +83,7 @@ object DirectionsViewModelProperties {
     routeParameters: RouteParametersProperties = null,
     routeServiceUrl: java.lang.String = null,
     routeSymbol: SimpleLineSymbolProperties = null,
+    selectedTravelMode: DirectionsViewModelSelectedTravelMode = null,
     stopSymbols: DirectionsViewModelStopSymbols = null,
     stops: CollectionProperties[GraphicProperties] = null,
     timeAttribute: DirectionsViewModelTimeAttribute = null,
@@ -87,6 +96,7 @@ object DirectionsViewModelProperties {
     if (routeParameters != null) __obj.updateDynamic("routeParameters")(routeParameters)
     if (routeServiceUrl != null) __obj.updateDynamic("routeServiceUrl")(routeServiceUrl)
     if (routeSymbol != null) __obj.updateDynamic("routeSymbol")(routeSymbol)
+    if (selectedTravelMode != null) __obj.updateDynamic("selectedTravelMode")(selectedTravelMode)
     if (stopSymbols != null) __obj.updateDynamic("stopSymbols")(stopSymbols)
     if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
     if (timeAttribute != null) __obj.updateDynamic("timeAttribute")(timeAttribute)

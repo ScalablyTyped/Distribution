@@ -5,23 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait LogUpdateOutputStrategyOptions extends js.Object {
-  val LogUpdate: atIonicCliDashFrameworkLib.Anon_Default
-  val colors: js.UndefOr[atIonicCliDashFrameworkLib.libColorsMod.Colors] = js.undefined
-  val stream: js.UndefOr[nodeLib.NodeJSNs.WritableStream] = js.undefined
-}
-
-object LogUpdateOutputStrategyOptions {
-  @scala.inline
-  def apply(
-    LogUpdate: atIonicCliDashFrameworkLib.Anon_Default,
-    colors: atIonicCliDashFrameworkLib.libColorsMod.Colors = null,
-    stream: nodeLib.NodeJSNs.WritableStream = null
-  ): LogUpdateOutputStrategyOptions = {
-    val __obj = js.Dynamic.literal(LogUpdate = LogUpdate)
-    if (colors != null) __obj.updateDynamic("colors")(colors)
-    if (stream != null) __obj.updateDynamic("stream")(stream)
-    __obj.asInstanceOf[LogUpdateOutputStrategyOptions]
-  }
+  @JSName("LogUpdate")
+  val LogUpdate_Original: atIonicCliDashFrameworkLib.Anon_LogUpdate with logDashUpdateLib.logDashUpdateMod.logUpdateNs.LogUpdate with logDashUpdateLib.Anon_CreateDefault = js.native
+  val colors: js.UndefOr[atIonicCliDashFrameworkLib.libColorsMod.Colors] = js.native
+  val stream: js.UndefOr[nodeLib.NodeJSNs.WritableStream] = js.native
+  /**
+  		Log to `stdout` by overwriting the previous output in the terminal.
+  		@param text - The text to log to `stdout`.
+  		@example
+  		```
+  		import logUpdate = require('log-update');
+  		const frames = ['-', '\\', '|', '/'];
+  		let i = 0;
+  		setInterval(() => {
+  			const frame = frames[i = ++i % frames.length];
+  			logUpdate(
+  		`
+  				♥♥
+  		${frame} unicorns ${frame}
+  				♥♥
+  		`
+  			);
+  		}, 80);
+  		```
+  		*/
+  def LogUpdate(text: java.lang.String*): scala.Unit = js.native
 }
 

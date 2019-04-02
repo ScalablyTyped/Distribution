@@ -11,7 +11,7 @@ trait PointSymbol3DProperties extends Symbol3DProperties {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#callout)
     */
-  var callout: js.UndefOr[Callout3DProperties] = js.undefined
+  var callout: js.UndefOr[LineCallout3DProperties] = js.undefined
   /**
     * Shifts the symbol along the vertical world axis by a given height. The height is set in screen space units like points or pixels. For points displayed with a [callout](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#callout) `verticalOffset` should be set.
     *
@@ -23,7 +23,7 @@ trait PointSymbol3DProperties extends Symbol3DProperties {
 object PointSymbol3DProperties {
   @scala.inline
   def apply(
-    callout: Callout3DProperties = null,
+    callout: LineCallout3DProperties = null,
     color: Color | js.Array[scala.Double] | java.lang.String = null,
     styleOrigin: Symbol3DStyleOrigin = null,
     symbolLayers: CollectionProperties[Symbol3DLayerProperties] = null,

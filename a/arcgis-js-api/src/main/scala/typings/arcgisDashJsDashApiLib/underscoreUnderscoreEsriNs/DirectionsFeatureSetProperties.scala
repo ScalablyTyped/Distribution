@@ -66,6 +66,7 @@ object DirectionsFeatureSetProperties {
     fields: js.Array[FieldProperties] = null,
     geometryType: java.lang.String = null,
     mergedGeometry: PolylineProperties = null,
+    queryGeometry: GeometryProperties = null,
     routeId: java.lang.String = null,
     routeName: java.lang.String = null,
     spatialReference: SpatialReferenceProperties = null,
@@ -82,6 +83,7 @@ object DirectionsFeatureSetProperties {
     if (fields != null) __obj.updateDynamic("fields")(fields)
     if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
     if (mergedGeometry != null) __obj.updateDynamic("mergedGeometry")(mergedGeometry)
+    if (queryGeometry != null) __obj.updateDynamic("queryGeometry")(queryGeometry)
     if (routeId != null) __obj.updateDynamic("routeId")(routeId)
     if (routeName != null) __obj.updateDynamic("routeName")(routeName)
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)

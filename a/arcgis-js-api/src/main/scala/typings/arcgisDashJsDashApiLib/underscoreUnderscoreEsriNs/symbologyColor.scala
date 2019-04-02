@@ -69,8 +69,8 @@ trait symbologyColor extends js.Object {
     * @param basemap The [Esri basemap string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or object that will be used with the returned theme(s).
     *
     */
-  def getThemes(): js.Array[_] = js.native
-  def getThemes(basemap: Basemap): js.Array[_] = js.native
-  def getThemes(basemap: java.lang.String): js.Array[_] = js.native
+  def getThemes(): js.Array[Theme] = js.native
+  def getThemes(basemap: Basemap): js.Array[Theme] = js.native
+  def getThemes(basemap: java.lang.String): js.Array[Theme] = js.native
 }
 

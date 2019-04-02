@@ -15,15 +15,18 @@ object httpsNs extends js.Object {
   }
   
   @js.native
-  class Server protected ()
+  class Server ()
     extends nodeLib.httpsMod.Server {
     def this(options: nodeLib.httpsMod.ServerOptions) = this()
+    def this(requestListener: nodeLib.httpMod.RequestListener) = this()
     def this(options: nodeLib.httpsMod.ServerOptions, requestListener: nodeLib.httpMod.RequestListener) = this()
   }
   
   var globalAgent: nodeLib.httpsMod.Agent = js.native
+  def createServer(): nodeLib.httpsMod.Server = js.native
   def createServer(options: nodeLib.httpsMod.ServerOptions): nodeLib.httpsMod.Server = js.native
   def createServer(options: nodeLib.httpsMod.ServerOptions, requestListener: nodeLib.httpMod.RequestListener): nodeLib.httpsMod.Server = js.native
+  def createServer(requestListener: nodeLib.httpMod.RequestListener): nodeLib.httpsMod.Server = js.native
   def get(options: java.lang.String): nodeLib.httpMod.ClientRequest = js.native
   def get(
     options: java.lang.String,

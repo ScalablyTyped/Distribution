@@ -26,7 +26,7 @@ trait PointCloudLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#filters)
     */
-  var filters: js.UndefOr[js.Array[PointCloudFilterProperties]] = js.undefined
+  var filters: js.UndefOr[js.Array[PointCloudValueFilterProperties | PointCloudReturnFilterProperties]] = js.undefined
   /**
     * Indicates whether the layer will be included in the legend.
     *
@@ -49,12 +49,12 @@ object PointCloudLayerProperties {
     copyright: java.lang.String = null,
     elevationInfo: PointCloudLayerElevationInfo = null,
     fields: js.Array[FieldProperties] = null,
-    filters: js.Array[PointCloudFilterProperties] = null,
+    filters: js.Array[PointCloudValueFilterProperties | PointCloudReturnFilterProperties] = null,
     fullExtent: ExtentProperties = null,
     id: java.lang.String = null,
     layerId: scala.Int | scala.Double = null,
     legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    listMode: java.lang.String = null,
+    listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
     opacity: scala.Int | scala.Double = null,
     portalItem: PortalItemProperties = null,
     renderer: PointCloudRendererProperties = null,
@@ -72,7 +72,7 @@ object PointCloudLayerProperties {
     if (id != null) __obj.updateDynamic("id")(id)
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
     if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem)
     if (renderer != null) __obj.updateDynamic("renderer")(renderer)

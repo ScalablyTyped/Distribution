@@ -22,7 +22,7 @@ trait Anon_Active extends js.Object {
     antdLib.antdLibStrings.normal | antdLib.antdLibStrings.active | antdLib.antdLibStrings.success | antdLib.antdLibStrings.exception
   ] = js.native
   @JSName("strokeColor")
-  var strokeColor_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
+  var strokeColor_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String | js.Object] = js.native
   @JSName("strokeLinecap")
   var strokeLinecap_Original: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
   @JSName("strokeWidth")

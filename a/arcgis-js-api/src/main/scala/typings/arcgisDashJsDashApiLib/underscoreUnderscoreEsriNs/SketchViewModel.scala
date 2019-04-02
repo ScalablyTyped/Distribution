@@ -22,11 +22,11 @@ trait SketchViewModel
     */
   val createGraphic: Graphic = js.native
   /**
-    * Default update options set for the SketchViewModel. Update options set on this property will be overwritten if the update options are changed when [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update) method is called.
+    * Default update options set for the SketchViewModel. Update options set on this property will be overridden by options passed to the [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update) method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions)
     */
-  val defaultUpdateOptions: SketchViewModelDefaultUpdateOptions = js.native
+  var defaultUpdateOptions: SketchViewModelDefaultUpdateOptions = js.native
   /**
     * The [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) associated with the SketchViewModel. The SketchViewModel adds new [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) to this layer or can only update graphics stored in this layer.
     *
@@ -103,7 +103,7 @@ trait SketchViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#view)
     */
-  var view: MapView = js.native
+  var view: MapView | SceneView = js.native
   /**
     * Cancels the active operation and fires the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event:create) or [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event:update) event and changes the event's state to `cancel`.
     *
@@ -121,7 +121,7 @@ trait SketchViewModel
     */
   def complete(): scala.Unit = js.native
   /**
-    * Create a graphic with a geometry specified in `tool` parameter. When first vertex of the graphic is added, [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event:create) event will start firing.  **Note:** Creating a circle geometry does not work in all spatial references.
+    * Create a graphic with a geometry specified in `tool` parameter. When first vertex of the graphic is added, [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#event:create) event will start firing.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#create)
     *
@@ -168,24 +168,26 @@ trait SketchViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#update)
     *
-    * @param graphics An array of graphics to be updated. Only graphics added to SketchViewModel's [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#layer) property can be updated.
+    * @param graphics A graphic or an array of graphics to be updated. Only graphics added to SketchViewModel's [layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#layer) property can be updated.
     * @param updateOptions Update options for the graphics to be updated.
     * @param updateOptions.tool
     * Name of the update tool. Specifies the update operation for the selected graphics.  **Possible Values:**
     *
     * Value | Description |
     * ----- | ----------- |
-    * transform | The *default* tool for graphics with [polygon](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html) and [polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometries. It allows one or multiple graphics to be scaled, rotated and moved by default. Its default behavior can be changed by setting `enableRotation`, `enableScaling` or `preserveAspectRatio` properties when calling `update` method or setting them on [defaultUpdateOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions) property when the widget initializes. This tool does not apply if selected graphics have only [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) or [multipoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html) geometries.
-    * reshape | It allows the entire graphic or individual vertices of the graphic to be moved. Vertices can be added or removed. This tool can only be used with one graphic and the graphic's geometry has to be [polygon](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html) or [polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html).
-    * move | The *default* tool for graphics with [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) and [multipoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Multipoint.html) geometries. It should be used for specific cases where you just want to move selected `polygon` and `polyline` graphics without additional options. Additionally, the `move` tool does not support toggling to different modes, since `move` operation is already built into both `transform` and `reshape` tools by default.
+    * transform | This is the *default* tool for graphics with a [polygon](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html) geometry, [polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry or graphics that use a [3D object symbol layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html) with a [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometry. It allows one or multiple graphics to be scaled, rotated and moved by default. Its default behavior can be changed by setting the `enableRotation`, `enableScaling` or `preserveAspectRatio` arguments when calling the `update` method or setting them on the [defaultUpdateOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#defaultUpdateOptions) property when the Sketch widget initializes.
+    * reshape | This tool allows the entire graphic or individual vertices of the graphic to be moved. Vertices can be added or removed. This tool can only be used with a single graphic that has a [polygon](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polygon.html) or [polyline](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Polyline.html) geometry.
+    * move | This is the *default* tool for graphics with a [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometry that do not use a [3D object symbol layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html). It should be used for specific cases where you just want to move selected `polygon` and `polyline` graphics without additional options. Additionally, the `move` tool does not support toggling to different modes, since the `move` operation is built into both the `transform` and `reshape` tools by default.
     * @param updateOptions.enableRotation Indicates if the `rotation` operation will be enabled when updating graphics. Only applies if `tool` is `transform`.
     * @param updateOptions.enableScaling Indicates if the `scale` operation will be enabled when updating graphics. Only applies if `tool` is `transform`.
-    * @param updateOptions.preserveAspectRatio Indicates if the uniform scale operation will be enabled when updating graphics. `enableScaling` must be set `true` when setting this property to `true`. Only applies if `tool` is `transform`.
+    * @param updateOptions.preserveAspectRatio Indicates if the uniform scale operation will be enabled when updating graphics. `enableScaling` must be set `true` when setting this property to `true`. Only applies if `tool` is `transform` and is always `true` when transforming points that use a [3D object symbol layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html).
     * @param updateOptions.toggleToolOnClick Indicates if the graphic being updated can be toggled between `transform` and `reshape` update options.
     *
     */
-  def update(graphics: js.Array[Graphic]): scala.Unit = js.native
-  def update(graphics: js.Array[Graphic], updateOptions: SketchViewModelUpdateUpdateOptions): scala.Unit = js.native
+  def update(graphics: Graphic): arcgisDashJsDashApiLib.IPromise[scala.Unit] = js.native
+  def update(graphics: Graphic, updateOptions: SketchViewModelUpdateUpdateOptions): arcgisDashJsDashApiLib.IPromise[scala.Unit] = js.native
+  def update(graphics: js.Array[Graphic]): arcgisDashJsDashApiLib.IPromise[scala.Unit] = js.native
+  def update(graphics: js.Array[Graphic], updateOptions: SketchViewModelUpdateUpdateOptions): arcgisDashJsDashApiLib.IPromise[scala.Unit] = js.native
 }
 
 @JSGlobal("__esri.SketchViewModel")

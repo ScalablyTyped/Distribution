@@ -16,6 +16,19 @@ trait Popup
     */
   var actions: Collection[ActionButton | ActionToggle] = js.native
   /**
+    * Indicates whether [actions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#actions) within the popup should display in a menu item.
+    *
+    * | actionsMenuEnabled = false | actionsMenuEnabled = true |
+    * | -------------------------- | ------------------------- |
+    * | ![actions49](https://developers.arcgis.com/javascript/assets/img/guide/whats-new/410/popup-actions-49.png) | ![actions410](https://developers.arcgis.com/javascript/assets/img/guide/whats-new/410/popup-actions-410.png) |
+    *
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#actionsMenuEnabled)
+    *
+    * @default true
+    */
+  var actionsMenuEnabled: scala.Boolean = js.native
+  /**
     * Position of the popup in relation to the selected feature.  **Possible Values:** auto | top-center | top-right | bottom-left | bottom-center | bottom-right | Function
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#alignment)
@@ -67,6 +80,14 @@ trait Popup
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#currentDockPosition)
     */
   val currentDockPosition: java.lang.String = js.native
+  /**
+    * Enables automatic creation of a popup template for layers that have popups enabled but no popupTemplate defined. Automatic popup templates are supported for layers that support the `createPopupTemplate` method. (Supported for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), [SceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SceneLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html), [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html) and [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html)).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled)
+    *
+    * @default false
+    */
+  var defaultPopupTemplateEnabled: scala.Boolean = js.native
   /**
     * Indicates whether the placement of the popup is docked to the side of the view.  Docking the popup allows for a better user experience, particularly when opening popups in apps on mobile devices. When a popup is "dockEnabled" it means the popup no longer points to the [selected feature](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#selectedFeature) or the [location](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#location) assigned to it. Rather it is attached to a side, the top, or the bottom of the view.  See [dockOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#dockOptions) to override default options related to docking the popup.
     *

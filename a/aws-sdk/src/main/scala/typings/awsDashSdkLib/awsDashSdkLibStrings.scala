@@ -16179,6 +16179,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsIotMod.IotNs._ActionType
   
   @js.native
+  sealed trait RECONFIGURING
+    extends awsDashSdkLib.clientsEmrMod.EMRNs._InstanceGroupState
+  
+  @js.native
   sealed trait RECORD_TYPE
     extends awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs._Dimension
   
@@ -34548,6 +34552,8 @@ object awsDashSdkLibStrings {
   def REBUILDING: REBUILDING = "REBUILDING".asInstanceOf[REBUILDING]
   @scala.inline
   def RECEIVE: RECEIVE = "RECEIVE".asInstanceOf[RECEIVE]
+  @scala.inline
+  def RECONFIGURING: RECONFIGURING = "RECONFIGURING".asInstanceOf[RECONFIGURING]
   @scala.inline
   def RECORD_TYPE: RECORD_TYPE = "RECORD_TYPE".asInstanceOf[RECORD_TYPE]
   @scala.inline

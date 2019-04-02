@@ -25,6 +25,10 @@ class WriteStream ()
   def getColorDepth(): scala.Double = js.native
   def getColorDepth(env: js.Object): scala.Double = js.native
   def getWindowSize(): js.Tuple2[scala.Double, scala.Double] = js.native
+  def hasColors(): scala.Boolean = js.native
+  def hasColors(depth: scala.Double): scala.Boolean = js.native
+  def hasColors(depth: scala.Double, env: js.Object): scala.Boolean = js.native
+  def hasColors(env: js.Object): scala.Boolean = js.native
   @JSName("on")
   def on_resize(event: nodeLib.nodeLibStrings.resize, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("once")

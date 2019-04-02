@@ -51,11 +51,13 @@ trait Anon_CLIENTRENEGLIMIT extends js.Object {
     requestCert: scala.Boolean,
     rejectUnauthorized: scala.Boolean
   ): nodeLib.tlsMod.SecurePair = js.native
+  def createServer(): nodeLib.tlsMod.Server = js.native
   def createServer(options: nodeLib.tlsMod.TlsOptions): nodeLib.tlsMod.Server = js.native
   def createServer(
     options: nodeLib.tlsMod.TlsOptions,
     secureConnectionListener: js.Function1[/* socket */ nodeLib.tlsMod.TLSSocket, scala.Unit]
   ): nodeLib.tlsMod.Server = js.native
+  def createServer(secureConnectionListener: js.Function1[/* socket */ nodeLib.tlsMod.TLSSocket, scala.Unit]): nodeLib.tlsMod.Server = js.native
   def getCiphers(): js.Array[java.lang.String] = js.native
 }
 

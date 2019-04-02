@@ -9,9 +9,10 @@ trait FeatureLayerProperties
   extends LayerProperties
      with PortalLayerProperties
      with ScaleRangeLayerProperties
-     with RefreshableLayerProperties {
+     with RefreshableLayerProperties
+     with TemporalLayerProperties {
   /**
-    * The copyright text as defined by the map service.
+    * Copyright information for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#copyright)
     */
@@ -53,7 +54,7 @@ trait FeatureLayerProperties
     */
   var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   /**
-    * The geometry type of features in the layer. All features must be of the same type. This property is read-only when the layer is created from a [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url).  When creating a FeatureLayer from client-side features, this property is inferred by the geometryType of the features provided in the layer's [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property.  **Possible Values:** point | multipoint | polyline | polygon | extent | mesh
+    * The geometry type of features in the layer. All features must be of the same type. This property is read-only when the layer is created from a [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url).  When creating a FeatureLayer from client-side features, this property is inferred by the geometryType of the features provided in the layer's [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source) property.  **Possible Values:** point | multipoint | polyline | polygon | multipatch | mesh
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType)
     */
@@ -65,9 +66,16 @@ trait FeatureLayerProperties
     */
   var historicMoment: js.UndefOr[DateProperties] = js.undefined
   /**
-    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). Use this property to specify labeling properties for the layer such as label expression, placement, and size.  The [labelsVisible](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelsVisible) property of this layer must be set to `true` for labels to display in the view.  Multiple Label classes with different `where` clauses can be used to define several labels with varying styles on the same feature. Likewise, multiple label classes may be used to label different types of features (for example blue labels for lakes and green labels for parks).
+    * Returns `true` if the layer is loaded from a non-spatial table in a service. Non-spatial table does not have a spatial column that represents geographic features.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#isTable)
+    *
+    * @default false
+    */
+  var isTable: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). Use this property to specify labeling properties for the layer such as label expression, placement, and size.  Multiple Label classes with different `where` clauses can be used to define several labels with varying styles on the same feature. Likewise, multiple label classes may be used to label different types of features (for example blue labels for lakes and green labels for parks).
     * > **Known Limitations**
-    *   * Currently only FeatureLayers with point and polygon geometries are supported.
     *   * Currently only one [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) is supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelingInfo)
@@ -109,13 +117,15 @@ trait FeatureLayerProperties
     */
   var objectIdField: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * An array of field names from the service to include in the FeatureLayer. If not specified, the layer will only return the `OBJECTID` field. To fetch the values from all fields in the layer, use `["*"]`. This is particularly useful when editing features.
+    * An array of field names from the service to include with each feature. To fetch the values from all fields in the layer, use `["*"]`. Fields specified in `outFields` will be requested alongside with required fields for [rendering](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#renderer), [labeling](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelingInfo) and setting the [elevation info](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#elevationInfo) for the layer. The required fields and `outFields` are used populate [FeatureLayerView.availableFields](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#availableFields). Set this property to include the fields that will be used for client-side [filtering](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#filter) and [queries](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-FeatureLayerView.html#queryFeatures) if the fields are not part of required fields mentioned above.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#outFields)
+    *
+    * @default null
     */
   var outFields: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-    * Indicates whether to display popups when features in the layer are clicked.
+    * Indicates whether to display popups when features in the layer are clicked. The layer needs to have a [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupTemplate) to define what information should be displayed in the popup. Alternatively, a default popup template may be automatically used if [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupEnabled)
     *
@@ -123,7 +133,7 @@ trait FeatureLayerProperties
     */
   var popupEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * The popup template for the layer. When set on the layer, the `popupTemplate` allows users to access attributes and display their values in the [view's popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#popup) when a feature is selected using text and/or charts. See the [PopupTemplate sample](https://developers.arcgis.com/javascript/latest/sample-code/intro-popuptemplate/index.html) for an example of how [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) interacts with a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).
+    * The popup template for the layer. When set on the layer, the `popupTemplate` allows users to access attributes and display their values in the [view's popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#popup) when a feature is selected using text and/or charts. See the [PopupTemplate sample](https://developers.arcgis.com/javascript/latest/sample-code/intro-popuptemplate/index.html) for an example of how [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) interacts with a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).  A default popup template is automatically used if no `popupTemplate` has been defined when [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupTemplate)
     */
@@ -184,7 +194,7 @@ trait FeatureLayerProperties
     */
   var types: js.UndefOr[js.Array[FeatureTypeProperties]] = js.undefined
   /**
-    * The URL of the REST endpoint of the layer or service. The URL may either point to a resource on ArcGIS Enterprise or ArcGIS Online.  If the url points directly to a service, then the layer must be specified in the [layerId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#layerId) property. If no [layerId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#layerId) is given, then the first layer in the service will be loaded.
+    * The URL of the REST endpoint of the layer, non-spatial table or service. The URL may either point to a resource on ArcGIS Enterprise or ArcGIS Online.  If the url points directly to a service, then the layer must be specified in the [layerId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#layerId) property. If no [layerId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#layerId) is given, then the first layer in the service will be loaded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url)
     */
@@ -205,11 +215,12 @@ object FeatureLayerProperties {
     geometryType: java.lang.String = null,
     historicMoment: DateProperties = null,
     id: java.lang.String = null,
+    isTable: js.UndefOr[scala.Boolean] = js.undefined,
     labelingInfo: js.Array[LabelClassProperties] = null,
     labelsVisible: js.UndefOr[scala.Boolean] = js.undefined,
     layerId: scala.Int | scala.Double = null,
     legendEnabled: js.UndefOr[scala.Boolean] = js.undefined,
-    listMode: java.lang.String = null,
+    listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
     maxScale: scala.Int | scala.Double = null,
     minScale: scala.Int | scala.Double = null,
     objectIdField: java.lang.String = null,
@@ -226,6 +237,7 @@ object FeatureLayerProperties {
     source: CollectionProperties[GraphicProperties] = null,
     spatialReference: SpatialReferenceProperties = null,
     templates: js.Array[FeatureTemplateProperties] = null,
+    timeInfo: TimeInfoProperties = null,
     title: java.lang.String = null,
     types: js.Array[FeatureTypeProperties] = null,
     url: java.lang.String = null,
@@ -243,11 +255,12 @@ object FeatureLayerProperties {
     if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
     if (historicMoment != null) __obj.updateDynamic("historicMoment")(historicMoment.asInstanceOf[js.Any])
     if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isTable)) __obj.updateDynamic("isTable")(isTable)
     if (labelingInfo != null) __obj.updateDynamic("labelingInfo")(labelingInfo)
     if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible)
     if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
     if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled)
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (objectIdField != null) __obj.updateDynamic("objectIdField")(objectIdField)
@@ -264,6 +277,7 @@ object FeatureLayerProperties {
     if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
     if (templates != null) __obj.updateDynamic("templates")(templates)
+    if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo)
     if (title != null) __obj.updateDynamic("title")(title)
     if (types != null) __obj.updateDynamic("types")(types)
     if (url != null) __obj.updateDynamic("url")(url)

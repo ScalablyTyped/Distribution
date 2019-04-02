@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PasswordProps
   extends antdLib.libInputInputMod.InputProps {
-  val action: java.lang.String
+  val action: js.UndefOr[java.lang.String] = js.undefined
   val inputPrefixCls: js.UndefOr[java.lang.String] = js.undefined
   var visibilityToggle: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -15,7 +15,7 @@ trait PasswordProps
 object PasswordProps {
   @scala.inline
   def apply(
-    action: java.lang.String,
+    action: java.lang.String = null,
     addonAfter: reactLib.reactMod.ReactNs.ReactNode = null,
     addonBefore: reactLib.reactMod.ReactNs.ReactNode = null,
     allowClear: js.UndefOr[scala.Boolean] = js.undefined,
@@ -27,7 +27,8 @@ object PasswordProps {
     suffix: reactLib.reactMod.ReactNs.ReactNode = null,
     visibilityToggle: js.UndefOr[scala.Boolean] = js.undefined
   ): PasswordProps = {
-    val __obj = js.Dynamic.literal(action = action)
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
     if (addonAfter != null) __obj.updateDynamic("addonAfter")(addonAfter.asInstanceOf[js.Any])
     if (addonBefore != null) __obj.updateDynamic("addonBefore")(addonBefore.asInstanceOf[js.Any])
     if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)

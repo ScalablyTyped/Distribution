@@ -13,12 +13,16 @@ trait LabelClass
     * Defines the content of label text for [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html). If working with [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html), use [labelExpressionInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpressionInfo) instead.  Attribute values may be included in labels using SQL syntax. To include an attribute value in a label, wrap the name of the field in square brackets `[]`. See the example snippet below.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpression)
+    *
+    * @default null
     */
   var labelExpression: java.lang.String = js.native
   /**
     * Defines the content of label text for [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html). If working with [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html), use [labelExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpression) instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelExpressionInfo)
+    *
+    * @default null
     */
   var labelExpressionInfo: LabelClassLabelExpressionInfo = js.native
   /**
@@ -53,6 +57,8 @@ trait LabelClass
     * Defines the symbol used for rendering the label.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#symbol)
+    *
+    * @default null
     */
   var symbol: TextSymbol | LabelSymbol3D = js.native
   /**
@@ -66,6 +72,8 @@ trait LabelClass
     * > **Known Limitations**  Only very basic SQL is currently supported.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#where)
+    *
+    * @default null
     */
   var where: java.lang.String = js.native
 }

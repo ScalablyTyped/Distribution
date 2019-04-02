@@ -9,6 +9,14 @@ trait widgetsSearchProperties
   extends WidgetProperties
      with GoToProperties {
   /**
+    * The current active menu of the Search widget.  **Possible Values:** none | suggestion | source | warning
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#activeMenu)
+    *
+    * @default none
+    */
+  var activeMenu: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The selected source's index. This value is `-1` when all sources are selected.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#activeSourceIndex)
@@ -32,6 +40,12 @@ trait widgetsSearchProperties
     * @default true
     */
   var autoSelect: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#iconClass)
+    */
+  var iconClass: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Indicates whether or not to include [defaultSources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSources) in the Search UI. This can be a boolean value or a function that returns an array of Search [sources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#sources).
     *
@@ -82,11 +96,9 @@ trait widgetsSearchProperties
     */
   var popupEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * A customized PopupTemplate for the selected feature. Note that specifying a wildcard {*} for the popupTemplate will return all fields in addition to search-specific fields.
+    * A customized [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) for the selected feature. Note that any templates defined on [allSources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#allSources) take precedence over those defined directly on the template.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#popupTemplate)
-    *
-    * @default null
     */
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   /**
@@ -119,7 +131,7 @@ trait widgetsSearchProperties
   var searchTerm: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The Search widget may be used to search features in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) or geocode locations with a [Locator](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html). The `sources` property defines the sources from which to search for the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#view) specified by the Search widget instance. There are two types of sources:
-    *   * [FeatureLayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-FeatureLayerSearchSource.html)
+    *   * [LayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html)
     *   * [LocatorSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html)
     *
     *
@@ -129,7 +141,7 @@ trait widgetsSearchProperties
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#sources)
     */
   var sources: js.UndefOr[
-    CollectionProperties[FeatureLayerSearchSourceProperties | LocatorSearchSourceProperties]
+    CollectionProperties[LayerSearchSourceProperties | LocatorSearchSourceProperties]
   ] = js.undefined
   /**
     * Enable suggestions for the widget.  This is only available if working with a 10.3 or greater geocoding service that has [suggest capability loaded](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-suggest.htm) or a 10.3 or greater feature layer that supports pagination, i.e. `supportsPagination = true`.
@@ -156,14 +168,17 @@ trait widgetsSearchProperties
 object widgetsSearchProperties {
   @scala.inline
   def apply(
+    activeMenu: java.lang.String = null,
     activeSourceIndex: scala.Int | scala.Double = null,
     allPlaceholder: java.lang.String = null,
     autoSelect: js.UndefOr[scala.Boolean] = js.undefined,
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
     goToOverride: GoToOverride = null,
+    iconClass: java.lang.String = null,
     id: java.lang.String = null,
     includeDefaultSources: scala.Boolean | js.Function = null,
+    label: java.lang.String = null,
     locationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     maxResults: scala.Int | scala.Double = null,
     maxSuggestions: scala.Int | scala.Double = null,
@@ -174,20 +189,23 @@ object widgetsSearchProperties {
     resultGraphicEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     searchAllEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     searchTerm: java.lang.String = null,
-    sources: CollectionProperties[FeatureLayerSearchSourceProperties | LocatorSearchSourceProperties] = null,
+    sources: CollectionProperties[LayerSearchSourceProperties | LocatorSearchSourceProperties] = null,
     suggestionsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null,
     viewModel: SearchViewModelProperties = null
   ): widgetsSearchProperties = {
     val __obj = js.Dynamic.literal()
+    if (activeMenu != null) __obj.updateDynamic("activeMenu")(activeMenu)
     if (activeSourceIndex != null) __obj.updateDynamic("activeSourceIndex")(activeSourceIndex.asInstanceOf[js.Any])
     if (allPlaceholder != null) __obj.updateDynamic("allPlaceholder")(allPlaceholder)
     if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (id != null) __obj.updateDynamic("id")(id)
     if (includeDefaultSources != null) __obj.updateDynamic("includeDefaultSources")(includeDefaultSources.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
     if (!js.isUndefined(locationEnabled)) __obj.updateDynamic("locationEnabled")(locationEnabled)
     if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
     if (maxSuggestions != null) __obj.updateDynamic("maxSuggestions")(maxSuggestions.asInstanceOf[js.Any])

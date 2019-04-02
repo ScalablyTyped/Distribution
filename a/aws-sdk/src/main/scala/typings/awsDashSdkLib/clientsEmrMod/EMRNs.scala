@@ -305,7 +305,7 @@ object EMRNs extends js.Object {
       */
     var NormalizedInstanceHours: js.UndefOr[Integer] = js.undefined
     /**
-      * The Amazon EMR release label, which determines the version of open-source application packages installed on the cluster. Release labels are in the form emr-x.x.x, where x.x.x is an Amazon EMR release version, for example, emr-5.14.0. For more information about Amazon EMR release versions and included application versions and features, see http://docs.aws.amazon.com/emr/latest/ReleaseGuide/. The release label applies only to Amazon EMR releases versions 4.x and later. Earlier versions use AmiVersion.
+      * The Amazon EMR release label, which determines the version of open-source application packages installed on the cluster. Release labels are in the form emr-x.x.x, where x.x.x is an Amazon EMR release version, for example, emr-5.14.0. For more information about Amazon EMR release versions and included application versions and features, see https://docs.aws.amazon.com/emr/latest/ReleaseGuide/. The release label applies only to Amazon EMR releases versions 4.x and later. Earlier versions use AmiVersion.
       */
     var ReleaseLabel: js.UndefOr[String] = js.undefined
     /**
@@ -893,6 +893,10 @@ object EMRNs extends js.Object {
       */
     var Configurations: js.UndefOr[ConfigurationList] = js.undefined
     /**
+      * The version number of the requested configuration specification for this instance group.
+      */
+    var ConfigurationsVersion: js.UndefOr[Long] = js.undefined
+    /**
       * The EBS block devices that are mapped to this instance group.
       */
     var EbsBlockDevices: js.UndefOr[EbsBlockDeviceList] = js.undefined
@@ -912,6 +916,14 @@ object EMRNs extends js.Object {
       * The EC2 instance type for all instances in the instance group.
       */
     var InstanceType: js.UndefOr[InstanceType] = js.undefined
+    /**
+      * A list of configurations that were successfully applied for an instance group last time.
+      */
+    var LastSuccessfullyAppliedConfigurations: js.UndefOr[ConfigurationList] = js.undefined
+    /**
+      * The version number of a configuration specification that was successfully applied for an instance group last time. 
+      */
+    var LastSuccessfullyAppliedConfigurationsVersion: js.UndefOr[Long] = js.undefined
     /**
       * The marketplace to provision instances for this group. Valid values are ON_DEMAND or SPOT.
       */
@@ -1037,6 +1049,10 @@ object EMRNs extends js.Object {
   }
   
   trait InstanceGroupModifyConfig extends js.Object {
+    /**
+      * A list of new or modified configurations to apply for an instance group.
+      */
+    var Configurations: js.UndefOr[ConfigurationList] = js.undefined
     /**
       * The EC2 InstanceIds to terminate. After you terminate the instances, the instance group will not return to its original requested size.
       */
@@ -1800,7 +1816,7 @@ object EMRNs extends js.Object {
       */
     var NewSupportedProducts: js.UndefOr[NewSupportedProductsList] = js.undefined
     /**
-      * The Amazon EMR release label, which determines the version of open-source application packages installed on the cluster. Release labels are in the form emr-x.x.x, where x.x.x is an Amazon EMR release version, for example, emr-5.14.0. For more information about Amazon EMR release versions and included application versions and features, see http://docs.aws.amazon.com/emr/latest/ReleaseGuide/. The release label applies only to Amazon EMR releases versions 4.x and later. Earlier versions use AmiVersion.
+      * The Amazon EMR release label, which determines the version of open-source application packages installed on the cluster. Release labels are in the form emr-x.x.x, where x.x.x is an Amazon EMR release version, for example, emr-5.14.0. For more information about Amazon EMR release versions and included application versions and features, see https://docs.aws.amazon.com/emr/latest/ReleaseGuide/. The release label applies only to Amazon EMR releases versions 4.x and later. Earlier versions use AmiVersion.
       */
     var ReleaseLabel: js.UndefOr[XmlStringMaxLen256] = js.undefined
     /**
@@ -3020,6 +3036,7 @@ object EMRNs extends js.Object {
     - awsDashSdkLib.awsDashSdkLibStrings.PROVISIONING
     - awsDashSdkLib.awsDashSdkLibStrings.BOOTSTRAPPING
     - awsDashSdkLib.awsDashSdkLibStrings.RUNNING
+    - awsDashSdkLib.awsDashSdkLibStrings.RECONFIGURING
     - awsDashSdkLib.awsDashSdkLibStrings.RESIZING
     - awsDashSdkLib.awsDashSdkLibStrings.SUSPENDED
     - awsDashSdkLib.awsDashSdkLibStrings.TERMINATING
@@ -3093,6 +3110,7 @@ object EMRNs extends js.Object {
   type JobFlowExecutionState = _JobFlowExecutionState | java.lang.String
   type JobFlowExecutionStateList = js.Array[JobFlowExecutionState]
   type KeyValueList = js.Array[KeyValue]
+  type Long = scala.Double
   type Marker = java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.ON_DEMAND

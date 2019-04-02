@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "epilogue"
-version := "0.7-dt-20180712Z-41d7d1"
+version := "0.7-dt-20180712Z-a30c05"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-986805",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-684e50",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-50cbb3",
-  "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20181219Z-6815ed",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-4aab25",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-faea1f",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-249d28",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-53c35c",
+  "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20181219Z-725ef8",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-33b861",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-c31b2e",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
-  "org.scalablytyped" %%% "node" % "11.12-dt-20190330Z-e2b8de",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-623d43",
-  "org.scalablytyped" %%% "sequelize" % "4.27.11-dt-20190330Z-f6cdef",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-dd9008",
+  "org.scalablytyped" %%% "sequelize" % "4.27.11-dt-20190330Z-2316ef",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-201a01",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "validator" % "v10.11.0-dt-20190329Z-5459d8")
 publishArtifact in packageDoc := false

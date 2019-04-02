@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("https", "Server")
 @js.native
-class Server protected ()
+class Server ()
   extends nodeLib.tlsMod.Server {
   def this(options: ServerOptions) = this()
+  def this(requestListener: nodeLib.httpMod.RequestListener) = this()
   def this(options: ServerOptions, requestListener: nodeLib.httpMod.RequestListener) = this()
   /**
     * Limit the amount of time the parser will wait to receive the complete HTTP headers.

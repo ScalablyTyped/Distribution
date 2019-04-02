@@ -20,7 +20,7 @@ trait PointCloudFilter
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudFilter.html#type)
     */
-  val `type`: java.lang.String = js.native
+  val `type`: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.value | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.bitfield | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`return` = js.native
 }
 
 @JSGlobal("__esri.PointCloudFilter")

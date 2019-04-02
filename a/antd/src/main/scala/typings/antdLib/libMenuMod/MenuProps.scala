@@ -26,6 +26,7 @@ trait MenuProps extends js.Object {
   var openAnimation: js.UndefOr[java.lang.String | js.Object] = js.undefined
   var openKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var openTransitionName: js.UndefOr[java.lang.String | js.Object] = js.undefined
+  var overflowedIndicator: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var selectable: js.UndefOr[scala.Boolean] = js.undefined
   var selectedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -56,6 +57,7 @@ object MenuProps {
     openAnimation: java.lang.String | js.Object = null,
     openKeys: js.Array[java.lang.String] = null,
     openTransitionName: java.lang.String | js.Object = null,
+    overflowedIndicator: reactLib.reactMod.ReactNs.ReactNode = null,
     prefixCls: java.lang.String = null,
     selectable: js.UndefOr[scala.Boolean] = js.undefined,
     selectedKeys: js.Array[java.lang.String] = null,
@@ -83,6 +85,7 @@ object MenuProps {
     if (openAnimation != null) __obj.updateDynamic("openAnimation")(openAnimation.asInstanceOf[js.Any])
     if (openKeys != null) __obj.updateDynamic("openKeys")(openKeys)
     if (openTransitionName != null) __obj.updateDynamic("openTransitionName")(openTransitionName.asInstanceOf[js.Any])
+    if (overflowedIndicator != null) __obj.updateDynamic("overflowedIndicator")(overflowedIndicator.asInstanceOf[js.Any])
     if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
     if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
     if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys)

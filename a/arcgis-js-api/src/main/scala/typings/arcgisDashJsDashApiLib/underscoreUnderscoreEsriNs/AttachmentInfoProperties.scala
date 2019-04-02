@@ -13,6 +13,12 @@ trait AttachmentInfoProperties extends js.Object {
     */
   var contentType: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * An array of [ExifInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#ExifInfo) for the attachment.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#exifInfo)
+    */
+  var exifInfo: js.UndefOr[js.Array[ExifInfo]] = js.undefined
+  /**
     * The identifier for the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-AttachmentInfo.html#id)
@@ -54,6 +60,7 @@ object AttachmentInfoProperties {
   @scala.inline
   def apply(
     contentType: java.lang.String = null,
+    exifInfo: js.Array[ExifInfo] = null,
     id: scala.Int | scala.Double = null,
     keywords: java.lang.String = null,
     name: java.lang.String = null,
@@ -63,6 +70,7 @@ object AttachmentInfoProperties {
   ): AttachmentInfoProperties = {
     val __obj = js.Dynamic.literal()
     if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (exifInfo != null) __obj.updateDynamic("exifInfo")(exifInfo)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (keywords != null) __obj.updateDynamic("keywords")(keywords)
     if (name != null) __obj.updateDynamic("name")(name)

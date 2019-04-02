@@ -90,6 +90,19 @@ trait Mesh
   def rotate(angleX: scala.Double, angleY: scala.Double, angleZ: scala.Double): Mesh = js.native
   def rotate(angleX: scala.Double, angleY: scala.Double, angleZ: scala.Double, params: MeshRotateParams): Mesh = js.native
   /**
+    * Scales the mesh geometry by the specified factor. The mesh will be modified in place. To modify a copy of the mesh instead, use [clone()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#clone) before calling [scale()](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#scale).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#scale)
+    *
+    * @param factor The amount to scale the geometry.
+    * @param params Additional parameters.
+    * @param params.geographic Whether to georeference relative to the globe or the projected coordinate system (PCS). This parameter is only relevant for spatial references that can be used in both local and global viewing modes (currently only WebMercator). This parameter defaults to `true` for WebMercator and WGS84, and `false` for any other PCS. When true, the offset is applied in a Cartesian system with respect to the local coordinate system on the globe and is specified in meters.
+    * @param params.origin The origin point for scaling. If not specified, the mesh will be scaled around the mesh extent center.
+    *
+    */
+  def scale(factor: scala.Double): Mesh = js.native
+  def scale(factor: scala.Double, params: MeshScaleParams): Mesh = js.native
+  /**
     * Notifies that any cached values that depend on vertex attributes need to be recalculated. Use this method after modifying the vertex attributes in place so that values that depend on them (such as the calculation of the extent) are recalculated accordingly.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#vertexAttributesChanged)

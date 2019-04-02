@@ -41,13 +41,14 @@ trait AreaMeasurement2DViewModel extends js.Object {
     */
   val modes: js.Array[java.lang.String]
   /**
-    * The ViewModel's state.  **Possible Values:** disabled | ready | measuring
+    * The ViewModel's state.  **Possible Values:** disabled | ready | measuring | measured
     *
     *    Value    | Description
     * ------------|-------------
     * disabled    | not ready yet
     * ready       | ready for measuring
     * measuring   | measuring has started
+    * measured    | measuring has finished
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#state)
@@ -135,13 +136,14 @@ class AreaMeasurement2DViewModelCls () extends AreaMeasurement2DViewModel {
   /* CompleteClass */
   override val modes: js.Array[java.lang.String] = js.native
   /**
-    * The ViewModel's state.  **Possible Values:** disabled | ready | measuring
+    * The ViewModel's state.  **Possible Values:** disabled | ready | measuring | measured
     *
     *    Value    | Description
     * ------------|-------------
     * disabled    | not ready yet
     * ready       | ready for measuring
     * measuring   | measuring has started
+    * measured    | measuring has finished
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement2D-AreaMeasurement2DViewModel.html#state)

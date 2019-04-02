@@ -31,6 +31,12 @@ trait TrackProperties
     */
   var graphic: js.UndefOr[GraphicProperties] = js.undefined
   /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#iconClass)
+    */
+  var iconClass: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Indicates the scale to set on the view when navigating to the position of the geolocated result once a location is returned from the [track](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#event:track) event. If a scale value is not explicitly set, then the view will navigate to a default scale of `2500`. For 2D views the value should be within the [effectiveMinScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints) and [effectiveMaxScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#constraints).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Track.html#scale)
@@ -69,7 +75,9 @@ object TrackProperties {
     goToLocationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     goToOverride: GoToOverride = null,
     graphic: GraphicProperties = null,
+    iconClass: java.lang.String = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     scale: scala.Int | scala.Double = null,
     useHeadingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     view: MapViewProperties | SceneViewProperties = null,
@@ -82,7 +90,9 @@ object TrackProperties {
     if (!js.isUndefined(goToLocationEnabled)) __obj.updateDynamic("goToLocationEnabled")(goToLocationEnabled)
     if (goToOverride != null) __obj.updateDynamic("goToOverride")(goToOverride)
     if (graphic != null) __obj.updateDynamic("graphic")(graphic)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     if (!js.isUndefined(useHeadingEnabled)) __obj.updateDynamic("useHeadingEnabled")(useHeadingEnabled)
     if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])

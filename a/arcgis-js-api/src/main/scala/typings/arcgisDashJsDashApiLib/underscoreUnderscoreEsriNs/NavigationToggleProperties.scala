@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait NavigationToggleProperties extends WidgetProperties {
   /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-NavigationToggle.html#iconClass)
+    */
+  var iconClass: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Sets the layout of the widget to either `horizontal` or `vertical`. See the table below for a list of possible values.
     *
     * Possible Value | Example
@@ -39,7 +45,9 @@ object NavigationToggleProperties {
   def apply(
     container: java.lang.String | stdLib.HTMLElement = null,
     destroyed: js.UndefOr[scala.Boolean] = js.undefined,
+    iconClass: java.lang.String = null,
     id: java.lang.String = null,
+    label: java.lang.String = null,
     layout: java.lang.String = null,
     view: SceneViewProperties = null,
     viewModel: NavigationToggleViewModelProperties = null
@@ -47,7 +55,9 @@ object NavigationToggleProperties {
     val __obj = js.Dynamic.literal()
     if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
     if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
     if (layout != null) __obj.updateDynamic("layout")(layout)
     if (view != null) __obj.updateDynamic("view")(view)
     if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel)

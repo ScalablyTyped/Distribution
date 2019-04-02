@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait DataLayer extends Accessor {
+trait DataLayer
+  extends Accessor
+     with JSONSupport {
   /**
     * The geometry to apply to the spatial filter. The spatial relationship as specified by [spatialRelationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#spatialRelationship) is applied to this geometry while performing the query.
     *
@@ -38,30 +40,32 @@ trait DataLayer extends Accessor {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#spatialRelationship)
     */
   var spatialRelationship: java.lang.String = js.native
+  var `type`: scala.Unit = js.native
   /**
     * A where clause for the query. Any legal SQL where clause operating on the fields in the layer is allowed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#where)
     */
   var where: java.lang.String = js.native
-  /**
-    * Converts an instance of  [this class]() to its ArcGIS portal JSON representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#toJSON)
-    *
-    *
-    */
-  def toJSON(): js.Any = js.native
 }
 
 @JSGlobal("__esri.DataLayer")
 @js.native
 /**
-  * Input for properties of ClosestFacilityParameters,RouteParameters or ServiceAreaParameters. The DataLayer can be used to define the following for each paramater type:
+  * Input for properties of ClosestFacilityParameters, RouteParameters or ServiceAreaParameters. The DataLayer can be used to define the following for each parameter type:
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html)
   */
 class DataLayerCls () extends DataLayer {
   def this(properties: DataLayerProperties) = this()
+  /**
+    * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation. See the [Using fromJSON()](https://developers.arcgis.com/javascript/latest/guide/using-fromjson/index.html) topic in the Guide for more information.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+    *
+    *
+    */
+  /* CompleteClass */
+  override def toJSON(): js.Any = js.native
 }
 

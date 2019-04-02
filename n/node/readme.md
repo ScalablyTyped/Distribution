@@ -1,5 +1,5 @@
 ```
-// Type definitions for non-npm package Node.js 11.12
+// Type definitions for non-npm package Node.js 11.13
 // Project: http://nodejs.org/
 // Definitions by: Microsoft TypeScript <https://github.com/Microsoft>
 //                 DefinitelyTyped <https://github.com/DefinitelyTyped>

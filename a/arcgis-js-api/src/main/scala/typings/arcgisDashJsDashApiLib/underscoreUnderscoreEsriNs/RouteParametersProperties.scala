@@ -17,7 +17,7 @@ trait RouteParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#attributeParameterValues)
     */
-  var attributeParameterValues: js.UndefOr[AttributeParamValue] = js.undefined
+  var attributeParameterValues: js.UndefOr[js.Array[AttributeParamValue]] = js.undefined
   /**
     * The set of point barriers loaded as network locations during analysis. At ArcGIS Server 10.1 an optional url property was added. Use this property to specify a REST query request to a Feature, Map or GP Service that returns a JSON feature set. The url property can be specified using [DataFile](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataFile.html). Note that either the features or url property should be specified.
     *
@@ -35,15 +35,17 @@ trait RouteParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsLengthUnits)
     */
-  var directionsLengthUnits: js.UndefOr[java.lang.String] = js.undefined
+  var directionsLengthUnits: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards
+  ] = js.undefined
   /**
     * Defines the amount of direction information returned.  **Possible Values:** complete | complete-no-events | instructions-only | standard | summary-only
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#directionsOutputType)
-    *
-    * @default standard
     */
-  var directionsOutputType: js.UndefOr[java.lang.String] = js.undefined
+  var directionsOutputType: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.complete | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`complete-no-events` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`instructions-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.standard | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`summary-only`
+  ] = js.undefined
   /**
     * The style to be used when returning directions. The default will be as defined in the network layer. View the REST layer description for your network service to see a list of supported styles.
     *
@@ -60,8 +62,6 @@ trait RouteParametersProperties extends js.Object {
     * If `true`, avoids network elements restricted by barriers or restrictions specified in [restrictionAttributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#restrictionAttributes).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#doNotLocateOnRestrictedElements)
-    *
-    * @default true
     */
   var doNotLocateOnRestrictedElements: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -95,7 +95,7 @@ trait RouteParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#outSpatialReference)
     */
-  var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  var outSpatialReference: js.UndefOr[SpatialReferenceProperties | java.lang.String] = js.undefined
   /**
     * The precision of the output geometry after generalization. If `0`, no generalization of output geometry is performed. If present and positive, it represents the `MaximumAllowableOffset` parameter and generalization is performed according to `IPolycurve.Generalize`.
     *
@@ -107,15 +107,31 @@ trait RouteParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#outputGeometryPrecisionUnits)
     */
-  var outputGeometryPrecisionUnits: js.UndefOr[java.lang.String] = js.undefined
+  var outputGeometryPrecisionUnits: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards
+  ] = js.undefined
   /**
-    * The type of output lines to be generated in the result. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html).  **Possible Values:** none | straight | true-shape | true-shape-with-measure
+    * The type of output lines to be generated in the result. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html).
+    *
+    * Possible Value | Description
+    * ---------------|------------
+    * none | No lines are returned
+    * straight | Only returns straight lines
+    * true-shape | Return the true shape of the lines
+    * true-shape-with-measure | Return the true shape of the lines with their measurements
+    *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#outputLines)
-    *
-    * @default true-shape
     */
-  var outputLines: js.UndefOr[java.lang.String] = js.undefined
+  var outputLines: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.straight | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape-with-measure`
+  ] = js.undefined
+  /**
+    * The set of point barriers loaded as network locations during analysis. At ArcGIS Server 10.1 an optional url property was added. Use this property to specify a REST query request to a Feature, Map or GP Service that returns a JSON feature set. The url property can be specified using [DataFile](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataFile.html). Note that either the features or url property should be specified.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#pointBarriers)
+    */
+  var pointBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   /**
     * The set of polygon barriers loaded as network locations during analysis. At ArcGIS Server 10.1, an optional `url` property was added. Use this property to specify a REST query request to a Feature, Map or GP Service that returns a JSON feature set. The url property can be specified using [DataFile](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataFile.html). Note that either the `features` or `url` property should be specified.
     *
@@ -145,7 +161,9 @@ trait RouteParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#restrictUTurns)
     */
-  var restrictUTurns: js.UndefOr[java.lang.String] = js.undefined
+  var restrictUTurns: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`allow-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`no-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-and-intersections`
+  ] = js.undefined
   /**
     * The list of network attribute names to be used as restrictions with the analysis. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html). Possible values are listed in the Service Directory under `Network Dataset -> Network Attributes`. You can also specify a value of `none` to indicate that no network attributes should be used as restrictions. If you specify an empty array, it will default to the default of the service.
     *
@@ -161,7 +179,7 @@ trait RouteParametersProperties extends js.Object {
     */
   var returnBarriers: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * If `true`, barriers are returned in the [directions property of each RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html#directions).
+    * Indicates whether the service should generate driving directions for each route.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnDirections)
     *
@@ -188,24 +206,18 @@ trait RouteParametersProperties extends js.Object {
     * If `true`, routes are generated and returned in the route property of each [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnRoutes)
-    *
-    * @default true
     */
   var returnRoutes: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * If `true`, stops are returned in the stops property of each [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnStops)
-    *
-    * @default false
     */
   var returnStops: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * If `true`, `z` values are returned in the [RouteResult](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#returnZ)
-    *
-    * @default true
     */
   var returnZ: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -231,17 +243,21 @@ trait RouteParametersProperties extends js.Object {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#travelMode)
     */
-  var travelMode: js.UndefOr[js.Any] = js.undefined
+  var travelMode: js.UndefOr[java.lang.String] = js.undefined
   /**
     * If `true`, the hierarchy attribute for the network should be used in analysis. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#useHierarchy)
+    *
+    * @default false
     */
   var useHierarchy: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * A useful feature of the [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html) is the ability to constrain stop visits to certain times of day, or "time windows". If you were required to deliver orders to four homes and each customer was available during a limited time period during the day, the route task could help you find the most efficient path for making all the deliveries.  Time windows are treated as a "soft" constraint. This means that although the solver attempts to honor time windows, if necessary, it will violate the time windows of some stops in order to reach them. Remember, the stops will be visited in the order they were added unless you set `RouteParameters.findBestSequence = true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html#useTimeWindows)
+    *
+    * @default false
     */
   var useTimeWindows: js.UndefOr[scala.Boolean] = js.undefined
 }
@@ -250,26 +266,27 @@ object RouteParametersProperties {
   @scala.inline
   def apply(
     accumulateAttributes: js.Array[java.lang.String] = null,
-    attributeParameterValues: AttributeParamValue = null,
+    attributeParameterValues: js.Array[AttributeParamValue] = null,
     barriers: DataLayerProperties | FeatureSetProperties = null,
     directionsLanguage: java.lang.String = null,
-    directionsLengthUnits: java.lang.String = null,
-    directionsOutputType: java.lang.String = null,
+    directionsLengthUnits: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards = null,
+    directionsOutputType: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.complete | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`complete-no-events` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`instructions-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.standard | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`summary-only` = null,
     directionsStyleName: java.lang.String = null,
     directionsTimeAttribute: java.lang.String = null,
     doNotLocateOnRestrictedElements: js.UndefOr[scala.Boolean] = js.undefined,
     findBestSequence: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreInvalidLocations: js.UndefOr[scala.Boolean] = js.undefined,
     impedanceAttribute: java.lang.String = null,
-    outSpatialReference: SpatialReferenceProperties = null,
+    outSpatialReference: SpatialReferenceProperties | java.lang.String = null,
     outputGeometryPrecision: scala.Int | scala.Double = null,
-    outputGeometryPrecisionUnits: java.lang.String = null,
-    outputLines: java.lang.String = null,
+    outputGeometryPrecisionUnits: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.centimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`decimal-degrees` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.decimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.feet | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.inches | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.kilometers | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.meters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.miles | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.millimeters | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`nautical-miles` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.points | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.yards = null,
+    outputLines: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.none | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.straight | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`true-shape-with-measure` = null,
+    pointBarriers: DataLayerProperties | FeatureSetProperties = null,
     polygonBarriers: DataLayerProperties | FeatureSetProperties = null,
     polylineBarriers: DataLayerProperties | FeatureSetProperties = null,
     preserveFirstStop: js.UndefOr[scala.Boolean] = js.undefined,
     preserveLastStop: js.UndefOr[scala.Boolean] = js.undefined,
-    restrictUTurns: java.lang.String = null,
+    restrictUTurns: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`allow-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-only` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`no-backtrack` | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`at-dead-ends-and-intersections` = null,
     restrictionAttributes: js.Array[java.lang.String] = null,
     returnBarriers: js.UndefOr[scala.Boolean] = js.undefined,
     returnDirections: js.UndefOr[scala.Boolean] = js.undefined,
@@ -281,7 +298,7 @@ object RouteParametersProperties {
     startTime: DateProperties = null,
     startTimeIsUTC: js.UndefOr[scala.Boolean] = js.undefined,
     stops: DataLayerProperties | FeatureSetProperties = null,
-    travelMode: js.Any = null,
+    travelMode: java.lang.String = null,
     useHierarchy: js.UndefOr[scala.Boolean] = js.undefined,
     useTimeWindows: js.UndefOr[scala.Boolean] = js.undefined
   ): RouteParametersProperties = {
@@ -290,23 +307,24 @@ object RouteParametersProperties {
     if (attributeParameterValues != null) __obj.updateDynamic("attributeParameterValues")(attributeParameterValues)
     if (barriers != null) __obj.updateDynamic("barriers")(barriers.asInstanceOf[js.Any])
     if (directionsLanguage != null) __obj.updateDynamic("directionsLanguage")(directionsLanguage)
-    if (directionsLengthUnits != null) __obj.updateDynamic("directionsLengthUnits")(directionsLengthUnits)
-    if (directionsOutputType != null) __obj.updateDynamic("directionsOutputType")(directionsOutputType)
+    if (directionsLengthUnits != null) __obj.updateDynamic("directionsLengthUnits")(directionsLengthUnits.asInstanceOf[js.Any])
+    if (directionsOutputType != null) __obj.updateDynamic("directionsOutputType")(directionsOutputType.asInstanceOf[js.Any])
     if (directionsStyleName != null) __obj.updateDynamic("directionsStyleName")(directionsStyleName)
     if (directionsTimeAttribute != null) __obj.updateDynamic("directionsTimeAttribute")(directionsTimeAttribute)
     if (!js.isUndefined(doNotLocateOnRestrictedElements)) __obj.updateDynamic("doNotLocateOnRestrictedElements")(doNotLocateOnRestrictedElements)
     if (!js.isUndefined(findBestSequence)) __obj.updateDynamic("findBestSequence")(findBestSequence)
     if (!js.isUndefined(ignoreInvalidLocations)) __obj.updateDynamic("ignoreInvalidLocations")(ignoreInvalidLocations)
     if (impedanceAttribute != null) __obj.updateDynamic("impedanceAttribute")(impedanceAttribute)
-    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference)
+    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
     if (outputGeometryPrecision != null) __obj.updateDynamic("outputGeometryPrecision")(outputGeometryPrecision.asInstanceOf[js.Any])
-    if (outputGeometryPrecisionUnits != null) __obj.updateDynamic("outputGeometryPrecisionUnits")(outputGeometryPrecisionUnits)
-    if (outputLines != null) __obj.updateDynamic("outputLines")(outputLines)
+    if (outputGeometryPrecisionUnits != null) __obj.updateDynamic("outputGeometryPrecisionUnits")(outputGeometryPrecisionUnits.asInstanceOf[js.Any])
+    if (outputLines != null) __obj.updateDynamic("outputLines")(outputLines.asInstanceOf[js.Any])
+    if (pointBarriers != null) __obj.updateDynamic("pointBarriers")(pointBarriers.asInstanceOf[js.Any])
     if (polygonBarriers != null) __obj.updateDynamic("polygonBarriers")(polygonBarriers.asInstanceOf[js.Any])
     if (polylineBarriers != null) __obj.updateDynamic("polylineBarriers")(polylineBarriers.asInstanceOf[js.Any])
     if (!js.isUndefined(preserveFirstStop)) __obj.updateDynamic("preserveFirstStop")(preserveFirstStop)
     if (!js.isUndefined(preserveLastStop)) __obj.updateDynamic("preserveLastStop")(preserveLastStop)
-    if (restrictUTurns != null) __obj.updateDynamic("restrictUTurns")(restrictUTurns)
+    if (restrictUTurns != null) __obj.updateDynamic("restrictUTurns")(restrictUTurns.asInstanceOf[js.Any])
     if (restrictionAttributes != null) __obj.updateDynamic("restrictionAttributes")(restrictionAttributes)
     if (!js.isUndefined(returnBarriers)) __obj.updateDynamic("returnBarriers")(returnBarriers)
     if (!js.isUndefined(returnDirections)) __obj.updateDynamic("returnDirections")(returnDirections)

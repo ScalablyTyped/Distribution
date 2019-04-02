@@ -157,7 +157,7 @@ object SSMNs extends js.Object {
       */
     var LastUpdateAssociationDate: js.UndefOr[DateTime] = js.undefined
     /**
-      * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new instance starts and attempts to execute an association while Systems Manager is executing MaxConcurrency associations, the association is allowed to run. During the next association interval, the new instance will process its association within the limit specified for MaxConcurrency.
+      * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new instance starts and attempts to run an association while Systems Manager is running MaxConcurrency associations, the association is allowed to run. During the next association interval, the new instance will process its association within the limit specified for MaxConcurrency.
       */
     var MaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
     /**
@@ -368,7 +368,7 @@ object SSMNs extends js.Object {
       */
     var DocumentVersion: js.UndefOr[DocumentVersion] = js.undefined
     /**
-      * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new instance starts and attempts to execute an association while Systems Manager is executing MaxConcurrency associations, the association is allowed to run. During the next association interval, the new instance will process its association within the limit specified for MaxConcurrency.
+      * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new instance starts and attempts to run an association while Systems Manager is running MaxConcurrency associations, the association is allowed to run. During the next association interval, the new instance will process its association within the limit specified for MaxConcurrency.
       */
     var MaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
     /**
@@ -448,11 +448,11 @@ object SSMNs extends js.Object {
       */
     var AutomationExecutionStatus: js.UndefOr[AutomationExecutionStatus] = js.undefined
     /**
-      * The action of the currently executing step.
+      * The action of the step that is currently running.
       */
     var CurrentAction: js.UndefOr[String] = js.undefined
     /**
-      * The name of the currently executing step.
+      * The name of the step that is currently running.
       */
     var CurrentStepName: js.UndefOr[String] = js.undefined
     /**
@@ -464,7 +464,7 @@ object SSMNs extends js.Object {
       */
     var DocumentVersion: js.UndefOr[DocumentVersion] = js.undefined
     /**
-      * The Amazon Resource Name (ARN) of the user who executed the automation.
+      * The Amazon Resource Name (ARN) of the user who ran the automation.
       */
     var ExecutedBy: js.UndefOr[String] = js.undefined
     /**
@@ -512,7 +512,7 @@ object SSMNs extends js.Object {
       */
     var ResolvedTargets: js.UndefOr[ResolvedTargets] = js.undefined
     /**
-      * A list of details about the current state of all steps that comprise an execution. An Automation document contains a list of steps that are executed in order.
+      * A list of details about the current state of all steps that comprise an execution. An Automation document contains a list of steps that are run in order.
       */
     var StepExecutions: js.UndefOr[StepExecutionList] = js.undefined
     /**
@@ -524,7 +524,7 @@ object SSMNs extends js.Object {
       */
     var Target: js.UndefOr[String] = js.undefined
     /**
-      * The combination of AWS Regions and/or AWS accounts where you want to execute the Automation.
+      * The combination of AWS Regions and/or AWS accounts where you want to run the Automation.
       */
     var TargetLocations: js.UndefOr[TargetLocations] = js.undefined
     /**
@@ -562,15 +562,15 @@ object SSMNs extends js.Object {
       */
     var AutomationExecutionStatus: js.UndefOr[AutomationExecutionStatus] = js.undefined
     /**
-      * Use this filter with DescribeAutomationExecutions. Specify either Local or CrossAccount. CrossAccount is an Automation that executes in multiple AWS Regions and accounts. For more information, see Concurrently Executing Automations in Multiple AWS Regions and Accounts in the AWS Systems Manager User Guide. 
+      * Use this filter with DescribeAutomationExecutions. Specify either Local or CrossAccount. CrossAccount is an Automation that runs in multiple AWS Regions and accounts. For more information, see Executing Automations in Multiple AWS Regions and Accounts in the AWS Systems Manager User Guide. 
       */
     var AutomationType: js.UndefOr[AutomationType] = js.undefined
     /**
-      * The action of the currently executing step.
+      * The action of the step that is currently running.
       */
     var CurrentAction: js.UndefOr[String] = js.undefined
     /**
-      * The name of the currently executing step.
+      * The name of the step that is currently running.
       */
     var CurrentStepName: js.UndefOr[String] = js.undefined
     /**
@@ -582,7 +582,7 @@ object SSMNs extends js.Object {
       */
     var DocumentVersion: js.UndefOr[DocumentVersion] = js.undefined
     /**
-      * The IAM role ARN of the user who executed the Automation.
+      * The IAM role ARN of the user who ran the Automation.
       */
     var ExecutedBy: js.UndefOr[String] = js.undefined
     /**
@@ -725,7 +725,7 @@ object SSMNs extends js.Object {
       */
     var ErrorCount: js.UndefOr[ErrorCount] = js.undefined
     /**
-      * If this time is reached and the command has not already started executing, it will not run. Calculated based on the ExpiresAfter user input provided as part of the SendCommand API.
+      * If this time is reached and the command has not already started running, it will not run. Calculated based on the ExpiresAfter user input provided as part of the SendCommand API.
       */
     var ExpiresAfter: js.UndefOr[DateTime] = js.undefined
     /**
@@ -733,11 +733,11 @@ object SSMNs extends js.Object {
       */
     var InstanceIds: js.UndefOr[InstanceIdList] = js.undefined
     /**
-      * The maximum number of instances that are allowed to execute the command at the same time. You can specify a number of instances, such as 10, or a percentage of instances, such as 10%. The default value is 50. For more information about how to use MaxConcurrency, see Executing Commands Using Systems Manager Run Command in the AWS Systems Manager User Guide.
+      * The maximum number of instances that are allowed to run the command at the same time. You can specify a number of instances, such as 10, or a percentage of instances, such as 10%. The default value is 50. For more information about how to use MaxConcurrency, see Running Commands Using Systems Manager Run Command in the AWS Systems Manager User Guide.
       */
     var MaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
     /**
-      * The maximum number of errors allowed before the system stops sending the command to additional targets. You can specify a number of errors, such as 10, or a percentage or errors, such as 10%. The default value is 0. For more information about how to use MaxErrors, see Executing Commands Using Systems Manager Run Command in the AWS Systems Manager User Guide.
+      * The maximum number of errors allowed before the system stops sending the command to additional targets. You can specify a number of errors, such as 10, or a percentage or errors, such as 10%. The default value is 0. For more information about how to use MaxErrors, see Running Commands Using Systems Manager Run Command in the AWS Systems Manager User Guide.
       */
     var MaxErrors: js.UndefOr[MaxErrors] = js.undefined
     /**
@@ -757,7 +757,7 @@ object SSMNs extends js.Object {
       */
     var OutputS3Region: js.UndefOr[S3Region] = js.undefined
     /**
-      * The parameter values to be inserted in the document when executing the command.
+      * The parameter values to be inserted in the document when running the command.
       */
     var Parameters: js.UndefOr[Parameters] = js.undefined
     /**
@@ -773,7 +773,7 @@ object SSMNs extends js.Object {
       */
     var Status: js.UndefOr[CommandStatus] = js.undefined
     /**
-      * A detailed status of the command execution. StatusDetails includes more information than Status because it includes states resulting from error and concurrency control parameters. StatusDetails can show different results than Status. For more information about these statuses, see Understanding Command Statuses in the AWS Systems Manager User Guide. StatusDetails can be one of the following values:   Pending: The command has not been sent to any instances.   In Progress: The command has been sent to at least one instance but has not reached a final state on all instances.   Success: The command successfully executed on all invocations. This is a terminal state.   Delivery Timed Out: The value of MaxErrors or more command invocations shows a status of Delivery Timed Out. This is a terminal state.   Execution Timed Out: The value of MaxErrors or more command invocations shows a status of Execution Timed Out. This is a terminal state.   Failed: The value of MaxErrors or more command invocations shows a status of Failed. This is a terminal state.   Incomplete: The command was attempted on all instances and one or more invocations does not have a value of Success but not enough invocations failed for the status to be Failed. This is a terminal state.   Canceled: The command was terminated before it was completed. This is a terminal state.   Rate Exceeded: The number of instances targeted by the command exceeded the account limit for pending invocations. The system has canceled the command before executing it on any instance. This is a terminal state.  
+      * A detailed status of the command execution. StatusDetails includes more information than Status because it includes states resulting from error and concurrency control parameters. StatusDetails can show different results than Status. For more information about these statuses, see Understanding Command Statuses in the AWS Systems Manager User Guide. StatusDetails can be one of the following values:   Pending: The command has not been sent to any instances.   In Progress: The command has been sent to at least one instance but has not reached a final state on all instances.   Success: The command successfully ran on all invocations. This is a terminal state.   Delivery Timed Out: The value of MaxErrors or more command invocations shows a status of Delivery Timed Out. This is a terminal state.   Execution Timed Out: The value of MaxErrors or more command invocations shows a status of Execution Timed Out. This is a terminal state.   Failed: The value of MaxErrors or more command invocations shows a status of Failed. This is a terminal state.   Incomplete: The command was attempted on all instances and one or more invocations does not have a value of Success but not enough invocations failed for the status to be Failed. This is a terminal state.   Canceled: The command was terminated before it was completed. This is a terminal state.   Rate Exceeded: The number of instances targeted by the command exceeded the account limit for pending invocations. The system has canceled the command before running it on any instance. This is a terminal state.  
       */
     var StatusDetails: js.UndefOr[StatusDetails] = js.undefined
     /**
@@ -883,15 +883,15 @@ object SSMNs extends js.Object {
       */
     var OutputS3Region: js.UndefOr[S3Region] = js.undefined
     /**
-      * A numeric response code generated after executing the plugin. 
+      * A numeric response code generated after running the plugin. 
       */
     var ResponseCode: js.UndefOr[ResponseCode] = js.undefined
     /**
-      * The time the plugin stopped executing. Could stop prematurely if, for example, a cancel command was sent. 
+      * The time the plugin stopped running. Could stop prematurely if, for example, a cancel command was sent. 
       */
     var ResponseFinishDateTime: js.UndefOr[DateTime] = js.undefined
     /**
-      * The time the plugin started executing. 
+      * The time the plugin started running. 
       */
     var ResponseStartDateTime: js.UndefOr[DateTime] = js.undefined
     /**
@@ -903,7 +903,7 @@ object SSMNs extends js.Object {
       */
     var StandardOutputUrl: js.UndefOr[Url] = js.undefined
     /**
-      * The status of this plugin. You can execute a document with multiple plugins.
+      * The status of this plugin. You can run a document with multiple plugins.
       */
     var Status: js.UndefOr[CommandPluginStatus] = js.undefined
     /**
@@ -1100,7 +1100,7 @@ object SSMNs extends js.Object {
       */
     var InstanceId: js.UndefOr[InstanceId] = js.undefined
     /**
-      * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new instance starts and attempts to execute an association while Systems Manager is executing MaxConcurrency associations, the association is allowed to run. During the next association interval, the new instance will process its association within the limit specified for MaxConcurrency.
+      * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new instance starts and attempts to run an association while Systems Manager is running MaxConcurrency associations, the association is allowed to run. During the next association interval, the new instance will process its association within the limit specified for MaxConcurrency.
       */
     var MaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
     /**
@@ -1108,7 +1108,7 @@ object SSMNs extends js.Object {
       */
     var MaxErrors: js.UndefOr[MaxErrors] = js.undefined
     /**
-      * The name of the SSM document that contains the configuration information for the instance. You can specify Command, Policy, or Automation documents. You can specify AWS-predefined documents, documents you created, or a document that is shared with you from another account. For SSM documents that are shared with you from other AWS accounts, you must specify the complete SSM document ARN, in the following format:  arn:aws:ssm:region:account-id:document/document-name   For example:  arn:aws:ssm:us-east-2:12345678912:document/My-Shared-Document  For AWS-predefined documents and SSM documents you created in your account, you only need to specify the document name. For example, AWS-ApplyPatchBaseline or My-Document.
+      * The name of the SSM document that contains the configuration information for the instance. You can specify Command or Automation documents. You can specify AWS-predefined documents, documents you created, or a document that is shared with you from another account. For SSM documents that are shared with you from other AWS accounts, you must specify the complete SSM document ARN, in the following format:  arn:aws:ssm:region:account-id:document/document-name   For example:  arn:aws:ssm:us-east-2:12345678912:document/My-Shared-Document  For AWS-predefined documents and SSM documents you created in your account, you only need to specify the document name. For example, AWS-ApplyPatchBaseline or My-Document.
       */
     var Name: DocumentARN
     /**
@@ -1162,7 +1162,7 @@ object SSMNs extends js.Object {
       */
     var InstanceId: js.UndefOr[InstanceId] = js.undefined
     /**
-      * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new instance starts and attempts to execute an association while Systems Manager is executing MaxConcurrency associations, the association is allowed to run. During the next association interval, the new instance will process its association within the limit specified for MaxConcurrency.
+      * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new instance starts and attempts to run an association while Systems Manager is running MaxConcurrency associations, the association is allowed to run. During the next association interval, the new instance will process its association within the limit specified for MaxConcurrency.
       */
     var MaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
     /**
@@ -1170,7 +1170,7 @@ object SSMNs extends js.Object {
       */
     var MaxErrors: js.UndefOr[MaxErrors] = js.undefined
     /**
-      * The name of the SSM document that contains the configuration information for the instance. You can specify Command, Policy, or Automation documents. You can specify AWS-predefined documents, documents you created, or a document that is shared with you from another account. For SSM documents that are shared with you from other AWS accounts, you must specify the complete SSM document ARN, in the following format:  arn:partition:ssm:region:account-id:document/document-name   For example:  arn:aws:ssm:us-east-2:12345678912:document/My-Shared-Document  For AWS-predefined documents and SSM documents you created in your account, you only need to specify the document name. For example, AWS-ApplyPatchBaseline or My-Document.
+      * The name of the SSM document that contains the configuration information for the instance. You can specify Command or Automation documents. You can specify AWS-predefined documents, documents you created, or a document that is shared with you from another account. For SSM documents that are shared with you from other AWS accounts, you must specify the complete SSM document ARN, in the following format:  arn:partition:ssm:region:account-id:document/document-name   For example:  arn:aws:ssm:us-east-2:12345678912:document/My-Shared-Document  For AWS-predefined documents and SSM documents you created in your account, you only need to specify the document name. For example, AWS-ApplyPatchBaseline or My-Document.
       */
     var Name: DocumentARN
     /**
@@ -1242,7 +1242,7 @@ object SSMNs extends js.Object {
   
   trait CreateMaintenanceWindowRequest extends js.Object {
     /**
-      * Enables a Maintenance Window task to execute on managed instances, even if you have not registered those instances as targets. If enabled, then you must specify the unregistered instances (by instance ID) when you register a task with the Maintenance Window  If you don't enable this option, then you must specify previously-registered targets when you register a task with the Maintenance Window. 
+      * Enables a Maintenance Window task to run on managed instances, even if you have not registered those instances as targets. If enabled, then you must specify the unregistered instances (by instance ID) when you register a task with the Maintenance Window  If you don't enable this option, then you must specify previously-registered targets when you register a task with the Maintenance Window. 
       */
     var AllowUnassociatedTargets: MaintenanceWindowAllowUnassociatedTargets
     /**
@@ -2757,7 +2757,7 @@ object SSMNs extends js.Object {
       */
     var Comment: js.UndefOr[Comment] = js.undefined
     /**
-      * The name of the document that was executed. For example, AWS-RunShellScript.
+      * The name of the document that was run. For example, AWS-RunShellScript.
       */
     var DocumentName: js.UndefOr[DocumentName] = js.undefined
     /**
@@ -2769,11 +2769,11 @@ object SSMNs extends js.Object {
       */
     var ExecutionElapsedTime: js.UndefOr[StringDateTime] = js.undefined
     /**
-      * The date and time the plugin was finished executing. Date and time are written in ISO 8601 format. For example, June 7, 2017 is represented as 2017-06-7. The following sample AWS CLI command uses the InvokedAfter filter.  aws ssm list-commands --filters key=InvokedAfter,value=2017-06-07T00:00:00Z  If the plugin has not started to execute, the string is empty.
+      * The date and time the plugin was finished running. Date and time are written in ISO 8601 format. For example, June 7, 2017 is represented as 2017-06-7. The following sample AWS CLI command uses the InvokedAfter filter.  aws ssm list-commands --filters key=InvokedAfter,value=2017-06-07T00:00:00Z  If the plugin has not started to run, the string is empty.
       */
     var ExecutionEndDateTime: js.UndefOr[StringDateTime] = js.undefined
     /**
-      * The date and time the plugin started executing. Date and time are written in ISO 8601 format. For example, June 7, 2017 is represented as 2017-06-7. The following sample AWS CLI command uses the InvokedBefore filter.  aws ssm list-commands --filters key=InvokedBefore,value=2017-06-07T00:00:00Z  If the plugin has not started to execute, the string is empty.
+      * The date and time the plugin started running. Date and time are written in ISO 8601 format. For example, June 7, 2017 is represented as 2017-06-7. The following sample AWS CLI command uses the InvokedBefore filter.  aws ssm list-commands --filters key=InvokedBefore,value=2017-06-07T00:00:00Z  If the plugin has not started to run, the string is empty.
       */
     var ExecutionStartDateTime: js.UndefOr[StringDateTime] = js.undefined
     /**
@@ -2785,19 +2785,19 @@ object SSMNs extends js.Object {
       */
     var PluginName: js.UndefOr[CommandPluginName] = js.undefined
     /**
-      * The error level response code for the plugin script. If the response code is -1, then the command has not started executing on the instance, or it was not received by the instance.
+      * The error level response code for the plugin script. If the response code is -1, then the command has not started running on the instance, or it was not received by the instance.
       */
     var ResponseCode: js.UndefOr[ResponseCode] = js.undefined
     /**
-      * The first 8,000 characters written by the plugin to stderr. If the command has not finished executing, then this string is empty.
+      * The first 8,000 characters written by the plugin to stderr. If the command has not finished running, then this string is empty.
       */
     var StandardErrorContent: js.UndefOr[StandardErrorContent] = js.undefined
     /**
-      * The URL for the complete text written by the plugin to stderr. If the command has not finished executing, then this string is empty.
+      * The URL for the complete text written by the plugin to stderr. If the command has not finished running, then this string is empty.
       */
     var StandardErrorUrl: js.UndefOr[Url] = js.undefined
     /**
-      * The first 24,000 characters written by the plugin to stdout. If the command has not finished executing, if ExecutionStatus is neither Succeeded nor Failed, then this string is empty.
+      * The first 24,000 characters written by the plugin to stdout. If the command has not finished running, if ExecutionStatus is neither Succeeded nor Failed, then this string is empty.
       */
     var StandardOutputContent: js.UndefOr[StandardOutputContent] = js.undefined
     /**
@@ -2809,7 +2809,7 @@ object SSMNs extends js.Object {
       */
     var Status: js.UndefOr[CommandInvocationStatus] = js.undefined
     /**
-      * A detailed status of the command execution for an invocation. StatusDetails includes more information than Status because it includes states resulting from error and concurrency control parameters. StatusDetails can show different results than Status. For more information about these statuses, see Understanding Command Statuses in the AWS Systems Manager User Guide. StatusDetails can be one of the following values:   Pending: The command has not been sent to the instance.   In Progress: The command has been sent to the instance but has not reached a terminal state.   Delayed: The system attempted to send the command to the target, but the target was not available. The instance might not be available because of network issues, the instance was stopped, etc. The system will try to deliver the command again.   Success: The command or plugin was executed successfully. This is a terminal state.   Delivery Timed Out: The command was not delivered to the instance before the delivery timeout expired. Delivery timeouts do not count against the parent command's MaxErrors limit, but they do contribute to whether the parent command status is Success or Incomplete. This is a terminal state.   Execution Timed Out: The command started to execute on the instance, but the execution was not complete before the timeout expired. Execution timeouts count against the MaxErrors limit of the parent command. This is a terminal state.   Failed: The command wasn't executed successfully on the instance. For a plugin, this indicates that the result code was not zero. For a command invocation, this indicates that the result code for one or more plugins was not zero. Invocation failures count against the MaxErrors limit of the parent command. This is a terminal state.   Canceled: The command was terminated before it was completed. This is a terminal state.   Undeliverable: The command can't be delivered to the instance. The instance might not exist or might not be responding. Undeliverable invocations don't count against the parent command's MaxErrors limit and don't contribute to whether the parent command status is Success or Incomplete. This is a terminal state.   Terminated: The parent command exceeded its MaxErrors limit and subsequent command invocations were canceled by the system. This is a terminal state.  
+      * A detailed status of the command execution for an invocation. StatusDetails includes more information than Status because it includes states resulting from error and concurrency control parameters. StatusDetails can show different results than Status. For more information about these statuses, see Understanding Command Statuses in the AWS Systems Manager User Guide. StatusDetails can be one of the following values:   Pending: The command has not been sent to the instance.   In Progress: The command has been sent to the instance but has not reached a terminal state.   Delayed: The system attempted to send the command to the target, but the target was not available. The instance might not be available because of network issues, the instance was stopped, etc. The system will try to deliver the command again.   Success: The command or plugin was run successfully. This is a terminal state.   Delivery Timed Out: The command was not delivered to the instance before the delivery timeout expired. Delivery timeouts do not count against the parent command's MaxErrors limit, but they do contribute to whether the parent command status is Success or Incomplete. This is a terminal state.   Execution Timed Out: The command started to run on the instance, but the execution was not complete before the timeout expired. Execution timeouts count against the MaxErrors limit of the parent command. This is a terminal state.   Failed: The command wasn't run successfully on the instance. For a plugin, this indicates that the result code was not zero. For a command invocation, this indicates that the result code for one or more plugins was not zero. Invocation failures count against the MaxErrors limit of the parent command. This is a terminal state.   Canceled: The command was terminated before it was completed. This is a terminal state.   Undeliverable: The command can't be delivered to the instance. The instance might not exist or might not be responding. Undeliverable invocations don't count against the parent command's MaxErrors limit and don't contribute to whether the parent command status is Success or Incomplete. This is a terminal state.   Terminated: The parent command exceeded its MaxErrors limit and subsequent command invocations were canceled by the system. This is a terminal state.  
       */
     var StatusDetails: js.UndefOr[StatusDetails] = js.undefined
   }
@@ -3015,11 +3015,11 @@ object SSMNs extends js.Object {
   
   trait GetMaintenanceWindowExecutionResult extends js.Object {
     /**
-      * The time the Maintenance Window finished executing.
+      * The time the Maintenance Window finished running.
       */
     var EndTime: js.UndefOr[DateTime] = js.undefined
     /**
-      * The time the Maintenance Window started executing.
+      * The time the Maintenance Window started running.
       */
     var StartTime: js.UndefOr[DateTime] = js.undefined
     /**
@@ -3057,7 +3057,7 @@ object SSMNs extends js.Object {
   
   trait GetMaintenanceWindowExecutionTaskInvocationResult extends js.Object {
     /**
-      * The time that the task finished executing on the target.
+      * The time that the task finished running on the target.
       */
     var EndTime: js.UndefOr[DateTime] = js.undefined
     /**
@@ -3073,11 +3073,11 @@ object SSMNs extends js.Object {
       */
     var OwnerInformation: js.UndefOr[OwnerInformation] = js.undefined
     /**
-      * The parameters used at the time that the task executed.
+      * The parameters used at the time that the task ran.
       */
     var Parameters: js.UndefOr[MaintenanceWindowExecutionTaskInvocationParameters] = js.undefined
     /**
-      * The time that the task started executing on the target.
+      * The time that the task started running on the target.
       */
     var StartTime: js.UndefOr[DateTime] = js.undefined
     /**
@@ -3135,7 +3135,7 @@ object SSMNs extends js.Object {
       */
     var Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined
     /**
-      * The role that was assumed when executing the task.
+      * The role that was assumed when running the task.
       */
     var ServiceRole: js.UndefOr[ServiceRole] = js.undefined
     /**
@@ -3151,7 +3151,7 @@ object SSMNs extends js.Object {
       */
     var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.undefined
     /**
-      * The ARN of the executed task.
+      * The ARN of the task that ran.
       */
     var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
     /**
@@ -3159,11 +3159,11 @@ object SSMNs extends js.Object {
       */
     var TaskExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskId] = js.undefined
     /**
-      * The parameters passed to the task when it was executed.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported Maintenance Window task types, see MaintenanceWindowTaskInvocationParameters.  The map has the following format: Key: string, between 1 and 255 characters Value: an array of strings, each string is between 1 and 255 characters
+      * The parameters passed to the task when it was run.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported Maintenance Window task types, see MaintenanceWindowTaskInvocationParameters.  The map has the following format: Key: string, between 1 and 255 characters Value: an array of strings, each string is between 1 and 255 characters
       */
     var TaskParameters: js.UndefOr[MaintenanceWindowTaskParametersList] = js.undefined
     /**
-      * The type of task executed.
+      * The type of task that was run.
       */
     var Type: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
     /**
@@ -3271,7 +3271,7 @@ object SSMNs extends js.Object {
       */
     var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
     /**
-      * The priority of the task when it executes. The lower the number, the higher the priority. Tasks that have the same priority are scheduled in parallel.
+      * The priority of the task when it runs. The lower the number, the higher the priority. Tasks that have the same priority are scheduled in parallel.
       */
     var Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined
     /**
@@ -3279,7 +3279,7 @@ object SSMNs extends js.Object {
       */
     var ServiceRoleArn: js.UndefOr[ServiceRole] = js.undefined
     /**
-      * The targets where the task should execute.
+      * The targets where the task should run.
       */
     var Targets: js.UndefOr[Targets] = js.undefined
     /**
@@ -3287,15 +3287,15 @@ object SSMNs extends js.Object {
       */
     var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
     /**
-      * The parameters to pass to the task when it executes.
+      * The parameters to pass to the task when it runs.
       */
     var TaskInvocationParameters: js.UndefOr[MaintenanceWindowTaskInvocationParameters] = js.undefined
     /**
-      * The parameters to pass to the task when it executes.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported Maintenance Window task types, see MaintenanceWindowTaskInvocationParameters. 
+      * The parameters to pass to the task when it runs.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported Maintenance Window task types, see MaintenanceWindowTaskInvocationParameters. 
       */
     var TaskParameters: js.UndefOr[MaintenanceWindowTaskParameters] = js.undefined
     /**
-      * The type of task to execute.
+      * The type of task to run.
       */
     var TaskType: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
     /**
@@ -3374,7 +3374,7 @@ object SSMNs extends js.Object {
       */
     var Path: PSParameterName
     /**
-      * Retrieve all parameters within a hierarchy.  If a user has access to a path, then the user can access all levels of that path. For example, if a user has permission to access path /a, then the user can also access /a/b. Even if a user has explicitly been denied access in IAM for parameter /a, they can still call the GetParametersByPath API action recursively and view /a/b. 
+      * Retrieve all parameters within a hierarchy.  If a user has access to a path, then the user can access all levels of that path. For example, if a user has permission to access path /a, then the user can also access /a/b. Even if a user has explicitly been denied access in IAM for parameter /a/b, they can still call the GetParametersByPath API action recursively for /a and view /a/b. 
       */
     var Recursive: js.UndefOr[Boolean] = js.undefined
     /**
@@ -3599,7 +3599,7 @@ object SSMNs extends js.Object {
       */
     var ErrorCode: js.UndefOr[AgentErrorCode] = js.undefined
     /**
-      * The date the instance association executed. 
+      * The date the instance association ran. 
       */
     var ExecutionDate: js.UndefOr[DateTime] = js.undefined
     /**
@@ -3662,7 +3662,7 @@ object SSMNs extends js.Object {
       */
     var IsLatestVersion: js.UndefOr[Boolean] = js.undefined
     /**
-      * The date the association was last executed.
+      * The date the association was last run.
       */
     var LastAssociationExecutionDate: js.UndefOr[DateTime] = js.undefined
     /**
@@ -4454,7 +4454,7 @@ object SSMNs extends js.Object {
       */
     var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.undefined
     /**
-      * The ARN of the executed task.
+      * The ARN of the task that ran.
       */
     var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
     /**
@@ -4462,7 +4462,7 @@ object SSMNs extends js.Object {
       */
     var TaskExecutionId: js.UndefOr[MaintenanceWindowExecutionTaskId] = js.undefined
     /**
-      * The type of executed task.
+      * The type of task that ran.
       */
     var TaskType: js.UndefOr[MaintenanceWindowTaskType] = js.undefined
     /**
@@ -4489,7 +4489,7 @@ object SSMNs extends js.Object {
       */
     var OwnerInformation: js.UndefOr[OwnerInformation] = js.undefined
     /**
-      * The parameters that were provided for the invocation when it was executed.
+      * The parameters that were provided for the invocation when it was run.
       */
     var Parameters: js.UndefOr[MaintenanceWindowExecutionTaskInvocationParameters] = js.undefined
     /**
@@ -4608,7 +4608,7 @@ object SSMNs extends js.Object {
   
   trait MaintenanceWindowRunCommandParameters extends js.Object {
     /**
-      * Information about the command(s) to execute.
+      * Information about the command(s) to run.
       */
     var Comment: js.UndefOr[Comment] = js.undefined
     /**
@@ -4640,7 +4640,7 @@ object SSMNs extends js.Object {
       */
     var ServiceRoleArn: js.UndefOr[ServiceRole] = js.undefined
     /**
-      * If this time is reached and the command has not already started executing, it doesn't run.
+      * If this time is reached and the command has not already started running, it doesn't run.
       */
     var TimeoutSeconds: js.UndefOr[TimeoutSeconds] = js.undefined
   }
@@ -4713,7 +4713,7 @@ object SSMNs extends js.Object {
       */
     var Priority: js.UndefOr[MaintenanceWindowTaskPriority] = js.undefined
     /**
-      * The role that should be assumed when executing the task
+      * The role that should be assumed when running the task.
       */
     var ServiceRoleArn: js.UndefOr[ServiceRole] = js.undefined
     /**
@@ -4725,7 +4725,7 @@ object SSMNs extends js.Object {
       */
     var TaskArn: js.UndefOr[MaintenanceWindowTaskArn] = js.undefined
     /**
-      * The parameters that should be passed to the task when it is executed.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported Maintenance Window task types, see MaintenanceWindowTaskInvocationParameters. 
+      * The parameters that should be passed to the task when it is run.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported Maintenance Window task types, see MaintenanceWindowTaskInvocationParameters. 
       */
     var TaskParameters: js.UndefOr[MaintenanceWindowTaskParameters] = js.undefined
     /**
@@ -5181,7 +5181,7 @@ object SSMNs extends js.Object {
       */
     var CancelledSteps: js.UndefOr[Integer] = js.undefined
     /**
-      * The total number of steps that failed to execute in all specified AWS Regions and accounts for the current Automation execution.
+      * The total number of steps that failed to run in all specified AWS Regions and accounts for the current Automation execution.
       */
     var FailedSteps: js.UndefOr[Integer] = js.undefined
     /**
@@ -5193,7 +5193,7 @@ object SSMNs extends js.Object {
       */
     var TimedOutSteps: js.UndefOr[Integer] = js.undefined
     /**
-      * The total number of steps executed in all specified AWS Regions and accounts for the current Automation execution.
+      * The total number of steps run in all specified AWS Regions and accounts for the current Automation execution.
       */
     var TotalSteps: js.UndefOr[Integer] = js.undefined
   }
@@ -5399,7 +5399,7 @@ object SSMNs extends js.Object {
       */
     var Targets: awsDashSdkLib.clientsSsmMod.SSMNs.Targets
     /**
-      * The ARN of the task to execute 
+      * The ARN of the task to run.
       */
     var TaskArn: MaintenanceWindowTaskArn
     /**
@@ -5407,7 +5407,7 @@ object SSMNs extends js.Object {
       */
     var TaskInvocationParameters: js.UndefOr[MaintenanceWindowTaskInvocationParameters] = js.undefined
     /**
-      * The parameters that should be passed to the task when it is executed.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported Maintenance Window task types, see MaintenanceWindowTaskInvocationParameters. 
+      * The parameters that should be passed to the task when it is run.   TaskParameters has been deprecated. To specify parameters to pass to a task when it runs, instead use the Parameters option in the TaskInvocationParameters structure. For information about how Systems Manager handles these options for the supported Maintenance Window task types, see MaintenanceWindowTaskInvocationParameters. 
       */
     var TaskParameters: js.UndefOr[MaintenanceWindowTaskParameters] = js.undefined
     /**
@@ -5659,19 +5659,19 @@ object SSMNs extends js.Object {
       */
     var DocumentHashType: js.UndefOr[DocumentHashType] = js.undefined
     /**
-      * Required. The name of the Systems Manager document to execute. This can be a public document or a custom document.
+      * Required. The name of the Systems Manager document to run. This can be a public document or a custom document.
       */
     var DocumentName: DocumentARN
     /**
-      * The SSM document version to use in the request. You can specify $DEFAULT, $LATEST, or a specific version number. If you execute commands by using the AWS CLI, then you must escape the first two options by using a backslash. If you specify a version number, then you don't need to use the backslash. For example: --document-version "\$DEFAULT" --document-version "\$LATEST" --document-version "3"
+      * The SSM document version to use in the request. You can specify $DEFAULT, $LATEST, or a specific version number. If you run commands by using the AWS CLI, then you must escape the first two options by using a backslash. If you specify a version number, then you don't need to use the backslash. For example: --document-version "\$DEFAULT" --document-version "\$LATEST" --document-version "3"
       */
     var DocumentVersion: js.UndefOr[DocumentVersion] = js.undefined
     /**
-      * The instance IDs where the command should execute. You can specify a maximum of 50 IDs. If you prefer not to list individual instance IDs, you can instead send commands to a fleet of instances using the Targets parameter, which accepts EC2 tags. For more information about how to use targets, see Sending Commands to a Fleet in the AWS Systems Manager User Guide.
+      * The instance IDs where the command should run. You can specify a maximum of 50 IDs. If you prefer not to list individual instance IDs, you can instead send commands to a fleet of instances using the Targets parameter, which accepts EC2 tags. For more information about how to use targets, see Sending Commands to a Fleet in the AWS Systems Manager User Guide.
       */
     var InstanceIds: js.UndefOr[InstanceIdList] = js.undefined
     /**
-      * (Optional) The maximum number of instances that are allowed to execute the command at the same time. You can specify a number such as 10 or a percentage such as 10%. The default value is 50. For more information about how to use MaxConcurrency, see Using Concurrency Controls in the AWS Systems Manager User Guide.
+      * (Optional) The maximum number of instances that are allowed to run the command at the same time. You can specify a number such as 10 or a percentage such as 10%. The default value is 50. For more information about how to use MaxConcurrency, see Using Concurrency Controls in the AWS Systems Manager User Guide.
       */
     var MaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
     /**
@@ -5695,7 +5695,7 @@ object SSMNs extends js.Object {
       */
     var OutputS3Region: js.UndefOr[S3Region] = js.undefined
     /**
-      * The required and optional parameters specified in the document being executed.
+      * The required and optional parameters specified in the document being run.
       */
     var Parameters: js.UndefOr[Parameters] = js.undefined
     /**
@@ -5707,7 +5707,7 @@ object SSMNs extends js.Object {
       */
     var Targets: js.UndefOr[Targets] = js.undefined
     /**
-      * If this time is reached and the command has not already started executing, it will not run.
+      * If this time is reached and the command has not already started running, it will not run.
       */
     var TimeoutSeconds: js.UndefOr[TimeoutSeconds] = js.undefined
   }
@@ -5839,7 +5839,7 @@ object SSMNs extends js.Object {
   
   trait StartAssociationsOnceRequest extends js.Object {
     /**
-      * The association IDs that you want to execute immediately and only one time.
+      * The association IDs that you want to run immediately and only one time.
       */
     var AssociationIds: AssociationIdList
   }
@@ -5876,7 +5876,7 @@ object SSMNs extends js.Object {
       */
     var Parameters: js.UndefOr[AutomationParameterMap] = js.undefined
     /**
-      * A location is a combination of AWS Regions and/or AWS accounts where you want to execute the Automation. Use this action to start an Automation in multiple Regions and multiple accounts. For more information, see Concurrently Executing Automations in Multiple AWS Regions and Accounts in the AWS Systems Manager User Guide. 
+      * A location is a combination of AWS Regions and/or AWS accounts where you want to run the Automation. Use this action to start an Automation in multiple Regions and multiple accounts. For more information, see Executing Automations in Multiple AWS Regions and Accounts in the AWS Systems Manager User Guide. 
       */
     var TargetLocations: js.UndefOr[TargetLocations] = js.undefined
     /**
@@ -5980,7 +5980,7 @@ object SSMNs extends js.Object {
       */
     var Outputs: js.UndefOr[AutomationParameterMap] = js.undefined
     /**
-      * A user-specified list of parameters to override when executing a step.
+      * A user-specified list of parameters to override when running a step.
       */
     var OverriddenParameters: js.UndefOr[AutomationParameterMap] = js.undefined
     /**
@@ -6016,7 +6016,7 @@ object SSMNs extends js.Object {
       */
     var TimeoutSeconds: js.UndefOr[Long] = js.undefined
     /**
-      * Strategies used when step fails, we support Continue and Abort. Abort will fail the automation when the step fails. Continue will ignore the failure of current step and allow automation to execute the next step. With conditional branching, we add step:stepName to support the automation to go to another specific step.
+      * Strategies used when step fails, we support Continue and Abort. Abort will fail the automation when the step fails. Continue will ignore the failure of current step and allow automation to run the next step. With conditional branching, we add step:stepName to support the automation to go to another specific step.
       */
     var ValidNextSteps: js.UndefOr[ValidNextStepList] = js.undefined
   }
@@ -6062,7 +6062,7 @@ object SSMNs extends js.Object {
       */
     var Key: js.UndefOr[TargetKey] = js.undefined
     /**
-      * User-defined criteria that maps to Key. For example, if you specified tag:ServerRole, you could specify value:WebServer to execute a command on instances that include Amazon EC2 tags of ServerRole,WebServer. For more information about how to send commands that target instances using Key,Value parameters, see Sending Commands to a Fleet in the AWS Systems Manager User Guide.
+      * User-defined criteria that maps to Key. For example, if you specified tag:ServerRole, you could specify value:WebServer to run a command on instances that include Amazon EC2 tags of ServerRole,WebServer. For more information about how to send commands that target instances using Key,Value parameters, see Sending Commands to a Fleet in the AWS Systems Manager User Guide.
       */
     var Values: js.UndefOr[TargetValues] = js.undefined
   }
@@ -6073,7 +6073,7 @@ object SSMNs extends js.Object {
       */
     var Accounts: js.UndefOr[Accounts] = js.undefined
     /**
-      * The Automation execution role used by the currently executing Automation.
+      * The Automation execution role used by the currently running Automation.
       */
     var ExecutionRoleName: js.UndefOr[ExecutionRoleName] = js.undefined
     /**
@@ -6085,7 +6085,7 @@ object SSMNs extends js.Object {
       */
     var TargetLocationMaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
     /**
-      * The maxium number of errors allowed before the system stops queueing additional Automation executions for the currently executing Automation. 
+      * The maxium number of errors allowed before the system stops queueing additional Automation executions for the currently running Automation. 
       */
     var TargetLocationMaxErrors: js.UndefOr[MaxErrors] = js.undefined
   }
@@ -7033,7 +7033,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeInventoryDeletionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves the individual task executions (one per target) for a particular task executed as part of a Maintenance Window execution.
+      * Retrieves the individual task executions (one per target) for a particular task run as part of a Maintenance Window execution.
       */
     def describeMaintenanceWindowExecutionTaskInvocations(): awsDashSdkLib.libRequestMod.Request[
         DescribeMaintenanceWindowExecutionTaskInvocationsResult, 
@@ -7050,7 +7050,7 @@ object SSMNs extends js.Object {
         awsDashSdkLib.libErrorMod.AWSError
       ] = js.native
     /**
-      * Retrieves the individual task executions (one per target) for a particular task executed as part of a Maintenance Window execution.
+      * Retrieves the individual task executions (one per target) for a particular task run as part of a Maintenance Window execution.
       */
     def describeMaintenanceWindowExecutionTaskInvocations(params: DescribeMaintenanceWindowExecutionTaskInvocationsRequest): awsDashSdkLib.libRequestMod.Request[
         DescribeMaintenanceWindowExecutionTaskInvocationsResult, 
@@ -7068,7 +7068,7 @@ object SSMNs extends js.Object {
         awsDashSdkLib.libErrorMod.AWSError
       ] = js.native
     /**
-      * For a given Maintenance Window execution, lists the tasks that were executed.
+      * For a given Maintenance Window execution, lists the tasks that were run.
       */
     def describeMaintenanceWindowExecutionTasks(): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowExecutionTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeMaintenanceWindowExecutionTasks(
@@ -7079,7 +7079,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowExecutionTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * For a given Maintenance Window execution, lists the tasks that were executed.
+      * For a given Maintenance Window execution, lists the tasks that were run.
       */
     def describeMaintenanceWindowExecutionTasks(params: DescribeMaintenanceWindowExecutionTasksRequest): awsDashSdkLib.libRequestMod.Request[DescribeMaintenanceWindowExecutionTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeMaintenanceWindowExecutionTasks(
@@ -7551,7 +7551,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves details about a specific task executed as part of a Maintenance Window execution.
+      * Retrieves details about a specific task run as part of a Maintenance Window execution.
       */
     def getMaintenanceWindowExecution(): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getMaintenanceWindowExecution(
@@ -7562,7 +7562,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves details about a specific task executed as part of a Maintenance Window execution.
+      * Retrieves details about a specific task run as part of a Maintenance Window execution.
       */
     def getMaintenanceWindowExecution(params: GetMaintenanceWindowExecutionRequest): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getMaintenanceWindowExecution(
@@ -7574,7 +7574,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves the details about a specific task executed as part of a Maintenance Window execution.
+      * Retrieves the details about a specific task run as part of a Maintenance Window execution.
       */
     def getMaintenanceWindowExecutionTask(): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getMaintenanceWindowExecutionTask(
@@ -7585,7 +7585,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves the details about a specific task executed as part of a Maintenance Window execution.
+      * Retrieves the details about a specific task run as part of a Maintenance Window execution.
       */
     def getMaintenanceWindowExecutionTask(params: GetMaintenanceWindowExecutionTaskRequest): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getMaintenanceWindowExecutionTask(
@@ -7597,7 +7597,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetMaintenanceWindowExecutionTaskResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves a task invocation. A task invocation is a specific task executing on a specific target. Maintenance Windows report status for all invocations. 
+      * Retrieves a task invocation. A task invocation is a specific task running on a specific target. Maintenance Windows report status for all invocations. 
       */
     def getMaintenanceWindowExecutionTaskInvocation(): awsDashSdkLib.libRequestMod.Request[
         GetMaintenanceWindowExecutionTaskInvocationResult, 
@@ -7614,7 +7614,7 @@ object SSMNs extends js.Object {
         awsDashSdkLib.libErrorMod.AWSError
       ] = js.native
     /**
-      * Retrieves a task invocation. A task invocation is a specific task executing on a specific target. Maintenance Windows report status for all invocations. 
+      * Retrieves a task invocation. A task invocation is a specific task running on a specific target. Maintenance Windows report status for all invocations. 
       */
     def getMaintenanceWindowExecutionTaskInvocation(params: GetMaintenanceWindowExecutionTaskInvocationRequest): awsDashSdkLib.libRequestMod.Request[
         GetMaintenanceWindowExecutionTaskInvocationResult, 
@@ -7885,7 +7885,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListAssociationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * An invocation is copy of a command sent to a specific instance. A command can apply to one or more instances. A command invocation applies to one instance. For example, if a user executes SendCommand against three instances, then a command invocation is created for each requested instance ID. ListCommandInvocations provide status about command execution.
+      * An invocation is copy of a command sent to a specific instance. A command can apply to one or more instances. A command invocation applies to one instance. For example, if a user runs SendCommand against three instances, then a command invocation is created for each requested instance ID. ListCommandInvocations provide status about command execution.
       */
     def listCommandInvocations(): awsDashSdkLib.libRequestMod.Request[ListCommandInvocationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listCommandInvocations(
@@ -7896,7 +7896,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListCommandInvocationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * An invocation is copy of a command sent to a specific instance. A command can apply to one or more instances. A command invocation applies to one instance. For example, if a user executes SendCommand against three instances, then a command invocation is created for each requested instance ID. ListCommandInvocations provide status about command execution.
+      * An invocation is copy of a command sent to a specific instance. A command can apply to one or more instances. A command invocation applies to one instance. For example, if a user runs SendCommand against three instances, then a command invocation is created for each requested instance ID. ListCommandInvocations provide status about command execution.
       */
     def listCommandInvocations(params: ListCommandInvocationsRequest): awsDashSdkLib.libRequestMod.Request[ListCommandInvocationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listCommandInvocations(
@@ -8391,7 +8391,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[SendAutomationSignalResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Executes commands on one or more managed instances.
+      * Runs commands on one or more managed instances.
       */
     def sendCommand(): awsDashSdkLib.libRequestMod.Request[SendCommandResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def sendCommand(
@@ -8402,7 +8402,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[SendCommandResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Executes commands on one or more managed instances.
+      * Runs commands on one or more managed instances.
       */
     def sendCommand(params: SendCommandRequest): awsDashSdkLib.libRequestMod.Request[SendCommandResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def sendCommand(
@@ -8414,7 +8414,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[SendCommandResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Use this API action to execute an association immediately and only one time. This action can be helpful when troubleshooting associations.
+      * Use this API action to run an association immediately and only one time. This action can be helpful when troubleshooting associations.
       */
     def startAssociationsOnce(): awsDashSdkLib.libRequestMod.Request[StartAssociationsOnceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def startAssociationsOnce(
@@ -8425,7 +8425,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartAssociationsOnceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Use this API action to execute an association immediately and only one time. This action can be helpful when troubleshooting associations.
+      * Use this API action to run an association immediately and only one time. This action can be helpful when troubleshooting associations.
       */
     def startAssociationsOnce(params: StartAssociationsOnceRequest): awsDashSdkLib.libRequestMod.Request[StartAssociationsOnceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def startAssociationsOnce(
@@ -8483,7 +8483,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartSessionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Stop an Automation that is currently executing.
+      * Stop an Automation that is currently running.
       */
     def stopAutomationExecution(): awsDashSdkLib.libRequestMod.Request[StopAutomationExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def stopAutomationExecution(
@@ -8494,7 +8494,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopAutomationExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Stop an Automation that is currently executing.
+      * Stop an Automation that is currently running.
       */
     def stopAutomationExecution(params: StopAutomationExecutionRequest): awsDashSdkLib.libRequestMod.Request[StopAutomationExecutionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def stopAutomationExecution(
@@ -8529,7 +8529,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[TerminateSessionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Updates an association. You can update the association name and version, the document version, schedule, parameters, and Amazon S3 output.
+      * Updates an association. You can update the association name and version, the document version, schedule, parameters, and Amazon S3 output.  When you update an association, the association immediately runs against the specified targets. 
       */
     def updateAssociation(): awsDashSdkLib.libRequestMod.Request[UpdateAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateAssociation(
@@ -8540,7 +8540,7 @@ object SSMNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Updates an association. You can update the association name and version, the document version, schedule, parameters, and Amazon S3 output.
+      * Updates an association. You can update the association name and version, the document version, schedule, parameters, and Amazon S3 output.  When you update an association, the association immediately runs against the specified targets. 
       */
     def updateAssociation(params: UpdateAssociationRequest): awsDashSdkLib.libRequestMod.Request[UpdateAssociationResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateAssociation(
@@ -8786,7 +8786,7 @@ object SSMNs extends js.Object {
       */
     var DocumentVersion: js.UndefOr[DocumentVersion] = js.undefined
     /**
-      * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new instance starts and attempts to execute an association while Systems Manager is executing MaxConcurrency associations, the association is allowed to run. During the next association interval, the new instance will process its association within the limit specified for MaxConcurrency.
+      * The maximum number of targets allowed to run the association at the same time. You can specify a number, for example 10, or a percentage of the target set, for example 10%. The default value is 100%, which means all targets run the association at the same time. If a new instance starts and attempts to run an association while Systems Manager is running MaxConcurrency associations, the association is allowed to run. During the next association interval, the new instance will process its association within the limit specified for MaxConcurrency.
       */
     var MaxConcurrency: js.UndefOr[MaxConcurrency] = js.undefined
     /**
@@ -8794,7 +8794,7 @@ object SSMNs extends js.Object {
       */
     var MaxErrors: js.UndefOr[MaxErrors] = js.undefined
     /**
-      * The name of the SSM document that contains the configuration information for the instance. You can specify Command, Policy, or Automation documents. You can specify AWS-predefined documents, documents you created, or a document that is shared with you from another account. For SSM documents that are shared with you from other AWS accounts, you must specify the complete SSM document ARN, in the following format:  arn:aws:ssm:region:account-id:document/document-name   For example:  arn:aws:ssm:us-east-2:12345678912:document/My-Shared-Document  For AWS-predefined documents and SSM documents you created in your account, you only need to specify the document name. For example, AWS-ApplyPatchBaseline or My-Document.
+      * The name of the SSM document that contains the configuration information for the instance. You can specify Command or Automation documents. You can specify AWS-predefined documents, documents you created, or a document that is shared with you from another account. For SSM documents that are shared with you from other AWS accounts, you must specify the complete SSM document ARN, in the following format:  arn:aws:ssm:region:account-id:document/document-name   For example:  arn:aws:ssm:us-east-2:12345678912:document/My-Shared-Document  For AWS-predefined documents and SSM documents you created in your account, you only need to specify the document name. For example, AWS-ApplyPatchBaseline or My-Document.
       */
     var Name: js.UndefOr[DocumentARN] = js.undefined
     /**

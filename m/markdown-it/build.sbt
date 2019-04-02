@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "markdown-it"
-version := "0.0-unknown-dt-20190322Z-8c8727"
+version := "0.0-unknown-dt-20190322Z-cee26a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "linkify-it" % "2.1.0-dt-20190325Z-2ef30a",
+  "org.scalablytyped" %%% "linkify-it" % "2.1.0-dt-20190326Z-2ef30a",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

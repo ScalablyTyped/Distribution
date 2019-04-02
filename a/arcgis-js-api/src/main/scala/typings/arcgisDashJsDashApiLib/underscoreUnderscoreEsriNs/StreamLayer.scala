@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait StreamLayer extends FeatureLayer {
   /**
-    * Contains the attribute and spatial filters used to filter messages sent to the client by a Stream Service. This property can be set in the constructor but is `read-only` after the layer is created. To change the filter after the layer is created, use the [updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateFilter) method.
+    * Contains the attribute and spatial filters used to filter messages sent to the client by a Stream Service. This property can be set in the constructor but is `read-only` after the layer is created. To change the filter after the layer is created, use the [updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateFilter) method.  **Use definitionExpression or geometryDefinition instead.**
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#filter)
     */
   val filter: StreamLayerFilter = js.native
   /**
-    * An extent object used to filter features. Only features intersecting the extent are displayed in the view. Instead of using this property, use [StreamLayer.filter.geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#filter) when creating the service or [StreamLayer.updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateFilter) when changing the spatial filter.
+    * An extent object used to filter features. Only features intersecting the extent are displayed in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#geometryDefinition)
     */
@@ -32,7 +32,7 @@ trait StreamLayer extends FeatureLayer {
     */
   var purgeOptions: StreamLayerPurgeOptions = js.native
   /**
-    * Updates the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#filter) on the layer. The filter is updated on all views that contain the layer. If the input `filterChanges` object is `undefined` or `null`, the spatial and attribute filters are removed. To update the filter on a single layer view associated with the layer, use the [StreamLayerView.updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#updateFilter) method after getting the layer view object.  Filter changes only apply to incoming features. Features already displayed in the view will be removed automatically.
+    * Updates the [filter](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#filter) on the layer. The filter is updated on all views that contain the layer. If the input `filterChanges` object is `undefined` or `null`, the spatial and attribute filters are removed. To update the filter on a single layer view associated with the layer, use the [StreamLayerView.updateFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-StreamLayerView.html#updateFilter) method after getting the layer view object.  Filter changes only apply to incoming features. Features already displayed in the view will be removed automatically.  **Use [definitionExpression](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#definitionExpression) or [geometryDefinition](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#definitionExpression) instead.**
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateFilter)
     *
@@ -79,7 +79,7 @@ class StreamLayerCls () extends StreamLayer {
   /* CompleteClass */
   override var portalItem: PortalItem = js.native
   /**
-    * Refresh interval of the layer in minutes. Minimum refresh interval is 0.1 minute (6 seconds). Value of `0` indicates no refresh.
+    * Refresh interval of the layer in minutes. Value of `0` indicates no refresh.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
     *
@@ -87,6 +87,15 @@ class StreamLayerCls () extends StreamLayer {
     */
   /* CompleteClass */
   override var refreshInterval: scala.Double = js.native
+  /**
+    * The time info provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [total time span](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#timeExtent) for the layer. The `timeInfo` and its `startField` and `endField` properties must be set at the time of layer initialization if it is being set for [GeoJSONLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html), [CSVLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html) or [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) initialized from [client-side features](esri-layers-FeatureLayer.html#creating-a-featurelayer). The [total time span](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#timeExtent) for the timeInfo is automatically calculated based on `start` and `end` fields. The timeInfo parameters cannot be changed after the layer is [loaded](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#load).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-TemporalLayer.html#timeInfo)
+    *
+    * @default null
+    */
+  /* CompleteClass */
+  override var timeInfo: TimeInfo = js.native
   /**
     * Fetches all the data for the layer.
     *

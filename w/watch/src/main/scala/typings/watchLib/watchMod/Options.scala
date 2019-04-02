@@ -9,7 +9,7 @@ trait Options extends js.Object {
   var filter: js.UndefOr[
     js.Function2[/* path */ java.lang.String, /* stat */ nodeLib.fsMod.Stats, scala.Boolean]
   ] = js.undefined
-  var ignoreDirectoryPattern: js.UndefOr[scala.Boolean] = js.undefined
+  var ignoreDirectoryPattern: js.UndefOr[stdLib.RegExp] = js.undefined
   var ignoreDotFiles: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreNotPermitted: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreUnreadableDir: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,7 +20,7 @@ object Options {
   @scala.inline
   def apply(
     filter: (/* path */ java.lang.String, /* stat */ nodeLib.fsMod.Stats) => scala.Boolean = null,
-    ignoreDirectoryPattern: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreDirectoryPattern: stdLib.RegExp = null,
     ignoreDotFiles: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreNotPermitted: js.UndefOr[scala.Boolean] = js.undefined,
     ignoreUnreadableDir: js.UndefOr[scala.Boolean] = js.undefined,
@@ -28,7 +28,7 @@ object Options {
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2(filter))
-    if (!js.isUndefined(ignoreDirectoryPattern)) __obj.updateDynamic("ignoreDirectoryPattern")(ignoreDirectoryPattern)
+    if (ignoreDirectoryPattern != null) __obj.updateDynamic("ignoreDirectoryPattern")(ignoreDirectoryPattern)
     if (!js.isUndefined(ignoreDotFiles)) __obj.updateDynamic("ignoreDotFiles")(ignoreDotFiles)
     if (!js.isUndefined(ignoreNotPermitted)) __obj.updateDynamic("ignoreNotPermitted")(ignoreNotPermitted)
     if (!js.isUndefined(ignoreUnreadableDir)) __obj.updateDynamic("ignoreUnreadableDir")(ignoreUnreadableDir)

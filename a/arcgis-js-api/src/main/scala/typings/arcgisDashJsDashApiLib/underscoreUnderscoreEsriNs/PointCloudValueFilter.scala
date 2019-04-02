@@ -14,7 +14,14 @@ trait PointCloudValueFilter extends PointCloudFilter {
     *
     * @default "exclude"
     */
-  var mode: java.lang.String = js.native
+  var mode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.include | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.exclude = js.native
+  /**
+    * For PointCloudValueFilter the type is always `value`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-pointCloudFilters-PointCloudValueFilter.html#type)
+    */
+  @JSName("type")
+  val type_PointCloudValueFilter: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.value = js.native
   /**
     * An array of numeric values representing the classification codes that the filter should apply.
     *

@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashVectorDashIconsLibComponents {
   @scala.inline
+  def AntDesign: reactLib.reactMod.ReactNs.ComponentType[reactDashNativeDashVectorDashIconsLib.iconMod.IconProps] = js.constructorOf[reactDashNativeDashVectorDashIconsLib.antDesignMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashNativeDashVectorDashIconsLib.iconMod.IconProps]]
+  @scala.inline
   def Button: reactLib.reactMod.ReactNs.ComponentType[reactDashNativeDashVectorDashIconsLib.iconMod.IconButtonProps] = js.constructorOf[reactDashNativeDashVectorDashIconsLib.iconMod.IconNs.Button].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashNativeDashVectorDashIconsLib.iconMod.IconButtonProps]]
   @scala.inline
   def Entypo: reactLib.reactMod.ReactNs.ComponentType[reactDashNativeDashVectorDashIconsLib.iconMod.IconProps] = js.constructorOf[reactDashNativeDashVectorDashIconsLib.entypoMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactDashNativeDashVectorDashIconsLib.iconMod.IconProps]]

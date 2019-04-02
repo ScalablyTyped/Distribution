@@ -13,6 +13,7 @@ class namespaced protected () extends BN {
   def this(number: js.Array[scala.Double]) = this()
   def this(number: nodeLib.Buffer) = this()
   def this(number: scala.Double) = this()
+  def this(number: stdLib.Uint8Array) = this()
   def this(number: BN, base: bnDotJsLib.bnDotJsLibStrings.hex) = this()
   def this(number: BN, base: scala.Double) = this()
   def this(number: BN, endian: bnDotJsLib.Endianness) = this()
@@ -28,6 +29,9 @@ class namespaced protected () extends BN {
   def this(number: scala.Double, base: bnDotJsLib.bnDotJsLibStrings.hex) = this()
   def this(number: scala.Double, base: scala.Double) = this()
   def this(number: scala.Double, endian: bnDotJsLib.Endianness) = this()
+  def this(number: stdLib.Uint8Array, base: bnDotJsLib.bnDotJsLibStrings.hex) = this()
+  def this(number: stdLib.Uint8Array, base: scala.Double) = this()
+  def this(number: stdLib.Uint8Array, endian: bnDotJsLib.Endianness) = this()
   def this(number: BN, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: bnDotJsLib.Endianness) = this()
   def this(number: BN, base: scala.Double, endian: bnDotJsLib.Endianness) = this()
   def this(number: java.lang.String, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: bnDotJsLib.Endianness) = this()
@@ -38,6 +42,8 @@ class namespaced protected () extends BN {
   def this(number: nodeLib.Buffer, base: scala.Double, endian: bnDotJsLib.Endianness) = this()
   def this(number: scala.Double, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: bnDotJsLib.Endianness) = this()
   def this(number: scala.Double, base: scala.Double, endian: bnDotJsLib.Endianness) = this()
+  def this(number: stdLib.Uint8Array, base: bnDotJsLib.bnDotJsLibStrings.hex, endian: bnDotJsLib.Endianness) = this()
+  def this(number: stdLib.Uint8Array, base: scala.Double, endian: bnDotJsLib.Endianness) = this()
 }
 
 /* static members */

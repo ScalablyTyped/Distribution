@@ -9,8 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   var globalAgent: Agent = js.native
+  def createServer(): Server = js.native
   def createServer(options: ServerOptions): Server = js.native
   def createServer(options: ServerOptions, requestListener: nodeLib.httpMod.RequestListener): Server = js.native
+  def createServer(requestListener: nodeLib.httpMod.RequestListener): Server = js.native
   def get(options: java.lang.String): nodeLib.httpMod.ClientRequest = js.native
   def get(
     options: java.lang.String,

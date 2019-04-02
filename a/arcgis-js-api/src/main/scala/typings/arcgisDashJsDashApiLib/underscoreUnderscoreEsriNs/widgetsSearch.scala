@@ -10,13 +10,21 @@ trait widgetsSearch
   extends Widget
      with GoTo {
   /**
-    * The [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#sources) object currently selected. Can be either a [FeatureLayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-FeatureLayerSearchSource.html) or a module:esri/widget/Search/LocatorSearchSource.
+    * The current active menu of the Search widget.  **Possible Values:** none | suggestion | source | warning
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#activeMenu)
+    *
+    * @default none
+    */
+  var activeMenu: java.lang.String = js.native
+  /**
+    * The [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#sources) object currently selected. Can be either a [LayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html) or a module:esri/widget/Search/LocatorSearchSource.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#activeSource)
     *
     * @default null
     */
-  val activeSource: FeatureLayerSearchSource | LocatorSearchSource = js.native
+  val activeSource: LayerSearchSource | LocatorSearchSource = js.native
   /**
     * The selected source's index. This value is `-1` when all sources are selected.
     *
@@ -34,6 +42,12 @@ trait widgetsSearch
     */
   var allPlaceholder: java.lang.String = js.native
   /**
+    * The combined collection of [defaultSources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSources) and [sources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#sources). The [defaultSources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSources) displays first in the Search UI.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#allSources)
+    */
+  val allSources: Collection[LayerSearchSource | LocatorSearchSource] = js.native
+  /**
     * Indicates whether to automatically select and zoom to the first geocoded result. If `false`, the [findAddressCandidates](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-find-address-candidates.htm) operation will still geocode the input string, but the top result will not be selected. To work with the geocoded results, you can set up a [search-complete](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#event:search-complete) event handler and get the results through the event object.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#autoSelect)
@@ -42,11 +56,17 @@ trait widgetsSearch
     */
   var autoSelect: scala.Boolean = js.native
   /**
+    * A read-only property that is a [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [LayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html) and/or [LocatorSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html). This property may contain [ArcGIS Portal](https://enterprise.arcgis.com/en/portal/) [locators](http://enterprise.arcgis.com/en/server/latest/publish-services/windows/geocode-services.htm) and any web map or web scene [configurable search sources](http://doc.arcgis.com/en/arcgis-online/create-maps/configure-feature-search.htm).  This property is used to populate the Search UI if the [sources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#sources) property is not set.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#defaultSources)
+    */
+  val defaultSources: Collection[LayerSearchSource | LocatorSearchSource] = js.native
+  /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#iconClass)
     */
-  val iconClass: java.lang.String = js.native
+  var iconClass: java.lang.String = js.native
   /**
     * Indicates whether or not to include [defaultSources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#defaultSources) in the Search UI. This can be a boolean value or a function that returns an array of Search [sources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#sources).
     *
@@ -55,12 +75,6 @@ trait widgetsSearch
     * @default true
     */
   var includeDefaultSources: scala.Boolean | js.Function = js.native
-  /**
-    * The widget's default label.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#label)
-    */
-  val label: java.lang.String = js.native
   /**
     * Enables location services within the widget.  ![locationEnabled](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/search-locationEnabled.png)
     * > The use of this property is only supported on secure origins. To use it, switch your application to a secure origin, such as HTTPS. Note that localhost is considered "potentially secure" and can be used for easy testing in browsers that supports [Window.isSecureContext](https://developer.mozilla.org/en-US/docs/Web/API/Window/isSecureContext#Browser_compatibility) (currently Chrome and Firefox).
@@ -103,11 +117,9 @@ trait widgetsSearch
     */
   var popupEnabled: scala.Boolean = js.native
   /**
-    * A customized PopupTemplate for the selected feature. Note that specifying a wildcard {*} for the popupTemplate will return all fields in addition to search-specific fields.
+    * A customized [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) for the selected feature. Note that any templates defined on [allSources](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#allSources) take precedence over those defined directly on the template.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#popupTemplate)
-    *
-    * @default null
     */
   var popupTemplate: PopupTemplate = js.native
   /**
@@ -159,7 +171,7 @@ trait widgetsSearch
   val selectedResult: SearchResult = js.native
   /**
     * The Search widget may be used to search features in a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) or geocode locations with a [Locator](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html). The `sources` property defines the sources from which to search for the [view](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#view) specified by the Search widget instance. There are two types of sources:
-    *   * [FeatureLayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-FeatureLayerSearchSource.html)
+    *   * [LayerSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LayerSearchSource.html)
     *   * [LocatorSearchSource](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html)
     *
     *
@@ -168,7 +180,7 @@ trait widgetsSearch
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#sources)
     */
-  var sources: Collection[FeatureLayerSearchSource | LocatorSearchSource] = js.native
+  var sources: Collection[LayerSearchSource | LocatorSearchSource] = js.native
   /**
     * An array of results from the [suggest method](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#suggest).  This is available if working with a 10.3 or greater geocoding service that has [suggest capability loaded](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-suggest.htm) or a 10.3 or greater feature layer that supports pagination, i.e. `supportsPagination = true`.
     *

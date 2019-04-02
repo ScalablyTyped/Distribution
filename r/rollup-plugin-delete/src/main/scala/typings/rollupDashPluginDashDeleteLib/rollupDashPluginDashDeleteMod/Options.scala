@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options
-  extends delLib.delMod.Options {
+  extends delLib.delMod.delNs.Options {
   /**
     * Patterns of files and folders to be deleted.
     * @default []

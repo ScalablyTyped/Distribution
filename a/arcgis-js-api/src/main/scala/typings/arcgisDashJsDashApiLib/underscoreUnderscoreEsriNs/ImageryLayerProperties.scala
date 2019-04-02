@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.ArcGISImageServiceProperties because var conflicts: fullExtent. Inlined compressionQuality, compressionTolerance, copyright, definitionExpression, domainFields, fields, format, hasMultidimensions, hasRasterAttributeTable, imageMaxHeight, imageMaxWidth, mosaicRule, multidimensionalInfo, pixelType, popupTemplate, rasterAttributeTable, rasterAttributeTableFieldPrefix, rasterFields, renderingRule, url */ trait ImageryLayerProperties
+- arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs.ArcGISImageServiceProperties because var conflicts: fullExtent. Inlined compressionQuality, compressionTolerance, copyright, definitionExpression, domainFields, fields, format, hasMultidimensions, hasRasterAttributeTable, imageMaxHeight, imageMaxWidth, mosaicRule, multidimensionalInfo, pixelType, popupTemplate, rasterAttributeTable, rasterAttributeTableFieldPrefix, rasterFields, renderer, renderingRule, url */ trait ImageryLayerProperties
   extends LayerProperties
      with ScaleRangeLayerProperties
      with RefreshableLayerProperties {
@@ -109,7 +109,7 @@ import scala.scalajs.js.annotation._
     */
   var pixelType: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Indicates whether to display popups when the layer is clicked.
+    * Indicates whether to display popups when the layer is clicked. The layer needs to have a [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#popupTemplate) to define what information should be displayed in the popup. Alternatively, a default popup template may be automatically used if [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#popupEnabled)
     *
@@ -117,7 +117,7 @@ import scala.scalajs.js.annotation._
     */
   var popupEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * The popup template for the layer. When set on the layer, the popupTemplate allows users to access attributes and display their values using text and/or charts in the [view's popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#popup) when a pixel is clicked. See [this sample](https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-popup/index.html) for an example of how [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) interacts with an [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).
+    * The popup template for the layer. When set on the layer, the popupTemplate allows users to access attributes and display their values using text and/or charts in the [view's popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#popup) when a pixel is clicked. See [this sample](https://developers.arcgis.com/javascript/latest/sample-code/layers-imagery-popup/index.html) for an example of how [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) interacts with an [ImageryLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).  A default popup template is automatically used if no `popupTemplate` has been defined when [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#popupTemplate)
     */
@@ -149,6 +149,12 @@ import scala.scalajs.js.annotation._
     */
   var rasterFields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   /**
+    * The renderer assigned to the layer. The renderer defines how to visualize pixels in the layer. Depending on the renderer type, the pixels may be stretched across the color ramp, classified or have different symbols based on values.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#renderer)
+    */
+  var renderer: js.UndefOr[RendererProperties] = js.undefined
+  /**
     * Specifies the rule for how the requested image should be rendered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#renderingRule)
@@ -178,7 +184,7 @@ object ImageryLayerProperties {
     id: java.lang.String = null,
     imageMaxHeight: scala.Int | scala.Double = null,
     imageMaxWidth: scala.Int | scala.Double = null,
-    listMode: java.lang.String = null,
+    listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
     maxScale: scala.Int | scala.Double = null,
     minScale: scala.Int | scala.Double = null,
     mosaicRule: MosaicRuleProperties = null,
@@ -193,6 +199,7 @@ object ImageryLayerProperties {
     rasterAttributeTableFieldPrefix: java.lang.String = null,
     rasterFields: js.Array[FieldProperties] = null,
     refreshInterval: scala.Int | scala.Double = null,
+    renderer: RendererProperties = null,
     renderingRule: RasterFunctionProperties = null,
     title: java.lang.String = null,
     url: java.lang.String = null,
@@ -212,7 +219,7 @@ object ImageryLayerProperties {
     if (id != null) __obj.updateDynamic("id")(id)
     if (imageMaxHeight != null) __obj.updateDynamic("imageMaxHeight")(imageMaxHeight.asInstanceOf[js.Any])
     if (imageMaxWidth != null) __obj.updateDynamic("imageMaxWidth")(imageMaxWidth.asInstanceOf[js.Any])
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
     if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
     if (mosaicRule != null) __obj.updateDynamic("mosaicRule")(mosaicRule)
@@ -227,6 +234,7 @@ object ImageryLayerProperties {
     if (rasterAttributeTableFieldPrefix != null) __obj.updateDynamic("rasterAttributeTableFieldPrefix")(rasterAttributeTableFieldPrefix)
     if (rasterFields != null) __obj.updateDynamic("rasterFields")(rasterFields)
     if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
     if (renderingRule != null) __obj.updateDynamic("renderingRule")(renderingRule)
     if (title != null) __obj.updateDynamic("title")(title)
     if (url != null) __obj.updateDynamic("url")(url)

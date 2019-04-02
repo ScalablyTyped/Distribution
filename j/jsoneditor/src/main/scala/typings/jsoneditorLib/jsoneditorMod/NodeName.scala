@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NodeName extends js.Object {
-  var path: java.lang.String
+  var path: js.Array[java.lang.String]
   var size: scala.Double
   var `type`: jsoneditorLib.jsoneditorLibStrings.`object` | jsoneditorLib.jsoneditorLibStrings.array
 }
@@ -14,7 +14,7 @@ trait NodeName extends js.Object {
 object NodeName {
   @scala.inline
   def apply(
-    path: java.lang.String,
+    path: js.Array[java.lang.String],
     size: scala.Double,
     `type`: jsoneditorLib.jsoneditorLibStrings.`object` | jsoneditorLib.jsoneditorLibStrings.array
   ): NodeName = {

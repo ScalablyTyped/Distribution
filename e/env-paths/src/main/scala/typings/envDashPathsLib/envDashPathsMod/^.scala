@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("env-paths", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  def default(name: java.lang.String): Paths = js.native
-  def default(name: java.lang.String, options: Options): Paths = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[envDashPathsLib.Anon_DefaultName]
 

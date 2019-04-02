@@ -14,7 +14,7 @@ trait ImageMeshColor extends Accessor {
     */
   var data: stdLib.HTMLImageElement | stdLib.HTMLCanvasElement | stdLib.ImageData = js.native
   /**
-    * Indicates whether the image data should be interpreted as being semi-transparent. The default value is automatically derived when the data property contains a canvas element or an ImageData object. In all other cases it defaults to `false`.
+    * Indicates whether the image data should be interpreted as being semi-transparent. The default value is automatically derived when the data property contains a canvas element or an ImageData object. If instead a url to a .png file was provided, it is assumed that transparency is present. In all other cases it defaults to `false`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-ImageMeshColor.html#transparent)
     *

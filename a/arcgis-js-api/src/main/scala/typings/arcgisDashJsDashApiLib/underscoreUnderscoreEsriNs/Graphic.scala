@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Graphic
   extends Accessor
-     with JSONSupport {
+     with JSONSupport
+     with IntersectItem {
   /**
     * Name-value pairs of fields and field values associated with the graphic.
     *
@@ -62,9 +63,11 @@ trait Graphic
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#getEffectivePopupTemplate)
     *
+    * @param defaultPopupTemplateEnabled Whether support for default popup templates is enabled. When true, a default popup template may be created automatically if neither the graphic nor its layer have a popup template defined.
     *
     */
   def getEffectivePopupTemplate(): PopupTemplate = js.native
+  def getEffectivePopupTemplate(defaultPopupTemplateEnabled: scala.Boolean): PopupTemplate = js.native
   /**
     * Sets a new value to the specified attribute.
     *

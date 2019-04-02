@@ -7,8 +7,23 @@ import scala.scalajs.js.annotation._
 
 trait ObjectSymbol3DLayerAnchorPosition
   extends stdLib.Object {
+  /**
+    * Value defining the position relative to the x axis of the bounding box.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition)
+    */
   var x: scala.Double
+  /**
+    * Value defining the position relative to the y axis of the bounding box.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition)
+    */
   var y: scala.Double
+  /**
+    * Value defining the position relative to the z axis of the bounding box.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html#anchorPosition)
+    */
   var z: scala.Double
 }
 

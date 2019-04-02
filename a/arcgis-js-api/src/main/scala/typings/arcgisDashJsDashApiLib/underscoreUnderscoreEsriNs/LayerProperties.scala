@@ -25,14 +25,16 @@ trait LayerProperties extends LoadableProperties {
     * ------|------------
     *  show | The layer is visible in the table of contents.
     *  hide | The layer is hidden in the table of contents.
-    *  hide-children | If the layer is a [GroupLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html), hide the children layers from the table of contents.
+    *  hide-children | If the layer is a [GroupLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html), [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html), [KMLLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-KMLLayer.html), [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html), [TileLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html) or [WMSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html), hide the children layers from the table of contents.
     *
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-Layer.html#listMode)
     *
     * @default show
     */
-  var listMode: js.UndefOr[java.lang.String] = js.undefined
+  var listMode: js.UndefOr[
+    arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children`
+  ] = js.undefined
   /**
     * The opacity of the layer. This value can range between `1` and `0`, where `0` is 100 percent transparent and `1` is completely opaque.
     *
@@ -62,7 +64,7 @@ object LayerProperties {
   def apply(
     fullExtent: ExtentProperties = null,
     id: java.lang.String = null,
-    listMode: java.lang.String = null,
+    listMode: arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.show | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.hide | arcgisDashJsDashApiLib.arcgisDashJsDashApiLibStrings.`hide-children` = null,
     opacity: scala.Int | scala.Double = null,
     title: java.lang.String = null,
     visible: js.UndefOr[scala.Boolean] = js.undefined
@@ -70,7 +72,7 @@ object LayerProperties {
     val __obj = js.Dynamic.literal()
     if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent)
     if (id != null) __obj.updateDynamic("id")(id)
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode)
+    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
     if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     if (title != null) __obj.updateDynamic("title")(title)
     if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)

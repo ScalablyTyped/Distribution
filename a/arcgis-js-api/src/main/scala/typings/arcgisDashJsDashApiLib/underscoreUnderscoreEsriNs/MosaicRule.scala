@@ -18,6 +18,12 @@ trait MosaicRule
     */
   var ascending: scala.Boolean = js.native
   /**
+    * The rendering rule applied on items before mosaicking.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#itemRenderingRule)
+    */
+  var itemRenderingRule: RasterFunction = js.native
+  /**
     * An array of raster Ids. All the rasters with the given list of raster Ids are selected to participate in the mosaic. The rasters will be visible at all pixel sizes regardless of the minimum and maximum pixel size range of the locked rasters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MosaicRule.html#lockRasterIds)
