@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-mosaic-component"
-version := "2.1.0-2bdbf3"
+version := "2.1.0-6c4d14"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,16 +9,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "asap" % "2.0-dt-20180629Z-0f4a84",
   "org.scalablytyped" %%% "classnames" % "2.2-dt-20190326Z-9fc905",
   "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
-  "org.scalablytyped" %%% "dnd-core" % "7.4.0-0c8571",
+  "org.scalablytyped" %%% "dnd-core" % "7.4.4-5a6132",
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-ee4549",
   "org.scalablytyped" %%% "immutability-helper" % "3.0.0-b0f50a",
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20190322Z-4a316b",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
-  "org.scalablytyped" %%% "react-dnd" % "7.4.3-ca7851",
-  "org.scalablytyped" %%% "react-dnd-html5-backend" % "7.4.0-b91d6f",
+  "org.scalablytyped" %%% "react-dnd" % "7.4.4-f003fb",
+  "org.scalablytyped" %%% "react-dnd-html5-backend" % "7.4.4-829a24",
   "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-348bcf",
   "org.scalablytyped" %%% "redux" % "4.0.1-caedab",
   "org.scalablytyped" %%% "shallowequal" % "1.1-dt-20190202Z-0aa1a4",

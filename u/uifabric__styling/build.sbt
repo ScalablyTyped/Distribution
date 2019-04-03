@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "uifabric__styling"
-version := "6.45.2-a1bda4"
+version := "6.45.2-491aae"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
-  "org.scalablytyped" %%% "microsoft__load-themed-styles" % "1.8.77-21c6ab",
+  "org.scalablytyped" %%% "microsoft__load-themed-styles" % "1.8.78-21c6ab",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",

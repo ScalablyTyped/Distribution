@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebElementPromise protected ()
   extends WebElement
-     with seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[WebElement] {
+     with stdLib.Promise[WebElement] {
   /**
     * @param {!WebDriver} driver The parent WebDriver instance for this
     *     element.
-    * @param {!promise.Promise<!WebElement>} el A promise
+    * @param {!Promise<!WebElement>} el A promise
     *     that will resolve to the promised element.
     */
-  def this(driver: WebDriver, el: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[WebElement]) = this()
+  def this(driver: WebDriver, el: js.Promise[WebElement]) = this()
 }
 

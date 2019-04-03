@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("selenium-webdriver/http", "Executor")
 @js.native
 class Executor protected () extends js.Object {
+  def this(client: js.Promise[HttpClient]) = this()
   /**
     * @param {!(HttpClient|IThenable<!HttpClient>)} client The client to use for sending
     *     requests to the server, or a promise-like object that will resolve to
     *     to the client.
     */
   def this(client: HttpClient) = this()
-  def this(client: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[HttpClient]) = this()
   /**
     * Defines a new command for use with this executor. When a command is sent,
     * the {@code path} will be preprocessed using the command's parameters; any

@@ -14,21 +14,21 @@ class WebElement protected () extends Serializable[IWebElementId] {
     * @param {(!IThenable<string>|string)} id The server-assigned opaque ID for
     *     the underlying DOM element.
     */
-  def this(driver: WebDriver, id: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String]) = this()
+  def this(driver: WebDriver, id: js.Promise[java.lang.String]) = this()
   /**
     * Schedules a command to clear the `value` of this element. This command has
     * no effect if the underlying DOM element is neither a text INPUT element
     * nor a TEXTAREA element.
-    * @return {!promise.Promise<void>} A promise that will be resolved
+    * @return {!Promise<void>} A promise that will be resolved
     *     when the element has been cleared.
     */
-  def clear(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def clear(): js.Promise[scala.Unit] = js.native
   /**
     * Schedules a command to click on this element.
-    * @return {!promise.Promise.<void>} A promise that will be resolved
+    * @return {!Promise.<void>} A promise that will be resolved
     *     when the click command has completed.
     */
-  def click(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def click(): js.Promise[scala.Unit] = js.native
   /**
     * Schedule a command to find a descendant of this element. If the element
     * cannot be found, a {@link bot.ErrorCode.NO_SUCH_ELEMENT} result will
@@ -74,17 +74,17 @@ class WebElement protected () extends Serializable[IWebElementId] {
     *
     * @param {!(by.By|Function)} locator The locator strategy to use when
     *     searching for the element.
-    * @return {!promise.Promise<!Array<!WebElement>>} A
+    * @return {!Promise<!Array<!WebElement>>} A
     *     promise that will resolve to an array of WebElements.
     */
-  def findElements(locator: Locator): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[WebElement]] = js.native
+  def findElements(locator: Locator): js.Promise[js.Array[WebElement]] = js.native
   /**
     * Schedules a command to query for the value of the given attribute of the
     * element. Will return the current value, even if it has been modified after
-    * the page has been loaded. More exactly, this method will return the value of
-    * the given attribute, unless that attribute is not present, in which case the
-    * value of the property with the same name is returned. If neither value is
-    * set, null is returned (for example, the 'value' property of a textarea
+    * the page has been loaded. More exactly, this method will return the value
+    * of the given attribute, unless that attribute is not present, in which case
+    * the value of the property with the same name is returned. If neither value
+    * is set, null is returned (for example, the 'value' property of a textarea
     * element). The 'style' attribute is converted as best can be to a
     * text representation with a trailing semi-colon. The following are deemed to
     * be 'boolean' attributes and will return either 'true' or null:
@@ -103,93 +103,101 @@ class WebElement protected () extends Serializable[IWebElementId] {
     * - 'readonly'
     *
     * @param {string} attributeName The name of the attribute to query.
-    * @return {!promise.Promise.<?string>} A promise that will be
+    * @return {!Promise.<?string>} A promise that will be
     *     resolved with the attribute's value. The returned value will always be
     *     either a string or null.
     */
-  def getAttribute(attributeName: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
+  def getAttribute(attributeName: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
     * Schedules a command to query for the computed style of the element
     * represented by this instance. If the element inherits the named style from
-    * its parent, the parent will be queried for its value.  Where possible, color
-    * values will be converted to their hex representation (e.g. #00ff00 instead of
-    * rgb(0, 255, 0)).
+    * its parent, the parent will be queried for its value.  Where possible,
+    * color values will be converted to their hex representation (e.g. #00ff00
+    * instead of rgb(0, 255, 0)).
     *
     * _Warning:_ the value returned will be as the browser interprets it, so
     * it may be tricky to form a proper assertion.
     *
     * @param {string} cssStyleProperty The name of the CSS style property to look
     *     up.
-    * @return {!promise.Promise<string>} A promise that will be
+    * @return {!Promise<string>} A promise that will be
     *     resolved with the requested CSS value.
     */
-  def getCssValue(cssStyleProperty: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
+  def getCssValue(cssStyleProperty: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
     * @return {!WebDriver} The parent driver for this instance.
     */
   def getDriver(): WebDriver = js.native
   /**
-    * @return {!promise.Promise<string>} A promise that resolves to
+    * @return {!Promise<string>} A promise that resolves to
     *     the server-assigned opaque ID assigned to this element.
     */
-  def getId(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
+  def getId(): js.Promise[java.lang.String] = js.native
   /**
+    * DEPRECATED 3.0
     * Schedules a command to compute the location of this element in page space.
-    * @return {!promise.Promise.<{x: number, y: number}>} A promise that
+    * @return {!Promise.<{x: number, y: number}>} A promise that
     *     will be resolved to the element's location as a
     *     {@code {x:number, y:number}} object.
     */
-  def getLocation(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[ILocation] = js.native
+  def getLocation(): js.Promise[ILocation] = js.native
   /**
+    * Returns an object describing an element's location, in pixels relative to
+    * the document element, and the element's size in pixels.
+    */
+  def getRect(): js.Promise[IRectangle] = js.native
+  /**
+    * DEPRECATED 3.0
     * Schedules a command to compute the size of this element's bounding box, in
     * pixels.
-    * @return {!promise.Promise.<{width: number, height: number}>} A
+    * @return {!Promise.<{width: number, height: number}>} A
     *     promise that will be resolved with the element's size as a
     *     {@code {width:number, height:number}} object.
     */
-  def getSize(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[ISize] = js.native
+  def getSize(): js.Promise[ISize] = js.native
   /**
     * Schedules a command to query for the tag/node name of this element.
-    * @return {!promise.Promise.<string>} A promise that will be
+    * @return {!Promise.<string>} A promise that will be
     *     resolved with the element's tag name.
     */
-  def getTagName(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
+  def getTagName(): js.Promise[java.lang.String] = js.native
   /**
-    * Get the visible (i.e. not hidden by CSS) innerText of this element, including
-    * sub-elements, without any leading or trailing whitespace.
-    * @return {!promise.Promise.<string>} A promise that will be
+    * Get the visible (i.e. not hidden by CSS) innerText of this element,
+    * including sub-elements, without any leading or trailing whitespace.
+    * @return {!Promise.<string>} A promise that will be
     *     resolved with the element's visible text.
     */
-  def getText(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
+  def getText(): js.Promise[java.lang.String] = js.native
   /**
     * Schedules a command to test whether this element is currently displayed.
-    * @return {!promise.Promise.<boolean>} A promise that will be
+    * @return {!Promise.<boolean>} A promise that will be
     *     resolved with whether this element is currently visible on the page.
     */
-  def isDisplayed(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] = js.native
+  def isDisplayed(): js.Promise[scala.Boolean] = js.native
   /**
     * Schedules a command to query whether the DOM element represented by this
     * instance is enabled, as dicted by the {@code disabled} attribute.
-    * @return {!promise.Promise.<boolean>} A promise that will be
+    * @return {!Promise.<boolean>} A promise that will be
     *     resolved with whether this element is currently enabled.
     */
-  def isEnabled(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] = js.native
+  def isEnabled(): js.Promise[scala.Boolean] = js.native
   /**
     * Schedules a command to query whether this element is selected.
-    * @return {!promise.Promise.<boolean>} A promise that will be
+    * @return {!Promise.<boolean>} A promise that will be
     *     resolved with whether this element is currently selected.
     */
-  def isSelected(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] = js.native
+  def isSelected(): js.Promise[scala.Boolean] = js.native
   /**
-    * Schedules a command to type a sequence on the DOM element represented by this
-    * promsieinstance.
+    * Schedules a command to type a sequence on the DOM element represented by
+    * this promsieinstance.
     *
     * Modifier keys (SHIFT, CONTROL, ALT, META) are stateful; once a modifier is
     * processed in the keysequence, that key state is toggled until one of the
     * following occurs:
     *
     * - The modifier key is encountered again in the sequence. At this point the
-    *   state of the key is toggled (along with the appropriate keyup/down events).
+    *   state of the key is toggled (along with the appropriate keyup/down
+    * events).
     * - The {@link Key.NULL} key is encountered in the sequence. When
     *   this key is encountered, all modifier keys current in the down state are
     *   released (with accompanying keyup events). The NULL key can be used to
@@ -204,8 +212,8 @@ class WebElement protected () extends Serializable[IWebElementId] {
     *                          'now text is');
     *
     * - The end of the keysequence is encountered. When there are no more keys
-    *   to type, all depressed modifier keys are released (with accompanying keyup
-    *   events).
+    *   to type, all depressed modifier keys are released (with accompanying
+    * keyup events).
     *
     * If this element is a file input ({@code <input type='file'>}), the
     * specified key sequence should specify the path to the file to attach to
@@ -228,14 +236,12 @@ class WebElement protected () extends Serializable[IWebElementId] {
     * punctionation keys will be synthesized according to a standard QWERTY en-us
     * keyboard layout.
     *
-    * @param {...(string|!promise.Promise<string>)} var_args The sequence
+    * @param {...(string|!Promise<string>)} var_args The sequence
     *     of keys to type. All arguments will be joined into a single sequence.
-    * @return {!promise.Promise.<void>} A promise that will be resolved
+    * @return {!Promise.<void>} A promise that will be resolved
     *     when all keys have been typed.
     */
-  def sendKeys(
-    var_args: (java.lang.String | scala.Double | (seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String | scala.Double]))*
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def sendKeys(var_args: (java.lang.String | scala.Double | (js.Promise[java.lang.String | scala.Double]))*): js.Promise[scala.Unit] = js.native
   /**
     * Returns either this instance's serialized represention, if immediately
     * available, or a promise for its serialized representation. This function is
@@ -246,15 +252,15 @@ class WebElement protected () extends Serializable[IWebElementId] {
     * @return {!(T|IThenable.<!T>)} This instance's serialized wire format.
     */
   /* CompleteClass */
-  override def serialize(): IWebElementId | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[IWebElementId] = js.native
+  override def serialize(): IWebElementId | js.Promise[IWebElementId] = js.native
   /**
     * Schedules a command to submit the form containing this element (or this
     * element if it is a FORM element). This command is a no-op if the element is
     * not contained in a form.
-    * @return {!promise.Promise.<void>} A promise that will be resolved
+    * @return {!Promise.<void>} A promise that will be resolved
     *     when the form has been submitted.
     */
-  def submit(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def submit(): js.Promise[scala.Unit] = js.native
   /**
     * Take a screenshot of the visible region encompassed by this element's
     * bounding rectangle.
@@ -262,11 +268,11 @@ class WebElement protected () extends Serializable[IWebElementId] {
     * @param {boolean=} opt_scroll Optional argument that indicates whether the
     *     element should be scrolled into view before taking a screenshot.
     *     Defaults to false.
-    * @return {!promise.Promise<string>} A promise that will be
+    * @return {!Promise<string>} A promise that will be
     *     resolved to the screenshot as a base-64 encoded PNG.
     */
-  def takeScreenshot(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
-  def takeScreenshot(opt_scroll: scala.Boolean): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
+  def takeScreenshot(): js.Promise[java.lang.String] = js.native
+  def takeScreenshot(opt_scroll: scala.Boolean): js.Promise[java.lang.String] = js.native
 }
 
 /* static members */
@@ -278,20 +284,20 @@ object WebElement extends js.Object {
     * @param {boolean=} opt_noLegacy Whether to exclude the legacy element key.
     * @return {!Object} The element ID for use with WebDriver's wire protocol.
     */
-  def buildId(id: java.lang.String): js.Object = js.native
-  def buildId(id: java.lang.String, opt_noLegacy: scala.Boolean): js.Object = js.native
+  def buildId(id: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.IWebElementId = js.native
+  def buildId(id: java.lang.String, opt_noLegacy: scala.Boolean): seleniumDashWebdriverLib.seleniumDashWebdriverMod.IWebElementId = js.native
   /**
     * Compares two WebElements for equality.
     *
     * @param {!WebElement} a A WebElement.
     * @param {!WebElement} b A WebElement.
-    * @return {!promise.Promise<boolean>} A promise that will be
+    * @return {!Promise<boolean>} A promise that will be
     *     resolved to whether the two WebElements are equal.
     */
   def equals(
     a: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement,
     b: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
     * Extracts the encoded WebElement ID from the object.
     *

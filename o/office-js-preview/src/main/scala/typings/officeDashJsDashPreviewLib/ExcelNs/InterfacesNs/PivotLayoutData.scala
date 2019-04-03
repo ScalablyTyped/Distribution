@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait PivotLayoutData extends js.Object {
   /**
     *
-    * True if formatting will be automatically formatted when it’s refreshed or when fields are moved
+    * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -17,7 +17,7 @@ trait PivotLayoutData extends js.Object {
   var autoFormat: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * True if the field list should be shown or hidden from the UI.
+    * Specifies whether the field list can be shown in the UI.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -34,7 +34,7 @@ trait PivotLayoutData extends js.Object {
   ] = js.undefined
   /**
     *
-    * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+    * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -42,14 +42,14 @@ trait PivotLayoutData extends js.Object {
   var preserveFormatting: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * True if the PivotTable report shows grand totals for columns.
+    * Specifies whether the PivotTable report shows grand totals for columns.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showColumnGrandTotals: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * True if the PivotTable report shows grand totals for rows.
+    * Specifies whether the PivotTable report shows grand totals for rows.
     *
     * [Api set: ExcelApi 1.8]
     */

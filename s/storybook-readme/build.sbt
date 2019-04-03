@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook-readme"
-version := "5.0-dt-20190331Z-1c4ad2"
+version := "5.0-dt-20190402Z-71779c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

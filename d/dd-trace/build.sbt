@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "dd-trace"
-version := "0.10.3-243ecc"
+version := "0.10.3-58682a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "int64-buffer" % "0.1.10-06071f",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
-  "org.scalablytyped" %%% "lodash_dot_kebabcase" % "4.1-dt-20190214Z-091aa1",
-  "org.scalablytyped" %%% "lodash_dot_memoize" % "4.1-dt-20190214Z-a63ed0",
-  "org.scalablytyped" %%% "lodash_dot_pick" % "4.4-dt-20190214Z-22608d",
-  "org.scalablytyped" %%% "lodash_dot_sortby" % "4.7-dt-20190214Z-87af72",
-  "org.scalablytyped" %%% "lodash_dot_truncate" % "4.4-dt-20190214Z-dcd9fb",
-  "org.scalablytyped" %%% "lodash_dot_uniq" % "4.5-dt-20190214Z-54f73c",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
+  "org.scalablytyped" %%% "lodash_dot_kebabcase" % "4.1-dt-20190214Z-d1660d",
+  "org.scalablytyped" %%% "lodash_dot_memoize" % "4.1-dt-20190214Z-5a2d53",
+  "org.scalablytyped" %%% "lodash_dot_pick" % "4.4-dt-20190214Z-e100a4",
+  "org.scalablytyped" %%% "lodash_dot_sortby" % "4.7-dt-20190214Z-273079",
+  "org.scalablytyped" %%% "lodash_dot_truncate" % "4.4-dt-20190214Z-454d59",
+  "org.scalablytyped" %%% "lodash_dot_uniq" % "4.5-dt-20190214Z-2e4661",
   "org.scalablytyped" %%% "methods" % "1.1-dt-20180214Z-322462",
   "org.scalablytyped" %%% "msgpack-lite" % "0.1-dt-20180214Z-993b9a",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",

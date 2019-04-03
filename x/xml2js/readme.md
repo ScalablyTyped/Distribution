@@ -7,5 +7,6 @@
 //                 Edward Hinkle <https://github.com/edwardhinkle>
 //                 Behind The Math <https://github.com/BehindTheMath>
 //                 Claas Ahlrichs <https://github.com/claasahl>
+//                 Grzegorz Redlicki <https://github.com/redlickigrzegorz>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

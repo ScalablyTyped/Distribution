@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Id
-  extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.ByHash {
+  extends seleniumDashWebdriverLib.libByMod.ByHash {
   var id: java.lang.String
 }
 

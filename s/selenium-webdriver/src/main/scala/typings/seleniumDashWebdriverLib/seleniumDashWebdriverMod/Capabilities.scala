@@ -46,8 +46,8 @@ class Capabilities () extends CreateSessionCapabilities {
   /**
     * Sets the default action to take with an unexpected alert before returning
     * an error.
-    * @param {string} behavior The desired behavior; should be 'accept', 'dismiss',
-    *     or 'ignore'. Defaults to 'dismiss'.
+    * @param {string} behavior The desired behavior; should be 'accept',
+    *     'dismiss', or 'ignore'. Defaults to 'dismiss'.
     * @return {!Capabilities} A self reference.
     */
   def setAlertBehavior(behavior: java.lang.String): Capabilities = js.native
@@ -75,8 +75,8 @@ class Capabilities () extends CreateSessionCapabilities {
   def setProxy(proxy: ProxyConfig): Capabilities = js.native
   /**
     * Sets how elements should be scrolled into view for interaction.
-    * @param {number} behavior The desired scroll behavior: either 0 to align with
-    *     the top of the viewport or 1 to align with the bottom.
+    * @param {number} behavior The desired scroll behavior: either 0 to align
+    *     with the top of the viewport or 1 to align with the bottom.
     * @return {!Capabilities} A self reference.
     */
   def setScrollBehavior(behavior: scala.Double): Capabilities = js.native

@@ -1850,12 +1850,14 @@ trait Static extends js.Object {
     * Returns true if the specified object property is of the given type; false otherwise.
     */
   def propIs(`type`: js.Any, name: java.lang.String, obj: js.Any): scala.Boolean = js.native
+  def propOr[U](__ : Placeholder, p: java.lang.String, obj: U): js.Function1[/* val */ js.Any, _] = js.native
   def propOr[T](`val`: T): js.Function2[/* p */ java.lang.String, /* obj */ js.Any, _] = js.native
   def propOr[T](`val`: T, p: java.lang.String): js.Function1[/* obj */ js.Any, _] = js.native
   /**
     * If the given, non-null object has an own property with the specified name, returns the value of that property.
     * Otherwise returns the provided default value.
     */
+  def propOr[T, U](`val`: T, __ : Placeholder, obj: U): js.Function1[/* p */ java.lang.String, _] = js.native
   def propOr[T, U, V](`val`: T, p: java.lang.String, obj: U): V = js.native
   def propSatisfies[T, U](pred: js.Function1[/* val */ T, scala.Boolean]): ramdaLib.CurryNs.Curry[js.Function2[/* a */ java.lang.String, /* b */ U, scala.Boolean]] = js.native
   def propSatisfies[T, U](pred: js.Function1[/* val */ T, scala.Boolean], name: java.lang.String): js.Function1[/* obj */ U, scala.Boolean] = js.native

@@ -20,13 +20,13 @@ class HttpClient protected () extends js.Object {
   def this(serverUrl: java.lang.String, opt_agent: js.Any, opt_proxy: java.lang.String) = this()
   /**
     * Sends a request to the server. The client will automatically follow any
-    * redirects returned by the server, fulfilling the returned promise with the
-    * final response.
+    * redirects returned by the server, fulfilling the returned promise with
+    * the final response.
     *
     * @param {!HttpRequest} httpRequest The request to send.
-    * @return {!promise.Promise<HttpResponse>} A promise that will be fulfilled
+    * @return {!Promise<HttpResponse>} A promise that will be fulfilled
     *     with the server's response.
     */
-  def send(httpRequest: Request): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[Response] = js.native
+  def send(httpRequest: Request): js.Promise[Response] = js.native
 }
 

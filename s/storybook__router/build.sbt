@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__router"
-version := "5.0.6-9a5e85"
+version := "5.0.6-d71d56"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -22,9 +22,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "emotion__utils" % "0.11.1-255ee0",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-992596",
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-ee4549",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
-  "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20190214Z-c3cf18",
-  "org.scalablytyped" %%% "lodash_dot_mergewith" % "4.6-dt-20190214Z-f0154f",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
+  "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20190214Z-6b1c7f",
+  "org.scalablytyped" %%% "lodash_dot_mergewith" % "4.6-dt-20190214Z-b2ffcd",
   "org.scalablytyped" %%% "memoizerific" % "1.11.3-512dd8",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "object-assign" % "4.0.1-dt-20190322Z-d95386",
@@ -36,7 +36,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-348bcf",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "storybook__client-logger" % "5.0.6-c9af9b",
-  "org.scalablytyped" %%% "storybook__theming" % "5.0.6-88ee9f")
+  "org.scalablytyped" %%% "storybook__theming" % "5.0.6-0b777e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

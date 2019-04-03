@@ -19,6 +19,7 @@ trait Utils extends js.Object {
     * @param key First argument to Underscore object functions.
     **/
   def `_`[T](value: underscoreLib.underscoreMod.underscoreNs.Dictionary[T]): underscoreLib.underscoreMod.underscoreNs.Underscore[T] = js.native
+  def `_`[T](value: underscoreLib.underscoreMod.underscoreNs.List[T]): underscoreLib.underscoreMod.underscoreNs.Underscore[T] = js.native
   def asciiToHex(`val`: java.lang.String): java.lang.String = js.native
   def bytesToHex(`val`: js.Array[scala.Double]): java.lang.String = js.native
   def checkAddressChecksum(address: java.lang.String): scala.Boolean = js.native

@@ -15,8 +15,5 @@ class Response protected () extends js.Object {
     * @param {string} body The response body.
     */
   def this(status: scala.Double, headers: js.Object, body: java.lang.String) = this()
-  var body: java.lang.String = js.native
-  var headers: stdLib.Map[java.lang.String, java.lang.String] = js.native
-  var status: scala.Double = js.native
 }
 

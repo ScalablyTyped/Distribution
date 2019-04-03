@@ -19,6 +19,8 @@ trait Client extends js.Object {
     options: AddRemoteResourceOptions,
     callback: js.Function2[/* err */ stdLib.Error, /* data */ js.Object, scala.Unit]
   ): nodeLib.httpMod.ClientRequest = js.native
+  def atomicUpdate(doc: js.Object): nodeLib.httpMod.ClientRequest = js.native
+  def atomicUpdate(doc: js.Object, callback: js.Function2[/* err */ stdLib.Error, /* data */ js.Object, scala.Unit]): nodeLib.httpMod.ClientRequest = js.native
   def basicAuth(username: java.lang.String, password: java.lang.String): Client = js.native
   def commit(): nodeLib.httpMod.ClientRequest = js.native
   def commit(options: Options): nodeLib.httpMod.ClientRequest = js.native

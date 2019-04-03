@@ -15,7 +15,11 @@ trait IDatePickerProps extends js.Object {
   var itemStyle: js.UndefOr[js.Any] = js.undefined
   var locale: js.UndefOr[js.Any] = js.undefined
   var maxDate: js.UndefOr[js.Any] = js.undefined
+  var maxHour: js.UndefOr[scala.Double] = js.undefined
+  var maxMinute: js.UndefOr[scala.Double] = js.undefined
   var minDate: js.UndefOr[js.Any] = js.undefined
+  var minHour: js.UndefOr[scala.Double] = js.undefined
+  var minMinute: js.UndefOr[scala.Double] = js.undefined
   var minuteStep: js.UndefOr[scala.Double] = js.undefined
   var mode: js.UndefOr[java.lang.String] = js.undefined
   var onDateChange: js.UndefOr[js.Function1[/* date */ js.Any, scala.Unit]] = js.undefined
@@ -44,7 +48,11 @@ object IDatePickerProps {
     itemStyle: js.Any = null,
     locale: js.Any = null,
     maxDate: js.Any = null,
+    maxHour: scala.Int | scala.Double = null,
+    maxMinute: scala.Int | scala.Double = null,
     minDate: js.Any = null,
+    minHour: scala.Int | scala.Double = null,
+    minMinute: scala.Int | scala.Double = null,
     minuteStep: scala.Int | scala.Double = null,
     mode: java.lang.String = null,
     onDateChange: /* date */ js.Any => scala.Unit = null,
@@ -66,7 +74,11 @@ object IDatePickerProps {
     if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
+    if (maxHour != null) __obj.updateDynamic("maxHour")(maxHour.asInstanceOf[js.Any])
+    if (maxMinute != null) __obj.updateDynamic("maxMinute")(maxMinute.asInstanceOf[js.Any])
     if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    if (minHour != null) __obj.updateDynamic("minHour")(minHour.asInstanceOf[js.Any])
+    if (minMinute != null) __obj.updateDynamic("minMinute")(minMinute.asInstanceOf[js.Any])
     if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (onDateChange != null) __obj.updateDynamic("onDateChange")(js.Any.fromFunction1(onDateChange))

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typedoc"
-version := "0.14.2-6140e6"
+version := "0.14.2-95a5ed"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ce8e08",
   "org.scalablytyped" %%% "handlebars" % "4.1.1-069f77",
   "org.scalablytyped" %%% "highlight_dot_js" % "v9.12-dt-20190322Z-89b081",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "marked" % "0.6-dt-20190329Z-b908a7",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-e6c927",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",

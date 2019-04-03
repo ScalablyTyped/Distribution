@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__calendar"
-version := "0.55.0-927a3e"
+version := "0.55.0-498801"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,12 +17,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-shape" % "1.3-dt-20190212Z-a59bb2",
   "org.scalablytyped" %%% "d3-time" % "1.0-dt-20190212Z-d8b54d",
   "org.scalablytyped" %%% "d3-time-format" % "2.1-dt-20190212Z-ec0764",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
-  "org.scalablytyped" %%% "lodash_dot_isdate" % "4.0-dt-20190214Z-863cab",
-  "org.scalablytyped" %%% "lodash_dot_memoize" % "4.1-dt-20190214Z-a63ed0",
-  "org.scalablytyped" %%% "lodash_dot_range" % "3.2-dt-20190214Z-d7b7cb",
-  "org.scalablytyped" %%% "nivo__core" % "0.55.0-84e390",
-  "org.scalablytyped" %%% "nivo__legends" % "0.55.0-402da3",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
+  "org.scalablytyped" %%% "lodash_dot_isdate" % "4.0-dt-20190214Z-f5f1ae",
+  "org.scalablytyped" %%% "lodash_dot_memoize" % "4.1-dt-20190214Z-5a2d53",
+  "org.scalablytyped" %%% "lodash_dot_range" % "3.2-dt-20190214Z-78c6ca",
+  "org.scalablytyped" %%% "nivo__core" % "0.55.0-0e7631",
+  "org.scalablytyped" %%% "nivo__legends" % "0.55.0-4cf486",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
   "org.scalablytyped" %%% "react-measure" % "2.0-dt-20190225Z-3c2845",

@@ -103,6 +103,10 @@ class SurveyModel ()
     */
   var focusFirstQuestionAutomatic: scala.Boolean = js.native
   /**
+    * Set this property to false (default value is true) if you do not want to bring the focus to the first question that has error on the page.
+    */
+  var focusOnFirstError: scala.Boolean = js.native
+  /**
     * Set it to the one of the following constants if you want to go to the next page without pressing 'Next' button when all questions are anwered.
     * true - go next page and submit automatically
     * "autogonext" - go next page automatically but do not submit

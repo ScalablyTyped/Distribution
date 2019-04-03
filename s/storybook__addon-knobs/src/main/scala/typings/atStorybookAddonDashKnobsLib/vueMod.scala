@@ -50,14 +50,14 @@ object vueMod extends js.Object {
   ): scala.Double = js.native
   def `object`[T](name: java.lang.String, value: T): T = js.native
   def `object`[T](name: java.lang.String, value: T, groupId: java.lang.String): T = js.native
-  def radios[T](name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[T]): java.lang.String = js.native
-  def radios[T](name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[T], value: T): java.lang.String = js.native
+  def radios[T](name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[T]): T = js.native
+  def radios[T](name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[T], value: T): T = js.native
   def radios[T](
     name: java.lang.String,
     options: org.scalablytyped.runtime.StringDictionary[T],
     value: T,
     groupId: java.lang.String
-  ): java.lang.String = js.native
+  ): T = js.native
   def select[T /* <: stdLib.Exclude[
     js.UndefOr[java.lang.String | js.Array[java.lang.String] | scala.Double], 
     js.UndefOr[scala.Nothing]

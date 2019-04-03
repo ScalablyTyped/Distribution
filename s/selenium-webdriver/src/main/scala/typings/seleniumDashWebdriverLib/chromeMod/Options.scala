@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   */
-class Options () extends js.Object {
+class Options ()
+  extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities {
   /**
     * Add additional command line arguments to use when launching the Chrome
     * browser.  Each argument may be specified with or without the '--' prefix
@@ -57,14 +58,14 @@ class Options () extends js.Object {
   /**
     * Sets the package name of the Chrome or WebView app.
     *
-    * @param {?string} pkg The package to connect to, or `null` to disable Android
-    *     and switch back to using desktop Chrome.
+    * @param {?string} pkg The package to connect to, or `null` to disable
+    *     Android and switch back to using desktop Chrome.
     * @return {!Options} A self reference.
     */
   def androidPackage(pkg: java.lang.String): Options = js.native
   /**
-    * Sets the process name of the Activity hosting the WebView (as given by `ps`).
-    * If not specified, the process name is assumed to be the same as
+    * Sets the process name of the Activity hosting the WebView (as given by
+    * `ps`). If not specified, the process name is assumed to be the same as
     * {@link #androidPackage}.
     *
     * @param {string} processName The main activity name.
@@ -90,8 +91,8 @@ class Options () extends js.Object {
     */
   def detachDriver(detach: scala.Boolean): Options = js.native
   /**
-    * List of Chrome command line switches to exclude that ChromeDriver by default
-    * passes when starting Chrome.  Do not prefix switches with '--'.
+    * List of Chrome command line switches to exclude that ChromeDriver by
+    * default passes when starting Chrome.  Do not prefix switches with '--'.
     *
     * @param {...(string|!Array<string>)} var_args The switches to exclude.
     * @return {!Options} A self reference.
@@ -141,12 +142,6 @@ class Options () extends js.Object {
     */
   def setLocalState(state: js.Any): Options = js.native
   /**
-    * Sets the logging preferences for the new session.
-    * @param {!webdriver.logging.Preferences} prefs The logging preferences.
-    * @return {!Options} A self reference.
-    */
-  def setLoggingPrefs(prefs: seleniumDashWebdriverLib.seleniumDashWebdriverMod.loggingNs.Preferences): Options = js.native
-  /**
     * Configures Chrome to emulate a mobile device. For more information, refer
     * to the ChromeDriver project page on [mobile emulation][em]. Configuration
     * options include:
@@ -191,13 +186,13 @@ class Options () extends js.Object {
     * - `enableTimeline`: Whether or not to collect events from Timeline domain.
     *     Note: when tracing is enabled, Timeline domain is implicitly disabled,
     *     unless `enableTimeline` is explicitly set to true.
-    * - `tracingCategories`: A comma-separated string of Chrome tracing categories
-    *     for which trace events should be collected. An unspecified or empty
-    *     string disables tracing.
+    * - `tracingCategories`: A comma-separated string of Chrome tracing
+    * categories for which trace events should be collected. An unspecified or
+    * empty string disables tracing.
     * - `bufferUsageReportingInterval`: The requested number of milliseconds
     *     between DevTools trace buffer usage events. For example, if 1000, then
-    *     once per second, DevTools will report how full the trace buffer is. If a
-    *     report indicates the buffer usage is 100%, a warning will be issued.
+    *     once per second, DevTools will report how full the trace buffer is. If
+    * a report indicates the buffer usage is 100%, a warning will be issued.
     *
     * @param {{enableNetwork: boolean,
     *          enablePage: boolean,
@@ -209,12 +204,6 @@ class Options () extends js.Object {
     */
   def setPerfLoggingPrefs(prefs: IPerfLoggingPrefs): Options = js.native
   /**
-    * Sets the proxy settings for the new session.
-    * @param {webdriver.ProxyConfig} proxy The proxy configuration to use.
-    * @return {!Options} A self reference.
-    */
-  def setProxy(proxy: seleniumDashWebdriverLib.seleniumDashWebdriverMod.ProxyConfig): Options = js.native
-  /**
     * Sets the user preferences for Chrome's user profile. See the 'Preferences'
     * file in Chrome's user data directory for examples.
     * @param {!Object} prefs Dictionary of user preferences to use.
@@ -222,13 +211,14 @@ class Options () extends js.Object {
     */
   def setUserPreferences(prefs: js.Any): Options = js.native
   /**
-    * Converts this options instance to a {@link webdriver.Capabilities} object.
-    * @param {webdriver.Capabilities=} opt_capabilities The capabilities to merge
-    *     these options into, if any.
-    * @return {!webdriver.Capabilities} The capabilities.
+    * Sets the initial window size.
+    *
+    * @param {{width: number, height: number}} size The desired window size.
+    * @return {!Options} A self reference.
+    * @throws {TypeError} if width or height is unspecified, not a number, or
+    *     less than or equal to 0.
     */
-  def toCapabilities(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities = js.native
-  def toCapabilities(opt_capabilities: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities): seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities = js.native
+  def windowSize(size: seleniumDashWebdriverLib.Anon_Height): Options = js.native
 }
 
 /* static members */

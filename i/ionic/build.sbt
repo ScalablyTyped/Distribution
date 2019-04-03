@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic"
-version := "4.12.0-67e200"
+version := "4.12.0-5837c3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -20,17 +20,17 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-a8786c",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ce8e08",
   "org.scalablytyped" %%% "inquirer" % "6.x-dt-20190322Z-f1ad93",
-  "org.scalablytyped" %%% "ionic__cli-framework" % "1.7.0-793afc",
+  "org.scalablytyped" %%% "ionic__cli-framework" % "1.7.0-f5f32e",
   "org.scalablytyped" %%% "ionic__discover" % "1.0.13-60f098",
   "org.scalablytyped" %%% "ionic__utils-array" % "0.0.1-d2e142",
   "org.scalablytyped" %%% "ionic__utils-fs" % "1.2.0-a89099",
   "org.scalablytyped" %%% "ionic__utils-network" % "0.0.8-868935",
   "org.scalablytyped" %%% "ionic__utils-object" % "0.0.1-a4bb6f",
-  "org.scalablytyped" %%% "ionic__utils-process" % "0.1.0-dbf088",
+  "org.scalablytyped" %%% "ionic__utils-process" % "0.1.0-753fa0",
   "org.scalablytyped" %%% "ionic__utils-stream" % "0.0.1-8e2f8a",
-  "org.scalablytyped" %%% "ionic__utils-subprocess" % "0.1.0-8dc5d9",
+  "org.scalablytyped" %%% "ionic__utils-subprocess" % "0.1.0-b90a67",
   "org.scalablytyped" %%% "ionic__utils-terminal" % "0.0.1-afccfe",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "log-update" % "3.2.0-ee019f",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-e6c927",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",

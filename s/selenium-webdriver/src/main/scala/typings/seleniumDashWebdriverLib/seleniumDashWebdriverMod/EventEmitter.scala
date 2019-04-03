@@ -17,7 +17,8 @@ class EventEmitter () extends js.Object {
     * @param {string} type The type of event to listen for.
     * @param {!Function} fn The function to invoke when the event is fired.
     * @param {Object=} opt_self The object in whose scope to invoke the listener.
-    * @param {boolean=} opt_oneshot Whether the listener should b (e removed after
+    * @param {boolean=} opt_oneshot Whether the listener should b (e removed
+    *     after
     *    the first event is fired.
     * @return {!EventEmitter} A self reference.
     * @private
@@ -44,7 +45,8 @@ class EventEmitter () extends js.Object {
     * An alias for {@code #addListener()}.
     * @param {string} type The type of event to listen for.
     * @param {!Function} fn The function to invoke when the event is fired.
-    * @param {Object=} opt_scope The object in whose scope to invoke the listener.
+    * @param {Object=} opt_scope The object in whose scope to invoke the
+    *     listener.
     * @return {!EventEmitter} A self reference.
     */
   def on(`type`: java.lang.String, fn: js.Function): EventEmitter = js.native
@@ -54,7 +56,8 @@ class EventEmitter () extends js.Object {
     * event is emitted, after which it will be removed.
     * @param {string} type The type of event to listen for.
     * @param {!Function} fn The function to invoke when the event is fired.
-    * @param {Object=} opt_scope The object in whose scope to invoke the listener.
+    * @param {Object=} opt_scope The object in whose scope to invoke the
+    *     listener.
     * @return {!EventEmitter} A self reference.
     */
   def once(`type`: java.lang.String, fn: js.Any): EventEmitter = js.native

@@ -33,6 +33,7 @@ trait ReactCropProps extends js.Object {
   var onImageLoaded: js.UndefOr[
     js.Function2[/* target */ stdLib.HTMLImageElement, /* pixelCrop */ PixelCrop, scala.Unit]
   ] = js.undefined
+  var renderSelectionAddon: js.UndefOr[js.Function1[/* state */ js.Any, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   var src: java.lang.String
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   def onChange(crop: Crop, pixelCrop: PixelCrop): scala.Unit
@@ -61,6 +62,7 @@ object ReactCropProps {
     onDragStart: () => scala.Unit = null,
     onImageError: /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[stdLib.HTMLImageElement, reactLib.Event] => scala.Unit = null,
     onImageLoaded: (/* target */ stdLib.HTMLImageElement, /* pixelCrop */ PixelCrop) => scala.Unit = null,
+    renderSelectionAddon: /* state */ js.Any => reactLib.reactMod.ReactNs.ReactNode = null,
     style: reactLib.reactMod.ReactNs.CSSProperties = null
   ): ReactCropProps = {
     val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange), src = src)
@@ -82,6 +84,7 @@ object ReactCropProps {
     if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction0(onDragStart))
     if (onImageError != null) __obj.updateDynamic("onImageError")(js.Any.fromFunction1(onImageError))
     if (onImageLoaded != null) __obj.updateDynamic("onImageLoaded")(js.Any.fromFunction2(onImageLoaded))
+    if (renderSelectionAddon != null) __obj.updateDynamic("renderSelectionAddon")(js.Any.fromFunction1(renderSelectionAddon))
     if (style != null) __obj.updateDynamic("style")(style)
     __obj.asInstanceOf[ReactCropProps]
   }

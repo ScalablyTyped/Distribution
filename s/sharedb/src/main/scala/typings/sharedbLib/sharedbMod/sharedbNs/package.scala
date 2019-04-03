@@ -24,9 +24,4 @@ package object sharedbNs {
   type StringDeleteOp = sharedbLib.libSharedbMod.StringDeleteOp
   type StringInsertOp = sharedbLib.libSharedbMod.StringInsertOp
   type SubtypeOp = sharedbLib.libSharedbMod.SubtypeOp
-  type UseCallback = js.Function2[
-    /* request */ sharedbLib.Anon_Action, 
-    /* callback */ js.Function0[scala.Unit], 
-    scala.Unit
-  ]
 }

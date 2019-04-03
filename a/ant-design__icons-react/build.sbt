@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ant-design__icons-react"
-version := "1.1.2-89291a"
+version := "1.1.4-89291a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

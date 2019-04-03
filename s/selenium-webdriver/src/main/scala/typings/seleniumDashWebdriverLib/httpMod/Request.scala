@@ -15,9 +15,5 @@ class Request protected () extends js.Object {
     */
   def this(method: java.lang.String, path: java.lang.String) = this()
   def this(method: java.lang.String, path: java.lang.String, opt_data: js.Object) = this()
-  var data: js.Object = js.native
-  var headers: stdLib.Map[java.lang.String, java.lang.String] = js.native
-  var method: java.lang.String = js.native
-  var path: java.lang.String = js.native
 }
 

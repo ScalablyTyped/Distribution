@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yog2-kernel"
-version := "1.9-dt-20190312Z-68f4ab"
+version := "1.9-dt-20190312Z-ab31a5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-53c35c",
   "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-33b861",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-c31b2e",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "node-ral" % "0.18-dt-20181121Z-8b6c8e",

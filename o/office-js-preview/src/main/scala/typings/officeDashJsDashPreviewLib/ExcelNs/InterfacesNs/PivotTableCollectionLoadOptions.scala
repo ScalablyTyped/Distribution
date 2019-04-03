@@ -16,7 +16,7 @@ trait PivotTableCollectionLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: True if the PivotTable should use custom lists when sorting.
+    * For EACH ITEM in the collection: Specifies whether the PivotTable allows values in the data body to be edited by the user.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -45,7 +45,7 @@ trait PivotTableCollectionLoadOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: True if the PivotTable should use custom lists when sorting.
+    * For EACH ITEM in the collection: Specifies whether the PivotTable uses custom lists when sorting.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

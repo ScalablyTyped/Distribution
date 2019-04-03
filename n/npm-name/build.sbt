@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "npm-name"
-version := "5.3.0-c40110"
+version := "5.3.0-67d027"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "got" % "9.4-dt-20190312Z-1ed68d",
   "org.scalablytyped" %%% "is-scoped" % "2.0.0-c02400",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
-  "org.scalablytyped" %%% "lodash_dot_zip" % "4.2-dt-20190214Z-efb843",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
+  "org.scalablytyped" %%% "lodash_dot_zip" % "4.2-dt-20190214Z-e42fa8",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "registry-auth-token" % "3.3-dt-20180723Z-38b89f",
   "org.scalablytyped" %%% "scoped-regex" % "2.0.0-6d4cdc",

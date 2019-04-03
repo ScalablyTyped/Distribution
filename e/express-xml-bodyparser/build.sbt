@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-xml-bodyparser"
-version := "0.3-dt-20180525Z-c08009"
+version := "0.3-dt-20180525Z-b564c8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-623d43",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-201a01",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "xml2js" % "0.4-dt-20180606Z-a4a1ed")
+  "org.scalablytyped" %%% "xml2js" % "0.4-dt-20190402Z-f87566")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

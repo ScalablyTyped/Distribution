@@ -14,9 +14,9 @@ trait IWebDriverOptionsCookie extends js.Object {
   /**
     * When the cookie expires.
     *
-    * When {@linkplain Options#addCookie() adding a cookie}, this may be specified
-    * in _seconds_ since Unix epoch (January 1, 1970). The expiry will default to
-    * 20 years in the future if omitted.
+    * When {@linkplain Options#addCookie() adding a cookie}, this may be
+    * specified in _seconds_ since Unix epoch (January 1, 1970). The expiry will
+    * default to 20 years in the future if omitted.
     *
     * The expiry is always returned in seconds since epoch when
     * {@linkplain Options#getCookies() retrieving cookies} from the browser.

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-little-router"
-version := "15.1.2-f0c3bd"
+version := "15.1.2-2e182d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "decode-uri-component" % "0.2-dt-20181208Z-c525f1",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-992596",
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190304Z-ee4549",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
-  "org.scalablytyped" %%% "lodash_dot_assign" % "4.2-dt-20190214Z-c21cf8",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
+  "org.scalablytyped" %%% "lodash_dot_assign" % "4.2-dt-20190214Z-8e5992",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
   "org.scalablytyped" %%% "query-string" % "6.4.2-851dd3",

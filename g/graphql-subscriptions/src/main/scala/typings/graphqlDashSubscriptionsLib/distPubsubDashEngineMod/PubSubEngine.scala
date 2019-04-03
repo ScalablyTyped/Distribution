@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("graphql-subscriptions/dist/pubsub-engine", "PubSubEngine")
 @js.native
-trait PubSubEngine extends js.Object {
+abstract class PubSubEngine () extends js.Object {
   def asyncIterator[T](triggers: java.lang.String): stdLib.AsyncIterator[T] = js.native
   def asyncIterator[T](triggers: js.Array[java.lang.String]): stdLib.AsyncIterator[T] = js.native
   def publish(triggerName: java.lang.String, payload: js.Any): js.Promise[scala.Unit] = js.native

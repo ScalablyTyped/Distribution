@@ -44,12 +44,12 @@ trait ProtractorHttpMock extends js.Object {
     mocks: js.Array[
       protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.AllRequests[T1, T2]
     ]
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
     * Returns a promise that will be resolved with a true boolean
     * when all matched HTTP requests are cleared.
     */
-  def clearRequests(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] = js.native
+  def clearRequests(): js.Promise[scala.Boolean] = js.native
   /**
     * Remove mocks during test execution.
     * Returns a promise that will be resolved with a true boolean
@@ -61,12 +61,12 @@ trait ProtractorHttpMock extends js.Object {
     mocks: js.Array[
       protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.AllRequests[T1, T2]
     ]
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
     * Returns a promise that will be resolved with an array of
     * all matched HTTP requests.
     */
-  def requestsMade(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[ReceivedRequest]] = js.native
+  def requestsMade(): js.Promise[js.Array[ReceivedRequest]] = js.native
   /**
     * Clean up.
     * Typically done in the afterEach call to ensure the teardown

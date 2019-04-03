@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-sdk"
-version := "2.433.0-288aa3"
+version := "2.434.0-750186"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "sax" % "1.x-dt-20190322Z-d98f7b",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-6db83f",
-  "org.scalablytyped" %%% "xml2js" % "0.4-dt-20180606Z-a4a1ed")
+  "org.scalablytyped" %%% "xml2js" % "0.4-dt-20190402Z-f87566")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

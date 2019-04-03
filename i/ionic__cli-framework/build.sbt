@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic__cli-framework"
-version := "1.7.0-793afc"
+version := "1.7.0-f5f32e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -20,11 +20,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ionic__utils-array" % "0.0.1-d2e142",
   "org.scalablytyped" %%% "ionic__utils-fs" % "1.2.0-a89099",
   "org.scalablytyped" %%% "ionic__utils-object" % "0.0.1-a4bb6f",
-  "org.scalablytyped" %%% "ionic__utils-process" % "0.1.0-dbf088",
+  "org.scalablytyped" %%% "ionic__utils-process" % "0.1.0-753fa0",
   "org.scalablytyped" %%% "ionic__utils-stream" % "0.0.1-8e2f8a",
-  "org.scalablytyped" %%% "ionic__utils-subprocess" % "0.1.0-8dc5d9",
+  "org.scalablytyped" %%% "ionic__utils-subprocess" % "0.1.0-b90a67",
   "org.scalablytyped" %%% "ionic__utils-terminal" % "0.0.1-afccfe",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "log-update" % "3.2.0-ee019f",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-e6c927",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",

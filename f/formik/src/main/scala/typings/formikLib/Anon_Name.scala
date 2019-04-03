@@ -16,6 +16,6 @@ trait Anon_Name extends js.Object {
   def onBlur(e: reactLib.reactMod.ReactNs.FocusEvent[_]): scala.Unit = js.native
   def onBlur[T](fieldOrEvent: T): scala.Unit | (js.Function1[/* e */ js.Any, scala.Unit]) = js.native
   def onChange(e: reactLib.reactMod.ReactNs.ChangeEvent[_]): scala.Unit = js.native
-  def onChange[T](field: T): (js.Function1[/* e */ java.lang.String | reactLib.reactMod.ReactNs.ChangeEvent[_], scala.Unit]) | scala.Unit = js.native
+  def onChange[T](field: T): (js.Function1[/* e */ js.Any | reactLib.reactMod.ReactNs.ChangeEvent[_], scala.Unit]) | scala.Unit = js.native
 }
 

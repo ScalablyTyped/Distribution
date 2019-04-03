@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "builder-util"
-version := "9.7.0-b70c50"
+version := "9.7.0-008ed4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-a8786c",
   "org.scalablytyped" %%% "fs-extra-p" % "7.0.1-f4853c",
   "org.scalablytyped" %%% "is-ci" % "1.1-dt-20180416Z-9b420a",
-  "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-bb4a1b",
+  "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190402Z-168e26",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "sax" % "1.x-dt-20190322Z-d98f7b",
   "org.scalablytyped" %%% "source-map-support" % "0.5-dt-20190224Z-1843b4",

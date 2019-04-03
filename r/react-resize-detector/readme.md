@@ -1,5 +1,5 @@
 ```
-// Type definitions for react-resize-detector 3.1
+// Type definitions for react-resize-detector 4.0
 // Project: https://github.com/maslianok/react-resize-detector
 // Definitions by: Matthew James <https://github.com/matthew-matvei>
 //                 James Greenleaf <https://github.com/aMoniker>

@@ -33,6 +33,5 @@ class ServiceBuilder ()
     * @see Binary#locate()
     */
   def setFirefoxBinary(binary: java.lang.String): this.type = js.native
-  def setFirefoxBinary(binary: Binary): this.type = js.native
 }
 

@@ -29,6 +29,15 @@ object reactDashWindowLibStrings {
   @js.native
   sealed trait horizontal
     extends reactDashWindowLib.reactDashWindowMod.Direction
+       with reactDashWindowLib.reactDashWindowMod.Layout
+  
+  @js.native
+  sealed trait ltr
+    extends reactDashWindowLib.reactDashWindowMod.CSSDirection
+  
+  @js.native
+  sealed trait rtl
+    extends reactDashWindowLib.reactDashWindowMod.CSSDirection
   
   @js.native
   sealed trait start
@@ -37,6 +46,7 @@ object reactDashWindowLibStrings {
   @js.native
   sealed trait vertical
     extends reactDashWindowLib.reactDashWindowMod.Direction
+       with reactDashWindowLib.reactDashWindowMod.Layout
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
@@ -50,6 +60,10 @@ object reactDashWindowLibStrings {
   def forward: forward = "forward".asInstanceOf[forward]
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
+  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
+  def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   @scala.inline

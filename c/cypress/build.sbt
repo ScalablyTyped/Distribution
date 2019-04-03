@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress"
-version := "3.2.0-b15cfd"
+version := "3.2.0-d79a70"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
   "org.scalablytyped" %%% "check-more-types" % "2.24.0-965612",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
-  "org.scalablytyped" %%% "commander" % "2.19.0-4db880",
+  "org.scalablytyped" %%% "commander" % "2.20.0-8f0f6f",
   "org.scalablytyped" %%% "common-tags" % "1.8-dt-20181205Z-1fedc3",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
@@ -26,13 +26,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "is-installed-globally" % "0.1-dt-20181212Z-285294",
   "org.scalablytyped" %%% "lazy-ass" % "1.6.0-d61570",
   "org.scalablytyped" %%% "listr" % "0.13-dt-20180306Z-1c4bd2",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "log-symbols" % "2.0-dt-20180214Z-ade3c0",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-e6c927",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",
   "org.scalablytyped" %%% "moment" % "2.24.0-da0e25",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "ramda" % "0.26-dt-20190330Z-f40bca",
+  "org.scalablytyped" %%% "ramda" % "0.26-dt-20190330Z-26caa6",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-ca6c55",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-1b70da",

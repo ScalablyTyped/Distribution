@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ora"
-version := "3.2.0-5ddc2b"
+version := "3.3.1-ac3c20"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

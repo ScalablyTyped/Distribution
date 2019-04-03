@@ -33,13 +33,12 @@ class TargetLocator protected () extends js.Object {
     */
   def alert(): AlertPromise = js.native
   /**
-    * Schedules a command to switch focus of all future commands to the first frame
-    * on the page.
-    * @return {!promise.Promise} A promise that will be resolved when the
+    * Schedules a command to switch focus of all future commands to the first
+    * frame on the page.
+    * @return {!Promise} A promise that will be resolved when the
     *     driver has changed focus to the default content.
     */
-  def defaultContent(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
-  def frame(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def defaultContent(): js.Promise[scala.Unit] = js.native
   /**
     * Schedules a command to switch the focus of all future commands to another
     * frame on the page. The target frame may be specified as one of the
@@ -56,11 +55,11 @@ class TargetLocator protected () extends js.Object {
     * rejected with a {@linkplain error.NoSuchFrameError}.
     *
     * @param {(number|WebElement|null)} id The frame locator.
-    * @return {!promise.Promise<void>} A promise that will be resolved
+    * @return {!Promise<void>} A promise that will be resolved
     *     when the driver has changed focus to the specified frame.
     */
-  def frame(nameOrIndex: scala.Double): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
-  def frame(nameOrIndex: WebElement): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def frame(nameOrIndex: scala.Double): js.Promise[scala.Unit] = js.native
+  def frame(nameOrIndex: WebElement): js.Promise[scala.Unit] = js.native
   /**
     * Schedules a command to switch the focus of all future commands to another
     * window. Windows may be specified by their {@code window.name} attribute or
@@ -71,9 +70,9 @@ class TargetLocator protected () extends js.Object {
     *
     * @param {string} nameOrHandle The name or window handle of the window to
     *     switch focus to.
-    * @return {!promise.Promise<void>} A promise that will be resolved
+    * @return {!Promise<void>} A promise that will be resolved
     *     when the driver has changed focus to the specified window.
     */
-  def window(nameOrHandle: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def window(nameOrHandle: java.lang.String): js.Promise[scala.Unit] = js.native
 }
 

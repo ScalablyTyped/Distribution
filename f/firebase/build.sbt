@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase"
-version := "5.9.2-603095"
+version := "5.9.2-556ccc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__auth-types" % "0.5.5-78bb60",
   "org.scalablytyped" %%% "firebase__database" % "0.3.16-44fdaa",
   "org.scalablytyped" %%% "firebase__database-types" % "0.3.8-ecbfa3",
-  "org.scalablytyped" %%% "firebase__firestore" % "1.1.2-edd1ea",
+  "org.scalablytyped" %%% "firebase__firestore" % "1.1.2-9bee36",
   "org.scalablytyped" %%% "firebase__firestore-types" % "1.1.1-aa096a",
   "org.scalablytyped" %%% "firebase__functions" % "0.4.3-aa54ef",
   "org.scalablytyped" %%% "firebase__functions-types" % "0.3.2-f7ef9b",
@@ -24,11 +24,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__storage" % "0.2.12-0e096a",
   "org.scalablytyped" %%% "firebase__storage-types" % "0.2.8-e2beba",
   "org.scalablytyped" %%% "firebase__util" % "0.2.11-c3b119",
-  "org.scalablytyped" %%% "grpc" % "1.19.0-caa195",
+  "org.scalablytyped" %%% "grpc" % "1.19.0-f64cd7",
   "org.scalablytyped" %%% "isomorphic-fetch" % "0.0-dt-20190212Z-80d5e0",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
-  "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20190214Z-31acdf",
-  "org.scalablytyped" %%% "lodash_dot_clone" % "4.5-dt-20190214Z-3a5aec",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
+  "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20190214Z-01e943",
+  "org.scalablytyped" %%% "lodash_dot_clone" % "4.5-dt-20190214Z-4f4f78",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20190322Z-418504",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "promise-polyfill" % "6.0-dt-20190312Z-6cb842",

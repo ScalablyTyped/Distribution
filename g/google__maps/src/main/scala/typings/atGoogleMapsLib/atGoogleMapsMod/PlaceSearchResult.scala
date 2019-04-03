@@ -93,7 +93,7 @@ trait PlaceSearchResult extends js.Object {
     * contains a feature name of a nearby location. Often this feature refers to a street or neighborhood within the given results.
     * The `vicinity` property is only returned for a Nearby Search.
     */
-  var vicinity: scala.Double
+  var vicinity: js.UndefOr[java.lang.String] = js.undefined
 }
 
 object PlaceSearchResult {
@@ -113,10 +113,10 @@ object PlaceSearchResult {
     rating: scala.Double,
     scope: PlaceIdScope,
     types: js.Array[PlaceType1 | PlaceType2],
-    vicinity: scala.Double
+    vicinity: java.lang.String = null
   ): PlaceSearchResult = {
-    val __obj = js.Dynamic.literal(alt_ids = alt_ids, formatted_address = formatted_address, geometry = geometry, icon = icon, name = name, opening_hours = opening_hours, permanently_closed = permanently_closed, photos = photos, place_id = place_id, plus_code = plus_code, price_level = price_level, rating = rating, scope = scope, types = types, vicinity = vicinity)
-  
+    val __obj = js.Dynamic.literal(alt_ids = alt_ids, formatted_address = formatted_address, geometry = geometry, icon = icon, name = name, opening_hours = opening_hours, permanently_closed = permanently_closed, photos = photos, place_id = place_id, plus_code = plus_code, price_level = price_level, rating = rating, scope = scope, types = types)
+    if (vicinity != null) __obj.updateDynamic("vicinity")(vicinity)
     __obj.asInstanceOf[PlaceSearchResult]
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_PartialLinkText
-  extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.ByHash {
+  extends seleniumDashWebdriverLib.libByMod.ByHash {
   var partialLinkText: java.lang.String
 }
 

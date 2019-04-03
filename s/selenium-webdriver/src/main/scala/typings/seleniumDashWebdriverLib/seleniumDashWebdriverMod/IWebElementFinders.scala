@@ -53,17 +53,17 @@ trait IWebElementFinders extends js.Object {
     *
     * @param {!(Locator|By.Hash|Function)} locator The
     *     locator strategy to use when searching for the elements.
-    * @return {!promise.Promise.<!Array.<!WebElement>>} A
+    * @return {!Promise.<!Array.<!WebElement>>} A
     *     promise that will resolve to an array of WebElements.
     */
-  def findElements(locator: Locator): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[WebElement]]
+  def findElements(locator: Locator): js.Promise[js.Array[WebElement]]
 }
 
 object IWebElementFinders {
   @scala.inline
   def apply(
     findElement: Locator => WebElementPromise,
-    findElements: Locator => seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[WebElement]]
+    findElements: Locator => js.Promise[js.Array[WebElement]]
   ): IWebElementFinders = {
     val __obj = js.Dynamic.literal(findElement = js.Any.fromFunction1(findElement), findElements = js.Any.fromFunction1(findElements))
   

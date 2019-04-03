@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "schwifty"
-version := "4.0-dt-20190314Z-649973"
+version := "4.0-dt-20190314Z-2094ca"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-6773cd",
   "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
-  "org.scalablytyped" %%% "commander" % "2.19.0-4db880",
+  "org.scalablytyped" %%% "commander" % "2.20.0-8f0f6f",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-42ef87",
@@ -24,15 +24,15 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "interpret" % "1.1-dt-20190212Z-dcb20e",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-f14200",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190212Z-86a92a",
-  "org.scalablytyped" %%% "knex" % "0.16.3-445c67",
+  "org.scalablytyped" %%% "knex" % "0.16.3-b3458c",
   "org.scalablytyped" %%% "liftoff" % "2.5-dt-20181206Z-4f5b6f",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20190322Z-ea22a6",
   "org.scalablytyped" %%% "mimos" % "3.0-dt-20190322Z-dedbe7",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",
   "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-6520aa",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "objection" % "1.6.6-0e094b",
+  "org.scalablytyped" %%% "objection" % "1.6.7-5c29d8",
   "org.scalablytyped" %%% "pg-connection-string" % "2.0.0-2a8abc",
   "org.scalablytyped" %%% "podium" % "1.0-dt-20190322Z-e48ffc",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-63baaa",

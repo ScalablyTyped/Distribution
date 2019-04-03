@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("selenium-webdriver/ie", "Options")
 @js.native
-class Options () extends js.Object {
+class Options ()
+  extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities {
   /**
     * Specifies command-line switches to use when launching Internet Explorer.
     * This is only valid when used with {@link #forceCreateProcessApi}.
@@ -45,10 +46,10 @@ class Options () extends js.Object {
     */
   def enablePersistentHover(enable: scala.Boolean): Options = js.native
   /**
-    * Configures whether to clear the cache, cookies, history, and saved form data
-    * before starting the browser. _Using this capability will clear session data
-    * for all running instances of Internet Explorer, including those started
-    * manually._
+    * Configures whether to clear the cache, cookies, history, and saved form
+    * data before starting the browser. _Using this capability will clear session
+    * data for all running instances of Internet Explorer, including those
+    * started manually._
     *
     * @param {boolean} cleanSession Whether to clear all session data on startup.
     * @return {!Options} A self reference.
@@ -68,12 +69,14 @@ class Options () extends js.Object {
     * Indicates whether to skip the check that the browser's zoom level is set to
     * 100%.
     *
-    * @param {boolean} ignore Whether to ignore the browser's zoom level settings.
+    * @param {boolean} ignore Whether to ignore the browser's zoom level
+    *     settings.
     * @return {!Options} A self reference.
     */
   def ignoreZoomSetting(ignore: scala.Boolean): Options = js.native
   /**
-    * Sets the initial URL loaded when IE starts. This is intended to be used with
+    * Sets the initial URL loaded when IE starts. This is intended to be used
+    * with
     * {@link #ignoreProtectedModeSettings} to allow the user to initialize IE in
     * the proper Protected Mode zone. Setting this option may cause browser
     * instability or flaky and unresponsive code. Only 'best effort' support is
@@ -86,8 +89,8 @@ class Options () extends js.Object {
   /**
     * Whether to disable the protected mode settings check when the session is
     * created. Disbling this setting may lead to significant instability as the
-    * browser may become unresponsive/hang. Only 'best effort' support is provided
-    * when using this capability.
+    * browser may become unresponsive/hang. Only 'best effort' support is
+    * provided when using this capability.
     *
     * For more information, refer to the IEDriver's
     * [required system configuration](http://goo.gl/eH0Yi3).
@@ -131,26 +134,11 @@ class Options () extends js.Object {
     */
   def setLogLevel(level: seleniumDashWebdriverLib.seleniumDashWebdriverMod.loggingNs.Level): Options = js.native
   /**
-    * Sets the proxy settings for the new session.
-    * @param {capabilities.ProxyConfig} proxy The proxy configuration to use.
-    * @return {!Options} A self reference.
-    */
-  def setProxy(proxy: seleniumDashWebdriverLib.seleniumDashWebdriverMod.ProxyConfig): Options = js.native
-  /**
     * Sets whether the driver should start in silent mode.
     * @param {boolean} silent Whether to run in silent mode.
     * @return {!Options} A self reference.
     */
   def silent(silent: scala.Boolean): Options = js.native
-  /**
-    * Converts this options instance to a {@link capabilities.Capabilities}
-    * object.
-    * @param {capabilities.Capabilities=} opt_capabilities The capabilities to
-    *     merge these options into, if any.
-    * @return {!capabilities.Capabilities} The capabilities.
-    */
-  def toCapabilities(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities = js.native
-  def toCapabilities(opt_capabilities: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities): seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities = js.native
   /**
     * Configures whether proxies should be configured on a per-process basis. If
     * not set, setting a {@linkplain #setProxy proxy} will configure the system
@@ -160,18 +148,5 @@ class Options () extends js.Object {
     * @return {!Options} A self reference.
     */
   def usePerProcessProxy(enable: scala.Boolean): Options = js.native
-}
-
-/* static members */
-@JSImport("selenium-webdriver/ie", "Options")
-@js.native
-object Options extends js.Object {
-  /**
-    * Extracts the IEDriver specific options from the given capabilities
-    * object.
-    * @param {!capabilities.Capabilities} caps The capabilities object.
-    * @return {!Options} The IEDriver options.
-    */
-  def fromCapabilities(caps: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities): seleniumDashWebdriverLib.ieMod.Options = js.native
 }
 

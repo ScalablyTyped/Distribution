@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "meteor"
-version := "1.4-dt-20190401Z-94153f"
+version := "1.4-dt-20190401Z-46c33c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "underscore" % "1.8-dt-20190322Z-2c9e42")
+  "org.scalablytyped" %%% "underscore" % "1.8-dt-20190326Z-a3148e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

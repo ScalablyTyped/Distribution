@@ -45,7 +45,7 @@ package object libCjsInterfacesClassApiMod {
   {[ P in keyof DecorationTargetProps ]: DecorationTargetProps[P] | InjectedProps[P]}
     */ reactDashDndLib.reactDashDndLibStrings.Matching with js.Any
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
-  type Shared[InjectedProps, DecorationTargetProps /* <: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-dnd.react-dnd/lib/cjs/interfaces/classApi.Shared<InjectedProps, DecorationTargetProps> */ js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  type Shared[InjectedProps, DecorationTargetProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? DecorationTargetProps[P]}
     */ reactDashDndLib.reactDashDndLibStrings.Shared with DecorationTargetProps
 }

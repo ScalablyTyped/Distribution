@@ -8,19 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("selenium-webdriver", "WebDriver")
 @js.native
 class WebDriver protected () extends js.Object {
+  def this(session: js.Promise[Session], executor: Executor) = this()
   // region Constructors
   /**
-    * @param {!(Session|promise.Promise<!Session>)} session Either a
+    * @param {!(Session|Promise<!Session>)} session Either a
     *     known session or a promise that will be resolved to a session.
     * @param {!command.Executor} executor The executor to use when sending
     *     commands to the browser.
-    * @param {promise.ControlFlow=} opt_flow The flow to
-    *     schedule commands through. Defaults to the active flow object.
     */
   def this(session: Session, executor: Executor) = this()
-  def this(session: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[Session], executor: Executor) = this()
-  def this(session: Session, executor: Executor, opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow) = this()
-  def this(session: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[Session], executor: Executor, opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow) = this()
   /**
     * Creates a new action sequence using this driver. The sequence will not be
     * scheduled for execution until {@link actions.ActionSequence#perform} is
@@ -34,64 +30,50 @@ class WebDriver protected () extends js.Object {
     *
     * @return {!actions.ActionSequence} A new action sequence for this instance.
     */
-  def actions(): ActionSequence = js.native
-  /**
-    * Schedules a command to execute a custom function.
-    * @param {function(...): (T|promise.Promise.<T>)} fn The function to
-    *     execute.
-    * @param {Object=} opt_scope The object in whose scope to execute the function.
-    * @param {...*} var_args Any arguments to pass to the function.
-    * @return {!promise.Promise.<T>} A promise that will be resolved'
-    *     with the function's result.
-    * @template T
-    */
-  def call[T](
-    fn: js.Function1[
-      /* repeated */ js.Any, 
-      T | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T]
-    ]
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def call[T](
-    fn: js.Function1[
-      /* repeated */ js.Any, 
-      T | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T]
-    ],
-    opt_scope: js.Any,
-    var_args: js.Any*
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
+  def actions(): seleniumDashWebdriverLib.libInputMod.Actions = js.native
+  def actions(options: seleniumDashWebdriverLib.Anon_Async): seleniumDashWebdriverLib.libInputMod.Actions = js.native
+  def actions(options: seleniumDashWebdriverLib.Anon_AsyncBoolean): seleniumDashWebdriverLib.libInputMod.Actions = js.native
+  def actions(options: seleniumDashWebdriverLib.Anon_Bridge): seleniumDashWebdriverLib.libInputMod.Actions = js.native
   /**
     * Schedules a command to close the current window.
-    * @return {!promise.Promise.<void>} A promise that will be resolved
+    * @return {!Promise.<void>} A promise that will be resolved
     *     when this command has completed.
     */
-  def close(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def close(): js.Promise[scala.Unit] = js.native
   // endregion
   // region Methods
   /**
-    * @return {!promise.ControlFlow} The control flow used by this
-    *     instance.
+    * Schedules a {@link command.Command} to be executed by this driver's
+    * {@link command.Executor}.
+    *
+    * @param {!command.Command} command The command to schedule.
+    * @param {string} description A description of the command for debugging.
+    * @return {!Promise<T>} A promise that will be resolved
+    *     with the command result.
+    * @template T
     */
-  def controlFlow(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow = js.native
+  def execute[T](command: seleniumDashWebdriverLib.libCommandMod.Command): js.Promise[T] = js.native
+  def execute[T](command: seleniumDashWebdriverLib.libCommandMod.Command, description: java.lang.String): js.Promise[T] = js.native
   /**
-    * Schedules a command to execute asynchronous JavaScript in the context of the
-    * currently selected frame or window. The script fragment will be executed as
-    * the body of an anonymous function. If the script is provided as a function
-    * object, that function will be converted to a string for injection into the
-    * target window.
+    * Schedules a command to execute asynchronous JavaScript in the context of
+    * the currently selected frame or window. The script fragment will be
+    * executed as the body of an anonymous function. If the script is provided as
+    * a function object, that function will be converted to a string for
+    * injection into the target window.
     *
     * Any arguments provided in addition to the script will be included as script
     * arguments and may be referenced using the {@code arguments} object.
     * Arguments may be a boolean, number, string, or {@code WebElement}.
-    * Arrays and objects may also be used as script arguments as long as each item
-    * adheres to the types previously mentioned.
+    * Arrays and objects may also be used as script arguments as long as each
+    * item adheres to the types previously mentioned.
     *
     * Unlike executing synchronous JavaScript with {@link #executeScript},
-    * scripts executed with this function must explicitly signal they are finished
-    * by invoking the provided callback. This callback will always be injected
-    * into the executed function as the last argument, and thus may be referenced
-    * with {@code arguments[arguments.length - 1]}. The following steps will be
-    * taken for resolving this functions return value against the first argument
-    * to the script's callback function:
+    * scripts executed with this function must explicitly signal they are
+    * finished by invoking the provided callback. This callback will always be
+    * injected into the executed function as the last argument, and thus may be
+    * referenced with {@code arguments[arguments.length - 1]}. The following
+    * steps will be taken for resolving this functions return value against the
+    * first argument to the script's callback function:
     *
     * - For a HTML element, the value will resolve to a
     *     {@link WebElement}
@@ -124,9 +106,9 @@ class WebDriver protected () extends js.Object {
     *
     * __Example #3:__ Injecting a XMLHttpRequest and waiting for the result. In
     * this example, the inject script is specified with a function literal. When
-    * using this format, the function is converted to a string for injection, so it
-    * should not reference any symbols not defined in the scope of the page under
-    * test.
+    * using this format, the function is converted to a string for injection, so
+    * it should not reference any symbols not defined in the scope of the page
+    * under test.
     *
     *     driver.executeAsyncScript(function() {
     *       var callback = arguments[arguments.length - 1];
@@ -144,12 +126,12 @@ class WebDriver protected () extends js.Object {
     *
     * @param {!(string|Function)} script The script to execute.
     * @param {...*} var_args The arguments to pass to the script.
-    * @return {!promise.Promise.<T>} A promise that will resolve to the
+    * @return {!Promise.<T>} A promise that will resolve to the
     *    scripts return value.
     * @template T
     */
-  def executeAsyncScript[T](script: java.lang.String, var_args: js.Any*): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def executeAsyncScript[T](script: js.Function, var_args: js.Any*): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
+  def executeAsyncScript[T](script: java.lang.String, var_args: js.Any*): js.Promise[T] = js.native
+  def executeAsyncScript[T](script: js.Function, var_args: js.Any*): js.Promise[T] = js.native
   /**
     * Schedules a command to execute JavaScript in the context of the currently
     * selected frame or window. The script fragment will be executed as the body
@@ -160,8 +142,8 @@ class WebDriver protected () extends js.Object {
     * Any arguments provided in addition to the script will be included as script
     * arguments and may be referenced using the {@code arguments} object.
     * Arguments may be a boolean, number, string, or {@code WebElement}.
-    * Arrays and objects may also be used as script arguments as long as each item
-    * adheres to the types previously mentioned.
+    * Arrays and objects may also be used as script arguments as long as each
+    * item adheres to the types previously mentioned.
     *
     * The script may refer to any variables accessible from the current window.
     * Furthermore, the script will execute in the window's context, thus
@@ -183,12 +165,12 @@ class WebDriver protected () extends js.Object {
     *
     * @param {!(string|Function)} script The script to execute.
     * @param {...*} var_args The arguments to pass to the script.
-    * @return {!promise.Promise.<T>} A promise that will resolve to the
+    * @return {!Promise.<T>} A promise that will resolve to the
     *    scripts return value.
     * @template T
     */
-  def executeScript[T](script: java.lang.String, var_args: js.Any*): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def executeScript[T](script: js.Function, var_args: js.Any*): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
+  def executeScript[T](script: java.lang.String, var_args: js.Any*): js.Promise[T] = js.native
+  def executeScript[T](script: js.Function, var_args: js.Any*): js.Promise[T] = js.native
   /**
     * Schedule a command to find an element on the page. If the element cannot be
     * found, a {@link bot.ErrorCode.NO_SUCH_ELEMENT} result will be returned
@@ -230,60 +212,62 @@ class WebDriver protected () extends js.Object {
     * Schedule a command to search for multiple elements on the page.
     *
     * @param {!(by.By|Function)} locator The locator to use.
-    * @return {!promise.Promise.<!Array.<!WebElement>>} A
+    * @return {!Promise.<!Array.<!WebElement>>} A
     *     promise that will resolve to an array of WebElements.
     */
-  def findElements(locator: Locator): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[WebElement]] = js.native
+  def findElements(locator: Locator): js.Promise[js.Array[WebElement]] = js.native
   /**
     * Schedules a command to navigate to the given URL.
     * @param {string} url The fully qualified URL to open.
-    * @return {!promise.Promise.<void>} A promise that will be resolved
+    * @return {!Promise.<void>} A promise that will be resolved
     *     when the document has finished loading.
     */
-  def get(url: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def get(url: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-    * Schedules a command to retrieve the current list of available window handles.
-    * @return {!promise.Promise.<!Array.<string>>} A promise that will
+    * Schedules a command to retrieve the current list of available window
+    * handles.
+    * @return {!Promise.<!Array.<string>>} A promise that will
     *     be resolved with an array of window handles.
     */
-  def getAllWindowHandles(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[java.lang.String]] = js.native
+  def getAllWindowHandles(): js.Promise[js.Array[java.lang.String]] = js.native
   /**
-    * @return {!promise.Promise.<!Capabilities>} A promise
+    * @return {!Promise.<!Capabilities>} A promise
     *     that will resolve with the this instance's capabilities.
     */
-  def getCapabilities(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[Capabilities] = js.native
+  def getCapabilities(): js.Promise[Capabilities] = js.native
   /**
     * Schedules a command to retrieve the URL of the current page.
-    * @return {!promise.Promise.<string>} A promise that will be
+    * @return {!Promise.<string>} A promise that will be
     *     resolved with the current URL.
     */
-  def getCurrentUrl(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
+  def getCurrentUrl(): js.Promise[java.lang.String] = js.native
+  def getExecutor(): Executor = js.native
   /**
     * Schedules a command to retrieve the current page's source. The page source
     * returned is a representation of the underlying DOM: do not expect it to be
     * formatted or escaped in the same way as the response sent from the web
     * server.
-    * @return {!promise.Promise.<string>} A promise that will be
+    * @return {!Promise.<string>} A promise that will be
     *     resolved with the current page source.
     */
-  def getPageSource(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
+  def getPageSource(): js.Promise[java.lang.String] = js.native
   /**
-    * @return {!promise.Promise.<!Session>} A promise for this
+    * @return {!Promise.<!Session>} A promise for this
     *     client's session.
     */
-  def getSession(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[Session] = js.native
+  def getSession(): js.Promise[Session] = js.native
   /**
     * Schedules a command to retrieve the current page's title.
-    * @return {!promise.Promise.<string>} A promise that will be
+    * @return {!Promise.<string>} A promise that will be
     *     resolved with the current page's title.
     */
-  def getTitle(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
+  def getTitle(): js.Promise[java.lang.String] = js.native
   /**
     * Schedules a command to retrieve they current window handle.
-    * @return {!promise.Promise.<string>} A promise that will be
+    * @return {!Promise.<string>} A promise that will be
     *     resolved with the current window handle.
     */
-  def getWindowHandle(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
+  def getWindowHandle(): js.Promise[java.lang.String] = js.native
   /**
     * @return {!Options} The options interface for this
     *     instance.
@@ -298,21 +282,10 @@ class WebDriver protected () extends js.Object {
     * Schedules a command to quit the current session. After calling quit, this
     * instance will be invalidated and may no longer be used to issue commands
     * against the browser.
-    * @return {!promise.Promise.<void>} A promise that will be resolved
+    * @return {!Promise.<void>} A promise that will be resolved
     *     when the command has completed.
     */
-  def quit(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
-  /**
-    * Schedules a {@link command.Command} to be executed by this driver's
-    * {@link command.Executor}.
-    *
-    * @param {!command.Command} command The command to schedule.
-    * @param {string} description A description of the command for debugging.
-    * @return {!promise.Promise<T>} A promise that will be resolved
-    *     with the command result.
-    * @template T
-    */
-  def schedule[T](command: Command, description: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
+  def quit(): js.Promise[scala.Unit] = js.native
   /**
     * Sets the {@linkplain input.FileDetector file detector} that should be
     * used with this instance.
@@ -322,10 +295,10 @@ class WebDriver protected () extends js.Object {
   /**
     * Schedules a command to make the driver sleep for the given amount of time.
     * @param {number} ms The amount of time, in milliseconds, to sleep.
-    * @return {!promise.Promise.<void>} A promise that will be resolved
+    * @return {!Promise.<void>} A promise that will be resolved
     *     when the sleep has finished.
     */
-  def sleep(ms: scala.Double): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def sleep(ms: scala.Double): js.Promise[scala.Unit] = js.native
   /**
     * @return {!TargetLocator} The target locator interface for
     *     this instance.
@@ -340,32 +313,19 @@ class WebDriver protected () extends js.Object {
     * 3. Visible portion of the current frame
     * 4. The entire display containing the browser
     *
-    * @return {!promise.Promise<string>} A promise that will be
+    * @return {!Promise<string>} A promise that will be
     *     resolved to the screenshot as a base-64 encoded PNG.
     */
-  def takeScreenshot(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
-  /**
-    * Creates a new touch sequence using this driver. The sequence will not be
-    * scheduled for execution until {@link actions.TouchSequence#perform} is
-    * called. Example:
-    *
-    *     driver.touchActions().
-    *         tap(element1).
-    *         doubleTap(element2).
-    *         perform();
-    *
-    * @return {!actions.TouchSequence} A new touch sequence for this instance.
-    */
-  def touchActions(): TouchSequence = js.native
+  def takeScreenshot(): js.Promise[java.lang.String] = js.native
   /**
     * Schedules a command to wait for a condition to hold. The condition may be
     * specified by a {@link Condition}, as a custom function, or
-    * as a {@link promise.Promise}.
+    * as a {@link Promise}.
     *
     * For a {@link Condition} or function, the wait will repeatedly
     * evaluate the condition until it returns a truthy value. If any errors occur
     * while evaluating the condition, they will be allowed to propagate. In the
-    * event a condition returns a {@link promise.Promise promise}, the
+    * event a condition returns a {@link Promise promise}, the
     * polling loop will wait for it to be resolved and use the resolved value for
     * whether the condition has been satisified. Note the resolution time for
     * a promise is factored into whether a wait has timed out.
@@ -374,21 +334,21 @@ class WebDriver protected () extends js.Object {
     * the wait will return a {@link WebElementPromise} that will resolve to the
     * element that satisified the condition.
     *
-    * *Example:* waiting up to 10 seconds for an element to be present and visible
-    * on the page.
+    * *Example:* waiting up to 10 seconds for an element to be present and
+    * visible on the page.
     *
     *     var button = driver.wait(until.elementLocated(By.id('foo'), 10000);
     *     button.click();
     *
     * This function may also be used to block the command flow on the resolution
-    * of a {@link promise.Promise promise}. When given a promise, the
-    * command will simply wait for its resolution before completing. A timeout may
-    * be provided to fail the command if the promise does not resolve before the
-    * timeout expires.
+    * of a {@link Promise promise}. When given a promise, the
+    * command will simply wait for its resolution before completing. A timeout
+    * may be provided to fail the command if the promise does not resolve before
+    * the timeout expires.
     *
     * *Example:* Suppose you have a function, `startTestServer`, that returns a
-    * promise for when a server is ready for requests. You can block a `WebDriver`
-    * client on this promise with:
+    * promise for when a server is ready for requests. You can block a
+    * `WebDriver` client on this promise with:
     *
     *     var started = startTestServer();
     *     driver.wait(started, 5 * 1000, 'Server should start within 5 seconds');
@@ -408,25 +368,25 @@ class WebDriver protected () extends js.Object {
   def wait(condition: WebElementCondition): WebElementPromise = js.native
   def wait(condition: WebElementCondition, opt_timeout: scala.Double): WebElementPromise = js.native
   def wait(condition: WebElementCondition, opt_timeout: scala.Double, opt_message: java.lang.String): WebElementPromise = js.native
-  def wait[T](condition: js.Function): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def wait[T](condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]]): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def wait[T](condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]], opt_timeout: scala.Double): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
+  def wait[T](condition: js.Function): js.Promise[T] = js.native
+  def wait[T](condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]]): js.Promise[T] = js.native
+  def wait[T](condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]], opt_timeout: scala.Double): js.Promise[T] = js.native
   def wait[T](
     condition: js.Function1[/* driver */ this.type, T | js.Thenable[T]],
     opt_timeout: scala.Double,
     opt_message: java.lang.String
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def wait[T](condition: js.Function, opt_timeout: scala.Double): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def wait[T](condition: js.Function, opt_timeout: scala.Double, opt_message: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
+  ): js.Promise[T] = js.native
+  def wait[T](condition: js.Function, opt_timeout: scala.Double): js.Promise[T] = js.native
+  def wait[T](condition: js.Function, opt_timeout: scala.Double, opt_message: java.lang.String): js.Promise[T] = js.native
   /**
     * Schedules a command to wait for a condition to hold. The condition may be
     * specified by a {@link webdriver.Condition}, as a custom function, or
-    * as a {@link webdriver.promise.Promise}.
+    * as a {@link Promise}.
     *
     * For a {@link webdriver.Condition} or function, the wait will repeatedly
     * evaluate the condition until it returns a truthy value. If any errors occur
     * while evaluating the condition, they will be allowed to propagate. In the
-    * event a condition returns a {@link webdriver.promise.Promise promise}, the
+    * event a condition returns a {@link Promise promise}, the
     * polling loop will wait for it to be resolved and use the resolved value for
     * whether the condition has been satisified. Note the resolution time for
     * a promise is factored into whether a wait has timed out.
@@ -435,27 +395,27 @@ class WebDriver protected () extends js.Object {
     * the wait will return a {@link WebElementPromise} that will resolve to the
     * element that satisified the condition.
     *
-    * *Example:* waiting up to 10 seconds for an element to be present and visible
-    * on the page.
+    * *Example:* waiting up to 10 seconds for an element to be present and
+    * visible on the page.
     *
     *     var button = driver.wait(until.elementLocated(By.id('foo'), 10000);
     *     button.click();
     *
     * This function may also be used to block the command flow on the resolution
-    * of a {@link webdriver.promise.Promise promise}. When given a promise, the
-    * command will simply wait for its resolution before completing. A timeout may
-    * be provided to fail the command if the promise does not resolve before the
-    * timeout expires.
+    * of a {@link Promise promise}. When given a promise, the
+    * command will simply wait for its resolution before completing. A timeout
+    * may be provided to fail the command if the promise does not resolve before
+    * the timeout expires.
     *
     * *Example:* Suppose you have a function, `startTestServer`, that returns a
-    * promise for when a server is ready for requests. You can block a `WebDriver`
-    * client on this promise with:
+    * promise for when a server is ready for requests. You can block a
+    * `WebDriver` client on this promise with:
     *
     *     var started = startTestServer();
     *     driver.wait(started, 5 * 1000, 'Server should start within 5 seconds');
     *     driver.get(getServerUrl());
     *
-    * @param {!(promise.Promise<T>|
+    * @param {!(Promise<T>|
     *           Condition<T>|
     *           function(!WebDriver): T)} condition The condition to
     *     wait on, defined as a promise, condition object, or  a function to
@@ -463,17 +423,17 @@ class WebDriver protected () extends js.Object {
     * @param {number=} opt_timeout How long to wait for the condition to be true.
     * @param {string=} opt_message An optional message to use if the wait times
     *     out.
-    * @return {!promise.Promise<T>} A promise that will be fulfilled
+    * @return {!Promise<T>} A promise that will be fulfilled
     *     with the first truthy value returned by the condition function, or
     *     rejected if the condition times out.
     * @template T
     */
-  def wait[T](condition: js.Thenable[T]): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def wait[T](condition: js.Thenable[T], opt_timeout: scala.Double): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def wait[T](condition: js.Thenable[T], opt_timeout: scala.Double, opt_message: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def wait[T](condition: Condition[T]): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def wait[T](condition: Condition[T], opt_timeout: scala.Double): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
-  def wait[T](condition: Condition[T], opt_timeout: scala.Double, opt_message: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
+  def wait[T](condition: js.Thenable[T]): js.Promise[T] = js.native
+  def wait[T](condition: js.Thenable[T], opt_timeout: scala.Double): js.Promise[T] = js.native
+  def wait[T](condition: js.Thenable[T], opt_timeout: scala.Double, opt_message: java.lang.String): js.Promise[T] = js.native
+  def wait[T](condition: Condition[T]): js.Promise[T] = js.native
+  def wait[T](condition: Condition[T], opt_timeout: scala.Double): js.Promise[T] = js.native
+  def wait[T](condition: Condition[T], opt_timeout: scala.Double, opt_message: java.lang.String): js.Promise[T] = js.native
 }
 
 /* static members */
@@ -482,22 +442,6 @@ class WebDriver protected () extends js.Object {
 object WebDriver extends js.Object {
   // endregion
   // region StaticMethods
-  /**
-    * Creates a new WebDriver client for an existing session.
-    * @param {!command.Executor} executor Command executor to use when querying
-    *     for session details.
-    * @param {string} sessionId ID of the session to attach to.
-    * @param {promise.ControlFlow=} opt_flow The control flow all
-    *     driver commands should execute under. Defaults to the
-    *     {@link promise.controlFlow() currently active}  control flow.
-    * @return {!WebDriver} A new client for the specified session.
-    */
-  def attachToSession(executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor, sessionId: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver = js.native
-  def attachToSession(
-    executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor,
-    sessionId: java.lang.String,
-    opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver = js.native
   /**
     * Creates a new WebDriver session.
     *
@@ -554,8 +498,9 @@ object WebDriver extends js.Object {
     *    up any resources associated with the session.
     * @return {!WebDriver} The driver for the newly created session.
     */
-  // This method's arguments are untyped so that its overloads can have correct types.
-  // Typescript doesn't allow static methods to be overridden with incompatible signatures.
+  // This method's arguments are untyped so that its overloads can have correct
+  // types. Typescript doesn't allow static methods to be overridden with
+  // incompatible signatures.
   def createSession(var_args: js.Any*): seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver = js.native
 }
 

@@ -15,9 +15,9 @@ class Executor () extends js.Object {
     * response object.
     *
     * @param {!Command} command The command to execute.
-    * @return {!promise.Promise<?>} A promise that will be fulfilled with
+    * @return {!Promise<?>} A promise that will be fulfilled with
     *     the command result.
     */
-  def execute(command: Command): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_] = js.native
+  def execute(command: seleniumDashWebdriverLib.libCommandMod.Command): js.Promise[_] = js.native
 }
 

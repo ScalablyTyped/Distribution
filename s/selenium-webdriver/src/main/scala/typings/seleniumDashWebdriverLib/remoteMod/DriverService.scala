@@ -18,7 +18,7 @@ class DriverService protected () extends js.Object {
     *    the server's address.
     * @throws {Error} If the server has not been started.
     */
-  def address(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
+  def address(): js.Promise[java.lang.String] = js.native
   /**
     * Returns whether the underlying process is still running. This does not take
     * into account whether the process is in the process of shutting down.
@@ -32,7 +32,7 @@ class DriverService protected () extends js.Object {
     * @return {!promise.Promise} A promise that will be resolved when
     *     the server has been stopped.
     */
-  def kill(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_] = js.native
+  def kill(): js.Promise[_] = js.native
   /**
     * Starts the server if it is not already running.
     * @param {number=} opt_timeoutMs How long to wait, in milliseconds, for the
@@ -42,14 +42,7 @@ class DriverService protected () extends js.Object {
     *     timeout expires before the server has started, the promise will be
     *     rejected.
     */
-  def start(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
-  def start(opt_timeoutMs: scala.Double): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
-  /**
-    * Schedules a task in the current control flow to stop the server if it is
-    * currently running.
-    * @return {!promise.Promise} A promise that will be resolved when
-    *     the server has been stopped.
-    */
-  def stop(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_] = js.native
+  def start(): js.Promise[java.lang.String] = js.native
+  def start(opt_timeoutMs: scala.Double): js.Promise[java.lang.String] = js.native
 }
 

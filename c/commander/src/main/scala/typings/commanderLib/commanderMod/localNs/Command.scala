@@ -119,9 +119,14 @@ trait Command
     * Set the description to `str`.
     *
     * @param {string} str
+    * @param {{[argName: string]: string}} argsDescription
     * @return {(Command | string)}
     */
   def description(str: java.lang.String): Command = js.native
+  def description(
+    str: java.lang.String,
+    argsDescription: org.scalablytyped.runtime.StringDictionary[java.lang.String]
+  ): Command = js.native
   /** Output help information and exit.
     *
     * @param {(str: string) => string} [cb]

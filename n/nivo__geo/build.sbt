@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__geo"
-version := "0.55.0-295168"
+version := "0.55.0-e83e87"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -19,8 +19,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-time" % "1.0-dt-20190212Z-d8b54d",
   "org.scalablytyped" %%% "d3-time-format" % "2.1-dt-20190212Z-ec0764",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190319Z-0f225d",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
-  "org.scalablytyped" %%% "nivo__core" % "0.55.0-84e390",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
+  "org.scalablytyped" %%% "nivo__core" % "0.55.0-0e7631",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
   "org.scalablytyped" %%% "react-measure" % "2.0-dt-20190225Z-3c2845",

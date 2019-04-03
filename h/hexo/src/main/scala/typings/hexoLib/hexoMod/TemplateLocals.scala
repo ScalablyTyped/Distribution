@@ -41,5 +41,9 @@ trait TemplateLocals extends js.Object {
     * Underscore object
     */
   def `_`[T](value: underscoreLib.underscoreMod.underscoreNs.Dictionary[T]): underscoreLib.underscoreMod.underscoreNs.Underscore[T] = js.native
+  /**
+    * Underscore object
+    */
+  def `_`[T](value: underscoreLib.underscoreMod.underscoreNs.List[T]): underscoreLib.underscoreMod.underscoreNs.Underscore[T] = js.native
 }
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ThenableWebDriver
   extends WebDriver
-     with seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[WebDriver]
+     with stdLib.Promise[WebDriver]
 

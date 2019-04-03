@@ -17,7 +17,7 @@ class PivotLayout ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
   /**
     *
-    * True if formatting will be automatically formatted when it’s refreshed or when fields are moved
+    * Specifies whether formatting will be automatically formatted when it’s refreshed or when fields are moved
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -28,7 +28,7 @@ class PivotLayout ()
   var context_PivotLayout: RequestContext = js.native
   /**
     *
-    * True if the field list should be shown or hidden from the UI.
+    * Specifies whether the field list can be shown in the UI.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -43,7 +43,7 @@ class PivotLayout ()
   var layoutType: PivotLayoutType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Compact | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Tabular | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Outline = js.native
   /**
     *
-    * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+    * Specifies whether formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -51,14 +51,14 @@ class PivotLayout ()
   var preserveFormatting: scala.Boolean = js.native
   /**
     *
-    * True if the PivotTable report shows grand totals for columns.
+    * Specifies whether the PivotTable report shows grand totals for columns.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showColumnGrandTotals: scala.Boolean = js.native
   /**
     *
-    * True if the PivotTable report shows grand totals for rows.
+    * Specifies whether the PivotTable report shows grand totals for rows.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -77,7 +77,7 @@ class PivotLayout ()
   ): Range = js.native
   /**
     *
-    * Gets the cell in the PivotTable's data body that contains the value for the intersection of the specified dataHierarchy, rowItems, and columnItems.
+    * Gets a unique cell in the PivotTable based on a data hierarchy and the row and column items of their respective hierarchies. The returned cell is the intersection of the given row and column that contains the data from the given hierarchy. This method is the inverse of calling getPivotItems and getDataHierarchy on a particular cell.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -114,7 +114,7 @@ class PivotLayout ()
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param cell A single cell within the PivotTable data body to get the data hieararchy for.
+    * @param cell A single cell within the PivotTable data body.
     * @returns The DataPivotHierarchy object used to calculate the value in the specified cell.
     */
   def getDataHierarchy(cell: Range): DataPivotHierarchy = js.native
@@ -133,8 +133,8 @@ class PivotLayout ()
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param axis The axis to get the PivotItems from. Must be either "row" or "column."
-    * @param cell A single cell within the PivotTable's data body to get the PivotItems for.
+    * @param axis The axis from which to get the PivotItems. Must be either "row" or "column."
+    * @param cell A single cell within the PivotTable's data body.
     * @returns A collection of PivotItems that are used to calculate the values in the specified row.
     */
   def getPivotItems(axis: PivotAxis, cell: Range): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[PivotItem]] = js.native
@@ -162,8 +162,8 @@ class PivotLayout ()
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
-    * @param axis The axis to get the PivotItems from. Must be either "row" or "column."
-    * @param cell A single cell within the PivotTable's data body to get the PivotItems for.
+    * @param axis The axis from which to get the PivotItems. Must be either "row" or "column."
+    * @param cell A single cell within the PivotTable's data body.
     * @returns A collection of PivotItems that are used to calculate the values in the specified row.
     */
   @JSName("getPivotItems")
@@ -220,41 +220,41 @@ class PivotLayout ()
   ): scala.Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: PivotLayout): scala.Unit = js.native
-  def setAutosortOnCell(cell: java.lang.String, sortby: SortBy): scala.Unit = js.native
+  def setAutoSortOnCell(cell: java.lang.String, sortBy: SortBy): scala.Unit = js.native
   /**
     *
-    * Sets an autosort using the specified cell to automatically select all criteria and context for the sort.
+    * Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria and context. This behaves identically to applying an autosort from the UI.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
     * @param cell A single cell to use get the criteria from for applying the autosort.
-    * @param sortby The direction of the sort.
+    * @param sortBy The direction of the sort.
     */
-  def setAutosortOnCell(cell: Range, sortby: SortBy): scala.Unit = js.native
-  @JSName("setAutosortOnCell")
-  def setAutosortOnCell_Ascending(
+  def setAutoSortOnCell(cell: Range, sortBy: SortBy): scala.Unit = js.native
+  @JSName("setAutoSortOnCell")
+  def setAutoSortOnCell_Ascending(
     cell: java.lang.String,
-    sortby: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ascending
+    sortBy: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ascending
   ): scala.Unit = js.native
   /**
     *
-    * Sets an autosort using the specified cell to automatically select all criteria and context for the sort.
+    * Sets the PivotTable to automatically sort using the specified cell to automatically select all necessary criteria and context. This behaves identically to applying an autosort from the UI.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
     * @param cell A single cell to use get the criteria from for applying the autosort.
-    * @param sortby The direction of the sort.
+    * @param sortBy The direction of the sort.
     */
-  @JSName("setAutosortOnCell")
-  def setAutosortOnCell_Ascending(cell: Range, sortby: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ascending): scala.Unit = js.native
-  @JSName("setAutosortOnCell")
-  def setAutosortOnCell_Descending(
+  @JSName("setAutoSortOnCell")
+  def setAutoSortOnCell_Ascending(cell: Range, sortBy: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ascending): scala.Unit = js.native
+  @JSName("setAutoSortOnCell")
+  def setAutoSortOnCell_Descending(
     cell: java.lang.String,
-    sortby: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Descending
+    sortBy: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Descending
   ): scala.Unit = js.native
-  @JSName("setAutosortOnCell")
-  def setAutosortOnCell_Descending(cell: Range, sortby: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Descending): scala.Unit = js.native
+  @JSName("setAutoSortOnCell")
+  def setAutoSortOnCell_Descending(cell: Range, sortBy: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Descending): scala.Unit = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.PivotLayout object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotLayoutData`) that contains shallow copies of any loaded child properties from the original object.

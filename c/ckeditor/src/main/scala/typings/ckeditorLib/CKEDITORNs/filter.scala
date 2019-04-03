@@ -32,15 +32,29 @@ class filter protected () extends js.Object {
     featureName: java.lang.String,
     overrideCustom: scala.Boolean
   ): scala.Boolean = js.native
+  def applyTo(fragment: ckeditorLib.CKEDITORNs.htmlParserNs.element): scala.Boolean = js.native
+  def applyTo(fragment: ckeditorLib.CKEDITORNs.htmlParserNs.element, toHtml: scala.Boolean): scala.Boolean = js.native
   def applyTo(
     fragment: ckeditorLib.CKEDITORNs.htmlParserNs.element,
-    toHrml: scala.Boolean,
+    toHtml: scala.Boolean,
+    transformOnly: scala.Boolean
+  ): scala.Boolean = js.native
+  def applyTo(
+    fragment: ckeditorLib.CKEDITORNs.htmlParserNs.element,
+    toHtml: scala.Boolean,
     transformOnly: scala.Boolean,
     enterMode: scala.Double
   ): scala.Boolean = js.native
+  def applyTo(fragment: ckeditorLib.CKEDITORNs.htmlParserNs.fragment): scala.Boolean = js.native
+  def applyTo(fragment: ckeditorLib.CKEDITORNs.htmlParserNs.fragment, toHtml: scala.Boolean): scala.Boolean = js.native
   def applyTo(
     fragment: ckeditorLib.CKEDITORNs.htmlParserNs.fragment,
-    toHrml: scala.Boolean,
+    toHtml: scala.Boolean,
+    transformOnly: scala.Boolean
+  ): scala.Boolean = js.native
+  def applyTo(
+    fragment: ckeditorLib.CKEDITORNs.htmlParserNs.fragment,
+    toHtml: scala.Boolean,
     transformOnly: scala.Boolean,
     enterMode: scala.Double
   ): scala.Boolean = js.native

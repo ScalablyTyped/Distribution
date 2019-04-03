@@ -97,9 +97,9 @@ class PivotField ()
     *
     * [Api set: ExcelApi 1.8]
     *
-    * @param sortby Represents whether the sorting is done in an ascending or descending order.
+    * @param sortBy Represents whether the sorting is done in an ascending or descending order.
     */
-  def sortByLabels(sortby: SortBy): scala.Unit = js.native
+  def sortByLabels(sortBy: SortBy): scala.Unit = js.native
   /**
     *
     * Sorts the PivotField by specified values in a given scope. The scope defines which specific values will be used to sort when
@@ -108,16 +108,16 @@ class PivotField ()
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param sortby Represents whether the sorting is done in an ascending or descending order.
-    * @param valuesHierarchy Specifies the values to be used for sorting.
+    * @param sortBy Represents whether the sorting is done in an ascending or descending order.
+    * @param valuesHierarchy Specifies the values hierarchy on the data axis to be used for sorting.
     * @param pivotItemScope The items that should be used for the scope of the sorting. These will be the
     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
     the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
     you want to sort on, this can be empty.
     */
-  def sortByValues(sortby: SortBy, valuesHierarchy: DataPivotHierarchy): scala.Unit = js.native
+  def sortByValues(sortBy: SortBy, valuesHierarchy: DataPivotHierarchy): scala.Unit = js.native
   def sortByValues(
-    sortby: SortBy,
+    sortBy: SortBy,
     valuesHierarchy: DataPivotHierarchy,
     pivotItemScope: js.Array[PivotItem | java.lang.String]
   ): scala.Unit = js.native
@@ -128,8 +128,8 @@ class PivotField ()
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     *
-    * @param sortby Represents whether the sorting is done in an ascending or descending order.
-    * @param valuesHierarchy Specifies the values to be used for sorting.
+    * @param sortBy Represents whether the sorting is done in an ascending or descending order.
+    * @param valuesHierarchy Specifies the values hierarchy on the data axis to be used for sorting.
     * @param pivotItemScope The items that should be used for the scope of the sorting. These will be the
     items that make up the row or column that you want to sort on. If a string is used instead of a PivotItem,
     the string represents the ID of the PivotItem. If there are no items other than data hierarchy on the axis
@@ -137,23 +137,23 @@ class PivotField ()
     */
   @JSName("sortByValues")
   def sortByValues_Ascending(
-    sortby: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ascending,
+    sortBy: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ascending,
     valuesHierarchy: DataPivotHierarchy
   ): scala.Unit = js.native
   @JSName("sortByValues")
   def sortByValues_Ascending(
-    sortby: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ascending,
+    sortBy: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ascending,
     valuesHierarchy: DataPivotHierarchy,
     pivotItemScope: js.Array[PivotItem | java.lang.String]
   ): scala.Unit = js.native
   @JSName("sortByValues")
   def sortByValues_Descending(
-    sortby: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Descending,
+    sortBy: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Descending,
     valuesHierarchy: DataPivotHierarchy
   ): scala.Unit = js.native
   @JSName("sortByValues")
   def sortByValues_Descending(
-    sortby: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Descending,
+    sortBy: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Descending,
     valuesHierarchy: DataPivotHierarchy,
     pivotItemScope: js.Array[PivotItem | java.lang.String]
   ): scala.Unit = js.native

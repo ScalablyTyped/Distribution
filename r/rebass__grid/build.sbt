@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rebass__grid"
-version := "6.0-dt-20181130Z-8bdd8e"
+version := "6.0-dt-20190326Z-a5fecf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

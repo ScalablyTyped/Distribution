@@ -27,6 +27,7 @@ object FixedSizeGridProps {
     rowHeight: scala.Double,
     width: scala.Double,
     className: java.lang.String = null,
+    direction: CSSDirection = null,
     initialScrollLeft: scala.Int | scala.Double = null,
     initialScrollTop: scala.Int | scala.Double = null,
     innerElementType: ReactElementType = null,
@@ -47,6 +48,7 @@ object FixedSizeGridProps {
   ): FixedSizeGridProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount, columnWidth = columnWidth, height = height, rowCount = rowCount, rowHeight = rowHeight, width = width)
     if (className != null) __obj.updateDynamic("className")(className)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
     if (initialScrollLeft != null) __obj.updateDynamic("initialScrollLeft")(initialScrollLeft.asInstanceOf[js.Any])
     if (initialScrollTop != null) __obj.updateDynamic("initialScrollTop")(initialScrollTop.asInstanceOf[js.Any])
     if (innerElementType != null) __obj.updateDynamic("innerElementType")(innerElementType.asInstanceOf[js.Any])

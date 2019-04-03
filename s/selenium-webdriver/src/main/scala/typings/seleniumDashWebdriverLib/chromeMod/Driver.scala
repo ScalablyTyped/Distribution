@@ -23,8 +23,6 @@ object Driver extends js.Object {
     *     for an externally managed endpoint. If neither is provided, the
     *     {@linkplain ##getDefaultService default service} will be used by
     *     default.
-    * @param {promise.ControlFlow=} opt_flow The control flow to use, or `null`
-    *     to use the currently active flow.
     * @return {!Driver} A new driver instance.
     */
   def createSession(): seleniumDashWebdriverLib.chromeMod.Driver = js.native
@@ -35,17 +33,7 @@ object Driver extends js.Object {
   ): seleniumDashWebdriverLib.chromeMod.Driver = js.native
   def createSession(
     opt_config: seleniumDashWebdriverLib.chromeMod.Options,
-    opt_service: seleniumDashWebdriverLib.httpMod.Executor,
-    opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow
-  ): seleniumDashWebdriverLib.chromeMod.Driver = js.native
-  def createSession(
-    opt_config: seleniumDashWebdriverLib.chromeMod.Options,
     opt_service: seleniumDashWebdriverLib.remoteMod.DriverService
-  ): seleniumDashWebdriverLib.chromeMod.Driver = js.native
-  def createSession(
-    opt_config: seleniumDashWebdriverLib.chromeMod.Options,
-    opt_service: seleniumDashWebdriverLib.remoteMod.DriverService,
-    opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow
   ): seleniumDashWebdriverLib.chromeMod.Driver = js.native
   def createSession(opt_config: seleniumDashWebdriverLib.seleniumDashWebdriverMod.CreateSessionCapabilities): seleniumDashWebdriverLib.chromeMod.Driver = js.native
   def createSession(
@@ -54,17 +42,7 @@ object Driver extends js.Object {
   ): seleniumDashWebdriverLib.chromeMod.Driver = js.native
   def createSession(
     opt_config: seleniumDashWebdriverLib.seleniumDashWebdriverMod.CreateSessionCapabilities,
-    opt_service: seleniumDashWebdriverLib.httpMod.Executor,
-    opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow
-  ): seleniumDashWebdriverLib.chromeMod.Driver = js.native
-  def createSession(
-    opt_config: seleniumDashWebdriverLib.seleniumDashWebdriverMod.CreateSessionCapabilities,
     opt_service: seleniumDashWebdriverLib.remoteMod.DriverService
-  ): seleniumDashWebdriverLib.chromeMod.Driver = js.native
-  def createSession(
-    opt_config: seleniumDashWebdriverLib.seleniumDashWebdriverMod.CreateSessionCapabilities,
-    opt_service: seleniumDashWebdriverLib.remoteMod.DriverService,
-    opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow
   ): seleniumDashWebdriverLib.chromeMod.Driver = js.native
 }
 

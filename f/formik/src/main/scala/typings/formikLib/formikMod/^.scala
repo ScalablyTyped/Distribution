@@ -36,6 +36,7 @@ object ^ extends js.Object {
   def insert(array: js.Array[_], index: scala.Double, value: js.Any): js.Array[_] = js.native
   def isEmptyChildren(children: js.Any): scala.Boolean = js.native
   def isFunction(obj: js.Any): /* is std.Function */ scala.Boolean = js.native
+  def isInputEvent(value: js.Any): /* is react.react.React.SyntheticEvent<any, react.Event> */ scala.Boolean = js.native
   def isInteger(obj: js.Any): scala.Boolean = js.native
   def isNaN(obj: js.Any): scala.Boolean = js.native
   def isObject(obj: js.Any): scala.Boolean = js.native

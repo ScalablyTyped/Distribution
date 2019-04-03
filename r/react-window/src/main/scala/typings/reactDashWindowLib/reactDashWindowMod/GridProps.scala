@@ -17,6 +17,14 @@ trait GridProps extends CommonProps {
     */
   var columnCount: scala.Double
   /**
+    * Determines the direction of text and horizontal scrolling.
+    *
+    * This property also automatically sets the CSS direction style for the grid component.
+    *
+    * @default "ltr"
+    */
+  var direction: js.UndefOr[CSSDirection] = js.undefined
+  /**
     * Height of the grid. This affects the number of rows that will be rendered (and displayed) at any given time.
     */
   var height: scala.Double
@@ -93,6 +101,7 @@ object GridProps {
     rowCount: scala.Double,
     width: scala.Double,
     className: java.lang.String = null,
+    direction: CSSDirection = null,
     initialScrollLeft: scala.Int | scala.Double = null,
     initialScrollTop: scala.Int | scala.Double = null,
     innerElementType: ReactElementType = null,
@@ -113,6 +122,7 @@ object GridProps {
   ): GridProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount, height = height, rowCount = rowCount, width = width)
     if (className != null) __obj.updateDynamic("className")(className)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
     if (initialScrollLeft != null) __obj.updateDynamic("initialScrollLeft")(initialScrollLeft.asInstanceOf[js.Any])
     if (initialScrollTop != null) __obj.updateDynamic("initialScrollTop")(initialScrollTop.asInstanceOf[js.Any])
     if (innerElementType != null) __obj.updateDynamic("innerElementType")(innerElementType.asInstanceOf[js.Any])

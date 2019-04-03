@@ -88,8 +88,8 @@ class QuestionSelectBase protected () extends Question {
   /* protected */ def hasUnknownValue(`val`: js.Any, includeOther: scala.Boolean): scala.Boolean = js.native
   /* protected */ def isValueDisabled(`val`: js.Any): scala.Boolean = js.native
   /* protected */ def onVisibleChoicesChanged(): scala.Unit = js.native
+  /* protected */ def renderedValueFromDataCore(`val`: js.Any): js.Any = js.native
   /* protected */ def rendredValueFromData(`val`: js.Any): js.Any = js.native
-  /* protected */ def rendredValueFromDataCore(`val`: js.Any): js.Any = js.native
   /* protected */ def rendredValueToData(`val`: js.Any): js.Any = js.native
   /* protected */ def rendredValueToDataCore(`val`: js.Any): js.Any = js.native
   /* protected */ def runItemsCondition(values: HashTable[_], properties: HashTable[_]): scala.Boolean = js.native

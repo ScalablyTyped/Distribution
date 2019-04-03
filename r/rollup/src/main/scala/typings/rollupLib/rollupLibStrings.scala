@@ -21,6 +21,10 @@ object rollupLibStrings {
     extends rollupLib.rollupMod.ModuleFormat
   
   @js.native
+  sealed trait commonjs
+    extends rollupLib.rollupMod.ModuleFormat
+  
+  @js.native
   sealed trait default extends js.Object
   
   @js.native
@@ -37,6 +41,10 @@ object rollupLibStrings {
   
   @js.native
   sealed trait `inline` extends js.Object
+  
+  @js.native
+  sealed trait module
+    extends rollupLib.rollupMod.ModuleFormat
   
   @js.native
   sealed trait named extends js.Object
@@ -61,6 +69,8 @@ object rollupLibStrings {
   @scala.inline
   def cjs: cjs = "cjs".asInstanceOf[cjs]
   @scala.inline
+  def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
   def es: es = "es".asInstanceOf[es]
@@ -70,6 +80,8 @@ object rollupLibStrings {
   def iife: iife = "iife".asInstanceOf[iife]
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  @scala.inline
+  def module: module = "module".asInstanceOf[module]
   @scala.inline
   def named: named = "named".asInstanceOf[named]
   @scala.inline

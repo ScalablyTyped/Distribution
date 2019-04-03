@@ -23,7 +23,7 @@ trait PivotTableData extends js.Object {
   var dataHierarchies: js.UndefOr[js.Array[DataPivotHierarchyData]] = js.undefined
   /**
     *
-    * True if the PivotTable should use custom lists when sorting.
+    * Specifies whether the PivotTable allows values in the data body to be edited by the user.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -66,7 +66,7 @@ trait PivotTableData extends js.Object {
   var rowHierarchies: js.UndefOr[js.Array[RowColumnPivotHierarchyData]] = js.undefined
   /**
     *
-    * True if the PivotTable should use custom lists when sorting.
+    * Specifies whether the PivotTable uses custom lists when sorting.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

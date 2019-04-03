@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("selenium-webdriver", "By")
 @js.native
-class By protected () extends _Locator {
+class By protected ()
+  extends seleniumDashWebdriverLib.libByMod.By {
   /**
     * @param {string} using the name of the location strategy to use.
     * @param {string} value the value to search for.
@@ -27,7 +28,7 @@ object By extends js.Object {
     * @see http://www.w3.org/TR/2011/WD-html5-20110525/elements.html#classes
     * @see http://www.w3.org/TR/CSS2/selector.html#class-html
     */
-  def className(name: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
+  def className(name: java.lang.String): seleniumDashWebdriverLib.libByMod.By = js.native
   /**
     * Locates elements using a CSS selector.
     *
@@ -35,7 +36,7 @@ object By extends js.Object {
     * @return {!By} The new locator.
     * @see http://www.w3.org/TR/CSS2/selector.html
     */
-  def css(selector: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
+  def css(selector: java.lang.String): seleniumDashWebdriverLib.libByMod.By = js.native
   /**
     * Locates eleemnts by the ID attribute. This locator uses the CSS selector
     * `*[id='$ID']`, _not_ `document.getElementById`.
@@ -43,7 +44,7 @@ object By extends js.Object {
     * @param {string} id The ID to search for.
     * @return {!By} The new locator.
     */
-  def id(id: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
+  def id(id: java.lang.String): seleniumDashWebdriverLib.libByMod.By = js.native
   /**
     * Locates an elements by evaluating a
     * {@linkplain WebDriver#executeScript JavaScript expression}.
@@ -51,18 +52,18 @@ object By extends js.Object {
     *
     * @param {!(string|Function)} script The script to execute.
     * @param {...*} var_args The arguments to pass to the script.
-    * @return {function(!./WebDriver): !./promise.Promise}
+    * @return {function(!./WebDriver): !./Promise}
     *     A new JavaScript-based locator function.
     */
   @JSName("js")
   def js_(script: java.lang.String, var_args: js.Any*): js.Function1[
     /* webdriver */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, 
-    seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_]
+    js.Promise[_]
   ] = js.native
   @JSName("js")
   def js_(script: js.Function, var_args: js.Any*): js.Function1[
     /* webdriver */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, 
-    seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[_]
+    js.Promise[_]
   ] = js.native
   /**
     * Locates link elements whose
@@ -72,14 +73,14 @@ object By extends js.Object {
     * @param {string} text The link text to search for.
     * @return {!By} The new locator.
     */
-  def linkText(text: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
+  def linkText(text: java.lang.String): seleniumDashWebdriverLib.libByMod.By = js.native
   /**
     * Locates elements whose `name` attribute has the given value.
     *
     * @param {string} name The name attribute to search for.
     * @return {!By} The new locator.
     */
-  def name(name: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
+  def name(name: java.lang.String): seleniumDashWebdriverLib.libByMod.By = js.native
   /**
     * Locates link elements whose
     * {@linkplain WebElement#getText visible text} contains the given
@@ -88,7 +89,7 @@ object By extends js.Object {
     * @param {string} text The substring to check for in a link's visible text.
     * @return {!By} The new locator.
     */
-  def partialLinkText(text: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
+  def partialLinkText(text: java.lang.String): seleniumDashWebdriverLib.libByMod.By = js.native
   /**
     * Locates elements with a given tag name.
     *
@@ -96,7 +97,7 @@ object By extends js.Object {
     * @return {!By} The new locator.
     * @deprecated Use {@link By.css() By.css(tagName)} instead.
     */
-  def tagName(name: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
+  def tagName(name: java.lang.String): seleniumDashWebdriverLib.libByMod.By = js.native
   /**
     * Locates elements matching a XPath selector. Care should be taken when
     * using an XPath selector with a {@link WebElement} as WebDriver
@@ -108,6 +109,6 @@ object By extends js.Object {
     * @return {!By} The new locator.
     * @see http://www.w3.org/TR/xpath/
     */
-  def xpath(xpath: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.By = js.native
+  def xpath(xpath: java.lang.String): seleniumDashWebdriverLib.libByMod.By = js.native
 }
 

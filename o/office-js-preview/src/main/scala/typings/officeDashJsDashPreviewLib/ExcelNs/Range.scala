@@ -117,6 +117,14 @@ class Range ()
   val hasSpill: scala.Boolean = js.native
   /**
     *
+    * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val height: scala.Double = js.native
+  /**
+    *
     * Represents if all cells of the current range are hidden. Read-only.
     *
     * [Api set: ExcelApi 1.2]
@@ -143,6 +151,14 @@ class Range ()
     * [Api set: ExcelApi 1.7]
     */
   val isEntireRow: scala.Boolean = js.native
+  /**
+    *
+    * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val left: scala.Double = js.native
   /**
     *
     * Represents the data type state of each cell. Read-only.
@@ -213,6 +229,14 @@ class Range ()
   val text: js.Array[js.Array[java.lang.String]] = js.native
   /**
     *
+    * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val top: scala.Double = js.native
+  /**
+    *
     * Represents the type of data of each cell. Read-only.
     *
     * [Api set: ExcelApi 1.1]
@@ -226,6 +250,14 @@ class Range ()
     * [Api set: ExcelApi 1.1]
     */
   var values: js.Array[js.Array[_]] = js.native
+  /**
+    *
+    * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val width: scala.Double = js.native
   /**
     *
     * The worksheet containing the current range. Read-only.
@@ -1124,9 +1156,6 @@ class Range ()
     * @beta
     */
   def setCellProperties(cellPropertiesData: js.Array[js.Array[SettableCellProperties]]): scala.Unit = js.native
-  def setCellProperties(
-    cellPropertiesData: officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[js.Array[SettableCellProperties]]]
-  ): scala.Unit = js.native
   /**
     *
     * Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill, borders, alignment, and so forth.
@@ -1135,9 +1164,6 @@ class Range ()
     * @beta
     */
   def setColumnProperties(columnPropertiesData: js.Array[SettableColumnProperties]): scala.Unit = js.native
-  def setColumnProperties(
-    columnPropertiesData: officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[SettableColumnProperties]]
-  ): scala.Unit = js.native
   /**
     *
     * Set a range to be recalculated when the next recalculation occurs.
@@ -1154,9 +1180,6 @@ class Range ()
     * @beta
     */
   def setRowProperties(rowPropertiesData: js.Array[SettableRowProperties]): scala.Unit = js.native
-  def setRowProperties(
-    rowPropertiesData: officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[SettableRowProperties]]
-  ): scala.Unit = js.native
   /**
     *
     * Displays the card for an active cell if it has rich value content.

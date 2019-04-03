@@ -39,9 +39,6 @@ object Driver extends js.Object {
     *   Firefox-specific commands.
     *
     *   _This parameter may only be used with Mozilla's GeckoDriver._
-    *
-    * @param {promise.ControlFlow=} opt_flow The flow to
-    *     schedule commands through. Defaults to the active flow object.
     * @throws {Error} If a custom command executor is provided and the driver is
     *     configured to use the legacy FirefoxDriver from the Selenium project.
     * @return {!Driver} A new driver instance.
@@ -54,17 +51,7 @@ object Driver extends js.Object {
   ): seleniumDashWebdriverLib.firefoxMod.Driver = js.native
   def createSession(
     opt_config: seleniumDashWebdriverLib.firefoxMod.Options,
-    opt_executor: seleniumDashWebdriverLib.httpMod.Executor,
-    opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow
-  ): seleniumDashWebdriverLib.firefoxMod.Driver = js.native
-  def createSession(
-    opt_config: seleniumDashWebdriverLib.firefoxMod.Options,
     opt_executor: seleniumDashWebdriverLib.remoteMod.DriverService
-  ): seleniumDashWebdriverLib.firefoxMod.Driver = js.native
-  def createSession(
-    opt_config: seleniumDashWebdriverLib.firefoxMod.Options,
-    opt_executor: seleniumDashWebdriverLib.remoteMod.DriverService,
-    opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow
   ): seleniumDashWebdriverLib.firefoxMod.Driver = js.native
   def createSession(opt_config: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities): seleniumDashWebdriverLib.firefoxMod.Driver = js.native
   def createSession(
@@ -73,17 +60,7 @@ object Driver extends js.Object {
   ): seleniumDashWebdriverLib.firefoxMod.Driver = js.native
   def createSession(
     opt_config: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities,
-    opt_executor: seleniumDashWebdriverLib.httpMod.Executor,
-    opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow
-  ): seleniumDashWebdriverLib.firefoxMod.Driver = js.native
-  def createSession(
-    opt_config: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities,
     opt_executor: seleniumDashWebdriverLib.remoteMod.DriverService
-  ): seleniumDashWebdriverLib.firefoxMod.Driver = js.native
-  def createSession(
-    opt_config: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities,
-    opt_executor: seleniumDashWebdriverLib.remoteMod.DriverService,
-    opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow
   ): seleniumDashWebdriverLib.firefoxMod.Driver = js.native
 }
 

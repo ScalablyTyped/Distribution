@@ -25,6 +25,7 @@ trait UnderscoreStatic extends js.Object {
     * @param key First argument to Underscore object functions.
     **/
   def apply[T](value: Dictionary[T]): Underscore[T] = js.native
+  def apply[T](value: List[T]): Underscore[T] = js.native
   /**
     * Creates a version of the function that will only be run after first being called count times. Useful
     * for grouping asynchronous responses, where you want to be sure that all the async calls have finished,

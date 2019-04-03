@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stream-buffers"
-version := "3.0-dt-20180214Z-50468f"
+version := "3.0-dt-20190402Z-50468f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

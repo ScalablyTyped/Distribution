@@ -24,7 +24,7 @@ class TouchSequence protected () extends js.Object {
     * Flick, starting anywhere on the screen, at speed xspeed and yspeed.
     *
     * @param {{xspeed: number, yspeed: number}} speed The speed to flick in each
-    direction, in pixels per second.
+    *    direction, in pixels per second.
     * @return {!TouchSequence} A self reference.
     */
   def flick(speed: ISpeed): TouchSequence = js.native
@@ -53,10 +53,10 @@ class TouchSequence protected () extends js.Object {
   def move(location: ILocation): TouchSequence = js.native
   /**
     * Executes this action sequence.
-    * @return {!promise.Promise} A promise that will be resolved once
+    * @return {!Promise} A promise that will be resolved once
     *     this sequence has completed.
     */
-  def perform(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit] = js.native
+  def perform(): js.Promise[scala.Unit] = js.native
   /**
     * Release a held {@linkplain #tapAndHold touch} at the specified location.
     *

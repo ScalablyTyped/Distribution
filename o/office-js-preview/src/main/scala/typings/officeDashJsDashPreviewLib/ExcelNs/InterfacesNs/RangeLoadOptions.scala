@@ -106,6 +106,14 @@ trait RangeLoadOptions extends js.Object {
   var hasSpill: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * Returns the distance in points, for 100% zoom, from top edge of the range to bottom edge of the range. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var height: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Represents if all cells of the current range are hidden. Read-only.
     *
     * [Api set: ExcelApi 1.2]
@@ -132,6 +140,14 @@ trait RangeLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.7]
     */
   var isEntireRow: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Returns the distance in points, for 100% zoom, from left edge of the worksheet to left edge of the range. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var left: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * Represents the data type state of each cell. Read-only.
@@ -195,6 +211,14 @@ trait RangeLoadOptions extends js.Object {
   var text: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * Returns the distance in points, for 100% zoom, from top edge of the worksheet to top edge of the range. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var top: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Represents the type of data of each cell. Read-only.
     *
     * [Api set: ExcelApi 1.1]
@@ -208,6 +232,14 @@ trait RangeLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var values: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Returns the distance in points, for 100% zoom, from left edge of the range to right edge of the range. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var width: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * The worksheet containing the current range.
@@ -233,10 +265,12 @@ object RangeLoadOptions {
     formulasLocal: js.UndefOr[scala.Boolean] = js.undefined,
     formulasR1C1: js.UndefOr[scala.Boolean] = js.undefined,
     hasSpill: js.UndefOr[scala.Boolean] = js.undefined,
+    height: js.UndefOr[scala.Boolean] = js.undefined,
     hidden: js.UndefOr[scala.Boolean] = js.undefined,
     hyperlink: js.UndefOr[scala.Boolean] = js.undefined,
     isEntireColumn: js.UndefOr[scala.Boolean] = js.undefined,
     isEntireRow: js.UndefOr[scala.Boolean] = js.undefined,
+    left: js.UndefOr[scala.Boolean] = js.undefined,
     linkedDataTypeState: js.UndefOr[scala.Boolean] = js.undefined,
     numberFormat: js.UndefOr[scala.Boolean] = js.undefined,
     numberFormatLocal: js.UndefOr[scala.Boolean] = js.undefined,
@@ -245,8 +279,10 @@ object RangeLoadOptions {
     rowIndex: js.UndefOr[scala.Boolean] = js.undefined,
     style: js.UndefOr[scala.Boolean] = js.undefined,
     text: js.UndefOr[scala.Boolean] = js.undefined,
+    top: js.UndefOr[scala.Boolean] = js.undefined,
     valueTypes: js.UndefOr[scala.Boolean] = js.undefined,
     values: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[scala.Boolean] = js.undefined,
     worksheet: WorksheetLoadOptions = null
   ): RangeLoadOptions = {
     val __obj = js.Dynamic.literal()
@@ -263,10 +299,12 @@ object RangeLoadOptions {
     if (!js.isUndefined(formulasLocal)) __obj.updateDynamic("formulasLocal")(formulasLocal)
     if (!js.isUndefined(formulasR1C1)) __obj.updateDynamic("formulasR1C1")(formulasR1C1)
     if (!js.isUndefined(hasSpill)) __obj.updateDynamic("hasSpill")(hasSpill)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
     if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
     if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink)
     if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn)
     if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow)
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
     if (!js.isUndefined(linkedDataTypeState)) __obj.updateDynamic("linkedDataTypeState")(linkedDataTypeState)
     if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat)
     if (!js.isUndefined(numberFormatLocal)) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal)
@@ -275,8 +313,10 @@ object RangeLoadOptions {
     if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex)
     if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
     if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
     if (!js.isUndefined(valueTypes)) __obj.updateDynamic("valueTypes")(valueTypes)
     if (!js.isUndefined(values)) __obj.updateDynamic("values")(values)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
     if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet)
     __obj.asInstanceOf[RangeLoadOptions]
   }

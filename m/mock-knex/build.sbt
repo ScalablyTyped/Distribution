@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mock-knex"
-version := "0.3-dt-20190314Z-2581d6"
+version := "0.3-dt-20190314Z-9a9b18"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,15 +10,15 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-986805",
   "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
-  "org.scalablytyped" %%% "commander" % "2.19.0-4db880",
+  "org.scalablytyped" %%% "commander" % "2.20.0-8f0f6f",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
   "org.scalablytyped" %%% "fined" % "1.1-dt-20190212Z-9ce3ac",
   "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-75670b",
   "org.scalablytyped" %%% "interpret" % "1.1-dt-20190212Z-dcb20e",
-  "org.scalablytyped" %%% "knex" % "0.16.3-445c67",
+  "org.scalablytyped" %%% "knex" % "0.16.3-b3458c",
   "org.scalablytyped" %%% "liftoff" % "2.5-dt-20181206Z-4f5b6f",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",
   "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-6520aa",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",

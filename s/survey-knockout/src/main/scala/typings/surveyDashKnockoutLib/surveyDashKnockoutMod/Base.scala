@@ -36,7 +36,7 @@ class Base () extends js.Object {
   /* protected */ def getPropertyValueCore(propertiesHash: js.Any, name: java.lang.String): js.Any = js.native
   def getPropertyValueCoreHandler(propertiesHash: js.Any, name: java.lang.String): js.Any = js.native
   /**
-    * Returns the element template name without prefix. Typically it equals to getType()
+    * Returns the element template name without prefix. Typically it equals to getType().
     * @see getType
     */
   def getTemplate(): java.lang.String = js.native

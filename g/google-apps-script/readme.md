@@ -155,6 +155,10 @@
 // Generator: https://github.com/grant/google-apps-script-dts
 // Definitions by: grant <https://github.com/grant/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-04-02
+// Project: https://developers.google.com/apps-script/
+// Definitions by: grant <https://github.com/grant/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // Type definitions for Google Apps Script 2019-02-27
 // Project: https://developers.google.com/apps-script/
 // Definitions by: motemen <https://github.com/motemen/>

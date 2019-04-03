@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "3.16.1-285cad"
+version := "3.16.1-a115b2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ant-design__icons" % "1.2.1-1f3517",
-  "org.scalablytyped" %%% "ant-design__icons-react" % "1.1.2-89291a",
+  "org.scalablytyped" %%% "ant-design__icons-react" % "1.1.4-89291a",
   "org.scalablytyped" %%% "array-tree-filter" % "2.1.0-ab2410",
   "org.scalablytyped" %%% "classnames" % "2.2-dt-20190326Z-9fc905",
   "org.scalablytyped" %%% "copy-to-clipboard" % "3.0.8-b2be1d",
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "create-react-context" % "0.2.2-12f0fd",
   "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
   "org.scalablytyped" %%% "enquire_dot_js" % "2.1-dt-20190212Z-ff324a",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "moment" % "2.24.0-da0e25",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",

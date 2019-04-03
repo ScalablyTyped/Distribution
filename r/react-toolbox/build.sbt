@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-toolbox"
-version := "2.0.0-beta.13-85057d"
+version := "2.0.0-beta.13-860014"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20190322Z-4a316b",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
-  "org.scalablytyped" %%% "ramda" % "0.26-dt-20190330Z-f40bca",
+  "org.scalablytyped" %%% "ramda" % "0.26-dt-20190330Z-26caa6",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
   "org.scalablytyped" %%% "react-css-themr" % "2.1.2-386206",
   "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-348bcf",

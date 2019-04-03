@@ -15,10 +15,10 @@ class Condition[T] protected () extends js.Object {
     *     evaluate on each iteration of the wait loop.
     * @constructor
     */
-  def this(message: java.lang.String, fn: js.Function1[/* webdriver */ WebDriver, _]) = this()
+  def this(message: java.lang.String, fn: js.Function1[/* webdriver */ WebDriver, T]) = this()
   /** @return {string} A description of this condition. */
   def description(): java.lang.String = js.native
   /** @type {function(!WebDriver): OUT} */
-  def fn(webdriver: WebDriver): js.Any = js.native
+  def fn(webdriver: WebDriver): T = js.native
 }
 

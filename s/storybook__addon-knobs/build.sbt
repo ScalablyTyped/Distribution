@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-knobs"
-version := "4.0-dt-20190312Z-36d5c5"
+version := "4.0-dt-20190402Z-942189"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -20,11 +20,15 @@ trait Ora extends js.Object {
   	 */
   val isSpinning: scala.Boolean = js.native
   /**
+  	 * Change the text before the spinner.
+  	 */
+  var prefixText: java.lang.String = js.native
+  /**
   	 * Change the spinner.
   	 */
   var spinner: cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName | Spinner = js.native
   /**
-  	 * Change the text.
+  	 * Change the text after the spinner.
   	 */
   var text: java.lang.String = js.native
   /**

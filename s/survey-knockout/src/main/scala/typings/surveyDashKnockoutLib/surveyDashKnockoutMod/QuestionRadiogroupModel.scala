@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuestionRadiogroupModel protected () extends QuestionCheckboxBase {
   def this(name: java.lang.String) = this()
+  val canShowClearButton: scala.Boolean = js.native
   val clearButtonCaption: js.Any = js.native
   /**
     * Show "clear button" flag.

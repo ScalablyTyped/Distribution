@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rmc-date-picker"
-version := "6.0.8-59528b"
+version := "6.0.9-5a5300"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "editorconfig"
-version := "0.15.3-8c28b3"
+version := "0.15.3-cd0158"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "commander" % "2.19.0-4db880",
+  "org.scalablytyped" %%% "commander" % "2.20.0-8f0f6f",
   "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-34c823",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "semver" % "6.0-dt-20190330Z-1b8b1f",

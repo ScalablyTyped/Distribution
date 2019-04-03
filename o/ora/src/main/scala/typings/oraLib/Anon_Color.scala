@@ -37,6 +37,10 @@ trait Anon_Color extends js.Object {
   	 */
   var isEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
+  	 * Text to display before the spinner.
+  	 */
+  var prefixText: js.UndefOr[java.lang.String] = js.undefined
+  /**
   	 * Name of one of the provided spinners. See [`example.js`](https://github.com/BendingBender/ora/blob/master/example.js) in this repo if you want to test out different spinners. On Windows, it will always use the line spinner as the Windows command-line doesn't have proper Unicode support.
   	 *
   	 * @default 'dots'
@@ -76,6 +80,7 @@ object Anon_Color {
     indent: scala.Int | scala.Double = null,
     interval: scala.Int | scala.Double = null,
     isEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    prefixText: java.lang.String = null,
     spinner: cliDashSpinnersLib.cliDashSpinnersMod.cliSpinnersNs.SpinnerName | oraLib.oraMod.Spinner = null,
     stream: nodeLib.streamMod.Writable = null,
     text: java.lang.String = null
@@ -86,6 +91,7 @@ object Anon_Color {
     if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
     if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled)
+    if (prefixText != null) __obj.updateDynamic("prefixText")(prefixText)
     if (spinner != null) __obj.updateDynamic("spinner")(spinner.asInstanceOf[js.Any])
     if (stream != null) __obj.updateDynamic("stream")(stream)
     if (text != null) __obj.updateDynamic("text")(text)

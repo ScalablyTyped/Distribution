@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "soap"
-version := "0.26.0-af4b37"
+version := "0.26.0-f88293"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-c31b2e",
   "org.scalablytyped" %%% "finalhandler" % "0.0-unknown-dt-20190322Z-efa96d",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-57c0e7",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-623d43",

@@ -26,16 +26,16 @@ class Logs protected () extends js.Object {
     * session.
     *
     * @param {!logging.Type} type The desired log type.
-    * @return {!promise.Promise.<!Array.<!logging.Entry>>} A
+    * @return {!Promise.<!Array.<!logging.Entry>>} A
     *   promise that will resolve to a list of log entries for the specified
     *   type.
     */
-  def get(`type`: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.loggingNs.Entry]] = js.native
+  def get(`type`: java.lang.String): js.Promise[js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.loggingNs.Entry]] = js.native
   /**
     * Retrieves the log types available to this driver.
-    * @return {!promise.Promise.<!Array.<!logging.Type>>} A
+    * @return {!Promise.<!Array.<!logging.Type>>} A
     *     promise that will resolve to a list of available log types.
     */
-  def getAvailableLogTypes(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[java.lang.String]] = js.native
+  def getAvailableLogTypes(): js.Promise[js.Array[java.lang.String]] = js.native
 }
 

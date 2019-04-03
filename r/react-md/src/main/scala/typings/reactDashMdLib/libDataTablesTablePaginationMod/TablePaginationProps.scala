@@ -31,6 +31,14 @@ trait TablePaginationProps
   var incrementIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var incrementId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var page: js.UndefOr[scala.Double] = js.undefined
+  var paginationLabel: js.UndefOr[
+    js.Function3[
+      /* startRow */ scala.Double, 
+      /* lastRow */ scala.Double, 
+      /* totalRows */ scala.Double, 
+      java.lang.String
+    ]
+  ] = js.undefined
   var rows: scala.Double
   var rowsPerPage: js.UndefOr[scala.Double] = js.undefined
   var rowsPerPageItems: js.UndefOr[js.Array[scala.Double]] = js.undefined
@@ -85,6 +93,7 @@ object TablePaginationProps {
     onTouchMove: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
     onTouchStart: /* event */ reactLib.reactMod.ReactNs.TouchEvent[stdLib.HTMLElement] => scala.Unit = null,
     page: scala.Int | scala.Double = null,
+    paginationLabel: (/* startRow */ scala.Double, /* lastRow */ scala.Double, /* totalRows */ scala.Double) => java.lang.String = null,
     rowsPerPage: scala.Int | scala.Double = null,
     rowsPerPageItems: js.Array[scala.Double] = null,
     rowsPerPageLabel: reactLib.reactMod.ReactNs.ReactNode = null,
@@ -133,6 +142,7 @@ object TablePaginationProps {
     if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1(onTouchMove))
     if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1(onTouchStart))
     if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (paginationLabel != null) __obj.updateDynamic("paginationLabel")(js.Any.fromFunction3(paginationLabel))
     if (rowsPerPage != null) __obj.updateDynamic("rowsPerPage")(rowsPerPage.asInstanceOf[js.Any])
     if (rowsPerPageItems != null) __obj.updateDynamic("rowsPerPageItems")(rowsPerPageItems)
     if (rowsPerPageLabel != null) __obj.updateDynamic("rowsPerPageLabel")(rowsPerPageLabel.asInstanceOf[js.Any])

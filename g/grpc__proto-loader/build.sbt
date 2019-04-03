@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "grpc__proto-loader"
-version := "0.4.0-205cfa"
+version := "0.4.0-08d842"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
-  "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20190214Z-31acdf",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
+  "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20190214Z-01e943",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20190322Z-418504",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "protobufjs" % "6.8.8-656775",

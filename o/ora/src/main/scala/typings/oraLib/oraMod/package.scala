@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 package object oraMod {
   type Options = stdLib.Readonly[oraLib.Anon_Color]
-  type PersistOptions = stdLib.Readonly[oraLib.Anon_Symbol]
+  type PersistOptions = stdLib.Readonly[oraLib.Anon_PrefixText]
   type Spinner = stdLib.Readonly[oraLib.Anon_Frames]
 }

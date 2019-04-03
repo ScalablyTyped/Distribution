@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic__utils-subprocess"
-version := "0.1.0-8dc5d9"
+version := "0.1.0-b90a67"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,10 +12,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ionic__utils-array" % "0.0.1-d2e142",
   "org.scalablytyped" %%% "ionic__utils-fs" % "1.2.0-a89099",
   "org.scalablytyped" %%% "ionic__utils-object" % "0.0.1-a4bb6f",
-  "org.scalablytyped" %%% "ionic__utils-process" % "0.1.0-dbf088",
+  "org.scalablytyped" %%% "ionic__utils-process" % "0.1.0-753fa0",
   "org.scalablytyped" %%% "ionic__utils-stream" % "0.0.1-8e2f8a",
   "org.scalablytyped" %%% "ionic__utils-terminal" % "0.0.1-afccfe",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "through2" % "2.0-dt-20190322Z-d326d3",

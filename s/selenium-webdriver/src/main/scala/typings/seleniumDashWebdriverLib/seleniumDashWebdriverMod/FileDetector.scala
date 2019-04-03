@@ -20,10 +20,10 @@ class FileDetector () extends js.Object {
     *
     * @param {!WebDriver} driver The driver for the current browser.
     * @param {string} path The path to process.
-    * @return {!promise.Promise<string>} A promise for the processed
+    * @return {!Promise<string>} A promise for the processed
     *     file path.
     * @package
     */
-  def handleFile(driver: WebDriver, path: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
+  def handleFile(driver: WebDriver, path: java.lang.String): js.Promise[java.lang.String] = js.native
 }
 

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "cfb"
-version := "1.1.0-f7d256"
+version := "1.1.0-d9b93f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "adler-32" % "1.2.0-5dd5eb",
-  "org.scalablytyped" %%% "commander" % "2.19.0-4db880",
+  "org.scalablytyped" %%% "commander" % "2.20.0-8f0f6f",
   "org.scalablytyped" %%% "crc-32" % "1.2.0-075bed",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "printj" % "1.1.2-db9aa0",

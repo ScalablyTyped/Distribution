@@ -12,7 +12,7 @@ trait TypeConstructorOptions extends js.Object {
   var kind: js.UndefOr[
     jsDashYamlLib.jsDashYamlLibStrings.sequence | jsDashYamlLib.jsDashYamlLibStrings.scalar | jsDashYamlLib.jsDashYamlLibStrings.mapping
   ] = js.undefined
-  var predicate: js.UndefOr[java.lang.String] = js.undefined
+  var predicate: js.UndefOr[js.Function1[/* data */ js.Object, scala.Boolean]] = js.undefined
   var represent: js.UndefOr[
     (js.Function1[/* data */ js.Object, _]) | (org.scalablytyped.runtime.StringDictionary[js.Function1[/* data */ js.Object, _]])
   ] = js.undefined
@@ -27,7 +27,7 @@ object TypeConstructorOptions {
     defaultStyle: java.lang.String = null,
     instanceOf: js.Object = null,
     kind: jsDashYamlLib.jsDashYamlLibStrings.sequence | jsDashYamlLib.jsDashYamlLibStrings.scalar | jsDashYamlLib.jsDashYamlLibStrings.mapping = null,
-    predicate: java.lang.String = null,
+    predicate: /* data */ js.Object => scala.Boolean = null,
     represent: (js.Function1[/* data */ js.Object, _]) | (org.scalablytyped.runtime.StringDictionary[js.Function1[/* data */ js.Object, _]]) = null,
     resolve: /* data */ js.Any => scala.Boolean = null,
     styleAliases: org.scalablytyped.runtime.StringDictionary[js.Any] = null
@@ -37,7 +37,7 @@ object TypeConstructorOptions {
     if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
     if (instanceOf != null) __obj.updateDynamic("instanceOf")(instanceOf)
     if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (predicate != null) __obj.updateDynamic("predicate")(predicate)
+    if (predicate != null) __obj.updateDynamic("predicate")(js.Any.fromFunction1(predicate))
     if (represent != null) __obj.updateDynamic("represent")(represent.asInstanceOf[js.Any])
     if (resolve != null) __obj.updateDynamic("resolve")(js.Any.fromFunction1(resolve))
     if (styleAliases != null) __obj.updateDynamic("styleAliases")(styleAliases)

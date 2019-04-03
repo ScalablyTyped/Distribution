@@ -41,6 +41,7 @@ object VariableSizeGridProps {
     rowHeight: scala.Double => scala.Double,
     width: scala.Double,
     className: java.lang.String = null,
+    direction: CSSDirection = null,
     estimatedColumnWidth: scala.Int | scala.Double = null,
     estimatedRowHeight: scala.Int | scala.Double = null,
     initialScrollLeft: scala.Int | scala.Double = null,
@@ -63,6 +64,7 @@ object VariableSizeGridProps {
   ): VariableSizeGridProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount, columnWidth = js.Any.fromFunction1(columnWidth), height = height, rowCount = rowCount, rowHeight = js.Any.fromFunction1(rowHeight), width = width)
     if (className != null) __obj.updateDynamic("className")(className)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
     if (estimatedColumnWidth != null) __obj.updateDynamic("estimatedColumnWidth")(estimatedColumnWidth.asInstanceOf[js.Any])
     if (estimatedRowHeight != null) __obj.updateDynamic("estimatedRowHeight")(estimatedRowHeight.asInstanceOf[js.Any])
     if (initialScrollLeft != null) __obj.updateDynamic("initialScrollLeft")(initialScrollLeft.asInstanceOf[js.Any])

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-engine-reporting"
-version := "1.0.7-911db6"
+version := "1.0.7-d57297"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,13 +8,13 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.1-2c0f8d",
   "org.scalablytyped" %%% "apollo-env" % "0.4.0-252d61",
-  "org.scalablytyped" %%% "apollo-graphql" % "0.1.3-174137",
+  "org.scalablytyped" %%% "apollo-graphql" % "0.1.3-f47951",
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-c1f5de",
   "org.scalablytyped" %%% "async-retry" % "1.3-dt-20190331Z-721ee5",
   "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-0940d0",
   "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-d9f4a2",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190329Z-69a948",
-  "org.scalablytyped" %%% "lodash_dot_sortby" % "4.7-dt-20190214Z-87af72",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
+  "org.scalablytyped" %%% "lodash_dot_sortby" % "4.7-dt-20190214Z-273079",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20190322Z-418504",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-2db1bb",
