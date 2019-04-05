@@ -1,27 +1,27 @@
 organization := "org.scalablytyped"
 name := "firebase"
-version := "5.9.2-556ccc"
+version := "5.9.3-17281e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-0940d0",
-  "org.scalablytyped" %%% "firebase__app" % "0.3.13-98bb0f",
+  "org.scalablytyped" %%% "firebase__app" % "0.3.14-98bb0f",
   "org.scalablytyped" %%% "firebase__app-types" % "0.3.7-7f6007",
-  "org.scalablytyped" %%% "firebase__auth" % "0.9.6-7bbed1",
+  "org.scalablytyped" %%% "firebase__auth" % "0.9.7-f57273",
   "org.scalablytyped" %%% "firebase__auth-types" % "0.5.5-78bb60",
-  "org.scalablytyped" %%% "firebase__database" % "0.3.16-44fdaa",
+  "org.scalablytyped" %%% "firebase__database" % "0.3.17-aa73d6",
   "org.scalablytyped" %%% "firebase__database-types" % "0.3.8-ecbfa3",
-  "org.scalablytyped" %%% "firebase__firestore" % "1.1.2-9bee36",
+  "org.scalablytyped" %%% "firebase__firestore" % "1.1.3-0af88d",
   "org.scalablytyped" %%% "firebase__firestore-types" % "1.1.1-aa096a",
-  "org.scalablytyped" %%% "firebase__functions" % "0.4.3-aa54ef",
+  "org.scalablytyped" %%% "firebase__functions" % "0.4.3-ba1e15",
   "org.scalablytyped" %%% "firebase__functions-types" % "0.3.2-f7ef9b",
   "org.scalablytyped" %%% "firebase__logger" % "0.1.10-5150c2",
-  "org.scalablytyped" %%% "firebase__messaging" % "0.3.15-3261e9",
+  "org.scalablytyped" %%% "firebase__messaging" % "0.3.16-59c9c4",
   "org.scalablytyped" %%% "firebase__messaging-types" % "0.2.8-acfb16",
-  "org.scalablytyped" %%% "firebase__polyfill" % "0.3.9-64e0a8",
-  "org.scalablytyped" %%% "firebase__storage" % "0.2.12-0e096a",
+  "org.scalablytyped" %%% "firebase__polyfill" % "0.3.10-64e0a8",
+  "org.scalablytyped" %%% "firebase__storage" % "0.2.12-214272",
   "org.scalablytyped" %%% "firebase__storage-types" % "0.2.8-e2beba",
   "org.scalablytyped" %%% "firebase__util" % "0.2.11-c3b119",
   "org.scalablytyped" %%% "grpc" % "1.19.0-f64cd7",

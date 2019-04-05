@@ -7,23 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Location extends js.Object {
   /**
-    * The address of the location.
-    */
-  var address: js.UndefOr[Address] = js.undefined
-  /**
     * A set of regions relevant to the location.
     */
   var annotations: js.UndefOr[js.Array[Region]] = js.undefined
   /**
-    * The human-readable fully qualified name of the logical location. If run.logicalLocations is present, this value
-    * matches a property name within that object, from which further information about the logical location can be
-    * obtained.
+    * The logical location associated with the result.
     */
-  var fullyQualifiedLogicalName: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * The index within the logical locations array of the logical location associated with the result.
-    */
-  var logicalLocationIndex: js.UndefOr[scala.Double] = js.undefined
+  var logicalLocation: js.UndefOr[LogicalLocation] = js.undefined
   /**
     * A message relevant to the location.
     */
@@ -41,19 +31,15 @@ trait Location extends js.Object {
 object Location {
   @scala.inline
   def apply(
-    address: Address = null,
     annotations: js.Array[Region] = null,
-    fullyQualifiedLogicalName: java.lang.String = null,
-    logicalLocationIndex: scala.Int | scala.Double = null,
+    logicalLocation: LogicalLocation = null,
     message: Message = null,
     physicalLocation: PhysicalLocation = null,
     properties: PropertyBag = null
   ): Location = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
     if (annotations != null) __obj.updateDynamic("annotations")(annotations)
-    if (fullyQualifiedLogicalName != null) __obj.updateDynamic("fullyQualifiedLogicalName")(fullyQualifiedLogicalName)
-    if (logicalLocationIndex != null) __obj.updateDynamic("logicalLocationIndex")(logicalLocationIndex.asInstanceOf[js.Any])
+    if (logicalLocation != null) __obj.updateDynamic("logicalLocation")(logicalLocation)
     if (message != null) __obj.updateDynamic("message")(message)
     if (physicalLocation != null) __obj.updateDynamic("physicalLocation")(physicalLocation)
     if (properties != null) __obj.updateDynamic("properties")(properties)

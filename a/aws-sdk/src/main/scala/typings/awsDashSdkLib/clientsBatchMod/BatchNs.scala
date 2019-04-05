@@ -296,6 +296,10 @@ object BatchNs extends js.Object {
       */
     var reason: js.UndefOr[String] = js.undefined
     /**
+      * The type and amount of a resource to assign to a container. Currently, the only supported resource is GPU.
+      */
+    var resourceRequirements: js.UndefOr[ResourceRequirements] = js.undefined
+    /**
       * The Amazon Resource Name (ARN) of the Amazon ECS task that is associated with the container job. Each container attempt receives a task ARN when they reach the STARTING status.
       */
     var taskArn: js.UndefOr[String] = js.undefined
@@ -334,6 +338,10 @@ object BatchNs extends js.Object {
       * The number of MiB of memory reserved for the job. This value overrides the value set in the job definition.
       */
     var memory: js.UndefOr[Integer] = js.undefined
+    /**
+      * The type and amount of a resource to assign to a container. This value overrides the value set in the job definition. Currently, the only supported resource is GPU.
+      */
+    var resourceRequirements: js.UndefOr[ResourceRequirements] = js.undefined
     /**
       * The number of vCPUs to reserve for the container. This value overrides the value set in the job definition.
       */
@@ -377,6 +385,10 @@ object BatchNs extends js.Object {
       * When this parameter is true, the container is given read-only access to its root file system. This parameter maps to ReadonlyRootfs in the Create a container section of the Docker Remote API and the --read-only option to docker run.
       */
     var readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined
+    /**
+      * The type and amount of a resource to assign to a container. Currently, the only supported resource is GPU.
+      */
+    var resourceRequirements: js.UndefOr[ResourceRequirements] = js.undefined
     /**
       * A list of ulimits to set in the container. This parameter maps to Ulimits in the Create a container section of the Docker Remote API and the --ulimit option to docker run.
       */
@@ -622,7 +634,7 @@ object BatchNs extends js.Object {
       */
     var nodeProperties: js.UndefOr[NodeProperties] = js.undefined
     /**
-      * Default parameters or parameter substitution placeholders that are set in the job definition. Parameters are specified as a key-value pair mapping. Parameters in a SubmitJob request override any corresponding parameter defaults from the job definition.
+      * Default parameters or parameter substitution placeholders that are set in the job definition. Parameters are specified as a key-value pair mapping. Parameters in a SubmitJob request override any corresponding parameter defaults from the job definition. For more information about specifying parameters, see Job Definition Parameters in the AWS Batch User Guide.
       */
     var parameters: js.UndefOr[ParametersMap] = js.undefined
     /**
@@ -924,11 +936,15 @@ object BatchNs extends js.Object {
       * The node property overrides for the job.
       */
     var nodePropertyOverrides: js.UndefOr[NodePropertyOverrides] = js.undefined
+    /**
+      * The number of nodes to use with a multi-node parallel job. This value overrides the number of nodes that are specified in the job definition. To use this override:   There must be at least one node range in your job definition that has an open upper boundary (such as : or n:).   The lower boundary of the node range specified in the job definition must be fewer than the number of nodes specified in the override.   The main node index specified in the job definition must be fewer than the number of nodes specified in the override.  
+      */
+    var numNodes: js.UndefOr[Integer] = js.undefined
   }
   
   trait NodeProperties extends js.Object {
     /**
-      * Specifies the node index for the main node of a multi-node parallel job.
+      * Specifies the node index for the main node of a multi-node parallel job. This node index value must be fewer than the number of nodes.
       */
     var mainNode: Integer
     /**
@@ -1025,6 +1041,17 @@ object BatchNs extends js.Object {
       * The revision of the job definition.
       */
     var revision: Integer
+  }
+  
+  trait ResourceRequirement extends js.Object {
+    /**
+      * The type of resource to assign to a container. Currently, the only supported resource type is GPU.
+      */
+    var `type`: ResourceType
+    /**
+      * The number of physical GPUs to reserve for the container. The number of GPUs reserved for all containers in a job should not exceed the number of available GPUs on the compute resource that the job is launched on.
+      */
+    var value: String
   }
   
   trait RetryStrategy extends js.Object {
@@ -1670,6 +1697,8 @@ object BatchNs extends js.Object {
   type NetworkInterfaceList = js.Array[NetworkInterface]
   type NodePropertyOverrides = js.Array[NodePropertyOverride]
   type NodeRangeProperties = js.Array[NodeRangeProperty]
+  type ResourceRequirements = js.Array[ResourceRequirement]
+  type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.GPU | java.lang.String
   type String = java.lang.String
   type StringList = js.Array[String]
   type Ulimits = js.Array[Ulimit]

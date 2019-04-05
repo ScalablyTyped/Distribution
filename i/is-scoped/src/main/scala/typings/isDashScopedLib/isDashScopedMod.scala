@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("is-scoped", JSImport.Namespace)
 @js.native
-object isDashScopedMod extends js.Object {
-  def default(input: java.lang.String): scala.Boolean = js.native
-}
+object isDashScopedMod
+  extends org.scalablytyped.runtime.TopLevel[Anon_DefaultInput]
 

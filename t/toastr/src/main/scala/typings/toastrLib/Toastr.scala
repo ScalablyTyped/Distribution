@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Toastr
-  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+trait Toastr extends js.Object {
   /**
   	 * Clear toasts
   	 */
@@ -52,22 +51,6 @@ trait Toastr
   @JSName("warning")
   var warning_Original: ToastrDisplayMethod = js.native
   /**
-  		 * Clear all toasts
-  		 */
-  /**
-  	 * Clear toasts
-  	 */
-  def clear(): scala.Unit = js.native
-  /**
-  		 * Clear specific toast
-  		 *
-  		 * @param toast Toast to clear
-  		 */
-  /**
-  	 * Clear toasts
-  	 */
-  def clear(toast: jqueryLib.JQuery[stdLib.HTMLElement]): scala.Unit = js.native
-  /**
   		 * Clear specific toast
   		 *
   		 * @param toast Toast to clear
@@ -76,36 +59,14 @@ trait Toastr
   /**
   	 * Clear toasts
   	 */
+  def clear(): scala.Unit = js.native
+  def clear(toast: jqueryLib.JQuery[stdLib.HTMLElement]): scala.Unit = js.native
   def clear(toast: jqueryLib.JQuery[stdLib.HTMLElement], clearOptions: Anon_Force): scala.Unit = js.native
-  /**
-  	 * Create a toast
-  	 *
-  	 * @param message Message to display in toast
-  	 */
   /**
   	 * Create an error toast
   	 */
   def error(message: java.lang.String): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
-  /**
-  	 * Create a toast
-  	 *
-  	 * @param message Message to display in toast
-  	 * @param title Title to display on toast
-  	 */
-  /**
-  	 * Create an error toast
-  	 */
   def error(message: java.lang.String, title: java.lang.String): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
-  /**
-  	 * Create a toast
-  	 *
-  	 * @param message Message to display in toast
-  	 * @param title Title to display on toast
-  	 * @param overrides Option values for toast
-  	 */
-  /**
-  	 * Create an error toast
-  	 */
   def error(message: java.lang.String, title: java.lang.String, overrides: ToastrOptions): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
   /**
   		 * Get the container by options.containerId.
@@ -129,34 +90,10 @@ trait Toastr
   	 */
   def getContainer(options: ToastrOptions, create: scala.Boolean): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
   /**
-  	 * Create a toast
-  	 *
-  	 * @param message Message to display in toast
-  	 */
-  /**
   	 * Create an info toast
   	 */
   def info(message: java.lang.String): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
-  /**
-  	 * Create a toast
-  	 *
-  	 * @param message Message to display in toast
-  	 * @param title Title to display on toast
-  	 */
-  /**
-  	 * Create an info toast
-  	 */
   def info(message: java.lang.String, title: java.lang.String): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
-  /**
-  	 * Create a toast
-  	 *
-  	 * @param message Message to display in toast
-  	 * @param title Title to display on toast
-  	 * @param overrides Option values for toast
-  	 */
-  /**
-  	 * Create an info toast
-  	 */
   def info(message: java.lang.String, title: java.lang.String, overrides: ToastrOptions): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
   /**
   		 * Removes all toasts (without animation)
@@ -179,66 +116,18 @@ trait Toastr
   	 *
   	 * @param callback The function which will be passed the event details.
   	 */
-  def subscribe(callback: js.Function1[/* response */ ToastrResponse, _]): scala.Unit = js.native
-  /**
-  	 * Create a toast
-  	 *
-  	 * @param message Message to display in toast
-  	 */
+  def subscribe(callback: js.Function1[/* response */ ToastrResponse, scala.Unit]): scala.Unit = js.native
   /**
   	 * Create a success toast
   	 */
   def success(message: java.lang.String): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
-  /**
-  	 * Create a toast
-  	 *
-  	 * @param message Message to display in toast
-  	 * @param title Title to display on toast
-  	 */
-  /**
-  	 * Create a success toast
-  	 */
   def success(message: java.lang.String, title: java.lang.String): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
-  /**
-  	 * Create a toast
-  	 *
-  	 * @param message Message to display in toast
-  	 * @param title Title to display on toast
-  	 * @param overrides Option values for toast
-  	 */
-  /**
-  	 * Create a success toast
-  	 */
   def success(message: java.lang.String, title: java.lang.String, overrides: ToastrOptions): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
-  /**
-  	 * Create a toast
-  	 *
-  	 * @param message Message to display in toast
-  	 */
   /**
   	 * Create a warning toast
   	 */
   def warning(message: java.lang.String): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
-  /**
-  	 * Create a toast
-  	 *
-  	 * @param message Message to display in toast
-  	 * @param title Title to display on toast
-  	 */
-  /**
-  	 * Create a warning toast
-  	 */
   def warning(message: java.lang.String, title: java.lang.String): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
-  /**
-  	 * Create a toast
-  	 *
-  	 * @param message Message to display in toast
-  	 * @param title Title to display on toast
-  	 * @param overrides Option values for toast
-  	 */
-  /**
-  	 * Create a warning toast
-  	 */
   def warning(message: java.lang.String, title: java.lang.String, overrides: ToastrOptions): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
 }
 

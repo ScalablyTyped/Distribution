@@ -67,6 +67,12 @@ object Configuration extends js.Object {
   def setInternalLogging(enableDebugLogging: scala.Boolean): applicationinsightsLib.Anon_CollectConsoleLog = js.native
   def setInternalLogging(enableDebugLogging: scala.Boolean, enableWarningLogging: scala.Boolean): applicationinsightsLib.Anon_CollectConsoleLog = js.native
   /**
+    * Enables communication with Application Insights Live Metrics.
+    * @param enable if true, enables communication with the live metrics service
+    */
+  def setSendLiveMetrics(): applicationinsightsLib.Anon_CollectConsoleLog = js.native
+  def setSendLiveMetrics(enable: scala.Boolean): applicationinsightsLib.Anon_CollectConsoleLog = js.native
+  /**
     * Enable or disable disk-backed retry caching to cache events when client is offline (enabled by default)
     * Note that this method only applies to the default client. Disk-backed retry caching is disabled by default for additional clients.
     * For enable for additional clients, use client.channel.setUseDiskRetryCaching(true).

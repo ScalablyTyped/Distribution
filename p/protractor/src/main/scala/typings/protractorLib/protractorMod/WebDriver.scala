@@ -9,19 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebDriver protected ()
   extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver {
+  def this(session: js.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session], executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor) = this()
   // region Constructors
   /**
-    * @param {!(Session|promise.Promise<!Session>)} session Either a
+    * @param {!(Session|Promise<!Session>)} session Either a
     *     known session or a promise that will be resolved to a session.
     * @param {!command.Executor} executor The executor to use when sending
     *     commands to the browser.
-    * @param {promise.ControlFlow=} opt_flow The flow to
-    *     schedule commands through. Defaults to the active flow object.
     */
   def this(session: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session, executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor) = this()
-  def this(session: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session], executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor) = this()
-  def this(session: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session, executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor, opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow) = this()
-  def this(session: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session], executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor, opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow) = this()
 }
 
 /* static members */
@@ -30,22 +26,6 @@ class WebDriver protected ()
 object WebDriver extends js.Object {
   // endregion
   // region StaticMethods
-  /**
-    * Creates a new WebDriver client for an existing session.
-    * @param {!command.Executor} executor Command executor to use when querying
-    *     for session details.
-    * @param {string} sessionId ID of the session to attach to.
-    * @param {promise.ControlFlow=} opt_flow The control flow all
-    *     driver commands should execute under. Defaults to the
-    *     {@link promise.controlFlow() currently active}  control flow.
-    * @return {!WebDriver} A new client for the specified session.
-    */
-  def attachToSession(executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor, sessionId: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver = js.native
-  def attachToSession(
-    executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor,
-    sessionId: java.lang.String,
-    opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver = js.native
   /**
     * Creates a new WebDriver session.
     *
@@ -102,8 +82,9 @@ object WebDriver extends js.Object {
     *    up any resources associated with the session.
     * @return {!WebDriver} The driver for the newly created session.
     */
-  // This method's arguments are untyped so that its overloads can have correct types.
-  // Typescript doesn't allow static methods to be overridden with incompatible signatures.
+  // This method's arguments are untyped so that its overloads can have correct
+  // types. Typescript doesn't allow static methods to be overridden with
+  // incompatible signatures.
   def createSession(var_args: js.Any*): seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver = js.native
 }
 

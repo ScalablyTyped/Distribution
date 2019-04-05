@@ -19,6 +19,7 @@ trait Anon_Data extends js.Object {
   var isSettled: reactDashAsyncLib.reactDashAsyncLibNumbers.`false`
   var startedAt: js.UndefOr[scala.Nothing]
   var status: reactDashAsyncLib.reactDashAsyncLibStrings.initial
+  var value: js.UndefOr[scala.Nothing]
 }
 
 object Anon_Data {
@@ -36,7 +37,8 @@ object Anon_Data {
     error: js.UndefOr[scala.Nothing] = js.undefined,
     finishedAt: js.UndefOr[scala.Nothing] = js.undefined,
     initialValue: js.UndefOr[scala.Nothing] = js.undefined,
-    startedAt: js.UndefOr[scala.Nothing] = js.undefined
+    startedAt: js.UndefOr[scala.Nothing] = js.undefined,
+    value: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_Data = {
     val __obj = js.Dynamic.literal(isFulfilled = isFulfilled, isInitial = isInitial, isLoading = isLoading, isPending = isPending, isRejected = isRejected, isResolved = isResolved, isSettled = isSettled, status = status)
     if (!js.isUndefined(data)) __obj.updateDynamic("data")(data)
@@ -44,6 +46,7 @@ object Anon_Data {
     if (!js.isUndefined(finishedAt)) __obj.updateDynamic("finishedAt")(finishedAt)
     if (!js.isUndefined(initialValue)) __obj.updateDynamic("initialValue")(initialValue)
     if (!js.isUndefined(startedAt)) __obj.updateDynamic("startedAt")(startedAt)
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[Anon_Data]
   }
 }

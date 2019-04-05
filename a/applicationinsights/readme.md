@@ -18,10 +18,6 @@
  * Base telemetry interface encapsulating comming properties
  */
 /**
- * Converts the user-friendly enumeration TelemetryType to the underlying schema baseType value
- * @param type Type to convert to BaseData string
- */
-/**
  * Encapsulates options passed into client.flush() function
  */
 ```

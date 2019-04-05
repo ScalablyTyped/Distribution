@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__common"
-version := "0.31.1-43ce2d"
+version := "0.32.0-e99a2a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,18 +15,18 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "event-target-shim" % "5.0.1-4b0f6d",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-ef9ad3",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-57c0e7",
-  "org.scalablytyped" %%% "gaxios" % "1.8.3-1377e7",
-  "org.scalablytyped" %%% "gcp-metadata" % "1.0.0-a30492",
-  "org.scalablytyped" %%% "google-auth-library" % "3.1.2-1a8921",
+  "org.scalablytyped" %%% "gaxios" % "1.8.3-f43fba",
+  "org.scalablytyped" %%% "gcp-metadata" % "1.0.0-4e7ccd",
+  "org.scalablytyped" %%% "google-auth-library" % "3.1.2-01b2a8",
   "org.scalablytyped" %%% "google-cloud__projectify" % "0.3.3-e5ea99",
   "org.scalablytyped" %%% "google-cloud__promisify" % "0.4.0-ccdcb9",
   "org.scalablytyped" %%% "google-p12-pem" % "1.0.4-e61bec",
-  "org.scalablytyped" %%% "gtoken" % "2.3.3-b9a27f",
+  "org.scalablytyped" %%% "gtoken" % "2.3.3-2187c4",
   "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-68b4ad",
   "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-34c823",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-2db1bb",
+  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190403Z-8a4c08",
   "org.scalablytyped" %%% "node-forge" % "0.8.1-dt-20190326Z-2fd7c5",
   "org.scalablytyped" %%% "pify" % "3.0.0-dt-20190322Z-6f182f",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-ca6c55",

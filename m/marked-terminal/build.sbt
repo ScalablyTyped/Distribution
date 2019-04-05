@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "marked-terminal"
-version := "3.1-dt-20181217Z-a813cc"
+version := "3.1-dt-20181217Z-2aed39"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
-  "org.scalablytyped" %%% "marked" % "0.6-dt-20190329Z-b908a7",
+  "org.scalablytyped" %%% "marked" % "0.6-dt-20190403Z-ce3324",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-1b70da")
 publishArtifact in packageDoc := false

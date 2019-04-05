@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("is-online", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  def default(): js.Promise[scala.Boolean] = js.native
-  def default(options: Options): js.Promise[scala.Boolean] = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[isDashOnlineLib.Anon_DefaultOptions]
 

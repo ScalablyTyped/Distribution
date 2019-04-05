@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gaxios"
-version := "1.8.3-1377e7"
+version := "1.8.3-f43fba"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "event-target-shim" % "5.0.1-4b0f6d",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-ef9ad3",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-2db1bb",
+  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190403Z-8a4c08",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

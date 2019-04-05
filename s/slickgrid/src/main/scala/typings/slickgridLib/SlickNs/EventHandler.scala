@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Slick.EventHandler")
 @js.native
-class EventHandler () extends js.Object {
-  def subscribe(event: EventData, handler: js.Function): EventHandler = js.native
-  def unsubscribe(event: EventData, handler: js.Function): EventHandler = js.native
-  def unsubscribeAll(): EventHandler = js.native
+class EventHandler[T] () extends js.Object {
+  def subscribe(event: Event[T], handler: js.Function2[/* e */ EventData, /* data */ T, scala.Unit]): EventHandler[_] = js.native
+  def unsubscribe(event: Event[T], handler: js.Function2[/* e */ EventData, /* data */ T, scala.Unit]): EventHandler[_] = js.native
+  def unsubscribeAll(): EventHandler[_] = js.native
 }
 

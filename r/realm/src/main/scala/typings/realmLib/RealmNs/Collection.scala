@@ -21,6 +21,7 @@ trait Collection[T]
   def addListener(callback: CollectionChangeCallback[T]): scala.Unit = js.native
   def avg(): scala.Double = js.native
   def avg(property: java.lang.String): scala.Double = js.native
+  def description(): java.lang.String = js.native
   /**
     * @param  {string} query
     * @param  {any[]} ...arg
@@ -61,6 +62,7 @@ trait Collection[T]
     * @returns Results<T>
     */
   def subscribe(): realmLib.RealmNs.SyncNs.Subscription = js.native
+  def subscribe(options: realmLib.RealmNs.SyncNs.SubscriptionOptions): realmLib.RealmNs.SyncNs.Subscription = js.native
   def subscribe(subscriptionName: java.lang.String): realmLib.RealmNs.SyncNs.Subscription = js.native
   def sum(): scala.Double | scala.Null = js.native
   def sum(property: java.lang.String): scala.Double | scala.Null = js.native

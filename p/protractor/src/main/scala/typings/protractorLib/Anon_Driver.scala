@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Driver extends js.Object {
-  var Driver: Anon_CreateSessionOptconfig
+  var Driver: Anon_CreateSessionOptconfigOptservice
   var Options: Anon_Capabilities
   var ServiceBuilder: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.chromeMod.ServiceBuilder]
   def getDefaultService(): seleniumDashWebdriverLib.remoteMod.DriverService
@@ -16,7 +16,7 @@ trait Anon_Driver extends js.Object {
 object Anon_Driver {
   @scala.inline
   def apply(
-    Driver: Anon_CreateSessionOptconfig,
+    Driver: Anon_CreateSessionOptconfigOptservice,
     Options: Anon_Capabilities,
     ServiceBuilder: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.chromeMod.ServiceBuilder],
     getDefaultService: () => seleniumDashWebdriverLib.remoteMod.DriverService,

@@ -7,13 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait ServiceObjectParent extends js.Object {
   var Promise: js.UndefOr[stdLib.PromiseConstructor] = js.undefined
-  var requestModule: js.UndefOr[
-    atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
-      requestLib.requestMod.requestNs.Request, 
-      requestLib.requestMod.requestNs.CoreOptions, 
-      requestLib.requestMod.requestNs.RequiredUriUrl
-    ])
-  ] = js.undefined
   def request(
     reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
     callback: atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback
@@ -26,16 +19,10 @@ object ServiceObjectParent {
   def apply(
     request: (atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions, atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback) => scala.Unit,
     requestStream: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions => requestLib.requestMod.requestNs.Request,
-    Promise: stdLib.PromiseConstructor = null,
-    requestModule: atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
-      requestLib.requestMod.requestNs.Request, 
-      requestLib.requestMod.requestNs.CoreOptions, 
-      requestLib.requestMod.requestNs.RequiredUriUrl
-    ]) = null
+    Promise: stdLib.PromiseConstructor = null
   ): ServiceObjectParent = {
     val __obj = js.Dynamic.literal(request = js.Any.fromFunction2(request), requestStream = js.Any.fromFunction1(requestStream))
     if (Promise != null) __obj.updateDynamic("Promise")(Promise)
-    if (requestModule != null) __obj.updateDynamic("requestModule")(requestModule)
     __obj.asInstanceOf[ServiceObjectParent]
   }
 }

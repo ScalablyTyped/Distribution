@@ -19,9 +19,10 @@ trait TerminalOptions extends js.Object {
   		 */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-  		 * Args for the custom shell executable, this does not work on Windows (see #8429)
+  		 * Args for the custom shell executable. A string can be used on Windows only which allows
+  		 * specifying shell args in [command-line format](https://msdn.microsoft.com/en-au/08dfcab2-eb6e-49a4-80eb-87d4076c98c6).
   		 */
-  var shellArgs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var shellArgs: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
   /**
   		 * A path to a custom shell executable to be used in the terminal.
   		 */
@@ -42,7 +43,7 @@ object TerminalOptions {
     cwd: java.lang.String | Uri = null,
     env: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null] = null,
     name: java.lang.String = null,
-    shellArgs: js.Array[java.lang.String] = null,
+    shellArgs: js.Array[java.lang.String] | java.lang.String = null,
     shellPath: java.lang.String = null,
     strictEnv: js.UndefOr[scala.Boolean] = js.undefined
   ): TerminalOptions = {
@@ -50,7 +51,7 @@ object TerminalOptions {
     if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
     if (env != null) __obj.updateDynamic("env")(env)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (shellArgs != null) __obj.updateDynamic("shellArgs")(shellArgs)
+    if (shellArgs != null) __obj.updateDynamic("shellArgs")(shellArgs.asInstanceOf[js.Any])
     if (shellPath != null) __obj.updateDynamic("shellPath")(shellPath)
     if (!js.isUndefined(strictEnv)) __obj.updateDynamic("strictEnv")(strictEnv)
     __obj.asInstanceOf[TerminalOptions]

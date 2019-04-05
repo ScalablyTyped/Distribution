@@ -5,66 +5,39 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait MakeWritableStreamOptions extends js.Object {
   /**
     * A connection instance used to get a token with and send the request
     * through.
     */
-  var connection: js.UndefOr[js.Object] = js.native
+  var connection: js.UndefOr[js.Object] = js.undefined
   /**
     * Metadata to send at the head of the request.
     */
-  var metadata: js.UndefOr[atGoogleDashCloudCommonLib.Anon_ContentType] = js.native
+  var metadata: js.UndefOr[atGoogleDashCloudCommonLib.Anon_ContentType] = js.undefined
   /**
     * Request object, in the format of a standard Node.js http.request() object.
     */
-  var request: js.UndefOr[requestLib.requestMod.requestNs.Options] = js.native
-  /**
-    * Dependency for HTTP calls.
-    */
-  @JSName("requestModule")
-  var requestModule_Original: atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
-    requestLib.requestMod.requestNs.Request, 
-    requestLib.requestMod.requestNs.CoreOptions, 
-    requestLib.requestMod.requestNs.RequiredUriUrl
-  ]) = js.native
+  var request: js.UndefOr[requestLib.requestMod.requestNs.Options] = js.undefined
   def makeAuthenticatedRequest(
     reqOpts: requestLib.requestMod.requestNs.OptionsWithUri,
     fnobj: atGoogleDashCloudCommonLib.Anon_AuthenticatedReqOpts
-  ): scala.Unit = js.native
-  /**
-    * Dependency for HTTP calls.
-    */
-  def requestModule(
-    options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions
-  ): requestLib.requestMod.requestNs.Request = js.native
-  /**
-    * Dependency for HTTP calls.
-    */
-  def requestModule(
-    options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions,
-    callback: requestLib.requestMod.requestNs.RequestCallback
-  ): requestLib.requestMod.requestNs.Request = js.native
-  /**
-    * Dependency for HTTP calls.
-    */
-  def requestModule(uri: java.lang.String): requestLib.requestMod.requestNs.Request = js.native
-  /**
-    * Dependency for HTTP calls.
-    */
-  def requestModule(uri: java.lang.String, callback: requestLib.requestMod.requestNs.RequestCallback): requestLib.requestMod.requestNs.Request = js.native
-  /**
-    * Dependency for HTTP calls.
-    */
-  def requestModule(uri: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): requestLib.requestMod.requestNs.Request = js.native
-  /**
-    * Dependency for HTTP calls.
-    */
-  def requestModule(
-    uri: java.lang.String,
-    options: requestLib.requestMod.requestNs.CoreOptions,
-    callback: requestLib.requestMod.requestNs.RequestCallback
-  ): requestLib.requestMod.requestNs.Request = js.native
+  ): scala.Unit
+}
+
+object MakeWritableStreamOptions {
+  @scala.inline
+  def apply(
+    makeAuthenticatedRequest: (requestLib.requestMod.requestNs.OptionsWithUri, atGoogleDashCloudCommonLib.Anon_AuthenticatedReqOpts) => scala.Unit,
+    connection: js.Object = null,
+    metadata: atGoogleDashCloudCommonLib.Anon_ContentType = null,
+    request: requestLib.requestMod.requestNs.Options = null
+  ): MakeWritableStreamOptions = {
+    val __obj = js.Dynamic.literal(makeAuthenticatedRequest = js.Any.fromFunction2(makeAuthenticatedRequest))
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MakeWritableStreamOptions]
+  }
 }
 

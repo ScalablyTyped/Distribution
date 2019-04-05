@@ -48,10 +48,10 @@ object protractorNs extends js.Object {
     /**
       * @param {!WebDriver} driver The parent WebDriver instance for this
       *     element.
-      * @param {!promise.Promise<!WebElement>} el A promise
+      * @param {!Promise<!WebElement>} el A promise
       *     that will resolve to the promised element.
       */
-    def this(driver: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, el: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]) = this()
+    def this(driver: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, el: js.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement]) = this()
   }
   
 }

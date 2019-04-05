@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/common/src/viewport_scroller", "BrowserViewportScroller")
 @js.native
 class BrowserViewportScroller protected () extends ViewportScroller {
-  def this(document: js.Any, window: js.Any) = this()
+  def this(document: js.Any, window: js.Any, errorHandler: atAngularCoreLib.atAngularCoreMod.ErrorHandler) = this()
   var document: js.Any = js.native
+  var errorHandler: js.Any = js.native
   var offset: js.Any = js.native
   var scrollToElement: js.Any = js.native
   /**

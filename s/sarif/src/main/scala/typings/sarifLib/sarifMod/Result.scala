@@ -41,17 +41,17 @@ trait Result extends js.Object {
     */
   var graphTraversals: js.UndefOr[js.Array[GraphTraversal]] = js.undefined
   /**
-    * A dictionary, each of whose keys is the id of a graph and each of whose values is a 'graph' object with that id.
+    * An array of zero or more unique graph objects associated with the result.
     */
-  var graphs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Graph]] = js.undefined
+  var graphs: js.UndefOr[js.Array[Graph]] = js.undefined
+  /**
+    * A stable, unique identifer for the result in the form of a GUID.
+    */
+  var guid: js.UndefOr[java.lang.String] = js.undefined
   /**
     * An absolute URI at which the result can be viewed.
     */
   var hostedViewerUri: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * A stable, unique identifer for the result in the form of a GUID.
-    */
-  var instanceGuid: js.UndefOr[java.lang.String] = js.undefined
   /**
     * A value that categorizes results by evaluation state.
     */
@@ -95,10 +95,9 @@ trait Result extends js.Object {
     */
   var relatedLocations: js.UndefOr[js.Array[Location]] = js.undefined
   /**
-    * The index within the run.tool.extensions array of the tool component object which describes the plug-in or tool
-    * extension that produced the result.
+    * A reference used to locate the rule descriptor relevant to this result.
     */
-  var ruleExtensionIndex: js.UndefOr[scala.Double] = js.undefined
+  var rule: js.UndefOr[ReportingDescriptorReference] = js.undefined
   /**
     * The stable, unique identifier of the rule, if any, to which this notification is relevant. This member can be
     * used to retrieve rule metadata from the rules dictionary, if it exists.
@@ -113,13 +112,13 @@ trait Result extends js.Object {
     */
   var stacks: js.UndefOr[js.Array[Stack]] = js.undefined
   /**
-    * A set of flags indicating one or more suppression conditions.
+    * A set of suppressions relevant to this result.
     */
-  var suppressionStates: js.UndefOr[js.Array[sarifLib.sarifMod.ResultNs.suppressionStates]] = js.undefined
+  var suppressions: js.UndefOr[js.Array[Suppression]] = js.undefined
   /**
     * An array of references to taxonomy reporting descriptors that are applicable to the result.
     */
-  var taxonomyReferences: js.UndefOr[js.Array[ReportingDescriptorReference]] = js.undefined
+  var taxa: js.UndefOr[js.Array[ReportingDescriptorReference]] = js.undefined
   /**
     * The URIs of the work items associated with this result.
     */
@@ -138,9 +137,9 @@ object Result {
     fingerprints: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     fixes: js.Array[Fix] = null,
     graphTraversals: js.Array[GraphTraversal] = null,
-    graphs: org.scalablytyped.runtime.StringDictionary[Graph] = null,
+    graphs: js.Array[Graph] = null,
+    guid: java.lang.String = null,
     hostedViewerUri: java.lang.String = null,
-    instanceGuid: java.lang.String = null,
     kind: sarifLib.sarifMod.ResultNs.kind = null,
     level: sarifLib.sarifMod.ResultNs.level = null,
     locations: js.Array[Location] = null,
@@ -150,12 +149,12 @@ object Result {
     provenance: ResultProvenance = null,
     rank: scala.Int | scala.Double = null,
     relatedLocations: js.Array[Location] = null,
-    ruleExtensionIndex: scala.Int | scala.Double = null,
+    rule: ReportingDescriptorReference = null,
     ruleId: java.lang.String = null,
     ruleIndex: scala.Int | scala.Double = null,
     stacks: js.Array[Stack] = null,
-    suppressionStates: js.Array[sarifLib.sarifMod.ResultNs.suppressionStates] = null,
-    taxonomyReferences: js.Array[ReportingDescriptorReference] = null,
+    suppressions: js.Array[Suppression] = null,
+    taxa: js.Array[ReportingDescriptorReference] = null,
     workItemUris: js.Array[java.lang.String] = null
   ): Result = {
     val __obj = js.Dynamic.literal(message = message)
@@ -168,8 +167,8 @@ object Result {
     if (fixes != null) __obj.updateDynamic("fixes")(fixes)
     if (graphTraversals != null) __obj.updateDynamic("graphTraversals")(graphTraversals)
     if (graphs != null) __obj.updateDynamic("graphs")(graphs)
+    if (guid != null) __obj.updateDynamic("guid")(guid)
     if (hostedViewerUri != null) __obj.updateDynamic("hostedViewerUri")(hostedViewerUri)
-    if (instanceGuid != null) __obj.updateDynamic("instanceGuid")(instanceGuid)
     if (kind != null) __obj.updateDynamic("kind")(kind)
     if (level != null) __obj.updateDynamic("level")(level)
     if (locations != null) __obj.updateDynamic("locations")(locations)
@@ -179,12 +178,12 @@ object Result {
     if (provenance != null) __obj.updateDynamic("provenance")(provenance)
     if (rank != null) __obj.updateDynamic("rank")(rank.asInstanceOf[js.Any])
     if (relatedLocations != null) __obj.updateDynamic("relatedLocations")(relatedLocations)
-    if (ruleExtensionIndex != null) __obj.updateDynamic("ruleExtensionIndex")(ruleExtensionIndex.asInstanceOf[js.Any])
+    if (rule != null) __obj.updateDynamic("rule")(rule)
     if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId)
     if (ruleIndex != null) __obj.updateDynamic("ruleIndex")(ruleIndex.asInstanceOf[js.Any])
     if (stacks != null) __obj.updateDynamic("stacks")(stacks)
-    if (suppressionStates != null) __obj.updateDynamic("suppressionStates")(suppressionStates)
-    if (taxonomyReferences != null) __obj.updateDynamic("taxonomyReferences")(taxonomyReferences)
+    if (suppressions != null) __obj.updateDynamic("suppressions")(suppressions)
+    if (taxa != null) __obj.updateDynamic("taxa")(taxa)
     if (workItemUris != null) __obj.updateDynamic("workItemUris")(workItemUris)
     __obj.asInstanceOf[Result]
   }

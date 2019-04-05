@@ -5,6 +5,7 @@
 //                 Kyle Roach <https://github.com/iRoachie>
 //                 Tim Wang <https://github.com/timwangdev>
 //                 Gerardo Pacheco <https://github.com/geriux>
+//                 Kazuyuki Takahashi <https://github.com/kazyk>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

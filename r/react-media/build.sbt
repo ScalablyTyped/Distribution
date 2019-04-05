@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-media"
-version := "1.9.2-bb7b98"
+version := "1.9.2-c089c3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20190322Z-4a316b",
   "org.scalablytyped" %%% "json2mq" % "0.2-dt-20190212Z-4a96f1",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-d8f967",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

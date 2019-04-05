@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-compose/lib/ScalarTypeComposer", "ScalarTypeComposer")
 @js.native
 class ScalarTypeComposer[TContext] protected ()
-  extends graphqlDashComposeLib.libSchemaComposerMod._AnyType[TContext]
+  extends graphqlDashComposeLib.libSchemaComposerMod._AnyComposeType[TContext]
+     with graphqlDashComposeLib.libSchemaComposerMod._AnyType[TContext]
      with graphqlDashComposeLib.libObjectTypeComposerMod._ComposeOutputType[js.Any, TContext] {
   def this(gqType: graphqlDashComposeLib.libGraphqlMod.GraphQLScalarType, schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext]) = this()
   var gqType: GraphQLScalarTypeExtended = js.native

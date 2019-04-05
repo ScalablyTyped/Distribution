@@ -91,6 +91,22 @@ class File protected ()
   var encryptionKeyHash: js.UndefOr[js.Any] = js.native
   var encryptionKeyInterceptor: js.UndefOr[js.Any] = js.native
   var generation: js.UndefOr[scala.Double] = js.native
+  /**
+    * Create canonical headers for signing v4 url.
+    *
+    * The canonical headers for v4-signing a request demands header names are
+    * first lowercased, followed by sorting the header names.
+    * Then, construct the canonical headers part of the request:
+    *  <lowercasedHeaderName> + ":" + Trim(<value>) + "\n"
+    *  ..
+    *  <lowercasedHeaderName> + ":" + Trim(<value>) + "\n"
+    *
+    * @param headers
+    * @private
+    */
+  var getCanonicalHeaders: js.Any = js.native
+  var getSignedUrlV2: js.Any = js.native
+  var getSignedUrlV4: js.Any = js.native
   var kmsKeyName: js.UndefOr[java.lang.String] = js.native
   var name: java.lang.String = js.native
   @JSName("parent")
@@ -476,7 +492,7 @@ class File protected ()
     *
     * @private
     */
-  def startResumableUpload_(dup: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify, options: CreateResumableUploadOptions): scala.Unit = js.native
+  def startResumableUpload_(dup: atGoogleDashCloudCommonLib.buildSrcUtilMod.Duplexify, options: CreateResumableUploadOptions): scala.Unit = js.native
   /**
     * Takes a readable stream and pipes it to a remote file. Unlike
     * `startResumableUpload_`, which uses the resumable upload technique, this
@@ -487,7 +503,7 @@ class File protected ()
     *
     * @private
     */
-  def startSimpleUpload_(dup: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify): scala.Unit = js.native
-  def startSimpleUpload_(dup: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify, options: CreateResumableUploadOptions): scala.Unit = js.native
+  def startSimpleUpload_(dup: atGoogleDashCloudCommonLib.buildSrcUtilMod.Duplexify): scala.Unit = js.native
+  def startSimpleUpload_(dup: atGoogleDashCloudCommonLib.buildSrcUtilMod.Duplexify, options: CreateResumableUploadOptions): scala.Unit = js.native
 }
 

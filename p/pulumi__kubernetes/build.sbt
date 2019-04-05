@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pulumi__kubernetes"
-version := "v0.22.0-fd0b63"
+version := "v0.22.0-0dfcff"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",
   "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-6520aa",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-2db1bb",
+  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190403Z-8a4c08",
   "org.scalablytyped" %%% "normalize-package-data" % "2.4-dt-20180214Z-41a127",
   "org.scalablytyped" %%% "protobufjs" % "6.8.8-656775",
   "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-7d3a63",

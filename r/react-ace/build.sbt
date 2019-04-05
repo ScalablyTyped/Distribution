@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-ace"
-version := "6.4.0-d0f4f1"
+version := "6.4.0-0d53ba"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,8 +14,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20190214Z-6b1c7f",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-348bcf",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-d8f967",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-9aa93f",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

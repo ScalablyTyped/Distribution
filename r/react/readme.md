@@ -23,6 +23,7 @@
 //                 Paul Sherman <https://github.com/pshrmn>
 //                 Saransh Kataria <https://github.com/saranshkataria>
 //                 Kanitkorn Sujautra <https://github.com/lukyth>
+//                 Sebastian Silbermann <https://github.com/eps1lon>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 /*

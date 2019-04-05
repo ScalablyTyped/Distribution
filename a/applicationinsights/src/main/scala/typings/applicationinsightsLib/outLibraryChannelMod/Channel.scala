@@ -14,7 +14,7 @@ trait Channel extends js.Object {
   /* protected */ def _getBatchIntervalMs(): scala.Double = js.native
   /* protected */ def _getBatchSize(): scala.Double = js.native
   /* protected */ def _isDisabled(): scala.Boolean = js.native
-  /* private */ def _stringify(envelope: js.Any): js.Any = js.native
+  /* protected */ def _stringify(envelope: applicationinsightsLib.outDeclarationsContractsMod.Envelope): java.lang.String = js.native
   /**
     * Add a telemetry item to the send buffer
     */

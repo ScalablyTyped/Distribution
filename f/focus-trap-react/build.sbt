@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "focus-trap-react"
-version := "6.0.0-0d9ad5"
+version := "6.0.0-990e73"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "focus-trap" % "4.0.2-ad883d",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-348bcf",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-d8f967",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-9aa93f",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "tabbable" % "3.1-dt-20180921Z-489350",
   "org.scalablytyped" %%% "xtend" % "4.0.1-dt-20190322Z-8e3fb4")

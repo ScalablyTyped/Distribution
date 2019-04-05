@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 package object RealmNs {
   type CollectionChangeCallback[T] = js.Function2[/* collection */ Collection[T], /* change */ CollectionChangeSet, scala.Unit]
   /**
+    * A function which can be called to migrate a Realm from one version of the schema to another.
+    */
+  type MigrationCallback = js.Function2[/* oldRealm */ realmLib.Realm, /* newRealm */ realmLib.Realm, scala.Unit]
+  type ObjectChangeCallback = js.Function2[/* object */ Object, /* changes */ ObjectChangeSet, scala.Unit]
+  /**
     * realm configuration used for overriding default configuration values.
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~Configuration }
     */

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-compose/lib/InputTypeComposer", "InputTypeComposer")
 @js.native
 class InputTypeComposer[TContext] protected ()
-  extends graphqlDashComposeLib.libSchemaComposerMod._AnyType[TContext] {
+  extends graphqlDashComposeLib.libSchemaComposerMod._AnyComposeType[TContext]
+     with graphqlDashComposeLib.libSchemaComposerMod._AnyType[TContext] {
   def this(gqType: graphqlDashComposeLib.libGraphqlMod.GraphQLInputObjectType, schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext]) = this()
   var gqType: GraphQLInputObjectTypeExtended = js.native
   var schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext] = js.native

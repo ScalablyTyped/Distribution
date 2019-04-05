@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-api-koa"
-version := "2.0-dt-20190327Z-35e386"
+version := "2.0-dt-20190403Z-35e386"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

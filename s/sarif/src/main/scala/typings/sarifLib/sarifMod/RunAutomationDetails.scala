@@ -19,11 +19,11 @@ trait RunAutomationDetails extends js.Object {
   /**
     * A stable, unique identifer for this object's containing run object in the form of a GUID.
     */
-  var instanceGuid: js.UndefOr[java.lang.String] = js.undefined
+  var guid: js.UndefOr[java.lang.String] = js.undefined
   /**
     * A hierarchical string that uniquely identifies this object's containing run object.
     */
-  var instanceId: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Key/value pairs that provide additional information about the run automation details.
     */
@@ -35,15 +35,15 @@ object RunAutomationDetails {
   def apply(
     correlationGuid: java.lang.String = null,
     description: Message = null,
-    instanceGuid: java.lang.String = null,
-    instanceId: java.lang.String = null,
+    guid: java.lang.String = null,
+    id: java.lang.String = null,
     properties: PropertyBag = null
   ): RunAutomationDetails = {
     val __obj = js.Dynamic.literal()
     if (correlationGuid != null) __obj.updateDynamic("correlationGuid")(correlationGuid)
     if (description != null) __obj.updateDynamic("description")(description)
-    if (instanceGuid != null) __obj.updateDynamic("instanceGuid")(instanceGuid)
-    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (guid != null) __obj.updateDynamic("guid")(guid)
+    if (id != null) __obj.updateDynamic("id")(id)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[RunAutomationDetails]
   }

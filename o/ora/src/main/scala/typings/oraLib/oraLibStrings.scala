@@ -8,39 +8,39 @@ import scala.scalajs.js.annotation._
 object oraLibStrings {
   @js.native
   sealed trait black
-    extends oraLib.oraMod.Color
+    extends oraLib.oraMod.oraNs.Color
   
   @js.native
   sealed trait blue
-    extends oraLib.oraMod.Color
+    extends oraLib.oraMod.oraNs.Color
   
   @js.native
   sealed trait cyan
-    extends oraLib.oraMod.Color
+    extends oraLib.oraMod.oraNs.Color
   
   @js.native
   sealed trait gray
-    extends oraLib.oraMod.Color
+    extends oraLib.oraMod.oraNs.Color
   
   @js.native
   sealed trait green
-    extends oraLib.oraMod.Color
+    extends oraLib.oraMod.oraNs.Color
   
   @js.native
   sealed trait magenta
-    extends oraLib.oraMod.Color
+    extends oraLib.oraMod.oraNs.Color
   
   @js.native
   sealed trait red
-    extends oraLib.oraMod.Color
+    extends oraLib.oraMod.oraNs.Color
   
   @js.native
   sealed trait white
-    extends oraLib.oraMod.Color
+    extends oraLib.oraMod.oraNs.Color
   
   @js.native
   sealed trait yellow
-    extends oraLib.oraMod.Color
+    extends oraLib.oraMod.oraNs.Color
   
   @scala.inline
   def black: black = "black".asInstanceOf[black]

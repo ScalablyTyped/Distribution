@@ -34,7 +34,12 @@ trait Anon_AutoHeight extends js.Object {
     * This callback can be used to sync scrolling between lists, tables, or grids.
     * ({ clientHeight, scrollHeight, scrollTop }): void
     */
-  var onScroll: js.UndefOr[js.Function1[/* info */ Anon_ClientHeight, scala.Unit]] = js.native
+  var onScroll: js.UndefOr[
+    js.Function1[
+      /* params */ reactDashVirtualizedLib.distEsScrollSyncMod.OnScrollParams, 
+      scala.Unit
+    ]
+  ] = js.native
   /** See Grid#overscanIndicesGetter */
   var overscanIndicesGetter: js.UndefOr[reactDashVirtualizedLib.distEsGridMod.OverscanIndicesGetter] = js.native
   /**

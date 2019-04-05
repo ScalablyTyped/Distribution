@@ -18,6 +18,7 @@ trait Anon_DataError[T] extends js.Object {
   var isSettled: reactDashAsyncLib.reactDashAsyncLibNumbers.`false`
   var startedAt: stdLib.Date
   var status: reactDashAsyncLib.reactDashAsyncLibStrings.pending
+  var value: js.UndefOr[T | stdLib.Error]
 }
 
 object Anon_DataError {
@@ -34,12 +35,14 @@ object Anon_DataError {
     status: reactDashAsyncLib.reactDashAsyncLibStrings.pending,
     data: T = null,
     error: stdLib.Error = null,
-    finishedAt: js.UndefOr[scala.Nothing] = js.undefined
+    finishedAt: js.UndefOr[scala.Nothing] = js.undefined,
+    value: T | stdLib.Error = null
   ): Anon_DataError[T] = {
     val __obj = js.Dynamic.literal(isFulfilled = isFulfilled, isInitial = isInitial, isLoading = isLoading, isPending = isPending, isRejected = isRejected, isResolved = isResolved, isSettled = isSettled, startedAt = startedAt, status = status)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     if (error != null) __obj.updateDynamic("error")(error)
     if (!js.isUndefined(finishedAt)) __obj.updateDynamic("finishedAt")(finishedAt)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataError[T]]
   }
 }

@@ -54,6 +54,13 @@ trait IInvoice
     */
   var attempted: scala.Boolean
   /**
+    * Controls whether Stripe will perform
+    * [automatic collection](https://stripe.com/docs/billing/invoices/workflow/#auto_advance)
+    * of the invoice. When `false`, the invoice’s state will not automatically advance
+    * without an explicit action.
+    */
+  var auto_advance: scala.Boolean
+  /**
     * Either charge_automatically, or send_invoice. When charging automatically, Stripe will attempt to pay this invoice using the default source attached to the customer. When sending an invoice, Stripe will email this invoice to the customer with payment instructions.
     */
   var billing: stripeLib.stripeLibStrings.charge_automatically | stripeLib.stripeLibStrings.send_invoice
@@ -204,6 +211,7 @@ object IInvoice {
     application_fee: scala.Double,
     attempt_count: scala.Double,
     attempted: scala.Boolean,
+    auto_advance: scala.Boolean,
     billing: stripeLib.stripeLibStrings.charge_automatically | stripeLib.stripeLibStrings.send_invoice,
     billing_reason: stripeLib.stripeLibStrings.subscription_cycle | stripeLib.stripeLibStrings.subscription_create | stripeLib.stripeLibStrings.subscription_update | stripeLib.stripeLibStrings.subscription | stripeLib.stripeLibStrings.manual | stripeLib.stripeLibStrings.upcoming | stripeLib.stripeLibStrings.subscription_threshold,
     charge: java.lang.String | stripeLib.stripeMod.StripeNs.chargesNs.ICharge,
@@ -239,7 +247,7 @@ object IInvoice {
     tax: scala.Int | scala.Double = null,
     tax_percent: scala.Int | scala.Double = null
   ): IInvoice = {
-    val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, attempt_count = attempt_count, attempted = attempted, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], closed = closed, currency = currency, customer = customer, date = date, description = description, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, total = total, webhooks_delivered_at = webhooks_delivered_at)
+    val __obj = js.Dynamic.literal(amount_due = amount_due, amount_paid = amount_paid, amount_remaining = amount_remaining, application_fee = application_fee, attempt_count = attempt_count, attempted = attempted, auto_advance = auto_advance, billing = billing.asInstanceOf[js.Any], billing_reason = billing_reason.asInstanceOf[js.Any], charge = charge.asInstanceOf[js.Any], closed = closed, currency = currency, customer = customer, date = date, description = description, forgiven = forgiven, id = id, lines = lines, livemode = livemode, metadata = metadata, next_payment_attempt = next_payment_attempt, number = number, paid = paid, period_end = period_end, period_start = period_start, receipt_number = receipt_number, starting_balance = starting_balance, statement_descriptor = statement_descriptor, subscription = subscription.asInstanceOf[js.Any], subscription_proration_date = subscription_proration_date, subtotal = subtotal, total = total, webhooks_delivered_at = webhooks_delivered_at)
     __obj.updateDynamic("object")(`object`)
     if (discount != null) __obj.updateDynamic("discount")(discount)
     if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])

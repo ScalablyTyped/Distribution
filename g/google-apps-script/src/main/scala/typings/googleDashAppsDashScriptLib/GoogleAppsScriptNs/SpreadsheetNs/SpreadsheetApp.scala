@@ -53,7 +53,7 @@ trait SpreadsheetApp extends js.Object {
   def newFilterCriteria(): FilterCriteriaBuilder = js.native
   def newRichTextValue(): RichTextValueBuilder = js.native
   def newTextStyle(): TextStyleBuilder = js.native
-  def open(file: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.File): Spreadsheet = js.native
+  def open(file: stdLib.File): Spreadsheet = js.native
   def openById(id: java.lang.String): Spreadsheet = js.native
   def openByUrl(url: java.lang.String): Spreadsheet = js.native
   def setActiveRange(range: Range): Range = js.native

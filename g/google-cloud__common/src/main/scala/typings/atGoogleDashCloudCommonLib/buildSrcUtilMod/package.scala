@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcUtilMod {
-  type AbortableDuplex = duplexifyLib.duplexifyMod.duplexifyNs.Duplexify with Abortable
+  type AbortableDuplex = Duplexify with Abortable
   type BodyResponseCallback = js.Function3[
     /* err */ stdLib.Error | scala.Null, 
     /* body */ js.UndefOr[ResponseBody], 

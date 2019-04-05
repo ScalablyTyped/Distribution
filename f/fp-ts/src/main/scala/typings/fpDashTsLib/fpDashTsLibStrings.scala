@@ -76,6 +76,24 @@ object fpDashTsLibStrings {
   sealed trait Right extends js.Object
   
   @js.native
+  sealed trait SequenceT extends js.Object
+  
+  @js.native
+  sealed trait SequenceT1 extends js.Object
+  
+  @js.native
+  sealed trait SequenceT2 extends js.Object
+  
+  @js.native
+  sealed trait SequenceT2C extends js.Object
+  
+  @js.native
+  sealed trait SequenceT3 extends js.Object
+  
+  @js.native
+  sealed trait SequenceT3C extends js.Object
+  
+  @js.native
   sealed trait Some extends js.Object
   
   @js.native
@@ -156,9 +174,6 @@ object fpDashTsLibStrings {
   @js.native
   sealed trait sequenceS extends js.Object
   
-  @js.native
-  sealed trait sequenceT extends js.Object
-  
   @scala.inline
   def Array: Array = "Array".asInstanceOf[Array]
   @scala.inline
@@ -205,6 +220,18 @@ object fpDashTsLibStrings {
   def ReaderTaskEither: ReaderTaskEither = "ReaderTaskEither".asInstanceOf[ReaderTaskEither]
   @scala.inline
   def Right: Right = "Right".asInstanceOf[Right]
+  @scala.inline
+  def SequenceT: SequenceT = "SequenceT".asInstanceOf[SequenceT]
+  @scala.inline
+  def SequenceT1: SequenceT1 = "SequenceT1".asInstanceOf[SequenceT1]
+  @scala.inline
+  def SequenceT2: SequenceT2 = "SequenceT2".asInstanceOf[SequenceT2]
+  @scala.inline
+  def SequenceT2C: SequenceT2C = "SequenceT2C".asInstanceOf[SequenceT2C]
+  @scala.inline
+  def SequenceT3: SequenceT3 = "SequenceT3".asInstanceOf[SequenceT3]
+  @scala.inline
+  def SequenceT3C: SequenceT3C = "SequenceT3C".asInstanceOf[SequenceT3C]
   @scala.inline
   def Some: Some = "Some".asInstanceOf[Some]
   @scala.inline
@@ -259,7 +286,5 @@ object fpDashTsLibStrings {
   def getTupleSetoid: getTupleSetoid = "getTupleSetoid".asInstanceOf[getTupleSetoid]
   @scala.inline
   def sequenceS: sequenceS = "sequenceS".asInstanceOf[sequenceS]
-  @scala.inline
-  def sequenceT: sequenceT = "sequenceT".asInstanceOf[sequenceT]
 }
 

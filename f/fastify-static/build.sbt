@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fastify-static"
-version := "2.4.0-2c96d8"
+version := "2.4.0-a7bdd7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,13 +10,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "archy" % "0.0-unknown-dt-20190322Z-751faa",
   "org.scalablytyped" %%% "avvio" % "6.2.1-1b9f11",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
+  "org.scalablytyped" %%% "deepmerge" % "3.2.0-a1baa5",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-42ef87",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-82585c",
-  "org.scalablytyped" %%% "fastify" % "2.1.0-2ebe53",
-  "org.scalablytyped" %%% "fastify-plugin" % "1.5.0-7adce7",
+  "org.scalablytyped" %%% "fast-json-stringify" % "1.14.0-548fc3",
+  "org.scalablytyped" %%% "fastify" % "2.1.0-973984",
+  "org.scalablytyped" %%% "fastify-plugin" % "1.5.0-b6591f",
   "org.scalablytyped" %%% "fastq" % "1.6.0-da4a5e",
   "org.scalablytyped" %%% "find-my-way" % "2.0.1-fdb020",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ce8e08",
+  "org.scalablytyped" %%% "light-my-request" % "3.3.0-a4c08f",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-e6c927",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",

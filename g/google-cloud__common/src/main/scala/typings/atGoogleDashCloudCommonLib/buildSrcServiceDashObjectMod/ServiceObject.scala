@@ -29,12 +29,6 @@ class ServiceObject[T] protected ()
   var metadata: Metadata = js.native
   var methods: Methods = js.native
   var parent: ServiceObjectParent = js.native
-  @JSName("requestModule")
-  var requestModule_Original: atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
-    requestLib.requestMod.requestNs.Request, 
-    requestLib.requestMod.requestNs.CoreOptions, 
-    requestLib.requestMod.requestNs.RequiredUriUrl
-  ]) = js.native
   /**
     * Make an authenticated API request.
     *
@@ -122,21 +116,6 @@ class ServiceObject[T] protected ()
     reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
     callback: atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback
   ): scala.Unit = js.native
-  def requestModule(
-    options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions
-  ): requestLib.requestMod.requestNs.Request = js.native
-  def requestModule(
-    options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions,
-    callback: requestLib.requestMod.requestNs.RequestCallback
-  ): requestLib.requestMod.requestNs.Request = js.native
-  def requestModule(uri: java.lang.String): requestLib.requestMod.requestNs.Request = js.native
-  def requestModule(uri: java.lang.String, callback: requestLib.requestMod.requestNs.RequestCallback): requestLib.requestMod.requestNs.Request = js.native
-  def requestModule(uri: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): requestLib.requestMod.requestNs.Request = js.native
-  def requestModule(
-    uri: java.lang.String,
-    options: requestLib.requestMod.requestNs.CoreOptions,
-    callback: requestLib.requestMod.requestNs.RequestCallback
-  ): requestLib.requestMod.requestNs.Request = js.native
   /**
     * Make an authenticated API request.
     *

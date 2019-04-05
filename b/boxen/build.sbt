@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "boxen"
-version := "3.0.0-940886"
+version := "3.0.0-a90a4e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20190322Z-d84c1e",
-  "org.scalablytyped" %%% "camelcase" % "5.3.0-b5994c",
+  "org.scalablytyped" %%% "camelcase" % "5.3.1-b5994c",
   "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
   "org.scalablytyped" %%% "cli-boxes" % "1.0-dt-20181231Z-e95538",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",

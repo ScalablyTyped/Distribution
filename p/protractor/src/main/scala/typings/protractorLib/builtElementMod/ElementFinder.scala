@@ -14,7 +14,7 @@ class ElementFinder protected () extends WebdriverWebElement {
   var parentElementArrayFinder: ElementArrayFinder = js.native
   var `then`: js.UndefOr[
     js.Function2[
-      /* fn */ js.Function1[/* value */ js.Any, _ | js.Promise[_]], 
+      /* fn */ js.Function1[/* value */ js.Any, _], 
       /* errorFn */ js.UndefOr[js.Function1[/* error */ js.Any, _]], 
       js.Promise[_]
     ]
@@ -35,24 +35,24 @@ class ElementFinder protected () extends WebdriverWebElement {
     * // Chain 2 element calls.
     * let child = element(by.css('.parent')).
     *     $('.child');
-    * expect(await child.getText()).toBe('Child text\n555-123-4567');
+    * expect(child.getText()).toBe('Child text\n555-123-4567');
     *
     * // Chain 3 element calls.
     * let triple = element(by.css('.parent')).
     *     $('.child').
     *     element(by.binding('person.phone'));
-    * expect(await triple.getText()).toBe('555-123-4567');
+    * expect(triple.getText()).toBe('555-123-4567');
     *
     * // Or using the shortcut $() notation instead of element(by.css()):
     *
     * // Chain 2 element calls.
     * let child = $('.parent').$('.child');
-    * expect(await child.getText()).toBe('Child text\n555-123-4567');
+    * expect(child.getText()).toBe('Child text\n555-123-4567');
     *
     * // Chain 3 element calls.
     * let triple = $('.parent').$('.child').
     *     element(by.binding('person.phone'));
-    * expect(await triple.getText()).toBe('555-123-4567');
+    * expect(triple.getText()).toBe('555-123-4567');
     *
     * @param {string} selector A css selector
     * @returns {ElementFinder}
@@ -106,7 +106,7 @@ class ElementFinder protected () extends WebdriverWebElement {
     *
     * let items = $('.parent').all(by.tagName('li'));
     *
-    * @param {Locator} subLocator
+    * @param {webdriver.Locator} subLocator
     * @returns {ElementArrayFinder}
     */
   def all(subLocator: protractorLib.builtLocatorsMod.Locator): ElementArrayFinder = js.native
@@ -133,39 +133,39 @@ class ElementFinder protected () extends WebdriverWebElement {
     * // Chain 2 element calls.
     * let child = element(by.css('.parent')).
     *     element(by.css('.child'));
-    * expect(await child.getText()).toBe('Child text\n555-123-4567');
+    * expect(child.getText()).toBe('Child text\n555-123-4567');
     *
     * // Chain 3 element calls.
     * let triple = element(by.css('.parent')).
     *     element(by.css('.child')).
     *     element(by.binding('person.phone'));
-    * expect(await triple.getText()).toBe('555-123-4567');
+    * expect(triple.getText()).toBe('555-123-4567');
     *
     * // Or using the shortcut $() notation instead of element(by.css()):
     *
     * // Chain 2 element calls.
     * let child = $('.parent').$('.child');
-    * expect(await child.getText()).toBe('Child text\n555-123-4567');
+    * expect(child.getText()).toBe('Child text\n555-123-4567');
     *
     * // Chain 3 element calls.
     * let triple = $('.parent').$('.child').
     *     element(by.binding('person.phone'));
-    * expect(await triple.getText()).toBe('555-123-4567');
+    * expect(triple.getText()).toBe('555-123-4567');
     *
-    * @param {Locator} subLocator
+    * @param {webdriver.Locator} subLocator
     * @returns {ElementFinder}
     */
   def element(subLocator: protractorLib.builtLocatorsMod.Locator): ElementFinder = js.native
   /**
     * Compares an element to this one for equality.
     *
-    * @param {!ElementFinder|!webdriver.WebElement} element The element to compare to.
+    * @param {!ElementFinder|!webdriver.WebElement} The element to compare to.
     *
-    * @returns {!Promise<boolean>} A promise that will be
+    * @returns {!webdriver.promise.Promise.<boolean>} A promise that will be
     *     resolved to whether the two WebElements are equal.
     */
-  def equals(element: ElementFinder): js.Promise[scala.Boolean] = js.native
-  def equals(element: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement): js.Promise[scala.Boolean] = js.native
+  def equals(element: ElementFinder): js.Promise[_] = js.native
+  def equals(element: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement): js.Promise[_] = js.native
   /**
     * Evaluates the input as if it were on the scope of the current element.
     * @see ElementArrayFinder.prototype.evaluate
@@ -198,7 +198,7 @@ class ElementFinder protected () extends WebdriverWebElement {
     * browser.driver.findElement(by.css('.parent'));
     * browser.findElement(by.css('.parent'));
     *
-    * @returns {webdriver.WebElement}
+    * @returns {webdriver.WebElementPromise}
     */
   def getWebElement(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElementPromise = js.native
   /**
@@ -214,8 +214,8 @@ class ElementFinder protected () extends WebdriverWebElement {
     *
     * @see ElementFinder.isPresent
     *
-    * @param {Locator} subLocator Locator for element to look for.
-    * @returns {Promise<boolean>} which resolves to whether
+    * @param {webdriver.Locator} subLocator Locator for element to look for.
+    * @returns {webdriver.promise.Promise<boolean>} which resolves to whether
     *     the subelement is present on the page.
     */
   def isElementPresent(subLocator: protractorLib.builtLocatorsMod.Locator): js.Promise[scala.Boolean] = js.native
@@ -227,19 +227,19 @@ class ElementFinder protected () extends WebdriverWebElement {
     *
     * @example
     * // Element exists.
-    * expect(await element(by.binding('person.name')).isPresent()).toBe(true);
+    * expect(element(by.binding('person.name')).isPresent()).toBe(true);
     *
     * // Element not present.
-    * expect(await element(by.binding('notPresent')).isPresent()).toBe(false);
+    * expect(element(by.binding('notPresent')).isPresent()).toBe(false);
     *
-    * @returns {Promise<boolean>} which resolves to whether
+    * @returns {webdriver.promise.Promise<boolean>} which resolves to whether
     *     the element is present on the page.
     */
   def isPresent(): js.Promise[scala.Boolean] = js.native
   /**
     * @see ElementArrayFinder.prototype.locator
     *
-    * @returns {Locator}
+    * @returns {webdriver.Locator}
     */
   def locator(): js.Any = js.native
 }

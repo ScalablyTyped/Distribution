@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object builtLocatorsMod {
   type Locator = ProtractorLocator | WebDriverLocator
-  type WebDriverLocator = seleniumDashWebdriverLib.seleniumDashWebdriverMod.By | seleniumDashWebdriverLib.seleniumDashWebdriverMod.ByHash | js.Function
+  type WebDriverLocator = seleniumDashWebdriverLib.seleniumDashWebdriverMod.By | seleniumDashWebdriverLib.libByMod.ByHash | js.Function
 }

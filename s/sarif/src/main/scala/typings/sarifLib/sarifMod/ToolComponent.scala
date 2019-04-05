@@ -11,6 +11,15 @@ trait ToolComponent extends js.Object {
     */
   var artifactIndices: js.UndefOr[js.Array[scala.Double]] = js.undefined
   /**
+    * The component which is strongly associated with this component. For a translation, this refers to the component
+    * which has been translated. For an extension, this is the driver that provides the extension's plugin model.
+    */
+  var associatedComponent: js.UndefOr[ToolComponentReference] = js.undefined
+  /**
+    * The kinds of data contained in this object.
+    */
+  var contents: js.UndefOr[js.Array[sarifLib.sarifMod.ToolComponentNs.contents]] = js.undefined
+  /**
     * The binary version of the tool component's primary executable file expressed as four non-negative integers
     * separated by a period (for operating systems that express file versions in this way).
     */
@@ -40,14 +49,35 @@ trait ToolComponent extends js.Object {
     */
   var guid: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Specifies whether this object contains a complete definition of the localizable and/or non-localizable data for
+    * this component, as opposed to including only data that is relevant to the results persisted to this log file.
+    */
+  var isComprehensive: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * The language of the the localized strings defined in this component (expressed as an ISO 649 two-letter
+    * lowercase culture code) and region (expressed as an ISO 3166 two-letter uppercase subculture code associated
+    * with a country or region).
+    */
+  var language: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The semantic version of the localized strings defined in this component; maintained by components that provide
+    * translations.
+    */
+  var localizedDataSemanticVersion: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The minimum value of localizedDataSemanticVersion required in translations consumed by this component; used by
+    * components that consume translations.
+    */
+  var minimumRequiredLocalizedDataSemanticVersion: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The name of the tool component.
     */
   var name: java.lang.String
   /**
-    * An array of reportDescriptor objects relevant to the notifications related to the configuration and runtime
+    * An array of reportingDescriptor objects relevant to the notifications related to the configuration and runtime
     * execution of the tool component.
     */
-  var notificationDescriptors: js.UndefOr[js.Array[ReportingDescriptor]] = js.undefined
+  var notifications: js.UndefOr[js.Array[ReportingDescriptor]] = js.undefined
   /**
     * The organization or company that produced the tool component.
     */
@@ -57,13 +87,21 @@ trait ToolComponent extends js.Object {
     */
   var product: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * A localizable string containing the name of the suite of products to which the tool component belongs.
+    */
+  var productSuite: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Key/value pairs that provide additional information about the tool component.
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
   /**
-    * An array of reportDescriptor objects relevant to the analysis performed by the tool component.
+    * A string specifying the UTC date (and optionally, the time) of the component's release.
     */
-  var ruleDescriptors: js.UndefOr[js.Array[ReportingDescriptor]] = js.undefined
+  var releaseDateUtc: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * An array of reportingDescriptor objects relevant to the analysis performed by the tool component.
+    */
+  var rules: js.UndefOr[js.Array[ReportingDescriptor]] = js.undefined
   /**
     * The tool component version in the format specified by Semantic Versioning 2.0.
     */
@@ -72,6 +110,19 @@ trait ToolComponent extends js.Object {
     * A brief description of the tool component.
     */
   var shortDescription: js.UndefOr[MultiformatMessageString] = js.undefined
+  /**
+    * An array of toolComponentReference objects to declare the taxonomies supported by the tool component.
+    */
+  var supportedTaxonomies: js.UndefOr[js.Array[ToolComponentReference]] = js.undefined
+  /**
+    * An array of reportingDescriptor objects relevant to the definitions of both standalone and tool-defined
+    * taxonomies.
+    */
+  var taxa: js.UndefOr[js.Array[ReportingDescriptor]] = js.undefined
+  /**
+    * Translation metadata, required for a translation, not populated by other component types.
+    */
+  var translationMetadata: js.UndefOr[TranslationMetadata] = js.undefined
   /**
     * The tool component version, in whatever format the component natively provides.
     */
@@ -83,36 +134,58 @@ object ToolComponent {
   def apply(
     name: java.lang.String,
     artifactIndices: js.Array[scala.Double] = null,
+    associatedComponent: ToolComponentReference = null,
+    contents: js.Array[sarifLib.sarifMod.ToolComponentNs.contents] = null,
     dottedQuadFileVersion: java.lang.String = null,
     downloadUri: java.lang.String = null,
     fullDescription: MultiformatMessageString = null,
     fullName: java.lang.String = null,
     globalMessageStrings: org.scalablytyped.runtime.StringDictionary[MultiformatMessageString] = null,
     guid: java.lang.String = null,
-    notificationDescriptors: js.Array[ReportingDescriptor] = null,
+    isComprehensive: js.UndefOr[scala.Boolean] = js.undefined,
+    language: java.lang.String = null,
+    localizedDataSemanticVersion: java.lang.String = null,
+    minimumRequiredLocalizedDataSemanticVersion: java.lang.String = null,
+    notifications: js.Array[ReportingDescriptor] = null,
     organization: java.lang.String = null,
     product: java.lang.String = null,
+    productSuite: java.lang.String = null,
     properties: PropertyBag = null,
-    ruleDescriptors: js.Array[ReportingDescriptor] = null,
+    releaseDateUtc: java.lang.String = null,
+    rules: js.Array[ReportingDescriptor] = null,
     semanticVersion: java.lang.String = null,
     shortDescription: MultiformatMessageString = null,
+    supportedTaxonomies: js.Array[ToolComponentReference] = null,
+    taxa: js.Array[ReportingDescriptor] = null,
+    translationMetadata: TranslationMetadata = null,
     version: java.lang.String = null
   ): ToolComponent = {
     val __obj = js.Dynamic.literal(name = name)
     if (artifactIndices != null) __obj.updateDynamic("artifactIndices")(artifactIndices)
+    if (associatedComponent != null) __obj.updateDynamic("associatedComponent")(associatedComponent)
+    if (contents != null) __obj.updateDynamic("contents")(contents)
     if (dottedQuadFileVersion != null) __obj.updateDynamic("dottedQuadFileVersion")(dottedQuadFileVersion)
     if (downloadUri != null) __obj.updateDynamic("downloadUri")(downloadUri)
     if (fullDescription != null) __obj.updateDynamic("fullDescription")(fullDescription)
     if (fullName != null) __obj.updateDynamic("fullName")(fullName)
     if (globalMessageStrings != null) __obj.updateDynamic("globalMessageStrings")(globalMessageStrings)
     if (guid != null) __obj.updateDynamic("guid")(guid)
-    if (notificationDescriptors != null) __obj.updateDynamic("notificationDescriptors")(notificationDescriptors)
+    if (!js.isUndefined(isComprehensive)) __obj.updateDynamic("isComprehensive")(isComprehensive)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (localizedDataSemanticVersion != null) __obj.updateDynamic("localizedDataSemanticVersion")(localizedDataSemanticVersion)
+    if (minimumRequiredLocalizedDataSemanticVersion != null) __obj.updateDynamic("minimumRequiredLocalizedDataSemanticVersion")(minimumRequiredLocalizedDataSemanticVersion)
+    if (notifications != null) __obj.updateDynamic("notifications")(notifications)
     if (organization != null) __obj.updateDynamic("organization")(organization)
     if (product != null) __obj.updateDynamic("product")(product)
+    if (productSuite != null) __obj.updateDynamic("productSuite")(productSuite)
     if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (ruleDescriptors != null) __obj.updateDynamic("ruleDescriptors")(ruleDescriptors)
+    if (releaseDateUtc != null) __obj.updateDynamic("releaseDateUtc")(releaseDateUtc)
+    if (rules != null) __obj.updateDynamic("rules")(rules)
     if (semanticVersion != null) __obj.updateDynamic("semanticVersion")(semanticVersion)
     if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription)
+    if (supportedTaxonomies != null) __obj.updateDynamic("supportedTaxonomies")(supportedTaxonomies)
+    if (taxa != null) __obj.updateDynamic("taxa")(taxa)
+    if (translationMetadata != null) __obj.updateDynamic("translationMetadata")(translationMetadata)
     if (version != null) __obj.updateDynamic("version")(version)
     __obj.asInstanceOf[ToolComponent]
   }

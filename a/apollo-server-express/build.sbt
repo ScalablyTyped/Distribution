@@ -1,27 +1,27 @@
 organization := "org.scalablytyped"
 name := "apollo-server-express"
-version := "2.4.8-92801a"
+version := "2.4.8-c93b53"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-0bdd08",
-  "org.scalablytyped" %%% "apollo-datasource" % "0.3.1-da0348",
-  "org.scalablytyped" %%% "apollo-engine-reporting" % "1.0.7-d57297",
+  "org.scalablytyped" %%% "apollo-datasource" % "0.3.1-9d3d11",
+  "org.scalablytyped" %%% "apollo-engine-reporting" % "1.0.7-ba49f3",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.1-2c0f8d",
-  "org.scalablytyped" %%% "apollo-env" % "0.4.0-252d61",
-  "org.scalablytyped" %%% "apollo-graphql" % "0.1.3-f47951",
+  "org.scalablytyped" %%% "apollo-env" % "0.4.0-6f466c",
+  "org.scalablytyped" %%% "apollo-graphql" % "0.1.3-f11c53",
   "org.scalablytyped" %%% "apollo-link" % "1.2.11-0d8242",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.3.1-e72a35",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.4.8-9d6ea7",
-  "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-c1f5de",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.4.8-a728d4",
+  "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-a091cd",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.2.1-41e252",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.3.7-5550e2",
   "org.scalablytyped" %%% "apollo-utilities" % "1.2.1-5d92c5",
-  "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.3.5-4858ca",
+  "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.3.5-1a6ea5",
   "org.scalablytyped" %%% "apollographql__graphql-playground-html" % "1.6.6-f4bd24",
-  "org.scalablytyped" %%% "async-retry" % "1.3-dt-20190331Z-721ee5",
+  "org.scalablytyped" %%% "async-retry" % "1.4-dt-20190404Z-ac75ca",
   "org.scalablytyped" %%% "backo2" % "1.0-dt-20180601Z-d72019",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-249d28",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20190322Z-53c35c",
@@ -43,7 +43,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-34c823",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-2db1bb",
+  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190403Z-8a4c08",
   "org.scalablytyped" %%% "protobufjs" % "6.8.8-656775",
   "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-7d3a63",
   "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-e9c001",
@@ -56,6 +56,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "protobufjs__pool" % "1.1.0-87cd30",
   "org.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-3bda91",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-623d43",
+  "org.scalablytyped" %%% "retry" % "0.12-dt-20181229Z-2fc359",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-201a01",
   "org.scalablytyped" %%% "sha_dot_js" % "2.4-dt-20181126Z-74a4b7",
   "org.scalablytyped" %%% "std" % "3.4-d52857",

@@ -127,6 +127,9 @@ class SchemaComposer[TContext] ()
   ): graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[TSource, TContext] = js.native
   def createResolver[TSource, TArgs](opts: graphqlDashComposeLib.libResolverMod.ResolverOpts[TSource, TContext, TArgs, _]): graphqlDashComposeLib.libResolverMod.Resolver[TSource, TContext, TArgs, _] = js.native
   def createScalarTC(typeDef: graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposeDefinition): graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext] = js.native
+  /**
+    * Creates TypeComposer from SDL without adding it to the type storage.
+    */
   def createTempTC(typeOrSDL: js.Any): (graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext]) | graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[TContext] | (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext]) | (graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[_, TContext]) | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext] = js.native
   def createUnionTC[TSource](
     typeDef: graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposeDefinition[TSource, TContext]

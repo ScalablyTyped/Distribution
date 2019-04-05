@@ -11,18 +11,18 @@ trait Run extends js.Object {
     */
   var addresses: js.UndefOr[js.Array[Address]] = js.undefined
   /**
-    * Automation details that describe the aggregate of runs to which this run belongs.
-    */
-  var aggregateIds: js.UndefOr[js.Array[RunAutomationDetails]] = js.undefined
-  /**
     * An array of artifact objects relevant to the run.
     */
   var artifacts: js.UndefOr[js.Array[Artifact]] = js.undefined
   /**
-    * The 'instanceGuid' property of a previous SARIF 'run' that comprises the baseline that was used to compute
-    * result 'baselineState' properties for the run.
+    * Automation details that describe this run.
     */
-  var baselineInstanceGuid: js.UndefOr[java.lang.String] = js.undefined
+  var automationDetails: js.UndefOr[RunAutomationDetails] = js.undefined
+  /**
+    * The 'guid' property of a previous SARIF 'run' that comprises the baseline that was used to compute result
+    * 'baselineState' properties for the run.
+    */
+  var baselineGuid: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Specifies the unit in which the tool measures columns.
     */
@@ -44,19 +44,21 @@ trait Run extends js.Object {
   /**
     * References to external property files that should be inlined with the content of a root log file.
     */
-  var externalPropertyFiles: js.UndefOr[ExternalPropertyFiles] = js.undefined
+  var externalPropertyFileReferences: js.UndefOr[ExternalPropertyFileReferences] = js.undefined
   /**
-    * A dictionary, each of whose keys is the id of a graph and each of whose values is a 'graph' object with that id.
+    * An array of zero or more unique graph objects associated with the run.
     */
-  var graphs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Graph]] = js.undefined
-  /**
-    * Automation details that describe this run.
-    */
-  var id: js.UndefOr[RunAutomationDetails] = js.undefined
+  var graphs: js.UndefOr[js.Array[Graph]] = js.undefined
   /**
     * Describes the invocation of the analysis tool.
     */
   var invocations: js.UndefOr[js.Array[Invocation]] = js.undefined
+  /**
+    * The language of the messages emitted into the log file during this run (expressed as an ISO 649 two-letter
+    * lowercase culture code) and region (expressed as an ISO 3166 two-letter uppercase subculture code associated
+    * with a country or region).
+    */
+  var language: js.UndefOr[java.lang.String] = js.undefined
   /**
     * An array of logical locations such as namespaces, types or functions.
     */
@@ -75,6 +77,12 @@ trait Run extends js.Object {
     */
   var originalUriBaseIds: js.UndefOr[org.scalablytyped.runtime.StringDictionary[ArtifactLocation]] = js.undefined
   /**
+    * Contains configurations that may potentially override both reportingDescriptor.defaultConfiguration (the tool's
+    * default severities) and invocation.configurationOverrides (severities established at run-time from the command
+    * line).
+    */
+  var policies: js.UndefOr[js.Array[ToolComponent]] = js.undefined
+  /**
     * Key/value pairs that provide additional information about the run.
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
@@ -88,9 +96,13 @@ trait Run extends js.Object {
     */
   var results: js.UndefOr[js.Array[Result]] = js.undefined
   /**
-    * An array of reportingDescriptor objects relevant to a taxonomy in which results are categorized.
+    * Automation details that describe the aggregate of runs to which this run belongs.
     */
-  var taxonomies: js.UndefOr[js.Array[ReportingDescriptor]] = js.undefined
+  var runAggregates: js.UndefOr[js.Array[RunAutomationDetails]] = js.undefined
+  /**
+    * An array of toolComponent objects relevant to a taxonomy in which results are categorized.
+    */
+  var taxonomies: js.UndefOr[js.Array[ToolComponent]] = js.undefined
   /**
     * An array of threadFlowLocation objects cached at run level.
     */
@@ -104,7 +116,7 @@ trait Run extends js.Object {
   /**
     * The set of available translations of the localized data provided by the tool.
     */
-  var translations: js.UndefOr[js.Array[Translation]] = js.undefined
+  var translations: js.UndefOr[js.Array[ToolComponent]] = js.undefined
   /**
     * Specifies the revision in version control of the artifacts that were scanned.
     */
@@ -116,49 +128,53 @@ object Run {
   def apply(
     tool: Tool,
     addresses: js.Array[Address] = null,
-    aggregateIds: js.Array[RunAutomationDetails] = null,
     artifacts: js.Array[Artifact] = null,
-    baselineInstanceGuid: java.lang.String = null,
+    automationDetails: RunAutomationDetails = null,
+    baselineGuid: java.lang.String = null,
     columnKind: sarifLib.sarifMod.RunNs.columnKind = null,
     conversion: Conversion = null,
     defaultFileEncoding: java.lang.String = null,
     defaultSourceLanguage: java.lang.String = null,
-    externalPropertyFiles: ExternalPropertyFiles = null,
-    graphs: org.scalablytyped.runtime.StringDictionary[Graph] = null,
-    id: RunAutomationDetails = null,
+    externalPropertyFileReferences: ExternalPropertyFileReferences = null,
+    graphs: js.Array[Graph] = null,
     invocations: js.Array[Invocation] = null,
+    language: java.lang.String = null,
     logicalLocations: js.Array[LogicalLocation] = null,
     markdownMessageMimeType: java.lang.String = null,
     newlineSequences: js.Array[java.lang.String] = null,
     originalUriBaseIds: org.scalablytyped.runtime.StringDictionary[ArtifactLocation] = null,
+    policies: js.Array[ToolComponent] = null,
     properties: PropertyBag = null,
     redactionToken: java.lang.String = null,
     results: js.Array[Result] = null,
-    taxonomies: js.Array[ReportingDescriptor] = null,
+    runAggregates: js.Array[RunAutomationDetails] = null,
+    taxonomies: js.Array[ToolComponent] = null,
     threadFlowLocations: js.Array[ThreadFlowLocation] = null,
-    translations: js.Array[Translation] = null,
+    translations: js.Array[ToolComponent] = null,
     versionControlProvenance: js.Array[VersionControlDetails] = null
   ): Run = {
     val __obj = js.Dynamic.literal(tool = tool)
     if (addresses != null) __obj.updateDynamic("addresses")(addresses)
-    if (aggregateIds != null) __obj.updateDynamic("aggregateIds")(aggregateIds)
     if (artifacts != null) __obj.updateDynamic("artifacts")(artifacts)
-    if (baselineInstanceGuid != null) __obj.updateDynamic("baselineInstanceGuid")(baselineInstanceGuid)
+    if (automationDetails != null) __obj.updateDynamic("automationDetails")(automationDetails)
+    if (baselineGuid != null) __obj.updateDynamic("baselineGuid")(baselineGuid)
     if (columnKind != null) __obj.updateDynamic("columnKind")(columnKind)
     if (conversion != null) __obj.updateDynamic("conversion")(conversion)
     if (defaultFileEncoding != null) __obj.updateDynamic("defaultFileEncoding")(defaultFileEncoding)
     if (defaultSourceLanguage != null) __obj.updateDynamic("defaultSourceLanguage")(defaultSourceLanguage)
-    if (externalPropertyFiles != null) __obj.updateDynamic("externalPropertyFiles")(externalPropertyFiles)
+    if (externalPropertyFileReferences != null) __obj.updateDynamic("externalPropertyFileReferences")(externalPropertyFileReferences)
     if (graphs != null) __obj.updateDynamic("graphs")(graphs)
-    if (id != null) __obj.updateDynamic("id")(id)
     if (invocations != null) __obj.updateDynamic("invocations")(invocations)
+    if (language != null) __obj.updateDynamic("language")(language)
     if (logicalLocations != null) __obj.updateDynamic("logicalLocations")(logicalLocations)
     if (markdownMessageMimeType != null) __obj.updateDynamic("markdownMessageMimeType")(markdownMessageMimeType)
     if (newlineSequences != null) __obj.updateDynamic("newlineSequences")(newlineSequences)
     if (originalUriBaseIds != null) __obj.updateDynamic("originalUriBaseIds")(originalUriBaseIds)
+    if (policies != null) __obj.updateDynamic("policies")(policies)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (redactionToken != null) __obj.updateDynamic("redactionToken")(redactionToken)
     if (results != null) __obj.updateDynamic("results")(results)
+    if (runAggregates != null) __obj.updateDynamic("runAggregates")(runAggregates)
     if (taxonomies != null) __obj.updateDynamic("taxonomies")(taxonomies)
     if (threadFlowLocations != null) __obj.updateDynamic("threadFlowLocations")(threadFlowLocations)
     if (translations != null) __obj.updateDynamic("translations")(translations)

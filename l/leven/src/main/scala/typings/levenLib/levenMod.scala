@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("leven", JSImport.Namespace)
 @js.native
-object levenMod extends js.Object {
-  def default(left: java.lang.String, right: java.lang.String): scala.Double = js.native
-}
+object levenMod
+  extends org.scalablytyped.runtime.TopLevel[Anon_DefaultLeft]
 

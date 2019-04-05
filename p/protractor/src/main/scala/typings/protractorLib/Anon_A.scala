@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_A
   extends org.scalablytyped.runtime.Instantiable2[
       /* driver */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, 
-      /* id */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String], 
+      /* id */ js.Promise[java.lang.String], 
       seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement
     ] {
   /**
@@ -17,20 +17,20 @@ trait Anon_A
     * @param {boolean=} opt_noLegacy Whether to exclude the legacy element key.
     * @return {!Object} The element ID for use with WebDriver's wire protocol.
     */
-  def buildId(id: java.lang.String): js.Object = js.native
-  def buildId(id: java.lang.String, opt_noLegacy: scala.Boolean): js.Object = js.native
+  def buildId(id: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.IWebElementId = js.native
+  def buildId(id: java.lang.String, opt_noLegacy: scala.Boolean): seleniumDashWebdriverLib.seleniumDashWebdriverMod.IWebElementId = js.native
   /**
     * Compares two WebElements for equality.
     *
     * @param {!WebElement} a A WebElement.
     * @param {!WebElement} b A WebElement.
-    * @return {!promise.Promise<boolean>} A promise that will be
+    * @return {!Promise<boolean>} A promise that will be
     *     resolved to whether the two WebElements are equal.
     */
   def equals(
     a: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement,
     b: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement
-  ): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] = js.native
+  ): js.Promise[scala.Boolean] = js.native
   /**
     * Extracts the encoded WebElement ID from the object.
     *

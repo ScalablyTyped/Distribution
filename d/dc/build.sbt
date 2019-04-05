@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "dc"
-version := "0.0-unknown-dt-20190322Z-21b8f3"
+version := "0.0-unknown-dt-20190322Z-3ee541"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "d3" % "5.7-dt-20190212Z-ab7191",
-  "org.scalablytyped" %%% "d3-array" % "1.2-dt-20190221Z-41f505",
+  "org.scalablytyped" %%% "d3" % "5.7-dt-20190212Z-7da05f",
+  "org.scalablytyped" %%% "d3-array" % "2.0-dt-20190221Z-feb193",
   "org.scalablytyped" %%% "d3-axis" % "1.0-dt-20190212Z-52ed15",
   "org.scalablytyped" %%% "d3-brush" % "1.0-dt-20190212Z-000fff",
   "org.scalablytyped" %%% "d3-chord" % "1.0-dt-20190212Z-31c0fa",
   "org.scalablytyped" %%% "d3-collection" % "1.0-dt-20190212Z-fa2cdb",
   "org.scalablytyped" %%% "d3-color" % "1.2-dt-20190212Z-8ede05",
-  "org.scalablytyped" %%% "d3-contour" % "1.3-dt-20190205Z-351d0b",
+  "org.scalablytyped" %%% "d3-contour" % "1.3-dt-20190205Z-5ba94c",
   "org.scalablytyped" %%% "d3-dispatch" % "1.0-dt-20190212Z-1525c0",
   "org.scalablytyped" %%% "d3-drag" % "1.2-dt-20190212Z-a25288",
   "org.scalablytyped" %%% "d3-dsv" % "1.0-dt-20190326Z-6cf8bf",

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Binary extends js.Object {
-  var Binary: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.firefoxMod.Binary] = js.native
-  var Driver: Anon_CreateSession = js.native
+  var Driver: Anon_CreateSessionOptconfig = js.native
   var Options: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.firefoxMod.Options] = js.native
-  var Profile: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.firefoxMod.Profile] = js.native
   var ServiceBuilder: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.firefoxMod.ServiceBuilder] = js.native
   def createWiresService(binary: java.lang.String): seleniumDashWebdriverLib.remoteMod.DriverService = js.native
   def createWiresService(binary: js.Any): seleniumDashWebdriverLib.remoteMod.DriverService = js.native

@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("webpack", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  /** Webpack package version. */
+  val version: js.UndefOr[java.lang.String] = js.native
   def apply(): webpackLib.webpackMod.webpackNs.Compiler = js.native
   def apply(options: js.Array[webpackLib.webpackMod.webpackNs.Configuration]): webpackLib.webpackMod.webpackNs.MultiCompiler = js.native
   def apply(

@@ -15,6 +15,9 @@ trait GetSignedUrlConfig extends js.Object {
   var promptSaveAs: js.UndefOr[java.lang.String] = js.undefined
   var responseDisposition: js.UndefOr[java.lang.String] = js.undefined
   var responseType: js.UndefOr[java.lang.String] = js.undefined
+  var version: js.UndefOr[
+    atGoogleDashCloudStorageLib.atGoogleDashCloudStorageLibStrings.v2 | atGoogleDashCloudStorageLib.atGoogleDashCloudStorageLibStrings.v4
+  ] = js.undefined
 }
 
 object GetSignedUrlConfig {
@@ -28,7 +31,8 @@ object GetSignedUrlConfig {
     extensionHeaders: nodeLib.httpMod.OutgoingHttpHeaders = null,
     promptSaveAs: java.lang.String = null,
     responseDisposition: java.lang.String = null,
-    responseType: java.lang.String = null
+    responseType: java.lang.String = null,
+    version: atGoogleDashCloudStorageLib.atGoogleDashCloudStorageLibStrings.v2 | atGoogleDashCloudStorageLib.atGoogleDashCloudStorageLibStrings.v4 = null
   ): GetSignedUrlConfig = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any])
     if (cname != null) __obj.updateDynamic("cname")(cname)
@@ -38,6 +42,7 @@ object GetSignedUrlConfig {
     if (promptSaveAs != null) __obj.updateDynamic("promptSaveAs")(promptSaveAs)
     if (responseDisposition != null) __obj.updateDynamic("responseDisposition")(responseDisposition)
     if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSignedUrlConfig]
   }
 }

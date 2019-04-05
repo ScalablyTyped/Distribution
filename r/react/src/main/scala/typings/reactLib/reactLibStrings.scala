@@ -487,6 +487,9 @@ object reactLibStrings {
   sealed trait mixed extends js.Object
   
   @js.native
+  sealed trait mount extends js.Object
+  
+  @js.native
   sealed trait mouse extends js.Object
   
   @js.native
@@ -743,6 +746,9 @@ object reactLibStrings {
   
   @js.native
   sealed trait ul extends js.Object
+  
+  @js.native
+  sealed trait update extends js.Object
   
   @js.native
   sealed trait use extends js.Object
@@ -1092,6 +1098,8 @@ object reactLibStrings {
   @scala.inline
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   @scala.inline
+  def mount: mount = "mount".asInstanceOf[mount]
+  @scala.inline
   def mouse: mouse = "mouse".asInstanceOf[mouse]
   @scala.inline
   def move: move = "move".asInstanceOf[move]
@@ -1263,6 +1271,8 @@ object reactLibStrings {
   def u: u = "u".asInstanceOf[u]
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
+  @scala.inline
+  def update: update = "update".asInstanceOf[update]
   @scala.inline
   def use: use = "use".asInstanceOf[use]
   @scala.inline

@@ -162,8 +162,9 @@
  * found in the LICENSE file at https://angular.io/license
  */
 /**
- * The different format styles that can be used to represent numbers.
- * Used by the function {@link getLocaleNumberFormat}.
+ * Format styles that can be used to represent numbers.
+ * @see `getLocaleNumberFormat()`.
+ * @see [Internationalization (i18n) Guide](https://angular.io/guide/i18n)
  *
  * @publicApi
  */
@@ -337,10 +338,5 @@
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
- */
-/**
- * Defines a scroll position manager. Implemented by `BrowserViewportScroller`.
- *
- * @publicApi
  */
 ```

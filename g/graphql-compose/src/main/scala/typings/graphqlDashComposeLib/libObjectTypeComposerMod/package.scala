@@ -17,6 +17,7 @@ package object libObjectTypeComposerMod {
   {[ argName in keyof TArgs ]: graphql-compose.graphql-compose/lib/ObjectTypeComposer.ComposeArgumentConfig}
     */ graphqlDashComposeLib.graphqlDashComposeLibStrings.ComposeFieldConfigArgumentMap with js.Any
   type ComposeFieldConfigMap[TSource, TContext] = graphqlDashComposeLib.libUtilsDefinitionsMod.ObjMap[ComposeFieldConfig[TSource, TContext, ArgsMap]]
+  type ComposeObjectType = (ObjectTypeComposer[js.Any, js.Any]) | (graphqlLib.graphqlMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | graphqlDashComposeLib.libTypeMapperMod.TypeDefinitionString | graphqlDashComposeLib.libTypeMapperMod.TypeAsString
   /* Rewritten from type alias, can be one of: 
     - graphqlLib.typeDefinitionMod.GraphQLOutputType
     - ObjectTypeComposer[TReturn, TContext]

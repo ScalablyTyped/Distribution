@@ -17,6 +17,7 @@
 //                 Ryan Waskiewicz <https://github.com/rwaskiewicz>
 //                 Kyle Uehlein <https://github.com/kuehlein>
 //                 Grgur Grisogono <https://github.com/grgur>
+//                 Rubens Pinheiro Gonçalves Cavalcante <https://github.com/rubenspgcavalcante>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 ```

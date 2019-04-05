@@ -53,6 +53,10 @@ trait Invocation extends js.Object {
     */
   var machine: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * An array of configurationOverride objects that describe notifications related runtime overrides.
+    */
+  var notificationConfigurationOverrides: js.UndefOr[js.Array[ConfigurationOverride]] = js.undefined
+  /**
     * The process id for the analysis tool run.
     */
   var processId: js.UndefOr[scala.Double] = js.undefined
@@ -65,13 +69,13 @@ trait Invocation extends js.Object {
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
   /**
-    * An array of reportingConfigurationOverride objects that describe runtime reporting behavior.
-    */
-  var reportingConfigurationOverrides: js.UndefOr[js.Array[ReportingConfigurationOverride]] = js.undefined
-  /**
     * The locations of any response files specified on the tool's command line.
     */
   var responseFiles: js.UndefOr[js.Array[ArtifactLocation]] = js.undefined
+  /**
+    * An array of configurationOverride objects that describe rules related runtime overrides.
+    */
+  var ruleConfigurationOverrides: js.UndefOr[js.Array[ConfigurationOverride]] = js.undefined
   /**
     * The Coordinated Universal Time (UTC) date and time at which the run started. See "Date/time properties" in the
     * SARIF spec for the required format.
@@ -125,11 +129,12 @@ object Invocation {
     exitSignalName: java.lang.String = null,
     exitSignalNumber: scala.Int | scala.Double = null,
     machine: java.lang.String = null,
+    notificationConfigurationOverrides: js.Array[ConfigurationOverride] = null,
     processId: scala.Int | scala.Double = null,
     processStartFailureMessage: java.lang.String = null,
     properties: PropertyBag = null,
-    reportingConfigurationOverrides: js.Array[ReportingConfigurationOverride] = null,
     responseFiles: js.Array[ArtifactLocation] = null,
+    ruleConfigurationOverrides: js.Array[ConfigurationOverride] = null,
     startTimeUtc: java.lang.String = null,
     stderr: ArtifactLocation = null,
     stdin: ArtifactLocation = null,
@@ -152,11 +157,12 @@ object Invocation {
     if (exitSignalName != null) __obj.updateDynamic("exitSignalName")(exitSignalName)
     if (exitSignalNumber != null) __obj.updateDynamic("exitSignalNumber")(exitSignalNumber.asInstanceOf[js.Any])
     if (machine != null) __obj.updateDynamic("machine")(machine)
+    if (notificationConfigurationOverrides != null) __obj.updateDynamic("notificationConfigurationOverrides")(notificationConfigurationOverrides)
     if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
     if (processStartFailureMessage != null) __obj.updateDynamic("processStartFailureMessage")(processStartFailureMessage)
     if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (reportingConfigurationOverrides != null) __obj.updateDynamic("reportingConfigurationOverrides")(reportingConfigurationOverrides)
     if (responseFiles != null) __obj.updateDynamic("responseFiles")(responseFiles)
+    if (ruleConfigurationOverrides != null) __obj.updateDynamic("ruleConfigurationOverrides")(ruleConfigurationOverrides)
     if (startTimeUtc != null) __obj.updateDynamic("startTimeUtc")(startTimeUtc)
     if (stderr != null) __obj.updateDynamic("stderr")(stderr)
     if (stdin != null) __obj.updateDynamic("stdin")(stdin)

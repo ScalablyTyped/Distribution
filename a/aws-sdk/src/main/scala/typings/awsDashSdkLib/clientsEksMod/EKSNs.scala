@@ -44,6 +44,10 @@ object EKSNs extends js.Object {
       */
     var endpoint: js.UndefOr[String] = js.undefined
     /**
+      * The logging configuration for your cluster.
+      */
+    var logging: js.UndefOr[Logging] = js.undefined
+    /**
       * The name of the cluster.
       */
     var name: js.UndefOr[String] = js.undefined
@@ -74,6 +78,10 @@ object EKSNs extends js.Object {
       * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
       */
     var clientRequestToken: js.UndefOr[String] = js.undefined
+    /**
+      * Enable or disable exporting the Kubernetes control plane logs for your cluster to CloudWatch Logs. By default, cluster control plane logs are not exported to CloudWatch Logs. For more information, see Amazon EKS Cluster Control Plane Logs in the  Amazon EKS User Guide .  CloudWatch Logs ingestion, archive storage, and data scanning rates apply to exported control plane logs. For more information, see Amazon CloudWatch Pricing. 
+      */
+    var logging: js.UndefOr[Logging] = js.undefined
     /**
       * The unique name to give to your cluster.
       */
@@ -208,13 +216,31 @@ object EKSNs extends js.Object {
     var updateIds: js.UndefOr[StringList] = js.undefined
   }
   
+  trait LogSetup extends js.Object {
+    /**
+      * If a log type is enabled, then that log type exports its control plane logs to CloudWatch Logs. If a log type is not enabled, then that log type does not export its control plane logs. Each individual log type can be enabled or disabled independently.
+      */
+    var enabled: js.UndefOr[BoxedBoolean] = js.undefined
+    /**
+      * The available cluster control plane log types.
+      */
+    var types: js.UndefOr[LogTypes] = js.undefined
+  }
+  
+  trait Logging extends js.Object {
+    /**
+      * The cluster control plane logging configuration for your cluster.
+      */
+    var clusterLogging: js.UndefOr[LogSetups] = js.undefined
+  }
+  
   @js.native
   trait Types
     extends awsDashSdkLib.libServiceMod.Service {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-      * Creates an Amazon EKS control plane.  The Amazon EKS control plane consists of control plane instances that run the Kubernetes software, like etcd and the API server. The control plane runs in an account managed by AWS, and the Kubernetes API is exposed via the Amazon EKS API server endpoint. Amazon EKS worker nodes run in your AWS account and connect to your cluster's control plane via the Kubernetes API server endpoint and a certificate file that is created for your cluster. The cluster control plane is provisioned across multiple Availability Zones and fronted by an Elastic Load Balancing Network Load Balancer. Amazon EKS also provisions elastic network interfaces in your VPC subnets to provide connectivity from the control plane instances to the worker nodes (for example, to support kubectl exec, logs, and proxy data flows). After you create an Amazon EKS cluster, you must configure your Kubernetes tooling to communicate with the API server and launch worker nodes into your cluster. For more information, see Managing Cluster Authentication and Launching Amazon EKS Worker Nodesin the Amazon EKS User Guide.
+      * Creates an Amazon EKS control plane.  The Amazon EKS control plane consists of control plane instances that run the Kubernetes software, like etcd and the API server. The control plane runs in an account managed by AWS, and the Kubernetes API is exposed via the Amazon EKS API server endpoint. Each Amazon EKS cluster control plane is single-tenant and unique, and runs on its own set of Amazon EC2 instances. The cluster control plane is provisioned across multiple Availability Zones and fronted by an Elastic Load Balancing Network Load Balancer. Amazon EKS also provisions elastic network interfaces in your VPC subnets to provide connectivity from the control plane instances to the worker nodes (for example, to support kubectl exec, logs, and proxy data flows). Amazon EKS worker nodes run in your AWS account and connect to your cluster's control plane via the Kubernetes API server endpoint and a certificate file that is created for your cluster. You can use the endpointPublicAccess and endpointPrivateAccess parameters to enable or disable public and private access to your cluster's Kubernetes API server endpoint. By default, public access is enabled and private access is disabled. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide .  You can use the logging parameter to enable or disable exporting the Kubernetes control plane logs for your cluster to CloudWatch Logs. By default, cluster control plane logs are not exported to CloudWatch Logs. For more information, see Amazon EKS Cluster Control Plane Logs in the  Amazon EKS User Guide .  CloudWatch Logs ingestion, archive storage, and data scanning rates apply to exported control plane logs. For more information, see Amazon CloudWatch Pricing.  Cluster creation typically takes between 10 and 15 minutes. After you create an Amazon EKS cluster, you must configure your Kubernetes tooling to communicate with the API server and launch worker nodes into your cluster. For more information, see Managing Cluster Authentication and Launching Amazon EKS Worker Nodes in the Amazon EKS User Guide.
       */
     def createCluster(): awsDashSdkLib.libRequestMod.Request[CreateClusterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createCluster(
@@ -225,7 +251,7 @@ object EKSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateClusterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates an Amazon EKS control plane.  The Amazon EKS control plane consists of control plane instances that run the Kubernetes software, like etcd and the API server. The control plane runs in an account managed by AWS, and the Kubernetes API is exposed via the Amazon EKS API server endpoint. Amazon EKS worker nodes run in your AWS account and connect to your cluster's control plane via the Kubernetes API server endpoint and a certificate file that is created for your cluster. The cluster control plane is provisioned across multiple Availability Zones and fronted by an Elastic Load Balancing Network Load Balancer. Amazon EKS also provisions elastic network interfaces in your VPC subnets to provide connectivity from the control plane instances to the worker nodes (for example, to support kubectl exec, logs, and proxy data flows). After you create an Amazon EKS cluster, you must configure your Kubernetes tooling to communicate with the API server and launch worker nodes into your cluster. For more information, see Managing Cluster Authentication and Launching Amazon EKS Worker Nodesin the Amazon EKS User Guide.
+      * Creates an Amazon EKS control plane.  The Amazon EKS control plane consists of control plane instances that run the Kubernetes software, like etcd and the API server. The control plane runs in an account managed by AWS, and the Kubernetes API is exposed via the Amazon EKS API server endpoint. Each Amazon EKS cluster control plane is single-tenant and unique, and runs on its own set of Amazon EC2 instances. The cluster control plane is provisioned across multiple Availability Zones and fronted by an Elastic Load Balancing Network Load Balancer. Amazon EKS also provisions elastic network interfaces in your VPC subnets to provide connectivity from the control plane instances to the worker nodes (for example, to support kubectl exec, logs, and proxy data flows). Amazon EKS worker nodes run in your AWS account and connect to your cluster's control plane via the Kubernetes API server endpoint and a certificate file that is created for your cluster. You can use the endpointPublicAccess and endpointPrivateAccess parameters to enable or disable public and private access to your cluster's Kubernetes API server endpoint. By default, public access is enabled and private access is disabled. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide .  You can use the logging parameter to enable or disable exporting the Kubernetes control plane logs for your cluster to CloudWatch Logs. By default, cluster control plane logs are not exported to CloudWatch Logs. For more information, see Amazon EKS Cluster Control Plane Logs in the  Amazon EKS User Guide .  CloudWatch Logs ingestion, archive storage, and data scanning rates apply to exported control plane logs. For more information, see Amazon CloudWatch Pricing.  Cluster creation typically takes between 10 and 15 minutes. After you create an Amazon EKS cluster, you must configure your Kubernetes tooling to communicate with the API server and launch worker nodes into your cluster. For more information, see Managing Cluster Authentication and Launching Amazon EKS Worker Nodes in the Amazon EKS User Guide.
       */
     def createCluster(params: CreateClusterRequest): awsDashSdkLib.libRequestMod.Request[CreateClusterResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createCluster(
@@ -352,7 +378,7 @@ object EKSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListUpdatesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Updates an Amazon EKS cluster configuration. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Currently, the only cluster configuration changes supported are to enable or disable Amazon EKS public and private API server endpoints. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide . Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+      * Updates an Amazon EKS cluster configuration. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. You can use this API operation to enable or disable public and private access to your cluster's Kubernetes API server endpoint. By default, public access is enabled and private access is disabled. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide .  You can also use this API operation to enable or disable exporting the Kubernetes control plane logs for your cluster to CloudWatch Logs. By default, cluster control plane logs are not exported to CloudWatch Logs. For more information, see Amazon EKS Cluster Control Plane Logs in the  Amazon EKS User Guide .  CloudWatch Logs ingestion, archive storage, and data scanning rates apply to exported control plane logs. For more information, see Amazon CloudWatch Pricing.  Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
       */
     def updateClusterConfig(): awsDashSdkLib.libRequestMod.Request[UpdateClusterConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateClusterConfig(
@@ -363,7 +389,7 @@ object EKSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateClusterConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Updates an Amazon EKS cluster configuration. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. Currently, the only cluster configuration changes supported are to enable or disable Amazon EKS public and private API server endpoints. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide . Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
+      * Updates an Amazon EKS cluster configuration. Your cluster continues to function during the update. The response output includes an update ID that you can use to track the status of your cluster update with the DescribeUpdate API operation. You can use this API operation to enable or disable public and private access to your cluster's Kubernetes API server endpoint. By default, public access is enabled and private access is disabled. For more information, see Amazon EKS Cluster Endpoint Access Control in the  Amazon EKS User Guide .  You can also use this API operation to enable or disable exporting the Kubernetes control plane logs for your cluster to CloudWatch Logs. By default, cluster control plane logs are not exported to CloudWatch Logs. For more information, see Amazon EKS Cluster Control Plane Logs in the  Amazon EKS User Guide .  CloudWatch Logs ingestion, archive storage, and data scanning rates apply to exported control plane logs. For more information, see Amazon CloudWatch Pricing.  Cluster updates are asynchronous, and they should finish within a few minutes. During an update, the cluster status moves to UPDATING (this status transition is eventually consistent). When the update is complete (either Failed or Successful), the cluster status moves to Active.
       */
     def updateClusterConfig(params: UpdateClusterConfigRequest): awsDashSdkLib.libRequestMod.Request[UpdateClusterConfigResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateClusterConfig(
@@ -496,6 +522,10 @@ object EKSNs extends js.Object {
       */
     var clientRequestToken: js.UndefOr[String] = js.undefined
     /**
+      * Enable or disable exporting the Kubernetes control plane logs for your cluster to CloudWatch Logs. By default, cluster control plane logs are not exported to CloudWatch Logs. For more information, see Amazon EKS Cluster Control Plane Logs in the  Amazon EKS User Guide .  CloudWatch Logs ingestion, archive storage, and data scanning rates apply to exported control plane logs. For more information, see Amazon CloudWatch Pricing. 
+      */
+    var logging: js.UndefOr[Logging] = js.undefined
+    /**
       * The name of the Amazon EKS cluster to update.
       */
     var name: String
@@ -585,6 +615,8 @@ object EKSNs extends js.Object {
   
   trait _ErrorCode extends js.Object
   
+  trait _LogType extends js.Object
+  
   trait _UpdateParamType extends js.Object
   
   trait _UpdateStatus extends js.Object
@@ -621,6 +653,17 @@ object EKSNs extends js.Object {
   type ErrorDetails = js.Array[ErrorDetail]
   type ListClustersRequestMaxResults = scala.Double
   type ListUpdatesRequestMaxResults = scala.Double
+  type LogSetups = js.Array[LogSetup]
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.api
+    - awsDashSdkLib.awsDashSdkLibStrings.audit
+    - awsDashSdkLib.awsDashSdkLibStrings.authenticator
+    - awsDashSdkLib.awsDashSdkLibStrings.controllerManager
+    - awsDashSdkLib.awsDashSdkLibStrings.scheduler
+    - java.lang.String
+  */
+  type LogType = _LogType | java.lang.String
+  type LogTypes = js.Array[LogType]
   type String = java.lang.String
   type StringList = js.Array[String]
   type Timestamp = stdLib.Date
@@ -629,6 +672,7 @@ object EKSNs extends js.Object {
     - awsDashSdkLib.awsDashSdkLibStrings.PlatformVersion
     - awsDashSdkLib.awsDashSdkLibStrings.EndpointPrivateAccess
     - awsDashSdkLib.awsDashSdkLibStrings.EndpointPublicAccess
+    - awsDashSdkLib.awsDashSdkLibStrings.ClusterLogging
     - java.lang.String
   */
   type UpdateParamType = _UpdateParamType | java.lang.String
@@ -644,6 +688,7 @@ object EKSNs extends js.Object {
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.VersionUpdate
     - awsDashSdkLib.awsDashSdkLibStrings.EndpointAccessUpdate
+    - awsDashSdkLib.awsDashSdkLibStrings.LoggingUpdate
     - java.lang.String
   */
   type UpdateType = _UpdateType | java.lang.String

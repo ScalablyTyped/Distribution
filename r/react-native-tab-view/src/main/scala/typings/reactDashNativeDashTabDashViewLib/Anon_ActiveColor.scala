@@ -37,7 +37,7 @@ trait Anon_ActiveColor[T /* <: reactDashNativeDashTabDashViewLib.reactDashNative
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   var labelStyle: js.UndefOr[
-    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
   var onTabLongPress: js.UndefOr[
     js.Function1[
@@ -98,7 +98,7 @@ object Anon_ActiveColor {
     getTestID: /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T] => js.UndefOr[java.lang.String | scala.Null] = null,
     inactiveColor: java.lang.String = null,
     indicatorStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
-    labelStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    labelStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
     onTabLongPress: /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T] => scala.Unit = null,
     onTabPress: /* scene */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Scene[T] => scala.Unit = null,
     pressColor: java.lang.String = null,

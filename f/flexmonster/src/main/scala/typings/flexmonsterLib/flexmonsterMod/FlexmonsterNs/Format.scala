@@ -17,7 +17,9 @@ trait Format extends js.Object {
   var maxDecimalPlaces: js.UndefOr[scala.Double] = js.undefined
   var maxSymbols: js.UndefOr[scala.Double] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
+  var negativeCurrencyFormat: js.UndefOr[java.lang.String] = js.undefined
   var nullValue: js.UndefOr[java.lang.String] = js.undefined
+  var positiveCurrencyFormat: js.UndefOr[java.lang.String] = js.undefined
   var textAlign: js.UndefOr[java.lang.String] = js.undefined
   var thousandsSeparator: js.UndefOr[java.lang.String] = js.undefined
 }
@@ -36,7 +38,9 @@ object Format {
     maxDecimalPlaces: scala.Int | scala.Double = null,
     maxSymbols: scala.Int | scala.Double = null,
     name: java.lang.String = null,
+    negativeCurrencyFormat: java.lang.String = null,
     nullValue: java.lang.String = null,
+    positiveCurrencyFormat: java.lang.String = null,
     textAlign: java.lang.String = null,
     thousandsSeparator: java.lang.String = null
   ): Format = {
@@ -52,7 +56,9 @@ object Format {
     if (maxDecimalPlaces != null) __obj.updateDynamic("maxDecimalPlaces")(maxDecimalPlaces.asInstanceOf[js.Any])
     if (maxSymbols != null) __obj.updateDynamic("maxSymbols")(maxSymbols.asInstanceOf[js.Any])
     if (name != null) __obj.updateDynamic("name")(name)
+    if (negativeCurrencyFormat != null) __obj.updateDynamic("negativeCurrencyFormat")(negativeCurrencyFormat)
     if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue)
+    if (positiveCurrencyFormat != null) __obj.updateDynamic("positiveCurrencyFormat")(positiveCurrencyFormat)
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
     if (thousandsSeparator != null) __obj.updateDynamic("thousandsSeparator")(thousandsSeparator)
     __obj.asInstanceOf[Format]

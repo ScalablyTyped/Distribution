@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "bootstrap"
-version := "4.3-dt-20190302Z-f7539b"
+version := "4.3-dt-20190302Z-cec2bf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-6565a2",
-  "org.scalablytyped" %%% "popper_dot_js" % "1.14.7-a06ce6",
+  "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-bbf92b",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-cab61f",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false

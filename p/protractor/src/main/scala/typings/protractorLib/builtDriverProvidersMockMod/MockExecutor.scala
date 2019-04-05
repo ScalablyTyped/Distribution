@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("protractor/built/driverProviders/mock", "MockExecutor")
 @js.native
 class MockExecutor () extends js.Object {
-  def execute(`_`: js.Any): js.Any = js.native
+  def execute(command: js.Any): js.Any = js.native
 }
 

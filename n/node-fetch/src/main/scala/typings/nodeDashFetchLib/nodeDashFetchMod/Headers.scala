@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Headers ()
   extends stdLib.Iterable[js.Tuple2[java.lang.String, java.lang.String]] {
-  def this(init: Headers) = this()
-  def this(init: org.scalablytyped.runtime.StringDictionary[java.lang.String]) = this()
+  def this(init: HeadersInit) = this()
   /* CompleteClass */
   @JSName(org.scalablytyped.runtime.Symbol.iterator)
   override var iterator: js.Function0[stdLib.Iterator[js.Tuple2[java.lang.String, java.lang.String]]] = js.native

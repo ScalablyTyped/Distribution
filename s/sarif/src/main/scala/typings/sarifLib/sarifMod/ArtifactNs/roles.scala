@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
   - sarifLib.sarifLibStrings.analysisTarget
-  - sarifLib.sarifLibStrings.toolComponent
   - sarifLib.sarifLibStrings.attachment
   - sarifLib.sarifLibStrings.responseFile
   - sarifLib.sarifLibStrings.resultFile
@@ -19,6 +18,13 @@ import scala.scalajs.js.annotation._
   - sarifLib.sarifLibStrings.deletedFile
   - sarifLib.sarifLibStrings.renamedFile
   - sarifLib.sarifLibStrings.uncontrolledFile
+  - sarifLib.sarifLibStrings.driver
+  - sarifLib.sarifLibStrings.extension
+  - sarifLib.sarifLibStrings.translation
+  - sarifLib.sarifLibStrings.taxonomy
+  - sarifLib.sarifLibStrings.policy
+  - sarifLib.sarifLibStrings.referencedOnCommandLine
+  - sarifLib.sarifLibStrings.memoryContents
 */
 trait roles extends js.Object
 

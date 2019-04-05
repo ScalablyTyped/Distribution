@@ -15,9 +15,7 @@ trait Configuration extends js.Object {
   var encryptionKey: js.UndefOr[stdLib.ArrayBuffer | stdLib.ArrayBufferView | stdLib.Int8Array] = js.undefined
   var fifoFilesFallbackPath: js.UndefOr[java.lang.String] = js.undefined
   var inMemory: js.UndefOr[scala.Boolean] = js.undefined
-  var migration: js.UndefOr[
-    js.Function2[/* oldRealm */ realmLib.Realm, /* newRealm */ realmLib.Realm, scala.Unit]
-  ] = js.undefined
+  var migration: js.UndefOr[MigrationCallback] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var schema: js.UndefOr[js.Array[ObjectClass | ObjectSchema]] = js.undefined
@@ -36,7 +34,7 @@ object Configuration {
     encryptionKey: stdLib.ArrayBuffer | stdLib.ArrayBufferView | stdLib.Int8Array = null,
     fifoFilesFallbackPath: java.lang.String = null,
     inMemory: js.UndefOr[scala.Boolean] = js.undefined,
-    migration: (/* oldRealm */ realmLib.Realm, /* newRealm */ realmLib.Realm) => scala.Unit = null,
+    migration: MigrationCallback = null,
     path: java.lang.String = null,
     readOnly: js.UndefOr[scala.Boolean] = js.undefined,
     schema: js.Array[ObjectClass | ObjectSchema] = null,
@@ -50,7 +48,7 @@ object Configuration {
     if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
     if (fifoFilesFallbackPath != null) __obj.updateDynamic("fifoFilesFallbackPath")(fifoFilesFallbackPath)
     if (!js.isUndefined(inMemory)) __obj.updateDynamic("inMemory")(inMemory)
-    if (migration != null) __obj.updateDynamic("migration")(js.Any.fromFunction2(migration))
+    if (migration != null) __obj.updateDynamic("migration")(migration)
     if (path != null) __obj.updateDynamic("path")(path)
     if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
     if (schema != null) __obj.updateDynamic("schema")(schema)

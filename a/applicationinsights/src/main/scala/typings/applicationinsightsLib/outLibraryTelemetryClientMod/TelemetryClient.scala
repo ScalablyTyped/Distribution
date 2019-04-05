@@ -16,6 +16,7 @@ trait TelemetryClient extends js.Object {
   var commonProperties: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   var config: applicationinsightsLib.outLibraryConfigMod.namespaced = js.native
   var context: applicationinsightsLib.outLibraryContextMod.namespaced = js.native
+  var quickPulseClient: applicationinsightsLib.outLibraryQuickPulseStateManagerMod.namespaced = js.native
   /**
     * Adds telemetry processor to the collection. Telemetry processors will be called one by one
     * before telemetry item is pushed for sending and in the order they were added.

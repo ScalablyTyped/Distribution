@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Config extends js.Object {
   var _profileQueryEndpoint: js.Any
+  /** Host name for quickpulse service */
+  var _quickPulseHost: js.Any
   /** A list of domains to exclude from cross-component header injection */
   var correlationHeaderExcludedDomains: js.Array[java.lang.String]
   /** The id for cross-component correlation. READ ONLY. */
@@ -33,6 +35,7 @@ trait Config extends js.Object {
   var proxyHttpUrl: java.lang.String
   /** A proxy server for SDK HTTPS traffic (Optional, Default pulled from `https_proxy` environment variable) */
   var proxyHttpsUrl: java.lang.String
+  var quickPulseHost: java.lang.String
   /** The percentage of telemetry items tracked that should be transmitted (Default 100) */
   var samplingPercentage: scala.Double
   var setCorrelationId: js.Any
@@ -42,6 +45,7 @@ object Config {
   @scala.inline
   def apply(
     _profileQueryEndpoint: js.Any,
+    _quickPulseHost: js.Any,
     correlationHeaderExcludedDomains: js.Array[java.lang.String],
     correlationId: java.lang.String,
     correlationIdRetryIntervalMs: scala.Double,
@@ -56,10 +60,11 @@ object Config {
     profileQueryEndpoint: java.lang.String,
     proxyHttpUrl: java.lang.String,
     proxyHttpsUrl: java.lang.String,
+    quickPulseHost: java.lang.String,
     samplingPercentage: scala.Double,
     setCorrelationId: js.Any
   ): Config = {
-    val __obj = js.Dynamic.literal(_profileQueryEndpoint = _profileQueryEndpoint, correlationHeaderExcludedDomains = correlationHeaderExcludedDomains, correlationId = correlationId, correlationIdRetryIntervalMs = correlationIdRetryIntervalMs, disableAppInsights = disableAppInsights, endpointBase = endpointBase, endpointUrl = endpointUrl, httpAgent = httpAgent, httpsAgent = httpsAgent, instrumentationKey = instrumentationKey, maxBatchIntervalMs = maxBatchIntervalMs, maxBatchSize = maxBatchSize, profileQueryEndpoint = profileQueryEndpoint, proxyHttpUrl = proxyHttpUrl, proxyHttpsUrl = proxyHttpsUrl, samplingPercentage = samplingPercentage, setCorrelationId = setCorrelationId)
+    val __obj = js.Dynamic.literal(_profileQueryEndpoint = _profileQueryEndpoint, _quickPulseHost = _quickPulseHost, correlationHeaderExcludedDomains = correlationHeaderExcludedDomains, correlationId = correlationId, correlationIdRetryIntervalMs = correlationIdRetryIntervalMs, disableAppInsights = disableAppInsights, endpointBase = endpointBase, endpointUrl = endpointUrl, httpAgent = httpAgent, httpsAgent = httpsAgent, instrumentationKey = instrumentationKey, maxBatchIntervalMs = maxBatchIntervalMs, maxBatchSize = maxBatchSize, profileQueryEndpoint = profileQueryEndpoint, proxyHttpUrl = proxyHttpUrl, proxyHttpsUrl = proxyHttpsUrl, quickPulseHost = quickPulseHost, samplingPercentage = samplingPercentage, setCorrelationId = setCorrelationId)
   
     __obj.asInstanceOf[Config]
   }

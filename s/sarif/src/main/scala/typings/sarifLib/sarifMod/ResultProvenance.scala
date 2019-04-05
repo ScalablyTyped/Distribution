@@ -12,9 +12,10 @@ trait ResultProvenance extends js.Object {
     */
   var conversionSources: js.UndefOr[js.Array[PhysicalLocation]] = js.undefined
   /**
-    * A GUID-valued string equal to the id.instanceGuid property of the run in which the result was first detected.
+    * A GUID-valued string equal to the automationDetails.guid property of the run in which the result was first
+    * detected.
     */
-  var firstDetectionRunInstanceGuid: js.UndefOr[java.lang.String] = js.undefined
+  var firstDetectionRunGuid: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The Coordinated Universal Time (UTC) date and time at which the result was first detected. See "Date/time
     * properties" in the SARIF spec for the required format.
@@ -26,10 +27,10 @@ trait ResultProvenance extends js.Object {
     */
   var invocationIndex: js.UndefOr[scala.Double] = js.undefined
   /**
-    * A GUID-valued string equal to the id.instanceGuid property of the run in which the result was most recently
-    * detected.
+    * A GUID-valued string equal to the automationDetails.guid property of the run in which the result was most
+    * recently detected.
     */
-  var lastDetectionRunInstanceGuid: js.UndefOr[java.lang.String] = js.undefined
+  var lastDetectionRunGuid: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The Coordinated Universal Time (UTC) date and time at which the result was most recently detected. See
     * "Date/time properties" in the SARIF spec for the required format.
@@ -45,19 +46,19 @@ object ResultProvenance {
   @scala.inline
   def apply(
     conversionSources: js.Array[PhysicalLocation] = null,
-    firstDetectionRunInstanceGuid: java.lang.String = null,
+    firstDetectionRunGuid: java.lang.String = null,
     firstDetectionTimeUtc: java.lang.String = null,
     invocationIndex: scala.Int | scala.Double = null,
-    lastDetectionRunInstanceGuid: java.lang.String = null,
+    lastDetectionRunGuid: java.lang.String = null,
     lastDetectionTimeUtc: java.lang.String = null,
     properties: PropertyBag = null
   ): ResultProvenance = {
     val __obj = js.Dynamic.literal()
     if (conversionSources != null) __obj.updateDynamic("conversionSources")(conversionSources)
-    if (firstDetectionRunInstanceGuid != null) __obj.updateDynamic("firstDetectionRunInstanceGuid")(firstDetectionRunInstanceGuid)
+    if (firstDetectionRunGuid != null) __obj.updateDynamic("firstDetectionRunGuid")(firstDetectionRunGuid)
     if (firstDetectionTimeUtc != null) __obj.updateDynamic("firstDetectionTimeUtc")(firstDetectionTimeUtc)
     if (invocationIndex != null) __obj.updateDynamic("invocationIndex")(invocationIndex.asInstanceOf[js.Any])
-    if (lastDetectionRunInstanceGuid != null) __obj.updateDynamic("lastDetectionRunInstanceGuid")(lastDetectionRunInstanceGuid)
+    if (lastDetectionRunGuid != null) __obj.updateDynamic("lastDetectionRunGuid")(lastDetectionRunGuid)
     if (lastDetectionTimeUtc != null) __obj.updateDynamic("lastDetectionTimeUtc")(lastDetectionTimeUtc)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[ResultProvenance]

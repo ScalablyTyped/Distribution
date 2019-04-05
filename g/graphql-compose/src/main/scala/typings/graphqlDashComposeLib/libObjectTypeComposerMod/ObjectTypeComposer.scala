@@ -80,9 +80,7 @@ class ObjectTypeComposer[TSource, TContext] protected () extends _ComposeOutputT
     * Interface methods
     * -----------------------------------------------
     */
-  def getInterfaces(): js.Array[
-    (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext]) | graphqlLib.graphqlMod.GraphQLInterfaceType
-  ] = js.native
+  def getInterfaces(): js.Array[graphqlDashComposeLib.libInterfaceTypeComposerMod.ComposeInterfaceType] = js.native
   def getIsTypeOf(): (graphqlLib.typeDefinitionMod.GraphQLIsTypeOfFn[TSource, TContext]) | scala.Null | scala.Unit = js.native
   /**
     * Get function that returns record id, from provided object.
@@ -175,7 +173,7 @@ class ObjectTypeComposer[TSource, TContext] protected () extends _ComposeOutputT
   def setInputTypeComposer(itc: graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext]): this.type = js.native
   def setInterfaces(
     interfaces: js.Array[
-      (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext]) | graphqlLib.graphqlMod.GraphQLInterfaceType
+      graphqlDashComposeLib.libInterfaceTypeComposerMod.ComposeInterfaceType | graphqlLib.graphqlMod.GraphQLInterfaceType
     ]
   ): this.type = js.native
   def setIsTypeOf(): this.type = js.native

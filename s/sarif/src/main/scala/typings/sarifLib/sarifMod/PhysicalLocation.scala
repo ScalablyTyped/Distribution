@@ -7,9 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait PhysicalLocation extends js.Object {
   /**
+    * The address of the location.
+    */
+  var address: js.UndefOr[Address] = js.undefined
+  /**
     * The location of the artifact.
     */
-  var artifactLocation: ArtifactLocation
+  var artifactLocation: js.UndefOr[ArtifactLocation] = js.undefined
   /**
     * Specifies a portion of the artifact that encloses the region. Allows a viewer to display additional context
     * around the region.
@@ -32,13 +36,16 @@ trait PhysicalLocation extends js.Object {
 object PhysicalLocation {
   @scala.inline
   def apply(
-    artifactLocation: ArtifactLocation,
+    address: Address = null,
+    artifactLocation: ArtifactLocation = null,
     contextRegion: Region = null,
     id: scala.Int | scala.Double = null,
     properties: PropertyBag = null,
     region: Region = null
   ): PhysicalLocation = {
-    val __obj = js.Dynamic.literal(artifactLocation = artifactLocation)
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (artifactLocation != null) __obj.updateDynamic("artifactLocation")(artifactLocation)
     if (contextRegion != null) __obj.updateDynamic("contextRegion")(contextRegion)
     if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties)

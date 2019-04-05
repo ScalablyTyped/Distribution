@@ -15,6 +15,10 @@ class default protected () extends Popper {
   /* CompleteClass */
   override var options: PopperOptions = js.native
   /* CompleteClass */
+  override var popper: stdLib.Element = js.native
+  /* CompleteClass */
+  override var reference: stdLib.Element | ReferenceObject = js.native
+  /* CompleteClass */
   override def destroy(): scala.Unit = js.native
   /* CompleteClass */
   override def disableEventListeners(): scala.Unit = js.native

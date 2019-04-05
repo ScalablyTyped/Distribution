@@ -46,6 +46,12 @@ object atGoogleDashCloudStorageLibStrings {
   sealed trait resumable extends js.Object
   
   @js.native
+  sealed trait v2 extends js.Object
+  
+  @js.native
+  sealed trait v4 extends js.Object
+  
+  @js.native
   sealed trait write extends js.Object
   
   @scala.inline
@@ -70,6 +76,10 @@ object atGoogleDashCloudStorageLibStrings {
   def read: read = "read".asInstanceOf[read]
   @scala.inline
   def resumable: resumable = "resumable".asInstanceOf[resumable]
+  @scala.inline
+  def v2: v2 = "v2".asInstanceOf[v2]
+  @scala.inline
+  def v4: v4 = "v4".asInstanceOf[v4]
   @scala.inline
   def write: write = "write".asInstanceOf[write]
 }

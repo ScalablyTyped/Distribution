@@ -9,40 +9,60 @@ import scala.scalajs.js.annotation._
 @js.native
 object errorNs extends js.Object {
   /**
-    * An attempt was made to select an element that cannot be selected.
+    * Indicates a {@linkplain ./webdriver.WebElement#click click command} could
+    * not completed because the click target is obscured by other elements on the
+    * page.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
-  class ElementNotSelectableError ()
-    extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.ElementNotSelectableError {
-    def this(opt_error: java.lang.String) = this()
+  class ElementClickInterceptedError ()
+    extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.ElementClickInterceptedError {
+    def this(message: java.lang.String) = this()
   }
   
   /**
-    * An element command could not be completed because the element is not visible
-    * on the page.
+    * Indicates a command could not be completed because the target element is
+    * not pointer or keyboard interactable. This will often occur if an element
+    * is present in the DOM, but not rendered (i.e. its CSS style has
+    * "display: none").
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
-  class ElementNotVisibleError ()
-    extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.ElementNotVisibleError {
-    def this(opt_error: java.lang.String) = this()
+  class ElementNotInteractableError ()
+    extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.ElementNotInteractableError {
+    def this(message: java.lang.String) = this()
+  }
+  
+  /**
+    * An attempt was made to select an element that cannot be selected.
+    */
+  @js.native
+  class ElementNotSelectableError ()
+    extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.ElementNotSelectableError {
+    def this(message: java.lang.String) = this()
   }
   
   @js.native
   class IError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.IError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
+  }
+  
+  /**
+    * Indicates a navigation event caused the browser to generate a certificate
+    * warning. This is usually caused by an expired or invalid TLS certificate.
+    */
+  @js.native
+  class InsecureCertificateError ()
+    extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.InsecureCertificateError {
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * The arguments passed to a command are either invalid or malformed.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class InvalidArgumentError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.InvalidArgumentError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
@@ -50,73 +70,76 @@ object errorNs extends js.Object {
     * the current page.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class InvalidCookieDomainError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.InvalidCookieDomainError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * The coordinates provided to an interactions operation are invalid.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
-  class InvalidElementCoordinatesError ()
-    extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.InvalidElementCoordinatesError {
-    def this(opt_error: java.lang.String) = this()
+  class InvalidCoordinatesError ()
+    extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.InvalidCoordinatesError {
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * An element command could not be completed because the element is in an
-    * invalid state, e.g. attempting to click an element that is no longer attached
-    * to the document.
+    * invalid state, e.g. attempting to click an element that is no longer
+    * attached to the document.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class InvalidElementStateError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.InvalidElementStateError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * Argument was an invalid selector.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class InvalidSelectorError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.InvalidSelectorError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * An error occurred while executing JavaScript supplied by the user.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class JavascriptError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.JavascriptError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
-    * The target for mouse interaction is not in the browser’s viewport and cannot
-    * be brought into that viewport.
+    * The target for mouse interaction is not in the browser’s viewport and
+    * cannot be brought into that viewport.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class MoveTargetOutOfBoundsError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.MoveTargetOutOfBoundsError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * An attempt was made to operate on a modal dialog when one was not open.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class NoSuchAlertError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.NoSuchAlertError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
+  }
+  
+  /**
+    * Indicates a named cookie could not be found in the cookie jar for the
+    * currently selected document.
+    */
+  @js.native
+  class NoSuchCookieError ()
+    extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.NoSuchCookieError {
+    def this(message: java.lang.String) = this()
   }
   
   /**
@@ -124,10 +147,9 @@ object errorNs extends js.Object {
     * parameters.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class NoSuchElementError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.NoSuchElementError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
@@ -135,20 +157,18 @@ object errorNs extends js.Object {
     * could not be found.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class NoSuchFrameError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.NoSuchFrameError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * Occurs when a command is directed to a session that does not exist.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class NoSuchSessionError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.NoSuchSessionError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
@@ -156,30 +176,27 @@ object errorNs extends js.Object {
     * could not be found.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class NoSuchWindowError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.NoSuchWindowError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * A script did not complete before its timeout expired.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class ScriptTimeoutError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.ScriptTimeoutError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * A new session could not be created.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class SessionNotCreatedError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.SessionNotCreatedError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
@@ -187,64 +204,55 @@ object errorNs extends js.Object {
     * attached to the DOM.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class StaleElementReferenceError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.StaleElementReferenceError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * An operation did not completErrorCodee before its timeout expired.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class TimeoutError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.TimeoutError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * A screen capture operation was not possible.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class UnableToCaptureScreenError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.UnableToCaptureScreenError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * A request to set a cookie’s value could not be satisfied.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class UnableToSetCookieError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.UnableToSetCookieError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * A modal dialog was open, blocking this operation.
     */
   @js.native
-  /**
-    * @param {string=} opt_error the error message, if any.
-    * @param {string=} opt_text the text of the open dialog, if available.
-    */
   class UnexpectedAlertOpenError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.UnexpectedAlertOpenError {
-    def this(opt_error: java.lang.String) = this()
-    def this(opt_error: java.lang.String, opt_text: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
+    def this(message: java.lang.String, openAlertText: java.lang.String) = this()
   }
   
   /**
     * A command could not be executed because the remote end is not aware of it.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class UnknownCommandError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.UnknownCommandError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
@@ -252,20 +260,18 @@ object errorNs extends js.Object {
     * that URL.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class UnknownMethodError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.UnknownMethodError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
     * Reports an unsupport operation.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class UnsupportedOperationError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.UnsupportedOperationError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
   /**
@@ -273,11 +279,30 @@ object errorNs extends js.Object {
     * more appropriate category is not defined for the offending error.
     */
   @js.native
-  /** @param {string=} opt_error the error message, if any. */
   class WebDriverError ()
     extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.WebDriverError {
-    def this(opt_error: java.lang.String) = this()
+    def this(message: java.lang.String) = this()
   }
   
+  val ErrorCode: seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.ErrorCodeType = js.native
+  /**
+    * Checks a legacy response from the Selenium 2.0 wire protocol for an error.
+    */
+  def checkLegacyResponse(response: seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.MaybeLegacyResponse): seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.MaybeLegacyResponse = js.native
+  /**
+    * Checks a response object from a server that adheres to the W3C WebDriver
+    * protocol.
+    */
+  def checkResponse(data: seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.Response): seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.Response = js.native
+  /**
+    * Lookup the err in table of errors.
+    */
+  def encodeError(err: js.Any): seleniumDashWebdriverLib.Anon_Error = js.native
+  def throwDecodedError(data: java.lang.String): scala.Nothing = js.native
+  /**
+    * Throws an error coded from the W3C protocol. A generic error will be thrown
+    * if the provided `data` is not a valid encoded error.
+    */
+  def throwDecodedError(data: seleniumDashWebdriverLib.seleniumDashWebdriverMod.errorNs.ErrorData): scala.Nothing = js.native
 }
 

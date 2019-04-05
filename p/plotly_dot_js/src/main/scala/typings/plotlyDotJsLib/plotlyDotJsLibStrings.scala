@@ -138,6 +138,15 @@ object plotlyDotJsLibStrings {
   sealed trait bottom extends js.Object
   
   @js.native
+  sealed trait `bottom center` extends js.Object
+  
+  @js.native
+  sealed trait `bottom left` extends js.Object
+  
+  @js.native
+  sealed trait `bottom right` extends js.Object
+  
+  @js.native
   sealed trait bounce extends js.Object
   
   @js.native
@@ -635,6 +644,24 @@ object plotlyDotJsLibStrings {
   sealed trait label extends js.Object
   
   @js.native
+  sealed trait `label+percent` extends js.Object
+  
+  @js.native
+  sealed trait `label+text` extends js.Object
+  
+  @js.native
+  sealed trait `label+text+percent` extends js.Object
+  
+  @js.native
+  sealed trait `label+text+value` extends js.Object
+  
+  @js.native
+  sealed trait `label+value` extends js.Object
+  
+  @js.native
+  sealed trait `label+value+percent` extends js.Object
+  
+  @js.native
   sealed trait lasso extends js.Object
   
   @js.native
@@ -747,6 +774,15 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait middle extends js.Object
+  
+  @js.native
+  sealed trait `middle center` extends js.Object
+  
+  @js.native
+  sealed trait `middle left` extends js.Object
+  
+  @js.native
+  sealed trait `middle right` extends js.Object
   
   @js.native
   sealed trait min extends js.Object
@@ -1230,6 +1266,15 @@ object plotlyDotJsLibStrings {
   sealed trait `text+markers` extends js.Object
   
   @js.native
+  sealed trait `text+percent` extends js.Object
+  
+  @js.native
+  sealed trait `text+value` extends js.Object
+  
+  @js.native
+  sealed trait `text+value+percent` extends js.Object
+  
+  @js.native
   sealed trait textPath extends js.Object
   
   @js.native
@@ -1285,6 +1330,15 @@ object plotlyDotJsLibStrings {
   sealed trait top extends js.Object
   
   @js.native
+  sealed trait `top center` extends js.Object
+  
+  @js.native
+  sealed trait `top left` extends js.Object
+  
+  @js.native
+  sealed trait `top right` extends js.Object
+  
+  @js.native
   sealed trait toself extends js.Object
   
   @js.native
@@ -1332,6 +1386,12 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait v extends js.Object
+  
+  @js.native
+  sealed trait value extends js.Object
+  
+  @js.native
+  sealed trait `value+percent` extends js.Object
   
   @js.native
   sealed trait `var` extends js.Object
@@ -1623,6 +1683,12 @@ object plotlyDotJsLibStrings {
   def body: body = "body".asInstanceOf[body]
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
+  def `bottom center`: `bottom center` = "bottom center".asInstanceOf[`bottom center`]
+  @scala.inline
+  def `bottom left`: `bottom left` = "bottom left".asInstanceOf[`bottom left`]
+  @scala.inline
+  def `bottom right`: `bottom right` = "bottom right".asInstanceOf[`bottom right`]
   @scala.inline
   def bounce: bounce = "bounce".asInstanceOf[bounce]
   @scala.inline
@@ -1942,6 +2008,18 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def label: label = "label".asInstanceOf[label]
   @scala.inline
+  def `label+percent`: `label+percent` = "label+percent".asInstanceOf[`label+percent`]
+  @scala.inline
+  def `label+text`: `label+text` = "label+text".asInstanceOf[`label+text`]
+  @scala.inline
+  def `label+text+percent`: `label+text+percent` = "label+text+percent".asInstanceOf[`label+text+percent`]
+  @scala.inline
+  def `label+text+value`: `label+text+value` = "label+text+value".asInstanceOf[`label+text+value`]
+  @scala.inline
+  def `label+value`: `label+value` = "label+value".asInstanceOf[`label+value`]
+  @scala.inline
+  def `label+value+percent`: `label+value+percent` = "label+value+percent".asInstanceOf[`label+value+percent`]
+  @scala.inline
   def lasso: lasso = "lasso".asInstanceOf[lasso]
   @scala.inline
   def lasso2d: lasso2d = "lasso2d".asInstanceOf[lasso2d]
@@ -2013,6 +2091,12 @@ object plotlyDotJsLibStrings {
   def meter: meter = "meter".asInstanceOf[meter]
   @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
+  def `middle center`: `middle center` = "middle center".asInstanceOf[`middle center`]
+  @scala.inline
+  def `middle left`: `middle left` = "middle left".asInstanceOf[`middle left`]
+  @scala.inline
+  def `middle right`: `middle right` = "middle right".asInstanceOf[`middle right`]
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   @scala.inline
@@ -2324,6 +2408,12 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def `text+markers`: `text+markers` = "text+markers".asInstanceOf[`text+markers`]
   @scala.inline
+  def `text+percent`: `text+percent` = "text+percent".asInstanceOf[`text+percent`]
+  @scala.inline
+  def `text+value`: `text+value` = "text+value".asInstanceOf[`text+value`]
+  @scala.inline
+  def `text+value+percent`: `text+value+percent` = "text+value+percent".asInstanceOf[`text+value+percent`]
+  @scala.inline
   def textPath: textPath = "textPath".asInstanceOf[textPath]
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
@@ -2358,6 +2448,12 @@ object plotlyDotJsLibStrings {
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline
+  def `top center`: `top center` = "top center".asInstanceOf[`top center`]
+  @scala.inline
+  def `top left`: `top left` = "top left".asInstanceOf[`top left`]
+  @scala.inline
+  def `top right`: `top right` = "top right".asInstanceOf[`top right`]
+  @scala.inline
   def toself: toself = "toself".asInstanceOf[toself]
   @scala.inline
   def tozero: tozero = "tozero".asInstanceOf[tozero]
@@ -2389,6 +2485,10 @@ object plotlyDotJsLibStrings {
   def use: use = "use".asInstanceOf[use]
   @scala.inline
   def v: v = "v".asInstanceOf[v]
+  @scala.inline
+  def value: value = "value".asInstanceOf[value]
+  @scala.inline
+  def `value+percent`: `value+percent` = "value+percent".asInstanceOf[`value+percent`]
   @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
   @scala.inline

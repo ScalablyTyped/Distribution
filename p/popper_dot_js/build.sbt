@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "popper_dot_js"
-version := "1.14.7-a06ce6"
+version := "1.15.0-bbf92b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

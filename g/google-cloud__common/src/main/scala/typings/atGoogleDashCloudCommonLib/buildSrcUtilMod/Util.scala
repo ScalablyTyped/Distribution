@@ -102,12 +102,8 @@ class Util () extends js.Object {
     * @param {string=} options.streamContentType - Default: "application/octet-stream".
     * @param {function} onComplete - Callback, executed after the writable Request stream has completed.
     */
-  def makeWritableStream(dup: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify, options: MakeWritableStreamOptions): scala.Unit = js.native
-  def makeWritableStream(
-    dup: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify,
-    options: MakeWritableStreamOptions,
-    onComplete: js.Function
-  ): scala.Unit = js.native
+  def makeWritableStream(dup: Duplexify, options: MakeWritableStreamOptions): scala.Unit = js.native
+  def makeWritableStream(dup: Duplexify, options: MakeWritableStreamOptions, onComplete: js.Function): scala.Unit = js.native
   /**
     * Given two parameters, figure out if this is either:
     *  - Just a callback function

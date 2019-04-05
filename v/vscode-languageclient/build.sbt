@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vscode-languageclient"
-version := "5.2.1-850eb9"
+version := "5.2.1-25f6aa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "semver" % "6.0-dt-20190330Z-1b8b1f",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "vscode" % "1.32-dt-20190325Z-9a60e6",
+  "org.scalablytyped" %%% "vscode" % "1.33-dt-20190404Z-08c12b",
   "org.scalablytyped" %%% "vscode-jsonrpc" % "4.0.0-7b9245",
   "org.scalablytyped" %%% "vscode-languageserver-protocol" % "3.14.1-17f67a",
   "org.scalablytyped" %%% "vscode-languageserver-types" % "3.14.0-3e2dc6")

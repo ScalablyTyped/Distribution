@@ -69,6 +69,10 @@ object languagesNs extends js.Object {
   ): vscodeLib.vscodeMod.Disposable = js.native
   def registerReferenceProvider(selector: vscodeLib.vscodeMod.DocumentSelector, provider: vscodeLib.vscodeMod.ReferenceProvider): vscodeLib.vscodeMod.Disposable = js.native
   def registerRenameProvider(selector: vscodeLib.vscodeMod.DocumentSelector, provider: vscodeLib.vscodeMod.RenameProvider): vscodeLib.vscodeMod.Disposable = js.native
+  def registerSelectionRangeProvider(
+    selector: vscodeLib.vscodeMod.DocumentSelector,
+    provider: vscodeLib.vscodeMod.SelectionRangeProvider
+  ): vscodeLib.vscodeMod.Disposable = js.native
   def registerSignatureHelpProvider(
     selector: vscodeLib.vscodeMod.DocumentSelector,
     provider: vscodeLib.vscodeMod.SignatureHelpProvider,

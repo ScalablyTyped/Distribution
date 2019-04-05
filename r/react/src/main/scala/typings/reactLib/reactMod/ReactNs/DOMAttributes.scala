@@ -18,6 +18,9 @@ trait DOMAttributes[T] extends js.Object {
   // Animation Events
   var onAnimationStart: js.UndefOr[AnimationEventHandler[T]] = js.undefined
   var onAnimationStartCapture: js.UndefOr[AnimationEventHandler[T]] = js.undefined
+  // MouseEvents
+  var onAuxClick: js.UndefOr[MouseEventHandler[T]] = js.undefined
+  var onAuxClickCapture: js.UndefOr[MouseEventHandler[T]] = js.undefined
   var onBeforeInput: js.UndefOr[FormEventHandler[T]] = js.undefined
   var onBeforeInputCapture: js.UndefOr[FormEventHandler[T]] = js.undefined
   var onBlur: js.UndefOr[FocusEventHandler[T]] = js.undefined
@@ -29,7 +32,6 @@ trait DOMAttributes[T] extends js.Object {
   // Form Events
   var onChange: js.UndefOr[FormEventHandler[T]] = js.undefined
   var onChangeCapture: js.UndefOr[FormEventHandler[T]] = js.undefined
-  // MouseEvents
   var onClick: js.UndefOr[MouseEventHandler[T]] = js.undefined
   var onClickCapture: js.UndefOr[MouseEventHandler[T]] = js.undefined
   // Composition Events
@@ -198,6 +200,8 @@ object DOMAttributes {
     onAnimationIterationCapture: AnimationEventHandler[T] = null,
     onAnimationStart: AnimationEventHandler[T] = null,
     onAnimationStartCapture: AnimationEventHandler[T] = null,
+    onAuxClick: MouseEventHandler[T] = null,
+    onAuxClickCapture: MouseEventHandler[T] = null,
     onBeforeInput: FormEventHandler[T] = null,
     onBeforeInputCapture: FormEventHandler[T] = null,
     onBlur: FocusEventHandler[T] = null,
@@ -360,6 +364,8 @@ object DOMAttributes {
     if (onAnimationIterationCapture != null) __obj.updateDynamic("onAnimationIterationCapture")(onAnimationIterationCapture)
     if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart)
     if (onAnimationStartCapture != null) __obj.updateDynamic("onAnimationStartCapture")(onAnimationStartCapture)
+    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(onAuxClick)
+    if (onAuxClickCapture != null) __obj.updateDynamic("onAuxClickCapture")(onAuxClickCapture)
     if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(onBeforeInput)
     if (onBeforeInputCapture != null) __obj.updateDynamic("onBeforeInputCapture")(onBeforeInputCapture)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)

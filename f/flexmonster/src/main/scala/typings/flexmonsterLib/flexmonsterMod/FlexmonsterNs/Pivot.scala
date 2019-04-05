@@ -330,7 +330,7 @@ trait Pivot extends js.Object {
   ): scala.Unit = js.native
   def sortingMethod(
     hierarchyName: java.lang.String,
-    compareFunction: js.Function2[/* a */ java.lang.String, /* b */ java.lang.String, scala.Boolean]
+    compareFunction: js.Function2[/* a */ java.lang.String, /* b */ java.lang.String, scala.Double]
   ): scala.Unit = js.native
   def updateData(`object`: DataSource): scala.Unit = js.native
   def updateData(`object`: js.Array[js.Object]): scala.Unit = js.native

@@ -58,6 +58,12 @@ trait Anon_CollectConsoleLog
   def setInternalLogging(enableDebugLogging: scala.Boolean): /* import warning: ImportType.apply Failed type conversion: typeof Configuration */ js.Any = js.native
   def setInternalLogging(enableDebugLogging: scala.Boolean, enableWarningLogging: scala.Boolean): /* import warning: ImportType.apply Failed type conversion: typeof Configuration */ js.Any = js.native
   /**
+    * Enables communication with Application Insights Live Metrics.
+    * @param enable if true, enables communication with the live metrics service
+    */
+  def setSendLiveMetrics(): /* import warning: ImportType.apply Failed type conversion: typeof Configuration */ js.Any = js.native
+  def setSendLiveMetrics(enable: scala.Boolean): /* import warning: ImportType.apply Failed type conversion: typeof Configuration */ js.Any = js.native
+  /**
     * Enable or disable disk-backed retry caching to cache events when client is offline (enabled by default)
     * Note that this method only applies to the default client. Disk-backed retry caching is disabled by default for additional clients.
     * For enable for additional clients, use client.channel.setUseDiskRetryCaching(true).

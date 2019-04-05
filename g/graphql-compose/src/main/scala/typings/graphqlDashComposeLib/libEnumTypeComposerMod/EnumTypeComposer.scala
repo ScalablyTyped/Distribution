@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("graphql-compose/lib/EnumTypeComposer", "EnumTypeComposer")
 @js.native
 class EnumTypeComposer[TContext] protected ()
-  extends graphqlDashComposeLib.libSchemaComposerMod._AnyType[TContext]
+  extends graphqlDashComposeLib.libSchemaComposerMod._AnyComposeType[TContext]
+     with graphqlDashComposeLib.libSchemaComposerMod._AnyType[TContext]
      with graphqlDashComposeLib.libObjectTypeComposerMod._ComposeOutputType[js.Any, TContext] {
   def this(gqType: graphqlDashComposeLib.libGraphqlMod.GraphQLEnumType, schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext]) = this()
   var gqType: GraphQLEnumTypeExtended = js.native

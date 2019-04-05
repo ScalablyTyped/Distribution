@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "react-popper-tooltip"
-version := "2.8.1-6a74d4"
+version := "2.8.1-b9332a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "create-react-context" % "0.2.2-12f0fd",
+  "org.scalablytyped" %%% "create-react-context" % "0.2.2-7b4635",
   "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "popper_dot_js" % "1.14.7-a06ce6",
+  "org.scalablytyped" %%% "popper_dot_js" % "1.15.0-bbf92b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-348bcf",
-  "org.scalablytyped" %%% "react-popper" % "1.3.3-4c82dc",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-d8f967",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-9aa93f",
+  "org.scalablytyped" %%% "react-popper" % "1.3.3-f3cf56",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "warning" % "3.0.0-dt-20190322Z-34051e")
 publishArtifact in packageDoc := false

@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("applicationinsights/out/Declarations/Contracts/TelemetryTypes", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def baseTypeToTelemetryType(baseType: java.lang.String): applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType = js.native
+  def baseTypeToTelemetryType(
+    baseType: applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryTypeValues
+  ): applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType = js.native
   def telemetryTypeToBaseType(
     `type`: applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType
-  ): java.lang.String = js.native
+  ): applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryTypeValues = js.native
 }
 

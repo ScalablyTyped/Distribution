@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zapier-platform-core"
-version := "8.0.1-7a14e6"
+version := "8.0.1-576e4f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-57c0e7",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-2db1bb",
+  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190403Z-8a4c08",
   "org.scalablytyped" %%% "semver" % "6.0-dt-20190330Z-1b8b1f",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false

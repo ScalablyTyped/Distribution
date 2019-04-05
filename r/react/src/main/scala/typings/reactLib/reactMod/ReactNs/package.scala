@@ -102,6 +102,19 @@ package object ReactNs {
   type LegacyRef[T] = java.lang.String | Ref[T]
   type MouseEventHandler[T] = EventHandler[MouseEvent[T, reactLib.NativeMouseEvent]]
   type PointerEventHandler[T] = EventHandler[PointerEvent[T]]
+  /**
+    * {@link https://github.com/bvaughn/rfcs/blob/profiler/text/0000-profiler.md#detailed-design | API}
+    */
+  type ProfilerOnRenderCallback = js.Function7[
+    /* id */ java.lang.String, 
+    /* phase */ reactLib.reactLibStrings.mount | reactLib.reactLibStrings.update, 
+    /* actualDuration */ scala.Double, 
+    /* baseDuration */ scala.Double, 
+    /* startTime */ scala.Double, 
+    /* commitTime */ scala.Double, 
+    /* interactions */ stdLib.Set[reactLib.reactMod.SchedulerInteraction], 
+    scala.Unit
+  ]
   type PropsWithChildren[P] = P with reactLib.Anon_Children
   /** Ensures that the props do not include string ref, which cannot be forwarded */
   type PropsWithRef[P] = P | (PropsWithoutRef[P] with reactLib.Anon_Ref)

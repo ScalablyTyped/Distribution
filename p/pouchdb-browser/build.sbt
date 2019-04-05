@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pouchdb-browser"
-version := "6.1-dt-20190212Z-fb34fa"
+version := "6.1-dt-20190212Z-f2f98e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,14 +8,14 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-2db1bb",
-  "org.scalablytyped" %%% "pouchdb-adapter-http" % "6.1-dt-20190212Z-9c362d",
-  "org.scalablytyped" %%% "pouchdb-adapter-idb" % "6.1-dt-20190212Z-b85a19",
-  "org.scalablytyped" %%% "pouchdb-adapter-websql" % "6.1-dt-20190212Z-294633",
-  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20190212Z-33565d",
+  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190403Z-8a4c08",
+  "org.scalablytyped" %%% "pouchdb-adapter-http" % "6.1-dt-20190212Z-c5298b",
+  "org.scalablytyped" %%% "pouchdb-adapter-idb" % "6.1-dt-20190212Z-b06235",
+  "org.scalablytyped" %%% "pouchdb-adapter-websql" % "6.1-dt-20190212Z-4b87e6",
+  "org.scalablytyped" %%% "pouchdb-core" % "7.0-dt-20190212Z-14cc06",
   "org.scalablytyped" %%% "pouchdb-find" % "6.3-dt-20190212Z-07472c",
-  "org.scalablytyped" %%% "pouchdb-mapreduce" % "6.1-dt-20190212Z-95df68",
-  "org.scalablytyped" %%% "pouchdb-replication" % "6.4-dt-20190212Z-030495",
+  "org.scalablytyped" %%% "pouchdb-mapreduce" % "6.1-dt-20190212Z-4f98a5",
+  "org.scalablytyped" %%% "pouchdb-replication" % "6.4-dt-20190212Z-8d6585",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

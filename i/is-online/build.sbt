@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-online"
-version := "8.1.0-ea6a41"
+version := "8.2.0-192f4d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,14 +11,14 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "got" % "9.4-dt-20190312Z-1ed68d",
   "org.scalablytyped" %%% "indent-string" % "3.2-dt-20181210Z-22a521",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "p-any" % "2.0.0-01121a",
+  "org.scalablytyped" %%% "p-any" % "2.1.0-e58405",
   "org.scalablytyped" %%% "p-cancelable" % "2.0.0-03d86c",
-  "org.scalablytyped" %%% "p-some" % "4.0.0-4e1244",
-  "org.scalablytyped" %%% "p-timeout" % "3.0.0-484a7f",
+  "org.scalablytyped" %%% "p-some" % "4.1.0-267533",
+  "org.scalablytyped" %%% "p-timeout" % "3.1.0-8ebbd5",
   "org.scalablytyped" %%% "public-ip" % "2.4-dt-20181212Z-010139",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-972cef",
-  "org.scalablytyped" %%% "type-fest" % "0.1.0-207b13")
+  "org.scalablytyped" %%% "type-fest" % "0.3.0-45433e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

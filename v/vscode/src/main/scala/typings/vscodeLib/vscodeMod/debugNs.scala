@@ -22,11 +22,31 @@ object debugNs extends js.Object {
   def registerDebugConfigurationProvider(debugType: java.lang.String, provider: vscodeLib.vscodeMod.DebugConfigurationProvider): vscodeLib.vscodeMod.Disposable = js.native
   def removeBreakpoints(breakpoints: js.Array[vscodeLib.vscodeMod.Breakpoint]): scala.Unit = js.native
   def startDebugging(folder: js.UndefOr[scala.Nothing], nameOrConfiguration: java.lang.String): vscodeLib.Thenable[scala.Boolean] = js.native
+  def startDebugging(
+    folder: js.UndefOr[scala.Nothing],
+    nameOrConfiguration: java.lang.String,
+    parentSession: vscodeLib.vscodeMod.DebugSession
+  ): vscodeLib.Thenable[scala.Boolean] = js.native
   def startDebugging(folder: js.UndefOr[scala.Nothing], nameOrConfiguration: vscodeLib.vscodeMod.DebugConfiguration): vscodeLib.Thenable[scala.Boolean] = js.native
+  def startDebugging(
+    folder: js.UndefOr[scala.Nothing],
+    nameOrConfiguration: vscodeLib.vscodeMod.DebugConfiguration,
+    parentSession: vscodeLib.vscodeMod.DebugSession
+  ): vscodeLib.Thenable[scala.Boolean] = js.native
   def startDebugging(folder: vscodeLib.vscodeMod.WorkspaceFolder, nameOrConfiguration: java.lang.String): vscodeLib.Thenable[scala.Boolean] = js.native
   def startDebugging(
     folder: vscodeLib.vscodeMod.WorkspaceFolder,
+    nameOrConfiguration: java.lang.String,
+    parentSession: vscodeLib.vscodeMod.DebugSession
+  ): vscodeLib.Thenable[scala.Boolean] = js.native
+  def startDebugging(
+    folder: vscodeLib.vscodeMod.WorkspaceFolder,
     nameOrConfiguration: vscodeLib.vscodeMod.DebugConfiguration
+  ): vscodeLib.Thenable[scala.Boolean] = js.native
+  def startDebugging(
+    folder: vscodeLib.vscodeMod.WorkspaceFolder,
+    nameOrConfiguration: vscodeLib.vscodeMod.DebugConfiguration,
+    parentSession: vscodeLib.vscodeMod.DebugSession
   ): vscodeLib.Thenable[scala.Boolean] = js.native
 }
 

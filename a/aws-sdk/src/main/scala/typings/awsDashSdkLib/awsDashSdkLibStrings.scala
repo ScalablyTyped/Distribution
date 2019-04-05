@@ -5180,6 +5180,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._ResourceType
   
   @js.native
+  sealed trait ClusterLogging
+    extends awsDashSdkLib.clientsEksMod.EKSNs._UpdateParamType
+  
+  @js.native
   sealed trait CodeCommit
     extends awsDashSdkLib.clientsElasticbeanstalkMod.ElasticBeanstalkNs._SourceRepository
   
@@ -12406,6 +12410,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait Logarithmic
     extends awsDashSdkLib.clientsSagemakerMod.SageMakerNs._HyperParameterScalingType
+  
+  @js.native
+  sealed trait LoggingUpdate
+    extends awsDashSdkLib.clientsEksMod.EKSNs._UpdateType
   
   @js.native
   sealed trait LoginWithAmazon
@@ -22258,6 +22266,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsRoute53Mod.Route53Ns._VPCRegion
   
   @js.native
+  sealed trait api
+    extends awsDashSdkLib.clientsEksMod.EKSNs._LogType
+  
+  @js.native
   sealed trait app
     extends awsDashSdkLib.clientsLightsailMod.LightsailNs._BlueprintType
   
@@ -22361,6 +22373,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsEc2Mod.EC2Ns._NetworkInterfaceAttribute
   
   @js.native
+  sealed trait audit
+    extends awsDashSdkLib.clientsEksMod.EKSNs._LogType
+  
+  @js.native
   sealed trait auditReportCreated extends js.Object
   
   @js.native
@@ -22383,6 +22399,10 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsIotMod.IotNs._CannedAccessControlList
        with awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs._ObjectACL
        with awsDashSdkLib.clientsS3Mod.S3Ns._ObjectCannedACL
+  
+  @js.native
+  sealed trait authenticator
+    extends awsDashSdkLib.clientsEksMod.EKSNs._LogType
   
   @js.native
   sealed trait authorizing
@@ -22950,6 +22970,10 @@ object awsDashSdkLibStrings {
   @js.native
   sealed trait containerInstanceLongArnFormat
     extends awsDashSdkLib.clientsEcsMod.ECSNs._SettingName
+  
+  @js.native
+  sealed trait controllerManager
+    extends awsDashSdkLib.clientsEksMod.EKSNs._LogType
   
   @js.native
   sealed trait conversionTaskCancelled extends js.Object
@@ -27070,6 +27094,10 @@ object awsDashSdkLibStrings {
     extends awsDashSdkLib.clientsHealthMod.HealthNs._eventTypeCategory
   
   @js.native
+  sealed trait scheduler
+    extends awsDashSdkLib.clientsEksMod.EKSNs._LogType
+  
+  @js.native
   sealed trait scram_sha_1
     extends awsDashSdkLib.clientsDmsMod.DMSNs._AuthMechanismValue
   
@@ -30221,6 +30249,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def CloudFormationStackRecord: CloudFormationStackRecord = "CloudFormationStackRecord".asInstanceOf[CloudFormationStackRecord]
   @scala.inline
+  def ClusterLogging: ClusterLogging = "ClusterLogging".asInstanceOf[ClusterLogging]
+  @scala.inline
   def CodeCommit: CodeCommit = "CodeCommit".asInstanceOf[CodeCommit]
   @scala.inline
   def CodeHook: CodeHook = "CodeHook".asInstanceOf[CodeHook]
@@ -33040,6 +33070,8 @@ object awsDashSdkLibStrings {
   def LogStreamName: LogStreamName = "LogStreamName".asInstanceOf[LogStreamName]
   @scala.inline
   def Logarithmic: Logarithmic = "Logarithmic".asInstanceOf[Logarithmic]
+  @scala.inline
+  def LoggingUpdate: LoggingUpdate = "LoggingUpdate".asInstanceOf[LoggingUpdate]
   @scala.inline
   def LoginWithAmazon: LoginWithAmazon = "LoginWithAmazon".asInstanceOf[LoginWithAmazon]
   @scala.inline
@@ -37123,6 +37155,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def `ap-southeast-2`: `ap-southeast-2` = "ap-southeast-2".asInstanceOf[`ap-southeast-2`]
   @scala.inline
+  def api: api = "api".asInstanceOf[api]
+  @scala.inline
   def app: app = "app".asInstanceOf[app]
   @scala.inline
   def appExists: appExists = "appExists".asInstanceOf[appExists]
@@ -37167,6 +37201,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def attachment: attachment = "attachment".asInstanceOf[attachment]
   @scala.inline
+  def audit: audit = "audit".asInstanceOf[audit]
+  @scala.inline
   def auditReportCreated: auditReportCreated = "auditReportCreated".asInstanceOf[auditReportCreated]
   @scala.inline
   def authenticate: authenticate = "authenticate".asInstanceOf[authenticate]
@@ -37176,6 +37212,8 @@ object awsDashSdkLibStrings {
   def `authenticate-oidc`: `authenticate-oidc` = "authenticate-oidc".asInstanceOf[`authenticate-oidc`]
   @scala.inline
   def `authenticated-read`: `authenticated-read` = "authenticated-read".asInstanceOf[`authenticated-read`]
+  @scala.inline
+  def authenticator: authenticator = "authenticator".asInstanceOf[authenticator]
   @scala.inline
   def authorizing: authorizing = "authorizing".asInstanceOf[authorizing]
   @scala.inline
@@ -37432,6 +37470,8 @@ object awsDashSdkLibStrings {
   def `container-instance`: `container-instance` = "container-instance".asInstanceOf[`container-instance`]
   @scala.inline
   def containerInstanceLongArnFormat: containerInstanceLongArnFormat = "containerInstanceLongArnFormat".asInstanceOf[containerInstanceLongArnFormat]
+  @scala.inline
+  def controllerManager: controllerManager = "controllerManager".asInstanceOf[controllerManager]
   @scala.inline
   def conversionTaskCancelled: conversionTaskCancelled = "conversionTaskCancelled".asInstanceOf[conversionTaskCancelled]
   @scala.inline
@@ -39212,6 +39252,8 @@ object awsDashSdkLibStrings {
   def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
   @scala.inline
   def scheduledChange: scheduledChange = "scheduledChange".asInstanceOf[scheduledChange]
+  @scala.inline
+  def scheduler: scheduler = "scheduler".asInstanceOf[scheduler]
   @scala.inline
   def scram_sha_1: scram_sha_1 = "scram_sha_1".asInstanceOf[scram_sha_1]
   @scala.inline

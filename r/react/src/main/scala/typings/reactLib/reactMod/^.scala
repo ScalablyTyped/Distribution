@@ -16,6 +16,7 @@ object ^ extends js.Object {
     * Suspense support will be added in a later release.
     */
   val Suspense: reactLib.reactMod.ReactNs.ExoticComponent[reactLib.reactMod.ReactNs.SuspenseProps] = js.native
+  val unstable_Profiler: reactLib.reactMod.ReactNs.ExoticComponent[reactLib.reactMod.ReactNs.ProfilerProps] = js.native
   val version: java.lang.String = js.native
   // Custom components
   def cloneElement[P](element: reactLib.reactMod.ReactNs.FunctionComponentElement[P]): reactLib.reactMod.ReactNs.FunctionComponentElement[P] = js.native

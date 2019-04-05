@@ -16,6 +16,10 @@ trait LogicalLocation extends js.Object {
     */
   var fullyQualifiedName: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * The index within the logical locations array.
+    */
+  var index: js.UndefOr[scala.Double] = js.undefined
+  /**
     * The type of construct this logical location component refers to. Should be one of 'function', 'member',
     * 'module', 'namespace', 'parameter', 'resource', 'returnType', 'type', 'variable', 'object', 'array', 'property',
     * 'value', 'element', 'text', 'attribute', 'comment', 'declaration', 'dtd' or 'processingInstruction', if any of
@@ -43,6 +47,7 @@ object LogicalLocation {
   def apply(
     decoratedName: java.lang.String = null,
     fullyQualifiedName: java.lang.String = null,
+    index: scala.Int | scala.Double = null,
     kind: java.lang.String = null,
     name: java.lang.String = null,
     parentIndex: scala.Int | scala.Double = null,
@@ -51,6 +56,7 @@ object LogicalLocation {
     val __obj = js.Dynamic.literal()
     if (decoratedName != null) __obj.updateDynamic("decoratedName")(decoratedName)
     if (fullyQualifiedName != null) __obj.updateDynamic("fullyQualifiedName")(fullyQualifiedName)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind)
     if (name != null) __obj.updateDynamic("name")(name)
     if (parentIndex != null) __obj.updateDynamic("parentIndex")(parentIndex.asInstanceOf[js.Any])

@@ -45,7 +45,10 @@ trait PlotData extends js.Object {
   var name: java.lang.String
   var orientation: plotlyDotJsLib.plotlyDotJsLibStrings.v | plotlyDotJsLib.plotlyDotJsLibStrings.h
   var r: js.Array[Datum]
+  var rotation: scala.Double
   var text: java.lang.String | js.Array[java.lang.String]
+  var textinfo: plotlyDotJsLib.plotlyDotJsLibStrings.label | plotlyDotJsLib.plotlyDotJsLibStrings.`label+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`label+value` | plotlyDotJsLib.plotlyDotJsLibStrings.`label+percent` | plotlyDotJsLib.plotlyDotJsLibStrings.`label+text+value` | plotlyDotJsLib.plotlyDotJsLibStrings.`label+text+percent` | plotlyDotJsLib.plotlyDotJsLibStrings.`label+value+percent` | plotlyDotJsLib.plotlyDotJsLibStrings.text | plotlyDotJsLib.plotlyDotJsLibStrings.`text+value` | plotlyDotJsLib.plotlyDotJsLibStrings.`text+percent` | plotlyDotJsLib.plotlyDotJsLibStrings.`text+value+percent` | plotlyDotJsLib.plotlyDotJsLibStrings.value | plotlyDotJsLib.plotlyDotJsLibStrings.`value+percent` | plotlyDotJsLib.plotlyDotJsLibStrings.percent | plotlyDotJsLib.plotlyDotJsLibStrings.none
+  var textposition: (plotlyDotJsLib.plotlyDotJsLibStrings.`top left`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`top center`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`top right`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`middle left`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`middle center`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`middle right`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`bottom left`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`bottom center`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`bottom right`) | plotlyDotJsLib.plotlyDotJsLibStrings.inside
   var theta: js.Array[Datum]
   var transforms: js.Array[DataTransform]
   var transpose: scala.Boolean
@@ -104,7 +107,10 @@ object PlotData {
     name: java.lang.String,
     orientation: plotlyDotJsLib.plotlyDotJsLibStrings.v | plotlyDotJsLib.plotlyDotJsLibStrings.h,
     r: js.Array[Datum],
+    rotation: scala.Double,
     text: java.lang.String | js.Array[java.lang.String],
+    textinfo: plotlyDotJsLib.plotlyDotJsLibStrings.label | plotlyDotJsLib.plotlyDotJsLibStrings.`label+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`label+value` | plotlyDotJsLib.plotlyDotJsLibStrings.`label+percent` | plotlyDotJsLib.plotlyDotJsLibStrings.`label+text+value` | plotlyDotJsLib.plotlyDotJsLibStrings.`label+text+percent` | plotlyDotJsLib.plotlyDotJsLibStrings.`label+value+percent` | plotlyDotJsLib.plotlyDotJsLibStrings.text | plotlyDotJsLib.plotlyDotJsLibStrings.`text+value` | plotlyDotJsLib.plotlyDotJsLibStrings.`text+percent` | plotlyDotJsLib.plotlyDotJsLibStrings.`text+value+percent` | plotlyDotJsLib.plotlyDotJsLibStrings.value | plotlyDotJsLib.plotlyDotJsLibStrings.`value+percent` | plotlyDotJsLib.plotlyDotJsLibStrings.percent | plotlyDotJsLib.plotlyDotJsLibStrings.none,
+    textposition: (plotlyDotJsLib.plotlyDotJsLibStrings.`top left`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`top center`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`top right`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`middle left`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`middle center`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`middle right`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`bottom left`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`bottom center`) | (plotlyDotJsLib.plotlyDotJsLibStrings.`bottom right`) | plotlyDotJsLib.plotlyDotJsLibStrings.inside,
     theta: js.Array[Datum],
     transforms: js.Array[DataTransform],
     transpose: scala.Boolean,
@@ -122,7 +128,7 @@ object PlotData {
     z: js.Array[Datum] | js.Array[js.Array[Datum]] | js.Array[js.Array[js.Array[Datum]]] | TypedArray,
     zsmooth: plotlyDotJsLib.plotlyDotJsLibStrings.fast | plotlyDotJsLib.plotlyDotJsLibStrings.best | plotlyDotJsLib.plotlyDotJsLibNumbers.`false`
   ): PlotData = {
-    val __obj = js.Dynamic.literal(autobinx = autobinx, boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps, error_x = error_x, error_y = error_y, fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor, hole = hole, hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel, hoveron = hoveron.asInstanceOf[js.Any], labels = labels, legendgroup = legendgroup, line = line, marker = marker, mode = mode.asInstanceOf[js.Any], name = name, orientation = orientation.asInstanceOf[js.Any], r = r, text = text.asInstanceOf[js.Any], theta = theta, transforms = transforms, transpose = transpose, values = values, visible = visible.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis, xbins = xbins, xgap = xgap, xy = xy, y = y.asInstanceOf[js.Any], yaxis = yaxis, ygap = ygap, z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autobinx = autobinx, boxmean = boxmean.asInstanceOf[js.Any], colorscale = colorscale.asInstanceOf[js.Any], connectgaps = connectgaps, error_x = error_x, error_y = error_y, fill = fill.asInstanceOf[js.Any], fillcolor = fillcolor, hole = hole, hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel, hoveron = hoveron.asInstanceOf[js.Any], labels = labels, legendgroup = legendgroup, line = line, marker = marker, mode = mode.asInstanceOf[js.Any], name = name, orientation = orientation.asInstanceOf[js.Any], r = r, rotation = rotation, text = text.asInstanceOf[js.Any], textinfo = textinfo.asInstanceOf[js.Any], textposition = textposition.asInstanceOf[js.Any], theta = theta, transforms = transforms, transpose = transpose, values = values, visible = visible.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis, xbins = xbins, xgap = xgap, xy = xy, y = y.asInstanceOf[js.Any], yaxis = yaxis, ygap = ygap, z = z.asInstanceOf[js.Any], zsmooth = zsmooth.asInstanceOf[js.Any])
     __obj.updateDynamic("line.color")(`line.color`.asInstanceOf[js.Any])
     __obj.updateDynamic("line.dash")(`line.dash`)
     __obj.updateDynamic("line.shape")(`line.shape`.asInstanceOf[js.Any])

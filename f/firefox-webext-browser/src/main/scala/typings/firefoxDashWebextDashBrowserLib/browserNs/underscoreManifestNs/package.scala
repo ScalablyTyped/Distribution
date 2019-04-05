@@ -6,11 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object underscoreManifestNs {
+  type ExtensionFileUrl = java.lang.String
   type ExtensionID = java.lang.String
   type ExtensionURL = java.lang.String
   type HttpURL = java.lang.String
   type IconImageData = org.scalablytyped.runtime.NumberDictionary[ImageData] | ImageData
-  type IconPath = org.scalablytyped.runtime.NumberDictionary[ExtensionURL] | ExtensionURL
+  type IconPath = org.scalablytyped.runtime.NumberDictionary[ExtensionFileUrl] | ExtensionFileUrl
   type ImageData = js.Any
   type ImageDataOrExtensionURL = java.lang.String
   type KeyName = java.lang.String
@@ -33,5 +34,4 @@ package object underscoreManifestNs {
   /** @deprecated An unexpected property was found in the WebExtension manifest. */
   type UnrecognizedProperty = js.Any
   type _MatchPattern = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.`<all_urls>`
-  type _WebExtensionManifestIncognito = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.spanning
 }

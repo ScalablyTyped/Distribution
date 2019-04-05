@@ -374,6 +374,7 @@
 [info ] ExpandCallables.scala:48 Expanded objectOf into 1 methods [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclNamespace(React) / TsDeclInterface(ReactPropTypes))] 
 [info ] ExpandCallables.scala:48 Expanded shape into 1 methods [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclNamespace(React) / TsDeclInterface(ReactPropTypes))] 
 [info ] ExpandCallables.scala:48 Expanded exact into 1 methods [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclNamespace(React) / TsDeclInterface(ReactPropTypes))] 
+[info ] ExpandCallables.scala:48 Expanded onRender into 1 methods [id => react-howler, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclNamespace(React) / TsDeclInterface(ProfilerProps))] 
 [debug] PhaseRunner.scala:82 Success [id => react-howler, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing react-howler [id => react-howler, phase => scala.js] 
 [info ] ImportType.scala:202 Failed type conversion: react-howler.react-howler/react.Global.JSX.IntrinsicElements[T] [id => react-howler, phase => scala.js, scope => TreeScope(TsParsedFile() / TsDeclModule(react-howler/react) / TsDeclNamespace(React) / TsDeclTypeAlias(ComponentProps) / TsTypeUnion() / TsTypeLookup())] 

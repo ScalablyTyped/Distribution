@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 package object d3DashArrayMod {
   type Primitive = scala.Double | java.lang.String | scala.Boolean | stdLib.Date
-  type ThresholdArrayGenerator = ThresholdNumberArrayGenerator[scala.Double]
   type ThresholdCountGenerator[Value /* <: js.UndefOr[scala.Double] */] = js.Function3[
     /* values */ stdLib.ArrayLike[Value], 
     /* min */ scala.Double, 

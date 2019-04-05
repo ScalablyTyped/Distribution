@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HistogramGeneratorNumber[Datum, Value /* <: js.UndefOr[scala.Double] */] extends HistogramCommon[Datum, Value] {
   def domain(): js.Function1[
-    /* values */ stdLib.ArrayLike[Value], 
+    /* values */ stdLib.Iterable[Value], 
     (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]])
   ] = js.native
   def domain(
     domainAccessor: js.Function1[
-      /* values */ stdLib.ArrayLike[Value], 
+      /* values */ stdLib.Iterable[Value], 
       (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]])
     ]
   ): this.type = js.native

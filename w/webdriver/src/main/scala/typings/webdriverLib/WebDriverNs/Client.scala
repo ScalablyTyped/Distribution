@@ -52,18 +52,8 @@ trait Client extends js.Object {
   def executeAsyncScript(
     script: java.lang.String,
     args: js.Array[js.UndefOr[java.lang.String | js.Object | scala.Double | scala.Boolean]]
-  ): scala.Unit = js.native
-  @JSName("executeAsyncScript")
-  def executeAsyncScript_Any(
-    script: java.lang.String,
-    args: js.Array[js.UndefOr[java.lang.String | js.Object | scala.Double | scala.Boolean]]
   ): js.Any = js.native
   def executeScript(
-    script: java.lang.String,
-    args: js.Array[js.UndefOr[java.lang.String | js.Object | scala.Double | scala.Boolean]]
-  ): scala.Unit = js.native
-  @JSName("executeScript")
-  def executeScript_Any(
     script: java.lang.String,
     args: js.Array[js.UndefOr[java.lang.String | js.Object | scala.Double | scala.Boolean]]
   ): js.Any = js.native
@@ -77,15 +67,11 @@ trait Client extends js.Object {
   def fullscreenWindow(): js.Object = js.native
   def generateTestReport(message: java.lang.String, group: java.lang.String): scala.Unit = js.native
   def getActiveElement(): java.lang.String = js.native
-  def getActiveEngine(): scala.Unit = js.native
+  def getActiveEngine(): java.lang.String = js.native
   def getAlertText(): java.lang.String = js.native
-  @JSName("getAlertText")
-  def getAlertText_Unit(): scala.Unit = js.native
   def getAllCookies(): js.Array[js.Object] = js.native
-  @JSName("getAllCookies")
-  def getAllCookies_Unit(): scala.Unit = js.native
   def getApplicationCacheStatus(): scala.Double = js.native
-  def getAvailableEngines(): scala.Unit = js.native
+  def getAvailableEngines(): js.Array[java.lang.String] = js.native
   def getContext(): java.lang.String | scala.Null = js.native
   def getContexts(): js.Array[java.lang.String] = js.native
   def getCurrentActivity(): scala.Unit = js.native
@@ -113,16 +99,18 @@ trait Client extends js.Object {
   def getNamedCookie(name: java.lang.String): js.Object = js.native
   def getNetworkConditions(): scala.Unit = js.native
   def getNetworkConnection(): scala.Double = js.native
-  def getOrientation(): scala.Unit = js.native
+  def getOrientation(): java.lang.String = js.native
   def getPageIndex(): scala.Unit = js.native
   def getPageLogs(`type`: java.lang.String): js.Object = js.native
-  def getPageSource(): scala.Unit = js.native
+  def getPageSource(): java.lang.String = js.native
+  @JSName("getPageSource")
+  def getPageSource_Unit(): scala.Unit = js.native
   def getPerformanceData(packageName: java.lang.String, dataType: java.lang.String, dataReadTimeout: scala.Double): scala.Unit = js.native
   def getPerformanceDataTypes(): scala.Unit = js.native
   def getSession(): js.Object = js.native
   def getSessionStorage(): js.Array[java.lang.String] = js.native
   def getSessionStorageItem(key: java.lang.String): java.lang.String = js.native
-  def getSessionStorageSize(): scala.Unit = js.native
+  def getSessionStorageSize(): scala.Double = js.native
   def getSessions(): js.Array[js.Object] = js.native
   def getSettings(): scala.Unit = js.native
   def getStrings(language: java.lang.String, stringFile: java.lang.String): scala.Unit = js.native
@@ -154,7 +142,7 @@ trait Client extends js.Object {
   def isElementDisplayed(): scala.Boolean = js.native
   def isElementEnabled(): scala.Boolean = js.native
   def isElementSelected(): scala.Boolean = js.native
-  def isIMEActivated(): scala.Unit = js.native
+  def isIMEActivated(): scala.Boolean = js.native
   def isKeyboardShown(): scala.Unit = js.native
   def isLoading(): scala.Boolean = js.native
   def isLocked(): scala.Unit = js.native

@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait StackFrame extends js.Object {
   /**
-    * The address of the method or function that is executing.
-    */
-  var address: js.UndefOr[Address] = js.undefined
-  /**
     * The location to which this stack frame refers.
     */
   var location: js.UndefOr[Location] = js.undefined
@@ -35,7 +31,6 @@ trait StackFrame extends js.Object {
 object StackFrame {
   @scala.inline
   def apply(
-    address: Address = null,
     location: Location = null,
     module: java.lang.String = null,
     parameters: js.Array[java.lang.String] = null,
@@ -43,7 +38,6 @@ object StackFrame {
     threadId: scala.Int | scala.Double = null
   ): StackFrame = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address)
     if (location != null) __obj.updateDynamic("location")(location)
     if (module != null) __obj.updateDynamic("module")(module)
     if (parameters != null) __obj.updateDynamic("parameters")(parameters)

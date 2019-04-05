@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("pkg-dir", JSImport.Namespace)
 @js.native
-object pkgDashDirMod extends js.Object {
-  val default: pkgDashDirLib.Anon_Cwd = js.native
-}
+object pkgDashDirMod
+  extends org.scalablytyped.runtime.TopLevel[Anon_CwdDefault]
 

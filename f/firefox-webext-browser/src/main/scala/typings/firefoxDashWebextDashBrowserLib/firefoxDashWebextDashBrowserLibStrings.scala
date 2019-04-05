@@ -956,6 +956,10 @@ object firefoxDashWebextDashBrowserLibStrings {
        with firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowType
   
   @js.native
+  sealed trait not_allowed
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestIncognito
+  
+  @js.native
   sealed trait not_applicable
     extends firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.CertificateTransparencyStatus
   
@@ -1262,7 +1266,8 @@ object firefoxDashWebextDashBrowserLibStrings {
     extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._ProtocolHandlerProtocol
   
   @js.native
-  sealed trait spanning extends js.Object
+  sealed trait spanning
+    extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs._WebExtensionManifestIncognito
   
   @js.native
   sealed trait speculate
@@ -1959,6 +1964,8 @@ object firefoxDashWebextDashBrowserLibStrings {
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
+  def not_allowed: not_allowed = "not_allowed".asInstanceOf[not_allowed]
   @scala.inline
   def not_applicable: not_applicable = "not_applicable".asInstanceOf[not_applicable]
   @scala.inline

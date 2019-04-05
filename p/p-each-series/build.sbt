@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-each-series"
-version := "2.0.0-a5b2ba"
+version := "2.1.0-7344d9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

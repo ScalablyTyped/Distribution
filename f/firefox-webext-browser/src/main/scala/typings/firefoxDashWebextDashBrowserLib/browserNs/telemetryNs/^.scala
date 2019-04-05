@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("browser.telemetry")
 @js.native
 object ^ extends js.Object {
-  /** Checks if Telemetry is enabled. */
+  /** Checks if Telemetry upload is enabled. */
   def canUpload(): js.Promise[_] = js.native
   /**
     * Record an event in Telemetry. Throws when trying to record an unknown event.

@@ -28,7 +28,7 @@ trait DownloadItem extends js.Object {
   /** False if this download is recorded in the history, true if it is not recorded. */
   var incognito: scala.Boolean
   /** The file's MIME type. */
-  var mime: java.lang.String
+  var mime: js.UndefOr[java.lang.String] = js.undefined
   /** True if the download has stopped reading data from the host, but kept the connection open. */
   var paused: scala.Boolean
   var referrer: js.UndefOr[java.lang.String] = js.undefined
@@ -53,7 +53,6 @@ object DownloadItem {
     filename: java.lang.String,
     id: scala.Double,
     incognito: scala.Boolean,
-    mime: java.lang.String,
     paused: scala.Boolean,
     startTime: java.lang.String,
     state: State,
@@ -64,14 +63,16 @@ object DownloadItem {
     endTime: java.lang.String = null,
     error: InterruptReason = null,
     estimatedEndTime: java.lang.String = null,
+    mime: java.lang.String = null,
     referrer: java.lang.String = null
   ): DownloadItem = {
-    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived, canResume = canResume, danger = danger, exists = exists, fileSize = fileSize, filename = filename, id = id, incognito = incognito, mime = mime, paused = paused, startTime = startTime, state = state, totalBytes = totalBytes, url = url)
+    val __obj = js.Dynamic.literal(bytesReceived = bytesReceived, canResume = canResume, danger = danger, exists = exists, fileSize = fileSize, filename = filename, id = id, incognito = incognito, paused = paused, startTime = startTime, state = state, totalBytes = totalBytes, url = url)
     if (byExtensionId != null) __obj.updateDynamic("byExtensionId")(byExtensionId)
     if (byExtensionName != null) __obj.updateDynamic("byExtensionName")(byExtensionName)
     if (endTime != null) __obj.updateDynamic("endTime")(endTime)
     if (error != null) __obj.updateDynamic("error")(error)
     if (estimatedEndTime != null) __obj.updateDynamic("estimatedEndTime")(estimatedEndTime)
+    if (mime != null) __obj.updateDynamic("mime")(mime)
     if (referrer != null) __obj.updateDynamic("referrer")(referrer)
     __obj.asInstanceOf[DownloadItem]
   }

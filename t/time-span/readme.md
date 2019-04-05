@@ -1,5 +1,0 @@
-```
-/**
- * @returns Elapsed milliseconds.
- */
-```

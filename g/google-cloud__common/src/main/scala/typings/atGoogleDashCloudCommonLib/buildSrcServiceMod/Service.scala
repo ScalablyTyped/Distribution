@@ -36,12 +36,6 @@ class Service protected () extends js.Object {
   var packageJson: js.Any = js.native
   var projectId: java.lang.String = js.native
   var projectIdRequired: js.Any = js.native
-  @JSName("requestModule")
-  var requestModule_Original: atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
-    requestLib.requestMod.requestNs.Request, 
-    requestLib.requestMod.requestNs.CoreOptions, 
-    requestLib.requestMod.requestNs.RequiredUriUrl
-  ]) = js.native
   /**
     * Make an authenticated API request.
     *
@@ -76,7 +70,7 @@ class Service protected () extends js.Object {
     options: atGoogleDashCloudCommonLib.buildSrcUtilMod.MakeAuthenticatedRequestOptions
   ): scala.Unit | atGoogleDashCloudCommonLib.buildSrcUtilMod.Abortable = js.native
   @JSName("makeAuthenticatedRequest")
-  def makeAuthenticatedRequest_Duplexify(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): duplexifyLib.duplexifyMod.duplexifyNs.Duplexify = js.native
+  def makeAuthenticatedRequest_Duplexify(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): atGoogleDashCloudCommonLib.buildSrcUtilMod.Duplexify = js.native
   /**
     * Make an authenticated API request.
     *
@@ -90,21 +84,6 @@ class Service protected () extends js.Object {
     reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
     callback: atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback
   ): scala.Unit = js.native
-  def requestModule(
-    options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions
-  ): requestLib.requestMod.requestNs.Request = js.native
-  def requestModule(
-    options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions,
-    callback: requestLib.requestMod.requestNs.RequestCallback
-  ): requestLib.requestMod.requestNs.Request = js.native
-  def requestModule(uri: java.lang.String): requestLib.requestMod.requestNs.Request = js.native
-  def requestModule(uri: java.lang.String, callback: requestLib.requestMod.requestNs.RequestCallback): requestLib.requestMod.requestNs.Request = js.native
-  def requestModule(uri: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): requestLib.requestMod.requestNs.Request = js.native
-  def requestModule(
-    uri: java.lang.String,
-    options: requestLib.requestMod.requestNs.CoreOptions,
-    callback: requestLib.requestMod.requestNs.RequestCallback
-  ): requestLib.requestMod.requestNs.Request = js.native
   /**
     * Make an authenticated API request.
     *

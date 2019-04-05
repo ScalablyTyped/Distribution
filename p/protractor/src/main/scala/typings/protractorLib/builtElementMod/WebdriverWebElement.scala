@@ -21,6 +21,6 @@ class WebdriverWebElement ()
     */
   /* CompleteClass */
   /* InferMemberOverrides */
-  override def serialize(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.IWebElementId | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[seleniumDashWebdriverLib.seleniumDashWebdriverMod.IWebElementId] = js.native
+  override def serialize(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.IWebElementId | js.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.IWebElementId] = js.native
 }
 

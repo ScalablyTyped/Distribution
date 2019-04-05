@@ -73,18 +73,38 @@ class Realm () extends js.Object {
     * @param  {T&Realm.ObjectPropsType} properties
     * @param  {boolean} update?
     * @returns T
+    *
+    * @deprecated, to be removed in future versions. Use `create(type, properties, UpdateMode)` instead.
     */
   def create[T](`type`: java.lang.String, properties: T): T = js.native
+  def create[T](`type`: java.lang.String, properties: T, mode: realmLib.RealmNs.UpdateMode): T = js.native
   def create[T](`type`: java.lang.String, properties: T, update: scala.Boolean): T = js.native
   def create[T](`type`: java.lang.String, properties: realmLib.RealmNs.ObjectPropsType): T = js.native
+  def create[T](
+    `type`: java.lang.String,
+    properties: realmLib.RealmNs.ObjectPropsType,
+    mode: realmLib.RealmNs.UpdateMode
+  ): T = js.native
   def create[T](`type`: java.lang.String, properties: realmLib.RealmNs.ObjectPropsType, update: scala.Boolean): T = js.native
   def create[T](`type`: js.Function, properties: T): T = js.native
+  def create[T](`type`: js.Function, properties: T, mode: realmLib.RealmNs.UpdateMode): T = js.native
   def create[T](`type`: js.Function, properties: T, update: scala.Boolean): T = js.native
   def create[T](`type`: js.Function, properties: realmLib.RealmNs.ObjectPropsType): T = js.native
+  def create[T](
+    `type`: js.Function,
+    properties: realmLib.RealmNs.ObjectPropsType,
+    mode: realmLib.RealmNs.UpdateMode
+  ): T = js.native
   def create[T](`type`: js.Function, properties: realmLib.RealmNs.ObjectPropsType, update: scala.Boolean): T = js.native
   def create[T](`type`: realmLib.RealmNs.ObjectClass, properties: T): T = js.native
+  def create[T](`type`: realmLib.RealmNs.ObjectClass, properties: T, mode: realmLib.RealmNs.UpdateMode): T = js.native
   def create[T](`type`: realmLib.RealmNs.ObjectClass, properties: T, update: scala.Boolean): T = js.native
   def create[T](`type`: realmLib.RealmNs.ObjectClass, properties: realmLib.RealmNs.ObjectPropsType): T = js.native
+  def create[T](
+    `type`: realmLib.RealmNs.ObjectClass,
+    properties: realmLib.RealmNs.ObjectPropsType,
+    mode: realmLib.RealmNs.UpdateMode
+  ): T = js.native
   def create[T](
     `type`: realmLib.RealmNs.ObjectClass,
     properties: realmLib.RealmNs.ObjectPropsType,
@@ -160,8 +180,8 @@ class Realm () extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def subscriptions(): js.Array[NamedSubscription] = js.native
-  def subscriptions(name: java.lang.String): js.Array[NamedSubscription] = js.native
+  def subscriptions(): realmLib.RealmNs.Results[NamedSubscription] = js.native
+  def subscriptions(name: java.lang.String): realmLib.RealmNs.Results[NamedSubscription] = js.native
   def unsubscribe(name: java.lang.String): scala.Unit = js.native
   /**
     * @param  {()=>void} callback

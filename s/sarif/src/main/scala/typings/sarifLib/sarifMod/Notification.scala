@@ -7,13 +7,17 @@ import scala.scalajs.js.annotation._
 
 trait Notification extends js.Object {
   /**
+    * A reference used to locate the rule descriptor associated with this notification.
+    */
+  var associatedRule: js.UndefOr[ReportingDescriptorReference] = js.undefined
+  /**
+    * A reference used to locate the descriptor relevant to this notification.
+    */
+  var descriptor: js.UndefOr[ReportingDescriptorReference] = js.undefined
+  /**
     * The runtime exception, if any, relevant to this notification.
     */
   var exception: js.UndefOr[Exception] = js.undefined
-  /**
-    * An identifier for the condition that was encountered.
-    */
-  var id: js.UndefOr[java.lang.String] = js.undefined
   /**
     * A value specifying the severity level of the notification.
     */
@@ -31,14 +35,6 @@ trait Notification extends js.Object {
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
   /**
-    * The stable, unique identifier of the rule, if any, to which this notification is relevant.
-    */
-  var ruleId: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * The index within the run resources array of the rule object, if any, associated with this notification.
-    */
-  var ruleIndex: js.UndefOr[scala.Double] = js.undefined
-  /**
     * The thread identifier of the code that generated the notification.
     */
   var threadId: js.UndefOr[scala.Double] = js.undefined
@@ -52,24 +48,22 @@ object Notification {
   @scala.inline
   def apply(
     message: Message,
+    associatedRule: ReportingDescriptorReference = null,
+    descriptor: ReportingDescriptorReference = null,
     exception: Exception = null,
-    id: java.lang.String = null,
     level: sarifLib.sarifMod.NotificationNs.level = null,
     physicalLocation: PhysicalLocation = null,
     properties: PropertyBag = null,
-    ruleId: java.lang.String = null,
-    ruleIndex: scala.Int | scala.Double = null,
     threadId: scala.Int | scala.Double = null,
     timeUtc: java.lang.String = null
   ): Notification = {
     val __obj = js.Dynamic.literal(message = message)
+    if (associatedRule != null) __obj.updateDynamic("associatedRule")(associatedRule)
+    if (descriptor != null) __obj.updateDynamic("descriptor")(descriptor)
     if (exception != null) __obj.updateDynamic("exception")(exception)
-    if (id != null) __obj.updateDynamic("id")(id)
     if (level != null) __obj.updateDynamic("level")(level)
     if (physicalLocation != null) __obj.updateDynamic("physicalLocation")(physicalLocation)
     if (properties != null) __obj.updateDynamic("properties")(properties)
-    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId)
-    if (ruleIndex != null) __obj.updateDynamic("ruleIndex")(ruleIndex.asInstanceOf[js.Any])
     if (threadId != null) __obj.updateDynamic("threadId")(threadId.asInstanceOf[js.Any])
     if (timeUtc != null) __obj.updateDynamic("timeUtc")(timeUtc)
     __obj.asInstanceOf[Notification]

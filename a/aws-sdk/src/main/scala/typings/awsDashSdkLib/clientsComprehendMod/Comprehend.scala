@@ -1028,6 +1028,41 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Lists all tags associated with a given Amazon Comprehend resource. Up to the maximum number of tags allowed per resource will be displayed. 
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Lists all tags associated with a given Amazon Comprehend resource. Up to the maximum number of tags allowed per resource will be displayed. 
+    */
+  def listTagsForResource(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTagsForResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Gets a list of the topic detection jobs that you have submitted.
     */
   def listTopicsDetectionJobs(): awsDashSdkLib.libRequestMod.Request[
@@ -1480,6 +1515,76 @@ trait Comprehend
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.StopTrainingEntityRecognizerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Associates a specific tag with an Amazon Comprehend resource. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with the key-value pair ‘Department’:’Sales’ might be added to a resource to indicate its use by a particular department. 
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Associates a specific tag with an Amazon Comprehend resource. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with the key-value pair ‘Department’:’Sales’ might be added to a resource to indicate its use by a particular department. 
+    */
+  def tagResource(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.TagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes a specific tag associated with an Amazon Comprehend resource. 
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes a specific tag associated with an Amazon Comprehend resource. 
+    */
+  def untagResource(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.UntagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsComprehendMod.ComprehendNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsComprehendMod.ComprehendNs.UntagResourceResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
 }

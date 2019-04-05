@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-bootstrap-daterangepicker"
-version := "0.0-unknown-dt-20190322Z-67e9e3"
+version := "0.0-unknown-dt-20190322Z-5e317d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-6565a2",
   "org.scalablytyped" %%% "moment" % "2.24.0-da0e25",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-d8f967",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-cab61f",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false

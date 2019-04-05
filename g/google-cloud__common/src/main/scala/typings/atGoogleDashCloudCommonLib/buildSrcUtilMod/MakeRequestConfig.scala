@@ -17,18 +17,11 @@ trait MakeRequestConfig extends js.Object {
     * (default: 3)
     */
   var maxRetries: js.UndefOr[scala.Double] = js.undefined
-  var request: js.UndefOr[
-    atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
-      requestLib.requestMod.requestNs.Request, 
-      requestLib.requestMod.requestNs.CoreOptions, 
-      requestLib.requestMod.requestNs.RequiredUriUrl
-    ])
-  ] = js.undefined
   var retries: js.UndefOr[scala.Double] = js.undefined
   var shouldRetryFn: js.UndefOr[
     js.Function1[/* response */ js.UndefOr[requestLib.requestMod.requestNs.Response], scala.Boolean]
   ] = js.undefined
-  var stream: js.UndefOr[duplexifyLib.duplexifyMod.duplexifyNs.Duplexify] = js.undefined
+  var stream: js.UndefOr[Duplexify] = js.undefined
 }
 
 object MakeRequestConfig {
@@ -36,19 +29,13 @@ object MakeRequestConfig {
   def apply(
     autoRetry: js.UndefOr[scala.Boolean] = js.undefined,
     maxRetries: scala.Int | scala.Double = null,
-    request: atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
-      requestLib.requestMod.requestNs.Request, 
-      requestLib.requestMod.requestNs.CoreOptions, 
-      requestLib.requestMod.requestNs.RequiredUriUrl
-    ]) = null,
     retries: scala.Int | scala.Double = null,
     shouldRetryFn: /* response */ js.UndefOr[requestLib.requestMod.requestNs.Response] => scala.Boolean = null,
-    stream: duplexifyLib.duplexifyMod.duplexifyNs.Duplexify = null
+    stream: Duplexify = null
   ): MakeRequestConfig = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(autoRetry)) __obj.updateDynamic("autoRetry")(autoRetry)
     if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request)
     if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
     if (shouldRetryFn != null) __obj.updateDynamic("shouldRetryFn")(js.Any.fromFunction1(shouldRetryFn))
     if (stream != null) __obj.updateDynamic("stream")(stream)

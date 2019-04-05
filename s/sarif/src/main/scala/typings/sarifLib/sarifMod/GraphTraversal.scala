@@ -15,10 +15,6 @@ trait GraphTraversal extends js.Object {
     */
   var edgeTraversals: js.UndefOr[js.Array[EdgeTraversal]] = js.undefined
   /**
-    * A string that uniquely identifies that graph being traversed.
-    */
-  var graphId: java.lang.String
-  /**
     * Values of relevant expressions at the start of the graph traversal.
     */
   var initialState: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
@@ -26,22 +22,33 @@ trait GraphTraversal extends js.Object {
     * Key/value pairs that provide additional information about the graph traversal.
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
+  /**
+    * The index within the result.graphs to be associated with the result.
+    */
+  var resultGraphIndex: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * The index within the run.graphs to be associated with the result.
+    */
+  var runGraphIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
 object GraphTraversal {
   @scala.inline
   def apply(
-    graphId: java.lang.String,
     description: Message = null,
     edgeTraversals: js.Array[EdgeTraversal] = null,
     initialState: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
-    properties: PropertyBag = null
+    properties: PropertyBag = null,
+    resultGraphIndex: scala.Int | scala.Double = null,
+    runGraphIndex: scala.Int | scala.Double = null
   ): GraphTraversal = {
-    val __obj = js.Dynamic.literal(graphId = graphId)
+    val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description)
     if (edgeTraversals != null) __obj.updateDynamic("edgeTraversals")(edgeTraversals)
     if (initialState != null) __obj.updateDynamic("initialState")(initialState)
     if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (resultGraphIndex != null) __obj.updateDynamic("resultGraphIndex")(resultGraphIndex.asInstanceOf[js.Any])
+    if (runGraphIndex != null) __obj.updateDynamic("runGraphIndex")(runGraphIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphTraversal]
   }
 }

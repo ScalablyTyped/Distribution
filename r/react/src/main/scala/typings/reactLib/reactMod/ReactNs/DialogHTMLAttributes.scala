@@ -95,6 +95,8 @@ object DialogHTMLAttributes {
     onAnimationIterationCapture: AnimationEventHandler[T] = null,
     onAnimationStart: AnimationEventHandler[T] = null,
     onAnimationStartCapture: AnimationEventHandler[T] = null,
+    onAuxClick: MouseEventHandler[T] = null,
+    onAuxClickCapture: MouseEventHandler[T] = null,
     onBeforeInput: FormEventHandler[T] = null,
     onBeforeInputCapture: FormEventHandler[T] = null,
     onBlur: FocusEventHandler[T] = null,
@@ -349,6 +351,8 @@ object DialogHTMLAttributes {
     if (onAnimationIterationCapture != null) __obj.updateDynamic("onAnimationIterationCapture")(onAnimationIterationCapture)
     if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart)
     if (onAnimationStartCapture != null) __obj.updateDynamic("onAnimationStartCapture")(onAnimationStartCapture)
+    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(onAuxClick)
+    if (onAuxClickCapture != null) __obj.updateDynamic("onAuxClickCapture")(onAuxClickCapture)
     if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(onBeforeInput)
     if (onBeforeInputCapture != null) __obj.updateDynamic("onBeforeInputCapture")(onBeforeInputCapture)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)

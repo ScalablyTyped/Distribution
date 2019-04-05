@@ -15,6 +15,10 @@ trait ArtifactContent extends js.Object {
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
   /**
+    * An alternate rendered representation of the artifact (e.g., a decompiled representation of a binary region).
+    */
+  var rendered: js.UndefOr[MultiformatMessageString] = js.undefined
+  /**
     * UTF-8-encoded content from a text artifact.
     */
   var text: js.UndefOr[java.lang.String] = js.undefined
@@ -22,10 +26,16 @@ trait ArtifactContent extends js.Object {
 
 object ArtifactContent {
   @scala.inline
-  def apply(binary: java.lang.String = null, properties: PropertyBag = null, text: java.lang.String = null): ArtifactContent = {
+  def apply(
+    binary: java.lang.String = null,
+    properties: PropertyBag = null,
+    rendered: MultiformatMessageString = null,
+    text: java.lang.String = null
+  ): ArtifactContent = {
     val __obj = js.Dynamic.literal()
     if (binary != null) __obj.updateDynamic("binary")(binary)
     if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
     if (text != null) __obj.updateDynamic("text")(text)
     __obj.asInstanceOf[ArtifactContent]
   }

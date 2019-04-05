@@ -18,6 +18,7 @@ trait Anon_DataErrorFalse[T] extends js.Object {
   var isSettled: reactDashAsyncLib.reactDashAsyncLibNumbers.`true`
   var startedAt: stdLib.Date
   var status: reactDashAsyncLib.reactDashAsyncLibStrings.fulfilled
+  var value: T
 }
 
 object Anon_DataErrorFalse {
@@ -34,9 +35,10 @@ object Anon_DataErrorFalse {
     isSettled: reactDashAsyncLib.reactDashAsyncLibNumbers.`true`,
     startedAt: stdLib.Date,
     status: reactDashAsyncLib.reactDashAsyncLibStrings.fulfilled,
+    value: T,
     error: js.UndefOr[scala.Nothing] = js.undefined
   ): Anon_DataErrorFalse[T] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], finishedAt = finishedAt, isFulfilled = isFulfilled, isInitial = isInitial, isLoading = isLoading, isPending = isPending, isRejected = isRejected, isResolved = isResolved, isSettled = isSettled, startedAt = startedAt, status = status)
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], finishedAt = finishedAt, isFulfilled = isFulfilled, isInitial = isInitial, isLoading = isLoading, isPending = isPending, isRejected = isRejected, isResolved = isResolved, isSettled = isSettled, startedAt = startedAt, status = status, value = value.asInstanceOf[js.Any])
     if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[Anon_DataErrorFalse[T]]
   }

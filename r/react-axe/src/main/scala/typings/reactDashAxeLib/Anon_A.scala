@@ -23,6 +23,8 @@ trait Anon_A extends js.Object {
     */
   @JSName("Suspense")
   val Suspense_Original: reactLib.reactMod.ReactNs.ExoticComponent[reactLib.reactMod.ReactNs.SuspenseProps] = js.native
+  @JSName("unstable_Profiler")
+  val unstable_Profiler_Original: reactLib.reactMod.ReactNs.ExoticComponent[reactLib.reactMod.ReactNs.ProfilerProps] = js.native
   val version: java.lang.String = js.native
   /**
     * **NOTE**: Exotic components are not callable.
@@ -236,6 +238,10 @@ trait Anon_A extends js.Object {
       scala.Boolean
     ]
   ): reactLib.reactMod.ReactNs.NamedExoticComponent[P] = js.native
+  /**
+    * **NOTE**: Exotic components are not callable.
+    */
+  def unstable_Profiler(props: reactLib.reactMod.ReactNs.ProfilerProps): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
   // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.
   /**

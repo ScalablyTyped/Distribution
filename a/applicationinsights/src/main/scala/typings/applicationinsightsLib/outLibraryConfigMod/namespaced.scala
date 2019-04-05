@@ -11,6 +11,9 @@ class namespaced () extends Config {
   def this(instrumentationKey: java.lang.String) = this()
   /* CompleteClass */
   override var _profileQueryEndpoint: js.Any = js.native
+  /** Host name for quickpulse service */
+  /* CompleteClass */
+  override var _quickPulseHost: js.Any = js.native
   /** A list of domains to exclude from cross-component header injection */
   /* CompleteClass */
   override var correlationHeaderExcludedDomains: js.Array[java.lang.String] = js.native
@@ -51,6 +54,8 @@ class namespaced () extends Config {
   /** A proxy server for SDK HTTPS traffic (Optional, Default pulled from `https_proxy` environment variable) */
   /* CompleteClass */
   override var proxyHttpsUrl: java.lang.String = js.native
+  /* CompleteClass */
+  override var quickPulseHost: java.lang.String = js.native
   /** The percentage of telemetry items tracked that should be transmitted (Default 100) */
   /* CompleteClass */
   override var samplingPercentage: scala.Double = js.native
@@ -67,6 +72,7 @@ object namespaced extends js.Object {
   var ENV_https_proxy: java.lang.String = js.native
   var ENV_iKey: java.lang.String = js.native
   var ENV_profileQueryEndpoint: java.lang.String = js.native
+  var ENV_quickPulseHost: java.lang.String = js.native
   var legacy_ENV_iKey: java.lang.String = js.native
   /* private */ def _getInstrumentationKey(): js.Any = js.native
 }

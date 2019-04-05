@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("unused-filename", JSImport.Namespace)
 @js.native
-object unusedDashFilenameMod extends js.Object {
-  val default: unusedDashFilenameLib.Anon_FilePath = js.native
-}
+object unusedDashFilenameMod
+  extends org.scalablytyped.runtime.TopLevel[Anon_DefaultFilePath]
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-notification-system-redux"
-version := "1.1-dt-20180806Z-a86346"
+version := "1.1-dt-20180806Z-77a73e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
-  "org.scalablytyped" %%% "react-notification-system" % "0.2-dt-20190322Z-2a3bb3",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-d8f967",
+  "org.scalablytyped" %%% "react-notification-system" % "0.2-dt-20190322Z-c011f2",
   "org.scalablytyped" %%% "redux" % "4.0.1-caedab",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-a7455c")

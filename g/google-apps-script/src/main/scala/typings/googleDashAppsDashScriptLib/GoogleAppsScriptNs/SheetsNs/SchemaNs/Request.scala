@@ -1,0 +1,187 @@
+package typings
+package googleDashAppsDashScriptLib.GoogleAppsScriptNs.SheetsNs.SchemaNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Request extends js.Object {
+  var addBanding: js.UndefOr[AddBandingRequest] = js.undefined
+  var addChart: js.UndefOr[AddChartRequest] = js.undefined
+  var addConditionalFormatRule: js.UndefOr[AddConditionalFormatRuleRequest] = js.undefined
+  var addDimensionGroup: js.UndefOr[AddDimensionGroupRequest] = js.undefined
+  var addFilterView: js.UndefOr[AddFilterViewRequest] = js.undefined
+  var addNamedRange: js.UndefOr[AddNamedRangeRequest] = js.undefined
+  var addProtectedRange: js.UndefOr[AddProtectedRangeRequest] = js.undefined
+  var addSheet: js.UndefOr[AddSheetRequest] = js.undefined
+  var appendCells: js.UndefOr[AppendCellsRequest] = js.undefined
+  var appendDimension: js.UndefOr[AppendDimensionRequest] = js.undefined
+  var autoFill: js.UndefOr[AutoFillRequest] = js.undefined
+  var autoResizeDimensions: js.UndefOr[AutoResizeDimensionsRequest] = js.undefined
+  var clearBasicFilter: js.UndefOr[ClearBasicFilterRequest] = js.undefined
+  var copyPaste: js.UndefOr[CopyPasteRequest] = js.undefined
+  var createDeveloperMetadata: js.UndefOr[CreateDeveloperMetadataRequest] = js.undefined
+  var cutPaste: js.UndefOr[CutPasteRequest] = js.undefined
+  var deleteBanding: js.UndefOr[DeleteBandingRequest] = js.undefined
+  var deleteConditionalFormatRule: js.UndefOr[DeleteConditionalFormatRuleRequest] = js.undefined
+  var deleteDeveloperMetadata: js.UndefOr[DeleteDeveloperMetadataRequest] = js.undefined
+  var deleteDimension: js.UndefOr[DeleteDimensionRequest] = js.undefined
+  var deleteDimensionGroup: js.UndefOr[DeleteDimensionGroupRequest] = js.undefined
+  var deleteEmbeddedObject: js.UndefOr[DeleteEmbeddedObjectRequest] = js.undefined
+  var deleteFilterView: js.UndefOr[DeleteFilterViewRequest] = js.undefined
+  var deleteNamedRange: js.UndefOr[DeleteNamedRangeRequest] = js.undefined
+  var deleteProtectedRange: js.UndefOr[DeleteProtectedRangeRequest] = js.undefined
+  var deleteRange: js.UndefOr[DeleteRangeRequest] = js.undefined
+  var deleteSheet: js.UndefOr[DeleteSheetRequest] = js.undefined
+  var duplicateFilterView: js.UndefOr[DuplicateFilterViewRequest] = js.undefined
+  var duplicateSheet: js.UndefOr[DuplicateSheetRequest] = js.undefined
+  var findReplace: js.UndefOr[FindReplaceRequest] = js.undefined
+  var insertDimension: js.UndefOr[InsertDimensionRequest] = js.undefined
+  var insertRange: js.UndefOr[InsertRangeRequest] = js.undefined
+  var mergeCells: js.UndefOr[MergeCellsRequest] = js.undefined
+  var moveDimension: js.UndefOr[MoveDimensionRequest] = js.undefined
+  var pasteData: js.UndefOr[PasteDataRequest] = js.undefined
+  var randomizeRange: js.UndefOr[RandomizeRangeRequest] = js.undefined
+  var repeatCell: js.UndefOr[RepeatCellRequest] = js.undefined
+  var setBasicFilter: js.UndefOr[SetBasicFilterRequest] = js.undefined
+  var setDataValidation: js.UndefOr[SetDataValidationRequest] = js.undefined
+  var sortRange: js.UndefOr[SortRangeRequest] = js.undefined
+  var textToColumns: js.UndefOr[TextToColumnsRequest] = js.undefined
+  var unmergeCells: js.UndefOr[UnmergeCellsRequest] = js.undefined
+  var updateBanding: js.UndefOr[UpdateBandingRequest] = js.undefined
+  var updateBorders: js.UndefOr[UpdateBordersRequest] = js.undefined
+  var updateCells: js.UndefOr[UpdateCellsRequest] = js.undefined
+  var updateChartSpec: js.UndefOr[UpdateChartSpecRequest] = js.undefined
+  var updateConditionalFormatRule: js.UndefOr[UpdateConditionalFormatRuleRequest] = js.undefined
+  var updateDeveloperMetadata: js.UndefOr[UpdateDeveloperMetadataRequest] = js.undefined
+  var updateDimensionGroup: js.UndefOr[UpdateDimensionGroupRequest] = js.undefined
+  var updateDimensionProperties: js.UndefOr[UpdateDimensionPropertiesRequest] = js.undefined
+  var updateEmbeddedObjectPosition: js.UndefOr[UpdateEmbeddedObjectPositionRequest] = js.undefined
+  var updateFilterView: js.UndefOr[UpdateFilterViewRequest] = js.undefined
+  var updateNamedRange: js.UndefOr[UpdateNamedRangeRequest] = js.undefined
+  var updateProtectedRange: js.UndefOr[UpdateProtectedRangeRequest] = js.undefined
+  var updateSheetProperties: js.UndefOr[UpdateSheetPropertiesRequest] = js.undefined
+  var updateSpreadsheetProperties: js.UndefOr[UpdateSpreadsheetPropertiesRequest] = js.undefined
+}
+
+object Request {
+  @scala.inline
+  def apply(
+    addBanding: AddBandingRequest = null,
+    addChart: AddChartRequest = null,
+    addConditionalFormatRule: AddConditionalFormatRuleRequest = null,
+    addDimensionGroup: AddDimensionGroupRequest = null,
+    addFilterView: AddFilterViewRequest = null,
+    addNamedRange: AddNamedRangeRequest = null,
+    addProtectedRange: AddProtectedRangeRequest = null,
+    addSheet: AddSheetRequest = null,
+    appendCells: AppendCellsRequest = null,
+    appendDimension: AppendDimensionRequest = null,
+    autoFill: AutoFillRequest = null,
+    autoResizeDimensions: AutoResizeDimensionsRequest = null,
+    clearBasicFilter: ClearBasicFilterRequest = null,
+    copyPaste: CopyPasteRequest = null,
+    createDeveloperMetadata: CreateDeveloperMetadataRequest = null,
+    cutPaste: CutPasteRequest = null,
+    deleteBanding: DeleteBandingRequest = null,
+    deleteConditionalFormatRule: DeleteConditionalFormatRuleRequest = null,
+    deleteDeveloperMetadata: DeleteDeveloperMetadataRequest = null,
+    deleteDimension: DeleteDimensionRequest = null,
+    deleteDimensionGroup: DeleteDimensionGroupRequest = null,
+    deleteEmbeddedObject: DeleteEmbeddedObjectRequest = null,
+    deleteFilterView: DeleteFilterViewRequest = null,
+    deleteNamedRange: DeleteNamedRangeRequest = null,
+    deleteProtectedRange: DeleteProtectedRangeRequest = null,
+    deleteRange: DeleteRangeRequest = null,
+    deleteSheet: DeleteSheetRequest = null,
+    duplicateFilterView: DuplicateFilterViewRequest = null,
+    duplicateSheet: DuplicateSheetRequest = null,
+    findReplace: FindReplaceRequest = null,
+    insertDimension: InsertDimensionRequest = null,
+    insertRange: InsertRangeRequest = null,
+    mergeCells: MergeCellsRequest = null,
+    moveDimension: MoveDimensionRequest = null,
+    pasteData: PasteDataRequest = null,
+    randomizeRange: RandomizeRangeRequest = null,
+    repeatCell: RepeatCellRequest = null,
+    setBasicFilter: SetBasicFilterRequest = null,
+    setDataValidation: SetDataValidationRequest = null,
+    sortRange: SortRangeRequest = null,
+    textToColumns: TextToColumnsRequest = null,
+    unmergeCells: UnmergeCellsRequest = null,
+    updateBanding: UpdateBandingRequest = null,
+    updateBorders: UpdateBordersRequest = null,
+    updateCells: UpdateCellsRequest = null,
+    updateChartSpec: UpdateChartSpecRequest = null,
+    updateConditionalFormatRule: UpdateConditionalFormatRuleRequest = null,
+    updateDeveloperMetadata: UpdateDeveloperMetadataRequest = null,
+    updateDimensionGroup: UpdateDimensionGroupRequest = null,
+    updateDimensionProperties: UpdateDimensionPropertiesRequest = null,
+    updateEmbeddedObjectPosition: UpdateEmbeddedObjectPositionRequest = null,
+    updateFilterView: UpdateFilterViewRequest = null,
+    updateNamedRange: UpdateNamedRangeRequest = null,
+    updateProtectedRange: UpdateProtectedRangeRequest = null,
+    updateSheetProperties: UpdateSheetPropertiesRequest = null,
+    updateSpreadsheetProperties: UpdateSpreadsheetPropertiesRequest = null
+  ): Request = {
+    val __obj = js.Dynamic.literal()
+    if (addBanding != null) __obj.updateDynamic("addBanding")(addBanding)
+    if (addChart != null) __obj.updateDynamic("addChart")(addChart)
+    if (addConditionalFormatRule != null) __obj.updateDynamic("addConditionalFormatRule")(addConditionalFormatRule)
+    if (addDimensionGroup != null) __obj.updateDynamic("addDimensionGroup")(addDimensionGroup)
+    if (addFilterView != null) __obj.updateDynamic("addFilterView")(addFilterView)
+    if (addNamedRange != null) __obj.updateDynamic("addNamedRange")(addNamedRange)
+    if (addProtectedRange != null) __obj.updateDynamic("addProtectedRange")(addProtectedRange)
+    if (addSheet != null) __obj.updateDynamic("addSheet")(addSheet)
+    if (appendCells != null) __obj.updateDynamic("appendCells")(appendCells)
+    if (appendDimension != null) __obj.updateDynamic("appendDimension")(appendDimension)
+    if (autoFill != null) __obj.updateDynamic("autoFill")(autoFill)
+    if (autoResizeDimensions != null) __obj.updateDynamic("autoResizeDimensions")(autoResizeDimensions)
+    if (clearBasicFilter != null) __obj.updateDynamic("clearBasicFilter")(clearBasicFilter)
+    if (copyPaste != null) __obj.updateDynamic("copyPaste")(copyPaste)
+    if (createDeveloperMetadata != null) __obj.updateDynamic("createDeveloperMetadata")(createDeveloperMetadata)
+    if (cutPaste != null) __obj.updateDynamic("cutPaste")(cutPaste)
+    if (deleteBanding != null) __obj.updateDynamic("deleteBanding")(deleteBanding)
+    if (deleteConditionalFormatRule != null) __obj.updateDynamic("deleteConditionalFormatRule")(deleteConditionalFormatRule)
+    if (deleteDeveloperMetadata != null) __obj.updateDynamic("deleteDeveloperMetadata")(deleteDeveloperMetadata)
+    if (deleteDimension != null) __obj.updateDynamic("deleteDimension")(deleteDimension)
+    if (deleteDimensionGroup != null) __obj.updateDynamic("deleteDimensionGroup")(deleteDimensionGroup)
+    if (deleteEmbeddedObject != null) __obj.updateDynamic("deleteEmbeddedObject")(deleteEmbeddedObject)
+    if (deleteFilterView != null) __obj.updateDynamic("deleteFilterView")(deleteFilterView)
+    if (deleteNamedRange != null) __obj.updateDynamic("deleteNamedRange")(deleteNamedRange)
+    if (deleteProtectedRange != null) __obj.updateDynamic("deleteProtectedRange")(deleteProtectedRange)
+    if (deleteRange != null) __obj.updateDynamic("deleteRange")(deleteRange)
+    if (deleteSheet != null) __obj.updateDynamic("deleteSheet")(deleteSheet)
+    if (duplicateFilterView != null) __obj.updateDynamic("duplicateFilterView")(duplicateFilterView)
+    if (duplicateSheet != null) __obj.updateDynamic("duplicateSheet")(duplicateSheet)
+    if (findReplace != null) __obj.updateDynamic("findReplace")(findReplace)
+    if (insertDimension != null) __obj.updateDynamic("insertDimension")(insertDimension)
+    if (insertRange != null) __obj.updateDynamic("insertRange")(insertRange)
+    if (mergeCells != null) __obj.updateDynamic("mergeCells")(mergeCells)
+    if (moveDimension != null) __obj.updateDynamic("moveDimension")(moveDimension)
+    if (pasteData != null) __obj.updateDynamic("pasteData")(pasteData)
+    if (randomizeRange != null) __obj.updateDynamic("randomizeRange")(randomizeRange)
+    if (repeatCell != null) __obj.updateDynamic("repeatCell")(repeatCell)
+    if (setBasicFilter != null) __obj.updateDynamic("setBasicFilter")(setBasicFilter)
+    if (setDataValidation != null) __obj.updateDynamic("setDataValidation")(setDataValidation)
+    if (sortRange != null) __obj.updateDynamic("sortRange")(sortRange)
+    if (textToColumns != null) __obj.updateDynamic("textToColumns")(textToColumns)
+    if (unmergeCells != null) __obj.updateDynamic("unmergeCells")(unmergeCells)
+    if (updateBanding != null) __obj.updateDynamic("updateBanding")(updateBanding)
+    if (updateBorders != null) __obj.updateDynamic("updateBorders")(updateBorders)
+    if (updateCells != null) __obj.updateDynamic("updateCells")(updateCells)
+    if (updateChartSpec != null) __obj.updateDynamic("updateChartSpec")(updateChartSpec)
+    if (updateConditionalFormatRule != null) __obj.updateDynamic("updateConditionalFormatRule")(updateConditionalFormatRule)
+    if (updateDeveloperMetadata != null) __obj.updateDynamic("updateDeveloperMetadata")(updateDeveloperMetadata)
+    if (updateDimensionGroup != null) __obj.updateDynamic("updateDimensionGroup")(updateDimensionGroup)
+    if (updateDimensionProperties != null) __obj.updateDynamic("updateDimensionProperties")(updateDimensionProperties)
+    if (updateEmbeddedObjectPosition != null) __obj.updateDynamic("updateEmbeddedObjectPosition")(updateEmbeddedObjectPosition)
+    if (updateFilterView != null) __obj.updateDynamic("updateFilterView")(updateFilterView)
+    if (updateNamedRange != null) __obj.updateDynamic("updateNamedRange")(updateNamedRange)
+    if (updateProtectedRange != null) __obj.updateDynamic("updateProtectedRange")(updateProtectedRange)
+    if (updateSheetProperties != null) __obj.updateDynamic("updateSheetProperties")(updateSheetProperties)
+    if (updateSpreadsheetProperties != null) __obj.updateDynamic("updateSpreadsheetProperties")(updateSpreadsheetProperties)
+    __obj.asInstanceOf[Request]
+  }
+}
+

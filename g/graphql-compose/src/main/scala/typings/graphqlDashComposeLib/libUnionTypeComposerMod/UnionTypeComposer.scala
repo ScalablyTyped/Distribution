@@ -12,7 +12,7 @@ class UnionTypeComposer[TSource, TContext] protected ()
   def this(gqType: graphqlLib.graphqlMod.GraphQLUnionType, schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext]) = this()
   var gqType: GraphQLUnionTypeExtended[TSource, TContext] = js.native
   var schemaComposer: graphqlDashComposeLib.libSchemaComposerMod.SchemaComposer[TContext] = js.native
-  def addType(`type`: graphqlDashComposeLib.libTypeMapperMod.ComposeObjectType): this.type = js.native
+  def addType(`type`: graphqlDashComposeLib.libObjectTypeComposerMod.ComposeObjectType): this.type = js.native
   def addTypeResolver(
     `type`: graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext],
     checkFn: UnionTypeResolverCheckFn[TSource, TContext]
@@ -58,7 +58,7 @@ class UnionTypeComposer[TSource, TContext] protected ()
     graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.native
   def getTypeResolvers(): UnionTypeResolversMap[TSource, TContext] = js.native
-  def getTypes(): js.Array[graphqlDashComposeLib.libTypeMapperMod.ComposeObjectType] = js.native
+  def getTypes(): js.Array[graphqlDashComposeLib.libObjectTypeComposerMod.ComposeObjectType] = js.native
   def hasExtension(extensionName: java.lang.String): scala.Boolean = js.native
   def hasType(name: graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext]): scala.Boolean = js.native
   def hasType(name: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]): scala.Boolean = js.native
@@ -91,7 +91,7 @@ class UnionTypeComposer[TSource, TContext] protected ()
   def setResolveType(fn: scala.Unit): this.type = js.native
   def setTypeName(name: java.lang.String): this.type = js.native
   def setTypeResolvers(typeResolversMap: UnionTypeResolversMap[TSource, TContext]): this.type = js.native
-  def setTypes(types: js.Array[graphqlDashComposeLib.libTypeMapperMod.ComposeObjectType]): this.type = js.native
+  def setTypes(types: js.Array[graphqlDashComposeLib.libObjectTypeComposerMod.ComposeObjectType]): this.type = js.native
 }
 
 /* static members */

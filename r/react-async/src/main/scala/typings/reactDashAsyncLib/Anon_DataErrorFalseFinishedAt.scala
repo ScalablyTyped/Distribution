@@ -18,6 +18,7 @@ trait Anon_DataErrorFalseFinishedAt[T] extends js.Object {
   var isSettled: reactDashAsyncLib.reactDashAsyncLibNumbers.`true`
   var startedAt: stdLib.Date
   var status: reactDashAsyncLib.reactDashAsyncLibStrings.rejected
+  var value: stdLib.Error
 }
 
 object Anon_DataErrorFalseFinishedAt {
@@ -34,9 +35,10 @@ object Anon_DataErrorFalseFinishedAt {
     isSettled: reactDashAsyncLib.reactDashAsyncLibNumbers.`true`,
     startedAt: stdLib.Date,
     status: reactDashAsyncLib.reactDashAsyncLibStrings.rejected,
+    value: stdLib.Error,
     data: T = null
   ): Anon_DataErrorFalseFinishedAt[T] = {
-    val __obj = js.Dynamic.literal(error = error, finishedAt = finishedAt, isFulfilled = isFulfilled, isInitial = isInitial, isLoading = isLoading, isPending = isPending, isRejected = isRejected, isResolved = isResolved, isSettled = isSettled, startedAt = startedAt, status = status)
+    val __obj = js.Dynamic.literal(error = error, finishedAt = finishedAt, isFulfilled = isFulfilled, isInitial = isInitial, isLoading = isLoading, isPending = isPending, isRejected = isRejected, isResolved = isResolved, isSettled = isSettled, startedAt = startedAt, status = status, value = value)
     if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_DataErrorFalseFinishedAt[T]]
   }

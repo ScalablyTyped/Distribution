@@ -285,8 +285,13 @@ object applyNs extends js.Object {
     ]
   ] = js.native
   def sequenceS[F](F: fpDashTsLib.libApplyMod.Apply[F]): js.Function1[
-    /* r */ stdLib.Record[java.lang.String, fpDashTsLib.libHKTMod.HKT[F, _]], 
-    fpDashTsLib.libHKTMod.HKT[F, stdLib.Record[java.lang.String, _]]
+    /* r */ fpDashTsLib.libApplyMod.EnforceNonEmptyRecord[stdLib.Record[java.lang.String, fpDashTsLib.libHKTMod.HKT[F, _]]], 
+    fpDashTsLib.libHKTMod.HKT[
+      F, 
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof std.Record<string, fp-ts.fp-ts/lib/HKT.HKT<F, any>> ]: any}
+    */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
+    ]
   ] = js.native
   def sequenceS[F /* <: fpDashTsLib.libHKTMod.URIS */](F: fpDashTsLib.libApplyMod.Apply1[F]): js.Function1[
     /* r */ fpDashTsLib.libApplyMod.EnforceNonEmptyRecord[stdLib.Record[java.lang.String, fpDashTsLib.libHKTMod.Type[F, _]]], 
@@ -339,65 +344,11 @@ object applyNs extends js.Object {
     */ fpDashTsLib.fpDashTsLibStrings.sequenceS with js.Any
     ]
   ] = js.native
-  def sequenceT[F](F: fpDashTsLib.libApplyMod.Apply[F]): js.Function1[
-    /* t */ (fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libHKTMod.HKT[F, _]]) with fpDashTsLib.Anon_0AnyFHKT[F], 
-    fpDashTsLib.libHKTMod.HKT[
-      F, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof fp-ts.fp-ts/lib/Array.Global.Array<fp-ts.fp-ts/lib/HKT.HKT<F, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceT with js.Any
-    ]
-  ] = js.native
-  def sequenceT[F /* <: fpDashTsLib.libHKTMod.URIS */](F: fpDashTsLib.libApplyMod.Apply1[F]): js.Function1[
-    /* t */ (fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libHKTMod.Type[F, _]]) with fpDashTsLib.Anon_0AnyF[F], 
-    fpDashTsLib.libHKTMod.Type[
-      F, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof fp-ts.fp-ts/lib/Array.Global.Array<fp-ts.fp-ts/lib/HKT.Type<F, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceT with js.Any
-    ]
-  ] = js.native
-  def sequenceT[F /* <: fpDashTsLib.libHKTMod.URIS2 */](F: fpDashTsLib.libApplyMod.Apply2[F]): js.Function1[
-    /* t */ (fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libHKTMod.Type2[F, _, _]]) with (fpDashTsLib.Anon_0Any[F, _]), 
-    fpDashTsLib.libHKTMod.Type2[
-      F, 
-      _, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof fp-ts.fp-ts/lib/Array.Global.Array<fp-ts.fp-ts/lib/HKT.Type2<F, any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceT with js.Any
-    ]
-  ] = js.native
-  def sequenceT[F /* <: fpDashTsLib.libHKTMod.URIS3 */](F: fpDashTsLib.libApplyMod.Apply3[F]): js.Function1[
-    /* t */ (fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libHKTMod.Type3[F, _, _, _]]) with (fpDashTsLib.Anon_0[F, _, _]), 
-    fpDashTsLib.libHKTMod.Type3[
-      F, 
-      _, 
-      _, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof fp-ts.fp-ts/lib/Array.Global.Array<fp-ts.fp-ts/lib/HKT.Type3<F, any, any, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceT with js.Any
-    ]
-  ] = js.native
-  def sequenceT[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L](F: fpDashTsLib.libApplyMod.Apply2C[F, L]): js.Function1[
-    /* t */ (fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libHKTMod.Type2[F, L, _]]) with (fpDashTsLib.Anon_0Any[F, L]), 
-    fpDashTsLib.libHKTMod.Type2[
-      F, 
-      L, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof fp-ts.fp-ts/lib/Array.Global.Array<fp-ts.fp-ts/lib/HKT.Type2<F, L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceT with js.Any
-    ]
-  ] = js.native
-  def sequenceT[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L](F: fpDashTsLib.libApplyMod.Apply3C[F, U, L]): js.Function1[
-    /* t */ (fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libHKTMod.Type3[F, U, L, _]]) with (fpDashTsLib.Anon_0[F, U, L]), 
-    fpDashTsLib.libHKTMod.Type3[
-      F, 
-      U, 
-      L, 
-      /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof fp-ts.fp-ts/lib/Array.Global.Array<fp-ts.fp-ts/lib/HKT.Type3<F, U, L, any>> ]: any}
-    */ fpDashTsLib.fpDashTsLibStrings.sequenceT with js.Any
-    ]
-  ] = js.native
+  def sequenceT[F](F: fpDashTsLib.libApplyMod.Apply[F]): fpDashTsLib.libApplyMod.SequenceT[F] = js.native
+  def sequenceT[F /* <: fpDashTsLib.libHKTMod.URIS */](F: fpDashTsLib.libApplyMod.Apply1[F]): fpDashTsLib.libApplyMod.SequenceT1[F] = js.native
+  def sequenceT[F /* <: fpDashTsLib.libHKTMod.URIS2 */](F: fpDashTsLib.libApplyMod.Apply2[F]): fpDashTsLib.libApplyMod.SequenceT2[F] = js.native
+  def sequenceT[F /* <: fpDashTsLib.libHKTMod.URIS3 */](F: fpDashTsLib.libApplyMod.Apply3[F]): fpDashTsLib.libApplyMod.SequenceT3[F] = js.native
+  def sequenceT[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L](F: fpDashTsLib.libApplyMod.Apply2C[F, L]): fpDashTsLib.libApplyMod.SequenceT2C[F, L] = js.native
+  def sequenceT[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L](F: fpDashTsLib.libApplyMod.Apply3C[F, U, L]): fpDashTsLib.libApplyMod.SequenceT3C[F, U, L] = js.native
 }
 

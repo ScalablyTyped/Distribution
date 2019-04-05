@@ -41,6 +41,8 @@ trait Anon_Accentcolor extends js.Object {
   var toolbar_field_border: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
   var toolbar_field_border_focus: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
   var toolbar_field_focus: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
+  var toolbar_field_highlight: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
+  var toolbar_field_highlight_text: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
   var toolbar_field_separator: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
   var toolbar_field_text: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
   var toolbar_field_text_focus: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
@@ -86,6 +88,8 @@ object Anon_Accentcolor {
     toolbar_field_border: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor = null,
     toolbar_field_border_focus: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor = null,
     toolbar_field_focus: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor = null,
+    toolbar_field_highlight: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor = null,
+    toolbar_field_highlight_text: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor = null,
     toolbar_field_separator: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor = null,
     toolbar_field_text: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor = null,
     toolbar_field_text_focus: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor = null,
@@ -127,6 +131,8 @@ object Anon_Accentcolor {
     if (toolbar_field_border != null) __obj.updateDynamic("toolbar_field_border")(toolbar_field_border.asInstanceOf[js.Any])
     if (toolbar_field_border_focus != null) __obj.updateDynamic("toolbar_field_border_focus")(toolbar_field_border_focus.asInstanceOf[js.Any])
     if (toolbar_field_focus != null) __obj.updateDynamic("toolbar_field_focus")(toolbar_field_focus.asInstanceOf[js.Any])
+    if (toolbar_field_highlight != null) __obj.updateDynamic("toolbar_field_highlight")(toolbar_field_highlight.asInstanceOf[js.Any])
+    if (toolbar_field_highlight_text != null) __obj.updateDynamic("toolbar_field_highlight_text")(toolbar_field_highlight_text.asInstanceOf[js.Any])
     if (toolbar_field_separator != null) __obj.updateDynamic("toolbar_field_separator")(toolbar_field_separator.asInstanceOf[js.Any])
     if (toolbar_field_text != null) __obj.updateDynamic("toolbar_field_text")(toolbar_field_text.asInstanceOf[js.Any])
     if (toolbar_field_text_focus != null) __obj.updateDynamic("toolbar_field_text_focus")(toolbar_field_text_focus.asInstanceOf[js.Any])

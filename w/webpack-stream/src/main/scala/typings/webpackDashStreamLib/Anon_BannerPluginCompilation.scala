@@ -82,6 +82,8 @@ trait Anon_BannerPluginCompilation extends js.Object {
   val dependenciesNs: js.Any = js.native
   val loaderNs: js.Any = js.native
   val optimizeNs: Anon_AggressiveMergingPlugin = js.native
+  /** Webpack package version. */
+  val version: js.UndefOr[java.lang.String] = js.native
   val webpackNs: Anon_BannerPlugin = js.native
   def apply(): webpackLib.webpackMod.webpackNs.Compiler = js.native
   def apply(options: js.Array[webpackLib.webpackMod.webpackNs.Configuration]): webpackLib.webpackMod.webpackNs.MultiCompiler = js.native

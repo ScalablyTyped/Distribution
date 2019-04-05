@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-jwt"
-version := "3.5.1-4c0adb"
+version := "3.5.1-b79b37"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -22,13 +22,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190131Z-2b27d0",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "p-any" % "2.0.0-01121a",
+  "org.scalablytyped" %%% "p-any" % "2.1.0-e58405",
   "org.scalablytyped" %%% "p-cancelable" % "2.0.0-03d86c",
-  "org.scalablytyped" %%% "p-some" % "4.0.0-4e1244",
+  "org.scalablytyped" %%% "p-some" % "4.1.0-267533",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-623d43",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-201a01",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "type-fest" % "0.1.0-207b13")
+  "org.scalablytyped" %%% "type-fest" % "0.3.0-45433e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -14,7 +14,7 @@ trait Log extends js.Object {
   /**
     * References to external property files that share data between runs.
     */
-  var inlineExternalPropertyFiles: js.UndefOr[js.Array[ExternalPropertyFile]] = js.undefined
+  var inlineExternalProperties: js.UndefOr[js.Array[ExternalProperties]] = js.undefined
   /**
     * Key/value pairs that provide additional information about the log file.
     */
@@ -35,12 +35,12 @@ object Log {
     runs: js.Array[Run],
     version: sarifLib.sarifMod.LogNs.version,
     $schema: java.lang.String = null,
-    inlineExternalPropertyFiles: js.Array[ExternalPropertyFile] = null,
+    inlineExternalProperties: js.Array[ExternalProperties] = null,
     properties: PropertyBag = null
   ): Log = {
     val __obj = js.Dynamic.literal(runs = runs, version = version)
     if ($schema != null) __obj.updateDynamic("$schema")($schema)
-    if (inlineExternalPropertyFiles != null) __obj.updateDynamic("inlineExternalPropertyFiles")(inlineExternalPropertyFiles)
+    if (inlineExternalProperties != null) __obj.updateDynamic("inlineExternalProperties")(inlineExternalProperties)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[Log]
   }

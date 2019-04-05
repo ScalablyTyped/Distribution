@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation._
 @JSImport("protractor/built/ptor", "Ptor")
 @js.native
 class Ptor () extends js.Object {
-  var Actions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof webdriver.Actions */ js.Any = js.native
+  var ActionSequence: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof webdriver.ActionSequence */ js.Any = js.native
   var Browser: seleniumDashWebdriverLib.seleniumDashWebdriverMod.IBrowser = js.native
   var Builder: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.Builder] = js.native
-  var Button: seleniumDashWebdriverLib.seleniumDashWebdriverMod.IButton = js.native
+  var Button: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify webdriver.IButton */ js.Any = js.native
   var By: protractorLib.builtLocatorsMod.ProtractorBy = js.native
   var Capabilities: protractorLib.Anon_Android = js.native
   var Capability: seleniumDashWebdriverLib.seleniumDashWebdriverMod.ICapability = js.native
-  var Command: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof command.Command */ js.Any = js.native
-  var CommandName: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify command.ICommandName */ js.Any = js.native
+  var Command: js.Any = js.native
+  var CommandName: js.Any = js.native
   var ElementArrayFinder: js.Any = js.native
   var ElementFinder: js.Any = js.native
   var EventEmitter: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.EventEmitter] = js.native
   var ExpectedConditions: protractorLib.builtExpectedConditionsMod.ProtractorExpectedConditions = js.native
   var FileDetector: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.FileDetector] = js.native
-  var Key: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_./selenium-webdriver/lib/input.IKey */ js.Any = js.native
+  var Key: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify webdriver.IKey */ js.Any = js.native
   var ProtractorBrowser: js.Any = js.native
   var ProtractorBy: js.Any = js.native
   var ProtractorExpectedConditions: js.Any = js.native
@@ -31,20 +31,20 @@ class Ptor () extends js.Object {
     /* capabilities */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities, 
     seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session
   ] = js.native
-  var WebDriver: protractorLib.Anon_AttachToSession = js.native
+  var WebDriver: protractorLib.Anon_CreateSession = js.native
   var WebElement: protractorLib.Anon_A = js.native
   var WebElementPromise: org.scalablytyped.runtime.Instantiable2[
     /* driver */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, 
-    /* el */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement], 
+    /* el */ js.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement], 
     seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElementPromise
   ] = js.native
   var browser: protractorLib.builtBrowserMod.ProtractorBrowser = js.native
   var by: protractorLib.builtLocatorsMod.ProtractorBy = js.native
   @JSName("element")
   var element_Original: protractorLib.builtBrowserMod.ElementHelper = js.native
-  var error: protractorLib.Anon_ElementNotSelectableError = js.native
+  var error: protractorLib.Anon_CheckLegacyResponse = js.native
   var logging: protractorLib.Anon_AddConsoleHandler = js.native
-  var promise: protractorLib.Anon_All = js.native
+  var promise: protractorLib.Anon_Arr = js.native
   var until: protractorLib.Anon_AbleToSwitchToFrame = js.native
   var utils: protractorLib.Anon_Chrome = js.native
   @JSName("$")

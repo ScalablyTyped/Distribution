@@ -26,17 +26,17 @@ import scala.scalajs.js.annotation._
   */
 trait CSSTransitionProps
   extends reactDashTransitionDashGroupLib.transitionMod.TransitionProps {
-  var classNames: java.lang.String | CSSTransitionClassNames
+  var classNames: js.UndefOr[java.lang.String | CSSTransitionClassNames] = js.undefined
 }
 
 object CSSTransitionProps {
   @scala.inline
   def apply(
-    classNames: java.lang.String | CSSTransitionClassNames,
     timeout: scala.Double | reactDashTransitionDashGroupLib.Anon_Enter,
     addEndListener: reactDashTransitionDashGroupLib.transitionMod.EndHandler = null,
     appear: js.UndefOr[scala.Boolean] = js.undefined,
     children: reactDashTransitionDashGroupLib.transitionMod.TransitionChildren = null,
+    classNames: java.lang.String | CSSTransitionClassNames = null,
     enter: js.UndefOr[scala.Boolean] = js.undefined,
     exit: js.UndefOr[scala.Boolean] = js.undefined,
     in: js.UndefOr[scala.Boolean] = js.undefined,
@@ -49,10 +49,11 @@ object CSSTransitionProps {
     onExiting: reactDashTransitionDashGroupLib.transitionMod.ExitHandler = null,
     unmountOnExit: js.UndefOr[scala.Boolean] = js.undefined
   ): CSSTransitionProps = {
-    val __obj = js.Dynamic.literal(classNames = classNames.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
     if (addEndListener != null) __obj.updateDynamic("addEndListener")(addEndListener)
     if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear)
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (classNames != null) __obj.updateDynamic("classNames")(classNames.asInstanceOf[js.Any])
     if (!js.isUndefined(enter)) __obj.updateDynamic("enter")(enter)
     if (!js.isUndefined(exit)) __obj.updateDynamic("exit")(exit)
     if (!js.isUndefined(in)) __obj.updateDynamic("in")(in)

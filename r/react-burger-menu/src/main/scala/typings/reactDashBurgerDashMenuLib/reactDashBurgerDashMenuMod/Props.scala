@@ -9,6 +9,7 @@ trait Props extends js.Object {
   var bodyClassName: js.UndefOr[java.lang.String] = js.undefined
   var burgerBarClassName: js.UndefOr[java.lang.String] = js.undefined
   var burgerButtonClassName: js.UndefOr[java.lang.String] = js.undefined
+  var className: js.UndefOr[java.lang.String] = js.undefined
   var crossButtonClassName: js.UndefOr[java.lang.String] = js.undefined
   var crossClassName: js.UndefOr[java.lang.String] = js.undefined
   var customBurgerIcon: js.UndefOr[
@@ -20,6 +21,7 @@ trait Props extends js.Object {
   var customOnKeyDown: js.UndefOr[
     js.Function1[/* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.Element], scala.Unit]
   ] = js.undefined
+  var disableAutoFocus: js.UndefOr[java.lang.String] = js.undefined
   var disableCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined
   var disableOverlayClick: js.UndefOr[scala.Boolean] = js.undefined
   var htmlClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -49,11 +51,13 @@ object Props {
     bodyClassName: java.lang.String = null,
     burgerBarClassName: java.lang.String = null,
     burgerButtonClassName: java.lang.String = null,
+    className: java.lang.String = null,
     crossButtonClassName: java.lang.String = null,
     crossClassName: java.lang.String = null,
     customBurgerIcon: reactLib.reactMod.Global.JSXNs.Element | reactDashBurgerDashMenuLib.reactDashBurgerDashMenuLibNumbers.`false` = null,
     customCrossIcon: reactLib.reactMod.Global.JSXNs.Element | reactDashBurgerDashMenuLib.reactDashBurgerDashMenuLibNumbers.`false` = null,
     customOnKeyDown: /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.Element] => scala.Unit = null,
+    disableAutoFocus: java.lang.String = null,
     disableCloseOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
     disableOverlayClick: js.UndefOr[scala.Boolean] = js.undefined,
     htmlClassName: java.lang.String = null,
@@ -76,11 +80,13 @@ object Props {
     if (bodyClassName != null) __obj.updateDynamic("bodyClassName")(bodyClassName)
     if (burgerBarClassName != null) __obj.updateDynamic("burgerBarClassName")(burgerBarClassName)
     if (burgerButtonClassName != null) __obj.updateDynamic("burgerButtonClassName")(burgerButtonClassName)
+    if (className != null) __obj.updateDynamic("className")(className)
     if (crossButtonClassName != null) __obj.updateDynamic("crossButtonClassName")(crossButtonClassName)
     if (crossClassName != null) __obj.updateDynamic("crossClassName")(crossClassName)
     if (customBurgerIcon != null) __obj.updateDynamic("customBurgerIcon")(customBurgerIcon.asInstanceOf[js.Any])
     if (customCrossIcon != null) __obj.updateDynamic("customCrossIcon")(customCrossIcon.asInstanceOf[js.Any])
     if (customOnKeyDown != null) __obj.updateDynamic("customOnKeyDown")(js.Any.fromFunction1(customOnKeyDown))
+    if (disableAutoFocus != null) __obj.updateDynamic("disableAutoFocus")(disableAutoFocus)
     if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc)
     if (!js.isUndefined(disableOverlayClick)) __obj.updateDynamic("disableOverlayClick")(disableOverlayClick)
     if (htmlClassName != null) __obj.updateDynamic("htmlClassName")(htmlClassName)

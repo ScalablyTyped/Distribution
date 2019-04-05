@@ -97,6 +97,8 @@ object ContainerProps {
     onAnimationIterationCapture: reactLib.reactMod.ReactNs.AnimationEventHandler[stdLib.HTMLDivElement] = null,
     onAnimationStart: reactLib.reactMod.ReactNs.AnimationEventHandler[stdLib.HTMLDivElement] = null,
     onAnimationStartCapture: reactLib.reactMod.ReactNs.AnimationEventHandler[stdLib.HTMLDivElement] = null,
+    onAuxClick: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] = null,
+    onAuxClickCapture: reactLib.reactMod.ReactNs.MouseEventHandler[stdLib.HTMLDivElement] = null,
     onBeforeInput: reactLib.reactMod.ReactNs.FormEventHandler[stdLib.HTMLDivElement] = null,
     onBeforeInputCapture: reactLib.reactMod.ReactNs.FormEventHandler[stdLib.HTMLDivElement] = null,
     onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[stdLib.HTMLDivElement] = null,
@@ -351,6 +353,8 @@ object ContainerProps {
     if (onAnimationIterationCapture != null) __obj.updateDynamic("onAnimationIterationCapture")(onAnimationIterationCapture)
     if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(onAnimationStart)
     if (onAnimationStartCapture != null) __obj.updateDynamic("onAnimationStartCapture")(onAnimationStartCapture)
+    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(onAuxClick)
+    if (onAuxClickCapture != null) __obj.updateDynamic("onAuxClickCapture")(onAuxClickCapture)
     if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(onBeforeInput)
     if (onBeforeInputCapture != null) __obj.updateDynamic("onBeforeInputCapture")(onBeforeInputCapture)
     if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)

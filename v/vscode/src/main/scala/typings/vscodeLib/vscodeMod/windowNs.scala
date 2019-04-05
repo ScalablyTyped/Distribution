@@ -32,6 +32,7 @@ object windowNs extends js.Object {
   def createTerminal(): vscodeLib.vscodeMod.Terminal = js.native
   def createTerminal(name: java.lang.String): vscodeLib.vscodeMod.Terminal = js.native
   def createTerminal(name: java.lang.String, shellPath: java.lang.String): vscodeLib.vscodeMod.Terminal = js.native
+  def createTerminal(name: java.lang.String, shellPath: java.lang.String, shellArgs: java.lang.String): vscodeLib.vscodeMod.Terminal = js.native
   def createTerminal(name: java.lang.String, shellPath: java.lang.String, shellArgs: js.Array[java.lang.String]): vscodeLib.vscodeMod.Terminal = js.native
   def createTerminal(options: vscodeLib.vscodeMod.TerminalOptions): vscodeLib.vscodeMod.Terminal = js.native
   def createTextEditorDecorationType(options: vscodeLib.vscodeMod.DecorationRenderOptions): vscodeLib.vscodeMod.TextEditorDecorationType = js.native

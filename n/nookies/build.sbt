@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nookies"
-version := "1.1-dt-20181019Z-843b8c"
+version := "1.1-dt-20181019Z-50d76b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,18 +9,18 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-6f800f",
   "org.scalablytyped" %%% "cookie" % "0.3-dt-20181113Z-c85bbb",
   "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
-  "org.scalablytyped" %%% "next" % "8.0-dt-20190318Z-41700d",
-  "org.scalablytyped" %%% "next-server" % "7.0-dt-20190220Z-faa518",
+  "org.scalablytyped" %%% "next" % "8.0-dt-20190318Z-0e2dbf",
+  "org.scalablytyped" %%% "next-server" % "7.0-dt-20190220Z-a6a381",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190319Z-2db1bb",
+  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190403Z-8a4c08",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190329Z-407a4c",
-  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20190131Z-fe6ab0",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-d8f967",
+  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20190131Z-47f136",
   "org.scalablytyped" %%% "source-map" % "0.7.3-1b6210",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-20a77d",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-c8c046",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190316Z-c230d0")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190403Z-85a7bc")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

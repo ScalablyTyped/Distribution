@@ -22,3 +22,11 @@ class Parser ()
   override def tok(): java.lang.String = js.native
 }
 
+/* static members */
+@JSImport("marked", "Parser")
+@js.native
+object Parser extends js.Object {
+  def parse(src: markedLib.markedMod.markedNs.TokensList): java.lang.String = js.native
+  def parse(src: markedLib.markedMod.markedNs.TokensList, options: markedLib.markedMod.markedNs.MarkedOptions): java.lang.String = js.native
+}
+

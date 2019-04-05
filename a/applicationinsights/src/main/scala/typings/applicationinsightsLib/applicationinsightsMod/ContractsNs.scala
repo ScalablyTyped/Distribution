@@ -112,11 +112,13 @@ object ContractsNs extends js.Object {
   class StackFrame ()
     extends applicationinsightsLib.outDeclarationsContractsMod.StackFrame
   
-  def baseTypeToTelemetryType(baseType: java.lang.String): applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType = js.native
+  def baseTypeToTelemetryType(
+    baseType: applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryTypeValues
+  ): applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType = js.native
   def domainSupportsProperties(domain: applicationinsightsLib.outDeclarationsContractsGeneratedMod.Domain): /* is applicationinsights.applicationinsights/out/Declarations/Contracts/Constants.ISupportProperties */ scala.Boolean = js.native
   def telemetryTypeToBaseType(
     `type`: applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType
-  ): java.lang.String = js.native
+  ): applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryTypeValues = js.native
   @js.native
   object DataPointType extends js.Object {
     /* 1 */ val Aggregation: applicationinsightsLib.outDeclarationsContractsGeneratedDataPointTypeMod.DataPointType.Aggregation with scala.Double = js.native
@@ -195,6 +197,12 @@ object ContractsNs extends js.Object {
         applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType with scala.Double
       ] = js.native
   }
+  
+  @js.native
+  object TelemetryTypeString
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[
+          applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryTypeValues
+        ]
   
   type DataPointType = applicationinsightsLib.outDeclarationsContractsGeneratedDataPointTypeMod.DataPointType
   type SeverityLevel = applicationinsightsLib.outDeclarationsContractsGeneratedSeverityLevelMod.SeverityLevel

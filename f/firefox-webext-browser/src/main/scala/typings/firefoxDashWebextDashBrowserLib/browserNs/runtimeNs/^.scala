@@ -220,9 +220,10 @@ object ^ extends js.Object {
   /**
     * Sets the URL to be visited upon uninstallation. This may be used to clean up server-side data, do analytics, and
     * implement surveys. Maximum 255 characters.
-    * @param url URL to be opened after the extension is uninstalled. This URL must have an http: or https: scheme.
+    * @param [url] URL to be opened after the extension is uninstalled. This URL must have an http: or https: scheme.
     *     Set an empty string to not open a new tab upon uninstallation.
     */
+  def setUninstallURL(): js.Promise[scala.Unit] = js.native
   def setUninstallURL(url: java.lang.String): js.Promise[scala.Unit] = js.native
 }
 

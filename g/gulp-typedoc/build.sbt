@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-typedoc"
-version := "2.2.2-3b2af3"
+version := "2.2.2-4e3ad0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "handlebars" % "4.1.1-069f77",
   "org.scalablytyped" %%% "highlight_dot_js" % "v9.12-dt-20190322Z-89b081",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
-  "org.scalablytyped" %%% "marked" % "0.6-dt-20190329Z-b908a7",
+  "org.scalablytyped" %%% "marked" % "0.6-dt-20190403Z-ce3324",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-e6c927",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "optimist" % "0.0-unknown-dt-20190322Z-87cc67",
@@ -23,7 +23,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "shelljs" % "0.8-dt-20190401Z-4d67ca",
   "org.scalablytyped" %%% "source-map" % "0.7.3-1b6210",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "typedoc" % "0.14.2-95a5ed",
+  "org.scalablytyped" %%% "typedoc" % "0.14.2-23a1a7",
   "org.scalablytyped" %%% "typescript" % "3.4.1-a42773")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

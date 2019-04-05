@@ -29,8 +29,7 @@ object nodeFetchNs extends js.Object {
   @js.native
   class Headers ()
     extends nodeDashFetchLib.nodeDashFetchMod.Headers {
-    def this(init: nodeDashFetchLib.nodeDashFetchMod.Headers) = this()
-    def this(init: org.scalablytyped.runtime.StringDictionary[java.lang.String]) = this()
+    def this(init: nodeDashFetchLib.nodeDashFetchMod.HeadersInit) = this()
   }
   
   @js.native

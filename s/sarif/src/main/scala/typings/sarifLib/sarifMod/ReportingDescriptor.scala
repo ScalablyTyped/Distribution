@@ -11,10 +11,19 @@ trait ReportingDescriptor extends js.Object {
     */
   var defaultConfiguration: js.UndefOr[ReportingConfiguration] = js.undefined
   /**
+    * An array of unique identifies in the form of a GUID by which this report was known in some previous version of
+    * the analysis tool.
+    */
+  var deprecatedGuids: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
     * An array of stable, opaque identifiers by which this report was known in some previous version of the analysis
     * tool.
     */
   var deprecatedIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
+    * An array of readable identifiers by which this report was known in some previous version of the analysis tool.
+    */
+  var deprecatedNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
     * A description of the report. Should, as far as possible, provide details sufficient to enable resolution of any
     * problem indicated by the result.
@@ -27,7 +36,7 @@ trait ReportingDescriptor extends js.Object {
   /**
     * Provides the primary documentation for the report, useful when there is no online documentation.
     */
-  var help: js.UndefOr[Message] = js.undefined
+  var help: js.UndefOr[MultiformatMessageString] = js.undefined
   /**
     * A URI where the primary documentation for the report can be found.
     */
@@ -50,7 +59,7 @@ trait ReportingDescriptor extends js.Object {
     * An array of references used to locate an optional set of taxonomy reporting descriptors that may be applied to a
     * result.
     */
-  var optionalTaxonomyReferences: js.UndefOr[js.Array[ReportingDescriptorReference]] = js.undefined
+  var optionalTaxa: js.UndefOr[js.Array[ReportingDescriptorReference]] = js.undefined
   /**
     * Key/value pairs that provide additional information about the report.
     */
@@ -64,29 +73,33 @@ trait ReportingDescriptor extends js.Object {
     * An array of references used to locate a set of taxonomy reporting descriptors that are always applicable to a
     * result.
     */
-  var taxonomyReferences: js.UndefOr[js.Array[ReportingDescriptorReference]] = js.undefined
+  var taxa: js.UndefOr[js.Array[ReportingDescriptorReference]] = js.undefined
 }
 
 object ReportingDescriptor {
   @scala.inline
   def apply(
     defaultConfiguration: ReportingConfiguration = null,
+    deprecatedGuids: js.Array[java.lang.String] = null,
     deprecatedIds: js.Array[java.lang.String] = null,
+    deprecatedNames: js.Array[java.lang.String] = null,
     fullDescription: MultiformatMessageString = null,
     guid: java.lang.String = null,
-    help: Message = null,
+    help: MultiformatMessageString = null,
     helpUri: java.lang.String = null,
     id: java.lang.String = null,
     messageStrings: org.scalablytyped.runtime.StringDictionary[MultiformatMessageString] = null,
     name: java.lang.String = null,
-    optionalTaxonomyReferences: js.Array[ReportingDescriptorReference] = null,
+    optionalTaxa: js.Array[ReportingDescriptorReference] = null,
     properties: PropertyBag = null,
     shortDescription: MultiformatMessageString = null,
-    taxonomyReferences: js.Array[ReportingDescriptorReference] = null
+    taxa: js.Array[ReportingDescriptorReference] = null
   ): ReportingDescriptor = {
     val __obj = js.Dynamic.literal()
     if (defaultConfiguration != null) __obj.updateDynamic("defaultConfiguration")(defaultConfiguration)
+    if (deprecatedGuids != null) __obj.updateDynamic("deprecatedGuids")(deprecatedGuids)
     if (deprecatedIds != null) __obj.updateDynamic("deprecatedIds")(deprecatedIds)
+    if (deprecatedNames != null) __obj.updateDynamic("deprecatedNames")(deprecatedNames)
     if (fullDescription != null) __obj.updateDynamic("fullDescription")(fullDescription)
     if (guid != null) __obj.updateDynamic("guid")(guid)
     if (help != null) __obj.updateDynamic("help")(help)
@@ -94,10 +107,10 @@ object ReportingDescriptor {
     if (id != null) __obj.updateDynamic("id")(id)
     if (messageStrings != null) __obj.updateDynamic("messageStrings")(messageStrings)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (optionalTaxonomyReferences != null) __obj.updateDynamic("optionalTaxonomyReferences")(optionalTaxonomyReferences)
+    if (optionalTaxa != null) __obj.updateDynamic("optionalTaxa")(optionalTaxa)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription)
-    if (taxonomyReferences != null) __obj.updateDynamic("taxonomyReferences")(taxonomyReferences)
+    if (taxa != null) __obj.updateDynamic("taxa")(taxa)
     __obj.asInstanceOf[ReportingDescriptor]
   }
 }

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 trait Cookie extends js.Object {
   // Docs: http://electronjs.org/docs/api/structures/cookie
   /**
-    * The domain of the cookie.
+    * The domain of the cookie; this will be normalized with a preceding dot so that
+    * it's also valid for subdomains.
     */
   var domain: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -17,7 +18,8 @@ trait Cookie extends js.Object {
     */
   var expirationDate: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Whether the cookie is a host-only cookie.
+    * Whether the cookie is a host-only cookie; this will only be true if no domain
+    * was passed.
     */
   var hostOnly: js.UndefOr[scala.Boolean] = js.undefined
   /**
