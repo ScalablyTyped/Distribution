@@ -1,14 +1,12 @@
 organization := "org.scalablytyped"
 name := "bs58"
-version := "4.0-dt-20181225Z-232c4e"
+version := "4.0-dt-20181225Z-f8d3ea"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "base-x" % "3.0-dt-20181224Z-50f4ff",
-  "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-a816e1",
-  "org.scalablytyped" %%% "buffer" % "5.2.1-12d75b",
+  "org.scalablytyped" %%% "base-x" % "3.0-dt-20181224Z-834c2a",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false

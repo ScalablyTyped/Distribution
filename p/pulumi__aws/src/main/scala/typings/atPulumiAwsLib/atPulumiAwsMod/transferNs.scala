@@ -51,6 +51,11 @@ object transferNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.transferUserMod.UserArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  def getServer(args: atPulumiAwsLib.transferGetServerMod.GetServerArgs): js.Promise[atPulumiAwsLib.transferGetServerMod.GetServerResult] = js.native
+  def getServer(
+    args: atPulumiAwsLib.transferGetServerMod.GetServerArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[atPulumiAwsLib.transferGetServerMod.GetServerResult] = js.native
   /* static members */
   @js.native
   object Server extends js.Object {

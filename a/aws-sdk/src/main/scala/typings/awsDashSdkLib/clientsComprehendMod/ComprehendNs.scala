@@ -255,7 +255,11 @@ object ComprehendNs extends js.Object {
       */
     var LanguageCode: awsDashSdkLib.clientsComprehendMod.ComprehendNs.LanguageCode
     /**
-      * Tags to be associated with the document classifier being created. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with the key-value pair ‘Department’:’Sales’ might be added to a resource to indicate its use by a particular department. 
+      * Enables the addition of output results configuration parameters for custom classifier jobs.
+      */
+    var OutputDataConfig: js.UndefOr[DocumentClassifierOutputDataConfig] = js.undefined
+    /**
+      * Tags to be associated with the document classifier being created. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department. 
       */
     var Tags: js.UndefOr[TagList] = js.undefined
     /**
@@ -293,7 +297,7 @@ object ComprehendNs extends js.Object {
       */
     var RecognizerName: ComprehendArnName
     /**
-      * Tags to be associated with the entity recognizer being created. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with the key-value pair ‘Department’:’Sales’ might be added to a resource to indicate its use by a particular department. 
+      * Tags to be associated with the entity recognizer being created. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department. 
       */
     var Tags: js.UndefOr[TagList] = js.undefined
     /**
@@ -617,6 +621,17 @@ object ComprehendNs extends js.Object {
     var S3Uri: awsDashSdkLib.clientsComprehendMod.ComprehendNs.S3Uri
   }
   
+  trait DocumentClassifierOutputDataConfig extends js.Object {
+    /**
+      * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt the output results from an analysis job. The KmsKeyId can be one of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"    KMS Key Alias: "alias/ExampleAlias"    ARN of a KMS Key Alias: "arn:aws:kms:us-west-2:111122223333:alias/ExampleAlias"   
+      */
+    var KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
+    /**
+      * When you use the OutputDataConfig object while creating a custom classifier, you specify the Amazon S3 location where you want to write the confusion matrix. The URI must be in the same region as the API endpoint that you are calling. The location is used as the prefix for the actual location of this output file. When the custom classifier job is finished, the service creates the output file in a directory specific to the job. The S3Uri field contains the location of the output file, called output.tar.gz. It is a compressed archive that contains the confusion matrix.
+      */
+    var S3Uri: js.UndefOr[S3Uri] = js.undefined
+  }
+  
   trait DocumentClassifierProperties extends js.Object {
     /**
       * Information about the document classifier, including the number of documents used for training the classifier, the number of documents used for test the classifier, and an accuracy rating.
@@ -646,6 +661,10 @@ object ComprehendNs extends js.Object {
       * Additional information about the status of the classifier.
       */
     var Message: js.UndefOr[AnyLengthString] = js.undefined
+    /**
+      *  Provides output results configuration parameters for custom classifier jobs.
+      */
+    var OutputDataConfig: js.UndefOr[DocumentClassifierOutputDataConfig] = js.undefined
     /**
       * The status of the document classifier. If the status is TRAINED the classifier is ready to use. If the status is FAILED you can see additional information about why the classifier wasn't trained in the Message field.
       */
@@ -1279,7 +1298,7 @@ object ComprehendNs extends js.Object {
       */
     var ResourceArn: js.UndefOr[ComprehendArn] = js.undefined
     /**
-      * Tags associated with the Amazon Comprehend resource being queried. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with the key-value pair ‘Department’:’Sales’ might be added to a resource to indicate its use by a particular department. 
+      * Tags associated with the Amazon Comprehend resource being queried. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department. 
       */
     var Tags: js.UndefOr[TagList] = js.undefined
   }
@@ -1799,7 +1818,7 @@ object ComprehendNs extends js.Object {
       */
     var ResourceArn: ComprehendArn
     /**
-      * Tags being associated with a specific Amazon Comprehend resource. 
+      * Tags being associated with a specific Amazon Comprehend resource. There can be a maximum of 50 tags (both existing and pending) associated with a specific resource. 
       */
     var Tags: TagList
   }
@@ -2545,7 +2564,7 @@ object ComprehendNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListSentimentDetectionJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists all tags associated with a given Amazon Comprehend resource. Up to the maximum number of tags allowed per resource will be displayed. 
+      * Lists all tags associated with a given Amazon Comprehend resource. 
       */
     def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listTagsForResource(
@@ -2556,7 +2575,7 @@ object ComprehendNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists all tags associated with a given Amazon Comprehend resource. Up to the maximum number of tags allowed per resource will be displayed. 
+      * Lists all tags associated with a given Amazon Comprehend resource. 
       */
     def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listTagsForResource(
@@ -2867,7 +2886,7 @@ object ComprehendNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopTrainingEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Associates a specific tag with an Amazon Comprehend resource. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with the key-value pair ‘Department’:’Sales’ might be added to a resource to indicate its use by a particular department. 
+      * Associates a specific tag with an Amazon Comprehend resource. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department. 
       */
     def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def tagResource(
@@ -2878,7 +2897,7 @@ object ComprehendNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Associates a specific tag with an Amazon Comprehend resource. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with the key-value pair ‘Department’:’Sales’ might be added to a resource to indicate its use by a particular department. 
+      * Associates a specific tag with an Amazon Comprehend resource. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department. 
       */
     def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def tagResource(
@@ -2920,7 +2939,7 @@ object ComprehendNs extends js.Object {
       */
     var ResourceArn: ComprehendArn
     /**
-      * The initial part of a key-value pair that forms a tag being removed from a given resource. For instance, “Department” might be used as the key portion of the pair, with multiple values such as “sales,” “legal,” and “administration.” 
+      * The initial part of a key-value pair that forms a tag being removed from a given resource. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department. Keys must be unique and cannot be duplicated for a particular resource. 
       */
     var TagKeys: TagKeyList
   }

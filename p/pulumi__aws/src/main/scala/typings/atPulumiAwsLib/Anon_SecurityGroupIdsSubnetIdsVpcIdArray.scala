@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_SecurityGroupIdsSubnetIdsVpcIdArray extends js.Object {
-  var securityGroupIds: js.Array[java.lang.String]
-  var subnetIds: js.Array[java.lang.String]
-  var vpcId: java.lang.String
+  var securityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
+  var subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
+  var vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
 object Anon_SecurityGroupIdsSubnetIdsVpcIdArray {
   @scala.inline
   def apply(
-    securityGroupIds: js.Array[java.lang.String],
-    subnetIds: js.Array[java.lang.String],
-    vpcId: java.lang.String
+    securityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
+    subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   ): Anon_SecurityGroupIdsSubnetIdsVpcIdArray = {
-    val __obj = js.Dynamic.literal(securityGroupIds = securityGroupIds, subnetIds = subnetIds, vpcId = vpcId)
+    val __obj = js.Dynamic.literal(securityGroupIds = securityGroupIds.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any], vpcId = vpcId.asInstanceOf[js.Any])
   
     __obj.asInstanceOf[Anon_SecurityGroupIdsSubnetIdsVpcIdArray]
   }

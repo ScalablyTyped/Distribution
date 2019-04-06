@@ -46,9 +46,9 @@ class Deployment protected ()
     */
   val stageDescription: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
-    * The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment. Use `""` to point at the default stage.
+    * The name of the stage. If the specified stage already exists, it will be updated to point to the new deployment. If the stage does not exist, a new one will be created and point to this deployment.
     */
-  val stageName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  val stageName: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A map that defines variables for the stage
     */

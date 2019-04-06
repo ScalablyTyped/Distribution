@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PrincipalAssociationArgs extends js.Object {
   /**
-    * The principal to associate with the resource share. Possible values are an AWS account ID, an AWS Organizations Organization ID, or an AWS Organizations Organization Unit ID.
+    * The principal to associate with the resource share. Possible values are an AWS account ID, an AWS Organizations Organization ARN, or an AWS Organizations Organization Unit ARN.
     */
   val principal: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**

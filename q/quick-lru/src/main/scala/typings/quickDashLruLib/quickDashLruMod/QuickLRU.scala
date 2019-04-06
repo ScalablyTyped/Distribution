@@ -10,44 +10,48 @@ trait QuickLRU[KeyType /* <: js.Any */, ValueType /* <: js.Any */]
   @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator_QuickLRU: js.Function0[stdLib.IterableIterator[js.Tuple2[KeyType, ValueType]]]
   /**
-  	The stored item count.
-  	*/
+  	 * The stored item count.
+  	 */
   val size: scala.Double
   /**
-  	Delete all items.
-  	*/
+  	 * Delete all items.
+  	 */
   def clear(): scala.Unit
   /**
-  	Delete an item.
-  	@returns `true` if the item is removed or `false` if the item doesn't exist.
-  	*/
+  	 * Delete an item.
+  	 *
+  	 * @returns `true` if the item is removed or `false` if the item doesn't exist.
+  	 */
   def delete(key: KeyType): scala.Boolean
   /**
-  	Get an item.
-  	@returns The stored item or `undefined`.
-  	*/
+  	 * Get an item.
+  	 *
+  	 * @returns The stored item or `undefined`.
+  	 */
   def get(key: KeyType): js.UndefOr[ValueType]
   /**
-  	Check if an item exists.
-  	*/
+  	 * Check if an item exists.
+  	 */
   def has(key: KeyType): scala.Boolean
   /**
-  	Iterable for all the keys.
-  	*/
+  	 * Iterable for all the keys.
+  	 */
   def keys(): stdLib.IterableIterator[KeyType]
   /**
-  	Get an item without marking it as recently used.
-  	@returns The stored item or `undefined`.
-  	*/
+  	 * Get an item without marking it as recently used.
+  	 *
+  	 * @returns The stored item or `undefined`.
+  	 */
   def peek(key: KeyType): js.UndefOr[ValueType]
   /**
-  	Set an item.
-  	@returns The list instance.
-  	*/
+  	 * Set an item.
+  	 *
+  	 * @returns The list instance.
+  	 */
   def set(key: KeyType, value: ValueType): this.type
   /**
-  	Iterable for all the values.
-  	*/
+  	 * Iterable for all the values.
+  	 */
   def values(): stdLib.IterableIterator[ValueType]
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_SecurityGroupIdsSubnetIds extends js.Object {
-  var securityGroupIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var securityGroupIds: js.Array[java.lang.String]
   var subnetIds: js.Array[java.lang.String]
   var vpcId: java.lang.String
 }
@@ -14,12 +14,12 @@ trait Anon_SecurityGroupIdsSubnetIds extends js.Object {
 object Anon_SecurityGroupIdsSubnetIds {
   @scala.inline
   def apply(
+    securityGroupIds: js.Array[java.lang.String],
     subnetIds: js.Array[java.lang.String],
-    vpcId: java.lang.String,
-    securityGroupIds: js.Array[java.lang.String] = null
+    vpcId: java.lang.String
   ): Anon_SecurityGroupIdsSubnetIds = {
-    val __obj = js.Dynamic.literal(subnetIds = subnetIds, vpcId = vpcId)
-    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds)
+    val __obj = js.Dynamic.literal(securityGroupIds = securityGroupIds, subnetIds = subnetIds, vpcId = vpcId)
+  
     __obj.asInstanceOf[Anon_SecurityGroupIdsSubnetIds]
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "browser-sync"
-version := "0.0-unknown-dt-20190322Z-4aa79c"
+version := "0.0-unknown-dt-20190322Z-1d08f6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,9 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-6f800f",
   "org.scalablytyped" %%% "braces" % "2.3-dt-20180214Z-306649",
-  "org.scalablytyped" %%% "chokidar" % "2.1.5-789d6a",
+  "org.scalablytyped" %%% "chokidar" % "2.1.5-6fb4b0",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-c31b2e",
+  "org.scalablytyped" %%% "fsevents" % "1.1-dt-20180214Z-e93f50",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20190329Z-819655",
   "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-75670b",
   "org.scalablytyped" %%% "is-binary-path" % "2.0-dt-20180214Z-900f29",

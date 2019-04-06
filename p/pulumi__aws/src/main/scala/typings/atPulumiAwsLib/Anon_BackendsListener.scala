@@ -7,18 +7,26 @@ import scala.scalajs.js.annotation._
 
 trait Anon_BackendsListener extends js.Object {
   var backends: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
+    atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[Anon_VirtualServiceAnonVirtualServiceNameInput]
+      ]
+    ]
   ] = js.undefined
   var listener: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Anon_HealthCheckPortMapping]] = js.undefined
-  var serviceDiscovery: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Anon_DnsAnonServiceNameInput]] = js.undefined
+  var serviceDiscovery: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Anon_DnsAnonHostnameInput]] = js.undefined
 }
 
 object Anon_BackendsListener {
   @scala.inline
   def apply(
-    backends: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    backends: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[Anon_VirtualServiceAnonVirtualServiceNameInput]
+      ]
+    ] = null,
     listener: atPulumiPulumiLib.outputMod.Input[Anon_HealthCheckPortMapping] = null,
-    serviceDiscovery: atPulumiPulumiLib.outputMod.Input[Anon_DnsAnonServiceNameInput] = null
+    serviceDiscovery: atPulumiPulumiLib.outputMod.Input[Anon_DnsAnonHostnameInput] = null
   ): Anon_BackendsListener = {
     val __obj = js.Dynamic.literal()
     if (backends != null) __obj.updateDynamic("backends")(backends.asInstanceOf[js.Any])

@@ -88,6 +88,7 @@ object RegisterOptions {
       ]
     ]) = null,
     prefix: java.lang.String = null,
+    prefixTrailingSlash: fastifyLib.fastifyLibStrings.slash | fastifyLib.fastifyLibStrings.`no-slash` | fastifyLib.fastifyLibStrings.both = null,
     schema: RouteSchema = null,
     schemaCompiler: SchemaCompiler = null
   ): RegisterOptions[HttpServer, HttpRequest, HttpResponse] = {
@@ -101,6 +102,7 @@ object RegisterOptions {
     if (preSerialization != null) __obj.updateDynamic("preSerialization")(preSerialization.asInstanceOf[js.Any])
     if (preValidation != null) __obj.updateDynamic("preValidation")(preValidation.asInstanceOf[js.Any])
     if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (prefixTrailingSlash != null) __obj.updateDynamic("prefixTrailingSlash")(prefixTrailingSlash.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema)
     if (schemaCompiler != null) __obj.updateDynamic("schemaCompiler")(schemaCompiler)
     __obj.asInstanceOf[RegisterOptions[HttpServer, HttpRequest, HttpResponse]]

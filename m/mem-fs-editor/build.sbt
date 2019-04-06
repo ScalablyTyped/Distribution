@@ -1,13 +1,11 @@
 organization := "org.scalablytyped"
 name := "mem-fs-editor"
-version := "5.1-dt-20190217Z-f6c108"
+version := "5.1-dt-20190217Z-a08d1a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-a816e1",
-  "org.scalablytyped" %%% "buffer" % "5.2.1-12d75b",
   "org.scalablytyped" %%% "ejs" % "2.6-dt-20190223Z-2916f6",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ce8e08",
   "org.scalablytyped" %%% "mem-fs" % "1.1-dt-20181203Z-8d90ce",

@@ -124,7 +124,7 @@ class Function protected ()
   /**
     * Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
     */
-  val vpcConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray]] = js.native
+  val vpcConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIds]] = js.native
 }
 
 /* static members */

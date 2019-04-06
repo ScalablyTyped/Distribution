@@ -32,7 +32,7 @@ object ^ extends js.Object {
   {[ key in KeyType ]: std.PromiseLike<ValueType> | ValueType}
     */ pDashPropsLib.pDashPropsLibStrings.default with js.Any,
     mapper: Mapper[ValueType, KeyType, MappedValueType],
-    options: pDashMapLib.pDashMapMod.Options
+    options: pDashMapLib.pDashMapMod.pMapNs.Options
   ): js.Promise[
     /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ key in KeyType ]: MappedValueType}
@@ -46,7 +46,7 @@ object ^ extends js.Object {
   def default[KeyType /* <: js.Any */, ValueType /* <: js.Any */, MappedValueType](
     input: stdLib.Map[KeyType, js.Thenable[ValueType] | ValueType],
     mapper: Mapper[ValueType, KeyType, MappedValueType],
-    options: pDashMapLib.pDashMapMod.Options
+    options: pDashMapLib.pDashMapMod.pMapNs.Options
   ): js.Promise[stdLib.Map[KeyType, MappedValueType]] = js.native
 }
 

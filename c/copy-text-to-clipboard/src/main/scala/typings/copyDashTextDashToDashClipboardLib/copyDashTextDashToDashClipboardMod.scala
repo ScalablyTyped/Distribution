@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("copy-text-to-clipboard", JSImport.Namespace)
 @js.native
-object copyDashTextDashToDashClipboardMod extends js.Object {
-  def default(text: java.lang.String): scala.Boolean = js.native
-}
+object copyDashTextDashToDashClipboardMod
+  extends org.scalablytyped.runtime.TopLevel[Anon_DefaultText]
 

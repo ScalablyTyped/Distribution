@@ -35,6 +35,9 @@ object fastifyLibStrings {
     extends fastifyLib.fastifyMod.fastifyNs.HTTPMethod
   
   @js.native
+  sealed trait both extends js.Object
+  
+  @js.native
   sealed trait buffer extends js.Object
   
   @js.native
@@ -42,6 +45,9 @@ object fastifyLibStrings {
   
   @js.native
   sealed trait ignore extends js.Object
+  
+  @js.native
+  sealed trait `no-slash` extends js.Object
   
   @js.native
   sealed trait onClose extends js.Object
@@ -80,6 +86,9 @@ object fastifyLibStrings {
   sealed trait remove extends js.Object
   
   @js.native
+  sealed trait slash extends js.Object
+  
+  @js.native
   sealed trait string extends js.Object
   
   @scala.inline
@@ -97,11 +106,15 @@ object fastifyLibStrings {
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   @scala.inline
+  def both: both = "both".asInstanceOf[both]
+  @scala.inline
   def buffer: buffer = "buffer".asInstanceOf[buffer]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
+  @scala.inline
+  def `no-slash`: `no-slash` = "no-slash".asInstanceOf[`no-slash`]
   @scala.inline
   def onClose: onClose = "onClose".asInstanceOf[onClose]
   @scala.inline
@@ -126,6 +139,8 @@ object fastifyLibStrings {
   def preValidation: preValidation = "preValidation".asInstanceOf[preValidation]
   @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
+  @scala.inline
+  def slash: slash = "slash".asInstanceOf[slash]
   @scala.inline
   def string: string = "string".asInstanceOf[string]
 }

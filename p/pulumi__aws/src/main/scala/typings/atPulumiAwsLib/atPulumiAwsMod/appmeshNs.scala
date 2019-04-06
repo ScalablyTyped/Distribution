@@ -65,6 +65,20 @@ object appmeshNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.appmeshVirtualRouterMod.VirtualRouterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  @js.native
+  class VirtualService protected ()
+    extends atPulumiAwsLib.appmeshMod.VirtualService {
+    /**
+      * Create a VirtualService resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: java.lang.String, args: atPulumiAwsLib.appmeshVirtualServiceMod.VirtualServiceArgs) = this()
+    def this(name: java.lang.String, args: atPulumiAwsLib.appmeshVirtualServiceMod.VirtualServiceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  }
+  
   /* static members */
   @js.native
   object Mesh extends js.Object {
@@ -163,6 +177,31 @@ object appmeshNs extends js.Object {
       state: atPulumiAwsLib.appmeshVirtualRouterMod.VirtualRouterState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.appmeshVirtualRouterMod.VirtualRouter = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object VirtualService extends js.Object {
+    /**
+      * Get an existing VirtualService resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
+      *
+      * @param name The _unique_ name of the resulting resource.
+      * @param id The _unique_ provider ID of the resource to lookup.
+      * @param state Any extra arguments used during the lookup.
+      */
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.appmeshVirtualServiceMod.VirtualService = js.native
+    def get(
+      name: java.lang.String,
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      state: atPulumiAwsLib.appmeshVirtualServiceMod.VirtualServiceState
+    ): atPulumiAwsLib.appmeshVirtualServiceMod.VirtualService = js.native
+    def get(
+      name: java.lang.String,
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      state: atPulumiAwsLib.appmeshVirtualServiceMod.VirtualServiceState,
+      opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+    ): atPulumiAwsLib.appmeshVirtualServiceMod.VirtualService = js.native
   }
   
 }

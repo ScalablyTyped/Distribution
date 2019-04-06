@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FastifyInstance[HttpServer, HttpRequest, HttpResponse] extends js.Object {
   var log: Logger = js.native
+  @JSName("schemaCompiler")
+  var schemaCompiler_Original: SchemaCompiler = js.native
   var server: HttpServer = js.native
   def addContentTypeParser(
     contentType: java.lang.String,
@@ -486,6 +488,7 @@ trait FastifyInstance[HttpServer, HttpRequest, HttpResponse] extends js.Object {
     * Adds a route to the server
     */
   def route[Query, Params, Headers, Body](opts: RouteOptions[HttpServer, HttpRequest, HttpResponse, Query, Params, Headers, Body]): FastifyInstance[HttpServer, HttpRequest, HttpResponse] = js.native
+  def schemaCompiler(schema: js.Object): js.Function = js.native
   /**
     * Set a function that will be called whenever an error happens
     */

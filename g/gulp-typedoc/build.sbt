@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-typedoc"
-version := "2.2.2-4e3ad0"
+version := "2.2.2-2c9a79"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fancy-log" % "1.3-dt-20190212Z-0a41ad",
   "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-a8786c",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ce8e08",
-  "org.scalablytyped" %%% "handlebars" % "4.1.1-069f77",
+  "org.scalablytyped" %%% "handlebars" % "4.1.1-62caff",
   "org.scalablytyped" %%% "highlight_dot_js" % "v9.12-dt-20190322Z-89b081",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "marked" % "0.6-dt-20190403Z-ce3324",
@@ -23,8 +23,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "shelljs" % "0.8-dt-20190401Z-4d67ca",
   "org.scalablytyped" %%% "source-map" % "0.7.3-1b6210",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "typedoc" % "0.14.2-23a1a7",
-  "org.scalablytyped" %%% "typescript" % "3.4.1-a42773")
+  "org.scalablytyped" %%% "typedoc" % "0.14.2-d1ea10",
+  "org.scalablytyped" %%% "typescript" % "3.4.2-a42773",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-c8c046")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

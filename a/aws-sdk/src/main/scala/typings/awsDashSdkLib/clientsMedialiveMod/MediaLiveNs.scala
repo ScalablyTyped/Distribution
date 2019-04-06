@@ -504,6 +504,10 @@ object MediaLiveNs extends js.Object {
       */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
+      * The class for this channel. STANDARD for a channel with two pipelines or SINGLE_PIPELINE for a channel with one pipeline.
+      */
+    var ChannelClass: js.UndefOr[ChannelClass] = js.undefined
+    /**
       * A list of destinations of the channel. For UDP outputs, there is one
     destination per output. For other types (HLS, for example), there is
     one destination per packager.
@@ -559,6 +563,10 @@ object MediaLiveNs extends js.Object {
       */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
+      * The class for this channel. STANDARD for a channel with two pipelines or SINGLE_PIPELINE for a channel with one pipeline.
+      */
+    var ChannelClass: js.UndefOr[ChannelClass] = js.undefined
+    /**
       * A list of destinations of the channel. For UDP outputs, there is one
     destination per output. For other types (HLS, for example), there is
     one destination per packager.
@@ -608,6 +616,10 @@ object MediaLiveNs extends js.Object {
   }
   
   trait CreateChannelRequest extends js.Object {
+    /**
+      * The class for this channel. STANDARD for a channel with two pipelines or SINGLE_PIPELINE for a channel with one pipeline.
+      */
+    var ChannelClass: js.UndefOr[ChannelClass] = js.undefined
     var Destinations: js.UndefOr[__listOfOutputDestination] = js.undefined
     var EncoderSettings: js.UndefOr[EncoderSettings] = js.undefined
     /**
@@ -727,6 +739,10 @@ object MediaLiveNs extends js.Object {
       * The unique arn of the channel.
       */
     var Arn: js.UndefOr[__string] = js.undefined
+    /**
+      * The class for this channel. STANDARD for a channel with two pipelines or SINGLE_PIPELINE for a channel with one pipeline.
+      */
+    var ChannelClass: js.UndefOr[ChannelClass] = js.undefined
     /**
       * A list of destinations of the channel. For UDP outputs, there is one
     destination per output. For other types (HLS, for example), there is
@@ -861,6 +877,10 @@ object MediaLiveNs extends js.Object {
       */
     var State: js.UndefOr[ReservationState] = js.undefined
     /**
+      * A collection of key-value pairs
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
+    /**
       * Recurring usage charge for each reserved resource, e.g. '157.0'
       */
     var UsagePrice: js.UndefOr[__double] = js.undefined
@@ -886,6 +906,10 @@ object MediaLiveNs extends js.Object {
       * The unique arn of the channel.
       */
     var Arn: js.UndefOr[__string] = js.undefined
+    /**
+      * The class for this channel. STANDARD for a channel with two pipelines or SINGLE_PIPELINE for a channel with one pipeline.
+      */
+    var ChannelClass: js.UndefOr[ChannelClass] = js.undefined
     /**
       * A list of destinations of the channel. For UDP outputs, there is one
     destination per output. For other types (HLS, for example), there is
@@ -953,6 +977,11 @@ object MediaLiveNs extends js.Object {
       * The generated ID of the input (unique for user account, immutable).
       */
     var Id: js.UndefOr[__string] = js.undefined
+    /**
+      * STANDARD - MediaLive expects two sources to be connected to this input. If the channel is also STANDARD, both sources will be ingested. If the channel is SINGLE_PIPELINE, only the first source will be ingested; the second source will always be ignored, even if the first source fails.
+    SINGLE_PIPELINE - You can connect only one source to this input. If the ChannelClass is also  SINGLE_PIPELINE, this value is valid. If the ChannelClass is STANDARD, this value is not valid because the channel requires two sources in the input.
+      */
+    var InputClass: js.UndefOr[InputClass] = js.undefined
     /**
       * A list of MediaConnect Flows for this input.
       */
@@ -1141,6 +1170,10 @@ object MediaLiveNs extends js.Object {
       * Current state of reservation, e.g. 'ACTIVE'
       */
     var State: js.UndefOr[ReservationState] = js.undefined
+    /**
+      * A collection of key-value pairs
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
     /**
       * Recurring usage charge for each reserved resource, e.g. '157.0'
       */
@@ -1998,6 +2031,11 @@ object MediaLiveNs extends js.Object {
       */
     var Id: js.UndefOr[__string] = js.undefined
     /**
+      * STANDARD - MediaLive expects two sources to be connected to this input. If the channel is also STANDARD, both sources will be ingested. If the channel is SINGLE_PIPELINE, only the first source will be ingested; the second source will always be ignored, even if the first source fails.
+    SINGLE_PIPELINE - You can connect only one source to this input. If the ChannelClass is also  SINGLE_PIPELINE, this value is valid. If the ChannelClass is STANDARD, this value is not valid because the channel requires two sources in the input.
+      */
+    var InputClass: js.UndefOr[InputClass] = js.undefined
+    /**
       * A list of MediaConnect Flows for this input.
       */
     var MediaConnectFlows: js.UndefOr[__listOfMediaConnectFlow] = js.undefined
@@ -2315,6 +2353,10 @@ object MediaLiveNs extends js.Object {
   
   trait ListOfferingsRequest extends js.Object {
     /**
+      * Filter by channel class, 'STANDARD' or 'SINGLE_PIPELINE'
+      */
+    var ChannelClass: js.UndefOr[__string] = js.undefined
+    /**
       * Filter to offerings that match the configuration of an existing channel, e.g. '2345678' (a channel ID)
       */
     var ChannelConfiguration: js.UndefOr[__string] = js.undefined
@@ -2362,6 +2404,10 @@ object MediaLiveNs extends js.Object {
   }
   
   trait ListReservationsRequest extends js.Object {
+    /**
+      * Filter by channel class, 'STANDARD' or 'SINGLE_PIPELINE'
+      */
+    var ChannelClass: js.UndefOr[__string] = js.undefined
     /**
       * Filter by codec, 'AVC', 'HEVC', 'MPEG2', or 'AUDIO'
       */
@@ -2992,6 +3038,10 @@ object MediaLiveNs extends js.Object {
       * Requested reservation start time (UTC) in ISO-8601 format. The specified time must be between the first day of the current month and one year from now. If no value is given, the default is now.
       */
     var Start: js.UndefOr[__string] = js.undefined
+    /**
+      * A collection of key-value pairs
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait PurchaseOfferingResponse extends js.Object {
@@ -3080,12 +3130,20 @@ object MediaLiveNs extends js.Object {
       */
     var State: js.UndefOr[ReservationState] = js.undefined
     /**
+      * A collection of key-value pairs
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
+    /**
       * Recurring usage charge for each reserved resource, e.g. '157.0'
       */
     var UsagePrice: js.UndefOr[__double] = js.undefined
   }
   
   trait ReservationResourceSpecification extends js.Object {
+    /**
+      * Channel class, e.g. 'STANDARD'
+      */
+    var ChannelClass: js.UndefOr[ChannelClass] = js.undefined
     /**
       * Codec, e.g. 'AVC'
       */
@@ -3411,6 +3469,10 @@ object MediaLiveNs extends js.Object {
       */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
+      * The class for this channel. STANDARD for a channel with two pipelines or SINGLE_PIPELINE for a channel with one pipeline.
+      */
+    var ChannelClass: js.UndefOr[ChannelClass] = js.undefined
+    /**
       * A list of destinations of the channel. For UDP outputs, there is one
     destination per output. For other types (HLS, for example), there is
     one destination per packager.
@@ -3530,6 +3592,10 @@ object MediaLiveNs extends js.Object {
       * The unique arn of the channel.
       */
     var Arn: js.UndefOr[__string] = js.undefined
+    /**
+      * The class for this channel. STANDARD for a channel with two pipelines or SINGLE_PIPELINE for a channel with one pipeline.
+      */
+    var ChannelClass: js.UndefOr[ChannelClass] = js.undefined
     /**
       * A list of destinations of the channel. For UDP outputs, there is one
     destination per output. For other types (HLS, for example), there is
@@ -4239,6 +4305,29 @@ object MediaLiveNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Update reservation.
+      */
+    def updateReservation(): awsDashSdkLib.libRequestMod.Request[UpdateReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateReservation(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateReservationResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Update reservation.
+      */
+    def updateReservation(params: UpdateReservationRequest): awsDashSdkLib.libRequestMod.Request[UpdateReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateReservation(
+      params: UpdateReservationRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateReservationResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
   trait UdpContainerSettings extends js.Object {
@@ -4370,6 +4459,21 @@ object MediaLiveNs extends js.Object {
     var SecurityGroup: js.UndefOr[InputSecurityGroup] = js.undefined
   }
   
+  trait UpdateReservationRequest extends js.Object {
+    /**
+      * Name of the reservation
+      */
+    var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * Unique reservation ID, e.g. '1234567'
+      */
+    var ReservationId: __string
+  }
+  
+  trait UpdateReservationResponse extends js.Object {
+    var Reservation: js.UndefOr[Reservation] = js.undefined
+  }
+  
   trait VideoCodecSettings extends js.Object {
     var FrameCaptureSettings: js.UndefOr[FrameCaptureSettings] = js.undefined
     var H264Settings: js.UndefOr[H264Settings] = js.undefined
@@ -4499,6 +4603,8 @@ object MediaLiveNs extends js.Object {
   trait _BurnInShadowColor extends js.Object
   
   trait _BurnInTeletextGridControl extends js.Object
+  
+  trait _ChannelClass extends js.Object
   
   trait _ChannelState extends js.Object
   
@@ -4641,6 +4747,8 @@ object MediaLiveNs extends js.Object {
   trait _HlsWebdavHttpTransferMode extends js.Object
   
   trait _IFrameOnlyPlaylistType extends js.Object
+  
+  trait _InputClass extends js.Object
   
   trait _InputCodec extends js.Object
   
@@ -5002,6 +5110,12 @@ object MediaLiveNs extends js.Object {
     - java.lang.String
   */
   type BurnInTeletextGridControl = _BurnInTeletextGridControl | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.STANDARD
+    - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PIPELINE
+    - java.lang.String
+  */
+  type ChannelClass = _ChannelClass | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.CREATING
     - awsDashSdkLib.awsDashSdkLibStrings.CREATE_FAILED
@@ -5503,6 +5617,12 @@ object MediaLiveNs extends js.Object {
     - java.lang.String
   */
   type IFrameOnlyPlaylistType = _IFrameOnlyPlaylistType | java.lang.String
+  /* Rewritten from type alias, can be one of: 
+    - awsDashSdkLib.awsDashSdkLibStrings.STANDARD
+    - awsDashSdkLib.awsDashSdkLibStrings.SINGLE_PIPELINE
+    - java.lang.String
+  */
+  type InputClass = _InputClass | java.lang.String
   /* Rewritten from type alias, can be one of: 
     - awsDashSdkLib.awsDashSdkLibStrings.MPEG2
     - awsDashSdkLib.awsDashSdkLibStrings.AVC

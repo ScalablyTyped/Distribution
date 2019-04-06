@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p-series", JSImport.Namespace)
 @js.native
-object pDashSeriesMod extends js.Object {
-  def default[ValueType](tasks: stdLib.Iterable[js.Function0[js.Promise[ValueType] | ValueType]]): js.Promise[js.Array[ValueType]] = js.native
-}
+object pDashSeriesMod
+  extends org.scalablytyped.runtime.TopLevel[Anon_DefaultTasks]
 

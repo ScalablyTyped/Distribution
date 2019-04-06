@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fork-ts-checker-webpack-plugin"
-version := "1.0.1-47fb70"
+version := "1.0.1-26ebc0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,9 +11,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel-code-frame" % "6.20-dt-20190212Z-68f577",
   "org.scalablytyped" %%% "braces" % "2.3-dt-20180214Z-306649",
   "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
-  "org.scalablytyped" %%% "chokidar" % "2.1.5-789d6a",
+  "org.scalablytyped" %%% "chokidar" % "2.1.5-6fb4b0",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
+  "org.scalablytyped" %%% "fsevents" % "1.1-dt-20180214Z-e93f50",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20190329Z-819655",
   "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-75670b",
   "org.scalablytyped" %%% "is-binary-path" % "2.0-dt-20180214Z-900f29",

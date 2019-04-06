@@ -9043,6 +9043,14 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsWafMod.WAFNs._GeoMatchConstraintValue
   
   @js.native
+  sealed trait GDOT1X
+    extends awsDashSdkLib.clientsGlueMod.GlueNs._WorkerType
+  
+  @js.native
+  sealed trait GDOT2X
+    extends awsDashSdkLib.clientsGlueMod.GlueNs._WorkerType
+  
+  @js.native
   sealed trait GE
     extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._ComparisonOperator
        with awsDashSdkLib.clientsWafMod.WAFNs._ComparisonOperator
@@ -18002,6 +18010,11 @@ object awsDashSdkLibStrings {
        with awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs._H265QualityTuningLevel
   
   @js.native
+  sealed trait SINGLE_PIPELINE
+    extends awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._ChannelClass
+       with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._InputClass
+  
+  @js.native
   sealed trait SINGLE_QUERY_ARG
     extends awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs._MatchFieldType
        with awsDashSdkLib.clientsWafMod.WAFNs._MatchFieldType
@@ -18403,8 +18416,10 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait STANDARD
-    extends awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs._Compute
+    extends awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._ChannelClass
+       with awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs._Compute
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._IFrameOnlyPlaylistType
+       with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._InputClass
        with awsDashSdkLib.clientsS3Mod.S3Ns._ObjectStorageClass
        with awsDashSdkLib.clientsCostexplorerMod.CostExplorerNs._OfferingClass
        with awsDashSdkLib.clientsMedialiveMod.MediaLiveNs._ReservationVideoQuality
@@ -19203,6 +19218,7 @@ object awsDashSdkLibStrings {
   sealed trait Standard
     extends awsDashSdkLib.clientsDirectoryserviceMod.DirectoryServiceNs._DirectoryEdition
        with awsDashSdkLib.clientsS3Mod.S3Ns._Tier
+       with awsDashSdkLib.clientsGlueMod.GlueNs._WorkerType
   
   @js.native
   sealed trait Standby
@@ -31685,6 +31701,10 @@ object awsDashSdkLibStrings {
   @scala.inline
   def GD: GD = "GD".asInstanceOf[GD]
   @scala.inline
+  def GDOT1X: GDOT1X = "G.1X".asInstanceOf[GDOT1X]
+  @scala.inline
+  def GDOT2X: GDOT2X = "G.2X".asInstanceOf[GDOT2X]
+  @scala.inline
   def GE: GE = "GE".asInstanceOf[GE]
   @scala.inline
   def GENERIC_EVENT: GENERIC_EVENT = "GENERIC_EVENT".asInstanceOf[GENERIC_EVENT]
@@ -35388,6 +35408,8 @@ object awsDashSdkLibStrings {
   def SINGLE_PASS: SINGLE_PASS = "SINGLE_PASS".asInstanceOf[SINGLE_PASS]
   @scala.inline
   def SINGLE_PASS_HQ: SINGLE_PASS_HQ = "SINGLE_PASS_HQ".asInstanceOf[SINGLE_PASS_HQ]
+  @scala.inline
+  def SINGLE_PIPELINE: SINGLE_PIPELINE = "SINGLE_PIPELINE".asInstanceOf[SINGLE_PIPELINE]
   @scala.inline
   def SINGLE_QUERY_ARG: SINGLE_QUERY_ARG = "SINGLE_QUERY_ARG".asInstanceOf[SINGLE_QUERY_ARG]
   @scala.inline

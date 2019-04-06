@@ -29,7 +29,9 @@ trait VirtualRouterState extends js.Object {
   /**
     * The virtual router specification to apply.
     */
-  val spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ServiceNamesArray]] = js.undefined
+  val spec: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ListenerAnonPortMappingAnonPortProtocol]
+  ] = js.undefined
 }
 
 object VirtualRouterState {
@@ -40,7 +42,7 @@ object VirtualRouterState {
     lastUpdatedDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     meshName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ServiceNamesArray] = null
+    spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ListenerAnonPortMappingAnonPortProtocol] = null
   ): VirtualRouterState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

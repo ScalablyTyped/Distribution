@@ -23,7 +23,7 @@ trait Anon_Args extends js.Object {
   var optimisticResponse_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
   @JSName("refetchQueries")
   var refetchQueries_Original: propDashTypesLib.propDashTypesMod.Requireable[
-    (js.Array[java.lang.String | js.Object | scala.Null]) | (js.Function1[/* repeated */ _, _])
+    (js.Function1[/* repeated */ _, _]) | (js.Array[java.lang.String | js.Object | scala.Null])
   ] = js.native
   @JSName("update")
   var update_Original: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native

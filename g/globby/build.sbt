@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "globby"
-version := "9.2.0-43bdf7"
+version := "9.2.0-2d4130"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ce8e08",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20190329Z-819655",
   "org.scalablytyped" %%% "glob-to-regexp" % "0.4-dt-20180607Z-95102e",
-  "org.scalablytyped" %%% "ignore" % "3.3.10-4b81ac",
+  "org.scalablytyped" %%% "ignore" % "4.0.6-56d479",
   "org.scalablytyped" %%% "is-glob" % "4.0-dt-20190329Z-4226a6",
   "org.scalablytyped" %%% "merge2" % "1.1-dt-20180214Z-382d2d",
   "org.scalablytyped" %%% "micromatch" % "3.1-dt-20180214Z-64a8b0",

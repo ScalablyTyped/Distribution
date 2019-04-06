@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "p-memoize"
-version := "3.0.0-0e2659"
+version := "3.1.0-6ac545"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

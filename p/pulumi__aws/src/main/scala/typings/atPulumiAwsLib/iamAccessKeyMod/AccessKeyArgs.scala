@@ -12,6 +12,11 @@ trait AccessKeyArgs extends js.Object {
     */
   val pgpKey: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
+    * The access key status to apply. Defaults to `Active`.
+    * Valid values are `Active` and `Inactive`.
+    */
+  val status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * The IAM user to associate with this access key.
     */
   val user: atPulumiPulumiLib.outputMod.Input[java.lang.String]
@@ -21,10 +26,12 @@ object AccessKeyArgs {
   @scala.inline
   def apply(
     user: atPulumiPulumiLib.outputMod.Input[java.lang.String],
-    pgpKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+    pgpKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): AccessKeyArgs = {
     val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
     if (pgpKey != null) __obj.updateDynamic("pgpKey")(pgpKey.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessKeyArgs]
   }
 }

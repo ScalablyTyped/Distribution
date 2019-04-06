@@ -47,8 +47,8 @@ class AccessKey protected ()
     */
   val sesSmtpPassword: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
-    * "Active" or "Inactive". Keys are initially active, but can be made
-    * inactive by other means.
+    * The access key status to apply. Defaults to `Active`.
+    * Valid values are `Active` and `Inactive`.
     */
   val status: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**

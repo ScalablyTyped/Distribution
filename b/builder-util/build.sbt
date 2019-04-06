@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "builder-util"
-version := "9.7.0-71ec50"
+version := "9.7.0-008ed4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "app-builder-bin" % "2.6.4-3a9366",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-986805",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.7-55a535",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.1-c023d3",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.0-c023d3",
   "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",

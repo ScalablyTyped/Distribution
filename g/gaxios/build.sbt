@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "gaxios"
-version := "1.8.3-f43fba"
+version := "1.8.3-474fb3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "abort-controller" % "2.0.3-3eaeb3",
+  "org.scalablytyped" %%% "abort-controller" % "3.0.0-3eaeb3",
   "org.scalablytyped" %%% "event-target-shim" % "5.0.1-4b0f6d",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-ef9ad3",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",

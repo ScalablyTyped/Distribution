@@ -1,13 +1,11 @@
 organization := "org.scalablytyped"
 name := "needle"
-version := "2.0-dt-20190128Z-7d0db3"
+version := "2.0-dt-20190128Z-a1d704"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-a816e1",
-  "org.scalablytyped" %%% "buffer" % "5.2.1-12d75b",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false

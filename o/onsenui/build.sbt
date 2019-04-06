@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "onsenui"
-version := "2.10.8-ef40ea"
+version := "2.10.8-309b79"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,13 +8,14 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-6f800f",
   "org.scalablytyped" %%% "braces" % "2.3-dt-20180214Z-306649",
-  "org.scalablytyped" %%% "chokidar" % "2.1.5-789d6a",
+  "org.scalablytyped" %%% "chokidar" % "2.1.5-6fb4b0",
   "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-0940d0",
+  "org.scalablytyped" %%% "fsevents" % "1.1-dt-20180214Z-e93f50",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ce8e08",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20190329Z-819655",
   "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20190322Z-6a3a24",
-  "org.scalablytyped" %%% "gulp" % "4.0-dt-20190322Z-b8f592",
-  "org.scalablytyped" %%% "gulp-protractor" % "v1.0.0-dt-20190322Z-ef34d8",
+  "org.scalablytyped" %%% "gulp" % "4.0-dt-20190322Z-b996f6",
+  "org.scalablytyped" %%% "gulp-protractor" % "v1.0.0-dt-20190322Z-a3c602",
   "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-75670b",
   "org.scalablytyped" %%% "is-binary-path" % "2.0-dt-20180214Z-900f29",
   "org.scalablytyped" %%% "is-glob" % "4.0-dt-20190329Z-4226a6",

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dd-trace"
-version := "0.10.3-58682a"
+version := "0.10.3-ed4e1b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -20,7 +20,6 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "normalize-package-data" % "2.4-dt-20180214Z-41a127",
   "org.scalablytyped" %%% "opentracing" % "0.14.3-326d93",
   "org.scalablytyped" %%% "path-to-regexp" % "3.0.0-a2a142",
-  "org.scalablytyped" %%% "performance-now" % "2.1.0-19b4b3",
   "org.scalablytyped" %%% "read-pkg-up" % "3.0-dt-20180214Z-c6ba0e",
   "org.scalablytyped" %%% "safe-buffer" % "5.1.2-5d06ef",
   "org.scalablytyped" %%% "semver" % "6.0-dt-20190330Z-1b8b1f",

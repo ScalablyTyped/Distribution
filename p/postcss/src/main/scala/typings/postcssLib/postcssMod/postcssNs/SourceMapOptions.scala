@@ -17,11 +17,7 @@ trait SourceMapOptions extends js.Object {
     *
     * If you have set inline: true, annotation cannot be disabled.
     */
-  var annotation: js.UndefOr[java.lang.String | postcssLib.postcssLibNumbers.`false`] = js.undefined
-  /**
-    * Override "from" in map's sources.
-    */
-  var from: js.UndefOr[java.lang.String] = js.undefined
+  var annotation: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   /**
     * Indicates that the source map should be embedded in the output CSS as a
     * Base64-encoded comment. By default, it is true. But if all previous maps
@@ -40,6 +36,12 @@ trait SourceMapOptions extends js.Object {
     */
   var prev: js.UndefOr[js.Any] = js.undefined
   /**
+    * If true, PostCSS will try to correct any syntax errors that it finds in the CSS.
+    * This is useful for legacy code filled with hacks. Another use-case is interactive
+    * tools with live input — for example, the Autoprefixer demo.
+    */
+  var safe: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Indicates that PostCSS should set the origin content (e.g., Sass source)
     * of the source map. By default, it is true. But if all previous maps do not
     * contain sources content, PostCSS will also leave it out even if you do not set
@@ -51,17 +53,17 @@ trait SourceMapOptions extends js.Object {
 object SourceMapOptions {
   @scala.inline
   def apply(
-    annotation: java.lang.String | postcssLib.postcssLibNumbers.`false` = null,
-    from: java.lang.String = null,
+    annotation: scala.Boolean | java.lang.String = null,
     `inline`: js.UndefOr[scala.Boolean] = js.undefined,
     prev: js.Any = null,
+    safe: js.UndefOr[scala.Boolean] = js.undefined,
     sourcesContent: js.UndefOr[scala.Boolean] = js.undefined
   ): SourceMapOptions = {
     val __obj = js.Dynamic.literal()
     if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from)
     if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
     if (prev != null) __obj.updateDynamic("prev")(prev)
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
     if (!js.isUndefined(sourcesContent)) __obj.updateDynamic("sourcesContent")(sourcesContent)
     __obj.asInstanceOf[SourceMapOptions]
   }

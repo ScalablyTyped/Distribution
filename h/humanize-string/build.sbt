@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "humanize-string"
-version := "2.1.0-f541a4"
+version := "2.1.0-081567"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "decamelize" % "3.1.1-87b272",
+  "org.scalablytyped" %%% "decamelize" % "3.2.0-6170f1",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "xregexp" % "3.0.0-dt-20190322Z-653c3a")
 publishArtifact in packageDoc := false

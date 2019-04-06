@@ -21,6 +21,7 @@ trait Anon_AcmApigateway extends js.Object {
   var efs: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var elb: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var es: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var firehose: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var iam: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var kinesis: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var kinesisAnalytics: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -28,8 +29,10 @@ trait Anon_AcmApigateway extends js.Object {
   var lambda: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var r53: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var rds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var redshift: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var s3: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var s3control: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var ses: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var sns: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var sqs: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var ssm: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -54,6 +57,7 @@ object Anon_AcmApigateway {
     efs: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     elb: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     es: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    firehose: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     iam: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     kinesis: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     kinesisAnalytics: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -61,8 +65,10 @@ object Anon_AcmApigateway {
     lambda: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     r53: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     rds: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    redshift: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     s3: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     s3control: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ses: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     sns: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     sqs: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     ssm: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -84,6 +90,7 @@ object Anon_AcmApigateway {
     if (efs != null) __obj.updateDynamic("efs")(efs.asInstanceOf[js.Any])
     if (elb != null) __obj.updateDynamic("elb")(elb.asInstanceOf[js.Any])
     if (es != null) __obj.updateDynamic("es")(es.asInstanceOf[js.Any])
+    if (firehose != null) __obj.updateDynamic("firehose")(firehose.asInstanceOf[js.Any])
     if (iam != null) __obj.updateDynamic("iam")(iam.asInstanceOf[js.Any])
     if (kinesis != null) __obj.updateDynamic("kinesis")(kinesis.asInstanceOf[js.Any])
     if (kinesisAnalytics != null) __obj.updateDynamic("kinesisAnalytics")(kinesisAnalytics.asInstanceOf[js.Any])
@@ -91,8 +98,10 @@ object Anon_AcmApigateway {
     if (lambda != null) __obj.updateDynamic("lambda")(lambda.asInstanceOf[js.Any])
     if (r53 != null) __obj.updateDynamic("r53")(r53.asInstanceOf[js.Any])
     if (rds != null) __obj.updateDynamic("rds")(rds.asInstanceOf[js.Any])
+    if (redshift != null) __obj.updateDynamic("redshift")(redshift.asInstanceOf[js.Any])
     if (s3 != null) __obj.updateDynamic("s3")(s3.asInstanceOf[js.Any])
     if (s3control != null) __obj.updateDynamic("s3control")(s3control.asInstanceOf[js.Any])
+    if (ses != null) __obj.updateDynamic("ses")(ses.asInstanceOf[js.Any])
     if (sns != null) __obj.updateDynamic("sns")(sns.asInstanceOf[js.Any])
     if (sqs != null) __obj.updateDynamic("sqs")(sqs.asInstanceOf[js.Any])
     if (ssm != null) __obj.updateDynamic("ssm")(ssm.asInstanceOf[js.Any])

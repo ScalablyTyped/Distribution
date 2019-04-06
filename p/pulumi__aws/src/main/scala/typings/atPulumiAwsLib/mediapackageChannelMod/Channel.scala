@@ -34,6 +34,10 @@ class Channel protected ()
     * A single item list of HLS ingest information
     */
   val hlsIngests: atPulumiPulumiLib.outputMod.Output[js.Array[atPulumiAwsLib.Anon_IngestEndpoints]] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 /* static members */

@@ -96,7 +96,7 @@ trait ProtractorPlugin extends js.Object {
     * @throws {*} If this function throws an error, a failed assertion is added to
     *     the test results.
     *
-    * @return {webdriver.promise.Promise=} Can return a promise, in which case
+    * @return {Promise=} Can return a promise, in which case
     *     protractor will wait for the promise to resolve before continuing.  If
     *     the promise is rejected, a failed assertion is added to the test results.
     */
@@ -108,8 +108,8 @@ trait ProtractorPlugin extends js.Object {
   ] = js.undefined
   /**
     * This is called inside browser.get() directly after angular is done
-    * bootstrapping/synchronizing.  If `browser.ignoreSynchronization` is `true`,
-    * this will not be called.
+    * bootstrapping/synchronizing.  If `await browser.waitForAngularEnabled()`
+    * is `false`, this will not be called.
     *
     * @param {ProtractorBrowser} browser The browser instance which is loading a page.
     *
@@ -118,7 +118,7 @@ trait ProtractorPlugin extends js.Object {
     * @throws {*} If this function throws an error, a failed assertion is added to
     *     the test results.
     *
-    * @return {webdriver.promise.Promise=} Can return a promise, in which case
+    * @return {Promise=} Can return a promise, in which case
     *     protractor will wait for the promise to resolve before continuing.  If
     *     the promise is rejected, a failed assertion is added to the test results.
     */
@@ -241,7 +241,7 @@ trait ProtractorPlugin extends js.Object {
     * @throws {*} If this function throws an error, a failed assertion is added to
     *     the test results.
     *
-    * @return {webdriver.promise.Promise<boolean>|boolean} If truthy, Protractor
+    * @return {Promise<boolean>|boolean} If truthy, Protractor
     *     will continue onto the next command. If falsy, webdriver will
     *     continuously re-run this function until it is truthy.  If a rejected promise
     *     is returned, a failed assertion is added to the test results, and Protractor
@@ -266,7 +266,7 @@ trait ProtractorPlugin extends js.Object {
     * @throws {*} If this function throws an error, a failed assertion is added to
     *     the test results.
     *
-    * @return {webdriver.promise.Promise=} Can return a promise, in which case
+    * @return {Promise=} Can return a promise, in which case
     *     protractor will wait for the promise to resolve before continuing. If the
     *     promise is rejected, a failed assertion is added to the test results, and
     *     protractor will continue onto the next command. If nothing is returned or

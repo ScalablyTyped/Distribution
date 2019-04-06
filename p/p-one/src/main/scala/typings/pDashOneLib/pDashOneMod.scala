@@ -23,7 +23,7 @@ object pDashOneMod extends js.Object {
       /* index */ scala.Double, 
       scala.Boolean | js.Promise[scala.Boolean]
     ],
-    options: pDashMapLib.pDashMapMod.Options
+    options: pDashMapLib.pDashMapMod.pMapNs.Options
   ): js.Promise[scala.Boolean] = js.native
 }
 

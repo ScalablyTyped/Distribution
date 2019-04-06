@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 object hashaLibStrings {
   @js.native
   sealed trait base64
-    extends hashaLib.hashaMod.hashaNs.ToStringEncoding
+    extends hashaLib.hashaMod.ToStringEncoding
   
   @js.native
   sealed trait buffer
-    extends hashaLib.hashaMod.hashaNs.HashaEncoding
+    extends hashaLib.hashaMod.HashaEncoding
   
   @js.native
   sealed trait hex
-    extends hashaLib.hashaMod.hashaNs.ToStringEncoding
+    extends hashaLib.hashaMod.ToStringEncoding
   
   @js.native
   sealed trait latin1
-    extends hashaLib.hashaMod.hashaNs.ToStringEncoding
+    extends hashaLib.hashaMod.ToStringEncoding
   
   @js.native
   sealed trait md5 extends js.Object

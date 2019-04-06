@@ -21,7 +21,7 @@ trait NodeBase extends js.Object {
     * (in which case the new node's source will reference the original,
     * cloned node) or setting the source property manually.
     */
-  var source: js.UndefOr[NodeSource] = js.native
+  var source: NodeSource = js.native
   def after(newNode: java.lang.String): this.type = js.native
   def after(newNode: js.Array[Node]): this.type = js.native
   def after(newNode: js.Object): this.type = js.native
@@ -40,15 +40,15 @@ trait NodeBase extends js.Object {
   def before(newNode: js.Array[Node]): this.type = js.native
   def before(newNode: js.Object): this.type = js.native
   /**
-    	 * Insert new node before current node to current node’s parent.
-    	 *
-    	 * Just an alias for `node.parent.insertBefore(node, newNode)`.
-    	 *
-    	 * @returns this node for method chaining.
-    	 *
-    	 * @example
-    	 * decl.before('content: ""');
-    	 */
+  		 * Insert new node before current node to current node’s parent.
+  		 *
+  		 * Just an alias for `node.parent.insertBefore(node, newNode)`.
+  		 *
+  		 * @returns this node for method chaining.
+  		 *
+  		 * @example
+  		 * decl.before('content: ""');
+  		 */
   def before(newNode: Node): this.type = js.native
   def clone(overrides: js.Object): this.type = js.native
   /**

@@ -8,14 +8,37 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_OptionsPath extends js.Object {
   /**
-    * Asynchronous mkdir(2) - create a directory.
+    * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options Either the file mode, or an object optionally specifying the file mode and whether parent folders
-    * should be created. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.
+    * If a file descriptor is provided, the underlying file will _not_ be closed automatically.
+    * @param options An object that may contain an optional flag.
+    * If a flag is not provided, it defaults to `'r'`.
     */
-  def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[scala.Unit] = js.native
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[scala.Unit] = js.native
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.fsMod.MakeDirectoryOptions): js.Promise[scala.Unit] = js.native
-  def __promisify__(path: nodeLib.fsMod.PathLike, options: scala.Double): js.Promise[scala.Unit] = js.native
+  /**
+    * Asynchronously reads the entire contents of a file.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * URL support is _experimental_.
+    * If a file descriptor is provided, the underlying file will _not_ be closed automatically.
+    * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
+    * If a flag is not provided, it defaults to `'r'`.
+    */
+  def __promisify__(path: nodeLib.fsMod.PathLike): js.Promise[nodeLib.Buffer] = js.native
+  def __promisify__(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[java.lang.String] = js.native
+  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlag): js.Promise[nodeLib.Buffer] = js.native
+  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+  /**
+    * Asynchronously reads the entire contents of a file.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * URL support is _experimental_.
+    * If a file descriptor is provided, the underlying file will _not_ be closed automatically.
+    * @param options Either the encoding for the result, or an object that contains the encoding and an optional flag.
+    * If a flag is not provided, it defaults to `'r'`.
+    */
+  def __promisify__(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagString): js.Promise[java.lang.String] = js.native
+  def __promisify__(path: scala.Double): js.Promise[nodeLib.Buffer] = js.native
+  def __promisify__(path: scala.Double, options: java.lang.String): js.Promise[java.lang.String] = js.native
+  def __promisify__(path: scala.Double, options: nodeLib.Anon_EncodingFlag): js.Promise[nodeLib.Buffer] = js.native
+  def __promisify__(path: scala.Double, options: nodeLib.Anon_EncodingFlagNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+  def __promisify__(path: scala.Double, options: nodeLib.Anon_EncodingFlagString): js.Promise[java.lang.String] = js.native
 }
 

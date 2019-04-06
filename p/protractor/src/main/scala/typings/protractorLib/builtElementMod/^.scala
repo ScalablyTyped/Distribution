@@ -9,16 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   @JSName("build$")
-  var build$: js.Function2[
-    /* element */ protractorLib.builtBrowserMod.ElementHelper, 
-    /* by */ protractorLib.Anon_ClassName, 
-    js.Function1[/* selector */ java.lang.String, ElementFinder]
-  ] = js.native
+  def build$(element: protractorLib.builtBrowserMod.ElementHelper, by: protractorLib.Anon_ClassName): js.Function1[/* selector */ java.lang.String, ElementFinder] = js.native
   @JSName("build$$")
-  var build$$: js.Function2[
-    /* element */ protractorLib.builtBrowserMod.ElementHelper, 
-    /* by */ protractorLib.Anon_ClassName, 
-    js.Function1[/* selector */ java.lang.String, ElementArrayFinder]
-  ] = js.native
+  def build$$(element: protractorLib.builtBrowserMod.ElementHelper, by: protractorLib.Anon_ClassName): js.Function1[/* selector */ java.lang.String, ElementArrayFinder] = js.native
 }
 

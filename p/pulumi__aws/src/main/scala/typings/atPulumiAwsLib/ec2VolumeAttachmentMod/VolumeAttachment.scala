@@ -20,14 +20,14 @@ class VolumeAttachment protected ()
   def this(name: java.lang.String, args: VolumeAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
     * The device name to expose to the instance (for
-    * example, `/dev/sdh` or `xvdh`)
+    * example, `/dev/sdh` or `xvdh`).  See [Device Naming on Linux Instances][1] and [Device Naming on Windows Instances][2] for more information.
     */
   val deviceName: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * Set to `true` if you want to force the
     * volume to detach. Useful if previous attempts failed, but use this option only
     * as a last resort, as this can result in **data loss**. See
-    * [Detaching an Amazon EBS Volume from an Instance][1] for more information.
+    * [Detaching an Amazon EBS Volume from an Instance][3] for more information.
     */
   val forceDetach: atPulumiPulumiLib.outputMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**

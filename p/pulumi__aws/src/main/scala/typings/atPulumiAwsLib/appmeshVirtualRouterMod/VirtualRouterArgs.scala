@@ -17,14 +17,14 @@ trait VirtualRouterArgs extends js.Object {
   /**
     * The virtual router specification to apply.
     */
-  val spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ServiceNamesArray]
+  val spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ListenerAnonPortMappingAnonPortProtocol]
 }
 
 object VirtualRouterArgs {
   @scala.inline
   def apply(
     meshName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
-    spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ServiceNamesArray],
+    spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ListenerAnonPortMappingAnonPortProtocol],
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
   ): VirtualRouterArgs = {
     val __obj = js.Dynamic.literal(meshName = meshName.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])

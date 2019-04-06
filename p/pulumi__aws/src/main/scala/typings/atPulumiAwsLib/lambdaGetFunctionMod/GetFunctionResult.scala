@@ -90,7 +90,7 @@ trait GetFunctionResult extends js.Object {
   /**
     * VPC configuration associated with your Lambda function.
     */
-  val vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
+  val vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIds
 }
 
 object GetFunctionResult {
@@ -117,7 +117,7 @@ object GetFunctionResult {
     timeout: scala.Double,
     tracingConfig: atPulumiAwsLib.Anon_Mode,
     version: java.lang.String,
-    vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
+    vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIds
   ): GetFunctionResult = {
     val __obj = js.Dynamic.literal(arn = arn, deadLetterConfig = deadLetterConfig, description = description, environment = environment, handler = handler, id = id, invokeArn = invokeArn, kmsKeyArn = kmsKeyArn, lastModified = lastModified, layers = layers, memorySize = memorySize, qualifiedArn = qualifiedArn, reservedConcurrentExecutions = reservedConcurrentExecutions, role = role, runtime = runtime, sourceCodeHash = sourceCodeHash, sourceCodeSize = sourceCodeSize, tags = tags, timeout = timeout, tracingConfig = tracingConfig, version = version, vpcConfig = vpcConfig)
   

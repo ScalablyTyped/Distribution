@@ -58,7 +58,7 @@ class Fleet protected ()
   /**
     * Provide this to allow manage the company network configuration for the fleet. Fields documented below.
     */
-  val network: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray]] = js.native
+  val network: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIds]] = js.native
   /**
     * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region. Defaults to `true`.
     */

@@ -26,5 +26,10 @@ object ^ extends js.Object {
     args: atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentResult] = js.native
+  def getVpnAttachment(args: atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentArgs): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentResult] = js.native
+  def getVpnAttachment(
+    args: atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpnAttachmentMod.GetVpnAttachmentResult] = js.native
 }
 

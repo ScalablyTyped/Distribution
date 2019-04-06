@@ -23,8 +23,8 @@ object IoT1ClickDevicesServiceNs extends js.Object {
       */
     var ClaimCode: js.UndefOr[__stringMin12Max40] = js.undefined
     /**
-      * The total number of devices associated with the claim code that has been processed
-      in the claim request.
+      * The total number of devices associated with the claim code that has been processed in
+      the claim request.
       */
     var Total: js.UndefOr[__integer] = js.undefined
   }
@@ -74,8 +74,8 @@ object IoT1ClickDevicesServiceNs extends js.Object {
       */
     var Arn: js.UndefOr[__string] = js.undefined
     /**
-      * An array of zero or more elements of DeviceAttribute objects
-      providing user specified device attributes.
+      * An array of zero or more elements of DeviceAttribute objects providing
+      user specified device attributes.
       */
     var Attributes: js.UndefOr[DeviceAttributes] = js.undefined
     /**
@@ -87,8 +87,8 @@ object IoT1ClickDevicesServiceNs extends js.Object {
       */
     var Enabled: js.UndefOr[__boolean] = js.undefined
     /**
-      * A value between 0 and 1 inclusive, representing the fraction of life remaining for
-      the device.
+      * A value between 0 and 1 inclusive, representing the fraction of life remaining for the
+      device.
       */
     var RemainingLife: js.UndefOr[__doubleMin0Max100] = js.undefined
     /**
@@ -129,7 +129,11 @@ object IoT1ClickDevicesServiceNs extends js.Object {
       */
     var DeviceId: __string
     /**
-      * The tags to be assigned to the AWS IoT 1-Click device.
+      * A collection of key/value pairs defining the resource tags. For example, {
+      "tags": {"key1": "value1", "key2": "value2"} }. For more information, see AWS
+      Tagging Strategies.
+      
+      
       */
     var Tags: js.UndefOr[__mapOf__string] = js.undefined
   }
@@ -203,8 +207,8 @@ object IoT1ClickDevicesServiceNs extends js.Object {
       */
     var FromTimeStamp: __timestampIso8601
     /**
-      * The maximum number of results to return per request. If not set, a default value
-      of 100 is used.
+      * The maximum number of results to return per request. If not set, a default value of
+      100 is used.
       */
     var MaxResults: js.UndefOr[MaxResults] = js.undefined
     /**
@@ -237,8 +241,8 @@ object IoT1ClickDevicesServiceNs extends js.Object {
       */
     var DeviceType: js.UndefOr[__string] = js.undefined
     /**
-      * The maximum number of results to return per request. If not set, a default value
-      of 100 is used.
+      * The maximum number of results to return per request. If not set, a default value of
+      100 is used.
       */
     var MaxResults: js.UndefOr[MaxResults] = js.undefined
     /**
@@ -260,25 +264,33 @@ object IoT1ClickDevicesServiceNs extends js.Object {
   
   trait ListTagsForResourceRequest extends js.Object {
     /**
-      * The AWS IoT 1-Click resource with tags to be listed. This value is an Amazon Resource Name (ARN).
+      * The ARN of the resource.
       */
     var ResourceArn: __string
   }
   
   trait ListTagsForResourceResponse extends js.Object {
     /**
-      * The tags currently associated with the AWS IoT 1-Click resource.
+      * A collection of key/value pairs defining the resource tags. For example, {
+      "tags": {"key1": "value1", "key2": "value2"} }. For more information, see AWS
+      Tagging Strategies.
+      
+      
       */
     var Tags: js.UndefOr[__mapOf__string] = js.undefined
   }
   
   trait TagResourceRequest extends js.Object {
     /**
-      * Identifies the AWS IoT 1-Click resource to which tags should be added. This value is an Amazon Resource Name (ARN).
+      * The ARN of the resource.
       */
     var ResourceArn: __string
     /**
-      * The tags to be assigned to the AWS IoT 1-Click resource.
+      * A collection of key/value pairs defining the resource tags. For example, {
+      "tags": {"key1": "value1", "key2": "value2"} }. For more information, see AWS
+      Tagging Strategies.
+      
+      
       */
     var Tags: __mapOf__string
   }
@@ -289,8 +301,8 @@ object IoT1ClickDevicesServiceNs extends js.Object {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-      * Adds device(s) to your account (i.e., claim one or more devices) if and only if
-      you received a claim code with the device(s).
+      * Adds device(s) to your account (i.e., claim one or more devices) if and only if you
+      received a claim code with the device(s).
       */
     def claimDevicesByClaimCode(): awsDashSdkLib.libRequestMod.Request[ClaimDevicesByClaimCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def claimDevicesByClaimCode(
@@ -301,8 +313,8 @@ object IoT1ClickDevicesServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ClaimDevicesByClaimCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds device(s) to your account (i.e., claim one or more devices) if and only if
-      you received a claim code with the device(s).
+      * Adds device(s) to your account (i.e., claim one or more devices) if and only if you
+      received a claim code with the device(s).
       */
     def claimDevicesByClaimCode(params: ClaimDevicesByClaimCodeRequest): awsDashSdkLib.libRequestMod.Request[ClaimDevicesByClaimCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def claimDevicesByClaimCode(
@@ -314,8 +326,8 @@ object IoT1ClickDevicesServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ClaimDevicesByClaimCodeResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Given a device ID, returns a DescribeDeviceResponse object describing
-      the details of the device.
+      * Given a device ID, returns a DescribeDeviceResponse object describing the
+      details of the device.
       */
     def describeDevice(): awsDashSdkLib.libRequestMod.Request[DescribeDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeDevice(
@@ -326,8 +338,8 @@ object IoT1ClickDevicesServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Given a device ID, returns a DescribeDeviceResponse object describing
-      the details of the device.
+      * Given a device ID, returns a DescribeDeviceResponse object describing the
+      details of the device.
       */
     def describeDevice(params: DescribeDeviceRequest): awsDashSdkLib.libRequestMod.Request[DescribeDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeDevice(
@@ -340,9 +352,9 @@ object IoT1ClickDevicesServiceNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[DescribeDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Given a device ID, finalizes the claim request for the associated device.
-      Claiming a device consists of initiating a claim, then publishing a device
-      event, and finalizing the claim. For a device of type button, a
-      device event can be published by simply clicking the device.
+      Claiming a device consists of initiating a claim, then publishing a device event,
+      and finalizing the claim. For a device of type button, a device event can
+      be published by simply clicking the device.
       
       */
     def finalizeDeviceClaim(): awsDashSdkLib.libRequestMod.Request[FinalizeDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -355,9 +367,9 @@ object IoT1ClickDevicesServiceNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[FinalizeDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Given a device ID, finalizes the claim request for the associated device.
-      Claiming a device consists of initiating a claim, then publishing a device
-      event, and finalizing the claim. For a device of type button, a
-      device event can be published by simply clicking the device.
+      Claiming a device consists of initiating a claim, then publishing a device event,
+      and finalizing the claim. For a device of type button, a device event can
+      be published by simply clicking the device.
       
       */
     def finalizeDeviceClaim(params: FinalizeDeviceClaimRequest): awsDashSdkLib.libRequestMod.Request[FinalizeDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -370,8 +382,7 @@ object IoT1ClickDevicesServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[FinalizeDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Given a device ID, returns the invokable methods associated with the
-      device.
+      * Given a device ID, returns the invokable methods associated with the device.
       */
     def getDeviceMethods(): awsDashSdkLib.libRequestMod.Request[GetDeviceMethodsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getDeviceMethods(
@@ -382,8 +393,7 @@ object IoT1ClickDevicesServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetDeviceMethodsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Given a device ID, returns the invokable methods associated with the
-      device.
+      * Given a device ID, returns the invokable methods associated with the device.
       */
     def getDeviceMethods(params: GetDeviceMethodsRequest): awsDashSdkLib.libRequestMod.Request[GetDeviceMethodsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getDeviceMethods(
@@ -396,9 +406,9 @@ object IoT1ClickDevicesServiceNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[GetDeviceMethodsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Given a device ID, initiates a claim request for the associated device.
-      Claiming a device consists of initiating a claim, then publishing a device
-      event, and finalizing the claim. For a device of type button, a
-      device event can be published by simply clicking the device.
+      Claiming a device consists of initiating a claim, then publishing a device event,
+      and finalizing the claim. For a device of type button, a device event can
+      be published by simply clicking the device.
       
       */
     def initiateDeviceClaim(): awsDashSdkLib.libRequestMod.Request[InitiateDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -411,9 +421,9 @@ object IoT1ClickDevicesServiceNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[InitiateDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Given a device ID, initiates a claim request for the associated device.
-      Claiming a device consists of initiating a claim, then publishing a device
-      event, and finalizing the claim. For a device of type button, a
-      device event can be published by simply clicking the device.
+      Claiming a device consists of initiating a claim, then publishing a device event,
+      and finalizing the claim. For a device of type button, a device event can
+      be published by simply clicking the device.
       
       */
     def initiateDeviceClaim(params: InitiateDeviceClaimRequest): awsDashSdkLib.libRequestMod.Request[InitiateDeviceClaimResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -451,8 +461,8 @@ object IoT1ClickDevicesServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[InvokeDeviceMethodResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Using a device ID, returns a DeviceEventsResponse object containing
-      an array of events for the device.
+      * Using a device ID, returns a DeviceEventsResponse object containing an
+      array of events for the device.
       */
     def listDeviceEvents(): awsDashSdkLib.libRequestMod.Request[ListDeviceEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listDeviceEvents(
@@ -463,8 +473,8 @@ object IoT1ClickDevicesServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDeviceEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Using a device ID, returns a DeviceEventsResponse object containing
-      an array of events for the device.
+      * Using a device ID, returns a DeviceEventsResponse object containing an
+      array of events for the device.
       */
     def listDeviceEvents(params: ListDeviceEventsRequest): awsDashSdkLib.libRequestMod.Request[ListDeviceEventsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listDeviceEvents(
@@ -499,7 +509,7 @@ object IoT1ClickDevicesServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDevicesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * List all tags on an AWS IoT 1-Click resource.
+      * Lists the tags associated with the specified resource ARN.
       */
     def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listTagsForResource(
@@ -510,7 +520,7 @@ object IoT1ClickDevicesServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * List all tags on an AWS IoT 1-Click resource.
+      * Lists the tags associated with the specified resource ARN.
       */
     def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listTagsForResource(
@@ -522,14 +532,16 @@ object IoT1ClickDevicesServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Associate a set of tags with an AWS IoT 1-Click resource. You can then activate these user-defined tags so that they appear on the Billing and Cost Management console for cost allocation tracking.
+      * Adds or updates the tags associated with the resource ARN. See AWS IoT 1-Click Service Limits for the maximum number of tags allowed per
+      resource.
       */
     def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def tagResource(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Associate a set of tags with an AWS IoT 1-Click resource. You can then activate these user-defined tags so that they appear on the Billing and Cost Management console for cost allocation tracking.
+      * Adds or updates the tags associated with the resource ARN. See AWS IoT 1-Click Service Limits for the maximum number of tags allowed per
+      resource.
       */
     def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def tagResource(
@@ -560,14 +572,16 @@ object IoT1ClickDevicesServiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UnclaimDeviceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Removes the association of tags from an AWS IoT 1-Click resource.
+      * Using tag keys, deletes the tags (key/value pairs) associated with the specified
+      resource ARN.
       */
     def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def untagResource(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Removes the association of tags from an AWS IoT 1-Click resource.
+      * Using tag keys, deletes the tags (key/value pairs) associated with the specified
+      resource ARN.
       */
     def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def untagResource(
@@ -617,11 +631,11 @@ object IoT1ClickDevicesServiceNs extends js.Object {
   
   trait UntagResourceRequest extends js.Object {
     /**
-      * The AWS IoT 1-Click resource the tags will be removed from. This value is an Amazon Resource Name (ARN).
+      * The ARN of the resource.
       */
     var ResourceArn: __string
     /**
-      * A list of tag keys. Existing tags of the resource whose keys are members of this list will be removed from the AWS IoT 1-Click resource.
+      * A collections of tag keys. For example, {"key1","key2"}
       */
     var TagKeys: __listOf__string
   }

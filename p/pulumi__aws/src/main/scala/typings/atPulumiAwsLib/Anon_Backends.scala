@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Backends extends js.Object {
-  var backends: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var backends: js.UndefOr[js.Array[Anon_VirtualService]] = js.undefined
   var listener: js.UndefOr[Anon_HealthCheck] = js.undefined
   var serviceDiscovery: js.UndefOr[Anon_Dns] = js.undefined
 }
@@ -14,7 +14,7 @@ trait Anon_Backends extends js.Object {
 object Anon_Backends {
   @scala.inline
   def apply(
-    backends: js.Array[java.lang.String] = null,
+    backends: js.Array[Anon_VirtualService] = null,
     listener: Anon_HealthCheck = null,
     serviceDiscovery: Anon_Dns = null
   ): Anon_Backends = {

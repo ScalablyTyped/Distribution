@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 trait VolumeAttachmentArgs extends js.Object {
   /**
     * The device name to expose to the instance (for
-    * example, `/dev/sdh` or `xvdh`)
+    * example, `/dev/sdh` or `xvdh`).  See [Device Naming on Linux Instances][1] and [Device Naming on Windows Instances][2] for more information.
     */
   val deviceName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * Set to `true` if you want to force the
     * volume to detach. Useful if previous attempts failed, but use this option only
     * as a last resort, as this can result in **data loss**. See
-    * [Detaching an Amazon EBS Volume from an Instance][1] for more information.
+    * [Detaching an Amazon EBS Volume from an Instance][3] for more information.
     */
   val forceDetach: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**

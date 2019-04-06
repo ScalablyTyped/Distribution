@@ -17,6 +17,10 @@ trait GetInstanceArgs extends js.Object {
     */
   val getPasswordData: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Retrieve Base64 encoded User Data contents into the `user_data_base64` attribute. A SHA-1 hash of the User Data contents will always be present in the `user_data` attribute. Defaults to `false`.
+    */
+  val getUserData: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Specify the exact Instance ID with which to populate the data source.
     */
   val instanceId: js.UndefOr[java.lang.String] = js.undefined
@@ -33,6 +37,7 @@ object GetInstanceArgs {
   def apply(
     filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
     getPasswordData: js.UndefOr[scala.Boolean] = js.undefined,
+    getUserData: js.UndefOr[scala.Boolean] = js.undefined,
     instanceId: java.lang.String = null,
     instanceTags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
@@ -40,6 +45,7 @@ object GetInstanceArgs {
     val __obj = js.Dynamic.literal()
     if (filters != null) __obj.updateDynamic("filters")(filters)
     if (!js.isUndefined(getPasswordData)) __obj.updateDynamic("getPasswordData")(getPasswordData)
+    if (!js.isUndefined(getUserData)) __obj.updateDynamic("getUserData")(getUserData)
     if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
     if (instanceTags != null) __obj.updateDynamic("instanceTags")(instanceTags)
     if (tags != null) __obj.updateDynamic("tags")(tags)

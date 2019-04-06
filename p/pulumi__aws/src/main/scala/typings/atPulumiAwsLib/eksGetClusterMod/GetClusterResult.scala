@@ -41,7 +41,7 @@ trait GetClusterResult extends js.Object {
   /**
     * Nested attribute containing VPC configuration for the cluster.
     */
-  val vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
+  val vpcConfig: atPulumiAwsLib.Anon_EndpointPrivateAccessEndpointPublicAccessSecurityGroupIds
 }
 
 object GetClusterResult {
@@ -55,7 +55,7 @@ object GetClusterResult {
     platformVersion: java.lang.String,
     roleArn: java.lang.String,
     version: java.lang.String,
-    vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
+    vpcConfig: atPulumiAwsLib.Anon_EndpointPrivateAccessEndpointPublicAccessSecurityGroupIds
   ): GetClusterResult = {
     val __obj = js.Dynamic.literal(arn = arn, certificateAuthority = certificateAuthority, createdAt = createdAt, endpoint = endpoint, id = id, platformVersion = platformVersion, roleArn = roleArn, version = version, vpcConfig = vpcConfig)
   

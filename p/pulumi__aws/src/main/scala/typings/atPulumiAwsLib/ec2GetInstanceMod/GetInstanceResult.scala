@@ -124,9 +124,13 @@ trait GetInstanceResult extends js.Object {
     */
   val tenancy: java.lang.String
   /**
-    * The User Data supplied to the Instance.
+    * SHA-1 hash of User Data supplied to the Instance.
     */
   val userData: java.lang.String
+  /**
+    * Base64 encoded contents of User Data supplied to the Instance. Valid UTF-8 contents can be decoded with the [`base64decode` function](https://www.terraform.io/docs/configuration/functions/base64decode.html). This attribute is only exported if `get_user_data` is true.
+    */
+  val userDataBase64: java.lang.String
   /**
     * The associated security groups in a non-default VPC.
     */
@@ -167,9 +171,10 @@ object GetInstanceResult {
     tags: org.scalablytyped.runtime.StringDictionary[js.Any],
     tenancy: java.lang.String,
     userData: java.lang.String,
+    userDataBase64: java.lang.String,
     vpcSecurityGroupIds: js.Array[java.lang.String]
   ): GetInstanceResult = {
-    val __obj = js.Dynamic.literal(ami = ami, arn = arn, associatePublicIpAddress = associatePublicIpAddress, availabilityZone = availabilityZone, creditSpecifications = creditSpecifications, disableApiTermination = disableApiTermination, ebsBlockDevices = ebsBlockDevices, ebsOptimized = ebsOptimized, ephemeralBlockDevices = ephemeralBlockDevices, hostId = hostId, iamInstanceProfile = iamInstanceProfile, id = id, instanceState = instanceState, instanceTags = instanceTags, instanceType = instanceType, keyName = keyName, monitoring = monitoring, networkInterfaceId = networkInterfaceId, passwordData = passwordData, placementGroup = placementGroup, privateDns = privateDns, privateIp = privateIp, publicDns = publicDns, publicIp = publicIp, rootBlockDevices = rootBlockDevices, securityGroups = securityGroups, sourceDestCheck = sourceDestCheck, subnetId = subnetId, tags = tags, tenancy = tenancy, userData = userData, vpcSecurityGroupIds = vpcSecurityGroupIds)
+    val __obj = js.Dynamic.literal(ami = ami, arn = arn, associatePublicIpAddress = associatePublicIpAddress, availabilityZone = availabilityZone, creditSpecifications = creditSpecifications, disableApiTermination = disableApiTermination, ebsBlockDevices = ebsBlockDevices, ebsOptimized = ebsOptimized, ephemeralBlockDevices = ephemeralBlockDevices, hostId = hostId, iamInstanceProfile = iamInstanceProfile, id = id, instanceState = instanceState, instanceTags = instanceTags, instanceType = instanceType, keyName = keyName, monitoring = monitoring, networkInterfaceId = networkInterfaceId, passwordData = passwordData, placementGroup = placementGroup, privateDns = privateDns, privateIp = privateIp, publicDns = publicDns, publicIp = publicIp, rootBlockDevices = rootBlockDevices, securityGroups = securityGroups, sourceDestCheck = sourceDestCheck, subnetId = subnetId, tags = tags, tenancy = tenancy, userData = userData, userDataBase64 = userDataBase64, vpcSecurityGroupIds = vpcSecurityGroupIds)
   
     __obj.asInstanceOf[GetInstanceResult]
   }

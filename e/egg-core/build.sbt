@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "egg-core"
-version := "4.16.1-1b947b"
+version := "4.16.1-48f91e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -27,10 +27,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ce8e08",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20190329Z-819655",
   "org.scalablytyped" %%% "glob-to-regexp" % "0.4-dt-20180607Z-95102e",
-  "org.scalablytyped" %%% "globby" % "9.2.0-43bdf7",
+  "org.scalablytyped" %%% "globby" % "9.2.0-2d4130",
   "org.scalablytyped" %%% "http-assert" % "1.4-dt-20181225Z-0cd2ad",
   "org.scalablytyped" %%% "iconv-lite" % "0.4.24-9813e6",
-  "org.scalablytyped" %%% "ignore" % "3.3.10-4b81ac",
+  "org.scalablytyped" %%% "ignore" % "4.0.6-56d479",
   "org.scalablytyped" %%% "inflection" % "1.5.0-dt-20190322Z-64b193",
   "org.scalablytyped" %%% "is-glob" % "4.0-dt-20190329Z-4226a6",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-cf9c5c",

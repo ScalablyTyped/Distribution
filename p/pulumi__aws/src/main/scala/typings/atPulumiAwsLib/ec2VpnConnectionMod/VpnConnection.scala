@@ -36,6 +36,10 @@ class VpnConnection protected ()
     */
   val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
+    * When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
+    */
+  val transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
+  /**
     * The ID of the EC2 Transit Gateway.
     */
   val transitGatewayId: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native

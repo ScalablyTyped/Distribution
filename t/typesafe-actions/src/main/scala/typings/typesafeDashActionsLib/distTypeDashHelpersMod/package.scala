@@ -15,6 +15,7 @@ package object distTypeDashHelpersMod {
   type ActionCreator[T /* <: StringType */] = js.Function1[/* repeated */ js.Any, typesafeDashActionsLib.Anon_Type[T]]
   type ActionType[ActionCreatorOrMap] = (/* import warning: ImportType.apply Failed type conversion: {[ K in keyof ActionCreatorOrMap ]: object}[keyof ActionCreatorOrMap] */ js.Any) | stdLib.ReturnType[ActionCreatorOrMap]
   type EmptyAC[T /* <: StringType */] = js.Function0[EmptyAction[T]]
+  type IsEmpty[T] = T
   type PayloadAC[T /* <: StringType */, P] = js.Function1[/* payload */ P, PayloadAction[T, P]]
   type PayloadMetaAC[T /* <: StringType */, P, M] = js.Function2[/* payload */ P, /* meta */ M, PayloadMetaAction[T, P, M]]
   type StateType[ReducerOrMap] = (/* import warning: ImportType.apply c Unsupported type mapping: 

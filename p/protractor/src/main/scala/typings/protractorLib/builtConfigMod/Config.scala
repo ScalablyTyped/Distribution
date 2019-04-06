@@ -135,6 +135,10 @@ trait Config
     * Defaults to `false`
     */
   var disableEnvironmentOverrides: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Deprecated: Element explorer depends on the WebDriver control flow, and
+    * thus is no longer supported.
+    */
   var elementExplorer: js.UndefOr[js.Any] = js.undefined
   /**
     * Patterns to exclude specs.
@@ -442,7 +446,6 @@ trait Config
     * completed. Ignored if seleniumAddress is null.
     */
   var seleniumSessionId: js.UndefOr[java.lang.String] = js.undefined
-  var seleniumWebDriver: js.UndefOr[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver] = js.undefined
   /**
     * Turns off source map support.  Stops protractor from registering global
     * variable `source-map-support`.  Defaults to `false`
@@ -594,7 +597,6 @@ object Config {
     seleniumServerJar: java.lang.String = null,
     seleniumServerStartTimeout: scala.Int | scala.Double = null,
     seleniumSessionId: java.lang.String = null,
-    seleniumWebDriver: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver = null,
     skipSourceMapSupport: js.UndefOr[scala.Boolean] = js.undefined,
     specs: js.Array[java.lang.String] = null,
     suite: java.lang.String = null,
@@ -674,7 +676,6 @@ object Config {
     if (seleniumServerJar != null) __obj.updateDynamic("seleniumServerJar")(seleniumServerJar)
     if (seleniumServerStartTimeout != null) __obj.updateDynamic("seleniumServerStartTimeout")(seleniumServerStartTimeout.asInstanceOf[js.Any])
     if (seleniumSessionId != null) __obj.updateDynamic("seleniumSessionId")(seleniumSessionId)
-    if (seleniumWebDriver != null) __obj.updateDynamic("seleniumWebDriver")(seleniumWebDriver)
     if (!js.isUndefined(skipSourceMapSupport)) __obj.updateDynamic("skipSourceMapSupport")(skipSourceMapSupport)
     if (specs != null) __obj.updateDynamic("specs")(specs)
     if (suite != null) __obj.updateDynamic("suite")(suite)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grommet"
-version := "2.6.5-444d0d"
+version := "2.6.5-c0fb84"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "css" % "0.0-unknown-dt-20190322Z-b3a1b3",
   "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
-  "org.scalablytyped" %%% "grommet-icons" % "4.2.0-b4cbbd",
+  "org.scalablytyped" %%% "grommet-icons" % "4.2.0-a846fe",
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-444aa6",
   "org.scalablytyped" %%% "markdown-to-jsx" % "6.9-dt-20190403Z-06b710",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react-native" % "0.57-dt-20190327Z-f86512",
   "org.scalablytyped" %%% "recompose" % "0.30-dt-20190322Z-a4702c",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190223Z-171551")
+  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190405Z-65a1d9")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

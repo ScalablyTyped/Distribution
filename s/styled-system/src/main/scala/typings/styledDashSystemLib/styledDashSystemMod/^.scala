@@ -25,7 +25,9 @@ object ^ extends js.Object {
   def borderLeft(args: js.Any*): js.Any = js.native
   def borderRadius(args: js.Any*): js.Any = js.native
   def borderRight(args: js.Any*): js.Any = js.native
+  def borderStyle(args: js.Any*): js.Any = js.native
   def borderTop(args: js.Any*): js.Any = js.native
+  def borderWidth(args: js.Any*): js.Any = js.native
   def borders(args: js.Any*): js.Any = js.native
   def bottom(args: js.Any*): js.Any = js.native
   def boxShadow(arg: js.Any*): js.Any = js.native

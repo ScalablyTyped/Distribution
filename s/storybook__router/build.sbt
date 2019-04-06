@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__router"
-version := "5.0.6-4925dc"
+version := "5.0.6-e4d70d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,15 +10,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-0940d0",
   "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
   "org.scalablytyped" %%% "deep-object-diff" % "1.1.0-c47466",
-  "org.scalablytyped" %%% "emotion-theming" % "10.0.10-f76ea7",
-  "org.scalablytyped" %%% "emotion__cache" % "10.0.9-2203ad",
-  "org.scalablytyped" %%% "emotion__core" % "10.0.10-4b6998",
+  "org.scalablytyped" %%% "emotion-theming" % "10.0.10-cb4ce0",
+  "org.scalablytyped" %%% "emotion__cache" % "10.0.9-f9412f",
+  "org.scalablytyped" %%% "emotion__core" % "10.0.10-a7e8dc",
   "org.scalablytyped" %%% "emotion__css" % "10.0.9-7ce425",
   "org.scalablytyped" %%% "emotion__is-prop-valid" % "0.7.3-3c4406",
   "org.scalablytyped" %%% "emotion__serialize" % "0.11.6-2ffa70",
   "org.scalablytyped" %%% "emotion__sheet" % "0.9.2-a7f9c3",
-  "org.scalablytyped" %%% "emotion__styled" % "10.0.10-610711",
-  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.10-1ab84c",
+  "org.scalablytyped" %%% "emotion__styled" % "10.0.10-18e7c2",
+  "org.scalablytyped" %%% "emotion__styled-base" % "10.0.10-67a20e",
+  "org.scalablytyped" %%% "emotion__stylis" % "0.8.3-4bdcd9",
   "org.scalablytyped" %%% "emotion__utils" % "0.11.1-255ee0",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20190322Z-992596",
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.3-dt-20190402Z-444aa6",
@@ -36,7 +37,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-9aa93f",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "storybook__client-logger" % "5.0.6-c9af9b",
-  "org.scalablytyped" %%% "storybook__theming" % "5.0.6-513788")
+  "org.scalablytyped" %%% "storybook__theming" % "5.0.6-9bfd77")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

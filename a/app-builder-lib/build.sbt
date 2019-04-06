@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "app-builder-lib"
-version := "20.39.0-18cdc2"
+version := "20.39.0-72dd48"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,8 +12,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "app-builder-bin" % "2.6.4-3a9366",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-986805",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.7-55a535",
-  "org.scalablytyped" %%% "builder-util" % "9.7.0-71ec50",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.1-c023d3",
+  "org.scalablytyped" %%% "builder-util" % "9.7.0-008ed4",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.2.0-c023d3",
   "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
   "org.scalablytyped" %%% "compare-version" % "v0.1.2-dt-20190322Z-91ef7c",
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "dotenv-expand" % "4.2.0-d02394",
   "org.scalablytyped" %%% "ejs" % "2.6-dt-20190223Z-2916f6",
   "org.scalablytyped" %%% "electron-osx-sign" % "0.4.11-b05352",
-  "org.scalablytyped" %%% "electron-publish" % "20.39.0-9ac72f",
+  "org.scalablytyped" %%% "electron-publish" % "20.39.0-09c0cf",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-42ef87",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-82585c",

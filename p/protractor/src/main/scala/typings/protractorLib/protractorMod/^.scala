@@ -15,8 +15,7 @@ object ^ extends js.Object {
   val Browser: seleniumDashWebdriverLib.seleniumDashWebdriverMod.IBrowser = js.native
   var By: protractorLib.builtLocatorsMod.ProtractorBy = js.native
   val Capability: seleniumDashWebdriverLib.seleniumDashWebdriverMod.ICapability = js.native
-  var Command: js.Any = js.native
-  var CommandName: js.Any = js.native
+  val CommandName: seleniumDashWebdriverLib.libCommandMod.ICommandName = js.native
   var ExpectedConditions: protractorLib.builtExpectedConditionsMod.ProtractorExpectedConditions = js.native
   val Key: seleniumDashWebdriverLib.libInputMod.IKey = js.native
   var browser: protractorLib.builtBrowserMod.ProtractorBrowser = js.native
@@ -24,6 +23,6 @@ object ^ extends js.Object {
   var element: protractorLib.builtBrowserMod.ElementHelper = js.native
   /* Extracted nested Instantiables into classes in protractorNs */
   var protractor: protractorLib.builtPtorMod.Ptor = js.native
-  var utils: protractorLib.Anon_Firefox = js.native
+  val utils: protractorLib.Anon_Firefox = js.native
 }
 

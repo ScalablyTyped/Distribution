@@ -1,12 +1,13 @@
 organization := "org.scalablytyped"
 name := "egg-mock"
-version := "3.x-dt-20190327Z-fb3e15"
+version := "3.x-dt-20190327Z-efb9bc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-0bdd08",
+  "org.scalablytyped" %%% "agentkeepalive" % "4.0.2-52efb0",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20190322Z-d84c1e",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-249d28",
   "org.scalablytyped" %%% "braces" % "2.3-dt-20180214Z-306649",
@@ -18,9 +19,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
   "org.scalablytyped" %%% "depd" % "1.1-dt-20181116Z-9c15e1",
   "org.scalablytyped" %%% "dir-glob" % "2.0-dt-20181212Z-a8a63d",
-  "org.scalablytyped" %%% "egg" % "2.20.2-e912ee",
+  "org.scalablytyped" %%% "egg" % "2.20.2-bdf2f3",
   "org.scalablytyped" %%% "egg-cookies" % "2.2.6-9855b6",
-  "org.scalablytyped" %%% "egg-core" % "4.16.1-1b947b",
+  "org.scalablytyped" %%% "egg-core" % "4.16.1-48f91e",
   "org.scalablytyped" %%% "egg-logger" % "2.4.1-5e1dad",
   "org.scalablytyped" %%% "egg-view" % "2.1.2-206324",
   "org.scalablytyped" %%% "escape-html" % "0.0-unknown-dt-20190322Z-616506",
@@ -31,11 +32,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ce8e08",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20190329Z-819655",
   "org.scalablytyped" %%% "glob-to-regexp" % "0.4-dt-20180607Z-95102e",
-  "org.scalablytyped" %%% "globby" % "9.2.0-43bdf7",
+  "org.scalablytyped" %%% "globby" % "9.2.0-2d4130",
   "org.scalablytyped" %%% "http-assert" % "1.4-dt-20181225Z-0cd2ad",
   "org.scalablytyped" %%% "humanize-ms" % "1.2-dt-20190305Z-e9bb14",
   "org.scalablytyped" %%% "iconv-lite" % "0.4.24-9813e6",
-  "org.scalablytyped" %%% "ignore" % "3.3.10-4b81ac",
+  "org.scalablytyped" %%% "ignore" % "4.0.6-56d479",
   "org.scalablytyped" %%% "inflection" % "1.5.0-dt-20190322Z-64b193",
   "org.scalablytyped" %%% "is-glob" % "4.0-dt-20190329Z-4226a6",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-cf9c5c",

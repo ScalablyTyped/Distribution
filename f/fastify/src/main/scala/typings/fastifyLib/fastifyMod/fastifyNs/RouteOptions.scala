@@ -15,6 +15,7 @@ trait RouteOptions[HttpServer, HttpRequest, HttpResponse, Query, Params, Headers
   var method: HTTPMethod | js.Array[HTTPMethod] = js.native
   var url: java.lang.String = js.native
   def handler(
+    `this`: FastifyInstance[nodeLib.httpMod.Server, HttpRequest, HttpResponse],
     request: FastifyRequest[HttpRequest, Query, Params, Headers, Body],
     reply: FastifyReply[HttpResponse]
   ): scala.Unit | js.Promise[_] = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pulumi__cloud"
-version := "v0.18.0-8f569b"
+version := "0.18.0-0299df"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -31,13 +31,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "protobufjs__path" % "1.1.2-aa4a7f",
   "org.scalablytyped" %%% "protobufjs__pool" % "1.1.0-87cd30",
   "org.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-3bda91",
-  "org.scalablytyped" %%% "pulumi__pulumi" % "0.17.4-17aad7",
+  "org.scalablytyped" %%% "pulumi__pulumi" % "0.17.4-06cca0",
   "org.scalablytyped" %%% "read-package-tree" % "5.2-dt-20180512Z-6e0a65",
   "org.scalablytyped" %%% "require-from-string" % "1.2-dt-20180214Z-85b005",
   "org.scalablytyped" %%% "source-map-support" % "0.5-dt-20190224Z-1843b4",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "ts-node" % "7.0.1-e7e00b",
-  "org.scalablytyped" %%% "typescript" % "3.4.1-a42773",
+  "org.scalablytyped" %%% "ts-node" % "7.0.1-9fb4a6",
+  "org.scalablytyped" %%% "typescript" % "3.4.2-a42773",
   "org.scalablytyped" %%% "upath" % "1.1.2-adf450",
   "org.scalablytyped" %%% "yn" % "3.0-dt-20190117Z-8238a5")
 publishArtifact in packageDoc := false

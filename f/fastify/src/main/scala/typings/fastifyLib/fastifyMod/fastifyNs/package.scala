@@ -48,7 +48,8 @@ package object fastifyNs {
     /* callback */ js.Function1[/* err */ js.UndefOr[FastifyError], scala.Unit], 
     scala.Unit
   ]
-  type RequestHandler[HttpRequest, HttpResponse, Query, Params, Headers, Body] = js.Function2[
+  type RequestHandler[HttpRequest, HttpResponse, Query, Params, Headers, Body] = js.ThisFunction2[
+    /* this */ FastifyInstance[nodeLib.httpMod.Server, HttpRequest, HttpResponse], 
     /* request */ FastifyRequest[HttpRequest, Query, Params, Headers, Body], 
     /* reply */ FastifyReply[HttpResponse], 
     scala.Unit | js.Promise[js.Any]

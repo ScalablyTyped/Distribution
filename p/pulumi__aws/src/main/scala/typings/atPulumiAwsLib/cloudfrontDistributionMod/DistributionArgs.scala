@@ -74,6 +74,15 @@ trait DistributionArgs extends js.Object {
     ]
   ] = js.undefined
   /**
+    * One or more origin_group for this
+    * distribution (multiples allowed).
+    */
+  val originGroups: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FailoverCriteriaMembers]]
+    ]
+  ] = js.undefined
+  /**
     * One or more origins for this
     * distribution (multiples allowed).
     */
@@ -144,6 +153,9 @@ object DistributionArgs {
         atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]
       ]
     ] = null,
+    originGroups: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FailoverCriteriaMembers]]
+    ] = null,
     priceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     retainOnDelete: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
@@ -158,6 +170,7 @@ object DistributionArgs {
     if (isIpv6Enabled != null) __obj.updateDynamic("isIpv6Enabled")(isIpv6Enabled.asInstanceOf[js.Any])
     if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
     if (orderedCacheBehaviors != null) __obj.updateDynamic("orderedCacheBehaviors")(orderedCacheBehaviors.asInstanceOf[js.Any])
+    if (originGroups != null) __obj.updateDynamic("originGroups")(originGroups.asInstanceOf[js.Any])
     if (priceClass != null) __obj.updateDynamic("priceClass")(priceClass.asInstanceOf[js.Any])
     if (retainOnDelete != null) __obj.updateDynamic("retainOnDelete")(retainOnDelete.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])

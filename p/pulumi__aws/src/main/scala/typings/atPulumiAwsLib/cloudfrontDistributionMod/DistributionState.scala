@@ -116,6 +116,15 @@ trait DistributionState extends js.Object {
     ]
   ] = js.undefined
   /**
+    * One or more origin_group for this
+    * distribution (multiples allowed).
+    */
+  val originGroups: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FailoverCriteriaMembers]]
+    ]
+  ] = js.undefined
+  /**
     * One or more origins for this
     * distribution (multiples allowed).
     */
@@ -199,6 +208,9 @@ object DistributionState {
         atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]
       ]
     ] = null,
+    originGroups: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FailoverCriteriaMembers]]
+    ] = null,
     origins: atPulumiPulumiLib.outputMod.Input[
       js.Array[
         atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CustomHeadersCustomOriginConfig]
@@ -231,6 +243,7 @@ object DistributionState {
     if (lastModifiedTime != null) __obj.updateDynamic("lastModifiedTime")(lastModifiedTime.asInstanceOf[js.Any])
     if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
     if (orderedCacheBehaviors != null) __obj.updateDynamic("orderedCacheBehaviors")(orderedCacheBehaviors.asInstanceOf[js.Any])
+    if (originGroups != null) __obj.updateDynamic("originGroups")(originGroups.asInstanceOf[js.Any])
     if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
     if (priceClass != null) __obj.updateDynamic("priceClass")(priceClass.asInstanceOf[js.Any])
     if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])

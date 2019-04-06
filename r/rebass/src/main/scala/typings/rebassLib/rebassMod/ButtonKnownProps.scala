@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation._
 trait ButtonKnownProps
   extends BoxKnownProps
      with styledDashSystemLib.styledDashSystemMod.FontWeightProps
-     with styledDashSystemLib.styledDashSystemMod.BorderProps[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
      with styledDashSystemLib.styledDashSystemMod.BordersProps
-     with styledDashSystemLib.styledDashSystemMod.BorderColorProps
-     with styledDashSystemLib.styledDashSystemMod.BorderRadiusProps[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
      with styledDashSystemLib.styledDashSystemMod.ButtonStyleProps
 
 object ButtonKnownProps {
@@ -38,8 +35,12 @@ object ButtonKnownProps {
     borderRight: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.BorderRightProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
+    borderStyle: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.BorderStyleProperty] = null,
     borderTop: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
       csstypeLib.csstypeMod.BorderTopProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
+    ] = null,
+    borderWidth: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[
+      csstypeLib.csstypeMod.BorderWidthProperty[styledDashSystemLib.styledDashSystemMod.TLengthStyledSystem]
     ] = null,
     children: reactLib.reactMod.ReactNs.ReactNode = null,
     color: styledDashSystemLib.styledDashSystemMod.ResponsiveValue[csstypeLib.csstypeMod.ColorProperty] = null,
@@ -141,7 +142,9 @@ object ButtonKnownProps {
     if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
     if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
     if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
+    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
     if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
     if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     if (css != null) __obj.updateDynamic("css")(css)

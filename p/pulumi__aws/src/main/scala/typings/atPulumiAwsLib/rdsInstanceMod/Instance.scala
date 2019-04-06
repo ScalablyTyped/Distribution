@@ -38,7 +38,6 @@ class Instance protected ()
     * are applied immediately, or during the next maintenance window. Default is
     * `false`. See [Amazon RDS Documentation for more
     * information.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.DBInstance.Modifying.html)
-    * for more information.
     */
   val applyImmediately: atPulumiPulumiLib.outputMod.Output[scala.Boolean] = js.native
   /**

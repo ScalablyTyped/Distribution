@@ -8,75 +8,75 @@ import scala.scalajs.js.annotation._
 object imageDashTypeLibStrings {
   @js.native
   sealed trait bmp
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait bpg
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait cr2
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait cur
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait dcm
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait flif
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait gif
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait heic
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait ico
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait jp2
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait jpg
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait jpm
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait jpx
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait jxr
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait png
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait psd
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait tif
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @js.native
   sealed trait webp
-    extends imageDashTypeLib.imageDashTypeMod.ImageType
+    extends imageDashTypeLib.imageDashTypeMod.imageTypeNs.ImageType
   
   @scala.inline
   def bmp: bmp = "bmp".asInstanceOf[bmp]

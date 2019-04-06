@@ -950,5 +950,40 @@ trait MediaLive
     awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateInputSecurityGroupResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
+  /**
+    * Update reservation.
+    */
+  def updateReservation(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def updateReservation(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Update reservation.
+    */
+  def updateReservation(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def updateReservation(
+    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.UpdateReservationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
 }
 

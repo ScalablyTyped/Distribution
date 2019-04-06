@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class InvariantError ()
   extends stdLib.Error {
   def this(message: java.lang.String) = this()
-  def this(message: scala.Double) = this()
   var framesToPop: scala.Double = js.native
   /* CompleteClass */
   override var message: java.lang.String = js.native

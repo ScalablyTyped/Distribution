@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-svg"
-version := "4.0.0-656c98"
+version := "4.1.0-a9a7bc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

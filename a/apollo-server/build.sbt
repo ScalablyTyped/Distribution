@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server"
-version := "2.4.8-ed16f2"
+version := "2.4.8-67219e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,14 +12,14 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.1-2c0f8d",
   "org.scalablytyped" %%% "apollo-env" % "0.4.0-6f466c",
   "org.scalablytyped" %%% "apollo-graphql" % "0.1.3-f11c53",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.11-0d8242",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.11-f30531",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.3.1-e72a35",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.4.8-a728d4",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.4.8-bfb024",
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-a091cd",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.2.1-41e252",
-  "org.scalablytyped" %%% "apollo-server-express" % "2.4.8-c93b53",
+  "org.scalablytyped" %%% "apollo-server-express" % "2.4.8-1b585b",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.3.7-5550e2",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.2.1-5d92c5",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.2.1-add0e3",
   "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.3.5-1a6ea5",
   "org.scalablytyped" %%% "apollographql__graphql-playground-html" % "1.6.6-f4bd24",
   "org.scalablytyped" %%% "async-retry" % "1.4-dt-20190404Z-ac75ca",
@@ -36,7 +36,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "graphql" % "14.2-dt-20190329Z-d9f4a2",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.1.0-2f13c2",
   "org.scalablytyped" %%% "graphql-tag" % "2.10.1-8907cf",
-  "org.scalablytyped" %%% "graphql-tools" % "4.0.4-5d95c3",
+  "org.scalablytyped" %%% "graphql-tools" % "4.0.4-f8e7af",
   "org.scalablytyped" %%% "iterall" % "1.2.2-f97d72",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "lodash_dot_sortby" % "4.7-dt-20190214Z-273079",
@@ -63,7 +63,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.16-6d221d",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-a7455c",
-  "org.scalablytyped" %%% "ts-invariant" % "0.3.2-e57298",
+  "org.scalablytyped" %%% "ts-invariant" % "0.2.1-4a4f36",
   "org.scalablytyped" %%% "tslib" % "1.9.3-446b32",
   "org.scalablytyped" %%% "type-is" % "1.6-dt-20180214Z-84c076",
   "org.scalablytyped" %%% "util_dot_promisify" % "1.0-dt-20180214Z-eebb35",

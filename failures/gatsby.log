@@ -1,3 +1,4 @@
+[warn ] Phase1ReadTypescript.scala:142 Could not resolve declared dependency gatsby-cli [id => gatsby, phase => typescript] 
 [debug] PhaseRunner.scala:90 Ignored [id => gatsby, phase => typescript] 
 [info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(react)) for TsIdentLibrarySimple(gatsby) [id => gatsby, phase => typescript, file => ../node_modules/gatsby/index.d.ts] 
 [debug] PhaseRunner.scala:82 Success [id => gatsby, phase => typescript] 

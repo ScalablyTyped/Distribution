@@ -46,7 +46,7 @@ trait FleetState extends js.Object {
     * Provide this to allow manage the company network configuration for the fleet. Fields documented below.
     */
   val network: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInputString]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray]
   ] = js.undefined
   /**
     * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region. Defaults to `true`.
@@ -66,7 +66,7 @@ object FleetState {
     identityProvider: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SamlMetadataType] = null,
     lastUpdatedTime: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    network: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInputString] = null,
+    network: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray] = null,
     optimizeForEndUserLocation: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
   ): FleetState = {
     val __obj = js.Dynamic.literal()

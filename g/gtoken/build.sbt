@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "gtoken"
-version := "2.3.3-2187c4"
+version := "2.3.3-4b6d19"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "abort-controller" % "2.0.3-3eaeb3",
+  "org.scalablytyped" %%% "abort-controller" % "3.0.0-3eaeb3",
   "org.scalablytyped" %%% "event-target-shim" % "5.0.1-4b0f6d",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-ef9ad3",
-  "org.scalablytyped" %%% "gaxios" % "1.8.3-f43fba",
+  "org.scalablytyped" %%% "gaxios" % "1.8.3-474fb3",
   "org.scalablytyped" %%% "google-p12-pem" % "1.0.4-e61bec",
   "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-68b4ad",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",

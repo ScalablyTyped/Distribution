@@ -39,6 +39,10 @@ class GraphQLApi protected ()
     */
   val openidConnectConfig: atPulumiPulumiLib.outputMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AuthTtl]] = js.native
   /**
+    * The schema definition, in GraphQL schema language format. Terraform cannot perform drift detection of this configuration.
+    */
+  val schema: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
+  /**
     * Map of URIs associated with the API. e.g. `uris["GRAPHQL"] = https://ID.appsync-api.REGION.amazonaws.com/graphql`
     */
   val uris: atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.native

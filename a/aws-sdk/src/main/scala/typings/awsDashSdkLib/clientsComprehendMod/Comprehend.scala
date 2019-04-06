@@ -1028,7 +1028,7 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists all tags associated with a given Amazon Comprehend resource. Up to the maximum number of tags allowed per resource will be displayed. 
+    * Lists all tags associated with a given Amazon Comprehend resource. 
     */
   def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTagsForResourceResponse, 
@@ -1045,7 +1045,7 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists all tags associated with a given Amazon Comprehend resource. Up to the maximum number of tags allowed per resource will be displayed. 
+    * Lists all tags associated with a given Amazon Comprehend resource. 
     */
   def listTagsForResource(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.ListTagsForResourceResponse, 
@@ -1518,7 +1518,7 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Associates a specific tag with an Amazon Comprehend resource. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with the key-value pair ‘Department’:’Sales’ might be added to a resource to indicate its use by a particular department. 
+    * Associates a specific tag with an Amazon Comprehend resource. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department. 
     */
   def tagResource(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.TagResourceResponse, 
@@ -1535,7 +1535,7 @@ trait Comprehend
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Associates a specific tag with an Amazon Comprehend resource. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with the key-value pair ‘Department’:’Sales’ might be added to a resource to indicate its use by a particular department. 
+    * Associates a specific tag with an Amazon Comprehend resource. A tag is a key-value pair that adds as a metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department. 
     */
   def tagResource(params: awsDashSdkLib.clientsComprehendMod.ComprehendNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsComprehendMod.ComprehendNs.TagResourceResponse, 

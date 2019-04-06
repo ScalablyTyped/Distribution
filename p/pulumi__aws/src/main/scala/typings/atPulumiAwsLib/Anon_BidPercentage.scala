@@ -12,6 +12,7 @@ trait Anon_BidPercentage extends js.Object {
   var imageId: js.UndefOr[java.lang.String] = js.undefined
   var instanceRole: java.lang.String
   var instanceTypes: js.Array[java.lang.String]
+  var launchTemplate: js.UndefOr[Anon_LaunchTemplateIdLaunchTemplateNameVersion] = js.undefined
   var maxVcpus: scala.Double
   var minVcpus: scala.Double
   var securityGroupIds: js.Array[java.lang.String]
@@ -35,6 +36,7 @@ object Anon_BidPercentage {
     desiredVcpus: scala.Int | scala.Double = null,
     ec2KeyPair: java.lang.String = null,
     imageId: java.lang.String = null,
+    launchTemplate: Anon_LaunchTemplateIdLaunchTemplateNameVersion = null,
     spotIamFleetRole: java.lang.String = null,
     tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
   ): Anon_BidPercentage = {
@@ -44,6 +46,7 @@ object Anon_BidPercentage {
     if (desiredVcpus != null) __obj.updateDynamic("desiredVcpus")(desiredVcpus.asInstanceOf[js.Any])
     if (ec2KeyPair != null) __obj.updateDynamic("ec2KeyPair")(ec2KeyPair)
     if (imageId != null) __obj.updateDynamic("imageId")(imageId)
+    if (launchTemplate != null) __obj.updateDynamic("launchTemplate")(launchTemplate)
     if (spotIamFleetRole != null) __obj.updateDynamic("spotIamFleetRole")(spotIamFleetRole)
     if (tags != null) __obj.updateDynamic("tags")(tags)
     __obj.asInstanceOf[Anon_BidPercentage]

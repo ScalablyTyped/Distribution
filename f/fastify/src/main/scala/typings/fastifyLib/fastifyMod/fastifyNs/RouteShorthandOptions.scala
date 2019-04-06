@@ -28,6 +28,9 @@ trait RouteShorthandOptions[HttpServer, HttpRequest, HttpResponse, Query, Params
       FastifyMiddleware[HttpServer, HttpRequest, HttpResponse, Query, Params, Headers, Body]
     ])
   ] = js.undefined
+  var prefixTrailingSlash: js.UndefOr[
+    fastifyLib.fastifyLibStrings.slash | fastifyLib.fastifyLibStrings.`no-slash` | fastifyLib.fastifyLibStrings.both
+  ] = js.undefined
   var schema: js.UndefOr[RouteSchema] = js.undefined
   var schemaCompiler: js.UndefOr[SchemaCompiler] = js.undefined
 }
@@ -48,6 +51,7 @@ object RouteShorthandOptions {
     preValidation: (FastifyMiddleware[HttpServer, HttpRequest, HttpResponse, Query, Params, Headers, Body]) | (js.Array[
       FastifyMiddleware[HttpServer, HttpRequest, HttpResponse, Query, Params, Headers, Body]
     ]) = null,
+    prefixTrailingSlash: fastifyLib.fastifyLibStrings.slash | fastifyLib.fastifyLibStrings.`no-slash` | fastifyLib.fastifyLibStrings.both = null,
     schema: RouteSchema = null,
     schemaCompiler: SchemaCompiler = null
   ): RouteShorthandOptions[HttpServer, HttpRequest, HttpResponse, Query, Params, Headers, Body] = {
@@ -59,6 +63,7 @@ object RouteShorthandOptions {
     if (preHandler != null) __obj.updateDynamic("preHandler")(preHandler.asInstanceOf[js.Any])
     if (preSerialization != null) __obj.updateDynamic("preSerialization")(preSerialization.asInstanceOf[js.Any])
     if (preValidation != null) __obj.updateDynamic("preValidation")(preValidation.asInstanceOf[js.Any])
+    if (prefixTrailingSlash != null) __obj.updateDynamic("prefixTrailingSlash")(prefixTrailingSlash.asInstanceOf[js.Any])
     if (schema != null) __obj.updateDynamic("schema")(schema)
     if (schemaCompiler != null) __obj.updateDynamic("schemaCompiler")(schemaCompiler)
     __obj.asInstanceOf[RouteShorthandOptions[HttpServer, HttpRequest, HttpResponse, Query, Params, Headers, Body]]

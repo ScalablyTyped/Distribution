@@ -1,5 +1,5 @@
 ```
-// Type definitions for styled-system 4.0
+// Type definitions for styled-system 4.1
 // Project: https://github.com/jxnblk/styled-system#readme
 // Definitions by: Marshall Bowers <https://github.com/maxdeviant>
 //                 Ben McCormick <https://github.com/phobon>

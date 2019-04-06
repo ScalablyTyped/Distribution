@@ -35,8 +35,8 @@ trait AccessKeyState extends js.Object {
     */
   val sesSmtpPassword: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
-    * "Active" or "Inactive". Keys are initially active, but can be made
-    * inactive by other means.
+    * The access key status to apply. Defaults to `Active`.
+    * Valid values are `Active` and `Inactive`.
     */
   val status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**

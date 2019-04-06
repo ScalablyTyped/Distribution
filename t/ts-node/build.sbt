@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ts-node"
-version := "7.0.1-e7e00b"
+version := "7.0.1-9fb4a6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "source-map-support" % "0.5-dt-20190224Z-1843b4",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "typescript" % "3.4.1-a42773",
+  "org.scalablytyped" %%% "typescript" % "3.4.2-a42773",
   "org.scalablytyped" %%% "yn" % "3.0-dt-20190117Z-8238a5")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

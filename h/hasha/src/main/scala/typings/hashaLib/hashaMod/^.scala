@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("hasha", JSImport.Namespace)
 @js.native
-object ^
-  extends org.scalablytyped.runtime.TopLevel[hashaLib.Anon_Buffer]
+object ^ extends js.Object {
+  val default: hashaLib.Anon_Buffer = js.native
+}
 

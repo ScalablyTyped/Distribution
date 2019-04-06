@@ -110,6 +110,11 @@ class Distribution protected ()
     */
   val orderedCacheBehaviors: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AllowedMethodsCachedMethods]]] = js.native
   /**
+    * One or more origin_group for this
+    * distribution (multiples allowed).
+    */
+  val originGroups: atPulumiPulumiLib.outputMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FailoverCriteria]]] = js.native
+  /**
     * One or more origins for this
     * distribution (multiples allowed).
     */

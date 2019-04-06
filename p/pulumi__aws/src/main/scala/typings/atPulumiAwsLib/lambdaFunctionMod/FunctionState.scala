@@ -116,7 +116,7 @@ trait FunctionState extends js.Object {
     * Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
     */
   val vpcConfig: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInput]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcId]
   ] = js.undefined
 }
 
@@ -149,7 +149,7 @@ object FunctionState {
     timeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     tracingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ModeInput] = null,
     version: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInput] = null
+    vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcId] = null
   ): FunctionState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])

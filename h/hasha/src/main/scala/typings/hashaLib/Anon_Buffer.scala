@@ -8,89 +8,63 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Buffer extends js.Object {
   /**
-  	Calculate the hash for a `string`, `Buffer`, or an array thereof.
-  	@param input - Data you want to hash.
-  	While strings are supported you should prefer buffers as they're faster to hash. Although if you already have a string you should not convert it to a buffer.
-  	Pass an array instead of concatenating strings and/or buffers. The output is the same, but arrays do not incur the overhead of concatenation.
-  	@returns A hash.
-  	@example
-  	```
-  	import hasha = require('hasha');
-  	hasha('unicorn');
-  	//=> 'e233b19aabc7d5e53826fb734d1222f1f0444c3a3fc67ff4af370a66e7cadd2cb24009f1bc86f0bed12ca5fcb226145ad10fc5f650f6ef0959f8aadc5a594b27'
-  	```
-  	*/
-  def apply(input: hashaLib.hashaMod.hashaNs.HashaInput): java.lang.String = js.native
+  	 * Calculate the hash for a `string`, `Buffer`, or an array thereof.
+  	 *
+  	 * @param input - Data you want to hash.
+  	 *
+  	 * While strings are supported you should prefer buffers as they're faster to hash. Although if you already have a string you should not convert it to a buffer.
+  	 *
+  	 * Pass an array instead of concatenating strings and/or buffers. The output is the same, but arrays do not incur the overhead of concatenation.
+  	 *
+  	 * @returns A hash.
+  	 */
+  def apply(input: hashaLib.hashaMod.HashaInput): java.lang.String = js.native
   def apply(
-    input: hashaLib.hashaMod.hashaNs.HashaInput,
-    options: hashaLib.hashaMod.hashaNs.Options[hashaLib.hashaLibStrings.buffer]
+    input: hashaLib.hashaMod.HashaInput,
+    options: hashaLib.hashaMod.Options[hashaLib.hashaLibStrings.buffer]
   ): nodeLib.Buffer = js.native
   /**
-  	Calculate the hash for a file.
-  	@param filePath - Path to a file you want to hash.
-  	@returns The calculated file hash.
-  	@example
-  	```
-  	import hasha = require('hasha');
-  	(async () => {
-  		// Get the MD5 hash of an image
-  		const hash = await hasha.fromFile('unicorn.png', {algorithm: 'md5'});
-  		console.log(hash);
-  		//=> '1abcb33beeb811dca15f0ac3e47b88d9'
-  	})();
-  	```
-  	*/
+  	 * Calculate the hash for a file.
+  	 *
+  	 * @param filePath - Path to a file you want to hash.
+  	 * @returns The calculated file hash.
+  	 */
   def fromFile(filePath: java.lang.String): js.Promise[java.lang.String | scala.Null] = js.native
-  def fromFile(
-    filePath: java.lang.String,
-    options: hashaLib.hashaMod.hashaNs.Options[hashaLib.hashaMod.hashaNs.ToStringEncoding]
-  ): js.Promise[java.lang.String | scala.Null] = js.native
+  def fromFile(filePath: java.lang.String, options: hashaLib.hashaMod.Options[hashaLib.hashaMod.ToStringEncoding]): js.Promise[java.lang.String | scala.Null] = js.native
   /**
-  	Synchronously calculate the hash for a file.
-  	@param filePath - Path to a file you want to hash.
-  	@returns The calculated file hash.
-  	*/
+  	 * Synchronously calculate the hash for a file.
+  	 *
+  	 * @param filePath - Path to a file you want to hash.
+  	 * @returns The calculated file hash.
+  	 */
   def fromFileSync(filePath: java.lang.String): java.lang.String = js.native
-  def fromFileSync(
-    filePath: java.lang.String,
-    options: hashaLib.hashaMod.hashaNs.Options[hashaLib.hashaMod.hashaNs.ToStringEncoding]
-  ): java.lang.String = js.native
+  def fromFileSync(filePath: java.lang.String, options: hashaLib.hashaMod.Options[hashaLib.hashaMod.ToStringEncoding]): java.lang.String = js.native
   @JSName("fromFileSync")
-  def fromFileSync_buffer(
-    filePath: java.lang.String,
-    options: hashaLib.hashaMod.hashaNs.Options[hashaLib.hashaLibStrings.buffer]
-  ): nodeLib.Buffer = js.native
+  def fromFileSync_buffer(filePath: java.lang.String, options: hashaLib.hashaMod.Options[hashaLib.hashaLibStrings.buffer]): nodeLib.Buffer = js.native
   @JSName("fromFile")
-  def fromFile_buffer(
-    filePath: java.lang.String,
-    options: hashaLib.hashaMod.hashaNs.Options[hashaLib.hashaLibStrings.buffer]
-  ): js.Promise[nodeLib.Buffer | scala.Null] = js.native
+  def fromFile_buffer(filePath: java.lang.String, options: hashaLib.hashaMod.Options[hashaLib.hashaLibStrings.buffer]): js.Promise[nodeLib.Buffer | scala.Null] = js.native
   /**
-  	Calculate the hash for a stream.
-  	@param stream - A stream you want to hash.
-  	@returns The calculated hash.
-  	*/
-  def fromStream(stream: nodeLib.NodeJSNs.ReadableStream): js.Promise[java.lang.String | scala.Null] = js.native
+  	 * Calculate the hash for a stream.
+  	 *
+  	 * @param stream - A stream you want to hash.
+  	 * @returns The calculated hash.
+  	 */
+  def fromStream(stream: nodeLib.streamMod.Readable): js.Promise[java.lang.String | scala.Null] = js.native
   def fromStream(
-    stream: nodeLib.NodeJSNs.ReadableStream,
-    options: hashaLib.hashaMod.hashaNs.Options[hashaLib.hashaMod.hashaNs.ToStringEncoding]
+    stream: nodeLib.streamMod.Readable,
+    options: hashaLib.hashaMod.Options[hashaLib.hashaMod.ToStringEncoding]
   ): js.Promise[java.lang.String | scala.Null] = js.native
   @JSName("fromStream")
   def fromStream_buffer(
-    stream: nodeLib.NodeJSNs.ReadableStream,
-    options: hashaLib.hashaMod.hashaNs.Options[hashaLib.hashaLibStrings.buffer]
+    stream: nodeLib.streamMod.Readable,
+    options: hashaLib.hashaMod.Options[hashaLib.hashaLibStrings.buffer]
   ): js.Promise[nodeLib.Buffer | scala.Null] = js.native
   /**
-  	Create a [hash transform stream](https://nodejs.org/api/crypto.html#crypto_class_hash).
-  	@returns The created hash transform stream.
-  	@example
-  	```
-  	import hasha = require('hasha');
-  	// Hash the process input and output the hash sum
-  	process.stdin.pipe(hasha.stream()).pipe(process.stdout);
-  	```
-  	*/
+  	 * Create a [hash transform stream](https://nodejs.org/api/crypto.html#crypto_class_hash).
+  	 *
+  	 * @returns The created hash transform stream.
+  	 */
   def stream(): nodeLib.cryptoMod.Hash = js.native
-  def stream(options: hashaLib.hashaMod.hashaNs.Options[hashaLib.hashaMod.hashaNs.HashaEncoding]): nodeLib.cryptoMod.Hash = js.native
+  def stream(options: hashaLib.hashaMod.Options[hashaLib.hashaMod.HashaEncoding]): nodeLib.cryptoMod.Hash = js.native
 }
 

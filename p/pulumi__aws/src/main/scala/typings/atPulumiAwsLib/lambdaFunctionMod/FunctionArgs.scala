@@ -91,7 +91,7 @@ trait FunctionArgs extends js.Object {
     * Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
     */
   val vpcConfig: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInput]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcId]
   ] = js.undefined
 }
 
@@ -118,7 +118,7 @@ object FunctionArgs {
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
     timeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     tracingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ModeInput] = null,
-    vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInput] = null
+    vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcId] = null
   ): FunctionArgs = {
     val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any])
     if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])

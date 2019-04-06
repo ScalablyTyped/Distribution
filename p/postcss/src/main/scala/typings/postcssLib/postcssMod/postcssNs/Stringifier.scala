@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait Stringifier extends js.Object {
   @JSName("builder")
   var builder_Original: postcssLib.postcssMod.postcssNs.StringifierNs.Builder = js.native
-  def apply(node: Node, builder: Builder): scala.Unit = js.native
   def atrule(node: js.Any, semicolon: js.Any): scala.Unit = js.native
   def beforeAfter(node: js.Any, detect: js.Any): js.Any = js.native
   def block(node: js.Any, start: js.Any): scala.Unit = js.native

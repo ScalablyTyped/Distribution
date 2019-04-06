@@ -55,6 +55,10 @@ class EventRule protected ()
     */
   val scheduleExpression: atPulumiPulumiLib.outputMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.outputMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  /**
     * Creates a new subscription to events fired from this EventRule to the handler provided, along
     * with options to control the behavior of the subscription.
     */

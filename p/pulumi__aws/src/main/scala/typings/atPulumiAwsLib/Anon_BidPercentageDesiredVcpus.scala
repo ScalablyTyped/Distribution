@@ -12,6 +12,7 @@ trait Anon_BidPercentageDesiredVcpus extends js.Object {
   var imageId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   var instanceRole: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   var instanceTypes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
+  var launchTemplate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Anon_LaunchTemplateIdLaunchTemplateName]] = js.undefined
   var maxVcpus: atPulumiPulumiLib.outputMod.Input[scala.Double]
   var minVcpus: atPulumiPulumiLib.outputMod.Input[scala.Double]
   var securityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
@@ -35,6 +36,7 @@ object Anon_BidPercentageDesiredVcpus {
     desiredVcpus: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
     ec2KeyPair: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     imageId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    launchTemplate: atPulumiPulumiLib.outputMod.Input[Anon_LaunchTemplateIdLaunchTemplateName] = null,
     spotIamFleetRole: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
   ): Anon_BidPercentageDesiredVcpus = {
@@ -44,6 +46,7 @@ object Anon_BidPercentageDesiredVcpus {
     if (desiredVcpus != null) __obj.updateDynamic("desiredVcpus")(desiredVcpus.asInstanceOf[js.Any])
     if (ec2KeyPair != null) __obj.updateDynamic("ec2KeyPair")(ec2KeyPair.asInstanceOf[js.Any])
     if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
+    if (launchTemplate != null) __obj.updateDynamic("launchTemplate")(launchTemplate.asInstanceOf[js.Any])
     if (spotIamFleetRole != null) __obj.updateDynamic("spotIamFleetRole")(spotIamFleetRole.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_BidPercentageDesiredVcpus]

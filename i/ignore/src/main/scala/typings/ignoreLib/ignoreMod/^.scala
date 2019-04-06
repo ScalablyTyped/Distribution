@@ -12,5 +12,6 @@ object ^ extends js.Object {
     * Creates new ignore manager.
     */
   def default(): Ignore = js.native
+  def default(options: Options): Ignore = js.native
 }
 

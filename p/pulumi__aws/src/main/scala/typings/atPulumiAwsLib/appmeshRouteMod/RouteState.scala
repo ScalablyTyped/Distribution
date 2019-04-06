@@ -30,6 +30,9 @@ trait RouteState extends js.Object {
     * The route specification to apply.
     */
   val spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HttpRouteAnonActionMatch]] = js.undefined
+  /**
+    * The name of the virtual router in which to create the route.
+    */
   val virtualRouterName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

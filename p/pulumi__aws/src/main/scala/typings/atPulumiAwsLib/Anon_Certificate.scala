@@ -10,6 +10,7 @@ trait Anon_Certificate extends js.Object {
   var computeType: java.lang.String
   var environmentVariables: js.Array[Anon_NameType]
   var image: java.lang.String
+  var imagePullCredentialsType: js.UndefOr[java.lang.String] = js.undefined
   var privilegedMode: js.UndefOr[scala.Boolean] = js.undefined
   var `type`: java.lang.String
 }
@@ -22,11 +23,13 @@ object Anon_Certificate {
     image: java.lang.String,
     `type`: java.lang.String,
     certificate: java.lang.String = null,
+    imagePullCredentialsType: java.lang.String = null,
     privilegedMode: js.UndefOr[scala.Boolean] = js.undefined
   ): Anon_Certificate = {
     val __obj = js.Dynamic.literal(computeType = computeType, environmentVariables = environmentVariables, image = image)
     __obj.updateDynamic("type")(`type`)
     if (certificate != null) __obj.updateDynamic("certificate")(certificate)
+    if (imagePullCredentialsType != null) __obj.updateDynamic("imagePullCredentialsType")(imagePullCredentialsType)
     if (!js.isUndefined(privilegedMode)) __obj.updateDynamic("privilegedMode")(privilegedMode)
     __obj.asInstanceOf[Anon_Certificate]
   }

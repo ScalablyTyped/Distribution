@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rebass"
-version := "3.0-dt-20190212Z-1b334b"
+version := "3.0-dt-20190212Z-30c376"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,8 +12,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-d8f967",
   "org.scalablytyped" %%% "react-native" % "0.57-dt-20190327Z-f86512",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190223Z-171551",
-  "org.scalablytyped" %%% "styled-system" % "4.0-dt-20190316Z-882bde")
+  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190405Z-65a1d9",
+  "org.scalablytyped" %%% "styled-system" % "4.1-dt-20190405Z-cc2265")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

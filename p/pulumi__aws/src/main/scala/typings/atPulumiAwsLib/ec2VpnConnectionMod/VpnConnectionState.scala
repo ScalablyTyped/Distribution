@@ -30,6 +30,10 @@ trait VpnConnectionState extends js.Object {
     */
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
   /**
+    * When associated with an EC2 Transit Gateway (`transit_gateway_id` argument), the attachment ID.
+    */
+  val transitGatewayAttachmentId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  /**
     * The ID of the EC2 Transit Gateway.
     */
   val transitGatewayId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
@@ -118,6 +122,7 @@ object VpnConnectionState {
     ] = null,
     staticRoutesOnly: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
     tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     transitGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tunnel1Address: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     tunnel1BgpAsn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
@@ -147,6 +152,7 @@ object VpnConnectionState {
     if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     if (staticRoutesOnly != null) __obj.updateDynamic("staticRoutesOnly")(staticRoutesOnly.asInstanceOf[js.Any])
     if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (transitGatewayAttachmentId != null) __obj.updateDynamic("transitGatewayAttachmentId")(transitGatewayAttachmentId.asInstanceOf[js.Any])
     if (transitGatewayId != null) __obj.updateDynamic("transitGatewayId")(transitGatewayId.asInstanceOf[js.Any])
     if (tunnel1Address != null) __obj.updateDynamic("tunnel1Address")(tunnel1Address.asInstanceOf[js.Any])
     if (tunnel1BgpAsn != null) __obj.updateDynamic("tunnel1BgpAsn")(tunnel1BgpAsn.asInstanceOf[js.Any])

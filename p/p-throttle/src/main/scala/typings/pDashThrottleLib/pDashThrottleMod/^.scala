@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p-throttle", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  def default[Arguments /* <: js.Array[_] */, Return](
-    fn: js.Function1[/* arguments */ Arguments, js.Thenable[Return] | Return],
-    limit: scala.Double,
-    interval: scala.Double
-  ): ThrottledFunction[Arguments, Return] = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[pDashThrottleLib.Anon_AbortErrorArguments]
 

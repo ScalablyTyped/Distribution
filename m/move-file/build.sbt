@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "move-file"
-version := "1.2.0-9171de"
+version := "1.2.0-0ed18e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "cp-file" % "6.2.0-bbf729",
+  "org.scalablytyped" %%% "cp-file" % "6.2.0-49d49f",
   "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20190212Z-fddb7c",
-  "org.scalablytyped" %%% "make-dir" % "3.0.0-15c367",
+  "org.scalablytyped" %%% "make-dir" % "2.1.0-6bf802",
   "org.scalablytyped" %%% "nested-error-stacks" % "2.1-dt-20180828Z-87d30a",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
   "org.scalablytyped" %%% "path-exists" % "3.0-dt-20180214Z-3b459a",

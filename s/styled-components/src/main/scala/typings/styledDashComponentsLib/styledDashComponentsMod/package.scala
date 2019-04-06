@@ -29,10 +29,6 @@ package object styledDashComponentsMod {
   */
   type Interpolation[P] = _Interpolation[P] | InterpolationValue
   type InterpolationValue = java.lang.String | scala.Double | FalseyValue | Keyframes | styledDashComponentsLib.StyledComponentInterpolation | CSSObject
-  type OmitU[T, K /* <: java.lang.String */] = PickU[T, stdLib.Exclude[java.lang.String, K]]
-  type PickU[T, K /* <: java.lang.String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in K ]: T[P]}
-    */ styledDashComponentsLib.styledDashComponentsLibStrings.PickU with T
   type SimpleInterpolation = InterpolationValue | FlattenSimpleInterpolation
   type StyledComponent[C /* <: java.lang.String */, T /* <: js.Object */, O /* <: js.Object */, A /* <: java.lang.String */] = (// the "string" allows this to be used as an object key
   // I really want to avoid this if possible but it's the only way to use nesting with object styles...
@@ -45,10 +41,10 @@ package object styledDashComponentsMod {
   T /* <: js.Object */, // The other props added by the template
   O /* <: js.Object */, // The props that are made optional by .attrs
   A /* <: java.lang.String */] = (styledDashComponentsLib.WithOptionalTheme[
-    (OmitU[
+    (styledDashComponentsLib.Omit[
       (styledDashComponentsLib.ReactDefaultizedProps[C, reactLib.reactMod.ReactNs.ComponentPropsWithRef[C]]) with O, 
       A
-    ]) with (stdLib.Partial[PickU[reactLib.reactMod.ReactNs.ComponentPropsWithRef[C] with O, A]]), 
+    ]) with (stdLib.Partial[stdLib.Pick[reactLib.reactMod.ReactNs.ComponentPropsWithRef[C] with O, A]]), 
     T
   ]) with styledDashComponentsLib.WithChildrenIfReactComponentClass[C]
   type StyledComponentPropsWithRef[C /* <: java.lang.String */] = reactLib.reactMod.ReactNs.ComponentPropsWithRef[C] | reactLib.reactMod.ReactNs.ComponentPropsWithRef[StyledComponentInnerComponent[C]]

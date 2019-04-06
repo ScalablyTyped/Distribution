@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZone extends js.Object {
-  var launchTemplateSpecification: Anon_LaunchTemplateIdLaunchTemplateNameVersion
+  var launchTemplateSpecification: Anon_LaunchTemplateIdLaunchTemplateNameVersionString
   var overrides: js.UndefOr[js.Array[Anon_AvailabilityZone]] = js.undefined
 }
 
 object Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZone {
   @scala.inline
   def apply(
-    launchTemplateSpecification: Anon_LaunchTemplateIdLaunchTemplateNameVersion,
+    launchTemplateSpecification: Anon_LaunchTemplateIdLaunchTemplateNameVersionString,
     overrides: js.Array[Anon_AvailabilityZone] = null
   ): Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZone = {
     val __obj = js.Dynamic.literal(launchTemplateSpecification = launchTemplateSpecification)

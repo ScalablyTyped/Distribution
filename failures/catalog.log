@@ -1,4 +1,3 @@
-[warn ] Phase1ReadTypescript.scala:142 Could not resolve declared dependency react-router-scroll [id => catalog, phase => typescript] 
 [info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(react)) for TsIdentLibrarySimple(catalog) [id => catalog, phase => typescript, file => ../types/catalog/index.d.ts] 
 [debug] PhaseRunner.scala:82 Success [id => catalog, phase => typescript] 
 [info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/catalog/types/catalog/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/catalog),TsIdentLibrarySimple(catalog)),TsIdentModule(None,List(catalog))) [id => catalog, phase => typescript] 

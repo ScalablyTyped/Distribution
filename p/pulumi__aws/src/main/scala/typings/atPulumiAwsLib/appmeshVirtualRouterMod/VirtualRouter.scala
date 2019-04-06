@@ -41,7 +41,7 @@ class VirtualRouter protected ()
   /**
     * The virtual router specification to apply.
     */
-  val spec: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_ServiceNames] = js.native
+  val spec: atPulumiPulumiLib.outputMod.Output[atPulumiAwsLib.Anon_Listener] = js.native
 }
 
 /* static members */

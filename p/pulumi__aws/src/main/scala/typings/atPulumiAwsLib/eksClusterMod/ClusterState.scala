@@ -39,7 +39,7 @@ trait ClusterState extends js.Object {
     * Nested argument for the VPC associated with your cluster. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see [Cluster VPC Considerations](https://docs.aws.amazon.com/eks/latest/userguide/network_reqs.html) and [Cluster Security Group Considerations](https://docs.aws.amazon.com/eks/latest/userguide/sec-group-reqs.html) in the Amazon EKS User Guide. Configuration detailed below.
     */
   val vpcConfig: js.UndefOr[
-    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcId]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EndpointPrivateAccessEndpointPublicAccess]
   ] = js.undefined
 }
 
@@ -54,7 +54,7 @@ object ClusterState {
     platformVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
     version: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
-    vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcId] = null
+    vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EndpointPrivateAccessEndpointPublicAccess] = null
   ): ClusterState = {
     val __obj = js.Dynamic.literal()
     if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
