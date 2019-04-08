@@ -16,7 +16,7 @@ class default protected () extends Spin {
 @js.native
 object default extends js.Object {
   var defaultProps: antdLib.Anon_Default = js.native
-  var propTypes: antdLib.Anon_ClassNameDefault = js.native
+  var propTypes: antdLib.Anon_ClassName = js.native
   def setDefaultIndicator(indicator: reactLib.reactMod.ReactNs.ReactNode): scala.Unit = js.native
 }
 

@@ -6,10 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DetailedArguments extends js.Object {
+  /** The inferred list of aliases built by combining lists in opts.alias. */
   var aliases: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
+  /** An object representing the parsed value of `args` */
   var argv: Arguments
+  /** The configuration loaded from the yargs stanza in package.json. */
   var configuration: Configuration
+  /** Populated with an error object if an exception occurred during parsing. */
   var error: stdLib.Error | scala.Null
+  /** Any new aliases added via camel-case expansion. */
   var newAliases: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 }
 

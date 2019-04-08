@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "onsenui"
-version := "2.10.8-309b79"
+version := "2.10.8-971bce"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,8 +14,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-ce8e08",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20190329Z-819655",
   "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20190322Z-6a3a24",
-  "org.scalablytyped" %%% "gulp" % "4.0-dt-20190322Z-b996f6",
-  "org.scalablytyped" %%% "gulp-protractor" % "v1.0.0-dt-20190322Z-a3c602",
+  "org.scalablytyped" %%% "gulp" % "4.0-dt-20190405Z-26813e",
+  "org.scalablytyped" %%% "gulp-protractor" % "v1.0.0-dt-20190322Z-39c43f",
   "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-75670b",
   "org.scalablytyped" %%% "is-binary-path" % "2.0-dt-20180214Z-900f29",
   "org.scalablytyped" %%% "is-glob" % "4.0-dt-20190329Z-4226a6",
@@ -24,7 +24,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "normalize-path" % "3.0-dt-20181225Z-45086b",
   "org.scalablytyped" %%% "path-is-absolute" % "1.0-dt-20180214Z-ae48af",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "undertaker" % "1.2-dt-20190212Z-8568ec",
+  "org.scalablytyped" %%% "undertaker" % "1.2-dt-20190405Z-3bdff6",
   "org.scalablytyped" %%% "undertaker-registry" % "1.0-dt-20180214Z-8c5417",
   "org.scalablytyped" %%% "upath" % "1.1.2-adf450",
   "org.scalablytyped" %%% "vinyl" % "2.0-dt-20181121Z-831268",

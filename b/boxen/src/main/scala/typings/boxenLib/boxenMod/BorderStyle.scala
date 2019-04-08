@@ -35,13 +35,5 @@ object BorderStyle extends js.Object {
   sealed trait SingleDouble
     extends boxenLib.boxenMod.BorderStyle
   
-  /* "classic" */ val Classic: Classic with java.lang.String = js.native
-  /* "double" */ val Double: Double with java.lang.String = js.native
-  /* "doubleSingle" */ val DoubleSingle: DoubleSingle with java.lang.String = js.native
-  /* "round" */ val Round: Round with java.lang.String = js.native
-  /* "single" */ val Single: Single with java.lang.String = js.native
-  /* "singleDouble" */ val SingleDouble: SingleDouble with java.lang.String = js.native
-  @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[boxenLib.boxenMod.BorderStyle with java.lang.String] = js.native
 }
 

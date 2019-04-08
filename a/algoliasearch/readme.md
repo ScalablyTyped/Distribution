@@ -8,6 +8,7 @@
 //                 Kai Eichinger <https://github.com/keichinger>
 //                 Nery Ortez <https://github.com/neryortez>
 //                 Antoine Rousseau <https://github.com/antoinerousseau>
+//                 Luca Pasquale <https://github.com/lucapasquale>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 // Type definitions for algoliasearch-client-js 3.30.1

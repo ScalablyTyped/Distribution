@@ -34,9 +34,11 @@ class Group ()
   var useSetOnGroup: js.UndefOr[scala.Boolean] = js.native
   /**
   	 * Adds an object to a group; Then recalculates group's dimension, position.
+    * @param [Object] object
   	 * @return thisArg
   	 * @chainable
   	 */
+  def addWithUpdate(): Group = js.native
   def addWithUpdate(`object`: Object): Group = js.native
   /**
   	 * Returns number representation of a collection complexity

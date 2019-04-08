@@ -78,7 +78,7 @@ trait Anon_Anticlockwise extends js.Object {
   def fillText(text: js.Array[java.lang.String], x: scala.Double, y: scala.Double, maxWidth: scala.Double): scala.Unit = js.native
   def getTextBaseline(): java.lang.String = js.native
   def lineTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
-  def measureText(text: java.lang.String): scala.Double = js.native
+  def measureText(text: java.lang.String): Anon_Width = js.native
   def moveTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
   def quadraticCurveTo(x1: scala.Double, y1: scala.Double, x: scala.Double, y: scala.Double): scala.Unit = js.native
   def restore(): scala.Unit = js.native

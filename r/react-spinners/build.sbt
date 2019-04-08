@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-spinners"
-version := "0.5.3-4f3546"
+version := "0.5.4-4f3546"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

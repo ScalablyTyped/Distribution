@@ -12,11 +12,10 @@ trait ScrollNumber
   @JSName("componentDidUpdate")
   def componentDidUpdate_MScrollNumber(`_`: js.Any, prevState: ScrollNumberState): scala.Unit = js.native
   def getPositionByNum(num: scala.Double, i: scala.Double): scala.Double = js.native
-  def renderCurrentNumber(prefixCls: java.lang.String, num: scala.Double, i: scala.Double): reactLib.reactMod.ReactNs.DetailedReactHTMLElement[antdLib.Anon_ClassName, stdLib.HTMLElement] = js.native
+  def renderCurrentNumber(prefixCls: java.lang.String, num: java.lang.String, i: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderCurrentNumber(prefixCls: java.lang.String, num: scala.Double, i: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderNumberElement(prefixCls: java.lang.String): js.UndefOr[
-    java.lang.String | scala.Double | (js.Array[
-      reactLib.reactMod.ReactNs.DetailedReactHTMLElement[antdLib.Anon_ClassName, stdLib.HTMLElement]
-    ]) | scala.Null
+    java.lang.String | scala.Double | js.Array[reactLib.reactMod.Global.JSXNs.Element] | scala.Null
   ] = js.native
   def renderNumberList(position: scala.Double): js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] = js.native
   def renderScrollNumber(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.ReactNs.ReactElement[_] = js.native

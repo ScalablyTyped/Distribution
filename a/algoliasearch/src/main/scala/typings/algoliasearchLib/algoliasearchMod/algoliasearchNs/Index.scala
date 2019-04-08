@@ -491,6 +491,16 @@ trait Index extends js.Object {
     * https://github.com/algolia/algoliasearch-client-js#set-settings---setsettings
     */
   def setSettings(settings: IndexSettings, cb: js.Function2[/* err */ stdLib.Error, /* res */ Task, scala.Unit]): scala.Unit = js.native
+  def setSettings(settings: IndexSettings, extra: algoliasearchLib.Anon_ForwardToReplicas): js.Promise[Task] = js.native
+  /**
+    * Set an index settings
+    * https://github.com/algolia/algoliasearch-client-js#set-settings---setsettings
+    */
+  def setSettings(
+    settings: IndexSettings,
+    extra: algoliasearchLib.Anon_ForwardToReplicas,
+    cb: js.Function2[/* err */ stdLib.Error, /* res */ Task, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Update a key for this index
     * https://github.com/algolia/algoliasearch-client-js#update-user-key---updateapikey

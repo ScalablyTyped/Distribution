@@ -146,6 +146,7 @@ trait ReactDatePickerProps extends js.Object {
   var showYearDropdown: js.UndefOr[scala.Boolean] = js.native
   var startDate: js.UndefOr[stdLib.Date | scala.Null] = js.native
   var startOpen: js.UndefOr[scala.Boolean] = js.native
+  var strictParsing: js.UndefOr[scala.Boolean] = js.native
   var tabIndex: js.UndefOr[scala.Double] = js.native
   var timeCaption: js.UndefOr[java.lang.String] = js.native
   var timeFormat: js.UndefOr[java.lang.String] = js.native

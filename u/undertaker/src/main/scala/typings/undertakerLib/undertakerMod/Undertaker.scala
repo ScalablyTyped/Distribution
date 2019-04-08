@@ -72,10 +72,10 @@ trait Undertaker
     */
   def task(fn: undertakerLib.undertakerMod.UndertakerNs.TaskFunction): scala.Unit = js.native
   /**
-    * Returns the registered function.
+    * Returns the wrapped registered function.
     * @param taskName - Task name.
     */
-  def task(taskName: java.lang.String): undertakerLib.undertakerMod.UndertakerNs.TaskFunction = js.native
+  def task(taskName: java.lang.String): undertakerLib.undertakerMod.UndertakerNs.TaskFunctionWrapped = js.native
   /**
     * Register the task by the taskName.
     * @param taskName - Task name.

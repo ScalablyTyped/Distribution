@@ -264,7 +264,8 @@ trait jsPDF extends js.Object {
     style: java.lang.String
   ): jsPDF = js.native
   def sHashCode(str: java.lang.String): js.Any = js.native
-  def save(filename: java.lang.String): jsPDF = js.native
+  def save(filename: java.lang.String): scala.Unit = js.native
+  def save(filename: java.lang.String, options: jspdfLib.Anon_ReturnPromise): js.Promise[_] = js.native
   def setDisplayMode(): jsPDF = js.native
   def setDisplayMode(zoom: java.lang.String): jsPDF = js.native
   def setDisplayMode(zoom: java.lang.String, layout: java.lang.String): jsPDF = js.native

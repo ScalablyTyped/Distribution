@@ -1,0 +1,28 @@
+package typings
+package squareDashConnectLib.squareDashConnectMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("square-connect", "CatalogQuerySortedAttribute")
+@js.native
+class CatalogQuerySortedAttribute () extends js.Object {
+  /**
+    * The attribute whose value should be used as the sort key.
+    */
+  var attribute_name: java.lang.String = js.native
+  /**
+    * The first attribute value to be returned by the query. Ascending sorts will return only objects with this value
+    * or greater, while descending sorts will return only objects with this value or less. If unset, start at the
+    * beginning (for ascending sorts) or end (for descending sorts).
+    */
+  var initial_attribute_value: js.UndefOr[java.lang.String] = js.native
+  /**
+    * The desired [SortOrder](#type-sortorder), `\"ASC\"` (ascending) or `\"DESC\"` (descending).
+    */
+  var sort_order: js.UndefOr[
+    squareDashConnectLib.squareDashConnectMod.CatalogQuerySortedAttributeNs.SortOrderEnum
+  ] = js.native
+}
+

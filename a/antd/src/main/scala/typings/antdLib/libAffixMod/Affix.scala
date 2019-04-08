@@ -23,6 +23,7 @@ trait Affix
   def renderAffix(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveFixedNode(node: stdLib.HTMLDivElement): scala.Unit = js.native
   def savePlaceholderNode(node: stdLib.HTMLDivElement): scala.Unit = js.native
+  def updatePosition(): scala.Unit = js.native
   def updatePosition(e: stdLib.Event): scala.Unit = js.native
 }
 

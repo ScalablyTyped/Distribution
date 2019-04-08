@@ -7,24 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Menu
-  extends reactLib.reactMod.Component[MenuProps, MenuState, js.Any] {
-  var contextSiderCollapsed: scala.Boolean = js.native
-  var inlineOpenKeys: js.Array[java.lang.String] = js.native
-  var switchingModeFromInline: scala.Boolean = js.native
-  @JSName("componentDidUpdate")
-  def componentDidUpdate_MMenu(prevProps: MenuProps): scala.Unit = js.native
-  def getChildContext(): antdLib.Anon_AntdMenuThemeDark = js.native
-  def getInlineCollapsed(): js.Any = js.native
-  def getMenuOpenAnimation(menuMode: MenuMode): js.UndefOr[js.Object] = js.native
-  def getRealMenuMode(): js.UndefOr[
-    antdLib.antdLibStrings.`inline` | antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical | antdLib.antdLibStrings.`vertical-left` | antdLib.antdLibStrings.`vertical-right`
-  ] = js.native
-  def handleClick(e: ClickParam): scala.Unit = js.native
-  def handleMouseEnter(e: stdLib.MouseEvent): scala.Unit = js.native
-  def handleOpenChange(openKeys: js.Array[java.lang.String]): scala.Unit = js.native
-  def handleTransitionEnd(e: stdLib.TransitionEvent): scala.Unit = js.native
-  def renderMenu(hasGetPopupContainerGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
-  def restoreModeVerticalFromInline(): scala.Unit = js.native
-  def setOpenKeys(openKeys: js.Array[java.lang.String]): scala.Unit = js.native
-}
+  extends reactLib.reactMod.Component[MenuProps, js.Object, js.Any]
 

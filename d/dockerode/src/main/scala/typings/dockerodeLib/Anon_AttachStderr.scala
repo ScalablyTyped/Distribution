@@ -11,7 +11,7 @@ trait Anon_AttachStderr extends js.Object {
   var AttachStdout: scala.Boolean
   var Cmd: js.Array[java.lang.String]
   var Domainname: java.lang.String
-  var Entrypoint: js.UndefOr[js.Any] = js.undefined
+  var Entrypoint: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var Env: js.Array[java.lang.String]
   var ExposedPorts: org.scalablytyped.runtime.StringDictionary[js.Object]
   var Hostname: java.lang.String
@@ -45,11 +45,11 @@ object Anon_AttachStderr {
     User: java.lang.String,
     Volumes: org.scalablytyped.runtime.StringDictionary[js.Object],
     WorkingDir: java.lang.String,
-    Entrypoint: js.Any = null,
+    Entrypoint: java.lang.String | js.Array[java.lang.String] = null,
     OnBuild: js.Any = null
   ): Anon_AttachStderr = {
     val __obj = js.Dynamic.literal(AttachStderr = AttachStderr, AttachStdin = AttachStdin, AttachStdout = AttachStdout, Cmd = Cmd, Domainname = Domainname, Env = Env, ExposedPorts = ExposedPorts, Hostname = Hostname, Image = Image, Labels = Labels, OpenStdin = OpenStdin, StdinOnce = StdinOnce, Tty = Tty, User = User, Volumes = Volumes, WorkingDir = WorkingDir)
-    if (Entrypoint != null) __obj.updateDynamic("Entrypoint")(Entrypoint)
+    if (Entrypoint != null) __obj.updateDynamic("Entrypoint")(Entrypoint.asInstanceOf[js.Any])
     if (OnBuild != null) __obj.updateDynamic("OnBuild")(OnBuild)
     __obj.asInstanceOf[Anon_AttachStderr]
   }

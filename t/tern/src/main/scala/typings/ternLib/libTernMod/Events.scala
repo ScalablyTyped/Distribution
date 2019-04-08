@@ -11,7 +11,7 @@ trait Events extends js.Object {
   /** Before analyzing a file. file is an object holding {name, text, scope} properties. */
   def beforeLoad(file: File): scala.Unit
   /** Run at the start of a completion query. May return a valid completion result to replace the default completion algorithm. */
-  def completion(file: File, query: Query): CompletionsQueryResult | scala.Unit
+  def completion(file: File, query: CompletionsQuery): CompletionsQueryResult | scala.Unit
   /** Run after the type inference pass. */
   def postInfer(ast: estreeLib.estreeMod.Program, scope: ternLib.libInferMod.Scope): scala.Unit
   /** Run right after a file is parsed, and passed the parse tree and the parsed file as arguments. */
@@ -40,7 +40,7 @@ object Events {
   def apply(
     afterLoad: File => scala.Unit,
     beforeLoad: File => scala.Unit,
-    completion: (File, Query) => CompletionsQueryResult | scala.Unit,
+    completion: (File, CompletionsQuery) => CompletionsQueryResult | scala.Unit,
     postInfer: (estreeLib.estreeMod.Program, ternLib.libInferMod.Scope) => scala.Unit,
     postParse: (estreeLib.estreeMod.Program, java.lang.String) => scala.Unit,
     preInfer: (estreeLib.estreeMod.Program, ternLib.libInferMod.Scope) => scala.Unit,

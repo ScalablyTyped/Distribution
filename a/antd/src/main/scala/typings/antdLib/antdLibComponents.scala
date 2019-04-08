@@ -164,7 +164,7 @@ object antdLibComponents {
   @scala.inline
   def Select[T]: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.SelectProps[T]] = js.constructorOf[antdLib.libSelectMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSelectMod.SelectProps[T]]]
   @scala.inline
-  def Sider: reactLib.reactMod.ReactNs.ComponentType[antdLib.libLayoutSiderMod.SiderProps] = js.constructorOf[antdLib.libLayoutSiderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libLayoutSiderMod.SiderProps]]
+  def Sider: reactLib.reactMod.ReactNs.ComponentType[js.Object] = js.constructorOf[antdLib.libLayoutSiderMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[js.Object]]
   @scala.inline
   def Skeleton: reactLib.reactMod.ReactNs.ComponentType[antdLib.libSkeletonMod.SkeletonProps] = js.constructorOf[antdLib.libSkeletonMod.default].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[antdLib.libSkeletonMod.SkeletonProps]]
   @scala.inline
@@ -378,6 +378,7 @@ object antdLibComponents {
   @scala.inline
   def ModalProps: antdLib.libModalModalMod.ModalProps.type = antdLib.libModalModalMod.ModalProps
   type ModalProps = antdLib.libModalModalMod.ModalProps
+  type Object = js.Object
   @scala.inline
   def OptGroupProps: antdLib.libSelectMod.OptGroupProps.type = antdLib.libSelectMod.OptGroupProps
   type OptGroupProps = antdLib.libSelectMod.OptGroupProps
@@ -420,9 +421,6 @@ object antdLibComponents {
   @scala.inline
   def SelectProps: antdLib.libSelectMod.SelectProps.type = antdLib.libSelectMod.SelectProps
   type SelectProps[T] = antdLib.libSelectMod.SelectProps[T]
-  @scala.inline
-  def SiderProps: antdLib.libLayoutSiderMod.SiderProps.type = antdLib.libLayoutSiderMod.SiderProps
-  type SiderProps = antdLib.libLayoutSiderMod.SiderProps
   @scala.inline
   def SkeletonProps: antdLib.libSkeletonMod.SkeletonProps.type = antdLib.libSkeletonMod.SkeletonProps
   type SkeletonProps = antdLib.libSkeletonMod.SkeletonProps

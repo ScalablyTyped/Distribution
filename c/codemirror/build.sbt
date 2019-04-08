@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "codemirror"
-version := "0.0-unknown-dt-20190322Z-eedc30"
+version := "0.0-unknown-dt-20190327Z-7ef510"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-0ec5cf",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "tern" % "0.23-dt-20190327Z-81d80e")
+  "org.scalablytyped" %%% "tern" % "0.23-dt-20190405Z-fd1eba")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

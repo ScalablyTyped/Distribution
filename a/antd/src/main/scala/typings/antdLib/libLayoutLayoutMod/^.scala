@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/layout/layout", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val LayoutContext: createDashReactDashContextLib.createDashReactDashContextMod.Context[LayoutContextProps] = js.native
   val default: (reactLib.reactMod.ReactNs.ComponentClass[BasicProps, reactLib.reactMod.ReactNs.ComponentState]) with antdLib.Anon_Content = js.native
 }
 

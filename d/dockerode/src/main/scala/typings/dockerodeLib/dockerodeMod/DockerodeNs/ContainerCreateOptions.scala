@@ -11,7 +11,7 @@ trait ContainerCreateOptions extends js.Object {
   var AttachStdout: js.UndefOr[scala.Boolean] = js.undefined
   var Cmd: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var Domainname: js.UndefOr[java.lang.String] = js.undefined
-  var Entrypoint: js.UndefOr[java.lang.String] = js.undefined
+  var Entrypoint: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var Env: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var ExposedPorts: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Object]] = js.undefined
   var HostConfig: js.UndefOr[dockerodeLib.Anon_AutoRemove] = js.undefined
@@ -39,7 +39,7 @@ object ContainerCreateOptions {
     AttachStdout: js.UndefOr[scala.Boolean] = js.undefined,
     Cmd: js.Array[java.lang.String] = null,
     Domainname: java.lang.String = null,
-    Entrypoint: java.lang.String = null,
+    Entrypoint: java.lang.String | js.Array[java.lang.String] = null,
     Env: js.Array[java.lang.String] = null,
     ExposedPorts: org.scalablytyped.runtime.StringDictionary[js.Object] = null,
     HostConfig: dockerodeLib.Anon_AutoRemove = null,
@@ -64,7 +64,7 @@ object ContainerCreateOptions {
     if (!js.isUndefined(AttachStdout)) __obj.updateDynamic("AttachStdout")(AttachStdout)
     if (Cmd != null) __obj.updateDynamic("Cmd")(Cmd)
     if (Domainname != null) __obj.updateDynamic("Domainname")(Domainname)
-    if (Entrypoint != null) __obj.updateDynamic("Entrypoint")(Entrypoint)
+    if (Entrypoint != null) __obj.updateDynamic("Entrypoint")(Entrypoint.asInstanceOf[js.Any])
     if (Env != null) __obj.updateDynamic("Env")(Env)
     if (ExposedPorts != null) __obj.updateDynamic("ExposedPorts")(ExposedPorts)
     if (HostConfig != null) __obj.updateDynamic("HostConfig")(HostConfig)

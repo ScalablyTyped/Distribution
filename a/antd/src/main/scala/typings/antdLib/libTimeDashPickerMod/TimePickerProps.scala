@@ -32,6 +32,7 @@ trait TimePickerProps extends js.Object {
   var hideDisabledOptions: js.UndefOr[scala.Boolean] = js.undefined
   var hourStep: js.UndefOr[scala.Double] = js.undefined
   var inputReadOnly: js.UndefOr[scala.Boolean] = js.undefined
+  var locale: js.UndefOr[TimePickerLocale] = js.undefined
   var minuteStep: js.UndefOr[scala.Double] = js.undefined
   var onAmPmChange: js.UndefOr[
     js.Function1[/* ampm */ antdLib.antdLibStrings.AM | antdLib.antdLibStrings.PM, scala.Unit]
@@ -80,6 +81,7 @@ object TimePickerProps {
     hideDisabledOptions: js.UndefOr[scala.Boolean] = js.undefined,
     hourStep: scala.Int | scala.Double = null,
     inputReadOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: TimePickerLocale = null,
     minuteStep: scala.Int | scala.Double = null,
     onAmPmChange: /* ampm */ antdLib.antdLibStrings.AM | antdLib.antdLibStrings.PM => scala.Unit = null,
     onChange: (/* time */ momentLib.momentMod.momentNs.Moment, /* timeString */ java.lang.String) => scala.Unit = null,
@@ -115,6 +117,7 @@ object TimePickerProps {
     if (!js.isUndefined(hideDisabledOptions)) __obj.updateDynamic("hideDisabledOptions")(hideDisabledOptions)
     if (hourStep != null) __obj.updateDynamic("hourStep")(hourStep.asInstanceOf[js.Any])
     if (!js.isUndefined(inputReadOnly)) __obj.updateDynamic("inputReadOnly")(inputReadOnly)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
     if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
     if (onAmPmChange != null) __obj.updateDynamic("onAmPmChange")(js.Any.fromFunction1(onAmPmChange))
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2(onChange))

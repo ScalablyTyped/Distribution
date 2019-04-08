@@ -46,7 +46,7 @@ object IGroupOptions {
     dirty: js.UndefOr[scala.Boolean] = js.undefined,
     evented: js.UndefOr[scala.Boolean] = js.undefined,
     excludeFromExport: js.UndefOr[scala.Boolean] = js.undefined,
-    fill: java.lang.String = null,
+    fill: java.lang.String | Pattern = null,
     fillRule: java.lang.String = null,
     flipX: js.UndefOr[scala.Boolean] = js.undefined,
     flipY: js.UndefOr[scala.Boolean] = js.undefined,
@@ -132,7 +132,7 @@ object IGroupOptions {
     if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty)
     if (!js.isUndefined(evented)) __obj.updateDynamic("evented")(evented)
     if (!js.isUndefined(excludeFromExport)) __obj.updateDynamic("excludeFromExport")(excludeFromExport)
-    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule)
     if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX)
     if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY)

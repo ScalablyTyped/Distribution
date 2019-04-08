@@ -12,7 +12,12 @@ object ^ extends js.Object {
   var Pass: codemirrorLib.Anon_CodeMirrorPASS = js.native
   var Pos: codemirrorLib.codemirrorMod.CodeMirrorNs.PositionConstructor = js.native
   val TernServer: codemirrorLib.codemirrorMod.CodeMirrorNs.TernConstructor = js.native
-  var commands: js.Any = js.native
+  /**
+    * Commands are parameter-less actions that can be performed on an editor.
+    * Their main use is for key bindings.
+    * Commands are defined by adding properties to the CodeMirror.commands object.
+    */
+  var commands: codemirrorLib.codemirrorMod.CodeMirrorNs.CommandActions = js.native
   /** An object containing default values for all options.
     You can assign to its properties to modify defaults (though this won't affect editors that have already been created). */
   var defaults: js.Any = js.native

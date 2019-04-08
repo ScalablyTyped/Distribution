@@ -59,6 +59,10 @@ trait Hls extends js.Object {
     */
   var loadLevel: scala.Double = js.native
   /**
+    * get: Return the bound videoElement from the hls instance
+    */
+  val media: js.UndefOr[stdLib.HTMLVideoElement | scala.Null] = js.native
+  /**
     * get: return next playback quality level (playback quality level for next buffered fragment)
     * return -1 if next fragment not buffered yet
     * set: trigger a quality level switch for next fragment
