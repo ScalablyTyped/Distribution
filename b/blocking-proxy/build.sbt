@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "blocking-proxy"
-version := "1.0.1-8281f4"
+version := "1.0.1-d67175"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

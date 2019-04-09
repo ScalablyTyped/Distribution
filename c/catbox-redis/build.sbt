@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "catbox-redis"
-version := "4.1-dt-20181022Z-fa6ffd"
+version := "4.1-dt-20181022Z-663d36"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-6773cd",
-  "org.scalablytyped" %%% "ioredis" % "4.0-dt-20190311Z-41f866",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "ioredis" % "4.0-dt-20190311Z-ad443e",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -509,9 +509,9 @@ trait Schema[T]
     * @param value if not passed, the current option value is returned
     */
   @JSName("set")
-  def set_shardKey(key: mongooseLib.mongooseLibStrings.shardKey): scala.Boolean = js.native
+  def set_shardKey(key: mongooseLib.mongooseLibStrings.shardKey): js.Object = js.native
   @JSName("set")
-  def set_shardKey(key: mongooseLib.mongooseLibStrings.shardKey, value: scala.Boolean): this.type = js.native
+  def set_shardKey(key: mongooseLib.mongooseLibStrings.shardKey, value: js.Object): this.type = js.native
   /**
     * Sets/gets a schema option.
     * @param key option name

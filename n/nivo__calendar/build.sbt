@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nivo__calendar"
-version := "0.55.0-eb34af"
+version := "0.55.0-724530"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -21,13 +21,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash_dot_isdate" % "4.0-dt-20190214Z-f5f1ae",
   "org.scalablytyped" %%% "lodash_dot_memoize" % "4.1-dt-20190214Z-5a2d53",
   "org.scalablytyped" %%% "lodash_dot_range" % "3.2-dt-20190214Z-78c6ca",
-  "org.scalablytyped" %%% "nivo__core" % "0.55.0-2230b6",
-  "org.scalablytyped" %%% "nivo__legends" % "0.55.0-12427d",
+  "org.scalablytyped" %%% "nivo__core" % "0.55.0-aaade4",
+  "org.scalablytyped" %%% "nivo__legends" % "0.55.0-24448b",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-d8f967",
-  "org.scalablytyped" %%% "react-measure" % "2.0-dt-20190225Z-f66701",
-  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190322Z-cee05c",
-  "org.scalablytyped" %%% "recompose" % "0.30-dt-20190322Z-a4702c",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-3351b3",
+  "org.scalablytyped" %%% "react-measure" % "2.0-dt-20190225Z-f529f1",
+  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190322Z-f6d272",
+  "org.scalablytyped" %%% "recompose" % "0.30-dt-20190322Z-31c3a3",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

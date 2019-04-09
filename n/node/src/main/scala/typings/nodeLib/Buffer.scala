@@ -42,25 +42,25 @@ trait Buffer
   def fill(value: js.Any, offset: scala.Double, end: scala.Double): this.type = js.native
   def includes(value: java.lang.String): scala.Boolean = js.native
   def includes(value: java.lang.String, byteOffset: scala.Double): scala.Boolean = js.native
-  def includes(value: java.lang.String, byteOffset: scala.Double, encoding: java.lang.String): scala.Boolean = js.native
+  def includes(value: java.lang.String, byteOffset: scala.Double, encoding: BufferEncoding): scala.Boolean = js.native
   def includes(value: Buffer): scala.Boolean = js.native
   def includes(value: Buffer, byteOffset: scala.Double): scala.Boolean = js.native
-  def includes(value: Buffer, byteOffset: scala.Double, encoding: java.lang.String): scala.Boolean = js.native
-  def includes(value: scala.Double, byteOffset: scala.Double, encoding: java.lang.String): scala.Boolean = js.native
+  def includes(value: Buffer, byteOffset: scala.Double, encoding: BufferEncoding): scala.Boolean = js.native
+  def includes(value: scala.Double, byteOffset: scala.Double, encoding: BufferEncoding): scala.Boolean = js.native
   def indexOf(value: java.lang.String): scala.Double = js.native
   def indexOf(value: java.lang.String, byteOffset: scala.Double): scala.Double = js.native
-  def indexOf(value: java.lang.String, byteOffset: scala.Double, encoding: java.lang.String): scala.Double = js.native
-  def indexOf(value: scala.Double, byteOffset: scala.Double, encoding: java.lang.String): scala.Double = js.native
+  def indexOf(value: java.lang.String, byteOffset: scala.Double, encoding: BufferEncoding): scala.Double = js.native
+  def indexOf(value: scala.Double, byteOffset: scala.Double, encoding: BufferEncoding): scala.Double = js.native
   def indexOf(value: stdLib.Uint8Array): scala.Double = js.native
   def indexOf(value: stdLib.Uint8Array, byteOffset: scala.Double): scala.Double = js.native
-  def indexOf(value: stdLib.Uint8Array, byteOffset: scala.Double, encoding: java.lang.String): scala.Double = js.native
+  def indexOf(value: stdLib.Uint8Array, byteOffset: scala.Double, encoding: BufferEncoding): scala.Double = js.native
   def lastIndexOf(value: java.lang.String): scala.Double = js.native
   def lastIndexOf(value: java.lang.String, byteOffset: scala.Double): scala.Double = js.native
-  def lastIndexOf(value: java.lang.String, byteOffset: scala.Double, encoding: java.lang.String): scala.Double = js.native
-  def lastIndexOf(value: scala.Double, byteOffset: scala.Double, encoding: java.lang.String): scala.Double = js.native
+  def lastIndexOf(value: java.lang.String, byteOffset: scala.Double, encoding: BufferEncoding): scala.Double = js.native
+  def lastIndexOf(value: scala.Double, byteOffset: scala.Double, encoding: BufferEncoding): scala.Double = js.native
   def lastIndexOf(value: stdLib.Uint8Array): scala.Double = js.native
   def lastIndexOf(value: stdLib.Uint8Array, byteOffset: scala.Double): scala.Double = js.native
-  def lastIndexOf(value: stdLib.Uint8Array, byteOffset: scala.Double, encoding: java.lang.String): scala.Double = js.native
+  def lastIndexOf(value: stdLib.Uint8Array, byteOffset: scala.Double, encoding: BufferEncoding): scala.Double = js.native
   def readDoubleBE(offset: scala.Double): scala.Double = js.native
   def readDoubleLE(offset: scala.Double): scala.Double = js.native
   def readFloatBE(offset: scala.Double): scala.Double = js.native
@@ -87,11 +87,11 @@ trait Buffer
   def toString(encoding: java.lang.String, start: scala.Double): java.lang.String = js.native
   def toString(encoding: java.lang.String, start: scala.Double, end: scala.Double): java.lang.String = js.native
   def write(string: java.lang.String): scala.Double = js.native
-  def write(string: java.lang.String, encoding: java.lang.String): scala.Double = js.native
+  def write(string: java.lang.String, encoding: BufferEncoding): scala.Double = js.native
   def write(string: java.lang.String, offset: scala.Double): scala.Double = js.native
-  def write(string: java.lang.String, offset: scala.Double, encoding: java.lang.String): scala.Double = js.native
+  def write(string: java.lang.String, offset: scala.Double, encoding: BufferEncoding): scala.Double = js.native
   def write(string: java.lang.String, offset: scala.Double, length: scala.Double): scala.Double = js.native
-  def write(string: java.lang.String, offset: scala.Double, length: scala.Double, encoding: java.lang.String): scala.Double = js.native
+  def write(string: java.lang.String, offset: scala.Double, length: scala.Double, encoding: BufferEncoding): scala.Double = js.native
   def writeDoubleBE(value: scala.Double, offset: scala.Double): scala.Double = js.native
   def writeDoubleLE(value: scala.Double, offset: scala.Double): scala.Double = js.native
   def writeFloatBE(value: scala.Double, offset: scala.Double): scala.Double = js.native
@@ -161,7 +161,7 @@ class BufferCls protected () extends Buffer {
     * @deprecated since v10.0.0 - Use `Buffer.from(string[, encoding])` instead.
     */
   def this(str: java.lang.String) = this()
-  def this(str: java.lang.String, encoding: java.lang.String) = this()
+  def this(str: java.lang.String, encoding: BufferEncoding) = this()
 }
 
 /**
@@ -172,7 +172,7 @@ class BufferCls protected () extends Buffer {
 @JSGlobal("Buffer")
 @js.native
 object Buffer
-  extends org.scalablytyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding */ java.lang.String, Buffer]
+  extends org.scalablytyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding */ BufferEncoding, Buffer]
      with /**
   * Allocates a new buffer containing the given {str}.
   *
@@ -224,11 +224,11 @@ org.scalablytyped.runtime.Instantiable1[
     */
   def alloc(size: scala.Double): nodeLib.Buffer = js.native
   def alloc(size: scala.Double, fill: java.lang.String): nodeLib.Buffer = js.native
-  def alloc(size: scala.Double, fill: java.lang.String, encoding: java.lang.String): nodeLib.Buffer = js.native
+  def alloc(size: scala.Double, fill: java.lang.String, encoding: nodeLib.BufferEncoding): nodeLib.Buffer = js.native
   def alloc(size: scala.Double, fill: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def alloc(size: scala.Double, fill: nodeLib.Buffer, encoding: java.lang.String): nodeLib.Buffer = js.native
+  def alloc(size: scala.Double, fill: nodeLib.Buffer, encoding: nodeLib.BufferEncoding): nodeLib.Buffer = js.native
   def alloc(size: scala.Double, fill: scala.Double): nodeLib.Buffer = js.native
-  def alloc(size: scala.Double, fill: scala.Double, encoding: java.lang.String): nodeLib.Buffer = js.native
+  def alloc(size: scala.Double, fill: scala.Double, encoding: nodeLib.BufferEncoding): nodeLib.Buffer = js.native
   /**
     * Allocates a new buffer of {size} octets, leaving memory not initialized, so the contents
     * of the newly created Buffer are unknown and may contain sensitive data.
@@ -251,15 +251,15 @@ org.scalablytyped.runtime.Instantiable1[
     * @param encoding encoding used to evaluate (defaults to 'utf8')
     */
   def byteLength(string: java.lang.String): scala.Double = js.native
-  def byteLength(string: java.lang.String, encoding: java.lang.String): scala.Double = js.native
+  def byteLength(string: java.lang.String, encoding: nodeLib.BufferEncoding): scala.Double = js.native
   def byteLength(string: nodeLib.NodeJSNs.TypedArray): scala.Double = js.native
-  def byteLength(string: nodeLib.NodeJSNs.TypedArray, encoding: java.lang.String): scala.Double = js.native
+  def byteLength(string: nodeLib.NodeJSNs.TypedArray, encoding: nodeLib.BufferEncoding): scala.Double = js.native
   def byteLength(string: nodeLib.SharedArrayBuffer): scala.Double = js.native
-  def byteLength(string: nodeLib.SharedArrayBuffer, encoding: java.lang.String): scala.Double = js.native
+  def byteLength(string: nodeLib.SharedArrayBuffer, encoding: nodeLib.BufferEncoding): scala.Double = js.native
   def byteLength(string: stdLib.ArrayBuffer): scala.Double = js.native
-  def byteLength(string: stdLib.ArrayBuffer, encoding: java.lang.String): scala.Double = js.native
+  def byteLength(string: stdLib.ArrayBuffer, encoding: nodeLib.BufferEncoding): scala.Double = js.native
   def byteLength(string: stdLib.DataView): scala.Double = js.native
-  def byteLength(string: stdLib.DataView, encoding: java.lang.String): scala.Double = js.native
+  def byteLength(string: stdLib.DataView, encoding: nodeLib.BufferEncoding): scala.Double = js.native
   /**
     * The same as buf1.compare(buf2).
     */
@@ -303,7 +303,7 @@ org.scalablytyped.runtime.Instantiable1[
     * If not provided, {encoding} defaults to 'utf8'.
     */
   def from(str: java.lang.String): nodeLib.Buffer = js.native
-  def from(str: java.lang.String, encoding: java.lang.String): nodeLib.Buffer = js.native
+  def from(str: java.lang.String, encoding: nodeLib.BufferEncoding): nodeLib.Buffer = js.native
   /**
     * Returns true if {obj} is a Buffer
     *
@@ -316,7 +316,7 @@ org.scalablytyped.runtime.Instantiable1[
     *
     * @param encoding string to test.
     */
-  def isEncoding(encoding: java.lang.String): js.UndefOr[scala.Boolean] = js.native
+  def isEncoding(encoding: java.lang.String): /* is node.BufferEncoding */ scala.Boolean = js.native
   /**
     * Creates a new Buffer using the passed {data}
     * @param values to create a new Buffer

@@ -5,17 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_ValueAny extends js.Object {
-  /** Value to reject in the returned promise. */
+trait Anon_ValueUnknown extends js.Object {
+  /**
+  			Value to reject in the returned promise.
+  			*/
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
-object Anon_ValueAny {
+object Anon_ValueUnknown {
   @scala.inline
-  def apply(value: js.Any = null): Anon_ValueAny = {
+  def apply(value: js.Any = null): Anon_ValueUnknown = {
     val __obj = js.Dynamic.literal()
     if (value != null) __obj.updateDynamic("value")(value)
-    __obj.asInstanceOf[Anon_ValueAny]
+    __obj.asInstanceOf[Anon_ValueUnknown]
   }
 }
 

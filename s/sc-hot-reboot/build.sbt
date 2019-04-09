@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sc-hot-reboot"
-version := "1.0-dt-20190224Z-a5b8b4"
+version := "1.0-dt-20190224Z-8df440"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,18 +8,18 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-6f800f",
   "org.scalablytyped" %%% "braces" % "2.3-dt-20180214Z-306649",
-  "org.scalablytyped" %%% "chokidar" % "2.1.5-6fb4b0",
-  "org.scalablytyped" %%% "fsevents" % "1.1-dt-20180214Z-e93f50",
+  "org.scalablytyped" %%% "chokidar" % "2.1.5-d42e47",
+  "org.scalablytyped" %%% "fsevents" % "1.1-dt-20180214Z-028f8c",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20190329Z-819655",
-  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-75670b",
+  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-4987a8",
   "org.scalablytyped" %%% "is-binary-path" % "2.0-dt-20180214Z-900f29",
   "org.scalablytyped" %%% "is-glob" % "4.0-dt-20190329Z-4226a6",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190304Z-8c8962",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20190304Z-067277",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
   "org.scalablytyped" %%% "normalize-path" % "3.0-dt-20181225Z-45086b",
   "org.scalablytyped" %%% "path-is-absolute" % "1.0-dt-20180214Z-ae48af",
-  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-1a5ceb",
-  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-0a95ba",
+  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-f96f4f",
+  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-1f8c63",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "upath" % "1.1.2-adf450")
 publishArtifact in packageDoc := false

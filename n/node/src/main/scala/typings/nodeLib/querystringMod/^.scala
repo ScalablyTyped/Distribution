@@ -14,10 +14,10 @@ object ^ extends js.Object {
   def parse(str: java.lang.String, sep: java.lang.String, eq: java.lang.String): ParsedUrlQuery = js.native
   def parse(str: java.lang.String, sep: java.lang.String, eq: java.lang.String, options: ParseOptions): ParsedUrlQuery = js.native
   def stringify(): java.lang.String = js.native
-  def stringify(obj: js.Object): java.lang.String = js.native
-  def stringify(obj: js.Object, sep: java.lang.String): java.lang.String = js.native
-  def stringify(obj: js.Object, sep: java.lang.String, eq: java.lang.String): java.lang.String = js.native
-  def stringify(obj: js.Object, sep: java.lang.String, eq: java.lang.String, options: StringifyOptions): java.lang.String = js.native
+  def stringify(obj: ParsedUrlQueryInput): java.lang.String = js.native
+  def stringify(obj: ParsedUrlQueryInput, sep: java.lang.String): java.lang.String = js.native
+  def stringify(obj: ParsedUrlQueryInput, sep: java.lang.String, eq: java.lang.String): java.lang.String = js.native
+  def stringify(obj: ParsedUrlQueryInput, sep: java.lang.String, eq: java.lang.String, options: StringifyOptions): java.lang.String = js.native
   def unescape(str: java.lang.String): java.lang.String = js.native
 }
 

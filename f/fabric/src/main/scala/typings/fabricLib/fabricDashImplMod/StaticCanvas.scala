@@ -22,6 +22,7 @@ class StaticCanvas protected ()
   def this(element: stdLib.HTMLCanvasElement) = this()
   def this(element: java.lang.String, options: ICanvasOptions) = this()
   def this(element: stdLib.HTMLCanvasElement, options: ICanvasOptions) = this()
+  var _activeObject: js.UndefOr[Object | Group] = js.native
   /**
   	 * Pan viewport so as to place point at top left corner of canvas
   	 * @param {fabric.Point} point to move to
@@ -356,23 +357,6 @@ class StaticCanvas protected ()
   	 */
   def straightenObject(`object`: Object): Canvas = js.native
   /**
-  	 * Provides a way to check support of some of the canvas methods
-  	 * (either those of HTMLCanvasElement itself, or rendering context)
-  	 *
-  	 * @param {String} methodName Method to check support for;
-  	 *                            Could be one of "setLineDash"
-  	 * @return {Boolean | null} `true` if method is supported (or at least exists),
-  	 *                          `null` if canvas element or context can not be initialized
-  	 */
-  @JSName("supports")
-  def supports_getImageData(methodName: fabricLib.fabricLibStrings.getImageData): scala.Boolean = js.native
-  @JSName("supports")
-  def supports_setLineDash(methodName: fabricLib.fabricLibStrings.setLineDash): scala.Boolean = js.native
-  @JSName("supports")
-  def supports_toDataURL(methodName: fabricLib.fabricLibStrings.toDataURL): scala.Boolean = js.native
-  @JSName("supports")
-  def supports_toDataURLWithQuality(methodName: fabricLib.fabricLibStrings.toDataURLWithQuality): scala.Boolean = js.native
-  /**
   	 * Exports canvas element to a dataurl image. Note that when multiplier is used, cropping is scaled appropriately
   	 * @param [options] Options object
   	 */
@@ -449,6 +433,23 @@ object StaticCanvas extends js.Object {
   	 * @default
   	 */
   var EMPTY_JSON: java.lang.String = js.native
+  /**
+  	 * Provides a way to check support of some of the canvas methods
+  	 * (either those of HTMLCanvasElement itself, or rendering context)
+  	 *
+  	 * @param {String} methodName Method to check support for;
+  	 *                            Could be one of "setLineDash"
+  	 * @return {Boolean | null} `true` if method is supported (or at least exists),
+  	 *                          `null` if canvas element or context can not be initialized
+  	 */
+  @JSName("supports")
+  def supports_getImageData(methodName: fabricLib.fabricLibStrings.getImageData): scala.Boolean = js.native
+  @JSName("supports")
+  def supports_setLineDash(methodName: fabricLib.fabricLibStrings.setLineDash): scala.Boolean = js.native
+  @JSName("supports")
+  def supports_toDataURL(methodName: fabricLib.fabricLibStrings.toDataURL): scala.Boolean = js.native
+  @JSName("supports")
+  def supports_toDataURLWithQuality(methodName: fabricLib.fabricLibStrings.toDataURLWithQuality): scala.Boolean = js.native
   /**
   	 * Returns JSON representation of canvas
   	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output

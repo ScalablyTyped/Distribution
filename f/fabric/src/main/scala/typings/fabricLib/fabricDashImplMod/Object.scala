@@ -35,6 +35,16 @@ class Object ()
   	 */
   def _removeShadow(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
   /**
+  	 * @private
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 */
+  def _render(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
+  /**
+  	 * @private
+  	 * @param {CanvasRenderingContext2D} ctx Context to render on
+  	 */
+  def _renderPaintInOrder(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
+  /**
   	 *
   	 * @param ctx
   	 * @private
@@ -47,7 +57,12 @@ class Object ()
   	 * @param {Array} dashArray array representing dashes
   	 * @param {Function} alternative function to call if browser does not support lineDash
   	 */
-  def _setLineDash(ctx: stdLib.CanvasRenderingContext2D, dashArray: js.Array[scala.Double], alternative: js.Function): scala.Unit = js.native
+  def _setLineDash(ctx: stdLib.CanvasRenderingContext2D, dashArray: js.Array[scala.Double]): scala.Unit = js.native
+  def _setLineDash(
+    ctx: stdLib.CanvasRenderingContext2D,
+    dashArray: js.Array[scala.Double],
+    alternative: js.Function1[/* ctx */ stdLib.CanvasRenderingContext2D, scala.Unit]
+  ): scala.Unit = js.native
   /**
   	 * @param to One of 'left', 'center', 'right'
   	 */

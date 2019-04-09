@@ -55,6 +55,6 @@ class Buffer protected ()
     * @deprecated since v10.0.0 - Use `Buffer.from(string[, encoding])` instead.
     */
   def this(str: java.lang.String) = this()
-  def this(str: java.lang.String, encoding: java.lang.String) = this()
+  def this(str: java.lang.String, encoding: nodeLib.BufferEncoding) = this()
 }
 

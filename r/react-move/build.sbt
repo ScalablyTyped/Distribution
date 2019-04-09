@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-move"
-version := "5.2.1-97b42f"
+version := "5.2.1-9b7b1c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-d8f967",
-  "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-97a21c",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-3351b3",
+  "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-923fe5",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

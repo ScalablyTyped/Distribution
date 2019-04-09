@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fork-ts-checker-webpack-plugin"
-version := "1.0.1-26ebc0"
+version := "1.0.1-ff88e5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,17 +11,17 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel-code-frame" % "6.20-dt-20190212Z-68f577",
   "org.scalablytyped" %%% "braces" % "2.3-dt-20180214Z-306649",
   "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
-  "org.scalablytyped" %%% "chokidar" % "2.1.5-6fb4b0",
+  "org.scalablytyped" %%% "chokidar" % "2.1.5-d42e47",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
-  "org.scalablytyped" %%% "fsevents" % "1.1-dt-20180214Z-e93f50",
+  "org.scalablytyped" %%% "fsevents" % "1.1-dt-20180214Z-028f8c",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20190329Z-819655",
-  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-75670b",
+  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-4987a8",
   "org.scalablytyped" %%% "is-binary-path" % "2.0-dt-20180214Z-900f29",
   "org.scalablytyped" %%% "is-glob" % "4.0-dt-20190329Z-4226a6",
   "org.scalablytyped" %%% "micromatch" % "3.1-dt-20180214Z-64a8b0",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-e6c927",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
   "org.scalablytyped" %%% "normalize-path" % "3.0-dt-20181225Z-45086b",
   "org.scalablytyped" %%% "path-is-absolute" % "1.0-dt-20180214Z-ae48af",
   "org.scalablytyped" %%% "semver" % "6.0-dt-20190330Z-1b8b1f",
@@ -31,7 +31,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20190322Z-20a77d",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-c8c046",
   "org.scalablytyped" %%% "upath" % "1.1.2-adf450",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190403Z-85a7bc")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190403Z-d52c00")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

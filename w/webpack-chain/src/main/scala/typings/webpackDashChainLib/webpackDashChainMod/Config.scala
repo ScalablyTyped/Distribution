@@ -30,6 +30,14 @@ trait Config
   def externals(value: js.Array[webpackLib.webpackMod.webpackNs.ExternalsElement]): this.type = js.native
   def externals(value: webpackLib.webpackMod.webpackNs.ExternalsElement): this.type = js.native
   def loader(value: js.Any): this.type = js.native
+  @JSName("mode")
+  def mode_development(value: webpackDashChainLib.webpackDashChainLibStrings.development): this.type = js.native
+  @JSName("mode")
+  def mode_none(value: webpackDashChainLib.webpackDashChainLibStrings.none): this.type = js.native
+  @JSName("mode")
+  def mode_production(value: webpackDashChainLib.webpackDashChainLibStrings.production): this.type = js.native
+  def name(value: java.lang.String): this.type = js.native
+  def parallelism(value: scala.Double): this.type = js.native
   def plugin(name: java.lang.String): webpackDashChainLib.webpackDashChainMod.ConfigNs.Plugin[this.type] = js.native
   def profile(value: scala.Boolean): this.type = js.native
   def recordsInputPath(value: java.lang.String): this.type = js.native

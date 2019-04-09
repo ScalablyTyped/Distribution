@@ -143,6 +143,9 @@ object webpackDashChainLibStrings {
     extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
+  sealed trait development extends js.Object
+  
+  @js.native
   sealed trait error extends js.Object
   
   @js.native
@@ -165,6 +168,18 @@ object webpackDashChainLibStrings {
     extends webpackDashChainLib.webpackDashChainMod.ConfigNs._DevTool
   
   @js.native
+  sealed trait `javascript/auto` extends js.Object
+  
+  @js.native
+  sealed trait `javascript/dynamic` extends js.Object
+  
+  @js.native
+  sealed trait `javascript/esm` extends js.Object
+  
+  @js.native
+  sealed trait json extends js.Object
+  
+  @js.native
   sealed trait multiple extends js.Object
   
   @js.native
@@ -181,6 +196,9 @@ object webpackDashChainLibStrings {
   sealed trait pre extends js.Object
   
   @js.native
+  sealed trait production extends js.Object
+  
+  @js.native
   sealed trait single extends js.Object
   
   @js.native
@@ -189,6 +207,9 @@ object webpackDashChainLibStrings {
   
   @js.native
   sealed trait warning extends js.Object
+  
+  @js.native
+  sealed trait `webassembly/experimental` extends js.Object
   
   @scala.inline
   def `#@cheap-eval-source-map`: `#@cheap-eval-source-map` = "#@cheap-eval-source-map".asInstanceOf[`#@cheap-eval-source-map`]
@@ -259,6 +280,8 @@ object webpackDashChainLibStrings {
   @scala.inline
   def `cheap-source-map`: `cheap-source-map` = "cheap-source-map".asInstanceOf[`cheap-source-map`]
   @scala.inline
+  def development: development = "development".asInstanceOf[development]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
   @scala.inline
   def eval: eval = "eval".asInstanceOf[eval]
@@ -271,6 +294,14 @@ object webpackDashChainLibStrings {
   @scala.inline
   def `inline-source-map`: `inline-source-map` = "inline-source-map".asInstanceOf[`inline-source-map`]
   @scala.inline
+  def `javascript/auto`: `javascript/auto` = "javascript/auto".asInstanceOf[`javascript/auto`]
+  @scala.inline
+  def `javascript/dynamic`: `javascript/dynamic` = "javascript/dynamic".asInstanceOf[`javascript/dynamic`]
+  @scala.inline
+  def `javascript/esm`: `javascript/esm` = "javascript/esm".asInstanceOf[`javascript/esm`]
+  @scala.inline
+  def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def multiple: multiple = "multiple".asInstanceOf[multiple]
   @scala.inline
   def none: none = "none".asInstanceOf[none]
@@ -281,10 +312,14 @@ object webpackDashChainLibStrings {
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   @scala.inline
+  def production: production = "production".asInstanceOf[production]
+  @scala.inline
   def single: single = "single".asInstanceOf[single]
   @scala.inline
   def `source-map`: `source-map` = "source-map".asInstanceOf[`source-map`]
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
+  @scala.inline
+  def `webassembly/experimental`: `webassembly/experimental` = "webassembly/experimental".asInstanceOf[`webassembly/experimental`]
 }
 

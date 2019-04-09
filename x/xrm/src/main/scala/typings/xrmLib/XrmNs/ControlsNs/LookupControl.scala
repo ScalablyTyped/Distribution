@@ -66,7 +66,7 @@ trait LookupControl extends StandardControl {
     * Removes the handler from the "pre search" event of the Lookup control.
     * @param handler The handler.
     */
-  def removePreSearch(handler: js.Function0[scala.Unit]): scala.Unit = js.native
+  def removePreSearch(handler: xrmLib.XrmNs.EventsNs.ContextSensitiveHandler): scala.Unit = js.native
   /**
     * Sets the Lookup's default view.
     * @param viewGuid Unique identifier for the view.

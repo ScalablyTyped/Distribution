@@ -128,13 +128,20 @@ class SchemaComposer[TContext] ()
   def createResolver[TSource, TArgs](opts: graphqlDashComposeLib.libResolverMod.ResolverOpts[TSource, TContext, TArgs, _]): graphqlDashComposeLib.libResolverMod.Resolver[TSource, TContext, TArgs, _] = js.native
   def createScalarTC(typeDef: graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposeDefinition): graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext] = js.native
   /**
-    * Creates TypeComposer from SDL without adding it to the type storage.
+    * Creates or return existed TypeComposer from SDL or object.
+    * If you call this method again with same params should be returned the same TypeComposer instance.
+    */
+  def createTC(typeOrSDL: js.Any): (graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext]) | graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[TContext] | (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext]) | (graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[_, TContext]) | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext] = js.native
+  /**
+    * Creates TypeComposer from SDL or object without adding it to the type storage.
     */
   def createTempTC(typeOrSDL: js.Any): (graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext]) | graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[TContext] | (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext]) | (graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[_, TContext]) | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext] = js.native
   def createUnionTC[TSource](
     typeDef: graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposeDefinition[TSource, TContext]
   ): graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[TSource, TContext] = js.native
-  def getAnyTC(typeName: js.Any): (graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext]) | graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[TContext] | (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext]) | (graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[_, TContext]) | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext] = js.native
+  def getAnyTC(typeName: AnyType[_] | graphqlLib.typeDefinitionMod.GraphQLType): (graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext]) | graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[TContext] | (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext]) | (graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[_, TContext]) | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext] = js.native
+  def getAnyTC(typeName: java.lang.String): (graphqlDashComposeLib.libObjectTypeComposerMod.ObjectTypeComposer[_, TContext]) | graphqlDashComposeLib.libInputTypeComposerMod.InputTypeComposer[TContext] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[TContext] | (graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[_, TContext]) | (graphqlDashComposeLib.libUnionTypeComposerMod.UnionTypeComposer[_, TContext]) | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext] = js.native
+  def getDirective(name: java.lang.String): graphqlLib.graphqlMod.GraphQLDirective = js.native
   def getDirectives(): js.Array[graphqlLib.graphqlMod.GraphQLDirective] = js.native
   def getETC(typeName: js.Any): graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[TContext] = js.native
   def getIFTC[TSource](typeName: js.Any): graphqlDashComposeLib.libInterfaceTypeComposerMod.InterfaceTypeComposer[TSource, TContext] = js.native

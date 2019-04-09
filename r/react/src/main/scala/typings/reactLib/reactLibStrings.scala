@@ -22,9 +22,6 @@ object reactLibStrings {
   sealed trait I extends js.Object
   
   @js.native
-  sealed trait MergePropTypes extends js.Object
-  
-  @js.native
   sealed trait ReactPropTypes extends js.Object
   
   @js.native
@@ -787,8 +784,6 @@ object reactLibStrings {
   def Empty: Empty = "".asInstanceOf[Empty]
   @scala.inline
   def I: I = "I".asInstanceOf[I]
-  @scala.inline
-  def MergePropTypes: MergePropTypes = "MergePropTypes".asInstanceOf[MergePropTypes]
   @scala.inline
   def ReactPropTypes: ReactPropTypes = "ReactPropTypes".asInstanceOf[ReactPropTypes]
   @scala.inline

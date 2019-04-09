@@ -13,7 +13,7 @@ trait Route extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var params: Dictionary[java.lang.String]
   var path: java.lang.String
-  var query: Dictionary[java.lang.String | js.Array[java.lang.String]]
+  var query: Dictionary[java.lang.String | (js.Array[java.lang.String | scala.Null])]
   var redirectedFrom: js.UndefOr[java.lang.String] = js.undefined
 }
 
@@ -25,7 +25,7 @@ object Route {
     matched: js.Array[RouteRecord],
     params: Dictionary[java.lang.String],
     path: java.lang.String,
-    query: Dictionary[java.lang.String | js.Array[java.lang.String]],
+    query: Dictionary[java.lang.String | (js.Array[java.lang.String | scala.Null])],
     meta: js.Any = null,
     name: java.lang.String = null,
     redirectedFrom: java.lang.String = null

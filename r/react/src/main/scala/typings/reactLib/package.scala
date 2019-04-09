@@ -14,6 +14,7 @@ package object reactLib {
   // Wrap in an outer-level conditional type to allow distribution over props that are unions
   type Defaultize[P, D] = ((stdLib.Pick[P, stdLib.Exclude[java.lang.String, java.lang.String]]) with (stdLib.Partial[stdLib.Pick[P, stdLib.Extract[java.lang.String, java.lang.String]]]) with (stdLib.Partial[stdLib.Pick[D, stdLib.Exclude[java.lang.String, java.lang.String]]])) | P
   type DragEvent = Event
+  type ExactlyAnyPropertyKeys[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any
   type FocusEvent = Event
   type HTMLAnchorElement = HTMLElement
   type HTMLAreaElement = HTMLElement
@@ -73,9 +74,7 @@ package object reactLib {
   type HTMLWebViewElement = HTMLElement
   type KeyboardEvent = Event
   // Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
-  // If props is type any, use propTypes definitions, otherwise for each `any` property of props, use the propTypes type
-  // If declared props have indexed properties, ignore inferred props entirely as keyof gets widened
-  type MergePropTypes[P, T] = (reactLib.reactLibStrings.MergePropTypes with js.Any with (stdLib.Pick[T, stdLib.Exclude[java.lang.String, java.lang.String]])) | T
+  type MergePropTypes[P, T] = ((stdLib.Pick[P, NotExactlyAnyPropertyKeys[P]]) with (stdLib.Pick[T, stdLib.Exclude[java.lang.String, NotExactlyAnyPropertyKeys[P]]]) with (stdLib.Pick[P, stdLib.Exclude[java.lang.String, java.lang.String]])) | P | T
   type MouseEvent = Event
   type NativeAnimationEvent = AnimationEvent
   type NativeClipboardEvent = ClipboardEvent
@@ -89,6 +88,7 @@ package object reactLib {
   type NativeTransitionEvent = TransitionEvent
   type NativeUIEvent = UIEvent
   type NativeWheelEvent = WheelEvent
+  type NotExactlyAnyPropertyKeys[T] = stdLib.Exclude[java.lang.String, ExactlyAnyPropertyKeys[T]]
   type PointerEvent = Event
   type ReactManagedAttributes[C, P] = P | (Defaultize[P, js.Any]) | (MergePropTypes[
     P, 

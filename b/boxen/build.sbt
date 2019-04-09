@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "boxen"
-version := "3.1.0-f288f7"
+version := "3.1.0-cdcbe9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,9 +12,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "cli-boxes" % "1.0-dt-20181231Z-e95538",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "string-width" % "2.0-dt-20180530Z-33d626",
+  "org.scalablytyped" %%% "string-width" % "2.0-dt-20180530Z-500d72",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-1b70da",
   "org.scalablytyped" %%% "term-size" % "1.2-dt-20181215Z-443745",
   "org.scalablytyped" %%% "type-fest" % "0.3.0-45433e")

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Use
-  extends webpackDashChainLib.webpackDashChainMod.underscoreUnderscoreConfigNs.TypedChainedMap[Rule, js.Any]
+trait Use[Parent]
+  extends webpackDashChainLib.webpackDashChainMod.underscoreUnderscoreConfigNs.TypedChainedMap[Parent, js.Any]
      with Orderable {
   def loader(value: java.lang.String): this.type = js.native
   def options(value: LoaderOptions): this.type = js.native

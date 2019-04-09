@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "watchpack"
-version := "1.1-dt-20190224Z-ace4da"
+version := "1.1-dt-20190224Z-d66f2b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,14 +8,14 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-6f800f",
   "org.scalablytyped" %%% "braces" % "2.3-dt-20180214Z-306649",
-  "org.scalablytyped" %%% "chokidar" % "2.1.5-6fb4b0",
-  "org.scalablytyped" %%% "fsevents" % "1.1-dt-20180214Z-e93f50",
+  "org.scalablytyped" %%% "chokidar" % "2.1.5-d42e47",
+  "org.scalablytyped" %%% "fsevents" % "1.1-dt-20180214Z-028f8c",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20190329Z-819655",
-  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20190212Z-fddb7c",
-  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-75670b",
+  "org.scalablytyped" %%% "graceful-fs" % "4.1-dt-20190212Z-3a0dff",
+  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-4987a8",
   "org.scalablytyped" %%% "is-binary-path" % "2.0-dt-20180214Z-900f29",
   "org.scalablytyped" %%% "is-glob" % "4.0-dt-20190329Z-4226a6",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
   "org.scalablytyped" %%% "normalize-path" % "3.0-dt-20181225Z-45086b",
   "org.scalablytyped" %%% "path-is-absolute" % "1.0-dt-20180214Z-ae48af",
   "org.scalablytyped" %%% "std" % "3.4-d52857",

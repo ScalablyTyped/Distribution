@@ -13,6 +13,11 @@ trait Options extends js.Object {
     */
   var app: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   /**
+    * Do not bring the app to the foreground (macOS only).
+    * Defaults to `false`.
+    */
+  var background: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Wait for the opened app to exit before fulfilling the promise.
     * If `false` it's fulfilled immediately when opening the app.
     * On Windows you have to explicitly specify an app for it to be able to wait.
@@ -26,10 +31,12 @@ object Options {
   @scala.inline
   def apply(
     app: java.lang.String | js.Array[java.lang.String] = null,
+    background: js.UndefOr[scala.Boolean] = js.undefined,
     wait: js.UndefOr[scala.Boolean] = js.undefined
   ): Options = {
     val __obj = js.Dynamic.literal()
     if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
     if (!js.isUndefined(wait)) __obj.updateDynamic("wait")(wait)
     __obj.asInstanceOf[Options]
   }

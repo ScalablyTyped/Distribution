@@ -39,6 +39,11 @@ class Line () extends Object {
   	 */
   def _toSVG(): java.lang.String = js.native
   /**
+  	 * Recalculates line points given width and height
+  	 * @private
+  	 */
+  def calcLinePoints(): fabricLib.Anon_X1 = js.native
+  /**
   	 * Produces a function that calculates distance from canvas edge to Line origin.
   	 */
   def makeEdgeToOriginGetter(propertyNames: fabricLib.Anon_Axis1, originValues: fabricLib.Anon_Center): js.Function = js.native

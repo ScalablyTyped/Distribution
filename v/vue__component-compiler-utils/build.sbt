@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue__component-compiler-utils"
-version := "2.6.0-443d5e"
+version := "2.6.0-9f1bef"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,11 +10,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-986805",
   "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
-  "org.scalablytyped" %%% "consolidate" % "0.0-unknown-dt-20190322Z-3e2ebd",
+  "org.scalablytyped" %%% "consolidate" % "0.0-unknown-dt-20190322Z-6705b9",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
   "org.scalablytyped" %%% "hash-sum" % "1.0-dt-20180822Z-69a56f",
   "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-34c823",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
   "org.scalablytyped" %%% "postcss" % "6.0.23-251b0a",
   "org.scalablytyped" %%% "prettier" % "1.16-dt-20190212Z-270a70",
   "org.scalablytyped" %%% "source-map" % "0.7.3-1b6210",

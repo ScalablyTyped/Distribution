@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "liftoff"
-version := "2.5-dt-20181206Z-4f5b6f"
+version := "2.5-dt-20181206Z-dcac27"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "fined" % "1.1-dt-20190212Z-9ce3ac",
-  "org.scalablytyped" %%% "interpret" % "1.1-dt-20190212Z-dcb20e",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "interpret" % "1.1-dt-20190212Z-38287c",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

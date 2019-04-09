@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "p-series"
-version := "2.1.0-2a8046"
+version := "2.1.0-fb1e93"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
   "org.scalablytyped" %%% "p-reduce" % "2.1.0-ef3ee2",
-  "org.scalablytyped" %%% "sindresorhus__is" % "0.14.0-53a9a0",
+  "org.scalablytyped" %%% "sindresorhus__is" % "0.14.0-449abd",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

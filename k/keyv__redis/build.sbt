@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "keyv__redis"
-version := "1.3-dt-20181231Z-f28412"
+version := "1.3-dt-20181231Z-6a2c62"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "keyv" % "3.1-dt-20190312Z-00990b",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
-  "org.scalablytyped" %%% "redis" % "2.8-dt-20190326Z-03281c",
+  "org.scalablytyped" %%% "keyv" % "3.1-dt-20190312Z-d5781e",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
+  "org.scalablytyped" %%% "redis" % "2.8-dt-20190326Z-d97736",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

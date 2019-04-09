@@ -120,7 +120,7 @@ object ^ extends js.Object {
   def range_TDouble[T /* <: scala.Double */](min: scala.Double): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
   @JSName("range")
   def range_TDouble[T /* <: scala.Double */](min: scala.Double, max: scala.Double): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
-  def ref(): propDashTypesLib.propDashTypesMod.Requireable[ReactLegacyRefLike[stdLib.HTMLElement]] = js.native
+  def ref[T](): propDashTypesLib.propDashTypesMod.Requireable[ReactLegacyRefLike[T]] = js.native
   def requiredBy[P](requiredByPropName: java.lang.String, propType: propDashTypesLib.propDashTypesMod.Validator[P]): propDashTypesLib.propDashTypesMod.Requireable[P] = js.native
   def requiredBy[P](
     requiredByPropName: java.lang.String,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "airbnb-prop-types"
-version := "2.13-dt-20190405Z-f12812"
+version := "2.13-dt-20190408Z-6142dd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "yeoman-generator"
-version := "3.1-dt-20190317Z-41b424"
+version := "3.1-dt-20190317Z-8f121f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "inquirer" % "6.x-dt-20190322Z-f1ad93",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "inquirer" % "6.x-dt-20190322Z-b2645e",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
   "org.scalablytyped" %%% "rxjs" % "6.4.0-f8b93e",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-77ab79",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20190322Z-4319f8",
   "org.scalablytyped" %%% "tslib" % "1.9.3-446b32")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

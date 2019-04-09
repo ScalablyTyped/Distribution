@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("delay", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  val default: delayLib.Delay with delayLib.Anon_CreateWithTimers = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[delayLib.Delay with delayLib.Anon_CreateWithTimersDefault]
 

@@ -35,17 +35,42 @@ class InputTypeComposer[TContext] protected ()
   def get(path: java.lang.String): js.Any = js.native
   def get(path: js.Array[java.lang.String]): js.Any = js.native
   def getDescription(): java.lang.String = js.native
+  def getDirectiveById(idx: scala.Double): graphqlDashComposeLib.libUtilsDefinitionsMod.DirectiveArgs | scala.Unit = js.native
+  def getDirectiveByName(directiveName: java.lang.String): graphqlDashComposeLib.libUtilsDefinitionsMod.DirectiveArgs | scala.Unit = js.native
+  def getDirectiveNames(): js.Array[java.lang.String] = js.native
+  /**
+    * -----------------------------------------------
+    * Directive methods
+    *
+    * Directive methods are usefull if you declare your schemas via SDL.
+    * Users who actively use `graphql-tools` can open new abilities for writing
+    * your own directive handlers.
+    *
+    * If you create your schemas via config objects, then probably you
+    * no need in `directives`. Instead directives better to use `extensions`.
+    * -----------------------------------------------
+    */
+  def getDirectives(): js.Array[graphqlDashComposeLib.libUtilsDefinitionsMod.ExtensionsDirective] = js.native
   def getExtension(extensionName: java.lang.String): js.Any = js.native
   /**
-    *  -----------------------------------------------
+    * -----------------------------------------------
     * Extensions methods
     * -----------------------------------------------
     */
   def getExtensions(): graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions = js.native
-  def getField(fieldName: java.lang.String): ComposeInputFieldConfig = js.native
+  def getField(fieldName: java.lang.String): ComposeInputFieldConfigAsObject = js.native
   def getFieldConfig(fieldName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLInputFieldConfig = js.native
+  def getFieldDirectiveById(fieldName: java.lang.String, idx: scala.Double): graphqlDashComposeLib.libUtilsDefinitionsMod.DirectiveArgs | scala.Unit = js.native
+  def getFieldDirectiveByName(fieldName: java.lang.String, directiveName: java.lang.String): graphqlDashComposeLib.libUtilsDefinitionsMod.DirectiveArgs | scala.Unit = js.native
+  def getFieldDirectiveNames(fieldName: java.lang.String): js.Array[java.lang.String] = js.native
+  def getFieldDirectives(fieldName: java.lang.String): js.Array[graphqlDashComposeLib.libUtilsDefinitionsMod.ExtensionsDirective] = js.native
   def getFieldExtension(fieldName: java.lang.String, extensionName: java.lang.String): js.Any = js.native
   def getFieldExtensions(fieldName: java.lang.String): graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions = js.native
+  /**
+    * Alias for `getFieldTC()` but returns statically checked InputTypeComposer.
+    * If field have other type then error will be thrown.
+    */
+  def getFieldITC(fieldName: java.lang.String): InputTypeComposer[TContext] = js.native
   def getFieldNames(): js.Array[java.lang.String] = js.native
   def getFieldTC(fieldName: java.lang.String): InputTypeComposer[TContext] | graphqlDashComposeLib.libEnumTypeComposerMod.EnumTypeComposer[TContext] | graphqlDashComposeLib.libScalarTypeComposerMod.ScalarTypeComposer[TContext] = js.native
   def getFieldType(fieldName: java.lang.String): graphqlLib.typeDefinitionMod.GraphQLInputType = js.native

@@ -37,7 +37,7 @@ trait SchemaOptions extends js.Object {
     */
   var selectPopulatedPaths: js.UndefOr[scala.Boolean] = js.undefined
   /** defaults to null */
-  var shardKey: js.UndefOr[scala.Boolean] = js.undefined
+  var shardKey: js.UndefOr[js.Object] = js.undefined
   /**
     * skipVersioning allows excluding paths from
     * versioning (the internal revision will not be
@@ -93,7 +93,7 @@ object SchemaOptions {
     read: java.lang.String = null,
     safe: scala.Boolean | mongooseLib.Anon_J = null,
     selectPopulatedPaths: js.UndefOr[scala.Boolean] = js.undefined,
-    shardKey: js.UndefOr[scala.Boolean] = js.undefined,
+    shardKey: js.Object = null,
     skipVersioning: js.Any = null,
     storeSubdocValidationError: js.UndefOr[scala.Boolean] = js.undefined,
     strict: scala.Boolean | mongooseLib.mongooseLibStrings.`throw` = null,
@@ -122,7 +122,7 @@ object SchemaOptions {
     if (read != null) __obj.updateDynamic("read")(read)
     if (safe != null) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
     if (!js.isUndefined(selectPopulatedPaths)) __obj.updateDynamic("selectPopulatedPaths")(selectPopulatedPaths)
-    if (!js.isUndefined(shardKey)) __obj.updateDynamic("shardKey")(shardKey)
+    if (shardKey != null) __obj.updateDynamic("shardKey")(shardKey)
     if (skipVersioning != null) __obj.updateDynamic("skipVersioning")(skipVersioning)
     if (!js.isUndefined(storeSubdocValidationError)) __obj.updateDynamic("storeSubdocValidationError")(storeSubdocValidationError)
     if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])

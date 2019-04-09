@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation._
 // Input to `url.format`
 trait UrlObject extends UrlObjectCommon {
   var port: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var query: js.UndefOr[
-    java.lang.String | scala.Null | org.scalablytyped.runtime.StringDictionary[js.Any]
-  ] = js.undefined
+  var query: js.UndefOr[java.lang.String | scala.Null | nodeLib.querystringMod.ParsedUrlQueryInput] = js.undefined
 }
 
 object UrlObject {
@@ -25,7 +23,7 @@ object UrlObject {
     pathname: java.lang.String = null,
     port: java.lang.String | scala.Double = null,
     protocol: java.lang.String = null,
-    query: java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    query: java.lang.String | nodeLib.querystringMod.ParsedUrlQueryInput = null,
     search: java.lang.String = null,
     slashes: js.UndefOr[scala.Boolean] = js.undefined
   ): UrlObject = {

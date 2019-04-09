@@ -1065,6 +1065,7 @@ object RNFirebaseNs extends js.Object {
       def get(
         options: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.GetOptions
       ): js.Promise[DocumentSnapshot] = js.native
+      def isEqual(otherDocumentReference: DocumentReference): scala.Boolean = js.native
       def onSnapshot(
         metadataChanges: MetadataChanges,
         observer: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.DocumentReferenceNs.Observer
@@ -2147,7 +2148,7 @@ object RNFirebaseNs extends js.Object {
       /**
         * Schedule a local notification to be shown on the device.
         */
-      def scheduleNotification(notification: Notification, schedule: js.Any): js.Any
+      def scheduleNotification(notification: Notification, schedule: Schedule): js.Any
       /**
         * Sets the badge number on the iOS app icon.
         */
@@ -2157,6 +2158,13 @@ object RNFirebaseNs extends js.Object {
     trait NotificationsStatics extends js.Object {
       var Android: reactDashNativeDashFirebaseLib.Anon_Action
       var Notification: org.scalablytyped.runtime.Instantiable0[Notification]
+    }
+    
+    trait Schedule extends js.Object {
+      var fireDate: scala.Double
+      var repeatInterval: js.UndefOr[
+            reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.minute | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.hour | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.day | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.week
+          ] = js.undefined
     }
     
     @JSName("Android")

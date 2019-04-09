@@ -171,6 +171,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.WebView], 
     T
   ] = js.native
+  def ActivityIndicator(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ActivityIndicator], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def ActivityIndicator(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -221,6 +227,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ActivityIndicator], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
+  def ActivityIndicatorIOS(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ActivityIndicator], 
     T, 
     js.Object, 
@@ -397,6 +409,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def Button(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Button], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def Button(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -508,6 +526,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Button], 
     T, 
     js.Object with U, 
+    scala.Nothing
+  ] = js.native
+  def DatePickerIOS(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.DatePickerIOS], 
+    T, 
+    js.Object, 
     scala.Nothing
   ] = js.native
   def DatePickerIOS(
@@ -623,6 +647,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def DrawerLayoutAndroid(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.DrawerLayoutAndroid], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def DrawerLayoutAndroid(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -736,6 +766,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def Image(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_AbortPrefetch, T, js.Object, scala.Nothing] = js.native
   def Image(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -768,6 +799,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_AbortPrefetch, T, js.Object, scala.Nothing] = js.native
+  def ImageBackground(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ImageBackground], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def ImageBackground(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -916,6 +953,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_AbortPrefetch, T, js.Object with U, scala.Nothing] = js.native
+  def KeyboardAvoidingView(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.KeyboardAvoidingView], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def KeyboardAvoidingView(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -1029,6 +1072,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def ListView(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_DataSource, T, js.Object, scala.Nothing] = js.native
   def ListView(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -1096,6 +1140,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_DataSource, T, js.Object with U, scala.Nothing] = js.native
+  def MapView(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_PinColors, T, js.Object, scala.Nothing] = js.native
   def MapView(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -1163,6 +1208,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_PinColors, T, js.Object with U, scala.Nothing] = js.native
+  def Modal(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Modal], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def Modal(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -1274,6 +1325,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Modal], 
     T, 
     js.Object with U, 
+    scala.Nothing
+  ] = js.native
+  def NavigatorIOS(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.NavigatorIOS], 
+    T, 
+    js.Object, 
     scala.Nothing
   ] = js.native
   def NavigatorIOS(
@@ -1389,6 +1446,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def Picker(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_Item, T, js.Object, scala.Nothing] = js.native
   def Picker(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -1421,6 +1479,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_Item, T, js.Object, scala.Nothing] = js.native
+  def PickerIOS(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_ItemPickerIOS, T, js.Object, scala.Nothing] = js.native
   def PickerIOS(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -1523,6 +1582,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_Item, T, js.Object with U, scala.Nothing] = js.native
+  def ProgressBarAndroid(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ProgressBarAndroid], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def ProgressBarAndroid(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -1634,6 +1699,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ProgressBarAndroid], 
     T, 
     js.Object with U, 
+    scala.Nothing
+  ] = js.native
+  def ProgressViewIOS(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ProgressViewIOS], 
+    T, 
+    js.Object, 
     scala.Nothing
   ] = js.native
   def ProgressViewIOS(
@@ -1749,6 +1820,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def RecyclerViewBackedScrollView(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.RecyclerViewBackedScrollView], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def RecyclerViewBackedScrollView(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -1862,6 +1939,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def RefreshControl(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_SIZE, T, js.Object, scala.Nothing] = js.native
   def RefreshControl(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -1929,6 +2007,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_SIZE, T, js.Object with U, scala.Nothing] = js.native
+  def SafeAreaView(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.SafeAreaView], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def SafeAreaView(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -2040,6 +2124,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.SafeAreaView], 
     T, 
     js.Object with U, 
+    scala.Nothing
+  ] = js.native
+  def ScrollView(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ScrollView], 
+    T, 
+    js.Object, 
     scala.Nothing
   ] = js.native
   def ScrollView(
@@ -2155,6 +2245,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def SegmentedControlIOS(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.SegmentedControlIOS], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def SegmentedControlIOS(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -2266,6 +2362,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.SegmentedControlIOS], 
     T, 
     js.Object with U, 
+    scala.Nothing
+  ] = js.native
+  def Slider(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Slider], 
+    T, 
+    js.Object, 
     scala.Nothing
   ] = js.native
   def Slider(
@@ -2318,6 +2420,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Slider], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
+  def SliderIOS(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Slider], 
     T, 
     js.Object, 
@@ -2494,6 +2602,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def SnapshotViewIOS(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.SnapshotViewIOS], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def SnapshotViewIOS(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -2607,6 +2721,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def StatusBar(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_Animated, T, js.Object, scala.Nothing] = js.native
   def StatusBar(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -2674,6 +2789,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_Animated, T, js.Object with U, scala.Nothing] = js.native
+  def SwipeableListView(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_GetNewDataSource, T, js.Object, scala.Nothing] = js.native
   def SwipeableListView(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -2741,6 +2857,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_GetNewDataSource, T, js.Object with U, scala.Nothing] = js.native
+  def Switch(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Switch], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def Switch(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -2791,6 +2913,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Switch], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
+  def SwitchAndroid(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Switch], 
     T, 
     js.Object, 
@@ -2907,6 +3035,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Switch], 
     T, 
     js.Object with U, 
+    scala.Nothing
+  ] = js.native
+  def SwitchIOS(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.SwitchIOS], 
+    T, 
+    js.Object, 
     scala.Nothing
   ] = js.native
   def SwitchIOS(
@@ -3080,6 +3214,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def TabBarIOS(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_ItemTabBarIOS, T, js.Object, scala.Nothing] = js.native
   def TabBarIOS(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -3147,6 +3282,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_ItemTabBarIOS, T, js.Object with U, scala.Nothing] = js.native
+  def Text(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.Text], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def Text(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -3202,6 +3343,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object, 
     scala.Nothing
   ] = js.native
+  def TextInput(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_State, T, js.Object, scala.Nothing] = js.native
   def TextInput(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -3327,6 +3469,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def ToolbarAndroid(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ToolbarAndroid], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def ToolbarAndroid(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -3438,6 +3586,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ToolbarAndroid], 
     T, 
     js.Object with U, 
+    scala.Nothing
+  ] = js.native
+  def TouchableHighlight(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.TouchableHighlight], 
+    T, 
+    js.Object, 
     scala.Nothing
   ] = js.native
   def TouchableHighlight(
@@ -3553,6 +3707,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def TouchableNativeFeedback(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_Borderless, T, js.Object, scala.Nothing] = js.native
   def TouchableNativeFeedback(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -3620,6 +3775,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_Borderless, T, js.Object with U, scala.Nothing] = js.native
+  def TouchableOpacity(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.TouchableOpacity], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def TouchableOpacity(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -3731,6 +3892,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.TouchableOpacity], 
     T, 
     js.Object with U, 
+    scala.Nothing
+  ] = js.native
+  def TouchableWithoutFeedback(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedback], 
+    T, 
+    js.Object, 
     scala.Nothing
   ] = js.native
   def TouchableWithoutFeedback(
@@ -3846,6 +4013,7 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
     js.Object with U, 
     scala.Nothing
   ] = js.native
+  def View(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_ForceTouchAvailable, T, js.Object, scala.Nothing] = js.native
   def View(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -3878,6 +4046,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_ForceTouchAvailable, T, js.Object, scala.Nothing] = js.native
+  def ViewPagerAndroid(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.ViewPagerAndroid], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def ViewPagerAndroid(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[
@@ -4026,6 +4200,12 @@ trait ReactNativeStyledInterface[T /* <: js.Object */] extends ReactNativeThemed
       ]
     ])*
   ): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[styledDashComponentsLib.Anon_ForceTouchAvailable, T, js.Object with U, scala.Nothing] = js.native
+  def WebView(first: stdLib.TemplateStringsArray): styledDashComponentsLib.styledDashComponentsMod.StyledComponent[
+    org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.WebView], 
+    T, 
+    js.Object, 
+    scala.Nothing
+  ] = js.native
   def WebView(
     first: stdLib.TemplateStringsArray,
     rest: (styledDashComponentsLib.styledDashComponentsMod.Interpolation[

@@ -11,7 +11,11 @@ trait Location extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var params: js.UndefOr[Dictionary[java.lang.String]] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
-  var query: js.UndefOr[Dictionary[java.lang.String | js.Array[java.lang.String]]] = js.undefined
+  var query: js.UndefOr[
+    Dictionary[
+      js.UndefOr[java.lang.String | (js.Array[java.lang.String | scala.Null]) | scala.Null]
+    ]
+  ] = js.undefined
   var replace: js.UndefOr[scala.Boolean] = js.undefined
 }
 
@@ -23,7 +27,9 @@ object Location {
     name: java.lang.String = null,
     params: Dictionary[java.lang.String] = null,
     path: java.lang.String = null,
-    query: Dictionary[java.lang.String | js.Array[java.lang.String]] = null,
+    query: Dictionary[
+      js.UndefOr[java.lang.String | (js.Array[java.lang.String | scala.Null]) | scala.Null]
+    ] = null,
     replace: js.UndefOr[scala.Boolean] = js.undefined
   ): Location = {
     val __obj = js.Dynamic.literal()

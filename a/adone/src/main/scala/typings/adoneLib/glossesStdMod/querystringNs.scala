@@ -19,11 +19,11 @@ object querystringNs extends js.Object {
     options: nodeLib.querystringMod.ParseOptions
   ): nodeLib.querystringMod.ParsedUrlQuery = js.native
   def stringify(): java.lang.String = js.native
-  def stringify(obj: js.Object): java.lang.String = js.native
-  def stringify(obj: js.Object, sep: java.lang.String): java.lang.String = js.native
-  def stringify(obj: js.Object, sep: java.lang.String, eq: java.lang.String): java.lang.String = js.native
+  def stringify(obj: nodeLib.querystringMod.ParsedUrlQueryInput): java.lang.String = js.native
+  def stringify(obj: nodeLib.querystringMod.ParsedUrlQueryInput, sep: java.lang.String): java.lang.String = js.native
+  def stringify(obj: nodeLib.querystringMod.ParsedUrlQueryInput, sep: java.lang.String, eq: java.lang.String): java.lang.String = js.native
   def stringify(
-    obj: js.Object,
+    obj: nodeLib.querystringMod.ParsedUrlQueryInput,
     sep: java.lang.String,
     eq: java.lang.String,
     options: nodeLib.querystringMod.StringifyOptions

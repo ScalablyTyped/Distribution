@@ -1,5 +1,5 @@
 package typings
-package delayLib.delayMod
+package delayLib.delayMod.delayNs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
   /**
-  	 * An optional AbortSignal to abort the delay.
-  	 * If aborted, the Promise will be rejected with an AbortError.
-  	 */
+  		An optional AbortSignal to abort the delay.
+  		If aborted, the Promise will be rejected with an AbortError.
+  		*/
   var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 

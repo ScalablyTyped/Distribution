@@ -726,6 +726,23 @@ object fabricNs extends js.Object {
     	 */
     var EMPTY_JSON: java.lang.String = js.native
     /**
+    	 * Provides a way to check support of some of the canvas methods
+    	 * (either those of HTMLCanvasElement itself, or rendering context)
+    	 *
+    	 * @param {String} methodName Method to check support for;
+    	 *                            Could be one of "setLineDash"
+    	 * @return {Boolean | null} `true` if method is supported (or at least exists),
+    	 *                          `null` if canvas element or context can not be initialized
+    	 */
+    @JSName("supports")
+    def supports_getImageData(methodName: fabricLib.fabricLibStrings.getImageData): scala.Boolean = js.native
+    @JSName("supports")
+    def supports_setLineDash(methodName: fabricLib.fabricLibStrings.setLineDash): scala.Boolean = js.native
+    @JSName("supports")
+    def supports_toDataURL(methodName: fabricLib.fabricLibStrings.toDataURL): scala.Boolean = js.native
+    @JSName("supports")
+    def supports_toDataURLWithQuality(methodName: fabricLib.fabricLibStrings.toDataURLWithQuality): scala.Boolean = js.native
+    /**
     	 * Returns JSON representation of canvas
     	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     	 */

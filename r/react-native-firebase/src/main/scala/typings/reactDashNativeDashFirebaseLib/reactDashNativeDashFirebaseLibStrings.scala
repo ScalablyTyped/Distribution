@@ -159,6 +159,9 @@ object reactDashNativeDashFirebaseLibStrings {
   sealed trait date extends js.Object
   
   @js.native
+  sealed trait day extends js.Object
+  
+  @js.native
   sealed trait `deadline-exceeded`
     extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
@@ -204,12 +207,18 @@ object reactDashNativeDashFirebaseLibStrings {
   sealed trait geopoint extends js.Object
   
   @js.native
+  sealed trait hour extends js.Object
+  
+  @js.native
   sealed trait internal
     extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
   sealed trait `invalid-argument`
     extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
+  
+  @js.native
+  sealed trait minute extends js.Object
   
   @js.native
   sealed trait modified extends js.Object
@@ -327,6 +336,9 @@ object reactDashNativeDashFirebaseLibStrings {
   @js.native
   sealed trait verified extends js.Object
   
+  @js.native
+  sealed trait week extends js.Object
+  
   @scala.inline
   def `<`: `<` = "<".asInstanceOf[`<`]
   @scala.inline
@@ -410,6 +422,8 @@ object reactDashNativeDashFirebaseLibStrings {
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   @scala.inline
+  def day: day = "day".asInstanceOf[day]
+  @scala.inline
   def `deadline-exceeded`: `deadline-exceeded` = "deadline-exceeded".asInstanceOf[`deadline-exceeded`]
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
@@ -436,9 +450,13 @@ object reactDashNativeDashFirebaseLibStrings {
   @scala.inline
   def geopoint: geopoint = "geopoint".asInstanceOf[geopoint]
   @scala.inline
+  def hour: hour = "hour".asInstanceOf[hour]
+  @scala.inline
   def internal: internal = "internal".asInstanceOf[internal]
   @scala.inline
   def `invalid-argument`: `invalid-argument` = "invalid-argument".asInstanceOf[`invalid-argument`]
+  @scala.inline
+  def minute: minute = "minute".asInstanceOf[minute]
   @scala.inline
   def modified: modified = "modified".asInstanceOf[modified]
   @scala.inline
@@ -503,5 +521,7 @@ object reactDashNativeDashFirebaseLibStrings {
   def value: value = "value".asInstanceOf[value]
   @scala.inline
   def verified: verified = "verified".asInstanceOf[verified]
+  @scala.inline
+  def week: week = "week".asInstanceOf[week]
 }
 

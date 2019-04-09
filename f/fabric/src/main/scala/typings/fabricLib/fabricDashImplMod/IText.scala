@@ -109,11 +109,6 @@ class IText protected () extends Text {
     jlen: scala.Double
   ): scala.Double = js.native
   /**
-  	 * @private
-  	 * @param {CanvasRenderingContext2D} ctx Context to render on
-  	 */
-  def _render(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
-  /**
   	 * Aborts cursor animation and clears all timeouts
   	 */
   def abortCursorAnimation(): scala.Unit = js.native

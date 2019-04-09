@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Alloc
-  extends org.scalablytyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding */ java.lang.String, nodeLib.Buffer]
+  extends org.scalablytyped.runtime.Instantiable2[/* str */ java.lang.String, /* encoding */ nodeLib.BufferEncoding, nodeLib.Buffer]
      with /**
   * Allocates a new buffer containing the given {str}.
   *
@@ -59,11 +59,11 @@ org.scalablytyped.runtime.Instantiable1[
     */
   def alloc(size: scala.Double): nodeLib.Buffer = js.native
   def alloc(size: scala.Double, fill: java.lang.String): nodeLib.Buffer = js.native
-  def alloc(size: scala.Double, fill: java.lang.String, encoding: java.lang.String): nodeLib.Buffer = js.native
+  def alloc(size: scala.Double, fill: java.lang.String, encoding: nodeLib.BufferEncoding): nodeLib.Buffer = js.native
   def alloc(size: scala.Double, fill: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def alloc(size: scala.Double, fill: nodeLib.Buffer, encoding: java.lang.String): nodeLib.Buffer = js.native
+  def alloc(size: scala.Double, fill: nodeLib.Buffer, encoding: nodeLib.BufferEncoding): nodeLib.Buffer = js.native
   def alloc(size: scala.Double, fill: scala.Double): nodeLib.Buffer = js.native
-  def alloc(size: scala.Double, fill: scala.Double, encoding: java.lang.String): nodeLib.Buffer = js.native
+  def alloc(size: scala.Double, fill: scala.Double, encoding: nodeLib.BufferEncoding): nodeLib.Buffer = js.native
   /**
     * Allocates a new buffer of {size} octets, leaving memory not initialized, so the contents
     * of the newly created Buffer are unknown and may contain sensitive data.
@@ -86,15 +86,15 @@ org.scalablytyped.runtime.Instantiable1[
     * @param encoding encoding used to evaluate (defaults to 'utf8')
     */
   def byteLength(string: java.lang.String): scala.Double = js.native
-  def byteLength(string: java.lang.String, encoding: java.lang.String): scala.Double = js.native
+  def byteLength(string: java.lang.String, encoding: nodeLib.BufferEncoding): scala.Double = js.native
   def byteLength(string: nodeLib.NodeJSNs.TypedArray): scala.Double = js.native
-  def byteLength(string: nodeLib.NodeJSNs.TypedArray, encoding: java.lang.String): scala.Double = js.native
+  def byteLength(string: nodeLib.NodeJSNs.TypedArray, encoding: nodeLib.BufferEncoding): scala.Double = js.native
   def byteLength(string: nodeLib.SharedArrayBuffer): scala.Double = js.native
-  def byteLength(string: nodeLib.SharedArrayBuffer, encoding: java.lang.String): scala.Double = js.native
+  def byteLength(string: nodeLib.SharedArrayBuffer, encoding: nodeLib.BufferEncoding): scala.Double = js.native
   def byteLength(string: stdLib.ArrayBuffer): scala.Double = js.native
-  def byteLength(string: stdLib.ArrayBuffer, encoding: java.lang.String): scala.Double = js.native
+  def byteLength(string: stdLib.ArrayBuffer, encoding: nodeLib.BufferEncoding): scala.Double = js.native
   def byteLength(string: stdLib.DataView): scala.Double = js.native
-  def byteLength(string: stdLib.DataView, encoding: java.lang.String): scala.Double = js.native
+  def byteLength(string: stdLib.DataView, encoding: nodeLib.BufferEncoding): scala.Double = js.native
   /**
     * The same as buf1.compare(buf2).
     */
@@ -138,7 +138,7 @@ org.scalablytyped.runtime.Instantiable1[
     * If not provided, {encoding} defaults to 'utf8'.
     */
   def from(str: java.lang.String): nodeLib.Buffer = js.native
-  def from(str: java.lang.String, encoding: java.lang.String): nodeLib.Buffer = js.native
+  def from(str: java.lang.String, encoding: nodeLib.BufferEncoding): nodeLib.Buffer = js.native
   /**
     * Returns true if {obj} is a Buffer
     *
@@ -151,7 +151,7 @@ org.scalablytyped.runtime.Instantiable1[
     *
     * @param encoding string to test.
     */
-  def isEncoding(encoding: java.lang.String): js.UndefOr[scala.Boolean] = js.native
+  def isEncoding(encoding: java.lang.String): /* is node.BufferEncoding */ scala.Boolean = js.native
   /**
     * Creates a new Buffer using the passed {data}
     * @param values to create a new Buffer

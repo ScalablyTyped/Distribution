@@ -11,6 +11,6 @@
 // TypeScript Version: 2.1
 /**
  * @see https://developers.google.com/youtube/iframe_api_reference
- * @see https://developers.google.com/YouTube/player_parameters
+ * @see https://developers.google.com/youtube/player_parameters
  */
 ```

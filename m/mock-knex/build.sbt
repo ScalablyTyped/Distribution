@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mock-knex"
-version := "0.3-dt-20190314Z-9a9b18"
+version := "0.3-dt-20190314Z-56917e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,23 +10,23 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-986805",
   "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
-  "org.scalablytyped" %%% "commander" % "2.20.0-8f0f6f",
+  "org.scalablytyped" %%% "commander" % "2.20.0-bf461f",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
   "org.scalablytyped" %%% "fined" % "1.1-dt-20190212Z-9ce3ac",
-  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-75670b",
-  "org.scalablytyped" %%% "interpret" % "1.1-dt-20190212Z-dcb20e",
-  "org.scalablytyped" %%% "knex" % "0.16.3-b3458c",
-  "org.scalablytyped" %%% "liftoff" % "2.5-dt-20181206Z-4f5b6f",
+  "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20190322Z-4987a8",
+  "org.scalablytyped" %%% "interpret" % "1.1-dt-20190212Z-38287c",
+  "org.scalablytyped" %%% "knex" % "0.16.3-1329ee",
+  "org.scalablytyped" %%% "liftoff" % "2.5-dt-20181206Z-dcac27",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190402Z-69a948",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",
-  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-6520aa",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190330Z-7c1cfd",
+  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-4e7e63",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
   "org.scalablytyped" %%% "pg-connection-string" % "2.0.0-2a8abc",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-1b70da",
   "org.scalablytyped" %%% "tildify" % "1.2-dt-20181206Z-9a78ae",
-  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-6db83f",
+  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-4ae640",
   "org.scalablytyped" %%% "v8flags" % "3.1-dt-20190212Z-0b14eb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

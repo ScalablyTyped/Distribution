@@ -925,6 +925,9 @@ object nodeLibStrings {
   sealed trait trailers extends js.Object
   
   @js.native
+  sealed trait `ucs-2` extends BufferEncoding
+  
+  @js.native
   sealed trait ucs2
     extends BufferEncoding
        with nodeLib.bufferMod.TranscodeEncoding
@@ -952,6 +955,9 @@ object nodeLibStrings {
   
   @js.native
   sealed trait unpipe extends js.Object
+  
+  @js.native
+  sealed trait `utf-8` extends BufferEncoding
   
   @js.native
   sealed trait utf16le
@@ -1528,6 +1534,8 @@ object nodeLibStrings {
   @scala.inline
   def trailers: trailers = "trailers".asInstanceOf[trailers]
   @scala.inline
+  def `ucs-2`: `ucs-2` = "ucs-2".asInstanceOf[`ucs-2`]
+  @scala.inline
   def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
   @scala.inline
   def udp4: udp4 = "udp4".asInstanceOf[udp4]
@@ -1543,6 +1551,8 @@ object nodeLibStrings {
   def unknownProtocol: unknownProtocol = "unknownProtocol".asInstanceOf[unknownProtocol]
   @scala.inline
   def unpipe: unpipe = "unpipe".asInstanceOf[unpipe]
+  @scala.inline
+  def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
   @scala.inline
   def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
   @scala.inline

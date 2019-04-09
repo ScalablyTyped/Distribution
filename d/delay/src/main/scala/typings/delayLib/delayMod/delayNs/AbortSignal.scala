@@ -1,15 +1,15 @@
 package typings
-package delayLib.delayMod
+package delayLib.delayMod.delayNs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Minimal subset of `AbortSignal` that delay will use if passed.
-  * This avoids a dependency on dom.d.ts.
-  * The dom.d.ts `AbortSignal` is compatible with this one.
-  */
+	Minimal subset of `AbortSignal` that delay will use if passed.
+	This avoids a dependency on dom.d.ts.
+	The dom.d.ts `AbortSignal` is compatible with this one.
+	*/
 @js.native
 trait AbortSignal extends js.Object {
   val aborted: scala.Boolean = js.native

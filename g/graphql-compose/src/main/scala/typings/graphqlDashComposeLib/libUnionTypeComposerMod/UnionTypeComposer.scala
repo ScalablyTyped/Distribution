@@ -26,6 +26,15 @@ class UnionTypeComposer[TSource, TContext] protected ()
   def clone(newTypeName: java.lang.String): UnionTypeComposer[TSource, TContext] = js.native
   def extendExtensions(extensions: graphqlDashComposeLib.libUtilsDefinitionsMod.Extensions): this.type = js.native
   def getDescription(): java.lang.String = js.native
+  def getDirectiveById(idx: scala.Double): graphqlDashComposeLib.libUtilsDefinitionsMod.DirectiveArgs | scala.Unit = js.native
+  def getDirectiveByName(directiveName: java.lang.String): graphqlDashComposeLib.libUtilsDefinitionsMod.DirectiveArgs | scala.Unit = js.native
+  def getDirectiveNames(): js.Array[java.lang.String] = js.native
+  /**
+    * -----------------------------------------------
+    * Directive methods
+    * -----------------------------------------------
+    */
+  def getDirectives(): js.Array[graphqlDashComposeLib.libUtilsDefinitionsMod.ExtensionsDirective] = js.native
   def getExtension(extensionName: java.lang.String): js.Any = js.native
   /**
     * -----------------------------------------------
