@@ -1,5 +1,5 @@
 package typings
-package atPulumiKubernetesLib.helmMod
+package atPulumiKubernetesLib.helmV2HelmMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`

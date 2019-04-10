@@ -21,7 +21,7 @@ trait Exphbs extends js.Object {
   def getTemplates(dirPath: java.lang.String, options: PartialTemplateOptions): js.Promise[js.Object] = js.native
   def render(filePath: java.lang.String, context: js.Object): js.Promise[java.lang.String] = js.native
   def render(filePath: java.lang.String, context: js.Object, options: RenderOptions): js.Promise[java.lang.String] = js.native
-  def renderView(viewPath: java.lang.String, optionsOrCallback: js.Any): scala.Unit = js.native
-  def renderView(viewPath: java.lang.String, optionsOrCallback: js.Any, callback: js.Function0[java.lang.String]): scala.Unit = js.native
+  def renderView(viewPath: java.lang.String, callback: ExphbsCallback): scala.Unit = js.native
+  def renderView(viewPath: java.lang.String, options: js.Any, callback: ExphbsCallback): scala.Unit = js.native
 }
 

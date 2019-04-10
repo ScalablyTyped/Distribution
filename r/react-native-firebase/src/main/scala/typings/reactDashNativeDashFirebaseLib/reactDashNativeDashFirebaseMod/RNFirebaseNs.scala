@@ -1174,6 +1174,7 @@ object RNFirebaseNs extends js.Object {
       var FieldPath: reactDashNativeDashFirebaseLib.Anon_DocumentId = js.native
       var FieldValue: reactDashNativeDashFirebaseLib.Anon_ArrayRemove = js.native
       var GeoPoint: org.scalablytyped.runtime.Instantiable2[/* latitude */ scala.Double, /* longitude */ scala.Double, GeoPoint] = js.native
+      var Timestamp: reactDashNativeDashFirebaseLib.Anon_Date = js.native
       def enableLogging(enabled: scala.Boolean): scala.Unit = js.native
       @JSName("setLogLevel")
       def setLogLevel_debug(logLevel: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.debug): scala.Unit = js.native
@@ -1281,6 +1282,16 @@ object RNFirebaseNs extends js.Object {
       var persistence: js.UndefOr[scala.Boolean] = js.undefined
       var ssl: js.UndefOr[scala.Boolean] = js.undefined
       var timestampsInSnapshots: js.UndefOr[scala.Boolean] = js.undefined
+    }
+    
+    @js.native
+    class Timestamp protected () extends js.Object {
+      def this(seconds: scala.Double, nanoseconds: scala.Double) = this()
+      val nanoseconds: scala.Double = js.native
+      val seconds: scala.Double = js.native
+      def isEqual(other: Timestamp): scala.Boolean = js.native
+      def toDate(): stdLib.Date = js.native
+      def toMillis(): scala.Double = js.native
     }
     
     @js.native
@@ -1447,6 +1458,7 @@ object RNFirebaseNs extends js.Object {
         elements: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.AnyJs*
       ): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.FieldValue = js.native
       def delete(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.FieldValue = js.native
+      def increment(n: scala.Double): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.FieldValue = js.native
       def serverTimestamp(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.FieldValue = js.native
     }
     
@@ -1528,6 +1540,14 @@ object RNFirebaseNs extends js.Object {
         var metadata: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.SnapshotMetadata
       }
       
+    }
+    
+    /* static members */
+    @js.native
+    object Timestamp extends js.Object {
+      def fromDate(date: stdLib.Date): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.Timestamp = js.native
+      def fromMillis(milliseconds: scala.Double): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.Timestamp = js.native
+      def now(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.Timestamp = js.native
     }
     
     @JSName("Types")
@@ -2062,6 +2082,10 @@ object RNFirebaseNs extends js.Object {
       ): js.Promise[scala.Unit]
       def deleteChannel(channelId: java.lang.String): js.Promise[scala.Unit]
       def deleteChannelGroup(groupId: java.lang.String): js.Promise[scala.Unit]
+      def getChannel(channelId: java.lang.String): js.Promise[NativeAndroidChannel | scala.Null]
+      def getChannelGroup(channelId: java.lang.String): js.Promise[NativeAndroidChannelGroup | scala.Null]
+      def getChannelGroups(channelId: java.lang.String): js.Promise[js.Array[NativeAndroidChannelGroup]]
+      def getChannels(channelId: java.lang.String): js.Promise[js.Array[NativeAndroidChannel]]
     }
     
     @js.native
@@ -2096,6 +2120,31 @@ object RNFirebaseNs extends js.Object {
       def setHasAction(hasAction: scala.Boolean): Notification = js.native
       def setLaunchImage(launchImage: java.lang.String): Notification = js.native
       def setThreadIdentifier(threadIdentifier: java.lang.String): Notification = js.native
+    }
+    
+    trait NativeAndroidChannel extends js.Object {
+      var bypassDnd: js.UndefOr[scala.Boolean] = js.undefined
+      var channelId: java.lang.String
+      var description: js.UndefOr[java.lang.String] = js.undefined
+      var group: js.UndefOr[java.lang.String] = js.undefined
+      var importance: scala.Double
+      var lightColor: js.UndefOr[java.lang.String] = js.undefined
+      var lightsEnabled: js.UndefOr[scala.Boolean] = js.undefined
+      var lockScreenVisibility: js.UndefOr[scala.Double] = js.undefined
+      var name: java.lang.String
+      var showBadge: js.UndefOr[scala.Boolean] = js.undefined
+      var sound: js.UndefOr[java.lang.String] = js.undefined
+      var vibrationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+      var vibrationPattern: js.UndefOr[js.Array[scala.Double]] = js.undefined
+    }
+    
+    trait NativeAndroidChannelGroup extends js.Object {
+      // Android API >= 28
+      var channels: scala.Unit | js.Array[NativeAndroidChannel]
+      // Android API >= 28
+      var description: java.lang.String | scala.Unit
+      var groupId: java.lang.String
+      var name: java.lang.String
     }
     
     @js.native

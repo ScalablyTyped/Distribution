@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "co-body"
-version := "0.0-unknown-dt-20190322Z-a84bb4"
+version := "0.0-unknown-dt-20190322Z-e5a022"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20190131Z-2b27d0",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
-  "org.scalablytyped" %%% "qs" % "6.5.0-dt-20190322Z-2e1340",
+  "org.scalablytyped" %%% "qs" % "6.5-dt-20190409Z-e41135",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-623d43",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-4ceb07",
   "org.scalablytyped" %%% "std" % "3.4-d52857")

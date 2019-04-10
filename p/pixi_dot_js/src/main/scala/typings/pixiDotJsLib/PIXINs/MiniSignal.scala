@@ -7,26 +7,21 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("PIXI.MiniSignal")
 @js.native
-class MiniSignal () extends js.Object {
-  var _head: MiniSignalBinding = js.native
-  var _tail: MiniSignalBinding = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
-  def add(fn: js.Function): js.Any = js.native
-  def add(fn: js.Function, thisArg: js.Any): js.Any = js.native
-  def detach(node: MiniSignalBinding): MiniSignal = js.native
-  def detachAll(): MiniSignal = js.native
-  def dispatch(): scala.Boolean = js.native
+class MiniSignal[CbType /* <: js.Function1[/* repeated */ js.Any, _] */] () extends js.Object {
+  var dispatch: CbType = js.native
+  def add(fn: CbType): MiniSignalBinding = js.native
+  def add(fn: CbType, thisArg: js.Any): MiniSignalBinding = js.native
+  def add(fn: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def add(fn: js.Function1[/* repeated */ js.Any, _], thisArg: js.Any): js.Any = js.native
+  def detach(node: MiniSignalBinding): MiniSignal[CbType] = js.native
+  def detachAll(): MiniSignal[CbType] = js.native
   def handlers(): js.Array[MiniSignalBinding] = js.native
   def handlers(exists: pixiDotJsLib.pixiDotJsLibNumbers.`false`): js.Array[MiniSignalBinding] = js.native
   def handlers(exists: pixiDotJsLib.pixiDotJsLibNumbers.`true`): scala.Boolean = js.native
-  def handlers(exists: scala.Boolean): js.Array[MiniSignalBinding] | scala.Boolean = js.native
-  @JSName("handlers")
-  def `handlers_<union>`(): js.Array[MiniSignalBinding] | scala.Boolean = js.native
-  @JSName("handlers")
-  def handlers_Boolean(): scala.Boolean = js.native
   def has(node: MiniSignalBinding): scala.Boolean = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
-  def once(fn: js.Function): js.Any = js.native
-  def once(fn: js.Function, thisArg: js.Any): js.Any = js.native
+  def once(fn: CbType): MiniSignalBinding = js.native
+  def once(fn: CbType, thisArg: js.Any): MiniSignalBinding = js.native
+  def once(fn: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def once(fn: js.Function1[/* repeated */ js.Any, _], thisArg: js.Any): js.Any = js.native
 }
 

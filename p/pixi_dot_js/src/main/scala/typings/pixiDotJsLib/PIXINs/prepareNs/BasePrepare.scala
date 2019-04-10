@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation._
 abstract class BasePrepare[UploadHookSource] protected () extends js.Object {
   def this(renderer: pixiDotJsLib.PIXINs.SystemRenderer) = this()
   var addHooks: js.Array[AddHook] = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
-  var completes: js.Array[js.Function] = js.native
   var limiter: CountLimiter | TimeLimiter = js.native
   var queue: js.Array[_] = js.native
   var renderer: pixiDotJsLib.PIXINs.SystemRenderer = js.native
@@ -25,6 +23,7 @@ abstract class BasePrepare[UploadHookSource] protected () extends js.Object {
   def add(item: pixiDotJsLib.PIXINs.Graphics): this.type = js.native
   def add(item: pixiDotJsLib.PIXINs.Text): this.type = js.native
   def add(item: pixiDotJsLib.PIXINs.Texture): this.type = js.native
+  /* protected */ def completes(args: js.Any*): js.Array[_] = js.native
   /* protected */ def delayedTick(): scala.Unit = js.native
   def destroy(): scala.Unit = js.native
   /* protected */ def findBaseTexture(item: pixiDotJsLib.PIXINs.DisplayObject, queue: js.Array[_]): scala.Boolean = js.native

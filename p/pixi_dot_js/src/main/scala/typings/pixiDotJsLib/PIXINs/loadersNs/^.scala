@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val shared: Loader = js.native
+  def encodeBinary(input: java.lang.String): java.lang.String = js.native
 }
 

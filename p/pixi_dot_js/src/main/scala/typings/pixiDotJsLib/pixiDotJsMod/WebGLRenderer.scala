@@ -20,7 +20,6 @@ class WebGLRenderer ()
 @JSImport("pixi.js", "WebGLRenderer")
 @js.native
 object WebGLRenderer extends js.Object {
-  //tslint:disable-next-line:ban-types forbidden-types
   // plugintarget mixin start
   var __plugins: org.scalablytyped.runtime.StringDictionary[pixiDotJsLib.Anon_RendererAny] = js.native
   def registerPlugin(pluginName: java.lang.String, ctor: pixiDotJsLib.Anon_RendererAny): scala.Unit = js.native

@@ -21,6 +21,9 @@ class Rectangle () extends HitArea {
   var width: scala.Double = js.native
   var x: scala.Double = js.native
   var y: scala.Double = js.native
+  def ceil(): scala.Unit = js.native
+  def ceil(resolution: scala.Double): scala.Unit = js.native
+  def ceil(resolution: scala.Double, eps: scala.Double): scala.Unit = js.native
   /* CompleteClass */
   override def contains(x: scala.Double, y: scala.Double): scala.Boolean = js.native
   def copy(rectangle: Rectangle): Rectangle = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gitlab"
-version := "4.5.1-4ab3fe"
+version := "4.5.1-4a94d4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "is-function" % "1.0-dt-20190123Z-6c65c2",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
   "org.scalablytyped" %%% "parse-link-header" % "1.0-dt-20180214Z-01ad06",
-  "org.scalablytyped" %%% "qs" % "6.5.0-dt-20190322Z-2e1340",
+  "org.scalablytyped" %%% "qs" % "6.5-dt-20190409Z-e41135",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-b4695d",
   "org.scalablytyped" %%% "request-promise" % "4.1-dt-20180712Z-ee7a59",
   "org.scalablytyped" %%% "std" % "3.4-d52857",

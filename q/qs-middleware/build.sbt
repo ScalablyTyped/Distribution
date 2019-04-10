@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "qs-middleware"
-version := "1.0-dt-20190126Z-22ed01"
+version := "1.0-dt-20190126Z-dede9b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190318Z-d8c77b",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
   "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
-  "org.scalablytyped" %%% "qs" % "6.5.0-dt-20190322Z-2e1340",
+  "org.scalablytyped" %%% "qs" % "6.5-dt-20190409Z-e41135",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-623d43",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20190322Z-4ceb07",
   "org.scalablytyped" %%% "std" % "3.4-d52857")

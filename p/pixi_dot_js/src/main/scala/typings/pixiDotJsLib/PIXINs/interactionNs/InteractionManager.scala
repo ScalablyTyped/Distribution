@@ -58,45 +58,51 @@ class InteractionManager protected ()
   /* protected */ def normalizeToPointerData(event: stdLib.PointerEvent): js.Array[stdLib.PointerEvent] = js.native
   /* protected */ def normalizeToPointerData(event: stdLib.TouchEvent): js.Array[stdLib.PointerEvent] = js.native
   /* protected */ def onPointerCancel(event: stdLib.PointerEvent): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
-  /* protected */ def onPointerComplete(originalEvent: stdLib.PointerEvent, cancelled: scala.Boolean, func: js.Function): scala.Unit = js.native
+  /* protected */ def onPointerComplete(
+    originalEvent: stdLib.PointerEvent,
+    cancelled: scala.Boolean,
+    func: js.Function1[/* repeated */ js.Any, _]
+  ): scala.Unit = js.native
   /* protected */ def onPointerDown(event: stdLib.PointerEvent): scala.Unit = js.native
   /* protected */ def onPointerMove(event: stdLib.PointerEvent): scala.Unit = js.native
   /* protected */ def onPointerOut(event: stdLib.PointerEvent): scala.Unit = js.native
   /* protected */ def onPointerOver(event: stdLib.PointerEvent): scala.Unit = js.native
   /* protected */ def onPointerUp(event: stdLib.PointerEvent): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: pixiDotJsLib.PIXINs.Container): scala.Boolean = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.Container,
-    func: js.Function
+    func: js.Function1[/* repeated */ js.Any, _]
   ): scala.Boolean = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.Container,
-    func: js.Function,
+    func: js.Function1[/* repeated */ js.Any, _],
     hitTest: scala.Boolean
   ): scala.Boolean = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.Container,
-    func: js.Function,
+    func: js.Function1[/* repeated */ js.Any, _],
     hitTest: scala.Boolean,
     interactive: scala.Boolean
   ): scala.Boolean = js.native
   /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: pixiDotJsLib.PIXINs.Sprite): scala.Boolean = js.native
-  /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: pixiDotJsLib.PIXINs.Sprite, func: js.Function): scala.Boolean = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.Sprite,
-    func: js.Function,
+    func: js.Function1[/* repeated */ js.Any, _]
+  ): scala.Boolean = js.native
+  /* protected */ def processInteractive(
+    interactionEvent: InteractionEvent,
+    displayObject: pixiDotJsLib.PIXINs.Sprite,
+    func: js.Function1[/* repeated */ js.Any, _],
     hitTest: scala.Boolean
   ): scala.Boolean = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.Sprite,
-    func: js.Function,
+    func: js.Function1[/* repeated */ js.Any, _],
     hitTest: scala.Boolean,
     interactive: scala.Boolean
   ): scala.Boolean = js.native
@@ -104,18 +110,18 @@ class InteractionManager protected ()
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.extrasNs.TilingSprite,
-    func: js.Function
+    func: js.Function1[/* repeated */ js.Any, _]
   ): scala.Boolean = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.extrasNs.TilingSprite,
-    func: js.Function,
+    func: js.Function1[/* repeated */ js.Any, _],
     hitTest: scala.Boolean
   ): scala.Boolean = js.native
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.extrasNs.TilingSprite,
-    func: js.Function,
+    func: js.Function1[/* repeated */ js.Any, _],
     hitTest: scala.Boolean,
     interactive: scala.Boolean
   ): scala.Boolean = js.native

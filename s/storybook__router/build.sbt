@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__router"
-version := "5.0.6-66e4d5"
+version := "5.0.6-77327d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -31,7 +31,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "object-assign" % "4.0.1-dt-20190322Z-d95386",
   "org.scalablytyped" %%% "polished" % "2.3.3-5430b2",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
-  "org.scalablytyped" %%% "qs" % "6.5.0-dt-20190322Z-2e1340",
+  "org.scalablytyped" %%% "qs" % "6.5-dt-20190409Z-e41135",
   "org.scalablytyped" %%% "reach__router" % "1.2-dt-20190114Z-5e294c",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-3351b3",
   "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-511913",

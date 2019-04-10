@@ -9,6 +9,7 @@ trait IParseOptions extends js.Object {
   var allowDots: js.UndefOr[scala.Boolean] = js.undefined
   var allowPrototypes: js.UndefOr[scala.Boolean] = js.undefined
   var arrayLimit: js.UndefOr[scala.Double] = js.undefined
+  var comma: js.UndefOr[scala.Boolean] = js.undefined
   var decoder: js.UndefOr[js.Function1[/* str */ java.lang.String, _]] = js.undefined
   var delimiter: js.UndefOr[java.lang.String | stdLib.RegExp] = js.undefined
   var depth: js.UndefOr[scala.Double] = js.undefined
@@ -25,6 +26,7 @@ object IParseOptions {
     allowDots: js.UndefOr[scala.Boolean] = js.undefined,
     allowPrototypes: js.UndefOr[scala.Boolean] = js.undefined,
     arrayLimit: scala.Int | scala.Double = null,
+    comma: js.UndefOr[scala.Boolean] = js.undefined,
     decoder: /* str */ java.lang.String => _ = null,
     delimiter: java.lang.String | stdLib.RegExp = null,
     depth: scala.Int | scala.Double = null,
@@ -38,6 +40,7 @@ object IParseOptions {
     if (!js.isUndefined(allowDots)) __obj.updateDynamic("allowDots")(allowDots)
     if (!js.isUndefined(allowPrototypes)) __obj.updateDynamic("allowPrototypes")(allowPrototypes)
     if (arrayLimit != null) __obj.updateDynamic("arrayLimit")(arrayLimit.asInstanceOf[js.Any])
+    if (!js.isUndefined(comma)) __obj.updateDynamic("comma")(comma)
     if (decoder != null) __obj.updateDynamic("decoder")(js.Any.fromFunction1(decoder))
     if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
     if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])

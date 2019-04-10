@@ -18,6 +18,12 @@ import scala.scalajs.js.annotation._
     */
   var fill: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Whether the user has made a selection in the input. This will affect the component's
+    * text styling. Make sure to set a non-empty value for the text prop as well.
+    * @default false
+    */
+  var hasSelection: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The props to pass to the child input.
     * `disabled` will be ignored in favor of the top-level prop.
     * `type` will be ignored, because the input _must_ be `type="file"`.
@@ -52,6 +58,7 @@ object IFileInputProps {
     LabelHTMLAttributes: reactLib.reactMod.ReactNs.LabelHTMLAttributes[stdLib.HTMLLabelElement] = null,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     fill: js.UndefOr[scala.Boolean] = js.undefined,
+    hasSelection: js.UndefOr[scala.Boolean] = js.undefined,
     inputProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLInputElement] = null,
     large: js.UndefOr[scala.Boolean] = js.undefined,
     onInputChange: reactLib.reactMod.ReactNs.FormEventHandler[stdLib.HTMLInputElement] = null,
@@ -62,6 +69,7 @@ object IFileInputProps {
     js.Dynamic.global.Object.assign(__obj, LabelHTMLAttributes)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (!js.isUndefined(hasSelection)) __obj.updateDynamic("hasSelection")(hasSelection)
     if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
     if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
     if (onInputChange != null) __obj.updateDynamic("onInputChange")(onInputChange)

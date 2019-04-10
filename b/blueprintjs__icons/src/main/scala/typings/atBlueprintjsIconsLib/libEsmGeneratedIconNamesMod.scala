@@ -228,6 +228,7 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val INBOX_SEARCH: /* inbox-search */ java.lang.String = js.native
   val INBOX_UPDATE: /* inbox-update */ java.lang.String = js.native
   val INFO_SIGN: /* info-sign */ java.lang.String = js.native
+  val INHERITANCE: /* inheritance */ java.lang.String = js.native
   val INNER_JOIN: /* inner-join */ java.lang.String = js.native
   val INSERT: /* insert */ java.lang.String = js.native
   val INTERSECTION: /* intersection */ java.lang.String = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typedoc"
-version := "0.14.2-37721b"
+version := "0.14.2-1770a9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "shelljs" % "0.8-dt-20190401Z-452b1e",
   "org.scalablytyped" %%% "source-map" % "0.7.3-1b6210",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "typescript" % "3.4.2-a42773",
+  "org.scalablytyped" %%% "typescript" % "3.4.3-a42773",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-c8c046")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

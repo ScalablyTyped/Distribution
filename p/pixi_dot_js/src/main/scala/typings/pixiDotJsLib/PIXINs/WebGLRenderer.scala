@@ -17,10 +17,12 @@ class WebGLRenderer () extends SystemRenderer {
   var _activeRenderTarget: RenderTarget = js.native
   var _activeShader: Shader = js.native
   var _contextOptions: pixiDotJsLib.Anon_Alpha = js.native
+  var _unknownBoundTextures: js.Array[BaseTexture] = js.native
   var boundTextures: js.Array[BaseTexture] = js.native
   var currentRenderer: ObjectRenderer = js.native
   var drawModes: js.Any = js.native
   var emptyRenderer: ObjectRenderer = js.native
+  var emptyTextures: js.Array[BaseTexture] = js.native
   var extract: pixiDotJsLib.PIXINs.extractNs.WebGLExtract = js.native
   var filterManager: FilterManager = js.native
   var gl: stdLib.WebGLRenderingContext = js.native
@@ -194,7 +196,6 @@ class WebGLRenderer () extends SystemRenderer {
 @JSGlobal("PIXI.WebGLRenderer")
 @js.native
 object WebGLRenderer extends js.Object {
-  //tslint:disable-next-line:ban-types forbidden-types
   // plugintarget mixin start
   var __plugins: org.scalablytyped.runtime.StringDictionary[pixiDotJsLib.Anon_RendererAny] = js.native
   def registerPlugin(pluginName: java.lang.String, ctor: pixiDotJsLib.Anon_RendererAny): scala.Unit = js.native

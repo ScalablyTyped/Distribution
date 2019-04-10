@@ -65,6 +65,7 @@ object libEsmCommonClassesMod extends js.Object {
   val ELEVATION_4: java.lang.String = js.native
   val END: java.lang.String = js.native
   val FILE_INPUT: java.lang.String = js.native
+  val FILE_INPUT_HAS_SELECTION: java.lang.String = js.native
   val FILE_UPLOAD_INPUT: java.lang.String = js.native
   val FILL: java.lang.String = js.native
   val FIXED: java.lang.String = js.native

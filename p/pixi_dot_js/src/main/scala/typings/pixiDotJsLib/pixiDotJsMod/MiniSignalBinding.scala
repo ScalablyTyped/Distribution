@@ -10,14 +10,9 @@ import scala.scalajs.js.annotation._
 //////////////////////////////////////////////////////////////////////////////
 // pixi loader extends
 // https://github.com/englercj/resource-loader/
-// 2.1.1
+// 2.2.3
 @JSImport("pixi.js", "MiniSignalBinding")
 @js.native
-class MiniSignalBinding protected ()
-  extends pixiDotJsLib.PIXINs.MiniSignalBinding {
-  //tslint:disable-next-line:ban-types forbidden-types
-  def this(fn: js.Function) = this()
-  def this(fn: js.Function, once: scala.Boolean) = this()
-  def this(fn: js.Function, once: scala.Boolean, thisArg: js.Any) = this()
-}
+class MiniSignalBinding ()
+  extends pixiDotJsLib.PIXINs.MiniSignalBinding
 

@@ -19,11 +19,10 @@ class EventEmitter () extends js.Object {
   /**
     * Alias method for `on`
     */
-  //tslint:disable-next-line:ban-types forbidden-types
-  def addListener(event: java.lang.String, fn: js.Function): this.type = js.native
-  def addListener(event: java.lang.String, fn: js.Function, context: js.Any): this.type = js.native
-  def addListener(event: js.Symbol, fn: js.Function): this.type = js.native
-  def addListener(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
+  def addListener(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def addListener(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): this.type = js.native
+  def addListener(event: js.Symbol, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def addListener(event: js.Symbol, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): this.type = js.native
   /**
     * Calls each of the listeners registered for a given event.
     *
@@ -61,15 +60,19 @@ class EventEmitter () extends js.Object {
   /**
     * Alias method for `removeListener`
     */
-  //tslint:disable-next-line:ban-types forbidden-types
   def off(event: java.lang.String): this.type = js.native
-  def off(event: java.lang.String, fn: js.Function): this.type = js.native
-  def off(event: java.lang.String, fn: js.Function, context: js.Any): this.type = js.native
-  def off(event: java.lang.String, fn: js.Function, context: js.Any, once: scala.Boolean): this.type = js.native
+  def off(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def off(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): this.type = js.native
+  def off(
+    event: java.lang.String,
+    fn: js.Function1[/* repeated */ js.Any, _],
+    context: js.Any,
+    once: scala.Boolean
+  ): this.type = js.native
   def off(event: js.Symbol): this.type = js.native
-  def off(event: js.Symbol, fn: js.Function): this.type = js.native
-  def off(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
-  def off(event: js.Symbol, fn: js.Function, context: js.Any, once: scala.Boolean): this.type = js.native
+  def off(event: js.Symbol, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def off(event: js.Symbol, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): this.type = js.native
+  def off(event: js.Symbol, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any, once: scala.Boolean): this.type = js.native
   /**
     * Add a listener for a given event.
     *
@@ -78,11 +81,10 @@ class EventEmitter () extends js.Object {
     * @param {*} [context=this] The context to invoke the listener with.
     * @returns {EventEmitter} `this`.
     */
-  //tslint:disable-next-line:ban-types forbidden-types
-  def on(event: java.lang.String, fn: js.Function): this.type = js.native
-  def on(event: java.lang.String, fn: js.Function, context: js.Any): this.type = js.native
-  def on(event: js.Symbol, fn: js.Function): this.type = js.native
-  def on(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
+  def on(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def on(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): this.type = js.native
+  def on(event: js.Symbol, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def on(event: js.Symbol, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): this.type = js.native
   /**
     * Add a one-time listener for a given event.
     *
@@ -91,11 +93,10 @@ class EventEmitter () extends js.Object {
     * @param {*} [context=this] The context to invoke the listener with.
     * @returns {EventEmitter} `this`.
     */
-  //tslint:disable-next-line:ban-types forbidden-types
-  def once(event: java.lang.String, fn: js.Function): this.type = js.native
-  def once(event: java.lang.String, fn: js.Function, context: js.Any): this.type = js.native
-  def once(event: js.Symbol, fn: js.Function): this.type = js.native
-  def once(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
+  def once(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def once(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): this.type = js.native
+  def once(event: js.Symbol, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def once(event: js.Symbol, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): this.type = js.native
   /**
     * Remove all listeners, or those of the specified event.
     *
@@ -114,15 +115,19 @@ class EventEmitter () extends js.Object {
     * @param {boolean} once Only remove one-time listeners.
     * @returns {EventEmitter} `this`.
     */
-  //tslint:disable-next-line:ban-types forbidden-types
   def removeListener(event: java.lang.String): this.type = js.native
-  def removeListener(event: java.lang.String, fn: js.Function): this.type = js.native
-  def removeListener(event: java.lang.String, fn: js.Function, context: js.Any): this.type = js.native
-  def removeListener(event: java.lang.String, fn: js.Function, context: js.Any, once: scala.Boolean): this.type = js.native
+  def removeListener(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def removeListener(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): this.type = js.native
+  def removeListener(
+    event: java.lang.String,
+    fn: js.Function1[/* repeated */ js.Any, _],
+    context: js.Any,
+    once: scala.Boolean
+  ): this.type = js.native
   def removeListener(event: js.Symbol): this.type = js.native
-  def removeListener(event: js.Symbol, fn: js.Function): this.type = js.native
-  def removeListener(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
-  def removeListener(event: js.Symbol, fn: js.Function, context: js.Any, once: scala.Boolean): this.type = js.native
+  def removeListener(event: js.Symbol, fn: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
+  def removeListener(event: js.Symbol, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any): this.type = js.native
+  def removeListener(event: js.Symbol, fn: js.Function1[/* repeated */ js.Any, _], context: js.Any, once: scala.Boolean): this.type = js.native
   /**
     * This function doesn"t apply anymore.
     * @deprecated

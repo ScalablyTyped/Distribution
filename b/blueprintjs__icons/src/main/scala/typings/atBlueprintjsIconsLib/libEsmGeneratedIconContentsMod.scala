@@ -228,6 +228,7 @@ object libEsmGeneratedIconContentsMod extends js.Object {
   val INBOX_SEARCH: /* \\uE7D3 */ java.lang.String = js.native
   val INBOX_UPDATE: /* \\uE7D4 */ java.lang.String = js.native
   val INFO_SIGN: /* \\u2139 */ java.lang.String = js.native
+  val INHERITANCE: /* \\uE7D5 */ java.lang.String = js.native
   val INNER_JOIN: /* \\uE7A3 */ java.lang.String = js.native
   val INSERT: /* \\uE66C */ java.lang.String = js.native
   val INTERSECTION: /* \\uE765 */ java.lang.String = js.native
