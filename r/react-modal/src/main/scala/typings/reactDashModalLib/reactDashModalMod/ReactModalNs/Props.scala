@@ -33,7 +33,12 @@ trait Props extends js.Object {
   /* Function that will be run after the modal has opened. */
   var onAfterOpen: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /* Function that will be run when the modal is requested to be closed, prior to actually closing. */
-  var onRequestClose: js.UndefOr[js.Function1[/* event */ stdLib.MouseEvent | stdLib.KeyboardEvent, scala.Unit]] = js.undefined
+  var onRequestClose: js.UndefOr[
+    js.Function1[
+      /* event */ (reactLib.reactMod.ReactNs.MouseEvent[reactLib.Element, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.Element], 
+      scala.Unit
+    ]
+  ] = js.undefined
   /* String or object className to be applied to the overlay. */
   var overlayClassName: js.UndefOr[java.lang.String | Classes] = js.undefined
   /* Function accepting the ref for the overlay */
@@ -74,7 +79,7 @@ object Props {
     htmlOpenClassName: java.lang.String = null,
     onAfterClose: () => scala.Unit = null,
     onAfterOpen: () => scala.Unit = null,
-    onRequestClose: /* event */ stdLib.MouseEvent | stdLib.KeyboardEvent => scala.Unit = null,
+    onRequestClose: /* event */ (reactLib.reactMod.ReactNs.MouseEvent[reactLib.Element, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.Element] => scala.Unit = null,
     overlayClassName: java.lang.String | Classes = null,
     overlayRef: /* instance */ stdLib.HTMLDivElement => scala.Unit = null,
     parentSelector: () => stdLib.HTMLElement = null,

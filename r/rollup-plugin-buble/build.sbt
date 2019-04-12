@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-buble"
-version := "0.19-dt-20190312Z-da02af"
+version := "0.19-dt-20190312Z-bc1787"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "buble" % "0.19-dt-20190312Z-05012d",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20190322Z-0ec5cf",
   "org.scalablytyped" %%% "magic-string" % "0.25.2-30ee30",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
-  "org.scalablytyped" %%% "rollup" % "1.9.0-c13689",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
+  "org.scalablytyped" %%% "rollup" % "1.10.0-2566e0",
   "org.scalablytyped" %%% "sourcemap-codec" % "1.4.4-2de43f",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false

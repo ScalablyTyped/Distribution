@@ -19,7 +19,7 @@ package object KnexNs {
   type JoinCallback = js.ThisFunction1[/* this */ JoinClause, /* join */ JoinClause, scala.Unit]
   type JoinRaw = js.Function2[
     /* tableName */ java.lang.String, 
-    /* binding */ js.UndefOr[knexLib.Value], 
+    /* binding */ js.UndefOr[knexLib.Value | knexLib.ValueMap], 
     QueryBuilder
   ]
   type MySqlAlterTableBuilder = AlterTableBuilder

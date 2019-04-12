@@ -28,6 +28,7 @@ object IEllipseOptions {
     borderOpacityWhenMoving: scala.Int | scala.Double = null,
     borderScaleFactor: scala.Int | scala.Double = null,
     cacheProperties: js.Array[java.lang.String] = null,
+    canvas: Canvas = null,
     centeredRotation: js.UndefOr[scala.Boolean] = js.undefined,
     centeredScaling: js.UndefOr[scala.Boolean] = js.undefined,
     clipPath: Object = null,
@@ -46,6 +47,7 @@ object IEllipseOptions {
     flipX: js.UndefOr[scala.Boolean] = js.undefined,
     flipY: js.UndefOr[scala.Boolean] = js.undefined,
     globalCompositeOperation: java.lang.String = null,
+    group: Group = null,
     hasBorders: js.UndefOr[scala.Boolean] = js.undefined,
     hasControls: js.UndefOr[scala.Boolean] = js.undefined,
     hasRotatingPoint: js.UndefOr[scala.Boolean] = js.undefined,
@@ -87,6 +89,8 @@ object IEllipseOptions {
     shadow: Shadow | java.lang.String = null,
     skewX: scala.Int | scala.Double = null,
     skewY: scala.Int | scala.Double = null,
+    snapAngle: scala.Int | scala.Double = null,
+    snapThreshold: scala.Int | scala.Double = null,
     stateProperties: js.Array[java.lang.String] = null,
     statefullCache: js.UndefOr[scala.Boolean] = js.undefined,
     stroke: java.lang.String = null,
@@ -114,6 +118,7 @@ object IEllipseOptions {
     if (borderOpacityWhenMoving != null) __obj.updateDynamic("borderOpacityWhenMoving")(borderOpacityWhenMoving.asInstanceOf[js.Any])
     if (borderScaleFactor != null) __obj.updateDynamic("borderScaleFactor")(borderScaleFactor.asInstanceOf[js.Any])
     if (cacheProperties != null) __obj.updateDynamic("cacheProperties")(cacheProperties)
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
     if (!js.isUndefined(centeredRotation)) __obj.updateDynamic("centeredRotation")(centeredRotation)
     if (!js.isUndefined(centeredScaling)) __obj.updateDynamic("centeredScaling")(centeredScaling)
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
@@ -132,6 +137,7 @@ object IEllipseOptions {
     if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX)
     if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY)
     if (globalCompositeOperation != null) __obj.updateDynamic("globalCompositeOperation")(globalCompositeOperation)
+    if (group != null) __obj.updateDynamic("group")(group)
     if (!js.isUndefined(hasBorders)) __obj.updateDynamic("hasBorders")(hasBorders)
     if (!js.isUndefined(hasControls)) __obj.updateDynamic("hasControls")(hasControls)
     if (!js.isUndefined(hasRotatingPoint)) __obj.updateDynamic("hasRotatingPoint")(hasRotatingPoint)
@@ -173,6 +179,8 @@ object IEllipseOptions {
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (skewX != null) __obj.updateDynamic("skewX")(skewX.asInstanceOf[js.Any])
     if (skewY != null) __obj.updateDynamic("skewY")(skewY.asInstanceOf[js.Any])
+    if (snapAngle != null) __obj.updateDynamic("snapAngle")(snapAngle.asInstanceOf[js.Any])
+    if (snapThreshold != null) __obj.updateDynamic("snapThreshold")(snapThreshold.asInstanceOf[js.Any])
     if (stateProperties != null) __obj.updateDynamic("stateProperties")(stateProperties)
     if (!js.isUndefined(statefullCache)) __obj.updateDynamic("statefullCache")(statefullCache)
     if (stroke != null) __obj.updateDynamic("stroke")(stroke)

@@ -56,24 +56,18 @@ trait ReportingDescriptor extends js.Object {
     */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * An array of references used to locate an optional set of taxonomy reporting descriptors that may be applied to a
-    * result.
-    */
-  var optionalTaxa: js.UndefOr[js.Array[ReportingDescriptorReference]] = js.undefined
-  /**
     * Key/value pairs that provide additional information about the report.
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
+  /**
+    * An array of objects that describe relationships between this reporting descriptor and others.
+    */
+  var relationships: js.UndefOr[js.Array[ReportingDescriptorRelationship]] = js.undefined
   /**
     * A concise description of the report. Should be a single sentence that is understandable when visible space is
     * limited to a single line of text.
     */
   var shortDescription: js.UndefOr[MultiformatMessageString] = js.undefined
-  /**
-    * An array of references used to locate a set of taxonomy reporting descriptors that are always applicable to a
-    * result.
-    */
-  var taxa: js.UndefOr[js.Array[ReportingDescriptorReference]] = js.undefined
 }
 
 object ReportingDescriptor {
@@ -90,10 +84,9 @@ object ReportingDescriptor {
     id: java.lang.String = null,
     messageStrings: org.scalablytyped.runtime.StringDictionary[MultiformatMessageString] = null,
     name: java.lang.String = null,
-    optionalTaxa: js.Array[ReportingDescriptorReference] = null,
     properties: PropertyBag = null,
-    shortDescription: MultiformatMessageString = null,
-    taxa: js.Array[ReportingDescriptorReference] = null
+    relationships: js.Array[ReportingDescriptorRelationship] = null,
+    shortDescription: MultiformatMessageString = null
   ): ReportingDescriptor = {
     val __obj = js.Dynamic.literal()
     if (defaultConfiguration != null) __obj.updateDynamic("defaultConfiguration")(defaultConfiguration)
@@ -107,10 +100,9 @@ object ReportingDescriptor {
     if (id != null) __obj.updateDynamic("id")(id)
     if (messageStrings != null) __obj.updateDynamic("messageStrings")(messageStrings)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (optionalTaxa != null) __obj.updateDynamic("optionalTaxa")(optionalTaxa)
     if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (relationships != null) __obj.updateDynamic("relationships")(relationships)
     if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription)
-    if (taxa != null) __obj.updateDynamic("taxa")(taxa)
     __obj.asInstanceOf[ReportingDescriptor]
   }
 }

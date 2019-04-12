@@ -14,5 +14,7 @@ class UINT64 protected () extends Uint {
   def this(text: java.lang.String) = this()
   def this(low: scala.Double, high: scala.Double) = this()
   def this(text: java.lang.String, radix: scala.Double) = this()
+  // called as constructor:
+  def this(a00: scala.Double, a16: scala.Double, a32: scala.Double, a48: scala.Double) = this()
 }
 

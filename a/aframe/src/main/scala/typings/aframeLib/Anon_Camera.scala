@@ -8,10 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Camera
   extends org.scalablytyped.runtime.Instantiable2[
-      /* scene */ threeLib.threeDashCoreMod.Scene, 
-      /* camera */ threeLib.threeDashCoreMod.Camera, 
-      threeLib.threeMod.SSAARenderPass
+      /* gl */ js.Any, 
+      /* program */ threeLib.srcRenderersWebglWebGLProgramMod.WebGLProgram, 
+      threeLib.threeMod.WebGLUniforms
     ] {
-  val JitterVectors: js.Array[js.Array[js.Array[scala.Double]]] = js.native
+  def evalDynamic(seq: js.Any, values: js.Array[_], `object`: js.Any, camera: js.Any): js.Array[_] = js.native
+  def seqWithValue(seq: js.Any, values: js.Array[_]): js.Array[_] = js.native
+  def splitDynamic(seq: js.Any, values: js.Array[_]): js.Array[_] = js.native
+  def upload(
+    gl: js.Any,
+    seq: js.Any,
+    values: js.Array[_],
+    textures: threeLib.srcRenderersWebglWebGLTexturesMod.WebGLTextures
+  ): scala.Unit = js.native
 }
 

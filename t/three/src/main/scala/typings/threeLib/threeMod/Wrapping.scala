@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object Wrapping extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.threeDashCoreMod.Wrapping with java.lang.String] = js.native
+  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.Wrapping with java.lang.String] = js.native
 }
 

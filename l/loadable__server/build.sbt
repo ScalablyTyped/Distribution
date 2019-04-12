@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "loadable__server"
-version := "5.2-dt-20190201Z-6d4a44"
+version := "5.8-dt-20190411Z-7a6c1a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

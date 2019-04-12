@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 package object themeNs {
   type ThemeSet = js.Function1[/* props */ js.Object, java.lang.String]
-  type ThemeValue = java.lang.String | ThemeValueFn
+  type ThemeValue = java.lang.String | ThemeValueFn | styledDashComponentsLib.styledDashComponentsMod.FlattenInterpolation[styledDashComponentsLib.styledDashComponentsMod.ThemeProps[js.Any]] | (styledDashComponentsLib.styledDashComponentsMod.FlattenInterpolation[
+    styledDashComponentsLib.styledDashComponentsMod.ThemedStyledProps[js.Any, js.Any]
+  ])
   type ThemeValueFn = js.Function1[/* props */ js.Object, java.lang.String]
   type VariantSet = js.Function1[/* props */ js.Object, java.lang.String]
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "ImageLoader")
 @js.native
 class ImageLoader ()
-  extends threeLib.threeDashCoreMod.ImageLoader {
-  def this(manager: threeLib.threeDashCoreMod.LoadingManager) = this()
+  extends threeLib.srcLoadersImageLoaderMod.ImageLoader {
+  def this(manager: threeLib.srcLoadersLoadingManagerMod.LoadingManager) = this()
 }
 

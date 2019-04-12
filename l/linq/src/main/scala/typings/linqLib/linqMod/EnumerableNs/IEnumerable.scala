@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait IEnumerable[T] extends js.Object {
+trait IEnumerable[T]
+  extends stdLib.Iterable[T] {
   def aggregate(func: js.Function2[/* prev */ T, /* current */ T, T]): T = js.native
   def aggregate[TAccumulate](seed: TAccumulate, func: js.Function2[/* prev */ TAccumulate, /* current */ T, TAccumulate]): TAccumulate = js.native
   def aggregate[TAccumulate, TResult](
@@ -55,6 +56,7 @@ trait IEnumerable[T] extends js.Object {
   def first(): T = js.native
   def first(predicate: js.Function2[/* element */ T, /* index */ scala.Double, scala.Boolean]): T = js.native
   def firstOrDefault(): T = js.native
+  def firstOrDefault(defaultValue: T): T = js.native
   def firstOrDefault(predicate: js.Function2[/* element */ T, /* index */ scala.Double, scala.Boolean]): T = js.native
   def firstOrDefault(predicate: js.Function2[/* element */ T, /* index */ scala.Double, scala.Boolean], defaultValue: T): T = js.native
   def flatten(): IEnumerable[_] = js.native
@@ -75,7 +77,7 @@ trait IEnumerable[T] extends js.Object {
     keySelector: js.Function1[/* element */ T, TKey],
     elementSelector: js.Function1[/* element */ T, TElement],
     resultSelector: js.Function2[/* key */ TKey, /* element */ IEnumerable[TElement], TResult],
-    compareSelector: js.Function1[/* element */ T, TCompare]
+    compareSelector: js.Function1[/* element */ TKey, TCompare]
   ): IEnumerable[TResult] = js.native
   def groupJoin[TInner, TKey, TResult](
     inner: js.Array[TInner],
@@ -171,6 +173,7 @@ trait IEnumerable[T] extends js.Object {
   def lastIndexOf(item: T): scala.Double = js.native
   def lastIndexOf(predicate: js.Function2[/* element */ T, /* index */ scala.Double, scala.Boolean]): scala.Double = js.native
   def lastOrDefault(): T = js.native
+  def lastOrDefault(defaultValue: T): T = js.native
   def lastOrDefault(predicate: js.Function2[/* element */ T, /* index */ scala.Double, scala.Boolean]): T = js.native
   def lastOrDefault(predicate: js.Function2[/* element */ T, /* index */ scala.Double, scala.Boolean], defaultValue: T): T = js.native
   def letBind[TResult](
@@ -210,7 +213,7 @@ trait IEnumerable[T] extends js.Object {
     keySelector: js.Function1[/* element */ T, TKey],
     elementSelector: js.Function1[/* element */ T, TElement],
     resultSelector: js.Function2[/* key */ TKey, /* element */ IEnumerable[TElement], TResult],
-    compareSelector: js.Function1[/* element */ T, TCompare]
+    compareSelector: js.Function1[/* element */ TKey, TCompare]
   ): IEnumerable[TResult] = js.native
   def reverse(): IEnumerable[T] = js.native
   def scan(func: js.Function2[/* prev */ T, /* current */ T, T]): IEnumerable[T] = js.native

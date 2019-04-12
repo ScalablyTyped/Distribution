@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@firebase/util/dist/src/sha1", "Sha1")
 @js.native
-class Sha1 ()
-  extends atFirebaseUtilLib.distSrcHashMod.Hash {
+class Sha1 () extends js.Object {
   /**
     * An array of 80 bytes, each a part of the message to be hashed.  Referred to
     * as the message schedule in the docs.
@@ -16,6 +15,7 @@ class Sha1 ()
     * @private
     */
   var W_ : js.Any = js.native
+  var blockSize: scala.Double = js.native
   /**
     * A buffer holding the partially computed hash result.
     * @type {!Array<number>}

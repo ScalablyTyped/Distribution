@@ -15,7 +15,7 @@ trait Anon_BufferDefault extends js.Object {
   	*/
   val minimumBytes: scala.Double = js.native
   /**
-  	Detect the file type of a `Buffer`/`Uint8Array`. The file type is detected by checking the [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files) of the buffer.
+  	Detect the file type of a `Buffer`/`Uint8Array`/`ArrayBuffer`. The file type is detected by checking the [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files) of the buffer.
   	@param buffer - It only needs the first `.minimumBytes` bytes. The exception is detection of `docx`, `pptx`, and `xlsx` which potentially requires reading the whole file.
   	@returns An object with the detected file type and MIME type or `null` when there was no match.
   	@example
@@ -39,9 +39,10 @@ trait Anon_BufferDefault extends js.Object {
   	```
   	*/
   def apply(buffer: nodeLib.Buffer): fileDashTypeLib.fileDashTypeMod.fileTypeNs.FileTypeResult | scala.Null = js.native
+  def apply(buffer: stdLib.ArrayBuffer): fileDashTypeLib.fileDashTypeMod.fileTypeNs.FileTypeResult | scala.Null = js.native
   def apply(buffer: stdLib.Uint8Array): fileDashTypeLib.fileDashTypeMod.fileTypeNs.FileTypeResult | scala.Null = js.native
   /**
-  	Detect the file type of a `Buffer`/`Uint8Array`. The file type is detected by checking the [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files) of the buffer.
+  	Detect the file type of a `Buffer`/`Uint8Array`/`ArrayBuffer`. The file type is detected by checking the [magic number](https://en.wikipedia.org/wiki/Magic_number_(programming)#Magic_numbers_in_files) of the buffer.
   	@param buffer - It only needs the first `.minimumBytes` bytes. The exception is detection of `docx`, `pptx`, and `xlsx` which potentially requires reading the whole file.
   	@returns An object with the detected file type and MIME type or `null` when there was no match.
   	@example
@@ -66,6 +67,7 @@ trait Anon_BufferDefault extends js.Object {
   	*/
   // TODO: Remove this for the next major release
   def default(buffer: nodeLib.Buffer): fileDashTypeLib.fileDashTypeMod.fileTypeNs.FileTypeResult | scala.Null = js.native
+  def default(buffer: stdLib.ArrayBuffer): fileDashTypeLib.fileDashTypeMod.fileTypeNs.FileTypeResult | scala.Null = js.native
   def default(buffer: stdLib.Uint8Array): fileDashTypeLib.fileDashTypeMod.fileTypeNs.FileTypeResult | scala.Null = js.native
   /**
   	Detect the file type of a readable stream.

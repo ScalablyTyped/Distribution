@@ -13,7 +13,7 @@ trait Anon_Json
       /* values */ js.Array[js.Any], 
       threeLib.threeMod.KeyframeTrack
     ] {
-  def parse(json: js.Any): threeLib.threeDashCoreMod.KeyframeTrack = js.native
-  def toJSON(track: threeLib.threeDashCoreMod.KeyframeTrack): js.Any = js.native
+  def parse(json: js.Any): threeLib.srcAnimationKeyframeTrackMod.KeyframeTrack = js.native
+  def toJSON(track: threeLib.srcAnimationKeyframeTrackMod.KeyframeTrack): js.Any = js.native
 }
 

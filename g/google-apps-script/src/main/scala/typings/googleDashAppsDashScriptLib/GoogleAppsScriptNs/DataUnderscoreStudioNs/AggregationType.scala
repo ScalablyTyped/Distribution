@@ -12,6 +12,10 @@ sealed trait AggregationType extends js.Object
 @js.native
 object AggregationType extends js.Object {
   @js.native
+  sealed trait AUTO
+    extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.AggregationType
+  
+  @js.native
   sealed trait AVG
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.AggregationType
   
@@ -39,6 +43,7 @@ object AggregationType extends js.Object {
   sealed trait SUM
     extends googleDashAppsDashScriptLib.GoogleAppsScriptNs.DataUnderscoreStudioNs.AggregationType
   
+  val AUTO: AUTO with java.lang.String = js.native
   val AVG: AVG with java.lang.String = js.native
   val COUNT: COUNT with java.lang.String = js.native
   val COUNT_DISTINCT: COUNT_DISTINCT with java.lang.String = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "LOD")
 @js.native
 class LOD ()
-  extends threeLib.threeDashCoreMod.LOD
+  extends threeLib.srcObjectsLODMod.LOD
 

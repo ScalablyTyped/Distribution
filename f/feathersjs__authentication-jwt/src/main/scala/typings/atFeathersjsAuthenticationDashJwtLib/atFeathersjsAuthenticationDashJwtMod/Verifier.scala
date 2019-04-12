@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@feathersjs/authentication-jwt", "Verifier")
 @js.native
 class Verifier protected () extends js.Object {
-  def this(app: atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[_], options: js.Any) = this()
+  def this(app: atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Application[_], options: js.Any) = this()
    // the class constructor
   def verify(
     req: expressLib.expressMod.eNs.Request,

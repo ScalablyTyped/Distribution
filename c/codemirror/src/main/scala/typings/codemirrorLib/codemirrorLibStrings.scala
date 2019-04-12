@@ -40,6 +40,10 @@ object codemirrorLibStrings {
   sealed trait clear extends js.Object
   
   @js.native
+  sealed trait contenteditable
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.InputStyle
+  
+  @js.native
   sealed trait contextmenu
     extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
@@ -111,6 +115,9 @@ object codemirrorLibStrings {
     extends codemirrorLib.codemirrorMod.CodeMirrorNs.DOMEvent
   
   @js.native
+  sealed trait overwriteToggle extends js.Object
+  
+  @js.native
   sealed trait page
     extends codemirrorLib.codemirrorMod.CodeMirrorNs.CoordsMode
   
@@ -126,6 +133,10 @@ object codemirrorLibStrings {
   
   @js.native
   sealed trait scroll extends js.Object
+  
+  @js.native
+  sealed trait textarea
+    extends codemirrorLib.codemirrorMod.CodeMirrorNs.InputStyle
   
   @js.native
   sealed trait top extends js.Object
@@ -170,6 +181,8 @@ object codemirrorLibStrings {
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   @scala.inline
+  def contenteditable: contenteditable = "contenteditable".asInstanceOf[contenteditable]
+  @scala.inline
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
@@ -208,6 +221,8 @@ object codemirrorLibStrings {
   @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   @scala.inline
+  def overwriteToggle: overwriteToggle = "overwriteToggle".asInstanceOf[overwriteToggle]
+  @scala.inline
   def page: page = "page".asInstanceOf[page]
   @scala.inline
   def paste: paste = "paste".asInstanceOf[paste]
@@ -217,6 +232,8 @@ object codemirrorLibStrings {
   def renderLine: renderLine = "renderLine".asInstanceOf[renderLine]
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
+  def textarea: textarea = "textarea".asInstanceOf[textarea]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

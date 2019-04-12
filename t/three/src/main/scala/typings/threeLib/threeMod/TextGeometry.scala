@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "TextGeometry")
 @js.native
 class TextGeometry protected ()
-  extends threeLib.threeDashCoreMod.TextGeometry {
+  extends threeLib.srcGeometriesGeometriesMod.TextGeometry {
   def this(text: java.lang.String) = this()
-  def this(text: java.lang.String, parameters: threeLib.threeDashCoreMod.TextGeometryParameters) = this()
+  def this(text: java.lang.String, parameters: threeLib.srcGeometriesTextGeometryMod.TextGeometryParameters) = this()
 }
 

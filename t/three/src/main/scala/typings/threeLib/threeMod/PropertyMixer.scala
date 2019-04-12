@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "PropertyMixer")
 @js.native
 class PropertyMixer protected ()
-  extends threeLib.threeDashCoreMod.PropertyMixer {
+  extends threeLib.srcAnimationPropertyMixerMod.PropertyMixer {
   def this(binding: js.Any, typeName: java.lang.String, valueSize: scala.Double) = this()
 }
 

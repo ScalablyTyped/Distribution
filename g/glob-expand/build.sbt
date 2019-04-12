@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "glob-expand"
-version := "0.0-unknown-dt-20190322Z-e2a90b"
+version := "0.0-unknown-dt-20190322Z-bf0c66"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-3f0045",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-a3b219",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-e6c927",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

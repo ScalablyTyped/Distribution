@@ -46,5 +46,14 @@ object ^ extends js.Object {
       ]
     ]
   ] = js.native
+  def withTranslation(ns: Namespace, options: reactDashI18nextLib.Anon_WithRef): js.Function1[
+    /* component */ reactLib.reactMod.ReactNs.ComponentType[WithTranslation], 
+    reactLib.reactMod.ReactNs.ComponentType[
+      reactDashI18nextLib.Omit[
+        WithTranslation, 
+        reactDashI18nextLib.reactDashI18nextLibStrings.i18n | reactDashI18nextLib.reactDashI18nextLibStrings.tReady
+      ]
+    ]
+  ] = js.native
 }
 

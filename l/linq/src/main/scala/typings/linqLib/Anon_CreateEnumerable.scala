@@ -14,6 +14,7 @@ trait Anon_CreateEnumerable extends js.Object {
   ): linqLib.linqMod.EnumerableNs.IEnumerator[T]
   def createLambda(expression: js.Any): js.Function1[/* repeated */ js.Any, _]
   def extendTo(`type`: js.Any): scala.Unit
+  def hasNativeIteratorSupport(): scala.Boolean
 }
 
 object Anon_CreateEnumerable {
@@ -22,9 +23,10 @@ object Anon_CreateEnumerable {
     createEnumerable: js.Function0[linqLib.linqMod.EnumerableNs.IEnumerator[js.Any]] => linqLib.linqMod.EnumerableNs.IEnumerable[js.Any],
     createEnumerator: (js.Function0[scala.Unit], js.Function0[scala.Boolean], js.Function0[scala.Unit]) => linqLib.linqMod.EnumerableNs.IEnumerator[js.Any],
     createLambda: js.Any => js.Function1[/* repeated */ js.Any, _],
-    extendTo: js.Any => scala.Unit
+    extendTo: js.Any => scala.Unit,
+    hasNativeIteratorSupport: () => scala.Boolean
   ): Anon_CreateEnumerable = {
-    val __obj = js.Dynamic.literal(createEnumerable = js.Any.fromFunction1(createEnumerable), createEnumerator = js.Any.fromFunction3(createEnumerator), createLambda = js.Any.fromFunction1(createLambda), extendTo = js.Any.fromFunction1(extendTo))
+    val __obj = js.Dynamic.literal(createEnumerable = js.Any.fromFunction1(createEnumerable), createEnumerator = js.Any.fromFunction3(createEnumerator), createLambda = js.Any.fromFunction1(createLambda), extendTo = js.Any.fromFunction1(extendTo), hasNativeIteratorSupport = js.Any.fromFunction0(hasNativeIteratorSupport))
   
     __obj.asInstanceOf[Anon_CreateEnumerable]
   }

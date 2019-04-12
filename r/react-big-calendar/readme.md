@@ -9,6 +9,8 @@
 //                 janb87 <https://github.com/janb87>
 //                 Daniel Thorne <https://github.com/ldthorne>
 //                 Panagiotis Rikarnto Siavelis <https://github.com/siavelis>
+//                 Tomas Hubelbauer <https://github.com/TomasHubelbauer>
+//                 Lucas Silva Souza <https://github.com/lksilva>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

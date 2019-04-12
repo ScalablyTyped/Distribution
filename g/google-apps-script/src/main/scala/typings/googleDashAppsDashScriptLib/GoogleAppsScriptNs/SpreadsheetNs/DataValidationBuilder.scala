@@ -13,6 +13,9 @@ trait DataValidationBuilder extends js.Object {
   def getCriteriaType(): DataValidationCriteria = js.native
   def getCriteriaValues(): js.Array[js.Object] = js.native
   def getHelpText(): java.lang.String = js.native
+  def requireCheckbox(): DataValidationBuilder = js.native
+  def requireCheckbox(checkedValue: js.Object): DataValidationBuilder = js.native
+  def requireCheckbox(checkedValue: js.Object, uncheckedValue: js.Object): DataValidationBuilder = js.native
   def requireDate(): DataValidationBuilder = js.native
   def requireDateAfter(date: stdLib.Date): DataValidationBuilder = js.native
   def requireDateBefore(date: stdLib.Date): DataValidationBuilder = js.native

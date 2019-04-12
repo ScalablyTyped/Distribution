@@ -6,6 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
+  /**
+  		Number of concurrent pending promises. Minimum: `1`.
+  		@default Infinity
+  		*/
   var concurrency: js.UndefOr[scala.Double] = js.undefined
 }
 

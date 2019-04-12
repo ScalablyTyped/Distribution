@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "DiscreteInterpolant")
 @js.native
 class DiscreteInterpolant protected ()
-  extends threeLib.threeDashCoreMod.DiscreteInterpolant {
+  extends threeLib.srcMathInterpolantsDiscreteInterpolantMod.DiscreteInterpolant {
   def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: scala.Double) = this()
   def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: scala.Double, resultBuffer: js.Any) = this()
 }

@@ -17,6 +17,7 @@ trait Anon_BodyBooleanCheckboxComment extends js.Object {
   var file: Anon_FileInput
   var footer: java.lang.String
   var header: java.lang.String
+  var html: Anon_Root
   var imagepicker: Anon_ClearButtonImage
   var matrix: Anon_CellLabelCellText
   var matrixdropdown: Anon_ItemValue
@@ -55,6 +56,7 @@ object Anon_BodyBooleanCheckboxComment {
     file: Anon_FileInput,
     footer: java.lang.String,
     header: java.lang.String,
+    html: Anon_Root,
     imagepicker: Anon_ClearButtonImage,
     matrix: Anon_CellLabelCellText,
     matrixdropdown: Anon_ItemValue,
@@ -78,7 +80,7 @@ object Anon_BodyBooleanCheckboxComment {
     text: java.lang.String,
     window: Anon_Body
   ): Anon_BodyBooleanCheckboxComment = {
-    val __obj = js.Dynamic.literal(body = body, boolean = boolean, checkbox = checkbox, comment = comment, completedPage = completedPage, dropdown = dropdown, error = error, expression = expression, file = file, footer = footer, header = header, imagepicker = imagepicker, matrix = matrix, matrixdropdown = matrixdropdown, matrixdynamic = matrixdynamic, multipletext = multipletext, navigation = navigation, navigationButton = navigationButton, page = page, pageDescription = pageDescription, pageTitle = pageTitle, panel = panel, paneldynamic = paneldynamic, progress = progress, progressBar = progressBar, question = question, radiogroup = radiogroup, rating = rating, root = root, row = row, saveData = saveData, text = text, window = window)
+    val __obj = js.Dynamic.literal(body = body, boolean = boolean, checkbox = checkbox, comment = comment, completedPage = completedPage, dropdown = dropdown, error = error, expression = expression, file = file, footer = footer, header = header, html = html, imagepicker = imagepicker, matrix = matrix, matrixdropdown = matrixdropdown, matrixdynamic = matrixdynamic, multipletext = multipletext, navigation = navigation, navigationButton = navigationButton, page = page, pageDescription = pageDescription, pageTitle = pageTitle, panel = panel, paneldynamic = paneldynamic, progress = progress, progressBar = progressBar, question = question, radiogroup = radiogroup, rating = rating, root = root, row = row, saveData = saveData, text = text, window = window)
   
     __obj.asInstanceOf[Anon_BodyBooleanCheckboxComment]
   }

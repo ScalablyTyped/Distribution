@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("vinyl", JSImport.Namespace)
 @js.native
-class namespacedCls protected () extends NullFile {
+class namespacedCls protected ()
+  extends vinylLib.vinylMod.FileNs.NullFile {
   def this(options: ConstructorOptions with vinylLib.Anon_Contents) = this()
 }
 

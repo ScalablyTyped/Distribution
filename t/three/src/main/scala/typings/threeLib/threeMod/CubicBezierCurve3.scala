@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "CubicBezierCurve3")
 @js.native
 class CubicBezierCurve3 protected ()
-  extends threeLib.threeDashCoreMod.CubicBezierCurve3 {
-  def this(v0: threeLib.threeDashCoreMod.Vector3, v1: threeLib.threeDashCoreMod.Vector3, v2: threeLib.threeDashCoreMod.Vector3, v3: threeLib.threeDashCoreMod.Vector3) = this()
+  extends threeLib.srcExtrasCurvesCurvesMod.CubicBezierCurve3 {
+  def this(v0: threeLib.srcMathVector3Mod.Vector3, v1: threeLib.srcMathVector3Mod.Vector3, v2: threeLib.srcMathVector3Mod.Vector3, v3: threeLib.srcMathVector3Mod.Vector3) = this()
 }
 

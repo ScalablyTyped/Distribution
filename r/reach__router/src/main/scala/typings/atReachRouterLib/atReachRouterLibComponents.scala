@@ -15,7 +15,10 @@ object atReachRouterLibComponents {
   @scala.inline
   def Match[TParams]: reactLib.reactMod.ReactNs.ComponentType[atReachRouterLib.atReachRouterMod.MatchProps[TParams]] = js.constructorOf[atReachRouterLib.atReachRouterMod.Match[TParams]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atReachRouterLib.atReachRouterMod.MatchProps[TParams]]]
   @scala.inline
-  def Redirect[TState]: reactLib.reactMod.ReactNs.ComponentType[atReachRouterLib.atReachRouterMod.RedirectProps[TState]] = js.constructorOf[atReachRouterLib.atReachRouterMod.Redirect[TState]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[atReachRouterLib.atReachRouterMod.RedirectProps[TState]]]
+  def Redirect[TState]: reactLib.reactMod.ReactNs.ComponentType[
+    atReachRouterLib.atReachRouterMod.RouteComponentProps[atReachRouterLib.atReachRouterMod.RedirectProps[TState]]
+  ] = js.constructorOf[atReachRouterLib.atReachRouterMod.Redirect[TState]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[
+  atReachRouterLib.atReachRouterMod.RouteComponentProps[atReachRouterLib.atReachRouterMod.RedirectProps[TState]]]]
   @scala.inline
   def Router: reactLib.reactMod.ReactNs.ComponentType[
     atReachRouterLib.atReachRouterMod.RouterProps with reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLDivElement]
@@ -31,9 +34,7 @@ object atReachRouterLibComponents {
   def LocationProviderProps: atReachRouterLib.atReachRouterMod.LocationProviderProps.type = atReachRouterLib.atReachRouterMod.LocationProviderProps
   type LocationProviderProps = atReachRouterLib.atReachRouterMod.LocationProviderProps
   type MatchProps[TParams] = atReachRouterLib.atReachRouterMod.MatchProps[TParams]
-  @scala.inline
-  def RedirectProps: atReachRouterLib.atReachRouterMod.RedirectProps.type = atReachRouterLib.atReachRouterMod.RedirectProps
-  type RedirectProps[TState] = atReachRouterLib.atReachRouterMod.RedirectProps[TState]
+  type RouteComponentProps[TParams] = atReachRouterLib.atReachRouterMod.RouteComponentProps[TParams]
   @scala.inline
   def ServerLocationProps: atReachRouterLib.atReachRouterMod.ServerLocationProps.type = atReachRouterLib.atReachRouterMod.ServerLocationProps
   type ServerLocationProps = atReachRouterLib.atReachRouterMod.ServerLocationProps

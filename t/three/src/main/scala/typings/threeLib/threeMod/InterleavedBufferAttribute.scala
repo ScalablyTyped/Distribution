@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "InterleavedBufferAttribute")
 @js.native
 class InterleavedBufferAttribute protected ()
-  extends threeLib.threeDashCoreMod.InterleavedBufferAttribute {
-  def this(interleavedBuffer: threeLib.threeDashCoreMod.InterleavedBuffer, itemSize: scala.Double, offset: scala.Double) = this()
-  def this(interleavedBuffer: threeLib.threeDashCoreMod.InterleavedBuffer, itemSize: scala.Double, offset: scala.Double, normalized: scala.Boolean) = this()
+  extends threeLib.srcCoreInterleavedBufferAttributeMod.InterleavedBufferAttribute {
+  def this(interleavedBuffer: threeLib.srcCoreInterleavedBufferMod.InterleavedBuffer, itemSize: scala.Double, offset: scala.Double) = this()
+  def this(interleavedBuffer: threeLib.srcCoreInterleavedBufferMod.InterleavedBuffer, itemSize: scala.Double, offset: scala.Double, normalized: scala.Boolean) = this()
 }
 

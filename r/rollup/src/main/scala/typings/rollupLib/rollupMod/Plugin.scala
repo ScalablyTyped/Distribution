@@ -77,8 +77,10 @@ trait Plugin extends js.Object {
     ]
   ] = js.undefined
   var renderStart: js.UndefOr[js.ThisFunction0[/* this */ PluginContext, js.Promise[scala.Unit] | scala.Unit]] = js.undefined
+  var resolveAssetUrl: js.UndefOr[ResolveAssetUrlHook] = js.undefined
   var resolveDynamicImport: js.UndefOr[ResolveDynamicImportHook] = js.undefined
   var resolveId: js.UndefOr[ResolveIdHook] = js.undefined
+  var resolveImportMeta: js.UndefOr[ResolveImportMetaHook] = js.undefined
   var transform: js.UndefOr[TransformHook] = js.undefined
   /** @deprecated */
   var transformBundle: js.UndefOr[TransformChunkHook] = js.undefined
@@ -150,8 +152,10 @@ object Plugin {
       js.Promise[scala.Unit] | scala.Unit
     ] = null,
     renderStart: js.ThisFunction0[/* this */ PluginContext, js.Promise[scala.Unit] | scala.Unit] = null,
+    resolveAssetUrl: ResolveAssetUrlHook = null,
     resolveDynamicImport: ResolveDynamicImportHook = null,
     resolveId: ResolveIdHook = null,
+    resolveImportMeta: ResolveImportMetaHook = null,
     transform: TransformHook = null,
     transformBundle: TransformChunkHook = null,
     transformChunk: TransformChunkHook = null,
@@ -179,8 +183,10 @@ object Plugin {
     if (renderChunk != null) __obj.updateDynamic("renderChunk")(renderChunk)
     if (renderError != null) __obj.updateDynamic("renderError")(renderError)
     if (renderStart != null) __obj.updateDynamic("renderStart")(renderStart)
+    if (resolveAssetUrl != null) __obj.updateDynamic("resolveAssetUrl")(resolveAssetUrl)
     if (resolveDynamicImport != null) __obj.updateDynamic("resolveDynamicImport")(resolveDynamicImport)
     if (resolveId != null) __obj.updateDynamic("resolveId")(resolveId)
+    if (resolveImportMeta != null) __obj.updateDynamic("resolveImportMeta")(resolveImportMeta)
     if (transform != null) __obj.updateDynamic("transform")(transform)
     if (transformBundle != null) __obj.updateDynamic("transformBundle")(transformBundle)
     if (transformChunk != null) __obj.updateDynamic("transformChunk")(transformChunk)

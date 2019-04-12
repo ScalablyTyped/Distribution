@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "WireframeGeometry")
 @js.native
 class WireframeGeometry protected ()
-  extends threeLib.threeDashCoreMod.WireframeGeometry {
-  def this(geometry: threeLib.threeDashCoreMod.BufferGeometry) = this()
-  def this(geometry: threeLib.threeDashCoreMod.Geometry) = this()
+  extends threeLib.srcGeometriesGeometriesMod.WireframeGeometry {
+  def this(geometry: threeLib.srcCoreBufferGeometryMod.BufferGeometry) = this()
+  def this(geometry: threeLib.srcCoreGeometryMod.Geometry) = this()
 }
 

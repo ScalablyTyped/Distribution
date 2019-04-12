@@ -81,6 +81,6 @@ class Sell () extends Resource {
     * values and start the buy at the new rates.
     * Scope: wallet:sells:create
     */
-  def commit(cb: js.Function2[/* error */ stdLib.Error, /* transaction */ this.type, scala.Unit]): scala.Unit = js.native
+  def commit(cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ this.type, scala.Unit]): scala.Unit = js.native
 }
 

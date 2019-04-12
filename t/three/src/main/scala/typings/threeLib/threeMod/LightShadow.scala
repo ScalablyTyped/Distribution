@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "LightShadow")
 @js.native
 class LightShadow protected ()
-  extends threeLib.threeDashCoreMod.LightShadow {
-  def this(camera: threeLib.threeDashCoreMod.Camera) = this()
+  extends threeLib.srcLightsLightShadowMod.LightShadow {
+  def this(camera: threeLib.srcCamerasCameraMod.Camera) = this()
 }
 

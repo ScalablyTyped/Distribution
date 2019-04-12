@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait Address extends js.Object {
   /**
-    * A base address rendered as a hexadecimal string.
+    * A base address rendered as an integer value.
     */
-  var baseAddress: js.UndefOr[java.lang.String] = js.undefined
+  var baseAddress: js.UndefOr[scala.Double] = js.undefined
   /**
     * A human-readable fully qualified name that is associated with the address.
     */
@@ -19,7 +19,7 @@ trait Address extends js.Object {
     */
   var index: js.UndefOr[scala.Double] = js.undefined
   /**
-    * An open-ended string that identifies the address kind. 'section' and 'segment' are well-known values.
+    * An open-ended string that identifies the address kind. 'section', 'segment' and 'module' are well-known values.
     */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -27,9 +27,9 @@ trait Address extends js.Object {
     */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * an offset from the base address, if present, rendered as a hexadecimal string.
+    * an offset from the base address, if present, rendered as an integer value.
     */
-  var offset: js.UndefOr[java.lang.String] = js.undefined
+  var offset: js.UndefOr[scala.Double] = js.undefined
   /**
     * An index into run.addresses to retrieve a parent address. The parent can provide a base address (from which the
     * current offset value is relevant) and other details.
@@ -44,22 +44,22 @@ trait Address extends js.Object {
 object Address {
   @scala.inline
   def apply(
-    baseAddress: java.lang.String = null,
+    baseAddress: scala.Int | scala.Double = null,
     fullyQualifiedName: java.lang.String = null,
     index: scala.Int | scala.Double = null,
     kind: java.lang.String = null,
     name: java.lang.String = null,
-    offset: java.lang.String = null,
+    offset: scala.Int | scala.Double = null,
     parentIndex: scala.Int | scala.Double = null,
     properties: PropertyBag = null
   ): Address = {
     val __obj = js.Dynamic.literal()
-    if (baseAddress != null) __obj.updateDynamic("baseAddress")(baseAddress)
+    if (baseAddress != null) __obj.updateDynamic("baseAddress")(baseAddress.asInstanceOf[js.Any])
     if (fullyQualifiedName != null) __obj.updateDynamic("fullyQualifiedName")(fullyQualifiedName)
     if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     if (kind != null) __obj.updateDynamic("kind")(kind)
     if (name != null) __obj.updateDynamic("name")(name)
-    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     if (parentIndex != null) __obj.updateDynamic("parentIndex")(parentIndex.asInstanceOf[js.Any])
     if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[Address]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dialogflow"
-version := "0.6-dt-20190212Z-afb679"
+version := "0.6-dt-20190404Z-d57d1c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

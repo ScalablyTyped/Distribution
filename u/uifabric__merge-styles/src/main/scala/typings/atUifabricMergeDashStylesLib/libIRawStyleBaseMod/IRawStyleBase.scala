@@ -158,7 +158,7 @@ trait IRawStyleBase extends IRawFontStyle {
   var backgroundBlendMode: js.UndefOr[ICSSRule | java.lang.String] = js.undefined
   /**
     * The background-clip CSS property specifies if an element's background, whether a
-    * <color> or an <image>, extends underneath its border.
+    * `<color>` or an `<image>`, extends underneath its border.
     *
     * \* Does not work in IE
     *
@@ -1187,8 +1187,8 @@ trait IRawStyleBase extends IRawFontStyle {
   /**
     * A future level of CSS Shapes will define a shape-inside property, which will define
     * a shape to wrap content within the element. See Editor's Draft
-    * <http://dev.w3.org/csswg/css-shapes/> and CSSWG wiki page on next-level plans
-    * <http://wiki.csswg.org/spec/css-shapes>
+    * http://dev.w3.org/csswg/css-shapes and CSSWG wiki page on next-level plans
+    * http://wiki.csswg.org/spec/css-shapes
     */
   var shapeInside: js.UndefOr[ICSSRule | java.lang.String] = js.undefined
   /**
@@ -1352,7 +1352,7 @@ trait IRawStyleBase extends IRawFontStyle {
   var textRendering: js.UndefOr[ICSSRule | java.lang.String] = js.undefined
   /**
     * The CSS text-shadow property applies one or more drop shadows to the text and
-    * <text-decorations> of an element. Each shadow is specified as an offset from the
+    * `<text-decorations>` of an element. Each shadow is specified as an offset from the
     * text, along with optional color and blur radius values.
     */
   var textShadow: js.UndefOr[ICSSRule | java.lang.String] = js.undefined
@@ -1573,7 +1573,7 @@ trait IRawStyleBase extends IRawFontStyle {
     ICSSRule | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.auto | scala.Double
   ] = js.undefined
   /**
-    * Sets the initial zoom factor of a document defined by @viewport.
+    * Sets the initial zoom factor of a document defined by `@viewport`.
     * See CSS zoom descriptor https://drafts.csswg.org/css-device-adapt/#zoom-desc
     */
   var zoom: js.UndefOr[

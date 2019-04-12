@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "graphql-request"
-version := "1.8.2-2f5552"
+version := "1.8.2-bb10e7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "cross-fetch" % "2.2.2-f47100",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
-  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190403Z-4a9793",
+  "org.scalablytyped" %%% "cross-fetch" % "2.2.2-1b5c77",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
+  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190411Z-5a2eed",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

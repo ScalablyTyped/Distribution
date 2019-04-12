@@ -6,16 +6,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EditorConfiguration extends js.Object {
+  /**
+    * Will auto-close brackets and quotes when typed.
+    * By default, it'll auto-close ()[]{}''"", but you can pass it a string similar to that (containing pairs of matching characters),
+    * or an object with pairs and optionally explode properties to customize it.
+    */
+  var autoCloseBrackets: js.UndefOr[AutoCloseBrackets | java.lang.String] = js.undefined
+  /**
+    * Will auto-close XML tags when '>' or '/' is typed.
+    * Depends on the fold/xml-fold.js addon.
+    */
+  var autoCloseTags: js.UndefOr[AutoCloseTags | scala.Boolean] = js.undefined
   /** Can be used to make CodeMirror focus itself on initialization. Defaults to off.
     When fromTextArea is used, and no explicit value is given for this option, it will be set to true when either the source textarea is focused,
     or it has an autofocus attribute and no other element is focused. */
   var autofocus: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * When fixedGutter is on, and there is a horizontal scrollbar, by default the gutter will be visible to the left of this scrollbar.
+    * If this option is set to true, it will be covered by an element with class CodeMirror-gutter-filler.
+    */
+  var coverGutterNextToScrollbar: js.UndefOr[scala.Boolean] = js.undefined
   /** Half - period in milliseconds used for cursor blinking. The default blink rate is 530ms. */
   var cursorBlinkRate: js.UndefOr[scala.Double] = js.undefined
   /** Determines the height of the cursor. Default is 1 , meaning it spans the whole height of the line.
     For some fonts (and by some tastes) a smaller height (for example 0.85),
     which causes the cursor to not reach all the way to the bottom of the line, looks better */
   var cursorHeight: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * How much extra space to always keep above and below the cursor when
+    * approaching the top or bottom of the visible view in a scrollable document. Default is 0.
+    */
+  var cursorScrollMargin: js.UndefOr[scala.Double] = js.undefined
   /** Controls whether drag-and - drop is enabled. On by default. */
   var dragDrop: js.UndefOr[scala.Boolean] = js.undefined
   /** Configures whether the editor should re-indent the current line when a character is typed
@@ -40,6 +61,11 @@ trait EditorConfiguration extends js.Object {
     May include the CodeMirror-linenumbers class, in order to explicitly set the position of the line number gutter
     (it will default to be to the right of all other gutters). These class names are the keys passed to setGutterMarker. */
   var gutters: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
+    * Adds a highlightSelectionMatches option that can be enabled to highlight all instances of a currently selected word.
+    * When enabled, it causes the current word to be highlighted when nothing is selected (defaults to off).
+    */
+  var highlightSelectionMatches: js.UndefOr[HighlightSelectionMatches | scala.Boolean] = js.undefined
   var hintOptions: js.UndefOr[ShowHintOptions] = js.undefined
   /** The period of inactivity (in milliseconds) that will cause a new history event to be started when typing or deleting. Defaults to 500. */
   var historyEventDelay: js.UndefOr[scala.Double] = js.undefined
@@ -47,6 +73,13 @@ trait EditorConfiguration extends js.Object {
   var indentUnit: js.UndefOr[scala.Double] = js.undefined
   /** Whether, when indenting, the first N*tabSize spaces should be replaced by N tabs. Default is false. */
   var indentWithTabs: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Selects the way CodeMirror handles input and focus.
+    * The core library defines the "textarea" and "contenteditable" input models.
+    * On mobile browsers, the default is "contenteditable". On desktop browsers, the default is "textarea".
+    * Support for IME and screen readers is better in the "contenteditable" model.
+    */
+  var inputStyle: js.UndefOr[InputStyle] = js.undefined
   /** Configures the keymap to use. The default is "default", which is the only keymap defined in codemirror.js itself.
     Extra keymaps are found in the keymap directory. See the section on keymaps for more information. */
   var keyMap: js.UndefOr[java.lang.String] = js.undefined
@@ -54,12 +87,19 @@ trait EditorConfiguration extends js.Object {
   var lineNumberFormatter: js.UndefOr[js.Function1[/* line */ scala.Double, java.lang.String]] = js.undefined
   /** Whether to show line numbers to the left of the editor. */
   var lineNumbers: js.UndefOr[scala.Boolean] = js.undefined
+  /** When enabled, which is the default, doing copy or cut when there is no selection will copy or cut the whole lines that have cursors on them. */
+  var lineWiseCopyCut: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether CodeMirror should scroll or wrap for long lines. Defaults to false (scroll). */
   var lineWrapping: js.UndefOr[scala.Boolean] = js.undefined
   /** Optional lint configuration to be used in conjunction with CodeMirror's linter addon. */
   var lint: js.UndefOr[scala.Boolean | LintOptions] = js.undefined
-  //  when set to true, causes matching brackets to be highlighted whenever the cursor is next to them
-  var matchBrackets: js.UndefOr[scala.Boolean] = js.undefined
+  //  When set to true or an options object, causes matching brackets to be highlighted whenever the cursor is next to them.
+  var matchBrackets: js.UndefOr[MatchBrackets | scala.Boolean] = js.undefined
+  /**
+    * When enabled will cause the tags around the cursor to be highlighted (using the CodeMirror-matchingtag class).
+    * Depends on the addon/fold/xml-fold.js addon.
+    */
+  var matchTags: js.UndefOr[MatchTags | scala.Boolean] = js.undefined
   /** When highlighting long lines, in order to stay responsive, the editor will give up and simply style
     the rest of the line as plain text when it reaches a certain position. The default is 10000.
     You can set this to Infinity to turn off this behavior. */
@@ -98,6 +138,10 @@ trait EditorConfiguration extends js.Object {
     The default is false on Windows, and true on other platforms. */
   var rtlMoveVisually: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * When the end of the file is reached it allows you to keep scrolling so that your last few lines of code are not stuck at the bottom of the editor.
+    */
+  var scrollPastEnd: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Chooses a scrollbar implementation. The default is "native", showing native scrollbars. The core library also
     * provides the "null" style, which completely hides the scrollbars. Addons can implement additional scrollbar models.
     */
@@ -107,6 +151,11 @@ trait EditorConfiguration extends js.Object {
   var showHint: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether to use the context-sensitive indentation that the mode provides (or just indent the same as the line before). Defaults to true. */
   var smartIndent: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * When enabled gives the wrapper of the line that contains the cursor the class CodeMirror-activeline,
+    * adds a background with the class CodeMirror-activeline-background, and adds the class CodeMirror-activeline-gutter to the line's gutter space is enabled.
+    */
+  var styleActiveLine: js.UndefOr[StyleActiveLine | scala.Boolean] = js.undefined
   /** The width of a tab character. Defaults to 4. */
   var tabSize: js.UndefOr[scala.Double] = js.undefined
   /** The tab index to assign to the editor. If not given, no tab index will be assigned. */
@@ -134,9 +183,13 @@ trait EditorConfiguration extends js.Object {
 object EditorConfiguration {
   @scala.inline
   def apply(
+    autoCloseBrackets: AutoCloseBrackets | java.lang.String = null,
+    autoCloseTags: AutoCloseTags | scala.Boolean = null,
     autofocus: js.UndefOr[scala.Boolean] = js.undefined,
+    coverGutterNextToScrollbar: js.UndefOr[scala.Boolean] = js.undefined,
     cursorBlinkRate: scala.Int | scala.Double = null,
     cursorHeight: scala.Int | scala.Double = null,
+    cursorScrollMargin: scala.Int | scala.Double = null,
     dragDrop: js.UndefOr[scala.Boolean] = js.undefined,
     electricChars: js.UndefOr[scala.Boolean] = js.undefined,
     extraKeys: java.lang.String | KeyMap = null,
@@ -145,16 +198,20 @@ object EditorConfiguration {
     flattenSpans: js.UndefOr[scala.Boolean] = js.undefined,
     foldGutter: js.UndefOr[scala.Boolean] = js.undefined,
     gutters: js.Array[java.lang.String] = null,
+    highlightSelectionMatches: HighlightSelectionMatches | scala.Boolean = null,
     hintOptions: ShowHintOptions = null,
     historyEventDelay: scala.Int | scala.Double = null,
     indentUnit: scala.Int | scala.Double = null,
     indentWithTabs: js.UndefOr[scala.Boolean] = js.undefined,
+    inputStyle: InputStyle = null,
     keyMap: java.lang.String = null,
     lineNumberFormatter: /* line */ scala.Double => java.lang.String = null,
     lineNumbers: js.UndefOr[scala.Boolean] = js.undefined,
+    lineWiseCopyCut: js.UndefOr[scala.Boolean] = js.undefined,
     lineWrapping: js.UndefOr[scala.Boolean] = js.undefined,
     lint: scala.Boolean | LintOptions = null,
-    matchBrackets: js.UndefOr[scala.Boolean] = js.undefined,
+    matchBrackets: MatchBrackets | scala.Boolean = null,
+    matchTags: MatchTags | scala.Boolean = null,
     maxHighlightLength: scala.Int | scala.Double = null,
     mode: js.Any = null,
     onDragEvent: (/* instance */ Editor, /* event */ stdLib.Event) => scala.Boolean = null,
@@ -163,10 +220,12 @@ object EditorConfiguration {
     pollInterval: scala.Int | scala.Double = null,
     readOnly: js.Any = null,
     rtlMoveVisually: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollPastEnd: js.UndefOr[scala.Boolean] = js.undefined,
     scrollbarStyle: java.lang.String = null,
     showCursorWhenSelecting: js.UndefOr[scala.Boolean] = js.undefined,
     showHint: js.UndefOr[scala.Boolean] = js.undefined,
     smartIndent: js.UndefOr[scala.Boolean] = js.undefined,
+    styleActiveLine: StyleActiveLine | scala.Boolean = null,
     tabSize: scala.Int | scala.Double = null,
     tabindex: scala.Int | scala.Double = null,
     theme: java.lang.String = null,
@@ -177,9 +236,13 @@ object EditorConfiguration {
     workTime: scala.Int | scala.Double = null
   ): EditorConfiguration = {
     val __obj = js.Dynamic.literal()
+    if (autoCloseBrackets != null) __obj.updateDynamic("autoCloseBrackets")(autoCloseBrackets.asInstanceOf[js.Any])
+    if (autoCloseTags != null) __obj.updateDynamic("autoCloseTags")(autoCloseTags.asInstanceOf[js.Any])
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus)
+    if (!js.isUndefined(coverGutterNextToScrollbar)) __obj.updateDynamic("coverGutterNextToScrollbar")(coverGutterNextToScrollbar)
     if (cursorBlinkRate != null) __obj.updateDynamic("cursorBlinkRate")(cursorBlinkRate.asInstanceOf[js.Any])
     if (cursorHeight != null) __obj.updateDynamic("cursorHeight")(cursorHeight.asInstanceOf[js.Any])
+    if (cursorScrollMargin != null) __obj.updateDynamic("cursorScrollMargin")(cursorScrollMargin.asInstanceOf[js.Any])
     if (!js.isUndefined(dragDrop)) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(electricChars)) __obj.updateDynamic("electricChars")(electricChars)
     if (extraKeys != null) __obj.updateDynamic("extraKeys")(extraKeys.asInstanceOf[js.Any])
@@ -188,16 +251,20 @@ object EditorConfiguration {
     if (!js.isUndefined(flattenSpans)) __obj.updateDynamic("flattenSpans")(flattenSpans)
     if (!js.isUndefined(foldGutter)) __obj.updateDynamic("foldGutter")(foldGutter)
     if (gutters != null) __obj.updateDynamic("gutters")(gutters)
+    if (highlightSelectionMatches != null) __obj.updateDynamic("highlightSelectionMatches")(highlightSelectionMatches.asInstanceOf[js.Any])
     if (hintOptions != null) __obj.updateDynamic("hintOptions")(hintOptions)
     if (historyEventDelay != null) __obj.updateDynamic("historyEventDelay")(historyEventDelay.asInstanceOf[js.Any])
     if (indentUnit != null) __obj.updateDynamic("indentUnit")(indentUnit.asInstanceOf[js.Any])
     if (!js.isUndefined(indentWithTabs)) __obj.updateDynamic("indentWithTabs")(indentWithTabs)
+    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle)
     if (keyMap != null) __obj.updateDynamic("keyMap")(keyMap)
     if (lineNumberFormatter != null) __obj.updateDynamic("lineNumberFormatter")(js.Any.fromFunction1(lineNumberFormatter))
     if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers)
+    if (!js.isUndefined(lineWiseCopyCut)) __obj.updateDynamic("lineWiseCopyCut")(lineWiseCopyCut)
     if (!js.isUndefined(lineWrapping)) __obj.updateDynamic("lineWrapping")(lineWrapping)
     if (lint != null) __obj.updateDynamic("lint")(lint.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchBrackets)) __obj.updateDynamic("matchBrackets")(matchBrackets)
+    if (matchBrackets != null) __obj.updateDynamic("matchBrackets")(matchBrackets.asInstanceOf[js.Any])
+    if (matchTags != null) __obj.updateDynamic("matchTags")(matchTags.asInstanceOf[js.Any])
     if (maxHighlightLength != null) __obj.updateDynamic("maxHighlightLength")(maxHighlightLength.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (onDragEvent != null) __obj.updateDynamic("onDragEvent")(js.Any.fromFunction2(onDragEvent))
@@ -206,10 +273,12 @@ object EditorConfiguration {
     if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly)
     if (!js.isUndefined(rtlMoveVisually)) __obj.updateDynamic("rtlMoveVisually")(rtlMoveVisually)
+    if (!js.isUndefined(scrollPastEnd)) __obj.updateDynamic("scrollPastEnd")(scrollPastEnd)
     if (scrollbarStyle != null) __obj.updateDynamic("scrollbarStyle")(scrollbarStyle)
     if (!js.isUndefined(showCursorWhenSelecting)) __obj.updateDynamic("showCursorWhenSelecting")(showCursorWhenSelecting)
     if (!js.isUndefined(showHint)) __obj.updateDynamic("showHint")(showHint)
     if (!js.isUndefined(smartIndent)) __obj.updateDynamic("smartIndent")(smartIndent)
+    if (styleActiveLine != null) __obj.updateDynamic("styleActiveLine")(styleActiveLine.asInstanceOf[js.Any])
     if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)

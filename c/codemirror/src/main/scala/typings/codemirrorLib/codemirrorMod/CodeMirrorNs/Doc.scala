@@ -123,6 +123,8 @@ trait Doc extends js.Object {
   def redo(): scala.Unit = js.native
   /** Remove the given line from the document. */
   def removeLine(n: scala.Double): scala.Unit = js.native
+  /** Remove the line widget */
+  def removeLineWidget(widget: LineWidget): scala.Unit = js.native
   /** Replace the part of the document between from and to with the given string.
     from and to must be {line, ch} objects. to can be left off to simply insert the string at position from. */
   def replaceRange(replacement: java.lang.String, from: Position): scala.Unit = js.native

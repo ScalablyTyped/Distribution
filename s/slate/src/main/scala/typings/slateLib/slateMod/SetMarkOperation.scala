@@ -6,10 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SetMarkOperation extends Operation {
+  var data: Data
   var length: scala.Double
-  var mark: Mark
+  var newProperties: MarkProperties
   var offset: scala.Double
-  var path: js.Array[scala.Double]
+  var path: Path
   var properties: MarkProperties
   var `type`: slateLib.slateLibStrings.set_mark
 }
@@ -17,14 +18,15 @@ trait SetMarkOperation extends Operation {
 object SetMarkOperation {
   @scala.inline
   def apply(
+    data: Data,
     length: scala.Double,
-    mark: Mark,
+    newProperties: MarkProperties,
     offset: scala.Double,
-    path: js.Array[scala.Double],
+    path: Path,
     properties: MarkProperties,
     `type`: slateLib.slateLibStrings.set_mark
   ): SetMarkOperation = {
-    val __obj = js.Dynamic.literal(length = length, mark = mark, offset = offset, path = path, properties = properties)
+    val __obj = js.Dynamic.literal(data = data, length = length, newProperties = newProperties, offset = offset, path = path.asInstanceOf[js.Any], properties = properties)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SetMarkOperation]
   }

@@ -77,17 +77,17 @@ class Transaction () extends Resource {
     * Lets a user cancel a money request. Money requests can be canceled by the sender or the recipient.
     * Scope: wallet:transactions:request
     */
-  def cancel(cb: js.Function2[/* error */ stdLib.Error, /* result */ this.type, scala.Unit]): scala.Unit = js.native
+  def cancel(cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ this.type, scala.Unit]): scala.Unit = js.native
   /**
     * Lets the recipient of a money request complete the request by sending money to the user who requested the money.
     * This can only be completed by the user to whom the request was made, not the user who sent the request.
     * Scope: wallet:transactions:request
     */
-  def complete(cb: js.Function2[/* error */ stdLib.Error, /* result */ this.type, scala.Unit]): scala.Unit = js.native
+  def complete(cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ this.type, scala.Unit]): scala.Unit = js.native
   /**
     * Lets the user resend a money request. This will notify recipient with a new email.
     * Scope: wallet:transactions:request
     */
-  def resend(cb: js.Function2[/* error */ stdLib.Error, /* result */ this.type, scala.Unit]): scala.Unit = js.native
+  def resend(cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ this.type, scala.Unit]): scala.Unit = js.native
 }
 

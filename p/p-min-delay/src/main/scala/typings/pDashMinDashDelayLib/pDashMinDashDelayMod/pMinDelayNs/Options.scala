@@ -6,7 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var delayRejection: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  		Delay the rejection.
+  		Turn this off if you want a rejected promise to fail fast.
+  		@default true
+  		*/
+  val delayRejection: js.UndefOr[scala.Boolean] = js.undefined
 }
 
 object Options {

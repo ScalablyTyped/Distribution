@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object BlendingEquation extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.threeDashCoreMod.BlendingEquation with java.lang.String] = js.native
+  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.BlendingEquation with java.lang.String] = js.native
 }
 

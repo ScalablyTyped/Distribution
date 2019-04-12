@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val default: (js.Function1[
-    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[_], 
+    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Application[_], 
     Application[_]
   ]) with atFeathersjsExpressLib.Anon_App = js.native
   /**

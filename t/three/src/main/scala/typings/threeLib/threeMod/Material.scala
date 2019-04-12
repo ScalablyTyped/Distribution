@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Material")
 @js.native
 class Material ()
-  extends threeLib.threeDashCoreMod.Material
+  extends threeLib.srcMaterialsMaterialsMod.Material
 

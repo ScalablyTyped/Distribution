@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "DirectionalLightShadow")
 @js.native
 class DirectionalLightShadow ()
-  extends threeLib.threeDashCoreMod.DirectionalLightShadow
+  extends threeLib.srcLightsDirectionalLightShadowMod.DirectionalLightShadow
 

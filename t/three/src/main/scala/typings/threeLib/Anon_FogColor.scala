@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_FogColor extends js.Object {
-  var fogColor: threeLib.threeDashCoreMod.IUniform
-  var fogDensity: threeLib.threeDashCoreMod.IUniform
-  var fogFar: threeLib.threeDashCoreMod.IUniform
-  var fogNear: threeLib.threeDashCoreMod.IUniform
+  var fogColor: threeLib.srcRenderersShadersUniformsLibMod.IUniform
+  var fogDensity: threeLib.srcRenderersShadersUniformsLibMod.IUniform
+  var fogFar: threeLib.srcRenderersShadersUniformsLibMod.IUniform
+  var fogNear: threeLib.srcRenderersShadersUniformsLibMod.IUniform
 }
 
 object Anon_FogColor {
   @scala.inline
   def apply(
-    fogColor: threeLib.threeDashCoreMod.IUniform,
-    fogDensity: threeLib.threeDashCoreMod.IUniform,
-    fogFar: threeLib.threeDashCoreMod.IUniform,
-    fogNear: threeLib.threeDashCoreMod.IUniform
+    fogColor: threeLib.srcRenderersShadersUniformsLibMod.IUniform,
+    fogDensity: threeLib.srcRenderersShadersUniformsLibMod.IUniform,
+    fogFar: threeLib.srcRenderersShadersUniformsLibMod.IUniform,
+    fogNear: threeLib.srcRenderersShadersUniformsLibMod.IUniform
   ): Anon_FogColor = {
     val __obj = js.Dynamic.literal(fogColor = fogColor, fogDensity = fogDensity, fogFar = fogFar, fogNear = fogNear)
   

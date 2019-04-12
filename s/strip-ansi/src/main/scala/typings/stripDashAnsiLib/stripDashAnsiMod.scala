@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("strip-ansi", JSImport.Namespace)
 @js.native
 object stripDashAnsiMod extends js.Object {
-  def apply(str: java.lang.String): java.lang.String = js.native
+  def default(string: java.lang.String): java.lang.String = js.native
 }
 

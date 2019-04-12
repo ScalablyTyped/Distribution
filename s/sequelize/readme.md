@@ -17,6 +17,7 @@
 //                 Thomas Breleur <https://github.com/thomas-b>
 //                 Antoine Boisadam <https://github.com/Antoine38660>
 //                 Dima Smirnov <https://github.com/smff>
+//                 Duy Truong <https://github.com/truongkhanhduy95>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 // Based on original work by: samuelneff <https://github.com/samuelneff/sequelize-auto-ts/blob/master/lib/sequelize.d.ts>

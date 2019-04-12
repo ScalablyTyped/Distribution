@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("three", "CurvePath")
 @js.native
-class CurvePath[T /* <: threeLib.threeDashCoreMod.Vector */] ()
-  extends threeLib.threeDashCoreMod.CurvePath[T]
+class CurvePath[T /* <: threeLib.srcMathVector2Mod.Vector */] ()
+  extends threeLib.srcExtrasCoreCurvePathMod.CurvePath[T]
 

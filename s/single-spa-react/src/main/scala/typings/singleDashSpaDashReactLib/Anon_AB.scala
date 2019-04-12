@@ -49,28 +49,6 @@ trait Anon_AB extends js.Object {
     container: stdLib.Element,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
-  def hydrate(
-    parentComponent: js.Array[reactLib.reactMod.Component[_, js.Object, _]],
-    element: reactLib.reactMod.ReactNs.SFCElement[_],
-    container: stdLib.Element
-  ): scala.Unit = js.native
-  def hydrate(
-    parentComponent: js.Array[reactLib.reactMod.Component[_, js.Object, _]],
-    element: reactLib.reactMod.ReactNs.SFCElement[_],
-    container: stdLib.Element,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
-  def hydrate(
-    parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.SFCElement[_],
-    container: stdLib.Element
-  ): scala.Unit = js.native
-  def hydrate(
-    parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.SFCElement[_],
-    container: stdLib.Element,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
   def hydrate[T /* <: stdLib.Element */](element: reactLib.reactMod.ReactNs.DOMElement[reactLib.reactMod.ReactNs.DOMAttributes[T], T]): T = js.native
   def hydrate[T /* <: stdLib.Element */](
     element: reactLib.reactMod.ReactNs.DOMElement[reactLib.reactMod.ReactNs.DOMAttributes[T], T],
@@ -206,28 +184,6 @@ trait Anon_AB extends js.Object {
   ): scala.Unit = js.native
   def render(element: reactLib.reactMod.ReactNs.SFCElement[_], container: stdLib.Element): scala.Unit = js.native
   def render(
-    element: reactLib.reactMod.ReactNs.SFCElement[_],
-    container: stdLib.Element,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
-  def render(
-    parentComponent: js.Array[reactLib.reactMod.Component[_, js.Object, _]],
-    element: reactLib.reactMod.ReactNs.SFCElement[_],
-    container: stdLib.Element
-  ): scala.Unit = js.native
-  def render(
-    parentComponent: js.Array[reactLib.reactMod.Component[_, js.Object, _]],
-    element: reactLib.reactMod.ReactNs.SFCElement[_],
-    container: stdLib.Element,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
-  def render(
-    parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.SFCElement[_],
-    container: stdLib.Element
-  ): scala.Unit = js.native
-  def render(
-    parentComponent: reactLib.reactMod.Component[_, js.Object, _],
     element: reactLib.reactMod.ReactNs.SFCElement[_],
     container: stdLib.Element,
     callback: js.Function0[scala.Unit]

@@ -183,7 +183,7 @@ trait File
   /**
     * Returns `true` if the file contents are a `Buffer`, otherwise `false`.
     */
-  def isBuffer(): /* is vinyl.vinyl.BufferFile */ scala.Boolean = js.native
+  def isBuffer(): /* is vinyl.vinyl.File.BufferFile */ scala.Boolean = js.native
   /**
     * Returns `true` if the file represents a directory, otherwise `false`.
     *
@@ -196,15 +196,15 @@ trait File
     * When constructing a Vinyl object, pass in a valid `fs.Stats` object via `options.stat`.
     * If you are mocking the `fs.Stats` object, you may need to stub the `isDirectory()` method.
     */
-  def isDirectory(): /* is vinyl.vinyl.DirectoryFile */ scala.Boolean = js.native
+  def isDirectory(): /* is vinyl.vinyl.File.DirectoryFile */ scala.Boolean = js.native
   /**
     * Returns `true` if the file contents are `null`, otherwise `false`.
     */
-  def isNull(): /* is vinyl.vinyl.NullFile */ scala.Boolean = js.native
+  def isNull(): /* is vinyl.vinyl.File.NullFile */ scala.Boolean = js.native
   /**
     * Returns `true` if the file contents are a `Stream`, otherwise `false`.
     */
-  def isStream(): /* is vinyl.vinyl.StreamFile */ scala.Boolean = js.native
+  def isStream(): /* is vinyl.vinyl.File.StreamFile */ scala.Boolean = js.native
   /**
     * Returns `true` if the file represents a symbolic link, otherwise `false`.
     *
@@ -217,7 +217,7 @@ trait File
     * When constructing a Vinyl object, pass in a valid `fs.Stats` object via `options.stat`.
     * If you are mocking the `fs.Stats` object, you may need to stub the `isSymbolicLink()` method.
     */
-  def isSymbolic(): /* is vinyl.vinyl.SymbolicFile */ scala.Boolean = js.native
+  def isSymbolic(): /* is vinyl.vinyl.File.SymbolicFile */ scala.Boolean = js.native
   /**
     * @deprecated This method was removed in v2.0.
     * If file.contents is a Buffer, it will write it to the stream.

@@ -67,6 +67,6 @@ class Withdrawal () extends Resource {
     * Completes a withdrawal that is created in commit: false state.
     * Scope: wallet:withdrawals:create
     */
-  def commit(cb: js.Function2[/* error */ stdLib.Error, /* result */ this.type, scala.Unit]): scala.Unit = js.native
+  def commit(cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ this.type, scala.Unit]): scala.Unit = js.native
 }
 

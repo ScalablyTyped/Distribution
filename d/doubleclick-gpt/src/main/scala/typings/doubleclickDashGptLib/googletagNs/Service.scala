@@ -5,29 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Service extends js.Object {
   def addEventListener(
     eventType: java.lang.String,
+    listener: js.Function1[/* event */ doubleclickDashGptLib.googletagNs.eventsNs.Event, scala.Unit]
+  ): Service = js.native
+  @JSName("addEventListener")
+  def addEventListener_slotRenderEnded(
+    eventType: doubleclickDashGptLib.doubleclickDashGptLibStrings.slotRenderEnded,
     listener: js.Function1[
-      /* event */ doubleclickDashGptLib.googletagNs.eventsNs.ImpressionViewableEvent | doubleclickDashGptLib.googletagNs.eventsNs.SlotOnloadEvent | doubleclickDashGptLib.googletagNs.eventsNs.SlotRenderEndedEvent | doubleclickDashGptLib.googletagNs.eventsNs.slotVisibilityChangedEvent, 
+      /* event */ doubleclickDashGptLib.googletagNs.eventsNs.SlotRenderEndedEvent, 
       scala.Unit
     ]
-  ): scala.Unit
-  def getSlots(): js.Array[Slot]
-}
-
-object Service {
-  @scala.inline
-  def apply(
-    addEventListener: (java.lang.String, js.Function1[
-      /* event */ doubleclickDashGptLib.googletagNs.eventsNs.ImpressionViewableEvent | doubleclickDashGptLib.googletagNs.eventsNs.SlotOnloadEvent | doubleclickDashGptLib.googletagNs.eventsNs.SlotRenderEndedEvent | doubleclickDashGptLib.googletagNs.eventsNs.slotVisibilityChangedEvent, 
+  ): Service = js.native
+  @JSName("addEventListener")
+  def addEventListener_slotVisibilityChanged(
+    eventType: doubleclickDashGptLib.doubleclickDashGptLibStrings.slotVisibilityChanged,
+    listener: js.Function1[
+      /* event */ doubleclickDashGptLib.googletagNs.eventsNs.SlotVisibilityChangedEvent, 
       scala.Unit
-    ]) => scala.Unit,
-    getSlots: () => js.Array[Slot]
-  ): Service = {
-    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), getSlots = js.Any.fromFunction0(getSlots))
-  
-    __obj.asInstanceOf[Service]
-  }
+    ]
+  ): Service = js.native
+  def getSlots(): js.Array[Slot] = js.native
 }
 

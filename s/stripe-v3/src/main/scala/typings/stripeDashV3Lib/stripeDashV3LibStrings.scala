@@ -115,6 +115,10 @@ object stripeDashV3LibStrings {
     extends stripeDashV3Lib.stripeNs.elementsNs.elementsType
   
   @js.native
+  sealed trait idealBank
+    extends stripeDashV3Lib.stripeNs.elementsNs.elementsType
+  
+  @js.native
   sealed trait invalid_shipping_address extends js.Object
   
   @js.native
@@ -277,6 +281,8 @@ object stripeDashV3LibStrings {
   def focus: focus = "focus".asInstanceOf[focus]
   @scala.inline
   def iban: iban = "iban".asInstanceOf[iban]
+  @scala.inline
+  def idealBank: idealBank = "idealBank".asInstanceOf[idealBank]
   @scala.inline
   def invalid_shipping_address: invalid_shipping_address = "invalid_shipping_address".asInstanceOf[invalid_shipping_address]
   @scala.inline

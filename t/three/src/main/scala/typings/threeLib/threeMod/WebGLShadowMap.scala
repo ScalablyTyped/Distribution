@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "WebGLShadowMap")
 @js.native
 class WebGLShadowMap protected ()
-  extends threeLib.threeDashCoreMod.WebGLShadowMap {
-  def this(_renderer: threeLib.threeDashCoreMod.Renderer, _lights: js.Array[_], _objects: js.Array[_], capabilities: js.Any) = this()
+  extends threeLib.srcRenderersWebglWebGLShadowMapMod.WebGLShadowMap {
+  def this(_renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, _lights: js.Array[_], _objects: js.Array[_], capabilities: js.Any) = this()
 }
 

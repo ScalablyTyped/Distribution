@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait BeforeDateCreateEventArgs extends js.Object {
-  /** Set to true when the event has to be canceled, else false.
-    */
-  var cancel: js.UndefOr[scala.Boolean] = js.undefined
   /** returns the currently created date object.
     */
   var date: js.UndefOr[js.Any] = js.undefined
@@ -29,7 +26,6 @@ trait BeforeDateCreateEventArgs extends js.Object {
 object BeforeDateCreateEventArgs {
   @scala.inline
   def apply(
-    cancel: js.UndefOr[scala.Boolean] = js.undefined,
     date: js.Any = null,
     element: stdLib.HTMLElement = null,
     model: Model = null,
@@ -37,7 +33,6 @@ object BeforeDateCreateEventArgs {
     value: java.lang.String = null
   ): BeforeDateCreateEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
     if (date != null) __obj.updateDynamic("date")(date)
     if (element != null) __obj.updateDynamic("element")(element)
     if (model != null) __obj.updateDynamic("model")(model)

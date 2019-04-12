@@ -1,15 +1,45 @@
 ```
 // Type definitions for CodeMirror
-// Project: https://github.com/marijnh/CodeMirror
-// Definitions by: Nikolaj Kappler <https://github.com/nkappler>
+// Project: https://github.com/codemirror/CodeMirror
+// Definitions by: ficristo <https://github.com/ficristo>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// See docs https://codemirror.net/doc/manual.html#addon_comment
-// Todo: add 'toggleComment' command, once command type definitions exist in main definitions
+// See docs https://codemirror.net/doc/manual.html#addon_closebrackets
+// Type definitions for CodeMirror
+// Project: https://github.com/codemirror/CodeMirror
+// Definitions by: ficristo <https://github.com/ficristo>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// See docs https://codemirror.net/doc/manual.html#addon_closetag
 // Type definitions for CodeMirror
 // Project: https://github.com/marijnh/CodeMirror
 // Definitions by: Sixin Li <https://github.com/sixinli>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // See docs https://codemirror.net/doc/manual.html#addon_matchbrackets
+// Type definitions for CodeMirror
+// Project: https://github.com/codemirror/CodeMirror
+// Definitions by: ficristo <https://github.com/ficristo>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// See docs https://codemirror.net/doc/manual.html#addon_matchtags
+// Type definitions for CodeMirror
+// Project: https://github.com/codemirror/CodeMirror
+// Definitions by: ficristo <https://github.com/ficristo>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// See docs https://github.com/codemirror/CodeMirror/blob/master/addon/scroll/scrollpastend.js
+// Type definitions for CodeMirror
+// Project: https://github.com/codemirror/CodeMirror
+// Definitions by: ficristo <https://github.com/ficristo>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// See docs https://codemirror.net/doc/manual.html#addon_match-highlighter
+// Type definitions for CodeMirror
+// Project: https://github.com/codemirror/CodeMirror
+// Definitions by: ficristo <https://github.com/ficristo>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// See docs https://codemirror.net/doc/manual.html#active-line
+// Type definitions for CodeMirror
+// Project: https://github.com/marijnh/CodeMirror
+// Definitions by: Nikolaj Kappler <https://github.com/nkappler>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// See docs https://codemirror.net/doc/manual.html#addon_comment
+// Todo: add 'toggleComment' command, once command type definitions exist in main definitions
 // Type definitions for CodeMirror
 // Project: https://github.com/marijnh/CodeMirror
 // Definitions by: Nikolaj Kappler <https://github.com/nkappler>

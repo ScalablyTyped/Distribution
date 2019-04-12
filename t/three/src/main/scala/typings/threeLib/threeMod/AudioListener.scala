@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "AudioListener")
 @js.native
 class AudioListener ()
-  extends threeLib.threeDashCoreMod.AudioListener
+  extends threeLib.srcAudioAudioListenerMod.AudioListener
 

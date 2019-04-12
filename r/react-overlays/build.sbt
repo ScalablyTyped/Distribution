@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-overlays"
-version := "1.1-dt-20190212Z-338d2e"
+version := "1.1-dt-20190212Z-a0afa1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.3-431253",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-3351b3",
-  "org.scalablytyped" %%% "react-transition-group" % "2.8-dt-20190404Z-120838",
+  "org.scalablytyped" %%% "react-transition-group" % "2.9-dt-20190409Z-591e88",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

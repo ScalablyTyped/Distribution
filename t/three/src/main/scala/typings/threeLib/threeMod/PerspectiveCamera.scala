@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param far Camera frustum far plane. Default value is 2000.
   */
 class PerspectiveCamera ()
-  extends threeLib.threeDashCoreMod.PerspectiveCamera {
+  extends threeLib.srcCamerasPerspectiveCameraMod.PerspectiveCamera {
   def this(fov: scala.Double) = this()
   def this(fov: scala.Double, aspect: scala.Double) = this()
   def this(fov: scala.Double, aspect: scala.Double, near: scala.Double) = this()

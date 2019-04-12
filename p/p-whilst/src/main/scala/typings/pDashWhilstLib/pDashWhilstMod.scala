@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p-whilst", JSImport.Namespace)
 @js.native
-object pDashWhilstMod extends js.Object {
-  def apply(condition: js.Function0[scala.Boolean], action: js.Function0[_]): js.Promise[scala.Unit] = js.native
-}
+object pDashWhilstMod
+  extends org.scalablytyped.runtime.TopLevel[Anon_ActionCondition]
 

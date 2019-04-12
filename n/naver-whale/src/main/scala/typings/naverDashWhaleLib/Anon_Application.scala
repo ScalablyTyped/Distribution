@@ -35,7 +35,7 @@ trait Anon_Application extends js.Object {
   def reload(): scala.Unit = js.native
   def requestUpdateCheck(
     callback: js.Function2[
-      /* status */ java.lang.String, 
+      /* status */ chromeLib.chromeNs.runtimeNs.RequestUpdateCheckStatus, 
       /* details */ js.UndefOr[chromeLib.chromeNs.runtimeNs.UpdateCheckDetails], 
       scala.Unit
     ]

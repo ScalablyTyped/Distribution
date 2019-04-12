@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "WebGLInfo")
 @js.native
 class WebGLInfo ()
-  extends threeLib.threeDashCoreMod.WebGLInfo
+  extends threeLib.srcRenderersWebglWebGLInfoMod.WebGLInfo
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object AnimationActionLoopStyles extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.threeDashCoreMod.AnimationActionLoopStyles with java.lang.String] = js.native
+  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.AnimationActionLoopStyles with java.lang.String] = js.native
 }
 

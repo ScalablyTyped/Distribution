@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Card extends js.Object {
-  var buttons: js.UndefOr[js.Array[Button]] = js.undefined
+  var buttons: js.UndefOr[js.Array[dialogflowLib.Anon_Postback]] = js.undefined
   var imageUri: js.UndefOr[java.lang.String] = js.undefined
   var subtitle: js.UndefOr[java.lang.String] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
@@ -15,7 +15,7 @@ trait Card extends js.Object {
 object Card {
   @scala.inline
   def apply(
-    buttons: js.Array[Button] = null,
+    buttons: js.Array[dialogflowLib.Anon_Postback] = null,
     imageUri: java.lang.String = null,
     subtitle: java.lang.String = null,
     title: java.lang.String = null

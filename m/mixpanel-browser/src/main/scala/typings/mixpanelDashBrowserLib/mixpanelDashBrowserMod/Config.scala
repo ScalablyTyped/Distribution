@@ -15,6 +15,7 @@ trait Config extends js.Object {
   var cross_subdomain_cookie: scala.Boolean
   var debug: scala.Boolean
   var disable_cookie: scala.Boolean
+  var disable_notifications: scala.Boolean
   var disable_persistence: scala.Boolean
   var img: scala.Boolean
   var ip: scala.Boolean
@@ -48,6 +49,7 @@ object Config {
     cross_subdomain_cookie: scala.Boolean,
     debug: scala.Boolean,
     disable_cookie: scala.Boolean,
+    disable_notifications: scala.Boolean,
     disable_persistence: scala.Boolean,
     img: scala.Boolean,
     ip: scala.Boolean,
@@ -68,7 +70,7 @@ object Config {
     verbose: scala.Boolean,
     xhr_headers: XhrHeadersDef
   ): Config = {
-    val __obj = js.Dynamic.literal(api_host = api_host, app_host = app_host, autrotrack = autrotrack, cdn = cdn, cookie_expiration = cookie_expiration, cookie_name = cookie_name, cross_subdomain_cookie = cross_subdomain_cookie, debug = debug, disable_cookie = disable_cookie, disable_persistence = disable_persistence, img = img, ip = ip, loaded = js.Any.fromFunction1(loaded), opt_out_tracking_by_default = opt_out_tracking_by_default, opt_out_tracking_cookie_prefix = opt_out_tracking_cookie_prefix, opt_out_tracking_persistence_type = opt_out_tracking_persistence_type, persistence = persistence, persistence_name = persistence_name, property_blacklist = property_blacklist, save_referrer = save_referrer, secure_cookie = secure_cookie, store_google = store_google, test = test, track_links_timeout = track_links_timeout, track_pageview = track_pageview, upgrade = upgrade, verbose = verbose, xhr_headers = xhr_headers)
+    val __obj = js.Dynamic.literal(api_host = api_host, app_host = app_host, autrotrack = autrotrack, cdn = cdn, cookie_expiration = cookie_expiration, cookie_name = cookie_name, cross_subdomain_cookie = cross_subdomain_cookie, debug = debug, disable_cookie = disable_cookie, disable_notifications = disable_notifications, disable_persistence = disable_persistence, img = img, ip = ip, loaded = js.Any.fromFunction1(loaded), opt_out_tracking_by_default = opt_out_tracking_by_default, opt_out_tracking_cookie_prefix = opt_out_tracking_cookie_prefix, opt_out_tracking_persistence_type = opt_out_tracking_persistence_type, persistence = persistence, persistence_name = persistence_name, property_blacklist = property_blacklist, save_referrer = save_referrer, secure_cookie = secure_cookie, store_google = store_google, test = test, track_links_timeout = track_links_timeout, track_pageview = track_pageview, upgrade = upgrade, verbose = verbose, xhr_headers = xhr_headers)
   
     __obj.asInstanceOf[Config]
   }

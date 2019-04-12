@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
   * Creates an identity matrix.
   */
 class Matrix3 ()
-  extends threeLib.threeDashCoreMod.Matrix3
+  extends threeLib.srcMathMatrix3Mod.Matrix3
 

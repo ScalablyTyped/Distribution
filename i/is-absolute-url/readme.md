@@ -1,6 +1,21 @@
 ```
-// Type definitions for is-absolute-url 2.1
-// Project: https://github.com/sindresorhus/is-absolute-url#readme
-// Definitions by: Mohamed Hegazy <https://github.com/mhegazy>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Check if an URL is absolute.
+
+@param url - The URL to check.
+
+@example
+```
+import isAbsoluteUrl = require('is-absolute-url');
+
+isAbsoluteUrl('http://sindresorhus.com/foo/bar');
+//=> true
+
+isAbsoluteUrl('//sindresorhus.com');
+//=> false
+
+isAbsoluteUrl('foo/bar');
+//=> false
+```
+*/
 ```

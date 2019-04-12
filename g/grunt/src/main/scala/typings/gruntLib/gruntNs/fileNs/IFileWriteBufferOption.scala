@@ -19,8 +19,12 @@ trait IFileWriteBufferOption extends IFileWriteOptions {
 
 object IFileWriteBufferOption {
   @scala.inline
-  def apply(noProcess: js.Any = null, process: /* buffer */ nodeLib.Buffer => scala.Boolean = null): IFileWriteBufferOption = {
-    val __obj = js.Dynamic.literal()
+  def apply(
+    encoding: java.lang.String,
+    noProcess: js.Any = null,
+    process: /* buffer */ nodeLib.Buffer => scala.Boolean = null
+  ): IFileWriteBufferOption = {
+    val __obj = js.Dynamic.literal(encoding = encoding)
     if (noProcess != null) __obj.updateDynamic("noProcess")(noProcess)
     if (process != null) __obj.updateDynamic("process")(js.Any.fromFunction1(process))
     __obj.asInstanceOf[IFileWriteBufferOption]

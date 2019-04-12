@@ -85,6 +85,7 @@ object TextStyle {
     fontFamily: java.lang.String = null,
     fontSize: scala.Int | scala.Double = null,
     fontStyle: reactDashNativeLib.reactDashNativeLibStrings.normal | reactDashNativeLib.reactDashNativeLibStrings.italic = null,
+    fontVariant: js.Array[FontVariant] = null,
     fontWeight: reactDashNativeLib.reactDashNativeLibStrings.normal | reactDashNativeLib.reactDashNativeLibStrings.bold | reactDashNativeLib.reactDashNativeLibStrings.`100` | reactDashNativeLib.reactDashNativeLibStrings.`200` | reactDashNativeLib.reactDashNativeLibStrings.`300` | reactDashNativeLib.reactDashNativeLibStrings.`400` | reactDashNativeLib.reactDashNativeLibStrings.`500` | reactDashNativeLib.reactDashNativeLibStrings.`600` | reactDashNativeLib.reactDashNativeLibStrings.`700` | reactDashNativeLib.reactDashNativeLibStrings.`800` | reactDashNativeLib.reactDashNativeLibStrings.`900` = null,
     height: scala.Double | java.lang.String = null,
     includeFontPadding: js.UndefOr[scala.Boolean] = js.undefined,
@@ -193,6 +194,7 @@ object TextStyle {
     if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
     if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant)
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(includeFontPadding)) __obj.updateDynamic("includeFontPadding")(includeFontPadding)

@@ -285,6 +285,14 @@ object stripeLibStrings {
     extends stripeLib.stripeMod.StripeNs.transfersNs.Statuses
   
   @js.native
+  sealed trait incomplete
+    extends stripeLib.stripeMod.StripeNs.subscriptionsNs.SubscriptionStatus
+  
+  @js.native
+  sealed trait incomplete_expired
+    extends stripeLib.stripeMod.StripeNs.subscriptionsNs.SubscriptionStatus
+  
+  @js.native
   sealed trait incorporation_article
     extends stripeLib.stripeMod.StripeNs.fileUploadsNs.IPurpose
   
@@ -853,6 +861,10 @@ object stripeLibStrings {
   def in_stock: in_stock = "in_stock".asInstanceOf[in_stock]
   @scala.inline
   def in_transit: in_transit = "in_transit".asInstanceOf[in_transit]
+  @scala.inline
+  def incomplete: incomplete = "incomplete".asInstanceOf[incomplete]
+  @scala.inline
+  def incomplete_expired: incomplete_expired = "incomplete_expired".asInstanceOf[incomplete_expired]
   @scala.inline
   def incorporation_article: incorporation_article = "incorporation_article".asInstanceOf[incorporation_article]
   @scala.inline

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "slonik"
-version := "15.4-dt-20190225Z-616223"
+version := "16.10-dt-20190410Z-efd931"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

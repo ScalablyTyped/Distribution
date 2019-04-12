@@ -1,13 +1,22 @@
 ```
 /**
+ * {@docCategory IColorClassNames}
+ */
+/**
  * @internal
  * Experimental interface for decorative styling in a theme.
+ * {@docCategory IEffects}
  */
 /**
  * UI Fabric color palette.
+ * {@docCategory IPalette}
+ */
+/**
+ * {@docCategory ISemanticTextColors}
  */
 /**
  * @internal This is an experimental interface and will be changed post design review.
+ * {@docCategory ISpacing}
  */
 /**
  * Builds a class names object from a given map.

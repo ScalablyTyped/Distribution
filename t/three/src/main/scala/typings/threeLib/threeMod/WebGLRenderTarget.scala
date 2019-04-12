@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "WebGLRenderTarget")
 @js.native
 class WebGLRenderTarget protected ()
-  extends threeLib.threeDashCoreMod.WebGLRenderTarget {
+  extends threeLib.srcRenderersWebGLRenderTargetMod.WebGLRenderTarget {
   def this(width: scala.Double, height: scala.Double) = this()
-  def this(width: scala.Double, height: scala.Double, options: threeLib.threeDashCoreMod.WebGLRenderTargetOptions) = this()
+  def this(width: scala.Double, height: scala.Double, options: threeLib.srcRenderersWebGLRenderTargetMod.WebGLRenderTargetOptions) = this()
 }
 

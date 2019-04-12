@@ -1,15 +1,16 @@
 organization := "org.scalablytyped"
 name := "log-update"
-version := "3.2.0-c479da"
+version := "3.2.0-2faaa3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ansi-escapes" % "3.0-dt-20190306Z-54eb6e",
-  "org.scalablytyped" %%% "cli-cursor" % "2.1-dt-20181224Z-5724ed",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
+  "org.scalablytyped" %%% "ansi-escapes" % "4.1.0-2c89dd",
+  "org.scalablytyped" %%% "cli-cursor" % "2.1-dt-20181224Z-89d58b",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
+  "org.scalablytyped" %%% "type-fest" % "0.3.0-45433e",
   "org.scalablytyped" %%% "wrap-ansi" % "v3.0.0-dt-20190322Z-e3af9b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

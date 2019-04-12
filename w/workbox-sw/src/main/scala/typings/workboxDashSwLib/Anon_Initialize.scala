@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Initialize
   extends org.scalablytyped.runtime.Instantiable0[workboxDashSwLib.workboxDashSwMod.GoogleAnalyticsNamespace] {
-  def initialize(options: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.IGoogleAnalyticsInitializeOptions]): scala.Unit = js.native
+  /**
+  	 *
+  	 * @param {Partial<GoogleAnalyticsInitializeOptions>} options
+  	 */
+  def initialize(): scala.Unit = js.native
+  def initialize(options: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.GoogleAnalyticsInitializeOptions]): scala.Unit = js.native
 }
 

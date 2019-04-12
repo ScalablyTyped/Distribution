@@ -67,6 +67,10 @@ object naverDashWhaleLibStrings {
     extends naverDashWhaleLib.whaleNs.omniboxNs.OnInputEnteredDisposition
   
   @js.native
+  sealed trait no_update
+    extends naverDashWhaleLib.whaleNs.runtimeNs.RequestUpdateCheckStatus
+  
+  @js.native
   sealed trait normal extends js.Object
   
   @js.native
@@ -105,6 +109,14 @@ object naverDashWhaleLibStrings {
   @js.native
   sealed trait sub_frame
     extends naverDashWhaleLib.whaleNs.webRequestNs.ResourceType
+  
+  @js.native
+  sealed trait throttled
+    extends naverDashWhaleLib.whaleNs.runtimeNs.RequestUpdateCheckStatus
+  
+  @js.native
+  sealed trait update_available
+    extends naverDashWhaleLib.whaleNs.runtimeNs.RequestUpdateCheckStatus
   
   @js.native
   sealed trait websocket
@@ -149,6 +161,8 @@ object naverDashWhaleLibStrings {
   @scala.inline
   def newForegroundTab: newForegroundTab = "newForegroundTab".asInstanceOf[newForegroundTab]
   @scala.inline
+  def no_update: no_update = "no_update".asInstanceOf[no_update]
+  @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
@@ -170,6 +184,10 @@ object naverDashWhaleLibStrings {
   def stylesheet: stylesheet = "stylesheet".asInstanceOf[stylesheet]
   @scala.inline
   def sub_frame: sub_frame = "sub_frame".asInstanceOf[sub_frame]
+  @scala.inline
+  def throttled: throttled = "throttled".asInstanceOf[throttled]
+  @scala.inline
+  def update_available: update_available = "update_available".asInstanceOf[update_available]
   @scala.inline
   def websocket: websocket = "websocket".asInstanceOf[websocket]
   @scala.inline

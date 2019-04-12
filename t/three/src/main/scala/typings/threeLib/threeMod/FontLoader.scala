@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "FontLoader")
 @js.native
 class FontLoader ()
-  extends threeLib.threeDashCoreMod.FontLoader {
-  def this(manager: threeLib.threeDashCoreMod.LoadingManager) = this()
+  extends threeLib.srcLoadersFontLoaderMod.FontLoader {
+  def this(manager: threeLib.srcLoadersLoadingManagerMod.LoadingManager) = this()
 }
 

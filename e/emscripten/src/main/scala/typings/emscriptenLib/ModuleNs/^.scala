@@ -76,9 +76,9 @@ object ^ extends js.Object {
   def getValue(ptr: scala.Double, `type`: java.lang.String): scala.Double = js.native
   def getValue(ptr: scala.Double, `type`: java.lang.String, noSafe: scala.Boolean): scala.Double = js.native
   def instantiateWasm(
-    imports: webassemblyDashJsDashApiLib.WebAssemblyNs.Imports,
-    successCallback: js.Function1[/* module */ webassemblyDashJsDashApiLib.WebAssemblyNs.Module, scala.Unit]
-  ): webassemblyDashJsDashApiLib.WebAssemblyNs.Exports = js.native
+    imports: WebAssemblyImports,
+    successCallback: js.Function1[/* module */ emscriptenLib.WebAssemblyNs.Module, scala.Unit]
+  ): WebAssemblyExports = js.native
   // Tools
   def intArrayFromString(stringy: java.lang.String): js.Array[scala.Double] = js.native
   def intArrayFromString(stringy: java.lang.String, dontAddNull: scala.Boolean): js.Array[scala.Double] = js.native

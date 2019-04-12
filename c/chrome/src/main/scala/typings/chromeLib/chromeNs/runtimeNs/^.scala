@@ -36,7 +36,7 @@ object ^ extends js.Object {
   def reload(): scala.Unit = js.native
   def requestUpdateCheck(
     callback: js.Function2[
-      /* status */ java.lang.String, 
+      /* status */ RequestUpdateCheckStatus, 
       /* details */ js.UndefOr[UpdateCheckDetails], 
       scala.Unit
     ]

@@ -16,7 +16,7 @@ object ^ extends js.Object {
   def createPool(connectionConfiguration: DatabaseConfigurationType): DatabasePoolType = js.native
   def createPool(
     connectionConfiguration: DatabaseConfigurationType,
-    clientUserConfiguration: ClientUserConfigurationType[_]
+    clientUserConfiguration: ClientUserConfigurationType
   ): DatabasePoolType = js.native
   def createQueryNormalizationInterceptor(): InterceptorType = js.native
   def createQueryNormalizationInterceptor(configuration: slonikLib.Anon_StripComments): InterceptorType = js.native

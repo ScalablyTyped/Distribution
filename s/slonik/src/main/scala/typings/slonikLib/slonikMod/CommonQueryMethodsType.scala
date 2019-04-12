@@ -41,7 +41,7 @@ trait CommonQueryMethodsType extends js.Object {
   def one(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[QueryResultRowType[java.lang.String]] = js.native
   def oneFirst(sql: TaggedTemplateLiteralInvocationType): js.Promise[QueryResultRowColumnType] = js.native
   def oneFirst(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[QueryResultRowColumnType] = js.native
-  def query(sql: TaggedTemplateLiteralInvocationType): js.Promise[QueryResultRowType[java.lang.String]] = js.native
-  def query(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[QueryResultRowType[java.lang.String]] = js.native
+  def query(sql: TaggedTemplateLiteralInvocationType): js.Promise[QueryResultType[QueryResultRowType[java.lang.String]]] = js.native
+  def query(sql: TaggedTemplateLiteralInvocationType, values: js.Array[PrimitiveValueExpressionType]): js.Promise[QueryResultType[QueryResultRowType[java.lang.String]]] = js.native
 }
 

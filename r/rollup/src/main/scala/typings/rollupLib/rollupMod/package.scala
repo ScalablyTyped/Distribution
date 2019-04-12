@@ -30,6 +30,11 @@ package object rollupMod {
     /* options */ OutputOptions, 
     (js.Promise[rollupLib.Anon_Code | scala.Null]) | rollupLib.Anon_Code | java.lang.String | scala.Null
   ]
+  type ResolveAssetUrlHook = js.ThisFunction1[
+    /* this */ PluginContext, 
+    /* options */ rollupLib.Anon_AssetFileName, 
+    java.lang.String | scala.Unit
+  ]
   type ResolveDynamicImportHook = js.ThisFunction2[
     /* this */ PluginContext, 
     /* specifier */ java.lang.String | estreeLib.estreeMod.Node, 
@@ -49,6 +54,12 @@ package object rollupMod {
     - ResolvedId
   */
   type ResolveIdResult = _ResolveIdResult | java.lang.String | scala.Unit
+  type ResolveImportMetaHook = js.ThisFunction2[
+    /* this */ PluginContext, 
+    /* prop */ java.lang.String | scala.Null, 
+    /* options */ rollupLib.Anon_ChunkId, 
+    java.lang.String | scala.Unit
+  ]
   type TransformChunkHook = js.ThisFunction2[
     /* this */ PluginContext, 
     /* code */ java.lang.String, 

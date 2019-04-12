@@ -134,39 +134,42 @@ trait UploadTask extends js.Object {
     *     callbacks.
     */
   def on(event: TaskEvent): js.Function = js.native
-  def on(event: TaskEvent, nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error]): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[UploadTaskSnapshot, stdLib.Error]
+  ): js.Function = js.native
+  def on(
+    event: TaskEvent,
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[UploadTaskSnapshot, stdLib.Error],
     error: js.Function1[/* a */ stdLib.Error, _]
   ): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[UploadTaskSnapshot, stdLib.Error],
     error: js.Function1[/* a */ stdLib.Error, _],
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[_, stdLib.Error],
+    nextOrObserver: firebaseLib.firebaseMod.firebaseNs.Observer[UploadTaskSnapshot, stdLib.Error],
     error: scala.Null,
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): js.Function = js.native
-  def on(event: TaskEvent, nextOrObserver: js.Function1[/* a */ js.Object, _]): js.Function = js.native
+  def on(event: TaskEvent, nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _]): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: js.Function1[/* a */ js.Object, _],
+    nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _],
     error: js.Function1[/* a */ stdLib.Error, _]
   ): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: js.Function1[/* a */ js.Object, _],
+    nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _],
     error: js.Function1[/* a */ stdLib.Error, _],
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): js.Function = js.native
   def on(
     event: TaskEvent,
-    nextOrObserver: js.Function1[/* a */ js.Object, _],
+    nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _],
     error: scala.Null,
     complete: firebaseLib.firebaseMod.firebaseNs.Unsubscribe
   ): js.Function = js.native

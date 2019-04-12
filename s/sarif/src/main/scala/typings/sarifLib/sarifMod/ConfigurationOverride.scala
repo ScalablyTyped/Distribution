@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait ConfigurationOverride extends js.Object {
   /**
-    * Specifies how the report was configured during the scan.
+    * Specifies how the rule or notification was configured during the scan.
     */
   var configuration: ReportingConfiguration
   /**
-    * A reference used to locate the descriptor relevant to this configuration override.
+    * A reference used to locate the descriptor whose configuration was overridden.
     */
   var descriptor: ReportingDescriptorReference
   /**
-    * Key/value pairs that provide additional information about the reporting configuration.
+    * Key/value pairs that provide additional information about the configuration override.
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-auth-library"
-version := "3.1.2-2d4261"
+version := "3.1.2-4fee2a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,16 +10,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-a816e1",
   "org.scalablytyped" %%% "event-target-shim" % "5.0.1-4b0f6d",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-ef9ad3",
-  "org.scalablytyped" %%% "gaxios" % "1.8.3-88ca1f",
-  "org.scalablytyped" %%% "gcp-metadata" % "1.0.0-812ffe",
-  "org.scalablytyped" %%% "google-p12-pem" % "1.0.4-01fb1b",
-  "org.scalablytyped" %%% "gtoken" % "2.3.3-41c191",
-  "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-23cfbb",
+  "org.scalablytyped" %%% "gaxios" % "1.8.3-ab174c",
+  "org.scalablytyped" %%% "gcp-metadata" % "1.0.0-e90a5a",
+  "org.scalablytyped" %%% "google-p12-pem" % "1.0.4-6563ed",
+  "org.scalablytyped" %%% "gtoken" % "2.3.3-aee04f",
+  "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-a8e5fd",
   "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-34c823",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-2631f3",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
-  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190403Z-4a9793",
-  "org.scalablytyped" %%% "node-forge" % "0.8.1-dt-20190326Z-bb55b9",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
+  "org.scalablytyped" %%% "node-fetch" % "2.3-dt-20190411Z-5a2eed",
+  "org.scalablytyped" %%% "node-forge" % "0.8.1-dt-20190326Z-39c0a8",
   "org.scalablytyped" %%% "pify" % "3.0.0-dt-20190322Z-6f182f",
   "org.scalablytyped" %%% "semver" % "6.0-dt-20190330Z-1b8b1f",
   "org.scalablytyped" %%% "std" % "3.4-d52857")

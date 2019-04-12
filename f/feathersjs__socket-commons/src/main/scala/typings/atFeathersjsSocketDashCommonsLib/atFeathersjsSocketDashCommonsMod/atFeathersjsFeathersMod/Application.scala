@@ -12,7 +12,7 @@ trait Application[ServiceTypes] extends js.Object {
   def publish[T](
     callback: js.Function2[
       /* data */ T, 
-      /* hook */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.HookContext[T], 
+      /* hook */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.HookContext[T], 
       atFeathersjsSocketDashCommonsLib.atFeathersjsSocketDashCommonsMod.Channel | js.Array[atFeathersjsSocketDashCommonsLib.atFeathersjsSocketDashCommonsMod.Channel] | scala.Unit
     ]
   ): Application[ServiceTypes] = js.native
@@ -21,7 +21,7 @@ trait Application[ServiceTypes] extends js.Object {
     event: java.lang.String,
     callback: js.Function2[
       /* data */ T, 
-      /* hook */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.HookContext[T], 
+      /* hook */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.HookContext[T], 
       atFeathersjsSocketDashCommonsLib.atFeathersjsSocketDashCommonsMod.Channel | js.Array[atFeathersjsSocketDashCommonsLib.atFeathersjsSocketDashCommonsMod.Channel] | scala.Unit
     ]
   ): Application[ServiceTypes] = js.native

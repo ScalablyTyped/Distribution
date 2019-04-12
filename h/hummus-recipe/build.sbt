@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hummus-recipe"
-version := "1.8-dt-20190403Z-500dfb"
+version := "1.8-dt-20190404Z-131a13"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

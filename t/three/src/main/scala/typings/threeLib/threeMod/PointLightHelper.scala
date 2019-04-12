@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "PointLightHelper")
 @js.native
 class PointLightHelper protected ()
-  extends threeLib.threeDashCoreMod.PointLightHelper {
-  def this(light: threeLib.threeDashCoreMod.PointLight) = this()
-  def this(light: threeLib.threeDashCoreMod.PointLight, sphereSize: scala.Double) = this()
-  def this(light: threeLib.threeDashCoreMod.PointLight, sphereSize: scala.Double, color: java.lang.String) = this()
-  def this(light: threeLib.threeDashCoreMod.PointLight, sphereSize: scala.Double, color: scala.Double) = this()
-  def this(light: threeLib.threeDashCoreMod.PointLight, sphereSize: scala.Double, color: threeLib.threeDashCoreMod.Color) = this()
+  extends threeLib.srcHelpersPointLightHelperMod.PointLightHelper {
+  def this(light: threeLib.srcLightsPointLightMod.PointLight) = this()
+  def this(light: threeLib.srcLightsPointLightMod.PointLight, sphereSize: scala.Double) = this()
+  def this(light: threeLib.srcLightsPointLightMod.PointLight, sphereSize: scala.Double, color: java.lang.String) = this()
+  def this(light: threeLib.srcLightsPointLightMod.PointLight, sphereSize: scala.Double, color: scala.Double) = this()
+  def this(light: threeLib.srcLightsPointLightMod.PointLight, sphereSize: scala.Double, color: threeLib.srcMathColorMod.Color) = this()
 }
 

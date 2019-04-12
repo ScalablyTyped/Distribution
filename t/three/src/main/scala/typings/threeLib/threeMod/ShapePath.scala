@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "ShapePath")
 @js.native
 class ShapePath ()
-  extends threeLib.threeDashCoreMod.ShapePath
+  extends threeLib.srcExtrasCoreShapePathMod.ShapePath
 

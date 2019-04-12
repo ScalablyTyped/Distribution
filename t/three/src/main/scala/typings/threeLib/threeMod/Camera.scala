@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
   * This constructor sets following properties to the correct type: matrixWorldInverse, projectionMatrix and projectionMatrixInverse.
   */
 class Camera ()
-  extends threeLib.threeDashCoreMod.Camera
+  extends threeLib.srcCamerasCameraMod.Camera
 

@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AuthOptions extends js.Object {
+  var __tryLocalStorageFirst: js.UndefOr[scala.Boolean] = js.undefined
   var _disableDeprecationWarnings: js.UndefOr[scala.Boolean] = js.undefined
   var _sendTelemetry: js.UndefOr[scala.Boolean] = js.undefined
   var _telemetryInfo: js.UndefOr[js.Any] = js.undefined
@@ -25,6 +26,7 @@ object AuthOptions {
   def apply(
     clientID: java.lang.String,
     domain: java.lang.String,
+    __tryLocalStorageFirst: js.UndefOr[scala.Boolean] = js.undefined,
     _disableDeprecationWarnings: js.UndefOr[scala.Boolean] = js.undefined,
     _sendTelemetry: js.UndefOr[scala.Boolean] = js.undefined,
     _telemetryInfo: js.Any = null,
@@ -37,6 +39,7 @@ object AuthOptions {
     scope: java.lang.String = null
   ): AuthOptions = {
     val __obj = js.Dynamic.literal(clientID = clientID, domain = domain)
+    if (!js.isUndefined(__tryLocalStorageFirst)) __obj.updateDynamic("__tryLocalStorageFirst")(__tryLocalStorageFirst)
     if (!js.isUndefined(_disableDeprecationWarnings)) __obj.updateDynamic("_disableDeprecationWarnings")(_disableDeprecationWarnings)
     if (!js.isUndefined(_sendTelemetry)) __obj.updateDynamic("_sendTelemetry")(_sendTelemetry)
     if (_telemetryInfo != null) __obj.updateDynamic("_telemetryInfo")(_telemetryInfo)

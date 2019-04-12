@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val UINT32: UintConstructor[Uint] = js.native
-  val UINT64: UintConstructor[Uint] = js.native
+  val UINT64: Uint64Constructor[Uint] = js.native
 }
 

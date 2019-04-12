@@ -17,6 +17,7 @@ trait ReactPlayerProps
   var loop: js.UndefOr[scala.Boolean] = js.undefined
   var muted: js.UndefOr[scala.Boolean] = js.undefined
   var onBuffer: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onBufferEnd: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onDisablePIP: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onDuration: js.UndefOr[js.Function1[/* duration */ scala.Double, scala.Unit]] = js.undefined
   var onEnablePIP: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -58,6 +59,7 @@ object ReactPlayerProps {
     loop: js.UndefOr[scala.Boolean] = js.undefined,
     muted: js.UndefOr[scala.Boolean] = js.undefined,
     onBuffer: () => scala.Unit = null,
+    onBufferEnd: () => scala.Unit = null,
     onDisablePIP: () => scala.Unit = null,
     onDuration: /* duration */ scala.Double => scala.Unit = null,
     onEnablePIP: () => scala.Unit = null,
@@ -96,6 +98,7 @@ object ReactPlayerProps {
     if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
     if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
     if (onBuffer != null) __obj.updateDynamic("onBuffer")(js.Any.fromFunction0(onBuffer))
+    if (onBufferEnd != null) __obj.updateDynamic("onBufferEnd")(js.Any.fromFunction0(onBufferEnd))
     if (onDisablePIP != null) __obj.updateDynamic("onDisablePIP")(js.Any.fromFunction0(onDisablePIP))
     if (onDuration != null) __obj.updateDynamic("onDuration")(js.Any.fromFunction1(onDuration))
     if (onEnablePIP != null) __obj.updateDynamic("onEnablePIP")(js.Any.fromFunction0(onEnablePIP))

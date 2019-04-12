@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "DirectGeometry")
 @js.native
 class DirectGeometry ()
-  extends threeLib.threeDashCoreMod.DirectGeometry
+  extends threeLib.srcCoreDirectGeometryMod.DirectGeometry
 

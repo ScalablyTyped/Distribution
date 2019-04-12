@@ -49,6 +49,7 @@ trait Mode[T] extends js.Object {
     * String that starts a line comment.
     */
   var lineComment: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     * A function that produces a state object to be used at the start of a document.
     */
@@ -74,6 +75,7 @@ object Mode {
     electricinput: stdLib.RegExp = null,
     indent: (/* state */ T, /* textAfter */ java.lang.String) => scala.Double = null,
     lineComment: java.lang.String = null,
+    name: java.lang.String = null,
     startState: () => T = null,
     token: (/* stream */ StringStream, /* state */ T) => java.lang.String | scala.Null = null
   ): Mode[T] = {
@@ -87,6 +89,7 @@ object Mode {
     if (electricinput != null) __obj.updateDynamic("electricinput")(electricinput)
     if (indent != null) __obj.updateDynamic("indent")(js.Any.fromFunction2(indent))
     if (lineComment != null) __obj.updateDynamic("lineComment")(lineComment)
+    if (name != null) __obj.updateDynamic("name")(name)
     if (startState != null) __obj.updateDynamic("startState")(js.Any.fromFunction0(startState))
     if (token != null) __obj.updateDynamic("token")(js.Any.fromFunction2(token))
     __obj.asInstanceOf[Mode[T]]

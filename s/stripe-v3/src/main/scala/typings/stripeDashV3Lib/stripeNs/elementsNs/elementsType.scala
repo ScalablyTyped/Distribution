@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   - stripeDashV3Lib.stripeDashV3LibStrings.postalCode
   - stripeDashV3Lib.stripeDashV3LibStrings.paymentRequestButton
   - stripeDashV3Lib.stripeDashV3LibStrings.iban
+  - stripeDashV3Lib.stripeDashV3LibStrings.idealBank
 */
 trait elementsType extends js.Object
 

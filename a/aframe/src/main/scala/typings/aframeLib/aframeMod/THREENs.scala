@@ -21,6 +21,10 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.AnimationAction
   
   @js.native
+  class AnimationLoader ()
+    extends threeLib.threeMod.AnimationLoader
+  
+  @js.native
   class AnimationMixer protected ()
     extends threeLib.threeMod.AnimationMixer {
     def this(root: js.Any) = this()
@@ -45,13 +49,13 @@ object THREENs extends js.Object {
   @js.native
   class ArrowHelper protected ()
     extends threeLib.threeMod.ArrowHelper {
-    def this(dir: threeLib.threeDashCoreMod.Vector3) = this()
+    def this(dir: threeLib.srcMathVector3Mod.Vector3) = this()
   }
   
   @js.native
   class Audio protected ()
     extends threeLib.threeMod.Audio {
-    def this(listener: threeLib.threeDashCoreMod.AudioListener) = this()
+    def this(listener: threeLib.srcAudioAudioListenerMod.AudioListener) = this()
   }
   
   @js.native
@@ -79,10 +83,6 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.AxesHelper
   
   @js.native
-  class BinaryTextureLoader ()
-    extends threeLib.threeMod.BinaryTextureLoader
-  
-  @js.native
   class Bone ()
     extends threeLib.threeMod.Bone
   
@@ -93,16 +93,16 @@ object THREENs extends js.Object {
   }
   
   @js.native
-  class BoundingBoxHelper ()
-    extends threeLib.threeMod.BoundingBoxHelper
-  
-  @js.native
   class Box2 ()
     extends threeLib.threeMod.Box2
   
   @js.native
   class Box3 ()
     extends threeLib.threeMod.Box3
+  
+  @js.native
+  class Box3Helper ()
+    extends threeLib.threeMod.Box3Helper
   
   @js.native
   class BoxBufferGeometry protected ()
@@ -139,26 +139,6 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.BufferGeometryLoader
   
   @js.native
-  class CSS3DObject protected ()
-    extends threeLib.threeMod.CSS3DObject {
-    def this(element: js.Any) = this()
-  }
-  
-  @js.native
-  class CSS3DRenderer ()
-    extends threeLib.threeMod.CSS3DRenderer
-  
-  @js.native
-  class CSS3DSprite protected ()
-    extends threeLib.threeMod.CSS3DSprite {
-    def this(element: js.Any) = this()
-  }
-  
-  @js.native
-  class CTMLoader ()
-    extends threeLib.threeMod.CTMLoader
-  
-  @js.native
   /**
     * This constructor sets following properties to the correct type: matrixWorldInverse, projectionMatrix and projectionMatrixInverse.
     */
@@ -168,17 +148,13 @@ object THREENs extends js.Object {
   @js.native
   class CameraHelper protected ()
     extends threeLib.threeMod.CameraHelper {
-    def this(camera: threeLib.threeDashCoreMod.Camera) = this()
+    def this(camera: threeLib.srcCamerasCameraMod.Camera) = this()
   }
-  
-  @js.native
-  class CanvasRenderer ()
-    extends threeLib.threeMod.CanvasRenderer
   
   @js.native
   class CanvasTexture protected ()
     extends threeLib.threeMod.CanvasTexture {
-    def this(canvas: stdLib.HTMLImageElement, mapping: js.UndefOr[threeLib.threeDashCoreMod.Mapping], wrapS: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], wrapT: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], magFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], minFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], format: js.UndefOr[threeLib.threeDashCoreMod.PixelFormat], `type`: js.UndefOr[threeLib.threeDashCoreMod.TextureDataType], anisotropy: js.UndefOr[scala.Double]) = this()
+    def this(canvas: stdLib.HTMLImageElement, mapping: js.UndefOr[threeLib.srcConstantsMod.Mapping], wrapS: js.UndefOr[threeLib.srcConstantsMod.Wrapping], wrapT: js.UndefOr[threeLib.srcConstantsMod.Wrapping], magFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], minFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], format: js.UndefOr[threeLib.srcConstantsMod.PixelFormat], `type`: js.UndefOr[threeLib.srcConstantsMod.TextureDataType], anisotropy: js.UndefOr[scala.Double]) = this()
   }
   
   @js.native
@@ -194,23 +170,11 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.CircleGeometry
   
   @js.native
-  class ClearMaskPass ()
-    extends threeLib.threeMod.ClearMaskPass
-  
-  @js.native
   /**
     * @param autoStart Automatically start the clock.
     */
   class Clock ()
     extends threeLib.threeMod.Clock
-  
-  @js.native
-  class ColladaLoader ()
-    extends threeLib.threeMod.ColladaLoader
-  
-  @js.native
-  class ColladaModel ()
-    extends threeLib.threeMod.ColladaModel
   
   @js.native
   class Color ()
@@ -225,7 +189,7 @@ object THREENs extends js.Object {
   @js.native
   class CompressedTexture protected ()
     extends threeLib.threeMod.CompressedTexture {
-    def this(mipmaps: js.Array[stdLib.ImageData], width: scala.Double, height: scala.Double, format: js.UndefOr[threeLib.threeDashCoreMod.PixelFormat], `type`: js.UndefOr[threeLib.threeDashCoreMod.TextureDataType], mapping: js.UndefOr[threeLib.threeDashCoreMod.Mapping], wrapS: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], wrapT: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], magFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], minFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], anisotropy: js.UndefOr[scala.Double], encoding: js.UndefOr[threeLib.threeDashCoreMod.TextureEncoding]) = this()
+    def this(mipmaps: js.Array[stdLib.ImageData], width: scala.Double, height: scala.Double, format: js.UndefOr[threeLib.srcConstantsMod.PixelFormat], `type`: js.UndefOr[threeLib.srcConstantsMod.TextureDataType], mapping: js.UndefOr[threeLib.srcConstantsMod.Mapping], wrapS: js.UndefOr[threeLib.srcConstantsMod.Wrapping], wrapT: js.UndefOr[threeLib.srcConstantsMod.Wrapping], magFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], minFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], anisotropy: js.UndefOr[scala.Double], encoding: js.UndefOr[threeLib.srcConstantsMod.TextureEncoding]) = this()
   }
   
   @js.native
@@ -249,14 +213,10 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.CubeCamera
   
   @js.native
-  class CubeGeometry ()
-    extends threeLib.threeMod.CubeGeometry
-  
-  @js.native
   class CubeTexture protected ()
     extends threeLib.threeMod.CubeTexture {
     def this( // HTMLImageElement or HTMLCanvasElement
-    images: js.UndefOr[js.Array[_]], mapping: js.UndefOr[threeLib.threeDashCoreMod.Mapping], wrapS: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], wrapT: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], magFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], minFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], format: js.UndefOr[threeLib.threeDashCoreMod.PixelFormat], `type`: js.UndefOr[threeLib.threeDashCoreMod.TextureDataType], anisotropy: js.UndefOr[scala.Double], encoding: js.UndefOr[threeLib.threeDashCoreMod.TextureEncoding]) = this()
+    images: js.UndefOr[js.Array[_]], mapping: js.UndefOr[threeLib.srcConstantsMod.Mapping], wrapS: js.UndefOr[threeLib.srcConstantsMod.Wrapping], wrapT: js.UndefOr[threeLib.srcConstantsMod.Wrapping], magFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], minFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], format: js.UndefOr[threeLib.srcConstantsMod.PixelFormat], `type`: js.UndefOr[threeLib.srcConstantsMod.TextureDataType], anisotropy: js.UndefOr[scala.Double], encoding: js.UndefOr[threeLib.srcConstantsMod.TextureEncoding]) = this()
   }
   
   @js.native
@@ -266,13 +226,13 @@ object THREENs extends js.Object {
   @js.native
   class CubicBezierCurve protected ()
     extends threeLib.threeMod.CubicBezierCurve {
-    def this(v0: threeLib.threeDashCoreMod.Vector2, v1: threeLib.threeDashCoreMod.Vector2, v2: threeLib.threeDashCoreMod.Vector2, v3: threeLib.threeDashCoreMod.Vector2) = this()
+    def this(v0: threeLib.srcMathVector2Mod.Vector2, v1: threeLib.srcMathVector2Mod.Vector2, v2: threeLib.srcMathVector2Mod.Vector2, v3: threeLib.srcMathVector2Mod.Vector2) = this()
   }
   
   @js.native
   class CubicBezierCurve3 protected ()
     extends threeLib.threeMod.CubicBezierCurve3 {
-    def this(v0: threeLib.threeDashCoreMod.Vector3, v1: threeLib.threeDashCoreMod.Vector3, v2: threeLib.threeDashCoreMod.Vector3, v3: threeLib.threeDashCoreMod.Vector3) = this()
+    def this(v0: threeLib.srcMathVector3Mod.Vector3, v1: threeLib.srcMathVector3Mod.Vector3, v2: threeLib.srcMathVector3Mod.Vector3, v3: threeLib.srcMathVector3Mod.Vector3) = this()
   }
   
   @js.native
@@ -282,7 +242,7 @@ object THREENs extends js.Object {
   }
   
   @js.native
-  class CurvePath[T /* <: threeLib.threeDashCoreMod.Vector */] ()
+  class CurvePath[T /* <: threeLib.srcMathVector2Mod.Vector */] ()
     extends threeLib.threeMod.CurvePath[T]
   
   @js.native
@@ -310,13 +270,15 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.Cylindrical
   
   @js.native
-  class DDSLoader ()
-    extends threeLib.threeMod.DDSLoader
-  
-  @js.native
   class DataTexture protected ()
     extends threeLib.threeMod.DataTexture {
-    def this(data: stdLib.ArrayBuffer, width: scala.Double, height: scala.Double, format: js.UndefOr[threeLib.threeDashCoreMod.PixelFormat], `type`: js.UndefOr[threeLib.threeDashCoreMod.TextureDataType], mapping: js.UndefOr[threeLib.threeDashCoreMod.Mapping], wrapS: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], wrapT: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], magFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], minFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], anisotropy: js.UndefOr[scala.Double], encoding: js.UndefOr[threeLib.threeDashCoreMod.TextureEncoding]) = this()
+    def this(data: stdLib.ArrayBuffer, width: scala.Double, height: scala.Double, format: js.UndefOr[threeLib.srcConstantsMod.PixelFormat], `type`: js.UndefOr[threeLib.srcConstantsMod.TextureDataType], mapping: js.UndefOr[threeLib.srcConstantsMod.Mapping], wrapS: js.UndefOr[threeLib.srcConstantsMod.Wrapping], wrapT: js.UndefOr[threeLib.srcConstantsMod.Wrapping], magFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], minFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], anisotropy: js.UndefOr[scala.Double], encoding: js.UndefOr[threeLib.srcConstantsMod.TextureEncoding]) = this()
+  }
+  
+  @js.native
+  class DataTexture3D protected ()
+    extends threeLib.threeMod.DataTexture3D {
+    def this(data: stdLib.ArrayBuffer, width: scala.Double, height: scala.Double, depth: scala.Double) = this()
   }
   
   @js.native
@@ -326,7 +288,7 @@ object THREENs extends js.Object {
   @js.native
   class DepthTexture protected ()
     extends threeLib.threeMod.DepthTexture {
-    def this(width: scala.Double, heighht: scala.Double, `type`: js.UndefOr[threeLib.threeDashCoreMod.TextureDataType], mapping: js.UndefOr[threeLib.threeDashCoreMod.Mapping], wrapS: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], wrapT: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], magFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], minFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], anisotropy: js.UndefOr[scala.Double]) = this()
+    def this(width: scala.Double, heighht: scala.Double, `type`: js.UndefOr[threeLib.srcConstantsMod.TextureDataType], mapping: js.UndefOr[threeLib.srcConstantsMod.Mapping], wrapS: js.UndefOr[threeLib.srcConstantsMod.Wrapping], wrapT: js.UndefOr[threeLib.srcConstantsMod.Wrapping], magFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], minFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], anisotropy: js.UndefOr[scala.Double]) = this()
   }
   
   @js.native
@@ -340,7 +302,7 @@ object THREENs extends js.Object {
   @js.native
   class DirectionalLightHelper protected ()
     extends threeLib.threeMod.DirectionalLightHelper {
-    def this(light: threeLib.threeDashCoreMod.DirectionalLight) = this()
+    def this(light: threeLib.srcLightsDirectionalLightMod.DirectionalLight) = this()
   }
   
   @js.native
@@ -362,37 +324,9 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.DodecahedronGeometry
   
   @js.native
-  class DragControls protected ()
-    extends threeLib.threeMod.DragControls {
-    def this(objects: js.Array[threeLib.threeDashCoreMod.Object3D], camera: threeLib.threeDashCoreMod.Camera) = this()
-  }
-  
-  @js.native
-  class DynamicBufferAttribute ()
-    extends threeLib.threeMod.DynamicBufferAttribute
-  
-  @js.native
   class EdgesGeometry protected ()
     extends threeLib.threeMod.EdgesGeometry {
-    def this(geometry: threeLib.threeDashCoreMod.BufferGeometry) = this()
-  }
-  
-  @js.native
-  class EdgesHelper protected ()
-    extends threeLib.threeMod.EdgesHelper {
-    def this(`object`: threeLib.threeDashCoreMod.Object3D) = this()
-  }
-  
-  @js.native
-  class EditorControls protected ()
-    extends threeLib.threeMod.EditorControls {
-    def this(`object`: threeLib.threeDashCoreMod.Camera) = this()
-  }
-  
-  @js.native
-  class EffectComposer protected ()
-    extends threeLib.threeMod.EffectComposer {
-    def this(renderer: threeLib.threeDashCoreMod.WebGLRenderer) = this()
+    def this(geometry: threeLib.srcCoreBufferGeometryMod.BufferGeometry) = this()
   }
   
   @js.native
@@ -409,10 +343,6 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.EventDispatcher
   
   @js.native
-  class FBXLoader ()
-    extends threeLib.threeMod.FBXLoader
-  
-  @js.native
   class Face3 protected ()
     extends threeLib.threeMod.Face3 {
     /**
@@ -427,28 +357,14 @@ object THREENs extends js.Object {
   }
   
   @js.native
-  class Face4 ()
-    extends threeLib.threeMod.Face4
-  
-  @js.native
   class FaceNormalsHelper protected ()
     extends threeLib.threeMod.FaceNormalsHelper {
-    def this(`object`: threeLib.threeDashCoreMod.Object3D) = this()
+    def this(`object`: threeLib.srcCoreObject3DMod.Object3D) = this()
   }
   
   @js.native
   class FileLoader ()
     extends threeLib.threeMod.FileLoader
-  
-  @js.native
-  class FilmPass ()
-    extends threeLib.threeMod.FilmPass
-  
-  @js.native
-  class FirstPersonControls protected ()
-    extends threeLib.threeMod.FirstPersonControls {
-    def this(`object`: threeLib.threeDashCoreMod.Camera) = this()
-  }
   
   @js.native
   class Float32Attribute protected ()
@@ -499,20 +415,8 @@ object THREENs extends js.Object {
   @js.native
   class Frustum protected ()
     extends threeLib.threeMod.Frustum {
-    def this(p0: js.UndefOr[threeLib.threeDashCoreMod.Plane], p1: js.UndefOr[threeLib.threeDashCoreMod.Plane], p2: js.UndefOr[threeLib.threeDashCoreMod.Plane], p3: js.UndefOr[threeLib.threeDashCoreMod.Plane], p4: js.UndefOr[threeLib.threeDashCoreMod.Plane], p5: js.UndefOr[threeLib.threeDashCoreMod.Plane]) = this()
+    def this(p0: js.UndefOr[threeLib.srcMathPlaneMod.Plane], p1: js.UndefOr[threeLib.srcMathPlaneMod.Plane], p2: js.UndefOr[threeLib.srcMathPlaneMod.Plane], p3: js.UndefOr[threeLib.srcMathPlaneMod.Plane], p4: js.UndefOr[threeLib.srcMathPlaneMod.Plane], p5: js.UndefOr[threeLib.srcMathPlaneMod.Plane]) = this()
   }
-  
-  @js.native
-  class GLTF ()
-    extends threeLib.threeMod.GLTF
-  
-  @js.native
-  class GLTFExporter ()
-    extends threeLib.threeMod.GLTFExporter
-  
-  @js.native
-  class GLTFLoader ()
-    extends threeLib.threeMod.GLTFLoader
   
   @js.native
   class Geometry ()
@@ -535,7 +439,7 @@ object THREENs extends js.Object {
   @js.native
   class HemisphereLightHelper protected ()
     extends threeLib.threeMod.HemisphereLightHelper {
-    def this(light: threeLib.threeDashCoreMod.HemisphereLight, size: scala.Double) = this()
+    def this(light: threeLib.srcLightsHemisphereLightMod.HemisphereLight, size: scala.Double) = this()
   }
   
   @js.native
@@ -547,13 +451,17 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.IcosahedronGeometry
   
   @js.native
+  class ImageBitmapLoader ()
+    extends threeLib.threeMod.ImageBitmapLoader
+  
+  @js.native
   class ImageLoader ()
     extends threeLib.threeMod.ImageLoader
   
   @js.native
   class ImmediateRenderObject protected ()
     extends threeLib.threeMod.ImmediateRenderObject {
-    def this(material: threeLib.threeDashCoreMod.Material) = this()
+    def this(material: threeLib.srcMaterialsMaterialMod.Material) = this()
   }
   
   @js.native
@@ -617,7 +525,7 @@ object THREENs extends js.Object {
   @js.native
   class InterleavedBufferAttribute protected ()
     extends threeLib.threeMod.InterleavedBufferAttribute {
-    def this(interleavedBuffer: threeLib.threeDashCoreMod.InterleavedBuffer, itemSize: scala.Double, offset: scala.Double) = this()
+    def this(interleavedBuffer: threeLib.srcCoreInterleavedBufferMod.InterleavedBuffer, itemSize: scala.Double, offset: scala.Double) = this()
   }
   
   @js.native
@@ -637,22 +545,18 @@ object THREENs extends js.Object {
   @js.native
   class LatheBufferGeometry protected ()
     extends threeLib.threeMod.LatheBufferGeometry {
-    def this(points: js.Array[threeLib.threeDashCoreMod.Vector2]) = this()
+    def this(points: js.Array[threeLib.srcMathVector2Mod.Vector2]) = this()
   }
   
   @js.native
   class LatheGeometry protected ()
     extends threeLib.threeMod.LatheGeometry {
-    def this(points: js.Array[threeLib.threeDashCoreMod.Vector2]) = this()
+    def this(points: js.Array[threeLib.srcMathVector2Mod.Vector2]) = this()
   }
   
   @js.native
   class Layers ()
     extends threeLib.threeMod.Layers
-  
-  @js.native
-  class LensFlare ()
-    extends threeLib.threeMod.LensFlare
   
   @js.native
   class Light ()
@@ -661,7 +565,7 @@ object THREENs extends js.Object {
   @js.native
   class LightShadow protected ()
     extends threeLib.threeMod.LightShadow {
-    def this(camera: threeLib.threeDashCoreMod.Camera) = this()
+    def this(camera: threeLib.srcCamerasCameraMod.Camera) = this()
   }
   
   @js.native
@@ -679,13 +583,13 @@ object THREENs extends js.Object {
   @js.native
   class LineCurve protected ()
     extends threeLib.threeMod.LineCurve {
-    def this(v1: threeLib.threeDashCoreMod.Vector2, v2: threeLib.threeDashCoreMod.Vector2) = this()
+    def this(v1: threeLib.srcMathVector2Mod.Vector2, v2: threeLib.srcMathVector2Mod.Vector2) = this()
   }
   
   @js.native
   class LineCurve3 protected ()
     extends threeLib.threeMod.LineCurve3 {
-    def this(v1: threeLib.threeDashCoreMod.Vector3, v2: threeLib.threeDashCoreMod.Vector3) = this()
+    def this(v1: threeLib.srcMathVector3Mod.Vector3, v2: threeLib.srcMathVector3Mod.Vector3) = this()
   }
   
   @js.native
@@ -711,34 +615,8 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.LoadingManager
   
   @js.native
-  class Lut protected ()
-    extends threeLib.threeMod.Lut {
-    def this(colormap: threeLib.threeDashLutMod.ColorMapKeyword, numberofcolors: scala.Double) = this()
-  }
-  
-  @js.native
-  class MTLLoader ()
-    extends threeLib.threeMod.MTLLoader
-  
-  @js.native
-  class MapControls protected ()
-    extends threeLib.threeMod.MapControls {
-    def this(`object`: threeLib.threeDashCoreMod.Camera) = this()
-  }
-  
-  @js.native
-  class MaskPass protected ()
-    extends threeLib.threeMod.MaskPass {
-    def this(scene: threeLib.threeDashCoreMod.Scene, camera: threeLib.threeDashCoreMod.Camera) = this()
-  }
-  
-  @js.native
   class Material ()
     extends threeLib.threeMod.Material
-  
-  @js.native
-  class MaterialCreator ()
-    extends threeLib.threeMod.MaterialCreator
   
   @js.native
   class MaterialLoader ()
@@ -768,10 +646,6 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.MeshDepthMaterial
   
   @js.native
-  class MeshFaceMaterial ()
-    extends threeLib.threeMod.MeshFaceMaterial
-  
-  @js.native
   class MeshLambertMaterial ()
     extends threeLib.threeMod.MeshLambertMaterial
   
@@ -786,18 +660,12 @@ object THREENs extends js.Object {
   @js.native
   class MeshPhysicalMaterial protected ()
     extends threeLib.threeMod.MeshPhysicalMaterial {
-    def this(parameters: threeLib.threeDashCoreMod.MeshPhysicalMaterialParameters) = this()
+    def this(parameters: threeLib.srcMaterialsMeshPhysicalMaterialMod.MeshPhysicalMaterialParameters) = this()
   }
   
   @js.native
   class MeshStandardMaterial ()
     extends threeLib.threeMod.MeshStandardMaterial
-  
-  @js.native
-  class MorphBlendMesh protected ()
-    extends threeLib.threeMod.MorphBlendMesh {
-    def this(geometry: threeLib.threeDashCoreMod.Geometry, material: threeLib.threeDashCoreMod.Material) = this()
-  }
   
   @js.native
   class MultiMaterial ()
@@ -810,10 +678,6 @@ object THREENs extends js.Object {
   }
   
   @js.native
-  class OBJLoader ()
-    extends threeLib.threeMod.OBJLoader
-  
-  @js.native
   class ObjectLoader ()
     extends threeLib.threeMod.ObjectLoader
   
@@ -824,16 +688,6 @@ object THREENs extends js.Object {
   @js.native
   class OctahedronGeometry ()
     extends threeLib.threeMod.OctahedronGeometry
-  
-  @js.native
-  class Octree ()
-    extends threeLib.threeMod.Octree
-  
-  @js.native
-  class OrbitControls protected ()
-    extends threeLib.threeMod.OrbitControls {
-    def this(`object`: threeLib.threeDashCoreMod.Camera) = this()
-  }
   
   @js.native
   class OrthographicCamera protected ()
@@ -850,18 +704,12 @@ object THREENs extends js.Object {
   }
   
   @js.native
-  class OrthographicTrackballControls protected ()
-    extends threeLib.threeMod.OrthographicTrackballControls {
-    def this(`object`: threeLib.threeDashCoreMod.Camera) = this()
-  }
-  
-  @js.native
   class ParametricBufferGeometry protected ()
     extends threeLib.threeMod.ParametricBufferGeometry {
     def this(func: js.Function3[
           /* u */ scala.Double, 
           /* v */ scala.Double, 
-          /* dest */ threeLib.threeDashCoreMod.Vector3, 
+          /* dest */ threeLib.srcMathVector3Mod.Vector3, 
           scala.Unit
         ], slices: scala.Double, stacks: scala.Double) = this()
   }
@@ -872,30 +720,10 @@ object THREENs extends js.Object {
     def this(func: js.Function3[
           /* u */ scala.Double, 
           /* v */ scala.Double, 
-          /* dest */ threeLib.threeDashCoreMod.Vector3, 
+          /* dest */ threeLib.srcMathVector3Mod.Vector3, 
           scala.Unit
         ], slices: scala.Double, stacks: scala.Double) = this()
   }
-  
-  @js.native
-  class Particle ()
-    extends threeLib.threeMod.Particle
-  
-  @js.native
-  class ParticleBasicMaterial ()
-    extends threeLib.threeMod.ParticleBasicMaterial
-  
-  @js.native
-  class ParticleSystem ()
-    extends threeLib.threeMod.ParticleSystem
-  
-  @js.native
-  class ParticleSystemMaterial ()
-    extends threeLib.threeMod.ParticleSystemMaterial
-  
-  @js.native
-  class Pass ()
-    extends threeLib.threeMod.Pass
   
   @js.native
   class Path ()
@@ -926,16 +754,8 @@ object THREENs extends js.Object {
   @js.native
   class PlaneHelper protected ()
     extends threeLib.threeMod.PlaneHelper {
-    def this(plane: threeLib.threeDashCoreMod.Plane) = this()
+    def this(plane: threeLib.srcMathPlaneMod.Plane) = this()
   }
-  
-  @js.native
-  class PointCloud ()
-    extends threeLib.threeMod.PointCloud
-  
-  @js.native
-  class PointCloudMaterial ()
-    extends threeLib.threeMod.PointCloudMaterial
   
   @js.native
   class PointLight ()
@@ -944,7 +764,7 @@ object THREENs extends js.Object {
   @js.native
   class PointLightHelper protected ()
     extends threeLib.threeMod.PointLightHelper {
-    def this(light: threeLib.threeDashCoreMod.PointLight) = this()
+    def this(light: threeLib.srcLightsPointLightMod.PointLight) = this()
   }
   
   @js.native
@@ -964,6 +784,12 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.PointsMaterial
   
   @js.native
+  class PolarGridHelper protected ()
+    extends threeLib.threeMod.PolarGridHelper {
+    def this(radius: scala.Double, radials: scala.Double, circles: scala.Double, divisions: scala.Double, color1: threeLib.srcMathColorMod.Color, color2: threeLib.srcMathColorMod.Color) = this()
+  }
+  
+  @js.native
   class PolyhedronBufferGeometry protected ()
     extends threeLib.threeMod.PolyhedronBufferGeometry {
     def this(vertices: js.Array[scala.Double], indices: js.Array[scala.Double]) = this()
@@ -978,12 +804,14 @@ object THREENs extends js.Object {
   @js.native
   class PositionalAudio protected ()
     extends threeLib.threeMod.PositionalAudio {
-    def this(listener: threeLib.threeDashCoreMod.AudioListener) = this()
+    def this(listener: threeLib.srcAudioAudioListenerMod.AudioListener) = this()
   }
   
   @js.native
-  class Projector ()
-    extends threeLib.threeMod.Projector
+  class PositionalAudioHelper protected ()
+    extends threeLib.threeMod.PositionalAudioHelper {
+    def this(audio: threeLib.srcAudioPositionalAudioMod.PositionalAudio) = this()
+  }
   
   @js.native
   class PropertyMixer protected ()
@@ -994,13 +822,13 @@ object THREENs extends js.Object {
   @js.native
   class QuadraticBezierCurve protected ()
     extends threeLib.threeMod.QuadraticBezierCurve {
-    def this(v0: threeLib.threeDashCoreMod.Vector2, v1: threeLib.threeDashCoreMod.Vector2, v2: threeLib.threeDashCoreMod.Vector2) = this()
+    def this(v0: threeLib.srcMathVector2Mod.Vector2, v1: threeLib.srcMathVector2Mod.Vector2, v2: threeLib.srcMathVector2Mod.Vector2) = this()
   }
   
   @js.native
   class QuadraticBezierCurve3 protected ()
     extends threeLib.threeMod.QuadraticBezierCurve3 {
-    def this(v0: threeLib.threeDashCoreMod.Vector3, v1: threeLib.threeDashCoreMod.Vector3, v2: threeLib.threeDashCoreMod.Vector3) = this()
+    def this(v0: threeLib.srcMathVector3Mod.Vector3, v1: threeLib.srcMathVector3Mod.Vector3, v2: threeLib.srcMathVector3Mod.Vector3) = this()
   }
   
   @js.native
@@ -1035,30 +863,14 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.Raycaster
   
   @js.native
-  class RenderPass protected ()
-    extends threeLib.threeMod.RenderPass {
-    def this(scene: threeLib.threeDashCoreMod.Scene, camera: threeLib.threeDashCoreMod.Camera) = this()
+  class RectAreaLight ()
+    extends threeLib.threeMod.RectAreaLight
+  
+  @js.native
+  class RectAreaLightHelper protected ()
+    extends threeLib.threeMod.RectAreaLightHelper {
+    def this(light: threeLib.srcLightsRectAreaLightMod.RectAreaLight) = this()
   }
-  
-  @js.native
-  class RenderableFace ()
-    extends threeLib.threeMod.RenderableFace
-  
-  @js.native
-  class RenderableLine ()
-    extends threeLib.threeMod.RenderableLine
-  
-  @js.native
-  class RenderableObject ()
-    extends threeLib.threeMod.RenderableObject
-  
-  @js.native
-  class RenderableSprite ()
-    extends threeLib.threeMod.RenderableSprite
-  
-  @js.native
-  class RenderableVertex ()
-    extends threeLib.threeMod.RenderableVertex
   
   @js.native
   class RingBufferGeometry protected ()
@@ -1073,24 +885,12 @@ object THREENs extends js.Object {
   }
   
   @js.native
-  class SMAAPass protected ()
-    extends threeLib.threeMod.SMAAPass {
-    def this(width: scala.Double, height: scala.Double) = this()
-  }
-  
-  @js.native
   class Scene ()
     extends threeLib.threeMod.Scene
   
   @js.native
   class ShaderMaterial ()
     extends threeLib.threeMod.ShaderMaterial
-  
-  @js.native
-  class ShaderPass protected ()
-    extends threeLib.threeMod.ShaderPass {
-    def this(shader: threeLib.threeDashCoreMod.Shader) = this()
-  }
   
   @js.native
   class ShadowMaterial ()
@@ -1103,13 +903,13 @@ object THREENs extends js.Object {
   @js.native
   class ShapeBufferGeometry protected ()
     extends threeLib.threeMod.ShapeBufferGeometry {
-    def this(shapes: threeLib.threeDashCoreMod.Shape) = this()
+    def this(shapes: threeLib.srcExtrasCoreShapeMod.Shape) = this()
   }
   
   @js.native
   class ShapeGeometry protected ()
     extends threeLib.threeMod.ShapeGeometry {
-    def this(shapes: threeLib.threeDashCoreMod.Shape) = this()
+    def this(shapes: threeLib.srcExtrasCoreShapeMod.Shape) = this()
   }
   
   @js.native
@@ -1119,13 +919,13 @@ object THREENs extends js.Object {
   @js.native
   class Skeleton protected ()
     extends threeLib.threeMod.Skeleton {
-    def this(bones: js.Array[threeLib.threeDashCoreMod.Bone]) = this()
+    def this(bones: js.Array[threeLib.srcObjectsBoneMod.Bone]) = this()
   }
   
   @js.native
   class SkeletonHelper protected ()
     extends threeLib.threeMod.SkeletonHelper {
-    def this(bone: threeLib.threeDashCoreMod.Object3D) = this()
+    def this(bone: threeLib.srcCoreObject3DMod.Object3D) = this()
   }
   
   @js.native
@@ -1170,13 +970,13 @@ object THREENs extends js.Object {
   @js.native
   class SpotLight protected ()
     extends threeLib.threeMod.SpotLight {
-    def this(color: js.UndefOr[threeLib.threeDashCoreMod.Color], intensity: js.UndefOr[scala.Double], distance: js.UndefOr[scala.Double], angle: js.UndefOr[scala.Double], exponent: js.UndefOr[scala.Double], decay: js.UndefOr[scala.Double]) = this()
+    def this(color: js.UndefOr[threeLib.srcMathColorMod.Color], intensity: js.UndefOr[scala.Double], distance: js.UndefOr[scala.Double], angle: js.UndefOr[scala.Double], exponent: js.UndefOr[scala.Double], decay: js.UndefOr[scala.Double]) = this()
   }
   
   @js.native
   class SpotLightHelper protected ()
     extends threeLib.threeMod.SpotLightHelper {
-    def this(light: threeLib.threeDashCoreMod.Light) = this()
+    def this(light: threeLib.srcLightsLightMod.Light) = this()
   }
   
   @js.native
@@ -1188,18 +988,8 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.Sprite
   
   @js.native
-  class SpriteCanvasMaterial ()
-    extends threeLib.threeMod.SpriteCanvasMaterial
-  
-  @js.native
   class SpriteMaterial ()
     extends threeLib.threeMod.SpriteMaterial
-  
-  @js.native
-  class SpritePlugin protected ()
-    extends threeLib.threeMod.SpritePlugin {
-    def this(renderer: threeLib.threeDashCoreMod.WebGLRenderer, sprites: js.Array[_]) = this()
-  }
   
   @js.native
   class StereoCamera ()
@@ -1210,16 +1000,6 @@ object THREENs extends js.Object {
     extends threeLib.threeMod.StringKeyframeTrack {
     def this(name: java.lang.String, times: js.Array[_], values: js.Array[_]) = this()
   }
-  
-  @js.native
-  class TDSLoader protected ()
-    extends threeLib.threeMod.TDSLoader {
-    def this(three: threeLib.Anon_AAClockwise) = this()
-  }
-  
-  @js.native
-  class TGALoader ()
-    extends threeLib.threeMod.TGALoader
   
   @js.native
   class TetrahedronBufferGeometry ()
@@ -1266,27 +1046,15 @@ object THREENs extends js.Object {
   }
   
   @js.native
-  class TrackballControls protected ()
-    extends threeLib.threeMod.TrackballControls {
-    def this(`object`: threeLib.threeDashCoreMod.Camera) = this()
-  }
-  
-  @js.native
-  class TransformControls protected ()
-    extends threeLib.threeMod.TransformControls {
-    def this(`object`: threeLib.threeDashCoreMod.Camera) = this()
-  }
-  
-  @js.native
   class TubeBufferGeometry protected ()
     extends threeLib.threeMod.TubeBufferGeometry {
-    def this(path: threeLib.threeDashCoreMod.Curve[threeLib.threeDashCoreMod.Vector3]) = this()
+    def this(path: threeLib.srcExtrasCoreCurveMod.Curve[threeLib.srcMathVector3Mod.Vector3]) = this()
   }
   
   @js.native
   class TubeGeometry protected ()
     extends threeLib.threeMod.TubeGeometry {
-    def this(path: threeLib.threeDashCoreMod.Curve[threeLib.threeDashCoreMod.Vector3]) = this()
+    def this(path: threeLib.srcExtrasCoreCurveMod.Curve[threeLib.srcMathVector3Mod.Vector3]) = this()
   }
   
   @js.native
@@ -1344,18 +1112,6 @@ object THREENs extends js.Object {
   }
   
   @js.native
-  class VRControls protected ()
-    extends threeLib.threeMod.VRControls {
-    def this(camera: threeLib.threeDashCoreMod.Camera) = this()
-  }
-  
-  @js.native
-  class VREffect protected ()
-    extends threeLib.threeMod.VREffect {
-    def this(renderer: threeLib.threeDashCoreMod.Renderer) = this()
-  }
-  
-  @js.native
   class Vector2 ()
     extends threeLib.threeMod.Vector2
   
@@ -1374,19 +1130,15 @@ object THREENs extends js.Object {
   }
   
   @js.native
-  class Vertex ()
-    extends threeLib.threeMod.Vertex
-  
-  @js.native
   class VertexNormalsHelper protected ()
     extends threeLib.threeMod.VertexNormalsHelper {
-    def this(`object`: threeLib.threeDashCoreMod.Object3D) = this()
+    def this(`object`: threeLib.srcCoreObject3DMod.Object3D) = this()
   }
   
   @js.native
   class VideoTexture protected ()
     extends threeLib.threeMod.VideoTexture {
-    def this(video: stdLib.HTMLVideoElement, mapping: js.UndefOr[threeLib.threeDashCoreMod.Mapping], wrapS: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], wrapT: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], magFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], minFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], format: js.UndefOr[threeLib.threeDashCoreMod.PixelFormat], `type`: js.UndefOr[threeLib.threeDashCoreMod.TextureDataType], anisotropy: js.UndefOr[scala.Double]) = this()
+    def this(video: stdLib.HTMLVideoElement, mapping: js.UndefOr[threeLib.srcConstantsMod.Mapping], wrapS: js.UndefOr[threeLib.srcConstantsMod.Wrapping], wrapT: js.UndefOr[threeLib.srcConstantsMod.Wrapping], magFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], minFilter: js.UndefOr[threeLib.srcConstantsMod.TextureFilter], format: js.UndefOr[threeLib.srcConstantsMod.PixelFormat], `type`: js.UndefOr[threeLib.srcConstantsMod.TextureDataType], anisotropy: js.UndefOr[scala.Double]) = this()
   }
   
   @js.native
@@ -1398,7 +1150,7 @@ object THREENs extends js.Object {
   @js.native
   class WebGLCapabilities protected ()
     extends threeLib.threeMod.WebGLCapabilities {
-    def this(gl: stdLib.WebGLRenderingContext, extensions: js.Any, parameters: threeLib.threeDashCoreMod.WebGLCapabilitiesParameters) = this()
+    def this(gl: stdLib.WebGLRenderingContext, extensions: js.Any, parameters: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilitiesParameters) = this()
   }
   
   @js.native
@@ -1446,6 +1198,12 @@ object THREENs extends js.Object {
   }
   
   @js.native
+  class WebGLMultisampleRenderTarget protected ()
+    extends threeLib.threeMod.WebGLMultisampleRenderTarget {
+    def this(width: scala.Double, height: scala.Double) = this()
+  }
+  
+  @js.native
   class WebGLObjects protected ()
     extends threeLib.threeMod.WebGLObjects {
     def this(gl: stdLib.WebGLRenderingContext, properties: js.Any, info: js.Any) = this()
@@ -1454,13 +1212,13 @@ object THREENs extends js.Object {
   @js.native
   class WebGLProgram protected ()
     extends threeLib.threeMod.WebGLProgram {
-    def this(renderer: threeLib.threeDashCoreMod.WebGLRenderer, code: java.lang.String, material: threeLib.threeDashCoreMod.ShaderMaterial, parameters: threeLib.threeDashCoreMod.WebGLRendererParameters) = this()
+    def this(renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, code: java.lang.String, material: threeLib.srcMaterialsShaderMaterialMod.ShaderMaterial, shader: threeLib.srcRenderersWebglWebGLShaderMod.WebGLShader, parameters: threeLib.srcRenderersWebGLRendererMod.WebGLRendererParameters, capabilities: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities, textures: threeLib.srcRenderersWebglWebGLTexturesMod.WebGLTextures) = this()
   }
   
   @js.native
   class WebGLPrograms protected ()
     extends threeLib.threeMod.WebGLPrograms {
-    def this(renderer: threeLib.threeDashCoreMod.WebGLRenderer, capabilities: js.Any) = this()
+    def this(renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, extensions: threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, capabilities: threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities, textures: threeLib.srcRenderersWebglWebGLTexturesMod.WebGLTextures) = this()
   }
   
   @js.native
@@ -1503,7 +1261,7 @@ object THREENs extends js.Object {
   @js.native
   class WebGLShadowMap protected ()
     extends threeLib.threeMod.WebGLShadowMap {
-    def this(_renderer: threeLib.threeDashCoreMod.Renderer, _lights: js.Array[_], _objects: js.Array[_], capabilities: js.Any) = this()
+    def this(_renderer: threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, _lights: js.Array[_], _objects: js.Array[_], capabilities: js.Any) = this()
   }
   
   @js.native
@@ -1527,13 +1285,7 @@ object THREENs extends js.Object {
   @js.native
   class WireframeGeometry protected ()
     extends threeLib.threeMod.WireframeGeometry {
-    def this(geometry: threeLib.threeDashCoreMod.Geometry) = this()
-  }
-  
-  @js.native
-  class WireframeHelper protected ()
-    extends threeLib.threeMod.WireframeHelper {
-    def this(`object`: threeLib.threeDashCoreMod.Object3D) = this()
+    def this(geometry: threeLib.srcCoreGeometryMod.Geometry) = this()
   }
   
 }

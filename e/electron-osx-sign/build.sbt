@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "electron-osx-sign"
-version := "0.4.11-7e89ee"
+version := "0.4.11-01c4b5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,11 +8,11 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-986805",
   "org.scalablytyped" %%% "compare-version" % "v0.1.2-dt-20190322Z-91ef7c",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20190328Z-74c562",
-  "org.scalablytyped" %%% "isbinaryfile" % "4.0.0-2d449b",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20190411Z-98f533",
+  "org.scalablytyped" %%% "isbinaryfile" % "4.0.0-f916a4",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20190322Z-8cca44",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
-  "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-23f44e",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
+  "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-53c0a0",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "xmlbuilder" % "0.0-unknown-dt-20190322Z-ff2724")
 publishArtifact in packageDoc := false

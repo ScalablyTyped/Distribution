@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "WebGLStencilBuffer")
 @js.native
 class WebGLStencilBuffer protected ()
-  extends threeLib.threeDashCoreMod.WebGLStencilBuffer {
+  extends threeLib.srcRenderersWebglWebGLStateMod.WebGLStencilBuffer {
   def this(gl: js.Any, state: js.Any) = this()
 }
 

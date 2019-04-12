@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_ShapesWorldUVGenerator
   extends org.scalablytyped.runtime.Instantiable1[
-      /* shapes */ threeLib.threeDashCoreMod.Shape, 
+      /* shapes */ threeLib.srcExtrasCoreShapeMod.Shape, 
       threeLib.threeMod.ExtrudeBufferGeometry
     ] {
-  var WorldUVGenerator: threeLib.threeDashCoreMod.UVGenerator = js.native
+  var WorldUVGenerator: threeLib.srcGeometriesExtrudeGeometryMod.UVGenerator = js.native
 }
 

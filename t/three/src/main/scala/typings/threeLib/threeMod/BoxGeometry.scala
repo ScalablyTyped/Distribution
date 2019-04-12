@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "BoxGeometry")
 @js.native
 class BoxGeometry protected ()
-  extends threeLib.threeDashCoreMod.BoxGeometry {
+  extends threeLib.srcGeometriesGeometriesMod.BoxGeometry {
   /**
     * @param width — Width of the sides on the X axis.
     * @param height — Height of the sides on the Y axis.

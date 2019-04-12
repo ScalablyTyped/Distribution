@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object nextDashServerLibStrings {
   @js.native
+  sealed trait NextModuleMapOptions extends js.Object
+  
+  @js.native
   sealed trait beforeHistoryChange
     extends nextDashServerLib.routerMod.EventName
   
@@ -30,6 +33,8 @@ object nextDashServerLibStrings {
   sealed trait routeChangeStart
     extends nextDashServerLib.routerMod.EventName
   
+  @scala.inline
+  def NextModuleMapOptions: NextModuleMapOptions = "NextModuleMapOptions".asInstanceOf[NextModuleMapOptions]
   @scala.inline
   def beforeHistoryChange: beforeHistoryChange = "beforeHistoryChange".asInstanceOf[beforeHistoryChange]
   @scala.inline

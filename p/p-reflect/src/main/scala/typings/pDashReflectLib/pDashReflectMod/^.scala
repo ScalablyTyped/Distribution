@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p-reflect", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  def apply[T](promise: js.Thenable[T]): js.Promise[pDashReflectLib.pDashReflectMod.pReflectNs.PromiseResult[T]] = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[pDashReflectLib.Anon_DefaultPromise]
 

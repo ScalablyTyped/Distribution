@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "MaterialLoader")
 @js.native
 class MaterialLoader ()
-  extends threeLib.threeDashCoreMod.MaterialLoader {
-  def this(manager: threeLib.threeDashCoreMod.LoadingManager) = this()
+  extends threeLib.srcLoadersMaterialLoaderMod.MaterialLoader {
+  def this(manager: threeLib.srcLoadersLoadingManagerMod.LoadingManager) = this()
 }
 

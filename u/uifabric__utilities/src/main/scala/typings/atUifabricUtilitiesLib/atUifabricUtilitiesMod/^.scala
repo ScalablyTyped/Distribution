@@ -300,6 +300,8 @@ object ^ extends js.Object {
   def resetIds(): scala.Unit = js.native
   def resetIds(counter: scala.Double): scala.Unit = js.native
   def resetMemoizations(): scala.Unit = js.native
+  def safeRequestAnimationFrame(component: reactLib.reactMod.Component[js.Object, js.Object, _]): js.Function1[/* cb */ js.Function, scala.Unit] = js.native
+  def safeSetTimeout(component: reactLib.reactMod.Component[js.Object, js.Object, _]): js.Function2[/* cb */ js.Function, /* duration */ scala.Double, scala.Unit] = js.native
   def setBaseUrl(baseUrl: java.lang.String): scala.Unit = js.native
   def setLanguage(language: java.lang.String): scala.Unit = js.native
   def setLanguage(language: java.lang.String, avoidPersisting: scala.Boolean): scala.Unit = js.native

@@ -62,6 +62,7 @@ class SurveyElement protected ()
   /* protected */ def onSetData(): scala.Unit = js.native
   /* CompleteClass */
   override def onSurveyLoad(): js.Any = js.native
+  def readOnlyChangedCallback(): scala.Unit = js.native
   /* protected */ def setPage(parent: IPanel, `val`: IPage): scala.Unit = js.native
   /* CompleteClass */
   override def setSurveyImpl(value: ISurveyImpl): js.Any = js.native

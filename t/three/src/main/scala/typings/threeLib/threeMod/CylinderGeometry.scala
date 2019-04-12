@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "CylinderGeometry")
 @js.native
 class CylinderGeometry protected ()
-  extends threeLib.threeDashCoreMod.CylinderGeometry {
+  extends threeLib.srcGeometriesGeometriesMod.CylinderGeometry {
   /**
     * @param radiusTop — Radius of the cylinder at the top.
     * @param radiusBottom — Radius of the cylinder at the bottom.

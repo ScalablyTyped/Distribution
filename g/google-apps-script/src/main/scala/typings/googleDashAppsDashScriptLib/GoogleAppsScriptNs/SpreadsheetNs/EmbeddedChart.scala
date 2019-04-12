@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait EmbeddedChart extends js.Object {
   def getAs(contentType: java.lang.String): googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob
   def getBlob(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob
+  def getChartId(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   def getContainerInfo(): ContainerInfo
   def getHiddenDimensionStrategy(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy
   def getId(): java.lang.String
@@ -26,6 +27,7 @@ object EmbeddedChart {
   def apply(
     getAs: java.lang.String => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob,
     getBlob: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob,
+    getChartId: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     getContainerInfo: () => ContainerInfo,
     getHiddenDimensionStrategy: () => googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.ChartHiddenDimensionStrategy,
     getId: () => java.lang.String,
@@ -38,7 +40,7 @@ object EmbeddedChart {
     modify: () => EmbeddedChartBuilder,
     setId: java.lang.String => googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Chart
   ): EmbeddedChart = {
-    val __obj = js.Dynamic.literal(getAs = js.Any.fromFunction1(getAs), getBlob = js.Any.fromFunction0(getBlob), getContainerInfo = js.Any.fromFunction0(getContainerInfo), getHiddenDimensionStrategy = js.Any.fromFunction0(getHiddenDimensionStrategy), getId = js.Any.fromFunction0(getId), getMergeStrategy = js.Any.fromFunction0(getMergeStrategy), getNumHeaders = js.Any.fromFunction0(getNumHeaders), getOptions = js.Any.fromFunction0(getOptions), getRanges = js.Any.fromFunction0(getRanges), getTransposeRowsAndColumns = js.Any.fromFunction0(getTransposeRowsAndColumns), getType = js.Any.fromFunction0(getType), modify = js.Any.fromFunction0(modify), setId = js.Any.fromFunction1(setId))
+    val __obj = js.Dynamic.literal(getAs = js.Any.fromFunction1(getAs), getBlob = js.Any.fromFunction0(getBlob), getChartId = js.Any.fromFunction0(getChartId), getContainerInfo = js.Any.fromFunction0(getContainerInfo), getHiddenDimensionStrategy = js.Any.fromFunction0(getHiddenDimensionStrategy), getId = js.Any.fromFunction0(getId), getMergeStrategy = js.Any.fromFunction0(getMergeStrategy), getNumHeaders = js.Any.fromFunction0(getNumHeaders), getOptions = js.Any.fromFunction0(getOptions), getRanges = js.Any.fromFunction0(getRanges), getTransposeRowsAndColumns = js.Any.fromFunction0(getTransposeRowsAndColumns), getType = js.Any.fromFunction0(getType), modify = js.Any.fromFunction0(modify), setId = js.Any.fromFunction1(setId))
   
     __obj.asInstanceOf[EmbeddedChart]
   }

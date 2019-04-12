@@ -6,8 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var interval: js.UndefOr[scala.Double] = js.undefined
-  var timeout: js.UndefOr[scala.Double] = js.undefined
+  /**
+  		Number of milliseconds to wait before retrying `condition`.
+  		@default 20
+  		*/
+  val interval: js.UndefOr[scala.Double] = js.undefined
+  /**
+  		Number of milliseconds to wait before automatically rejecting.
+  		@default Infinity
+  		*/
+  val timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
 object Options {

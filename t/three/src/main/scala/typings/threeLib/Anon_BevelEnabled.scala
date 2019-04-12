@@ -11,7 +11,7 @@ trait Anon_BevelEnabled extends js.Object {
   var bevelSize: scala.Double
   var bevelThickness: scala.Double
   var curveSegments: scala.Double
-  var font: threeLib.threeDashCoreMod.Font
+  var font: threeLib.srcExtrasCoreFontMod.Font
   var height: scala.Double
   var size: scala.Double
 }
@@ -24,7 +24,7 @@ object Anon_BevelEnabled {
     bevelSize: scala.Double,
     bevelThickness: scala.Double,
     curveSegments: scala.Double,
-    font: threeLib.threeDashCoreMod.Font,
+    font: threeLib.srcExtrasCoreFontMod.Font,
     height: scala.Double,
     size: scala.Double
   ): Anon_BevelEnabled = {

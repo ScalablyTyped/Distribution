@@ -23,6 +23,7 @@ trait Range extends js.Object {
   def autoFillToNeighbor(series: AutoFillSeries): scala.Unit = js.native
   def breakApart(): Range = js.native
   def canEdit(): scala.Boolean = js.native
+  def check(): Range = js.native
   def clear(): Range = js.native
   def clear(options: js.Object): Range = js.native
   def clearContent(): Range = js.native
@@ -64,6 +65,7 @@ trait Range extends js.Object {
   def createDeveloperMetadataFinder(): DeveloperMetadataFinder = js.native
   def createFilter(): Filter = js.native
   def createPivotTable(sourceData: Range): PivotTable = js.native
+  def createTextFinder(findText: java.lang.String): TextFinder = js.native
   def deleteCells(shiftDimension: Dimension): scala.Unit = js.native
   def expandGroups(): Range = js.native
   def getA1Notation(): java.lang.String = js.native
@@ -75,6 +77,8 @@ trait Range extends js.Object {
     column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): Range = js.native
   def getColumn(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
+  def getDataRegion(): Range = js.native
+  def getDataRegion(dimension: Dimension): Range = js.native
   def getDataSourceTables(): js.Array[DataSourceTable] = js.native
   def getDataSourceUrl(): java.lang.String = js.native
   def getDataTable(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.DataTable = js.native
@@ -136,7 +140,11 @@ trait Range extends js.Object {
   def getWrapStrategy(): WrapStrategy = js.native
   def getWraps(): js.Array[js.Array[scala.Boolean]] = js.native
   def insertCells(shiftDimension: Dimension): Range = js.native
+  def insertCheckboxes(): Range = js.native
+  def insertCheckboxes(checkedValue: js.Object): Range = js.native
+  def insertCheckboxes(checkedValue: js.Object, uncheckedValue: js.Object): Range = js.native
   def isBlank(): scala.Boolean = js.native
+  def isChecked(): scala.Boolean = js.native
   def isEndColumnBounded(): scala.Boolean = js.native
   def isEndRowBounded(): scala.Boolean = js.native
   def isPartOfMerge(): scala.Boolean = js.native
@@ -163,6 +171,7 @@ trait Range extends js.Object {
   ): Range = js.native
   def protect(): Protection = js.native
   def randomize(): Range = js.native
+  def removeCheckboxes(): Range = js.native
   def setBackground(color: java.lang.String): Range = js.native
   def setBackgroundRGB(
     red: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -237,5 +246,6 @@ trait Range extends js.Object {
   def splitTextToColumns(): scala.Unit = js.native
   def splitTextToColumns(delimiter: TextToColumnsDelimiter): scala.Unit = js.native
   def splitTextToColumns(delimiter: java.lang.String): scala.Unit = js.native
+  def uncheck(): Range = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Vector4")
 @js.native
 class Vector4 ()
-  extends threeLib.threeDashCoreMod.Vector4 {
+  extends threeLib.srcMathVector4Mod.Vector4 {
   def this(x: scala.Double) = this()
   def this(x: scala.Double, y: scala.Double) = this()
   def this(x: scala.Double, y: scala.Double, z: scala.Double) = this()

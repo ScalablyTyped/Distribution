@@ -32,7 +32,9 @@ trait TableBuilder extends js.Object {
   def dropUnique(columnNames: js.Array[java.lang.String | Raw]): TableBuilder = js.native
   def dropUnique(columnNames: js.Array[java.lang.String | Raw], indexName: java.lang.String): TableBuilder = js.native
   def enu(columnName: java.lang.String, values: js.Array[knexLib.Value]): ColumnBuilder = js.native
+  def enu(columnName: java.lang.String, values: js.Array[knexLib.Value], options: EnumOptions): ColumnBuilder = js.native
   def enum(columnName: java.lang.String, values: js.Array[knexLib.Value]): ColumnBuilder = js.native
+  def enum(columnName: java.lang.String, values: js.Array[knexLib.Value], options: EnumOptions): ColumnBuilder = js.native
   def float(columnName: java.lang.String): ColumnBuilder = js.native
   def float(columnName: java.lang.String, precision: scala.Double): ColumnBuilder = js.native
   def float(columnName: java.lang.String, precision: scala.Double, scale: scala.Double): ColumnBuilder = js.native
@@ -50,9 +52,11 @@ trait TableBuilder extends js.Object {
     indexType: java.lang.String
   ): TableBuilder = js.native
   def integer(columnName: java.lang.String): ColumnBuilder = js.native
+  def integer(columnName: java.lang.String, length: scala.Double): ColumnBuilder = js.native
   def json(columnName: java.lang.String): ColumnBuilder = js.native
   def jsonb(columnName: java.lang.String): ColumnBuilder = js.native
   def primary(columnNames: js.Array[java.lang.String]): TableBuilder = js.native
+  def primary(columnNames: js.Array[java.lang.String], constraintName: java.lang.String): TableBuilder = js.native
   def queryContext(context: js.Any): TableBuilder = js.native
   def renameColumn(from: java.lang.String, to: java.lang.String): ColumnBuilder = js.native
   def specificType(columnName: java.lang.String, `type`: java.lang.String): ColumnBuilder = js.native

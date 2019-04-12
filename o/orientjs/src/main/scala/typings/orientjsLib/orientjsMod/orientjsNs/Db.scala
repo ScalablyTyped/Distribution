@@ -49,9 +49,9 @@ trait Db
     *
     * @return The query instance.
     */
-  def create(): Statement = js.native
-  def create(params: js.Any): Statement = js.native
-  def create(paramtype: java.lang.String, paramname: java.lang.String): Statement = js.native
+  def create[T](): Statement[T] = js.native
+  def create[T](params: js.Any): Statement[T] = js.native
+  def create[T](paramtype: java.lang.String, paramname: java.lang.String): Statement[T] = js.native
   def createFn(fn: js.Function1[/* repeated */ js.Any, _]): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   def createFn(fn: js.Function1[/* repeated */ js.Any, _], options: js.Any): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   /**
@@ -69,7 +69,7 @@ trait Db
     *
     * @return The query instance.
     */
-  def createQuery(): Statement = js.native
+  def createQuery[T](): Statement[T] = js.native
   /**
     * Create a context for a user, using their authentication token.
     * The context includes the query builder methods, which will be executed
@@ -84,8 +84,8 @@ trait Db
     *
     * @return The query instance.
     */
-  def delete(): Statement = js.native
-  def delete(params: js.Any): Statement = js.native
+  def delete[T](): Statement[T] = js.native
+  def delete[T](params: js.Any): Statement[T] = js.native
   /**
     * Escape the given input.
     *
@@ -107,13 +107,13 @@ trait Db
     *
     * @return The query instance.
     */
-  def `if`(condition: SqlExpression, statements: Statement*): Statement = js.native
+  def `if`[T](condition: SqlExpression, statements: Statement[T]*): Statement[T] = js.native
   /**
     * Create a transactional query with if.
     *
     * @return The query instance.
     */
-  def `if`(condition: SqlExpression, statements: js.Array[Statement]): Statement = js.native
+  def `if`[T](condition: SqlExpression, statements: js.Array[Statement[T]]): Statement[T] = js.native
   /**
     * Initialize the database instance.
     */
@@ -123,17 +123,17 @@ trait Db
     *
     * @return The query instance.
     */
-  def insert(): Statement = js.native
-  def insert(params: js.Any): Statement = js.native
+  def insert[T](): Statement[T] = js.native
+  def insert[T](params: js.Any): Statement[T] = js.native
   /**
     * Create a transactional query.
     *
     * @return The query instance.
     */
-  def let(): Statement = js.native
-  def let(name: java.lang.String, value: java.lang.String): Statement = js.native
-  def let(name: java.lang.String, value: Statement): Statement = js.native
-  def let(params: js.Any): Statement = js.native
+  def let[T](): Statement[T] = js.native
+  def let[T](name: java.lang.String, value: java.lang.String): Statement[T] = js.native
+  def let[T](name: java.lang.String, value: Statement[T]): Statement[T] = js.native
+  def let[T](params: js.Any): Statement[T] = js.native
   /**
     * Execute a live query against the database
     *
@@ -197,8 +197,8 @@ trait Db
     *
     * @return The query instance.
     */
-  def select(): Statement = js.native
-  def select(params: js.Any): Statement = js.native
+  def select[T](): Statement[T] = js.native
+  def select[T](params: js.Any): Statement[T] = js.native
   /**
     * Send the given operation to the server, ensuring the
     * database is open first.
@@ -226,14 +226,14 @@ trait Db
     *
     * @return The query instance.
     */
-  def traverse(): Statement = js.native
-  def traverse(params: js.Any): Statement = js.native
+  def traverse[T](): Statement[T] = js.native
+  def traverse[T](params: js.Any): Statement[T] = js.native
   /**
     * Create an update query.
     *
     * @return The query instance.
     */
-  def update(): Statement = js.native
-  def update(params: js.Any): Statement = js.native
+  def update[T](): Statement[T] = js.native
+  def update[T](params: js.Any): Statement[T] = js.native
 }
 

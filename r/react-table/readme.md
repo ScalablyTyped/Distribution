@@ -6,6 +6,7 @@
 //                 Krzysztof Porębski <https://github.com/Havret>,
 //                 Andy S <https://github.com/andys8>,
 //                 Grzegorz Rozdzialik <https://github.com/Gelio>
+//                 Cam Pepin <https://github.com/cpepin>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

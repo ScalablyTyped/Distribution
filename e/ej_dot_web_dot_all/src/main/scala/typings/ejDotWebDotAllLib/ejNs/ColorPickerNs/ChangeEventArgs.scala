@@ -6,12 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChangeEventArgs extends js.Object {
-  /** if the event should be canceled; otherwise, false.
+  /** return the previous color value
     */
-  var cancel: js.UndefOr[scala.Boolean] = js.undefined
-  /** returns the color picker model
-    */
-  var model: js.UndefOr[Model] = js.undefined
+  var changeFrom: js.UndefOr[java.lang.String] = js.undefined
   /** returns the name of the event
     */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
@@ -23,14 +20,12 @@ trait ChangeEventArgs extends js.Object {
 object ChangeEventArgs {
   @scala.inline
   def apply(
-    cancel: js.UndefOr[scala.Boolean] = js.undefined,
-    model: Model = null,
+    changeFrom: java.lang.String = null,
     `type`: java.lang.String = null,
     value: java.lang.String = null
   ): ChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
-    if (model != null) __obj.updateDynamic("model")(model)
+    if (changeFrom != null) __obj.updateDynamic("changeFrom")(changeFrom)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value)
     __obj.asInstanceOf[ChangeEventArgs]

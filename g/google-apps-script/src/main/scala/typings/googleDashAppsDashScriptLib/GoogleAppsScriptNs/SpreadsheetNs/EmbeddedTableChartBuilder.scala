@@ -18,6 +18,7 @@ trait EmbeddedTableChartBuilder extends js.Object {
   def asScatterChart(): EmbeddedScatterChartBuilder = js.native
   def asTableChart(): EmbeddedTableChartBuilder = js.native
   def build(): EmbeddedChart = js.native
+  def clearRanges(): EmbeddedChartBuilder = js.native
   def enablePaging(enablePaging: scala.Boolean): EmbeddedTableChartBuilder = js.native
   def enablePaging(pageSize: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): EmbeddedTableChartBuilder = js.native
   def enablePaging(

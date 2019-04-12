@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "conf"
-version := "3.0.0-3a18d0"
+version := "3.0.0-0f33af"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,13 +8,13 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "dot-prop" % "4.2-dt-20181121Z-280c0f",
   "org.scalablytyped" %%% "env-paths" % "2.2.0-d41767",
-  "org.scalablytyped" %%% "make-dir" % "2.1.0-7256be",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
+  "org.scalablytyped" %%% "make-dir" % "2.1.0-4e6f4a",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
   "org.scalablytyped" %%% "pify" % "3.0.0-dt-20190322Z-6f182f",
   "org.scalablytyped" %%% "pkg-up" % "2.0-dt-20181117Z-3faa45",
   "org.scalablytyped" %%% "semver" % "6.0-dt-20190330Z-1b8b1f",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
-  "org.scalablytyped" %%% "write-file-atomic" % "2.1-dt-20180214Z-3cedca")
+  "org.scalablytyped" %%% "write-file-atomic" % "2.1-dt-20180214Z-131d91")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

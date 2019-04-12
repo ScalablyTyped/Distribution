@@ -58,7 +58,7 @@ trait Console extends js.Object {
   /**
     * The `console.groupCollapsed()` function is an alias for {@link console.group()}.
     */
-  def groupCollapsed(): scala.Unit = js.native
+  def groupCollapsed(label: js.Any*): scala.Unit = js.native
   /**
     * Decreases indentation of subsequent lines by two spaces.
     */

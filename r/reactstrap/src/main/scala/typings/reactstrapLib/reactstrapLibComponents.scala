@@ -155,6 +155,12 @@ object reactstrapLibComponents {
   @scala.inline
   def Tag[T]: reactLib.reactMod.ReactNs.ComponentType[reactstrapLib.libTagMod.TagProps[T]] = js.constructorOf[reactstrapLib.libTagMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactstrapLib.libTagMod.TagProps[T]]]
   @scala.inline
+  def Toast[T]: reactLib.reactMod.ReactNs.ComponentType[reactstrapLib.libToastMod.ToastProps[T]] = js.constructorOf[reactstrapLib.libToastMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactstrapLib.libToastMod.ToastProps[T]]]
+  @scala.inline
+  def ToastBody[T]: reactLib.reactMod.ReactNs.ComponentType[reactstrapLib.libToastBodyMod.ToastBodyProps[T]] = js.constructorOf[reactstrapLib.libToastBodyMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactstrapLib.libToastBodyMod.ToastBodyProps[T]]]
+  @scala.inline
+  def ToastHeader[T]: reactLib.reactMod.ReactNs.ComponentType[reactstrapLib.libToastHeaderMod.ToastHeaderProps[T]] = js.constructorOf[reactstrapLib.libToastHeaderMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactstrapLib.libToastHeaderMod.ToastHeaderProps[T]]]
+  @scala.inline
   def Tooltip[T]: reactLib.reactMod.ReactNs.ComponentType[reactstrapLib.libTooltipMod.TooltipProps[T]] = js.constructorOf[reactstrapLib.libTooltipMod.default[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactstrapLib.libTooltipMod.TooltipProps[T]]]
   @scala.inline
   def UncontrolledAlert[T]: reactLib.reactMod.ReactNs.ComponentType[reactstrapLib.libAlertMod.UncontrolledAlertProps[T]] = js.constructorOf[reactstrapLib.reactstrapMod.UncontrolledAlert[T]].asInstanceOf[reactLib.reactMod.ReactNs.ComponentType[reactstrapLib.libAlertMod.UncontrolledAlertProps[T]]]
@@ -244,6 +250,9 @@ object reactstrapLibComponents {
   type TabPaneProps[T] = reactstrapLib.libTabPaneMod.TabPaneProps[T]
   type TableProps[T] = reactstrapLib.libTableMod.TableProps[T]
   type TagProps[T] = reactstrapLib.libTagMod.TagProps[T]
+  type ToastBodyProps[T] = reactstrapLib.libToastBodyMod.ToastBodyProps[T]
+  type ToastHeaderProps[T] = reactstrapLib.libToastHeaderMod.ToastHeaderProps[T]
+  type ToastProps[T] = reactstrapLib.libToastMod.ToastProps[T]
   type TooltipProps[T] = reactstrapLib.libTooltipMod.TooltipProps[T]
   type UncontrolledAlertProps[T] = reactstrapLib.libAlertMod.UncontrolledAlertProps[T]
   type UncontrolledButtonDropdownProps[T] = reactstrapLib.libButtonDropdownMod.UncontrolledButtonDropdownProps[T]

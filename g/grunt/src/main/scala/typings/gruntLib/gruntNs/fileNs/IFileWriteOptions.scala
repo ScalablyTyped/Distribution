@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * @see IFileWriteBufferOption
   * @see IFileWriteStringOption
   */
-trait IFileWriteOptions extends js.Object {
+trait IFileWriteOptions extends IFileEncodedOption {
   /**
     * These optional globbing patterns will be matched against the filepath
     * (not the filename) using grunt.file.isMatch. If any specified globbing
@@ -25,8 +25,8 @@ trait IFileWriteOptions extends js.Object {
 
 object IFileWriteOptions {
   @scala.inline
-  def apply(noProcess: js.Any = null): IFileWriteOptions = {
-    val __obj = js.Dynamic.literal()
+  def apply(encoding: java.lang.String, noProcess: js.Any = null): IFileWriteOptions = {
+    val __obj = js.Dynamic.literal(encoding = encoding)
     if (noProcess != null) __obj.updateDynamic("noProcess")(noProcess)
     __obj.asInstanceOf[IFileWriteOptions]
   }

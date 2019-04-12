@@ -9,7 +9,9 @@ trait FileLoaderOption extends js.Object {
   /** determine whether invoke when exports is function */
   var call: js.UndefOr[scala.Boolean] = js.undefined
   /** set property's case when converting a filepath to property list. */
-  var caseStyle: js.UndefOr[java.lang.String | (js.Function1[/* str */ java.lang.String, java.lang.String])] = js.undefined
+  var caseStyle: js.UndefOr[
+    java.lang.String | (js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]])
+  ] = js.undefined
   /** directories to be loaded */
   var directory: java.lang.String | js.Array[java.lang.String]
   /** a function that filter the exports which can be loaded */
@@ -34,7 +36,7 @@ object FileLoaderOption {
     directory: java.lang.String | js.Array[java.lang.String],
     target: js.Object,
     call: js.UndefOr[scala.Boolean] = js.undefined,
-    caseStyle: java.lang.String | (js.Function1[/* str */ java.lang.String, java.lang.String]) = null,
+    caseStyle: java.lang.String | (js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]]) = null,
     filter: /* obj */ js.Object => scala.Boolean = null,
     ignore: java.lang.String | js.Array[java.lang.String] = null,
     initializer: (/* obj */ js.Object, /* options */ eggDashCoreLib.Anon_Path) => _ = null,

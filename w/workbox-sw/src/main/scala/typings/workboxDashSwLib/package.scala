@@ -9,15 +9,15 @@ package object workboxDashSwLib {
     * The "handler" callback is called when a service worker's fetch event has been matched by a Route. This callback should return a Promise that resolves with a Response.
     * If a value is returned by the match callback it will be passed in as the context.params argument.
     */
-  type HandlerCallback = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IHandlerContext */ /* context */ js.Any, 
+  type HandlerCallback = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheStrategy */ js.Any) | (js.Function1[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify HandlerContext */ /* context */ js.Any, 
     js.Promise[stdLib.Response]
-  ]
+  ])
   /**
     * To signify a match, return anything other than null. Return null if the route shouldn't match.
     */
   type MatchCallback = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IMatchContext */ /* context */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MatchContext */ /* context */ js.Any, 
     js.Object | scala.Null
   ]
   /**
@@ -41,11 +41,11 @@ package object workboxDashSwLib {
   /**
     * The "urlManipulation" callback can be used to determine if there are any additional permutations of a URL that should be used to check against the available precached files.
     * For example, Workbox supports checking for '/index.html' when the URL '/' is provided. This callback allows additional, custom checks.
-    * @param {IURLContext} context
+    * @param {URLContext} context
     * @returns {URL[]} To add additional urls to test, return an Array of URL's. Please note that these should not be Strings, but URL objects.
     */
   type UrlManipulation = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IURLContext */ /* context */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify URLContext */ /* context */ js.Any, 
     js.Array[stdLib.URL]
   ]
 }

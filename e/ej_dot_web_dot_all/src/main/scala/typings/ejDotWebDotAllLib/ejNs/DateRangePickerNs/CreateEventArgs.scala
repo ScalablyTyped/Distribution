@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateEventArgs extends js.Object {
-  /** Set to true when the event has to be canceled, else false.
-    */
-  var cancel: js.UndefOr[scala.Boolean] = js.undefined
   /** returns the DateRangePicker model.
     */
   var model: js.UndefOr[Model] = js.undefined
@@ -19,13 +16,8 @@ trait CreateEventArgs extends js.Object {
 
 object CreateEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[scala.Boolean] = js.undefined,
-    model: Model = null,
-    `type`: java.lang.String = null
-  ): CreateEventArgs = {
+  def apply(model: Model = null, `type`: java.lang.String = null): CreateEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
     if (model != null) __obj.updateDynamic("model")(model)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[CreateEventArgs]

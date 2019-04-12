@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd-mobile-rn"
-version := "2.3.3-d1cc88"
+version := "2.3.3-67c8c6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,9 +14,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rc-gesture" % "0.0.22-bd1b2d",
   "org.scalablytyped" %%% "rc-swipeout" % "2.0.11-3f4fa8",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-3351b3",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190327Z-397ce2",
-  "org.scalablytyped" %%% "react-native-collapsible" % "1.4.0-38c8e5",
-  "org.scalablytyped" %%% "react-native-drawer-layout" % "1.3-dt-20181017Z-aad9bd",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190410Z-5e5772",
+  "org.scalablytyped" %%% "react-native-collapsible" % "1.4.0-816d72",
+  "org.scalablytyped" %%% "react-native-drawer-layout" % "1.3-dt-20181017Z-b9599b",
   "org.scalablytyped" %%% "react-native-swipeout" % "2.3.6-c3ac9c",
   "org.scalablytyped" %%% "rmc-cascader" % "5.0.3-2589a0",
   "org.scalablytyped" %%% "rmc-date-picker" % "6.0.9-ec72d4",

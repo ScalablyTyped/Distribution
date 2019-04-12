@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Geometry extends js.Object {
-  var geometry: threeLib.threeDashCoreMod.Geometry
-  var materials: js.UndefOr[js.Array[threeLib.threeDashCoreMod.Material]] = js.undefined
+  var geometry: threeLib.srcCoreGeometryMod.Geometry
+  var materials: js.UndefOr[js.Array[threeLib.srcMaterialsMaterialMod.Material]] = js.undefined
 }
 
 object Anon_Geometry {
   @scala.inline
   def apply(
-    geometry: threeLib.threeDashCoreMod.Geometry,
-    materials: js.Array[threeLib.threeDashCoreMod.Material] = null
+    geometry: threeLib.srcCoreGeometryMod.Geometry,
+    materials: js.Array[threeLib.srcMaterialsMaterialMod.Material] = null
   ): Anon_Geometry = {
     val __obj = js.Dynamic.literal(geometry = geometry)
     if (materials != null) __obj.updateDynamic("materials")(materials)

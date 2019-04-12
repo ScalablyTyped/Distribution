@@ -5,56 +5,57 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UAParser extends js.Object {
+@JSImport("ua-parser-js", "UAParser")
+@js.native
+/**
+  * Create a new parser with UA prepopulated and extensions extended
+  */
+class UAParser () extends js.Object {
+  def this(uastring: java.lang.String) = this()
+  def this(uastring: java.lang.String, extensions: js.Any) = this()
   /**
     *  Returns browser information
     */
-  def getBrowser(): uaDashParserDashJsLib.IUAParserNs.IBrowser
+  def getBrowser(): uaDashParserDashJsLib.IUAParserNs.IBrowser = js.native
   /**
     *  Returns parsed CPU information
     */
-  def getCPU(): uaDashParserDashJsLib.IUAParserNs.ICPU
+  def getCPU(): uaDashParserDashJsLib.IUAParserNs.ICPU = js.native
   /**
     *  Returns device information
     */
-  def getDevice(): uaDashParserDashJsLib.IUAParserNs.IDevice
+  def getDevice(): uaDashParserDashJsLib.IUAParserNs.IDevice = js.native
   /**
     *  Returns browsers engine information
     */
-  def getEngine(): uaDashParserDashJsLib.IUAParserNs.IEngine
+  def getEngine(): uaDashParserDashJsLib.IUAParserNs.IEngine = js.native
   /**
     *  Returns OS information
     */
-  def getOS(): uaDashParserDashJsLib.IUAParserNs.IOS
+  def getOS(): uaDashParserDashJsLib.IUAParserNs.IOS = js.native
   /**
     *  Returns parse result
     */
-  def getResult(): uaDashParserDashJsLib.IUAParserNs.IResult
+  def getResult(): uaDashParserDashJsLib.IUAParserNs.IResult = js.native
   /**
     *  Returns UA string of current instance
     */
-  def getUA(): java.lang.String
+  def getUA(): java.lang.String = js.native
   /**
     *  Set & parse UA string
     */
-  def setUA(uastring: java.lang.String): UAParser
+  def setUA(uastring: java.lang.String): UAParser = js.native
 }
 
-object UAParser {
-  @scala.inline
-  def apply(
-    getBrowser: () => uaDashParserDashJsLib.IUAParserNs.IBrowser,
-    getCPU: () => uaDashParserDashJsLib.IUAParserNs.ICPU,
-    getDevice: () => uaDashParserDashJsLib.IUAParserNs.IDevice,
-    getEngine: () => uaDashParserDashJsLib.IUAParserNs.IEngine,
-    getOS: () => uaDashParserDashJsLib.IUAParserNs.IOS,
-    getResult: () => uaDashParserDashJsLib.IUAParserNs.IResult,
-    getUA: () => java.lang.String,
-    setUA: java.lang.String => UAParser
-  ): UAParser = {
-    val __obj = js.Dynamic.literal(getBrowser = js.Any.fromFunction0(getBrowser), getCPU = js.Any.fromFunction0(getCPU), getDevice = js.Any.fromFunction0(getDevice), getEngine = js.Any.fromFunction0(getEngine), getOS = js.Any.fromFunction0(getOS), getResult = js.Any.fromFunction0(getResult), getUA = js.Any.fromFunction0(getUA), setUA = js.Any.fromFunction1(setUA))
-  
-    __obj.asInstanceOf[UAParser]
-  }
+/* static members */
+@JSImport("ua-parser-js", "UAParser")
+@js.native
+object UAParser extends js.Object {
+  var BROWSER: uaDashParserDashJsLib.IUAParserNs.BROWSER = js.native
+  var CPU: uaDashParserDashJsLib.IUAParserNs.CPU = js.native
+  var DEVICE: uaDashParserDashJsLib.IUAParserNs.DEVICE = js.native
+  var ENGINE: uaDashParserDashJsLib.IUAParserNs.ENGINE = js.native
+  var OS: uaDashParserDashJsLib.IUAParserNs.OS = js.native
+  var VERSION: java.lang.String = js.native
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Address extends js.Object {
-  var address: java.lang.String | scala.Null
+  var address: stripeDashV3Lib.stripeNs.OwnerAddress | scala.Null
   var email: java.lang.String | scala.Null
   var name: java.lang.String | scala.Null
   var phone: java.lang.String | scala.Null
@@ -19,7 +19,7 @@ trait Anon_Address extends js.Object {
 object Anon_Address {
   @scala.inline
   def apply(
-    address: java.lang.String = null,
+    address: stripeDashV3Lib.stripeNs.OwnerAddress = null,
     email: java.lang.String = null,
     name: java.lang.String = null,
     phone: java.lang.String = null,

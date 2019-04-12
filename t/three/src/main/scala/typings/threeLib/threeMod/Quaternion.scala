@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   * @param w w coordinate
   */
 class Quaternion ()
-  extends threeLib.threeDashCoreMod.Quaternion {
+  extends threeLib.srcMathQuaternionMod.Quaternion {
   def this(x: scala.Double) = this()
   def this(x: scala.Double, y: scala.Double) = this()
   def this(x: scala.Double, y: scala.Double, z: scala.Double) = this()
@@ -29,11 +29,11 @@ object Quaternion extends js.Object {
     * Adapted from http://www.euclideanspace.com/maths/algebra/realNormedAlgebra/quaternions/slerp/.
     */
   def slerp(
-    qa: threeLib.threeDashCoreMod.Quaternion,
-    qb: threeLib.threeDashCoreMod.Quaternion,
-    qm: threeLib.threeDashCoreMod.Quaternion,
+    qa: threeLib.srcMathQuaternionMod.Quaternion,
+    qb: threeLib.srcMathQuaternionMod.Quaternion,
+    qm: threeLib.srcMathQuaternionMod.Quaternion,
     t: scala.Double
-  ): threeLib.threeDashCoreMod.Quaternion = js.native
+  ): threeLib.srcMathQuaternionMod.Quaternion = js.native
   def slerpFlat(
     dst: js.Array[scala.Double],
     dstOffset: scala.Double,
@@ -42,6 +42,6 @@ object Quaternion extends js.Object {
     src1: js.Array[scala.Double],
     stcOffset1: scala.Double,
     t: scala.Double
-  ): threeLib.threeDashCoreMod.Quaternion = js.native
+  ): threeLib.srcMathQuaternionMod.Quaternion = js.native
 }
 

@@ -15,6 +15,7 @@ trait Migrator extends js.Object {
   def make(name: java.lang.String, config: MigratorConfig): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   def rollback(): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   def rollback(config: MigratorConfig): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def rollback(config: MigratorConfig, all: scala.Boolean): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   def status(): bluebirdLib.bluebirdMod.namespaced[scala.Double] = js.native
   def status(config: MigratorConfig): bluebirdLib.bluebirdMod.namespaced[scala.Double] = js.native
 }

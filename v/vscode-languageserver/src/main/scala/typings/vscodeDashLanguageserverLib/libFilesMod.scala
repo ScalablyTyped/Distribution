@@ -52,17 +52,6 @@ object libFilesMod extends js.Object {
   def resolveGlobalNodePath(tracer: js.Function1[/* message */ java.lang.String, scala.Unit]): js.UndefOr[java.lang.String] = js.native
   def resolveGlobalYarnPath(): js.UndefOr[java.lang.String] = js.native
   def resolveGlobalYarnPath(tracer: js.Function1[/* message */ java.lang.String, scala.Unit]): js.UndefOr[java.lang.String] = js.native
-  def resolveModule(workspaceRoot: java.lang.String, moduleName: java.lang.String): vscodeDashLanguageserverLib.Thenable[_] = js.native
-  def resolveModule2(
-    workspaceRoot: java.lang.String,
-    moduleName: java.lang.String,
-    nodePath: java.lang.String,
-    tracer: js.Function2[
-      /* message */ java.lang.String, 
-      /* verbose */ js.UndefOr[java.lang.String], 
-      scala.Unit
-    ]
-  ): vscodeDashLanguageserverLib.Thenable[_] = js.native
   def resolveModulePath(
     workspaceRoot: java.lang.String,
     moduleName: java.lang.String,

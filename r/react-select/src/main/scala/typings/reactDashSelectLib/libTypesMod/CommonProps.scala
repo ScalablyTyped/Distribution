@@ -11,7 +11,7 @@ trait CommonProps[OptionType] extends js.Object {
   var hasValue: scala.Boolean = js.native
   var isMulti: scala.Boolean = js.native
   var options: OptionsType[OptionType] = js.native
-  var selectProps: js.Any = js.native
+  var selectProps: reactDashSelectLib.libSelectMod.Props[OptionType] = js.native
   def clearValue(): scala.Unit = js.native
   def cx(): java.lang.String | scala.Unit = js.native
   def cx(a: java.lang.String): java.lang.String | scala.Unit = js.native

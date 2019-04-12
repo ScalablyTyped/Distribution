@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "MultiMaterial")
 @js.native
 class MultiMaterial ()
-  extends threeLib.threeDashCoreMod.MultiMaterial {
-  def this(materials: js.Array[threeLib.threeDashCoreMod.Material]) = this()
+  extends threeLib.srcMaterialsMaterialsMod.MultiMaterial {
+  def this(materials: js.Array[threeLib.srcMaterialsMaterialMod.Material]) = this()
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Interpolant")
 @js.native
 abstract class Interpolant protected ()
-  extends threeLib.threeDashCoreMod.Interpolant {
+  extends threeLib.srcMathInterpolantMod.Interpolant {
   def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: scala.Double) = this()
   def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: scala.Double, resultBuffer: js.Any) = this()
 }

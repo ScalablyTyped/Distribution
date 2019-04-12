@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object SceneUtilsNs extends js.Object {
   def attach(
-    child: threeLib.threeDashCoreMod.Object3D,
-    scene: threeLib.threeDashCoreMod.Scene,
-    parent: threeLib.threeDashCoreMod.Object3D
+    child: threeLib.srcCoreObject3DMod.Object3D,
+    scene: threeLib.srcScenesSceneMod.Scene,
+    parent: threeLib.srcCoreObject3DMod.Object3D
   ): scala.Unit = js.native
   def createMultiMaterialObject(
-    geometry: threeLib.threeDashCoreMod.Geometry,
-    materials: js.Array[threeLib.threeDashCoreMod.Material]
-  ): threeLib.threeDashCoreMod.Object3D = js.native
+    geometry: threeLib.srcCoreGeometryMod.Geometry,
+    materials: js.Array[threeLib.srcMaterialsMaterialMod.Material]
+  ): threeLib.srcCoreObject3DMod.Object3D = js.native
   def detach(
-    child: threeLib.threeDashCoreMod.Object3D,
-    parent: threeLib.threeDashCoreMod.Object3D,
-    scene: threeLib.threeDashCoreMod.Scene
+    child: threeLib.srcCoreObject3DMod.Object3D,
+    parent: threeLib.srcCoreObject3DMod.Object3D,
+    scene: threeLib.srcScenesSceneMod.Scene
   ): scala.Unit = js.native
 }
 

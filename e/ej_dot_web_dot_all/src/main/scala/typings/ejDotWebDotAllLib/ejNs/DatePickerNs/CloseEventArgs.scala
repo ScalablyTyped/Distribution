@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CloseEventArgs extends js.Object {
-  /** Set to true when the event has to be canceled, else false.
-    */
-  var cancel: js.UndefOr[scala.Boolean] = js.undefined
   /** returns the current date object.
     */
   var date: js.UndefOr[js.Any] = js.undefined
@@ -29,7 +26,6 @@ trait CloseEventArgs extends js.Object {
 object CloseEventArgs {
   @scala.inline
   def apply(
-    cancel: js.UndefOr[scala.Boolean] = js.undefined,
     date: js.Any = null,
     model: Model = null,
     prevDate: java.lang.String = null,
@@ -37,7 +33,6 @@ object CloseEventArgs {
     value: java.lang.String = null
   ): CloseEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
     if (date != null) __obj.updateDynamic("date")(date)
     if (model != null) __obj.updateDynamic("model")(model)
     if (prevDate != null) __obj.updateDynamic("prevDate")(prevDate)

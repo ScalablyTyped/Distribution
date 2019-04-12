@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Rewritten from type alias, can be one of: 
-  - PromiseFulfilledResult[T]
+  - PromiseFulfilledResult[ValueType]
   - PromiseRejectedResult
 */
-trait PromiseResult[T] extends js.Object
+trait PromiseResult[ValueType] extends js.Object
 

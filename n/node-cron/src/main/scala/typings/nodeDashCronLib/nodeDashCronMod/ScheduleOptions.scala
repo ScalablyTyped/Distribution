@@ -15,12 +15,15 @@ trait ScheduleOptions extends js.Object {
   /**
     * The timezone that is used for job scheduling
     */
-  var timezone: js.UndefOr[java.lang.String] = js.undefined
+  var timezone: js.UndefOr[tzDashOffsetLib.tzDashOffsetMod.Timezone] = js.undefined
 }
 
 object ScheduleOptions {
   @scala.inline
-  def apply(scheduled: js.UndefOr[scala.Boolean] = js.undefined, timezone: java.lang.String = null): ScheduleOptions = {
+  def apply(
+    scheduled: js.UndefOr[scala.Boolean] = js.undefined,
+    timezone: tzDashOffsetLib.tzDashOffsetMod.Timezone = null
+  ): ScheduleOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(scheduled)) __obj.updateDynamic("scheduled")(scheduled)
     if (timezone != null) __obj.updateDynamic("timezone")(timezone)

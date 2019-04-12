@@ -28,7 +28,7 @@ trait Anon_App extends js.Object {
   var urlencoded_Original: expressLib.Anon_OptionsNextHandleFunction = js.native
   def Router(): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Router = js.native
   def Router(options: expressLib.expressMod.eNs.RouterOptions): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Router = js.native
-  def default[T](app: atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[T]): atFeathersjsExpressLib.atFeathersjsExpressMod.Application[T] = js.native
+  def default[T](app: atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Application[T]): atFeathersjsExpressLib.atFeathersjsExpressMod.Application[T] = js.native
   def errorHandler(): expressLib.expressMod.eNs.ErrorRequestHandler = js.native
   def errorHandler(options: Anon_Html): expressLib.expressMod.eNs.ErrorRequestHandler = js.native
   /**

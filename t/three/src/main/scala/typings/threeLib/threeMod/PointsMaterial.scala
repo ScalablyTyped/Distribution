@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "PointsMaterial")
 @js.native
 class PointsMaterial ()
-  extends threeLib.threeDashCoreMod.PointsMaterial {
-  def this(parameters: threeLib.threeDashCoreMod.PointsMaterialParameters) = this()
+  extends threeLib.srcMaterialsMaterialsMod.PointsMaterial {
+  def this(parameters: threeLib.srcMaterialsPointsMaterialMod.PointsMaterialParameters) = this()
 }
 

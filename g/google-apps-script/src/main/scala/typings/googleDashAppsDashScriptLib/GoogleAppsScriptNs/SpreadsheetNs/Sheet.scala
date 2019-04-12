@@ -32,6 +32,7 @@ trait Sheet extends js.Object {
   def collapseAllRowGroups(): Sheet = js.native
   def copyTo(spreadsheet: Spreadsheet): Sheet = js.native
   def createDeveloperMetadataFinder(): DeveloperMetadataFinder = js.native
+  def createTextFinder(findText: java.lang.String): TextFinder = js.native
   def deleteColumn(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def deleteColumns(
     columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -113,6 +114,7 @@ trait Sheet extends js.Object {
     numColumns: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): js.Array[js.Array[js.Object]] = js.native
   def getTabColor(): java.lang.String = js.native
+  def getType(): SheetType = js.native
   def hasHiddenGridlines(): scala.Boolean = js.native
   def hideColumn(column: Range): scala.Unit = js.native
   def hideColumns(columnIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native

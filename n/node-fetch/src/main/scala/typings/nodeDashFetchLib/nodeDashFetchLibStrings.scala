@@ -121,6 +121,9 @@ object nodeDashFetchLibStrings {
     extends nodeDashFetchLib.nodeDashFetchMod.RequestRedirect
   
   @js.native
+  sealed trait native extends js.Object
+  
+  @js.native
   sealed trait `no-cache`
     extends nodeDashFetchLib.nodeDashFetchMod.RequestCache
   
@@ -198,6 +201,9 @@ object nodeDashFetchLibStrings {
     extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
+  sealed trait transparent extends js.Object
+  
+  @js.native
   sealed trait video
     extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
@@ -270,6 +276,8 @@ object nodeDashFetchLibStrings {
   @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
   @scala.inline
+  def native: native = "native".asInstanceOf[native]
+  @scala.inline
   def `no-cache`: `no-cache` = "no-cache".asInstanceOf[`no-cache`]
   @scala.inline
   def `no-cors`: `no-cors` = "no-cors".asInstanceOf[`no-cors`]
@@ -307,6 +315,8 @@ object nodeDashFetchLibStrings {
   def subresource: subresource = "subresource".asInstanceOf[subresource]
   @scala.inline
   def track: track = "track".asInstanceOf[track]
+  @scala.inline
+  def transparent: transparent = "transparent".asInstanceOf[transparent]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   @scala.inline

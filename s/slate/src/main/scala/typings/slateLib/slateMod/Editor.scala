@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Editor protected () extends Controller {
   def this(attributes: EditorProperties) = this()
   var `object`: slateLib.slateLibStrings.editor = js.native
+  var operations: immutableLib.immutableMod.List[Operation] = js.native
   var plugins: js.Array[Plugin] = js.native
   var readOnly: scala.Boolean = js.native
   var value: Value = js.native

@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OpenEventArgs extends js.Object {
-  /** if the event should be canceled; otherwise, false.
-    */
-  var cancel: js.UndefOr[scala.Boolean] = js.undefined
   /** returns the color picker model
     */
   var model: js.UndefOr[Model] = js.undefined
@@ -19,13 +16,8 @@ trait OpenEventArgs extends js.Object {
 
 object OpenEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[scala.Boolean] = js.undefined,
-    model: Model = null,
-    `type`: java.lang.String = null
-  ): OpenEventArgs = {
+  def apply(model: Model = null, `type`: java.lang.String = null): OpenEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
     if (model != null) __obj.updateDynamic("model")(model)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[OpenEventArgs]

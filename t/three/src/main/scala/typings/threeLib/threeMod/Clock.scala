@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * @param autoStart Automatically start the clock.
   */
 class Clock ()
-  extends threeLib.threeDashCoreMod.Clock {
+  extends threeLib.srcCoreClockMod.Clock {
   def this(autoStart: scala.Boolean) = this()
 }
 

@@ -32,7 +32,11 @@ class Address () extends Resource {
     */
   def getTransactions(
     opts: js.Object,
-    cb: js.Function2[/* error */ stdLib.Error, /* result */ js.Array[Transaction], scala.Unit]
+    cb: js.Function2[
+      /* error */ stdLib.Error | scala.Null, 
+      /* result */ js.Array[Transaction], 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
 }
 

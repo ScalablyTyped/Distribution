@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TextStyleIOS extends ViewStyle {
+  var fontVariant: js.UndefOr[js.Array[FontVariant]] = js.undefined
   var letterSpacing: js.UndefOr[scala.Double] = js.undefined
   var textDecorationColor: js.UndefOr[java.lang.String] = js.undefined
   var textDecorationStyle: js.UndefOr[
@@ -63,6 +64,7 @@ object TextStyleIOS {
     flexGrow: scala.Int | scala.Double = null,
     flexShrink: scala.Int | scala.Double = null,
     flexWrap: reactDashNativeLib.reactDashNativeLibStrings.wrap | reactDashNativeLib.reactDashNativeLibStrings.nowrap | reactDashNativeLib.reactDashNativeLibStrings.`wrap-reverse` = null,
+    fontVariant: js.Array[FontVariant] = null,
     height: scala.Double | java.lang.String = null,
     justifyContent: reactDashNativeLib.reactDashNativeLibStrings.`flex-start` | reactDashNativeLib.reactDashNativeLibStrings.`flex-end` | reactDashNativeLib.reactDashNativeLibStrings.center | reactDashNativeLib.reactDashNativeLibStrings.`space-between` | reactDashNativeLib.reactDashNativeLibStrings.`space-around` | reactDashNativeLib.reactDashNativeLibStrings.`space-evenly` = null,
     left: scala.Double | java.lang.String = null,
@@ -158,6 +160,7 @@ object TextStyleIOS {
     if (flexGrow != null) __obj.updateDynamic("flexGrow")(flexGrow.asInstanceOf[js.Any])
     if (flexShrink != null) __obj.updateDynamic("flexShrink")(flexShrink.asInstanceOf[js.Any])
     if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
+    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
     if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])

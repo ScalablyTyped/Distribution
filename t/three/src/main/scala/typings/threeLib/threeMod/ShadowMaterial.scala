@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "ShadowMaterial")
 @js.native
 class ShadowMaterial ()
-  extends threeLib.threeDashCoreMod.ShadowMaterial {
-  def this(parameters: threeLib.threeDashCoreMod.ShaderMaterialParameters) = this()
+  extends threeLib.srcMaterialsMaterialsMod.ShadowMaterial {
+  def this(parameters: threeLib.srcMaterialsShaderMaterialMod.ShaderMaterialParameters) = this()
 }
 

@@ -5,4 +5,5 @@
 //                 Periklis Tsirakidis <https://github.com/periklis>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
+/** Other WebAssembly declarations, for compatibility with older versions of Typescript */
 ```

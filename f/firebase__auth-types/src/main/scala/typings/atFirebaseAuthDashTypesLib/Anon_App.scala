@@ -22,7 +22,10 @@ trait Anon_App extends js.Object {
   var GoogleAuthProvider_Instance: org.scalablytyped.runtime.Instantiable0[
     atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.GoogleAuthProvider_Instance
   ] = js.native
-  var OAuthProvider: org.scalablytyped.runtime.Instantiable0[atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.OAuthProvider] = js.native
+  var OAuthProvider: org.scalablytyped.runtime.Instantiable1[
+    /* providerId */ java.lang.String, 
+    atFirebaseAuthDashTypesLib.atFirebaseAuthDashTypesMod.OAuthProvider
+  ] = js.native
   var PhoneAuthProvider: Anon_CredentialPHONESIGNINMETHOD = js.native
   var PhoneAuthProvider_Instance: org.scalablytyped.runtime.Instantiable1[
     /* auth */ js.UndefOr[

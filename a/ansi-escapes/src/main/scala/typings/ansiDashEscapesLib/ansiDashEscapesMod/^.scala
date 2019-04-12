@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ansi-escapes", JSImport.Namespace)
 @js.native
 object ^
-  extends org.scalablytyped.runtime.TopLevel[ansiDashEscapesLib.ansiDashEscapesMod.AnsiNs.AnsiEscapes]
+  extends org.scalablytyped.runtime.TopLevel[ansiDashEscapesLib.Anon_BeepBuffer]
 

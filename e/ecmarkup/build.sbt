@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ecmarkup"
-version := "3.16.0-93cd58"
+version := "3.16.0-f25cc1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,8 +15,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "he" % "v1.1.1-dt-20190322Z-f8c554",
   "org.scalablytyped" %%% "highlight_dot_js" % "v9.12-dt-20190322Z-89b081",
   "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190402Z-168e26",
-  "org.scalablytyped" %%% "jsdom" % "12.2-dt-20190228Z-6bbd40",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
+  "org.scalablytyped" %%% "jsdom" % "12.2-dt-20190228Z-bbf3f5",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
   "org.scalablytyped" %%% "nomnom" % "0.0-unknown-dt-20190322Z-95480d",
   "org.scalablytyped" %%% "parse5" % "5.0-dt-20180611Z-a8ab65",
   "org.scalablytyped" %%% "prex" % "0.4.5-776e86",

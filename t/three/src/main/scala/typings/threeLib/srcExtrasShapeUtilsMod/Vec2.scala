@@ -1,0 +1,21 @@
+package typings
+package threeLib.srcExtrasShapeUtilsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Vec2 extends js.Object {
+  var x: scala.Double
+  var y: scala.Double
+}
+
+object Vec2 {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): Vec2 = {
+    val __obj = js.Dynamic.literal(x = x, y = y)
+  
+    __obj.asInstanceOf[Vec2]
+  }
+}
+

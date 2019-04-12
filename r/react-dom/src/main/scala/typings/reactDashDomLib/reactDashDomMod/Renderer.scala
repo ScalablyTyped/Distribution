@@ -44,28 +44,6 @@ trait Renderer extends js.Object {
     container: stdLib.Element,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
-  def apply(
-    parentComponent: js.Array[reactLib.reactMod.Component[_, js.Object, _]],
-    element: reactLib.reactMod.ReactNs.SFCElement[_],
-    container: stdLib.Element
-  ): scala.Unit = js.native
-  def apply(
-    parentComponent: js.Array[reactLib.reactMod.Component[_, js.Object, _]],
-    element: reactLib.reactMod.ReactNs.SFCElement[_],
-    container: stdLib.Element,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
-  def apply(
-    parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.SFCElement[_],
-    container: stdLib.Element
-  ): scala.Unit = js.native
-  def apply(
-    parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.SFCElement[_],
-    container: stdLib.Element,
-    callback: js.Function0[scala.Unit]
-  ): scala.Unit = js.native
   def apply[T /* <: stdLib.Element */](element: reactLib.reactMod.ReactNs.DOMElement[reactLib.reactMod.ReactNs.DOMAttributes[T], T]): T = js.native
   def apply[T /* <: stdLib.Element */](
     element: reactLib.reactMod.ReactNs.DOMElement[reactLib.reactMod.ReactNs.DOMAttributes[T], T],

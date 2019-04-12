@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "SphereGeometry")
 @js.native
 class SphereGeometry protected ()
-  extends threeLib.threeDashCoreMod.SphereGeometry {
+  extends threeLib.srcGeometriesGeometriesMod.SphereGeometry {
   /**
     * The geometry is created by sweeping and calculating vertexes around the Y axis (horizontal sweep) and the Z axis (vertical sweep). Thus, incomplete spheres (akin to 'sphere slices') can be created through the use of different values of phiStart, phiLength, thetaStart and thetaLength, in order to define the points in which we start (or end) calculating those vertices.
     *

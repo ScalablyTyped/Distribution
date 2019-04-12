@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Uint8BufferAttribute")
 @js.native
 class Uint8BufferAttribute protected ()
-  extends threeLib.threeDashCoreMod.Uint8BufferAttribute {
+  extends threeLib.srcCoreBufferAttributeMod.Uint8BufferAttribute {
   def this(array: stdLib.ArrayBuffer, itemSize: scala.Double) = this()
   def this(array: stdLib.ArrayLike[scala.Double], itemSize: scala.Double) = this()
   def this(array: stdLib.Iterable[scala.Double], itemSize: scala.Double) = this()

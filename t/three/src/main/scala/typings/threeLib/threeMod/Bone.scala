@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Bone")
 @js.native
 class Bone ()
-  extends threeLib.threeDashCoreMod.Bone
+  extends threeLib.srcObjectsBoneMod.Bone
 

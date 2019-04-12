@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Face3")
 @js.native
 class Face3 protected ()
-  extends threeLib.threeDashCoreMod.Face3 {
+  extends threeLib.srcCoreFace3Mod.Face3 {
   /**
     * @param a Vertex A index.
     * @param b Vertex B index.
@@ -18,15 +18,15 @@ class Face3 protected ()
     * @param materialIndex Material index.
     */
   def this(a: scala.Double, b: scala.Double, c: scala.Double) = this()
-  def this(a: scala.Double, b: scala.Double, c: scala.Double, normal: threeLib.threeDashCoreMod.Vector3) = this()
-  def this(a: scala.Double, b: scala.Double, c: scala.Double, vertexNormals: js.Array[threeLib.threeDashCoreMod.Vector3]) = this()
-  def this(a: scala.Double, b: scala.Double, c: scala.Double, normal: threeLib.threeDashCoreMod.Vector3, color: threeLib.threeDashCoreMod.Color) = this()
-  def this(a: scala.Double, b: scala.Double, c: scala.Double, normal: threeLib.threeDashCoreMod.Vector3, vertexColors: js.Array[threeLib.threeDashCoreMod.Color]) = this()
-  def this(a: scala.Double, b: scala.Double, c: scala.Double, vertexNormals: js.Array[threeLib.threeDashCoreMod.Vector3], color: threeLib.threeDashCoreMod.Color) = this()
-  def this(a: scala.Double, b: scala.Double, c: scala.Double, vertexNormals: js.Array[threeLib.threeDashCoreMod.Vector3], vertexColors: js.Array[threeLib.threeDashCoreMod.Color]) = this()
-  def this(a: scala.Double, b: scala.Double, c: scala.Double, normal: threeLib.threeDashCoreMod.Vector3, color: threeLib.threeDashCoreMod.Color, materialIndex: scala.Double) = this()
-  def this(a: scala.Double, b: scala.Double, c: scala.Double, normal: threeLib.threeDashCoreMod.Vector3, vertexColors: js.Array[threeLib.threeDashCoreMod.Color], materialIndex: scala.Double) = this()
-  def this(a: scala.Double, b: scala.Double, c: scala.Double, vertexNormals: js.Array[threeLib.threeDashCoreMod.Vector3], color: threeLib.threeDashCoreMod.Color, materialIndex: scala.Double) = this()
-  def this(a: scala.Double, b: scala.Double, c: scala.Double, vertexNormals: js.Array[threeLib.threeDashCoreMod.Vector3], vertexColors: js.Array[threeLib.threeDashCoreMod.Color], materialIndex: scala.Double) = this()
+  def this(a: scala.Double, b: scala.Double, c: scala.Double, normal: threeLib.srcMathVector3Mod.Vector3) = this()
+  def this(a: scala.Double, b: scala.Double, c: scala.Double, vertexNormals: js.Array[threeLib.srcMathVector3Mod.Vector3]) = this()
+  def this(a: scala.Double, b: scala.Double, c: scala.Double, normal: threeLib.srcMathVector3Mod.Vector3, color: threeLib.srcMathColorMod.Color) = this()
+  def this(a: scala.Double, b: scala.Double, c: scala.Double, normal: threeLib.srcMathVector3Mod.Vector3, vertexColors: js.Array[threeLib.srcMathColorMod.Color]) = this()
+  def this(a: scala.Double, b: scala.Double, c: scala.Double, vertexNormals: js.Array[threeLib.srcMathVector3Mod.Vector3], color: threeLib.srcMathColorMod.Color) = this()
+  def this(a: scala.Double, b: scala.Double, c: scala.Double, vertexNormals: js.Array[threeLib.srcMathVector3Mod.Vector3], vertexColors: js.Array[threeLib.srcMathColorMod.Color]) = this()
+  def this(a: scala.Double, b: scala.Double, c: scala.Double, normal: threeLib.srcMathVector3Mod.Vector3, color: threeLib.srcMathColorMod.Color, materialIndex: scala.Double) = this()
+  def this(a: scala.Double, b: scala.Double, c: scala.Double, normal: threeLib.srcMathVector3Mod.Vector3, vertexColors: js.Array[threeLib.srcMathColorMod.Color], materialIndex: scala.Double) = this()
+  def this(a: scala.Double, b: scala.Double, c: scala.Double, vertexNormals: js.Array[threeLib.srcMathVector3Mod.Vector3], color: threeLib.srcMathColorMod.Color, materialIndex: scala.Double) = this()
+  def this(a: scala.Double, b: scala.Double, c: scala.Double, vertexNormals: js.Array[threeLib.srcMathVector3Mod.Vector3], vertexColors: js.Array[threeLib.srcMathColorMod.Color], materialIndex: scala.Double) = this()
 }
 

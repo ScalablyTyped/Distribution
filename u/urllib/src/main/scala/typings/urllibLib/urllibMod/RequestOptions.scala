@@ -70,7 +70,7 @@ trait RequestOptions extends js.Object {
   /** Accept gzip response content and auto decode it, default is false. */
   var gzip: js.UndefOr[scala.Boolean] = js.undefined
   /** Request headers. */
-  var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var headers: js.UndefOr[nodeLib.httpMod.IncomingHttpHeaders] = js.undefined
   /** HTTPS Agent object. Set false if you does not use agent. */
   var httpsAgent: js.UndefOr[nodeLib.httpsMod.Agent] = js.undefined
   /**
@@ -86,9 +86,7 @@ trait RequestOptions extends js.Object {
   /** The maximum number of redirects to follow, defaults to 10. */
   var maxRedirects: js.UndefOr[scala.Double] = js.undefined
   /** Request method, defaults to GET. Could be GET, POST, DELETE or PUT. Alias 'type'. */
-  var method: js.UndefOr[
-    urllibLib.urllibLibStrings.GET | urllibLib.urllibLibStrings.POST | urllibLib.urllibLibStrings.DELETE | urllibLib.urllibLibStrings.PUT
-  ] = js.undefined
+  var method: js.UndefOr[HttpMethod] = js.undefined
   /**
     * urllib default use querystring to stringify form data which don't support nested object,
     * will use qs instead of querystring to support nested object by set this option to true.
@@ -121,9 +119,7 @@ trait RequestOptions extends js.Object {
   /** Enable timing or not, default is false. */
   var timing: js.UndefOr[scala.Boolean] = js.undefined
   /** Alias method  */
-  var `type`: js.UndefOr[
-    urllibLib.urllibLibStrings.GET | urllibLib.urllibLibStrings.POST | urllibLib.urllibLibStrings.DELETE | urllibLib.urllibLibStrings.PUT
-  ] = js.undefined
+  var `type`: js.UndefOr[HttpMethod] = js.undefined
   /**
     * A writable stream to be piped by the response stream.
     * Responding data will be write to this stream and callback
@@ -154,12 +150,12 @@ object RequestOptions {
     followRedirect: js.UndefOr[scala.Boolean] = js.undefined,
     formatRedirectUrl: (/* a */ js.Any, /* b */ js.Any) => scala.Unit = null,
     gzip: js.UndefOr[scala.Boolean] = js.undefined,
-    headers: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    headers: nodeLib.httpMod.IncomingHttpHeaders = null,
     httpsAgent: nodeLib.httpsMod.Agent = null,
     key: java.lang.String | nodeLib.Buffer = null,
     lookup: nodeLib.netMod.LookupFunction = null,
     maxRedirects: scala.Int | scala.Double = null,
-    method: urllibLib.urllibLibStrings.GET | urllibLib.urllibLibStrings.POST | urllibLib.urllibLibStrings.DELETE | urllibLib.urllibLibStrings.PUT = null,
+    method: HttpMethod = null,
     nestedQuerystring: js.UndefOr[scala.Boolean] = js.undefined,
     passphrase: java.lang.String = null,
     pfx: java.lang.String | nodeLib.Buffer = null,
@@ -170,7 +166,7 @@ object RequestOptions {
     streaming: js.UndefOr[scala.Boolean] = js.undefined,
     timeout: scala.Double | js.Array[scala.Double] = null,
     timing: js.UndefOr[scala.Boolean] = js.undefined,
-    `type`: urllibLib.urllibLibStrings.GET | urllibLib.urllibLibStrings.POST | urllibLib.urllibLibStrings.DELETE | urllibLib.urllibLibStrings.PUT = null,
+    `type`: HttpMethod = null,
     writeStream: nodeLib.streamMod.Writable = null
   ): RequestOptions = {
     val __obj = js.Dynamic.literal()
@@ -198,7 +194,7 @@ object RequestOptions {
     if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     if (lookup != null) __obj.updateDynamic("lookup")(lookup)
     if (maxRedirects != null) __obj.updateDynamic("maxRedirects")(maxRedirects.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method)
     if (!js.isUndefined(nestedQuerystring)) __obj.updateDynamic("nestedQuerystring")(nestedQuerystring)
     if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
     if (pfx != null) __obj.updateDynamic("pfx")(pfx.asInstanceOf[js.Any])
@@ -209,7 +205,7 @@ object RequestOptions {
     if (!js.isUndefined(streaming)) __obj.updateDynamic("streaming")(streaming)
     if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     if (!js.isUndefined(timing)) __obj.updateDynamic("timing")(timing)
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (writeStream != null) __obj.updateDynamic("writeStream")(writeStream)
     __obj.asInstanceOf[RequestOptions]
   }

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "angular__platform-browser-dynamic"
-version := "7.2.12-b40862"
+version := "7.2.12-db634d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular__common" % "7.2.12-55c668",
+  "org.scalablytyped" %%% "angular__common" % "7.2.12-dda20a",
   "org.scalablytyped" %%% "angular__compiler" % "7.2.12-fb0c0c",
-  "org.scalablytyped" %%% "angular__core" % "7.2.12-6d9db8",
-  "org.scalablytyped" %%% "angular__platform-browser" % "7.2.12-541408",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
+  "org.scalablytyped" %%% "angular__core" % "7.2.12-501ef9",
+  "org.scalablytyped" %%% "angular__platform-browser" % "7.2.12-3b3b03",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
   "org.scalablytyped" %%% "rxjs" % "6.4.0-f8b93e",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "tslib" % "1.9.3-446b32",

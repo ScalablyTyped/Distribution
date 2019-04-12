@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-sort"
-version := "0.0-unknown-dt-20190322Z-44b8a6"
+version := "0.0-unknown-dt-20190322Z-76fee2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,12 +10,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "chalk" % "2.4.2-ca1e30",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-5a34a6",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20190322Z-faeaa3",
-  "org.scalablytyped" %%% "gulp-util" % "3.0-dt-20180315Z-6fbdd3",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
+  "org.scalablytyped" %%% "gulp-util" % "3.0-dt-20180315Z-735038",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
   "org.scalablytyped" %%% "std" % "3.4-d52857",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-1b70da",
-  "org.scalablytyped" %%% "through2" % "2.0-dt-20190322Z-189997",
-  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20181121Z-8ef541")
+  "org.scalablytyped" %%% "through2" % "2.0-dt-20190322Z-001cca",
+  "org.scalablytyped" %%% "vinyl" % "2.0-dt-20190409Z-94425c")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

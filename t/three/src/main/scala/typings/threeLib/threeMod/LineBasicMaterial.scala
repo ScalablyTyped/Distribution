@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "LineBasicMaterial")
 @js.native
 class LineBasicMaterial ()
-  extends threeLib.threeDashCoreMod.LineBasicMaterial {
-  def this(parameters: threeLib.threeDashCoreMod.LineBasicMaterialParameters) = this()
+  extends threeLib.srcMaterialsMaterialsMod.LineBasicMaterial {
+  def this(parameters: threeLib.srcMaterialsLineBasicMaterialMod.LineBasicMaterialParameters) = this()
 }
 

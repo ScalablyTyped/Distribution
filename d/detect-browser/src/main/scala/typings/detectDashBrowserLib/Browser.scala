@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   - detectDashBrowserLib.detectDashBrowserLibStrings.kakaotalk
   - detectDashBrowserLib.detectDashBrowserLibStrings.samsung
   - detectDashBrowserLib.detectDashBrowserLibStrings.silk
+  - detectDashBrowserLib.detectDashBrowserLibStrings.miui
   - detectDashBrowserLib.detectDashBrowserLibStrings.chrome
   - detectDashBrowserLib.detectDashBrowserLibStrings.phantomjs
   - detectDashBrowserLib.detectDashBrowserLibStrings.crios

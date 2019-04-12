@@ -15,6 +15,7 @@
  * Once you don't want autoscroll any more, just dispose the helper and it will unhook events.
  *
  * @public
+ * {@docCategory AutoScroll}
  */
 /**
  * EventRecord interface.
@@ -30,6 +31,7 @@
  * Change description used for change callbacks in GlobalSettings.
  *
  * @public
+ * {@docCategory IChangeDescription}
  */
 /**
  * @deprecated Use `IProcessedStyleSet` from `@uifabric/styling` or `@uifabric/merge-styles` instead.
@@ -38,25 +40,31 @@
  * Properties used by render function interface for providing overrideable render callbacks.
  *
  * @public
+ * {@docCategory IComponentAsProps}
  */
 /**
  * Disposable interface.
  *
  * @public
+ * {@docCategory IDisposable}
  */
 /**
  * Point interface.
  *
  * @public
+ * {@docCategory IPoint}
  */
 /**
  * Rectangle interface.
  *
  * @public
+ * {@docCategory IRectangle}
  */
 /**
  * An interface representing a component that will not output any DOM, will just render its children and
  * pass through items to modify the children.
+ *
+ * {@docCategory IRenderComponent}
  */
 /**
  * Render function interface for providing overrideable render callbacks.
@@ -64,14 +72,19 @@
  * @public
  */
 /**
+ * {@docCategory ISize}
+ */
+/**
  * Simulated enum for keycodes. These will get inlined by uglify when used much like an enum
  *
  * @public
+ * {@docCategory KeyCodes}
  */
 /**
  * Rectangle helper class.
  *
  * @public
+ * {@docCategory Rectangle}
  */
 /**
  * Returns a single function which will call each of the given functions in the context of the

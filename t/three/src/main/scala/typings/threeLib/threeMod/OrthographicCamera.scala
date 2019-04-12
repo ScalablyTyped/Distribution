@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "OrthographicCamera")
 @js.native
 class OrthographicCamera protected ()
-  extends threeLib.threeDashCoreMod.OrthographicCamera {
+  extends threeLib.srcCamerasOrthographicCameraMod.OrthographicCamera {
   /**
     * @param left Camera frustum left plane.
     * @param right Camera frustum right plane.

@@ -8,5 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait With
   extends WithRaw
-     with WithWrapped
+     with WithWrapped {
+  /* InferMemberOverrides */
+  override def apply(alias: java.lang.String, raw: QueryBuilder): QueryBuilder = js.native
+}
 

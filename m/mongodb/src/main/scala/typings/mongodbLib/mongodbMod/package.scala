@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object mongodbMod {
   type AggregationCursorResult = js.Object | scala.Null
-  type CollectionMapFunction = js.Function0[scala.Unit]
-  type CollectionReduceFunction = js.Function2[/* key */ java.lang.String, /* values */ js.Any, js.Any]
+  type CollectionMapFunction[TSchema] = js.ThisFunction0[/* this */ TSchema, scala.Unit]
+  type CollectionReduceFunction[TKey, TValue] = js.Function2[/* key */ TKey, /* values */ js.Array[TValue], TValue]
   type CommandCursorResult = js.Object | scala.Null
   type CursorResult = js.Object | scala.Null | scala.Boolean
   type EndCallback = js.Function1[/* error */ MongoError, scala.Unit]

@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FocusInEventArgs extends js.Object {
-  /** Set to true when the event has to be canceled, else false.
-    */
-  var cancel: js.UndefOr[scala.Boolean] = js.undefined
   /** returns the DatePicker model.
     */
   var model: js.UndefOr[Model] = js.undefined
@@ -22,14 +19,8 @@ trait FocusInEventArgs extends js.Object {
 
 object FocusInEventArgs {
   @scala.inline
-  def apply(
-    cancel: js.UndefOr[scala.Boolean] = js.undefined,
-    model: Model = null,
-    `type`: java.lang.String = null,
-    value: java.lang.String = null
-  ): FocusInEventArgs = {
+  def apply(model: Model = null, `type`: java.lang.String = null, value: java.lang.String = null): FocusInEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
     if (model != null) __obj.updateDynamic("model")(model)
     if (`type` != null) __obj.updateDynamic("type")(`type`)
     if (value != null) __obj.updateDynamic("value")(value)

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hard-rejection"
-version := "1.0-dt-20180214Z-4093ee"
+version := "2.1.0-3a18bb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "WebGLExtensions")
 @js.native
 class WebGLExtensions protected ()
-  extends threeLib.threeDashCoreMod.WebGLExtensions {
+  extends threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions {
   def this(gl: stdLib.WebGLRenderingContext) = this()
 }
 

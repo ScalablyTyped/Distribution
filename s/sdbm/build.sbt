@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sdbm"
-version := "1.0-dt-20181209Z-1f0357"
+version := "1.2.0-db8ffa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -821,6 +821,10 @@ object reactDashNativeLibStrings {
     extends reactDashNativeLib.reactDashNativeMod.KeyboardEventEasing
   
   @js.native
+  sealed trait `lining-nums`
+    extends reactDashNativeLib.reactDashNativeMod.FontVariant
+  
+  @js.native
   sealed trait link
     extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
        with AccessibilityTrait
@@ -961,6 +965,10 @@ object reactDashNativeLibStrings {
     extends reactDashNativeLib.reactDashNativeMod.KeyboardType
   
   @js.native
+  sealed trait `oldstyle-nums`
+    extends reactDashNativeLib.reactDashNativeMod.FontVariant
+  
+  @js.native
   sealed trait omit extends RequestCredentials_
   
   @js.native
@@ -1040,6 +1048,10 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait progress extends js.Object
+  
+  @js.native
+  sealed trait `proportional-nums`
+    extends reactDashNativeLib.reactDashNativeMod.FontVariant
   
   @js.native
   sealed trait radiobutton_checked extends js.Object
@@ -1149,6 +1161,10 @@ object reactDashNativeLibStrings {
   sealed trait small extends js.Object
   
   @js.native
+  sealed trait `small-caps`
+    extends reactDashNativeLib.reactDashNativeMod.FontVariant
+  
+  @js.native
   sealed trait solid extends js.Object
   
   @js.native
@@ -1193,6 +1209,10 @@ object reactDashNativeLibStrings {
   sealed trait summary
     extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
        with AccessibilityTrait
+  
+  @js.native
+  sealed trait `tabular-nums`
+    extends reactDashNativeLib.reactDashNativeMod.FontVariant
   
   @js.native
   sealed trait tail extends js.Object
@@ -1772,6 +1792,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
+  def `lining-nums`: `lining-nums` = "lining-nums".asInstanceOf[`lining-nums`]
+  @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline
   def load: load = "load".asInstanceOf[load]
@@ -1852,6 +1874,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   @scala.inline
+  def `oldstyle-nums`: `oldstyle-nums` = "oldstyle-nums".asInstanceOf[`oldstyle-nums`]
+  @scala.inline
   def omit: omit = "omit".asInstanceOf[omit]
   @scala.inline
   def `on-drag`: `on-drag` = "on-drag".asInstanceOf[`on-drag`]
@@ -1903,6 +1927,8 @@ object reactDashNativeLibStrings {
   def previous: previous = "previous".asInstanceOf[previous]
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
+  @scala.inline
+  def `proportional-nums`: `proportional-nums` = "proportional-nums".asInstanceOf[`proportional-nums`]
   @scala.inline
   def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
   @scala.inline
@@ -1966,6 +1992,8 @@ object reactDashNativeLibStrings {
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   @scala.inline
+  def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
+  @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
   @scala.inline
   def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
@@ -1993,6 +2021,8 @@ object reactDashNativeLibStrings {
   def sublocality: sublocality = "sublocality".asInstanceOf[sublocality]
   @scala.inline
   def summary: summary = "summary".asInstanceOf[summary]
+  @scala.inline
+  def `tabular-nums`: `tabular-nums` = "tabular-nums".asInstanceOf[`tabular-nums`]
   @scala.inline
   def tail: tail = "tail".asInstanceOf[tail]
   @scala.inline

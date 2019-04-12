@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "TorusGeometry")
 @js.native
 class TorusGeometry ()
-  extends threeLib.threeDashCoreMod.TorusGeometry {
+  extends threeLib.srcGeometriesGeometriesMod.TorusGeometry {
   def this(radius: scala.Double) = this()
   def this(radius: scala.Double, tube: scala.Double) = this()
   def this(radius: scala.Double, tube: scala.Double, radialSegments: scala.Double) = this()

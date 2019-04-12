@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "arrify"
-version := "1.0-dt-20180509Z-d4bc38"
+version := "2.0.1-d2905f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -30,13 +30,15 @@ trait XLRibbon extends js.Object {
     * @param {string} Pass the cell reference.
     * @param {string} Optional. Pass comment, if you want.
     * @param {number} Optional. Pass the sheet index.
+    * @param {string} Optional. Pass the scope of the name manager.
     * @returns {void}
     */
   def addNamedRange(
     name: java.lang.String,
     refersTo: java.lang.String,
     comment: java.lang.String,
-    sheetIdx: scala.Double
+    sheetIdx: scala.Double,
+    scope: java.lang.String
   ): scala.Unit = js.native
   /** This method is used to dynamically add the tab in the ribbon.
     * @param {string} Specifies the text to be displayed in the tab.
@@ -75,9 +77,10 @@ trait XLRibbon extends js.Object {
   def removeMenuItem(index: scala.Double): scala.Unit = js.native
   /** This method is used to delete the defined name in the Spreadsheet name manager.
     * @param {string} Pass the defined name that you want to remove from name manager.
+    * @param {string} Optional. Pass the scope of the name manager.
     * @returns {void}
     */
-  def removeNamedRange(name: java.lang.String): scala.Unit = js.native
+  def removeNamedRange(name: java.lang.String, scope: java.lang.String): scala.Unit = js.native
   /** This method is used to remove the tab form ribbon in the spreadsheet.
     * @param {number} Specifies the index of the tab to be removed from the ribbon.
     * @param {boolean} pass the boolean value to remove the tab from ribbon

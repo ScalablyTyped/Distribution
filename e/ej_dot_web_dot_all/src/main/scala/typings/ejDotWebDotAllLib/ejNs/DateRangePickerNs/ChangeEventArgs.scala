@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChangeEventArgs extends js.Object {
-  /** Set to true when the event has to be canceled, else false.
-    */
-  var cancel: js.UndefOr[scala.Boolean] = js.undefined
   /** returns the endDate of the DateRangePicker popup.
     */
   var endDate: js.UndefOr[js.Any] = js.undefined
@@ -29,7 +26,6 @@ trait ChangeEventArgs extends js.Object {
 object ChangeEventArgs {
   @scala.inline
   def apply(
-    cancel: js.UndefOr[scala.Boolean] = js.undefined,
     endDate: js.Any = null,
     model: Model = null,
     startDate: js.Any = null,
@@ -37,7 +33,6 @@ object ChangeEventArgs {
     value: java.lang.String = null
   ): ChangeEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
     if (endDate != null) __obj.updateDynamic("endDate")(endDate)
     if (model != null) __obj.updateDynamic("model")(model)
     if (startDate != null) __obj.updateDynamic("startDate")(startDate)

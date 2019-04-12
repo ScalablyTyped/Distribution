@@ -17,7 +17,7 @@ trait FinalState[D] extends TableProps[D, D] {
   var hasHeaderGroups: scala.Boolean = js.native
   var headerGroups: js.Array[_] = js.native
   var padRows: scala.Double = js.native
-  var pageRows: scala.Double = js.native
+  var pageRows: js.Array[DerivedDataObject] = js.native
   var resolvedData: js.Array[DerivedDataObject] = js.native
   var rowMinWidth: scala.Double = js.native
   var sortedData: js.Array[DerivedDataObject] = js.native

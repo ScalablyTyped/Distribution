@@ -22,6 +22,7 @@ trait Spreadsheet extends js.Object {
   def autoResizeColumn(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def copy(name: java.lang.String): Spreadsheet = js.native
   def createDeveloperMetadataFinder(): DeveloperMetadataFinder = js.native
+  def createTextFinder(findText: java.lang.String): TextFinder = js.native
   def deleteActiveSheet(): Sheet = js.native
   def deleteColumn(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Sheet = js.native
   def deleteColumns(
@@ -53,8 +54,10 @@ trait Spreadsheet extends js.Object {
   def getFrozenRows(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getId(): java.lang.String = js.native
   def getImages(): js.Array[OverGridImage] = js.native
+  def getIterativeCalculationConvergenceThreshold(): stdLib.Number = js.native
   def getLastColumn(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getLastRow(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
+  def getMaxIterativeCalculationCycles(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getName(): java.lang.String = js.native
   def getNamedRanges(): js.Array[NamedRange] = js.native
   def getNumSheets(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
@@ -63,6 +66,7 @@ trait Spreadsheet extends js.Object {
   def getRange(a1Notation: java.lang.String): Range = js.native
   def getRangeByName(name: java.lang.String): Range = js.native
   def getRangeList(a1Notations: js.Array[java.lang.String]): RangeList = js.native
+  def getRecalculationInterval(): RecalculationInterval = js.native
   def getRowHeight(rowPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getSelection(): Selection = js.native
   def getSheetByName(name: java.lang.String): Sheet = js.native
@@ -142,9 +146,11 @@ trait Spreadsheet extends js.Object {
   def isAnonymousView(): scala.Boolean = js.native
   def isAnonymousWrite(): scala.Boolean = js.native
   def isColumnHiddenByUser(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean = js.native
+  def isIterativeCalculationEnabled(): scala.Boolean = js.native
   def isRowHiddenByFilter(rowPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean = js.native
   def isRowHiddenByUser(rowPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean = js.native
   def moveActiveSheet(pos: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
+  def moveChartToObjectSheet(chart: EmbeddedChart): Sheet = js.native
   def removeEditor(emailAddress: java.lang.String): Spreadsheet = js.native
   def removeEditor(user: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User): Spreadsheet = js.native
   def removeMenu(name: java.lang.String): scala.Unit = js.native
@@ -167,7 +173,11 @@ trait Spreadsheet extends js.Object {
   def setCurrentCell(cell: Range): Range = js.native
   def setFrozenColumns(columns: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
   def setFrozenRows(rows: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Unit = js.native
+  def setIterativeCalculationConvergenceThreshold(minThreshold: stdLib.Number): Spreadsheet = js.native
+  def setIterativeCalculationEnabled(isEnabled: scala.Boolean): Spreadsheet = js.native
+  def setMaxIterativeCalculationCycles(maxIterations: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Spreadsheet = js.native
   def setNamedRange(name: java.lang.String, range: Range): scala.Unit = js.native
+  def setRecalculationInterval(recalculationInterval: RecalculationInterval): Spreadsheet = js.native
   def setRowHeight(
     rowPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     height: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * This creates a new BufferGeometry. It also sets several properties to an default value.
   */
 class BufferGeometry ()
-  extends threeLib.threeDashCoreMod.BufferGeometry
+  extends threeLib.srcCoreBufferGeometryMod.BufferGeometry
 
 /* static members */
 @JSImport("three", "BufferGeometry")

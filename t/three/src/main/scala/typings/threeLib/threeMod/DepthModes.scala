@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object DepthModes extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.threeDashCoreMod.DepthModes with java.lang.String] = js.native
+  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.DepthModes with java.lang.String] = js.native
 }
 

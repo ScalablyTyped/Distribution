@@ -4,4 +4,9 @@
 // Definitions by: Johannes Henninger <https://github.com/jhenninger>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
+/**
+ *  The WebAssembly Web API defines extensions to the JavaScript API made
+ *  available specifically in web browsers. See [WebAssembly Web
+ *  API](https://www.w3.org/TR/wasm-web-api-1/) for more information.
+ */
 ```

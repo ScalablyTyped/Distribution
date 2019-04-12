@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "SkeletonHelper")
 @js.native
 class SkeletonHelper protected ()
-  extends threeLib.threeDashCoreMod.SkeletonHelper {
-  def this(bone: threeLib.threeDashCoreMod.Object3D) = this()
+  extends threeLib.srcHelpersSkeletonHelperMod.SkeletonHelper {
+  def this(bone: threeLib.srcCoreObject3DMod.Object3D) = this()
 }
 

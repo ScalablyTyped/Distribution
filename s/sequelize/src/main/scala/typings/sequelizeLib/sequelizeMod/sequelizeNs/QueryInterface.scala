@@ -352,10 +352,10 @@ trait QueryInterface extends js.Object {
   def escape(value: scala.Double): java.lang.String = js.native
   def escape(value: stdLib.Date): java.lang.String = js.native
   /**
-    * Returns all foreign key constraints of a table
+    * Returns all foreign key constraints of each table in list
     */
-  def getForeignKeysForTables(tableNames: java.lang.String): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
-  def getForeignKeysForTables(tableNames: java.lang.String, options: QueryInterfaceOptions): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
+  def getForeignKeysForTables(tableNames: js.Array[java.lang.String]): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
+  def getForeignKeysForTables(tableNames: js.Array[java.lang.String], options: QueryInterfaceOptions): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
   /**
     * Increments a row value
     */

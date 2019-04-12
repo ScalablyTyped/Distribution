@@ -69,15 +69,13 @@ trait Editor extends js.Object {
   /** Returns an { left , top , bottom } object containing the coordinates of the cursor position.
     If mode is "local", they will be relative to the top-left corner of the editable document.
     If it is "page" or not given, they are relative to the top-left corner of the page.
-    where specifies the precise position at which you want to measure. */
+    where is a boolean indicating whether you want the start(true) or the end(false) of the selection. */
+  def cursorCoords(): codemirrorLib.Anon_BottomLeft = js.native
   def cursorCoords(where: Position): codemirrorLib.Anon_BottomLeft = js.native
   def cursorCoords(where: Position, mode: CoordsMode): codemirrorLib.Anon_BottomLeft = js.native
-  /** Returns an { left , top , bottom } object containing the coordinates of the cursor position.
-    If mode is "local", they will be relative to the top-left corner of the editable document.
-    If it is "page" or not given, they are relative to the top-left corner of the page.
-    where is a boolean indicating whether you want the start(true) or the end(false) of the selection. */
   def cursorCoords(where: scala.Boolean): codemirrorLib.Anon_BottomLeft = js.native
   def cursorCoords(where: scala.Boolean, mode: CoordsMode): codemirrorLib.Anon_BottomLeft = js.native
+  def cursorCoords(where: scala.Null, mode: CoordsMode): codemirrorLib.Anon_BottomLeft = js.native
   /** Returns the pixel width of an 'x' in the default font for the editor.
     (Note that for non - monospace fonts , this is mostly useless, and even for monospace fonts, non - ascii characters might have a different width). */
   def defaultCharWidth(): scala.Double = js.native
@@ -318,6 +316,12 @@ trait Editor extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  /** Fires when the overwrite flag is flipped. */
+  @JSName("on")
+  def on_overwriteToggle(
+    eventName: codemirrorLib.codemirrorLibStrings.overwriteToggle,
+    handler: js.Function2[/* instance */ this.type, /* overwrite */ scala.Boolean, scala.Unit]
+  ): scala.Unit = js.native
   /** Fired whenever a line is (re-)rendered to the DOM. Fired right after the DOM element is built, before it is added to the document.
     The handler may mess with the style of the resulting element, or add event handlers, but should not try to change the state of the editor. */
   @JSName("on")
@@ -371,6 +375,7 @@ trait Editor extends js.Object {
   def scrollIntoView(): scala.Unit = js.native
   /** Scrolls the given element into view. pos is a { left , top , right , bottom } object, in editor-local coordinates.
     The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
+  def scrollIntoView(pos: codemirrorLib.Anon_Bottom): scala.Unit = js.native
   def scrollIntoView(pos: codemirrorLib.Anon_Bottom, margin: scala.Double): scala.Unit = js.native
   /** Scrolls the given element into view. pos is a { line, ch } object, in editor-local coordinates.
     The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
@@ -378,6 +383,7 @@ trait Editor extends js.Object {
   def scrollIntoView(pos: codemirrorLib.Anon_ChLine, margin: scala.Double): scala.Unit = js.native
   /** Scrolls the given element into view. pos is a { from, to } object, in editor-local coordinates.
     The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
+  def scrollIntoView(pos: codemirrorLib.Anon_From): scala.Unit = js.native
   def scrollIntoView(pos: codemirrorLib.Anon_From, margin: scala.Double): scala.Unit = js.native
   /** Scrolls the given element into view. pos is a { line , ch } position, referring to a given character, null, to refer to the cursor.
     The margin parameter is optional. When given, it indicates the amount of pixels around the given area that should be made visible as well. */
@@ -411,6 +417,10 @@ trait Editor extends js.Object {
   /** Tries to uncomment the current selection, and if that fails, line-comments it. */
   def toggleComment(): scala.Unit = js.native
   def toggleComment(options: CommentOptions): scala.Unit = js.native
+  /** Switches between overwrite and normal insert mode (when not given an argument),
+    or sets the overwrite mode to a specific state (when given an argument). */
+  def toggleOverwrite(): scala.Unit = js.native
+  def toggleOverwrite(value: scala.Boolean): scala.Unit = js.native
   /** Try to uncomment the given range. Returns `true` if a comment range was found and removed, `false` otherwise. */
   def uncomment(from: Position, to: Position): scala.Boolean = js.native
   def uncomment(from: Position, to: Position, options: CommentOptions): scala.Boolean = js.native

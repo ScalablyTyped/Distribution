@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_LightMap extends js.Object {
-  var lightMap: threeLib.threeDashCoreMod.IUniform
-  var lightMapIntensity: threeLib.threeDashCoreMod.IUniform
+  var lightMap: threeLib.srcRenderersShadersUniformsLibMod.IUniform
+  var lightMapIntensity: threeLib.srcRenderersShadersUniformsLibMod.IUniform
 }
 
 object Anon_LightMap {
   @scala.inline
   def apply(
-    lightMap: threeLib.threeDashCoreMod.IUniform,
-    lightMapIntensity: threeLib.threeDashCoreMod.IUniform
+    lightMap: threeLib.srcRenderersShadersUniformsLibMod.IUniform,
+    lightMapIntensity: threeLib.srcRenderersShadersUniformsLibMod.IUniform
   ): Anon_LightMap = {
     val __obj = js.Dynamic.literal(lightMap = lightMap, lightMapIntensity = lightMapIntensity)
   

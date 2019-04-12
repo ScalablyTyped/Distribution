@@ -84,7 +84,10 @@ class Account () extends Resource {
     * @param opts indicates what to buy
     * @param cb receives transaction that you can use to commit the buy
     */
-  def buy(opts: BuyOpts, cb: js.Function2[/* error */ stdLib.Error, /* result */ Buy, scala.Unit]): scala.Unit = js.native
+  def buy(
+    opts: BuyOpts,
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Buy, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Creates a new address for an account. As all the arguments are optinal, it’s possible just to do a empty POST which will create a new
     * address. This is handy if you need to create new receive addresses for an account on-demand.
@@ -94,9 +97,12 @@ class Account () extends Resource {
     */
   def createAddress(
     opts: CreateAddressOpts,
-    cb: js.Function2[/* error */ stdLib.Error, /* result */ Address, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Address, scala.Unit]
   ): scala.Unit = js.native
-  def createAddress(opts: scala.Null, cb: js.Function2[/* error */ stdLib.Error, /* result */ Address, scala.Unit]): scala.Unit = js.native
+  def createAddress(
+    opts: scala.Null,
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Address, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Removes user’s account. In order to remove an account it can’t be:
     * - Primary account
@@ -105,62 +111,81 @@ class Account () extends Resource {
     * - Vault with a pending withdrawal
     * Scope: wallet:accounts:delete
     */
-  def delete(cb: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit = js.native
+  def delete(cb: js.Function1[/* error */ stdLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
   /**
     * Deposits user-defined amount of funds to a fiat account.
     * Scope: wallet:deposits:create
     */
-  def deposit(opts: DepositOpts, cb: js.Function2[/* error */ stdLib.Error, /* result */ Deposit, scala.Unit]): scala.Unit = js.native
+  def deposit(
+    opts: DepositOpts,
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Deposit, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Show an individual address for an account. A regular bitcoin, litecoin or ethereum address can be used in place of `id` but the
     * address has to be associated to the correct account. Important: Addresses should be considered one time use only. Create new addresses.
     * Scope: wallet:addresses:read
     * @param id resource id or a regular bitcoin, litecoin or ethereum address
     */
-  def getAddress(id: java.lang.String, cb: js.Function2[/* error */ stdLib.Error, /* result */ Address, scala.Unit]): scala.Unit = js.native
+  def getAddress(
+    id: java.lang.String,
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Address, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Lists addresses for an account. Important: Addresses should be considered one time use only. Create new addresses.
     * Scope: wallet:addresses:read
     */
-  def getAddresses(cb: js.Function2[/* error */ stdLib.Error, /* result */ js.Array[Address], scala.Unit]): scala.Unit = js.native
+  def getAddresses(
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ js.Array[Address], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Show an individual buy.
     * Scope: wallet:buys:read
     * @param id resource id
     */
-  def getBuy(id: java.lang.String, cb: js.Function2[/* error */ stdLib.Error, /* result */ Buy, scala.Unit]): scala.Unit = js.native
+  def getBuy(
+    id: java.lang.String,
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Buy, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Lists buys for an account.
     * Scope: wallet:buys:read
     */
   def getBuys(
     opts: scala.Null,
-    cb: js.Function2[/* error */ stdLib.Error, /* result */ js.Array[Buy], scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ js.Array[Buy], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Show an individual deposit.
     * Scope: wallet:deposits:read
     * @param id resource id
     */
-  def getDeposit(id: java.lang.String, cb: js.Function2[/* error */ stdLib.Error, /* result */ Deposit, scala.Unit]): scala.Unit = js.native
+  def getDeposit(
+    id: java.lang.String,
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Deposit, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Lists deposits for an account.
     * Scope: wallet:deposits:read
     */
-  def getDeposits(cb: js.Function2[/* error */ stdLib.Error, /* result */ js.Array[Deposit], scala.Unit]): scala.Unit = js.native
+  def getDeposits(
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ js.Array[Deposit], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Show an individual sell.
     * Scope: wallet:sells:read
     * @param id resource id
     */
-  def getSell(id: java.lang.String, cb: js.Function2[/* error */ stdLib.Error, /* result */ Sell, scala.Unit]): scala.Unit = js.native
+  def getSell(
+    id: java.lang.String,
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Sell, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Lists sells for an account.
     * Scope: wallet:sells:read
     */
   def getSells(
     opts: scala.Null,
-    cb: js.Function2[/* error */ stdLib.Error, /* result */ js.Array[Sell], scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ js.Array[Sell], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Show an individual transaction for an account
@@ -169,13 +194,19 @@ class Account () extends Resource {
     */
   def getTransaction(
     id: java.lang.String,
-    cb: js.Function2[/* error */ stdLib.Error, /* result */ Transaction, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Transaction, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Lists account’s transactions.
     * Scope: wallet:transactions:read
     */
-  def getTransactions(cb: js.Function2[/* error */ stdLib.Error, /* result */ js.Array[Transaction], scala.Unit]): scala.Unit = js.native
+  def getTransactions(
+    cb: js.Function2[
+      /* error */ stdLib.Error | scala.Null, 
+      /* result */ js.Array[Transaction], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   /**
     * Show an individual withdrawal.
     * Scope: wallet:withdrawals:read
@@ -183,20 +214,22 @@ class Account () extends Resource {
     */
   def getWithdrawal(
     id: java.lang.String,
-    cb: js.Function2[/* error */ stdLib.Error, /* result */ Withdrawal, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Withdrawal, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Lists withdrawals for an account.
     * Scope: wallet:withdrawals:read
     */
-  def getWithdrawals(cb: js.Function2[/* error */ stdLib.Error, /* result */ js.Array[Withdrawal], scala.Unit]): scala.Unit = js.native
+  def getWithdrawals(
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ js.Array[Withdrawal], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Requests money from an email address.
     * Scope: wallet:transactions:request
     */
   def requestMoney(
     opts: RequestMoneyOpts,
-    cb: js.Function2[/* error */ stdLib.Error, /* result */ Transaction, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Transaction, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Sells a user-defined amount of bitcoin, litecoin or ethereum.
@@ -216,7 +249,10 @@ class Account () extends Resource {
     * the user when they are filling a form or similar situation.
     * Scope: wallet:sells:create
     */
-  def sell(opts: SellOpts, cb: js.Function2[/* error */ stdLib.Error, /* result */ Sell, scala.Unit]): scala.Unit = js.native
+  def sell(
+    opts: SellOpts,
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Sell, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Send funds to a bitcoin address, litecoin address, ethereum address, or email address. No transaction fees are required for off
     * blockchain bitcoin transactions.
@@ -235,13 +271,13 @@ class Account () extends Resource {
     */
   def sendMoney(
     opts: SendMoneyOpts,
-    cb: js.Function2[/* error */ stdLib.Error, /* result */ Transaction, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Transaction, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Promote an account as primary account.
     * Scope: wallet:accounts:update
     */
-  def setPrimary(cb: js.Function2[/* error */ stdLib.Error, /* result */ this.type, scala.Unit]): scala.Unit = js.native
+  def setPrimary(cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ this.type, scala.Unit]): scala.Unit = js.native
   /**
     * Transfer bitcoin, litecoin or ethereum between two of a user’s accounts. Following transfers are allowed:
     * - wallet to wallet
@@ -250,7 +286,7 @@ class Account () extends Resource {
     */
   def transferMoney(
     opts: TransferMoneyOpts,
-    cb: js.Function2[/* error */ stdLib.Error, /* result */ Transaction, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Transaction, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Modifies user’s account.
@@ -258,7 +294,7 @@ class Account () extends Resource {
     */
   def update(
     opts: UpdateAccountOpts,
-    cb: js.Function2[/* error */ stdLib.Error, /* result */ this.type, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ this.type, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Withdraws user-defined amount of funds from a fiat account.
@@ -266,7 +302,7 @@ class Account () extends Resource {
     */
   def withdraw(
     opts: WithdrawOpts,
-    cb: js.Function2[/* error */ stdLib.Error, /* result */ Withdrawal, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Withdrawal, scala.Unit]
   ): scala.Unit = js.native
 }
 

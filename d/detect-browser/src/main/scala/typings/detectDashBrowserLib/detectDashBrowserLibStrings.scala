@@ -130,6 +130,9 @@ object detectDashBrowserLibStrings {
   sealed trait kakaotalk extends Browser
   
   @js.native
+  sealed trait miui extends Browser
+  
+  @js.native
   sealed trait node extends js.Object
   
   @js.native
@@ -241,6 +244,8 @@ object detectDashBrowserLibStrings {
   def `ios-webview`: `ios-webview` = "ios-webview".asInstanceOf[`ios-webview`]
   @scala.inline
   def kakaotalk: kakaotalk = "kakaotalk".asInstanceOf[kakaotalk]
+  @scala.inline
+  def miui: miui = "miui".asInstanceOf[miui]
   @scala.inline
   def node: node = "node".asInstanceOf[node]
   @scala.inline

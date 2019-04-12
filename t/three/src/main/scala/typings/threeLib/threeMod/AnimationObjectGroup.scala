@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "AnimationObjectGroup")
 @js.native
 class AnimationObjectGroup protected ()
-  extends threeLib.threeDashCoreMod.AnimationObjectGroup {
+  extends threeLib.srcAnimationAnimationObjectGroupMod.AnimationObjectGroup {
   def this(args: js.Any*) = this()
 }
 

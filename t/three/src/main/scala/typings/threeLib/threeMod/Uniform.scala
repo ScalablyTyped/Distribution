@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Uniform")
 @js.native
 class Uniform protected ()
-  extends threeLib.threeDashCoreMod.Uniform {
+  extends threeLib.srcCoreUniformMod.Uniform {
   def this(value: js.Any) = this()
   /**
     * @deprecated

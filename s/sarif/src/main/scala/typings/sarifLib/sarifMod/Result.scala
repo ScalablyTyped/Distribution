@@ -104,7 +104,7 @@ trait Result extends js.Object {
     */
   var ruleId: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The index within the run resources array of the rule object associated with this result.
+    * The index within the tool component rules array of the rule object associated with this result.
     */
   var ruleIndex: js.UndefOr[scala.Double] = js.undefined
   /**

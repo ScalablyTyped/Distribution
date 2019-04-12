@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-spinners"
-version := "0.5.4-18d495"
+version := "0.5.4-d116e5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,10 +14,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "emotion__sheet" % "0.9.2-a7f9c3",
   "org.scalablytyped" %%% "emotion__stylis" % "0.8.3-4bdcd9",
   "org.scalablytyped" %%% "emotion__utils" % "0.11.1-255ee0",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-f7ff2b",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190403Z-3351b3",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190322Z-511913",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190411Z-db2943",
   "org.scalablytyped" %%% "recompose" % "0.30-dt-20190322Z-31c3a3",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false

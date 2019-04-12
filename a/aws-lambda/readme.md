@@ -28,7 +28,6 @@
 //                 Erik Dalén <https://github.com/dalen>
 //                 Loïk Gaonac'h <https://github.com/loikg>
 //                 Roberto Zen <https://github.com/skyzenr>
-//                 Richard Cornelissen <https://github.com/richardcornelissen>
 //                 Grzegorz Redlicki <https://github.com/redlickigrzegorz>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3

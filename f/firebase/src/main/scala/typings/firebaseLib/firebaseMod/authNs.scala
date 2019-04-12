@@ -387,8 +387,9 @@ object authNs extends js.Object {
     * @param providerId The associated provider ID, such as `github.com`.
     */
   @js.native
-  class OAuthProvider ()
+  class OAuthProvider protected ()
     extends firebaseLib.firebaseMod.firebaseNs.authNs.OAuthProvider {
+    def this(providerId: java.lang.String) = this()
     /* CompleteClass */
     override var providerId: java.lang.String = js.native
   }

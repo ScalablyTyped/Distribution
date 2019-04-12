@@ -1,6 +1,18 @@
 ```
-// Type definitions for array-uniq 1.0
-// Project: https://github.com/sindresorhus/array-uniq
-// Definitions by: Daniel Rosenwasser <https://github.com/DanielRosenwasser>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+/**
+Create an array without duplicates.
+
+@param array - The array to remove duplicates from.
+
+@example
+```
+import arrayUniq = require('array-uniq');
+
+arrayUniq([1, 1, 2, 3, 3]);
+//=> [1, 2, 3]
+
+arrayUniq(['foo', 'foo', 'bar', 'foo']);
+//=> ['foo', 'bar']
+```
+*/
 ```

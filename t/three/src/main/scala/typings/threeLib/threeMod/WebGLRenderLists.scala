@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "WebGLRenderLists")
 @js.native
 class WebGLRenderLists ()
-  extends threeLib.threeDashCoreMod.WebGLRenderLists
+  extends threeLib.srcRenderersWebglWebGLRenderListsMod.WebGLRenderLists
 

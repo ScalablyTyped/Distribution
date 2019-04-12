@@ -25,9 +25,6 @@ object threeLibStrings {
   sealed trait LOD extends js.Object
   
   @js.native
-  sealed trait LensFlare extends js.Object
-  
-  @js.native
   sealed trait Line extends js.Object
   
   @js.native
@@ -55,35 +52,13 @@ object threeLibStrings {
   sealed trait StereoCamera extends js.Object
   
   @js.native
-  sealed trait blackbody
-    extends threeLib.threeDashLutMod.ColorMapKeyword
-  
-  @js.native
-  sealed trait cooltowarm
-    extends threeLib.threeDashLutMod.ColorMapKeyword
-  
-  @js.native
-  sealed trait grayscale
-    extends threeLib.threeDashLutMod.ColorMapKeyword
-  
-  @js.native
   sealed trait highp extends js.Object
-  
-  @js.native
-  sealed trait horizontal extends js.Object
   
   @js.native
   sealed trait lowp extends js.Object
   
   @js.native
   sealed trait mediump extends js.Object
-  
-  @js.native
-  sealed trait rainbow
-    extends threeLib.threeDashLutMod.ColorMapKeyword
-  
-  @js.native
-  sealed trait vertical extends js.Object
   
   @scala.inline
   def Audio: Audio = "Audio".asInstanceOf[Audio]
@@ -97,8 +72,6 @@ object threeLibStrings {
   def Group: Group = "Group".asInstanceOf[Group]
   @scala.inline
   def LOD: LOD = "LOD".asInstanceOf[LOD]
-  @scala.inline
-  def LensFlare: LensFlare = "LensFlare".asInstanceOf[LensFlare]
   @scala.inline
   def Line: Line = "Line".asInstanceOf[Line]
   @scala.inline
@@ -118,22 +91,10 @@ object threeLibStrings {
   @scala.inline
   def StereoCamera: StereoCamera = "StereoCamera".asInstanceOf[StereoCamera]
   @scala.inline
-  def blackbody: blackbody = "blackbody".asInstanceOf[blackbody]
-  @scala.inline
-  def cooltowarm: cooltowarm = "cooltowarm".asInstanceOf[cooltowarm]
-  @scala.inline
-  def grayscale: grayscale = "grayscale".asInstanceOf[grayscale]
-  @scala.inline
   def highp: highp = "highp".asInstanceOf[highp]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   @scala.inline
   def lowp: lowp = "lowp".asInstanceOf[lowp]
   @scala.inline
   def mediump: mediump = "mediump".asInstanceOf[mediump]
-  @scala.inline
-  def rainbow: rainbow = "rainbow".asInstanceOf[rainbow]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
 

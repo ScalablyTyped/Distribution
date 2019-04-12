@@ -44,7 +44,7 @@ class Signature protected () extends Widget {
     * @returns {void}
     */
   def save(Filename: java.lang.String): scala.Unit = js.native
-  /** Used to Show the signature widget, if it is already hided.
+  /** Used to Show the signature widget, if it is already hidden.
     * @returns {void}
     */
   def show(): scala.Unit = js.native

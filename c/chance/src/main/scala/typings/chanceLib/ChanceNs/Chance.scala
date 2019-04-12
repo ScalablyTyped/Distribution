@@ -117,6 +117,10 @@ trait Chance extends Seeded {
   def latitude(opts: Options): scala.Double = js.native
   def letter(): java.lang.String = js.native
   def letter(opts: Options): java.lang.String = js.native
+  def locale(): java.lang.String = js.native
+  def locale(opts: LocaleOptions): java.lang.String = js.native
+  def locales(): java.lang.String = js.native
+  def locales(opts: LocaleOptions): java.lang.String = js.native
   def longitude(): scala.Double = js.native
   def longitude(opts: Options): scala.Double = js.native
   def mersenne_twister(): js.Any = js.native

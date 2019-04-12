@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "WebGLDepthBuffer")
 @js.native
 class WebGLDepthBuffer protected ()
-  extends threeLib.threeDashCoreMod.WebGLDepthBuffer {
+  extends threeLib.srcRenderersWebglWebGLStateMod.WebGLDepthBuffer {
   def this(gl: js.Any, state: js.Any) = this()
 }
 

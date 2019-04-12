@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Triangle")
 @js.native
 class Triangle ()
-  extends threeLib.threeDashCoreMod.Triangle {
-  def this(a: threeLib.threeDashCoreMod.Vector3) = this()
-  def this(a: threeLib.threeDashCoreMod.Vector3, b: threeLib.threeDashCoreMod.Vector3) = this()
-  def this(a: threeLib.threeDashCoreMod.Vector3, b: threeLib.threeDashCoreMod.Vector3, c: threeLib.threeDashCoreMod.Vector3) = this()
+  extends threeLib.srcMathTriangleMod.Triangle {
+  def this(a: threeLib.srcMathVector3Mod.Vector3) = this()
+  def this(a: threeLib.srcMathVector3Mod.Vector3, b: threeLib.srcMathVector3Mod.Vector3) = this()
+  def this(a: threeLib.srcMathVector3Mod.Vector3, b: threeLib.srcMathVector3Mod.Vector3, c: threeLib.srcMathVector3Mod.Vector3) = this()
 }
 
 /* static members */
@@ -19,23 +19,23 @@ class Triangle ()
 @js.native
 object Triangle extends js.Object {
   def containsPoint(
-    point: threeLib.threeDashCoreMod.Vector3,
-    a: threeLib.threeDashCoreMod.Vector3,
-    b: threeLib.threeDashCoreMod.Vector3,
-    c: threeLib.threeDashCoreMod.Vector3
+    point: threeLib.srcMathVector3Mod.Vector3,
+    a: threeLib.srcMathVector3Mod.Vector3,
+    b: threeLib.srcMathVector3Mod.Vector3,
+    c: threeLib.srcMathVector3Mod.Vector3
   ): scala.Boolean = js.native
   def getBarycoord(
-    point: threeLib.threeDashCoreMod.Vector3,
-    a: threeLib.threeDashCoreMod.Vector3,
-    b: threeLib.threeDashCoreMod.Vector3,
-    c: threeLib.threeDashCoreMod.Vector3,
-    target: threeLib.threeDashCoreMod.Vector3
-  ): threeLib.threeDashCoreMod.Vector3 = js.native
+    point: threeLib.srcMathVector3Mod.Vector3,
+    a: threeLib.srcMathVector3Mod.Vector3,
+    b: threeLib.srcMathVector3Mod.Vector3,
+    c: threeLib.srcMathVector3Mod.Vector3,
+    target: threeLib.srcMathVector3Mod.Vector3
+  ): threeLib.srcMathVector3Mod.Vector3 = js.native
   def getNormal(
-    a: threeLib.threeDashCoreMod.Vector3,
-    b: threeLib.threeDashCoreMod.Vector3,
-    c: threeLib.threeDashCoreMod.Vector3,
-    target: threeLib.threeDashCoreMod.Vector3
-  ): threeLib.threeDashCoreMod.Vector3 = js.native
+    a: threeLib.srcMathVector3Mod.Vector3,
+    b: threeLib.srcMathVector3Mod.Vector3,
+    c: threeLib.srcMathVector3Mod.Vector3,
+    target: threeLib.srcMathVector3Mod.Vector3
+  ): threeLib.srcMathVector3Mod.Vector3 = js.native
 }
 

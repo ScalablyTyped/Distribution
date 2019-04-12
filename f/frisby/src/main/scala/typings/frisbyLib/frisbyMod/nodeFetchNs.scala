@@ -10,7 +10,10 @@ import scala.scalajs.js.annotation._
 object nodeFetchNs extends js.Object {
   @js.native
   class Blob ()
-    extends nodeDashFetchLib.nodeDashFetchMod.Blob
+    extends nodeDashFetchLib.nodeDashFetchMod.Blob {
+    def this(blobParts: js.Array[nodeDashFetchLib.BlobPart]) = this()
+    def this(blobParts: js.Array[nodeDashFetchLib.BlobPart], options: nodeDashFetchLib.nodeDashFetchMod.BlobOptions) = this()
+  }
   
   @js.native
   class Body ()

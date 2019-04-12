@@ -26,7 +26,9 @@ trait SpreadsheetApp extends js.Object {
   var PivotTableSummarizeFunction: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PivotTableSummarizeFunction */ js.Any = js.native
   var PivotValueDisplayType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PivotValueDisplayType */ js.Any = js.native
   var ProtectionType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ProtectionType */ js.Any = js.native
+  var RecalculationInterval: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RecalculationInterval */ js.Any = js.native
   var RelativeDate: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RelativeDate */ js.Any = js.native
+  var SheetType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SheetType */ js.Any = js.native
   var TextDirection: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection */ js.Any = js.native
   var TextToColumnsDelimiter: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextToColumnsDelimiter */ js.Any = js.native
   var WrapStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WrapStrategy */ js.Any = js.native

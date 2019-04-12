@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@sindresorhus/to-milliseconds", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  def apply(
-    input: atSindresorhusToDashMillisecondsLib.atSindresorhusToDashMillisecondsMod.toMillisecondsNs.TimeSpec
-  ): scala.Double = js.native
-}
+object ^
+  extends org.scalablytyped.runtime.TopLevel[atSindresorhusToDashMillisecondsLib.Anon_DefaultTimeDescriptor]
 

@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectEventArgs extends js.Object {
-  /** Set to true when the event has to be canceled, else false.
-    */
-  var cancel: js.UndefOr[scala.Boolean] = js.undefined
   /** returns the selected date object.
     */
   var date: js.UndefOr[js.Any] = js.undefined
@@ -32,7 +29,6 @@ trait SelectEventArgs extends js.Object {
 object SelectEventArgs {
   @scala.inline
   def apply(
-    cancel: js.UndefOr[scala.Boolean] = js.undefined,
     date: js.Any = null,
     isSpecialDay: java.lang.String = null,
     model: Model = null,
@@ -41,7 +37,6 @@ object SelectEventArgs {
     value: java.lang.String = null
   ): SelectEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
     if (date != null) __obj.updateDynamic("date")(date)
     if (isSpecialDay != null) __obj.updateDynamic("isSpecialDay")(isSpecialDay)
     if (model != null) __obj.updateDynamic("model")(model)

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "SplineCurve")
 @js.native
 class SplineCurve ()
-  extends threeLib.threeDashCoreMod.SplineCurve {
-  def this(points: js.Array[threeLib.threeDashCoreMod.Vector2]) = this()
+  extends threeLib.srcExtrasCurvesCurvesMod.SplineCurve {
+  def this(points: js.Array[threeLib.srcMathVector2Mod.Vector2]) = this()
 }
 

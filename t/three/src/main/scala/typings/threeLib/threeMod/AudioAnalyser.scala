@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "AudioAnalyser")
 @js.native
 class AudioAnalyser protected ()
-  extends threeLib.threeDashCoreMod.AudioAnalyser {
+  extends threeLib.srcAudioAudioAnalyserMod.AudioAnalyser {
   def this(audio: js.Any, fftSize: scala.Double) = this()
 }
 

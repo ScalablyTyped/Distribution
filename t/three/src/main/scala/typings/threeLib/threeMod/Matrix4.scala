@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Matrix4")
 @js.native
 class Matrix4 ()
-  extends threeLib.threeDashCoreMod.Matrix4
+  extends threeLib.srcMathMatrix4Mod.Matrix4
 

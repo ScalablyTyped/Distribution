@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 trait Anon_Anisotropy
   extends org.scalablytyped.runtime.Instantiable10[
       /* image */ js.UndefOr[/* image */ stdLib.HTMLImageElement], 
-      /* mapping */ js.UndefOr[/* mapping */ threeLib.threeDashCoreMod.Mapping], 
-      /* wrapS */ js.UndefOr[/* wrapS */ threeLib.threeDashCoreMod.Wrapping], 
-      /* wrapT */ js.UndefOr[/* wrapT */ threeLib.threeDashCoreMod.Wrapping], 
-      /* magFilter */ js.UndefOr[/* magFilter */ threeLib.threeDashCoreMod.TextureFilter], 
-      /* minFilter */ js.UndefOr[/* minFilter */ threeLib.threeDashCoreMod.TextureFilter], 
-      /* format */ js.UndefOr[/* format */ threeLib.threeDashCoreMod.PixelFormat], 
-      /* type */ js.UndefOr[/* type */ threeLib.threeDashCoreMod.TextureDataType], 
+      /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+      /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+      /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+      /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+      /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
+      /* format */ js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
+      /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
       /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
-      /* encoding */ js.UndefOr[/* encoding */ threeLib.threeDashCoreMod.TextureEncoding], 
+      /* encoding */ js.UndefOr[/* encoding */ threeLib.srcConstantsMod.TextureEncoding], 
       threeLib.threeMod.Texture
     ] {
   var DEFAULT_IMAGE: js.Any = js.native

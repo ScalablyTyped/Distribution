@@ -11,6 +11,7 @@ object ^ extends js.Object {
   var Doc: codemirrorLib.codemirrorMod.CodeMirrorNs.DocConstructor = js.native
   var Pass: codemirrorLib.Anon_CodeMirrorPASS = js.native
   var Pos: codemirrorLib.codemirrorMod.CodeMirrorNs.PositionConstructor = js.native
+  var StringStream: codemirrorLib.codemirrorMod.CodeMirrorNs.StringStreamConstructor = js.native
   val TernServer: codemirrorLib.codemirrorMod.CodeMirrorNs.TernConstructor = js.native
   /**
     * Commands are parameter-less actions that can be performed on an editor.
@@ -21,6 +22,14 @@ object ^ extends js.Object {
   /** An object containing default values for all options.
     You can assign to its properties to modify defaults (though this won't affect editors that have already been created). */
   var defaults: js.Any = js.native
+  /**
+    * Maps MIME types to mode specs.
+    */
+  var mimeModes: codemirrorLib.codemirrorMod.CodeMirrorNs.MimeModeMap = js.native
+  /**
+    * Maps mode names to their constructors
+    */
+  var modes: codemirrorLib.codemirrorMod.CodeMirrorNs.ModeMap = js.native
   /** It contains a string that indicates the version of the library. This is a triple of integers "major.minor.patch",
     where patch is zero for releases, and something else (usually one) for dev snapshots. */
   var version: java.lang.String = js.native
@@ -59,6 +68,7 @@ object ^ extends js.Object {
     Give it a function as its only argument, and from then on, that function will be called (with the instance as argument)
     whenever a new CodeMirror instance is initialized. */
   def defineInitHook(func: js.Function): scala.Unit = js.native
+  def defineMIME(mime: java.lang.String, modeSpec: js.Any): scala.Unit = js.native
   /**
     * id will be the id for the defined mode. Typically, you should use this second argument to defineMode as your module scope function
     * (modes should not leak anything into the global scope!), i.e. write your whole mode inside this function.
@@ -91,6 +101,8 @@ object ^ extends js.Object {
   def getMode[T](config: codemirrorLib.codemirrorMod.CodeMirrorNs.EditorConfiguration, mode: js.Any): codemirrorLib.codemirrorMod.CodeMirrorNs.Mode[T] = js.native
   /** Given a state object, returns a {state, mode} object with the inner mode and its state for the current position. */
   def innerMode(mode: codemirrorLib.codemirrorMod.CodeMirrorNs.Mode[_], state: js.Any): codemirrorLib.Anon_Mode = js.native
+  /** Check if a char is part of an alphabet. */
+  def isWordChar(ch: java.lang.String): scala.Boolean = js.native
   def off(element: js.Any, eventName: java.lang.String, handler: js.Function): scala.Unit = js.native
   @JSName("off")
   def off_beforeChange(
@@ -345,5 +357,11 @@ object ^ extends js.Object {
     Handlers for such events can be registered with the on and off methods on the objects that the event fires on.
     To fire your own events, use CodeMirror.signal(target, name, args...), where target is a non-DOM-node object. */
   def signal(target: js.Any, name: java.lang.String, args: js.Any*): scala.Unit = js.native
+  /** Split a string by new line. */
+  def splitLines(text: java.lang.String): js.Array[java.lang.String] = js.native
+  /** Call startState of the mode if available, otherwise return true */
+  def startState(mode: codemirrorLib.codemirrorMod.CodeMirrorNs.Mode[_]): js.Any | scala.Boolean = js.native
+  def startState(mode: codemirrorLib.codemirrorMod.CodeMirrorNs.Mode[_], a1: js.Any): js.Any | scala.Boolean = js.native
+  def startState(mode: codemirrorLib.codemirrorMod.CodeMirrorNs.Mode[_], a1: js.Any, a2: js.Any): js.Any | scala.Boolean = js.native
 }
 

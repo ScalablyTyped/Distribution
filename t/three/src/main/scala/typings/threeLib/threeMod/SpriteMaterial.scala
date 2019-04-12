@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "SpriteMaterial")
 @js.native
 class SpriteMaterial ()
-  extends threeLib.threeDashCoreMod.SpriteMaterial {
-  def this(parameters: threeLib.threeDashCoreMod.SpriteMaterialParameters) = this()
+  extends threeLib.srcMaterialsMaterialsMod.SpriteMaterial {
+  def this(parameters: threeLib.srcMaterialsSpriteMaterialMod.SpriteMaterialParameters) = this()
 }
 

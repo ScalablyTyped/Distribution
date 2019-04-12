@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "SpotLightShadow")
 @js.native
 class SpotLightShadow ()
-  extends threeLib.threeDashCoreMod.SpotLightShadow
+  extends threeLib.srcLightsSpotLightShadowMod.SpotLightShadow
 

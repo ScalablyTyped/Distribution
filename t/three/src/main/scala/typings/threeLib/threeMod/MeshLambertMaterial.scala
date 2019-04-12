@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "MeshLambertMaterial")
 @js.native
 class MeshLambertMaterial ()
-  extends threeLib.threeDashCoreMod.MeshLambertMaterial {
-  def this(parameters: threeLib.threeDashCoreMod.MeshLambertMaterialParameters) = this()
+  extends threeLib.srcMaterialsMaterialsMod.MeshLambertMaterial {
+  def this(parameters: threeLib.srcMaterialsMeshLambertMaterialMod.MeshLambertMaterialParameters) = this()
 }
 

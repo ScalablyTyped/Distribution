@@ -11,6 +11,14 @@ trait ThreadFlow extends js.Object {
     */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Values of relevant expressions at the start of the thread flow that remain constant.
+    */
+  var immutableState: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  /**
+    * Values of relevant expressions at the start of the thread flow that may change during thread flow execution.
+    */
+  var initialState: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  /**
     * A temporally ordered array of 'threadFlowLocation' objects, each of which describes a location visited by the
     * tool while producing the result.
     */
@@ -30,11 +38,15 @@ object ThreadFlow {
   def apply(
     locations: js.Array[ThreadFlowLocation],
     id: java.lang.String = null,
+    immutableState: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    initialState: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     message: Message = null,
     properties: PropertyBag = null
   ): ThreadFlow = {
     val __obj = js.Dynamic.literal(locations = locations)
     if (id != null) __obj.updateDynamic("id")(id)
+    if (immutableState != null) __obj.updateDynamic("immutableState")(immutableState)
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
     if (message != null) __obj.updateDynamic("message")(message)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     __obj.asInstanceOf[ThreadFlow]

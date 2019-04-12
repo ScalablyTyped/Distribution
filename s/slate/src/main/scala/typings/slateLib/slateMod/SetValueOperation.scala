@@ -6,15 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SetValueOperation extends Operation {
+  var data: Data
+  var newProperties: ValueProperties
   var properties: ValueProperties
   var `type`: slateLib.slateLibStrings.set_value
-  var value: Value
 }
 
 object SetValueOperation {
   @scala.inline
-  def apply(properties: ValueProperties, `type`: slateLib.slateLibStrings.set_value, value: Value): SetValueOperation = {
-    val __obj = js.Dynamic.literal(properties = properties, value = value)
+  def apply(
+    data: Data,
+    newProperties: ValueProperties,
+    properties: ValueProperties,
+    `type`: slateLib.slateLibStrings.set_value
+  ): SetValueOperation = {
+    val __obj = js.Dynamic.literal(data = data, newProperties = newProperties, properties = properties)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SetValueOperation]
   }

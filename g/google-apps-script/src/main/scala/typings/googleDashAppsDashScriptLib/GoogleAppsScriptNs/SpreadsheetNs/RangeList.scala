@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait RangeList extends js.Object {
   def activate(): RangeList = js.native
   def breakApart(): RangeList = js.native
+  def check(): RangeList = js.native
   def clear(): RangeList = js.native
   def clear(options: js.Object): RangeList = js.native
   def clearContent(): RangeList = js.native
@@ -16,6 +17,10 @@ trait RangeList extends js.Object {
   def clearFormat(): RangeList = js.native
   def clearNote(): RangeList = js.native
   def getRanges(): js.Array[Range] = js.native
+  def insertCheckboxes(): RangeList = js.native
+  def insertCheckboxes(checkedValue: js.Object): RangeList = js.native
+  def insertCheckboxes(checkedValue: js.Object, uncheckedValue: js.Object): RangeList = js.native
+  def removeCheckboxes(): RangeList = js.native
   def setBackground(color: java.lang.String): RangeList = js.native
   def setBackgroundRGB(
     red: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
@@ -59,5 +64,6 @@ trait RangeList extends js.Object {
   def setVerticalText(isVertical: scala.Boolean): RangeList = js.native
   def setWrap(isWrapEnabled: scala.Boolean): RangeList = js.native
   def setWrapStrategy(strategy: WrapStrategy): RangeList = js.native
+  def uncheck(): RangeList = js.native
 }
 

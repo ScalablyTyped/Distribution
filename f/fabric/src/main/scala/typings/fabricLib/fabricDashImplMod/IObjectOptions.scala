@@ -63,6 +63,10 @@ trait IObjectOptions extends js.Object {
   	 */
   var cacheProperties: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
+    * The canvas the object belongs to
+    */
+  var canvas: js.UndefOr[Canvas] = js.undefined
+  /**
   	 * When true, this object will use center point as the origin of transformation
   	 * when being rotated via the controls.
   	 * <b>Backwards incompatibility note:</b> This property replaces "centerTransform" (Boolean).
@@ -147,6 +151,10 @@ trait IObjectOptions extends js.Object {
   	 * Composite rule used for canvas globalCompositeOperation
   	 */
   var globalCompositeOperation: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The group the object is part of
+    */
+  var group: js.UndefOr[Group] = js.undefined
   /**
   	 * When set to `false`, object's controlling borders are not rendered
   	 */
@@ -328,6 +336,14 @@ trait IObjectOptions extends js.Object {
   	 */
   var skewY: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Indicates the angle that an object will lock to while rotating. Can get from canvas.
+    */
+  var snapAngle: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Indicates the distance from the snapAngle the rotation will lock to the snapAngle. Can get from canvas.
+    */
+  var snapThreshold: js.UndefOr[scala.Null | scala.Double] = js.undefined
+  /**
   	 * List of properties to consider when checking if state
   	 * of an object is changed (fabric.Object#hasStateChanged)
   	 * as well as for history (undo/redo) purposes
@@ -425,6 +441,7 @@ object IObjectOptions {
     borderOpacityWhenMoving: scala.Int | scala.Double = null,
     borderScaleFactor: scala.Int | scala.Double = null,
     cacheProperties: js.Array[java.lang.String] = null,
+    canvas: Canvas = null,
     centeredRotation: js.UndefOr[scala.Boolean] = js.undefined,
     centeredScaling: js.UndefOr[scala.Boolean] = js.undefined,
     clipPath: Object = null,
@@ -443,6 +460,7 @@ object IObjectOptions {
     flipX: js.UndefOr[scala.Boolean] = js.undefined,
     flipY: js.UndefOr[scala.Boolean] = js.undefined,
     globalCompositeOperation: java.lang.String = null,
+    group: Group = null,
     hasBorders: js.UndefOr[scala.Boolean] = js.undefined,
     hasControls: js.UndefOr[scala.Boolean] = js.undefined,
     hasRotatingPoint: js.UndefOr[scala.Boolean] = js.undefined,
@@ -482,6 +500,8 @@ object IObjectOptions {
     shadow: Shadow | java.lang.String = null,
     skewX: scala.Int | scala.Double = null,
     skewY: scala.Int | scala.Double = null,
+    snapAngle: scala.Int | scala.Double = null,
+    snapThreshold: scala.Int | scala.Double = null,
     stateProperties: js.Array[java.lang.String] = null,
     statefullCache: js.UndefOr[scala.Boolean] = js.undefined,
     stroke: java.lang.String = null,
@@ -509,6 +529,7 @@ object IObjectOptions {
     if (borderOpacityWhenMoving != null) __obj.updateDynamic("borderOpacityWhenMoving")(borderOpacityWhenMoving.asInstanceOf[js.Any])
     if (borderScaleFactor != null) __obj.updateDynamic("borderScaleFactor")(borderScaleFactor.asInstanceOf[js.Any])
     if (cacheProperties != null) __obj.updateDynamic("cacheProperties")(cacheProperties)
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
     if (!js.isUndefined(centeredRotation)) __obj.updateDynamic("centeredRotation")(centeredRotation)
     if (!js.isUndefined(centeredScaling)) __obj.updateDynamic("centeredScaling")(centeredScaling)
     if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath)
@@ -527,6 +548,7 @@ object IObjectOptions {
     if (!js.isUndefined(flipX)) __obj.updateDynamic("flipX")(flipX)
     if (!js.isUndefined(flipY)) __obj.updateDynamic("flipY")(flipY)
     if (globalCompositeOperation != null) __obj.updateDynamic("globalCompositeOperation")(globalCompositeOperation)
+    if (group != null) __obj.updateDynamic("group")(group)
     if (!js.isUndefined(hasBorders)) __obj.updateDynamic("hasBorders")(hasBorders)
     if (!js.isUndefined(hasControls)) __obj.updateDynamic("hasControls")(hasControls)
     if (!js.isUndefined(hasRotatingPoint)) __obj.updateDynamic("hasRotatingPoint")(hasRotatingPoint)
@@ -566,6 +588,8 @@ object IObjectOptions {
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (skewX != null) __obj.updateDynamic("skewX")(skewX.asInstanceOf[js.Any])
     if (skewY != null) __obj.updateDynamic("skewY")(skewY.asInstanceOf[js.Any])
+    if (snapAngle != null) __obj.updateDynamic("snapAngle")(snapAngle.asInstanceOf[js.Any])
+    if (snapThreshold != null) __obj.updateDynamic("snapThreshold")(snapThreshold.asInstanceOf[js.Any])
     if (stateProperties != null) __obj.updateDynamic("stateProperties")(stateProperties)
     if (!js.isUndefined(statefullCache)) __obj.updateDynamic("statefullCache")(statefullCache)
     if (stroke != null) __obj.updateDynamic("stroke")(stroke)

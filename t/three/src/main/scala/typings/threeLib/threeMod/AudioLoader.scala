@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "AudioLoader")
 @js.native
 class AudioLoader ()
-  extends threeLib.threeDashCoreMod.AudioLoader {
-  def this(manager: threeLib.threeDashCoreMod.LoadingManager) = this()
+  extends threeLib.srcLoadersAudioLoaderMod.AudioLoader {
+  def this(manager: threeLib.srcLoadersLoadingManagerMod.LoadingManager) = this()
 }
 

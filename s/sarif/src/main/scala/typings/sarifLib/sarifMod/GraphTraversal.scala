@@ -15,7 +15,11 @@ trait GraphTraversal extends js.Object {
     */
   var edgeTraversals: js.UndefOr[js.Array[EdgeTraversal]] = js.undefined
   /**
-    * Values of relevant expressions at the start of the graph traversal.
+    * Values of relevant expressions at the start of the graph traversal that remain constant for the graph traversal.
+    */
+  var immutableState: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+  /**
+    * Values of relevant expressions at the start of the graph traversal that may change during graph traversal.
     */
   var initialState: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
@@ -37,6 +41,7 @@ object GraphTraversal {
   def apply(
     description: Message = null,
     edgeTraversals: js.Array[EdgeTraversal] = null,
+    immutableState: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     initialState: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
     properties: PropertyBag = null,
     resultGraphIndex: scala.Int | scala.Double = null,
@@ -45,6 +50,7 @@ object GraphTraversal {
     val __obj = js.Dynamic.literal()
     if (description != null) __obj.updateDynamic("description")(description)
     if (edgeTraversals != null) __obj.updateDynamic("edgeTraversals")(edgeTraversals)
+    if (immutableState != null) __obj.updateDynamic("immutableState")(immutableState)
     if (initialState != null) __obj.updateDynamic("initialState")(initialState)
     if (properties != null) __obj.updateDynamic("properties")(properties)
     if (resultGraphIndex != null) __obj.updateDynamic("resultGraphIndex")(resultGraphIndex.asInstanceOf[js.Any])

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object PropertyBindingNs extends js.Object {
   @js.native
   class Composite protected ()
-    extends threeLib.threeDashCoreMod.PropertyBindingNs.Composite {
+    extends threeLib.srcAnimationPropertyBindingMod.PropertyBindingNs.Composite {
     def this(targetGroup: js.Any, path: js.Any) = this()
     def this(targetGroup: js.Any, path: js.Any, parsedPath: js.Any) = this()
   }

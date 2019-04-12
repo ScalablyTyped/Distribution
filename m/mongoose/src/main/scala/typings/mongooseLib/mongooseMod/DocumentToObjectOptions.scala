@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 trait DocumentToObjectOptions extends js.Object {
   /** depopulate any populated paths, replacing them with their original refs (defaults to false) */
   var depopulate: js.UndefOr[scala.Boolean] = js.undefined
+  /** whether to convert Maps to POJOs. (defaults to false) */
+  var flattenMaps: js.UndefOr[scala.Boolean] = js.undefined
   /** apply all getters (path and virtual getters) */
   var getters: js.UndefOr[scala.Boolean] = js.undefined
   /** remove empty objects (defaults to true) */
@@ -29,6 +31,7 @@ object DocumentToObjectOptions {
   @scala.inline
   def apply(
     depopulate: js.UndefOr[scala.Boolean] = js.undefined,
+    flattenMaps: js.UndefOr[scala.Boolean] = js.undefined,
     getters: js.UndefOr[scala.Boolean] = js.undefined,
     minimize: js.UndefOr[scala.Boolean] = js.undefined,
     transform: (/* doc */ js.Any, /* ret */ js.Any, /* options */ js.Any) => _ = null,
@@ -37,6 +40,7 @@ object DocumentToObjectOptions {
   ): DocumentToObjectOptions = {
     val __obj = js.Dynamic.literal()
     if (!js.isUndefined(depopulate)) __obj.updateDynamic("depopulate")(depopulate)
+    if (!js.isUndefined(flattenMaps)) __obj.updateDynamic("flattenMaps")(flattenMaps)
     if (!js.isUndefined(getters)) __obj.updateDynamic("getters")(getters)
     if (!js.isUndefined(minimize)) __obj.updateDynamic("minimize")(minimize)
     if (transform != null) __obj.updateDynamic("transform")(js.Any.fromFunction3(transform))

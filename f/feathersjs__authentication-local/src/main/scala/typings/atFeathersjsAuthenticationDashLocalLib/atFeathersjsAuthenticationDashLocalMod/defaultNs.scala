@@ -11,7 +11,7 @@ object defaultNs extends js.Object {
   @js.native
   class LocalVerifier protected ()
     extends atFeathersjsAuthenticationDashLocalLib.atFeathersjsAuthenticationDashLocalMod.LocalVerifier {
-    def this(app: atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[_], options: js.Any) = this()
+    def this(app: atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Application[_], options: js.Any) = this()
   }
   
 }

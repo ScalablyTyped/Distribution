@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "WebGLState")
 @js.native
 class WebGLState protected ()
-  extends threeLib.threeDashCoreMod.WebGLState {
+  extends threeLib.srcRenderersWebglWebGLStateMod.WebGLState {
   def this(gl: js.Any, extensions: js.Any, paramThreeToGL: js.Function) = this()
 }
 

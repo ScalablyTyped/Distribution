@@ -11,5 +11,5 @@ import scala.scalajs.js.annotation._
   * Creates eventDispatcher object. It needs to be call with '.call' to add the functionality to an object.
   */
 class EventDispatcher ()
-  extends threeLib.threeDashCoreMod.EventDispatcher
+  extends threeLib.srcCoreEventDispatcherMod.EventDispatcher
 

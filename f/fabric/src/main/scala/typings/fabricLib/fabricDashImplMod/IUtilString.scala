@@ -24,6 +24,12 @@ trait IUtilString extends js.Object {
   	 * @param string String to escape
   	 */
   def escapeXml(string: java.lang.String): java.lang.String
+  /**
+    * Divide a string in the user perceived single units
+    * @param {String} textstring String to escape
+    * @return {Array} array containing the graphemes
+    */
+  def graphemeSplit(string: java.lang.String): js.Array[java.lang.String]
 }
 
 object IUtilString {
@@ -31,9 +37,10 @@ object IUtilString {
   def apply(
     camelize: java.lang.String => java.lang.String,
     capitalize: (java.lang.String, scala.Boolean) => java.lang.String,
-    escapeXml: java.lang.String => java.lang.String
+    escapeXml: java.lang.String => java.lang.String,
+    graphemeSplit: java.lang.String => js.Array[java.lang.String]
   ): IUtilString = {
-    val __obj = js.Dynamic.literal(camelize = js.Any.fromFunction1(camelize), capitalize = js.Any.fromFunction2(capitalize), escapeXml = js.Any.fromFunction1(escapeXml))
+    val __obj = js.Dynamic.literal(camelize = js.Any.fromFunction1(camelize), capitalize = js.Any.fromFunction2(capitalize), escapeXml = js.Any.fromFunction1(escapeXml), graphemeSplit = js.Any.fromFunction1(graphemeSplit))
   
     __obj.asInstanceOf[IUtilString]
   }

@@ -10,7 +10,9 @@ trait TextareaAutosizeProps
   /**
     * Allows an owner to retrieve the DOM node.
     */
-  var inputRef: js.UndefOr[js.Function1[/* node */ stdLib.HTMLTextAreaElement, scala.Unit]] = js.undefined
+  var inputRef: js.UndefOr[
+    (js.Function1[/* node */ stdLib.HTMLTextAreaElement, scala.Unit]) | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLTextAreaElement]
+  ] = js.undefined
   /**
     * Maximum number of rows to show.
     */
@@ -55,7 +57,7 @@ object TextareaAutosizeProps {
   @scala.inline
   def apply(
     HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[stdLib.HTMLTextAreaElement] = null,
-    inputRef: /* node */ stdLib.HTMLTextAreaElement => scala.Unit = null,
+    inputRef: (js.Function1[/* node */ stdLib.HTMLTextAreaElement, scala.Unit]) | reactLib.reactMod.ReactNs.RefObject[stdLib.HTMLTextAreaElement] = null,
     maxRows: scala.Int | scala.Double = null,
     minRows: scala.Int | scala.Double = null,
     onChange: /* event */ reactLib.reactMod.ReactNs.ChangeEvent[stdLib.HTMLTextAreaElement] => scala.Unit = null,
@@ -66,7 +68,7 @@ object TextareaAutosizeProps {
   ): TextareaAutosizeProps = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, HTMLProps)
-    if (inputRef != null) __obj.updateDynamic("inputRef")(js.Any.fromFunction1(inputRef))
+    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
     if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
     if (minRows != null) __obj.updateDynamic("minRows")(minRows.asInstanceOf[js.Any])
     if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1(onChange))

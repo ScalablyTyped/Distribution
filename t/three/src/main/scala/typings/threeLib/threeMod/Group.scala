@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Group")
 @js.native
 class Group ()
-  extends threeLib.threeDashCoreMod.Group
+  extends threeLib.srcObjectsGroupMod.Group
 

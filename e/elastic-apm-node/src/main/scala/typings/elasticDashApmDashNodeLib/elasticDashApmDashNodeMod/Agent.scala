@@ -56,6 +56,7 @@ trait Agent
   def endTransaction(result: scala.Double, endTime: scala.Double): scala.Unit = js.native
   def flush(): scala.Unit = js.native
   def flush(callback: js.Function): scala.Unit = js.native
+  def handleUncaughtExceptions(): scala.Unit = js.native
   def handleUncaughtExceptions(fn: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def isStarted(): scala.Boolean = js.native
   def lambda(handler: elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.AwsLambdaNs.Handler[_, _]): elasticDashApmDashNodeLib.elasticDashApmDashNodeMod.AwsLambdaNs.Handler[_, _] = js.native

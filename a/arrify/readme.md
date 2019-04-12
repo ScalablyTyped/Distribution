@@ -1,16 +1,27 @@
 ```
-// Type definitions for arrify 1.0
-// Project: https://github.com/sindresorhus/arrify
-// Definitions by: AnJun Wang <https://github.com/wanganjun>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 /**
- * @example
- * arrify(undefined) // returns []
- * @example
- * arrify(null)      // returns []
- * @example
- * arrify(1)         // returns [1]
- * @example
- * arrify([2, 3])    // returns [2, 3]
- */
+Convert a value to an array.
+
+_Supplying `null` or `undefined` results in an empty array._
+
+@example
+```
+import arrify = require('arrify');
+
+arrify('🦄');
+//=> ['🦄']
+
+arrify(['🦄']);
+//=> ['🦄']
+
+arrify(new Set(['🦄']));
+//=> ['🦄']
+
+arrify(null);
+//=> []
+
+arrify(undefined);
+//=> []
+```
+*/
 ```

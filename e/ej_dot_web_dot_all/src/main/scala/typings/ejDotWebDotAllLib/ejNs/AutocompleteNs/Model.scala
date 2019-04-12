@@ -120,6 +120,10 @@ trait Model extends js.Object {
     * @Default {false}
     */
   var highlightSearch: js.UndefOr[scala.Boolean] = js.undefined
+  /** To enable or disable the diacritic characters of the Autocomplete suggestion list when filtering.
+    * @Default {false}
+    */
+  var ignoreAccent: js.UndefOr[scala.Boolean] = js.undefined
   /** Number of items to be displayed in the suggestion list.
     * @Default {0}
     */
@@ -251,6 +255,7 @@ object Model {
     focusOut: /* e */ FocusOutEventArgs => scala.Unit = null,
     height: java.lang.String | scala.Double = null,
     highlightSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreAccent: js.UndefOr[scala.Boolean] = js.undefined,
     itemsCount: scala.Int | scala.Double = null,
     locale: java.lang.String = null,
     minCharacter: scala.Int | scala.Double = null,
@@ -308,6 +313,7 @@ object Model {
     if (focusOut != null) __obj.updateDynamic("focusOut")(js.Any.fromFunction1(focusOut))
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
     if (!js.isUndefined(highlightSearch)) __obj.updateDynamic("highlightSearch")(highlightSearch)
+    if (!js.isUndefined(ignoreAccent)) __obj.updateDynamic("ignoreAccent")(ignoreAccent)
     if (itemsCount != null) __obj.updateDynamic("itemsCount")(itemsCount.asInstanceOf[js.Any])
     if (locale != null) __obj.updateDynamic("locale")(locale)
     if (minCharacter != null) __obj.updateDynamic("minCharacter")(minCharacter.asInstanceOf[js.Any])

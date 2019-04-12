@@ -1,11 +1,12 @@
 organization := "org.scalablytyped"
 name := "sindresorhus__string-hash"
-version := "1.0-dt-20190112Z-35bff5"
+version := "1.2.0-4b38a6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "sindresorhus__fnv1a" % "1.2.0-2b7e50",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

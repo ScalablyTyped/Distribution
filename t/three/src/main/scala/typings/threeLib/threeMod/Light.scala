@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Light")
 @js.native
 class Light ()
-  extends threeLib.threeDashCoreMod.Light {
+  extends threeLib.srcLightsLightMod.Light {
   def this(hex: java.lang.String) = this()
   def this(hex: scala.Double) = this()
   def this(hex: java.lang.String, intensity: scala.Double) = this()

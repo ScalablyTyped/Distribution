@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Geometry")
 @js.native
 class Geometry ()
-  extends threeLib.threeDashCoreMod.Geometry
+  extends threeLib.srcCoreGeometryMod.Geometry
 

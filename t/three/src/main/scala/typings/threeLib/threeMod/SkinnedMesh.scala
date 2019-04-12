@@ -8,16 +8,16 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "SkinnedMesh")
 @js.native
 class SkinnedMesh ()
-  extends threeLib.threeDashCoreMod.SkinnedMesh {
-  def this(geometry: threeLib.threeDashCoreMod.BufferGeometry) = this()
-  def this(geometry: threeLib.threeDashCoreMod.Geometry) = this()
-  def this(geometry: threeLib.threeDashCoreMod.BufferGeometry, material: js.Array[threeLib.threeDashCoreMod.Material]) = this()
-  def this(geometry: threeLib.threeDashCoreMod.BufferGeometry, material: threeLib.threeDashCoreMod.Material) = this()
-  def this(geometry: threeLib.threeDashCoreMod.Geometry, material: js.Array[threeLib.threeDashCoreMod.Material]) = this()
-  def this(geometry: threeLib.threeDashCoreMod.Geometry, material: threeLib.threeDashCoreMod.Material) = this()
-  def this(geometry: threeLib.threeDashCoreMod.BufferGeometry, material: js.Array[threeLib.threeDashCoreMod.Material], useVertexTexture: scala.Boolean) = this()
-  def this(geometry: threeLib.threeDashCoreMod.BufferGeometry, material: threeLib.threeDashCoreMod.Material, useVertexTexture: scala.Boolean) = this()
-  def this(geometry: threeLib.threeDashCoreMod.Geometry, material: js.Array[threeLib.threeDashCoreMod.Material], useVertexTexture: scala.Boolean) = this()
-  def this(geometry: threeLib.threeDashCoreMod.Geometry, material: threeLib.threeDashCoreMod.Material, useVertexTexture: scala.Boolean) = this()
+  extends threeLib.srcObjectsSkinnedMeshMod.SkinnedMesh {
+  def this(geometry: threeLib.srcCoreBufferGeometryMod.BufferGeometry) = this()
+  def this(geometry: threeLib.srcCoreGeometryMod.Geometry) = this()
+  def this(geometry: threeLib.srcCoreBufferGeometryMod.BufferGeometry, material: js.Array[threeLib.srcMaterialsMaterialMod.Material]) = this()
+  def this(geometry: threeLib.srcCoreBufferGeometryMod.BufferGeometry, material: threeLib.srcMaterialsMaterialMod.Material) = this()
+  def this(geometry: threeLib.srcCoreGeometryMod.Geometry, material: js.Array[threeLib.srcMaterialsMaterialMod.Material]) = this()
+  def this(geometry: threeLib.srcCoreGeometryMod.Geometry, material: threeLib.srcMaterialsMaterialMod.Material) = this()
+  def this(geometry: threeLib.srcCoreBufferGeometryMod.BufferGeometry, material: js.Array[threeLib.srcMaterialsMaterialMod.Material], useVertexTexture: scala.Boolean) = this()
+  def this(geometry: threeLib.srcCoreBufferGeometryMod.BufferGeometry, material: threeLib.srcMaterialsMaterialMod.Material, useVertexTexture: scala.Boolean) = this()
+  def this(geometry: threeLib.srcCoreGeometryMod.Geometry, material: js.Array[threeLib.srcMaterialsMaterialMod.Material], useVertexTexture: scala.Boolean) = this()
+  def this(geometry: threeLib.srcCoreGeometryMod.Geometry, material: threeLib.srcMaterialsMaterialMod.Material, useVertexTexture: scala.Boolean) = this()
 }
 

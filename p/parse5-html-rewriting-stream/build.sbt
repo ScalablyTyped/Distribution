@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "parse5-html-rewriting-stream"
-version := "5.1-dt-20190312Z-12befa"
+version := "5.1-dt-20190312Z-d11c7c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.13-dt-20190408Z-6fa8bf",
+  "org.scalablytyped" %%% "node" % "11.13-dt-20190409Z-512fe2",
   "org.scalablytyped" %%% "parse5" % "5.0-dt-20180611Z-a8ab65",
-  "org.scalablytyped" %%% "parse5-sax-parser" % "5.0-dt-20180606Z-7ae434",
+  "org.scalablytyped" %%% "parse5-sax-parser" % "5.0-dt-20180606Z-59b4e6",
   "org.scalablytyped" %%% "std" % "3.4-d52857")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

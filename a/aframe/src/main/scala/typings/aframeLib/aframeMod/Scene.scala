@@ -11,7 +11,6 @@ trait Scene
   var behaviors: js.Array[Behavior] = js.native
   var camera: threeLib.threeMod.Camera = js.native
   var canvas: stdLib.HTMLCanvasElement = js.native
-  var effect: threeLib.threeMod.VREffect = js.native
   var isMobile: scala.Boolean = js.native
   @JSName("object3D")
   var object3D_Scene: threeLib.threeMod.Scene = js.native

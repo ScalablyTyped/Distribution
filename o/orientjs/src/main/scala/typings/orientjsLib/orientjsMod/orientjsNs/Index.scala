@@ -25,7 +25,7 @@ trait Index extends js.Object {
   def get(name: java.lang.String, refresh: scala.Boolean): bluebirdLib.bluebirdMod.namespaced[Index] = js.native
   def list(): bluebirdLib.bluebirdMod.namespaced[js.Array[Index]] = js.native
   def list(refresh: scala.Boolean): bluebirdLib.bluebirdMod.namespaced[js.Array[Index]] = js.native
-  def select(): Statement = js.native
+  def select(): Statement[_] = js.native
   def set(key: java.lang.String, value: java.lang.String): bluebirdLib.bluebirdMod.namespaced[Index] = js.native
   def set(key: java.lang.String, value: RID): bluebirdLib.bluebirdMod.namespaced[Index] = js.native
 }

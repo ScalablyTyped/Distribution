@@ -7,10 +7,20 @@ import scala.scalajs.js.annotation._
 
 /**
   *  A class to make it easier to serialize and de-serialize requests so they can be stored in IndexedDB.
+  *  @private
   */
 trait StorableRequest extends js.Object {
-  val timestamp: scala.Double
-  def toObject(): IStorableRequestOptions
+  /**
+  	 * Returns a deep clone of the instances `_requestData` object.
+  	 * @private
+  	 * @return {StorableRequestOptions}
+  	 */
+  def toObject(): StorableRequestOptions
+  /**
+  	 * Converts this instance to a Request.
+  	 * @private
+  	 * @return {Request}
+  	 */
   def toRequest(): stdLib.Request
 }
 
@@ -18,11 +28,10 @@ object StorableRequest {
   @scala.inline
   def apply(
     clone: () => StorableRequest,
-    timestamp: scala.Double,
-    toObject: () => IStorableRequestOptions,
+    toObject: () => StorableRequestOptions,
     toRequest: () => stdLib.Request
   ): StorableRequest = {
-    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), timestamp = timestamp, toObject = js.Any.fromFunction0(toObject), toRequest = js.Any.fromFunction0(toRequest))
+    val __obj = js.Dynamic.literal(clone = js.Any.fromFunction0(clone), toObject = js.Any.fromFunction0(toObject), toRequest = js.Any.fromFunction0(toRequest))
   
     __obj.asInstanceOf[StorableRequest]
   }

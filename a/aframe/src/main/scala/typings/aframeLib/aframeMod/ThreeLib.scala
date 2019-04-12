@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ThreeLib extends js.Object {
-  var AWDLoader: js.Any = js.native
-  val AddEquation: threeLib.threeDashCoreMod.BlendingEquation = js.native
-  val AddOperation: threeLib.threeDashCoreMod.Combine = js.native
-  val AdditiveBlending: threeLib.threeDashCoreMod.Blending = js.native
-  val AlphaFormat: threeLib.threeDashCoreMod.PixelFormat = js.native
-  val AlwaysDepth: threeLib.threeDashCoreMod.DepthModes = js.native
+  val AddEquation: threeLib.srcConstantsMod.BlendingEquation = js.native
+  val AddOperation: threeLib.srcConstantsMod.Combine = js.native
+  val AdditiveBlending: threeLib.srcConstantsMod.Blending = js.native
+  val AlphaFormat: threeLib.srcConstantsMod.PixelFormat = js.native
+  val AlwaysDepth: threeLib.srcConstantsMod.DepthModes = js.native
   var AmbientLight: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.AmbientLight] = js.native
   var AnimationAction: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.AnimationAction] = js.native
   var AnimationClip: aframeLib.Anon_Animation = js.native
+  var AnimationLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.AnimationLoader] = js.native
   var AnimationMixer: org.scalablytyped.runtime.Instantiable1[/* root */ js.Any, threeLib.threeMod.AnimationMixer] = js.native
   var AnimationObjectGroup: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, threeLib.threeMod.AnimationObjectGroup] = js.native
   val AnimationUtilsNs: aframeLib.Anon_Array = js.native
@@ -29,19 +29,20 @@ trait ThreeLib extends js.Object {
     threeLib.threeMod.ArcCurve
   ] = js.native
   var ArrayCamera: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ArrayCamera] = js.native
-  var ArrowHelper: org.scalablytyped.runtime.Instantiable1[/* dir */ threeLib.threeDashCoreMod.Vector3, threeLib.threeMod.ArrowHelper] = js.native
-  var Audio: org.scalablytyped.runtime.Instantiable1[/* listener */ threeLib.threeDashCoreMod.AudioListener, threeLib.threeMod.Audio] = js.native
+  var ArrowHelper: org.scalablytyped.runtime.Instantiable1[/* dir */ threeLib.srcMathVector3Mod.Vector3, threeLib.threeMod.ArrowHelper] = js.native
+  var Audio: org.scalablytyped.runtime.Instantiable1[
+    /* listener */ threeLib.srcAudioAudioListenerMod.AudioListener, 
+    threeLib.threeMod.Audio
+  ] = js.native
   var AudioAnalyser: org.scalablytyped.runtime.Instantiable2[/* audio */ js.Any, /* fftSize */ scala.Double, threeLib.threeMod.AudioAnalyser] = js.native
   var AudioBuffer: org.scalablytyped.runtime.Instantiable1[/* context */ js.Any, threeLib.threeMod.AudioBuffer] = js.native
   val AudioContext: stdLib.AudioContext = js.native
   var AudioListener: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.AudioListener] = js.native
   var AudioLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.AudioLoader] = js.native
   var AxesHelper: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.AxesHelper] = js.native
-  val BackSide: threeLib.threeDashCoreMod.Side = js.native
-  val BasicDepthPacking: threeLib.threeDashCoreMod.DepthPackingStrategies = js.native
-  val BasicShadowMap: threeLib.threeDashCoreMod.ShadowMapType = js.native
-  var BinaryTextureLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.BinaryTextureLoader] = js.native
-  var BloomPass: js.Any = js.native
+  val BackSide: threeLib.srcConstantsMod.Side = js.native
+  val BasicDepthPacking: threeLib.srcConstantsMod.DepthPackingStrategies = js.native
+  val BasicShadowMap: threeLib.srcConstantsMod.ShadowMapType = js.native
   var Bone: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Bone] = js.native
   var BooleanKeyframeTrack: org.scalablytyped.runtime.Instantiable3[
     /* name */ java.lang.String, 
@@ -49,9 +50,9 @@ trait ThreeLib extends js.Object {
     /* values */ js.Array[js.Any], 
     threeLib.threeMod.BooleanKeyframeTrack
   ] = js.native
-  var BoundingBoxHelper: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.BoundingBoxHelper] = js.native
   var Box2: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Box2] = js.native
   var Box3: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Box3] = js.native
+  var Box3Helper: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Box3Helper] = js.native
   var BoxBufferGeometry: org.scalablytyped.runtime.Instantiable6[
     /* width */ js.UndefOr[/* width */ scala.Double], 
     /* height */ js.UndefOr[/* height */ scala.Double], 
@@ -79,36 +80,28 @@ trait ThreeLib extends js.Object {
   var BufferGeometry: aframeLib.Anon_MaxIndex = js.native
   var BufferGeometryLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.BufferGeometryLoader] = js.native
   val BufferGeometryUtilsNs: aframeLib.Anon_Attributes = js.native
-  val ByteType: threeLib.threeDashCoreMod.TextureDataType = js.native
-  var CSS3DObject: org.scalablytyped.runtime.Instantiable1[/* element */ js.Any, threeLib.threeMod.CSS3DObject] = js.native
-  var CSS3DRenderer: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CSS3DRenderer] = js.native
-  var CSS3DSprite: org.scalablytyped.runtime.Instantiable1[/* element */ js.Any, threeLib.threeMod.CSS3DSprite] = js.native
-  var CTMLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CTMLoader] = js.native
+  val ByteType: threeLib.srcConstantsMod.TextureDataType = js.native
   val CacheNs: aframeLib.Anon_Add = js.native
   var Camera: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Camera] = js.native
-  var CameraHelper: org.scalablytyped.runtime.Instantiable1[/* camera */ threeLib.threeDashCoreMod.Camera, threeLib.threeMod.CameraHelper] = js.native
-  var CanvasRenderer: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CanvasRenderer] = js.native
+  var CameraHelper: org.scalablytyped.runtime.Instantiable1[/* camera */ threeLib.srcCamerasCameraMod.Camera, threeLib.threeMod.CameraHelper] = js.native
   var CanvasTexture: org.scalablytyped.runtime.Instantiable9[
     /* canvas */ stdLib.HTMLImageElement, 
-    /* mapping */ js.UndefOr[/* mapping */ threeLib.threeDashCoreMod.Mapping], 
-    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.threeDashCoreMod.Wrapping], 
-    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.threeDashCoreMod.Wrapping], 
-    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.threeDashCoreMod.TextureFilter], 
-    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.threeDashCoreMod.TextureFilter], 
-    /* format */ js.UndefOr[/* format */ threeLib.threeDashCoreMod.PixelFormat], 
-    /* type */ js.UndefOr[/* type */ threeLib.threeDashCoreMod.TextureDataType], 
+    /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    /* format */ js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
+    /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
     /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
     threeLib.threeMod.CanvasTexture
   ] = js.native
   var CatmullRomCurve3: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CatmullRomCurve3] = js.native
-  val CineonToneMapping: threeLib.threeDashCoreMod.ToneMapping = js.native
+  val CineonToneMapping: threeLib.srcConstantsMod.ToneMapping = js.native
   var CircleBufferGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CircleBufferGeometry] = js.native
   var CircleGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CircleGeometry] = js.native
-  val ClampToEdgeWrapping: threeLib.threeDashCoreMod.Wrapping = js.native
-  var ClearMaskPass: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ClearMaskPass] = js.native
+  val ClampToEdgeWrapping: threeLib.srcConstantsMod.Wrapping = js.native
   var Clock: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Clock] = js.native
-  var ColladaLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ColladaLoader] = js.native
-  var ColladaModel: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ColladaModel] = js.native
   var Color: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Color] = js.native
   var ColorKeyframeTrack: org.scalablytyped.runtime.Instantiable3[
     /* name */ java.lang.String, 
@@ -121,15 +114,15 @@ trait ThreeLib extends js.Object {
     /* mipmaps */ js.Array[stdLib.ImageData], 
     /* width */ scala.Double, 
     /* height */ scala.Double, 
-    /* format */ js.UndefOr[/* format */ threeLib.threeDashCoreMod.PixelFormat], 
-    /* type */ js.UndefOr[/* type */ threeLib.threeDashCoreMod.TextureDataType], 
-    /* mapping */ js.UndefOr[/* mapping */ threeLib.threeDashCoreMod.Mapping], 
-    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.threeDashCoreMod.Wrapping], 
-    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.threeDashCoreMod.Wrapping], 
-    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.threeDashCoreMod.TextureFilter], 
-    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.threeDashCoreMod.TextureFilter], 
+    /* format */ js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
+    /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
+    /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
     /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
-    /* encoding */ js.UndefOr[/* encoding */ threeLib.threeDashCoreMod.TextureEncoding], 
+    /* encoding */ js.UndefOr[/* encoding */ threeLib.srcConstantsMod.TextureEncoding], 
     threeLib.threeMod.CompressedTexture
   ] = js.native
   var CompressedTextureLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CompressedTextureLoader] = js.native
@@ -153,39 +146,37 @@ trait ThreeLib extends js.Object {
     /* thetaLength */ js.UndefOr[/* thetaLength */ scala.Double], 
     threeLib.threeMod.ConeGeometry
   ] = js.native
-  var CopyShader: threeLib.threeDashCoreMod.Shader = js.native
   var CubeCamera: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CubeCamera] = js.native
-  var CubeGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CubeGeometry] = js.native
-  val CubeReflectionMapping: threeLib.threeDashCoreMod.Mapping = js.native
-  val CubeRefractionMapping: threeLib.threeDashCoreMod.Mapping = js.native
+  val CubeReflectionMapping: threeLib.srcConstantsMod.Mapping = js.native
+  val CubeRefractionMapping: threeLib.srcConstantsMod.Mapping = js.native
   var CubeTexture: org.scalablytyped.runtime.Instantiable10[
     /* images */ js.UndefOr[/* images */ js.Array[js.Any]], 
-    /* mapping */ js.UndefOr[/* mapping */ threeLib.threeDashCoreMod.Mapping], 
-    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.threeDashCoreMod.Wrapping], 
-    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.threeDashCoreMod.Wrapping], 
-    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.threeDashCoreMod.TextureFilter], 
-    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.threeDashCoreMod.TextureFilter], 
-    /* format */ js.UndefOr[/* format */ threeLib.threeDashCoreMod.PixelFormat], 
-    /* type */ js.UndefOr[/* type */ threeLib.threeDashCoreMod.TextureDataType], 
+    /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    /* format */ js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
+    /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
     /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
-    /* encoding */ js.UndefOr[/* encoding */ threeLib.threeDashCoreMod.TextureEncoding], 
+    /* encoding */ js.UndefOr[/* encoding */ threeLib.srcConstantsMod.TextureEncoding], 
     threeLib.threeMod.CubeTexture
   ] = js.native
   var CubeTextureLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CubeTextureLoader] = js.native
-  val CubeUVReflectionMapping: threeLib.threeDashCoreMod.Mapping = js.native
-  val CubeUVRefractionMapping: threeLib.threeDashCoreMod.Mapping = js.native
+  val CubeUVReflectionMapping: threeLib.srcConstantsMod.Mapping = js.native
+  val CubeUVRefractionMapping: threeLib.srcConstantsMod.Mapping = js.native
   var CubicBezierCurve: org.scalablytyped.runtime.Instantiable4[
-    /* v0 */ threeLib.threeDashCoreMod.Vector2, 
-    /* v1 */ threeLib.threeDashCoreMod.Vector2, 
-    /* v2 */ threeLib.threeDashCoreMod.Vector2, 
-    /* v3 */ threeLib.threeDashCoreMod.Vector2, 
+    /* v0 */ threeLib.srcMathVector2Mod.Vector2, 
+    /* v1 */ threeLib.srcMathVector2Mod.Vector2, 
+    /* v2 */ threeLib.srcMathVector2Mod.Vector2, 
+    /* v3 */ threeLib.srcMathVector2Mod.Vector2, 
     threeLib.threeMod.CubicBezierCurve
   ] = js.native
   var CubicBezierCurve3: org.scalablytyped.runtime.Instantiable4[
-    /* v0 */ threeLib.threeDashCoreMod.Vector3, 
-    /* v1 */ threeLib.threeDashCoreMod.Vector3, 
-    /* v2 */ threeLib.threeDashCoreMod.Vector3, 
-    /* v3 */ threeLib.threeDashCoreMod.Vector3, 
+    /* v0 */ threeLib.srcMathVector3Mod.Vector3, 
+    /* v1 */ threeLib.srcMathVector3Mod.Vector3, 
+    /* v2 */ threeLib.srcMathVector3Mod.Vector3, 
+    /* v3 */ threeLib.srcMathVector3Mod.Vector3, 
     threeLib.threeMod.CubicBezierCurve3
   ] = js.native
   var CubicInterpolant: org.scalablytyped.runtime.Instantiable3[
@@ -194,14 +185,14 @@ trait ThreeLib extends js.Object {
     /* sampleSize */ scala.Double, 
     threeLib.threeMod.CubicInterpolant
   ] = js.native
-  val CullFaceBack: threeLib.threeDashCoreMod.CullFace = js.native
-  val CullFaceFront: threeLib.threeDashCoreMod.CullFace = js.native
-  val CullFaceFrontBack: threeLib.threeDashCoreMod.CullFace = js.native
-  val CullFaceNone: threeLib.threeDashCoreMod.CullFace = js.native
+  val CullFaceBack: threeLib.srcConstantsMod.CullFace = js.native
+  val CullFaceFront: threeLib.srcConstantsMod.CullFace = js.native
+  val CullFaceFrontBack: threeLib.srcConstantsMod.CullFace = js.native
+  val CullFaceNone: threeLib.srcConstantsMod.CullFace = js.native
   var Curve: aframeLib.Anon_ConstructorFunc = js.native
-  var CurvePath: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CurvePath[threeLib.threeDashCoreMod.Vector]] = js.native
+  var CurvePath: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.CurvePath[threeLib.srcMathVector2Mod.Vector]] = js.native
   val CurveUtilsNs: aframeLib.Anon_Interpolate = js.native
-  val CustomBlending: threeLib.threeDashCoreMod.Blending = js.native
+  val CustomBlending: threeLib.srcConstantsMod.Blending = js.native
   var CylinderBufferGeometry: org.scalablytyped.runtime.Instantiable8[
     /* radiusTop */ js.UndefOr[/* radiusTop */ scala.Double], 
     /* radiusBottom */ js.UndefOr[/* radiusBottom */ scala.Double], 
@@ -225,42 +216,48 @@ trait ThreeLib extends js.Object {
     threeLib.threeMod.CylinderGeometry
   ] = js.native
   var Cylindrical: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Cylindrical] = js.native
-  var DDSLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.DDSLoader] = js.native
   var DataTexture: org.scalablytyped.runtime.Instantiable12[
     /* data */ stdLib.ArrayBuffer, 
     /* width */ scala.Double, 
     /* height */ scala.Double, 
-    /* format */ js.UndefOr[/* format */ threeLib.threeDashCoreMod.PixelFormat], 
-    /* type */ js.UndefOr[/* type */ threeLib.threeDashCoreMod.TextureDataType], 
-    /* mapping */ js.UndefOr[/* mapping */ threeLib.threeDashCoreMod.Mapping], 
-    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.threeDashCoreMod.Wrapping], 
-    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.threeDashCoreMod.Wrapping], 
-    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.threeDashCoreMod.TextureFilter], 
-    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.threeDashCoreMod.TextureFilter], 
+    /* format */ js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
+    /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
+    /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
     /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
-    /* encoding */ js.UndefOr[/* encoding */ threeLib.threeDashCoreMod.TextureEncoding], 
+    /* encoding */ js.UndefOr[/* encoding */ threeLib.srcConstantsMod.TextureEncoding], 
     threeLib.threeMod.DataTexture
   ] = js.native
+  var DataTexture3D: org.scalablytyped.runtime.Instantiable4[
+    /* data */ stdLib.ArrayBuffer, 
+    /* width */ scala.Double, 
+    /* height */ scala.Double, 
+    /* depth */ scala.Double, 
+    threeLib.threeMod.DataTexture3D
+  ] = js.native
   var DataTextureLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.DataTextureLoader] = js.native
-  val DefaultLoadingManager: threeLib.threeDashCoreMod.LoadingManager = js.native
-  val DepthFormat: threeLib.threeDashCoreMod.PixelFormat = js.native
-  val DepthStencilFormat: threeLib.threeDashCoreMod.PixelFormat = js.native
+  val DefaultLoadingManager: threeLib.srcLoadersLoadingManagerMod.LoadingManager = js.native
+  val DepthFormat: threeLib.srcConstantsMod.PixelFormat = js.native
+  val DepthStencilFormat: threeLib.srcConstantsMod.PixelFormat = js.native
   var DepthTexture: org.scalablytyped.runtime.Instantiable9[
     /* width */ scala.Double, 
     /* heighht */ scala.Double, 
-    /* type */ js.UndefOr[/* type */ threeLib.threeDashCoreMod.TextureDataType], 
-    /* mapping */ js.UndefOr[/* mapping */ threeLib.threeDashCoreMod.Mapping], 
-    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.threeDashCoreMod.Wrapping], 
-    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.threeDashCoreMod.Wrapping], 
-    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.threeDashCoreMod.TextureFilter], 
-    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.threeDashCoreMod.TextureFilter], 
+    /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
+    /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
     /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
     threeLib.threeMod.DepthTexture
   ] = js.native
   var DirectGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.DirectGeometry] = js.native
   var DirectionalLight: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.DirectionalLight] = js.native
   var DirectionalLightHelper: org.scalablytyped.runtime.Instantiable1[
-    /* light */ threeLib.threeDashCoreMod.DirectionalLight, 
+    /* light */ threeLib.srcLightsDirectionalLightMod.DirectionalLight, 
     threeLib.threeMod.DirectionalLightHelper
   ] = js.native
   var DirectionalLightShadow: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.DirectionalLightShadow] = js.native
@@ -272,25 +269,12 @@ trait ThreeLib extends js.Object {
   ] = js.native
   var DodecahedronBufferGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.DodecahedronBufferGeometry] = js.native
   var DodecahedronGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.DodecahedronGeometry] = js.native
-  var DotScreenShader: threeLib.threeDashCoreMod.Shader = js.native
-  val DoubleSide: threeLib.threeDashCoreMod.Side = js.native
-  var DragControls: org.scalablytyped.runtime.Instantiable2[
-    /* objects */ js.Array[threeLib.threeDashCoreMod.Object3D], 
-    /* camera */ threeLib.threeDashCoreMod.Camera, 
-    threeLib.threeMod.DragControls
-  ] = js.native
-  val DstAlphaFactor: threeLib.threeDashCoreMod.BlendingDstFactor = js.native
-  val DstColorFactor: threeLib.threeDashCoreMod.BlendingDstFactor = js.native
-  var DynamicBufferAttribute: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.DynamicBufferAttribute] = js.native
+  val DoubleSide: threeLib.srcConstantsMod.Side = js.native
+  val DstAlphaFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
+  val DstColorFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
   var EdgesGeometry: org.scalablytyped.runtime.Instantiable1[
-    /* geometry */ threeLib.threeDashCoreMod.BufferGeometry, 
+    /* geometry */ threeLib.srcCoreBufferGeometryMod.BufferGeometry, 
     threeLib.threeMod.EdgesGeometry
-  ] = js.native
-  var EdgesHelper: org.scalablytyped.runtime.Instantiable1[/* object */ threeLib.threeDashCoreMod.Object3D, threeLib.threeMod.EdgesHelper] = js.native
-  var EditorControls: org.scalablytyped.runtime.Instantiable1[/* object */ threeLib.threeDashCoreMod.Camera, threeLib.threeMod.EditorControls] = js.native
-  var EffectComposer: org.scalablytyped.runtime.Instantiable1[
-    /* renderer */ threeLib.threeDashCoreMod.WebGLRenderer, 
-    threeLib.threeMod.EffectComposer
   ] = js.native
   var EllipseCurve: org.scalablytyped.runtime.Instantiable8[
     /* aX */ scala.Double, 
@@ -303,34 +287,26 @@ trait ThreeLib extends js.Object {
     /* aRotation */ scala.Double, 
     threeLib.threeMod.EllipseCurve
   ] = js.native
-  val EqualDepth: threeLib.threeDashCoreMod.DepthModes = js.native
-  val EquirectangularReflectionMapping: threeLib.threeDashCoreMod.Mapping = js.native
-  val EquirectangularRefractionMapping: threeLib.threeDashCoreMod.Mapping = js.native
+  val EqualDepth: threeLib.srcConstantsMod.DepthModes = js.native
+  val EquirectangularReflectionMapping: threeLib.srcConstantsMod.Mapping = js.native
+  val EquirectangularRefractionMapping: threeLib.srcConstantsMod.Mapping = js.native
   var Euler: aframeLib.Anon_DefaultOrder = js.native
   var EventDispatcher: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.EventDispatcher] = js.native
   var ExtrudeBufferGeometry: aframeLib.Anon_ShapesWorldUVGenerator = js.native
   var ExtrudeGeometry: aframeLib.Anon_Shapes = js.native
-  var FBXLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.FBXLoader] = js.native
-  var FXAAShader: threeLib.threeDashCoreMod.Shader = js.native
   var Face3: org.scalablytyped.runtime.Instantiable3[
     /* a */ scala.Double, 
     /* b */ scala.Double, 
     /* c */ scala.Double, 
     threeLib.threeMod.Face3
   ] = js.native
-  var Face4: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Face4] = js.native
-  val FaceColors: threeLib.threeDashCoreMod.Colors = js.native
+  val FaceColors: threeLib.srcConstantsMod.Colors = js.native
   var FaceNormalsHelper: org.scalablytyped.runtime.Instantiable1[
-    /* object */ threeLib.threeDashCoreMod.Object3D, 
+    /* object */ threeLib.srcCoreObject3DMod.Object3D, 
     threeLib.threeMod.FaceNormalsHelper
   ] = js.native
   var FileLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.FileLoader] = js.native
-  var FilmPass: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.FilmPass] = js.native
-  var FirstPersonControls: org.scalablytyped.runtime.Instantiable1[
-    /* object */ threeLib.threeDashCoreMod.Camera, 
-    threeLib.threeMod.FirstPersonControls
-  ] = js.native
-  val FlatShading: threeLib.threeDashCoreMod.Shading = js.native
+  val FlatShading: threeLib.srcConstantsMod.Shading = js.native
   var Float32Attribute: org.scalablytyped.runtime.Instantiable2[/* array */ js.Any, /* itemSize */ scala.Double, threeLib.threeMod.Float32Attribute] = js.native
   var Float32BufferAttribute: org.scalablytyped.runtime.Instantiable2[
     /* array */ stdLib.Iterable[scala.Double], 
@@ -343,48 +319,45 @@ trait ThreeLib extends js.Object {
     /* itemSize */ scala.Double, 
     threeLib.threeMod.Float64BufferAttribute
   ] = js.native
-  val FloatType: threeLib.threeDashCoreMod.TextureDataType = js.native
-  var FlyControls: js.Any = js.native
+  val FloatType: threeLib.srcConstantsMod.TextureDataType = js.native
   var Fog: org.scalablytyped.runtime.Instantiable1[/* hex */ scala.Double, threeLib.threeMod.Fog] = js.native
   var FogExp2: org.scalablytyped.runtime.Instantiable1[/* hex */ scala.Double, threeLib.threeMod.FogExp2] = js.native
   var Font: org.scalablytyped.runtime.Instantiable1[/* jsondata */ js.Any, threeLib.threeMod.Font] = js.native
   var FontLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.FontLoader] = js.native
-  val FrontFaceDirectionCCW: threeLib.threeDashCoreMod.FrontFaceDirection = js.native
-  val FrontFaceDirectionCW: threeLib.threeDashCoreMod.FrontFaceDirection = js.native
-  val FrontSide: threeLib.threeDashCoreMod.Side = js.native
+  val FrontFaceDirectionCCW: threeLib.srcConstantsMod.FrontFaceDirection = js.native
+  val FrontFaceDirectionCW: threeLib.srcConstantsMod.FrontFaceDirection = js.native
+  val FrontSide: threeLib.srcConstantsMod.Side = js.native
   var Frustum: org.scalablytyped.runtime.Instantiable6[
-    /* p0 */ js.UndefOr[/* p0 */ threeLib.threeDashCoreMod.Plane], 
-    /* p1 */ js.UndefOr[/* p1 */ threeLib.threeDashCoreMod.Plane], 
-    /* p2 */ js.UndefOr[/* p2 */ threeLib.threeDashCoreMod.Plane], 
-    /* p3 */ js.UndefOr[/* p3 */ threeLib.threeDashCoreMod.Plane], 
-    /* p4 */ js.UndefOr[/* p4 */ threeLib.threeDashCoreMod.Plane], 
-    /* p5 */ js.UndefOr[/* p5 */ threeLib.threeDashCoreMod.Plane], 
+    /* p0 */ js.UndefOr[/* p0 */ threeLib.srcMathPlaneMod.Plane], 
+    /* p1 */ js.UndefOr[/* p1 */ threeLib.srcMathPlaneMod.Plane], 
+    /* p2 */ js.UndefOr[/* p2 */ threeLib.srcMathPlaneMod.Plane], 
+    /* p3 */ js.UndefOr[/* p3 */ threeLib.srcMathPlaneMod.Plane], 
+    /* p4 */ js.UndefOr[/* p4 */ threeLib.srcMathPlaneMod.Plane], 
+    /* p5 */ js.UndefOr[/* p5 */ threeLib.srcMathPlaneMod.Plane], 
     threeLib.threeMod.Frustum
   ] = js.native
-  var GLTF: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.GLTF] = js.native
-  var GLTFExporter: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.GLTFExporter] = js.native
-  var GLTFLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.GLTFLoader] = js.native
-  val GammaEncoding: threeLib.threeDashCoreMod.TextureEncoding = js.native
+  val GammaEncoding: threeLib.srcConstantsMod.TextureEncoding = js.native
   var Geometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Geometry] = js.native
   var GeometryIdCount: scala.Double = js.native
   val GeometryUtilsNs: aframeLib.Anon_Center = js.native
-  val GreaterDepth: threeLib.threeDashCoreMod.DepthModes = js.native
-  val GreaterEqualDepth: threeLib.threeDashCoreMod.DepthModes = js.native
+  val GreaterDepth: threeLib.srcConstantsMod.DepthModes = js.native
+  val GreaterEqualDepth: threeLib.srcConstantsMod.DepthModes = js.native
   var GridHelper: org.scalablytyped.runtime.Instantiable2[/* size */ scala.Double, /* divisions */ scala.Double, threeLib.threeMod.GridHelper] = js.native
   var Group: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Group] = js.native
-  val HalfFloatType: threeLib.threeDashCoreMod.TextureDataType = js.native
+  val HalfFloatType: threeLib.srcConstantsMod.TextureDataType = js.native
   var HemisphereLight: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.HemisphereLight] = js.native
   var HemisphereLightHelper: org.scalablytyped.runtime.Instantiable2[
-    /* light */ threeLib.threeDashCoreMod.HemisphereLight, 
+    /* light */ threeLib.srcLightsHemisphereLightMod.HemisphereLight, 
     /* size */ scala.Double, 
     threeLib.threeMod.HemisphereLightHelper
   ] = js.native
   var IcosahedronBufferGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.IcosahedronBufferGeometry] = js.native
   var IcosahedronGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.IcosahedronGeometry] = js.native
+  var ImageBitmapLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ImageBitmapLoader] = js.native
   var ImageLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ImageLoader] = js.native
   val ImageUtilsNs: aframeLib.Anon_ArrayCrossOrigin = js.native
   var ImmediateRenderObject: org.scalablytyped.runtime.Instantiable1[
-    /* material */ threeLib.threeDashCoreMod.Material, 
+    /* material */ threeLib.srcMaterialsMaterialMod.Material, 
     threeLib.threeMod.ImmediateRenderObject
   ] = js.native
   var InstancedBufferAttribute: org.scalablytyped.runtime.Instantiable2[
@@ -416,14 +389,14 @@ trait ThreeLib extends js.Object {
     /* itemSize */ scala.Double, 
     threeLib.threeMod.Int8BufferAttribute
   ] = js.native
-  val IntType: threeLib.threeDashCoreMod.TextureDataType = js.native
+  val IntType: threeLib.srcConstantsMod.TextureDataType = js.native
   var InterleavedBuffer: org.scalablytyped.runtime.Instantiable2[
     /* array */ stdLib.ArrayLike[scala.Double], 
     /* stride */ scala.Double, 
     threeLib.threeMod.InterleavedBuffer
   ] = js.native
   var InterleavedBufferAttribute: org.scalablytyped.runtime.Instantiable3[
-    /* interleavedBuffer */ threeLib.threeDashCoreMod.InterleavedBuffer, 
+    /* interleavedBuffer */ threeLib.srcCoreInterleavedBufferMod.InterleavedBuffer, 
     /* itemSize */ scala.Double, 
     /* offset */ scala.Double, 
     threeLib.threeMod.InterleavedBufferAttribute
@@ -434,38 +407,36 @@ trait ThreeLib extends js.Object {
     /* sampleSize */ scala.Double, 
     threeLib.threeMod.Interpolant
   ] = js.native
-  val InterpolateDiscrete: threeLib.threeDashCoreMod.InterpolationModes = js.native
-  val InterpolateLinear: threeLib.threeDashCoreMod.InterpolationModes = js.native
-  val InterpolateSmooth: threeLib.threeDashCoreMod.InterpolationModes = js.native
+  val InterpolateDiscrete: threeLib.srcConstantsMod.InterpolationModes = js.native
+  val InterpolateLinear: threeLib.srcConstantsMod.InterpolationModes = js.native
+  val InterpolateSmooth: threeLib.srcConstantsMod.InterpolationModes = js.native
   var JSONLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.JSONLoader] = js.native
   var KeyframeTrack: aframeLib.Anon_Json = js.native
   var LOD: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.LOD] = js.native
   var LatheBufferGeometry: org.scalablytyped.runtime.Instantiable1[
-    /* points */ js.Array[threeLib.threeDashCoreMod.Vector2], 
+    /* points */ js.Array[threeLib.srcMathVector2Mod.Vector2], 
     threeLib.threeMod.LatheBufferGeometry
   ] = js.native
   var LatheGeometry: org.scalablytyped.runtime.Instantiable1[
-    /* points */ js.Array[threeLib.threeDashCoreMod.Vector2], 
+    /* points */ js.Array[threeLib.srcMathVector2Mod.Vector2], 
     threeLib.threeMod.LatheGeometry
   ] = js.native
   var Layers: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Layers] = js.native
-  var LensFlare: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.LensFlare] = js.native
-  var LensFlareElement: aframeLib.Anon_Geometry = js.native
-  val LessDepth: threeLib.threeDashCoreMod.DepthModes = js.native
-  val LessEqualDepth: threeLib.threeDashCoreMod.DepthModes = js.native
+  val LessDepth: threeLib.srcConstantsMod.DepthModes = js.native
+  val LessEqualDepth: threeLib.srcConstantsMod.DepthModes = js.native
   var Light: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Light] = js.native
-  var LightShadow: org.scalablytyped.runtime.Instantiable1[/* camera */ threeLib.threeDashCoreMod.Camera, threeLib.threeMod.LightShadow] = js.native
+  var LightShadow: org.scalablytyped.runtime.Instantiable1[/* camera */ threeLib.srcCamerasCameraMod.Camera, threeLib.threeMod.LightShadow] = js.native
   var Line: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Line] = js.native
   var Line3: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Line3] = js.native
   var LineBasicMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.LineBasicMaterial] = js.native
   var LineCurve: org.scalablytyped.runtime.Instantiable2[
-    /* v1 */ threeLib.threeDashCoreMod.Vector2, 
-    /* v2 */ threeLib.threeDashCoreMod.Vector2, 
+    /* v1 */ threeLib.srcMathVector2Mod.Vector2, 
+    /* v2 */ threeLib.srcMathVector2Mod.Vector2, 
     threeLib.threeMod.LineCurve
   ] = js.native
   var LineCurve3: org.scalablytyped.runtime.Instantiable2[
-    /* v1 */ threeLib.threeDashCoreMod.Vector3, 
-    /* v2 */ threeLib.threeDashCoreMod.Vector3, 
+    /* v1 */ threeLib.srcMathVector3Mod.Vector3, 
+    /* v2 */ threeLib.srcMathVector3Mod.Vector3, 
     threeLib.threeMod.LineCurve3
   ] = js.native
   var LineDashedMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.LineDashedMaterial] = js.native
@@ -473,98 +444,75 @@ trait ThreeLib extends js.Object {
   val LinePieces: scala.Double = js.native
   var LineSegments: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.LineSegments] = js.native
   val LineStrip: scala.Double = js.native
-  val LinearEncoding: threeLib.threeDashCoreMod.TextureEncoding = js.native
-  val LinearFilter: threeLib.threeDashCoreMod.TextureFilter = js.native
+  val LinearEncoding: threeLib.srcConstantsMod.TextureEncoding = js.native
+  val LinearFilter: threeLib.srcConstantsMod.TextureFilter = js.native
   var LinearInterpolant: org.scalablytyped.runtime.Instantiable3[
     /* parameterPositions */ js.Any, 
     /* samplesValues */ js.Any, 
     /* sampleSize */ scala.Double, 
     threeLib.threeMod.LinearInterpolant
   ] = js.native
-  val LinearMipMapLinearFilter: threeLib.threeDashCoreMod.TextureFilter = js.native
-  val LinearMipMapNearestFilter: threeLib.threeDashCoreMod.TextureFilter = js.native
-  val LinearToneMapping: threeLib.threeDashCoreMod.ToneMapping = js.native
+  val LinearMipMapLinearFilter: threeLib.srcConstantsMod.TextureFilter = js.native
+  val LinearMipMapNearestFilter: threeLib.srcConstantsMod.TextureFilter = js.native
+  val LinearToneMapping: threeLib.srcConstantsMod.ToneMapping = js.native
   var Loader: aframeLib.Anon_Handlers = js.native
   var LoaderUtils: aframeLib.Anon_ArrayDecodeText = js.native
   var LoadingManager: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.LoadingManager] = js.native
-  val LogLuvEncoding: threeLib.threeDashCoreMod.TextureEncoding = js.native
-  val LoopOnce: threeLib.threeDashCoreMod.AnimationActionLoopStyles = js.native
-  val LoopPingPong: threeLib.threeDashCoreMod.AnimationActionLoopStyles = js.native
-  val LoopRepeat: threeLib.threeDashCoreMod.AnimationActionLoopStyles = js.native
-  val LuminanceAlphaFormat: threeLib.threeDashCoreMod.PixelFormat = js.native
-  val LuminanceFormat: threeLib.threeDashCoreMod.PixelFormat = js.native
-  var Lut: org.scalablytyped.runtime.Instantiable2[
-    /* colormap */ threeLib.threeDashLutMod.ColorMapKeyword, 
-    /* numberofcolors */ scala.Double, 
-    threeLib.threeMod.Lut
-  ] = js.native
-  var MTLLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MTLLoader] = js.native
-  var MapControls: org.scalablytyped.runtime.Instantiable1[/* object */ threeLib.threeDashCoreMod.Camera, threeLib.threeMod.MapControls] = js.native
-  var MaskPass: org.scalablytyped.runtime.Instantiable2[
-    /* scene */ threeLib.threeDashCoreMod.Scene, 
-    /* camera */ threeLib.threeDashCoreMod.Camera, 
-    threeLib.threeMod.MaskPass
-  ] = js.native
+  val LogLuvEncoding: threeLib.srcConstantsMod.TextureEncoding = js.native
+  val LoopOnce: threeLib.srcConstantsMod.AnimationActionLoopStyles = js.native
+  val LoopPingPong: threeLib.srcConstantsMod.AnimationActionLoopStyles = js.native
+  val LoopRepeat: threeLib.srcConstantsMod.AnimationActionLoopStyles = js.native
+  val LuminanceAlphaFormat: threeLib.srcConstantsMod.PixelFormat = js.native
+  val LuminanceFormat: threeLib.srcConstantsMod.PixelFormat = js.native
   var Material: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Material] = js.native
-  var MaterialCreator: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MaterialCreator] = js.native
   var MaterialIdCount: scala.Double = js.native
   var MaterialLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MaterialLoader] = js.native
   val MathNs: aframeLib.Anon_A1 = js.native
   var Matrix3: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Matrix3] = js.native
   var Matrix4: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Matrix4] = js.native
-  val MaxEquation: threeLib.threeDashCoreMod.BlendingEquation = js.native
+  val MaxEquation: threeLib.srcConstantsMod.BlendingEquation = js.native
   var Mesh: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Mesh] = js.native
   var MeshBasicMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshBasicMaterial] = js.native
   var MeshDepthMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshDepthMaterial] = js.native
-  var MeshFaceMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshFaceMaterial] = js.native
   var MeshLambertMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshLambertMaterial] = js.native
   var MeshNormalMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshNormalMaterial] = js.native
   var MeshPhongMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshPhongMaterial] = js.native
   var MeshPhysicalMaterial: org.scalablytyped.runtime.Instantiable1[
-    /* parameters */ threeLib.threeDashCoreMod.MeshPhysicalMaterialParameters, 
+    /* parameters */ threeLib.srcMaterialsMeshPhysicalMaterialMod.MeshPhysicalMaterialParameters, 
     threeLib.threeMod.MeshPhysicalMaterial
   ] = js.native
   var MeshStandardMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MeshStandardMaterial] = js.native
-  val MinEquation: threeLib.threeDashCoreMod.BlendingEquation = js.native
-  val MirroredRepeatWrapping: threeLib.threeDashCoreMod.Wrapping = js.native
-  val MixOperation: threeLib.threeDashCoreMod.Combine = js.native
-  var MorphBlendMesh: org.scalablytyped.runtime.Instantiable2[
-    /* geometry */ threeLib.threeDashCoreMod.Geometry, 
-    /* material */ threeLib.threeDashCoreMod.Material, 
-    threeLib.threeMod.MorphBlendMesh
-  ] = js.native
+  val MinEquation: threeLib.srcConstantsMod.BlendingEquation = js.native
+  val MirroredRepeatWrapping: threeLib.srcConstantsMod.Wrapping = js.native
+  val MixOperation: threeLib.srcConstantsMod.Combine = js.native
   var MultiMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.MultiMaterial] = js.native
-  val MultiplyBlending: threeLib.threeDashCoreMod.Blending = js.native
-  val MultiplyOperation: threeLib.threeDashCoreMod.Combine = js.native
-  val NearestFilter: threeLib.threeDashCoreMod.TextureFilter = js.native
-  val NearestMipMapLinearFilter: threeLib.threeDashCoreMod.TextureFilter = js.native
-  val NearestMipMapNearestFilter: threeLib.threeDashCoreMod.TextureFilter = js.native
-  val NeverDepth: threeLib.threeDashCoreMod.DepthModes = js.native
-  val NoBlending: threeLib.threeDashCoreMod.Blending = js.native
-  val NoColors: threeLib.threeDashCoreMod.Colors = js.native
-  val NoToneMapping: threeLib.threeDashCoreMod.ToneMapping = js.native
-  val NormalBlending: threeLib.threeDashCoreMod.Blending = js.native
-  val NotEqualDepth: threeLib.threeDashCoreMod.DepthModes = js.native
+  val MultiplyBlending: threeLib.srcConstantsMod.Blending = js.native
+  val MultiplyOperation: threeLib.srcConstantsMod.Combine = js.native
+  val NearestFilter: threeLib.srcConstantsMod.TextureFilter = js.native
+  val NearestMipMapLinearFilter: threeLib.srcConstantsMod.TextureFilter = js.native
+  val NearestMipMapNearestFilter: threeLib.srcConstantsMod.TextureFilter = js.native
+  val NeverDepth: threeLib.srcConstantsMod.DepthModes = js.native
+  val NoBlending: threeLib.srcConstantsMod.Blending = js.native
+  val NoColors: threeLib.srcConstantsMod.Colors = js.native
+  val NoToneMapping: threeLib.srcConstantsMod.ToneMapping = js.native
+  val NormalBlending: threeLib.srcConstantsMod.Blending = js.native
+  val NotEqualDepth: threeLib.srcConstantsMod.DepthModes = js.native
   var NumberKeyframeTrack: org.scalablytyped.runtime.Instantiable3[
     /* name */ java.lang.String, 
     /* times */ js.Array[js.Any], 
     /* values */ js.Array[js.Any], 
     threeLib.threeMod.NumberKeyframeTrack
   ] = js.native
-  var OBJLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.OBJLoader] = js.native
-  var OBJLoader2: js.Any = js.native
   var Object3D: aframeLib.Anon_DefaultMatrixAutoUpdate = js.native
   var Object3DIdCount: scala.Double = js.native
   var ObjectLoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ObjectLoader] = js.native
   var OctahedronBufferGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.OctahedronBufferGeometry] = js.native
   var OctahedronGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.OctahedronGeometry] = js.native
-  var Octree: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Octree] = js.native
-  val OneFactor: threeLib.threeDashCoreMod.BlendingDstFactor = js.native
-  val OneMinusDstAlphaFactor: threeLib.threeDashCoreMod.BlendingDstFactor = js.native
-  val OneMinusDstColorFactor: threeLib.threeDashCoreMod.BlendingDstFactor = js.native
-  val OneMinusSrcAlphaFactor: threeLib.threeDashCoreMod.BlendingDstFactor = js.native
-  val OneMinusSrcColorFactor: threeLib.threeDashCoreMod.BlendingDstFactor = js.native
-  var OrbitControls: org.scalablytyped.runtime.Instantiable1[/* object */ threeLib.threeDashCoreMod.Camera, threeLib.threeMod.OrbitControls] = js.native
+  val OneFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
+  val OneMinusDstAlphaFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
+  val OneMinusDstColorFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
+  val OneMinusSrcAlphaFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
+  val OneMinusSrcColorFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
   var OrthographicCamera: org.scalablytyped.runtime.Instantiable4[
     /* left */ scala.Double, 
     /* right */ scala.Double, 
@@ -572,18 +520,13 @@ trait ThreeLib extends js.Object {
     /* bottom */ scala.Double, 
     threeLib.threeMod.OrthographicCamera
   ] = js.native
-  var OrthographicTrackballControls: org.scalablytyped.runtime.Instantiable1[
-    /* object */ threeLib.threeDashCoreMod.Camera, 
-    threeLib.threeMod.OrthographicTrackballControls
-  ] = js.native
-  var OutlinePass: aframeLib.Anon_BlurDirectionX = js.native
-  val PCFShadowMap: threeLib.threeDashCoreMod.ShadowMapType = js.native
-  val PCFSoftShadowMap: threeLib.threeDashCoreMod.ShadowMapType = js.native
+  val PCFShadowMap: threeLib.srcConstantsMod.ShadowMapType = js.native
+  val PCFSoftShadowMap: threeLib.srcConstantsMod.ShadowMapType = js.native
   var ParametricBufferGeometry: org.scalablytyped.runtime.Instantiable3[
     /* func */ js.Function3[
       /* u */ scala.Double, 
       /* v */ scala.Double, 
-      /* dest */ threeLib.threeDashCoreMod.Vector3, 
+      /* dest */ threeLib.srcMathVector3Mod.Vector3, 
       scala.Unit
     ], 
     /* slices */ scala.Double, 
@@ -594,34 +537,36 @@ trait ThreeLib extends js.Object {
     /* func */ js.Function3[
       /* u */ scala.Double, 
       /* v */ scala.Double, 
-      /* dest */ threeLib.threeDashCoreMod.Vector3, 
+      /* dest */ threeLib.srcMathVector3Mod.Vector3, 
       scala.Unit
     ], 
     /* slices */ scala.Double, 
     /* stacks */ scala.Double, 
     threeLib.threeMod.ParametricGeometry
   ] = js.native
-  var Particle: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Particle] = js.native
-  var ParticleBasicMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ParticleBasicMaterial] = js.native
-  var ParticleSystem: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ParticleSystem] = js.native
-  var ParticleSystemMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ParticleSystemMaterial] = js.native
-  var Pass: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Pass] = js.native
   var Path: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Path] = js.native
   var PerspectiveCamera: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.PerspectiveCamera] = js.native
   var Plane: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Plane] = js.native
   var PlaneBufferGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.PlaneBufferGeometry] = js.native
   var PlaneGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.PlaneGeometry] = js.native
-  var PlaneHelper: org.scalablytyped.runtime.Instantiable1[/* plane */ threeLib.threeDashCoreMod.Plane, threeLib.threeMod.PlaneHelper] = js.native
-  var PointCloud: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.PointCloud] = js.native
-  var PointCloudMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.PointCloudMaterial] = js.native
+  var PlaneHelper: org.scalablytyped.runtime.Instantiable1[/* plane */ threeLib.srcMathPlaneMod.Plane, threeLib.threeMod.PlaneHelper] = js.native
   var PointLight: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.PointLight] = js.native
   var PointLightHelper: org.scalablytyped.runtime.Instantiable1[
-    /* light */ threeLib.threeDashCoreMod.PointLight, 
+    /* light */ threeLib.srcLightsPointLightMod.PointLight, 
     threeLib.threeMod.PointLightHelper
   ] = js.native
   var PointLightShadow: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.PointLightShadow] = js.native
   var Points: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Points] = js.native
   var PointsMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.PointsMaterial] = js.native
+  var PolarGridHelper: org.scalablytyped.runtime.Instantiable6[
+    /* radius */ scala.Double, 
+    /* radials */ scala.Double, 
+    /* circles */ scala.Double, 
+    /* divisions */ scala.Double, 
+    /* color1 */ threeLib.srcMathColorMod.Color, 
+    /* color2 */ threeLib.srcMathColorMod.Color, 
+    threeLib.threeMod.PolarGridHelper
+  ] = js.native
   var PolyhedronBufferGeometry: org.scalablytyped.runtime.Instantiable2[
     /* vertices */ js.Array[scala.Double], 
     /* indices */ js.Array[scala.Double], 
@@ -633,10 +578,13 @@ trait ThreeLib extends js.Object {
     threeLib.threeMod.PolyhedronGeometry
   ] = js.native
   var PositionalAudio: org.scalablytyped.runtime.Instantiable1[
-    /* listener */ threeLib.threeDashCoreMod.AudioListener, 
+    /* listener */ threeLib.srcAudioAudioListenerMod.AudioListener, 
     threeLib.threeMod.PositionalAudio
   ] = js.native
-  var Projector: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Projector] = js.native
+  var PositionalAudioHelper: org.scalablytyped.runtime.Instantiable1[
+    /* audio */ threeLib.srcAudioPositionalAudioMod.PositionalAudio, 
+    threeLib.threeMod.PositionalAudioHelper
+  ] = js.native
   var PropertyBinding: aframeLib.Anon_Create = js.native
   val PropertyBindingNs: aframeLib.Anon_Composite = js.native
   var PropertyMixer: org.scalablytyped.runtime.Instantiable3[
@@ -646,15 +594,15 @@ trait ThreeLib extends js.Object {
     threeLib.threeMod.PropertyMixer
   ] = js.native
   var QuadraticBezierCurve: org.scalablytyped.runtime.Instantiable3[
-    /* v0 */ threeLib.threeDashCoreMod.Vector2, 
-    /* v1 */ threeLib.threeDashCoreMod.Vector2, 
-    /* v2 */ threeLib.threeDashCoreMod.Vector2, 
+    /* v0 */ threeLib.srcMathVector2Mod.Vector2, 
+    /* v1 */ threeLib.srcMathVector2Mod.Vector2, 
+    /* v2 */ threeLib.srcMathVector2Mod.Vector2, 
     threeLib.threeMod.QuadraticBezierCurve
   ] = js.native
   var QuadraticBezierCurve3: org.scalablytyped.runtime.Instantiable3[
-    /* v0 */ threeLib.threeDashCoreMod.Vector3, 
-    /* v1 */ threeLib.threeDashCoreMod.Vector3, 
-    /* v2 */ threeLib.threeDashCoreMod.Vector3, 
+    /* v0 */ threeLib.srcMathVector3Mod.Vector3, 
+    /* v1 */ threeLib.srcMathVector3Mod.Vector3, 
+    /* v2 */ threeLib.srcMathVector3Mod.Vector3, 
     threeLib.threeMod.QuadraticBezierCurve3
   ] = js.native
   var Quaternion: aframeLib.Anon_Dst = js.native
@@ -671,40 +619,49 @@ trait ThreeLib extends js.Object {
     threeLib.threeMod.QuaternionLinearInterpolant
   ] = js.native
   val REVISION: java.lang.String = js.native
-  val RGBADepthPacking: threeLib.threeDashCoreMod.DepthPackingStrategies = js.native
-  val RGBAFormat: threeLib.threeDashCoreMod.PixelFormat = js.native
-  val RGBA_PVRTC_2BPPV1_Format: threeLib.threeDashCoreMod.CompressedPixelFormat = js.native
-  val RGBA_PVRTC_4BPPV1_Format: threeLib.threeDashCoreMod.CompressedPixelFormat = js.native
-  val RGBA_S3TC_DXT1_Format: threeLib.threeDashCoreMod.CompressedPixelFormat = js.native
-  val RGBA_S3TC_DXT3_Format: threeLib.threeDashCoreMod.CompressedPixelFormat = js.native
-  val RGBA_S3TC_DXT5_Format: threeLib.threeDashCoreMod.CompressedPixelFormat = js.native
-  val RGBDEncoding: threeLib.threeDashCoreMod.TextureEncoding = js.native
-  val RGBEEncoding: threeLib.threeDashCoreMod.TextureEncoding = js.native
-  val RGBEFormat: threeLib.threeDashCoreMod.PixelFormat = js.native
-  val RGBFormat: threeLib.threeDashCoreMod.PixelFormat = js.native
-  val RGBM16Encoding: threeLib.threeDashCoreMod.TextureEncoding = js.native
-  val RGBM7Encoding: threeLib.threeDashCoreMod.TextureEncoding = js.native
-  var RGBShiftShader: threeLib.threeDashCoreMod.Shader = js.native
-  val RGB_ETC1_Format: threeLib.threeDashCoreMod.CompressedPixelFormat = js.native
-  val RGB_PVRTC_2BPPV1_Format: threeLib.threeDashCoreMod.CompressedPixelFormat = js.native
-  val RGB_PVRTC_4BPPV1_Format: threeLib.threeDashCoreMod.CompressedPixelFormat = js.native
-  val RGB_S3TC_DXT1_Format: threeLib.threeDashCoreMod.CompressedPixelFormat = js.native
+  val RGBADepthPacking: threeLib.srcConstantsMod.DepthPackingStrategies = js.native
+  val RGBAFormat: threeLib.srcConstantsMod.PixelFormat = js.native
+  val RGBA_ASTC_10x10_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_10x5_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_10x6_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_10x8_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_12x10_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_12x12_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_4x4_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_5x4_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_5x5_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_6x5_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_6x6_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_8x5_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_8x6_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_ASTC_8x8_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_PVRTC_2BPPV1_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_PVRTC_4BPPV1_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_S3TC_DXT1_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_S3TC_DXT3_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBA_S3TC_DXT5_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGBDEncoding: threeLib.srcConstantsMod.TextureEncoding = js.native
+  val RGBEEncoding: threeLib.srcConstantsMod.TextureEncoding = js.native
+  val RGBEFormat: threeLib.srcConstantsMod.PixelFormat = js.native
+  val RGBFormat: threeLib.srcConstantsMod.PixelFormat = js.native
+  val RGBM16Encoding: threeLib.srcConstantsMod.TextureEncoding = js.native
+  val RGBM7Encoding: threeLib.srcConstantsMod.TextureEncoding = js.native
+  val RGB_ETC1_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGB_PVRTC_2BPPV1_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGB_PVRTC_4BPPV1_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
+  val RGB_S3TC_DXT1_Format: threeLib.srcConstantsMod.CompressedPixelFormat = js.native
   var RawShaderMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.RawShaderMaterial] = js.native
   var Ray: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Ray] = js.native
   var Raycaster: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Raycaster] = js.native
-  val ReinhardToneMapping: threeLib.threeDashCoreMod.ToneMapping = js.native
-  var RenderPass: org.scalablytyped.runtime.Instantiable2[
-    /* scene */ threeLib.threeDashCoreMod.Scene, 
-    /* camera */ threeLib.threeDashCoreMod.Camera, 
-    threeLib.threeMod.RenderPass
+  var RectAreaLight: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.RectAreaLight] = js.native
+  var RectAreaLightHelper: org.scalablytyped.runtime.Instantiable1[
+    /* light */ threeLib.srcLightsRectAreaLightMod.RectAreaLight, 
+    threeLib.threeMod.RectAreaLightHelper
   ] = js.native
-  var RenderableFace: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.RenderableFace] = js.native
-  var RenderableLine: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.RenderableLine] = js.native
-  var RenderableObject: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.RenderableObject] = js.native
-  var RenderableSprite: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.RenderableSprite] = js.native
-  var RenderableVertex: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.RenderableVertex] = js.native
-  val RepeatWrapping: threeLib.threeDashCoreMod.Wrapping = js.native
-  val ReverseSubtractEquation: threeLib.threeDashCoreMod.BlendingEquation = js.native
+  val RedFormat: threeLib.srcConstantsMod.PixelFormat = js.native
+  val ReinhardToneMapping: threeLib.srcConstantsMod.ToneMapping = js.native
+  val RepeatWrapping: threeLib.srcConstantsMod.Wrapping = js.native
+  val ReverseSubtractEquation: threeLib.srcConstantsMod.BlendingEquation = js.native
   var RingBufferGeometry: org.scalablytyped.runtime.Instantiable6[
     /* innerRadius */ js.UndefOr[/* innerRadius */ scala.Double], 
     /* outerRadius */ js.UndefOr[/* outerRadius */ scala.Double], 
@@ -723,29 +680,25 @@ trait ThreeLib extends js.Object {
     /* thetaLength */ js.UndefOr[/* thetaLength */ scala.Double], 
     threeLib.threeMod.RingGeometry
   ] = js.native
-  var SMAAPass: org.scalablytyped.runtime.Instantiable2[/* width */ scala.Double, /* height */ scala.Double, threeLib.threeMod.SMAAPass] = js.native
-  var SSAARenderPass: aframeLib.Anon_Camera = js.native
-  var STLLoader: js.Any = js.native
   var Scene: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Scene] = js.native
   val SceneUtilsNs: aframeLib.Anon_Attach = js.native
   var ShaderChunk: threeLib.Anon_Alphamapfragment = js.native
   var ShaderLib: threeLib.Anon_Basic = js.native
   var ShaderMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ShaderMaterial] = js.native
-  var ShaderPass: org.scalablytyped.runtime.Instantiable1[/* shader */ threeLib.threeDashCoreMod.Shader, threeLib.threeMod.ShaderPass] = js.native
   var ShadowMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ShadowMaterial] = js.native
   var Shape: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Shape] = js.native
   var ShapeBufferGeometry: org.scalablytyped.runtime.Instantiable1[
-    /* shapes */ threeLib.threeDashCoreMod.Shape, 
+    /* shapes */ threeLib.srcExtrasCoreShapeMod.Shape, 
     threeLib.threeMod.ShapeBufferGeometry
   ] = js.native
-  var ShapeGeometry: org.scalablytyped.runtime.Instantiable1[/* shapes */ threeLib.threeDashCoreMod.Shape, threeLib.threeMod.ShapeGeometry] = js.native
+  var ShapeGeometry: org.scalablytyped.runtime.Instantiable1[/* shapes */ threeLib.srcExtrasCoreShapeMod.Shape, threeLib.threeMod.ShapeGeometry] = js.native
   var ShapePath: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.ShapePath] = js.native
   val ShapeUtilsNs: aframeLib.Anon_Area = js.native
-  val ShortType: threeLib.threeDashCoreMod.TextureDataType = js.native
-  var Skeleton: org.scalablytyped.runtime.Instantiable1[/* bones */ js.Array[threeLib.threeDashCoreMod.Bone], threeLib.threeMod.Skeleton] = js.native
-  var SkeletonHelper: org.scalablytyped.runtime.Instantiable1[/* bone */ threeLib.threeDashCoreMod.Object3D, threeLib.threeMod.SkeletonHelper] = js.native
+  val ShortType: threeLib.srcConstantsMod.TextureDataType = js.native
+  var Skeleton: org.scalablytyped.runtime.Instantiable1[/* bones */ js.Array[threeLib.srcObjectsBoneMod.Bone], threeLib.threeMod.Skeleton] = js.native
+  var SkeletonHelper: org.scalablytyped.runtime.Instantiable1[/* bone */ threeLib.srcCoreObject3DMod.Object3D, threeLib.threeMod.SkeletonHelper] = js.native
   var SkinnedMesh: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.SkinnedMesh] = js.native
-  val SmoothShading: threeLib.threeDashCoreMod.Shading = js.native
+  val SmoothShading: threeLib.srcConstantsMod.Shading = js.native
   var Sphere: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Sphere] = js.native
   var SphereBufferGeometry: org.scalablytyped.runtime.Instantiable7[
     /* radius */ js.UndefOr[/* radius */ scala.Double], 
@@ -768,10 +721,10 @@ trait ThreeLib extends js.Object {
     threeLib.threeMod.SphereGeometry
   ] = js.native
   var Spherical: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Spherical] = js.native
-  val SphericalReflectionMapping: threeLib.threeDashCoreMod.Mapping = js.native
+  val SphericalReflectionMapping: threeLib.srcConstantsMod.Mapping = js.native
   var SplineCurve: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.SplineCurve] = js.native
   var SpotLight: org.scalablytyped.runtime.Instantiable6[
-    /* color */ js.UndefOr[/* color */ threeLib.threeDashCoreMod.Color], 
+    /* color */ js.UndefOr[/* color */ threeLib.srcMathColorMod.Color], 
     /* intensity */ js.UndefOr[/* intensity */ scala.Double], 
     /* distance */ js.UndefOr[/* distance */ scala.Double], 
     /* angle */ js.UndefOr[/* angle */ scala.Double], 
@@ -779,19 +732,13 @@ trait ThreeLib extends js.Object {
     /* decay */ js.UndefOr[/* decay */ scala.Double], 
     threeLib.threeMod.SpotLight
   ] = js.native
-  var SpotLightHelper: org.scalablytyped.runtime.Instantiable1[/* light */ threeLib.threeDashCoreMod.Light, threeLib.threeMod.SpotLightHelper] = js.native
+  var SpotLightHelper: org.scalablytyped.runtime.Instantiable1[/* light */ threeLib.srcLightsLightMod.Light, threeLib.threeMod.SpotLightHelper] = js.native
   var SpotLightShadow: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.SpotLightShadow] = js.native
   var Sprite: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Sprite] = js.native
-  var SpriteCanvasMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.SpriteCanvasMaterial] = js.native
   var SpriteMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.SpriteMaterial] = js.native
-  var SpritePlugin: org.scalablytyped.runtime.Instantiable2[
-    /* renderer */ threeLib.threeDashCoreMod.WebGLRenderer, 
-    /* sprites */ js.Array[js.Any], 
-    threeLib.threeMod.SpritePlugin
-  ] = js.native
-  val SrcAlphaFactor: threeLib.threeDashCoreMod.BlendingDstFactor = js.native
-  val SrcAlphaSaturateFactor: threeLib.threeDashCoreMod.BlendingSrcFactor = js.native
-  val SrcColorFactor: threeLib.threeDashCoreMod.BlendingDstFactor = js.native
+  val SrcAlphaFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
+  val SrcAlphaSaturateFactor: threeLib.srcConstantsMod.BlendingSrcFactor = js.native
+  val SrcColorFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
   var StereoCamera: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.StereoCamera] = js.native
   var StringKeyframeTrack: org.scalablytyped.runtime.Instantiable3[
     /* name */ java.lang.String, 
@@ -799,10 +746,8 @@ trait ThreeLib extends js.Object {
     /* values */ js.Array[js.Any], 
     threeLib.threeMod.StringKeyframeTrack
   ] = js.native
-  val SubtractEquation: threeLib.threeDashCoreMod.BlendingEquation = js.native
-  val SubtractiveBlending: threeLib.threeDashCoreMod.Blending = js.native
-  var TDSLoader: org.scalablytyped.runtime.Instantiable1[/* three */ threeLib.Anon_AAClockwise, threeLib.threeMod.TDSLoader] = js.native
-  var TGALoader: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.TGALoader] = js.native
+  val SubtractEquation: threeLib.srcConstantsMod.BlendingEquation = js.native
+  val SubtractiveBlending: threeLib.srcConstantsMod.Blending = js.native
   var TetrahedronBufferGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.TetrahedronBufferGeometry] = js.native
   var TetrahedronGeometry: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.TetrahedronGeometry] = js.native
   var TextBufferGeometry: org.scalablytyped.runtime.Instantiable1[/* text */ java.lang.String, threeLib.threeMod.TextBufferGeometry] = js.native
@@ -830,21 +775,19 @@ trait ThreeLib extends js.Object {
     /* q */ js.UndefOr[/* q */ scala.Double], 
     threeLib.threeMod.TorusKnotGeometry
   ] = js.native
-  var TrackballControls: org.scalablytyped.runtime.Instantiable1[/* object */ threeLib.threeDashCoreMod.Camera, threeLib.threeMod.TrackballControls] = js.native
-  var TransformControls: org.scalablytyped.runtime.Instantiable1[/* object */ threeLib.threeDashCoreMod.Camera, threeLib.threeMod.TransformControls] = js.native
   var Triangle: aframeLib.Anon_A = js.native
-  val TriangleFanDrawMode: threeLib.threeDashCoreMod.TrianglesDrawModes = js.native
-  val TriangleStripDrawMode: threeLib.threeDashCoreMod.TrianglesDrawModes = js.native
-  val TrianglesDrawMode: threeLib.threeDashCoreMod.TrianglesDrawModes = js.native
+  val TriangleFanDrawMode: threeLib.srcConstantsMod.TrianglesDrawModes = js.native
+  val TriangleStripDrawMode: threeLib.srcConstantsMod.TrianglesDrawModes = js.native
+  val TrianglesDrawMode: threeLib.srcConstantsMod.TrianglesDrawModes = js.native
   var TubeBufferGeometry: org.scalablytyped.runtime.Instantiable1[
-    /* path */ threeLib.threeDashCoreMod.Curve[threeLib.threeDashCoreMod.Vector3], 
+    /* path */ threeLib.srcExtrasCoreCurveMod.Curve[threeLib.srcMathVector3Mod.Vector3], 
     threeLib.threeMod.TubeBufferGeometry
   ] = js.native
   var TubeGeometry: org.scalablytyped.runtime.Instantiable1[
-    /* path */ threeLib.threeDashCoreMod.Curve[threeLib.threeDashCoreMod.Vector3], 
+    /* path */ threeLib.srcExtrasCoreCurveMod.Curve[threeLib.srcMathVector3Mod.Vector3], 
     threeLib.threeMod.TubeGeometry
   ] = js.native
-  val UVMapping: threeLib.threeDashCoreMod.Mapping = js.native
+  val UVMapping: threeLib.srcConstantsMod.Mapping = js.native
   var Uint16Attribute: org.scalablytyped.runtime.Instantiable2[/* array */ js.Any, /* itemSize */ scala.Double, threeLib.threeMod.Uint16Attribute] = js.native
   var Uint16BufferAttribute: org.scalablytyped.runtime.Instantiable2[
     /* array */ stdLib.Iterable[scala.Double], 
@@ -873,20 +816,17 @@ trait ThreeLib extends js.Object {
     /* itemSize */ scala.Double, 
     threeLib.threeMod.Uint8ClampedBufferAttribute
   ] = js.native
-  val Uncharted2ToneMapping: threeLib.threeDashCoreMod.ToneMapping = js.native
+  val Uncharted2ToneMapping: threeLib.srcConstantsMod.ToneMapping = js.native
   var Uniform: org.scalablytyped.runtime.Instantiable1[/* value */ js.Any, threeLib.threeMod.Uniform] = js.native
   var UniformsLib: threeLib.Anon_Aomap = js.native
   val UniformsUtilsNs: aframeLib.Anon_Clone = js.native
-  var UnrealBloomPass: aframeLib.Anon_BlurDirectionXBlurDirectionY = js.native
-  val UnsignedByteType: threeLib.threeDashCoreMod.TextureDataType = js.native
-  val UnsignedInt248Type: threeLib.threeDashCoreMod.PixelType = js.native
-  val UnsignedIntType: threeLib.threeDashCoreMod.TextureDataType = js.native
-  val UnsignedShort4444Type: threeLib.threeDashCoreMod.PixelType = js.native
-  val UnsignedShort5551Type: threeLib.threeDashCoreMod.PixelType = js.native
-  val UnsignedShort565Type: threeLib.threeDashCoreMod.PixelType = js.native
-  val UnsignedShortType: threeLib.threeDashCoreMod.TextureDataType = js.native
-  var VRControls: org.scalablytyped.runtime.Instantiable1[/* camera */ threeLib.threeDashCoreMod.Camera, threeLib.threeMod.VRControls] = js.native
-  var VREffect: org.scalablytyped.runtime.Instantiable1[/* renderer */ threeLib.threeDashCoreMod.Renderer, threeLib.threeMod.VREffect] = js.native
+  val UnsignedByteType: threeLib.srcConstantsMod.TextureDataType = js.native
+  val UnsignedInt248Type: threeLib.srcConstantsMod.PixelType = js.native
+  val UnsignedIntType: threeLib.srcConstantsMod.TextureDataType = js.native
+  val UnsignedShort4444Type: threeLib.srcConstantsMod.PixelType = js.native
+  val UnsignedShort5551Type: threeLib.srcConstantsMod.PixelType = js.native
+  val UnsignedShort565Type: threeLib.srcConstantsMod.PixelType = js.native
+  val UnsignedShortType: threeLib.srcConstantsMod.TextureDataType = js.native
   var Vector2: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Vector2] = js.native
   var Vector3: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Vector3] = js.native
   var Vector4: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Vector4] = js.native
@@ -896,21 +836,20 @@ trait ThreeLib extends js.Object {
     /* values */ js.Array[js.Any], 
     threeLib.threeMod.VectorKeyframeTrack
   ] = js.native
-  var Vertex: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Vertex] = js.native
-  val VertexColors: threeLib.threeDashCoreMod.Colors = js.native
+  val VertexColors: threeLib.srcConstantsMod.Colors = js.native
   var VertexNormalsHelper: org.scalablytyped.runtime.Instantiable1[
-    /* object */ threeLib.threeDashCoreMod.Object3D, 
+    /* object */ threeLib.srcCoreObject3DMod.Object3D, 
     threeLib.threeMod.VertexNormalsHelper
   ] = js.native
   var VideoTexture: org.scalablytyped.runtime.Instantiable9[
     /* video */ stdLib.HTMLVideoElement, 
-    /* mapping */ js.UndefOr[/* mapping */ threeLib.threeDashCoreMod.Mapping], 
-    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.threeDashCoreMod.Wrapping], 
-    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.threeDashCoreMod.Wrapping], 
-    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.threeDashCoreMod.TextureFilter], 
-    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.threeDashCoreMod.TextureFilter], 
-    /* format */ js.UndefOr[/* format */ threeLib.threeDashCoreMod.PixelFormat], 
-    /* type */ js.UndefOr[/* type */ threeLib.threeDashCoreMod.TextureDataType], 
+    /* mapping */ js.UndefOr[/* mapping */ threeLib.srcConstantsMod.Mapping], 
+    /* wrapS */ js.UndefOr[/* wrapS */ threeLib.srcConstantsMod.Wrapping], 
+    /* wrapT */ js.UndefOr[/* wrapT */ threeLib.srcConstantsMod.Wrapping], 
+    /* magFilter */ js.UndefOr[/* magFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    /* minFilter */ js.UndefOr[/* minFilter */ threeLib.srcConstantsMod.TextureFilter], 
+    /* format */ js.UndefOr[/* format */ threeLib.srcConstantsMod.PixelFormat], 
+    /* type */ js.UndefOr[/* type */ threeLib.srcConstantsMod.TextureDataType], 
     /* anisotropy */ js.UndefOr[/* anisotropy */ scala.Double], 
     threeLib.threeMod.VideoTexture
   ] = js.native
@@ -923,7 +862,7 @@ trait ThreeLib extends js.Object {
   var WebGLCapabilities: org.scalablytyped.runtime.Instantiable3[
     /* gl */ stdLib.WebGLRenderingContext, 
     /* extensions */ js.Any, 
-    /* parameters */ threeLib.threeDashCoreMod.WebGLCapabilitiesParameters, 
+    /* parameters */ threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilitiesParameters, 
     threeLib.threeMod.WebGLCapabilities
   ] = js.native
   var WebGLClipping: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.WebGLClipping] = js.native
@@ -949,22 +888,33 @@ trait ThreeLib extends js.Object {
     /* info */ js.Any, 
     threeLib.threeMod.WebGLLights
   ] = js.native
+  var WebGLMultisampleRenderTarget: org.scalablytyped.runtime.Instantiable2[
+    /* width */ scala.Double, 
+    /* height */ scala.Double, 
+    threeLib.threeMod.WebGLMultisampleRenderTarget
+  ] = js.native
   var WebGLObjects: org.scalablytyped.runtime.Instantiable3[
     /* gl */ stdLib.WebGLRenderingContext, 
     /* properties */ js.Any, 
     /* info */ js.Any, 
     threeLib.threeMod.WebGLObjects
   ] = js.native
-  var WebGLProgram: org.scalablytyped.runtime.Instantiable4[
-    /* renderer */ threeLib.threeDashCoreMod.WebGLRenderer, 
+  var WebGLProgram: org.scalablytyped.runtime.Instantiable8[
+    /* renderer */ threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, 
+    /* extensions */ threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, 
     /* code */ java.lang.String, 
-    /* material */ threeLib.threeDashCoreMod.ShaderMaterial, 
-    /* parameters */ threeLib.threeDashCoreMod.WebGLRendererParameters, 
+    /* material */ threeLib.srcMaterialsShaderMaterialMod.ShaderMaterial, 
+    /* shader */ threeLib.srcRenderersWebglWebGLShaderMod.WebGLShader, 
+    /* parameters */ threeLib.srcRenderersWebGLRendererMod.WebGLRendererParameters, 
+    /* capabilities */ threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities, 
+    /* textures */ threeLib.srcRenderersWebglWebGLTexturesMod.WebGLTextures, 
     threeLib.threeMod.WebGLProgram
   ] = js.native
-  var WebGLPrograms: org.scalablytyped.runtime.Instantiable2[
-    /* renderer */ threeLib.threeDashCoreMod.WebGLRenderer, 
-    /* capabilities */ js.Any, 
+  var WebGLPrograms: org.scalablytyped.runtime.Instantiable4[
+    /* renderer */ threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, 
+    /* extensions */ threeLib.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions, 
+    /* capabilities */ threeLib.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities, 
+    /* textures */ threeLib.srcRenderersWebglWebGLTexturesMod.WebGLTextures, 
     threeLib.threeMod.WebGLPrograms
   ] = js.native
   var WebGLProperties: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.WebGLProperties] = js.native
@@ -988,7 +938,7 @@ trait ThreeLib extends js.Object {
     threeLib.threeMod.WebGLShader
   ] = js.native
   var WebGLShadowMap: org.scalablytyped.runtime.Instantiable4[
-    /* _renderer */ threeLib.threeDashCoreMod.Renderer, 
+    /* _renderer */ threeLib.srcRenderersWebGLRendererMod.WebGLRenderer, 
     /* _lights */ js.Array[js.Any], 
     /* _objects */ js.Array[js.Any], 
     /* capabilities */ js.Any, 
@@ -1011,17 +961,16 @@ trait ThreeLib extends js.Object {
     /* info */ js.Any, 
     threeLib.threeMod.WebGLTextures
   ] = js.native
-  var WebGLUniforms: aframeLib.Anon_CameraEvalDynamic = js.native
+  var WebGLUniforms: aframeLib.Anon_Camera = js.native
   var WireframeGeometry: org.scalablytyped.runtime.Instantiable1[
-    /* geometry */ threeLib.threeDashCoreMod.Geometry, 
+    /* geometry */ threeLib.srcCoreGeometryMod.Geometry, 
     threeLib.threeMod.WireframeGeometry
   ] = js.native
-  var WireframeHelper: org.scalablytyped.runtime.Instantiable1[/* object */ threeLib.threeDashCoreMod.Object3D, threeLib.threeMod.WireframeHelper] = js.native
-  val WrapAroundEnding: threeLib.threeDashCoreMod.InterpolationEndingModes = js.native
-  val ZeroCurvatureEnding: threeLib.threeDashCoreMod.InterpolationEndingModes = js.native
-  val ZeroFactor: threeLib.threeDashCoreMod.BlendingDstFactor = js.native
-  val ZeroSlopeEnding: threeLib.threeDashCoreMod.InterpolationEndingModes = js.native
-  val sRGBEncoding: threeLib.threeDashCoreMod.TextureEncoding = js.native
+  val WrapAroundEnding: threeLib.srcConstantsMod.InterpolationEndingModes = js.native
+  val ZeroCurvatureEnding: threeLib.srcConstantsMod.InterpolationEndingModes = js.native
+  val ZeroFactor: threeLib.srcConstantsMod.BlendingDstFactor = js.native
+  val ZeroSlopeEnding: threeLib.srcConstantsMod.InterpolationEndingModes = js.native
+  val sRGBEncoding: threeLib.srcConstantsMod.TextureEncoding = js.native
   def error(): scala.Unit = js.native
   def error(message: js.Any, optionalParams: js.Any*): scala.Unit = js.native
   def log(): scala.Unit = js.native

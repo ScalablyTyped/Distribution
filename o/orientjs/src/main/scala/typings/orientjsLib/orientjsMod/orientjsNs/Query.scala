@@ -17,6 +17,6 @@ trait Query[T] extends js.Object {
   def one[T](params: js.Any): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def scalar[T](): bluebirdLib.bluebirdMod.namespaced[T] = js.native
   def scalar[T](params: js.Any): bluebirdLib.bluebirdMod.namespaced[T] = js.native
-  def transform[T](transformer: js.Function1[/* item */ Record, T]): Query[T] = js.native
+  def transform[R](transformer: js.Function1[/* item */ T | (T with Record), R]): Query[R] = js.native
 }
 

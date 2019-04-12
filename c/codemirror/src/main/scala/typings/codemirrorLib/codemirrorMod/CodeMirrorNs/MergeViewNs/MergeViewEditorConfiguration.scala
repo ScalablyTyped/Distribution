@@ -65,11 +65,15 @@ object MergeViewEditorConfiguration {
   def apply(
     orig: js.Any,
     allowEditingOriginals: js.UndefOr[scala.Boolean] = js.undefined,
+    autoCloseBrackets: codemirrorLib.codemirrorMod.CodeMirrorNs.AutoCloseBrackets | java.lang.String = null,
+    autoCloseTags: codemirrorLib.codemirrorMod.CodeMirrorNs.AutoCloseTags | scala.Boolean = null,
     autofocus: js.UndefOr[scala.Boolean] = js.undefined,
     collapseIdentical: scala.Boolean | scala.Double = null,
     connect: java.lang.String = null,
+    coverGutterNextToScrollbar: js.UndefOr[scala.Boolean] = js.undefined,
     cursorBlinkRate: scala.Int | scala.Double = null,
     cursorHeight: scala.Int | scala.Double = null,
+    cursorScrollMargin: scala.Int | scala.Double = null,
     dragDrop: js.UndefOr[scala.Boolean] = js.undefined,
     electricChars: js.UndefOr[scala.Boolean] = js.undefined,
     extraKeys: java.lang.String | codemirrorLib.codemirrorMod.CodeMirrorNs.KeyMap = null,
@@ -78,16 +82,20 @@ object MergeViewEditorConfiguration {
     flattenSpans: js.UndefOr[scala.Boolean] = js.undefined,
     foldGutter: js.UndefOr[scala.Boolean] = js.undefined,
     gutters: js.Array[java.lang.String] = null,
+    highlightSelectionMatches: codemirrorLib.codemirrorMod.CodeMirrorNs.HighlightSelectionMatches | scala.Boolean = null,
     hintOptions: codemirrorLib.codemirrorMod.CodeMirrorNs.ShowHintOptions = null,
     historyEventDelay: scala.Int | scala.Double = null,
     indentUnit: scala.Int | scala.Double = null,
     indentWithTabs: js.UndefOr[scala.Boolean] = js.undefined,
+    inputStyle: codemirrorLib.codemirrorMod.CodeMirrorNs.InputStyle = null,
     keyMap: java.lang.String = null,
     lineNumberFormatter: /* line */ scala.Double => java.lang.String = null,
     lineNumbers: js.UndefOr[scala.Boolean] = js.undefined,
+    lineWiseCopyCut: js.UndefOr[scala.Boolean] = js.undefined,
     lineWrapping: js.UndefOr[scala.Boolean] = js.undefined,
     lint: scala.Boolean | codemirrorLib.codemirrorMod.CodeMirrorNs.LintOptions = null,
-    matchBrackets: js.UndefOr[scala.Boolean] = js.undefined,
+    matchBrackets: codemirrorLib.codemirrorMod.CodeMirrorNs.MatchBrackets | scala.Boolean = null,
+    matchTags: codemirrorLib.codemirrorMod.CodeMirrorNs.MatchTags | scala.Boolean = null,
     maxHighlightLength: scala.Int | scala.Double = null,
     mode: js.Any = null,
     onCollapse: (/* mergeView */ MergeViewEditor, /* line */ scala.Double, /* size */ scala.Double, /* mark */ codemirrorLib.codemirrorMod.CodeMirrorNs.TextMarker) => scala.Unit = null,
@@ -100,11 +108,13 @@ object MergeViewEditorConfiguration {
     readOnly: js.Any = null,
     revertButtons: js.UndefOr[scala.Boolean] = js.undefined,
     rtlMoveVisually: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollPastEnd: js.UndefOr[scala.Boolean] = js.undefined,
     scrollbarStyle: java.lang.String = null,
     showCursorWhenSelecting: js.UndefOr[scala.Boolean] = js.undefined,
     showDifferences: js.UndefOr[scala.Boolean] = js.undefined,
     showHint: js.UndefOr[scala.Boolean] = js.undefined,
     smartIndent: js.UndefOr[scala.Boolean] = js.undefined,
+    styleActiveLine: codemirrorLib.codemirrorMod.CodeMirrorNs.StyleActiveLine | scala.Boolean = null,
     tabSize: scala.Int | scala.Double = null,
     tabindex: scala.Int | scala.Double = null,
     theme: java.lang.String = null,
@@ -116,11 +126,15 @@ object MergeViewEditorConfiguration {
   ): MergeViewEditorConfiguration = {
     val __obj = js.Dynamic.literal(orig = orig)
     if (!js.isUndefined(allowEditingOriginals)) __obj.updateDynamic("allowEditingOriginals")(allowEditingOriginals)
+    if (autoCloseBrackets != null) __obj.updateDynamic("autoCloseBrackets")(autoCloseBrackets.asInstanceOf[js.Any])
+    if (autoCloseTags != null) __obj.updateDynamic("autoCloseTags")(autoCloseTags.asInstanceOf[js.Any])
     if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus)
     if (collapseIdentical != null) __obj.updateDynamic("collapseIdentical")(collapseIdentical.asInstanceOf[js.Any])
     if (connect != null) __obj.updateDynamic("connect")(connect)
+    if (!js.isUndefined(coverGutterNextToScrollbar)) __obj.updateDynamic("coverGutterNextToScrollbar")(coverGutterNextToScrollbar)
     if (cursorBlinkRate != null) __obj.updateDynamic("cursorBlinkRate")(cursorBlinkRate.asInstanceOf[js.Any])
     if (cursorHeight != null) __obj.updateDynamic("cursorHeight")(cursorHeight.asInstanceOf[js.Any])
+    if (cursorScrollMargin != null) __obj.updateDynamic("cursorScrollMargin")(cursorScrollMargin.asInstanceOf[js.Any])
     if (!js.isUndefined(dragDrop)) __obj.updateDynamic("dragDrop")(dragDrop)
     if (!js.isUndefined(electricChars)) __obj.updateDynamic("electricChars")(electricChars)
     if (extraKeys != null) __obj.updateDynamic("extraKeys")(extraKeys.asInstanceOf[js.Any])
@@ -129,16 +143,20 @@ object MergeViewEditorConfiguration {
     if (!js.isUndefined(flattenSpans)) __obj.updateDynamic("flattenSpans")(flattenSpans)
     if (!js.isUndefined(foldGutter)) __obj.updateDynamic("foldGutter")(foldGutter)
     if (gutters != null) __obj.updateDynamic("gutters")(gutters)
+    if (highlightSelectionMatches != null) __obj.updateDynamic("highlightSelectionMatches")(highlightSelectionMatches.asInstanceOf[js.Any])
     if (hintOptions != null) __obj.updateDynamic("hintOptions")(hintOptions)
     if (historyEventDelay != null) __obj.updateDynamic("historyEventDelay")(historyEventDelay.asInstanceOf[js.Any])
     if (indentUnit != null) __obj.updateDynamic("indentUnit")(indentUnit.asInstanceOf[js.Any])
     if (!js.isUndefined(indentWithTabs)) __obj.updateDynamic("indentWithTabs")(indentWithTabs)
+    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle)
     if (keyMap != null) __obj.updateDynamic("keyMap")(keyMap)
     if (lineNumberFormatter != null) __obj.updateDynamic("lineNumberFormatter")(js.Any.fromFunction1(lineNumberFormatter))
     if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers)
+    if (!js.isUndefined(lineWiseCopyCut)) __obj.updateDynamic("lineWiseCopyCut")(lineWiseCopyCut)
     if (!js.isUndefined(lineWrapping)) __obj.updateDynamic("lineWrapping")(lineWrapping)
     if (lint != null) __obj.updateDynamic("lint")(lint.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchBrackets)) __obj.updateDynamic("matchBrackets")(matchBrackets)
+    if (matchBrackets != null) __obj.updateDynamic("matchBrackets")(matchBrackets.asInstanceOf[js.Any])
+    if (matchTags != null) __obj.updateDynamic("matchTags")(matchTags.asInstanceOf[js.Any])
     if (maxHighlightLength != null) __obj.updateDynamic("maxHighlightLength")(maxHighlightLength.asInstanceOf[js.Any])
     if (mode != null) __obj.updateDynamic("mode")(mode)
     if (onCollapse != null) __obj.updateDynamic("onCollapse")(js.Any.fromFunction4(onCollapse))
@@ -151,11 +169,13 @@ object MergeViewEditorConfiguration {
     if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly)
     if (!js.isUndefined(revertButtons)) __obj.updateDynamic("revertButtons")(revertButtons)
     if (!js.isUndefined(rtlMoveVisually)) __obj.updateDynamic("rtlMoveVisually")(rtlMoveVisually)
+    if (!js.isUndefined(scrollPastEnd)) __obj.updateDynamic("scrollPastEnd")(scrollPastEnd)
     if (scrollbarStyle != null) __obj.updateDynamic("scrollbarStyle")(scrollbarStyle)
     if (!js.isUndefined(showCursorWhenSelecting)) __obj.updateDynamic("showCursorWhenSelecting")(showCursorWhenSelecting)
     if (!js.isUndefined(showDifferences)) __obj.updateDynamic("showDifferences")(showDifferences)
     if (!js.isUndefined(showHint)) __obj.updateDynamic("showHint")(showHint)
     if (!js.isUndefined(smartIndent)) __obj.updateDynamic("smartIndent")(smartIndent)
+    if (styleActiveLine != null) __obj.updateDynamic("styleActiveLine")(styleActiveLine.asInstanceOf[js.Any])
     if (tabSize != null) __obj.updateDynamic("tabSize")(tabSize.asInstanceOf[js.Any])
     if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
     if (theme != null) __obj.updateDynamic("theme")(theme)

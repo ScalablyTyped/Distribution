@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object ToneMapping extends js.Object {
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[threeLib.threeDashCoreMod.ToneMapping with java.lang.String] = js.native
+  def apply(value: java.lang.String): js.UndefOr[threeLib.srcConstantsMod.ToneMapping with java.lang.String] = js.native
 }
 

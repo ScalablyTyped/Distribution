@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_PhiLength extends js.Object {
   var phiLength: scala.Double
   var phiStart: scala.Double
-  var points: js.Array[threeLib.threeDashCoreMod.Vector2]
+  var points: js.Array[threeLib.srcMathVector2Mod.Vector2]
   var segments: scala.Double
 }
 
@@ -17,7 +17,7 @@ object Anon_PhiLength {
   def apply(
     phiLength: scala.Double,
     phiStart: scala.Double,
-    points: js.Array[threeLib.threeDashCoreMod.Vector2],
+    points: js.Array[threeLib.srcMathVector2Mod.Vector2],
     segments: scala.Double
   ): Anon_PhiLength = {
     val __obj = js.Dynamic.literal(phiLength = phiLength, phiStart = phiStart, points = points, segments = segments)

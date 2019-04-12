@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "ExtrudeGeometry")
 @js.native
 class ExtrudeGeometry protected ()
-  extends threeLib.threeDashCoreMod.ExtrudeGeometry {
-  def this(shapes: js.Array[threeLib.threeDashCoreMod.Shape]) = this()
-  def this(shapes: threeLib.threeDashCoreMod.Shape) = this()
-  def this(shapes: js.Array[threeLib.threeDashCoreMod.Shape], options: threeLib.threeDashCoreMod.ExtrudeGeometryOptions) = this()
-  def this(shapes: threeLib.threeDashCoreMod.Shape, options: threeLib.threeDashCoreMod.ExtrudeGeometryOptions) = this()
+  extends threeLib.srcGeometriesGeometriesMod.ExtrudeGeometry {
+  def this(shapes: js.Array[threeLib.srcExtrasCoreShapeMod.Shape]) = this()
+  def this(shapes: threeLib.srcExtrasCoreShapeMod.Shape) = this()
+  def this(shapes: js.Array[threeLib.srcExtrasCoreShapeMod.Shape], options: threeLib.srcGeometriesExtrudeGeometryMod.ExtrudeGeometryOptions) = this()
+  def this(shapes: threeLib.srcExtrasCoreShapeMod.Shape, options: threeLib.srcGeometriesExtrudeGeometryMod.ExtrudeGeometryOptions) = this()
 }
 
 /* static members */
 @JSImport("three", "ExtrudeGeometry")
 @js.native
 object ExtrudeGeometry extends js.Object {
-  var WorldUVGenerator: threeLib.threeDashCoreMod.UVGenerator = js.native
+  var WorldUVGenerator: threeLib.srcGeometriesExtrudeGeometryMod.UVGenerator = js.native
 }
 

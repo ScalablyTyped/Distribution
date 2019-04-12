@@ -50,6 +50,10 @@ trait ITextOptions extends TextOptions {
   	 */
   var editingBorderColor: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Exposes underlying hidden text area
+    */
+  var hiddenTextarea: js.UndefOr[stdLib.HTMLTextAreaElement] = js.undefined
+  /**
   	 * Helps determining when the text is in composition, so that the cursor
   	 * rendering is altered.
   	 */
@@ -103,6 +107,7 @@ object ITextOptions {
     borderScaleFactor: scala.Int | scala.Double = null,
     cacheProperties: js.Array[java.lang.String] = null,
     caching: js.UndefOr[scala.Boolean] = js.undefined,
+    canvas: Canvas = null,
     centeredRotation: js.UndefOr[scala.Boolean] = js.undefined,
     centeredScaling: js.UndefOr[scala.Boolean] = js.undefined,
     charSpacing: scala.Int | scala.Double = null,
@@ -135,10 +140,12 @@ object ITextOptions {
     fontStyle: fabricLib.fabricLibStrings.Empty | fabricLib.fabricLibStrings.normal | fabricLib.fabricLibStrings.italic | fabricLib.fabricLibStrings.oblique = null,
     fontWeight: java.lang.String | scala.Double = null,
     globalCompositeOperation: java.lang.String = null,
+    group: Group = null,
     hasBorders: js.UndefOr[scala.Boolean] = js.undefined,
     hasControls: js.UndefOr[scala.Boolean] = js.undefined,
     hasRotatingPoint: js.UndefOr[scala.Boolean] = js.undefined,
     height: scala.Int | scala.Double = null,
+    hiddenTextarea: stdLib.HTMLTextAreaElement = null,
     hoverCursor: java.lang.String = null,
     inCompositionMode: js.UndefOr[scala.Boolean] = js.undefined,
     includeDefaultValues: js.UndefOr[scala.Boolean] = js.undefined,
@@ -184,6 +191,8 @@ object ITextOptions {
     shadow: Shadow | java.lang.String = null,
     skewX: scala.Int | scala.Double = null,
     skewY: scala.Int | scala.Double = null,
+    snapAngle: scala.Int | scala.Double = null,
+    snapThreshold: scala.Int | scala.Double = null,
     stateProperties: js.Array[java.lang.String] = null,
     statefullCache: js.UndefOr[scala.Boolean] = js.undefined,
     stroke: java.lang.String = null,
@@ -200,6 +209,7 @@ object ITextOptions {
     text: java.lang.String = null,
     textAlign: java.lang.String = null,
     textBackgroundColor: java.lang.String = null,
+    textLines: js.Array[java.lang.String] = null,
     top: scala.Int | scala.Double = null,
     transformMatrix: js.Array[_] = null,
     transparentCorners: js.UndefOr[scala.Boolean] = js.undefined,
@@ -220,6 +230,7 @@ object ITextOptions {
     if (borderScaleFactor != null) __obj.updateDynamic("borderScaleFactor")(borderScaleFactor.asInstanceOf[js.Any])
     if (cacheProperties != null) __obj.updateDynamic("cacheProperties")(cacheProperties)
     if (!js.isUndefined(caching)) __obj.updateDynamic("caching")(caching)
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
     if (!js.isUndefined(centeredRotation)) __obj.updateDynamic("centeredRotation")(centeredRotation)
     if (!js.isUndefined(centeredScaling)) __obj.updateDynamic("centeredScaling")(centeredScaling)
     if (charSpacing != null) __obj.updateDynamic("charSpacing")(charSpacing.asInstanceOf[js.Any])
@@ -252,10 +263,12 @@ object ITextOptions {
     if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
     if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
     if (globalCompositeOperation != null) __obj.updateDynamic("globalCompositeOperation")(globalCompositeOperation)
+    if (group != null) __obj.updateDynamic("group")(group)
     if (!js.isUndefined(hasBorders)) __obj.updateDynamic("hasBorders")(hasBorders)
     if (!js.isUndefined(hasControls)) __obj.updateDynamic("hasControls")(hasControls)
     if (!js.isUndefined(hasRotatingPoint)) __obj.updateDynamic("hasRotatingPoint")(hasRotatingPoint)
     if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hiddenTextarea != null) __obj.updateDynamic("hiddenTextarea")(hiddenTextarea)
     if (hoverCursor != null) __obj.updateDynamic("hoverCursor")(hoverCursor)
     if (!js.isUndefined(inCompositionMode)) __obj.updateDynamic("inCompositionMode")(inCompositionMode)
     if (!js.isUndefined(includeDefaultValues)) __obj.updateDynamic("includeDefaultValues")(includeDefaultValues)
@@ -301,6 +314,8 @@ object ITextOptions {
     if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
     if (skewX != null) __obj.updateDynamic("skewX")(skewX.asInstanceOf[js.Any])
     if (skewY != null) __obj.updateDynamic("skewY")(skewY.asInstanceOf[js.Any])
+    if (snapAngle != null) __obj.updateDynamic("snapAngle")(snapAngle.asInstanceOf[js.Any])
+    if (snapThreshold != null) __obj.updateDynamic("snapThreshold")(snapThreshold.asInstanceOf[js.Any])
     if (stateProperties != null) __obj.updateDynamic("stateProperties")(stateProperties)
     if (!js.isUndefined(statefullCache)) __obj.updateDynamic("statefullCache")(statefullCache)
     if (stroke != null) __obj.updateDynamic("stroke")(stroke)
@@ -317,6 +332,7 @@ object ITextOptions {
     if (text != null) __obj.updateDynamic("text")(text)
     if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
     if (textBackgroundColor != null) __obj.updateDynamic("textBackgroundColor")(textBackgroundColor)
+    if (textLines != null) __obj.updateDynamic("textLines")(textLines)
     if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     if (transformMatrix != null) __obj.updateDynamic("transformMatrix")(transformMatrix)
     if (!js.isUndefined(transparentCorners)) __obj.updateDynamic("transparentCorners")(transparentCorners)

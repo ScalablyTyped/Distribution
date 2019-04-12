@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "AudioBuffer")
 @js.native
 class AudioBuffer protected ()
-  extends threeLib.threeDashCoreMod.AudioBuffer {
+  extends threeLib.srcAudioAudioMod.AudioBuffer {
   def this(context: js.Any) = this()
 }
 

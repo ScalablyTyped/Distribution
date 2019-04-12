@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "TetrahedronBufferGeometry")
 @js.native
 class TetrahedronBufferGeometry ()
-  extends threeLib.threeDashCoreMod.TetrahedronBufferGeometry {
+  extends threeLib.srcGeometriesGeometriesMod.TetrahedronBufferGeometry {
   def this(radius: scala.Double) = this()
   def this(radius: scala.Double, detail: scala.Double) = this()
 }

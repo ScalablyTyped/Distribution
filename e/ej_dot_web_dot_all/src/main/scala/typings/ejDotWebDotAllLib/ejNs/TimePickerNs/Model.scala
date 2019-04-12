@@ -124,6 +124,14 @@ trait Model extends js.Object {
     * @Default {h:mm tt}
     */
   var timeFormat: js.UndefOr[java.lang.String] = js.undefined
+  /** Set the jQuery validation error message in TimePicker.
+    * @Default {null}
+    */
+  var validationMessages: js.UndefOr[js.Any] = js.undefined
+  /** Set the jQuery validation rules in TimePicker.
+    * @Default {null}
+    */
+  var validationRules: js.UndefOr[js.Any] = js.undefined
   /** Sets a specified time value on the TimePicker.
     * @Default {null}
     */
@@ -172,6 +180,8 @@ object Model {
     showPopupButton: js.UndefOr[scala.Boolean] = js.undefined,
     showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
     timeFormat: java.lang.String = null,
+    validationMessages: js.Any = null,
+    validationRules: js.Any = null,
     value: java.lang.String | stdLib.Date = null,
     watermarkText: java.lang.String = null,
     width: java.lang.String | scala.Double = null
@@ -209,6 +219,8 @@ object Model {
     if (!js.isUndefined(showPopupButton)) __obj.updateDynamic("showPopupButton")(showPopupButton)
     if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
     if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat)
+    if (validationMessages != null) __obj.updateDynamic("validationMessages")(validationMessages)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
     if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     if (watermarkText != null) __obj.updateDynamic("watermarkText")(watermarkText)
     if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])

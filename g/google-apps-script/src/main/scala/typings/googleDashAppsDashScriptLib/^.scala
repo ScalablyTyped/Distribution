@@ -22,7 +22,7 @@ object ^ extends js.Object {
   var Browser: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Browser = js.native
   var CacheService: googleDashAppsDashScriptLib.GoogleAppsScriptNs.CacheNs.CacheService = js.native
   var Calendar: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Calendar = js.native
-  var CalendarApp: googleDashAppsDashScriptLib.GoogleAppsScriptNs.CalendarAppNs.CalendarApp = js.native
+  var CalendarApp: googleDashAppsDashScriptLib.GoogleAppsScriptNs.CalendarNs.CalendarApp = js.native
   var CardService: googleDashAppsDashScriptLib.GoogleAppsScriptNs.CardUnderscoreServiceNs.CardService = js.native
   var Charset: googleDashAppsDashScriptLib.GoogleAppsScriptNs.UtilitiesNs.Charset = js.native
   var Charts: googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.Charts = js.native

@@ -32,6 +32,9 @@ trait OutputOptions extends js.Object {
   var format: js.UndefOr[ModuleFormat] = js.undefined
   var freeze: js.UndefOr[scala.Boolean] = js.undefined
   var globals: js.UndefOr[GlobalsOption] = js.undefined
+  var importMetaUrl: js.UndefOr[
+    js.Function2[/* chunkId */ java.lang.String, /* moduleId */ java.lang.String, java.lang.String]
+  ] = js.undefined
   var indent: js.UndefOr[scala.Boolean] = js.undefined
   var interop: js.UndefOr[scala.Boolean] = js.undefined
   var intro: js.UndefOr[
@@ -71,6 +74,7 @@ object OutputOptions {
     format: ModuleFormat = null,
     freeze: js.UndefOr[scala.Boolean] = js.undefined,
     globals: GlobalsOption = null,
+    importMetaUrl: (/* chunkId */ java.lang.String, /* moduleId */ java.lang.String) => java.lang.String = null,
     indent: js.UndefOr[scala.Boolean] = js.undefined,
     interop: js.UndefOr[scala.Boolean] = js.undefined,
     intro: java.lang.String | (js.Function0[java.lang.String | js.Promise[java.lang.String]]) = null,
@@ -103,6 +107,7 @@ object OutputOptions {
     if (format != null) __obj.updateDynamic("format")(format)
     if (!js.isUndefined(freeze)) __obj.updateDynamic("freeze")(freeze)
     if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
+    if (importMetaUrl != null) __obj.updateDynamic("importMetaUrl")(js.Any.fromFunction2(importMetaUrl))
     if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent)
     if (!js.isUndefined(interop)) __obj.updateDynamic("interop")(interop)
     if (intro != null) __obj.updateDynamic("intro")(intro.asInstanceOf[js.Any])

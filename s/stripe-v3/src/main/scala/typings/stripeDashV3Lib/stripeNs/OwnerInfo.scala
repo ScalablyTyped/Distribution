@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OwnerInfo extends js.Object {
-  var address: js.UndefOr[stripeDashV3Lib.Anon_City] = js.undefined
+  var address: js.UndefOr[OwnerAddress] = js.undefined
   var email: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var phone: js.UndefOr[java.lang.String] = js.undefined
@@ -15,7 +15,7 @@ trait OwnerInfo extends js.Object {
 object OwnerInfo {
   @scala.inline
   def apply(
-    address: stripeDashV3Lib.Anon_City = null,
+    address: OwnerAddress = null,
     email: java.lang.String = null,
     name: java.lang.String = null,
     phone: java.lang.String = null

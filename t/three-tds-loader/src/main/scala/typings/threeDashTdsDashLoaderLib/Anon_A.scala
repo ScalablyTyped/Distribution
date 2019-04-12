@@ -9,23 +9,23 @@ import scala.scalajs.js.annotation._
 trait Anon_A
   extends org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Triangle] {
   def containsPoint(
-    point: threeLib.threeDashCoreMod.Vector3,
-    a: threeLib.threeDashCoreMod.Vector3,
-    b: threeLib.threeDashCoreMod.Vector3,
-    c: threeLib.threeDashCoreMod.Vector3
+    point: threeLib.srcMathVector3Mod.Vector3,
+    a: threeLib.srcMathVector3Mod.Vector3,
+    b: threeLib.srcMathVector3Mod.Vector3,
+    c: threeLib.srcMathVector3Mod.Vector3
   ): scala.Boolean = js.native
   def getBarycoord(
-    point: threeLib.threeDashCoreMod.Vector3,
-    a: threeLib.threeDashCoreMod.Vector3,
-    b: threeLib.threeDashCoreMod.Vector3,
-    c: threeLib.threeDashCoreMod.Vector3,
-    target: threeLib.threeDashCoreMod.Vector3
-  ): threeLib.threeDashCoreMod.Vector3 = js.native
+    point: threeLib.srcMathVector3Mod.Vector3,
+    a: threeLib.srcMathVector3Mod.Vector3,
+    b: threeLib.srcMathVector3Mod.Vector3,
+    c: threeLib.srcMathVector3Mod.Vector3,
+    target: threeLib.srcMathVector3Mod.Vector3
+  ): threeLib.srcMathVector3Mod.Vector3 = js.native
   def getNormal(
-    a: threeLib.threeDashCoreMod.Vector3,
-    b: threeLib.threeDashCoreMod.Vector3,
-    c: threeLib.threeDashCoreMod.Vector3,
-    target: threeLib.threeDashCoreMod.Vector3
-  ): threeLib.threeDashCoreMod.Vector3 = js.native
+    a: threeLib.srcMathVector3Mod.Vector3,
+    b: threeLib.srcMathVector3Mod.Vector3,
+    c: threeLib.srcMathVector3Mod.Vector3,
+    target: threeLib.srcMathVector3Mod.Vector3
+  ): threeLib.srcMathVector3Mod.Vector3 = js.native
 }
 

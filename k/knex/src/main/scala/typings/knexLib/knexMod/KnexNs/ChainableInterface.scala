@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ChainableInterface
   extends bluebirdLib.bluebirdMod.namespaced[js.Any] {
+  def asCallback(callback: js.Function): this.type = js.native
   def connection(connection: js.Any): this.type = js.native
   def debug(enabled: scala.Boolean): this.type = js.native
   def options(options: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native

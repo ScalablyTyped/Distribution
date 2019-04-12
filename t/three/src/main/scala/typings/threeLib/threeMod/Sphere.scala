@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Sphere")
 @js.native
 class Sphere ()
-  extends threeLib.threeDashCoreMod.Sphere {
-  def this(center: threeLib.threeDashCoreMod.Vector3) = this()
-  def this(center: threeLib.threeDashCoreMod.Vector3, radius: scala.Double) = this()
+  extends threeLib.srcMathSphereMod.Sphere {
+  def this(center: threeLib.srcMathVector3Mod.Vector3) = this()
+  def this(center: threeLib.srcMathVector3Mod.Vector3, radius: scala.Double) = this()
 }
 

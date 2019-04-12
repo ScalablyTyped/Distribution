@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Box3")
 @js.native
 class Box3 ()
-  extends threeLib.threeDashCoreMod.Box3 {
-  def this(min: threeLib.threeDashCoreMod.Vector3) = this()
-  def this(min: threeLib.threeDashCoreMod.Vector3, max: threeLib.threeDashCoreMod.Vector3) = this()
+  extends threeLib.srcMathBox3Mod.Box3 {
+  def this(min: threeLib.srcMathVector3Mod.Vector3) = this()
+  def this(min: threeLib.srcMathVector3Mod.Vector3, max: threeLib.srcMathVector3Mod.Vector3) = this()
 }
 

@@ -6,19 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SetNodeOperation extends Operation {
-  var path: js.Array[scala.Double]
-  var properties: BlockProperties | InlineProperties | TextProperties
+  var data: Data
+  var newProperties: NodeProperties
+  var path: Path
+  var properties: NodeProperties
   var `type`: slateLib.slateLibStrings.set_node
 }
 
 object SetNodeOperation {
   @scala.inline
   def apply(
-    path: js.Array[scala.Double],
-    properties: BlockProperties | InlineProperties | TextProperties,
+    data: Data,
+    newProperties: NodeProperties,
+    path: Path,
+    properties: NodeProperties,
     `type`: slateLib.slateLibStrings.set_node
   ): SetNodeOperation = {
-    val __obj = js.Dynamic.literal(path = path, properties = properties.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(data = data, newProperties = newProperties, path = path.asInstanceOf[js.Any], properties = properties)
     __obj.updateDynamic("type")(`type`)
     __obj.asInstanceOf[SetNodeOperation]
   }

@@ -857,40 +857,48 @@ trait Collection[TSchema] extends js.Object {
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#listIndexes */
   def listIndexes(): CommandCursor = js.native
   def listIndexes(options: mongodbLib.Anon_BatchSizeReadPreference): CommandCursor = js.native
-  def mapReduce(map: java.lang.String, reduce: java.lang.String): js.Promise[_] = js.native
-  def mapReduce(map: java.lang.String, reduce: java.lang.String, callback: MongoCallback[_]): scala.Unit = js.native
-  def mapReduce(map: java.lang.String, reduce: java.lang.String, options: MapReduceOptions): js.Promise[_] = js.native
-  def mapReduce(
+  def mapReduce[TKey, TValue](map: java.lang.String, reduce: java.lang.String): js.Promise[_] = js.native
+  def mapReduce[TKey, TValue](map: java.lang.String, reduce: java.lang.String, callback: MongoCallback[_]): scala.Unit = js.native
+  def mapReduce[TKey, TValue](map: java.lang.String, reduce: java.lang.String, options: MapReduceOptions): js.Promise[_] = js.native
+  def mapReduce[TKey, TValue](
     map: java.lang.String,
     reduce: java.lang.String,
     options: MapReduceOptions,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
-  def mapReduce(map: java.lang.String, reduce: CollectionReduceFunction): js.Promise[_] = js.native
-  def mapReduce(map: java.lang.String, reduce: CollectionReduceFunction, callback: MongoCallback[_]): scala.Unit = js.native
-  def mapReduce(map: java.lang.String, reduce: CollectionReduceFunction, options: MapReduceOptions): js.Promise[_] = js.native
-  def mapReduce(
+  def mapReduce[TKey, TValue](map: java.lang.String, reduce: CollectionReduceFunction[TKey, TValue]): js.Promise[_] = js.native
+  def mapReduce[TKey, TValue](map: java.lang.String, reduce: CollectionReduceFunction[TKey, TValue], callback: MongoCallback[_]): scala.Unit = js.native
+  def mapReduce[TKey, TValue](map: java.lang.String, reduce: CollectionReduceFunction[TKey, TValue], options: MapReduceOptions): js.Promise[_] = js.native
+  def mapReduce[TKey, TValue](
     map: java.lang.String,
-    reduce: CollectionReduceFunction,
+    reduce: CollectionReduceFunction[TKey, TValue],
     options: MapReduceOptions,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
-  def mapReduce(map: CollectionMapFunction, reduce: java.lang.String): js.Promise[_] = js.native
-  def mapReduce(map: CollectionMapFunction, reduce: java.lang.String, callback: MongoCallback[_]): scala.Unit = js.native
-  def mapReduce(map: CollectionMapFunction, reduce: java.lang.String, options: MapReduceOptions): js.Promise[_] = js.native
-  def mapReduce(
-    map: CollectionMapFunction,
+  def mapReduce[TKey, TValue](map: CollectionMapFunction[TSchema], reduce: java.lang.String): js.Promise[_] = js.native
+  def mapReduce[TKey, TValue](map: CollectionMapFunction[TSchema], reduce: java.lang.String, callback: MongoCallback[_]): scala.Unit = js.native
+  def mapReduce[TKey, TValue](map: CollectionMapFunction[TSchema], reduce: java.lang.String, options: MapReduceOptions): js.Promise[_] = js.native
+  def mapReduce[TKey, TValue](
+    map: CollectionMapFunction[TSchema],
     reduce: java.lang.String,
     options: MapReduceOptions,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
-  def mapReduce(map: CollectionMapFunction, reduce: CollectionReduceFunction): js.Promise[_] = js.native
+  def mapReduce[TKey, TValue](map: CollectionMapFunction[TSchema], reduce: CollectionReduceFunction[TKey, TValue]): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#mapReduce */
-  def mapReduce(map: CollectionMapFunction, reduce: CollectionReduceFunction, callback: MongoCallback[_]): scala.Unit = js.native
-  def mapReduce(map: CollectionMapFunction, reduce: CollectionReduceFunction, options: MapReduceOptions): js.Promise[_] = js.native
-  def mapReduce(
-    map: CollectionMapFunction,
-    reduce: CollectionReduceFunction,
+  def mapReduce[TKey, TValue](
+    map: CollectionMapFunction[TSchema],
+    reduce: CollectionReduceFunction[TKey, TValue],
+    callback: MongoCallback[_]
+  ): scala.Unit = js.native
+  def mapReduce[TKey, TValue](
+    map: CollectionMapFunction[TSchema],
+    reduce: CollectionReduceFunction[TKey, TValue],
+    options: MapReduceOptions
+  ): js.Promise[_] = js.native
+  def mapReduce[TKey, TValue](
+    map: CollectionMapFunction[TSchema],
+    reduce: CollectionReduceFunction[TKey, TValue],
     options: MapReduceOptions,
     callback: MongoCallback[_]
   ): scala.Unit = js.native

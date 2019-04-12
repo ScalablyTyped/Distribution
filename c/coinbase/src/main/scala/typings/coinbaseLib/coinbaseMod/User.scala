@@ -82,14 +82,14 @@ class User () extends Resource {
     * Get current user’s authorization information including granted scopes and send limits when using OAuth2 authentication
     * No permission required
     */
-  def showAuth(cb: js.Function2[/* error */ stdLib.Error, /* result */ Auth, scala.Unit]): scala.Unit = js.native
+  def showAuth(cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ Auth, scala.Unit]): scala.Unit = js.native
   /**
     * Change user properties
     * Scope: wallet:user:update
     */
   def update(
     opts: UpdateUserOpts,
-    cb: js.Function2[/* error */ stdLib.Error, /* result */ this.type, scala.Unit]
+    cb: js.Function2[/* error */ stdLib.Error | scala.Null, /* result */ this.type, scala.Unit]
   ): scala.Unit = js.native
 }
 

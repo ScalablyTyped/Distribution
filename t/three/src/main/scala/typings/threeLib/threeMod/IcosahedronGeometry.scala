@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "IcosahedronGeometry")
 @js.native
 class IcosahedronGeometry ()
-  extends threeLib.threeDashCoreMod.IcosahedronGeometry {
+  extends threeLib.srcGeometriesGeometriesMod.IcosahedronGeometry {
   def this(radius: scala.Double) = this()
   def this(radius: scala.Double, detail: scala.Double) = this()
 }

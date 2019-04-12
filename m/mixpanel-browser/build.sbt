@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mixpanel-browser"
-version := "2.23-dt-20181126Z-cfd532"
+version := "2.23-dt-20190410Z-8bb247"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

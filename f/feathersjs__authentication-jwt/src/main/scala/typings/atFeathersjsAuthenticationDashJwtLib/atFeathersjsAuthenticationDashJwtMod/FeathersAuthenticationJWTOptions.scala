@@ -11,7 +11,7 @@ trait FeathersAuthenticationJWTOptions extends js.Object {
     * A Verifier class. Defaults to the built-in one but can be a custom one. See below for details.
     */
   var Verifier: org.scalablytyped.runtime.Instantiable2[
-    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[js.Any], 
+    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Application[js.Any], 
     /* options */ js.Any, 
     Verifier
   ] = js.native

@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectEventArgs extends js.Object {
-  /** if the event should be canceled; otherwise, false.
-    */
-  var cancel: js.UndefOr[scala.Boolean] = js.undefined
   /** returns the TimePicker model
     */
   var model: js.UndefOr[Model] = js.undefined
@@ -26,14 +23,12 @@ trait SelectEventArgs extends js.Object {
 object SelectEventArgs {
   @scala.inline
   def apply(
-    cancel: js.UndefOr[scala.Boolean] = js.undefined,
     model: Model = null,
     prevTime: java.lang.String = null,
     `type`: java.lang.String = null,
     value: java.lang.String = null
   ): SelectEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
     if (model != null) __obj.updateDynamic("model")(model)
     if (prevTime != null) __obj.updateDynamic("prevTime")(prevTime)
     if (`type` != null) __obj.updateDynamic("type")(`type`)

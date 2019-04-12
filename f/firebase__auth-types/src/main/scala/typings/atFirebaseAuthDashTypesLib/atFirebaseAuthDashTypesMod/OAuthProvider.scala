@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@firebase/auth-types", "OAuthProvider")
 @js.native
-class OAuthProvider () extends AuthProvider {
+class OAuthProvider protected () extends AuthProvider {
+  def this(providerId: java.lang.String) = this()
   /* CompleteClass */
   override var providerId: java.lang.String = js.native
   def addScope(scope: java.lang.String): AuthProvider = js.native

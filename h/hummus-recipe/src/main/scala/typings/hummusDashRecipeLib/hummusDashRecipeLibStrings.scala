@@ -7,100 +7,141 @@ import scala.scalajs.js.annotation._
 
 object hummusDashRecipeLibStrings {
   @js.native
-  sealed trait Caret extends js.Object
+  sealed trait Caret
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait Circle extends js.Object
+  sealed trait Circle
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait Comment extends js.Object
+  sealed trait Comment
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsIcon
   
   @js.native
-  sealed trait FileAttachment extends js.Object
+  sealed trait FileAttachment
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait FreeText extends js.Object
+  sealed trait FreeText
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait Help extends js.Object
+  sealed trait Help
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsIcon
   
   @js.native
-  sealed trait Highlight extends js.Object
+  sealed trait Highlight
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait Ink extends js.Object
+  sealed trait Ink
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait Insert extends js.Object
+  sealed trait Insert
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsIcon
   
   @js.native
-  sealed trait Key extends js.Object
+  sealed trait Key
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsIcon
   
   @js.native
-  sealed trait Line extends js.Object
+  sealed trait Line
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait NewParagraph extends js.Object
+  sealed trait NewParagraph
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsIcon
   
   @js.native
-  sealed trait Note extends js.Object
+  sealed trait Note
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsIcon
   
   @js.native
-  sealed trait Paragraph extends js.Object
+  sealed trait Paragraph
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsIcon
   
   @js.native
-  sealed trait PolyLine extends js.Object
+  sealed trait PolyLine
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait Polygon extends js.Object
+  sealed trait Polygon
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait Sound extends js.Object
+  sealed trait Sound
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait Square extends js.Object
+  sealed trait Square
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait Squiggly extends js.Object
+  sealed trait Squiggly
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait Stamp extends js.Object
+  sealed trait Stamp
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait StrikeOut extends js.Object
+  sealed trait StrikeOut
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait Text extends js.Object
+  sealed trait Text
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait Underline extends js.Object
+  sealed trait Underline
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotSubtype
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait hidden
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsFlag
+       with hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.CommentOptionsFlag
   
   @js.native
-  sealed trait invisible extends js.Object
+  sealed trait invisible
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsFlag
+       with hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.CommentOptionsFlag
   
   @js.native
-  sealed trait locked extends js.Object
+  sealed trait locked
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsFlag
+       with hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.CommentOptionsFlag
   
   @js.native
-  sealed trait norotate extends js.Object
+  sealed trait norotate
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsFlag
+       with hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.CommentOptionsFlag
   
   @js.native
-  sealed trait noview extends js.Object
+  sealed trait noview
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsFlag
+       with hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.CommentOptionsFlag
   
   @js.native
-  sealed trait nozoom extends js.Object
+  sealed trait nozoom
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsFlag
+       with hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.CommentOptionsFlag
   
   @js.native
-  sealed trait print extends js.Object
+  sealed trait print
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsFlag
+       with hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.CommentOptionsFlag
   
   @js.native
-  sealed trait readonly extends js.Object
+  sealed trait readonly
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsFlag
+       with hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.CommentOptionsFlag
   
   @js.native
-  sealed trait togglenoview extends js.Object
+  sealed trait togglenoview
+    extends hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.AnnotOptionsFlag
+       with hummusDashRecipeLib.hummusDashRecipeMod.RecipeNs.CommentOptionsFlag
   
   @scala.inline
   def Caret: Caret = "Caret".asInstanceOf[Caret]

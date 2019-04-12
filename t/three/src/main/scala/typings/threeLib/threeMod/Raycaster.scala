@@ -15,10 +15,10 @@ import scala.scalajs.js.annotation._
   * @param far All results returned are closer then far. Far can't be lower then near . Default value is Infinity.
   */
 class Raycaster ()
-  extends threeLib.threeDashCoreMod.Raycaster {
-  def this(origin: threeLib.threeDashCoreMod.Vector3) = this()
-  def this(origin: threeLib.threeDashCoreMod.Vector3, direction: threeLib.threeDashCoreMod.Vector3) = this()
-  def this(origin: threeLib.threeDashCoreMod.Vector3, direction: threeLib.threeDashCoreMod.Vector3, near: scala.Double) = this()
-  def this(origin: threeLib.threeDashCoreMod.Vector3, direction: threeLib.threeDashCoreMod.Vector3, near: scala.Double, far: scala.Double) = this()
+  extends threeLib.srcCoreRaycasterMod.Raycaster {
+  def this(origin: threeLib.srcMathVector3Mod.Vector3) = this()
+  def this(origin: threeLib.srcMathVector3Mod.Vector3, direction: threeLib.srcMathVector3Mod.Vector3) = this()
+  def this(origin: threeLib.srcMathVector3Mod.Vector3, direction: threeLib.srcMathVector3Mod.Vector3, near: scala.Double) = this()
+  def this(origin: threeLib.srcMathVector3Mod.Vector3, direction: threeLib.srcMathVector3Mod.Vector3, near: scala.Double, far: scala.Double) = this()
 }
 

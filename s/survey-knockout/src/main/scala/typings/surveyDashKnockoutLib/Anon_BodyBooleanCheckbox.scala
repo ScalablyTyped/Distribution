@@ -17,6 +17,7 @@ trait Anon_BodyBooleanCheckbox extends js.Object {
   var file: Anon_FileInput
   var footer: java.lang.String
   var header: java.lang.String
+  var html: Anon_Root
   var imagepicker: Anon_ClearButtonImage
   var matrix: Anon_CellLabel
   var matrixdropdown: Anon_Root
@@ -55,6 +56,7 @@ object Anon_BodyBooleanCheckbox {
     file: Anon_FileInput,
     footer: java.lang.String,
     header: java.lang.String,
+    html: Anon_Root,
     imagepicker: Anon_ClearButtonImage,
     matrix: Anon_CellLabel,
     matrixdropdown: Anon_Root,
@@ -78,7 +80,7 @@ object Anon_BodyBooleanCheckbox {
     text: java.lang.String,
     window: Anon_Body
   ): Anon_BodyBooleanCheckbox = {
-    val __obj = js.Dynamic.literal(body = body, boolean = boolean, checkbox = checkbox, comment = comment, completedPage = completedPage, dropdown = dropdown, error = error, expression = expression, file = file, footer = footer, header = header, imagepicker = imagepicker, matrix = matrix, matrixdropdown = matrixdropdown, matrixdynamic = matrixdynamic, multipletext = multipletext, navigation = navigation, navigationButton = navigationButton, page = page, pageDescription = pageDescription, pageTitle = pageTitle, panel = panel, paneldynamic = paneldynamic, progress = progress, progressBar = progressBar, question = question, radiogroup = radiogroup, rating = rating, root = root, row = row, saveData = saveData, text = text, window = window)
+    val __obj = js.Dynamic.literal(body = body, boolean = boolean, checkbox = checkbox, comment = comment, completedPage = completedPage, dropdown = dropdown, error = error, expression = expression, file = file, footer = footer, header = header, html = html, imagepicker = imagepicker, matrix = matrix, matrixdropdown = matrixdropdown, matrixdynamic = matrixdynamic, multipletext = multipletext, navigation = navigation, navigationButton = navigationButton, page = page, pageDescription = pageDescription, pageTitle = pageTitle, panel = panel, paneldynamic = paneldynamic, progress = progress, progressBar = progressBar, question = question, radiogroup = radiogroup, rating = rating, root = root, row = row, saveData = saveData, text = text, window = window)
   
     __obj.asInstanceOf[Anon_BodyBooleanCheckbox]
   }

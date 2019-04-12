@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AoMap extends js.Object {
-  var aoMap: threeLib.threeDashCoreMod.IUniform
-  var aoMapIntensity: threeLib.threeDashCoreMod.IUniform
+  var aoMap: threeLib.srcRenderersShadersUniformsLibMod.IUniform
+  var aoMapIntensity: threeLib.srcRenderersShadersUniformsLibMod.IUniform
 }
 
 trait Anon_Aomap extends js.Object {
@@ -30,7 +30,10 @@ trait Anon_Aomap extends js.Object {
 
 object Anon_AoMap {
   @scala.inline
-  def apply(aoMap: threeLib.threeDashCoreMod.IUniform, aoMapIntensity: threeLib.threeDashCoreMod.IUniform): Anon_AoMap = {
+  def apply(
+    aoMap: threeLib.srcRenderersShadersUniformsLibMod.IUniform,
+    aoMapIntensity: threeLib.srcRenderersShadersUniformsLibMod.IUniform
+  ): Anon_AoMap = {
     val __obj = js.Dynamic.literal(aoMap = aoMap, aoMapIntensity = aoMapIntensity)
   
     __obj.asInstanceOf[Anon_AoMap]

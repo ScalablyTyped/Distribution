@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("arrify", JSImport.Namespace)
 @js.native
 object arrifyMod extends js.Object {
-  def apply[T](): js.Array[T] = js.native
-  def apply[T](`val`: T | js.Array[T]): js.Array[T] = js.native
+  def apply[ValueType](value: ValueType): js.Array[ValueType] | js.Array[_] | ValueType | js.Array[java.lang.String] | js.Array[js.Any] = js.native
 }
 

@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 trait Layout extends js.Object {
   var annotations: js.Array[stdLib.Partial[Annotations]]
   var autosize: scala.Boolean
+  var bargap: scala.Double
+  var bargroupgap: scala.Double
   var barmode: plotlyDotJsLib.plotlyDotJsLibStrings.stack | plotlyDotJsLib.plotlyDotJsLibStrings.group | plotlyDotJsLib.plotlyDotJsLibStrings.overlay | plotlyDotJsLib.plotlyDotJsLibStrings.relative
   var calendar: Calendar
    // TODO
@@ -70,6 +72,8 @@ object Layout {
   def apply(
     annotations: js.Array[stdLib.Partial[Annotations]],
     autosize: scala.Boolean,
+    bargap: scala.Double,
+    bargroupgap: scala.Double,
     barmode: plotlyDotJsLib.plotlyDotJsLibStrings.stack | plotlyDotJsLib.plotlyDotJsLibStrings.group | plotlyDotJsLib.plotlyDotJsLibStrings.overlay | plotlyDotJsLib.plotlyDotJsLibStrings.relative,
     calendar: Calendar,
     direction: plotlyDotJsLib.plotlyDotJsLibStrings.clockwise | plotlyDotJsLib.plotlyDotJsLibStrings.counterclockwise,
@@ -123,7 +127,7 @@ object Layout {
     yaxis8: stdLib.Partial[LayoutAxis],
     yaxis9: stdLib.Partial[LayoutAxis]
   ): Layout = {
-    val __obj = js.Dynamic.literal(annotations = annotations, autosize = autosize, barmode = barmode.asInstanceOf[js.Any], calendar = calendar, direction = direction.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], font = font, height = height, hidesources = hidesources, hoverlabel = hoverlabel, hovermode = hovermode.asInstanceOf[js.Any], images = images, legend = legend, margin = margin, orientation = orientation, paper_bgcolor = paper_bgcolor.asInstanceOf[js.Any], plot_bgcolor = plot_bgcolor.asInstanceOf[js.Any], radialaxis = radialaxis, scene = scene, separators = separators, shapes = shapes, showlegend = showlegend, sliders = sliders, title = title.asInstanceOf[js.Any], titlefont = titlefont, width = width, xaxis = xaxis, xaxis2 = xaxis2, xaxis3 = xaxis3, xaxis4 = xaxis4, xaxis5 = xaxis5, xaxis6 = xaxis6, xaxis7 = xaxis7, xaxis8 = xaxis8, xaxis9 = xaxis9, yaxis = yaxis, yaxis2 = yaxis2, yaxis3 = yaxis3, yaxis4 = yaxis4, yaxis5 = yaxis5, yaxis6 = yaxis6, yaxis7 = yaxis7, yaxis8 = yaxis8, yaxis9 = yaxis9)
+    val __obj = js.Dynamic.literal(annotations = annotations, autosize = autosize, bargap = bargap, bargroupgap = bargroupgap, barmode = barmode.asInstanceOf[js.Any], calendar = calendar, direction = direction.asInstanceOf[js.Any], dragmode = dragmode.asInstanceOf[js.Any], font = font, height = height, hidesources = hidesources, hoverlabel = hoverlabel, hovermode = hovermode.asInstanceOf[js.Any], images = images, legend = legend, margin = margin, orientation = orientation, paper_bgcolor = paper_bgcolor.asInstanceOf[js.Any], plot_bgcolor = plot_bgcolor.asInstanceOf[js.Any], radialaxis = radialaxis, scene = scene, separators = separators, shapes = shapes, showlegend = showlegend, sliders = sliders, title = title.asInstanceOf[js.Any], titlefont = titlefont, width = width, xaxis = xaxis, xaxis2 = xaxis2, xaxis3 = xaxis3, xaxis4 = xaxis4, xaxis5 = xaxis5, xaxis6 = xaxis6, xaxis7 = xaxis7, xaxis8 = xaxis8, xaxis9 = xaxis9, yaxis = yaxis, yaxis2 = yaxis2, yaxis3 = yaxis3, yaxis4 = yaxis4, yaxis5 = yaxis5, yaxis6 = yaxis6, yaxis7 = yaxis7, yaxis8 = yaxis8, yaxis9 = yaxis9)
     __obj.updateDynamic("xaxis.autorange")(`xaxis.autorange`)
     __obj.updateDynamic("xaxis.range")(`xaxis.range`)
     __obj.updateDynamic("xaxis.range[0]")(`xaxis.range[0]`.asInstanceOf[js.Any])

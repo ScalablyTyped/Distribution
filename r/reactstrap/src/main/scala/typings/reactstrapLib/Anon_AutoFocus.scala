@@ -25,9 +25,12 @@ trait Anon_AutoFocus extends js.Object {
   var onEnter: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onExit: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onOpened: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var returnFocusAfterClose: js.UndefOr[scala.Boolean] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
+  var scrollable: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[java.lang.String] = js.undefined
   var toggle: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var unmountOnClose: js.UndefOr[scala.Boolean] = js.undefined
   var wrapClassName: js.UndefOr[java.lang.String] = js.undefined
   var zIndex: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
@@ -54,9 +57,12 @@ object Anon_AutoFocus {
     onEnter: () => scala.Unit = null,
     onExit: () => scala.Unit = null,
     onOpened: () => scala.Unit = null,
+    returnFocusAfterClose: js.UndefOr[scala.Boolean] = js.undefined,
     role: java.lang.String = null,
+    scrollable: js.UndefOr[scala.Boolean] = js.undefined,
     size: java.lang.String = null,
     toggle: () => scala.Unit = null,
+    unmountOnClose: js.UndefOr[scala.Boolean] = js.undefined,
     wrapClassName: java.lang.String = null,
     zIndex: scala.Double | java.lang.String = null
   ): Anon_AutoFocus = {
@@ -80,9 +86,12 @@ object Anon_AutoFocus {
     if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction0(onEnter))
     if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction0(onExit))
     if (onOpened != null) __obj.updateDynamic("onOpened")(js.Any.fromFunction0(onOpened))
+    if (!js.isUndefined(returnFocusAfterClose)) __obj.updateDynamic("returnFocusAfterClose")(returnFocusAfterClose)
     if (role != null) __obj.updateDynamic("role")(role)
+    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable)
     if (size != null) __obj.updateDynamic("size")(size)
     if (toggle != null) __obj.updateDynamic("toggle")(js.Any.fromFunction0(toggle))
+    if (!js.isUndefined(unmountOnClose)) __obj.updateDynamic("unmountOnClose")(unmountOnClose)
     if (wrapClassName != null) __obj.updateDynamic("wrapClassName")(wrapClassName)
     if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anon_AutoFocus]

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Uint16Attribute")
 @js.native
 class Uint16Attribute protected ()
-  extends threeLib.threeDashCoreMod.Uint16Attribute {
+  extends threeLib.srcCoreBufferAttributeMod.Uint16Attribute {
   def this(array: js.Any, itemSize: scala.Double) = this()
 }
 

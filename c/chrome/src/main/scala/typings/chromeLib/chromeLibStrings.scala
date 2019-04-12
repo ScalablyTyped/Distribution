@@ -76,6 +76,10 @@ object chromeLibStrings {
     extends chromeLib.chromeNs.omniboxNs.OnInputEnteredDisposition
   
   @js.native
+  sealed trait no_update
+    extends chromeLib.chromeNs.runtimeNs.RequestUpdateCheckStatus
+  
+  @js.native
   sealed trait normal extends js.Object
   
   @js.native
@@ -122,7 +126,15 @@ object chromeLibStrings {
     extends chromeLib.chromeNs.webRequestNs.ResourceType
   
   @js.native
+  sealed trait throttled
+    extends chromeLib.chromeNs.runtimeNs.RequestUpdateCheckStatus
+  
+  @js.native
   sealed trait top extends js.Object
+  
+  @js.native
+  sealed trait update_available
+    extends chromeLib.chromeNs.runtimeNs.RequestUpdateCheckStatus
   
   @js.native
   sealed trait websocket
@@ -173,6 +185,8 @@ object chromeLibStrings {
   @scala.inline
   def newForegroundTab: newForegroundTab = "newForegroundTab".asInstanceOf[newForegroundTab]
   @scala.inline
+  def no_update: no_update = "no_update".asInstanceOf[no_update]
+  @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
@@ -199,7 +213,11 @@ object chromeLibStrings {
   @scala.inline
   def sub_frame: sub_frame = "sub_frame".asInstanceOf[sub_frame]
   @scala.inline
+  def throttled: throttled = "throttled".asInstanceOf[throttled]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
+  def update_available: update_available = "update_available".asInstanceOf[update_available]
   @scala.inline
   def websocket: websocket = "websocket".asInstanceOf[websocket]
   @scala.inline

@@ -26,19 +26,19 @@ object namespaced extends js.Object {
   @JSName("$")
   def $(expr: java.lang.String): java.lang.String | stdLib.Element = js.native
   @JSName("$")
-  def $(expr: java.lang.String, con: stdLib.NodeSelector): java.lang.String | stdLib.Element = js.native
+  def $(expr: java.lang.String, con: stdLib.ParentNode): java.lang.String | stdLib.Element = js.native
   @JSName("$")
   def $(expr: stdLib.Element): java.lang.String | stdLib.Element = js.native
   @JSName("$")
-  def $(expr: stdLib.Element, con: stdLib.NodeSelector): java.lang.String | stdLib.Element = js.native
+  def $(expr: stdLib.Element, con: stdLib.ParentNode): java.lang.String | stdLib.Element = js.native
   @JSName("$$")
   def $$(expr: java.lang.String): stdLib.NodeList = js.native
   @JSName("$$")
   def $$(expr: java.lang.String, con: js.Any): stdLib.NodeList = js.native
   @JSName("$$")
-  def $$(expr: stdLib.NodeSelector): stdLib.NodeList = js.native
+  def $$(expr: stdLib.ParentNode): stdLib.NodeList = js.native
   @JSName("$$")
-  def $$(expr: stdLib.NodeSelector, con: js.Any): stdLib.NodeList = js.native
+  def $$(expr: stdLib.ParentNode, con: js.Any): stdLib.NodeList = js.native
   def DATA(item: awesompleteLib.awesompleteMod.AwesompleteNs.Suggestion): awesompleteLib.awesompleteMod.AwesompleteNs.Suggestion = js.native
   def FILTER_CONTAINS(text: java.lang.String, input: java.lang.String): scala.Boolean = js.native
   def FILTER_STARTSWITH(text: java.lang.String, input: java.lang.String): scala.Boolean = js.native

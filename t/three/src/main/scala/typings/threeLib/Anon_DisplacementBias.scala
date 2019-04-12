@@ -6,17 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_DisplacementBias extends js.Object {
-  var displacementBias: threeLib.threeDashCoreMod.IUniform
-  var displacementMap: threeLib.threeDashCoreMod.IUniform
-  var displacementScale: threeLib.threeDashCoreMod.IUniform
+  var displacementBias: threeLib.srcRenderersShadersUniformsLibMod.IUniform
+  var displacementMap: threeLib.srcRenderersShadersUniformsLibMod.IUniform
+  var displacementScale: threeLib.srcRenderersShadersUniformsLibMod.IUniform
 }
 
 object Anon_DisplacementBias {
   @scala.inline
   def apply(
-    displacementBias: threeLib.threeDashCoreMod.IUniform,
-    displacementMap: threeLib.threeDashCoreMod.IUniform,
-    displacementScale: threeLib.threeDashCoreMod.IUniform
+    displacementBias: threeLib.srcRenderersShadersUniformsLibMod.IUniform,
+    displacementMap: threeLib.srcRenderersShadersUniformsLibMod.IUniform,
+    displacementScale: threeLib.srcRenderersShadersUniformsLibMod.IUniform
   ): Anon_DisplacementBias = {
     val __obj = js.Dynamic.literal(displacementBias = displacementBias, displacementMap = displacementMap, displacementScale = displacementScale)
   

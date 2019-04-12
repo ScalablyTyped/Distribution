@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_App extends js.Object {
   var LocalVerifier: org.scalablytyped.runtime.Instantiable2[
-    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[js.Any], 
+    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.feathersNs.Application[js.Any], 
     /* options */ js.Any, 
     atFeathersjsAuthenticationDashLocalLib.atFeathersjsAuthenticationDashLocalMod.LocalVerifier
   ] = js.native

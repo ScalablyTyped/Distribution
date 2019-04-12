@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three", "Euler")
 @js.native
 class Euler ()
-  extends threeLib.threeDashCoreMod.Euler {
+  extends threeLib.srcMathEulerMod.Euler {
   def this(x: scala.Double) = this()
   def this(x: scala.Double, y: scala.Double) = this()
   def this(x: scala.Double, y: scala.Double, z: scala.Double) = this()

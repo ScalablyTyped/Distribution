@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Holes extends js.Object {
-  var holes: js.Array[js.Array[threeLib.threeDashCoreMod.Vector2]]
-  var shape: js.Array[threeLib.threeDashCoreMod.Vector2]
+  var holes: js.Array[js.Array[threeLib.srcMathVector2Mod.Vector2]]
+  var shape: js.Array[threeLib.srcMathVector2Mod.Vector2]
 }
 
 object Anon_Holes {
   @scala.inline
   def apply(
-    holes: js.Array[js.Array[threeLib.threeDashCoreMod.Vector2]],
-    shape: js.Array[threeLib.threeDashCoreMod.Vector2]
+    holes: js.Array[js.Array[threeLib.srcMathVector2Mod.Vector2]],
+    shape: js.Array[threeLib.srcMathVector2Mod.Vector2]
   ): Anon_Holes = {
     val __obj = js.Dynamic.literal(holes = holes, shape = shape)
   

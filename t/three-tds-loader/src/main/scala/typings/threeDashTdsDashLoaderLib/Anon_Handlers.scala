@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Handlers
   extends org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.Loader] {
-  var Handlers: threeLib.threeDashCoreMod.LoaderHandler = js.native
+  var Handlers: threeLib.srcLoadersFileLoaderMod.LoaderHandler = js.native
 }
 

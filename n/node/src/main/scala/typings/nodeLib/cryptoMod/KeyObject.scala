@@ -11,7 +11,10 @@ class KeyObject protected () extends _KeyLike {
   var asymmetricKeyType: js.UndefOr[KeyType] = js.native
   var symmetricSize: js.UndefOr[scala.Double] = js.native
   var `type`: KeyObjectType = js.native
-  def export(): java.lang.String | nodeLib.Buffer = js.native
-  def export(options: nodeLib.Anon_Cipher): java.lang.String | nodeLib.Buffer = js.native
+  def export(): nodeLib.Buffer = js.native
+  @JSName("export")
+  def export_der(options: KeyExportOptions[nodeLib.nodeLibStrings.der]): nodeLib.Buffer = js.native
+  @JSName("export")
+  def export_pem(options: KeyExportOptions[nodeLib.nodeLibStrings.pem]): java.lang.String | nodeLib.Buffer = js.native
 }
 

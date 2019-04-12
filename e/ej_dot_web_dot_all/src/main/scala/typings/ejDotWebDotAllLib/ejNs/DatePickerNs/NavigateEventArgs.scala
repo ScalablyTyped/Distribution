@@ -6,9 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NavigateEventArgs extends js.Object {
-  /** Set to true when the event has to be canceled, else false.
-    */
-  var cancel: js.UndefOr[scala.Boolean] = js.undefined
   /** returns the current date object.
     */
   var date: js.UndefOr[js.Any] = js.undefined
@@ -32,7 +29,6 @@ trait NavigateEventArgs extends js.Object {
 object NavigateEventArgs {
   @scala.inline
   def apply(
-    cancel: js.UndefOr[scala.Boolean] = js.undefined,
     date: js.Any = null,
     model: Model = null,
     navigateFrom: java.lang.String = null,
@@ -41,7 +37,6 @@ object NavigateEventArgs {
     value: java.lang.String = null
   ): NavigateEventArgs = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
     if (date != null) __obj.updateDynamic("date")(date)
     if (model != null) __obj.updateDynamic("model")(model)
     if (navigateFrom != null) __obj.updateDynamic("navigateFrom")(navigateFrom)

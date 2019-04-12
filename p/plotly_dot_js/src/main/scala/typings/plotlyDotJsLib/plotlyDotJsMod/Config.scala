@@ -59,11 +59,6 @@ trait Config extends js.Object {
   var scrollZoom: scala.Boolean
   /** if we show a link, does it contain data or just link to a plotly file? */
   var sendData: scala.Boolean
-  /**
-  	 * function to add the background color to a different container
-  	 * or 'opaque' to ensure there's white behind it
-  	 */
-  var setBackground: java.lang.String | plotlyDotJsLib.plotlyDotJsLibStrings.opaque | plotlyDotJsLib.plotlyDotJsLibStrings.transparent
   /** enable axis pan/zoom drag handles */
   var showAxisDragHandles: scala.Boolean
   /** enable direct range entry at the pan/zoom drag points (drag handles must be enabled above) */
@@ -78,6 +73,11 @@ trait Config extends js.Object {
   var staticPlot: scala.Boolean
   /** URL to topojson files used in geo charts */
   var topojsonURL: java.lang.String
+  /**
+  	 * function to add the background color to a different container
+  	 * or 'opaque' to ensure there's white behind it
+  	 */
+  def setBackground(): java.lang.String | plotlyDotJsLib.plotlyDotJsLibStrings.opaque | plotlyDotJsLib.plotlyDotJsLibStrings.transparent
 }
 
 object Config {
@@ -104,7 +104,7 @@ object Config {
     responsive: scala.Boolean,
     scrollZoom: scala.Boolean,
     sendData: scala.Boolean,
-    setBackground: java.lang.String | plotlyDotJsLib.plotlyDotJsLibStrings.opaque | plotlyDotJsLib.plotlyDotJsLibStrings.transparent,
+    setBackground: () => java.lang.String | plotlyDotJsLib.plotlyDotJsLibStrings.opaque | plotlyDotJsLib.plotlyDotJsLibStrings.transparent,
     showAxisDragHandles: scala.Boolean,
     showAxisRangeEntryBoxes: scala.Boolean,
     showLink: scala.Boolean,
@@ -113,7 +113,7 @@ object Config {
     staticPlot: scala.Boolean,
     topojsonURL: java.lang.String
   ): Config = {
-    val __obj = js.Dynamic.literal(autosizable = autosizable, displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo, doubleClick = doubleClick.asInstanceOf[js.Any], editable = editable, edits = edits, fillFrame = fillFrame, frameMargins = frameMargins, globalTransforms = globalTransforms, linkText = linkText, locale = locale, logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken, modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd.asInstanceOf[js.Any], modeBarButtonsToRemove = modeBarButtonsToRemove, plotGlPixelRatio = plotGlPixelRatio, queueLength = queueLength, responsive = responsive, scrollZoom = scrollZoom, sendData = sendData, setBackground = setBackground.asInstanceOf[js.Any], showAxisDragHandles = showAxisDragHandles, showAxisRangeEntryBoxes = showAxisRangeEntryBoxes, showLink = showLink, showSources = showSources, showTips = showTips, staticPlot = staticPlot, topojsonURL = topojsonURL)
+    val __obj = js.Dynamic.literal(autosizable = autosizable, displayModeBar = displayModeBar.asInstanceOf[js.Any], displaylogo = displaylogo, doubleClick = doubleClick.asInstanceOf[js.Any], editable = editable, edits = edits, fillFrame = fillFrame, frameMargins = frameMargins, globalTransforms = globalTransforms, linkText = linkText, locale = locale, logging = logging.asInstanceOf[js.Any], mapboxAccessToken = mapboxAccessToken, modeBarButtons = modeBarButtons.asInstanceOf[js.Any], modeBarButtonsToAdd = modeBarButtonsToAdd.asInstanceOf[js.Any], modeBarButtonsToRemove = modeBarButtonsToRemove, plotGlPixelRatio = plotGlPixelRatio, queueLength = queueLength, responsive = responsive, scrollZoom = scrollZoom, sendData = sendData, setBackground = js.Any.fromFunction0(setBackground), showAxisDragHandles = showAxisDragHandles, showAxisRangeEntryBoxes = showAxisRangeEntryBoxes, showLink = showLink, showSources = showSources, showTips = showTips, staticPlot = staticPlot, topojsonURL = topojsonURL)
   
     __obj.asInstanceOf[Config]
   }
